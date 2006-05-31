@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: knetworkconf\n"
-"POT-Creation-Date: 2006-01-10 03:15+0100\n"
+"POT-Creation-Date: 2006-05-31 04:02+0200\n"
 "PO-Revision-Date: 2006-03-19 18:10+0000\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -15,24 +15,24 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: kadddnsserverdlg.ui.h:40
-msgid "You have to type an alias first."
-msgstr "Алдымен бүркеншік атауын келтіру қажет."
-
-#: kadddnsserverdlg.ui.h:40
-msgid "Invalid Text"
-msgstr "Дұрыс емес мәтін"
-
-#: kadddevicecontainer.cpp:129 kadddnsserverdlg.ui.h:51
+#: kadddevicecontainer.cpp:129 kadddnsserverdlg.ui.h:42
 #: kaddknownhostdlg.ui.h:25
 msgid "The format of the specified IP address is not valid."
 msgstr "Кертілілген IP адресінің пішімі дұрыс емес."
 
 #: kadddevicecontainer.cpp:129 kadddevicecontainer.cpp:132
 #: kadddevicecontainer.cpp:135 kadddevicecontainer.cpp:138
-#: kadddnsserverdlg.ui.h:51 kaddknownhostdlg.ui.h:25 knetworkconf.cpp:589
+#: kadddnsserverdlg.ui.h:42 kaddknownhostdlg.ui.h:25 knetworkconf.cpp:589
 msgid "Invalid IP Address"
 msgstr "IP адресі дұрыс емес"
+
+#: kadddnsserverdlg.ui.h:54
+msgid "You have to type an alias first."
+msgstr "Алдымен бүркеншік атауын келтіру қажет."
+
+#: kadddnsserverdlg.ui.h:54
+msgid "Invalid Text"
+msgstr "Дұрыс емес мәтін"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -94,7 +94,7 @@ msgstr ""
 "Жаңа баптау сақталған жоқ.\n"
 "Шығар алдында өзгертулер сақталсын ба?"
 
-#: knetworkconf.cpp:159
+#: knetworkconf.cpp:159 knetworkconf.cpp:830 knetworkconf.cpp:849
 msgid "New Configuration Not Saved"
 msgstr "Жаңа баптау сақталған жоқ"
 
@@ -143,33 +143,42 @@ msgstr "Құрылғы күйін өзгерту қатесі. Оны қолме
 msgid "Could Not Change Device State"
 msgstr "Құрылғының күйі өзгертілмеді"
 
+#: knetworkconf.cpp:829 knetworkconf.cpp:848
+#, fuzzy
+msgid ""
+"The new configuration has not been saved.\n"
+"Apply changes?"
+msgstr ""
+"Жаңа баптау сақталған жоқ.\n"
+"Шығар алдында өзгертулер сақталсын ба?"
+
 #. i18n: file kaddknownhostdlg.ui line 16
-#: knetworkconf.cpp:846 rc.cpp:204
+#: knetworkconf.cpp:866 rc.cpp:204
 #, no-c-format
 msgid "Add New Static Host"
 msgstr "Жаңа статикалық хостты қосу"
 
-#: knetworkconf.cpp:879
+#: knetworkconf.cpp:899
 msgid "Edit Static Host"
 msgstr "Статикалық хостты өзгерту"
 
-#: knetworkconf.cpp:1014
+#: knetworkconf.cpp:1034
 msgid "Could not load the selected Network Profile."
 msgstr "Таңдалған желі профилі жүктелмеді."
 
-#: knetworkconf.cpp:1015
+#: knetworkconf.cpp:1035
 msgid "Error Reading Profile"
 msgstr "Профильді оқу қатесі"
 
-#: knetworkconf.cpp:1038
+#: knetworkconf.cpp:1058
 msgid "Create New Network Profile"
 msgstr "Жаңа желі профилін құру"
 
-#: knetworkconf.cpp:1039
+#: knetworkconf.cpp:1059
 msgid "Name of new profile:"
 msgstr "Жаңа профильдің атауы:"
 
-#: knetworkconf.cpp:1068
+#: knetworkconf.cpp:1088
 msgid "There is already another profile with that name."
 msgstr "Былай аталған басқа профилі бар ғой."
 
@@ -886,7 +895,7 @@ msgid "&Delete Selected"
 msgstr "&Таңдалғандар өшірілсін"
 
 #. i18n: file kreloadnetworkdlg.ui line 28
-#: knetworkconfigparser.cpp:284 rc.cpp:385
+#: knetworkconfigparser.cpp:303 rc.cpp:385
 #, no-c-format
 msgid "Reloading Network"
 msgstr "Желіні қайта жүктеу"
@@ -986,7 +995,7 @@ msgid "Could Not Find Network Configuration Backend Script"
 msgstr "Желі параметрлерін анықтайтын скрипті табылмады"
 
 #: knetworkconfigparser.cpp:65 knetworkconfigparser.cpp:95
-#: knetworkconfigparser.cpp:301 knetworkconfigparser.cpp:999
+#: knetworkconfigparser.cpp:320 knetworkconfigparser.cpp:1016
 msgid ""
 "Could not execute backend script for the network configuration detection. "
 "Something is wrong with your installation."
@@ -995,11 +1004,11 @@ msgstr ""
 "болар."
 
 #: knetworkconfigparser.cpp:66 knetworkconfigparser.cpp:96
-#: knetworkconfigparser.cpp:302 knetworkconfigparser.cpp:1000
+#: knetworkconfigparser.cpp:321 knetworkconfigparser.cpp:1017
 msgid "Could Not Launch Network Configuration Backend Script"
 msgstr "Желі конфигурациясының ішкі скрипті жегілмеді"
 
-#: knetworkconfigparser.cpp:113 knetworkconfigparser.cpp:820
+#: knetworkconfigparser.cpp:113 knetworkconfigparser.cpp:837
 msgid "Could not parse the XML output from the network configuration backend."
 msgstr "Желі баптауынан XML шығысы талданбады."
 
@@ -1015,23 +1024,23 @@ msgstr "/proc/net/route файлы ашылмады."
 msgid "Could Not Open File"
 msgstr "Файл ашылмады"
 
-#: knetworkconfigparser.cpp:285
+#: knetworkconfigparser.cpp:304
 msgid "%1Please wait while saving the network settings...%2"
 msgstr "%1Күте тұрыңыз, желі параметрлерін сақтау...%2"
 
-#: knetworkconfigparser.cpp:739
+#: knetworkconfigparser.cpp:762
 msgid "Ethernet Network Device"
 msgstr "Ethernet желі құрылғыcы"
 
-#: knetworkconfigparser.cpp:741
+#: knetworkconfigparser.cpp:764
 msgid "Wireless Network Device"
 msgstr "Сымсыз желі құрылғысы"
 
-#: knetworkconfigparser.cpp:821
+#: knetworkconfigparser.cpp:838
 msgid "Error Loading The Network Configuration"
 msgstr "Желі конфигурациясын жүктеу қатесі"
 
-#: knetworkconfigparser.cpp:1013
+#: knetworkconfigparser.cpp:1030
 msgid ""
 "Could not parse the list of supported platforms from the network configuration "
 "backend."
@@ -1039,7 +1048,7 @@ msgstr ""
 "Платформаларды қолдау тізімі туралы мәліметтерді құрайтын XML файлы талдау "
 "қатесі."
 
-#: knetworkconfigparser.cpp:1014
+#: knetworkconfigparser.cpp:1031
 msgid "Error Obtaining Supported Platforms List"
 msgstr "Қолдау табатын платформалар тізімін алу қатесі"
 
