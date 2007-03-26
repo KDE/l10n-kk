@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
-"POT-Creation-Date: 2007-03-23 14:08+0100\n"
+"POT-Creation-Date: 2007-03-26 02:16+0200\n"
 "PO-Revision-Date: 2007-03-20 10:52+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -167,7 +167,7 @@ msgstr "Уақыты"
 msgid "Time To"
 msgstr "Қалған уақыт"
 
-#: alarmlistview.cpp:71 sounddlg.cpp:50
+#: alarmlistview.cpp:71 sounddlg.cpp:56
 msgid "Repeat"
 msgstr "Қайталануы"
 
@@ -740,7 +740,7 @@ msgid "Enter the name or URL of a text or image file to display."
 msgstr ""
 "Көрсететін мәтн не кескін файл атауын немесе URL сілтемесін келтіріңіз."
 
-#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:77 soundpicker.cpp:86
+#: editdlg.cpp:456 editdlg.cpp:548 sounddlg.cpp:91
 msgid "Choose a file"
 msgstr "Файлді таңдау"
 
@@ -1808,7 +1808,7 @@ msgstr "Бұл файл - қапшық"
 msgid "Failed to open file"
 msgstr "Файлды ашу қатесі"
 
-#: messagewin.cpp:367
+#: messagewin.cpp:367 sounddlg.cpp:331
 msgid "File not found"
 msgstr "Файл табылмады"
 
@@ -2544,7 +2544,7 @@ msgstr ""
 msgid "System tray icon &update interval:"
 msgstr "Жүйелік сөредегі таңбашаны &жаңарту аралығы:"
 
-#: prefdlg.cpp:1263 sounddlg.cpp:135
+#: prefdlg.cpp:1263 sounddlg.cpp:149
 msgid "seconds"
 msgstr "сек"
 
@@ -3022,27 +3022,36 @@ msgstr "Ескерту қайталана беретін уақытты келт
 msgid "Enter the length of time to repeat the alarm"
 msgstr "Ескертуді қайталау уақыт ұзындығын келтіріңіз"
 
-#: sounddlg.cpp:48
+#: sounddlg.cpp:54
 msgid "Set volume"
 msgstr "Үнділігін орнату"
 
-#: sounddlg.cpp:49
+#: sounddlg.cpp:55
 msgid "Set &volume"
 msgstr "&Үнділігін орнату"
 
-#: sounddlg.cpp:51
+#: sounddlg.cpp:57
 msgid "Re&peat"
 msgstr "Қай&талау"
 
-#: sounddlg.cpp:70
+#: sounddlg.cpp:78
+#, fuzzy
+msgid "Test the sound"
+msgstr "Дыбысты орындауын тоқтату"
+
+#: sounddlg.cpp:79
+msgid "Play the selected sound file."
+msgstr ""
+
+#: sounddlg.cpp:84
 msgid "Enter the name or URL of a sound file to play."
 msgstr "Орындалатын дыбыс файл атауын не URL сілтемесін келтіріңіз."
 
-#: sounddlg.cpp:78
+#: sounddlg.cpp:92
 msgid "Select a sound file to play."
 msgstr "Орындалатын дыбыс файлын таңдау."
 
-#: sounddlg.cpp:84
+#: sounddlg.cpp:98
 msgid ""
 "If checked, the sound file will be played repeatedly for as long as the message "
 "is displayed."
@@ -3050,45 +3059,45 @@ msgstr ""
 "Құсбелгісі қойылса, хабарлама көрсетіліп тұрғанша дыбыс файлы қайталанып "
 "орындала береді."
 
-#: sounddlg.cpp:88
+#: sounddlg.cpp:102
 msgid "Volume"
 msgstr "Үнділігі"
 
-#: sounddlg.cpp:107
+#: sounddlg.cpp:121
 msgid "Select to choose the volume for playing the sound file."
 msgstr "Дыбыс файлының орындалу үнділігін басқару үшін таңдаңыз."
 
-#: sounddlg.cpp:114
+#: sounddlg.cpp:128
 msgid "Choose the volume for playing the sound file."
 msgstr "Дыбыс файлының орындалу үнділігін таңдау."
 
-#: sounddlg.cpp:118
+#: sounddlg.cpp:132
 msgid "Fade"
 msgstr "Біртіндеп өзгеру"
 
-#: sounddlg.cpp:122
+#: sounddlg.cpp:136
 msgid "Select to fade the volume when the sound file first starts to play."
 msgstr ""
 "Дыбыс файлы орындалуы басталғанда үнділігін біртіндеп орнатуын таңдаңыз."
 
-#: sounddlg.cpp:129
+#: sounddlg.cpp:143
 msgid ""
 "_: Time period over which to fade the sound\n"
 "Fade time:"
 msgstr "Біртіндеп орнатылу уақыты:"
 
-#: sounddlg.cpp:137
+#: sounddlg.cpp:151
 msgid ""
 "Enter how many seconds to fade the sound before reaching the set volume."
 msgstr ""
 "Орнатылған үнділік деңгейіне біртіндеп жету үшін неше секунд керек екенін  "
 "келтіріңіз."
 
-#: sounddlg.cpp:143
+#: sounddlg.cpp:157
 msgid "Initial volume:"
 msgstr "Бастапқы үнділігі:"
 
-#: sounddlg.cpp:150
+#: sounddlg.cpp:164
 msgid "Choose the initial volume for playing the sound file."
 msgstr "Дыбыс файл орындалуының бастапқы үнділік деңгейі."
 
@@ -3115,6 +3124,11 @@ msgid ""
 "_: An audio sound\n"
 "&Sound:"
 msgstr "&Дыбысы:"
+
+#: soundpicker.cpp:86
+#, fuzzy
+msgid "Configure sound file"
+msgstr "Дыбыс файлын таңдау"
 
 #: soundpicker.cpp:87
 msgid "Configure a sound file to play when the alarm is displayed."
@@ -3169,11 +3183,11 @@ msgstr ""
 msgid "Special Alarm Actions"
 msgstr "Ескертудің арнайы әрекеттері"
 
-#: specialactions.cpp:158
+#: specialactions.cpp:140
 msgid "Pre-a&larm action:"
 msgstr "Ескерту а&лдындағы әрекет:"
 
-#: specialactions.cpp:165
+#: specialactions.cpp:147
 msgid ""
 "Enter a shell command to execute before the alarm is displayed. N.B. KAlarm "
 "will wait for the command to complete before displaying the alarm."
@@ -3181,11 +3195,11 @@ msgstr ""
 "Ескертуді көрсету алдындағы орындалатын команданы келтіріңіз.Ескертуді көрсету "
 "алдында, KAlarm осы команданың аяқталуын күтеді."
 
-#: specialactions.cpp:171
+#: specialactions.cpp:153
 msgid "Post-alar&m action:"
 msgstr "Ескер&ту кейінгі әрекет:"
 
-#: specialactions.cpp:177
+#: specialactions.cpp:159
 msgid "Enter a shell command to execute after the alarm window is closed."
 msgstr "Ескерту терезесін жапқаннан кейін орындалатын команданы келтіріңіз."
 
