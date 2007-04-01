@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-03-31 21:43+0200\n"
+"POT-Creation-Date: 2007-04-01 05:35+0200\n"
 "PO-Revision-Date: 2007-02-26 15:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team:  <kk@li.org>\n"
@@ -3078,9 +3078,9 @@ msgstr "Орналасуы:"
 #: kfile/kurlrequesterdialog.cpp:120 kfile/kicondialog.cpp:563
 #: kfile/kencodingfiledialog.cpp:101 kfile/kencodingfiledialog.cpp:119
 #: kfile/kencodingfiledialog.cpp:134 kfile/kencodingfiledialog.cpp:152
-#: kfile/kfiledialog.cpp:1287 kfile/kfiledialog.cpp:1311
-#: kfile/kfiledialog.cpp:1327 kfile/kfiledialog.cpp:1341
-#: kfile/kfiledialog.cpp:1357 kfile/kfiledialog.cpp:1397
+#: kfile/kfiledialog.cpp:211 kfile/kfiledialog.cpp:235
+#: kfile/kfiledialog.cpp:251 kfile/kfiledialog.cpp:265
+#: kfile/kfiledialog.cpp:281 kfile/kfiledialog.cpp:321
 #, fuzzy
 msgid "Open"
 msgstr "&Ашу"
@@ -3105,7 +3105,7 @@ msgstr "Құжаттар"
 msgid "Your personal documents folder"
 msgstr ""
 
-#: kfile/kfilespeedbar.cpp:60 kfile/kdiroperator.cpp:1274
+#: kfile/kfilespeedbar.cpp:60 kfile/kdiroperator.cpp:1275
 msgid "Home Folder"
 msgstr "Мекен қапшығы"
 
@@ -3141,7 +3141,7 @@ msgstr ""
 msgid "Menu Editor"
 msgstr "Мәзір өңдегіші"
 
-#: kfile/kcustommenueditor.cpp:99 kfile/kdiroperator.cpp:1263
+#: kfile/kcustommenueditor.cpp:99 kfile/kdiroperator.cpp:1264
 msgid "Menu"
 msgstr "Мәзір"
 
@@ -3164,8 +3164,8 @@ msgstr "Жоғарлату"
 msgid "Move Down"
 msgstr "Төмендету"
 
-#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:922
-#: kfile/kdiroperator.cpp:1345
+#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:923
+#: kfile/kdiroperator.cpp:1346
 msgid "Detailed View"
 msgstr "Егжей-тегжейлі көрініс"
 
@@ -3173,7 +3173,7 @@ msgstr "Егжей-тегжейлі көрініс"
 msgid "Date"
 msgstr "Күні"
 
-#: kfile/kfilefiltercombo.cpp:33 kfile/kfiledialog.cpp:1652
+#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1432
 msgid "*|All Files"
 msgstr "*|Барлық файлдар"
 
@@ -3280,6 +3280,279 @@ msgstr "Алдын-ала қарау"
 msgid "No preview available."
 msgstr "Көруге болмайды."
 
+#: kfile/kfilewidget.cpp:184
+msgid ""
+"<p>While typing in the text area, you may be presented with possible "
+"matches. This feature can be controlled by clicking with the right mouse "
+"button and selecting a preferred mode from the <b>Text Completion</b> menu."
+msgstr ""
+"<p>Мәтінді өріске енгізгенде мәтіннің мүмкін жалғастары ұсынылады. Бұны "
+"тышқанның оң батырмасын басып, шыққан мәзіріндегі <b>Мәтінді толтыру</b> "
+"арқылы керек күйін таңдап, баптауға болады."
+
+#: kfile/kfilewidget.cpp:223
+msgid "Current location"
+msgstr "Назардағы орын"
+
+#: kfile/kfilewidget.cpp:224
+msgid ""
+"This is the currently listed location. The drop-down list also lists "
+"commonly used locations. This includes standard locations, such as your home "
+"folder, as well as locations that have been visited recently."
+msgstr ""
+"Назардағы орын көрсетілген. Ашылмалы тізімінде жиі қолданылатын орындары "
+"тізбеленген. Бұнда стандартты орындар, мекен қапшығыңыз секілді, сонымен "
+"қатар, жуырда ашылған орындар тізімделеді."
+
+#: kfile/kfilewidget.cpp:234
+#, fuzzy, qt-format
+msgid "Drive: %1"
+msgstr "өлшемі: %1"
+
+#: kfile/kfilewidget.cpp:241
+#, qt-format
+msgid "Root Folder: %1"
+msgstr "Түбір қапшығы: %1"
+
+#: kfile/kfilewidget.cpp:248
+#, qt-format
+msgid "Home Folder: %1"
+msgstr "Мекен қапшығы: %1"
+
+#: kfile/kfilewidget.cpp:257
+#, qt-format
+msgid "Documents: %1"
+msgstr "Құжаттар: %1"
+
+#: kfile/kfilewidget.cpp:264
+#, qt-format
+msgid "Desktop: %1"
+msgstr "Жұмыс үстелі: %1"
+
+#: kfile/kfilewidget.cpp:306
+#, qt-format
+msgid ""
+"<qt>Click this button to enter the parent folder.<p>For instance, if the "
+"current location is file:/home/%1 clicking this button will take you to "
+"file:/home.</qt>"
+msgstr ""
+"<qt>Аталық қапшыққа ауысу үшін осы батырманы басыңыз.<p>Мысалы, егер "
+"назардағы орын file:/home/%1 болса, бұл батырманы басқанда назар file:/home "
+"деген орынға ауыстырылады.</qt>"
+
+#: kfile/kfilewidget.cpp:310
+msgid "Click this button to move backwards one step in the browsing history."
+msgstr "Журнал бойынша бір қадам артқа ауысу үшін осы батырманы басыңыз."
+
+#: kfile/kfilewidget.cpp:312
+msgid "Click this button to move forward one step in the browsing history."
+msgstr "Журнал бойынша бір қадам алға ауысу үшін осы батырманы басыңыз."
+
+#: kfile/kfilewidget.cpp:314
+msgid "Click this button to reload the contents of the current location."
+msgstr "Назардағы орынның мазмұнын жаңарту үшін осы батырманы басыңыз."
+
+#: kfile/kfilewidget.cpp:317
+msgid "Click this button to create a new folder."
+msgstr "Жаңа қапшықты құру үшін осы батырманы басыңыз."
+
+#: kfile/kfilewidget.cpp:320
+msgid "Show Quick Access Navigation Panel"
+msgstr "Жедел қатынау панелі көрсетілсін"
+
+#: kfile/kfilewidget.cpp:323
+msgid "Hide Quick Access Navigation Panel"
+msgstr "Жедел қатынау панелі жасырылсын"
+
+#: kfile/kfilewidget.cpp:328
+msgid "Show Bookmarks"
+msgstr "Бетбелгілер көрсетілсін"
+
+#: kfile/kfilewidget.cpp:330
+msgid "Hide Bookmarks"
+msgstr "Бетбелгілер жасырылсын"
+
+#: kfile/kfilewidget.cpp:334
+#, fuzzy
+msgid "Configure"
+msgstr "&Жалғастыра беру"
+
+#: kfile/kfilewidget.cpp:336
+msgid ""
+"<qt>This is the configuration menu for the file dialog. Various options can "
+"be accessed from this menu including: <ul><li>how files are sorted in the "
+"list</li><li>types of view, including icon and list</li><li>showing of "
+"hidden files</li><li>the Quick Access navigation panel</li><li>file "
+"previews</li><li>separating folders from files</li></ul></qt>"
+msgstr ""
+"<qt>Бұл файлдар диалогын баптау мәзірі. Бұл мәзірден әртүрлі  параметрлерді "
+"орнатуға болады, мысалы:<ul><li>тізімдегі файлдар қалай реттелген</"
+"li><li>көрініс түрі, таңбаша мен тізімдін түрімен қоса </li><li>жасырын "
+"файлдарды көрсетуі</li><li>жедел қатынау панелі</li><li>файлдарды алдын-ала "
+"қарауы</li> <li>файлдардан қапшықтарды бөлуі</li></ul></qt>"
+
+#: kfile/kfilewidget.cpp:387
+msgid "&Location:"
+msgstr "&Орыны:"
+
+#: kfile/kfilewidget.cpp:412
+msgid ""
+"<qt>This is the filter to apply to the file list. File names that do not "
+"match the filter will not be shown.<p>You may select from one of the preset "
+"filters in the drop down menu, or you may enter a custom filter directly "
+"into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
+msgstr ""
+"<qt>Бұл файлдар тізіміне қолданылатын сүзгі. Сүзгіге сәйкес келмейтін "
+"файлдар атауы көрсетілмейді.<p>Ашлмалы мәзірден дайын сүзгіні таңдауыңызға "
+"немесе өзіңіздің сүзгіңізді өріске енгізуге болады. <p>Үлгі қалқаларды , "
+"мысалы * мен ? сияқты, келтіруге болады.</qt>"
+
+#: kfile/kfilewidget.cpp:418
+msgid "&Filter:"
+msgstr "&Сүзгі:"
+
+#: kfile/kfilewidget.cpp:583
+msgid "Please specify the filename to save to."
+msgstr "Сақтайтын файл атауын келтіріңіз."
+
+#: kfile/kfilewidget.cpp:585
+msgid "Please select the file to open."
+msgstr "Ашатын файл атауын таңдаңыз."
+
+#: kfile/kfilewidget.cpp:642 kfile/kfilewidget.cpp:685
+#: kfile/kfilewidget.cpp:1377
+msgid "You can only select local files."
+msgstr "Тек жергілікті файлды ғана таңдауға болады."
+
+#: kfile/kfilewidget.cpp:643 kfile/kfilewidget.cpp:686
+#: kfile/kfilewidget.cpp:1378
+msgid "Remote Files Not Accepted"
+msgstr "Қашықтағы файл қабылданбайды"
+
+#: kfile/kfilewidget.cpp:677
+#, qt-format
+msgid ""
+"%1\n"
+"does not appear to be a valid URL.\n"
+msgstr ""
+"%1\n"
+"жарамды URL адресіне ұқсамайды.\n"
+
+#: kfile/kfilewidget.cpp:677
+msgid "Invalid URL"
+msgstr "Дұрыс емес URL"
+
+#: kfile/kfilewidget.cpp:998
+msgid "This is the name to save the file as."
+msgstr "Осы атауымен файл сақталады."
+
+#: kfile/kfilewidget.cpp:1003
+msgid ""
+"This is the list of files to open. More than one file can be specified by "
+"listing several files, separated by spaces."
+msgstr ""
+"Бұл ашылатын файлдардың тізімі. Егер бірнеше файлдар керек болса, оларды бос "
+"орынмен бөліктеп келтіріңіз."
+
+#: kfile/kfilewidget.cpp:1010
+msgid "This is the name of the file to open."
+msgstr "Бұл ашылатын файлдың атауы."
+
+#: kfile/kfilewidget.cpp:1309
+msgid ""
+"The chosen filenames do not\n"
+"appear to be valid."
+msgstr ""
+"Мүмкін, таңдалған файлдардың \n"
+"атаулары дұрыс емес шығар."
+
+#: kfile/kfilewidget.cpp:1311
+msgid "Invalid Filenames"
+msgstr "Файл атаулары дұрыс емес"
+
+#: kfile/kfilewidget.cpp:1340
+#, qt-format
+msgid ""
+"The requested filenames\n"
+"%1\n"
+"do not appear to be valid;\n"
+"make sure every filename is enclosed in double quotes."
+msgstr ""
+"Сұралған файл атаулары\n"
+"%1\n"
+"дұрыс емес шығар.\n"
+"Әрбір файл атауы қос тырнақшаға алынғанын тексеріңіз."
+
+#: kfile/kfilewidget.cpp:1344
+msgid "Filename Error"
+msgstr "Файл атауының қатесі"
+
+#: kfile/kfilewidget.cpp:1429
+msgid "*|All Folders"
+msgstr "*|Барлық қапшықтар"
+
+#: kfile/kfilewidget.cpp:1700
+#, qt-format
+msgid "Automatically select filename e&xtension (%1)"
+msgstr "Файл жұ&рнағын (%1) автоматты түрде таңдау"
+
+#: kfile/kfilewidget.cpp:1701
+#, qt-format
+msgid "the extension <b>%1</b>"
+msgstr "жұрнағы <b>%1</b>"
+
+#: kfile/kfilewidget.cpp:1709
+msgid "Automatically select filename e&xtension"
+msgstr "Файл жұ&рнағын автоматты түрде таңдау"
+
+#: kfile/kfilewidget.cpp:1710
+msgid "a suitable extension"
+msgstr "лайықты жұрнақ"
+
+#: kfile/kfilewidget.cpp:1720
+#, qt-format
+msgid ""
+"This option enables some convenient features for saving files with "
+"extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
+"will be updated if you change the file type to save in.<br><br></li><li>If "
+"no extension is specified in the <b>%2</b> text area when you click <b>Save</"
+"b>, %3 will be added to the end of the filename (if the filename does not "
+"already exist). This extension is based on the file type that you have "
+"chosen to save in.<br><br>If you do not want KDE to supply an extension for "
+"the filename, you can either turn this option off or you can suppress it by "
+"adding a period (.) to the end of the filename (the period will be "
+"automatically removed).</li></ol>If unsure, keep this option enabled as it "
+"makes your files more manageable."
+msgstr ""
+"Бұл параметр файлдарды жұрнақтармен сақтау үшін бірнеше ыңғайлы "
+"мүмкіндіктерді қосады:<br><ol><li>Егер сақталатын файлдың түрін өзгертілсе, "
+"<b>%1</b> мәтін өрісінде келтірілген кез келген жұрнақ жаңартылады.<br><br></"
+"li><li>Егер жұрнақ <b>%2</b> мәтін өрісінде келтірілмеген болса, <b>Сақтау</"
+"b> батырмасын басқанда, файл атауынан соңына %3 қосылатын болады (файл атауы "
+"әлден болмаса). Бұл жұрнақ файлдың таңдалған түріне негізделеді.<br><br>Егер "
+"KDE файлдар атауына жұрнақ қоспасын десеңіз, бұл мүмкуіндікті өшіріп "
+"тастаңыз. Оны файл атауынан кейін нүктені қойып уақытша өшіруге болады "
+"(сақтағанда нүкте автоматты түрде алынып тасталады).</li></ol>Күмәндансаңыз, "
+"бұл параметрді қосылған күйінде қалдырыңыз, ол файлыңызды басқаруға ыңғайлы."
+
+#: kfile/kfilewidget.cpp:1986 bookmarks/kbookmarkimporter_ns.cc:198
+#: bookmarks/kbookmarkimporter_ns.cc:199 bookmarks/kbookmarkmenu.cc:681
+#, fuzzy
+msgid "Bookmarks"
+msgstr "Бетбелгі"
+
+#: kfile/kfilewidget.cpp:1989
+msgid ""
+"<qt>This button allows you to bookmark specific locations. Click on this "
+"button to open the bookmark menu where you may add, edit or select a "
+"bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
+"operate like bookmarks elsewhere in KDE.</qt>"
+msgstr ""
+"<qt>Бұл батырма керек орынға бетбелгіні қоюға мүмкіндік береді.Бетбелгіні "
+"қою, өңдеу және таңдау мәзірін ашу үшін осы батырманы басыңыз.<p>Бұл "
+"бетбелгілер файлдар диалогы үшін ерекше болса да, KDE-нің өзге бетбелгілерге "
+"ұқсас.</qt>"
+
 #: kfile/kacleditwidget.cpp:65 kfile/kacleditwidget.cpp:433
 msgid "Owning Group"
 msgstr "Ие тобы"
@@ -3365,7 +3638,7 @@ msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
 #: kfile/kdirselectdialog.cpp:102 kfile/kdirselectdialog.cpp:139
-#: kfile/kdiroperator.cpp:1285
+#: kfile/kdiroperator.cpp:1286
 msgid "New Folder..."
 msgstr "Жаңа қапшық..."
 
@@ -3378,11 +3651,11 @@ msgid "Show Hidden Folders"
 msgstr "Жасырын қапшықтар көрсетілсін"
 
 #: kfile/kdirselectdialog.cpp:427 kfile/kdirselectdialog.cpp:431
-#: kfile/kdiroperator.cpp:397 kfile/kdiroperator.cpp:405
+#: kfile/kdiroperator.cpp:398 kfile/kdiroperator.cpp:406
 msgid "New Folder"
 msgstr "Жаңа қапшық"
 
-#: kfile/kdirselectdialog.cpp:432 kfile/kdiroperator.cpp:406
+#: kfile/kdirselectdialog.cpp:432 kfile/kdiroperator.cpp:407
 #, qt-format
 msgid ""
 "Create new folder in:\n"
@@ -3391,293 +3664,20 @@ msgstr ""
 "Жаңа қапшықтын орны:\n"
 "%1"
 
-#: kfile/kdirselectdialog.cpp:455 kfile/kdiroperator.cpp:434
+#: kfile/kdirselectdialog.cpp:455 kfile/kdiroperator.cpp:435
 #, qt-format
 msgid "A file or folder named %1 already exists."
 msgstr "%1 деген атауы қолданыста бар ғой."
 
-#: kfile/kdirselectdialog.cpp:459 kfile/kdiroperator.cpp:438
+#: kfile/kdirselectdialog.cpp:459 kfile/kdiroperator.cpp:439
 msgid "You do not have permission to create that folder."
 msgstr "Бұл қапшықты құруға рұқсатыңыз жоқ."
 
 #: kfile/kencodingfiledialog.cpp:173 kfile/kencodingfiledialog.cpp:198
-#: kfile/kfiledialog.cpp:1569 kfile/kfiledialog.cpp:1602
-#: kfile/kfiledialog.cpp:1621
+#: kfile/kfiledialog.cpp:370 kfile/kfiledialog.cpp:403
+#: kfile/kfiledialog.cpp:422
 msgid "Save As"
 msgstr ""
-
-#: kfile/kfiledialog.cpp:332
-msgid "Please specify the filename to save to."
-msgstr "Сақтайтын файл атауын келтіріңіз."
-
-#: kfile/kfiledialog.cpp:334
-msgid "Please select the file to open."
-msgstr "Ашатын файл атауын таңдаңыз."
-
-#: kfile/kfiledialog.cpp:391 kfile/kfiledialog.cpp:434
-#: kfile/kfiledialog.cpp:1517
-msgid "You can only select local files."
-msgstr "Тек жергілікті файлды ғана таңдауға болады."
-
-#: kfile/kfiledialog.cpp:392 kfile/kfiledialog.cpp:435
-#: kfile/kfiledialog.cpp:1518
-msgid "Remote Files Not Accepted"
-msgstr "Қашықтағы файл қабылданбайды"
-
-#: kfile/kfiledialog.cpp:426
-#, qt-format
-msgid ""
-"%1\n"
-"does not appear to be a valid URL.\n"
-msgstr ""
-"%1\n"
-"жарамды URL адресіне ұқсамайды.\n"
-
-#: kfile/kfiledialog.cpp:426
-msgid "Invalid URL"
-msgstr "Дұрыс емес URL"
-
-#: kfile/kfiledialog.cpp:745
-msgid ""
-"<p>While typing in the text area, you may be presented with possible "
-"matches. This feature can be controlled by clicking with the right mouse "
-"button and selecting a preferred mode from the <b>Text Completion</b> menu."
-msgstr ""
-"<p>Мәтінді өріске енгізгенде мәтіннің мүмкін жалғастары ұсынылады. Бұны "
-"тышқанның оң батырмасын басып, шыққан мәзіріндегі <b>Мәтінді толтыру</b> "
-"арқылы керек күйін таңдап, баптауға болады."
-
-#: kfile/kfiledialog.cpp:754
-msgid "This is the name to save the file as."
-msgstr "Осы атауымен файл сақталады."
-
-#: kfile/kfiledialog.cpp:759
-msgid ""
-"This is the list of files to open. More than one file can be specified by "
-"listing several files, separated by spaces."
-msgstr ""
-"Бұл ашылатын файлдардың тізімі. Егер бірнеше файлдар керек болса, оларды бос "
-"орынмен бөліктеп келтіріңіз."
-
-#: kfile/kfiledialog.cpp:766
-msgid "This is the name of the file to open."
-msgstr "Бұл ашылатын файлдың атауы."
-
-#: kfile/kfiledialog.cpp:807
-msgid "Current location"
-msgstr "Назардағы орын"
-
-#: kfile/kfiledialog.cpp:808
-msgid ""
-"This is the currently listed location. The drop-down list also lists "
-"commonly used locations. This includes standard locations, such as your home "
-"folder, as well as locations that have been visited recently."
-msgstr ""
-"Назардағы орын көрсетілген. Ашылмалы тізімінде жиі қолданылатын орындары "
-"тізбеленген. Бұнда стандартты орындар, мекен қапшығыңыз секілді, сонымен "
-"қатар, жуырда ашылған орындар тізімделеді."
-
-#: kfile/kfiledialog.cpp:818
-#, fuzzy, qt-format
-msgid "Drive: %1"
-msgstr "өлшемі: %1"
-
-#: kfile/kfiledialog.cpp:825
-#, qt-format
-msgid "Root Folder: %1"
-msgstr "Түбір қапшығы: %1"
-
-#: kfile/kfiledialog.cpp:832
-#, qt-format
-msgid "Home Folder: %1"
-msgstr "Мекен қапшығы: %1"
-
-#: kfile/kfiledialog.cpp:841
-#, qt-format
-msgid "Documents: %1"
-msgstr "Құжаттар: %1"
-
-#: kfile/kfiledialog.cpp:848
-#, qt-format
-msgid "Desktop: %1"
-msgstr "Жұмыс үстелі: %1"
-
-#: kfile/kfiledialog.cpp:890
-#, qt-format
-msgid ""
-"<qt>Click this button to enter the parent folder.<p>For instance, if the "
-"current location is file:/home/%1 clicking this button will take you to "
-"file:/home.</qt>"
-msgstr ""
-"<qt>Аталық қапшыққа ауысу үшін осы батырманы басыңыз.<p>Мысалы, егер "
-"назардағы орын file:/home/%1 болса, бұл батырманы басқанда назар file:/home "
-"деген орынға ауыстырылады.</qt>"
-
-#: kfile/kfiledialog.cpp:894
-msgid "Click this button to move backwards one step in the browsing history."
-msgstr "Журнал бойынша бір қадам артқа ауысу үшін осы батырманы басыңыз."
-
-#: kfile/kfiledialog.cpp:896
-msgid "Click this button to move forward one step in the browsing history."
-msgstr "Журнал бойынша бір қадам алға ауысу үшін осы батырманы басыңыз."
-
-#: kfile/kfiledialog.cpp:898
-msgid "Click this button to reload the contents of the current location."
-msgstr "Назардағы орынның мазмұнын жаңарту үшін осы батырманы басыңыз."
-
-#: kfile/kfiledialog.cpp:901
-msgid "Click this button to create a new folder."
-msgstr "Жаңа қапшықты құру үшін осы батырманы басыңыз."
-
-#: kfile/kfiledialog.cpp:904
-msgid "Show Quick Access Navigation Panel"
-msgstr "Жедел қатынау панелі көрсетілсін"
-
-#: kfile/kfiledialog.cpp:907
-msgid "Hide Quick Access Navigation Panel"
-msgstr "Жедел қатынау панелі жасырылсын"
-
-#: kfile/kfiledialog.cpp:912
-msgid "Show Bookmarks"
-msgstr "Бетбелгілер көрсетілсін"
-
-#: kfile/kfiledialog.cpp:914
-msgid "Hide Bookmarks"
-msgstr "Бетбелгілер жасырылсын"
-
-#: kfile/kfiledialog.cpp:918
-#, fuzzy
-msgid "Configure"
-msgstr "&Жалғастыра беру"
-
-#: kfile/kfiledialog.cpp:920
-msgid ""
-"<qt>This is the configuration menu for the file dialog. Various options can "
-"be accessed from this menu including: <ul><li>how files are sorted in the "
-"list</li><li>types of view, including icon and list</li><li>showing of "
-"hidden files</li><li>the Quick Access navigation panel</li><li>file "
-"previews</li><li>separating folders from files</li></ul></qt>"
-msgstr ""
-"<qt>Бұл файлдар диалогын баптау мәзірі. Бұл мәзірден әртүрлі  параметрлерді "
-"орнатуға болады, мысалы:<ul><li>тізімдегі файлдар қалай реттелген</"
-"li><li>көрініс түрі, таңбаша мен тізімдін түрімен қоса </li><li>жасырын "
-"файлдарды көрсетуі</li><li>жедел қатынау панелі</li><li>файлдарды алдын-ала "
-"қарауы</li> <li>файлдардан қапшықтарды бөлуі</li></ul></qt>"
-
-#: kfile/kfiledialog.cpp:971
-msgid "&Location:"
-msgstr "&Орыны:"
-
-#: kfile/kfiledialog.cpp:996
-msgid ""
-"<qt>This is the filter to apply to the file list. File names that do not "
-"match the filter will not be shown.<p>You may select from one of the preset "
-"filters in the drop down menu, or you may enter a custom filter directly "
-"into the text area.<p>Wildcards such as * and ? are allowed.</qt>"
-msgstr ""
-"<qt>Бұл файлдар тізіміне қолданылатын сүзгі. Сүзгіге сәйкес келмейтін "
-"файлдар атауы көрсетілмейді.<p>Ашлмалы мәзірден дайын сүзгіні таңдауыңызға "
-"немесе өзіңіздің сүзгіңізді өріске енгізуге болады. <p>Үлгі қалқаларды , "
-"мысалы * мен ? сияқты, келтіруге болады.</qt>"
-
-#: kfile/kfiledialog.cpp:1002
-msgid "&Filter:"
-msgstr "&Сүзгі:"
-
-#: kfile/kfiledialog.cpp:1447
-msgid ""
-"The chosen filenames do not\n"
-"appear to be valid."
-msgstr ""
-"Мүмкін, таңдалған файлдардың \n"
-"атаулары дұрыс емес шығар."
-
-#: kfile/kfiledialog.cpp:1449
-msgid "Invalid Filenames"
-msgstr "Файл атаулары дұрыс емес"
-
-#: kfile/kfiledialog.cpp:1479
-#, qt-format
-msgid ""
-"The requested filenames\n"
-"%1\n"
-"do not appear to be valid;\n"
-"make sure every filename is enclosed in double quotes."
-msgstr ""
-"Сұралған файл атаулары\n"
-"%1\n"
-"дұрыс емес шығар.\n"
-"Әрбір файл атауы қос тырнақшаға алынғанын тексеріңіз."
-
-#: kfile/kfiledialog.cpp:1483
-msgid "Filename Error"
-msgstr "Файл атауының қатесі"
-
-#: kfile/kfiledialog.cpp:1649
-msgid "*|All Folders"
-msgstr "*|Барлық қапшықтар"
-
-#: kfile/kfiledialog.cpp:1927
-#, qt-format
-msgid "Automatically select filename e&xtension (%1)"
-msgstr "Файл жұ&рнағын (%1) автоматты түрде таңдау"
-
-#: kfile/kfiledialog.cpp:1928
-#, qt-format
-msgid "the extension <b>%1</b>"
-msgstr "жұрнағы <b>%1</b>"
-
-#: kfile/kfiledialog.cpp:1936
-msgid "Automatically select filename e&xtension"
-msgstr "Файл жұ&рнағын автоматты түрде таңдау"
-
-#: kfile/kfiledialog.cpp:1937
-msgid "a suitable extension"
-msgstr "лайықты жұрнақ"
-
-#: kfile/kfiledialog.cpp:1947
-#, qt-format
-msgid ""
-"This option enables some convenient features for saving files with "
-"extensions:<br><ol><li>Any extension specified in the <b>%1</b> text area "
-"will be updated if you change the file type to save in.<br><br></li><li>If "
-"no extension is specified in the <b>%2</b> text area when you click <b>Save</"
-"b>, %3 will be added to the end of the filename (if the filename does not "
-"already exist). This extension is based on the file type that you have "
-"chosen to save in.<br><br>If you do not want KDE to supply an extension for "
-"the filename, you can either turn this option off or you can suppress it by "
-"adding a period (.) to the end of the filename (the period will be "
-"automatically removed).</li></ol>If unsure, keep this option enabled as it "
-"makes your files more manageable."
-msgstr ""
-"Бұл параметр файлдарды жұрнақтармен сақтау үшін бірнеше ыңғайлы "
-"мүмкіндіктерді қосады:<br><ol><li>Егер сақталатын файлдың түрін өзгертілсе, "
-"<b>%1</b> мәтін өрісінде келтірілген кез келген жұрнақ жаңартылады.<br><br></"
-"li><li>Егер жұрнақ <b>%2</b> мәтін өрісінде келтірілмеген болса, <b>Сақтау</"
-"b> батырмасын басқанда, файл атауынан соңына %3 қосылатын болады (файл атауы "
-"әлден болмаса). Бұл жұрнақ файлдың таңдалған түріне негізделеді.<br><br>Егер "
-"KDE файлдар атауына жұрнақ қоспасын десеңіз, бұл мүмкуіндікті өшіріп "
-"тастаңыз. Оны файл атауынан кейін нүктені қойып уақытша өшіруге болады "
-"(сақтағанда нүкте автоматты түрде алынып тасталады).</li></ol>Күмәндансаңыз, "
-"бұл параметрді қосылған күйінде қалдырыңыз, ол файлыңызды басқаруға ыңғайлы."
-
-#: kfile/kfiledialog.cpp:2224 bookmarks/kbookmarkimporter_ns.cc:198
-#: bookmarks/kbookmarkimporter_ns.cc:199 bookmarks/kbookmarkmenu.cc:681
-#, fuzzy
-msgid "Bookmarks"
-msgstr "Бетбелгі"
-
-#: kfile/kfiledialog.cpp:2227
-msgid ""
-"<qt>This button allows you to bookmark specific locations. Click on this "
-"button to open the bookmark menu where you may add, edit or select a "
-"bookmark.<p>These bookmarks are specific to the file dialog, but otherwise "
-"operate like bookmarks elsewhere in KDE.</qt>"
-msgstr ""
-"<qt>Бұл батырма керек орынға бетбелгіні қоюға мүмкіндік береді.Бетбелгіні "
-"қою, өңдеу және таңдау мәзірін ашу үшін осы батырманы басыңыз.<p>Бұл "
-"бетбелгілер файлдар диалогы үшін ерекше болса да, KDE-нің өзге бетбелгілерге "
-"ұқсас.</qt>"
 
 #: kfile/kurlrequester.cpp:198
 msgid "Open file dialog"
@@ -3777,15 +3777,15 @@ msgstr "&Орындалғаннан кейін жабылмасын"
 msgid "&Remember application association for this type of file"
 msgstr "Бұл файл үшін қолданбаның сәйкестігі &жатталсын"
 
-#: kfile/kdiroperator.cpp:460
+#: kfile/kdiroperator.cpp:461
 msgid "You did not select a file to delete."
 msgstr "Өшіру үшін файл таңдалмаған."
 
-#: kfile/kdiroperator.cpp:461
+#: kfile/kdiroperator.cpp:462
 msgid "Nothing to Delete"
 msgstr "Өшіретін ештеңе жоқ"
 
-#: kfile/kdiroperator.cpp:475
+#: kfile/kdiroperator.cpp:476
 #, qt-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -3794,130 +3794,130 @@ msgstr ""
 "<qt><b>'%1'</b>\n"
 "деген өшірілсін бе?</qt>"
 
-#: kfile/kdiroperator.cpp:477
+#: kfile/kdiroperator.cpp:478
 msgid "Delete File"
 msgstr "Файлды өшіру"
 
-#: kfile/kdiroperator.cpp:482
+#: kfile/kdiroperator.cpp:483
 #, qt-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Осы %1 элемент өшірілсін бе?"
 
-#: kfile/kdiroperator.cpp:484
+#: kfile/kdiroperator.cpp:485
 msgid "Delete Files"
 msgstr "Файлдарды өшіру"
 
-#: kfile/kdiroperator.cpp:515
+#: kfile/kdiroperator.cpp:516
 msgid "You did not select a file to trash."
 msgstr "Өшірілгендерге тастайтын файл таңдалмаған."
 
-#: kfile/kdiroperator.cpp:516
+#: kfile/kdiroperator.cpp:517
 msgid "Nothing to Trash"
 msgstr "Өшірілгендерге тастайтын ештеңе жоқ"
 
-#: kfile/kdiroperator.cpp:530
+#: kfile/kdiroperator.cpp:531
 #, qt-format
 msgid ""
 "<qt>Do you really want to trash\n"
 " <b>'%1'</b>?</qt>"
 msgstr "<qt><b>'%1'</b> деген өшірілгендерге тасталсын ба?</qt>"
 
-#: kfile/kdiroperator.cpp:532
+#: kfile/kdiroperator.cpp:533
 msgid "Trash File"
 msgstr "Файлды өшірілгендерге тастау"
 
-#: kfile/kdiroperator.cpp:533 kfile/kdiroperator.cpp:540
+#: kfile/kdiroperator.cpp:534 kfile/kdiroperator.cpp:541
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "&Өшірілгендерге тастау"
 
-#: kfile/kdiroperator.cpp:537
+#: kfile/kdiroperator.cpp:538
 #, qt-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Осы %1 нәрсені өшірілгендерге тастағыңыз келе ме?"
 
-#: kfile/kdiroperator.cpp:539
+#: kfile/kdiroperator.cpp:540
 msgid "Trash Files"
 msgstr "Файлдарды өшірілгендерге тастау"
 
-#: kfile/kdiroperator.cpp:658 kfile/kdiroperator.cpp:727
+#: kfile/kdiroperator.cpp:659 kfile/kdiroperator.cpp:728
 msgid "The specified folder does not exist or was not readable."
 msgstr "Келтірілген қапшық жоқ немесе оқылмайды."
 
-#: kfile/kdiroperator.cpp:927 kfile/kdiroperator.cpp:1340
+#: kfile/kdiroperator.cpp:928 kfile/kdiroperator.cpp:1341
 msgid "Short View"
 msgstr "Қысқартылған көрініс"
 
-#: kfile/kdiroperator.cpp:1267
+#: kfile/kdiroperator.cpp:1268
 msgid "Parent Folder"
 msgstr "Аталық қапшық"
 
-#: kfile/kdiroperator.cpp:1277
+#: kfile/kdiroperator.cpp:1278
 #, fuzzy
 msgid "Reload"
 msgstr "Оқу"
 
-#: kfile/kdiroperator.cpp:1290
+#: kfile/kdiroperator.cpp:1291
 msgid "Move to Trash"
 msgstr "Өшірілгендерге тастау"
 
-#: kfile/kdiroperator.cpp:1296
+#: kfile/kdiroperator.cpp:1297
 #, fuzzy
 msgid "Delete"
 msgstr "Өшіру"
 
-#: kfile/kdiroperator.cpp:1303
+#: kfile/kdiroperator.cpp:1304
 msgid "Sorting"
 msgstr "Реттеу тәртібі"
 
-#: kfile/kdiroperator.cpp:1306
+#: kfile/kdiroperator.cpp:1307
 msgid "By Name"
 msgstr "Атауы бойынша"
 
-#: kfile/kdiroperator.cpp:1310
+#: kfile/kdiroperator.cpp:1311
 msgid "By Date"
 msgstr "Күні бойынша"
 
-#: kfile/kdiroperator.cpp:1314
+#: kfile/kdiroperator.cpp:1315
 msgid "By Size"
 msgstr "Өлшемі бойынша"
 
-#: kfile/kdiroperator.cpp:1318
+#: kfile/kdiroperator.cpp:1319
 msgid "Reverse"
 msgstr "Кері тәртібімен"
 
-#: kfile/kdiroperator.cpp:1327
+#: kfile/kdiroperator.cpp:1328
 msgid "Folders First"
 msgstr "Қапшықтар алдында"
 
-#: kfile/kdiroperator.cpp:1331
+#: kfile/kdiroperator.cpp:1332
 msgid "Case Insensitive"
 msgstr "Үлкен-кішілігін ескермеу"
 
-#: kfile/kdiroperator.cpp:1336
+#: kfile/kdiroperator.cpp:1337
 #, fuzzy
 msgid "&View"
 msgstr "Алдын-ала қа&рау"
 
-#: kfile/kdiroperator.cpp:1350
+#: kfile/kdiroperator.cpp:1351
 msgid "Show Hidden Files"
 msgstr "Жасырын файлдар көрсетілсін"
 
-#: kfile/kdiroperator.cpp:1354
+#: kfile/kdiroperator.cpp:1355
 msgid "Separate Folders"
 msgstr "Қапшықтарды бөлу"
 
-#: kfile/kdiroperator.cpp:1358
+#: kfile/kdiroperator.cpp:1359
 msgid "Show Preview"
 msgstr "Алдын-ала көрсетілсін"
 
-#: kfile/kdiroperator.cpp:1361
+#: kfile/kdiroperator.cpp:1362
 msgid "Hide Preview"
 msgstr "Алдын-ала көрсетпеу"
 
-#: kfile/kdiroperator.cpp:1370 bookmarks/kbookmarkmenu.cc:256
+#: kfile/kdiroperator.cpp:1371 bookmarks/kbookmarkmenu.cc:256
 #, fuzzy
 msgid "Properties"
 msgstr "%1 қасиеттері"
