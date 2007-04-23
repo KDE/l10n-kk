@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-04-22 05:50+0200\n"
+"POT-Creation-Date: 2007-04-23 05:42+0200\n"
 "PO-Revision-Date: 2007-04-18 10:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -215,7 +215,6 @@ msgstr "Желіден тыс"
 
 #: libkopete/kopeteonlinestatus.cpp:127
 #: plugins/translator/translatorlanguages.cpp:33
-#: plugins/cryptography/kgpgselkey.cpp:99
 #: protocols/oscar/aim/aimstatusmanager.cpp:33
 #: protocols/oscar/icq/icqstatusmanager.cpp:36
 #: protocols/oscar/icq/icqprotocol.cpp:450
@@ -1705,8 +1704,8 @@ msgid "Missing Protocol"
 msgstr "Жоқ протокол"
 
 #: kopete/addaccountwizard/addaccountwizard.cpp:70 rc.cpp:122 rc.cpp:4820
-#: rc.cpp:4887 plugins/cryptography/kgpgselkey.cpp:63
-#: plugins/cryptography/popuppublic.cpp:139
+#: rc.cpp:4887 plugins/cryptography/popuppublic.cpp:139
+#: plugins/cryptography/selectkeydialog.cpp:59
 msgid "Name"
 msgstr "Атауы"
 
@@ -9348,68 +9347,6 @@ msgstr "Контакттың ашық кілтін таңдау"
 msgid "Select public key for %1"
 msgstr "%1 үшін ашық кілтті таңдау"
 
-#: plugins/cryptography/kgpgselkey.cpp:50
-msgid "Private Key List"
-msgstr "Жеке кілттердің тізімі"
-
-#: plugins/cryptography/kgpgselkey.cpp:67
-msgid "Choose secret key:"
-msgstr "Құпия кілтті таңдау:"
-
-#: plugins/cryptography/kgpgselkey.cpp:75
-msgid "Local signature (cannot be exported)"
-msgstr "Жергілікті қолтаңба (экспортталмайды)"
-
-#: plugins/cryptography/kgpgselkey.cpp:94
-#: plugins/cryptography/popuppublic.cpp:417
-msgid "Unlimited"
-msgstr "Шектеусіз"
-
-#: plugins/cryptography/kgpgselkey.cpp:102
-msgid "Invalid"
-msgstr "Жарамсыз"
-
-#: plugins/cryptography/kgpgselkey.cpp:105
-msgid "Disabled"
-msgstr "Рұқсат етілмеген"
-
-#: plugins/cryptography/kgpgselkey.cpp:108
-msgid "Revoked"
-msgstr "Күші жойылған"
-
-#: plugins/cryptography/kgpgselkey.cpp:111
-msgid "Expired"
-msgstr "Мерзімі біткен"
-
-#: plugins/cryptography/kgpgselkey.cpp:114
-msgid "Undefined"
-msgstr "Анықталмаған"
-
-#: plugins/cryptography/kgpgselkey.cpp:117
-msgid "None"
-msgstr "Жоқ"
-
-#: plugins/cryptography/kgpgselkey.cpp:120
-msgid "Marginal"
-msgstr "Шегіндегі"
-
-#: plugins/cryptography/kgpgselkey.cpp:123
-msgid "Full"
-msgstr "Толық"
-
-#: plugins/cryptography/kgpgselkey.cpp:126
-msgid "Ultimate"
-msgstr "Ақырғы"
-
-#: plugins/cryptography/kgpgselkey.cpp:129
-msgid "?"
-msgstr "?"
-
-#: plugins/cryptography/kgpgselkey.cpp:159
-#, qt-format
-msgid "ID: %1, trust: %2, expiration: %3"
-msgstr "Идентификаторы: %1, сенімділігі: %2, мерзімі: %3"
-
 #: plugins/cryptography/popuppublic.cpp:101
 msgid "Select Public Key"
 msgstr "Ашық кілтті таңдау"
@@ -9535,6 +9472,10 @@ msgstr ""
 "<b>Симметриялы шифрлау</b> деген кілттерсіз шифрлау. Шифрлау және шифрды "
 "шешу үшін тек паролін ғана келтіру керек"
 
+#: plugins/cryptography/popuppublic.cpp:417
+msgid "Unlimited"
+msgstr "Шектеусіз"
+
 #: plugins/cryptography/cryptographyplugin.cpp:55
 msgid "Cryptography"
 msgstr "Шифрлау"
@@ -9580,6 +9521,31 @@ msgstr[0] ""
 msgid "Missing public key"
 msgid_plural "Missing public keys"
 msgstr[0] ""
+
+#: plugins/cryptography/selectkeydialog.cpp:50
+msgid "Private Key List"
+msgstr "Жеке кілттердің тізімі"
+
+#: plugins/cryptography/selectkeydialog.cpp:63
+msgid "Choose secret key:"
+msgstr "Құпия кілтті таңдау:"
+
+#: plugins/cryptography/selectkeydialog.cpp:71
+msgid "Local signature (cannot be exported)"
+msgstr "Жергілікті қолтаңба (экспортталмайды)"
+
+#: plugins/cryptography/selectkeydialog.cpp:103
+#, fuzzy
+#| msgid "Unlimited"
+msgctxt "adj"
+msgid "Unlimited"
+msgstr "Шектеусіз"
+
+#: plugins/cryptography/selectkeydialog.cpp:106
+#, fuzzy, qt-format
+#| msgid "ID: %1, trust: %2, expiration: %3"
+msgid "ID: %1, expiration: %2"
+msgstr "Идентификаторы: %1, сенімділігі: %2, мерзімі: %3"
 
 #: plugins/history/historydialog.cpp:101 plugins/history/historydialog.cpp:572
 #, qt-format
@@ -15478,3 +15444,33 @@ msgid ""
 msgstr ""
 "Сіз орнында жоқ немесе бос емес кезіңізде Сізге хабар жіберген қатынасушыға "
 "жіберлетін автожауап берушінің хабарын келтіріңіз"
+
+#~ msgid "Invalid"
+#~ msgstr "Жарамсыз"
+
+#~ msgid "Disabled"
+#~ msgstr "Рұқсат етілмеген"
+
+#~ msgid "Revoked"
+#~ msgstr "Күші жойылған"
+
+#~ msgid "Expired"
+#~ msgstr "Мерзімі біткен"
+
+#~ msgid "Undefined"
+#~ msgstr "Анықталмаған"
+
+#~ msgid "None"
+#~ msgstr "Жоқ"
+
+#~ msgid "Marginal"
+#~ msgstr "Шегіндегі"
+
+#~ msgid "Full"
+#~ msgstr "Толық"
+
+#~ msgid "Ultimate"
+#~ msgstr "Ақырғы"
+
+#~ msgid "?"
+#~ msgstr "?"
