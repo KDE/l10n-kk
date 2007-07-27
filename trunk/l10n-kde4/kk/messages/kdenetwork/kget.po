@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2007-02-26 15:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team:  <kk@li.org>\n"
@@ -80,6 +80,12 @@ msgid "Start KGet with drop target"
 msgstr "KGet-ті сүйреп апаратын орынымен бастау"
 
 #: main.cpp:128
+#, fuzzy
+#| msgid "Start KGet with drop target"
+msgid "Start KGet with hidden main window"
+msgstr "KGet-ті сүйреп апаратын орынымен бастау"
+
+#: main.cpp:129
 msgid "URL(s) to download"
 msgstr "Жүктейтін URL адрес(тер)"
 
@@ -100,14 +106,13 @@ msgstr "Тапсырмалар тізімін &экспорттау..."
 msgid "Edit Groups..."
 msgstr ""
 
-#: mainwindow.cpp:120
-#, fuzzy
-msgid "Delete Group."
-msgstr "Әдетті қапшық"
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
+msgstr ""
 
 #: mainwindow.cpp:125
 #, fuzzy
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "Әдетті қапшық"
 
 #: mainwindow.cpp:130
@@ -180,41 +185,41 @@ msgstr "sairan@computer.org"
 msgid "Copy URL to Clipboard"
 msgstr "URL-ды алмасу буферіне &көшіріп алу"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
 #, fuzzy
 #| msgid ""
 #| "This is the first time that you have run KGet.\n"
 #| "Do you want to use KGet as Download Manager for Konqueror?"
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 "KGet-ті бірінші рет жегіп жатырсыз.\n"
 "KGet-ті Konqueror-дың жүктеу менеджері қыламыз ба?"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Konqueror-мен біріктіру"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Enable"
 msgstr "Рұқсат етілсін"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 msgid "Do Not Enable"
 msgstr "Рұқсат етілмесін"
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 #, fuzzy
 msgid "Open File"
 msgstr "&Файлды ашу"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 #, fuzzy
 #| msgid ""
 #| "Some transfers are still running.\n"
@@ -226,38 +231,38 @@ msgstr ""
 "Кейбір тапсырмалар әлі орындалуда.\n"
 "KGet-тен шыққыңыз келгені рас па?"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Ашылатын тапсырма:"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 #, fuzzy
 msgid "Export Transfers"
 msgstr "Тапсырмалар тізімін &экспорттау..."
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Сайран Киккарин"
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 #, fuzzy
 msgid "Group name:"
 msgstr "Сайран Киккарин"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Konqueror-мен біріктіру"
@@ -794,32 +799,42 @@ msgstr "Орындалу барысы"
 msgid "Speed"
 msgstr "Жылдамдығы"
 
-#: ui/droptarget.cpp:82
-#, fuzzy
-msgid "Hide Me"
-msgstr "Файл атауы"
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+msgid "Hide Drop Target"
+msgstr "Сүйреп апаратын &орнын жасыру"
+
+#: ui/droptarget.cpp:84
 msgid "Sticky"
 msgstr "Барлық үстелдерге"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 #, fuzzy
 msgid "Show Main Window"
 msgstr "Бастағанда негізгі терезені көрсету"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 #, fuzzy
 msgid "Hide Main Window"
 msgstr "Ж&урнал жасыру"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+#| msgid "Drop target"
+msgid "Drop Target"
+msgstr "Сүйреп апаратын орны"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
 msgstr ""
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 #, fuzzy
 msgid "Hiding drop target"
 msgstr "Сүйреп апаратын &орнын жасыру"
@@ -830,10 +845,6 @@ msgstr ""
 
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
-msgstr ""
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
 msgstr ""
 
 #: ui/groupseditdialog.cpp:74
@@ -893,6 +904,14 @@ msgstr "&Тапсырма"
 #, fuzzy
 msgid "Transfer details:"
 msgstr " %1 тапсырма "
+
+#, fuzzy
+#~ msgid "Delete Group."
+#~ msgstr "Әдетті қапшық"
+
+#, fuzzy
+#~ msgid "Hide Me"
+#~ msgstr "Файл атауы"
 
 #~ msgid ""
 #~ "Each row consists of exactly one\n"
@@ -1573,9 +1592,6 @@ msgstr " %1 тапсырма "
 
 #~ msgid "Normal"
 #~ msgstr "Кәдімгі"
-
-#~ msgid "Drop target"
-#~ msgstr "Сүйреп апаратын орны"
 
 #~ msgid "Copy file from: %1"
 #~ msgstr "Келесіден файлды көшіріп алу: %1"
