@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-12 05:38+0200\n"
+"POT-Creation-Date: 2007-08-16 05:37+0200\n"
 "PO-Revision-Date: 2007-04-28 20:55+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -57,7 +57,7 @@ msgid ""
 "%2"
 msgstr ""
 
-#: lib/pilotMemo.cc:142 kpilot/addressWidget.cc:357
+#: lib/pilotMemo.cc:142 kpilot/addressWidget.cc:356
 msgid "[unknown]"
 msgstr "[беймәлім]"
 
@@ -144,18 +144,6 @@ msgstr "Сұрақ"
 #: lib/syncAction.cc:336 lib/syncAction.cc:407
 msgid "&Do not ask again"
 msgstr "Сұрақ &енді қойылмасын"
-
-#: lib/recordConduit.cc:69 lib/recordConduit.cc:278
-#, fuzzy, qt-format
-#| msgid "Unable to open the memo databases on the handheld."
-msgid "Unable to open the %1 database on the handheld."
-msgstr "Қалта құрылғысында жазба деректер қорлары ашылмады."
-
-#: lib/recordConduit.cc:284
-#, fuzzy, qt-format
-#| msgid "Unable to open the addressbook."
-msgid "Unable to open %1."
-msgstr "Адрестік кітапша ашылмады."
 
 #: lib/kpilotdevicelink.cc:294
 msgid " The port does not exist."
@@ -336,35 +324,35 @@ msgstr "Болмайтын кездері:"
 msgid "Unnamed"
 msgstr "Беймәлім"
 
-#: lib/plugin.cc:97
+#: lib/plugin.cc:95
 #, qt-format
 msgid ""
 "<qt>The <i>%1</i> conduit's settings have been changed. Do you want to save "
 "the changes before continuing?</qt>"
 msgstr ""
 
-#: lib/plugin.cc:109
+#: lib/plugin.cc:107
 #, fuzzy, qt-format
 #| msgid "Conduits"
 msgid "%1 Conduit"
 msgstr "Арналар"
 
-#: lib/plugin.cc:151
+#: lib/plugin.cc:148
 msgid "Send questions and comments to kdepim-users@kde.org"
 msgstr "Сұрақтар мен пікірлерін kdepim-users@kde.org дегенге жіберіңіз"
 
-#: lib/plugin.cc:193
+#: lib/plugin.cc:189
 #, fuzzy, qt-format
 #| msgid "Send questions and comments to kdepim-users@kde.org"
 msgid "Send questions and comments to <a href=\"mailto:%1\">%2</a>."
 msgstr "Сұрақтар мен пікірлерін kdepim-users@kde.org дегенге жіберіңіз"
 
-#: lib/plugin.cc:195
+#: lib/plugin.cc:191
 #, qt-format
 msgid "Send bug reports to <a href=\"mailto:%1\">%2</a>."
 msgstr ""
 
-#: lib/plugin.cc:197
+#: lib/plugin.cc:193
 msgid ""
 "For trademark information, see the <a href=\"help:/kpilot/trademarks.html"
 "\">KPilot User's Guide</a>."
@@ -372,45 +360,45 @@ msgstr ""
 "Сауда белгілер туралы мәліметті <a href=\"help:/kpilot/trademarks.html"
 "\">KPilot пайдалану бағыттамасы</a> дегеннен қараңыз."
 
-#: lib/plugin.cc:208
+#: lib/plugin.cc:204
 msgid "<b>Authors:</b> "
 msgstr "<b>Авторлары:</b> "
 
-#: lib/plugin.cc:228
+#: lib/plugin.cc:224
 msgid "<b>Credits:</b> "
 msgstr "<b>Алғыстар:</b> "
 
-#: lib/plugin.cc:266 kpilot/config_dialog.cc:295
+#: lib/plugin.cc:262 kpilot/config_dialog.cc:295
 msgid "About"
 msgstr ""
 
-#: lib/plugin.cc:455
+#: lib/plugin.cc:451
 #, qt-format
 msgid "Could not find conduit %1."
 msgstr ""
 
-#: lib/plugin.cc:474
+#: lib/plugin.cc:470
 #, qt-format
 msgid "Could not load conduit %1."
 msgstr ""
 
-#: lib/plugin.cc:483
+#: lib/plugin.cc:479
 #, qt-format
 msgid "Conduit %1 has wrong version (%2)."
 msgstr ""
 
-#: lib/plugin.cc:492
+#: lib/plugin.cc:488
 #, fuzzy, qt-format
 #| msgid "Cannot initialize from pilot."
 msgid "Could not initialize conduit %1."
 msgstr "Pilot. жағынан бастау күйіне келітре алмады."
 
-#: lib/plugin.cc:505 lib/plugin.cc:514
+#: lib/plugin.cc:501 lib/plugin.cc:510
 #, qt-format
 msgid "Could not create conduit %1."
 msgstr ""
 
-#: lib/plugin.cc:518
+#: lib/plugin.cc:514
 #, fuzzy, qt-format
 #| msgid "Conduits"
 msgid "[Conduit %1]\n"
@@ -508,19 +496,22 @@ msgstr ""
 
 #: conduits/base/cudcounter.cc:80
 #, qt-format
-msgid "%1 new. "
+msgctxt "Created record count"
+msgid "%1 new record(s). "
 msgstr ""
 
 #: conduits/base/cudcounter.cc:81
 #, fuzzy, qt-format
 #| msgid "changed"
-msgid "%1 changed. "
+msgctxt "Updated record count"
+msgid "%1 changed record(s). "
 msgstr "өзгертілген"
 
 #: conduits/base/cudcounter.cc:82
 #, fuzzy, qt-format
 #| msgid "deleted"
-msgid "%1 deleted. "
+msgctxt "Deleted record count"
+msgid "%1 deleted record(s). "
 msgstr "өшірілген"
 
 #: conduits/base/cudcounter.cc:84
@@ -529,18 +520,18 @@ msgstr "өшірілген"
 msgid "No changes made. "
 msgstr " өзгеріс жасалған жоқ."
 
-#: conduits/base/recordconduit.cc:161
+#: conduits/base/recordconduit.cc:165
 #, fuzzy
 #| msgid "Unable to open the memo databases on the handheld."
 msgid ""
 "Failed to open the pc database and the handheld datbase, no data to sync."
 msgstr "Қалта құрылғысында жазба деректер қорлары ашылмады."
 
-#: conduits/base/recordconduit.cc:266
+#: conduits/base/recordconduit.cc:270
 msgid "Large Changes Detected"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:268
+#: conduits/base/recordconduit.cc:272
 #, qt-format
 msgid ""
 "The %1 conduit has made a large number of changes to your %2.  Do you want "
@@ -549,17 +540,17 @@ msgid ""
 "\t%3"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:279
+#: conduits/base/recordconduit.cc:283
 #, fuzzy
 #| msgid "Handheld"
 msgid "handheld"
 msgstr "Құрылғыдағы"
 
-#: conduits/base/recordconduit.cc:292
+#: conduits/base/recordconduit.cc:296
 msgid "pc"
 msgstr ""
 
-#: conduits/base/recordconduit.cc:832
+#: conduits/base/recordconduit.cc:866
 #: conduits/vcalconduit/vcal-conduitbase.cc:417
 msgid ""
 "The following item was modified both on the Handheld and on your PC:\n"
@@ -570,12 +561,14 @@ msgstr ""
 "ДК-дағы:\n"
 "\t"
 
-#: conduits/base/recordconduit.cc:840 conduits/base/recordconduit.cc:849
-#: conduits/docconduit/doc-conflictdialog.cc:169
+#: conduits/base/recordconduit.cc:874
+#, fuzzy
+#| msgid "deleted"
+msgctxt "The pc record is deleted."
 msgid "deleted"
 msgstr "өшірілген"
 
-#: conduits/base/recordconduit.cc:842
+#: conduits/base/recordconduit.cc:876
 #: conduits/vcalconduit/vcal-conduitbase.cc:420
 msgid ""
 "\n"
@@ -586,7 +579,14 @@ msgstr ""
 "Құрылғыдағы:\n"
 "\t"
 
-#: conduits/base/recordconduit.cc:851
+#: conduits/base/recordconduit.cc:883
+#, fuzzy
+#| msgid "deleted"
+msgctxt "The pilot record is deleted."
+msgid "deleted"
+msgstr "өшірілген"
+
+#: conduits/base/recordconduit.cc:885
 #: conduits/vcalconduit/vcal-conduitbase.cc:422
 msgid ""
 "\n"
@@ -597,18 +597,18 @@ msgstr ""
 "\n"
 "Қайсын қалдырасыз? Қарсысы осымен ауыстырылады."
 
-#: conduits/base/recordconduit.cc:856
+#: conduits/base/recordconduit.cc:890
 #: conduits/vcalconduit/vcal-conduitbase.cc:427
 msgid "Conflicting Entries"
 msgstr "Қайшылы жазулар"
 
-#: conduits/base/recordconduit.cc:859
+#: conduits/base/recordconduit.cc:893
 #: conduits/abbrowserconduit/abbrowser-conduit.cc:1508
 #: conduits/vcalconduit/vcal-conduitbase.cc:430
 msgid "Handheld"
 msgstr "Құрылғыдағы"
 
-#: conduits/base/recordconduit.cc:859
+#: conduits/base/recordconduit.cc:893
 #: conduits/vcalconduit/vcal-conduitbase.cc:430
 msgid "PC"
 msgstr "ДК"
@@ -643,7 +643,7 @@ msgstr ""
 #: conduits/memofileconduit/memofile-factory.cc:73
 #: conduits/sysinfoconduit/sysinfo-setup.cc:99
 #: conduits/malconduit/mal-setup.cc:70
-#: conduits/keyringconduit/keyringsetup.cc:55
+#: conduits/keyringconduit/keyringsetup.cc:53
 #: conduits/timeconduit/time-setup.cc:51
 #: conduits/abbrowserconduit/abbrowser-setup.cc:54
 #: conduits/notepadconduit/notepad-factory.cc:84
@@ -784,7 +784,7 @@ msgstr "Жүйелік мәліметі"
 #: conduits/sysinfoconduit/sysinfo-conduit.cc:393
 #: conduits/sysinfoconduit/sysinfo-conduit.cc:394
 #: conduits/sysinfoconduit/sysinfo-conduit.cc:395
-#: conduits/docconduit/doc-conflictdialog.cc:171
+#: conduits/docconduit/doc-conflictdialog.cc:172
 msgid "unknown"
 msgstr "беймәлім"
 
@@ -900,27 +900,27 @@ msgstr ""
 msgid "Authors of the malsync library (c) 1997-1999"
 msgstr "(c) 1997-1999 malsync жиынның авторлары"
 
-#: conduits/keyringconduit/keyringsetup.cc:47
+#: conduits/keyringconduit/keyringsetup.cc:45
 #, fuzzy
 #| msgid "Perl Conduit for KPilot"
 msgid "Keyring Conduit for KPilot"
 msgstr "KPilot-тың Perl арнасы"
 
-#: conduits/keyringconduit/keyringsetup.cc:49
+#: conduits/keyringconduit/keyringsetup.cc:47
 #, fuzzy
 #| msgid "Configures the Perl Conduit for KPilot"
 msgid "Configures the Keyring Conduit for KPilot"
 msgstr "KPilot-тың Perl арнасының параметрлері"
 
-#: conduits/keyringconduit/keyringsetup.cc:51
+#: conduits/keyringconduit/keyringsetup.cc:49
 msgid "(C) 2007, Bertjan Broeksema"
 msgstr ""
 
-#: conduits/keyringconduit/keyringsetup.cc:54 kpilot/kpilotConfig.h:149
+#: conduits/keyringconduit/keyringsetup.cc:52 kpilot/kpilotConfig.h:149
 msgid "Bertjan Broeksema"
 msgstr ""
 
-#: conduits/keyringconduit/keyringsetup.cc:82
+#: conduits/keyringconduit/keyringsetup.cc:80
 #, fuzzy
 #| msgid "Record index:"
 msgid "Keyring Conduit"
@@ -1299,7 +1299,7 @@ msgstr "Қадамдастыруды пайдаланушы доғарды."
 msgid "Synchronizing text \"%1\""
 msgstr "Қадамдастыру бағыты"
 
-#: conduits/docconduit/doc-conflictdialog.h:63
+#: conduits/docconduit/doc-conflictdialog.h:64
 #, fuzzy
 #| msgid "Restore Pilot"
 msgid "Resolution Dialog"
@@ -1409,7 +1409,7 @@ msgstr ""
 
 #: conduits/docconduit/kpalmdoc_dlg.cc:458
 #: conduits/docconduit/kpalmdoc_dlg.cc:503 kpilot/logWidget.cc:265
-#: kpilot/addressWidget.cc:652
+#: kpilot/addressWidget.cc:651
 msgid "Overwrite"
 msgstr "Үстінен жазу"
 
@@ -1462,7 +1462,7 @@ msgstr "KPilot-тың жетілдірушісі"
 msgid "PalmDOC Converter"
 msgstr "PalmDOC аударғышы"
 
-#: conduits/docconduit/doc-conflictdialog.cc:63
+#: conduits/docconduit/doc-conflictdialog.cc:64
 msgid ""
 "Here is a list of all text files and DOC databases the conduit found. The "
 "conduit tried to determine the correct sync direction, but for databases in "
@@ -1476,76 +1476,80 @@ msgstr ""
 "қалта құрылғысында да, мәтіні өзгертілген файлдар). Бұндайлар үшін қай "
 "жақтағысы басымды екенін өзіңіз көрсетіңіз."
 
-#: conduits/docconduit/doc-conflictdialog.cc:67
+#: conduits/docconduit/doc-conflictdialog.cc:68
 msgid ""
 "You can also change the sync direction for databases without a conflict."
 msgstr ""
 "Қаласаңыз, қайшылықсыз деректер қорының қадамдастыру бағытын ауыстыруға "
 "болады."
 
-#: conduits/docconduit/doc-conflictdialog.cc:71
+#: conduits/docconduit/doc-conflictdialog.cc:72
 msgid "DOC Databases"
 msgstr "DOC деректер қорлары"
 
-#: conduits/docconduit/doc-conflictdialog.cc:116
+#: conduits/docconduit/doc-conflictdialog.cc:117
 msgid "No Sync"
 msgstr "Қад-струдың керегі жоқ"
 
-#: conduits/docconduit/doc-conflictdialog.cc:117
+#: conduits/docconduit/doc-conflictdialog.cc:118
 msgid "Sync Handheld to PC"
 msgstr "Қалта құрылғысынан ДК-ға"
 
-#: conduits/docconduit/doc-conflictdialog.cc:118
+#: conduits/docconduit/doc-conflictdialog.cc:119
 msgid "Sync PC to Handheld"
 msgstr "ДК-дан Қалта құрылғысына"
 
-#: conduits/docconduit/doc-conflictdialog.cc:119
+#: conduits/docconduit/doc-conflictdialog.cc:120
 msgid "Delete Both Databases"
 msgstr "Екі жақтан да өшіру"
 
-#: conduits/docconduit/doc-conflictdialog.cc:123
+#: conduits/docconduit/doc-conflictdialog.cc:124
 msgid "More Info..."
 msgstr "Егжей-тегжейі..."
 
-#: conduits/docconduit/doc-conflictdialog.cc:165
+#: conduits/docconduit/doc-conflictdialog.cc:166
 msgid "unchanged"
 msgstr "өзгертілмеген"
 
-#: conduits/docconduit/doc-conflictdialog.cc:166
+#: conduits/docconduit/doc-conflictdialog.cc:167
 msgid "new"
 msgstr "жаңа"
 
-#: conduits/docconduit/doc-conflictdialog.cc:167
+#: conduits/docconduit/doc-conflictdialog.cc:168
 msgid "changed"
 msgstr "өзгертілген"
 
-#: conduits/docconduit/doc-conflictdialog.cc:168
+#: conduits/docconduit/doc-conflictdialog.cc:169
 msgid "only bookmarks changed"
 msgstr "бетбелгілері ғана өзгетілген"
 
 #: conduits/docconduit/doc-conflictdialog.cc:170
+msgid "deleted"
+msgstr "өшірілген"
+
+#: conduits/docconduit/doc-conflictdialog.cc:171
 msgid "does not exist"
 msgstr "мүлдем жоқ"
 
-#: conduits/docconduit/doc-conflictdialog.cc:181
+#: conduits/docconduit/doc-conflictdialog.cc:182
 #, qt-format
 msgid ""
 "Status of the database %1:\n"
 "\n"
 msgstr ""
 
-#: conduits/docconduit/doc-conflictdialog.cc:182
+#: conduits/docconduit/doc-conflictdialog.cc:183
 #, fuzzy, qt-format
 #| msgid "Handheld"
 msgid "Handheld: %1\n"
 msgstr "Құрылғыдағы"
 
-#: conduits/docconduit/doc-conflictdialog.cc:183
+#: conduits/docconduit/doc-conflictdialog.cc:184
 #, qt-format
 msgid "Desktop: %1\n"
 msgstr ""
 
-#: conduits/docconduit/doc-conflictdialog.cc:185
+#: conduits/docconduit/doc-conflictdialog.cc:186
 msgid "Database information"
 msgstr "Деректер қоры туралы"
 
@@ -2341,35 +2345,35 @@ msgstr "Бастау мен Шығу"
 msgid "Behavior at startup and exit."
 msgstr "Бастау мен шығу тәртіптері."
 
-#: kpilot/config_dialog.cc:321
+#: kpilot/config_dialog.cc:319
 #, fuzzy
 #| msgid "Done Installing Files"
 msgid "Install Files"
 msgstr "Файлдар орнатылды"
 
-#: kpilot/config_dialog.cc:322
+#: kpilot/config_dialog.cc:320
 msgid "Install files that are dragged to KPilot onto the handheld."
 msgstr ""
 
-#: kpilot/config_dialog.cc:431
+#: kpilot/config_dialog.cc:440
 #, qt-format
 msgid ""
 "<qt>This is an internal action which has no configuration options. The "
 "action's description is: <i>%1</i> </qt>"
 msgstr ""
 
-#: kpilot/config_dialog.cc:595
+#: kpilot/config_dialog.cc:604
 #, qt-format
 msgid ""
 "<qt>No library could be found for the conduit %1. This means that the "
 "conduit was not installed properly.</qt>"
 msgstr ""
 
-#: kpilot/config_dialog.cc:601 kpilot/config_dialog.cc:615
+#: kpilot/config_dialog.cc:610 kpilot/config_dialog.cc:624
 msgid "Conduit Error"
 msgstr "Арна қатесі"
 
-#: kpilot/config_dialog.cc:608
+#: kpilot/config_dialog.cc:617
 #, qt-format
 msgid ""
 "<qt>There was a problem loading the library for the conduit %1. This means "
@@ -2475,8 +2479,8 @@ msgstr ""
 msgid "Memos:"
 msgstr "Жазбалар:"
 
-#: kpilot/memoWidget.cc:228 kpilot/todoWidget.cc:123
-#: kpilot/addressWidget.cc:202
+#: kpilot/memoWidget.cc:228 kpilot/todoWidget.cc:122
+#: kpilot/addressWidget.cc:201
 msgid "Category:"
 msgstr "Санаты:"
 
@@ -2526,8 +2530,8 @@ msgstr "Жазбаны өшіру"
 msgid "Delete the selected memo."
 msgstr "Таңдалған жазбаны өшіру."
 
-#: kpilot/memoWidget.cc:278 kpilot/todoWidget.cc:171
-#: kpilot/addressWidget.cc:251
+#: kpilot/memoWidget.cc:278 kpilot/todoWidget.cc:170
+#: kpilot/addressWidget.cc:250
 msgid "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
 msgstr "<qt><i>Өшіру 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
 
@@ -2555,63 +2559,63 @@ msgstr "Жазуын өшіру үшін MemoDB қоры ашылмады."
 msgid "Cannot Delete Memo"
 msgstr "Жазба өшірілмеді"
 
-#: kpilot/addressEditor.cc:55
+#: kpilot/addressEditor.cc:56
 msgid "Address Editor"
 msgstr "Адрес өңдегіші"
 
-#: kpilot/addressEditor.cc:89
+#: kpilot/addressEditor.cc:90
 msgid "Phone"
 msgstr "Телефоны"
 
-#: kpilot/addressEditor.cc:165
+#: kpilot/addressEditor.cc:166
 msgid "Last name:"
 msgstr "Тегі:"
 
-#: kpilot/addressEditor.cc:166
+#: kpilot/addressEditor.cc:167
 msgid "First name:"
 msgstr "Аты:"
 
-#: kpilot/addressEditor.cc:167
+#: kpilot/addressEditor.cc:168
 msgid "Title:"
 msgstr "Атағы:"
 
-#: kpilot/addressEditor.cc:168
+#: kpilot/addressEditor.cc:169
 msgid "Company:"
 msgstr "Компаниясы:"
 
-#: kpilot/addressEditor.cc:177
+#: kpilot/addressEditor.cc:178
 msgid "Address:"
 msgstr "Адресі:"
 
-#: kpilot/addressEditor.cc:178
+#: kpilot/addressEditor.cc:179
 msgid "City:"
 msgstr "Қала:"
 
-#: kpilot/addressEditor.cc:179
+#: kpilot/addressEditor.cc:180
 msgid "State:"
 msgstr "Облыс/өлкесі:"
 
-#: kpilot/addressEditor.cc:180
+#: kpilot/addressEditor.cc:181
 msgid "Zip code:"
 msgstr "Пошта индексі:"
 
-#: kpilot/addressEditor.cc:181
+#: kpilot/addressEditor.cc:182
 msgid "Country:"
 msgstr "Ел:"
 
-#: kpilot/addressEditor.cc:182
+#: kpilot/addressEditor.cc:183
 msgid "Custom 1:"
 msgstr "Қосымша1:"
 
-#: kpilot/addressEditor.cc:183
+#: kpilot/addressEditor.cc:184
 msgid "Custom 2:"
 msgstr "Қосымша2:"
 
-#: kpilot/addressEditor.cc:184
+#: kpilot/addressEditor.cc:185
 msgid "Custom 3:"
 msgstr "Қосымша3:"
 
-#: kpilot/addressEditor.cc:185
+#: kpilot/addressEditor.cc:186
 msgid "Custom 4:"
 msgstr "Қосымша4:"
 
@@ -2717,11 +2721,11 @@ msgstr ""
 msgid "Deleting Record"
 msgstr "Жазуды өшіру"
 
-#: kpilot/todoWidget.cc:121
+#: kpilot/todoWidget.cc:120
 msgid "<qt>Select the category of to-dos to display here.</qt>"
 msgstr "<qt>Көрсететін жоспарларының санатын таңдаңыз.</qt>"
 
-#: kpilot/todoWidget.cc:132
+#: kpilot/todoWidget.cc:131
 msgid ""
 "<qt>This list displays all the to-dos in the selected category. Click on one "
 "to display it to the right.</qt>"
@@ -2729,61 +2733,61 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық жоспарлар тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/todoWidget.cc:136
+#: kpilot/todoWidget.cc:135
 msgid "To-do info:"
 msgstr "Жоспар мәліметі:"
 
-#: kpilot/todoWidget.cc:147 kpilot/addressWidget.cc:227
+#: kpilot/todoWidget.cc:146 kpilot/addressWidget.cc:226
 msgid "Edit Record..."
 msgstr "Жазуын өңдеу..."
 
-#: kpilot/todoWidget.cc:152
+#: kpilot/todoWidget.cc:151
 msgid "<qt>You can edit a to-do when it is selected.</qt>"
 msgstr "<qt>Таңдап алған жоспарды өңдеуге болады.</qt>"
 
-#: kpilot/todoWidget.cc:153 kpilot/addressWidget.cc:232
+#: kpilot/todoWidget.cc:152 kpilot/addressWidget.cc:231
 msgid "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
 msgstr "<qt><i>Өңдеу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
 
-#: kpilot/todoWidget.cc:156 kpilot/addressWidget.cc:235
+#: kpilot/todoWidget.cc:155 kpilot/addressWidget.cc:234
 msgid "New Record..."
 msgstr "Жаңа жазуы..."
 
-#: kpilot/todoWidget.cc:160
+#: kpilot/todoWidget.cc:159
 msgid "<qt>Add a new to-do to the to-do list.</qt>"
 msgstr "<qt>Жоспар тізіміне жаңасын қосу.</qt>"
 
-#: kpilot/todoWidget.cc:161
+#: kpilot/todoWidget.cc:160
 msgid ""
 "<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</i></"
 "qt>"
 msgstr ""
 "<qt><i>Жаңа жоспарды қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
 
-#: kpilot/todoWidget.cc:165 kpilot/addressWidget.cc:245
+#: kpilot/todoWidget.cc:164 kpilot/addressWidget.cc:244
 msgid "Delete Record"
 msgstr "Жазуын өшіру"
 
-#: kpilot/todoWidget.cc:170
+#: kpilot/todoWidget.cc:169
 msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
 msgstr "<qt>Жоспар тізімінен жоспарды өшіру.</qt>"
 
-#: kpilot/todoWidget.cc:259
+#: kpilot/todoWidget.cc:258
 #, qt-format
 msgid "There is still a to-do editing window open."
 msgid_plural "There are still %1 to-do editing windows open."
 msgstr[0] ""
 
-#: kpilot/todoWidget.cc:383 kpilot/addressWidget.cc:402
+#: kpilot/todoWidget.cc:382 kpilot/addressWidget.cc:401
 msgid "Cannot edit new records until HotSynced with Pilot."
 msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуды өңдеуге болмайды."
 
-#: kpilot/todoWidget.cc:385 kpilot/todoWidget.cc:526
-#: kpilot/addressWidget.cc:404 kpilot/addressWidget.cc:537
+#: kpilot/todoWidget.cc:384 kpilot/todoWidget.cc:525
+#: kpilot/addressWidget.cc:403 kpilot/addressWidget.cc:536
 msgid "HotSync Required"
 msgstr "Қадамдастыру қажет"
 
-#: kpilot/todoWidget.cc:428
+#: kpilot/todoWidget.cc:427
 msgid ""
 "You cannot add to-dos to the to-do list until you have done a HotSync at "
 "least once to retrieve the database layout from your Pilot."
@@ -2791,19 +2795,19 @@ msgstr ""
 "Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
 "қадамдастыруды өткізбей, жоспарды жоспарлар тізіміне қоса алмайсыз."
 
-#: kpilot/todoWidget.cc:431
+#: kpilot/todoWidget.cc:430
 msgid "Cannot Add New To-do"
 msgstr "Жаңа жоспар қосылмайды"
 
-#: kpilot/todoWidget.cc:524 kpilot/addressWidget.cc:535
+#: kpilot/todoWidget.cc:523 kpilot/addressWidget.cc:534
 msgid "New records cannot be deleted until HotSynced with pilot."
 msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуларды өшіруге болмайды."
 
-#: kpilot/todoWidget.cc:531 kpilot/addressWidget.cc:542
+#: kpilot/todoWidget.cc:530 kpilot/addressWidget.cc:541
 msgid "Delete currently selected record?"
 msgstr "Таңдалған жазу өшірілсін бе?"
 
-#: kpilot/todoWidget.cc:532 kpilot/addressWidget.cc:543
+#: kpilot/todoWidget.cc:531 kpilot/addressWidget.cc:542
 msgid "Delete Record?"
 msgstr "Жазу өшірілсін бе?"
 
@@ -2868,11 +2872,11 @@ msgstr "Құр&ылғыдағы қолданылсын"
 msgid "Entry in KPilot"
 msgstr "KPilot-тағы жазу"
 
-#: kpilot/internalEditorAction.cc:233 kpilot/internalEditorAction.cc:271
+#: kpilot/internalEditorAction.cc:233 kpilot/internalEditorAction.cc:270
 msgid "Entry on Handheld"
 msgstr "Құрылғыдағы жазу"
 
-#: kpilot/internalEditorAction.cc:261 kpilot/internalEditorAction.cc:290
+#: kpilot/internalEditorAction.cc:261 kpilot/internalEditorAction.cc:287
 msgid ""
 "To view and edit the record data, please install a hex editor (e.g. khexedit "
 "from kdeutils)."
@@ -2880,16 +2884,16 @@ msgstr ""
 "Жазудың деректерін өңдеу үшін бір бинарлық өңдегішті (мысалы, kdeutils "
 "дестенің KHexEdit бағдарламасын) орнатыңыз."
 
-#: kpilot/internalEditorAction.cc:315
+#: kpilot/internalEditorAction.cc:311
 #, qt-format
 msgid "Databases with changed flags: %1"
 msgstr ""
 
-#: kpilot/internalEditorAction.cc:333
+#: kpilot/internalEditorAction.cc:329
 msgid "Setting the database flags on the handheld is not yet supported."
 msgstr "Қалта құрылғыдағы деректер қорының жалаушаларын орнату әлі істемейді."
 
-#: kpilot/internalEditorAction.cc:356
+#: kpilot/internalEditorAction.cc:352
 #, qt-format
 msgid "Databases with changed AppBlock: %1"
 msgstr ""
@@ -3565,17 +3569,17 @@ msgstr ""
 msgid "Conduit Actions"
 msgstr "Нөл-арна параметрлері"
 
-#: kpilot/addressWidget.cc:166
+#: kpilot/addressWidget.cc:165
 #, qt-format
 msgid "There is still an address editing window open."
 msgid_plural "There are still %1 address editing windows open."
 msgstr[0] ""
 
-#: kpilot/addressWidget.cc:200
+#: kpilot/addressWidget.cc:199
 msgid "<qt>Select the category of addresses to display here.</qt>"
 msgstr "<qt>Мұнда көрсетілетін адрестердің санатын таңдаңыз.</qt>"
 
-#: kpilot/addressWidget.cc:213
+#: kpilot/addressWidget.cc:212
 msgid ""
 "<qt>This list displays all the addresses in the selected category. Click on "
 "one to display it to the right.</qt>"
@@ -3583,34 +3587,34 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық адрестер тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/addressWidget.cc:217
+#: kpilot/addressWidget.cc:216
 msgid "Address info:"
 msgstr "Адрестің мәліметі:"
 
-#: kpilot/addressWidget.cc:231
+#: kpilot/addressWidget.cc:230
 msgid "<qt>You can edit an address when it is selected.</qt>"
 msgstr "<qt>Таңдап алған адресті өңдеуге болады.</qt>"
 
-#: kpilot/addressWidget.cc:239
+#: kpilot/addressWidget.cc:238
 msgid "<qt>Add a new address to the address book.</qt>"
 msgstr "<qt>Жаңа адресті адрестік кітапшасына қосу.</qt>"
 
-#: kpilot/addressWidget.cc:240
+#: kpilot/addressWidget.cc:239
 msgid "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
 msgstr "<qt><i>Қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
 
-#: kpilot/addressWidget.cc:250
+#: kpilot/addressWidget.cc:249
 msgid "<qt>Delete the selected address from the address book.</qt>"
 msgstr "<qt>Таңдап алған адресті адрестік кітапшасынан өшіру.</qt>"
 
-#: kpilot/addressWidget.cc:254
+#: kpilot/addressWidget.cc:253
 #, fuzzy
 #| msgid "Export Memo..."
 msgctxt "Export addresses to file"
 msgid "Export..."
 msgstr "Жазбаны экспорттау..."
 
-#: kpilot/addressWidget.cc:258
+#: kpilot/addressWidget.cc:257
 #, fuzzy
 #| msgid ""
 #| "<qt>This list displays all the addresses in the selected category. Click "
@@ -3620,7 +3624,7 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық адрестер тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/addressWidget.cc:443
+#: kpilot/addressWidget.cc:442
 msgid ""
 "You cannot add addresses to the address book until you have done a HotSync "
 "at least once to retrieve the database layout from your Pilot."
@@ -3628,31 +3632,31 @@ msgstr ""
 "Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
 "қадамдастыруды өткізбей, адресті кітапшасына қоса алмайсыз."
 
-#: kpilot/addressWidget.cc:446
+#: kpilot/addressWidget.cc:445
 msgid "Cannot Add New Address"
 msgstr "Жаңа адрес қосылмайды"
 
-#: kpilot/addressWidget.cc:633
+#: kpilot/addressWidget.cc:632
 msgid "Export All Addresses"
 msgstr "Барлық адрестеді экспорттау"
 
-#: kpilot/addressWidget.cc:634
+#: kpilot/addressWidget.cc:633
 #, fuzzy, qt-format
 #| msgid "Export All Addresses"
 msgid "Export Address Category %1"
 msgstr "Барлық адрестеді экспорттау"
 
-#: kpilot/addressWidget.cc:650
+#: kpilot/addressWidget.cc:649
 #, fuzzy, qt-format
 #| msgid "The file exists. Do you want to overwrite it?"
 msgid "The file <i>%1</i> exists. Overwrite?"
 msgstr "Бұндай файл бар ғой. Үстінен жаза берейік пе?"
 
-#: kpilot/addressWidget.cc:651
+#: kpilot/addressWidget.cc:650
 msgid "Overwrite File?"
 msgstr "Файл ауыстрырылсын ба?"
 
-#: kpilot/addressWidget.cc:662
+#: kpilot/addressWidget.cc:661
 #, qt-format
 msgid "The file <i>%1</i> could not be opened for writing."
 msgstr ""
@@ -3668,6 +3672,16 @@ msgstr "Аты"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Unable to open the memo databases on the handheld."
+#~ msgid "Unable to open the %1 database on the handheld."
+#~ msgstr "Қалта құрылғысында жазба деректер қорлары ашылмады."
+
+#, fuzzy
+#~| msgid "Unable to open the addressbook."
+#~ msgid "Unable to open %1."
+#~ msgstr "Адрестік кітапша ашылмады."
 
 #~ msgid "Core and conduits developer"
 #~ msgstr "Тұлғасы мен арналардың жасаушысы"
