@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-16 05:34+0200\n"
-"PO-Revision-Date: 2007-07-07 18:48+0600\n"
+"POT-Creation-Date: 2007-08-17 05:41+0200\n"
+"PO-Revision-Date: 2007-08-17 10:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
 "MIME-Version: 1.0\n"
@@ -28,6 +28,7 @@ msgid "ERROR: Unknown protocol '%1'"
 msgstr "ҚАТЕ: '%1' деген протоколы беймәлім"
 
 #: kio/job.cpp:145
+msgctxt "@title job"
 msgid "Moving"
 msgstr "Жылжыту"
 
@@ -40,10 +41,12 @@ msgid "Destination"
 msgstr "Қайда:"
 
 #: kio/job.cpp:152
+msgctxt "@title job"
 msgid "Copying"
 msgstr "Көшірмелеу"
 
 #: kio/job.cpp:159
+msgctxt "@title job"
 msgid "Creating directory"
 msgstr "Қапшықты жасау"
 
@@ -52,6 +55,7 @@ msgid "Directory"
 msgstr "Қапшық"
 
 #: kio/job.cpp:165
+msgctxt "@title job"
 msgid "Deleting"
 msgstr "Өшіру"
 
@@ -60,14 +64,17 @@ msgid "File"
 msgstr "Файл"
 
 #: kio/job.cpp:171
+msgctxt "@title job"
 msgid "Stating"
-msgstr "Бастау"
+msgstr "Жасау"
 
 #: kio/job.cpp:177
+msgctxt "@title job"
 msgid "Transferring"
 msgstr "Тасымалдау"
 
 #: kio/job.cpp:183
+msgctxt "@title job"
 msgid "Mounting"
 msgstr "Тіркеу"
 
@@ -80,6 +87,7 @@ msgid "Mountpoint"
 msgstr "Тіркеу нүктесі"
 
 #: kio/job.cpp:190
+msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Тіркеуден шығару"
 
@@ -168,7 +176,7 @@ msgid_plural "%1 items"
 msgstr[0] "%1 нысан"
 
 #: kio/kfileitemdelegate.cpp:264 kio/kfileitemdelegate.cpp:267
-#: kssl/ksslcertificate.cpp:201
+msgctxt "@info mimetype"
 msgid "Unknown"
 msgstr "Беймәлім"
 
@@ -254,7 +262,7 @@ msgstr "Ауыстырмағы -  %1"
 
 #: kio/kstatusbarofflineindicator.cpp:38
 msgid "The desktop is offline"
-msgstr ""
+msgstr "Компьютер желіден тыс"
 
 #: kio/chmodjob.cpp:215
 #, qt-format
@@ -346,8 +354,7 @@ msgid "The server certificate failed the authenticity test (%1)."
 msgstr "Сервердің қуәлігі шыңдылық тексеруден өткен жоқ (%1)."
 
 #: kio/tcpslavebase.cpp:951 kio/tcpslavebase.cpp:1070
-msgid ""
-"Would you like to accept this certificate forever without being prompted?"
+msgid "Would you like to accept this certificate forever without being prompted?"
 msgstr "Куәлік келешекте қосымша сұрақсыз үнемі қабылдансын ба?"
 
 #: kio/tcpslavebase.cpp:955 kio/tcpslavebase.cpp:1074
@@ -690,10 +697,9 @@ msgid "Could not change permissions for %1."
 msgstr "%1 дегеннің рұқсаттары өзгертілмеді."
 
 #: kio/global.cpp:308
-#, fuzzy, qt-format
-#| msgid "Could not change permissions for %1."
+#, qt-format
 msgid "Could not change ownership for %1."
-msgstr "%1 дегеннің рұқсаттары өзгертілмеді."
+msgstr "%1 дегеннің иелігі өзгертілмеді."
 
 #: kio/global.cpp:311
 #, qt-format
@@ -927,10 +933,9 @@ msgid "Changing the attributes of files is not supported with protocol %1."
 msgstr "%1 протоколы файл атрибуттарын өзгертуді қолдамайды."
 
 #: kio/global.cpp:420
-#, fuzzy, qt-format
-#| msgid "Changing the attributes of files is not supported with protocol %1."
+#, qt-format
 msgid "Changing the ownership of files is not supported with protocol %1."
-msgstr "%1 протоколы файл атрибуттарын өзгертуді қолдамайды."
+msgstr "%1 протоколы файл иелігін өзгертуді қолдамайды."
 
 #: kio/global.cpp:422
 #, qt-format
@@ -952,7 +957,8 @@ msgstr "%1 протоколы файлдарды ашуды қолдамайды
 msgid "Protocol %1 does not support action %2."
 msgstr "%1 протоколы %2 әрекетін қолдамайды."
 
-#: kio/global.cpp:448 kio/global.cpp:530
+#: kio/global.cpp:448
+msgctxt "@info url"
 msgid "(unknown)"
 msgstr "(беймәлім)"
 
@@ -992,6 +998,11 @@ msgstr "<p><b>Мүмкін салдары</b>:</p><ul><li>"
 msgid "<p><b>Possible solutions</b>:</p><ul><li>"
 msgstr "<p><b>Мүмкін шешімдері</b>:</p><ul><li>"
 
+#: kio/global.cpp:530
+msgctxt "@info protocol"
+msgid "(unknown)"
+msgstr "(беймәлім)"
+
 #: kio/global.cpp:540
 msgid ""
 "Contact your appropriate computer support system, whether the system "
@@ -1017,8 +1028,7 @@ msgstr ""
 "жеткіліксіз болуы мүмкін."
 
 #: kio/global.cpp:549
-msgid ""
-"The file may be in use (and thus locked) by another user or application."
+msgid "The file may be in use (and thus locked) by another user or application."
 msgstr ""
 "Файл басқа пайдаланушының не қолданбаның қолдануында (сонықтан бұғатталған) "
 "болуы мүмкін."
@@ -1350,8 +1360,7 @@ msgstr "Келтірілген <strong>%1<strong> файл да, қапшық т
 msgid ""
 "The requested file could not be created because a file with the same name "
 "already exists."
-msgstr ""
-"Сұралған файл құрылған жоқ, себебі осылай аталған файл қолданыста бар екен."
+msgstr "Сұралған файл құрылған жоқ, себебі осылай аталған файл қолданыста бар екен."
 
 #: kio/global.cpp:706
 msgid "Try moving the current file out of the way first, and then try again."
@@ -1369,8 +1378,7 @@ msgstr "Жаңа файл үшін басқа атауды таңдаңыз."
 msgid ""
 "The requested folder could not be created because a folder with the same "
 "name already exists."
-msgstr ""
-"Сұралған қапшық құрылмады, себебі осылай аталған қапшық қолданыста бар екен."
+msgstr "Сұралған қапшық құрылмады, себебі осылай аталған қапшық қолданыста бар екен."
 
 #: kio/global.cpp:716
 msgid "Try moving the current folder out of the way first, and then try again."
@@ -1399,8 +1407,7 @@ msgstr ""
 
 #: kio/global.cpp:727
 #, qt-format
-msgid ""
-"The name that you typed, %1, may not exist: it may be incorrectly typed."
+msgid "The name that you typed, %1, may not exist: it may be incorrectly typed."
 msgstr "Келтірілген %1 деген атау қолданыста жоқ: ол дұрыс жазылмағаны мүмкін."
 
 #: kio/global.cpp:734
@@ -1420,15 +1427,13 @@ msgstr ""
 
 #: kio/global.cpp:739 kio/global.cpp:955
 msgid "Your account may not have permission to access the specified resource."
-msgstr ""
-"Тіркелгіңіздің көрсетілген ресурсқа қатынауға рұқсаты жоқ болуы мүмкін."
+msgstr "Тіркелгіңіздің көрсетілген ресурсқа қатынауға рұқсаты жоқ болуы мүмкін."
 
 #: kio/global.cpp:741 kio/global.cpp:957 kio/global.cpp:969
 msgid ""
 "Retry the request and ensure your authentication details are entered "
 "correctly."
-msgstr ""
-"Аутентификация деректерінің дұрыс жазылғанын тексеріп, қайталап көріңіз."
+msgstr "Аутентификация деректерінің дұрыс жазылғанын тексеріп, қайталап көріңіз."
 
 #: kio/global.cpp:747
 msgid "Write Access Denied"
@@ -1536,8 +1541,7 @@ msgstr "Бұл техникалық қате, сұралған желілік қ
 msgid ""
 "The network connection may be incorrectly configured, or the network "
 "interface may not be enabled."
-msgstr ""
-"Желілік қосылым дұрыс бапталмаған немесе желілік интерфейсі рұқсат етілмеген."
+msgstr "Желілік қосылым дұрыс бапталмаған немесе желілік интерфейсі рұқсат етілмеген."
 
 #: kio/global.cpp:816
 msgid "Connection to Server Refused"
@@ -1554,8 +1558,7 @@ msgstr "<strong>%1</strong> сервері осы компьютерге қос�
 msgid ""
 "The server, while currently connected to the Internet, may not be configured "
 "to allow requests."
-msgstr ""
-"Интернетке қосылған сервер сұрауларға жауап беру үшін бапталмағаны мүмкін."
+msgstr "Интернетке қосылған сервер сұрауларға жауап беру үшін бапталмағаны мүмкін."
 
 #: kio/global.cpp:821
 #, qt-format
@@ -1583,8 +1586,7 @@ msgstr "Сервермен қосылым кенеттен жабылды"
 msgid ""
 "Although a connection was established to <strong>%1</strong>, the connection "
 "was closed at an unexpected point in the communication."
-msgstr ""
-"<strong>%1</strong> қосылымы орнатылған еді, бірақ бір жерде кенеттен үзілді."
+msgstr "<strong>%1</strong> қосылымы орнатылған еді, бірақ бір жерде кенеттен үзілді."
 
 #: kio/global.cpp:834
 msgid ""
@@ -1707,8 +1709,7 @@ msgstr ""
 
 #: kio/global.cpp:887
 msgid "Check that no applications are accessing the device, and try again."
-msgstr ""
-"Құрылғымен қатынастағы қолданба жоқ екендігін тексеріп, қайталап көріңіз."
+msgstr "Құрылғымен қатынастағы қолданба жоқ екендігін тексеріп, қайталап көріңіз."
 
 #: kio/global.cpp:892
 msgid "Cannot Read From Resource"
@@ -1787,8 +1788,7 @@ msgid "Could Not Login: %1"
 msgstr "Жүйеге кіруі болмады: %1"
 
 #: kio/global.cpp:951
-msgid ""
-"An attempt to login to perform the requested operation was unsuccessful."
+msgid "An attempt to login to perform the requested operation was unsuccessful."
 msgstr "Сұралған операцияны орындау үшін жүйеге кіру әрекеті сәтсіз болды."
 
 #: kio/global.cpp:962
@@ -1897,22 +1897,15 @@ msgstr ""
 "жаңылысы."
 
 #: kio/global.cpp:1029
-#, fuzzy
-#| msgid "Could Not Alter Permissions of Resource"
 msgid "Could Not Change Ownership of Resource"
-msgstr "Ресурқа қатынау рұқсаттарын өзгертуі болмады"
+msgstr "Ресурстың иелігін өзгерту болмайды"
 
 #: kio/global.cpp:1030
-#, fuzzy, qt-format
-#| msgid ""
-#| "An attempt to alter the permissions on the specified resource <strong>%1</"
-#| "strong> failed."
+#, qt-format
 msgid ""
 "An attempt to change the ownership of the specified resource <strong>%1</"
 "strong> failed."
-msgstr ""
-"<strong>%1</strong> ресурсына қатынау рұқсаттарын өзгерту әрекетінің "
-"жаңылысы."
+msgstr "<strong>%1</strong> ресурсының иелігін өзгерту әрекетінің жаңылысы."
 
 #: kio/global.cpp:1037
 msgid "Could Not Delete Resource"
@@ -2061,8 +2054,7 @@ msgstr ""
 
 #: kio/global.cpp:1122
 msgid "The server was too busy responding to other requests to respond."
-msgstr ""
-"Серверге сұраныстар көп болып, басқаларға жауап берумен айналысып, бос емес."
+msgstr "Серверге сұраныстар көп болып, басқаларға жауап берумен айналысып, бос емес."
 
 #: kio/global.cpp:1128
 msgid "Unknown Error"
@@ -2170,8 +2162,7 @@ msgstr "Дискі толып кетті"
 msgid ""
 "The requested file <strong>%1</strong> could not be written to as there is "
 "inadequate disk space."
-msgstr ""
-"Сұралған <strong>%1</strong> файлы, дискіде бос орын жетпей, жазылмады."
+msgstr "Сұралған <strong>%1</strong> файлы, дискіде бос орын жетпей, жазылмады."
 
 #: kio/global.cpp:1201
 msgid ""
@@ -2317,18 +2308,9 @@ msgid "Unmount"
 msgstr "Тіркеуден шығару"
 
 #: kio/kdesktopfileactions.cpp:228
-#, fuzzy, qt-format
-#| msgid ""
-#| "The desktop entry file\n"
-#| "%1\n"
-#| " has an invalid menu entry\n"
-#| "%2."
+#, qt-format
 msgid "The desktop menu %1 has an invalid X-KDE-GetActionMenu entry."
-msgstr ""
-"%1\n"
-"деген desktop файлында\n"
-"%2\n"
-" деген мәзір жолы дұрыс емес."
+msgstr "%1 үстел мәзірінде жарамсыз X-KDE-GetActionMenu жазуы бар."
 
 #: kio/kdesktopfileactions.cpp:283
 #, qt-format
@@ -2343,45 +2325,43 @@ msgstr ""
 "%2\n"
 " деген мәзір жолы дұрыс емес."
 
-#: kio/kfileitem.cpp:929
-#, fuzzy, qt-format
-#| msgid "Symbolic Link"
+#: kio/kfileitem.cpp:932
+#, qt-format
 msgid "(Symbolic Link to %1)"
-msgstr "Символдық сілтеме"
+msgstr "(%1 дегенге символдық сілтеме)"
 
-#: kio/kfileitem.cpp:931
-#, fuzzy, qt-format
-#| msgid "Link to %1 (%2)"
+#: kio/kfileitem.cpp:934
+#, qt-format
 msgid "(%1, Link to %2)"
-msgstr " %1 (%2) дегенге сілтеме"
+msgstr "( %1, %2 дегенге сілтеме)"
 
-#: kio/kfileitem.cpp:958 bookmarks/kbookmarkmenu.cc:632
+#: kio/kfileitem.cpp:961 bookmarks/kbookmarkmenu.cc:632
 #: ../kioslave/http/kcookiejar/kcookiewin.cpp:218
 msgid "Name:"
 msgstr "Атауы:"
 
-#: kio/kfileitem.cpp:959 kfile/kpropertiesdialog.cpp:979
+#: kio/kfileitem.cpp:962 kfile/kpropertiesdialog.cpp:979
 msgid "Type:"
 msgstr "Түрі:"
 
-#: kio/kfileitem.cpp:963
+#: kio/kfileitem.cpp:966
 #, qt-format
 msgid "Link to %1 (%2)"
 msgstr " %1 (%2) дегенге сілтеме"
 
-#: kio/kfileitem.cpp:968 kfile/kpropertiesdialog.cpp:1027
+#: kio/kfileitem.cpp:971 kfile/kpropertiesdialog.cpp:1027
 msgid "Size:"
 msgstr "Өлшемі:"
 
-#: kio/kfileitem.cpp:973 kfile/kpropertiesdialog.cpp:1088
+#: kio/kfileitem.cpp:976 kfile/kpropertiesdialog.cpp:1088
 msgid "Modified:"
 msgstr "Өзгертілген:"
 
-#: kio/kfileitem.cpp:976
+#: kio/kfileitem.cpp:979
 msgid "Owner:"
 msgstr "Иесі:"
 
-#: kio/kfileitem.cpp:977
+#: kio/kfileitem.cpp:980
 msgid "Permissions:"
 msgstr "Рұқсаттары:"
 
@@ -2495,8 +2475,7 @@ msgid "KDE SSL Information"
 msgstr "KDE SSL туралы мәлімет"
 
 #: kssl/ksslinfodialog.cpp:149
-msgid ""
-"The main part of this document is secured with SSL, but some parts are not."
+msgid "The main part of this document is secured with SSL, but some parts are not."
 msgstr ""
 "Бұл құжаттың негізгі бөлігі SSL-мен қорғалған, бірақ кейбір бөліктері "
 "қорғалмаған."
@@ -2604,6 +2583,10 @@ msgstr "Эл.поштасы:"
 #: kssl/ksslcertificate.cpp:200
 msgid "Signature Algorithm: "
 msgstr "Қолтаңба алгоритмі: "
+
+#: kssl/ksslcertificate.cpp:201
+msgid "Unknown"
+msgstr "Беймәлім"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Contents:"
@@ -3004,11 +2987,11 @@ msgstr "submit@bugs.kde.org адресіне қате туралы қысқа х
 
 #: misc/ksendbugmail/main.cpp:74
 msgid "(c) 2000 Stephan Kulow"
-msgstr ""
+msgstr "(c) 2000 Stephan Kulow"
 
 #: misc/ksendbugmail/main.cpp:75
 msgid "Stephan Kulow"
-msgstr ""
+msgstr "Stephan Kulow"
 
 #: misc/ksendbugmail/main.cpp:75
 msgid "Author"
@@ -3136,8 +3119,7 @@ msgstr "Күй-жайлар"
 
 #: kfile/kicondialog.cpp:586
 msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
-msgstr ""
-"*.png *.xpm *.svg *.svgz|Таңбашалар файлдары (*.png *.xpm *.svg *.svgz)"
+msgstr "*.png *.xpm *.svg *.svgz|Таңбашалар файлдары (*.png *.xpm *.svg *.svgz)"
 
 #: kfile/kfilemetainfowidget.cpp:161
 msgid "<Error>"
@@ -3677,8 +3659,7 @@ msgid "Set GID"
 msgstr "SGID"
 
 #: kfile/kpropertiesdialog.cpp:2040
-msgid ""
-"If this flag is set, the group of this folder will be set for all new files."
+msgid "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Егер бұл жалауша қойлса, бұл қапшықтың тобы барлық ішіндегі жаңа файлдарына "
 "беріледі."
@@ -3838,8 +3819,7 @@ msgid "Configure File Sharing..."
 msgstr "Файл ортақтастыруды баптау..."
 
 #: kfile/kfilesharedialog.cpp:180
-msgid ""
-"Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
+msgid "Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
 msgstr ""
 "'filesharelist' командасын орындау қатесі. Бағдарлама орнатылғанын жане "
 "$PATH пен /usr/sbin дегендерде бар екенін тексеріңіз."
@@ -4146,8 +4126,7 @@ msgstr "&Пайдаланушының атауы:"
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 140
 #: rc.cpp:98
 msgid "Enter the user name you want to run the application as here."
-msgstr ""
-"Мұнда қай пайдаланушының атынан қолданбаны жегіңіз келетінін келтіріңіз."
+msgstr "Мұнда қай пайдаланушының атынан қолданбаны жегіңіз келетінін келтіріңіз."
 
 #. i18n: tag string
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 150
@@ -4551,10 +4530,8 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Бетбелгі жинағын жеке терезеде өңдеу"
 
 #: bookmarks/kbookmarkmenu.cc:477
-#, fuzzy
-#| msgid "&New Bookmark Folder..."
 msgid "New Bookmark Folder..."
-msgstr "&Жаңа бетбелгі қапшығы..."
+msgstr "Жаңа бетбелгі қапшығы..."
 
 #: bookmarks/kbookmarkmenu.cc:480
 msgid "Create a new bookmark folder in this menu"
@@ -4670,15 +4647,14 @@ msgid "Setting ACL for %1"
 msgstr "%1 үшін ACL орнату"
 
 #: ../kioslave/file/file.cpp:234
-#, fuzzy, qt-format
-#| msgid "Could not enter folder %1."
+#, qt-format
 msgid "Could not get user id for given user name %1"
-msgstr "%1 деген қапшыққа кіруге болмады."
+msgstr "%1 деген пайдаланушының id параметры жоқ"
 
 #: ../kioslave/file/file.cpp:247
 #, qt-format
 msgid "Could not get group id for given group name %1"
-msgstr ""
+msgstr "%1 деген топтың id параметры жоқ"
 
 #: ../kioslave/file/file.cpp:787 ../kioslave/file/file.cpp:1021
 #, qt-format
@@ -4803,8 +4779,7 @@ msgstr "Көрсетілген қапшық бар ғой."
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
-msgstr ""
-"Бір немесе бірнеше аралық жинақ (қапшық) құрылмайынша, ресурс та құрылмайды."
+msgstr "Бір немесе бірнеше аралық жинақ (қапшық) құрылмайынша, ресурс та құрылмайды."
 
 #: ../kioslave/http/http.cpp:1607
 #, qt-format
@@ -4839,8 +4814,7 @@ msgstr "Басқа қатенің себебінен әрекет орындал
 msgid ""
 "Unable to %1 because the destination server refuses to accept the file or "
 "folder."
-msgstr ""
-"%1 орындалмады, себебі мақсаттаған сервер файлды не қапшықты қабылдамады."
+msgstr "%1 орындалмады, себебі мақсаттаған сервер файлды не қапшықты қабылдамады."
 
 #: ../kioslave/http/http.cpp:1646 ../kioslave/http/http.cpp:1711
 msgid ""
@@ -4934,12 +4908,10 @@ msgstr "Прокси:"
 #: ../kioslave/http/http.cpp:5095
 #, qt-format
 msgid "Authentication needed for %1 but authentication is disabled."
-msgstr ""
-"%1 дегенге аутентификация керек, бірақ аутентификациясы рұқсат етілмеген."
+msgstr "%1 дегенге аутентификация керек, бірақ аутентификациясы рұқсат етілмеген."
 
 #: ../kioslave/http/http.cpp:5714
-msgid ""
-"Unsupported method: authentication will fail. Please submit a bug report."
+msgid "Unsupported method: authentication will fail. Please submit a bug report."
 msgstr ""
 "Қолдауы жоқ әдіс: аутентификациясы болмайды. Қате туралы хабарламаны "
 "жіберіңіз."
@@ -5119,10 +5091,8 @@ msgid "Servers, page scripts"
 msgstr "Серверлер, парақ скрипттері"
 
 #: ../kioslave/metainfo/metainfo.cpp:39
-#, fuzzy
-#| msgid "No metainfo for %1"
 msgid "kio_metainfo"
-msgstr "%1 үшін метадеректері жоқ"
+msgstr "kio_metainfo"
 
 #: ../kioslave/metainfo/metainfo.cpp:98
 #, qt-format
@@ -5150,25 +5120,23 @@ msgid "Unknown View"
 msgstr "Беймәлім көрініс"
 
 #: ../kfile/kfileplacesview.cpp:275
-#, fuzzy, qt-format
-#| msgid "&Edit..."
+#, qt-format
 msgid "&Edit '%1'..."
-msgstr "&Өзгерту..."
+msgstr "'%1' дегенді &өңдеу..."
 
 #: ../kfile/kfileplacesview.cpp:278
 #, qt-format
 msgid "&Hide '%1'"
-msgstr ""
+msgstr "'%1' дегенді &жасыру"
 
 #: ../kfile/kfileplacesview.cpp:285
 msgid "&Show All Entries"
 msgstr "Барлыын &көрсету"
 
 #: ../kfile/kfileplacesview.cpp:296
-#, fuzzy, qt-format
-#| msgid "Remove"
+#, qt-format
 msgid "&Remove '%1'"
-msgstr "Өшіру"
+msgstr "'%1' дегенді ө&шіру"
 
 #: ../kfile/k3filedetailview.cpp:63 ../kfile/kdiroperator.cpp:1007
 #: ../kfile/kdiroperator.cpp:1445
@@ -5470,39 +5438,31 @@ msgid "Trash"
 msgstr "Өшірілгендер"
 
 #: ../kfile/kfileplacesmodel.cpp:637
-#, fuzzy, qt-format
-#| msgid "Eject"
+#, qt-format
 msgid "&Eject '%1'"
-msgstr "Шығарып алу"
+msgstr "'%1' дегенді &алып-шығару"
 
 #: ../kfile/kfileplacesmodel.cpp:639
 #, qt-format
 msgid "&Safely remove '%1'"
-msgstr ""
+msgstr "'%1' дегенді қауіпсіз &шығару"
 
 #: ../kfile/kfileplacesmodel.cpp:641
-#, fuzzy, qt-format
-#| msgid "Unmount"
+#, qt-format
 msgid "&Unmount '%1'"
-msgstr "Тіркеуден шығару"
+msgstr "'%1' дегенді &тіркеуден шығару"
 
 #: ../kfile/kfileplacesmodel.cpp:699
-#, fuzzy, qt-format
-#| msgid ""
-#| "An error occurred while attempting to %1, %2. A summary of the reasons is "
-#| "below.<ul>"
+#, qt-format
 msgid "An error occurred while accessing '%1', the system said: %2"
-msgstr ""
-"%1, %2 әрекеті кезінде қате пайда болды. Себептері туралы мәліметтер төменде "
-"көрсетілген.<ul>"
+msgstr "'%1' дегенге қатынау кезде қате пайда болды, жүйенің хабарлауы: %2"
 
 #: ../kfile/kfileplacesmodel.cpp:703
-#, fuzzy, qt-format
-#| msgid "An unexpected error (%1) occurred while attempting to %2."
+#, qt-format
 msgid "An error occurred while accessing '%1'"
-msgstr "(%1) күтпеген қате %2 әрекеті кезінде пайда болды."
+msgstr "'%1' дегенге қатынау кезде қате пайда болды"
 
-#: ../kfile/kurlnavigator.cpp:563
+#: ../kfile/kurlnavigator.cpp:582
 msgid "Custom Path"
 msgstr "Қалаған жол"
 
@@ -5637,7 +5597,7 @@ msgstr "Файлды өшіру"
 #, qt-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
-msgstr[0] "Осы %1 элемент өшірілсін бе?"
+msgstr[0] "Осы %1 нысан өшірілсін бе?"
 
 #: ../kfile/kdiroperator.cpp:556
 msgid "Delete Files"
@@ -5751,85 +5711,29 @@ msgstr "Қапшықтарды бөлу"
 
 #: ../kfile/kdiroperator.cpp:1458
 msgid "Show Preview"
-msgstr "Алдын-ала көрсетілсін"
+msgstr "Нобайы көрсетілсін"
 
 #: ../kfile/kurltogglebutton.cpp:77
 msgid "Click for Location Navigation"
-msgstr "Орынын өзгерту үшін түртіңіз"
+msgstr "Орынын ауыстыру үшін түртіңіз"
 
 #: ../kfile/kurltogglebutton.cpp:79
 msgid "Click to Edit Location"
 msgstr "Орынын өзгерту үшін түртіңіз"
 
 #: ../kfile/kurlbutton.cpp:86
-#, fuzzy
-#| msgid "Copying"
 msgid "Copy"
-msgstr "Көшірмелеу"
+msgstr "Көшіріп алу"
 
 #: ../kfile/kurlbutton.cpp:90
-#, fuzzy
-#| msgid "&Paste URL"
-#| msgid_plural "&Paste %1 URLs"
 msgid "Paste"
-msgstr "%1 URL-ды о&рналастыру"
+msgstr "Орналастыру"
 
 #: ../kfile/kurlbutton.cpp:97
-#, fuzzy
-#| msgid "&Edit..."
 msgid "Edit"
-msgstr "&Өзгерту..."
+msgstr "Өңдеу"
 
 #: ../kfile/kurlbutton.cpp:100
 msgid "Navigate"
-msgstr ""
+msgstr "Ауысу"
 
-#~ msgid "Netscape Bookmarks"
-#~ msgstr "Netscape бетбелгілері"
-
-#~ msgid "1 day 23:59:00"
-#~ msgstr "1 күн 23:59:00"
-
-#~ msgid "00:00:50"
-#~ msgstr "00:00:50"
-
-#~ msgid "Select the MimeTypes you want for this file type."
-#~ msgstr "Бұл файл түріне қалаған MIME түрін таңдаңыз."
-
-#~ msgid "Select Mime Types"
-#~ msgstr "MIME түрін таңдау"
-
-#, fuzzy
-#~| msgid "Protocol %1 is not a Filesystem"
-#~ msgid "KProtocolinfo Test"
-#~ msgstr "%1 протоколы файл жүйесі емес"
-
-#, fuzzy
-#~| msgid "Source"
-#~ msgid "Source URL"
-#~ msgstr "Қайдан:"
-
-#, fuzzy
-#~| msgid "Destination"
-#~ msgid "Destination URL"
-#~ msgstr "Қайда:"
-
-#, fuzzy
-#~| msgid "Save As"
-#~ msgid "KIOSlave test"
-#~ msgstr "Былай сақтау"
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgid "previewtest"
-#~ msgstr "Алдын-ала қарау"
-
-#, fuzzy
-#~| msgid "Properties for %1"
-#~ msgid "KIO Properties Dialog Test"
-#~ msgstr "%1 қасиеттері"
-
-#, fuzzy
-#~| msgid "Cookie Alert"
-#~ msgid "kcookietest"
-#~ msgstr "Cookie туралы ескерту"
