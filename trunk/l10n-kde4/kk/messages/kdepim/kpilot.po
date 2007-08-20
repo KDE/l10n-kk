@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpilot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-18 05:32+0200\n"
+"POT-Creation-Date: 2007-08-20 05:32+0200\n"
 "PO-Revision-Date: 2007-04-28 20:55+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -963,11 +963,11 @@ msgstr ""
 msgid "Password invalid!"
 msgstr "Пароль орнатылған"
 
-#: conduits/keyringconduit/keyringconduit.cc:117
+#: conduits/keyringconduit/keyringconduit.cc:114
 msgid "Password invalid! Update your password in the settings dialog."
 msgstr ""
 
-#: conduits/keyringconduit/keyringconduit.cc:168
+#: conduits/keyringconduit/keyringconduit.cc:165
 msgid "Enter your Keyring password"
 msgstr ""
 
@@ -1422,7 +1422,7 @@ msgstr ""
 
 #: conduits/docconduit/kpalmdoc_dlg.cc:458
 #: conduits/docconduit/kpalmdoc_dlg.cc:503 kpilot/logWidget.cc:265
-#: kpilot/addressWidget.cc:651
+#: kpilot/addressWidget.cc:385
 msgid "Overwrite"
 msgstr "Үстінен жазу"
 
@@ -2053,10 +2053,6 @@ msgstr ""
 msgid "Changing Database Flags"
 msgstr "Деректер қорының жалаушаларын өзгерту"
 
-#: kpilot/todoEditor.cc:54
-msgid "To-do Editor"
-msgstr "Жоспар өңдегіші"
-
 #: kpilot/logWidget.cc:89
 msgid ""
 "<qt>This lists all the messages received during the current HotSync</qt>"
@@ -2507,24 +2503,28 @@ msgid ""
 "(c) 2005-2007, Jason 'vanRijn' Kasper"
 msgstr ""
 
-#: kpilot/memoWidget.cc:223
+#: kpilot/memoWidget.cc:220
+#, fuzzy
+#| msgid ""
+#| "Select the category of addresses\n"
+#| "to display here."
 msgid ""
-"Select the category of addresses\n"
+"Select the category of memos\n"
 "to display here."
 msgstr ""
 "Көрсететін адрестерінің\n"
 "санатын таңдаңыз."
 
-#: kpilot/memoWidget.cc:226
+#: kpilot/memoWidget.cc:223
 msgid "Memos:"
 msgstr "Жазбалар:"
 
-#: kpilot/memoWidget.cc:227 kpilot/todoWidget.cc:122
-#: kpilot/addressWidget.cc:201
+#: kpilot/memoWidget.cc:224 kpilot/todoWidget.cc:105
+#: kpilot/addressWidget.cc:184
 msgid "Category:"
 msgstr "Санаты:"
 
-#: kpilot/memoWidget.cc:238
+#: kpilot/memoWidget.cc:235
 msgid ""
 "This list displays all the memos\n"
 "in the selected category. Click on\n"
@@ -2534,163 +2534,21 @@ msgstr ""
 "жазбалар тізімделеді. Біреуін түртсеңіз,\n"
 "ол оң жағында көрсетіледі."
 
-#: kpilot/memoWidget.cc:242
+#: kpilot/memoWidget.cc:239
 msgid "Memo text:"
 msgstr "Жазба мәтіні:"
 
-#: kpilot/memoWidget.cc:253
+#: kpilot/memoWidget.cc:248
 msgid "The text of the selected memo appears here."
 msgstr "Таңдалған жазбаның мәтіні осында көрсетіледі."
 
-#: kpilot/memoWidget.cc:256
-msgid "Import Memo..."
-msgstr "Жазбаны импорттау..."
-
-#: kpilot/memoWidget.cc:260
-msgid "Read a text file and add it to the Pilot's memo database."
-msgstr "Мәтін файлды оқып оны Pilot-тың жазбалар деректер қорына қосу."
-
-#: kpilot/memoWidget.cc:261
-msgid "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Импорттау 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
-
-#: kpilot/memoWidget.cc:264
+#: kpilot/memoWidget.cc:250
 msgid "Export Memo..."
 msgstr "Жазбаны экспорттау..."
 
-#: kpilot/memoWidget.cc:269
+#: kpilot/memoWidget.cc:255
 msgid "Write the selected memo to a file."
 msgstr "Таңдалған жазбаны файлға жазу."
-
-#: kpilot/memoWidget.cc:271
-msgid "Delete Memo"
-msgstr "Жазбаны өшіру"
-
-#: kpilot/memoWidget.cc:276
-msgid "Delete the selected memo."
-msgstr "Таңдалған жазбаны өшіру."
-
-#: kpilot/memoWidget.cc:277 kpilot/todoWidget.cc:170
-#: kpilot/addressWidget.cc:250
-msgid "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Өшіру 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
-
-#: kpilot/memoWidget.cc:280
-msgid "Add Memo"
-msgstr "Жазбаны қосу"
-
-#: kpilot/memoWidget.cc:283
-msgid "Add a new memo to the database."
-msgstr "Жаңа жазбаны деректер қорына қосу."
-
-#: kpilot/memoWidget.cc:326
-msgid "Delete currently selected memo?"
-msgstr "Таңдалған жазба өшірілсін бе?"
-
-#: kpilot/memoWidget.cc:327
-msgid "Delete Memo?"
-msgstr "Жазба өшірілсін бе?"
-
-#: kpilot/memoWidget.cc:345
-msgid "Cannot open MemoDB to delete record."
-msgstr "Жазуын өшіру үшін MemoDB қоры ашылмады."
-
-#: kpilot/memoWidget.cc:346
-msgid "Cannot Delete Memo"
-msgstr "Жазба өшірілмеді"
-
-#: kpilot/addressEditor.cc:56
-msgid "Address Editor"
-msgstr "Адрес өңдегіші"
-
-#: kpilot/addressEditor.cc:90
-msgid "Phone"
-msgstr "Телефоны"
-
-#: kpilot/addressEditor.cc:166
-msgid "Last name:"
-msgstr "Тегі:"
-
-#: kpilot/addressEditor.cc:167
-msgid "First name:"
-msgstr "Аты:"
-
-#: kpilot/addressEditor.cc:168
-#, fuzzy
-#| msgid "Title:"
-msgctxt "Tile of the person."
-msgid "Title:"
-msgstr "Атағы:"
-
-#: kpilot/addressEditor.cc:169
-#, fuzzy
-#| msgid "Company:"
-msgctxt "Company where the person works."
-msgid "Company:"
-msgstr "Компаниясы:"
-
-#: kpilot/addressEditor.cc:178
-#, fuzzy
-#| msgid "Address:"
-msgctxt "Address where the person lives."
-msgid "Address:"
-msgstr "Адресі:"
-
-#: kpilot/addressEditor.cc:179
-#, fuzzy
-#| msgid "City:"
-msgctxt "City where the person lives."
-msgid "City:"
-msgstr "Қала:"
-
-#: kpilot/addressEditor.cc:180
-#, fuzzy
-#| msgid "State:"
-msgctxt "State where the person lives."
-msgid "State:"
-msgstr "Облыс/өлкесі:"
-
-#: kpilot/addressEditor.cc:181
-#, fuzzy
-#| msgid "Zip code:"
-msgctxt "Zip or postalcode of Address."
-msgid "Zip code:"
-msgstr "Пошта индексі:"
-
-#: kpilot/addressEditor.cc:182
-#, fuzzy
-#| msgid "Country:"
-msgctxt "Country where the person lives"
-msgid "Country:"
-msgstr "Ел:"
-
-#: kpilot/addressEditor.cc:183
-#, fuzzy
-#| msgid "Custom 1:"
-msgctxt "Custom field"
-msgid "Custom 1:"
-msgstr "Қосымша1:"
-
-#: kpilot/addressEditor.cc:184
-#, fuzzy
-#| msgid "Custom 2:"
-msgctxt "Custom field"
-msgid "Custom 2:"
-msgstr "Қосымша2:"
-
-#: kpilot/addressEditor.cc:185
-#, fuzzy
-#| msgid "Custom 3:"
-msgctxt "Custom field"
-msgid "Custom 3:"
-msgstr "Қосымша3:"
-
-#: kpilot/addressEditor.cc:186
-#, fuzzy
-#| msgid "Custom 4:"
-msgctxt "Custom field"
-msgid "Custom 4:"
-msgstr "Қосымша4:"
 
 #: kpilot/pilotComponent.cc:149
 #, fuzzy
@@ -2802,11 +2660,11 @@ msgstr ""
 msgid "Deleting Record"
 msgstr "Жазуды өшіру"
 
-#: kpilot/todoWidget.cc:120
+#: kpilot/todoWidget.cc:114
 msgid "<qt>Select the category of to-dos to display here.</qt>"
 msgstr "<qt>Көрсететін жоспарларының санатын таңдаңыз.</qt>"
 
-#: kpilot/todoWidget.cc:131
+#: kpilot/todoWidget.cc:121
 msgid ""
 "<qt>This list displays all the to-dos in the selected category. Click on one "
 "to display it to the right.</qt>"
@@ -2814,83 +2672,9 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық жоспарлар тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/todoWidget.cc:135
+#: kpilot/todoWidget.cc:125
 msgid "To-do info:"
 msgstr "Жоспар мәліметі:"
-
-#: kpilot/todoWidget.cc:146 kpilot/addressWidget.cc:226
-msgid "Edit Record..."
-msgstr "Жазуын өңдеу..."
-
-#: kpilot/todoWidget.cc:151
-msgid "<qt>You can edit a to-do when it is selected.</qt>"
-msgstr "<qt>Таңдап алған жоспарды өңдеуге болады.</qt>"
-
-#: kpilot/todoWidget.cc:152 kpilot/addressWidget.cc:231
-msgid "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Өңдеу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
-
-#: kpilot/todoWidget.cc:155 kpilot/addressWidget.cc:234
-msgid "New Record..."
-msgstr "Жаңа жазуы..."
-
-#: kpilot/todoWidget.cc:159
-msgid "<qt>Add a new to-do to the to-do list.</qt>"
-msgstr "<qt>Жоспар тізіміне жаңасын қосу.</qt>"
-
-#: kpilot/todoWidget.cc:160
-msgid ""
-"<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</i></"
-"qt>"
-msgstr ""
-"<qt><i>Жаңа жоспарды қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
-
-#: kpilot/todoWidget.cc:164 kpilot/addressWidget.cc:244
-msgid "Delete Record"
-msgstr "Жазуын өшіру"
-
-#: kpilot/todoWidget.cc:169
-msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
-msgstr "<qt>Жоспар тізімінен жоспарды өшіру.</qt>"
-
-#: kpilot/todoWidget.cc:258
-#, qt-format
-msgid "There is still a to-do editing window open."
-msgid_plural "There are still %1 to-do editing windows open."
-msgstr[0] ""
-
-#: kpilot/todoWidget.cc:382 kpilot/addressWidget.cc:401
-msgid "Cannot edit new records until HotSynced with Pilot."
-msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуды өңдеуге болмайды."
-
-#: kpilot/todoWidget.cc:384 kpilot/todoWidget.cc:525
-#: kpilot/addressWidget.cc:403 kpilot/addressWidget.cc:536
-msgid "HotSync Required"
-msgstr "Қадамдастыру қажет"
-
-#: kpilot/todoWidget.cc:427
-msgid ""
-"You cannot add to-dos to the to-do list until you have done a HotSync at "
-"least once to retrieve the database layout from your Pilot."
-msgstr ""
-"Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
-"қадамдастыруды өткізбей, жоспарды жоспарлар тізіміне қоса алмайсыз."
-
-#: kpilot/todoWidget.cc:430
-msgid "Cannot Add New To-do"
-msgstr "Жаңа жоспар қосылмайды"
-
-#: kpilot/todoWidget.cc:523 kpilot/addressWidget.cc:534
-msgid "New records cannot be deleted until HotSynced with pilot."
-msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуларды өшіруге болмайды."
-
-#: kpilot/todoWidget.cc:530 kpilot/addressWidget.cc:541
-msgid "Delete currently selected record?"
-msgstr "Таңдалған жазу өшірілсін бе?"
-
-#: kpilot/todoWidget.cc:531 kpilot/addressWidget.cc:542
-msgid "Delete Record?"
-msgstr "Жазу өшірілсін бе?"
 
 #: kpilot/internalEditorAction.cc:62
 msgid "[Internal Editors]"
@@ -3666,17 +3450,11 @@ msgstr ""
 msgid "Conduit Actions"
 msgstr "Нөл-арна параметрлері"
 
-#: kpilot/addressWidget.cc:165
-#, qt-format
-msgid "There is still an address editing window open."
-msgid_plural "There are still %1 address editing windows open."
-msgstr[0] ""
-
-#: kpilot/addressWidget.cc:199
+#: kpilot/addressWidget.cc:182
 msgid "<qt>Select the category of addresses to display here.</qt>"
 msgstr "<qt>Мұнда көрсетілетін адрестердің санатын таңдаңыз.</qt>"
 
-#: kpilot/addressWidget.cc:212
+#: kpilot/addressWidget.cc:194
 msgid ""
 "<qt>This list displays all the addresses in the selected category. Click on "
 "one to display it to the right.</qt>"
@@ -3684,34 +3462,18 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық адрестер тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/addressWidget.cc:216
+#: kpilot/addressWidget.cc:198
 msgid "Address info:"
 msgstr "Адрестің мәліметі:"
 
-#: kpilot/addressWidget.cc:230
-msgid "<qt>You can edit an address when it is selected.</qt>"
-msgstr "<qt>Таңдап алған адресті өңдеуге болады.</qt>"
-
-#: kpilot/addressWidget.cc:238
-msgid "<qt>Add a new address to the address book.</qt>"
-msgstr "<qt>Жаңа адресті адрестік кітапшасына қосу.</qt>"
-
-#: kpilot/addressWidget.cc:239
-msgid "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
-msgstr "<qt><i>Қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
-
-#: kpilot/addressWidget.cc:249
-msgid "<qt>Delete the selected address from the address book.</qt>"
-msgstr "<qt>Таңдап алған адресті адрестік кітапшасынан өшіру.</qt>"
-
-#: kpilot/addressWidget.cc:253
+#: kpilot/addressWidget.cc:205
 #, fuzzy
 #| msgid "Export Memo..."
 msgctxt "Export addresses to file"
 msgid "Export..."
 msgstr "Жазбаны экспорттау..."
 
-#: kpilot/addressWidget.cc:257
+#: kpilot/addressWidget.cc:209
 #, fuzzy
 #| msgid ""
 #| "<qt>This list displays all the addresses in the selected category. Click "
@@ -3721,46 +3483,34 @@ msgstr ""
 "<qt>Бұнда таңдалған санаттағы барлық адрестер тізімделеді. Біреуін "
 "түртсеңіз, ол оң жағында көрсетіледі.</qt>"
 
-#: kpilot/addressWidget.cc:356
+#: kpilot/addressWidget.cc:308
 #, fuzzy
 #| msgid "[unknown]"
 msgctxt "The title is inknown."
 msgid "[unknown]"
 msgstr "[беймәлім]"
 
-#: kpilot/addressWidget.cc:442
-msgid ""
-"You cannot add addresses to the address book until you have done a HotSync "
-"at least once to retrieve the database layout from your Pilot."
-msgstr ""
-"Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
-"қадамдастыруды өткізбей, адресті кітапшасына қоса алмайсыз."
-
-#: kpilot/addressWidget.cc:445
-msgid "Cannot Add New Address"
-msgstr "Жаңа адрес қосылмайды"
-
-#: kpilot/addressWidget.cc:632
+#: kpilot/addressWidget.cc:366
 msgid "Export All Addresses"
 msgstr "Барлық адрестеді экспорттау"
 
-#: kpilot/addressWidget.cc:633
+#: kpilot/addressWidget.cc:367
 #, fuzzy, qt-format
 #| msgid "Export All Addresses"
 msgid "Export Address Category %1"
 msgstr "Барлық адрестеді экспорттау"
 
-#: kpilot/addressWidget.cc:649
+#: kpilot/addressWidget.cc:383
 #, fuzzy, qt-format
 #| msgid "The file exists. Do you want to overwrite it?"
 msgid "The file <i>%1</i> exists. Overwrite?"
 msgstr "Бұндай файл бар ғой. Үстінен жаза берейік пе?"
 
-#: kpilot/addressWidget.cc:650
+#: kpilot/addressWidget.cc:384
 msgid "Overwrite File?"
 msgstr "Файл ауыстрырылсын ба?"
 
-#: kpilot/addressWidget.cc:661
+#: kpilot/addressWidget.cc:395
 #, qt-format
 msgid "The file <i>%1</i> could not be opened for writing."
 msgstr ""
@@ -3776,6 +3526,202 @@ msgstr "Аты"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
+
+#~ msgid "To-do Editor"
+#~ msgstr "Жоспар өңдегіші"
+
+#~ msgid "Import Memo..."
+#~ msgstr "Жазбаны импорттау..."
+
+#~ msgid "Read a text file and add it to the Pilot's memo database."
+#~ msgstr "Мәтін файлды оқып оны Pilot-тың жазбалар деректер қорына қосу."
+
+#~ msgid ""
+#~ "<qt><i>Import is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>Импорттау 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
+
+#~ msgid "Delete Memo"
+#~ msgstr "Жазбаны өшіру"
+
+#~ msgid "Delete the selected memo."
+#~ msgstr "Таңдалған жазбаны өшіру."
+
+#~ msgid ""
+#~ "<qt><i>Deleting is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>Өшіру 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
+
+#~ msgid "Add Memo"
+#~ msgstr "Жазбаны қосу"
+
+#~ msgid "Add a new memo to the database."
+#~ msgstr "Жаңа жазбаны деректер қорына қосу."
+
+#~ msgid "Delete currently selected memo?"
+#~ msgstr "Таңдалған жазба өшірілсін бе?"
+
+#~ msgid "Delete Memo?"
+#~ msgstr "Жазба өшірілсін бе?"
+
+#~ msgid "Cannot open MemoDB to delete record."
+#~ msgstr "Жазуын өшіру үшін MemoDB қоры ашылмады."
+
+#~ msgid "Cannot Delete Memo"
+#~ msgstr "Жазба өшірілмеді"
+
+#~ msgid "Address Editor"
+#~ msgstr "Адрес өңдегіші"
+
+#~ msgid "Phone"
+#~ msgstr "Телефоны"
+
+#~ msgid "Last name:"
+#~ msgstr "Тегі:"
+
+#~ msgid "First name:"
+#~ msgstr "Аты:"
+
+#, fuzzy
+#~| msgid "Title:"
+#~ msgctxt "Tile of the person."
+#~ msgid "Title:"
+#~ msgstr "Атағы:"
+
+#, fuzzy
+#~| msgid "Company:"
+#~ msgctxt "Company where the person works."
+#~ msgid "Company:"
+#~ msgstr "Компаниясы:"
+
+#, fuzzy
+#~| msgid "Address:"
+#~ msgctxt "Address where the person lives."
+#~ msgid "Address:"
+#~ msgstr "Адресі:"
+
+#, fuzzy
+#~| msgid "City:"
+#~ msgctxt "City where the person lives."
+#~ msgid "City:"
+#~ msgstr "Қала:"
+
+#, fuzzy
+#~| msgid "State:"
+#~ msgctxt "State where the person lives."
+#~ msgid "State:"
+#~ msgstr "Облыс/өлкесі:"
+
+#, fuzzy
+#~| msgid "Zip code:"
+#~ msgctxt "Zip or postalcode of Address."
+#~ msgid "Zip code:"
+#~ msgstr "Пошта индексі:"
+
+#, fuzzy
+#~| msgid "Country:"
+#~ msgctxt "Country where the person lives"
+#~ msgid "Country:"
+#~ msgstr "Ел:"
+
+#, fuzzy
+#~| msgid "Custom 1:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 1:"
+#~ msgstr "Қосымша1:"
+
+#, fuzzy
+#~| msgid "Custom 2:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 2:"
+#~ msgstr "Қосымша2:"
+
+#, fuzzy
+#~| msgid "Custom 3:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 3:"
+#~ msgstr "Қосымша3:"
+
+#, fuzzy
+#~| msgid "Custom 4:"
+#~ msgctxt "Custom field"
+#~ msgid "Custom 4:"
+#~ msgstr "Қосымша4:"
+
+#~ msgid "Edit Record..."
+#~ msgstr "Жазуын өңдеу..."
+
+#~ msgid "<qt>You can edit a to-do when it is selected.</qt>"
+#~ msgstr "<qt>Таңдап алған жоспарды өңдеуге болады.</qt>"
+
+#~ msgid ""
+#~ "<qt><i>Editing is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>Өңдеу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
+
+#~ msgid "New Record..."
+#~ msgstr "Жаңа жазуы..."
+
+#~ msgid "<qt>Add a new to-do to the to-do list.</qt>"
+#~ msgstr "<qt>Жоспар тізіміне жаңасын қосу.</qt>"
+
+#~ msgid ""
+#~ "<qt><i>Adding new to-dos is disabled by the 'internal editors' setting.</"
+#~ "i></qt>"
+#~ msgstr ""
+#~ "<qt><i>Жаңа жоспарды қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></"
+#~ "qt>"
+
+#~ msgid "Delete Record"
+#~ msgstr "Жазуын өшіру"
+
+#~ msgid "<qt>Delete the selected to-do from the to-do list.</qt>"
+#~ msgstr "<qt>Жоспар тізімінен жоспарды өшіру.</qt>"
+
+#~ msgid "Cannot edit new records until HotSynced with Pilot."
+#~ msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуды өңдеуге болмайды."
+
+#~ msgid "HotSync Required"
+#~ msgstr "Қадамдастыру қажет"
+
+#~ msgid ""
+#~ "You cannot add to-dos to the to-do list until you have done a HotSync at "
+#~ "least once to retrieve the database layout from your Pilot."
+#~ msgstr ""
+#~ "Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
+#~ "қадамдастыруды өткізбей, жоспарды жоспарлар тізіміне қоса алмайсыз."
+
+#~ msgid "Cannot Add New To-do"
+#~ msgstr "Жаңа жоспар қосылмайды"
+
+#~ msgid "New records cannot be deleted until HotSynced with pilot."
+#~ msgstr "Pilot-пен қадамдастыру кезінде жаңа жазуларды өшіруге болмайды."
+
+#~ msgid "Delete currently selected record?"
+#~ msgstr "Таңдалған жазу өшірілсін бе?"
+
+#~ msgid "Delete Record?"
+#~ msgstr "Жазу өшірілсін бе?"
+
+#~ msgid "<qt>You can edit an address when it is selected.</qt>"
+#~ msgstr "<qt>Таңдап алған адресті өңдеуге болады.</qt>"
+
+#~ msgid "<qt>Add a new address to the address book.</qt>"
+#~ msgstr "<qt>Жаңа адресті адрестік кітапшасына қосу.</qt>"
+
+#~ msgid ""
+#~ "<qt><i>Adding is disabled by the 'internal editors' setting.</i></qt>"
+#~ msgstr "<qt><i>Қосу 'ішкі өңдегіштер' баптауымен бұғатталған.</i></qt>"
+
+#~ msgid "<qt>Delete the selected address from the address book.</qt>"
+#~ msgstr "<qt>Таңдап алған адресті адрестік кітапшасынан өшіру.</qt>"
+
+#~ msgid ""
+#~ "You cannot add addresses to the address book until you have done a "
+#~ "HotSync at least once to retrieve the database layout from your Pilot."
+#~ msgstr ""
+#~ "Pilot құрылғысындағы деректер қоры мәліметін біліп, кемінде бір рет "
+#~ "қадамдастыруды өткізбей, адресті кітапшасына қоса алмайсыз."
+
+#~ msgid "Cannot Add New Address"
+#~ msgstr "Жаңа адрес қосылмайды"
 
 #, fuzzy
 #~| msgid "Unable to open the memo databases on the handheld."
