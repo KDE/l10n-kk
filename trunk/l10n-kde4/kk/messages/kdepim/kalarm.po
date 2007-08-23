@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-22 05:42+0200\n"
+"POT-Creation-Date: 2007-08-23 05:41+0200\n"
 "PO-Revision-Date: 2007-04-18 10:32+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -95,9 +95,10 @@ msgctxt "@info/plain Brief form of 'At Login'"
 msgid "Login"
 msgstr "Кіргенде"
 
-#. i18n: tag label
-#. i18n: file kalarmconfig.kcfg line 330
-#: alarmevent.cpp:2429 rc.cpp:310
+#: alarmevent.cpp:2429
+#, fuzzy
+#| msgid "At login"
+msgctxt "@info/plain"
 msgid "At login"
 msgstr "Жүйеге кіргенде"
 
@@ -105,7 +106,7 @@ msgstr "Жүйеге кіргенде"
 #, fuzzy, qt-format
 #| msgid "1 Minute"
 #| msgid_plural "%1 Minutes"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Minute"
 msgid_plural "%1 Minutes"
 msgstr[0] "%1 минут"
@@ -114,16 +115,16 @@ msgstr[0] "%1 минут"
 #, fuzzy, qt-format
 #| msgid "1 Hour"
 #| msgid_plural "%1 Hours"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Hour"
 msgid_plural "%1 Hours"
 msgstr[0] "%1 сағат"
 
-#: alarmevent.cpp:2443
+#: alarmevent.cpp:2443 alarmevent.cpp:2475
 #, fuzzy, qt-format
 #| msgctxt "Undo-action: message"
 #| msgid "%1: %2"
-msgctxt "@info:plain Hours and minutes"
+msgctxt "@info/plain Hours and minutes"
 msgid "%1h %2m"
 msgstr "%1: %2"
 
@@ -131,7 +132,7 @@ msgstr "%1: %2"
 #, fuzzy, qt-format
 #| msgid "1 Day"
 #| msgid_plural "%1 Days"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Day"
 msgid_plural "%1 Days"
 msgstr[0] "%1 күн"
@@ -140,7 +141,7 @@ msgstr[0] "%1 күн"
 #, fuzzy, qt-format
 #| msgid "1 Week"
 #| msgid_plural "%1 Weeks"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Week"
 msgid_plural "%1 Weeks"
 msgstr[0] "%1 апта"
@@ -149,7 +150,7 @@ msgstr[0] "%1 апта"
 #, fuzzy, qt-format
 #| msgid "1 Month"
 #| msgid_plural "%1 Months"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Month"
 msgid_plural "%1 Months"
 msgstr[0] "%1 ай"
@@ -158,7 +159,7 @@ msgstr[0] "%1 ай"
 #, fuzzy, qt-format
 #| msgid "1 Year"
 #| msgid_plural "%1 Years"
-msgctxt "@info:plain"
+msgctxt "@info/plain"
 msgid "1 Year"
 msgid_plural "%1 Years"
 msgstr[0] "%1 жыл"
@@ -166,23 +167,16 @@ msgstr[0] "%1 жыл"
 #: alarmevent.cpp:2458
 #, fuzzy
 #| msgid "None"
-msgctxt "@info:plain No recurrence"
+msgctxt "@info/plain No recurrence"
 msgid "None"
 msgstr "Жоқ"
 
-#: alarmevent.cpp:2475
-#, fuzzy
-#| msgid "Hours/Minutes"
-msgctxt "@info:plain"
-msgid "Hours and minutes"
-msgstr "Сағат/Минут"
-
 #: alarmevent.cpp:2481
 #, fuzzy
-#| msgid "&Number of repetitions:"
-msgctxt "@info:plain"
-msgid "No repetition"
-msgstr "Қайталау &саны:"
+#| msgid "None"
+msgctxt "@info/plain No repetition"
+msgid "None"
+msgstr "Жоқ"
 
 #: alarmtext.cpp:248
 #, fuzzy
@@ -535,7 +529,7 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "Ескертудің қосымша қайталауын орнату"
 
-#: birthdaydlg.cpp:223
+#: birthdaydlg.cpp:224
 #, fuzzy
 #| msgid "Error reading address book"
 msgctxt "@info"
@@ -671,24 +665,31 @@ msgstr ""
 "тигізбейді."
 
 #: deferdlg.cpp:103
+#, fuzzy, qt-format
+#| msgctxt ""
+#| "This refers to simple repetitions set up using the Simple Repetition "
+#| "dialog"
+#| msgid "Cannot defer past the alarm's next repetition (currently %1)"
 msgctxt "@info"
-msgid ""
-"This refers to simple repetitions set up using the Simple Repetition dialog"
-msgstr ""
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr "Келесі қайталау өткенге ауыстырылмайды (келесігісі - %1)"
 
-#: deferdlg.cpp:108
+#: deferdlg.cpp:107
+#, fuzzy, qt-format
+#| msgctxt "This refers to recurrences set up using the Recurrence tab"
+#| msgid "Cannot defer past the alarm's next recurrence (currently %1)"
 msgctxt "@info"
-msgid "This refers to recurrences set up using the Recurrence tab"
-msgstr ""
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr "Келесі ескерту өткенге ауыстырылмайды (келесігісі - %1)"
 
-#: deferdlg.cpp:113
+#: deferdlg.cpp:111
 #, fuzzy, qt-format
 #| msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgctxt "@info"
 msgid "Cannot defer past the alarm's next reminder (currently %1)"
 msgstr "Келесі еске салу өткенге ауыстырылмайды (келесі - %1)"
 
-#: deferdlg.cpp:117
+#: deferdlg.cpp:115
 #, fuzzy, qt-format
 #| msgid "Cannot defer reminder past the main alarm time (%1)"
 msgctxt "@info"
@@ -1069,7 +1070,7 @@ msgid "Enter the name or URL of a text or image file to display."
 msgstr ""
 "Көрсететін мәтн не кескін файл атауын немесе URL сілтемесін келтіріңіз."
 
-#: editdlgtypes.cpp:198 editdlgtypes.cpp:730 sounddlg.cpp:94
+#: editdlgtypes.cpp:198 editdlgtypes.cpp:727 sounddlg.cpp:94
 #, fuzzy
 #| msgid "Choose a file"
 msgctxt "@info:tooltip"
@@ -1147,28 +1148,28 @@ msgid "Check to be prompted for confirmation when you acknowledge the alarm."
 msgstr ""
 "Құсбелгісі қосылса, ескерту хабарламаны оқығаныңыз туралы құптау сұралады."
 
-#: editdlgtypes.cpp:518
+#: editdlgtypes.cpp:515
 #, fuzzy
 #| msgid "Display the alarm message now"
 msgctxt "@info:whatsthis"
 msgid "Display the alarm message now"
 msgstr "Ескерту хабарламасын қазір көрсету"
 
-#: editdlgtypes.cpp:527
+#: editdlgtypes.cpp:524
 #, fuzzy
 #| msgid "Display the file now"
 msgctxt "@info:whatsthis"
 msgid "Display the file now"
 msgstr "Файлды қазір көрсету"
 
-#: editdlgtypes.cpp:611
+#: editdlgtypes.cpp:608
 #, fuzzy
 #| msgid "Please select a file to display"
 msgctxt "@info"
 msgid "Please select a file to display"
 msgstr "Көрсететін файлды таңдау"
 
-#: editdlgtypes.cpp:613
+#: editdlgtypes.cpp:610
 #, fuzzy, qt-format
 #| msgid ""
 #| "%1\n"
@@ -1179,7 +1180,7 @@ msgstr ""
 "%1\n"
 "оқылмайды"
 
-#: editdlgtypes.cpp:614
+#: editdlgtypes.cpp:611
 #, fuzzy, qt-format
 #| msgid ""
 #| "%1\n"
@@ -1190,7 +1191,7 @@ msgstr ""
 "%1\n"
 "оқылмайды"
 
-#: editdlgtypes.cpp:615
+#: editdlgtypes.cpp:612
 #, fuzzy, qt-format
 #| msgid ""
 #| "%1\n"
@@ -1201,7 +1202,7 @@ msgstr ""
 "%1\n"
 "оқылмайды"
 
-#: editdlgtypes.cpp:616
+#: editdlgtypes.cpp:613
 #, fuzzy, qt-format
 #| msgid ""
 #| "%1\n"
@@ -1212,63 +1213,63 @@ msgstr ""
 "%1\n"
 "мәтін не кескін файлы емес сияқты"
 
-#: editdlgtypes.cpp:640
+#: editdlgtypes.cpp:637
 #, fuzzy
 #| msgid "Enter a script"
 msgctxt "@option:check"
 msgid "Enter a script"
 msgstr "Скрипт"
 
-#: editdlgtypes.cpp:641
+#: editdlgtypes.cpp:638
 #, fuzzy
 #| msgid "Execute in terminal window"
 msgctxt "@option:radio"
 msgid "Execute in terminal window"
 msgstr "Терминал терезесінде орындалсын"
 
-#: editdlgtypes.cpp:642
+#: editdlgtypes.cpp:639
 #, fuzzy
 #| msgid "Execute in terminal window"
 msgctxt "@option:check"
 msgid "Execute in terminal window"
 msgstr "Терминал терезесінде орындалсын"
 
-#: editdlgtypes.cpp:672
+#: editdlgtypes.cpp:669
 #, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Command Alarm Template"
 msgstr "Ескертудің жаңа үлгісі"
 
-#: editdlgtypes.cpp:672
+#: editdlgtypes.cpp:669
 #, fuzzy
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Command Alarm Template"
 msgstr "Ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:673
+#: editdlgtypes.cpp:670
 #, fuzzy
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "New Command Alarm"
 msgstr "Командалық ескертулер"
 
-#: editdlgtypes.cpp:673
+#: editdlgtypes.cpp:670
 #, fuzzy
 #| msgid "Command Alarms"
 msgctxt "@title:window"
 msgid "Edit Command Alarm"
 msgstr "Командалық ескертулер"
 
-#: editdlgtypes.cpp:681
+#: editdlgtypes.cpp:678
 #, fuzzy
 #| msgid "Execute the specified command now"
 msgctxt "@info:whatsthis"
 msgid "Execute the specified command now"
 msgstr "Келтірілген команданы қазір орындау"
 
-#: editdlgtypes.cpp:686
+#: editdlgtypes.cpp:683
 #, fuzzy
 #| msgid ""
 #| "Check to enter the contents of a script instead of a shell command line"
@@ -1278,56 +1279,56 @@ msgstr ""
 "Қоршау-орта командасының орнына орындайтын скриптті келтірмек болсаңыз "
 "құсбелгісін қойыңыз"
 
-#: editdlgtypes.cpp:690
+#: editdlgtypes.cpp:687
 #, fuzzy
 #| msgid "Enter a shell command to execute."
 msgctxt "@info:whatsthis"
 msgid "Enter a shell command to execute."
 msgstr "Орындайтын қоршау-орта командасын келтіріңіз."
 
-#: editdlgtypes.cpp:694
+#: editdlgtypes.cpp:691
 #, fuzzy
 #| msgid "Enter the contents of a script to execute"
 msgctxt "@info:whatsthis"
 msgid "Enter the contents of a script to execute"
 msgstr "Орындайтын скрипттің мазмұнын келтіріңіз"
 
-#: editdlgtypes.cpp:699
+#: editdlgtypes.cpp:696
 #, fuzzy
 #| msgid "Command Output"
 msgctxt "@title:group"
 msgid "Command Output"
 msgstr "Команданың шығысы"
 
-#: editdlgtypes.cpp:709
+#: editdlgtypes.cpp:706
 #, fuzzy
 #| msgid "Check to execute the command in a terminal window"
 msgctxt "@info:whatsthis"
 msgid "Check to execute the command in a terminal window"
 msgstr "Команда терминал терезесінде орындалсын десеңіз, құсбелгісін қойыңыз"
 
-#: editdlgtypes.cpp:723
+#: editdlgtypes.cpp:720
 #, fuzzy
 #| msgid "Enter the name or path of the log file."
 msgctxt "@info:whatsthis"
 msgid "Enter the name or path of the log file."
 msgstr "Журнал файлының жолы мен атауын келтіріңіз."
 
-#: editdlgtypes.cpp:731
+#: editdlgtypes.cpp:728
 #, fuzzy
 #| msgid "Select a log file."
 msgctxt "@info:whatsthis"
 msgid "Select a log file."
 msgstr "Журнал файлын таңдау."
 
-#: editdlgtypes.cpp:734
+#: editdlgtypes.cpp:731
 #, fuzzy
 #| msgid "Lo&g to file"
 msgctxt "@option:radio"
 msgid "Log to file"
 msgstr "&Журнал жүргізілсін"
 
-#: editdlgtypes.cpp:736
+#: editdlgtypes.cpp:733
 #, fuzzy
 #| msgid ""
 #| "Check to log the command output to a local file. The output will be "
@@ -1340,20 +1341,20 @@ msgstr ""
 "Командасының шығысы бір жергілікті файлға жазылсын десеңіз, құсбелгісін "
 "қойыңыз. Бұл жазу кез келген файлдың соңына қосыла береді."
 
-#: editdlgtypes.cpp:742
+#: editdlgtypes.cpp:739
 #, fuzzy
 msgctxt "@option:radio"
 msgid "Discard"
 msgstr "Команданың шығысы"
 
-#: editdlgtypes.cpp:744
+#: editdlgtypes.cpp:741
 #, fuzzy
 #| msgid "Check to discard command output."
 msgctxt "@info:whatsthis"
 msgid "Check to discard command output."
 msgstr "Команда шығысын ысырып тастау үшін құсбелгісін қойыңыз."
 
-#: editdlgtypes.cpp:892
+#: editdlgtypes.cpp:889
 #, fuzzy
 #| msgid ""
 #| "Log file must be the name or path of a local file, with write permission."
@@ -1362,7 +1363,7 @@ msgid ""
 "Log file must be the name or path of a local file, with write permission."
 msgstr "Журнал - жолы көрсетілген жазуға рұқсатты жергілікті файлы болу керек."
 
-#: editdlgtypes.cpp:909
+#: editdlgtypes.cpp:906
 #, fuzzy, qt-format
 #| msgid ""
 #| "Command executed:\n"
@@ -1373,49 +1374,49 @@ msgstr ""
 "Орындалған команда:\n"
 "%1"
 
-#: editdlgtypes.cpp:956
+#: editdlgtypes.cpp:953
 #, fuzzy
 #| msgid "Copy email to self"
 msgctxt "@option:check"
 msgid "Copy email to self"
 msgstr "Эл.поштаның көшірмесі өзіне қалдырылсын"
 
-#: editdlgtypes.cpp:988
+#: editdlgtypes.cpp:985
 #, fuzzy
 #| msgid "New Alarm Template"
 msgctxt "@title:window"
 msgid "New Email Alarm Template"
 msgstr "Ескертудің жаңа үлгісі"
 
-#: editdlgtypes.cpp:988
+#: editdlgtypes.cpp:985
 #, fuzzy
 #| msgid "Edit Alarm Template"
 msgctxt "@title:window"
 msgid "Edit Email Alarm Template"
 msgstr "Ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:989
+#: editdlgtypes.cpp:986
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "New Email Alarm"
 msgstr "Эл.поштамен ескерту"
 
-#: editdlgtypes.cpp:989
+#: editdlgtypes.cpp:986
 #, fuzzy
 #| msgid "Email Alarms"
 msgctxt "@title:window"
 msgid "Edit Email Alarm"
 msgstr "Эл.поштамен ескерту"
 
-#: editdlgtypes.cpp:997
+#: editdlgtypes.cpp:994
 #, fuzzy
 #| msgid "Send the email to the specified addressees now"
 msgctxt "@info:whatsthis"
 msgid "Send the email to the specified addressees now"
 msgstr "Келтірілген адрестерге эл.поштасын қазір жіберу"
 
-#: editdlgtypes.cpp:1008
+#: editdlgtypes.cpp:1005
 #, fuzzy
 #| msgctxt "'From' email address"
 #| msgid "From:"
@@ -1423,7 +1424,7 @@ msgctxt "@label:listbox 'From' email address"
 msgid "From:"
 msgstr "Кімнен:"
 
-#: editdlgtypes.cpp:1015
+#: editdlgtypes.cpp:1012
 #, fuzzy
 #| msgid ""
 #| "Your email identity, used to identify you as the sender when sending "
@@ -1436,7 +1437,7 @@ msgstr ""
 "Эл.поштамен ескертуді жіберу үшін қолданатын Сіздің эл.поштаңыздың іс-"
 "әлпетіңіз."
 
-#: editdlgtypes.cpp:1020
+#: editdlgtypes.cpp:1017
 #, fuzzy
 #| msgctxt "Email addressee"
 #| msgid "To:"
@@ -1444,7 +1445,7 @@ msgctxt "@label:textbox Email addressee"
 msgid "To:"
 msgstr "Кімге:"
 
-#: editdlgtypes.cpp:1026
+#: editdlgtypes.cpp:1023
 #, fuzzy
 #| msgid ""
 #| "Enter the addresses of the email recipients. Separate multiple addresses "
@@ -1457,21 +1458,21 @@ msgstr ""
 "Қабылдаушының эл.пошта адресін келтіріңіз. Бірнеше адрестер болса, үтір не "
 "үтірлі нүктемен бөліктеңіз."
 
-#: editdlgtypes.cpp:1034
+#: editdlgtypes.cpp:1031
 #, fuzzy
 #| msgid "Open address book"
 msgctxt "@info:tooltip"
 msgid "Open address book"
 msgstr "Адрес кітапшаны ашу"
 
-#: editdlgtypes.cpp:1035
+#: editdlgtypes.cpp:1032
 #, fuzzy
 #| msgid "Select email addresses from your address book."
 msgctxt "@info:whatsthis"
 msgid "Select email addresses from your address book."
 msgstr "Адрес кітапшасынан эл.пошта адресін таңдау."
 
-#: editdlgtypes.cpp:1039
+#: editdlgtypes.cpp:1036
 #, fuzzy
 #| msgctxt "Email subject"
 #| msgid "Subject:"
@@ -1479,69 +1480,69 @@ msgctxt "@label:textbox Email subject"
 msgid "Subject:"
 msgstr "Тақырыбы:"
 
-#: editdlgtypes.cpp:1046
+#: editdlgtypes.cpp:1043
 #, fuzzy
 #| msgid "Enter the email subject."
 msgctxt "@info:whatsthis"
 msgid "Enter the email subject."
 msgstr "Эл.пошта тақырыбын толтырыңыз."
 
-#: editdlgtypes.cpp:1051
+#: editdlgtypes.cpp:1048
 #, fuzzy
 #| msgid "Enter the email message."
 msgctxt "@info:whatsthis"
 msgid "Enter the email message."
 msgstr "Эл.пошта хабарламасын келтіріңіз."
 
-#: editdlgtypes.cpp:1058
+#: editdlgtypes.cpp:1055
 #, fuzzy
 #| msgid "Attachment&s:"
 msgctxt "@label:listbox"
 msgid "Attachments:"
 msgstr "&Тіркемелері:"
 
-#: editdlgtypes.cpp:1071
+#: editdlgtypes.cpp:1068
 #, fuzzy
 #| msgid "Files to send as attachments to the email."
 msgctxt "@info:whatsthis"
 msgid "Files to send as attachments to the email."
 msgstr "Эл.поштаға тіркелетін файлдар."
 
-#: editdlgtypes.cpp:1075 resourceselector.cpp:98
+#: editdlgtypes.cpp:1072 resourceselector.cpp:98
 #, fuzzy
 #| msgid "Add..."
 msgctxt "@action:button"
 msgid "Add..."
 msgstr "Қосу..."
 
-#: editdlgtypes.cpp:1077
+#: editdlgtypes.cpp:1074
 #, fuzzy
 #| msgid "Add an attachment to the email."
 msgctxt "@info:whatsthis"
 msgid "Add an attachment to the email."
 msgstr "Тіркемесін эл.поштаға қосыңыз."
 
-#: editdlgtypes.cpp:1080 resourceselector.cpp:100
+#: editdlgtypes.cpp:1077 resourceselector.cpp:100
 #, fuzzy
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "Өші&ру"
 
-#: editdlgtypes.cpp:1082
+#: editdlgtypes.cpp:1079
 #, fuzzy
 #| msgid "Remove the highlighted attachment from the email."
 msgctxt "@info:whatsthis"
 msgid "Remove the highlighted attachment from the email."
 msgstr "Эл.поштадан бояуланған тіркемесін өшіру."
 
-#: editdlgtypes.cpp:1088
+#: editdlgtypes.cpp:1085
 #, fuzzy
 #| msgid "If checked, the email will be blind copied to you."
 msgctxt "@info:whatsthis"
 msgid "If checked, the email will be blind copied to you."
 msgstr "Құсбелгі қойылса, Сізге эл.поштаның жасырын көшірмесі жіберіледі."
 
-#: editdlgtypes.cpp:1234
+#: editdlgtypes.cpp:1231
 #, fuzzy, qt-format
 #| msgid ""
 #| "Invalid email address:\n"
@@ -1552,14 +1553,14 @@ msgstr ""
 "Эл.поштаның адресі дұрыс емес:\n"
 "%1"
 
-#: editdlgtypes.cpp:1241
+#: editdlgtypes.cpp:1238
 #, fuzzy
 #| msgid "No email address specified"
 msgctxt "@info"
 msgid "No email address specified"
 msgstr "Эл.пошта адресі келтірілмеген"
 
-#: editdlgtypes.cpp:1258
+#: editdlgtypes.cpp:1255
 #, fuzzy, qt-format
 #| msgid ""
 #| "Invalid email attachment:\n"
@@ -1570,7 +1571,7 @@ msgstr ""
 "Эл.пошта тіркемесі дұрыс емес:\n"
 "%1"
 
-#: editdlgtypes.cpp:1262
+#: editdlgtypes.cpp:1259
 #, fuzzy
 #| msgid ""
 #| "Do you really want to send the email now to the specified recipient(s)?"
@@ -1578,27 +1579,27 @@ msgctxt "@info"
 msgid "Do you really want to send the email now to the specified recipient(s)?"
 msgstr "Келтірілген қабылдаушы(лар)ға эл.поштаны қазір жібермексіз бе?"
 
-#: editdlgtypes.cpp:1263
+#: editdlgtypes.cpp:1260
 #, fuzzy
 #| msgid "Confirm Email"
 msgctxt "@action:button"
 msgid "Confirm Email"
 msgstr "Эл.поштаны құптау"
 
-#: editdlgtypes.cpp:1263
+#: editdlgtypes.cpp:1260
 #, fuzzy
 #| msgid "&Send"
 msgctxt "@action:button"
 msgid "Send"
 msgstr "&Жіберу"
 
-#: editdlgtypes.cpp:1275
+#: editdlgtypes.cpp:1272
 #, qt-format
 msgctxt "@info"
 msgid "Email sent to:<br/>%1<br/>Bcc: <email>%2</email>"
 msgstr ""
 
-#: editdlgtypes.cpp:1278
+#: editdlgtypes.cpp:1275
 #, fuzzy, qt-format
 #| msgid ""
 #| "Email sent to:\n"
@@ -1609,7 +1610,7 @@ msgstr ""
 "Эл.пошта жіберілді:\n"
 "%1%2"
 
-#: editdlgtypes.cpp:1303
+#: editdlgtypes.cpp:1300
 #, fuzzy
 #| msgid "Choose File to Attach"
 msgctxt "@title:window"
@@ -5215,6 +5216,12 @@ msgid "No recurrence"
 msgstr "Қайталану болмасын"
 
 #. i18n: tag label
+#. i18n: file kalarmconfig.kcfg line 330
+#: rc.cpp:310
+msgid "At login"
+msgstr "Жүйеге кіргенде"
+
+#. i18n: tag label
 #. i18n: file kalarmconfig.kcfg line 331
 #: rc.cpp:313
 #, fuzzy
@@ -7228,10 +7235,16 @@ msgid "kalarmd is being autostarted"
 msgstr ""
 
 #, fuzzy
-#~| msgid "None"
-#~ msgctxt "@info/plain No repetition"
-#~ msgid "None"
-#~ msgstr "Жоқ"
+#~| msgid "Hours/Minutes"
+#~ msgctxt "@info:plain"
+#~ msgid "Hours and minutes"
+#~ msgstr "Сағат/Минут"
+
+#, fuzzy
+#~| msgid "&Number of repetitions:"
+#~ msgctxt "@info:plain"
+#~ msgid "No repetition"
+#~ msgstr "Қайталау &саны:"
 
 #, fuzzy
 #~| msgid "&Background color:"
@@ -7577,16 +7590,6 @@ msgstr ""
 #~ msgctxt "Copy-to in email headers"
 #~ msgid "Cc:"
 #~ msgstr "Көшірмесі:"
-
-#~ msgctxt ""
-#~ "This refers to simple repetitions set up using the Simple Repetition "
-#~ "dialog"
-#~ msgid "Cannot defer past the alarm's next repetition (currently %1)"
-#~ msgstr "Келесі қайталау өткенге ауыстырылмайды (келесігісі - %1)"
-
-#~ msgctxt "This refers to recurrences set up using the Recurrence tab"
-#~ msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-#~ msgstr "Келесі ескерту өткенге ауыстырылмайды (келесігісі - %1)"
 
 #~ msgid "read-only"
 #~ msgstr "тек оқу үшін"
