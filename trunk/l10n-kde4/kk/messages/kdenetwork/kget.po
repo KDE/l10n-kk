@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-23 05:40+0200\n"
+"POT-Creation-Date: 2007-08-24 05:35+0200\n"
 "PO-Revision-Date: 2007-02-26 15:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team:  <kk@li.org>\n"
@@ -169,7 +169,7 @@ msgstr "Файлдар таңдалмаған"
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:195 core/transfergrouphandler.cpp:320
+#: mainwindow.cpp:195 core/transfergrouphandler.cpp:321
 #, fuzzy
 msgid "Stop"
 msgstr "Тоқталды"
@@ -189,7 +189,19 @@ msgstr "sairan@computer.org"
 msgid "Copy URL to Clipboard"
 msgstr "URL-ды алмасу буферіне &көшіріп алу"
 
-#: mainwindow.cpp:250
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 37
+#: mainwindow.cpp:219 mainwindow.cpp:288 rc.cpp:27
+#, fuzzy
+msgid "Show drop target"
+msgstr "Сүйреп апаратын орнын көрсету"
+
+#: mainwindow.cpp:220 mainwindow.cpp:289
+#, fuzzy
+msgid "Hide drop target"
+msgstr "Сүйреп апаратын &орнын жасыру"
+
+#: mainwindow.cpp:259
 #, fuzzy
 #| msgid ""
 #| "This is the first time that you have run KGet.\n"
@@ -201,29 +213,29 @@ msgstr ""
 "KGet-ті бірінші рет жегіп жатырсыз.\n"
 "KGet-ті Konqueror-дың жүктеу менеджері қыламыз ба?"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 #, fuzzy
 msgid "Konqueror Integration"
 msgstr "Konqueror-мен біріктіру"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Enable"
 msgstr "Рұқсат етілсін"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:262
 msgid "Do Not Enable"
 msgstr "Рұқсат етілмесін"
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:303
 msgid "All Openable Files"
 msgstr ""
 
-#: mainwindow.cpp:285
+#: mainwindow.cpp:304
 #, fuzzy
 msgid "Open File"
 msgstr "&Файлды ашу"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:320
 #, fuzzy
 #| msgid ""
 #| "Some transfers are still running.\n"
@@ -235,38 +247,38 @@ msgstr ""
 "Кейбір тапсырмалар әлі орындалуда.\n"
 "KGet-тен шыққыңыз келгені рас па?"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:322
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:355
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr "Ашылатын тапсырма:"
 
-#: mainwindow.cpp:338
+#: mainwindow.cpp:357
 #, fuzzy
 msgid "Export Transfers"
 msgstr "Тапсырмалар тізімін &экспорттау..."
 
-#: mainwindow.cpp:361 conf/transfersgroupwidget.cpp:70
+#: mainwindow.cpp:380 conf/transfersgroupwidget.cpp:70
 #, fuzzy
 msgid "Enter Group Name"
 msgstr "Сайран Киккарин"
 
-#: mainwindow.cpp:362 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:381 conf/transfersgroupwidget.cpp:71
 #, fuzzy
 msgid "Group name:"
 msgstr "Сайран Киккарин"
 
-#: mainwindow.cpp:540
+#: mainwindow.cpp:559
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:543
+#: mainwindow.cpp:562
 #, fuzzy
 msgid "Konqueror Integration disabled"
 msgstr "Konqueror-мен біріктіру"
@@ -324,13 +336,6 @@ msgstr ""
 #| msgid "Drop target"
 msgid "Drop Target"
 msgstr "Сүйреп апаратын орны"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 37
-#: rc.cpp:27
-#, fuzzy
-msgid "Show drop target"
-msgstr "Сүйреп апаратын орнын көрсету"
 
 #. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 44
@@ -560,7 +565,6 @@ msgid "Folder and extension can not be empty."
 msgstr ""
 
 #: conf/dlgdirectories.cpp:120 core/kget.cpp:416 core/kget.cpp:636
-#: core/kget.cpp:663
 msgid "Error"
 msgstr ""
 
@@ -621,6 +625,7 @@ msgid ""
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:99 core/kget.cpp:481
+#: core/transfergrouphandler.cpp:186
 #, fuzzy
 msgid "My Downloads"
 msgstr "Жүктеу жалғастырылды"
@@ -696,16 +701,7 @@ msgstr ""
 msgid "Download URL again?"
 msgstr "Қайта жүктеп алу"
 
-#: core/kget.cpp:662
-#, qt-format
-msgid ""
-"Already saving URL\n"
-"%1"
-msgstr ""
-"Сақталған URL\n"
-"%1"
-
-#: core/kget.cpp:681
+#: core/kget.cpp:678
 #, qt-format
 msgid ""
 "Destination file \n"
@@ -718,14 +714,14 @@ msgstr ""
 "бар ғой.\n"
 "Үстінен жазыла берсін бе?"
 
-#: core/kget.cpp:809
+#: core/kget.cpp:806
 #, qt-format
 msgid ""
 "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
 "<br/><i>%2</i></p>"
 msgstr ""
 
-#: core/kget.cpp:834
+#: core/kget.cpp:831
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -736,11 +732,11 @@ msgstr ""
 "деген өшірілмейді\n"
 "өйткені бұл калог."
 
-#: core/kget.cpp:836 core/kget.cpp:847
+#: core/kget.cpp:833 core/kget.cpp:844
 msgid "Not Deleted"
 msgstr "Өшіру болмады"
 
-#: core/kget.cpp:845
+#: core/kget.cpp:842
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -780,7 +776,7 @@ msgstr "Тоқтап тұр"
 msgid "%1/s"
 msgstr "%1/сек"
 
-#: core/transfergrouphandler.cpp:314
+#: core/transfergrouphandler.cpp:315
 #, fuzzy
 msgid "Start"
 msgstr "Қайта ба&стау"
@@ -886,6 +882,13 @@ msgstr "Жүктеу жалғастырылды"
 #, fuzzy
 msgid "Transfer details:"
 msgstr " %1 тапсырма "
+
+#~ msgid ""
+#~ "Already saving URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Сақталған URL\n"
+#~ "%1"
 
 #~ msgid "Default folder:"
 #~ msgstr "Әдетті қапшығы:"
