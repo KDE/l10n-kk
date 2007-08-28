@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-27 05:28+0200\n"
+"POT-Creation-Date: 2007-08-28 05:40+0200\n"
 "PO-Revision-Date: 2007-08-25 10:36+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -2058,19 +2058,19 @@ msgstr "%1 - беймәлім түрі\n"
 msgid "%1 - unknown type of userpath\n"
 msgstr "%1 - userpath жолының беймәлім түрі\n"
 
-#: kdecore/io/kptydevice.cpp:269
+#: kdecore/io/kptydevice.cpp:283
 msgid "Error reading from PTY"
 msgstr "PTY-ден қате оқылым"
 
-#: kdecore/io/kptydevice.cpp:303
+#: kdecore/io/kptydevice.cpp:317
 msgid "Error writing to PTY"
 msgstr "PTY-ге қате жазылым"
 
-#: kdecore/io/kptydevice.cpp:388
+#: kdecore/io/kptydevice.cpp:402
 msgid "PTY operation timed out"
 msgstr "PTY күту мерзімі бітті"
 
-#: kdecore/io/kptydevice.cpp:430
+#: kdecore/io/kptydevice.cpp:444
 msgid "Error opening PTY"
 msgstr "PTY ашу қатесі"
 
@@ -3034,53 +3034,58 @@ msgstr "am"
 msgid "pm"
 msgstr "pm"
 
-#: kdecore/util/klibloader.cpp:195
+#: kdecore/util/klibloader.cpp:174
 #, qt-format
 msgid "The library %1 does not offer an %2 function."
 msgstr "%1 жиынында %2 деген функция жоқ."
 
-#: kdecore/util/klibloader.cpp:210
+#: kdecore/util/klibloader.cpp:189
 #, qt-format
 msgid "The library %1 does not offer a KDE compatible factory."
 msgstr "%1 жиынында KDE үйлесімді фабрикасы жоқ."
 
-#: kdecore/util/klibloader.cpp:228
+#: kdecore/util/klibloader.cpp:207
 #, qt-format
 msgid "The library %1 does not offer a qt_plugin_instance function."
 msgstr "%1 жиынында qt_plugin_instance функциясы жоқ."
 
-#: kdecore/util/klibloader.cpp:243
+#: kdecore/util/klibloader.cpp:222 kdecore/util/kpluginloader.cpp:132
 #, qt-format
 msgid "The library %1 does not offer a KDE 4 compatible factory."
 msgstr "%1 жиынында KDE 4 үйлесімді фабрикасы жоқ."
 
-#: kdecore/util/klibloader.cpp:504
+#: kdecore/util/klibloader.cpp:483
 #, qt-format
 msgid "Library files for \"%1\" not found in paths."
 msgstr "\"%1\" үшін керек жиын файлдар іздеу жолдарында табылмады."
 
-#: kdecore/util/klibloader.cpp:652
+#: kdecore/util/klibloader.cpp:631
 msgid "No service matching the requirements was found"
 msgstr "Талаптарға сай қызмет табылмады"
 
-#: kdecore/util/klibloader.cpp:654
+#: kdecore/util/klibloader.cpp:633 kdecore/util/kpluginloader.cpp:106
 msgid ""
 "The service provides no library, the Library key is missing in the .desktop "
 "file"
 msgstr ""
 "Қызмет жиын файлды қамтамасыз етпеді, Library кілті .desktop файлында жоқ"
 
-#: kdecore/util/klibloader.cpp:658
+#: kdecore/util/klibloader.cpp:637
 msgid "The library does not export a factory for creating components"
 msgstr "Жиын компоненттерді құру үшін қажетті фабриканы экспорт етпейді"
 
-#: kdecore/util/klibloader.cpp:660
+#: kdecore/util/klibloader.cpp:639
 msgid "The factory does not support creating components of the specified type"
 msgstr "Бұл фабрика келтірілген түрдегі компоненттерді құруын қолдамайды"
 
-#: kdecore/util/klibloader.cpp:662
+#: kdecore/util/klibloader.cpp:641
 msgid "KLibLoader: Unknown error"
 msgstr "KLibLoader: Беймәлім қате"
+
+#: kdecore/util/kpluginloader.cpp:151
+#, qt-format
+msgid "The plugin '%1' uses incompatible KDE library. (%2)"
+msgstr ""
 
 #: kdecore/config/kconfigbackend.cpp:200 kdecore/config/kconfigbackend.cpp:209
 msgid "Will not save configuration.\n"
@@ -4354,75 +4359,99 @@ msgid "us"
 msgstr "us"
 
 #. i18n: Decide which string is used to delimit keys in a keyboard
-#. shortcut, e.g. + in Ctrl+Alt+Tab.
+#. shortcut (e.g. + in Ctrl+Alt+Tab) in plain text.
 #: kdecore/localization/kuitsemantics.cpp:769
-msgctxt "shortcut-key-delimiter"
+#, fuzzy
+#| msgid "+"
+msgctxt "shortcut-key-delimiter/plain"
 msgid "+"
 msgstr "+"
 
-#. i18n: Decide which string is used to delimit elements in a GUI path,
-#. e.g. -> in "Go to Settings->Advanced->Core tab."
+#. i18n: Decide which string is used to delimit keys in a keyboard
+#. shortcut (e.g. + in Ctrl+Alt+Tab) in rich text.
 #: kdecore/localization/kuitsemantics.cpp:773
-msgctxt "gui-path-delimiter"
+#, fuzzy
+#| msgid "+"
+msgctxt "shortcut-key-delimiter/rich"
+msgid "+"
+msgstr "+"
+
+#. i18n: Decide which string is used to delimit elements in a GUI path
+#. (e.g. -> in "Go to Settings->Advanced->Core tab.") in plain text.
+#: kdecore/localization/kuitsemantics.cpp:777
+#, fuzzy
+#| msgctxt "gui-path-delimiter"
+#| msgid "→"
+msgctxt "gui-path-delimiter/plain"
 msgid "→"
 msgstr "→"
 
-#: kdecore/localization/kuitsemantics.cpp:788
+#. i18n: Decide which string is used to delimit elements in a GUI path
+#. (e.g. -> in "Go to Settings->Advanced->Core tab.") in rich text.
+#: kdecore/localization/kuitsemantics.cpp:781
+#, fuzzy
+#| msgctxt "gui-path-delimiter"
+#| msgid "→"
+msgctxt "gui-path-delimiter/rich"
+msgid "→"
+msgstr "→"
+
+#: kdecore/localization/kuitsemantics.cpp:796
 msgctxt "keyboard-key-name"
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: kdecore/localization/kuitsemantics.cpp:789
+#: kdecore/localization/kuitsemantics.cpp:797
 msgctxt "keyboard-key-name"
 msgid "Alt"
 msgstr "Alt"
 
-#: kdecore/localization/kuitsemantics.cpp:790
+#: kdecore/localization/kuitsemantics.cpp:798
 msgctxt "keyboard-key-name"
 msgid "Meta"
 msgstr "Meta"
 
-#: kdecore/localization/kuitsemantics.cpp:791
+#: kdecore/localization/kuitsemantics.cpp:799
 msgctxt "keyboard-key-name"
 msgid "Shift"
 msgstr "Shift"
 
-#: kdecore/localization/kuitsemantics.cpp:793
+#: kdecore/localization/kuitsemantics.cpp:801
 msgctxt "keyboard-key-name"
 msgid "Space"
 msgstr "Бос орын"
 
-#: kdecore/localization/kuitsemantics.cpp:794
+#: kdecore/localization/kuitsemantics.cpp:802
 msgctxt "keyboard-key-name"
 msgid "Backspace"
 msgstr "Backspace"
 
-#: kdecore/localization/kuitsemantics.cpp:795
+#: kdecore/localization/kuitsemantics.cpp:803
 msgctxt "keyboard-key-name"
 msgid "Insert"
 msgstr "Ins"
 
-#: kdecore/localization/kuitsemantics.cpp:796
+#: kdecore/localization/kuitsemantics.cpp:804
 msgctxt "keyboard-key-name"
 msgid "Delete"
 msgstr "Del"
 
-#: kdecore/localization/kuitsemantics.cpp:797
+#: kdecore/localization/kuitsemantics.cpp:805
 msgctxt "keyboard-key-name"
 msgid "Home"
 msgstr "Home"
 
-#: kdecore/localization/kuitsemantics.cpp:798
+#: kdecore/localization/kuitsemantics.cpp:806
 msgctxt "keyboard-key-name"
 msgid "End"
 msgstr "End"
 
-#: kdecore/localization/kuitsemantics.cpp:799
+#: kdecore/localization/kuitsemantics.cpp:807
 msgctxt "keyboard-key-name"
 msgid "PageUp"
 msgstr "PgUp"
 
-#: kdecore/localization/kuitsemantics.cpp:800
+#: kdecore/localization/kuitsemantics.cpp:808
 msgctxt "keyboard-key-name"
 msgid "PageDown"
 msgstr "PgDn"
@@ -5396,19 +5425,31 @@ msgid "About KDE"
 msgstr "KDE туралы"
 
 #: kdeui/dialogs/kaboutkdedialog.cpp:46
-#, qt-format
-msgid "<font size=\"4\">K Desktop Environment</font><br /><b>Version %1</b>"
+#, fuzzy, qt-format
+#| msgid "<font size=\"4\">K Desktop Environment</font><br /><b>Version %1</b>"
+msgid ""
+"<html><font size=\"5\">K Desktop Environment</font><br><b>Version %1</b></"
+"html>"
 msgstr "<font size=\"4\">K Desktop Environment</font><br /><b>%1 нұсқасы</b>"
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:54
+#: kdeui/dialogs/kaboutkdedialog.cpp:56
+#, fuzzy
+#| msgid ""
+#| "The <b>K Desktop Environment</b> is written and maintained by the KDE "
+#| "Team, a world-wide network of software engineers committed to <a href="
+#| "\"http://www.gnu.org/philosophy/free-sw.html\">Free Software</a> "
+#| "development.<br /><br />No single group, company or organization controls "
+#| "the KDE source code. Everyone is welcome to contribute to KDE.<br /><br /"
+#| ">Visit <a href=\"http://www.kde.org/\">http://www.kde.org</a> for more "
+#| "information on the KDE project."
 msgid ""
-"The <b>K Desktop Environment</b> is written and maintained by the KDE Team, "
-"a world-wide network of software engineers committed to <a href=\"http://www."
-"gnu.org/philosophy/free-sw.html\">Free Software</a> development.<br /><br /"
-">No single group, company or organization controls the KDE source code. "
-"Everyone is welcome to contribute to KDE.<br /><br />Visit <a href=\"http://"
-"www.kde.org/\">http://www.kde.org</a> for more information on the KDE "
-"project."
+"<html>The <b>K Desktop Environment</b> is written and maintained by the KDE "
+"Team, a world-wide network of software engineers committed to <a href="
+"\"http://www.gnu.org/philosophy/free-sw.html\">Free Software</a> development."
+"<br><br>No single group, company or organization controls the KDE source "
+"code. Everyone is welcome to contribute to KDE.<br><br>Visit <a href="
+"\"http://www.kde.org/\">http://www.kde.org</a> for more information on the "
+"KDE project.</html>"
 msgstr ""
 "<b>K Desktop Environment</b> деген <a href=\"http://www.gnu.org/philosophy/"
 "free-sw.html\">Ашық бағдарлама</a> жасауға бел байлаған, дүниежүзілік KDE "
@@ -5418,16 +5459,26 @@ msgstr ""
 "жобасы туралы толығырақ білу үшін <a href=\"http://www.kde.org/\">http://www."
 "kde.org</a> сайтын қараңыз."
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:69
+#: kdeui/dialogs/kaboutkdedialog.cpp:71
+#, fuzzy
+#| msgid ""
+#| "Software can always be improved, and the KDE Team is ready to do so. "
+#| "However, you - the user - must tell us when something does not work as "
+#| "expected or could be done better.<br /><br />The K Desktop Environment "
+#| "has a bug tracking system. Visit <a href=\"http://bugs.kde.org/\">http://"
+#| "bugs.kde.org</a> or use the \"Report Bug...\" dialog from the \"Help\" "
+#| "menu to report bugs.<br /><br />If you have a suggestion for improvement "
+#| "then you are welcome to use the bug tracking system to register your "
+#| "wish. Make sure you use the severity called \"Wishlist\"."
 msgid ""
-"Software can always be improved, and the KDE Team is ready to do so. "
+"<html>Software can always be improved, and the KDE Team is ready to do so. "
 "However, you - the user - must tell us when something does not work as "
-"expected or could be done better.<br /><br />The K Desktop Environment has a "
-"bug tracking system. Visit <a href=\"http://bugs.kde.org/\">http://bugs.kde."
-"org</a> or use the \"Report Bug...\" dialog from the \"Help\" menu to report "
-"bugs.<br /><br />If you have a suggestion for improvement then you are "
-"welcome to use the bug tracking system to register your wish. Make sure you "
-"use the severity called \"Wishlist\"."
+"expected or could be done better.<br><br>The K Desktop Environment has a bug "
+"tracking system. Visit <a href=\"http://bugs.kde.org/\">http://bugs.kde.org</"
+"a> or use the \"Report Bug...\" dialog from the \"Help\" menu to report bugs."
+"<br><br>If you have a suggestion for improvement then you are welcome to use "
+"the bug tracking system to register your wish. Make sure you use the "
+"severity called \"Wishlist\".</html>"
 msgstr ""
 "KDE командасы әрдайым бағдарламалық жасауын одан әрі жетілдіруге дайын. "
 "Бірақ ол үшін пайдаланушылар бағдарламалардың кайсы қай кезде дұрыс "
@@ -5439,16 +5490,26 @@ msgstr ""
 "хабарлау жүйесін қолдануға шақырамыз. Ұсыныс жібергенде хабарыңызға \"Тілек"
 "\" дәрежесін беруге ұмытпаңыз."
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:86
+#: kdeui/dialogs/kaboutkdedialog.cpp:88
+#, fuzzy
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"http://www.kde.org/jobs/\">http://www."
+#| "kde.org/jobs/</a> for information on some projects in which you can "
+#| "participate.<br /><br />If you need more information or documentation, "
+#| "then a visit to <a href=\"http://techbase.kde.org/\">http://techbase.kde."
+#| "org</a> will provide you with what you need."
 msgid ""
-"You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
-"provide graphics, themes, sounds, and improved documentation. You decide!"
-"<br /><br />Visit <a href=\"http://www.kde.org/jobs/\">http://www.kde.org/"
-"jobs/</a> for information on some projects in which you can participate.<br /"
-"><br />If you need more information or documentation, then a visit to <a "
-"href=\"http://techbase.kde.org/\">http://techbase.kde.org</a> will provide "
-"you with what you need."
+"<html>You do not have to be a software developer to be a member of the KDE "
+"team. You can join the national teams that translate program interfaces. You "
+"can provide graphics, themes, sounds, and improved documentation. You decide!"
+"<br><br>Visit <a href=\"http://www.kde.org/jobs/\">http://www.kde.org/jobs/</"
+"a> for information on some projects in which you can participate.<br><br>If "
+"you need more information or documentation, then a visit to <a href=\"http://"
+"techbase.kde.org/\">http://techbase.kde.org</a> will provide you with what "
+"you need.</html>"
 msgstr ""
 "KDE командасына қосылу үшін программист болу міндет емес. Бағдарламалардың "
 "интерфейсін аударатын ұлттық командаңызға қосылуға болады. Сонымен қатар "
@@ -5458,7 +5519,7 @@ msgstr ""
 "A> сайтын қараңыз.<br /><br />Толығырақ мәлімет не құжаттар үшін <a href="
 "\"http://techbase.kde.org/\">http://techbase.kde.org</a> сайтын қараңыз."
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:106
+#: kdeui/dialogs/kaboutkdedialog.cpp:108
 #, fuzzy
 #| msgid ""
 #| "KDE is available free of charge, but making it is not free.<br><br>Thus, "
@@ -5473,16 +5534,17 @@ msgstr ""
 #| "www.kde.org/support/\">http://www.kde.org/support/</a>.<br /><br />Thank "
 #| "you very much in advance for your support."
 msgid ""
-"KDE is available free of charge, but making it is not free.<br /><br />Thus, "
-"the KDE team formed the KDE e.V., a non-profit organization legally founded "
-"in Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
-"financial matters. See <a href=\"http://www.kde-ev.org/\">http://www.kde-ev."
-"org</a> for information on the KDE e.V.<br /><br />The KDE team does need "
-"financial support. Most of the money is used to reimburse members and others "
-"on expenses they experienced when contributing to KDE. You are encouraged to "
-"support KDE through a financial donation, using one of the ways described at "
-"<a href=\"http://www.kde.org/support/\">http://www.kde.org/support/</a>.<br /"
-"><br />Thank you very much in advance for your support."
+"<html>KDE is available free of charge, but making it is not free."
+"<br><br>Thus, the KDE team formed the KDE e.V., a non-profit organization "
+"legally founded in Tuebingen, Germany. The KDE e.V. represents the KDE "
+"project in legal and financial matters. See <a href=\"http://www.kde-ev.org/"
+"\">http://www.kde-ev.org</a> for information on the KDE e.V.<br><br>The KDE "
+"team does need financial support. Most of the money is used to reimburse "
+"members and others on expenses they experienced when contributing to KDE. "
+"You are encouraged to support KDE through a financial donation, using one of "
+"the ways described at <a href=\"http://www.kde.org/support/\">http://www.kde."
+"org/support/</a>.<br><br>Thank you very much in advance for your support.</"
+"html>"
 msgstr ""
 "KDE тегін таратылады, бірақ оны жасау шығындары бар.<br><br>Сондықтан KDE "
 "жобасы заң және қаржы қатынастар тұлғасы ретінде қорғау үшін KDE командасы "
@@ -5494,20 +5556,20 @@ msgstr ""
 "support/</a> сайтында көрсетілген бір жолымен көрсетуге болады.<br /><br /"
 ">Қолдауыңызға алдын ала алғысымызды білдіреміз."
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:122
+#: kdeui/dialogs/kaboutkdedialog.cpp:124
 msgctxt "About KDE"
 msgid "&About"
 msgstr "KDE &туралы"
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:123
+#: kdeui/dialogs/kaboutkdedialog.cpp:125
 msgid "&Report Bugs or Wishes"
 msgstr "Қате не ұсыныс туралы &хабарлау"
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:124
+#: kdeui/dialogs/kaboutkdedialog.cpp:126
 msgid "&Join the KDE Team"
 msgstr "KDE &командасына қосылу"
 
-#: kdeui/dialogs/kaboutkdedialog.cpp:125
+#: kdeui/dialogs/kaboutkdedialog.cpp:127
 msgid "&Support KDE"
 msgstr "KDE жобасын қ&олдау"
 
@@ -5784,7 +5846,8 @@ msgstr "Мәлімет жоқ.<br />Бағдарлама KAboutData нысаны
 #, fuzzy, qt-format
 #| msgid ""
 #| "<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3</html>"
-msgid "<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3"
+msgid ""
+"<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3</html>"
 msgstr ""
 "<font size=\"5\">%1</font><br /><b>%2 нұсқасы</b><br />KDE %3 жүйесінде "
 "істейді</html>"
@@ -5832,12 +5895,12 @@ msgstr "Қателер туралы <a href=\"mailto:%1\">%2</a> дегенге 
 msgid "&Thanks To"
 msgstr "&Алғыстар"
 
-#: kdeui/dialogs/kaboutapplicationdialog.cpp:210
+#: kdeui/dialogs/kaboutapplicationdialog.cpp:211
 #: kde3support/kdeui/k3aboutapplication.cpp:164
 msgid "T&ranslation"
 msgstr "А&ударма"
 
-#: kdeui/dialogs/kaboutapplicationdialog.cpp:233
+#: kdeui/dialogs/kaboutapplicationdialog.cpp:234
 msgid "License Agreement"
 msgstr "Лицензиялық келісім"
 
@@ -8265,21 +8328,21 @@ msgstr "Таңбашалар көрінісі"
 msgid "Unknown View"
 msgstr "Беймәлім көрініс"
 
-#: kfile/kfileplacesview.cpp:275
+#: kfile/kfileplacesview.cpp:277
 #, qt-format
 msgid "&Edit '%1'..."
 msgstr "'%1' дегенді &өңдеу..."
 
-#: kfile/kfileplacesview.cpp:278
+#: kfile/kfileplacesview.cpp:280
 #, qt-format
 msgid "&Hide '%1'"
 msgstr "'%1' дегенді жасыру"
 
-#: kfile/kfileplacesview.cpp:285
+#: kfile/kfileplacesview.cpp:287
 msgid "&Show All Entries"
 msgstr "Бүкілін &көрсету"
 
-#: kfile/kfileplacesview.cpp:296
+#: kfile/kfileplacesview.cpp:298
 #, qt-format
 msgid "&Remove '%1'"
 msgstr "'%1' дегенді &өшіру"
@@ -10859,7 +10922,7 @@ msgstr ""
 "Лицензиясы:\n"
 "\t%1"
 
-#: kutils/kcmoduleproxy.cpp:133
+#: kutils/kcmoduleproxy.cpp:131
 msgid ""
 "<b>Changes in this section requires root access.</b><br />On applying your "
 "changes you will have to supply your root password."
@@ -10867,7 +10930,7 @@ msgstr ""
 "<b>Бұл модулге тек әкімші өзгеріс енгізе алады.</b><br />Бұл үшін root "
 "әкімшінің паролін келтіру керек."
 
-#: kutils/kcmoduleproxy.cpp:140
+#: kutils/kcmoduleproxy.cpp:138
 msgid ""
 "This section requires special permissions, probably for system-wide changes; "
 "therefore, it is required that you provide the root password to be able to "
@@ -10879,7 +10942,7 @@ msgstr ""
 "әкімшісінің паролін келтіру қажет. Егер root әкімшісінің паролін "
 "келтірмесеңіз бұл модуль өзгерістерін сақтай алмайды."
 
-#: kutils/kcmoduleproxy.cpp:161
+#: kutils/kcmoduleproxy.cpp:159
 #, qt-format
 msgctxt "Argument is application name"
 msgid "This configuration section is already opened in %1"
@@ -11812,6 +11875,10 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br />%3<br />Юникоды: %4<br />"
 "(Ондық түрде: %5)</qt>"
+
+#~ msgctxt "shortcut-key-delimiter"
+#~ msgid "+"
+#~ msgstr "+"
 
 #~ msgid "Current location"
 #~ msgstr "Назардағы орын"
