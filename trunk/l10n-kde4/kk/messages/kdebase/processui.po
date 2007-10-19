@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-17 05:38+0200\n"
+"POT-Creation-Date: 2007-10-19 05:38+0200\n"
 "PO-Revision-Date: 2007-09-21 19:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -186,21 +186,26 @@ msgstr ""
 
 #: ProcessModel.cc:464
 msgid ""
-"The priority that this process is being run with.  Ranges from 19 (very "
-"nice, least priority) to -19 (top priority)"
+"The priority that this process is being run with. Ranges from 19 (very nice, "
+"least priority) to -19 (top priority)"
 msgstr ""
 
 #: ProcessModel.cc:467
 #, no-c-format
 msgid ""
-"The CPU usage that this process is currently using.  This can be greater "
-"than 100% if you have more than one processor."
+"The CPU usage that this process is currently using. This can be greater than "
+"100% if you have more than one processor."
 msgstr ""
 
 #: ProcessModel.cc:469
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the amount of virtual memory space that the process is using, "
+#| "included shared libraries, graphics memory, files on disk, and so on.  "
+#| "This number is almost meaningless.</qt>"
 msgid ""
 "<qt>This is the amount of virtual memory space that the process is using, "
-"included shared libraries, graphics memory, files on disk, and so on.  This "
+"included shared libraries, graphics memory, files on disk, and so on. This "
 "number is almost meaningless.</qt>"
 msgstr ""
 "<qt>Бұл процесс жұмсаған виртуалды жад мөлшері, сол қатарда ортақ жиындары, "
@@ -216,19 +221,24 @@ msgstr ""
 #| "the memory use of a program.<br /><br /></qt>"
 msgid ""
 "<qt>This is the amount of real physical memory that this process is using by "
-"itself.  It does not include any swapped out memory, nor the code size of "
-"its shared libraries.  This is often the most useful figure to judge the "
-"memory use of a program.</qt>"
+"itself. It does not include any swapped out memory, nor the code size of its "
+"shared libraries. This is often the most useful figure to judge the memory "
+"use of a program.</qt>"
 msgstr ""
 "<qt>Бұл процесс өзі ғана жұмсаған шын физикалық жад көлемі.  Бұған своп жады "
 "да, ортақ жиындардың кодының мөлшері де кірмейді.  Бұл іс жүзіндегі "
 "бағдарламаның талап ететін жад мөлшерінің көрсеткіші.<br /><br /></qt>"
 
 #: ProcessModel.cc:473
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the amount of real physical memory that this process's shared "
+#| "libraries are using.  This memory is shared among all processes that use "
+#| "this library</qt>"
 msgid ""
 "<qt>This is the amount of real physical memory that this process's shared "
-"libraries are using.  This memory is shared among all processes that use "
-"this library</qt>"
+"libraries are using. This memory is shared among all processes that use this "
+"library</qt>"
 msgstr ""
 "<qt>Бұл процестың ортақ жиындары жұмсаған шын физикалық жад көлемі.  Бұл жад "
 "осы жиынды пайдаланатын барлық процестеріне ортақ</qt>"
@@ -348,8 +358,9 @@ msgid "<br />Running on: %1"
 msgstr "<br />Келесіде жегілген: %1"
 
 #: ProcessModel.cc:758
-#, kde-format
-msgid "<qt>This process was run with the following command:<br />%1</qt>"
+#, fuzzy, kde-format
+#| msgid "<qt>This process was run with the following command:<br />%1</qt>"
+msgid "<qt>This process was run with the following command:<br />%1"
 msgstr "<qt>Бұл процесс келесі командамен жегілген:<br />%1</qt>"
 
 #: ProcessModel.cc:760
@@ -358,11 +369,23 @@ msgid "<br /><br />Running on: %1"
 msgstr "<br /><br />Келесіде жегілген: %1"
 
 #: ProcessModel.cc:770
-#, kde-format
-msgid "Nice level: %1 (%2)"
+#, fuzzy, kde-format
+#| msgid "Nice level: %1 (%2)"
+msgid "<qt>Nice level: %1 (%2)"
 msgstr "Артықшылық деңгейі: %1 (%2)"
 
-#: ProcessModel.cc:772
+#: ProcessModel.cc:773 ProcessModel.cc:809
+#, fuzzy, kde-format
+#| msgid "<br />Nice level: %1 (%2)"
+msgid "<br/>I/O Nice level: %1 (%2)"
+msgstr "<br />Артықшылық деңгейі: %1 (%2)"
+
+#: ProcessModel.cc:774 ProcessModel.cc:810
+#, kde-format
+msgid "<br/>I/O Class: %1"
+msgstr ""
+
+#: ProcessModel.cc:780
 #, kde-format
 msgid ""
 "<qt>Process status: %1 %2<br />User CPU usage: %3%<br />System CPU usage: %4%"
@@ -371,7 +394,7 @@ msgstr ""
 "<qt>Процестың күй-жайы: %1 %2<br />Пайдаланушының процессорды жұмсауы: %3%"
 "<br />Жүейнің процессорды жұмсауы: %4%</qt>"
 
-#: ProcessModel.cc:781
+#: ProcessModel.cc:789
 #, kde-format
 msgid ""
 "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
@@ -381,105 +404,105 @@ msgstr ""
 "%2%<br />Жүйенің процессорды жалпы жұмсауы: %3%<br />Процессорды жалпы "
 "жұмсауы: %4%"
 
-#: ProcessModel.cc:790
+#: ProcessModel.cc:798
 #, kde-format
 msgid "<br /><br />CPU time spent running as user: %1 seconds"
 msgstr "<br /><br />Процесордың пайдаланушыға жұмсаған уақыты: %1 сек"
 
-#: ProcessModel.cc:794
+#: ProcessModel.cc:802
 #, kde-format
 msgid "<br />CPU time spent running in kernel: %1 seconds"
 msgstr "<br />Процесордың өзекте жұмсаған уақыты: %1 сек"
 
-#: ProcessModel.cc:798
+#: ProcessModel.cc:806
 #, kde-format
 msgid "<br />Nice level: %1 (%2)"
 msgstr "<br />Артықшылық деңгейі: %1 (%2)"
 
-#: ProcessModel.cc:812
+#: ProcessModel.cc:825
 #, kde-format
 msgid "Memory usage: %1 out of %2  (%3 %)<br />"
 msgstr "Жад жұмсауы: %1 жалпы %2 көлемінен (%3 %)<br />"
 
-#: ProcessModel.cc:814
+#: ProcessModel.cc:827
 #, kde-format
 msgid "Memory usage: %1<br />"
 msgstr "Жад жұмсауы: %1<br />"
 
-#: ProcessModel.cc:817
+#: ProcessModel.cc:830
 #, kde-format
 msgid "RSS Memory usage: %1 out of %2  (%3 %)"
 msgstr "RSS жад жұмсауы: %1 жалпы %2 көлемінен (%3 %)"
 
-#: ProcessModel.cc:819
+#: ProcessModel.cc:832
 #, kde-format
 msgid "RSS Memory usage: %1"
 msgstr "RSS жад жұмсауы: %1"
 
-#: ProcessModel.cc:824
+#: ProcessModel.cc:837
 msgid ""
 "<qt>Your system does not seem to have this information for us to read, sorry."
 "</qt>"
 msgstr "<qt>Өкінішке орай, жүйеңіз бұндай мәліметті бермейтін сияқты. </qt>"
 
-#: ProcessModel.cc:827
+#: ProcessModel.cc:840
 #, fuzzy, kde-format
 #| msgid "<br /><br />Shared library memory usage: %1 out of %2  (%3 %)"
 msgid "Shared library memory usage: %1 out of %2  (%3 %)"
 msgstr "<br /><br />Ортақ жиынның жұмсаған жады: %1 жалпы %2 көлемінен (%3 %)"
 
-#: ProcessModel.cc:829
+#: ProcessModel.cc:842
 #, fuzzy, kde-format
 #| msgid "<br /><br />Shared library memory usage: %1"
 msgid "Shared library memory usage: %1"
 msgstr "<br /><br />Ортақ жиынның жұмсаған жады: %1"
 
-#: ProcessModel.cc:1010
+#: ProcessModel.cc:1023
 msgctxt "process heading"
 msgid "Name"
 msgstr "Атауы"
 
-#: ProcessModel.cc:1011
+#: ProcessModel.cc:1024
 msgctxt "process heading"
 msgid "User Name"
 msgstr "Пайдаланушысы"
 
-#: ProcessModel.cc:1012
+#: ProcessModel.cc:1025
 msgctxt "process heading"
 msgid "Tty"
 msgstr "Tty"
 
-#: ProcessModel.cc:1013
+#: ProcessModel.cc:1026
 msgctxt "process heading"
 msgid "Niceness"
 msgstr "Артықшылығы"
 
-#: ProcessModel.cc:1014
+#: ProcessModel.cc:1027
 msgctxt "process heading"
 msgid "CPU %"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1015
+#: ProcessModel.cc:1028
 msgctxt "process heading"
 msgid "Virtual Size"
 msgstr "Виртуалды өлшемі"
 
-#: ProcessModel.cc:1016
+#: ProcessModel.cc:1029
 msgctxt "process heading"
 msgid "Memory"
 msgstr "Жады"
 
-#: ProcessModel.cc:1017
+#: ProcessModel.cc:1030
 msgctxt "process heading"
 msgid "Shared Mem"
 msgstr "Ортақ жады"
 
-#: ProcessModel.cc:1018
+#: ProcessModel.cc:1031
 msgctxt "process heading"
 msgid "Command"
 msgstr "Командасы"
 
-#: ProcessModel.cc:1020
+#: ProcessModel.cc:1033
 msgctxt "process heading"
 msgid "Title Name"
 msgstr "Аты"

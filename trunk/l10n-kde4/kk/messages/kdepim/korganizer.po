@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-17 05:39+0200\n"
+"POT-Creation-Date: 2007-10-19 05:40+0200\n"
 "PO-Revision-Date: 2007-04-28 20:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -42,7 +42,7 @@ msgstr "&Көшіріп алу"
 #. i18n: tag string
 #. i18n: file ./filteredit_base.ui line 35
 #: koeventpopupmenu.cpp:69 koeditorrecurrence.cpp:617 kotodoview.cpp:517
-#: calendarview.cpp:834 actionmanager.cpp:328 actionmanager.cpp:522
+#: calendarview.cpp:789 actionmanager.cpp:328 actionmanager.cpp:522
 #: actionmanager.cpp:1593 actionmanager.cpp:1622 rc.cpp:6 rc.cpp:2281
 #: koeditorattachments.cpp:425 journalview.cpp:191
 msgid "&Delete"
@@ -263,13 +263,13 @@ msgstr ""
 msgid "Invalid email address"
 msgstr "Жарамсыз эл.пошта адресі"
 
-#: koviewmanager.cpp:327
+#: koviewmanager.cpp:322
 #, fuzzy
 #| msgid "Merged calendar '%1'."
 msgid "Merged calendar"
 msgstr "'%1' күнтізбемен біріктірілді."
 
-#: koviewmanager.cpp:344
+#: koviewmanager.cpp:335
 msgid "Calendars Side by Side"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgstr "Жоспар не оқиға қайталанатын ережесіне
 #. i18n: file koeditoralarms_base.ui line 483
 #. i18n: tag string
 #. i18n: file ./koeditoralarms_base.ui line 483
-#: koeditorrecurrence.cpp:608 kodaymatrix.cpp:487 rc.cpp:154 rc.cpp:2173
+#: koeditorrecurrence.cpp:608 kodaymatrix.cpp:488 rc.cpp:154 rc.cpp:2173
 msgid "&Add"
 msgstr "Қ&осу"
 
@@ -1564,6 +1564,45 @@ msgstr "%1 дегенді қосу"
 msgid "Edit %1"
 msgstr "%1 дегенді өңдеу"
 
+#: timelabels.cpp:106
+#, fuzzy
+#| msgid "Time zone:"
+msgid "Timezone:"
+msgstr "Уақыт белдеуі:"
+
+#: timelabels.cpp:313
+#, fuzzy
+#| msgid "Edit Exceptions"
+msgid "&Edit timezones"
+msgstr "Ережеден тыстарды өзгерту"
+
+#: timelabels.cpp:314
+#, kde-format
+msgid "&Remove %1 timezone"
+msgstr ""
+
+#: timelabels.cpp:354
+#, fuzzy, kde-format
+#| msgid "Time zone:"
+msgid "Timezone: %1"
+msgstr "Уақыт белдеуі:"
+
+#: timelabels.cpp:356
+#, fuzzy, kde-format
+#| msgctxt "Column number %1"
+#| msgid "Column No. %1"
+msgid "Country Code: %1"
+msgstr "%1-ші бағанда"
+
+#: timelabels.cpp:359
+msgid "Abbreviations:"
+msgstr ""
+
+#: timelabels.cpp:367
+#, kde-format
+msgid "Comment:<br/>%1"
+msgstr ""
+
 #: freebusymanager.cpp:228
 #, fuzzy
 #| msgid ""
@@ -1970,12 +2009,12 @@ msgstr "Адрестерді таңдау"
 msgid "(EmptyName)"
 msgstr "(Атауы бос)"
 
-#: kodaymatrix.cpp:238 kocorehelper.cpp:44 komonthview.cpp:1012
+#: kodaymatrix.cpp:240 kocorehelper.cpp:44 komonthview.cpp:1012
 msgctxt "delimiter for joining holiday names"
 msgid ","
 msgstr ","
 
-#: kodaymatrix.cpp:480
+#: kodaymatrix.cpp:483
 msgid "&Move"
 msgstr "&Жылжыту"
 
@@ -1983,7 +2022,7 @@ msgstr "&Жылжыту"
 #. i18n: file timescaleedit_base.ui line 96
 #. i18n: tag string
 #. i18n: file ./timescaleedit_base.ui line 96
-#: kodaymatrix.cpp:493 rc.cpp:975 rc.cpp:2194
+#: kodaymatrix.cpp:491 rc.cpp:975 rc.cpp:2194
 msgid "&Cancel"
 msgstr "Қ&айту"
 
@@ -2139,38 +2178,17 @@ msgstr ""
 msgid "<qt><b>Other tasks I am watching:</b></qt>"
 msgstr ""
 
-#: koagendaview.cpp:198
-#, fuzzy
-#| msgid "Time zone:"
-msgid "Timezone:"
-msgstr "Уақыт белдеуі:"
-
-#: koagendaview.cpp:200
-msgid "Calendar display timezone:"
-msgstr ""
-
-#: koagendaview.cpp:406
-#, fuzzy
-#| msgid "Edit Exceptions"
-msgid "&Edit timezones"
-msgstr "Ережеден тыстарды өзгерту"
-
-#: koagendaview.cpp:407
-#, kde-format
-msgid "&Remove %1 timezone"
-msgstr ""
-
-#: koagendaview.cpp:639 koagendaview.cpp:1222
-msgid "All Day"
-msgstr "Толық күн"
-
-#: koagendaview.cpp:965
+#: koagendaview.cpp:491
 #, fuzzy, kde-format
 msgctxt "short_weekday date (e.g. Mon 13)"
 msgid "%1 %2"
 msgstr "%1 - %2"
 
-#: koagendaview.cpp:1881
+#: koagendaview.cpp:741
+msgid "All Day"
+msgstr "Толық күн"
+
+#: koagendaview.cpp:1412
 msgid "Unable to modify this to-do, because it cannot be locked."
 msgstr "Жоспар өзгертілмеді, өйткені ол тұйық бола алмайды."
 
@@ -2269,7 +2287,7 @@ msgstr ""
 msgid "Birthday"
 msgstr "Туған күн"
 
-#: calendarview.cpp:268
+#: calendarview.cpp:226
 msgid ""
 "<p><em>No Item Selected</em></p><p>Select an event, to-do or journal entry "
 "to view its details here.</p>"
@@ -2277,7 +2295,7 @@ msgstr ""
 "<p><em>Ештеңе таңдалмаған</em></p><p>Егжей-тегжейін қарау үшін оқиға, жоспар "
 "не күнделік жазуын таңдаңыз.</p>"
 
-#: calendarview.cpp:274
+#: calendarview.cpp:232
 msgid ""
 "View the details of events, journal entries or to-dos selected in "
 "KOrganizer's main view here."
@@ -2285,12 +2303,12 @@ msgstr ""
 "Мұнда KOrganizer-дің негігі көрінісінде таңдалған оқиғаның, күнделік "
 "жазуының не жоспардың егжей-тегжейін көруге болады."
 
-#: calendarview.cpp:443
+#: calendarview.cpp:401
 #, kde-format
 msgid "Could not load calendar '%1'."
 msgstr "'%1' күнтізбесі жүктелмеді."
 
-#: calendarview.cpp:643
+#: calendarview.cpp:598
 #, fuzzy
 msgid ""
 "The time zone setting was changed. Do you want to keep the absolute time of "
@@ -2300,29 +2318,29 @@ msgstr ""
 "Уақыт белдеуі өзгертілді. Күнтізбеңізде нақты уақыт сақталып, уақыт белдеуге "
 "еріп өзертілсін бе, әлі жазыған түрде қала берсін бе?"
 
-#: calendarview.cpp:650
+#: calendarview.cpp:605
 msgid "Keep Absolute Times?"
 msgstr "Нақты уақыт өзгермесін бе?"
 
-#: calendarview.cpp:651
+#: calendarview.cpp:606
 msgid "Keep Times"
 msgstr "Нақты уақыт қалсын"
 
-#: calendarview.cpp:652
+#: calendarview.cpp:607
 msgid "Move Times"
 msgstr "Жазылғаны қалсын"
 
-#: calendarview.cpp:706
+#: calendarview.cpp:661
 #, fuzzy, kde-format
 msgid "Todo completed: %1 (%2)"
 msgstr "Жоспар орындалды: %1 (%2)"
 
-#: calendarview.cpp:716
+#: calendarview.cpp:671
 #, kde-format
 msgid "Journal of %1"
 msgstr "%1 күнделігі"
 
-#: calendarview.cpp:771
+#: calendarview.cpp:726
 #, kde-format
 msgid ""
 "The item \"%1\" is filtered by your current filter rules, so it will be "
@@ -2330,97 +2348,97 @@ msgid ""
 msgstr ""
 "\"%1\" деген қолданыстағы сүзгіден өтпей, көріністе жасырылып көретілмейді."
 
-#: calendarview.cpp:774
+#: calendarview.cpp:729
 msgid "Filter Applied"
 msgstr "Сүзгі қолданылды"
 
-#: calendarview.cpp:832
+#: calendarview.cpp:787
 #, kde-format
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "\"%1\" мүлдем өшіріледі."
 
-#: calendarview.cpp:833 calendarview.cpp:2051 calendarview.cpp:2115
-#: calendarview.cpp:2126 kojournaleditor.cpp:206 koeditorattachments.cpp:694
+#: calendarview.cpp:788 calendarview.cpp:2001 calendarview.cpp:2065
+#: calendarview.cpp:2076 kojournaleditor.cpp:206 koeditorattachments.cpp:694
 #: koeventeditor.cpp:369 kotodoeditor.cpp:341
 msgid "KOrganizer Confirmation"
 msgstr "KOrganizer құптауы"
 
-#: calendarview.cpp:1169
+#: calendarview.cpp:1124
 msgid ""
 "Unable to turn sub-to-do into a top-level to-do, because it cannot be locked."
 msgstr ""
 "Ішкі жоспар дербес жоспарға айналдырылмады, өйткені ол тұйық бола алмайды."
 
-#: calendarview.cpp:1192
+#: calendarview.cpp:1147
 msgid "Make sub-to-dos independent"
 msgstr "Жоспарды бөлек қылу"
 
-#: calendarview.cpp:1258
+#: calendarview.cpp:1213
 msgid "Dissociate occurrence"
 msgstr "Оқиғаны бөліп алу"
 
-#: calendarview.cpp:1269
+#: calendarview.cpp:1224
 msgid "Dissociating the occurrence failed."
 msgstr "Оқиғаны бөліп алу қатесі."
 
-#: calendarview.cpp:1270 calendarview.cpp:1300
+#: calendarview.cpp:1225 calendarview.cpp:1255
 msgid "Dissociating Failed"
 msgstr "Бөліп алу қатесі"
 
-#: calendarview.cpp:1287
+#: calendarview.cpp:1242
 msgid "Dissociate future occurrences"
 msgstr "Болашақ қайталануларды бөлек қылу"
 
-#: calendarview.cpp:1299
+#: calendarview.cpp:1254
 msgid "Dissociating the future occurrences failed."
 msgstr "Болашақ қайталануларды бөліп алу қатесі."
 
-#: calendarview.cpp:1314 calendarview.cpp:1385 calendarview.cpp:1448
+#: calendarview.cpp:1269 calendarview.cpp:1340 calendarview.cpp:1403
 msgid "No item selected."
 msgstr "Ештеңе таңдалмаған."
 
-#: calendarview.cpp:1334 calendarview.cpp:1397
+#: calendarview.cpp:1289 calendarview.cpp:1352
 msgid "The item information was successfully sent."
 msgstr "Нысан мәліметі жіберілді."
 
-#: calendarview.cpp:1335
+#: calendarview.cpp:1290
 msgid "Publishing"
 msgstr "Жариялау"
 
-#: calendarview.cpp:1337
+#: calendarview.cpp:1292
 #, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "'%1' деген жариялаланбады"
 
-#: calendarview.cpp:1398
+#: calendarview.cpp:1353
 #, fuzzy
 #| msgid "Go &Forward"
 msgid "Forwarding"
 msgstr "&Ілгерілеу"
 
-#: calendarview.cpp:1400
+#: calendarview.cpp:1355
 #, fuzzy, kde-format
 #| msgid "Unable to publish the item '%1'"
 msgid "Unable to forward the item '%1'"
 msgstr "'%1' деген жариялаланбады"
 
-#: calendarview.cpp:1425
+#: calendarview.cpp:1380
 msgid "The free/busy information was successfully sent."
 msgstr "Бос/істе мәліметі жіберілді."
 
-#: calendarview.cpp:1426 calendarview.cpp:1468
+#: calendarview.cpp:1381 calendarview.cpp:1423
 msgid "Sending Free/Busy"
 msgstr "Бос/Істе мәліметті жіберу"
 
-#: calendarview.cpp:1429
+#: calendarview.cpp:1384
 msgid "Unable to publish the free/busy data."
 msgstr "Бос/Істе деректер жарияланбады."
 
-#: calendarview.cpp:1453
+#: calendarview.cpp:1408
 msgid "The item has no attendees."
 msgstr "Қатысушылары белгіленбеді."
 
-#: calendarview.cpp:1464
+#: calendarview.cpp:1419
 #, kde-format
 msgid ""
 "The groupware message for item '%1'was successfully sent.\n"
@@ -2429,7 +2447,7 @@ msgstr ""
 "'%1' дегеннің біріккен жұмыс хабарламасы жіберілді.\n"
 "Әдісі: %2"
 
-#: calendarview.cpp:1475
+#: calendarview.cpp:1430
 #, fuzzy, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -2438,49 +2456,49 @@ msgid ""
 "Method: %2"
 msgstr "ұны %1 дегенге жылжытуға болмайды."
 
-#: calendarview.cpp:1548
+#: calendarview.cpp:1503
 msgid "*.ics|ICalendars"
 msgstr "*.ics|ICalendar күнтізбесі"
 
-#: calendarview.cpp:1564
+#: calendarview.cpp:1519
 msgid "The journal entries can not be exported to a vCalendar file."
 msgstr "Күнделік жазулары vCalendar файлына экспорт етілмейді."
 
-#: calendarview.cpp:1565
+#: calendarview.cpp:1520
 msgid "Data Loss Warning"
 msgstr "Деректер жоғалу туралы ескерту"
 
-#: calendarview.cpp:1566 actionmanager.cpp:1042
+#: calendarview.cpp:1521 actionmanager.cpp:1042
 msgid "Proceed"
 msgstr "Жалғастыру"
 
-#: calendarview.cpp:1576
+#: calendarview.cpp:1531
 msgid "*.vcs|vCalendars"
 msgstr "*.vcs|vCalendar күнтізбесі"
 
-#: calendarview.cpp:1601
+#: calendarview.cpp:1556
 msgid "&Previous Day"
 msgstr "&Алдыңғы күн"
 
-#: calendarview.cpp:1602 actionmanager.cpp:364 actionmanager.cpp:1322
+#: calendarview.cpp:1557 actionmanager.cpp:364 actionmanager.cpp:1322
 #, fuzzy, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
 msgstr[0] "Келесі %1 күн"
 
-#: calendarview.cpp:1604
+#: calendarview.cpp:1559
 msgid "&Previous Week"
 msgstr "&Алдыңғы апта"
 
-#: calendarview.cpp:1605
+#: calendarview.cpp:1560
 msgid "&Next Week"
 msgstr "&Келесі апта"
 
-#: calendarview.cpp:1700 calendarview.cpp:1734
+#: calendarview.cpp:1655 calendarview.cpp:1689
 msgid "No filter"
 msgstr "Сүзгісіз"
 
-#: calendarview.cpp:2046
+#: calendarview.cpp:1996
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -2490,20 +2508,20 @@ msgstr ""
 "\"%1\" дегенде ішкі жоспарлары бар. Ішкі жоспарларды бөліп алып тек осыны "
 "ғана өшірмексіз бе, әлде барлық ішкі жоспарларымен бірге өшірмексіз бе?"
 
-#: calendarview.cpp:2052
+#: calendarview.cpp:2002
 msgid "Delete Only This"
 msgstr "Тек осыны ғана өшіру"
 
-#: calendarview.cpp:2053 calendarview.cpp:2116
+#: calendarview.cpp:2003 calendarview.cpp:2066
 #, fuzzy
 msgid "Delete All"
 msgstr "Б&арлығын"
 
-#: calendarview.cpp:2055
+#: calendarview.cpp:2005
 msgid "Deleting sub-to-dos"
 msgstr "Ішкі жоспарларды өшіру"
 
-#: calendarview.cpp:2079
+#: calendarview.cpp:2029
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
@@ -2512,11 +2530,11 @@ msgstr ""
 "\"%1\" деген өшірілмейді - тек оқу үшін деп белгіленген. Бәлкім, ол тек оқу "
 "үшін ашылған күнтізбе ресурсы шығар."
 
-#: calendarview.cpp:2083
+#: calendarview.cpp:2033
 msgid "Removing not possible"
 msgstr "Өшіруге болмайды"
 
-#: calendarview.cpp:2112
+#: calendarview.cpp:2062
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
@@ -2525,7 +2543,7 @@ msgstr ""
 "\"%1\" деген бірнеше рет қайталанбақ; шынымен оны және оның қайталануларын "
 "өшірмексіз бе?"
 
-#: calendarview.cpp:2121
+#: calendarview.cpp:2071
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
@@ -2535,61 +2553,61 @@ msgstr ""
 "\"%1\" деген бірнеше рет қайталанбақ. Сіз %2 кезіне келіп тұрғаның, немесе "
 "барлық болашақтағы қайталануларын, немесе бүкіл қайталануларын өшірмексіз бе?"
 
-#: calendarview.cpp:2127
+#: calendarview.cpp:2077
 msgid "Delete C&urrent"
 msgstr "Келіп &тұрғанды"
 
-#: calendarview.cpp:2128
+#: calendarview.cpp:2078
 msgid "Delete &Future"
 msgstr "&Болашақтағыларын"
 
-#: calendarview.cpp:2129
+#: calendarview.cpp:2079
 msgid "Delete &All"
 msgstr "Б&арлығын"
 
-#: calendarview.cpp:2216
+#: calendarview.cpp:2166
 msgid "Delete all completed to-dos?"
 msgstr "Барлық орындалған жоспарлар өшірілсін бе?"
 
-#: calendarview.cpp:2217
+#: calendarview.cpp:2167
 msgid "Purge To-dos"
 msgstr "Жоспарларды кетіру"
 
-#: calendarview.cpp:2218
+#: calendarview.cpp:2168
 msgid "Purge"
 msgstr "Кетіру"
 
-#: calendarview.cpp:2222
+#: calendarview.cpp:2172
 msgid "Purging completed to-dos"
 msgstr "Орындалған жоспарларды кетіру"
 
-#: calendarview.cpp:2240
+#: calendarview.cpp:2190
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "Орындалмаған еңшілесі бар жоспарларды кетіруге болмайды."
 
-#: calendarview.cpp:2241
+#: calendarview.cpp:2191
 msgid "Delete To-do"
 msgstr "Жоспарды өшіру"
 
-#: calendarview.cpp:2256
+#: calendarview.cpp:2206
 msgid "Unable to edit item: it is locked by another process."
 msgstr "Нысанды өзгетуге болмайды: оны басқа процесс бұғаттаған."
 
-#: calendarview.cpp:2290
+#: calendarview.cpp:2240
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "Бұны %1 дегенге көшірмелеуге болмайды."
 
-#: calendarview.cpp:2291
+#: calendarview.cpp:2241
 msgid "Copying Failed"
 msgstr "Көшірмелеу жаңылысы"
 
-#: calendarview.cpp:2336
+#: calendarview.cpp:2286
 #, fuzzy, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "ұны %1 дегенге жылжытуға болмайды."
 
-#: calendarview.cpp:2337
+#: calendarview.cpp:2287
 msgid "Moving Failed"
 msgstr "Жылжыту жаңылысы"
 
@@ -8932,10 +8950,6 @@ msgstr "Болашақтағылар күнтізбеге енбеді. Өзге
 
 #~ msgid "All Visible Columns"
 #~ msgstr "Барлық көрсетілген бағандарда"
-
-#~ msgctxt "Column number %1"
-#~ msgid "Column No. %1"
-#~ msgstr "%1-ші бағанда"
 
 #~ msgid "S&earch:"
 #~ msgstr "Қайда &іздеу"
