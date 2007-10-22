@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-21 05:47+0200\n"
+"POT-Creation-Date: 2007-10-22 05:40+0200\n"
 "PO-Revision-Date: 2007-10-15 10:58+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -1776,7 +1776,7 @@ msgctxt "@info:whatsthis"
 msgid "Check to display the system tray icon whenever you start KDE."
 msgstr "KDE жегіленде жүйелік сөре таңбашасы болсын десеңіз осыны белгілеңіз."
 
-#: prefdlg.cpp:552
+#: prefdlg.cpp:552 alarmtimewidget.cpp:207
 #, fuzzy
 msgctxt "@label:listbox"
 msgid "Time zone:"
@@ -3079,7 +3079,7 @@ msgid ""
 "2</para>"
 msgstr "Ескертуді қайталаудың соңғы уақытын келтіріңіз."
 
-#: recurrenceedit.cpp:262
+#: recurrenceedit.cpp:262 alarmtimewidget.cpp:141
 #, fuzzy
 #| msgid "Any time"
 msgctxt "@option:check"
@@ -3961,133 +3961,111 @@ msgid ""
 "cancellation period"
 msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
 
-#: editdlg.cpp:91
+#: editdlg.cpp:88
+#, fuzzy, kde-format
+#| msgid "&Recurrence"
+msgctxt "@title:tab"
+msgid "&Recurrence - [%1]"
+msgstr "Қай&талану"
+
+#: editdlg.cpp:93
 #, fuzzy
 #| msgid "Show in KOrganizer"
 msgctxt "@option:check"
 msgid "Show in KOrganizer"
 msgstr "KOrganizer-де көрсетілсін"
 
-#: editdlg.cpp:197
+#: editdlg.cpp:199
 #, fuzzy
 msgctxt "@title:window"
 msgid "Archived Alarm [read-only]"
 msgstr "KAlarm-ды белсендіру"
 
-#: editdlg.cpp:198
+#: editdlg.cpp:200
 #, fuzzy
 #| msgid "View Alarm"
 msgctxt "@title:window"
 msgid "View Alarm"
 msgstr "Ескерту көрінісі"
 
-#: editdlg.cpp:204
+#: editdlg.cpp:206
 #, fuzzy
 #| msgid "Load Template..."
 msgctxt "@action:button"
 msgid "Load Template..."
 msgstr "Үлгіні жүктеу..."
 
-#: editdlg.cpp:215
+#: editdlg.cpp:217
 #, fuzzy
 #| msgid "Template name:"
 msgctxt "@label:textbox"
 msgid "Template name:"
 msgstr "Үлгі атауы:"
 
-#: editdlg.cpp:220
+#: editdlg.cpp:222
 #, fuzzy
 #| msgid "Enter the name of the alarm template"
 msgctxt "@info:whatsthis"
 msgid "Enter the name of the alarm template"
 msgstr "Ескерту үлгісінің атауын келтіріңіз"
 
-#: editdlg.cpp:228
+#: editdlg.cpp:230
 #, fuzzy
 #| msgid "&Alarm"
 msgctxt "@title:tab"
 msgid "&Alarm"
 msgstr "&Ескерту"
 
-#: editdlg.cpp:239
-#, fuzzy
-#| msgid "&Recurrence"
-msgctxt "@title:tab"
-msgid "&Recurrence"
-msgstr "Қай&талану"
-
-#: editdlg.cpp:248
+#: editdlg.cpp:250
 #, fuzzy
 #| msgid "Action"
 msgctxt "@title:group"
 msgid "Action"
 msgstr "Әрекет"
 
-#: editdlg.cpp:257
+#: editdlg.cpp:259
 #, fuzzy
 #| msgid "Deferred Alarm"
 msgctxt "@title:group"
 msgid "Deferred Alarm"
 msgstr "Кейінге қалдырылған ескерту"
 
-#: editdlg.cpp:262
+#: editdlg.cpp:264
 #, fuzzy
 #| msgid "Deferred to:"
 msgctxt "@label"
 msgid "Deferred to:"
 msgstr "Келесіге қалдыру:"
 
-#: editdlg.cpp:268
+#: editdlg.cpp:270
 #, fuzzy
 #| msgid "C&hange..."
 msgctxt "@action:button"
 msgid "Change..."
 msgstr "Ө&згерту..."
 
-#: editdlg.cpp:271
+#: editdlg.cpp:273
 #, fuzzy
 #| msgid "Change the alarm's deferred time, or cancel the deferral"
 msgctxt "@info:whatsthis"
 msgid "Change the alarm's deferred time, or cancel the deferral"
 msgstr "Ескертуді шегіндіру уақытын өзгерту немесе шегіндіруден айну"
 
-#: editdlg.cpp:283
-#, fuzzy
-#| msgid "Recurrence:"
-msgctxt "@label"
-msgid "Recurrence:"
-msgstr "Қайталану:"
-
-#: editdlg.cpp:287
-#, fuzzy
-#| msgid ""
-#| "How often the alarm recurs.\n"
-#| "The times shown are those configured in the Recurrence tab and in the "
-#| "Simple Repetition dialog."
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>How often the alarm recurs.</para><para>The times shown are those "
-"configured in the Recurrence tab for the recurrence and optional sub-"
-"repetition.</para>"
-msgstr ""
-"Ескертуді қайталау жиілігі.\n"
-"Бұл уақыт Қайталану қойындысында және Жай қайталау диалогында бапталады."
-
-#: editdlg.cpp:294 editdlg.cpp:361
+#: editdlg.cpp:284 editdlg.cpp:348
 #, fuzzy
 #| msgid "Time"
 msgctxt "@title:group"
 msgid "Time"
 msgstr "Уақыты"
 
-#: editdlg.cpp:302
+#: editdlg.cpp:292
 #, fuzzy
 #| msgid "&Default time"
 msgctxt "@option:radio"
 msgid "Default time"
 msgstr "Ә&деттегі уақыт"
 
-#: editdlg.cpp:305
+#: editdlg.cpp:295
 #, fuzzy
 #| msgid ""
 #| "Do not specify a start time for alarms based on this template. The normal "
@@ -4100,21 +4078,21 @@ msgstr ""
 "Осы үлгіні негіздеген ескертулердің бастау уақытын келтірудің қажеті жоқ. "
 "Әдеттегі бастау уақыты қолданылады."
 
-#: editdlg.cpp:313
+#: editdlg.cpp:303
 #, fuzzy
 #| msgid "Time:"
 msgctxt "@option:radio"
 msgid "Time:"
 msgstr "Уақыты:"
 
-#: editdlg.cpp:316
+#: editdlg.cpp:306
 #, fuzzy
 #| msgid "Specify a start time for alarms based on this template."
 msgctxt "@info:whatsthis"
 msgid "Specify a start time for alarms based on this template."
 msgstr "Осы үлгіні негіздеген ескертулердің бастау уақытын келтіріңіз."
 
-#: editdlg.cpp:322
+#: editdlg.cpp:312
 #, fuzzy, kde-format
 #| msgid "Enter the start time for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -4123,13 +4101,13 @@ msgid ""
 "1</para>"
 msgstr "Осы үлгіні негіздеген ескертулердің бастау уақытын келтіріңіз."
 
-#: editdlg.cpp:328
+#: editdlg.cpp:318
 #, fuzzy
 msgctxt "@option:radio"
 msgid "Date only"
 msgstr "Күні:"
 
-#: editdlg.cpp:331
+#: editdlg.cpp:321
 #, fuzzy
 #| msgid "Set the '%1' option for alarms based on this template."
 msgctxt "@info:whatsthis"
@@ -4137,14 +4115,14 @@ msgid ""
 "Set the <interface>Date</interface> option for alarms based on this template."
 msgstr "Осы үлгіні негіздеген ескертулердің '%1' параметрін орнатыңыз."
 
-#: editdlg.cpp:338
+#: editdlg.cpp:328 alarmtimewidget.cpp:148
 #, fuzzy
 #| msgid "Time from no&w:"
 msgctxt "@option:radio"
 msgid "Time from now:"
 msgstr "Қанша уақыттан к&ейін:"
 
-#: editdlg.cpp:342
+#: editdlg.cpp:332
 #, fuzzy
 #| msgid ""
 #| "Set alarms based on this template to start after the specified time "
@@ -4157,53 +4135,53 @@ msgstr ""
 "Осы үлгіні негіздеген ескертулер құрылған кезден кейін көрсетілген уақыт "
 "өткен соң жасалады."
 
-#: editdlg.cpp:349 alarmtimewidget.cpp:196
+#: editdlg.cpp:339 alarmtimewidget.cpp:159
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "<para>%1</para><para>%2</para>"
 msgstr ""
 
-#: editdlg.cpp:395
+#: editdlg.cpp:382
 #, fuzzy
 #| msgid "Check to copy the alarm into KOrganizer's calendar"
 msgctxt "@info:whatsthis"
 msgid "Check to copy the alarm into KOrganizer's calendar"
 msgstr "Ескертуді KOrganizer күнтізбесіне көшірмелеу үшін құсбегісін қойыңыз"
 
-#: editdlg.cpp:399
+#: editdlg.cpp:386
 #, fuzzy
 #| msgid "Schedule the alarm at the specified time."
 msgctxt "@info:whatsthis"
 msgid "Schedule the alarm at the specified time."
 msgstr "Ескертуді келтірілген уақытта жоспарлап қою."
 
-#: editdlg.cpp:791
+#: editdlg.cpp:778
 #, fuzzy
 #| msgid "You must enter a name for the alarm template"
 msgctxt "@info"
 msgid "You must enter a name for the alarm template"
 msgstr "Ескерту үлгісінің атауын келтіру керек"
 
-#: editdlg.cpp:795
+#: editdlg.cpp:782
 #, fuzzy
 #| msgid "Template name is already in use"
 msgctxt "@info"
 msgid "Template name is already in use"
 msgstr "Бұл үлгінің атауы қолданыста ғой"
 
-#: editdlg.cpp:838
+#: editdlg.cpp:825
 #, fuzzy
 #| msgid "Recurrence has already expired"
 msgctxt "@info"
 msgid "Recurrence has already expired"
 msgstr "Қайталану уақыты өткен ғой "
 
-#: editdlg.cpp:843
+#: editdlg.cpp:830
 msgctxt "@info"
 msgid "The alarm will never occur during working hours"
 msgstr ""
 
-#: editdlg.cpp:872
+#: editdlg.cpp:859
 #, fuzzy, kde-format
 #| msgid ""
 #| "Reminder period must be less than the recurrence interval, unless '%1' is "
@@ -4216,7 +4194,7 @@ msgstr ""
 "Егер '%1' құсбелгісі қойылса, алдын-ала еске салу мерзімі қайталану "
 "аралығынан қысқа болу керек."
 
-#: editdlg.cpp:886
+#: editdlg.cpp:873
 #, fuzzy
 #| msgid ""
 #| "Simple alarm repetition duration must be less than the recurrence "
@@ -4229,7 +4207,7 @@ msgstr ""
 "Жай қайталау мерзімі, ескертулерді қайталанудың аралығынан еске салу "
 "мерзімін алып тастағанан қысқа болуы керек"
 
-#: editdlg.cpp:893
+#: editdlg.cpp:880
 #, fuzzy
 #| msgid ""
 #| "Simple alarm repetition period must be in units of days or weeks for a "
@@ -4242,7 +4220,7 @@ msgstr ""
 "Тек күні ғана белгілеген ескерту үшін қайталау аралығы күн немесе апта "
 "түрінде болу керек"
 
-#: editdlg.cpp:923
+#: editdlg.cpp:910
 #, fuzzy
 msgctxt "@info"
 msgid "You must select a resource to save the alarm in"
@@ -4412,7 +4390,7 @@ msgstr "Дыбыс файлының орындау үнділігі"
 msgid "Message text to display"
 msgstr "Көрсететін ескерту мәтіні"
 
-#: alarmtimewidget.cpp:49
+#: alarmtimewidget.cpp:50
 #, fuzzy
 #| msgid ""
 #| "Enter the length of time (in hours and minutes) after the current time to "
@@ -4424,7 +4402,7 @@ msgid ""
 msgstr ""
 "Қанша уақыттан (сағат пен минуттан) кейін ескерту көрсетілетінін келтіріңіз."
 
-#: alarmtimewidget.cpp:81
+#: alarmtimewidget.cpp:82
 #, fuzzy
 #| msgid ""
 #| "For a simple repetition, enter the date/time of the first occurrence.\n"
@@ -4439,7 +4417,7 @@ msgstr ""
 "Егер қайталану орнатылса, бастау күн/уақыты сәйкес келетін бірінші қайталану "
 "кезге түзетіледі."
 
-#: alarmtimewidget.cpp:84
+#: alarmtimewidget.cpp:85
 #, fuzzy
 msgctxt "@info/plain"
 msgid "This uses KAlarm's default time zone, set in the Preferences dialog."
@@ -4447,53 +4425,42 @@ msgstr ""
 "%1\n"
 "Бұны Параметрлер диалогында орнатыңыз."
 
-#: alarmtimewidget.cpp:105
+#: alarmtimewidget.cpp:106
 #, fuzzy
 #| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
 msgid "Defer to date/time:"
 msgstr "Келесі күн/уақытқа ше&гіндіру:"
 
-#: alarmtimewidget.cpp:105
+#: alarmtimewidget.cpp:106
 #, fuzzy
+#| msgid "&Defer to date/time:"
 msgctxt "@option:radio"
-msgid "Date/time"
-msgstr "&Күн/уақыты:"
+msgid "At date/time:"
+msgstr "Келесі күн/уақытқа ше&гіндіру:"
 
-#: alarmtimewidget.cpp:107
+#: alarmtimewidget.cpp:108
 #, fuzzy
 #| msgid "Reschedule the alarm to the specified date and time."
 msgctxt "@info:whatsthis"
 msgid "Reschedule the alarm to the specified date and time."
 msgstr "Ескертуді келтірілген күн/уақытқа ауыстыру."
 
-#: alarmtimewidget.cpp:108
+#: alarmtimewidget.cpp:109
 #, fuzzy
-#| msgid "Schedule the alarm at the specified date and time."
+#| msgid "Next scheduled date and time of the alarm"
 msgctxt "@info:whatsthis"
-msgid "Schedule the alarm at the specified date and time."
-msgstr "Ескертуді келтірілген күн мен уақытқа жоспарлап қою."
+msgid "Specify the date, or date and time, to schedule the alarm."
+msgstr "Келесі ескертуінің күні мен уақыты"
 
-#: alarmtimewidget.cpp:124
-#, fuzzy
-msgctxt "@option:radio"
-msgid "Date"
-msgstr "Күні:"
-
-#: alarmtimewidget.cpp:126
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid "Schedule the alarm on the specified date."
-msgstr "Ескертуді келтірілген уақытта жоспарлап қою."
-
-#: alarmtimewidget.cpp:138
+#: alarmtimewidget.cpp:117
 #, fuzzy, kde-format
 #| msgid "Enter the date to schedule the alarm."
 msgctxt "@info:whatsthis"
 msgid "<para>Enter the date to schedule the alarm.</para><para>%1</para>"
 msgstr "Ескертудің күнін келтіріңіз."
 
-#: alarmtimewidget.cpp:150
+#: alarmtimewidget.cpp:128
 #, fuzzy, kde-format
 #| msgid "Enter the time to schedule the alarm."
 msgctxt "@info:whatsthis"
@@ -4502,19 +4469,57 @@ msgid ""
 "para>"
 msgstr "Ескертудің уақытын келтіріңіз."
 
-#: alarmtimewidget.cpp:161
+#: alarmtimewidget.cpp:144
+#, fuzzy
+#| msgid ""
+#| "Stop repeating the alarm after your first login on or after the specified "
+#| "end date"
+msgctxt "@info:whatsthis"
+msgid "Trigger the alarm at the first opportunity on the selected date."
+msgstr ""
+"Бірінші рет жүйеге кіргеннен кейін немесе келтірілген аяқтау күнінен кейін "
+"ескертуді қайталауды тоқтату"
+
+#: alarmtimewidget.cpp:148
+#, fuzzy
+#| msgid "Defer for time &interval:"
+msgctxt "@option:radio"
+msgid "Defer for time interval:"
+msgstr "Келесі уақыт &аралығына шегіндіру:"
+
+#: alarmtimewidget.cpp:150
+#, fuzzy
+#| msgid "Reschedule the alarm for the specified time interval after now."
+msgctxt "@info:whatsthis"
+msgid "Reschedule the alarm for the specified time interval after now."
+msgstr "Ескерту уақытын қазірден қанша уақыт аралығына қайта жоспарлап қою."
+
+#: alarmtimewidget.cpp:151
+#, fuzzy
+#| msgid "Schedule the alarm after the specified time interval from now."
+msgctxt "@info:whatsthis"
+msgid "Schedule the alarm after the specified time interval from now."
+msgstr "Ескерту уақытын қазірден қанша уақыт аралығына жоспарлап қою."
+
+#: alarmtimewidget.cpp:160
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>%1</para><para>%2</para><para>%3</para>"
+msgstr ""
+
+#: alarmtimewidget.cpp:210
 #, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Select the time zone to use for this alarm."
 msgstr "Ескертудің уақытын келтіріңіз."
 
-#: alarmtimewidget.cpp:165
+#: alarmtimewidget.cpp:215
 #, fuzzy
 msgctxt "@option:check"
 msgid "Ignore time zone"
 msgstr "Қалған уақыт"
 
-#: alarmtimewidget.cpp:168
+#: alarmtimewidget.cpp:218
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Check to use the local computer time, ignoring time zones.</"
@@ -4523,62 +4528,28 @@ msgid ""
 "unexpected times after daylight saving time shifts.</para>"
 msgstr ""
 
-#: alarmtimewidget.cpp:178
-#, fuzzy
-#| msgid "Defer for time &interval:"
-msgctxt "@option:radio"
-msgid "Defer for time interval:"
-msgstr "Келесі уақыт &аралығына шегіндіру:"
-
-#: alarmtimewidget.cpp:179
-#, fuzzy
-#| msgid "Reschedule the alarm for the specified time interval after now."
-msgctxt "@info:whatsthis"
-msgid "Reschedule the alarm for the specified time interval after now."
-msgstr "Ескерту уақытын қазірден қанша уақыт аралығына қайта жоспарлап қою."
-
-#: alarmtimewidget.cpp:184
-#, fuzzy
-#| msgid "Time from no&w:"
-msgctxt "@option:check"
-msgid "Time from now:"
-msgstr "Қанша уақыттан к&ейін:"
-
-#: alarmtimewidget.cpp:186
-#, fuzzy
-#| msgid "Schedule the alarm after the specified time interval from now."
-msgctxt "@info:whatsthis"
-msgid "Schedule the alarm after the specified time interval from now."
-msgstr "Ескерту уақытын қазірден қанша уақыт аралығына жоспарлап қою."
-
-#: alarmtimewidget.cpp:197
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<para>%1</para><para>%2</para><para>%3</para>"
-msgstr ""
-
-#: alarmtimewidget.cpp:279 alarmtimewidget.cpp:305
+#: alarmtimewidget.cpp:285 alarmtimewidget.cpp:311
 #, fuzzy
 #| msgid "Invalid time"
 msgctxt "@info"
 msgid "Invalid time"
 msgstr "Уақыты дұрыс емес"
 
-#: alarmtimewidget.cpp:298
+#: alarmtimewidget.cpp:304
 #, fuzzy
 #| msgid "Invalid date"
 msgctxt "@info"
 msgid "Invalid date"
 msgstr "Күні дұрыс емес"
 
-#: alarmtimewidget.cpp:319
+#: alarmtimewidget.cpp:325
 #, fuzzy
 #| msgid "Alarm date has already expired"
 msgctxt "@info"
 msgid "Alarm date has already expired"
 msgstr "Ескерту күні өтіп кеткен"
 
-#: alarmtimewidget.cpp:331
+#: alarmtimewidget.cpp:337
 #, fuzzy
 #| msgid "Alarm time has already expired"
 msgctxt "@info"
@@ -7539,3 +7510,50 @@ msgstr "Күні:"
 msgctxt "@info/plain Email subject"
 msgid "Subject:"
 msgstr "Тақырыбы:"
+
+#, fuzzy
+#~| msgid "Recurrence:"
+#~ msgctxt "@label"
+#~ msgid "Recurrence:"
+#~ msgstr "Қайталану:"
+
+#, fuzzy
+#~| msgid ""
+#~| "How often the alarm recurs.\n"
+#~| "The times shown are those configured in the Recurrence tab and in the "
+#~| "Simple Repetition dialog."
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>How often the alarm recurs.</para><para>The times shown are those "
+#~ "configured in the Recurrence tab for the recurrence and optional sub-"
+#~ "repetition.</para>"
+#~ msgstr ""
+#~ "Ескертуді қайталау жиілігі.\n"
+#~ "Бұл уақыт Қайталану қойындысында және Жай қайталау диалогында бапталады."
+
+#, fuzzy
+#~ msgctxt "@option:radio"
+#~ msgid "Date/time"
+#~ msgstr "&Күн/уақыты:"
+
+#, fuzzy
+#~| msgid "Schedule the alarm at the specified date and time."
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Schedule the alarm at the specified date and time."
+#~ msgstr "Ескертуді келтірілген күн мен уақытқа жоспарлап қою."
+
+#, fuzzy
+#~ msgctxt "@option:radio"
+#~ msgid "Date"
+#~ msgstr "Күні:"
+
+#, fuzzy
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Schedule the alarm on the specified date."
+#~ msgstr "Ескертуді келтірілген уақытта жоспарлап қою."
+
+#, fuzzy
+#~| msgid "Time from no&w:"
+#~ msgctxt "@option:check"
+#~ msgid "Time from now:"
+#~ msgstr "Қанша уақыттан к&ейін:"
