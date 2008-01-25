@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-24 10:47+0100\n"
+"POT-Creation-Date: 2008-01-25 09:39+0100\n"
 "PO-Revision-Date: 2007-07-07 11:03+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -20,7 +20,9 @@ msgid "Akregator"
 msgstr "Akregator"
 
 #: aboutdata.cpp:35
-msgid "A KDE Feed Aggregator"
+#, fuzzy
+#| msgid "A KDE Feed Aggregator"
+msgid "A KDE Feed Reader"
 msgstr "KDE-нің RSS ақпарларын оқу бағдарламасы"
 
 #: aboutdata.cpp:36
@@ -578,7 +580,7 @@ msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
 msgstr "<b>Мекен парақшасы:</b> <a href=\"%1\">%2</a>"
 
 #: articleformatter.cpp:175 articleformatter.cpp:176 articleformatter.cpp:371
-#: articleformatter.cpp:372 articlelistview.cpp:105 articlelistview.cpp:632
+#: articleformatter.cpp:372 articlelistview.cpp:106 articlelistview.cpp:646
 msgid "Date"
 msgstr "Күні"
 
@@ -595,15 +597,15 @@ msgstr "Түсініктемелері"
 msgid "Complete Story"
 msgstr "Толық әңгіме"
 
-#: articlelistview.cpp:101 articlelistview.cpp:630
+#: articlelistview.cpp:102 articlelistview.cpp:644
 msgid "Article"
 msgstr "Мақала"
 
-#: articlelistview.cpp:103 articlelistview.cpp:631
+#: articlelistview.cpp:104 articlelistview.cpp:645
 msgid "Feed"
 msgstr "Ақпар"
 
-#: articlelistview.cpp:239 articlelistview.cpp:673
+#: articlelistview.cpp:240 articlelistview.cpp:687
 msgid ""
 "<h2>Article list</h2>Here you can browse articles from the currently "
 "selected feed. You can also manage articles, as marking them as persistent "
@@ -617,7 +619,7 @@ msgstr ""
 "болады. Мақаланың веб парағын қойындысында немесе сыртқы шолғышта ашып қарай "
 "аласыз."
 
-#: articlelistview.cpp:323 articlelistview.cpp:956
+#: articlelistview.cpp:337 articlelistview.cpp:970
 msgid ""
 "<div align=center><h3>No matches</h3>Filter does not match any articles, "
 "please change your criteria and try again.</div>"
@@ -625,7 +627,7 @@ msgstr ""
 "<div align=center><h3>Сәйкестік жоқ</h3>Сүзгіден бір де бір мақала өтпеді, "
 "шартын өзгертіп, қайталап көріңіз.</div>"
 
-#: articlelistview.cpp:334 articlelistview.cpp:968
+#: articlelistview.cpp:348 articlelistview.cpp:982
 msgid ""
 "<div align=center><h3>No feed selected</h3>This area is article list. Select "
 "a feed from the feed list and you will see its articles here.</div>"
@@ -666,18 +668,31 @@ msgid "Open Link in External &Browser"
 msgstr "Сыртқы &шолғышта ашу"
 
 #: articleviewer.cpp:629
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1: Akregator version; %2: homepage URL; --- end of comment ---"
+#| msgid ""
+#| "<h2 style='margin-top: 0px;'>Welcome to Akregator %1</h2><p>Akregator is "
+#| "an RSS feed aggregator for the K Desktop Environment. Feed aggregators "
+#| "provide a convenient way to browse different kinds of content, including "
+#| "news, blogs, and other content from online sites. Instead of checking all "
+#| "your favorite web sites manually for updates, Akregator collects the "
+#| "content for you.</p><p>For more information about using Akregator, check "
+#| "the <a href=\"%2\">Akregator website</a>. If you do not want to see this "
+#| "page anymore, <a href=\"config:/disable_introduction\">click here</a>.</"
+#| "p><p>We hope that you will enjoy Akregator.</p>\n"
+#| "<p>Thank you,</p>\n"
+#| "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The Akregator Team</p>\n"
 msgctxt "%1: Akregator version; %2: homepage URL; --- end of comment ---"
 msgid ""
 "<h2 style='margin-top: 0px;'>Welcome to Akregator %1</h2><p>Akregator is an "
-"RSS feed aggregator for the K Desktop Environment. Feed aggregators provide "
-"a convenient way to browse different kinds of content, including news, "
-"blogs, and other content from online sites. Instead of checking all your "
-"favorite web sites manually for updates, Akregator collects the content for "
-"you.</p><p>For more information about using Akregator, check the <a href=\"%2"
-"\">Akregator website</a>. If you do not want to see this page anymore, <a "
-"href=\"config:/disable_introduction\">click here</a>.</p><p>We hope that you "
-"will enjoy Akregator.</p>\n"
+"feed reader for the K Desktop Environment. Feed readers provide a convenient "
+"way to browse different kinds of content, including news, blogs, and other "
+"content from online sites. Instead of checking all your favorite web sites "
+"manually for updates, Akregator collects the content for you.</p><p>For more "
+"information about using Akregator, check the <a href=\"%2\">Akregator "
+"website</a>. If you do not want to see this page anymore, <a href=\"config:/"
+"disable_introduction\">click here</a>.</p><p>We hope that you will enjoy "
+"Akregator.</p>\n"
 "<p>Thank you,</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The Akregator Team</p>\n"
 msgstr ""
@@ -830,17 +845,17 @@ msgstr "Қапшықтың атауы:"
 msgid "Fetching Feeds..."
 msgstr "Ақпарларды қабылдау..."
 
-#: mainwidget.cpp:1098
+#: mainwidget.cpp:1096
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>Шынымен <b>%1</b> мақаласын өшірмексіз бе?</qt>"
 
-#: mainwidget.cpp:1101
+#: mainwidget.cpp:1099
 #, kde-format
 msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr "<qt>Шынымен осы %1 таңдалған ақпарды өшірмексіз бе?</qt>"
 
-#: mainwidget.cpp:1104
+#: mainwidget.cpp:1102
 msgid "Delete Article"
 msgstr "Мақаланы өшіру"
 
@@ -2130,7 +2145,9 @@ msgid "Close the current tab"
 msgstr "Назардағы қойындыны жабу"
 
 #: trayicon.cpp:68
-msgid "Akregator - RSS Feed Reader"
+#, fuzzy
+#| msgid "Akregator - RSS Feed Reader"
+msgid "Akregator - Feed Reader"
 msgstr "Akregator - RSS ақпарларын оқу"
 
 #: trayicon.cpp:138
