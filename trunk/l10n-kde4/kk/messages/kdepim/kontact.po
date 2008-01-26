@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-26 09:53+0100\n"
 "PO-Revision-Date: 2007-04-08 10:38+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -122,7 +122,8 @@ msgstr "(c), 2003 Cornelius Schumacher"
 #: plugins/knotes/knotes_plugin.cpp:91
 #: plugins/korganizer/kcmapptsummary.cpp:140
 #: plugins/korganizer/kcmtodosummary.cpp:166
-#: plugins/newsticker/kcmkontactknt.cpp:476
+#: plugins/newsticker/kcmkontactknt.cpp:476 plugins/planner/kcmplanner.cpp:76
+#: plugins/planner/plannerplugin.cpp:66
 #: plugins/specialdates/kcmsdsummary.cpp:195
 #: plugins/specialdates/specialdates_plugin.cpp:65
 #: plugins/summary/kcmkontactsummary.cpp:119
@@ -470,7 +471,7 @@ msgstr "(C) 2001-2004 Kontact жасаушылары"
 msgid "Michael Brade"
 msgstr ""
 
-#: plugins/knotes/knotes_plugin.cpp:90
+#: plugins/knotes/knotes_plugin.cpp:90 plugins/planner/plannerplugin.cpp:65
 #: plugins/specialdates/specialdates_plugin.cpp:64
 msgid "Current Maintainer"
 msgstr ""
@@ -494,12 +495,14 @@ msgstr "Болашақтағы оқиғалар"
 
 #: plugins/korganizer/apptsummarywidget.cpp:193
 #: plugins/korganizer/todosummarywidget.cpp:212
+#: plugins/planner/planner.cpp:510
 #: plugins/specialdates/sdsummarywidget.cpp:455
 msgid "Today"
 msgstr "Бүгін"
 
 #: plugins/korganizer/apptsummarywidget.cpp:197
 #: plugins/korganizer/todosummarywidget.cpp:214
+#: plugins/planner/planner.cpp:514
 #: plugins/specialdates/sdsummarywidget.cpp:457
 msgid "Tomorrow"
 msgstr "Ертең"
@@ -518,6 +521,7 @@ msgid "now"
 msgstr "қазір"
 
 #: plugins/korganizer/apptsummarywidget.cpp:270
+#: plugins/planner/planner.cpp:414
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
@@ -530,10 +534,12 @@ msgid_plural "No upcoming events starting within the next %1 days"
 msgstr[0] "Келесі %1 күнде басталатын оқиға жоқ"
 
 #: plugins/korganizer/apptsummarywidget.cpp:317
+#: plugins/planner/planner.cpp:579
 msgid "&Edit Appointment..."
 msgstr "Кездесуді ө&згерту..."
 
 #: plugins/korganizer/apptsummarywidget.cpp:318
+#: plugins/planner/planner.cpp:581
 msgid "&Delete Appointment"
 msgstr "Кездесуді ө&шіру"
 
@@ -551,7 +557,7 @@ msgid "Synchronize Journal"
 msgstr ""
 
 #: plugins/korganizer/kcmapptsummary.cpp:81
-#: plugins/korganizer/kcmtodosummary.cpp:88
+#: plugins/korganizer/kcmtodosummary.cpp:88 plugins/planner/kcmplanner.cpp:107
 #: plugins/specialdates/kcmsdsummary.cpp:93
 msgid " day"
 msgid_plural " days"
@@ -572,7 +578,8 @@ msgid "(c) 2003 - 2004 Tobias Koenig"
 msgstr "(c) 2003 - 2004 Tobias Koenig"
 
 #: plugins/korganizer/kcmapptsummary.cpp:141
-#: plugins/korganizer/kcmtodosummary.cpp:167
+#: plugins/korganizer/kcmtodosummary.cpp:167 plugins/planner/kcmplanner.cpp:77
+#: plugins/planner/plannerplugin.cpp:64
 #: plugins/specialdates/kcmsdsummary.cpp:194
 #: plugins/specialdates/specialdates_plugin.cpp:64
 #, fuzzy
@@ -656,20 +663,24 @@ msgid_plural "No pending to-dos due within the next %1 days"
 msgstr[0] "Келесі %1 күнде бітетін жоспар жоқ"
 
 #: plugins/korganizer/todosummarywidget.cpp:335
+#: plugins/planner/planner.cpp:643
 #, fuzzy
 #| msgid "&Edit To-do.."
 msgid "&Edit To-do..."
 msgstr "Жоспарды &өңдеу..."
 
 #: plugins/korganizer/todosummarywidget.cpp:336
+#: plugins/planner/planner.cpp:645
 msgid "&Delete To-do"
 msgstr "Жоспарды ө&шіру"
 
 #: plugins/korganizer/todosummarywidget.cpp:342
+#: plugins/planner/planner.cpp:649
 msgid "&Mark To-do Completed"
 msgstr "Жоспарды біткен деп &белгілеу"
 
 #: plugins/korganizer/todosummarywidget.cpp:363
+#: plugins/planner/planner.cpp:751
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr "Өзгертілетін жоспар: \"%1\""
@@ -679,10 +690,13 @@ msgid "open-ended"
 msgstr "аяқталуы шектелмеген"
 
 #: plugins/korganizer/todosummarywidget.cpp:441
+#: plugins/planner/planner.cpp:235 plugins/planner/planner.cpp:256
+#: plugins/planner/planner.cpp:268 plugins/planner/planner.cpp:615
 msgid "overdue"
 msgstr "мерзімі өтіп кеткен"
 
 #: plugins/korganizer/todosummarywidget.cpp:443
+#: plugins/planner/planner.cpp:627
 msgid "starts today"
 msgstr "бүгін басталатын"
 
@@ -691,6 +705,7 @@ msgid "not-started"
 msgstr "басталмаған"
 
 #: plugins/korganizer/todosummarywidget.cpp:449
+#: plugins/planner/planner.cpp:635
 msgid "completed"
 msgstr "біткен"
 
@@ -803,6 +818,163 @@ msgstr ""
 msgid "Copy URL to Clipboard"
 msgstr "URL сілтемесін көшіріп алу"
 
+#: plugins/planner/kcmplanner.cpp:71
+msgid "kcmplanner"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:72
+#, fuzzy
+#| msgid "Newsticker Configuration Dialog"
+msgid "Schedule Configuration Dialog"
+msgstr "Жаңалық таспасын баптау диалогы"
+
+#: plugins/planner/kcmplanner.cpp:74
+#, fuzzy
+#| msgid "(c) 2004-2006 Allen Winter"
+msgid "(c) 2007-2008 Oral Timocin"
+msgstr "(c) 2004-2006 Allen Winter"
+
+#: plugins/planner/kcmplanner.cpp:146
+msgid "Calendar View"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:149
+#, fuzzy
+#| msgid " day"
+#| msgid_plural " days"
+msgid "One day"
+msgstr " күн"
+
+#: plugins/planner/kcmplanner.cpp:152
+#, fuzzy
+#| msgid " day"
+#| msgid_plural " days"
+msgid "Five days"
+msgstr " күн"
+
+#: plugins/planner/kcmplanner.cpp:155
+msgid "One week"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:158
+msgid "One month"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:181
+#, fuzzy
+#| msgid "Show Icons"
+msgid "Show To-dos?"
+msgstr "Таңбашалары көрсетілсін"
+
+#: plugins/planner/kcmplanner.cpp:184
+msgid "Show all to-dos"
+msgstr ""
+
+#: plugins/planner/kcmplanner.cpp:185
+#, fuzzy
+#| msgid "Pending To-dos"
+msgid "Overdue To-dos"
+msgstr "Болашақ жоспарлар"
+
+#: plugins/planner/kcmplanner.cpp:186
+#, fuzzy
+#| msgid "Pending To-dos"
+msgid "Starting to-dos"
+msgstr "Болашақ жоспарлар"
+
+#: plugins/planner/kcmplanner.cpp:187
+#, fuzzy
+#| msgid "Pending To-dos"
+msgid "Ending to-dos"
+msgstr "Болашақ жоспарлар"
+
+#: plugins/planner/kcmplanner.cpp:188
+#, fuzzy
+#| msgid "in-progress "
+msgid "To-dos in progress"
+msgstr "орындалуда "
+
+#: plugins/planner/kcmplanner.cpp:189
+#, fuzzy
+#| msgid "&Delete To-do"
+msgid "Completed To-dos"
+msgstr "Жоспарды ө&шіру"
+
+#: plugins/planner/kcmplanner.cpp:219
+#, fuzzy
+#| msgid "Upcoming Special Dates"
+msgid "Show Special Dates?"
+msgstr "Болашақ ерекше күндер"
+
+#: plugins/planner/kcmplanner.cpp:246
+#, fuzzy
+#| msgid "Active Calendar"
+msgid "Calendar"
+msgstr "Белсенді күнтізбе"
+
+#: plugins/planner/kcmplanner.cpp:247
+#, fuzzy
+#| msgid "Pending To-dos"
+msgid "To-dos"
+msgstr "Болашақ жоспарлар"
+
+#: plugins/planner/kcmplanner.cpp:248
+#, fuzzy
+#| msgid "Special Dates Summary"
+msgid "Special Dates"
+msgstr "Ерекше күндер тұжырымы"
+
+#: plugins/planner/planner.cpp:69
+msgid "Planner"
+msgstr ""
+
+#: plugins/planner/planner.cpp:548
+#, fuzzy, c-format
+#| msgid "No upcoming events starting within the next day"
+#| msgid_plural "No upcoming events starting within the next %1 days"
+msgid "No appointments pending within the next day"
+msgid_plural "No appointments pending within the next %n days"
+msgstr[0] "Келесі %1 күнде басталатын оқиға жоқ"
+
+#: plugins/planner/planner.cpp:598
+#, fuzzy, kde-format
+#| msgid "&Edit Appointment..."
+msgid "Edit Appointment: \"%1\""
+msgstr "Кездесуді ө&згерту..."
+
+#: plugins/planner/planner.cpp:622
+#, fuzzy
+#| msgid "in-progress "
+msgid "in progress"
+msgstr "орындалуда "
+
+#: plugins/planner/planner.cpp:632
+#, fuzzy
+#| msgid "starts today"
+msgid "ends today"
+msgstr "бүгін басталатын"
+
+#: plugins/planner/plannerplugin.cpp:59
+#, fuzzy
+#| msgid "Summary"
+msgid "Planner Summary"
+msgstr "Атауы"
+
+#: plugins/planner/plannerplugin.cpp:61
+#, fuzzy
+#| msgid "Kontact Summary"
+msgid "Kontact Planner Summary"
+msgstr "Kontact тұжырымдамасы"
+
+#: plugins/planner/plannerplugin.cpp:63
+#: plugins/specialdates/specialdates_plugin.cpp:63
+msgid "(c) 2004-2005 The KDE PIM Team"
+msgstr "(c) 2004-2005 KDE PIM тобы"
+
+#: plugins/planner/plannerplugin.cpp:68
+msgid "Oral Timocin"
+msgstr ""
+
 #: plugins/specialdates/kcmsdsummary.cpp:189
 msgid "kcmsdsummary"
 msgstr "kcmsdsummary"
@@ -891,10 +1063,6 @@ msgstr "Ерекше күндер тұжырымы"
 #: plugins/specialdates/specialdates_plugin.cpp:61
 msgid "Kontact Special Dates Summary"
 msgstr "Kontact-тың ерекше күндер тұжырымы"
-
-#: plugins/specialdates/specialdates_plugin.cpp:63
-msgid "(c) 2004-2005 The KDE PIM Team"
-msgstr "(c) 2004-2005 KDE PIM тобы"
 
 #: plugins/summary/kcmkontactsummary.cpp:86
 msgid "Name"
