@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-26 09:52+0100\n"
+"POT-Creation-Date: 2008-01-27 10:35+0100\n"
 "PO-Revision-Date: 2007-07-07 11:03+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -580,12 +580,13 @@ msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
 msgstr "<b>Мекен парақшасы:</b> <a href=\"%1\">%2</a>"
 
 #: articleformatter.cpp:175 articleformatter.cpp:176 articleformatter.cpp:371
-#: articleformatter.cpp:372 articlelistview.cpp:106 articlelistview.cpp:646
+#: articleformatter.cpp:372 articlelistview.cpp:107 articlelistview.cpp:707
+#: articlemodel.cpp:95
 msgid "Date"
 msgstr "Күні"
 
 #: articleformatter.cpp:183 articleformatter.cpp:184 articleformatter.cpp:380
-#: articleformatter.cpp:381
+#: articleformatter.cpp:381 articlemodel.cpp:97
 msgid "Author"
 msgstr "Авторы"
 
@@ -597,15 +598,21 @@ msgstr "Түсініктемелері"
 msgid "Complete Story"
 msgstr "Толық әңгіме"
 
-#: articlelistview.cpp:102 articlelistview.cpp:644
+#: articlelistview.cpp:103 articlelistview.cpp:705
 msgid "Article"
 msgstr "Мақала"
 
-#: articlelistview.cpp:104 articlelistview.cpp:645
+#: articlelistview.cpp:105 articlelistview.cpp:706
 msgid "Feed"
 msgstr "Ақпар"
 
-#: articlelistview.cpp:240 articlelistview.cpp:687
+#: articlelistview.cpp:183 subscriptionlistview.cpp:79
+#, fuzzy
+#| msgid "Comments"
+msgid "Columns"
+msgstr "Түсініктемелері"
+
+#: articlelistview.cpp:300 articlelistview.cpp:748
 msgid ""
 "<h2>Article list</h2>Here you can browse articles from the currently "
 "selected feed. You can also manage articles, as marking them as persistent "
@@ -619,7 +626,7 @@ msgstr ""
 "болады. Мақаланың веб парағын қойындысында немесе сыртқы шолғышта ашып қарай "
 "аласыз."
 
-#: articlelistview.cpp:337 articlelistview.cpp:970
+#: articlelistview.cpp:398 articlelistview.cpp:1031
 msgid ""
 "<div align=center><h3>No matches</h3>Filter does not match any articles, "
 "please change your criteria and try again.</div>"
@@ -627,13 +634,35 @@ msgstr ""
 "<div align=center><h3>Сәйкестік жоқ</h3>Сүзгіден бір де бір мақала өтпеді, "
 "шартын өзгертіп, қайталап көріңіз.</div>"
 
-#: articlelistview.cpp:348 articlelistview.cpp:982
+#: articlelistview.cpp:409 articlelistview.cpp:1043
 msgid ""
 "<div align=center><h3>No feed selected</h3>This area is article list. Select "
 "a feed from the feed list and you will see its articles here.</div>"
 msgstr ""
 "<div align=center><h3>Ақпар таңдалмаған</h3>Бұл ақпардың мақалаларың көретін "
 "беті. Ақпарды таңдасаңыз - мұнда мақалаларының тізімін көресіз.</div>"
+
+#: articlemodel.cpp:91
+#, fuzzy
+#| msgid "Article List"
+msgid "Article title"
+msgstr "Мақалалар тізімі"
+
+#: articlemodel.cpp:93
+#, fuzzy
+#| msgid "Feed Properties"
+msgid "Feed title"
+msgstr "Ақпардың қасиеттері"
+
+#: articlemodel.cpp:99
+msgid "Description"
+msgstr ""
+
+#: articlemodel.cpp:101
+#, fuzzy
+#| msgid "Comments"
+msgid "Content"
+msgstr "Түсініктемелері"
 
 #: articleviewer.cpp:120
 msgid "&Increase Font Sizes"
@@ -767,7 +796,7 @@ msgstr "Жүктеу доғарылған"
 msgid "Loading completed"
 msgstr "Жүктеу аяқталды"
 
-#: main.cpp:67 mainwidget.cpp:471
+#: main.cpp:67 mainwidget.cpp:475
 msgid "Imported Folder"
 msgstr "Импортталған қапшық"
 
@@ -817,7 +846,7 @@ msgstr "Мақалалар тізімі."
 msgid "Browsing area."
 msgstr "Қарау ауданы."
 
-#: mainwidget.cpp:302 mainwidget.cpp:686
+#: mainwidget.cpp:302 mainwidget.cpp:690
 msgid "Articles"
 msgstr "Мақалалар"
 
@@ -825,37 +854,37 @@ msgstr "Мақалалар"
 msgid "About"
 msgstr "Осы туралы"
 
-#: mainwidget.cpp:474
+#: mainwidget.cpp:478
 msgid "Add Imported Folder"
 msgstr "Импортталған қапшықты қосу"
 
-#: mainwidget.cpp:474
+#: mainwidget.cpp:478
 msgid "Imported folder name:"
 msgstr "Импортталған қапшықтың атауы:"
 
-#: mainwidget.cpp:793
+#: mainwidget.cpp:797
 msgid "Add Folder"
 msgstr "Импортталған қапшықты қосу"
 
-#: mainwidget.cpp:793
+#: mainwidget.cpp:797
 msgid "Folder name:"
 msgstr "Қапшықтың атауы:"
 
-#: mainwidget.cpp:890
+#: mainwidget.cpp:894
 msgid "Fetching Feeds..."
 msgstr "Ақпарларды қабылдау..."
 
-#: mainwidget.cpp:1096
+#: mainwidget.cpp:1100
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>Шынымен <b>%1</b> мақаласын өшірмексіз бе?</qt>"
 
-#: mainwidget.cpp:1099
+#: mainwidget.cpp:1103
 #, kde-format
 msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr "<qt>Шынымен осы %1 таңдалған ақпарды өшірмексіз бе?</qt>"
 
-#: mainwidget.cpp:1102
+#: mainwidget.cpp:1106
 msgid "Delete Article"
 msgstr "Мақаланы өшіру"
 
@@ -1389,25 +1418,25 @@ msgid "What the click with middle mouse button should do."
 msgstr "Тышқанның ортаңғы батырмасын түрткендегі әрекет."
 
 #. i18n: tag label
-#. i18n: file akregator.kcfg line 197
+#. i18n: file akregator.kcfg line 211
 #. i18n: tag label
-#. i18n: file ./akregator.kcfg line 197
+#. i18n: file ./akregator.kcfg line 211
 #: rc.cpp:158 rc.cpp:920
 msgid "Archive Backend"
 msgstr "Архивтеу бағдарламасы"
 
 #. i18n: tag whatsthis
-#. i18n: file akregator.kcfg line 201
+#. i18n: file akregator.kcfg line 215
 #. i18n: tag whatsthis
-#. i18n: file ./akregator.kcfg line 201
+#. i18n: file ./akregator.kcfg line 215
 #: rc.cpp:161 rc.cpp:923
 msgid "Whether to delay before marking an article as read upon selecting it."
 msgstr "Мақаланы оқылған деп белгілеудің кідірісі."
 
 #. i18n: tag whatsthis
-#. i18n: file akregator.kcfg line 205
+#. i18n: file akregator.kcfg line 219
 #. i18n: tag whatsthis
-#. i18n: file ./akregator.kcfg line 205
+#. i18n: file ./akregator.kcfg line 219
 #: rc.cpp:164 rc.cpp:926
 #, fuzzy
 #| msgid ""
@@ -2133,12 +2162,6 @@ msgstr "Келесі мақала: "
 #| msgid "utkal"
 msgid "Total"
 msgstr "utkal"
-
-#: subscriptionlistview.cpp:74
-#, fuzzy
-#| msgid "Comments"
-msgid "Columns"
-msgstr "Түсініктемелері"
 
 #: tabwidget.cpp:111
 msgid "Close the current tab"
