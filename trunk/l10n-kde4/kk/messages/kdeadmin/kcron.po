@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-24 13:27+0100\n"
+"POT-Creation-Date: 2008-02-25 13:33+0100\n"
 "PO-Revision-Date: 2007-09-27 16:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -14,6 +14,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/crontabWidget.cpp:127
+msgid "Show the following Cron:"
+msgstr ""
+
+#: src/crontabWidget.cpp:131
+msgid "Personal Cron"
+msgstr ""
+
+#: src/crontabWidget.cpp:136
+#, fuzzy
+#| msgid "(System Crontab)"
+msgid "System Cron"
+msgstr "(Жүйелік Crontab)"
+
+#: src/crontabWidget.cpp:140
+msgid "Cron of User:"
+msgstr ""
+
+#: src/crontabWidget.cpp:303
+#, kde-format
+msgctxt "user on host"
+msgid "%1 <placeholder>%2</placeholder> on %3"
+msgstr ""
+
+#: src/crontabWidget.cpp:308
+#, fuzzy
+#| msgid "Scheduled Tasks"
+msgid "Scheduled Tasks"
+msgstr "Жоспарланған тапсырмалар"
 
 #: src/crontablib/cthost.cpp:53
 msgid ""
@@ -93,21 +123,16 @@ msgstr "ай сайын "
 msgid "Every %1 minutes"
 msgstr ""
 
-#: src/crontablib/ctcron.cpp:67
+#: src/crontablib/ctcron.cpp:124
 msgid "(System Crontab)"
 msgstr "(Жүйелік Crontab)"
 
-#: src/crontablib/ctcron.cpp:78
-#, kde-format
-msgid "No password entry found for user '%1'"
-msgstr "'%1' пайдаланушының паролінің жазуы табылмады"
-
-#: src/crontablib/ctcron.cpp:92
+#: src/crontablib/ctcron.cpp:186
 #, kde-format
 msgid "No password entry found for uid '%1'"
 msgstr "UID '%1' пайдаланушының паролінің жазуы табылмады"
 
-#: src/crontablib/ctcron.cpp:279
+#: src/crontablib/ctcron.cpp:332
 msgid "An error occurred while updating crontab."
 msgstr "Crontab-ты жаңарту кезінде қате пайда болды."
 
@@ -351,72 +376,68 @@ msgstr "Сенбі"
 msgid "Sunday"
 msgstr "Жексенбі"
 
-#: src/tasksWidget.cpp:40
+#: src/tasksWidget.cpp:41
 msgid "<b>Tasks</b>"
 msgstr ""
 
-#: src/tasksWidget.cpp:45 src/variablesWidget.cpp:40
-msgid "Users"
-msgstr ""
-
-#: src/tasksWidget.cpp:48
+#: src/tasksWidget.cpp:51
 msgid "Scheduling"
 msgstr ""
 
-#: src/tasksWidget.cpp:49
+#: src/tasksWidget.cpp:52
 #, fuzzy
 #| msgid "Modify Task"
-msgid "Command Task"
+msgid "Command"
 msgstr "Тапсырманы өзгерту"
 
-#: src/tasksWidget.cpp:50 src/variablesWidget.cpp:45
+#: src/tasksWidget.cpp:53 src/variablesWidget.cpp:47
 #, fuzzy
 #| msgid "Sat"
 msgid "Status"
 msgstr "Сенбі"
 
-#: src/tasksWidget.cpp:51
+#: src/tasksWidget.cpp:54
 msgid "Description"
 msgstr "Сипаттама"
 
-#: src/tasksWidget.cpp:52
+#: src/tasksWidget.cpp:55
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "Scheduling Details"
 msgstr "Жоспарланған тапсырмалар"
 
-#: src/tasksWidget.cpp:70
+#: src/tasksWidget.cpp:73
 msgid "Task name:"
 msgstr "Тапсырманың атауы:"
 
-#: src/tasksWidget.cpp:71
+#: src/tasksWidget.cpp:74
 msgid "Program:"
 msgstr "Бағдарлама:"
 
-#: src/tasksWidget.cpp:72 src/variablesWidget.cpp:102
+#: src/tasksWidget.cpp:75 src/variablesWidget.cpp:105
 msgid "Description:"
 msgstr "Сиптаттамасы:"
 
-#: src/tasksWidget.cpp:77
+#: src/tasksWidget.cpp:80
 msgid "No tasks..."
 msgstr "Тапсырмалар жоқ..."
 
-#: src/tasksWidget.cpp:156
+#: src/tasksWidget.cpp:161
 msgctxt "Do not use any quote characters (') in this string"
 msgid "End of script execution. Type Enter or Ctrl+C to exit."
 msgstr ""
 
-#: src/tasksWidget.cpp:189
+#: src/tasksWidget.cpp:194
 #, fuzzy
 #| msgid "Tasks"
 msgid "New Task"
 msgstr "Тапсырмалар"
 
-#: src/kcron.cpp:85 src/kcron.cpp:315
+#: src/kcron.cpp:85 src/kcron.cpp:317
 msgid "Task Scheduler"
 msgstr "Тапсырма жоспарлағышы"
 
-#: src/kcron.cpp:111
+#: src/kcron.cpp:113
 #, kde-format
 msgid ""
 "The following error occurred while initializing KCron:\n"
@@ -431,7 +452,7 @@ msgstr ""
 "\n"
 "KCron жабылады.\n"
 
-#: src/kcron.cpp:126
+#: src/kcron.cpp:128
 msgid ""
 "You can use this application to schedule programs to run in the background.\n"
 "To schedule a new task now, click on the Tasks folder and select Edit/New "
@@ -441,37 +462,37 @@ msgstr ""
 "Жаңа тапсырманы жоспарлап қою үшін Таспсырмалар қапшығын түртіп, мәзірден "
 "\"Өңдеу->Жаңа\" дегенді таңдаңыз."
 
-#: src/kcron.cpp:126
+#: src/kcron.cpp:128
 msgid "Welcome to the Task Scheduler"
 msgstr "Тапсырма жоспарлағышқа қош келдіңіз"
 
-#: src/kcron.cpp:163
+#: src/kcron.cpp:165
 #, fuzzy
 #| msgid "No tasks..."
 msgctxt "Adds a new task"
 msgid "New &Task..."
 msgstr "Тапсырмалар жоқ..."
 
-#: src/kcron.cpp:168
+#: src/kcron.cpp:170
 #, fuzzy
 #| msgid "No variables..."
 msgctxt "Adds a new variable"
 msgid "New &Variable..."
 msgstr "Айнымалылар жоқ..."
 
-#: src/kcron.cpp:172
+#: src/kcron.cpp:174
 msgid "M&odify..."
 msgstr "Ө&згерту..."
 
-#: src/kcron.cpp:178
+#: src/kcron.cpp:180
 msgid "&Delete"
 msgstr "Ө&шіру"
 
-#: src/kcron.cpp:184
+#: src/kcron.cpp:186
 msgid "&Run Now"
 msgstr "Қ&азір орындалсын"
 
-#: src/kcron.cpp:229
+#: src/kcron.cpp:231
 #, fuzzy
 #| msgctxt "Kcron in ready for user input"
 #| msgid " Ready."
@@ -479,7 +500,7 @@ msgctxt "Ready for user input"
 msgid " Ready."
 msgstr " Дайын."
 
-#: src/kcron.cpp:250
+#: src/kcron.cpp:252
 msgid ""
 "Scheduled tasks have been modified.\n"
 "Do you want to save changes?"
@@ -487,7 +508,7 @@ msgstr ""
 "Жоспарланган тапсырма өзгертілген.\n"
 "Өзгерістерді сақтау керек пе?"
 
-#: src/kcron.cpp:282
+#: src/kcron.cpp:284
 #, fuzzy
 #| msgctxt "Kcron is saving the file to the hard drive"
 #| msgid "Saving..."
@@ -495,7 +516,7 @@ msgctxt "Saving the file to the hard drive"
 msgid "Saving..."
 msgstr "Сақтау..."
 
-#: src/kcron.cpp:284 src/kcron.cpp:293 src/kcron.cpp:304 src/kcron.cpp:310
+#: src/kcron.cpp:286 src/kcron.cpp:295 src/kcron.cpp:306 src/kcron.cpp:312
 #, fuzzy
 #| msgctxt "Kcron is ready for user input"
 #| msgid "Ready."
@@ -503,39 +524,39 @@ msgctxt "Ready for user input"
 msgid "Ready."
 msgstr "Дайын."
 
-#: src/kcron.cpp:291
+#: src/kcron.cpp:293
 msgid "Printing..."
 msgstr "Басып шығаруда..."
 
-#: src/kcron.cpp:302
+#: src/kcron.cpp:304
 msgid "Copying to clipboard..."
 msgstr "Алмасу буферіне көшірмелеуде..."
 
-#: src/kcron.cpp:308
+#: src/kcron.cpp:310
 msgid "Pasting from clipboard..."
 msgstr "Алмасу буферіндегіні орналастыруда..."
 
-#: src/kcron.cpp:325
+#: src/kcron.cpp:327
 #, fuzzy
 #| msgid "Create a new task or variable."
 msgid "Create a new task."
 msgstr "Жаңа тапсырма не айнымалыны құру."
 
-#: src/kcron.cpp:328
+#: src/kcron.cpp:330
 #, fuzzy
 #| msgid "Create a new task or variable."
 msgid "Create a new variable."
 msgstr "Жаңа тапсырма не айнымалыны құру."
 
-#: src/kcron.cpp:331
+#: src/kcron.cpp:333
 msgid "Edit the selected task or variable."
 msgstr "Таңдалған тапсырма не айнымалыны өзгерту."
 
-#: src/kcron.cpp:334
+#: src/kcron.cpp:336
 msgid "Delete the selected task or variable."
 msgstr "Таңдалған тапсырма не айнымалыны өшіру."
 
-#: src/kcron.cpp:337
+#: src/kcron.cpp:339
 msgid "Run the selected task now."
 msgstr "Таңдалған тапсырманы бірден орындау."
 
@@ -578,39 +599,39 @@ msgstr "Alberto G. Hierro"
 #: src/variablesWidget.cpp:35
 #, fuzzy
 #| msgid "Variables"
-msgid "<b>Variables</b>"
+msgid "<b>Environment Variables</b>"
 msgstr "Айнымалылар"
 
-#: src/variablesWidget.cpp:43
+#: src/variablesWidget.cpp:45
 #, fuzzy
 #| msgid "Variables"
 msgid "Variable"
 msgstr "Айнымалылар"
 
-#: src/variablesWidget.cpp:44
+#: src/variablesWidget.cpp:46
 msgid "Value"
 msgstr "Мәні"
 
-#: src/variablesWidget.cpp:46
+#: src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Co&mment:"
 msgid "Comment"
 msgstr "Түсінікте&ме:"
 
-#: src/variablesWidget.cpp:100
+#: src/variablesWidget.cpp:103
 msgctxt "The environmental variable name ie HOME, MAILTO etc"
 msgid "Variable:"
 msgstr "Айнымалы:"
 
-#: src/variablesWidget.cpp:101
+#: src/variablesWidget.cpp:104
 msgid "Value:"
 msgstr "Мәні:"
 
-#: src/variablesWidget.cpp:107
+#: src/variablesWidget.cpp:110
 msgid "No variables..."
 msgstr "Айнымалылар жоқ..."
 
-#: src/variablesWidget.cpp:137
+#: src/variablesWidget.cpp:142
 #, fuzzy
 #| msgid "Variables"
 msgid "New Variable"
@@ -637,10 +658,6 @@ msgstr "Бұғатталған."
 #: src/taskWidget.cpp:77
 msgid "Modify Task"
 msgstr "Тапсырманы өзгерту"
-
-#: src/ktprint.cpp:78
-msgid "Print Cron Tab"
-msgstr "Жоспарлар кестесін басып шығару"
 
 #: src/variableWidget.cpp:67
 msgctxt "The cron variable has been disabled"
@@ -832,6 +849,10 @@ msgstr "Айнымалының атауын келтіріңіз."
 msgid "<i>Please enter the variable value ...</i>"
 msgstr "Анымалының мәнін келтіріңіз."
 
+#: src/crontabPrinter.cpp:78
+msgid "Print Cron Tab"
+msgstr "Жоспарлар кестесін басып шығару"
+
 #: src/ktprintopt.cpp:25
 msgid "Cron Options"
 msgstr "Жаспарлау баптаулары"
@@ -853,6 +874,9 @@ msgstr "Сайран Киккарин"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
+
+#~ msgid "No password entry found for user '%1'"
+#~ msgstr "'%1' пайдаланушының паролінің жазуы табылмады"
 
 #~ msgctxt "Adds a new task or variable"
 #~ msgid "&New..."
