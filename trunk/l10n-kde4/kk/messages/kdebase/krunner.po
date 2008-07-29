@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-06-23 11:08+0200\n"
+"POT-Creation-Date: 2008-07-29 08:29+0200\n"
 "PO-Revision-Date: 2007-09-29 10:02+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -65,15 +65,19 @@ msgstr "Тек экран сақтаушысыны жегу"
 msgid "Only use the blank screen saver"
 msgstr "Тек бос экран сақтаушысы қолданылсын"
 
-#: lock/lockprocess.cc:764
+#: lock/main.cc:67
+msgid "start with plasma unlocked for configuring"
+msgstr ""
+
+#: lock/lockprocess.cc:792
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr "Бұғаты шешілмейтіндіктен сеанс бұғатталмайды:\n"
 
-#: lock/lockprocess.cc:768
+#: lock/lockprocess.cc:796
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "<i>kcheckpass</i> іске қосылмады."
 
-#: lock/lockprocess.cc:769
+#: lock/lockprocess.cc:797
 #, fuzzy
 #| msgid ""
 #| "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
@@ -81,36 +85,112 @@ msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr ""
 "<i>kcheckpass</i> жұмысын жасай алмайды. root SetUID орнатылмағаны мүмкін."
 
-#: lock/lockprocess.cc:812
+#: lock/lockprocess.cc:840
 msgid "No appropriate greeter plugin configured."
 msgstr "Керек сәлемдесу модулі бапталмаған."
 
-#: lock/lockdlg.cc:96
+#: lock/plasma/main.cpp:30
+#, fuzzy
+#| msgid "Enables the screen saver."
+msgid "Plasma widgets over the screensaver"
+msgstr "Экран сақтаушының жұмысын рұқсат ету."
+
+#: lock/plasma/main.cpp:36
+#, fuzzy
+#| msgid "Enables the screen saver."
+msgid "Plasma for the Screensaver"
+msgstr "Экран сақтаушының жұмысын рұқсат ету."
+
+#: lock/plasma/main.cpp:38
+msgid "Copyright 2006-2008, The KDE Team"
+msgstr ""
+
+#: lock/plasma/main.cpp:39
+msgid "Chani Armitage"
+msgstr ""
+
+#: lock/plasma/main.cpp:40 main.cpp:43
+msgid "Author and maintainer"
+msgstr "Авторы және желілдіруші"
+
+#: lock/plasma/main.cpp:42 main.cpp:42
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
+
+#: lock/plasma/main.cpp:43
+#, fuzzy
+#| msgid "Author and maintainer"
+msgid "Plasma Author and maintainer"
+msgstr "Авторы және желілдіруші"
+
+#: lock/plasma/main.cpp:45
+msgid "John Lions"
+msgstr ""
+
+#: lock/plasma/main.cpp:46
+msgid "In memory of his contributions, 1937-1998."
+msgstr ""
+
+#: lock/plasma/main.cpp:52
+msgid "Enables some cheats that are useful for debugging."
+msgstr ""
+
+#: lock/plasma/main.cpp:53
+msgid "Start unlocked for configuration."
+msgstr ""
+
+#: lock/plasma/saverview.cpp:67
+msgid "Hide Widgets"
+msgstr ""
+
+#: lock/plasma/saverview.cpp:122
+msgid "Add Widgets"
+msgstr ""
+
+#: lock/plasma/saverview.cpp:160
+msgid "Setup Mode - Screen is NOT locked"
+msgstr ""
+
+#: lock/plasma/plasmaapp.cpp:383
+#, fuzzy
+#| msgid "Show Taskmanager"
+msgid "Show plasma-overlay"
+msgstr "Тапсырма менеджері көрсетілсін"
+
+#: lock/plasma/containment/desktop.cpp:82
+msgid "Unlock Desktop"
+msgstr ""
+
+#: lock/plasma/containment/desktop.cpp:152
+msgid "Unlock Plasma Widgets"
+msgstr ""
+
+#: lock/lockdlg.cc:98
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Сеанс бұғатталған</b></nobr><br />"
 
-#: lock/lockdlg.cc:97
+#: lock/lockdlg.cc:99
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Сеансты %1 бұғаттаған</b></nobr><br />"
 
-#: lock/lockdlg.cc:108
+#: lock/lockdlg.cc:112
 msgid "Unl&ock"
 msgstr "&Бұғатты шешу"
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:114
 msgid "Sw&itch User..."
 msgstr "Пайдаланушыны &ауыстыру..."
 
-#: lock/lockdlg.cc:178
+#: lock/lockdlg.cc:182
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Бұғатты шешу жаңылысы</b>"
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:190
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Ескерту: Caps Lock қосылып тұр</b>"
 
-#: lock/lockdlg.cc:418
+#: lock/lockdlg.cc:422
 #, kde-format
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
@@ -119,11 +199,11 @@ msgstr ""
 "Аутентификация жүйесінің жаңылысынан экран бұғаты шешілмеді;\n"
 "krunner_lock процесін (pid %1) қолмен құрту керек."
 
-#: lock/lockdlg.cc:507
+#: lock/lockdlg.cc:511
 msgid "&Start New Session"
 msgstr "&Жаңа сеансты бастау"
 
-#: lock/lockdlg.cc:515
+#: lock/lockdlg.cc:519
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have chosen to open another desktop session instead of resuming the "
@@ -152,24 +232,24 @@ msgstr ""
 "қоса, KDE панелінің жане үстел мәзірлерінде сеанс араларында ауысу амалдарын "
 "таба аласыз."
 
-#: lock/lockdlg.cc:528
+#: lock/lockdlg.cc:532
 msgid "&Do not ask again"
 msgstr "&Бұл сұрақ ендігәрі қойылмасын"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Session"
 msgstr "Сеанс"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Location"
 msgstr "Орыны"
 
-#: lock/lockdlg.cc:612
+#: lock/lockdlg.cc:616
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Белсендету"
 
-#: lock/lockdlg.cc:621
+#: lock/lockdlg.cc:625
 msgid "Start &New Session"
 msgstr "&Жаңа сеансты бастау"
 
@@ -184,14 +264,6 @@ msgstr "Команданы жегу интерфейсі"
 #: main.cpp:41
 msgid "(c) 2006, Aaron Seigo"
 msgstr "(c) 2006, Aaron Seigo"
-
-#: main.cpp:42
-msgid "Aaron J. Seigo"
-msgstr "Aaron J. Seigo"
-
-#: main.cpp:43
-msgid "Author and maintainer"
-msgstr "Авторы және желілдіруші"
 
 #: interface.cpp:70 krunnerapp.cpp:141 krunnerapp.cpp:142
 msgid "Run Command"
@@ -228,7 +300,7 @@ msgid "KRunner Settings"
 msgstr "KRunner бұғаттауышы"
 
 #: configdialog.cpp:51
-msgid "Runners"
+msgid "Available Features"
 msgstr ""
 
 #. i18n: tag label
@@ -290,12 +362,12 @@ msgid ""
 "suspend them."
 msgstr ""
 
-#: rc.cpp:64
+#: rc.cpp:66
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Сайран Киккарин"
 
-#: rc.cpp:65
+#: rc.cpp:67
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
@@ -372,9 +444,6 @@ msgstr ""
 #~| msgid "Hide Options"
 #~ msgid "Hide &Options"
 #~ msgstr "Параметрлерін жасыру"
-
-#~ msgid "Show Taskmanager"
-#~ msgstr "Тапсырма менеджері көрсетілсін"
 
 #~ msgid "Command"
 #~ msgstr "Команда"
