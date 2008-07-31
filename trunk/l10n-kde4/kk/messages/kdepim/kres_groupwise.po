@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kres_groupwise\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-20 07:38+0200\n"
+"POT-Creation-Date: 2008-07-31 08:24+0200\n"
 "PO-Revision-Date: 2007-04-21 17:19+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -15,12 +15,22 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: kabc_resourcegroupwise.cpp:310
-#, fuzzy
-msgid "Downloading addressbook"
-msgstr "Күнтізбені жүктеп алу"
+#: kabc_resourcegroupwise.cpp:261
+#, fuzzy, kde-format
+#| msgid "Loading GroupWise resource %1"
+msgctxt "label for addressbook load progress"
+msgid "Loading GroupWise resource %1"
+msgstr "%1 GroupWise ресурсын жүктеу"
 
-#: kabc_resourcegroupwise.cpp:469
+#: kabc_resourcegroupwise.cpp:336
+msgid "Fetching System Address Book"
+msgstr "Жүйелік адрестік кітапшаны алу"
+
+#: kabc_resourcegroupwise.cpp:346
+msgid "Fetching User Address Books"
+msgstr "Пайдаланушының адрестік кітапшаны алу"
+
+#: kabc_resourcegroupwise.cpp:456 kabc_resourcegroupwise.cpp:471
 msgid "Updating System Address Book"
 msgstr "Жүйелік адрестік кітапшаны жаңарту"
 
@@ -73,9 +83,8 @@ msgid "Error parsing calendar data."
 msgstr "Күнтізбе деректерін талдау қатесі."
 
 #: kcal_resourcegroupwise.cpp:248
-msgid ""
-"Unable to login to server: TODO: return whole error list; see console output"
-msgstr ""
+msgid "Unable to login to server: "
+msgstr "Келесі серверге кіру болмады: "
 
 #: kcal_resourcegroupwise.cpp:282
 msgid "Added"
@@ -93,13 +102,13 @@ msgstr "Өшірілді"
 msgid "View User Settings"
 msgstr "Пайдаланушының параметрлері"
 
-#: kcal_resourcegroupwiseconfig.cpp:128
+#: kcal_resourcegroupwiseconfig.cpp:129
 msgid "GroupWise Settings"
 msgstr "GroupWise параметрлері"
 
 #. i18n: tag string
 #. i18n: file groupwisesettingswidgetbase.ui line 23
-#: rc.cpp:3 soap/contactconverter.cpp:259
+#: rc.cpp:3 soap/contactconverter.cpp:261
 msgid "Group"
 msgstr "Тобы"
 
@@ -125,7 +134,7 @@ msgstr "Бұғатталған"
 #. i18n: file kresources_kabc_groupwise.kcfg line 9
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 9
-#: rc.cpp:15 rc.cpp:57
+#: rc.cpp:15 rc.cpp:60
 msgid "Server URL"
 msgstr "Сервер URL-і"
 
@@ -133,7 +142,7 @@ msgstr "Сервер URL-і"
 #. i18n: file kresources_kabc_groupwise.kcfg line 10
 #. i18n: tag whatsthis
 #. i18n: file kresources_kcal_groupwise.kcfg line 10
-#: rc.cpp:18 rc.cpp:60
+#: rc.cpp:18 rc.cpp:63
 msgid "URL of SOAP interface of GroupWise server"
 msgstr "GroupWise серверінің SOAP интерфейсінің URL-і"
 
@@ -141,7 +150,7 @@ msgstr "GroupWise серверінің SOAP интерфейсінің URL-і"
 #. i18n: file kresources_kabc_groupwise.kcfg line 13
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 13
-#: rc.cpp:21 rc.cpp:63
+#: rc.cpp:21 rc.cpp:66
 msgid "User Name"
 msgstr "Пайдаланушы"
 
@@ -149,7 +158,7 @@ msgstr "Пайдаланушы"
 #. i18n: file kresources_kabc_groupwise.kcfg line 16
 #. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 16
-#: rc.cpp:24 rc.cpp:66 soap/soapdebug.cpp:46
+#: rc.cpp:24 rc.cpp:69 soap/soapdebug.cpp:46
 msgid "Password"
 msgstr "Паролі"
 
@@ -214,50 +223,52 @@ msgid "The last sequence number of the GW System Address Book held locally"
 msgstr "Жергілікті GW жүйелік адрестік кітапшасының соңғы тізбекті нөмірі"
 
 #. i18n: tag label
+#. i18n: file kresources_kabc_groupwise.kcfg line 51
+#: rc.cpp:57
+msgid "Applications which should load the System Address Book"
+msgstr "Жүйелік адрестік кітапшасының жүктейтін қолданбалар"
+
+#. i18n: tag label
 #. i18n: file kresources_kcal_groupwise.kcfg line 19
-#: rc.cpp:69
+#: rc.cpp:72
 msgid "TCP Port"
 msgstr "TCP порты"
 
-#: rc.cpp:70
+#: rc.cpp:73
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: rc.cpp:71
+#: rc.cpp:74
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: soap/contactconverter.cpp:246
+#: soap/contactconverter.cpp:249
 msgid "Resource"
 msgstr "Ресурсы"
 
-#: soap/groupwiseserver.cpp:132
+#: soap/groupwiseserver.cpp:345
+msgid "Login failed, but the GroupWise server did not report an error"
+msgstr "Кіру болмады, бірақ GroupWise сервері қате туралы хабарлаған жоқ"
+
+#: soap/groupwiseserver.cpp:1660
 #, kde-format
 msgid "Connect failed: %1."
 msgstr "Қосылым жаңылысы: %1."
 
-#: soap/groupwiseserver.cpp:320
-msgid "Login failed, but the GroupWise server did not report an error"
-msgstr "Кіру болмады, бірақ GroupWise сервері қате туралы хабарлаған жоқ"
-
-#: soap/groupwiseserver.cpp:1360
-msgid "SSL Error"
-msgstr "SSL қатесі"
-
-#: soap/gwjobs.cpp:110
+#: soap/gwjobs.cpp:123
 #, kde-format
 msgid "Unable to read GroupWise address book: %1"
 msgstr "GroupWise адрестік кітапшасы оқылмады: %1"
 
-#: soap/gwjobs.cpp:577
+#: soap/gwjobs.cpp:624
 #, kde-format
 msgid "Unable to read GroupWise address book: reading %1 returned no items."
 msgstr ""
 "GroupWise адрестік кітапшасы оқылмады: %1 оқу әрекеті ештеңе қайтармады."
 
-#: soap/incidenceconverter.cpp:217
+#: soap/incidenceconverter.cpp:233
 msgid "Novell GroupWise does not support locations for to-dos."
 msgstr "Novell GroupWise жоспардың орны дегенін белгілемейді."
 
@@ -318,8 +329,12 @@ msgstr "Бос/Істе мәліметті пайдаланушысы"
 msgid "Addressbook identifier"
 msgstr "Адрестік кітапшаның идентификаторы"
 
-#~ msgid "Unable to login to server: "
-#~ msgstr "Келесі серверге кіру болмады: "
+#, fuzzy
+#~ msgid "Downloading addressbook"
+#~ msgstr "Күнтізбені жүктеп алу"
+
+#~ msgid "SSL Error"
+#~ msgstr "SSL қатесі"
 
 #~ msgid ""
 #~ "_: NAME OF TRANSLATORS\n"
@@ -330,15 +345,3 @@ msgstr "Адрестік кітапшаның идентификаторы"
 #~ "_: EMAIL OF TRANSLATORS\n"
 #~ "Your emails"
 #~ msgstr "sairan@computer.org"
-
-#~ msgid "Loading GroupWise resource %1"
-#~ msgstr "%1 GroupWise ресурсын жүктеу"
-
-#~ msgid "Fetching System Address Book"
-#~ msgstr "Жүйелік адрестік кітапшаны алу"
-
-#~ msgid "Fetching User Address Books"
-#~ msgstr "Пайдаланушының адрестік кітапшаны алу"
-
-#~ msgid "Applications which should load the System Address Book"
-#~ msgstr "Жүйелік адрестік кітапшасының жүктейтін қолданбалар"
