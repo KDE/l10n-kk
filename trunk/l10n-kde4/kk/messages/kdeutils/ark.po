@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-08 08:24+0200\n"
+"POT-Creation-Date: 2008-08-09 09:49+0200\n"
 "PO-Revision-Date: 2007-04-27 10:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -15,13 +15,13 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: app/batchextract.cpp:85 app/batchextract.cpp:106
+#: app/batchextract.cpp:93 app/batchextract.cpp:114
 #, fuzzy
 #| msgid "Save Archive?"
 msgid "Source archive"
 msgstr "Архив сақталсын ба?"
 
-#: app/batchextract.cpp:86 app/batchextract.cpp:107
+#: app/batchextract.cpp:94 app/batchextract.cpp:115
 #, fuzzy
 #| msgid "Destination folder: "
 msgid "Destination"
@@ -202,17 +202,35 @@ msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
 msgstr[0] "Архивке файлдарды қосқан кезде бір қате орын алды."
 
-#: part/archivemodel.cpp:237
+#: kerfuffle/queries.cpp:65
+#, fuzzy
+#| msgid "Archive Already Exists"
+msgid "File already exists"
+msgstr "Архив әлден бар"
+
+#: part/archivemodel.cpp:259
 msgctxt "Name of a file inside an archive"
 msgid "Name"
 msgstr ""
 
-#: part/archivemodel.cpp:239
+#: part/archivemodel.cpp:261
 #, fuzzy
 #| msgid " Size "
 msgctxt "Uncompressed size of a file inside an archive"
 msgid "Size"
 msgstr " Көлемі "
+
+#: part/archivemodel.cpp:263
+#, fuzzy
+#| msgid "Compressed File"
+msgctxt "Compressed size of a file inside an archive"
+msgid "Compressed"
+msgstr "Сығылған файл"
+
+#: part/archivemodel.cpp:265
+msgctxt "Compression rate of file"
+msgid "Rate"
+msgstr ""
 
 #: part/infopanel.cpp:59
 msgid "No archive loaded"
@@ -265,7 +283,7 @@ msgstr ""
 msgid "Operation finished."
 msgstr "Тарқату диалогын ашу, аяқтаған соң шығу"
 
-#: part/part.cpp:158
+#: part/part.cpp:159
 #, fuzzy
 #| msgctxt "to view something"
 #| msgid "&View"
@@ -273,79 +291,97 @@ msgctxt "to preview a file inside an archive"
 msgid "Pre&view"
 msgstr "Қара&у"
 
-#: part/part.cpp:160
+#: part/part.cpp:161
 msgid "Click to preview the selected file"
 msgstr ""
 
-#: part/part.cpp:165
+#: part/part.cpp:166
 msgid "E&xtract..."
 msgstr "&Тарқатып алу..."
 
-#: part/part.cpp:167
+#: part/part.cpp:168
 msgid ""
 "Click to open an extraction dialog, where you can choose to extract either "
 "all files or just the selected ones"
 msgstr ""
 
-#: part/part.cpp:173
+#: part/part.cpp:174
 msgid "Add &File..."
 msgstr "&Файлды қосу..."
 
-#: part/part.cpp:174
+#: part/part.cpp:175
 #, fuzzy
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Click to add files to the archive"
 msgstr "Архивке файлдарды қосқан кезде бір қате орын алды."
 
-#: part/part.cpp:180
+#: part/part.cpp:181
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Fo&lder..."
 msgstr "Қапшықты қ&осу..."
 
-#: part/part.cpp:181
+#: part/part.cpp:182
 msgid "Click to add a folder to the archive"
 msgstr ""
 
-#: part/part.cpp:187
+#: part/part.cpp:188
 msgid "De&lete"
 msgstr "Өші&ру"
 
-#: part/part.cpp:188
+#: part/part.cpp:189
 #, fuzzy
 #| msgid "Do you really want to delete the selected items?"
 msgid "Click to delete the selected files"
 msgstr "Таңдалғандарды шын өшіргіңіз келеді ме?"
 
-#: part/part.cpp:214
+#: part/part.cpp:215
 #, fuzzy
 #| msgid "E&xtract..."
 msgid "Quick extract to..."
 msgstr "&Тарқатып алу..."
 
-#: part/part.cpp:275
+#: part/part.cpp:276
 #, fuzzy
 #| msgid "Ark"
 msgid "ArkPart"
 msgstr "Ark"
 
-#: part/part.cpp:355
+#: part/part.cpp:282
+#, kde-format
+msgid "Error opening archive: the file '%1' was not found."
+msgstr ""
+
+#: part/part.cpp:282 part/part.cpp:291
+#, fuzzy
+#| msgid "Open 'archive'"
+msgid "Error opening archive"
+msgstr "'архивті' ашу"
+
+#: part/part.cpp:291
+#, kde-format
+msgid ""
+"Ark was not able to open the archive '%1'. No library capable of handling "
+"the file was found."
+msgstr ""
+
+#: part/part.cpp:366
 msgid "The internal viewer cannot preview this file."
 msgstr ""
 
-#: part/part.cpp:436
+#: part/part.cpp:447
 msgid ""
 "This archive contains one or more password protected files. Please enter the "
 "password to extract these."
 msgstr ""
 
-#: part/part.cpp:539
+#: part/part.cpp:550
 #, fuzzy
 #| msgid "All Files"
 msgid "Add Files"
 msgstr "Барлық файлдар"
 
-#: part/part.cpp:553
+#: part/part.cpp:564
 #, fuzzy
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
@@ -427,7 +463,7 @@ msgstr "%1 қапшығы құрылмады"
 msgid "Could not find a file named %1 in the archive."
 msgstr "Архивке файлдарды қосқан кезде бір қате орын алды."
 
-#: plugins/rarplugin/rarplugin.cpp:48
+#: plugins/rarplugin/rarplugin.cpp:49
 msgid "Neither rar or unrar are available in your PATH."
 msgstr ""
 
@@ -492,9 +528,6 @@ msgstr ""
 #~ "Ашуға мақсатталған файлдың жұрнағы стандарттан тыс.\n"
 #~ "Ark-тың байқауынша файлдың пішімі: %1\n"
 #~ "Дұрыс болмаса, шын пішімін көрсетіңіз."
-
-#~ msgid "Compressed File"
-#~ msgstr "Сығылған файл"
 
 #~ msgid "All Valid Archives\n"
 #~ msgstr "Барлық архив түрлері\n"
@@ -609,9 +642,6 @@ msgstr ""
 
 #~ msgid "Archive already exists. Do you wish to overwrite it?"
 #~ msgstr "Бұндай архив бар ғой. Үстінен жаза бересіз бе?"
-
-#~ msgid "Archive Already Exists"
-#~ msgstr "Архив әлден бар"
 
 #~ msgid "Do Not Overwrite"
 #~ msgstr "Қайта жазудың керегі жоқ"
