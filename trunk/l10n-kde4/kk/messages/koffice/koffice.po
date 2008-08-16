@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-11 08:34+0200\n"
+"POT-Creation-Date: 2008-08-16 09:59+0200\n"
 "PO-Revision-Date: 2008-07-19 06:54-0400\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -1416,16 +1416,15 @@ msgstr "Нүктелерді біріктіру"
 msgid "To Path"
 msgstr "Сүрлеуге"
 
-#: flake/tools/KoPathTool.cpp:165 kotext/styles/KoStyleManager.cpp:67
-#: kotext/styles/KoStyleManager.cpp:69
-msgid "Default"
-msgstr "Әдетті"
-
 #: flake/tools/KoPathTool.cpp:166
 #, fuzzy
-#| msgid "Show Guides"
-msgid "Snap Guides"
-msgstr "Бағыттауыштарын көрсету"
+#| msgid "Curve"
+msgid "Line/Curve"
+msgstr "Қисық"
+
+#: flake/tools/KoPathTool.cpp:167 flake/tools/KoCreatePathTool.cpp:334
+msgid "Snapping"
+msgstr ""
 
 #: flake/tools/KoZoomToolFactory.cpp:27
 msgid "Zoom Tool"
@@ -1907,6 +1906,10 @@ msgstr "Мәтін сілтемесі"
 msgid "Select the index you want to reference"
 msgstr "Сілтейтін индексін таңдау"
 
+#: kotext/styles/KoStyleManager.cpp:67 kotext/styles/KoStyleManager.cpp:69
+msgid "Default"
+msgstr "Әдетті"
+
 #: kotext/KoTextSelectionHandler.cpp:176
 msgid "Underline"
 msgstr "Асты сызылған"
@@ -2277,52 +2280,62 @@ msgid "&Delete Personal Data"
 msgstr "Дербес деректерді ө&шіру"
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 16
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 34
 #: rc.cpp:143
-msgid "Use snap guides"
-msgstr "Бағыттауыштар қолданылсын"
+msgid "Proximity distance where snapping happens"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 26
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 37
 #: rc.cpp:146
-msgid "Enable Nodes Guide"
-msgstr "Бағыттауыш түйіндері болсын"
+msgid " px"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 33
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 70
 #: rc.cpp:149
-msgid "Enable Orthogonal Guide"
-msgstr "Ортогоналды бағыттауыштар болсын"
+#, fuzzy
+#| msgid "None"
+msgid "Nodes"
+msgstr "Жоқ"
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 40
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 90
 #: rc.cpp:152
-msgid "Enable Extension Guide"
+#, fuzzy
+#| msgid "Enable Extension Guide"
+msgid "Extension of lines"
 msgstr "Кеңейтілген бағыттауыштар болсын"
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 47
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 110
 #: rc.cpp:155
-msgid "Enable Intersection Guide"
-msgstr "Қиылысқан бағыттауыштар болсын"
+msgid "Bounding box of shape"
+msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 54
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 130
 #: rc.cpp:158
-msgid "Enable Bounding Box Guide"
-msgstr "Қоршау бағыттауыштар болсын"
+#, fuzzy
+#| msgid "Enable Orthogonal Guide"
+msgid "Orthogonal"
+msgstr "Ортогоналды бағыттауыштар болсын"
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 61
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 150
 #: rc.cpp:161
-msgid "Snap Distance (px)"
-msgstr "Жабысатын қашықтық (пк)"
+#, fuzzy
+#| msgid "Guide Lines"
+msgid "Guide lines"
+msgstr "Бағыттауыш сызықтары"
 
 #. i18n: tag string
-#. i18n: file ./flake/SnapGuideConfigWidget.ui line 97
+#. i18n: file ./flake/SnapGuideConfigWidget.ui line 170
 #: rc.cpp:164
-msgid "Enable Guide Lines Guide "
-msgstr "Бағыттауыштар болсын"
+#, fuzzy
+#| msgid "Enable Intersection Guide"
+msgid "Intersection of lines"
+msgstr "Қиылысқан бағыттауыштар болсын"
 
 #. i18n: tag string
 #. i18n: file ./flake/tools/PathToolOptionWidgetBase.ui line 43
@@ -4057,6 +4070,26 @@ msgstr "Бұғатталған"
 #: kopageapp/KoPADocumentModel.cpp:473 kopageapp/KoPADocumentModel.cpp:492
 msgid "Reparent shapes"
 msgstr "Қалыптарды қайта еншілеу"
+
+#, fuzzy
+#~| msgid "Show Guides"
+#~ msgid "Snap Guides"
+#~ msgstr "Бағыттауыштарын көрсету"
+
+#~ msgid "Use snap guides"
+#~ msgstr "Бағыттауыштар қолданылсын"
+
+#~ msgid "Enable Nodes Guide"
+#~ msgstr "Бағыттауыш түйіндері болсын"
+
+#~ msgid "Enable Bounding Box Guide"
+#~ msgstr "Қоршау бағыттауыштар болсын"
+
+#~ msgid "Snap Distance (px)"
+#~ msgstr "Жабысатын қашықтық (пк)"
+
+#~ msgid "Enable Guide Lines Guide "
+#~ msgstr "Бағыттауыштар болсын"
 
 #~ msgid "Tool Option"
 #~ msgstr "Құрал параметрлері"
