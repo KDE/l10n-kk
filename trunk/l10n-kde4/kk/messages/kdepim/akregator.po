@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-27 09:44+0200\n"
+"POT-Creation-Date: 2008-08-28 09:42+0200\n"
 "PO-Revision-Date: 2007-07-07 11:03+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/old/feedlistview.cpp:280 src/akregator_part.cpp:306
+#: src/old/feedlistview.cpp:280 src/akregator_part.cpp:315
 #: src/subscriptionlistmodel.cpp:218
 #: plugins/onlinesync/ui/configurationwidget.cpp:21
 msgid "Feeds"
@@ -430,44 +430,44 @@ msgstr "Түсініктемелері"
 msgid "Complete Story"
 msgstr "Толық әңгіме"
 
-#: src/akregator_part.cpp:130
+#: src/akregator_part.cpp:131
 #, kde-format
 msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
 msgstr "\"%1\" сақтау плагин модулі жүктелмеді. Ақпарлар архивтелмейді."
 
-#: src/akregator_part.cpp:130
+#: src/akregator_part.cpp:131
 msgid "Plugin error"
 msgstr "Плагин модулінің қатесі"
 
-#: src/akregator_part.cpp:317
+#: src/akregator_part.cpp:326
 msgid "Akregator News"
 msgstr "Akregator жаңалықтары"
 
-#: src/akregator_part.cpp:322
+#: src/akregator_part.cpp:331
 msgid "Akregator Blog"
 msgstr "Akregator блогы"
 
-#: src/akregator_part.cpp:327
+#: src/akregator_part.cpp:336
 msgid "KDE Dot News"
 msgstr "KDE жаңалықтары"
 
-#: src/akregator_part.cpp:332
+#: src/akregator_part.cpp:341
 msgid "Planet KDE"
 msgstr "KDE ғаламы"
 
-#: src/akregator_part.cpp:337
+#: src/akregator_part.cpp:346
 msgid "KDE Apps"
 msgstr "KDE қолданбалары"
 
-#: src/akregator_part.cpp:342
+#: src/akregator_part.cpp:351
 msgid "KDE Look"
 msgstr "KDE безендіруі"
 
-#: src/akregator_part.cpp:351
+#: src/akregator_part.cpp:360
 msgid "Opening Feed List..."
 msgstr "Ақпар тізімін ашу..."
 
-#: src/akregator_part.cpp:386
+#: src/akregator_part.cpp:394
 #, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
@@ -476,38 +476,69 @@ msgstr ""
 "<qt>Стандартты ақпар тізімі бүлінген (XML қатесі). Сақтық көшірмесі құрылды:"
 "<p><b>%1</b></p></qt>"
 
-#: src/akregator_part.cpp:386
+#: src/akregator_part.cpp:394 src/akregator_part.cpp:396
 msgid "XML Parsing Error"
 msgstr "XML талдау қатесі"
 
-#: src/akregator_part.cpp:401
-#, kde-format
+#: src/akregator_part.cpp:396
+#, fuzzy
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (invalid XML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
 msgid ""
-"<qt>The standard feed list is corrupted (no valid OPML). A backup was "
-"created:<p><b>%1</b></p></qt>"
+"<qt>The standard feed list is corrupted (invalid XML). Could not create a "
+"backup!</p></qt>"
+msgstr ""
+"<qt>Стандартты ақпар тізімі бүлінген (XML қатесі). Сақтық көшірмесі құрылды:"
+"<p><b>%1</b></p></qt>"
+
+#: src/akregator_part.cpp:410
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
+msgid ""
+"<qt>The standard feed list is corrupted (no valid OPML). A backup of the "
+"previous list was created:<p><b>%1</b></p></qt>"
 msgstr ""
 "<qt>Стандартты ақпар тізімі бүлінген (OPML қатесі). Сақтық көшірмесі құрылды:"
 "<p><b>%1</b></p></qt>"
 
-#: src/akregator_part.cpp:401 src/akregator_part.cpp:511
+#: src/akregator_part.cpp:410 src/akregator_part.cpp:412
+#: src/akregator_part.cpp:518
 msgid "OPML Parsing Error"
 msgstr "OPML талдау қатесі"
 
-#: src/akregator_part.cpp:440
-#, kde-format
-msgid "Access denied: cannot save feed list (%1)"
+#: src/akregator_part.cpp:412
+#, fuzzy
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (no valid OPML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
+msgid ""
+"<qt>The standard feed list is corrupted (no valid OPML). Could not create a "
+"backup!></p></qt>"
+msgstr ""
+"<qt>Стандартты ақпар тізімі бүлінген (OPML қатесі). Сақтық көшірмесі құрылды:"
+"<p><b>%1</b></p></qt>"
+
+#: src/akregator_part.cpp:459
+#, fuzzy, kde-format
+#| msgid "Access denied: cannot save feed list (%1)"
+msgid ""
+"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
+"permissions."
 msgstr "Қатынау рұқсаты жоқ: ақпар (%1) тізімі сақталмады"
 
-#: src/akregator_part.cpp:440
+#: src/akregator_part.cpp:460
 msgid "Write error"
 msgstr "Жазу қатесі"
 
-#: src/akregator_part.cpp:511
+#: src/akregator_part.cpp:518
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr "%1 файл импорт етілмеді (OPML қатесі)"
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:521
 #, kde-format
 msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
@@ -516,29 +547,26 @@ msgstr ""
 "%1 файлы оқылмады, ол бар ма, жоқ па, бар болса осы пайдаланушыға оқу "
 "рұқсаты берілген бе, тексеріңіз."
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:521
 msgid "Read Error"
 msgstr "Оқу қатесі"
 
-#: src/akregator_part.cpp:528
+#: src/akregator_part.cpp:535
 #, kde-format
 msgid "The file %1 already exists; do you want to overwrite it?"
 msgstr "%1 деген файл бар ғой, үстінен жаза берейік пе?"
 
-#: src/akregator_part.cpp:529
+#: src/akregator_part.cpp:536
 msgid "Export"
 msgstr "Экспорт ету"
 
-#: src/akregator_part.cpp:530
-msgid "Overwrite"
-msgstr "Үстінен жазу"
-
-#: src/akregator_part.cpp:536
-#, kde-format
-msgid "Access denied: cannot write to file %1"
+#: src/akregator_part.cpp:542
+#, fuzzy, kde-format
+#| msgid "Access denied: cannot write to file %1"
+msgid "Access denied: cannot write to file %1. Please check your permissions."
 msgstr "Қатынау рұқсаты жоқ: %1 файлы жазылмады"
 
-#: src/akregator_part.cpp:536
+#: src/akregator_part.cpp:542
 msgid "Write Error"
 msgstr "Жазу қатесі"
 
@@ -1669,9 +1697,7 @@ msgstr "Таңбашалардың орнына жабу батырмалары�
 
 #. i18n: file: interfaces/akregator.kcfg:150
 #. i18n: ectx: label, entry, group (Browser)
-#. i18n: file: configuration/settings_browser.ui:174
-#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
-#: rc.cpp:276 rc.cpp:449
+#: rc.cpp:276
 msgid "Use default KDE web browser"
 msgstr "KDE-нің әдетті шолғышы қолданылсын"
 
@@ -1988,6 +2014,14 @@ msgstr "Сыртқы шолғыш"
 msgid "firefox %u"
 msgstr "firefox %u"
 
+#. i18n: file: configuration/settings_browser.ui:174
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
+#: rc.cpp:449
+#, fuzzy
+#| msgid "Use default KDE web browser"
+msgid "Use default web browser"
+msgstr "KDE-нің әдетті шолғышы қолданылсын"
+
 #. i18n: file: configuration/settings_archive.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:455
@@ -2195,6 +2229,9 @@ msgstr "Жүктеу..."
 #: plugins/mk4storage/storagefactorymk4impl.cpp:48
 msgid "Metakit"
 msgstr ""
+
+#~ msgid "Overwrite"
+#~ msgstr "Үстінен жазу"
 
 #~ msgid "Configure &Akregator..."
 #~ msgstr "&Akregator баптаулары..."
