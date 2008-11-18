@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:39+0100\n"
+"POT-Creation-Date: 2008-11-18 09:53+0100\n"
 "PO-Revision-Date: 2008-11-16 08:42-0500\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -818,7 +818,7 @@ msgstr "Құ&ралдар"
 
 #. i18n: file: kdeui/xmlgui/ui_standards.rc:146
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:327
+#: rc.cpp:327 khtml/ecma/debugger/debugwindow.cpp:240
 msgid "&Settings"
 msgstr "&Баптаулары"
 
@@ -1716,7 +1716,7 @@ msgstr "Тоқтау нүктесі дейін..."
 
 #. i18n: file: kjsembed/examples/kjsconsole/jsconsole.ui:219
 #. i18n: ectx: property (text), widget (QStatusBar, statusBar)
-#: rc.cpp:791 khtml/ecma/kjs_debugwin.cpp:480
+#: rc.cpp:791
 msgid "Step"
 msgstr "Қадам"
 
@@ -1732,8 +1732,7 @@ msgstr "Келесі жолға аттау..."
 #. i18n: ectx: property (text), widget (QPushButton, pbStop)
 #: rc.cpp:797 rc.cpp:945 kdeui/jobs/kstatusbarjobtracker.cpp:156
 #: kdeui/util/kstandardguiitem.cpp:265 kdeui/util/kkeyserver_x11.cpp:109
-#: kdeui/findreplace/kreplace.cpp:353 khtml/ecma/kjs_debugwin.cpp:482
-#: kross/ui/view.cpp:309
+#: kdeui/findreplace/kreplace.cpp:353 kross/ui/view.cpp:309
 msgid "Stop"
 msgstr "Тоқтату"
 
@@ -5442,6 +5441,7 @@ msgid "No provider selected."
 msgstr "Провайдер таңдалмаған."
 
 #: knewstuff/knewstuff2/core/providerhandler.cpp:156
+#: knewstuff/knewstuff2/core/providerhandler.cpp:176
 msgctxt "describes the feed of the latest posted entries"
 msgid "Latest"
 msgstr "Соңғылары"
@@ -5453,10 +5453,6 @@ msgstr "Ұпайы ең жоғары"
 #: knewstuff/knewstuff2/core/providerhandler.cpp:168
 msgid "Most Downloads"
 msgstr "Жиі жүктеліп алынатындар"
-
-#: knewstuff/knewstuff2/core/providerhandler.cpp:174
-msgid "Unsorted"
-msgstr "Реттелмеген"
 
 #: knewstuff/knewstuff2/core/security.cpp:76
 msgid ""
@@ -6082,7 +6078,7 @@ msgstr "Перне тіркесімі"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:61
 #, fuzzy
 #| msgid "Curr&ent actions:"
-msgid "Current Scheme:"
+msgid "Current scheme:"
 msgstr "&Ағымдағы әрекеттер:"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:71
@@ -6102,8 +6098,10 @@ msgid "More Actions"
 msgstr "Әрекет"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:81
-msgid "Save As Scheme Defaults"
-msgstr ""
+#, fuzzy
+#| msgid "&Defaults"
+msgid "Save as Scheme Defaults"
+msgstr "&Әдеттіге ысыру"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:83
 msgid "Export Scheme..."
@@ -6114,8 +6112,10 @@ msgid "Name for New Scheme"
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
-msgid "Name for New Scheme:"
-msgstr ""
+#, fuzzy
+#| msgid "Curr&ent actions:"
+msgid "Name for new scheme:"
+msgstr "&Ағымдағы әрекеттер:"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
 #, fuzzy
@@ -6126,7 +6126,7 @@ msgstr "&Ағымдағы әрекеттер:"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:107
 #, fuzzy
 #| msgid "The tag %1 already exists"
-msgid "The scheme with this name already exists"
+msgid "A scheme with this name already exists."
 msgstr "%1 деген тег бар ғой"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:135
@@ -6137,7 +6137,7 @@ msgid ""
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:164
-msgid "Export To Location"
+msgid "Export to Location"
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:173
@@ -6385,7 +6385,7 @@ msgid "Reset Toolbars"
 msgstr "Құралдарды әдеттіге ысыру"
 
 #: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2971
-#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2166
+#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2167
 msgid "Reset"
 msgstr "Ысыру"
 
@@ -8380,21 +8380,21 @@ msgstr "Алға"
 msgid "Next Character"
 msgstr "Таңбалар жиыны"
 
-#: kdeui/widgets/kcharselect.cpp:370
-msgid "Set font"
-msgstr "Қаріпті таңдау"
-
-#: kdeui/widgets/kcharselect.cpp:377
-msgid "Set font size"
-msgstr "Қаріптің өлшемін таңдау"
-
-#: kdeui/widgets/kcharselect.cpp:384
+#: kdeui/widgets/kcharselect.cpp:367
 msgid "Select a category"
 msgstr "Санатын таңдау"
 
-#: kdeui/widgets/kcharselect.cpp:387
+#: kdeui/widgets/kcharselect.cpp:370
 msgid "Select a block to be displayed"
 msgstr "Көрсетілетін блокты таңдау"
+
+#: kdeui/widgets/kcharselect.cpp:383
+msgid "Set font"
+msgstr "Қаріпті таңдау"
+
+#: kdeui/widgets/kcharselect.cpp:390
+msgid "Set font size"
+msgstr "Қаріптің өлшемін таңдау"
 
 #: kdeui/widgets/kcharselect.cpp:629 kdeui/widgets/kcharselect.cpp:881
 #: kdeui/widgets/kcharselect-translation.cpp:43
@@ -10671,7 +10671,7 @@ msgstr ""
 "жіберілетін болады. <br />Пішінді жібергіңіз келе ме?</qt>"
 
 #: khtml/khtml_part.cpp:4594 khtml/khtmlview.cpp:2957 khtml/khtmlview.cpp:2999
-#: khtml/html/html_formimpl.cpp:1580 khtml/html/html_formimpl.cpp:2174
+#: khtml/html/html_formimpl.cpp:1581 khtml/html/html_formimpl.cpp:2175
 msgid "Submit"
 msgstr "Жіберу"
 
@@ -10764,8 +10764,8 @@ msgstr "Дұрыс 'khtml/' құру каталогын таңдаңыз."
 msgid "Available Tests: %1 (ignored: %2)"
 msgstr "Қол жетерлік сынақтар: %1 (елемейтіні: %2)"
 
-#: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:166
+#: khtml/test_regression_gui_window.cpp:563
+#: khtml/ecma/debugger/debugwindow.cpp:192
 msgid "Continue"
 msgstr "Жалғастыру"
 
@@ -10845,81 +10845,6 @@ msgstr "XML талдау қатесі"
 #: khtml/xml/dom_docimpl.cpp:2237
 msgid "Basic Page Style"
 msgstr "Беттің негізгі стилі"
-
-#: khtml/ecma/kjs_debugwin.cpp:298 khtml/ecma/debugger/errordlg.cpp:35
-msgid "JavaScript Error"
-msgstr "JavaScript қатесі"
-
-#: khtml/ecma/kjs_debugwin.cpp:315 khtml/ecma/debugger/errordlg.cpp:50
-msgid "&Do not show this message again"
-msgstr "&Бұл хабарлама енді көрсетілмесін"
-
-#: khtml/ecma/kjs_debugwin.cpp:385 khtml/ecma/debugger/debugwindow.cpp:111
-msgid "JavaScript Debugger"
-msgstr "JavaScript жөндеушісі"
-
-#: khtml/ecma/kjs_debugwin.cpp:400
-msgid "Call stack"
-msgstr "Шақыру стегі"
-
-#: khtml/ecma/kjs_debugwin.cpp:435
-msgid "JavaScript console"
-msgstr "JavaScript консолі"
-
-#: khtml/ecma/kjs_debugwin.cpp:465
-msgctxt "Next breakpoint"
-msgid "&Next"
-msgstr "&Келесі"
-
-#: khtml/ecma/kjs_debugwin.cpp:467
-msgid "&Step"
-msgstr "&Қадам"
-
-#: khtml/ecma/kjs_debugwin.cpp:472
-msgid "&Continue"
-msgstr "&Жалғастыру"
-
-#: khtml/ecma/kjs_debugwin.cpp:474
-msgid "St&op"
-msgstr "&Тоқтату"
-
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:160
-msgid "&Break at Next Statement"
-msgstr "&Келесі сөйлемде аялдау"
-
-#: khtml/ecma/kjs_debugwin.cpp:479
-msgctxt "Next breakpoint"
-msgid "Next"
-msgstr "Келесі"
-
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:572
-#, kde-format
-msgid "Parse error at %1 line %2"
-msgstr "%1 талдау қатесі %2 жолында"
-
-#: khtml/ecma/kjs_debugwin.cpp:859
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1"
-msgstr ""
-"Бұл беттегі скриптті орындау кезінде қате пайда болды.\n"
-"\n"
-"%1"
-
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:609
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1 line %2:\n"
-"%3"
-msgstr ""
-"Бұл беттегі скриптті орындау кезінде қате пайда болды.\n"
-"\n"
-"%1 %2 жолдағы:\n"
-"%3"
 
 #: khtml/ecma/kjs_binding.cpp:184
 msgid ""
@@ -11024,7 +10949,7 @@ msgstr ""
 "<qt>Бұл сайт JavaScript арқылы шолғыштың жаңа терезесінде <p>%1</p> ашатын "
 "пішінді жіберуде.<br />Пішінді жіберуге рұқсат бересіз бе?</qt>"
 
-#: khtml/ecma/debugger/debugdocument.cpp:210
+#: khtml/ecma/debugger/debugdocument.cpp:187
 #, fuzzy
 #| msgid ""
 #| "A KDE text-editor component could not be found;\n"
@@ -11036,13 +10961,13 @@ msgstr ""
 "KDE-нің мәтін өңдеу компоненті табылған жоқ;\n"
 "KDE орнатуын тексеріңіз."
 
-#: khtml/ecma/debugger/debugdocument.cpp:327
+#: khtml/ecma/debugger/debugdocument.cpp:253
 #, fuzzy
 #| msgid "Run to breakpoint..."
 msgid "Breakpoint"
 msgstr "Тоқтау нүктесі дейін..."
 
-#: khtml/ecma/debugger/scriptsdock.cpp:39
+#: khtml/ecma/debugger/scriptsdock.cpp:40
 msgid "Loaded Scripts"
 msgstr "Жүктелген скрипттер"
 
@@ -11054,54 +10979,98 @@ msgstr "Жергілікті айнымалылар"
 msgid "Reference"
 msgstr "Сілтеме"
 
-#: khtml/ecma/debugger/debugwindow.cpp:161
+#: khtml/ecma/debugger/debugwindow.cpp:111
+msgid "JavaScript Debugger"
+msgstr "JavaScript жөндеушісі"
+
+#: khtml/ecma/debugger/debugwindow.cpp:186
+msgid "&Break at Next Statement"
+msgstr "&Келесі сөйлемде аялдау"
+
+#: khtml/ecma/debugger/debugwindow.cpp:187
 #, fuzzy
 #| msgid "&Break at Next Statement"
 msgid "Break at Next"
 msgstr "&Келесі сөйлемде аялдау"
 
-#: khtml/ecma/debugger/debugwindow.cpp:173
+#: khtml/ecma/debugger/debugwindow.cpp:199
 msgid "Step Over"
 msgstr "Аттап өту"
 
-#: khtml/ecma/debugger/debugwindow.cpp:180
+#: khtml/ecma/debugger/debugwindow.cpp:206
 msgid "Step Into"
 msgstr "Аттап кіру"
 
-#: khtml/ecma/debugger/debugwindow.cpp:187
+#: khtml/ecma/debugger/debugwindow.cpp:213
 msgid "Step Out"
 msgstr "Аттап кету"
 
-#: khtml/ecma/debugger/debugwindow.cpp:196
+#: khtml/ecma/debugger/debugwindow.cpp:219
+msgid "Reindent Sources"
+msgstr ""
+
+#: khtml/ecma/debugger/debugwindow.cpp:224
+#, fuzzy
+#| msgid "Action"
+msgid "Report Exceptions"
+msgstr "Әрекет"
+
+#: khtml/ecma/debugger/debugwindow.cpp:232
 msgid "&Debug"
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:225
+#: khtml/ecma/debugger/debugwindow.cpp:266
 msgid "Close source"
 msgstr "Бастапқыны жабу"
 
-#: khtml/ecma/debugger/debugwindow.cpp:231
+#: khtml/ecma/debugger/debugwindow.cpp:272
 msgid "Ready"
 msgstr "Дайын"
 
-#: khtml/ecma/debugger/debugwindow.cpp:789
+#: khtml/ecma/debugger/debugwindow.cpp:615
+#, kde-format
+msgid "Parse error at %1 line %2"
+msgstr "%1 талдау қатесі %2 жолында"
+
+#: khtml/ecma/debugger/debugwindow.cpp:650
+#, kde-format
+msgid ""
+"An error occurred while attempting to run a script on this page.\n"
+"\n"
+"%1 line %2:\n"
+"%3"
+msgstr ""
+"Бұл беттегі скриптті орындау кезінде қате пайда болды.\n"
+"\n"
+"%1 %2 жолдағы:\n"
+"%3"
+
+#: khtml/ecma/debugger/debugwindow.cpp:835
 msgid ""
 "Don't know where to evaluate the expression. Please pause a script or open a "
 "source file."
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:825
+#: khtml/ecma/debugger/debugwindow.cpp:871
 #, kde-format
 msgid "Evaluation threw an exception %1"
 msgstr ""
 
-#: khtml/ecma/debugger/consoledock.cpp:231
+#: khtml/ecma/debugger/consoledock.cpp:220
 msgid "Console"
 msgstr "Консоль"
 
-#: khtml/ecma/debugger/consoledock.cpp:254
+#: khtml/ecma/debugger/consoledock.cpp:243
 msgid "Enter"
 msgstr "Enter"
+
+#: khtml/ecma/debugger/errordlg.cpp:35
+msgid "JavaScript Error"
+msgstr "JavaScript қатесі"
+
+#: khtml/ecma/debugger/errordlg.cpp:50
+msgid "&Do not show this message again"
+msgstr "&Бұл хабарлама енді көрсетілмесін"
 
 #: khtml/ecma/debugger/callstackdock.cpp:37
 msgid "Call Stack"
@@ -11201,7 +11170,7 @@ msgstr ""
 "ашық болса, %1 сайтқа келесі кіріп-шыққанда ол автоматты тіркеу мәліметін "
 "толтырып береді. Сонымен тіркеу мәліметіңіз жаттап алынсын ба?"
 
-#: khtml/html/html_formimpl.cpp:2555
+#: khtml/html/html_formimpl.cpp:2557
 msgid "Key Generator"
 msgstr "Кілт генераторы"
 
@@ -12899,6 +12868,41 @@ msgstr "&Бүгінгі кеңес"
 #, kde-format
 msgid "No such function \"%1\""
 msgstr "\"%1\" функциясы жоқ"
+
+#~ msgid "Unsorted"
+#~ msgstr "Реттелмеген"
+
+#~ msgid "Call stack"
+#~ msgstr "Шақыру стегі"
+
+#~ msgid "JavaScript console"
+#~ msgstr "JavaScript консолі"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "&Next"
+#~ msgstr "&Келесі"
+
+#~ msgid "&Step"
+#~ msgstr "&Қадам"
+
+#~ msgid "&Continue"
+#~ msgstr "&Жалғастыру"
+
+#~ msgid "St&op"
+#~ msgstr "&Тоқтату"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "Next"
+#~ msgstr "Келесі"
+
+#~ msgid ""
+#~ "An error occurred while attempting to run a script on this page.\n"
+#~ "\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Бұл беттегі скриптті орындау кезінде қате пайда болды.\n"
+#~ "\n"
+#~ "%1"
 
 #, fuzzy
 #~| msgid "From:"
