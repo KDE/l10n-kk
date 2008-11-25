@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:41+0100\n"
+"POT-Creation-Date: 2008-11-25 10:22+0100\n"
 "PO-Revision-Date: 2007-04-28 19:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -945,13 +945,13 @@ msgstr ""
 "телефон арқылы не кездескенде сұрап салыстырып, шындылығын тексерген жөн.</"
 "qt>"
 
-#: keysmanager.cpp:1840 keysmanager.cpp:1910
+#: keysmanager.cpp:1840 keysmanager.cpp:1910 kgpgfirstassistant.cpp:279
 #, kde-format
 msgctxt "Name: ID"
 msgid "%1: %2"
 msgstr ""
 
-#: keysmanager.cpp:1842 keysmanager.cpp:1913
+#: keysmanager.cpp:1842 keysmanager.cpp:1913 kgpgfirstassistant.cpp:281
 #, kde-format
 msgctxt "Name (Email): ID"
 msgid "%1 (%2): %3"
@@ -1102,10 +1102,10 @@ msgstr ""
 "өшірсеңіз, бұл кілтпен шифрланған файлдардың шифрын енді ешқашан шеше "
 "алмайсыз."
 
-#: keysmanager.cpp:2290
+#: keysmanager.cpp:2290 keysmanager.cpp:2318
 msgid ""
-"Another key is currently deleted. Please wait until the operation is "
-"complete."
+"Another key delete operation is still in progress.\n"
+"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2305
@@ -1116,12 +1116,6 @@ msgstr ""
 #: keysmanager.cpp:2308
 #, kde-format
 msgid "Deleting key <b>%1</b> failed."
-msgstr ""
-
-#: keysmanager.cpp:2318
-msgid ""
-"Another key delete operation is still in progress.\n"
-"Please wait a moment until this operation is complete."
 msgstr ""
 
 #: keysmanager.cpp:2330
@@ -1393,6 +1387,10 @@ msgstr ""
 "баптау параметрлерін орнатады. Содан кейін, өзіңіздің қос кілттеріңізді "
 "құрып беріп, файлдарыңыз бен хабарларыңызды шифрлауға мүмкіндік ашады."
 
+#: kgpgfirstassistant.cpp:74
+msgid "Welcome to the KGpg assistant"
+msgstr ""
+
 #: kgpgfirstassistant.cpp:86
 #, fuzzy
 #| msgid "KGpg needs to know where your GnuPG configuration file is stored."
@@ -1407,6 +1405,15 @@ msgid ""
 msgstr ""
 "Қалайтыңыз кәдімгі параметрлер болса, \"Келесі\" деген батырмасын баса "
 "беріңіз."
+
+#: kgpgfirstassistant.cpp:107
+#, fuzzy
+#| msgid "GnuPG Settings"
+msgctxt "search filter for gpg binary"
+msgid ""
+"gpg|GnuPG binary\n"
+"*|All files"
+msgstr "GnuPG параметрлері"
 
 #: kgpgfirstassistant.cpp:115
 #, fuzzy
@@ -1482,25 +1489,25 @@ msgstr "Құрудың керегі жоқ"
 msgid "<qt><b>The GnuPG configuration file was not found</b>.</qt>"
 msgstr ""
 
-#: kgpgfirstassistant.cpp:289
+#: kgpgfirstassistant.cpp:293
 #, fuzzy, kde-format
 #| msgid "GnuPG Settings"
 msgid "Your GnuPG binary is: %1"
 msgstr "GnuPG параметрлері"
 
-#: kgpgfirstassistant.cpp:305 kgpgfirstassistant.cpp:361
+#: kgpgfirstassistant.cpp:309 kgpgfirstassistant.cpp:365
 #, fuzzy, kde-format
 #| msgid "You have GnuPG version:"
 msgid "You have GnuPG version: %1"
 msgstr "GnuPG нұсқаңыз:"
 
-#: kgpgfirstassistant.cpp:308
+#: kgpgfirstassistant.cpp:312
 #, fuzzy, kde-format
 #| msgid "Your default key:"
 msgid "Your default key is: %1"
 msgstr "Әдеттегі кілтіңіз:"
 
-#: kgpgfirstassistant.cpp:359
+#: kgpgfirstassistant.cpp:363
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your GnuPG version seems to be older than 1.2.0. Photo Id's and Key "
@@ -3269,7 +3276,7 @@ msgstr "ай"
 #. i18n: ectx: label, entry (KeyServers), group (Servers)
 #: rc.cpp:479
 msgid ""
-"Key servers used by kgpg. The first server in the list is the default server."
+"Key servers used by KGpg. The first server in the list is the default server."
 msgstr ""
 
 #. i18n: file: kgpg.kcfg:237
