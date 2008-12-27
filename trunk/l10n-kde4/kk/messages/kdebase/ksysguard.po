@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-18 09:55+0100\n"
+"POT-Creation-Date: 2008-12-27 11:10+0100\n"
 "PO-Revision-Date: 2008-11-19 10:46+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -86,7 +86,11 @@ msgid "Dummy"
 msgstr "Жай"
 
 #: ksgrd/SensorAgent.cc:105
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Message from %1:\n"
+#| "%2"
+msgctxt "%1 is a host name"
 msgid ""
 "Message from %1:\n"
 "%2"
@@ -128,9 +132,10 @@ msgstr "Артықшылық"
 msgid "User Load"
 msgstr "Пайдаланушы жүктелісі"
 
-#. i18n: tag WorkSheet attribute title
-#. i18n: file: ./SystemLoad.sgrd:3
-#: ksgrd/SensorManager.cc:63 rc.cpp:149
+#: ksgrd/SensorManager.cc:63
+#, fuzzy
+#| msgid "System Load"
+msgctxt "@item sensor description"
 msgid "System Load"
 msgstr "Жүйенің жүктелісі"
 
@@ -304,6 +309,9 @@ msgid "Packets"
 msgstr "Дестелер"
 
 #: ksgrd/SensorManager.cc:106
+#, fuzzy
+#| msgid "Carrier"
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
 msgid "Carrier"
 msgstr "Тасушы"
 
@@ -673,6 +681,9 @@ msgid "Size ratio:"
 msgstr "Өлшемдер арақатынасы:"
 
 #: KSGAppletSettings.cc:63
+#, fuzzy
+#| msgid "%"
+msgctxt "Number suffix in spinbox"
 msgid "%"
 msgstr "%"
 
@@ -782,6 +793,9 @@ msgid "Upper limit:"
 msgstr "Жоғарғы деңгейдің шегі:"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:157
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
 msgid "Look"
 msgstr "Көрінісі"
 
@@ -1027,12 +1041,16 @@ msgid "99999 XXXX"
 msgstr "99999 XXXX"
 
 #: SensorDisplayLib/FancyPlotter.cc:344
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "<p><b>%1:</b><br>"
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
 msgid "<p><b>%1:</b><br>"
 msgstr "<p><b>%1:</b><br>"
 
 #: SensorDisplayLib/FancyPlotter.cc:391
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "%1 of %2"
+msgctxt "%1 and %2 are sensor's last and maximum value"
 msgid "%1 of %2"
 msgstr "%1 / %2"
 
@@ -1105,6 +1123,10 @@ msgid "Foreground color:"
 msgstr "Бояу түсі:"
 
 #: SensorDisplayLib/MultiMeterSettings.cc:31
+#, fuzzy
+#| msgid "Multimeter Settings"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
 msgid "Multimeter Settings"
 msgstr "Индикаторды баптау"
 
@@ -1292,6 +1314,12 @@ msgstr "&Өзгерту"
 msgid "Process Table"
 msgstr "Процесстер кестесі"
 
+#. i18n: tag WorkSheet attribute title
+#. i18n: file: ./SystemLoad.sgrd:3
+#: rc.cpp:149
+msgid "System Load"
+msgstr "Жүйенің жүктелісі"
+
 #. i18n: tag display attribute title
 #. i18n: file: ./SystemLoad.sgrd:5
 #: rc.cpp:152
@@ -1399,9 +1427,11 @@ msgid "Tab &Properties"
 msgstr "Қойындының қ&асиеттері"
 
 #: ksysguard.cc:449
-#, kde-format
-msgid " %1 processes "
-msgstr " %1 процесс "
+#, fuzzy, kde-format
+#| msgid " %1 processes "
+msgid " 1 process "
+msgid_plural " %1 processes "
+msgstr[0] " %1 процесс "
 
 #: ksysguard.cc:455
 #, kde-format
@@ -1409,7 +1439,9 @@ msgid " CPU: %1% "
 msgstr " Процессор: %1 "
 
 #: ksysguard.cc:469
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Memory: %1 / %2 "
 msgstr " Жады: %1 / %2 "
 
@@ -1418,7 +1450,9 @@ msgid " No swap space available "
 msgstr " Своп орны жоқ "
 
 #: ksysguard.cc:498
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Swap: %1 / %2 "
 msgstr " Своп: %1 / %2 "
 
