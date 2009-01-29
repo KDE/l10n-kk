@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmaengineexplorer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:20+0100\n"
 "PO-Revision-Date: 2008-12-18 10:36+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -20,83 +20,103 @@ msgstr ""
 "\n"
 "\n"
 
-#: engineexplorer.cpp:55 main.cpp:32
+#: engineexplorer.cpp:57 main.cpp:32
 msgid "Plasma Engine Explorer"
 msgstr "Plasma тетік шолғышы"
 
-#: engineexplorer.cpp:70
+#: engineexplorer.cpp:73
 msgid "Search"
 msgstr "Іздеу"
 
-#: engineexplorer.cpp:76
+#: engineexplorer.cpp:79
 #, fuzzy
 #| msgid "Collapse All"
-msgid "Collapse all"
+msgid "Collapse All"
 msgstr "Барлығын бүктеу"
 
-#: engineexplorer.cpp:77
+#: engineexplorer.cpp:80
 #, fuzzy
 #| msgid "Expand All"
-msgid "Expand all"
+msgid "Expand All"
 msgstr "Барлығын тарқату"
 
-#: engineexplorer.cpp:141
+#: engineexplorer.cpp:148
 msgid "DataSource"
 msgstr "ДерекКөзі"
 
-#: engineexplorer.cpp:141
+#. i18n: file: serviceviewer.ui:67
+#. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
+#: engineexplorer.cpp:148 rc.cpp:25 serviceviewer.cpp:140
 msgid "Key"
 msgstr "Параметр"
 
-#: engineexplorer.cpp:141
+#. i18n: file: serviceviewer.ui:72
+#. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
+#: engineexplorer.cpp:148 rc.cpp:28 serviceviewer.cpp:140
 msgid "Value"
 msgstr "Мәні"
 
-#: engineexplorer.cpp:141
+#: engineexplorer.cpp:148
 msgid "Type"
 msgstr "Түрі"
 
-#: engineexplorer.cpp:240
+#: engineexplorer.cpp:257
+msgid "Get associated service"
+msgstr "Тиісті қызметке қол жеткізу"
+
+#: engineexplorer.cpp:258
+msgid "Update source now"
+msgstr "Қазір көзін жаңартып алу"
+
+#: engineexplorer.cpp:259
+msgid "Remove source"
+msgstr "Дерек көзін өшіру"
+
+#: engineexplorer.cpp:279
 #, kde-format
 msgid "&lt;1 bit&gt;"
 msgid_plural "&lt;%1 bits&gt;"
 msgstr[0] "&lt;%1 бит&gt;"
 
-#: engineexplorer.cpp:249
+#: engineexplorer.cpp:288
 #, kde-format
 msgid "&lt;1 byte&gt;"
 msgid_plural "&lt;%1 bytes&gt;"
 msgstr[0] "&lt;%1 байт&gt;"
 
-#: engineexplorer.cpp:271
+#: engineexplorer.cpp:310
 #, kde-format
 msgid "&lt;1 item&gt;"
 msgid_plural "&lt;%1 items&gt;"
 msgstr[0] "&lt;%1 нысан&gt;"
 
-#: engineexplorer.cpp:326
+#: engineexplorer.cpp:376
 #, fuzzy
 #| msgctxt "The user did a query to a dataengine and it returned empty data"
 #| msgid "<empty>"
+msgctxt "The user did a query to a dataengine and it returned empty data"
 msgid "<empty>"
 msgstr "<бос>"
 
-#: engineexplorer.cpp:333
+#: engineexplorer.cpp:383
 #, fuzzy
 #| msgctxt ""
 #| "A the dataengine returned something that the humble view on the "
 #| "engineexplorer can't display, like a picture"
 #| msgid "<not displayable>"
+msgctxt ""
+"A the dataengine returned something that the humble view on the "
+"engineexplorer can't display, like a picture"
 msgid "<not displayable>"
 msgstr "<көрсетуге келмейді>"
 
 #. i18n: file: engineexplorer.ui:19
 #. i18n: ectx: property (text), widget (KTitleWidget, m_title)
-#: engineexplorer.cpp:370 rc.cpp:3
+#: engineexplorer.cpp:420 rc.cpp:3
 msgid "Plasma DataEngine Explorer"
 msgstr "Plasma ДерекТетік шолғышы"
 
-#: engineexplorer.cpp:375
+#: engineexplorer.cpp:425
 #, kde-format
 msgctxt "The name of the engine followed by the number of data sources"
 msgid "%1 Engine - 1 data source"
@@ -152,6 +172,10 @@ msgid "The data engine to use"
 msgstr "Қолданатын дерек тетігі"
 
 #: main.cpp:47
+msgid "The source to request"
+msgstr "Сұрайтын көзі"
+
+#: main.cpp:48
 msgid "Update Interval in milliseconds."
 msgstr "Жаңарту аралығы (милисекунд)"
 
@@ -185,69 +209,78 @@ msgstr "Әрбір "
 msgid "Request"
 msgstr "Сұрақ"
 
-#: rc.cpp:19
+#. i18n: file: serviceviewer.ui:33
+#. i18n: ectx: property (text), widget (QLabel, m_operationsLabel)
+#: rc.cpp:22
+msgid "&Operation:"
+msgstr "&Операциясы:"
+
+#. i18n: file: serviceviewer.ui:80
+#. i18n: ectx: property (text), widget (QLabel, m_operationStatus)
+#: rc.cpp:31
+msgid "Operation count"
+msgstr "Операциялар саны"
+
+#: rc.cpp:32
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Сайран Киккарин"
 
-#: rc.cpp:20
+#: rc.cpp:33
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#~ msgid "Get associated service"
-#~ msgstr "Тиісті қызметке қол жеткізу"
+#: serviceviewer.cpp:44
+msgid "Start Operation"
+msgstr "Орерацияны бастау"
 
-#~ msgid "Update source now"
-#~ msgstr "Қазір көзін жаңартып алу"
+#: serviceviewer.cpp:51
+msgctxt "Plasma engine with unknown name"
+msgid "Unknown"
+msgstr "Беймәлім"
 
-#~ msgid "Remove source"
-#~ msgstr "Дерек көзін өшіру"
+#: serviceviewer.cpp:52
+msgctxt "Plasma service with unknown name"
+msgid "Unknown"
+msgstr "Беймәлім"
 
-#~ msgid "The source to request"
-#~ msgstr "Сұрайтын көзі"
+#: serviceviewer.cpp:66
+#, kde-format
+msgctxt "%1 is a Plasma service name"
+msgid "%1 Service Explorer"
+msgstr "%1 қызмет шолғышы"
 
-#~ msgid "&Operation:"
-#~ msgstr "&Операциясы:"
+#: serviceviewer.cpp:68
+#, kde-format
+msgid "DataEngine: <b>%1</b>; Source: <b>%2</b>; Service <b>%3</b>"
+msgstr "Дерек тетігі: <b>%1</b>; Көзі: <b>%2</b>; Қызметі <b>%3</b>"
 
-#~ msgid "Operation count"
-#~ msgstr "Операциялар саны"
+#: serviceviewer.cpp:169
+#, kde-format
+msgid "%1 operation with destination %2 failed. The error was:<p><b>%3</b>"
+msgstr "%2 мақсаттаған %1 операциясының жаңылысы. Қатесі:<p><b>%3</b>"
 
-#~ msgid "Start Operation"
-#~ msgstr "Орерацияны бастау"
+#: serviceviewer.cpp:172 serviceviewer.cpp:183
+msgid "Operation Result"
+msgstr "Операцияның нәтижесі"
 
-#~ msgctxt "Plasma engine with unknown name"
-#~ msgid "Unknown"
-#~ msgstr "Беймәлім"
+#: serviceviewer.cpp:176
+msgid "No response from job!"
+msgstr "Тапсырмадан жауап жоқ!"
 
-#~ msgctxt "Plasma service with unknown name"
-#~ msgid "Unknown"
-#~ msgstr "Беймәлім"
+#: serviceviewer.cpp:180
+#, kde-format
+msgid ""
+"%1 operation with destination %2 returned successfully. The result was:<p><b>"
+"%3</b>"
+msgstr "%2 мақсаттаған %1 операциясы сәтті өтті. Нәтижесі:<p><b>%3</b>"
 
-#~ msgctxt "%1 is a Plasma service name"
-#~ msgid "%1 Service Explorer"
-#~ msgstr "%1 қызмет шолғышы"
-
-#~ msgid "DataEngine: <b>%1</b>; Source: <b>%2</b>; Service <b>%3</b>"
-#~ msgstr "Дерек тетігі: <b>%1</b>; Көзі: <b>%2</b>; Қызметі <b>%3</b>"
-
-#~ msgid "%1 operation with destination %2 failed. The error was:<p><b>%3</b>"
-#~ msgstr "%2 мақсаттаған %1 операциясының жаңылысы. Қатесі:<p><b>%3</b>"
-
-#~ msgid "Operation Result"
-#~ msgstr "Операцияның нәтижесі"
-
-#~ msgid "No response from job!"
-#~ msgstr "Тапсырмадан жауап жоқ!"
-
-#~ msgid ""
-#~ "%1 operation with destination %2 returned successfully. The result was:"
-#~ "<p><b>%3</b>"
-#~ msgstr "%2 мақсаттаған %1 операциясы сәтті өтті. Нәтижесі:<p><b>%3</b>"
-
-#~ msgid "One active operation ..."
-#~ msgid_plural "%1 operations active ..."
-#~ msgstr[0] "%1 операция белсенді ..."
+#: serviceviewer.cpp:205
+#, kde-format
+msgid "One active operation ..."
+msgid_plural "%1 operations active ..."
+msgstr[0] "%1 операция белсенді ..."
 
 #~ msgid "%1 service for %2 DataEngine source %3"
 #~ msgstr "%2 дерек тетігі %3 көзінің %1 қызметі"
