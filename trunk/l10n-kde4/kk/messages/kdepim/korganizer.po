@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-16 09:08+0100\n"
+"POT-Creation-Date: 2009-02-17 09:10+0100\n"
 "PO-Revision-Date: 2007-04-28 20:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -208,7 +208,7 @@ msgstr "Өшіруді құптау"
 
 #. i18n: file: template_management_dialog_base.ui:41
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonDelete)
-#: filtereditdialog.cpp:252 kojournaleditor.cpp:209 rc.cpp:1126 rc.cpp:1962
+#: filtereditdialog.cpp:252 rc.cpp:1126 rc.cpp:1962
 msgid "Delete"
 msgstr "Өшіру"
 
@@ -1553,8 +1553,8 @@ msgctxt "@info"
 msgid "Do you really want to cancel?"
 msgstr ""
 
-#: koincidenceeditor.cpp:109 koeditorattachments.cpp:697 koeventeditor.cpp:410
-#: kotodoeditor.cpp:344
+#: koincidenceeditor.cpp:109 kojournaleditor.cpp:230
+#: koeditorattachments.cpp:697 koeventeditor.cpp:410 kotodoeditor.cpp:344
 #, fuzzy
 #| msgid "KOrganizer Confirmation"
 msgctxt "@title:window"
@@ -1939,7 +1939,7 @@ msgstr ""
 #. i18n: file: filteredit_base.ui:35
 #. i18n: ectx: property (text), widget (QPushButton, mDeleteButton)
 #: views/todoview/kotodoview.cpp:167 views/journalview/journalview.cpp:185
-#: calendarview.cpp:843 actionmanager.cpp:330 actionmanager.cpp:527
+#: calendarview.cpp:848 actionmanager.cpp:330 actionmanager.cpp:527
 #: actionmanager.cpp:1601 actionmanager.cpp:1630 rc.cpp:6 rc.cpp:2784
 msgid "&Delete"
 msgstr "Ө&шіру"
@@ -3550,12 +3550,12 @@ msgstr ""
 "Мұнда KOrganizer-дің негігі көрінісінде таңдалған оқиғаның, күнделік "
 "жазуының не жоспардың егжей-тегжейін көруге болады."
 
-#: calendarview.cpp:427
+#: calendarview.cpp:432
 #, kde-format
 msgid "Could not load calendar '%1'."
 msgstr "'%1' күнтізбесі жүктелмеді."
 
-#: calendarview.cpp:634
+#: calendarview.cpp:639
 #, fuzzy
 msgid ""
 "The time zone setting was changed. Do you want to keep the absolute time of "
@@ -3565,29 +3565,29 @@ msgstr ""
 "Уақыт белдеуі өзгертілді. Күнтізбеңізде нақты уақыт сақталып, уақыт белдеуге "
 "еріп өзертілсін бе, әлі жазыған түрде қала берсін бе?"
 
-#: calendarview.cpp:641
+#: calendarview.cpp:646
 msgid "Keep Absolute Times?"
 msgstr "Нақты уақыт өзгермесін бе?"
 
-#: calendarview.cpp:642
+#: calendarview.cpp:647
 msgid "Keep Times"
 msgstr "Нақты уақыт қалсын"
 
-#: calendarview.cpp:643
+#: calendarview.cpp:648
 msgid "Move Times"
 msgstr "Жазылғаны қалсын"
 
-#: calendarview.cpp:712
+#: calendarview.cpp:717
 #, fuzzy, kde-format
 msgid "Todo completed: %1 (%2)"
 msgstr "Жоспар орындалды: %1 (%2)"
 
-#: calendarview.cpp:722
+#: calendarview.cpp:727
 #, kde-format
 msgid "Journal of %1"
 msgstr "%1 күнделігі"
 
-#: calendarview.cpp:777
+#: calendarview.cpp:782
 #, kde-format
 msgid ""
 "The item \"%1\" is filtered by your current filter rules, so it will be "
@@ -3595,26 +3595,19 @@ msgid ""
 msgstr ""
 "\"%1\" деген қолданыстағы сүзгіден өтпей, көріністе жасырылып көретілмейді."
 
-#: calendarview.cpp:780
+#: calendarview.cpp:785
 msgid "Filter Applied"
 msgstr "Сүзгі қолданылды"
 
-#: calendarview.cpp:841
+#: calendarview.cpp:846
 #, kde-format
 msgid "The item \"%1\" will be permanently deleted."
 msgstr "\"%1\" мүлдем өшіріледі."
 
-#: calendarview.cpp:842 calendarview.cpp:2094 calendarview.cpp:2157
-#: calendarview.cpp:2168 kojournaleditor.cpp:208
+#: calendarview.cpp:847 calendarview.cpp:2094 calendarview.cpp:2157
+#: calendarview.cpp:2168
 msgid "KOrganizer Confirmation"
 msgstr "KOrganizer құптауы"
-
-#: calendarview.cpp:1088
-#, fuzzy, kde-format
-#| msgid "Journal of %1"
-msgctxt "Journal for DATE"
-msgid "Journal for %1"
-msgstr "%1 күнделігі"
 
 #: calendarview.cpp:1188
 msgid ""
@@ -4542,22 +4535,38 @@ msgstr "Жоспарды өшіру"
 msgid "Not delegated"
 msgstr "Ештеңе таңдалмаған."
 
-#: kojournaleditor.cpp:49
-msgid "Edit Journal Entry"
-msgstr "Күнделік жазуын өңдеу"
-
-#: kojournaleditor.cpp:77
+#: kojournaleditor.cpp:78
 #, fuzzy
 #| msgid "General"
 msgctxt "@title general journal settings"
 msgid "General"
 msgstr "Жалпы"
 
-#: kojournaleditor.cpp:207
+#: kojournaleditor.cpp:106
+#, fuzzy, kde-format
+#| msgid "Edit Journal Entry"
+msgctxt "@title:window"
+msgid "Edit Journal: %1"
+msgstr "Күнделік жазуын өңдеу"
+
+#: kojournaleditor.cpp:116
+#, fuzzy
+#| msgid "New &Journal..."
+msgctxt "@title:window"
+msgid "New Journal"
+msgstr "Жаңа &күнделік жазуы..."
+
+#: kojournaleditor.cpp:229
+#, fuzzy
+#| msgid "This journal entry will be permanently deleted."
+msgctxt "@info"
 msgid "This journal entry will be permanently deleted."
 msgstr "Күнделіктін бұл жазуы мүлдем өшіріледі."
 
-#: kojournaleditor.cpp:223
+#: kojournaleditor.cpp:247
+#, fuzzy
+#| msgid "Template does not contain a valid journal."
+msgctxt "@info"
 msgid "Template does not contain a valid journal."
 msgstr "Үлгіде дұрыс күнделік жобасы жоқ."
 
@@ -10565,40 +10574,47 @@ msgctxt "@info"
 msgid "The archive file name is not valid."
 msgstr "Архив файлының атауы дұрыс емес.\n"
 
-#: koeditorgeneraljournal.cpp:69
+#: koeditorgeneraljournal.cpp:71
 msgid "Sets the title of this journal."
 msgstr "Күнделік жазуының атауы."
 
-#: koeditorgeneraljournal.cpp:70
+#: koeditorgeneraljournal.cpp:72
 #, fuzzy
 #| msgid "T&itle:"
 msgctxt "journal title"
 msgid "T&itle:"
 msgstr "А&тауы:"
 
-#: koeditorgeneraljournal.cpp:88
+#: koeditorgeneraljournal.cpp:90
 msgid "&Date:"
 msgstr "&Күні:"
 
-#: koeditorgeneraljournal.cpp:97
+#: koeditorgeneraljournal.cpp:99
 msgid "&Time: "
 msgstr "&Уақыты: "
 
-#: koeditorgeneraljournal.cpp:129
+#: koeditorgeneraljournal.cpp:131
 #, fuzzy
 #| msgid ""
 #| "Allows you to select the categories that this event or to-do belongs to."
 msgid "Allows you to select the categories that this journal belongs to."
 msgstr "Оқиға не жоспар қай санатқа жататынын таңдауды рұқсат ету."
 
-#: koeditorgeneraljournal.cpp:132
+#: koeditorgeneraljournal.cpp:134
 msgid "Select Cate&gories..."
 msgstr "Са&натын таңдау..."
 
-#: koeditorgeneraljournal.cpp:219
+#: koeditorgeneraljournal.cpp:222
 #, kde-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "Күнін дұрыс келтіріңіз, мысалы былай: '%1'."
+
+#: koeditorgeneraljournal.cpp:229
+#, fuzzy
+#| msgid "Please specify a valid due time."
+msgctxt "@info"
+msgid "Please specify a journal title."
+msgstr "Дұрыс аяқталу уақытын келтіріңіз."
 
 #: templatemanagementdialog.cpp:51
 msgid "Manage Templates"
@@ -11470,6 +11486,12 @@ msgstr "\"Не істеу?\" бетін басып шығару"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "Келер оқиға мен жоспарлар тізімін басып шығару."
+
+#, fuzzy
+#~| msgid "Journal of %1"
+#~ msgctxt "Journal for DATE"
+#~ msgid "Journal for %1"
+#~ msgstr "%1 күнделігі"
 
 #, fuzzy
 #~| msgctxt "delimiter for joining holiday names"
