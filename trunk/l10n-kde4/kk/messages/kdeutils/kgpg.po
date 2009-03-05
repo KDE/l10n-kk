@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-25 11:42+0100\n"
+"POT-Creation-Date: 2009-03-05 10:36+0100\n"
 "PO-Revision-Date: 2007-04-28 19:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -1530,10 +1530,12 @@ msgstr ""
 "мүмкіндіктері істемейді. GnuPG-ді жаңартуын қарастырыңыз (http://gnupg.org)."
 
 #: kgpginterface.cpp:458 kgpgtextinterface.cpp:108
+#: transactions/kgpgtransaction.cpp:149
 msgid " or "
 msgstr " немесе "
 
 #: kgpginterface.cpp:1010 kgpgtextinterface.cpp:114
+#: transactions/kgpgtransaction.cpp:175
 #, fuzzy, kde-format
 #| msgid "<b>Bad passphrase</b>. You have %1 tries left.<br>"
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
@@ -1541,6 +1543,7 @@ msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr[0] "<b>Жарамсыз пароль</b>. %1 қолданылып көрмеген кілт қалды.<br>"
 
 #: kgpginterface.cpp:1012 kgpgtextinterface.cpp:119
+#: transactions/kgpgchangeexpire.cpp:72 transactions/kgpgtransaction.cpp:177
 #, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "<b>%1</b> үшін паролін келтіріңіз"
@@ -1972,6 +1975,7 @@ msgid "Enter passphrase (symmetrical encryption)"
 msgstr "Паролін келтіріңіз (симметриялы шифрлау)"
 
 #: kgpgtextinterface.cpp:106 model/kgpgitemnode.cpp:836
+#: transactions/kgpgtransaction.cpp:170
 msgid "[No user id found]"
 msgstr "[Пайдаланушының идентификаторы табылмады]"
 
@@ -4162,52 +4166,80 @@ msgid "1 key"
 msgid_plural "%1 keys"
 msgstr[0] "%1 ішкі кілті"
 
+#: transactions/kgpgaddphoto.cpp:52
+msgid "This image is very large. Use it anyway?"
+msgstr "Кескін өте үлкен. Ала берейік пе?"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Use Anyway"
+msgstr "Ала беру"
+
+#: transactions/kgpgaddphoto.cpp:52
+msgid "Do Not Use"
+msgstr "Алмау"
+
+#: transactions/kgpgchangeexpire.cpp:71
+#, fuzzy, kde-format
+#| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
+msgid "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
+msgstr "<b>Жарамсыз пароль</b>. әлі %1 әрекет қалды.<br>"
+
+#: transactions/kgpgchangeexpire.cpp:98
+#, fuzzy
+#| msgid ""
+#| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing the "
+#| "key expiration in console mode?</qt>"
+msgid ""
+"<qt><b>Changing expiration failed.</b><br />Do you want to try changing the "
+"key expiration in console mode?</qt>"
+msgstr ""
+"<qt><b>Мерзімін өзгерткенде қате орын алды.</b><br>Консоль режімінде "
+"мерзімін өзгертіп көресіз бе?</qt>"
+
+#: transactions/kgpgchangeexpire.cpp:101
+msgid "work in progress..."
+msgstr ""
+
+#: transactions/kgpgchangepass.cpp:64
+#, fuzzy, kde-format
+msgid "Enter old passphrase for <b>%1</b>"
+msgstr "<b>%1</b> үшін паролін келтіріңіз"
+
+#: transactions/kgpgchangepass.cpp:67
+#, fuzzy, kde-format
+msgid ""
+"<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
+"all your encrypted files and messages will be inaccessible!</qt>"
+msgstr ""
+"<qt><b>%1</b> үшін жаңа паролін келтіріңіз<br>Егер бұл пароль ұмытылып "
+"қалса, барлық шифрланған файл мен хабарларыңызды оқи алмай қаласыз!<br></qt>"
+
+#: transactions/kgpggeneratekey.cpp:113
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1 &lt;%2&gt;</b>:<br />Passphrase should include "
+"non alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>%1</b> үшін паролін келтіріңіз:<br>Пароліңізде әріптер мен цифрларға "
+"жатпайтын кездейсоқ таңбалар да болуы жөн"
+
+#: transactions/kgpggeneratekey.cpp:115
+#, fuzzy, kde-format
+#| msgid ""
+#| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
+#| "alphanumeric characters and random sequences"
+msgid ""
+"<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
+"alphanumeric characters and random sequences</p>"
+msgstr ""
+"<b>%1</b> үшін паролін келтіріңіз:<br>Пароліңізде әріптер мен цифрларға "
+"жатпайтын кездейсоқ таңбалар да болуы жөн"
+
 #~ msgid "Filter Search"
 #~ msgstr "Іздейтінді сүзгілеу"
-
-#, fuzzy
-#~| msgid ""
-#~| "<b>Enter passphrase for %1</b>:<br>Passphrase should include non "
-#~| "alphanumeric characters and random sequences"
-#~ msgid ""
-#~ "<p><b>Enter passphrase for %1</b>:<br />Passphrase should include non "
-#~ "alphanumeric characters and random sequences</p>"
-#~ msgstr ""
-#~ "<b>%1</b> үшін паролін келтіріңіз:<br>Пароліңізде әріптер мен цифрларға "
-#~ "жатпайтын кездейсоқ таңбалар да болуы жөн"
-
-#~ msgid "This image is very large. Use it anyway?"
-#~ msgstr "Кескін өте үлкен. Ала берейік пе?"
-
-#~ msgid "Use Anyway"
-#~ msgstr "Ала беру"
-
-#~ msgid "Do Not Use"
-#~ msgstr "Алмау"
-
-#, fuzzy
-#~| msgid ""
-#~| "<qt><b>Changing expiration failed.</b><br>Do you want to try changing "
-#~| "the key expiration in console mode?</qt>"
-#~ msgid ""
-#~ "<qt><b>Changing expiration failed.</b><br />Do you want to try changing "
-#~ "the key expiration in console mode?</qt>"
-#~ msgstr ""
-#~ "<qt><b>Мерзімін өзгерткенде қате орын алды.</b><br>Консоль режімінде "
-#~ "мерзімін өзгертіп көресіз бе?</qt>"
-
-#, fuzzy
-#~ msgid "Enter old passphrase for <b>%1</b>"
-#~ msgstr "<b>%1</b> үшін паролін келтіріңіз"
-
-#, fuzzy
-#~ msgid ""
-#~ "<qt>Enter new passphrase for <b>%1</b><br />If you forget this passphrase "
-#~ "all your encrypted files and messages will be inaccessible<br /></qt>"
-#~ msgstr ""
-#~ "<qt><b>%1</b> үшін жаңа паролін келтіріңіз<br>Егер бұл пароль ұмытылып "
-#~ "қалса, барлық шифрланған файл мен хабарларыңызды оқи алмай қаласыз!<br></"
-#~ "qt>"
 
 #~ msgid "Start Wizard"
 #~ msgstr "Шеберін жегу"
@@ -4387,11 +4419,6 @@ msgstr[0] "%1 ішкі кілті"
 
 #~ msgid "Bad passphrase, signature was not created."
 #~ msgstr "Пароль жарамсыз, қолтаңба құрылған жоқ."
-
-#, fuzzy
-#~| msgid "<b>Bad passphrase</b>. you have %1 tries left.<br>"
-#~ msgid "<p><b>Bad passphrase</b>. you have %1 tries left.</p>"
-#~ msgstr "<b>Жарамсыз пароль</b>. әлі %1 әрекет қалды.<br>"
 
 #~ msgid "Shred Files"
 #~ msgstr "Файлдарды әбден жою"
