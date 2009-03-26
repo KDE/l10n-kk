@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-16 10:31+0100\n"
+"POT-Creation-Date: 2009-03-26 10:47+0100\n"
 "PO-Revision-Date: 2008-11-19 10:42+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -1081,6 +1081,21 @@ msgstr "'%1' деп аталған сеанс бар екен, оның үсті
 msgid "Session exists. Overwrite?"
 msgstr "Бұндай сеанс бар. Үстінен жаза берейік пе?"
 
+#: src/konqhistorymodel.cpp:132
+#: sidebar/trees/history_module/history_item.cpp:120
+#, kde-format
+msgid ""
+"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
+"3<br />Number of times visited: %4</qt>"
+msgstr ""
+"<qt><center><b>%1</b></center><hr />Соңғы ашылған: %2<br />Алғашқы рет "
+"ашылған: %3<br />Ашылған саны: %4</qt>"
+
+#: src/konqhistorymodel.cpp:203
+#: sidebar/trees/history_module/history_module.h:62
+msgid "Miscellaneous"
+msgstr "Түрлі басқа"
+
 #: src/konqview.cpp:1314
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1276,15 +1291,6 @@ msgstr "Бүкіл журналды тазалағыңыз келгені рас
 msgid "Clear History?"
 msgstr "Журнал тазалансын ба?"
 
-#: sidebar/trees/history_module/history_item.cpp:120
-#, kde-format
-msgid ""
-"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
-"3<br />Number of times visited: %4</qt>"
-msgstr ""
-"<qt><center><b>%1</b></center><hr />Соңғы ашылған: %2<br />Алғашқы рет "
-"ашылған: %3<br />Ашылған саны: %4</qt>"
-
 #: sidebar/trees/history_module/kcmhistory.cpp:76
 #: sidebar/trees/history_module/kcmhistory.cpp:81
 msgid "Minutes"
@@ -1317,10 +1323,6 @@ msgstr[0] "Күн"
 msgid "Minute"
 msgid_plural "Minutes"
 msgstr[0] "Минут"
-
-#: sidebar/trees/history_module/history_module.h:62
-msgid "Miscellaneous"
-msgstr "Түрлі басқа"
 
 #: sidebar/trees/dirtree_module/dirtree_module.cpp:424
 #, kde-format
@@ -1831,7 +1833,7 @@ msgstr "Мүмкіншілік"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:137
 #. i18n: ectx: property (title), widget (QGroupBox, gbDetails)
-#: about/konq_aboutpage.cc:234 rc.cpp:95
+#: about/konq_aboutpage.cc:234 rc.cpp:92
 msgid "Details"
 msgstr "Егжей-тегжейлері"
 
@@ -2036,18 +2038,6 @@ msgstr "Рұқсат етпеу"
 msgid "Keep"
 msgstr "Болсын"
 
-#: remoteencodingplugin/kremoteencodingplugin.cpp:53
-msgid "Select Remote Charset"
-msgstr "Қашықтағы кодтаманы таңдаңыз"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:127
-msgid "Reload"
-msgstr "Қайта жүктеп алу"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:128
-msgid "Default"
-msgstr "Әдетті"
-
 #: shellcmdplugin/kshellcmdexecutor.cpp:124
 msgid "Input Required:"
 msgstr "Керек кіріс:"
@@ -2156,99 +2146,97 @@ msgstr "Адрес панелі"
 msgid "Bookmark Toolbar"
 msgstr "Бетбелгі панелі"
 
-#. i18n: file: remoteencodingplugin/kremoteencodingplugin.rc:4
-#. i18n: ectx: Menu (tools)
 #. i18n: file: shellcmdplugin/kshellcmdplugin.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:38 rc.cpp:41
+#: rc.cpp:38
 msgid "&Tools"
 msgstr "&Құралдар"
 
 #. i18n: file: src/konqprofiledlg_base.ui:16
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:44
+#: rc.cpp:41
 msgid "&Profile name:"
 msgstr "&Профильдің атауы:"
 
 #. i18n: file: src/konqprofiledlg_base.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, m_cbSaveURLs)
-#: rc.cpp:47
+#: rc.cpp:44
 msgid "Save &URLs in profile"
 msgstr "&URL-адрестері профилде сақталсын"
 
 #. i18n: file: src/konqsessiondlg_base.ui:25
 #. i18n: ectx: property (text), widget (QPushButton, m_pNewButton)
-#: rc.cpp:50
+#: rc.cpp:47
 msgctxt "@action:button New session"
 msgid "New..."
 msgstr "Жаңа..."
 
 #. i18n: file: src/konqsessiondlg_base.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, m_pSaveCurrentButton)
-#: rc.cpp:53
+#: rc.cpp:50
 msgctxt "@action:button Save current session"
 msgid "Save Current"
 msgstr "Назардағыны сақтау"
 
 #. i18n: file: src/konqsessiondlg_base.ui:39
 #. i18n: ectx: property (text), widget (QPushButton, m_pRenameButton)
-#: rc.cpp:56
+#: rc.cpp:53
 msgctxt "@action:button Rename session"
 msgid "Rename..."
 msgstr "Қайта атау..."
 
 #. i18n: file: src/konqsessiondlg_base.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, m_pDeleteButton)
-#: rc.cpp:59
+#: rc.cpp:56
 msgctxt "@action:button Delete session"
 msgid "Delete"
 msgstr "Өшіру"
 
 #. i18n: file: src/konqsessiondlg_base.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, m_pOpenTabsInsideCurrentWindow)
-#: rc.cpp:62
+#: rc.cpp:59
 msgid "Open tabs inside current window"
 msgstr "Назардағы терезеде қойындыларды ашу"
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:33
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: rc.cpp:65
+#: rc.cpp:62
 msgid "Save open tabs and windows for easy retrieval"
 msgstr "Ашылған терезелер мен қойындыларды тез табу үшін сақтау"
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lblSessionName)
-#: rc.cpp:68
+#: rc.cpp:65
 msgid "&Session name:"
 msgstr "&Сеанстың атауы:"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, gbLimits)
-#: rc.cpp:71
+#: rc.cpp:68
 msgid "Limits"
 msgstr "Шектер"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:44
 #. i18n: ectx: property (text), widget (QCheckBox, cbExpire)
-#: rc.cpp:74
+#: rc.cpp:71
 msgid "URLs e&xpire after"
 msgstr "URL-адрестің ес&кіретін мерзімі"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:54
 #. i18n: ectx: property (text), widget (QLabel, lEntries)
-#: rc.cpp:77
+#: rc.cpp:74
 msgid "Maximum &number of URLs:"
 msgstr "URL &санының шегі:"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:73
 #. i18n: ectx: property (title), widget (QGroupBox, gbFonts)
-#: rc.cpp:80
+#: rc.cpp:77
 msgid "Custom Fonts For"
 msgstr "Ерекше қаріпті"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:91
 #. i18n: ectx: property (text), widget (QLabel, lbNewer)
-#: rc.cpp:83
+#: rc.cpp:80
 msgid "URLs newer than"
 msgstr "URL-дың жаңалығы"
 
@@ -2256,19 +2244,19 @@ msgstr "URL-дың жаңалығы"
 #. i18n: ectx: property (text), widget (QPushButton, btnFontOlder)
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:127
 #. i18n: ectx: property (text), widget (QPushButton, btnFontNewer)
-#: rc.cpp:86 rc.cpp:92
+#: rc.cpp:83 rc.cpp:89
 msgid "Choose Font..."
 msgstr "Қаріпті таңдау..."
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:114
 #. i18n: ectx: property (text), widget (QLabel, lbOlder)
-#: rc.cpp:89
+#: rc.cpp:86
 msgid "URLs older than"
 msgstr "URL-адрестердің ескілігі"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:146
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:98
+#: rc.cpp:95
 msgid ""
 "Shows the number of times visited and the dates of the first and last "
 "visits, in addition to the URL"
@@ -2278,12 +2266,21 @@ msgstr ""
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:149
 #. i18n: ectx: property (text), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:101
+#: rc.cpp:98
 msgid "Detailed tooltips"
 msgstr "Егжей-тегжейлі ишаралар"
 
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:164
 #. i18n: ectx: property (text), widget (QPushButton, btnClearHistory)
-#: rc.cpp:104
+#: rc.cpp:101
 msgid "Clear History"
 msgstr "Журналды тазалау"
+
+#~ msgid "Select Remote Charset"
+#~ msgstr "Қашықтағы кодтаманы таңдаңыз"
+
+#~ msgid "Reload"
+#~ msgstr "Қайта жүктеп алу"
+
+#~ msgid "Default"
+#~ msgstr "Әдетті"
