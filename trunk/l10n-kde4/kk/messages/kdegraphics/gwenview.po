@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-18 11:50+0200\n"
+"POT-Creation-Date: 2009-04-20 11:21+0200\n"
 "PO-Revision-Date: 2008-03-27 23:58+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -454,11 +454,21 @@ msgstr ""
 msgid "No Plugin"
 msgstr "&Масштабтаусыз"
 
-#: app/startpage.cpp:64
+#: app/startpage.cpp:86
 msgid ""
 "Sorry, browsing by tag is not available. Make sure Nepomuk is properly "
 "installed on your computer."
 msgstr ""
+
+#: app/startpage.cpp:221
+msgid "Add to Places"
+msgstr ""
+
+#: app/startpage.cpp:222
+#, fuzzy
+#| msgid "Create Folder"
+msgid "Forget this Folder"
+msgstr "Қапшықты құру"
 
 #: app/thumbnailviewhelper.cpp:146
 msgid "Move Here"
@@ -534,22 +544,22 @@ msgstr ""
 msgid "Semantic Information"
 msgstr "Метадеректері"
 
-#: app/semanticinfocontextmanageritem.cpp:157
+#: app/semanticinfocontextmanageritem.cpp:158
 msgctxt "@title actions category"
 msgid "Edit"
 msgstr ""
 
-#: app/semanticinfocontextmanageritem.cpp:160
+#: app/semanticinfocontextmanageritem.cpp:161
 msgctxt "@action"
 msgid "Edit Tags"
 msgstr ""
 
-#: app/semanticinfocontextmanageritem.cpp:170
+#: app/semanticinfocontextmanageritem.cpp:171
 msgctxt "@action Rating value of zero"
 msgid "Zero"
 msgstr ""
 
-#: app/semanticinfocontextmanageritem.cpp:206
+#: app/semanticinfocontextmanageritem.cpp:207
 msgid "Edit"
 msgstr ""
 
@@ -850,6 +860,11 @@ msgstr ""
 #: lib/documentview/messageviewadapter.cpp:46
 msgid "No document selected"
 msgstr "Құжат таңдалмаған"
+
+#: lib/historymodel.cpp:156
+#, kde-format
+msgid "Last visited: %1"
+msgstr ""
 
 #: lib/jpegcontent.cpp:544
 msgctxt "@info"
@@ -1180,13 +1195,13 @@ msgstr ""
 
 #. i18n: file: app/startpage.ui:30
 #. i18n: ectx: attribute (title), widget (QWidget, placesTab)
-#. i18n: file: app/startpage.ui:36
+#. i18n: file: app/startpage.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:72 rc.cpp:75
 msgid "Places"
 msgstr ""
 
-#. i18n: file: app/startpage.ui:46
+#. i18n: file: app/startpage.ui:58
 #. i18n: ectx: property (text), widget (QLabel, mTagTitleLabel)
 #: rc.cpp:78
 #, fuzzy
@@ -1195,13 +1210,13 @@ msgstr ""
 msgid "Tags"
 msgstr "Тастау"
 
-#. i18n: file: app/startpage.ui:109
+#. i18n: file: app/startpage.ui:130
 #. i18n: ectx: attribute (title), widget (QWidget, historyTab)
 #: rc.cpp:81
 msgid "History"
 msgstr ""
 
-#. i18n: file: app/startpage.ui:115
+#. i18n: file: app/startpage.ui:142
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:84
 #, fuzzy
@@ -1468,7 +1483,7 @@ msgstr "Дюймдер"
 msgid "Keep ratio"
 msgstr "Ара қатынасы сақталсын"
 
-#. i18n: file: lib/gwenviewconfig.kcfg:26
+#. i18n: file: lib/gwenviewconfig.kcfg:23
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
 #: rc.cpp:210
 msgid ""
@@ -1476,7 +1491,7 @@ msgid ""
 "\t\t\twarns the user and suggest saving changes."
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:33
+#. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
 #: rc.cpp:214
 msgid ""
@@ -1485,25 +1500,25 @@ msgid ""
 "\t\t\tTIFF or JPEG."
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:178
+#. i18n: file: lib/gwenviewconfig.kcfg:175
 #. i18n: ectx: label, entry (random), group (slide show)
 #: rc.cpp:219
 msgid "Display slide show images in random order"
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:182
+#. i18n: file: lib/gwenviewconfig.kcfg:179
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
 #: rc.cpp:222
 msgid "Show slideshow in fullscreen mode"
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:186
+#. i18n: file: lib/gwenviewconfig.kcfg:183
 #. i18n: ectx: label, entry (loop), group (slide show)
 #: rc.cpp:225
 msgid "Loop on images"
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:190
+#. i18n: file: lib/gwenviewconfig.kcfg:187
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
 #: rc.cpp:228
 #, fuzzy
@@ -1511,7 +1526,7 @@ msgstr ""
 msgid "Stop at last image of folder"
 msgstr "Бастапқы файл әлде қапшық"
 
-#. i18n: file: lib/gwenviewconfig.kcfg:194
+#. i18n: file: lib/gwenviewconfig.kcfg:191
 #. i18n: ectx: label, entry (interval), group (slide show)
 #: rc.cpp:231
 msgid "Interval between images (in seconds)"
