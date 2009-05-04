@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lokalize\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-03 11:06+0200\n"
+"POT-Creation-Date: 2009-05-04 12:02+0200\n"
 "PO-Revision-Date: 2008-03-31 23:10+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@sci.kz>\n"
 "Language-Team: Kazakh\n"
@@ -18,6 +18,44 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
+
+#: alttransview.cpp:46 alttransview.cpp:49
+#, fuzzy
+#| msgctxt "@title:column"
+#| msgid "Last Translation"
+msgctxt "@title:window"
+msgid "Alternate Translations"
+msgstr "Соңғы аударылған"
+
+#: alttransview.cpp:82
+msgctxt "@info:tooltip"
+msgid ""
+"<p>Sometimes, if original text is changed, its translation becomes "
+"deprecated and is either marked as <emphasis>needing&nbsp;review</emphasis> "
+"(i.e. looses approval status), or (only in case of XLIFF file) moved to the "
+"<emphasis>alternate&nbsp;translations</emphasis> section accompanying the "
+"unit.</p><p>This toolview also shows the difference between new original "
+"string and the old one, so that you can easily see which changes should be "
+"applied to existing translation.</p><p>Double-click any word in this "
+"toolview to insert it into translation.</p><p>Drop translation file onto "
+"this toolview to use it as a source for alternate translations.</p>"
+msgstr ""
+
+#: alttransview.cpp:234
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Copy all new translations"
+msgctxt "@item Undo action"
+msgid "Use alternate translation"
+msgstr "Бүкіл жаңа аудармаларын көшіріп алу"
+
+#: binunitsview.cpp:131 cataloglistview/catalogmodel.cpp:141
+msgid "no"
+msgstr ""
+
+#: binunitsview.cpp:131 cataloglistview/catalogmodel.cpp:141
+msgid "yes"
+msgstr ""
 
 #: binunitsview.cpp:149
 msgctxt "@title:column"
@@ -45,7 +83,7 @@ msgctxt "@title toolview name"
 msgid "Binary Units"
 msgstr ""
 
-#: binunitsview.cpp:182
+#: binunitsview.cpp:197
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Spellcheck files"
@@ -53,46 +91,48 @@ msgctxt "@action:inmenu"
 msgid "Set the file"
 msgstr "Файлдарда емлені тексеру"
 
-#: binunitsview.cpp:183
+#: binunitsview.cpp:198
 msgctxt "@action:inmenu"
 msgid "Use source file"
 msgstr ""
 
-#: editortab.cpp:152
+#: editortab.cpp:155
 #, kde-format
 msgctxt "@info:status message entry"
 msgid "Current: %1"
 msgstr "Назардағы: %1"
 
-#: editortab.cpp:153 editortab.cpp:743
+#: editortab.cpp:156 editortab.cpp:774
 #, kde-format
 msgctxt "@info:status message entries"
 msgid "Total: %1"
 msgstr "Барлығы: %1"
 
-#: editortab.cpp:154 editortab.cpp:164
-#, kde-format
+#: editortab.cpp:157 editortab.cpp:167
+#, fuzzy, kde-format
+#| msgctxt "@info:status message entries"
+#| msgid "Total: %1"
 msgctxt "@info:status message entries"
-msgid "Fuzzy: %1"
-msgstr "Дүмбілез: %1"
+msgid "Not ready: %1"
+msgstr "Барлығы: %1"
 
-#: editortab.cpp:155 editortab.cpp:169
+#: editortab.cpp:158 editortab.cpp:172
 #, kde-format
 msgctxt "@info:status message entries"
 msgid "Untranslated: %1"
 msgstr "Аударылмаған: %1"
 
-#: editortab.cpp:183 lokalizemainwindow.cpp:355
+#: editortab.cpp:186 lokalizemainwindow.cpp:355
 msgctxt "@title actions category"
 msgid "File"
 msgstr ""
 
-#: editortab.cpp:184
+#: editortab.cpp:187
 msgctxt "@title actions category"
 msgid "Navigation"
 msgstr ""
 
-#: editortab.cpp:185
+#: editortab.cpp:188
 #, fuzzy
 #| msgctxt "@action:inmenu Edit term"
 #| msgid "Edit"
@@ -100,21 +140,21 @@ msgctxt "@title actions category"
 msgid "Editing"
 msgstr "Өңдеу"
 
-#: editortab.cpp:186
+#: editortab.cpp:189
 msgid "Synchronization 1"
 msgstr ""
 
-#: editortab.cpp:187
+#: editortab.cpp:190
 msgid "Synchronization 2"
 msgstr ""
 
-#: editortab.cpp:188
+#: editortab.cpp:191
 #, fuzzy
 #| msgid "Translation Memory"
 msgid "Translation Memory"
 msgstr "Жатталған аудармалар (ТМ)"
 
-#: editortab.cpp:189 lokalizemainwindow.cpp:357
+#: editortab.cpp:192 lokalizemainwindow.cpp:357
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Glossary"
@@ -122,47 +162,55 @@ msgctxt "@title actions category"
 msgid "Glossary"
 msgstr "Сөздік"
 
-#: editortab.cpp:190
+#: editortab.cpp:193
 #, fuzzy
 #| msgid "&Tools"
 msgctxt "@title actions category"
 msgid "Tools"
 msgstr "Құ&ралдар"
 
-#: editortab.cpp:252
+#: editortab.cpp:218
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Insert # %1 term translation"
+msgctxt "@action:inmenu"
+msgid "Insert alternate translation # %1"
+msgstr "# %1 терминін ендіру"
+
+#: editortab.cpp:280
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert TM suggestion # %1"
 msgstr "TM # %1 ұсынысын ендіру"
 
-#: editortab.cpp:298
+#: editortab.cpp:326
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert # %1 term translation"
 msgstr "# %1 терминін ендіру"
 
-#: editortab.cpp:309
+#: editortab.cpp:337
 msgctxt "@action:inmenu"
 msgid "Define new term"
 msgstr "Жаңа терминді анықтау"
 
-#: editortab.cpp:340
+#: editortab.cpp:371
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Insert WebQuery result # %1"
 msgstr "ВебСұранысының # %1 нәтижесін ендіру"
 
-#: editortab.cpp:371
+#: editortab.cpp:402
 msgctxt "@action:inmenu"
 msgid "Phases..."
 msgstr ""
 
-#: editortab.cpp:407
+#: editortab.cpp:438
 msgctxt "@action:inmenu"
 msgid "Change searching direction"
 msgstr "Іздеу бағытын өзгерту"
 
-#: editortab.cpp:411
+#: editortab.cpp:442
 #, fuzzy
 #| msgctxt "@option:check whether message is marked as Approved"
 #| msgid "Approved"
@@ -172,12 +220,12 @@ msgctxt ""
 msgid "Approved"
 msgstr "Мақұлданған"
 
-#: editortab.cpp:427
+#: editortab.cpp:458
 msgctxt "@action:inmenu"
 msgid "Approve and go to next"
 msgstr ""
 
-#: editortab.cpp:432
+#: editortab.cpp:463
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Copy all new translations"
@@ -185,12 +233,12 @@ msgctxt "@action:inmenu"
 msgid "Equivalent translation"
 msgstr "Бүкіл жаңа аудармаларын көшіріп алу"
 
-#: editortab.cpp:444
+#: editortab.cpp:475
 msgctxt "@action:inmenu"
 msgid "Copy source to target"
 msgstr ""
 
-#: editortab.cpp:447
+#: editortab.cpp:478
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Unwrap Msgstr"
@@ -198,109 +246,121 @@ msgctxt "@action:inmenu"
 msgid "Unwrap target"
 msgstr "Msgstr-ды тасымалдаусыз қылу"
 
-#: editortab.cpp:452
+#: editortab.cpp:483
 msgctxt "@action:inmenu"
 msgid "Clear"
 msgstr "Тазалау"
 
-#: editortab.cpp:456
+#: editortab.cpp:487
 msgctxt "@action:inmenu"
 msgid "Insert Tag"
 msgstr "Тегті енгізу"
 
-#: editortab.cpp:464
+#: editortab.cpp:495
 msgctxt "@action:inmenu entry"
 msgid "&Next"
 msgstr "&Келесі"
 
-#: editortab.cpp:469
+#: editortab.cpp:500
 msgctxt "@action:inmenu entry"
 msgid "&Previous"
 msgstr "&Алдыңғы"
 
-#: editortab.cpp:475
+#: editortab.cpp:506
 msgctxt "@action:inmenu"
 msgid "&First Entry"
 msgstr "&Бірінші жазу"
 
-#: editortab.cpp:481
+#: editortab.cpp:512
 msgctxt "@action:inmenu"
 msgid "&Last Entry"
 msgstr "&Соңғы жазу"
 
-#: editortab.cpp:487
+#: editortab.cpp:518
 msgctxt "@action:inmenu"
 msgid "Entry by number"
 msgstr "Нөмірі бойынша"
 
-#: editortab.cpp:489
+#: editortab.cpp:520
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Previous translated but not approved"
 msgctxt "@action:inmenu"
-msgid "Previous translated but not approved"
+msgid "Previous non-empty but not ready"
 msgstr "Алдыңғы аударылған бірақ мақұлданбаған"
 
-#: editortab.cpp:493
+#: editortab.cpp:524
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Next translated but not approved"
 msgctxt "@action:inmenu"
-msgid "Next translated but not approved"
+msgid "Next non-empty but not ready"
 msgstr "Келесі аударылған бірақ мақұлданбаған"
 
-#: editortab.cpp:497
+#: editortab.cpp:528
 msgctxt "@action:inmenu"
 msgid "Previous untranslated"
 msgstr "Алдыңғы аударылмаған"
 
-#: editortab.cpp:501
+#: editortab.cpp:532
 msgctxt "@action:inmenu"
 msgid "Next untranslated"
 msgstr "Келесі аударылмаған"
 
-#: editortab.cpp:505
+#: editortab.cpp:536
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Previous not approved"
 msgctxt "@action:inmenu"
-msgid "Previous not approved"
+msgid "Previous not ready"
 msgstr "Алдыңғы мақұлданбаған"
 
-#: editortab.cpp:509
+#: editortab.cpp:540
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Next not approved"
 msgctxt "@action:inmenu"
-msgid "Next not approved"
+msgid "Next not ready"
 msgstr "Келесі мақұлданбаған"
 
-#: editortab.cpp:516
+#: editortab.cpp:547
 msgctxt "@option:check"
 msgid "Bookmark message"
 msgstr "Жазуды бетбелгілеу"
 
-#: editortab.cpp:522
+#: editortab.cpp:553
 msgctxt "@action:inmenu"
 msgid "Previous bookmark"
 msgstr "Алдыңғы бетбелгі"
 
-#: editortab.cpp:526
+#: editortab.cpp:557
 msgctxt "@action:inmenu"
 msgid "Next bookmark"
 msgstr "Келесі бетбелгі"
 
-#: editortab.cpp:534
+#: editortab.cpp:565
 #, no-c-format
 msgctxt "@action:inmenu"
 msgid "Fill in all exact suggestions"
 msgstr "Дәлме-дәл сәйкесті жазулардың аудармасын алу"
 
-#: editortab.cpp:538
+#: editortab.cpp:569
 #, no-c-format
 msgctxt "@action:inmenu"
 msgid "Fill in all exact suggestions and mark as fuzzy"
 msgstr "Дәлме-дәл сәйкесті жазулардың аудармасын дүмбілез деп алу"
 
-#: editortab.cpp:542
+#: editortab.cpp:573
 msgctxt "@action:inmenu"
 msgid "Word count"
 msgstr ""
 
-#: editortab.cpp:547
+#: editortab.cpp:578
 msgctxt "@action:inmenu"
 msgid "Open file for sync/merge"
 msgstr "Біріктіріп алатын файлды ашу"
 
-#: editortab.cpp:548 editortab.cpp:594
+#: editortab.cpp:579 editortab.cpp:625
 msgctxt "@info:status"
 msgid ""
 "Open catalog to be merged into the current one / replicate base file changes "
@@ -309,12 +369,12 @@ msgstr ""
 "Назардағы файлға біріктіріп алынатын (негізгі файл өзгерістерін "
 "көшірмелейтін) файлды ашу"
 
-#: editortab.cpp:554 editortab.cpp:600
+#: editortab.cpp:585 editortab.cpp:631
 msgctxt "@action:inmenu"
 msgid "Previous different"
 msgstr "Алдыңғы айырмашылығы"
 
-#: editortab.cpp:555 editortab.cpp:601
+#: editortab.cpp:586 editortab.cpp:632
 msgctxt "@info:status"
 msgid ""
 "Previous entry which is translated differently in the file being merged, "
@@ -323,12 +383,12 @@ msgstr ""
 "Біріктіріп алынатын файлдағы аудармасы өзгеше (бос аудармаларды қоса) "
 "алдыңғы жазуы"
 
-#: editortab.cpp:563 editortab.cpp:608
+#: editortab.cpp:594 editortab.cpp:639
 msgctxt "@action:inmenu"
 msgid "Next different"
 msgstr "Келесі айырмашылығы"
 
-#: editortab.cpp:564 editortab.cpp:609
+#: editortab.cpp:595 editortab.cpp:640
 msgctxt "@info:status"
 msgid ""
 "Next entry which is translated differently in the file being merged, "
@@ -337,22 +397,22 @@ msgstr ""
 "Біріктіріп алынатын файлдағы аудармасы өзгеше (бос аудармаларды қоса) келесі "
 "жазуы"
 
-#: editortab.cpp:572 editortab.cpp:616
+#: editortab.cpp:603 editortab.cpp:647
 msgctxt "@action:inmenu"
 msgid "Copy from merging source"
 msgstr "Біріктіретінен көшіріп алу"
 
-#: editortab.cpp:578 editortab.cpp:621
+#: editortab.cpp:609 editortab.cpp:652
 msgctxt "@action:inmenu"
 msgid "Copy all new translations"
 msgstr "Бүкіл жаңа аудармаларын көшіріп алу"
 
-#: editortab.cpp:579
+#: editortab.cpp:610
 msgctxt "@info:status"
 msgid "This changes only empty entries in base file"
 msgstr "Бұл өзгерістер негізгі файлдың тек бос жазуларына тиеді"
 
-#: editortab.cpp:586 editortab.cpp:628
+#: editortab.cpp:617 editortab.cpp:659
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Copy from merging source"
@@ -360,22 +420,22 @@ msgctxt "@action:inmenu"
 msgid "Copy to merging source"
 msgstr "Біріктіретінен көшіріп алу"
 
-#: editortab.cpp:593
+#: editortab.cpp:624
 msgctxt "@action:inmenu"
 msgid "Open file for secondary sync"
 msgstr "Ілеспе қадамдастыру үшін файлды ашу"
 
-#: editortab.cpp:622
+#: editortab.cpp:653
 msgctxt "@info:status"
 msgid "This changes only empty entries"
 msgstr "Бұл тек бос жазуларды ғана өзгертеді"
 
-#: editortab.cpp:653
+#: editortab.cpp:684
 msgctxt "editor tab name"
 msgid "(recovered)"
 msgstr ""
 
-#: editortab.cpp:691 editortab.cpp:843
+#: editortab.cpp:722 editortab.cpp:874
 msgctxt "@info"
 msgid ""
 "The document contains unsaved changes.\n"
@@ -384,12 +444,12 @@ msgstr ""
 "Құжатта сақталмаған өзгерістері бар.\n"
 "Өзгерістерді сақтағыңыз келеді ме, әлде жоғалсын ба?"
 
-#: editortab.cpp:692 editortab.cpp:844 glossary/glossarywindow.cpp:416
+#: editortab.cpp:723 editortab.cpp:875 glossary/glossarywindow.cpp:416
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Ескерту"
 
-#: editortab.cpp:795
+#: editortab.cpp:826
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error opening the file <filename>%1</filename>"
@@ -397,13 +457,13 @@ msgctxt "@info"
 msgid "Error opening the file <filename>%1</filename>, line: %2"
 msgstr "<filename>%1</filename> файлын ашқанда қате орын алды"
 
-#: editortab.cpp:796
+#: editortab.cpp:827
 #, kde-format
 msgctxt "@info"
 msgid "Error opening the file <filename>%1</filename>"
 msgstr "<filename>%1</filename> файлын ашқанда қате орын алды"
 
-#: editortab.cpp:817
+#: editortab.cpp:848
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -413,43 +473,43 @@ msgstr ""
 "<filename>%1</filename> файлын сақтағанда қате орын алды\n"
 "Басқа файлға сақтап көресіз бе әлде айнып кетесіз бе?"
 
-#: editortab.cpp:819
+#: editortab.cpp:850
 msgctxt "@title"
 msgid "Error"
 msgstr "Қате"
 
-#: editortab.cpp:868
+#: editortab.cpp:899
 msgctxt "@title"
 msgid "Jump to Entry"
 msgstr "Керек жазуға өту"
 
-#: editortab.cpp:869
+#: editortab.cpp:900
 msgctxt "@label:spinbox"
 msgid "Enter entry number:"
 msgstr "Жазудың нөмірі:"
 
-#: editortab.cpp:941
+#: editortab.cpp:972
 #, kde-format
 msgctxt "@info:status"
 msgid "Current: %1"
 msgstr "Назардағы: %1"
 
-#: editortab.cpp:953
+#: editortab.cpp:984
 msgctxt "@info:status"
 msgid "Untranslated"
 msgstr "Аударылмаған"
 
-#: editortab.cpp:954
+#: editortab.cpp:985
 msgctxt "@info:status"
 msgid "Approved"
 msgstr "Мақұлданған"
 
-#: editortab.cpp:955
+#: editortab.cpp:986
 msgctxt "@info:status"
 msgid "Needs review"
 msgstr "Қайта қарау керек"
 
-#: editortab.cpp:1076
+#: editortab.cpp:1107
 #, fuzzy
 #| msgctxt "@title:column Number of entries"
 #| msgid "Translated"
@@ -457,12 +517,12 @@ msgctxt "@option:check trans-unit state"
 msgid "Translated"
 msgstr "Аударылған"
 
-#: editortab.cpp:1077
+#: editortab.cpp:1108
 msgctxt "@option:check trans-unit state"
 msgid "Signed-off"
 msgstr ""
 
-#: editortab.cpp:1078
+#: editortab.cpp:1109
 #, fuzzy
 #| msgctxt "@option:check whether message is marked as Approved"
 #| msgid "Approved"
@@ -470,17 +530,17 @@ msgctxt "@option:check trans-unit state"
 msgid "Approved"
 msgstr "Мақұлданған"
 
-#: editortab.cpp:1081
+#: editortab.cpp:1112
 msgctxt "@info:tooltip"
 msgid "Translation is done (although still may need a review)"
 msgstr ""
 
-#: editortab.cpp:1082
+#: editortab.cpp:1113
 msgctxt "@info:tooltip"
 msgid "Translation recieved positive review"
 msgstr ""
 
-#: editortab.cpp:1083
+#: editortab.cpp:1114
 msgctxt "@info:tooltip"
 msgid "Entry is fully localized (i.e. final)"
 msgstr ""
@@ -520,8 +580,8 @@ msgstr ""
 
 #: editorview.cpp:68
 msgctxt "@label whether entry is fuzzy"
-msgid "Fuzzy:"
-msgstr "Дүмбілез:"
+msgid "Not ready:"
+msgstr ""
 
 #: editorview.cpp:70
 #, fuzzy
@@ -551,13 +611,13 @@ msgid ""
 "of the currently displayed entry.</p></qt>"
 msgstr ""
 
-#: editorview.cpp:176
+#: editorview.cpp:181
 #, kde-format
 msgctxt "@title:tab"
 msgid "Plural Form %1"
 msgstr "%1-көптік жалғау"
 
-#: editorview.cpp:262
+#: editorview.cpp:267
 msgctxt "@item Undo action item"
 msgid "Unwrap"
 msgstr "Тасымалдаусыз қылу"
@@ -717,7 +777,7 @@ msgstr "Ашатын құжат"
 
 #: msgctxtview.cpp:50
 msgctxt "@title toolview name"
-msgid "Metadata"
+msgid "Unit metadata"
 msgstr ""
 
 #: msgctxtview.cpp:109
@@ -740,30 +800,6 @@ msgstr "<br><b>Контексті:</b><br>"
 msgctxt "@info PO comment parsing"
 msgid "<br><b>Context:</b><br>"
 msgstr "<br><b>Контексті:</b><br>"
-
-#: msgiddiffview.cpp:39 msgiddiffview.cpp:42
-msgctxt "@title:window"
-msgid "Original Diff"
-msgstr "Айырмашылық"
-
-#: msgiddiffview.cpp:48
-#, fuzzy
-#| msgctxt "@info:tooltip"
-#| msgid ""
-#| "Sometimes, if original is changed, its translation becomes "
-#| "<emphasis>fuzzy</emphasis>. This window shows the difference between new "
-#| "original string and the old one, so that you can see what changes should "
-#| "be applied to translation."
-msgctxt "@info:tooltip"
-msgid ""
-"Sometimes, if original text is changed, its translation becomes "
-"<emphasis>fuzzy</emphasis> (i.e. looses approval status). This window shows "
-"the difference between new original string and the old one, so that you can "
-"easily see which changes should be applied to translation."
-msgstr ""
-"Кейбірде, түпнұсқасы өгертілгенде, оның аудармасы <emphasis>дүмбілез</"
-"emphasis> болып қалады. Бұл терезеде жаңа және ескі түпұсқа мәтіндердің "
-"арасындағы айырмашылығын көрсетеді. Осыған қарап аудармасын да түзете аласыз."
 
 #: noteeditor.cpp:58
 msgctxt "@info:label"
@@ -867,19 +903,19 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: lokalizemainwindowui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:3 rc.cpp:51 rc.cpp:145 rc.cpp:387
+#: rc.cpp:3 rc.cpp:54 rc.cpp:148 rc.cpp:393
 msgid "&File"
 msgstr ""
 
 #. i18n: file: editorui.rc:32
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:6 rc.cpp:148
+#: rc.cpp:6 rc.cpp:151
 msgid "&Edit"
 msgstr "Өңд&еу"
 
 #. i18n: file: editorui.rc:60
 #. i18n: ectx: Menu (glossary)
-#: rc.cpp:9 rc.cpp:151
+#: rc.cpp:9 rc.cpp:154
 #, fuzzy
 #| msgid "Glossary"
 msgid "&Glossary"
@@ -887,7 +923,7 @@ msgstr "Сөздік"
 
 #. i18n: file: editorui.rc:85
 #. i18n: ectx: Menu (webquery)
-#: rc.cpp:12 rc.cpp:154
+#: rc.cpp:12 rc.cpp:157
 #, fuzzy
 #| msgid "WebQuery"
 msgid "&WebQuery"
@@ -895,71 +931,80 @@ msgstr "ВебСұранысы"
 
 #. i18n: file: editorui.rc:102
 #. i18n: ectx: Menu (tmquery)
-#: rc.cpp:15 rc.cpp:157
+#: rc.cpp:15 rc.cpp:160
 #, fuzzy
 #| msgid "Translation Memory"
 msgid "Translation &Memory"
 msgstr "Жатталған аудармалар (ТМ)"
 
-#. i18n: file: editorui.rc:120
+#. i18n: file: editorui.rc:119
+#. i18n: ectx: Menu (alttrans)
+#: rc.cpp:18 rc.cpp:163
+#, fuzzy
+#| msgctxt "@title:column"
+#| msgid "Last Translation"
+msgid "Alternative Translations"
+msgstr "Соңғы аударылған"
+
+#. i18n: file: editorui.rc:137
 #. i18n: ectx: Menu (go)
-#: rc.cpp:18 rc.cpp:160
+#: rc.cpp:21 rc.cpp:166
 msgid "&Go"
 msgstr "Ө&ту"
 
-#. i18n: file: editorui.rc:150
+#. i18n: file: editorui.rc:167
 #. i18n: ectx: Menu (bookmarks)
-#: rc.cpp:21 rc.cpp:163
+#: rc.cpp:24 rc.cpp:169
 #, fuzzy
 #| msgid "Bookmarks"
 msgid "&Bookmarks"
 msgstr "Бетбелгілер"
 
-#. i18n: file: editorui.rc:157
+#. i18n: file: editorui.rc:174
 #. i18n: ectx: Menu (merge)
-#: rc.cpp:24 rc.cpp:166
+#: rc.cpp:27 rc.cpp:172
 #, fuzzy
 #| msgid "Sync"
 msgid "&Sync"
 msgstr "Қадамдастыру"
 
-#. i18n: file: editorui.rc:166
+#. i18n: file: editorui.rc:183
 #. i18n: ectx: Menu (mergesecondary)
-#: rc.cpp:27 rc.cpp:169
+#: rc.cpp:30 rc.cpp:175
 #, fuzzy
 #| msgid "Secondary sync source"
 msgid "&Secondary sync source"
 msgstr "Ілеспе қадамдастыру көзі"
 
-#. i18n: file: editorui.rc:188
+#. i18n: file: editorui.rc:205
 #. i18n: ectx: Menu (toolviews)
 #. i18n: file: lokalizemainwindowui.rc:40
 #. i18n: ectx: Menu (toolviews)
-#. i18n: file: editorui.rc:188
+#. i18n: file: editorui.rc:205
 #. i18n: ectx: Menu (toolviews)
 #. i18n: file: lokalizemainwindowui.rc:40
 #. i18n: ectx: Menu (toolviews)
-#: rc.cpp:30 rc.cpp:60 rc.cpp:172 rc.cpp:396
+#: rc.cpp:33 rc.cpp:63 rc.cpp:178 rc.cpp:402
 #, fuzzy
 #| msgid "Toolviews"
 msgid "Tool&views"
 msgstr "Құрал көрінісі"
 
-#. i18n: file: editorui.rc:211
+#. i18n: file: editorui.rc:228
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:33 rc.cpp:175
+#: rc.cpp:36 rc.cpp:181
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: file: kaider_findextension.ui:30
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_skipTags)
-#: rc.cpp:36 rc.cpp:399
+#: rc.cpp:39 rc.cpp:405
 msgid "Skip tags"
 msgstr "Тегтерін өткізіп жіберу"
 
 #. i18n: file: kaider_findextension.ui:33
 #. i18n: ectx: property (text), widget (QCheckBox, m_skipTags)
-#: rc.cpp:39 rc.cpp:402
+#: rc.cpp:42 rc.cpp:408
 #, fuzzy
 #| msgid "Skip tags"
 msgctxt "@option:check"
@@ -968,26 +1013,26 @@ msgstr "Тегтерін өткізіп жіберу"
 
 #. i18n: file: kaider_findextension.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_ignoreAccelMarks)
-#: rc.cpp:42 rc.cpp:405
+#: rc.cpp:45 rc.cpp:411
 msgid "Ignore accelerator marks"
 msgstr "Акселератор белгілерін елемеу"
 
 #. i18n: file: kaider_findextension.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, m_ignoreAccelMarks)
-#: rc.cpp:45 rc.cpp:408
+#: rc.cpp:48 rc.cpp:414
 msgctxt "@option:check"
 msgid "Ignore accelerator marks"
 msgstr "Акселератор белгілерін елемеу"
 
 #. i18n: file: kaider_findextension.ui:54
 #. i18n: ectx: property (text), widget (QCheckBox, m_notes)
-#: rc.cpp:48 rc.cpp:411
+#: rc.cpp:51 rc.cpp:417
 msgid "Include notes"
 msgstr ""
 
 #. i18n: file: lokalizemainwindowui.rc:17
 #. i18n: ectx: Menu (project)
-#: rc.cpp:54 rc.cpp:390
+#: rc.cpp:57 rc.cpp:396
 #, fuzzy
 #| msgid "Project"
 msgid "&Project"
@@ -995,43 +1040,43 @@ msgstr "Жоба"
 
 #. i18n: file: lokalizemainwindowui.rc:27
 #. i18n: ectx: Menu (project_actions)
-#: rc.cpp:57 rc.cpp:393
+#: rc.cpp:60 rc.cpp:399
 #, fuzzy
 #| msgid "Skip tags"
 msgid "&Scripts"
 msgstr "Тегтерін өткізіп жіберу"
 
-#: rc.cpp:61
+#: rc.cpp:64
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Сайран Киккарин"
 
-#: rc.cpp:62
+#: rc.cpp:65
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
 #. i18n: file: tm/dbparams.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:65 scripts/new-project-wizard.py:123
+#: rc.cpp:68 scripts/new-project-wizard.py:125
 msgid "Name:"
 msgstr "Атауы:"
 
 #. i18n: file: tm/dbparams.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:68
+#: rc.cpp:71
 msgid "Markup regex:"
 msgstr "Үлгі өрнегі:"
 
 #. i18n: file: tm/dbparams.ui:39
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:71
+#: rc.cpp:74
 msgid "Accelerator:"
 msgstr "Акселераторы:"
 
 #. i18n: file: tm/queryoptions.ui:24
 #. i18n: ectx: property (toolTip), widget (KLineEdit, querySource)
-#: rc.cpp:74
+#: rc.cpp:77
 msgid ""
 "Search expression for source language part.\n"
 "Press Enter to start the search."
@@ -1039,7 +1084,7 @@ msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:32
 #. i18n: ectx: property (toolTip), widget (KLineEdit, queryTarget)
-#: rc.cpp:78
+#: rc.cpp:81
 msgid ""
 "Search expression for target language part.\n"
 "Press Enter to start the search."
@@ -1047,13 +1092,13 @@ msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:39
 #. i18n: ectx: property (text), widget (QLabel, querySourceLabel)
-#: rc.cpp:82 scripts/new-project-wizard.py:184
+#: rc.cpp:85 scripts/new-project-wizard.py:186
 msgid "Source:"
 msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:49
 #. i18n: ectx: property (text), widget (QLabel, queryTargetLabel)
-#: rc.cpp:85 scripts/new-project-wizard.py:185
+#: rc.cpp:88 scripts/new-project-wizard.py:187
 #, fuzzy
 #| msgctxt "@title:column Text in target language"
 #| msgid "Target"
@@ -1064,7 +1109,7 @@ msgstr "Аудармасы"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, invertTarget)
 #. i18n: file: tm/queryoptions.ui:69
 #. i18n: ectx: property (toolTip), widget (QCheckBox, invertSource)
-#: rc.cpp:88 rc.cpp:94
+#: rc.cpp:91 rc.cpp:97
 msgid "Show results that do not match search expression"
 msgstr ""
 
@@ -1072,7 +1117,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, invertTarget)
 #. i18n: file: tm/queryoptions.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, invertSource)
-#: rc.cpp:91 rc.cpp:97
+#: rc.cpp:94 rc.cpp:100
 #, fuzzy
 #| msgctxt "@item Undo action item"
 #| msgid "Insertion"
@@ -1081,32 +1126,32 @@ msgstr "Ендіру"
 
 #. i18n: file: tm/queryoptions.ui:95
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:100
+#: rc.cpp:103
 msgid "File mask:"
 msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:111
 #. i18n: ectx: property (toolTip), widget (KLineEdit, filemask)
-#: rc.cpp:103
+#: rc.cpp:106
 msgid "Show only results from files with path matching specified mask"
 msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:122
 #. i18n: ectx: property (toolTip), widget (QRadioButton, substr)
-#: rc.cpp:106
+#: rc.cpp:109
 msgid "Case insensitive"
 msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:125
 #. i18n: ectx: property (text), widget (QRadioButton, substr)
-#: rc.cpp:109
+#: rc.cpp:112
 msgctxt "@option:radio"
 msgid "Substring"
 msgstr "Жол бөлігі"
 
 #. i18n: file: tm/queryoptions.ui:135
 #. i18n: ectx: property (toolTip), widget (QRadioButton, like)
-#: rc.cpp:112
+#: rc.cpp:115
 #, fuzzy
 #| msgid "Space is AND operator"
 msgid "Space is AND operator. Case insensitive."
@@ -1114,14 +1159,14 @@ msgstr "Бос орын - ЖӘНЕ амалы"
 
 #. i18n: file: tm/queryoptions.ui:138
 #. i18n: ectx: property (text), widget (QRadioButton, like)
-#: rc.cpp:115
+#: rc.cpp:118
 msgctxt "@option:radio"
 msgid "Google-like"
 msgstr "Google-тәрізді"
 
 #. i18n: file: tm/queryoptions.ui:148
 #. i18n: ectx: property (toolTip), widget (QRadioButton, glob)
-#: rc.cpp:118
+#: rc.cpp:121
 #, fuzzy
 #| msgid "Shell globs (* and ?)"
 msgid "Shell globs (* and ?). Case sensitive."
@@ -1129,14 +1174,14 @@ msgstr "Үлгі қалқалары (* мен ?)"
 
 #. i18n: file: tm/queryoptions.ui:151
 #. i18n: ectx: property (text), widget (QRadioButton, glob)
-#: rc.cpp:121
+#: rc.cpp:124
 msgctxt "@option:radio"
 msgid "Wildcard"
 msgstr "Үлгі қалқасы"
 
 #. i18n: file: tm/queryoptions.ui:171
 #. i18n: ectx: property (toolTip), widget (QPushButton, doUpdateTM)
-#: rc.cpp:124
+#: rc.cpp:127
 msgid ""
 "Reads all project files into translation memory, updating old entries. The "
 "scanning will work in background."
@@ -1144,7 +1189,7 @@ msgstr ""
 
 #. i18n: file: tm/queryoptions.ui:174
 #. i18n: ectx: property (text), widget (QPushButton, doUpdateTM)
-#: rc.cpp:127
+#: rc.cpp:130
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Open project"
@@ -1153,31 +1198,31 @@ msgstr "Жобаны ашу"
 
 #. i18n: file: tm/queryoptions.ui:181
 #. i18n: ectx: property (text), widget (QPushButton, doFind)
-#: rc.cpp:130
+#: rc.cpp:133
 msgid "&Search"
 msgstr ""
 
 #. i18n: file: tm/managedatabases.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, create)
-#: rc.cpp:133
+#: rc.cpp:136
 msgid "Create"
 msgstr "Құру"
 
 #. i18n: file: tm/managedatabases.ui:25
 #. i18n: ectx: property (text), widget (QPushButton, addData)
-#: rc.cpp:136
+#: rc.cpp:139
 msgid "Add data"
 msgstr "Деректерді қосу"
 
 #. i18n: file: tm/managedatabases.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, importTMX)
-#: rc.cpp:139
+#: rc.cpp:142
 msgid "Add data from TMX"
 msgstr "TMX деректерді қосып алу"
 
 #. i18n: file: tm/managedatabases.ui:39
 #. i18n: ectx: property (text), widget (QPushButton, exportTMX)
-#: rc.cpp:142
+#: rc.cpp:145
 msgid "Export to TMX"
 msgstr "TMX экспорттау"
 
@@ -1185,7 +1230,7 @@ msgstr "TMX экспорттау"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_PrefetchTM)
 #. i18n: file: prefs/prefs_editor.ui:35
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoApprove)
-#: rc.cpp:178 rc.cpp:202
+#: rc.cpp:184 rc.cpp:208
 msgid "If checked, get translation memory suggestions "
 msgstr "Белгісі қойылса, жатталған аудармалардан ұсыныстар болады "
 
@@ -1193,7 +1238,7 @@ msgstr "Белгісі қойылса, жатталған аудармалард
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PrefetchTM)
 #. i18n: file: prefs/prefs_editor.ui:38
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoApprove)
-#: rc.cpp:181 rc.cpp:205
+#: rc.cpp:187 rc.cpp:211
 msgid ""
 "If this is checked, the program will fetch translation memories as soon as "
 "you open a file."
@@ -1203,13 +1248,13 @@ msgstr ""
 
 #. i18n: file: prefs/prefs_tm.ui:41
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrefetchTM)
-#: rc.cpp:184
+#: rc.cpp:190
 msgid "Prefetch translation memory suggestions on file open"
 msgstr "Файлды ашқанда жатталған аударымдардан ұсыныстарын дайындау"
 
 #. i18n: file: prefs/prefs_tm.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:187
+#: rc.cpp:193
 #, fuzzy
 #| msgid "Max number of suggestions:"
 msgid "Maximum number of suggestions:"
@@ -1217,25 +1262,25 @@ msgstr "Ұсыныстар санының шегі:"
 
 #. i18n: file: prefs/prefs_tm.ui:55
 #. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_SuggCount)
-#: rc.cpp:190
+#: rc.cpp:196
 msgid "Set the maximum number of suggestions"
 msgstr "Ұсыныстар санын ең жоғары шегіне қою"
 
 #. i18n: file: prefs/prefs_tm.ui:58
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_SuggCount)
-#: rc.cpp:193
+#: rc.cpp:199
 msgid "You can change the maximum number of suggestions, default is 10."
 msgstr "Ұсыныстар санын ең жоғары шегіне қоя аласыз, әдеттегісі - 10."
 
 #. i18n: file: prefs/prefs_tm.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoaddTM)
-#: rc.cpp:196
+#: rc.cpp:202
 msgid "Update/Add edited entries to translation memory"
 msgstr "Өзгертілген жазуларды жатталған аудармаларға қосу/жаңарту"
 
 #. i18n: file: prefs/prefs_tm.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ScanToTMOnOpen)
-#: rc.cpp:199
+#: rc.cpp:205
 #, fuzzy
 #| msgid "Scan opened files to translation memory"
 msgid "Add opened files to translation memory automatically"
@@ -1243,37 +1288,37 @@ msgstr "Ашылған файлдарды жатталған аударымда�
 
 #. i18n: file: prefs/prefs_editor.ui:41
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoApprove)
-#: rc.cpp:208
+#: rc.cpp:214
 msgid "Set 'approved' status automatically when editing started"
 msgstr ""
 
 #. i18n: file: prefs/lokalize.kcfg:14
 #. i18n: ectx: label, entry, group (Identity)
-#: rc.cpp:211
+#: rc.cpp:217
 msgid "Translator's name"
 msgstr "Аудармашының аты"
 
 #. i18n: file: prefs/lokalize.kcfg:15
 #. i18n: ectx: whatsthis, entry, group (Identity)
-#: rc.cpp:214
+#: rc.cpp:220
 msgid "Translator's name in English"
 msgstr "Аудармашының аты (ағылшын тілде)"
 
 #. i18n: file: prefs/lokalize.kcfg:21
 #. i18n: ectx: label, entry, group (Identity)
-#: rc.cpp:217
+#: rc.cpp:223
 msgid "Localized name"
 msgstr "Өз тілдегі аты"
 
 #. i18n: file: prefs/lokalize.kcfg:22
 #. i18n: ectx: whatsthis, entry, group (Identity)
-#: rc.cpp:220
+#: rc.cpp:226
 msgid "Translator's name in target language"
 msgstr "Аудармашының аты (өз тілінде)"
 
 #. i18n: file: prefs/lokalize.kcfg:28
 #. i18n: ectx: whatsthis, entry, group (Identity)
-#: rc.cpp:223
+#: rc.cpp:229
 msgid "Translator's email"
 msgstr "Аудармашының эл.поштасы"
 
@@ -1281,7 +1326,7 @@ msgstr "Аудармашының эл.поштасы"
 #. i18n: ectx: label, entry, group (Identity)
 #. i18n: file: prefs/lokalize.kcfg:35
 #. i18n: ectx: whatsthis, entry, group (Identity)
-#: rc.cpp:226 rc.cpp:229
+#: rc.cpp:232 rc.cpp:235
 msgid "Default language code for new projects"
 msgstr "Жаңа жобаның әдетті тілінің коды"
 
@@ -1289,7 +1334,7 @@ msgstr "Жаңа жобаның әдетті тілінің коды"
 #. i18n: ectx: label, entry, group (Identity)
 #. i18n: file: prefs/lokalize.kcfg:42
 #. i18n: ectx: whatsthis, entry, group (Identity)
-#: rc.cpp:232 rc.cpp:235
+#: rc.cpp:238 rc.cpp:241
 msgid "Default mailing list for new projects"
 msgstr "Жаңа жобаның әдетті хабарлау тізімі"
 
@@ -1299,7 +1344,7 @@ msgstr "Жаңа жобаның әдетті хабарлау тізімі"
 #. i18n: ectx: label, entry (OnFlySpellCheck), group (Appearance)
 #. i18n: file: prefs/lokalize.kcfg:82
 #. i18n: ectx: label, entry (WhitespacePoints), group (Appearance)
-#: rc.cpp:238 rc.cpp:245 rc.cpp:249
+#: rc.cpp:244 rc.cpp:251 rc.cpp:255
 msgid ""
 "\n"
 "        "
@@ -1309,13 +1354,13 @@ msgstr ""
 
 #. i18n: file: prefs/lokalize.kcfg:67
 #. i18n: ectx: label, entry (MsgFont), group (Appearance)
-#: rc.cpp:242
+#: rc.cpp:248
 msgid "Font for Messages"
 msgstr "Жазулардың қарібі"
 
 #. i18n: file: prefs/prefs_identity.ui:13
 #. i18n: ectx: property (whatsThis), widget (QWidget, prefs_identity)
-#: rc.cpp:253
+#: rc.cpp:259
 msgid ""
 "Fill in your identity and information about your translation team. This "
 "information is used when updating the header of a file."
@@ -1325,77 +1370,77 @@ msgstr ""
 
 #. i18n: file: prefs/prefs_identity.ui:37
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:256
+#: rc.cpp:262
 msgctxt "@label:chooser"
 msgid "Default Language:"
 msgstr "Әдетті тілі:"
 
 #. i18n: file: prefs/prefs_identity.ui:47
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:259
+#: rc.cpp:265
 msgctxt "@label:textbox"
 msgid "Email:"
 msgstr "Эл.пошта:"
 
 #. i18n: file: prefs/prefs_identity.ui:60
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:262
+#: rc.cpp:268
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Атыңыз:"
 
 #. i18n: file: prefs/prefs_identity.ui:73
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_authorName)
-#: rc.cpp:265
+#: rc.cpp:271
 msgid "Your name, in English"
 msgstr "Атыңыз, ағылшынша"
 
 #. i18n: file: prefs/prefs_identity.ui:76
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_authorName)
-#: rc.cpp:268
+#: rc.cpp:274
 msgid "Please enter here your name and surname written in English"
 msgstr "Мұнда аты-тегіңізді ағылшынша келтіріңіз"
 
 #. i18n: file: prefs/prefs_identity.ui:83
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:271
+#: rc.cpp:277
 msgctxt "@label:textbox"
 msgid "Default Mailing List:"
 msgstr "Әдетті хабарлау тізімі:"
 
 #. i18n: file: prefs/prefs_identity.ui:93
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_DefaultMailingList)
-#: rc.cpp:274
+#: rc.cpp:280
 msgid "The email of your team mailing list"
 msgstr "Тобыңыздың эл.пошта хабарлау тізімі"
 
 #. i18n: file: prefs/prefs_identity.ui:96
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_DefaultMailingList)
-#: rc.cpp:277
+#: rc.cpp:283
 msgid "Write the email of your translating team mailing list"
 msgstr "Аудармашылар тобыңыздың эл.пошта хабарлау тізімін келтіріңіз"
 
 #. i18n: file: prefs/prefs_identity.ui:103
 #. i18n: ectx: property (toolTip), widget (KComboBox, DefaultLangCode)
-#: rc.cpp:280
+#: rc.cpp:286
 msgid "Language you translate to"
 msgstr "Қай тілге аудару"
 
 #. i18n: file: prefs/prefs_identity.ui:106
 #. i18n: ectx: property (whatsThis), widget (KComboBox, DefaultLangCode)
-#: rc.cpp:283
+#: rc.cpp:289
 msgid "Set the default language you are going to translate to"
 msgstr "Қай тілге аударатыңызды келтіріңіз"
 
 #. i18n: file: prefs/prefs_identity.ui:126
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_authorEmail)
-#: rc.cpp:286
+#: rc.cpp:292
 msgid "Write your email"
 msgstr "Эл.поштаңыз"
 
 #. i18n: file: prefs/prefs_identity.ui:129
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_authorEmail)
-#: rc.cpp:289
+#: rc.cpp:295
 msgid ""
 "Write your email here so it will appear in the po file header with your name"
 msgstr ""
@@ -1403,51 +1448,51 @@ msgstr ""
 
 #. i18n: file: prefs/prefs_identity.ui:143
 #. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_authorLocalizedName)
-#: rc.cpp:292
+#: rc.cpp:298
 msgid "Your name in your own language"
 msgstr "Өз тіліңізде жазылған өз атыңыз"
 
 #. i18n: file: prefs/prefs_identity.ui:146
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_authorLocalizedName)
-#: rc.cpp:295
+#: rc.cpp:301
 msgid ""
 "Write your name and surname in your language with your language alphabet."
 msgstr "Мұнда аты-тегіңізді өз тіліңізде өз әліппеңізбен келтіріңіз."
 
 #. i18n: file: prefs/prefs_identity.ui:153
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:298
+#: rc.cpp:304
 msgctxt "@label:textbox"
 msgid "Localized Name:"
 msgstr "Өз тілдегі атыңыз:"
 
 #. i18n: file: prefs/prefs_appearance.ui:24
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:301
+#: rc.cpp:307
 msgid "Editor font:"
 msgstr "Өңдегіштің қаріпі:"
 
 #. i18n: file: prefs/prefs_appearance.ui:31
 #. i18n: ectx: property (toolTip), widget (KFontRequester, kcfg_MsgFont)
-#: rc.cpp:304
+#: rc.cpp:310
 msgid "Change the font for the editor"
 msgstr "Өңдегіштің қаріпін өзгерту"
 
 #. i18n: file: prefs/prefs_appearance.ui:34
 #. i18n: ectx: property (whatsThis), widget (KFontRequester, kcfg_MsgFont)
-#: rc.cpp:307
+#: rc.cpp:313
 msgid "Choose a new font for the area where you write the translated message."
 msgstr "Аударылғанды жазатын аумақтың қаріпін таңдап алу."
 
 #. i18n: file: prefs/prefs_appearance.ui:41
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Leds)
-#: rc.cpp:310
+#: rc.cpp:316
 msgid "Display LEDS for message status"
 msgstr "Жазуының күйін көрсететін индикаторлары болсын"
 
 #. i18n: file: prefs/prefs_appearance.ui:44
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_Leds)
-#: rc.cpp:313
+#: rc.cpp:319
 msgid ""
 "If checked, LEDS will be shown to display the message status: Fuzzy, "
 "Untranslated or Error. If unchecked, no LEDs will be displayed."
@@ -1457,7 +1502,7 @@ msgstr ""
 
 #. i18n: file: prefs/prefs_appearance.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Leds)
-#: rc.cpp:316
+#: rc.cpp:322
 #, fuzzy
 #| msgid "LEDs to indicate Fuzzy, Untranslated and Error status"
 msgid ""
@@ -1467,52 +1512,52 @@ msgstr "Дүмбілез, Аударылмаған, Қате индикатор�
 
 #. i18n: file: prefs/prefs_appearance.ui:56
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:319
+#: rc.cpp:325
 msgid "Text colors for the changes in the message."
 msgstr "Жазудағы өзгерістерінің түсі."
 
 #. i18n: file: prefs/prefs_appearance.ui:59
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:322
+#: rc.cpp:328
 msgid "String Matching"
 msgstr "Жазу сәйкестігі"
 
 #. i18n: file: prefs/prefs_appearance.ui:65
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:325
+#: rc.cpp:331
 msgctxt "@label:chooser"
 msgid "Text added in the newer string:"
 msgstr "Жазуыға жаңа қосылған үстеме мәтіні:"
 
 #. i18n: file: prefs/prefs_appearance.ui:72
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_AddColor)
-#: rc.cpp:328
+#: rc.cpp:334
 msgid "Change the color for the new text added"
 msgstr "Жаңа қосылған үстеме мәтінінің түсін өзгерту"
 
 #. i18n: file: prefs/prefs_appearance.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_AddColor)
-#: rc.cpp:331
+#: rc.cpp:337
 msgid ""
 "You can set another color for viewing the text that was added to the string."
 msgstr "Жазуға жаңа қосылған үстеме мәтінін басқа түспен ерекшелей аласыз."
 
 #. i18n: file: prefs/prefs_appearance.ui:85
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:334
+#: rc.cpp:340
 msgctxt "@label:chooser"
 msgid "Text removed in the newer string:"
 msgstr "Жазуынан жаңа алып тасталған мәтіні:"
 
 #. i18n: file: prefs/prefs_appearance.ui:92
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_DelColor)
-#: rc.cpp:337
+#: rc.cpp:343
 msgid "Change the color for the text removed"
 msgstr "Жаңа алып тасталған мәтіннің түсін өзгерту"
 
 #. i18n: file: prefs/prefs_appearance.ui:95
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_DelColor)
-#: rc.cpp:340
+#: rc.cpp:346
 msgid ""
 "You can set another color for viewing the text that was removed from the "
 "string."
@@ -1520,7 +1565,7 @@ msgstr "Жазуынан жаңа алып тасталған мәтінді б�
 
 #. i18n: file: prefs/prefs_appearance.ui:121
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_HighlightSpaces)
-#: rc.cpp:343
+#: rc.cpp:349
 msgid ""
 "Check to see if a string ends in a space (which is often important when "
 "displaying it in the user interface, or when it gets concatenated with "
@@ -1529,13 +1574,13 @@ msgstr ""
 
 #. i18n: file: prefs/prefs_appearance.ui:124
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightSpaces)
-#: rc.cpp:346
+#: rc.cpp:352
 msgid "Highlight spaces at the end"
 msgstr ""
 
 #. i18n: file: scripts/widget-text-capture.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:349
+#: rc.cpp:355
 msgid ""
 "<html>\n"
 "<p align=\"justify\">To facilitate KDE translation, Lokalize can capture "
@@ -1553,19 +1598,19 @@ msgstr ""
 
 #. i18n: file: scripts/widget-text-capture.ui:41
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:355
+#: rc.cpp:361
 msgid "Middle mouse button click reaction"
 msgstr ""
 
 #. i18n: file: scripts/widget-text-capture.ui:47
 #. i18n: ectx: property (text), widget (QRadioButton, none)
-#: rc.cpp:358
+#: rc.cpp:364
 msgid "None"
 msgstr ""
 
 #. i18n: file: scripts/widget-text-capture.ui:57
 #. i18n: ectx: property (text), widget (QRadioButton, search)
-#: rc.cpp:361
+#: rc.cpp:367
 #, fuzzy
 #| msgid "Scan opened files to translation memory"
 msgid "Search GUI element text in translation memory"
@@ -1573,31 +1618,31 @@ msgstr "Ашылған файлдарды жатталған аударымда�
 
 #. i18n: file: scripts/widget-text-capture.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, clipboard)
-#: rc.cpp:364
+#: rc.cpp:370
 msgid "Copy GUI element text to clipboard"
 msgstr ""
 
 #. i18n: file: glossary/termedit.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:367
+#: rc.cpp:373
 msgid "English synonyms (one per line):"
 msgstr "Ағылшын синонимдері (әрбірін бөлек жолда):"
 
 #. i18n: file: glossary/termedit.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:370
+#: rc.cpp:376
 msgid "Corresponding target language synonyms:"
 msgstr "Аударма тілдегі сәйкесті синонимдері:"
 
 #. i18n: file: glossary/termedit.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:373
+#: rc.cpp:379
 msgid "Subject field:"
 msgstr "Керегін келтіретін өріс:"
 
 #. i18n: file: glossary/termedit.ui:57
 #. i18n: ectx: property (toolTip), widget (KComboBox, subjectField)
-#: rc.cpp:376
+#: rc.cpp:382
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid ""
@@ -1613,13 +1658,13 @@ msgstr ""
 
 #. i18n: file: glossary/termedit.ui:67
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:379
+#: rc.cpp:385
 msgid "English definition:"
 msgstr "Ағылшын тілдегі анықтамасы:"
 
 #. i18n: file: glossary/termedit.ui:86
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:382
+#: rc.cpp:388
 msgid ""
 "Note: one glossary entry corresponds exactly to one term, not word/word "
 "sequence.\n"
@@ -1633,31 +1678,31 @@ msgstr ""
 
 #. i18n: file: webquery/querycontrol.ui:8
 #. i18n: ectx: property (text), widget (QPushButton, queryBtn)
-#: rc.cpp:414
+#: rc.cpp:420
 msgid "Query"
 msgstr "Сұраныс"
 
 #. i18n: file: webquery/querycontrol.ui:15
 #. i18n: ectx: property (text), widget (QCheckBox, autoQuery)
-#: rc.cpp:417
+#: rc.cpp:423
 msgid "Autoquery"
 msgstr "Автосұраныс"
 
 #. i18n: file: webquery/querycontrol.ui:22
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBox)
-#: rc.cpp:420
+#: rc.cpp:426
 msgid "Prefetch for the next untranslated"
 msgstr "Келесіні аударуға алдын-ала дайындалу"
 
 #. i18n: file: webquery/querycontrol.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:423
+#: rc.cpp:429
 msgid "Prefetch"
 msgstr "Алдын-ала дайындалу"
 
 #. i18n: file: project/prefs_project_local.ui:21
 #. i18n: ectx: property (text), widget (QLabel, l0)
-#: rc.cpp:426
+#: rc.cpp:432
 #, fuzzy
 #| msgctxt "@item Undo action item"
 #| msgid "Replace"
@@ -1666,7 +1711,7 @@ msgstr "Алмастыру"
 
 #. i18n: file: project/prefs_project_local.ui:29
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_Role)
-#: rc.cpp:429
+#: rc.cpp:435
 #, fuzzy
 #| msgctxt "@title:column Number of entries"
 #| msgid "Translated"
@@ -1675,13 +1720,13 @@ msgstr "Аударылған"
 
 #. i18n: file: project/prefs_project_local.ui:34
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_Role)
-#: rc.cpp:432
+#: rc.cpp:438
 msgid "Reviewer"
 msgstr ""
 
 #. i18n: file: project/prefs_project_local.ui:39
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_Role)
-#: rc.cpp:435
+#: rc.cpp:441
 #, fuzzy
 #| msgctxt "@option:check whether message is marked as Approved"
 #| msgid "Approved"
@@ -1690,31 +1735,31 @@ msgstr "Мақұлданған"
 
 #. i18n: file: project/projectbase.kcfg:18
 #. i18n: ectx: label, entry (LangCode), group (General)
-#: rc.cpp:438
+#: rc.cpp:444
 msgid "Language"
 msgstr "Тіл"
 
 #. i18n: file: project/projectbase.kcfg:30
 #. i18n: ectx: label, entry (PoBaseDir), group (General)
-#: rc.cpp:441
+#: rc.cpp:447
 msgid "The base directory for PO files (translations)"
 msgstr "PO (аударма) файлдардың түп қапшығы"
 
 #. i18n: file: project/projectbase.kcfg:36
 #. i18n: ectx: label, entry (PotBaseDir), group (General)
-#: rc.cpp:444
+#: rc.cpp:450
 msgid "The base directory for POT files (templates to be translated)"
 msgstr "POT (аударатын үлгілер) файлдардың түп қапшығы"
 
-#. i18n: file: project/projectbase.kcfg:43
+#. i18n: file: project/projectbase.kcfg:44
 #. i18n: ectx: label, entry (GlossaryTbx), group (General)
-#: rc.cpp:447
+#: rc.cpp:453
 msgid "Project's glossary"
 msgstr "Жобаның сөздігі"
 
 #. i18n: file: project/prefs_projectmain.ui:22
 #. i18n: ectx: property (text), widget (QLabel, l0)
-#: rc.cpp:450
+#: rc.cpp:456
 #, fuzzy
 #| msgctxt "@label:chooser"
 #| msgid "Default Language:"
@@ -1724,7 +1769,7 @@ msgstr "Әдетті тілі:"
 
 #. i18n: file: project/prefs_projectmain.ui:35
 #. i18n: ectx: property (toolTip), widget (KComboBox, LangCode)
-#: rc.cpp:453
+#: rc.cpp:459
 #, fuzzy
 #| msgid "Default language code for new projects"
 msgid "Target language of the project."
@@ -1732,31 +1777,29 @@ msgstr "Жаңа жобаның әдетті тілінің коды"
 
 #. i18n: file: project/prefs_projectmain.ui:55
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, poBaseDir)
-#: rc.cpp:456
+#: rc.cpp:462
 msgid ""
-"This is main setting. Set it to path of directory with translation files\n"
-"for your project + target language."
+"This is main setting. Set this to path of a folder with translation files\n"
+"for your project (or a subproject for your target language)."
 msgstr ""
 
 #. i18n: file: project/prefs_projectmain.ui:78
 #. i18n: ectx: property (text), widget (QLabel, l1)
-#: rc.cpp:460
-#, fuzzy
-#| msgid "Translation Memory"
+#: rc.cpp:466
 msgctxt "@label:textbox"
-msgid "Translation directory:"
-msgstr "Жатталған аудармалар (ТМ)"
+msgid "Root folder:"
+msgstr ""
 
 #. i18n: file: project/prefs_projectmain.ui:88
 #. i18n: ectx: property (text), widget (QLabel, l2)
-#: rc.cpp:463
+#: rc.cpp:469
 msgctxt "@label:textbox"
 msgid "Glossary:"
 msgstr "Сөздігі:"
 
 #. i18n: file: project/prefs_projectmain.ui:98
 #. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_ProjectID)
-#: rc.cpp:466
+#: rc.cpp:472
 msgid ""
 "Project ID is used to differentiate translation memories of absolutely "
 "different projects and languages.\n"
@@ -1767,21 +1810,21 @@ msgstr ""
 
 #. i18n: file: project/prefs_projectmain.ui:105
 #. i18n: ectx: property (text), widget (QLabel, l3)
-#: rc.cpp:472
+#: rc.cpp:478
 msgctxt "@label:textbox"
 msgid "ID:"
 msgstr "ID:"
 
 #. i18n: file: project/prefs_projectmain.ui:115
 #. i18n: ectx: property (text), widget (QLabel, l4)
-#: rc.cpp:475
+#: rc.cpp:481
 msgctxt "@label:textbox"
 msgid "Mailing list:"
 msgstr "Хабарлау тізімі:"
 
 #. i18n: file: project/prefs_project_advanced.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:478
+#: rc.cpp:484
 #, fuzzy
 #| msgctxt "@title:tab"
 #| msgid "Syntax"
@@ -1790,27 +1833,27 @@ msgstr "Синтаксис"
 
 #. i18n: file: project/prefs_project_advanced.ui:22
 #. i18n: ectx: property (text), widget (QLabel, l0)
-#: rc.cpp:481
+#: rc.cpp:487
 msgctxt "@label:textbox"
 msgid "Accelerator:"
 msgstr "Акселераторы:"
 
 #. i18n: file: project/prefs_project_advanced.ui:29
 #. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Accel)
-#: rc.cpp:484
+#: rc.cpp:490
 msgid "Usually '&', but may also be '_' for GTK apps."
 msgstr ""
 
 #. i18n: file: project/prefs_project_advanced.ui:36
 #. i18n: ectx: property (text), widget (QLabel, l1)
-#: rc.cpp:487
+#: rc.cpp:493
 msgctxt "@label:textbox"
 msgid "Markup:"
 msgstr "Белгілеуі:"
 
 #. i18n: file: project/prefs_project_advanced.ui:51
 #. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Markup)
-#: rc.cpp:490
+#: rc.cpp:496
 msgid ""
 "Regular expression of markup. It is used for translation memory matching and "
 "for 'Insert tag' feature.\n"
@@ -1824,39 +1867,45 @@ msgstr ""
 
 #. i18n: file: project/prefs_project_advanced.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:498
+#: rc.cpp:504
 msgid "Paths"
 msgstr ""
 
 #. i18n: file: project/prefs_project_advanced.ui:70
 #. i18n: ectx: property (text), widget (QLabel, l2)
-#: rc.cpp:501
+#: rc.cpp:507
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Template directory:"
 msgctxt "@label:textbox"
-msgid "Template directory:"
+msgid "Template files folder:"
 msgstr "POT қапшығы:"
 
 #. i18n: file: project/prefs_project_advanced.ui:91
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, potBaseDir)
-#: rc.cpp:504
+#: rc.cpp:510
 msgid ""
 "Usually your translation project will be a subproject of a project\n"
 "for translating same texts into multiple languages.\n"
 "\n"
-"Set this to path of directory containing empty translation files\n"
+"Set this to path of a folder containing empty translation files\n"
 "(i.e. files without translation into any language)\n"
 "shared among all subprojects."
 msgstr ""
 
 #. i18n: file: project/prefs_project_advanced.ui:98
 #. i18n: ectx: property (text), widget (QLabel, l3)
-#: rc.cpp:512
+#: rc.cpp:518
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Branch directory:"
 msgctxt "@label:textbox"
-msgid "Branch directory:"
+msgid "Branch folder:"
 msgstr "Тармақ қапшығы:"
 
-#. i18n: file: project/prefs_project_advanced.ui:126
+#. i18n: file: project/prefs_project_advanced.ui:125
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, branchDir)
-#: rc.cpp:515
+#: rc.cpp:521
 msgctxt ""
 "this message contains text from documentation, so use its translation when "
 "you're translating docs"
@@ -1866,8 +1915,7 @@ msgid ""
 "Sync Mode may be used to make changes to translation\n"
 "for two branches simultaneously.\n"
 "\n"
-"Set this to path that corresponds to base dir of the branch\n"
-"(i.e. 'Translation directory' of project for secondary branch),\n"
+"Set this to path that corresponds to root folder of the branch project,\n"
 "and Secondary Sync view will automatically open files from branch.\n"
 "Then, each time you make changes in files of your main branch,\n"
 "they will automatically be replicated to the branch\n"
@@ -1876,12 +1924,113 @@ msgid ""
 "See documentation for more details."
 msgstr ""
 
-#: xlifftextedit.cpp:483 catalog/cmd.cpp:418
+#. i18n: file: project/prefs_project_advanced.ui:132
+#. i18n: ectx: property (text), widget (QLabel, l4)
+#: rc.cpp:535
+#, fuzzy
+#| msgctxt "@title"
+#| msgid "Batch translation complete"
+msgctxt "@label:textbox"
+msgid "Alternate translations folder:"
+msgstr "Будалап аудару бітті"
+
+#. i18n: file: project/prefs_project_advanced.ui:156
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, altDir)
+#: rc.cpp:538
+msgctxt ""
+"this message contains text from documentation, so use its translation when "
+"you're translating docs"
+msgid ""
+"Set this to path of a folder with structure similar to Root Folder.\n"
+"\n"
+"On each translation file open, a corresponding file in Alternate "
+"translations directory will be looked up and,\n"
+"if it is found, it will be used for Alternate Translations view.\n"
+"\n"
+"You will likely want to use translations of another target language (i.e. "
+"another subproject), which is close to yours.\n"
+"Also, you can use other subproject's translations either immediately, or "
+"have them pretranslated to your language by machine.\n"
+"\n"
+"See documentation for more details."
+msgstr ""
+
+#. i18n: tag collection attribute text
+#. i18n: file: scripts/new-project-wizard.rc:3
+#: rc.cpp:549
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Project"
+msgid "Project"
+msgstr "Жоба"
+
+#. i18n: tag script attribute text
+#. i18n: file: scripts/new-project-wizard.rc:4
+#: rc.cpp:552
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Create new project"
+msgid "Create new project"
+msgstr "Жаңа жоба"
+
+#. i18n: tag script attribute comment
+#. i18n: file: scripts/new-project-wizard.rc:4
+#: rc.cpp:555
+msgid "Fires up a wizard to guide you through project creation"
+msgstr ""
+
+#. i18n: tag collection attribute text
+#. i18n: file: scripts/widget-text-capture.rc:3
+#. i18n: tag collection attribute text
+#. i18n: file: scripts/xliff2odf.rc:3
+#: rc.cpp:558 rc.cpp:567
+#, fuzzy
+#| msgid "&Tools"
+msgid "Tools"
+msgstr "Құ&ралдар"
+
+#. i18n: tag script attribute text
+#. i18n: file: scripts/widget-text-capture.rc:4
+#: rc.cpp:561
+msgid "Widget text capture"
+msgstr ""
+
+#. i18n: tag script attribute comment
+#. i18n: file: scripts/widget-text-capture.rc:4
+#: rc.cpp:564
+msgid ""
+"Middle mouse click on a widget in any KDE app initiates TM search in all "
+"opened Lokalize windows"
+msgstr ""
+
+#. i18n: tag script attribute text
+#. i18n: file: scripts/xliff2odf.rc:4
+#: rc.cpp:570
+msgid "Merge into ODF"
+msgstr ""
+
+#. i18n: tag script attribute comment
+#. i18n: file: scripts/xliff2odf.rc:4
+#: rc.cpp:573
+msgid "Generates translated version of ODF document"
+msgstr ""
+
+#: xlifftextedit.cpp:490 catalog/cmd.cpp:418
 msgctxt "@item Undo action item"
 msgid "Insert text with markup"
 msgstr ""
 
-#: xlifftextedit.cpp:887
+#: xlifftextedit.cpp:823
+msgctxt "@action:inmenu"
+msgid "Show the binary unit"
+msgstr ""
+
+#: xlifftextedit.cpp:824
+msgctxt "@action:inmenu"
+msgid "Go to the referenced entry"
+msgstr ""
+
+#: xlifftextedit.cpp:968
 msgctxt "@item Undo action item"
 msgid "Copy source to target"
 msgstr ""
@@ -1941,6 +2090,311 @@ msgstr ""
 msgid "Final"
 msgstr "Түпнұсқасы"
 
+#: catalog/catalogstring.cpp:72
+msgctxt "XLIFF inline tag name"
+msgid "Start of paired tag"
+msgstr ""
+
+#: catalog/catalogstring.cpp:73
+msgctxt "XLIFF inline tag name"
+msgid "End of paired tag"
+msgstr ""
+
+#: catalog/catalogstring.cpp:74
+msgctxt "XLIFF inline tag name"
+msgid "Stand-alone tag"
+msgstr ""
+
+#: catalog/catalogstring.cpp:75
+msgctxt "XLIFF inline tag name"
+msgid "Isolated tag"
+msgstr ""
+
+#: catalog/catalogstring.cpp:77
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Markup:"
+msgctxt "XLIFF inline tag name"
+msgid "Marker"
+msgstr "Белгілеуі:"
+
+#: catalog/catalogstring.cpp:78
+msgctxt "XLIFF inline tag name"
+msgid "Generic group placeholder"
+msgstr ""
+
+#: catalog/catalogstring.cpp:79
+msgctxt "XLIFF inline tag name"
+msgid "Sub-flow"
+msgstr ""
+
+#: catalog/catalogstring.cpp:81
+msgctxt "XLIFF inline tag name"
+msgid "Generic placeholder"
+msgstr ""
+
+#: catalog/catalogstring.cpp:82
+msgctxt "XLIFF inline tag name"
+msgid "Start of paired placeholder"
+msgstr ""
+
+#: catalog/catalogstring.cpp:83
+msgctxt "XLIFF inline tag name"
+msgid "End of paired placeholder"
+msgstr ""
+
+#: catalog/catalogstring.cpp:131
+msgctxt "XLIFF mark type"
+msgid "abbreviation"
+msgstr ""
+
+#: catalog/catalogstring.cpp:132
+msgctxt "XLIFF mark type"
+msgid ""
+"abbreviated form: a term resulting from the omission of any part of the full "
+"term while designating the same concept"
+msgstr ""
+
+#: catalog/catalogstring.cpp:133
+msgctxt "XLIFF mark type"
+msgid ""
+"abbreviation: an abbreviated form of a simple term resulting from the "
+"omission of some of its letters (e.g. 'adj.' for 'adjective')"
+msgstr ""
+
+#: catalog/catalogstring.cpp:134
+msgctxt "XLIFF mark type"
+msgid ""
+"acronym: an abbreviated form of a term made up of letters from the full form "
+"of a multiword term strung together into a sequence pronounced only "
+"syllabically (e.g. 'radar' for 'radio detecting and ranging')"
+msgstr ""
+
+#: catalog/catalogstring.cpp:135
+msgctxt "XLIFF mark type"
+msgid ""
+"appellation: a proper-name term, such as the name of an agency or other "
+"proper entity"
+msgstr ""
+
+#: catalog/catalogstring.cpp:136
+msgctxt "XLIFF mark type"
+msgid ""
+"collocation: a recurrent word combination characterized by cohesion in that "
+"the components of the collocation must co-occur within an utterance or "
+"series of utterances, even though they do not necessarily have to maintain "
+"immediate proximity to one another"
+msgstr ""
+
+#: catalog/catalogstring.cpp:137
+msgctxt "XLIFF mark type"
+msgid ""
+"common name: a synonym for an international scientific term that is used in "
+"general discourse in a given language"
+msgstr ""
+
+#: catalog/catalogstring.cpp:138
+msgctxt "XLIFF mark type"
+msgid "date and/or time"
+msgstr ""
+
+#: catalog/catalogstring.cpp:139
+msgctxt "XLIFF mark type"
+msgid ""
+"equation: an expression used to represent a concept based on a statement "
+"that two mathematical expressions are, for instance, equal as identified by "
+"the equal sign (=), or assigned to one another by a similar sign"
+msgstr ""
+
+#: catalog/catalogstring.cpp:140
+msgctxt "XLIFF mark type"
+msgid ""
+"expanded form: The complete representation of a term for which there is an "
+"abbreviated form"
+msgstr ""
+
+#: catalog/catalogstring.cpp:141
+msgctxt "XLIFF mark type"
+msgid ""
+"formula: figures, symbols or the like used to express a concept briefly, "
+"such as a mathematical or chemical formula"
+msgstr ""
+
+#: catalog/catalogstring.cpp:142
+msgctxt "XLIFF mark type"
+msgid ""
+"head term: the concept designation that has been chosen to head a "
+"terminological record"
+msgstr ""
+
+#: catalog/catalogstring.cpp:143
+msgctxt "XLIFF mark type"
+msgid ""
+"initialism: an abbreviated form of a term consisting of some of the initial "
+"letters of the words making up a multiword term or the term elements making "
+"up a compound term when these letters are pronounced individually (e.g. "
+"'BSE' for 'bovine spongiform encephalopathy')"
+msgstr ""
+
+#: catalog/catalogstring.cpp:144
+msgctxt "XLIFF mark type"
+msgid ""
+"international scientific term: a term that is part of an international "
+"scientific nomenclature as adopted by an appropriate scientific body"
+msgstr ""
+
+#: catalog/catalogstring.cpp:145
+msgctxt "XLIFF mark type"
+msgid ""
+"internationalism: a term that has the same or nearly identical orthographic "
+"or phonemic form in many languages"
+msgstr ""
+
+#: catalog/catalogstring.cpp:146
+msgctxt "XLIFF mark type"
+msgid ""
+"logical expression: an expression used to represent a concept based on "
+"mathematical or logical relations, such as statements of inequality, set "
+"relationships, Boolean operations, and the like"
+msgstr ""
+
+#: catalog/catalogstring.cpp:147
+msgctxt "XLIFF mark type"
+msgid "materials management unit: a unit to track object"
+msgstr ""
+
+#: catalog/catalogstring.cpp:148
+#, fuzzy
+#| msgid "Name:"
+msgctxt "XLIFF mark type"
+msgid "name"
+msgstr "Атауы:"
+
+#: catalog/catalogstring.cpp:149
+msgctxt "XLIFF mark type"
+msgid ""
+"near synonym: a term that represents the same or a very similar concept as "
+"another term in the same language, but for which interchangeability is "
+"limited to some contexts and inapplicable in others"
+msgstr ""
+
+#: catalog/catalogstring.cpp:150
+msgctxt "XLIFF mark type"
+msgid ""
+"part number: a unique alphanumeric designation assigned to an object in a "
+"manufacturing system"
+msgstr ""
+
+#: catalog/catalogstring.cpp:151
+msgctxt "XLIFF mark type"
+msgid "phrase"
+msgstr ""
+
+#: catalog/catalogstring.cpp:152
+msgctxt "XLIFF mark type"
+msgid ""
+"phraseological: a group of two or more words that form a unit, the meaning "
+"of which frequently cannot be deduced based on the combined sense of the "
+"words making up the phrase"
+msgstr ""
+
+#: catalog/catalogstring.cpp:153
+msgctxt "XLIFF mark type"
+msgid "protected: the marked text should not be translated"
+msgstr ""
+
+#: catalog/catalogstring.cpp:154
+msgctxt "XLIFF mark type"
+msgid ""
+"romanized form: a form of a term resulting from an operation whereby non-"
+"Latin writing systems are converted to the Latin alphabet"
+msgstr ""
+
+#: catalog/catalogstring.cpp:155
+msgctxt "XLIFF mark type"
+msgid "segment: the marked text represents a segment"
+msgstr ""
+
+#: catalog/catalogstring.cpp:156
+msgctxt "XLIFF mark type"
+msgid "set phrase: a fixed, lexicalized phrase"
+msgstr ""
+
+#: catalog/catalogstring.cpp:157
+msgctxt "XLIFF mark type"
+msgid ""
+"short form: a variant of a multiword term that includes fewer words than the "
+"full form of the term (e.g. 'Group of Twenty-four' for 'Intergovernmental "
+"Group of Twenty-four on International Monetary Affairs')"
+msgstr ""
+
+#: catalog/catalogstring.cpp:158
+msgctxt "XLIFF mark type"
+msgid ""
+"stock keeping unit: an inventory item identified by a unique alphanumeric "
+"designation assigned to an object in an inventory control system"
+msgstr ""
+
+#: catalog/catalogstring.cpp:159
+msgctxt "XLIFF mark type"
+msgid "standard text: a fixed chunk of recurring text"
+msgstr ""
+
+#: catalog/catalogstring.cpp:160
+msgctxt "XLIFF mark type"
+msgid ""
+"symbol: a designation of a concept by letters, numerals, pictograms or any "
+"combination thereof"
+msgstr ""
+
+#: catalog/catalogstring.cpp:161
+msgctxt "XLIFF mark type"
+msgid ""
+"synonym: a term that represents the same or a very similar concept as the "
+"main entry term in a term entry"
+msgstr ""
+
+#: catalog/catalogstring.cpp:162
+msgctxt "XLIFF mark type"
+msgid ""
+"synonymous phrase: phraseological unit in a language that expresses the same "
+"semantic content as another phrase in that same language"
+msgstr ""
+
+#: catalog/catalogstring.cpp:163
+msgctxt "XLIFF mark type"
+msgid "term"
+msgstr ""
+
+#: catalog/catalogstring.cpp:164
+msgctxt "XLIFF mark type"
+msgid ""
+"transcribed form: a form of a term resulting from an operation whereby the "
+"characters of one writing system are represented by characters from another "
+"writing system, taking into account the pronunciation of the characters "
+"converted"
+msgstr ""
+
+#: catalog/catalogstring.cpp:165
+msgctxt "XLIFF mark type"
+msgid ""
+"transliterated form: a form of a term resulting from an operation whereby "
+"the characters of an alphabetic writing system are represented by characters "
+"from another alphabetic writing system"
+msgstr ""
+
+#: catalog/catalogstring.cpp:166
+msgctxt "XLIFF mark type"
+msgid ""
+"truncated term: an abbreviated form of a term resulting from the omission of "
+"one or more term elements or syllables (e.g. 'flu' for 'influenza')"
+msgstr ""
+
+#: catalog/catalogstring.cpp:167
+msgctxt "XLIFF mark type"
+msgid "variant: one of the alternate forms of a term"
+msgstr ""
+
 #: catalog/cmd.cpp:94
 msgctxt "@item Undo action item"
 msgid "Insertion"
@@ -1995,9 +2449,12 @@ msgid "Remove text with markup"
 msgstr ""
 
 #: cataloglistview/cataloglistview.cpp:45
-msgctxt "@title:window"
-msgid "Message Tree"
-msgstr "Жазу бұтағы"
+#, fuzzy
+#| msgctxt "@title:column Number of entries"
+#| msgid "Translated"
+msgctxt "@title:window aka Message Tree"
+msgid "Translation Units"
+msgstr "Аударылған"
 
 #: cataloglistview/cataloglistview.cpp:62
 msgid "Quick search..."
@@ -2094,14 +2551,6 @@ msgctxt "@title:column"
 msgid "Notes"
 msgstr ""
 
-#: cataloglistview/catalogmodel.cpp:141
-msgid "no"
-msgstr ""
-
-#: cataloglistview/catalogmodel.cpp:141
-msgid "yes"
-msgstr ""
-
 #: common/termlabel.cpp:99
 msgctxt "@action:inmenu Edit term"
 msgid "Edit"
@@ -2121,12 +2570,19 @@ msgid "Glossary"
 msgstr "Сөздігі"
 
 #: glossary/glossaryview.cpp:80
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid ""
+#| "Translations to common terms appear here. Press displayed shortcut to "
+#| "insert term translation. Use context menu to add new entry (tip: select "
+#| "words in original and translation fields before calling <interface>Define "
+#| "new term</interface>)."
 msgctxt "@info:tooltip"
 msgid ""
-"Translations to common terms appear here. Press displayed shortcut to insert "
-"term translation. Use context menu to add new entry (tip: select words in "
-"original and translation fields before calling <interface>Define new term</"
-"interface>)."
+"<p>Translations for common terms appear here.</p><p>Press shortcut displayed "
+"near the term to insert its translation.</p><p>Use context menu to add new "
+"entry (tip:&nbsp;select words in original and translation fields before "
+"calling <interface>Define&nbsp;new&nbsp;term</interface>).</p>"
 msgstr ""
 "Жалпы терминдердің аудармасы осында болады. Терминнің аудармасын ендіру үшін "
 "көрсетілген тіркесімді басыңыз. Жаңа жазуын қосу үшін контексттік мәзірін "
@@ -2153,12 +2609,12 @@ msgstr ""
 "Сөздікте сақталмаған өзгерістер бар.\n"
 "Өзгерістерді сақтағыңыз келе ме, әлде жоғала берсін бе?"
 
-#: mergemode/mergecatalog.cpp:203
+#: mergemode/mergecatalog.cpp:206
 msgctxt "@item Undo action item"
 msgid "Accept change in translation"
 msgstr "Өзгерісті қабылдау"
 
-#: mergemode/mergecatalog.cpp:255
+#: mergemode/mergecatalog.cpp:258
 msgctxt "@item Undo action item"
 msgid "Accept all new translations"
 msgstr "Барлық өзгерістерін қабылдау"
@@ -2245,19 +2701,19 @@ msgctxt "@title:tab"
 msgid "General"
 msgstr "Жалпы"
 
-#: prefs/prefs.cpp:208
+#: prefs/prefs.cpp:210
 msgctxt "@title:tab"
 msgid "Advanced"
 msgstr ""
 
-#: prefs/prefs.cpp:227
+#: prefs/prefs.cpp:229
 #, fuzzy
 #| msgid "Skip tags"
 msgctxt "@title:tab"
 msgid "Scripts"
 msgstr "Тегтерін өткізіп жіберу"
 
-#: prefs/prefs.cpp:233
+#: prefs/prefs.cpp:235
 msgctxt "@title:tab"
 msgid "Personal"
 msgstr ""
@@ -2288,8 +2744,8 @@ msgstr "Аударылған"
 
 #: project/projectmodel.cpp:504
 msgctxt "@title:column Number of entries"
-msgid "Fuzzy"
-msgstr "Дүмбілез"
+msgid "Not ready"
+msgstr ""
 
 #: project/projectmodel.cpp:505
 msgctxt "@title:column Number of entries"
@@ -2462,32 +2918,32 @@ msgctxt "@info"
 msgid "Batch translation has been scheduled."
 msgstr "Будалап аудару жоспарланды."
 
-#: tm/tmview.cpp:562
+#: tm/tmview.cpp:558
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "File: %1<br />Date: %2"
 msgstr ""
 
-#: tm/tmview.cpp:564
+#: tm/tmview.cpp:560
 msgctxt "@info:tooltip on TM entry continues"
 msgid "<br />Is not present in the file anymore"
 msgstr ""
 
-#: tm/tmview.cpp:582
+#: tm/tmview.cpp:578
 msgctxt "@action:inmenu"
 msgid "Remove this entry"
 msgstr ""
 
-#: tm/tmview.cpp:584
+#: tm/tmview.cpp:580
 msgctxt "@action:inmenu"
 msgid "Open file containing this entry"
 msgstr ""
 
-#: tm/tmview.cpp:589
+#: tm/tmview.cpp:585
 msgid "Do you really want to remove this entry from translation memory?"
 msgstr ""
 
-#: tm/tmview.cpp:589
+#: tm/tmview.cpp:585
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Translation Memory Query"
@@ -2495,7 +2951,7 @@ msgctxt "@title:window"
 msgid "Translation Memory Entry Removal"
 msgstr "Жатталған аудармалардан іздеу"
 
-#: tm/tmview.cpp:960
+#: tm/tmview.cpp:956
 msgctxt "@item Undo action"
 msgid "Use translation memory suggestion"
 msgstr "Жатталған аударманы қолдану"
@@ -2504,68 +2960,68 @@ msgstr "Жатталған аударманы қолдану"
 msgid "Web Queries"
 msgstr "Веб сұранысы"
 
-#: scripts/new-project-wizard.py:39
+#: scripts/new-project-wizard.py:42
 msgid "What do you want to do?"
 msgstr ""
 
-#: scripts/new-project-wizard.py:40
+#: scripts/new-project-wizard.py:43
 msgid "Identify the kind of project you want:"
 msgstr ""
 
-#: scripts/new-project-wizard.py:43
+#: scripts/new-project-wizard.py:46
 #, fuzzy
 #| msgctxt "@title:column Number of entries"
 #| msgid "Translated"
 msgid "Translate a document"
 msgstr "Аударылған"
 
-#: scripts/new-project-wizard.py:46
+#: scripts/new-project-wizard.py:49
 msgid "Translate application interface"
 msgstr ""
 
-#: scripts/new-project-wizard.py:62
+#: scripts/new-project-wizard.py:65
 msgid "Choose a document to be translated"
 msgstr ""
 
-#: scripts/new-project-wizard.py:63
+#: scripts/new-project-wizard.py:66
 msgid "Choose document in a source language."
 msgstr ""
 
-#: scripts/new-project-wizard.py:65
+#: scripts/new-project-wizard.py:68
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Spellcheck files"
 msgid "Select file:"
 msgstr "Файлдарда емлені тексеру"
 
-#: scripts/new-project-wizard.py:72
+#: scripts/new-project-wizard.py:75
 #, fuzzy
 #| msgctxt "@label:textbox"
 #| msgid "Template directory:"
 msgid "Select a directory:"
 msgstr "POT қапшығы:"
 
-#: scripts/new-project-wizard.py:112
+#: scripts/new-project-wizard.py:114
 msgid "Choose project name and location"
 msgstr ""
 
-#: scripts/new-project-wizard.py:113
+#: scripts/new-project-wizard.py:115
 msgid "If you choose custom paths then the source files will be copied to it."
 msgstr ""
 
-#: scripts/new-project-wizard.py:116
+#: scripts/new-project-wizard.py:118
 msgid "Use initial source dir, generate name automatically"
 msgstr ""
 
-#: scripts/new-project-wizard.py:119
+#: scripts/new-project-wizard.py:121
 msgid "Custom paths"
 msgstr ""
 
-#: scripts/new-project-wizard.py:126
+#: scripts/new-project-wizard.py:128
 msgid "Location:"
 msgstr ""
 
-#: scripts/new-project-wizard.py:168
+#: scripts/new-project-wizard.py:170
 #, fuzzy
 #| msgid "Corresponding target language synonyms:"
 msgid "Choose source and target languages"
@@ -2574,6 +3030,51 @@ msgstr "Аударма тілдегі сәйкесті синонимдері:"
 #: scripts/widget-text-capture.py:15 scripts/widget-text-capture.py:18
 msgid "Widget Text Capture"
 msgstr ""
+
+#~ msgctxt "@info:status message entries"
+#~ msgid "Fuzzy: %1"
+#~ msgstr "Дүмбілез: %1"
+
+#~ msgctxt "@label whether entry is fuzzy"
+#~ msgid "Fuzzy:"
+#~ msgstr "Дүмбілез:"
+
+#~ msgctxt "@title:window"
+#~ msgid "Original Diff"
+#~ msgstr "Айырмашылық"
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid ""
+#~| "Sometimes, if original is changed, its translation becomes "
+#~| "<emphasis>fuzzy</emphasis>. This window shows the difference between new "
+#~| "original string and the old one, so that you can see what changes should "
+#~| "be applied to translation."
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Sometimes, if original text is changed, its translation becomes "
+#~ "<emphasis>fuzzy</emphasis> (i.e. looses approval status). This window "
+#~ "shows the difference between new original string and the old one, so that "
+#~ "you can easily see which changes should be applied to translation."
+#~ msgstr ""
+#~ "Кейбірде, түпнұсқасы өгертілгенде, оның аудармасы <emphasis>дүмбілез</"
+#~ "emphasis> болып қалады. Бұл терезеде жаңа және ескі түпұсқа мәтіндердің "
+#~ "арасындағы айырмашылығын көрсетеді. Осыған қарап аудармасын да түзете "
+#~ "аласыз."
+
+#, fuzzy
+#~| msgid "Translation Memory"
+#~ msgctxt "@label:textbox"
+#~ msgid "Translation directory:"
+#~ msgstr "Жатталған аудармалар (ТМ)"
+
+#~ msgctxt "@title:window"
+#~ msgid "Message Tree"
+#~ msgstr "Жазу бұтағы"
+
+#~ msgctxt "@title:column Number of entries"
+#~ msgid "Fuzzy"
+#~ msgstr "Дүмбілез"
 
 #, fuzzy
 #~| msgctxt "@info:status"
@@ -2588,10 +3089,6 @@ msgstr ""
 #~ msgctxt "@title:window"
 #~ msgid "Message Context"
 #~ msgstr "Жазудың контексті"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "Create new project"
-#~ msgstr "Жаңа жоба"
 
 #~ msgctxt "@label:textbox"
 #~ msgid "Language:"
