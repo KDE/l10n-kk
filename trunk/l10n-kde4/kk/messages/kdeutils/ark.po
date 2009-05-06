@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-05 11:22+0200\n"
+"POT-Creation-Date: 2009-05-06 12:10+0200\n"
 "PO-Revision-Date: 2007-04-27 10:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -15,6 +15,12 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
+
+#: app/extractHereDndPlugin.cpp:47 kerfuffle/extractiondialog.cpp:121
+#, fuzzy
+#| msgid "Extract"
+msgid "Extract here"
+msgstr "Тарқату"
 
 #: app/main.cpp:38
 msgid "Ark"
@@ -203,7 +209,7 @@ msgstr "'архивті' ашу"
 #: kerfuffle/adddialog.cpp:54
 #, fuzzy
 #| msgid "Simple Compressed Archive"
-msgid "Compress to archive"
+msgid "Compress to Archive"
 msgstr "Жай сығылған архив"
 
 #: kerfuffle/addtoarchive.cpp:91
@@ -303,43 +309,43 @@ msgstr "Бұндай архив бар ғой. Үстінен жаза бере�
 msgid "Folder exists"
 msgstr "Архив әлден бар"
 
-#: kerfuffle/extractiondialog.cpp:121
-#, fuzzy
-#| msgid "Extract"
-msgid "Extract here"
-msgstr "Тарқату"
-
-#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321
+#: kerfuffle/extractiondialog.cpp:121 part/part.cpp:321 part/part.cpp:747
 msgid "Cancel"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:138
+#: kerfuffle/jobs.cpp:110
+#, fuzzy
+#| msgid "An error occurred while opening the archive %1."
+msgid "Sorry, an error occured while performing the operation."
+msgstr "%1 архивін ашқанда бір қате орын алды."
+
+#: kerfuffle/jobs.cpp:141
 #, fuzzy
 #| msgid "Creating archive..."
 msgid "Loading archive..."
 msgstr "Архив құрылуда..."
 
-#: kerfuffle/jobs.cpp:186
+#: kerfuffle/jobs.cpp:189
 #, fuzzy
 #| msgid "Extract all files"
 msgid "Extracting all files"
 msgstr "Барлық файлдарды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:190
+#: kerfuffle/jobs.cpp:193
 #, fuzzy, kde-format
 #| msgid "Extract all files"
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "Барлық файлдарды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:225
+#: kerfuffle/jobs.cpp:228
 #, fuzzy, kde-format
 #| msgid "Adding files..."
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "Файлар қосылуда..."
 
-#: kerfuffle/jobs.cpp:246
+#: kerfuffle/jobs.cpp:249
 #, fuzzy, kde-format
 #| msgid "An error occurred while adding the files to the archive."
 msgid "Deleting a file from the archive"
@@ -516,8 +522,10 @@ msgid "Click to preview the selected file"
 msgstr ""
 
 #: part/part.cpp:198
-msgid "E&xtract..."
-msgstr "&Тарқатып алу..."
+#, fuzzy
+#| msgid "Extract"
+msgid "E&xtract"
+msgstr "Тарқату"
 
 #: part/part.cpp:200
 msgid ""
@@ -565,7 +573,7 @@ msgstr "ашатын қапшық"
 #: part/part.cpp:248
 #, fuzzy
 #| msgid "E&xtract..."
-msgid "Quick extract to..."
+msgid "Quick Extract To..."
 msgstr "&Тарқатып алу..."
 
 #: part/part.cpp:311
@@ -583,13 +591,13 @@ msgstr "Бұндай архив бар ғой. Үстінен жаза бере�
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Archive Already Exists"
-msgid "File exists"
+msgid "File Exists"
 msgstr "Архив әлден бар"
 
 #: part/part.cpp:321
 #, fuzzy
 #| msgid "Open with:"
-msgid "Open file"
+msgid "Open File"
 msgstr "Мынамен ашу:"
 
 #: part/part.cpp:330
@@ -600,11 +608,11 @@ msgstr ""
 #: part/part.cpp:330 part/part.cpp:374 part/part.cpp:415
 #, fuzzy
 #| msgid "Open 'archive'"
-msgid "Error opening archive"
+msgid "Error Opening Archive"
 msgstr "'архивті' ашу"
 
 #: part/part.cpp:360
-msgid "Unable to determine archive type"
+msgid "Unable to Determine Archive Type"
 msgstr ""
 
 #: part/part.cpp:361
@@ -643,6 +651,16 @@ msgstr "Барлық файлдар"
 #| msgid "Add Folde&r..."
 msgid "Add Folder"
 msgstr "Қапшықты қ&осу..."
+
+#: part/part.cpp:747
+msgid "Deleting these files is not undoable. Are you sure you want to do this?"
+msgstr ""
+
+#: part/part.cpp:747
+#, fuzzy
+#| msgid "Selected files only"
+msgid "Delete files"
+msgstr "Таңдалған файлдарды ғана"
 
 #: plugins/7zipplugin/7zipplugin.cpp:60
 msgid "Unable to find 7zr, 7za or 7z"
@@ -1042,6 +1060,9 @@ msgstr "Барлық файлдарды"
 msgid "Open destination folder after extraction"
 msgstr "Тарқатқан соң кондырған қапшық ашылсын"
 
+#~ msgid "E&xtract..."
+#~ msgstr "&Тарқатып алу..."
+
 #, fuzzy
 #~| msgid "An error occurred while adding the files to the archive."
 #~ msgid "Couldn't open the file '%1', libarchive can't handle it."
@@ -1194,9 +1215,6 @@ msgstr "Тарқатқан соң кондырған қапшық ашылсын
 
 #~ msgid "Saving..."
 #~ msgstr "Сақталуда..."
-
-#~ msgid "An error occurred while opening the archive %1."
-#~ msgstr "%1 архивін ашқанда бір қате орын алды."
 
 #~ msgid ""
 #~ "The following files will not be extracted\n"
