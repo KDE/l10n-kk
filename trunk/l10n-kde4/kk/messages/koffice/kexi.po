@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-24 12:21+0200\n"
+"POT-Creation-Date: 2009-07-13 11:43+0200\n"
 "PO-Revision-Date: 2009-01-12 09:55+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -2133,8 +2133,8 @@ msgstr ""
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:255
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: main/KexiMainWindow.cpp:4217 rc.cpp:315 rc.cpp:372
-#: plugins/reportspgz/kexireportdesignview.cpp:41
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1169
+#: plugins/reportspgz/kexireportdesignview.cpp:45
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1105
 msgid "Delete"
 msgstr "Жою"
 
@@ -2325,12 +2325,12 @@ msgid "Changes page size and margins."
 msgstr "Бет өлшемі мен жиектерін өзгерту."
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:925
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:877
 msgid "Portrait"
 msgstr "Тік"
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:449
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:925
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:877
 msgid "Landscape"
 msgstr "Көлденең"
 
@@ -4682,13 +4682,13 @@ msgstr "Қосу"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:31
 #. i18n: ectx: property (windowTitle), widget (QDialog, SectionEditor)
-#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:44
+#: rc.cpp:318 plugins/reportspgz/kexireportdesignview.cpp:48
 msgid "Section Editor"
 msgstr "Бөлім өңдегіші"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
-#: rc.cpp:321 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:582
+#: rc.cpp:321 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:585
 msgid "Report Header"
 msgstr "Есеп берудің жоғарғы колонтитулы"
 
@@ -4720,7 +4720,7 @@ msgstr "Бүкіл бет(тер)і"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
-#: rc.cpp:342 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:586
+#: rc.cpp:342 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:589
 msgid "Report Footer"
 msgstr "Есеп берудің төменгі колонтитулы"
 
@@ -6380,31 +6380,50 @@ msgstr "Есеп беру %1 деп сақталды"
 msgid "Saved OK"
 msgstr "Сақтау сәтті өтті"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:35
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1161
+#: plugins/reportspgz/kexisourceselector.cpp:36
+#, fuzzy
+#| msgid "Data"
+msgid "Set Data"
+msgstr "Деректер"
+
+#: plugins/reportspgz/kexisourceselector.cpp:40
+#, fuzzy
+#| msgctxt "General properties"
+#| msgid "General"
+msgid "Internal"
+msgstr "Жалпы"
+
+#: plugins/reportspgz/kexisourceselector.cpp:41
+#, fuzzy
+#| msgid "External Data"
+msgid "External"
+msgstr "Сыртқы деректер"
+
+#: plugins/reportspgz/kexireportdesignview.cpp:39
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1097
 msgid "Cut"
 msgstr "Қиып алу"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:37
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1162
+#: plugins/reportspgz/kexireportdesignview.cpp:41
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1098
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:66
 msgid "Copy"
 msgstr "Көшіріп алу"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:39
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1165
+#: plugins/reportspgz/kexireportdesignview.cpp:43
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1101
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:47
+#: plugins/reportspgz/kexireportdesignview.cpp:51
 msgid "Raise"
 msgstr "Көтеру"
 
-#: plugins/reportspgz/kexireportdesignview.cpp:49
+#: plugins/reportspgz/kexireportdesignview.cpp:53
 msgid "Lower"
 msgstr "Төмендету"
 
-#: plugins/reportspgz/kexireportpart.cpp:57
+#: plugins/reportspgz/kexireportpart.cpp:60
 #, fuzzy
 #| msgid "Report"
 msgctxt ""
@@ -6415,21 +6434,27 @@ msgctxt ""
 msgid "report"
 msgstr "Есеп беру"
 
-#: plugins/reportspgz/kexireportpart.cpp:58
+#: plugins/reportspgz/kexireportpart.cpp:61
 msgid "Report"
 msgstr "Есеп беру"
 
-#: plugins/reportspgz/kexireportpart.cpp:59
+#: plugins/reportspgz/kexireportpart.cpp:62
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "Жаңа есеп беруді құру"
 
-#: plugins/reportspgz/kexireportpart.cpp:60
+#: plugins/reportspgz/kexireportpart.cpp:63
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "Жаңа есеп беруді құру."
 
-#: plugins/reportspgz/kexireportpart.cpp:131
+#: plugins/reportspgz/kexireportpart.cpp:135
+#, fuzzy
+#| msgid "Row Source"
+msgid "Source"
+msgstr "Деректер көзі"
+
+#: plugins/reportspgz/kexireportpart.cpp:139
 msgid "Controls"
 msgstr "Басқару тетіктері"
 
@@ -6462,11 +6487,11 @@ msgstr "Пішін"
 msgid "Check"
 msgstr "Тексеру"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Report Writer"
 msgstr "Есеп беруді жазу"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 #, kde-format
 msgid ""
 "The document '%1' contains unsaved changes.\n"
@@ -6475,55 +6500,55 @@ msgstr ""
 "'%1' құжатына сақталмаған өзгерістері бар.\n"
 "Жабу алдында сақтауды қалайсыз ба?"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Save"
 msgstr "Сақтау"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Discard"
 msgstr "Ысырып тастау"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:402
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:399
 msgid "Cancel"
 msgstr "Қайту"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:542
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:545
 msgid "Page Header (Any)"
 msgstr "Жоғарғы колонтитулы (барлығының)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:546
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:549
 msgid "Page Header (Even)"
 msgstr "Жоғарғы колонтитулы (жұптардың)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:550
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:553
 msgid "Page Header (Odd)"
 msgstr "Жоғарғы колонтитулы (тақтардың)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:554
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:557
 msgid "Page Header (First)"
 msgstr "Жоғарғы колонтитулы (алғашқының)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:558
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:561
 msgid "Page Header (Last)"
 msgstr "Жоғарғы колонтитулы (соңғының)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:562
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:565
 msgid "Page Footer (Any)"
 msgstr "Төменгі колонтитулы (барлығының)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:566
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:569
 msgid "Page Footer (Even)"
 msgstr "Төменгі колонтитулы (жұптардың)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:570
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:573
 msgid "Page Footer (Odd)"
 msgstr "Төменгі колонтитулы (тақтардың)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:574
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:577
 msgid "Page Footer (First)"
 msgstr "Төменгі колонтитулы (алғашқының)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:578
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:581
 msgid "Page Footer (Last)"
 msgstr "Төменгі колонтитулы (соңғының)"
 
