@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatowork\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-15 06:49+0200\n"
+"POT-Creation-Date: 2009-08-18 06:44+0200\n"
 "PO-Revision-Date: 2008-07-17 14:34-0400\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -78,7 +78,16 @@ msgstr ""
 msgid "Project/node already exists, Merge?"
 msgstr ""
 
-#: part.cpp:392
+#: part.cpp:389
+msgid "Cannot find package"
+msgstr ""
+
+#: part.cpp:392 part.cpp:403
+msgid "Remove work package"
+msgid_plural "Remove work packages"
+msgstr[0] ""
+
+#: part.cpp:441
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed write file:\n"
@@ -90,42 +99,42 @@ msgstr ""
 "Файл жазу жаңылысы:\n"
 " %1"
 
-#: part.cpp:405
+#: part.cpp:454
 #, kde-format
 msgid "Not a valid KPlatoWork file: %1"
 msgstr ""
 
-#: part.cpp:432
+#: part.cpp:481
 #, fuzzy
 #| msgid "Invalid document. No mimetype specified."
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr "Жарамсыз құжат. MIME түрі келтірілмеген."
 
-#: part.cpp:458
+#: part.cpp:507
 #, fuzzy, kde-format
 #| msgid "Could not extract file: %1"
 msgid "Could not find %1"
 msgstr "%1 файлы алып-шығарылмады"
 
-#: part.cpp:470
+#: part.cpp:519
 #, kde-format
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: part.cpp:489
+#: part.cpp:538
 msgid "Invalid document. No mimetype specified."
 msgstr "Жарамсыз құжат. MIME түрі келтірілмеген."
 
-#: part.cpp:493
+#: part.cpp:542
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
 msgstr ""
 "Жарамсыз құжат. MIME түрі %1, ал керегі application/x-vnd.kde.kplato.work"
 
-#: part.cpp:500
+#: part.cpp:549
 #, kde-format
 msgid ""
 "This document was created with a newer version of KPlatoWork (syntax "
@@ -136,15 +145,15 @@ msgstr ""
 "жасалған\n"
 "KPlatoWork-тың қолдағы нұсқасымен ашсаңыз кейбр ақпарат жоғалуы мүмкін."
 
-#: part.cpp:502
+#: part.cpp:551
 msgid "File-Format Mismatch"
 msgstr "Файл пішім келіспеушілігі"
 
-#: part.cpp:502
+#: part.cpp:551
 msgid "Continue"
 msgstr "Жалғастыру"
 
-#: part.cpp:527
+#: part.cpp:576
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to open store:\n"
@@ -154,7 +163,7 @@ msgstr ""
 "Қоймасын ашу жаңылысы:\n"
 " %1"
 
-#: part.cpp:546
+#: part.cpp:595
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not open workpackage store:\n"
@@ -164,95 +173,131 @@ msgstr ""
 "Жұмыс дестенің қоймасы ашылмады:\n"
 " %1"
 
-#: part.cpp:688
+#: part.cpp:737
 #, fuzzy
 #| msgid "KPlato WorkPackage Handler"
 msgid "No WorkPackage handles this document"
 msgstr "KPlato жұмыс дестесінің өңдеуіші"
 
 #. i18n: file: kplatowork.rc:4
-#. i18n: ectx: Menu (settings)
+#. i18n: ectx: Menu (edit)
 #: rc.cpp:3
+msgid "&Edit"
+msgstr "Өңд&еу"
+
+#. i18n: file: kplatowork.rc:7
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:6
 msgid "&Settings"
 msgstr "&Баптау"
 
 #. i18n: file: kplatowork_readonly.rc:3
 #. i18n: ectx: Menu (view)
-#: rc.cpp:6
+#: rc.cpp:9
 msgid "&View"
 msgstr "&Көрініс"
 
-#: rc.cpp:7
+#: rc.cpp:10
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Сайран Киккарин"
 
-#: rc.cpp:8
+#: rc.cpp:11
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: taskworkpackagemodel.cpp:373
+#: taskworkpackagemodel.cpp:313
 #, no-c-format
 msgid "Modify % Completed"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:402
+#: taskworkpackagemodel.cpp:342
 msgid "Set finished"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:423
+#: taskworkpackagemodel.cpp:363
 msgid "Modify Remainig Effort"
 msgstr ""
 
-#: taskworkpackagemodel.cpp:436
+#: taskworkpackagemodel.cpp:376
 msgid "Modify Actual Effort"
 msgstr ""
 
-#: taskworkpackageview.cpp:285
+#: taskworkpackagemodel.cpp:488
+#, fuzzy
+#| msgid "Project"
+msgid "Project Name"
+msgstr "Жоба"
+
+#: taskworkpackagemodel.cpp:489
+#, fuzzy
+#| msgid "Project"
+msgid "Project Manager"
+msgstr "Жоба"
+
+#: taskworkpackageview.cpp:300
 #, fuzzy
 #| msgid "Configure KPlatoWork..."
 msgid "Configure View..."
 msgstr "KPlatoWork баптауы..."
 
-#: view.cpp:120 view.cpp:144
+#: view.cpp:120
+msgid "Remove Packages"
+msgstr ""
+
+#: view.cpp:124
+msgid "Remove Package"
+msgstr ""
+
+#: view.cpp:129
 msgid "Progress..."
 msgstr "Барысы..."
 
-#: view.cpp:125
+#: view.cpp:134
 msgid "Configure KPlatoWork..."
 msgstr "KPlatoWork баптауы..."
 
-#: view.cpp:129
+#: view.cpp:138
 #, fuzzy
 #| msgid "&Edit"
 msgid "Edit..."
 msgstr "Өңд&еу"
 
-#: view.cpp:133
+#: view.cpp:142
 #, fuzzy
 #| msgid "&View"
 msgctxt "@verb"
 msgid "View..."
 msgstr "&Көрініс"
 
-#: view.cpp:140
+#: view.cpp:149
 msgid "Send Package..."
 msgstr ""
 
-#: view.cpp:353
+#: view.cpp:153
+#, fuzzy
+#| msgid "Progress..."
+msgid "Edit Progress..."
+msgstr "Барысы..."
+
+#: view.cpp:157
+msgid "View Description..."
+msgstr ""
+
+#: view.cpp:302
 msgid "This file is not editable"
 msgstr "Бұл файл өңдеуге келмейді"
 
-#: view.cpp:368
+#: view.cpp:317
 msgid "No node selected"
 msgstr ""
 
-#: view.cpp:374
+#: view.cpp:323
 msgid "Cannot find work package"
 msgstr ""
 
-#: view.cpp:378
+#: view.cpp:327
 #, fuzzy
 #| msgid ""
 #| "This workpackage is not in your project store:\n"
@@ -266,7 +311,7 @@ msgstr ""
 "%1\n"
 "Сақтауды қалайсыз ба?"
 
-#: view.cpp:391
+#: view.cpp:340
 #, kde-format
 msgid "Work Package: %1"
 msgstr ""
@@ -299,7 +344,7 @@ msgstr ""
 "Қоймасын ашу жаңылысы:\n"
 " %1"
 
-#: workpackage.cpp:258
+#: workpackage.cpp:268
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed to open store:\n"
@@ -311,7 +356,7 @@ msgstr ""
 "Қоймасын ашу жаңылысы:\n"
 " %1"
 
-#: workpackage.cpp:285
+#: workpackage.cpp:295
 #, kde-format
 msgid ""
 "Failed read file:\n"
@@ -320,7 +365,7 @@ msgstr ""
 "Файл оқу жаңылысы:\n"
 " %1"
 
-#: workpackage.cpp:289
+#: workpackage.cpp:299
 #, kde-format
 msgid ""
 "Failed write file:\n"
@@ -329,7 +374,7 @@ msgstr ""
 "Файл жазу жаңылысы:\n"
 " %1"
 
-#: workpackage.cpp:381
+#: workpackage.cpp:391
 #, kde-format
 msgid ""
 "<p>The work package <b>'%2'</b> has an open document.</p><p>Data may be lost "
@@ -339,19 +384,19 @@ msgid_plural ""
 "if you continue.</p>"
 msgstr[0] ""
 
-#: workpackage.cpp:402
+#: workpackage.cpp:412
 #, kde-format
 msgid ""
 "<p>The work package <b>'%1'</b> has been modified.</p><p>Do you want to save "
 "it?</p>"
 msgstr ""
 
-#: workpackage.cpp:428
+#: workpackage.cpp:438
 #, kde-format
 msgid "<p>Work package <b>'%1'</b></p><p>Could not open store:</p><p>%2</p>"
 msgstr ""
 
-#: workpackage.cpp:438
+#: workpackage.cpp:448
 #, kde-format
 msgid "<p>Work package <b>'%1'</b></p><p>Could not extract file:</p><p>%2</p>"
 msgstr ""
@@ -376,12 +421,6 @@ msgstr "(c) 1998-2007, KPlato тобы"
 #: aboutdata.h:42
 msgid "Dag Andersen"
 msgstr "Dag Andersen"
-
-#~ msgid "&Edit"
-#~ msgstr "Өңд&еу"
-
-#~ msgid "Project"
-#~ msgstr "Жоба"
 
 #~ msgid "Information"
 #~ msgstr "Мәлімет"
