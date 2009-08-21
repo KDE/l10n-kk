@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-20 06:17+0200\n"
+"POT-Creation-Date: 2009-08-21 06:05+0200\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -390,7 +390,9 @@ msgid "Type of estimate"
 msgstr "Бағалайтыны"
 
 #: kernel/kptglobal.cpp:83
-msgid "The calendar used when estimate type is Length"
+#, fuzzy
+#| msgid "The calendar used when estimate type is Length"
+msgid "The calendar used when estimate type is Duration"
 msgstr "Бағалайтыны \"Ұзақтығы\" болғанда қолданатын күнтізбесі"
 
 #: kernel/kptglobal.cpp:84
@@ -641,7 +643,7 @@ msgstr "Қатынасын өзгерту"
 msgid "Cannot fullfill constraints"
 msgstr "Белгіленген уақытта бітрілмейді"
 
-#: kernel/kptnode.cpp:122 kernel/kptnode.cpp:1439 kernel/kpttask.cpp:3415
+#: kernel/kptnode.cpp:122 kernel/kptnode.cpp:1438 kernel/kpttask.cpp:3372
 #: models/kptnodeitemmodel.cpp:280 models/kptnodeitemmodel.cpp:285
 #: models/kptnodeitemmodel.cpp:295 models/kptnodeitemmodel.cpp:453
 #: models/kptnodeitemmodel.cpp:459 models/kptnodeitemmodel.cpp:469
@@ -726,21 +728,15 @@ msgstr "Белгілі уақыт аралығы"
 msgid "Effort"
 msgstr "Жұмыс көлемі"
 
-#: kernel/kptnode.cpp:1407
-#, fuzzy
-#| msgid "Duration"
-msgid "FixedDuration"
+#: kernel/kptnode.cpp:1407 models/kptnodeitemmodel.cpp:1722
+msgid "Duration"
 msgstr "Жұмсалған уақыт"
 
-#: kernel/kptnode.cpp:1408
-msgid "Length"
-msgstr "Ұзындығы"
-
-#: kernel/kptnode.cpp:1440
+#: kernel/kptnode.cpp:1439
 msgid "Low"
 msgstr "Төмен"
 
-#: kernel/kptnode.cpp:1441
+#: kernel/kptnode.cpp:1440
 msgid "High"
 msgstr "Жоғары"
 
@@ -974,111 +970,107 @@ msgstr "Қате"
 msgid "Baselined"
 msgstr "Негізгі жоспар"
 
-#: kernel/kpttask.cpp:999
+#: kernel/kpttask.cpp:997
 #, fuzzy
 #| msgid "Early finish date"
 msgid "Calculate early finish "
 msgstr "Аяқтау мерзімінің басы"
 
-#: kernel/kpttask.cpp:1026 kernel/kpttask.cpp:1043 kernel/kpttask.cpp:1057
-#: kernel/kpttask.cpp:1079 kernel/kpttask.cpp:1086 kernel/kpttask.cpp:1093
-#: kernel/kpttask.cpp:1100 kernel/kpttask.cpp:1219 kernel/kpttask.cpp:1237
-#: kernel/kpttask.cpp:1252
+#: kernel/kpttask.cpp:1024 kernel/kpttask.cpp:1041 kernel/kpttask.cpp:1055
+#: kernel/kpttask.cpp:1077 kernel/kpttask.cpp:1084 kernel/kpttask.cpp:1091
+#: kernel/kpttask.cpp:1098 kernel/kpttask.cpp:1217 kernel/kpttask.cpp:1235
+#: kernel/kpttask.cpp:1250
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint"
 msgstr "%1: Шектеуден өтуі болмады"
 
-#: kernel/kpttask.cpp:1118 kernel/kpttask.cpp:1305 kernel/kpttask.cpp:1660
-#: kernel/kpttask.cpp:2019
+#: kernel/kpttask.cpp:1116 kernel/kpttask.cpp:1303 kernel/kpttask.cpp:1654
+#: kernel/kpttask.cpp:1978
 #, kde-format
 msgid "Resource %1 booked from %2 to %3"
 msgstr "%1 ресурсы %2 - %3 аралықта шақырылды"
 
-#: kernel/kpttask.cpp:1120
+#: kernel/kpttask.cpp:1118
 #, fuzzy, kde-format
 #| msgid "Early finish date"
 msgid "Early finish calculated: %1"
 msgstr "Аяқтау мерзімінің басы"
 
-#: kernel/kpttask.cpp:1193
+#: kernel/kpttask.cpp:1191
 #, fuzzy
 #| msgid "Calculate"
 msgid "Calculate late start"
 msgstr "Есептеу"
 
-#: kernel/kpttask.cpp:1307
+#: kernel/kpttask.cpp:1305
 #, fuzzy, kde-format
 #| msgid "Late start date"
 msgid "Late start calculated: %1"
 msgstr "Бастау мерзімінің соңы"
 
-#: kernel/kpttask.cpp:1383
+#: kernel/kpttask.cpp:1381
 #, kde-format
 msgid "Schedule from start %1"
 msgstr "Жоспарланған бастауы %1"
 
-#: kernel/kpttask.cpp:1456 kernel/kpttask.cpp:1480 kernel/kpttask.cpp:1506
-#: kernel/kpttask.cpp:1534 kernel/kpttask.cpp:1552 kernel/kpttask.cpp:1594
-#: kernel/kpttask.cpp:1610 kernel/kpttask.cpp:1623 kernel/kpttask.cpp:1637
-#: kernel/kpttask.cpp:1819 kernel/kpttask.cpp:1842 kernel/kpttask.cpp:1868
-#: kernel/kpttask.cpp:1891 kernel/kpttask.cpp:1914 kernel/kpttask.cpp:1957
-#: kernel/kpttask.cpp:1969 kernel/kpttask.cpp:1985 kernel/kpttask.cpp:1998
+#: kernel/kpttask.cpp:1450 kernel/kpttask.cpp:1474 kernel/kpttask.cpp:1500
+#: kernel/kpttask.cpp:1528 kernel/kpttask.cpp:1546 kernel/kpttask.cpp:1588
+#: kernel/kpttask.cpp:1604 kernel/kpttask.cpp:1617 kernel/kpttask.cpp:1631
+#: kernel/kpttask.cpp:1799 kernel/kpttask.cpp:1818 kernel/kpttask.cpp:1840
+#: kernel/kpttask.cpp:1859 kernel/kpttask.cpp:1878 kernel/kpttask.cpp:1916
+#: kernel/kpttask.cpp:1928 kernel/kpttask.cpp:1944 kernel/kpttask.cpp:1957
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1: Шектеуден өтуі болмады. Жетпейтіні=%2"
 
-#: kernel/kpttask.cpp:1663 kernel/kpttask.cpp:2022
+#: kernel/kpttask.cpp:1657 kernel/kpttask.cpp:1981
 msgid "Starting earlier than early start"
 msgstr "Бастаудың ертесінен ерте бастау"
 
-#: kernel/kpttask.cpp:1666 kernel/kpttask.cpp:2025
+#: kernel/kpttask.cpp:1660 kernel/kpttask.cpp:1984
 msgid "Finishing later than late finish"
 msgstr "Бастаудың кешінен кеш бастау"
 
-#: kernel/kpttask.cpp:1668 kernel/kpttask.cpp:2027
+#: kernel/kpttask.cpp:1662 kernel/kpttask.cpp:1986
 #, fuzzy, kde-format
 #| msgid "Schedule:"
 msgid "Scheduled: %1 to %2"
 msgstr "Жоспары:"
 
-#: kernel/kpttask.cpp:1759
+#: kernel/kpttask.cpp:1751
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within late finish. Negative float=%2"
 msgstr "%1: Кешігіп аяқтауы да жоспарлауы болмады. Жетпейтіні=%2"
 
-#: kernel/kpttask.cpp:1763
+#: kernel/kpttask.cpp:1755
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within successors start time"
 msgstr "%1: Керек бастау уақытын жоспалауға келмеді"
 
-#: kernel/kpttask.cpp:1794 kernel/kpttask.cpp:1939
+#: kernel/kpttask.cpp:1779 kernel/kpttask.cpp:1898
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule after early start. Negative float=%2"
 msgstr "%1: Бастаудың ертесінен кейін жоспарлауы болмады. Жетпейтіні=%2"
 
-#: kernel/kpttask.cpp:2016
+#: kernel/kpttask.cpp:1975
 msgid "Failed to schedule within project target time"
 msgstr "Жобаны көздеген уақытқа жоспарлауға келмеді"
 
-#: kernel/kpttask.cpp:2119
-msgid "Estimate of type length has no calendar defined"
-msgstr "Ұзақтық түрін бағалау үшін күнтізбе анықталмаған"
-
-#: kernel/kpttask.cpp:2233
+#: kernel/kpttask.cpp:2190
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "Жұмыстың ұзақтығын жоспарлауы болмады. Керегі: %1 бары: %2"
 
-#: kernel/kpttask.cpp:3418
+#: kernel/kpttask.cpp:3375
 msgid "Send"
 msgstr "Жіберу"
 
-#: kernel/kpttask.cpp:3421
+#: kernel/kpttask.cpp:3378
 msgid "Receive"
 msgstr "Қабылдау"
 
@@ -1608,11 +1600,11 @@ msgstr "Қатынасын орнату"
 msgid "Estimate Type"
 msgstr "Есеп негізі:"
 
-#: models/kptnodeitemmodel.cpp:1686
+#: models/kptnodeitemmodel.cpp:1686 models/kptresourcemodel.cpp:365
 #, fuzzy
-#| msgid "Modify Calendar"
-msgid "Estimate Calendar"
-msgstr "Күнтізбені өзгерту"
+#| msgid "Add Calendar"
+msgid "Calendar"
+msgstr "Күнтізбені қосу"
 
 #: models/kptnodeitemmodel.cpp:1687
 #, fuzzy
@@ -1739,10 +1731,6 @@ msgstr "Аяқтау-Бастау"
 #: models/kptnodeitemmodel.cpp:1719
 msgid "Assigments"
 msgstr "Белгілеулері"
-
-#: models/kptnodeitemmodel.cpp:1722
-msgid "Duration"
-msgstr "Жұмсалған уақыт"
 
 #: models/kptnodeitemmodel.cpp:1723
 msgid "Variance (Dur)"
@@ -2204,12 +2192,6 @@ msgstr "Инициалдары:"
 #: models/kptresourcemodel.cpp:364
 msgid "Email"
 msgstr "Эл.поштасы"
-
-#: models/kptresourcemodel.cpp:365
-#, fuzzy
-#| msgid "Add Calendar"
-msgid "Calendar"
-msgstr "Күнтізбені қосу"
 
 #: models/kptresourcemodel.cpp:366
 msgid "Limit (%)"
@@ -2942,6 +2924,22 @@ msgstr "Жұмыс дестесін басқару"
 #| msgid "Send Time"
 msgid "Send To..."
 msgstr "Жіберу уақыты"
+
+#, fuzzy
+#~| msgid "Duration"
+#~ msgid "FixedDuration"
+#~ msgstr "Жұмсалған уақыт"
+
+#~ msgid "Length"
+#~ msgstr "Ұзындығы"
+
+#~ msgid "Estimate of type length has no calendar defined"
+#~ msgstr "Ұзақтық түрін бағалау үшін күнтізбе анықталмаған"
+
+#, fuzzy
+#~| msgid "Modify Calendar"
+#~ msgid "Estimate Calendar"
+#~ msgstr "Күнтізбені өзгерту"
 
 #, fuzzy
 #~| msgid "Modify Task Cost"
