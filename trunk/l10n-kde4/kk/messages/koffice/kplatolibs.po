@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-21 06:05+0200\n"
+"POT-Creation-Date: 2009-08-23 06:52+0200\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -612,10 +612,12 @@ msgid "Deleted"
 msgstr "Жою"
 
 #: kernel/kptglobal.cpp:153 kernel/kptschedule.cpp:1610
+#: models/kptschedulemodel.cpp:636
 msgid "Not scheduled"
 msgstr "Жоспарланған жоқ"
 
-#: kernel/kptglobal.cpp:154
+#: kernel/kptglobal.cpp:154 models/kptschedulemodel.cpp:636
+#: models/kptschedulemodel.cpp:717
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduled"
@@ -651,7 +653,7 @@ msgstr "Белгіленген уақытта бітрілмейді"
 #: models/kptnodeitemmodel.cpp:504 models/kptnodeitemmodel.cpp:539
 #: models/kptnodeitemmodel.cpp:545 models/kptnodeitemmodel.cpp:555
 #: models/kptresourcemodel.cpp:186 models/kptresourcemodel.cpp:201
-#: models/kptschedulemodel.cpp:394 models/kptschedulemodel.cpp:396
+#: models/kptschedulemodel.cpp:432 models/kptschedulemodel.cpp:434
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:483
 #: ui/kptresourcedialog.cpp:152 ui/kpttaskcostpanel.cpp:40
 #: ui/kpttaskgeneralpanel.cpp:72
@@ -1126,8 +1128,8 @@ msgstr "%1 есепті өшіру"
 #: models/kptresourceappointmentsmodel.cpp:901
 #: models/kptresourceappointmentsmodel.cpp:916
 #: models/kptresourceappointmentsmodel.cpp:1401
-#: models/kptresourcemodel.cpp:361 models/kptschedulemodel.cpp:646
-#: models/kptschedulemodel.cpp:830 ui/kptdoublelistviewbase.cpp:359
+#: models/kptresourcemodel.cpp:361 models/kptschedulemodel.cpp:708
+#: models/kptschedulemodel.cpp:935 ui/kptdoublelistviewbase.cpp:359
 msgid "Name"
 msgstr "Атауы"
 
@@ -2238,85 +2240,85 @@ msgstr "Ресурс тобын қосу..."
 msgid "Add resource"
 msgstr "Ресурсты қосу..."
 
-#: models/kptschedulemodel.cpp:354 models/kptschedulemodel.cpp:356
+#: models/kptschedulemodel.cpp:392 models/kptschedulemodel.cpp:394
 msgid "Allow"
 msgstr "Рұқсат ету"
 
-#: models/kptschedulemodel.cpp:354 models/kptschedulemodel.cpp:356
+#: models/kptschedulemodel.cpp:392 models/kptschedulemodel.cpp:394
 msgid "Avoid"
 msgstr "Безу"
 
-#: models/kptschedulemodel.cpp:394 models/kptschedulemodel.cpp:396
+#: models/kptschedulemodel.cpp:432 models/kptschedulemodel.cpp:434
 msgid "PERT"
 msgstr "PERT (ЖЖБЖ)"
 
-#: models/kptschedulemodel.cpp:434 models/kptschedulemodel.cpp:436
+#: models/kptschedulemodel.cpp:472 models/kptschedulemodel.cpp:474
 msgid "All"
 msgstr "Барлығын"
 
-#: models/kptschedulemodel.cpp:434 models/kptschedulemodel.cpp:436
+#: models/kptschedulemodel.cpp:472 models/kptschedulemodel.cpp:474
 msgid "Expected only"
 msgstr "Күтілетін ғана"
 
-#: models/kptschedulemodel.cpp:519 models/kptschedulemodel.cpp:521
+#: models/kptschedulemodel.cpp:557 models/kptschedulemodel.cpp:559
 msgid "Backwards"
 msgstr "Артқа"
 
-#: models/kptschedulemodel.cpp:519 models/kptschedulemodel.cpp:521
+#: models/kptschedulemodel.cpp:557 models/kptschedulemodel.cpp:559
 msgid "Forward"
 msgstr "Ілгері"
 
-#: models/kptschedulemodel.cpp:647
+#: models/kptschedulemodel.cpp:709
 msgid "State"
 msgstr "Күйі"
 
-#: models/kptschedulemodel.cpp:648
+#: models/kptschedulemodel.cpp:710
 #, fuzzy
 #| msgid "Duration"
 msgid "Direction"
 msgstr "Жұмсалған уақыт"
 
-#: models/kptschedulemodel.cpp:649
+#: models/kptschedulemodel.cpp:711
 msgid "Overbooking"
 msgstr "Асыру"
 
-#: models/kptschedulemodel.cpp:650
+#: models/kptschedulemodel.cpp:712
 #, fuzzy
 #| msgid "Description"
 msgid "Distribution"
 msgstr "Сипаттамасы"
 
-#: models/kptschedulemodel.cpp:651 ui/kptscheduleeditor.cpp:233
+#: models/kptschedulemodel.cpp:713 ui/kptscheduleeditor.cpp:233
 msgid "Calculate"
 msgstr "Есептеу"
 
-#: models/kptschedulemodel.cpp:652
+#: models/kptschedulemodel.cpp:714
 #, fuzzy
 #| msgid "Planned Effort"
 msgid "Planned Start"
 msgstr "Жоспарланған жұмыс көлемі"
 
-#: models/kptschedulemodel.cpp:653
+#: models/kptschedulemodel.cpp:715
 #, fuzzy
 #| msgid "Planned cost"
 msgid "Planned Finish"
 msgstr "Жоспарлаған бағасы"
 
-#: models/kptschedulemodel.cpp:654
+#: models/kptschedulemodel.cpp:716
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduler"
 msgstr "Жоспары:"
 
-#: models/kptschedulemodel.cpp:830
+#: models/kptschedulemodel.cpp:935
 msgid "Phase"
 msgstr "Фазасы"
 
-#: models/kptschedulemodel.cpp:830
+#: models/kptschedulemodel.cpp:935
 msgid "Severity"
 msgstr "Қатандығы"
 
-#: models/kptschedulemodel.cpp:830
+#: models/kptschedulemodel.cpp:935
 msgid "Message"
 msgstr "Хабарлама"
 
