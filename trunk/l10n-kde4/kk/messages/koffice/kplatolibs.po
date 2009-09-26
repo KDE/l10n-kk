@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-25 06:28+0200\n"
+"POT-Creation-Date: 2009-09-26 06:18+0200\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -132,12 +132,12 @@ msgctxt "@info:tooltip"
 msgid "Effortbased performance index"
 msgstr ""
 
-#: ui/kpttaskstatusview.cpp:974 ui/kpttaskstatusview.cpp:987
+#: ui/kpttaskstatusview.cpp:975 ui/kpttaskstatusview.cpp:988
 #: ui/kptganttview.cpp:120
 msgid "Chart"
 msgstr "Диаграмма"
 
-#: ui/kpttaskstatusview.cpp:974 ui/kpttaskstatusview.cpp:988
+#: ui/kpttaskstatusview.cpp:975 ui/kpttaskstatusview.cpp:989
 msgid "Chart Settings"
 msgstr "Диаграмма параметрлері"
 
@@ -1823,7 +1823,8 @@ msgstr "Қабылдау"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
-#: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:420 rc.cpp:714
+#: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:420
+#: models/kptresourceappointmentsmodel.cpp:1244 rc.cpp:714
 msgid "Project"
 msgstr "Жоба"
 
@@ -2164,6 +2165,24 @@ msgstr "Жұмыс көлемі"
 msgctxt "Actual Cost of Work Performed"
 msgid "ACWP (Effort)"
 msgstr "Жұмыс көлемі"
+
+#: models/kptnodechartmodel.cpp:430 models/kptnodeitemmodel.cpp:1764
+#, fuzzy
+#| msgid "Timezone"
+msgid "Time"
+msgstr "Сағат белдеуі"
+
+#. i18n: file: ui/resourcedialogbase.ui:307
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
+#: models/kptnodechartmodel.cpp:441 rc.cpp:64 rc.cpp:305
+msgid "Cost"
+msgstr "Бағасы"
+
+#: models/kptnodechartmodel.cpp:445
+msgid "Hours"
+msgstr ""
 
 #: models/kptresourcemodel.cpp:192 models/kptresourcemodel.cpp:203
 #, kde-format
@@ -2595,17 +2614,18 @@ msgid "Interval"
 msgstr "Белгілі уақыт аралығы"
 
 #: models/kptresourceappointmentsmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1708
 #, fuzzy
-#| msgctxt "Interval start time"
-#| msgid "Start"
-msgid "Start"
-msgstr "Басталуы"
+#| msgid "Started"
+msgid "Start Time"
+msgstr "Басталған"
 
 #: models/kptresourceappointmentsmodel.cpp:1491
+#: models/kptnodeitemmodel.cpp:1709
 #, fuzzy
-#| msgid "Finished"
-msgid "Finish"
-msgstr "Аяқталған"
+#| msgid "End date"
+msgid "End Time"
+msgstr "Аяқтау кезі"
 
 #: models/kptresourceappointmentsmodel.cpp:1492
 #, fuzzy
@@ -2949,18 +2969,6 @@ msgstr "Тоқтату"
 msgid "Variance (Est)"
 msgstr "Ауытқуы (Бағ.)"
 
-#: models/kptnodeitemmodel.cpp:1708
-#, fuzzy
-#| msgid "Started"
-msgid "Start Time"
-msgstr "Басталған"
-
-#: models/kptnodeitemmodel.cpp:1709
-#, fuzzy
-#| msgid "End date"
-msgid "End Time"
-msgstr "Аяқтау кезі"
-
 #: models/kptnodeitemmodel.cpp:1710
 #, fuzzy
 #| msgid "Early start date"
@@ -3137,12 +3145,6 @@ msgstr "ЖОК:"
 #: models/kptnodeitemmodel.cpp:1762
 msgid "Owner"
 msgstr ""
-
-#: models/kptnodeitemmodel.cpp:1764
-#, fuzzy
-#| msgid "Timezone"
-msgid "Time"
-msgstr "Сағат белдеуі"
 
 #: models/kptnodeitemmodel.cpp:1849
 #, fuzzy
@@ -3327,14 +3329,6 @@ msgstr "<p align=\"right\">Басы:</p>"
 #: rc.cpp:61
 msgid "<p align=\"right\">Until:</p>"
 msgstr "<p align=\"right\">Аяғы:</p>"
-
-#. i18n: file: ui/resourcedialogbase.ui:307
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
-#: rc.cpp:64 rc.cpp:305
-msgid "Cost"
-msgstr "Бағасы"
 
 #. i18n: file: ui/resourcedialogbase.ui:319
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
@@ -4454,6 +4448,17 @@ msgstr "Алдыңғы"
 #: rc.cpp:795
 msgid "Next"
 msgstr "Келесі"
+
+#, fuzzy
+#~| msgctxt "Interval start time"
+#~| msgid "Start"
+#~ msgid "Start"
+#~ msgstr "Басталуы"
+
+#, fuzzy
+#~| msgid "Finished"
+#~ msgid "Finish"
+#~ msgstr "Аяқталған"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
