@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:12+0200\n"
+"POT-Creation-Date: 2009-10-11 06:22+0200\n"
 "PO-Revision-Date: 2007-04-28 20:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -1846,10 +1846,12 @@ msgstr "Аяқталу уақыты"
 msgid "Categories"
 msgstr "Санаттар"
 
-#: views/listview/kolistview.cpp:387
+#: views/listview/kolistview.cpp:387 views/monthview/monthitem.cpp:293
+#: views/agendaview/koagendaitem.cpp:83
 #, fuzzy, kde-format
-msgid "%1 (%2  years)"
-msgstr "%1 - %2"
+msgid "%2 (1 year)"
+msgid_plural "%2 (%1 years)"
+msgstr[0] "%1 - %2"
 
 #: views/monthview/monthview.cpp:66
 msgid "Go back one month"
@@ -1885,11 +1887,6 @@ msgstr "%1 - %2"
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#: views/monthview/monthitem.cpp:293 views/agendaview/koagendaitem.cpp:83
-#, fuzzy, kde-format
-msgid "%1 (%2 years)"
-msgstr "%1 - %2"
 
 #: views/monthview/monthitem.cpp:454 views/agendaview/koagenda.cpp:1044
 msgid ""
@@ -2368,7 +2365,7 @@ msgstr "Жібермеу"
 #| msgid ""
 #| "You have no ical file in your home directory.\n"
 #| "Import cannot proceed.\n"
-msgid "No calendars found. We can not add event."
+msgid "No calendars found, event cannot be added."
 msgstr ""
 "Мекен қапшығыңызда ical файлы жоқ.\n"
 "Импорт етілмеді.\n"
@@ -5344,7 +5341,7 @@ msgstr "'%1' күнтізбесі сақталды."
 #: actionmanager.cpp:1137
 #, fuzzy, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
-msgid "Do you want to overwrite file \"%1\""
+msgid "Do you want to overwrite file \"%1\"?"
 msgstr "qt><b>%1</b> деген ресурсты шынымен өшірмексіз бе?</qt>"
 
 #: actionmanager.cpp:1170
@@ -6141,10 +6138,14 @@ msgstr ""
 #. i18n: file: koeditoralarms_base.ui:539
 #. i18n: ectx: property (whatsThis), widget (KTextEdit, mEmailText)
 #: rc.cpp:236 rc.cpp:3287
+#, fuzzy
+#| msgid ""
+#| "Check this option if you want to have to-dos on the print, placed by "
+#| "their due date."
 msgid ""
-"Enter any text you desire for the email message that will be sent when the "
-"alarm triggers."
-msgstr ""
+"Enter the text you would like to be in the email message sent when the "
+"reminder triggers."
+msgstr "Жоспарлар бітіретін күнінде басылсын десеңіз осы белгіні қойыңыз."
 
 #. i18n: file: koeditoralarms_base.ui:546
 #. i18n: ectx: property (toolTip), widget (KPIM::AddresseeLineEdit, mEmailAddress)
@@ -6160,8 +6161,8 @@ msgstr "Жаңа сүзгіні анықтау үшін осы батырман�
 #, fuzzy
 #| msgid "Press this button to define a new filter."
 msgid ""
-"Enter a list comma-sepatered addresses where an email will be sent when the "
-"reminder triggers"
+"Enter a list of comma-separated addresses to which an email should be sent "
+"when the reminder triggers."
 msgstr "Жаңа сүзгіні анықтау үшін осы батырманы басыңыз."
 
 #. i18n: file: koeditoralarms_base.ui:556
@@ -9049,7 +9050,7 @@ msgstr ""
 #: rc.cpp:1402 rc.cpp:1732
 msgid ""
 "Check this box if you want to include Events that occur within the date "
-"range specified.  Events that don't fall completely within the date range "
+"range specified.  Events that do not fall completely within the date range "
 "will be excluded from the search results."
 msgstr ""
 
@@ -13048,6 +13049,10 @@ msgstr "\"Не істеу?\" бетін басып шығару"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "Келер оқиға мен жоспарлар тізімін басып шығару."
+
+#, fuzzy
+#~ msgid "%1 (%2  years)"
+#~ msgstr "%1 - %2"
 
 #~ msgid "&Timespan"
 #~ msgstr "&Уақыт аралығы"
