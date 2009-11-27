@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-24 06:19+0100\n"
+"POT-Creation-Date: 2009-11-27 06:11+0100\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -99,18 +99,19 @@ msgstr "Жіберу уақыты"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: ui/kpttaskcostpanel.cpp:41 ui/kpttaskgeneralpanel.cpp:70
-#: ui/kptresourcedialog.cpp:152 ui/kptpertresult.cpp:138
-#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3419 kernel/kptnode.cpp:122
+#: ui/kpttaskcostpanel.cpp:49 ui/kpttaskgeneralpanel.cpp:70
+#: ui/kptresourcedialog.cpp:181 ui/kptpertresult.cpp:138
+#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3389 kernel/kptnode.cpp:122
 #: kernel/kptnode.cpp:1438 models/kptschedulemodel.cpp:443
 #: models/kptschedulemodel.cpp:445 models/kptresourcemodel.cpp:186
-#: models/kptresourcemodel.cpp:201 models/kptnodeitemmodel.cpp:280
-#: models/kptnodeitemmodel.cpp:285 models/kptnodeitemmodel.cpp:295
-#: models/kptnodeitemmodel.cpp:453 models/kptnodeitemmodel.cpp:459
-#: models/kptnodeitemmodel.cpp:469 models/kptnodeitemmodel.cpp:487
-#: models/kptnodeitemmodel.cpp:494 models/kptnodeitemmodel.cpp:504
-#: models/kptnodeitemmodel.cpp:539 models/kptnodeitemmodel.cpp:545
-#: models/kptnodeitemmodel.cpp:555 rc.cpp:428
+#: models/kptresourcemodel.cpp:201 models/kptresourceallocationmodel.cpp:737
+#: models/kpttreecombobox.cpp:123 models/kptnodeitemmodel.cpp:310
+#: models/kptnodeitemmodel.cpp:315 models/kptnodeitemmodel.cpp:325
+#: models/kptnodeitemmodel.cpp:483 models/kptnodeitemmodel.cpp:489
+#: models/kptnodeitemmodel.cpp:499 models/kptnodeitemmodel.cpp:517
+#: models/kptnodeitemmodel.cpp:524 models/kptnodeitemmodel.cpp:534
+#: models/kptnodeitemmodel.cpp:569 models/kptnodeitemmodel.cpp:575
+#: models/kptnodeitemmodel.cpp:585 rc.cpp:431
 msgid "None"
 msgstr "Жоқ"
 
@@ -231,7 +232,7 @@ msgstr "Күні:"
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:90
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: ui/kptviewbase.cpp:287 rc.cpp:514
+#: ui/kptviewbase.cpp:287 rc.cpp:517
 msgid "Manager:"
 msgstr "Менеджері:"
 
@@ -243,19 +244,19 @@ msgstr "Бұр көрініс басып шығарылмайды."
 msgid "Configure View..."
 msgstr "Көріністі баптау..."
 
-#: ui/kptviewbase.cpp:1715
+#: ui/kptviewbase.cpp:1720
 msgid "Unsplit View"
 msgstr "Көріністі бөлуден қайту"
 
-#: ui/kptviewbase.cpp:1718
+#: ui/kptviewbase.cpp:1723
 msgid "Split View"
 msgstr "Көріністі бөлу"
 
-#: ui/kptresourcedialog.cpp:122
+#: ui/kptresourcedialog.cpp:151
 msgid "Resource Settings"
 msgstr "Ресурс параметрлері"
 
-#: ui/kptresourcedialog.cpp:219
+#: ui/kptresourcedialog.cpp:266
 msgid "Modify Resource"
 msgstr "Ресурсын өзгерту"
 
@@ -279,11 +280,11 @@ msgstr "Осы аптадағы жұмыс көлемі"
 #. i18n: ectx: property (text), widget (QRadioButton, ui_startdateBtn)
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:144
 #. i18n: ectx: property (text), widget (QRadioButton, ui_enddateBtn)
-#: ui/kptusedefforteditor.cpp:395 rc.cpp:194 rc.cpp:209 rc.cpp:290 rc.cpp:299
+#: ui/kptusedefforteditor.cpp:395 rc.cpp:197 rc.cpp:212 rc.cpp:293 rc.cpp:302
 msgid "Date"
 msgstr "Күні"
 
-#: ui/kptusedefforteditor.cpp:397 models/kptnodeitemmodel.cpp:1730
+#: ui/kptusedefforteditor.cpp:397 models/kptnodeitemmodel.cpp:1760
 #, no-c-format
 msgid "% Completed"
 msgstr "% бітті"
@@ -292,11 +293,11 @@ msgstr "% бітті"
 msgid "Used Effort"
 msgstr "Орындалған жұмыс көлемі"
 
-#: ui/kptusedefforteditor.cpp:399 models/kptnodeitemmodel.cpp:1733
+#: ui/kptusedefforteditor.cpp:399 models/kptnodeitemmodel.cpp:1763
 msgid "Remaining Effort"
 msgstr "Қалған жұмыс көлемі"
 
-#: ui/kptusedefforteditor.cpp:400 models/kptnodeitemmodel.cpp:1731
+#: ui/kptusedefforteditor.cpp:400 models/kptnodeitemmodel.cpp:1761
 msgid "Planned Effort"
 msgstr "Жоспарланған жұмыс көлемі"
 
@@ -319,13 +320,13 @@ msgid "Work..."
 msgstr "Жұмыс..."
 
 #: ui/kptcalendareditor.cpp:203 ui/kptcalendareditor.cpp:616
-#: kernel/kptcalendar.h:216 kernel/kptcalendar.h:225
+#: kernel/kptcalendar.h:258 kernel/kptcalendar.h:267
 #: models/kptcalendarmodel.cpp:926
 msgid "Non-working"
 msgstr "Жұмыс істемейтін"
 
 #: ui/kptcalendareditor.cpp:205 ui/kptcalendareditor.cpp:618
-#: kernel/kptcalendar.h:214 kernel/kptcalendar.h:225
+#: kernel/kptcalendar.h:256 kernel/kptcalendar.h:267
 #: models/kptcalendarmodel.cpp:923
 msgid "Undefined"
 msgstr "Анықталмаған"
@@ -372,14 +373,14 @@ msgstr "%1: жұмыс емес қылу"
 msgid "Set %1 to Undefined"
 msgstr "%1 дегенді анықталмаған қылу"
 
-#. i18n: file: ui/resourcedialogbase.ui:184
+#. i18n: file: ui/resourcedialogbase.ui:169
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: ui/kptresourceassignmentview.cpp:82 kernel/kptresource.cpp:122
 #: kernel/kptresource.cpp:414 rc.cpp:42
 msgid "Work"
 msgstr "Жұмыс"
 
-#. i18n: file: ui/resourcedialogbase.ui:189
+#. i18n: file: ui/resourcedialogbase.ui:174
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: ui/kptresourceassignmentview.cpp:86 kernel/kptresource.cpp:123
 #: kernel/kptresource.cpp:415 rc.cpp:45
@@ -396,15 +397,15 @@ msgid "Not Started"
 msgstr "Басталмаған"
 
 #: ui/kptresourceassignmentview.cpp:256 ui/kptresourceassignmentview.cpp:334
-#: models/kptnodeitemmodel.cpp:1064 models/kptnodeitemmodel.cpp:1737
+#: models/kptnodeitemmodel.cpp:1094 models/kptnodeitemmodel.cpp:1767
 msgid "Started"
 msgstr "Басталған"
 
 #. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, finished)
 #: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
-#: models/kpttaskstatusmodel.cpp:57 models/kptnodeitemmodel.cpp:1052
-#: models/kptnodeitemmodel.cpp:1739 rc.cpp:496
+#: models/kpttaskstatusmodel.cpp:57 models/kptnodeitemmodel.cpp:1082
+#: models/kptnodeitemmodel.cpp:1769 rc.cpp:499
 msgid "Finished"
 msgstr "Аяқталған"
 
@@ -422,7 +423,7 @@ msgstr "Негізгі жобаны өзгерту"
 
 #. i18n: file: ui/locale/localemon.ui:19
 #. i18n: ectx: property (text), widget (QLabel, m_labMonCurSym)
-#: ui/locale/localemon.cpp:51 rc.cpp:547
+#: ui/locale/localemon.cpp:51 rc.cpp:550
 msgid "Currency symbol:"
 msgstr ""
 
@@ -432,7 +433,7 @@ msgstr ""
 
 #. i18n: file: ui/locale/localemon.ui:49
 #. i18n: ectx: property (title), widget (QGroupBox, m_positiveGB)
-#: ui/locale/localemon.cpp:55 rc.cpp:553
+#: ui/locale/localemon.cpp:55 rc.cpp:556
 #, fuzzy
 #| msgid "Show positive float"
 msgid "Positive"
@@ -442,7 +443,7 @@ msgstr "Бар резерві көрсетілсін"
 #. i18n: ectx: property (text), widget (QCheckBox, m_chMonPosPreCurSym)
 #. i18n: file: ui/locale/localemon.ui:124
 #. i18n: ectx: property (text), widget (QCheckBox, m_chMonNegPreCurSym)
-#: ui/locale/localemon.cpp:56 ui/locale/localemon.cpp:59 rc.cpp:556 rc.cpp:580
+#: ui/locale/localemon.cpp:56 ui/locale/localemon.cpp:59 rc.cpp:559 rc.cpp:583
 msgid "Prefix currency symbol"
 msgstr ""
 
@@ -450,13 +451,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, m_labMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:133
 #. i18n: ectx: property (text), widget (QLabel, m_labMonNegMonSignPos)
-#: ui/locale/localemon.cpp:57 ui/locale/localemon.cpp:60 rc.cpp:559 rc.cpp:583
+#: ui/locale/localemon.cpp:57 ui/locale/localemon.cpp:60 rc.cpp:562 rc.cpp:586
 msgid "Sign position:"
 msgstr ""
 
 #. i18n: file: ui/locale/localemon.ui:118
 #. i18n: ectx: property (title), widget (QGroupBox, m_negativeGB)
-#: ui/locale/localemon.cpp:58 rc.cpp:577
+#: ui/locale/localemon.cpp:58 rc.cpp:580
 #, fuzzy
 #| msgid "Negative Float"
 msgid "Negative"
@@ -466,7 +467,7 @@ msgstr "Теріс қосымша уақыт"
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:141
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
-#: ui/locale/localemon.cpp:255 rc.cpp:562 rc.cpp:586
+#: ui/locale/localemon.cpp:255 rc.cpp:565 rc.cpp:589
 msgid "Parentheses Around"
 msgstr ""
 
@@ -474,7 +475,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:146
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
-#: ui/locale/localemon.cpp:256 rc.cpp:565 rc.cpp:589
+#: ui/locale/localemon.cpp:256 rc.cpp:568 rc.cpp:592
 msgid "Before Quantity Money"
 msgstr ""
 
@@ -482,7 +483,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:151
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
-#: ui/locale/localemon.cpp:257 rc.cpp:568 rc.cpp:592
+#: ui/locale/localemon.cpp:257 rc.cpp:571 rc.cpp:595
 msgid "After Quantity Money"
 msgstr ""
 
@@ -490,7 +491,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:156
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
-#: ui/locale/localemon.cpp:258 rc.cpp:571 rc.cpp:595
+#: ui/locale/localemon.cpp:258 rc.cpp:574 rc.cpp:598
 msgid "Before Money"
 msgstr ""
 
@@ -498,7 +499,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
 #. i18n: file: ui/locale/localemon.ui:161
 #. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
-#: ui/locale/localemon.cpp:259 rc.cpp:574 rc.cpp:598
+#: ui/locale/localemon.cpp:259 rc.cpp:577 rc.cpp:601
 msgid "After Money"
 msgstr ""
 
@@ -598,7 +599,7 @@ msgid "Result"
 msgstr "Нәтижесі"
 
 #: ui/kptscheduleeditor.cpp:580 models/kptpertcpmmodel.cpp:425
-#: models/kptnodeitemmodel.cpp:1759
+#: models/kptnodeitemmodel.cpp:1789
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
@@ -658,7 +659,7 @@ msgstr "Ресурс тобын қосу..."
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:242
 #. i18n: ectx: property (text), widget (QPushButton, addResource)
-#: ui/kptresourceeditor.cpp:262 rc.cpp:798
+#: ui/kptresourceeditor.cpp:262 rc.cpp:801
 msgid "Add Resource..."
 msgstr "Ресурсты қосу..."
 
@@ -854,44 +855,44 @@ msgid "Modify resource allocations"
 msgstr "Қатынасын өзгерту"
 
 #: kernel/kptschedule.cpp:118 kernel/kptschedule.cpp:123
-#: models/kptnodeitemmodel.cpp:1702
+#: models/kptnodeitemmodel.cpp:1732
 msgid "Expected"
 msgstr "Күтетіні"
 
-#: kernel/kptschedule.cpp:120 models/kptnodeitemmodel.cpp:1688
-#: models/kptnodeitemmodel.cpp:1704
+#: kernel/kptschedule.cpp:120 models/kptnodeitemmodel.cpp:1718
+#: models/kptnodeitemmodel.cpp:1734
 #, fuzzy
 #| msgid "Optimistic:"
 msgid "Optimistic"
 msgstr "Оптимистік:"
 
-#: kernel/kptschedule.cpp:122 models/kptnodeitemmodel.cpp:1689
-#: models/kptnodeitemmodel.cpp:1705
+#: kernel/kptschedule.cpp:122 models/kptnodeitemmodel.cpp:1719
+#: models/kptnodeitemmodel.cpp:1735
 #, fuzzy
 #| msgid "Pessimistic:"
 msgid "Pessimistic"
 msgstr "Пессимистік:"
 
-#: kernel/kptschedule.cpp:1269
+#: kernel/kptschedule.cpp:1289
 msgid "Info"
 msgstr "Мәлімет"
 
-#: kernel/kptschedule.cpp:1270
+#: kernel/kptschedule.cpp:1290
 msgid "Warning"
 msgstr "Ескерту"
 
-#: kernel/kptschedule.cpp:1271 kernel/kptschedule.cpp:1629
-#: kernel/kptschedule.cpp:1634 kernel/kptschedule.cpp:1639
+#: kernel/kptschedule.cpp:1291 kernel/kptschedule.cpp:1649
+#: kernel/kptschedule.cpp:1654 kernel/kptschedule.cpp:1659
 msgid "Error"
 msgstr "Қате"
 
-#: kernel/kptschedule.cpp:1622
+#: kernel/kptschedule.cpp:1642
 #, fuzzy
 #| msgid "Baseline"
 msgid "Baselined"
 msgstr "Негізгі жоспар"
 
-#: kernel/kptschedule.cpp:1625 kernel/kptglobal.cpp:153
+#: kernel/kptschedule.cpp:1645 kernel/kptglobal.cpp:153
 #: models/kptschedulemodel.cpp:647
 msgid "Not scheduled"
 msgstr "Жоспарланған жоқ"
@@ -1106,13 +1107,13 @@ msgstr "Қалған жұмыс көлемі"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:75
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
-#: kernel/kptglobal.cpp:70 rc.cpp:275
+#: kernel/kptglobal.cpp:70 rc.cpp:278
 msgid "Planned cost"
 msgstr "Жоспарлаған бағасы"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:70
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
-#: kernel/kptglobal.cpp:71 rc.cpp:272
+#: kernel/kptglobal.cpp:71 rc.cpp:275
 msgid "Actual cost"
 msgstr "Шын бағасы"
 
@@ -1132,7 +1133,7 @@ msgstr "Іс жүзінде тапсырманы аяқтаған кезі"
 msgid "Shows if the task is finished"
 msgstr "Егер тапсырма аяқталса - көрсетілсін"
 
-#: kernel/kptglobal.cpp:76 models/kptnodeitemmodel.cpp:1740
+#: kernel/kptglobal.cpp:76 models/kptnodeitemmodel.cpp:1770
 #, fuzzy
 #| msgid "Task Progress"
 msgid "Status Note"
@@ -1427,19 +1428,19 @@ msgstr "Белгіленген уақытта бітрілмейді"
 
 #. i18n: file: ui/relationpanel.ui:158
 #. i18n: ectx: property (text), widget (QRadioButton, bFinishStart)
-#: kernel/kptrelation.cpp:87 rc.cpp:88
+#: kernel/kptrelation.cpp:87 rc.cpp:91
 msgid "Finish-Start"
 msgstr "Аяқтау-Бастау"
 
 #. i18n: file: ui/relationpanel.ui:165
 #. i18n: ectx: property (text), widget (QRadioButton, bFinishFinish)
-#: kernel/kptrelation.cpp:88 rc.cpp:91
+#: kernel/kptrelation.cpp:88 rc.cpp:94
 msgid "Finish-Finish"
 msgstr "Аяқтау-Аяқтау"
 
 #. i18n: file: ui/relationpanel.ui:172
 #. i18n: ectx: property (text), widget (QRadioButton, bStartStart)
-#: kernel/kptrelation.cpp:89 rc.cpp:94
+#: kernel/kptrelation.cpp:89 rc.cpp:97
 msgid "Start-Start"
 msgstr "Бастау-Бастау"
 
@@ -1547,50 +1548,51 @@ msgstr "Көшіріп алу"
 msgid "Document loaded, URL=%1"
 msgstr "Тіркеулі құжаттың адресі: %1"
 
-#: kernel/kptresource.cpp:678 kernel/kptresource.cpp:690
+#: kernel/kptresource.cpp:726 kernel/kptresource.cpp:742
 msgid "Make appointments: Invalid time"
 msgstr "Кездесуді жоспарлау: жарамсыз уақыт"
 
-#: kernel/kptresource.cpp:683 kernel/kptresource.cpp:746
-#: kernel/kptresource.cpp:783 kernel/kptresource.cpp:840
+#: kernel/kptresource.cpp:731 kernel/kptresource.cpp:806
+#: kernel/kptresource.cpp:847 kernel/kptresource.cpp:919
 #, kde-format
 msgid "Resource %1 has no calendar defined"
 msgstr "%1 ресурсы үшін күнтізбе анықталмаған"
 
-#: kernel/kptresource.cpp:695
-#, kde-format
-msgid "Resource %1 only partially available"
-msgstr "%1 ресурсына қол жеткізуі толық емес"
-
-#: kernel/kptresource.cpp:701
+#: kernel/kptresource.cpp:747
 #, kde-format
 msgid "Make appointments: Invalid interval %1 to %2"
 msgstr "Кездесуді жоспарлау: %1 - %2 жарамсз аралық"
 
-#: kernel/kptresource.cpp:720
+#: kernel/kptresource.cpp:760
+#, fuzzy
+#| msgid "Make appointments: Node end time is not valid"
+msgid "Make appointments: Required resource not available"
+msgstr "Кездесуді жоспарлау: аяқтау уақыты жарамсыз"
+
+#: kernel/kptresource.cpp:780
 msgid "Make appointments: Node start time is not valid"
 msgstr "Кездесуді жоспарлау: бастау уақыты жарамсыз"
 
-#: kernel/kptresource.cpp:724
+#: kernel/kptresource.cpp:784
 msgid "Make appointments: Node end time is not valid"
 msgstr "Кездесуді жоспарлау: аяқтау уақыты жарамсыз"
 
-#: kernel/kptresource.cpp:753 kernel/kptresource.cpp:759
+#: kernel/kptresource.cpp:813 kernel/kptresource.cpp:819
 #, kde-format
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "%1 ресурсы келесі аралықта қол жеткізбейді: %2 - %3"
 
-#: kernel/kptresource.cpp:1871
+#: kernel/kptresource.cpp:2031
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "Керек көлем жиналмады: Керегі: %1 бары: %2"
 
-#: kernel/kptresource.cpp:1874
+#: kernel/kptresource.cpp:2034
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "%1 ресурсы %2 - %3 аралығында қол жеткізеді"
 
-#: kernel/kptcalendar.h:218 kernel/kptcalendar.h:225
+#: kernel/kptcalendar.h:260 kernel/kptcalendar.h:267
 #, fuzzy
 #| msgid "Work"
 msgid "Working"
@@ -1654,7 +1656,7 @@ msgid "Schedule tasks forward"
 msgstr "Жобаларды ілгері жоспарлау"
 
 #: kernel/kptproject.cpp:179 kernel/kptproject.cpp:292
-#: models/kptnodeitemmodel.cpp:608
+#: models/kptnodeitemmodel.cpp:638
 #, fuzzy, kde-format
 #| msgid "Schedule:"
 msgid "Scheduled finish: %1"
@@ -1725,7 +1727,7 @@ msgstr "Жобаны бастайтын нақты уақыт: %1"
 msgid "Can start project later than time: %1"
 msgstr "Жобаны келесі уақытынан кейін бастауға болады : %1"
 
-#: kernel/kptproject.cpp:2089
+#: kernel/kptproject.cpp:2093
 msgid "Plan"
 msgstr "Жоспар"
 
@@ -1837,18 +1839,18 @@ msgstr "Қатынасын өзгерту"
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "Жұмыстың ұзақтығын жоспарлауы болмады. Керегі: %1 бары: %2"
 
-#: kernel/kpttask.cpp:3422
+#: kernel/kpttask.cpp:3392
 msgid "Send"
 msgstr "Жіберу"
 
-#: kernel/kpttask.cpp:3425
+#: kernel/kpttask.cpp:3395
 msgid "Receive"
 msgstr "Қабылдау"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:420
-#: models/kptresourceappointmentsmodel.cpp:1244 rc.cpp:714
+#: models/kptresourceappointmentsmodel.cpp:1244 rc.cpp:717
 msgid "Project"
 msgstr "Жоба"
 
@@ -1860,7 +1862,7 @@ msgstr "Жоба"
 
 #. i18n: file: ui/kptscheduleeditor.ui:167
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: kernel/kptnode.cpp:125 rc.cpp:735
+#: kernel/kptnode.cpp:125 rc.cpp:738
 msgid "Task"
 msgstr "Тапсырма"
 
@@ -1894,13 +1896,13 @@ msgstr "Барынша кеш"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:192
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:657 rc.cpp:383
+#: kernel/kptnode.cpp:657 rc.cpp:386
 msgid "Must Start On"
 msgstr "Бастайтын кезі"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:197
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:658 rc.cpp:386
+#: kernel/kptnode.cpp:658 rc.cpp:389
 msgid "Must Finish On"
 msgstr "Аяқтайтын кезі"
 
@@ -1918,7 +1920,7 @@ msgstr "Аяқтау мерзімінің соңы"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:212
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:661 rc.cpp:395
+#: kernel/kptnode.cpp:661 rc.cpp:398
 msgid "Fixed Interval"
 msgstr "Белгілі уақыт аралығы"
 
@@ -1926,25 +1928,25 @@ msgstr "Белгілі уақыт аралығы"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1406 rc.cpp:317 rc.cpp:401
+#: kernel/kptnode.cpp:1406 rc.cpp:320 rc.cpp:404
 msgid "Effort"
 msgstr "Жұмыс көлемі"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1407 models/kptnodeitemmodel.cpp:1722 rc.cpp:404
+#: kernel/kptnode.cpp:1407 models/kptnodeitemmodel.cpp:1752 rc.cpp:407
 msgid "Duration"
 msgstr "Жұмсалған уақыт"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1439 rc.cpp:431
+#: kernel/kptnode.cpp:1439 rc.cpp:434
 msgid "Low"
 msgstr "Төмен"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1440 rc.cpp:434
+#: kernel/kptnode.cpp:1440 rc.cpp:437
 msgid "High"
 msgstr "Жоғары"
 
@@ -1954,8 +1956,8 @@ msgstr "Басталуға тиіс тапсырмалар"
 
 #. i18n: file: ui/kpttaskcostpanelbase.ui:24
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: models/kpttaskstatusmodel.cpp:53 models/kptnodeitemmodel.cpp:1055
-#: rc.cpp:653
+#: models/kpttaskstatusmodel.cpp:53 models/kptnodeitemmodel.cpp:1085
+#: rc.cpp:656
 msgid "Running"
 msgstr "Орындау"
 
@@ -1975,37 +1977,37 @@ msgstr "Келесі мезгіл"
 msgid "Tasks that are scheduled to start next period"
 msgstr "Келесі мезгілде басталуы жопарланған тапсырмалар"
 
-#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2550
+#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2580
 #, fuzzy, no-c-format
 #| msgid "% Completed"
 msgid "Modify % Completed"
 msgstr "% бітті"
 
-#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:2579
+#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:2609
 #, fuzzy
 #| msgid "Finished"
 msgid "Set finished"
 msgstr "Аяқталған"
 
-#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:2600
+#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:2630
 #, fuzzy
 #| msgid "Remaining Effort"
 msgid "Modify Remaining Effort"
 msgstr "Қалған жұмыс көлемі"
 
-#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:2613
+#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:2643
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Actual Effort"
 msgstr "Тапсырманың бағасын өзгерту"
 
-#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:2627
+#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:2657
 #, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify actual start time"
 msgstr "Стандартты жұмыс уақытын өзгерту"
 
-#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:2655
+#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:2685
 #, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify actual finish time"
@@ -2015,7 +2017,7 @@ msgstr "Стандартты жұмыс уақытын өзгерту"
 msgid "Path"
 msgstr "Жолы"
 
-#: models/kptpertcpmmodel.cpp:445 models/kptnodeitemmodel.cpp:1758
+#: models/kptpertcpmmodel.cpp:445 models/kptnodeitemmodel.cpp:1788
 #, fuzzy
 #| msgid "Critical Path"
 msgid "Critical"
@@ -2060,11 +2062,11 @@ msgstr "Ілгері"
 #: models/kptschedulemodel.cpp:719 models/kptschedulemodel.cpp:931
 #: models/kptresourcemodel.cpp:361 models/kptaccountsmodel.cpp:121
 #: models/kptaccountsmodel.cpp:961 models/kptcalendarmodel.cpp:418
-#: models/kptresourceallocationmodel.cpp:305
+#: models/kptresourceallocationmodel.cpp:332
 #: models/kptresourceappointmentsmodel.cpp:901
 #: models/kptresourceappointmentsmodel.cpp:916
 #: models/kptresourceappointmentsmodel.cpp:1488
-#: models/kptnodeitemmodel.cpp:1681 rc.cpp:136
+#: models/kptnodeitemmodel.cpp:1711 rc.cpp:139
 msgid "Name"
 msgstr "Атауы"
 
@@ -2130,7 +2132,7 @@ msgid "Received from %1 at %2"
 msgstr "%1 ресурсы %2 - %3 аралықта шақырылды"
 
 #: models/kptworkpackagemodel.cpp:80 models/kptworkpackagemodel.cpp:105
-#: models/kptnodeitemmodel.cpp:1519 models/kptnodeitemmodel.cpp:1563
+#: models/kptnodeitemmodel.cpp:1549 models/kptnodeitemmodel.cpp:1593
 #, fuzzy
 #| msgid "No project available"
 msgid "Not available"
@@ -2190,17 +2192,17 @@ msgctxt "Actual Cost of Work Performed"
 msgid "ACWP (Effort)"
 msgstr "Жұмыс көлемі"
 
-#: models/kptnodechartmodel.cpp:450 models/kptnodeitemmodel.cpp:1764
+#: models/kptnodechartmodel.cpp:450 models/kptnodeitemmodel.cpp:1794
 #, fuzzy
 #| msgid "Timezone"
 msgid "Time"
 msgstr "Сағат белдеуі"
 
-#. i18n: file: ui/resourcedialogbase.ui:307
+#. i18n: file: ui/resourcedialogbase.ui:327
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
-#: models/kptnodechartmodel.cpp:461 rc.cpp:64 rc.cpp:305
+#: models/kptnodechartmodel.cpp:461 rc.cpp:67 rc.cpp:308
 msgid "Cost"
 msgstr "Бағасы"
 
@@ -2239,9 +2241,9 @@ msgstr "Жұмыстан тыс уақытындағы сағаттық мөлш
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptresourcemodel.cpp:362 models/kptrelationmodel.cpp:147
-#: models/kptdocumentmodel.cpp:168 models/kptresourceallocationmodel.cpp:306
+#: models/kptdocumentmodel.cpp:168 models/kptresourceallocationmodel.cpp:333
 #: models/kptresourceappointmentsmodel.cpp:1489
-#: models/kptnodeitemmodel.cpp:1682 rc.cpp:139
+#: models/kptnodeitemmodel.cpp:1712 rc.cpp:142
 msgid "Type"
 msgstr "Түрі"
 
@@ -2255,7 +2257,7 @@ msgstr "Инициалдары:"
 msgid "Email"
 msgstr "Эл.поштасы"
 
-#: models/kptresourcemodel.cpp:365 models/kptnodeitemmodel.cpp:1686
+#: models/kptresourcemodel.cpp:365 models/kptnodeitemmodel.cpp:1716
 #, fuzzy
 #| msgid "Add Calendar"
 msgid "Calendar"
@@ -2287,27 +2289,27 @@ msgstr "Қалыпты мөлшерлемесі"
 msgid "Overtime Rate"
 msgstr "Уақытынан тыс жұмыстың бағасы:"
 
-#: models/kptresourcemodel.cpp:1071
+#: models/kptresourcemodel.cpp:1076
 #, fuzzy, kde-format
 #| msgid "Per Resource"
 msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "Ресурсына шаққанда"
 
-#: models/kptresourcemodel.cpp:1088
+#: models/kptresourcemodel.cpp:1093
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
 msgid "Add resource from address book"
 msgid_plural "Add %1 resources from address book"
 msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
 
-#: models/kptresourcemodel.cpp:1151
+#: models/kptresourcemodel.cpp:1156
 #, fuzzy
 #| msgid "Add Resource Group..."
 msgid "Add resource group"
 msgstr "Ресурс тобын қосу..."
 
-#: models/kptresourcemodel.cpp:1162
+#: models/kptresourcemodel.cpp:1167
 #, fuzzy
 #| msgid "Add Resource..."
 msgid "Add resource"
@@ -2322,7 +2324,7 @@ msgid "%1 (Default account)"
 msgstr "%1 есепті өшіру"
 
 #: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:964
-#: models/kptnodeitemmodel.cpp:1699
+#: models/kptnodeitemmodel.cpp:1729
 msgid "Description"
 msgstr "Сипаттамасы"
 
@@ -2468,8 +2470,8 @@ msgstr "%1, %2 сағат"
 msgid "Url"
 msgstr "URL"
 
-#: models/kptdocumentmodel.cpp:169 models/kptnodeitemmodel.cpp:1728
-#: models/kptnodeitemmodel.cpp:1763
+#: models/kptdocumentmodel.cpp:169 models/kptnodeitemmodel.cpp:1758
+#: models/kptnodeitemmodel.cpp:1793
 msgid "Status"
 msgstr "Күй-жайы"
 
@@ -2533,15 +2535,15 @@ msgid "Close"
 msgstr "Бағасы"
 
 #: models/kptresourceallocationmodel.cpp:169
-#: models/kptresourceallocationmodel.cpp:225
-#: models/kptresourceallocationmodel.cpp:593
+#: models/kptresourceallocationmodel.cpp:228
+#: models/kptresourceallocationmodel.cpp:647
 #, no-c-format, kde-format
 msgctxt "<value>%"
 msgid "%1%"
 msgstr ""
 
 #: models/kptresourceallocationmodel.cpp:176
-#: models/kptresourceallocationmodel.cpp:598
+#: models/kptresourceallocationmodel.cpp:652
 #, fuzzy, kde-format
 #| msgid "Not Started"
 msgid "Not allocated"
@@ -2554,38 +2556,52 @@ msgstr[0] "Басталмаған"
 msgid "Allocated units: %1%"
 msgstr "Бөлінген ресурстары:"
 
-#: models/kptresourceallocationmodel.cpp:230
+#: models/kptresourceallocationmodel.cpp:233
 #, no-c-format, kde-format
 msgid "Maximum units available: %1%"
 msgstr ""
 
-#: models/kptresourceallocationmodel.cpp:247
+#: models/kptresourceallocationmodel.cpp:273
 #, kde-format
 msgid "There is %1 resource available in this group"
 msgid_plural "There are %1 resources available in this group"
 msgstr[0] ""
 
-#: models/kptresourceallocationmodel.cpp:307 models/kptnodeitemmodel.cpp:1684
+#: models/kptresourceallocationmodel.cpp:334 models/kptnodeitemmodel.cpp:1714
 #, fuzzy
 #| msgid "Add Relation"
 msgid "Allocation"
 msgstr "Қатынасын орнату"
 
-#: models/kptresourceallocationmodel.cpp:308
+#: models/kptresourceallocationmodel.cpp:335
 msgid "Maximum"
 msgstr ""
 
-#: models/kptresourceallocationmodel.cpp:320
+#: models/kptresourceallocationmodel.cpp:336
+#, fuzzy
+#| msgid "Resource"
+msgctxt "@title:column"
+msgid "Required Resources"
+msgstr "Ресурсы"
+
+#: models/kptresourceallocationmodel.cpp:348
 #, fuzzy
 #| msgid "Modify Relation"
 msgid "Resource allocation"
 msgstr "Қатынасын өзгерту"
 
-#: models/kptresourceallocationmodel.cpp:321
+#: models/kptresourceallocationmodel.cpp:349
 msgid "Maximum amount of units or resources that can be allocated"
 msgstr ""
 
-#: models/kptresourceallocationmodel.cpp:621
+#: models/kptresourceallocationmodel.cpp:350
+#, fuzzy
+#| msgid "Resource"
+msgctxt "@info:tootip"
+msgid "Required Resources"
+msgstr "Ресурсы"
+
+#: models/kptresourceallocationmodel.cpp:675
 #, fuzzy, kde-format
 #| msgid "Modify Relation"
 msgid "%1 resource allocated"
@@ -2644,14 +2660,14 @@ msgid "Interval"
 msgstr "Белгілі уақыт аралығы"
 
 #: models/kptresourceappointmentsmodel.cpp:1490
-#: models/kptnodeitemmodel.cpp:1708
+#: models/kptnodeitemmodel.cpp:1738
 #, fuzzy
 #| msgid "Started"
 msgid "Start Time"
 msgstr "Басталған"
 
 #: models/kptresourceappointmentsmodel.cpp:1491
-#: models/kptnodeitemmodel.cpp:1709
+#: models/kptnodeitemmodel.cpp:1739
 #, fuzzy
 #| msgid "End date"
 msgid "End Time"
@@ -2664,606 +2680,641 @@ msgctxt "@title:column noun"
 msgid "Load"
 msgstr "Жүктеу"
 
-#: models/kptnodeitemmodel.cpp:334
+#: models/kptnodeitemmodel.cpp:131
+#, fuzzy
+#| msgid "Modify Relation"
+msgctxt "@info:tooltip"
+msgid "No resources has been allocated"
+msgstr "Қатынасын өзгерту"
+
+#: models/kptnodeitemmodel.cpp:138
+#, fuzzy, kde-format
+#| msgctxt "1=page number, 2=last page number"
+#| msgid "%1 (%2)"
+msgctxt "1=resource name, 2=list of resources"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: models/kptnodeitemmodel.cpp:142
+#, fuzzy, kde-format
+#| msgid "Allocate resources:"
+msgctxt "@info:tooltip 1=resource name"
+msgid "Allocated resource: %1"
+msgstr "Бөлінген ресурстары:"
+
+#: models/kptnodeitemmodel.cpp:144
+#, fuzzy, kde-format
+#| msgid "Allocate resources:"
+msgctxt "@info:tooltip 1=list of resources"
+msgid "Allocated resources: %1"
+msgstr "Бөлінген ресурстары:"
+
+#: models/kptnodeitemmodel.cpp:364
 #, fuzzy, kde-format
 #| msgid "Estimate:"
 msgid "Estimated effort: %1"
 msgstr "Есеп негізі:"
 
-#: models/kptnodeitemmodel.cpp:336
+#: models/kptnodeitemmodel.cpp:366
 #, kde-format
 msgid "Estimated duration: %1"
 msgstr "Болжамды ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:371
+#: models/kptnodeitemmodel.cpp:401
 #, fuzzy, kde-format
 #| msgid "Optimistic:"
 msgid "Optimistic effort: %1"
 msgstr "Оптимистік:"
 
-#: models/kptnodeitemmodel.cpp:373
+#: models/kptnodeitemmodel.cpp:403
 #, fuzzy, kde-format
 #| msgid "Optimistic:"
 msgid "Optimistic duration: %1"
 msgstr "Оптимистік:"
 
-#: models/kptnodeitemmodel.cpp:404
+#: models/kptnodeitemmodel.cpp:434
 #, fuzzy, kde-format
 #| msgid "Pessimistic:"
 msgid "Pessimistic effort: %1"
 msgstr "Пессимистік:"
 
-#: models/kptnodeitemmodel.cpp:406
+#: models/kptnodeitemmodel.cpp:436
 #, fuzzy, kde-format
 #| msgid "Pessimistic:"
 msgid "Pessimistic duration: %1"
 msgstr "Пессимистік:"
 
-#: models/kptnodeitemmodel.cpp:459
+#: models/kptnodeitemmodel.cpp:489
 #, kde-format
 msgid "Running account: %1"
 msgstr "Істегі есеп: %1"
 
-#: models/kptnodeitemmodel.cpp:494
+#: models/kptnodeitemmodel.cpp:524
 #, fuzzy, kde-format
 #| msgid "Start: %1"
 msgid "Startup account: %1"
 msgstr "Басталуы: %1"
 
-#: models/kptnodeitemmodel.cpp:545
+#: models/kptnodeitemmodel.cpp:575
 #, kde-format
 msgid "Shutdown account: %1"
 msgstr "Есепті аяқтау: %1"
 
-#: models/kptnodeitemmodel.cpp:591
+#: models/kptnodeitemmodel.cpp:621
 #, fuzzy, kde-format
 #| msgid "Schedule:"
 msgid "Scheduled start: %1"
 msgstr "Жоспары:"
 
-#: models/kptnodeitemmodel.cpp:636 models/kptnodeitemmodel.cpp:640
+#: models/kptnodeitemmodel.cpp:666 models/kptnodeitemmodel.cpp:670
 #, kde-format
 msgid "Scheduled duration: %1"
 msgstr "Жоспарланған ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:667
+#: models/kptnodeitemmodel.cpp:697
 #, kde-format
 msgid "PERT duration variance: %1"
 msgstr "ЖЖБЖ (PERT) ұзақтық ауытқуы: %1"
 
-#: models/kptnodeitemmodel.cpp:689
+#: models/kptnodeitemmodel.cpp:719
 #, kde-format
 msgid "PERT estimate variance: %1"
 msgstr "ЖЖБЖ (PERT) бағалауы: %1"
 
-#: models/kptnodeitemmodel.cpp:716
+#: models/kptnodeitemmodel.cpp:746
 #, kde-format
 msgid "PERT optimistic duration: %1"
 msgstr "ЖЖБЖ (PERT) оптимистік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:736
+#: models/kptnodeitemmodel.cpp:766
 #, fuzzy, kde-format
 #| msgid "Optimistic:"
 msgid "Optimistic estimate: %1"
 msgstr "Оптимистік:"
 
-#: models/kptnodeitemmodel.cpp:757
+#: models/kptnodeitemmodel.cpp:787
 #, kde-format
 msgid "PERT expected estimate: %1"
 msgstr "ЖЖБЖ (PERT) болжалды бағалауы: %1"
 
-#: models/kptnodeitemmodel.cpp:784
+#: models/kptnodeitemmodel.cpp:814
 #, kde-format
 msgid "PERT pessimistic duration: %1"
 msgstr "ЖЖБЖ (PERT) пессимистік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:804
+#: models/kptnodeitemmodel.cpp:834
 #, fuzzy, kde-format
 #| msgid "Pessimistic:"
 msgid "Pessimistic estimate: %1"
 msgstr "Пессимистік:"
 
-#: models/kptnodeitemmodel.cpp:1024
+#: models/kptnodeitemmodel.cpp:1054
 #, fuzzy, kde-format
 #| msgid "% Completed"
 msgid "Task is %1% completed"
 msgstr "% бітті"
 
-#: models/kptnodeitemmodel.cpp:1047
+#: models/kptnodeitemmodel.cpp:1077
 #, fuzzy
 #| msgid "Finished"
 msgid "Finished late"
 msgstr "Аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1050
+#: models/kptnodeitemmodel.cpp:1080
 #, fuzzy
 #| msgid "Finished"
 msgid "Finished early"
 msgstr "Аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1059
+#: models/kptnodeitemmodel.cpp:1089
 #, fuzzy
 #| msgid "Start date"
 msgid "Started late"
 msgstr "Бастау кезі"
 
-#: models/kptnodeitemmodel.cpp:1062
+#: models/kptnodeitemmodel.cpp:1092
 #, fuzzy
 #| msgid "Started"
 msgid "Started early"
 msgstr "Басталған"
 
-#: models/kptnodeitemmodel.cpp:1067
+#: models/kptnodeitemmodel.cpp:1097
 msgid "Can start"
 msgstr "Бастауға болады"
 
-#: models/kptnodeitemmodel.cpp:1070
+#: models/kptnodeitemmodel.cpp:1100
 #, fuzzy
 #| msgid "Project start"
 msgid "Cannot start"
 msgstr "Жобаны бастау"
 
-#: models/kptnodeitemmodel.cpp:1072
+#: models/kptnodeitemmodel.cpp:1102
 #, fuzzy
 #| msgid "Not Started"
 msgid "Not started"
 msgstr "Басталмаған"
 
-#: models/kptnodeitemmodel.cpp:1097
+#: models/kptnodeitemmodel.cpp:1127
 #, fuzzy, kde-format
 #| msgid "Actual cost"
 msgid "Actual start: %1"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1124
+#: models/kptnodeitemmodel.cpp:1154
 #, kde-format
 msgid "The task started at: %1"
 msgstr "Тапсырма басталған кезі: %1"
 
-#: models/kptnodeitemmodel.cpp:1126
+#: models/kptnodeitemmodel.cpp:1156
 msgid "The task is not started"
 msgstr "Тапсырма басталмаған"
 
-#: models/kptnodeitemmodel.cpp:1148
+#: models/kptnodeitemmodel.cpp:1178
 #, fuzzy, kde-format
 #| msgid "Finish: %1"
 msgid "Actual finish: %1"
 msgstr "Аяқталуы: %1"
 
-#: models/kptnodeitemmodel.cpp:1175
+#: models/kptnodeitemmodel.cpp:1205
 #, kde-format
 msgid "The task finished at: %1"
 msgstr "Тапсырма аяқталған кезі: %1"
 
-#: models/kptnodeitemmodel.cpp:1177
+#: models/kptnodeitemmodel.cpp:1207
 msgid "The task is not finished"
 msgstr "Тапсырма аяқталмаған"
 
-#: models/kptnodeitemmodel.cpp:1192
+#: models/kptnodeitemmodel.cpp:1222
 #, fuzzy, kde-format
 #| msgid "Planned Effort"
 msgid "Planned effort until %1: %2"
 msgstr "Жоспарланған жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:1212
+#: models/kptnodeitemmodel.cpp:1242
 #, kde-format
 msgid "Actual effort used up to %1: %2"
 msgstr "%1 дейінгі іс жүзіндегі жұмыс көлемі: %2"
 
-#: models/kptnodeitemmodel.cpp:1237
+#: models/kptnodeitemmodel.cpp:1267
 #, fuzzy, kde-format
 #| msgid "Remaining Effort"
 msgid "Remaining effort: %1"
 msgstr "Қалған жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:1261
+#: models/kptnodeitemmodel.cpp:1291
 #, fuzzy, kde-format
 #| msgid "Planned cost"
 msgid "Planned cost until %1: %2"
 msgstr "Жоспарлаған бағасы"
 
-#: models/kptnodeitemmodel.cpp:1278
+#: models/kptnodeitemmodel.cpp:1308
 #, fuzzy, kde-format
 #| msgid "Actual cost"
 msgid "Actual cost until %1: %2"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1398
+#: models/kptnodeitemmodel.cpp:1428
 #, fuzzy, kde-format
 #| msgid "Work Breakdown Structure"
 msgid "Work breakdown structure code: %1"
 msgstr "Жұмыстың жіктелген құрылымы"
 
-#: models/kptnodeitemmodel.cpp:1412
+#: models/kptnodeitemmodel.cpp:1442
 #, kde-format
 msgid "Node level: %1"
 msgstr "Бабының деңгейі: %1"
 
-#: models/kptnodeitemmodel.cpp:1426
+#: models/kptnodeitemmodel.cpp:1456
 #, fuzzy, kde-format
 #| msgid "Budgeted Cost of Work Scheduled"
 msgid "Budgeted Cost of Work Scheduled at %1: %2"
 msgstr "Жоспарланған жұмыстың бюджетінің көлемі"
 
-#: models/kptnodeitemmodel.cpp:1440
+#: models/kptnodeitemmodel.cpp:1470
 #, fuzzy, kde-format
 #| msgid "Budgeted Cost of Work Performed"
 msgid "Budgeted Cost of Work Performed at %1: %2"
 msgstr "Орындалған жұмыстың бюджетінің көлемі"
 
-#: models/kptnodeitemmodel.cpp:1454
+#: models/kptnodeitemmodel.cpp:1484
 #, fuzzy, kde-format
 #| msgid "Actual Cost of Work Performed"
 msgid "Actual Cost of Work Performed at %1: %2"
 msgstr "Орындалған жұмыстың шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1468
+#: models/kptnodeitemmodel.cpp:1498
 #, kde-format
 msgid "Schedule Performance Index at %1: %2"
 msgstr "%1 кезіндегі жоспарды орындау көрсеткіші: %2"
 
-#: models/kptnodeitemmodel.cpp:1507 models/kptnodeitemmodel.cpp:1533
-#: models/kptnodeitemmodel.cpp:1551
+#: models/kptnodeitemmodel.cpp:1537 models/kptnodeitemmodel.cpp:1563
+#: models/kptnodeitemmodel.cpp:1581
 msgctxt "Not available"
 msgid "NA"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1514
+#: models/kptnodeitemmodel.cpp:1544
 #, kde-format
 msgid "Latest work package sent to %1 at %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1517
+#: models/kptnodeitemmodel.cpp:1547
 #, kde-format
 msgid "Latest work package received from %1 at %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1558
+#: models/kptnodeitemmodel.cpp:1588
 #, fuzzy, kde-format
 #| msgid "Late start date"
 msgid "Latest work package sent: %1"
 msgstr "Бастау мерзімінің соңы"
 
-#: models/kptnodeitemmodel.cpp:1561
+#: models/kptnodeitemmodel.cpp:1591
 #, kde-format
 msgid "Latest work package received: %1"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1683
+#: models/kptnodeitemmodel.cpp:1713
 #, fuzzy
 #| msgid "Responsible:"
 msgid "Responsible"
 msgstr "Жауаптысы:"
 
-#: models/kptnodeitemmodel.cpp:1685
+#: models/kptnodeitemmodel.cpp:1715
 #, fuzzy
 #| msgid "Estimate:"
 msgid "Estimate Type"
 msgstr "Есеп негізі:"
 
-#: models/kptnodeitemmodel.cpp:1687
+#: models/kptnodeitemmodel.cpp:1717
 #, fuzzy
 #| msgid "Estimate:"
 msgid "Estimate"
 msgstr "Есеп негізі:"
 
-#: models/kptnodeitemmodel.cpp:1690
+#: models/kptnodeitemmodel.cpp:1720
 #, fuzzy
 #| msgid "Risk:"
 msgid "Risk"
 msgstr "Тәуекелі:"
 
-#: models/kptnodeitemmodel.cpp:1691
+#: models/kptnodeitemmodel.cpp:1721
 msgid "Constraint"
 msgstr "Шектеуі"
 
-#: models/kptnodeitemmodel.cpp:1692
+#: models/kptnodeitemmodel.cpp:1722
 msgid "Constraint Start"
 msgstr "Белгіленген бастауы"
 
-#: models/kptnodeitemmodel.cpp:1693
+#: models/kptnodeitemmodel.cpp:1723
 msgid "Constraint End"
 msgstr "Белгіленген аяқтауы"
 
-#: models/kptnodeitemmodel.cpp:1694
+#: models/kptnodeitemmodel.cpp:1724
 #, fuzzy
 #| msgid "Running"
 msgid "Running Account"
 msgstr "Орындау"
 
-#: models/kptnodeitemmodel.cpp:1695
+#: models/kptnodeitemmodel.cpp:1725
 #, fuzzy
 #| msgid "Startup"
 msgid "Startup Account"
 msgstr "Бастау"
 
-#: models/kptnodeitemmodel.cpp:1696
+#: models/kptnodeitemmodel.cpp:1726
 #, fuzzy
 #| msgid "Startup"
 msgid "Startup Cost"
 msgstr "Бастау"
 
-#: models/kptnodeitemmodel.cpp:1697
+#: models/kptnodeitemmodel.cpp:1727
 #, fuzzy
 #| msgid "Add Account"
 msgid "Shutdown Account"
 msgstr "Есебін қосу"
 
-#: models/kptnodeitemmodel.cpp:1698
+#: models/kptnodeitemmodel.cpp:1728
 #, fuzzy
 #| msgid "Shutdown"
 msgid "Shutdown Cost"
 msgstr "Тоқтату"
 
-#: models/kptnodeitemmodel.cpp:1703
+#: models/kptnodeitemmodel.cpp:1733
 msgid "Variance (Est)"
 msgstr "Ауытқуы (Бағ.)"
 
-#: models/kptnodeitemmodel.cpp:1710
+#: models/kptnodeitemmodel.cpp:1740
 #, fuzzy
 #| msgid "Early start date"
 msgid "Early Start"
 msgstr "Бастау мерзімінің басы"
 
-#: models/kptnodeitemmodel.cpp:1711
+#: models/kptnodeitemmodel.cpp:1741
 #, fuzzy
 #| msgid "Early finish date"
 msgid "Early Finish"
 msgstr "Аяқтау мерзімінің басы"
 
-#: models/kptnodeitemmodel.cpp:1712
+#: models/kptnodeitemmodel.cpp:1742
 #, fuzzy
 #| msgid "Late start date"
 msgid "Late Start"
 msgstr "Бастау мерзімінің соңы"
 
-#: models/kptnodeitemmodel.cpp:1713
+#: models/kptnodeitemmodel.cpp:1743
 #, fuzzy
 #| msgid "Latest finish:"
 msgid "Late Finish"
 msgstr "Ең соңғы аяқтау кезі:"
 
-#: models/kptnodeitemmodel.cpp:1714
+#: models/kptnodeitemmodel.cpp:1744
 #, fuzzy
 #| msgid "Show positive float"
 msgid "Positive Float"
 msgstr "Бар резерві көрсетілсін"
 
-#: models/kptnodeitemmodel.cpp:1715
+#: models/kptnodeitemmodel.cpp:1745
 #, fuzzy
 #| msgid "Float"
 msgid "Free Float"
 msgstr "Бар қосымша уақыт"
 
-#: models/kptnodeitemmodel.cpp:1716
+#: models/kptnodeitemmodel.cpp:1746
 msgid "Negative Float"
 msgstr "Теріс қосымша уақыт"
 
-#: models/kptnodeitemmodel.cpp:1717
+#: models/kptnodeitemmodel.cpp:1747
 #, fuzzy
 #| msgid "Start date"
 msgid "Start Float"
 msgstr "Бастау кезі"
 
-#: models/kptnodeitemmodel.cpp:1718
+#: models/kptnodeitemmodel.cpp:1748
 #, fuzzy
 #| msgid "Finish-Start"
 msgid "Finish Float"
 msgstr "Аяқтау-Бастау"
 
-#: models/kptnodeitemmodel.cpp:1719
+#: models/kptnodeitemmodel.cpp:1749
 #, fuzzy
 #| msgid "Assigments"
 msgid "Assignments"
 msgstr "Белгілеулері"
 
-#: models/kptnodeitemmodel.cpp:1723
+#: models/kptnodeitemmodel.cpp:1753
 msgid "Variance (Dur)"
 msgstr "Ауытқуы (Ұзқ)"
 
-#: models/kptnodeitemmodel.cpp:1724
+#: models/kptnodeitemmodel.cpp:1754
 #, fuzzy
 #| msgid "Optimistic:"
 msgid "Optimistic (Dur)"
 msgstr "Оптимистік:"
 
-#: models/kptnodeitemmodel.cpp:1725
+#: models/kptnodeitemmodel.cpp:1755
 #, fuzzy
 #| msgid "Pessimistic:"
 msgid "Pessimistic (Dur)"
 msgstr "Пессимистік:"
 
-#: models/kptnodeitemmodel.cpp:1732
+#: models/kptnodeitemmodel.cpp:1762
 #, fuzzy
 #| msgid "Actual cost"
 msgid "Actual Effort"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1734
+#: models/kptnodeitemmodel.cpp:1764
 #, fuzzy
 #| msgid "Planned cost"
 msgid "Planned Cost"
 msgstr "Жоспарлаған бағасы"
 
-#: models/kptnodeitemmodel.cpp:1735
+#: models/kptnodeitemmodel.cpp:1765
 #, fuzzy
 #| msgid "Actual cost"
 msgid "Actual Cost"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1736
+#: models/kptnodeitemmodel.cpp:1766
 #, fuzzy
 #| msgid "Actual cost"
 msgid "Actual Start"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1738
+#: models/kptnodeitemmodel.cpp:1768
 #, fuzzy
 #| msgid "Actual cost"
 msgid "Actual Finish"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:1743
+#: models/kptnodeitemmodel.cpp:1773
 #, fuzzy
 #| msgid "Not scheduled"
 msgid "Not Scheduled"
 msgstr "Жоспарланған жоқ"
 
-#: models/kptnodeitemmodel.cpp:1744
+#: models/kptnodeitemmodel.cpp:1774
 #, fuzzy
 #| msgid "Assigment Missing"
 msgid "Assignment Missing"
 msgstr "Бөлінбеген"
 
-#: models/kptnodeitemmodel.cpp:1745
+#: models/kptnodeitemmodel.cpp:1775
 #, fuzzy
 #| msgid "Resource type:"
 msgid "Resource Overbooked"
 msgstr "Ресурстың түрі:"
 
-#: models/kptnodeitemmodel.cpp:1746
+#: models/kptnodeitemmodel.cpp:1776
 #, fuzzy
 #| msgid "No project available"
 msgid "Resource Unavailable"
 msgstr "Жоба жоқ"
 
-#: models/kptnodeitemmodel.cpp:1747
+#: models/kptnodeitemmodel.cpp:1777
 msgid "Constraints Error"
 msgstr "Белгілеу қатесі"
 
-#: models/kptnodeitemmodel.cpp:1748
+#: models/kptnodeitemmodel.cpp:1778
 #, fuzzy
 #| msgid "Effort"
 msgid "Effort Not Met"
 msgstr "Жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:1750
+#: models/kptnodeitemmodel.cpp:1780
 #, fuzzy
 #| msgid "Code"
 msgid "WBS Code"
 msgstr "Коды"
 
-#: models/kptnodeitemmodel.cpp:1751
+#: models/kptnodeitemmodel.cpp:1781
 #, fuzzy
 #| msgid "Add Level"
 msgctxt "Node level"
 msgid "Level"
 msgstr "Деңгейді қосу"
 
-#: models/kptnodeitemmodel.cpp:1754
+#: models/kptnodeitemmodel.cpp:1784
 msgctxt "Budgeted Cost of Work Scheduled"
 msgid "BCWS"
 msgstr "ЖЖБК"
 
-#: models/kptnodeitemmodel.cpp:1755
+#: models/kptnodeitemmodel.cpp:1785
 msgctxt "Budgeted Cost of Work Performed"
 msgid "BCWP"
 msgstr "ОЖБК"
 
-#: models/kptnodeitemmodel.cpp:1756
+#: models/kptnodeitemmodel.cpp:1786
 msgctxt "Actual Cost of Work Performed"
 msgid "ACWP"
 msgstr "ОЖШБ"
 
-#: models/kptnodeitemmodel.cpp:1757
+#: models/kptnodeitemmodel.cpp:1787
 #, fuzzy
 #| msgid "SPI:"
 msgctxt "Schedule Performance Index"
 msgid "SPI"
 msgstr "ЖОК:"
 
-#: models/kptnodeitemmodel.cpp:1762
+#: models/kptnodeitemmodel.cpp:1792
 msgid "Owner"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1849
+#: models/kptnodeitemmodel.cpp:1879
 #, fuzzy
 #| msgid "Work Package Control"
 msgid "Work package owner"
 msgstr "Жұмыс дестесін басқару"
 
-#: models/kptnodeitemmodel.cpp:1850
+#: models/kptnodeitemmodel.cpp:1880
 #, fuzzy
 #| msgid "Work Package Control"
 msgid "Work package status"
 msgstr "Жұмыс дестесін басқару"
 
-#: models/kptnodeitemmodel.cpp:1851
+#: models/kptnodeitemmodel.cpp:1881
 msgid "Work package send/receive time"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2206 models/kptnodeitemmodel.cpp:2215
-#: models/kptnodeitemmodel.cpp:2250 models/kptnodeitemmodel.cpp:2253
+#: models/kptnodeitemmodel.cpp:2236 models/kptnodeitemmodel.cpp:2245
+#: models/kptnodeitemmodel.cpp:2280 models/kptnodeitemmodel.cpp:2283
 #, fuzzy
 #| msgid "&Resources"
 msgid "Resources"
 msgstr "&Ресурстар"
 
-#: models/kptnodeitemmodel.cpp:2212
+#: models/kptnodeitemmodel.cpp:2242
 #, fuzzy
 #| msgid "Add Resource..."
 msgid "Add Resource"
 msgstr "Ресурсты қосу..."
 
-#: models/kptnodeitemmodel.cpp:2227
+#: models/kptnodeitemmodel.cpp:2257
 #, fuzzy
 #| msgid "Modify Relation"
 msgid "Modify Resource Allocations"
 msgstr "Қатынасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2397 models/kptnodeitemmodel.cpp:2401
+#: models/kptnodeitemmodel.cpp:2427 models/kptnodeitemmodel.cpp:2431
 #, fuzzy
 #| msgid "Modify Weekday State"
 msgid "Modify estimate"
 msgstr "Апта күннің күйін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2465 models/kptnodeitemmodel.cpp:3833
+#: models/kptnodeitemmodel.cpp:2495 models/kptnodeitemmodel.cpp:3863
 msgid "Modify Running Account"
 msgstr "Жүріп жатқан есебін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2485 models/kptnodeitemmodel.cpp:3853
+#: models/kptnodeitemmodel.cpp:2515 models/kptnodeitemmodel.cpp:3883
 #, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify Startup Account"
 msgstr "Стандартты жұмыс уақытын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2500 models/kptnodeitemmodel.cpp:3868
+#: models/kptnodeitemmodel.cpp:2530 models/kptnodeitemmodel.cpp:3898
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Startup Cost"
 msgstr "Тапсырманың бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2518 models/kptnodeitemmodel.cpp:3886
+#: models/kptnodeitemmodel.cpp:2548 models/kptnodeitemmodel.cpp:3916
 #, fuzzy
 #| msgid "Modify Documents"
 msgid "Modify Shutdown Account"
 msgstr "Құжаттарды өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2533 models/kptnodeitemmodel.cpp:3901
+#: models/kptnodeitemmodel.cpp:2563 models/kptnodeitemmodel.cpp:3931
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Shutdown Cost"
 msgstr "Тапсырманың бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2951 models/kptnodeitemmodel.cpp:4158
+#: models/kptnodeitemmodel.cpp:2981 models/kptnodeitemmodel.cpp:4188
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Move tasks"
 msgstr "Бар тапсырмалары"
 
-#: models/kptnodeitemmodel.cpp:2990
+#: models/kptnodeitemmodel.cpp:3020
 #, fuzzy
 #| msgid "Add Task..."
 msgid "Add Task"
 msgstr "Тапсырманы қосу..."
 
-#: models/kptnodeitemmodel.cpp:3005
+#: models/kptnodeitemmodel.cpp:3035
 #, fuzzy
 #| msgid "Add Sub-Task..."
 msgid "Add Subtask"
 msgstr "Бағыныңқы тапсырманы қосу..."
 
-#. i18n: file: ui/resourcedialogbase.ui:35
+#. i18n: file: ui/resourcedialogbase.ui:23
+#. i18n: ectx: property (text), widget (QLabel, groupLabel)
+#: rc.cpp:21
+msgid "Group:"
+msgstr "Тобы:"
+
+#. i18n: file: ui/resourcedialogbase.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:55
 #. i18n: ectx: property (text), widget (QLabel, namelabel)
@@ -3271,49 +3322,43 @@ msgstr "Бағыныңқы тапсырманы қосу..."
 #. i18n: ectx: property (text), widget (QLabel, namelabel)
 #. i18n: file: ui/kpttaskdescriptionpanelbase.ui:27
 #. i18n: ectx: property (text), widget (QLabel, namelabel)
-#: rc.cpp:21 rc.cpp:338 rc.cpp:619 rc.cpp:647
+#: rc.cpp:24 rc.cpp:341 rc.cpp:622 rc.cpp:650
 msgid "Name:"
 msgstr "Атауы:"
 
-#. i18n: file: ui/resourcedialogbase.ui:66
+#. i18n: file: ui/resourcedialogbase.ui:61
 #. i18n: ectx: property (toolTip), widget (QPushButton, chooseBtn)
-#: rc.cpp:24
+#: rc.cpp:27
 #, fuzzy
 #| msgid "Choose resource from addressbook"
 msgid "Choose resource from address book"
 msgstr "Адрестік кітапшадан ресурсты таңдау"
 
-#. i18n: file: ui/resourcedialogbase.ui:69
+#. i18n: file: ui/resourcedialogbase.ui:64
 #. i18n: ectx: property (text), widget (QPushButton, chooseBtn)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:116
 #. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:115
 #. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
-#: rc.cpp:27 rc.cpp:363 rc.cpp:641
+#: rc.cpp:30 rc.cpp:366 rc.cpp:644
 msgid "Choose..."
 msgstr "Таңдау..."
 
-#. i18n: file: ui/resourcedialogbase.ui:78
+#. i18n: file: ui/resourcedialogbase.ui:73
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:30
+#: rc.cpp:33
 #, fuzzy
 #| msgid "Initials:"
 msgid "Initials:"
 msgstr "Инициалдары:"
 
-#. i18n: file: ui/resourcedialogbase.ui:118
+#. i18n: file: ui/resourcedialogbase.ui:113
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
-#: rc.cpp:33
+#: rc.cpp:36
 msgid "<p align=\"right\">Email:</p>"
 msgstr "<p align=\"right\"> Эл.поштасы:</p>"
 
-#. i18n: file: ui/resourcedialogbase.ui:140
-#. i18n: ectx: property (text), widget (QLabel, groupLabel)
-#: rc.cpp:36
-msgid "Group:"
-msgstr "Тобы:"
-
-#. i18n: file: ui/resourcedialogbase.ui:170
+#. i18n: file: ui/resourcedialogbase.ui:155
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
 #: rc.cpp:39
 #, fuzzy
@@ -3321,13 +3366,13 @@ msgstr "Тобы:"
 msgid "Resource type:"
 msgstr "Ресурсы"
 
-#. i18n: file: ui/resourcedialogbase.ui:197
+#. i18n: file: ui/resourcedialogbase.ui:188
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: rc.cpp:48
 msgid "<p align=\"right\">Calendar:</p>"
 msgstr "<p align=\"right\"> Күнтізбе:</p>"
 
-#. i18n: file: ui/resourcedialogbase.ui:217
+#. i18n: file: ui/resourcedialogbase.ui:210
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: rc.cpp:51
 #, fuzzy
@@ -3335,7 +3380,7 @@ msgstr "<p align=\"right\"> Күнтізбе:</p>"
 msgid "Available:"
 msgstr "Қол жетерлігі:"
 
-#. i18n: file: ui/resourcedialogbase.ui:236
+#. i18n: file: ui/resourcedialogbase.ui:229
 #. i18n: ectx: property (suffix), widget (QSpinBox, units)
 #. i18n: file: ui/kptcpmwidget.ui:119
 #. i18n: ectx: property (suffix), widget (QSpinBox, probability)
@@ -3343,32 +3388,40 @@ msgstr "Қол жетерлігі:"
 #. i18n: ectx: property (suffix), widget (QSpinBox, optimisticValue)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:404
 #. i18n: ectx: property (suffix), widget (QSpinBox, pessimisticValue)
-#: rc.cpp:55 rc.cpp:179 rc.cpp:441 rc.cpp:448
+#: rc.cpp:55 rc.cpp:182 rc.cpp:444 rc.cpp:451
 #, no-c-format
 msgid "%"
 msgstr "%"
 
-#. i18n: file: ui/resourcedialogbase.ui:246
+#. i18n: file: ui/resourcedialogbase.ui:239
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
 #: rc.cpp:58
 msgid "<p align=\"right\">From:</p>"
 msgstr "<p align=\"right\">Басы:</p>"
 
-#. i18n: file: ui/resourcedialogbase.ui:282
+#. i18n: file: ui/resourcedialogbase.ui:259
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
 #: rc.cpp:61
 msgid "<p align=\"right\">Until:</p>"
 msgstr "<p align=\"right\">Аяғы:</p>"
 
-#. i18n: file: ui/resourcedialogbase.ui:319
+#. i18n: file: ui/resourcedialogbase.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, useRequired)
+#: rc.cpp:64
+#, fuzzy
+#| msgid "Per Resource"
+msgid "Required resources:"
+msgstr "Ресурсына шаққанда"
+
+#. i18n: file: ui/resourcedialogbase.ui:339
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:67
+#: rc.cpp:70
 msgid "Hourly rate:"
 msgstr "Сағаттық бағасы:"
 
-#. i18n: file: ui/resourcedialogbase.ui:339
+#. i18n: file: ui/resourcedialogbase.ui:359
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: rc.cpp:70
+#: rc.cpp:73
 #, fuzzy
 #| msgid "Overtime rate:"
 msgid "Overtime rate:"
@@ -3376,31 +3429,31 @@ msgstr "Уақытынан тыс жұмыстың бағасы:"
 
 #. i18n: file: ui/relationpanel.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:73
+#: rc.cpp:76
 msgid "From"
 msgstr "Басы"
 
 #. i18n: file: ui/relationpanel.ui:82
 #. i18n: ectx: property (text), widget (QLabel, fromName)
-#: rc.cpp:76
+#: rc.cpp:79
 msgid "Task 1"
 msgstr "1-тапсырма"
 
 #. i18n: file: ui/relationpanel.ui:98
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:79
+#: rc.cpp:82
 msgid "To"
 msgstr "Аяғы"
 
 #. i18n: file: ui/relationpanel.ui:119
 #. i18n: ectx: property (text), widget (QLabel, toName)
-#: rc.cpp:82
+#: rc.cpp:85
 msgid "Task 2"
 msgstr "2-тапсырма"
 
 #. i18n: file: ui/relationpanel.ui:137
 #. i18n: ectx: property (title), widget (QGroupBox, relationType)
-#: rc.cpp:85
+#: rc.cpp:88
 #, fuzzy
 #| msgid "Add Relationship"
 msgid "Relationship Type"
@@ -3408,7 +3461,7 @@ msgstr "Қарым-қатынасты қосу"
 
 #. i18n: file: ui/relationpanel.ui:184
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:97
+#: rc.cpp:100
 #, fuzzy
 #| msgid "Lag:"
 msgid "Lag:"
@@ -3416,7 +3469,7 @@ msgstr "Кешігу:"
 
 #. i18n: file: ui/kptperformancestatus.ui:90
 #. i18n: ectx: property (text), widget (QLabel, labelBCWP)
-#: rc.cpp:100
+#: rc.cpp:103
 #, fuzzy
 #| msgctxt "Budgeted Cost of Work Performed"
 #| msgid "BCWP"
@@ -3425,7 +3478,7 @@ msgstr "ОЖБК"
 
 #. i18n: file: ui/kptperformancestatus.ui:109
 #. i18n: ectx: property (text), widget (QLabel, labelACWP)
-#: rc.cpp:103
+#: rc.cpp:106
 #, fuzzy
 #| msgctxt "Actual Cost of Work Performed"
 #| msgid "ACWP"
@@ -3434,7 +3487,7 @@ msgstr "ОЖШБ"
 
 #. i18n: file: ui/kptperformancestatus.ui:119
 #. i18n: ectx: property (text), widget (QLabel, labelPI)
-#: rc.cpp:106
+#: rc.cpp:109
 #, fuzzy
 #| msgid "SPI:"
 msgid "PI"
@@ -3446,25 +3499,25 @@ msgstr "ЖОК:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: ui/kpttaskcostpanelbase.ui:160
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:109 rc.cpp:662 rc.cpp:671
+#: rc.cpp:112 rc.cpp:665 rc.cpp:674
 msgid "Cost:"
 msgstr "Бағасы:"
 
 #. i18n: file: ui/kptperformancestatus.ui:186
 #. i18n: ectx: property (text), widget (QLabel, labelCPI)
-#: rc.cpp:112
+#: rc.cpp:115
 msgid "CPI:"
 msgstr "БОК:"
 
 #. i18n: file: ui/kptperformancestatus.ui:211
 #. i18n: ectx: property (text), widget (QLabel, labelEffort)
-#: rc.cpp:115
+#: rc.cpp:118
 msgid "Effort:"
 msgstr "Жұмыс көлемі:"
 
 #. i18n: file: ui/kptperformancestatus.ui:262
 #. i18n: ectx: property (text), widget (QLabel, labelSPI)
-#: rc.cpp:118
+#: rc.cpp:121
 #, fuzzy
 #| msgid "SPI:"
 msgid "SPI:"
@@ -3472,7 +3525,7 @@ msgstr "ЖОК:"
 
 #. i18n: file: ui/kptperformancestatus.ui:293
 #. i18n: ectx: property (text), widget (QLabel, labelBCWS)
-#: rc.cpp:121
+#: rc.cpp:124
 #, fuzzy
 #| msgctxt "Budgeted Cost of Work Scheduled"
 #| msgid "BCWS"
@@ -3481,25 +3534,25 @@ msgstr "ЖЖБК"
 
 #. i18n: file: ui/kpttaskstatusviewsettingspanel.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, periodGroupBox)
-#: rc.cpp:124
+#: rc.cpp:127
 msgid "Period Definition"
 msgstr "Кезең анықтауы"
 
 #. i18n: file: ui/kpttaskstatusviewsettingspanel.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:127
+#: rc.cpp:130
 msgid "Period length (days):"
 msgstr "Кезең ұзындығы (күн):"
 
 #. i18n: file: ui/kpttaskstatusviewsettingspanel.ui:48
 #. i18n: ectx: property (text), widget (QRadioButton, useCurrentDate)
-#: rc.cpp:130
+#: rc.cpp:133
 msgid "Use current date"
 msgstr "Бүгінгі күн болсын"
 
 #. i18n: file: ui/kpttaskstatusviewsettingspanel.ui:68
 #. i18n: ectx: property (text), widget (QRadioButton, useWeekday)
-#: rc.cpp:133
+#: rc.cpp:136
 msgid "Use weekday:"
 msgstr "Аптадағы күн:"
 
@@ -3507,13 +3560,13 @@ msgstr "Аптадағы күн:"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
 #. i18n: file: ui/kptperteditor.ui:37
 #. i18n: ectx: property (text), widget (QTreeWidget, taskList)
-#: rc.cpp:142 rc.cpp:702
+#: rc.cpp:145 rc.cpp:705
 msgid "Tasks"
 msgstr "Тапсырмалар"
 
 #. i18n: file: ui/kptresourceassignmentview.ui:44
 #. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
-#: rc.cpp:145
+#: rc.cpp:148
 #, fuzzy
 #| msgid "Advance"
 msgid "Advance"
@@ -3521,13 +3574,13 @@ msgstr "Үдеуі"
 
 #. i18n: file: ui/kptintervaleditbase.ui:21
 #. i18n: ectx: property (text), widget (QTreeWidget, intervalList)
-#: rc.cpp:148
+#: rc.cpp:151
 msgid "1"
 msgstr "1"
 
 #. i18n: file: ui/kptintervaleditbase.ui:31
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:151
+#: rc.cpp:154
 #, fuzzy
 #| msgid "From:"
 msgctxt "Start time"
@@ -3536,13 +3589,13 @@ msgstr "Басы:"
 
 #. i18n: file: ui/kptintervaleditbase.ui:47
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:154
+#: rc.cpp:157
 msgid "Length"
 msgstr "Ұзындығы"
 
 #. i18n: file: ui/kptintervaleditbase.ui:70
 #. i18n: ectx: property (text), widget (QPushButton, bAddInterval)
-#: rc.cpp:157
+#: rc.cpp:160
 msgid "Add"
 msgstr "Қосу"
 
@@ -3552,13 +3605,13 @@ msgstr "Қосу"
 #. i18n: ectx: property (text), widget (QPushButton, removeBtn)
 #. i18n: file: ui/kptdocumentspanel.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, pbRemove)
-#: rc.cpp:160 rc.cpp:248 rc.cpp:541
+#: rc.cpp:163 rc.cpp:251 rc.cpp:544
 msgid "Remove"
 msgstr "Өшіру"
 
 #. i18n: file: ui/kptintervaleditbase.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, bClear)
-#: rc.cpp:163
+#: rc.cpp:166
 msgid "Clear"
 msgstr "Тазалау"
 
@@ -3566,7 +3619,7 @@ msgstr "Тазалау"
 #. i18n: ectx: property (text), widget (QLabel, label_1)
 #. i18n: file: ui/kptpertresult.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_1)
-#: rc.cpp:166 rc.cpp:451
+#: rc.cpp:169 rc.cpp:454
 msgid "Project Schedule:"
 msgstr "Жоба жоспары:"
 
@@ -3580,19 +3633,19 @@ msgstr "Жоба жоспары:"
 #. i18n: ectx: property (text), widget (QLabel, labelResultCriticalPath)
 #. i18n: file: ui/kptscheduleeditor.ui:117
 #. i18n: ectx: property (text), widget (QLabel, labelResultProjectFloat)
-#: rc.cpp:169 rc.cpp:454 rc.cpp:460 rc.cpp:720 rc.cpp:726
+#: rc.cpp:172 rc.cpp:457 rc.cpp:463 rc.cpp:723 rc.cpp:729
 msgid "..."
 msgstr "..."
 
 #. i18n: file: ui/kptcpmwidget.ui:92
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:172
+#: rc.cpp:175
 msgid "Probability of finishing before"
 msgstr "Келесі кезге дейін аяқтау"
 
 #. i18n: file: ui/kptcpmwidget.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:175
+#: rc.cpp:178
 #, fuzzy
 #| msgid "Risk:"
 msgid "is"
@@ -3600,7 +3653,7 @@ msgstr "Тәуекелі:"
 
 #. i18n: file: ui/kptprintingheaderfooter.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, ui_header)
-#: rc.cpp:182
+#: rc.cpp:185
 msgid "Header"
 msgstr "Жоғарғы колонтитулы"
 
@@ -3608,7 +3661,7 @@ msgstr "Жоғарғы колонтитулы"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_headerProject)
 #. i18n: file: ui/kptprintingheaderfooter.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, ui_footerProject)
-#: rc.cpp:185 rc.cpp:200
+#: rc.cpp:188 rc.cpp:203
 msgid "Project name"
 msgstr "Жобаның атауы"
 
@@ -3616,7 +3669,7 @@ msgstr "Жобаның атауы"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_headerPage)
 #. i18n: file: ui/kptprintingheaderfooter.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, ui_footerPage)
-#: rc.cpp:188 rc.cpp:203
+#: rc.cpp:191 rc.cpp:206
 msgid "Page number"
 msgstr "Беттің нөмері"
 
@@ -3624,25 +3677,25 @@ msgstr "Беттің нөмері"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_headerManager)
 #. i18n: file: ui/kptprintingheaderfooter.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, ui_footerManager)
-#: rc.cpp:191 rc.cpp:206
+#: rc.cpp:194 rc.cpp:209
 msgid "Project manager"
 msgstr "Жоба менеджер"
 
 #. i18n: file: ui/kptprintingheaderfooter.ui:56
 #. i18n: ectx: property (title), widget (QGroupBox, ui_footer)
-#: rc.cpp:197
+#: rc.cpp:200
 msgid "Footer"
 msgstr "Төменгі колонтитулы"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:20
 #. i18n: ectx: property (toolTip), widget (QFrame, frame_2)
-#: rc.cpp:212
+#: rc.cpp:215
 msgid "Define code for the project node"
 msgstr "Жоба бабының кодын анықтау"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:215
+#: rc.cpp:218
 msgid "Project Code Definition"
 msgstr "Жоба кодын анықтау"
 
@@ -3650,7 +3703,7 @@ msgstr "Жоба кодын анықтау"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:100
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:218 rc.cpp:230
+#: rc.cpp:221 rc.cpp:233
 msgid "Code:"
 msgstr "Коды:"
 
@@ -3658,37 +3711,37 @@ msgstr "Коды:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_3)
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:117
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
-#: rc.cpp:221 rc.cpp:233
+#: rc.cpp:224 rc.cpp:236
 msgid "Separator:"
 msgstr "Бөлгіші:"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:79
 #. i18n: ectx: property (toolTip), widget (QFrame, frame)
-#: rc.cpp:224
+#: rc.cpp:227
 msgid "Define default code"
 msgstr "Әдетті кодты беру"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:227
+#: rc.cpp:230
 msgid "Default Definition"
 msgstr "Әдетті анықтауы"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:135
 #. i18n: ectx: property (toolTip), widget (QGroupBox, levelsGroup)
-#: rc.cpp:236
+#: rc.cpp:239
 msgid "Define separate codes for individual levels"
 msgstr "Жеке деңгейлерге бөлек кодтарды беру"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:138
 #. i18n: ectx: property (title), widget (QGroupBox, levelsGroup)
-#: rc.cpp:239
+#: rc.cpp:242
 msgid "Use Levels Definition"
 msgstr "Деңгейлердің анықтауы"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:154
 #. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
-#: rc.cpp:242
+#: rc.cpp:245
 #, fuzzy
 #| msgid "Code:"
 msgid "Code"
@@ -3696,13 +3749,13 @@ msgstr "Коды:"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:159
 #. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
-#: rc.cpp:245
+#: rc.cpp:248
 msgid "Separator"
 msgstr "Бөлгіші"
 
 #. i18n: file: ui/kptwbsdefinitionpanelbase.ui:174
 #. i18n: ectx: property (text), widget (QPushButton, addBtn)
-#: rc.cpp:251
+#: rc.cpp:254
 #, fuzzy
 #| msgid "Add Level"
 msgid "Add Level"
@@ -3710,13 +3763,13 @@ msgstr "Деңгейді қосу"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:254
+#: rc.cpp:257
 msgid "Show:"
 msgstr "Көрсету:"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:33
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:257
+#: rc.cpp:260
 #, fuzzy
 #| msgid "Periodicity:"
 msgid "Periodicity:"
@@ -3724,43 +3777,43 @@ msgstr "Мезгілдігі:"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:44
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
-#: rc.cpp:260
+#: rc.cpp:263
 msgid "Day"
 msgstr "Күн"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:49
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
-#: rc.cpp:263
+#: rc.cpp:266
 msgid "Week"
 msgstr "Апта"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:54
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
-#: rc.cpp:266
+#: rc.cpp:269
 msgid "Month"
 msgstr "Ай"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, ui_cumulative)
-#: rc.cpp:269
+#: rc.cpp:272
 msgid "Cumulative"
 msgstr "Интегралды"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:80
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
-#: rc.cpp:278
+#: rc.cpp:281
 msgid "Actual and planned"
 msgstr "Шын және жоспарлаған"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:85
 #. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
-#: rc.cpp:281
+#: rc.cpp:284
 msgid "Deviation"
 msgstr "Ауытқы"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:101
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:284
+#: rc.cpp:287
 #, fuzzy
 #| msgid "Start date"
 msgid "Start date"
@@ -3768,7 +3821,7 @@ msgstr "Бастау кезі"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:107
 #. i18n: ectx: property (text), widget (QRadioButton, ui_projectstartBtn)
-#: rc.cpp:287
+#: rc.cpp:290
 #, fuzzy
 #| msgid "Project name"
 msgid "Project start"
@@ -3776,7 +3829,7 @@ msgstr "Жобаның атауы"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:131
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:293
+#: rc.cpp:296
 #, fuzzy
 #| msgid "End date"
 msgid "End date"
@@ -3784,13 +3837,13 @@ msgstr "Аяқтау кезі"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:137
 #. i18n: ectx: property (text), widget (QRadioButton, ui_currentdateBtn)
-#: rc.cpp:296
+#: rc.cpp:299
 msgid "Current date"
 msgstr "Бүгінгі күн"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:158
 #. i18n: ectx: property (text), widget (QRadioButton, ui_projectendBtn)
-#: rc.cpp:302
+#: rc.cpp:305
 msgid "Project end"
 msgstr "Жобаны аяқтау"
 
@@ -3798,7 +3851,7 @@ msgstr "Жобаны аяқтау"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsCost)
 #. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:70
 #. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsEffort)
-#: rc.cpp:308 rc.cpp:320
+#: rc.cpp:311 rc.cpp:323
 msgid "Show BCWS plot"
 msgstr "ЖЖБК графигін көрсету"
 
@@ -3806,7 +3859,7 @@ msgstr "ЖЖБК графигін көрсету"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpCost)
 #. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:77
 #. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpEffort)
-#: rc.cpp:311 rc.cpp:323
+#: rc.cpp:314 rc.cpp:326
 msgid "Show BCWP plot"
 msgstr "ОЖБК графигін көрсету"
 
@@ -3814,7 +3867,7 @@ msgstr "ОЖБК графигін көрсету"
 #. i18n: ectx: property (text), widget (QCheckBox, ui_acwpCost)
 #. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:84
 #. i18n: ectx: property (text), widget (QCheckBox, ui_acwpEffort)
-#: rc.cpp:314 rc.cpp:326
+#: rc.cpp:317 rc.cpp:329
 msgid "Show ACWP plot"
 msgstr "ОЖШБ графигін көрсету"
 
@@ -3822,7 +3875,7 @@ msgstr "ОЖШБ графигін көрсету"
 #. i18n: ectx: property (toolTip), widget (QLabel, wbslabel)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:29
 #. i18n: ectx: property (toolTip), widget (QLabel, wbslabel)
-#: rc.cpp:329 rc.cpp:610
+#: rc.cpp:332 rc.cpp:613
 #, fuzzy
 #| msgid "Work Breakdown Structure"
 msgid "Work Breakdown Structure"
@@ -3834,7 +3887,7 @@ msgstr "Жұмыстың жіктелген құрылымы"
 #. i18n: ectx: property (text), widget (QLabel, wbslabel)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:32
 #. i18n: ectx: property (text), widget (QLabel, wbslabel)
-#: rc.cpp:332 rc.cpp:499 rc.cpp:613
+#: rc.cpp:335 rc.cpp:502 rc.cpp:616
 msgid "WBS:"
 msgstr "ЖЖҚ:"
 
@@ -3850,7 +3903,7 @@ msgstr "ЖЖҚ:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, namelabel)
 #. i18n: file: ui/kpttaskdescriptionpanelbase.ui:40
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
-#: rc.cpp:335 rc.cpp:341 rc.cpp:616 rc.cpp:622 rc.cpp:644 rc.cpp:650
+#: rc.cpp:338 rc.cpp:344 rc.cpp:619 rc.cpp:625 rc.cpp:647 rc.cpp:653
 #, fuzzy
 #| msgid "The name of the Task."
 msgid "The name of the Task."
@@ -3864,7 +3917,7 @@ msgstr "Тапсырманың атауы."
 #. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:105
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
-#: rc.cpp:344 rc.cpp:352 rc.cpp:625 rc.cpp:633
+#: rc.cpp:347 rc.cpp:355 rc.cpp:628 rc.cpp:636
 msgid ""
 "The person responsible for this task.\n"
 "\n"
@@ -3881,7 +3934,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:79
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: rc.cpp:349 rc.cpp:630
+#: rc.cpp:352 rc.cpp:633
 #, fuzzy
 #| msgid "Responsible:"
 msgid "Responsible:"
@@ -3891,19 +3944,19 @@ msgstr "Жауаптысы:"
 #. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
 #. i18n: file: ui/kptsummarytaskgeneralpanelbase.ui:112
 #. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
-#: rc.cpp:357 rc.cpp:638
+#: rc.cpp:360 rc.cpp:641
 msgid "Insert a person from your address book"
 msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:113
 #. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
-#: rc.cpp:360
+#: rc.cpp:363
 msgid "Insert a person from your address book."
 msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз."
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:132
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:366
+#: rc.cpp:369
 msgid ""
 "Scheduling Configuration. These settings affect the actual scheduling of the "
 "task.\n"
@@ -3923,19 +3976,19 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:135
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:371
+#: rc.cpp:374
 msgid "Timing"
 msgstr "Уақыты"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:162
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:374
+#: rc.cpp:377
 msgid "Schedule:"
 msgstr "Жоспары:"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:182
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: rc.cpp:377
+#: rc.cpp:380
 #, fuzzy
 #| msgid "As Soon as Possible"
 msgid "As Soon as Possible"
@@ -3943,7 +3996,7 @@ msgstr "Барынша тез"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:187
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: rc.cpp:380
+#: rc.cpp:383
 #, fuzzy
 #| msgid "As Late as Possible"
 msgid "As Late as Possible"
@@ -3951,7 +4004,7 @@ msgstr "Барынша кеш"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:202
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: rc.cpp:389
+#: rc.cpp:392
 #, fuzzy
 #| msgid "Start Not Earlier Than"
 msgid "Start Not Earlier Than"
@@ -3959,7 +4012,7 @@ msgstr "Бастау мерзімінің басы"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:207
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: rc.cpp:392
+#: rc.cpp:395
 #, fuzzy
 #| msgid "Finish Not Later Than"
 msgid "Finish Not Later Than"
@@ -3967,7 +4020,7 @@ msgstr "Аяқтау мерзімінің соңы"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:258
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:398
+#: rc.cpp:401
 #, fuzzy
 #| msgid "Estimate:"
 msgid "Estimate:"
@@ -3975,7 +4028,7 @@ msgstr "Есеп негізі:"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:303
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel3_2_3)
-#: rc.cpp:407
+#: rc.cpp:410
 #, fuzzy
 #| msgid ""
 #| "Risk controles the PERT distribution used when calculating the actual "
@@ -3989,7 +4042,7 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:309
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3_2_3)
-#: rc.cpp:410
+#: rc.cpp:413
 #, fuzzy
 #| msgid ""
 #| "<p>Risk controles the PERT distribution used when calculating the actual "
@@ -4015,7 +4068,7 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:312
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2_3)
-#: rc.cpp:416
+#: rc.cpp:419
 #, fuzzy
 #| msgid "Risk:"
 msgid "Risk:"
@@ -4023,7 +4076,7 @@ msgstr "Тәуекелі:"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:331
 #. i18n: ectx: property (toolTip), widget (KComboBox, risk)
-#: rc.cpp:419
+#: rc.cpp:422
 #, fuzzy
 #| msgid ""
 #| "Risk controles the PERT distribution used when calculating the actual "
@@ -4037,7 +4090,7 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:337
 #. i18n: ectx: property (whatsThis), widget (KComboBox, risk)
-#: rc.cpp:422
+#: rc.cpp:425
 msgid ""
 "<p>Risk controles the PERT distribution used when calculating the actual "
 "estimate for the task.\n"
@@ -4055,7 +4108,7 @@ msgstr ""
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:362
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:437
+#: rc.cpp:440
 #, fuzzy
 #| msgid "Optimistic:"
 msgid "Optimistic:"
@@ -4063,7 +4116,7 @@ msgstr "Оптимистік:"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:388
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:444
+#: rc.cpp:447
 #, fuzzy
 #| msgid "Pessimistic:"
 msgid "Pessimistic:"
@@ -4071,55 +4124,55 @@ msgstr "Пессимистік:"
 
 #. i18n: file: ui/kptpertresult.ui:114
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:457
+#: rc.cpp:460
 msgid "Total Float:"
 msgstr "Жалпы бар қосымша уақыт:"
 
 #. i18n: file: ui/kptitemviewsettings.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, stretchLastSection)
-#: rc.cpp:463
+#: rc.cpp:466
 msgid "Stretch last section"
 msgstr "Соңғы бөлімін созу"
 
 #. i18n: file: ui/kptitemviewsettings.ui:35
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:466
+#: rc.cpp:469
 msgid "Select columns to be shown:"
 msgstr "Көрсететін бағандарды таңдаңыз:"
 
 #. i18n: file: ui/kptitemviewsettings.ui:56
 #. i18n: ectx: property (availableLabel), widget (KActionSelector, selector)
-#: rc.cpp:469
+#: rc.cpp:472
 msgid "&Hidden columns:"
 msgstr "&Жасырылған бағандары:"
 
 #. i18n: file: ui/kptitemviewsettings.ui:59
 #. i18n: ectx: property (selectedLabel), widget (KActionSelector, selector)
-#: rc.cpp:472
+#: rc.cpp:475
 msgid "&Visible columns:"
 msgstr "&Көрінетін бағандары:"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showTaskName)
-#: rc.cpp:475
+#: rc.cpp:478
 msgid "Show task name"
 msgstr "Тапсырманың атауы көрсетілсін"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showResourceNames)
-#: rc.cpp:478
+#: rc.cpp:481
 msgid "Show resource names"
 msgstr "Ресурстың атауы көрсетілсін"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showDependencies)
-#: rc.cpp:481
+#: rc.cpp:484
 msgid "Show task dependencies"
 msgstr "Тапсырманың тәуелдігі көрсетілсін"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
-#: rc.cpp:484
+#: rc.cpp:487
 #, fuzzy
 #| msgid "Show critical tasks"
 msgid "Show critical path"
@@ -4127,7 +4180,7 @@ msgstr "Шешуші тапсырмалары көрсетілсін"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCompletion)
-#: rc.cpp:487
+#: rc.cpp:490
 #, fuzzy
 #| msgid "Modify task completion"
 msgid "Show task completion"
@@ -4135,13 +4188,13 @@ msgstr "Тапсырманың бітіруін өзгерту"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:73
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
-#: rc.cpp:490
+#: rc.cpp:493
 msgid "Show critical tasks"
 msgstr "Шешуші тапсырмалары көрсетілсін"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:80
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showPositiveFloat)
-#: rc.cpp:493
+#: rc.cpp:496
 #, fuzzy
 #| msgid "Show positive float"
 msgid "Show positive float"
@@ -4151,13 +4204,13 @@ msgstr "Бар резерві көрсетілсін"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: file: ui/kptmainprojectpanelbase.ui:80
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
-#: rc.cpp:502 rc.cpp:508
+#: rc.cpp:505 rc.cpp:511
 msgid "The project name."
 msgstr "Жобаның атауы."
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:61
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:505
+#: rc.cpp:508
 msgid "N&ame:"
 msgstr "&Атауы:"
 
@@ -4165,37 +4218,37 @@ msgstr "&Атауы:"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: file: ui/kptmainprojectpanelbase.ui:112
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
-#: rc.cpp:511 rc.cpp:517
+#: rc.cpp:514 rc.cpp:520
 msgid "The project leader."
 msgstr "Жобаның басшысы."
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:119
 #. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
-#: rc.cpp:520
+#: rc.cpp:523
 msgid "Choose a project leader from your address book."
 msgstr "Жобаның басшысын адрестік кітапшаңыздан таңдап алыңыз."
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
-#: rc.cpp:523
+#: rc.cpp:526
 msgid "&Choose..."
 msgstr "&Таңдау..."
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:131
 #. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
-#: rc.cpp:526
+#: rc.cpp:529
 msgid "Scheduling Range"
 msgstr "Жоспарлау кезеңі"
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:529
+#: rc.cpp:532
 msgid "Earliest start:"
 msgstr "Ең ерте бастау кезі:"
 
 #. i18n: file: ui/kptmainprojectpanelbase.ui:170
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:532
+#: rc.cpp:535
 #, fuzzy
 #| msgid "Latest finish:"
 msgid "Latest finish:"
@@ -4203,43 +4256,43 @@ msgstr "Ең соңғы аяқтау кезі:"
 
 #. i18n: file: ui/kptdocumentspanel.ui:31
 #. i18n: ectx: property (text), widget (QPushButton, pbAdd)
-#: rc.cpp:535
+#: rc.cpp:538
 msgid "Add..."
 msgstr "Қосу..."
 
 #. i18n: file: ui/kptdocumentspanel.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
-#: rc.cpp:538
+#: rc.cpp:541
 msgid "Change..."
 msgstr "Өзгерту..."
 
 #. i18n: file: ui/kptdocumentspanel.ui:52
 #. i18n: ectx: property (text), widget (QPushButton, pbView)
-#: rc.cpp:544
+#: rc.cpp:547
 msgid "Open"
 msgstr "Ашу"
 
 #. i18n: file: ui/locale/localemon.ui:32
 #. i18n: ectx: property (text), widget (QLabel, m_labMonFraDig)
-#: rc.cpp:550
+#: rc.cpp:553
 msgid "Fractional digits:"
 msgstr ""
 
 #. i18n: file: ui/kptganttprintingoptions.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, ui_printRowLabels)
-#: rc.cpp:601
+#: rc.cpp:604
 msgid "Print row labels"
 msgstr "Жол жарлықтары басып шығарылсын"
 
 #. i18n: file: ui/kptganttprintingoptions.ui:38
 #. i18n: ectx: property (text), widget (QRadioButton, ui_singlePage)
-#: rc.cpp:604
+#: rc.cpp:607
 msgid "Print chart on a single page"
 msgstr "Диаграмма бір парақта басылсын"
 
 #. i18n: file: ui/kptganttprintingoptions.ui:48
 #. i18n: ectx: property (text), widget (QRadioButton, ui_multiplePages)
-#: rc.cpp:607
+#: rc.cpp:610
 msgid "Divide chart on multiple pages"
 msgstr "Диаграмма бірнеше параққа бөлінсін"
 
@@ -4249,7 +4302,7 @@ msgstr "Диаграмма бірнеше параққа бөлінсін"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: ui/kpttaskcostpanelbase.ui:176
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
-#: rc.cpp:656 rc.cpp:665 rc.cpp:674
+#: rc.cpp:659 rc.cpp:668 rc.cpp:677
 #, fuzzy
 #| msgid "Account:"
 msgid "Account:"
@@ -4257,7 +4310,7 @@ msgstr "Есебі:"
 
 #. i18n: file: ui/kpttaskcostpanelbase.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:659
+#: rc.cpp:662
 #, fuzzy
 #| msgctxt "Interval start time"
 #| msgid "Start"
@@ -4266,7 +4319,7 @@ msgstr "Басталуы"
 
 #. i18n: file: ui/kpttaskcostpanelbase.ui:148
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:668
+#: rc.cpp:671
 #, fuzzy
 #| msgid "Shutdown"
 msgid "Shutdown"
@@ -4274,7 +4327,7 @@ msgstr "Тоқтату"
 
 #. i18n: file: ui/standardworktimedialogbase.ui:16
 #. i18n: ectx: property (whatsThis), widget (QWidget, KPlato::StandardWorktimeDialogBase)
-#: rc.cpp:677
+#: rc.cpp:680
 msgid ""
 "These values are used if your estimate is not in hours.\n"
 "Let us say Hours per day is 8. If you estimate that a task needs 3 days "
@@ -4285,25 +4338,25 @@ msgstr ""
 
 #. i18n: file: ui/standardworktimedialogbase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:681
+#: rc.cpp:684
 msgid "Hours per year:"
 msgstr "Жылдағы сағаттары:"
 
 #. i18n: file: ui/standardworktimedialogbase.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:684
+#: rc.cpp:687
 msgid "Hours per month:"
 msgstr "Айдағы сағаттары:"
 
 #. i18n: file: ui/standardworktimedialogbase.ui:80
 #. i18n: ectx: property (text), widget (QLabel, textLabe3)
-#: rc.cpp:687
+#: rc.cpp:690
 msgid "Hours per week:"
 msgstr "Аптадағы сағаттары:"
 
 #. i18n: file: ui/standardworktimedialogbase.ui:106
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
-#: rc.cpp:690
+#: rc.cpp:693
 msgid ""
 "These values are used when you estimate the effort needed to complete a task."
 msgstr ""
@@ -4311,13 +4364,13 @@ msgstr ""
 
 #. i18n: file: ui/standardworktimedialogbase.ui:109
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:693
+#: rc.cpp:696
 msgid "Hours per day:"
 msgstr "Күндегі сағаттары:"
 
 #. i18n: file: ui/kptrecalculatedialog.ui:26
 #. i18n: ectx: property (text), widget (QRadioButton, btnCurrent)
-#: rc.cpp:696
+#: rc.cpp:699
 #, fuzzy
 #| msgid "Project Schedule:"
 msgid "Re-calculate from current date/time"
@@ -4325,7 +4378,7 @@ msgstr "Жоба жоспары:"
 
 #. i18n: file: ui/kptrecalculatedialog.ui:33
 #. i18n: ectx: property (text), widget (QRadioButton, btnFrom)
-#: rc.cpp:699
+#: rc.cpp:702
 #, fuzzy
 #| msgid "Project Schedule:"
 msgid "Re-calculate from:"
@@ -4333,7 +4386,7 @@ msgstr "Жоба жоспары:"
 
 #. i18n: file: ui/kptperteditor.ui:46
 #. i18n: ectx: property (text), widget (QTreeWidget, available)
-#: rc.cpp:705
+#: rc.cpp:708
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Available tasks"
@@ -4341,37 +4394,37 @@ msgstr "Бар тапсырмалары"
 
 #. i18n: file: ui/kptperteditor.ui:81
 #. i18n: ectx: property (toolTip), widget (QPushButton, addBtn)
-#: rc.cpp:708
+#: rc.cpp:711
 msgid "Add required task"
 msgstr "Керек тапсырманы қосу"
 
 #. i18n: file: ui/kptperteditor.ui:97
 #. i18n: ectx: property (toolTip), widget (QPushButton, removeBtn)
-#: rc.cpp:711
+#: rc.cpp:714
 msgid "Remove required task"
 msgstr "Керек тапсырманы өшіру"
 
 #. i18n: file: ui/kptscheduleeditor.ui:77
 #. i18n: ectx: property (text), widget (QLabel, labelCriticalPath)
-#: rc.cpp:717
+#: rc.cpp:720
 msgid "Critical Path (Task Id) :"
 msgstr "Шешуші тізбекі (тапсырма ID-і) :"
 
 #. i18n: file: ui/kptscheduleeditor.ui:110
 #. i18n: ectx: property (text), widget (QLabel, labelProjectFloat)
-#: rc.cpp:723
+#: rc.cpp:726
 msgid "Project Float :"
 msgstr "Жобада бар қосымша уақыт:"
 
 #. i18n: file: ui/kptscheduleeditor.ui:131
 #. i18n: ectx: property (title), widget (QGroupBox, taskGroupBoxDetail)
-#: rc.cpp:729
+#: rc.cpp:732
 msgid "Task details "
 msgstr "Тапсырма егжей-тегжейі "
 
 #. i18n: file: ui/kptscheduleeditor.ui:162
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:732
+#: rc.cpp:735
 #, fuzzy
 #| msgid "Id"
 msgid "Id"
@@ -4379,7 +4432,7 @@ msgstr "Идентификаторы"
 
 #. i18n: file: ui/kptscheduleeditor.ui:172
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:738
+#: rc.cpp:741
 #, fuzzy
 #| msgid "Early start date"
 msgid "Early start date"
@@ -4387,7 +4440,7 @@ msgstr "Бастау мерзімінің басы"
 
 #. i18n: file: ui/kptscheduleeditor.ui:177
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:741
+#: rc.cpp:744
 #, fuzzy
 #| msgid "Early finish date"
 msgid "Early finish date"
@@ -4395,7 +4448,7 @@ msgstr "Аяқтау мерзімінің басы"
 
 #. i18n: file: ui/kptscheduleeditor.ui:182
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:744
+#: rc.cpp:747
 #, fuzzy
 #| msgid "Late start date"
 msgid "Late start date"
@@ -4403,7 +4456,7 @@ msgstr "Бастау мерзімінің соңы"
 
 #. i18n: file: ui/kptscheduleeditor.ui:187
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:747
+#: rc.cpp:750
 #, fuzzy
 #| msgid "Latest finish:"
 msgid "Late finish date"
@@ -4411,7 +4464,7 @@ msgstr "Ең соңғы аяқтау кезі:"
 
 #. i18n: file: ui/kptscheduleeditor.ui:192
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:750
+#: rc.cpp:753
 #, fuzzy
 #| msgid "Float"
 msgid "Float"
@@ -4419,49 +4472,49 @@ msgstr "Бар қосымша уақыт"
 
 #. i18n: file: ui/kptscheduleeditor.ui:197
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: rc.cpp:753
+#: rc.cpp:756
 msgid "Free Margin"
 msgstr "Бар бос уақыт"
 
 #. i18n: file: ui/kptresourceappointmentsdisplayoptions.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, ui_internalAppointments)
-#: rc.cpp:756
+#: rc.cpp:759
 msgid "Show internal appointments"
 msgstr "Ішкі тағайындарды көрсету"
 
 #. i18n: file: ui/kptresourceappointmentsdisplayoptions.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, ui_externalAppointments)
-#: rc.cpp:759
+#: rc.cpp:762
 msgid "Show external appointments"
 msgstr "Сыртқы тағайындарды көрсету"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:22
 #. i18n: ectx: attribute (title), widget (QWidget, completionTab)
-#: rc.cpp:762
+#: rc.cpp:765
 msgid "Completion"
 msgstr "Бітіруі"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, started)
-#: rc.cpp:765
+#: rc.cpp:768
 msgid "Started:"
 msgstr "Бастағаны:"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:63
 #. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: rc.cpp:768
+#: rc.cpp:771
 msgid "Finished:"
 msgstr "Аяқталғаны:"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:93
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:771
+#: rc.cpp:774
 msgid "Edit mode:"
 msgstr ""
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:101
 #. i18n: ectx: property (text), item, widget (QComboBox, editmode)
-#: rc.cpp:774
+#: rc.cpp:777
 #, fuzzy
 #| msgid "Calculate"
 msgid "Calculate effort"
@@ -4469,7 +4522,7 @@ msgstr "Есептеу"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:106
 #. i18n: ectx: property (text), item, widget (QComboBox, editmode)
-#: rc.cpp:777
+#: rc.cpp:780
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Per task"
@@ -4477,7 +4530,7 @@ msgstr "Бар тапсырмалары"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:111
 #. i18n: ectx: property (text), item, widget (QComboBox, editmode)
-#: rc.cpp:780
+#: rc.cpp:783
 #, fuzzy
 #| msgid "Per Resource"
 msgid "Per resource"
@@ -4485,19 +4538,19 @@ msgstr "Ресурсына шаққанда"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:136
 #. i18n: ectx: property (text), widget (QPushButton, addEntryBtn)
-#: rc.cpp:783
+#: rc.cpp:786
 msgid "Add Entry"
 msgstr "Жазуды қосу"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:143
 #. i18n: ectx: property (text), widget (QPushButton, removeEntryBtn)
-#: rc.cpp:786
+#: rc.cpp:789
 msgid "Remove Entry"
 msgstr "Жазуды өшіру"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:176
 #. i18n: ectx: attribute (title), widget (QWidget, usedEffortTab)
-#: rc.cpp:789
+#: rc.cpp:792
 #, fuzzy
 #| msgid "Resource"
 msgid "Per Resource"
@@ -4505,15 +4558,18 @@ msgstr "Ресурсы"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:212
 #. i18n: ectx: property (text), widget (QPushButton, prevWeekBtn)
-#: rc.cpp:792
+#: rc.cpp:795
 msgid "Prev"
 msgstr "Алдыңғы"
 
 #. i18n: file: ui/kpttaskprogresspanelbase.ui:222
 #. i18n: ectx: property (text), widget (QPushButton, nextWeekBtn)
-#: rc.cpp:795
+#: rc.cpp:798
 msgid "Next"
 msgstr "Келесі"
+
+#~ msgid "Resource %1 only partially available"
+#~ msgstr "%1 ресурсына қол жеткізуі толық емес"
 
 #, fuzzy
 #~| msgctxt "Interval start time"
