@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-12 06:16+0100\n"
+"POT-Creation-Date: 2009-12-23 07:02+0100\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -101,8 +101,8 @@ msgstr "Жіберу уақыты"
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: ui/kpttaskcostpanel.cpp:49 ui/kpttaskgeneralpanel.cpp:70
 #: ui/kptresourcedialog.cpp:181 ui/kptpertresult.cpp:138
-#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3403 kernel/kptnode.cpp:122
-#: kernel/kptnode.cpp:1447 models/kptschedulemodel.cpp:444
+#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3429 kernel/kptnode.cpp:122
+#: kernel/kptnode.cpp:1466 models/kptschedulemodel.cpp:444
 #: models/kptschedulemodel.cpp:446 models/kptresourcemodel.cpp:187
 #: models/kptresourcemodel.cpp:202 models/kptresourceallocationmodel.cpp:738
 #: models/kpttreecombobox.cpp:123 models/kptnodeitemmodel.cpp:311
@@ -564,46 +564,46 @@ msgstr "Жою"
 msgid "Modify Relation"
 msgstr "Қатынасын өзгерту"
 
-#: ui/kptscheduleeditor.cpp:220
+#: ui/kptscheduleeditor.cpp:229
 msgid "Add Schedule"
 msgstr "Жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:226
+#: ui/kptscheduleeditor.cpp:235
 msgid "Add Sub-schedule"
 msgstr "Бағыныңқы жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:232
+#: ui/kptscheduleeditor.cpp:241
 msgid "Delete Selection"
 msgstr "Таңдағанды өшіру"
 
-#: ui/kptscheduleeditor.cpp:238 models/kptschedulemodel.cpp:725
+#: ui/kptscheduleeditor.cpp:247 models/kptschedulemodel.cpp:725
 msgid "Calculate"
 msgstr "Есептеу"
 
-#: ui/kptscheduleeditor.cpp:244
+#: ui/kptscheduleeditor.cpp:253
 msgid "Baseline"
 msgstr "Негізгі жоспар"
 
-#: ui/kptscheduleeditor.cpp:297 ui/kptscheduleeditor.cpp:324
+#: ui/kptscheduleeditor.cpp:306 ui/kptscheduleeditor.cpp:333
 msgid "Create sub-schedule"
 msgstr "Бағыныңқы жоспарды құру"
 
-#: ui/kptscheduleeditor.cpp:307
+#: ui/kptscheduleeditor.cpp:316
 #, fuzzy, kde-format
 #| msgid "Add Schedule"
 msgid "Add schedule %1"
 msgstr "Жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:575
+#: ui/kptscheduleeditor.cpp:584
 msgid "Result"
 msgstr "Нәтижесі"
 
-#: ui/kptscheduleeditor.cpp:580 models/kptpertcpmmodel.cpp:428
+#: ui/kptscheduleeditor.cpp:589 models/kptpertcpmmodel.cpp:428
 #: models/kptnodeitemmodel.cpp:1790
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
-#: ui/kptscheduleeditor.cpp:585
+#: ui/kptscheduleeditor.cpp:594
 msgid "Scheduling Log"
 msgstr "Жоспарлау журналы"
 
@@ -873,26 +873,32 @@ msgstr "Оптимистік:"
 msgid "Pessimistic"
 msgstr "Пессимистік:"
 
-#: kernel/kptschedule.cpp:1302
+#: kernel/kptschedule.cpp:1323
 msgid "Info"
 msgstr "Мәлімет"
 
-#: kernel/kptschedule.cpp:1303
+#: kernel/kptschedule.cpp:1324
 msgid "Warning"
 msgstr "Ескерту"
 
-#: kernel/kptschedule.cpp:1304 kernel/kptschedule.cpp:1662
-#: kernel/kptschedule.cpp:1667 kernel/kptschedule.cpp:1672
+#: kernel/kptschedule.cpp:1325 kernel/kptschedule.cpp:1694
+#: kernel/kptschedule.cpp:1699 kernel/kptschedule.cpp:1704
 msgid "Error"
 msgstr "Қате"
 
-#: kernel/kptschedule.cpp:1655
+#: kernel/kptschedule.cpp:1684
 #, fuzzy
 #| msgid "Baseline"
 msgid "Baselined"
 msgstr "Негізгі жоспар"
 
-#: kernel/kptschedule.cpp:1658 kernel/kptglobal.cpp:30
+#: kernel/kptschedule.cpp:1687
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling"
+msgstr "Жоспарлау журналы"
+
+#: kernel/kptschedule.cpp:1690 kernel/kptglobal.cpp:30
 #: models/kptschedulemodel.cpp:648
 msgid "Not scheduled"
 msgstr "Жоспарланған жоқ"
@@ -1090,12 +1096,12 @@ msgstr "Кездесуді жоспарлау: аяқтау уақыты жар�
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "%1 ресурсы келесі аралықта қол жеткізбейді: %2 - %3"
 
-#: kernel/kptresource.cpp:2066
+#: kernel/kptresource.cpp:2074
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "Керек көлем жиналмады: Керегі: %1 бары: %2"
 
-#: kernel/kptresource.cpp:2069
+#: kernel/kptresource.cpp:2077
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "%1 ресурсы %2 - %3 аралығында қол жеткізеді"
@@ -1112,8 +1118,8 @@ msgstr "Жұмыс"
 msgid "Account"
 msgstr "Есебі:"
 
-#: kernel/kptproject.cpp:160 kernel/kptproject.cpp:274
-#: kernel/kptproject.cpp:303
+#: kernel/kptproject.cpp:160 kernel/kptproject.cpp:277
+#: kernel/kptproject.cpp:306
 #, fuzzy
 #| msgid "Initials:"
 msgid "Init"
@@ -1124,8 +1130,8 @@ msgstr "Инициалдары:"
 msgid "Schedule project from: %1"
 msgstr "Жобаны келесіден жоспарлау: %1"
 
-#: kernel/kptproject.cpp:166 kernel/kptproject.cpp:280
-#: kernel/kptproject.cpp:312
+#: kernel/kptproject.cpp:166 kernel/kptproject.cpp:283
+#: kernel/kptproject.cpp:315
 #, fuzzy
 #| msgid "Forward"
 msgctxt "Schedule project forward"
@@ -1138,8 +1144,8 @@ msgstr "Ілгері"
 msgid "Calculate finish"
 msgstr "Есептеу"
 
-#: kernel/kptproject.cpp:172 kernel/kptproject.cpp:285
-#: kernel/kptproject.cpp:307
+#: kernel/kptproject.cpp:172 kernel/kptproject.cpp:288
+#: kernel/kptproject.cpp:310
 #, fuzzy
 #| msgid "Backward"
 msgctxt "Schedule project backward"
@@ -1152,90 +1158,90 @@ msgstr "Кейінге қарай"
 msgid "Calculate start"
 msgstr "Есептеу"
 
-#: kernel/kptproject.cpp:176 kernel/kptproject.cpp:288
-#: kernel/kptproject.cpp:315
+#: kernel/kptproject.cpp:176 kernel/kptproject.cpp:291
+#: kernel/kptproject.cpp:318
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Schedule"
 msgstr "Жоспары:"
 
-#: kernel/kptproject.cpp:177 kernel/kptproject.cpp:289
+#: kernel/kptproject.cpp:177 kernel/kptproject.cpp:292
 msgid "Schedule tasks forward"
 msgstr "Жобаларды ілгері жоспарлау"
 
-#: kernel/kptproject.cpp:179 kernel/kptproject.cpp:292
+#: kernel/kptproject.cpp:179 kernel/kptproject.cpp:295
 #: models/kptnodeitemmodel.cpp:639
 #, fuzzy, kde-format
 #| msgid "Schedule:"
 msgid "Scheduled finish: %1"
 msgstr "Жоспары:"
 
-#: kernel/kptproject.cpp:181 kernel/kptproject.cpp:295
+#: kernel/kptproject.cpp:181 kernel/kptproject.cpp:298
 #, kde-format
 msgid "Could not finish project in time: %1"
 msgstr "Жоба кезінде аяқталмайды: %1"
 
-#: kernel/kptproject.cpp:183 kernel/kptproject.cpp:297
+#: kernel/kptproject.cpp:183 kernel/kptproject.cpp:300
 #, kde-format
 msgid "Finished project exactly on time: %1"
 msgstr "Жобаның нақты аяқталған кезі: %1"
 
-#: kernel/kptproject.cpp:185 kernel/kptproject.cpp:299
+#: kernel/kptproject.cpp:185 kernel/kptproject.cpp:302
 #, kde-format
 msgid "Finished project before time: %1"
 msgstr "Келесі уақытына дейін аяқталған жоба: %1"
 
-#: kernel/kptproject.cpp:275
+#: kernel/kptproject.cpp:278
 #, kde-format
 msgid "Schedule project forward from: %1"
 msgstr "Жобаны келесіден кейін жоспарлау: %1"
 
-#: kernel/kptproject.cpp:281 kernel/kptproject.cpp:313
+#: kernel/kptproject.cpp:284 kernel/kptproject.cpp:316
 #, fuzzy
 #| msgid "Latest finish:"
 msgid "Calculate late finish"
 msgstr "Ең соңғы аяқтау кезі:"
 
-#: kernel/kptproject.cpp:286 kernel/kptproject.cpp:308
+#: kernel/kptproject.cpp:289 kernel/kptproject.cpp:311
 #, fuzzy
 #| msgid "Calculate"
 msgid "Calculate early start"
 msgstr "Есептеу"
 
-#: kernel/kptproject.cpp:304
+#: kernel/kptproject.cpp:307
 #, kde-format
 msgid "Schedule project backward from: %1"
 msgstr "Жобаны келесіден алдында жоспарлау: %1"
 
-#: kernel/kptproject.cpp:316
+#: kernel/kptproject.cpp:319
 msgid "Schedule tasks backward"
 msgstr "Жобаларды артқа қарай жоспарлау"
 
-#: kernel/kptproject.cpp:329
+#: kernel/kptproject.cpp:332
 msgid "Failed to finish project within target time"
 msgstr "Көздеген кезде жоба аяқталмайды"
 
-#: kernel/kptproject.cpp:332
+#: kernel/kptproject.cpp:335
 #, kde-format
 msgid "Scheduled start: %1, target time: %2"
 msgstr "Жоспарланған бастау: %1, көздеген кезі %2"
 
-#: kernel/kptproject.cpp:335
+#: kernel/kptproject.cpp:338
 #, kde-format
 msgid "Must start project early in order to finish in time: %1"
 msgstr "Келесіде аяқатау үшін жобаны ертерек бастау керек: %1"
 
-#: kernel/kptproject.cpp:337
+#: kernel/kptproject.cpp:340
 #, kde-format
 msgid "Start project exactly on time: %1"
 msgstr "Жобаны бастайтын нақты уақыт: %1"
 
-#: kernel/kptproject.cpp:339
+#: kernel/kptproject.cpp:342
 #, kde-format
 msgid "Can start project later than time: %1"
 msgstr "Жобаны келесі уақытынан кейін бастауға болады : %1"
 
-#: kernel/kptproject.cpp:2100
+#: kernel/kptproject.cpp:2119
 msgid "Plan"
 msgstr "Жоспар"
 
@@ -1342,16 +1348,16 @@ msgstr "%1: Бастаудың ертесінен кейін жоспарлау�
 msgid "No resource has been allocated"
 msgstr "Қатынасын өзгерту"
 
-#: kernel/kpttask.cpp:2260
+#: kernel/kpttask.cpp:2265
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "Жұмыстың ұзақтығын жоспарлауы болмады. Керегі: %1 бары: %2"
 
-#: kernel/kpttask.cpp:3406
+#: kernel/kpttask.cpp:3432
 msgid "Send"
 msgstr "Жіберу"
 
-#: kernel/kpttask.cpp:3409
+#: kernel/kpttask.cpp:3435
 msgid "Receive"
 msgstr "Қабылдау"
 
@@ -1390,13 +1396,13 @@ msgstr "Мезгілдігі:"
 msgid "Summary"
 msgstr "Тұжырымы"
 
-#: kernel/kptnode.cpp:655
+#: kernel/kptnode.cpp:674
 #, fuzzy
 #| msgid "As Soon as Possible"
 msgid "As Soon As Possible"
 msgstr "Барынша тез"
 
-#: kernel/kptnode.cpp:656
+#: kernel/kptnode.cpp:675
 #, fuzzy
 #| msgid "As Late as Possible"
 msgid "As Late As Possible"
@@ -1404,23 +1410,23 @@ msgstr "Барынша кеш"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:192
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:657 rc.cpp:386
+#: kernel/kptnode.cpp:676 rc.cpp:386
 msgid "Must Start On"
 msgstr "Бастайтын кезі"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:197
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:658 rc.cpp:389
+#: kernel/kptnode.cpp:677 rc.cpp:389
 msgid "Must Finish On"
 msgstr "Аяқтайтын кезі"
 
-#: kernel/kptnode.cpp:659
+#: kernel/kptnode.cpp:678
 #, fuzzy
 #| msgid "Start Not Earlier Than"
 msgid "Start Not Earlier"
 msgstr "Бастау мерзімінің басы"
 
-#: kernel/kptnode.cpp:660
+#: kernel/kptnode.cpp:679
 #, fuzzy
 #| msgid "Finish Not Later Than"
 msgid "Finish Not Later"
@@ -1428,7 +1434,7 @@ msgstr "Аяқтау мерзімінің соңы"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:212
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:661 rc.cpp:398
+#: kernel/kptnode.cpp:680 rc.cpp:398
 msgid "Fixed Interval"
 msgstr "Белгілі уақыт аралығы"
 
@@ -1436,25 +1442,25 @@ msgstr "Белгілі уақыт аралығы"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1415 rc.cpp:320 rc.cpp:404
+#: kernel/kptnode.cpp:1434 rc.cpp:320 rc.cpp:404
 msgid "Effort"
 msgstr "Жұмыс көлемі"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1416 models/kptnodeitemmodel.cpp:1753 rc.cpp:407
+#: kernel/kptnode.cpp:1435 models/kptnodeitemmodel.cpp:1753 rc.cpp:407
 msgid "Duration"
 msgstr "Жұмсалған уақыт"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1448 rc.cpp:434
+#: kernel/kptnode.cpp:1467 rc.cpp:434
 msgid "Low"
 msgstr "Төмен"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1449 rc.cpp:437
+#: kernel/kptnode.cpp:1468 rc.cpp:437
 msgid "High"
 msgstr "Жоғары"
 
@@ -1871,7 +1877,7 @@ msgstr ""
 #| "order to fullfill a timing constraint"
 msgid ""
 "The duration by which the duration of a task or path has to be reduced in "
-"order to fulfil a timing constraint"
+"order to fulfill a timing constraint"
 msgstr ""
 "Бекітілген уақытта үлгеру үшін тапсырма не тапсырма тізбегінің ұзақтығын "
 "қысқартуға қажет уақыт аралығы"
@@ -1884,7 +1890,7 @@ msgstr ""
 msgctxt "@info:whatsthis"
 msgid ""
 "Negative float is the duration by which the duration of a task or path has "
-"to be reduced in order to fullfil a timing constraint."
+"to be reduced in order to fulfill a timing constraint."
 msgstr ""
 "Теріс қосымша уақыт - бекітілген уақытта үлгеру үшін тапсырма не тапсырма "
 "тізбегінің ұзақтығын қысқартуға қажет уақыт аралығы."
@@ -2359,6 +2365,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "Ресурсына шаққанда"
 
 #: models/kptresourcemodel.cpp:1094
+#: models/kptresourceappointmentsmodel.cpp:1109
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
 msgid "Add resource from address book"
@@ -2707,13 +2714,6 @@ msgstr "Жалпы арнаған уақыты"
 #, kde-format
 msgid "Bookings on %1"
 msgstr "%1 дегенге арнағаны"
-
-#: models/kptresourceappointmentsmodel.cpp:1109
-#, fuzzy, kde-format
-#| msgid "Choose resource from addressbook"
-msgid "Add resource from addressbook"
-msgid_plural "Add %1 resources from addressbook"
-msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
 
 #: models/kptresourceappointmentsmodel.cpp:1265
 #, fuzzy
@@ -3324,35 +3324,35 @@ msgstr "Қатынасын өзгерту"
 msgid "Modify estimate"
 msgstr "Апта күннің күйін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2503 models/kptnodeitemmodel.cpp:3873
+#: models/kptnodeitemmodel.cpp:2503 models/kptnodeitemmodel.cpp:3874
 msgid "Modify Running Account"
 msgstr "Жүріп жатқан есебін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2523 models/kptnodeitemmodel.cpp:3893
+#: models/kptnodeitemmodel.cpp:2523 models/kptnodeitemmodel.cpp:3894
 #, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify Startup Account"
 msgstr "Стандартты жұмыс уақытын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2538 models/kptnodeitemmodel.cpp:3908
+#: models/kptnodeitemmodel.cpp:2538 models/kptnodeitemmodel.cpp:3909
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Startup Cost"
 msgstr "Тапсырманың бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2556 models/kptnodeitemmodel.cpp:3926
+#: models/kptnodeitemmodel.cpp:2556 models/kptnodeitemmodel.cpp:3927
 #, fuzzy
 #| msgid "Modify Documents"
 msgid "Modify Shutdown Account"
 msgstr "Құжаттарды өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2571 models/kptnodeitemmodel.cpp:3941
+#: models/kptnodeitemmodel.cpp:2571 models/kptnodeitemmodel.cpp:3942
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Shutdown Cost"
 msgstr "Тапсырманың бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2991 models/kptnodeitemmodel.cpp:4198
+#: models/kptnodeitemmodel.cpp:2991 models/kptnodeitemmodel.cpp:4199
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Move tasks"
@@ -4090,7 +4090,9 @@ msgstr "Есеп негізі:"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:303
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel3_2_3)
-#: rc.cpp:410
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:331
+#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
+#: rc.cpp:410 rc.cpp:422
 #, fuzzy
 #| msgid ""
 #| "Risk controles the PERT distribution used when calculating the actual "
@@ -4135,20 +4137,6 @@ msgstr ""
 #| msgid "Risk:"
 msgid "Risk:"
 msgstr "Тәуекелі:"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:331
-#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
-#: rc.cpp:422
-#, fuzzy
-#| msgid ""
-#| "Risk controles the PERT distribution used when calculating the actual "
-#| "estimate for this task."
-msgid ""
-"Risk controles the PERT distribution used when calculating the actual "
-"estimate for this task."
-msgstr ""
-"Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және басқару "
-"жүйесі) негізінде тәуекел бақылауын қолдану."
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:337
 #. i18n: ectx: property (whatsThis), widget (KComboBox, risk)
@@ -4629,6 +4617,23 @@ msgstr "Алдыңғы"
 #: rc.cpp:798
 msgid "Next"
 msgstr "Келесі"
+
+#, fuzzy
+#~| msgid "Choose resource from addressbook"
+#~ msgid "Add resource from addressbook"
+#~ msgid_plural "Add %1 resources from addressbook"
+#~ msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
+
+#, fuzzy
+#~| msgid ""
+#~| "Risk controles the PERT distribution used when calculating the actual "
+#~| "estimate for this task."
+#~ msgid ""
+#~ "Risk controles the PERT distribution used when calculating the actual "
+#~ "estimate for this task."
+#~ msgstr ""
+#~ "Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және басқару "
+#~ "жүйесі) негізінде тәуекел бақылауын қолдану."
 
 #~ msgid "Resource %1 only partially available"
 #~ msgstr "%1 ресурсына қол жеткізуі толық емес"
