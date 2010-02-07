@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-06 01:57+0100\n"
+"POT-Creation-Date: 2010-02-07 07:49+0100\n"
 "PO-Revision-Date: 2008-12-24 10:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -3174,7 +3174,7 @@ msgstr "&Ойып алу"
 
 #. i18n: file: plugins/tools/tool_star/wdg_tool_star.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolStar)
-#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:121
+#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:134
 msgid "Star"
 msgstr "Жұлдыз"
 
@@ -3443,8 +3443,8 @@ msgstr "Қалыпы:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
+#: image/recorder/kis_recorded_shape_paint_action.cpp:54
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "Эллипс"
 
@@ -3465,7 +3465,8 @@ msgstr "Эллипс"
 #. i18n: file: plugins/filters/blur/wdgblur.ui:130
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #: rc.cpp:959 rc.cpp:1245 rc.cpp:1569 rc.cpp:1650
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:70
+#: image/recorder/kis_recorded_shape_paint_action.cpp:56
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:80
 msgid "Rectangle"
 msgstr "Төртбұрыш"
 
@@ -3525,6 +3526,7 @@ msgstr "Кездейсоқ шегіну"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:983 rc.cpp:1269
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Rotation"
 msgstr "Бұрылыс"
 
@@ -4303,7 +4305,7 @@ msgstr "Инкременттік"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:62
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Pressure"
 msgstr "Басымы"
 
@@ -4669,7 +4671,7 @@ msgstr "Есептеуішін пайдалану"
 
 #. i18n: file: plugins/paintops/dynadraw/wdgdynaoptions.ui:271
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
-#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:78
+#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:77
 msgid "Polygon"
 msgstr "Көпбұрыш"
 
@@ -6750,7 +6752,7 @@ msgstr "Көрініс:"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2657 image/kis_image.cc:568
+#: rc.cpp:2657 image/kis_image.cc:566
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -7117,7 +7119,7 @@ msgstr "Таңдаудан &айну"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2910 image/kis_image.cc:516
+#: rc.cpp:2910 image/kis_image.cc:514
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -9158,7 +9160,7 @@ msgstr "Қабатты қисайту"
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескіннің жасырын қабаттары жоғалтылмақ."
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:765
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
@@ -9308,8 +9310,8 @@ msgstr "Көрінетін"
 msgid "Locked"
 msgstr "Бұғатталған"
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:146
-#: image/kis_paint_layer.cc:153
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: image/kis_paint_layer.cc:146
 #, fuzzy
 #| msgid "Locked"
 msgid "Alpha Locked"
@@ -9632,12 +9634,12 @@ msgstr ""
 msgid "Matthew Woehlke"
 msgstr ""
 
-#: image/kis_adjustment_layer.cc:88
+#: image/kis_adjustment_layer.cc:124
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 msgid "Filter"
 msgstr "Сүзгі"
 
-#: image/kis_transformation_mask.cpp:110
+#: image/kis_transformation_mask.cpp:111
 msgid "Transformation Mask Settings"
 msgstr "Түрлендіру қалқасының параметрлері"
 
@@ -9676,7 +9678,7 @@ msgstr "Lanczos3"
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:394
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
 msgid "Resize Image"
 msgstr "Кескін өлшемін өзгерту"
 
@@ -9701,7 +9703,7 @@ msgstr "Қасиет өзгерістері"
 msgid "Raise"
 msgstr "Жоғарлату"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:603
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
 msgid "Convert Image Type"
 msgstr "Кескіннің түрін ауыстыру"
 
@@ -9788,34 +9790,34 @@ msgstr "әдетті"
 msgid "Rotate Node"
 msgstr "Түйінді бұру"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:283
 msgid "background"
 msgstr "аясы"
 
-#: image/kis_image.cc:288
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr "%1 қабаты"
 
-#: image/kis_image.cc:392
+#: image/kis_image.cc:390
 msgid "Crop Image"
 msgstr "Кескінді ойып алу"
 
-#: image/kis_image.cc:426
+#: image/kis_image.cc:424
 #, fuzzy
 #| msgid "Size Curve"
 msgid "Size Canvas"
 msgstr "Қисықтың өлшемі"
 
-#: image/kis_image.cc:475
+#: image/kis_image.cc:473
 msgid "Scale Image"
 msgstr "Кескінді масштабтау"
 
-#: image/kis_image.cc:801
+#: image/kis_image.cc:798
 msgid "Merge with Layer Below"
 msgstr "Төмендегі қабатымен біріктіру"
 
-#: image/kis_image.cc:841
+#: image/kis_image.cc:835
 #, fuzzy
 #| msgid "Flatten Image"
 msgid "Flatten Layer"
@@ -9825,23 +9827,16 @@ msgstr "Кескінді біріктіру"
 msgid "Last used"
 msgstr "Соңғы пайдаланған"
 
+#: image/recorder/kis_recorded_path_paint_action.cpp:62
+#: plugins/tools/defaulttools/kis_tool_path.cc:124
+msgid "Path"
+msgstr "Сызық"
+
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
 msgstr "Макросты орындау"
 
-#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
-#, fuzzy
-#| msgid "Polyline"
-msgid "Poly line"
-msgstr "Сынық сызық"
-
-#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
-#, fuzzy
-#| msgid "Bezier Curve"
-msgid "Bezier curve"
-msgstr "Безье қисықтары"
-
-#: image/kis_clone_layer.cpp:199
+#: image/kis_clone_layer.cpp:192
 msgid "Copy From"
 msgstr "Келесіден көшірмелеу"
 
@@ -9889,65 +9884,49 @@ msgstr "Кескіннің бір аумағын ойып алу"
 msgid "Dyna"
 msgstr ""
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:223
-#: plugins/tools/defaulttools/kis_tool_brush.cc:142
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr "Тегістеу"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:236
-#: plugins/tools/defaulttools/kis_tool_brush.cc:165
-msgid "Assistant:"
-msgstr "Көмекші:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:238
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
-msgid "Magnetism:"
-msgstr "Магнетизм:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:248
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:211
 #, fuzzy
 #| msgid "Pixel width"
 msgid "Initial width:"
 msgstr "Пикселдің ені"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:249
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:212
 #, fuzzy
 #| msgid "&Mask"
 msgid "Mass:"
 msgstr "Қ&алқа"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:250
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:213
 #, fuzzy
 #| msgid "Dialog"
 msgid "Drag:"
 msgstr "Диалог"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:251
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:214
 #, fuzzy
 #| msgid "Angle"
 msgid "X angle:"
 msgstr "Бұрыш"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:252
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:215
 #, fuzzy
 #| msgid "Angle"
 msgid "Y angle:"
 msgstr "Бұрыш"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:253
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:216
 #, fuzzy
 #| msgid "Distance range:"
 msgid "Width range:"
 msgstr "Қашықтық ауқымы:"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:255
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:218
 #, fuzzy
 #| msgid "Triangle"
 msgid "Fixed angle:"
 msgstr "Иректі"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.h:170
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:164
 #, fuzzy
 #| msgid "Paint with brushes"
 msgid "Paint with brushes using dynamic movements"
@@ -9991,13 +9970,26 @@ msgstr "Кескіннен не назардағы қабаттан түсті �
 msgid "ms"
 msgstr ""
 
+#: plugins/tools/defaulttools/kis_tool_brush.cc:142
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr "Тегістеу"
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:147
 #, fuzzy
 #| msgid "Rate: "
 msgid "Rate:"
 msgstr "Дәрежесі: "
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:155
+#: plugins/tools/defaulttools/kis_tool_brush.cc:165
+msgid "Assistant:"
+msgstr "Көмекші:"
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+msgid "Magnetism:"
+msgstr "Магнетизм:"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:156
 msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Тузу"
@@ -10071,10 +10063,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
 msgstr "Эллипсті салу"
-
-#: plugins/tools/defaulttools/kis_tool_path.cc:72
-msgid "Path"
-msgstr "Сызық"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.h:124
 msgid "Draw a gradient."
@@ -10175,7 +10163,7 @@ msgstr "Перспективасын түрлендіру"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Сынық сызықты аяқтау үшін Shift+тышқанды түртіңіз."
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr "Сынық сызық"
 
@@ -10470,11 +10458,11 @@ msgstr "Уақыт"
 msgid "Drawing angle"
 msgstr "Бұрышты салу"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
 msgid "X-Tilt"
 msgstr "X-қисаюы"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Y-Tilt"
 msgstr "Y-қисаюы"
 
@@ -11664,25 +11652,25 @@ msgstr ""
 msgid "Success"
 msgstr "Қайдан"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:60
+#: plugins/extensions/bigbrother/bigbrother.cc:81
 msgid "Open and play..."
 msgstr "Ашып орындау..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:64
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 #, fuzzy
 #| msgid "Open and play..."
 msgid "Open and edit..."
 msgstr "Ашып орындау..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:68
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Save all actions"
 msgstr "Барлық амалдарды сақтау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:72
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Start recording macro"
 msgstr "Макросты жазуды бастау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:76
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Stop recording actions"
 msgstr "Амалдарды жазуды тоқтату"
 
@@ -12222,6 +12210,16 @@ msgstr "Жай"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr "Көмекші өлшегіш құралы"
+
+#, fuzzy
+#~| msgid "Polyline"
+#~ msgid "Poly line"
+#~ msgstr "Сынық сызық"
+
+#, fuzzy
+#~| msgid "Bezier Curve"
+#~ msgid "Bezier curve"
+#~ msgstr "Безье қисықтары"
 
 #~ msgid "Freehand tool"
 #~ msgstr "Қолмен салу"
