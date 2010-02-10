@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-09 06:47+0100\n"
+"POT-Creation-Date: 2010-02-10 07:43+0100\n"
 "PO-Revision-Date: 2008-12-24 10:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -4506,13 +4506,13 @@ msgstr "Қисайған режім"
 
 #. i18n: file: plugins/paintops/deform/wdgdeformoptions.ui:42
 #. i18n: ectx: property (text), widget (QRadioButton, growBtn)
-#: rc.cpp:1473 ui/kis_selection_manager.cc:770
+#: rc.cpp:1473 ui/kis_selection_manager.cc:760
 msgid "Grow"
 msgstr "Өсіру"
 
 #. i18n: file: plugins/paintops/deform/wdgdeformoptions.ui:49
 #. i18n: ectx: property (text), widget (QRadioButton, shrinkBtn)
-#: rc.cpp:1476 ui/kis_selection_manager.cc:882
+#: rc.cpp:1476 ui/kis_selection_manager.cc:872
 msgid "Shrink"
 msgstr "Жиыру"
 
@@ -6766,7 +6766,7 @@ msgstr "Көрініс:"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2663 image/kis_image.cc:566
+#: rc.cpp:2663 image/kis_image.cc:562
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -7133,7 +7133,7 @@ msgstr "Таңдаудан &айну"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2916 image/kis_image.cc:514
+#: rc.cpp:2916 image/kis_image.cc:510
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -8698,7 +8698,7 @@ msgstr "YCbCr (16-бит бүтін/арна)"
 msgid "YCbCr (8-bit integer/channel)"
 msgstr "YCbCr (8-бит бүтін/арна)"
 
-#: ui/tool/kis_tool_select_base.cpp:45 ui/kis_mask_manager.cc:248
+#: ui/tool/kis_tool_select_base.cpp:45
 msgid "Selection"
 msgstr "Таңдау"
 
@@ -8869,49 +8869,61 @@ msgstr "&Көмекші өлшегіші көрсетілсін"
 msgid "Hide Painting Assistants"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:66
+#: ui/kis_mask_manager.cc:67
 msgid "Mask To Selection"
 msgstr "Қалқа -> Таңдау"
 
-#: ui/kis_mask_manager.cc:70
+#: ui/kis_mask_manager.cc:71
 #, fuzzy
 #| msgid "Create Layer from Mask..."
 msgid "Create Layer from Mask"
 msgstr "Қалқа бойынша қабатты құру..."
 
-#: ui/kis_mask_manager.cc:165
+#: ui/kis_mask_manager.cc:168
 msgid "Transparency Mask"
 msgstr "Мөлдірлік қалқасы"
 
-#: ui/kis_mask_manager.cc:190
+#: ui/kis_mask_manager.cc:193
 msgid "New filter mask"
 msgstr "Жаңа сүзгі қалқасы"
 
-#: ui/kis_mask_manager.cc:194
+#: ui/kis_mask_manager.cc:197
 msgid "New Filter Mask"
 msgstr "Жаңа сүзгі қалқасы"
 
-#: ui/kis_mask_manager.cc:263
+#: ui/kis_mask_manager.cc:255
+#, fuzzy
+#| msgid "Selection"
+msgid "Selection "
+msgstr "Таңдау"
+
+#: ui/kis_mask_manager.cc:270
 #, fuzzy
 #| msgid "Mask To Selection"
 msgid "Mask to Selection"
 msgstr "Қалқа -> Таңдау"
 
-#: ui/kis_mask_manager.cc:303
+#: ui/kis_mask_manager.cc:310
 #, fuzzy
 #| msgid "Create Layer from Mask..."
 msgid "Layer from Mask"
 msgstr "Қалқа бойынша қабатты құру..."
 
-#: ui/kis_mask_manager.cc:345
+#: ui/kis_mask_manager.cc:334
+#, fuzzy
+#| msgid "Duplicate of '%1'"
+msgid "Duplication of "
+msgstr "'%1' көшірмесі"
+
+#: ui/kis_mask_manager.cc:363
 msgid "Mirror Mask X"
 msgstr "Қалқаны X"
 
-#: ui/kis_mask_manager.cc:371 ui/kis_layer_manager.cc:681
+#: ui/kis_mask_manager.cc:389 ui/kis_layer_manager.cc:681
 msgid "Mirror Layer Y"
 msgstr "Қабаттың Y бойлығын терістеу"
 
-#: ui/kis_mask_manager.cc:439
+#: ui/kis_mask_manager.cc:457
 msgid "Effect Mask Properties"
 msgstr "Эффект қалқаның қасиеттері"
 
@@ -9174,7 +9186,7 @@ msgstr "Қабатты қисайту"
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескіннің жасырын қабаттары жоғалтылмақ."
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:764
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
@@ -9316,15 +9328,20 @@ msgstr "&Вебтегідей"
 msgid "As on &Monitor"
 msgstr "&Монитордағыдай"
 
-#: ui/kis_node_model.cpp:295 image/kis_base_node.cpp:120
+#: ui/kis_node_model.cpp:296 image/kis_base_node.cpp:120
 msgid "Visible"
 msgstr "Көрінетін"
 
-#: ui/kis_node_model.cpp:296 image/kis_base_node.cpp:121
+#: ui/kis_node_model.cpp:297 image/kis_base_node.cpp:121
 msgid "Locked"
 msgstr "Бұғатталған"
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: ui/kis_node_model.cpp:298 image/kis_selection_mask.cpp:106
+#: plugins/paintops/libpaintop/kis_paintop_options_widget.cpp:87
+msgid "Active"
+msgstr "Белсенді"
+
+#: ui/kis_node_model.cpp:305 image/kis_paint_layer.cc:139
 #: image/kis_paint_layer.cc:146
 #, fuzzy
 #| msgid "Locked"
@@ -9491,15 +9508,15 @@ msgstr "Таңдағанды жаңа қабатқа көшірмелеу"
 msgid "Cut Selection to New Layer"
 msgstr "Таңдағанды жаңа қабатқа қиып алу"
 
-#: ui/kis_selection_manager.cc:174 ui/kis_selection_manager.cc:657
+#: ui/kis_selection_manager.cc:174 ui/kis_selection_manager.cc:652
 msgid "Fill with Foreground Color"
 msgstr "Нысан түсімен толтыру"
 
-#: ui/kis_selection_manager.cc:179 ui/kis_selection_manager.cc:662
+#: ui/kis_selection_manager.cc:179 ui/kis_selection_manager.cc:657
 msgid "Fill with Background Color"
 msgstr "Ая түсімен толтыру"
 
-#: ui/kis_selection_manager.cc:184 ui/kis_selection_manager.cc:667
+#: ui/kis_selection_manager.cc:184 ui/kis_selection_manager.cc:662
 msgid "Fill with Pattern"
 msgstr "Өрнекпен толтыру"
 
@@ -9527,19 +9544,19 @@ msgstr "(орналастырған)"
 msgid "Select All"
 msgstr "Барлығын таңдау"
 
-#: ui/kis_selection_manager.cc:599
+#: ui/kis_selection_manager.cc:594
 msgid "Clear"
 msgstr "Тазалау"
 
-#: ui/kis_selection_manager.cc:700 plugins/filters/example/example.h:44
+#: ui/kis_selection_manager.cc:690 plugins/filters/example/example.h:44
 msgid "Invert"
 msgstr "Терістеу"
 
-#: ui/kis_selection_manager.cc:1231
+#: ui/kis_selection_manager.cc:1221
 msgid "Border"
 msgstr "Шек"
 
-#: ui/kis_selection_manager.cc:1449
+#: ui/kis_selection_manager.cc:1439
 #: plugins/extensions/modify_selection/modify_selection.cc:78
 msgid "Feather..."
 msgstr "Шетін бәсеңдету..."
@@ -9692,7 +9709,7 @@ msgstr "Lanczos3"
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:390
 msgid "Resize Image"
 msgstr "Кескін өлшемін өзгерту"
 
@@ -9717,7 +9734,7 @@ msgstr "Қасиет өзгерістері"
 msgid "Raise"
 msgstr "Жоғарлату"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:597
 msgid "Convert Image Type"
 msgstr "Кескіннің түрін ауыстыру"
 
@@ -9813,17 +9830,17 @@ msgstr "аясы"
 msgid "Layer %1"
 msgstr "%1 қабаты"
 
-#: image/kis_image.cc:390
+#: image/kis_image.cc:388
 msgid "Crop Image"
 msgstr "Кескінді ойып алу"
 
-#: image/kis_image.cc:424
+#: image/kis_image.cc:420
 #, fuzzy
 #| msgid "Size Curve"
 msgid "Size Canvas"
 msgstr "Қисықтың өлшемі"
 
-#: image/kis_image.cc:473
+#: image/kis_image.cc:469
 msgid "Scale Image"
 msgstr "Кескінді масштабтау"
 
@@ -9845,6 +9862,11 @@ msgstr "Соңғы пайдаланған"
 #: plugins/tools/defaulttools/kis_tool_path.cc:124
 msgid "Path"
 msgstr "Сызық"
+
+#: image/recorder/kis_recorded_fill_paint_action.cpp:42
+#: plugins/tools/defaulttools/kis_tool_fill.cc:130
+msgid "Fill"
+msgstr "Толтыру"
 
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
@@ -10032,24 +10054,20 @@ msgstr "Белсенді қабат жоқтығынан түсті таңдау
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr "Белсенді қабат жасырын болғандықтан түсті таңдауға болмайды."
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:80
-#: plugins/tools/defaulttools/kis_tool_fill.cc:133
+#: plugins/tools/defaulttools/kis_tool_fill.cc:99
+#: plugins/tools/defaulttools/kis_tool_fill.cc:152
 msgid "Flood Fill"
 msgstr "Құйып толтыру"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:111
-msgid "Fill"
-msgstr "Толтыру"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:193
+#: plugins/tools/defaulttools/kis_tool_fill.cc:212
 msgid "Threshold: "
 msgstr "Табалдырығы: "
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:201
+#: plugins/tools/defaulttools/kis_tool_fill.cc:220
 msgid "Use pattern"
 msgstr "Өрнекті пайдалану"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:202
+#: plugins/tools/defaulttools/kis_tool_fill.cc:221
 msgid ""
 "When checked do not use the foreground color, but the gradient selected to "
 "fill with"
@@ -10057,16 +10075,16 @@ msgstr ""
 "Белгісі қойылса, бояу үшін таңдалған түстің орнына таңдалған градиент "
 "пайдаланады"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:206
+#: plugins/tools/defaulttools/kis_tool_fill.cc:225
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:137
 msgid "Limit to current layer"
 msgstr "Назардағы қабатпен шектелу"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:210
+#: plugins/tools/defaulttools/kis_tool_fill.cc:229
 msgid "Fill entire selection"
 msgstr "Таңдағанды толық толтыру"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:211
+#: plugins/tools/defaulttools/kis_tool_fill.cc:230
 msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
@@ -10551,10 +10569,6 @@ msgstr "Дайын қылқаламдар"
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:73
 msgid "Text Brush"
 msgstr "Мәтін қылқаламы"
-
-#: plugins/paintops/libpaintop/kis_paintop_options_widget.cpp:87
-msgid "Active"
-msgstr "Белсенді"
 
 #: plugins/paintops/libpaintop/kis_color_option.cpp:35
 #, fuzzy
