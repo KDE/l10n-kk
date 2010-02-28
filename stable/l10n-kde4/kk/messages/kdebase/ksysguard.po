@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-16 05:59+0100\n"
+"POT-Creation-Date: 2010-02-26 20:27+0100\n"
 "PO-Revision-Date: 2009-01-12 10:20+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -20,84 +20,523 @@ msgstr ""
 "\n"
 "\n"
 
-#: WorkSheet.cc:88
-#, kde-format
-msgid "Cannot open the file %1."
-msgstr "Файл %1 ашылмады."
+#: SensorDisplayLib/FancyPlotter.cc:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
+msgstr "99999 XXXX"
 
-#: WorkSheet.cc:96
-#, kde-format
-msgid "The file %1 does not contain valid XML."
-msgstr "%1 деген дұрыс XML файлы емес."
+#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/DancingBars.cc:96
+msgid "OK"
+msgstr "ОК"
 
-#: WorkSheet.cc:103
+#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/FancyPlotter.cc:515
+#: SensorDisplayLib/FancyPlotter.cc:585 SensorDisplayLib/DancingBars.cc:96
+msgid "Error"
+msgstr "Қате"
+
+#: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
+#: SensorDisplayLib/FancyPlotter.cc:637
 #, kde-format
-msgid ""
-"The file %1 does not contain a valid worksheet definition, which must have a "
-"document type 'KSysGuardWorkSheet'."
+msgctxt "units"
+msgid "%1%"
 msgstr ""
-"%1 файлында 'KSysGuardWorkSheet' деген құжаттың түріне жататын көрсету "
-"өрісінің дұрыс жазуы жоқ."
 
-#: WorkSheet.cc:127
+#: SensorDisplayLib/FancyPlotter.cc:518
 #, kde-format
-msgid "The file %1 has an invalid worksheet size."
-msgstr "%1 файлындағы көрсету өрісінің өлшемі дұрыс емес."
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr "<p><b>%1:</b><br>"
 
-#: WorkSheet.cc:228
+#: SensorDisplayLib/FancyPlotter.cc:582
+#, fuzzy, kde-format
+#| msgctxt "%1 and %2 are sensor's last and maximum value"
+#| msgid "%1 of %2"
+msgid "%1 of %2%1"
+msgstr "%1 / %2"
+
+#: SensorDisplayLib/FancyPlotter.cc:610
 #, kde-format
-msgid "Cannot save file %1"
-msgstr "%1 файлы сақталмады"
+msgctxt "units"
+msgid "%1 TiB"
+msgstr ""
 
-#: WorkSheet.cc:274
-msgid "The clipboard does not contain a valid display description."
-msgstr "Алмасу буферінде жарамды дисплей сипаттамасы жоқ."
+#: SensorDisplayLib/FancyPlotter.cc:613
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr ""
 
-#: WorkSheet.cc:372
-msgid "Select Display Type"
-msgstr "Дисплей түрін таңдау"
+#: SensorDisplayLib/FancyPlotter.cc:616
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr ""
 
-#: WorkSheet.cc:373
-msgid "&Line graph"
-msgstr "&Сызықты график"
+#: SensorDisplayLib/FancyPlotter.cc:619
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr ""
 
-#: WorkSheet.cc:374
-msgid "&Digital display"
-msgstr "Ц&ифрлық дисплей"
+#: SensorDisplayLib/FancyPlotter.cc:624
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr ""
 
-#: WorkSheet.cc:375
-msgid "&Bar graph"
-msgstr "&Жолақты диаграмма"
+#: SensorDisplayLib/FancyPlotter.cc:627
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr ""
 
-#: WorkSheet.cc:376
-msgid "Log to a &file"
-msgstr "Ж&урналды файлға жазу"
+#: SensorDisplayLib/FancyPlotter.cc:630
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr ""
 
-#: WorkSheet.cc:525
+#: SensorDisplayLib/FancyPlotter.cc:633
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cc:639
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%"
+
+#: SensorDisplayLib/LogFile.cc:92
+msgid "File logging settings"
+msgstr "Журнал файлын баптаулары"
+
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cc:98 rc.cpp:125
+msgid "Foreground color:"
+msgstr "Бояу түсі:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/LogFile.cc:100 SensorDisplayLib/DancingBarsSettings.cc:176
+#: rc.cpp:86 rc.cpp:101 rc.cpp:113 rc.cpp:128
+msgid "Background color:"
+msgstr "Ая түсі:"
+
+#: SensorDisplayLib/SensorModel.cc:166
+msgid "Host"
+msgstr "Хост"
+
+#: SensorDisplayLib/SensorModel.cc:169
+msgid "Sensor"
+msgstr "Сенсор"
+
+#: SensorDisplayLib/SensorModel.cc:172
+msgid "Unit"
+msgstr "Өлшем бірлігі"
+
+#: SensorDisplayLib/SensorModel.cc:175
+msgid "Status"
+msgstr "Күй-жай"
+
+#: SensorDisplayLib/SensorModel.cc:178
+msgid "Label"
+msgstr "Жарлық"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:51
 #, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove this display?"
+#| msgid "Signal Plotter Settings"
+msgid "Plotter Settings"
+msgstr "Графикті баптау"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:65
+msgid "General"
+msgstr "Жалпы"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:70
+msgid "Title:"
+msgstr "Атауы:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/FancyPlotterSettings.cc:74
+#: SensorDisplayLib/DancingBarsSettings.cc:63 rc.cpp:53
+msgid "Enter the title of the display here."
+msgstr "Мұнда дисплейдің атауын келтіріңіз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:86
+msgid "Scales"
+msgstr "Масштабтары"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:91
+#, fuzzy
+#| msgid "Vertical Scale"
+msgid "Vertical scale"
+msgstr "Тік масштабы"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:97
+msgid "Specify graph range:"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:98
+msgid ""
+"Check this box if you want the display range to adapt dynamically to the "
+"currently displayed values; if you do not check this, you have to specify "
+"the range you want in the fields below."
+msgstr ""
+"Бұл белгісі қойылса, дисплей аумағы көрсетілетін мәндерге бейімделіп тұрады. "
+"Қойылмаса, төменде келтірілген аумағында қала береді."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:102
+#: SensorDisplayLib/DancingBarsSettings.cc:73
+msgid "Minimum value:"
+msgstr "Төменгі шегі:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:108
+#, fuzzy
+#| msgid "Enter the title of the display here."
+msgid "Enter the minimum value for the display here."
+msgstr "Мұнда дисплейдің атауын келтіріңіз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:113
+#: SensorDisplayLib/DancingBarsSettings.cc:85
+msgid "Maximum value:"
+msgstr "Жоғарғы шегі:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:119
+msgid ""
+"Enter the soft maximum value for the display here. The upper range will not "
+"be reduced below this value, but will still go above this number for values "
+"above this value."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:126
+#, fuzzy
+#| msgid "Horizontal Scale"
+msgid "Horizontal scale"
+msgstr "Көлденең масштабы"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:133
+#, fuzzy
+#| msgid "pixels per time period"
+msgid "Pixels per time period:"
+msgstr "пиксел/уақыт аралығы"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:140
+msgid "Grid"
+msgstr "Тор"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:145
+msgid "Lines"
+msgstr "Сызықтар"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:151
+msgid "Vertical lines"
+msgstr "Тік сызықтар"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:152
+msgid "Check this to activate the vertical lines if display is large enough."
+msgstr ""
+"Дисплейдің үлкендігі жеткілікті болса, тік сызықтарды көрсету үшін осы "
+"белгіні қойыңыз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:155
+msgid "Distance:"
+msgstr "Аралығы:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:161
+msgid "Enter the distance between two vertical lines here."
+msgstr "Екі тік сызықтардың аралығын келтіріңіз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:165
+msgid "Vertical lines scroll"
+msgstr "Тік сызықтарды жүгірту"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:168
+msgid "Horizontal lines"
+msgstr "Жатық сызықтар"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:169
+msgid "Check this to enable horizontal lines if display is large enough."
+msgstr ""
+"Дисплейдің үлкендігі жеткілікті болса, жатық сызықтарды көрсету үшін осы "
+"белгіні қойыңыз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:174
+msgid "Text"
+msgstr "Мәтіні"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:180
+msgid "Show axis labels"
+msgstr "Осьтердің жазулары көрсетілсін"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:181
+msgid ""
+"Check this box if horizontal lines should be decorated with the values they "
+"mark."
+msgstr "Жатық сызықтардың белгілейтін мәнін көрсету үшін осы белгіні қойыңыз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:184
+#: SensorDisplayLib/DancingBarsSettings.cc:183
+msgid "Font size:"
+msgstr "Қаріптің өлшемі:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:199
+#: SensorDisplayLib/DancingBarsSettings.cc:195
+msgid "Sensors"
+msgstr "Сенсорлары"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:224
+msgid "Set Color..."
+msgstr "Түсін таңдау..."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:225
+msgid "Push this button to configure the color of the sensor in the diagram."
+msgstr "Диаграммадағы сенсор түсін баптау үшін батырманы басыңыз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:232
+#: SensorDisplayLib/DancingBarsSettings.cc:212
+msgid "Delete"
+msgstr "Өшіру"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:233
+#: SensorDisplayLib/DancingBarsSettings.cc:213
+msgid "Push this button to delete the sensor."
+msgstr "Сенсорды өшіру үшін батырманы басыңыз."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:237
+msgid "Move Up"
+msgstr "Жоғарға"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:242
+msgid "Move Down"
+msgstr "Төменге"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:43
+msgid "Edit BarGraph Preferences"
+msgstr "Жолақты диаграмма баптауларын өзгерту"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:53
+msgid "Range"
+msgstr "Ауқымы"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cc:58 WorkSheetSettings.cc:51
+#: rc.cpp:89 rc.cpp:104
+msgid "Title"
+msgstr "Атауы"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:68
+msgid "Display Range"
+msgstr "Дисплей ауқымы"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:81
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Төменгі шегін келтіріңіз. Егер мәндердін екеуі де 0 болса, ауқым автоматты "
+"түрде таңдалады."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:93
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Жоғарғы шегін келтіріңіз. Егер мәндердін екеуі де 0 болса, ауқым автоматты "
+"түрде таңдалады."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:103
+msgid "Alarms"
+msgstr "Дабыл"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cc:108 rc.cpp:26
+msgid "Alarm for Minimum Value"
+msgstr "Төменгі шетке жеткендегі дабыл"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:113
+#: SensorDisplayLib/DancingBarsSettings.cc:136
+msgid "Enable alarm"
+msgstr "Дабылды рұқсат ету"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:114 rc.cpp:32 rc.cpp:62
+msgid "Enable the minimum value alarm."
+msgstr "Төменгі шетке жетті деген дабылды рұқсат ету."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:117 rc.cpp:35
+msgid "Lower limit:"
+msgstr "Төмен деңгейдің шегі:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cc:131 rc.cpp:38
+msgid "Alarm for Maximum Value"
+msgstr "Жоғарғы шетке жеткендегі дабыл"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:137 rc.cpp:44 rc.cpp:71
+msgid "Enable the maximum value alarm."
+msgstr "Жоғарғы шетке жетті деген дабылды рұқсат ету."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:140 rc.cpp:47
+msgid "Upper limit:"
+msgstr "Жоғарғы деңгейдің шегі:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:157
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Көрінісі"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:162
+msgid "Normal bar color:"
+msgstr "Бағанның қалыпты түсі:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:169
+msgid "Out-of-range color:"
+msgstr "Шектен шыққандағы түсі:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:187
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Мұнда бағанның астындағы жарлығында қолданылатын қаріп өлшемін баптауға "
+"болады. Егер мәтін аса үлкен болса бағандар автоматтытүрде кішірейеді, "
+"сондықтан мұнда қаріптің кішірегін қолданған жөн."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:208
+msgid "Edit..."
+msgstr "Өңдеу..."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:209
+msgid "Push this button to configure the label."
+msgstr "Жарлықты баптау үшін осы батырманы басыңыз."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:367
+msgid "Label of Bar Graph"
+msgstr "Диаграмманың жарлығы"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:368
+msgid "Enter new label:"
+msgstr "Жаңа жарлығы:"
+
+#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
+msgid "&Properties"
+msgstr "Қ&асиеттері"
+
+#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
+msgid "&Remove Display"
 msgstr "Дисплейді &жою"
 
-#: WorkSheet.cc:526
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove Display"
-msgstr "Дисплейді &жою"
-
-#: WorkSheet.cc:567
-msgid "Dummy"
-msgstr "Жай"
-
-#: ksgrd/SensorAgent.cc:109
+#: SensorDisplayLib/SensorDisplay.cc:193
 #, kde-format
-msgctxt "%1 is a host name"
 msgid ""
-"Message from %1:\n"
-"%2"
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
 msgstr ""
-"%1 хосттан келген хабар:\n"
-"%2"
+"<qt><p>Бұл сенсордың дисплейі. Сенсордың дисплейін баптау үшін, тышқанды "
+"дисплейдің аумағына не қоршауына меңзеп, оң батырмасын басып қалып, шыққан "
+"қалқымалы мәзірде <i>Қасиеттері</i> деген жолын таңдаңыз. Дисплейді көрсету "
+"өрісінен кетіру үшін <i>Дисплейді жою</i> дегенді таңдаңыз.</p>%1</qt>"
+
+#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
+msgid "Sensor Logger"
+msgstr "Сенсор журналы"
+
+#: SensorDisplayLib/MultiMeterSettings.cc:31
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Мултиметрды баптау"
+
+#: SensorDisplayLib/SensorLogger.cc:138
+msgid "Logging"
+msgstr "Журнал"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
+#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:20
+msgid "Timer Interval"
+msgstr "Таймер аралығы"
+
+#: SensorDisplayLib/SensorLogger.cc:144
+msgid "Sensor Name"
+msgstr "Сенсор атауы"
+
+#: SensorDisplayLib/SensorLogger.cc:147
+msgid "Host Name"
+msgstr "Хост атауы"
+
+#: SensorDisplayLib/SensorLogger.cc:150
+msgid "Log File"
+msgstr "Журнал файлы"
+
+#: SensorDisplayLib/SensorLogger.cc:608
+msgid "&Remove Sensor"
+msgstr "Сенсо&рды жою"
+
+#: SensorDisplayLib/SensorLogger.cc:613
+msgid "&Edit Sensor..."
+msgstr "&Сенсорды өңдеу..."
+
+#: SensorDisplayLib/SensorLogger.cc:621
+msgid "St&op Logging"
+msgstr "Жүрналдауды &аяқтау"
+
+#: SensorDisplayLib/SensorLogger.cc:624
+msgid "S&tart Logging"
+msgstr "Журналдауды &бастау"
+
+#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
+msgid "Drop Sensor Here"
+msgstr "Сенсорды мұнда сүйреп әкеліңіз"
+
+#: SensorDisplayLib/DummyDisplay.cc:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Бұл көрсету өрісінің бос орыны. Сенсорды сенсор шолғышынан сүйреп осында "
+"әкеліңіз. Пайда болған сенсордің дисплейі оның өлшегенін бақылап отыруға "
+"мүмкіндік береді."
+
+#: SensorDisplayLib/ListViewSettings.cc:30
+msgid "List View Settings"
+msgstr "Тізім көрінісін баптау"
+
+#: SensorDisplayLib/SensorLoggerSettings.cc:30
+msgid "Sensor Logger Settings"
+msgstr "Сенсор журналын баптау"
 
 #: ksgrd/SensorShellAgent.cc:126
 #, kde-format
@@ -108,6 +547,28 @@ msgstr "'%1' қызмет бағларламасы жегілмеді."
 #, kde-format
 msgid "The daemon program '%1' failed."
 msgstr "'%1' қызмет бағларламаның жаңылысы."
+
+#: ksgrd/SensorSocketAgent.cc:103
+#, kde-format
+msgid "Connection to %1 refused"
+msgstr "%1 қосылымынан бас тартылды"
+
+#: ksgrd/SensorSocketAgent.cc:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "%1 хосты табылмады"
+
+#: ksgrd/SensorSocketAgent.cc:111
+#, kde-format
+msgid ""
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
+msgstr "%1 хостында желі қатесі (мысалы, желі кабелі байқамай суырылып қалды)."
+
+#: ksgrd/SensorSocketAgent.cc:115
+#, kde-format
+msgid "Error for host %1: %2"
+msgstr "%1 хост қатесі: %2"
 
 #: ksgrd/SensorManager.cc:60
 msgid "Change"
@@ -598,27 +1059,64 @@ msgstr "Бүтін сан"
 msgid "Floating Point Value"
 msgstr "Қалқымалы үтірлі шама"
 
-#: ksgrd/SensorSocketAgent.cc:103
+#: ksgrd/SensorAgent.cc:109
 #, kde-format
-msgid "Connection to %1 refused"
-msgstr "%1 қосылымынан бас тартылды"
+msgctxt "%1 is a host name"
+msgid ""
+"Message from %1:\n"
+"%2"
+msgstr ""
+"%1 хосттан келген хабар:\n"
+"%2"
 
-#: ksgrd/SensorSocketAgent.cc:107
+#: Workspace.cc:112
 #, kde-format
-msgid "Host %1 not found"
-msgstr "%1 хосты табылмады"
+msgid "Sheet %1"
+msgstr "%1 өрісі"
 
-#: ksgrd/SensorSocketAgent.cc:111
+#: Workspace.cc:171
 #, kde-format
 msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
-msgstr "%1 хостында желі қатесі (мысалы, желі кабелі байқамай суырылып қалды)."
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
+msgstr ""
+"'%1' қойындысында сақталмаған деректер бар.\n"
+"Сақтағыңыз келе ме?"
 
-#: ksgrd/SensorSocketAgent.cc:115
+#: Workspace.cc:186
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Сенсор файлы (*.sgrd)"
+
+#: Workspace.cc:186
+msgid "Select Tab File to Import"
+msgstr "Импорттайтын қойынды файлын таңдау"
+
+#: Workspace.cc:214 Workspace.cc:235
+msgid "You do not have a tab that could be saved."
+msgstr "Сақтайтын қойындысы жоқ."
+
+#: Workspace.cc:242
+msgid "Export Tab"
+msgstr "Қойындысын экспорттау"
+
+#: Workspace.cc:260
+msgid "There are no tabs that could be deleted."
+msgstr "Өшірілетін қойындысы жоқ."
+
+#: Workspace.cc:300
 #, kde-format
-msgid "Error for host %1: %2"
-msgstr "%1 хост қатесі: %2"
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
+
+#: Workspace.cc:300
+#, fuzzy
+#| msgid "System Monitor"
+msgid "Upload custom System Monitor tab"
+msgstr "Жүйені бақылау"
 
 #: TimerSettings.cc:38
 msgid "Timer Settings"
@@ -634,13 +1132,288 @@ msgstr "Өлшеу аралығы:"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
 #. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:59 rc.cpp:23 WorkSheetSettings.cc:95
+#: TimerSettings.cc:59 WorkSheetSettings.cc:95 rc.cpp:23
 msgid " sec"
 msgstr " сек"
 
 #: TimerSettings.cc:62 WorkSheetSettings.cc:101
 msgid "All displays of the sheet are updated at the rate specified here."
 msgstr "Барлық дисплейлер келтірілген аралықпен өлшеулерді етеді."
+
+#: WorkSheet.cc:88
+#, kde-format
+msgid "Cannot open the file %1."
+msgstr "Файл %1 ашылмады."
+
+#: WorkSheet.cc:96
+#, kde-format
+msgid "The file %1 does not contain valid XML."
+msgstr "%1 деген дұрыс XML файлы емес."
+
+#: WorkSheet.cc:103
+#, kde-format
+msgid ""
+"The file %1 does not contain a valid worksheet definition, which must have a "
+"document type 'KSysGuardWorkSheet'."
+msgstr ""
+"%1 файлында 'KSysGuardWorkSheet' деген құжаттың түріне жататын көрсету "
+"өрісінің дұрыс жазуы жоқ."
+
+#: WorkSheet.cc:127
+#, kde-format
+msgid "The file %1 has an invalid worksheet size."
+msgstr "%1 файлындағы көрсету өрісінің өлшемі дұрыс емес."
+
+#: WorkSheet.cc:228
+#, kde-format
+msgid "Cannot save file %1"
+msgstr "%1 файлы сақталмады"
+
+#: WorkSheet.cc:274
+msgid "The clipboard does not contain a valid display description."
+msgstr "Алмасу буферінде жарамды дисплей сипаттамасы жоқ."
+
+#: WorkSheet.cc:372
+msgid "Select Display Type"
+msgstr "Дисплей түрін таңдау"
+
+#: WorkSheet.cc:373
+msgid "&Line graph"
+msgstr "&Сызықты график"
+
+#: WorkSheet.cc:374
+msgid "&Digital display"
+msgstr "Ц&ифрлық дисплей"
+
+#: WorkSheet.cc:375
+msgid "&Bar graph"
+msgstr "&Жолақты диаграмма"
+
+#: WorkSheet.cc:376
+msgid "Log to a &file"
+msgstr "Ж&урналды файлға жазу"
+
+#: WorkSheet.cc:525
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove this display?"
+msgstr "Дисплейді &жою"
+
+#: WorkSheet.cc:526
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove Display"
+msgstr "Дисплейді &жою"
+
+#: WorkSheet.cc:567
+msgid "Dummy"
+msgstr "Жай"
+
+#: WorkSheetSettings.cc:40
+msgid "Tab Properties"
+msgstr "Қойындының касиеттері"
+
+#: WorkSheetSettings.cc:62
+msgid "Properties"
+msgstr "Қасиеттері"
+
+#: WorkSheetSettings.cc:71
+msgid "Rows:"
+msgstr "Жолдар:"
+
+#: WorkSheetSettings.cc:80
+msgid "Columns:"
+msgstr "Бағандар:"
+
+#: WorkSheetSettings.cc:88
+msgid "Enter the number of rows the sheet should have."
+msgstr "Көрсету өрісінің жол санын келтіріңіз."
+
+#: WorkSheetSettings.cc:89
+msgid "Enter the number of columns the sheet should have."
+msgstr "Көрсету өрісінің баған санын келтіріңіз."
+
+#: WorkSheetSettings.cc:102
+msgid "Enter the title of the worksheet here."
+msgstr "Көрсету өрісінің айдарын келтіріңіз."
+
+#: ksysguard.cc:74
+msgid "KDE System Monitor"
+msgstr "KDE жүйе бақылауышы"
+
+#: ksysguard.cc:154 ksysguard.cc:530
+msgid "System Monitor"
+msgstr "Жүйені бақылау"
+
+#: ksysguard.cc:155
+msgid "&Refresh Tab"
+msgstr ""
+
+#: ksysguard.cc:156
+msgid "&New Tab..."
+msgstr "&Жаңа қойынды..."
+
+#: ksysguard.cc:157
+msgid "Import Tab Fr&om File..."
+msgstr "Қойындыны &файлдан импорттау..."
+
+#: ksysguard.cc:158
+msgid "Save Tab &As..."
+msgstr "Қойындыны &былай сақтау..."
+
+#: ksysguard.cc:159
+msgid "&Close Tab"
+msgstr "Қойындыны ж&абу"
+
+#: ksysguard.cc:160
+msgid "Monitor &Remote Machine..."
+msgstr "Қашықтағыны &бақылау..."
+
+#: ksysguard.cc:161
+msgid "&Download New Tabs..."
+msgstr "&Жаңа қойындыларды жүктеп алу..."
+
+#: ksysguard.cc:162
+#, fuzzy
+#| msgid "&Download New Tabs..."
+msgid "&Upload Current Tab..."
+msgstr "&Жаңа қойындыларды жүктеп алу..."
+
+#: ksysguard.cc:164
+msgid "Tab &Properties"
+msgstr "Қойындының қ&асиеттері"
+
+#: ksysguard.cc:359
+#, fuzzy, kde-format
+#| msgid " 1 process "
+#| msgid_plural " %1 processes "
+msgid "1 process1"
+msgid_plural "%1 processes%1"
+msgstr[0] " %1 процесс "
+
+#: ksysguard.cc:443
+#, fuzzy, kde-format
+#| msgid " CPU: %1% "
+msgid "CPU: %1%%1%"
+msgstr " Процессор: %1 "
+
+#: ksysguard.cc:458
+#, kde-format
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
+msgstr ""
+
+#: ksysguard.cc:485
+msgid " No swap space available "
+msgstr " Своп орны жоқ "
+
+#: ksysguard.cc:487
+#, fuzzy, kde-format
+#| msgctxt "Arguments are formatted byte sizes (used/total)"
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Swap: %1 / %2Swap: %1%1"
+msgstr " Своп: %1 / %2 "
+
+#: ksysguard.cc:532
+msgid "(c) 1996-2008 The KDE System Monitor Developers"
+msgstr "(c) 1996-2008 KDE жүйе бақылауыштың жасаушылары"
+
+#: ksysguard.cc:533
+msgid "John Tapsell"
+msgstr "John Tapsell"
+
+#: ksysguard.cc:533
+msgid "Current Maintainer"
+msgstr "Қазіргі жетілдірушісі"
+
+#: ksysguard.cc:534
+msgid "Chris Schlaeger"
+msgstr "Chris Schlaeger"
+
+#: ksysguard.cc:534
+msgid "Previous Maintainer"
+msgstr "Бұрыңғы жетілдірушісі"
+
+#: ksysguard.cc:535
+msgid "Greg Martyn"
+msgstr "Greg Martyn"
+
+#: ksysguard.cc:536
+msgid "Tobias Koenig"
+msgstr "Tobias Koenig"
+
+#: ksysguard.cc:537
+msgid "Nicolas Leclercq"
+msgstr "Nicolas Leclercq"
+
+#: ksysguard.cc:538
+msgid "Alex Sanda"
+msgstr "Alex Sanda"
+
+#: ksysguard.cc:539
+msgid "Bernd Johannes Wuebben"
+msgstr "Bernd Johannes Wuebben"
+
+#: ksysguard.cc:540
+msgid "Ralf Mueller"
+msgstr "Ralf Mueller"
+
+#: ksysguard.cc:541
+msgid "Hamish Rodda"
+msgstr "Hamish Rodda"
+
+#: ksysguard.cc:542
+msgid "Torsten Kasch"
+msgstr "Torsten Kasch"
+
+#: ksysguard.cc:542
+msgid ""
+"Solaris Support\n"
+"Parts derived (by permission) from the sunos5\n"
+"module of William LeFebvre's \"top\" utility."
+msgstr ""
+"Solaris қолдауы\n"
+"Коды William LeFebvre жазған \"top\"\n"
+"утилитасының sunos5 модулінен (рұқсат\n"
+"бойынша) ішінара алынған."
+
+#: ksysguard.cc:551
+msgid "Optional worksheet files to load"
+msgstr "Қосымша көрсету өрістер файлдарын жүктеу"
+
+#: SensorBrowser.cc:117
+msgid "Sensor Browser"
+msgstr "Сенсор шолғышы"
+
+#: SensorBrowser.cc:473
+#, fuzzy
+#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
+msgid "Drag sensors to empty cells of a worksheet "
+msgstr ""
+"Сенсорларды көрсету өрісінің бос ұяшықтарына немесе панель апплетіне сүйреп "
+"апарыңыз."
+
+#: SensorBrowser.cc:474
+#, fuzzy
+#| msgid ""
+#| "The sensor browser lists the connected hosts and the sensors that they "
+#| "provide. Click and drag sensors into drop zones of a worksheet or the "
+#| "panel applet. A display will appear that visualizes the values provided "
+#| "by the sensor. Some sensor displays can display values of multiple "
+#| "sensors. Simply drag other sensors on to the display to add more sensors."
+msgid ""
+"The sensor browser lists the connected hosts and the sensors that they "
+"provide. Click and drag sensors into drop zones of a worksheet. A display "
+"will appear that visualizes the values provided by the sensor. Some sensor "
+"displays can display values of multiple sensors. Simply drag other sensors "
+"on to the display to add more sensors."
+msgstr ""
+"Сенсор шолғыштың тізімінде байланыстағы хосттар және олардағы сенсорлар "
+"көрсетіледі. Сенсорларды таңдап, оларды көрсету өрісінен емесе панельдегі "
+"апплетке сүйреп апарыңыз. Апарған орында осы сенсор қамтамасыз ететінді "
+"көрсететін дисплей пайда болады. Кейбір дисплейлер бірнеше сенсорлар "
+"бергенін көрсете алады. Олаларға бірнеше сенсорларды сүйреп апара беріңіз."
 
 #: HostConnector.cc:44
 msgid "Connect Host"
@@ -725,573 +1498,6 @@ msgstr ""
 #: HostConnector.cc:122
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "мысалы: ssh -l root remote.host.org ksysguardd"
-
-#: Workspace.cc:112
-#, kde-format
-msgid "Sheet %1"
-msgstr "%1 өрісі"
-
-#: Workspace.cc:171
-#, kde-format
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"'%1' қойындысында сақталмаған деректер бар.\n"
-"Сақтағыңыз келе ме?"
-
-#: Workspace.cc:186
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Сенсор файлы (*.sgrd)"
-
-#: Workspace.cc:186
-msgid "Select Tab File to Import"
-msgstr "Импорттайтын қойынды файлын таңдау"
-
-#: Workspace.cc:214 Workspace.cc:235
-msgid "You do not have a tab that could be saved."
-msgstr "Сақтайтын қойындысы жоқ."
-
-#: Workspace.cc:242
-msgid "Export Tab"
-msgstr "Қойындысын экспорттау"
-
-#: Workspace.cc:260
-msgid "There are no tabs that could be deleted."
-msgstr "Өшірілетін қойындысы жоқ."
-
-#: Workspace.cc:300
-#, kde-format
-msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
-msgstr ""
-
-#: Workspace.cc:300
-#, fuzzy
-#| msgid "System Monitor"
-msgid "Upload custom System Monitor tab"
-msgstr "Жүйені бақылау"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Жолақты диаграмма баптауларын өзгерту"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:53
-msgid "Range"
-msgstr "Ауқымы"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:58 rc.cpp:89 rc.cpp:104
-#: WorkSheetSettings.cc:51
-msgid "Title"
-msgstr "Атауы"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/DancingBarsSettings.cc:63
-#: SensorDisplayLib/FancyPlotterSettings.cc:74 rc.cpp:53
-msgid "Enter the title of the display here."
-msgstr "Мұнда дисплейдің атауын келтіріңіз."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:68
-msgid "Display Range"
-msgstr "Дисплей ауқымы"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:73
-#: SensorDisplayLib/FancyPlotterSettings.cc:102
-msgid "Minimum value:"
-msgstr "Төменгі шегі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:81
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Төменгі шегін келтіріңіз. Егер мәндердін екеуі де 0 болса, ауқым автоматты "
-"түрде таңдалады."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:85
-#: SensorDisplayLib/FancyPlotterSettings.cc:113
-msgid "Maximum value:"
-msgstr "Жоғарғы шегі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:93
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Жоғарғы шегін келтіріңіз. Егер мәндердін екеуі де 0 болса, ауқым автоматты "
-"түрде таңдалады."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:103
-msgid "Alarms"
-msgstr "Дабыл"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:108 rc.cpp:26
-msgid "Alarm for Minimum Value"
-msgstr "Төменгі шетке жеткендегі дабыл"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:113
-#: SensorDisplayLib/DancingBarsSettings.cc:136
-msgid "Enable alarm"
-msgstr "Дабылды рұқсат ету"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:114 rc.cpp:32 rc.cpp:62
-msgid "Enable the minimum value alarm."
-msgstr "Төменгі шетке жетті деген дабылды рұқсат ету."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:117 rc.cpp:35
-msgid "Lower limit:"
-msgstr "Төмен деңгейдің шегі:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:131 rc.cpp:38
-msgid "Alarm for Maximum Value"
-msgstr "Жоғарғы шетке жеткендегі дабыл"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:137 rc.cpp:44 rc.cpp:71
-msgid "Enable the maximum value alarm."
-msgstr "Жоғарғы шетке жетті деген дабылды рұқсат ету."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:140 rc.cpp:47
-msgid "Upper limit:"
-msgstr "Жоғарғы деңгейдің шегі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:157
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Көрінісі"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:162
-msgid "Normal bar color:"
-msgstr "Бағанның қалыпты түсі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:169
-msgid "Out-of-range color:"
-msgstr "Шектен шыққандағы түсі:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/DancingBarsSettings.cc:176 SensorDisplayLib/LogFile.cc:100
-#: rc.cpp:86 rc.cpp:101 rc.cpp:113 rc.cpp:128
-msgid "Background color:"
-msgstr "Ая түсі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:183
-#: SensorDisplayLib/FancyPlotterSettings.cc:184
-msgid "Font size:"
-msgstr "Қаріптің өлшемі:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:187
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Мұнда бағанның астындағы жарлығында қолданылатын қаріп өлшемін баптауға "
-"болады. Егер мәтін аса үлкен болса бағандар автоматтытүрде кішірейеді, "
-"сондықтан мұнда қаріптің кішірегін қолданған жөн."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:195
-#: SensorDisplayLib/FancyPlotterSettings.cc:199
-msgid "Sensors"
-msgstr "Сенсорлары"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Edit..."
-msgstr "Өңдеу..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:209
-msgid "Push this button to configure the label."
-msgstr "Жарлықты баптау үшін осы батырманы басыңыз."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-msgid "Delete"
-msgstr "Өшіру"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:213
-#: SensorDisplayLib/FancyPlotterSettings.cc:233
-msgid "Push this button to delete the sensor."
-msgstr "Сенсорды өшіру үшін батырманы басыңыз."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Label of Bar Graph"
-msgstr "Диаграмманың жарлығы"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:368
-msgid "Enter new label:"
-msgstr "Жаңа жарлығы:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:51
-#, fuzzy
-#| msgid "Signal Plotter Settings"
-msgid "Plotter Settings"
-msgstr "Графикті баптау"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:65
-msgid "General"
-msgstr "Жалпы"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:70
-msgid "Title:"
-msgstr "Атауы:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:86
-msgid "Scales"
-msgstr "Масштабтары"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:91
-#, fuzzy
-#| msgid "Vertical Scale"
-msgid "Vertical scale"
-msgstr "Тік масштабы"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:97
-msgid "Specify graph range:"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:98
-msgid ""
-"Check this box if you want the display range to adapt dynamically to the "
-"currently displayed values; if you do not check this, you have to specify "
-"the range you want in the fields below."
-msgstr ""
-"Бұл белгісі қойылса, дисплей аумағы көрсетілетін мәндерге бейімделіп тұрады. "
-"Қойылмаса, төменде келтірілген аумағында қала береді."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:108
-#, fuzzy
-#| msgid "Enter the title of the display here."
-msgid "Enter the minimum value for the display here."
-msgstr "Мұнда дисплейдің атауын келтіріңіз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:119
-msgid ""
-"Enter the soft maximum value for the display here. The upper range will not "
-"be reduced below this value, but will still go above this number for values "
-"above this value."
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:126
-#, fuzzy
-#| msgid "Horizontal Scale"
-msgid "Horizontal scale"
-msgstr "Көлденең масштабы"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:133
-#, fuzzy
-#| msgid "pixels per time period"
-msgid "Pixels per time period:"
-msgstr "пиксел/уақыт аралығы"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:140
-msgid "Grid"
-msgstr "Тор"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:145
-msgid "Lines"
-msgstr "Сызықтар"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:151
-msgid "Vertical lines"
-msgstr "Тік сызықтар"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:152
-msgid "Check this to activate the vertical lines if display is large enough."
-msgstr ""
-"Дисплейдің үлкендігі жеткілікті болса, тік сызықтарды көрсету үшін осы "
-"белгіні қойыңыз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:155
-msgid "Distance:"
-msgstr "Аралығы:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:161
-msgid "Enter the distance between two vertical lines here."
-msgstr "Екі тік сызықтардың аралығын келтіріңіз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:165
-msgid "Vertical lines scroll"
-msgstr "Тік сызықтарды жүгірту"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:168
-msgid "Horizontal lines"
-msgstr "Жатық сызықтар"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:169
-msgid "Check this to enable horizontal lines if display is large enough."
-msgstr ""
-"Дисплейдің үлкендігі жеткілікті болса, жатық сызықтарды көрсету үшін осы "
-"белгіні қойыңыз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:174
-msgid "Text"
-msgstr "Мәтіні"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:180
-msgid "Show axis labels"
-msgstr "Осьтердің жазулары көрсетілсін"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:181
-msgid ""
-"Check this box if horizontal lines should be decorated with the values they "
-"mark."
-msgstr "Жатық сызықтардың белгілейтін мәнін көрсету үшін осы белгіні қойыңыз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:224
-msgid "Set Color..."
-msgstr "Түсін таңдау..."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:225
-msgid "Push this button to configure the color of the sensor in the diagram."
-msgstr "Диаграммадағы сенсор түсін баптау үшін батырманы басыңыз."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:237
-msgid "Move Up"
-msgstr "Жоғарға"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:242
-msgid "Move Down"
-msgstr "Төменге"
-
-#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
-msgid "Sensor Logger"
-msgstr "Сенсор журналы"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
-msgid "OK"
-msgstr "ОК"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
-#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:585
-msgid "Error"
-msgstr "Қате"
-
-#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
-msgid "&Properties"
-msgstr "Қ&асиеттері"
-
-#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
-msgid "&Remove Display"
-msgstr "Дисплейді &жою"
-
-#: SensorDisplayLib/SensorDisplay.cc:193
-#, kde-format
-msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
-msgstr ""
-"<qt><p>Бұл сенсордың дисплейі. Сенсордың дисплейін баптау үшін, тышқанды "
-"дисплейдің аумағына не қоршауына меңзеп, оң батырмасын басып қалып, шыққан "
-"қалқымалы мәзірде <i>Қасиеттері</i> деген жолын таңдаңыз. Дисплейді көрсету "
-"өрісінен кетіру үшін <i>Дисплейді жою</i> дегенді таңдаңыз.</p>%1</qt>"
-
-#: SensorDisplayLib/FancyPlotter.cc:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr "99999 XXXX"
-
-#: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
-#: SensorDisplayLib/FancyPlotter.cc:637
-#, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:518
-#, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr "<p><b>%1:</b><br>"
-
-#: SensorDisplayLib/FancyPlotter.cc:582
-#, fuzzy, kde-format
-#| msgctxt "%1 and %2 are sensor's last and maximum value"
-#| msgid "%1 of %2"
-msgid "%1 of %2%1"
-msgstr "%1 / %2"
-
-#: SensorDisplayLib/FancyPlotter.cc:610
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:613
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:616
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:619
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:624
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:627
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:630
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:633
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:639
-#, fuzzy, kde-format
-#| msgctxt "a percentage"
-#| msgid "%"
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%"
-
-#: SensorDisplayLib/SensorLogger.cc:138
-msgid "Logging"
-msgstr "Журнал"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:20
-msgid "Timer Interval"
-msgstr "Таймер аралығы"
-
-#: SensorDisplayLib/SensorLogger.cc:144
-msgid "Sensor Name"
-msgstr "Сенсор атауы"
-
-#: SensorDisplayLib/SensorLogger.cc:147
-msgid "Host Name"
-msgstr "Хост атауы"
-
-#: SensorDisplayLib/SensorLogger.cc:150
-msgid "Log File"
-msgstr "Журнал файлы"
-
-#: SensorDisplayLib/SensorLogger.cc:608
-msgid "&Remove Sensor"
-msgstr "Сенсо&рды жою"
-
-#: SensorDisplayLib/SensorLogger.cc:613
-msgid "&Edit Sensor..."
-msgstr "&Сенсорды өңдеу..."
-
-#: SensorDisplayLib/SensorLogger.cc:621
-msgid "St&op Logging"
-msgstr "Жүрналдауды &аяқтау"
-
-#: SensorDisplayLib/SensorLogger.cc:624
-msgid "S&tart Logging"
-msgstr "Журналдауды &бастау"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Хост"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Сенсор"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Өлшем бірлігі"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Күй-жай"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Жарлық"
-
-#: SensorDisplayLib/LogFile.cc:92
-msgid "File logging settings"
-msgstr "Журнал файлын баптаулары"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:125
-msgid "Foreground color:"
-msgstr "Бояу түсі:"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Мултиметрды баптау"
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Тізім көрінісін баптау"
-
-#: SensorDisplayLib/SensorLoggerSettings.cc:30
-msgid "Sensor Logger Settings"
-msgstr "Сенсор журналын баптау"
-
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Сенсорды мұнда сүйреп әкеліңіз"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Бұл көрсету өрісінің бос орыны. Сенсорды сенсор шолғышынан сүйреп осында "
-"әкеліңіз. Пайда болған сенсордің дисплейі оның өлшегенін бақылап отыруға "
-"мүмкіндік береді."
 
 #. i18n: file: ksysguardui.rc:4
 #. i18n: ectx: Menu (file)
@@ -1492,212 +1698,6 @@ msgstr "Жады мен своп журналы"
 #: rc.cpp:158
 msgid "Network History"
 msgstr "Желі журналы"
-
-#: WorkSheetSettings.cc:40
-msgid "Tab Properties"
-msgstr "Қойындының касиеттері"
-
-#: WorkSheetSettings.cc:62
-msgid "Properties"
-msgstr "Қасиеттері"
-
-#: WorkSheetSettings.cc:71
-msgid "Rows:"
-msgstr "Жолдар:"
-
-#: WorkSheetSettings.cc:80
-msgid "Columns:"
-msgstr "Бағандар:"
-
-#: WorkSheetSettings.cc:88
-msgid "Enter the number of rows the sheet should have."
-msgstr "Көрсету өрісінің жол санын келтіріңіз."
-
-#: WorkSheetSettings.cc:89
-msgid "Enter the number of columns the sheet should have."
-msgstr "Көрсету өрісінің баған санын келтіріңіз."
-
-#: WorkSheetSettings.cc:102
-msgid "Enter the title of the worksheet here."
-msgstr "Көрсету өрісінің айдарын келтіріңіз."
-
-#: SensorBrowser.cc:117
-msgid "Sensor Browser"
-msgstr "Сенсор шолғышы"
-
-#: SensorBrowser.cc:473
-#, fuzzy
-#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
-msgid "Drag sensors to empty cells of a worksheet "
-msgstr ""
-"Сенсорларды көрсету өрісінің бос ұяшықтарына немесе панель апплетіне сүйреп "
-"апарыңыз."
-
-#: SensorBrowser.cc:474
-#, fuzzy
-#| msgid ""
-#| "The sensor browser lists the connected hosts and the sensors that they "
-#| "provide. Click and drag sensors into drop zones of a worksheet or the "
-#| "panel applet. A display will appear that visualizes the values provided "
-#| "by the sensor. Some sensor displays can display values of multiple "
-#| "sensors. Simply drag other sensors on to the display to add more sensors."
-msgid ""
-"The sensor browser lists the connected hosts and the sensors that they "
-"provide. Click and drag sensors into drop zones of a worksheet. A display "
-"will appear that visualizes the values provided by the sensor. Some sensor "
-"displays can display values of multiple sensors. Simply drag other sensors "
-"on to the display to add more sensors."
-msgstr ""
-"Сенсор шолғыштың тізімінде байланыстағы хосттар және олардағы сенсорлар "
-"көрсетіледі. Сенсорларды таңдап, оларды көрсету өрісінен емесе панельдегі "
-"апплетке сүйреп апарыңыз. Апарған орында осы сенсор қамтамасыз ететінді "
-"көрсететін дисплей пайда болады. Кейбір дисплейлер бірнеше сенсорлар "
-"бергенін көрсете алады. Олаларға бірнеше сенсорларды сүйреп апара беріңіз."
-
-#: ksysguard.cc:74
-msgid "KDE System Monitor"
-msgstr "KDE жүйе бақылауышы"
-
-#: ksysguard.cc:154 ksysguard.cc:530
-msgid "System Monitor"
-msgstr "Жүйені бақылау"
-
-#: ksysguard.cc:155
-msgid "&Refresh Tab"
-msgstr ""
-
-#: ksysguard.cc:156
-msgid "&New Tab..."
-msgstr "&Жаңа қойынды..."
-
-#: ksysguard.cc:157
-msgid "Import Tab Fr&om File..."
-msgstr "Қойындыны &файлдан импорттау..."
-
-#: ksysguard.cc:158
-msgid "Save Tab &As..."
-msgstr "Қойындыны &былай сақтау..."
-
-#: ksysguard.cc:159
-msgid "&Close Tab"
-msgstr "Қойындыны ж&абу"
-
-#: ksysguard.cc:160
-msgid "Monitor &Remote Machine..."
-msgstr "Қашықтағыны &бақылау..."
-
-#: ksysguard.cc:161
-msgid "&Download New Tabs..."
-msgstr "&Жаңа қойындыларды жүктеп алу..."
-
-#: ksysguard.cc:162
-#, fuzzy
-#| msgid "&Download New Tabs..."
-msgid "&Upload Current Tab..."
-msgstr "&Жаңа қойындыларды жүктеп алу..."
-
-#: ksysguard.cc:164
-msgid "Tab &Properties"
-msgstr "Қойындының қ&асиеттері"
-
-#: ksysguard.cc:359
-#, fuzzy, kde-format
-#| msgid " 1 process "
-#| msgid_plural " %1 processes "
-msgid "1 process1"
-msgid_plural "%1 processes%1"
-msgstr[0] " %1 процесс "
-
-#: ksysguard.cc:443
-#, fuzzy, kde-format
-#| msgid " CPU: %1% "
-msgid "CPU: %1%%1%"
-msgstr " Процессор: %1 "
-
-#: ksysguard.cc:458
-#, kde-format
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
-msgstr ""
-
-#: ksysguard.cc:485
-msgid " No swap space available "
-msgstr " Своп орны жоқ "
-
-#: ksysguard.cc:487
-#, fuzzy, kde-format
-#| msgctxt "Arguments are formatted byte sizes (used/total)"
-#| msgid " Swap: %1 / %2 "
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Swap: %1 / %2Swap: %1%1"
-msgstr " Своп: %1 / %2 "
-
-#: ksysguard.cc:532
-msgid "(c) 1996-2008 The KDE System Monitor Developers"
-msgstr "(c) 1996-2008 KDE жүйе бақылауыштың жасаушылары"
-
-#: ksysguard.cc:533
-msgid "John Tapsell"
-msgstr "John Tapsell"
-
-#: ksysguard.cc:533
-msgid "Current Maintainer"
-msgstr "Қазіргі жетілдірушісі"
-
-#: ksysguard.cc:534
-msgid "Chris Schlaeger"
-msgstr "Chris Schlaeger"
-
-#: ksysguard.cc:534
-msgid "Previous Maintainer"
-msgstr "Бұрыңғы жетілдірушісі"
-
-#: ksysguard.cc:535
-msgid "Greg Martyn"
-msgstr "Greg Martyn"
-
-#: ksysguard.cc:536
-msgid "Tobias Koenig"
-msgstr "Tobias Koenig"
-
-#: ksysguard.cc:537
-msgid "Nicolas Leclercq"
-msgstr "Nicolas Leclercq"
-
-#: ksysguard.cc:538
-msgid "Alex Sanda"
-msgstr "Alex Sanda"
-
-#: ksysguard.cc:539
-msgid "Bernd Johannes Wuebben"
-msgstr "Bernd Johannes Wuebben"
-
-#: ksysguard.cc:540
-msgid "Ralf Mueller"
-msgstr "Ralf Mueller"
-
-#: ksysguard.cc:541
-msgid "Hamish Rodda"
-msgstr "Hamish Rodda"
-
-#: ksysguard.cc:542
-msgid "Torsten Kasch"
-msgstr "Torsten Kasch"
-
-#: ksysguard.cc:542
-msgid ""
-"Solaris Support\n"
-"Parts derived (by permission) from the sunos5\n"
-"module of William LeFebvre's \"top\" utility."
-msgstr ""
-"Solaris қолдауы\n"
-"Коды William LeFebvre жазған \"top\"\n"
-"утилитасының sunos5 модулінен (рұқсат\n"
-"бойынша) ішінара алынған."
-
-#: ksysguard.cc:551
-msgid "Optional worksheet files to load"
-msgstr "Қосымша көрсету өрістер файлдарын жүктеу"
 
 #, fuzzy
 #~| msgid " sec"
