@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-03-12 01:18+0100\n"
-"PO-Revision-Date: 2010-03-20 06:29+0600\n"
+"PO-Revision-Date: 2010-03-21 10:23+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -161,7 +161,7 @@ msgstr "Оқу/Жазу операциялар саны"
 
 #: ksysguardprocesslist.cpp:695
 msgid "Bytes actually read/written"
-msgstr "Шын оқып/жазылған байттар"
+msgstr "Шын оқылған/жазылған байттар"
 
 #: ksysguardprocesslist.cpp:701
 msgid "Show I/O rate"
@@ -1192,7 +1192,6 @@ msgstr ""
 "әйтпесе, процестің атауы қолданылады."
 
 #: ProcessModel.cc:761
-#, fuzzy
 msgid ""
 "<qt>The user who owns this process.  If the effective, setuid etc user is "
 "different, the user who owns the process will be shown, followed by the "
@@ -1207,18 +1206,19 @@ msgid ""
 "File System User/Group.  This is a Linux specific call. See setfsuid(2) for "
 "more information.</td></tr></table>"
 msgstr ""
-"<qt>Процеске ие пайдаланушысы.  If the effective, setuid etc user is "
-"different, the user who owns the process will be shown, followed by the "
-"effective user.  The ToolTip contains the full information.  "
-"<p><table><tr><td>Login Name/Group</td><td>The username of the Real User/"
-"Group who created this process</td></tr><tr><td>Effective User/Group</"
-"td><td>The process is running with privileges of the Effective User/Group.  "
-"This is shown if different from the real user.</td></tr><tr><td>Setuid User/"
-"Group</td><td>The saved username of the binary.  The process can escalate "
-"its Effective User/Group to the Setuid User/Group.</td></tr><tr><td>File "
-"System User/Group</td><td>Accesses to the filesystem are checked with the "
-"File System User/Group.  This is a Linux specific call. See setfsuid(2) for "
-"more information.</td></tr></table>"
+"<qt>Процеске ие пайдаланушысы.  Әрекеттегі, setuid, т.б. пайдаланушысы "
+"басқа болса, алдымен процестің иесі көрсетіледі, содан кейін - "
+"әрекеттегі пайдаланушісы.  Толық мәліметті ишара жазуынан ала аласыз. "
+"<p><table><tr><td>Пайдаланушысы/Тобы</td><td>Процесті бастаған шын "
+"пайдаланушсы/тобы</td></tr><tr><td>Әрекеттегі пайдаланушысы/тобы "
+"</td><td>Процесс әрекеттегі пайдаланушысы/тобы артықшылықтарымен "
+"орындалуда. Шын пайдаланушыдан басқа болса көрсетіледі.</td></tr> "
+"<tr><td>Setuid пайдаланушысы/тобы</td><td>Бинарлы файлдың жазылған "
+"ие пайдаланушысы. Процесс әрекеттегі пайдаланушысы/тобын Setuid "
+"пайдаланушысы/тобына ауыстыра алады.</td></tr><tr><td>Файлдық жүйе "
+"пайдаланушысы/тобы</td><td>Файлдық жүйеге қатынауы файлдық жүйенің "
+"пайдаланушысы/тобына тәуелді.  Бұл Linux ерекшелігі. Толығрақ setfsuid(2) "
+"дегеннен қараңңыз.</td></tr></table>"
 
 #: ProcessModel.cc:771
 msgid ""
@@ -1284,10 +1284,10 @@ msgid ""
 "PID.  The CPU usage etc will be the total, accumulated, CPU usage of all the "
 "threads."
 msgstr ""
-"<qt><i>Техникалық мәлімет: </i>This is the Process ID.  A multi-threaded "
-"application is treated a single process, with all threads sharing the same "
-"PID.  The CPU usage etc will be the total, accumulated, CPU usage of all the "
-"threads."
+"<qt><i>Техникалық мәлімет: </i>Бұл процестың индентификаторы. "
+"Көп ағынды қолданба бір ағынды деп саналып бір ортақ PID-ке ие "
+"болады.  Процессорды жұмсауы және басқа с.с. барлық ағындардың "
+"қосындысын көрсетеді."
 
 #: ProcessModel.cc:786
 #, fuzzy
@@ -1317,24 +1317,23 @@ msgid ""
 "*/io and is documented further in Documentation/accounting and Documentation/"
 "filesystems/proc.txt in the kernel source."
 msgstr ""
-"<qt>This column shows the IO statistics for each process. The tooltip "
-"provides the following information:<br><table><tr><td>Characters Read</"
-"td><td>The number of bytes which this task has caused to be read from "
-"storage. This is simply the sum of bytes which this process passed to read() "
-"and pread(). It includes things like tty IO and it is unaffected by whether "
-"or not actual physical disk IO was required (the read might have been "
-"satisfied from pagecache).</td></tr><tr><td>Characters Written</td><td>The "
-"number of bytes which this task has caused, or shall cause to be written to "
-"disk. Similar caveats apply here as with Characters Read.</td></"
-"tr><tr><td>Read Syscalls</td><td>The number of read I/O operations, i.e. "
-"syscalls like read() and pread().</td></tr><tr><td>Write Syscalls</"
-"td><td>The number of write I/O operations, i.e. syscalls like write() and "
-"pwrite().</td></tr><tr><td>Actual Bytes Read</td><td>The number of bytes "
-"which this process really did cause to be fetched from the storage layer. "
-"Done at the submit_bio() level, so it is accurate for block-backed "
-"filesystems. This may not give sensible values for NFS and CIFS filesystems."
-"</td></tr><tr><td>Actual Bytes Written</td><td>Attempt to count the number "
-"of bytes which this process caused to be sent to the storage layer. This is "
+"<qt>Бұл бағанда әр процестің Енгізу-Шығару статистикасын көрсетеді."
+"Ишара мәліметі келесідей:<br><table><tr><td>Оқылған таңбалар саны "
+"</td><td>Бұл тапсырма жинақтаушыдан қанша байт оқығаны. "
+"Бұл процес қанша байт read() және pread() қылғаннын қортындысы. "
+"Бұған tty IO секілділер де кіреді, бұған шын физикалық дискіден оқу "
+"болғаны-болмағаны бәрібір (мысалы, оқитынын кәштен алғаны жетерлік "
+"болса). </td></tr><tr><td>Жазылған таңбалар саны</td><td>Бұл "
+"тапсырма жинақтаушыға қанша байт жазу әрекет жасағаны. "
+"Ерекшеліктер оқылған санындағыдай.</td></tr><tr><td>Жүйелік оқу "
+"талаптары </td><td>Оқу Е/Ш (read() пен pread() секілді) операциялар "
+"саны.</td></tr><tr><td>Жүйелік жазу талаптары</td><td>Жазу Е/Ш (write() "
+"пен pwrite() секілді) операциялар саны.</td></tr><tr><td>Шын оқылған "
+"байттар</td><td>Бұл процесс жинақтаушыдан іс жүзінде қанша байт "
+"оқығаны. Бұл submit_bio() деңгейінде орындалып блоктармен істейтін "
+"файлдық жүйелерде нақты көрсеткіш. NFS я CIFS файлдық жүйелерде "
+"нақты нәтиже көрсетпейді.</td></tr><tr><td>Шын жазылған байттар</td> "
+"<td>Процесc жинақтаушыға қанша байт жазу әрекет жасағаны. This is "
 "done at page-dirtying time.</td></table><p>The number in brackets shows the "
 "rate at which each value is changing, determined from taking the difference "
 "between the previous value and the new value, and dividing by the update "
@@ -1345,7 +1344,7 @@ msgstr ""
 #: ProcessModel.cc:873
 #, kde-format
 msgid "Login Name: %1<br/>"
-msgstr "Кіру атауы: %1<br/>"
+msgstr "Пайдаланушысы: %1<br/>"
 
 #: ProcessModel.cc:877
 msgid "This user is not recognized for some reason."
@@ -1359,7 +1358,7 @@ msgstr "<b>%1</b><br/>"
 #: ProcessModel.cc:881
 #, kde-format
 msgid "Login Name: %1 (uid: %2)<br/>"
-msgstr "Кіру атауы: %1 (uid: %2)<br/>"
+msgstr "Ие пайдаланушысы: %1 (uid: %2)<br/>"
 
 #: ProcessModel.cc:883
 #, kde-format
@@ -1374,7 +1373,7 @@ msgstr "  Жұмыс телефоны: %1<br/>"
 #: ProcessModel.cc:892
 #, kde-format
 msgid "Effective User: %1<br/>"
-msgstr "Эффективті пайдаланушысы: %1<br/>"
+msgstr "Әрекеттегі пайдаланушысы: %1<br/>"
 
 #: ProcessModel.cc:894
 #, kde-format
@@ -1394,7 +1393,7 @@ msgstr "Тобы: %1"
 #: ProcessModel.cc:905
 #, kde-format
 msgid "<br/>Effective Group: %1"
-msgstr "<br/>Эффективті тобы: %1"
+msgstr "<br/>Әрекеттегі тобы: %1"
 
 #: ProcessModel.cc:907
 #, kde-format
@@ -1598,7 +1597,7 @@ msgid ""
 msgstr ""
 "Оқылған таңбалар саны: %1 (%2 KiB/s)<br>Жазылған таңбалар саны: %3 (%4 KiB/s)"
 "<br> Жүйелік оқу талаптары: %5 (%6 s⁻¹)<br>Жүйелік жазу талаптары: %7 (%8 "
-"s⁻¹)<br> Жалпы оқылған байттар: %9 (%10 KiB/s)<br>Жалпы жазылған байттар: %"
+"s⁻¹)<br> Шын оқылған байттар: %9 (%10 KiB/s)<br>Шын жазылған байттар: %"
 "11 (%12 KiB/s)"
 
 #: ProcessModel.cc:1504
