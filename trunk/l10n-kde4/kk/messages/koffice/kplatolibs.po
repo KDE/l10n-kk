@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-19 04:59+0100\n"
+"POT-Creation-Date: 2010-03-24 04:25+0100\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -413,7 +413,7 @@ msgstr "Жұмыс"
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:423
-#: models/kptresourceappointmentsmodel.cpp:1245 rc.cpp:283
+#: models/kptresourceappointmentsmodel.cpp:1244 rc.cpp:283
 msgid "Project"
 msgstr "Жоба"
 
@@ -1766,6 +1766,7 @@ msgstr "Негізгі жобаны өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2433 models/kptnodeitemmodel.cpp:2442
 #: models/kptnodeitemmodel.cpp:2477 models/kptnodeitemmodel.cpp:2480
+#: ui/reports/reportview.cpp:881
 #, fuzzy
 #| msgid "&Resources"
 msgid "Resources"
@@ -1935,9 +1936,9 @@ msgstr "Күнтізбені өзгерту"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptcalendarmodel.cpp:419 models/kptaccountsmodel.cpp:122
 #: models/kptaccountsmodel.cpp:1022 models/kptresourcemodel.cpp:392
-#: models/kptresourceappointmentsmodel.cpp:902
-#: models/kptresourceappointmentsmodel.cpp:917
-#: models/kptresourceappointmentsmodel.cpp:1479
+#: models/kptresourceappointmentsmodel.cpp:901
+#: models/kptresourceappointmentsmodel.cpp:916
+#: models/kptresourceappointmentsmodel.cpp:1477
 #: models/kptschedulemodel.cpp:734 models/kptschedulemodel.cpp:956
 #: models/kptresourceallocationmodel.cpp:332 rc.cpp:752
 msgid "Name"
@@ -2003,7 +2004,7 @@ msgstr "Еншілес"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptrelationmodel.cpp:148 models/kptdocumentmodel.cpp:169
 #: models/kptresourcemodel.cpp:393
-#: models/kptresourceappointmentsmodel.cpp:1480
+#: models/kptresourceappointmentsmodel.cpp:1478
 #: models/kptresourceallocationmodel.cpp:333 rc.cpp:755
 msgid "Type"
 msgstr "Түрі"
@@ -2075,7 +2076,7 @@ msgid "Actual total cost: %1, planned total cost: %2"
 msgstr ""
 
 #: models/kptaccountsmodel.cpp:1028
-#: models/kptresourceappointmentsmodel.cpp:903
+#: models/kptresourceappointmentsmodel.cpp:902
 msgid "Total"
 msgstr "Барлығы"
 
@@ -2303,7 +2304,7 @@ msgstr "Аяқтау қосымша уақыты - Ерте аяқтау мен 
 msgid "The resources assigned to the task"
 msgstr "Тапсырмаға бөлінген ресурстары"
 
-#: models/kptcommonstrings.cpp:72
+#: models/kptcommonstrings.cpp:72 ui/reports/reportview.cpp:857
 #, fuzzy
 #| msgid "Task Settings"
 msgid "Task status"
@@ -2729,7 +2730,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "Ресурсына шаққанда"
 
 #: models/kptresourcemodel.cpp:1144
-#: models/kptresourceappointmentsmodel.cpp:1109
+#: models/kptresourceappointmentsmodel.cpp:1108
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
 msgid "Add resource from address book"
@@ -2742,63 +2743,63 @@ msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
 msgid "Add resource group"
 msgstr "Ресурс тобын қосу..."
 
-#: models/kptresourceappointmentsmodel.cpp:575
+#: models/kptresourceappointmentsmodel.cpp:574
 #, fuzzy, kde-format
 #| msgid "Project: %1"
 msgid "External project: %1"
 msgstr "Жоба: %1"
 
-#: models/kptresourceappointmentsmodel.cpp:651
+#: models/kptresourceappointmentsmodel.cpp:650
 #, kde-format
 msgid "The total booking on %1, along with the maximum hours for the resource"
 msgstr "%1 дегенге жалпы арналған, ресурсқа мейілінше көп уақыт бөлгенде"
 
-#: models/kptresourceappointmentsmodel.cpp:683
+#: models/kptresourceappointmentsmodel.cpp:682
 msgid "Total booking by this task"
 msgstr "Осы тапсырмасына жалпы арналғаны"
 
-#: models/kptresourceappointmentsmodel.cpp:685
+#: models/kptresourceappointmentsmodel.cpp:684
 msgid "Total booking by the external project"
 msgstr "Сыртқы жобаға жалпы арналғаны"
 
-#: models/kptresourceappointmentsmodel.cpp:728
+#: models/kptresourceappointmentsmodel.cpp:727
 #, kde-format
 msgid "Booking by this task on %1"
 msgstr "%1 дегенге тапсырма бойынша арналғаны"
 
-#: models/kptresourceappointmentsmodel.cpp:730
+#: models/kptresourceappointmentsmodel.cpp:729
 #, kde-format
 msgid "Booking by external project on %1"
 msgstr "%1 дегенге сыртқы жоба бойынша арналғаны"
 
-#: models/kptresourceappointmentsmodel.cpp:918
+#: models/kptresourceappointmentsmodel.cpp:917
 msgid "The total hours booked"
 msgstr "Жалпы арнаған уақыты"
 
-#: models/kptresourceappointmentsmodel.cpp:922
+#: models/kptresourceappointmentsmodel.cpp:921
 #, kde-format
 msgid "Bookings on %1"
 msgstr "%1 дегенге арнағаны"
 
-#: models/kptresourceappointmentsmodel.cpp:1265
+#: models/kptresourceappointmentsmodel.cpp:1264
 #, fuzzy
 #| msgid "Fixed Interval"
 msgid "Interval"
 msgstr "Белгілі уақыт аралығы"
 
-#: models/kptresourceappointmentsmodel.cpp:1481
+#: models/kptresourceappointmentsmodel.cpp:1479
 #, fuzzy
 #| msgid "Started"
 msgid "Start Time"
 msgstr "Басталған"
 
-#: models/kptresourceappointmentsmodel.cpp:1482
+#: models/kptresourceappointmentsmodel.cpp:1480
 #, fuzzy
 #| msgid "End date"
 msgid "End Time"
 msgstr "Аяқтау кезі"
 
-#: models/kptresourceappointmentsmodel.cpp:1483
+#: models/kptresourceappointmentsmodel.cpp:1481
 #, fuzzy
 #| msgid "Load"
 msgctxt "@title:column noun"
@@ -3015,7 +3016,7 @@ msgstr "Тәуекелі:"
 msgid "Lower"
 msgstr "Төмен"
 
-#: ui/reports/reportdata.cpp:156
+#: ui/reports/reportdata.cpp:160
 msgid "Cost Breakdown"
 msgstr ""
 
@@ -3144,6 +3145,20 @@ msgstr "Кезең анықтауы"
 #: rc.cpp:402 rc.cpp:707
 msgid "Remove"
 msgstr "Өшіру"
+
+#. i18n: file: ui/kptperteditor.ui:37
+#. i18n: ectx: property (text), widget (QTreeWidget, taskList)
+#. i18n: file: ui/kptresourceassignmentview.ui:39
+#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
+#: ui/reports/reportview.cpp:851 rc.cpp:229 rc.cpp:758
+msgid "Tasks"
+msgstr "Тапсырмалар"
+
+#: ui/reports/reportview.cpp:863
+#, fuzzy
+#| msgid "Resource Assignments View Settings"
+msgid "Resource assignements"
+msgstr "Ресурс бөлу көрініс параметрлері"
 
 #: ui/reports/reportexportpanel.cpp:32
 msgid "Open document spreadsheet"
@@ -4346,14 +4361,6 @@ msgstr "&Жасырылған бағандары:"
 #: rc.cpp:226
 msgid "&Visible columns:"
 msgstr "&Көрінетін бағандары:"
-
-#. i18n: file: ui/kptperteditor.ui:37
-#. i18n: ectx: property (text), widget (QTreeWidget, taskList)
-#. i18n: file: ui/kptresourceassignmentview.ui:39
-#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
-#: rc.cpp:229 rc.cpp:758
-msgid "Tasks"
-msgstr "Тапсырмалар"
 
 #. i18n: file: ui/kptperteditor.ui:46
 #. i18n: ectx: property (text), widget (QTreeWidget, available)
