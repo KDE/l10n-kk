@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-03-20 22:01+0100\n"
-"PO-Revision-Date: 2010-04-02 23:53+0600\n"
+"PO-Revision-Date: 2010-04-04 07:38+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -1071,6 +1071,8 @@ msgid ""
 "<qt>The total user and system time that this process has been running for, "
 "displayed as minutes:seconds."
 msgstr ""
+"<qt>Пайдаланушысы және оған бұл процесс жүмсаған (минут:секунд деп "
+"көрсетілген) жүйелік уақыты."
 
 #: ProcessModel.cc:870
 msgid ""
@@ -1083,7 +1085,6 @@ msgstr ""
 "жоқ дерлік.</qt>"
 
 #: ProcessModel.cc:872
-#, fuzzy
 msgid ""
 "<qt>This is the amount of real physical memory that this process is using by "
 "itself, and approximates the Private memory usage of the process.<br>It does "
@@ -1091,28 +1092,28 @@ msgid ""
 "libraries.<br>This is often the most useful figure to judge the memory use "
 "of a program.  See What's This for more information.</qt>"
 msgstr ""
-"<qt>Бұл процесс өзі ғана жұмсаған шын физикалық жад көлемі.<br>Бұған своп "
-"жады да, ортақ жиындардың кодының мөлшері де кірмейді.<br>Бұл іс жүзіндегі "
-"бағдарламаның талап ететін жад мөлшерінің көрсеткіші.</qt>"
+"<qt>Бұл процесс өзі ғана жұмсаған шын физикалық жад көлемі, және "
+"процесс жүмсаған Жеке жад көлемін жуықтауы.<br>Бұған своп "
+"жады да, ортақ жиын файлдар кодының мөлшері де кірмейді.<br>Бұл іс жүзіндегі "
+"бағдарламаның талап ететін жад мөлшерінің көрсеткіші. Толығрақ 'Бұл не?' "
+"мәліметінен біле аласыз.</qt>"
 
 #: ProcessModel.cc:874
-#, fuzzy
 msgid ""
 "<qt>This is approximately the amount of real physical memory that this "
 "process's shared libraries are using.<br>This memory is shared among all "
 "processes that use this library.</qt>"
 msgstr ""
-"<qt>Бұл процестің ортақ жиындары жұмсаған шын физикалық жад көлемі.<br>Бұл "
-"жад осы жиынды пайдаланатын барлық процестеріне ортақ</qt>"
+"<qt>Бұл процестің ортақ жиын файлдар жұмсаған шын физикалық жад көлемінің "
+"жуықтауы.<br>Бұл жад осы жиынды пайдаланатын барлық процестеріне ортақ.</qt>"
 
 #: ProcessModel.cc:876
 msgid "<qt>The command with which this process was launched.</qt>"
 msgstr "<qt>Процесті жеккен командасы.</qt>"
 
 #: ProcessModel.cc:878
-#, fuzzy
 msgid "<qt>The amount of pixmap memory that this process is using.</qt>"
-msgstr "<qt>Процестің барлық терезеленінің атауы.</qt>"
+msgstr "<qt>Процестің кескін растрларға жұмсаған жад көлемі.</qt>"
 
 #: ProcessModel.cc:880
 msgid "<qt>The title of any windows that this process is showing.</qt>"
@@ -1186,7 +1187,6 @@ msgstr ""
 "белгіленген."
 
 #: ProcessModel.cc:909
-#, fuzzy
 msgid ""
 "<qt><i>Technical information: </i>This is an approximation of the Private "
 "memory usage, calculated as VmRSS - Shared, from /proc/*/statm.  This tends "
@@ -1196,11 +1196,14 @@ msgid ""
 "For an individual process, see \"Detailed  Memory Information\" for a more "
 "accurate, but slower, calculation of the true Private memory usage."
 msgstr ""
-"<qt><i>Техникалық мәлімет: </i>>Бұл URSS (Unique Resident Set Size) деген "
-"көрсеткіш, ол /proc/*/statm дерегінің негізінде VmRSS - Shared деп "
-"есептелген. Бұл процесс 'шын' пайдаланған жадыны бағалауының төменгі шегіне "
-"жуық (бірақ Е/Ш мақсатына арнаған жад парақтарын есепке алмайтын) мән. Бұл "
-"бағалаудың жақсысы - тез есептелуде."
+"<qt><i>Техникалық мәлімет: </i>>Бұл Жеке жад көлемінің жүмсауын "
+"жуықтауы, ол /proc/*/statm дерегінің негізінде VmRSS - Shared деп "
+"есептелген. Бұл процесс 'шын' пайдаланған Жеке жадыны бағалауының "
+"төменгі шегіне жуық (бірақ Е/Ш мақсатына арнаған жад парақтарын есепке "
+"алмайтын) мән. Бұл тез есептелетін ең жақын жуықтауы. Кейбірде бұны "
+"URSS (Unique Resident Set Size) деп атайды. Бөлек процестің шын Жеке "
+"жад көлемінің жүмсауын \"Жад туралы егжей-текжейлі мәлімет\" деген "
+"баяу есептелетін, бірақ нақтырақ мәліметінен біле аласыз."
 
 #: ProcessModel.cc:911
 msgid "The CPU usage of a process and all of its threads."
@@ -1212,9 +1215,12 @@ msgid ""
 "have been running on the CPU for. This can be greater than the wall clock "
 "time if the process has been across multiple CPU cores."
 msgstr ""
+"<qt>Бұл процесс пен оның барлық осы процессорда орындалған ағындары "
+"жүмсаған жалпы жүйелік және пайдаланушының уақыты. Процесі бірнеше "
+"поцессордың өзектерін арасында үлестірлген болса, бұл уақыт, сағат "
+"көрсететін уақыттан артық болмақ."
 
 #: ProcessModel.cc:915
-#, fuzzy
 msgid ""
 "<qt><i>Technical information: </i>This is an approximation of the Shared "
 "memory, called SHR in top.  It is the number of pages that are backed by a "
@@ -1222,9 +1228,12 @@ msgid ""
 "process, see \"Detailed Memory Information\" for a more accurate, but "
 "slower, calculation of the true Shared memory usage."
 msgstr ""
-"<qt><i>Техникалық мәлімет: </i>Бұл ортақ (Shared) жады, top дегенде SHR деп "
+"<qt><i>Техникалық мәлімет: </i>Бұл Ортақ (Shared) жады, top дегенде SHR деп "
 "аталған. Бұл файл арнап қойған жад парақтарының саны (өзек туралы "
-"Documentation/filesystems/proc.txt құжатын қараңыз.)"
+"Documentation/filesystems/proc.txt құжатын қараңыз.) Бөлек процестің шын "
+"Ортақ "
+"жад көлемінің жүмсауын \"Жад туралы егжей-текжейлі мәлімет\" деген "
+"баяу есептелетін, бірақ нақтырақ мәліметінен біле аласыз."
 
 #: ProcessModel.cc:917
 msgid "<qt><i>Technical information: </i>This is from /proc/*/cmdline"
@@ -1239,6 +1248,12 @@ msgid ""
 "fonts, cursors, glyphsets etc.  See the <code>xrestop</code> program for a "
 "more detailed breakdown."
 msgstr ""
+"<qt><i>Техникалық мәлімет: </i>>Бұл Xorg процесі кескіндері үшін "
+"жүмсаған жад көлемі. Бұл жад 'Жад' және 'Ортақ жады' дегендерге "
+"қосылады. <br><i>Техникалық мәлімет: </i>>Бұған так растрлық "
+"кескіндерге кеткен ғана жад кіреді, қаріп, меңзер, т.б.с.сияқтыларға "
+"жүмсалған жад кірмейді. Егжей-текжейін <code>xrestop</code> "
+"бағдарламасынан біле аласыз,"
 
 #: ProcessModel.cc:921
 msgid ""
@@ -1391,30 +1406,27 @@ msgid "%1 (uid: %2)"
 msgstr "%1 (uid: %2)"
 
 #: ProcessModel.cc:1122
-#, fuzzy
 msgctxt "scheduler"
 msgid "Idle"
-msgstr "Бос"
+msgstr "Іссіз"
 
-#: ProcessModel.cc:1124
-#, fuzzy, kde-format
+#: ProcessModel.cc:1124, kde-format
 msgctxt "scheduler"
 msgid "(Batch) %1"
-msgstr "Дестелік"
+msgstr "(Дестелік) %1"
 
 #: ProcessModel.cc:1126
 #, kde-format
 msgctxt "Round robin scheduler"
 msgid "RR %1"
-msgstr ""
+msgstr "Тұйық кезек %1"
 
 #: ProcessModel.cc:1129
 msgctxt "Real Time scheduler"
 msgid "RT"
-msgstr ""
+msgstr "Толық уақытты"
 
-#: ProcessModel.cc:1131
-#, fuzzy, kde-format
+#: ProcessModel.cc:1131, kde-format
 msgctxt "First in first out scheduler"
 msgid "FIFO %1"
 msgstr "FIFO"
@@ -1500,7 +1512,7 @@ msgstr "Артықшылық деңгейі: %1 (%2)"
 #: ProcessModel.cc:1322
 #, kde-format
 msgid "This is a real time process.<br>Scheduler priority: %1"
-msgstr ""
+msgstr "Бұл толық уақытты процесі.<br>Жоспарлау артықшылығы: %1"
 
 #: ProcessModel.cc:1328
 #, kde-format
@@ -1630,10 +1642,9 @@ msgid "CPU %"
 msgstr "CPU %"
 
 #: ProcessModel.cc:1687
-#, fuzzy
 msgctxt "process heading"
 msgid "CPU Time"
-msgstr "CPU %"
+msgstr "Процессор уақыты"
 
 #: ProcessModel.cc:1688
 msgctxt "process heading"
@@ -1666,10 +1677,9 @@ msgid "Command"
 msgstr "Команда"
 
 #: ProcessModel.cc:1695
-#, fuzzy
 msgctxt "process heading"
 msgid "X11 Memory"
-msgstr "Жады"
+msgstr "X11 жады"
 
 #: ProcessModel.cc:1696
 msgctxt "process heading"
@@ -1697,9 +1707,8 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ReniceDlg.cc:39
-#, fuzzy
 msgid "Set Priority"
-msgstr "Төмен артықшылық"
+msgstr "Артықшылығын орнату"
 
 #~ msgid "Scheduler priority: %1"
 #~ msgstr "Жоспарлағыш артықшылығы: %1"
