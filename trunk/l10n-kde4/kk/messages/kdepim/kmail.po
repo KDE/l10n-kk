@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-10 04:42+0200\n"
+"POT-Creation-Date: 2010-04-11 05:14+0200\n"
 "PO-Revision-Date: 2008-02-05 10:57+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -327,7 +327,7 @@ msgstr "Жойылған"
 
 #: kmfilterdlg.cpp:771 collectiongeneralpage.cpp:146
 #: managesievescriptsdialog.cpp:366 attachmentcontroller.cpp:606
-#: kmcomposewin.cpp:2914
+#: kmcomposewin.cpp:2915
 msgid "unnamed"
 msgstr "аталмаған "
 
@@ -1077,6 +1077,16 @@ msgstr "Ескі хаттарды %1 қапшығынан %2 қапшығына 
 msgid "There is nothing to undo."
 msgstr "Қайтатын әрекет жоқ."
 
+#: kmmainwin.cpp:57
+msgid "New &Window"
+msgstr "Жаңа &терезе"
+
+#: kmmainwin.cpp:205
+#, fuzzy
+#| msgid "Subscription..."
+msgid "Starting..."
+msgstr "Жазылу..."
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -1213,16 +1223,6 @@ msgstr ""
 "пайдаланғанда ғана істемейді.</p>\n"
 "<p align=\"right\"><em>David F. Newman қосқан үлесі</em></p>\n"
 
-#: kmmainwin.cpp:57
-msgid "New &Window"
-msgstr "Жаңа &терезе"
-
-#: kmmainwin.cpp:205
-#, fuzzy
-#| msgid "Subscription..."
-msgid "Starting..."
-msgstr "Жазылу..."
-
 #: kmsearchpattern.h:249
 #, fuzzy
 #| msgid "Important"
@@ -1344,22 +1344,13 @@ msgstr "'%1' беймәлім қапшығы"
 msgid "Please select a folder"
 msgstr "Әрекетті таңдаңыз."
 
-#: util.cpp:69
-#, kde-format
-msgid "Distribution list \"%1\" is empty, it cannot be used."
-msgstr ""
-
-#: util.cpp:70 util.cpp:79 identitydialog.cpp:536
-msgid "Invalid Email Address"
-msgstr "Жарамсыз эл.пошта адресі"
-
-#: util.cpp:182
+#: util.cpp:154
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the account wizard. Please check your installation."
 msgstr "Куәліктер менеджері жегілмеді. Орнатылғанын тексеріңіз."
 
-#: util.cpp:184
+#: util.cpp:156
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start account wizard"
@@ -1698,7 +1689,7 @@ msgstr "KMail желіге қосылды. Барлық желілік тапс�
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr "KMail желіден тыс режімде істеп тұр. Нені қалайсыз?"
 
-#: kmkernel.cpp:887 kmcomposewin.cpp:3100
+#: kmkernel.cpp:887 kmcomposewin.cpp:3101
 msgid "Online/Offline"
 msgstr "Желіде/Желіден тыс"
 
@@ -2032,12 +2023,12 @@ msgid ""
 msgstr ""
 "Бұл батырма бар адрестерден керек алушының таңдауға арналған диалогын ашады."
 
-#: redirectdialog.cpp:87 kmcomposewin.cpp:3369
+#: redirectdialog.cpp:87 kmcomposewin.cpp:3392
 msgid "&Send Now"
 msgstr "&Қазір жіберу"
 
-#: redirectdialog.cpp:88 kmcomposewin.cpp:1133 kmcomposewin.cpp:1142
-#: kmcomposewin.cpp:3370
+#: redirectdialog.cpp:88 kmcomposewin.cpp:1134 kmcomposewin.cpp:1143
+#: kmcomposewin.cpp:3393
 msgid "Send &Later"
 msgstr "&Кейінірек жіберу"
 
@@ -2048,6 +2039,16 @@ msgstr "Адресін көрсетпей хатты басқаға жібере
 #: redirectdialog.cpp:123
 msgid "Empty Redirection Address"
 msgstr "Басқаға жіберетін адрес жоқ"
+
+#: addressvalidationjob.cpp:288
+#, kde-format
+msgid "Distribution list \"%1\" is empty, it cannot be used."
+msgstr ""
+
+#: addressvalidationjob.cpp:290 addressvalidationjob.cpp:299
+#: identitydialog.cpp:536
+msgid "Invalid Email Address"
+msgstr "Жарамсыз эл.пошта адресі"
 
 #: rulewidgethandlermanager.cpp:406 rulewidgethandlermanager.cpp:726
 #: rulewidgethandlermanager.cpp:1233
@@ -6369,7 +6370,7 @@ msgstr "Желідегі күй-жайы (беймәлім)"
 msgid "Send Queued Messages Via"
 msgstr "Кезектегі хаттарды жіберу жолы"
 
-#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1201
+#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1202
 msgid "&Address Book"
 msgstr "&Адрес кітапшасы"
 
@@ -7000,7 +7001,7 @@ msgstr "&Ашық кілтті тіркеу..."
 msgid "Attach &My Public Key"
 msgstr "&Менің ашық кілтімді тіркеу"
 
-#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1993
+#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1994
 msgid "&Attach File..."
 msgstr "Файлды &тіркеу..."
 
@@ -8582,7 +8583,7 @@ msgstr "Қолтаңба"
 msgid "Picture"
 msgstr "&Сурет"
 
-#: identitydialog.cpp:561
+#: identitydialog.cpp:571
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -8595,7 +8596,7 @@ msgstr ""
 "Бұл алушы жағында қолтаңбаны тексеру кезінде ескерту хабарларының пайда "
 "болуға себеп болуы мүмкін."
 
-#: identitydialog.cpp:569
+#: identitydialog.cpp:579
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
@@ -8604,7 +8605,7 @@ msgstr ""
 "Бапталған OpenPGP шифрлау кілттерінің біреуінде, осы іс-әлпеті (%1) үшін, эл."
 "пошта адресі көрсетілген пайдаланушының идентификаторы жоқ."
 
-#: identitydialog.cpp:575
+#: identitydialog.cpp:585
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -8617,7 +8618,7 @@ msgstr ""
 "Бұл алушы жағында қолтаңбаны тексеру кезінде ескерту хабарларының пайда "
 "болуға себеп болуы мүмкін."
 
-#: identitydialog.cpp:583
+#: identitydialog.cpp:593
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
@@ -8626,20 +8627,20 @@ msgstr ""
 "Бапталған S/MIME шифрлау куәлігінің біреуінде, осы іс-әлпеті (%1) үшін, эл."
 "пошта адресі көрсетілген пайдаланушының идентификаторы жоқ."
 
-#: identitydialog.cpp:591
+#: identitydialog.cpp:601
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "Кілтте/куәлікте эл.пошта адресі табылмады"
 
-#: identitydialog.cpp:606
+#: identitydialog.cpp:616
 msgid "The signature file is not valid"
 msgstr "Қолтаңба файлы жарамсыз"
 
-#: identitydialog.cpp:626
+#: identitydialog.cpp:636
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "\"%1\" іс-әлпетін өңдеу"
 
-#: identitydialog.cpp:656
+#: identitydialog.cpp:666
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
@@ -8648,7 +8649,7 @@ msgstr ""
 "\"%1\" іс-әлпетінде жіберілген поштаға арнап қойған қапшығы (енді) жоқ; "
 "сондықтан әдеттегі қапшық қолданылады."
 
-#: identitydialog.cpp:668
+#: identitydialog.cpp:678
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -8657,7 +8658,7 @@ msgstr ""
 "\"%1\" іс-әлпетінде жоба жазбаға арнап қойған қапшығы (енді) жоқ; сондықтан "
 "әдеттегі қапшық қолданылады."
 
-#: identitydialog.cpp:680
+#: identitydialog.cpp:690
 #, fuzzy, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -8939,116 +8940,116 @@ msgid ""
 "the filter will fallback to the default address book.</p>"
 msgstr ""
 
-#: kmcomposewin.cpp:222
+#: kmcomposewin.cpp:223
 #, fuzzy
 #| msgid "Remove Identity"
 msgid "Select an identity for this message"
 msgstr "Іс-әлпетін өшіру"
 
-#: kmcomposewin.cpp:225
+#: kmcomposewin.cpp:226
 msgid "Select the dictionary to use when spell-checking this message"
 msgstr ""
 
-#: kmcomposewin.cpp:229
+#: kmcomposewin.cpp:230
 msgid "Select the sent-mail folder where a copy of this message will be saved"
 msgstr ""
 
-#: kmcomposewin.cpp:236
+#: kmcomposewin.cpp:237
 msgid "Select the outgoing account to use for sending this message"
 msgstr ""
 
-#: kmcomposewin.cpp:238
+#: kmcomposewin.cpp:239
 msgid "Set the \"From:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:240
+#: kmcomposewin.cpp:241
 msgid "Set the \"Reply-To:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:251
+#: kmcomposewin.cpp:252
 #, fuzzy
 #| msgid "Set subject of message"
 msgid "Set a subject for this message"
 msgstr "Хат тақырыбы"
 
-#: kmcomposewin.cpp:252
+#: kmcomposewin.cpp:253
 msgid "&Identity:"
 msgstr "&Іс-әлпеті:"
 
-#: kmcomposewin.cpp:253
+#: kmcomposewin.cpp:254
 msgid "&Dictionary:"
 msgstr "&Сөздік:"
 
-#: kmcomposewin.cpp:254
+#: kmcomposewin.cpp:255
 msgid "&Sent-Mail folder:"
 msgstr "&Жіберілген пошта қапшығы:"
 
-#: kmcomposewin.cpp:255
+#: kmcomposewin.cpp:256
 msgid "&Mail transport:"
 msgstr "Жіберу ә&дісі:"
 
-#: kmcomposewin.cpp:256
+#: kmcomposewin.cpp:257
 msgctxt "sender address field"
 msgid "&From:"
 msgstr "&Кімнен:"
 
-#: kmcomposewin.cpp:257
+#: kmcomposewin.cpp:258
 msgid "&Reply to:"
 msgstr "Жа&уап адресі:"
 
-#: kmcomposewin.cpp:258
+#: kmcomposewin.cpp:259
 #, fuzzy
 #| msgid "S&ubject:"
 msgctxt "@label:textbox Subject of email."
 msgid "S&ubject:"
 msgstr "&Тақырыбы:"
 
-#: kmcomposewin.cpp:259
+#: kmcomposewin.cpp:260
 #, fuzzy
 #| msgid "Sticky"
 msgctxt "@option:check Sticky identity."
 msgid "Sticky"
 msgstr "Тұрақты"
 
-#: kmcomposewin.cpp:261
+#: kmcomposewin.cpp:262
 msgid "Use the selected value as your identity for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:263
+#: kmcomposewin.cpp:264
 msgid "Use the selected value as your sent-mail folder for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:265
+#: kmcomposewin.cpp:266
 msgid "Use the selected value as your outgoing account for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:267
+#: kmcomposewin.cpp:268
 msgid "Use the selected value as your dictionary for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:350 kmcomposewin.cpp:2278 configuredialog.cpp:925
+#: kmcomposewin.cpp:351 kmcomposewin.cpp:2279 configuredialog.cpp:925
 msgid "Composer"
 msgstr "Құрастырғыш"
 
-#: kmcomposewin.cpp:677
+#: kmcomposewin.cpp:678
 #, fuzzy
 #| msgid "Could not write the file %1."
 msgid "Could not write all data to file."
 msgstr "%1 деген файл жазылмады."
 
-#: kmcomposewin.cpp:681
+#: kmcomposewin.cpp:682
 #, fuzzy
 #| msgid "Could not write the file %1."
 msgid "Could not finalize the file."
 msgstr "%1 деген файл жазылмады."
 
-#: kmcomposewin.cpp:686
+#: kmcomposewin.cpp:687
 #, fuzzy
 #| msgid "Cannot open file:"
 msgid "Could not open file."
 msgstr "Ашылмаған файл:"
 
-#: kmcomposewin.cpp:692
+#: kmcomposewin.cpp:693
 #, fuzzy, kde-format
 #| msgid ""
 #| "Autosaving the message as %1 failed.\n"
@@ -9061,241 +9062,241 @@ msgstr ""
 "Хатты %1 ретінде автосақтау қатесі.\n"
 "Себебі: %2"
 
-#: kmcomposewin.cpp:698
+#: kmcomposewin.cpp:699
 #, fuzzy
 #| msgid "Autosaving Failed"
 msgid "Autosaving Message Failed"
 msgstr "Автосақтау қатесі"
 
-#: kmcomposewin.cpp:1123 kmcomposewin.cpp:1149
+#: kmcomposewin.cpp:1124 kmcomposewin.cpp:1150
 msgid "&Send Mail"
 msgstr "&Хатты жіберу"
 
-#: kmcomposewin.cpp:1129 kmcomposewin.cpp:1154
+#: kmcomposewin.cpp:1130 kmcomposewin.cpp:1155
 msgid "&Send Mail Via"
 msgstr "&Эл.поштаны жіберу жолы"
 
-#: kmcomposewin.cpp:1130
+#: kmcomposewin.cpp:1131
 #, fuzzy
 msgid "Send"
 msgstr "&Жіберу"
 
-#: kmcomposewin.cpp:1136 kmcomposewin.cpp:1146
+#: kmcomposewin.cpp:1137 kmcomposewin.cpp:1147
 msgid "Send &Later Via"
 msgstr "&Кейінірек жіберу жолы"
 
-#: kmcomposewin.cpp:1137
+#: kmcomposewin.cpp:1138
 #, fuzzy
 #| msgid "Queued"
 msgctxt "Queue the message for sending at a later date"
 msgid "Queue"
 msgstr "Кезекке қойылған"
 
-#: kmcomposewin.cpp:1181
+#: kmcomposewin.cpp:1182
 #, fuzzy
 msgid "Save as &Draft"
 msgstr "Жоба жазу ретінде &сақтау"
 
-#: kmcomposewin.cpp:1185
+#: kmcomposewin.cpp:1186
 #, fuzzy
 msgid "Save as &Template"
 msgstr "Жоба жазу ретінде &сақтау"
 
-#: kmcomposewin.cpp:1189
+#: kmcomposewin.cpp:1190
 msgid "&Insert File..."
 msgstr "&Файлды ендіру..."
 
-#: kmcomposewin.cpp:1193
+#: kmcomposewin.cpp:1194
 msgid "&Insert File Recent"
 msgstr "Жуырдағы файлды &енгізу"
 
-#: kmcomposewin.cpp:1204
+#: kmcomposewin.cpp:1205
 msgid "&New Composer"
 msgstr "Ж&аңа құрастығыш"
 
-#: kmcomposewin.cpp:1208
+#: kmcomposewin.cpp:1209
 msgid "New Main &Window"
 msgstr "Жаңа негізгі &терезе"
 
-#: kmcomposewin.cpp:1212
+#: kmcomposewin.cpp:1213
 msgid "Select &Recipients..."
 msgstr "&Алушыларды таңдау..."
 
-#: kmcomposewin.cpp:1216
+#: kmcomposewin.cpp:1217
 msgid "Save &Distribution List..."
 msgstr "&Тарату тізімін сақтау..."
 
-#: kmcomposewin.cpp:1238
+#: kmcomposewin.cpp:1239
 msgid "Paste as Attac&hment"
 msgstr "&Тіркеме қылып орналастыру"
 
-#: kmcomposewin.cpp:1242
+#: kmcomposewin.cpp:1243
 msgid "Cl&ean Spaces"
 msgstr "Бос орындардан та&зарту"
 
-#: kmcomposewin.cpp:1246
+#: kmcomposewin.cpp:1247
 msgid "Use Fi&xed Font"
 msgstr "Ені б&ірыңғай қаріп"
 
-#: kmcomposewin.cpp:1253
+#: kmcomposewin.cpp:1254
 #, fuzzy
 #| msgid "&Urgent"
 msgctxt "@action:inmenu Mark the email as urgent."
 msgid "&Urgent"
 msgstr "&Жедел"
 
-#: kmcomposewin.cpp:1255
+#: kmcomposewin.cpp:1256
 msgid "&Request Disposition Notification"
 msgstr "Не істелген туралы хабарламаны &сұрау"
 
-#: kmcomposewin.cpp:1261
+#: kmcomposewin.cpp:1262
 msgid "&Wordwrap"
 msgstr "&Сөздерді тасымалдау"
 
-#: kmcomposewin.cpp:1266
+#: kmcomposewin.cpp:1267
 msgid "&Snippets"
 msgstr ""
 
-#: kmcomposewin.cpp:1273
+#: kmcomposewin.cpp:1274
 msgid "&Automatic Spellchecking"
 msgstr "Емлені &автоматты түрде тексеру"
 
-#: kmcomposewin.cpp:1290
+#: kmcomposewin.cpp:1291
 msgid "Formatting (HTML)"
 msgstr "Пішімдеу (HTML)"
 
-#: kmcomposewin.cpp:1291
+#: kmcomposewin.cpp:1292
 #, fuzzy
 #| msgid "Use HTML"
 msgid "HTML"
 msgstr "HTML-ды қолдану"
 
-#: kmcomposewin.cpp:1295
+#: kmcomposewin.cpp:1296
 msgid "&All Fields"
 msgstr "&Барлық өрістерді"
 
-#: kmcomposewin.cpp:1298
+#: kmcomposewin.cpp:1299
 msgid "&Identity"
 msgstr "&Іс-әлпеті"
 
-#: kmcomposewin.cpp:1301
+#: kmcomposewin.cpp:1302
 msgid "&Dictionary"
 msgstr "&Сөздік"
 
-#: kmcomposewin.cpp:1304
+#: kmcomposewin.cpp:1305
 msgid "&Sent-Mail Folder"
 msgstr "&Жіберілген пошта қапшығы"
 
-#: kmcomposewin.cpp:1307
+#: kmcomposewin.cpp:1308
 msgid "&Mail Transport"
 msgstr "&Жіберу әдісі"
 
-#: kmcomposewin.cpp:1310
+#: kmcomposewin.cpp:1311
 msgid "&From"
 msgstr "&Кімнен"
 
-#: kmcomposewin.cpp:1313
+#: kmcomposewin.cpp:1314
 msgid "&Reply To"
 msgstr "&Жауап адресі"
 
-#: kmcomposewin.cpp:1317
+#: kmcomposewin.cpp:1318
 #, fuzzy
 #| msgid "S&ubject"
 msgctxt "@action:inmenu Show the subject in the composer window."
 msgid "S&ubject"
 msgstr "&Тақырыбы"
 
-#: kmcomposewin.cpp:1322
+#: kmcomposewin.cpp:1323
 msgid "Append S&ignature"
 msgstr "Қ&олтаңбамен жалғау"
 
-#: kmcomposewin.cpp:1325
+#: kmcomposewin.cpp:1326
 #, fuzzy
 #| msgid "Append S&ignature"
 msgid "Pr&epend Signature"
 msgstr "Қ&олтаңбамен жалғау"
 
-#: kmcomposewin.cpp:1328
+#: kmcomposewin.cpp:1329
 msgid "Insert Signature At C&ursor Position"
 msgstr ""
 
-#: kmcomposewin.cpp:1346
+#: kmcomposewin.cpp:1347
 msgid "&Spellchecker..."
 msgstr "&Емлені тексеру..."
 
-#: kmcomposewin.cpp:1347
+#: kmcomposewin.cpp:1348
 msgid "Spellchecker"
 msgstr "Емлесін тексеру"
 
-#: kmcomposewin.cpp:1352 kmcomposewin.cpp:1354
+#: kmcomposewin.cpp:1353 kmcomposewin.cpp:1355
 msgid "Encrypt Message with Chiasmus..."
 msgstr "Chiasmus-пен хатты шифрлау..."
 
-#: kmcomposewin.cpp:1362
+#: kmcomposewin.cpp:1363
 msgid "&Encrypt Message"
 msgstr "Хатты &шифрлау"
 
-#: kmcomposewin.cpp:1363
+#: kmcomposewin.cpp:1364
 msgid "Encrypt"
 msgstr "Шифрлау"
 
-#: kmcomposewin.cpp:1365
+#: kmcomposewin.cpp:1366
 msgid "&Sign Message"
 msgstr "Хатты қ&олтаңбалау"
 
-#: kmcomposewin.cpp:1366
+#: kmcomposewin.cpp:1367
 msgid "Sign"
 msgstr "Қолтаңба"
 
-#: kmcomposewin.cpp:1404
+#: kmcomposewin.cpp:1405
 msgid "&Cryptographic Message Format"
 msgstr "&Криптография пішімі"
 
-#: kmcomposewin.cpp:1410
+#: kmcomposewin.cpp:1411
 msgid "Select a cryptographic format for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:1413
+#: kmcomposewin.cpp:1414
 msgid "Reset Font Settings"
 msgstr "Қаріп параметрлерін ысыру"
 
-#: kmcomposewin.cpp:1414
+#: kmcomposewin.cpp:1415
 #, fuzzy
 msgid "Reset Font"
 msgstr "Қапшықты таңдау"
 
-#: kmcomposewin.cpp:1436
+#: kmcomposewin.cpp:1437
 #, fuzzy
 msgid "Configure KMail..."
 msgstr "KMail &баптаулары..."
 
-#: kmcomposewin.cpp:1446
+#: kmcomposewin.cpp:1447
 #, fuzzy, kde-format
 msgid " Spellcheck: %1 "
 msgstr "Емлесін тексеру"
 
-#: kmcomposewin.cpp:1447 kmcomposewin.cpp:3857
+#: kmcomposewin.cpp:1448 kmcomposewin.cpp:3880
 #, kde-format
 msgid " Column: %1 "
 msgstr " %1=баған  "
 
-#: kmcomposewin.cpp:1449 kmcomposewin.cpp:3855
+#: kmcomposewin.cpp:1450 kmcomposewin.cpp:3878
 #, fuzzy, kde-format
 #| msgid " Line: %1 "
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr " %1-жол "
 
-#: kmcomposewin.cpp:1915
+#: kmcomposewin.cpp:1916
 #, fuzzy
 msgid "Re&save as Template"
 msgstr "Жоба жазу ретінде &сақтау"
 
-#: kmcomposewin.cpp:1916
+#: kmcomposewin.cpp:1917
 msgid "&Save as Draft"
 msgstr "Жоба жазу ретінде &сақтау"
 
-#: kmcomposewin.cpp:1918
+#: kmcomposewin.cpp:1919
 #, fuzzy
 msgid ""
 "Resave this message in the Templates folder. It can then be used at a later "
@@ -9304,7 +9305,7 @@ msgstr ""
 "Жоба жазу қапшығында сақтау. Бұл хатты кез келгенде бітіріп, жіберуіңізге "
 "болады."
 
-#: kmcomposewin.cpp:1920
+#: kmcomposewin.cpp:1921
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
@@ -9312,15 +9313,15 @@ msgstr ""
 "Жоба жазу қапшығында сақтау. Бұл хатты кез келгенде бітіріп, жіберуіңізге "
 "болады."
 
-#: kmcomposewin.cpp:1924
+#: kmcomposewin.cpp:1925
 msgid "Do you want to save the message for later or discard it?"
 msgstr "Хатты әзірше сақтап қояйық па, әлде ысырып тастайық па?"
 
-#: kmcomposewin.cpp:1925
+#: kmcomposewin.cpp:1926
 msgid "Close Composer"
 msgstr "Құрастырғышын жабу"
 
-#: kmcomposewin.cpp:1989
+#: kmcomposewin.cpp:1990
 msgid ""
 "The message you have composed seems to refer to an attached file but you "
 "have not attached anything.\n"
@@ -9329,15 +9330,15 @@ msgstr ""
 "Хатыңызда тіркемеге сілтеме бар сияқты, бірақ ештеңе тіркелмеген.\n"
 "Файлды тіркейсіз бе?"
 
-#: kmcomposewin.cpp:1992
+#: kmcomposewin.cpp:1993
 msgid "File Attachment Reminder"
 msgstr "Тіркеме туралы ескерту"
 
-#: kmcomposewin.cpp:1994 kmcomposewin.cpp:3390
+#: kmcomposewin.cpp:1995 kmcomposewin.cpp:3413
 msgid "&Send as Is"
 msgstr "&Бар түрінде жіберу"
 
-#: kmcomposewin.cpp:2273
+#: kmcomposewin.cpp:2274
 #, kde-format
 msgid ""
 "Error composing message:\n"
@@ -9347,7 +9348,7 @@ msgid ""
 "Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:2275
+#: kmcomposewin.cpp:2276
 #, fuzzy, kde-format
 #| msgid "Error while copying messages."
 msgid ""
@@ -9356,17 +9357,17 @@ msgid ""
 "%1"
 msgstr "Хаттарды көшірмелеу кезінде қате пайда болды."
 
-#: kmcomposewin.cpp:2773
+#: kmcomposewin.cpp:2774
 #, fuzzy
 #| msgid "Paste as Attac&hment"
 msgid "Insert clipboard text as attachment"
 msgstr "&Тіркеме қылып орналастыру"
 
-#: kmcomposewin.cpp:2774 kmcomposereditor.cpp:190
+#: kmcomposewin.cpp:2775 kmcomposereditor.cpp:190
 msgid "Name of the attachment:"
 msgstr "Тіркеме атауы:"
 
-#: kmcomposewin.cpp:2942
+#: kmcomposewin.cpp:2943
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -9377,11 +9378,11 @@ msgstr ""
 "таңдалған (OpenPGP не S/MIME) кілттер жоқ.</p><p>Іс-әлпетін баптау "
 "диалогында кілтті таңдаңыз.</p></qt>"
 
-#: kmcomposewin.cpp:2949
+#: kmcomposewin.cpp:2950
 msgid "Undefined Encryption Key"
 msgstr "Шифрлау кілті аңықталмаған"
 
-#: kmcomposewin.cpp:2993
+#: kmcomposewin.cpp:2994
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
@@ -9390,11 +9391,11 @@ msgstr ""
 "<qt> <p>Хатты қолтаңбалау үшін, OpenPGP немесе S/MIME қолтаңбалау кілтін "
 "анықтау керек.</p><p>Іс-әлпетін баптау диалогында кілтті таңдаңыз.</p></qt>"
 
-#: kmcomposewin.cpp:3000
+#: kmcomposewin.cpp:3001
 msgid "Undefined Signing Key"
 msgstr "Қолтаңбалау кілті анықталмаған"
 
-#: kmcomposewin.cpp:3098
+#: kmcomposewin.cpp:3099
 #, fuzzy
 msgid ""
 "KMail is currently in offline mode. Your messages will be kept in the outbox "
@@ -9403,7 +9404,7 @@ msgstr ""
 "KMail желіден тыс режімде, хатыңыз желіге қосылғанша шығыс қапшығында "
 "сақталады."
 
-#: kmcomposewin.cpp:3115
+#: kmcomposewin.cpp:3116
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
@@ -9413,7 +9414,7 @@ msgstr ""
 "эл.пошта адресіңізді, әрбір хатты жіберген сайын оны теріп отырмау үшін, "
 "барлық іс-әлпеттерінде келтіріңіз."
 
-#: kmcomposewin.cpp:3124
+#: kmcomposewin.cpp:3125
 msgid ""
 "You must specify at least one receiver,either in the To: field or as CC or "
 "as BCC."
@@ -9421,57 +9422,57 @@ msgstr ""
 "Кемінде бір алушының адресін келтіруіңіз қажет, \"Кімге\" деген өрісте "
 "немесе \"Көшірмесі\", әлде \"Жасырын көшірмесі\" өрістеріне."
 
-#: kmcomposewin.cpp:3130
+#: kmcomposewin.cpp:3131
 #, fuzzy
 msgid "To: field is empty. Send message anyway?"
 msgstr "Тақырыбын келтірмедіңіз. Хат тақырыпсыз жіберіле берсін бе?"
 
-#: kmcomposewin.cpp:3132
+#: kmcomposewin.cpp:3133
 #, fuzzy
 msgid "No To: specified"
 msgstr "Атауы келтірілмеген"
 
-#: kmcomposewin.cpp:3159
+#: kmcomposewin.cpp:3147
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "Тақырыбын келтірмедіңіз. Хат тақырыпсыз жіберіле берсін бе?"
 
-#: kmcomposewin.cpp:3161
+#: kmcomposewin.cpp:3149
 msgid "No Subject Specified"
 msgstr "Тақырыбы келтірілмеген"
 
-#: kmcomposewin.cpp:3162
+#: kmcomposewin.cpp:3150
 msgid "S&end as Is"
 msgstr "Ж&іберіле берсін"
 
-#: kmcomposewin.cpp:3163
+#: kmcomposewin.cpp:3151
 msgid "&Specify the Subject"
 msgstr "&Тақырыпты келтіру"
 
-#: kmcomposewin.cpp:3200
+#: kmcomposewin.cpp:3223
 msgid "&Keep markup, do not sign/encrypt"
 msgstr "&Пішімдеуді сақтау, қолтаңбалаусыз/шифрлаусыз"
 
-#: kmcomposewin.cpp:3201
+#: kmcomposewin.cpp:3224
 msgid "&Keep markup, do not encrypt"
 msgstr "&Пішімдеуді сақтау, шифрлаусыз"
 
-#: kmcomposewin.cpp:3202
+#: kmcomposewin.cpp:3225
 msgid "&Keep markup, do not sign"
 msgstr "&Пішімдеуді сақтау, қолтаңбалаусыз"
 
-#: kmcomposewin.cpp:3204
+#: kmcomposewin.cpp:3227
 msgid "Sign/Encrypt (delete markup)"
 msgstr "Қолтаңбалау/шифрлау (пішімдеуді өшіру)"
 
-#: kmcomposewin.cpp:3205
+#: kmcomposewin.cpp:3228
 msgid "Encrypt (delete markup)"
 msgstr "Шифрлау (пішімдеуді өшіру)"
 
-#: kmcomposewin.cpp:3206
+#: kmcomposewin.cpp:3229
 msgid "Sign (delete markup)"
 msgstr "Қолтаңбалау (пішімдеуді өшіру)"
 
-#: kmcomposewin.cpp:3208
+#: kmcomposewin.cpp:3231
 msgid ""
 "<qt><p>Inline signing/encrypting of HTML messages is not possible;</p><p>do "
 "you want to delete your markup?</p></qt>"
@@ -9479,11 +9480,11 @@ msgstr ""
 "<qt><p>HTML пішімдегі хаттарын қолтаңбалау/шифрлау мүмкін емес.</"
 "p><p>Пішімдеуі өшірілсін бе?</p></qt>"
 
-#: kmcomposewin.cpp:3210
+#: kmcomposewin.cpp:3233
 msgid "Sign/Encrypt Message?"
 msgstr "Хатты қолтаңбалау/шифрлау керек пе?"
 
-#: kmcomposewin.cpp:3262
+#: kmcomposewin.cpp:3285
 #, fuzzy, kde-format
 msgid ""
 "The custom drafts or templates folder for identify \"%1\" does not exist "
@@ -9492,60 +9493,60 @@ msgstr ""
 "\"%1\" іс-әлпетінде жоба жазбаға арнап қойған қапшығы (енді) жоқ; сондықтан "
 "әдеттегі қапшық қолданылады."
 
-#: kmcomposewin.cpp:3367
+#: kmcomposewin.cpp:3390
 msgid "About to send email..."
 msgstr "Хат жіберілуге дайын..."
 
-#: kmcomposewin.cpp:3368
+#: kmcomposewin.cpp:3391
 msgid "Send Confirmation"
 msgstr "Құптауды жіберу"
 
-#: kmcomposewin.cpp:3388
+#: kmcomposewin.cpp:3411
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr ""
 
-#: kmcomposewin.cpp:3389
+#: kmcomposewin.cpp:3412
 #, fuzzy
 #| msgid "No recipients"
 msgid "Too many recipients"
 msgstr "Алушылар жоқ"
 
-#: kmcomposewin.cpp:3391
+#: kmcomposewin.cpp:3414
 #, fuzzy
 #| msgid "Additional Recipients"
 msgid "&Edit Recipients"
 msgstr "Қосымша алушылар"
 
-#: kmcomposewin.cpp:3479
+#: kmcomposewin.cpp:3502
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose the formatting?"
 msgstr ""
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 #, fuzzy
 #| msgid "Login Information"
 msgid "Lose Formatting"
 msgstr "Тіркеу мәліметі"
 
-#: kmcomposewin.cpp:3535
+#: kmcomposewin.cpp:3558
 #, fuzzy
 msgid "Spellcheck: on"
 msgstr "Емлесін тексеру"
 
-#: kmcomposewin.cpp:3537
+#: kmcomposewin.cpp:3560
 #, fuzzy
 msgid "Spellcheck: off"
 msgstr "Емлесін тексеру"
 
-#: kmcomposewin.cpp:3903
+#: kmcomposewin.cpp:3926
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
@@ -9555,7 +9556,7 @@ msgstr ""
 "Бұны баптау диалогындағы \"Қауіпсіздік\" бетіндегі \"Крипто протоколдар\" "
 "қойындысында істей аласыз."
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3930
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
@@ -9563,11 +9564,11 @@ msgstr ""
 "libkleopatra жиыны Chiasmus-ты қолдауынсыз жинақталған сияқты. Оны --enable-"
 "chiasmus параметрімен қайта компиляциялаған жөн."
 
-#: kmcomposewin.cpp:3910
+#: kmcomposewin.cpp:3933
 msgid "No Chiasmus Backend Configured"
 msgstr "Chiasmus протоколы бапталмаған"
 
-#: kmcomposewin.cpp:3916
+#: kmcomposewin.cpp:3939
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -9575,11 +9576,11 @@ msgstr ""
 "Chiasmus бағдарламасы \"x-obtain-keys\" функциясын ұсынбады. Қате туралы "
 "хабарлаңыз."
 
-#: kmcomposewin.cpp:3918 kmcomposewin.cpp:3923 kmcomposewin.cpp:3932
+#: kmcomposewin.cpp:3941 kmcomposewin.cpp:3946 kmcomposewin.cpp:3955
 msgid "Chiasmus Backend Error"
 msgstr "Chiasmus бағдарламасының қатесі"
 
-#: kmcomposewin.cpp:3929
+#: kmcomposewin.cpp:3952
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -9587,7 +9588,7 @@ msgstr ""
 "Chiasmus бағдарламасы күтпеген мәнді қайтарды. Оның \"x-obtain-keys\" "
 "функциясы жолдар тізімін қайтару тиіс емес. Қате туралы хабарлаңыз."
 
-#: kmcomposewin.cpp:3938
+#: kmcomposewin.cpp:3961
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -9595,33 +9596,33 @@ msgstr ""
 "Кілттер табылмады. Chiasmus баптау параметрлеріндегі кілттің жолын "
 "дұрыстаңыз."
 
-#: kmcomposewin.cpp:3941
+#: kmcomposewin.cpp:3964
 msgid "No Chiasmus Keys Found"
 msgstr "Chiasmus кілттері табылмады"
 
-#: kmcomposewin.cpp:3945
+#: kmcomposewin.cpp:3968
 msgid "Chiasmus Encryption Key Selection"
 msgstr "Chiasmus шифрлау кілтін таңдау"
 
-#: kmcomposewin.cpp:3974
+#: kmcomposewin.cpp:3997
 #, fuzzy
 #| msgid "Message was signed by %1."
 msgid "Message will be signed"
 msgstr "Хатты %1 қолтаңбаланған."
 
-#: kmcomposewin.cpp:3975
+#: kmcomposewin.cpp:3998
 #, fuzzy
 #| msgid "Message List - Date Field"
 msgid "Message will not be signed"
 msgstr "Хабарлар тізімі - күн өрісі"
 
-#: kmcomposewin.cpp:3977
+#: kmcomposewin.cpp:4000
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will be encrypted"
 msgstr "Жіберілген хаттар &шифрланған түрде сақталсын"
 
-#: kmcomposewin.cpp:3978
+#: kmcomposewin.cpp:4001
 #, fuzzy
 #| msgid "Store sent messages encry&pted"
 msgid "Message will not be encrypted"
