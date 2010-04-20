@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-04-03 01:20+0200\n"
-"PO-Revision-Date: 2010-04-18 07:01+0600\n"
+"PO-Revision-Date: 2010-04-20 06:19+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -3918,25 +3918,24 @@ msgid ""
 "Retrieval of the issuer certificate failed. This means the CA's (Certificate "
 "Authority) certificate can not be found."
 msgstr ""
-"Шығарушы куәлігі алынбады. Куәліктер қоймасының куәлігі табылмады дегені."
+"Шығарушы куәлігі алынбады. Куәліктер Орталығының куәлігі табылмады дегені."
 
 #: kssl/ksslcertificate.cpp:1055
 msgid ""
 "Retrieval of the CRL (Certificate Revocation List) failed. This means the "
 "CA's (Certificate Authority) CRL can not be found."
 msgstr ""
-"Қайтарылған куәлітер тізімі (ҚКТ) алынбады. ҚКТ куәліктер қоймасының куәлігі "
+"Қайтарылған куәлітер тізімі (ҚКТ) алынбады. ҚКТ куәліктер Орталығының "
+"куәлігі "
 "табылмады дегені."
 
 #: kssl/ksslcertificate.cpp:1057
-#, fuzzy
 msgid ""
 "The decryption of the certificate's signature failed. This means it could "
 "not even be calculated as opposed to just not matching the expected result."
 msgstr "Куәлік колтаңбасының шифрын шешу жаңылысы."
 
 #: kssl/ksslcertificate.cpp:1059
-#, fuzzy
 msgid ""
 "The decryption of the CRL's (Certificate Revocation List) signature failed. "
 "This means it could not even be calculated as opposed to just not matching "
@@ -3951,7 +3950,7 @@ msgid ""
 "certificate you wanted to use."
 msgstr ""
 "Шығарушының ашық кілтінің шифрын шешу жаңылысы. Қолданам деген куәлікті "
-"тексеру үшін керек Куәлік қоймасының куәлігінің өзі қолдануға келмейді "
+"тексеру үшін керек Куәлік Орталығының куәлігінің өзі қолдануға келмейді "
 "дегені."
 
 #: kssl/ksslcertificate.cpp:1063
@@ -3978,35 +3977,37 @@ msgstr "Куәлік енді жарамсыз."
 
 #: kssl/ksslcertificate.cpp:1071 kssl/ksslcertificate.cpp:1073
 msgid "The CRL (Certificate Revocation List) is not valid, yet."
-msgstr "Қайтарылған куәлітер тізімі (ҚКТ) әзірше жарамсыз."
+msgstr "сәзірше жарамсыз."
 
 #: kssl/ksslcertificate.cpp:1075
 msgid "The time format of the certificate's 'notBefore' field is invalid."
-msgstr ""
+msgstr "Куәліктің 'notBefore' өріснде уақыт дұрыс келтірілмеген."
 
 #: kssl/ksslcertificate.cpp:1077
 msgid "The time format of the certificate's 'notAfter' field is invalid."
-msgstr ""
+msgstr "Куәліктің 'notAfter' өріснде уақыт дұрыс келтірілмеген."
 
 #: kssl/ksslcertificate.cpp:1079
-#, fuzzy
 #| msgid "The certificate is invalid."
 msgid ""
 "The time format of the CRL's (Certificate Revocation List) 'lastUpdate' "
 "field is invalid."
-msgstr "Куәлік дұрыс емес."
+msgstr ""
+"Қайтарылған куәлітер тізімінің (ҚКТ) 'lastUpdate' өріснде уақыт "
+"дұрыс келтірілмеген."
 
 #: kssl/ksslcertificate.cpp:1081
-#, fuzzy
 #| msgid "The certificate is invalid."
 msgid ""
 "The time format of the CRL's (Certificate Revocation List) 'nextUpdate' "
 "field is invalid."
-msgstr "Куәлік дұрыс емес."
+msgstr ""
+"Қайтарылған куәлітер тізімінің (ҚКТ) 'nextUpdate' өріснде уақыт "
+"дұрыс келтірілмеген."
 
 #: kssl/ksslcertificate.cpp:1083
 msgid "The OpenSSL process ran out of memory."
-msgstr ""
+msgstr "OpenSSL процесы жад тапшылыта."
 
 #: kssl/ksslcertificate.cpp:1085
 msgid ""
@@ -4014,18 +4015,25 @@ msgid ""
 "If you want to accept this certificate, import it into the list of trusted "
 "certificates."
 msgstr ""
+"Куәлік өзі-қолтаңбалаған және сенім артылған куәліктер "
+"тізіміне кірмеген. Оны қабылдау үшін сенім артылған куәліктер "
+"тізіміне импорттаңыз."
 
 #: kssl/ksslcertificate.cpp:1088
 msgid ""
 "The certificate is self-signed. While the trust chain could be built up, the "
 "root CA's (Certificate Authority) certificate can not be found."
 msgstr ""
+"Куәлік өзі-қолтаңбалаған. Сенім тізбегін құруға болады, бірақ "
+"түбір Куәліктер Орталығының куәлігі табылмады."
 
 #: kssl/ksslcertificate.cpp:1090
 msgid ""
 "The CA's (Certificate Authority) certificate can not be found. Most likely, "
 "your trust chain is broken."
 msgstr ""
+"Куәліктер Орталығының куәлігі табылмады. Сенім тізбегіңіз бұзылғаны "
+"әбден мүмкін."
 
 #: kssl/ksslcertificate.cpp:1092
 msgid ""
@@ -4033,56 +4041,65 @@ msgid ""
 "trust chain and not self-signed. If you self-sign the certificate, make sure "
 "to import it into the list of trusted certificates."
 msgstr ""
+"Куәлік тексеруге келмейді, өйткені ол сенім тізбегінде жалғыз "
+"және өзі-қолтаңбаланбаған. Куәлікті өзіңіз қолтаңбаласаңыз, "
+"оны сенім артылған куәліктер тізіміне импорттауды ұмытпаңыз."
 
 #: kssl/ksslcertificate.cpp:1094
 msgid "The certificate chain is longer than the maximum depth specified."
-msgstr ""
+msgstr "Куәліктер тізбегі рұқсат етілген ұзындығынан асады."
 
 #: kssl/ksslcertificate.cpp:1097
-#, fuzzy
 #| msgid "Certificate has been revoked."
 msgid "The certificate has been revoked."
 msgstr "Куәлік қайтарылып алынған."
 
 #: kssl/ksslcertificate.cpp:1099
-#, fuzzy
 #| msgid "The certificate is invalid."
 msgid "The certificate's CA (Certificate Authority) is invalid."
-msgstr "Куәлік дұрыс емес."
+msgstr "Куәліктер Орталығының куәлігі жарамсыз."
 
 #: kssl/ksslcertificate.cpp:1101
 msgid ""
 "The length of the trust chain exceeded one of the CA's (Certificate "
 "Authority) 'pathlength' parameters, making all subsequent signatures invalid."
 msgstr ""
+"Сенім тізбегінің ұзындығы Куәліктер Орталығының 'pathlength' "
+"параметрінен асып, келесілерінің қолтаңбаларын жарамсыз "
+"қылады."
 
 #: kssl/ksslcertificate.cpp:1103
 msgid ""
 "The certificate has not been signed for the purpose you tried to use it for. "
 "This means the CA (Certificate Authority) does not allow this usage."
 msgstr ""
+"Куәлік көздеген мақсатыңызға жарамайды. Куәліктер Орталығы "
+"бұндайға рұқсат бермейді."
 
 #: kssl/ksslcertificate.cpp:1106
 msgid ""
 "The root CA (Certificate Authority) is not trusted for the purpose you tried "
 "to use this certificate for."
-msgstr ""
+msgstr "Түбір Куәліктер Орталығының куәлігі көздеген мақсатыңызға жарамайды."
 
 #: kssl/ksslcertificate.cpp:1109
 msgid ""
 "The root CA (Certificate Authority) has been marked to be rejected for the "
 "purpose you tried to use it for."
 msgstr ""
+"Түбір Куәліктер Орталығының куәлігі көздеген мақсатыңызға қарсы "
+"болсын деп белгіленген."
 
 #: kssl/ksslcertificate.cpp:1111
-#, fuzzy
 #| msgid ""
 #| "The IP address of the host %1 does not match the one the certificate was "
 #| "issued to."
 msgid ""
 "The certificate's CA (Certificate Authority) does not match the CA name of "
 "the certificate."
-msgstr "%1 хосттың IP адресі куәлік берілген адреске сәйкес келмейді."
+msgstr ""
+"Куәліктің Куәліктер Орталығы куәлікте көрсетілген Орталығының "
+"атауына сәйкес келмейді."
 
 #: kssl/ksslcertificate.cpp:1113
 #, fuzzy
@@ -5151,7 +5168,7 @@ msgstr "HTTP cookie қызметі"
 
 #: ../kioslave/http/kcookiejar/main.cpp:40
 msgid "Shut down cookie jar"
-msgstr "Сookie қоймасын жабу"
+msgstr "Сookie Орталығын жабу"
 
 #: ../kioslave/http/kcookiejar/main.cpp:41
 msgid "Remove cookies for domain"
