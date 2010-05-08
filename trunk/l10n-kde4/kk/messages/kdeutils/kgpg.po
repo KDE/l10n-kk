@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:54+0200\n"
+"POT-Creation-Date: 2010-05-08 04:44+0200\n"
 "PO-Revision-Date: 2007-04-28 19:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -252,7 +252,7 @@ msgstr[0] "Кілтті кілт серверінен импорттау"
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:197 rc.cpp:330 editor/kgpgtextedit.cpp:377
+#: keyservers.cpp:197 rc.cpp:330 editor/kgpgtextedit.cpp:304
 msgid "&Import"
 msgstr "&Импорттау"
 
@@ -1174,12 +1174,12 @@ msgstr ""
 
 #. i18n: file: keyserver.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: keytreeview.cpp:167 kgpgtextinterface.cpp:669 rc.cpp:304
+#: keytreeview.cpp:167 kgpgtextinterface.cpp:652 rc.cpp:304
 #, fuzzy
 msgid "Import"
 msgstr "&Импорттау"
 
-#: keytreeview.cpp:168 kgpgtextinterface.cpp:669
+#: keytreeview.cpp:168 kgpgtextinterface.cpp:652
 msgid "Do Not Import"
 msgstr "Иморттамау"
 
@@ -1289,8 +1289,7 @@ msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "Шифрды шешу жаңылысы."
 
-#: kgpgexternalactions.cpp:383 editor/kgpgtextedit.cpp:302
-#: editor/kgpgtextedit.cpp:341
+#: kgpgexternalactions.cpp:383 editor/kgpgtextedit.cpp:254
 msgid "Decryption failed."
 msgstr "Шифрды шешу жаңылысы."
 
@@ -1783,12 +1782,12 @@ msgstr "<b>%1</b> үшін паролін келтіріңіз"
 msgid "Bad MDC detected. The encrypted text has been manipulated."
 msgstr "MDC бақылау қосындысы дұрыс емес. Шифрланған мәтін өзгертілген."
 
-#: kgpgtextinterface.cpp:442 kgpgtextinterface.cpp:635
-#: kgpgtextinterface.cpp:663
+#: kgpgtextinterface.cpp:442 kgpgtextinterface.cpp:618
+#: kgpgtextinterface.cpp:646
 msgid "No signature found."
 msgstr "Қолтаңбасы табылмады."
 
-#: kgpgtextinterface.cpp:638
+#: kgpgtextinterface.cpp:621
 #, fuzzy, kde-format
 #| msgid "<qt>Good signature from:<br><b>%1</b><br>Key ID: %2</qt>"
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
@@ -1796,7 +1795,7 @@ msgstr ""
 "<qt>Келесінің қолтаңбасы дұрыс:<br><b>%1</b><br>Кілттің идентификаторы: %2</"
 "qt>"
 
-#: kgpgtextinterface.cpp:643
+#: kgpgtextinterface.cpp:626
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
@@ -1805,20 +1804,20 @@ msgstr ""
 "<qt>Келесінің қолтаңбасы дұрыс ЕМЕС:<br>%1<br>Кілттің идентификаторы: %"
 "2<br><br><b>Файл бұзылған.</b></qt>"
 
-#: kgpgtextinterface.cpp:650
+#: kgpgtextinterface.cpp:633
 #, fuzzy
 #| msgid "The signature is valid, but the key is untrusted"
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "Қолтаңбасы дұрыс, бірақ кілтіне сенім артылмаған"
 
-#: kgpgtextinterface.cpp:652
+#: kgpgtextinterface.cpp:635
 #, fuzzy
 #| msgid "The signature is valid, and the key is ultimately trusted"
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Қолтаңбасы дұрыс және кілтіне зор сенім артылған"
 
-#: kgpgtextinterface.cpp:668 editor/kgpgtextedit.cpp:384
+#: kgpgtextinterface.cpp:651 editor/kgpgtextedit.cpp:311
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><b>Missing signature:</b><br>Key id: %1<br><br>Do you want to import "
@@ -3931,7 +3930,7 @@ msgstr "<b>Бақылау қосындысы дұрыс</b>, файл шын."
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:85
+#: editor/kgpgtextedit.cpp:82
 #, fuzzy
 #| msgid ""
 #| "<qt><b>Remote file dropped</b>.<br>The remote file will now be copied to "
@@ -3946,58 +3945,60 @@ msgstr ""
 "қашықтағы файл уақытша жергілікті файлға көшіріледі. Операция орындалған соң "
 "бұл уақытша файл өшіріледі.</qt>"
 
-#: editor/kgpgtextedit.cpp:90
+#: editor/kgpgtextedit.cpp:87
 msgid "Could not download file."
 msgstr "Файл жүктелініп алынбады."
 
-#: editor/kgpgtextedit.cpp:224
-msgid "Unable to read file."
-msgstr "Файл оқылмады."
-
-#: editor/kgpgtextedit.cpp:261
+#: editor/kgpgtextedit.cpp:117
 #, fuzzy
+#| msgid ""
+#| "<p>The file <b>%1</b> is a public key.<br>Do you want to import it ?</p>"
 msgid ""
-"<qt>This file is a <b>public</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
-msgstr ""
-"Бұл жеке кілт файлы.\n"
-"Kgpg кілт менеджерін қолданып импорттаңыз."
+"<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
+msgstr "<p><b>%1</b> - ашық кілт файлы.<br>Бұны импорттайсыз ба?</p>"
 
-#: editor/kgpgtextedit.cpp:264
+#: editor/kgpgtextedit.cpp:120
 #, fuzzy
 #| msgid ""
 #| "This file is a private key.\n"
 #| "Please use kgpg key management to import it."
 msgid ""
-"<qt>This file is a <b>private</b> key.\n"
-"Please use kgpg key management to import it.</qt>"
+"<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
 msgstr ""
 "Бұл жеке кілт файлы.\n"
 "Kgpg кілт менеджерін қолданып импорттаңыз."
 
-#: editor/kgpgtextedit.cpp:313
+#: editor/kgpgtextedit.cpp:125
+#, fuzzy
+#| msgid "Decrypt & Open in Editor"
+msgid "Key file dropped on Editor"
+msgstr "Шифрын шешіп редакторда ашу"
+
+#: editor/kgpgtextedit.cpp:268
 msgid "Encryption failed."
 msgstr "Шифрлау жаңылысы."
 
-#: editor/kgpgtextedit.cpp:349
+#: editor/kgpgtextedit.cpp:276
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "Қолтаңбалау мүмкін емес: жарамсыз паролі немесе кілті жоқ"
 
-#: editor/kgpgtextedit.cpp:378
+#: editor/kgpgtextedit.cpp:305
 #, fuzzy
 msgid "Import key in your list"
 msgstr "Кілттер тізіміне импортталсын"
 
-#: editor/kgpgtextedit.cpp:381
+#: editor/kgpgtextedit.cpp:308
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "Иморттамау"
 
-#: editor/kgpgtextedit.cpp:382
+#: editor/kgpgtextedit.cpp:309
 msgid "Will not import this key in your list"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:384
+#: editor/kgpgtextedit.cpp:311
 msgid "Missing Key"
 msgstr "Кілттің жоқтығы"
 
@@ -4155,13 +4156,13 @@ msgstr "Кілтті жасау"
 msgid "Generating Revocation Certificate for key %1"
 msgstr "Келесі үшін күшін жою куәлігін құру:"
 
-#: transactions/kgpgimport.cpp:204
+#: transactions/kgpgimport.cpp:118
 msgid ""
 "The import result string has an unsupported format.<br />Please see the "
 "detailed log for more information."
 msgstr ""
 
-#: transactions/kgpgimport.cpp:206
+#: transactions/kgpgimport.cpp:120
 #, fuzzy, kde-format
 #| msgid "<qt>%1 key processed.<br></qt>"
 #| msgid_plural "<qt>%1 keys processed.<br></qt>"
@@ -4169,7 +4170,7 @@ msgid "<qt>%1 key processed.</qt>"
 msgid_plural "<qt>%1 keys processed.</qt>"
 msgstr[0] "<qt>%1 кілт өңделді.<br></qt>"
 
-#: transactions/kgpgimport.cpp:209
+#: transactions/kgpgimport.cpp:123
 #, fuzzy, kde-format
 #| msgid "<qt>One key without ID.<br></qt>"
 #| msgid_plural "<qt>%1 keys without ID.<br></qt>"
@@ -4177,7 +4178,7 @@ msgid "<qt><br />One key without ID.</qt>"
 msgid_plural "<qt><br />%1 keys without ID.</qt>"
 msgstr[0] "<qt>%1 кілт идентификаторсыз.<br></qt>"
 
-#: transactions/kgpgimport.cpp:211
+#: transactions/kgpgimport.cpp:125
 #, fuzzy, kde-format
 #| msgid "<qt><b>One key imported:</b><br></qt>"
 #| msgid_plural "<qt><b>%1 keys imported:</b><br></qt>"
@@ -4185,7 +4186,7 @@ msgid "<qt><br /><b>One key imported:</b></qt>"
 msgid_plural "<qt><br /><b>%1 keys imported:</b></qt>"
 msgstr[0] "<qt><b>%1 кілт импортталды:</b><br></qt>"
 
-#: transactions/kgpgimport.cpp:213
+#: transactions/kgpgimport.cpp:127
 #, fuzzy, kde-format
 #| msgid "<qt>One RSA key imported.<br></qt>"
 #| msgid_plural "<qt>%1 RSA keys imported.<br></qt>"
@@ -4193,7 +4194,7 @@ msgid "<qt><br />One RSA key imported.</qt>"
 msgid_plural "<qt><br />%1 RSA keys imported.</qt>"
 msgstr[0] "<qt>%1 RSA кілт импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:215
+#: transactions/kgpgimport.cpp:129
 #, fuzzy, kde-format
 #| msgid "<qt>One key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 keys unchanged.<br></qt>"
@@ -4201,7 +4202,7 @@ msgid "<qt><br />One key unchanged.</qt>"
 msgid_plural "<qt><br />%1 keys unchanged.</qt>"
 msgstr[0] "<qt>%1 кілт өзгертілмеді.<br></qt>"
 
-#: transactions/kgpgimport.cpp:217
+#: transactions/kgpgimport.cpp:131
 #, fuzzy, kde-format
 #| msgid "<qt>One user ID imported.<br></qt>"
 #| msgid_plural "<qt>%1 user IDs imported.<br></qt>"
@@ -4209,7 +4210,7 @@ msgid "<qt><br />One user ID imported.</qt>"
 msgid_plural "<qt><br />%1 user IDs imported.</qt>"
 msgstr[0] "<qt>%1 пайдаланушының идентификаторы импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:219
+#: transactions/kgpgimport.cpp:133
 #, fuzzy, kde-format
 #| msgid "<qt>One subkey imported.<br></qt>"
 #| msgid_plural "<qt>%1 subkeys imported.<br></qt>"
@@ -4217,7 +4218,7 @@ msgid "<qt><br />One subkey imported.</qt>"
 msgid_plural "<qt><br />%1 subkeys imported.</qt>"
 msgstr[0] "<qt>%1 ішкі кілт импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:221
+#: transactions/kgpgimport.cpp:135
 #, fuzzy, kde-format
 #| msgid "<qt>One signature imported.<br></qt>"
 #| msgid_plural "<qt>%1 signatures imported.<br></qt>"
@@ -4225,7 +4226,7 @@ msgid "<qt><br />One signature imported.</qt>"
 msgid_plural "<qt><br />%1 signatures imported.</qt>"
 msgstr[0] "<qt>%1 қолтаңба импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:223
+#: transactions/kgpgimport.cpp:137
 #, fuzzy, kde-format
 #| msgid "<qt>One revocation certificate imported.<br></qt>"
 #| msgid_plural "<qt>%1 revocation certificates imported.<br></qt>"
@@ -4233,7 +4234,7 @@ msgid "<qt><br />One revocation certificate imported.</qt>"
 msgid_plural "<qt><br />%1 revocation certificates imported.</qt>"
 msgstr[0] "<qt>%1 күшін жою куәлік импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:225
+#: transactions/kgpgimport.cpp:139
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key processed.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys processed.<br></qt>"
@@ -4241,7 +4242,7 @@ msgid "<qt><br />One secret key processed.</qt>"
 msgid_plural "<qt><br />%1 secret keys processed.</qt>"
 msgstr[0] "<qt>%1 құпия кілт өңделді.<br></qt>"
 
-#: transactions/kgpgimport.cpp:227
+#: transactions/kgpgimport.cpp:141
 #, fuzzy, kde-format
 #| msgid "<qt><b>One secret key imported.</b><br></qt>"
 #| msgid_plural "<qt><b>%1 secret keys imported.</b><br></qt>"
@@ -4249,7 +4250,7 @@ msgid "<qt><br /><b>One secret key imported.</b></qt>"
 msgid_plural "<qt><br /><b>%1 secret keys imported.</b></qt>"
 msgstr[0] "<qt><b>%1 құпия кілт импортталды.</b><br></qt>"
 
-#: transactions/kgpgimport.cpp:229
+#: transactions/kgpgimport.cpp:143
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key unchanged.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys unchanged.<br></qt>"
@@ -4257,7 +4258,7 @@ msgid "<qt><br />One secret key unchanged.</qt>"
 msgid_plural "<qt><br />%1 secret keys unchanged.</qt>"
 msgstr[0] "<qt>%1 құпия кілт өзгертілмеген.<br></qt>"
 
-#: transactions/kgpgimport.cpp:231
+#: transactions/kgpgimport.cpp:145
 #, fuzzy, kde-format
 #| msgid "<qt>One secret key not imported.<br></qt>"
 #| msgid_plural "<qt>%1 secret keys not imported.<br></qt>"
@@ -4265,7 +4266,7 @@ msgid "<qt><br />One secret key not imported.</qt>"
 msgid_plural "<qt><br />%1 secret keys not imported.</qt>"
 msgstr[0] "<qt>%1 құпия кілт импортталды.<br></qt>"
 
-#: transactions/kgpgimport.cpp:234
+#: transactions/kgpgimport.cpp:148
 #, fuzzy
 #| msgid ""
 #| "<qt><br><b>You have imported a secret key.</b> <br>Please note that "
@@ -4283,7 +4284,7 @@ msgstr ""
 "қолдану үшін кілтті өңдеп (оны қос түртіп), оған \"толық\" не \"зор\" "
 "сенімін арту керек.</qt>"
 
-#: transactions/kgpgimport.cpp:241
+#: transactions/kgpgimport.cpp:155
 #, fuzzy
 #| msgid ""
 #| "No key imported... \n"
@@ -4293,39 +4294,39 @@ msgstr ""
 "Кілт импортталған жоқ... \n"
 "Косымша мәлімет үшін журналды қараңыз"
 
-#: transactions/kgpgimport.cpp:278
+#: transactions/kgpgimport.cpp:192
 #, fuzzy
 msgid "New Key"
 msgid_plural "New Keys"
 msgstr[0] "&Кілттер"
 
-#: transactions/kgpgimport.cpp:281
+#: transactions/kgpgimport.cpp:195
 #, fuzzy
 #| msgid "Key is No Longer Used"
 msgid "Key with new User Id"
 msgid_plural "Keys with new User Ids"
 msgstr[0] "Кілт қолданудан шығарылған"
 
-#: transactions/kgpgimport.cpp:284
+#: transactions/kgpgimport.cpp:198
 #, fuzzy
 #| msgid "Delete Sign&ature"
 msgid "Key with new Signatures"
 msgid_plural "Keys with new Signatures"
 msgstr[0] "Қолт&аңбаны өшіру"
 
-#: transactions/kgpgimport.cpp:287
+#: transactions/kgpgimport.cpp:201
 msgid "Key with new Subkeys"
 msgid_plural "Keys with new Subkeys"
 msgstr[0] ""
 
-#: transactions/kgpgimport.cpp:290
+#: transactions/kgpgimport.cpp:204
 #, fuzzy
 #| msgid "Private Key List"
 msgid "New Private Key"
 msgid_plural "New Private Keys"
 msgstr[0] "Жеке кілттер тізімі"
 
-#: transactions/kgpgimport.cpp:307
+#: transactions/kgpgimport.cpp:221
 msgid "Unchanged Key"
 msgid_plural "Unchanged Keys"
 msgstr[0] ""
@@ -4357,6 +4358,17 @@ msgstr ""
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "Зор"
+
+#~ msgid "Unable to read file."
+#~ msgstr "Файл оқылмады."
+
+#, fuzzy
+#~ msgid ""
+#~ "<qt>This file is a <b>public</b> key.\n"
+#~ "Please use kgpg key management to import it.</qt>"
+#~ msgstr ""
+#~ "Бұл жеке кілт файлы.\n"
+#~ "Kgpg кілт менеджерін қолданып импорттаңыз."
 
 #, fuzzy
 #~| msgid ""
@@ -4633,13 +4645,6 @@ msgstr "Зор"
 #~ msgid "Extract to: "
 #~ msgstr "Тарқату орны: "
 
-#, fuzzy
-#~| msgid ""
-#~| "<p>The file <b>%1</b> is a public key.<br>Do you want to import it ?</p>"
-#~ msgid ""
-#~ "<p>The file <b>%1</b> is a public key.<br />Do you want to import it ?</p>"
-#~ msgstr "<p><b>%1</b> - ашық кілт файлы.<br>Бұны импорттайсыз ба?</p>"
-
 #~ msgid ""
 #~ "<p>The file <b>%1</b> is a private key block. Please use KGpg key manager "
 #~ "to import it.</p>"
@@ -4702,9 +4707,6 @@ msgstr "Зор"
 
 #~ msgid "Decrypt & Save"
 #~ msgstr "Шифрын шешіп сақтау"
-
-#~ msgid "Decrypt & Open in Editor"
-#~ msgstr "Шифрын шешіп редакторда ашу"
 
 #~ msgid "&Abort"
 #~ msgstr "&Доғару"
