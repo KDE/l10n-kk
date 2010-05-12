@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-23 01:23+0200\n"
+"POT-Creation-Date: 2010-05-11 01:24+0200\n"
 "PO-Revision-Date: 2010-05-10 10:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -198,7 +198,7 @@ msgid "Unable to save to: %1"
 msgstr "Келесіге сақталмады: %1"
 
 #: core/kget.cpp:524 core/kget.cpp:903 core/kget.cpp:912
-#: core/datasourcefactory.cpp:619 transfer-plugins/metalink/metalink.cpp:204
+#: core/datasourcefactory.cpp:619 transfer-plugins/metalink/metalink.cpp:207
 #: transfer-plugins/bittorrent/bttransfer.cpp:500
 #: transfer-plugins/bittorrent/bttransfer.cpp:511
 #: ui/metalinkcreator/metalinkcreator.cpp:300
@@ -615,23 +615,15 @@ msgstr "Доғарылды"
 msgid "Downloading Metalink File...."
 msgstr "Метасілтеме файлды жүктеу..."
 
-#: transfer-plugins/metalink/metalink.cpp:204
+#: transfer-plugins/metalink/metalink.cpp:207
 msgid "Download failed, no working URLs were found."
 msgstr "Жуктеу жаңылысы, істейтін URL табылған жоқ."
 
-#: transfer-plugins/metalink/metalink.cpp:205
-#: transfer-plugins/bittorrent/bttransfer.cpp:440
-#: transfer-plugins/bittorrent/bttransfer.cpp:459
-#: transfer-plugins/bittorrent/bttransfer.cpp:499
-#: transfer-plugins/bittorrent/bttransfer.cpp:510
-msgid "An error occurred...."
-msgstr "Бір қате орын алды..."
-
-#: transfer-plugins/metalink/metalink.cpp:229
+#: transfer-plugins/metalink/metalink.cpp:232
 msgid "File Selection"
 msgstr "Файл таңдау"
 
-#: transfer-plugins/metalink/metalink.cpp:515
+#: transfer-plugins/metalink/metalink.cpp:540
 msgid ""
 "The download could not be verified, do you want to repair (if repairing does "
 "not work the download would be restarted) it?"
@@ -1138,6 +1130,13 @@ msgstr "Жүктеп алу..."
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
 msgstr "Трекер жекеше торрентке қосылмады."
+
+#: transfer-plugins/bittorrent/bttransfer.cpp:440
+#: transfer-plugins/bittorrent/bttransfer.cpp:459
+#: transfer-plugins/bittorrent/bttransfer.cpp:499
+#: transfer-plugins/bittorrent/bttransfer.cpp:510
+msgid "An error occurred...."
+msgstr "Бір қате орын алды..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:444
 msgid "Analyzing torrent...."
@@ -1898,8 +1897,8 @@ msgctxt "the transfer has been finished"
 msgid "Finished"
 msgstr "Аяқталды"
 
-#: ui/viewscontainer.cpp:45, kde-format
-#| msgid "Details for: %1"
+#: ui/viewscontainer.cpp:45
+#, kde-format
 msgid "Details for: %1"
 msgstr "Келесінің егжей-тегжейі: %1"
 
@@ -3421,28 +3420,24 @@ msgstr "Торренттің деректерін зерттеу:"
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: rc.cpp:364
-#| msgid "Number of retries:"
 msgid "Number of chunks found:"
 msgstr "Табылған тілімдер саны:"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: rc.cpp:367
-#| msgid "Number of retries:"
 msgid "Number of chunks failed:"
 msgstr "Қате тілімдер саны:"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:370
-#| msgid "Number of retries:"
 msgid "Number of chunks not downloaded:"
 msgstr "Жүктеп алынбаған тілімдер саны:"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:373
-#| msgid "Number of retries:"
 msgid "Number of chunks downloaded:"
 msgstr "Жүктеп алынған тілімдер саны:"
 
@@ -3473,7 +3468,6 @@ msgstr "Статистика"
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: rc.cpp:394
-#| msgid "Speed"
 msgid "Seeders:"
 msgstr "Таратушылары:"
 
@@ -3513,7 +3507,6 @@ msgstr "Сүліктері:"
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:412
-#| msgid "Speed"
 msgid "Upload speed:"
 msgstr "Жүктеп  беру жылдамдығы:"
 
@@ -3585,14 +3578,12 @@ msgstr "Қапшықтар"
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, torrentFolderLabel)
 #: rc.cpp:478
-#| msgid "Default Folder"
 msgid "Default torrent folder:"
 msgstr "Әдетті торент қапшығы:"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:129
 #. i18n: ectx: property (text), widget (QLabel, tempFolderLabel)
 #: rc.cpp:481
-#| msgid "Default Folder"
 msgid "Default temporary folder"
 msgstr "Әдетті уақытша сақтау қапшығы:"
 
@@ -3618,7 +3609,6 @@ msgstr "Бөлшек бақылау қосындылары есептелсін"
 #. i18n: file: ui/metalinkcreator/dragdlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:493
-#| msgid "Enter URL:"
 msgid "General URL:"
 msgstr "Жалпқ URL-і:"
 
@@ -3629,8 +3619,8 @@ msgid ""
 "Automatically create checksums for the selected types. Keep in mind that "
 "this might take a while."
 msgstr ""
-"Таңдалған түріндегі бақылау қосындыларын құру. Құруға біршама "
-"уақыт керегі екенін ескерген жөн."
+"Таңдалған түріндегі бақылау қосындыларын құру. Құруға біршама уақыт керегі "
+"екенін ескерген жөн."
 
 #. i18n: file: ui/metalinkcreator/dragdlg.ui:92
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -3640,9 +3630,9 @@ msgid ""
 "directory. For each dropped file the URL would consist of the entered part "
 "and the filename."
 msgstr ""
-"Егер сүйреп әкелген файлдар серверде бір қапшықта болса, олардын "
-"ULR-ін осында келтіріңіз. Әрбір файлдың адресі келтірілген ULR-ден "
-"жане файл атауынан құрылады.."
+"Егер сүйреп әкелген файлдар серверде бір қапшықта болса, олардын ULR-ін "
+"осында келтіріңіз. Әрбір файлдың адресі келтірілген ULR-ден жане файл "
+"атауынан құрылады.."
 
 #. i18n: file: ui/metalinkcreator/dragdlg.ui:102
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -3710,7 +3700,6 @@ msgstr "0123456789"
 #. i18n: file: ui/signaturedlg.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: rc.cpp:535 rc.cpp:866
-#| msgid "Description"
 msgid "Verification:"
 msgstr "Растауы:"
 
@@ -3730,9 +3719,9 @@ msgid ""
 "one URL."
 msgstr ""
 "Бұл көмекші метасилтемелерді негізінен бастап, не бар метасілтемелерді "
-"негіздеп кұрып береді. Өрістерінің көбі міндетті емес не толтырылғаны "
-"жөн болар дегендері, қаласаңыз ғана толтырыңыз. Міндеттісі тек сақтау "
-"орыны, кемінде бір файлы мен бір URL-і."
+"негіздеп кұрып береді. Өрістерінің көбі міндетті емес не толтырылғаны жөн "
+"болар дегендері, қаласаңыз ғана толтырыңыз. Міндеттісі тек сақтау орыны, "
+"кемінде бір файлы мен бір URL-і."
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -3787,8 +3776,7 @@ msgstr "Метасілтеменің Веб URL-і"
 #: rc.cpp:568
 msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
 msgstr ""
-"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын "
-"көрсетеді."
+"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын көрсетеді."
 
 #. i18n: file: ui/metalinkcreator/generalwidget.ui:78
 #. i18n: ectx: property (text), widget (QLabel, labelDynamic)
@@ -3807,8 +3795,6 @@ msgstr "Метасілтеме жарияланды"
 #. i18n: file: ui/metalinkcreator/generalwidget.ui:223
 #. i18n: ectx: property (text), widget (QLabel, label_29)
 #: rc.cpp:577 rc.cpp:595
-#| msgctxt "remaining time of download"
-#| msgid "Remaining Time"
 msgid "Date and time:"
 msgstr "Күні мен уақыты"
 
@@ -3843,7 +3829,6 @@ msgstr "Іс-әлпеті"
 #. i18n: file: ui/metalinkcreator/commondata.ui:46
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:604
-#| msgid "Description"
 msgid "Version:"
 msgstr "Нұсқасы:"
 
@@ -3898,8 +3883,6 @@ msgstr "Жариялаушысы:"
 #. i18n: file: ui/metalinkcreator/commondata.ui:150
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: rc.cpp:631
-#| msgctxt "name of download"
-#| msgid "Name"
 msgid "Name:"
 msgstr "Атауы:"
 
@@ -3914,14 +3897,12 @@ msgstr "жариялаушы"
 #. i18n: file: ui/metalinkcreator/commondata.ui:160
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, pub_name)
 #: rc.cpp:637
-#| msgid "Number of retries:"
 msgid "Name of the publisher"
 msgstr "Жариялаушының атауы"
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:180
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, pub_url)
 #: rc.cpp:646
-#| msgid "Number of retries:"
 msgid "URL to the publisher"
 msgstr "Жариялаушының URL-адресі"
 
@@ -3945,8 +3926,8 @@ msgid ""
 "Add at least one file. Adding local files adds a lot of information "
 "automatically."
 msgstr ""
-"Кемінде бір файлды қосыңыз. Жергілікті файлды қосқанда, "
-"автоматты түрде көп мәлімет келтіріледі."
+"Кемінде бір файлды қосыңыз. Жергілікті файлды қосқанда, автоматты түрде көп "
+"мәлімет келтіріледі."
 
 #. i18n: file: ui/metalinkcreator/files.ui:102
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -3969,7 +3950,6 @@ msgstr "Импорттайтын &файл мен сілтемелер"
 #. i18n: file: ui/linkview/importlinkdialog.ui:35
 #. i18n: ectx: property (text), widget (KPushButton, importLinks)
 #: rc.cpp:667
-#| msgid "No Links"
 msgid "&Import Links"
 msgstr "Cілтемелерді &импорттау"
 
@@ -4025,7 +4005,6 @@ msgstr "Файлдарды сүзгілеу..."
 #. i18n: file: ui/linkview/importlinkdialog.ui:159
 #. i18n: ectx: property (text), item, widget (KComboBox, filterMode)
 #: rc.cpp:699
-#| msgid "Connection"
 msgid "Contains"
 msgstr "Мазмұнында бары:"
 
@@ -4057,21 +4036,18 @@ msgstr "&Веб мазмұны көрсетілсін"
 #. i18n: file: ui/mirror/mirroradddlg.ui:29
 #. i18n: ectx: property (text), widget (QLabel, labelMirror)
 #: rc.cpp:721
-#| msgid "Error"
 msgid "Mirror:"
 msgstr "Айнасы:"
 
 #. i18n: file: ui/mirror/mirroradddlg.ui:36
 #. i18n: ectx: property (text), widget (QLabel, labelConnections)
 #: rc.cpp:724
-#| msgid "Number of retries:"
 msgid "Number of connections:"
 msgstr "Қосылым саны:"
 
 #. i18n: file: ui/mirror/mirroradddlg.ui:43
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, url)
 #: rc.cpp:727
-#| msgid "Enter URL:"
 msgid "Enter a URL"
 msgstr "URL-ді келтіріңіз"
 
@@ -4090,7 +4066,6 @@ msgstr "Міндетті емес: Айнаның артықшылығы, 1 - е
 #. i18n: file: ui/mirror/mirroradddlg.ui:89
 #. i18n: ectx: property (text), widget (QLabel, labelLocation)
 #: rc.cpp:739
-#| msgid "Location (URL)"
 msgid "Location:"
 msgstr "Орналасуы:"
 
@@ -4110,7 +4085,6 @@ msgstr "Көрсету режімдері"
 #. i18n: file: ui/history/transferhistory.ui:99
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_2)
 #: rc.cpp:748
-#| msgid "Select Icon"
 msgid "Select Ranges"
 msgstr "Ауқымдарды таңдау"
 
@@ -4129,7 +4103,6 @@ msgstr "Хост"
 #. i18n: file: ui/history/transferhistory.ui:136
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_3)
 #: rc.cpp:760
-#| msgid "Filter history..."
 msgid "Filter History"
 msgstr "Журналды сүзгілеу"
 
@@ -4162,7 +4135,6 @@ msgstr "Хеш түрі:"
 #. i18n: file: ui/verificationadddlg.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:775
-#| msgid "Port:"
 msgctxt "hash as a hash of type md5, sha1 etc."
 msgid "Hash:"
 msgstr "Хеші:"
@@ -4182,22 +4154,18 @@ msgstr "Күй-жайы:"
 #. i18n: file: ui/transferdetailsfrm.ui:165
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:794
-#| msgctxt "remaining time of download"
-#| msgid "Remaining Time"
 msgid "Remaining Time:"
 msgstr "Қалған уақыт:"
 
 #. i18n: file: ui/grouptagssettingsdialog.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
 #: rc.cpp:797
-#| msgid "&Settings"
 msgid "Tag Settings"
 msgstr "Тег параметрлері"
 
 #. i18n: file: ui/grouptagssettingsdialog.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:800
-#| msgid "Open Transfer"
 msgid "Available tags:"
 msgstr "Болатын тегтер:"
 
@@ -4230,7 +4198,6 @@ msgstr "Тасымалдың параметрлері"
 #. i18n: file: ui/transfersettingsdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:815
-#| msgid "Destination"
 msgid "Download Destination:"
 msgstr "Қайда жүктеп алу:"
 
@@ -4241,7 +4208,6 @@ msgstr "Қайда жүктеп алу:"
 #. i18n: file: ui/transfersettingsdialog.ui:96
 #. i18n: ectx: property (specialValueText), widget (QDoubleSpinBox, ratioSpin)
 #: rc.cpp:818 rc.cpp:824 rc.cpp:830
-#| msgid "No Links"
 msgctxt "No value has been set"
 msgid "Not set"
 msgstr "Орнатылмаған"
@@ -4255,7 +4221,6 @@ msgstr "Орнатылмаған"
 #. i18n: file: ui/groupsettingsdialog.ui:117
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
 #: rc.cpp:821 rc.cpp:827 rc.cpp:914 rc.cpp:920
-#| msgid "%1/s"
 msgid " KiB"
 msgstr " КиБ"
 
@@ -4286,7 +4251,6 @@ msgstr "Жүктеп алатын айналарды өзгерту."
 #. i18n: file: ui/transfersettingsdialog.ui:143
 #. i18n: ectx: property (text), widget (KPushButton, mirrors)
 #: rc.cpp:845
-#| msgid "Error"
 msgctxt "The available mirrors (servers) for downloading"
 msgid "Mirrors"
 msgstr "Айналары"
@@ -4294,7 +4258,6 @@ msgstr "Айналары"
 #. i18n: file: ui/transfersettingsdialog.ui:163
 #. i18n: ectx: property (text), widget (KPushButton, verification)
 #: rc.cpp:851
-#| msgid "Destination"
 msgctxt "verification of the download (e.g. by using MD5)"
 msgid "Verification"
 msgstr "Растау"
@@ -4314,7 +4277,6 @@ msgstr "Кілті"
 #. i18n: file: ui/signaturedlg.ui:95
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:872
-#| msgid "User:"
 msgid "Issuer:"
 msgstr "Шығарушысы:"
 
@@ -4333,14 +4295,12 @@ msgstr "Түсініктеме"
 #. i18n: file: ui/signaturedlg.ui:149
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:881
-#| msgid "Destination"
 msgid "Creation:"
 msgstr "Шығарған кезі:"
 
 #. i18n: file: ui/signaturedlg.ui:166
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:884
-#| msgid "Destination"
 msgid "Expiration:"
 msgstr "Жарамдылық соңы:"
 
@@ -4365,7 +4325,6 @@ msgstr "Растау"
 #. i18n: file: ui/groupsettingsdialog.ui:32
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
 #: rc.cpp:896
-#| msgid "Default folder:"
 msgid "Group Settings"
 msgstr "Топтық параметрлері"
 
@@ -4396,14 +4355,12 @@ msgstr "*фильмдер*"
 #. i18n: file: ui/groupsettingsdialog.ui:75
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
 #: rc.cpp:911
-#| msgid "Download finished"
 msgid "Maximum download speed:"
 msgstr "Жүктеп алу жылдамдығының шегі:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:101
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
 #: rc.cpp:917
-#| msgid "Download finished"
 msgid "Maximum upload speed:"
 msgstr "Жүктеп беру жылдамдығының шегі:"
 
@@ -4416,7 +4373,6 @@ msgstr "Тегтерді өзгерту..."
 #. i18n: file: ui/newtransferwidget.ui:44
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:935
-#| msgid "Destination"
 msgid "Destination:"
 msgstr "Қайда:"
 
