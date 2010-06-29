@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-22 04:50+0200\n"
+"POT-Creation-Date: 2010-06-29 08:15+0200\n"
 "PO-Revision-Date: 2007-07-07 11:03+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -116,28 +116,74 @@ msgstr ""
 msgid "No Archive"
 msgstr "Архиві"
 
-#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:569
+#: src/pluginmanager.cpp:165
+#, fuzzy
+#| msgid "Name"
+msgctxt "Name of the plugin"
+msgid "Name"
+msgstr "Атауы"
+
+#: src/pluginmanager.cpp:166
+#, fuzzy
+#| msgid "Library"
+msgctxt "Library name"
+msgid "Library"
+msgstr "Жиыны"
+
+#: src/pluginmanager.cpp:167
+#, fuzzy
+#| msgid "Authors"
+msgctxt "Plugin authors"
+msgid "Authors"
+msgstr "Авторы"
+
+#: src/pluginmanager.cpp:168
+#, fuzzy
+#| msgid "Email"
+msgctxt "Plugin authors' emaila addresses"
+msgid "Email"
+msgstr "Эл.поштасы"
+
+#: src/pluginmanager.cpp:169
+#, fuzzy
+#| msgid "Version"
+msgctxt "Plugin version"
+msgid "Version"
+msgstr "Нұсқасы"
+
+#: src/pluginmanager.cpp:170
+#, fuzzy
+#| msgid "Framework Version"
+msgctxt "Framework version plugin requires"
+msgid "Framework Version"
+msgstr "Ақпаршауының нұсқасы"
+
+#: src/pluginmanager.cpp:174
+msgid "Plugin Information"
+msgstr "Плагин модулінің мәліметі"
+
+#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:572
 #, fuzzy
 #| msgid "Back"
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr "Артқа"
 
-#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:562
+#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:565
 #, fuzzy
 #| msgid "Forward"
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr "Алға"
 
-#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:578
+#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:581
 #, fuzzy
 #| msgid "Reload"
 msgctxt "Reload current page"
 msgid "Reload"
 msgstr "Қайта жүктеу"
 
-#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:583
+#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:586
 msgid "Stop"
 msgstr "Тоқтау"
 
@@ -164,31 +210,9 @@ msgstr "Парақты сыртқы шолғышта ашады"
 msgid "Add to Konqueror Bookmarks"
 msgstr "Konqueror бетбелгілеріне қосу"
 
-#: src/importfeedlistcommand.cpp:64
-#, fuzzy
-#| msgid "&Import Feeds..."
-msgid "Imported Feeds"
-msgstr "Ақпарларды &импорттау..."
-
-#: src/importfeedlistcommand.cpp:96
-msgid "Add Imported Folder"
-msgstr "Импортталған қапшықты қосу"
-
-#: src/importfeedlistcommand.cpp:97
-msgid "Imported folder name:"
-msgstr "Импортталған қапшықтың атауы:"
-
-#: src/progressmanager.cpp:178
-msgid "Fetch completed"
-msgstr "Қабылдау аяқталды"
-
-#: src/progressmanager.cpp:188
-msgid "Fetch error"
-msgstr "Қабылдау қатесі"
-
-#: src/progressmanager.cpp:198
-msgid "Fetch aborted"
-msgstr "Қабылдау доғарылды"
+#: src/feedlist.cpp:177
+msgid "All Feeds"
+msgstr "Барлық ақпарлар"
 
 #: src/akregator_options.h:37 src/akregator_options.h:41
 msgid "Add a feed with the given URL"
@@ -202,9 +226,17 @@ msgstr ""
 msgid "Hide main window on startup"
 msgstr ""
 
-#: src/feedlist.cpp:177
-msgid "All Feeds"
-msgstr "Барлық ақпарлар"
+#: src/progressmanager.cpp:178
+msgid "Fetch completed"
+msgstr "Қабылдау аяқталды"
+
+#: src/progressmanager.cpp:188
+msgid "Fetch error"
+msgstr "Қабылдау қатесі"
+
+#: src/progressmanager.cpp:198
+msgid "Fetch aborted"
+msgstr "Қабылдау доғарылды"
 
 #: src/akregator_part.cpp:107
 msgid "Akregator News"
@@ -502,18 +534,6 @@ msgstr ""
 #: src/aboutdata.cpp:55
 msgid "Gentoo Ebuild"
 msgstr "Gentoo Ebuild"
-
-#: src/trayicon.cpp:63
-#, fuzzy
-#| msgid "Akregator - RSS Feed Reader"
-msgid "Akregator - Feed Reader"
-msgstr "Akregator - RSS ақпарларын оқу"
-
-#: src/trayicon.cpp:120
-#, kde-format
-msgid "Akregator - 1 unread article"
-msgid_plural "Akregator - %1 unread articles"
-msgstr[0] "Akregator - %1 мақала оқылмаған"
 
 #: src/articleviewer.cpp:135
 msgid "Copy &Link Address"
@@ -838,133 +858,107 @@ msgstr ""
 msgid "Docking in System Tray"
 msgstr "Жүйелік сөреде орналасу"
 
-#: src/articlemodel.cpp:106
+#: src/importfeedlistcommand.cpp:64
 #, fuzzy
-#| msgid "Untitled"
-msgctxt "Articlelist's column header"
-msgid "Title"
-msgstr "Аталмаған"
+#| msgid "&Import Feeds..."
+msgid "Imported Feeds"
+msgstr "Ақпарларды &импорттау..."
 
-#: src/articlemodel.cpp:108
-#, fuzzy
-#| msgid "Feed"
-msgctxt "Articlelist's column header"
-msgid "Feed"
-msgstr "Ақпар"
+#: src/importfeedlistcommand.cpp:96
+msgid "Add Imported Folder"
+msgstr "Импортталған қапшықты қосу"
 
-#: src/articlemodel.cpp:110
-#, fuzzy
-#| msgid "Date"
-msgctxt "Articlelist's column header"
-msgid "Date"
-msgstr "Күні"
+#: src/importfeedlistcommand.cpp:97
+msgid "Imported folder name:"
+msgstr "Импортталған қапшықтың атауы:"
 
-#: src/articlemodel.cpp:112
-#, fuzzy
-#| msgid "Author"
-msgctxt "Articlelist's column header"
-msgid "Author"
-msgstr "Авторы"
-
-#: src/articlemodel.cpp:114
-msgctxt "Articlelist's column header"
-msgid "Description"
-msgstr ""
-
-#: src/articlemodel.cpp:116
-#, fuzzy
-#| msgid "Comments"
-msgctxt "Articlelist's column header"
-msgid "Content"
-msgstr "Түсініктемелері"
-
-#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:253
+#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:254
 msgid "&Fetch Feed"
 msgstr "Ақпарды қ&абылдау"
 
-#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:221
+#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:222
 msgid "&Delete Feed"
 msgstr "Ақпарды ө&шіру"
 
-#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:227
+#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:228
 msgid "&Edit Feed..."
 msgstr "Ақпар қаси&еттері..."
 
-#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:272
+#: src/actionmanagerimpl.cpp:80 src/actionmanagerimpl.cpp:273
 msgid "&Mark Feed as Read"
 msgstr "Ақпарды оқылған деп қ&ою"
 
-#: src/actionmanagerimpl.cpp:93
+#: src/actionmanagerimpl.cpp:94
 msgid "&Fetch Feeds"
 msgstr "Ақпарларды қ&абылдау"
 
-#: src/actionmanagerimpl.cpp:94
+#: src/actionmanagerimpl.cpp:95
 msgid "&Delete Folder"
 msgstr "Қапшықты ө&шіру"
 
-#: src/actionmanagerimpl.cpp:95
+#: src/actionmanagerimpl.cpp:96
 msgid "&Rename Folder"
 msgstr "Қапшықты қайта &атау"
 
-#: src/actionmanagerimpl.cpp:96
+#: src/actionmanagerimpl.cpp:97
 msgid "&Mark Feeds as Read"
 msgstr "Ақпарларды оқылған деп қ&ою"
 
-#: src/actionmanagerimpl.cpp:171
+#: src/actionmanagerimpl.cpp:172
 msgid "&Import Feeds..."
 msgstr "Ақпарларды &импорттау..."
 
-#: src/actionmanagerimpl.cpp:175
+#: src/actionmanagerimpl.cpp:176
 msgid "&Export Feeds..."
 msgstr "Ақпарларды &экспорттау..."
 
-#: src/actionmanagerimpl.cpp:180
+#: src/actionmanagerimpl.cpp:181
 #, fuzzy
 #| msgid "Configure &Akregator..."
 msgid "&Configure Akregator..."
 msgstr "&Akregator баптаулары..."
 
-#: src/actionmanagerimpl.cpp:203
+#: src/actionmanagerimpl.cpp:204
 msgid "&Open Homepage"
 msgstr "Мекен парақшағын &ашу"
 
-#: src/actionmanagerimpl.cpp:209
+#: src/actionmanagerimpl.cpp:210
 msgid "&Add Feed..."
 msgstr "Ақпарды қ&осу..."
 
-#: src/actionmanagerimpl.cpp:215
+#: src/actionmanagerimpl.cpp:216
 msgid "Ne&w Folder..."
 msgstr "Қапшықты қ&осу..."
 
-#: src/actionmanagerimpl.cpp:234
+#: src/actionmanagerimpl.cpp:235
 msgid "&Normal View"
 msgstr "&Кәдімгі"
 
-#: src/actionmanagerimpl.cpp:240
+#: src/actionmanagerimpl.cpp:241
 msgid "&Widescreen View"
 msgstr "К&ең экранды"
 
-#: src/actionmanagerimpl.cpp:246
+#: src/actionmanagerimpl.cpp:247
 msgid "C&ombined View"
 msgstr "Кұра&ма"
 
-#: src/actionmanagerimpl.cpp:259
+#: src/actionmanagerimpl.cpp:260
 msgid "Fe&tch All Feeds"
 msgstr "Ба&рлық ақпарларды қабылдау"
 
-#: src/actionmanagerimpl.cpp:265
+#: src/actionmanagerimpl.cpp:266
 #, fuzzy
 #| msgid "Concurrent Fetches"
 msgid "C&ancel Feed Fetches"
 msgstr "Қатар қабылдау барыстары"
 
-#: src/actionmanagerimpl.cpp:278
+#: src/actionmanagerimpl.cpp:279
 msgid "Ma&rk All Feeds as Read"
 msgstr "Барлық ақпарларды оқылған деп қ&ою"
 
 #. i18n: file: interfaces/akregator.kcfg:9
 #. i18n: ectx: label, entry, group (View)
-#: src/actionmanagerimpl.cpp:284 rc.cpp:47
+#: src/actionmanagerimpl.cpp:285 rc.cpp:47
 msgid "Show Quick Filter"
 msgstr "Жедел сүзгіні көрсету"
 
@@ -972,7 +966,7 @@ msgstr "Жедел сүзгіні көрсету"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:46
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:290 rc.cpp:355 rc.cpp:367
+#: src/actionmanagerimpl.cpp:291 rc.cpp:355 rc.cpp:367
 msgid "Open in Tab"
 msgstr "Қойындысында ашу"
 
@@ -980,174 +974,174 @@ msgstr "Қойындысында ашу"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:56
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:296 rc.cpp:361 rc.cpp:373
+#: src/actionmanagerimpl.cpp:297 rc.cpp:361 rc.cpp:373
 msgid "Open in External Browser"
 msgstr "Сыртқы шолғышта ашу"
 
-#: src/actionmanagerimpl.cpp:301 src/actionmanagerimpl.cpp:533
+#: src/actionmanagerimpl.cpp:302 src/actionmanagerimpl.cpp:534
 msgid "Copy Link Address"
 msgstr "Сілтеме адресін көшіріп алу"
 
-#: src/actionmanagerimpl.cpp:306
+#: src/actionmanagerimpl.cpp:307
 msgid "Pre&vious Unread Article"
 msgstr "Кел&есі оқылмаған мақала"
 
-#: src/actionmanagerimpl.cpp:312
+#: src/actionmanagerimpl.cpp:313
 msgid "Ne&xt Unread Article"
 msgstr "Алд&ыңғы оқылмаған мақала"
 
-#: src/actionmanagerimpl.cpp:318
+#: src/actionmanagerimpl.cpp:319
 msgid "&Delete"
 msgstr "Ө&шіру"
 
-#: src/actionmanagerimpl.cpp:323
+#: src/actionmanagerimpl.cpp:324
 msgid "&Mark As"
 msgstr "Қоятын &белгісі"
 
-#: src/actionmanagerimpl.cpp:328
+#: src/actionmanagerimpl.cpp:329
 #, fuzzy
 #| msgid "Mark selected article as new"
 msgid "&Speak Selected Articles"
 msgstr "Таңдалған мақаланы жаңа деп белгілеп қою"
 
-#: src/actionmanagerimpl.cpp:333
+#: src/actionmanagerimpl.cpp:334
 msgid "&Stop Speaking"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:342
+#: src/actionmanagerimpl.cpp:343
 msgctxt "as in: mark as read"
 msgid "&Read"
 msgstr "Оқ&ылған"
 
-#: src/actionmanagerimpl.cpp:344
+#: src/actionmanagerimpl.cpp:345
 msgid "Mark selected article as read"
 msgstr "Таңдалған мақаланы оқылған деп белгілеп қою"
 
-#: src/actionmanagerimpl.cpp:350
+#: src/actionmanagerimpl.cpp:351
 #, fuzzy
 #| msgid "&New"
 msgctxt "as in: mark as new"
 msgid "&New"
 msgstr "&Жаңа"
 
-#: src/actionmanagerimpl.cpp:353
+#: src/actionmanagerimpl.cpp:354
 msgid "Mark selected article as new"
 msgstr "Таңдалған мақаланы жаңа деп белгілеп қою"
 
-#: src/actionmanagerimpl.cpp:359
+#: src/actionmanagerimpl.cpp:360
 #, fuzzy
 #| msgid "&Unread"
 msgctxt "as in: mark as unread"
 msgid "&Unread"
 msgstr "Оқыл&маған"
 
-#: src/actionmanagerimpl.cpp:361
+#: src/actionmanagerimpl.cpp:362
 msgid "Mark selected article as unread"
 msgstr "Таңдалған мақаланы оқылмаған деп белгілеп қою"
 
-#: src/actionmanagerimpl.cpp:367
+#: src/actionmanagerimpl.cpp:368
 msgid "&Mark as Important"
 msgstr "Маңызды деп б&елгілеу"
 
-#: src/actionmanagerimpl.cpp:372
+#: src/actionmanagerimpl.cpp:373
 msgid "Remove &Important Mark"
 msgstr "&Маңыздық белгісін жою"
 
-#: src/actionmanagerimpl.cpp:376
+#: src/actionmanagerimpl.cpp:377
 msgid "Move Node Up"
 msgstr "Жоғарлату"
 
-#: src/actionmanagerimpl.cpp:381
+#: src/actionmanagerimpl.cpp:382
 msgid "Move Node Down"
 msgstr "Төмендету"
 
-#: src/actionmanagerimpl.cpp:385 src/actionmanagerimpl.cpp:386
+#: src/actionmanagerimpl.cpp:386 src/actionmanagerimpl.cpp:387
 msgid "Move Node Left"
 msgstr "Солға жылжыту"
 
-#: src/actionmanagerimpl.cpp:391
+#: src/actionmanagerimpl.cpp:392
 msgid "Move Node Right"
 msgstr "Оңға жылжыту"
 
-#: src/actionmanagerimpl.cpp:397
+#: src/actionmanagerimpl.cpp:398
 msgid "Send &Link Address..."
 msgstr "&Сілтеме адресін жіберу..."
 
-#: src/actionmanagerimpl.cpp:402
+#: src/actionmanagerimpl.cpp:403
 msgid "Send &File..."
 msgstr "&Файлды жіберу..."
 
-#: src/actionmanagerimpl.cpp:436
+#: src/actionmanagerimpl.cpp:437
 msgid "&Previous Article"
 msgstr "&Алдыңғы мақала"
 
-#: src/actionmanagerimpl.cpp:440
+#: src/actionmanagerimpl.cpp:441
 msgid "&Next Article"
 msgstr "&Келесі мақала"
 
-#: src/actionmanagerimpl.cpp:455
+#: src/actionmanagerimpl.cpp:456
 msgid "&Previous Feed"
 msgstr "&Алдыңғы ақпар"
 
-#: src/actionmanagerimpl.cpp:460
+#: src/actionmanagerimpl.cpp:461
 msgid "&Next Feed"
 msgstr "&Келесі ақпар"
 
-#: src/actionmanagerimpl.cpp:466
+#: src/actionmanagerimpl.cpp:467
 msgid "N&ext Unread Feed"
 msgstr "К&елесі оқылмаған ақпар"
 
-#: src/actionmanagerimpl.cpp:472
+#: src/actionmanagerimpl.cpp:473
 msgid "Prev&ious Unread Feed"
 msgstr "Келесі &оқылмаған ақпар"
 
-#: src/actionmanagerimpl.cpp:477
+#: src/actionmanagerimpl.cpp:478
 msgid "Go to Top of Tree"
 msgstr "Бұтақтың түбіне"
 
-#: src/actionmanagerimpl.cpp:482
+#: src/actionmanagerimpl.cpp:483
 msgid "Go to Bottom of Tree"
 msgstr "Бұтақтың басына"
 
-#: src/actionmanagerimpl.cpp:487
+#: src/actionmanagerimpl.cpp:488
 msgid "Go Left in Tree"
 msgstr "Бұтақтың сол жағына"
 
-#: src/actionmanagerimpl.cpp:492
+#: src/actionmanagerimpl.cpp:493
 msgid "Go Right in Tree"
 msgstr "Бұтақтың оң жағына"
 
-#: src/actionmanagerimpl.cpp:497
+#: src/actionmanagerimpl.cpp:498
 msgid "Go Up in Tree"
 msgstr "Бұтақта жоғарлау"
 
-#: src/actionmanagerimpl.cpp:502
+#: src/actionmanagerimpl.cpp:503
 msgid "Go Down in Tree"
 msgstr "Бұтақта төмендеу"
 
-#: src/actionmanagerimpl.cpp:517
+#: src/actionmanagerimpl.cpp:518
 msgid "Select Next Tab"
 msgstr "Келесі қойындысына ауысу"
 
-#: src/actionmanagerimpl.cpp:522
+#: src/actionmanagerimpl.cpp:523
 msgid "Select Previous Tab"
 msgstr "Алдыңғы қойындысына ауысу"
 
-#: src/actionmanagerimpl.cpp:528
+#: src/actionmanagerimpl.cpp:529
 msgid "Detach Tab"
 msgstr "Қойындыны бөліп алу"
 
-#: src/actionmanagerimpl.cpp:538
+#: src/actionmanagerimpl.cpp:539
 #, fuzzy
 #| msgid "&Close Tab"
 msgid "Close Tab"
 msgstr "Қойындыны &жабу"
 
-#: src/actionmanagerimpl.cpp:544
+#: src/actionmanagerimpl.cpp:545
 msgid "Enlarge Font"
 msgstr ""
 
-#: src/actionmanagerimpl.cpp:550
+#: src/actionmanagerimpl.cpp:551
 #, fuzzy
 #| msgid "Serif font:"
 msgid "Shrink Font"
@@ -1194,51 +1188,57 @@ msgstr[0] "<qt>Шынымен осы %1 таңдалған ақпарды өші
 msgid "Delete Article"
 msgstr "Мақаланы өшіру"
 
-#: src/pluginmanager.cpp:165
+#: src/articlemodel.cpp:106
 #, fuzzy
-#| msgid "Name"
-msgctxt "Name of the plugin"
-msgid "Name"
-msgstr "Атауы"
+#| msgid "Untitled"
+msgctxt "Articlelist's column header"
+msgid "Title"
+msgstr "Аталмаған"
 
-#: src/pluginmanager.cpp:166
+#: src/articlemodel.cpp:108
 #, fuzzy
-#| msgid "Library"
-msgctxt "Library name"
-msgid "Library"
-msgstr "Жиыны"
+#| msgid "Feed"
+msgctxt "Articlelist's column header"
+msgid "Feed"
+msgstr "Ақпар"
 
-#: src/pluginmanager.cpp:167
+#: src/articlemodel.cpp:110
 #, fuzzy
-#| msgid "Authors"
-msgctxt "Plugin authors"
-msgid "Authors"
+#| msgid "Date"
+msgctxt "Articlelist's column header"
+msgid "Date"
+msgstr "Күні"
+
+#: src/articlemodel.cpp:112
+#, fuzzy
+#| msgid "Author"
+msgctxt "Articlelist's column header"
+msgid "Author"
 msgstr "Авторы"
 
-#: src/pluginmanager.cpp:168
-#, fuzzy
-#| msgid "Email"
-msgctxt "Plugin authors' emaila addresses"
-msgid "Email"
-msgstr "Эл.поштасы"
+#: src/articlemodel.cpp:114
+msgctxt "Articlelist's column header"
+msgid "Description"
+msgstr ""
 
-#: src/pluginmanager.cpp:169
+#: src/articlemodel.cpp:116
 #, fuzzy
-#| msgid "Version"
-msgctxt "Plugin version"
-msgid "Version"
-msgstr "Нұсқасы"
+#| msgid "Comments"
+msgctxt "Articlelist's column header"
+msgid "Content"
+msgstr "Түсініктемелері"
 
-#: src/pluginmanager.cpp:170
+#: src/trayicon.cpp:63
 #, fuzzy
-#| msgid "Framework Version"
-msgctxt "Framework version plugin requires"
-msgid "Framework Version"
-msgstr "Ақпаршауының нұсқасы"
+#| msgid "Akregator - RSS Feed Reader"
+msgid "Akregator - Feed Reader"
+msgstr "Akregator - RSS ақпарларын оқу"
 
-#: src/pluginmanager.cpp:174
-msgid "Plugin Information"
-msgstr "Плагин модулінің мәліметі"
+#: src/trayicon.cpp:120
+#, kde-format
+msgid "Akregator - 1 unread article"
+msgid_plural "Akregator - %1 unread articles"
+msgstr[0] "Akregator - %1 мақала оқылмаған"
 
 #: src/loadfeedlistcommand.cpp:72
 #, fuzzy, kde-format
@@ -1974,7 +1974,7 @@ msgstr ""
 #. i18n: ectx: Menu (edit)
 #. i18n: file: src/akregator_part.rc:14
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:235 rc.cpp:322
+#: rc.cpp:235 rc.cpp:325
 msgid "&Edit"
 msgstr "Өң&деу"
 
@@ -1982,17 +1982,17 @@ msgstr "Өң&деу"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/akregator_part.rc:21
 #. i18n: ectx: Menu (view)
-#: rc.cpp:238 rc.cpp:325
+#: rc.cpp:238 rc.cpp:328
 msgid "&View"
 msgstr "&Көрініс"
 
 #. i18n: file: src/akregator_shell.rc:21
 #. i18n: ectx: Menu (go)
-#. i18n: file: src/akregator_part.rc:31
-#. i18n: ectx: Menu (go)
 #. i18n: file: src/pageviewer.rc:34
 #. i18n: ectx: Menu (go)
-#: rc.cpp:241 rc.cpp:328 rc.cpp:349
+#. i18n: file: src/akregator_part.rc:31
+#. i18n: ectx: Menu (go)
+#: rc.cpp:241 rc.cpp:322 rc.cpp:331
 msgid "&Go"
 msgstr "&Өту"
 
@@ -2000,7 +2000,7 @@ msgstr "&Өту"
 #. i18n: ectx: Menu (feed)
 #. i18n: file: src/akregator_part.rc:44
 #. i18n: ectx: Menu (feed)
-#: rc.cpp:244 rc.cpp:331
+#: rc.cpp:244 rc.cpp:334
 #, fuzzy
 #| msgid "Feed"
 msgid "Fee&d"
@@ -2010,7 +2010,7 @@ msgstr "Ақпар"
 #. i18n: ectx: Menu (article)
 #. i18n: file: src/akregator_part.rc:57
 #. i18n: ectx: Menu (article)
-#: rc.cpp:247 rc.cpp:334
+#: rc.cpp:247 rc.cpp:337
 msgid "&Article"
 msgstr "&Мақала"
 
@@ -2018,7 +2018,7 @@ msgstr "&Мақала"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: src/akregator_part.rc:73
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:250 rc.cpp:337
+#: rc.cpp:250 rc.cpp:340
 msgid "&Settings"
 msgstr "&Параметрлері"
 
@@ -2026,7 +2026,7 @@ msgstr "&Параметрлері"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/akregator_part.rc:84
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:253 rc.cpp:340
+#: rc.cpp:253 rc.cpp:343
 msgid "Main Toolbar"
 msgstr "Негізгі құралдары"
 
@@ -2034,7 +2034,7 @@ msgstr "Негізгі құралдары"
 #. i18n: ectx: ToolBar (browserToolBar)
 #. i18n: file: src/akregator_part.rc:94
 #. i18n: ectx: ToolBar (browserToolBar)
-#: rc.cpp:256 rc.cpp:343
+#: rc.cpp:256 rc.cpp:346
 #, fuzzy
 #| msgid "Browser"
 msgid "Browser Toolbar"
@@ -2044,7 +2044,7 @@ msgstr "Шолғышы"
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
 #. i18n: file: src/akregator_part.rc:102
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#: rc.cpp:259 rc.cpp:346
+#: rc.cpp:259 rc.cpp:349
 msgid "Speech Toolbar"
 msgstr "Дауыстау құралдары"
 
