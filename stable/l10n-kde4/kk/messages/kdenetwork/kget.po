@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-18 04:51+0200\n"
+"POT-Creation-Date: 2010-06-29 02:44+0200\n"
 "PO-Revision-Date: 2010-05-10 10:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1652,14 +1652,6 @@ msgstr "Мәселе:"
 msgid "Information:"
 msgstr "Ақпарат:"
 
-#: ui/transfersview.cpp:125
-msgid "Select columns"
-msgstr "Бағандарды таңдау"
-
-#: ui/transfersview.cpp:305
-msgid "Transfer Details"
-msgstr "Тасымалдың егжей-тегжейлері"
-
 #: ui/verificationdialog.cpp:37
 msgid "Add checksum"
 msgstr "Бақылау қосындысын қосу"
@@ -1682,6 +1674,14 @@ msgstr "%1 сәтті расталды."
 #: ui/verificationdialog.cpp:215
 msgid "Verification successful"
 msgstr "Растауы сәтті өтті"
+
+#: ui/transfersview.cpp:125
+msgid "Select columns"
+msgstr "Бағандарды таңдау"
+
+#: ui/transfersview.cpp:305
+msgid "Transfer Details"
+msgstr "Тасымалдың егжей-тегжейлері"
 
 #: ui/renamefile.cpp:32
 msgid "Rename File"
@@ -3267,9 +3267,82 @@ msgstr "Растауы:"
 msgid "Optional"
 msgstr "Міндетті емес"
 
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:541
+msgid "General information:"
+msgstr "Жалпы мәліметі"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:544
+msgid "Here you can enter optional general information on the metalink."
+msgstr "Мұнда метасілтеме туралы жалпы мәліметті келтіре аласыз."
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:547
+msgid "Origin:"
+msgstr "Көзі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
+#: rc.cpp:550
+msgid "Web URL to the metalink"
+msgstr "Метасілтеменің Веб URL-і"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
+#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
+#: rc.cpp:553
+msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
+msgstr ""
+"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын көрсетеді."
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
+#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
+#: rc.cpp:556
+msgid "Dynamic:"
+msgstr "Динамикалық"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
+#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
+#: rc.cpp:559
+msgid "Metalink published"
+msgstr "Метасілтеме жарияланды"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
+#. i18n: ectx: property (text), widget (QLabel, label_30)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
+#. i18n: ectx: property (text), widget (QLabel, label_29)
+#: rc.cpp:562 rc.cpp:580
+msgid "Date and time:"
+msgstr "Күні мен уақыты"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
+#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
+#: rc.cpp:565 rc.cpp:577
+msgid "Timezone offset:"
+msgstr "Уақыт белдеуі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:568 rc.cpp:574
+msgid "Negative offset:"
+msgstr "Теріс шегінуі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
+#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
+#: rc.cpp:571
+msgid "Metalink updated"
+msgstr "Метасілтеме жаңартылды"
+
 #. i18n: file: ui/metalinkcreator/introduction.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:541
+#: rc.cpp:583
 msgid ""
 "This assistant allows you to create metalinks from scratch or base them on "
 "existing metalinks. A lot of the fields are optional or recommended, so "
@@ -3283,100 +3356,27 @@ msgstr ""
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:544
+#: rc.cpp:586
 msgid "Save created Metalink at:"
 msgstr "Құрылған метасілтеменің сақтау орны:"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, createButton)
-#: rc.cpp:547
+#: rc.cpp:589
 msgid "Create new Metalink"
 msgstr "Жаңа метасілтеме құру"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:88
 #. i18n: ectx: property (text), widget (QRadioButton, loadButton)
-#: rc.cpp:550
+#: rc.cpp:592
 msgid "Load existing Metalink:"
 msgstr "Бар метасілтеме жүктеу"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:98
 #. i18n: ectx: property (filter), widget (KUrlRequester, load)
-#: rc.cpp:553
+#: rc.cpp:595
 msgid "*.metalink *.meta4|Metalink file (*.metalink *.meta4)"
 msgstr "*.metalink *.meta4|Метасілтеме файлы (*.metalink *.meta4)"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:556
-msgid "General information:"
-msgstr "Жалпы мәліметі"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:559
-msgid "Here you can enter optional general information on the metalink."
-msgstr "Мұнда метасілтеме туралы жалпы мәліметті келтіре аласыз."
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:562
-msgid "Origin:"
-msgstr "Көзі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
-#: rc.cpp:565
-msgid "Web URL to the metalink"
-msgstr "Метасілтеменің Веб URL-і"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
-#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
-#: rc.cpp:568
-msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
-msgstr ""
-"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын көрсетеді."
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
-#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
-#: rc.cpp:571
-msgid "Dynamic:"
-msgstr "Динамикалық"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
-#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
-#: rc.cpp:574
-msgid "Metalink published"
-msgstr "Метасілтеме жарияланды"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
-#. i18n: ectx: property (text), widget (QLabel, label_30)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
-#. i18n: ectx: property (text), widget (QLabel, label_29)
-#: rc.cpp:577 rc.cpp:595
-msgid "Date and time:"
-msgstr "Күні мен уақыты"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
-#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
-#: rc.cpp:580 rc.cpp:592
-msgid "Timezone offset:"
-msgstr "Уақыт белдеуі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:583 rc.cpp:589
-msgid "Negative offset:"
-msgstr "Теріс шегінуі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
-#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
-#: rc.cpp:586
-msgid "Metalink updated"
-msgstr "Метасілтеме жаңартылды"
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
