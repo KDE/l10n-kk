@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knetworkconf\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-02 04:46+0200\n"
+"POT-Creation-Date: 2010-07-05 05:07+0200\n"
 "PO-Revision-Date: 2006-03-19 18:10+0000\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -198,8 +198,8 @@ msgid ""
 "it manually."
 msgstr "Желі құрылғының күйі өзгертілмеді. Оны қолмен жасауға болады."
 
-#: knetworkconf.cpp:850 knetworkconfigparser.cpp:795
-#: knetworkconfigparser.cpp:989
+#: knetworkconf.cpp:850 knetworkconfigparser.cpp:866
+#: knetworkconfigparser.cpp:1060
 msgid "Error"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr "Таңдалған желі профилі жүктелмеді."
 msgid "Error Reading Profile"
 msgstr "Профильді оқу қатесі"
 
-#: knetworkconfigparser.cpp:45
+#: knetworkconfigparser.cpp:49
 #, fuzzy, kde-format
 msgid ""
 "Could not find the network detection scripts. Something is wrong with your "
@@ -244,12 +244,12 @@ msgstr ""
 "болар. {KDE_PATH}/%1 \n"
 "файл бар екенін таксеріңіз."
 
-#: knetworkconfigparser.cpp:46
+#: knetworkconfigparser.cpp:50
 #, fuzzy
 msgid "Could Not Find Network Backend Script"
 msgstr "Желі параметрлерін анықтайтын скрипті табылмады"
 
-#: knetworkconfigparser.cpp:70 knetworkconfigparser.cpp:101
+#: knetworkconfigparser.cpp:74 knetworkconfigparser.cpp:105
 #, fuzzy
 msgid ""
 "Could not execute network detection scripts. Something is wrong with your "
@@ -258,41 +258,71 @@ msgstr ""
 "Желі параметрлерін анықтау үшін ішкі скрипті орындалмады. Мүмкін, орнату "
 "қатесі болар."
 
-#: knetworkconfigparser.cpp:71 knetworkconfigparser.cpp:102
-#: knetworkconfigparser.cpp:310 knetworkconfigparser.cpp:974
+#: knetworkconfigparser.cpp:75 knetworkconfigparser.cpp:106
+#: knetworkconfigparser.cpp:381 knetworkconfigparser.cpp:1045
 #, fuzzy
 msgid "Could Not Launch Network Backend Script"
 msgstr "Желі конфигурациясының ішкі скрипті жегілмеді"
 
-#: knetworkconfigparser.cpp:120
+#: knetworkconfigparser.cpp:124
 #, fuzzy, kde-format
 msgid "Could not parse the XML file (%1)"
 msgstr "Файл ашылмады"
 
-#: knetworkconfigparser.cpp:121
+#: knetworkconfigparser.cpp:125
 msgid "Error While Listing Network Interfaces"
 msgstr "Желі интерфейстерінің тізімін алу қатесі"
 
-#: knetworkconfigparser.cpp:201
+#: knetworkconfigparser.cpp:205
+#, fuzzy
+#| msgid "Could not open file /proc/net/route."
+msgid "Could not open the routing socket."
+msgstr "/proc/net/route файлы ашылмады."
+
+#: knetworkconfigparser.cpp:206
+#, fuzzy
+#| msgid "Could Not Open File"
+msgid "Could not open socket"
+msgstr "Файл ашылмады"
+
+#: knetworkconfigparser.cpp:235
+msgid ""
+"Could not write to the routing socket: the connection may be down, or you do "
+"not have write permission."
+msgstr ""
+
+#: knetworkconfigparser.cpp:236
+msgid "Could not write to socket"
+msgstr ""
+
+#: knetworkconfigparser.cpp:246
+msgid "Could not get information about the gateway."
+msgstr ""
+
+#: knetworkconfigparser.cpp:247
+msgid "Could not read from socket"
+msgstr ""
+
+#: knetworkconfigparser.cpp:271
 msgid "Could not open file /proc/net/route."
 msgstr "/proc/net/route файлы ашылмады."
 
-#: knetworkconfigparser.cpp:202
+#: knetworkconfigparser.cpp:272
 msgid "Could Not Open File"
 msgstr "Файл ашылмады"
 
 #. i18n: file: kreloadnetworkdlg.ui:25
 #. i18n: ectx: property (windowTitle), widget (QDialog, KReloadNetworkDlg)
-#: knetworkconfigparser.cpp:295 rc.cpp:340
+#: knetworkconfigparser.cpp:366 rc.cpp:340
 msgid "Reloading Network"
 msgstr "Желіні қайта жүктеу"
 
-#: knetworkconfigparser.cpp:296
+#: knetworkconfigparser.cpp:367
 #, fuzzy
 msgid "<center>Please wait while reloading the network...</center>"
 msgstr "%1Күте тұрыңыз, желі параметрлерін сақтау...%2"
 
-#: knetworkconfigparser.cpp:309
+#: knetworkconfigparser.cpp:380
 #, fuzzy
 msgid ""
 "Could not execute network saving scripts. Something is wrong with your "
@@ -301,20 +331,20 @@ msgstr ""
 "Желі параметрлерін анықтау үшін ішкі скрипті орындалмады. Мүмкін, орнату "
 "қатесі болар."
 
-#: knetworkconfigparser.cpp:713
+#: knetworkconfigparser.cpp:784
 msgid "Ethernet Network Device"
 msgstr "Ethernet желі құрылғыcы"
 
-#: knetworkconfigparser.cpp:715
+#: knetworkconfigparser.cpp:786
 msgid "Wireless Network Device"
 msgstr "Сымсыз желі құрылғысы"
 
-#: knetworkconfigparser.cpp:794
+#: knetworkconfigparser.cpp:865
 #, fuzzy, kde-format
 msgid "Could not parse the XML file (%1)."
 msgstr "Файл ашылмады"
 
-#: knetworkconfigparser.cpp:973
+#: knetworkconfigparser.cpp:1044
 #, fuzzy
 msgid ""
 "Could not list supported platforms. Something is wrong with your "
@@ -323,7 +353,7 @@ msgstr ""
 "Желі параметрлерін анықтау үшін ішкі скрипті орындалмады. Мүмкін, орнату "
 "қатесі болар."
 
-#: knetworkconfigparser.cpp:988
+#: knetworkconfigparser.cpp:1059
 #, fuzzy, kde-format
 msgid "Could not parse the XML file (%1) of supported platforms."
 msgstr ""
