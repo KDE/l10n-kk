@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-06-07 04:49+0200\n"
-"PO-Revision-Date: 2010-07-21 06:15+0600\n"
+"PO-Revision-Date: 2010-07-22 20:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -117,6 +117,28 @@ msgid ""
 "interpolation. This method selects the direction of interpolation so as to "
 "maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
 msgstr ""
+"<p><b>Сапасы (интерполяциясы)</b><p>Мұнда RAW кескіндерінің түстерін "
+"қайта құру әдісін таңдап алыңыз. Түстрін қайа құру алгоритмі дегені - толық "
+"емес \"шикі\", камерадан алынған кескіндерінің түстерін интерполяция арқылы "
+"толықтыру процесі. \"Шикі\" дерек түс пикселдер матрицасы түрінде "
+"камералардың кебінен алынады. Басқаша, бұл CFA интерполяция, түстерді "
+"қалпына келтіру, дебайреризация (demosaicing) деп ататалады. \"Шикі\" "
+"кескіндерінің түстерін қайта құрудың 4 әдісі бар:<p><b>Қосызықты</b>: "
+"жылдам бірақ сапасы төмен қоссызықты интерполяциясы (баяу "
+"компьютерде - бұл әдеті әдіс). Бұл әдісте қызыл емес пикселдің "
+"қызылдығы қасындағы қызыл пикселдер мәндерін орталап есептеледі. "
+"Көк пен жасыл пикселдерді де дәл солай құрылады.<p><b>VNG</b>: "
+"градиенттердің өзгермелі саны (Variable Number of Gradients) "
+"интерполяциясы. Бұл әдісте керек пикселді есептеу үшін оның "
+"маңайындағы градиенттерін есептеп, (кескіннің тегіс және ұқсас "
+"жерлеріне сәйкесті) ең төменгісін пайдаланады.<p><b>PPG</b>: "
+"қалып бойынша пикселлерді топтастыру (Patterned Pixel Grouping) "
+"интерполяциясы. Бұл әдіс кескінде табиғат көрінісі түсірілген деген "
+"болжамын негіздейді. Бұл әдіс VNG әдісімен салыстырғанда, табиғат "
+"кескіндерінің түстерінде азырақ қателер жібереді.<p><b>AHD</b>: "
+"бейімделген біртектілік бағытты (Adaptive Homogeneity-Directed) "
+"интерполяциясы. Бұл әдісте, біртектілік шамасын азайтатын "
+"интерполяцияның бағыты таңдалып, түстер қателіктерін шектейді.<p>"
 
 #: libkdcraw/dcrawsettingswidget.cpp:260
 msgid "Median:"
@@ -132,28 +154,28 @@ msgstr ""
 
 #: libkdcraw/dcrawsettingswidget.cpp:267
 msgid "Demosaicing"
-msgstr ""
+msgstr "Түстерін қайта құру"
 
 #: libkdcraw/dcrawsettingswidget.cpp:275
 msgid "Method:"
-msgstr ""
+msgstr "Әдісі:"
 
 #: libkdcraw/dcrawsettingswidget.cpp:277
 msgid "Default D65"
-msgstr ""
+msgstr "Әдетті D65"
 
 #: libkdcraw/dcrawsettingswidget.cpp:278
 msgid "Camera"
-msgstr ""
+msgstr "Камера"
 
 #: libkdcraw/dcrawsettingswidget.cpp:279
 msgid "Automatic"
-msgstr ""
+msgstr "Авто"
 
 #: libkdcraw/dcrawsettingswidget.cpp:280
 msgctxt "set white balance manually"
 msgid "Manual"
-msgstr ""
+msgstr "Колмен"
 
 #: libkdcraw/dcrawsettingswidget.cpp:282
 msgid ""
@@ -164,43 +186,52 @@ msgid ""
 "balance averaging the entire image.<p><b>Manual</b>: Set a custom "
 "temperature and green level values."
 msgstr ""
+"<p><b>Ақтың деңгейі</b><p>\"Шикі\" кескіннің ақтың деңгейлері:<p><b>Әдетті "
+"D65</b>: стандартты D65 күннің көзіндегі ақтың деңгейі.<p><b>Камера</b>: "
+"камераның ақтың деңгейі. Жоқ болса, әдетті бейтарап ақтың деңгейіне "
+"ауысады.<p><b>Авто</b>: ақтың деңгейі кескін бойынша орташалап "
+"есептеледі.<p><b>Қолмен</b>: температурасының және жасылдың деңгейін "
+"қолмен келтіру."
 
 #: libkdcraw/dcrawsettingswidget.cpp:295
 msgid "T(K):"
-msgstr ""
+msgstr "T(K):"
 
 #: libkdcraw/dcrawsettingswidget.cpp:296
 msgid "<p><b>Temperature</b><p>Set here the color temperature in Kelvin."
 msgstr ""
+"<p><b>Температурасы</b><p>Мұнда түстің температурасын (Кельвиндерде) "
+"келтіріңіз."
 
 #: libkdcraw/dcrawsettingswidget.cpp:303
 msgid "Green:"
-msgstr ""
+msgstr "Жасыл:"
 
 #: libkdcraw/dcrawsettingswidget.cpp:304
+#, fuzzy
 msgid ""
 "<p>Set here the green component to set magenta color cast removal level."
-msgstr ""
+msgstr "<p>Мұнда мажента түстің жасыл компонентін келтіріңіз."
 
 #: libkdcraw/dcrawsettingswidget.cpp:307
 msgid "Highlights:"
-msgstr ""
+msgstr "Ерен жарықтық:"
 
 #: libkdcraw/dcrawsettingswidget.cpp:309
 msgid "Solid white"
-msgstr ""
+msgstr "Таза ақ"
 
 #: libkdcraw/dcrawsettingswidget.cpp:310
 msgid "Unclip"
-msgstr ""
+msgstr "Біріктірілмеу"
 
 #: libkdcraw/dcrawsettingswidget.cpp:311
 msgid "Blend"
-msgstr ""
+msgstr "Арыластыру"
 
 #: libkdcraw/dcrawsettingswidget.cpp:312
 msgid "Rebuild"
-msgstr ""
+msgstr "Қалпына келтіру"
 
 #: libkdcraw/dcrawsettingswidget.cpp:314
 msgid ""
@@ -431,3 +462,4 @@ msgstr ""
 #: libkdcraw/rnuminput.cpp:167
 msgid "Reset to default value"
 msgstr ""
+
