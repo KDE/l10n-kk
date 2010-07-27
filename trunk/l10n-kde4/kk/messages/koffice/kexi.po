@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-19 05:01+0200\n"
+"POT-Creation-Date: 2010-07-27 06:21+0200\n"
 "PO-Revision-Date: 2009-01-12 09:55+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -1090,7 +1090,7 @@ msgid "Copy"
 msgstr "Көшіріп алу"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:68
-#: widget/KexiProjectListView.cpp:201
+#: widget/KexiProjectListView.cpp:201 widget/KexiProjectNavigator.cpp:168
 msgid "Export"
 msgstr "Экспорт ету"
 
@@ -1941,7 +1941,7 @@ msgid "&Clear"
 msgstr "&Тазалау"
 
 #: widget/utils/kexicontextmenuutils.cpp:97
-#: widget/KexiPropertyEditorView.cpp:46 main/KexiMainWindow.cpp:2217
+#: widget/KexiPropertyEditorView.cpp:46 main/KexiMainWindow.cpp:2267
 msgid "Properties"
 msgstr "Қасиеттер"
 
@@ -1960,7 +1960,7 @@ msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен 
 
 #. i18n: file: main/kexifinddialog.ui:103
 #. i18n: ectx: property (text), widget (KPushButton, m_btnReplace)
-#: widget/utils/kexicontextmenuutils.cpp:229 main/KexiMainWindow.cpp:3604
+#: widget/utils/kexicontextmenuutils.cpp:229 main/KexiMainWindow.cpp:3654
 #: migration/importwizard.cpp:807 rc.cpp:171
 msgid "&Replace"
 msgstr "&Алмастыру"
@@ -2096,7 +2096,8 @@ msgid "Connect to a Database Server"
 msgstr "Деректер қоры серверіне қосылу"
 
 #: widget/kexidbconnectionwidget.cpp:400 widget/KexiProjectListView.cpp:129
-#: main/startup/KexiStartup.cpp:172 main/startup/KexiProjectSelector.cpp:242
+#: widget/KexiProjectNavigator.cpp:109 main/startup/KexiStartup.cpp:172
+#: main/startup/KexiProjectSelector.cpp:242
 msgid "&Open"
 msgstr "&Ашу"
 
@@ -2178,141 +2179,144 @@ msgstr "%1 дегеннен суретті таңдау"
 msgid "Edit Collection..."
 msgstr "Жиынды өзгерту..."
 
-#: widget/KexiProjectListView.cpp:86 main/KexiMainWindow.cpp:957
+#: widget/KexiProjectListView.cpp:86 widget/KexiProjectNavigator.cpp:72
+#: main/KexiMainWindow.cpp:960
 msgid "Project Navigator"
 msgstr "Жоба навигаторы"
 
-#: widget/KexiProjectListView.cpp:130
+#: widget/KexiProjectListView.cpp:130 widget/KexiProjectNavigator.cpp:110
 msgid "Open object"
 msgstr "Нысанды ашу"
 
-#: widget/KexiProjectListView.cpp:130
+#: widget/KexiProjectListView.cpp:130 widget/KexiProjectNavigator.cpp:110
 msgid "Opens object selected in the list."
 msgstr "Тізімінен таңдалған нысанды ашу."
 
-#: widget/KexiProjectListView.cpp:149 main/KexiMainWindow.cpp:872
+#: widget/KexiProjectListView.cpp:149 widget/KexiProjectNavigator.cpp:128
+#: main/KexiMainWindow.cpp:875
 msgid "&Delete"
 msgstr "&Өшіру"
 
-#: widget/KexiProjectListView.cpp:150
+#: widget/KexiProjectListView.cpp:150 widget/KexiProjectNavigator.cpp:129
 msgid "Delete object"
 msgstr "Нысанды өшіру"
 
-#: widget/KexiProjectListView.cpp:150
+#: widget/KexiProjectListView.cpp:150 widget/KexiProjectNavigator.cpp:129
 msgid "Deletes the object selected in the list."
 msgstr "Тізімінен таңдалған нысанды өшіру."
 
-#: widget/KexiProjectListView.cpp:153
+#: widget/KexiProjectListView.cpp:153 widget/KexiProjectNavigator.cpp:132
 msgid "&Rename"
 msgstr "Қ&айта атау"
 
-#: widget/KexiProjectListView.cpp:154
+#: widget/KexiProjectListView.cpp:154 widget/KexiProjectNavigator.cpp:133
 msgid "Rename object"
 msgstr "Нысанның атауын өзгерту"
 
-#: widget/KexiProjectListView.cpp:154
+#: widget/KexiProjectListView.cpp:154 widget/KexiProjectNavigator.cpp:133
 msgid "Renames the object selected in the list."
 msgstr "Тізімінен таңдалған нысанды қайта атау."
 
-#: widget/KexiProjectListView.cpp:162
+#: widget/KexiProjectListView.cpp:162 widget/KexiProjectNavigator.cpp:141
 msgid "&Design"
 msgstr "Құ&растыру"
 
-#: widget/KexiProjectListView.cpp:163
+#: widget/KexiProjectListView.cpp:163 widget/KexiProjectNavigator.cpp:142
 msgid "Design object"
 msgstr "Нысанды құрастыру"
 
-#: widget/KexiProjectListView.cpp:163
+#: widget/KexiProjectListView.cpp:163 widget/KexiProjectNavigator.cpp:142
 msgid "Starts designing of the object selected in the list."
 msgstr "Тізімінен таңдалған нысанның құрастыруын бастау."
 
-#: widget/KexiProjectListView.cpp:171
+#: widget/KexiProjectListView.cpp:171 widget/KexiProjectNavigator.cpp:150
 msgid "Open in &Text View"
 msgstr "&Мәтін көрінісін ашу"
 
-#: widget/KexiProjectListView.cpp:172
+#: widget/KexiProjectListView.cpp:172 widget/KexiProjectNavigator.cpp:151
 msgid "Open object in text view"
 msgstr "Нысанның мәтін көрінісін ашу"
 
-#: widget/KexiProjectListView.cpp:172
+#: widget/KexiProjectListView.cpp:172 widget/KexiProjectNavigator.cpp:151
 msgid "Opens selected object in the list in text view."
 msgstr "Тізімінен таңдалған нысанды мәтін көрінісінде ашу."
 
-#: widget/KexiProjectListView.cpp:195
+#: widget/KexiProjectListView.cpp:195 widget/KexiProjectNavigator.cpp:162
 #: formeditor/kexiactionselectiondialog.cpp:267
 msgid "Execute"
 msgstr "Орындау"
 
-#: widget/KexiProjectListView.cpp:203
+#: widget/KexiProjectListView.cpp:203 widget/KexiProjectNavigator.cpp:170
 #, fuzzy
 #| msgid "To clipboard:"
 msgctxt "Export->To Clipboard as Data... "
 msgid "To &Clipboard..."
 msgstr "Алмасу буферіне:"
 
-#: widget/KexiProjectListView.cpp:204
+#: widget/KexiProjectListView.cpp:204 widget/KexiProjectNavigator.cpp:171
 #, fuzzy
 #| msgid "Export data to a file"
 msgid "Export data to clipboard"
 msgstr "Деректерді файлға экпорттау"
 
-#: widget/KexiProjectListView.cpp:205
+#: widget/KexiProjectListView.cpp:205 widget/KexiProjectNavigator.cpp:172
 #, fuzzy
 #| msgid ""
 #| "Exports data from the currently selected table or query data to a file."
 msgid "Exports data from the currently selected table or query to clipboard."
 msgstr "Таңдалған кесте не сұраныс деректерін файлға экспорттау."
 
-#: widget/KexiProjectListView.cpp:210
+#: widget/KexiProjectListView.cpp:210 widget/KexiProjectNavigator.cpp:177
 msgctxt "Export->To File As Data &Table... "
 msgid "To &File As Data Table..."
 msgstr "&Файлға кесте түрінде..."
 
-#: widget/KexiProjectListView.cpp:211
+#: widget/KexiProjectListView.cpp:211 widget/KexiProjectNavigator.cpp:178
 msgid "Export data to a file"
 msgstr "Деректерді файлға экпорттау"
 
-#: widget/KexiProjectListView.cpp:212
+#: widget/KexiProjectListView.cpp:212 widget/KexiProjectNavigator.cpp:179
 #, fuzzy
 #| msgid ""
 #| "Exports data from the currently selected table or query data to a file."
 msgid "Exports data from the currently selected table or query to a file."
 msgstr "Таңдалған кесте не сұраныс деректерін файлға экспорттау."
 
-#: widget/KexiProjectListView.cpp:216
+#: widget/KexiProjectListView.cpp:216 widget/KexiProjectNavigator.cpp:183
 msgid "&Print..."
 msgstr "&Басып шығару..."
 
-#: widget/KexiProjectListView.cpp:217
+#: widget/KexiProjectListView.cpp:217 widget/KexiProjectNavigator.cpp:184
 msgid "Print data"
 msgstr "Деректерді басып шығару"
 
-#: widget/KexiProjectListView.cpp:218
+#: widget/KexiProjectListView.cpp:218 widget/KexiProjectNavigator.cpp:185
 msgid "Prints data from the currently selected table or query."
 msgstr "Таңдалған кесте не сұраныс деректерін басып шығару."
 
-#: widget/KexiProjectListView.cpp:221
+#: widget/KexiProjectListView.cpp:221 widget/KexiProjectNavigator.cpp:188
 msgid "Page Setup..."
 msgstr "Бетті баптау..."
 
-#: widget/KexiProjectListView.cpp:222
+#: widget/KexiProjectListView.cpp:222 widget/KexiProjectNavigator.cpp:189
 msgid "Page setup for data"
 msgstr "Деректер бетін бапттау"
 
-#: widget/KexiProjectListView.cpp:223 main/KexiMainWindow.cpp:802
+#: widget/KexiProjectListView.cpp:223 widget/KexiProjectNavigator.cpp:190
+#: main/KexiMainWindow.cpp:805
 msgid "Shows page setup for printing the active table or query."
 msgstr "Басатын кесте/сұраныс деректер бетін баптау үшін көрсету."
 
-#: widget/KexiProjectListView.cpp:298
+#: widget/KexiProjectListView.cpp:298 widget/KexiProjectModel.cpp:94
 msgid "Errors encountered during loading plugins:"
 msgstr "Плагиндерді жүктегендегі қателер:"
 
-#: widget/KexiProjectListView.cpp:481
+#: widget/KexiProjectListView.cpp:481 widget/KexiProjectNavigator.cpp:360
 #, kde-format
 msgid "&Create Object: %1..."
 msgstr "&Нысанды құру: %1..."
 
-#: widget/KexiProjectListView.cpp:493
+#: widget/KexiProjectListView.cpp:493 widget/KexiProjectNavigator.cpp:372
 msgid "&Create Object..."
 msgstr "&Нысанды құру..."
 
@@ -2322,7 +2326,7 @@ msgid "%1 - Print Preview - %2"
 msgstr "%1 - Алдын ала қарау - %2"
 
 #: main/printing/kexisimpleprintpreviewwindow.cpp:183
-#: main/KexiMainWindow.cpp:798
+#: main/KexiMainWindow.cpp:801
 msgid "Page Set&up..."
 msgstr "Бетті &баптау..."
 
@@ -2592,7 +2596,7 @@ msgstr ""
 msgid "Creating New Project"
 msgstr "Жаңа жобаны құру"
 
-#: main/startup/KexiNewProjectWizard.cpp:113 main/KexiMainWindow_p.h:194
+#: main/startup/KexiNewProjectWizard.cpp:113 main/KexiMainWindow_p.h:195
 msgid "Create"
 msgstr "Құру"
 
@@ -2984,51 +2988,51 @@ msgstr "\"%1\" дегенде табу"
 msgid "The search item was not found"
 msgstr "Ізейтіні табылмады"
 
-#: main/KexiMainWindow_p.h:136
+#: main/KexiMainWindow_p.h:137
 msgid "Task-based tabbed toolbar groups commands for application using tabs."
 msgstr ""
 "Қойындылар қолданатын бағдарламалар үшін тапсырма негіздеген қойындылы "
 "құралдар командаларды топтастырады (Түсінсем бұйырмасын)."
 
-#: main/KexiMainWindow_p.h:170
+#: main/KexiMainWindow_p.h:171
 msgctxt "Application name as menu entry"
 msgid "Kexi"
 msgstr "Kexi"
 
-#: main/KexiMainWindow_p.h:181
+#: main/KexiMainWindow_p.h:182
 msgid "Project"
 msgstr "Жоба"
 
-#: main/KexiMainWindow_p.h:197 core/KexiView.cpp:591
+#: main/KexiMainWindow_p.h:198 core/KexiView.cpp:591
 msgid "Data"
 msgstr "Деректер"
 
-#: main/KexiMainWindow_p.h:212
+#: main/KexiMainWindow_p.h:213
 msgid "External Data"
 msgstr "Сыртқы деректер"
 
-#: main/KexiMainWindow_p.h:240
+#: main/KexiMainWindow_p.h:241
 msgid "Tools"
 msgstr "Құралдар"
 
-#: main/KexiMainWindow_p.h:245
+#: main/KexiMainWindow_p.h:246
 #, fuzzy
 #| msgid "Design"
 msgid "Form Design"
 msgstr "Құрылымы"
 
-#: main/KexiMainWindow_p.h:248
+#: main/KexiMainWindow_p.h:249
 #, fuzzy
 #| msgid "Design"
 msgid "Report Design"
 msgstr "Құрылымы"
 
-#: main/KexiMainWindow_p.h:720
+#: main/KexiMainWindow_p.h:722
 #, kde-format
 msgid "Could not start %1 application."
 msgstr "%1 қолданбасы жегілмеді."
 
-#: main/KexiMainWindow_p.h:721
+#: main/KexiMainWindow_p.h:723
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "\"%1\" командасы орындалмады."
@@ -3075,39 +3079,39 @@ msgstr " Жол: %1 Бағ.: %2 "
 msgid "Read only"
 msgstr "Тек оқу үшін"
 
-#: main/KexiMainWindow.cpp:189
+#: main/KexiMainWindow.cpp:191
 msgid "Close the current tab"
 msgstr "Назадағы қойындысын жабу"
 
-#: main/KexiMainWindow.cpp:405
+#: main/KexiMainWindow.cpp:408
 msgid "&Insert"
 msgstr "&Ендіру"
 
-#: main/KexiMainWindow.cpp:411
+#: main/KexiMainWindow.cpp:414
 msgid "&Import"
 msgstr "&Импорт"
 
-#: main/KexiMainWindow.cpp:412
+#: main/KexiMainWindow.cpp:415
 msgid "Paste &Special"
 msgstr "&Арнаулы орналастыру"
 
-#: main/KexiMainWindow.cpp:442
+#: main/KexiMainWindow.cpp:445
 msgctxt "Close the current tab page in Kexi tab interface"
 msgid "Close the current tab"
 msgstr "Назардағы қойындысын жабу"
 
-#: main/KexiMainWindow.cpp:484
+#: main/KexiMainWindow.cpp:487
 msgid "&Window"
 msgstr "&Терезе"
 
-#: main/KexiMainWindow.cpp:554
+#: main/KexiMainWindow.cpp:557
 #, kde-format
 msgid ""
 "User interface mode will be switched to IDEAl at next %1 application startup."
 msgstr ""
 "Келесі %1 қолданбаның бастауында пайдаланушы интерфейсі IDEAl-ға ауысады."
 
-#: main/KexiMainWindow.cpp:579
+#: main/KexiMainWindow.cpp:582
 #, kde-format
 msgid ""
 "User interface mode will be switched to Childframe at next %1 application "
@@ -3116,59 +3120,59 @@ msgstr ""
 "Келесі %1 қолданбаның бастауында пайдаланушы интерфейсі  Childframe-ге "
 "ауысады."
 
-#: main/KexiMainWindow.cpp:631
+#: main/KexiMainWindow.cpp:634
 msgid "&New..."
 msgstr "&Жаңа..."
 
-#: main/KexiMainWindow.cpp:633
+#: main/KexiMainWindow.cpp:636
 msgid "Create a new project"
 msgstr "Жаңа жобаны құру"
 
-#: main/KexiMainWindow.cpp:635
+#: main/KexiMainWindow.cpp:638
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Жаңа жобаны құру. Ашылып тұрған жобаға әсер етпейді."
 
-#: main/KexiMainWindow.cpp:640
+#: main/KexiMainWindow.cpp:643
 msgid "Open an existing project"
 msgstr "Бар жобаны ашу"
 
-#: main/KexiMainWindow.cpp:642
+#: main/KexiMainWindow.cpp:645
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr "Бар жобаны ашу. Ашылып тұрған жобаға әсер етпейді."
 
-#: main/KexiMainWindow.cpp:646
+#: main/KexiMainWindow.cpp:649
 msgid "&Download Example Databases..."
 msgstr "&Мысал дер.қорларды жүктеп алу..."
 
-#: main/KexiMainWindow.cpp:647
+#: main/KexiMainWindow.cpp:650
 msgid "Download example databases from the Internet"
 msgstr "Интернеттен мысал деректер қорларын жүктеп алу"
 
-#: main/KexiMainWindow.cpp:648
+#: main/KexiMainWindow.cpp:651
 msgid "Downloads example databases from the Internet."
 msgstr "Интернеттен мысал деректер қорларын жүктеп алу."
 
-#: main/KexiMainWindow.cpp:657 main/KexiMainWindow.cpp:3296
+#: main/KexiMainWindow.cpp:660 main/KexiMainWindow.cpp:3346
 msgid "Open Recent"
 msgstr "Жуырдағыны ашу"
 
-#: main/KexiMainWindow.cpp:677
+#: main/KexiMainWindow.cpp:680
 msgid "Save object changes"
 msgstr "Нысанның өзгерістерін сақтау"
 
-#: main/KexiMainWindow.cpp:678
+#: main/KexiMainWindow.cpp:681
 msgid "Saves object changes from currently selected window."
 msgstr "Таңдаған терезедегі нысанның өзгерістерін сақтау."
 
-#: main/KexiMainWindow.cpp:683
+#: main/KexiMainWindow.cpp:686
 msgid "Save &As..."
 msgstr "&Былай сақтау..."
 
-#: main/KexiMainWindow.cpp:684 main/KexiMainWindow.cpp:3312
+#: main/KexiMainWindow.cpp:687 main/KexiMainWindow.cpp:3362
 msgid "Save object as"
 msgstr "Нысанды былай сақтау"
 
-#: main/KexiMainWindow.cpp:686
+#: main/KexiMainWindow.cpp:689
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -3176,69 +3180,69 @@ msgstr ""
 "Таңдаған терезедегі нысанның өзгерістерін жаңа атауымен (жобасын өзгертпей) "
 "сақтау."
 
-#: main/KexiMainWindow.cpp:692
+#: main/KexiMainWindow.cpp:695
 msgid "Project Properties"
 msgstr "Жобаның қасиеттері"
 
-#: main/KexiMainWindow.cpp:701
+#: main/KexiMainWindow.cpp:704
 msgid "&Close Project"
 msgstr "Жобаны ж&абу"
 
-#: main/KexiMainWindow.cpp:702
+#: main/KexiMainWindow.cpp:705
 msgid "Close the current project"
 msgstr "Назардағы жобаны жабу"
 
-#: main/KexiMainWindow.cpp:703
+#: main/KexiMainWindow.cpp:706
 msgid "Closes the current project."
 msgstr "Назардағы жобаны жабу."
 
-#: main/KexiMainWindow.cpp:709
+#: main/KexiMainWindow.cpp:712
 msgid "Quits Kexi application. Kexi prompts you to save changes."
 msgstr "Kexi қолданбасын жабу. Өзерістерді сақтау ұсынылады."
 
-#: main/KexiMainWindow.cpp:714
+#: main/KexiMainWindow.cpp:717
 msgid "&Relationships..."
 msgstr "Қ&атынастар..."
 
-#: main/KexiMainWindow.cpp:716
+#: main/KexiMainWindow.cpp:719
 msgid "Project relationships"
 msgstr "Жобаның қатынастары"
 
-#: main/KexiMainWindow.cpp:717
+#: main/KexiMainWindow.cpp:720
 msgid "Shows project relationships."
 msgstr "Жобаның қатынастарын көрсету."
 
-#: main/KexiMainWindow.cpp:726
+#: main/KexiMainWindow.cpp:729
 msgid "&Import Database..."
 msgstr "Деректер қорын &импорттау..."
 
-#: main/KexiMainWindow.cpp:727
+#: main/KexiMainWindow.cpp:730
 msgid "Import entire database as a Kexi project"
 msgstr "Деректер қорын түгелдей Kexi жобасына импорттау"
 
-#: main/KexiMainWindow.cpp:729
+#: main/KexiMainWindow.cpp:732
 msgid "Imports entire database as a Kexi project."
 msgstr "Деректер қорын түгелдей Kexi жобасына импорттау."
 
-#: main/KexiMainWindow.cpp:734
+#: main/KexiMainWindow.cpp:737
 #, fuzzy
 #| msgid "Import Database"
 msgid "Import Tables"
 msgstr "Деректер қорын импорттау"
 
-#: main/KexiMainWindow.cpp:735 main/KexiMainWindow.cpp:736
+#: main/KexiMainWindow.cpp:738 main/KexiMainWindow.cpp:739
 msgid "Import data from an external source into this database"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:744
+#: main/KexiMainWindow.cpp:747
 msgid "&Compact Database..."
 msgstr "Деректер қорын &ықшамдау..."
 
-#: main/KexiMainWindow.cpp:745
+#: main/KexiMainWindow.cpp:748
 msgid "Compact the current database project"
 msgstr "Назардағы деректер қорын ықшамдау"
 
-#: main/KexiMainWindow.cpp:747
+#: main/KexiMainWindow.cpp:750
 msgid ""
 "Compacts the current database project, so it will take less space and work "
 "faster."
@@ -3246,302 +3250,302 @@ msgstr ""
 "Назардағы деректер қорын ықшамдау, яғни алатын орнын азайтып тезірек жұмыс "
 "істейтін қылу."
 
-#: main/KexiMainWindow.cpp:757
+#: main/KexiMainWindow.cpp:760
 #, fuzzy
 #| msgid "Import CSV Data File"
 msgctxt "Import->Table Data From File..."
 msgid "Import Data From &File..."
 msgstr "CSV-файлынан импорттау"
 
-#: main/KexiMainWindow.cpp:759
+#: main/KexiMainWindow.cpp:762
 msgid "Import table data from a file"
 msgstr "Кесте деректерін файлдан импорттау"
 
-#: main/KexiMainWindow.cpp:760
+#: main/KexiMainWindow.cpp:763
 msgid "Imports table data from a file."
 msgstr "Кесте деректерін файлдан импорттау."
 
-#: main/KexiMainWindow.cpp:768
+#: main/KexiMainWindow.cpp:771
 #, fuzzy
 #| msgid "Export data to a file"
 msgctxt "Export->Table or Query Data to File..."
 msgid "Export Data to &File..."
 msgstr "Деректерді файлға экпорттау"
 
-#: main/KexiMainWindow.cpp:771
+#: main/KexiMainWindow.cpp:774
 msgid "Export data from the active table or query data to a file"
 msgstr "Белсенді кесте не сұраныс деректерін файлға экспорттау"
 
-#: main/KexiMainWindow.cpp:773
+#: main/KexiMainWindow.cpp:776
 msgid "Exports data from the active table or query data to a file."
 msgstr "Белсенді кесте не сұраныс деректерін файлға экспорттау."
 
-#: main/KexiMainWindow.cpp:784
+#: main/KexiMainWindow.cpp:787
 msgid "Print data from the active table or query"
 msgstr "Белсенді кесте/сұраныс деректерін басып шығару"
 
-#: main/KexiMainWindow.cpp:785
+#: main/KexiMainWindow.cpp:788
 msgid "Prints data from the active table or query."
 msgstr "Белсенді кесте не сұраныс деректерін басып шығару."
 
-#: main/KexiMainWindow.cpp:791
+#: main/KexiMainWindow.cpp:794
 msgid "Show print preview for the active table or query"
 msgstr "Басатын кесте/сұраныс деректерін алдын-ала қарау"
 
-#: main/KexiMainWindow.cpp:793
+#: main/KexiMainWindow.cpp:796
 msgid "Shows print preview for the active table or query."
 msgstr "Басатын кесте не сұраныс деректерін алдын-ала қарау."
 
-#: main/KexiMainWindow.cpp:800
+#: main/KexiMainWindow.cpp:803
 msgid "Show page setup for printing the active table or query"
 msgstr "Басатын кесте/сұраныс деректер бетін баптау үшін көрсету"
 
-#: main/KexiMainWindow.cpp:817
+#: main/KexiMainWindow.cpp:820
 #, fuzzy
 #| msgid "Paste &Special"
 msgctxt "Paste Special->As Data &Table..."
 msgid "Paste Special..."
 msgstr "&Арнаулы орналастыру"
 
-#: main/KexiMainWindow.cpp:820
+#: main/KexiMainWindow.cpp:823
 msgid "Paste clipboard data as a table"
 msgstr "Алмасу буферіндегіні кесте қылып орналастыру"
 
-#: main/KexiMainWindow.cpp:822
+#: main/KexiMainWindow.cpp:825
 msgid "Pastes clipboard data to a table."
 msgstr "Алмасу буферіндегіні кесте қылып орналастыру."
 
-#: main/KexiMainWindow.cpp:830
+#: main/KexiMainWindow.cpp:833
 #, fuzzy
 #| msgid "Copy &Special"
 msgctxt "Copy Special->Table or Query Data..."
 msgid "Copy Special..."
 msgstr "&Арнаулы көшіру"
 
-#: main/KexiMainWindow.cpp:834
+#: main/KexiMainWindow.cpp:837
 msgid "Copy selected table or query data to clipboard"
 msgstr "Таңдалған кесте/сұраныс деректерін көшіріп алу"
 
-#: main/KexiMainWindow.cpp:836
+#: main/KexiMainWindow.cpp:839
 msgid "Copies selected table or query data to clipboard."
 msgstr "Таңдалған кесте/сұраныс деректерін көшіріп алу."
 
-#: main/KexiMainWindow.cpp:841
+#: main/KexiMainWindow.cpp:844
 msgid "Reverts the most recent editing action."
 msgstr "Ең соңғы өңдеу амалынан қайту."
 
-#: main/KexiMainWindow.cpp:843
+#: main/KexiMainWindow.cpp:846
 msgid "Reverts the most recent undo action."
 msgstr "Ең соңғы қайтқан амалын қайталау."
 
-#: main/KexiMainWindow.cpp:874
+#: main/KexiMainWindow.cpp:877
 msgid "Delete selected object"
 msgstr "Таңдалған нысанды өшіру"
 
-#: main/KexiMainWindow.cpp:875
+#: main/KexiMainWindow.cpp:878
 msgid "Deletes currently selected object."
 msgstr "Таңдалған нысанды өшіру."
 
-#: main/KexiMainWindow.cpp:877
+#: main/KexiMainWindow.cpp:880
 msgid "Delete Row"
 msgstr "Жолды өшіру"
 
-#: main/KexiMainWindow.cpp:879
+#: main/KexiMainWindow.cpp:882
 msgid "Delete currently selected row"
 msgstr "Таңдалған жолды өшіру"
 
-#: main/KexiMainWindow.cpp:880
+#: main/KexiMainWindow.cpp:883
 msgid "Deletes currently selected row."
 msgstr "Таңдалған жолды өшіру."
 
-#: main/KexiMainWindow.cpp:882
+#: main/KexiMainWindow.cpp:885
 msgid "Clear Table Contents"
 msgstr "Кесте мазмұнын тазалау"
 
-#: main/KexiMainWindow.cpp:884
+#: main/KexiMainWindow.cpp:887
 msgid "Clear table contents"
 msgstr "Кесте мазмұнын тазалау"
 
-#: main/KexiMainWindow.cpp:885
+#: main/KexiMainWindow.cpp:888
 msgid "Clears table contents."
 msgstr "Кесте мазмұнын тазалау."
 
-#: main/KexiMainWindow.cpp:888
+#: main/KexiMainWindow.cpp:891
 msgid "Edit Item"
 msgstr "Таңдағанды өңдеу"
 
-#: main/KexiMainWindow.cpp:891
+#: main/KexiMainWindow.cpp:894
 msgid "Edit currently selected item"
 msgstr "Таңдағанды өңдеу"
 
-#: main/KexiMainWindow.cpp:892
+#: main/KexiMainWindow.cpp:895
 msgid "Edits currently selected item."
 msgstr "Таңдағанды өңдеу."
 
-#: main/KexiMainWindow.cpp:894
+#: main/KexiMainWindow.cpp:897
 msgid "&Insert Empty Row"
 msgstr "Бос жолды &ендіру"
 
-#: main/KexiMainWindow.cpp:898
+#: main/KexiMainWindow.cpp:901
 msgid "Insert one empty row above"
 msgstr "Жоғары бос жолды ендіру"
 
-#: main/KexiMainWindow.cpp:900
+#: main/KexiMainWindow.cpp:903
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Кестенің таңдалған жолдан жоғары бір бос жолды ендіру."
 
-#: main/KexiMainWindow.cpp:959
+#: main/KexiMainWindow.cpp:962
 msgid "Go to project navigator panel"
 msgstr "Жоба навигаторы панеліне өту"
 
-#: main/KexiMainWindow.cpp:960
+#: main/KexiMainWindow.cpp:963
 msgid "Goes to project navigator panel."
 msgstr "Жоба навигаторы панеліне өту."
 
-#: main/KexiMainWindow.cpp:967
+#: main/KexiMainWindow.cpp:970
 msgid "Main Area"
 msgstr "Негізгі аумақ"
 
-#: main/KexiMainWindow.cpp:969
+#: main/KexiMainWindow.cpp:972
 msgid "Go to main area"
 msgstr "Негізгі аумаққа өту"
 
-#: main/KexiMainWindow.cpp:970
+#: main/KexiMainWindow.cpp:973
 msgid "Goes to main area."
 msgstr "Негізгі аумаққа өту."
 
-#: main/KexiMainWindow.cpp:976 main/KexiMainWindow.cpp:2190
+#: main/KexiMainWindow.cpp:979 main/KexiMainWindow.cpp:2240
 msgid "Property Editor"
 msgstr "Қасиетін өңдеу"
 
-#: main/KexiMainWindow.cpp:978
+#: main/KexiMainWindow.cpp:981
 msgid "Go to property editor panel"
 msgstr "Қасиетті өңдеу панеліне өту"
 
-#: main/KexiMainWindow.cpp:979
+#: main/KexiMainWindow.cpp:982
 msgid "Goes to property editor panel."
 msgstr "Қасиетті өңдеу панеліне өту."
 
-#: main/KexiMainWindow.cpp:986
+#: main/KexiMainWindow.cpp:989
 msgid "&Save Row"
 msgstr "Жолды &сақтау"
 
-#: main/KexiMainWindow.cpp:988
+#: main/KexiMainWindow.cpp:991
 msgid "Save changes made to the current row"
 msgstr "Назардағы жолда жасалған өзгерістерін сақтау"
 
-#: main/KexiMainWindow.cpp:989
+#: main/KexiMainWindow.cpp:992
 msgid "Saves changes made to the current row."
 msgstr "Назардағы жолда жасалған өзгерістерін сақтау."
 
-#: main/KexiMainWindow.cpp:992
+#: main/KexiMainWindow.cpp:995
 msgid "&Cancel Row Changes"
 msgstr "Жол өзгерістерінен &айну"
 
-#: main/KexiMainWindow.cpp:995
+#: main/KexiMainWindow.cpp:998
 msgid "Cancel changes made to the current row"
 msgstr "Назардағы жолда жасалған өзгерістерінен айну"
 
-#: main/KexiMainWindow.cpp:997
+#: main/KexiMainWindow.cpp:1000
 msgid "Cancels changes made to the current row."
 msgstr "Назардағы жолда жасалған өзгерістерінен айну."
 
-#: main/KexiMainWindow.cpp:1001
+#: main/KexiMainWindow.cpp:1004
 msgid "&Execute"
 msgstr "&Орындау"
 
-#: main/KexiMainWindow.cpp:1006
+#: main/KexiMainWindow.cpp:1009
 msgid "&Filter"
 msgstr "&Сүзгі"
 
-#: main/KexiMainWindow.cpp:1032
+#: main/KexiMainWindow.cpp:1035
 msgid "&Font..."
 msgstr "Қ&аріп..."
 
-#: main/KexiMainWindow.cpp:1034
+#: main/KexiMainWindow.cpp:1037
 msgid "Change font for selected object"
 msgstr "Таңдалған нысанның қаріпін өзгерту"
 
-#: main/KexiMainWindow.cpp:1035
+#: main/KexiMainWindow.cpp:1038
 msgid "Changes font for selected object."
 msgstr "Таңдалған нысанның қаріпін өзгерту."
 
-#: main/KexiMainWindow.cpp:1059
+#: main/KexiMainWindow.cpp:1062
 msgid "&Next Window"
 msgstr "&Келесі терезеге"
 
-#: main/KexiMainWindow.cpp:1067
+#: main/KexiMainWindow.cpp:1070
 msgid "Next window"
 msgstr "Келесі терезеге"
 
-#: main/KexiMainWindow.cpp:1068
+#: main/KexiMainWindow.cpp:1071
 msgid "Switches to the next window."
 msgstr "Келесі терезеге ауысу."
 
-#: main/KexiMainWindow.cpp:1073
+#: main/KexiMainWindow.cpp:1076
 msgid "&Previous Window"
 msgstr "&Алдыңғы терезеге"
 
-#: main/KexiMainWindow.cpp:1081
+#: main/KexiMainWindow.cpp:1084
 msgid "Previous window"
 msgstr "Алдыңғы терезеге"
 
-#: main/KexiMainWindow.cpp:1082
+#: main/KexiMainWindow.cpp:1085
 msgid "Switches to the previous window."
 msgstr "Алдыңғы терезеге ауысу."
 
-#: main/KexiMainWindow.cpp:1093
+#: main/KexiMainWindow.cpp:1096
 msgid "Lets you configure shortcut keys."
 msgstr "Пернелер тіркесімін баптау."
 
-#: main/KexiMainWindow.cpp:1129
+#: main/KexiMainWindow.cpp:1132
 msgid "Lets you configure Kexi."
 msgstr "Kexi-ді баптау."
 
-#: main/KexiMainWindow.cpp:1138
+#: main/KexiMainWindow.cpp:1141
 msgid "Shows bug reporting tool for Kexi application."
 msgstr "Kexi қолданбаның қателері туралы хабарлау құралы."
 
-#: main/KexiMainWindow.cpp:1140
+#: main/KexiMainWindow.cpp:1143
 msgid "Shows \"What's This\" tool."
 msgstr "\"Бұл не?\" анықтама құралы."
 
-#: main/KexiMainWindow.cpp:1142 migration/importwizard.cpp:966
+#: main/KexiMainWindow.cpp:1145 migration/importwizard.cpp:966
 #: migration/importwizard.cpp:973 migration/importwizard.cpp:975
 #: migration/importwizard.cpp:977 migration/importwizard.cpp:979
 #: migration/importwizard.cpp:981
 msgid "Help"
 msgstr "Анықтама"
 
-#: main/KexiMainWindow.cpp:1143
+#: main/KexiMainWindow.cpp:1146
 msgid "Shows Kexi Handbook."
 msgstr "Kexi анықтамасы."
 
-#: main/KexiMainWindow.cpp:1145
+#: main/KexiMainWindow.cpp:1148
 msgid "Shows information about Kexi application."
 msgstr "Kexi қолданбасы туралы мәліметтер."
 
-#: main/KexiMainWindow.cpp:1147
+#: main/KexiMainWindow.cpp:1150
 msgid "Shows information about K Desktop Environment."
 msgstr "KDE жүйесі туралы мәліметтер."
 
-#: main/KexiMainWindow.cpp:1151
+#: main/KexiMainWindow.cpp:1154
 msgid "This shows useful tips on the use of this application."
 msgstr "Осы бағдарламаны қолдану туралы кеңестер."
 
-#: main/KexiMainWindow.cpp:1154 main/KexiMainWindow.cpp:4563
+#: main/KexiMainWindow.cpp:1157 main/KexiMainWindow.cpp:4613
 msgid "Important Information"
 msgstr "Маңызды мәлімет"
 
-#: main/KexiMainWindow.cpp:1161
+#: main/KexiMainWindow.cpp:1164
 msgid "Give Feedback..."
 msgstr "Пікірін білдіру..."
 
-#: main/KexiMainWindow.cpp:1524
+#: main/KexiMainWindow.cpp:1527
 msgid "reason:"
 msgstr "себебі:"
 
-#: main/KexiMainWindow.cpp:1559
+#: main/KexiMainWindow.cpp:1562
 #, kde-format
 msgid ""
 "<qt>Database project %1 does not appear to have been created using Kexi."
@@ -3550,84 +3554,84 @@ msgstr ""
 "<qt>%1 деректер қоры жобасы Kexi бағдарламада құрған емес сияқты."
 "<br><br>Жаңа Kexi жобасы ретінде импорттауды қалайсыз ба?</qt>"
 
-#: main/KexiMainWindow.cpp:1561
+#: main/KexiMainWindow.cpp:1564
 msgctxt "Import Database"
 msgid "&Import..."
 msgstr "&Импорттау..."
 
-#: main/KexiMainWindow.cpp:1595
+#: main/KexiMainWindow.cpp:1598
 msgid "Select New Project's Location"
 msgstr "Жаңа жобаның сақтау орнын таңдаңыз"
 
-#: main/KexiMainWindow.cpp:1686
+#: main/KexiMainWindow.cpp:1689
 #, kde-format
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "нысан құрылмайды - \"%1\" деген түрі беймәлім"
 
-#: main/KexiMainWindow.cpp:1688
+#: main/KexiMainWindow.cpp:1691
 #, kde-format
 msgid "unknown object type \"%1\""
 msgstr "\"%1\" деген түрі беймәлім"
 
-#: main/KexiMainWindow.cpp:1696
+#: main/KexiMainWindow.cpp:1699
 #, kde-format
 msgid "cannot create object of type \"%1\""
 msgstr "түрі \"%1\" деген нысан құрылмайды"
 
-#: main/KexiMainWindow.cpp:1708
+#: main/KexiMainWindow.cpp:1711
 msgid "making print preview for"
 msgstr "басу алдында қарап шығатын"
 
-#: main/KexiMainWindow.cpp:1710
+#: main/KexiMainWindow.cpp:1713
 msgid "printing"
 msgstr "басып шығару"
 
-#: main/KexiMainWindow.cpp:1712
+#: main/KexiMainWindow.cpp:1715
 msgctxt "\"executing object\" action"
 msgid "executing"
 msgstr "орындау"
 
-#: main/KexiMainWindow.cpp:1714
+#: main/KexiMainWindow.cpp:1717
 msgid "opening"
 msgstr "ашу"
 
-#: main/KexiMainWindow.cpp:1718
+#: main/KexiMainWindow.cpp:1721
 msgid "table not found"
 msgstr "кесте табылмады"
 
-#: main/KexiMainWindow.cpp:1720
+#: main/KexiMainWindow.cpp:1723
 msgid "query not found"
 msgstr "сұраныс табылмады"
 
-#: main/KexiMainWindow.cpp:1722
+#: main/KexiMainWindow.cpp:1725
 msgid "macro not found"
 msgstr "макрос табылмады"
 
-#: main/KexiMainWindow.cpp:1724
+#: main/KexiMainWindow.cpp:1727
 msgid "script not found"
 msgstr "скрипт табылмады"
 
-#: main/KexiMainWindow.cpp:1726
+#: main/KexiMainWindow.cpp:1729
 msgid "object not found"
 msgstr "нысан табылмады"
 
-#: main/KexiMainWindow.cpp:1734
+#: main/KexiMainWindow.cpp:1737
 msgid "cannot execute object"
 msgstr "нысан орындалмайды"
 
-#: main/KexiMainWindow.cpp:1741
+#: main/KexiMainWindow.cpp:1744
 msgid "cannot print object"
 msgstr "нысан басып шығарылмайды"
 
-#: main/KexiMainWindow.cpp:1748
+#: main/KexiMainWindow.cpp:1751
 msgid "cannot make print preview of object"
 msgstr "нысанның басылатынын алдын-ала қарау болмайды"
 
-#: main/KexiMainWindow.cpp:1769
+#: main/KexiMainWindow.cpp:1772
 msgid "cannot open object"
 msgstr "нысан ашылмайды"
 
-#: main/KexiMainWindow.cpp:1783
+#: main/KexiMainWindow.cpp:1786
 msgid ""
 "You have requested selected objects to be automatically opened or processed "
 "on startup. Several objects cannot be opened or processed."
@@ -3635,91 +3639,91 @@ msgstr ""
 "Тандалған нысандар бастағанда автоматты түрде ашылсын не әрекет етсін деп "
 "талап етілген. Кейбір нысандар ашылмады не сұралған әрекет етпеді."
 
-#: main/KexiMainWindow.cpp:3253
+#: main/KexiMainWindow.cpp:3303
 msgid "Recently Opened Databases"
 msgstr "Жуырда ашылған деректер қорлары"
 
-#: main/KexiMainWindow.cpp:3272
+#: main/KexiMainWindow.cpp:3322
 msgid "Recently Connected Database Servers"
 msgstr "Жуырда қосылған деректер қоры серверлері"
 
-#: main/KexiMainWindow.cpp:3366
+#: main/KexiMainWindow.cpp:3416
 msgid "From File..."
 msgstr "Мынау файлдан..."
 
-#: main/KexiMainWindow.cpp:3371
+#: main/KexiMainWindow.cpp:3421
 msgid "From Server..."
 msgstr "Мынау серверден..."
 
-#: main/KexiMainWindow.cpp:3482
+#: main/KexiMainWindow.cpp:3532
 #, kde-format
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "Таңдалған көрініс \"%1\" нысанына жарамайды."
 
-#: main/KexiMainWindow.cpp:3484
+#: main/KexiMainWindow.cpp:3534
 #, kde-format
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "Таңдалған көрініс (%1) нысанның бұл түріне (%2) жарамайды."
 
-#: main/KexiMainWindow.cpp:3496 core/KexiWindow.cpp:673
+#: main/KexiMainWindow.cpp:3546 core/KexiWindow.cpp:673
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Басқа көрінісіне ауысу болмады (%1)."
 
-#: main/KexiMainWindow.cpp:3581
+#: main/KexiMainWindow.cpp:3631
 msgid "Save Object As"
 msgstr "Нысанды былай сақтау"
 
-#: main/KexiMainWindow.cpp:3602
+#: main/KexiMainWindow.cpp:3652
 msgid "Do you want to replace it?"
 msgstr "Алмастыруын қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:3605
+#: main/KexiMainWindow.cpp:3655
 msgid "&Choose Other Name..."
 msgstr "&Басқаша атау..."
 
-#: main/KexiMainWindow.cpp:3622
+#: main/KexiMainWindow.cpp:3672
 msgid "Please choose other name."
 msgstr "Басқа атау беріңіз."
 
-#: main/KexiMainWindow.cpp:3645
+#: main/KexiMainWindow.cpp:3695
 #, kde-format
 msgid "Saving \"%1\" object failed."
 msgstr "\"%1\" нысаны сақталмады."
 
-#: main/KexiMainWindow.cpp:3662
+#: main/KexiMainWindow.cpp:3712
 #, kde-format
 msgid "Saving new \"%1\" object failed."
 msgstr "Жаңа \"%1\" нысаны сақталмады."
 
-#: main/KexiMainWindow.cpp:3714 main/KexiMainWindow.cpp:5018
+#: main/KexiMainWindow.cpp:3764 main/KexiMainWindow.cpp:5068
 msgid "Save changes"
 msgstr "Өзгерістерін сақтау"
 
-#: main/KexiMainWindow.cpp:3716 main/KexiMainWindow.cpp:5020
+#: main/KexiMainWindow.cpp:3766 main/KexiMainWindow.cpp:5070
 #, kde-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
 msgstr "Бұл батырманы басқанда \"%1\" нысанның барлық өзгерстері сақталады."
 
-#: main/KexiMainWindow.cpp:3720
+#: main/KexiMainWindow.cpp:3770
 #, kde-format
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
 msgstr ""
 "Бұл батырманы басқанда \"%1\" нысанның барлық өзгерістері ысырып тасталады."
 
-#: main/KexiMainWindow.cpp:3742
+#: main/KexiMainWindow.cpp:3792
 msgid "Do you want to save changes?"
 msgstr "Өзгерістерін сақтауды қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:4121
+#: main/KexiMainWindow.cpp:4171
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr "\"%1\" режімінде ашуы рұқсат етілмеген"
 
-#: main/KexiMainWindow.cpp:4338
+#: main/KexiMainWindow.cpp:4388
 #, kde-format
 msgid ""
 "Do you want to permanently delete:\n"
@@ -3731,50 +3735,50 @@ msgstr ""
 "дегенді мүлдем жоюды қалайсыз ба?\n"
 "\"Жою\" дегенді басқан соң қайтуға болмайды."
 
-#: main/KexiMainWindow.cpp:4342
+#: main/KexiMainWindow.cpp:4392
 msgid "Delete"
 msgstr "Жою"
 
-#: main/KexiMainWindow.cpp:4392
+#: main/KexiMainWindow.cpp:4442
 msgid "Could not remove object."
 msgstr "Нысан жойылмады."
 
-#: main/KexiMainWindow.cpp:4406 core/kexiproject.cpp:872
+#: main/KexiMainWindow.cpp:4456 core/kexiproject.cpp:872
 msgid "Could not set empty name for this object."
 msgstr "Бұл нысанның атауын бос қалдыруға болмайды."
 
-#: main/KexiMainWindow.cpp:4414
+#: main/KexiMainWindow.cpp:4464
 #, kde-format
 msgid "Renaming object \"%1\" failed."
 msgstr "\"%1\" нысанның атауы өзгертілмеді."
 
-#: main/KexiMainWindow.cpp:4622
+#: main/KexiMainWindow.cpp:4672
 #, kde-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "\"%1\" жобасы аяқтайтын режімінде басталмайды."
 
-#: main/KexiMainWindow.cpp:4626
+#: main/KexiMainWindow.cpp:4676
 msgid "No Final Mode data found."
 msgstr "Аяқтау режімінің деректері табылмады."
 
-#: main/KexiMainWindow.cpp:4633
+#: main/KexiMainWindow.cpp:4683
 msgid "Error reading Final Mode data."
 msgstr "Аяқтау режімінің деректерін оқу қатесі."
 
-#: main/KexiMainWindow.cpp:4662
+#: main/KexiMainWindow.cpp:4712
 msgid "Specified plugin does not exist."
 msgstr "Келтірілген плагин жоқ."
 
-#: main/KexiMainWindow.cpp:4671
+#: main/KexiMainWindow.cpp:4721
 msgid "Specified object could not be opened."
 msgstr "Келтірілген нысан ашылмады."
 
-#: main/KexiMainWindow.cpp:4755
+#: main/KexiMainWindow.cpp:4805
 #, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "Деректер қорының <nobr>\"%1\"</nobr> файлы ықшамдауға келмейді."
 
-#: main/KexiMainWindow.cpp:4767
+#: main/KexiMainWindow.cpp:4817
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -3786,7 +3790,7 @@ msgstr ""
 "\n"
 "Жалғастыра берейік пе?"
 
-#: main/KexiMainWindow.cpp:5024
+#: main/KexiMainWindow.cpp:5074
 #, kde-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
@@ -3794,15 +3798,15 @@ msgstr ""
 "Бұл батырманы басқан соң \"%1\" нысанына енгізілген, бірақ әлі сақталмаған "
 "өзгерістер іске аспай қалады."
 
-#: main/KexiMainWindow.cpp:5029
+#: main/KexiMainWindow.cpp:5079
 msgid "Do you want to save changes before printing?"
 msgstr "Басып шығарудың алдында өзгерістерді сақтауды қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:5031
+#: main/KexiMainWindow.cpp:5081
 msgid "Do you want to save changes before making print preview?"
 msgstr "Басып шығаратынды қараудың алдында өзгерістерді сақтауды қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:5033
+#: main/KexiMainWindow.cpp:5083
 msgid "Do you want to save changes before showing page setup?"
 msgstr "Бетті баптауының алдында өзгерістерді сақтауды қалайсыз ба?"
 
