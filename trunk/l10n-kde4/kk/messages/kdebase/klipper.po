@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klipper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:43+0200\n"
+"POT-Creation-Date: 2010-08-23 05:29+0200\n"
 "PO-Revision-Date: 2010-05-22 10:13+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -321,7 +321,9 @@ msgstr "Әрекеттер орындау кезінде бос орындар �
 
 #. i18n: file: actionsconfig.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableMagicMimeActions)
-#: rc.cpp:11
+#. i18n: file: klipper.kcfg:84
+#. i18n: ectx: label, entry (EnableMagicMimeActions), group (Actions)
+#: rc.cpp:11 rc.cpp:160
 msgid "Enable MIME-based actions"
 msgstr "MIME-негіздеген әрекеттері болсын"
 
@@ -432,13 +434,17 @@ msgstr "Аяқтағанда алмасу буфері сақталсын"
 
 #. i18n: file: generalconfig.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PreventEmptyClipboard)
-#: rc.cpp:66
+#. i18n: file: klipper.kcfg:16
+#. i18n: ectx: label, entry (PreventEmptyClipboard), group (General)
+#: rc.cpp:66 rc.cpp:102
 msgid "Prevent empty clipboard"
 msgstr "Алмасу буферді тазалауы болмасын"
 
 #. i18n: file: generalconfig.ui:45
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreImages)
-#: rc.cpp:75
+#. i18n: file: klipper.kcfg:21
+#. i18n: ectx: label, entry (IgnoreImages), group (General)
+#: rc.cpp:75 rc.cpp:108
 msgid "Ignore images"
 msgstr "Кескіндерді елемеу"
 
@@ -478,6 +484,162 @@ msgstr "Әрекет қалқымалы мәзірдің күту уақыты:"
 msgid "Clipboard history size:"
 msgstr "Алмасу буферінің журналының өлшемі:"
 
+#. i18n: file: klipper.kcfg:9
+#. i18n: ectx: label, entry (Version), group (General)
+#: rc.cpp:96
+msgid "Klipper version"
+msgstr "Klipper нұсқасы"
+
+#. i18n: file: klipper.kcfg:12
+#. i18n: ectx: label, entry (KeepClipboardContents), group (General)
+#: rc.cpp:99
+msgid "Keep clipboard contents"
+msgstr "Алмасу буферін сақтау"
+
+#. i18n: file: klipper.kcfg:18
+#. i18n: ectx: whatsthis, entry (PreventEmptyClipboard), group (General)
+#: rc.cpp:105
+msgid ""
+"Selecting this option has the effect, that the clipboard can never be "
+"emptied. E.g. when an application exits, the clipboard would usually be "
+"emptied."
+msgstr ""
+"Осы параметр алмасу буферін тазалауын болдырмайды. Әйтпесе, мысалы, "
+"қолданбадан шыққанда алмасу буфері тазаланады."
+
+#. i18n: file: klipper.kcfg:25
+#. i18n: ectx: label, entry (IgnoreSelection), group (General)
+#: rc.cpp:111
+msgid "Ignore Selection"
+msgstr "Таңдауды елемеу"
+
+#. i18n: file: klipper.kcfg:27
+#. i18n: ectx: whatsthis, entry (IgnoreSelection), group (General)
+#: rc.cpp:114
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\". If this option is set, the selection is not "
+"entered into the clipboard history, though it is still available for pasting "
+"using the middle mouse button.</qt>"
+msgstr ""
+"<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
+"белгілегенін \"таңдау\" деп атайды. Егер осы параметрді орнатасаңыз, "
+"таңдалғаны алмасу буферінің журналына енбейді, бірақ тышқанның ортаңғы "
+"батырмасымен орналастыруға келеді.</qt>"
+
+#. i18n: file: klipper.kcfg:34
+#. i18n: ectx: label, entry (SyncClipboards), group (General)
+#: rc.cpp:118
+msgid "Synchronize clipboard and selection"
+msgstr "Алмасу буферіндегі мен таңдағанды қадамдастыру"
+
+#. i18n: file: klipper.kcfg:36
+#. i18n: ectx: whatsthis, entry (SyncClipboards), group (General)
+#: rc.cpp:121
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\". If this option is selected, the selection and the "
+"clipboard is kept the same, so that anything in the selection is immediately "
+"available for pasting elsewhere using any method, including the traditional "
+"middle mouse button. Otherwise, the selection is recorded in the clipboard "
+"history, but the selection can only be pasted using the middle mouse button. "
+"Also see the 'Ignore Selection' option.</qt>"
+msgstr ""
+"<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
+"белгілегенін \"таңдау\" деп атайды. Егер осы параметрді орнатасаңыз, "
+"таңдалған мен алмасу буферіндегісі бірдей болады, демек, таңдағаныңыз бірден "
+"кез келғен тәсілімен, дәстүрлі тышқанның ортаңғы батырмасымен қоса, "
+"орналастыруға дайын болады. Әйтпесе, таңдалғаны алмасу буферінің журналына "
+"жазылады, бірақ орналастыру тек қана тышқанның ортаңғы батырмасын басуымен "
+"атқарылады.Қосымша 'Таңдауды елемеу' параметрін қараңыз.</qt>"
+
+#. i18n: file: klipper.kcfg:39
+#. i18n: ectx: label, entry (SelectionTextOnly), group (General)
+#: rc.cpp:124
+msgid "Selection text only"
+msgstr "Тек мәтінді таңдау"
+
+#. i18n: file: klipper.kcfg:41
+#. i18n: ectx: whatsthis, entry (SelectionTextOnly), group (General)
+#: rc.cpp:127
+msgid ""
+"<qt>When an area of the screen is selected with mouse or keyboard, this is "
+"called \"the selection\". If this option is selected, only text selections "
+"are stored in the history, while images and other selections are not.</qt>"
+msgstr ""
+"<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
+"белгілегенін \"таңдау\" деп атайды. Осы параметрді таңдасаңыз журналға "
+"таңдағаннан тек мәтін зана кіреді, кескіндер не басқа нысандар кірмейді.</qt>"
+
+#. i18n: file: klipper.kcfg:44
+#. i18n: ectx: label, entry (UseGUIRegExpEditor), group (General)
+#: rc.cpp:130
+msgid "Use graphical regexp editor"
+msgstr "Графикалық үлгі өрнек өңдгіші істесін"
+
+#. i18n: file: klipper.kcfg:48
+#. i18n: ectx: label, entry (URLGrabberEnabled), group (General)
+#: rc.cpp:133
+msgid "URL grabber enabled"
+msgstr "URL аулағышы істесін"
+
+#. i18n: file: klipper.kcfg:53
+#. i18n: ectx: label, entry (NoActionsForWM_CLASS), group (General)
+#: rc.cpp:136
+msgid "No actions for WM_CLASS"
+msgstr "WM_CLASS үшін әрекеттер жоқ"
+
+#. i18n: file: klipper.kcfg:56
+#. i18n: ectx: label, entry (TimeoutForActionPopups), group (General)
+#: rc.cpp:139
+msgid "Timeout for action popups (seconds)"
+msgstr "Әрекет қалқымалы мәзірдің күту уақыты (сек):"
+
+#. i18n: file: klipper.kcfg:60
+#. i18n: ectx: tooltip, entry (TimeoutForActionPopups), group (General)
+#: rc.cpp:142
+msgid "A value of 0 disables the timeout"
+msgstr "0 деген күтуді болдырмайды"
+
+#. i18n: file: klipper.kcfg:63
+#. i18n: ectx: label, entry (MaxClipItems), group (General)
+#: rc.cpp:145
+msgid "Clipboard history size"
+msgstr "Алмасу буфер журналының өлшемі:"
+
+#. i18n: file: klipper.kcfg:69
+#. i18n: ectx: label, entry (ActionList), group (General)
+#: rc.cpp:148
+msgid "Dummy entry for indicating changes in an action's tree widget"
+msgstr ""
+"Әрекеттер бұтағы виджетте жасалған өзгерістерді белгілейтін шартты жазу"
+
+#. i18n: file: klipper.kcfg:75
+#. i18n: ectx: label, entry (StripWhiteSpace), group (Actions)
+#: rc.cpp:151
+msgid "Strip whitespace when executing an action"
+msgstr "Әрекеттер орындау кезінде бос орындар өшірілсін"
+
+#. i18n: file: klipper.kcfg:77
+#. i18n: ectx: whatsthis, entry (StripWhiteSpace), group (Actions)
+#: rc.cpp:154
+msgid ""
+"Sometimes, the selected text has some whitespace at the end, which, if "
+"loaded as URL in a browser would cause an error. Enabling this option "
+"removes any whitespace at the beginning or end of the selected string (the "
+"original clipboard contents will not be modified)."
+msgstr ""
+"Кейде таңдалған мәтін жолының соңында бос орын(дар) болып, жол сол түрде "
+"браузерге көшірілсе, ол қате адрес деп табылады. Осы белгі қойылса, "
+"таңдалған жолдың басы және соңындағы бос орындар өшіріледі (сонда да, "
+"бастапқы, алмасу буферіне алынған мазмұны өзгермейді)."
+
+#. i18n: file: klipper.kcfg:80
+#. i18n: ectx: label, entry (ReplayActionInHistory), group (Actions)
+#: rc.cpp:157
+msgid "Replay action in history"
+msgstr "Журнал тізіміндегі әрекетті қайталау"
+
 #: tray.cpp:41
 msgid "Clipboard Contents"
 msgstr "Алмасу буферінің мазмұны"
@@ -498,108 +660,6 @@ msgstr "Осы мәзір бұғатталсын"
 #: urlgrabber.cpp:247
 msgid "&Cancel"
 msgstr "Қ&айту"
-
-#~ msgid "Klipper version"
-#~ msgstr "Klipper нұсқасы"
-
-#~ msgid "Keep clipboard contents"
-#~ msgstr "Алмасу буферін сақтау"
-
-#~ msgid ""
-#~ "Selecting this option has the effect, that the clipboard can never be "
-#~ "emptied. E.g. when an application exits, the clipboard would usually be "
-#~ "emptied."
-#~ msgstr ""
-#~ "Осы параметр алмасу буферін тазалауын болдырмайды. Әйтпесе, мысалы, "
-#~ "қолданбадан шыққанда алмасу буфері тазаланады."
-
-#~ msgid "Ignore Selection"
-#~ msgstr "Таңдауды елемеу"
-
-#~ msgid ""
-#~ "<qt>When an area of the screen is selected with mouse or keyboard, this "
-#~ "is called \"the selection\". If this option is set, the selection is not "
-#~ "entered into the clipboard history, though it is still available for "
-#~ "pasting using the middle mouse button.</qt>"
-#~ msgstr ""
-#~ "<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
-#~ "белгілегенін \"таңдау\" деп атайды. Егер осы параметрді орнатасаңыз, "
-#~ "таңдалғаны алмасу буферінің журналына енбейді, бірақ тышқанның ортаңғы "
-#~ "батырмасымен орналастыруға келеді.</qt>"
-
-#~ msgid "Synchronize clipboard and selection"
-#~ msgstr "Алмасу буферіндегі мен таңдағанды қадамдастыру"
-
-#~ msgid ""
-#~ "<qt>When an area of the screen is selected with mouse or keyboard, this "
-#~ "is called \"the selection\". If this option is selected, the selection "
-#~ "and the clipboard is kept the same, so that anything in the selection is "
-#~ "immediately available for pasting elsewhere using any method, including "
-#~ "the traditional middle mouse button. Otherwise, the selection is recorded "
-#~ "in the clipboard history, but the selection can only be pasted using the "
-#~ "middle mouse button. Also see the 'Ignore Selection' option.</qt>"
-#~ msgstr ""
-#~ "<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
-#~ "белгілегенін \"таңдау\" деп атайды. Егер осы параметрді орнатасаңыз, "
-#~ "таңдалған мен алмасу буферіндегісі бірдей болады, демек, таңдағаныңыз "
-#~ "бірден кез келғен тәсілімен, дәстүрлі тышқанның ортаңғы батырмасымен "
-#~ "қоса, орналастыруға дайын болады. Әйтпесе, таңдалғаны алмасу буферінің "
-#~ "журналына жазылады, бірақ орналастыру тек қана тышқанның ортаңғы "
-#~ "батырмасын басуымен атқарылады.Қосымша 'Таңдауды елемеу' параметрін "
-#~ "қараңыз.</qt>"
-
-#~ msgid "Selection text only"
-#~ msgstr "Тек мәтінді таңдау"
-
-#~ msgid ""
-#~ "<qt>When an area of the screen is selected with mouse or keyboard, this "
-#~ "is called \"the selection\". If this option is selected, only text "
-#~ "selections are stored in the history, while images and other selections "
-#~ "are not.</qt>"
-#~ msgstr ""
-#~ "<qt>Экранның бір аумағын тышқан не пернетақтаның көмегімен таңдап "
-#~ "белгілегенін \"таңдау\" деп атайды. Осы параметрді таңдасаңыз журналға "
-#~ "таңдағаннан тек мәтін зана кіреді, кескіндер не басқа нысандар кірмейді.</"
-#~ "qt>"
-
-#~ msgid "Use graphical regexp editor"
-#~ msgstr "Графикалық үлгі өрнек өңдгіші істесін"
-
-#~ msgid "URL grabber enabled"
-#~ msgstr "URL аулағышы істесін"
-
-#~ msgid "No actions for WM_CLASS"
-#~ msgstr "WM_CLASS үшін әрекеттер жоқ"
-
-#~ msgid "Timeout for action popups (seconds)"
-#~ msgstr "Әрекет қалқымалы мәзірдің күту уақыты (сек):"
-
-#~ msgid "A value of 0 disables the timeout"
-#~ msgstr "0 деген күтуді болдырмайды"
-
-#~ msgid "Clipboard history size"
-#~ msgstr "Алмасу буфер журналының өлшемі:"
-
-#~ msgid "Dummy entry for indicating changes in an action's tree widget"
-#~ msgstr ""
-#~ "Әрекеттер бұтағы виджетте жасалған өзгерістерді белгілейтін шартты жазу"
-
-#~ msgid "Strip whitespace when executing an action"
-#~ msgstr "Әрекеттер орындау кезінде бос орындар өшірілсін"
-
-#~ msgid ""
-#~ "Sometimes, the selected text has some whitespace at the end, which, if "
-#~ "loaded as URL in a browser would cause an error. Enabling this option "
-#~ "removes any whitespace at the beginning or end of the selected string "
-#~ "(the original clipboard contents will not be modified)."
-#~ msgstr ""
-#~ "Кейде таңдалған мәтін жолының соңында бос орын(дар) болып, жол сол түрде "
-#~ "браузерге көшірілсе, ол қате адрес деп табылады. Осы белгі қойылса, "
-#~ "таңдалған жолдың басы және соңындағы бос орындар өшіріледі (сонда да, "
-#~ "бастапқы, алмасу буферіне алынған мазмұны өзгермейді)."
-
-#~ msgid "Replay action in history"
-#~ msgstr "Журнал тізіміндегі әрекетті қайталау"
 
 #~ msgid "Show Klipper Popup-Menu"
 #~ msgstr "Klipper қалқымалы мәзірін көрсету"
