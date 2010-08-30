@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2009-01-12 10:00+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -223,7 +223,7 @@ msgstr "Беттің өлшемі мен жиектері"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 msgid "Columns"
 msgstr "Бағандар"
 
@@ -958,6 +958,12 @@ msgstr "Мәтін фреймдердің байланысы"
 msgid "Geometry"
 msgstr "Геометрия"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Page Properties"
+msgid "Change Page Properties"
+msgstr "Беттің қасиеттері"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 msgid "Rename Bookmark"
 msgstr "Бетбелгінің атауын өзгерту"
@@ -1002,10 +1008,6 @@ msgstr "Фреймді құру"
 msgid "Create custom outline"
 msgstr "Қалаған сұлбаны сызу"
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-msgid "Page Properties"
-msgstr "Беттің қасиеттері"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 msgid "Remove Page"
 msgstr "Бетті жою"
@@ -1016,31 +1018,41 @@ msgstr "Бетті жою"
 msgid "Clip Frame"
 msgstr "Фреймді алға шығару"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Set Page Style"
+msgstr "Бетті ендіру"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Бетті ендіру"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+msgid "Page Properties"
+msgstr "Беттің қасиеттері"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr "Тақ беттердің жоғарғы колонтитулы"
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr "Жұп беттердің жоғарғы колонтитулы"
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr "Тақ беттердің төменгі колонтитулы"
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr "Жұп беттердің төменгі колонтитулы"
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 msgid "Main text"
 msgstr "Негізгі мәтін"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-#| msgid "Page Break"
-msgid "Page Background"
-msgstr "Бет үзілімі"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1606,6 +1618,11 @@ msgstr "Керек мәтін компоненті табылмады, KWord е�
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr "Орнату қатесі"
+
+#, fuzzy
+#~| msgid "Page Break"
+#~ msgid "Page Background"
+#~ msgstr "Бет үзілімі"
 
 #, fuzzy
 #~| msgid "Format"
