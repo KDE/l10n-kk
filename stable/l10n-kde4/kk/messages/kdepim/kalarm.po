@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-08-27 01:27+0200\n"
-"PO-Revision-Date: 2010-08-29 08:51+0600\n"
+"PO-Revision-Date: 2010-08-30 06:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -3939,6 +3939,10 @@ msgid ""
 "first use the calendars view to select a default archived alarms calendar.</"
 "para>"
 msgstr ""
+"<para>Өткен ескертулерді жазатын әдетті күнтізбе қажет, бірақ ол "
+"тағайындалмаған..</para><para>Егер өткен ескертулері сақталсын "
+"десеңіз, алдымен күнтізбе көрінісінен әдетті өткен ескертулер "
+"күнтізбесін таңдап алыңыз.</para>"
 
 #: prefdlg.cpp:940
 msgctxt "@info"
@@ -4325,6 +4329,12 @@ msgid ""
 "message windows in the center of the screen, but disable buttons for a short "
 "time after the window is displayed.</item></list></para>"
 msgstr ""
+"<para>Ескерту хабарламасын кездейсоқ құптауының ықтималдығын "
+"төмендету үшін қолданатын шарасын таңдаңыз.:<list><item>Ескерту "
+"хабарламасын мейілінше тышқан меңзерінен алыстату, немесе</item> "
+"<item>Ескерту хабарламасын экранның ортасына шығара беру, бірақ "
+"бастапқыда көрсетілген терезесінің батырмаларын біршама уақыт "
+"істемейтін қылу.</item></list></para>"
 
 #: prefdlg.cpp:1664
 msgctxt "@option:radio"
@@ -4347,6 +4357,8 @@ msgid ""
 "Enter how long its buttons should remain disabled after the alarm message "
 "window is shown."
 msgstr ""
+"Ескерту терезесі көрсетілген кейін оның батырмалары қаншама уақыт "
+"бұғатталып тұрсын, келтіріңіз."
 
 #: prefdlg.cpp:1689
 msgctxt "@option:check"
@@ -4381,7 +4393,7 @@ msgstr "Эл.поштаның жасырын көшірмесі өзіңе жі�
 
 #: main.cpp:55
 msgid "Beep when message is displayed"
-msgstr "Ескертуді көрсетуі дыбыспен сүемелденсін"
+msgstr "Ескертуді көрсетуі дыбыспен сүйемелденсін"
 
 #: main.cpp:58
 msgid "Message background color (name or hex 0xRRGGBB)"
@@ -4405,7 +4417,7 @@ msgstr "Қоршау-орта командасы орындалсын"
 
 #: main.cpp:68
 msgid "Command line to generate alarm message text"
-msgstr ""
+msgstr "Ескерту хабарламасының мәтінін шығаратын командасы"
 
 #: main.cpp:69
 msgid "Display the alarm edit dialog to edit the specified alarm"
@@ -4693,7 +4705,7 @@ msgstr "Жоқ"
 #: soundpicker.cpp:51
 msgctxt "@item:inlistbox"
 msgid "Beep"
-msgstr "Зуыл"
+msgstr "Шиқыл"
 
 #: soundpicker.cpp:52
 msgctxt "@item:inlistbox"
@@ -4723,7 +4735,7 @@ msgstr "<interface>%1</interface>: хабарламасы дыбыссыз кө�
 #: soundpicker.cpp:132, kde-format
 msgctxt "@info:whatsthis"
 msgid "<interface>%1</interface>: a simple beep is sounded."
-msgstr "<interface>%1</interface>: жай зуыл шығарылады"
+msgstr "<interface>%1</interface>: жай дыбыс белгісі шығарылады."
 
 #: soundpicker.cpp:133, kde-format
 msgctxt "@info:whatsthis"
@@ -5242,11 +5254,14 @@ msgid ""
 "applies to the main recurrence only. It does not limit any sub-repetition "
 "which will occur regardless after the last main recurrence.</note></para>"
 msgstr ""
+"<para>Келтірілген күн/уақыт келгеше ескертуді қайталай беру.</para> "
+"<para><note>Бұл негізгі қайталауына ғана тиісті. Бұл әрбір негізгі "
+"ескертудің жәй қайталануына әсер етпейді.</note></para>"
 
 #: recurrenceedit.cpp:281
 msgctxt "@info/plain"
 msgid "This uses the same time zone as the start time."
-msgstr ""
+msgstr "Бастау уақытының белдеуін қолдануын ұйғару."
 
 #: recurrenceedit.cpp:283, kde-format
 msgctxt "@info:whatsthis"
@@ -5828,6 +5843,8 @@ msgid ""
 "The start date does not match the alarm's recurrence pattern, so it will be "
 "adjusted to the date of the next recurrence (%1)."
 msgstr ""
+"Бастау күні ескерту қайталануының қалыпына сәйкес келмейді, "
+"сондықтан ол келесі қайталану күнімен (%1) сәйкестіріледі."
 
 #: editdlg.cpp:972
 #, kde-format
@@ -5836,6 +5853,8 @@ msgid ""
 "The start date/time does not match the alarm's recurrence pattern, so it "
 "will be adjusted to the date/time of the next recurrence (%1)."
 msgstr ""
+"Бастау күн/уақыты ескерту қайталануының қалыпына сәйкес келмейді, "
+"сондықтан ол келесі қайталану күн/уақытымен (%1) сәйкестіріледі."
 
 #: editdlg.cpp:994
 msgctxt "@info"
@@ -5845,20 +5864,19 @@ msgstr "Қайталану уақыты өткен ғой "
 #: editdlg.cpp:999
 msgctxt "@info"
 msgid "The alarm will never occur during working hours"
-msgstr ""
+msgstr "Енді ескерту ешқашанда жұмыс уақытында жасалмайды"
 
-#: editdlg.cpp:1028
-#, fuzzy, kde-format
+#: editdlg.cpp:1028, kde-format
 msgctxt "@info"
 msgid ""
 "Reminder period must be less than the recurrence interval, unless <interface>"
 "%1</interface> is checked."
 msgstr ""
-"Егер '%1' құсбелгісі қойылса, алдын-ала еске салу мерзімі қайталану "
+"Егер <interface>%1</interface> белгісі тұрса, алдын-ала еске салу мерзімі "
+"қайталану "
 "аралығынан қысқа болу керек."
 
 #: editdlg.cpp:1043
-#, fuzzy
 msgctxt "@info"
 msgid ""
 "The duration of a repetition within the recurrence must be less than the "
@@ -5868,7 +5886,6 @@ msgstr ""
 "мерзімін алып тастағанан қысқа болуы керек"
 
 #: editdlg.cpp:1050
-#, fuzzy
 msgctxt "@info"
 msgid ""
 "For a repetition within the recurrence, its period must be in units of days "
@@ -5878,41 +5895,36 @@ msgstr ""
 "түрінде болу керек"
 
 #: editdlg.cpp:1083
-#, fuzzy
 msgctxt "@info"
 msgid "You must select a calendar to save the alarm in"
-msgstr "Жаңа ескерту үшін үлгі таңдау."
+msgstr "Ескертуді сақтайтын күнтізбені таңдау керек"
 
 #: editdlg.cpp:1164
 msgctxt "@action:button"
 msgid "Less Options <<"
-msgstr ""
+msgstr "Параметрлерін азайту <<"
 
 #: editdlg.cpp:1169
 msgctxt "@action:button"
 msgid "More Options >>"
-msgstr ""
+msgstr "Параметрлерін көбейту <<"
 
 #: birthdaydlg.cpp:66
-#, fuzzy
 msgctxt "@title:window"
 msgid "Import Birthdays From KAddressBook"
-msgstr "Туған күндерді KAddressBook кітапшасынан импорттау"
+msgstr "Туған күндерді KAddressBook-тен импорттау"
 
 #: birthdaydlg.cpp:81
-#, fuzzy
 msgctxt "@info/plain"
 msgid "Birthday: "
 msgstr "Туған күні: "
 
 #: birthdaydlg.cpp:84
-#, fuzzy
 msgctxt "@title:group"
 msgid "Alarm Text"
 msgstr "Ескерту мәтіні"
 
 #: birthdaydlg.cpp:97
-#, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter text to appear before the person's name in the alarm message, "
@@ -5922,13 +5934,11 @@ msgstr ""
 "қажетті бос орындарды қоса."
 
 #: birthdaydlg.cpp:101
-#, fuzzy
 msgctxt "@label:textbox"
 msgid "Suffix:"
-msgstr "&Жұрнағы:"
+msgstr "Жұрнағы:"
 
 #: birthdaydlg.cpp:109
-#, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter text to appear after the person's name in the alarm message, including "
@@ -5938,13 +5948,11 @@ msgstr ""
 "қажетті бос орындарды қоса."
 
 #: birthdaydlg.cpp:113
-#, fuzzy
 msgctxt "@title:group"
 msgid "Select Birthdays"
 msgstr "Туған күндерді таңдау"
 
 #: birthdaydlg.cpp:149
-#, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Select birthdays to set alarms for.<nl/>This list shows all birthdays "
@@ -5953,36 +5961,34 @@ msgid ""
 "dragging the mouse over the list, or by clicking the mouse while pressing "
 "Ctrl or Shift.</para>"
 msgstr ""
-"Ескертулерін орнататын туған күндерді таңдау.\n"
-"Бұл тізім ескертулері әлі орнатылмаған KAddressBook кітапшасындағы бар туған "
-"күндерді көрсетеді.\n"
-"\n"
-"Тышқанның сол жақ батырмасын басып тұрып меңзерді үстінен жүгіртіп, немесе "
-"Ctrl не Shift пернелерін басып тұрып тышқанмен түртіп, бірнеше туған "
-"күндерді таңдап алуға болады."
+"<para>Ескертулерін орнататын туған күндерді таңдау.<nl/>Бұл тізім "
+"<application>KAddressBook</application> кітапшасындағы бар, "
+"ескертулері әлі орнатылмаған туған күндерін ұсынады.</para> "
+"<para>Тышқанның сол жақ батырмасын басып тұрып меңзерді "
+"үстінен жүгіртіп, немесе Ctrl не Shift пернелерін басып тұрып "
+"тышқанмен түртіп, бірнеше туған күндерді таңдап алуға болады. "
+"</para>"
 
 #: birthdaydlg.cpp:155
-#, fuzzy
 msgctxt "@title:group"
 msgid "Alarm Configuration"
-msgstr "Ескерту баптаулары"
+msgstr "Ескертуді баптау"
 
 #: birthdaydlg.cpp:178
-#, fuzzy
 msgctxt "@info:whatsthis"
 msgid "Check to display a reminder in advance of the birthday."
 msgstr ""
-"Туған күн туралы алдын-ала еске салуды көрсету үшін құсбелгісін қойыңыз."
+"Туған күн туралы алдын-ала еске салуды көрсету үшін осы "
+"белгісін қойыңыз."
 
 #: birthdaydlg.cpp:179
-#, fuzzy
 msgctxt "@info:whatsthis"
 msgid ""
 "Enter the number of days before each birthday to display a reminder. This is "
 "in addition to the alarm which is displayed on the birthday."
 msgstr ""
-"Туған күнге неше күн қалғанда еске салу жасалатынын келтіріңіз. Бұл туған "
-"күндегінің сыртындағы ескерту."
+"Туған күнге неше күн қалғанда еске салу жасалатынын келтіріңіз. "
+"Бұл туған күндегінің сыртындағы ескерту."
 
 #: birthdaydlg.cpp:220
 msgctxt "@info:whatsthis"
