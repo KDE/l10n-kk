@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-02 07:05+0200\n"
+"POT-Creation-Date: 2010-09-07 02:37+0200\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -399,14 +399,14 @@ msgid "Receive"
 msgstr "Қабылдау"
 
 #: kernel/kptcalendar.h:259 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1012 ui/kptcalendareditor.cpp:205
-#: ui/kptcalendareditor.cpp:643
+#: models/kptcalendarmodel.cpp:1012 ui/kptcalendareditor.cpp:206
+#: ui/kptcalendareditor.cpp:644
 msgid "Undefined"
 msgstr "Анықталмаған"
 
 #: kernel/kptcalendar.h:261 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1015 ui/kptcalendareditor.cpp:203
-#: ui/kptcalendareditor.cpp:641
+#: models/kptcalendarmodel.cpp:1015 ui/kptcalendareditor.cpp:204
+#: ui/kptcalendareditor.cpp:642
 msgid "Non-working"
 msgstr "Жұмыс істемейтін"
 
@@ -855,7 +855,7 @@ msgstr ""
 msgid "Path"
 msgstr "Жолы"
 
-#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:626
+#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:663
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
@@ -3490,8 +3490,13 @@ msgid "Add Sub-Milestone..."
 msgstr "Кезеңін белгілеу..."
 
 #: ui/kptdependencyeditor.cpp:2140 ui/kpttaskeditor.cpp:514
-msgid "Delete Task"
-msgstr "Тапсырманы өшіру"
+#: ui/kptcalendareditor.cpp:631 ui/kptaccountseditor.cpp:236
+#: ui/kptscheduleeditor.cpp:282 ui/kptresourceeditor.cpp:278
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action"
+msgid "Delete"
+msgstr "Жою"
 
 #: ui/kptwbsdefinitiondialog.cpp:35
 msgid "WBS Definition"
@@ -3657,15 +3662,15 @@ msgstr "Тиісті жұмыс белгіленбеген"
 msgid "No resource attributed"
 msgstr "Тиісті ресурсы белгіленбеген"
 
-#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:639
+#: ui/kptcalendareditor.cpp:202 ui/kptcalendareditor.cpp:640
 msgid "Work..."
 msgstr "Жұмыс..."
 
-#: ui/kptcalendareditor.cpp:277 ui/kptcalendareditor.cpp:307
+#: ui/kptcalendareditor.cpp:278 ui/kptcalendareditor.cpp:308
 msgid "Modify Weekday State"
 msgstr "Апта күннің күйін өзгерту"
 
-#: ui/kptcalendareditor.cpp:394
+#: ui/kptcalendareditor.cpp:395
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Work & Vacation Editor</title><para>A calendar defines availability "
@@ -3682,28 +3687,24 @@ msgid ""
 "working resource, when the resources calendar is not explicitly set.</para>"
 msgstr ""
 
-#: ui/kptcalendareditor.cpp:620
+#: ui/kptcalendareditor.cpp:621
 msgid "Add Calendar"
 msgstr "Күнтізбені қосу"
 
-#: ui/kptcalendareditor.cpp:625
+#: ui/kptcalendareditor.cpp:626
 msgid "Add Subcalendar"
 msgstr "Бағыныңқы күнтізбені қосу"
 
-#: ui/kptcalendareditor.cpp:630
-msgid "Delete Selected Calendar"
-msgstr "Таңдалған күнтізбені өшіру"
-
-#: ui/kptcalendareditor.cpp:786 ui/kptcalendareditor.cpp:820
+#: ui/kptcalendareditor.cpp:787 ui/kptcalendareditor.cpp:821
 msgid "Modify Calendar"
 msgstr "Күнтізбені өзгерту"
 
-#: ui/kptcalendareditor.cpp:795 ui/kptcalendareditor.cpp:801
+#: ui/kptcalendareditor.cpp:796 ui/kptcalendareditor.cpp:802
 #, kde-format
 msgid "%1: Set to Non-Working"
 msgstr "%1: жұмыс емес қылу"
 
-#: ui/kptcalendareditor.cpp:827
+#: ui/kptcalendareditor.cpp:828
 #, kde-format
 msgid "Set %1 to Undefined"
 msgstr "%1 дегенді анықталмаған қылу"
@@ -3742,17 +3743,13 @@ msgstr "Тапсырманың бітіруін өзгерту"
 msgid "Task Description"
 msgstr "Сипаттамасы"
 
-#: ui/kptaccountseditor.cpp:222
+#: ui/kptaccountseditor.cpp:224
 msgid "Add Account"
 msgstr "Есебін қосу"
 
-#: ui/kptaccountseditor.cpp:228
+#: ui/kptaccountseditor.cpp:230
 msgid "Add Subaccount"
 msgstr "Бағыныңқы есебін қосу"
-
-#: ui/kptaccountseditor.cpp:234
-msgid "Delete Selected Accounts"
-msgstr "Таңдалған есептерін өшіру"
 
 #: ui/kptresourceappointmentsview.cpp:94 ui/kpttaskstatusview.cpp:415
 msgid "General"
@@ -3823,48 +3820,44 @@ msgstr "Гант диаграммасының параметрлері"
 msgid "Options"
 msgstr "Параметрлері"
 
-#: ui/kptscheduleeditor.cpp:244
+#: ui/kptscheduleeditor.cpp:270
 msgid "Add Schedule"
 msgstr "Жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:250
+#: ui/kptscheduleeditor.cpp:276
 msgid "Add Sub-schedule"
 msgstr "Бағыныңқы жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:256
-msgid "Delete Selection"
-msgstr "Таңдағанды өшіру"
-
-#: ui/kptscheduleeditor.cpp:262
+#: ui/kptscheduleeditor.cpp:288
 msgid "Calculate"
 msgstr "Есептеу"
 
-#: ui/kptscheduleeditor.cpp:268
+#: ui/kptscheduleeditor.cpp:294
 msgid "Baseline"
 msgstr "Негізгі жоспар"
 
-#: ui/kptscheduleeditor.cpp:322 ui/kptscheduleeditor.cpp:351
+#: ui/kptscheduleeditor.cpp:355 ui/kptscheduleeditor.cpp:388
 msgid "Create sub-schedule"
 msgstr "Бағыныңқы жоспарды құру"
 
-#: ui/kptscheduleeditor.cpp:333
+#: ui/kptscheduleeditor.cpp:366
 #, fuzzy, kde-format
 #| msgid "Add Schedule"
 msgid "Add schedule %1"
 msgstr "Жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:419
+#: ui/kptscheduleeditor.cpp:456
 #, fuzzy
 #| msgid "ForInformation"
 msgctxt "@action"
 msgid "Show Debug Information"
 msgstr "МәліметҮшін"
 
-#: ui/kptscheduleeditor.cpp:621
+#: ui/kptscheduleeditor.cpp:658
 msgid "Result"
 msgstr "Нәтижесі"
 
-#: ui/kptscheduleeditor.cpp:631
+#: ui/kptscheduleeditor.cpp:668
 msgid "Scheduling Log"
 msgstr "Жоспарлау журналы"
 
@@ -4049,10 +4042,6 @@ msgstr "Ресурс тобын қосу..."
 #: ui/kptresourceeditor.cpp:272 rc.cpp:743
 msgid "Add Resource..."
 msgstr "Ресурсты қосу..."
-
-#: ui/kptresourceeditor.cpp:278
-msgid "Delete Selected Items"
-msgstr "Таңдалған нысандары өшіру"
 
 #: ui/kptmilestoneprogressdialog.cpp:39
 msgid "Milestone Progress"
@@ -5538,6 +5527,21 @@ msgstr "Сағаттық бағасы:"
 #| msgid "Overtime rate:"
 msgid "Overtime rate:"
 msgstr "Уақытынан тыс жұмыстың бағасы:"
+
+#~ msgid "Delete Task"
+#~ msgstr "Тапсырманы өшіру"
+
+#~ msgid "Delete Selected Calendar"
+#~ msgstr "Таңдалған күнтізбені өшіру"
+
+#~ msgid "Delete Selected Accounts"
+#~ msgstr "Таңдалған есептерін өшіру"
+
+#~ msgid "Delete Selection"
+#~ msgstr "Таңдағанды өшіру"
+
+#~ msgid "Delete Selected Items"
+#~ msgstr "Таңдалған нысандары өшіру"
 
 #~ msgid "Make appointments: Invalid interval %1 to %2"
 #~ msgstr "Кездесуді жоспарлау: %1 - %2 жарамсз аралық"
