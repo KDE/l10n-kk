@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-02 07:06+0200\n"
+"POT-Creation-Date: 2010-09-09 06:09+0200\n"
 "PO-Revision-Date: 2009-01-12 09:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -2490,6 +2490,23 @@ msgstr "Зимбабве доллары"
 msgid "ZWD"
 msgstr "ZWD"
 
+#: DocBase.cpp:221
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr "Жарамсыз OASIS OpenDocument файлы. office:body тегі жоқ."
+
+#: DocBase.cpp:235
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr "Жарамсыз OASIS OpenDocument файлы. office:body ішінде тегтері жоқ."
+
+#: DocBase.cpp:237
+#, kde-format
+msgid ""
+"This document is not a spreadsheet, but %1. Please try opening it with the "
+"appropriate application."
+msgstr ""
+"Бұл электрондық кесте емес, бұл - %1. Оны өзіне сәйкесті бағдарламасында "
+"ашып көріңіз."
+
 #. i18n: file: dialogs/DataFormatWidget.ui:60
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_9)
 #. i18n: file: dialogs/SpecialPasteWidget.ui:63
@@ -2621,12 +2638,12 @@ msgstr "ұйымы"
 msgid "sheet"
 msgstr "бет"
 
-#: Map.cpp:346
+#: Map.cpp:331
 #, kde-format
 msgid "Sheet%1"
 msgstr "Бет%1"
 
-#: Map.cpp:589 Map.cpp:673
+#: Map.cpp:574 Map.cpp:658
 msgid "This document has no sheets (tables)."
 msgstr "Бұл құжатта беттер (кестелері) жоқ."
 
@@ -2779,7 +2796,7 @@ msgstr "Жою"
 #. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: functions/conversion.xml:251
 #: rc.cpp:53 rc.cpp:398 rc.cpp:812 rc.cpp:815 xml_doc.cpp:198
-#: dialogs/LayoutDialog.cpp:886 ui/CellToolBase.cpp:183
+#: dialogs/LayoutDialog.cpp:886 ui/CellToolBase.cpp:184
 msgid "Format"
 msgstr "Пішін"
 
@@ -2843,13 +2860,13 @@ msgstr "Ақша"
 
 #. i18n: file: dialogs/DataFormatWidget.ui:95
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_4)
-#: rc.cpp:75 dialogs/LayoutDialog.cpp:906 ui/CellToolBase.cpp:395
+#: rc.cpp:75 dialogs/LayoutDialog.cpp:906 ui/CellToolBase.cpp:396
 msgid "Money"
 msgstr "Ақша"
 
 #. i18n: file: dialogs/DataFormatWidget.ui:102
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_3)
-#: rc.cpp:78 dialogs/LayoutDialog.cpp:902 ui/CellToolBase.cpp:389
+#: rc.cpp:78 dialogs/LayoutDialog.cpp:902 ui/CellToolBase.cpp:390
 msgid "Percent"
 msgstr "Пайыз"
 
@@ -2983,7 +3000,7 @@ msgstr "Roman"
 
 #. i18n: file: dialogs/FontWidget.ui:57
 #. i18n: ectx: property (text), item, widget (KComboBox, style_combo)
-#: rc.cpp:118 dialogs/LayoutDialog.cpp:1902 ui/CellToolBase.cpp:217
+#: rc.cpp:118 dialogs/LayoutDialog.cpp:1902 ui/CellToolBase.cpp:218
 msgid "Italic"
 msgstr "Көлбеу"
 
@@ -3011,7 +3028,7 @@ msgstr "Кәдімгі"
 
 #. i18n: file: dialogs/FontWidget.ui:82
 #. i18n: ectx: property (text), item, widget (KComboBox, weight_combo)
-#: rc.cpp:130 dialogs/LayoutDialog.cpp:1891 ui/CellToolBase.cpp:212
+#: rc.cpp:130 dialogs/LayoutDialog.cpp:1891 ui/CellToolBase.cpp:213
 msgid "Bold"
 msgstr "Қалың"
 
@@ -3029,7 +3046,7 @@ msgstr "Белгісі қойылса, назардағы ұяшықтағы м�
 
 #. i18n: file: dialogs/FontWidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, underline)
-#: rc.cpp:139 ui/CellToolBase.cpp:222
+#: rc.cpp:139 ui/CellToolBase.cpp:223
 msgid "Underline"
 msgstr "Асты сызық"
 
@@ -3162,21 +3179,21 @@ msgstr "Стандартты"
 
 #. i18n: file: dialogs/PositionWidget.ui:61
 #. i18n: ectx: property (text), widget (QRadioButton, left)
-#: rc.cpp:203 part/dialogs/PreferenceDialog.cpp:322 ui/CellToolBase.cpp:260
-#: ui/CellToolBase.cpp:307
+#: rc.cpp:203 part/dialogs/PreferenceDialog.cpp:322 ui/CellToolBase.cpp:261
+#: ui/CellToolBase.cpp:308
 msgid "Left"
 msgstr "Солға"
 
 #. i18n: file: dialogs/PositionWidget.ui:68
 #. i18n: ectx: property (text), widget (QRadioButton, center)
-#: rc.cpp:206 ui/CellToolBase.cpp:267
+#: rc.cpp:206 ui/CellToolBase.cpp:268
 msgid "Center"
 msgstr "Ортаға"
 
 #. i18n: file: dialogs/PositionWidget.ui:75
 #. i18n: ectx: property (text), widget (QRadioButton, right)
-#: rc.cpp:209 part/dialogs/PreferenceDialog.cpp:321 ui/CellToolBase.cpp:274
-#: ui/CellToolBase.cpp:313
+#: rc.cpp:209 part/dialogs/PreferenceDialog.cpp:321 ui/CellToolBase.cpp:275
+#: ui/CellToolBase.cpp:314
 msgid "Right"
 msgstr "Оңға"
 
@@ -3200,25 +3217,25 @@ msgstr ""
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup2)
 #. i18n: file: part/dialogs/PageLayoutSheetPage.ui:335
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:218 rc.cpp:603 dialogs/SeriesDialog.cpp:69 ui/CellToolBase.cpp:365
+#: rc.cpp:218 rc.cpp:603 dialogs/SeriesDialog.cpp:69 ui/CellToolBase.cpp:366
 msgid "Vertical"
 msgstr "Тігінен"
 
 #. i18n: file: dialogs/PositionWidget.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, top)
-#: rc.cpp:221 ui/CellToolBase.cpp:284 ui/CellToolBase.cpp:319
+#: rc.cpp:221 ui/CellToolBase.cpp:285 ui/CellToolBase.cpp:320
 msgid "Top"
 msgstr "Жоғарға"
 
 #. i18n: file: dialogs/PositionWidget.ui:104
 #. i18n: ectx: property (text), widget (QRadioButton, middle)
-#: rc.cpp:224 ui/CellToolBase.cpp:291
+#: rc.cpp:224 ui/CellToolBase.cpp:292
 msgid "Middle"
 msgstr "Ортаға"
 
 #. i18n: file: dialogs/PositionWidget.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, bottom)
-#: rc.cpp:227 ui/CellToolBase.cpp:298 ui/CellToolBase.cpp:325
+#: rc.cpp:227 ui/CellToolBase.cpp:299 ui/CellToolBase.cpp:326
 msgid "Bottom"
 msgstr "Төменге"
 
@@ -3282,7 +3299,7 @@ msgstr ""
 #. i18n: file: kspread.rc:102
 #. i18n: ectx: Menu (MergeCellMenu)
 #: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
-#: ui/CellToolBase.cpp:439
+#: ui/CellToolBase.cpp:440
 msgid "Merge Cells"
 msgstr "Ұяшықтарды біріктіру"
 
@@ -3663,7 +3680,7 @@ msgstr "Барлығын"
 
 #. i18n: file: dialogs/SpecialPasteWidget.ui:77
 #. i18n: ectx: property (text), widget (QRadioButton, commentButton)
-#: rc.cpp:401 ui/CellToolBase.cpp:575
+#: rc.cpp:401 ui/CellToolBase.cpp:576
 msgid "Comment"
 msgstr "Түсініктемесін"
 
@@ -4587,11 +4604,11 @@ msgstr "Белсенді беті"
 msgid "Color/Border"
 msgstr "Түсі/Шегі"
 
-#: Sheet.cpp:933
+#: Sheet.cpp:915
 msgid "Dependency"
 msgstr "Тәуелдік"
 
-#: Sheet.cpp:2891
+#: Sheet.cpp:2878
 msgid "Invalid document. Sheet name is empty."
 msgstr "Бұл дұрыс құжат емес. Беттің атауы жоқ."
 
@@ -4609,7 +4626,7 @@ msgstr "Айдар1"
 #: dialogs/StyleManagerDialog.cpp:101 dialogs/StyleManagerDialog.cpp:141
 #: dialogs/StyleManagerDialog.cpp:174 dialogs/StyleManagerDialog.cpp:196
 #: dialogs/StyleManagerDialog.cpp:236 dialogs/StyleManagerDialog.cpp:261
-#: dialogs/StyleManagerDialog.cpp:282 ui/CellToolBase.cpp:189
+#: dialogs/StyleManagerDialog.cpp:282 ui/CellToolBase.cpp:190
 msgid "Default"
 msgstr "Әдетті"
 
@@ -5338,7 +5355,7 @@ msgstr "ARABIC(\"XCIX\") қайтаратыны 99"
 
 #. i18n: file: functions/database.xml:5
 #: xml_doc.cpp:218 chart/ChartDatabaseSelectorFactory.cpp:40
-#: dialogs/DatabaseDialog.cpp:139 ui/CellToolBase.cpp:678
+#: dialogs/DatabaseDialog.cpp:139 ui/CellToolBase.cpp:679
 msgid "Database"
 msgstr "Деректер базасы"
 
@@ -16908,8 +16925,8 @@ msgstr "Авто-Пішім"
 msgid "Change Border Color"
 msgstr "Шегінің түсін өзгерту"
 
-#: commands/CommentCommand.cpp:62 ui/CellToolBase.cpp:576
-#: ui/CellToolBase.cpp:2383
+#: commands/CommentCommand.cpp:62 ui/CellToolBase.cpp:577
+#: ui/CellToolBase.cpp:2384
 msgid "Remove Comment"
 msgstr "Түсініктемені өшіру"
 
@@ -16958,7 +16975,7 @@ msgstr "Шегінуді үлкейту"
 msgid "Decrease Indentation"
 msgstr "Шегінуді кішірейту"
 
-#: commands/LinkCommand.cpp:39 ui/CellToolBase.cpp:598
+#: commands/LinkCommand.cpp:39 ui/CellToolBase.cpp:599
 msgid "Remove Link"
 msgstr "Сілтімені өшіру"
 
@@ -16966,15 +16983,15 @@ msgstr "Сілтімені өшіру"
 msgid "Set Link"
 msgstr "Сілтемені орнату"
 
-#: commands/MergeCommand.cpp:130 ui/CellToolBase.cpp:444
+#: commands/MergeCommand.cpp:130 ui/CellToolBase.cpp:445
 msgid "Merge Cells Horizontally"
 msgstr "Ұяшықтарды жатығынан біріктіру"
 
-#: commands/MergeCommand.cpp:132 ui/CellToolBase.cpp:449
+#: commands/MergeCommand.cpp:132 ui/CellToolBase.cpp:450
 msgid "Merge Cells Vertically"
 msgstr "Ұяшықтарды тігінен біріктіру"
 
-#: commands/MergeCommand.cpp:137 ui/CellToolBase.cpp:454
+#: commands/MergeCommand.cpp:137 ui/CellToolBase.cpp:455
 msgid "Dissociate Cells"
 msgstr "Ұяларды ыдырату"
 
@@ -16992,11 +17009,11 @@ msgid "Remove Named Area"
 msgstr "Аталған аумағын жою"
 
 #: commands/PrecisionCommand.cpp:36 commands/PrecisionCommand.cpp:62
-#: ui/CellToolBase.cpp:400
+#: ui/CellToolBase.cpp:401
 msgid "Increase Precision"
 msgstr "Дәлдігін арттыру"
 
-#: commands/PrecisionCommand.cpp:64 ui/CellToolBase.cpp:405
+#: commands/PrecisionCommand.cpp:64 ui/CellToolBase.cpp:406
 msgid "Decrease Precision"
 msgstr "Дәлдігін төмендету"
 
@@ -17022,23 +17039,23 @@ msgstr "Жолды туралау"
 
 #: commands/RowColumnManipulators.cpp:562
 #: commands/RowColumnManipulators.cpp:581 commands/Undo.cpp:278
-#: ui/CellToolBase.cpp:467 ui/CellToolBase_p.cpp:1279
+#: ui/CellToolBase.cpp:468 ui/CellToolBase_p.cpp:1279
 msgid "Insert Columns"
 msgstr "Бағандады ендіру"
 
 #: commands/RowColumnManipulators.cpp:583 commands/Undo.cpp:215
-#: ui/CellToolBase.cpp:473
+#: ui/CellToolBase.cpp:474
 msgid "Remove Columns"
 msgstr "Бағанды жою"
 
 #: commands/RowColumnManipulators.cpp:685
 #: commands/RowColumnManipulators.cpp:704 commands/Undo.cpp:392
-#: ui/CellToolBase.cpp:505 ui/CellToolBase_p.cpp:1291
+#: ui/CellToolBase.cpp:506 ui/CellToolBase_p.cpp:1291
 msgid "Insert Rows"
 msgstr "Жолды ендіру"
 
 #: commands/RowColumnManipulators.cpp:706 commands/Undo.cpp:321
-#: ui/CellToolBase.cpp:511
+#: ui/CellToolBase.cpp:512
 msgid "Remove Rows"
 msgstr "Бағандарды жою"
 
@@ -17102,21 +17119,21 @@ msgstr "Стилін ысырып тастау"
 msgid "Change Style"
 msgstr "Стилін өзгерту"
 
-#: commands/Undo.cpp:436 ui/CellToolBase.cpp:516
+#: commands/Undo.cpp:436 ui/CellToolBase.cpp:517
 msgid "Hide Rows"
 msgstr "Жолдарды жасыру"
 
-#: commands/Undo.cpp:491 ui/CellToolBase.cpp:478
+#: commands/Undo.cpp:491 ui/CellToolBase.cpp:479
 msgid "Hide Columns"
 msgstr "Бағандарды жасыру"
 
 #: commands/Undo.cpp:547 dialogs/ShowColRowDialog.cpp:66
-#: ui/CellToolBase.cpp:531
+#: ui/CellToolBase.cpp:532
 msgid "Show Rows"
 msgstr "Жолдарды көрсету"
 
 #: commands/Undo.cpp:603 dialogs/ShowColRowDialog.cpp:63
-#: ui/CellToolBase.cpp:493
+#: ui/CellToolBase.cpp:494
 msgid "Show Columns"
 msgstr "Бағандарды көрсету"
 
@@ -17159,7 +17176,7 @@ msgid "Remove Cell"
 msgstr "Ұяшықты жою"
 
 #: commands/Undo.cpp:2179 dialogs/ConditionalDialog.cpp:261
-#: ui/CellToolBase.cpp:586
+#: ui/CellToolBase.cpp:587
 msgid "Conditional Styles"
 msgstr "Шартты стильдер"
 
@@ -17190,8 +17207,8 @@ msgstr "Тексерісін қосу"
 
 #: database/FilterPopup.cpp:69 dialogs/FormulaDialog.cpp:101
 #: dialogs/FormulaDialog.cpp:209 dialogs/FormulaDialog.cpp:742
-#: dialogs/ValidityDialog.cpp:82 ui/CellToolBase.cpp:331
-#: ui/CellToolBase.cpp:558
+#: dialogs/ValidityDialog.cpp:82 ui/CellToolBase.cpp:332
+#: ui/CellToolBase.cpp:559
 msgid "All"
 msgstr "Барлық"
 
@@ -17517,8 +17534,8 @@ msgstr "Бағандарды таңдаңыз:"
 msgid "Table"
 msgstr "Кесте"
 
-#: dialogs/DatabaseDialog.cpp:201 ui/CellToolBase.cpp:466
-#: ui/CellToolBase.cpp:472
+#: dialogs/DatabaseDialog.cpp:201 ui/CellToolBase.cpp:467
+#: ui/CellToolBase.cpp:473
 msgid "Columns"
 msgstr "Бағандарда"
 
@@ -17666,7 +17683,7 @@ msgstr "Кемінде бір бағанды таңдау керек еді."
 #: dialogs/DatabaseDialog.cpp:737 dialogs/DatabaseDialog.cpp:738
 #: part/View.cpp:454 part/dialogs/PreferenceDialog.cpp:324
 #: part/dialogs/PreferenceDialog.cpp:332 part/dialogs/PreferenceDialog.cpp:460
-#: ui/CellToolBase.cpp:337
+#: ui/CellToolBase.cpp:338
 msgid "None"
 msgstr "Жоқ"
 
@@ -17861,7 +17878,7 @@ msgid "Remove columns"
 msgstr "Бағандарды жою"
 
 #: dialogs/LayoutDialog.cpp:167 dialogs/StyleManagerDialog.cpp:61
-#: ui/CellToolBase.cpp:199
+#: ui/CellToolBase.cpp:200
 msgid "Style"
 msgstr "Стилі"
 
@@ -17873,7 +17890,7 @@ msgstr "Атауы:"
 msgid "Inherit style:"
 msgstr "Мұра ететін стилі:"
 
-#: dialogs/LayoutDialog.cpp:235 ui/CellToolBase.cpp:1608
+#: dialogs/LayoutDialog.cpp:235 ui/CellToolBase.cpp:1609
 msgid "A style with this name already exists."
 msgstr "Былай аталған стиль бар ғой."
 
@@ -18268,7 +18285,7 @@ msgstr "Ая түсі:"
 msgid "No Color"
 msgstr "Түссіз"
 
-#: dialogs/LinkDialog.cpp:74 ui/CellToolBase.cpp:2416
+#: dialogs/LinkDialog.cpp:74 ui/CellToolBase.cpp:2417
 msgid "Insert Link"
 msgstr "Сілтемені ендіру"
 
@@ -18414,7 +18431,7 @@ msgstr "&Өңдеу..."
 msgid "&New..."
 msgstr "&Жаңа..."
 
-#: dialogs/NamedAreaDialog.cpp:69 ui/CellToolBase.cpp:728
+#: dialogs/NamedAreaDialog.cpp:69 ui/CellToolBase.cpp:729
 msgid "Named Areas"
 msgstr "Аталған аумақтар"
 
@@ -18686,7 +18703,7 @@ msgstr "Var"
 msgid "VarP"
 msgstr "VarP"
 
-#: dialogs/ValidityDialog.cpp:62 ui/CellToolBase.cpp:608
+#: dialogs/ValidityDialog.cpp:62 ui/CellToolBase.cpp:609
 msgid "Validity"
 msgstr "Дұрыстығы"
 
@@ -18984,24 +19001,7 @@ msgstr "Назардағы бетте басу аумағын анықтау"
 msgid "Cell Tool"
 msgstr "Ұяшық құралдары"
 
-#: part/Doc.cpp:498
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr "Жарамсыз OASIS OpenDocument файлы. office:body тегі жоқ."
-
-#: part/Doc.cpp:512
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr "Жарамсыз OASIS OpenDocument файлы. office:body ішінде тегтері жоқ."
-
-#: part/Doc.cpp:514
-#, kde-format
-msgid ""
-"This document is not a spreadsheet, but %1. Please try opening it with the "
-"appropriate application."
-msgstr ""
-"Бұл электрондық кесте емес, бұл - %1. Оны өзіне сәйкесті бағдарламасында "
-"ашып көріңіз."
-
-#: part/Doc.cpp:566
+#: part/Doc.cpp:317
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-kspread or application/vnd."
@@ -19010,7 +19010,7 @@ msgstr ""
 "Бұл дұрыс құжат емес. Күткен MIME түрі application/x-kspread немесе "
 "application/vnd.kde.kspread, ал мұндағы - %1"
 
-#: part/Doc.cpp:575
+#: part/Doc.cpp:326
 #, kde-format
 msgid ""
 "This document was created with a newer version of KSpread (syntax version: %"
@@ -19020,15 +19020,15 @@ msgstr ""
 "Бұл құжат KSpread-тің жаңарақ нұсқасында құрылған (синтаксис нұсқасы: %1)\n"
 "Бұны осы KSpread нұсқасында ашса, кейбір ақпараттар жоғалуы мүмкін."
 
-#: part/Doc.cpp:577
+#: part/Doc.cpp:328
 msgid "File Format Mismatch"
 msgstr "Файл пішімінің сәйкессіздігі"
 
-#: part/Doc.cpp:627
+#: part/Doc.cpp:378
 msgid "Styles cannot be loaded."
 msgstr "Стильдер жүктелмейді."
 
-#: part/Doc.cpp:635
+#: part/Doc.cpp:386
 msgid "Invalid document. No map tag."
 msgstr "Құжат дұрыс емес. map деген тегі жоқ."
 
@@ -19050,10 +19050,10 @@ msgstr "Ені: %1 %2"
 msgid "Hide Column"
 msgstr "Бағанды жасыру"
 
-#: part/Headers.cpp:264 part/Headers.cpp:783 ui/CellToolBase.cpp:2121
-#: ui/CellToolBase.cpp:2148 ui/CellToolBase.cpp:2162 ui/CellToolBase.cpp:2183
-#: ui/CellToolBase.cpp:2223 ui/CellToolBase.cpp:2250 ui/CellToolBase.cpp:2264
-#: ui/CellToolBase.cpp:2285
+#: part/Headers.cpp:264 part/Headers.cpp:783 ui/CellToolBase.cpp:2122
+#: ui/CellToolBase.cpp:2149 ui/CellToolBase.cpp:2163 ui/CellToolBase.cpp:2184
+#: ui/CellToolBase.cpp:2224 ui/CellToolBase.cpp:2251 ui/CellToolBase.cpp:2265
+#: ui/CellToolBase.cpp:2286
 msgid "Area is too large."
 msgstr "Тым үлкен аумақ."
 
@@ -19367,7 +19367,7 @@ msgstr "Назардағы бетті алып тастамақсыз ба?"
 msgid "&Delete"
 msgstr "&Алып тастау"
 
-#: part/View.cpp:1740 ui/CellToolBase.cpp:1595
+#: part/View.cpp:1740 ui/CellToolBase.cpp:1596
 msgid "Enter name:"
 msgstr "Атауы:"
 
@@ -19484,902 +19484,902 @@ msgstr "Беттің қасиеттері"
 msgid "Sheets"
 msgstr "Беттер"
 
-#: ui/CellToolBase.cpp:182
+#: ui/CellToolBase.cpp:183
 msgid "Cell Format..."
 msgstr "Ұяшық пішімі..."
 
-#: ui/CellToolBase.cpp:187
+#: ui/CellToolBase.cpp:188
 msgid "Set the cell formatting"
 msgstr "Ұяшықты пішімдеу"
 
-#: ui/CellToolBase.cpp:192
+#: ui/CellToolBase.cpp:193
 msgid "Resets to the default format"
 msgstr "Әдетті пішіміне ысыру"
 
-#: ui/CellToolBase.cpp:194
+#: ui/CellToolBase.cpp:195
 #, fuzzy
 #| msgid "Style Manager"
 msgid "Style Manager..."
 msgstr "Стиль менеджері"
 
-#: ui/CellToolBase.cpp:197
+#: ui/CellToolBase.cpp:198
 msgid "Edit and organize cell styles"
 msgstr "Ұяшық стилін ұйымдастыру"
 
-#: ui/CellToolBase.cpp:201
+#: ui/CellToolBase.cpp:202
 msgid "Apply a predefined style to the selected cells"
 msgstr "Таңдалған ұяшықтарды бар бір стиліне келтіру"
 
-#: ui/CellToolBase.cpp:204
+#: ui/CellToolBase.cpp:205
 msgid "Create Style From Cell..."
 msgstr "Ұяшықтың негізінде стилді құру..."
 
-#: ui/CellToolBase.cpp:205
+#: ui/CellToolBase.cpp:206
 msgid "Style From Cell"
 msgstr "Ұяшығының стилін алу"
 
-#: ui/CellToolBase.cpp:208
+#: ui/CellToolBase.cpp:209
 msgid "Create a new style based on the currently selected cell"
 msgstr "Таңдалған ұяшықты негіздеп жаңа стилді құру"
 
-#: ui/CellToolBase.cpp:227
+#: ui/CellToolBase.cpp:228
 msgid "Strike Out"
 msgstr "Сызып тастау"
 
-#: ui/CellToolBase.cpp:231
+#: ui/CellToolBase.cpp:232
 msgid "Select Font..."
 msgstr "Қаріпті таңдау..."
 
-#: ui/CellToolBase.cpp:232
+#: ui/CellToolBase.cpp:233
 msgid "Font"
 msgstr "Қаріп"
 
-#: ui/CellToolBase.cpp:236
+#: ui/CellToolBase.cpp:237
 msgid "Select Font Size"
 msgstr "Қаріп өлшемін таңдау"
 
-#: ui/CellToolBase.cpp:237
+#: ui/CellToolBase.cpp:238
 msgid "Font Size"
 msgstr "Қаріп өлшемі"
 
-#: ui/CellToolBase.cpp:241
+#: ui/CellToolBase.cpp:242
 msgid "Increase Font Size"
 msgstr "Қаріп өлшемін үлкейту"
 
-#: ui/CellToolBase.cpp:245
+#: ui/CellToolBase.cpp:246
 msgid "Decrease Font Size"
 msgstr "Қаріп өлшемін кішірейту"
 
-#: ui/CellToolBase.cpp:251
+#: ui/CellToolBase.cpp:252
 msgid "Text Color"
 msgstr "Мәтіннің түсі"
 
-#: ui/CellToolBase.cpp:252
+#: ui/CellToolBase.cpp:253
 #, fuzzy
 #| msgid "Set the background color"
 msgid "Set the text color"
 msgstr "Ая түсін орнату"
 
-#: ui/CellToolBase.cpp:259
+#: ui/CellToolBase.cpp:260
 msgid "Align Left"
 msgstr "Солға туралау"
 
-#: ui/CellToolBase.cpp:263
+#: ui/CellToolBase.cpp:264
 msgid "Left justify the cell contents"
 msgstr "Ұяшықтағыны сол жағына туралау"
 
-#: ui/CellToolBase.cpp:266
+#: ui/CellToolBase.cpp:267
 msgid "Align Center"
 msgstr "Ортаға туралау"
 
-#: ui/CellToolBase.cpp:270
+#: ui/CellToolBase.cpp:271
 msgid "Center the cell contents"
 msgstr "Ұяшықтағыны ортасына туралау"
 
-#: ui/CellToolBase.cpp:273
+#: ui/CellToolBase.cpp:274
 msgid "Align Right"
 msgstr "Оңға туралау"
 
-#: ui/CellToolBase.cpp:277
+#: ui/CellToolBase.cpp:278
 msgid "Right justify the cell contents"
 msgstr "Ұяшықтағыны оң жағына туралау"
 
-#: ui/CellToolBase.cpp:283
+#: ui/CellToolBase.cpp:284
 msgid "Align Top"
 msgstr "Жоғарға туралау"
 
-#: ui/CellToolBase.cpp:287
+#: ui/CellToolBase.cpp:288
 msgid "Align cell contents along the top of the cell"
 msgstr "Ұяшықтағыны жоғарына туралау"
 
-#: ui/CellToolBase.cpp:290
+#: ui/CellToolBase.cpp:291
 msgid "Align Middle"
 msgstr "Ортаға туралау"
 
-#: ui/CellToolBase.cpp:294
+#: ui/CellToolBase.cpp:295
 msgid "Align cell contents centered in the cell"
 msgstr "Ұяшықтағыны ортасына туралау"
 
-#: ui/CellToolBase.cpp:297
+#: ui/CellToolBase.cpp:298
 msgid "Align Bottom"
 msgstr "Төменге туралау"
 
-#: ui/CellToolBase.cpp:301
+#: ui/CellToolBase.cpp:302
 msgid "Align cell contents along the bottom of the cell"
 msgstr "Ұяшықтағыны төменіне туралау"
 
-#: ui/CellToolBase.cpp:306
+#: ui/CellToolBase.cpp:307
 msgid "Border Left"
 msgstr "Сол жақ шегі"
 
-#: ui/CellToolBase.cpp:310
+#: ui/CellToolBase.cpp:311
 msgid "Set a left border to the selected area"
 msgstr "Таңдалған аумақтың сол жақ шегін сызу"
 
-#: ui/CellToolBase.cpp:312
+#: ui/CellToolBase.cpp:313
 msgid "Border Right"
 msgstr "Оң жақ шегі"
 
-#: ui/CellToolBase.cpp:316
+#: ui/CellToolBase.cpp:317
 msgid "Set a right border to the selected area"
 msgstr "Таңдалған аумақтың оң жақ шегін сызу"
 
-#: ui/CellToolBase.cpp:318
+#: ui/CellToolBase.cpp:319
 msgid "Border Top"
 msgstr "Жоғарғы шегі"
 
-#: ui/CellToolBase.cpp:322
+#: ui/CellToolBase.cpp:323
 msgid "Set a top border to the selected area"
 msgstr "Таңдалған аумақтың жоғарғы шегін сызу"
 
-#: ui/CellToolBase.cpp:324
+#: ui/CellToolBase.cpp:325
 msgid "Border Bottom"
 msgstr "Астыңғы шегі"
 
-#: ui/CellToolBase.cpp:328
+#: ui/CellToolBase.cpp:329
 msgid "Set a bottom border to the selected area"
 msgstr "Таңдалған аумақтың астыңғы шегін сызу"
 
-#: ui/CellToolBase.cpp:330
+#: ui/CellToolBase.cpp:331
 msgid "All Borders"
 msgstr "Барлық шектері"
 
-#: ui/CellToolBase.cpp:334
+#: ui/CellToolBase.cpp:335
 msgid "Set a border around all cells in the selected area"
 msgstr "Таңдалған аумақтағы барлық ұяшықтарының айнала шегін сызу"
 
-#: ui/CellToolBase.cpp:336
+#: ui/CellToolBase.cpp:337
 msgid "No Borders"
 msgstr "Шектері сызылмасын"
 
-#: ui/CellToolBase.cpp:340
+#: ui/CellToolBase.cpp:341
 msgid "Remove all borders in the selected area"
 msgstr "Таңдалған аумақтың барлық сызылған шектерін өшіру"
 
-#: ui/CellToolBase.cpp:342
+#: ui/CellToolBase.cpp:343
 msgid "Border Outline"
 msgstr "Шегін айнала сызу"
 
-#: ui/CellToolBase.cpp:343
+#: ui/CellToolBase.cpp:344
 msgid "Outline"
 msgstr "Айнала сызық"
 
-#: ui/CellToolBase.cpp:346
+#: ui/CellToolBase.cpp:347
 msgid "Set a border to the outline of the selected area"
 msgstr "Таңдалған аумақтың айнала шегін сызу"
 
-#: ui/CellToolBase.cpp:350
+#: ui/CellToolBase.cpp:351
 msgid "Select a new border color"
 msgstr "Жаңа шегінің түсін таңдау"
 
-#: ui/CellToolBase.cpp:351
+#: ui/CellToolBase.cpp:352
 msgid "Border Color"
 msgstr "Шегінің түсі"
 
-#: ui/CellToolBase.cpp:358 ui/CellToolBase.cpp:1922
+#: ui/CellToolBase.cpp:359 ui/CellToolBase.cpp:1923
 msgid "Wrap Text"
 msgstr "Мәтінді тасымалдау"
 
-#: ui/CellToolBase.cpp:359
+#: ui/CellToolBase.cpp:360
 msgid "Wrap"
 msgstr "Тасымалдау"
 
-#: ui/CellToolBase.cpp:362
+#: ui/CellToolBase.cpp:363
 msgid "Make the cell text wrap onto multiple lines"
 msgstr "Ұяшықтағы мәтінді бірнеше жолға тасымалдау"
 
-#: ui/CellToolBase.cpp:364 ui/CellToolBase.cpp:1934
+#: ui/CellToolBase.cpp:365 ui/CellToolBase.cpp:1935
 msgid "Vertical Text"
 msgstr "Тігінен жазу"
 
-#: ui/CellToolBase.cpp:368
+#: ui/CellToolBase.cpp:369
 msgid "Print cell contents vertically"
 msgstr "Ұяшықтың мазмұнын тігінен жазу"
 
-#: ui/CellToolBase.cpp:370
+#: ui/CellToolBase.cpp:371
 msgid "Increase Indent"
 msgstr "Шегінісін үлкейту"
 
-#: ui/CellToolBase.cpp:373
+#: ui/CellToolBase.cpp:374
 msgid "Increase the indentation"
 msgstr "Шегінісін үлкейту"
 
-#: ui/CellToolBase.cpp:375
+#: ui/CellToolBase.cpp:376
 msgid "Decrease Indent"
 msgstr "Шегінісін азайту"
 
-#: ui/CellToolBase.cpp:378
+#: ui/CellToolBase.cpp:379
 msgid "Decrease the indentation"
 msgstr "Шегінісін азайту"
 
-#: ui/CellToolBase.cpp:380
+#: ui/CellToolBase.cpp:381
 msgid "Change Angle..."
 msgstr "Бұрышын өзгерту..."
 
-#: ui/CellToolBase.cpp:381
+#: ui/CellToolBase.cpp:382
 msgid "Angle"
 msgstr "Бұрыш"
 
-#: ui/CellToolBase.cpp:384
+#: ui/CellToolBase.cpp:385
 msgid "Change the angle that cell contents are printed"
 msgstr "Ұяшық мазмұны қисайтып жазылу бұрышы"
 
-#: ui/CellToolBase.cpp:388
+#: ui/CellToolBase.cpp:389
 msgid "Percent Format"
 msgstr "Пайыз пішімі"
 
-#: ui/CellToolBase.cpp:392
+#: ui/CellToolBase.cpp:393
 msgid "Set the cell formatting to look like a percentage"
 msgstr "Ұяшықты пайыз пішіміне келтіру"
 
-#: ui/CellToolBase.cpp:394
+#: ui/CellToolBase.cpp:395
 msgid "Money Format"
 msgstr "Ақша пішімі"
 
-#: ui/CellToolBase.cpp:398
+#: ui/CellToolBase.cpp:399
 msgid "Set the cell formatting to look like your local currency"
 msgstr "Ұяшықты жергілікті ақша пішіміне келтіру"
 
-#: ui/CellToolBase.cpp:403
+#: ui/CellToolBase.cpp:404
 msgid "Increase the decimal precision shown onscreen"
 msgstr "Үтірден кейнгі ондық бөлшек таңбалар санын үлкейту"
 
-#: ui/CellToolBase.cpp:408
+#: ui/CellToolBase.cpp:409
 msgid "Decrease the decimal precision shown onscreen"
 msgstr "Үтірден кейнгі ондық бөлшек таңбалар санын азайту"
 
-#: ui/CellToolBase.cpp:412
+#: ui/CellToolBase.cpp:413
 msgid "Upper Case"
 msgstr "Үлкен әріпке ауыстыру"
 
-#: ui/CellToolBase.cpp:413
+#: ui/CellToolBase.cpp:414
 msgid "Upper"
 msgstr "Үлкен қылу"
 
-#: ui/CellToolBase.cpp:416
+#: ui/CellToolBase.cpp:417
 msgid "Convert all letters to upper case"
 msgstr "Барлық әріптерін үлкен қылу"
 
-#: ui/CellToolBase.cpp:418
+#: ui/CellToolBase.cpp:419
 msgid "Lower Case"
 msgstr "Кіші әріпке ауыстыру"
 
-#: ui/CellToolBase.cpp:419
+#: ui/CellToolBase.cpp:420
 msgid "Lower"
 msgstr "Кіші қылу"
 
-#: ui/CellToolBase.cpp:422
+#: ui/CellToolBase.cpp:423
 msgid "Convert all letters to lower case"
 msgstr "Барлық әріптерін кіші қылу"
 
-#: ui/CellToolBase.cpp:424
+#: ui/CellToolBase.cpp:425
 msgid "Convert First Letter to Upper Case"
 msgstr "Бірінші әрібін үлкен қылу"
 
-#: ui/CellToolBase.cpp:425
+#: ui/CellToolBase.cpp:426
 msgid "First Letter Upper"
 msgstr "Алғашқы әрпі үлкен"
 
-#: ui/CellToolBase.cpp:428
+#: ui/CellToolBase.cpp:429
 msgid "Capitalize the first letter"
 msgstr "Бірінші әрібін үлкен қылу"
 
-#: ui/CellToolBase.cpp:432
+#: ui/CellToolBase.cpp:433
 msgid "Set the background color"
 msgstr "Ая түсін орнату"
 
-#: ui/CellToolBase.cpp:433
+#: ui/CellToolBase.cpp:434
 msgid "Background Color"
 msgstr "Ая түсі"
 
-#: ui/CellToolBase.cpp:442
+#: ui/CellToolBase.cpp:443
 msgid "Merge the selected region"
 msgstr "Таңдалған аумақты біріктіру"
 
-#: ui/CellToolBase.cpp:445
+#: ui/CellToolBase.cpp:446
 #, fuzzy
 #| msgid "Merge the selected Region.horizontally"
 msgid "Merge the selected region horizontally"
 msgstr "Таңдалған аумақты жатығынан біріктіру"
 
-#: ui/CellToolBase.cpp:450
+#: ui/CellToolBase.cpp:451
 msgid "Merge the selected region vertically"
 msgstr "Таңдалған аумақты тігінен біріктіру"
 
-#: ui/CellToolBase.cpp:455
+#: ui/CellToolBase.cpp:456
 msgid "Unmerge the selected region"
 msgstr "Таңдалған аумақтағы біріктірілгендерді ыдырату"
 
-#: ui/CellToolBase.cpp:461
+#: ui/CellToolBase.cpp:462
 msgid "Resize Column..."
 msgstr "Баған өлшемін өзгерту..."
 
-#: ui/CellToolBase.cpp:464
+#: ui/CellToolBase.cpp:465
 msgid "Change the width of a column"
 msgstr "Бағанның енін өзгерту"
 
-#: ui/CellToolBase.cpp:468
+#: ui/CellToolBase.cpp:469
 msgid "Inserts a new column into the spreadsheet"
 msgstr "Кестеге жаңа баған ендіру"
 
-#: ui/CellToolBase.cpp:474
+#: ui/CellToolBase.cpp:475
 msgid "Removes a column from the spreadsheet"
 msgstr "Кестеден бағанды өшіру"
 
-#: ui/CellToolBase.cpp:481
+#: ui/CellToolBase.cpp:482
 msgid "Hide the column from this"
 msgstr "Мынадан бағанды жасыру"
 
-#: ui/CellToolBase.cpp:483
+#: ui/CellToolBase.cpp:484
 msgid "Show Columns..."
 msgstr "Бағандарды көрсету..."
 
-#: ui/CellToolBase.cpp:486
+#: ui/CellToolBase.cpp:487
 msgid "Show hidden columns"
 msgstr "Жасырылған бағандарды көрсету"
 
-#: ui/CellToolBase.cpp:488
+#: ui/CellToolBase.cpp:489
 msgid "Equalize Column"
 msgstr "Бағандарды теңестіру"
 
-#: ui/CellToolBase.cpp:491
+#: ui/CellToolBase.cpp:492
 msgid "Resizes selected columns to be the same size"
 msgstr "Таңдалған бағандарды бір өлшемге келтіру"
 
-#: ui/CellToolBase.cpp:496
+#: ui/CellToolBase.cpp:497
 msgid "Show hidden columns in the selection"
 msgstr "Таңдағандағы жасырылған бағандарын көрсету"
 
-#: ui/CellToolBase.cpp:499
+#: ui/CellToolBase.cpp:500
 msgid "Resize Row..."
 msgstr "Жол өлшемін өзгерту..."
 
-#: ui/CellToolBase.cpp:502
+#: ui/CellToolBase.cpp:503
 msgid "Change the height of a row"
 msgstr "Жолдың биіктігін өзгерту"
 
-#: ui/CellToolBase.cpp:504 ui/CellToolBase.cpp:510
+#: ui/CellToolBase.cpp:505 ui/CellToolBase.cpp:511
 msgid "Rows"
 msgstr "Жолдар"
 
-#: ui/CellToolBase.cpp:506
+#: ui/CellToolBase.cpp:507
 msgid "Inserts a new row into the spreadsheet"
 msgstr "Кестеге жаңа жол ендіру"
 
-#: ui/CellToolBase.cpp:512
+#: ui/CellToolBase.cpp:513
 msgid "Removes a row from the spreadsheet"
 msgstr "Кестеден жолды өшіру"
 
-#: ui/CellToolBase.cpp:519
+#: ui/CellToolBase.cpp:520
 msgid "Hide a row from this"
 msgstr "Мынадан жолды жасыру"
 
-#: ui/CellToolBase.cpp:521
+#: ui/CellToolBase.cpp:522
 msgid "Show Rows..."
 msgstr "Жолдарды көрсету..."
 
-#: ui/CellToolBase.cpp:524
+#: ui/CellToolBase.cpp:525
 msgid "Show hidden rows"
 msgstr "Жасырылған жолдарды көрсету"
 
-#: ui/CellToolBase.cpp:526
+#: ui/CellToolBase.cpp:527
 msgid "Equalize Row"
 msgstr "Жолдарды теңестіру"
 
-#: ui/CellToolBase.cpp:529
+#: ui/CellToolBase.cpp:530
 msgid "Resizes selected rows to be the same size"
 msgstr "Таңдалған жолдарды бір өлшемге келтіру"
 
-#: ui/CellToolBase.cpp:535
+#: ui/CellToolBase.cpp:536
 msgid "Show hidden rows in the selection"
 msgstr "Таңдағандағы жасырылған жолдарын көрсету"
 
-#: ui/CellToolBase.cpp:537
+#: ui/CellToolBase.cpp:538
 msgid "Adjust Row && Column"
 msgstr "Жол && Бағанды шақтау"
 
-#: ui/CellToolBase.cpp:540
+#: ui/CellToolBase.cpp:541
 msgid "Adjusts row/column size so that the contents will fit"
 msgstr "Жол/бағанның өлшемін мазмұнына шақтау"
 
-#: ui/CellToolBase.cpp:544 ui/CellToolBase.cpp:550
+#: ui/CellToolBase.cpp:545 ui/CellToolBase.cpp:551
 msgid "Cells..."
 msgstr "Ұяшықтар..."
 
-#: ui/CellToolBase.cpp:545 ui/CellToolBase_p.cpp:1267
+#: ui/CellToolBase.cpp:546 ui/CellToolBase_p.cpp:1267
 msgid "Insert Cells..."
 msgstr "Ұяшықтарды ендіру..."
 
-#: ui/CellToolBase.cpp:546
+#: ui/CellToolBase.cpp:547
 msgid "Insert a blank cell into the spreadsheet"
 msgstr "Кестеге таза ұяшықты ендіру"
 
-#: ui/CellToolBase.cpp:551
+#: ui/CellToolBase.cpp:552
 msgid "Remove Cells..."
 msgstr "Ұяшықтарды кетіру..."
 
-#: ui/CellToolBase.cpp:552
+#: ui/CellToolBase.cpp:553
 msgid "Removes the cells from the spreadsheet"
 msgstr "Ұяшықтарды кесте бетінен кетіру"
 
-#: ui/CellToolBase.cpp:559
+#: ui/CellToolBase.cpp:560
 msgid "Clear All"
 msgstr "Барлығын тазалау"
 
-#: ui/CellToolBase.cpp:560
+#: ui/CellToolBase.cpp:561
 msgid "Clear all contents and formatting of the current cell"
 msgstr "Назардағы ұяшықтың бүкіл мазмұны мен пішімдеуін кетіру"
 
-#: ui/CellToolBase.cpp:564
+#: ui/CellToolBase.cpp:565
 msgid "Contents"
 msgstr "Мазмұны"
 
-#: ui/CellToolBase.cpp:565
+#: ui/CellToolBase.cpp:566
 msgid "Clear Contents"
 msgstr "Мазмұнын тазалау"
 
-#: ui/CellToolBase.cpp:566
+#: ui/CellToolBase.cpp:567
 msgid "Remove the contents of the current cell"
 msgstr "Назардағы ұяшықтың мазмұнын өшіру"
 
-#: ui/CellToolBase.cpp:570
+#: ui/CellToolBase.cpp:571
 msgid "Comment..."
 msgstr "Түсініктеме..."
 
-#: ui/CellToolBase.cpp:571
+#: ui/CellToolBase.cpp:572
 msgid "Edit a comment for this cell"
 msgstr "Осы ұяшқтың түсініктемесін өзгерту"
 
-#: ui/CellToolBase.cpp:577
+#: ui/CellToolBase.cpp:578
 msgid "Remove this cell's comment"
 msgstr "Осы ұяшқтың түсініктемесін өшіру"
 
-#: ui/CellToolBase.cpp:581
+#: ui/CellToolBase.cpp:582
 msgid "Conditional Styles..."
 msgstr "Шартты стильдер..."
 
-#: ui/CellToolBase.cpp:582
+#: ui/CellToolBase.cpp:583
 msgid "Set cell style based on certain conditions"
 msgstr "Шарттарға тәуелді ұяшық стилін орнату"
 
-#: ui/CellToolBase.cpp:587
+#: ui/CellToolBase.cpp:588
 msgid "Remove Conditional Styles"
 msgstr "Шартты стильдерін өшіру"
 
-#: ui/CellToolBase.cpp:588
+#: ui/CellToolBase.cpp:589
 msgid "Remove the conditional cell styles"
 msgstr "Шартты ұяшық стильдерін өшіру"
 
-#: ui/CellToolBase.cpp:592
+#: ui/CellToolBase.cpp:593
 msgid "&Link..."
 msgstr "&Сілтеме..."
 
-#: ui/CellToolBase.cpp:595
+#: ui/CellToolBase.cpp:596
 msgid "Insert an Internet hyperlink"
 msgstr "Интернет гиперсілтемені ендіру"
 
-#: ui/CellToolBase.cpp:597
+#: ui/CellToolBase.cpp:598
 msgid "Link"
 msgstr "Сілтемесі"
 
-#: ui/CellToolBase.cpp:599
+#: ui/CellToolBase.cpp:600
 msgid "Remove a link"
 msgstr "Сілтемені өшіру"
 
-#: ui/CellToolBase.cpp:603
+#: ui/CellToolBase.cpp:604
 msgid "Validity..."
 msgstr "Тексеріс..."
 
-#: ui/CellToolBase.cpp:604
+#: ui/CellToolBase.cpp:605
 msgid "Set tests to confirm cell data is valid"
 msgstr "Ұяшық дерегінің дұрыстығын тексеруін орнату"
 
-#: ui/CellToolBase.cpp:609
+#: ui/CellToolBase.cpp:610
 msgid "Remove Validity"
 msgstr "Тексерісін өшіру"
 
-#: ui/CellToolBase.cpp:610
+#: ui/CellToolBase.cpp:611
 msgid "Remove the validity tests on this cell"
 msgstr "Ұяшық дерегінің дұрыстығын тексеруін өшіру"
 
-#: ui/CellToolBase.cpp:616
+#: ui/CellToolBase.cpp:617
 msgid "&Sort..."
 msgstr "&Реттеу..."
 
-#: ui/CellToolBase.cpp:619
+#: ui/CellToolBase.cpp:620
 msgid "Sort a group of cells"
 msgstr "Ұяшық тобын реттеу"
 
-#: ui/CellToolBase.cpp:621
+#: ui/CellToolBase.cpp:622
 msgid "Sort &Decreasing"
 msgstr "&Кему ретімен"
 
-#: ui/CellToolBase.cpp:624
+#: ui/CellToolBase.cpp:625
 msgid "Sort a group of cells in decreasing(last to first) order"
 msgstr "Ұяшық тобын кему (соңғысы басында) тәртібімен реттеу"
 
-#: ui/CellToolBase.cpp:626
+#: ui/CellToolBase.cpp:627
 msgid "Sort &Increasing"
 msgstr "Ө&су ретімен"
 
-#: ui/CellToolBase.cpp:629
+#: ui/CellToolBase.cpp:630
 msgid "Sort a group of cells in ascending(first to last) order"
 msgstr "Ұяшық тобын өсу (біріншісі басында) тәртібімен реттеу"
 
-#: ui/CellToolBase.cpp:631
+#: ui/CellToolBase.cpp:632
 msgid "&Auto-Filter"
 msgstr "&Авто-сүзгі"
 
-#: ui/CellToolBase.cpp:634
+#: ui/CellToolBase.cpp:635
 msgid "Add an automatic filter to a cell range"
 msgstr "Ұяшық аумағына авто-сүзгіні қосу"
 
-#: ui/CellToolBase.cpp:638
+#: ui/CellToolBase.cpp:639
 msgid "&Left"
 msgstr "&Солға"
 
-#: ui/CellToolBase.cpp:642
+#: ui/CellToolBase.cpp:643
 msgid "&Right"
 msgstr "&Оңға"
 
-#: ui/CellToolBase.cpp:646
+#: ui/CellToolBase.cpp:647
 msgid "&Up"
 msgstr "&Жоғарға"
 
-#: ui/CellToolBase.cpp:650
+#: ui/CellToolBase.cpp:651
 msgid "&Down"
 msgstr "&Төменге"
 
-#: ui/CellToolBase.cpp:654
+#: ui/CellToolBase.cpp:655
 msgid "Autosum"
 msgstr "Автоқосынды"
 
-#: ui/CellToolBase.cpp:657
+#: ui/CellToolBase.cpp:658
 msgid "Insert the 'sum' function"
 msgstr "'sum' функциясын ендіру"
 
-#: ui/CellToolBase.cpp:661
+#: ui/CellToolBase.cpp:662
 msgid "&Series..."
 msgstr "&Тізбектер..."
 
-#: ui/CellToolBase.cpp:664
+#: ui/CellToolBase.cpp:665
 msgid "Insert a series"
 msgstr "Тізбектерді ендіру"
 
-#: ui/CellToolBase.cpp:666
+#: ui/CellToolBase.cpp:667
 msgid "&Function..."
 msgstr "&Функция..."
 
-#: ui/CellToolBase.cpp:669
+#: ui/CellToolBase.cpp:670
 msgid "Insert math expression"
 msgstr "Математикалық өрнегін ендіру"
 
-#: ui/CellToolBase.cpp:671
+#: ui/CellToolBase.cpp:672
 msgid "S&pecial Character..."
 msgstr "А&рнаулы таңба..."
 
-#: ui/CellToolBase.cpp:673
+#: ui/CellToolBase.cpp:674
 msgid "Insert one or more symbols or letters not found on the keyboard"
 msgstr "Пернетақтада жоқ таңба не әріптерді ендіру"
 
-#: ui/CellToolBase.cpp:677
+#: ui/CellToolBase.cpp:678
 msgid "From &Database..."
 msgstr "&Деректер қорынан..."
 
-#: ui/CellToolBase.cpp:681
+#: ui/CellToolBase.cpp:682
 msgid "Insert data from a SQL database"
 msgstr "SQL деректер қорынан деректерді ендіру"
 
-#: ui/CellToolBase.cpp:684
+#: ui/CellToolBase.cpp:685
 msgid "From &Text File..."
 msgstr "&Мәтін файлынан..."
 
-#: ui/CellToolBase.cpp:685
+#: ui/CellToolBase.cpp:686
 msgid "Text File"
 msgstr "Мәтін файлы"
 
-#: ui/CellToolBase.cpp:688
+#: ui/CellToolBase.cpp:689
 msgid "Insert data from a text file to the current cursor position/selection"
 msgstr "Мәтін файл деректерін меңзер көрсеткен/таңдалған орына ендіру"
 
-#: ui/CellToolBase.cpp:690
+#: ui/CellToolBase.cpp:691
 msgid "From &Clipboard..."
 msgstr "Алмасу &буферінен..."
 
-#: ui/CellToolBase.cpp:691
+#: ui/CellToolBase.cpp:692
 msgid "Clipboard"
 msgstr "Алмасу буфері"
 
-#: ui/CellToolBase.cpp:694
+#: ui/CellToolBase.cpp:695
 msgid ""
 "Insert CSV data from the clipboard to the current cursor position/selection"
 msgstr ""
 "CSV деректерін алмасу буферінен меңзер көрсеткен/таңдалған орына ендіру"
 
-#: ui/CellToolBase.cpp:696
+#: ui/CellToolBase.cpp:697
 msgid "&Text to Columns..."
 msgstr "&Мәтінді бағандарға..."
 
-#: ui/CellToolBase.cpp:699
+#: ui/CellToolBase.cpp:700
 msgid "Expand the content of cells to multiple columns"
 msgstr "Ұяшықтардың мазмұнын бірнеше бағандарға созу"
 
-#: ui/CellToolBase.cpp:701
+#: ui/CellToolBase.cpp:702
 msgid "Custom Lists..."
 msgstr "Өзінің тізімдері..."
 
-#: ui/CellToolBase.cpp:704
+#: ui/CellToolBase.cpp:705
 msgid "Create custom lists for sorting or autofill"
 msgstr "Реттеу не автотолтыру үшін өзінің тізімдерін құру"
 
-#: ui/CellToolBase.cpp:706
+#: ui/CellToolBase.cpp:707
 msgid "&Consolidate..."
 msgstr "&Біріктіру..."
 
-#: ui/CellToolBase.cpp:709
+#: ui/CellToolBase.cpp:710
 msgid "Create a region of summary data from a group of similar regions"
 msgstr "Бірнеше ұқсас аумақтарды қосындысын есептейтін аумақ қылу"
 
-#: ui/CellToolBase.cpp:711
+#: ui/CellToolBase.cpp:712
 msgid "&Goal Seek..."
 msgstr "&Керегін іздеу..."
 
-#: ui/CellToolBase.cpp:714
+#: ui/CellToolBase.cpp:715
 msgid "Repeating calculation to find a specific value"
 msgstr "Керек мәнін табу үшін есептеуді қайталау"
 
-#: ui/CellToolBase.cpp:716
+#: ui/CellToolBase.cpp:717
 msgid "&Subtotals..."
 msgstr "Қ&ортындылар..."
 
-#: ui/CellToolBase.cpp:719
+#: ui/CellToolBase.cpp:720
 msgid "Create different kind of subtotals to a list or database"
 msgstr "Тізім не деректер қоры үшін түрлі қортындыларды құру"
 
-#: ui/CellToolBase.cpp:721
+#: ui/CellToolBase.cpp:722
 msgid "Area Name..."
 msgstr "Аумақтың атауы..."
 
-#: ui/CellToolBase.cpp:724
+#: ui/CellToolBase.cpp:725
 msgid "Set a name for a region of the spreadsheet"
 msgstr "Кесте бетіндегі аумағының атауын беріңіз"
 
-#: ui/CellToolBase.cpp:726
+#: ui/CellToolBase.cpp:727
 msgid "Named Areas..."
 msgstr "Аталған аумақтар..."
 
-#: ui/CellToolBase.cpp:730
+#: ui/CellToolBase.cpp:731
 msgid "Edit or select named areas"
 msgstr "Аталған аумақты таңдау не өзгерту"
 
-#: ui/CellToolBase.cpp:734
+#: ui/CellToolBase.cpp:735
 msgid "Formula Selection"
 msgstr "Формуланы таңдау"
 
-#: ui/CellToolBase.cpp:736
+#: ui/CellToolBase.cpp:737
 msgid "Insert a function"
 msgstr "Функцияны ендіру"
 
-#: ui/CellToolBase.cpp:744 ui/CellToolBase.cpp:2807
+#: ui/CellToolBase.cpp:745 ui/CellToolBase.cpp:2808
 msgid "Others..."
 msgstr "Басқа..."
 
-#: ui/CellToolBase.cpp:752
+#: ui/CellToolBase.cpp:753
 msgid "Modify Cell"
 msgstr "Ұяшықты өзгерту"
 
-#: ui/CellToolBase.cpp:756
+#: ui/CellToolBase.cpp:757
 msgid "Edit the highlighted cell"
 msgstr "Бояуланған ұяшықты өңдеу"
 
-#: ui/CellToolBase.cpp:759
+#: ui/CellToolBase.cpp:760
 msgid "Move the cell object to the clipboard"
 msgstr "Ұяшықтағыны алмасу буферіне алу"
 
-#: ui/CellToolBase.cpp:763
+#: ui/CellToolBase.cpp:764
 msgid "Copy the cell object to the clipboard"
 msgstr "Ұяшықтағыны алмасу буферіне көшірмелеу"
 
-#: ui/CellToolBase.cpp:767
+#: ui/CellToolBase.cpp:768
 msgid "Paste the contents of the clipboard at the cursor"
 msgstr "Алмасу буферіндегіні меңзер көрсеткенге орналастыру"
 
-#: ui/CellToolBase.cpp:770
+#: ui/CellToolBase.cpp:771
 msgid "Special Paste..."
 msgstr "Арнаулы орналастыру..."
 
-#: ui/CellToolBase.cpp:773
+#: ui/CellToolBase.cpp:774
 msgid "Paste the contents of the clipboard with special options"
 msgstr "Алмасу буферіндегіні түрлі әдістерімен орналастыру"
 
-#: ui/CellToolBase.cpp:775
+#: ui/CellToolBase.cpp:776
 msgid "Paste with Insertion"
 msgstr "Ығыстырып орналастыру"
 
-#: ui/CellToolBase.cpp:778
+#: ui/CellToolBase.cpp:779
 msgid "Inserts a cell from the clipboard into the spreadsheet"
 msgstr "Ұяшықты алмасу буферінен кестеге ендіру"
 
-#: ui/CellToolBase.cpp:781
+#: ui/CellToolBase.cpp:782
 msgid "Selects all cells in the current sheet"
 msgstr "Назардағы беттің барлық ұяшықтарын таңдау"
 
-#: ui/CellToolBase.cpp:798
+#: ui/CellToolBase.cpp:799
 msgid "Goto Cell..."
 msgstr "Ұяшыққа өту..."
 
-#: ui/CellToolBase.cpp:799
+#: ui/CellToolBase.cpp:800
 msgid "Goto"
 msgstr "Өту"
 
-#: ui/CellToolBase.cpp:803
+#: ui/CellToolBase.cpp:804
 msgid "Move to a particular cell"
 msgstr "Керек бір ұяшыққа ауысу"
 
-#: ui/CellToolBase.cpp:806
+#: ui/CellToolBase.cpp:807
 msgid "Check the spelling"
 msgstr "Емлесін тексеру"
 
-#: ui/CellToolBase.cpp:809
+#: ui/CellToolBase.cpp:810
 msgid "Run Inspector..."
 msgstr "Инспекторды жегу..."
 
-#: ui/CellToolBase.cpp:815
+#: ui/CellToolBase.cpp:816
 msgid "Show QTableView..."
 msgstr "QTableView-ді көрсету..."
 
-#: ui/CellToolBase.cpp:821
+#: ui/CellToolBase.cpp:822
 msgid "Auto-Format..."
 msgstr "Авто-Пішім..."
 
-#: ui/CellToolBase.cpp:824
+#: ui/CellToolBase.cpp:825
 msgid "Set the worksheet formatting"
 msgstr "Беттің пішімін орнату"
 
-#: ui/CellToolBase.cpp:826
+#: ui/CellToolBase.cpp:827
 msgid "Document Settings..."
 msgstr "Құжаттың параметрлері..."
 
-#: ui/CellToolBase.cpp:829
+#: ui/CellToolBase.cpp:830
 msgid "Show document settings dialog"
 msgstr "Құжаттың параметрлер диалогын шығару"
 
-#: ui/CellToolBase.cpp:831
+#: ui/CellToolBase.cpp:832
 #, fuzzy
 #| msgid "Remove Columns"
 msgid "Break Before Column"
 msgstr "Бағанды жою"
 
-#: ui/CellToolBase.cpp:834
+#: ui/CellToolBase.cpp:835
 #, fuzzy
 #| msgid "Column Header"
 msgid "Column Break"
 msgstr "Бағанның айдары"
 
-#: ui/CellToolBase.cpp:835
+#: ui/CellToolBase.cpp:836
 msgid "Set a manual page break before the column"
 msgstr ""
 
-#: ui/CellToolBase.cpp:837
+#: ui/CellToolBase.cpp:838
 msgid "Break Before Row"
 msgstr ""
 
-#: ui/CellToolBase.cpp:840
+#: ui/CellToolBase.cpp:841
 #, fuzzy
 #| msgid "Row Header"
 msgid "Row Break"
 msgstr "Жолдың айдар"
 
-#: ui/CellToolBase.cpp:841
+#: ui/CellToolBase.cpp:842
 msgid "Set a manual page break before the row"
 msgstr ""
 
-#: ui/CellToolBase.cpp:845
+#: ui/CellToolBase.cpp:846
 msgid "Permute reference fixation"
 msgstr ""
 
-#: ui/CellToolBase.cpp:849
+#: ui/CellToolBase.cpp:850
 #, fuzzy
 #| msgid "Protection"
 msgid "Permute fixation"
 msgstr "Қорғау"
 
-#: ui/CellToolBase.cpp:850
+#: ui/CellToolBase.cpp:851
 #, fuzzy
 #| msgid "Paste the contents of the clipboard at the cursor"
 msgid "Permute the fixation of the reference at the text cursor"
 msgstr "Алмасу буферіндегіні меңзер көрсеткенге орналастыру"
 
-#: ui/CellToolBase.cpp:1594
+#: ui/CellToolBase.cpp:1595
 msgid "Create Style From Cell"
 msgstr "Ұяшығынан стилін жасау"
 
-#: ui/CellToolBase.cpp:1603
+#: ui/CellToolBase.cpp:1604
 msgid "The style name cannot be empty."
 msgstr "Стилінің атауы бос бола алмайды."
 
-#: ui/CellToolBase.cpp:1629 ui/CellToolBase.cpp:1643 ui/CellToolBase.cpp:1657
-#: ui/CellToolBase.cpp:1672 ui/CellToolBase.cpp:1686 ui/CellToolBase.cpp:1704
-#: ui/CellToolBase.cpp:1725 ui/CellToolBase.cpp:1738
+#: ui/CellToolBase.cpp:1630 ui/CellToolBase.cpp:1644 ui/CellToolBase.cpp:1658
+#: ui/CellToolBase.cpp:1673 ui/CellToolBase.cpp:1687 ui/CellToolBase.cpp:1705
+#: ui/CellToolBase.cpp:1726 ui/CellToolBase.cpp:1739
 msgid "Change Font"
 msgstr "Қаріпті ауыстыру"
 
-#: ui/CellToolBase.cpp:1748
+#: ui/CellToolBase.cpp:1749
 msgid "Change Text Color"
 msgstr "Мәтіннің түсін өзгерту"
 
-#: ui/CellToolBase.cpp:1758 ui/CellToolBase.cpp:1768 ui/CellToolBase.cpp:1778
+#: ui/CellToolBase.cpp:1759 ui/CellToolBase.cpp:1769 ui/CellToolBase.cpp:1779
 msgid "Change Horizontal Alignment"
 msgstr "Көлденең туралауын өзгерту"
 
-#: ui/CellToolBase.cpp:1788 ui/CellToolBase.cpp:1798 ui/CellToolBase.cpp:1808
+#: ui/CellToolBase.cpp:1789 ui/CellToolBase.cpp:1799 ui/CellToolBase.cpp:1809
 msgid "Change Vertical Alignment"
 msgstr "Тігінен туралауын өзгерту"
 
-#: ui/CellToolBase.cpp:1819 ui/CellToolBase.cpp:1833 ui/CellToolBase.cpp:1847
-#: ui/CellToolBase.cpp:1858 ui/CellToolBase.cpp:1869 ui/CellToolBase.cpp:1884
-#: ui/CellToolBase.cpp:1900 ui/CellToolBase_p.cpp:776
+#: ui/CellToolBase.cpp:1820 ui/CellToolBase.cpp:1834 ui/CellToolBase.cpp:1848
+#: ui/CellToolBase.cpp:1859 ui/CellToolBase.cpp:1870 ui/CellToolBase.cpp:1885
+#: ui/CellToolBase.cpp:1901 ui/CellToolBase_p.cpp:776
 msgid "Change Border"
 msgstr "Шегін өзгерту"
 
-#: ui/CellToolBase.cpp:1971
+#: ui/CellToolBase.cpp:1972
 msgid "Format Percent"
 msgstr "Пайыздық пішімі"
 
-#: ui/CellToolBase.cpp:1981
+#: ui/CellToolBase.cpp:1982
 msgid "Format Money"
 msgstr "Ақшалық пішімі"
 
-#: ui/CellToolBase.cpp:2011
+#: ui/CellToolBase.cpp:2012
 msgid "Switch to uppercase"
 msgstr "Үлкен әріпке ауысу"
 
-#: ui/CellToolBase.cpp:2021
+#: ui/CellToolBase.cpp:2022
 msgid "Switch to lowercase"
 msgstr "Кіші әріпке ауысу"
 
-#: ui/CellToolBase.cpp:2031
+#: ui/CellToolBase.cpp:2032
 msgid "First letter uppercase"
 msgstr "Алғашқы әріп үлкен"
 
-#: ui/CellToolBase.cpp:2041
+#: ui/CellToolBase.cpp:2042
 msgid "Change Background Color"
 msgstr "Аясының түсін өзгерту"
 
-#: ui/CellToolBase.cpp:2360
+#: ui/CellToolBase.cpp:2361
 msgid "Clear Text"
 msgstr "Мәтінді тазалау"
 
-#: ui/CellToolBase.cpp:2420
+#: ui/CellToolBase.cpp:2421
 msgid "Edit Link"
 msgstr "Сілтемені өңдеу"
 
-#: ui/CellToolBase.cpp:2474 ui/CellToolBase.cpp:2485 ui/CellToolBase.cpp:2507
-#: ui/CellToolBase.cpp:2785
+#: ui/CellToolBase.cpp:2475 ui/CellToolBase.cpp:2486 ui/CellToolBase.cpp:2508
+#: ui/CellToolBase.cpp:2786
 msgid "You must select multiple cells."
 msgstr "Бірнеше ұяшықты таңдау керек."
 
-#: ui/CellToolBase.cpp:2711
+#: ui/CellToolBase.cpp:2712
 msgid ""
 "No database drivers available.  To use this feature you need to install the "
 "necessary Qt 3 database drivers."
@@ -20387,11 +20387,11 @@ msgstr ""
 "Деректер қорларының драйверлері жоқ.  Бұны қолдану үшін қажетті Qt 3 "
 "деректер қорларының драйверлерін орнату керек."
 
-#: ui/CellToolBase.cpp:2853
+#: ui/CellToolBase.cpp:2854
 msgid "Cut"
 msgstr "Қиып алу"
 
-#: ui/CellToolBase.cpp:3249
+#: ui/CellToolBase.cpp:3250
 msgid "Replace"
 msgstr "Алмастыру"
 
