@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-11 06:03+0200\n"
+"POT-Creation-Date: 2010-09-24 06:05+0200\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -173,7 +173,7 @@ msgstr "Керек көлем жиналмады: Керегі: %1 бары: %2"
 msgid "Resource %1 available from %2 to %3"
 msgstr "%1 ресурсы %2 - %3 аралығында қол жеткізеді"
 
-#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:427
+#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:435
 #, fuzzy
 #| msgid "Account:"
 msgid "Account"
@@ -381,8 +381,8 @@ msgstr "Жұмыстың ұзақтығын жоспарлауы болмады.
 #: models/kptnodeitemmodel.cpp:643 models/kptnodeitemmodel.cpp:649
 #: models/kptnodeitemmodel.cpp:659 models/kpttreecombobox.cpp:124
 #: models/kptresourcemodel.cpp:189 models/kptresourcemodel.cpp:221
-#: models/kptresourcemodel.cpp:334 models/kptresourcemodel.cpp:338
-#: models/kptresourcemodel.cpp:347 models/kptschedulemodel.cpp:458
+#: models/kptresourcemodel.cpp:342 models/kptresourcemodel.cpp:346
+#: models/kptresourcemodel.cpp:355 models/kptschedulemodel.cpp:458
 #: models/kptschedulemodel.cpp:460 models/kptresourceallocationmodel.cpp:743
 #: ui/kpttaskcostpanel.cpp:49 ui/kptpertresult.cpp:138
 #: ui/kptpertresult.cpp:489 ui/kpttaskgeneralpanel.cpp:70
@@ -1845,7 +1845,7 @@ msgstr "Негізгі жобаны өзгерту"
 msgid "Resources"
 msgstr "&Ресурстар"
 
-#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1263
+#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1271
 #, fuzzy
 #| msgid "Add Resource..."
 msgid "Add resource"
@@ -2008,7 +2008,7 @@ msgstr "Күнтізбені өзгерту"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptcalendarmodel.cpp:419 models/kptaccountsmodel.cpp:122
-#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:417
+#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:425
 #: models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
 #: models/kptresourceappointmentsmodel.cpp:1484
@@ -2082,7 +2082,7 @@ msgstr "Еншілес"
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptrelationmodel.cpp:148 models/kptdocumentmodel.cpp:172
-#: models/kptresourcemodel.cpp:418
+#: models/kptresourcemodel.cpp:426
 #: models/kptresourceappointmentsmodel.cpp:1485
 #: models/kptresourceallocationmodel.cpp:333 rc.cpp:749
 msgid "Type"
@@ -2953,97 +2953,113 @@ msgctxt "@info:tooltip 1=calendar name"
 msgid "Using default calendar: %1"
 msgstr "Таңдалған есептерін өшіру"
 
-#: models/kptresourcemodel.cpp:267
+#: models/kptresourcemodel.cpp:268
 #, fuzzy, kde-format
 #| msgid "Available:"
+msgctxt "infor:tooltip"
 msgid "Available from: %1"
 msgstr "Қол жетерлігі:"
 
-#: models/kptresourcemodel.cpp:285
+#: models/kptresourcemodel.cpp:270
+#, fuzzy, kde-format
+#| msgid "Can start project later than time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target start time: %1"
+msgstr "Жобаны келесі уақытынан кейін бастауға болады : %1"
+
+#: models/kptresourcemodel.cpp:290
 #, fuzzy, kde-format
 #| msgid "Available:"
+msgctxt "infor:tooltip"
 msgid "Available until: %1"
 msgstr "Қол жетерлігі:"
 
-#: models/kptresourcemodel.cpp:303
+#: models/kptresourcemodel.cpp:292
+#, fuzzy, kde-format
+#| msgid "Must start project early in order to finish in time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target finish time: %1"
+msgstr "Келесіде аяқатау үшін жобаны ертерек бастау керек: %1"
+
+#: models/kptresourcemodel.cpp:311
 #, kde-format
 msgid "Cost per hour, normal time: %1"
 msgstr "Жұмыс уақытындағы сағаттық мөлшерлемесі: %1"
 
-#: models/kptresourcemodel.cpp:321
+#: models/kptresourcemodel.cpp:329
 #, kde-format
 msgid "Cost per hour, overtime: %1"
 msgstr "Жұмыстан тыс уақытындағы сағаттық мөлшерлемесі: %1"
 
-#: models/kptresourcemodel.cpp:338
+#: models/kptresourcemodel.cpp:346
 #, fuzzy, kde-format
 #| msgid "Account:"
 msgid "Account: %1"
 msgstr "Есебі:"
 
-#: models/kptresourcemodel.cpp:419
+#: models/kptresourcemodel.cpp:427
 #, fuzzy
 #| msgid "Initials:"
 msgid "Initials"
 msgstr "Инициалдары:"
 
-#: models/kptresourcemodel.cpp:420
+#: models/kptresourcemodel.cpp:428
 msgid "Email"
 msgstr "Эл.поштасы"
 
-#: models/kptresourcemodel.cpp:421
+#: models/kptresourcemodel.cpp:429
 #, fuzzy
 #| msgid "Add Calendar"
 msgid "Calendar"
 msgstr "Күнтізбені қосу"
 
-#: models/kptresourcemodel.cpp:422
+#: models/kptresourcemodel.cpp:430
 msgid "Limit (%)"
 msgstr "Шегі (%1)"
 
-#: models/kptresourcemodel.cpp:423
+#: models/kptresourcemodel.cpp:431
 #, fuzzy
 #| msgid "Available:"
 msgid "Available From"
 msgstr "Қол жетерлігі:"
 
-#: models/kptresourcemodel.cpp:424
+#: models/kptresourcemodel.cpp:432
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Available Until"
 msgstr "Бар тапсырмалары"
 
-#: models/kptresourcemodel.cpp:425
+#: models/kptresourcemodel.cpp:433
 msgid "Normal Rate"
 msgstr "Қалыпты мөлшерлемесі"
 
-#: models/kptresourcemodel.cpp:426
+#: models/kptresourcemodel.cpp:434
 #, fuzzy
 #| msgid "Overtime rate:"
 msgid "Overtime Rate"
 msgstr "Уақытынан тыс жұмыстың бағасы:"
 
-#: models/kptresourcemodel.cpp:923
+#: models/kptresourcemodel.cpp:931
 #, fuzzy
 #| msgid "Modify Relation"
 msgid "Modify resource account"
 msgstr "Қатынасын өзгерту"
 
-#: models/kptresourcemodel.cpp:1151
+#: models/kptresourcemodel.cpp:1159
 #, fuzzy, kde-format
 #| msgid "Per Resource"
 msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "Ресурсына шаққанда"
 
-#: models/kptresourcemodel.cpp:1170
+#: models/kptresourcemodel.cpp:1178
 #, fuzzy, kde-format
 #| msgid "Per Resource"
 msgid "Copy resource"
 msgid_plural "Copy %1 resources"
 msgstr[0] "Ресурсына шаққанда"
 
-#: models/kptresourcemodel.cpp:1189
+#: models/kptresourcemodel.cpp:1197
 #: models/kptresourceappointmentsmodel.cpp:1115
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
@@ -3051,7 +3067,7 @@ msgid "Add resource from address book"
 msgid_plural "Add %1 resources from address book"
 msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
 
-#: models/kptresourcemodel.cpp:1252
+#: models/kptresourcemodel.cpp:1260
 #, fuzzy
 #| msgid "Add Resource Group..."
 msgid "Add resource group"
