@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-07-30 01:25+0200\n"
-"PO-Revision-Date: 2010-10-06 05:35+0600\n"
+"PO-Revision-Date: 2010-10-07 04:12+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -582,6 +582,8 @@ msgid ""
 "<b>(Optional, the default is fine in most cases)</b> Pick the port number "
 "the directory service is listening on."
 msgstr ""
+"<b>(Міндетті емес, көбінде әдеттегісі жарайды) Каталог қызметі қай "
+"порты арқылы істейтінің таңдаңыз."
 
 #: ui/directoryserviceswidget.cpp:844
 msgid ""
@@ -720,7 +722,7 @@ msgstr "Өзгерту..."
 
 #: ui/keyrequester.cpp:219 ui/keyselectiondialog.cpp:227
 msgid "<placeholder>unknown</placeholder>"
-msgstr ""
+msgstr "<placeholder>беймәлім</placeholder>"
 
 #: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:555
 #: backends/qgpgme/qgpgmekeylistjob.cpp:152
@@ -897,32 +899,32 @@ msgstr "Аудит журналын алмасу буферіне көшіріп
 
 #: ui/messagebox.cpp:74
 msgid "&Show Audit Log"
-msgstr ""
+msgstr "Аудит журналы &көрсетілсін"
 
 #: ui/messagebox.cpp:84
 msgid "View GnuPG Audit Log"
-msgstr ""
+msgstr "GnuPG аудит журналын көру"
 
 #: ui/messagebox.cpp:112 ui/messagebox.cpp:114
 msgid "Choose File to Save GnuPG Audit Log to"
-msgstr ""
+msgstr "GnuPG аудит журналын сақтайтын файлын таңдау"
 
 #: ui/messagebox.cpp:137
 #, kde-format
 msgid "Could not save to file \"%1\": %2"
-msgstr ""
+msgstr "\"%1\" файлына сақтау болмайды: %2"
 
 #: ui/messagebox.cpp:139
 msgid "File Save Error"
-msgstr ""
+msgstr "Файлды сақтау қатесі"
 
 #: ui/messagebox.cpp:155
 msgid "Your system does not have support for GnuPG Audit Logs"
-msgstr ""
+msgstr "Жүйеңіз GnuPG аудит журналыдарын жургізу дегенді білмейді."
 
 #: ui/messagebox.cpp:156
 msgid "System Error"
-msgstr ""
+msgstr "Жүйелік қате"
 
 #: ui/messagebox.cpp:163
 #, kde-format
@@ -930,22 +932,24 @@ msgid ""
 "An error occurred while trying to retrieve the GnuPG Audit Log:\n"
 "%1"
 msgstr ""
+"GnuPG аудит журналын көру әрекеті кезінде бір қате орын алды:\n"
+"%1"
 
 #: ui/messagebox.cpp:165
 msgid "GnuPG Audit Log Error"
-msgstr ""
+msgstr "GnuPG аудит журнал қатесі"
 
 #: ui/messagebox.cpp:172
 msgid "No GnuPG Audit Log available for this operation."
-msgstr ""
+msgstr "Бұндай әрекет істетін GnuPG аудит журналы жоқ."
 
 #: ui/messagebox.cpp:173
 msgid "No GnuPG Audit Log"
-msgstr ""
+msgstr "GnuPG аудит журналы жоқ"
 
 #: ui/messagebox.cpp:190 ui/messagebox.cpp:195
 msgid "GnuPG Audit Log Viewer"
-msgstr ""
+msgstr "GnuPG аудит журналын қарау"
 
 #: ui/messagebox.cpp:200
 #, kde-format
@@ -954,7 +958,7 @@ msgstr "Қолтаңбалау жаңылысы: %1"
 
 #: ui/messagebox.cpp:201
 msgid "Signing successful"
-msgstr ""
+msgstr "Қолтаңбалау сәтті өтті"
 
 #: ui/messagebox.cpp:210 backends/chiasmus/chiasmusjob.cpp:206
 #, kde-format
@@ -962,32 +966,28 @@ msgid "Encryption failed: %1"
 msgstr "Шифрлау жаңылысы: %1"
 
 #: ui/messagebox.cpp:211
-#, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption successful"
-msgstr "Шифрлау кілттері:"
+msgstr "Шифрлау сәтті өтті"
 
 #: ui/messagebox.cpp:228
-#, fuzzy
 #| msgid "Scan Results"
 msgid "Signing Result"
-msgstr "Қарап-шығу нәтижелері"
+msgstr "Қолтаңбалау нәтижелері"
 
 #: ui/messagebox.cpp:238
 msgid "Signing Error"
-msgstr ""
+msgstr "Қолтаңбалау қатесі"
 
 #: ui/messagebox.cpp:248 ui/messagebox.cpp:268
-#, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Result"
-msgstr "Шифрлау кілттері:"
+msgstr "Шифрлау нәтижесі"
 
 #: ui/messagebox.cpp:258 ui/messagebox.cpp:278
-#, fuzzy
 #| msgid "Encryption keys:"
 msgid "Encryption Error"
-msgstr "Шифрлау кілттері:"
+msgstr "Шифрлау қатесі"
 
 #: ui/progressdialog.cpp:87
 #, kde-format
@@ -1013,7 +1013,7 @@ msgstr "Chiasmus команда жолының құралы"
 #: backends/qgpgme/qgpgmebackend.cpp:360
 #, kde-format
 msgid "Unsupported protocol \"%1\""
-msgstr "\"%1\" - қолдауы жоқ протокол"
+msgstr "\"%1\" - танымайтын протокол"
 
 #: backends/chiasmus/chiasmusbackend.cpp:459
 #, kde-format
@@ -1078,25 +1078,21 @@ msgid "Unknown problem with engine for protocol %1."
 msgstr "%1 протоколы тетігіне мәселе туғызды."
 
 #: backends/qgpgme/qgpgmecryptoconfig.cpp:111
-#, fuzzy
 #| msgid "program cannot be executed"
 msgid "program terminated unexpectedly"
-msgstr "бағдарлама орындауға келмейді"
+msgstr "бағдарлама күтпенде үзілді"
 
 #: backends/qgpgme/qgpgmecryptoconfig.cpp:113
-#, fuzzy
 #| msgid "program cannot be executed"
 msgid "program not found or cannot be started"
-msgstr "бағдарлама орындауға келмейді"
+msgstr "бағдарлама жоқ не орындауға келмейді"
 
-#: backends/qgpgme/qgpgmecryptoconfig.cpp:116
-#, fuzzy, kde-format
+#: backends/qgpgme/qgpgmecryptoconfig.cpp:116, kde-format
 #| msgid "<qt>Failed to execute gpgconf:<br>%1</qt>"
 msgid "<qt>Failed to execute gpgconf:<p>%1</p></qt>"
-msgstr "<qt>gpgconf-ты орындау жаңылысы:<br>%1</qt>"
+msgstr "<qt>gpgconf-ты орындау жаңылысы:<p>%1</qt>"
 
 #: backends/qgpgme/qgpgmecryptoconfig.cpp:366
-#, fuzzy
 #| msgid ""
 #| "Could not start gpgconf\n"
 #| "Check that gpgconf is in the PATH and that it can be started"
@@ -1104,8 +1100,8 @@ msgid ""
 "Could not start gpgconf.\n"
 "Check that gpgconf is in the PATH and that it can be started."
 msgstr ""
-"gpgconf жегілмеді\n"
-"gpgconf бағдарламасы PATH жолында екенін тексеріңіз"
+"gpgconf жегілмейді\n"
+"gpgconf бағдарламасы PATH жолында екенін тексеріңіз."
 
 #: backends/qgpgme/qgpgmecryptoconfig.cpp:372
 #, kde-format
@@ -1125,7 +1121,6 @@ msgid "Searching for a large prime number..."
 msgstr "Қарапайым санның үлкенін іздеу..."
 
 #: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:63
-#, fuzzy
 #| msgid ""
 #| "Waiting for new entropy from random number generator (you might want to "
 #| "excercise the harddisks or move the mouse)..."
