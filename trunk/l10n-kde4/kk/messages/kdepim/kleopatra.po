@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-22 06:19+0200\n"
+"POT-Creation-Date: 2010-10-23 06:47+0200\n"
 "PO-Revision-Date: 2010-10-03 12:09+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -934,6 +934,123 @@ msgid ""
 msgstr ""
 "PrepSignCommand::Private::slotRecipientsResolved дегенде ерекше жағдай орын "
 "алды"
+
+#: view/keylistcontroller.cpp:311
+msgid "New Certificate..."
+msgstr "Жаңа куәлік..."
+
+#: view/keylistcontroller.cpp:313
+msgid "Export Certificates..."
+msgstr "Куәліктерін экспорттау..."
+
+#: view/keylistcontroller.cpp:315
+msgid "Export Certificates to Server..."
+msgstr "Серверіне куәліктерді экспорттау..."
+
+#: view/keylistcontroller.cpp:317
+#, fuzzy
+msgid "Export Secret Keys..."
+msgstr "Құпия кілтін экспорттау..."
+
+#: view/keylistcontroller.cpp:319
+msgid "Lookup Certificates on Server..."
+msgstr "Серверінде куәліктерді қарастыру..."
+
+#: view/keylistcontroller.cpp:321
+msgid "Import Certificates..."
+msgstr "Куәліктерін импорттау..."
+
+#: view/keylistcontroller.cpp:323
+msgid "Decrypt/Verify Files..."
+msgstr "Файлдар шифрын шешу/тексеру..."
+
+#: view/keylistcontroller.cpp:325
+msgid "Sign/Encrypt Files..."
+msgstr "Файлдарды қолтаңбалау/шифрлау"
+
+#: view/keylistcontroller.cpp:327
+#, fuzzy
+msgid "Create Checksum Files..."
+msgstr "Бақылау қосындыны есептеу барысы"
+
+#: view/keylistcontroller.cpp:329
+#, fuzzy
+msgid "Verify Checksum Files..."
+msgstr "Бақылау қосындысын тексеру"
+
+#: view/keylistcontroller.cpp:332
+msgid "Redisplay"
+msgstr "Қайта корсету"
+
+#: view/keylistcontroller.cpp:334
+msgid "Stop Operation"
+msgstr "Амалды тоқтату"
+
+#. i18n: file: dialogs/certificatedetailsdialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QDialog, CertificateDetailsDialog)
+#: view/keylistcontroller.cpp:336 rc.cpp:397
+msgid "Certificate Details"
+msgstr "Куәліктің егжей-тегжейі"
+
+#: view/keylistcontroller.cpp:339
+msgid "Delete"
+msgstr "Өшіру"
+
+#: view/keylistcontroller.cpp:341
+msgid "Certify Certificate..."
+msgstr "Куәлікті растау..."
+
+#. i18n: file: dialogs/certificatedetailsdialog.ui:60
+#. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
+#: view/keylistcontroller.cpp:343 rc.cpp:412
+msgid "Change Expiry Date..."
+msgstr "Мерзімін өзгерту..."
+
+#: view/keylistcontroller.cpp:345
+msgid "Change Owner Trust..."
+msgstr "Иеснің сенімділігін өзгерту..."
+
+#: view/keylistcontroller.cpp:347
+msgid "Trust Root Certificate"
+msgstr "Түбір куәлігін сенімді қылу"
+
+#: view/keylistcontroller.cpp:349
+msgid "Distrust Root Certificate"
+msgstr "Түбір куәлігін сенімсіз қылу"
+
+#. i18n: file: dialogs/certificatedetailsdialog.ui:40
+#. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
+#: view/keylistcontroller.cpp:351 rc.cpp:406
+msgid "Change Passphrase..."
+msgstr "Паролін өзгерту..."
+
+#: view/keylistcontroller.cpp:353
+msgid "Add User-ID..."
+msgstr "Пайдаланушы-ID-н қосу..."
+
+#: view/keylistcontroller.cpp:355
+msgid "Dump Certificate"
+msgstr "Куаліктің дампын жасау"
+
+#: view/keylistcontroller.cpp:358
+msgid "Refresh X.509 Certificates"
+msgstr "X.509 куәліктерін жаңарту"
+
+#: view/keylistcontroller.cpp:360
+msgid "Refresh OpenPGP Certificates"
+msgstr "OpenPGP куәліктерін жаңарту"
+
+#: view/keylistcontroller.cpp:363
+msgid "Clear CRL Cache"
+msgstr "CRL кэшін тазалау"
+
+#: view/keylistcontroller.cpp:365
+msgid "Dump CRL Cache"
+msgstr "CRL кэшін дамп ету"
+
+#: view/keylistcontroller.cpp:368
+msgid "Import CRL From File..."
+msgstr "CRL тізімін файлдан импорттау..."
 
 #: view/searchbar.cpp:90
 msgid "&Find:"
@@ -2552,7 +2669,7 @@ msgstr ""
 msgid "Initializing..."
 msgstr "Инициализациясы..."
 
-#: crypto/createchecksumscontroller.cpp:301 mainwindow.cpp:675
+#: crypto/createchecksumscontroller.cpp:301 mainwindow.cpp:485
 msgid "Cancel"
 msgstr "Бас тарту"
 
@@ -2820,8 +2937,10 @@ msgstr[0] ""
 "өшірілмейді."
 
 #: dialogs/deletecertificatesdialog.cpp:218
-msgid "Secret Certificate Deletion"
-msgstr "Құпиялы куәлікті өшіру"
+#, fuzzy
+#| msgid "Secret Key Export"
+msgid "Secret Key Deletion"
+msgstr "Құпия кілтін экспорттау"
 
 #: dialogs/exportsecretkeydialog.cpp:103
 msgid "Secret Key Files"
@@ -2901,7 +3020,9 @@ msgid "Check level:"
 msgstr "Тексеру деңгейі:"
 
 #: dialogs/certifycertificatedialog.cpp:240
-msgid "Selected secret certificate:"
+#, fuzzy
+#| msgid "Selected secret certificate:"
+msgid "Selected secret key:"
 msgstr "Таңдалған құпия куәлігі:"
 
 #: dialogs/certifycertificatedialog.cpp:259
@@ -4197,19 +4318,27 @@ msgid "Unchanged:"
 msgstr "Өзгертілмеген:"
 
 #: commands/importcertificatescommand.cpp:271
-msgid "Secret certificates processed:"
+#, fuzzy
+#| msgid "Secret certificates processed:"
+msgid "Secret keys processed:"
 msgstr "Қарастырылған құпия куәліктер:"
 
 #: commands/importcertificatescommand.cpp:274
-msgid "Secret certificates imported:"
+#, fuzzy
+#| msgid "Secret certificates imported:"
+msgid "Secret keys imported:"
 msgstr "Импортталған құпия кілттер:"
 
 #: commands/importcertificatescommand.cpp:278
-msgid "Secret certificates <em>not</em> imported:"
+#, fuzzy
+#| msgid "Secret certificates <em>not</em> imported:"
+msgid "Secret keys <em>not</em> imported:"
 msgstr "Импорттал<em>ма</em>ған құпия куәліктер:"
 
 #: commands/importcertificatescommand.cpp:281
-msgid "Secret certificates unchanged:"
+#, fuzzy
+#| msgid "Secret certificates unchanged:"
+msgid "Secret keys unchanged:"
 msgstr "Өзгертілмеген құпия куәліктер:"
 
 #: commands/importcertificatescommand.cpp:294
@@ -4496,41 +4625,58 @@ msgstr ""
 "icode> дегеннің шығысынан қараңыз.</para> "
 
 #: commands/exportsecretkeycommand.cpp:129
+#, fuzzy
+#| msgid "Secret Key Export"
 msgctxt "@title:window"
-msgid "Secret Certificate Export Error"
-msgstr "Құпия куәлігін экспорттау қатесі"
+msgid "Secret Key Export Error"
+msgstr "Құпия кілтін экспорттау"
 
 #: commands/exportsecretkeycommand.cpp:133
+#, fuzzy
+#| msgid "Secret-Key Export Failed"
 msgctxt "@title:window"
-msgid "Secret Certificate Export Finished"
-msgstr "Құпия куәлігін экспорттау аяқталды"
+msgid "Secret Key Export Finished"
+msgstr "Құпия кілтін экспорттау жаңылысы"
 
 #: commands/exportsecretkeycommand.cpp:138
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>The GPG or GpgSM process that tried to export the secret "
+#| "certificate ended prematurely because of an unexpected error.</"
+#| "para><para>Please check the output of <icode>%1</icode> for details.</"
+#| "para>"
 msgctxt "@info"
 msgid ""
-"<para>The GPG or GpgSM process that tried to export the secret certificate "
-"ended prematurely because of an unexpected error.</para><para>Please check "
-"the output of <icode>%1</icode> for details.</para>"
+"<para>The GPG or GpgSM process that tried to export the secret key ended "
+"prematurely because of an unexpected error.</para><para>Please check the "
+"output of <icode>%1</icode> for details.</para>"
 msgstr ""
 "<para>Құпия куәлігін экспорттау әрекетін бастаған GPG не GpgSM процесы  "
 "күтпеген қатеге тап болып бітпей аяқталды.</para><para>Егжей- тегжейін "
 "<icode>%1</icode> дегеннің шығысынан қараңыз.</para>"
 
 #: commands/exportsecretkeycommand.cpp:145
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>An error occurred while trying to export the secret certificate.</"
+#| "para> <para>The output from <command>%1</command> was: <message>%2</"
+#| "message></para>"
 msgctxt "@info"
 msgid ""
-"<para>An error occurred while trying to export the secret certificate.</"
-"para> <para>The output from <command>%1</command> was: <message>%2</"
-"message></para>"
+"<para>An error occurred while trying to export the secret key.</para> "
+"<para>The output from <command>%1</command> was: <message>%2</message></para>"
 msgstr ""
 "<para>Құпия куәлігін экспорттау әрекетінде бір қате орын алды.</para> "
 "<para><command>%1</command> дегеннің шығысы: <message>%2</message></para>"
 
 #: commands/exportsecretkeycommand.cpp:151
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Secret certificate successfully exported."
 msgctxt "@info"
-msgid "Secret certificate successfully exported."
+msgid "Secret key successfully exported."
 msgstr "Құпия куәлік сәтті экспортталды."
 
 #: commands/exportopenpgpcertstoservercommand.cpp:86
@@ -5290,17 +5436,17 @@ msgstr "Пайдаланушы интерфейсі тыңдайтын соке�
 msgid "File(s) to process"
 msgstr "Өңдейтін файл(дар)ы"
 
-#: mainwindow.cpp:143
+#: mainwindow.cpp:122
 #, kde-format
 msgctxt "Quit [ApplicationName]"
 msgid "&Quit %1"
 msgstr "%1 дегеннен &шығу"
 
-#: mainwindow.cpp:149
+#: mainwindow.cpp:128
 msgid "Only &Close Window"
 msgstr "Тек терезесі &жабылсын"
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:160
 #, kde-format
 msgid ""
 "%1 may be used by other applications as a service.\n"
@@ -5309,177 +5455,60 @@ msgstr ""
 "%1 қызметін басқа бағдарлама әлі қолдануы мүмкін.\n"
 "%1 дегеннен шықпай, тек терезесін жабуға болады."
 
-#: mainwindow.cpp:183
+#: mainwindow.cpp:162
 msgid "Really Quit?"
 msgstr "Шын шығасыз ба?"
 
-#: mainwindow.cpp:289
+#: mainwindow.cpp:189
 msgid ""
 "Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
 "installation."
 msgstr ""
 "GnuPG журналын қарау құралы (kwatchgnupg) жегілмеді. Орнатылғанын тексеріңіз."
 
-#: mainwindow.cpp:291
+#: mainwindow.cpp:191
 msgid "Error Starting KWatchGnuPG"
 msgstr "KWatchGnuPG жегу қатесі"
 
-#: mainwindow.cpp:296
+#: mainwindow.cpp:196
 msgid ""
 "Could not start the GnuPG Administrative Console (kgpgconf). Please check "
 "your installation."
 msgstr "GnuPG әкімшілік консолі (kgpgconf) жегілмеді. Орнатылғанын тексеріңіз."
 
-#: mainwindow.cpp:298
+#: mainwindow.cpp:198
 msgid "Error Starting KGpgConf"
 msgstr "KGpgConf жжегу қатесі"
 
-#: mainwindow.cpp:409
-msgid "New Certificate..."
-msgstr "Жаңа куәлік..."
-
-#: mainwindow.cpp:411
-msgid "Export Certificates..."
-msgstr "Куәліктерін экспорттау..."
-
-#: mainwindow.cpp:413
-msgid "Export Certificates to Server..."
-msgstr "Серверіне куәліктерді экспорттау..."
-
-#: mainwindow.cpp:415
-#, fuzzy
-msgid "Export Secret Keys..."
-msgstr "Құпия кілтін экспорттау..."
-
-#: mainwindow.cpp:417
-msgid "Lookup Certificates on Server..."
-msgstr "Серверінде куәліктерді қарастыру..."
-
-#: mainwindow.cpp:419
-msgid "Import Certificates..."
-msgstr "Куәліктерін импорттау..."
-
-#: mainwindow.cpp:421
-msgid "Decrypt/Verify Files..."
-msgstr "Файлдар шифрын шешу/тексеру..."
-
-#: mainwindow.cpp:423
-msgid "Sign/Encrypt Files..."
-msgstr "Файлдарды қолтаңбалау/шифрлау"
-
-#: mainwindow.cpp:425
-#, fuzzy
-msgid "Create Checksum Files..."
-msgstr "Бақылау қосындыны есептеу барысы"
-
-#: mainwindow.cpp:427
-#, fuzzy
-msgid "Verify Checksum Files..."
-msgstr "Бақылау қосындысын тексеру"
-
-#: mainwindow.cpp:430
-msgid "Redisplay"
-msgstr "Қайта корсету"
-
-#: mainwindow.cpp:432
-msgid "Stop Operation"
-msgstr "Амалды тоқтату"
-
-#. i18n: file: dialogs/certificatedetailsdialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, CertificateDetailsDialog)
-#: mainwindow.cpp:434 rc.cpp:397
-msgid "Certificate Details"
-msgstr "Куәліктің егжей-тегжейі"
-
-#: mainwindow.cpp:437
-msgid "Delete"
-msgstr "Өшіру"
-
-#: mainwindow.cpp:439
-msgid "Certify Certificate..."
-msgstr "Куәлікті растау..."
-
-#. i18n: file: dialogs/certificatedetailsdialog.ui:60
-#. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
-#: mainwindow.cpp:441 rc.cpp:412
-msgid "Change Expiry Date..."
-msgstr "Мерзімін өзгерту..."
-
-#: mainwindow.cpp:443
-msgid "Change Owner Trust..."
-msgstr "Иеснің сенімділігін өзгерту..."
-
-#: mainwindow.cpp:445
-msgid "Trust Root Certificate"
-msgstr "Түбір куәлігін сенімді қылу"
-
-#: mainwindow.cpp:447
-msgid "Distrust Root Certificate"
-msgstr "Түбір куәлігін сенімсіз қылу"
-
-#. i18n: file: dialogs/certificatedetailsdialog.ui:40
-#. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
-#: mainwindow.cpp:449 rc.cpp:406
-msgid "Change Passphrase..."
-msgstr "Паролін өзгерту..."
-
-#: mainwindow.cpp:451
-msgid "Add User-ID..."
-msgstr "Пайдаланушы-ID-н қосу..."
-
-#: mainwindow.cpp:453
-msgid "Dump Certificate"
-msgstr "Куаліктің дампын жасау"
-
-#: mainwindow.cpp:457
+#: mainwindow.cpp:311
 msgid "GnuPG Log Viewer"
 msgstr "GnuPG журналын қарау"
 
-#: mainwindow.cpp:461
+#: mainwindow.cpp:315
 msgid "GnuPG Administrative Console"
 msgstr "GnuPG әкімшілік консолі"
 
-#: mainwindow.cpp:464
-msgid "Refresh X.509 Certificates"
-msgstr "X.509 куәліктерін жаңарту"
-
-#: mainwindow.cpp:466
-msgid "Refresh OpenPGP Certificates"
-msgstr "OpenPGP куәліктерін жаңарту"
-
-#: mainwindow.cpp:469
-msgid "Clear CRL Cache"
-msgstr "CRL кэшін тазалау"
-
-#: mainwindow.cpp:471
-msgid "Dump CRL Cache"
-msgstr "CRL кэшін дамп ету"
-
-#: mainwindow.cpp:474
-msgid "Import CRL From File..."
-msgstr "CRL тізімін файлдан импорттау..."
-
-#: mainwindow.cpp:477
+#: mainwindow.cpp:320
 msgid "Configure GnuPG Backend..."
 msgstr "GnuPG тетігін баптау..."
 
-#: mainwindow.cpp:481
+#: mainwindow.cpp:324
 msgid "Perform Self-Test"
 msgstr "Өз-өзін сынап шығу"
 
-#: mainwindow.cpp:487
+#: mainwindow.cpp:328
 msgid "About Gpg4win"
 msgstr "Gpg4win туралы"
 
-#: mainwindow.cpp:546
+#: mainwindow.cpp:356
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "Криптография тетігін баптауға болмайды (gpgconf табылмады)"
 
-#: mainwindow.cpp:546
+#: mainwindow.cpp:356
 msgid "Configuration Error"
 msgstr "Баптау қатесі"
 
-#: mainwindow.cpp:578
+#: mainwindow.cpp:388
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
 "when closing the window. Proceed?"
@@ -5487,23 +5516,23 @@ msgstr ""
 "Кейбір амалдар әлі орындалып жатыр. Терезені жапсаңыз, олар үзіледі. Үзіле "
 "берсін бе?"
 
-#: mainwindow.cpp:581
+#: mainwindow.cpp:391
 msgid "Ongoing Background Tasks"
 msgstr "Әлі бітпеген тапсырмалар бар"
 
-#: mainwindow.cpp:662
+#: mainwindow.cpp:472
 msgid "Sign/Encrypt..."
 msgstr "Қолтаңбалау/Шифрлау"
 
-#: mainwindow.cpp:663 systrayicon.cpp:211
+#: mainwindow.cpp:473 systrayicon.cpp:211
 msgid "Decrypt/Verify..."
 msgstr "Шиифрын шешу/Тексеру"
 
-#: mainwindow.cpp:667
+#: mainwindow.cpp:477
 msgid "Import Certificates"
 msgstr "Куәліктерді импорттау"
 
-#: mainwindow.cpp:668
+#: mainwindow.cpp:478
 msgid "Import CRLs"
 msgstr "CRL-лерді импорттау..."
 
@@ -7123,6 +7152,17 @@ msgstr "&Анықтама"
 msgid "Search Toolbar"
 msgstr "Іздеу панелі"
 
+#~ msgid "Secret Certificate Deletion"
+#~ msgstr "Құпиялы куәлікті өшіру"
+
+#~ msgctxt "@title:window"
+#~ msgid "Secret Certificate Export Error"
+#~ msgstr "Құпия куәлігін экспорттау қатесі"
+
+#~ msgctxt "@title:window"
+#~ msgid "Secret Certificate Export Finished"
+#~ msgstr "Құпия куәлігін экспорттау аяқталды"
+
 #~ msgid "'extensions' entry is empty/missing"
 #~ msgstr "'extensions' параметр жазуы бос немесе жоқ"
 
@@ -7233,23 +7273,6 @@ msgstr "Іздеу панелі"
 #~| msgid "Could not generate certificate: %1"
 #~ msgid "Could not determine parent directory of \"%1\""
 #~ msgstr "Келесі куәлікті жасау мүмкін емес: %1"
-
-#, fuzzy
-#~| msgid "Secret Key Export"
-#~ msgid "Secret Key Deletion"
-#~ msgstr "Құпия кілтін экспорттау"
-
-#, fuzzy
-#~| msgid "Secret Key Export"
-#~ msgctxt "@title:window"
-#~ msgid "Secret Key Export Error"
-#~ msgstr "Құпия кілтін экспорттау"
-
-#, fuzzy
-#~| msgid "Secret-Key Export Failed"
-#~ msgctxt "@title:window"
-#~ msgid "Secret Key Export Finished"
-#~ msgstr "Құпия кілтін экспорттау жаңылысы"
 
 #, fuzzy
 #~| msgid "Export Secret Key..."
