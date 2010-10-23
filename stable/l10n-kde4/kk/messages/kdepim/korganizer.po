@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-10-13 01:42+0200\n"
-"PO-Revision-Date: 2010-10-23 04:31+0600\n"
+"PO-Revision-Date: 2010-10-23 08:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -6222,6 +6222,7 @@ msgstr ""
 #. i18n: file: printing/calprintmonthconfig_base.ui:209
 #. i18n: ectx: property (text), widget (QCheckBox, mIncludeDescription)
 #: rc.cpp:1365 rc.cpp:1500 rc.cpp:1629
+#| msgid "&Description"
 msgid "Include &descriptions"
 msgstr "&Сипаттамалары басылсын"
 
@@ -6392,12 +6393,13 @@ msgid ""
 "The Filofax format prints the information for the days selected without a "
 "timeline."
 msgstr ""
-"Блокнот пішімшнде басқанда таңдалған күндер мәліметтері уақыт бойынша "
-"реттелмейді."
+"Блокнот пішімшнде басқанда таңдалған күндер мәліметтері уақыт "
+"бойынша реттелмейді."
 
 #. i18n: file: printing/calprintdayconfig_base.ui:210
 #. i18n: ectx: property (text), widget (QRadioButton, mPrintTypeFilofax)
 #: rc.cpp:1455
+#| msgid "Prints all events of one month on one page"
 msgid "Print date range as &Filofax format, all on one page"
 msgstr "&Блокнот пішімінде күндер қатары бір бетке басылсын"
 
@@ -7203,11 +7205,11 @@ msgstr "Оқиғаны бөліп алу"
 
 #: calendarview.cpp:1749
 msgid "Dissociating the occurrence failed."
-msgstr "Оқиғаны бөліп алу жаңылысы."
+msgstr "Бөліп алу жаңылды."
 
 #: calendarview.cpp:1750 calendarview.cpp:1777
 msgid "Dissociating Failed"
-msgstr "Бөліп алу қатесі"
+msgstr "Бөліп алу жаңылды"
 
 #: calendarview.cpp:1760
 msgid "Dissociate future occurrences"
@@ -7235,22 +7237,19 @@ msgid "Unable to publish the item '%1'"
 msgstr "'%1' деген жариялаланбады"
 
 #: calendarview.cpp:1876 calendarview.cpp:1901
-#, fuzzy
 #| msgid "Go &Forward"
 msgid "Forwarding"
-msgstr "&Ілгерілеу"
+msgstr "Басқаға &жолдау"
 
-#: calendarview.cpp:1906
-#, fuzzy, kde-format
+#: calendarview.cpp:1906, kde-format
 #| msgid "Unable to publish the item '%1'"
 msgid "Unable to forward the item '%1'"
-msgstr "'%1' деген жариялаланбады"
+msgstr "'%1' деген басқаға жіберілмеді"
 
 #: calendarview.cpp:1907
-#, fuzzy
 #| msgid "Go &Forward"
 msgid "Forwarding Error"
-msgstr "&Ілгерілеу"
+msgstr "Басқаға жіберу қатесі"
 
 #: calendarview.cpp:1935
 msgid "The free/busy information was successfully sent."
@@ -7268,8 +7267,7 @@ msgstr "Бос/Істе деректер жарияланбады."
 msgid "The item has no attendees."
 msgstr "Қатысушылары белгіленбеді."
 
-#: calendarview.cpp:1986
-#, fuzzy, kde-format
+#: calendarview.cpp:1986, kde-format
 #| msgid ""
 #| "The groupware message for item '%1'was successfully sent.\n"
 #| "Method: %2"
@@ -7277,35 +7275,34 @@ msgid ""
 "The groupware message for item '%1' was successfully sent.\n"
 "Method: %2"
 msgstr ""
-"'%1' дегеннің біріккен жұмыс хабарламасы жіберілді.\n"
+"'%1' дегенге топтық жұмыс хабарламасы жіберілді.\n"
 "Әдісі: %2"
 
-#: calendarview.cpp:1997
-#, fuzzy, kde-format
+#: calendarview.cpp:1997, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
 msgid ""
 "Unable to send the item '%1'.\n"
 "Method: %2"
-msgstr "ұны %1 дегенге жылжытуға болмайды."
+msgstr ""
+"%1 деген жіберілмеді. "
+"Әдісі: %2"
 
 #: calendarview.cpp:2085
-#, fuzzy
 #| msgid "*.ics|ICalendars"
 msgid "*.ics|iCalendars"
-msgstr "*.ics|ICalendar күнтізбесі"
+msgstr "*.ics|iCalendar күнтізбелері"
 
 #: calendarview.cpp:2095 calendarview.cpp:2144
 #, kde-format
 msgid "Do you want to overwrite %1?"
-msgstr ""
+msgstr "%1 үстінен жазбақсыз ба?"
 
-#: calendarview.cpp:2112
-#, fuzzy, kde-format
+#: calendarview.cpp:2112, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write iCalendar file %1. %2"
-msgstr "%1 архив файлы жазылмады."
+msgstr "%1 iCalendar файлы жазылмады. %2"
 
 #: calendarview.cpp:2123
 msgid "The journal entries can not be exported to a vCalendar file."
@@ -7321,24 +7318,22 @@ msgstr "Жалғастыру"
 
 #: calendarview.cpp:2135
 msgid "*.vcs|vCalendars"
-msgstr "*.vcs|vCalendar күнтізбесі"
+msgstr "*.vcs|vCalendar күнтізбелері"
 
-#: calendarview.cpp:2161
-#, fuzzy, kde-format
+#: calendarview.cpp:2161, kde-format
 #| msgid "Cannot write archive file %1."
 msgctxt "@info"
 msgid "Cannot write vCalendar file %1. %2"
-msgstr "%1 архив файлы жазылмады."
+msgstr "%1 vCalendar файлы жазылмады. %2"
 
 #: calendarview.cpp:2179
 msgid "&Previous Day"
 msgstr "&Алдыңғы күн"
 
-#: calendarview.cpp:2180 actionmanager.cpp:563 actionmanager.cpp:1358
-#, fuzzy, kde-format
+#: calendarview.cpp:2180 actionmanager.cpp:563 actionmanager.cpp:1358, kde-format
 msgid "&Next Day"
 msgid_plural "&Next %1 Days"
-msgstr[0] "Келесі %1 күн"
+msgstr[0] "&Келесі %1 күн"
 
 #: calendarview.cpp:2182
 msgid "&Previous Week"
@@ -7364,19 +7359,17 @@ msgstr ""
 
 #: calendarview.cpp:2649
 msgid "Delete Only This"
-msgstr "Тек осыны ғана өшіру"
+msgstr "Тек осыны өшіру"
 
 #: calendarview.cpp:2650 calendarview.cpp:2722
-#, fuzzy
 msgid "Delete All"
-msgstr "Б&арлығын"
+msgstr "Барлығын"
 
 #: calendarview.cpp:2652
 msgid "Deleting sub-to-dos"
 msgstr "Ішкі жоспарларды өшіру"
 
-#: calendarview.cpp:2686
-#, fuzzy, kde-format
+#: calendarview.cpp:2686, kde-format
 #| msgid ""
 #| "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 #| "belongs to a read-only calendar resource."
@@ -7385,7 +7378,7 @@ msgid ""
 "belongs to a read-only calendar."
 msgstr ""
 "\"%1\" деген өшірілмейді - тек оқу үшін деп белгіленген. Бәлкім, ол тек оқу "
-"үшін ашылған күнтізбе ресурсы шығар."
+"үшін күнтізбенікі шығар."
 
 #: calendarview.cpp:2690
 msgid "Removing not possible"
@@ -7397,17 +7390,15 @@ msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
 "to delete it and all its recurrences?"
 msgstr ""
-"\"%1\" деген бірнеше рет қайталанбақ; шынымен оны және оның қайталануларын "
-"өшірмексіз бе?"
+"Күнтізбедегі \"%1\" деген бірнеше күн қайталанбақ; шынымен оны және "
+"оның қайталануларын өшірмексіз бе?"
 
 #: calendarview.cpp:2729
-#, fuzzy
 #| msgid "Delete &Future"
 msgid "Also Delete &Future"
-msgstr "&Болашақтағыларын"
+msgstr "&Болашақтағыларын да"
 
-#: calendarview.cpp:2733
-#, fuzzy, kde-format
+#: calendarview.cpp:2733, kde-format
 #| msgid ""
 #| "The calendar item \"%1\" recurs over multiple dates. Do you want to "
 #| "delete only the current one on %2, only all future recurrences, or all "
@@ -7416,11 +7407,10 @@ msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
-"\"%1\" деген бірнеше рет қайталанбақ. Сіз %2 кезіне келіп тұрғаның, немесе "
-"барлық болашақтағы қайталануларын, немесе бүкіл қайталануларын өшірмексіз бе?"
+"Күнтізбедегі \"%1\" деген бірнеше күн қайталанбақ. Сіз %2 кезіндегісін, "
+"әлде барлық болашақтағыларын да, немесе бүкілдерін өшірмексіз бе?"
 
-#: calendarview.cpp:2740
-#, fuzzy, kde-format
+#: calendarview.cpp:2740, kde-format
 #| msgid ""
 #| "The calendar item \"%1\" recurs over multiple dates. Do you want to "
 #| "delete only the current one on %2, only all future recurrences, or all "
@@ -7429,12 +7419,12 @@ msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2 or all its occurrences?"
 msgstr ""
-"\"%1\" деген бірнеше рет қайталанбақ. Сіз %2 кезіне келіп тұрғаның, немесе "
-"барлық болашақтағы қайталануларын, немесе бүкіл қайталануларын өшірмексіз бе?"
+"Күнтізбедегі \"%1\" деген бірнеше күн қайталанбақ. Сіз %2 кезіндегісін, "
+"немесе бүкілдерін өшірмексіз бе?"
 
 #: calendarview.cpp:2753
 msgid "Delete C&urrent"
-msgstr "Келіп &тұрғанды"
+msgstr "Осы &кездегісін"
 
 #: calendarview.cpp:2755
 msgid "Delete &All"
@@ -7457,7 +7447,6 @@ msgid "Purging completed to-dos"
 msgstr "Орындалған жоспарларды кетіру"
 
 #: calendarview.cpp:2867
-#, fuzzy
 #| msgid "Unable to purge to-dos with uncompleted children."
 msgctxt "@info"
 msgid "Unable to purge to-dos with uncompleted children."
@@ -7467,12 +7456,11 @@ msgstr "Орындалмаған еңшілесі бар жоспарларды 
 msgid "Delete To-do"
 msgstr "Жоспарды өшіру"
 
-#: calendarview.cpp:2881
-#, fuzzy, kde-format
+#: calendarview.cpp:2881, kde-format
 #| msgid "Unable to edit item: it is locked by another process."
 msgctxt "@info"
 msgid "Unable to edit \"%1\" because it is locked by another process."
-msgstr "Нысанды өзгетуге болмайды: оны басқа процесс бұғаттаған."
+msgstr "\"%1\" дегенді өзгетілмейді, өйткені оны басқа процесс бұғаттаған."
 
 #: calendarview.cpp:2915
 #, kde-format
@@ -7483,10 +7471,9 @@ msgstr "Бұны %1 дегенге көшірмелеуге болмайды."
 msgid "Copying Failed"
 msgstr "Көшірмелеу жаңылды"
 
-#: calendarview.cpp:2962
-#, fuzzy, kde-format
+#: calendarview.cpp:2962, kde-format
 msgid "Unable to move the item to  %1."
-msgstr "ұны %1 дегенге жылжытуға болмайды."
+msgstr "Бұны %1 дегенге жылжытуға болмайды."
 
 #: calendarview.cpp:2963
 msgid "Moving Failed"
@@ -7498,39 +7485,42 @@ msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing %"
 "1.</qt>"
 msgstr ""
+"<qt>Бұл мәзірін мүлдем жасырады. Оны пернетақтадан %1 деп қайтара "
+"аласызы.</qt>"
 
 #: actionmanager.cpp:339
 msgid "Import &Calendar..."
 msgstr "&Күнтізбені импорттау..."
 
 #: actionmanager.cpp:341
-#, fuzzy
 msgid "Merge the contents of another iCalendar"
-msgstr "Тіркемені қосу"
+msgstr "Басқа iCalendar-дың мазмұнымен бірктіру"
 
 #: actionmanager.cpp:343
 msgid ""
 "Select this menu entry if you would like to merge the contents of another "
 "iCalendar into your current calendar."
 msgstr ""
+"Басқа iCalendar-дың мазмұнын қолданыстағы күнтізбеңізбен бірктіруді "
+"қаласаңыз - осы мәзір жолын таңдаңыз."
 
 #: actionmanager.cpp:348
-#, fuzzy
 #| msgid "&Import From UNIX Ical tool"
 msgid "&Import From UNIX Ical Tool"
 msgstr "UNIX Ical құралынан &импорттау"
 
 #: actionmanager.cpp:350
-#, fuzzy
 #| msgid "Import calendar at '%1' into KOrganizer."
 msgid "Import a calendar in another format"
-msgstr "'%1' күнтізбесін KOrganizer-ге импорттау."
+msgstr "Басқа пішімдегі күнтізбені импорттау"
 
 #: actionmanager.cpp:352
 msgid ""
 "Select this menu entry if you would like to import the contents of a non-"
 "iCalendar formatted file into your current calendar."
 msgstr ""
+"Басқа iCalendar пішімінде емес күнтізбенің мазмұнын қолданыстағы "
+"күнтізбеңізбен бірктіруді қаласаңыз - осы мәзір жолын таңдаңыз."
 
 #: actionmanager.cpp:357
 msgid "Get &Hot New Stuff..."
@@ -7541,67 +7531,59 @@ msgid "Export &Web Page..."
 msgstr "&Веб парақты экспорттау..."
 
 #: actionmanager.cpp:365
-#, fuzzy
 #| msgid "Import &Calendar..."
 msgid "Export as &iCalendar..."
-msgstr "&Күнтізбені импорттау..."
+msgstr "&iCalendar пішімінде экспорттау..."
 
 #: actionmanager.cpp:369
-#, fuzzy
 #| msgid "Import &Calendar..."
 msgid "Export as &vCalendar..."
-msgstr "&Күнтізбені импорттау..."
+msgstr "&vCalendar пішімінде экспорттау..."
 
 #: actionmanager.cpp:378
 msgid "Archive O&ld Entries..."
 msgstr "Ес&кі жазуларды архивтеу..."
 
 #: actionmanager.cpp:382
-#, fuzzy
 msgid "Pur&ge Completed To-dos"
-msgstr "Орындалған жоспарларды кетіру"
+msgstr "Орындалған жоспарларды к&етіру"
 
 #: actionmanager.cpp:431
 msgid "What's &Next"
 msgstr "&Не істеу"
 
 #: actionmanager.cpp:436
-#, fuzzy
 #| msgid "Month View"
 msgid "&Month View"
-msgstr "Ай көрнісі"
+msgstr "&Айлық көрнісі"
 
 #: actionmanager.cpp:441
-#, fuzzy
 #| msgid "Agenda view"
 msgid "&Agenda"
-msgstr "Күн тәртіп көрінісі"
+msgstr "&Күн тәртібі"
 
 #: actionmanager.cpp:446
-#, fuzzy
 #| msgid "&Events"
 msgid "&Event List"
-msgstr "&Оқиға"
+msgstr "&Оқиғалар тізмі"
 
 #: actionmanager.cpp:451
 msgid "&To-do List"
-msgstr "Ж&оспар тізімі"
+msgstr "Ж&оспарлар тізімі"
 
 #: actionmanager.cpp:456
 msgid "&Journal"
 msgstr "&Күнделік"
 
 #: actionmanager.cpp:461
-#, fuzzy
 #| msgid "Time zone:"
 msgid "Time&line"
-msgstr "Уақыт белдеуі:"
+msgstr "Уақыт &барысы"
 
 #: actionmanager.cpp:466
-#, fuzzy
 #| msgid "&Timespan"
 msgid "Time&spent"
-msgstr "&Уақыт аралығы"
+msgstr "Жұмсалған &уақыты"
 
 #: actionmanager.cpp:472
 msgid "&Refresh"
@@ -7609,90 +7591,77 @@ msgstr "Жаң&арту"
 
 #: actionmanager.cpp:478
 msgid "F&ilter"
-msgstr "С&үзгілеу"
+msgstr "С&үзгі"
 
 #: actionmanager.cpp:491
-#, fuzzy
 #| msgid "Zoom In Horizontally"
 msgid "In Horizontally"
 msgstr "Жатығынан ұлғайту"
 
 #: actionmanager.cpp:497
-#, fuzzy
 #| msgid "Zoom Out Horizontally"
 msgid "Out Horizontally"
 msgstr "Жатығынан кішірейту"
 
 #: actionmanager.cpp:503
-#, fuzzy
 #| msgid "Zoom In Vertically"
 msgid "In Vertically"
 msgstr "Тігінен ұлғайту"
 
 #: actionmanager.cpp:509
-#, fuzzy
 #| msgid "Zoom Out Vertically"
 msgid "Out Vertically"
 msgstr "Тігінен кішірейту"
 
 #: actionmanager.cpp:520
-#, fuzzy
 #| msgid "day"
 msgctxt "@action Jump to today"
 msgid "To &Today"
-msgstr "күнінде қайталау"
+msgstr "Бүгінге ауысу"
 
 #: actionmanager.cpp:521
-#, fuzzy
 #| msgid "day"
 msgid "Today"
-msgstr "күнінде қайталау"
+msgstr "Бүгін"
 
 #: actionmanager.cpp:522
-#, fuzzy
 #| msgid "Go to &Today"
 msgid "Scroll to Today"
-msgstr "&Бүгінге ауысу"
+msgstr "Бүгінге жүгірту"
 
 #: actionmanager.cpp:527
-#, fuzzy
 #| msgid "Go &Backward"
 msgctxt "scroll backward"
 msgid "&Backward"
 msgstr "&Шегіну"
 
 #: actionmanager.cpp:528
-#, fuzzy
 #| msgid "Balak"
 msgctxt "scroll backward"
 msgid "Back"
-msgstr "Балак"
+msgstr "Артқа"
 
 #: actionmanager.cpp:529
-#, fuzzy
 #| msgid "Go &Backward"
 msgid "Scroll Backward"
-msgstr "&Шегіну"
+msgstr "Артқа жүгірту"
 
 #: actionmanager.cpp:542
-#, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scroll forward"
 msgid "&Forward"
 msgstr "&Ілгерілеу"
 
 #: actionmanager.cpp:543
-#, fuzzy
 #| msgid "Go &Forward"
 msgctxt "scoll forward"
 msgid "Forward"
-msgstr "&Ілгерілеу"
+msgstr "Алға"
 
 #: actionmanager.cpp:544
-#, fuzzy
 #| msgid "Go &Forward"
 msgid "Scroll Forward"
-msgstr "&Ілгерілеу"
+msgstr "Алға жүгірту"
 
 #: actionmanager.cpp:552
 msgid "&Day"
@@ -7708,35 +7677,31 @@ msgstr "&Апта"
 
 #: actionmanager.cpp:580
 msgid "Create a new Event"
-msgstr ""
+msgstr "Жаңа оқиғаны жазу"
 
 #: actionmanager.cpp:588
-#, fuzzy
 #| msgid "Click to add a new to-do"
 msgid "Create a new To-do"
-msgstr "Жаңа жоспарды қосу үшін түртіңіз"
+msgstr "Жаңа жоспарды құру"
 
 #: actionmanager.cpp:603
 msgid "Create a new Journal"
-msgstr ""
+msgstr "Жаңа күнделік жазуы"
 
 #: actionmanager.cpp:608
-#, fuzzy
 #| msgid "Configure &Plugin..."
 msgid "Configure View..."
-msgstr "&Плагиндерді баптау..."
+msgstr "Көрнісін баптау..."
 
 #: actionmanager.cpp:609
-#, fuzzy
 #| msgid "Configure Holidays"
 msgid "Configure"
-msgstr "Мейрамдар"
+msgstr "Баптау"
 
 #: actionmanager.cpp:610
-#, fuzzy
 #| msgid "Configure &Date && Time..."
 msgid "Configure the view"
-msgstr "&Күн && Уақытты баптау..."
+msgstr "Көрнісін баптау"
 
 #: actionmanager.cpp:633
 msgid "&Make Sub-to-do Independent"
@@ -7755,36 +7720,32 @@ msgid "Re&quest Update"
 msgstr "Сұ&рауды жаңарту"
 
 #: actionmanager.cpp:666
-#, fuzzy
 msgid "Send &Cancellation to Attendees"
 msgstr "Шақыруларды ж&оққа шығару"
 
 #: actionmanager.cpp:673
 msgid "Send Status &Update"
-msgstr "Жағдай мәліметін &жаңарту"
+msgstr "Күй-жай мәліметін &жаңарту"
 
 #: actionmanager.cpp:680
-#, fuzzy
 msgctxt "counter proposal"
 msgid "Request Chan&ge"
-msgstr "Сұ&рауды жаңарту"
+msgstr "Сұ&рауды өзгерту"
 
 #: actionmanager.cpp:687
 msgid "&Mail Free Busy Information..."
 msgstr "Бос/Істе мәліметін &поштамен жіберу..."
 
 #: actionmanager.cpp:692
-#, fuzzy
 #| msgid "&iCalendar..."
 msgid "&Send as iCalendar..."
-msgstr "&iCalendar..."
+msgstr "iCalendar түрінде &жіберу..."
 
 #: actionmanager.cpp:697
 msgid "&Upload Free Busy Information"
 msgstr "Бос/Істе мәліметін &жүктеп беру"
 
 #: actionmanager.cpp:703
-#, fuzzy
 #| msgid "&Addressbook"
 msgid "&Address Book"
 msgstr "&Адрес кітапшасы"
@@ -7802,14 +7763,13 @@ msgid "Show Item Viewer"
 msgstr "Нысан көрінісін көрсету"
 
 #: actionmanager.cpp:734
-#, fuzzy
 #| msgid "Export Calendar as Web Page"
 msgid "Show Calendar Manager"
-msgstr "Күнтізбені веб парағына экспорт ету"
+msgstr "Күнтізбе менеджерін көрсету"
 
 #: actionmanager.cpp:747
 msgid "Configure &Date && Time..."
-msgstr "&Күн && Уақытты баптау..."
+msgstr "&Күн мен Уақытты баптау..."
 
 #: actionmanager.cpp:756
 msgid "Manage View &Filters..."
@@ -7881,7 +7841,7 @@ msgstr "'%1' дегеннен күнтізбе жүктеп алынбады."
 
 #: actionmanager.cpp:1083
 msgid "Failed to obtain D-Bus interface for remote configuration."
-msgstr ""
+msgstr "Қашықтан баптау үшін D-Bus интерфейсі қолға түспеді."
 
 #: actionmanager.cpp:1095
 #, kde-format
@@ -7891,7 +7851,7 @@ msgstr "'%1' күнтізбемен біріктірілді."
 #: actionmanager.cpp:1098
 #, kde-format
 msgid "Opened calendar '%1'."
-msgstr "'%1' күнтізбесі ашылды."
+msgstr "'%1' күнтізбесі ашық."
 
 #: actionmanager.cpp:1123
 msgid ""
@@ -7899,11 +7859,11 @@ msgid ""
 "save in vCalendar format."
 msgstr ""
 "Күнтізбеңіз iCalendar пішімінде сақталады. vCalendar пішімінде сақтау үшін "
-"'Экспорт -> vCalendar...' деген мәзірін пайдаланыңыз."
+"'vCalendar пішімінде экспорттау...' деген мәзірін пайдаланыңыз."
 
 #: actionmanager.cpp:1125
 msgid "Format Conversion"
-msgstr "Пішімін түрлендіру"
+msgstr "Пішімін ауыстыру"
 
 #: actionmanager.cpp:1148
 #, kde-format
@@ -7915,11 +7875,10 @@ msgstr "'%1' дегенге күнтізбе жүктелмеді"
 msgid "Saved calendar '%1'."
 msgstr "'%1' күнтізбесі сақталды."
 
-#: actionmanager.cpp:1189
-#, fuzzy, kde-format
+#: actionmanager.cpp:1189, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgid "Do you want to overwrite file \"%1\"?"
-msgstr "qt><b>%1</b> деген ресурсты шынымен өшірмексіз бе?</qt>"
+msgstr "\"%1\" деген файлды қайта жазбақсыз ба?"
 
 #: actionmanager.cpp:1249
 #, kde-format
@@ -7927,9 +7886,8 @@ msgid "Unable to save calendar to the file %1."
 msgstr "Күнтізбе %1 файлына сақталмады."
 
 #: actionmanager.cpp:1250
-#, fuzzy
 msgid "Error"
-msgstr "Қате жоқ"
+msgstr "Қате"
 
 #: actionmanager.cpp:1277
 msgid ""
@@ -7940,20 +7898,18 @@ msgstr ""
 "Сақтауын қалайсыз ба?"
 
 #: actionmanager.cpp:1305
-#, fuzzy
 #| msgid "*.vcs *.ics|Calendar Files"
 msgid "*.ics *.vcs|Calendar Files"
-msgstr "*.vcs *.ics|Күнтізбе файлы"
+msgstr "*.vcs *.ics|Күнтізбе файлдары"
 
 #: actionmanager.cpp:1387
 msgid "Could not start control module for date and time format."
 msgstr "Күн мен уақыт пішімін басқару модулі жегілмеді."
 
-#: actionmanager.cpp:1564
-#, fuzzy, kde-format
+#: actionmanager.cpp:1564, kde-format
 #| msgid "Could not load calendar '%1'."
 msgid "Could not load calendar %1."
-msgstr "'%1' күнтізбесі жүктелмеді."
+msgstr "%1 күнтізбесі жүктелмеді."
 
 #: actionmanager.cpp:1572
 msgid "The downloaded events will be merged into your current calendar."
@@ -7985,46 +7941,41 @@ msgstr "Жоспарды ө&шіру"
 
 #: actionmanager.cpp:1770 actionmanager.cpp:1876
 msgid "Attach as &link"
-msgstr ""
+msgstr "&Сілтеме түрінде тіркемелеу"
 
 #: actionmanager.cpp:1771 actionmanager.cpp:1877
-#, fuzzy
 msgid "Attach &inline"
-msgstr "Тіркемені қосу"
+msgstr "Б&ойын тіркемелеу"
 
 #: actionmanager.cpp:1772
 msgid "Attach inline &without attachments"
-msgstr ""
+msgstr "Тіркемеле&мей, бойын енгізу"
 
 #: actionmanager.cpp:1774 actionmanager.cpp:1879
 msgid "C&ancel"
-msgstr ""
+msgstr "&Айну"
 
 #: actionmanager.cpp:1814
 msgid "Removing attachments from an email might invalidate its signature."
-msgstr ""
+msgstr "Эл.поштанның тіркемесін өшірген оның цифрлық қолтаңбасын бұзуы мүмкін."
 
 #: actionmanager.cpp:1815
-#, fuzzy
 #| msgid "Attach&ments"
 msgid "Remove Attachments"
-msgstr "Тірке&мелер"
+msgstr "Тіркемелерді өшіру"
 
 #: actionmanager.cpp:1957 actionmanager.cpp:1966
-#, fuzzy
 msgid "Undo"
-msgstr "(%1) дегеннен қайту"
+msgstr "Істен қайту"
 
-#: actionmanager.cpp:1963
-#, fuzzy, kde-format
+#: actionmanager.cpp:1963, kde-format
 #| msgid "Undo (%1)"
 msgid "Undo: %1"
 msgstr "(%1) дегеннен қайту"
 
 #: actionmanager.cpp:1973 actionmanager.cpp:1977
-#, fuzzy
 msgid "Redo"
-msgstr "(%1) дегенді қайталау"
+msgstr "Қайтудан айну"
 
 #: actionmanager.cpp:1979
 #, kde-format
@@ -8034,10 +7985,9 @@ msgstr "(%1) дегенді қайталау"
 #: actionmanager.cpp:1993
 #, kde-format
 msgid "URL '%1' is invalid."
-msgstr "'%1' URL жарамсыз."
+msgstr "'%1' URL-і жарамсыз."
 
 #: datenavigatorcontainer.cpp:51
-#, fuzzy
 msgid ""
 "<qt><p>Select the dates you want to display in KOrganizer's main view here. "
 "Hold the mouse button to select more than one day.</p><p>Press the top "
@@ -8045,130 +7995,114 @@ msgid ""
 "shows a week. The number in the left column is the number of the week in the "
 "year. Press it to select the whole week.</p></qt>"
 msgstr ""
-"<qt><p>KOrganizer-де көрсететін күндерді таңдаңыз. Бірнеше күнді таңдау үшін "
-"тышқанның батырмасын басып тұрып меңзеңіз.</p><p>Жоғардағы батырмалармен "
-"келесі / алдыңғы ай мен жылға жылжуға болады.</p><p>Әрбір жол аптаны "
-"көрсетеді. Сол жақтағы бағандағы сан - жылдағы аптаның реттік нөмірі. Оны "
-"түртіп бүкіл аптаны таңдап алуға болады.</p></qt>"
+"<qt><p>KOrganizer-дің негізгі көрінісінде көрсететін күндерді таңдаңыз. "
+"Бірнеше күнді таңдау үшін тышқанның батырмасын басып тұрып меңзеңіз. "
+"</p><p>Жоғардағы батырмалармен келесі/алдыңғы ай мен жылға ауысуға "
+"болады.</p><p>Әрбір жол аптаны көрсетеді. Сол жақтағы бағандағы сан "
+"- аптаның жылдағы реттік нөмірі. Оны түртіп бүкіл аптаны таңдап алуға "
+"болады.</p></qt>"
 
 #: akonadicollectionview.cpp:163
-#, fuzzy
 msgctxt "@info/plain Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
-msgstr "Қайда іздеу"
+msgstr "Іздеу"
 
 #: akonadicollectionview.cpp:205
-#, fuzzy
 #| msgid "&iCalendar..."
 msgid "Add Calendar..."
-msgstr "&iCalendar..."
+msgstr "Күнтізбені қосу..."
 
 #: akonadicollectionview.cpp:207 akonadicollectionview.cpp:221
 #: akonadicollectionview.cpp:435
-#, fuzzy
 #| msgid "Default Calendar"
 msgid "Delete Calendar"
-msgstr "Қолданыстағы күнтізбе"
+msgstr "Күнтізбені өшіру"
 
 #: akonadicollectionview.cpp:208
-#, fuzzy
 #| msgid "Reload"
 msgid "Reload"
 msgstr "Қайта жүктеу"
 
 #: akonadicollectionview.cpp:209
-#, fuzzy
 #| msgid "&Print..."
 msgid "Properties..."
-msgstr "Басы&п шығшару..."
+msgstr "Қасиеттері..."
 
 #: akonadicollectionview.cpp:214
-#, fuzzy
 #| msgid "New Calendar"
 msgid "New Calendar..."
-msgstr "Жаңа күнтізбе"
+msgstr "Жаңа күнтізбе..."
 
 #: akonadicollectionview.cpp:234
-#, fuzzy
 #| msgid "&Assign Color"
 msgid "&Assign Color..."
-msgstr "Түс т&ағайындалсын"
+msgstr "Түсін т&аңдап беру..."
 
 #: akonadicollectionview.cpp:246
 msgid "Use as &Default Calendar"
 msgstr "Қ&олданыстағы күнтізбе осы болсын"
 
 #: akonadicollectionview.cpp:391
-#, fuzzy
 #| msgid "Add as new calendar"
 msgid "Add Calendar"
-msgstr "Жаңа күнтізбе ретінде косу"
+msgstr "Күнтізбесін қосу"
 
-#: akonadicollectionview.cpp:434
-#, fuzzy, kde-format
+#: akonadicollectionview.cpp:434, kde-format
 #| msgid "<qt>Do you really want to delete the resource <b>%1</b>?</qt>"
 msgid "Do you really want to delete calendar %1?"
-msgstr "qt><b>%1</b> деген ресурсты шынымен өшірмексіз бе?</qt>"
+msgstr "%1 күнтізбені шын өшірмексіз бе?"
 
 #: koeventpopupmenu.cpp:64
-#, fuzzy
 #| msgid "&Cut"
 msgctxt "cut this event"
 msgid "C&ut"
 msgstr "Қ&иып алу"
 
 #: koeventpopupmenu.cpp:67
-#, fuzzy
 #| msgid "&Copy"
 msgctxt "copy this event"
 msgid "&Copy"
 msgstr "&Көшіріп алу"
 
 #: koeventpopupmenu.cpp:71
-#, fuzzy
 #| msgid "&Date:"
 msgid "&Paste"
-msgstr "&Күні:"
+msgstr "&Орналастыру"
 
 #: koeventpopupmenu.cpp:74
-#, fuzzy
 #| msgid "&Delete"
 msgctxt "delete this incidence"
 msgid "&Delete"
 msgstr "Ө&шіру"
 
 #: koeventpopupmenu.cpp:79
-#, fuzzy
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
 msgid "Togg&le To-do Completed"
-msgstr "Орындалғанды өші&ру"
+msgstr "Жос&парды біткен қылу/қылмау"
 
 #: koeventpopupmenu.cpp:82
 msgid "&Toggle Reminder"
 msgstr "&Еске салуді қосу/өшіру"
 
 #: koeventpopupmenu.cpp:86
-#, fuzzy
 #| msgid "Dissociate occurrence"
 msgid "&Dissociate From Recurrence..."
-msgstr "Оқиғаны бөліп алу"
+msgstr "Қайталау тізбегінен бөліп алу..."
 
 #: koeventpopupmenu.cpp:92
-#, fuzzy
 #| msgid "&iCalendar..."
 msgid "Send as iCalendar..."
-msgstr "&iCalendar..."
+msgstr "iCalendar пішімінде жіберу..."
 
 #: koviewmanager.cpp:498
-#, fuzzy
 #| msgid "Merged calendar '%1'."
 msgid "Merged calendar"
-msgstr "'%1' күнтізбемен біріктірілді."
+msgstr "Біріктірілген күнтізбе."
 
 #: koviewmanager.cpp:517
 msgid "Calendars Side by Side"
-msgstr ""
+msgstr "Қатарлаған күнтізбелер"
 
 #: koviewmanager.cpp:551
 msgid ""
@@ -8176,18 +8110,19 @@ msgid ""
 "Please properly configure at least 1 work day in the Time and Date "
 "preferences."
 msgstr ""
+"Жұмыс аптаны көрсете алмады, өйткені жұмыс күндері бапталмаған. "
+"'Уақыт пен Күн' дегенде кемінде 1 жұмыс күнің дұрыстап баптап "
+"қойыңызшы."
 
-#: kdatenavigator.cpp:202
-#, fuzzy, kde-format
+#: kdatenavigator.cpp:202, kde-format
 msgctxt "start/end week number of line in date picker"
 msgid "%1/%2"
-msgstr "%1%"
+msgstr "%1/%2"
 
-#: kdatenavigator.cpp:208
-#, fuzzy, kde-format
+#: kdatenavigator.cpp:208, kde-format
 #| msgid "Print week &numbers"
 msgid "Scroll to week number %1"
-msgstr "Апта &нөмірі басылсын"
+msgstr "Нөмір %1-аптаға ауысу"
 
 #: kdatenavigator.cpp:210
 #, kde-format
@@ -8195,120 +8130,119 @@ msgid ""
 "Click here to scroll the display to week number %1 of the currently "
 "displayed year."
 msgstr ""
+"Көрсетііліп турған жылдың нөмір %1-аптасына ауысу үшін осыған "
+"түртіңіз."
 
-#: kdatenavigator.cpp:260
-#, fuzzy, kde-format
+#: kdatenavigator.cpp:260, kde-format
 #| msgid "%1%"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: kdatenavigator.cpp:262
 #, kde-format
 msgid "A column header of the %1 dates in the month."
-msgstr ""
+msgstr "Бұл айдағы %1 күндер бағанның айдары."
 
 #: navigatorbar.cpp:51
 msgid "Scroll backward to the previous year"
-msgstr ""
+msgstr "Алдыңғы жылға шегіну"
 
 #: navigatorbar.cpp:52
 msgid ""
 "Click this button to scroll the display to the same approximate day of the "
 "previous year"
 msgstr ""
+"Алдыңғы жылдың сәйкесті күніне ауысу үшін осы батырмасына "
+"басыңыз"
 
 #: navigatorbar.cpp:57
 msgid "Scroll backward to the previous month"
-msgstr ""
+msgstr "Алдыңғы айға шегіну"
 
 #: navigatorbar.cpp:58
 msgid ""
 "Click this button to scroll the display to the same approximate date of the "
 "previous month"
-msgstr ""
+msgstr "Алдыңғы айдың сәйкесті күніне ауысу"
 
 #: navigatorbar.cpp:63
 msgid "Scroll forward to the next month"
-msgstr ""
+msgstr "Алдыңғы айдың сәйкесті күніне ауысу"
 
 #: navigatorbar.cpp:64
 msgid ""
 "Click this button to scroll the display to the same approximate date of the "
 "next month"
 msgstr ""
+"Алдыңғы айдың сәйкесті күніне ауысу үшін осы батырмасына "
+"басыңыз"
 
 #: navigatorbar.cpp:69
 msgid "Scroll forward to the next year"
-msgstr ""
+msgstr "Келесі жылға ауысу"
 
 #: navigatorbar.cpp:70
 msgid ""
 "Click this button to scroll the display to the same approximate day of the "
 "next year"
 msgstr ""
+"Келесі жылдың сәйкесті күніне ауысу үшін осы батырмасына "
+"басыңыз"
 
 #: navigatorbar.cpp:78
 msgid "Select a month"
 msgstr "Айды таңдадау"
 
 #: navigatorbar.cpp:85
-#, fuzzy
 #| msgid "Select a month"
 msgid "Select a year"
-msgstr "Айды таңдадау"
+msgstr "Жылды таңдадау"
 
-#: navigatorbar.cpp:137
-#, fuzzy, kde-format
+#: navigatorbar.cpp:137, kde-format
 #| msgid "%1%"
 msgctxt "monthname"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
-#: navigatorbar.cpp:138
-#, fuzzy, kde-format
+#: navigatorbar.cpp:138, kde-format
 #| msgid "%1%"
 msgctxt "4 digit year"
 msgid "%1"
-msgstr "%1%"
+msgstr "%1"
 
 #: koprefsdialog.cpp:100
-#, fuzzy
 #| msgid "Personal"
 msgctxt "@title:tab personal settings"
 msgid "Personal"
 msgstr "Дербес"
 
 #: koprefsdialog.cpp:108
-#, fuzzy
 msgctxt "@title:group email settings"
 msgid "Email Settings"
-msgstr "Параметрлері: "
+msgstr "Эл.поштаны баптау"
 
 #: koprefsdialog.cpp:126
-#, fuzzy
 #| msgid "Travel"
 msgctxt "@title:tab"
 msgid "Save"
-msgstr "Саяхат"
+msgstr "Сақтау"
 
 #: koprefsdialog.cpp:130
-#, fuzzy
 #| msgid "Import Calendar"
 msgctxt "@title:group"
 msgid "Exporting Calendar"
-msgstr "Күнтізбені импорттау"
+msgstr "Күнтізбені экспорттау"
 
 #: koprefsdialog.cpp:163
 msgctxt "@title:tab systray settings"
 msgid "System Tray"
-msgstr ""
+msgstr "Жүйелік сөре"
 
 #: koprefsdialog.cpp:166
-#, fuzzy
 #| msgid "Sorting Options"
 msgctxt "@title:group"
 msgid "Show/Hide Options"
-msgstr "Реттеу"
+msgstr "Көрсету/Жасыру"
 
 #: koprefsdialog.cpp:175
 msgctxt "@info:tooltip"
@@ -8316,69 +8250,63 @@ msgid ""
 "Enable this setting to show the KOrganizer reminder daemon in your system "
 "tray (recommended)."
 msgstr ""
+"KOrganizer еске салу қызметін жүйелік сөреде көрсету үшін осы параметрін "
+"рұқсат етіңіз (жөнді таңдау)."
 
 #: koprefsdialog.cpp:180
 msgctxt "@info"
 msgid ""
 "<note>The daemon will continue running even if it is not shown in the system "
 "tray.</note>"
-msgstr ""
+msgstr "<note>Қызметі, жүйелік сөреде көрсетілмесе де, орындала береді.</note>"
 
 #: koprefsdialog.cpp:189
-#, fuzzy
 #| msgid "Calendar"
 msgctxt "@title:tab calendar account settings"
 msgid "Calendars"
-msgstr "Ресурстар"
+msgstr "Күнтізбелері"
 
 #: koprefsdialog.cpp:310
-#, fuzzy
 #| msgid "Personal"
 msgctxt "@title:tab"
 msgid "Regional"
-msgstr "Дербес"
+msgstr "Жергілкті"
 
 #: koprefsdialog.cpp:316
 msgctxt "@title:group"
 msgid "General Time and Date"
-msgstr ""
+msgstr "Жалпы Уақыт пен Күн"
 
 #: koprefsdialog.cpp:327
-#, fuzzy
 #| msgid "Holiday"
 msgctxt "@title:group"
 msgid "Holidays"
-msgstr "Демалыс"
+msgstr "Демалыс күндері"
 
 #: koprefsdialog.cpp:337
-#, fuzzy
 #| msgid "Use holiday region:"
 msgctxt "@label"
 msgid "Use holiday region:"
-msgstr "Демалыс күндері:"
+msgstr "Қай елдің демалыс күндері:"
 
-#: koprefsdialog.cpp:355
-#, fuzzy, kde-format
+#: koprefsdialog.cpp:355, kde-format
 msgctxt "Holday region, region language"
 msgid "%1 (%2)"
-msgstr "%1 - %2"
+msgstr "%1 (%2)"
 
 #: koprefsdialog.cpp:360
-#, fuzzy
 #| msgid "(None)"
 msgctxt "No holiday region"
 msgid "None"
 msgstr "(Жоқ)"
 
 #: koprefsdialog.cpp:374
-#, fuzzy
 #| msgid "Working Hours"
 msgctxt "@title:group"
 msgid "Working Period"
-msgstr "Жұмыс күндері"
+msgstr "Жұмыс аралығы"
 
 #: koprefsdialog.cpp:392
-#, fuzzy
 #| msgid ""
 #| "Check this box to make KOrganizer mark the working hours for this day of "
 #| "the week. If this is a work day for you, check this box, or the working "
@@ -8390,59 +8318,52 @@ msgid ""
 "will not be marked with color."
 msgstr ""
 "Белгілеп қойған күндерді KOrganizer аптаның жұмыс күндері деп есептейді де "
-"жұмыс уақыттарын көрсетеді."
+"жұмыс уақыттарын көрсетеді. Егерде бұл күн жұмыс күніңіз болса белгісін "
+"қойңыз, әйтпесе, жұмыс сағаттры түспен боялмайды."
 
 #: koprefsdialog.cpp:430
-#, fuzzy
 #| msgid "Default Calendar"
 msgctxt "@title:tab"
 msgid "Default Values"
-msgstr "Қолданыстағы күнтізбе"
+msgstr "Әдетті мәндері"
 
 #: koprefsdialog.cpp:435
-#, fuzzy
 #| msgid "Appointment"
 msgctxt "@title:group"
 msgid "Appointments"
-msgstr "Кездесу"
+msgstr "Кездесулер"
 
 #: koprefsdialog.cpp:452
-#, fuzzy
 #| msgid "Reminder"
 msgctxt "@title:group"
 msgid "Reminders"
-msgstr "Еске салу"
+msgstr "Еске салулар"
 
 #: koprefsdialog.cpp:458
-#, fuzzy
 #| msgid "Default reminder time:"
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "Әдетті алдын-ала еске салу уақыты:"
 
 #: koprefsdialog.cpp:474
-#, fuzzy
 #| msgid "minute(s)"
 msgctxt "@item:inlistbox reminder units in minutes"
 msgid "minute(s)"
 msgstr "минут"
 
 #: koprefsdialog.cpp:476
-#, fuzzy
 #| msgid "hour(s)"
 msgctxt "@item:inlistbox reminder time units in hours"
 msgid "hour(s)"
 msgstr "сағат"
 
 #: koprefsdialog.cpp:478
-#, fuzzy
 #| msgid "day(s)"
 msgctxt "@item:inlistbox reminder time units in days"
 msgid "day(s)"
-msgstr "күн сайын"
+msgstr "күн"
 
 #: koprefsdialog.cpp:567
-#, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general settings"
 msgid "General"
@@ -8450,14 +8371,12 @@ msgstr "Жалпы"
 
 #: koprefsdialog.cpp:573 koprefsdialog.cpp:620 koprefsdialog.cpp:673
 #: koprefsdialog.cpp:701
-#, fuzzy
 #| msgid "Display Options"
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr "Көрсету параметрлері"
 
 #: koprefsdialog.cpp:581
-#, fuzzy
 #| msgctxt "suffix in the N days spin box"
 #| msgid " days"
 msgctxt "@label suffix in the N days spin box"
@@ -8465,21 +8384,18 @@ msgid " days"
 msgstr " күн"
 
 #: koprefsdialog.cpp:596
-#, fuzzy
 #| msgid "Date Navigator"
 msgctxt "@title:group"
 msgid "Date Navigator"
-msgstr "ДАТА НАВИГАТОРЫ"
+msgstr "Күн таңдағышы"
 
 #: koprefsdialog.cpp:614
-#, fuzzy
 #| msgid "Agenda View"
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "Күн тәртіп көрінісі"
 
 #: koprefsdialog.cpp:628
-#, fuzzy
 #| msgctxt "suffix in the hour size spin box"
 #| msgid " pixel"
 msgctxt "@label suffix in the hour size spin box"
@@ -8487,21 +8403,18 @@ msgid " pixels"
 msgstr " пиксел"
 
 #: koprefsdialog.cpp:667
-#, fuzzy
 #| msgid "Month View"
 msgctxt "@title:tab"
 msgid "Month View"
-msgstr "Ай көрнісі"
+msgstr "Айлық көрнісі"
 
 #: koprefsdialog.cpp:695
-#, fuzzy
 #| msgid "To-do View"
 msgctxt "@title:tab"
 msgid "Todo View"
-msgstr "Жоспар көрінісі"
+msgstr "Жоспарлар көрінісі"
 
 #: koprefsdialog.cpp:711
-#, fuzzy
 #| msgid "Other Options"
 msgctxt "@title:group"
 msgid "Other Options"
@@ -8510,17 +8423,15 @@ msgstr "Басқа параметрлері"
 #: koprefsdialog.cpp:746
 msgctxt "@title:tab"
 msgid "Colors"
-msgstr ""
+msgstr "Түстер"
 
 #: koprefsdialog.cpp:787
-#, fuzzy
 #| msgid "Categories"
 msgctxt "@title:group"
 msgid "Categories"
 msgstr "Санаттар"
 
 #: koprefsdialog.cpp:804
-#, fuzzy
 #| msgid ""
 #| "Select here the event category you want to modify. You can change the "
 #| "selected category color using the button below."
@@ -8529,11 +8440,10 @@ msgid ""
 "Select here the event category you want to modify. You can change the "
 "selected category color using the button below."
 msgstr ""
-"Мұнда өзгерткіңіз келген оқиға санатын таңдаңыз. Төмендегі жолақты басып "
-"таңдалған санаттың түсін өзгерте аласыз."
+"Мұнда өзгерткіңіз келген оқиға санатын таңдаңыз. Төмендегі "
+"батырманы басып таңдалған санаттың түсін өзгерте аласыз."
 
 #: koprefsdialog.cpp:813
-#, fuzzy
 #| msgid ""
 #| "Choose here the color of the event category selected using the combo box "
 #| "above."
@@ -8542,18 +8452,16 @@ msgid ""
 "Choose here the color of the event category selected using the combo box "
 "above."
 msgstr ""
-"Мұнда жоғардағы ашылмалы тізімінен таңдалған оқиға санаттың түсін таңдап ала "
-"аласыз."
+"Мұнда жоғардағы ашылмалы тізімінен таңдалған оқиға санаттың түсін "
+"таңдап ала аласыз."
 
 #: koprefsdialog.cpp:821
-#, fuzzy
 #| msgid "Resources"
 msgctxt "@title:group"
 msgid "Resources"
 msgstr "Ресурстар"
 
 #: koprefsdialog.cpp:837
-#, fuzzy
 #| msgid ""
 #| "Select here the event category you want to modify. You can change the "
 #| "selected category color using the button below."
@@ -8562,29 +8470,25 @@ msgid ""
 "Select the calendar you want to modify. You can change the selected calendar "
 "color using the button below."
 msgstr ""
-"Мұнда өзгерткіңіз келген оқиға санатын таңдаңыз. Төмендегі жолақты басып "
-"таңдалған санаттың түсін өзгерте аласыз."
+"Мұнда өзгерткіңіз келген күнтізбені таңдаңыз. Төмендегі батырманы "
+"басып таңдалған күнтібнің түсін өзгерте аласыз."
 
 #: koprefsdialog.cpp:846
-#, fuzzy
 #| msgid ""
 #| "Choose here the color of the resource selected using the combo box above."
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the calendar selected using the combo box above."
 msgstr ""
-"Мұнда жоғардағы ашылмалы тізімінен таңдалған ресурстың түсін таңдап ала "
-"аласыз."
+"Мұнда жоғардағы ашылмалы тізімінен таңдалған күнтізбенің түсін таңдаңыз."
 
 #: koprefsdialog.cpp:855
-#, fuzzy
 #| msgid "month(s)"
 msgctxt "@title:tab"
 msgid "Fonts"
-msgstr "ай сайын"
+msgstr "Қаріптер"
 
 #: koprefsdialog.cpp:870 koprefsdialog.cpp:878
-#, fuzzy
 #| msgid "Event text"
 msgctxt "@label"
 msgid "Event text"
@@ -8593,17 +8497,15 @@ msgstr "Оқиға жазуы"
 #: koprefsdialog.cpp:1000
 msgctxt "@label"
 msgid "Mail transport:"
-msgstr ""
+msgstr "Поштасы:"
 
 #: koprefsdialog.cpp:1009
-#, fuzzy
 #| msgid "Additional email addresses:"
 msgctxt "@label"
 msgid "Additional email addresses:"
 msgstr "Қосымша эл.пошта адрестері:"
 
 #: koprefsdialog.cpp:1011
-#, fuzzy
 #| msgid ""
 #| "Add, edit or remove additional e-mails addresses here. These email "
 #| "addresses are the ones you have in addition to the one set in personal "
@@ -8624,14 +8526,12 @@ msgstr ""
 "тізімінде келтіруіңіз керек."
 
 #: koprefsdialog.cpp:1025
-#, fuzzy
 #| msgid "Additional email address:"
 msgctxt "@label"
 msgid "Additional email address:"
 msgstr "Қосымша эл.пошта адресі:"
 
 #: koprefsdialog.cpp:1027
-#, fuzzy
 #| msgid ""
 #| "Edit additional e-mails addresses here. To edit an address select it from "
 #| "the list above or press the \"New\" button below. These email addresses "
@@ -8648,14 +8548,12 @@ msgstr ""
 "қосымша адрестеріңіз."
 
 #: koprefsdialog.cpp:1041
-#, fuzzy
 #| msgid "New"
 msgctxt "@action:button add a new email address"
 msgid "New"
 msgstr "Жаңа"
 
 #: koprefsdialog.cpp:1044
-#, fuzzy
 #| msgid ""
 #| "Press this button to add a new entry to the additional e-mail addresses "
 #| "list. Use the edit box above to edit the new entry."
@@ -8668,35 +8566,30 @@ msgstr ""
 "басыңыз. Жаңа жазуды өңдеу үшін жоғардағы өңдеу өрісін пайдаланыңыз."
 
 #: koprefsdialog.cpp:1049
-#, fuzzy
 #| msgid "Remove"
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "Өшіру"
 
 #: koprefsdialog.cpp:1088
-#, fuzzy
 #| msgid "(EmptyEmail)"
 msgctxt "@label"
 msgid "(EmptyEmail)"
 msgstr "(Бос эл.пошта адресі)"
 
 #: koprefsdialog.cpp:1310
-#, fuzzy
 #| msgid "Name"
 msgctxt "@title:column plugin name"
 msgid "Name"
 msgstr "Аты"
 
 #: koprefsdialog.cpp:1329
-#, fuzzy
 #| msgid "Configure &Plugin..."
 msgctxt "@action:button"
 msgid "Configure &Plugin..."
-msgstr "&Плагиндерді баптау..."
+msgstr "&Плагинді баптау..."
 
 #: koprefsdialog.cpp:1332
-#, fuzzy
 #| msgid ""
 #| "This button allows you to configure the plugin that you have selected in "
 #| "the list above"
@@ -8705,57 +8598,50 @@ msgid ""
 "This button allows you to configure the plugin that you have selected in the "
 "list above"
 msgstr ""
-"Бұл батырма жоғардағы тізімінен таңдалған плагин модульді баптауға мүмкіндік "
+"Бұл батырма жоғардағы тізімінен таңдалған плагинді баптауға мүмкіндік "
 "береді"
 
 #: koprefsdialog.cpp:1339
-#, fuzzy
 #| msgid "Destination"
 msgctxt "@title:group"
 msgid "Position"
-msgstr "Мақсаты"
+msgstr "Орны"
 
 #: koprefsdialog.cpp:1343
-#, fuzzy
 #| msgid "Show in context"
 msgctxt "@option:check"
 msgid "Show at the top of the agenda views"
-msgstr "Контексте көрсетілсін"
+msgstr "Күн тәртіп көрінісінің жоғарында көрсетілсін"
 
 #: koprefsdialog.cpp:1345
-#, fuzzy
 #| msgid "Show in context"
 msgctxt "@option:check"
 msgid "Show at the bottom of the agenda views"
-msgstr "Контексте көрсетілсін"
+msgstr "Күн тәртіп көрінісінің төменінде көрсетілсін"
 
 #: koprefsdialog.cpp:1378
-#, fuzzy
 #| msgid "Calendar"
 msgctxt "@title:group"
 msgid "Calendar Decorations"
-msgstr "Ресурстар"
+msgstr "Күнтізбе безендіруі"
 
 #: koprefsdialog.cpp:1381
-#, fuzzy
 #| msgid "Print list"
 msgctxt "@title:group"
 msgid "Print Plugins"
-msgstr "Тізімді басу"
+msgstr "Басып шығару плагині"
 
 #: koprefsdialog.cpp:1384
-#, fuzzy
 #| msgid "Other Options"
 msgctxt "@title:group"
 msgid "Other Plugins"
-msgstr "Басқа параметрлері"
+msgstr "Басқа плагиндері"
 
 #: koprefsdialog.cpp:1452
-#, fuzzy
 #| msgid "Unable to configure this plugin"
 msgctxt "@info"
 msgid "Unable to configure this plugin"
-msgstr "Бұл плагин модулі бапталмады"
+msgstr "Бұл плагині бапталмады"
 
 #, fuzzy
 #~| msgid ""
