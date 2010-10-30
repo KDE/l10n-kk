@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-29 06:10+0200\n"
+"POT-Creation-Date: 2010-10-30 06:16+0200\n"
 "PO-Revision-Date: 2010-09-27 04:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -259,17 +259,17 @@ msgctxt "@option Name of the weekday"
 msgid "Sunday"
 msgstr "Жексенбі"
 
-#: resources/resourcelocaldir.cpp:484 akonadimodel.cpp:957
+#: resources/resourcelocaldir.cpp:484 akonadimodel.cpp:941
 msgctxt "@info/plain Directory in filesystem"
 msgid "Directory"
 msgstr "Қапшық"
 
-#: resources/resourcelocal.cpp:268 akonadimodel.cpp:958
+#: resources/resourcelocal.cpp:268 akonadimodel.cpp:942
 msgctxt "@info/plain"
 msgid "File"
 msgstr "Файл"
 
-#: resources/resourceremote.cpp:365 akonadimodel.cpp:956
+#: resources/resourceremote.cpp:365 akonadimodel.cpp:940
 msgctxt "@info/plain"
 msgid "URL"
 msgstr "URL"
@@ -290,7 +290,7 @@ msgid "Alarm templates"
 msgstr "Ескерту үлгілері"
 
 #: resources/alarmresource.cpp:358 resourcemodelview.cpp:114
-#: resourceselector.cpp:713 akonadimodel.cpp:225
+#: resourceselector.cpp:713 akonadimodel.cpp:222
 msgctxt "@info/plain"
 msgid "Read-only"
 msgstr "Тек оқу үшін"
@@ -312,7 +312,7 @@ msgid "Disabled (wrong alarm type)"
 msgstr "Бұғатталған (қате ескертудің түрі)"
 
 #: resources/alarmresource.cpp:359 resourcemodelview.cpp:113
-#: resourceselector.cpp:718 akonadimodel.cpp:224
+#: resourceselector.cpp:718 akonadimodel.cpp:221
 msgctxt "@info/plain"
 msgid "Disabled"
 msgstr "Бұғатталған"
@@ -436,17 +436,17 @@ msgstr "UID-i '%1' оқигасы табылмады."
 msgid "Event with uid '%1' contains no usable alarms."
 msgstr "UID-i '%1' оқигасының істейтін ескертуі жоқ."
 
-#: akonadi/kalarmresource.cpp:181 akonadi/kalarmresource.cpp:207
+#: akonadi/kalarmresource.cpp:182 akonadi/kalarmresource.cpp:208
 msgctxt "@info"
 msgid "Calendar is not in current KAlarm format."
 msgstr "Күнтізбе қазіргі KAlarm пішімінде емес."
 
-#: akonadi/kalarmresource.cpp:214
+#: akonadi/kalarmresource.cpp:215
 #, kde-format
 msgid "Item ID %1 differs from payload ID %2."
 msgstr "Нысанның ID-і %1 келтіргеннен (ID %2) басқа."
 
-#: akonadi/kalarmresource.cpp:223
+#: akonadi/kalarmresource.cpp:224
 #, kde-format
 msgctxt "@info"
 msgid "Event with uid '%1' is read only"
@@ -1268,19 +1268,19 @@ msgctxt "@info/plain"
 msgid "Reactivate multiple alarms"
 msgstr "Бірнеше ескертулерді қайта белсендіру"
 
-#: resourcemodelview.cpp:117 akonadimodel.cpp:229
+#: resourcemodelview.cpp:117 akonadimodel.cpp:226
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
 msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4, %5"
 
-#: resourcemodelview.cpp:123 akonadimodel.cpp:235
+#: resourcemodelview.cpp:123 akonadimodel.cpp:232
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "%1<nl/>%2: <filename>%3</filename><nl/>%4"
 msgstr "%1<nl/>%2: <filename>%3</filename><nl/>%4"
 
-#: resourcemodelview.cpp:129 akonadimodel.cpp:240
+#: resourcemodelview.cpp:129 akonadimodel.cpp:237
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "%1<nl/>%2: <filename>%3</filename>"
@@ -1438,6 +1438,235 @@ msgstr "Дыбыс файлы"
 msgctxt "@title:window"
 msgid "Choose Sound File"
 msgstr "Дыбыс файлды таңдау"
+
+#: alarmcalendar.cpp:309 alarmcalendar.cpp:801
+#, kde-format
+msgctxt "@info"
+msgid "Cannot download calendar: <filename>%1</filename>"
+msgstr "Келесі күнтізбе жүктеп алынбады: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:330
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Error loading calendar:</para><para><filename>%1</filename></"
+"para><para>Please fix or delete the file.</para>"
+msgstr ""
+"<para>Келесі күнтізбені жүктеп алу қатесі:</para><para><filename>%1</"
+"filename></para><para>Файлды жөндеңіз немесе өшіріңіз.</para>"
+
+#: alarmcalendar.cpp:424
+#, kde-format
+msgctxt "@info"
+msgid "Failed to save calendar to <filename>%1</filename>"
+msgstr "Күнтізбе келесіге сақталмады: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:433
+#, kde-format
+msgctxt "@info"
+msgid "Cannot upload calendar to <filename>%1</filename>"
+msgstr "Келесіге күнтізбе жүктеп берілмеді: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:792 alarmcalendar.cpp:819
+#, kde-format
+msgctxt "@info"
+msgid "Could not load calendar <filename>%1</filename>."
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:972
+msgctxt "@title:window"
+msgid "Choose Export Calendar"
+msgstr "Экспортқа күнтізбені таңдау"
+
+#: alarmcalendar.cpp:1000
+#, kde-format
+msgctxt "@info"
+msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
+msgstr "Келесі күнтізбе жалғастыру үшін жүктелмеді: <filename>%1</filename>"
+
+#: alarmcalendar.cpp:1049
+#, kde-format
+msgctxt "@info"
+msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
+msgstr "Жаңа күнтізбе келесіге сақталмады:<nl/><filename>%1</filename>"
+
+#: alarmcalendar.cpp:1055
+#, kde-format
+msgctxt "@info"
+msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
+msgstr "Жаңа күнтізбе келесіге жүктеп берілмеді:<nl/><filename>%1</filename>"
+
+#: fontcolourbutton.cpp:43
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "Қаріп && түс..."
+
+#: fontcolourbutton.cpp:47
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose the font, and foreground and background color, for the alarm message."
+msgstr "Ескерту хабарламасы үшін қаріп, жазу және ая түсін таңдау."
+
+#: fontcolourbutton.cpp:71
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "Ескерту қаріпі мен түсін таңдау"
+
+#: commandoptions.cpp:184
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode>: invalid email address"
+msgstr "<icode>%1</icode>: эл.пошта адресі жарамсыз"
+
+#: commandoptions.cpp:295 commandoptions.cpp:311 commandoptions.cpp:384
+#, kde-format
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
+msgstr ""
+"<icode>%1</icode> параметрі күні ғана анықталған ескерту үшін дұрыс емес"
+
+#: commandoptions.cpp:299
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
+msgstr "<icode>%1</icode> деген <icode>%2</icode> дегеннен ерте"
+
+#: commandoptions.cpp:320
+#, kde-format
+msgctxt "@info:shell"
+msgid ""
+"Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
+"longer than <icode>%3</icode> interval"
+msgstr ""
+"<icode>%1</icode> және <icode>%2</icode> параметрлері: қайталау аралығы "
+"<icode>%3</icode> аралығынан артық"
+
+#: commandoptions.cpp:370
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
+msgctxt "@info:shell"
+msgid ""
+"<icode>%1</icode> requires speech synthesis to be configured using Jovie"
+msgstr ""
+"<icode>%1</icode> деген KTTSD-мен бапталған сөйлеу синтезаторды талап етеді"
+
+#: commandoptions.cpp:467
+msgctxt "@info:shell"
+msgid ": option(s) only valid with an appropriate action option or message"
+msgstr ": параметр(лер) тек тиісті әрекетке не хабарламаға жарайды"
+
+#: commandoptions.cpp:487
+msgctxt "@info:shell"
+msgid ""
+"\n"
+"Use --help to get a list of available command line options.\n"
+msgstr ""
+"\n"
+"Команда жолында қолдануға болатын параметрлер тізімін көру үшін --help "
+"параметрін қолданыңыз.\n"
+
+#: commandoptions.cpp:516
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode>"
+msgstr "<icode>%1</icode> деген <icode>%2</icode> дегенді қажет етеді"
+
+#: commandoptions.cpp:518
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
+msgstr ""
+"<icode>%1</icode> деген <icode>%2</icode> не <icode>%3</icode> дегенді қажет "
+"етеді"
+
+#: commandoptions.cpp:523
+#, kde-format
+msgctxt "@info:shell"
+msgid "Invalid <icode>%1</icode> parameter"
+msgstr "<icode>%1</icode> параметрі дұрыс емес"
+
+#: commandoptions.cpp:534
+#, kde-format
+msgctxt "@info:shell"
+msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
+msgstr "<icode>%1</icode> деген <icode>%2</icode> дегенмен үйлеспейді"
+
+#: templatedlg.cpp:69
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "Ескерту үлгілерінің тізімі"
+
+#: templatedlg.cpp:103
+msgctxt "@action:button"
+msgid "New"
+msgstr "Жаңа"
+
+#: templatedlg.cpp:104
+msgctxt "@action"
+msgid "New"
+msgstr "Жаңа"
+
+#: templatedlg.cpp:107
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "Ескертудің жаңа үлгісін құру"
+
+#: templatedlg.cpp:110 resourceselector.cpp:133
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "Өзгерту..."
+
+#: templatedlg.cpp:112
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "Бояуланып тұрған ескерту үлгісін өңдеу"
+
+#: templatedlg.cpp:115
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: templatedlg.cpp:117
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr "Бояуланып түрған үлгіні негіздеп жаңа ескерту үлгісін құру"
+
+#: templatedlg.cpp:120 recurrenceedit.cpp:364
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: templatedlg.cpp:122
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "Бояуланған ескерту үлгісін өшіру"
+
+#: templatedlg.cpp:211
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "Шынымен %1 таңдалған ескерту үлгіні өшірмексіз бе?"
+
+#: templatedlg.cpp:213
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "Ескерту үлгілерін өшіру"
+
+#: templatedlg.cpp:214 mainwindow.cpp:804
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "Ө&шіру"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2476,235 +2705,6 @@ msgstr "Әр&екеттер"
 msgid "&Settings"
 msgstr "&Баптау"
 
-#: alarmcalendar.cpp:309 alarmcalendar.cpp:801
-#, kde-format
-msgctxt "@info"
-msgid "Cannot download calendar: <filename>%1</filename>"
-msgstr "Келесі күнтізбе жүктеп алынбады: <filename>%1</filename>"
-
-#: alarmcalendar.cpp:330
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Error loading calendar:</para><para><filename>%1</filename></"
-"para><para>Please fix or delete the file.</para>"
-msgstr ""
-"<para>Келесі күнтізбені жүктеп алу қатесі:</para><para><filename>%1</"
-"filename></para><para>Файлды жөндеңіз немесе өшіріңіз.</para>"
-
-#: alarmcalendar.cpp:424
-#, kde-format
-msgctxt "@info"
-msgid "Failed to save calendar to <filename>%1</filename>"
-msgstr "Күнтізбе келесіге сақталмады: <filename>%1</filename>"
-
-#: alarmcalendar.cpp:433
-#, kde-format
-msgctxt "@info"
-msgid "Cannot upload calendar to <filename>%1</filename>"
-msgstr "Келесіге күнтізбе жүктеп берілмеді: <filename>%1</filename>"
-
-#: alarmcalendar.cpp:792 alarmcalendar.cpp:819
-#, kde-format
-msgctxt "@info"
-msgid "Could not load calendar <filename>%1</filename>."
-msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
-
-#: alarmcalendar.cpp:972
-msgctxt "@title:window"
-msgid "Choose Export Calendar"
-msgstr "Экспортқа күнтізбені таңдау"
-
-#: alarmcalendar.cpp:1000
-#, kde-format
-msgctxt "@info"
-msgid "Error loading calendar to append to:<nl/><filename>%1</filename>"
-msgstr "Келесі күнтізбе жалғастыру үшін жүктелмеді: <filename>%1</filename>"
-
-#: alarmcalendar.cpp:1049
-#, kde-format
-msgctxt "@info"
-msgid "Failed to save new calendar to:<nl/><filename>%1</filename>"
-msgstr "Жаңа күнтізбе келесіге сақталмады:<nl/><filename>%1</filename>"
-
-#: alarmcalendar.cpp:1055
-#, kde-format
-msgctxt "@info"
-msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
-msgstr "Жаңа күнтізбе келесіге жүктеп берілмеді:<nl/><filename>%1</filename>"
-
-#: fontcolourbutton.cpp:43
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "Қаріп && түс..."
-
-#: fontcolourbutton.cpp:47
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr "Ескерту хабарламасы үшін қаріп, жазу және ая түсін таңдау."
-
-#: fontcolourbutton.cpp:71
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "Ескерту қаріпі мен түсін таңдау"
-
-#: commandoptions.cpp:184
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode>: invalid email address"
-msgstr "<icode>%1</icode>: эл.пошта адресі жарамсыз"
-
-#: commandoptions.cpp:295 commandoptions.cpp:311 commandoptions.cpp:384
-#, kde-format
-msgctxt "@info:shell"
-msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
-msgstr ""
-"<icode>%1</icode> параметрі күні ғана анықталған ескерту үшін дұрыс емес"
-
-#: commandoptions.cpp:299
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
-msgstr "<icode>%1</icode> деген <icode>%2</icode> дегеннен ерте"
-
-#: commandoptions.cpp:320
-#, kde-format
-msgctxt "@info:shell"
-msgid ""
-"Invalid <icode>%1</icode> and <icode>%2</icode> parameters: repetition is "
-"longer than <icode>%3</icode> interval"
-msgstr ""
-"<icode>%1</icode> және <icode>%2</icode> параметрлері: қайталау аралығы "
-"<icode>%3</icode> аралығынан артық"
-
-#: commandoptions.cpp:370
-#, fuzzy, kde-format
-#| msgctxt "@info:shell"
-#| msgid ""
-#| "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
-msgctxt "@info:shell"
-msgid ""
-"<icode>%1</icode> requires speech synthesis to be configured using Jovie"
-msgstr ""
-"<icode>%1</icode> деген KTTSD-мен бапталған сөйлеу синтезаторды талап етеді"
-
-#: commandoptions.cpp:467
-msgctxt "@info:shell"
-msgid ": option(s) only valid with an appropriate action option or message"
-msgstr ": параметр(лер) тек тиісті әрекетке не хабарламаға жарайды"
-
-#: commandoptions.cpp:487
-msgctxt "@info:shell"
-msgid ""
-"\n"
-"Use --help to get a list of available command line options.\n"
-msgstr ""
-"\n"
-"Команда жолында қолдануға болатын параметрлер тізімін көру үшін --help "
-"параметрін қолданыңыз.\n"
-
-#: commandoptions.cpp:516
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> requires <icode>%2</icode>"
-msgstr "<icode>%1</icode> деген <icode>%2</icode> дегенді қажет етеді"
-
-#: commandoptions.cpp:518
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
-msgstr ""
-"<icode>%1</icode> деген <icode>%2</icode> не <icode>%3</icode> дегенді қажет "
-"етеді"
-
-#: commandoptions.cpp:523
-#, kde-format
-msgctxt "@info:shell"
-msgid "Invalid <icode>%1</icode> parameter"
-msgstr "<icode>%1</icode> параметрі дұрыс емес"
-
-#: commandoptions.cpp:534
-#, kde-format
-msgctxt "@info:shell"
-msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
-msgstr "<icode>%1</icode> деген <icode>%2</icode> дегенмен үйлеспейді"
-
-#: templatedlg.cpp:69
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "Ескерту үлгілері"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "Ескерту үлгілерінің тізімі"
-
-#: templatedlg.cpp:103
-msgctxt "@action:button"
-msgid "New"
-msgstr "Жаңа"
-
-#: templatedlg.cpp:104
-msgctxt "@action"
-msgid "New"
-msgstr "Жаңа"
-
-#: templatedlg.cpp:107
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "Ескертудің жаңа үлгісін құру"
-
-#: templatedlg.cpp:110 resourceselector.cpp:133
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "Өзгерту..."
-
-#: templatedlg.cpp:112
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "Бояуланып тұрған ескерту үлгісін өңдеу"
-
-#: templatedlg.cpp:115
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "Көшіріп алу"
-
-#: templatedlg.cpp:117
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr "Бояуланып түрған үлгіні негіздеп жаңа ескерту үлгісін құру"
-
-#: templatedlg.cpp:120 recurrenceedit.cpp:364
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: templatedlg.cpp:122
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "Бояуланған ескерту үлгісін өшіру"
-
-#: templatedlg.cpp:211
-#, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "Шынымен %1 таңдалған ескерту үлгіні өшірмексіз бе?"
-
-#: templatedlg.cpp:213
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "Ескерту үлгілерін өшіру"
-
-#: templatedlg.cpp:214 mainwindow.cpp:804
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "Ө&шіру"
-
 #: resourceselector.cpp:97
 msgctxt "@title:group"
 msgid "Calendars"
@@ -3248,101 +3248,101 @@ msgid ""
 "cancellation period"
 msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
 
-#: eventlistmodel.cpp:312 akonadimodel.cpp:467
+#: eventlistmodel.cpp:312 akonadimodel.cpp:464
 msgctxt "@info:tooltip"
 msgid "Command execution failed"
 msgstr "Команданы орындау жаңылысы"
 
-#: eventlistmodel.cpp:314 akonadimodel.cpp:469
+#: eventlistmodel.cpp:314 akonadimodel.cpp:466
 msgctxt "@info:tooltip"
 msgid "Pre-alarm action execution failed"
 msgstr "Ескерту алдындағы әрекет жаңылды"
 
-#: eventlistmodel.cpp:316 akonadimodel.cpp:471
+#: eventlistmodel.cpp:316 akonadimodel.cpp:468
 msgctxt "@info:tooltip"
 msgid "Post-alarm action execution failed"
 msgstr "Ескерту кейінгі әрекет жаңылды"
 
-#: eventlistmodel.cpp:318 akonadimodel.cpp:473
+#: eventlistmodel.cpp:318 akonadimodel.cpp:470
 msgctxt "@info:tooltip"
 msgid "Pre- and post-alarm action execution failed"
 msgstr "Ескерту алднғы мен кейінгі әрекет жаңылды"
 
-#: eventlistmodel.cpp:362 akonadimodel.cpp:661
+#: eventlistmodel.cpp:362 akonadimodel.cpp:645
 msgctxt "@title:column"
 msgid "Time"
 msgstr "Уақыты"
 
-#: eventlistmodel.cpp:364 akonadimodel.cpp:663
+#: eventlistmodel.cpp:364 akonadimodel.cpp:647
 msgctxt "@title:column"
 msgid "Time To"
 msgstr "Қалған уақыт"
 
-#: eventlistmodel.cpp:366 akonadimodel.cpp:665
+#: eventlistmodel.cpp:366 akonadimodel.cpp:649
 msgctxt "@title:column"
 msgid "Repeat"
 msgstr "Қайталануы"
 
-#: eventlistmodel.cpp:372 akonadimodel.cpp:671
+#: eventlistmodel.cpp:372 akonadimodel.cpp:655
 msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "Хабарлама, файл не команда"
 
-#: eventlistmodel.cpp:374 akonadimodel.cpp:673
+#: eventlistmodel.cpp:374 akonadimodel.cpp:657
 msgctxt "@title:column Template name"
 msgid "Name"
 msgstr "Атауы"
 
-#: eventlistmodel.cpp:831 eventlistmodel.cpp:869 akonadimodel.cpp:693
-#: akonadimodel.cpp:731
+#: eventlistmodel.cpp:831 eventlistmodel.cpp:869 akonadimodel.cpp:677
+#: akonadimodel.cpp:715
 msgctxt "@info/plain Alarm never occurs"
 msgid "Never"
 msgstr "Ешқашан"
 
-#: eventlistmodel.cpp:875 akonadimodel.cpp:737
+#: eventlistmodel.cpp:875 akonadimodel.cpp:721
 #, no-c-format, kde-format
 msgctxt "@info/plain n days"
 msgid "%1d"
 msgstr "%1к"
 
-#: eventlistmodel.cpp:884 akonadimodel.cpp:746
+#: eventlistmodel.cpp:884 akonadimodel.cpp:730
 #, kde-format
 msgctxt "@info/plain hours:minutes"
 msgid "%1:%2"
 msgstr "%1:%2"
 
-#: eventlistmodel.cpp:887 akonadimodel.cpp:749
+#: eventlistmodel.cpp:887 akonadimodel.cpp:733
 #, kde-format
 msgctxt "@info/plain days hours:minutes"
 msgid "%1d %2:%3"
 msgstr "%1к %2:%3"
 
-#: eventlistmodel.cpp:971 akonadimodel.cpp:1042
+#: eventlistmodel.cpp:971 akonadimodel.cpp:1026
 msgctxt "@info:whatsthis"
 msgid "Next scheduled date and time of the alarm"
 msgstr "Келесі ескертуінің күні мен уақыты"
 
-#: eventlistmodel.cpp:973 akonadimodel.cpp:1044
+#: eventlistmodel.cpp:973 akonadimodel.cpp:1028
 msgctxt "@info:whatsthis"
 msgid "How long until the next scheduled trigger of the alarm"
 msgstr "Келесі ескертуге қанша қалды"
 
-#: eventlistmodel.cpp:975 akonadimodel.cpp:1046
+#: eventlistmodel.cpp:975 akonadimodel.cpp:1030
 msgctxt "@info:whatsthis"
 msgid "How often the alarm recurs"
 msgstr "Ескертуді қайталау аралығы"
 
-#: eventlistmodel.cpp:977 akonadimodel.cpp:1048
+#: eventlistmodel.cpp:977 akonadimodel.cpp:1032
 msgctxt "@info:whatsthis"
 msgid "Background color of alarm message"
 msgstr "Ескерту хабарлама аясының түсі"
 
-#: eventlistmodel.cpp:979 akonadimodel.cpp:1050
+#: eventlistmodel.cpp:979 akonadimodel.cpp:1034
 msgctxt "@info:whatsthis"
 msgid "Alarm type (message, file, command or email)"
 msgstr "Ескертудің түрі (хабарлама, файл, команда немесе эл.пошта)"
 
-#: eventlistmodel.cpp:981 akonadimodel.cpp:1052
+#: eventlistmodel.cpp:981 akonadimodel.cpp:1036
 msgctxt "@info:whatsthis"
 msgid ""
 "Alarm message text, URL of text file to display, command to execute, or "
@@ -3351,7 +3351,7 @@ msgstr ""
 "Ескерту хабрлама мәтіні, көрсетілетін мәтін файл атауы, орындалатын команда "
 "немесе эл.пошта хаттың тақырып жолы"
 
-#: eventlistmodel.cpp:983 akonadimodel.cpp:1054
+#: eventlistmodel.cpp:983 akonadimodel.cpp:1038
 msgctxt "@info:whatsthis"
 msgid "Name of the alarm template"
 msgstr "Ескерту үлгісінің атауы"
@@ -6628,46 +6628,46 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "Ескертудің қосымша қайталауын орнату"
 
-#: akonadimodel.cpp:650
+#: akonadimodel.cpp:634
 msgctxt "@title:column"
 msgid "Calendars"
 msgstr "Күнтізбелер"
 
-#: akonadimodel.cpp:1097
+#: akonadimodel.cpp:1081
 msgctxt "@info/plain"
 msgid "Failed to create new calendar resource"
 msgstr "Жаңа күнтізбе ресурсын құру жаңылысы"
 
-#: akonadimodel.cpp:1097 akonadimodel.cpp:1143 akonadimodel.cpp:1161
-#: akonadimodel.cpp:1473
+#: akonadimodel.cpp:1081 akonadimodel.cpp:1121 akonadimodel.cpp:1139
+#: akonadimodel.cpp:1448
 #, kde-format
 msgctxt "@info"
 msgid "%1<nl/>(%2)"
 msgstr "%1<nl/>(%2)"
 
-#: akonadimodel.cpp:1141
+#: akonadimodel.cpp:1119
 #, kde-format
 msgctxt "@info"
 msgid "Failed to remove calendar <resource>%1</resource>."
 msgstr "<resource>%1</resource> күнтізбесін өшіру жаңылысы."
 
-#: akonadimodel.cpp:1159
+#: akonadimodel.cpp:1137
 #, kde-format
 msgctxt "@info"
 msgid "Failed to update calendar <resource>%1</resource>."
 msgstr "<resource>%1</resource> күнтізбесін жаңарту жаңылысы."
 
-#: akonadimodel.cpp:1464
+#: akonadimodel.cpp:1439
 msgctxt "@info/plain"
 msgid "Failed to create alarm."
 msgstr "Ескертуді құру жаңылысы."
 
-#: akonadimodel.cpp:1466
+#: akonadimodel.cpp:1441
 msgctxt "@info/plain"
 msgid "Failed to update alarm."
 msgstr "Ескертуді жаңарту жаңылысы."
 
-#: akonadimodel.cpp:1468
+#: akonadimodel.cpp:1443
 msgctxt "@info/plain"
 msgid "Failed to delete alarm."
 msgstr "Ескертуді өшіру жаңылысы."
