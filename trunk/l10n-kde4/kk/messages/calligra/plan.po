@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-16 02:45+0100\n"
+"POT-Creation-Date: 2010-12-17 02:52+0100\n"
 "PO-Revision-Date: 2008-10-07 09:52+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -25,6 +25,56 @@ msgstr ""
 "\n"
 "\n"
 
+#: KPlatoXmlLoader.cpp:59
+#, fuzzy
+#| msgid ""
+#| "This document was created with a newer version of KPlato (syntax version: "
+#| "%1)\n"
+#| "Opening it in this version of KPlato will lose some information."
+msgid ""
+"This document has no syntax version.\n"
+"Opening it in Plan may lose information."
+msgstr ""
+"Бұл құжат KPlato-ның жаңарақ (синтаксис нұсқасы: %1) бағдарламасымен "
+"жасалған\n"
+"KPlato-ның қолдағы нұсқасымен ашсаңыз кейбр ақпарат жоғалуы мүмкін."
+
+#: KPlatoXmlLoader.cpp:61
+#, fuzzy
+#| msgid "File-Format Mismatch"
+msgid "File-Format Error"
+msgstr "Файл пішімінің келіспеуі"
+
+#: KPlatoXmlLoader.cpp:61 KPlatoXmlLoader.cpp:73 kptpart.cpp:232
+#: kptpart.cpp:483
+msgid "Continue"
+msgstr "Жалғастыру"
+
+#: KPlatoXmlLoader.cpp:70
+#, fuzzy, kde-format
+#| msgid ""
+#| "This document was created with a newer version of KPlato (syntax version: "
+#| "%1)\n"
+#| "Opening it in this version of KPlato will lose some information."
+msgid ""
+"This document was created with a newer version of KPlato than Plan can "
+"load.\n"
+"Syntax version: %1)\n"
+"Opening it in this version of Plan may lose some information."
+msgstr ""
+"Бұл құжат KPlato-ның жаңарақ (синтаксис нұсқасы: %1) бағдарламасымен "
+"жасалған\n"
+"KPlato-ның қолдағы нұсқасымен ашсаңыз кейбр ақпарат жоғалуы мүмкін."
+
+#: KPlatoXmlLoader.cpp:73 kptpart.cpp:232 kptpart.cpp:483
+msgid "File-Format Mismatch"
+msgstr "Файл пішімінің келіспеуі"
+
+#: KPlatoXmlLoader.cpp:1082
+#, kde-format
+msgid "Document loaded, URL=%1"
+msgstr ""
+
 #: kptbuiltinschedulerplugin.cpp:38
 #, fuzzy
 #| msgid "Not scheduled"
@@ -41,17 +91,18 @@ msgstr ""
 msgid "Insert File"
 msgstr "Құжатты ендіру"
 
-#: kptpart.cpp:198 kptpart.cpp:449
+#: kptpart.cpp:198 kptpart.cpp:470
 msgid "Invalid document. No mimetype specified."
 msgstr "Жарамсыз құжат. MIME түрі келтірілмеген."
 
-#: kptpart.cpp:202
-#, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-vnd.kde.kplato, got %1"
+#: kptpart.cpp:223
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid document. Expected mimetype application/x-vnd.kde.kplato, got %1"
+msgid "Invalid document. Expected mimetype application/x-vnd.kde.plan, got %1"
 msgstr "Жарамсыз құжат. MIME түрі %1, ал керегі application/x-vnd.kde.kplato"
 
-#: kptpart.cpp:209
+#: kptpart.cpp:230
 #, fuzzy, kde-format
 #| msgid ""
 #| "This document was created with a newer version of KPlato (syntax version: "
@@ -65,36 +116,28 @@ msgstr ""
 "жасалған\n"
 "KPlato-ның қолдағы нұсқасымен ашсаңыз кейбр ақпарат жоғалуы мүмкін."
 
-#: kptpart.cpp:211 kptpart.cpp:462
-msgid "File-Format Mismatch"
-msgstr "Файл пішімінің келіспеуі"
-
-#: kptpart.cpp:211 kptpart.cpp:462
-msgid "Continue"
-msgstr "Жалғастыру"
-
-#: kptpart.cpp:352
+#: kptpart.cpp:373
 #, kde-format
 msgid "Could not create the workpackage file for saving: %1"
 msgstr "Сақтайтын жұмысдесте файлы құрылмады: %1"
 
-#: kptpart.cpp:360
+#: kptpart.cpp:381
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "'%1' жазылмады. Дискі толы?"
 
-#: kptpart.cpp:387
+#: kptpart.cpp:408
 msgid "Saving..."
 msgstr "Сақтау..."
 
-#: kptpart.cpp:453
+#: kptpart.cpp:474
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
 msgstr ""
 "Жарамсыз құжат. MIME түрі %1, ал керегі application/x-vnd.kde.kplato.work"
 
-#: kptpart.cpp:460
+#: kptpart.cpp:481
 #, kde-format
 msgid ""
 "This document was created with a newer version of KPlatoWork (syntax "
@@ -105,18 +148,18 @@ msgstr ""
 "жасалған\n"
 "KPlatoWork-тың қолдағы нұсқасымен ашсаңыз кейбр ақпарат жоғалуы мүмкін."
 
-#: kptpart.cpp:694
+#: kptpart.cpp:715
 #, kde-format
 msgid ""
 "The package owner '%1' is not a resource in this project. You must handle "
 "this manually."
 msgstr ""
 
-#: kptpart.cpp:716 kptpart.cpp:727
+#: kptpart.cpp:737 kptpart.cpp:748
 msgid "Nothing to save from this package"
 msgstr ""
 
-#: kptpart.cpp:886
+#: kptpart.cpp:907
 #, fuzzy
 #| msgid "Insert"
 msgid "Insert project"
@@ -1499,7 +1542,7 @@ msgstr ""
 
 #: about/aboutpage.cpp:73
 msgid ""
-"<em>Note:</em> To view these pages when you are in other parts of KPlato, "
+"<em>Note:</em> To view these pages when you are in other parts of Plan, "
 "choose the menu option <em>Help -> Plan Introduction</em>."
 msgstr ""
 
