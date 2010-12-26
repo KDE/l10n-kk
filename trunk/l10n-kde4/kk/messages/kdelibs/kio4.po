@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-09 02:17+0100\n"
+"POT-Creation-Date: 2010-12-26 02:59+0100\n"
 "PO-Revision-Date: 2010-12-07 05:23+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -21,10 +21,9 @@ msgstr ""
 "\n"
 "\n"
 
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "%1 io-slave құру болмайды"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Барлық суреттер"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -33,6 +32,23 @@ msgstr "Кескінді түсіру"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Кескінді танып-талдау"
+
+#: kio/kfileitemdelegate.cpp:236
+#, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 нысан"
+
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "%1 io-slave құру болмайды"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -960,8 +976,8 @@ msgstr "Файл да, қапшық та жоқ"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Келтірілген <strong>%1</strong> файл да, қапшық та жоқ."
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/paste.cpp:64 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908
+#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908 kio/paste.cpp:64
 msgid "File Already Exists"
 msgstr "Бұндай файл атауы қолданыста бар"
 
@@ -1820,131 +1836,80 @@ msgstr "Мақсатты файлын басқаша атаңыз."
 msgid "Undocumented Error"
 msgstr "Беймәлім қате"
 
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
-msgstr "&Барлығына қолдану"
+#: kio/fileundomanager.cpp:116
+msgid "Creating directory"
+msgstr "Қапшықты жасау"
 
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-"Бұл белгі қойылса, батырманы басқанда, қалған тапсырманы орындау барысында "
-"кездесетін қайшылықтар көрсетілген әдісімен шешіледі.\n"
-"Өткізіп жіберуді басқанша, көшірмелеп не жылжытып жатқан файл не қапшық "
-"көздеген қапшықта бар болса әрекетті істеу-істемеуі сұралады."
+#: kio/fileundomanager.cpp:117 kio/job.cpp:171
+msgid "Directory"
+msgstr "Қапшық"
 
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-"Бұл белгі қойылса, батырманы басқанда, қалған тапсырманы орындау барысында "
-"кездесетін қайшылықтар көрсетілген әдісімен шешіледі."
+#: kio/fileundomanager.cpp:119
+msgid "Moving"
+msgstr "Жылжыту"
 
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "Қай&та атау"
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr "&Басқа атауды ұсыну"
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "&Өткізіп жіберу"
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr "Бұл қапшықты көшірмелемеу де жылжытпау да, келесі нысанға ауысу"
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr "Бұл файлды көшірмелемеу де жылжытпау да, келесі нысанға ауысу"
-
-#: kio/renamedialog.cpp:146
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "&Жаза беру"
-
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "Ү&стінен жазу"
-
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-"Көшірмелеп не жылжытып жатқан файл не қапшық көздеген қапшықта бар болса да, "
-"ол әрекетті істей беру.\n"
-"Ондай кездескенде, әрекетті істеу-істемеуі сұралады."
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr "І&стей беру"
-
-#: kio/renamedialog.cpp:162
-#, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Бұл әрекет '%1' дегенді ауыстырады.\n"
-"Жаңасына басқа атау беріңіз:"
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "&Жалғастыра беру"
-
-#: kio/renamedialog.cpp:238
-msgid "This action will overwrite the destination."
-msgstr "Бұл әрекет бар аталымды ауыстырмақ."
-
-#: kio/renamedialog.cpp:240
+#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
+msgctxt "The source of a file operation"
 msgid "Source"
-msgstr "Неден"
+msgstr "Қайдан:"
 
-#: kio/renamedialog.cpp:241
+#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
+msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr "Неге"
+msgstr "Қайда:"
 
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
-msgstr "Ескерту: жаңарағын ауыстырмақсыз."
+#: kio/fileundomanager.cpp:123
+msgid "Deleting"
+msgstr "Өшіру"
 
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "'%1' дегеннің ескісі бар екен."
+#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
+msgid "File"
+msgstr "Файл"
 
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "'%1' дегенның ұқсас файлы бар екен."
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr "Қ&айту"
 
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "'%1' дегеннің одан жаңасы бар екен."
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr "Қ&айту: Көшіріп алу"
 
-#: kio/renamedialog.cpp:293
-msgid "Rename:"
-msgstr "Қайта атау"
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr "Қ&айту: Сілтемелеу"
 
-#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
-#: kio/kdirlister.cpp:331
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr "Қ&айту: Жылжыту"
+
+#: kio/fileundomanager.cpp:294
+msgid "Und&o: Rename"
+msgstr "Қ&айту: Қайта атау"
+
+#: kio/fileundomanager.cpp:296
+msgid "Und&o: Trash"
+msgstr "Қ&айту: Шелекке тастау"
+
+#: kio/fileundomanager.cpp:298
+msgid "Und&o: Create Folder"
+msgstr "Қ&айту: Қапшықты құру"
+
+#: kio/fileundomanager.cpp:764
 #, kde-format
 msgid ""
-"Malformed URL\n"
-"%1"
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
 msgstr ""
-"Жарамсыз URL\n"
-"%1"
+"%1 файлы %2 дегеннен көшіріп алынған, бірақ, бәлкім, %3 кезінде "
+"өзгертілген.\n"
+"Көшіріп алудан қайту оны өшіреді де, барлық өзгерістер жоғалады.\n"
+"Сонымен, %4 дегенді өшірмексіз бе?"
+
+#: kio/fileundomanager.cpp:767
+msgid "Undo File Copy Confirmation"
+msgstr "Көшіріп алудан қайтуды құптау"
 
 #: kio/kdesktopfileactions.cpp:65
 #, kde-format
@@ -1995,6 +1960,54 @@ msgstr "Шығарып алу"
 
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
+msgstr "Тіркеуден шығару"
+
+#: kio/job.cpp:156
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Жылжыту"
+
+#: kio/job.cpp:163
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Көшірмелеу"
+
+#: kio/job.cpp:170
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Қапшықты жасау"
+
+#: kio/job.cpp:176
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "Өшіру"
+
+#: kio/job.cpp:182
+msgctxt "@title job"
+msgid "Examining"
+msgstr "Қарастыру"
+
+#: kio/job.cpp:188
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "Тасымалдау"
+
+#: kio/job.cpp:194
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Тіркеу"
+
+#: kio/job.cpp:195
+msgid "Device"
+msgstr "Құрылғы"
+
+#: kio/job.cpp:196 kio/job.cpp:202
+msgid "Mountpoint"
+msgstr "Тіркеу нүктесі"
+
+#: kio/job.cpp:201
+msgctxt "@title job"
+msgid "Unmounting"
 msgstr "Тіркеуден шығару"
 
 #: kio/slave.cpp:442
@@ -2134,148 +2147,38 @@ msgstr ""
 "SSL куәлігі, орнатылған параметрлерге қайшы келіп, қабылданбады. Қайшы "
 "келген параметрді із KDE жүйе параметрлерінде өзгертуге болады."
 
-#: kio/kfileitemdelegate.cpp:236
-#, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "%1 нысан"
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr "&Иә"
 
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Беймәлім"
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr "&Жоқ"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Авторизация диалогы"
 
-#: kio/job.cpp:156
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Жылжыту"
-
-#: kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189 kio/fileundomanager.cpp:120
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Қайдан:"
-
-#: kio/job.cpp:158 kio/job.cpp:165 kio/fileundomanager.cpp:121
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Қайда:"
-
-#: kio/job.cpp:163
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Көшірмелеу"
-
-#: kio/job.cpp:170
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Қапшықты жасау"
-
-#: kio/job.cpp:171 kio/fileundomanager.cpp:117
-msgid "Directory"
-msgstr "Қапшық"
-
-#: kio/job.cpp:176
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "Өшіру"
-
-#: kio/job.cpp:177 kio/job.cpp:183 kio/fileundomanager.cpp:124
-msgid "File"
-msgstr "Файл"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr "Қарастыру"
-
-#: kio/job.cpp:188
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "Тасымалдау"
-
-#: kio/job.cpp:194
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Тіркеу"
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "Құрылғы"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "Тіркеу нүктесі"
-
-#: kio/job.cpp:201
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Тіркеуден шығару"
-
-#: kio/fileundomanager.cpp:116
-msgid "Creating directory"
-msgstr "Қапшықты жасау"
-
-#: kio/fileundomanager.cpp:119
-msgid "Moving"
-msgstr "Жылжыту"
-
-#: kio/fileundomanager.cpp:123
-msgid "Deleting"
-msgstr "Өшіру"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr "Қ&айту"
-
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr "Қ&айту: Көшіріп алу"
-
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr "Қ&айту: Сілтемелеу"
-
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr "Қ&айту: Жылжыту"
-
-#: kio/fileundomanager.cpp:294
-msgid "Und&o: Rename"
-msgstr "Қ&айту: Қайта атау"
-
-#: kio/fileundomanager.cpp:296
-msgid "Und&o: Trash"
-msgstr "Қ&айту: Шелекке тастау"
-
-#: kio/fileundomanager.cpp:298
-msgid "Und&o: Create Folder"
-msgstr "Қ&айту: Қапшықты құру"
-
-#: kio/fileundomanager.cpp:764
-#, kde-format
-msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
-msgstr ""
-"%1 файлы %2 дегеннен көшіріп алынған, бірақ, бәлкім, %3 кезінде "
-"өзгертілген.\n"
-"Көшіріп алудан қайту оны өшіреді де, барлық өзгерістер жоғалады.\n"
-"Сонымен, %4 дегенді өшірмексіз бе?"
-
-#: kio/fileundomanager.cpp:767
-msgid "Undo File Copy Confirmation"
-msgstr "Көшіріп алудан қайтуды құптау"
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "Әдеттегі"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "Деректер пішімі:"
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "Мәліметі"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Өткізіп жіберу"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
+msgstr "Авто өткізіп жіберу"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, kde-format
@@ -2359,80 +2262,6 @@ msgstr "Иесі:"
 msgid "Permissions:"
 msgstr "Рұқсаттары:"
 
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr "Алмасу буферінің мазмұны үшін файл атауы:"
-
-#: kio/paste.cpp:124
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"Алмасу буферінің мазмұны өзгертілген. Жаңасы бұрын таңдалған пішіміне сәйкес "
-"келмейді. Орналастыруға қажеттісін қайта көшірмелеңіз."
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr "Алмасу буфері бос"
-
-#: kio/paste.cpp:339
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "%1 файлды о&рналастыру"
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "%1 URL-ды о&рналастыру"
-
-#: kio/paste.cpp:343
-msgid "&Paste Clipboard Contents"
-msgstr "Алмасу буферінің мазмұнын о&рналастыру"
-
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr "&Иә"
-
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr "&Жоқ"
-
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Жүйе конфигурациясын жаңарту"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Жүйе конфигурациясын жаңарту."
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr "Компьютер желіден тыс"
-
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "Әдеттегі"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "Мәліметі"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Өткізіп жіберу"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr "Авто өткізіп жіберу"
-
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2501,6 +2330,16 @@ msgstr "Бағдарлама күдікті десеңіз 'Қайту' деге
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr "%1 қызметі орындалатын қылу болмады да, доғарылды"
 
+#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
+#: kio/kdirlister.cpp:331
+#, kde-format
+msgid ""
+"Malformed URL\n"
+"%1"
+msgstr ""
+"Жарамсыз URL\n"
+"%1"
+
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2515,14 +2354,174 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "'%1' деген бағдарлама табылмады"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Барлық суреттер"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
+msgstr "Бұл қапшық атауы ретінде бар екен"
 
-#: kio/kdbusservicestarter.cpp:76
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Жүйе конфигурациясын жаңарту"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Жүйе конфигурациясын жаңарту."
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr "Компьютер желіден тыс"
+
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
+msgstr "&Барлығына қолдану"
+
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+"Бұл белгі қойылса, батырманы басқанда, қалған тапсырманы орындау барысында "
+"кездесетін қайшылықтар көрсетілген әдісімен шешіледі.\n"
+"Өткізіп жіберуді басқанша, көшірмелеп не жылжытып жатқан файл не қапшық "
+"көздеген қапшықта бар болса әрекетті істеу-істемеуі сұралады."
+
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+"Бұл белгі қойылса, батырманы басқанда, қалған тапсырманы орындау барысында "
+"кездесетін қайшылықтар көрсетілген әдісімен шешіледі."
+
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "Қай&та атау"
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr "&Басқа атауды ұсыну"
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "&Өткізіп жіберу"
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr "Бұл қапшықты көшірмелемеу де жылжытпау да, келесі нысанға ауысу"
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr "Бұл файлды көшірмелемеу де жылжытпау да, келесі нысанға ауысу"
+
+#: kio/renamedialog.cpp:146
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "&Жаза беру"
+
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "Ү&стінен жазу"
+
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+"Көшірмелеп не жылжытып жатқан файл не қапшық көздеген қапшықта бар болса да, "
+"ол әрекетті істей беру.\n"
+"Ондай кездескенде, әрекетті істеу-істемеуі сұралады."
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr "І&стей беру"
+
+#: kio/renamedialog.cpp:162
 #, kde-format
-msgid "No service implementing %1"
-msgstr "%1 дегенді жүзеге асыратын қызмет жоқ"
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Бұл әрекет '%1' дегенді ауыстырады.\n"
+"Жаңасына басқа атау беріңіз:"
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "&Жалғастыра беру"
+
+#: kio/renamedialog.cpp:238
+msgid "This action will overwrite the destination."
+msgstr "Бұл әрекет бар аталымды ауыстырмақ."
+
+#: kio/renamedialog.cpp:240
+msgid "Source"
+msgstr "Неден"
+
+#: kio/renamedialog.cpp:241
+msgid "Destination"
+msgstr "Неге"
+
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
+msgstr "Ескерту: жаңарағын ауыстырмақсыз."
+
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "'%1' дегеннің ескісі бар екен."
+
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "'%1' дегенның ұқсас файлы бар екен."
+
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "'%1' дегеннің одан жаңасы бар екен."
+
+#: kio/renamedialog.cpp:293
+msgid "Rename:"
+msgstr "Қайта атау"
+
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr "Алмасу буферінің мазмұны үшін файл атауы:"
+
+#: kio/paste.cpp:124
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"Алмасу буферінің мазмұны өзгертілген. Жаңасы бұрын таңдалған пішіміне сәйкес "
+"келмейді. Орналастыруға қажеттісін қайта көшірмелеңіз."
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr "Алмасу буфері бос"
+
+#: kio/paste.cpp:339
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "%1 файлды о&рналастыру"
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "%1 URL-ды о&рналастыру"
+
+#: kio/paste.cpp:343
+msgid "&Paste Clipboard Contents"
+msgstr "Алмасу буферінің мазмұнын о&рналастыру"
 
 #: kio/kdirlister.cpp:341
 #, kde-format
@@ -2533,9 +2532,10 @@ msgstr ""
 "URL тізімдеуге келмейді\n"
 "%1"
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
-msgstr "Бұл қапшық атауы ретінде бар екен"
+#: kio/kdbusservicestarter.cpp:76
+#, kde-format
+msgid "No service implementing %1"
+msgstr "%1 дегенді жүзеге асыратын қызмет жоқ"
 
 #: kio/chmodjob.cpp:214
 #, kde-format
@@ -2881,6 +2881,107 @@ msgstr "Жаңа қойындысында ашылсын"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Opera бетбелгі файлдары (*.adr)"
 
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "Мәлім қолданбалар"
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "Мынамен ашу"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt><b>%1</b> дегенді ашатын бағдарламаны таңдаңыз. Егер керек бағдарлама "
+"тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</"
+"qt>"
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "Таңдалған файлдарды ашатын бағдарламаның атауын келтіріңіз."
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "%1 үшін қолданбаны таңдау"
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt><b>%1</b> түріндегі файлды ашатын бағдарламаны таңдаңыз. Егер керек "
+"бағдарлама тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" "
+"батырмасын басыңыз.</qt>"
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "Қолданбаны таңдау"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>Бағдарламаны таңдаңыз. Егер керек бағдарлама тізімде болмаса, оның "
+"атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</qt>"
+
+#: kfile/kopenwithdialog.cpp:600
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"Командадан кейін, бағдарламаны жеккенде нақты мәндерімен алмастырылатын "
+"келесі параметрлерді келтіруге болады:\n"
+"%f - бір файлдың атауы\n"
+"%F - файлдардың тізімі, қолданба бірден бірнеше файлдарды ашатын жағдайда "
+"қолданылады\n"
+"%u - бір URL\n"
+"%U - бірнеше URL адресінің тізімі\n"
+"%d - ашылатын файлдың каталогы\n"
+"%D - каталогтар тізімі\n"
+"%i - таңбаша \n"
+"%m - шағын таңбаша\n"
+"%c - түсініктеме"
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr "&Терминалда орындалсын"
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr "&Орындалғаннан кейін жабылмасын"
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr "Бұл файл үшін қолданбаның сәйкестігі &жатталсын"
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr "'%1' дегеннен орындалатын бағдарлама шықпады, атауын дұрыс келтіріңіз."
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr "'%1' деген табылмады, атауын дұрыс келтіріңіз."
+
 #: kfile/kfiledialog.cpp:129
 msgid "*|All files"
 msgstr "*|Барлық файлдар"
@@ -2905,9 +3006,33 @@ msgstr "Ашу"
 msgid "Save As"
 msgstr "Былай сақтау"
 
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Қате>"
+
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr "Файлдар диалогын ашу"
+
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "Көрсететін деректерін баптау"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr "Қандай деректер көрсетілетінін таңдаңыз:"
+
+#: kfile/kmetaprops.cpp:120
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "Баптау..."
+
+#: kfile/kmetaprops.cpp:130
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Мәлімет"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3006,33 +3131,9 @@ msgstr "x"
 msgid "Effective"
 msgstr "Эффективті бит"
 
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "Көрсететін деректерін баптау"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr "Қандай деректер көрсетілетінін таңдаңыз:"
-
-#: kfile/kmetaprops.cpp:120
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "Баптау..."
-
-#: kfile/kmetaprops.cpp:130
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Мәлімет"
-
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr "Құрылғының атауы"
-
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "Орналасуы:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3109,281 +3210,33 @@ msgstr ""
 "'%1' қапшығын ортақтастырудан шығару кезде қате пайда болды. 'fileshareset' "
 "Perl скриптіне suid root қойылғанын тексеріңіз."
 
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "Орналасуы:"
+
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "Но&байлау"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+#: kfile/kcommentwidget.cpp:65
 msgctxt "@label"
-msgid "Comment"
-msgstr "Түсініктеме"
+msgid "Add Comment..."
+msgstr "Түсініктемені қосу..."
 
-#: kfile/knfotranslator.cpp:41
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Құрылған кезі"
-
-#: kfile/knfotranslator.cpp:42
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Өлшемі"
-
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr "Тәуелді"
-
-#: kfile/knfotranslator.cpp:44
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "Мамұның құрушысы"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr "Логикалық бөлігі бар"
-
-#: kfile/knfotranslator.cpp:46
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Аталық қапшығы"
-
-#: kfile/knfotranslator.cpp:47
+#: kfile/kcommentwidget.cpp:71
 msgctxt "@label"
-msgid "Keyword"
-msgstr "Түйінді сөз"
+msgid "Change..."
+msgstr "Өзгерту..."
 
-#: kfile/knfotranslator.cpp:48
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Өзгертілген"
+#: kfile/kcommentwidget.cpp:124
+msgctxt "@title:window"
+msgid "Change Comment"
+msgstr "Түсініктемені өзгерту"
 
-#: kfile/knfotranslator.cpp:49
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "MIME түрі"
-
-#: kfile/knfotranslator.cpp:50
-msgctxt "@label"
-msgid "Content"
-msgstr "Мазмұны"
-
-#: kfile/knfotranslator.cpp:51
-msgctxt "@label"
-msgid "Subject"
-msgstr "Тақырыбы"
-
-#: kfile/knfotranslator.cpp:52
-msgctxt "@label music title"
-msgid "Title"
-msgstr "Атауы"
-
-#: kfile/knfotranslator.cpp:53
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Орналасуы"
-
-#: kfile/knfotranslator.cpp:54
-msgctxt "@label"
-msgid "Creator"
-msgstr "Құрғаны"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr "Орташа битлек жылдамдығы"
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr "Арналары"
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "Таңбалар саны"
-
-#: kfile/knfotranslator.cpp:58
-msgctxt "@label"
-msgid "Codec"
-msgstr "Кодек"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr "Түстер байлығы"
-
-#: kfile/knfotranslator.cpp:60
-msgctxt "@label"
-msgid "Duration"
-msgstr "Ұзақтық"
-
-#: kfile/knfotranslator.cpp:61
-msgctxt "@label"
-msgid "Filename"
-msgstr "Файл атауы"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr "Биіктік"
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr "Ішінаралау режімі"
-
-#: kfile/knfotranslator.cpp:64
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Жолдар"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr "Программалау тілі"
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr "Дискретизациясы"
-
-#: kfile/knfotranslator.cpp:67
-msgctxt "@label"
-msgid "Width"
-msgstr "Ені"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr "Сөздер саны"
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr "Апертурасы"
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr "Экспозицияның ығысуы"
-
-#: kfile/knfotranslator.cpp:71
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Экспозиция уақыты"
-
-#: kfile/knfotranslator.cpp:72
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Жарқыл"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr "Тоғыс қашықтығы"
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr "Тоғыс қашықтығы 35 мм"
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr "ISO жарыққа сезімділігі"
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "Жасап шығару"
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr "Өлшеу режімі"
-
-#: kfile/knfotranslator.cpp:78
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "Моделі"
-
-#: kfile/knfotranslator.cpp:79
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Бағыты"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr "Ақтың деңгейі"
-
-#: kfile/knfotranslator.cpp:81
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "Жанры"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr "Альбомы"
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr "Орындаушысы"
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr "Жолсызығы"
-
-#: kfile/knfotranslator.cpp:85
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Түрі"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr "Дүмбілездер саны"
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr "Соңғы аударушысы"
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr "Ескіргендер саны"
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr "Аударатының шыққан кезі"
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr "Жалпы саны"
-
-#: kfile/knfotranslator.cpp:91
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr "Аударылған"
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr "Аударылған кезі"
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr "Аударылмаған"
+#: kfile/kcommentwidget.cpp:125
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Түсініктемені қосу"
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -3942,6 +3795,278 @@ msgstr "Орындалауы тек жергілікті файл үшін қо�
 msgid "Advanced Options for %1"
 msgstr "%1 үшін қосымша параметрлері"
 
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
+msgctxt "@label"
+msgid "Comment"
+msgstr "Түсініктеме"
+
+#: kfile/knfotranslator.cpp:41
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Құрылған кезі"
+
+#: kfile/knfotranslator.cpp:42
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr "Тәуелді"
+
+#: kfile/knfotranslator.cpp:44
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "Мамұның құрушысы"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr "Логикалық бөлігі бар"
+
+#: kfile/knfotranslator.cpp:46
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Аталық қапшығы"
+
+#: kfile/knfotranslator.cpp:47
+msgctxt "@label"
+msgid "Keyword"
+msgstr "Түйінді сөз"
+
+#: kfile/knfotranslator.cpp:48
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "Өзгертілген"
+
+#: kfile/knfotranslator.cpp:49
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "MIME түрі"
+
+#: kfile/knfotranslator.cpp:50
+msgctxt "@label"
+msgid "Content"
+msgstr "Мазмұны"
+
+#: kfile/knfotranslator.cpp:51
+msgctxt "@label"
+msgid "Subject"
+msgstr "Тақырыбы"
+
+#: kfile/knfotranslator.cpp:52
+msgctxt "@label music title"
+msgid "Title"
+msgstr "Атауы"
+
+#: kfile/knfotranslator.cpp:53
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Орналасуы"
+
+#: kfile/knfotranslator.cpp:54
+msgctxt "@label"
+msgid "Creator"
+msgstr "Құрғаны"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr "Орташа битлек жылдамдығы"
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr "Арналары"
+
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "Таңбалар саны"
+
+#: kfile/knfotranslator.cpp:58
+msgctxt "@label"
+msgid "Codec"
+msgstr "Кодек"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr "Түстер байлығы"
+
+#: kfile/knfotranslator.cpp:60
+msgctxt "@label"
+msgid "Duration"
+msgstr "Ұзақтық"
+
+#: kfile/knfotranslator.cpp:61
+msgctxt "@label"
+msgid "Filename"
+msgstr "Файл атауы"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr "Биіктік"
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr "Ішінаралау режімі"
+
+#: kfile/knfotranslator.cpp:64
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Жолдар"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr "Программалау тілі"
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr "Дискретизациясы"
+
+#: kfile/knfotranslator.cpp:67
+msgctxt "@label"
+msgid "Width"
+msgstr "Ені"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr "Сөздер саны"
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr "Апертурасы"
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr "Экспозицияның ығысуы"
+
+#: kfile/knfotranslator.cpp:71
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Экспозиция уақыты"
+
+#: kfile/knfotranslator.cpp:72
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Жарқыл"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr "Тоғыс қашықтығы"
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr "Тоғыс қашықтығы 35 мм"
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr "ISO жарыққа сезімділігі"
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "Жасап шығару"
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr "Өлшеу режімі"
+
+#: kfile/knfotranslator.cpp:78
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "Моделі"
+
+#: kfile/knfotranslator.cpp:79
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Бағыты"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr "Ақтың деңгейі"
+
+#: kfile/knfotranslator.cpp:81
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "Жанры"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr "Альбомы"
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr "Орындаушысы"
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr "Жолсызығы"
+
+#: kfile/knfotranslator.cpp:85
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Түрі"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr "Дүмбілездер саны"
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr "Соңғы аударушысы"
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr "Ескіргендер саны"
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr "Аударатының шыққан кезі"
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr "Жалпы саны"
+
+#: kfile/knfotranslator.cpp:91
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr "Аударылған"
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr "Аударылған кезі"
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr "Аударылмаған"
+
 #: kfile/kfilemetadataprovider.cpp:414
 msgctxt "@label"
 msgid "Modified"
@@ -3981,131 +4106,6 @@ msgstr "Жалпы өлшемі"
 msgctxt "@label"
 msgid "Type"
 msgstr "Түрі"
-
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Қате>"
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "Мәлім қолданбалар"
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "Мынамен ашу"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt><b>%1</b> дегенді ашатын бағдарламаны таңдаңыз. Егер керек бағдарлама "
-"тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</"
-"qt>"
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "Таңдалған файлдарды ашатын бағдарламаның атауын келтіріңіз."
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "%1 үшін қолданбаны таңдау"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt><b>%1</b> түріндегі файлды ашатын бағдарламаны таңдаңыз. Егер керек "
-"бағдарлама тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" "
-"батырмасын басыңыз.</qt>"
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "Қолданбаны таңдау"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>Бағдарламаны таңдаңыз. Егер керек бағдарлама тізімде болмаса, оның "
-"атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</qt>"
-
-#: kfile/kopenwithdialog.cpp:600
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"Командадан кейін, бағдарламаны жеккенде нақты мәндерімен алмастырылатын "
-"келесі параметрлерді келтіруге болады:\n"
-"%f - бір файлдың атауы\n"
-"%F - файлдардың тізімі, қолданба бірден бірнеше файлдарды ашатын жағдайда "
-"қолданылады\n"
-"%u - бір URL\n"
-"%U - бірнеше URL адресінің тізімі\n"
-"%d - ашылатын файлдың каталогы\n"
-"%D - каталогтар тізімі\n"
-"%i - таңбаша \n"
-"%m - шағын таңбаша\n"
-"%c - түсініктеме"
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr "&Терминалда орындалсын"
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr "&Орындалғаннан кейін жабылмасын"
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr "Бұл файл үшін қолданбаның сәйкестігі &жатталсын"
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr "'%1' дегеннен орындалатын бағдарлама шықпады, атауын дұрыс келтіріңіз."
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr "'%1' деген табылмады, атауын дұрыс келтіріңіз."
-
-#: kfile/kcommentwidget.cpp:65
-msgctxt "@label"
-msgid "Add Comment..."
-msgstr "Түсініктемені қосу..."
-
-#: kfile/kcommentwidget.cpp:71
-msgctxt "@label"
-msgid "Change..."
-msgstr "Өзгерту..."
-
-#: kfile/kcommentwidget.cpp:124
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "Түсініктемені өзгерту"
-
-#: kfile/kcommentwidget.cpp:125
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Түсініктемені қосу"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4211,6 +4211,40 @@ msgstr "telnet протоколын өңдеуші"
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "%1 протоколға қатынауға рұқсатыңыз жоқ."
+
+#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
+#, kde-format
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 бастап %2 дейін"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+msgid "System certificates"
+msgstr "Жүйелік куәліктер"
+
+#: kssl/kcm/cacertificatespage.cpp:138
+msgid "User-added certificates"
+msgstr "Пайдаланушы қосқан куәліктер"
+
+#: kssl/kcm/cacertificatespage.cpp:295
+msgid "Pick Certificates"
+msgstr "Куәліктерін таңдау"
+
+#: kssl/kcm/kcmssl.cpp:40
+msgid "SSL Configuration Module"
+msgstr "SSL баптау модулі"
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr "Copyright 2010 Andreas Hartmetz"
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr "Andreas Hartmetz"
+
+#: kssl/kcm/kcmssl.cpp:55
+msgid "SSL Signers"
+msgstr "SSL растаушылары"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4604,12 +4638,6 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr "Иә"
 
-#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
-#, kde-format
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 бастап %2 дейін"
-
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "Куәлік"
@@ -4702,34 +4730,6 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr "Гринвич уақыты"
-
-#: kssl/kcm/cacertificatespage.cpp:131
-msgid "System certificates"
-msgstr "Жүйелік куәліктер"
-
-#: kssl/kcm/cacertificatespage.cpp:138
-msgid "User-added certificates"
-msgstr "Пайдаланушы қосқан куәліктер"
-
-#: kssl/kcm/cacertificatespage.cpp:295
-msgid "Pick Certificates"
-msgstr "Куәліктерін таңдау"
-
-#: kssl/kcm/kcmssl.cpp:40
-msgid "SSL Configuration Module"
-msgstr "SSL баптау модулі"
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr "Copyright 2010 Andreas Hartmetz"
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr "Andreas Hartmetz"
-
-#: kssl/kcm/kcmssl.cpp:55
-msgid "SSL Signers"
-msgstr "SSL растаушылары"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5093,7 +5093,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:327
+#: rc.cpp:168 rc.cpp:234
 msgid "Add..."
 msgstr "Қосу..."
 
@@ -5111,7 +5111,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:324
+#: rc.cpp:174 rc.cpp:231
 msgid "Remove"
 msgstr "Өшіру"
 
@@ -5131,206 +5131,27 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "Қосым&ша параметрлері"
 
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:183
-msgid "[padlock]"
-msgstr "[құлып]"
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:187
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "Адресі:"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:191
-msgid "IP address:"
-msgstr "IP адресі:"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:195
-msgid "Encryption:"
-msgstr "Шифрлауы:"
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:199
-msgid "Details:"
-msgstr "Егжей-тегжейі:"
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:203
-msgid "SSL version:"
-msgstr "SSL нұсқасы:"
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:207
-msgid "Certificate chain:"
-msgstr "Куәлік тізбегі:"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:210
-msgid "Trusted:"
-msgstr "Сенім арттыруы:"
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:214
-msgid "Validity period:"
-msgstr "Жарамдылық басы:"
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:218
-msgid "Serial number:"
-msgstr "Сериялық нөмірі:"
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:222
-msgid "MD5 digest:"
-msgstr "MD5 дайджесті:"
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:225
-msgid "SHA1 digest:"
-msgstr "SHA1 дайджесті:"
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:228
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-"Куәлікті сұраудың паролін таңдаңыз. Пароль жеке кілтіңізді шифрлау үшін "
-"қолданылады - мықты паролді таңдаңыз."
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:231
-msgid "&Repeat password:"
-msgstr "Паролдің қай&талауы:"
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:234
-msgid "&Choose password:"
-msgstr "&Тандалған пароль:"
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:237
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-"Сіз қауіпсіздік куәлігін түсіріп не сатып алмақсыз. Бұл шебер куәлікке ие "
-"болу процедурасын өтуге көмектеседі. Шеберден кез келген уақытта, әрекетті "
-"доғарып, айнуға болады."
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:240
-msgid "Common name:"
-msgstr "Жалпы атауы:"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:243
-msgid "Acme Co."
-msgstr "Acme Co."
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:246
-msgid "Organization:"
-msgstr "Ұйымы:"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:249
-msgid "Acme Sundry Products Company"
-msgstr "Acme Sundry Products Company"
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:252
-msgid "Organizational unit:"
-msgstr "Ұйым бөлімі:"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:255
-msgid "Fraud Department"
-msgstr "Fraud Department"
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:258
-msgid "Country:"
-msgstr "Ел:"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:261
-msgid "Canada"
-msgstr "Канада"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:264
-msgid "State:"
-msgstr "Штат:"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:267
-msgid "Quebec"
-msgstr "Квебек"
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:270
-msgid "City:"
-msgstr "Қаласы:"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:273
-msgid "Lakeridge Meadows"
-msgstr "Лейкридж Мидоуз"
-
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:276
+#: rc.cpp:183
 msgid "<b>Subject Information</b>"
 msgstr "<b>Тақырып мәліметі</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:279
+#: rc.cpp:186
 msgid "<b>Issuer Information</b>"
 msgstr "<b>Шығарушы туралы мәлімет</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:282
+#: rc.cpp:189
 msgid "<b>Other</b>"
 msgstr "<b>Басқа</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:285
+#: rc.cpp:192
 msgid "Validity period"
 msgstr "Жарамдылық басы:"
 
@@ -5342,57 +5163,236 @@ msgstr "Жарамдылық басы:"
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
+#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
 msgid "TextLabel"
 msgstr "TextLabel"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:291
+#: rc.cpp:198
 msgid "Serial number"
 msgstr "Тізбекті нөмірі"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:297
+#: rc.cpp:204
 msgid "MD5 digest"
 msgstr "MD5 дайджесті"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:303
+#: rc.cpp:210
 msgid "SHA1 digest"
 msgstr "SHA1 дайджесті"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:309
+#: rc.cpp:216
 msgid "Organization / Common Name"
 msgstr "Ұйым/Жалпы атауы"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:312
+#: rc.cpp:219
 msgid "Organizational Unit"
 msgstr "Ұйым бөлімі"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:315
+#: rc.cpp:222
 msgid "Display..."
 msgstr "Көрсету..."
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:318
+#: rc.cpp:225
 msgid "Disable"
 msgstr "Бұғаттау"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:321
+#: rc.cpp:228
 msgid "Enable"
 msgstr "Рұқсат ету"
+
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:237
+msgid "[padlock]"
+msgstr "[құлып]"
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:241
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "Адресі:"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:245
+msgid "IP address:"
+msgstr "IP адресі:"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:249
+msgid "Encryption:"
+msgstr "Шифрлауы:"
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:253
+msgid "Details:"
+msgstr "Егжей-тегжейі:"
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:257
+msgid "SSL version:"
+msgstr "SSL нұсқасы:"
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:261
+msgid "Certificate chain:"
+msgstr "Куәлік тізбегі:"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:264
+msgid "Trusted:"
+msgstr "Сенім арттыруы:"
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:268
+msgid "Validity period:"
+msgstr "Жарамдылық басы:"
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:272
+msgid "Serial number:"
+msgstr "Сериялық нөмірі:"
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:276
+msgid "MD5 digest:"
+msgstr "MD5 дайджесті:"
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:279
+msgid "SHA1 digest:"
+msgstr "SHA1 дайджесті:"
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:282
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+"Куәлікті сұраудың паролін таңдаңыз. Пароль жеке кілтіңізді шифрлау үшін "
+"қолданылады - мықты паролді таңдаңыз."
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:285
+msgid "&Repeat password:"
+msgstr "Паролдің қай&талауы:"
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:288
+msgid "&Choose password:"
+msgstr "&Тандалған пароль:"
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:291
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+"Сіз қауіпсіздік куәлігін түсіріп не сатып алмақсыз. Бұл шебер куәлікке ие "
+"болу процедурасын өтуге көмектеседі. Шеберден кез келген уақытта, әрекетті "
+"доғарып, айнуға болады."
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:294
+msgid "Common name:"
+msgstr "Жалпы атауы:"
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:297
+msgid "Acme Co."
+msgstr "Acme Co."
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:300
+msgid "Organization:"
+msgstr "Ұйымы:"
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:303
+msgid "Acme Sundry Products Company"
+msgstr "Acme Sundry Products Company"
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:306
+msgid "Organizational unit:"
+msgstr "Ұйым бөлімі:"
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:309
+msgid "Fraud Department"
+msgstr "Fraud Department"
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:312
+msgid "Country:"
+msgstr "Ел:"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:315
+msgid "Canada"
+msgstr "Канада"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:318
+msgid "State:"
+msgstr "Штат:"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:321
+msgid "Quebec"
+msgstr "Квебек"
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:324
+msgid "City:"
+msgstr "Қаласы:"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:327
+msgid "Lakeridge Meadows"
+msgstr "Лейкридж Мидоуз"
 
 #: ../kioslave/file/file.cpp:209
 #, kde-format
@@ -5793,19 +5793,19 @@ msgstr "Күтпеген қате (%1) %2 сұранысы кезінде пай
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 дегенмен байланыс орнатылды. Жауапты күту..."
 
-#: ../kioslave/http/http.cpp:2908
+#: ../kioslave/http/http.cpp:2913
 msgid "Server processing request, please wait..."
 msgstr "Сервер сұрауды өңдеуде, күте тұрыңыз..."
 
-#: ../kioslave/http/http.cpp:3256 ../kioslave/ftp/ftp.cpp:477
+#: ../kioslave/http/http.cpp:3261 ../kioslave/ftp/ftp.cpp:477
 msgid "You need to supply a username and a password to access this site."
 msgstr "Бұл сайтқа қатынау үшін атауы мен пароль талап етіледі."
 
-#: ../kioslave/http/http.cpp:3258 ../kioslave/ftp/ftp.cpp:479
+#: ../kioslave/http/http.cpp:3263 ../kioslave/ftp/ftp.cpp:479
 msgid "Site:"
 msgstr "Сайт:"
 
-#: ../kioslave/http/http.cpp:3268 ../kioslave/http/http.cpp:5027
+#: ../kioslave/http/http.cpp:3273 ../kioslave/http/http.cpp:5041
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5813,46 +5813,46 @@ msgstr ""
 "Осы прокси-сервер арқылы басқа сайттарға  қатынау үшін пайдаланушының атауы "
 "мен паролі қажет."
 
-#: ../kioslave/http/http.cpp:3271 ../kioslave/http/http.cpp:5031
+#: ../kioslave/http/http.cpp:3276 ../kioslave/http/http.cpp:5045
 msgid "Proxy:"
 msgstr "Прокси:"
 
-#: ../kioslave/http/http.cpp:3332
+#: ../kioslave/http/http.cpp:3337
 msgid "Authentication Failed."
 msgstr "Аутентификация өтпеді."
 
-#: ../kioslave/http/http.cpp:3335 ../kioslave/http/http.cpp:5033
+#: ../kioslave/http/http.cpp:3340 ../kioslave/http/http.cpp:5047
 msgid "Proxy Authentication Failed."
 msgstr "Прокси аутентификациясы өтпеді."
 
-#: ../kioslave/http/http.cpp:3345 ../kioslave/http/http.cpp:5032
+#: ../kioslave/http/http.cpp:3350 ../kioslave/http/http.cpp:5046
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> / <b>%2</b>"
 
-#: ../kioslave/http/http.cpp:3377
+#: ../kioslave/http/http.cpp:3382
 msgid "Authorization failed."
 msgstr "Авторизация өтпеді."
 
-#: ../kioslave/http/http.cpp:3394
+#: ../kioslave/http/http.cpp:3399
 msgid "Unknown Authorization method."
 msgstr "Беймәлім авторизация әдісі."
 
-#: ../kioslave/http/http.cpp:3777
+#: ../kioslave/http/http.cpp:3791
 msgid "Requesting data to send"
 msgstr "Жіберу үшін деректерді талап ету"
 
-#: ../kioslave/http/http.cpp:3809
+#: ../kioslave/http/http.cpp:3823
 #, kde-format
 msgid "Sending data to %1"
 msgstr "%1 дегенге деректер жіберуде"
 
-#: ../kioslave/http/http.cpp:4227
+#: ../kioslave/http/http.cpp:4241
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "%2 дегеннен %1 алу..."
 
-#: ../kioslave/http/http.cpp:4233
+#: ../kioslave/http/http.cpp:4247
 #, kde-format
 msgid "Retrieving from %1..."
 msgstr "%1 дегеннен деректерді алу..."
@@ -6203,14 +6203,6 @@ msgstr ""
 ">Бұл бетбелгілер файлдар диалогы үшін ерекше болса да, KDE-нің өзге "
 "бетбелгілерге ұқсас.</qt>"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr "Орынын ауыстыру үшін түртіңіз"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr "Орынын өзгерту үшін түртіңіз"
-
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6379,21 +6371,6 @@ msgstr "Файл менеджерін ашу"
 msgid "&View"
 msgstr "Кө&рініс"
 
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Құрлығылар"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Субнұсқа"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Өзге"
-
 #: ../kfile/kdirselectdialog.cpp:128
 msgctxt "folder name"
 msgid "New Folder"
@@ -6438,6 +6415,14 @@ msgstr "Жасырын қапшықтар көрсетілсін"
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Қасиеттері"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:90
+msgid "Click for Location Navigation"
+msgstr "Орынын ауыстыру үшін түртіңіз"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:92
+msgid "Click to Edit Location"
+msgstr "Орынын өзгерту үшін түртіңіз"
 
 #: ../kfile/kfileplacesview.cpp:575
 msgctxt "@action:inmenu"
@@ -6704,6 +6689,21 @@ msgstr "'%1' дегенге қатынау кезде қате пайда бол
 #: ../kfile/kfiletreeview.cpp:187
 msgid "Show Hidden Folders"
 msgstr "Жасырын қапшықтар көрсетілсін"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Құрлығылар"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Субнұсқа"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Өзге"
 
 #, fuzzy
 #~| msgid "Size:"

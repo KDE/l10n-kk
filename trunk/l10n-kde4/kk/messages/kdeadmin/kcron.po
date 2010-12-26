@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-21 06:13+0200\n"
+"POT-Creation-Date: 2010-12-26 02:53+0100\n"
 "PO-Revision-Date: 2007-09-27 16:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh\n"
@@ -30,6 +30,24 @@ msgstr ""
 msgctxt "User login: errorMessage"
 msgid "User %1: %2"
 msgstr "%H:%M"
+
+#: src/crontablib/ctunit.cpp:172
+msgid ","
+msgstr ","
+
+#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
+msgid " and "
+msgstr " және "
+
+#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
+msgid ", "
+msgstr ", "
+
+#: src/crontablib/ctHelper.cpp:22
+#, fuzzy
+#| msgid "Co&mment:"
+msgid "No comment"
+msgstr "Түсінікте&ме:"
 
 #: src/crontablib/ctdom.cpp:23 src/crontablib/ctdow.cpp:44
 #: src/crontablib/cttask.cpp:266
@@ -160,29 +178,37 @@ msgstr "30-ында"
 msgid "31st"
 msgstr "31-інде"
 
-#: src/crontablib/ctHelper.cpp:22
-#, fuzzy
-#| msgid "Co&mment:"
-msgid "No comment"
-msgstr "Түсінікте&ме:"
-
-#: src/crontablib/ctunit.cpp:172
-msgid ","
-msgstr ","
-
-#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
-msgid " and "
-msgstr " және "
-
-#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
-msgid ", "
-msgstr ", "
-
 #: src/crontablib/ctGlobalCron.cpp:39
 #, fuzzy
 #| msgid "Print &all users"
 msgid "All users"
 msgstr "Б&арлық пайдаланушыларды басып шығару"
+
+#: src/crontablib/ctvariable.cpp:126
+msgid "Override default home folder."
+msgstr "Әдетті мекен капшықты ауыстыру."
+
+#: src/crontablib/ctvariable.cpp:129
+msgid "Email output to specified account."
+msgstr "Келтірілген пайдаланушыға эл.пошта жіберу."
+
+#: src/crontablib/ctvariable.cpp:132
+msgid "Override default shell."
+msgstr "Әдетті қоршау-ортаны ауыстыру."
+
+#: src/crontablib/ctvariable.cpp:135
+msgid "Folders to search for program files."
+msgstr "Бағдарлама файлдарын іздейтін қапшықтар."
+
+#: src/crontablib/ctvariable.cpp:138
+msgid "Dynamic libraries location."
+msgstr ""
+
+#: src/crontablib/ctvariable.cpp:141
+#, fuzzy
+#| msgid "Variables"
+msgid "Local Variable"
+msgstr "Айнымалылар"
 
 #: src/crontablib/ctmonth.cpp:23
 #, fuzzy
@@ -239,32 +265,6 @@ msgstr "Қарашаның"
 #: src/crontablib/ctmonth.cpp:33
 msgid "December"
 msgstr "Желтоқсанның"
-
-#: src/crontablib/ctvariable.cpp:126
-msgid "Override default home folder."
-msgstr "Әдетті мекен капшықты ауыстыру."
-
-#: src/crontablib/ctvariable.cpp:129
-msgid "Email output to specified account."
-msgstr "Келтірілген пайдаланушыға эл.пошта жіберу."
-
-#: src/crontablib/ctvariable.cpp:132
-msgid "Override default shell."
-msgstr "Әдетті қоршау-ортаны ауыстыру."
-
-#: src/crontablib/ctvariable.cpp:135
-msgid "Folders to search for program files."
-msgstr "Бағдарлама файлдарын іздейтін қапшықтар."
-
-#: src/crontablib/ctvariable.cpp:138
-msgid "Dynamic libraries location."
-msgstr ""
-
-#: src/crontablib/ctvariable.cpp:141
-#, fuzzy
-#| msgid "Variables"
-msgid "Local Variable"
-msgstr "Айнымалылар"
 
 #: src/crontablib/ctdow.cpp:56
 msgid "Mon"
@@ -452,53 +452,6 @@ msgstr "&Рұқсат етілсін"
 msgid "Disabled"
 msgstr "Бұғатталған"
 
-#: src/variableEditorDialog.cpp:60
-#, fuzzy
-#| msgid "Modify Variable"
-msgid "Add or modify a variable"
-msgstr "Айнымалыны өзгерту"
-
-#: src/variableEditorDialog.cpp:64
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "&Variable:"
-msgstr "&Айнымалы:"
-
-#: src/variableEditorDialog.cpp:93
-msgid "Va&lue:"
-msgstr "Мә&ні:"
-
-#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
-msgid "&Run as:"
-msgstr "&Басқаның атынан:"
-
-#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
-msgid "Co&mment:"
-msgstr "Түсінікте&ме:"
-
-#: src/variableEditorDialog.cpp:128
-msgid "&Enable this variable"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:156
-msgid "<i>This variable will be used by scheduled tasks.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:200
-msgid "<i>This variable is disabled.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:207
-#, fuzzy
-#| msgid "Please enter the variable name."
-msgid "<i>Please enter the variable name...</i>"
-msgstr "Айнымалының атауын келтіріңіз."
-
-#: src/variableEditorDialog.cpp:214
-#, fuzzy
-#| msgid "Please enter the variable value."
-msgid "<i>Please enter the variable value ...</i>"
-msgstr "Анымалының мәнін келтіріңіз."
-
 #: src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Variables"
@@ -573,6 +526,53 @@ msgstr "Ө&шіру"
 #| msgid "Delete the selected task or variable."
 msgid "Delete the selected variable."
 msgstr "Таңдалған тапсырма не айнымалыны өшіру."
+
+#: src/variableEditorDialog.cpp:60
+#, fuzzy
+#| msgid "Modify Variable"
+msgid "Add or modify a variable"
+msgstr "Айнымалыны өзгерту"
+
+#: src/variableEditorDialog.cpp:64
+msgctxt "The environmental variable name ie HOME, MAILTO etc"
+msgid "&Variable:"
+msgstr "&Айнымалы:"
+
+#: src/variableEditorDialog.cpp:93
+msgid "Va&lue:"
+msgstr "Мә&ні:"
+
+#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
+msgid "&Run as:"
+msgstr "&Басқаның атынан:"
+
+#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
+msgid "Co&mment:"
+msgstr "Түсінікте&ме:"
+
+#: src/variableEditorDialog.cpp:128
+msgid "&Enable this variable"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:156
+msgid "<i>This variable will be used by scheduled tasks.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:200
+msgid "<i>This variable is disabled.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:207
+#, fuzzy
+#| msgid "Please enter the variable name."
+msgid "<i>Please enter the variable name...</i>"
+msgstr "Айнымалының атауын келтіріңіз."
+
+#: src/variableEditorDialog.cpp:214
+#, fuzzy
+#| msgid "Please enter the variable value."
+msgid "<i>Please enter the variable value ...</i>"
+msgstr "Анымалының мәнін келтіріңіз."
 
 #: src/taskEditorDialog.cpp:76
 #, fuzzy
