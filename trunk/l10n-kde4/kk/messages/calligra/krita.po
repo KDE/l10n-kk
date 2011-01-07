@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-06 02:59+0100\n"
+"POT-Creation-Date: 2011-01-07 03:02+0100\n"
 "PO-Revision-Date: 2008-12-24 10:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -7915,6 +7915,7 @@ msgstr "%"
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:3282 image/kis_adjustment_layer.cc:126
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
+#: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
 msgstr "Сүзгі"
 
@@ -10129,10 +10130,6 @@ msgstr ""
 msgid "Invalid value."
 msgstr "Жарамсыз кескін өлшемі"
 
-#: image/recorder/kis_macro.cc:96
-msgid "Play macro"
-msgstr "Макросты орындау"
-
 #: image/recorder/kis_recorded_fill_paint_action.cpp:42
 #: plugins/tools/defaulttools/kis_tool_fill.cc:127
 msgid "Fill"
@@ -10142,6 +10139,10 @@ msgstr "Толтыру"
 #: plugins/tools/defaulttools/kis_tool_path.cc:188
 msgid "Path"
 msgstr "Сызық"
+
+#: image/recorder/kis_macro_player.cc:71
+msgid "Play macro"
+msgstr "Макросты орындау"
 
 #: main.cc:41
 msgid "File(s) or URL(s) to open"
@@ -10291,16 +10292,6 @@ msgstr "Таңдалған қалқа не қабаттың көшірмесін
 msgid "Reset to default"
 msgstr "әдетті"
 
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:89
-msgid "No action is selected."
-msgstr ""
-
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:92
-#, fuzzy
-#| msgid "&Add to current selection"
-msgid "No editor for current action."
-msgstr "Таңдауыма қ&осылсын"
-
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor_dialog.cpp:30
 #, fuzzy
 #| msgid "Play macro"
@@ -10313,25 +10304,41 @@ msgstr "Макросты орындау"
 msgid "Discard changes"
 msgstr "Альфа арнасын ысырып тастау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:82
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
+#, fuzzy
+#| msgid "Create a new mask or layer"
+msgid "Failed to create an action."
+msgstr "Жаңа қалқа не қабатты құру"
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:137
+msgid "No action is selected."
+msgstr ""
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:140
+#, fuzzy
+#| msgid "&Add to current selection"
+msgid "No editor for current action."
+msgstr "Таңдауыма қ&осылсын"
+
+#: plugins/extensions/bigbrother/bigbrother.cc:87
 msgid "Open and play..."
 msgstr "Ашып орындау..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:86
+#: plugins/extensions/bigbrother/bigbrother.cc:91
 #, fuzzy
 #| msgid "Open and play..."
 msgid "Open and edit..."
 msgstr "Ашып орындау..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:90
+#: plugins/extensions/bigbrother/bigbrother.cc:95
 msgid "Save all actions"
 msgstr "Барлық амалдарды сақтау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:94
+#: plugins/extensions/bigbrother/bigbrother.cc:99
 msgid "Start recording macro"
 msgstr "Макросты жазуды бастау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:98
+#: plugins/extensions/bigbrother/bigbrother.cc:103
 msgid "Stop recording actions"
 msgstr "Амалдарды жазуды тоқтату"
 
@@ -11029,10 +11036,6 @@ msgstr "Арнаны барынша үлкейту"
 msgid "Minimize Channel"
 msgstr "Арнаны барынша кішірейту"
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
-msgid "&Brightness/Contrast curve..."
-msgstr "&Жарықтық/Контрастық қисығы..."
-
 #: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:87
 msgid "Brightness / Contrast"
 msgstr "Жарық / Контрастық"
@@ -11064,6 +11067,10 @@ msgstr "Авто контрастық"
 #: plugins/filters/colorsfilters/colorsfilters.h:66
 msgid "Desaturate"
 msgstr "Қанықсыздау"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
+msgid "&Brightness/Contrast curve..."
+msgstr "&Жарықтық/Контрастық қисығы..."
 
 #: plugins/filters/convolutionfilters/convolutionfilters.cpp:69
 msgid "&Sharpen"
