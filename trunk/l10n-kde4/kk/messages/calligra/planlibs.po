@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-07 03:01+0100\n"
+"POT-Creation-Date: 2011-01-11 03:22+0100\n"
 "PO-Revision-Date: 2008-12-12 09:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -404,7 +404,7 @@ msgstr "Жоқ"
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1251 rc.cpp:328
+#: models/kptresourceappointmentsmodel.cpp:1263 rc.cpp:328
 msgid "Project"
 msgstr "Жоба"
 
@@ -812,11 +812,10 @@ msgstr "%1 есепті өшіру"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:1020
 #: models/kptcalendarmodel.cpp:419 models/kptresourceallocationmodel.cpp:332
-#: models/kptresourceappointmentsmodel.cpp:908
-#: models/kptresourceappointmentsmodel.cpp:923
-#: models/kptresourceappointmentsmodel.cpp:1484
 #: models/kptresourcemodel.cpp:425 models/kptschedulemodel.cpp:736
-#: models/kptschedulemodel.cpp:962 rc.cpp:316
+#: models/kptschedulemodel.cpp:962 models/kptresourceappointmentsmodel.cpp:908
+#: models/kptresourceappointmentsmodel.cpp:923
+#: models/kptresourceappointmentsmodel.cpp:1496 rc.cpp:316
 msgid "Name"
 msgstr "Атауы"
 
@@ -1723,9 +1722,8 @@ msgstr "URL"
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
-#: models/kptresourceallocationmodel.cpp:333
-#: models/kptresourceappointmentsmodel.cpp:1485
-#: models/kptresourcemodel.cpp:426 rc.cpp:319
+#: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:426
+#: models/kptresourceappointmentsmodel.cpp:1497 rc.cpp:319
 msgid "Type"
 msgstr "Түрі"
 
@@ -1883,77 +1881,6 @@ msgctxt "@info:tooltip"
 msgid "Team resources cannot have required resources"
 msgstr ""
 
-#: models/kptresourceappointmentsmodel.cpp:581
-#, fuzzy, kde-format
-#| msgid "Project: %1"
-msgid "External project: %1"
-msgstr "Жоба: %1"
-
-#: models/kptresourceappointmentsmodel.cpp:657
-#, kde-format
-msgid "The total booking on %1, along with the maximum hours for the resource"
-msgstr "%1 дегенге жалпы арналған, ресурсқа мейілінше көп уақыт бөлгенде"
-
-#: models/kptresourceappointmentsmodel.cpp:689
-msgid "Total booking by this task"
-msgstr "Осы тапсырмасына жалпы арналғаны"
-
-#: models/kptresourceappointmentsmodel.cpp:691
-msgid "Total booking by the external project"
-msgstr "Сыртқы жобаға жалпы арналғаны"
-
-#: models/kptresourceappointmentsmodel.cpp:734
-#, kde-format
-msgid "Booking by this task on %1"
-msgstr "%1 дегенге тапсырма бойынша арналғаны"
-
-#: models/kptresourceappointmentsmodel.cpp:736
-#, kde-format
-msgid "Booking by external project on %1"
-msgstr "%1 дегенге сыртқы жоба бойынша арналғаны"
-
-#: models/kptresourceappointmentsmodel.cpp:924
-msgid "The total hours booked"
-msgstr "Жалпы арнаған уақыты"
-
-#: models/kptresourceappointmentsmodel.cpp:928
-#, kde-format
-msgid "Bookings on %1"
-msgstr "%1 дегенге арнағаны"
-
-#: models/kptresourceappointmentsmodel.cpp:1115
-#: models/kptresourcemodel.cpp:1197
-#, fuzzy, kde-format
-#| msgid "Choose resource from addressbook"
-msgid "Add resource from address book"
-msgid_plural "Add %1 resources from address book"
-msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
-
-#: models/kptresourceappointmentsmodel.cpp:1271
-#, fuzzy
-#| msgid "Fixed Interval"
-msgid "Interval"
-msgstr "Белгілі уақыт аралығы"
-
-#: models/kptresourceappointmentsmodel.cpp:1486
-#, fuzzy
-#| msgid "Started"
-msgid "Start Time"
-msgstr "Басталған"
-
-#: models/kptresourceappointmentsmodel.cpp:1487
-#, fuzzy
-#| msgid "End date"
-msgid "End Time"
-msgstr "Аяқтау кезі"
-
-#: models/kptresourceappointmentsmodel.cpp:1488
-#, fuzzy
-#| msgid "Load"
-msgctxt "@title:column noun"
-msgid "Load"
-msgstr "Жүктеу"
-
 #: models/kptresourcemodel.cpp:197 models/kptresourcemodel.cpp:223
 #, kde-format
 msgctxt "Default (calendar name)"
@@ -2086,6 +2013,14 @@ msgstr[0] "Ресурсына шаққанда"
 msgid "Copy resource"
 msgid_plural "Copy %1 resources"
 msgstr[0] "Ресурсына шаққанда"
+
+#: models/kptresourcemodel.cpp:1197
+#: models/kptresourceappointmentsmodel.cpp:1115
+#, fuzzy, kde-format
+#| msgid "Choose resource from addressbook"
+msgid "Add resource from address book"
+msgid_plural "Add %1 resources from address book"
+msgstr[0] "Адрестік кітапшадан ресурсты таңдау"
 
 #: models/kptresourcemodel.cpp:1260
 #, fuzzy
@@ -3355,6 +3290,69 @@ msgstr "Тапсырманы қосу..."
 #| msgid "Add Sub-Task..."
 msgid "Add sub-task"
 msgstr "Бағыныңқы тапсырманы қосу..."
+
+#: models/kptresourceappointmentsmodel.cpp:581
+#, fuzzy, kde-format
+#| msgid "Project: %1"
+msgid "External project: %1"
+msgstr "Жоба: %1"
+
+#: models/kptresourceappointmentsmodel.cpp:657
+#, kde-format
+msgid "The total booking on %1, along with the maximum hours for the resource"
+msgstr "%1 дегенге жалпы арналған, ресурсқа мейілінше көп уақыт бөлгенде"
+
+#: models/kptresourceappointmentsmodel.cpp:689
+msgid "Total booking by this task"
+msgstr "Осы тапсырмасына жалпы арналғаны"
+
+#: models/kptresourceappointmentsmodel.cpp:691
+msgid "Total booking by the external project"
+msgstr "Сыртқы жобаға жалпы арналғаны"
+
+#: models/kptresourceappointmentsmodel.cpp:734
+#, kde-format
+msgid "Booking by this task on %1"
+msgstr "%1 дегенге тапсырма бойынша арналғаны"
+
+#: models/kptresourceappointmentsmodel.cpp:736
+#, kde-format
+msgid "Booking by external project on %1"
+msgstr "%1 дегенге сыртқы жоба бойынша арналғаны"
+
+#: models/kptresourceappointmentsmodel.cpp:924
+msgid "The total hours booked"
+msgstr "Жалпы арнаған уақыты"
+
+#: models/kptresourceappointmentsmodel.cpp:928
+#, kde-format
+msgid "Bookings on %1"
+msgstr "%1 дегенге арнағаны"
+
+#: models/kptresourceappointmentsmodel.cpp:1298
+#, fuzzy
+#| msgid "Fixed Interval"
+msgid "Interval"
+msgstr "Белгілі уақыт аралығы"
+
+#: models/kptresourceappointmentsmodel.cpp:1498
+#, fuzzy
+#| msgid "Started"
+msgid "Start Time"
+msgstr "Басталған"
+
+#: models/kptresourceappointmentsmodel.cpp:1499
+#, fuzzy
+#| msgid "End date"
+msgid "End Time"
+msgstr "Аяқтау кезі"
+
+#: models/kptresourceappointmentsmodel.cpp:1500
+#, fuzzy
+#| msgid "Load"
+msgctxt "@title:column noun"
+msgid "Load"
+msgstr "Жүктеу"
 
 #: ui/kptaccountseditor.cpp:224
 msgid "Add Account"

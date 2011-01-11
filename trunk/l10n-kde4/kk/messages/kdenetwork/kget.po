@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 03:00+0100\n"
+"POT-Creation-Date: 2011-01-11 02:43+0100\n"
 "PO-Revision-Date: 2010-12-11 09:08+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -26,22 +26,6 @@ msgstr "Плагиндер"
 #: conf/transfersgrouptree.cpp:110 conf/transfersgrouptree.cpp:115
 msgid "New Group"
 msgstr "Жаңа топ"
-
-#: conf/integrationpreferences.cpp:32
-msgid "Include"
-msgstr "Қатарға қосу"
-
-#: conf/integrationpreferences.cpp:33
-msgid "Exclude"
-msgstr "Шығарып тастау"
-
-#: conf/integrationpreferences.cpp:35 conf/autopastemodel.cpp:209
-msgid "Escape sequences"
-msgstr "Escape-тіізбегі"
-
-#: conf/integrationpreferences.cpp:36 conf/autopastemodel.cpp:209
-msgid "Regular expression"
-msgstr "Үлгі өрнегі"
 
 #: conf/preferencesdialog.cpp:49
 msgid "Xml"
@@ -122,6 +106,22 @@ msgstr "Қосымша параметрлері"
 #: conf/preferencesdialog.cpp:82
 msgid "Transfer Plugins"
 msgstr "Тасымалдау плагиндері"
+
+#: conf/integrationpreferences.cpp:32
+msgid "Include"
+msgstr "Қатарға қосу"
+
+#: conf/integrationpreferences.cpp:33
+msgid "Exclude"
+msgstr "Шығарып тастау"
+
+#: conf/integrationpreferences.cpp:35 conf/autopastemodel.cpp:209
+msgid "Escape sequences"
+msgstr "Escape-тіізбегі"
+
+#: conf/integrationpreferences.cpp:36 conf/autopastemodel.cpp:209
+msgid "Regular expression"
+msgstr "Үлгі өрнегі"
 
 #: conf/autopastemodel.cpp:174
 msgid "Pattern"
@@ -485,6 +485,159 @@ msgctxt "signature of a file"
 msgid "Signature"
 msgstr "Қолтаңбасы"
 
+#: core/kgetkjobadapter.cpp:43
+msgid "KGet Transfer"
+msgstr "KGet тасымалдауы"
+
+#: core/verifier.cpp:412
+msgctxt "the type of the hash, e.g. MD5"
+msgid "Type"
+msgstr "Түріі"
+
+#: core/verifier.cpp:414
+msgctxt "the used hash for verification"
+msgid "Hash"
+msgstr "Хеші"
+
+#: core/verifier.cpp:416
+msgctxt "verification-result of a file, can be true/false"
+msgid "Verified"
+msgstr "Тексерілгені"
+
+#: core/verifier.cpp:1188
+msgid "The key to verify the signature is missing, do you want to download it?"
+msgstr "Қолтаңбасын тексеретін кілт жоқ, оны жүктеп алмақсыз ба?"
+
+#: core/verifier.cpp:1206
+#, kde-format
+msgid ""
+"The signature could not be verified for %1. See transfer settings for more "
+"information."
+msgstr ""
+"%1 дегеннің қолтаңбасы тексерілген жоқ. Толығрақ параметрлерінен білуге "
+"болады."
+
+#: core/verifier.cpp:1207
+msgid "Signature not verified"
+msgstr "Қолтаңбасы тексерілмеді"
+
+#: core/verifier.cpp:1312
+msgid ""
+"No server for downloading keys is specified in settings. Downloading aborted."
+msgstr "Кілттерді алатын сервер келтірілмеген. Жүктеу доғарылды."
+
+#: core/verifier.cpp:1313 core/verifier.cpp:1333
+msgid "No key server"
+msgstr "Кілт сервері жоқ"
+
+#: core/verifier.cpp:1332
+msgid ""
+"No useful key server found, key not downloaded. Add more servers to the "
+"settings or restart KGet and retry downloading."
+msgstr ""
+"Істейтін кілт сервері табылмады, кілт алынбады. Параметрлерінде қосымша "
+"серверлерін келтіріп, KGet-ті қайта жегіп, жүктеуді қайта бастаңыз."
+
+#: core/datasourcefactory.cpp:286
+msgid "Filesize is larger than maximum file size supported by VFAT."
+msgstr "Фалдың өлшемі VFAT.рұқсат ететін шегінен асады."
+
+#: core/datasourcefactory.cpp:612
+#, kde-format
+msgctxt "A mirror is removed when the file has the wrong download size"
+msgid "%1 removed as it did report a wrong file size."
+msgstr "Файлдың өлшемін дұрыс хабарламаған соң %1 деген өшірілді."
+
+#: core/transferhandler.cpp:137
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:27
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:28
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:29
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:30
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:31
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:32
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:33
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:34
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:59
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:60
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:63
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:64
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:67
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:70
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:73
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:76
+#: ui/transfersviewdelegate.cpp:396
+msgctxt "not available"
+msgid "n/a"
+msgstr "а/ж"
+
+#: core/transferhandler.cpp:145 ui/transferdetails.cpp:95
+msgid "Stalled"
+msgstr "Тоқтап тұр"
+
+#: core/transfer.cpp:37
+msgid "Downloading...."
+msgstr "Жүктеу..."
+
+#: core/transfer.cpp:38
+msgctxt "transfer state: delayed"
+msgid "Delayed"
+msgstr "Кідіртілген"
+
+#: core/transfer.cpp:39 core/transfer.cpp:263 core/transfer.cpp:282
+#: transfer-plugins/contentfetch/contentfetch.cpp:69
+#: transfer-plugins/mmsclient/mmsTransfer.cpp:48
+#: transfer-plugins/bittorrent/bttransfer.cpp:298
+#: transfer-plugins/mms/mmsTransfer.cpp:52
+msgctxt "transfer state: stopped"
+msgid "Stopped"
+msgstr "Тоқталған"
+
+#: core/transfer.cpp:40
+msgctxt "transfer state: aborted"
+msgid "Aborted"
+msgstr "Доғарылған"
+
+#: core/transfer.cpp:41 transfer-plugins/bittorrent/bttransfer.cpp:216
+#: transfer-plugins/bittorrent/bttransfer.cpp:294
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "Біткен"
+
+#: core/transfer.cpp:43 transfer-plugins/bittorrent/bttransfer.cpp:160
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "Мақсаттаған орынды өзгерту"
+
+#: core/transfertreemodel.cpp:644
+msgctxt "name of download"
+msgid "Name"
+msgstr "Атауы"
+
+#: core/transfertreemodel.cpp:646
+msgctxt "status of download"
+msgid "Status"
+msgstr "Күй-жайы"
+
+#: core/transfertreemodel.cpp:648
+msgctxt "size of download"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: core/transfertreemodel.cpp:650
+msgctxt "progress of download"
+msgid "Progress"
+msgstr "Барысы"
+
+#: core/transfertreemodel.cpp:652
+msgctxt "speed of download"
+msgid "Speed"
+msgstr "Жылдамдығы"
+
+#: core/transfertreemodel.cpp:654
+msgctxt "remaining time of download"
+msgid "Remaining Time"
+msgstr "Қалған уақыт"
+
 #: core/urlchecker.cpp:254 core/urlchecker.cpp:294
 msgid "No download directory specified."
 msgstr "Жүктеп алатын қапшық келтірілмеген."
@@ -780,159 +933,6 @@ msgstr "Бүкіліне Иә"
 msgctxt "on a question"
 msgid "No all"
 msgstr "Бүкіліне Жоқ"
-
-#: core/kgetkjobadapter.cpp:43
-msgid "KGet Transfer"
-msgstr "KGet тасымалдауы"
-
-#: core/verifier.cpp:412
-msgctxt "the type of the hash, e.g. MD5"
-msgid "Type"
-msgstr "Түріі"
-
-#: core/verifier.cpp:414
-msgctxt "the used hash for verification"
-msgid "Hash"
-msgstr "Хеші"
-
-#: core/verifier.cpp:416
-msgctxt "verification-result of a file, can be true/false"
-msgid "Verified"
-msgstr "Тексерілгені"
-
-#: core/verifier.cpp:1188
-msgid "The key to verify the signature is missing, do you want to download it?"
-msgstr "Қолтаңбасын тексеретін кілт жоқ, оны жүктеп алмақсыз ба?"
-
-#: core/verifier.cpp:1206
-#, kde-format
-msgid ""
-"The signature could not be verified for %1. See transfer settings for more "
-"information."
-msgstr ""
-"%1 дегеннің қолтаңбасы тексерілген жоқ. Толығрақ параметрлерінен білуге "
-"болады."
-
-#: core/verifier.cpp:1207
-msgid "Signature not verified"
-msgstr "Қолтаңбасы тексерілмеді"
-
-#: core/verifier.cpp:1312
-msgid ""
-"No server for downloading keys is specified in settings. Downloading aborted."
-msgstr "Кілттерді алатын сервер келтірілмеген. Жүктеу доғарылды."
-
-#: core/verifier.cpp:1313 core/verifier.cpp:1333
-msgid "No key server"
-msgstr "Кілт сервері жоқ"
-
-#: core/verifier.cpp:1332
-msgid ""
-"No useful key server found, key not downloaded. Add more servers to the "
-"settings or restart KGet and retry downloading."
-msgstr ""
-"Істейтін кілт сервері табылмады, кілт алынбады. Параметрлерінде қосымша "
-"серверлерін келтіріп, KGet-ті қайта жегіп, жүктеуді қайта бастаңыз."
-
-#: core/datasourcefactory.cpp:286
-msgid "Filesize is larger than maximum file size supported by VFAT."
-msgstr "Фалдың өлшемі VFAT.рұқсат ететін шегінен асады."
-
-#: core/datasourcefactory.cpp:612
-#, kde-format
-msgctxt "A mirror is removed when the file has the wrong download size"
-msgid "%1 removed as it did report a wrong file size."
-msgstr "Файлдың өлшемін дұрыс хабарламаған соң %1 деген өшірілді."
-
-#: core/transferhandler.cpp:137
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:27
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:28
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:29
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:30
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:31
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:32
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:33
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:34
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:59
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:60
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:63
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:64
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:67
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:70
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:73
-#: transfer-plugins/bittorrent/btdetailswidget.cpp:76
-#: ui/transfersviewdelegate.cpp:396
-msgctxt "not available"
-msgid "n/a"
-msgstr "а/ж"
-
-#: core/transferhandler.cpp:145 ui/transferdetails.cpp:95
-msgid "Stalled"
-msgstr "Тоқтап тұр"
-
-#: core/transfer.cpp:37
-msgid "Downloading...."
-msgstr "Жүктеу..."
-
-#: core/transfer.cpp:38
-msgctxt "transfer state: delayed"
-msgid "Delayed"
-msgstr "Кідіртілген"
-
-#: core/transfer.cpp:39 core/transfer.cpp:267 core/transfer.cpp:286
-#: transfer-plugins/contentfetch/contentfetch.cpp:69
-#: transfer-plugins/mmsclient/mmsTransfer.cpp:48
-#: transfer-plugins/bittorrent/bttransfer.cpp:298
-#: transfer-plugins/mms/mmsTransfer.cpp:52
-msgctxt "transfer state: stopped"
-msgid "Stopped"
-msgstr "Тоқталған"
-
-#: core/transfer.cpp:40
-msgctxt "transfer state: aborted"
-msgid "Aborted"
-msgstr "Доғарылған"
-
-#: core/transfer.cpp:41 transfer-plugins/bittorrent/bttransfer.cpp:216
-#: transfer-plugins/bittorrent/bttransfer.cpp:294
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "Біткен"
-
-#: core/transfer.cpp:43 transfer-plugins/bittorrent/bttransfer.cpp:160
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "Мақсаттаған орынды өзгерту"
-
-#: core/transfertreemodel.cpp:644
-msgctxt "name of download"
-msgid "Name"
-msgstr "Атауы"
-
-#: core/transfertreemodel.cpp:646
-msgctxt "status of download"
-msgid "Status"
-msgstr "Күй-жайы"
-
-#: core/transfertreemodel.cpp:648
-msgctxt "size of download"
-msgid "Size"
-msgstr "Өлшемі"
-
-#: core/transfertreemodel.cpp:650
-msgctxt "progress of download"
-msgid "Progress"
-msgstr "Барысы"
-
-#: core/transfertreemodel.cpp:652
-msgctxt "speed of download"
-msgid "Speed"
-msgstr "Жылдамдығы"
-
-#: core/transfertreemodel.cpp:654
-msgctxt "remaining time of download"
-msgid "Remaining Time"
-msgstr "Қалған уақыт"
 
 #: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:23
 msgid "Insert Engine"
@@ -1510,15 +1510,15 @@ msgctxt "Download Normal (not as first or last)"
 msgid "Normal"
 msgstr "Кәдімгі ретімен"
 
-#: transfer-plugins/bittorrent/bttransferfactory.cpp:35
+#: transfer-plugins/bittorrent/bttransferfactory.cpp:34
 msgid "Cannot initialize libktorrent. Torrent support might not work."
 msgstr "libktorrent бастау күйіне келмеді. Торренті істемеуі мүмкін."
 
-#: transfer-plugins/bittorrent/bttransferfactory.cpp:87
+#: transfer-plugins/bittorrent/bttransferfactory.cpp:84
 msgid "&Advanced Details"
 msgstr "&Жетелеу егжейі-тегжейі"
 
-#: transfer-plugins/bittorrent/bttransferfactory.cpp:93
+#: transfer-plugins/bittorrent/bttransferfactory.cpp:90
 msgid "&Scan Files"
 msgstr "&Файлдарды зерттеу"
 
@@ -2022,6 +2022,14 @@ msgstr "Мәселе:"
 msgid "Information:"
 msgstr "Ақпарат:"
 
+#: ui/transfersview.cpp:126
+msgid "Select columns"
+msgstr "Бағандарды таңдау"
+
+#: ui/transfersview.cpp:314
+msgid "Transfer Details"
+msgstr "Тасымалдың егжей-тегжейлері"
+
 #: ui/verificationdialog.cpp:37
 msgid "Add checksum"
 msgstr "Бақылау қосындысын қосу"
@@ -2044,14 +2052,6 @@ msgstr "%1 сәтті расталды."
 #: ui/verificationdialog.cpp:215
 msgid "Verification successful"
 msgstr "Растауы сәтті өтті"
-
-#: ui/transfersview.cpp:126
-msgid "Select columns"
-msgstr "Бағандарды таңдау"
-
-#: ui/transfersview.cpp:314
-msgid "Transfer Details"
-msgstr "Тасымалдың егжей-тегжейлері"
 
 #: ui/renamefile.cpp:32
 msgid "Rename File"
@@ -2087,7 +2087,7 @@ msgstr "Жабыстыру"
 
 #. i18n: file: conf/dlgadvanced.ui:41
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: ui/droptarget.cpp:91 rc.cpp:155
+#: ui/droptarget.cpp:91 rc.cpp:140
 msgid "Quit KGet"
 msgstr "KGet-тен шығу"
 
@@ -2113,7 +2113,7 @@ msgstr "Негізгі терезені жасыру"
 
 #. i18n: file: conf/dlgappearance.ui:33
 #. i18n: ectx: property (title), widget (QGroupBox, dropTargetGroup)
-#: ui/droptarget.cpp:368 rc.cpp:134
+#: ui/droptarget.cpp:368 rc.cpp:119
 msgid "Drop Target"
 msgstr "Сүйреп әкелетін орын"
 
@@ -2481,13 +2481,13 @@ msgstr "Ең төмен артықшылығы"
 
 #. i18n: file: conf/dlgintegration.ui:100
 #. i18n: ectx: property (text), widget (KPushButton, increase)
-#: mainwindow.cpp:197 rc.cpp:59
+#: mainwindow.cpp:197 rc.cpp:179
 msgid "Increase Priority"
 msgstr "Артықшылығын көтеру"
 
 #. i18n: file: conf/dlgintegration.ui:107
 #. i18n: ectx: property (text), widget (KPushButton, decrease)
-#: mainwindow.cpp:202 rc.cpp:62
+#: mainwindow.cpp:202 rc.cpp:182
 msgid "Decrease Priority"
 msgstr "Артықшылығын түсіру"
 
@@ -2767,51 +2767,33 @@ msgstr "Атауын өзгерту"
 msgid "Select Icon..."
 msgstr "Таңбашаны таңдау"
 
-#. i18n: file: conf/dlgintegration.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:50
-msgid "Use as download manager for Konqueror:"
-msgstr "Konqueror-дың жүктеу менеджері қылу."
-
-#. i18n: file: conf/dlgintegration.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoPaste)
-#: rc.cpp:53
-msgid "Monitor clipboard for files to download"
-msgstr "Жүктейтін файлдарды алмасу буферінен күту"
-
-#. i18n: file: conf/dlgintegration.ui:43
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:56
-msgid "Case insensitive:"
-msgstr "Үлкен-кішісін елемеу:"
-
 #. i18n: file: conf/dlgnetwork.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_LimitDownloads)
-#: rc.cpp:65
+#: rc.cpp:50
 msgid "Limit Maximum Downloads Per Group"
 msgstr "Топтағы жүктеу саның шектеу"
 
 #. i18n: file: conf/dlgnetwork.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum)
-#: rc.cpp:68
+#: rc.cpp:53
 msgid "Number of downloads:"
 msgstr "Жүктеулер саны:"
 
 #. i18n: file: conf/dlgnetwork.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum_2)
-#: rc.cpp:71
+#: rc.cpp:56
 msgid "Downloads from the same server:"
 msgstr "Бір серверінен жүктеулер саны:"
 
 #. i18n: file: conf/dlgnetwork.ui:63
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_SpeedLimit)
-#: rc.cpp:74
+#: rc.cpp:59
 msgid "Speed Limit"
 msgstr "Жылдамдығын шектеу"
 
 #. i18n: file: conf/dlgnetwork.ui:72
 #. i18n: ectx: property (text), widget (QLabel, dllimitlb)
-#: rc.cpp:77
+#: rc.cpp:62
 msgid "Global download limit:"
 msgstr "Жалпы жүктеп алу шегі:"
 
@@ -2821,67 +2803,67 @@ msgstr "Жалпы жүктеп алу шегі:"
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_GlobalUploadLimit)
 #. i18n: file: conf/dlgnetwork.ui:125
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_TransferSpeedLimit)
-#: rc.cpp:80 rc.cpp:86 rc.cpp:92
+#: rc.cpp:65 rc.cpp:71 rc.cpp:77
 msgid " KiB/s"
 msgstr " КиБ/сек"
 
 #. i18n: file: conf/dlgnetwork.ui:95
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:83
+#: rc.cpp:68
 msgid "Global upload limit:"
 msgstr "Жалпы жүктеп беру шегі:"
 
 #. i18n: file: conf/dlgnetwork.ui:118
 #. i18n: ectx: property (text), widget (QLabel, lb_per_transfer)
-#: rc.cpp:89
+#: rc.cpp:74
 msgid "Per transfer:"
 msgstr "Әр тасымал үшін:"
 
 #. i18n: file: conf/dlgnetwork.ui:141
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ReconnectOnBroken)
-#: rc.cpp:95
+#: rc.cpp:80
 msgid "Reconnect on Error or Broken Connection"
 msgstr "Қосылым жаңылғанда не үзілгенде қайталансын"
 
 #. i18n: file: conf/dlgnetwork.ui:150
 #. i18n: ectx: property (text), widget (QLabel, lb_retries_2)
-#: rc.cpp:98
+#: rc.cpp:83
 msgid "Number of retries:"
 msgstr "Қайталау саны:"
 
 #. i18n: file: conf/dlgnetwork.ui:164
 #. i18n: ectx: property (text), widget (QLabel, lb_after_2)
-#: rc.cpp:101
+#: rc.cpp:86
 msgid "Retry after:"
 msgstr "Қайталау аралығы:"
 
 #. i18n: file: conf/dlgnetwork.ui:171
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ReconnectDelay)
-#: rc.cpp:104
+#: rc.cpp:89
 msgid " sec"
 msgstr " сек"
 
 #. i18n: file: conf/dlgnetwork.ui:193
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxCompleted)
-#: rc.cpp:107
+#: rc.cpp:92
 msgid "After Completing Downloads"
 msgstr "Жүктеулері біткен соң"
 
 #. i18n: file: conf/dlgnetwork.ui:199
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoShutdown)
-#: rc.cpp:110
+#: rc.cpp:95
 msgid "Auto shutdown"
 msgstr "Компьютерді сөндіру"
 
 #. i18n: file: conf/dlgnetwork.ui:206
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoDisconnect)
-#: rc.cpp:113
+#: rc.cpp:98
 msgid "Auto disconnect"
 msgstr "Қосылымын ажырату"
 
 #. i18n: file: conf/dlgwebinterface.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_WebinterfaceEnabled)
-#: rc.cpp:116
+#: rc.cpp:101
 msgid "Enable Web Interface"
 msgstr "Веб интерфейсі істесін"
 
@@ -2889,13 +2871,13 @@ msgstr "Веб интерфейсі істесін"
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: rc.cpp:119 rc.cpp:457
+#: rc.cpp:104 rc.cpp:457
 msgid "Port:"
 msgstr "Порты:"
 
 #. i18n: file: conf/dlgwebinterface.ui:45
 #. i18n: ectx: property (text), widget (QLabel, userLabel)
-#: rc.cpp:122
+#: rc.cpp:107
 msgid "User:"
 msgstr "Пайдаланушы:"
 
@@ -2903,111 +2885,129 @@ msgstr "Пайдаланушы:"
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:87
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
-#: rc.cpp:125 rc.cpp:242
+#: rc.cpp:110 rc.cpp:242
 msgid "Password:"
 msgstr "Паролі:"
 
 #. i18n: file: conf/dlgappearance.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, startupGroup)
-#: rc.cpp:128
+#: rc.cpp:113
 msgid "Startup"
 msgstr "Жегілгенде"
 
 #. i18n: file: conf/dlgappearance.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSplashscreen)
-#: rc.cpp:131
+#: rc.cpp:116
 msgid "Show splashscreen"
 msgstr "Бейнепердесі көрсетілсін"
 
 #. i18n: file: conf/dlgappearance.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateDropTarget)
-#: rc.cpp:137
+#: rc.cpp:122
 msgid "Enable animations"
 msgstr "Анимациясы болсын"
 
 #. i18n: file: conf/dlgappearance.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnablePopupTooltip)
-#: rc.cpp:140
+#: rc.cpp:125
 msgid "Enable popup tooltip"
 msgstr "Қалқымалы ишарасы болсын"
 
 #. i18n: file: conf/dlgappearance.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowDropTarget)
-#: rc.cpp:143
+#: rc.cpp:128
 msgid "Show drop target"
 msgstr "Сүйреп әкелетін орын көрсетілсін"
 
 #. i18n: file: conf/dlgadvanced.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ExpertMode)
-#: rc.cpp:146
+#: rc.cpp:131
 msgid "Disable confirmation dialogs (less verbosity)"
 msgstr "Құптау диалогтары болмасын (сұрақтарын қысқарту)"
 
 #. i18n: file: conf/dlgadvanced.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableSystemTray)
-#: rc.cpp:149
+#: rc.cpp:134
 msgid "Enable system tray icon"
 msgstr "Жүйелік сөреде таңбашасы болсын"
 
 #. i18n: file: conf/dlgadvanced.ui:33
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AfterFinishActionEnabled)
-#: rc.cpp:152
+#: rc.cpp:137
 msgid "Execute action after all downloads have been finished:"
 msgstr "Барлық жүктеулері аяқталған соң орындайтыны:"
 
 #. i18n: file: conf/dlgadvanced.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:158
+#: rc.cpp:143
 msgid "At startup:"
 msgstr "Бастағанда:"
 
 #. i18n: file: conf/dlgadvanced.ui:57
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:161
+#: rc.cpp:146
 msgid "Restore Download State"
 msgstr "Жүктеуді қалпына келтіру"
 
 #. i18n: file: conf/dlgadvanced.ui:62
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:164
+#: rc.cpp:149
 msgid "Start All Downloads"
 msgstr "Барлық жүктеп алуды бастау"
 
 #. i18n: file: conf/dlgadvanced.ui:67
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:167
+#: rc.cpp:152
 msgid "Stop All Downloads"
 msgstr "Барлық жүктеп алуды тоқтату"
 
 #. i18n: file: conf/dlgadvanced.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:170
+#: rc.cpp:155
 msgid "History"
 msgstr "Журналы"
 
 #. i18n: file: conf/dlgadvanced.ui:83
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:173
+#: rc.cpp:158
 msgid "History backend:"
 msgstr "Журналы:"
 
 #. i18n: file: conf/dlgadvanced.ui:96
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_EnableKUIServerIntegration)
-#: rc.cpp:176
+#: rc.cpp:161
 msgid "Enable KDE global progress tracking"
 msgstr "Жалпы KDE жүйелік қадағалауы рұқсат етілсін"
 
 #. i18n: file: conf/dlgadvanced.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExportSingleTransfer)
-#: rc.cpp:179
+#: rc.cpp:164
 msgid "Show every single download "
 msgstr "Әрбір жүктеп алуы көрсетілсін "
 
 #. i18n: file: conf/dlgadvanced.ui:115
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExportGlobalJob)
-#: rc.cpp:182
+#: rc.cpp:167
 msgid "Show overall progress"
 msgstr "Жалпы барысы көрсетілсін"
+
+#. i18n: file: conf/dlgintegration.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:170
+msgid "Use as download manager for Konqueror:"
+msgstr "Konqueror-дың жүктеу менеджері қылу."
+
+#. i18n: file: conf/dlgintegration.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoPaste)
+#: rc.cpp:173
+msgid "Monitor clipboard for files to download"
+msgstr "Жүктейтін файлдарды алмасу буферінен күту"
+
+#. i18n: file: conf/dlgintegration.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:176
+msgid "Case insensitive:"
+msgstr "Үлкен-кішісін елемеу:"
 
 #. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:16
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
@@ -3653,82 +3653,9 @@ msgstr "Растауы:"
 msgid "Optional"
 msgstr "Міндетті емес"
 
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:547
-msgid "General information:"
-msgstr "Жалпы мәліметі"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:550
-msgid "Here you can enter optional general information on the metalink."
-msgstr "Мұнда метасілтеме туралы жалпы мәліметті келтіре аласыз."
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:553
-msgid "Origin:"
-msgstr "Көзі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
-#: rc.cpp:556
-msgid "Web URL to the metalink"
-msgstr "Метасілтеменің Веб URL-і"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
-#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
-#: rc.cpp:559
-msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
-msgstr ""
-"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын көрсетеді."
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
-#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
-#: rc.cpp:562
-msgid "Dynamic:"
-msgstr "Динамикалық"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
-#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
-#: rc.cpp:565
-msgid "Metalink published"
-msgstr "Метасілтеме жарияланды"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
-#. i18n: ectx: property (text), widget (QLabel, label_30)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
-#. i18n: ectx: property (text), widget (QLabel, label_29)
-#: rc.cpp:568 rc.cpp:586
-msgid "Date and time:"
-msgstr "Күні мен уақыты"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
-#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
-#: rc.cpp:571 rc.cpp:583
-msgid "Timezone offset:"
-msgstr "Уақыт белдеуі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:574 rc.cpp:580
-msgid "Negative offset:"
-msgstr "Теріс шегінуі:"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
-#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
-#: rc.cpp:577
-msgid "Metalink updated"
-msgstr "Метасілтеме жаңартылды"
-
 #. i18n: file: ui/metalinkcreator/introduction.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:589
+#: rc.cpp:547
 msgid ""
 "This assistant allows you to create metalinks from scratch or base them on "
 "existing metalinks. A lot of the fields are optional or recommended, so "
@@ -3742,27 +3669,100 @@ msgstr ""
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:592
+#: rc.cpp:550
 msgid "Save created Metalink at:"
 msgstr "Құрылған метасілтеменің сақтау орны:"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, createButton)
-#: rc.cpp:595
+#: rc.cpp:553
 msgid "Create new Metalink"
 msgstr "Жаңа метасілтеме құру"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:88
 #. i18n: ectx: property (text), widget (QRadioButton, loadButton)
-#: rc.cpp:598
+#: rc.cpp:556
 msgid "Load existing Metalink:"
 msgstr "Бар метасілтеме жүктеу"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:98
 #. i18n: ectx: property (filter), widget (KUrlRequester, load)
-#: rc.cpp:601
+#: rc.cpp:559
 msgid "*.metalink *.meta4|Metalink file (*.metalink *.meta4)"
 msgstr "*.metalink *.meta4|Метасілтеме файлы (*.metalink *.meta4)"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:562
+msgid "General information:"
+msgstr "Жалпы мәліметі"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:565
+msgid "Here you can enter optional general information on the metalink."
+msgstr "Мұнда метасілтеме туралы жалпы мәліметті келтіре аласыз."
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:568
+msgid "Origin:"
+msgstr "Көзі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
+#: rc.cpp:571
+msgid "Web URL to the metalink"
+msgstr "Метасілтеменің Веб URL-і"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
+#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
+#: rc.cpp:574
+msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
+msgstr ""
+"Динамикалық дегені жаңартылған метасілтеме \"Көзінде\" табылатынын көрсетеді."
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
+#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
+#: rc.cpp:577
+msgid "Dynamic:"
+msgstr "Динамикалық"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
+#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
+#: rc.cpp:580
+msgid "Metalink published"
+msgstr "Метасілтеме жарияланды"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
+#. i18n: ectx: property (text), widget (QLabel, label_30)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
+#. i18n: ectx: property (text), widget (QLabel, label_29)
+#: rc.cpp:583 rc.cpp:601
+msgid "Date and time:"
+msgstr "Күні мен уақыты"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
+#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
+#: rc.cpp:586 rc.cpp:598
+msgid "Timezone offset:"
+msgstr "Уақыт белдеуі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:589 rc.cpp:595
+msgid "Negative offset:"
+msgstr "Теріс шегінуі:"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
+#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
+#: rc.cpp:592
+msgid "Metalink updated"
+msgstr "Метасілтеме жаңартылды"
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
