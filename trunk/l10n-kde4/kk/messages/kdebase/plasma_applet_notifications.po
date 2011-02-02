@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:36+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2011-01-10 01:48+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -26,6 +26,12 @@ msgstr "%1 [аяқталған]"
 msgid "Open"
 msgstr "Ашу"
 
+#: core/job.cpp:196
+#, kde-format
+msgid "%1 file, to: %2"
+msgid_plural "%1 files, to: %2"
+msgstr[0] "%1 файл, қайда: %2"
+
 #: core/notificationsmanager.cpp:192
 #, kde-format
 msgid "1 running job (%2 remaining)"
@@ -36,11 +42,42 @@ msgstr[0] "%1 жегілген тапсырма (%2 қалды)"
 msgid "no running jobs"
 msgstr "жегілген тапсырмалар жоқ"
 
-#: core/job.cpp:196
+#: ui/busywidget.cpp:274
 #, kde-format
-msgid "%1 file, to: %2"
-msgid_plural "%1 files, to: %2"
-msgstr[0] "%1 файл, қайда: %2"
+msgid "%1 running job"
+msgid_plural "%1 running jobs"
+msgstr[0] "%1 жегілген тапсырма"
+
+#: ui/busywidget.cpp:281
+#, kde-format
+msgid "%1 suspended job"
+msgid_plural "%1 suspended jobs"
+msgstr[0] "%1 тоқтап тұрған тапсырма"
+
+#: ui/busywidget.cpp:288
+#, kde-format
+msgid "%1 completed job"
+msgid_plural "%1 completed jobs"
+msgstr[0] "%1 біткен тапсырма"
+
+#: ui/busywidget.cpp:295
+#, kde-format
+msgid "%1 notification"
+msgid_plural "%1 notifications"
+msgstr[0] "%1 құлақтандыру"
+
+#: ui/busywidget.cpp:300
+msgid "No active jobs or notifications"
+msgstr "Белсенді тапсырма я құлақтандыру жоқ"
+
+#: ui/busywidget.cpp:303
+msgid "Notifications and jobs"
+msgstr "Тапсырмалар мен құлақтандырулар"
+
+#: ui/jobtotalswidget.cpp:83
+msgctxt "Generic title for the job transfer popup"
+msgid "Jobs"
+msgstr "Тапсырмалар"
 
 #: ui/jobwidget.cpp:65
 msgid "KiB/s"
@@ -101,60 +138,6 @@ msgstr[0] "%2 / %1 файл"
 msgid "Less"
 msgstr "Қысқарту"
 
-#: ui/jobtotalswidget.cpp:83
-msgctxt "Generic title for the job transfer popup"
-msgid "Jobs"
-msgstr "Тапсырмалар"
-
-#: ui/notifications.cpp:123
-msgid "No notifications and no jobs"
-msgstr "Құлақтандырулар мен тапсырмалар жоқ"
-
-#: ui/notifications.cpp:211
-msgid "Information"
-msgstr "Мәлімет"
-
-#: ui/notifications.cpp:213
-msgid "Choose which information to show"
-msgstr "Қай мәліметті қөрсету керек таңдау"
-
-#: ui/notificationwidget.cpp:325 ui/notificationgroup.cpp:92
-#, kde-format
-msgid "Notification from %1"
-msgstr "%1 құлақтандыруы"
-
-#: ui/busywidget.cpp:274
-#, kde-format
-msgid "%1 running job"
-msgid_plural "%1 running jobs"
-msgstr[0] "%1 жегілген тапсырма"
-
-#: ui/busywidget.cpp:281
-#, kde-format
-msgid "%1 suspended job"
-msgid_plural "%1 suspended jobs"
-msgstr[0] "%1 тоқтап тұрған тапсырма"
-
-#: ui/busywidget.cpp:288
-#, kde-format
-msgid "%1 completed job"
-msgid_plural "%1 completed jobs"
-msgstr[0] "%1 біткен тапсырма"
-
-#: ui/busywidget.cpp:295
-#, kde-format
-msgid "%1 notification"
-msgid_plural "%1 notifications"
-msgstr[0] "%1 құлақтандыру"
-
-#: ui/busywidget.cpp:300
-msgid "No active jobs or notifications"
-msgstr "Белсенді тапсырма я құлақтандыру жоқ"
-
-#: ui/busywidget.cpp:303
-msgid "Notifications and jobs"
-msgstr "Тапсырмалар мен құлақтандырулар"
-
 #: ui/notificationgroup.cpp:42
 msgid "Notifications"
 msgstr "Құлақтандырулар"
@@ -163,6 +146,23 @@ msgstr "Құлақтандырулар"
 msgctxt "Show all  notifications"
 msgid "All"
 msgstr "Барлық"
+
+#: ui/notificationgroup.cpp:94 ui/notificationwidget.cpp:324
+#, kde-format
+msgid "Notification from %1"
+msgstr "%1 құлақтандыруы"
+
+#: ui/notifications.cpp:126
+msgid "No notifications and no jobs"
+msgstr "Құлақтандырулар мен тапсырмалар жоқ"
+
+#: ui/notifications.cpp:214
+msgid "Information"
+msgstr "Мәлімет"
+
+#: ui/notifications.cpp:216
+msgid "Choose which information to show"
+msgstr "Қай мәліметті қөрсету керек таңдау"
 
 #. i18n: file: ui/notificationsconfig.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_2)
