@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-01 06:15+0100\n"
+"POT-Creation-Date: 2011-02-03 02:31+0100\n"
 "PO-Revision-Date: 2010-08-04 06:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -16,106 +16,134 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: plugin_katebuild.cpp:83
+#: plugin_katebuild.cpp:63 plugin_katebuild.cpp:64
+msgid "Build Plugin"
+msgstr ""
+
+#: plugin_katebuild.cpp:91
 msgid "Build Output"
 msgstr "Жинақтаудың шығысы"
 
-#: plugin_katebuild.cpp:95
-msgid "Run make"
-msgstr "make утилитасын жегу"
+#: plugin_katebuild.cpp:104 targets.cpp:56
+#, fuzzy
+#| msgid "&Build"
+msgid "Build"
+msgstr "&Жинақтау"
 
-#: plugin_katebuild.cpp:100
-msgid "Make Clean"
+#: plugin_katebuild.cpp:108 targets.cpp:66
+#, fuzzy
+#| msgid "Make Clean"
+msgid "Clean"
 msgstr "Make-пен тазалау"
 
-#: plugin_katebuild.cpp:105
+#: plugin_katebuild.cpp:112
 msgid "Quick Compile"
 msgstr "Жедел компиляциясы"
 
-#: plugin_katebuild.cpp:110
+#: plugin_katebuild.cpp:116
 msgid "Stop"
 msgstr ""
 
-#: plugin_katebuild.cpp:115
+#: plugin_katebuild.cpp:120
 msgid "Next Error"
 msgstr "Келесі қате"
 
-#: plugin_katebuild.cpp:120
+#: plugin_katebuild.cpp:125
 msgid "Previous Error"
 msgstr "Алдыңғы қате"
 
-#: plugin_katebuild.cpp:273
+#: plugin_katebuild.cpp:130
+msgid "Next Target"
+msgstr ""
+
+#: plugin_katebuild.cpp:136
+#, fuzzy
+#| msgid "Settings"
+msgctxt "Tab label"
+msgid "Target Settings"
+msgstr "Параметрлері"
+
+#: plugin_katebuild.cpp:379
 msgctxt "The same word as 'make' uses to mark an error."
 msgid "error"
 msgstr "қате"
 
-#: plugin_katebuild.cpp:275
+#: plugin_katebuild.cpp:381
 msgctxt "The same word as 'ld' uses to mark an ..."
 msgid "undefined reference"
 msgstr "анықталмаған сілтеме"
 
-#: plugin_katebuild.cpp:282
+#: plugin_katebuild.cpp:388
 msgctxt "The same word as 'make' uses to mark a warning."
 msgid "warning"
 msgstr ""
 
-#: plugin_katebuild.cpp:325
+#: plugin_katebuild.cpp:432
 msgid "There is no file or directory specified for building."
 msgstr "Жинақтау үшін файл не қапшық келтірілмеген."
 
-#: plugin_katebuild.cpp:329
+#: plugin_katebuild.cpp:436
 #, kde-format
 msgid ""
 "The file \"%1\" is not a local file. Non-local files cannot be compiled."
 msgstr ""
 "\"%1\" деген файл жергілікті емес. Жергілікті еместер компиляцияланбайды."
 
-#: plugin_katebuild.cpp:374
+#: plugin_katebuild.cpp:481
 msgid "The custom command is empty."
 msgstr "Өзіндік команда бос."
 
-#: plugin_katebuild.cpp:418
+#: plugin_katebuild.cpp:525
 #, kde-format
 msgid "Failed to run \"%1\". exitStatus = %2"
 msgstr "\"%1\" дегенді жегу жаңылысы. exitStatus = %2"
 
-#: plugin_katebuild.cpp:454
+#: plugin_katebuild.cpp:563
 #, fuzzy, kde-format
 #| msgid "Found Warnings/Errors."
 msgid "Found one error."
 msgid_plural "Found %1 errors."
 msgstr[0] "Ескерту/Қателері бар"
 
-#: plugin_katebuild.cpp:457
+#: plugin_katebuild.cpp:566
 #, fuzzy, kde-format
 #| msgid "Found Warnings/Errors."
 msgid "Found one warning."
 msgid_plural "Found %1 warnings."
 msgstr[0] "Ескерту/Қателері бар"
 
-#: plugin_katebuild.cpp:459 plugin_katebuild.cpp:461
+#: plugin_katebuild.cpp:568 plugin_katebuild.cpp:570
 msgid "Make Results"
 msgstr "Make нәтижелері"
 
-#: plugin_katebuild.cpp:461
+#: plugin_katebuild.cpp:570
 msgid "Build completed without problems."
 msgstr "Жинақтау қиыншылықсыз бітті."
 
-#. i18n: file: ui.rc:4
-#. i18n: ectx: Menu (Build)
-#: rc.cpp:3
-msgid "&Build"
-msgstr "&Жинақтау"
+#: plugin_katebuild.cpp:765 plugin_katebuild.cpp:783
+#, kde-format
+msgid "Target %1"
+msgstr ""
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
 
 #. i18n: file: build.ui:27
 #. i18n: ectx: attribute (title), widget (QWidget, errs)
-#: rc.cpp:6
+#: rc.cpp:5
 msgid "Errors && Warnings"
 msgstr "Қателер мен Ескертулер"
 
-#. i18n: file: build.ui:43
+#. i18n: file: build.ui:46
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: rc.cpp:9
+#: rc.cpp:8
 #, fuzzy
 #| msgctxt "Header for the file name collumn"
 #| msgid "File"
@@ -123,9 +151,9 @@ msgctxt "Header for the file name column"
 msgid "File"
 msgstr "Файл"
 
-#. i18n: file: build.ui:48
+#. i18n: file: build.ui:51
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: rc.cpp:12
+#: rc.cpp:11
 #, fuzzy
 #| msgctxt "Header for the line number collumn"
 #| msgid "Line"
@@ -133,9 +161,9 @@ msgctxt "Header for the line number column"
 msgid "Line"
 msgstr "Жол"
 
-#. i18n: file: build.ui:53
+#. i18n: file: build.ui:56
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: rc.cpp:15
+#: rc.cpp:14
 #, fuzzy
 #| msgctxt "Header for the error message collumn"
 #| msgid "Message"
@@ -143,60 +171,67 @@ msgctxt "Header for the error message column"
 msgid "Message"
 msgstr "Хабалама"
 
-#. i18n: file: build.ui:62
+#. i18n: file: build.ui:65
 #. i18n: ectx: attribute (title), widget (QWidget, output)
-#: rc.cpp:18
+#: rc.cpp:17
 msgid "Output"
 msgstr "Шығысы"
 
-#. i18n: file: build.ui:88
-#. i18n: ectx: attribute (title), widget (QWidget, settings)
-#: rc.cpp:21
-msgid "Settings"
-msgstr "Параметрлері"
+#. i18n: file: ui.rc:4
+#. i18n: ectx: Menu (Build)
+#: rc.cpp:20
+msgid "&Build"
+msgstr "&Жинақтау"
 
-#. i18n: file: build.ui:94
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:24
-msgid "Working directory:"
+#: targets.cpp:35
+msgid "New"
+msgstr ""
+
+#: targets.cpp:39
+msgid "Copy"
+msgstr ""
+
+#: targets.cpp:43
+msgid "Delete"
+msgstr ""
+
+#: targets.cpp:49
+#, fuzzy
+#| msgid "Working directory:"
+msgid "Working directory"
 msgstr "Жұмыс қапшығы:"
 
-#. i18n: file: build.ui:107
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:27
-msgid "Build command:"
-msgstr "Жинақтау командасы:"
-
-#. i18n: file: build.ui:127
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:30
-msgid "Clean command:"
-msgstr "Тазалау командасы:"
-
-#. i18n: file: build.ui:147
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:33
-msgid "Quick compile:"
-msgstr "Жедел компиляциялау:"
-
-#. i18n: file: build.ui:160
-#. i18n: ectx: property (toolTip), widget (KLineEdit, quickComp)
-#: rc.cpp:37
-#, no-c-format
-msgid "Use \"%f\" for current file and \"%d\" for directory of current file."
-msgstr "\"%f\" деген назардағы файл, \"%d\" деген ол жатқан қапшығы."
-
-#. i18n: file: build.ui:183
-#. i18n: ectx: property (toolTip), widget (KLineEdit, buildDir)
-#: rc.cpp:40
+#: targets.cpp:51
 msgid "Leave empty to use the directory of the current document. "
 msgstr "Назардағы файл жатқан қапшығын пайдалану үшін бос қалдырыңыз."
 
-#. i18n: file: build.ui:193
-#. i18n: ectx: property (text), widget (QToolButton, browse)
-#: rc.cpp:43
-msgid "..."
-msgstr "..."
+#: targets.cpp:76
+#, fuzzy
+#| msgid "Quick compile:"
+msgid "Quick compile"
+msgstr "Жедел компиляциялау:"
+
+#: targets.cpp:78
+#, fuzzy, c-format
+#| msgid ""
+#| "Use \"%f\" for current file and \"%d\" for directory of current file."
+msgid ""
+"Use:\n"
+"\"%f\" for current file\n"
+"\"%d\" for directory of current file"
+msgstr "\"%f\" деген назардағы файл, \"%d\" деген ол жатқан қапшығы."
+
+#~ msgid "Run make"
+#~ msgstr "make утилитасын жегу"
+
+#~ msgid "Build command:"
+#~ msgstr "Жинақтау командасы:"
+
+#~ msgid "Clean command:"
+#~ msgstr "Тазалау командасы:"
+
+#~ msgid "..."
+#~ msgstr "..."
 
 #~ msgid "Break"
 #~ msgstr "Үзіліс"
