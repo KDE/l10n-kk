@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-12-10 02:24+0100\n"
-"PO-Revision-Date: 2011-02-19 05:14+0600\n"
+"PO-Revision-Date: 2011-02-20 05:12+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -419,7 +419,7 @@ msgstr "Серверге авторизация үшін жіберілетін 
 #. i18n: ectx: label, entry (precommand), group (Transport $(transportId))
 #: rc.cpp:216
 msgid "Command to execute before sending a mail"
-msgstr ""
+msgstr "Поштаны жіберу алдында орындалатын команда"
 
 #. i18n: file: mailtransport.kcfg:50
 #. i18n: ectx: whatsthis, entry (precommand), group (Transport $(transportId))
@@ -428,12 +428,14 @@ msgid ""
 "A command to run locally, prior to sending email. This can be used to set up "
 "SSH tunnels, for example. Leave it empty if no command should be run."
 msgstr ""
+"Поштаны жіберу алдында жергілікті орындалатын команда. Мысалы, "
+"SSH туннельдерін орнатуға қолдануға. Қажет болмаса - бос қалдырыңыз."
 
 #. i18n: file: mailtransport.kcfg:53
 #. i18n: ectx: label, entry (requiresAuthentication), group (Transport $(transportId))
 #: rc.cpp:222
 msgid "Server requires authentication"
-msgstr ""
+msgstr "Сервер аутентификацияны талап етеді"
 
 #. i18n: file: mailtransport.kcfg:54
 #. i18n: ectx: whatsthis, entry (requiresAuthentication), group (Transport $(transportId))
@@ -442,12 +444,15 @@ msgid ""
 "Check this option if your SMTP server requires authentication before "
 "accepting mail. This is known as 'Authenticated SMTP' or simply ASMTP."
 msgstr ""
+"SMTP серверіңі, поштаны қабыдаудың алдында, аутентификацияны "
+"талап ететін болса - осыны белгілеңіз. Бұл 'Authenticated SMTP' "
+"немесе жәй ASMTP деп мәлім тетік."
 
 #. i18n: file: mailtransport.kcfg:58
 #. i18n: ectx: label, entry (storePassword), group (Transport $(transportId))
 #: rc.cpp:228
 msgid "Store password"
-msgstr ""
+msgstr "Паролі жаттап алынсын"
 
 #. i18n: file: mailtransport.kcfg:61
 #. i18n: ectx: whatsthis, entry (storePassword), group (Transport $(transportId))
@@ -461,36 +466,42 @@ msgid ""
 "should not be considered secure from decryption efforts if access to the "
 "configuration file is obtained."
 msgstr ""
+"Паролі жаттап алынсын десеңіз - осыны белгілеңіз.\n"
+"KWallet қолданыста болса, соған сақталады, бұл қауіпсіз тәсіл.\n"
+"Алайда, KWallet істемесе, онда ол параметрлер файлына "
+"шиеленістірген түрде сақталады, бірақ соған қарамастан, "
+"осы файлға бөтендер қатынауы ықтималдығынан, бұл "
+"қауіпсіз тәсіл деп есептелмейді."
 
 #. i18n: file: mailtransport.kcfg:65
 #. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
 #: rc.cpp:236
 msgid "Encryption method used for communication"
-msgstr ""
+msgstr "Байланысуға қолданатын шифрлау әдісі"
 
 #. i18n: file: mailtransport.kcfg:68
 #. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
 #: rc.cpp:239
 msgid "No encryption"
-msgstr ""
+msgstr "Шифрлаусыз"
 
 #. i18n: file: mailtransport.kcfg:71
 #. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
 #: rc.cpp:242
 msgid "SSL encryption"
-msgstr ""
+msgstr "SSL шифрлауы"
 
 #. i18n: file: mailtransport.kcfg:74
 #. i18n: ectx: label, entry (encryption), group (Transport $(transportId))
 #: rc.cpp:245
 msgid "TLS encryption"
-msgstr ""
+msgstr "TLS шифрлауы"
 
 #. i18n: file: mailtransport.kcfg:79
 #. i18n: ectx: label, entry (authenticationType), group (Transport $(transportId))
 #: rc.cpp:248
 msgid "Authentication method"
-msgstr ""
+msgstr "Аутентифкация тәсілі"
 
 #. i18n: file: mailtransport.kcfg:95
 #. i18n: ectx: label, entry (specifyHostname), group (Transport $(transportId))
@@ -502,7 +513,7 @@ msgstr ""
 #. i18n: ectx: label, entry (senderOverwriteAddress), group (Transport $(transportId))
 #: rc.cpp:251 rc.cpp:257 rc.cpp:263 rc.cpp:269
 msgid "<!-- TODO -->"
-msgstr ""
+msgstr "<!-- TODO -->"
 
 #. i18n: file: mailtransport.kcfg:96
 #. i18n: ectx: whatsthis, entry (specifyHostname), group (Transport $(transportId))
@@ -512,12 +523,17 @@ msgid ""
 "server. This is useful when your system's hostname may not be set correctly "
 "or to mask your system's true hostname."
 msgstr ""
+"Пошта серверіңіздің атауы өзгеше жазылсын десеңіз - осыны "
+"белгілеңіз. Жүйелік хост атауы дұрыс орнатылмағанда, немесе "
+"оны жасыру үшін қолдануға болады."
 
 #. i18n: file: mailtransport.kcfg:101
 #. i18n: ectx: whatsthis, entry (localHostname), group (Transport $(transportId))
 #: rc.cpp:260
 msgid "Enter the hostname that should be used when identifying to the server."
 msgstr ""
+"Пошта серверіңіздің атауы ретінде қолданатын хост атауын "
+"келтіріңіз."
 
 #. i18n: file: mailtransport.kcfg:105
 #. i18n: ectx: whatsthis, entry (specifySenderOverwriteAddress), group (Transport $(transportId))
@@ -526,6 +542,9 @@ msgid ""
 "Check this option to use a custom sender address when identifying to the "
 "mail server. If not checked, the address from the identity is used."
 msgstr ""
+"Пошта срверінде жазылатын жіберушінің адресі әдеттігінен басқа "
+"болсын десңіз - осыны белгілеңіз. Белгісі қойылмаса, адрес іс-"
+"әлпеті жазуынан алынады."
 
 #. i18n: file: mailtransport.kcfg:110
 #. i18n: ectx: whatsthis, entry (senderOverwriteAddress), group (Transport $(transportId))
@@ -533,60 +552,62 @@ msgstr ""
 msgid ""
 "Enter the address that should be used to overwrite the default sender "
 "address."
-msgstr ""
+msgstr "Әдетті жіберуші адресінің орнына қолданатын адресті келтіріңіз."
 
 #. i18n: file: mailtransport.kcfg:18
 #: rc.cpp:274
 msgid "Unnamed"
-msgstr ""
+msgstr "Атаусыз"
 
 #: sendmailjob.cpp:72
 #, kde-format
 msgid "Failed to execute mailer program %1"
-msgstr ""
+msgstr "Мынау пошта бағдарламаны орындау жаңылысы: %1"
 
 #: sendmailjob.cpp:85
 msgid "Sendmail exited abnormally."
-msgstr ""
+msgstr "Sendmail-ден дағдарысты шығу."
 
 #: sendmailjob.cpp:87
 #, kde-format
 msgid "Sendmail exited abnormally: %1"
-msgstr ""
+msgstr "Sendmail-ден дағдарысты шығуы: %1"
 
 #: smtpjob.cpp:177
 msgid "You need to supply a username and a password to use this SMTP server."
 msgstr ""
+"Бұл SMTP cерверге қатынау үшін пайдаланушының атауы мен "
+"паролін келтіру керек."
 
 #: smtpjob.cpp:229
 msgid "Unable to create SMTP job."
-msgstr ""
+msgstr "SMTP тапырмасы құрылмады."
 
 #: transportconfigdialog.cpp:80
 msgid "This transport cannot be configured."
-msgstr ""
+msgstr "Бұл тасымал бапталмады."
 
 #: transport.cpp:109
 #, kde-format
 msgctxt ""
 "%1: name; %2: number appended to it to make it unique among a list of names"
 msgid "%1 #%2"
-msgstr ""
+msgstr "%1 #%2"
 
 #: transport.cpp:157
 msgctxt "Authentication method"
 msgid "Clear text"
-msgstr ""
+msgstr "Кәдімгі мәтін"
 
 #: transport.cpp:161
 msgctxt "Authentication method"
 msgid "Anonymous"
-msgstr ""
+msgstr "Анонимды"
 
 #: transport.cpp:199
 msgctxt "An unknown transport type"
 msgid "Unknown"
-msgstr ""
+msgstr "Беймәлім"
 
 #: transport.cpp:245
 #, kde-format
@@ -599,6 +620,11 @@ msgid ""
 "obtained.\n"
 "Do you want to store the password for server '%1' in the configuration file?"
 msgstr ""
+"KWallet істемейді. Парольдерді сақтау KWallet-ті қолдану лазым.\n"
+"Оның орнына парольді параметрлер файлында да сақтауға болады. Пароль "
+"оқылмайтын пішімде сақталынады, дегенмен бұл әбден қауіпсіз жол деп санауға "
+"болмайды.\n"
+"'%1' серверіне қатынау пароліңізді параметрлер файлында сақтауды қалайсыз ба?"
 
 #: transport.cpp:253
 msgid "KWallet Not Available"
@@ -691,3 +717,4 @@ msgstr ""
 #: transportmanager.cpp:742
 msgid "Keep"
 msgstr ""
+
