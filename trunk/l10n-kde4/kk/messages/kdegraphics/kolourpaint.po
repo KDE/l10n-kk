@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-25 03:31+0100\n"
+"POT-Creation-Date: 2011-03-06 03:36+0100\n"
 "PO-Revision-Date: 2010-07-20 05:39+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -362,6 +362,8 @@ msgstr "Бастапқысы:"
 
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:137
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:242
+#: mainWindow/kpMainWindow_StatusBar.cpp:86
+#: mainWindow/kpMainWindow_StatusBar.cpp:230
 #, kde-format
 msgid "%1 x %2"
 msgstr "%1 x %2"
@@ -372,7 +374,7 @@ msgid "Preview"
 msgstr "Нобайы"
 
 #: dialogs/imagelib/transforms/kpTransformPreviewDialog.cpp:173
-#: dialogs/kpColorSimilarityDialog.cpp:59
+#: dialogs/kpColorSimilarityDialog.cpp:58
 msgid "&Update"
 msgstr "&Жаңарту"
 
@@ -455,7 +457,7 @@ msgstr "&Пайызы:"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:319
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:326
-#: dialogs/kpColorSimilarityDialog.cpp:80
+#: dialogs/kpColorSimilarityDialog.cpp:79
 msgid "%"
 msgstr "%"
 
@@ -495,12 +497,12 @@ msgstr ""
 "тапшылығына ұшыратады.</p><p>Сонда да өлшемін өзгертпексіз бе?</p></qt>"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:717
-#: mainWindow/kpMainWindow_Tools.cpp:681
+#: mainWindow/kpMainWindow_Tools.cpp:677
 msgid "Resize Image?"
 msgstr "Өлшемін өзгерту керек пе?"
 
 #: dialogs/imagelib/transforms/kpTransformResizeScaleDialog.cpp:718
-#: mainWindow/kpMainWindow_Tools.cpp:682
+#: mainWindow/kpMainWindow_Tools.cpp:678
 msgid "R&esize Image"
 msgstr "Ө&згерту"
 
@@ -733,23 +735,6 @@ msgstr "Кескінді қисайту керек пе?"
 msgid "Sk&ew Image"
 msgstr "Қ&исайту"
 
-#: dialogs/kpColorSimilarityDialog.cpp:47
-msgid "Color Similarity"
-msgstr "Түстің ұқсастығы"
-
-#: dialogs/kpColorSimilarityDialog.cpp:73
-msgid "&RGB Color Cube Distance"
-msgstr "&RGB түстер текшедегі аралығы"
-
-#: dialogs/kpColorSimilarityDialog.cpp:81
-msgid "Exact Match"
-msgstr "Нақты тең"
-
-#: dialogs/kpColorSimilarityDialog.cpp:86
-msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
-msgstr ""
-"<a href=\"dummy_to_make_link_clickable\">Түстің ұқсастығы деген не?</a>"
-
 #: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:62
 #: dialogs/kpDocumentSaveOptionsPreviewDialog.cpp:68
 msgid "Save Preview"
@@ -760,6 +745,23 @@ msgstr "Нобайын сақтау"
 msgid "1 byte (approx. %2%)"
 msgid_plural "%1 bytes (approx. %2%)"
 msgstr[0] "%1 байт (%2% маңайында)"
+
+#: dialogs/kpColorSimilarityDialog.cpp:47
+msgid "Color Similarity"
+msgstr "Түстің ұқсастығы"
+
+#: dialogs/kpColorSimilarityDialog.cpp:72
+msgid "&RGB Color Cube Distance"
+msgstr "&RGB түстер текшедегі аралығы"
+
+#: dialogs/kpColorSimilarityDialog.cpp:80
+msgid "Exact Match"
+msgstr "Нақты тең"
+
+#: dialogs/kpColorSimilarityDialog.cpp:85
+msgid "<a href=\"dummy_to_make_link_clickable\">What is Color Similarity?</a>"
+msgstr ""
+"<a href=\"dummy_to_make_link_clickable\">Түстің ұқсастығы деген не?</a>"
 
 #: document/kpDocument_Open.cpp:107
 #, kde-format
@@ -855,10 +857,6 @@ msgstr "Үстінен жазу"
 #: document/kpDocument_Save.cpp:471
 msgid "Could not save image - failed to upload."
 msgstr "Кескін сақталмады - жүктеп беру жаңылысы."
-
-#: generic/widgets/kpSqueezedTextLabel.cpp:118
-msgid "..."
-msgstr "..."
 
 #: imagelib/transforms/kpTransformCrop.cpp:71
 #: imagelib/transforms/kpTransformCrop.cpp:73
@@ -1041,7 +1039,7 @@ msgstr ""
 "Оның үстінен жаза берейік пе?"
 
 #: lgpl/generic/kpUrlFormatter.cpp:40 lgpl/generic/kpUrlFormatter.cpp:51
-#: widgets/toolbars/kpColorToolBar.cpp:264
+#: widgets/toolbars/kpColorToolBar.cpp:268
 msgid "Untitled"
 msgstr "Аталмаған"
 
@@ -1388,35 +1386,6 @@ msgstr "Мәтін: Өрісін құру"
 msgid "Show &Path"
 msgstr "&Жолын көрсету"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:146
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:153
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:194
-#: mainWindow/kpMainWindow_StatusBar.cpp:225
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:253
-#, kde-format
-msgid "%1bpp"
-msgstr "%1б/н"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:279
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "Қаріп шоғыры"
@@ -1511,48 +1480,15 @@ msgstr "Файлға көшірмелеу"
 msgid "Paste From File"
 msgstr "Файлдан алып орналастыру"
 
-#: mainWindow/kpMainWindow_Tools.cpp:132
-msgid "Previous Tool Option (Group #1)"
-msgstr "Алдыңғы құрал параметрі (#1 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:138
-msgid "Next Tool Option (Group #1)"
-msgstr "Келесі құрал параметрі (#1 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:144
-msgid "Previous Tool Option (Group #2)"
-msgstr "Алдыңғы құрал параметрі (#2 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:150
-msgid "Next Tool Option (Group #2)"
-msgstr "Келесі құрал параметрі (#2 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:162
-msgid "&Draw Opaque"
-msgstr "&Мөлдірсіздігін салу"
-
-#: mainWindow/kpMainWindow_Tools.cpp:167
-msgid "Draw With Color Similarity..."
-msgstr "Ұқсас түспен салу..."
-
-#: mainWindow/kpMainWindow_Tools.cpp:177
-msgid "Tool Box"
-msgstr "Құралдар"
-
-#: mainWindow/kpMainWindow_Tools.cpp:671
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to resize the image?</p></qt>"
-msgstr ""
-"<qt><p>Кескіннің өлшемін %1x%2 қылып өзгерту көп жадын талап етеді.Ол "
-"жүйеңіздің жауап беру қабілетін кемітіп, басқа қолданбаларды ресурстар "
-"тапшылығына ұшыратады.</p><p>Сонда да өлшемін өзгертпексіз бе?</p></qt>"
-
 #: mainWindow/kpMainWindow_View.cpp:76
 msgid "Show &Grid"
 msgstr "&Тор сызықтарын көрсету"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
 
 #: mainWindow/kpMainWindow_View_Zoom.cpp:113
 msgid "&Zoom"
@@ -1573,6 +1509,67 @@ msgstr ""
 #, kde-format
 msgid "Set Zoom Level to %1%"
 msgstr "%1% ұлғайту/кішірейту"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1б/н"
+
+#: mainWindow/kpMainWindow_Tools.cpp:135
+msgid "Previous Tool Option (Group #1)"
+msgstr "Алдыңғы құрал параметрі (#1 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:141
+msgid "Next Tool Option (Group #1)"
+msgstr "Келесі құрал параметрі (#1 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:147
+msgid "Previous Tool Option (Group #2)"
+msgstr "Алдыңғы құрал параметрі (#2 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:153
+msgid "Next Tool Option (Group #2)"
+msgstr "Келесі құрал параметрі (#2 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:165
+msgid "&Draw Opaque"
+msgstr "&Мөлдірсіздігін салу"
+
+#: mainWindow/kpMainWindow_Tools.cpp:170
+msgid "Draw With Color Similarity..."
+msgstr "Ұқсас түспен салу..."
+
+#: mainWindow/kpMainWindow_Tools.cpp:180
+msgid "Tool Box"
+msgstr "Құралдар"
+
+#: mainWindow/kpMainWindow_Tools.cpp:667
+#, kde-format
+msgid ""
+"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to resize the image?</p></qt>"
+msgstr ""
+"<qt><p>Кескіннің өлшемін %1x%2 қылып өзгерту көп жадын талап етеді.Ол "
+"жүйеңіздің жауап беру қабілетін кемітіп, басқа қолданбаларды ресурстар "
+"тапшылығына ұшыратады.</p><p>Сонда да өлшемін өзгертпексіз бе?</p></qt>"
 
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
@@ -1638,12 +1635,6 @@ msgstr "Бүрікпе дақ салу"
 #: tools/flow/kpToolSpraycan.cpp:75
 msgid "Click or drag to spray graffiti."
 msgstr "Бүрікпе дақ салу үшін түртіңіз не басып жүргізіңіз."
-
-#: tools/kpTool.cpp:149
-#, kde-format
-msgctxt "<Tool Name> (<Single Accel Key>)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
 
 #: tools/kpToolColorPicker.cpp:47
 msgid "Lets you select a color from the image"
@@ -1929,6 +1920,12 @@ msgstr "Мәтін: Асты сызылған"
 msgid "Text: Strike Through"
 msgstr "Мәтін: Сызып тасталған"
 
+#: tools/kpTool.cpp:155
+#, kde-format
+msgctxt "<Tool Name> (<Single Accel Key>)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
 #: views/kpZoomedThumbnailView.cpp:66
 #, kde-format
 msgid "%1% - Thumbnail"
@@ -2021,12 +2018,12 @@ msgstr ""
 "шектерден шығып кетсе (мысалы, <b>Құйып толтыру</b> деген тым көп ауданды "
 "бояп кететіндей) - оны тарлытуға дәл келеді.</p></qt>"
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:224
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:226
 #, kde-format
 msgid "<p>Color Similarity: %1%</p><p align=\"center\">Click to configure.</p>"
 msgstr "<p>Түс ұқсастығы: %1%</p><p align=\"center\">Баптау үшін түртіңіз.</p>"
 
-#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:231
+#: widgets/colorSimilarity/kpColorSimilarityToolBarItem.cpp:233
 msgid ""
 "<p>Color Similarity: Exact Match</p><p align=\"center\">Click to configure.</"
 "p>"
@@ -2210,22 +2207,6 @@ msgstr "Беттің &сол жақ жоғарында"
 msgid "Transparent"
 msgstr "Мөлдір"
 
-#: widgets/toolbars/kpColorToolBar.cpp:260
-msgid "KolourPaint Defaults"
-msgstr "KolourPaint әдеттегілері"
-
-#: widgets/toolbars/kpColorToolBar.cpp:273
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette"
-msgid "Colors: %1"
-msgstr "Палитра: %1"
-
-#: widgets/toolbars/kpColorToolBar.cpp:280
-#, kde-format
-msgctxt "Colors: name_or_url_of_color_palette [modified]"
-msgid "Colors: %1 [modified]"
-msgstr "Палитра: %1 [өзгертілген]"
-
 #: widgets/toolbars/options/kpToolWidgetBrush.cpp:204
 msgid "1x1"
 msgstr "1x1"
@@ -2266,6 +2247,22 @@ msgstr "Нысан түсімен толтыру"
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:43
 msgid "Opaque"
 msgstr "Мөлдірсіз"
+
+#: widgets/toolbars/kpColorToolBar.cpp:264
+msgid "KolourPaint Defaults"
+msgstr "KolourPaint әдеттегілері"
+
+#: widgets/toolbars/kpColorToolBar.cpp:277
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette"
+msgid "Colors: %1"
+msgstr "Палитра: %1"
+
+#: widgets/toolbars/kpColorToolBar.cpp:284
+#, kde-format
+msgctxt "Colors: name_or_url_of_color_palette [modified]"
+msgid "Colors: %1 [modified]"
+msgstr "Палитра: %1 [өзгертілген]"
 
 #: widgets/kpColorCells.cpp:196
 msgid ""
@@ -2351,6 +2348,9 @@ msgstr "Таңдау құралының контекстік мәзірі"
 #: rc.cpp:23
 msgid "&Edit"
 msgstr "Өң&деу"
+
+#~ msgid "..."
+#~ msgstr "..."
 
 #~ msgid "Flip Selection"
 #~ msgstr "Таңдалғанды аудару"
