@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-12-26 03:03+0100\n"
-"PO-Revision-Date: 2011-03-25 06:54+0600\n"
+"PO-Revision-Date: 2011-03-27 04:58+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -2916,6 +2916,10 @@ msgid ""
 "\\nC\\n)<br>  @# @i=A<br>@end</i><br><b>New</b><br><i>foreach i in MyArray "
 "do<br>  //i = key, MyArray[i] = val<br>end "
 msgstr ""
+"Циклын орындау: айнымалысына, EOL (жолдың соңы) белгісімен бөліктенген, "
+"<i>аталымдар</i> тізімінің мәндері, кезектеп беріледі. <br><b>Ескі түрі</b> "
+"<br> <i>@forEach(i,A\\nB\\nC\\n)<br>  @# @i=A<br>@end</i><br><b>Жаңасы</b> "
+"<br><i>foreach i in MyArray do<br>  //i = key, MyArray[i] = val<br>end "
 
 #: lib/specialinformation.cpp:413
 msgid ""
@@ -2949,6 +2953,11 @@ msgid ""
 "then<br>//  do op<br>elseif cond<br>//  second chance<br>else<br>//  cond "
 "failed<br>endif</p>"
 msgstr ""
+"Өрнегі ақиқат (нөл емес сан, не бос емес мәтін жолы) болса, блокты "
+"орындайды.<p><b>Ескі түрі</b> Аяқтауы <b>@endif</b></p><p> "
+"<b>Жаңасы</b><br>if val == true then<br>//  операцияны істеу<br> "
+"elseif cond<br>//  әйтпесе<br>else<br>//  шарт орындалмаса<br> "
+"endif</p>"
 
 #: lib/specialinformation.cpp:421
 msgid ""
@@ -2956,6 +2965,10 @@ msgid ""
 "path is given. Arguments may be given as named arguments which will become "
 "global variables in the new dialog. For instance: <i>var=val</i>"
 msgstr ""
+"Басқа Kommander диалогын орындады. Қапшқ жолы көрсетілмесе, "
+"қолданыстағы қапшық пайдаланады. Аргуметерін аталған аргументтер "
+"ретінде беруге болады, онда олар, жаңа диалогтың глобалды "
+"айнымалысы болып шығады. Мысалы: <i>var=val</i>"
 
 #: lib/specialinformation.cpp:423
 msgid "Reads setting from configuration file for this dialog."
@@ -3006,11 +3019,11 @@ msgstr ""
 
 #: lib/specialinformation.cpp:439
 msgid "Connects the signal of sender with the slot of the receiver"
-msgstr "Жіберушінің сигналын қабылдаушының слотымен байланыстырады"
+msgstr "Жібергіштің сигналын қабылдағыштың слотымен байланыстырады"
 
 #: lib/specialinformation.cpp:441
 msgid "Disconnects the signal of sender from the slot of the receiver"
-msgstr "Жіберушінің сигналын қабылдаушының слотымен байланысын үзеді"
+msgstr "Жібергіштің сигналын қабылдағыштың слотымен байланысын үзеді"
 
 #: lib/specialinformation.cpp:444
 msgid "Exits script execution and returns"
@@ -3742,18 +3755,23 @@ msgid ""
 "button to create a connection.</p><p>Select a connection from the list then "
 "press the <b>Disconnect</b> button to delete the connection.</p>"
 msgstr ""
+"<b>Байланыстарын өзгерту</b><p>Назардағы пішінде байланыстарын "
+"қосу мен өшіру.</p><p>Байланысты құру үшін, сигналды және оған сәйкесті "
+"слотты таңдап, <b>Байланыстыру</b> батырмасын басыңыз.</p> "
+"<p>Байланысты өшіру үшін, оны тізімінен таңдап алып. <b>Ажырату</b> "
+"батырмасын басыңыз.</p>"
 
 #. i18n: file: editor/connectioneditor.ui:59
 #. i18n: ectx: property (whatsThis), widget (KListView, connectionView)
 #: rc.cpp:239
 msgid "Displays the connections between the sender and the receiver."
-msgstr "Жіберуші - қабылдаушы байланыстарын көрсетеді."
+msgstr "Жібергіш - қабылдағыш байланыстарын көрсетеді."
 
 #. i18n: file: editor/connectioneditor.ui:63
 #. i18n: ectx: property (text), widget (KListView, connectionView)
 #: rc.cpp:242
 msgid "Sender"
-msgstr "Жіберуші"
+msgstr "Жібергіш"
 
 #. i18n: file: editor/connectioneditor.ui:74
 #. i18n: ectx: property (text), widget (KListView, connectionView)
@@ -3765,7 +3783,7 @@ msgstr "Сигнал"
 #. i18n: ectx: property (text), widget (KListView, connectionView)
 #: rc.cpp:248
 msgid "Receiver"
-msgstr "Қабылдаушы"
+msgstr "Қабылдағыш"
 
 #. i18n: file: editor/connectioneditor.ui:96
 #. i18n: ectx: property (text), widget (KListView, connectionView)
@@ -3781,6 +3799,9 @@ msgid ""
 "only those which have arguments that correspond with the arguments of the "
 "signal that is currently selected in the Signal-list.</b>"
 msgstr ""
+"<b>Қабылдағыш слоттарының тізімі.</b><p>Сигналдар тізімінде, "
+"таңдалып тұрған сигналдың аргументеріне сәйкес келетін слотары "
+"ғана көрсетіледі.</b>"
 
 #. i18n: file: editor/connectioneditor.ui:117
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
@@ -3898,6 +3919,9 @@ msgid ""
 "<b>Comment</b> and <b>Author</b> are for your own use and are not required.</"
 "p>"
 msgstr ""
+"<b>Пішінді баптау</b><p>Пішінің параметрлерін өзгерту. "
+"<b>Түсініктеме</b>, <b>Авторы</b> секілділері Сізге ғана арналған да, "
+"міндеті емес.</p>"
 
 #. i18n: file: editor/formsettings.ui:102
 #. i18n: ectx: property (title), widget (Q3GroupBox, GroupBox2)
@@ -4096,6 +4120,8 @@ msgid ""
 "<b>Move the selected item up.</b><p>The top-most column will be the first "
 "column of the list.</p>"
 msgstr ""
+"<b>Таңдалған аталымды жоғарлату.</b><p>Ең жоғардағы баған тізімінің "
+"біріншісі болады.</p>"
 
 #. i18n: file: editor/tableeditor.ui:199
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonColumnDown)
@@ -4120,6 +4146,8 @@ msgid ""
 "<b>Move the selected item down.</b><p>The top-most column will be the first "
 "column of the list.</p>"
 msgstr ""
+"<b>Таңдалған аталымды төмендету</b><p>Ең жоғардағы баған тізімінің "
+"біріншісі болады.</p>"
 
 #. i18n: file: editor/tableeditor.ui:209
 #. i18n: ectx: property (text), widget (QPushButton, buttonDeleteColumn)
@@ -4127,7 +4155,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, colDelete)
 #: rc.cpp:496 rc.cpp:1196
 msgid "&Delete Column"
-msgstr "Бағанды өшіру"
+msgstr "Бағанды ө&шіру"
 
 #. i18n: file: editor/tableeditor.ui:216
 #. i18n: ectx: property (text), widget (QPushButton, buttonNewColumn)
@@ -4186,6 +4214,8 @@ msgid ""
 "<b>Delete the selected item's pixmap.</b><p>The pixmap in the current column "
 "of the selected item will be deleted.</p>"
 msgstr ""
+"<b>Таңдалғанның суретін өшіру.</b><p>Назардағы бағанның не таңдалған "
+"аталымының суреті өшіріледі.</p>"
 
 #. i18n: file: editor/tableeditor.ui:290
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonChooseColPixmap)
@@ -4214,6 +4244,8 @@ msgid ""
 "<b>Select a pixmap file for the item.</b><p>The pixmap will be changed in "
 "the current column of the selected item.</p>"
 msgstr ""
+"<b>Аталым сурет файлын таңдау.</b><p>Таңдалған аталымының назардағы "
+"бағандағы суреті өзгертіледі.</p>"
 
 #. i18n: file: editor/tableeditor.ui:302
 #. i18n: ectx: property (text), widget (QLabel, TextLabel2)
@@ -4229,7 +4261,7 @@ msgstr "&Жарлығы:"
 #. i18n: ectx: property (text), widget (QLabel, Label2_2)
 #: rc.cpp:526 rc.cpp:559
 msgid "Pixmap:"
-msgstr "Кескіні:"
+msgstr "Суреті:"
 
 #. i18n: file: editor/tableeditor.ui:328
 #. i18n: ectx: property (text), widget (QLabel, labelFields)
@@ -4330,6 +4362,9 @@ msgid ""
 "one tab with general preferences. There may be additional tabs, depending on "
 "which plugins are installed.</p>"
 msgstr ""
+"<b>Параметрлер</b><p>Qt Designer параметрлерін өзгерту. Ылғи "
+"болатыны - жалпы параметрлер қойындысы. Оған қоса, орнатылған "
+"плагиндеріне байланысты, басқа да қойындылар болмақ.</p>"
 
 #. i18n: file: editor/preferences.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, pageGeneral)
@@ -4371,19 +4406,19 @@ msgstr "Аясының түсін қолдану."
 #. i18n: ectx: property (text), widget (QRadioButton, radioPixmap)
 #: rc.cpp:640
 msgid "&Pixmap"
-msgstr ""
+msgstr "&Сурет"
 
 #. i18n: file: editor/preferences.ui:122
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioPixmap)
 #: rc.cpp:643
 msgid "Use a background pixmap"
-msgstr ""
+msgstr "Аясында сурет болсын"
 
 #. i18n: file: editor/preferences.ui:125
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, radioPixmap)
 #: rc.cpp:646
 msgid "Use a background pixmap."
-msgstr ""
+msgstr "Аясында суретті пайдалану."
 
 #. i18n: file: editor/preferences.ui:144
 #. i18n: ectx: property (toolTip), widget (StyledButton, buttonPixmap)
@@ -4391,25 +4426,25 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (StyledButton, buttonPixmap)
 #: rc.cpp:649 rc.cpp:971
 msgid "Select a pixmap"
-msgstr ""
+msgstr "Суретті таңдау"
 
 #. i18n: file: editor/preferences.ui:147
 #. i18n: ectx: property (whatsThis), widget (StyledButton, buttonPixmap)
 #: rc.cpp:652
 msgid "Choose a pixmap file."
-msgstr ""
+msgstr "Сурет файлын таңдау."
 
 #. i18n: file: editor/preferences.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxShowGrid)
 #: rc.cpp:655
 msgid "Show &grid"
-msgstr ""
+msgstr "&Тор көрсетілсін"
 
 #. i18n: file: editor/preferences.ui:163
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBoxShowGrid)
 #: rc.cpp:658
 msgid "Show Grid"
-msgstr ""
+msgstr "Торды көрсету"
 
 #. i18n: file: editor/preferences.ui:166
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBoxShowGrid)
@@ -4418,24 +4453,26 @@ msgid ""
 "<b>Customize the grid appearance for all forms.</b><p>When <b>Show Grid</b> "
 "is checked, all forms show a grid.</p>"
 msgstr ""
+"<b>Барлық пішіндерінің торын ыңғайлау.</b><p><b>Тор көрсетілсін</b> "
+"дегеннің белгісі қойылса, барлық пішіндер торлы болады.</p>"
 
 #. i18n: file: editor/preferences.ui:173
 #. i18n: ectx: property (title), widget (Q3GroupBox, GroupBox1)
 #: rc.cpp:664
 msgid "Gr&id"
-msgstr ""
+msgstr "Т&ор"
 
 #. i18n: file: editor/preferences.ui:188
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxGrid)
 #: rc.cpp:667
 msgid "Sn&ap to grid"
-msgstr ""
+msgstr "Торға к&елтірілсін"
 
 #. i18n: file: editor/preferences.ui:194
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBoxGrid)
 #: rc.cpp:670
 msgid "Snap to the grid"
-msgstr ""
+msgstr "Торына келтіру"
 
 #. i18n: file: editor/preferences.ui:197
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBoxGrid)
@@ -4444,6 +4481,9 @@ msgid ""
 "<b>Customize the grid-settings for all forms.</b><p>When <b>Snap to Grid</b> "
 "is checked, the widgets snap to the grid using the X/Y resolution.</p>"
 msgstr ""
+"<b>Барлық пішіндерінің тор параметрлерін ыңғайлау.</b><p><b>Торға "
+"келтірілсін</b> дегеннің белгісі қойылса, виджетер X/Y тор бойынша "
+"тураланады.</p>"
 
 #. i18n: file: editor/preferences.ui:221
 #. i18n: ectx: property (toolTip), widget (QSpinBox, spinGridX)
@@ -4451,7 +4491,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QSpinBox, spinGridY)
 #: rc.cpp:676 rc.cpp:682
 msgid "Grid resolution"
-msgstr ""
+msgstr "Тор жиілігі"
 
 #. i18n: file: editor/preferences.ui:224
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, spinGridX)
@@ -4462,36 +4502,39 @@ msgid ""
 "<b>Customize the grid-settings for all forms.</b><p>When <b>Show Grid</b> is "
 "checked, a grid is shown on all forms using the X/Y resolution.</p>"
 msgstr ""
+"<b>Барлық пішіндерінің тор параметрлерін ыңғайлау.</b><p><b>Тор "
+"көрсетілсін</b> дегеннің белгісі қойылса, барлық пішіндерінің торлары "
+"бір X/Y жиіліктерімен көрсетіледі.</p>"
 
 #. i18n: file: editor/preferences.ui:250
 #. i18n: ectx: property (text), widget (QLabel, Label1)
 #: rc.cpp:688
 msgid "Grid-&X:"
-msgstr ""
+msgstr "&X бойынша:"
 
 #. i18n: file: editor/preferences.ui:263
 #. i18n: ectx: property (text), widget (QLabel, Label1_2)
 #: rc.cpp:691
 msgid "Grid-&Y:"
-msgstr ""
+msgstr "&Y бойынша:"
 
 #. i18n: file: editor/preferences.ui:297
 #. i18n: ectx: property (title), widget (Q3GroupBox, GroupBox5)
 #: rc.cpp:694
 msgid "Ge&neral"
-msgstr ""
+msgstr "Жа&лпы"
 
 #. i18n: file: editor/preferences.ui:309
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxWorkspace)
 #: rc.cpp:697
 msgid "Restore last &workspace on startup"
-msgstr ""
+msgstr "Бастағанда өткен сеанс қалпына келсін"
 
 #. i18n: file: editor/preferences.ui:315
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBoxWorkspace)
 #: rc.cpp:700
 msgid "Restore last workspace"
-msgstr ""
+msgstr "Өткен сеансты қалпына келтіру"
 
 #. i18n: file: editor/preferences.ui:318
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBoxWorkspace)
@@ -4500,18 +4543,20 @@ msgid ""
 "The current workspace settings will be restored the next time you start Qt "
 "Designer if this option is checked."
 msgstr ""
+"Осы белгі қойылса, келесі рет Qt Designer жегілгенде, қазіргі сеанс "
+"қалпына келеді."
 
 #. i18n: file: editor/preferences.ui:325
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSplash)
 #: rc.cpp:706
 msgid "Show &splash screen on startup"
-msgstr ""
+msgstr "Бастағанда бе&йнепердесі көрсетілсін"
 
 #. i18n: file: editor/preferences.ui:331
 #. i18n: ectx: property (toolTip), widget (QCheckBox, checkBoxSplash)
 #: rc.cpp:709
 msgid "Show Splashscreen"
-msgstr ""
+msgstr "Бейнепердесін көрсету"
 
 #. i18n: file: editor/preferences.ui:334
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBoxSplash)
@@ -4520,6 +4565,8 @@ msgid ""
 "A splash screen is displayed when starting Qt Designer if this option is "
 "checked."
 msgstr ""
+"Осы белгі қойылса, Qt Designer жегілгенде, бейнепердесі "
+"көрсетіледі."
 
 #. i18n: file: editor/preferences.ui:341
 #. i18n: ectx: property (text), widget (QCheckBox, checkAutoEdit)
@@ -4862,49 +4909,49 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:935
 msgid "Background"
-msgstr ""
+msgstr "Аясы"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:162
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:938
 msgid "Foreground"
-msgstr ""
+msgstr "Мәтіннің түсі"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:167
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:941
 msgid "Button"
-msgstr ""
+msgstr "Батырма"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:172
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:944
 msgid "Base"
-msgstr ""
+msgstr "Негізі"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:182
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:950
 msgid "BrightText"
-msgstr ""
+msgstr "Жарқылдаған мәтін"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:187
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:953
 msgid "ButtonText"
-msgstr ""
+msgstr "Батырманың мәтіні"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:192
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:956
 msgid "Highlight"
-msgstr ""
+msgstr "Бояулау"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:197
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
 #: rc.cpp:959
 msgid "HighlightText"
-msgstr ""
+msgstr "Бояуланған мәтін"
 
 #. i18n: file: editor/paletteeditoradvanced.ui:202
 #. i18n: ectx: property (text), item, widget (QComboBox, comboCentral)
@@ -4965,7 +5012,7 @@ msgstr "Көлеңкелеу"
 #: rc.cpp:995
 msgid "Check to let 3D-effect colors be calculated from the button-color."
 msgstr ""
-"3D-эффектін түстері батырма түсінен түрлендірілсін десеніз - осыны "
+"3D-эффекттің түстері батырма түсінен түрлендірілсін десеніз - осыны "
 "белгілеңіз."
 
 #. i18n: file: editor/paletteeditoradvanced.ui:376
@@ -5407,3 +5454,5 @@ msgstr "Таңдалған аталымды жоғарлату"
 #: rc.cpp:1367
 msgid "Move the selected item down."
 msgstr "Таңдалған аталымды төмендету."
+
+
