@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-05 04:05+0200\n"
+"POT-Creation-Date: 2011-05-07 04:06+0200\n"
 "PO-Revision-Date: 2010-12-11 09:08+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -164,11 +164,11 @@ msgid "KGet is downloading %1 file"
 msgid_plural "KGet is downloading %1 files"
 msgstr[0] "KGet %1 файлды жүктеуде"
 
-#: core/signature.cpp:217
+#: core/signature.cpp:228
 msgid "The key to verify the signature is missing, do you want to download it?"
 msgstr "Қолтаңбасын тексеретін кілт жоқ, оны жүктеп алмақсыз ба?"
 
-#: core/signature.cpp:235
+#: core/signature.cpp:250
 #, kde-format
 msgid ""
 "The signature could not be verified for %1. See transfer settings for more "
@@ -177,7 +177,7 @@ msgstr ""
 "%1 дегеннің қолтаңбасы тексерілген жоқ. Толығрақ параметрлерінен білуге "
 "болады."
 
-#: core/signature.cpp:236
+#: core/signature.cpp:251
 msgid "Signature not verified"
 msgstr "Қолтаңбасы тексерілмеді"
 
@@ -492,27 +492,27 @@ msgstr "<p>Барлық тасымалдары аяқталды.</p>"
 msgid "Downloads completed"
 msgstr "Жүктеулер аяқталды"
 
-#: core/filemodel.cpp:281
+#: core/filemodel.cpp:283
 msgctxt "file in a filesystem"
 msgid "File"
 msgstr "Файл"
 
-#: core/filemodel.cpp:281
+#: core/filemodel.cpp:283
 msgctxt "status of the download"
 msgid "Status"
 msgstr "Күй-жайы"
 
-#: core/filemodel.cpp:281
+#: core/filemodel.cpp:283
 msgctxt "size of the download"
 msgid "Size"
 msgstr "Өлшемі"
 
-#: core/filemodel.cpp:281
+#: core/filemodel.cpp:283
 msgctxt "checksum of a file"
 msgid "Checksum"
 msgstr "Бақылау қосындысы"
 
-#: core/filemodel.cpp:281
+#: core/filemodel.cpp:283
 msgctxt "signature of a file"
 msgid "Signature"
 msgstr "Қолтаңбасы"
@@ -949,7 +949,7 @@ msgstr "Тетігінің атауы:"
 #. i18n: file: ui/newtransferwidget.ui:24
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
 #: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:29 rc.cpp:218 rc.cpp:661
-#: rc.cpp:916
+#: rc.cpp:922
 msgid "URL:"
 msgstr "URL:"
 
@@ -1892,52 +1892,66 @@ msgstr "Назардағы қапшықта табылған файлдар бе
 msgid "Download Manager"
 msgstr "Жүктеу менеджері"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Undefined"
 msgstr "Анықталмаған"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Never"
 msgstr "Ешқашан"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Marginal"
 msgstr "Толық емес"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Full"
 msgstr "Толығымен"
 
-#: ui/signaturedlg.cpp:33
+#: ui/signaturedlg.cpp:35
 msgctxt "trust level"
 msgid "Ultimate"
 msgstr "Әлбетте"
 
-#: ui/signaturedlg.cpp:40
+#: ui/signaturedlg.cpp:42
 #, kde-format
 msgctxt ""
 "Signature here is meant in cryptographic terms, so the signature of a file."
 msgid "Signature of %1."
 msgstr "%1 қолтаңбасы"
 
-#: ui/signaturedlg.cpp:59
+#: ui/signaturedlg.cpp:64
 msgid "This option is not supported for the current transfer."
 msgstr "Болып жатқан тасымалда бұл параметр қолданбайды."
 
-#: ui/signaturedlg.cpp:105
+#: ui/signaturedlg.cpp:89
+msgid "Detached OpenPGP ASCII signature (*.asc)"
+msgstr ""
+
+#: ui/signaturedlg.cpp:90
+msgid "Detached OpenPGP binary signature (*.sig)"
+msgstr ""
+
+#: ui/signaturedlg.cpp:90
+#, fuzzy
+#| msgid "Signature"
+msgid "Load Signature File"
+msgstr "Қолтаңба"
+
+#: ui/signaturedlg.cpp:143
 msgid "You need to define a signature."
 msgstr "Қолтаңбалау керек еді."
 
-#: ui/signaturedlg.cpp:109
+#: ui/signaturedlg.cpp:147
 msgid ""
 "No fingerprint could be found, check if the signature is correct or verify "
 "the download."
@@ -1945,65 +1959,49 @@ msgstr ""
 "Бақылау тізбегі табылған жоқ, қолтаңбасының дұрыстығын не жүктемесін "
 "тексеріңіз."
 
-#: ui/signaturedlg.cpp:139
+#: ui/signaturedlg.cpp:181
 msgid "The key has been revoked."
 msgstr "Қілті қайтарылып алынған."
 
-#: ui/signaturedlg.cpp:143
+#: ui/signaturedlg.cpp:185
 msgid "The key is disabled."
 msgstr "Кілт бұғатталған."
 
-#: ui/signaturedlg.cpp:147
+#: ui/signaturedlg.cpp:189
 msgid "The key is invalid."
 msgstr "Кілт жарамсыз."
 
-#: ui/signaturedlg.cpp:152
+#: ui/signaturedlg.cpp:194
 msgid "The key is expired."
 msgstr "Кілт ескірген."
 
-#: ui/signaturedlg.cpp:167
+#: ui/signaturedlg.cpp:209
 msgid "The key is not to be trusted."
 msgstr "Сенім артылмаған кілт."
 
-#: ui/signaturedlg.cpp:173
+#: ui/signaturedlg.cpp:214
 msgid "The key is to be trusted marginally."
 msgstr "КІлтке толық сенім жоқ."
 
-#: ui/signaturedlg.cpp:179
-msgid "The key is to be trusted fully."
-msgstr "Толығымен сенімді кілт."
-
-#: ui/signaturedlg.cpp:183
-msgid "The key is to be trusted ultimately."
-msgstr "Әлбетте сенімді кілт."
-
-#: ui/signaturedlg.cpp:189
+#: ui/signaturedlg.cpp:227
 msgid "Trust level of the key is unclear."
 msgstr "Кілтке артылған сенімділігі анықсыз."
 
-#: ui/signaturedlg.cpp:219
+#: ui/signaturedlg.cpp:256
 msgid "Unlimited"
 msgstr "Шектелмеген"
 
-#: ui/signaturedlg.cpp:233 ui/signaturedlg.cpp:241
+#: ui/signaturedlg.cpp:274
 msgctxt "pgp signature is verified"
 msgid "Verified"
 msgstr "Расталды"
 
-#: ui/signaturedlg.cpp:236
-msgid "The signature has been verified successfully."
-msgstr "Қолтаңбасы сәтті расталды."
-
-#: ui/signaturedlg.cpp:242
-msgid "The signature has been verified successfully:"
-msgstr "Қолтаңбасы сәтті расталды:"
-
-#: ui/signaturedlg.cpp:245
+#: ui/signaturedlg.cpp:277
 msgctxt "pgp signature is not verified"
 msgid "Failed"
 msgstr "Расталмады"
 
-#: ui/signaturedlg.cpp:248
+#: ui/signaturedlg.cpp:280
 msgid ""
 "Caution: Verification failed. Either you entered the wrong signature, or the "
 "data has been modified."
@@ -2011,7 +2009,7 @@ msgstr ""
 "Абайлаңыз: Қолтаңбасы расталған жоқ. Келтіргеніңіз қате, немесе дерегі "
 "өзгертілген."
 
-#: ui/signaturedlg.cpp:253
+#: ui/signaturedlg.cpp:285
 msgid ""
 "Verification not possible. Check the entered data, whether gpg-agent is "
 "running, or whether you have an Internet connection (for retrieving keys.)"
@@ -2019,23 +2017,11 @@ msgstr ""
 "Растау мүмкін емес. Келтірілген деректі, gpg-агенті жегілгенін, Интернетке "
 "қосылуыңыз (қілттерін алу үшін) істейтінін тексеріңіз."
 
-#: ui/signaturedlg.cpp:266
+#: ui/signaturedlg.cpp:302
 msgid "Feature is not supported, as KGet is not compiled with QPGME support."
 msgstr ""
 "Таңымайтын қасиет, себебі - KGet бағдарламасы QPGME-қолдауысыз "
 "компиляцияланған."
-
-#: ui/signaturedlg.cpp:275
-msgid "Error:"
-msgstr "Қате:"
-
-#: ui/signaturedlg.cpp:277
-msgid "Problems:"
-msgstr "Мәселе:"
-
-#: ui/signaturedlg.cpp:279
-msgid "Information:"
-msgstr "Ақпарат:"
 
 #: ui/transfersview.cpp:126
 msgid "Select columns"
@@ -3663,9 +3649,9 @@ msgstr "0123456789"
 
 #. i18n: file: ui/metalinkcreator/filedlg.ui:152
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: ui/signaturedlg.ui:44
+#. i18n: file: ui/signaturedlg.ui:34
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:556 rc.cpp:859
+#: rc.cpp:556 rc.cpp:856
 msgid "Verification:"
 msgstr "Растауы:"
 
@@ -4138,7 +4124,7 @@ msgstr "Орнатылмаған"
 #. i18n: ectx: property (suffix), widget (QSpinBox, downloadBox)
 #. i18n: file: ui/groupsettingsdialog.ui:117
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
-#: rc.cpp:817 rc.cpp:823 rc.cpp:907 rc.cpp:913
+#: rc.cpp:817 rc.cpp:823 rc.cpp:913 rc.cpp:919
 msgid " KiB"
 msgstr " КиБ"
 
@@ -4180,177 +4166,195 @@ msgctxt "verification of the download (e.g. by using MD5)"
 msgid "Verification"
 msgstr "Растау"
 
-#. i18n: file: ui/signaturedlg.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:856
-msgid "PGP signature:"
+#. i18n: file: ui/signaturedlg.ui:80
+#. i18n: ectx: property (text), widget (QLabel, binaryLabel)
+#: rc.cpp:859
+#, fuzzy
+#| msgid "PGP signature:"
+msgid "Has binary PGP signature."
 msgstr "PGP қолтаңбасы:"
 
-#. i18n: file: ui/signaturedlg.ui:80
-#. i18n: ectx: property (title), widget (QGroupBox, keyGroup)
+#. i18n: file: ui/signaturedlg.ui:87
+#. i18n: ectx: property (text), widget (QLabel, asciiLabel)
 #: rc.cpp:862
-msgid "Key"
-msgstr "Кілті"
+#, fuzzy
+#| msgid "PGP signature:"
+msgid "Ascii PGP signature:"
+msgstr "PGP қолтаңбасы:"
 
-#. i18n: file: ui/signaturedlg.ui:92
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ui/signaturedlg.ui:112
+#. i18n: ectx: property (text), widget (KPushButton, loadSignature)
 #: rc.cpp:865
-msgid "Issuer:"
-msgstr "Шығарушысы:"
+#, fuzzy
+#| msgid "Signature"
+msgid "Load Signature"
+msgstr "Қолтаңба"
 
-#. i18n: file: ui/signaturedlg.ui:115
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:868
-msgid "E-Mail:"
-msgstr "Эл.пошта:"
-
-#. i18n: file: ui/signaturedlg.ui:132
-#. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:871
-msgid "Comment:"
-msgstr "Түсініктеме"
-
-#. i18n: file: ui/signaturedlg.ui:146
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:874
-msgid "Creation:"
-msgstr "Шығарған кезі:"
-
-#. i18n: file: ui/signaturedlg.ui:163
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:877
-msgid "Expiration:"
-msgstr "Жарамдылық соңы:"
-
-#. i18n: file: ui/signaturedlg.ui:191
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:880
-msgid "Trust:"
-msgstr "Сенімділігі:"
-
-#. i18n: file: ui/signaturedlg.ui:219
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:883
-msgid "Fingerprint:"
-msgstr "Бақылау тізбегі:"
-
-#. i18n: file: ui/signaturedlg.ui:254
+#. i18n: file: ui/signaturedlg.ui:119
 #. i18n: ectx: property (text), widget (KPushButton, verify)
-#: rc.cpp:886
+#: rc.cpp:868
 msgid "Verify"
 msgstr "Растау"
 
+#. i18n: file: ui/signaturedlg.ui:131
+#. i18n: ectx: property (title), widget (QGroupBox, keyGroup)
+#: rc.cpp:871
+msgid "Key"
+msgstr "Кілті"
+
+#. i18n: file: ui/signaturedlg.ui:143
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:874
+msgid "Issuer:"
+msgstr "Шығарушысы:"
+
+#. i18n: file: ui/signaturedlg.ui:166
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:877
+msgid "E-Mail:"
+msgstr "Эл.пошта:"
+
+#. i18n: file: ui/signaturedlg.ui:183
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:880
+msgid "Comment:"
+msgstr "Түсініктеме"
+
+#. i18n: file: ui/signaturedlg.ui:197
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:883
+msgid "Creation:"
+msgstr "Шығарған кезі:"
+
+#. i18n: file: ui/signaturedlg.ui:214
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:886
+msgid "Expiration:"
+msgstr "Жарамдылық соңы:"
+
+#. i18n: file: ui/signaturedlg.ui:255
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:889
+msgid "Trust:"
+msgstr "Сенімділігі:"
+
+#. i18n: file: ui/signaturedlg.ui:296
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:892
+msgid "Fingerprint:"
+msgstr "Бақылау тізбегі:"
+
 #. i18n: file: ui/groupsettingsdialog.ui:32
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:889
+#: rc.cpp:895
 msgid "Group Settings"
 msgstr "Топтық параметрлері"
 
 #. i18n: file: ui/groupsettingsdialog.ui:44
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:892
+#: rc.cpp:898
 msgid "Default folder:"
 msgstr "Әдетті қапшық:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:58
 #. i18n: ectx: property (toolTip), widget (QLabel, label_2)
-#: rc.cpp:895
+#: rc.cpp:901
 msgid "Moves all transfers with the regular expression to this group"
 msgstr "Үлгі өрнегіне сәйкесті тасымалдарын осы топқа жылжыту"
 
 #. i18n: file: ui/groupsettingsdialog.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:898
+#: rc.cpp:904
 msgid "Regular expression:"
 msgstr "Үлгі өрнегі:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:68
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, regExpEdit)
-#: rc.cpp:901
+#: rc.cpp:907
 msgid "*movies*"
 msgstr "*фильмдер*"
 
 #. i18n: file: ui/groupsettingsdialog.ui:75
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
-#: rc.cpp:904
+#: rc.cpp:910
 msgid "Maximum download speed:"
 msgstr "Жүктеп алу жылдамдығының шегі:"
 
 #. i18n: file: ui/groupsettingsdialog.ui:101
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
-#: rc.cpp:910
+#: rc.cpp:916
 msgid "Maximum upload speed:"
 msgstr "Жүктеп беру жылдамдығының шегі:"
 
 #. i18n: file: ui/newtransferwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:919
+#: rc.cpp:925
 msgid "Destination:"
 msgstr "Қайда:"
 
 #. i18n: file: ui/newtransferwidget.ui:41
 #. i18n: ectx: property (text), widget (QLabel, groupLabel)
-#: rc.cpp:922
+#: rc.cpp:928
 msgid "Transfer group:"
 msgstr "Тасымалдар тобы:"
 
 #. i18n: file: ui/verificationdialog.ui:42
 #. i18n: ectx: property (toolTip), widget (KPushButton, verify)
-#: rc.cpp:925
+#: rc.cpp:931
 msgid "Verify the finished download with the selected checksum."
 msgstr "Жүктеп алғанды таңдалған бақылау қосындысын есептеп растау."
 
 #. i18n: file: ui/verificationdialog.ui:45
 #. i18n: ectx: property (text), widget (KPushButton, verify)
-#: rc.cpp:928
+#: rc.cpp:934
 msgid "&Verify"
 msgstr "&Растау"
 
 #. i18n: file: ui/verificationdialog.ui:71
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:931
+#: rc.cpp:937
 msgid "Verifying:"
 msgstr "Растап жатқаны:"
 
 #. i18n: file: ui/kgetui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:934
+#: rc.cpp:940
 msgid "&File"
 msgstr "&Файл"
 
 #. i18n: file: ui/kgetui.rc:17
 #. i18n: ectx: Menu (Downloads)
-#: rc.cpp:937
+#: rc.cpp:943
 msgid "&Downloads"
 msgstr "&Жүктеп алулары"
 
 #. i18n: file: ui/kgetui.rc:34
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:940
+#: rc.cpp:946
 msgid "&Settings"
 msgstr "&Баптау"
 
 #. i18n: file: ui/kgetui.rc:38
 #. i18n: ectx: Menu (help)
-#: rc.cpp:943
+#: rc.cpp:949
 msgid "&Help"
 msgstr "&Анықтама"
 
 #. i18n: file: ui/kgetui.rc:41
 #. i18n: ectx: ToolBar (kget_toolbar)
-#: rc.cpp:946
+#: rc.cpp:952
 msgid "Main Toolbar"
 msgstr "Негізгі Құралдар панелі"
 
 #. i18n: file: conf/kget.kcfg:39
 #. i18n: ectx: label, entry (ShowSplashscreen), group (Appearance)
-#: rc.cpp:949
+#: rc.cpp:955
 msgid "Sets to show the splashscreen while KGet is loading"
 msgstr "KGet жүктелгенде бейнепердесін көрсетуді орнату"
 
 #. i18n: file: conf/kget.kcfg:201
 #. i18n: ectx: label, entry (HistoryColumnWidths), group (Geometry)
-#: rc.cpp:952
+#: rc.cpp:958
 msgid "The width of the columns in the history view"
 msgstr "Журнал көрінісіндегі бағандарының ені"
 
@@ -4358,7 +4362,7 @@ msgstr "Журнал көрінісіндегі бағандарының ені"
 #. i18n: ectx: label, entry (SearchEnginesNameList), group (SearchEngines)
 #. i18n: file: transfer-plugins/checksumsearch/kget_checksumsearchfactory.kcfg:9
 #. i18n: ectx: label, entry (SearchStrings), group (ChecksumSearch)
-#: rc.cpp:959 rc.cpp:982
+#: rc.cpp:965 rc.cpp:988
 msgid "List of the available search engines"
 msgstr "Бар іздеу тетіктерінің тізімі"
 
@@ -4370,27 +4374,48 @@ msgstr "Бар іздеу тетіктерінің тізімі"
 #. i18n: ectx: label, entry (UrlChangeModeList), group (ChecksumSearch)
 #. i18n: file: transfer-plugins/checksumsearch/kget_checksumsearchfactory.kcfg:17
 #. i18n: ectx: label, entry (ChecksumTypeList), group (ChecksumSearch)
-#: rc.cpp:962 rc.cpp:968 rc.cpp:985 rc.cpp:988
+#: rc.cpp:968 rc.cpp:974 rc.cpp:991 rc.cpp:994
 msgid "List of the available search engine URLs"
 msgstr "Бар іздеу тетіктерінің URL-адрестері"
 
 #. i18n: file: transfer-plugins/contentfetch/kget_contentfetchfactory.kcfg:9
 #. i18n: ectx: label, entry (UrlRegexpList), group (UserScripts)
-#: rc.cpp:965
+#: rc.cpp:971
 msgid "List of the Regexp to match input URL"
 msgstr "Кірістегі URL-ге сәйкесті үлгі өрнектер тізімі"
 
 #. i18n: file: transfer-plugins/contentfetch/kget_contentfetchfactory.kcfg:21
 #. i18n: ectx: label, entry (DescriptionList), group (UserScripts)
-#: rc.cpp:971
+#: rc.cpp:977
 msgid "List of descriptions for user scripts"
 msgstr "Пайдаланушы скрипттердің сипаттамалар тізімі"
 
 #. i18n: file: transfer-plugins/contentfetch/kget_contentfetchfactory.kcfg:25
 #. i18n: ectx: label, entry (EnableList), group (UserScripts)
-#: rc.cpp:974
+#: rc.cpp:980
 msgid "List of whether the script is enabled"
 msgstr "Скрипт рұқсатты-бұғатталған күйінің тізімі"
+
+#~ msgid "The key is to be trusted fully."
+#~ msgstr "Толығымен сенімді кілт."
+
+#~ msgid "The key is to be trusted ultimately."
+#~ msgstr "Әлбетте сенімді кілт."
+
+#~ msgid "The signature has been verified successfully."
+#~ msgstr "Қолтаңбасы сәтті расталды."
+
+#~ msgid "The signature has been verified successfully:"
+#~ msgstr "Қолтаңбасы сәтті расталды:"
+
+#~ msgid "Error:"
+#~ msgstr "Қате:"
+
+#~ msgid "Problems:"
+#~ msgstr "Мәселе:"
+
+#~ msgid "Information:"
+#~ msgstr "Ақпарат:"
 
 #~ msgid ""
 #~ "Required data entered; also consider entering additional information."
