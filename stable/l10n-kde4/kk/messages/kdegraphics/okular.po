@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-18 11:51+0100\n"
+"POT-Creation-Date: 2011-05-30 14:14+0200\n"
 "PO-Revision-Date: 2010-12-10 06:44+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -19,28 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 "X-Generator: Lokalize 1.0\n"
-
-#: conf/dlgpresentation.cpp:28
-msgctxt "@label:listbox The current screen, for the presentation mode"
-msgid "Current Screen"
-msgstr "Назардағы экраны"
-
-#: conf/dlgpresentation.cpp:29
-msgctxt "@label:listbox The default screen for the presentation mode"
-msgid "Default Screen"
-msgstr "Әдетті экраны"
-
-#: conf/dlgpresentation.cpp:33
-#, kde-format
-msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "%1-экран"
-
-#: conf/dlgpresentation.cpp:48
-msgctxt "Advance every %1 seconds"
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " секунд"
 
 #: conf/dlgeditor.cpp:28
 msgctxt "Text editor"
@@ -94,6 +72,52 @@ msgstr ""
 "</ul>\n"
 "Егер %f келтірілмесе, файл атауы көрсетілген команданан кейін жалғасады."
 
+#: conf/dlgperformance.cpp:43
+msgid ""
+"Keeps used memory as low as possible. Do not reuse anything. (For systems "
+"with low memory.)"
+msgstr ""
+"Мейілінше жадын үнемдеу. Ештеңені қайта пайдаланбау. (Жады аз компьютерлерге "
+"арналған.)"
+
+#: conf/dlgperformance.cpp:46
+msgid ""
+"A good compromise between memory usage and speed gain. Preload next page and "
+"boost searches. (For systems with 256MB of memory, typically.)"
+msgstr ""
+"Жадыны жұмсау мен жылдамдық арасындағы тиімді ымыра. Келесі бетті алдын-ала "
+"жүктеу мен қарқынды іздеу. (Әдетте, жады 256Мб компьютерлерге арналған.)"
+
+#: conf/dlgperformance.cpp:49
+msgid ""
+"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
+"with more than 512MB of memory.)"
+msgstr ""
+"Барлығын жадында сақтау. Келесі бетті алдын-ала жүктеу. Қарқынды іздеу. "
+"(Жады 512Мб-тан артық компьютерлерге арналған.)"
+
+#: conf/dlgpresentation.cpp:28
+msgctxt "@label:listbox The current screen, for the presentation mode"
+msgid "Current Screen"
+msgstr "Назардағы экраны"
+
+#: conf/dlgpresentation.cpp:29
+msgctxt "@label:listbox The default screen for the presentation mode"
+msgid "Default Screen"
+msgstr "Әдетті экраны"
+
+#: conf/dlgpresentation.cpp:33
+#, kde-format
+msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "%1-экран"
+
+#: conf/dlgpresentation.cpp:48
+msgctxt "Advance every %1 seconds"
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " секунд"
+
 #: conf/preferencesdialog.cpp:37
 msgid "General"
 msgstr "Жалпы"
@@ -128,7 +152,7 @@ msgstr "Презентация режімінің параметрлері"
 
 #. i18n: file: conf/dlgidentitybase.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: conf/preferencesdialog.cpp:42 rc.cpp:92
+#: conf/preferencesdialog.cpp:42 rc.cpp:122
 msgid "Identity"
 msgstr "Іс-әлпеті"
 
@@ -138,37 +162,13 @@ msgstr "Іс-әлпеті параметрлері"
 
 #. i18n: file: conf/dlgeditorbase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: conf/preferencesdialog.cpp:44 rc.cpp:38
+#: conf/preferencesdialog.cpp:44 rc.cpp:80
 msgid "Editor"
 msgstr "Редакторы"
 
 #: conf/preferencesdialog.cpp:44
 msgid "Editor Options"
 msgstr "Редакторының параметрлері"
-
-#: conf/dlgperformance.cpp:43
-msgid ""
-"Keeps used memory as low as possible. Do not reuse anything. (For systems "
-"with low memory.)"
-msgstr ""
-"Мейілінше жадын үнемдеу. Ештеңені қайта пайдаланбау. (Жады аз компьютерлерге "
-"арналған.)"
-
-#: conf/dlgperformance.cpp:46
-msgid ""
-"A good compromise between memory usage and speed gain. Preload next page and "
-"boost searches. (For systems with 256MB of memory, typically.)"
-msgstr ""
-"Жадыны жұмсау мен жылдамдық арасындағы тиімді ымыра. Келесі бетті алдын-ала "
-"жүктеу мен қарқынды іздеу. (Әдетте, жады 256Мб компьютерлерге арналған.)"
-
-#: conf/dlgperformance.cpp:49
-msgid ""
-"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
-"with more than 512MB of memory.)"
-msgstr ""
-"Барлығын жадында сақтау. Келесі бетті алдын-ала жүктеу. Қарқынды іздеу. "
-"(Жады 512Мб-тан артық компьютерлерге арналған.)"
 
 #: core/action.cpp:91
 #, kde-format
@@ -240,11 +240,18 @@ msgstr "JavaScript скрипті"
 msgid "Play movie..."
 msgstr "Фильмді көрсету..."
 
-#: core/sourcereference.cpp:92
+#: core/chooseenginedialog.cpp:22
+msgid "Backend Selection"
+msgstr "Тетігін таңдау"
+
+#: core/chooseenginedialog.cpp:33
 #, kde-format
-msgctxt "'source' is a source file"
-msgid "Source: %1"
-msgstr "Көзі: %1"
+msgid ""
+"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
+"><br />Please select which one to use:</qt>"
+msgstr ""
+"<qt><b>%1</b> (%2).<br /><br />MIME түрімен айналысатын бірнеше тетіктер "
+"табылды:<br />Қайсын қолданатынын таңдаңыз:</qt>"
 
 #: core/document.cpp:167
 #, kde-format
@@ -408,19 +415,6 @@ msgstr "Файл өлшемі"
 msgid "Page Size"
 msgstr "Бет өлшемі"
 
-#: core/chooseenginedialog.cpp:22
-msgid "Backend Selection"
-msgstr "Тетігін таңдау"
-
-#: core/chooseenginedialog.cpp:33
-#, kde-format
-msgid ""
-"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
-"><br />Please select which one to use:</qt>"
-msgstr ""
-"<qt><b>%1</b> (%2).<br /><br />MIME түрімен айналысатын бірнеше тетіктер "
-"табылды:<br />Қайсын қолданатынын таңдаңыз:</qt>"
-
 #: core/generator.cpp:557
 msgid "Plain &Text..."
 msgstr "Кәдімгі &мәтін..."
@@ -438,6 +432,367 @@ msgstr "OpenDocument мәтіні"
 msgctxt "This is the document format"
 msgid "HTML"
 msgstr "HTML"
+
+#: core/sourcereference.cpp:92
+#, kde-format
+msgctxt "'source' is a source file"
+msgid "Source: %1"
+msgstr "Көзі: %1"
+
+#: ui/annotationmodel.cpp:297 part.cpp:1824
+#, kde-format
+msgid "Page %1"
+msgstr "%1-бет"
+
+#: ui/annotationpopup.cpp:49
+#, kde-format
+msgid "Annotation"
+msgid_plural "%1 Annotations"
+msgstr[0] "%1 аңдатпа"
+
+#: ui/annotationpopup.cpp:50
+msgid "&Open Pop-up Note"
+msgstr "Қалқымалы жазбаны &ашу"
+
+#: ui/annotationpopup.cpp:52
+msgid "&Delete"
+msgstr "&Өшіру"
+
+#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:542
+msgid "&Properties"
+msgstr "Қ&асиеттері"
+
+#: ui/annotationpopup.cpp:65
+#, kde-format
+msgctxt "%1 is the name of the file to save"
+msgid "&Save '%1'..."
+msgstr "'%1' дегенді &сақтау..."
+
+#: ui/annotationpropertiesdialog.cpp:58
+msgid "&Appearance"
+msgstr "&Көрініс"
+
+#: ui/annotationpropertiesdialog.cpp:61
+msgid "&Color:"
+msgstr "&Түсі:"
+
+#: ui/annotationpropertiesdialog.cpp:69
+msgid "&Opacity:"
+msgstr "&Мөлдірсіздігі:"
+
+#: ui/annotationpropertiesdialog.cpp:74
+msgctxt "Suffix for the opacity level, eg '80 %'"
+msgid " %"
+msgstr " %"
+
+#: ui/annotationpropertiesdialog.cpp:91
+msgid "&General"
+msgstr "&Жалпы"
+
+#. i18n: file: conf/dlgidentitybase.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:125
+msgid "&Author:"
+msgstr "&Авторы:"
+
+#: ui/annotationpropertiesdialog.cpp:102
+#, kde-format
+msgid "Created: %1"
+msgstr "Құрылған кезі: %1"
+
+#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
+#, kde-format
+msgid "Modified: %1"
+msgstr "Өзгертілген кезі: %1"
+
+#: ui/annotationpropertiesdialog.cpp:152
+msgid "Note Properties"
+msgstr "Жазба қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:154
+msgid "Inline Note Properties"
+msgstr "Құрамындағы жазба қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:157
+msgid "Line Properties"
+msgstr "Сызық қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:160
+msgid "Geometry Properties"
+msgstr "Фигура қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:163
+msgid "Highlight Properties"
+msgstr "Белгілеу қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:166
+msgid "Stamp Properties"
+msgstr "Мөр қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:169
+msgid "Ink Properties"
+msgstr "Сия қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:172
+msgid "Caret Properties"
+msgstr "Енгізу белгісінің қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:175
+msgid "File Attachment Properties"
+msgstr "Тіркеме файл қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:178
+msgid "Sound Properties"
+msgstr "Дыбыс қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:181
+msgid "Movie Properties"
+msgstr "Фильм қасиеттері"
+
+#: ui/annotationpropertiesdialog.cpp:184
+msgid "Annotation Properties"
+msgstr "Аңдатпа қасиеттері"
+
+#: ui/annotationwidgets.cpp:208
+msgid "Icon"
+msgstr "Таңбашасы"
+
+#: ui/annotationwidgets.cpp:213
+msgid "Comment"
+msgstr "Түсініктемесі"
+
+#: ui/annotationwidgets.cpp:214
+msgid "Help"
+msgstr "Анықтамасы"
+
+#: ui/annotationwidgets.cpp:215
+msgid "Insert"
+msgstr "Ендіру"
+
+#: ui/annotationwidgets.cpp:216
+msgid "Key"
+msgstr "Перне"
+
+#: ui/annotationwidgets.cpp:217
+msgid "New Paragraph"
+msgstr "Жаңа абзац"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:20
+#: ui/annotationwidgets.cpp:218 ui/guiutils.cpp:71 rc.cpp:275
+msgid "Note"
+msgstr "Жазба"
+
+#: ui/annotationwidgets.cpp:219
+msgid "Paragraph"
+msgstr "Абзац"
+
+#: ui/annotationwidgets.cpp:226
+msgid "Font:"
+msgstr "Қаріпі:"
+
+#: ui/annotationwidgets.cpp:262
+msgid "Stamp Symbol"
+msgstr "Мөр таңбасы"
+
+#: ui/annotationwidgets.cpp:268 ui/sidebar.cpp:663 shell/main.cpp:42
+#: part.cpp:152
+msgid "Okular"
+msgstr "Okular"
+
+#: ui/annotationwidgets.cpp:269
+msgid "Bookmark"
+msgstr "Бетбелгі"
+
+#: ui/annotationwidgets.cpp:270
+msgid "KDE"
+msgstr "KDE"
+
+#: ui/annotationwidgets.cpp:271
+msgid "Information"
+msgstr "Мәлімет"
+
+#: ui/annotationwidgets.cpp:272
+msgid "Approved"
+msgstr "Мақұлданған"
+
+#: ui/annotationwidgets.cpp:273
+msgid "As Is"
+msgstr "Бар түрде"
+
+#: ui/annotationwidgets.cpp:274
+msgid "Confidential"
+msgstr "Сырлы"
+
+#: ui/annotationwidgets.cpp:275
+msgid "Departmental"
+msgstr "Қызметтік"
+
+#: ui/annotationwidgets.cpp:276
+msgid "Draft"
+msgstr "Алдын-ала жобасы"
+
+#: ui/annotationwidgets.cpp:277
+msgid "Experimental"
+msgstr "Эксперименталды"
+
+#: ui/annotationwidgets.cpp:278
+msgid "Expired"
+msgstr "Ескірген"
+
+#: ui/annotationwidgets.cpp:279
+msgid "Final"
+msgstr "Ақырғы"
+
+#: ui/annotationwidgets.cpp:280
+msgid "For Comment"
+msgstr "Пікір үшін"
+
+#: ui/annotationwidgets.cpp:281
+msgid "For Public Release"
+msgstr "Ашық жариялау үшін"
+
+#: ui/annotationwidgets.cpp:282
+msgid "Not Approved"
+msgstr "Мақұлданбаған"
+
+#: ui/annotationwidgets.cpp:283
+msgid "Not For Public Release"
+msgstr "Ашық жариялау үшін емес"
+
+#: ui/annotationwidgets.cpp:284
+msgid "Sold"
+msgstr "Сатылған"
+
+#: ui/annotationwidgets.cpp:285
+msgid "Top Secret"
+msgstr "Аса құпиялы"
+
+#: ui/annotationwidgets.cpp:322
+msgid "Line Extensions"
+msgstr "Сызық созылуы"
+
+#: ui/annotationwidgets.cpp:324
+msgid "Leader Line Length:"
+msgstr "Жол сызығының ұзындығы:"
+
+#: ui/annotationwidgets.cpp:329
+msgid "Leader Line Extensions Length:"
+msgstr "Жол сызығының созылу ұзындығы:"
+
+#: ui/annotationwidgets.cpp:338
+msgid "Style"
+msgstr "Стилі"
+
+#: ui/annotationwidgets.cpp:340 ui/annotationwidgets.cpp:435
+msgid "&Size:"
+msgstr "Ө&лшемі:"
+
+#: ui/annotationwidgets.cpp:391 ui/annotationwidgets.cpp:426
+msgid "Type:"
+msgstr "Түрі:"
+
+#: ui/annotationwidgets.cpp:397 ui/guiutils.cpp:82
+msgid "Highlight"
+msgstr "Бояулау"
+
+#: ui/annotationwidgets.cpp:398
+msgid "Squiggly"
+msgstr "Иректі"
+
+#: ui/annotationwidgets.cpp:399
+msgid "Underline"
+msgstr "Асты сызық"
+
+#: ui/annotationwidgets.cpp:400
+msgid "Strike out"
+msgstr "Сызып тастаған"
+
+#: ui/annotationwidgets.cpp:431
+msgid "Inner color:"
+msgstr "Ішкі түсі:"
+
+#: ui/annotationwidgets.cpp:441
+msgid "Rectangle"
+msgstr "Төртбұрыш"
+
+#: ui/annotationwidgets.cpp:442
+msgid "Ellipse"
+msgstr "Эллипс"
+
+#: ui/annotationwidgets.cpp:494
+msgid "File Attachment Symbol"
+msgstr "Тіркеме файлдың символы"
+
+#: ui/annotationwidgets.cpp:500
+msgctxt "Symbol for file attachment annotations"
+msgid "Graph"
+msgstr "График"
+
+#: ui/annotationwidgets.cpp:501
+msgctxt "Symbol for file attachment annotations"
+msgid "Push Pin"
+msgstr "Жапсырма шеге"
+
+#: ui/annotationwidgets.cpp:502
+msgctxt "Symbol for file attachment annotations"
+msgid "Paperclip"
+msgstr "Қыстырғыш"
+
+#: ui/annotationwidgets.cpp:503
+msgctxt "Symbol for file attachment annotations"
+msgid "Tag"
+msgstr "Жарлық"
+
+#: ui/annotationwidgets.cpp:514
+msgctxt "'File' as normal file, that can be opened, saved, etc.."
+msgid "File"
+msgstr "Файл"
+
+#: ui/annotationwidgets.cpp:518 ui/embeddedfilesdialog.cpp:69
+msgctxt "Not available size"
+msgid "N/A"
+msgstr "А/Ж"
+
+#: ui/annotationwidgets.cpp:519
+msgid "No description available."
+msgstr "Сипатамасы жоқ."
+
+#: ui/annotationwidgets.cpp:523
+#, kde-format
+msgid "Name: %1"
+msgstr "Атауы: %1"
+
+#: ui/annotationwidgets.cpp:527
+#, kde-format
+msgid "Size: %1"
+msgstr "Өлшемі: %1"
+
+#: ui/annotationwidgets.cpp:531
+msgid "Description:"
+msgstr "Сипаттамасы:"
+
+#: ui/annotationwidgets.cpp:595
+msgid "Caret Symbol"
+msgstr "Енгізу белгісі"
+
+#: ui/annotationwidgets.cpp:600
+msgctxt "Symbol for caret annotations"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/annotationwidgets.cpp:601
+msgctxt "Symbol for caret annotations"
+msgid "P"
+msgstr "P"
+
+#: ui/annotwindow.cpp:48
+msgid "Close this note"
+msgstr "Жазбаны жабу"
+
+#: ui/annotwindow.cpp:90 ui/findbar.cpp:62
+msgid "Options"
+msgstr "Параметрлері"
 
 #: ui/bookmarklist.cpp:111
 #, kde-format
@@ -480,6 +835,54 @@ msgstr "Құжатты ашу"
 msgid "Remove Bookmarks"
 msgstr "Бетбелгілерді өшіру"
 
+#: ui/embeddedfilesdialog.cpp:35
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: ui/embeddedfilesdialog.cpp:40
+msgctxt "@title:window"
+msgid "Embedded Files"
+msgstr "Ендірме файлдар"
+
+#: ui/embeddedfilesdialog.cpp:49
+msgctxt "@title:column"
+msgid "Name"
+msgstr "Атауы"
+
+#: ui/embeddedfilesdialog.cpp:50
+msgctxt "@title:column"
+msgid "Description"
+msgstr "Сипаттамасы"
+
+#: ui/embeddedfilesdialog.cpp:51
+msgctxt "@title:column"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: ui/embeddedfilesdialog.cpp:52
+msgctxt "@title:column"
+msgid "Created"
+msgstr "Құрылған кезі"
+
+#: ui/embeddedfilesdialog.cpp:53
+msgctxt "@title:column"
+msgid "Modified"
+msgstr "Өзгертілген кезі"
+
+#: ui/embeddedfilesdialog.cpp:114
+msgctxt "@action:inmenu"
+msgid "&Save As..."
+msgstr "&Былай сақтау..."
+
+#: ui/fileprinterpreview.cpp:114
+msgid "Could not load print preview part"
+msgstr "Басып шығаратынды алдын-ала көрсету бөлшегі жүктелмеді"
+
+#: ui/fileprinterpreview.cpp:129
+msgid "Print Preview"
+msgstr "Басатынды алдын-ала қарау"
+
 #: ui/findbar.cpp:35 ui/presentationsearchbar.cpp:64
 msgid "Close"
 msgstr "Жабу"
@@ -511,10 +914,6 @@ msgstr "Алдыңғы"
 msgid "Jump to previous match"
 msgstr "Алдыңғы табылғанына өту"
 
-#: ui/findbar.cpp:62 ui/annotwindow.cpp:90
-msgid "Options"
-msgstr "Параметрлері"
-
 #: ui/findbar.cpp:63
 msgid "Modify search behavior"
 msgstr "Іздеу тәртібін өзгерту"
@@ -526,6 +925,101 @@ msgstr "Үлкен-кішілігін ескеріп"
 #: ui/findbar.cpp:67
 msgid "From current page"
 msgstr "Назардағы беттен бастап"
+
+#: ui/formwidgets.cpp:350 shell/shell.cpp:256
+msgid "*|All Files"
+msgstr "*|Бүкіл файлдар"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:27
+#: ui/guiutils.cpp:73 rc.cpp:278
+msgid "Inline Note"
+msgstr "Құрамындағы жазба"
+
+#: ui/guiutils.cpp:76
+msgid "Line"
+msgstr "Сызық"
+
+#: ui/guiutils.cpp:79
+msgid "Geometry"
+msgstr "Фигура"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:62
+#: ui/guiutils.cpp:85 rc.cpp:293
+msgid "Stamp"
+msgstr "Мөр"
+
+#: ui/guiutils.cpp:88
+msgid "Ink"
+msgstr "Сия"
+
+#: ui/guiutils.cpp:91
+msgid "Caret"
+msgstr "Енгізу белгісі"
+
+#: ui/guiutils.cpp:94
+msgid "File Attachment"
+msgstr "Файлды тіркемелеу"
+
+#: ui/guiutils.cpp:97
+msgid "Sound"
+msgstr "Дыбыс"
+
+#: ui/guiutils.cpp:100
+msgid "Movie"
+msgstr "Фильм"
+
+#: ui/guiutils.cpp:112
+msgctxt "Unknown author"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: ui/guiutils.cpp:155 ui/presentationwidget.cpp:323
+#, kde-format
+msgid "Author: %1"
+msgstr "Авторы: %1"
+
+#: ui/guiutils.cpp:206 ui/propertiesdialog.cpp:218
+#, kde-format
+msgid "Where do you want to save %1?"
+msgstr "%1 дегенді қайда сақтамақсыз?"
+
+#: ui/guiutils.cpp:215 ui/propertiesdialog.cpp:231
+#, kde-format
+msgid "Could not open \"%1\" for writing. File was not saved."
+msgstr "\"%1\" деген жазуға ашылмады. Файл сақталған жоқ."
+
+#: ui/ktreeviewsearchline.cpp:461
+msgid "Search Options"
+msgstr "Іздеу параметрлері"
+
+#: ui/ktreeviewsearchline.cpp:462
+msgctxt "Enable case sensitive search in the side navigation panels"
+msgid "Case Sensitive"
+msgstr "Үлкен-кішілігін ескеріп"
+
+#: ui/ktreeviewsearchline.cpp:465
+msgctxt "Enable regular expression search in the side navigation panels"
+msgid "Regular Expression"
+msgstr "Үлгі өрнегі"
+
+#: ui/ktreeviewsearchline.cpp:471
+msgid "Search Columns"
+msgstr "Іздейтін бағандар"
+
+#: ui/ktreeviewsearchline.cpp:473
+msgid "All Visible Columns"
+msgstr "Барлық көрінетін бағандарда"
+
+#: ui/ktreeviewsearchline.cpp:630
+msgid "S&earch:"
+msgstr "&Іздейтіні:"
+
+#: ui/minibar.cpp:86
+msgctxt "Layouted like: '5 [pages] of 10'"
+msgid "of"
+msgstr "/"
 
 #: ui/pageview.cpp:350
 msgid "Zoom"
@@ -761,170 +1255,6 @@ msgstr "Аңдатпаның авторы"
 msgid "Please insert your name or initials:"
 msgstr "Атыңыз не инициалдарыңыз:"
 
-#: ui/videowidget.cpp:115
-msgctxt "start the movie playback"
-msgid "Play"
-msgstr "Айдау"
-
-#: ui/videowidget.cpp:120
-msgctxt "pause the movie playback"
-msgid "Pause"
-msgstr "Аялдау"
-
-#: ui/videowidget.cpp:185
-msgctxt "stop the movie playback"
-msgid "Stop"
-msgstr "Тоқтату"
-
-#: ui/toolaction.cpp:21
-msgid "Selection Tools"
-msgstr "Таңдау құралдары"
-
-#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
-msgid ""
-"Click to use the current selection tool\n"
-"Click and hold to choose another selection tool"
-msgstr ""
-"Қолданыстағыны таңдау құралын пайдалану үшін түртіңіз\n"
-"Басқасын таңдау үшін түртіп ұстап тұрыңыз"
-
-#: ui/thumbnaillist.cpp:1016
-msgid "Show bookmarked pages only"
-msgstr "Бетбелгісі бар беттер ғана көрсетілсін"
-
-#: ui/fileprinterpreview.cpp:114
-msgid "Could not load print preview part"
-msgstr "Басып шығаратынды алдын-ала көрсету бөлшегі жүктелмеді"
-
-#: ui/fileprinterpreview.cpp:129
-msgid "Print Preview"
-msgstr "Басатынды алдын-ала қарау"
-
-#: ui/side_reviews.cpp:61
-msgid ""
-"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
-"or select <i>Tools -&gt; Review</i> from the menu.</div>"
-msgstr ""
-"<div align=center><h3>Аңдатпалар жоқ</h3>Жаңа аңдатпаны жазу үшін F6 пернені "
-"басыңыз немесе мәзірінен <i>Құралдар-&gt;Шолу</i> дегенді таңдаңыз.</div>"
-
-#: ui/side_reviews.cpp:128
-msgid "Group by Page"
-msgstr "Беттер бойынша топтастыру"
-
-#: ui/side_reviews.cpp:133
-msgid "Group by Author"
-msgstr "Авторлар бойынша топтастыру"
-
-#: ui/side_reviews.cpp:141
-msgid "Show reviews for current page only"
-msgstr "Тек назардағы беттің шолуы көрсетілсін"
-
-#: ui/formwidgets.cpp:350 shell/shell.cpp:256
-msgid "*|All Files"
-msgstr "*|Бүкіл файлдар"
-
-#: ui/annotationmodel.cpp:297 part.cpp:1824
-#, kde-format
-msgid "Page %1"
-msgstr "%1-бет"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:20
-#: ui/guiutils.cpp:71 ui/annotationwidgets.cpp:218 rc.cpp:275
-msgid "Note"
-msgstr "Жазба"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:27
-#: ui/guiutils.cpp:73 rc.cpp:278
-msgid "Inline Note"
-msgstr "Құрамындағы жазба"
-
-#: ui/guiutils.cpp:76
-msgid "Line"
-msgstr "Сызық"
-
-#: ui/guiutils.cpp:79
-msgid "Geometry"
-msgstr "Фигура"
-
-#: ui/guiutils.cpp:82 ui/annotationwidgets.cpp:397
-msgid "Highlight"
-msgstr "Бояулау"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:62
-#: ui/guiutils.cpp:85 rc.cpp:293
-msgid "Stamp"
-msgstr "Мөр"
-
-#: ui/guiutils.cpp:88
-msgid "Ink"
-msgstr "Сия"
-
-#: ui/guiutils.cpp:91
-msgid "Caret"
-msgstr "Енгізу белгісі"
-
-#: ui/guiutils.cpp:94
-msgid "File Attachment"
-msgstr "Файлды тіркемелеу"
-
-#: ui/guiutils.cpp:97
-msgid "Sound"
-msgstr "Дыбыс"
-
-#: ui/guiutils.cpp:100
-msgid "Movie"
-msgstr "Фильм"
-
-#: ui/guiutils.cpp:112
-msgctxt "Unknown author"
-msgid "Unknown"
-msgstr "Беймәлім"
-
-#: ui/guiutils.cpp:155 ui/presentationwidget.cpp:323
-#, kde-format
-msgid "Author: %1"
-msgstr "Авторы: %1"
-
-#: ui/guiutils.cpp:206 ui/propertiesdialog.cpp:218
-#, kde-format
-msgid "Where do you want to save %1?"
-msgstr "%1 дегенді қайда сақтамақсыз?"
-
-#: ui/guiutils.cpp:215 ui/propertiesdialog.cpp:231
-#, kde-format
-msgid "Could not open \"%1\" for writing. File was not saved."
-msgstr "\"%1\" деген жазуға ашылмады. Файл сақталған жоқ."
-
-#: ui/sidebar.cpp:663 ui/annotationwidgets.cpp:268 shell/main.cpp:42
-#: part.cpp:152
-msgid "Okular"
-msgstr "Okular"
-
-#: ui/sidebar.cpp:664
-msgid "Show Text"
-msgstr "Мәтінді көрсету"
-
-#: ui/sidebar.cpp:680
-msgid "Small Icons"
-msgstr "Шағын таңбашалар"
-
-#: ui/sidebar.cpp:681
-msgid "Normal Icons"
-msgstr "Қалыпты таңбашалар"
-
-#: ui/sidebar.cpp:682
-msgid "Large Icons"
-msgstr "Үлкен таңбашалар"
-
-#: ui/minibar.cpp:86
-msgctxt "Layouted like: '5 [pages] of 10'"
-msgid "of"
-msgstr "/"
-
 #: ui/pageviewannotator.cpp:159
 msgid "Text of the new note:"
 msgstr "Жаңа жазбаның мәтіні:"
@@ -933,391 +1263,65 @@ msgstr "Жаңа жазбаның мәтіні:"
 msgid "New Text Note"
 msgstr "Жаңа жазба"
 
-#: ui/annotationpopup.cpp:49
+#: ui/pageviewutils.cpp:410
+msgid "Close this message"
+msgstr "Хабарламаны жабу"
+
+#: ui/presentationsearchbar.cpp:78
+msgid "Find Next"
+msgstr "Келесіні табу"
+
+#: ui/presentationwidget.cpp:142
 #, kde-format
-msgid "Annotation"
-msgid_plural "%1 Annotations"
-msgstr[0] "%1 аңдатпа"
+msgctxt "[document title/filename] – Presentation"
+msgid "%1 – Presentation"
+msgstr "%1 - Презентация"
 
-#: ui/annotationpopup.cpp:50
-msgid "&Open Pop-up Note"
-msgstr "Қалқымалы жазбаны &ашу"
+#: ui/presentationwidget.cpp:184
+msgid "Switch Screen"
+msgstr "Экранды ауыстру"
 
-#: ui/annotationpopup.cpp:52
-msgid "&Delete"
-msgstr "&Өшіру"
-
-#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:542
-msgid "&Properties"
-msgstr "Қ&асиеттері"
-
-#: ui/annotationpopup.cpp:65
+#: ui/presentationwidget.cpp:191
 #, kde-format
-msgctxt "%1 is the name of the file to save"
-msgid "&Save '%1'..."
-msgstr "'%1' дегенді &сақтау..."
+msgctxt "%1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "%1-экран"
 
-#: ui/annotationwidgets.cpp:208
-msgid "Icon"
-msgstr "Таңбашасы"
+#: ui/presentationwidget.cpp:198
+msgid "Exit Presentation Mode"
+msgstr "Презентация режімінен шығу"
 
-#: ui/annotationwidgets.cpp:213
-msgid "Comment"
-msgstr "Түсініктемесі"
-
-#: ui/annotationwidgets.cpp:214
-msgid "Help"
-msgstr "Анықтамасы"
-
-#: ui/annotationwidgets.cpp:215
-msgid "Insert"
-msgstr "Ендіру"
-
-#: ui/annotationwidgets.cpp:216
-msgid "Key"
-msgstr "Перне"
-
-#: ui/annotationwidgets.cpp:217
-msgid "New Paragraph"
-msgstr "Жаңа абзац"
-
-#: ui/annotationwidgets.cpp:219
-msgid "Paragraph"
-msgstr "Абзац"
-
-#: ui/annotationwidgets.cpp:226
-msgid "Font:"
-msgstr "Қаріпі:"
-
-#: ui/annotationwidgets.cpp:262
-msgid "Stamp Symbol"
-msgstr "Мөр таңбасы"
-
-#: ui/annotationwidgets.cpp:269
-msgid "Bookmark"
-msgstr "Бетбелгі"
-
-#: ui/annotationwidgets.cpp:270
-msgid "KDE"
-msgstr "KDE"
-
-#: ui/annotationwidgets.cpp:271
-msgid "Information"
-msgstr "Мәлімет"
-
-#: ui/annotationwidgets.cpp:272
-msgid "Approved"
-msgstr "Мақұлданған"
-
-#: ui/annotationwidgets.cpp:273
-msgid "As Is"
-msgstr "Бар түрде"
-
-#: ui/annotationwidgets.cpp:274
-msgid "Confidential"
-msgstr "Сырлы"
-
-#: ui/annotationwidgets.cpp:275
-msgid "Departmental"
-msgstr "Қызметтік"
-
-#: ui/annotationwidgets.cpp:276
-msgid "Draft"
-msgstr "Алдын-ала жобасы"
-
-#: ui/annotationwidgets.cpp:277
-msgid "Experimental"
-msgstr "Эксперименталды"
-
-#: ui/annotationwidgets.cpp:278
-msgid "Expired"
-msgstr "Ескірген"
-
-#: ui/annotationwidgets.cpp:279
-msgid "Final"
-msgstr "Ақырғы"
-
-#: ui/annotationwidgets.cpp:280
-msgid "For Comment"
-msgstr "Пікір үшін"
-
-#: ui/annotationwidgets.cpp:281
-msgid "For Public Release"
-msgstr "Ашық жариялау үшін"
-
-#: ui/annotationwidgets.cpp:282
-msgid "Not Approved"
-msgstr "Мақұлданбаған"
-
-#: ui/annotationwidgets.cpp:283
-msgid "Not For Public Release"
-msgstr "Ашық жариялау үшін емес"
-
-#: ui/annotationwidgets.cpp:284
-msgid "Sold"
-msgstr "Сатылған"
-
-#: ui/annotationwidgets.cpp:285
-msgid "Top Secret"
-msgstr "Аса құпиялы"
-
-#: ui/annotationwidgets.cpp:322
-msgid "Line Extensions"
-msgstr "Сызық созылуы"
-
-#: ui/annotationwidgets.cpp:324
-msgid "Leader Line Length:"
-msgstr "Жол сызығының ұзындығы:"
-
-#: ui/annotationwidgets.cpp:329
-msgid "Leader Line Extensions Length:"
-msgstr "Жол сызығының созылу ұзындығы:"
-
-#: ui/annotationwidgets.cpp:338
-msgid "Style"
-msgstr "Стилі"
-
-#: ui/annotationwidgets.cpp:340 ui/annotationwidgets.cpp:435
-msgid "&Size:"
-msgstr "Ө&лшемі:"
-
-#: ui/annotationwidgets.cpp:391 ui/annotationwidgets.cpp:426
-msgid "Type:"
-msgstr "Түрі:"
-
-#: ui/annotationwidgets.cpp:398
-msgid "Squiggly"
-msgstr "Иректі"
-
-#: ui/annotationwidgets.cpp:399
-msgid "Underline"
-msgstr "Асты сызық"
-
-#: ui/annotationwidgets.cpp:400
-msgid "Strike out"
-msgstr "Сызып тастаған"
-
-#: ui/annotationwidgets.cpp:431
-msgid "Inner color:"
-msgstr "Ішкі түсі:"
-
-#: ui/annotationwidgets.cpp:441
-msgid "Rectangle"
-msgstr "Төртбұрыш"
-
-#: ui/annotationwidgets.cpp:442
-msgid "Ellipse"
-msgstr "Эллипс"
-
-#: ui/annotationwidgets.cpp:494
-msgid "File Attachment Symbol"
-msgstr "Тіркеме файлдың символы"
-
-#: ui/annotationwidgets.cpp:500
-msgctxt "Symbol for file attachment annotations"
-msgid "Graph"
-msgstr "График"
-
-#: ui/annotationwidgets.cpp:501
-msgctxt "Symbol for file attachment annotations"
-msgid "Push Pin"
-msgstr "Жапсырма шеге"
-
-#: ui/annotationwidgets.cpp:502
-msgctxt "Symbol for file attachment annotations"
-msgid "Paperclip"
-msgstr "Қыстырғыш"
-
-#: ui/annotationwidgets.cpp:503
-msgctxt "Symbol for file attachment annotations"
-msgid "Tag"
-msgstr "Жарлық"
-
-#: ui/annotationwidgets.cpp:514
-msgctxt "'File' as normal file, that can be opened, saved, etc.."
-msgid "File"
-msgstr "Файл"
-
-#: ui/annotationwidgets.cpp:518 ui/embeddedfilesdialog.cpp:69
-msgctxt "Not available size"
-msgid "N/A"
-msgstr "А/Ж"
-
-#: ui/annotationwidgets.cpp:519
-msgid "No description available."
-msgstr "Сипатамасы жоқ."
-
-#: ui/annotationwidgets.cpp:523
+#: ui/presentationwidget.cpp:321
 #, kde-format
-msgid "Name: %1"
+msgid "Title: %1"
 msgstr "Атауы: %1"
 
-#: ui/annotationwidgets.cpp:527
+#: ui/presentationwidget.cpp:325
 #, kde-format
-msgid "Size: %1"
-msgstr "Өлшемі: %1"
+msgid "Pages: %1"
+msgstr "Беттер саны: %1"
 
-#: ui/annotationwidgets.cpp:531
-msgid "Description:"
-msgstr "Сипаттамасы:"
+#: ui/presentationwidget.cpp:326
+msgid "Click to begin"
+msgstr "Түртіп бастаңыз"
 
-#: ui/annotationwidgets.cpp:595
-msgid "Caret Symbol"
-msgstr "Енгізу белгісі"
+#: ui/presentationwidget.cpp:1273
+msgid ""
+"There are two ways of exiting presentation mode, you can press either ESC "
+"key or click with the quit button that appears when placing the mouse in the "
+"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
+msgstr ""
+"Презентация режімінен шығудың екі жолы бар: біріншісі - ESC пернесін басу; "
+"екіншісі - тышқан меңзерін жоғарғы шетке апарғанда, жоғары оң жақ бұрышында "
+"шыға келетін батырмасын түртіп. Сонымен қатар, әрине, басқа терезелерге "
+"аусып шығуға да болады (әдетте Alt+TAB пернелер арқылы)"
 
-#: ui/annotationwidgets.cpp:600
-msgctxt "Symbol for caret annotations"
-msgid "None"
-msgstr "Жоқ"
-
-#: ui/annotationwidgets.cpp:601
-msgctxt "Symbol for caret annotations"
-msgid "P"
-msgstr "P"
-
-#: ui/ktreeviewsearchline.cpp:461
-msgid "Search Options"
-msgstr "Іздеу параметрлері"
-
-#: ui/ktreeviewsearchline.cpp:462
-msgctxt "Enable case sensitive search in the side navigation panels"
-msgid "Case Sensitive"
-msgstr "Үлкен-кішілігін ескеріп"
-
-#: ui/ktreeviewsearchline.cpp:465
-msgctxt "Enable regular expression search in the side navigation panels"
-msgid "Regular Expression"
-msgstr "Үлгі өрнегі"
-
-#: ui/ktreeviewsearchline.cpp:471
-msgid "Search Columns"
-msgstr "Іздейтін бағандар"
-
-#: ui/ktreeviewsearchline.cpp:473
-msgid "All Visible Columns"
-msgstr "Барлық көрінетін бағандарда"
-
-#: ui/ktreeviewsearchline.cpp:630
-msgid "S&earch:"
-msgstr "&Іздейтіні:"
-
-#: ui/annotationpropertiesdialog.cpp:58
-msgid "&Appearance"
-msgstr "&Көрініс"
-
-#: ui/annotationpropertiesdialog.cpp:61
-msgid "&Color:"
-msgstr "&Түсі:"
-
-#: ui/annotationpropertiesdialog.cpp:69
-msgid "&Opacity:"
-msgstr "&Мөлдірсіздігі:"
-
-#: ui/annotationpropertiesdialog.cpp:74
-msgctxt "Suffix for the opacity level, eg '80 %'"
-msgid " %"
-msgstr " %"
-
-#: ui/annotationpropertiesdialog.cpp:91
-msgid "&General"
-msgstr "&Жалпы"
-
-#. i18n: file: conf/dlgidentitybase.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:95
-msgid "&Author:"
-msgstr "&Авторы:"
-
-#: ui/annotationpropertiesdialog.cpp:102
-#, kde-format
-msgid "Created: %1"
-msgstr "Құрылған кезі: %1"
-
-#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
-#, kde-format
-msgid "Modified: %1"
-msgstr "Өзгертілген кезі: %1"
-
-#: ui/annotationpropertiesdialog.cpp:152
-msgid "Note Properties"
-msgstr "Жазба қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:154
-msgid "Inline Note Properties"
-msgstr "Құрамындағы жазба қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:157
-msgid "Line Properties"
-msgstr "Сызық қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:160
-msgid "Geometry Properties"
-msgstr "Фигура қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:163
-msgid "Highlight Properties"
-msgstr "Белгілеу қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:166
-msgid "Stamp Properties"
-msgstr "Мөр қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:169
-msgid "Ink Properties"
-msgstr "Сия қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:172
-msgid "Caret Properties"
-msgstr "Енгізу белгісінің қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:175
-msgid "File Attachment Properties"
-msgstr "Тіркеме файл қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:178
-msgid "Sound Properties"
-msgstr "Дыбыс қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:181
-msgid "Movie Properties"
-msgstr "Фильм қасиеттері"
-
-#: ui/annotationpropertiesdialog.cpp:184
-msgid "Annotation Properties"
-msgstr "Аңдатпа қасиеттері"
-
-#: ui/annotwindow.cpp:48
-msgid "Close this note"
-msgstr "Жазбаны жабу"
-
-#: ui/searchwidget.cpp:40
-msgid "Enter at least 3 letters to filter pages"
-msgstr "Беттер сүзгі үшін кемінде 3 әріпті келтіріңіз"
-
-#: ui/searchwidget.cpp:50
-msgid "Case Sensitive"
-msgstr "Үлкен-кішілігін ескеріп"
-
-#: ui/searchwidget.cpp:52
-msgid "Match Phrase"
-msgstr "Түгел сөйлем сәйкес болсын"
-
-#: ui/searchwidget.cpp:53
-msgid "Match All Words"
-msgstr "Барлық сөздер сәйкес болсын"
-
-#: ui/searchwidget.cpp:54
-msgid "Match Any Word"
-msgstr "Кемінде бір сөз сәйкес болсын"
-
-#: ui/searchwidget.cpp:73
-msgid "Filter Options"
-msgstr "Сүзгі параметрлері"
-
-#: ui/tts.cpp:55
-#, kde-format
-msgid "Starting Jovie Text-to-Speech service Failed: %1"
-msgstr "Jovie мәтінді дауыстап оқу қызметін жегу жаңылысы: %1"
+#: ui/presentationwidget.cpp:1395
+msgctxt ""
+"Reason for inhibiting the screensaver activation, when the presentation mode "
+"is active"
+msgid "Giving a presentation"
+msgstr "Презентация"
 
 #: ui/propertiesdialog.cpp:44
 msgid "Unknown File"
@@ -1465,105 +1469,101 @@ msgstr "Түрі"
 msgid "File"
 msgstr "Файл"
 
-#: ui/presentationsearchbar.cpp:78
-msgid "Find Next"
-msgstr "Келесіні табу"
+#: ui/searchwidget.cpp:40
+msgid "Enter at least 3 letters to filter pages"
+msgstr "Беттер сүзгі үшін кемінде 3 әріпті келтіріңіз"
 
-#: ui/embeddedfilesdialog.cpp:35
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "Беймәлім"
+#: ui/searchwidget.cpp:50
+msgid "Case Sensitive"
+msgstr "Үлкен-кішілігін ескеріп"
 
-#: ui/embeddedfilesdialog.cpp:40
-msgctxt "@title:window"
-msgid "Embedded Files"
-msgstr "Ендірме файлдар"
+#: ui/searchwidget.cpp:52
+msgid "Match Phrase"
+msgstr "Түгел сөйлем сәйкес болсын"
 
-#: ui/embeddedfilesdialog.cpp:49
-msgctxt "@title:column"
-msgid "Name"
-msgstr "Атауы"
+#: ui/searchwidget.cpp:53
+msgid "Match All Words"
+msgstr "Барлық сөздер сәйкес болсын"
 
-#: ui/embeddedfilesdialog.cpp:50
-msgctxt "@title:column"
-msgid "Description"
-msgstr "Сипаттамасы"
+#: ui/searchwidget.cpp:54
+msgid "Match Any Word"
+msgstr "Кемінде бір сөз сәйкес болсын"
 
-#: ui/embeddedfilesdialog.cpp:51
-msgctxt "@title:column"
-msgid "Size"
-msgstr "Өлшемі"
+#: ui/searchwidget.cpp:73
+msgid "Filter Options"
+msgstr "Сүзгі параметрлері"
 
-#: ui/embeddedfilesdialog.cpp:52
-msgctxt "@title:column"
-msgid "Created"
-msgstr "Құрылған кезі"
-
-#: ui/embeddedfilesdialog.cpp:53
-msgctxt "@title:column"
-msgid "Modified"
-msgstr "Өзгертілген кезі"
-
-#: ui/embeddedfilesdialog.cpp:114
-msgctxt "@action:inmenu"
-msgid "&Save As..."
-msgstr "&Былай сақтау..."
-
-#: ui/presentationwidget.cpp:142
-#, kde-format
-msgctxt "[document title/filename] – Presentation"
-msgid "%1 – Presentation"
-msgstr "%1 - Презентация"
-
-#: ui/presentationwidget.cpp:184
-msgid "Switch Screen"
-msgstr "Экранды ауыстру"
-
-#: ui/presentationwidget.cpp:191
-#, kde-format
-msgctxt "%1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "%1-экран"
-
-#: ui/presentationwidget.cpp:198
-msgid "Exit Presentation Mode"
-msgstr "Презентация режімінен шығу"
-
-#: ui/presentationwidget.cpp:321
-#, kde-format
-msgid "Title: %1"
-msgstr "Атауы: %1"
-
-#: ui/presentationwidget.cpp:325
-#, kde-format
-msgid "Pages: %1"
-msgstr "Беттер саны: %1"
-
-#: ui/presentationwidget.cpp:326
-msgid "Click to begin"
-msgstr "Түртіп бастаңыз"
-
-#: ui/presentationwidget.cpp:1273
+#: ui/side_reviews.cpp:61
 msgid ""
-"There are two ways of exiting presentation mode, you can press either ESC "
-"key or click with the quit button that appears when placing the mouse in the "
-"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
+"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
+"or select <i>Tools -&gt; Review</i> from the menu.</div>"
 msgstr ""
-"Презентация режімінен шығудың екі жолы бар: біріншісі - ESC пернесін басу; "
-"екіншісі - тышқан меңзерін жоғарғы шетке апарғанда, жоғары оң жақ бұрышында "
-"шыға келетін батырмасын түртіп. Сонымен қатар, әрине, басқа терезелерге "
-"аусып шығуға да болады (әдетте Alt+TAB пернелер арқылы)"
+"<div align=center><h3>Аңдатпалар жоқ</h3>Жаңа аңдатпаны жазу үшін F6 пернені "
+"басыңыз немесе мәзірінен <i>Құралдар-&gt;Шолу</i> дегенді таңдаңыз.</div>"
 
-#: ui/presentationwidget.cpp:1395
-msgctxt ""
-"Reason for inhibiting the screensaver activation, when the presentation mode "
-"is active"
-msgid "Giving a presentation"
-msgstr "Презентация"
+#: ui/side_reviews.cpp:128
+msgid "Group by Page"
+msgstr "Беттер бойынша топтастыру"
 
-#: ui/pageviewutils.cpp:410
-msgid "Close this message"
-msgstr "Хабарламаны жабу"
+#: ui/side_reviews.cpp:133
+msgid "Group by Author"
+msgstr "Авторлар бойынша топтастыру"
+
+#: ui/side_reviews.cpp:141
+msgid "Show reviews for current page only"
+msgstr "Тек назардағы беттің шолуы көрсетілсін"
+
+#: ui/sidebar.cpp:664
+msgid "Show Text"
+msgstr "Мәтінді көрсету"
+
+#: ui/sidebar.cpp:680
+msgid "Small Icons"
+msgstr "Шағын таңбашалар"
+
+#: ui/sidebar.cpp:681
+msgid "Normal Icons"
+msgstr "Қалыпты таңбашалар"
+
+#: ui/sidebar.cpp:682
+msgid "Large Icons"
+msgstr "Үлкен таңбашалар"
+
+#: ui/thumbnaillist.cpp:1016
+msgid "Show bookmarked pages only"
+msgstr "Бетбелгісі бар беттер ғана көрсетілсін"
+
+#: ui/toolaction.cpp:21
+msgid "Selection Tools"
+msgstr "Таңдау құралдары"
+
+#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
+msgid ""
+"Click to use the current selection tool\n"
+"Click and hold to choose another selection tool"
+msgstr ""
+"Қолданыстағыны таңдау құралын пайдалану үшін түртіңіз\n"
+"Басқасын таңдау үшін түртіп ұстап тұрыңыз"
+
+#: ui/tts.cpp:55
+#, kde-format
+msgid "Starting Jovie Text-to-Speech service Failed: %1"
+msgstr "Jovie мәтінді дауыстап оқу қызметін жегу жаңылысы: %1"
+
+#: ui/videowidget.cpp:115
+msgctxt "start the movie playback"
+msgid "Play"
+msgstr "Айдау"
+
+#: ui/videowidget.cpp:120
+msgctxt "pause the movie playback"
+msgid "Pause"
+msgstr "Аялдау"
+
+#: ui/videowidget.cpp:185
+msgctxt "stop the movie playback"
+msgid "Stop"
+msgstr "Тоқтату"
 
 #: shell/main.cpp:48
 msgid "Page of the document to be shown"
@@ -2045,15 +2045,99 @@ msgstr "&Анықтама"
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар панелі"
 
+#. i18n: file: conf/dlgaccessibilitybase.ui:28
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
+#: rc.cpp:38
+msgid "Draw border around &Images"
+msgstr "&Кескіндер қоршауға алынсын"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
+#: rc.cpp:41
+msgid "Draw border around &Links"
+msgstr "&Сілтемелер қоршауға алынсын"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
+#: rc.cpp:44
+msgid "Change &colors"
+msgstr "&Түстерін өзгерту"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:63
+#. i18n: ectx: property (text), widget (QLabel, warn)
+#: rc.cpp:47
+msgid "Warning: these options can badly affect drawing speed."
+msgstr "Ескерту: бұл параметрлер көрсету қарқынын едәуір бәсеңдетеді."
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:78
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:50
+msgid "Color mode:"
+msgstr "Түстер режімі:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:89
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:53
+msgid "Invert Colors"
+msgstr "Түстерін терістеу"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:94
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:56
+msgid "Change Paper Color"
+msgstr "Қағазының түсін өзгерту"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:99
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:59
+msgid "Change Dark & Light Colors"
+msgstr "Қою мен ашық түстерін өзгерту"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:104
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:62
+msgid "Convert to Black & White"
+msgstr "Ақ пен қараға айналдыру"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:165
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:65
+msgid "Paper color:"
+msgstr "Қағаздың түсі:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:218
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:68
+msgid "Dark color:"
+msgstr "Қою түсі:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:250
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: rc.cpp:71
+msgid "Light color:"
+msgstr "Ашық түсі:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:291
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:74
+msgid "Threshold:"
+msgstr "Бөлу табалдырығы:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:323
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:77
+msgid "Contrast:"
+msgstr "Контрастылығы:"
+
 #. i18n: file: conf/dlgeditorbase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:41
+#: rc.cpp:83
 msgid "Editor:"
 msgstr "Редакторы:"
 
 #. i18n: file: conf/dlgeditorbase.ui:32
 #. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_ExternalEditor)
-#: rc.cpp:44
+#: rc.cpp:86
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose the editor you want to launch when Okular wants to open a source file."
@@ -2061,97 +2145,75 @@ msgstr "Okular бастапқы файлды ашам дегенде қолда�
 
 #. i18n: file: conf/dlgeditorbase.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:47
+#: rc.cpp:89
 msgid "Command:"
 msgstr "Командасы:"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:28
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
-#: rc.cpp:50
-msgid "Draw border around &Images"
-msgstr "&Кескіндер қоршауға алынсын"
+#. i18n: file: conf/dlggeneralbase.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: conf/dlgpresentationbase.ui:71
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:92 rc.cpp:164
+msgid "Appearance"
+msgstr "Көрінісі"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:35
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
-#: rc.cpp:53
-msgid "Draw border around &Links"
-msgstr "&Сілтемелер қоршауға алынсын"
+#. i18n: file: conf/dlggeneralbase.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
+#: rc.cpp:95
+msgid "Show scroll&bars"
+msgstr "Жүгірту ж&олақтары болсын"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
-#: rc.cpp:56
-msgid "Change &colors"
-msgstr "&Түстерін өзгерту"
+#. i18n: file: conf/dlggeneralbase.ui:50
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
+#: rc.cpp:98
+msgid "Link the &thumbnails with the page"
+msgstr "&Нобайлар бетпен байланыстырылсын"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:63
-#. i18n: ectx: property (text), widget (QLabel, warn)
-#: rc.cpp:59
-msgid "Warning: these options can badly affect drawing speed."
-msgstr "Ескерту: бұл параметрлер көрсету қарқынын едәуір бәсеңдетеді."
+#. i18n: file: conf/dlggeneralbase.ui:57
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
+#: rc.cpp:101
+msgid "Show &hints and info messages"
+msgstr "&Ишара мен мәлімет хабарлары болсын"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:78
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:62
-msgid "Color mode:"
-msgstr "Түстер режімі:"
+#. i18n: file: conf/dlggeneralbase.ui:105
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:104
+msgid "Program Features"
+msgstr "Бағдарлама өзгешіліктері"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:89
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:65
-msgid "Invert Colors"
-msgstr "Түстерін терістеу"
+#. i18n: file: conf/dlggeneralbase.ui:125
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
+#: rc.cpp:107
+msgid "&Obey DRM limitations"
+msgstr "DRM (авторлықты қорғау) шектеулері ұ&станылсын"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:94
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:68
-msgid "Change Paper Color"
-msgstr "Қағазының түсін өзгерту"
+#. i18n: file: conf/dlggeneralbase.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
+#: rc.cpp:110
+msgid "&Reload document on file change"
+msgstr "&Файлы өзгертілгенде құжат қайта жүктеп алынсын"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:99
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:71
-msgid "Change Dark & Light Colors"
-msgstr "Қою мен ашық түстерін өзгерту"
+#. i18n: file: conf/dlggeneralbase.ui:139
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
+#: rc.cpp:113
+msgid "Show backend selection dialog"
+msgstr "Орындауышты таңдау диалогын көрсету"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:104
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:74
-msgid "Convert to Black & White"
-msgstr "Ақ пен қараға айналдыру"
+#. i18n: file: conf/dlggeneralbase.ui:187
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:116
+msgid "View Options"
+msgstr "Көрініс параметрлері"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:77
-msgid "Paper color:"
-msgstr "Қағаздың түсі:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:218
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:80
-msgid "Dark color:"
-msgstr "Қою түсі:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:250
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:83
-msgid "Light color:"
-msgstr "Ашық түсі:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:291
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:86
-msgid "Threshold:"
-msgstr "Бөлу табалдырығы:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:323
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:89
-msgid "Contrast:"
-msgstr "Контрастылығы:"
+#. i18n: file: conf/dlggeneralbase.ui:201
+#. i18n: ectx: property (text), widget (QLabel, columnLabel)
+#: rc.cpp:119
+msgid "Overview columns:"
+msgstr "Шолу бағандар:"
 
 #. i18n: file: conf/dlgidentitybase.ui:71
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:98
+#: rc.cpp:128
 msgid ""
 "<b>Note</b>: the information here is used only for comments and reviews. "
 "Information inserted here will not be transmitted without your knowledge."
@@ -2161,311 +2223,249 @@ msgstr ""
 
 #. i18n: file: conf/dlgperformancebase.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:101
+#: rc.cpp:131
 msgid "CPU Usage"
 msgstr "Процессорды жұмсау"
 
 #. i18n: file: conf/dlgperformancebase.ui:50
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableCompositing)
-#: rc.cpp:104
+#: rc.cpp:134
 msgid "Enable &transparency effects"
 msgstr "&Мөлдірлік эффекті болсын"
 
 #. i18n: file: conf/dlgperformancebase.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableThreading)
-#: rc.cpp:107
+#: rc.cpp:137
 msgid "Enable &background generation"
 msgstr "&Аясы болсын"
 
 #. i18n: file: conf/dlgperformancebase.ui:109
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_MemoryLevel)
-#: rc.cpp:110
+#: rc.cpp:140
 msgid "Memory Usage"
 msgstr "Жадын жұмсау"
 
 #. i18n: file: conf/dlgperformancebase.ui:137
 #. i18n: ectx: property (text), widget (QRadioButton, lowRadio)
-#: rc.cpp:113
+#: rc.cpp:143
 msgid "&Low"
 msgstr "&Аз"
 
 #. i18n: file: conf/dlgperformancebase.ui:144
 #. i18n: ectx: property (text), widget (QRadioButton, normalRadio)
-#: rc.cpp:116
+#: rc.cpp:146
 msgid "&Normal (default)"
 msgstr "Қа&лыпты (әдетті)"
 
 #. i18n: file: conf/dlgperformancebase.ui:151
 #. i18n: ectx: property (text), widget (QRadioButton, aggressiveRadio)
-#: rc.cpp:119
+#: rc.cpp:149
 msgid "&Aggressive"
 msgstr "Кө&п"
 
 #. i18n: file: conf/dlgpresentationbase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122
+#: rc.cpp:152
 msgid "Navigation"
 msgstr "Тәртібі"
 
 #. i18n: file: conf/dlgpresentationbase.ui:39
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesAdvance)
-#: rc.cpp:125
+#: rc.cpp:155
 msgid "Advance every:"
 msgstr "Бетті көрсету аралығы:"
 
 #. i18n: file: conf/dlgpresentationbase.ui:49
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_SlidesAdvanceTime)
-#: rc.cpp:128
+#: rc.cpp:158
 msgid " sec."
 msgstr " сек."
 
 #. i18n: file: conf/dlgpresentationbase.ui:61
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesLoop)
-#: rc.cpp:131
+#: rc.cpp:161
 msgid "Loop after last page"
 msgstr "Соңғы беттен кейін біріншіден қайталансын"
 
-#. i18n: file: conf/dlgpresentationbase.ui:71
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: conf/dlggeneralbase.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:134 rc.cpp:227
-msgid "Appearance"
-msgstr "Көрінісі"
-
 #. i18n: file: conf/dlgpresentationbase.ui:79
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:137
+#: rc.cpp:167
 msgid "Background color:"
 msgstr "Ая түсі:"
 
 #. i18n: file: conf/dlgpresentationbase.ui:92
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:140
+#: rc.cpp:170
 msgid "Pencil color:"
 msgstr "Қарындаштың түсі:"
 
 #. i18n: file: conf/dlgpresentationbase.ui:105
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:143
+#: rc.cpp:173
 msgid "Mouse cursor:"
 msgstr "Тышқан меңзері:"
 
 #. i18n: file: conf/dlgpresentationbase.ui:116
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:146
+#: rc.cpp:176
 msgid "Hidden After Delay"
 msgstr "Сәлден кейін жасырылсын"
 
 #. i18n: file: conf/dlgpresentationbase.ui:121
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:149
+#: rc.cpp:179
 msgid "Always Visible"
 msgstr "Әрқашанда көрсетілсін"
 
 #. i18n: file: conf/dlgpresentationbase.ui:126
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:152
+#: rc.cpp:182
 msgid "Always Hidden"
 msgstr "Әрқашанда жасырылсын"
 
 #. i18n: file: conf/dlgpresentationbase.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowProgress)
-#: rc.cpp:155
+#: rc.cpp:185
 msgid "Show &progress indicator"
 msgstr "&Барыс көрсеткіші болсын"
 
 #. i18n: file: conf/dlgpresentationbase.ui:143
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowSummary)
-#: rc.cpp:158
+#: rc.cpp:188
 msgid "Show s&ummary page"
 msgstr "Қ&ортынды бет көрсетілсін"
 
 #. i18n: file: conf/dlgpresentationbase.ui:153
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_SlidesTransitionsEnabled)
-#: rc.cpp:161
+#: rc.cpp:191
 msgid "Enable transitions"
 msgstr "Ауысуларды рұқсат ету"
 
 #. i18n: file: conf/dlgpresentationbase.ui:165
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:164
+#: rc.cpp:194
 msgid "Default transition:"
 msgstr "Әдетті ауысуы:"
 
 #. i18n: file: conf/dlgpresentationbase.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:167
+#: rc.cpp:197
 msgid "Blinds Vertical"
 msgstr "Тік жалюзи секілді"
 
 #. i18n: file: conf/dlgpresentationbase.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:170
+#: rc.cpp:200
 msgid "Blinds Horizontal"
 msgstr "Жатық жалюзи секілді"
 
 #. i18n: file: conf/dlgpresentationbase.ui:186
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:173
+#: rc.cpp:203
 msgid "Box In"
 msgstr "Шаршы ішке"
 
 #. i18n: file: conf/dlgpresentationbase.ui:191
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:176
+#: rc.cpp:206
 msgid "Box Out"
 msgstr "Шаршы ішінен"
 
 #. i18n: file: conf/dlgpresentationbase.ui:196
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:179
+#: rc.cpp:209
 msgid "Dissolve"
 msgstr "Еріп кету"
 
 #. i18n: file: conf/dlgpresentationbase.ui:201
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:182
+#: rc.cpp:212
 msgid "Glitter Down"
 msgstr "Жоғардан шығу"
 
 #. i18n: file: conf/dlgpresentationbase.ui:206
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:185
+#: rc.cpp:215
 msgid "Glitter Right"
 msgstr "Сол жақтан шығу"
 
 #. i18n: file: conf/dlgpresentationbase.ui:211
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:188
+#: rc.cpp:218
 msgid "Glitter Right-Down"
 msgstr "Жоғары сол жақтан шығу"
 
 #. i18n: file: conf/dlgpresentationbase.ui:216
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:191
+#: rc.cpp:221
 msgid "Random Transition"
 msgstr "Кездейсоқ ауыстыру"
 
 #. i18n: file: conf/dlgpresentationbase.ui:221
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:194
+#: rc.cpp:224
 msgid "Replace"
 msgstr "Алмастыру"
 
 #. i18n: file: conf/dlgpresentationbase.ui:226
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:197
+#: rc.cpp:227
 msgid "Split Horizontal In"
 msgstr "Екі жақтан ортаға"
 
 #. i18n: file: conf/dlgpresentationbase.ui:231
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:200
+#: rc.cpp:230
 msgid "Split Horizontal Out"
 msgstr "Ортадан екі жаққа"
 
 #. i18n: file: conf/dlgpresentationbase.ui:236
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:203
+#: rc.cpp:233
 msgid "Split Vertical In"
 msgstr "Жоғары-төменнен ортаға"
 
 #. i18n: file: conf/dlgpresentationbase.ui:241
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:206
+#: rc.cpp:236
 msgid "Split Vertical Out"
 msgstr "Ортадан жоғары-төменге"
 
 #. i18n: file: conf/dlgpresentationbase.ui:246
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:209
+#: rc.cpp:239
 msgid "Wipe Down"
 msgstr "Төменге шайып тастау"
 
 #. i18n: file: conf/dlgpresentationbase.ui:251
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:212
+#: rc.cpp:242
 msgid "Wipe Right"
 msgstr "Оңға шайып тастау"
 
 #. i18n: file: conf/dlgpresentationbase.ui:256
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:215
+#: rc.cpp:245
 msgid "Wipe Left"
 msgstr "Солға шайып тастау"
 
 #. i18n: file: conf/dlgpresentationbase.ui:261
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:218
+#: rc.cpp:248
 msgid "Wipe Up"
 msgstr "Жоғарға шайып тастау"
 
 #. i18n: file: conf/dlgpresentationbase.ui:272
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:221
+#: rc.cpp:251
 msgid "Placement"
 msgstr "Орналасу"
 
 #. i18n: file: conf/dlgpresentationbase.ui:278
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:224
+#: rc.cpp:254
 msgid "Screen:"
 msgstr "Экраны:"
-
-#. i18n: file: conf/dlggeneralbase.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
-#: rc.cpp:230
-msgid "Show scroll&bars"
-msgstr "Жүгірту ж&олақтары болсын"
-
-#. i18n: file: conf/dlggeneralbase.ui:50
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
-#: rc.cpp:233
-msgid "Link the &thumbnails with the page"
-msgstr "&Нобайлар бетпен байланыстырылсын"
-
-#. i18n: file: conf/dlggeneralbase.ui:57
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
-#: rc.cpp:236
-msgid "Show &hints and info messages"
-msgstr "&Ишара мен мәлімет хабарлары болсын"
-
-#. i18n: file: conf/dlggeneralbase.ui:105
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:239
-msgid "Program Features"
-msgstr "Бағдарлама өзгешіліктері"
-
-#. i18n: file: conf/dlggeneralbase.ui:125
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
-#: rc.cpp:242
-msgid "&Obey DRM limitations"
-msgstr "DRM (авторлықты қорғау) шектеулері ұ&станылсын"
-
-#. i18n: file: conf/dlggeneralbase.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
-#: rc.cpp:245
-msgid "&Reload document on file change"
-msgstr "&Файлы өзгертілгенде құжат қайта жүктеп алынсын"
-
-#. i18n: file: conf/dlggeneralbase.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
-#: rc.cpp:248
-msgid "Show backend selection dialog"
-msgstr "Орындауышты таңдау диалогын көрсету"
-
-#. i18n: file: conf/dlggeneralbase.ui:187
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:251
-msgid "View Options"
-msgstr "Көрініс параметрлері"
-
-#. i18n: file: conf/dlggeneralbase.ui:201
-#. i18n: ectx: property (text), widget (QLabel, columnLabel)
-#: rc.cpp:254
-msgid "Overview columns:"
-msgstr "Шолу бағандар:"
 
 #. i18n: file: ui/data/tools.xml:21
 #: rc.cpp:256
