@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-01 14:12+0200\n"
+"POT-Creation-Date: 2011-06-06 14:19+0200\n"
 "PO-Revision-Date: 2010-12-07 05:23+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan(at)computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -56,13 +56,13 @@ msgctxt "@title:window"
 msgid "Add Bookmarks"
 msgstr "Бетбелгілерді қосу"
 
-#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:278
+#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:281
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:132
-#: ../kfile/knewfilemenu.cpp:1013
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1013
+#: ../kfile/kdirselectdialog.cpp:135
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Жаңа қапшық"
@@ -5935,60 +5935,6 @@ msgstr "kio_metainfo"
 msgid "No metainfo for %1"
 msgstr "%1 метадеректері жоқ"
 
-#: ../kfile/kdirselectdialog.cpp:128
-msgctxt "folder name"
-msgid "New Folder"
-msgstr "Жаңа қапшық"
-
-#: ../kfile/kdirselectdialog.cpp:133
-#, kde-format
-msgctxt "@label:textbox"
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Жаңа қапшықтын орны:\n"
-"%1"
-
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:766
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "%1 деген атауы қолданыста бар екен."
-
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:768
-msgid "You do not have permission to create that folder."
-msgstr "Бұл қапшықты құруға рұқсатыңыз жоқ."
-
-#: ../kfile/kdirselectdialog.cpp:280
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Жаңа қапшық..."
-
-#: ../kfile/kdirselectdialog.cpp:321
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Жаңа қапшық..."
-
-#: ../kfile/kdirselectdialog.cpp:328
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Шелекке тастау"
-
-#: ../kfile/kdirselectdialog.cpp:335
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: ../kfile/kdirselectdialog.cpp:344
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Жасырын қапшықтар көрсетілсін"
-
-#: ../kfile/kdirselectdialog.cpp:351
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Қасиеттері"
-
 #: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1790
 msgid "*|All Files"
 msgstr "*|Барлық файлдар"
@@ -6119,10 +6065,6 @@ msgstr "'%1' дегенге қатынау кезде қате орын алды
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "'%1' дегенге қатынау кезде қате пайда болды"
-
-#: ../kfile/kfiletreeview.cpp:187
-msgid "Show Hidden Folders"
-msgstr "Жасырын қапшықтар көрсетілсін"
 
 #: ../kfile/kfilewidget.cpp:285
 msgid ""
@@ -6465,6 +6407,10 @@ msgstr ""
 "Жаңа қапшықтын орны:\n"
 "%1"
 
+#: ../kfile/kfiletreeview.cpp:187
+msgid "Show Hidden Folders"
+msgstr "Жасырын қапшықтар көрсетілсін"
+
 #: ../kfile/kfileplacesview.cpp:575
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
@@ -6545,6 +6491,15 @@ msgstr "Орынын ауыстыру үшін түртіңіз"
 #: ../kfile/kurlnavigatortogglebutton.cpp:92
 msgid "Click to Edit Location"
 msgstr "Орынын өзгерту үшін түртіңіз"
+
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "%1 деген атауы қолданыста бар екен."
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+msgid "You do not have permission to create that folder."
+msgstr "Бұл қапшықты құруға рұқсатыңыз жоқ."
 
 #: ../kfile/kdiroperator.cpp:783
 msgid "You did not select a file to delete."
@@ -6704,6 +6659,51 @@ msgstr "Файл менеджерін ашу"
 #: ../kfile/kdiroperator.cpp:1990
 msgid "&View"
 msgstr "Кө&рініс"
+
+#: ../kfile/kdirselectdialog.cpp:131
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Жаңа қапшықтын орны:\n"
+"%1"
+
+#: ../kfile/kdirselectdialog.cpp:283
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Жаңа қапшық..."
+
+#: ../kfile/kdirselectdialog.cpp:324
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Жаңа қапшық..."
+
+#: ../kfile/kdirselectdialog.cpp:331
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Шелекке тастау"
+
+#: ../kfile/kdirselectdialog.cpp:338
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: ../kfile/kdirselectdialog.cpp:347
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Жасырын қапшықтар көрсетілсін"
+
+#: ../kfile/kdirselectdialog.cpp:354
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Қасиеттері"
 
 #, fuzzy
 #~| msgid "Size:"
