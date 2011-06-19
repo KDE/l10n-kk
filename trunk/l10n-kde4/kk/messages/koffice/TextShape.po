@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:35+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2009-01-12 10:01+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Karakh\n"
@@ -46,6 +46,10 @@ msgstr "Тізімді өзгерту"
 msgid "Change List Level"
 msgstr "Тізімдің деңгейін өзгерту"
 
+#: commands/ListItemNumberingCommand.cpp:35
+msgid "Change List Numbering"
+msgstr "Тізімдің нөмірлеуін өзгерту"
+
 #: commands/ChangeTrackedDeleteCommand.cpp:77
 #: commands/ChangeTrackedDeleteCommand.cpp:289 commands/DeleteCommand.cpp:43
 #: TextTool.cpp:529
@@ -62,10 +66,6 @@ msgstr "Пернені басу"
 #: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
 msgid "Text"
 msgstr "Мәтін"
-
-#: commands/ListItemNumberingCommand.cpp:35
-msgid "Change List Numbering"
-msgstr "Тізімдің нөмірлеуін өзгерту"
 
 #: commands/RejectChangeCommand.cpp:49
 #, fuzzy
@@ -104,6 +104,55 @@ msgctxt "Close dialog"
 msgid "Close"
 msgstr "Жабу"
 
+#: dialogs/StylesWidget.cpp:203 dialogs/StylesWidget.cpp:217
+msgid "new style"
+msgstr "жаңа стилі"
+
+#. i18n: file: dialogs/CharacterGeneral.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: dialogs/CreateBookmark.ui:35
+#. i18n: ectx: property (text), widget (QLabel, lName)
+#. i18n: file: dialogs/ParagraphGeneral.ui:46
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: dialogs/JumpOverview.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: dialogs/NewStyleWidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/StylesWidget.cpp:204 rc.cpp:97 rc.cpp:127 rc.cpp:172 rc.cpp:223
+#: rc.cpp:436
+msgid "Name:"
+msgstr "Атауы:"
+
+#. i18n: file: dialogs/NewStyleWidget.ui:43
+#. i18n: ectx: property (text), widget (QRadioButton, paragraph)
+#: dialogs/StylesWidget.cpp:205 rc.cpp:442
+msgid "Paragraph style"
+msgstr "Абзац стилі"
+
+#. i18n: file: dialogs/NewStyleWidget.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/StylesWidget.cpp:207 rc.cpp:439
+msgid "Type:"
+msgstr "Түрі:"
+
+#. i18n: file: dialogs/NewStyleWidget.ui:53
+#. i18n: ectx: property (text), widget (QRadioButton, character)
+#: dialogs/StylesWidget.cpp:208 rc.cpp:445
+msgid "Character style"
+msgstr "Таңба стилі"
+
+#: dialogs/StylesWidget.cpp:212
+msgid "Create New Style"
+msgstr "Жаңа стилді құру"
+
+#: dialogs/StylesWidget.cpp:283
+msgid "Edit Paragraph Style"
+msgstr "Абзацтың стилін өзгерту"
+
+#: dialogs/StylesWidget.cpp:283
+msgid "Edit Character Style"
+msgstr "Таңба стилін өзгерту"
+
 #: dialogs/ParagraphGeneral.cpp:48
 msgid "Indent/Spacing"
 msgstr "Шегіну/Аралық"
@@ -136,6 +185,10 @@ msgstr "Абзац стилі"
 #| msgid "Paragraph Settings\n"
 msgid "Paragraph Settings"
 msgstr "Абзац параметрлері\n"
+
+#: dialogs/StyleManager.cpp:109
+msgid "Document defaults"
+msgstr ""
 
 #: dialogs/TableDialog.cpp:27
 #, fuzzy
@@ -201,67 +254,43 @@ msgctxt "Text alignment"
 msgid "Centered"
 msgstr "Ортаға"
 
-#: dialogs/StyleManager.cpp:109
-msgid "Document defaults"
-msgstr ""
-
-#: dialogs/StylesWidget.cpp:203 dialogs/StylesWidget.cpp:217
-msgid "new style"
-msgstr "жаңа стилі"
-
-#. i18n: file: dialogs/CharacterGeneral.ui:46
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: dialogs/CreateBookmark.ui:35
-#. i18n: ectx: property (text), widget (QLabel, lName)
-#. i18n: file: dialogs/ParagraphGeneral.ui:46
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: dialogs/JumpOverview.ui:23
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: dialogs/NewStyleWidget.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/StylesWidget.cpp:204 rc.cpp:97 rc.cpp:127 rc.cpp:172 rc.cpp:223
-#: rc.cpp:436
-msgid "Name:"
-msgstr "Атауы:"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:43
-#. i18n: ectx: property (text), widget (QRadioButton, paragraph)
-#: dialogs/StylesWidget.cpp:205 rc.cpp:442
-msgid "Paragraph style"
-msgstr "Абзац стилі"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:33
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/StylesWidget.cpp:207 rc.cpp:439
-msgid "Type:"
-msgstr "Түрі:"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:53
-#. i18n: ectx: property (text), widget (QRadioButton, character)
-#: dialogs/StylesWidget.cpp:208 rc.cpp:445
-msgid "Character style"
-msgstr "Таңба стилі"
-
-#: dialogs/StylesWidget.cpp:212
-msgid "Create New Style"
-msgstr "Жаңа стилді құру"
-
-#: dialogs/StylesWidget.cpp:283
-msgid "Edit Paragraph Style"
-msgstr "Абзацтың стилін өзгерту"
-
-#: dialogs/StylesWidget.cpp:283
-msgid "Edit Character Style"
-msgstr "Таңба стилін өзгерту"
-
 #: dialogs/StyleManagerDialog.cpp:29 TextTool.cpp:432
 msgid "Style Manager"
 msgstr "Стиль менеджері"
 
-#: dialogs/FormattingPreview.cpp:49 dialogs/CharacterGeneral.cpp:58
+#: dialogs/JumpOverview.cpp:44 dialogs/CreateBookmark.cpp:46
+msgid "Insert Bookmark"
+msgstr ""
+
+#: dialogs/JumpOverview.cpp:86
+#, kde-format
+msgid "Page %1"
+msgstr ""
+
+#: dialogs/JumpOverview.cpp:112
+msgid "Bookmark"
+msgstr ""
+
+#: dialogs/JumpOverview.cpp:115
+msgid "Page"
+msgstr ""
+
+#: dialogs/JumpOverview.cpp:118
+msgid "Index locator"
+msgstr ""
+
+#: dialogs/CharacterGeneral.cpp:58 dialogs/FormattingPreview.cpp:49
 #: dialogs/FontDia.cpp:103
 msgid "Font"
 msgstr "Қаріпі"
+
+#: dialogs/CharacterGeneral.cpp:60
+msgid "Highlighting"
+msgstr "Бояулауы"
+
+#: dialogs/CharacterGeneral.cpp:61
+msgid "Layout"
+msgstr "Орналасуы"
 
 #: dialogs/SimpleStyleWidget.cpp:263
 msgctxt "Short for LeftToRight"
@@ -290,37 +319,141 @@ msgstr ""
 msgid "This is a line of text whose format has been changed."
 msgstr ""
 
-#: dialogs/CharacterGeneral.cpp:60
-msgid "Highlighting"
-msgstr "Бояулауы"
-
-#: dialogs/CharacterGeneral.cpp:61
-msgid "Layout"
-msgstr "Орналасуы"
-
-#: dialogs/CreateBookmark.cpp:46 dialogs/JumpOverview.cpp:44
-msgid "Insert Bookmark"
-msgstr ""
-
 #: dialogs/FontDia.cpp:80
 msgid "Select Font"
 msgstr "Қаріпті таңдау"
 
-#: dialogs/JumpOverview.cpp:86
-#, kde-format
-msgid "Page %1"
+#: TextToolFactory.cpp:29
+msgid "Text editing tool"
+msgstr "Мәтін өңдеу құралы"
+
+#: ListItemsHelper.cpp:179
+msgctxt "Text list-style"
+msgid "None"
+msgstr "Жоқ"
+
+#: ListItemsHelper.cpp:180
+msgid "Arabic"
+msgstr "Араб"
+
+#: ListItemsHelper.cpp:181
+msgid "Lower Alphabetical"
+msgstr "Кіші әріп"
+
+#: ListItemsHelper.cpp:182
+msgid "Upper Alphabetical"
+msgstr "Бас әріп"
+
+#: ListItemsHelper.cpp:183
+msgid "Lower Roman"
+msgstr "Кіші римдік"
+
+#: ListItemsHelper.cpp:184
+msgid "Upper Roman"
+msgstr "Үлкен римдік"
+
+#: ListItemsHelper.cpp:185
+msgid "Disc Bullet"
+msgstr "Дөңгелектермен таңбалау"
+
+#: ListItemsHelper.cpp:186
+msgid "Square Bullet"
+msgstr "Шаршылармен таңбалау"
+
+#: ListItemsHelper.cpp:187
+msgid "Box Bullet"
+msgstr "Төртбұрыштармен таңбалау"
+
+#: ListItemsHelper.cpp:188
+msgid "Rhombus Bullet"
+msgstr "Робтармен таңбалау"
+
+#: ListItemsHelper.cpp:189
+msgid "Circle Bullet"
+msgstr "Шеңберлермен таңбалау"
+
+#: ListItemsHelper.cpp:190
+msgid "Check Mark Bullet"
+msgstr "Құсбелілермен таңбалау"
+
+#: ListItemsHelper.cpp:191
+msgid "Ballot X Bullet"
+msgstr "Бюллетенді таңбалау"
+
+#: ListItemsHelper.cpp:192
+msgid "Rightwards Arrow Bullet"
+msgstr "Оң жебелермен таңбалау"
+
+#: ListItemsHelper.cpp:193
+msgid "Rightwards Arrow Head Bullet"
+msgstr "Оң жебе ұштарымен таңбалау"
+
+#: ListItemsHelper.cpp:200
+msgid "Bengali"
+msgstr "Бенгали"
+
+#: ListItemsHelper.cpp:201
+msgid "Gujarati"
+msgstr "Гуджарати"
+
+#: ListItemsHelper.cpp:202
+msgid "Gurumukhi"
+msgstr "Гурумухи"
+
+#: ListItemsHelper.cpp:203
+msgid "Kannada"
+msgstr "Каннада"
+
+#: ListItemsHelper.cpp:204
+msgid "Malayalam"
+msgstr "Малайям"
+
+#: ListItemsHelper.cpp:205
+msgid "Oriya"
+msgstr "Ория"
+
+#: ListItemsHelper.cpp:206
+msgid "Tamil"
+msgstr "Тамил"
+
+#: ListItemsHelper.cpp:207
+msgid "Telugu"
+msgstr "Телугу"
+
+#: ListItemsHelper.cpp:208
+msgid "Tibetan"
+msgstr "Тибеттік"
+
+#: ListItemsHelper.cpp:209
+msgid "Thai"
+msgstr "Тай"
+
+#: ListItemsHelper.cpp:210
+msgid "Abjad"
+msgstr "Абжад"
+
+#: ListItemsHelper.cpp:211
+msgid "AbjadMinor"
+msgstr "КішіАбжад"
+
+#: ListItemsHelper.cpp:212
+msgid "ArabicAlphabet"
+msgstr "Араб әліппесі"
+
+#: ChangeTrackingTool.cpp:66
+msgid "Tracked change manager"
 msgstr ""
 
-#: dialogs/JumpOverview.cpp:112
-msgid "Bookmark"
+#. i18n: file: dialogs/AcceptRejectChangeDialog.ui:44
+#. i18n: ectx: property (text), widget (QPushButton, acceptButton)
+#: ChangeTrackingTool.cpp:380 rc.cpp:70
+msgid "Accept"
 msgstr ""
 
-#: dialogs/JumpOverview.cpp:115
-msgid "Page"
-msgstr ""
-
-#: dialogs/JumpOverview.cpp:118
-msgid "Index locator"
+#. i18n: file: dialogs/AcceptRejectChangeDialog.ui:57
+#. i18n: ectx: property (text), widget (QPushButton, rejectButton)
+#: ChangeTrackingTool.cpp:381 rc.cpp:73
+msgid "Reject"
 msgstr ""
 
 #: TextShapeFactory.cpp:44
@@ -330,6 +463,10 @@ msgstr "Мәтіннің көрсететін пішіні"
 #: TextShapeFactory.cpp:54
 msgid "Text Shape"
 msgstr "Мәтін пішіні"
+
+#: ChangeTrackingToolFactory.cpp:33
+msgid "Change Tracking tool"
+msgstr ""
 
 #: TextTool.cpp:123
 msgid "Bold"
@@ -667,143 +804,6 @@ msgstr "Өшіру"
 #: TextTool.cpp:2063
 msgid "Variable Options"
 msgstr ""
-
-#: TextToolFactory.cpp:29
-msgid "Text editing tool"
-msgstr "Мәтін өңдеу құралы"
-
-#: ChangeTrackingTool.cpp:66
-msgid "Tracked change manager"
-msgstr ""
-
-#. i18n: file: dialogs/AcceptRejectChangeDialog.ui:44
-#. i18n: ectx: property (text), widget (QPushButton, acceptButton)
-#: ChangeTrackingTool.cpp:380 rc.cpp:70
-msgid "Accept"
-msgstr ""
-
-#. i18n: file: dialogs/AcceptRejectChangeDialog.ui:57
-#. i18n: ectx: property (text), widget (QPushButton, rejectButton)
-#: ChangeTrackingTool.cpp:381 rc.cpp:73
-msgid "Reject"
-msgstr ""
-
-#: ChangeTrackingToolFactory.cpp:33
-msgid "Change Tracking tool"
-msgstr ""
-
-#: ListItemsHelper.cpp:179
-msgctxt "Text list-style"
-msgid "None"
-msgstr "Жоқ"
-
-#: ListItemsHelper.cpp:180
-msgid "Arabic"
-msgstr "Араб"
-
-#: ListItemsHelper.cpp:181
-msgid "Lower Alphabetical"
-msgstr "Кіші әріп"
-
-#: ListItemsHelper.cpp:182
-msgid "Upper Alphabetical"
-msgstr "Бас әріп"
-
-#: ListItemsHelper.cpp:183
-msgid "Lower Roman"
-msgstr "Кіші римдік"
-
-#: ListItemsHelper.cpp:184
-msgid "Upper Roman"
-msgstr "Үлкен римдік"
-
-#: ListItemsHelper.cpp:185
-msgid "Disc Bullet"
-msgstr "Дөңгелектермен таңбалау"
-
-#: ListItemsHelper.cpp:186
-msgid "Square Bullet"
-msgstr "Шаршылармен таңбалау"
-
-#: ListItemsHelper.cpp:187
-msgid "Box Bullet"
-msgstr "Төртбұрыштармен таңбалау"
-
-#: ListItemsHelper.cpp:188
-msgid "Rhombus Bullet"
-msgstr "Робтармен таңбалау"
-
-#: ListItemsHelper.cpp:189
-msgid "Circle Bullet"
-msgstr "Шеңберлермен таңбалау"
-
-#: ListItemsHelper.cpp:190
-msgid "Check Mark Bullet"
-msgstr "Құсбелілермен таңбалау"
-
-#: ListItemsHelper.cpp:191
-msgid "Ballot X Bullet"
-msgstr "Бюллетенді таңбалау"
-
-#: ListItemsHelper.cpp:192
-msgid "Rightwards Arrow Bullet"
-msgstr "Оң жебелермен таңбалау"
-
-#: ListItemsHelper.cpp:193
-msgid "Rightwards Arrow Head Bullet"
-msgstr "Оң жебе ұштарымен таңбалау"
-
-#: ListItemsHelper.cpp:200
-msgid "Bengali"
-msgstr "Бенгали"
-
-#: ListItemsHelper.cpp:201
-msgid "Gujarati"
-msgstr "Гуджарати"
-
-#: ListItemsHelper.cpp:202
-msgid "Gurumukhi"
-msgstr "Гурумухи"
-
-#: ListItemsHelper.cpp:203
-msgid "Kannada"
-msgstr "Каннада"
-
-#: ListItemsHelper.cpp:204
-msgid "Malayalam"
-msgstr "Малайям"
-
-#: ListItemsHelper.cpp:205
-msgid "Oriya"
-msgstr "Ория"
-
-#: ListItemsHelper.cpp:206
-msgid "Tamil"
-msgstr "Тамил"
-
-#: ListItemsHelper.cpp:207
-msgid "Telugu"
-msgstr "Телугу"
-
-#: ListItemsHelper.cpp:208
-msgid "Tibetan"
-msgstr "Тибеттік"
-
-#: ListItemsHelper.cpp:209
-msgid "Thai"
-msgstr "Тай"
-
-#: ListItemsHelper.cpp:210
-msgid "Abjad"
-msgstr "Абжад"
-
-#: ListItemsHelper.cpp:211
-msgid "AbjadMinor"
-msgstr "КішіАбжад"
-
-#: ListItemsHelper.cpp:212
-msgid "ArabicAlphabet"
-msgstr "Араб әліппесі"
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:17
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChangeConfigureDialog)
