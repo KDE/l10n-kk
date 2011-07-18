@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-07-05 05:36+0200\n"
-"PO-Revision-Date: 2011-07-18 04:11+0600\n"
+"PO-Revision-Date: 2011-07-18 05:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -161,7 +161,7 @@ msgstr "%1 ресурсы %2 - %3 аралығында қол жеткізеді
 
 #: kernel/kptaccount.cpp:796 models/kptresourcemodel.cpp:435
 msgid "Account"
-msgstr "Тіркелгі"
+msgstr "Есебі"
 
 #: kernel/kptglobal.cpp:30
 msgid "Deleted"
@@ -179,7 +179,7 @@ msgstr "Жоспарлаған"
 
 #: kernel/kptglobal.cpp:36
 msgid "Resource overbooked"
-msgstr "Дерек көзі түйіліп қалды"
+msgstr "Тым көп сұралған"
 
 #: kernel/kptglobal.cpp:38
 msgid "Resource not available"
@@ -1031,7 +1031,7 @@ msgstr ""
 #: models/kptnodeitemmodel.cpp:1497
 msgctxt "@info:tooltip"
 msgid "A resource has been overbooked"
-msgstr "Дерек көзі түйіліп қалды"
+msgstr "Тым көп ресурс сұралған"
 
 #: models/kptnodeitemmodel.cpp:1519
 msgctxt "@info:tooltip"
@@ -1081,7 +1081,7 @@ msgstr "%1 кезіне орындалған жұмыстың шын бағас�
 #: models/kptnodeitemmodel.cpp:1672
 #, kde-format
 msgid "Schedule Performance Index at %1: %2"
-msgstr "%1 кезіне жоспарды орындау көрсеткіші: %2"
+msgstr "%1 кезіндегі жоспарды орындау көрсеткіші: %2"
 
 #: models/kptnodeitemmodel.cpp:1715 models/kptnodeitemmodel.cpp:1750
 #: models/kptnodeitemmodel.cpp:1778
@@ -1302,7 +1302,7 @@ msgstr "Аяқтау резерві"
 #| msgid "Assigments"
 msgctxt "@title:column"
 msgid "Assignments"
-msgstr "Бөлінгендері"
+msgstr "Тағайындаулары"
 
 #: models/kptnodeitemmodel.cpp:1959
 #| msgid "Duration"
@@ -1398,70 +1398,60 @@ msgid "Status Note"
 msgstr "Күй-жай жазбасы"
 
 #: models/kptnodeitemmodel.cpp:1980
-#, fuzzy
 #| msgid "Scheduling Log"
 msgctxt "@title:column"
 msgid "Scheduling Status"
-msgstr "Жоспарлау журналы"
+msgstr "Жоспарлау күйі"
 
 #: models/kptnodeitemmodel.cpp:1981
-#, fuzzy
 #| msgid "Not scheduled"
 msgctxt "@title:column"
 msgid "Not Scheduled"
-msgstr "Жоспарланған жоқ"
+msgstr "Жоспарланбаған"
 
 #: models/kptnodeitemmodel.cpp:1982
-#, fuzzy
 #| msgid "Assigment Missing"
 msgctxt "@title:column"
 msgid "Assignment Missing"
-msgstr "Бөлінбеген"
+msgstr "Тағайындалмаған"
 
 #: models/kptnodeitemmodel.cpp:1983
-#, fuzzy
 #| msgid "Resource type:"
 msgctxt "@title:column"
 msgid "Resource Overbooked"
-msgstr "Ресурстың түрі:"
+msgstr "Тым көп ресурс сұралған"
 
 #: models/kptnodeitemmodel.cpp:1984
-#, fuzzy
 #| msgid "No project available"
 msgctxt "@title:column"
 msgid "Resource Unavailable"
-msgstr "Жоба жоқ"
+msgstr "Ресурс қол жеткізбейді"
 
 #: models/kptnodeitemmodel.cpp:1985
-#, fuzzy
 #| msgid "Constraints Error"
 msgctxt "@title:column"
 msgid "Constraints Error"
-msgstr "Белгілеу қатесі"
+msgstr "Шектеулер қатесі"
 
 #: models/kptnodeitemmodel.cpp:1986
-#, fuzzy
 #| msgid "Effort"
 msgctxt "@title:column"
 msgid "Effort Not Met"
-msgstr "Жұмыс көлемі"
+msgstr "Көтермейтін жұмыс көлемі"
 
 #: models/kptnodeitemmodel.cpp:1988
-#, fuzzy
 #| msgid "Code"
 msgctxt "@title:column"
 msgid "WBS Code"
-msgstr "Коды"
+msgstr "ЖЖҚ коды"
 
 #: models/kptnodeitemmodel.cpp:1989
-#, fuzzy
 #| msgid "Add Level"
 msgctxt "@title:column Node level"
 msgid "Level"
-msgstr "Деңгейі (%)"
+msgstr "Деңгейі"
 
 #: models/kptnodeitemmodel.cpp:1992
-#, fuzzy
 #| msgctxt "Budgeted Cost of Work Scheduled"
 #| msgid "BCWS"
 msgctxt "@title:column Budgeted Cost of Work Scheduled"
@@ -1469,7 +1459,6 @@ msgid "BCWS"
 msgstr "ЖЖБК"
 
 #: models/kptnodeitemmodel.cpp:1993
-#, fuzzy
 #| msgctxt "Budgeted Cost of Work Performed"
 #| msgid "BCWP"
 msgctxt "@title:column Budgeted Cost of Work Performed"
@@ -1477,7 +1466,6 @@ msgid "BCWP"
 msgstr "ОЖБК"
 
 #: models/kptnodeitemmodel.cpp:1994
-#, fuzzy
 #| msgctxt "Actual Cost of Work Performed"
 #| msgid "ACWP"
 msgctxt "@title:column Actual Cost of Work Performed"
@@ -1487,231 +1475,196 @@ msgstr "ОЖШБ"
 #. i18n: file: ui/kptperformancestatus.ui:152
 #. i18n: ectx: property (text), widget (QLabel, labelSPI)
 #: models/kptnodeitemmodel.cpp:1995 rc.cpp:309
-#, fuzzy
 #| msgid "SPI:"
 msgctxt "@title:column Schedule Performance Index"
 msgid "SPI"
-msgstr "ЖОК:"
+msgstr "ЖОК"
 
 #: models/kptnodeitemmodel.cpp:1996
-#, fuzzy
 #| msgid "Critical Path"
 msgctxt "@title:column"
 msgid "Critical"
-msgstr "Шешуші тізбек"
+msgstr "Шешуші"
 
 #: models/kptnodeitemmodel.cpp:1997
-#, fuzzy
 #| msgid "Critical Path"
 msgctxt "@title:column"
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
 #: models/kptnodeitemmodel.cpp:2000
-#, fuzzy
 #| msgid "Low"
 msgctxt "@title:column"
 msgid "Owner"
-msgstr "Төмен"
+msgstr "Иесі"
 
 #: models/kptnodeitemmodel.cpp:2002
-#, fuzzy
 #| msgid "Timezone"
 msgctxt "@title:column"
 msgid "Time"
-msgstr "Сағат белдеуі"
+msgstr "Уақыт"
 
 #: models/kptnodeitemmodel.cpp:2088
-#, fuzzy
 #| msgid "Work Package Control"
 msgctxt "@title:column"
 msgid "Work package owner"
-msgstr "Жұмыс дестесін басқару"
+msgstr "Жұмыс дестесінің иесі"
 
 #: models/kptnodeitemmodel.cpp:2089
-#, fuzzy
 #| msgid "Work Package Control"
 msgctxt "@title:column"
 msgid "Work package status"
-msgstr "Жұмыс дестесін басқару"
+msgstr "Жұмыс дестесінің күй-жайы"
 
 #: models/kptnodeitemmodel.cpp:2090
-#, fuzzy
 #| msgid "Work Package Control"
 msgctxt "@title:column"
 msgid "Work package send/receive time"
-msgstr "Жұмыс дестесін басқару"
+msgstr "Жұмыс дестесінің жіберу/қабылдау уақыты"
 
 #: models/kptnodeitemmodel.cpp:2446
-#, fuzzy
 #| msgid "Modify Task"
 msgid "Modify Name"
-msgstr "Тапсырманы өзгерту"
+msgstr "Атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2448
-#, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Task Name"
-msgstr "Тапсырманың бағасын өзгерту"
+msgstr "Тапсырманың атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2449
-#, fuzzy
 #| msgid "Modify milestone completion"
 msgid "Modify Milestone Name"
-msgstr "Кезеңді орындауды өзгерту"
+msgstr "Кезең атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2450
-#, fuzzy
 #| msgid "Modify Summary Task"
 msgid "Modify Summarytask Name"
-msgstr "Қортынды тапсырманы өзгерту"
+msgstr "Қортынды тапсырма атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2451
-#, fuzzy
 #| msgid "Project name"
 msgid "Modify Project Name"
-msgstr "Жобаның атауы"
+msgstr "Жобаның атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2467
-#, fuzzy
 #| msgid "Modify Task"
 msgid "Modify name"
-msgstr "Тапсырманы өзгерту"
+msgstr "Атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2469
-#, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify task name"
-msgstr "Тапсырманың бағасын өзгерту"
+msgstr "Тапсырманың атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2470
-#, fuzzy
 #| msgid "Modify milestone completion"
 msgid "Modify milestone name"
-msgstr "Кезеңді орындауды өзгерту"
+msgstr "Кезең атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2471
-#, fuzzy
 #| msgid "Modify Summary Task"
 msgid "Modify summarytask name"
-msgstr "Қортынды тапсырманы өзгерту"
+msgstr "Қортынды тапсырма атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2472
-#, fuzzy
 #| msgid "Modify main project"
 msgid "Modify project name"
-msgstr "Негізгі жобаны өзгерту"
+msgstr "Жобаның атауын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2498 models/kptnodeitemmodel.cpp:2507
 #: models/kptnodeitemmodel.cpp:2542 models/kptnodeitemmodel.cpp:2545
 #: ui/reports/reportview.cpp:926
-#, fuzzy
 #| msgid "&Resources"
 msgid "Resources"
-msgstr "&Ресурстар"
+msgstr "Ресурстар"
 
 #: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1271
-#, fuzzy
 #| msgid "Add Resource..."
 msgid "Add resource"
 msgstr "Ресурсты қосу..."
 
 #: models/kptnodeitemmodel.cpp:2519 ui/kptrequestresourcespanel.cpp:64
-#, fuzzy
 #| msgid "Modify Relation"
 msgid "Modify resource allocations"
-msgstr "Қатынасын өзгерту"
+msgstr "Ресурс бөлінуін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2689 models/kptnodeitemmodel.cpp:2693
-#, fuzzy
 #| msgid "Modify Weekday State"
 msgid "Modify estimate"
-msgstr "Апта күннің күйін өзгерту"
+msgstr "Болжамын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2757 models/kptnodeitemmodel.cpp:4144
-#, fuzzy
 #| msgid "Modify Running Account"
 msgid "Modify running account"
-msgstr "Жүріп жатқан есебін өзгерту"
+msgstr "Жүргізіп жатқан есебін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2777 models/kptnodeitemmodel.cpp:4164
-#, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify startup account"
-msgstr "Стандартты жұмыс уақытын өзгерту"
+msgstr "Бастапқы есебін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2792 models/kptnodeitemmodel.cpp:4179
-#, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify startup cost"
-msgstr "Тапсырманың бағасын өзгерту"
+msgstr "Бастапқы бағасын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2810 models/kptnodeitemmodel.cpp:4197
-#, fuzzy
 #| msgid "Modify Documents"
 msgid "Modify shutdown account"
-msgstr "Құжаттарды өзгерту"
+msgstr "Аяқтау есебін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2825 models/kptnodeitemmodel.cpp:4212
-#, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify shutdown cost"
-msgstr "Тапсырманың бағасын өзгерту"
+msgstr "Аяқтау бағасын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2841 models/kpttaskstatusmodel.cpp:383
-#, fuzzy, no-c-format
+#, no-c-format
 #| msgid "Modify task completion"
 msgid "Modify completion"
-msgstr "Тапсырманың бітіруін өзгерту"
+msgstr "Бітуін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2870 models/kpttaskstatusmodel.cpp:412
-#, fuzzy
 #| msgid "Finished"
 msgid "Set finished"
-msgstr "Аяқталған"
+msgstr "Аяқталған деу"
 
 #: models/kptnodeitemmodel.cpp:2891 models/kpttaskstatusmodel.cpp:433
-#, fuzzy
 #| msgid "Remaining Effort"
 msgid "Modify remaining effort"
-msgstr "Қалған жұмыс көлемі"
+msgstr "Қалған жұмыс көлемін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2904 models/kpttaskstatusmodel.cpp:446
-#, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify actual effort"
-msgstr "Тапсырманың бағасын өзгерту"
+msgstr "Іс жүзіндегі жұмыс көлемін өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2918 models/kpttaskstatusmodel.cpp:460
-#, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify actual start time"
-msgstr "Стандартты жұмыс уақытын өзгерту"
+msgstr "Шын басталуы уақытын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:2946 models/kpttaskstatusmodel.cpp:488
-#, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify actual finish time"
-msgstr "Стандартты жұмыс уақытын өзгерту"
+msgstr "Шын аяқтау уақытын өзгерту"
 
 #: models/kptnodeitemmodel.cpp:3253 models/kptnodeitemmodel.cpp:4469
-#, fuzzy
 #| msgid "Available tasks"
 msgid "Move tasks"
-msgstr "Бар тапсырмалары"
+msgstr "Тапсырмаларды жылжту"
 
 #: models/kptnodeitemmodel.cpp:3295 ui/kpttaskdialog.cpp:167
 #: ui/kpttaskdialog.cpp:204
-#, fuzzy
 #| msgid "Add Task..."
 msgid "Add task"
 msgstr "Тапсырманы қосу..."
 
 #: models/kptnodeitemmodel.cpp:3310 ui/kpttaskdialog.cpp:202
-#, fuzzy
 #| msgid "Add Sub-Task..."
 msgid "Add sub-task"
-msgstr "Бағыныңқы тапсырманы қосу..."
+msgstr "Тапсырманың саласын қосу..."
 
 #: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
 #: ui/kptresourceassignmentview.cpp:333
@@ -1739,36 +1692,32 @@ msgid "Tasks that are scheduled to start next period"
 msgstr "Келесі мезгілде басталуы жопарланған тапсырмалар"
 
 #: models/kptcalendarmodel.cpp:272
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Delete Account"
 #| msgid_plural "Delete %1 Accounts"
 msgctxt "1=calendar name"
 msgid "%1 (Default calendar)"
-msgstr "%1 есепті өшіру"
+msgstr "%1 (Әдетті күнтізбе)"
 
 #: models/kptcalendarmodel.cpp:289
-#, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify calendar name"
-msgstr "Күнтізбені өзгерту"
+msgstr "Күнтізбенің атауын өзгерту"
 
 #: models/kptcalendarmodel.cpp:297
-#, fuzzy
 #| msgid "Delete Selected Accounts"
 msgid "De-select as default calendar"
-msgstr "Таңдалған есептерін өшіру"
+msgstr "Әдетті күнтізбе болудан шығару"
 
 #: models/kptcalendarmodel.cpp:303
-#, fuzzy
 #| msgid "Delete Selected Accounts"
 msgid "Select as default calendar"
-msgstr "Таңдалған есептерін өшіру"
+msgstr "Әдетті күнтізбе қылу"
 
 #: models/kptcalendarmodel.cpp:361
-#, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify calendar timezone"
-msgstr "Күнтізбені өзгерту"
+msgstr "Күнтізбенің уақыт белдеуін өзгерту"
 
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
@@ -1784,31 +1733,27 @@ msgstr "Атауы"
 
 #: models/kptcalendarmodel.cpp:420
 msgid "Timezone"
-msgstr "Сағат белдеуі"
+msgstr "Уақыт белдеуі"
 
 #: models/kptcalendarmodel.cpp:508
-#, fuzzy
 #| msgid "Add Calendar"
 msgid "Re-parent calendar"
-msgstr "Күнтізбені қосу"
+msgstr "Күнтізбені реттеп шығу"
 
 #: models/kptcalendarmodel.cpp:511
-#, fuzzy
 #| msgid "Add Calendar"
 msgid "Move calendar"
-msgstr "Күнтізбені қосу"
+msgstr "Күнтізбені жыжыту"
 
 #: models/kptcalendarmodel.cpp:567
-#, fuzzy
 #| msgid "Add Calendar"
 msgid "Add calendar"
 msgstr "Күнтізбені қосу"
 
 #: models/kptcalendarmodel.cpp:590
-#, fuzzy
 #| msgid "Delete Selected Calendar"
 msgid "Delete calendar"
-msgstr "Таңдалған күнтізбені өшіру"
+msgstr "Күнтізбені өшіру"
 
 #: models/kptcalendarmodel.cpp:758
 msgctxt "Undefined"
@@ -1826,10 +1771,9 @@ msgid "W"
 msgstr "W"
 
 #: models/kptcalendarmodel.cpp:789
-#, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify calendar state"
-msgstr "Күнтізбені өзгерту"
+msgstr "Күнтізбенің күйін өзгерту"
 
 #: models/kptcalendarmodel.cpp:810 models/kptcalendarmodel.cpp:1020
 #, fuzzy, kde-format
@@ -1842,7 +1786,7 @@ msgstr "%1, %2 сағат"
 
 #: models/kptrelationmodel.cpp:147
 msgid "Child"
-msgstr "Еншілес"
+msgstr "Туынды"
 
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
@@ -1857,13 +1801,13 @@ msgstr "Түрі"
 #, fuzzy
 #| msgid "Lag:"
 msgid "Lag"
-msgstr "Кешігу:"
+msgstr "Аралығы"
 
 #: models/kptrelationmodel.cpp:352
 #, fuzzy
 #| msgid "Modify Relation"
 msgid "Modify relation time lag"
-msgstr "Қатынасын өзгерту"
+msgstr "Уақыт аралығын өзгерту"
 
 #: models/kptdocumentmodel.cpp:171
 msgid "Url"
@@ -1878,99 +1822,89 @@ msgid "Send As"
 msgstr "Былай сақтау"
 
 #: models/kptaccountsmodel.cpp:90
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Delete Account"
 #| msgid_plural "Delete %1 Accounts"
 msgctxt "1=account name"
 msgid "%1 (Default account)"
-msgstr "%1 есепті өшіру"
+msgstr "%1 (Әдетті есебі)"
 
 #: models/kptaccountsmodel.cpp:123 models/kptaccountsmodel.cpp:1023
 msgid "Description"
 msgstr "Сипаттамасы"
 
 #: models/kptaccountsmodel.cpp:322
-#, fuzzy
 #| msgid "Delete Selected Accounts"
 msgid "De-select as default account"
-msgstr "Таңдалған есептерін өшіру"
+msgstr "Әдетті есебі болудан шығару"
 
 #: models/kptaccountsmodel.cpp:328
-#, fuzzy
 #| msgid "Delete Selected Accounts"
 msgid "Select as default account"
-msgstr "Таңдалған есептерін өшіру"
+msgstr "Әдетті есебі қылу"
 
 #: models/kptaccountsmodel.cpp:423
-#, fuzzy
 #| msgid "Add Account"
 msgid "Add account"
 msgstr "Есебін қосу"
 
 #: models/kptaccountsmodel.cpp:441
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Delete Selected Accounts"
 msgid "Delete Account"
 msgid_plural "Delete %1 Accounts"
-msgstr[0] "Таңдалған есептерін өшіру"
+msgstr[0] "%1 есебін өшіру"
 
 #: models/kptaccountsmodel.cpp:832
 #, kde-format
 msgid "Actual total cost: %1, planned total cost: %2"
-msgstr ""
+msgstr "Шын қортынды бағасы: %1, жоспарлағаны: %2"
 
 #: models/kptaccountsmodel.cpp:1026
 #: models/kptresourceappointmentsmodel.cpp:909
 msgid "Total"
-msgstr "Барлығы"
+msgstr "Қортындысы"
 
 #: models/kptaccountsmodel.cpp:1055
-#, fuzzy
 #| msgid "The total cost for the account"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
-msgstr "Тіркелгі үшін жалпы сома"
+msgstr "Есебі бойынша қортынды бағасы: Шын бағасы [Жоспарлаған бағасы] дегені"
 
 #: models/kptcommonstrings.cpp:27
-#, fuzzy
 #| msgid "The name of the Task."
 msgctxt "@info:tooltip"
 msgid "The name of the task"
 msgstr "Тапсырманың атауы."
 
 #: models/kptcommonstrings.cpp:28
-#, fuzzy
 #| msgid "Task Progress"
 msgctxt "@info:tooltip"
 msgid "Task type"
-msgstr "Тапсырма барысы"
+msgstr "Тапсырманың түрі"
 
 #: models/kptcommonstrings.cpp:29
-#, fuzzy
 #| msgid "The responsible person for this task"
 msgctxt "@info:tooltip"
 msgid "The person responsible for this task"
 msgstr "Тапсырмаға жауапты тұлға"
 
 #: models/kptcommonstrings.cpp:30
-#, fuzzy
 #| msgid "Modify Relation"
 msgctxt "@info:tooltip"
 msgid "List of resource allocations"
-msgstr "Қатынасын өзгерту"
+msgstr "Бөлінген ресурс тізімі"
 
 #: models/kptcommonstrings.cpp:31
-#, fuzzy
 #| msgid "The timing constraint type"
 msgctxt "@info:tooltip"
 msgid "The timing constraint type"
 msgstr "Уақытын шектеу түрі"
 
 #: models/kptcommonstrings.cpp:32
-#, fuzzy
 #| msgid "Late start date"
 msgctxt "@info:tooltip"
 msgid "Constraint start time"
-msgstr "Бастау мерзімінің соңы"
+msgstr "Бастау мерзімінің шектеуі"
 
 #: models/kptcommonstrings.cpp:33
 #, fuzzy
