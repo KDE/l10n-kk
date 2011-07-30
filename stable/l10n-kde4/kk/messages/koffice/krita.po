@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-07-05 05:37+0200\n"
-"PO-Revision-Date: 2011-07-30 03:58+0600\n"
+"PO-Revision-Date: 2011-07-30 08:23+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -6724,7 +6724,6 @@ msgstr ""
 #. i18n: file: plugins/paintops/libpaintop/wdgincremental.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2815
-#, fuzzy
 msgid ""
 "<html>\n"
 "<p><b>Painting mode</b>: Krita offers a choice between two painting modes: "
@@ -6734,8 +6733,9 @@ msgid ""
 msgstr ""
 "<html>\n"
 "<p><b>Бояу режімі</b>: Krita екі бояу режімін ұсынады: <i>қосу</i> және "
-"<i>ауыстыру</i>. Біріншісі әрбір жаққан сайын бояуын қосады, екіншісі қайта-"
-"қайта жаққанда да бар түсті ауыстырып ғана жағады.</p></html>"
+"<i>ауыстыру</i>. Біріншісі әрбір жаққан сайын үстінен бояуын қосады, "
+"екіншісі қайта-қайта жаққанда да бар түсті өшіріп бояуын жаңадан "
+"жағады.</p></html>"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcoloroptions.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, colorPerParticleCHBox)
@@ -6825,7 +6825,7 @@ msgstr "Шошоқтары:"
 #. i18n: ectx: property (text), widget (QLabel, label_randomness)
 #: rc.cpp:2873
 msgid "Randomness:"
-msgstr "Кездейсоқ"
+msgstr "Кездейсоқтығы:"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgautobrush.ui:272
 #. i18n: ectx: property (text), widget (QLabel, label_8)
@@ -10941,7 +10941,7 @@ msgid ""
 msgstr ""
 "Бұл кіріс параметрі қаламмен жаққанда біртіндеп 0-ден 1-ге барады. Оны, "
 "жиыжығанда, бір мезгіл сайын, нөлге ысырлып тұратын қылып қоюға болады. "
-"'Жағу ұзақтығы' мен 'Жағып үстау уақыты' дегендерді қараңыз."
+"'жағу ұзақтығы' мен 'жағып үстау уақыты' дегендерді қараңыз."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:86
 msgid ""
@@ -10996,6 +10996,14 @@ msgid ""
 "1.0 the opaque value above is for the final brush stroke, assuming each "
 "pixel gets (dabs_per_radius*2) brushdabs on average during a stroke"
 msgstr ""
+"Бір бірінің үстінен жаққан кезде пайда болатын сызықсыздықты "
+"түзеу. Түзеткенде, қылқаламды басуы \"кәдімгідей\", яғні біркелкі, "
+"мөлдірсіздік коэффициентінен тәуелді, мөдірсіздік туғызады.  "
+"Бұған 0,9 әдетте жарайды, егер қылқаламыңыз шашырап жағатын "
+"болса - кішіретіңіз, \"жағым/сек\" параметрін қолдансаңыз - үлкейтіңіз.\n"
+"0,0 - бөлек жағымдар үшін қолданатың мән\n"
+"1,0-ден жоғарыны қылқалам ақырғы жағу әрекет жасағанда, жағу дағы "
+"(жағым дағы/2*радиус) пиксел шамасында деп ұйғарғанда қолданады"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:155
 msgid ""
@@ -11003,6 +11011,9 @@ msgid ""
 " 0.7 means 2 pixels\n"
 " 3.0 means 20 pixels"
 msgstr ""
+"қылқаламының негізгі радиусы (логарифмдік)\n"
+" 0,7 - мәні 2 пиксел дегені\n"
+" 3,0 - мәні 20 пиксел дегені"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
 msgid "hardness"
@@ -11014,29 +11025,30 @@ msgstr "дөнгелек қылқалам шетінің қаттылығы (н�
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
 msgid "dabs per basic radius"
-msgstr ""
+msgstr "жағым дақ/негізгі радиус"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
 msgid ""
 "how many dabs to draw while the pointer moves a distance of one brush radius "
 "(more precise: the base value of the radius)"
 msgstr ""
+"меңзер қылқаламының (негізгі) радиусына тең қашықтыққа жылжығанда "
+"қанша дақ салады"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
-#, fuzzy
 #| msgid "Vertical radius:"
 msgid "dabs per actual radius"
-msgstr "Тік радиусы:"
+msgstr "жағым дақ/шын радиус"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
 msgid ""
 "same as above, but the radius actually drawn is used, which can change "
 "dynamically"
-msgstr ""
+msgstr "жоғарғыдай, бірақ шын салған өзгермелі радиусы қолданыладыы"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:159
 msgid "dabs per second"
-msgstr "жағым/сек"
+msgstr "жағым дақ/сек"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:159
 msgid "dabs to draw each second, no matter how far the pointer moves"
@@ -11055,6 +11067,11 @@ msgid ""
 "transparent\n"
 "2) it will not change the actual radius seen by dabs_per_actual_radius"
 msgstr ""
+"Әрбір жағу дақтың радиусы кездейсоқ қылу. Бұны кездейсоқ кіріс "
+"параметрімен де істеуге болады. Онда екі айырмашылық болады:\n"
+"1) мөлдірсіздік мәні үлкен радиусты дақтар мөлдірлеу қылып "
+"салынатындай өзгереді "
+"2)\" жағым дақ/шын радиус\" параметрі өзгермейді"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:161
 msgid "speed1 filter"
@@ -11065,6 +11082,9 @@ msgid ""
 "how slowly the input speed1 follows the real speed.\n"
 "0.0 changes immediately as your speed changes (not recommended, but try it.)"
 msgstr ""
+"кіріс жылдамдығы шын жылдамдылығына қаншалықты кідіріп еріп отыратыны\n"
+"0,0 -  жылдамығыңыз өзгергеннен кейін, бірден (жөнді емес, бірақ істеп "
+"көріңіз)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:162
 msgid "speed2 filter"
@@ -11072,11 +11092,11 @@ msgstr "speed2 сүзгісі"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:162
 msgid "same as 'speed1 slowness' but note that the range is different"
-msgstr ""
+msgstr "'speed1' секілді. бірақ ауықымы басқа"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:163
 msgid "speed1 gamma"
-msgstr ""
+msgstr "speed1 gamma"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:163
 msgid ""
@@ -11086,14 +11106,19 @@ msgid ""
 "+8.0 very fast speed increases speed1 a lot\n"
 "For very slow speed the opposite happens."
 msgstr ""
+"speed1 сүзгінің өте тез қимылға жауабын өзгерту. speed1 радиуспен "
+"байланысты болғанда өзгерісі әсіресе айқын.\n"
+"-8.0 өте тез қимыл speed1-ді онша жылдамдатпайды\n"
+"+8.0 өте тез қимыл speed1-ді де өте жылдамдатады\n"
+"Өте баяу қимыл керсінше әсер етеді."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
 msgid "speed2 gamma"
-msgstr ""
+msgstr "speed2 gamma"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
 msgid "same as 'speed1 gamma' for speed2"
-msgstr ""
+msgstr "'speed1 gamma' секілді, бірақ speed2 үшін"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
 msgid "jitter"
@@ -11106,10 +11131,14 @@ msgid ""
 " 1.0 standard deviation is one basic radius away\n"
 "<0.0 negative values produce no jitter"
 msgstr ""
+"әрбір дақты салғанда оны кездейсоқ ығыстыру\n"
+" 0.0 - етпеу\n"
+" 1.0 - стандартты ауытқуы бір негізгі радиусына тең\n"
+"<0.0 - теріс мәндер дірілді тудырмайды"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
 msgid "offset by speed"
-msgstr ""
+msgstr "жылдамдықтан ығысуы"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
 msgid ""
@@ -11117,47 +11146,58 @@ msgid ""
 "= 0 disable\n"
 "> 0 draw where the pointer moves to\n"
 "< 0 draw where the pointer comes from"
-msgstr "жылдамдықтан ығысу"
+msgstr ""
+"ығысуының меңзердің жылдамдығынанан тәуелдігі\n"
+"= 0 жоқ\n"
+"> 0 меңзердің жылжу бағыты бойынша\n"
+"< 0 меңзердің жылжу бағытына кері"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
 msgid "offset by speed filter"
-msgstr ""
+msgstr "жылдамдықтан ығысу сүзгісі"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
 msgid "how slow the offset goes back to zero when the cursor stops moving"
-msgstr ""
+msgstr "меңзер тоқтағанда ығысуы қаншалықты кідіріп нөлге түседі"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
 msgid "slow position tracking"
-msgstr ""
+msgstr "қимылды басу"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
 msgid ""
 "Slowdown pointer tracking speed. 0 disables it, higher values remove more "
 "jitter in cursor movements. Useful for drawing smooth, comic-like outlines."
 msgstr ""
+"Меңзердің қимылын басу. 0 - мүлдем баспайды, одан жоғарысы "
+"меңзер жылжығанда дірілін басады. Тегіс суреттерді салғанда "
+"ыңғайлы."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
 msgid "slow tracking per dab"
-msgstr ""
+msgstr "қимылды басу/жағу даққа"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
 msgid ""
 "Similar as above but at brushdab level (ignoring how much time has past, if "
 "brushdabs do not depend on time)"
 msgstr ""
+"Жоғарғыдай, бірақ қылқалам жағу дағы үшін (қылқалам жағу дағы "
+"уақыттан тәуелді емес болса,.өткен шағы есепке алынбайды)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
-#, fuzzy
 #| msgid "interacting with"
 msgid "tracking noise"
-msgstr "келесімен әрекеттесіп"
+msgstr "меңзер жылжу дірілі"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
 msgid ""
 "add randomness to the mouse pointer; this usually generates many small lines "
 "in random directions; maybe try this together with 'slow tracking'"
 msgstr ""
+"меңзерге кездейсоқ жылжу дірілін қосады; жан жаққа бағытталған "
+"қысқа сызықтарды салады; \"қимылды басумен\" бірге қолданып "
+"көріңіз"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
 msgid "color hue"
@@ -11264,7 +11304,7 @@ msgstr ""
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
 msgid "smudge"
-msgstr ""
+msgstr "жуықтау"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
 msgid ""
@@ -11274,10 +11314,15 @@ msgid ""
 " 0.5 mix the smudge color with the brush color\n"
 " 1.0 use only the smudge color"
 msgstr ""
+"Қылқалам түсінің орнына жуық түсімен салу. Жуықтау түсті сәл "
+"ғана өзгертеді.\n"
+" 0,0 - түсті жуықтамау\n"
+" 0,5 - жуық түсті қылқалам түсімен араластыру "
+" 1,0 - тек жуық түсті ғана қолдану"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
 msgid "smudge length"
-msgstr ""
+msgstr "жуықтау ұзақтығы"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
 msgid ""
@@ -11286,6 +11331,9 @@ msgid ""
 "0.0 immediately change the smudge color\n"
 "1.0 never change the smudge color"
 msgstr ""
+"Бұл жуық түсі қаншалықты тез қылқалам түсіне келетінін анықтауы\n"
+"0,0 - бірден жуықтау "
+"1,0 - ешқашанда келмейді"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
 #| msgid "Pixel Eraser"
@@ -11299,36 +11347,41 @@ msgid ""
 " 1.0 standard eraser\n"
 " 0.5 pixels go towards 50% transparency"
 msgstr ""
+"Құралдың өшіргіш касиеті деңгейі\n"
+"0,0 - мүлдем жоқ\n"
+"1,0 - толық өшіргіш\n"
+"0,5 - пикселді 50% мөлдір қылатын"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
-#, fuzzy
 #| msgid "Threshold"
 msgid "stroke threshold"
-msgstr "Табалдырық"
+msgstr "басу табалдырығы"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
 msgid ""
 "How much pressure is needed to start a stroke. This affects the stroke input "
 "only. Mypaint does not need a minimal pressure to start drawing."
 msgstr ""
+"Жағуды бастау үшін қаншалықты басу керегін анықтауы. Тек қана жағу "
+"режіміне әсер етеді. Mypaint-пен салу үшін басу керегі жоқ."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
-#, fuzzy
 #| msgid "Saturation"
 msgid "stroke duration"
-msgstr "Қанықты"
+msgstr "жағу ұзақтығы"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
 msgid ""
 "How far you have to move until the stroke input reaches 1.0. This value is "
 "logarithmic (negative values will not invert the process)."
 msgstr ""
+"Жағу сызығы 1,0 мәнге қай ұзақтықта келетінің анықтауы. Бұл "
+"логарифмдік өлшем (теріс мәні істі кері қылмайды)."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
-#, fuzzy
 #| msgid "Ask each time"
 msgid "stroke hold time"
-msgstr "Әрбірде сұралсын"
+msgstr "жағып үстау уақыты"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
 msgid ""
@@ -11337,11 +11390,16 @@ msgid ""
 "finished.\n"
 "2.0 means twice as long as it takes to go from 0.0 to 1.0\n"
 "9.9 and bigger stands for infinite"
-msgstr "ы"
+msgstr ""
+"Бұл, жағу әрекет кірісі қаншалықты 1,0 күйінде болатынын "
+"анықтауы. Бұдан кейін, жағу әрекеті бітпесе де, ол 0.0-ге түсіп "
+"қайта өсе бастайды.\n"
+"2,0 - деген 0,0-ден 1,0-ге дейігіден екі есе ұзақ дегені\n"
+"9,9 және одан артығы - шексіз ұзақ дегені "
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:187
 msgid "custom input"
-msgstr "Өзгеше кірісі"
+msgstr "өзгеше кірісі"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:187
 msgid ""
@@ -11404,6 +11462,8 @@ msgid ""
 "a low value will make the direction input adapt more quickly, a high value "
 "will make it smoother"
 msgstr ""
+"мәні шағын болса - бағыт өзгерісі тез атқарылады, үлкен болса - "
+"біртіндеп өзгереді"
 
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:46
 msgid "Chalk brush"
