@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 02:05+0200\n"
+"POT-Creation-Date: 2011-08-14 02:04+0200\n"
 "PO-Revision-Date: 2011-08-02 08:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -74,10 +74,12 @@ msgstr "PNG экспорттау параметрлері"
 #: kchart/svg/svgexport.cc:88 kformula/latex/latexexport.cc:74
 #: kformula/png/pngexportdia.cc:248 kformula/svg/svgexport.cc:94
 #: libdialogfilter/exportsizedia.cpp:268
+#: stage/genericimageexport/genericimageexport.cpp:134
 msgid "Failed to write file."
 msgstr "Файлды жазу қатесі."
 
 #: kchart/genericimageexport/genericimageexport.cpp:123
+#: stage/genericimageexport/genericimageexport.cpp:135
 #, kde-format
 msgid "%1 Export Error"
 msgstr "%1 экспорттау қатесі"
@@ -162,6 +164,8 @@ msgstr "Биіктігі (%):"
 #: words/docx/DocxXmlSettingsReader.cpp:87
 #: words/docx/DocxXmlDocumentReader.cpp:194
 #: words/docx/DocxXmlFontTableReader.cpp:89
+#: stage/pptx/PptxXmlDocumentReader.cpp:153
+#: stage/pptx/PptxXmlSlideReader.cpp:307
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "\"%1\" атаулар кеңістігі табылмады"
@@ -460,6 +464,7 @@ msgid "Declared number of shared strings too small (%1)"
 msgstr "Жарияланған ортқ мәтін жолданының саны тым аз (%1)"
 
 #: tables/xlsx/XlsxImport.cpp:571 words/docx/DocxImport.cpp:168
+#: stage/pptx/PptxImport.cpp:1100
 #, kde-format
 msgid "Unable to find part for type %1"
 msgstr "%1 түрінің бөлшегі табылмады"
@@ -705,6 +710,20 @@ msgstr "Құжатты ашу"
 #: xsltfilter/import/xsltimportdia.cc:56
 msgid "Import XSLT Configuration"
 msgstr "XSLT импорт баптаулары"
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:288
+#, kde-format
+msgid "Slide layout \"%1\" not found"
+msgstr "\"%1\" слайд пішімі табылмады"
+
+#: stage/pptx/PptxXmlSlideReader.cpp:552
+#, kde-format
+msgid "Slide %1"
+msgstr "%1 слайды"
+
+#: stage/words/kprkword.cc:99 stage/words/odp2odt.cpp:287
+msgid "Slide Title"
+msgstr "Слайдтың атауы"
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -1738,15 +1757,6 @@ msgstr "Дербес xslt файлдары"
 #: rc.cpp:649 rc.cpp:667
 msgid "Choose..."
 msgstr "Таңдау..."
-
-#~ msgid "Slide layout \"%1\" not found"
-#~ msgstr "\"%1\" слайд пішімі табылмады"
-
-#~ msgid "Slide %1"
-#~ msgstr "%1 слайды"
-
-#~ msgid "Slide Title"
-#~ msgstr "Слайдтың атауы"
 
 #~ msgid "Note \"%1\" already exists"
 #~ msgstr "\"%1\" деген жазба бар екен"
