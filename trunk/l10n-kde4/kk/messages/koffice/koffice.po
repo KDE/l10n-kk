@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2011-08-03 06:35+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -50,6 +50,14 @@ msgstr "Белсенді құрал: %1"
 msgid "Paste Shapes"
 msgstr "Қалыптарды орналастыру"
 
+#: flake/commands/KShapeGroupCommand.cpp:107
+msgid "Group Shapes"
+msgstr "Қалыптарды топтастыру"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+msgid "Add Shapes to Group"
+msgstr "Қалыпты топқа қосу"
+
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 msgid "Break Subpath"
 msgstr "Ішкі сүрлеуін үзу"
@@ -79,14 +87,6 @@ msgstr "Шегін орнату"
 #: flake/commands/KShapeDistributeCommand.cpp:128
 msgid "Distribute Shapes"
 msgstr "Қалыптарды үлестіру"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-msgid "Group Shapes"
-msgstr "Қалыптарды топтастыру"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-msgid "Add Shapes to Group"
-msgstr "Қалыпты топқа қосу"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 msgid "Move Shapes"
@@ -222,10 +222,6 @@ msgstr "Сүрлеуді өңдеу құралы"
 msgid "Zoom"
 msgstr "Ұлғайту/кішірейту"
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "Сүрлеуді салу"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr "Жабысу"
@@ -237,6 +233,10 @@ msgstr "Жабысу бұрышының аттамы"
 #: flake/tools/KCreatePathTool.cpp:380
 msgid "Angle Constraints"
 msgstr "Бұрыш шектеулері"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "Сүрлеуді салу"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 msgid "Change Segment"
@@ -450,16 +450,6 @@ msgstr "Скрипт"
 msgid "Collection"
 msgstr "Жинаққа"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, kde-format
-msgid "Slide %1"
-msgstr "%1-слайд"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, kde-format
-msgid "Page %1"
-msgstr "%1-бет"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "Құжат"
@@ -561,30 +551,15 @@ msgstr "Көшіріп алу"
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, kde-format
-msgid "Page  %1"
+msgid "Slide %1"
+msgstr "%1-слайд"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, kde-format
+msgid "Page %1"
 msgstr "%1-бет"
-
-#: kopageapp/KoPADocumentModel.cpp:167
-msgid "Group"
-msgstr "Тобы"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-msgid "Shape"
-msgstr "Қалып"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-msgid "Visible"
-msgstr "Көрінетін"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-msgid "Locked"
-msgstr "Бұғатталған"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-msgid "Reparent shapes"
-msgstr "Қалыптарды қайта еншілеу"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 msgid "Change master slide"
@@ -812,6 +787,31 @@ msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Бетт(терд)і орналастыру"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, kde-format
+msgid "Page  %1"
+msgstr "%1-бет"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+msgid "Group"
+msgstr "Тобы"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+msgid "Shape"
+msgstr "Қалып"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+msgid "Visible"
+msgstr "Көрінетін"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+msgid "Locked"
+msgstr "Бұғатталған"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+msgid "Reparent shapes"
+msgstr "Қалыптарды қайта еншілеу"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -850,21 +850,6 @@ msgstr "Төменде қатарды ендіру"
 msgid "Insert Row Above"
 msgstr "Жоғарда қатарды ендіру"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Жоқ"
-
-#: kotext/KoText.cpp:46
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Жалғыз"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Қосарлы"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -886,11 +871,20 @@ msgstr[0] "%1 ауыстыру жасалды"
 msgid "Replace %1 with %2?"
 msgstr "%2 деген %1 дегенді ауыстырсын ба?"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
-msgid "Format"
-msgstr "Пішімі"
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Жоқ"
+
+#: kotext/KOdfText.cpp:46
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Жалғыз"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Қосарлы"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -911,6 +905,12 @@ msgstr "Сілтейтін индексін таңдау"
 #, kde-format
 msgid "%1 Options"
 msgstr "%1 параметрі"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+msgid "Format"
+msgstr "Пішімі"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -2770,6 +2770,40 @@ msgstr "Палитра"
 msgid "Add/Remove Colors"
 msgstr "Түстерді қосу/кетіру"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+msgid "Left Edge:"
+msgstr "Сол жақ шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+msgid "Right Edge:"
+msgstr "Оң жақ шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+msgid "Binding Edge:"
+msgstr "Түбтеу шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:183
+msgid "Page Edge:"
+msgstr "Беттің шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+msgid "Facing Pages:"
+msgstr "Беттер ашылымы:"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+msgid "Facing pages"
+msgstr "Беттер ашылымы"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+msgid "Page Layout:"
+msgstr "Орналасуы:"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+msgid "Page spread"
+msgstr "Бет жайлымы"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "Орналасуы"
@@ -2812,40 +2846,6 @@ msgstr "Тандағанды ұғайту"
 #: widgets/KoZoomAction.cpp:279
 msgid "Zoom to All"
 msgstr "Барлығын ұғайту"
-
-#: widgets/KoPageLayoutWidget.cpp:178
-msgid "Left Edge:"
-msgstr "Сол жақ шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-msgid "Right Edge:"
-msgstr "Оң жақ шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-msgid "Binding Edge:"
-msgstr "Түбтеу шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:183
-msgid "Page Edge:"
-msgstr "Беттің шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-msgid "Facing Pages:"
-msgstr "Беттер ашылымы:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-msgid "Facing pages"
-msgstr "Беттер ашылымы"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-msgid "Page Layout:"
-msgstr "Орналасуы:"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-msgid "Page spread"
-msgstr "Бет жайлымы"
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"
