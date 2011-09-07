@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-06 02:29+0200\n"
+"POT-Creation-Date: 2011-09-07 02:17+0200\n"
 "PO-Revision-Date: 2011-08-02 09:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2126,7 +2126,7 @@ msgstr "Назар ауысу тәтібі"
 msgid "Margin"
 msgstr "Жиек"
 
-#: formeditor/form.cpp:455
+#: formeditor/form.cpp:455 plugins/forms/kexidbfactorybase.cpp:66
 msgid "Read Only"
 msgstr "Тек оқу үшін"
 
@@ -3178,7 +3178,7 @@ msgstr "<qt><b>%1</b> деректер қоры серверіне қосылу 
 msgid "Number"
 msgstr "Сан"
 
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:346
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:345
 #: widget/utils/kexicontextmenuutils.cpp:293
 msgid "Image"
 msgstr "Кескін"
@@ -5880,34 +5880,60 @@ msgctxt "Unbound Image Box"
 msgid "(unbound)"
 msgstr "(байланыстырылмаған)"
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:41
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:40
 msgid "Map Browser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:42
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "mapBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:44
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
 msgid "Displays an interactive map."
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:39
 msgid "Web Browser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:43
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "webBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:44
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:42
 msgid "Web widget with browsing features."
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:46
+#, fuzzy
+#| msgid "Zoom Out"
+msgid "Zoom Factor"
+msgstr "Кішірейту"
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:47
+msgid "Url"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:43
+msgid "Back"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:44
+msgid "Forward"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:45
+msgid "Reload"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:46
+msgid "Stop"
 msgstr ""
 
 #: plugins/forms/kexiformpart.cpp:85
@@ -6039,7 +6065,7 @@ msgstr "\"%1\" пішіннің құрылымы өзгертілген."
 msgid "Form \"%1\" already exists."
 msgstr "\"%1\" деген пішін бар екен."
 
-#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactory.cpp:312
+#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactorybase.cpp:61
 msgid "Data Source"
 msgstr "Деректер көзі"
 
@@ -6047,12 +6073,62 @@ msgstr "Деректер көзі"
 msgid "Widgets"
 msgstr "Виджеттер"
 
-#: plugins/forms/kexidbfactory.cpp:84 plugins/forms/kexiformview.cpp:252
+#: plugins/forms/kexiformview.cpp:252 plugins/forms/kexidbfactory.cpp:84
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "form"
 msgstr "form"
+
+#: plugins/forms/kexiformview.cpp:1250
+msgid "Insert AutoField widget"
+msgstr "Автоөріс виджетін ендіру"
+
+#: plugins/forms/kexiformview.cpp:1250
+#, kde-format
+msgid "Insert %1 AutoField widgets"
+msgstr "%1 автоөріс виджетін ендіру"
+
+#: plugins/forms/kexiformmanager.cpp:164
+msgid "Connect Signals/Slots"
+msgstr "Сигнал/слотарды байланыстыру"
+
+#: plugins/forms/kexiformmanager.cpp:174
+msgid "Pointer"
+msgstr "Көрсеткіш"
+
+#: plugins/forms/kexiformmanager.cpp:182
+msgid "Snap to Grid"
+msgstr "Торға келтіру"
+
+#: plugins/forms/kexiformmanager.cpp:190
+msgid "Style"
+msgstr "Стиль"
+
+#: plugins/forms/kexiformmanager.cpp:210
+msgid "Set the current view style."
+msgstr "Қолданыстағы көрініс стилін орнату"
+
+#: plugins/forms/kexiformmanager.cpp:219
+msgid "Show Form UI Code"
+msgstr "Интерфейс пішіннің коды"
+
+#: plugins/forms/kexiformmanager.cpp:404
+#, kde-format
+msgid "Set Form's Data Source to \"%1\""
+msgstr "Пішіннің деректер көзі \"%1\" деп қою"
+
+#: plugins/forms/kexiformmanager.cpp:484
+msgid "Form's UI Code"
+msgstr "Интерфейс пішіннің коды"
+
+#: plugins/forms/kexiformmanager.cpp:488
+msgid "Current"
+msgstr "Қазіргі"
+
+#: plugins/forms/kexiformmanager.cpp:495
+msgid "Original"
+msgstr "Түпнұсқа"
 
 #: plugins/forms/kexidbfactory.cpp:85
 msgid "A data-aware form widget"
@@ -6136,64 +6212,64 @@ msgstr "Батырма"
 msgid "A button for executing actions"
 msgstr "Әрекетті орындайтын батырмасы"
 
-#: plugins/forms/kexidbfactory.cpp:313
+#: plugins/forms/kexidbfactory.cpp:312
 msgid "Form Name"
 msgstr "Пішіннің атауы"
 
-#: plugins/forms/kexidbfactory.cpp:314
+#: plugins/forms/kexidbfactory.cpp:313
 msgid "On Click"
 msgstr "Түрткенде"
 
-#: plugins/forms/kexidbfactory.cpp:315
+#: plugins/forms/kexidbfactory.cpp:314
 msgid "On Click Option"
 msgstr "Түрткенде"
 
-#: plugins/forms/kexidbfactory.cpp:316
+#: plugins/forms/kexidbfactory.cpp:315
 msgid "Auto Tab Order"
 msgstr "Виджеттерді аралау реті"
 
-#: plugins/forms/kexidbfactory.cpp:317
+#: plugins/forms/kexidbfactory.cpp:316
 msgid "Shadow Enabled"
 msgstr "Көлеңкесі"
 
-#: plugins/forms/kexidbfactory.cpp:318
+#: plugins/forms/kexidbfactory.cpp:317
 msgctxt "On: button"
 msgid "On"
 msgstr "Болсын"
 
-#: plugins/forms/kexidbfactory.cpp:320
+#: plugins/forms/kexidbfactory.cpp:319
 msgid "Editor Type"
 msgstr "Өңдегіштің түрі"
 
-#: plugins/forms/kexidbfactory.cpp:322
+#: plugins/forms/kexidbfactory.cpp:321
 msgctxt "AutoField editor's type"
 msgid "Auto"
 msgstr "Авто"
 
-#: plugins/forms/kexidbfactory.cpp:330
+#: plugins/forms/kexidbfactory.cpp:329
 msgctxt "AutoField editor's type"
 msgid "Multiline Text"
 msgstr "Көпжолды мәтін"
 
-#: plugins/forms/kexidbfactory.cpp:331
+#: plugins/forms/kexidbfactory.cpp:330
 msgctxt "AutoField editor's type"
 msgid "Drop-Down List"
 msgstr "Ашылмалы тізімі"
 
-#: plugins/forms/kexidbfactory.cpp:332
+#: plugins/forms/kexidbfactory.cpp:331
 msgctxt "AutoField editor's type"
 msgid "Image"
 msgstr "Кескін"
 
-#: plugins/forms/kexidbfactory.cpp:335
+#: plugins/forms/kexidbfactory.cpp:334
 msgid "Auto Label"
 msgstr "Авто жарлық"
 
-#: plugins/forms/kexidbfactory.cpp:336
+#: plugins/forms/kexidbfactory.cpp:335
 msgid "Label Text Color"
 msgstr "Жарлық жазуының түсі"
 
-#: plugins/forms/kexidbfactory.cpp:338
+#: plugins/forms/kexidbfactory.cpp:337
 msgctxt "(a property name, keep the text narrow!)"
 msgid ""
 "Label Background\n"
@@ -6202,48 +6278,44 @@ msgstr ""
 "Жарлық\n"
 "аясының түсі"
 
-#: plugins/forms/kexidbfactory.cpp:340
+#: plugins/forms/kexidbfactory.cpp:339
 msgid "Label Position"
 msgstr "Жарлықтың орны"
 
-#: plugins/forms/kexidbfactory.cpp:341
+#: plugins/forms/kexidbfactory.cpp:340
 msgctxt "Label Position"
 msgid "Left"
 msgstr "Сол жағынан"
 
-#: plugins/forms/kexidbfactory.cpp:342
+#: plugins/forms/kexidbfactory.cpp:341
 msgctxt "Label Position"
 msgid "Top"
 msgstr "Жоғарында"
 
-#: plugins/forms/kexidbfactory.cpp:343
+#: plugins/forms/kexidbfactory.cpp:342
 msgctxt "Label Position"
 msgid "No Label"
 msgstr "Жазуысыз"
 
-#: plugins/forms/kexidbfactory.cpp:345
+#: plugins/forms/kexidbfactory.cpp:344
 msgid "Size"
 msgstr "Өлшемі"
 
-#: plugins/forms/kexidbfactory.cpp:347
+#: plugins/forms/kexidbfactory.cpp:346
 msgid "Scaled Contents"
 msgstr "Масштабтайтын мазмұн"
 
-#: plugins/forms/kexidbfactory.cpp:348
+#: plugins/forms/kexidbfactory.cpp:347
 msgctxt "Smoothing when contents are scaled"
 msgid "Smoothing"
 msgstr "Тегістеу"
 
-#: plugins/forms/kexidbfactory.cpp:349
+#: plugins/forms/kexidbfactory.cpp:348
 msgctxt "Keep Aspect Ratio (short)"
 msgid "Keep Ratio"
 msgstr "Ара қатынасын сақтап"
 
-#: plugins/forms/kexidbfactory.cpp:356
-msgid "Frame Color"
-msgstr "Қоршау түсі"
-
-#: plugins/forms/kexidbfactory.cpp:359
+#: plugins/forms/kexidbfactory.cpp:357
 msgctxt ""
 "Drop-Down Button for Image Box Visible (a property name, keep the text "
 "narrow!)"
@@ -6252,83 +6324,37 @@ msgid ""
 "Button Visible"
 msgstr "Көрінетін батырмасы "
 
-#: plugins/forms/kexidbfactory.cpp:362
+#: plugins/forms/kexidbfactory.cpp:360
 msgctxt "Tristate checkbox, default"
 msgid "Default"
 msgstr "Әдетті"
 
-#: plugins/forms/kexidbfactory.cpp:363
+#: plugins/forms/kexidbfactory.cpp:361
 msgctxt "Tristate checkbox, yes"
 msgid "Yes"
 msgstr "Иә"
 
-#: plugins/forms/kexidbfactory.cpp:364
+#: plugins/forms/kexidbfactory.cpp:362
 msgctxt "Tristate checkbox, no"
 msgid "No"
 msgstr "Жоқ"
 
-#: plugins/forms/kexidbfactory.cpp:367
+#: plugins/forms/kexidbfactory.cpp:365
 msgctxt "Editable combobox"
 msgid "Editable"
 msgstr "Өңдеулі"
 
-#: plugins/forms/kexidbfactory.cpp:452
+#: plugins/forms/kexidbfactory.cpp:450
 msgid "&Image"
 msgstr "&Кескін"
 
-#: plugins/forms/kexidbfactory.cpp:474
+#: plugins/forms/kexidbfactory.cpp:472
 msgid "&Assign Action..."
 msgstr "&Амалын тағайындау..."
 
-#: plugins/forms/kexiformview.cpp:1250
-msgid "Insert AutoField widget"
-msgstr "Автоөріс виджетін ендіру"
-
-#: plugins/forms/kexiformview.cpp:1250
-#, kde-format
-msgid "Insert %1 AutoField widgets"
-msgstr "%1 автоөріс виджетін ендіру"
-
-#: plugins/forms/kexiformmanager.cpp:164
-msgid "Connect Signals/Slots"
-msgstr "Сигнал/слотарды байланыстыру"
-
-#: plugins/forms/kexiformmanager.cpp:174
-msgid "Pointer"
-msgstr "Көрсеткіш"
-
-#: plugins/forms/kexiformmanager.cpp:182
-msgid "Snap to Grid"
-msgstr "Торға келтіру"
-
-#: plugins/forms/kexiformmanager.cpp:190
-msgid "Style"
-msgstr "Стиль"
-
-#: plugins/forms/kexiformmanager.cpp:210
-msgid "Set the current view style."
-msgstr "Қолданыстағы көрініс стилін орнату"
-
-#: plugins/forms/kexiformmanager.cpp:219
-msgid "Show Form UI Code"
-msgstr "Интерфейс пішіннің коды"
-
-#: plugins/forms/kexiformmanager.cpp:404
-#, kde-format
-msgid "Set Form's Data Source to \"%1\""
-msgstr "Пішіннің деректер көзі \"%1\" деп қою"
-
-#: plugins/forms/kexiformmanager.cpp:484
-msgid "Form's UI Code"
-msgstr "Интерфейс пішіннің коды"
-
-#: plugins/forms/kexiformmanager.cpp:488
-msgid "Current"
-msgstr "Қазіргі"
-
-#: plugins/forms/kexiformmanager.cpp:495
-msgid "Original"
-msgstr "Түпнұсқа"
+#: plugins/forms/kexidbfactorybase.cpp:64
+msgid "Frame Color"
+msgstr "Қоршау түсі"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:65
 msgid "Copy"
