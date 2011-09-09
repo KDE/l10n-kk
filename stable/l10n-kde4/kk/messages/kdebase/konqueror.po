@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-25 11:07+0200\n"
+"POT-Creation-Date: 2011-09-09 11:27+0200\n"
 "PO-Revision-Date: 2011-06-25 06:10+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -26,6 +26,11 @@ msgstr ""
 "\n"
 "\n"
 
+#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
+#: src/konqmainwindow.cpp:5074
+msgid "no name"
+msgstr "атауы жоқ"
+
 #: src/konqextensionmanager.cpp:54
 msgctxt "@title:window"
 msgid "Configure"
@@ -35,11 +40,6 @@ msgstr "Баптау"
 #: src/konqextensionmanager.cpp:78
 msgid "Extensions"
 msgstr "Қеңейтулер"
-
-#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
-#: src/konqmainwindow.cpp:5074
-msgid "no name"
-msgstr "атауы жоқ"
 
 #: src/konqfactory.cpp:90
 #, kde-format
@@ -347,6 +347,26 @@ msgstr "%1/сек"
 msgid "Stalled"
 msgstr "Байланыс жоғалды"
 
+#: src/konqguiclients.cpp:66
+#, kde-format
+msgid "Preview &in %1"
+msgstr "%1 &дегенде қарау"
+
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "%1 дегенді көрсету"
+
+#: src/konqhistorydialog.cpp:45
+msgctxt "@title:window"
+msgid "History"
+msgstr "Журнал"
+
+#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Реттеу"
+
 #: src/konqhistorymodel.cpp:137
 #, kde-format
 msgid ""
@@ -403,11 +423,6 @@ msgstr "&Күні бойынша"
 msgid "Search in history"
 msgstr "Журналда іздеу"
 
-#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Реттеу"
-
 #: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
 msgid "Do you really want to clear the entire history?"
 msgstr "Бүкіл журналды тазалағыңыз келгені рас па?"
@@ -416,118 +431,6 @@ msgstr "Бүкіл журналды тазалағыңыз келгені рас
 msgctxt "@title:window"
 msgid "Clear History?"
 msgstr "Журнал тазалансын ба?"
-
-#: src/konqtabs.cpp:66
-msgid ""
-"This bar contains the list of currently open tabs. Click on a tab to make it "
-"active. You can also use keyboard shortcuts to navigate through tabs. The "
-"text on the tab shows the content currently open in it; place your mouse "
-"over the tab to see the full title, in case it has been shortened to fit the "
-"tab width."
-msgstr ""
-"Бұл панелінде ашылған қойындылардың тізімі. Қойындыны көру үшін оны шетінен "
-"түртіңіз. Сонымен қатар қойындыларды перне тіркесімдерді қолданып шарлауға "
-"болады. Ашылып тұрғанның атауы қысқартылған түрде қойындысының шетінде "
-"жазылады, оны толық көру үшін шетіне тышқанмен меңзеңіз."
-
-#: src/konqtabs.cpp:100
-msgid "Open a new tab"
-msgstr "Жаңа қойындыны ашу"
-
-#: src/konqtabs.cpp:109
-msgid "Close the current tab"
-msgstr "Назардағы қойындыны жабу"
-
-#: src/konqtabs.cpp:326 src/konqmainwindow.cpp:3647
-msgid "&Reload All Tabs"
-msgstr "Бүкіл қойындыларды &жаңарту"
-
-#: src/konqtabs.cpp:349 src/konqmainwindow.cpp:2476
-#: src/konqmainwindow.cpp:3585
-msgid "Close &Other Tabs"
-msgstr "&Басқа қойындыларды жабу"
-
-#: src/konqtabs.cpp:460 src/konqmainwindow.cpp:3558
-msgid "&New Tab"
-msgstr "&Жаңа қойынды"
-
-#: src/konqtabs.cpp:465
-msgid "&Duplicate Tab"
-msgstr "Қойындының &көшірмесін жасау"
-
-#: src/konqtabs.cpp:470
-msgid "&Reload Tab"
-msgstr "Қойындыны &жаңарту"
-
-#: src/konqtabs.cpp:477
-msgid "Other Tabs"
-msgstr "Басқа қойындылар"
-
-#: src/konqtabs.cpp:482
-msgid "D&etach Tab"
-msgstr "Қойындыны &бөліп алу"
-
-#: src/konqtabs.cpp:488
-msgid "&Close Tab"
-msgstr "Қойындыны &жабу"
-
-#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
-msgid "Und&o: Closed Tab"
-msgstr "&Амалдан қайту: Қойындыны жабу"
-
-#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
-#: src/konqundomanager.cpp:162
-msgid "Und&o: Closed Window"
-msgstr "&Амалдан қайту: Терезені жабу"
-
-#: src/konqundomanager.cpp:122
-msgid "Und&o"
-msgstr "Амалдан қ&айту"
-
-#: src/konqsessiondlg.cpp:77
-msgctxt "@title:window"
-msgid "Manage Sessions"
-msgstr "Сеанстарын басқару"
-
-#: src/konqsessiondlg.cpp:81
-msgid "&Open"
-msgstr "&Ашу"
-
-#: src/konqsessiondlg.cpp:175
-msgctxt "@title:window"
-msgid "Rename Session"
-msgstr "Сеанстың атауын өзгерту"
-
-#: src/konqsessiondlg.cpp:223
-msgctxt "@title:window"
-msgid "Save Session"
-msgstr "Сеансты сақтау"
-
-#: src/konqsessiondlg.cpp:247
-#, kde-format
-msgid ""
-"A session with the name '%1' already exists, do you want to overwrite it?"
-msgstr "'%1' деп аталған сеанс бар екен, оның үстінен жаза береік пе?"
-
-#: src/konqsessiondlg.cpp:248
-msgctxt "@title:window"
-msgid "Session exists. Overwrite?"
-msgstr "Бұндай сеанс бар екен. Үстінен жаза берейік пе?"
-
-#: src/konqguiclients.cpp:66
-#, kde-format
-msgid "Preview &in %1"
-msgstr "%1 &дегенде қарау"
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "%1 дегенді көрсету"
-
-#: src/konqhistorydialog.cpp:45
-msgctxt "@title:window"
-msgid "History"
-msgstr "Журнал"
 
 #: src/konqmain.cpp:96
 msgid "Start without a default window, when called without URLs"
@@ -578,83 +481,6 @@ msgstr ""
 msgid "Location to open"
 msgstr "Ашатын адресі"
 
-#: src/konqprofiledlg.cpp:111
-msgctxt "@title:window"
-msgid "Profile Management"
-msgstr "Профильді басқару"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr "Профильді қайта &атау"
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr "Профильді &өшіру"
-
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-"Konqueror дұрыс жолымен жабылмаған. Болған сеансын қайталауды қалайсыз ба?"
-
-#: src/konqsessionmanager.cpp:332
-msgctxt "@title:window"
-msgid "Restore Session?"
-msgstr "Сеансты қайталау керек пе?"
-
-#: src/konqsessionmanager.cpp:333
-msgid "Restore Session"
-msgstr "Қайталау"
-
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr "Керегі жоқ"
-
-#: src/konqsessionmanager.cpp:335
-msgid "Ask Me Later"
-msgstr "Келесіде сұралсын"
-
-#: src/konqviewmanager.cpp:1411
-msgid ""
-"You have multiple tabs open in this window.\n"
-"Loading a view profile will close them."
-msgstr ""
-"Бұл терезенің бірнеше қойындысы бар.\n"
-"Профильді жүктеп алсаңыз олар жабылып қалады."
-
-#: src/konqviewmanager.cpp:1413 src/konqmainwindow.cpp:4941
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Растау"
-
-#: src/konqviewmanager.cpp:1414
-msgid "Load View Profile"
-msgstr "Көрініс профилін жүктеп алу"
-
-#: src/konqviewmanager.cpp:1426
-msgid ""
-"This tab contains changes that have not been submitted.\n"
-"Loading a profile will discard these changes."
-msgstr ""
-"Қойындысында әлі тапсырылмаған өзгерістер бар.\n"
-"Профильді жүктеп алсаңыз бұл өзгерістерді жоғалтасыз."
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2514 src/konqmainwindow.cpp:4976
-msgctxt "@title:window"
-msgid "Discard Changes?"
-msgstr "Өзгерістер жоғалсын ба?"
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2515 src/konqmainwindow.cpp:4976
-msgid "&Discard Changes"
-msgstr "Өзгерістер &жоғалсын"
-
 #: src/konqmainwindow.cpp:574
 msgctxt "@title:tab"
 msgid "Loading..."
@@ -671,6 +497,21 @@ msgid ""
 msgstr ""
 "Парақта әлі тапсырылмаған өзгерістер бар.\n"
 "Парақты жаңартсаңыз бұл өзгерістерді жоғалтасыз."
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2514
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+msgctxt "@title:window"
+msgid "Discard Changes?"
+msgstr "Өзгерістер жоғалсын ба?"
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2515
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+msgid "&Discard Changes"
+msgstr "Өзгерістер &жоғалсын"
 
 #: src/konqmainwindow.cpp:1725
 msgid "File Management"
@@ -749,6 +590,11 @@ msgstr "Шынымен бүкіл басқа қойындыларды жапқы
 msgctxt "@title:window"
 msgid "Close Other Tabs Confirmation"
 msgstr "Басқа қойындыларды жабуын құптау"
+
+#: src/konqmainwindow.cpp:2476 src/konqmainwindow.cpp:3585
+#: src/konqtabs.cpp:349
+msgid "Close &Other Tabs"
+msgstr "&Басқа қойындыларды жабу"
 
 #: src/konqmainwindow.cpp:2491
 msgid ""
@@ -887,6 +733,10 @@ msgstr "Көріністі &тігінен бөлу"
 msgid "Split View &Top/Bottom"
 msgstr "Көріністі &көлденеңінен бөлу"
 
+#: src/konqmainwindow.cpp:3558 src/konqtabs.cpp:460
+msgid "&New Tab"
+msgstr "&Жаңа қойынды"
+
 #: src/konqmainwindow.cpp:3564
 msgid "&Duplicate Current Tab"
 msgstr "&Көрініп тұрған қойындының көшірмесін жасау"
@@ -939,6 +789,10 @@ msgstr "Көрініс профилін &жүктеу"
 #: src/konqmainwindow.cpp:3642 sidebar/web_module/web_module.cpp:68
 msgid "&Reload"
 msgstr "Қайта &жүктеу"
+
+#: src/konqmainwindow.cpp:3647 src/konqtabs.cpp:326
+msgid "&Reload All Tabs"
+msgstr "Бүкіл қойындыларды &жаңарту"
 
 #: src/konqmainwindow.cpp:3655
 msgid "&Force Reload"
@@ -1221,6 +1075,11 @@ msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
 msgstr "Бұл терезенің бірнеше қойындысы бар, шыққыңыз келгені рас па?"
 
+#: src/konqmainwindow.cpp:4941 src/konqviewmanager.cpp:1413
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Растау"
+
 #: src/konqmainwindow.cpp:4943
 msgid "C&lose Current Tab"
 msgstr "Ашылып тұрған қойындыны ж&абу"
@@ -1274,6 +1133,127 @@ msgstr ""
 "Баптау қатесі анықталды. Сіз Konqueror шолғышты %1 дегенмен сәйкестіріп "
 "койдыңыз, бірақ ол бұндай файл түрімен айналыса алмайды."
 
+#: src/konqprofiledlg.cpp:111
+msgctxt "@title:window"
+msgid "Profile Management"
+msgstr "Профильді басқару"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr "Профильді қайта &атау"
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr "Профильді &өшіру"
+
+#: src/konqsessiondlg.cpp:77
+msgctxt "@title:window"
+msgid "Manage Sessions"
+msgstr "Сеанстарын басқару"
+
+#: src/konqsessiondlg.cpp:81
+msgid "&Open"
+msgstr "&Ашу"
+
+#: src/konqsessiondlg.cpp:175
+msgctxt "@title:window"
+msgid "Rename Session"
+msgstr "Сеанстың атауын өзгерту"
+
+#: src/konqsessiondlg.cpp:223
+msgctxt "@title:window"
+msgid "Save Session"
+msgstr "Сеансты сақтау"
+
+#: src/konqsessiondlg.cpp:247
+#, kde-format
+msgid ""
+"A session with the name '%1' already exists, do you want to overwrite it?"
+msgstr "'%1' деп аталған сеанс бар екен, оның үстінен жаза береік пе?"
+
+#: src/konqsessiondlg.cpp:248
+msgctxt "@title:window"
+msgid "Session exists. Overwrite?"
+msgstr "Бұндай сеанс бар екен. Үстінен жаза берейік пе?"
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+"Konqueror дұрыс жолымен жабылмаған. Болған сеансын қайталауды қалайсыз ба?"
+
+#: src/konqsessionmanager.cpp:332
+msgctxt "@title:window"
+msgid "Restore Session?"
+msgstr "Сеансты қайталау керек пе?"
+
+#: src/konqsessionmanager.cpp:333
+msgid "Restore Session"
+msgstr "Қайталау"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr "Керегі жоқ"
+
+#: src/konqsessionmanager.cpp:335
+msgid "Ask Me Later"
+msgstr "Келесіде сұралсын"
+
+#: src/konqtabs.cpp:66
+msgid ""
+"This bar contains the list of currently open tabs. Click on a tab to make it "
+"active. You can also use keyboard shortcuts to navigate through tabs. The "
+"text on the tab shows the content currently open in it; place your mouse "
+"over the tab to see the full title, in case it has been shortened to fit the "
+"tab width."
+msgstr ""
+"Бұл панелінде ашылған қойындылардың тізімі. Қойындыны көру үшін оны шетінен "
+"түртіңіз. Сонымен қатар қойындыларды перне тіркесімдерді қолданып шарлауға "
+"болады. Ашылып тұрғанның атауы қысқартылған түрде қойындысының шетінде "
+"жазылады, оны толық көру үшін шетіне тышқанмен меңзеңіз."
+
+#: src/konqtabs.cpp:100
+msgid "Open a new tab"
+msgstr "Жаңа қойындыны ашу"
+
+#: src/konqtabs.cpp:109
+msgid "Close the current tab"
+msgstr "Назардағы қойындыны жабу"
+
+#: src/konqtabs.cpp:465
+msgid "&Duplicate Tab"
+msgstr "Қойындының &көшірмесін жасау"
+
+#: src/konqtabs.cpp:470
+msgid "&Reload Tab"
+msgstr "Қойындыны &жаңарту"
+
+#: src/konqtabs.cpp:477
+msgid "Other Tabs"
+msgstr "Басқа қойындылар"
+
+#: src/konqtabs.cpp:482
+msgid "D&etach Tab"
+msgstr "Қойындыны &бөліп алу"
+
+#: src/konqtabs.cpp:488
+msgid "&Close Tab"
+msgstr "Қойындыны &жабу"
+
+#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
+msgid "Und&o: Closed Tab"
+msgstr "&Амалдан қайту: Қойындыны жабу"
+
+#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
+#: src/konqundomanager.cpp:162
+msgid "Und&o: Closed Window"
+msgstr "&Амалдан қайту: Терезені жабу"
+
+#: src/konqundomanager.cpp:122
+msgid "Und&o"
+msgstr "Амалдан қ&айту"
+
 #: src/konqview.cpp:1203
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1292,6 +1272,26 @@ msgstr "Ескерту"
 #: src/konqview.cpp:1205
 msgid "Resend"
 msgstr "Қайта жіберу"
+
+#: src/konqviewmanager.cpp:1411
+msgid ""
+"You have multiple tabs open in this window.\n"
+"Loading a view profile will close them."
+msgstr ""
+"Бұл терезенің бірнеше қойындысы бар.\n"
+"Профильді жүктеп алсаңыз олар жабылып қалады."
+
+#: src/konqviewmanager.cpp:1414
+msgid "Load View Profile"
+msgstr "Көрініс профилін жүктеп алу"
+
+#: src/konqviewmanager.cpp:1426
+msgid ""
+"This tab contains changes that have not been submitted.\n"
+"Loading a profile will discard these changes."
+msgstr ""
+"Қойындысында әлі тапсырылмаған өзгерістер бар.\n"
+"Профильді жүктеп алсаңыз бұл өзгерістерді жоғалтасыз."
 
 #: sidebar/history_module/history_module.cpp:126
 msgctxt "@action:inmenu Add"
@@ -1343,172 +1343,6 @@ msgstr "Орындар"
 #: sidebar/sidebar_part.cpp:28
 msgid "Extended Sidebar"
 msgstr "Кеңейтілген бүйірдегі панель"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
-msgid "&Create New Folder"
-msgstr "&Жаңа қапшықты құру"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
-#: sidebar/trees/konq_sidebartree.cpp:207
-msgid "Delete Folder"
-msgstr "Қапшықты өшіру"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
-msgid "Delete Bookmark"
-msgstr "Бетбелгіні өшіру"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
-#: sidebar/trees/konq_sidebartree.cpp:224
-msgid "Properties"
-msgstr "Қасиеттері"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
-#: sidebar/trees/konq_sidebartree.cpp:228
-msgid "Open in New Window"
-msgstr "Жаңа терезеде ашу"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
-msgid "Open Folder in Tabs"
-msgstr "Қапшықты жаңа қойындыда ашу"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
-#: sidebar/trees/konq_sidebartree.cpp:236
-msgid "Copy Link Address"
-msgstr "Сілтеме адресін көшіріп алу"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
-#, kde-format
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Келесі бетбелгілер қапшығын жойғыңыз келгені рас па\n"
-"\"%1\"?"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
-#, kde-format
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Келесі бетбелгіні жойғыңыз келгені рас па\n"
-"\"%1\"?"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
-msgctxt "@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Бетбелгілер қапшығын өшіру"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:338
-msgctxt "@title:window"
-msgid "Bookmark Deletion"
-msgstr "Бетбелгіні өшіру"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:380
-msgctxt "@title:window"
-msgid "Bookmark Properties"
-msgstr "Бетбелгінің қасиеттері"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:565
-msgid "&Update"
-msgstr "&Жаңарту"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:573
-msgid "Name:"
-msgstr "Атауы:"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:581
-msgid "Location:"
-msgstr "Адресі:"
-
-#: sidebar/trees/bookmark_module/bookmark_module.h:88
-msgctxt "@title:window"
-msgid "Add Bookmark"
-msgstr "Бетбелгіні қосу"
-
-#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
-#, kde-format
-msgid "Cannot find parent item %1 in the tree. Internal error."
-msgstr "Бұтақтағы %1 аталық элементі табылмады. Ішкі қате."
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-msgctxt "@label"
-msgid "Name:"
-msgstr "Атауы:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-msgctxt "@label"
-msgid "Path or URL:"
-msgstr "Жол не URL:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
-msgctxt "@title:window"
-msgid "Add folder sidebar module"
-msgstr "Бүйірдегі панель модулін қосу"
-
-#: sidebar/trees/konq_sidebartree.cpp:203
-msgid "&Create New Folder..."
-msgstr "Жаңа қапшықты &құру..."
-
-#: sidebar/trees/konq_sidebartree.cpp:211
-msgid "Move to Trash"
-msgstr "Өшірілгендерге тастау"
-
-#: sidebar/trees/konq_sidebartree.cpp:215
-msgid "Rename"
-msgstr "Қайта атау"
-
-#: sidebar/trees/konq_sidebartree.cpp:220
-msgid "Delete Link"
-msgstr "Сілтемені өшіру"
-
-#: sidebar/trees/konq_sidebartree.cpp:951
-msgid "New Folder"
-msgstr "Жаңа қапшық"
-
-#: sidebar/trees/konq_sidebartree.cpp:955
-msgctxt "@title:window"
-msgid "Create New Folder"
-msgstr "Жаңа қапшықты кұру"
-
-#: sidebar/trees/konq_sidebartree.cpp:956
-msgid "Enter folder name:"
-msgstr "Қапшықтың атауы:"
-
-#: sidebar/web_module/web_module.cpp:57
-msgid "&Open Link"
-msgstr "Сілтемені &ашу"
-
-#: sidebar/web_module/web_module.cpp:73
-msgid "Set &Automatic Reload"
-msgstr "&Автоматты жаңартуды орнату"
-
-#: sidebar/web_module/web_module.cpp:137
-msgctxt "@title:window"
-msgid "Set Refresh Timeout (0 disables)"
-msgstr "Жаңарту мерзімі (0-жаңартпау)"
-
-#: sidebar/web_module/web_module.cpp:145
-msgid " minute"
-msgid_plural " minutes"
-msgstr[0] " минут"
-
-#: sidebar/web_module/web_module.cpp:148
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " сек"
-
-#: sidebar/web_module/web_module.cpp:280
-msgctxt "@action:inmenu Add"
-msgid "Web Sidebar Module"
-msgstr "Бүйірдегі Веб панелі"
-
-#: sidebar/web_module/web_module.cpp:301
-msgctxt "@title:window"
-msgid "Add web sidebar module"
-msgstr "Бүйірдегі Веб панелін қосу"
 
 #: sidebar/sidebar_widget.cpp:94
 msgid "Rollback to System Default"
@@ -1603,6 +1437,172 @@ msgstr "Өшіру"
 #: sidebar/sidebar_widget.cpp:846
 msgid "Web module"
 msgstr "Веб модулі"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
+msgid "&Create New Folder"
+msgstr "&Жаңа қапшықты құру"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
+#: sidebar/trees/konq_sidebartree.cpp:207
+msgid "Delete Folder"
+msgstr "Қапшықты өшіру"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
+msgid "Delete Bookmark"
+msgstr "Бетбелгіні өшіру"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
+#: sidebar/trees/konq_sidebartree.cpp:224
+msgid "Properties"
+msgstr "Қасиеттері"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
+#: sidebar/trees/konq_sidebartree.cpp:228
+msgid "Open in New Window"
+msgstr "Жаңа терезеде ашу"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
+msgid "Open Folder in Tabs"
+msgstr "Қапшықты жаңа қойындыда ашу"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
+#: sidebar/trees/konq_sidebartree.cpp:236
+msgid "Copy Link Address"
+msgstr "Сілтеме адресін көшіріп алу"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
+#, kde-format
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Келесі бетбелгілер қапшығын жойғыңыз келгені рас па\n"
+"\"%1\"?"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
+#, kde-format
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Келесі бетбелгіні жойғыңыз келгені рас па\n"
+"\"%1\"?"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
+msgctxt "@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Бетбелгілер қапшығын өшіру"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:338
+msgctxt "@title:window"
+msgid "Bookmark Deletion"
+msgstr "Бетбелгіні өшіру"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:380
+msgctxt "@title:window"
+msgid "Bookmark Properties"
+msgstr "Бетбелгінің қасиеттері"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:565
+msgid "&Update"
+msgstr "&Жаңарту"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:573
+msgid "Name:"
+msgstr "Атауы:"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:581
+msgid "Location:"
+msgstr "Адресі:"
+
+#: sidebar/trees/bookmark_module/bookmark_module.h:88
+msgctxt "@title:window"
+msgid "Add Bookmark"
+msgstr "Бетбелгіні қосу"
+
+#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
+#, kde-format
+msgid "Cannot find parent item %1 in the tree. Internal error."
+msgstr "Бұтақтағы %1 аталық элементі табылмады. Ішкі қате."
+
+#: sidebar/trees/konq_sidebartree.cpp:203
+msgid "&Create New Folder..."
+msgstr "Жаңа қапшықты &құру..."
+
+#: sidebar/trees/konq_sidebartree.cpp:211
+msgid "Move to Trash"
+msgstr "Өшірілгендерге тастау"
+
+#: sidebar/trees/konq_sidebartree.cpp:215
+msgid "Rename"
+msgstr "Қайта атау"
+
+#: sidebar/trees/konq_sidebartree.cpp:220
+msgid "Delete Link"
+msgstr "Сілтемені өшіру"
+
+#: sidebar/trees/konq_sidebartree.cpp:951
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: sidebar/trees/konq_sidebartree.cpp:955
+msgctxt "@title:window"
+msgid "Create New Folder"
+msgstr "Жаңа қапшықты кұру"
+
+#: sidebar/trees/konq_sidebartree.cpp:956
+msgid "Enter folder name:"
+msgstr "Қапшықтың атауы:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+msgctxt "@label"
+msgid "Name:"
+msgstr "Атауы:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+msgctxt "@label"
+msgid "Path or URL:"
+msgstr "Жол не URL:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
+msgctxt "@title:window"
+msgid "Add folder sidebar module"
+msgstr "Бүйірдегі панель модулін қосу"
+
+#: sidebar/web_module/web_module.cpp:57
+msgid "&Open Link"
+msgstr "Сілтемені &ашу"
+
+#: sidebar/web_module/web_module.cpp:73
+msgid "Set &Automatic Reload"
+msgstr "&Автоматты жаңартуды орнату"
+
+#: sidebar/web_module/web_module.cpp:137
+msgctxt "@title:window"
+msgid "Set Refresh Timeout (0 disables)"
+msgstr "Жаңарту мерзімі (0-жаңартпау)"
+
+#: sidebar/web_module/web_module.cpp:145
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] " минут"
+
+#: sidebar/web_module/web_module.cpp:148
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " сек"
+
+#: sidebar/web_module/web_module.cpp:280
+msgctxt "@action:inmenu Add"
+msgid "Web Sidebar Module"
+msgstr "Бүйірдегі Веб панелі"
+
+#: sidebar/web_module/web_module.cpp:301
+msgctxt "@title:window"
+msgid "Add web sidebar module"
+msgstr "Бүйірдегі Веб панелін қосу"
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
 #: about/konq_aboutpage.cc:135 about/konq_aboutpage.cc:137
