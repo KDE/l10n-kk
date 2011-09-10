@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-09 03:17+0200\n"
+"POT-Creation-Date: 2011-09-10 03:05+0200\n"
 "PO-Revision-Date: 2011-08-15 05:32+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -483,7 +483,15 @@ msgctxt "@item:intable"
 msgid "items"
 msgstr "%1 аталым"
 
-#: kitemviews/kfileitemlistwidget.cpp:665
+#: kitemviews/kfileitemmodel.cpp:743
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Link Destination"
+msgctxt "@item:intable"
+msgid "No destination"
+msgstr "Қайда"
+
+#: kitemviews/kfileitemlistwidget.cpp:673
 #, fuzzy, kde-format
 #| msgctxt "Items in a folder"
 #| msgid "1 item"
@@ -492,14 +500,6 @@ msgctxt "@item:intable"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "%1 аталым"
-
-#: kitemviews/kfileitemmodel.cpp:743
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Link Destination"
-msgctxt "@item:intable"
-msgid "No destination"
-msgstr "Қайда"
 
 #: main.cpp:35
 msgctxt "@title"
@@ -1355,60 +1355,6 @@ msgstr "Қайта жүктеп алу"
 msgid "Default"
 msgstr "Әдетті"
 
-#: views/dolphinview.cpp:492
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "<filename>%1</filename> деген таңдалған"
-
-#: views/dolphinview.cpp:493
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected (%2)"
-msgstr "<filename>%1</filename> деген таңдалған (%2)"
-
-#: views/dolphinview.cpp:497
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "%1 қапшық таңдалған"
-
-#: views/dolphinview.cpp:498
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "%1 файл таңдалған"
-
-#: views/dolphinview.cpp:500
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr "%1, %2 (%3)"
-
-#: views/dolphinview.cpp:503
-#, kde-format
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: views/dolphinview.cpp:1030
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Өшіру амалы орындалды."
-
-#: views/dolphinview.cpp:1082
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "Орын бос ғой."
-
-#: views/dolphinview.cpp:1084
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "'%1' деген орын атауы жарамсыз."
-
 #: views/dolphinviewactionhandler.cpp:92
 msgctxt "@action"
 msgid "Create Folder..."
@@ -1574,15 +1520,69 @@ msgctxt "@info"
 msgid "# will be replaced by ascending numbers starting with:"
 msgstr "(# деген өсетін сандармен ауыстырылады)"
 
-#: views/versioncontrol/versioncontrolobserver.cpp:192
+#: views/versioncontrol/versioncontrolobserver.cpp:187
 msgctxt "@info:status"
 msgid "Update of version information failed."
 msgstr "Нұқасы туралы мәліметті жаңартуы сәтсіз бітті."
 
-#: views/versioncontrol/versioncontrolobserver.cpp:246
+#: views/versioncontrol/versioncontrolobserver.cpp:243
 msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Нұқасы туралы мәліметті жаңарту"
+
+#: views/dolphinview.cpp:492
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "<filename>%1</filename> деген таңдалған"
+
+#: views/dolphinview.cpp:493
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "<filename>%1</filename> деген таңдалған (%2)"
+
+#: views/dolphinview.cpp:497
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "%1 қапшық таңдалған"
+
+#: views/dolphinview.cpp:498
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "%1 файл таңдалған"
+
+#: views/dolphinview.cpp:500
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: views/dolphinview.cpp:503
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: views/dolphinview.cpp:1038
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Өшіру амалы орындалды."
+
+#: views/dolphinview.cpp:1090
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "Орын бос ғой."
+
+#: views/dolphinview.cpp:1092
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "'%1' деген орын атауы жарамсыз."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
