@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-24 02:17+0200\n"
+"POT-Creation-Date: 2011-09-30 02:25+0200\n"
 "PO-Revision-Date: 2011-08-02 09:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -81,7 +81,9 @@ msgstr "Контекстті анықтама"
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
-#: core/kexiguimsghandler.cpp:149
+#: core/kexiguimsghandler.cpp:149 plugins/reports/kexireportview.cpp:171
+#: plugins/reports/kexireportview.cpp:199
+#: plugins/reports/kexireportview.cpp:225
 msgid "Warning"
 msgstr "Ескерту"
 
@@ -564,12 +566,12 @@ msgstr "\"%1\" плагинін жүктеу қатесі"
 msgid "No plugin for class \"%1\""
 msgstr "\"%1\" класының плагині жоқ"
 
-#: core/kexiproject.cpp:198
+#: core/kexiproject.cpp:215
 #, kde-format
 msgid "Could not open project \"%1\"."
 msgstr "\"%1\" жобасы ашылмалы."
 
-#: core/kexiproject.cpp:222
+#: core/kexiproject.cpp:239
 #, kde-format
 msgid ""
 "Database project %1 does not appear to have been created using Kexi and "
@@ -578,55 +580,55 @@ msgstr ""
 "%1 деректер қоры жобасы Kexi бағдарламада құрған емес сияқты, сондықтан "
 "ашылмайды.<br><br>Ол басқа құралымен жасалған SQLite файлы.</qt>"
 
-#: core/kexiproject.cpp:245
+#: core/kexiproject.cpp:262
 #, kde-format
 msgid "Could not create project \"%1\"."
 msgstr "\"%1\" жобасы құрылмады."
 
-#: core/kexiproject.cpp:288 core/kexiproject.cpp:353
+#: core/kexiproject.cpp:305 core/kexiproject.cpp:370
 msgid "Project major version"
 msgstr "Жобаның басты нұсқасы"
 
-#: core/kexiproject.cpp:290 core/kexiproject.cpp:355
+#: core/kexiproject.cpp:307 core/kexiproject.cpp:372
 msgid "Project minor version"
 msgstr "Жоба нұсқасының тармағы"
 
-#: core/kexiproject.cpp:292
+#: core/kexiproject.cpp:309
 msgid "Project caption"
 msgstr "Жоба айдары"
 
-#: core/kexiproject.cpp:294
+#: core/kexiproject.cpp:311
 msgid "Project description"
 msgstr "Жобаның сипаттамасы"
 
-#: core/kexiproject.cpp:801
+#: core/kexiproject.cpp:821
 #, kde-format
 msgid "Opening object \"%1\" failed."
 msgstr "\"%1\" нысаны ашылмады."
 
-#: core/kexiproject.cpp:820
+#: core/kexiproject.cpp:840
 msgid "This project is opened as read only."
 msgstr "Бұл жоба тек оқу үшін ашылған."
 
-#: core/kexiproject.cpp:877 main/KexiMainWindow.cpp:4565
+#: core/kexiproject.cpp:897 main/KexiMainWindow.cpp:4565
 msgid "Could not set empty name for this object."
 msgstr "Бұл нысанның атауын бос қалдыруға болмайды."
 
-#: core/kexiproject.cpp:881
+#: core/kexiproject.cpp:901
 #, kde-format
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr "Былай атауға болмайды. \"%1\" деп аталған нысан бар ғой."
 
-#: core/kexiproject.cpp:888
+#: core/kexiproject.cpp:908
 #, kde-format
 msgid "Could not rename object \"%1\"."
 msgstr "\"%1\" нысанның атауы өзгертілмеді."
 
-#: core/kexiproject.cpp:1012
+#: core/kexiproject.cpp:1032
 msgid "Warning: entire project's data will be removed."
 msgstr "Ескерту: жобаның барлық деректері өшіріледі."
 
-#: core/kexiproject.cpp:1026
+#: core/kexiproject.cpp:1046
 #, kde-format
 msgid ""
 "The project %1 already exists.\n"
@@ -635,16 +637,16 @@ msgstr ""
 "%1 деген жоба бар ғой.\n"
 "Оны жаңа, бос жобамен ауыстырмақсыз ба?"
 
-#: core/kexiproject.cpp:1029 main/kexifinddialog.cpp:229
+#: core/kexiproject.cpp:1049 main/kexifinddialog.cpp:229
 msgid "Replace"
 msgstr "Ауыстыру"
 
-#: core/kexiproject.cpp:1053
+#: core/kexiproject.cpp:1073
 #, kde-format
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "\"%1\" жобаны өшірмексіз бе?"
 
-#: core/kexiproject.cpp:1063
+#: core/kexiproject.cpp:1083
 msgid ""
 "Could not drop this project. Database connection for this project has been "
 "opened as read only."
@@ -969,26 +971,6 @@ msgstr "Деректер"
 #: core/KexiView.cpp:617
 msgid "Design"
 msgstr "Құрылымы"
-
-#: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2219
-#: main/printing/kexisimpleprintingengine.cpp:326
-#, kde-format
-msgid "Page %1"
-msgstr "%1-бет"
-
-#: formeditor/WidgetTreeWidget.cpp:104
-msgctxt "Tab widget's page"
-msgid "Tab Page"
-msgstr "Қойынды беті"
-
-#: formeditor/WidgetTreeWidget.cpp:273
-msgid "Widget name"
-msgstr "Виджеттің атауы"
-
-#: formeditor/WidgetTreeWidget.cpp:273
-msgctxt "Widget's type"
-msgid "Type"
-msgstr "Түрі"
 
 #: formeditor/connectiondialog.cpp:55
 msgid "Edit Form Connections"
@@ -2505,6 +2487,12 @@ msgctxt "(qtundo-format)"
 msgid "Add Page"
 msgstr "Бетті қосу"
 
+#: formeditor/commands.cpp:2219 formeditor/WidgetTreeWidget.cpp:96
+#: main/printing/kexisimpleprintingengine.cpp:326
+#, kde-format
+msgid "Page %1"
+msgstr "%1-бет"
+
 #: formeditor/commands.cpp:2305
 msgctxt "(qtundo-format)"
 msgid "Remove Page"
@@ -2638,12 +2626,15 @@ msgid "Open in Data View"
 msgstr "Деректер көрінісінде ашу"
 
 #: formeditor/kexiactionselectiondialog.cpp:269
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:159
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:125
 #: widget/navigator/KexiProjectListView.cpp:196
 #: widget/navigator/KexiProjectNavigator.cpp:167
 msgid "Execute"
 msgstr "Орындау"
 
 #: formeditor/kexiactionselectiondialog.cpp:275
+#: plugins/reports/kexireportview.cpp:76
 msgid "Print"
 msgstr "Басып шығару"
 
@@ -2727,6 +2718,20 @@ msgstr "Орындалатын амал:"
 #, kde-format
 msgid "&Select action to be executed after clicking \"%1\" button:"
 msgstr "\"%1\" &батырмасын басқанда орындалатын амалы:"
+
+#: formeditor/WidgetTreeWidget.cpp:104
+msgctxt "Tab widget's page"
+msgid "Tab Page"
+msgstr "Қойынды беті"
+
+#: formeditor/WidgetTreeWidget.cpp:273
+msgid "Widget name"
+msgstr "Виджеттің атауы"
+
+#: formeditor/WidgetTreeWidget.cpp:273
+msgctxt "Widget's type"
+msgid "Type"
+msgstr "Түрі"
 
 #: kexidb/connectiondata.cpp:97
 msgid "file"
@@ -2841,25 +2846,6 @@ msgstr "Қабаттасқан транзакцияларды қолдау"
 #: kexidb/driver_p.cpp:77
 msgid "KexiDB driver version"
 msgstr "KexiDB драйверінің нұсқасы"
-
-#: kexidb/drivermanager.cpp:171
-msgid "Could not find any database drivers."
-msgstr "Бір де бір деректер қорының драйвері табылмады."
-
-#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
-#, kde-format
-msgid "Could not find database driver \"%1\"."
-msgstr "\"%1\" деректер қорының драйвері табылмады."
-
-#: kexidb/drivermanager.cpp:231
-#, kde-format
-msgid "Could not load database driver \"%1\"."
-msgstr "\"%1\" деректер қорының драйвері жүктелмеді."
-
-#: kexidb/drivermanager.cpp:374
-#, kde-format
-msgid "No such driver service: \"%1\"."
-msgstr "Мұндай драйверінің қызметі жоқ: \"%1\"."
 
 #: kexidb/drivers/mySQL/mysqlconnection.cpp:139 kexidb/connection.cpp:466
 #, kde-format
@@ -3603,6 +3589,25 @@ msgstr "Иә/Жоқ"
 msgid "Date/Time"
 msgstr "Күні/Уақыты"
 
+#: kexidb/drivermanager.cpp:171
+msgid "Could not find any database drivers."
+msgstr "Бір де бір деректер қорының драйвері табылмады."
+
+#: kexidb/drivermanager.cpp:181 kexidb/drivermanager.cpp:200
+#, kde-format
+msgid "Could not find database driver \"%1\"."
+msgstr "\"%1\" деректер қорының драйвері табылмады."
+
+#: kexidb/drivermanager.cpp:231
+#, kde-format
+msgid "Could not load database driver \"%1\"."
+msgstr "\"%1\" деректер қорының драйвері жүктелмеді."
+
+#: kexidb/drivermanager.cpp:374
+#, kde-format
+msgid "No such driver service: \"%1\"."
+msgstr "Мұндай драйверінің қызметі жоқ: \"%1\"."
+
 #: kexiutils/identifier.cpp:92
 #, kde-format
 msgid "Value of \"%1\" column must be an identifier."
@@ -3866,6 +3871,9 @@ msgstr ""
 
 #: main/startup/KexiStartupFileWidget.cpp:433
 #: main/startup/KexiStartupFileHandler.cpp:489
+#: plugins/reports/kexireportview.cpp:171
+#: plugins/reports/kexireportview.cpp:199
+#: plugins/reports/kexireportview.cpp:225
 msgid "Overwrite"
 msgstr "Жаза беру"
 
@@ -3875,6 +3883,7 @@ msgid "Saving \"%1\" project file to a new \"%2\" database format..."
 msgstr "\"%1\" жоба файлын жаңа \"%2\" деректер қоры пішіміне сақтау..."
 
 #: main/startup/KexiConnSelector.cpp:78
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:123
 msgid "File"
 msgstr "Файл"
 
@@ -3964,40 +3973,6 @@ msgstr "Деректер қорының қосылымын ашу"
 #, kde-format
 msgid "Select a project on <b>%1</b> database server to open:"
 msgstr "<b>%1</b> деректер қоры сервердегі ашатын жоба:"
-
-#: main/startup/KexiRecentProjectsModel.cpp:66
-msgid "Opened less than minute ago"
-msgstr ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:68
-#, kde-format
-msgid "Opened 1 minute ago"
-msgid_plural "Opened %1 minutes ago"
-msgstr[0] ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:70
-#, kde-format
-msgid "Opened 1 hour ago"
-msgid_plural "Opened %1 hours ago"
-msgstr[0] ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:74
-#, kde-format
-msgid "Opened yesterday"
-msgid_plural "Opened %1 days ago"
-msgstr[0] ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:76
-#, kde-format
-msgid "Opened over a month ago"
-msgid_plural "Opened %1 months ago"
-msgstr[0] ""
-
-#: main/startup/KexiRecentProjectsModel.cpp:77
-#, kde-format
-msgid "Opened one year ago"
-msgid_plural "Opened %1 years ago"
-msgstr[0] ""
 
 #: main/startup/KexiStartup.cpp:145
 msgid "Opening database"
@@ -4218,72 +4193,6 @@ msgid ""
 msgstr ""
 "\"%1\" файлға\n"
 "қосылым деректері сақталмады."
-
-#: main/startup/KexiStartupDialog.cpp:146
-#: main/startup/KexiStartupDialog.cpp:313
-msgid "Create Project"
-msgstr "Жобаны құру"
-
-#: main/startup/KexiStartupDialog.cpp:148
-#: main/startup/KexiStartupDialog.cpp:598
-msgid "Open Existing Project"
-msgstr "Бар жобаны ашу"
-
-#: main/startup/KexiStartupDialog.cpp:152
-msgid "Choose Project"
-msgstr "Жобаны таңдау"
-
-#: main/startup/KexiStartupDialog.cpp:340
-msgid "Do not show me this dialog again"
-msgstr "Бұл диалог маған ендігәрі көрсетілмесін"
-
-#: main/startup/KexiStartupDialog.cpp:352
-msgid "Click \"OK\" button to proceed."
-msgstr "Жағастыру үшін \"OK\" батырмасын басыңыз."
-
-#: main/startup/KexiStartupDialog.cpp:355
-msgid "Blank Database"
-msgstr "Бос деректер қоры"
-
-#: main/startup/KexiStartupDialog.cpp:356
-msgid "New Blank Database Project"
-msgstr "Жаңа бос деректер қоры жобасы"
-
-#: main/startup/KexiStartupDialog.cpp:361
-msgid "Kexi will create a new blank database project."
-msgstr "Kexi жаңа бос деректер қорының жобасын құрады."
-
-#: main/startup/KexiStartupDialog.cpp:375
-msgid "Create From Template"
-msgstr "Үлгіден құру"
-
-#: main/startup/KexiStartupDialog.cpp:376
-msgid "New Database Project From Template"
-msgstr "Үлгі бойынша жаңа деректер қорының жобасы"
-
-#: main/startup/KexiStartupDialog.cpp:381
-msgid ""
-"Kexi will create a new database project using selected template.\n"
-"Select template and click \"OK\" button to proceed."
-msgstr ""
-"Kexi үлгі бойынша жаңа деректер қорының жобасын құрады.\n"
-"Үлгісін таңдап \"OK\" батырмасын басыңыз."
-
-#: main/startup/KexiStartupDialog.cpp:426
-msgid "Import Existing Database"
-msgstr "Бар деректер қорын импорттау"
-
-#: main/startup/KexiStartupDialog.cpp:428
-msgid "Import Existing Database as New Database Project"
-msgstr "Бар деректер қорын жаңа деректер қоры деп импорттау"
-
-#: main/startup/KexiStartupDialog.cpp:433
-msgid ""
-"Kexi will import the structure and data of an existing database as a new "
-"database project."
-msgstr ""
-"Kexi бар деректер қорының құрлымы мен деректерін жаңа деректер қорының "
-"жобасына импорттайды."
 
 #: main/startup/KexiStartupFileHandler.cpp:488
 #, fuzzy
@@ -4535,6 +4444,132 @@ msgstr "Жуырдағы жобаны ашу"
 #: main/startup/KexiRecentProjectsAssistant.cpp:63
 msgid "Select one of the recently used projects to open."
 msgstr ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:66
+msgid "Opened less than minute ago"
+msgstr ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:68
+#, kde-format
+msgid "Opened 1 minute ago"
+msgid_plural "Opened %1 minutes ago"
+msgstr[0] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:70
+#, kde-format
+msgid "Opened 1 hour ago"
+msgid_plural "Opened %1 hours ago"
+msgstr[0] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:74
+#, kde-format
+msgid "Opened yesterday"
+msgid_plural "Opened %1 days ago"
+msgstr[0] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:76
+#, kde-format
+msgid "Opened over a month ago"
+msgid_plural "Opened %1 months ago"
+msgstr[0] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:77
+#, kde-format
+msgid "Opened one year ago"
+msgid_plural "Opened %1 years ago"
+msgstr[0] ""
+
+#: main/startup/KexiRecentProjectsModel.cpp:110
+#, fuzzy
+#| msgid "Local server"
+msgid "on local server"
+msgstr "Жергілікті сервері"
+
+#: main/startup/KexiRecentProjectsModel.cpp:113
+#, fuzzy, kde-format
+#| msgid "Local server"
+msgid "on \"%1\" server"
+msgstr "Жергілікті сервері"
+
+#: main/startup/KexiRecentProjectsModel.cpp:121
+#, fuzzy, kde-format
+#| msgid "New database"
+msgctxt "File database <file>"
+msgid "File database %1"
+msgstr "Жаңа деректер қоры"
+
+#: main/startup/KexiRecentProjectsModel.cpp:126
+#, fuzzy, kde-format
+#| msgid "New database"
+msgctxt "<type> database"
+msgid "%1 database"
+msgstr "Жаңа деректер қоры"
+
+#: main/startup/KexiStartupDialog.cpp:146
+#: main/startup/KexiStartupDialog.cpp:313
+msgid "Create Project"
+msgstr "Жобаны құру"
+
+#: main/startup/KexiStartupDialog.cpp:148
+#: main/startup/KexiStartupDialog.cpp:598
+msgid "Open Existing Project"
+msgstr "Бар жобаны ашу"
+
+#: main/startup/KexiStartupDialog.cpp:152
+msgid "Choose Project"
+msgstr "Жобаны таңдау"
+
+#: main/startup/KexiStartupDialog.cpp:340
+msgid "Do not show me this dialog again"
+msgstr "Бұл диалог маған ендігәрі көрсетілмесін"
+
+#: main/startup/KexiStartupDialog.cpp:352
+msgid "Click \"OK\" button to proceed."
+msgstr "Жағастыру үшін \"OK\" батырмасын басыңыз."
+
+#: main/startup/KexiStartupDialog.cpp:355
+msgid "Blank Database"
+msgstr "Бос деректер қоры"
+
+#: main/startup/KexiStartupDialog.cpp:356
+msgid "New Blank Database Project"
+msgstr "Жаңа бос деректер қоры жобасы"
+
+#: main/startup/KexiStartupDialog.cpp:361
+msgid "Kexi will create a new blank database project."
+msgstr "Kexi жаңа бос деректер қорының жобасын құрады."
+
+#: main/startup/KexiStartupDialog.cpp:375
+msgid "Create From Template"
+msgstr "Үлгіден құру"
+
+#: main/startup/KexiStartupDialog.cpp:376
+msgid "New Database Project From Template"
+msgstr "Үлгі бойынша жаңа деректер қорының жобасы"
+
+#: main/startup/KexiStartupDialog.cpp:381
+msgid ""
+"Kexi will create a new database project using selected template.\n"
+"Select template and click \"OK\" button to proceed."
+msgstr ""
+"Kexi үлгі бойынша жаңа деректер қорының жобасын құрады.\n"
+"Үлгісін таңдап \"OK\" батырмасын басыңыз."
+
+#: main/startup/KexiStartupDialog.cpp:426
+msgid "Import Existing Database"
+msgstr "Бар деректер қорын импорттау"
+
+#: main/startup/KexiStartupDialog.cpp:428
+msgid "Import Existing Database as New Database Project"
+msgstr "Бар деректер қорын жаңа деректер қоры деп импорттау"
+
+#: main/startup/KexiStartupDialog.cpp:433
+msgid ""
+"Kexi will import the structure and data of an existing database as a new "
+"database project."
+msgstr ""
+"Kexi бар деректер қорының құрлымы мен деректерін жаңа деректер қорының "
+"жобасына импорттайды."
 
 #: main/KexiMainWindow_p.h:867
 msgid "Task-based tabbed toolbar groups commands for application using tabs."
@@ -5307,7 +5342,7 @@ msgstr ""
 msgid "Do you want to save changes?"
 msgstr "Өзгерістерін сақтауды қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:4262 mobile/KexiMobileMainWindow.cpp:139
+#: main/KexiMainWindow.cpp:4262
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
@@ -5580,6 +5615,50 @@ msgstr "Импорттайтын кесте таңдалмаған."
 msgid "Unable to create table [%1]"
 msgstr "[%1] кестесі құрылмады."
 
+#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
+#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
+#, kde-format
+msgid "Could not create database \"%1\"."
+msgstr "\"%1\" деректер қоры құрылмады."
+
+#: migration/keximigrate.cpp:151
+#, kde-format
+msgid "Could not get a list of table names for data source \"%1\"."
+msgstr "\"%1\" деректер көзінің кесте атауларының тізімі алынбады."
+
+#: migration/keximigrate.cpp:161
+#, kde-format
+msgid "No tables to import found in data source \"%1\"."
+msgstr "\"%1\" деректер көзінде импортайтын кестелері табылмады."
+
+#: migration/keximigrate.cpp:205
+#, kde-format
+msgid ""
+"Could not import project from data source \"%1\". Error reading table \"%2\"."
+msgstr ""
+"\"%1\" деректер көзінен жоба импортталмады. \"%2\" кестесін оқу қатесі."
+
+#: migration/keximigrate.cpp:332
+#, kde-format
+msgid "Could not import project from data source \"%1\"."
+msgstr "\"%1\" деректер көзінен жоба импортталмады."
+
+#: migration/keximigrate.cpp:408
+#, kde-format
+msgid "Could not import data from data source \"%1\"."
+msgstr "\"%1\" деректер көзінен деректер импортталмады."
+
+#: migration/keximigrate.cpp:488
+msgid "Field Type"
+msgstr "Өрістің түрі"
+
+#: migration/keximigrate.cpp:489
+#, kde-format
+msgid ""
+"The data type for %1 could not be determined. Please select one of the "
+"following data types"
+msgstr "%1 дерегінің түрі анықталмады. Келесі бірін таңдап алыңыз"
+
 #: migration/importwizard.cpp:68
 msgid "Import Database"
 msgstr "Деректер қорын импорттау"
@@ -5762,50 +5841,6 @@ msgstr ""
 "Мұнда деректерін қай орынға сақтауды және жаңа деректер қорының атауын "
 "таңдаңыз."
 
-#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
-#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
-#, kde-format
-msgid "Could not create database \"%1\"."
-msgstr "\"%1\" деректер қоры құрылмады."
-
-#: migration/keximigrate.cpp:151
-#, kde-format
-msgid "Could not get a list of table names for data source \"%1\"."
-msgstr "\"%1\" деректер көзінің кесте атауларының тізімі алынбады."
-
-#: migration/keximigrate.cpp:161
-#, kde-format
-msgid "No tables to import found in data source \"%1\"."
-msgstr "\"%1\" деректер көзінде импортайтын кестелері табылмады."
-
-#: migration/keximigrate.cpp:205
-#, kde-format
-msgid ""
-"Could not import project from data source \"%1\". Error reading table \"%2\"."
-msgstr ""
-"\"%1\" деректер көзінен жоба импортталмады. \"%2\" кестесін оқу қатесі."
-
-#: migration/keximigrate.cpp:332
-#, kde-format
-msgid "Could not import project from data source \"%1\"."
-msgstr "\"%1\" деректер көзінен жоба импортталмады."
-
-#: migration/keximigrate.cpp:408
-#, kde-format
-msgid "Could not import data from data source \"%1\"."
-msgstr "\"%1\" деректер көзінен деректер импортталмады."
-
-#: migration/keximigrate.cpp:488
-msgid "Field Type"
-msgstr "Өрістің түрі"
-
-#: migration/keximigrate.cpp:489
-#, kde-format
-msgid ""
-"The data type for %1 could not be determined. Please select one of the "
-"following data types"
-msgstr "%1 дерегінің түрі анықталмады. Келесі бірін таңдап алыңыз"
-
 #: plugins/forms/widgets/kexidbautofield.cpp:576
 #, kde-format
 msgctxt "Unbound Auto Field"
@@ -5830,62 +5865,6 @@ msgstr "\"%1\" кескін өрісінің амалдарын көру үші�
 msgctxt "Unbound Image Box"
 msgid "(unbound)"
 msgstr "(байланыстырылмаған)"
-
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:40
-msgid "Map Browser"
-msgstr ""
-
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:42
-msgctxt ""
-"This string will be used to name widgets of this class. It must _not_ "
-"contain white spaces and non latin1 characters."
-msgid "mapBrowser"
-msgstr ""
-
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
-msgid "Displays an interactive map."
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:43
-msgid "Back"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:44
-msgid "Forward"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:45
-msgid "Reload"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:46
-msgid "Stop"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:39
-msgid "Web Browser"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
-msgctxt ""
-"This string will be used to name widgets of this class. It must _not_ "
-"contain white spaces and non latin1 characters."
-msgid "webBrowser"
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:42
-msgid "Web widget with browsing features."
-msgstr ""
-
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:46
-#, fuzzy
-#| msgid "Zoom Out"
-msgid "Zoom Factor"
-msgstr "Кішірейту"
-
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:47
-msgid "Url"
-msgstr ""
 
 #: plugins/forms/kexiformview.cpp:252 plugins/forms/kexidbfactory.cpp:84
 msgctxt ""
@@ -6184,6 +6163,7 @@ msgid "&Assign Action..."
 msgstr "&Амалын тағайындау..."
 
 #: plugins/forms/kexidbfactorybase.cpp:61 plugins/forms/kexiformpart.cpp:489
+#: plugins/reports/kexireportpart.cpp:160
 msgid "Data Source"
 msgstr "Деректер көзі"
 
@@ -6963,6 +6943,408 @@ msgstr "Сұраныс бағаны"
 msgid "Alias"
 msgstr "Бүркеншік атауы"
 
+#: plugins/reports/kexireportdesignview.cpp:50
+#, fuzzy
+#| msgid "Edit Collection..."
+msgid "Edit Sections"
+msgstr "Жиынды өзгерту..."
+
+#: plugins/reports/kexireportdesignview.cpp:53
+msgid "Raise"
+msgstr "Көтеру"
+
+#: plugins/reports/kexireportdesignview.cpp:55
+msgid "Lower"
+msgstr "Төмендету"
+
+#: plugins/reports/kexireportpart.cpp:52
+#: plugins/autoforms/KexiAutoFormPart.cpp:32
+#, fuzzy
+#| msgid "Report"
+msgctxt ""
+"Translate this word using only lowercase alphanumeric characters (a..z, "
+"0..9). Use '_' character instead of spaces. First character should be a..z "
+"character. If you cannot use latin characters in your language, use english "
+"word."
+msgid "report"
+msgstr "Есеп беру"
+
+#: plugins/reports/kexireportpart.cpp:53
+msgctxt "tooltip"
+msgid "Create new report"
+msgstr "Жаңа есеп беруді құру"
+
+#: plugins/reports/kexireportpart.cpp:54
+msgctxt "what's this"
+msgid "Creates new report."
+msgstr "Жаңа есеп беруді құру."
+
+#: plugins/reports/kexireportview.cpp:67
+msgid "Page"
+msgstr "Беті"
+
+#: plugins/reports/kexireportview.cpp:78
+msgid "Print Report"
+msgstr "Есеп беруді басып шығару"
+
+#: plugins/reports/kexireportview.cpp:79
+msgid "Prints the current report."
+msgstr "Назардағы есеп беруді басып шығару."
+
+#: plugins/reports/kexireportview.cpp:84
+#, fuzzy
+#| msgid "Export"
+msgid "Export: "
+msgstr "Экспорт ету"
+
+#: plugins/reports/kexireportview.cpp:88
+#, fuzzy
+#| msgid "&Save Record"
+msgid "Save to Words"
+msgstr "Жазуды &сақтау"
+
+#: plugins/reports/kexireportview.cpp:91 plugins/reports/kexireportview.cpp:92
+#, fuzzy
+#| msgid "Open the report in KWord"
+msgid "Save the report to a Words document"
+msgstr "Есеп беруді KWord-та ашу"
+
+#: plugins/reports/kexireportview.cpp:99
+#, fuzzy
+#| msgid "Open in KSpread"
+msgid "Save to KSpread"
+msgstr "KSpread-те ашу"
+
+#: plugins/reports/kexireportview.cpp:102
+#, fuzzy
+#| msgid "Open the report in KSpread"
+msgid "Save the report to a KSpread document"
+msgstr "Есеп беруді KSpread-те ашу"
+
+#: plugins/reports/kexireportview.cpp:103
+#, fuzzy
+#| msgid "Opens the current report in KSpread."
+msgid "Saves the current report to a KSpread document."
+msgstr "Назардағы есеп беруді KSpread-те ашу."
+
+#: plugins/reports/kexireportview.cpp:110
+#, fuzzy
+#| msgid "Export data to a file"
+msgid "Export as Web Page"
+msgstr "Деректерді файлға экпорттау"
+
+#: plugins/reports/kexireportview.cpp:113
+#, fuzzy
+#| msgid "Export the report to HTML"
+msgid "Export the report as web page"
+msgstr "Есеп беруді HTML-ге экспорт ету"
+
+#: plugins/reports/kexireportview.cpp:114
+#, fuzzy
+#| msgid "Exports the report to a HTML file."
+msgid "Exports the report to a web page file."
+msgstr "Есеп беруді HTML файлына экпорттау"
+
+#: plugins/reports/kexireportview.cpp:164
+#: plugins/reports/kexireportview.cpp:192
+msgid "Save Report to.."
+msgstr "Есеп беруді мынаған сақтау..."
+
+#: plugins/reports/kexireportview.cpp:166
+#: plugins/reports/kexireportview.cpp:194
+msgid "Report not exported.The URL was invalid"
+msgstr "Есеп беру экспортталмады. URL-сілтемесі дұрыс емес"
+
+#: plugins/reports/kexireportview.cpp:166
+#: plugins/reports/kexireportview.cpp:194
+msgid "Not Saved"
+msgstr "Сақталмаған"
+
+#: plugins/reports/kexireportview.cpp:171
+#: plugins/reports/kexireportview.cpp:199
+#: plugins/reports/kexireportview.cpp:224
+#, kde-format
+msgid ""
+"The file %1 exists.\n"
+"Do you wish to overwrite it?"
+msgstr ""
+"\"%1\" деген файл бар екен.\n"
+"Үстінен жаза берейік пе?"
+
+#: plugins/reports/kexireportview.cpp:177
+#, kde-format
+msgid "Failed to open %1 in KSpread"
+msgstr "%1 дегенді KSpread-те ашылмады"
+
+#: plugins/reports/kexireportview.cpp:177
+msgid "Opening in KSpread failed"
+msgstr "KSpread-те ашу жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:205
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 in KSpread"
+msgid "Failed to save %1 to Words"
+msgstr "%1 дегенді KSpread-те ашылмады"
+
+#: plugins/reports/kexireportview.cpp:205
+#, fuzzy
+#| msgid "Saving failed"
+msgid "Saving to Words failed"
+msgstr "Сақтау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:217
+#, fuzzy
+#| msgid "Exporting report to %1 failed"
+msgid "Export Report as Web Page"
+msgstr "Есеп беруді %1 деп экспорттау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:219
+msgid "Report not exported, no file selected for writing to"
+msgstr "Есеп беру экспортталмайды - жазатын файл таңдалмаған"
+
+#: plugins/reports/kexireportview.cpp:219
+#, fuzzy
+#| msgid "Export"
+msgid "Not Exported"
+msgstr "Экспорт ету"
+
+#: plugins/reports/kexireportview.cpp:232
+msgid ""
+"Would you like to export using a Cascading Style Sheet which will give "
+"output closer to the original, or export using a Table which outputs a much "
+"simpler format."
+msgstr ""
+"Түпнұсқасына жақын қалдырып CSS-ті қолданып экспорт етуді қалайсыз ба, әлде "
+"қарапайымдау жәй кестеге экспорттап шығарасыз ба?"
+
+#: plugins/reports/kexireportview.cpp:233
+msgid "Export Style"
+msgstr "Экспорт ету стилі"
+
+#: plugins/reports/kexireportview.cpp:244
+#, kde-format
+msgid "Exporting report to %1 failed"
+msgstr "Есеп беруді %1 деп экспорттау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:244
+#, fuzzy
+#| msgid "Saving failed"
+msgid "Exporting failed"
+msgstr "Сақтау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:246
+#, fuzzy, kde-format
+#| msgid "Report saved to %1"
+msgid "Report exported to %1"
+msgstr "Есеп беру %1 деп сақталды"
+
+#: plugins/reports/kexireportview.cpp:246
+#, fuzzy
+#| msgid "Exporting"
+msgid "Exporting Succeeded"
+msgstr "Экспорттау"
+
+#: plugins/reports/kexireportview.cpp:316
+msgid "Report schema appears to be invalid or corrupt"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:316
+#, fuzzy
+#| msgid "Saving failed"
+msgid "Opening failed"
+msgstr "Сақтау жаңылысы"
+
+#: plugins/reports/kexisourceselector.cpp:52
+#, fuzzy
+#| msgid "Data"
+msgid "Set Data"
+msgstr "Деректер"
+
+#: plugins/reports/kexisourceselector.cpp:56
+#, fuzzy
+#| msgctxt "General properties"
+#| msgid "General"
+msgid "Internal"
+msgstr "Жалпы"
+
+#: plugins/reports/kexisourceselector.cpp:57
+#, fuzzy
+#| msgid "External Data"
+msgid "External"
+msgstr "Сыртқы деректер"
+
+#: plugins/reports/kexisourceselector.cpp:63
+#, fuzzy
+#| msgid ""
+#| "Row Source\n"
+#| "Type"
+msgid "Source Type:"
+msgstr ""
+"Деректер\n"
+"көзінің түрі"
+
+#: plugins/reports/kexisourceselector.cpp:71
+#, fuzzy
+#| msgctxt "General properties"
+#| msgid "General"
+msgid "Internal Source:"
+msgstr "Жалпы"
+
+#: plugins/reports/kexisourceselector.cpp:76
+#, fuzzy
+#| msgid "External Data"
+msgid "External Source:"
+msgstr "Сыртқы деректер"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:125
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:126
+#, fuzzy
+#| msgid "Field Caption"
+msgid "File actions"
+msgstr "Өрістің айдары"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:127
+#, fuzzy
+#| msgid "&New..."
+msgid "New"
+msgstr "&Жаңа..."
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:131
+#, fuzzy
+#| msgid "&Open"
+msgid "Open..."
+msgstr "&Ашу"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:135
+#, fuzzy
+#| msgid "Save &As..."
+msgid "Save As..."
+msgstr "&Былай сақтау..."
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:141
+#, fuzzy
+#| msgid "&Edit"
+msgid "Edit"
+msgstr "Өң&деу"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:143
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:144
+#, fuzzy
+#| msgid "Edit Collection..."
+msgid "Edit actions"
+msgstr "Жиынды өзгерту..."
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:150
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:234
+msgid "Configure Editor..."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:152
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:153
+msgid "Configure the scripting editor"
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:161
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:162
+#, fuzzy
+#| msgid "Execute Script"
+msgid "Execute the scripting code"
+msgstr "Скриптті орындау"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:273
+#, fuzzy
+#| msgid "Size Type"
+msgid "Script Type"
+msgstr "Өлшемінің түрі"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:274
+msgid "The type of script"
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:288
+msgid "Interpreter"
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:289
+msgid "The used scripting interpreter."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:353
+#, kde-format
+msgid "Execution of the script \"%1\" started."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:368
+#, c-format, kde-format
+msgid "Successfully executed. Time elapsed: %1ms"
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscripteditor.cpp:73
+msgid ""
+"This note will appear for a user in the script's source code as a comment. "
+"Keep every row not longer than 60 characters and use '\n"
+".'"
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:81
+#, fuzzy
+#| msgid "Subscript"
+msgctxt ""
+"Translate this word using only lowercase alphanumeric characters (a..z, "
+"0..9). Use '_' character instead of spaces. First character should be a..z "
+"character. If you cannot use latin characters in your language, use english "
+"word."
+msgid "script"
+msgstr "Жол астылық"
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:82
+#, fuzzy
+#| msgctxt "tooltip"
+#| msgid "Create new report"
+msgctxt "tooltip"
+msgid "Create new script"
+msgstr "Жаңа есеп беруді құру"
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:83
+#, fuzzy
+#| msgctxt "what's this"
+#| msgid "Creates new report."
+msgctxt "what's this"
+msgid "Creates new script."
+msgstr "Жаңа есеп беруді құру."
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:124
+#, kde-format
+msgid ""
+"Do you want to execute the script \"%1\"?\n"
+"\n"
+"Scripts obtained from unknown sources can contain dangerous code."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:125
+#, fuzzy
+#| msgid "Execute Script"
+msgid "Execute Script?"
+msgstr "Скриптті орындау"
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:256
+#, fuzzy
+#| msgid "Subscript"
+msgid "Scripts"
+msgstr "Жол астылық"
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:284
+#, fuzzy, kde-format
+#| msgid "Design of form \"%1\" has been modified."
+msgid "Design of script \"%1\" has been modified."
+msgstr "\"%1\" пішіннің құрылымы өзгертілген."
+
+#: plugins/scripting/kexiscripting/kexiscriptpart.cpp:286
+#, fuzzy, kde-format
+#| msgid "Form \"%1\" already exists."
+msgid "Script \"%1\" already exists."
+msgstr "\"%1\" деген пішін бар екен."
+
 #: plugins/tables/kexitabledesignercommands.cpp:77
 #, kde-format
 msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
@@ -7326,17 +7708,6 @@ msgstr "Бос жол"
 msgid "Do you want to save the design now?"
 msgstr "Құрылымды қазір сақтауды қалайсыз ба?"
 
-#: plugins/autoforms/KexiAutoFormPart.cpp:32
-#, fuzzy
-#| msgid "Report"
-msgctxt ""
-"Translate this word using only lowercase alphanumeric characters (a..z, "
-"0..9). Use '_' character instead of spaces. First character should be a..z "
-"character. If you cannot use latin characters in your language, use english "
-"word."
-msgid "report"
-msgstr "Есеп беру"
-
 #: plugins/autoforms/KexiAutoFormPart.cpp:33
 #, fuzzy
 #| msgctxt "tooltip"
@@ -7359,33 +7730,28 @@ msgstr "Жаңа пішінді құру."
 msgid "Record"
 msgstr "Жазуды қосу"
 
-#: webforms/main.cpp:53
-msgid "Web Forms Daemon"
-msgstr "Веб пішіндер қызметі"
+#: shapes/relationdesign/kexirelationdesigntool.cpp:95
+#: widget/kexidbconnectionwidget.cpp:373
+msgid "Open Database"
+msgstr "Деректер қорын ашу"
 
-#: webforms/main.cpp:54
-msgid "Exports Kexi Forms to standard HTML pages"
-msgstr "Kexi пішіндерді стандартты HTML беттеріне экспорттау"
+#: shapes/relationdesign/kexirelationdesigntoolfactory.cpp:26
+#, fuzzy
+#| msgid "Relationship"
+msgid "Relation design tool"
+msgstr "Қатынас"
 
-#: webforms/main.cpp:56
-msgid "(C) Copyright 2008, Lorenzo Villani"
-msgstr "(C) Copyright 2008, Lorenzo Villani"
+#: shapes/relationdesign/kexirelationdesignfactory.cpp:27
+#, fuzzy
+#| msgid "Relationship"
+msgid "Kexi Relation Design"
+msgstr "Қатынас"
 
-#: webforms/main.cpp:59
-msgid "Listen port"
-msgstr "Тыңдайтын порты"
-
-#: webforms/main.cpp:60
-msgid "Web Root (used also as template root directory)"
-msgstr "Веб түбірі (үлгі түбір қапшығы ретінде де пайдаланады)"
-
-#: webforms/main.cpp:61
-msgid "Path to SSL certificate file (PEM encoded)"
-msgstr "SSL куәлік файлының жолы (PEM кодталған)"
-
-#: webforms/main.cpp:62
-msgid "Path to Kexi database file"
-msgstr "Kexi деректер қоры файлының жолы"
+#: shapes/relationdesign/kexirelationdesignfactory.cpp:28
+#, fuzzy
+#| msgid "Relationship"
+msgid "A kexi relation design shape"
+msgstr "Қатынас"
 
 #: widget/KexiObjectInfoLabel.cpp:106
 #, kde-format
@@ -7543,10 +7909,6 @@ msgstr "Параметрлері"
 #: widget/kexidbconnectionwidget.cpp:256
 msgid "Details"
 msgstr "Егжей-тегжейі"
-
-#: widget/kexidbconnectionwidget.cpp:373 mobile/KexiMobileMainWindow.cpp:77
-msgid "Open Database"
-msgstr "Деректер қорын ашу"
 
 #: widget/kexidbconnectionwidget.cpp:384
 msgid "Connect to a Database Server"
@@ -8038,12 +8400,6 @@ msgctxt "Boolean False - No"
 msgid "No"
 msgstr "Жоқ"
 
-#: mobile/KexiMobileMainWindow.cpp:77
-#, fuzzy
-#| msgid "Database driver name"
-msgid "Database Files (*.kexi)"
-msgstr "Деректер қоры драйверінің атауы"
-
 #. i18n: file: main/kexifinddialog.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: rc.cpp:8
@@ -8459,6 +8815,37 @@ msgstr "Деректер қоры серверінде сақталатын жо
 msgid "Projects stored in a file"
 msgstr "Файлда сақталатын жобалар"
 
+#, fuzzy
+#~| msgid "Zoom Out"
+#~ msgid "Zoom Factor"
+#~ msgstr "Кішірейту"
+
+#~ msgid "Web Forms Daemon"
+#~ msgstr "Веб пішіндер қызметі"
+
+#~ msgid "Exports Kexi Forms to standard HTML pages"
+#~ msgstr "Kexi пішіндерді стандартты HTML беттеріне экспорттау"
+
+#~ msgid "(C) Copyright 2008, Lorenzo Villani"
+#~ msgstr "(C) Copyright 2008, Lorenzo Villani"
+
+#~ msgid "Listen port"
+#~ msgstr "Тыңдайтын порты"
+
+#~ msgid "Web Root (used also as template root directory)"
+#~ msgstr "Веб түбірі (үлгі түбір қапшығы ретінде де пайдаланады)"
+
+#~ msgid "Path to SSL certificate file (PEM encoded)"
+#~ msgstr "SSL куәлік файлының жолы (PEM кодталған)"
+
+#~ msgid "Path to Kexi database file"
+#~ msgstr "Kexi деректер қоры файлының жолы"
+
+#, fuzzy
+#~| msgid "Database driver name"
+#~ msgid "Database Files (*.kexi)"
+#~ msgstr "Деректер қоры драйверінің атауы"
+
 #~ msgid "Select Project's Caption"
 #~ msgstr "Жобаның айдарын таңдау"
 
@@ -8486,9 +8873,6 @@ msgstr "Файлда сақталатын жобалар"
 
 #~ msgid "Project"
 #~ msgstr "Жоба"
-
-#~ msgid "&New..."
-#~ msgstr "&Жаңа..."
 
 #~ msgid "Open Recent"
 #~ msgstr "Жуырдағыны ашу"
@@ -8528,9 +8912,6 @@ msgstr "Файлда сақталатын жобалар"
 
 #~ msgid "Delete Object"
 #~ msgstr "Нысанды жою"
-
-#~ msgid "Execute Script"
-#~ msgstr "Скриптті орындау"
 
 #, fuzzy
 #~| msgid "Table"
@@ -8579,9 +8960,6 @@ msgstr "Файлда сақталатын жобалар"
 #~ msgid "Group Sections"
 #~ msgstr "Бөлімдер тобы"
 
-#~ msgid "&Edit"
-#~ msgstr "Өң&деу"
-
 #~ msgid "Move &Up"
 #~ msgstr "Ж&оғарлату"
 
@@ -8612,110 +8990,17 @@ msgstr "Файлда сақталатын жобалар"
 #~ msgid "&Cancel"
 #~ msgstr "Қ&айту"
 
-#~ msgid "Page"
-#~ msgstr "Беті"
-
-#~ msgid "Print Report"
-#~ msgstr "Есеп беруді басып шығару"
-
-#~ msgid "Prints the current report."
-#~ msgstr "Назардағы есеп беруді басып шығару."
-
 #~ msgid "Open in KWord"
 #~ msgstr "KWord-та ашу"
-
-#~ msgid "Open the report in KWord"
-#~ msgstr "Есеп беруді KWord-та ашу"
 
 #~ msgid "Opens the current report in KWord."
 #~ msgstr "Назардағы есеп беруді KWord-та ашу."
 
-#~ msgid "Open in KSpread"
-#~ msgstr "KSpread-те ашу"
-
-#~ msgid "Open the report in KSpread"
-#~ msgstr "Есеп беруді KSpread-те ашу"
-
-#~ msgid "Opens the current report in KSpread."
-#~ msgstr "Назардағы есеп беруді KSpread-те ашу."
-
 #~ msgid "Export to HTML"
 #~ msgstr "HTML-ге экспорт ету"
 
-#~ msgid "Export the report to HTML"
-#~ msgstr "Есеп беруді HTML-ге экспорт ету"
-
-#~ msgid "Exports the report to a HTML file."
-#~ msgstr "Есеп беруді HTML файлына экпорттау"
-
-#~ msgid "Save Report to.."
-#~ msgstr "Есеп беруді мынаған сақтау..."
-
-#~ msgid "Report not exported.The URL was invalid"
-#~ msgstr "Есеп беру экспортталмады. URL-сілтемесі дұрыс емес"
-
-#~ msgid "Not Saved"
-#~ msgstr "Сақталмаған"
-
-#~ msgid ""
-#~ "The file %1 exists.\n"
-#~ "Do you wish to overwrite it?"
-#~ msgstr ""
-#~ "\"%1\" деген файл бар екен.\n"
-#~ "Үстінен жаза берейік пе?"
-
-#~ msgid "Failed to open %1 in KSpread"
-#~ msgstr "%1 дегенді KSpread-те ашылмады"
-
-#~ msgid "Opening in KSpread failed"
-#~ msgstr "KSpread-те ашу жаңылысы"
-
-#~ msgid "Report not exported, no file selected for writing to"
-#~ msgstr "Есеп беру экспортталмайды - жазатын файл таңдалмаған"
-
-#~ msgid ""
-#~ "Would you like to export using a Cascading Style Sheet which will give "
-#~ "output closer to the original, or export using a Table which outputs a "
-#~ "much simpler format."
-#~ msgstr ""
-#~ "Түпнұсқасына жақын қалдырып CSS-ті қолданып экспорт етуді қалайсыз ба, "
-#~ "әлде қарапайымдау жәй кестеге экспорттап шығарасыз ба?"
-
-#~ msgid "Export Style"
-#~ msgstr "Экспорт ету стилі"
-
-#~ msgid "Exporting report to %1 failed"
-#~ msgstr "Есеп беруді %1 деп экспорттау жаңылысы"
-
-#~ msgid "Saving failed"
-#~ msgstr "Сақтау жаңылысы"
-
-#~ msgid "Report saved to %1"
-#~ msgstr "Есеп беру %1 деп сақталды"
-
 #~ msgid "Saved OK"
 #~ msgstr "Сақтау сәтті өтті"
-
-#, fuzzy
-#~| msgid "Saving failed"
-#~ msgid "Opening failed"
-#~ msgstr "Сақтау жаңылысы"
-
-#, fuzzy
-#~| msgid "Data"
-#~ msgid "Set Data"
-#~ msgstr "Деректер"
-
-#, fuzzy
-#~| msgctxt "General properties"
-#~| msgid "General"
-#~ msgid "Internal"
-#~ msgstr "Жалпы"
-
-#, fuzzy
-#~| msgid "External Data"
-#~ msgid "External"
-#~ msgstr "Сыртқы деректер"
 
 #~ msgid "Page Header (Any)"
 #~ msgstr "Жоғарғы колонтитулы (барлығының)"
@@ -8843,27 +9128,8 @@ msgstr "Файлда сақталатын жобалар"
 #~ msgid "Bottom"
 #~ msgstr "Төмен"
 
-#, fuzzy
-#~| msgid "Edit Collection..."
-#~ msgid "Edit Sections"
-#~ msgstr "Жиынды өзгерту..."
-
-#~ msgid "Raise"
-#~ msgstr "Көтеру"
-
-#~ msgid "Lower"
-#~ msgstr "Төмендету"
-
 #~ msgid "Report"
 #~ msgstr "Есеп беру"
-
-#~ msgctxt "tooltip"
-#~ msgid "Create new report"
-#~ msgstr "Жаңа есеп беруді құру"
-
-#~ msgctxt "what's this"
-#~ msgid "Creates new report."
-#~ msgstr "Жаңа есеп беруді құру."
 
 #~ msgid "Report Writer"
 #~ msgstr "Есеп беруді жазу"
@@ -9292,16 +9558,6 @@ msgstr "Файлда сақталатын жобалар"
 
 #~ msgid "Relationships"
 #~ msgstr "Қатынастар"
-
-#, fuzzy
-#~| msgid "Relationship"
-#~ msgid "Kexi Relation Design"
-#~ msgstr "Қатынас"
-
-#, fuzzy
-#~| msgid "Relationship"
-#~ msgid "Relation design tool"
-#~ msgstr "Қатынас"
 
 #~ msgid "Clear row source"
 #~ msgstr "Деректер көзін тазалау"

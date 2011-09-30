@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-27 02:53+0200\n"
+"POT-Creation-Date: 2011-09-30 02:26+0200\n"
 "PO-Revision-Date: 2011-08-03 04:45+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Document loaded, URL=%1"
 msgstr "Құжат жүктелді, URL=%1"
 
-#: kernel/kptaccount.cpp:857 models/kptresourcemodel.cpp:445
+#: kernel/kptaccount.cpp:857 models/kptresourcemodel.cpp:447
 msgid "Account"
 msgstr "Есебі"
 
@@ -126,15 +126,15 @@ msgstr "Жоспарлау журналы"
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:136 kernel/kptnode.cpp:1512 kernel/kpttask.cpp:3634
-#: models/kpttreecombobox.cpp:124 models/kptresourcemodel.cpp:199
-#: models/kptresourcemodel.cpp:231 models/kptresourcemodel.cpp:352
-#: models/kptresourcemodel.cpp:356 models/kptresourcemodel.cpp:365
-#: models/kptresourceallocationmodel.cpp:743 models/kptschedulemodel.cpp:521
-#: models/kptnodeitemmodel.cpp:380 models/kptnodeitemmodel.cpp:396
-#: models/kptnodeitemmodel.cpp:406 models/kptnodeitemmodel.cpp:580
-#: models/kptnodeitemmodel.cpp:597 models/kptnodeitemmodel.cpp:615
-#: models/kptnodeitemmodel.cpp:633 models/kptnodeitemmodel.cpp:668
-#: models/kptnodeitemmodel.cpp:685 ui/kptpertresult.cpp:138
+#: models/kpttreecombobox.cpp:124 models/kptresourceallocationmodel.cpp:743
+#: models/kptschedulemodel.cpp:521 models/kptnodeitemmodel.cpp:380
+#: models/kptnodeitemmodel.cpp:396 models/kptnodeitemmodel.cpp:406
+#: models/kptnodeitemmodel.cpp:580 models/kptnodeitemmodel.cpp:597
+#: models/kptnodeitemmodel.cpp:615 models/kptnodeitemmodel.cpp:633
+#: models/kptnodeitemmodel.cpp:668 models/kptnodeitemmodel.cpp:685
+#: models/kptresourcemodel.cpp:201 models/kptresourcemodel.cpp:233
+#: models/kptresourcemodel.cpp:354 models/kptresourcemodel.cpp:358
+#: models/kptresourcemodel.cpp:367 ui/kptpertresult.cpp:138
 #: ui/kptpertresult.cpp:489 ui/kptresourcedialog.cpp:266
 #: ui/kptresourcedialog.cpp:292 ui/kpttaskcostpanel.cpp:50
 #: ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
@@ -1303,26 +1303,6 @@ msgctxt "@info:tooltip"
 msgid "The relations time lag"
 msgstr "Қатынас жағының уақыт айырмашылығы"
 
-#: models/kptdocumentmodel.cpp:171
-msgid "Url"
-msgstr "Url"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:32
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
-#: models/kptresourcemodel.cpp:436 models/kptresourceallocationmodel.cpp:333
-#: models/kptresourceappointmentsmodel.cpp:1526 rc.cpp:319
-msgid "Type"
-msgstr "Түрі"
-
-#: models/kptdocumentmodel.cpp:173
-msgid "Status"
-msgstr "Күй-жайы"
-
-#: models/kptdocumentmodel.cpp:174
-msgid "Send As"
-msgstr "Былай сақтау"
-
 #: models/kptflatproxymodel.cpp:273 models/kptrelationmodel.cpp:146
 msgid "Parent"
 msgstr "Аталығы"
@@ -1367,6 +1347,14 @@ msgstr "АА.кк"
 msgid "Child"
 msgstr "Туынды"
 
+#. i18n: file: ui/kptresourceassignmentview.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptrelationmodel.cpp:148 models/kptresourceallocationmodel.cpp:333
+#: models/kptresourceappointmentsmodel.cpp:1526
+#: models/kptdocumentmodel.cpp:172 models/kptresourcemodel.cpp:438 rc.cpp:319
+msgid "Type"
+msgstr "Түрі"
+
 #: models/kptrelationmodel.cpp:149
 msgid "Lag"
 msgstr "Аралығы"
@@ -1405,221 +1393,23 @@ msgstr "Жұмыс дестесі қабылданған кезі: %1"
 msgid "Task reported %1% completed"
 msgstr "Тапсырманың %1% бітті деп хабарланды"
 
-#: models/kptresourcemodel.cpp:207 models/kptresourcemodel.cpp:233
-#, kde-format
-msgctxt "Default (calendar name)"
-msgid "Default (%1)"
-msgstr "Әдетті (%1)"
-
-#: models/kptresourcemodel.cpp:214
-msgctxt "@info:tooltip"
-msgid "A team resource does not have a calendar"
-msgstr "Атқарушы топтың күнтізбесі жоқ"
-
-#: models/kptresourcemodel.cpp:216
-msgctxt "@info:tooltip"
-msgid "No calendar"
-msgstr "Күнтізбесі жоқ"
-
-#: models/kptresourcemodel.cpp:224
-#, kde-format
-msgctxt "@info:tooltip 1=calendar name"
-msgid "Using default calendar: %1"
-msgstr "Қолданыстағы әдетті күнтізбе: %1"
-
-#: models/kptresourcemodel.cpp:278
-#, kde-format
-msgctxt "infor:tooltip"
-msgid "Available from: %1"
-msgstr "Мына кезден бастап бос: %1"
-
-#: models/kptresourcemodel.cpp:280
-#, kde-format
-msgctxt "infor:tooltip"
-msgid "Available from project target start time: %1"
-msgstr "Жобаның мына бастау кезінен бастап бос : %1"
-
-#: models/kptresourcemodel.cpp:300
-#, kde-format
-msgctxt "infor:tooltip"
-msgid "Available until: %1"
-msgstr "Мынаған дейін бос: %1"
-
-#: models/kptresourcemodel.cpp:302
-#, kde-format
-msgctxt "infor:tooltip"
-msgid "Available from project target finish time: %1"
-msgstr "Жобаның мына аяқтау кезінен бастап бос : %1"
-
-#: models/kptresourcemodel.cpp:321
-#, kde-format
-msgid "Cost per hour, normal time: %1"
-msgstr "Жұмыс уақытындағы сағаттық мөлшерлемесі: %1"
-
-#: models/kptresourcemodel.cpp:339
-#, kde-format
-msgid "Cost per hour, overtime: %1"
-msgstr "Жұмыстан тыс уақытындағы сағаттық мөлшерлемесі: %1"
-
-#: models/kptresourcemodel.cpp:356
-#, kde-format
-msgid "Account: %1"
-msgstr "Есебі: %1"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:27
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptresourcemodel.cpp:435 models/kptaccountsmodel.cpp:127
-#: models/kptaccountsmodel.cpp:1029 models/kptresourceallocationmodel.cpp:332
-#: models/kptresourceappointmentsmodel.cpp:911
-#: models/kptresourceappointmentsmodel.cpp:926
-#: models/kptresourceappointmentsmodel.cpp:1525
-#: models/kptschedulemodel.cpp:865 models/kptschedulemodel.cpp:1121 rc.cpp:316
-msgid "Name"
-msgstr "Атауы"
-
-#: models/kptresourcemodel.cpp:437
-msgid "Initials"
-msgstr "Инициалдары"
-
-#: models/kptresourcemodel.cpp:438
-msgid "Email"
-msgstr "Эл.поштасы"
-
-#: models/kptresourcemodel.cpp:439
-msgid "Calendar"
-msgstr "Күнтізбесі"
-
-#: models/kptresourcemodel.cpp:440
-msgid "Limit (%)"
-msgstr "Шегі (%1)"
-
-#: models/kptresourcemodel.cpp:441
-msgid "Available From"
-msgstr "Қай кезден бастап бос"
-
-#: models/kptresourcemodel.cpp:442
-msgid "Available Until"
-msgstr "Қай кездге дейін бос"
-
-#: models/kptresourcemodel.cpp:443
-msgid "Normal Rate"
-msgstr "Жұмыс уақыт бағасы"
-
-#: models/kptresourcemodel.cpp:444
-msgid "Overtime Rate"
-msgstr "Артық жұмысының бағасы:"
-
-#: models/kptresourcemodel.cpp:1022
-msgctxt "(qtundo-format)"
-msgid "Modify resource account"
-msgstr "Атқарушының есебін өзгерту"
-
-#: models/kptresourcemodel.cpp:1243
-#, kde-format
-msgid "Move resource"
-msgid_plural "Move %1 resources"
-msgstr[0] "%1 атқарушыны жылжыту"
-
-#: models/kptresourcemodel.cpp:1262
-#, kde-format
-msgid "Copy resource"
-msgid_plural "Copy %1 resources"
-msgstr[0] "%1 атқарушыны кошіріп алу"
-
-#: models/kptresourcemodel.cpp:1281
-#: models/kptresourceappointmentsmodel.cpp:1118
-#, kde-format
-msgctxt "(qtundo-format)"
-msgid "Add resource from address book"
-msgid_plural "Add %1 resources from address book"
-msgstr[0] "Адрестік кітапшадан алып %1 атқарушыны қосу"
-
-#: models/kptresourcemodel.cpp:1344
-msgctxt "(qtundo-format)"
-msgid "Add resource group"
-msgstr "Атқарушы тобын қосу..."
-
-#: models/kptresourcemodel.cpp:1355 models/kptnodeitemmodel.cpp:3313
-msgctxt "(qtundo-format)"
-msgid "Add resource"
-msgstr "Атқарушыны қосу..."
-
-#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
-#: ui/kptresourceassignmentview.cpp:333
-msgid "Not Started"
-msgstr "Басталмаған"
-
-#: models/kpttaskstatusmodel.cpp:51
-msgid "Tasks that should have been started"
-msgstr "Басталуға тиіс тапсырмалар"
-
-#. i18n: file: ui/kpttaskcostpanelbase.ui:24
-#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kpttaskstatusmodel.cpp:54 models/kptnodeitemmodel.cpp:1274
-#: rc.cpp:404
-msgid "Running"
-msgstr "Орындалып жатыр"
-
-#: models/kpttaskstatusmodel.cpp:55
-msgid "Tasks that are running"
-msgstr "Орындалып жатқан тапсырмалар"
-
-#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kpttaskstatusmodel.cpp:58 models/kptnodeitemmodel.cpp:1271
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
-#: rc.cpp:193
-msgid "Finished"
-msgstr "Аяқталған"
-
-#: models/kpttaskstatusmodel.cpp:59
-msgid "Tasks that have finished during this period"
-msgstr "Осы мезгілде аяқталған тапсырмалар"
-
-#: models/kpttaskstatusmodel.cpp:62
-msgid "Next Period"
-msgstr "Келесі мезгіл"
-
-#: models/kpttaskstatusmodel.cpp:63
-msgid "Tasks that are scheduled to start next period"
-msgstr "Келесі мезгілде басталуы жопарланған тапсырмалар"
-
-#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:3405
-#, no-c-format
-msgctxt "(qtundo-format)"
-msgid "Modify completion"
-msgstr "Бітуін өзгерту"
-
-#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:3434
-msgctxt "(qtundo-format)"
-msgid "Set finished"
-msgstr "Аяқталған деу"
-
-#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:2876
-msgctxt "(qtundo-format)"
-msgid "Modify remaining effort"
-msgstr "Қалған жұмыс көлемін өзгерту"
-
-#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:2888
-msgctxt "(qtundo-format)"
-msgid "Modify actual effort"
-msgstr "Іс жүзіндегі жұмыс көлемін өзгерту"
-
-#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:2901
-msgctxt "(qtundo-format)"
-msgid "Modify actual start time"
-msgstr "Шын басталуы уақытын өзгерту"
-
-#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:2930
-msgctxt "(qtundo-format)"
-msgid "Modify actual finish time"
-msgstr "Шын аяқтау уақытын өзгерту"
-
 #: models/kptaccountsmodel.cpp:87
 #, kde-format
 msgctxt "1=account name"
 msgid "%1 (Default account)"
 msgstr "%1 (Әдетті есебі)"
+
+#. i18n: file: ui/kptresourceassignmentview.ui:27
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptaccountsmodel.cpp:127 models/kptaccountsmodel.cpp:1029
+#: models/kptresourceallocationmodel.cpp:332
+#: models/kptresourceappointmentsmodel.cpp:911
+#: models/kptresourceappointmentsmodel.cpp:926
+#: models/kptresourceappointmentsmodel.cpp:1525
+#: models/kptschedulemodel.cpp:865 models/kptschedulemodel.cpp:1121
+#: models/kptresourcemodel.cpp:437 rc.cpp:316
+msgid "Name"
+msgstr "Атауы"
 
 #: models/kptaccountsmodel.cpp:128 models/kptaccountsmodel.cpp:1032
 msgid "Description"
@@ -1659,141 +1449,6 @@ msgstr "Қортындысы"
 #: models/kptaccountsmodel.cpp:1064
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr "Есебі бойынша қортынды бағасы: Шын бағасы [Жоспарлаған бағасы] дегені"
-
-#: models/kptcalendarmodel.cpp:282
-#, kde-format
-msgctxt "1=calendar name"
-msgid "%1 (Default calendar)"
-msgstr "%1 (Әдетті күнтізбе)"
-
-#: models/kptcalendarmodel.cpp:299
-msgctxt "(qtundo-format)"
-msgid "Modify calendar name"
-msgstr "Күнтізбенің атауын өзгерту"
-
-#: models/kptcalendarmodel.cpp:307
-msgctxt "(qtundo-format)"
-msgid "De-select as default calendar"
-msgstr "Әдетті күнтізбе болудан шығару"
-
-#: models/kptcalendarmodel.cpp:313
-msgctxt "(qtundo-format)"
-msgid "Select as default calendar"
-msgstr "Әдетті күнтізбе қылу"
-
-#: models/kptcalendarmodel.cpp:371
-msgctxt "(qtundo-format)"
-msgid "Modify calendar timezone"
-msgstr "Күнтізбенің уақыт белдеуін өзгерту"
-
-#: models/kptcalendarmodel.cpp:420 models/kptnodeitemmodel.cpp:2219
-msgctxt "@title:column"
-msgid "Name"
-msgstr "Атауы"
-
-#: models/kptcalendarmodel.cpp:421
-#, fuzzy
-#| msgid "Timezone"
-msgctxt "@title:column"
-msgid "Timezone"
-msgstr "Уақыт белдеуі"
-
-#: models/kptcalendarmodel.cpp:509
-msgctxt "(qtundo-format)"
-msgid "Re-parent calendar"
-msgstr "Күнтізбені реттеп шығу"
-
-#: models/kptcalendarmodel.cpp:512
-msgctxt "(qtundo-format)"
-msgid "Move calendar"
-msgstr "Күнтізбені жыжыту"
-
-#: models/kptcalendarmodel.cpp:568
-msgctxt "(qtundo-format)"
-msgid "Add calendar"
-msgstr "Күнтізбені қосу"
-
-#: models/kptcalendarmodel.cpp:591
-msgctxt "(qtundo-format)"
-msgid "Delete calendar"
-msgstr "Күнтізбені өшіру"
-
-#: models/kptcalendarmodel.cpp:759
-msgctxt "Undefined"
-msgid "U"
-msgstr "U"
-
-#: models/kptcalendarmodel.cpp:760 models/kptcalendarmodel.cpp:987
-msgctxt "NonWorking"
-msgid "NW"
-msgstr "NW"
-
-#: models/kptcalendarmodel.cpp:761
-msgctxt "Working"
-msgid "W"
-msgstr "W"
-
-#: models/kptcalendarmodel.cpp:790
-msgctxt "(qtundo-format)"
-msgid "Modify calendar state"
-msgstr "Күнтізбенің күйін өзгерту"
-
-#: models/kptcalendarmodel.cpp:811
-#, kde-format
-msgctxt "1=time 2=The number of hours of work duration (non integer)"
-msgid "%1, %2 hours"
-msgstr "%1, %2 сағат"
-
-#: models/kptcalendarmodel.cpp:866 models/kptcalendarmodel.cpp:1025
-msgctxt "@info:tooltip"
-msgid "Undefined"
-msgstr "Анықталмаған"
-
-#: models/kptcalendarmodel.cpp:869 models/kptcalendarmodel.cpp:1028
-msgctxt "@info:tooltip"
-msgid "Non-working"
-msgstr "Істемейтін"
-
-#: models/kptcalendarmodel.cpp:875 models/kptcalendarmodel.cpp:1034
-#, kde-format
-msgctxt "@info:tooltip 1=time 2=The work duration (non integer)"
-msgid "%1, %2"
-msgstr "%1, %2"
-
-#: models/kptcalendarmodel.cpp:879 models/kptcalendarmodel.cpp:1038
-msgctxt "@info:tooltip"
-msgid "Working"
-msgstr "Істейтін"
-
-#: models/kptcalendarmodel.cpp:1222 models/kptcalendarmodel.cpp:1246
-#, fuzzy
-#| msgctxt "(qtundo-format)"
-#| msgid "Modify calendar name"
-msgctxt "(qtundo_format)"
-msgid "Modify calendar weekday"
-msgstr "Күнтізбенің атауын өзгерту"
-
-#: models/kptcalendarmodel.cpp:1274 models/kptcalendarmodel.cpp:1298
-#, fuzzy
-#| msgctxt "(qtundo-format)"
-#| msgid "Modify calendar state"
-msgctxt "(qtundo_format)"
-msgid "Modify calendar date"
-msgstr "Күнтізбенің күйін өзгерту"
-
-#: models/kptcalendarmodel.cpp:1315
-#, fuzzy
-#| msgid "Week"
-msgctxt "@title:column"
-msgid "Weekday"
-msgstr "Апта"
-
-#: models/kptcalendarmodel.cpp:1316
-#, fuzzy
-#| msgid "Date"
-msgctxt "@title:column"
-msgid "Date"
-msgstr "Күні"
 
 #: models/kptpertcpmmodel.cpp:151
 msgid "Path"
@@ -1933,6 +1588,14 @@ msgstr "Жалпы бөлінген уақыты"
 #, kde-format
 msgid "Bookings on %1"
 msgstr "%1 кезіне бөлінгені"
+
+#: models/kptresourceappointmentsmodel.cpp:1118
+#: models/kptresourcemodel.cpp:1246
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Add resource from address book"
+msgid_plural "Add %1 resources from address book"
+msgstr[0] "Адрестік кітапшадан алып %1 атқарушыны қосу"
 
 #: models/kptresourceappointmentsmodel.cpp:1256
 #, kde-format
@@ -2236,6 +1899,153 @@ msgstr "Қатандығы"
 msgid "Message"
 msgstr "Хабарлама"
 
+#: models/kptcalendarmodel.cpp:282
+#, kde-format
+msgctxt "1=calendar name"
+msgid "%1 (Default calendar)"
+msgstr "%1 (Әдетті күнтізбе)"
+
+#: models/kptcalendarmodel.cpp:299
+msgctxt "(qtundo-format)"
+msgid "Modify calendar name"
+msgstr "Күнтізбенің атауын өзгерту"
+
+#: models/kptcalendarmodel.cpp:307
+msgctxt "(qtundo-format)"
+msgid "De-select as default calendar"
+msgstr "Әдетті күнтізбе болудан шығару"
+
+#: models/kptcalendarmodel.cpp:313
+msgctxt "(qtundo-format)"
+msgid "Select as default calendar"
+msgstr "Әдетті күнтізбе қылу"
+
+#: models/kptcalendarmodel.cpp:371
+msgctxt "(qtundo-format)"
+msgid "Modify calendar timezone"
+msgstr "Күнтізбенің уақыт белдеуін өзгерту"
+
+#: models/kptcalendarmodel.cpp:420 models/kptnodeitemmodel.cpp:2219
+msgctxt "@title:column"
+msgid "Name"
+msgstr "Атауы"
+
+#: models/kptcalendarmodel.cpp:421
+#, fuzzy
+#| msgid "Timezone"
+msgctxt "@title:column"
+msgid "Timezone"
+msgstr "Уақыт белдеуі"
+
+#: models/kptcalendarmodel.cpp:509
+msgctxt "(qtundo-format)"
+msgid "Re-parent calendar"
+msgstr "Күнтізбені реттеп шығу"
+
+#: models/kptcalendarmodel.cpp:512
+msgctxt "(qtundo-format)"
+msgid "Move calendar"
+msgstr "Күнтізбені жыжыту"
+
+#: models/kptcalendarmodel.cpp:568
+msgctxt "(qtundo-format)"
+msgid "Add calendar"
+msgstr "Күнтізбені қосу"
+
+#: models/kptcalendarmodel.cpp:591
+msgctxt "(qtundo-format)"
+msgid "Delete calendar"
+msgstr "Күнтізбені өшіру"
+
+#: models/kptcalendarmodel.cpp:759
+msgctxt "Undefined"
+msgid "U"
+msgstr "U"
+
+#: models/kptcalendarmodel.cpp:760 models/kptcalendarmodel.cpp:987
+msgctxt "NonWorking"
+msgid "NW"
+msgstr "NW"
+
+#: models/kptcalendarmodel.cpp:761
+msgctxt "Working"
+msgid "W"
+msgstr "W"
+
+#: models/kptcalendarmodel.cpp:790
+msgctxt "(qtundo-format)"
+msgid "Modify calendar state"
+msgstr "Күнтізбенің күйін өзгерту"
+
+#: models/kptcalendarmodel.cpp:811
+#, kde-format
+msgctxt "1=time 2=The number of hours of work duration (non integer)"
+msgid "%1, %2 hours"
+msgstr "%1, %2 сағат"
+
+#: models/kptcalendarmodel.cpp:866 models/kptcalendarmodel.cpp:1025
+msgctxt "@info:tooltip"
+msgid "Undefined"
+msgstr "Анықталмаған"
+
+#: models/kptcalendarmodel.cpp:869 models/kptcalendarmodel.cpp:1028
+msgctxt "@info:tooltip"
+msgid "Non-working"
+msgstr "Істемейтін"
+
+#: models/kptcalendarmodel.cpp:875 models/kptcalendarmodel.cpp:1034
+#, kde-format
+msgctxt "@info:tooltip 1=time 2=The work duration (non integer)"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: models/kptcalendarmodel.cpp:879 models/kptcalendarmodel.cpp:1038
+msgctxt "@info:tooltip"
+msgid "Working"
+msgstr "Істейтін"
+
+#: models/kptcalendarmodel.cpp:1222 models/kptcalendarmodel.cpp:1246
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Modify calendar name"
+msgctxt "(qtundo_format)"
+msgid "Modify calendar weekday"
+msgstr "Күнтізбенің атауын өзгерту"
+
+#: models/kptcalendarmodel.cpp:1274 models/kptcalendarmodel.cpp:1298
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Modify calendar state"
+msgctxt "(qtundo_format)"
+msgid "Modify calendar date"
+msgstr "Күнтізбенің күйін өзгерту"
+
+#: models/kptcalendarmodel.cpp:1315
+#, fuzzy
+#| msgid "Week"
+msgctxt "@title:column"
+msgid "Weekday"
+msgstr "Апта"
+
+#: models/kptcalendarmodel.cpp:1316
+#, fuzzy
+#| msgid "Date"
+msgctxt "@title:column"
+msgid "Date"
+msgstr "Күні"
+
+#: models/kptdocumentmodel.cpp:171
+msgid "Url"
+msgstr "Url"
+
+#: models/kptdocumentmodel.cpp:173
+msgid "Status"
+msgstr "Күй-жайы"
+
+#: models/kptdocumentmodel.cpp:174
+msgid "Send As"
+msgstr "Былай сақтау"
+
 #: models/kptnodeitemmodel.cpp:148
 msgctxt "@info:tooltip"
 msgid "No resources has been allocated"
@@ -2465,6 +2275,21 @@ msgstr "Кеш аяқталған"
 #: models/kptnodeitemmodel.cpp:1269
 msgid "Finished early"
 msgstr "Ерте аяқталған"
+
+#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: models/kptnodeitemmodel.cpp:1271 models/kpttaskstatusmodel.cpp:58
+#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: rc.cpp:193
+msgid "Finished"
+msgstr "Аяқталған"
+
+#. i18n: file: ui/kpttaskcostpanelbase.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
+#: models/kptnodeitemmodel.cpp:1274 models/kpttaskstatusmodel.cpp:54
+#: rc.cpp:404
+msgid "Running"
+msgstr "Орындалып жатыр"
 
 #: models/kptnodeitemmodel.cpp:1278
 msgid "Started late"
@@ -3239,15 +3064,51 @@ msgctxt "(qtundo-format)"
 msgid "Modify shutdown cost"
 msgstr "Аяқтау бағасын өзгерту"
 
+#: models/kptnodeitemmodel.cpp:2876 models/kpttaskstatusmodel.cpp:433
+msgctxt "(qtundo-format)"
+msgid "Modify remaining effort"
+msgstr "Қалған жұмыс көлемін өзгерту"
+
+#: models/kptnodeitemmodel.cpp:2888 models/kpttaskstatusmodel.cpp:446
+msgctxt "(qtundo-format)"
+msgid "Modify actual effort"
+msgstr "Іс жүзіндегі жұмыс көлемін өзгерту"
+
+#: models/kptnodeitemmodel.cpp:2901 models/kpttaskstatusmodel.cpp:460
+msgctxt "(qtundo-format)"
+msgid "Modify actual start time"
+msgstr "Шын басталуы уақытын өзгерту"
+
+#: models/kptnodeitemmodel.cpp:2930 models/kpttaskstatusmodel.cpp:488
+msgctxt "(qtundo-format)"
+msgid "Modify actual finish time"
+msgstr "Шын аяқтау уақытын өзгерту"
+
 #: models/kptnodeitemmodel.cpp:3307 models/kptnodeitemmodel.cpp:3316
 #: models/kptnodeitemmodel.cpp:3351 models/kptnodeitemmodel.cpp:3354
 #: ui/reports/reportview.cpp:927
 msgid "Resources"
 msgstr "Атқарушылар"
 
+#: models/kptnodeitemmodel.cpp:3313 models/kptresourcemodel.cpp:1422
+msgctxt "(qtundo-format)"
+msgid "Add resource"
+msgstr "Атқарушыны қосу..."
+
 #: models/kptnodeitemmodel.cpp:3328
 msgid "Modify resource allocations"
 msgstr "Атқарушы бөлінуін өзгерту"
+
+#: models/kptnodeitemmodel.cpp:3405 models/kpttaskstatusmodel.cpp:383
+#, no-c-format
+msgctxt "(qtundo-format)"
+msgid "Modify completion"
+msgstr "Бітуін өзгерту"
+
+#: models/kptnodeitemmodel.cpp:3434 models/kpttaskstatusmodel.cpp:412
+msgctxt "(qtundo-format)"
+msgid "Set finished"
+msgstr "Аяқталған деу"
 
 #: models/kptnodeitemmodel.cpp:3714 models/kptnodeitemmodel.cpp:4754
 msgctxt "(qtundo-format)"
@@ -3263,6 +3124,146 @@ msgstr "Тапсырманы қосу"
 msgctxt "(qtundo-format)"
 msgid "Add sub-task"
 msgstr "Тапсырманың саласын қосу"
+
+#: models/kptresourcemodel.cpp:209 models/kptresourcemodel.cpp:235
+#, kde-format
+msgctxt "Default (calendar name)"
+msgid "Default (%1)"
+msgstr "Әдетті (%1)"
+
+#: models/kptresourcemodel.cpp:216
+msgctxt "@info:tooltip"
+msgid "A team resource does not have a calendar"
+msgstr "Атқарушы топтың күнтізбесі жоқ"
+
+#: models/kptresourcemodel.cpp:218
+msgctxt "@info:tooltip"
+msgid "No calendar"
+msgstr "Күнтізбесі жоқ"
+
+#: models/kptresourcemodel.cpp:226
+#, kde-format
+msgctxt "@info:tooltip 1=calendar name"
+msgid "Using default calendar: %1"
+msgstr "Қолданыстағы әдетті күнтізбе: %1"
+
+#: models/kptresourcemodel.cpp:280
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from: %1"
+msgstr "Мына кезден бастап бос: %1"
+
+#: models/kptresourcemodel.cpp:282
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from project target start time: %1"
+msgstr "Жобаның мына бастау кезінен бастап бос : %1"
+
+#: models/kptresourcemodel.cpp:302
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available until: %1"
+msgstr "Мынаған дейін бос: %1"
+
+#: models/kptresourcemodel.cpp:304
+#, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from project target finish time: %1"
+msgstr "Жобаның мына аяқтау кезінен бастап бос : %1"
+
+#: models/kptresourcemodel.cpp:323
+#, kde-format
+msgid "Cost per hour, normal time: %1"
+msgstr "Жұмыс уақытындағы сағаттық мөлшерлемесі: %1"
+
+#: models/kptresourcemodel.cpp:341
+#, kde-format
+msgid "Cost per hour, overtime: %1"
+msgstr "Жұмыстан тыс уақытындағы сағаттық мөлшерлемесі: %1"
+
+#: models/kptresourcemodel.cpp:358
+#, kde-format
+msgid "Account: %1"
+msgstr "Есебі: %1"
+
+#: models/kptresourcemodel.cpp:439
+msgid "Initials"
+msgstr "Инициалдары"
+
+#: models/kptresourcemodel.cpp:440
+msgid "Email"
+msgstr "Эл.поштасы"
+
+#: models/kptresourcemodel.cpp:441
+msgid "Calendar"
+msgstr "Күнтізбесі"
+
+#: models/kptresourcemodel.cpp:442
+msgid "Limit (%)"
+msgstr "Шегі (%1)"
+
+#: models/kptresourcemodel.cpp:443
+msgid "Available From"
+msgstr "Қай кезден бастап бос"
+
+#: models/kptresourcemodel.cpp:444
+msgid "Available Until"
+msgstr "Қай кездге дейін бос"
+
+#: models/kptresourcemodel.cpp:445
+msgid "Normal Rate"
+msgstr "Жұмыс уақыт бағасы"
+
+#: models/kptresourcemodel.cpp:446
+msgid "Overtime Rate"
+msgstr "Артық жұмысының бағасы:"
+
+#: models/kptresourcemodel.cpp:1024
+msgctxt "(qtundo-format)"
+msgid "Modify resource account"
+msgstr "Атқарушының есебін өзгерту"
+
+#: models/kptresourcemodel.cpp:1301
+#, kde-format
+msgid "Move resource"
+msgid_plural "Move %1 resources"
+msgstr[0] "%1 атқарушыны жылжыту"
+
+#: models/kptresourcemodel.cpp:1320
+#, kde-format
+msgid "Copy resource"
+msgid_plural "Copy %1 resources"
+msgstr[0] "%1 атқарушыны кошіріп алу"
+
+#: models/kptresourcemodel.cpp:1411
+msgctxt "(qtundo-format)"
+msgid "Add resource group"
+msgstr "Атқарушы тобын қосу..."
+
+#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
+#: ui/kptresourceassignmentview.cpp:333
+msgid "Not Started"
+msgstr "Басталмаған"
+
+#: models/kpttaskstatusmodel.cpp:51
+msgid "Tasks that should have been started"
+msgstr "Басталуға тиіс тапсырмалар"
+
+#: models/kpttaskstatusmodel.cpp:55
+msgid "Tasks that are running"
+msgstr "Орындалып жатқан тапсырмалар"
+
+#: models/kpttaskstatusmodel.cpp:59
+msgid "Tasks that have finished during this period"
+msgstr "Осы мезгілде аяқталған тапсырмалар"
+
+#: models/kpttaskstatusmodel.cpp:62
+msgid "Next Period"
+msgstr "Келесі мезгіл"
+
+#: models/kpttaskstatusmodel.cpp:63
+msgid "Tasks that are scheduled to start next period"
+msgstr "Келесі мезгілде басталуы жопарланған тапсырмалар"
 
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
@@ -3993,55 +3994,6 @@ msgstr "Қалған жұмыс көлемі"
 msgid "Planned Effort"
 msgstr "Жоспарланған жұмыс көлемі"
 
-#: ui/kptviewbase.cpp:53
-msgid "Header and Footer"
-msgstr "Колонтитулдар"
-
-#: ui/kptviewbase.cpp:152
-msgctxt "@title:tab"
-msgid "Page Layout"
-msgstr "Орналасуы"
-
-#: ui/kptviewbase.cpp:248
-#, kde-format
-msgctxt "1=page number, 2=last page number"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: ui/kptviewbase.cpp:330
-msgid "Page:"
-msgstr "Беті:"
-
-#: ui/kptviewbase.cpp:333
-msgid "Project:"
-msgstr "Жоба:"
-
-#: ui/kptviewbase.cpp:336
-msgid "Date:"
-msgstr "Күні:"
-
-#. i18n: file: ui/kptmainprojectpanelbase.ui:90
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: ui/kptviewbase.cpp:339 rc.cpp:172
-msgid "Manager:"
-msgstr "Менеджері:"
-
-#: ui/kptviewbase.cpp:397
-msgid "This view does not support printing."
-msgstr "Бұр көрініс басып шығарылмайды."
-
-#: ui/kptviewbase.cpp:413
-msgid "Configure View..."
-msgstr "Көріністі баптау..."
-
-#: ui/kptviewbase.cpp:1818
-msgid "Unsplit View"
-msgstr "Көріністі бөлуден қайту"
-
-#: ui/kptviewbase.cpp:1821
-msgid "Split View"
-msgstr "Көріністі бөлу"
-
 #: ui/kptwbsdefinitiondialog.cpp:35
 msgid "WBS Definition"
 msgstr "ЖЖҚ анықтамасы"
@@ -4385,6 +4337,55 @@ msgstr "Тапсырманың күй-жайы"
 #: ui/reports/reportview.cpp:922
 msgid "Resource assignments"
 msgstr "Атқарушы тағайындаулары"
+
+#: ui/kptviewbase.cpp:53
+msgid "Header and Footer"
+msgstr "Колонтитулдар"
+
+#: ui/kptviewbase.cpp:152
+msgctxt "@title:tab"
+msgid "Page Layout"
+msgstr "Орналасуы"
+
+#: ui/kptviewbase.cpp:248
+#, kde-format
+msgctxt "1=page number, 2=last page number"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: ui/kptviewbase.cpp:330
+msgid "Page:"
+msgstr "Беті:"
+
+#: ui/kptviewbase.cpp:333
+msgid "Project:"
+msgstr "Жоба:"
+
+#: ui/kptviewbase.cpp:336
+msgid "Date:"
+msgstr "Күні:"
+
+#. i18n: file: ui/kptmainprojectpanelbase.ui:90
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kptviewbase.cpp:339 rc.cpp:172
+msgid "Manager:"
+msgstr "Менеджері:"
+
+#: ui/kptviewbase.cpp:397
+msgid "This view does not support printing."
+msgstr "Бұр көрініс басып шығарылмайды."
+
+#: ui/kptviewbase.cpp:413
+msgid "Configure View..."
+msgstr "Көріністі баптау..."
+
+#: ui/kptviewbase.cpp:1823
+msgid "Unsplit View"
+msgstr "Көріністі бөлуден қайту"
+
+#: ui/kptviewbase.cpp:1826
+msgid "Split View"
+msgstr "Көріністі бөлу"
 
 #. i18n: file: ui/kptaccountsviewconfigurepanelbase.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
