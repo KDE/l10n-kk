@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-20 04:13+0100\n"
+"POT-Creation-Date: 2011-11-21 04:41+0100\n"
 "PO-Revision-Date: 2011-10-14 04:37+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -142,70 +142,140 @@ msgstr "Мынамен ашу"
 msgid "Other Application..."
 msgstr "Басқа қолданбамен..."
 
-#: app/filtercontroller.cpp:128
-msgid "Name contains"
-msgstr "Атауында келесісі бар"
+#: app/fullscreencontent.cpp:111
+msgctxt "@info:tooltip"
+msgid "Configure Full Screen Mode"
+msgstr "Толық экранды күйін баптау"
 
-#: app/filtercontroller.cpp:129
-msgid "Name does not contain"
-msgstr "Атауында келесісі жоқ"
+#: app/fullscreencontent.cpp:277
+msgctxt "@item:intext fullscreen meta info separator"
+msgid ", "
+msgstr ", "
 
-#: app/filtercontroller.cpp:231
-msgid "Date >="
-msgstr "Кұрылған кезі >="
+#: app/fullscreencontent.cpp:337
+#, kde-format
+msgctxt "Slideshow interval in seconds"
+msgid "%1 sec"
+msgid_plural "%1 secs"
+msgstr[0] "%1 сек"
 
-#: app/filtercontroller.cpp:232
-msgid "Date ="
-msgstr "Кұрылған кезі ="
+#: app/gvcore.cpp:84
+msgctxt "@info"
+msgid "No image format selected."
+msgstr "Кескін пішімі таңдалмаған."
 
-#: app/filtercontroller.cpp:233
-msgid "Date <="
-msgstr "Кұрылған кезі <="
+#: app/gvcore.cpp:97
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
+msgstr "Gwenview кескіндерді %1 деп сақтай алмайды."
 
-#: app/filtercontroller.cpp:324
-msgid "Rating >="
-msgstr "Ұпайлары >="
+#: app/gvcore.cpp:182
+msgid "Save using another format"
+msgstr "Басқа пішімде сақтау"
 
-#: app/filtercontroller.cpp:325
-msgid "Rating ="
-msgstr "Ұпайлары ="
+#: app/gvcore.cpp:185
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr "Gwenview кескіндерді '%1' пішімінде сақтай алмайды."
 
-#: app/filtercontroller.cpp:326
-msgid "Rating <="
-msgstr "Ұпайлары <="
+#: app/gvcore.cpp:208
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+"<filename>%1</filename> деп аталған файл бар екен.\n"
+"Үстінен жазбақсыз ба?"
 
-#: app/filtercontroller.cpp:421
-msgid "Tagged"
-msgstr "Жарлығы бар"
+#: app/gvcore.cpp:223 app/gvcore.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<b><filename>%1</filename> дегенді сақтау жаңылысы:</b><br>%2"
 
-#: app/filtercontroller.cpp:422
-msgid "Not Tagged"
-msgstr "Жарлығы жоқ"
+#: app/gvcore.cpp:264
+msgid "You are now viewing the new document."
+msgstr "Көріп жатқаныңыз - жаңа құжат."
 
-#: app/filtercontroller.cpp:556
-msgctxt "@action:inmenu"
-msgid "Filter by Name"
-msgstr "Атауы бойынша сүзгілеу"
+#: app/gvcore.cpp:266
+msgid "Go back to the original"
+msgstr "Түпнұсқасына қайта өту"
 
-#: app/filtercontroller.cpp:557
-msgctxt "@action:inmenu"
-msgid "Filter by Date"
-msgstr "Күні бойынша сүзгілеу"
-
-#: app/filtercontroller.cpp:563
-msgctxt "@action:inmenu"
-msgid "Filter by Rating"
-msgstr "Ұпайлары бойынша сүзгілеу"
-
-#: app/filtercontroller.cpp:564
-msgctxt "@action:inmenu"
-msgid "Filter by Tag"
-msgstr "Жарлығы бойынша сүзгілеу"
+#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "Gwenview бұндай кескіндерді өңдей алмайды."
 
 #: app/imagemetainfodialog.cpp:125
 msgctxt "@title:window"
 msgid "Meta Information"
 msgstr "Мета мәліметі"
+
+#: app/imageopscontextmanageritem.cpp:80
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: app/imageopscontextmanageritem.cpp:82
+msgid "Rotate Left"
+msgstr "Солға бұру"
+
+#: app/imageopscontextmanageritem.cpp:87
+msgid "Rotate Right"
+msgstr "Оңға бұру"
+
+#: app/imageopscontextmanageritem.cpp:92
+msgid "Mirror"
+msgstr "Аунату"
+
+#: app/imageopscontextmanageritem.cpp:96
+msgid "Flip"
+msgstr "Төңкеру"
+
+#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
+msgid "Resize"
+msgstr "Өлшемін өзгерту"
+
+#. i18n: file: lib/crop/cropwidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
+#: lib/crop/cropwidget.cpp:163 rc.cpp:174
+msgid "Crop"
+msgstr "Ойып алу"
+
+#: app/imageopscontextmanageritem.cpp:110
+msgid "Red Eye Reduction"
+msgstr "Көз қызаруын кетіру"
+
+#: app/imageopscontextmanageritem.cpp:137
+msgid "Image Operations"
+msgstr "Кескін амалдары"
+
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "Сақтау..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr "&Тоқтату"
+
+#: app/saveallhelper.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] "%1 құжат сақталмады:"
+
+#: app/saveallhelper.cpp:107
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
 
 #: app/infocontextmanageritem.cpp:168
 #, kde-format
@@ -256,22 +326,6 @@ msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 және %2 таңдалған"
 
-#: app/kipiexportaction.cpp:51
-msgid "Last Used Plugin"
-msgstr "Соңғы қолданған плагині"
-
-#: app/kipiexportaction.cpp:53
-msgid "Other Plugins"
-msgstr "Басқа плагиндері"
-
-#: app/kipiexportaction.cpp:63 app/kipiinterface.cpp:303
-msgid "No Plugin Found"
-msgstr "Плагині табылған жоқ"
-
-#: app/kipiexportaction.cpp:76
-msgid "Share"
-msgstr "Ортақтастыру"
-
 #: app/kipiimagecollectionselector.cpp:54
 #, kde-format
 msgctxt "%1 is collection name, %2 is image count in collection"
@@ -317,6 +371,10 @@ msgstr "Жиындар"
 #: app/kipiinterface.cpp:243
 msgid "Loading..."
 msgstr "ЖЖүктеу.."
+
+#: app/kipiinterface.cpp:303 app/kipiexportaction.cpp:63
+msgid "No Plugin Found"
+msgstr "Плагині табылған жоқ"
 
 #: app/kipiuploadwidget.cpp:43
 #, kde-format
@@ -502,30 +560,6 @@ msgstr[0] "%1 кескін өзгертілген"
 msgid "If you quit now, your changes will be lost."
 msgstr "Қазір шықсаңыз барлық өзгерістеріңіз жоғалады."
 
-#: app/saveallhelper.cpp:57
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "Сақтау..."
-
-#: app/saveallhelper.cpp:58
-msgid "&Stop"
-msgstr "&Тоқтату"
-
-#: app/saveallhelper.cpp:83
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] "%1 құжат сақталмады:"
-
-#: app/saveallhelper.cpp:107
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr "<filename>%1</filename>: %2"
-
 #: app/savebar.cpp:86
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -612,71 +646,17 @@ msgid ""
 msgstr ""
 "Бұл кескін өзгертілген. Қайта жүктегенде бүкіл өзгерістеріңіз жоғалады."
 
-#: app/fullscreencontent.cpp:111
-msgctxt "@info:tooltip"
-msgid "Configure Full Screen Mode"
-msgstr "Толық экранды күйін баптау"
+#: app/kipiexportaction.cpp:51
+msgid "Last Used Plugin"
+msgstr "Соңғы қолданған плагині"
 
-#: app/fullscreencontent.cpp:277
-msgctxt "@item:intext fullscreen meta info separator"
-msgid ", "
-msgstr ", "
+#: app/kipiexportaction.cpp:53
+msgid "Other Plugins"
+msgstr "Басқа плагиндері"
 
-#: app/fullscreencontent.cpp:337
-#, kde-format
-msgctxt "Slideshow interval in seconds"
-msgid "%1 sec"
-msgid_plural "%1 secs"
-msgstr[0] "%1 сек"
-
-#: app/gvcore.cpp:84
-msgctxt "@info"
-msgid "No image format selected."
-msgstr "Кескін пішімі таңдалмаған."
-
-#: app/gvcore.cpp:97
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr "Gwenview кескіндерді %1 деп сақтай алмайды."
-
-#: app/gvcore.cpp:182
-msgid "Save using another format"
-msgstr "Басқа пішімде сақтау"
-
-#: app/gvcore.cpp:185
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr "Gwenview кескіндерді '%1' пішімінде сақтай алмайды."
-
-#: app/gvcore.cpp:208
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
-msgstr ""
-"<filename>%1</filename> деп аталған файл бар екен.\n"
-"Үстінен жазбақсыз ба?"
-
-#: app/gvcore.cpp:223 app/gvcore.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr "<b><filename>%1</filename> дегенді сақтау жаңылысы:</b><br>%2"
-
-#: app/gvcore.cpp:264
-msgid "You are now viewing the new document."
-msgstr "Көріп жатқаныңыз - жаңа құжат."
-
-#: app/gvcore.cpp:266
-msgid "Go back to the original"
-msgstr "Түпнұсқасына қайта өту"
-
-#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "Gwenview бұндай кескіндерді өңдей алмайды."
+#: app/kipiexportaction.cpp:76
+msgid "Share"
+msgstr "Ортақтастыру"
 
 #: app/semanticinfocontextmanageritem.cpp:140
 msgid "Semantic Information"
@@ -763,45 +743,81 @@ msgid "%1 document"
 msgid_plural "%1 documents"
 msgstr[0] "%1 құжат"
 
-#: app/imageopscontextmanageritem.cpp:80
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "Өңдеу"
+#: app/filtercontroller.cpp:128
+msgid "Name contains"
+msgstr "Атауында келесісі бар"
 
-#: app/imageopscontextmanageritem.cpp:82
-msgid "Rotate Left"
-msgstr "Солға бұру"
+#: app/filtercontroller.cpp:129
+msgid "Name does not contain"
+msgstr "Атауында келесісі жоқ"
 
-#: app/imageopscontextmanageritem.cpp:87
-msgid "Rotate Right"
-msgstr "Оңға бұру"
+#: app/filtercontroller.cpp:231
+msgid "Date >="
+msgstr "Кұрылған кезі >="
 
-#: app/imageopscontextmanageritem.cpp:92
-msgid "Mirror"
-msgstr "Аунату"
+#: app/filtercontroller.cpp:232
+msgid "Date ="
+msgstr "Кұрылған кезі ="
 
-#: app/imageopscontextmanageritem.cpp:96
-msgid "Flip"
-msgstr "Төңкеру"
+#: app/filtercontroller.cpp:233
+msgid "Date <="
+msgstr "Кұрылған кезі <="
 
-#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
-msgid "Resize"
-msgstr "Өлшемін өзгерту"
+#: app/filtercontroller.cpp:324
+msgid "Rating >="
+msgstr "Ұпайлары >="
 
-#. i18n: file: lib/crop/cropwidget.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
-#: lib/crop/cropwidget.cpp:163 rc.cpp:174
-msgid "Crop"
-msgstr "Ойып алу"
+#: app/filtercontroller.cpp:325
+msgid "Rating ="
+msgstr "Ұпайлары ="
 
-#: app/imageopscontextmanageritem.cpp:110
-msgid "Red Eye Reduction"
-msgstr "Көз қызаруын кетіру"
+#: app/filtercontroller.cpp:326
+msgid "Rating <="
+msgstr "Ұпайлары <="
 
-#: app/imageopscontextmanageritem.cpp:137
-msgid "Image Operations"
-msgstr "Кескін амалдары"
+#: app/filtercontroller.cpp:421
+msgid "Tagged"
+msgstr "Жарлығы бар"
+
+#: app/filtercontroller.cpp:422
+msgid "Not Tagged"
+msgstr "Жарлығы жоқ"
+
+#: app/filtercontroller.cpp:556
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "Атауы бойынша сүзгілеу"
+
+#: app/filtercontroller.cpp:557
+msgctxt "@action:inmenu"
+msgid "Filter by Date"
+msgstr "Күні бойынша сүзгілеу"
+
+#: app/filtercontroller.cpp:563
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "Ұпайлары бойынша сүзгілеу"
+
+#: app/filtercontroller.cpp:564
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "Жарлығы бойынша сүзгілеу"
+
+#: importer/main.cpp:40
+msgid "Gwenview Importer"
+msgstr "Gwenview импорты"
+
+#: importer/main.cpp:42
+msgid "Photo Importer"
+msgstr "Фото импорты"
+
+#: importer/main.cpp:44
+msgid "Copyright 2009-2010 Aurélien Gâteau"
+msgstr "Copyright 2009-2010 Aurélien Gâteau"
+
+#: importer/main.cpp:53
+msgid "Source folder"
+msgstr "Көз қапшығы"
 
 #: importer/filenameformater.cpp:103
 msgid "Shooting date"
@@ -936,22 +952,6 @@ msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: importer/main.cpp:40
-msgid "Gwenview Importer"
-msgstr "Gwenview импорты"
-
-#: importer/main.cpp:42
-msgid "Photo Importer"
-msgstr "Фото импорты"
-
-#: importer/main.cpp:44
-msgid "Copyright 2009-2010 Aurélien Gâteau"
-msgstr "Copyright 2009-2010 Aurélien Gâteau"
-
-#: importer/main.cpp:53
-msgid "Source folder"
-msgstr "Көз қапшығы"
-
 #: importer/thumbnailpage.cpp:149
 msgid "Import Selected"
 msgstr "Таңдалғанды импорттау"
@@ -959,12 +959,6 @@ msgstr "Таңдалғанды импорттау"
 #: importer/thumbnailpage.cpp:153
 msgid "Import All"
 msgstr "Бүкілін импорттау"
-
-#: lib/fullscreenbar.cpp:260 lib/statusbartoolbutton.cpp:119
-#, kde-format
-msgctxt "@info:tooltip of custom toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: lib/crop/cropwidget.cpp:117
 msgid "Square"
@@ -1071,6 +1065,11 @@ msgstr "100%"
 msgid "No document selected"
 msgstr "Құжат таңдалмаған"
 
+#: lib/historymodel.cpp:138
+#, kde-format
+msgid "Last visited: %1"
+msgstr "Соңғы жолыққаны: %1"
+
 #: lib/jpegcontent.cpp:564
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1102,6 +1101,12 @@ msgstr "Өлшемін өзгерту"
 msgid "Assign this tag to all selected images"
 msgstr "Бүкіл таңдалған кескіндерге осы жарлықты тағу"
 
+#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:260
+#, kde-format
+msgctxt "@info:tooltip of custom toolbar button"
+msgid "%1"
+msgstr "%1"
+
 #: lib/transformimageoperation.cpp:67
 msgctxt "(qtundo-format)"
 msgid "Rotate Right"
@@ -1126,11 +1131,6 @@ msgstr "Төңкеру"
 msgctxt "(qtundo-format)"
 msgid "Transform"
 msgstr "Түрлендіру"
-
-#: lib/historymodel.cpp:138
-#, kde-format
-msgid "Last visited: %1"
-msgstr "Соңғы жолыққаны: %1"
 
 #: lib/imagemetainfomodel.cpp:230
 msgctxt "@item:intable Image file name"
