@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2011-11-24 04:38+0100\n"
+"POT-Creation-Date: 2011-11-28 04:04+0100\n"
 "PO-Revision-Date: 2011-10-25 05:39+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1600,8 +1600,8 @@ msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "Құрылғыда орын қалған жоқ"
 
-#: corelib/io/qiodevice.cpp:1629 corelib/plugin/qlibrary.cpp:1233
-#: corelib/plugin/qpluginloader.cpp:367
+#: corelib/io/qiodevice.cpp:1629 corelib/plugin/qpluginloader.cpp:367
+#: corelib/plugin/qlibrary.cpp:1233
 #: corelib/statemachine/qstatemachine.cpp:1046
 #: network/kernel/qhostinfo_unix.cpp:300 network/kernel/qhostinfo_win.cpp:209
 #: network/kernel/qhostinfo_win.cpp:236
@@ -1885,15 +1885,34 @@ msgstr "орнату: мәні нысан емес"
 msgid "'%1' is an invalid ELF object (%2)"
 msgstr "%1 деген дұрыс емес %2"
 
+#: corelib/plugin/qlibrary_unix.cpp:244 corelib/plugin/qlibrary_win.cpp:87
+#, qt-format
+msgid "Cannot load library %1: %2"
+msgstr "%1 жинақ файлы жүктелмеді: %2"
+
+#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:109
+#, qt-format
+msgid "Cannot unload library %1: %2"
+msgstr "%1 жинақ файлы босатылмады: %2"
+
+#: corelib/plugin/qlibrary_unix.cpp:295 corelib/plugin/qlibrary_win.cpp:124
+#, qt-format
+msgid "Cannot resolve symbol \"%1\" in %2: %3"
+msgstr "%2 дегендегі \"%1\" символы түсініксіз: %3"
+
+#: corelib/plugin/qpluginloader.cpp:254
+msgid "The plugin was not loaded."
+msgstr "Плагиіні жүктелмеген."
+
+#: corelib/plugin/qpluginloader.cpp:343 corelib/plugin/qlibrary.cpp:679
+#: corelib/plugin/qlibrary.cpp:825
+msgid "The shared library was not found."
+msgstr "Ортақ жиын файлы табылған жоқ."
+
 #: corelib/plugin/qlibrary.cpp:402
 #, qt-format
 msgid "Plugin verification data mismatch in '%1'"
 msgstr "%1 плагинінде тексеріс дерегінің қайшылығы "
-
-#: corelib/plugin/qlibrary.cpp:679 corelib/plugin/qlibrary.cpp:825
-#: corelib/plugin/qpluginloader.cpp:343
-msgid "The shared library was not found."
-msgstr "Ортақ жиын файлы табылған жоқ."
 
 #: corelib/plugin/qlibrary.cpp:827
 #, qt-format
@@ -1922,25 +1941,6 @@ msgid ""
 msgstr ""
 "'%1' плагині үйлесіпейтін Qt жиын файлын қолданады. (Жөндеуге арналған жинақ "
 "файлдары мен шығарлым файлдары арыласқан.)"
-
-#: corelib/plugin/qlibrary_unix.cpp:244 corelib/plugin/qlibrary_win.cpp:87
-#, qt-format
-msgid "Cannot load library %1: %2"
-msgstr "%1 жинақ файлы жүктелмеді: %2"
-
-#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:109
-#, qt-format
-msgid "Cannot unload library %1: %2"
-msgstr "%1 жинақ файлы босатылмады: %2"
-
-#: corelib/plugin/qlibrary_unix.cpp:295 corelib/plugin/qlibrary_win.cpp:124
-#, qt-format
-msgid "Cannot resolve symbol \"%1\" in %2: %3"
-msgstr "%2 дегендегі \"%1\" символы түсініксіз: %3"
-
-#: corelib/plugin/qpluginloader.cpp:254
-msgid "The plugin was not loaded."
-msgstr "Плагиіні жүктелмеген."
 
 #: corelib/statemachine/qstatemachine.cpp:1028
 #, qt-format
@@ -6447,10 +6447,6 @@ msgstr ""
 msgid "Could not reset to read data"
 msgstr "Жиымының дегегі алынбады"
 
-#: plugins/inputmethods/imsw-multi/qmultiinputcontext.cpp:88
-msgid "Select IM"
-msgstr "Енгізу әдісін таңдау"
-
 #: plugins/inputmethods/imsw-multi/qmultiinputcontextplugin.cpp:95
 msgid "Multiple input method switcher"
 msgstr "Бірнеше енгізу әдіс ауыстырғышы"
@@ -6460,6 +6456,10 @@ msgid ""
 "Multiple input method switcher that uses the context menu of the text widgets"
 msgstr ""
 "Мәтін виджетінің контексті мәзірінқолданатын бірнеше енгізу әдіс ауыстырғышы"
+
+#: plugins/inputmethods/imsw-multi/qmultiinputcontext.cpp:88
+msgid "Select IM"
+msgstr "Енгізу әдісін таңдау"
 
 #: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
 msgid "Items"
