@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2011-11-10 03:44+0100\n"
-"PO-Revision-Date: 2011-08-05 05:31+0600\n"
+"PO-Revision-Date: 2011-12-03 04:50+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -493,10 +493,13 @@ msgid ""
 "characters). Too long lines were wrapped and the document is set to read-"
 "only mode, as saving will modify its content."
 msgstr ""
+"Ашылған %1 деген файлда тым ұзын (%2 таңбадан артық) жолдар "
+"бар. Ол жодар тасымалданған және құжат тек оқу үшін күйге "
+"аударылған, өйткені сақталса файл өзгереді. "
 
 #: document/katedocument.cpp:2109
 msgid "Too Long Lines Wrapped"
-msgstr ""
+msgstr "Тым ұзын жолдар тасымалданды"
 
 #: document/katedocument.cpp:2131
 #, kde-format
@@ -754,7 +757,6 @@ msgid "Removes empty lines from selection or whole document."
 msgstr "Таңдалған мәтіннен не түгел құжаттан бос жолдарды кетіру."
 
 #: script/data/utils.js:322
-#, fuzzy
 #| msgid ""
 #| "Given a JavaScript function as argument, call that for the list of "
 #| "(selected) lines and replace them with the return value of that callback."
@@ -771,7 +773,7 @@ msgstr ""
 "JavaScript функциясын аргумент ретінде келтіріп, оны (таңдалған) жолдар "
 "тізіміне шақыртып, оларды, аталған функция қайтарғанымен ауыстырып алыңыз."
 "<br>Мысалы (таңдалған жоларды біріктіру): <br><code>each 'function(lines)"
-"{return lines.join(\", \"}'</code> <br>Бұл амалдың қысқа жолы да бар:"
+"{return lines.join(\", \");}'</code> <br>Бұл амалдың қысқа жолы да бар:"
 "<br><code>each 'lines.join(\", \")'</code>"
 
 #: script/data/utils.js:324
@@ -869,15 +871,15 @@ msgstr "%1 скриптті жүктеу қатесі"
 
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
-msgstr ""
+msgstr "Қате: utils.js ашылмады"
 
 #: script/katescriptconsole.cpp:76
 msgid "Syntax Error: Parse error"
-msgstr ""
+msgstr "Синтаксисі қате: Талдау катесі"
 
 #: script/katescriptconsole.cpp:92
 msgid "Error: There are bad defined functions"
-msgstr ""
+msgstr "Қате: Функциялар анықтамасы дұрыс емес"
 
 #: script/katescriptconsole.cpp:115
 msgid "Execute"
@@ -885,7 +887,7 @@ msgstr "Орындау"
 
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
-msgstr ""
+msgstr "Орындайтын код жоқ"
 
 #: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
 #, kde-format
@@ -1365,10 +1367,9 @@ msgid "Missing argument(s). Usage: %1 <from> [<to>]"
 msgstr "Аргумент(тер)і жоқ. Қолдануы: %1 <неден> [<неге>]"
 
 #: utils/katecmds.cpp:475 utils/katecmds.cpp:491
-#, fuzzy
 #| msgid "Arguments"
 msgid "Wrong arguments"
-msgstr "Аргументтер"
+msgstr "Қате аргументтер"
 
 #: utils/katecmds.cpp:575
 msgid "Document written to disk"
@@ -1490,7 +1491,6 @@ msgid "<p>Format of the page header. The following tags are supported:</p>"
 msgstr "<p>Жоғарғы колонтитул пішімі. Келесі белгілерді қолдануға болады:</p>"
 
 #: utils/kateprinter.cpp:875
-#, fuzzy
 #| msgid ""
 #| "<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
 #| "time in short format</li><li><tt>%D</tt>: complete date/time in long "
@@ -1510,8 +1510,9 @@ msgstr ""
 "уақыты</li><li><tt>%D</tt>: толық күні мен уақыты</li><li><tt>%h</tt>: басып "
 "жатқандағы уақыт</li><li><tt>%y</tt>: қысқа пішімдегі күні</li><li><tt>%Y</"
 "tt>: толық пішімдегі күні</li><li><tt>%f</tt>: файл атауы</li><li><tt>%U</"
-"tt>: құжаттың толық URL-адресі</li><li><tt>%p</tt>: беттің нөмірі</li></"
-"ul><br />"
+"tt>: құжаттың толық URL-адресі</li><li><tt>%p</tt>: беттің нөмірі</li><li><"
+"tt>"
+"%P</tt>: жалпы беттер саны</li></ul><br />"
 
 #: utils/kateprinter.cpp:889
 msgid "<p>Format of the page footer. The following tags are supported:</p>"
@@ -1523,10 +1524,9 @@ msgid "Add Placeholder..."
 msgstr ""
 
 #: utils/kateprinter.cpp:989
-#, fuzzy
 #| msgid "Current line:"
 msgid "Current User Name"
-msgstr "Назардағы жол:"
+msgstr "Қазіргі пайдаланушының аты"
 
 #: utils/kateprinter.cpp:991
 msgid "Complete Date/Time (short format)"
@@ -1537,40 +1537,38 @@ msgid "Complete Date/Time (long format)"
 msgstr ""
 
 #: utils/kateprinter.cpp:995
-#, fuzzy
 #| msgid "Current line:"
 msgid "Current Time"
-msgstr "Назардағы жол:"
+msgstr "Қазіргі уақыт"
 
 #: utils/kateprinter.cpp:997
 msgid "Current Date (short format)"
-msgstr ""
+msgstr "Бүгінгі күн (қысықасы)"
 
 #: utils/kateprinter.cpp:999
 msgid "Current Date (long format)"
-msgstr ""
+msgstr "Бүгінгі күн (ұзыны)"
 
 #: utils/kateprinter.cpp:1001
-#, fuzzy
 #| msgid "Name"
 msgid "File Name"
-msgstr "Атауы"
+msgstr "Файл атауы"
 
 #: utils/kateprinter.cpp:1003
 msgid "Full document URL"
-msgstr ""
+msgstr "Құжаттын толық URL-і"
 
 #: utils/kateprinter.cpp:1005
 msgid "Page Number"
-msgstr ""
+msgstr "Бет нөмірі"
 
 #: utils/kateprinter.cpp:1007
 msgid "Total Amount of Pages"
-msgstr ""
+msgstr "Беттер жалпы саны"
 
 #: utils/kateprinter.cpp:1116
 msgid "L&ayout"
-msgstr "Б&елгілеу"
+msgstr "О&рналасуы"
 
 #: utils/kateprinter.cpp:1122 utils/kateschema.cpp:863
 msgid "&Schema:"
@@ -2283,254 +2281,231 @@ msgstr "Кеңейтулер менеджері"
 
 #: variableeditor/katehelpbutton.cpp:32
 msgid "Kate Handbook."
-msgstr ""
+msgstr "Kate анықтамасы."
 
 #: variableeditor/variableeditor.cpp:194
-#, fuzzy
 #| msgid "Struct"
 msgid "true"
-msgstr "Struct"
+msgstr "ақиқат"
 
 #: variableeditor/variableeditor.cpp:195
 msgid "false"
-msgstr ""
+msgstr "жалған"
 
 #: variableeditor/variablelineedit.cpp:59
 msgid "Show list of valid variables."
-msgstr ""
+msgstr "Дұрыс айнымалылар тізімін көрсету."
 
 #: variableeditor/variablelineedit.cpp:140
 msgctxt "short translation please"
 msgid "Set auto insertion of brackets on or off."
-msgstr ""
+msgstr "Сыңары жақшаны авто енгізу/енгізбеу "
 
 #: variableeditor/variablelineedit.cpp:146
 msgctxt "short translation please"
 msgid "Set the number of autocenter lines."
-msgstr ""
+msgstr "Ортаға автотураланған жолдар саны."
 
 #: variableeditor/variablelineedit.cpp:151
 msgctxt "short translation please"
 msgid "Auto insert asterisk in doxygen comments."
-msgstr ""
+msgstr "Doxygen түсініктемелеріне жұлдызшаны автоқосу."
 
 #: variableeditor/variablelineedit.cpp:156
-#, fuzzy
 #| msgid "S&elected Background Color..."
 msgctxt "short translation please"
 msgid "Set the document background color."
-msgstr "Т&аңдалғанның аясының түсі..."
+msgstr "Құжат аясының түсін орнату."
 
 #: variableeditor/variablelineedit.cpp:161
-#, fuzzy
 #| msgid "&Backspace key in leading blank space unindents"
 msgctxt "short translation please"
 msgid "Pressing backspace in leading whitespace unindents."
-msgstr "Жол басындағы бос орында &Backspace шегіністі кішірейтеді"
+msgstr "Жол басындағы бос орында Backspace-пен шегіністі кішірейту."
 
 #: variableeditor/variablelineedit.cpp:167
-#, fuzzy
 #| msgid "Bl&ock Selection Mode"
 msgctxt "short translation please"
 msgid "Enable block selection mode."
-msgstr "Бл&окті таңдау режімі"
+msgstr "Блокті таңдау режімін рұқсат ету. "
 
 #: variableeditor/variablelineedit.cpp:172
-#, fuzzy
 #| msgid "Enable byte order marker (if not overridden by other settings)"
 msgctxt "short translation please"
 msgid "Enable the byte order marker when saving unicode files."
-msgstr ""
-"Байт реті маркерін рұқсат ету (егер басқа параметрлерімен өзгертілмесе)"
+msgstr "Юникодтағы файлды сақтағанда байт реті маркерін рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:177
-#, fuzzy
 #| msgid "Select the color scheme to use for the print."
 msgctxt "short translation please"
 msgid "Set the color for the bracket highlight."
-msgstr "Басқанда қолданатын түстер сұлбасын таңдау."
+msgstr "Жақшаны белгілеу түсін орнату."
 
 #: variableeditor/variablelineedit.cpp:182
-#, fuzzy
 #| msgid "<p>Sets the background color of the editing area.</p>"
 msgctxt "short translation please"
 msgid "Set the background color for the current line."
-msgstr "<p>Өңделіп жатқан ауданның ая түсін орнату.</p>"
+msgstr "Назардағы жолдың ая түсін орнату.</p>"
 
 #: variableeditor/variablelineedit.cpp:188
-#, fuzzy
 #| msgid "Change the dictionary that is used for spell checking."
 msgctxt "short translation please"
 msgid "Set the default dictionary used for spell checking."
-msgstr "Емлесін тексеруде пайдаланатын сөздігін таңдау."
+msgstr "Емлесін тексеруде пайдаланатын әдетті сөздік."
 
 #: variableeditor/variablelineedit.cpp:193
-#, fuzzy
 #| msgid "Enable static &word wrap"
 msgctxt "short translation please"
 msgid "Enable dynamic word wrap of long lines."
-msgstr "Статикалық &тасымалдау болсын"
+msgstr "Ұзын жол сөздерін динамикалық тасымалдауын рұқасат ету.ы"
 
 #: variableeditor/variablelineedit.cpp:198
-#, fuzzy
 #| msgid "Select to End of Line"
 msgctxt "short translation please"
 msgid "Sets the end of line mode."
-msgstr "Жолдың соңына дейін таңдау"
+msgstr "Жол соңы пішімін орнату."
 
 #: variableeditor/variablelineedit.cpp:203
 msgctxt "short translation please"
 msgid "Enable folding markers in the editor border."
-msgstr ""
+msgstr "Өңдегіш жиегінде бүктеу маркерлерін көрсету."
 
 #: variableeditor/variablelineedit.cpp:209
-#, fuzzy
 #| msgid "Select the entire text of the current document."
 msgctxt "short translation please"
 msgid "Set the point size of the document font."
-msgstr "Назардағы құжаттың барлық мәтінін таңдау."
+msgstr "Құжат қаріпінің өлшемін орнату."
 
 #: variableeditor/variablelineedit.cpp:214
-#, fuzzy
 #| msgid "Select the entire text of the current document."
 msgctxt "short translation please"
 msgid "Set the font of the document."
-msgstr "Назардағы құжаттың барлық мәтінін таңдау."
+msgstr "Құжат қаріпін орнату."
 
 #: variableeditor/variablelineedit.cpp:226
-#, fuzzy
 #| msgid "Kate Syntax Highlighting Parser"
 msgctxt "short translation please"
 msgid "Set the syntax highlighting."
-msgstr "Kate синтаксис талдап бояулағышы"
+msgstr "Ситаксис талдап бояулауды орнату."
 
 #: variableeditor/variablelineedit.cpp:231
 msgctxt "short translation please"
 msgid "Set the icon bar color."
-msgstr ""
+msgstr "Таңбашалар панелінің түсі."
 
 #: variableeditor/variablelineedit.cpp:236
 msgctxt "short translation please"
 msgid "Enable the icon border in the editor view."
-msgstr ""
+msgstr "Өндегіш көрінісінде таңбашалар панелін рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:241
-#, fuzzy
 #| msgid "Show i&ndentation lines"
 msgctxt "short translation please"
 msgid "Set the auto indentation style."
-msgstr "Ше&гініс сызықшалары көрсетілсін"
+msgstr "Автошегініс стилін орнату."
 
 #: variableeditor/variablelineedit.cpp:247
 msgctxt "short translation please"
 msgid "Set the indentation depth for each indent level."
-msgstr ""
+msgstr "Әрбір шегініс деңгейінің тереңдігін орнату."
 
 #: variableeditor/variablelineedit.cpp:252
 msgctxt "short translation please"
 msgid "Allow odd indentation level (no multiple of indent width)."
-msgstr ""
+msgstr "Оғаш (еселеген қадамына тең емес) шегініс деңгейін рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:257
-#, fuzzy
 #| msgid "Show &line numbers"
 msgctxt "short translation please"
 msgid "Show line numbers."
-msgstr "&Жол нөмірлері көрсетілсін"
+msgstr "Жол нөмірлерін көрсету."
 
 #: variableeditor/variablelineedit.cpp:262
 msgctxt "short translation please"
 msgid "Enable overwrite mode in the document."
-msgstr ""
+msgstr "Үстінен жазу режімін рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:267
 msgctxt "short translation please"
 msgid "Enable persistent text selection."
-msgstr ""
+msgstr "Тұрақты мәтінді таңдауын рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:272
-#, fuzzy
 #| msgid "Remove &trailing spaces while editing"
 msgctxt "short translation please"
 msgid "Remove trailing spaces when editing a line."
-msgstr "Жол &соңындағы бос орындар өшірілсін"
+msgstr "Жол соңындағы бос орындарды өшіру."
 
 #: variableeditor/variablelineedit.cpp:277
 msgctxt "short translation please"
 msgid "Replace tabs with spaces when saving the document."
-msgstr ""
+msgstr "Құжатты сақтағанда кестелеу белгісін бос орындармен ауыстру."
 
 #: variableeditor/variablelineedit.cpp:282
-#, fuzzy
 #| msgid "Replace all matches"
 msgctxt "short translation please"
 msgid "Replace tabs with spaces."
-msgstr "Барлығын алмастыру"
+msgstr "Кестелеу белгісін бос орындармен ауыстру."
 
 #: variableeditor/variablelineedit.cpp:287
-#, fuzzy
 #| msgid "Remove &trailing spaces while editing"
 msgctxt "short translation please"
 msgid "Remove trailing spaces when saving the document."
-msgstr "Жол &соңындағы бос орындар өшірілсін"
+msgstr "Құжатты сақтағанда жол соңындағы бос орындарын өшіру."
 
 #: variableeditor/variablelineedit.cpp:293
-#, fuzzy
 #| msgid "Kate color schema"
 msgctxt "short translation please"
 msgid "Set the color scheme."
-msgstr "Kate түстер сұлбасы"
+msgstr "Түстер сұлбасын орнату."
 
 #: variableeditor/variablelineedit.cpp:298
 msgctxt "short translation please"
 msgid "Set the text selection color."
-msgstr ""
+msgstr "Мәтінді таңдау түсін орнату."
 
 #: variableeditor/variablelineedit.cpp:303
-#, fuzzy
 #| msgid "Highlight trailing &spaces"
 msgctxt "short translation please"
 msgid "Visualize tabs and trailing spaces."
-msgstr "Жол &соңындағы бос орындар бояулансын"
+msgstr "Кестелеу және жол соңындағы бос орындарды бояулау."
 
 #: variableeditor/variablelineedit.cpp:308
-#, fuzzy
 #| msgid "Enable &auto completion"
 msgctxt "short translation please"
 msgid "Enable smart home navigation."
-msgstr "&Автотолықтыру болсын"
+msgstr "Парасатты басына ауысуды рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:313
 msgctxt "short translation please"
 msgid "Pressing TAB key indents."
-msgstr ""
+msgstr "TAB пернемен шегіну."
 
 #: variableeditor/variablelineedit.cpp:319
 msgctxt "short translation please"
 msgid "Set the tab display width."
-msgstr ""
+msgstr "Кестелеу қадамын көрсету."
 
 #: variableeditor/variablelineedit.cpp:325
 msgctxt "short translation please"
 msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr ""
+msgstr "Жатталатын қайту аалдар тереңдігі (0 дегені - шексіз)."
 
 #: variableeditor/variablelineedit.cpp:331
 msgctxt "short translation please"
 msgid "Set the word wrap column."
-msgstr ""
+msgstr "Жолды қай бағаннан асырмай тасымалдау керек."
 
 #: variableeditor/variablelineedit.cpp:336
-#, fuzzy
 #| msgid "S&elected Background Color..."
 msgctxt "short translation please"
 msgid "Set the word wrap marker color."
-msgstr "Т&аңдалғанның аясының түсі..."
+msgstr "Тасымалдау маркерінің түсі."
 
 #: variableeditor/variablelineedit.cpp:341
 msgctxt "short translation please"
 msgid "Enable word wrap while typing text."
-msgstr ""
+msgstr "Мәтін терген кезде тасымалдауды рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:346
 msgctxt "short translation please"
