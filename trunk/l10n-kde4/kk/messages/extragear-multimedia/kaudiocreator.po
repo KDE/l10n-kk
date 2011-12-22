@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-21 04:31+0100\n"
+"POT-Creation-Date: 2011-12-22 04:04+0100\n"
 "PO-Revision-Date: 2011-01-01 08:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -123,6 +123,61 @@ msgctxt "@title:column"
 msgid "Encoder"
 msgstr "Кодері"
 
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr ""
+
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr ""
+
+#: encoderconfigimp.cpp:128
+#, fuzzy
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "Кодері"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "Кодерін таңдаңыз."
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+#: encoder.cpp:76
+msgid "No Encoder Selected"
+msgstr "Кодері таңдалмаған"
+
+#: encoderconfigimp.cpp:173
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "Кодері"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr ""
+
+#: encoderconfigimp.cpp:198
+msgid "Delete encoder?"
+msgstr "Кодері өшірілсін бе?"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "Кодерін өшіру"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "Кодерді баптау"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "Кодерінің баптаулары"
+
 #: encoder.cpp:76
 msgid ""
 "No encoder has been selected.\n"
@@ -130,11 +185,6 @@ msgid ""
 msgstr ""
 "Кодері таңдалмаған.\n"
 "Баптауында кодерін таңдаңыз."
-
-#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
-#: encoderconfigimp.cpp:230
-msgid "No Encoder Selected"
-msgstr "Кодері таңдалмаған"
 
 #: encoder.cpp:161
 #, kde-format
@@ -189,56 +239,6 @@ msgstr ""
 "Кодерінің баптауларын тексеріңіз.\n"
 "wav файлы өшірілді.\n"
 "Кодерінің толық шығыс хабарламасын көргіңіз келе ме?"
-
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr ""
-
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr ""
-
-#: encoderconfigimp.cpp:128
-#, fuzzy
-#| msgid "Encoder"
-msgid "Add Encoder"
-msgstr "Кодері"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "Кодерін таңдаңыз."
-
-#: encoderconfigimp.cpp:173
-#, fuzzy
-#| msgid "Encoder"
-msgid "Copy Encoder"
-msgstr "Кодері"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr ""
-
-#: encoderconfigimp.cpp:198
-msgid "Delete encoder?"
-msgstr "Кодері өшірілсін бе?"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "Кодерін өшіру"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "Кодерді баптау"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "Кодерінің баптаулары"
 
 #: general.cpp:61
 #, kde-format
@@ -965,7 +965,7 @@ msgstr "&Аяқталған тапсырмалар бірден өшірілсі
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:24
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:223 rc.cpp:482
+#: rc.cpp:223 rc.cpp:497
 msgid "Prompt if information is not complete"
 msgstr "Мәліметі толық болмаса - сұрау"
 
@@ -1210,7 +1210,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeRippedWavs)
 #. i18n: file: kaudiocreator.kcfg:34
 #. i18n: ectx: label, entry (removeRippedWavs), group (General)
-#: rc.cpp:369 rc.cpp:488
+#: rc.cpp:369 rc.cpp:503
 msgid "Remove ripped wav files after encoding"
 msgstr ""
 
@@ -1386,21 +1386,51 @@ msgstr "Түсінікте&месі"
 msgid "Arti&st's Initial"
 msgstr "Орындаушы - Атау"
 
+#. i18n: file: kaudiocreator_encoders.kcfg:12
+#. i18n: ectx: label, entry (encoderName), group ($(encoder))
+#: rc.cpp:473
+msgid "Name of the encoder"
+msgstr "Кодерінің атауы"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:16
+#. i18n: ectx: label, entry (commandLine), group ($(encoder))
+#: rc.cpp:476
+msgid "Command line to invoke encoder"
+msgstr "Кодерін жегу командасы"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:20
+#. i18n: ectx: label, entry (extension), group ($(encoder))
+#: rc.cpp:479
+msgid "File extension"
+msgstr "Файлдың жұрнағы"
+
+#. i18n: file: kaudiocreator_encoders.kcfg:24
+#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
+#: rc.cpp:482
+msgid "Input Types"
+msgstr ""
+
+#. i18n: file: kaudiocreator_encoders.kcfg:32
+#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
+#: rc.cpp:485
+msgid "Check output files"
+msgstr ""
+
 #. i18n: file: kaudiocreator.kcfg:12
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:473
+#: rc.cpp:488
 msgid "Perform automatic CDDB lookups."
 msgstr "Автоматты CDDB-ге сұрау салу."
 
 #. i18n: file: kaudiocreator.kcfg:16
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:476
+#: rc.cpp:491
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr "Сәтті CDDB сұраныста бүкіл жолсызықты оқып алу"
 
 #. i18n: file: kaudiocreator.kcfg:20
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:479
+#: rc.cpp:494
 #, fuzzy
 #| msgid "CD device"
 msgid "Last used CD device"
@@ -1408,25 +1438,25 @@ msgstr "CD құрылғысы"
 
 #. i18n: file: kaudiocreator.kcfg:30
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:485
+#: rc.cpp:500
 msgid "Automatically remove jobs when finished"
 msgstr "Аяқталған тапсырмалар бірден өшірілсін"
 
 #. i18n: file: kaudiocreator.kcfg:38
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:491
+#: rc.cpp:506
 msgid "Regexp to match file names with"
 msgstr "Файл атауының үлгі өрнегі"
 
 #. i18n: file: kaudiocreator.kcfg:41
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:494
+#: rc.cpp:509
 msgid "String used to replace the parts that match the selection regexp"
 msgstr "Үлгі өрнегіне сәйкес бөлігін алмастыратын жол"
 
 #. i18n: file: kaudiocreator.kcfg:67
 #. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
-#: rc.cpp:497
+#: rc.cpp:512
 #, fuzzy
 #| msgid "Current encoder:"
 msgid "Current default encoder"
@@ -1434,97 +1464,67 @@ msgstr "Қолданыстағы кодері:"
 
 #. i18n: file: kaudiocreator.kcfg:71
 #. i18n: ectx: label, entry (inputTypesList), group (Encoder)
-#: rc.cpp:500
+#: rc.cpp:515
 msgid "List of available input types"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:74
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:503
+#: rc.cpp:518
 msgid "Number of files to encode at a time"
 msgstr "Бір кезде кодтайтын файлдар саны"
 
 #. i18n: file: kaudiocreator.kcfg:78
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:506
+#: rc.cpp:521
 msgid "Location pattern for encoded files"
 msgstr "Кодталған файлдардың орналасу үлгісі"
 
 #. i18n: file: kaudiocreator.kcfg:82
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:509
+#: rc.cpp:524
 msgid "Encoder priority"
 msgstr "Кодерінің артықшылығы"
 
 #. i18n: file: kaudiocreator.kcfg:88
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:512
+#: rc.cpp:527
 msgid "Enable full decoder debugging"
 msgstr "Кодерін толық жөндеуін рұқсат ету"
 
 #. i18n: file: kaudiocreator.kcfg:94
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:515
+#: rc.cpp:530
 msgid "Beep after rip"
 msgstr "Оқып алғаннан кейін сигнал беру"
 
 #. i18n: file: kaudiocreator.kcfg:98
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:518
+#: rc.cpp:533
 msgid "Eject CD after last track is ripped"
 msgstr "Соңғысы оқып алынған соң CD алып шығарылсын"
 
 #. i18n: file: kaudiocreator.kcfg:102
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:521
+#: rc.cpp:536
 msgid "Auto-eject delay"
 msgstr "Алып-шығудың кідіртуі"
 
 #. i18n: file: kaudiocreator.kcfg:106
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:524
+#: rc.cpp:539
 msgid "Specify temporary directory"
 msgstr "Уақытша қапшықты көрсетіңіз"
 
 #. i18n: file: kaudiocreator.kcfg:110
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:527
+#: rc.cpp:542
 msgid "Location of temporary directory to use"
 msgstr "Уақытша қапшығының орналасуы"
 
 #. i18n: file: kaudiocreator.kcfg:53
-#: rc.cpp:530
+#: rc.cpp:545
 msgid "Various Artists"
-msgstr ""
-
-#. i18n: file: kaudiocreator_encoders.kcfg:12
-#. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:534
-msgid "Name of the encoder"
-msgstr "Кодерінің атауы"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:16
-#. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:537
-msgid "Command line to invoke encoder"
-msgstr "Кодерін жегу командасы"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:20
-#. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:540
-msgid "File extension"
-msgstr "Файлдың жұрнағы"
-
-#. i18n: file: kaudiocreator_encoders.kcfg:24
-#. i18n: ectx: label, entry (inputTypes), group ($(encoder))
-#: rc.cpp:543
-msgid "Input Types"
-msgstr ""
-
-#. i18n: file: kaudiocreator_encoders.kcfg:32
-#. i18n: ectx: label, entry (checkOutput), group ($(encoder))
-#: rc.cpp:546
-msgid "Check output files"
 msgstr ""
 
 #: ripper.cpp:139
