@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-14 02:40+0100\n"
+"POT-Creation-Date: 2012-01-05 02:58+0100\n"
 "PO-Revision-Date: 2011-08-02 09:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -154,6 +154,15 @@ msgstr "Эффекттер"
 msgid "View"
 msgstr "Көрініс"
 
+#: common/KarbonDocument.cpp:280
+msgid "Master Page"
+msgstr "Үлгі бет"
+
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
+msgctxt "(qtundo-format)"
+msgid "Boolean Operation"
+msgstr "Логикалық амал"
+
 #: common/commands/KarbonLayerReorderCommand.cpp:37
 #: common/commands/KarbonLayerReorderCommand.cpp:46
 msgctxt "(qtundo-format)"
@@ -166,14 +175,9 @@ msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Қабатты артқа тығу"
 
-#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
-msgctxt "(qtundo-format)"
-msgid "Boolean Operation"
-msgstr "Логикалық амал"
-
-#: common/KarbonDocument.cpp:280
-msgid "Master Page"
-msgstr "Үлгі бет"
+#: main.cpp:43
+msgid "File to open"
+msgstr "Ашатын файл"
 
 #: plugins/filtereffects/BlendEffect.cpp:30
 #: plugins/filtereffects/BlendEffectFactory.cpp:27
@@ -315,10 +319,54 @@ msgstr "Амал"
 msgid "Convolve Matrix"
 msgstr "Үйірткі матрицасы"
 
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:43
+msgid "Duplicate"
+msgstr "Қосарлау"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:44
+msgid "Wrap"
+msgstr "Орауы"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:45
+msgid "None"
+msgstr "Жоқ"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:46
+msgid "Edge mode:"
+msgstr "Шет күйі:"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:53
+msgid "Kernel size:"
+msgstr "Өзектің өлшемі:"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:62
+msgid "Target point:"
+msgstr "Көздеген нүктесі:"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:69
+msgid "Divisor:"
+msgstr "Бөлгіші:"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:71
+msgid "Bias:"
+msgstr "Ығысуы:"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:74
+msgid "Preserve alpha"
+msgstr "Альфасын сақтау"
+
+#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:77
+msgid "Edit kernel"
+msgstr "Өзегін өңдеу"
+
 #: plugins/filtereffects/FloodEffect.cpp:30
 #: plugins/filtereffects/FloodEffectFactory.cpp:27
 msgid "Flood fill"
 msgstr "Құйып толтыру"
+
+#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
+msgid "Flood color"
+msgstr "Толтыру түсі"
 
 #: plugins/filtereffects/ImageEffect.cpp:35
 #: plugins/filtereffects/ImageEffectFactory.cpp:26
@@ -371,50 +419,6 @@ msgstr "dx"
 msgid "dy"
 msgstr "dy"
 
-#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
-msgid "Flood color"
-msgstr "Толтыру түсі"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:43
-msgid "Duplicate"
-msgstr "Қосарлау"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:44
-msgid "Wrap"
-msgstr "Орауы"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:45
-msgid "None"
-msgstr "Жоқ"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:46
-msgid "Edge mode:"
-msgstr "Шет күйі:"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:53
-msgid "Kernel size:"
-msgstr "Өзектің өлшемі:"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:62
-msgid "Target point:"
-msgstr "Көздеген нүктесі:"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:69
-msgid "Divisor:"
-msgstr "Бөлгіші:"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:71
-msgid "Bias:"
-msgstr "Ығысуы:"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:74
-msgid "Preserve alpha"
-msgstr "Альфасын сақтау"
-
-#: plugins/filtereffects/ConvolveMatrixEffectConfigWidget.cpp:77
-msgid "Edit kernel"
-msgstr "Өзегін өңдеу"
-
 #: plugins/flattenpath/FlattenPathPlugin.cpp:57
 msgid "&Flatten Path..."
 msgstr "Қисықты &түзеу..."
@@ -439,6 +443,11 @@ msgctxt "(qtundo-format)"
 msgid "Flatten path"
 msgstr "Қисықты түзеу"
 
+#: plugins/refinepath/KarbonPathRefineCommand.cpp:41
+msgctxt "(qtundo-format)"
+msgid "Refine path"
+msgstr "Сызығын айқындату"
+
 #: plugins/refinepath/RefinePathPlugin.cpp:57
 msgid "&Refine Path..."
 msgstr "&Сызығын айқындату..."
@@ -450,11 +459,6 @@ msgstr "Сызығын айқындату"
 #: plugins/refinepath/RefinePathPlugin.cpp:101
 msgid "Subdivisions:"
 msgstr "Бөлшектері:"
-
-#: plugins/refinepath/KarbonPathRefineCommand.cpp:41
-msgctxt "(qtundo-format)"
-msgid "Refine path"
-msgstr "Сызығын айқындату"
 
 #: plugins/roundcorners/RoundCornersCommand.cpp:41
 #: plugins/roundcorners/RoundCornersPlugin.cpp:87
@@ -474,6 +478,11 @@ msgstr "Дөңгеленген бұрыштар"
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:133
 msgid "Radius:"
 msgstr "Радиусы:"
+
+#: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
+msgctxt "(qtundo-format)"
+msgid "Whirl & pinch"
+msgstr "Бұрау және қысу"
 
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:62
 msgid "&Whirl/Pinch..."
@@ -502,329 +511,6 @@ msgstr "Бұрышы:"
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:127
 msgid "Pinch:"
 msgstr "Қысуы:"
-
-#: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
-msgctxt "(qtundo-format)"
-msgid "Whirl & pinch"
-msgstr "Бұрау және қысу"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:38
-msgid "Configure"
-msgstr "Баптау"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:43
-#: ui/dialogs/KarbonConfigureDialog.cpp:44
-#: ui/widgets/KarbonConfigInterfacePage.cpp:56
-msgid "Interface"
-msgstr "Интерфейсі"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:48
-#: ui/dialogs/KarbonConfigureDialog.cpp:49
-msgid "Misc"
-msgstr "Түрлі басқа"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:53
-#: ui/dialogs/KarbonConfigureDialog.cpp:54
-msgid "Grid"
-msgstr "Тор"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:60
-msgctxt "@title:tab Document settings page"
-msgid "Document"
-msgstr "Құжат"
-
-#: ui/dialogs/KarbonConfigureDialog.cpp:61
-msgid "Document Settings"
-msgstr "Құжаттың параметрлері"
-
-#: ui/dockers/KarbonLayerDocker.cpp:84
-msgid "Layer view"
-msgstr "Қабаттың көрінісі"
-
-#: ui/dockers/KarbonLayerDocker.cpp:95
-msgid "Add a new layer"
-msgstr "Жаңа қабатты қосу"
-
-#: ui/dockers/KarbonLayerDocker.cpp:101
-msgid "Delete selected objects"
-msgstr "Таңдалған нысандарды кетіру"
-
-#: ui/dockers/KarbonLayerDocker.cpp:107
-msgid "Raise selected objects"
-msgstr "Таңдалған нысандарды алға шығару"
-
-#: ui/dockers/KarbonLayerDocker.cpp:113
-msgid "Lower selected objects"
-msgstr "Таңдалған нысандарды артқа шығару"
-
-#: ui/dockers/KarbonLayerDocker.cpp:122
-msgid "Minimal View"
-msgstr "Ықшам көрініс"
-
-#: ui/dockers/KarbonLayerDocker.cpp:124
-msgid "Detailed View"
-msgstr "Егжей-тегжейлі көрініс"
-
-#: ui/dockers/KarbonLayerDocker.cpp:126
-msgid "Thumbnail View"
-msgstr "Нобайлы көрініс"
-
-#: ui/dockers/KarbonLayerDocker.cpp:136
-msgid "View mode"
-msgstr "Көрсету режімі"
-
-#: ui/dockers/KarbonLayerDocker.cpp:276
-msgid "New Layer"
-msgstr "Жаңа қабат"
-
-#: ui/dockers/KarbonLayerDocker.cpp:277
-msgid "Enter the name of the new layer:"
-msgstr "Жаңа қабаттың атауы:"
-
-#: ui/dockers/KarbonLayerDocker.cpp:278
-msgid "New layer"
-msgstr "Жаңа қабат"
-
-#: ui/dockers/KarbonLayerDocker.cpp:284
-msgctxt "(qtundo-format)"
-msgid "Create Layer"
-msgstr "Қабатты құру"
-
-#: ui/dockers/KarbonLayerDocker.cpp:308
-msgctxt "(qtundo-format)"
-msgid "Delete Layer"
-msgstr "Қабатты алып тастау"
-
-#: ui/dockers/KarbonLayerDocker.cpp:310
-msgid "Could not delete all layers. At least one layer is required."
-msgstr "Бүкіл қабаттарды өшіруге болмайды. Кемінде біреуі қалу керек."
-
-#: ui/dockers/KarbonLayerDocker.cpp:310
-msgid "Error deleting layers"
-msgstr "Қабаттарды өшіру қатесі"
-
-#: ui/dockers/KarbonLayerModel.cpp:161
-msgid "Layer"
-msgstr "Қабаты"
-
-#: ui/dockers/KarbonLayerModel.cpp:163
-msgctxt "A group of shapes"
-msgid "Group"
-msgstr "Тобы"
-
-#: ui/dockers/KarbonLayerModel.cpp:165
-msgid "Shape"
-msgstr "Пішін"
-
-#: ui/dockers/KarbonLayerModel.cpp:260
-msgctxt "Visibility state of the shape"
-msgid "Visible"
-msgstr "Көрінетін"
-
-#: ui/dockers/KarbonLayerModel.cpp:261
-msgctxt "Lock state of the shape"
-msgid "Locked"
-msgstr "Бұғатталған"
-
-#: ui/dockers/KarbonLayerModel.cpp:262
-msgctxt "The z-index of the shape"
-msgid "zIndex"
-msgstr "z-индексі"
-
-#: ui/dockers/KarbonLayerModel.cpp:263
-msgctxt "The opacity of the shape"
-msgid "Opacity"
-msgstr "Мөлдірсіздік"
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-msgctxt "Clipped state of the shape"
-msgid "Clipped"
-msgstr "Бекітілген"
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-msgid "yes"
-msgstr "иә"
-
-#: ui/dockers/KarbonLayerModel.cpp:264
-msgid "no"
-msgstr "жоқ"
-
-#: ui/dockers/KarbonLayerModel.cpp:465
-msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
-msgstr "Пішіндерді қайта еншілеу"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:33
-msgid "Original"
-msgstr "Өзіндік"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:34
-msgid "Tiled"
-msgstr "Қатарлап"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:35
-msgid "Stretched"
-msgstr "Созып"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:37
-msgid "Top Left"
-msgstr "Жоғары сол жақта"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:38
-msgid "Top"
-msgstr "Жоғары"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:39
-msgid "Top Right"
-msgstr "Жоғары оң жақта"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:40
-msgid "Left"
-msgstr "Солға"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:41
-msgid "Center"
-msgstr "Ортаға"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:42
-msgid "Right"
-msgstr "Оңға"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:43
-msgid "Bottom Left"
-msgstr "Төменгі сол жақта"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:44
-msgid "Bottom"
-msgstr "Төменге"
-
-#: ui/widgets/KarbonPatternOptionsWidget.cpp:45
-msgid "Bottom Right"
-msgstr "Төменгі оң жақта"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:56
-msgid "Press to apply fill to selection"
-msgstr "Таңдалғанды толтыру үшін басыңыз"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:103
-msgctxt "The style has no fill"
-msgid "None"
-msgstr "Жоқ"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:121
-msgid "Press to apply stroke to selection"
-msgstr "Таңдалғанды штрихтау үшін басыңыз"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:166
-msgctxt "The style has a custom stroking"
-msgid "Custom"
-msgstr "Өзгеше"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:172
-msgctxt "The style has no stroking"
-msgid "None"
-msgstr "Жоқ"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:192
-msgid "Stroke:"
-msgstr "Штрихі:"
-
-#: ui/widgets/KarbonSmallStylePreview.cpp:197
-msgid "Fill:"
-msgstr "Толтыруы:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:71
-#, fuzzy
-#| msgid "Show status bar"
-msgid "Show status bar:"
-msgstr "Күй-жай жолағын көрсету"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:76
-msgid "Number of recent files:"
-msgstr "Жуырдағылардың саны:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:82
-msgid "Palette font size:"
-msgstr "Палитра қаріпінің өлшемі:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:88
-msgid "Canvas color:"
-msgstr "Өрісінің түсі:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:167
-msgid "Target:"
-msgstr "Көздегені:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:169
-msgid "Stroke"
-msgstr "Штрих"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:170
-msgid "Fill"
-msgstr "Толтыру"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:174
-msgid "Type:"
-msgstr "Түрі:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:176
-msgctxt "Linear gradient type"
-msgid "Linear"
-msgstr "Сызықты"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:177
-msgctxt "Radial gradient type"
-msgid "Radial"
-msgstr "Радиалды"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:178
-msgctxt "Conical gradient type"
-msgid "Conical"
-msgstr "Конусты"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:181
-msgid "Repeat:"
-msgstr "Қайталауы:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:183
-msgctxt "No gradient spread"
-msgid "None"
-msgstr "Жоқ"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:184
-msgid "Reflect"
-msgstr "Шағылу"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:185
-msgid "Repeat"
-msgstr "Қайталау"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:188
-msgid "Overall opacity:"
-msgstr "Жалпы мөлдірсіздігі:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:193
-msgid "Color stop:"
-msgstr "Шек түсі:"
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:200
-msgid "Stop color."
-msgstr "Шек түсі."
-
-#: ui/widgets/KarbonGradientEditWidget.cpp:203
-msgid "&Add to Predefined Gradients"
-msgstr "Дайын градиенттерді қ&осу"
-
-#: ui/widgets/KarbonPaletteBarWidget.cpp:58
-#, fuzzy
-#| msgid "Select image"
-msgid "Select palette"
-msgstr "Кескінді таңдау"
-
-#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
-msgctxt "(qtundo-format)"
-msgid "Insert graphics"
-msgstr "Суретті ендіру"
 
 #: ui/KarbonAboutData.h:26
 msgid "A Vector Graphics Drawing Application."
@@ -897,9 +583,10 @@ msgstr "Alan Horkan"
 msgid "Helpful patches and advice"
 msgstr "Пайдалы жамаулар мен кеңестер"
 
-#: ui/KarbonZoomController.cpp:62
-msgid "Zoom"
-msgstr "Масштабтау"
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
+msgctxt "(qtundo-format)"
+msgid "Insert graphics"
+msgstr "Суретті ендіру"
 
 #: ui/KarbonPart.cpp:208
 msgid "Invalid OASIS document. No office:body tag found."
@@ -1095,9 +782,322 @@ msgstr "Таңдағанды жақындату"
 msgid "Zoom to Drawing"
 msgstr "Суретті жақындату"
 
-#: main.cpp:43
-msgid "File to open"
-msgstr "Ашатын файл"
+#: ui/KarbonZoomController.cpp:62
+msgid "Zoom"
+msgstr "Масштабтау"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:38
+msgid "Configure"
+msgstr "Баптау"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:43
+#: ui/dialogs/KarbonConfigureDialog.cpp:44
+#: ui/widgets/KarbonConfigInterfacePage.cpp:56
+msgid "Interface"
+msgstr "Интерфейсі"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:48
+#: ui/dialogs/KarbonConfigureDialog.cpp:49
+msgid "Misc"
+msgstr "Түрлі басқа"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:53
+#: ui/dialogs/KarbonConfigureDialog.cpp:54
+msgid "Grid"
+msgstr "Тор"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:60
+msgctxt "@title:tab Document settings page"
+msgid "Document"
+msgstr "Құжат"
+
+#: ui/dialogs/KarbonConfigureDialog.cpp:61
+msgid "Document Settings"
+msgstr "Құжаттың параметрлері"
+
+#: ui/dockers/KarbonLayerDocker.cpp:84
+msgid "Layer view"
+msgstr "Қабаттың көрінісі"
+
+#: ui/dockers/KarbonLayerDocker.cpp:95
+msgid "Add a new layer"
+msgstr "Жаңа қабатты қосу"
+
+#: ui/dockers/KarbonLayerDocker.cpp:101
+msgid "Delete selected objects"
+msgstr "Таңдалған нысандарды кетіру"
+
+#: ui/dockers/KarbonLayerDocker.cpp:107
+msgid "Raise selected objects"
+msgstr "Таңдалған нысандарды алға шығару"
+
+#: ui/dockers/KarbonLayerDocker.cpp:113
+msgid "Lower selected objects"
+msgstr "Таңдалған нысандарды артқа шығару"
+
+#: ui/dockers/KarbonLayerDocker.cpp:122
+msgid "Minimal View"
+msgstr "Ықшам көрініс"
+
+#: ui/dockers/KarbonLayerDocker.cpp:124
+msgid "Detailed View"
+msgstr "Егжей-тегжейлі көрініс"
+
+#: ui/dockers/KarbonLayerDocker.cpp:126
+msgid "Thumbnail View"
+msgstr "Нобайлы көрініс"
+
+#: ui/dockers/KarbonLayerDocker.cpp:136
+msgid "View mode"
+msgstr "Көрсету режімі"
+
+#: ui/dockers/KarbonLayerDocker.cpp:276
+msgid "New Layer"
+msgstr "Жаңа қабат"
+
+#: ui/dockers/KarbonLayerDocker.cpp:277
+msgid "Enter the name of the new layer:"
+msgstr "Жаңа қабаттың атауы:"
+
+#: ui/dockers/KarbonLayerDocker.cpp:278
+msgid "New layer"
+msgstr "Жаңа қабат"
+
+#: ui/dockers/KarbonLayerDocker.cpp:284
+msgctxt "(qtundo-format)"
+msgid "Create Layer"
+msgstr "Қабатты құру"
+
+#: ui/dockers/KarbonLayerDocker.cpp:308
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Қабатты алып тастау"
+
+#: ui/dockers/KarbonLayerDocker.cpp:310
+msgid "Could not delete all layers. At least one layer is required."
+msgstr "Бүкіл қабаттарды өшіруге болмайды. Кемінде біреуі қалу керек."
+
+#: ui/dockers/KarbonLayerDocker.cpp:310
+msgid "Error deleting layers"
+msgstr "Қабаттарды өшіру қатесі"
+
+#: ui/dockers/KarbonLayerModel.cpp:161
+msgid "Layer"
+msgstr "Қабаты"
+
+#: ui/dockers/KarbonLayerModel.cpp:163
+msgctxt "A group of shapes"
+msgid "Group"
+msgstr "Тобы"
+
+#: ui/dockers/KarbonLayerModel.cpp:165
+msgid "Shape"
+msgstr "Пішін"
+
+#: ui/dockers/KarbonLayerModel.cpp:260
+msgctxt "Visibility state of the shape"
+msgid "Visible"
+msgstr "Көрінетін"
+
+#: ui/dockers/KarbonLayerModel.cpp:261
+msgctxt "Lock state of the shape"
+msgid "Locked"
+msgstr "Бұғатталған"
+
+#: ui/dockers/KarbonLayerModel.cpp:262
+msgctxt "The z-index of the shape"
+msgid "zIndex"
+msgstr "z-индексі"
+
+#: ui/dockers/KarbonLayerModel.cpp:263
+msgctxt "The opacity of the shape"
+msgid "Opacity"
+msgstr "Мөлдірсіздік"
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+msgctxt "Clipped state of the shape"
+msgid "Clipped"
+msgstr "Бекітілген"
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+msgid "yes"
+msgstr "иә"
+
+#: ui/dockers/KarbonLayerModel.cpp:264
+msgid "no"
+msgstr "жоқ"
+
+#: ui/dockers/KarbonLayerModel.cpp:465
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr "Пішіндерді қайта еншілеу"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:71
+#, fuzzy
+#| msgid "Show status bar"
+msgid "Show status bar:"
+msgstr "Күй-жай жолағын көрсету"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:76
+msgid "Number of recent files:"
+msgstr "Жуырдағылардың саны:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:82
+msgid "Palette font size:"
+msgstr "Палитра қаріпінің өлшемі:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:88
+msgid "Canvas color:"
+msgstr "Өрісінің түсі:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:167
+msgid "Target:"
+msgstr "Көздегені:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:169
+msgid "Stroke"
+msgstr "Штрих"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:170
+msgid "Fill"
+msgstr "Толтыру"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:174
+msgid "Type:"
+msgstr "Түрі:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:176
+msgctxt "Linear gradient type"
+msgid "Linear"
+msgstr "Сызықты"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:177
+msgctxt "Radial gradient type"
+msgid "Radial"
+msgstr "Радиалды"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:178
+msgctxt "Conical gradient type"
+msgid "Conical"
+msgstr "Конусты"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:181
+msgid "Repeat:"
+msgstr "Қайталауы:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:183
+msgctxt "No gradient spread"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:184
+msgid "Reflect"
+msgstr "Шағылу"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:185
+msgid "Repeat"
+msgstr "Қайталау"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:188
+msgid "Overall opacity:"
+msgstr "Жалпы мөлдірсіздігі:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:193
+msgid "Color stop:"
+msgstr "Шек түсі:"
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:200
+msgid "Stop color."
+msgstr "Шек түсі."
+
+#: ui/widgets/KarbonGradientEditWidget.cpp:203
+msgid "&Add to Predefined Gradients"
+msgstr "Дайын градиенттерді қ&осу"
+
+#: ui/widgets/KarbonPaletteBarWidget.cpp:58
+#, fuzzy
+#| msgid "Select image"
+msgid "Select palette"
+msgstr "Кескінді таңдау"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:33
+msgid "Original"
+msgstr "Өзіндік"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:34
+msgid "Tiled"
+msgstr "Қатарлап"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:35
+msgid "Stretched"
+msgstr "Созып"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:37
+msgid "Top Left"
+msgstr "Жоғары сол жақта"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:38
+msgid "Top"
+msgstr "Жоғары"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:39
+msgid "Top Right"
+msgstr "Жоғары оң жақта"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:40
+msgid "Left"
+msgstr "Солға"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:41
+msgid "Center"
+msgstr "Ортаға"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:42
+msgid "Right"
+msgstr "Оңға"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:43
+msgid "Bottom Left"
+msgstr "Төменгі сол жақта"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:44
+msgid "Bottom"
+msgstr "Төменге"
+
+#: ui/widgets/KarbonPatternOptionsWidget.cpp:45
+msgid "Bottom Right"
+msgstr "Төменгі оң жақта"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:56
+msgid "Press to apply fill to selection"
+msgstr "Таңдалғанды толтыру үшін басыңыз"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:103
+msgctxt "The style has no fill"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:121
+msgid "Press to apply stroke to selection"
+msgstr "Таңдалғанды штрихтау үшін басыңыз"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:166
+msgctxt "The style has a custom stroking"
+msgid "Custom"
+msgstr "Өзгеше"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:172
+msgctxt "The style has no stroking"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:192
+msgid "Stroke:"
+msgstr "Штрихі:"
+
+#: ui/widgets/KarbonSmallStylePreview.cpp:197
+msgid "Fill:"
+msgstr "Толтыруы:"
 
 #~ msgid "Hide Page Margins"
 #~ msgstr "Парақтың жиектері жасырылсын"
