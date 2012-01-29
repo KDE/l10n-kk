@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-23 04:27+0100\n"
+"POT-Creation-Date: 2012-01-29 03:02+0100\n"
 "PO-Revision-Date: 2011-12-09 03:47+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -444,34 +444,47 @@ msgstr "Файл өлшемі"
 msgid "Page Size"
 msgstr "Бет өлшемі"
 
-#: ui/annotationmodel.cpp:297 part.cpp:2110
+#: ui/annotationmodel.cpp:297 part.cpp:2108
 #, kde-format
 msgid "Page %1"
 msgstr "%1-бет"
 
-#: ui/annotationpopup.cpp:49
-#, kde-format
-msgid "Annotation"
-msgid_plural "%1 Annotations"
-msgstr[0] "%1 аңдатпа"
+#: ui/annotwindow.cpp:52
+msgid "Close this note"
+msgstr "Жазбаны жабу"
 
-#: ui/annotationpopup.cpp:50
-msgid "&Open Pop-up Note"
-msgstr "Қалқымалы жазбаны &ашу"
+#: ui/annotwindow.cpp:94 ui/findbar.cpp:64
+msgid "Options"
+msgstr "Параметрлері"
 
-#: ui/annotationpopup.cpp:52
-msgid "&Delete"
-msgstr "&Өшіру"
+#: ui/annotwindow.cpp:105
+msgid ""
+"This annotation may contain LaTeX code.\n"
+"Click here to render."
+msgstr ""
+"Бұл аңдатпада LaTeX коды болуы мүмкін.\n"
+"Оны кескіндеу үшін осында түртіңіз."
 
-#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:630
-msgid "&Properties"
-msgstr "Қ&асиеттері"
+#: ui/annotwindow.cpp:322
+msgid "Cannot find latex executable."
+msgstr "latex орындау файлы табылмады."
 
-#: ui/annotationpopup.cpp:65
-#, kde-format
-msgctxt "%1 is the name of the file to save"
-msgid "&Save '%1'..."
-msgstr "'%1' дегенді &сақтау..."
+#: ui/annotwindow.cpp:322 ui/annotwindow.cpp:327 ui/annotwindow.cpp:332
+#: ui/annotwindow.cpp:337
+msgid "LaTeX rendering failed"
+msgstr "LaTeX кескіндеу жаңылысы"
+
+#: ui/annotwindow.cpp:327
+msgid "Cannot find dvipng executable."
+msgstr "dvipng орындау файлы табылмады."
+
+#: ui/annotwindow.cpp:332
+msgid "A problem occurred during the execution of the 'latex' command."
+msgstr "'latex' командасын орындау кезінде бір мәселе орын алды."
+
+#: ui/annotwindow.cpp:337
+msgid "A problem occurred during the execution of the 'dvipng' command."
+msgstr "'dvipng' командасын орындау кезінде бір мәселе орын алды."
 
 #: ui/pageview.cpp:401
 msgid "Zoom"
@@ -608,111 +621,111 @@ msgstr "Жоғарға жүгірту"
 msgid "Scroll Down"
 msgstr "Төменге жүгірту"
 
-#: ui/pageview.cpp:876
+#: ui/pageview.cpp:884
 #, kde-format
 msgid " Loaded a one-page document."
 msgid_plural " Loaded a %1-page document."
 msgstr[0] " %1-бетті құжат жүктелді."
 
-#: ui/pageview.cpp:2224
+#: ui/pageview.cpp:2234
 msgid "Follow This Link"
 msgstr "Осы сілтемеге еру"
 
-#: ui/pageview.cpp:2227
+#: ui/pageview.cpp:2237
 msgid "Copy Link Address"
 msgstr "Сілтеме адресін көшіріп алу"
 
-#: ui/pageview.cpp:2369
+#: ui/pageview.cpp:2379
 #, kde-format
 msgid "Text (1 character)"
 msgid_plural "Text (%1 characters)"
 msgstr[0] "Мәтін (таңбалар саны: %1)"
 
-#: ui/pageview.cpp:2370 ui/pageview.cpp:2385
+#: ui/pageview.cpp:2380 ui/pageview.cpp:2395
 msgid "Copy to Clipboard"
 msgstr "Алмасу буферіне көшіріп алу"
 
-#: ui/pageview.cpp:2375 ui/pageview.cpp:2526 ui/pageview.cpp:2632
+#: ui/pageview.cpp:2385 ui/pageview.cpp:2536 ui/pageview.cpp:2642
 msgid "Copy forbidden by DRM"
 msgstr "Көшіруге DRM (авторлықты қорғау) тыйым салған"
 
-#: ui/pageview.cpp:2378 ui/pageview.cpp:2628
+#: ui/pageview.cpp:2388 ui/pageview.cpp:2638
 msgid "Speak Text"
 msgstr "Мәтінді дауыстау"
 
-#: ui/pageview.cpp:2384
+#: ui/pageview.cpp:2394
 #, kde-format
 msgid "Image (%1 by %2 pixels)"
 msgstr "Кескін (%1 x %2 пиксел)"
 
-#: ui/pageview.cpp:2386
+#: ui/pageview.cpp:2396
 msgid "Save to File..."
 msgstr "Файлға сақтау..."
 
-#: ui/pageview.cpp:2408
+#: ui/pageview.cpp:2418
 #, kde-format
 msgid "Image [%1x%2] copied to clipboard."
 msgstr "Кескін [%1x%2] алмасу буферіне көшіріп алынды."
 
-#: ui/pageview.cpp:2416
+#: ui/pageview.cpp:2426
 msgid "File not saved."
 msgstr "Файл сақталмады."
 
-#: ui/pageview.cpp:2426
+#: ui/pageview.cpp:2436
 #, kde-format
 msgid "Image [%1x%2] saved to %3 file."
 msgstr "Кескін [%1x%2] %3 файлына сақталды."
 
-#: ui/pageview.cpp:2625
+#: ui/pageview.cpp:2635
 msgid "Copy Text"
 msgstr "Мәтінді көшіріп алу"
 
 #. i18n: file: conf/dlggeneralbase.ui:287
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_ZoomMode)
-#: ui/pageview.cpp:3405 part.cpp:2116 rc.cpp:311
+#: ui/pageview.cpp:3415 part.cpp:2114 rc.cpp:311
 msgid "Fit Width"
 msgstr "Енін шақтау"
 
 #. i18n: file: conf/dlggeneralbase.ui:292
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_ZoomMode)
-#: ui/pageview.cpp:3405 rc.cpp:314
+#: ui/pageview.cpp:3415 rc.cpp:314
 msgid "Fit Page"
 msgstr "Түгел бетке шақтау"
 
-#: ui/pageview.cpp:3533
+#: ui/pageview.cpp:3543
 msgid "Hide Forms"
 msgstr "Пішіндерді жасыру"
 
-#: ui/pageview.cpp:3537
+#: ui/pageview.cpp:3547
 msgid "Show Forms"
 msgstr "Пішіндерді көрсету"
 
-#: ui/pageview.cpp:3586
+#: ui/pageview.cpp:3596
 #, kde-format
 msgid "Search for '%1' with"
 msgstr "Мынамен %1 дегенді іздеу:"
 
-#: ui/pageview.cpp:3601
+#: ui/pageview.cpp:3611
 msgid "Configure Web Shortcuts..."
 msgstr "Веб-қысқармаларын баптау..."
 
-#: ui/pageview.cpp:4040
+#: ui/pageview.cpp:4050
 msgid "Welcome"
 msgstr "Қош келдіңіз"
 
-#: ui/pageview.cpp:4143
+#: ui/pageview.cpp:4153
 msgid "Select zooming area. Right-click to zoom out."
 msgstr "Жақындататын аумақты таңдаңыз. Алыстау үшін оң батырманы түртіңіз."
 
-#: ui/pageview.cpp:4155
+#: ui/pageview.cpp:4165
 msgid "Draw a rectangle around the text/graphics to copy."
 msgstr "Көшірмелеу үшін мәтін/суретті төртбұрышпен қоршап алыңыз."
 
-#: ui/pageview.cpp:4167
+#: ui/pageview.cpp:4177
 msgid "Select text"
 msgstr "Мәтінді таңдау"
 
-#: ui/pageview.cpp:4180
+#: ui/pageview.cpp:4190
 msgid ""
 "Draw a rectangle around the table, then click near edges to divide up; press "
 "Esc to clear."
@@ -720,11 +733,11 @@ msgstr ""
 "Кестені айнала төртбұрышты сызып, мәтінді бөлу үшін шетінен түртіңіз; "
 "тазалау үшін Esc пернесін басыңыз."
 
-#: ui/pageview.cpp:4213
+#: ui/pageview.cpp:4223
 msgid "Annotations author"
 msgstr "Аңдатпаның авторы"
 
-#: ui/pageview.cpp:4214
+#: ui/pageview.cpp:4224
 msgid "Please insert your name or initials:"
 msgstr "Атыңыз не инициалдарыңыз:"
 
@@ -883,10 +896,6 @@ msgstr "Алдыңғы"
 msgid "Jump to previous match"
 msgstr "Алдыңғы табылғанына өту"
 
-#: ui/findbar.cpp:64 ui/annotwindow.cpp:93
-msgid "Options"
-msgstr "Параметрлері"
-
 #: ui/findbar.cpp:65
 msgid "Modify search behavior"
 msgstr "Іздеу тәртібін өзгерту"
@@ -966,6 +975,30 @@ msgctxt ""
 msgid "Giving a presentation"
 msgstr "Презентация"
 
+#: ui/annotationpopup.cpp:49
+#, kde-format
+msgid "Annotation"
+msgid_plural "%1 Annotations"
+msgstr[0] "%1 аңдатпа"
+
+#: ui/annotationpopup.cpp:50
+msgid "&Open Pop-up Note"
+msgstr "Қалқымалы жазбаны &ашу"
+
+#: ui/annotationpopup.cpp:52
+msgid "&Delete"
+msgstr "&Өшіру"
+
+#: ui/annotationpopup.cpp:59 ui/propertiesdialog.cpp:49 part.cpp:628
+msgid "&Properties"
+msgstr "Қ&асиеттері"
+
+#: ui/annotationpopup.cpp:66
+#, kde-format
+msgctxt "%1 is the name of the file to save"
+msgid "&Save '%1'..."
+msgstr "'%1' дегенді &сақтау..."
+
 #: ui/sidebar.cpp:675 ui/annotationwidgets.cpp:268 shell/main.cpp:42
 #: part.cpp:155
 msgid "Okular"
@@ -986,39 +1019,6 @@ msgstr "Қалыпты таңбашалар"
 #: ui/sidebar.cpp:694
 msgid "Large Icons"
 msgstr "Үлкен таңбашалар"
-
-#: ui/annotwindow.cpp:51
-msgid "Close this note"
-msgstr "Жазбаны жабу"
-
-#: ui/annotwindow.cpp:104
-msgid ""
-"This annotation may contain LaTeX code.\n"
-"Click here to render."
-msgstr ""
-"Бұл аңдатпада LaTeX коды болуы мүмкін.\n"
-"Оны кескіндеу үшін осында түртіңіз."
-
-#: ui/annotwindow.cpp:312
-msgid "Cannot find latex executable."
-msgstr "latex орындау файлы табылмады."
-
-#: ui/annotwindow.cpp:312 ui/annotwindow.cpp:317 ui/annotwindow.cpp:322
-#: ui/annotwindow.cpp:327
-msgid "LaTeX rendering failed"
-msgstr "LaTeX кескіндеу жаңылысы"
-
-#: ui/annotwindow.cpp:317
-msgid "Cannot find dvipng executable."
-msgstr "dvipng орындау файлы табылмады."
-
-#: ui/annotwindow.cpp:322
-msgid "A problem occurred during the execution of the 'latex' command."
-msgstr "'latex' командасын орындау кезінде бір мәселе орын алды."
-
-#: ui/annotwindow.cpp:327
-msgid "A problem occurred during the execution of the 'dvipng' command."
-msgstr "'dvipng' командасын орындау кезінде бір мәселе орын алды."
 
 #: ui/thumbnaillist.cpp:1014
 msgid "Show bookmarked pages only"
@@ -1346,11 +1346,11 @@ msgstr "Тек назардағы құжат"
 msgid "Go to This Bookmark"
 msgstr "Осы бетбелгіге өту"
 
-#: ui/bookmarklist.cpp:247 part.cpp:561 part.cpp:1756
+#: ui/bookmarklist.cpp:247 part.cpp:559 part.cpp:1754
 msgid "Rename Bookmark"
 msgstr "Бетбелгінің атауын өзгерту"
 
-#: ui/bookmarklist.cpp:248 part.cpp:1591 part.cpp:2112
+#: ui/bookmarklist.cpp:248 part.cpp:1589 part.cpp:2110
 msgid "Remove Bookmark"
 msgstr "Бетбелгіні өшіру"
 
@@ -1692,173 +1692,173 @@ msgstr ""
 "Пішіндері бар құжат. Олармен әрекеттесу үшін батырманы басыңыз немесе "
 "мәзірінен \"Көрініс->Пішіндерді көрсету\" дегенді таңдаңыз."
 
-#: part.cpp:521
+#: part.cpp:519
 msgctxt "Previous page"
 msgid "Previous"
 msgstr "Алдыңғы"
 
-#: part.cpp:522
+#: part.cpp:520
 msgid "Go back to the Previous Page"
 msgstr "Алдыңғы бетке қайту"
 
-#: part.cpp:523
+#: part.cpp:521
 msgid "Moves to the previous page of the document"
 msgstr "Құжаттың алдыңғы бетіне ауысу"
 
-#: part.cpp:532
+#: part.cpp:530
 msgctxt "Next page"
 msgid "Next"
 msgstr "Келесі"
 
-#: part.cpp:533
+#: part.cpp:531
 msgid "Advance to the Next Page"
 msgstr "Келесі бетке"
 
-#: part.cpp:534
+#: part.cpp:532
 msgid "Moves to the next page of the document"
 msgstr "Құжаттың келесі бетіне ауысу"
 
-#: part.cpp:544
+#: part.cpp:542
 msgid "Beginning of the document"
 msgstr "Құжаттың басталуы"
 
-#: part.cpp:545
+#: part.cpp:543
 msgid "Moves to the beginning of the document"
 msgstr "Құжаттың басына ауысу"
 
-#: part.cpp:549
+#: part.cpp:547
 msgid "End of the document"
 msgstr "Құжаттың соңы"
 
-#: part.cpp:550
+#: part.cpp:548
 msgid "Moves to the end of the document"
 msgstr "Құжаттың соңына ауысу"
 
-#: part.cpp:563
+#: part.cpp:561
 msgid "Rename the current page bookmark"
 msgstr "Назардағы бетбелгіні қайта атау"
 
-#: part.cpp:567
+#: part.cpp:565
 msgid "Previous Bookmark"
 msgstr "Алдыңғы бетбелгіге"
 
-#: part.cpp:569
+#: part.cpp:567
 msgid "Go to the previous bookmarked page"
 msgstr "Алдыңғы бетбелгіленгенге өту"
 
-#: part.cpp:573
+#: part.cpp:571
 msgid "Next Bookmark"
 msgstr "Келесі бетбелгіге"
 
-#: part.cpp:575
+#: part.cpp:573
 msgid "Go to the next bookmarked page"
 msgstr "Келесі бетбелгіленгенге өту"
 
-#: part.cpp:601
+#: part.cpp:599
 msgid "Configure Okular..."
 msgstr "Оkular-ды баптау..."
 
-#: part.cpp:606
+#: part.cpp:604
 msgid "Configure Viewer..."
 msgstr "Қарау құралын баптау..."
 
-#: part.cpp:613
+#: part.cpp:611
 msgid "Configure Viewer Backends..."
 msgstr "Карау құралы тетігін баптау..."
 
-#: part.cpp:617
+#: part.cpp:615
 msgid "Configure Backends..."
 msgstr "Тетігін баптау..."
 
-#: part.cpp:644
+#: part.cpp:642
 msgid "About Backend"
 msgstr "Тетігі туралы..."
 
-#: part.cpp:649
+#: part.cpp:647
 msgid "Reloa&d"
 msgstr "Қайта жүкт&еу"
 
-#: part.cpp:651
+#: part.cpp:649
 msgid "Reload the current document from disk."
 msgstr "Назардағы құжатты дискіден қайта оқу."
 
-#: part.cpp:656
+#: part.cpp:654
 msgid "Close &Find Bar"
 msgstr "&Табу панелін жабу"
 
-#: part.cpp:690
+#: part.cpp:688
 msgid "Save &Copy As..."
 msgstr "&Данасын былай сақтау..."
 
-#: part.cpp:699
+#: part.cpp:697
 msgid "Show &Navigation Panel"
 msgstr "&Шарлау панелін көрсету"
 
-#: part.cpp:707
+#: part.cpp:705
 msgid "Show &Page Bar"
 msgstr "&Беттер панелін көрсету"
 
-#: part.cpp:713
+#: part.cpp:711
 msgid "&Embedded Files"
 msgstr "&Ендірме файлдар"
 
-#: part.cpp:719
+#: part.cpp:717
 msgid "E&xport As"
 msgstr "Былай э&кспорттау"
 
-#: part.cpp:729
+#: part.cpp:727
 msgctxt "A document format, Okular-specific"
 msgid "Document Archive"
 msgstr "Архив құжаты"
 
-#: part.cpp:735
+#: part.cpp:733
 msgid "P&resentation"
 msgstr "П&резентация"
 
-#: part.cpp:742
+#: part.cpp:740
 msgid "&Import PostScript as PDF..."
 msgstr "Postscript-ті PDF-ке &импорттау..."
 
-#: part.cpp:747
+#: part.cpp:745
 msgid "&Get Books From Internet..."
 msgstr "Интернеттен кітаптарды &алу..."
 
-#: part.cpp:754
+#: part.cpp:752
 msgid "Switch Blackscreen Mode"
 msgstr "Қара экран режіміне ауысу"
 
-#: part.cpp:759
+#: part.cpp:757
 msgid "Toggle Drawing Mode"
 msgstr "Суреттеу режімін ауыстыру"
 
-#: part.cpp:763
+#: part.cpp:761
 msgid "Erase Drawings"
 msgstr "Суреттерін өшіру"
 
-#: part.cpp:901
+#: part.cpp:899
 #, kde-format
 msgid "Could not open '%1'. File does not exist"
 msgstr "\"%1\" деген ашылмады. Файл жоқ."
 
-#: part.cpp:936
+#: part.cpp:934
 #, kde-format
 msgid "The loading of %1 has been canceled."
 msgstr "%1 жүктеуі доғарылды."
 
-#: part.cpp:951
+#: part.cpp:949
 #, kde-format
 msgid "Could not open %1. Reason: %2"
 msgstr "%1 ашылмады. Себебі: %2"
 
-#: part.cpp:985
+#: part.cpp:983
 msgid "Configure Viewer Backends"
 msgstr "Карау құралы тетігін баптау"
 
-#: part.cpp:989
+#: part.cpp:987
 msgid "Configure Backends"
 msgstr "Тетігін баптау"
 
-#: part.cpp:1081
+#: part.cpp:1079
 msgid ""
 "The program \"ps2pdf\" was not found, so Okular can not import PS files "
 "using it."
@@ -1866,15 +1866,15 @@ msgstr ""
 "\"ps2pdf\" бағдарламасы табылмаған себебінен Okular онымен PS файлды импорт "
 "ете алмайды."
 
-#: part.cpp:1081
+#: part.cpp:1079
 msgid "ps2pdf not found"
 msgstr "ps2pdf табылмады"
 
-#: part.cpp:1100
+#: part.cpp:1098
 msgid "Importing PS file as PDF (this may take a while)..."
 msgstr "PS файлды PDF-ке импорттау (біршама уақыт алуы мүмкін)..."
 
-#: part.cpp:1229
+#: part.cpp:1227
 msgid ""
 "The document requested to be launched in presentation mode.\n"
 "Do you want to allow it?"
@@ -1882,32 +1882,32 @@ msgstr ""
 "Құжатты презентация күйінде көрсетуі сұралды.\n"
 "Рұқсат па?"
 
-#: part.cpp:1231
+#: part.cpp:1229
 msgid "Presentation Mode"
 msgstr "Презентация режімі"
 
-#: part.cpp:1232
+#: part.cpp:1230
 msgid "Allow"
 msgstr "Рұқсат ету"
 
-#: part.cpp:1232
+#: part.cpp:1230
 msgid "Allow the presentation mode"
 msgstr "Презентация режімін рұқсат ету"
 
-#: part.cpp:1233
+#: part.cpp:1231
 msgid "Do Not Allow"
 msgstr "Рұқсат етпеу"
 
-#: part.cpp:1233
+#: part.cpp:1231
 msgid "Do not allow the presentation mode"
 msgstr "Презентация режімін рұқсат етпеу"
 
-#: part.cpp:1283
+#: part.cpp:1281
 #, kde-format
 msgid "Could not open %1"
 msgstr "%1 ашылмады"
 
-#: part.cpp:1369
+#: part.cpp:1367
 msgid ""
 "This link points to a close document action that does not work when using "
 "the embedded viewer."
@@ -1915,7 +1915,7 @@ msgstr ""
 "Бұл сілтеме құжатты жабу әрекетті жасайды, бірақ ол, басқа бағдарламаның "
 "құрамындағы қарау құралы күйінде істемейді."
 
-#: part.cpp:1375
+#: part.cpp:1373
 msgid ""
 "This link points to a quit application action that does not work when using "
 "the embedded viewer."
@@ -1923,41 +1923,41 @@ msgstr ""
 "Бұл сілтеме қолданбадан шығу әрекетін жасайды, бірақ ол, басқа бағдарламаның "
 "құрамындағы қарау құралы күйінде істемейді."
 
-#: part.cpp:1461
+#: part.cpp:1459
 msgid "Reloading the document..."
 msgstr "Құжатты қайта жүктеу..."
 
-#: part.cpp:1644
+#: part.cpp:1642
 msgid "Go to Page"
 msgstr "Бір бетке өту"
 
-#: part.cpp:1659
+#: part.cpp:1657
 msgid "&Page:"
 msgstr "Қай &бетке:"
 
-#: part.cpp:1756
+#: part.cpp:1754
 msgid "Enter the new name of the bookmark:"
 msgstr "Бетбелгінің жаңа атауы:"
 
-#: part.cpp:1793
+#: part.cpp:1791
 msgid "Rename this Bookmark"
 msgstr "Бетбелгінің атауын өзгерту"
 
-#: part.cpp:1884
+#: part.cpp:1882
 msgid "Could not open the temporary file for saving."
 msgstr "Сақтау үшін уақытша файл ашылмады."
 
-#: part.cpp:1895 part.cpp:1906 part.cpp:1949 part.cpp:2269
+#: part.cpp:1893 part.cpp:1904 part.cpp:1947 part.cpp:2267
 #, kde-format
 msgid "File could not be saved in '%1'. Try to save it to another location."
 msgstr "Файл '%1' дегенге сақталмады. Басқа орынға сақтап көріңіз."
 
-#: part.cpp:1899
+#: part.cpp:1897
 #, kde-format
 msgid "File could not be saved in '%1'. %2"
 msgstr "Файл '%1' дегенге сақталмады. %2"
 
-#: part.cpp:1934
+#: part.cpp:1932
 #, kde-format
 msgid ""
 "Okular cannot copy %1 to the specified location.\n"
@@ -1968,25 +1968,25 @@ msgstr ""
 "\n"
 "Құжат енді жоқ."
 
-#: part.cpp:2114
+#: part.cpp:2112
 msgid "Add Bookmark"
 msgstr "Бетбелгіні қосу"
 
-#: part.cpp:2131
+#: part.cpp:2129
 msgid "Tools"
 msgstr "Құралдар"
 
-#: part.cpp:2369
+#: part.cpp:2367
 msgid "Printing this document is not allowed."
 msgstr "Бұл құжатты басып шығаруға болмайды."
 
-#: part.cpp:2378
+#: part.cpp:2376
 msgid ""
 "Could not print the document. Unknown error. Please report to bugs.kde.org"
 msgstr ""
 "Құжат басып шығарылмады. Беймалім қате. bugs.kde.org дегенге хабарлаңыз"
 
-#: part.cpp:2382
+#: part.cpp:2380
 #, kde-format
 msgid ""
 "Could not print the document. Detailed error is \"%1\". Please report to "
@@ -1995,15 +1995,15 @@ msgstr ""
 "Құжат басып шығарылмады. Қатенің егжей-тегжейі \"%1\" дегенде. bugs.kde.org "
 "дегенге хабарлаңыз"
 
-#: part.cpp:2437
+#: part.cpp:2435
 msgid "Go to the place you were before"
 msgstr "Бұдан алдында болған бетке қайту"
 
-#: part.cpp:2440
+#: part.cpp:2438
 msgid "Go to the place you were after"
 msgstr "Бұдан алдында қайтқан бетке қайта бару"
 
-#: part.cpp:2464
+#: part.cpp:2462
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not create temporary file "
@@ -2012,7 +2012,7 @@ msgstr ""
 "<qt><strong>Файл қатесі!</strong> <nobr><strong>%1</strong></nobr> уақытша "
 "файл құрылмады.</qt>"
 
-#: part.cpp:2482
+#: part.cpp:2480
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not open the file <nobr><strong>%1</"
@@ -2021,7 +2021,7 @@ msgstr ""
 "<qt><strong>Файл қатесі!</strong> <nobr><strong>%1</strong></nobr> файлы "
 "тарқатуға ашылмады. Файл жүктеуге келмейді.</qt>"
 
-#: part.cpp:2485
+#: part.cpp:2483
 msgid ""
 "<qt>This error typically occurs if you do not have enough permissions to "
 "read the file. You can check ownership and permissions if you right-click on "
@@ -2033,7 +2033,7 @@ msgstr ""
 "батырмасымен түртіп, ашылған мәзірінде 'Қасиеттері' деген арқылы тексере "
 "аласыз.</qt>"
 
-#: part.cpp:2509
+#: part.cpp:2507
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not uncompress the file <nobr><strong>"
@@ -2042,7 +2042,7 @@ msgstr ""
 "<qt><strong>Файл қатесі!</strong><nobr><strong>%1</strong></nobr> файлы "
 "тарқатылмады. Файл жүктелмейді.</qt>"
 
-#: part.cpp:2512
+#: part.cpp:2510
 msgid ""
 "<qt>This error typically occurs if the file is corrupt. If you want to be "
 "sure, try to decompress the file manually using command-line tools.</qt>"
@@ -2050,7 +2050,7 @@ msgstr ""
 "<qt>Бұл қате көбінде файл бүлінгенде пайда болады. Күмәнданбау үшін команда "
 "жолының құралымен тарқатып көріңіз.</qt>"
 
-#: part.cpp:2541
+#: part.cpp:2539
 msgid "No Bookmarks"
 msgstr "Бетбелгілер жоқ"
 

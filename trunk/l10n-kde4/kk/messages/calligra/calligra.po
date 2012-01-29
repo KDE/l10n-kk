@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-26 02:39+0100\n"
+"POT-Creation-Date: 2012-01-29 02:20+0100\n"
 "PO-Revision-Date: 2012-01-29 06:18+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -310,8 +310,6 @@ msgid "Delete shapes"
 msgstr "Қалыптарды өшіру"
 
 #: flake/commands/KoShapeRunAroundCommand.cpp:56
-#| msgctxt "(qtundo-format)"
-#| msgid "Change page layout"
 msgctxt "(qtundo-format)"
 msgid "Change Shape RunAround"
 msgstr "Қалыпты айналып өтуін өзгерту"
@@ -1308,7 +1306,7 @@ msgstr "Нысанның скрипті"
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: koreport/wrtembed/KoReportDesigner.cpp:840 kotext/KoTextEditor.cpp:1472
 #: kotext/KoTextEditor.cpp:1517
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:313 rc.cpp:170
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:316 rc.cpp:170
 msgid "Delete"
 msgstr "Өшіру"
 
@@ -1352,46 +1350,38 @@ msgstr "Қате тап болды"
 msgid "Unable to add a new group because its name would not be unique"
 msgstr "Жаңа топ қосылмады, өйткені оның атауы қайталанады "
 
-#: kotext/KoTextEditor.cpp:115
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:372
-#: kotext/commands/DeleteCommand.cpp:190
+#: kotext/KoTextEditor.cpp:115 kotext/commands/DeleteCommand.cpp:190
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:375
 msgctxt "(qtundo-format)"
 msgid "Text"
 msgstr "Мәтін"
 
 #: kotext/KoTextEditor.cpp:275 kotext/KoTextEditor.cpp:2135
-#| msgid "Set Paragraph Style"
 msgctxt "(qtundo-format)"
 msgid "New Paragraph"
 msgstr "Жаңа абзац"
 
 #: kotext/KoTextEditor.cpp:500 kotext/KoTextEditor.cpp:506
-#| msgid "Bold"
 msgctxt "(qtundo-format)"
 msgid "Bold"
 msgstr "Қалың"
 
 #: kotext/KoTextEditor.cpp:517 kotext/KoTextEditor.cpp:523
-#| msgid "Italic"
 msgctxt "(qtundo-format)"
 msgid "Italic"
 msgstr "Көлбеу"
 
 #: kotext/KoTextEditor.cpp:534 kotext/KoTextEditor.cpp:546
-#| msgid "Underline"
 msgctxt "(qtundo-format)"
 msgid "Underline"
 msgstr "Асты сызық"
 
 #: kotext/KoTextEditor.cpp:557 kotext/KoTextEditor.cpp:568
-#| msgid "Strike Out"
 msgctxt "(qtundo-format)"
 msgid "Strike Out"
 msgstr "Сызылып тастаған"
 
 #: kotext/KoTextEditor.cpp:590 kotext/KoTextEditor.cpp:591
-#| msgctxt "(qtundo-format)"
-#| msgid "Change Segment"
 msgctxt "(qtundo-format)"
 msgid "Change Alignment"
 msgstr "Туралауын өзгерту"
@@ -1514,7 +1504,6 @@ msgid "Insert Bibliography"
 msgstr "Библиография тізімін ендіру"
 
 #: kotext/KoTextEditor.cpp:1952
-#| msgid "Add Citation"
 msgctxt "(qtundo-format)"
 msgid "Add Citation"
 msgstr "Дәйексөзді қосу"
@@ -1597,12 +1586,6 @@ msgstr "Қосарлы"
 msgid "Format"
 msgstr "Пішімі"
 
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
-#: kotext/commands/DeleteCommand.cpp:47
-msgctxt "(qtundo-format)"
-msgid "Delete"
-msgstr "Өшіру"
-
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 msgctxt "(qtundo-format)"
 msgid "Delete Column"
@@ -1638,15 +1621,13 @@ msgctxt "(qtundo-format)"
 msgid "Change List Numbering"
 msgstr "Тізім нөмірлеуін өзгерту"
 
-#: kotext/commands/ChangeListCommand.cpp:40
-#: kotext/commands/ChangeListCommand.cpp:85
-#: kotext/commands/ChangeListCommand.cpp:98
+#: kotext/commands/DeleteCommand.cpp:47
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
 msgctxt "(qtundo-format)"
-msgid "Change List"
-msgstr "Тізімді өзгерту"
+msgid "Delete"
+msgstr "Өшіру"
 
 #: kotext/commands/TextPasteCommand.cpp:61
-#| msgid "Paste As Text"
 msgctxt "(qtundo-format)"
 msgid "Paste As Text"
 msgstr "Мәтін деп орналастыру"
@@ -1657,10 +1638,16 @@ msgid "Paste"
 msgstr "Орналастыру"
 
 #: kotext/commands/ChangeStylesMacroCommand.cpp:35
-#| msgid "Change Filetype"
 msgctxt "(qtundo-format)"
 msgid "Change Styles"
 msgstr "Стильдерін өзгерту"
+
+#: kotext/commands/ChangeListCommand.cpp:40
+#: kotext/commands/ChangeListCommand.cpp:87
+#: kotext/commands/ChangeListCommand.cpp:100
+msgctxt "(qtundo-format)"
+msgid "Change List"
+msgstr "Тізімді өзгерту"
 
 #: kotext/styles/KoStyleManager.cpp:100 kotext/styles/KoStyleManager.cpp:105
 msgid "Default"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-26 04:10+0100\n"
+"POT-Creation-Date: 2012-01-29 03:18+0100\n"
 "PO-Revision-Date: 2011-12-09 05:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -256,11 +256,11 @@ msgctxt "@info"
 msgid "Failed to locate program <filename>%1</filename> in PATH."
 msgstr "PATH.жолдарында <filename>%1</filename> бағдарламасы табылған жоқ."
 
-#: kerfuffle/cliinterface.cpp:510 kerfuffle/cliinterface.cpp:550
+#: kerfuffle/cliinterface.cpp:517 kerfuffle/cliinterface.cpp:557
 msgid "Incorrect password."
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/cliinterface.cpp:517 kerfuffle/cliinterface.cpp:557
+#: kerfuffle/cliinterface.cpp:524 kerfuffle/cliinterface.cpp:564
 msgid "Extraction failed because of an unexpected error."
 msgstr "Тарқату бір күтпеген қате себебінен жаңылды."
 
@@ -314,27 +314,27 @@ msgstr "<filename>%1</filename> деген бар, бірақ ол қапшық 
 msgid "Please check your permissions to create it."
 msgstr "Оны құруға рұқсаттарыңызды түгелдеңіз."
 
-#: kerfuffle/jobs.cpp:176
+#: kerfuffle/jobs.cpp:174
 msgid "Loading archive..."
 msgstr "Архивті жүктеу..."
 
-#: kerfuffle/jobs.cpp:239
+#: kerfuffle/jobs.cpp:237
 msgid "Extracting all files"
 msgstr "Барлық файлдарды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:241
+#: kerfuffle/jobs.cpp:239
 #, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "%1 файлды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:292
+#: kerfuffle/jobs.cpp:290
 #, kde-format
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "%1 файлды қосу"
 
-#: kerfuffle/jobs.cpp:315
+#: kerfuffle/jobs.cpp:313
 #, kde-format
 msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
@@ -358,67 +358,67 @@ msgstr ""
 msgid "Incorrect password, please try again."
 msgstr "Келтірілген пароль дұрыс емес. Қайталап көріңіз."
 
-#: part/archivemodel.cpp:377
+#: part/archivemodel.cpp:374
 msgctxt "Name of a file inside an archive"
 msgid "Name"
 msgstr "Атауы"
 
-#: part/archivemodel.cpp:379
+#: part/archivemodel.cpp:376
 msgctxt "Uncompressed size of a file inside an archive"
 msgid "Size"
 msgstr "Көлемі "
 
-#: part/archivemodel.cpp:381
+#: part/archivemodel.cpp:378
 msgctxt "Compressed size of a file inside an archive"
 msgid "Compressed"
 msgstr "Сығылған түрде"
 
-#: part/archivemodel.cpp:383
+#: part/archivemodel.cpp:380
 msgctxt "Compression rate of file"
 msgid "Rate"
 msgstr "Дәрежесі"
 
-#: part/archivemodel.cpp:385
+#: part/archivemodel.cpp:382
 msgctxt "File's owner username"
 msgid "Owner"
 msgstr "Иесі "
 
-#: part/archivemodel.cpp:387
+#: part/archivemodel.cpp:384
 msgctxt "File's group"
 msgid "Group"
 msgstr "Тобы "
 
-#: part/archivemodel.cpp:389
+#: part/archivemodel.cpp:386
 msgctxt "File permissions"
 msgid "Mode"
 msgstr "Рұқсаттары"
 
-#: part/archivemodel.cpp:391
+#: part/archivemodel.cpp:388
 msgctxt "CRC hash code"
 msgid "CRC"
 msgstr "CRC "
 
-#: part/archivemodel.cpp:393
+#: part/archivemodel.cpp:390
 msgctxt "Compression method"
 msgid "Method"
 msgstr "Әдісі "
 
-#: part/archivemodel.cpp:396
+#: part/archivemodel.cpp:393
 msgctxt "File version"
 msgid "Version"
 msgstr "Нұсқасы "
 
-#: part/archivemodel.cpp:398
+#: part/archivemodel.cpp:395
 msgctxt "Timestamp"
 msgid "Date"
 msgstr "Кезі"
 
-#: part/archivemodel.cpp:400
+#: part/archivemodel.cpp:397
 msgctxt "File comment"
 msgid "Comment"
 msgstr "Түсініктемесі"
 
-#: part/archivemodel.cpp:402
+#: part/archivemodel.cpp:399
 msgctxt "Unnamed column"
 msgid "??"
 msgstr "??"
@@ -431,7 +431,33 @@ msgstr "Нобайын жабу"
 msgid "Please wait while the preview is being closed..."
 msgstr "Нобайының жабылуын күтіңіз..."
 
-#: part/arkviewer.cpp:98 part/arkviewer.cpp:105
+#: part/arkviewer.cpp:120
+#, kde-format
+msgid ""
+"The internal viewer cannot preview this type of file<nl/>(%1).<nl/><nl/>Do "
+"you want to try to view it as plain text?"
+msgstr ""
+
+#: part/arkviewer.cpp:121 part/arkviewer.cpp:133
+msgctxt "@title:window"
+msgid "Cannot Preview File"
+msgstr ""
+
+#: part/arkviewer.cpp:122 part/arkviewer.cpp:134
+#, fuzzy
+#| msgctxt "to preview a file inside an archive"
+#| msgid "Pre&view"
+msgctxt "@action:button"
+msgid "Preview as Text"
+msgstr "Қара&п шығу"
+
+#: part/arkviewer.cpp:132
+msgid ""
+"The internal viewer cannot preview this unknown type of file.<nl/><nl/>Do "
+"you want to try to view it as plain text?"
+msgstr ""
+
+#: part/arkviewer.cpp:158
 msgid "The internal viewer cannot preview this file."
 msgstr "Құрамындағы қарау құралы бұл файлды көрсете алмайды."
 
@@ -477,25 +503,25 @@ msgstr "<b>Мақсаты:</b> %1<br/>"
 msgid "<b>Password protected:</b> Yes<br/>"
 msgstr "<b>Парольмен қорғалғаны:</b> Иә<br/>"
 
-#: part/part.cpp:228
+#: part/part.cpp:225
 msgctxt "@action:inmenu"
 msgid "Show information panel"
 msgstr "Ақпар панелін көрсету"
 
-#: part/part.cpp:237
+#: part/part.cpp:234
 msgctxt "to preview a file inside an archive"
 msgid "Pre&view"
 msgstr "Қара&п шығу"
 
-#: part/part.cpp:239
+#: part/part.cpp:236
 msgid "Click to preview the selected file"
 msgstr "Таңдалған файлды қарап-шығу үшін түртіңіз"
 
-#: part/part.cpp:244
+#: part/part.cpp:241
 msgid "E&xtract"
 msgstr "Та&рқату"
 
-#: part/part.cpp:246
+#: part/part.cpp:243
 msgid ""
 "Click to open an extraction dialog, where you can choose to extract either "
 "all files or just the selected ones"
@@ -503,49 +529,49 @@ msgstr ""
 "Тарқату диалогын ашу үшін түртіңіз. Оның көмегімен барлық файлдарды әлде "
 "таңдалған ғана файлдарын тарқату керек екенін ұйғара аласыз"
 
-#: part/part.cpp:253
+#: part/part.cpp:250
 msgid "Add &File..."
 msgstr "&Файлды қосу..."
 
-#: part/part.cpp:254
+#: part/part.cpp:251
 msgid "Click to add files to the archive"
 msgstr "Архивке файлдарды қосу үшін түртіңіз"
 
-#: part/part.cpp:260
+#: part/part.cpp:257
 msgid "Add Fo&lder..."
 msgstr "Қапшықты қ&осу..."
 
-#: part/part.cpp:261
+#: part/part.cpp:258
 msgid "Click to add a folder to the archive"
 msgstr "Архивке қапшықтарды қосу үшін түртіңіз"
 
-#: part/part.cpp:267
+#: part/part.cpp:264
 msgid "De&lete"
 msgstr "Өші&ру"
 
-#: part/part.cpp:269
+#: part/part.cpp:266
 msgid "Click to delete the selected files"
 msgstr "Таңдалған файлдарды өшіру үшін түртіңіз"
 
-#: part/part.cpp:298
+#: part/part.cpp:295
 msgid "Extract To..."
 msgstr "Қайда тарқату..."
 
-#: part/part.cpp:305
+#: part/part.cpp:302
 msgid "Quick Extract To..."
 msgstr "Мынаған тез тарқатып алу..."
 
-#: part/part.cpp:368
+#: part/part.cpp:365
 msgid "ArkPart"
 msgstr "ArkPart"
 
-#: part/part.cpp:380
+#: part/part.cpp:377
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr "<filename>%1</filename> деген қапшық екен."
 
-#: part/part.cpp:387
+#: part/part.cpp:384
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -553,32 +579,32 @@ msgid ""
 "it instead?"
 msgstr "<filename>%1</filename> деген архиві бар екен. Соны аша берелік пе?"
 
-#: part/part.cpp:387
+#: part/part.cpp:384
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr "Файл бар екен"
 
-#: part/part.cpp:387
+#: part/part.cpp:384
 msgid "Open File"
 msgstr "Файлды ашу"
 
-#: part/part.cpp:395
+#: part/part.cpp:392
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr "<filename>%1</filename> деген архив табылмады."
 
-#: part/part.cpp:395 part/part.cpp:447 part/part.cpp:483
+#: part/part.cpp:392 part/part.cpp:444 part/part.cpp:480
 msgctxt "@title:window"
 msgid "Error Opening Archive"
 msgstr "Архивті ашу қатесі"
 
-#: part/part.cpp:427
+#: part/part.cpp:424
 msgctxt "@title:window"
 msgid "Invalid Archive Type"
 msgstr "Архивтің түрі дұрыс емес"
 
-#: part/part.cpp:428
+#: part/part.cpp:425
 msgctxt "@info"
 msgid ""
 "Ark cannot create archives of the type you have chosen.<nl/><nl/>Please "
@@ -587,12 +613,12 @@ msgstr ""
 "Таңдаған архивтің түрін Ark құра алмайды.<nl/><nl/>Төменде архивтің басқа "
 "түрін таңдап алыңыз."
 
-#: part/part.cpp:431
+#: part/part.cpp:428
 msgctxt "@title:window"
 msgid "Unable to Determine Archive Type"
 msgstr "Архивтің түрі анықталмады"
 
-#: part/part.cpp:432
+#: part/part.cpp:429
 msgctxt "@info"
 msgid ""
 "Ark was unable to determine the archive type of the filename.<nl/><nl/"
@@ -601,7 +627,7 @@ msgstr ""
 "Ark архивтің түрін файл атауынан анықтай алмады.<nl/><nl/>Дұрыс архивтің "
 "түрін төмендегінен таңдап алыңыз."
 
-#: part/part.cpp:447
+#: part/part.cpp:444
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -611,7 +637,7 @@ msgstr ""
 "Ark <filename>%1</filename> архивін аша алмады. Бұндаймен айналысатын "
 "плагині табылған жоқ."
 
-#: part/part.cpp:483
+#: part/part.cpp:480
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -621,26 +647,26 @@ msgstr ""
 "<filename>%1</filename> архивті жүктеу жаңылысы. Қатесі: <message>%2</"
 "message>"
 
-#: part/part.cpp:789
+#: part/part.cpp:782
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "Файлдарды қосу"
 
-#: part/part.cpp:797
+#: part/part.cpp:790
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "Қапшықты қосу"
 
-#: part/part.cpp:826
+#: part/part.cpp:819
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr "Бұл файлдарды өшірсе - қайтарылмайды. Сонда да өшірілсін бе?"
 
-#: part/part.cpp:827
+#: part/part.cpp:820
 msgctxt "@title:window"
 msgid "Delete files"
 msgstr "Файлдарды өшіру"
 
-#: part/part.cpp:873
+#: part/part.cpp:866
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -649,7 +675,7 @@ msgid ""
 msgstr ""
 "<filename>%1</filename> деген архиві бар екен. Үстінен жазыла берсін бе?"
 
-#: part/part.cpp:887
+#: part/part.cpp:880
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -659,7 +685,7 @@ msgstr ""
 "<filename>%1</filename> архиві көрсетілген орынға көшірілмеді. Архив енді "
 "жоқ."
 
-#: part/part.cpp:899
+#: part/part.cpp:892
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -668,32 +694,40 @@ msgid ""
 msgstr ""
 "Архив <filename>%1</filename> деп сақталмады. Басқа орынға сақтап көріңіз."
 
-#: plugins/karchiveplugin/karchiveplugin.cpp:63
-#: plugins/karchiveplugin/karchiveplugin.cpp:75
+#: plugins/karchiveplugin/karchiveplugin.cpp:65
+#: plugins/karchiveplugin/karchiveplugin.cpp:92
 #, kde-format
 msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for reading"
 msgstr "<filename>%1</filename> архиві оқуға ашылмады"
 
-#: plugins/karchiveplugin/karchiveplugin.cpp:83
+#: plugins/karchiveplugin/karchiveplugin.cpp:108
 #, kde-format
 msgctxt "@info"
 msgid "File <filename>%1</filename> not found in the archive"
 msgstr "<filename>%1</filename> файлы архивте табылған жоқ"
 
-#: plugins/karchiveplugin/karchiveplugin.cpp:156
+#: plugins/karchiveplugin/karchiveplugin.cpp:118
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Ark could not extract <filename>%1</filename>."
+msgctxt "@info"
+msgid "Error creating directory <filename>%1</filename>"
+msgstr "Ark <filename>%1</filename> дегенді тарқаталмады."
+
+#: plugins/karchiveplugin/karchiveplugin.cpp:232
 #, kde-format
 msgctxt "@info"
 msgid "Could not open the archive <filename>%1</filename> for writing."
 msgstr "<filename>%1</filename> архиві жазуға ашылмады."
 
-#: plugins/karchiveplugin/karchiveplugin.cpp:173
+#: plugins/karchiveplugin/karchiveplugin.cpp:249
 #, kde-format
 msgctxt "@info"
 msgid "Could not add the directory <filename>%1</filename> to the archive"
 msgstr "<filename>%1</filename> қапшығы архивке қосылмады"
 
-#: plugins/karchiveplugin/karchiveplugin.cpp:181
+#: plugins/karchiveplugin/karchiveplugin.cpp:257
 #, kde-format
 msgctxt "@info"
 msgid "Could not add the file <filename>%1</filename> to the archive."
