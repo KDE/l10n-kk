@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-11 03:43+0100\n"
+"POT-Creation-Date: 2012-01-29 13:30+0100\n"
 "PO-Revision-Date: 2011-12-08 04:35+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -60,11 +60,6 @@ msgstr "Жазылу"
 msgid "Reduce to Grayscale"
 msgstr "Сұр реңктерімен шектелу"
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr "Реңкі, Қанықтығы, Мәні"
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 msgid "Invert Colors"
@@ -74,6 +69,16 @@ msgstr "Түстерді терістеу"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "Терістеу"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr "Гистограмма эквалайзері"
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr "Реңкі, Қанықтығы, Мәні"
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -91,11 +96,6 @@ msgstr "256 түспен шектелу (нүктелеп)"
 msgid "Reduce to 256 Color"
 msgstr "256 түспен шектелу"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr "Гистограмма эквалайзері"
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr "Аудару"
@@ -111,6 +111,14 @@ msgstr "Аунатып аудару"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "Төңкеріп аудару"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "Бұру"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr "Қисайту"
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -138,13 +146,14 @@ msgstr "Масштабтау"
 msgid "Smooth Scale"
 msgstr "Тегіс масштабтау"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "Бұру"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "Түсті шұқып алғыш"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
-msgstr "Қисайту"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
+msgstr "Құйып толтыру"
 
 #: commands/kpCommandHistoryBase.cpp:454
 #, kde-format
@@ -192,15 +201,6 @@ msgstr "%1: %2"
 msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "%1 дегеннен артық нысан"
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "Түсті шұқып алғыш"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr "Құйып толтыру"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 msgctxt "@title:window"
@@ -891,7 +891,7 @@ msgid "Set as Image"
 msgstr "Кескін қылу"
 
 #: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
 #: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
 msgid "Selection: Create"
 msgstr "Таңдау: Құру"
@@ -935,95 +935,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "Авто ойып алу болмады"
-
-#: kolourpaint.cpp:49
-msgid "KolourPaint"
-msgstr "KolourPaint"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr "KDE-нің сурет салу бағдарламасы"
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr "Қолдауды табу үшін вебсайтына жолығыңыз."
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr "Clarence Dang"
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr "Жоба негізін қалаушысы"
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr "Thurston Dang"
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr "Бас зерттеушісі"
-
-#: kolourpaint.cpp:68
-msgid "Martin Koller"
-msgstr "Martin Koller"
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr "Сканерді қолдау, Alpha-ні қолдау, қазіргі жетілдірушісі"
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr "Kristof Borrey"
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "Таңбашалары"
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr "Tasuku Suzuki"
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr "Енгізу тәсілін қолдау"
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr "Kazuki Ohta"
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr "Nuno Pinheiro"
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr "Danny Allen"
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr "Mike Gashler"
-
-#: kolourpaint.cpp:74
-msgid "Image Effects"
-msgstr "Кескін эффектері"
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr "Laurent Montel"
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr "KDE 4 -ке бейімдеу"
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr "Көп басқаларға көмек үшін алғысымызды білдіреміз."
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
-msgstr "Ашатын кескін файлы"
 
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
@@ -1103,10 +1014,6 @@ msgstr "Нобайын ұлғайту/&кішірейту режімі"
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr "Нобайдың қо&ршауы болсын"
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "&Тор сызықтарын көрсету"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 msgid "Use KolourPaint Defaults"
@@ -1225,167 +1132,9 @@ msgstr ""
 msgid "Save Color Palette As"
 msgstr "Түс палитрасын былай сақтау"
 
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr "%1б/н"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr "Ұлғайт&у/кішірейту"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-"100% еселеп ұлғайту ғана тегіс түрлендіріледі. Өзге өлшемдерге ұлғайту "
-"бірқалыпты болмауы мүмкін.\n"
-"Сонда да %1% ұлғайтуды қалайсыз ба?"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr "%1% ұлғайту/кішірейту"
-
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr "Өл&шемін / масштабын өзгерту..."
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr "&Ойып алу"
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-msgid "&Flip (upside down)"
-msgstr "&Төңкеру (үстін-төмен)"
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-msgid "Mirror (horizontally)"
-msgstr "Аунатып аудару"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "&Бұру..."
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-msgid "Rotate &Left"
-msgstr "&Солға бұру"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-msgid "Rotate Righ&t"
-msgstr "&Оңға бұру"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr "Қ&исайту..."
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "&Жалғыз түспен шектелу (нүктелеп)"
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr "&Сұр реңктерімен шектелу"
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr "&Түстерді терістеу"
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "Та&залау"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr "Қ&осымша эффектері..."
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "Кескін&ді"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "Таң&дауды"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:440 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr "Мәтін: Өрісін құру"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "&Жолын көрсету"
-
-#: mainWindow/kpMainWindow_Tools.cpp:136
-msgid "Previous Tool Option (Group #1)"
-msgstr "Алдыңғы құрал параметрі (#1 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:142
-msgid "Next Tool Option (Group #1)"
-msgstr "Келесі құрал параметрі (#1 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:148
-msgid "Previous Tool Option (Group #2)"
-msgstr "Алдыңғы құрал параметрі (#2 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:154
-msgid "Next Tool Option (Group #2)"
-msgstr "Келесі құрал параметрі (#2 топ)"
-
-#: mainWindow/kpMainWindow_Tools.cpp:166
-msgid "&Draw Opaque"
-msgstr "&Мөлдірсіздігін салу"
-
-#: mainWindow/kpMainWindow_Tools.cpp:171
-msgid "Draw With Color Similarity..."
-msgstr "Ұқсас түспен салу..."
-
-#: mainWindow/kpMainWindow_Tools.cpp:182
-msgid "Tool Box"
-msgstr "Құралдар"
-
-#: mainWindow/kpMainWindow_Tools.cpp:641
-#, kde-format
-msgid ""
-"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
-"This can reduce system responsiveness and cause other application resource "
-"problems.</p><p>Are you sure want to resize the image?</p></qt>"
-msgstr ""
-"<qt><p>Кескіннің өлшемін %1x%2 қылып өзгерту көп жадын талап етеді.Ол "
-"жүйеңіздің жауап беру қабілетін кемітіп, басқа қолданбаларды ресурстар "
-"тапшылығына ұшыратады.</p><p>Сонда да өлшемін өзгертпексіз бе?</p></qt>"
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "&Тор сызықтарын көрсету"
 
 #: mainWindow/kpMainWindow_Edit.cpp:98
 msgid "Paste in &New Window"
@@ -1402,6 +1151,12 @@ msgstr "Файлға &көшірмелеу..."
 #: mainWindow/kpMainWindow_Edit.cpp:117
 msgid "Paste &From File..."
 msgstr "&Файлдан алу..."
+
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:440
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
+msgstr "Мәтін: Өрісін құру"
 
 #: mainWindow/kpMainWindow_Edit.cpp:446
 msgid "Text: Paste"
@@ -1553,6 +1308,163 @@ msgstr ""
 "\"%1\" құжаты өзгерген.\n"
 "Сақталсын ба?"
 
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr "Өл&шемін / масштабын өзгерту..."
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr "&Ойып алу"
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+msgid "&Flip (upside down)"
+msgstr "&Төңкеру (үстін-төмен)"
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+msgid "Mirror (horizontally)"
+msgstr "Аунатып аудару"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "&Бұру..."
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+msgid "Rotate &Left"
+msgstr "&Солға бұру"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+msgid "Rotate Righ&t"
+msgstr "&Оңға бұру"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr "Қ&исайту..."
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr "&Жалғыз түспен шектелу (нүктелеп)"
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr "&Сұр реңктерімен шектелу"
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr "&Түстерді терістеу"
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "Та&залау"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr "Қ&осымша эффектері..."
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "Кескін&ді"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "Таң&дауды"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "&Жолын көрсету"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1б/н"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: mainWindow/kpMainWindow_Tools.cpp:136
+msgid "Previous Tool Option (Group #1)"
+msgstr "Алдыңғы құрал параметрі (#1 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:142
+msgid "Next Tool Option (Group #1)"
+msgstr "Келесі құрал параметрі (#1 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:148
+msgid "Previous Tool Option (Group #2)"
+msgstr "Алдыңғы құрал параметрі (#2 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:154
+msgid "Next Tool Option (Group #2)"
+msgstr "Келесі құрал параметрі (#2 топ)"
+
+#: mainWindow/kpMainWindow_Tools.cpp:166
+msgid "&Draw Opaque"
+msgstr "&Мөлдірсіздігін салу"
+
+#: mainWindow/kpMainWindow_Tools.cpp:171
+msgid "Draw With Color Similarity..."
+msgstr "Ұқсас түспен салу..."
+
+#: mainWindow/kpMainWindow_Tools.cpp:182
+msgid "Tool Box"
+msgstr "Құралдар"
+
+#: mainWindow/kpMainWindow_Tools.cpp:641
+#, kde-format
+msgid ""
+"<qt><p>Resizing the image to %1x%2 may take a substantial amount of memory. "
+"This can reduce system responsiveness and cause other application resource "
+"problems.</p><p>Are you sure want to resize the image?</p></qt>"
+msgstr ""
+"<qt><p>Кескіннің өлшемін %1x%2 қылып өзгерту көп жадын талап етеді.Ол "
+"жүйеңіздің жауап беру қабілетін кемітіп, басқа қолданбаларды ресурстар "
+"тапшылығына ұшыратады.</p><p>Сонда да өлшемін өзгертпексіз бе?</p></qt>"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr "Ұлғайт&у/кішірейту"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+"100% еселеп ұлғайту ғана тегіс түрлендіріледі. Өзге өлшемдерге ұлғайту "
+"бірқалыпты болмауы мүмкін.\n"
+"Сонда да %1% ұлғайтуды қалайсыз ба?"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr "%1% ұлғайту/кішірейту"
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "Қылқалам"
@@ -1590,10 +1502,11 @@ msgid "Click or drag to erase."
 msgstr "Өшіру үшін түртіңіз не басып жүргізіңіз."
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
-#: tools/selection/kpAbstractSelectionTool.cpp:518 tools/kpToolZoom.cpp:205
+#: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:205
 msgid "Let go of all the mouse buttons."
 msgstr "Тышқанның барлық батырмаларымен."
 
@@ -1624,27 +1537,6 @@ msgstr "Кескіннен керек түсті шұқып алу құралы"
 #: tools/kpToolColorPicker.cpp:72
 msgid "Click to select a color."
 msgstr "Түсті таңдап алу үшін түртіңіз."
-
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr "Кескіннің аумақтарын бояумен толтыру"
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr "Толтыру үшін аумаққа меңзеп түртіңіз."
-
-#: tools/kpTool_UserNotifications.cpp:42
-msgid "Right click to cancel."
-msgstr "Қайту үшін оң батырманы түртіңіз."
-
-#: tools/kpTool_UserNotifications.cpp:44
-msgid "Left click to cancel."
-msgstr "Қайту үшін сол батырманы түртіңіз."
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1: "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1743,22 +1635,6 @@ msgstr "Дөңгеленген төртбұрыш"
 msgid "Draws rectangles and squares with rounded corners"
 msgstr "Дөңгеленген бұрышты төртбұрыштар мен шаршыларды салу"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr "Таңдау: Мөлдірсіз"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr "Таңдау: Мөлдір"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr "Таңдау: Мөлдірлік түсі"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr "Таңдау: Мөлдірлік түсінің ұқсастығы"
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr "Таңдау (эллипстік)"
@@ -1782,6 +1658,22 @@ msgstr "Таңдау (төртбұрыш)"
 #: tools/selection/image/kpToolRectSelection.cpp:43
 msgid "Makes a rectangular selection"
 msgstr "Төртбұрыш аумақты таңдау"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr "Таңдау: Мөлдірсіз"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr "Таңдау: Мөлдір"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr "Таңдау: Мөлдірлік түсі"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
+msgstr "Таңдау: Мөлдірлік түсінің ұқсастығы"
 
 #: tools/selection/image/kpAbstractImageSelectionTool.cpp:89
 msgid "Left drag to create selection."
@@ -1887,6 +1779,27 @@ msgstr "Таңдау: жылжыту"
 #, kde-format
 msgid "%1: Smear"
 msgstr "%1: Дақ"
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr "Кескіннің аумақтарын бояумен толтыру"
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr "Толтыру үшін аумаққа меңзеп түртіңіз."
+
+#: tools/kpTool_UserNotifications.cpp:42
+msgid "Right click to cancel."
+msgstr "Қайту үшін оң батырманы түртіңіз."
+
+#: tools/kpTool_UserNotifications.cpp:44
+msgid "Left click to cancel."
+msgstr "Қайту үшін сол батырманы түртіңіз."
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1: "
 
 #: tools/kpTool.cpp:140
 #, kde-format
@@ -2139,38 +2052,6 @@ msgstr "Келесімен шектелу"
 msgid "&Granularity:"
 msgstr "&Түйіршіктілігі:"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr "Келесіге &аудару:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "&Сапасы:"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "&Нобайы"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "Жалғыз түсті"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr "Жалғыз түсті (нүктелеп)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr "256 түс"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr "256 түс (нүктелеп)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr "24-биттік түс"
-
 #: widgets/toolbars/options/kpToolWidgetBrush.cpp:204
 msgid "1x1"
 msgstr "1x1"
@@ -2233,6 +2114,38 @@ msgctxt "Colors: name_or_url_of_color_palette [modified]"
 msgid "Colors: %1 [modified]"
 msgstr "Палитра: %1 [өзгертілген]"
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr "Келесіге &аудару:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "&Сапасы:"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "&Нобайы"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "Жалғыз түсті"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr "Жалғыз түсті (нүктелеп)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr "256 түс"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr "256 түс (нүктелеп)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr "24-биттік түс"
+
 #: widgets/kpPrintDialogPage.cpp:60
 msgctxt "@title:tab"
 msgid "I&mage Position"
@@ -2263,6 +2176,95 @@ msgstr ""
 "басқа тордан сүреп әкеліп ауыстыруға да болады. Сонда <b>Control</b> пернені "
 "басып тұрсаңыз, қалаған түс торға көшірмеленеді, әйтпесе екі тордың түстері "
 "алмастырылады.</p></qt>"
+
+#: kolourpaint.cpp:49
+msgid "KolourPaint"
+msgstr "KolourPaint"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr "KDE-нің сурет салу бағдарламасы"
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr "Қолдауды табу үшін вебсайтына жолығыңыз."
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr "Жоба негізін қалаушысы"
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr "Thurston Dang"
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr "Бас зерттеушісі"
+
+#: kolourpaint.cpp:68
+msgid "Martin Koller"
+msgstr "Martin Koller"
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr "Сканерді қолдау, Alpha-ні қолдау, қазіргі жетілдірушісі"
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr "Kristof Borrey"
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "Таңбашалары"
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr "Tasuku Suzuki"
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr "Енгізу тәсілін қолдау"
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr "Kazuki Ohta"
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr "Nuno Pinheiro"
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr "Danny Allen"
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr "Mike Gashler"
+
+#: kolourpaint.cpp:74
+msgid "Image Effects"
+msgstr "Кескін эффектері"
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr "KDE 4 -ке бейімдеу"
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr "Көп басқаларға көмек үшін алғысымызды білдіреміз."
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
+msgstr "Ашатын кескін файлы"
 
 #: kpThumbnail.cpp:126
 msgctxt "@title:window"
