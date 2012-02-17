@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-14 05:34+0100\n"
+"POT-Creation-Date: 2012-02-17 03:57+0100\n"
 "PO-Revision-Date: 2011-12-22 02:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -62,8 +62,8 @@ msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:135
-#: ../kfile/knewfilemenu.cpp:1032
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1032
+#: ../kfile/kdirselectdialog.cpp:135
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Жаңа қапшық"
@@ -236,9 +236,61 @@ msgstr "Осы мәзірге жаңа бетбелгі қапшығын қос�
 msgid "Receiving corrupt data."
 msgstr "Бүлінген деректерді алу."
 
-#: kfile/kdevicelistmodel.cpp:116
-msgid "Device name"
-msgstr "Құрылғының атауы"
+#: kfile/kfilemetadataprovider.cpp:223
+#, kde-format
+msgctxt "@item:intable"
+msgid "%1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 аталым"
+
+#: kfile/kfilemetadataprovider.cpp:422 kfile/knfotranslator.cpp:40
+msgctxt "@label"
+msgid "Comment"
+msgstr "Түсініктеме"
+
+#: kfile/kfilemetadataprovider.cpp:423
+msgctxt "@label"
+msgid "Modified"
+msgstr "Өзгертілген"
+
+#: kfile/kfilemetadataprovider.cpp:424
+msgctxt "@label"
+msgid "Owner"
+msgstr "Иесі"
+
+#: kfile/kfilemetadataprovider.cpp:425
+msgctxt "@label"
+msgid "Permissions"
+msgstr "Рұқсаттары"
+
+#: kfile/kfilemetadataprovider.cpp:426
+msgctxt "@label"
+msgid "Rating"
+msgstr "Бағалауы"
+
+#: kfile/kfilemetadataprovider.cpp:427
+msgctxt "@label"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: kfile/kfilemetadataprovider.cpp:428
+msgctxt "@label"
+msgid "Tags"
+msgstr "Белгілері"
+
+#: kfile/kfilemetadataprovider.cpp:429
+msgctxt "@label"
+msgid "Total Size"
+msgstr "Жалпы өлшемі"
+
+#: kfile/kfilemetadataprovider.cpp:430
+msgctxt "@label"
+msgid "Type"
+msgstr "Түрі"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Қате>"
 
 #: kfile/kfilesharedialog.cpp:53
 msgid "&Share"
@@ -314,116 +366,6 @@ msgid ""
 msgstr ""
 "'%1' қапшығын ортақтастырудан шығару кезде қате пайда болды. 'fileshareset' "
 "Perl скриптіне suid root қойылғанын тексеріңіз."
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "Мәлім қолданбалар"
-
-#: kfile/kopenwithdialog.cpp:483
-msgid "Open With"
-msgstr "Мынамен ашу"
-
-#: kfile/kopenwithdialog.cpp:488
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt><b>%1</b> дегенді ашатын бағдарламаны таңдаңыз. Егер керек бағдарлама "
-"тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</"
-"qt>"
-
-#: kfile/kopenwithdialog.cpp:494
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "Таңдалған файлдарды ашатын бағдарламаның атауын келтіріңіз."
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "%1 үшін қолданбаны таңдау"
-
-#: kfile/kopenwithdialog.cpp:522
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt><b>%1</b> түріндегі файлды ашатын бағдарламаны таңдаңыз. Егер керек "
-"бағдарлама тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" "
-"батырмасын басыңыз.</qt>"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid "Choose Application"
-msgstr "Қолданбаны таңдау"
-
-#: kfile/kopenwithdialog.cpp:538
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>Бағдарламаны таңдаңыз. Егер керек бағдарлама тізімде болмаса, оның "
-"атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</qt>"
-
-#: kfile/kopenwithdialog.cpp:601
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"Командадан кейін, бағдарламаны жеккенде нақты мәндерімен алмастырылатын "
-"келесі параметрлерді келтіруге болады:\n"
-"%f - бір файлдың атауы\n"
-"%F - файлдардың тізімі, қолданба бірден бірнеше файлдарды ашатын жағдайда "
-"қолданылады\n"
-"%u - бір URL\n"
-"%U - бірнеше URL адресінің тізімі\n"
-"%d - ашылатын файлдың каталогы\n"
-"%D - каталогтар тізімі\n"
-"%i - таңбаша \n"
-"%m - шағын таңбаша\n"
-"%c - түсініктеме"
-
-#: kfile/kopenwithdialog.cpp:636
-msgid "Run in &terminal"
-msgstr "&Терминалда орындалсын"
-
-#: kfile/kopenwithdialog.cpp:653
-msgid "&Do not close when command exits"
-msgstr "&Орындалғаннан кейін жабылмасын"
-
-#: kfile/kopenwithdialog.cpp:670
-msgid "&Remember application association for this type of file"
-msgstr "Бұл файл үшін қолданбаның сәйкестігі &жатталсын"
-
-#: kfile/kopenwithdialog.cpp:814
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr "'%1' дегеннен орындалатын бағдарлама шықпады, атауын дұрыс келтіріңіз."
-
-#: kfile/kopenwithdialog.cpp:860
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr "'%1' деген табылмады, атауын дұрыс келтіріңіз."
-
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Қате>"
-
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:422
-msgctxt "@label"
-msgid "Comment"
-msgstr "Түсініктеме"
 
 #: kfile/knfotranslator.cpp:41
 msgctxt "@label creation date"
@@ -777,26 +719,6 @@ msgstr "Аударылған кезі"
 msgctxt "@label Number of untranslated strings"
 msgid "Untranslated"
 msgstr "Аударылмаған"
-
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "Көрсететін деректерін баптау"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr "Қандай деректер көрсетілетінін таңдаңыз:"
-
-#: kfile/kmetaprops.cpp:120
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "Баптау..."
-
-#: kfile/kmetaprops.cpp:130
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Мәлімет"
 
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
@@ -1327,30 +1249,6 @@ msgstr "Орындалауы тек жергілікті файл үшін қо�
 msgid "Advanced Options for %1"
 msgstr "%1 үшін қосымша параметрлері"
 
-#: kfile/kfiledialog.cpp:126
-msgid "*|All files"
-msgstr "*|Барлық файлдар"
-
-#: kfile/kfiledialog.cpp:357 ../kfile/kfilefiltercombo.cpp:185
-msgid "All Supported Files"
-msgstr "Барлық қолдайтын файлдар"
-
-#: kfile/kfiledialog.cpp:480 kfile/kfiledialog.cpp:490
-#: kfile/kfiledialog.cpp:511 kfile/kfiledialog.cpp:535
-#: kfile/kfiledialog.cpp:545 kfile/kfiledialog.cpp:571
-#: kfile/kfiledialog.cpp:603 kfile/kfiledialog.cpp:658
-#: kfile/kicondialog.cpp:693 kfile/kencodingfiledialog.cpp:106
-#: kfile/kencodingfiledialog.cpp:124 kfile/kencodingfiledialog.cpp:139
-#: kfile/kencodingfiledialog.cpp:157 kfile/kurlrequesterdialog.cpp:128
-msgid "Open"
-msgstr "Ашу"
-
-#: kfile/kfiledialog.cpp:738 kfile/kfiledialog.cpp:757
-#: kfile/kfiledialog.cpp:794 kfile/kfiledialog.cpp:836
-#: kfile/kencodingfiledialog.cpp:177 kfile/kencodingfiledialog.cpp:198
-msgid "Save As"
-msgstr "Былай сақтау"
-
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
 msgstr "Иесі"
@@ -1443,6 +1341,10 @@ msgstr "x"
 msgid "Effective"
 msgstr "Эффективті бит"
 
+#: kfile/kdevicelistmodel.cpp:116
+msgid "Device name"
+msgstr "Құрылғының атауы"
+
 #: kfile/kicondialog.cpp:336 kfile/kicondialog.cpp:348
 msgid "Select Icon"
 msgstr "Таңбашаны таңдау"
@@ -1526,52 +1428,136 @@ msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr ""
 "*.png *.xpm *.svg *.svgz|Таңбашалар файлдары (*.png *.xpm *.svg *.svgz)"
 
-#: kfile/kfilemetadataprovider.cpp:223
+#: kfile/kicondialog.cpp:693 kfile/kfiledialog.cpp:480
+#: kfile/kfiledialog.cpp:490 kfile/kfiledialog.cpp:511
+#: kfile/kfiledialog.cpp:535 kfile/kfiledialog.cpp:545
+#: kfile/kfiledialog.cpp:571 kfile/kfiledialog.cpp:603
+#: kfile/kfiledialog.cpp:658 kfile/kencodingfiledialog.cpp:106
+#: kfile/kencodingfiledialog.cpp:124 kfile/kencodingfiledialog.cpp:139
+#: kfile/kencodingfiledialog.cpp:157 kfile/kurlrequesterdialog.cpp:128
+msgid "Open"
+msgstr "Ашу"
+
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "Көрсететін деректерін баптау"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr "Қандай деректер көрсетілетінін таңдаңыз:"
+
+#: kfile/kmetaprops.cpp:120
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "Баптау..."
+
+#: kfile/kmetaprops.cpp:130
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Мәлімет"
+
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "Мәлім қолданбалар"
+
+#: kfile/kopenwithdialog.cpp:483
+msgid "Open With"
+msgstr "Мынамен ашу"
+
+#: kfile/kopenwithdialog.cpp:488
 #, kde-format
-msgctxt "@item:intable"
-msgid "%1 item"
-msgid_plural "%1 items"
-msgstr[0] "%1 аталым"
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt><b>%1</b> дегенді ашатын бағдарламаны таңдаңыз. Егер керек бағдарлама "
+"тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</"
+"qt>"
 
-#: kfile/kfilemetadataprovider.cpp:423
-msgctxt "@label"
-msgid "Modified"
-msgstr "Өзгертілген"
+#: kfile/kopenwithdialog.cpp:494
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "Таңдалған файлдарды ашатын бағдарламаның атауын келтіріңіз."
 
-#: kfile/kfilemetadataprovider.cpp:424
-msgctxt "@label"
-msgid "Owner"
-msgstr "Иесі"
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "%1 үшін қолданбаны таңдау"
 
-#: kfile/kfilemetadataprovider.cpp:425
-msgctxt "@label"
-msgid "Permissions"
-msgstr "Рұқсаттары"
+#: kfile/kopenwithdialog.cpp:522
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt><b>%1</b> түріндегі файлды ашатын бағдарламаны таңдаңыз. Егер керек "
+"бағдарлама тізімде болмаса, оның атауын келтіріңіз немесе \"Шолу\" "
+"батырмасын басыңыз.</qt>"
 
-#: kfile/kfilemetadataprovider.cpp:426
-msgctxt "@label"
-msgid "Rating"
-msgstr "Бағалауы"
+#: kfile/kopenwithdialog.cpp:537
+msgid "Choose Application"
+msgstr "Қолданбаны таңдау"
 
-#: kfile/kfilemetadataprovider.cpp:427
-msgctxt "@label"
-msgid "Size"
-msgstr "Өлшемі"
+#: kfile/kopenwithdialog.cpp:538
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>Бағдарламаны таңдаңыз. Егер керек бағдарлама тізімде болмаса, оның "
+"атауын келтіріңіз немесе \"Шолу\" батырмасын басыңыз.</qt>"
 
-#: kfile/kfilemetadataprovider.cpp:428
-msgctxt "@label"
-msgid "Tags"
-msgstr "Белгілері"
+#: kfile/kopenwithdialog.cpp:601
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"Командадан кейін, бағдарламаны жеккенде нақты мәндерімен алмастырылатын "
+"келесі параметрлерді келтіруге болады:\n"
+"%f - бір файлдың атауы\n"
+"%F - файлдардың тізімі, қолданба бірден бірнеше файлдарды ашатын жағдайда "
+"қолданылады\n"
+"%u - бір URL\n"
+"%U - бірнеше URL адресінің тізімі\n"
+"%d - ашылатын файлдың каталогы\n"
+"%D - каталогтар тізімі\n"
+"%i - таңбаша \n"
+"%m - шағын таңбаша\n"
+"%c - түсініктеме"
 
-#: kfile/kfilemetadataprovider.cpp:429
-msgctxt "@label"
-msgid "Total Size"
-msgstr "Жалпы өлшемі"
+#: kfile/kopenwithdialog.cpp:636
+msgid "Run in &terminal"
+msgstr "&Терминалда орындалсын"
 
-#: kfile/kfilemetadataprovider.cpp:430
-msgctxt "@label"
-msgid "Type"
-msgstr "Түрі"
+#: kfile/kopenwithdialog.cpp:653
+msgid "&Do not close when command exits"
+msgstr "&Орындалғаннан кейін жабылмасын"
+
+#: kfile/kopenwithdialog.cpp:670
+msgid "&Remember application association for this type of file"
+msgstr "Бұл файл үшін қолданбаның сәйкестігі &жатталсын"
+
+#: kfile/kopenwithdialog.cpp:814
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr "'%1' дегеннен орындалатын бағдарлама шықпады, атауын дұрыс келтіріңіз."
+
+#: kfile/kopenwithdialog.cpp:860
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr "'%1' деген табылмады, атауын дұрыс келтіріңіз."
 
 #: kfile/kcommentwidget.cpp:65
 msgctxt "@label"
@@ -1592,6 +1578,20 @@ msgstr "Түсініктемені өзгерту"
 msgctxt "@title:window"
 msgid "Add Comment"
 msgstr "Түсініктемені қосу"
+
+#: kfile/kfiledialog.cpp:126
+msgid "*|All files"
+msgstr "*|Барлық файлдар"
+
+#: kfile/kfiledialog.cpp:357 ../kfile/kfilefiltercombo.cpp:185
+msgid "All Supported Files"
+msgstr "Барлық қолдайтын файлдар"
+
+#: kfile/kfiledialog.cpp:738 kfile/kfiledialog.cpp:757
+#: kfile/kfiledialog.cpp:794 kfile/kfiledialog.cpp:836
+#: kfile/kencodingfiledialog.cpp:177 kfile/kencodingfiledialog.cpp:198
+msgid "Save As"
+msgstr "Былай сақтау"
 
 #: kfile/kencodingfiledialog.cpp:49
 msgid "Encoding:"
@@ -3912,6 +3912,16 @@ msgstr "Кескінді танып-талдау"
 msgid "The desktop is offline"
 msgstr "Компьютер желіден тыс"
 
+#: kio/netaccess.cpp:104
+#, kde-format
+msgid "File '%1' is not readable"
+msgstr "'%1' деген файл оқылмайды"
+
+#: kio/netaccess.cpp:453
+#, kde-format
+msgid "ERROR: Unknown protocol '%1'"
+msgstr "ҚАТЕ: '%1' деген протоколы беймәлім"
+
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "Деректер пішімі:"
@@ -3961,20 +3971,6 @@ msgstr "&Иә"
 msgid "&No"
 msgstr "&Жоқ"
 
-#: kio/netaccess.cpp:104
-#, kde-format
-msgid "File '%1' is not readable"
-msgstr "'%1' деген файл оқылмайды"
-
-#: kio/netaccess.cpp:453
-#, kde-format
-msgid "ERROR: Unknown protocol '%1'"
-msgstr "ҚАТЕ: '%1' деген протоколы беймәлім"
-
-#: kio/passworddialog.cpp:57
-msgid "Authorization Dialog"
-msgstr "Авторизация диалогы"
-
 #: kio/skipdialog.cpp:37
 msgid "Information"
 msgstr "Мәліметі"
@@ -3986,6 +3982,10 @@ msgstr "Өткізіп жіберу"
 #: kio/skipdialog.cpp:47
 msgid "AutoSkip"
 msgstr "Авто өткізіп жіберу"
+
+#: kio/passworddialog.cpp:57
+msgid "Authorization Dialog"
+msgstr "Авторизация диалогы"
 
 #: kio/slave.cpp:438
 #, kde-format
@@ -4780,19 +4780,6 @@ msgstr "'FindProxyForURL' не 'FindProxyForURLEx' табылмады"
 msgid "Got an invalid reply when calling %1"
 msgstr "%1 дегенді шақырғанда дұрыс емес жауап келген"
 
-#: misc/kpac/downloader.cpp:87
-#, kde-format
-msgid ""
-"Could not download the proxy configuration script:\n"
-"%1"
-msgstr ""
-"Проксиді баптау скрипті жүктелінбеді:\n"
-"%1"
-
-#: misc/kpac/downloader.cpp:89
-msgid "Could not download the proxy configuration script"
-msgstr "Проксиді баптау скрипті жүктелінбеді"
-
 #: misc/kpac/proxyscout.cpp:224
 #, kde-format
 msgid ""
@@ -4814,6 +4801,19 @@ msgstr ""
 #: misc/kpac/discovery.cpp:111
 msgid "Could not find a usable proxy configuration script"
 msgstr "Лайық прксиді баптау скрипті табылмады"
+
+#: misc/kpac/downloader.cpp:87
+#, kde-format
+msgid ""
+"Could not download the proxy configuration script:\n"
+"%1"
+msgstr ""
+"Проксиді баптау скрипті жүктелінбеді:\n"
+"%1"
+
+#: misc/kpac/downloader.cpp:89
+msgid "Could not download the proxy configuration script"
+msgstr "Проксиді баптау скрипті жүктелінбеді"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -5633,11 +5633,11 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3491
+#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3493
 msgid "You need to supply a username and a password to access this site."
 msgstr "Бұл сайтқа қатынау үшін атауы мен пароль талап етіледі."
 
-#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3493
+#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3495
 msgid "Site:"
 msgstr "Сайт:"
 
@@ -5655,8 +5655,8 @@ msgstr "Кіру сәтті өтті"
 msgid "Could not login to %1."
 msgstr "%1 дегенге кіру болмады."
 
-#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3503
-#: ../kioslave/http/http.cpp:5408
+#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3505
+#: ../kioslave/http/http.cpp:5410
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5664,19 +5664,19 @@ msgstr ""
 "Осы прокси-сервер арқылы басқа сайттарға  қатынау үшін пайдаланушының атауы "
 "мен паролі қажет."
 
-#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3506
-#: ../kioslave/http/http.cpp:5412
+#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3508
+#: ../kioslave/http/http.cpp:5414
 msgid "Proxy:"
 msgstr "Прокси:"
 
-#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3580
-#: ../kioslave/http/http.cpp:5413
+#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3582
+#: ../kioslave/http/http.cpp:5415
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> / <b>%2</b>"
 
-#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3570
-#: ../kioslave/http/http.cpp:5414
+#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3572
+#: ../kioslave/http/http.cpp:5416
 msgid "Proxy Authentication Failed."
 msgstr "Прокси аутентификациясы өтпеді."
 
@@ -5858,85 +5858,85 @@ msgstr "Барлық cookie өшірілсін"
 msgid "Reload configuration file"
 msgstr "Баптау файлды қайта жүктеу"
 
-#: ../kioslave/http/http.cpp:599
+#: ../kioslave/http/http.cpp:601
 msgid "No host specified."
 msgstr "Хост келтірілмеген."
 
-#: ../kioslave/http/http.cpp:1592
+#: ../kioslave/http/http.cpp:1594
 msgid "Otherwise, the request would have succeeded."
 msgstr "Әйтпесе, талап сәтті орындалар еді."
 
-#: ../kioslave/http/http.cpp:1596
+#: ../kioslave/http/http.cpp:1598
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "қасиет мәндерін алу"
 
-#: ../kioslave/http/http.cpp:1599
+#: ../kioslave/http/http.cpp:1601
 msgctxt "request type"
 msgid "set property values"
 msgstr "қасиет мәндерін орнату"
 
-#: ../kioslave/http/http.cpp:1602
+#: ../kioslave/http/http.cpp:1604
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "талап етілген қапшықты құру"
 
-#: ../kioslave/http/http.cpp:1605
+#: ../kioslave/http/http.cpp:1607
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "келтірілген файлды не қапшықты көшірмелеу"
 
-#: ../kioslave/http/http.cpp:1608
+#: ../kioslave/http/http.cpp:1610
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "келтірілген файлды не қапшықты жылжыту"
 
-#: ../kioslave/http/http.cpp:1611
+#: ../kioslave/http/http.cpp:1613
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "келтірілген қапшықта іздеу"
 
-#: ../kioslave/http/http.cpp:1614
+#: ../kioslave/http/http.cpp:1616
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "келтірілген файлды не қапшықты бұғаттау"
 
-#: ../kioslave/http/http.cpp:1617
+#: ../kioslave/http/http.cpp:1619
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "келтірілген файл не қапшықтың бұғатын шешу"
 
-#: ../kioslave/http/http.cpp:1620
+#: ../kioslave/http/http.cpp:1622
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "келтірілген файлды не қапшықты кетіру"
 
-#: ../kioslave/http/http.cpp:1623
+#: ../kioslave/http/http.cpp:1625
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "сервердің мүмкіндіктерін сұрау"
 
-#: ../kioslave/http/http.cpp:1626
+#: ../kioslave/http/http.cpp:1628
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "келтірілген файл не қапшықтың мазмұнын оқу"
 
-#: ../kioslave/http/http.cpp:1629
+#: ../kioslave/http/http.cpp:1631
 msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "келтірілген қапшықта есеп беру"
 
-#: ../kioslave/http/http.cpp:1640
+#: ../kioslave/http/http.cpp:1642
 #, kde-format
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Күтпеген қате (%1) %2 әрекеті кезінде пайда болды."
 
-#: ../kioslave/http/http.cpp:1648
+#: ../kioslave/http/http.cpp:1650
 msgid "The server does not support the WebDAV protocol."
 msgstr "Сервер WebDAV протоколын танымайды."
 
-#: ../kioslave/http/http.cpp:1690
+#: ../kioslave/http/http.cpp:1692
 #, kde-format
 msgctxt "%1: request type, %2: url"
 msgid ""
@@ -5945,20 +5945,20 @@ msgid ""
 msgstr ""
 "%1 (%2) сұраныс кезінде қате пайда болды. Себептері төменде қорытылған."
 
-#: ../kioslave/http/http.cpp:1704 ../kioslave/http/http.cpp:1836
+#: ../kioslave/http/http.cpp:1706 ../kioslave/http/http.cpp:1838
 #, kde-format
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "%1 сұранысы кезінде қатынауға рұқсат жоқ екені анықталған."
 
-#: ../kioslave/http/http.cpp:1717 ../kioslave/http/http.cpp:1842
+#: ../kioslave/http/http.cpp:1719 ../kioslave/http/http.cpp:1844
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
 msgstr ""
 "Бір немесе бірнеше аралық жинақ (қапшық) құрылмайынша, ресурс та құрылмайды."
 
-#: ../kioslave/http/http.cpp:1725
+#: ../kioslave/http/http.cpp:1727
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -5968,26 +5968,26 @@ msgstr ""
 "Сервер XML қасиеттер элементіндегі қасиеттер тізімін қолдамайды немесе "
 "файлды қайта жазуға әрекет жасағанда, файлдар жазылмады. %1 "
 
-#: ../kioslave/http/http.cpp:1733
+#: ../kioslave/http/http.cpp:1735
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Талап етілген бұғаттау қабылданбаған. %1"
 
-#: ../kioslave/http/http.cpp:1739
+#: ../kioslave/http/http.cpp:1741
 msgid "The server does not support the request type of the body."
 msgstr "Сервер сұралған \"body\" элементінің түрін танымайды."
 
-#: ../kioslave/http/http.cpp:1744 ../kioslave/http/http.cpp:1850
+#: ../kioslave/http/http.cpp:1746 ../kioslave/http/http.cpp:1852
 #, kde-format
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "%1 орындалмады, себебі ресурс бұғатталған."
 
-#: ../kioslave/http/http.cpp:1748
+#: ../kioslave/http/http.cpp:1750
 msgid "This action was prevented by another error."
 msgstr "Басқа қатенің себебінен әрекет орындалмады."
 
-#: ../kioslave/http/http.cpp:1754 ../kioslave/http/http.cpp:1856
+#: ../kioslave/http/http.cpp:1756 ../kioslave/http/http.cpp:1858
 #, kde-format
 msgctxt "%1: request type"
 msgid ""
@@ -5996,7 +5996,7 @@ msgid ""
 msgstr ""
 "%1 орындалмады, себебі мақсаттаған сервер файлды не қапшықты қабылдамады."
 
-#: ../kioslave/http/http.cpp:1761 ../kioslave/http/http.cpp:1863
+#: ../kioslave/http/http.cpp:1763 ../kioslave/http/http.cpp:1865
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -6004,28 +6004,28 @@ msgstr ""
 "Осы әдісті орындағаннан кейін мақсатталған ресурсының күйін жазу үшін "
 "жеткілікті орын жоқ."
 
-#: ../kioslave/http/http.cpp:1814
+#: ../kioslave/http/http.cpp:1816
 msgid "The resource cannot be deleted."
 msgstr "Бұл ресурс өшірілмейді."
 
-#: ../kioslave/http/http.cpp:1827
+#: ../kioslave/http/http.cpp:1829
 #, kde-format
 msgctxt "request type"
 msgid "upload %1"
 msgstr "%1 дегенді жүктеп беру"
 
-#: ../kioslave/http/http.cpp:1877
+#: ../kioslave/http/http.cpp:1879
 #, kde-format
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Күтпеген қате (%1) %2 сұранысы кезінде пайда болды."
 
-#: ../kioslave/http/http.cpp:2703
+#: ../kioslave/http/http.cpp:2705
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 дегенмен байланыс орнатылды. Жауапты күту..."
 
-#: ../kioslave/http/http.cpp:3035
+#: ../kioslave/http/http.cpp:3037
 #, kde-format
 msgctxt "@warning: Security check on url being accessed"
 msgid ""
@@ -6037,33 +6037,33 @@ msgstr ""
 "вебсайт аутентификацияны талап етпейді. Алданып қалмаңыз.<p>Сіз қалаған "
 "\"%1\" деген сайт па?"
 
-#: ../kioslave/http/http.cpp:3042
+#: ../kioslave/http/http.cpp:3044
 msgctxt "@title:window"
 msgid "Confirm Website Access"
 msgstr "Сайтқа қатынауды құптау"
 
-#: ../kioslave/http/http.cpp:3119
+#: ../kioslave/http/http.cpp:3121
 msgid "Server processing request, please wait..."
 msgstr "Сервер сұрауды өңдеуде, күте тұрыңыз..."
 
-#: ../kioslave/http/http.cpp:3567
+#: ../kioslave/http/http.cpp:3569
 msgid "Authentication Failed."
 msgstr "Аутентификация өтпеді."
 
-#: ../kioslave/http/http.cpp:3613
+#: ../kioslave/http/http.cpp:3615
 msgid "Authorization failed."
 msgstr "Авторизация өтпеді."
 
-#: ../kioslave/http/http.cpp:3630
+#: ../kioslave/http/http.cpp:3632
 msgid "Unknown Authorization method."
 msgstr "Беймәлім авторизация әдісі."
 
-#: ../kioslave/http/http.cpp:4012 ../kioslave/http/http.cpp:4066
+#: ../kioslave/http/http.cpp:4014 ../kioslave/http/http.cpp:4068
 #, kde-format
 msgid "Sending data to %1"
 msgstr "%1 дегенге деректер жіберуде"
 
-#: ../kioslave/http/http.cpp:4532
+#: ../kioslave/http/http.cpp:4534
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "%2 дегеннен %1 алу..."
@@ -6076,35 +6076,6 @@ msgstr "kio_metainfo"
 #, kde-format
 msgid "No metainfo for %1"
 msgstr "%1 метадеректері жоқ"
-
-#: ../kfile/kfileplacesview.cpp:575
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "Шелекті босату"
-
-#: ../kfile/kfileplacesview.cpp:582
-#, kde-format
-msgid "&Edit Entry '%1'..."
-msgstr "'%1' жазуын &өзгерту..."
-
-#: ../kfile/kfileplacesview.cpp:604
-#, kde-format
-msgid "&Hide Entry '%1'"
-msgstr "'%1' дегенді &жасыру"
-
-#: ../kfile/kfileplacesview.cpp:613
-msgid "&Show All Entries"
-msgstr "Барлығын &көрсету"
-
-#: ../kfile/kfileplacesview.cpp:624
-#, kde-format
-msgid "&Remove Entry '%1'"
-msgstr "'%1' дегенді ө&шіру"
-
-#: ../kfile/kfileplacesview.cpp:636
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "Шелекті босатпақсыз ба? Барлығы жойылады."
 
 #: ../kfile/kurlnavigatorprotocolcombo.cpp:173
 msgctxt "@item:inmenu"
@@ -6121,142 +6092,13 @@ msgctxt "@item:inmenu"
 msgid "Other"
 msgstr "Өзге"
 
-#: ../kfile/kdirselectdialog.cpp:131
-msgctxt "folder name"
-msgid "New Folder"
-msgstr "Жаңа қапшық"
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1802
+msgid "*|All Files"
+msgstr "*|Барлық файлдар"
 
-#: ../kfile/kdirselectdialog.cpp:136
-#, kde-format
-msgctxt "@label:textbox"
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Жаңа қапшықтын орны:\n"
-"%1"
-
-#: ../kfile/kdirselectdialog.cpp:159 ../kfile/kdiroperator.cpp:766
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "%1 деген атауы қолданыста бар екен."
-
-#: ../kfile/kdirselectdialog.cpp:163 ../kfile/kdiroperator.cpp:768
-msgid "You do not have permission to create that folder."
-msgstr "Бұл қапшықты құруға рұқсатыңыз жоқ."
-
-#: ../kfile/kdirselectdialog.cpp:283
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Жаңа қапшық..."
-
-#: ../kfile/kdirselectdialog.cpp:324
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Жаңа қапшық..."
-
-#: ../kfile/kdirselectdialog.cpp:331
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Шелекке тастау"
-
-#: ../kfile/kdirselectdialog.cpp:338
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: ../kfile/kdirselectdialog.cpp:347
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Жасырын қапшықтар көрсетілсін"
-
-#: ../kfile/kdirselectdialog.cpp:354
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Қасиеттері"
-
-#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
-msgid "Sorry"
-msgstr "Ғафу етіңіз"
-
-#: ../kfile/knewfilemenu.cpp:378
-#, kde-format
-msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
-msgstr "<qt><b>%1</b> деген үлгі файл жоқ.</qt>"
-
-#: ../kfile/knewfilemenu.cpp:397
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Қапшықты құру"
-
-#: ../kfile/knewfilemenu.cpp:399
-msgctxt "@action:button"
-msgid "Enter a different name"
-msgstr "Басқа атау беріңіз"
-
-#: ../kfile/knewfilemenu.cpp:402
-msgid "Create hidden directory?"
-msgstr "Жасырын капшықты құру?"
-
-#: ../kfile/knewfilemenu.cpp:406
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-"\"%1\" атауы нүктеден басталады, сондықтан қапшық әдетте жасырын болады."
-
-#: ../kfile/knewfilemenu.cpp:408
-msgid "Do not ask again"
-msgstr "Ендігәрі сұралмасын"
-
-#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
-msgid "File name:"
-msgstr "Файл атауы:"
-
-#: ../kfile/knewfilemenu.cpp:504
-msgid "Create Symlink"
-msgstr "Символдық сілтемені жасау"
-
-#: ../kfile/knewfilemenu.cpp:568
-msgid "Create link to URL"
-msgstr "URL-ге сілтеме кұру"
-
-#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr "%1"
-
-#: ../kfile/knewfilemenu.cpp:888
-msgid ""
-"Basic links can only point to local files or directories.\n"
-"Please use \"Link to Location\" for remote URLs."
-msgstr ""
-"Негізгі сілтемелер тек жергілікті файл мен қапшықтарға болу керек.\n"
-"Қашық URL-лер үшін \"Орынға сілтеме\" дегені."
-
-#: ../kfile/knewfilemenu.cpp:964
-msgid "Create New"
-msgstr "Жаңасын құру"
-
-#: ../kfile/knewfilemenu.cpp:977
-msgid "Link to Device"
-msgstr "Құрылғыға сілтеме"
-
-#: ../kfile/knewfilemenu.cpp:1022
-msgctxt "Default name for a new folder"
-msgid "New Folder"
-msgstr "New Folder"
-
-#: ../kfile/knewfilemenu.cpp:1036
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Жаңа қапшықтын орны:\n"
-"%1"
+#: ../kfile/kfilefiltercombo.cpp:194
+msgid "All Files"
+msgstr "Бүкіл файлдар"
 
 #: ../kfile/kurlnavigatortogglebutton.cpp:93
 msgid "Click for Location Navigation"
@@ -6265,14 +6107,6 @@ msgstr "Орынын ауыстыру үшін түртіңіз"
 #: ../kfile/kurlnavigatortogglebutton.cpp:95
 msgid "Click to Edit Location"
 msgstr "Орынын өзгерту үшін түртіңіз"
-
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1802
-msgid "*|All Files"
-msgstr "*|Барлық файлдар"
-
-#: ../kfile/kfilefiltercombo.cpp:194
-msgid "All Files"
-msgstr "Бүкіл файлдар"
 
 #: ../kfile/kfileplacesmodel.cpp:117
 msgctxt "KFile System Bookmarks"
@@ -6328,270 +6162,6 @@ msgstr "'%1' дегенге қатынау кезде қате орын алды
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "'%1' дегенге қатынау кезде қате пайда болды"
-
-#: ../kfile/kfiletreeview.cpp:187
-msgid "Show Hidden Folders"
-msgstr "Жасырын қапшықтар көрсетілсін"
-
-#: ../kfile/kfileplaceeditdialog.cpp:90
-msgid "Add Places Entry"
-msgstr "Орындар жазуларын қосу"
-
-#: ../kfile/kfileplaceeditdialog.cpp:92
-msgid "Edit Places Entry"
-msgstr "Орындар жазуларын өзгерту"
-
-#: ../kfile/kfileplaceeditdialog.cpp:103
-msgid ""
-"<qt>This is the text that will appear in the Places panel.<br /><br />The "
-"label should consist of one or two words that will help you remember what "
-"this entry refers to. If you do not enter a label, it will be derived from "
-"the location's URL.</qt>"
-msgstr ""
-"<qt> Бұл Орындар панелінде көрінетін мәтін.<br /><br />Сипаттама, жазуы неге "
-"сілтейтінін есіңізге түсіруге көмектесетін, бір-екі сөзден тұрады. Егер "
-"жарлығын келтірілмесеңіз, ол орынның URL негізінде құрылады.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:109
-msgid "L&abel:"
-msgstr "Ж&арлығы:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:111
-msgid "Enter descriptive label here"
-msgstr "Мұнда сипаттама жарлығын келтіріңіз"
-
-#: ../kfile/kfileplaceeditdialog.cpp:115
-#, kde-format
-msgid ""
-"<qt>This is the location associated with the entry. Any valid URL may be "
-"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
-"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
-"edit box you can browse to an appropriate URL.</qt>"
-msgstr ""
-"<qt>Бұл жазуына сәйкестірілген орын. Кез келген дұрыс URL адресі болуға "
-"тиіс. Мысалы:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde.org/"
-"pub/kde/stable <br /><br />Мәтінді енгізу өрісінің қасындағы батырманы "
-"басып, URL-ді шолып таңдауыңызға болады.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:121
-msgid "&Location:"
-msgstr "&Орыны:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:127
-msgid ""
-"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
-"on the button to select a different icon.</qt>"
-msgstr ""
-"<qt>Бұл Орындар панелінде көрінетін таңбаша.<br /><br />Басқа таңбашаны "
-"таңдау үшін батырмасын басыңыз.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:130
-msgid "Choose an &icon:"
-msgstr "Таңбашаны &таңдау:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:147
-#, kde-format
-msgid "&Only show when using this application (%1)"
-msgstr "&Тек осы қолданбаны (%1) пайдаланғанда көрсетілсін"
-
-#: ../kfile/kfileplaceeditdialog.cpp:149
-#, kde-format
-msgid ""
-"<qt>Select this setting if you want this entry to show only when using the "
-"current application (%1).<br /><br />If this setting is not selected, the "
-"entry will be available in all applications.</qt>"
-msgstr ""
-"<qt>Бұны, егер жазуды тек осы қолданбаны (%1) пайдаланған кезде көрсету "
-"керек болса, таңдаңыз.<br /><br />Әйтпесе, жазу барлық қолданбалар үшін "
-"қолданылатын болады.</qt>"
-
-#: ../kfile/kurlnavigator.cpp:431
-msgid "Copy"
-msgstr "Көшіріп алу"
-
-#: ../kfile/kurlnavigator.cpp:435
-msgid "Paste"
-msgstr "Орналастыру"
-
-#: ../kfile/kurlnavigator.cpp:442
-msgid "Edit"
-msgstr "Өңдеу"
-
-#: ../kfile/kurlnavigator.cpp:445
-msgid "Navigate"
-msgstr "Ауысу"
-
-#: ../kfile/kurlnavigator.cpp:460
-msgid "Show Full Path"
-msgstr "Толық жолы"
-
-#: ../kfile/kurlnavigator.cpp:698
-msgid "Custom Path"
-msgstr "Қалаған жол"
-
-#: ../kfile/kurlnavigatorbutton.cpp:675
-msgctxt "@action:inmenu"
-msgid "More"
-msgstr "Әрі"
-
-#: ../kfile/kdiroperator.cpp:783
-msgid "You did not select a file to delete."
-msgstr "Өшіру үшін файл таңдалмаған."
-
-#: ../kfile/kdiroperator.cpp:784
-msgid "Nothing to Delete"
-msgstr "Өшіретін ештеңе жоқ"
-
-#: ../kfile/kdiroperator.cpp:805
-#, kde-format
-msgid ""
-"<qt>Do you really want to delete\n"
-" <b>'%1'</b>?</qt>"
-msgstr ""
-"<qt><b>'%1'</b>\n"
-"деген өшірілсін бе?</qt>"
-
-#: ../kfile/kdiroperator.cpp:807
-msgid "Delete File"
-msgstr "Файлды өшіру"
-
-#: ../kfile/kdiroperator.cpp:845
-msgid "You did not select a file to trash."
-msgstr "Өшірілгендерге тастайтын файл таңдалмаған."
-
-#: ../kfile/kdiroperator.cpp:846
-msgid "Nothing to Trash"
-msgstr "Өшірілгендерге тастайтын ештеңе жоқ"
-
-#: ../kfile/kdiroperator.cpp:863
-#, kde-format
-msgid ""
-"<qt>Do you really want to trash\n"
-" <b>'%1'</b>?</qt>"
-msgstr "<qt><b>'%1'</b> деген өшірілгендерге тасталсын ба?</qt>"
-
-#: ../kfile/kdiroperator.cpp:865
-msgid "Trash File"
-msgstr "Файлды өшірілгендерге тастау"
-
-#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
-msgctxt "to trash"
-msgid "&Trash"
-msgstr "&Өшірілгендерге тастау"
-
-#: ../kfile/kdiroperator.cpp:870
-#, kde-format
-msgid "translators: not called for n == 1"
-msgid_plural "Do you really want to trash these %1 items?"
-msgstr[0] "Осы %1 нәрсені өшірілгендерге тастағыңыз келе ме?"
-
-#: ../kfile/kdiroperator.cpp:872
-msgid "Trash Files"
-msgstr "Файлдарды өшірілгендерге тастау"
-
-#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
-msgid "The specified folder does not exist or was not readable."
-msgstr "Келтірілген қапшық жоқ немесе оқылмайды."
-
-#: ../kfile/kdiroperator.cpp:1852
-msgid "Menu"
-msgstr "Мәзір"
-
-#: ../kfile/kdiroperator.cpp:1856
-msgid "Parent Folder"
-msgstr "Аталық қапшық"
-
-#: ../kfile/kdiroperator.cpp:1863
-msgid "Home Folder"
-msgstr "Мекен қапшығы"
-
-#: ../kfile/kdiroperator.cpp:1866
-msgid "Reload"
-msgstr "Қайта жүктеу"
-
-#: ../kfile/kdiroperator.cpp:1869
-msgid "New Folder..."
-msgstr "Жаңа қапшық..."
-
-#: ../kfile/kdiroperator.cpp:1880
-msgid "Delete"
-msgstr "Өшіру"
-
-#: ../kfile/kdiroperator.cpp:1887
-msgid "Sorting"
-msgstr "Реттеу тәртібі"
-
-#: ../kfile/kdiroperator.cpp:1890
-msgid "By Name"
-msgstr "Атауы бойынша"
-
-#: ../kfile/kdiroperator.cpp:1894
-msgid "By Size"
-msgstr "Өлшемі бойынша"
-
-#: ../kfile/kdiroperator.cpp:1898
-msgid "By Date"
-msgstr "Күні бойынша"
-
-#: ../kfile/kdiroperator.cpp:1902
-msgid "By Type"
-msgstr "Түрі бойынша"
-
-#: ../kfile/kdiroperator.cpp:1906
-msgid "Descending"
-msgstr "Кему ретімен"
-
-#: ../kfile/kdiroperator.cpp:1910
-msgid "Folders First"
-msgstr "Қапшықтар алдымен"
-
-#: ../kfile/kdiroperator.cpp:1920
-msgid "Icon Position"
-msgstr "Таңбаша орны"
-
-#: ../kfile/kdiroperator.cpp:1923
-msgid "Next to File Name"
-msgstr "Файл атауынан кейін"
-
-#: ../kfile/kdiroperator.cpp:1927
-msgid "Above File Name"
-msgstr "Файл атауы үстінде"
-
-#: ../kfile/kdiroperator.cpp:1938
-msgid "Short View"
-msgstr "Қысқартылған көрініс"
-
-#: ../kfile/kdiroperator.cpp:1943
-msgid "Detailed View"
-msgstr "Егжей-тегжейлі көрініс"
-
-#: ../kfile/kdiroperator.cpp:1948
-msgid "Tree View"
-msgstr "Бұтақты көрініс"
-
-#: ../kfile/kdiroperator.cpp:1953
-msgid "Detailed Tree View"
-msgstr "Егжей-тегжейлі бұтақты көрініс"
-
-#: ../kfile/kdiroperator.cpp:1964
-msgid "Show Hidden Files"
-msgstr "Жасырын файлдар көрсетілсін"
-
-#: ../kfile/kdiroperator.cpp:1968
-msgid "Show Aside Preview"
-msgstr "Нобайы бөлек көрсетілсін"
-
-#: ../kfile/kdiroperator.cpp:1974
-msgid "Show Preview"
-msgstr "Нобайы көрсетілсін"
-
-#: ../kfile/kdiroperator.cpp:1978
-msgid "Open File Manager"
-msgstr "Файл менеджерін ашу"
-
-#: ../kfile/kdiroperator.cpp:1990
-msgid "&View"
-msgstr "Кө&рініс"
 
 #: ../kfile/kfilewidget.cpp:286
 msgid ""
@@ -6856,6 +6426,436 @@ msgstr ""
 "қою, өңдеу және таңдау мәзірін ашу үшін осы батырманы басыңыз.<br /><br /"
 ">Бұл бетбелгілер файлдар диалогы үшін ерекше болса да, KDE-нің өзге "
 "бетбелгілерге ұқсас.</qt>"
+
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "%1 деген атауы қолданыста бар екен."
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+msgid "You do not have permission to create that folder."
+msgstr "Бұл қапшықты құруға рұқсатыңыз жоқ."
+
+#: ../kfile/kdiroperator.cpp:783
+msgid "You did not select a file to delete."
+msgstr "Өшіру үшін файл таңдалмаған."
+
+#: ../kfile/kdiroperator.cpp:784
+msgid "Nothing to Delete"
+msgstr "Өшіретін ештеңе жоқ"
+
+#: ../kfile/kdiroperator.cpp:805
+#, kde-format
+msgid ""
+"<qt>Do you really want to delete\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt><b>'%1'</b>\n"
+"деген өшірілсін бе?</qt>"
+
+#: ../kfile/kdiroperator.cpp:807
+msgid "Delete File"
+msgstr "Файлды өшіру"
+
+#: ../kfile/kdiroperator.cpp:845
+msgid "You did not select a file to trash."
+msgstr "Өшірілгендерге тастайтын файл таңдалмаған."
+
+#: ../kfile/kdiroperator.cpp:846
+msgid "Nothing to Trash"
+msgstr "Өшірілгендерге тастайтын ештеңе жоқ"
+
+#: ../kfile/kdiroperator.cpp:863
+#, kde-format
+msgid ""
+"<qt>Do you really want to trash\n"
+" <b>'%1'</b>?</qt>"
+msgstr "<qt><b>'%1'</b> деген өшірілгендерге тасталсын ба?</qt>"
+
+#: ../kfile/kdiroperator.cpp:865
+msgid "Trash File"
+msgstr "Файлды өшірілгендерге тастау"
+
+#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
+msgctxt "to trash"
+msgid "&Trash"
+msgstr "&Өшірілгендерге тастау"
+
+#: ../kfile/kdiroperator.cpp:870
+#, kde-format
+msgid "translators: not called for n == 1"
+msgid_plural "Do you really want to trash these %1 items?"
+msgstr[0] "Осы %1 нәрсені өшірілгендерге тастағыңыз келе ме?"
+
+#: ../kfile/kdiroperator.cpp:872
+msgid "Trash Files"
+msgstr "Файлдарды өшірілгендерге тастау"
+
+#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
+msgid "The specified folder does not exist or was not readable."
+msgstr "Келтірілген қапшық жоқ немесе оқылмайды."
+
+#: ../kfile/kdiroperator.cpp:1852
+msgid "Menu"
+msgstr "Мәзір"
+
+#: ../kfile/kdiroperator.cpp:1856
+msgid "Parent Folder"
+msgstr "Аталық қапшық"
+
+#: ../kfile/kdiroperator.cpp:1863
+msgid "Home Folder"
+msgstr "Мекен қапшығы"
+
+#: ../kfile/kdiroperator.cpp:1866
+msgid "Reload"
+msgstr "Қайта жүктеу"
+
+#: ../kfile/kdiroperator.cpp:1869
+msgid "New Folder..."
+msgstr "Жаңа қапшық..."
+
+#: ../kfile/kdiroperator.cpp:1880
+msgid "Delete"
+msgstr "Өшіру"
+
+#: ../kfile/kdiroperator.cpp:1887
+msgid "Sorting"
+msgstr "Реттеу тәртібі"
+
+#: ../kfile/kdiroperator.cpp:1890
+msgid "By Name"
+msgstr "Атауы бойынша"
+
+#: ../kfile/kdiroperator.cpp:1894
+msgid "By Size"
+msgstr "Өлшемі бойынша"
+
+#: ../kfile/kdiroperator.cpp:1898
+msgid "By Date"
+msgstr "Күні бойынша"
+
+#: ../kfile/kdiroperator.cpp:1902
+msgid "By Type"
+msgstr "Түрі бойынша"
+
+#: ../kfile/kdiroperator.cpp:1906
+msgid "Descending"
+msgstr "Кему ретімен"
+
+#: ../kfile/kdiroperator.cpp:1910
+msgid "Folders First"
+msgstr "Қапшықтар алдымен"
+
+#: ../kfile/kdiroperator.cpp:1920
+msgid "Icon Position"
+msgstr "Таңбаша орны"
+
+#: ../kfile/kdiroperator.cpp:1923
+msgid "Next to File Name"
+msgstr "Файл атауынан кейін"
+
+#: ../kfile/kdiroperator.cpp:1927
+msgid "Above File Name"
+msgstr "Файл атауы үстінде"
+
+#: ../kfile/kdiroperator.cpp:1938
+msgid "Short View"
+msgstr "Қысқартылған көрініс"
+
+#: ../kfile/kdiroperator.cpp:1943
+msgid "Detailed View"
+msgstr "Егжей-тегжейлі көрініс"
+
+#: ../kfile/kdiroperator.cpp:1948
+msgid "Tree View"
+msgstr "Бұтақты көрініс"
+
+#: ../kfile/kdiroperator.cpp:1953
+msgid "Detailed Tree View"
+msgstr "Егжей-тегжейлі бұтақты көрініс"
+
+#: ../kfile/kdiroperator.cpp:1964
+msgid "Show Hidden Files"
+msgstr "Жасырын файлдар көрсетілсін"
+
+#: ../kfile/kdiroperator.cpp:1968
+msgid "Show Aside Preview"
+msgstr "Нобайы бөлек көрсетілсін"
+
+#: ../kfile/kdiroperator.cpp:1974
+msgid "Show Preview"
+msgstr "Нобайы көрсетілсін"
+
+#: ../kfile/kdiroperator.cpp:1978
+msgid "Open File Manager"
+msgstr "Файл менеджерін ашу"
+
+#: ../kfile/kdiroperator.cpp:1990
+msgid "&View"
+msgstr "Кө&рініс"
+
+#: ../kfile/kfileplaceeditdialog.cpp:90
+msgid "Add Places Entry"
+msgstr "Орындар жазуларын қосу"
+
+#: ../kfile/kfileplaceeditdialog.cpp:92
+msgid "Edit Places Entry"
+msgstr "Орындар жазуларын өзгерту"
+
+#: ../kfile/kfileplaceeditdialog.cpp:103
+msgid ""
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"label should consist of one or two words that will help you remember what "
+"this entry refers to. If you do not enter a label, it will be derived from "
+"the location's URL.</qt>"
+msgstr ""
+"<qt> Бұл Орындар панелінде көрінетін мәтін.<br /><br />Сипаттама, жазуы неге "
+"сілтейтінін есіңізге түсіруге көмектесетін, бір-екі сөзден тұрады. Егер "
+"жарлығын келтірілмесеңіз, ол орынның URL негізінде құрылады.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:109
+msgid "L&abel:"
+msgstr "Ж&арлығы:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:111
+msgid "Enter descriptive label here"
+msgstr "Мұнда сипаттама жарлығын келтіріңіз"
+
+#: ../kfile/kfileplaceeditdialog.cpp:115
+#, kde-format
+msgid ""
+"<qt>This is the location associated with the entry. Any valid URL may be "
+"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
+"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
+"edit box you can browse to an appropriate URL.</qt>"
+msgstr ""
+"<qt>Бұл жазуына сәйкестірілген орын. Кез келген дұрыс URL адресі болуға "
+"тиіс. Мысалы:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde.org/"
+"pub/kde/stable <br /><br />Мәтінді енгізу өрісінің қасындағы батырманы "
+"басып, URL-ді шолып таңдауыңызға болады.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:121
+msgid "&Location:"
+msgstr "&Орыны:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:127
+msgid ""
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
+msgstr ""
+"<qt>Бұл Орындар панелінде көрінетін таңбаша.<br /><br />Басқа таңбашаны "
+"таңдау үшін батырмасын басыңыз.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:130
+msgid "Choose an &icon:"
+msgstr "Таңбашаны &таңдау:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:147
+#, kde-format
+msgid "&Only show when using this application (%1)"
+msgstr "&Тек осы қолданбаны (%1) пайдаланғанда көрсетілсін"
+
+#: ../kfile/kfileplaceeditdialog.cpp:149
+#, kde-format
+msgid ""
+"<qt>Select this setting if you want this entry to show only when using the "
+"current application (%1).<br /><br />If this setting is not selected, the "
+"entry will be available in all applications.</qt>"
+msgstr ""
+"<qt>Бұны, егер жазуды тек осы қолданбаны (%1) пайдаланған кезде көрсету "
+"керек болса, таңдаңыз.<br /><br />Әйтпесе, жазу барлық қолданбалар үшін "
+"қолданылатын болады.</qt>"
+
+#: ../kfile/kfileplacesview.cpp:575
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Шелекті босату"
+
+#: ../kfile/kfileplacesview.cpp:582
+#, kde-format
+msgid "&Edit Entry '%1'..."
+msgstr "'%1' жазуын &өзгерту..."
+
+#: ../kfile/kfileplacesview.cpp:604
+#, kde-format
+msgid "&Hide Entry '%1'"
+msgstr "'%1' дегенді &жасыру"
+
+#: ../kfile/kfileplacesview.cpp:613
+msgid "&Show All Entries"
+msgstr "Барлығын &көрсету"
+
+#: ../kfile/kfileplacesview.cpp:624
+#, kde-format
+msgid "&Remove Entry '%1'"
+msgstr "'%1' дегенді ө&шіру"
+
+#: ../kfile/kfileplacesview.cpp:636
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "Шелекті босатпақсыз ба? Барлығы жойылады."
+
+#: ../kfile/kfiletreeview.cpp:187
+msgid "Show Hidden Folders"
+msgstr "Жасырын қапшықтар көрсетілсін"
+
+#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
+msgid "Sorry"
+msgstr "Ғафу етіңіз"
+
+#: ../kfile/knewfilemenu.cpp:378
+#, kde-format
+msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+msgstr "<qt><b>%1</b> деген үлгі файл жоқ.</qt>"
+
+#: ../kfile/knewfilemenu.cpp:397
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Қапшықты құру"
+
+#: ../kfile/knewfilemenu.cpp:399
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "Басқа атау беріңіз"
+
+#: ../kfile/knewfilemenu.cpp:402
+msgid "Create hidden directory?"
+msgstr "Жасырын капшықты құру?"
+
+#: ../kfile/knewfilemenu.cpp:406
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot, so the directory will be hidden by "
+"default."
+msgstr ""
+"\"%1\" атауы нүктеден басталады, сондықтан қапшық әдетте жасырын болады."
+
+#: ../kfile/knewfilemenu.cpp:408
+msgid "Do not ask again"
+msgstr "Ендігәрі сұралмасын"
+
+#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
+msgid "File name:"
+msgstr "Файл атауы:"
+
+#: ../kfile/knewfilemenu.cpp:504
+msgid "Create Symlink"
+msgstr "Символдық сілтемені жасау"
+
+#: ../kfile/knewfilemenu.cpp:568
+msgid "Create link to URL"
+msgstr "URL-ге сілтеме кұру"
+
+#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr "%1"
+
+#: ../kfile/knewfilemenu.cpp:888
+msgid ""
+"Basic links can only point to local files or directories.\n"
+"Please use \"Link to Location\" for remote URLs."
+msgstr ""
+"Негізгі сілтемелер тек жергілікті файл мен қапшықтарға болу керек.\n"
+"Қашық URL-лер үшін \"Орынға сілтеме\" дегені."
+
+#: ../kfile/knewfilemenu.cpp:964
+msgid "Create New"
+msgstr "Жаңасын құру"
+
+#: ../kfile/knewfilemenu.cpp:977
+msgid "Link to Device"
+msgstr "Құрылғыға сілтеме"
+
+#: ../kfile/knewfilemenu.cpp:1022
+msgctxt "Default name for a new folder"
+msgid "New Folder"
+msgstr "New Folder"
+
+#: ../kfile/knewfilemenu.cpp:1036
+#, kde-format
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Жаңа қапшықтын орны:\n"
+"%1"
+
+#: ../kfile/kurlnavigator.cpp:431
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: ../kfile/kurlnavigator.cpp:435
+msgid "Paste"
+msgstr "Орналастыру"
+
+#: ../kfile/kurlnavigator.cpp:442
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: ../kfile/kurlnavigator.cpp:445
+msgid "Navigate"
+msgstr "Ауысу"
+
+#: ../kfile/kurlnavigator.cpp:460
+msgid "Show Full Path"
+msgstr "Толық жолы"
+
+#: ../kfile/kurlnavigator.cpp:698
+msgid "Custom Path"
+msgstr "Қалаған жол"
+
+#: ../kfile/kurlnavigatorbutton.cpp:675
+msgctxt "@action:inmenu"
+msgid "More"
+msgstr "Әрі"
+
+#: ../kfile/kdirselectdialog.cpp:131
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Жаңа қапшықтын орны:\n"
+"%1"
+
+#: ../kfile/kdirselectdialog.cpp:283
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Жаңа қапшық..."
+
+#: ../kfile/kdirselectdialog.cpp:324
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Жаңа қапшық..."
+
+#: ../kfile/kdirselectdialog.cpp:331
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Шелекке тастау"
+
+#: ../kfile/kdirselectdialog.cpp:338
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: ../kfile/kdirselectdialog.cpp:347
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Жасырын қапшықтар көрсетілсін"
+
+#: ../kfile/kdirselectdialog.cpp:354
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Қасиеттері"
 
 #~ msgid "Edit file type"
 #~ msgstr "Файл түрін өңдеу"
