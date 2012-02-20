@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-29 02:56+0100\n"
+"POT-Creation-Date: 2012-02-20 04:30+0100\n"
 "PO-Revision-Date: 2012-02-20 04:57+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -216,24 +216,6 @@ msgstr "Сын есімінің сөз табы анықталмады"
 msgid "Could not determine word type of adverbs"
 msgstr "Үстеудің сөз табы анықталмады"
 
-#: src/editor/conjugationwidget.cpp:133
-#, kde-format
-msgid "\"%1\" is a verb"
-msgstr "\"%1\" - етістік"
-
-#: src/editor/conjugationwidget.cpp:167
-msgid "Could not determine word type of verbs"
-msgstr "Етістіктің сөз табы анықталмады"
-
-#: src/editor/declensionwidget.cpp:141
-#, kde-format
-msgid "\"%1\" is a noun"
-msgstr "\"%1\" - зат есім"
-
-#: src/editor/declensionwidget.cpp:166
-msgid "Could not determine word type of nouns"
-msgstr "Зат есімінің сөз табы анықталмады"
-
 #: src/editor/synonymwidget.cpp:60
 msgid "Select Synonyms"
 msgstr "Синонимдерді таңдау"
@@ -292,11 +274,68 @@ msgstr "%1 дегеннің жалған ұқсастары:"
 msgid "Enter LaTeX code here."
 msgstr "Мында LaTeX кодын келтіріңіз."
 
-#: src/editor/editor.cpp:148
+#. i18n: file: src/editor/conjugationwidget.ui:349
+#. i18n: ectx: property (text), widget (QLabel, singularLabel)
+#. i18n: file: src/editor/declensionwidget.ui:459
+#. i18n: ectx: property (text), item, widget (QComboBox, numberSelection)
+#. i18n: file: src/settings/languagepropertiespage.ui:378
+#. i18n: ectx: property (text), widget (QLabel, male_label_3)
+#. i18n: file: src/settings/languagepropertiespage.ui:492
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4_2_2)
+#: src/editor/declensionwidget.cpp:135 rc.cpp:353 rc.cpp:401 rc.cpp:769
+#: rc.cpp:784
+msgid "Singular"
+msgstr "Жекеше"
+
+#. i18n: file: src/editor/conjugationwidget.ui:368
+#. i18n: ectx: property (text), widget (QLabel, dualLabel)
+#. i18n: file: src/editor/declensionwidget.ui:464
+#. i18n: ectx: property (text), item, widget (QComboBox, numberSelection)
+#. i18n: file: src/settings/languagepropertiespage.ui:499
+#. i18n: ectx: property (text), widget (QLabel, dualLabel)
+#: src/editor/declensionwidget.cpp:136 rc.cpp:356 rc.cpp:404 rc.cpp:787
+msgid "Dual"
+msgstr "Екілік сан"
+
+#. i18n: file: src/editor/conjugationwidget.ui:387
+#. i18n: ectx: property (text), widget (QLabel, pluralLabel)
+#. i18n: file: src/editor/declensionwidget.ui:469
+#. i18n: ectx: property (text), item, widget (QComboBox, numberSelection)
+#. i18n: file: src/settings/languagepropertiespage.ui:391
+#. i18n: ectx: property (text), widget (QLabel, male_label_4)
+#. i18n: file: src/settings/languagepropertiespage.ui:506
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4_3)
+#: src/editor/declensionwidget.cpp:137 rc.cpp:359 rc.cpp:407 rc.cpp:772
+#: rc.cpp:790
+msgid "Plural"
+msgstr "Көптік тұлға"
+
+#. i18n: file: src/editor/declensionwidget.ui:185
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/editor/declensionwidget.cpp:171 src/editor/inflectionwidget.cpp:123
+#: src/parleydocument.cpp:301 rc.cpp:389
+msgid "Masculine"
+msgstr "Аталық тек"
+
+#. i18n: file: src/editor/declensionwidget.ui:271
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/editor/declensionwidget.cpp:172 src/editor/inflectionwidget.cpp:125
+#: src/parleydocument.cpp:304 rc.cpp:392
+msgid "Feminine"
+msgstr "Аналық тек"
+
+#. i18n: file: src/editor/declensionwidget.ui:357
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/editor/declensionwidget.cpp:173 src/editor/inflectionwidget.cpp:124
+#: src/parleydocument.cpp:307 rc.cpp:395
+msgid "Neuter"
+msgstr "Орта тек"
+
+#: src/editor/editor.cpp:147
 msgid "Lessons"
 msgstr "Сабақтар"
 
-#: src/editor/editor.cpp:158
+#: src/editor/editor.cpp:157
 msgid ""
 "Right click to add, delete, or rename lessons. \n"
 "With the checkboxes you can select which lessons you want to practice. \n"
@@ -306,15 +345,15 @@ msgstr ""
 "Белгі көзін белгілеп жаттығу үшін сабақтарды таңдап алыңыз.\n"
 "Тек [x] белгісі бар сабақтар бойынша сынақ өткізіледі!"
 
-#: src/editor/editor.cpp:173
+#: src/editor/editor.cpp:172
 msgid "Word Types"
 msgstr "Сөз табтары"
 
-#: src/editor/editor.cpp:194
-msgid "Conjugation"
-msgstr "Есістік жіклелуі"
+#: src/editor/editor.cpp:193
+msgid "Inflection (verbs, adjectives, nouns)"
+msgstr ""
 
-#: src/editor/editor.cpp:220
+#: src/editor/editor.cpp:206
 msgid "Comparison forms"
 msgstr "Шырайлар"
 
@@ -322,7 +361,7 @@ msgstr "Шырайлар"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: file: src/statistics/statisticsmainwindow.ui:115
 #. i18n: ectx: property (text), widget (QRadioButton, multipleChoice)
-#: src/editor/editor.cpp:232 rc.cpp:107 rc.cpp:1222
+#: src/editor/editor.cpp:218 rc.cpp:107 rc.cpp:1234
 msgid "Multiple Choice"
 msgstr "Бірнешеден таңдау"
 
@@ -330,59 +369,86 @@ msgstr "Бірнешеден таңдау"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: src/editor/synonymwidget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, synonymLabel)
-#: src/editor/editor.cpp:244 rc.cpp:98 rc.cpp:416
+#: src/editor/editor.cpp:230 rc.cpp:98 rc.cpp:290
 msgid "Synonyms"
 msgstr "Синонимдер"
 
-#: src/editor/editor.cpp:255
+#: src/editor/editor.cpp:241
 msgid "Antonyms"
 msgstr "Антонимдер"
 
-#: src/editor/editor.cpp:266
+#: src/editor/editor.cpp:252
 msgid "False Friends"
 msgstr "Жалған ұқсастары"
 
-#: src/editor/editor.cpp:278
+#: src/editor/editor.cpp:264
 msgid "Phonetic Symbols"
 msgstr "Фонетикалық символдар"
 
-#: src/editor/editor.cpp:290
+#: src/editor/editor.cpp:276
 msgid "Image"
 msgstr "Кескін"
 
-#: src/editor/editor.cpp:302
+#: src/editor/editor.cpp:288
 msgid "Summary"
 msgstr "Қортыны"
 
 #. i18n: file: src/configure-practice/advancedpracticeoptions.ui:113
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PracticeSoundEnabled)
-#: src/editor/editor.cpp:314 rc.cpp:95
+#: src/editor/editor.cpp:300 rc.cpp:95
 msgid "Sound"
 msgstr "Дыбыс"
 
-#: src/editor/editor.cpp:326
+#: src/editor/editor.cpp:312
 msgid "Internet"
 msgstr "Интернет"
 
-#: src/editor/editor.cpp:339
+#: src/editor/editor.cpp:325
 msgid "LaTeX"
 msgstr "LaTeX"
 
-#: src/editor/editor.cpp:371 src/editor/editor.cpp:372
+#: src/editor/editor.cpp:357 src/editor/editor.cpp:358
 msgid "Practice"
 msgstr "Жаттығу"
 
-#: src/editor/editor.cpp:408
+#: src/editor/editor.cpp:394
 msgid "Enter search terms here"
 msgstr "Мүнда іздеу шартын келтіру керек"
 
-#: src/editor/editor.cpp:412
+#: src/editor/editor.cpp:398
 msgid "S&earch:"
 msgstr "І&здейтіні:"
 
+#: src/editor/inflectionwidget.cpp:36 src/vocabulary/wordtypeview.cpp:123
+#: src/parleydocument.cpp:311
+msgid "Verb"
+msgstr "Етістік"
+
+#: src/editor/inflectionwidget.cpp:41 src/vocabulary/wordtypeview.cpp:74
+#: src/parleydocument.cpp:297
+msgid "Noun"
+msgstr "Зат есім"
+
+#. i18n: file: src/editor/comparisonwidget.ui:116
+#. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
+#: src/editor/inflectionwidget.cpp:46 src/vocabulary/wordtypeview.cpp:106
+#: src/parleydocument.cpp:315 rc.cpp:248
+msgid "Adjective"
+msgstr "Сын есім"
+
+#: src/editor/inflectionwidget.cpp:87
+#, fuzzy, kde-format
+#| msgid "\"%1\" is a verb"
+msgid "\"%1\" is a:"
+msgstr "\"%1\" - етістік"
+
+#: src/editor/inflectionwidget.cpp:119
+msgid "Please select the noun's gender"
+msgstr ""
+
 #. i18n: file: src/export/exportdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExportOptions)
-#: src/export/exportdialog.cpp:45 rc.cpp:422
+#: src/export/exportdialog.cpp:45 rc.cpp:434
 msgid "Export"
 msgstr "Экспорттау"
 
@@ -405,7 +471,7 @@ msgstr "Сөздерді пысықтау"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, WelcomeScreen)
-#: src/main.cpp:40 rc.cpp:1249
+#: src/main.cpp:40 rc.cpp:1261
 msgid "Parley"
 msgstr "Parley"
 
@@ -612,7 +678,7 @@ msgstr "Автоаудару"
 
 #. i18n: file: src/settings/parley.kcfg:50
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
-#: src/parleyactions.cpp:135 rc.cpp:894
+#: src/parleyactions.cpp:135 rc.cpp:906
 msgid "Enable automatic translation of the lesson entries."
 msgstr "Сабақ жазуларын автоматты түрде аударуды рұқсат ету"
 
@@ -1161,7 +1227,7 @@ msgstr "Шақ сипатттамасын өшіру"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:731
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: src/statistics/conjugationoptions.cpp:35 rc.cpp:808
+#: src/statistics/conjugationoptions.cpp:35 rc.cpp:820
 msgid "Tenses"
 msgstr "Шақтар"
 
@@ -1198,7 +1264,7 @@ msgstr "Жоқ"
 
 #. i18n: file: src/editor/summarywordwidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/vocabulary/containermodel.cpp:170 rc.cpp:398
+#: src/vocabulary/containermodel.cpp:170 rc.cpp:272
 msgid "Lesson"
 msgstr "Сабақ"
 
@@ -1283,7 +1349,7 @@ msgstr "Антонимдерін өңдеу үшін антонимдер көр
 
 #. i18n: file: src/editor/summarywordwidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: src/vocabulary/vocabularymodel.cpp:295 rc.cpp:404
+#: src/vocabulary/vocabularymodel.cpp:295 rc.cpp:278
 msgid "Pronunciation"
 msgstr "Дыбыстауы"
 
@@ -1293,7 +1359,7 @@ msgstr "Сөз табы"
 
 #. i18n: file: src/editor/synonymwidget.ui:26
 #. i18n: ectx: property (text), widget (QPushButton, synonymButton)
-#: src/vocabulary/vocabularymodel.cpp:299 rc.cpp:419
+#: src/vocabulary/vocabularymodel.cpp:299 rc.cpp:293
 msgid "Synonym"
 msgstr "Синонимі"
 
@@ -1303,19 +1369,19 @@ msgstr "Антонимі"
 
 #. i18n: file: src/editor/summarywordwidget.ui:71
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: src/vocabulary/vocabularymodel.cpp:303 rc.cpp:407
+#: src/vocabulary/vocabularymodel.cpp:303 rc.cpp:281
 msgid "Example"
 msgstr "Мысалы"
 
 #. i18n: file: src/editor/summarywordwidget.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: src/vocabulary/vocabularymodel.cpp:305 rc.cpp:413
+#: src/vocabulary/vocabularymodel.cpp:305 rc.cpp:287
 msgid "Comment"
 msgstr "Түсініктемесі"
 
 #. i18n: file: src/editor/summarywordwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: src/vocabulary/vocabularymodel.cpp:307 rc.cpp:410
+#: src/vocabulary/vocabularymodel.cpp:307 rc.cpp:284
 msgid "Paraphrase"
 msgstr "Басқа сөзбен айтқанда"
 
@@ -1443,10 +1509,6 @@ msgstr "Грамматика"
 msgid "To let Parley know the grammatical meaning of a word type."
 msgstr "Parley-ге сөз табының граматикалық мәнін білдіру."
 
-#: src/vocabulary/wordtypeview.cpp:74 src/parleydocument.cpp:297
-msgid "Noun"
-msgstr "Зат есім"
-
 #: src/vocabulary/wordtypeview.cpp:76
 msgid "This word type folder contains nouns."
 msgstr "Бұл сөз табының қапшығында зат есімдер орналасады."
@@ -1475,12 +1537,6 @@ msgstr "Орта тек зат есім"
 msgid "This word type folder contains neuter nouns."
 msgstr "Бұл сөз табының қапшығында тегі орта зат есімдер орналасады."
 
-#. i18n: file: src/editor/comparisonwidget.ui:116
-#. i18n: ectx: property (text), widget (QPushButton, makeAdjectiveButton)
-#: src/vocabulary/wordtypeview.cpp:106 src/parleydocument.cpp:315 rc.cpp:248
-msgid "Adjective"
-msgstr "Сын есім"
-
 #: src/vocabulary/wordtypeview.cpp:108
 msgid "This word type folder contains adjectives."
 msgstr "Бұл сөз табының қапшығында сын есімдер орналасады."
@@ -1494,10 +1550,6 @@ msgstr "Үстеу"
 #: src/vocabulary/wordtypeview.cpp:116
 msgid "This word type folder contains adverbs."
 msgstr "Бұл сөз табының қапшығында сын есімдер орналасады."
-
-#: src/vocabulary/wordtypeview.cpp:123 src/parleydocument.cpp:311
-msgid "Verb"
-msgstr "Етістік"
 
 #: src/vocabulary/wordtypeview.cpp:125
 msgid "This word type folder contains verbs."
@@ -1540,7 +1592,7 @@ msgstr "Осы сөздік жиынын өңдеу үшін ашу"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:64
 #. i18n: ectx: property (text), widget (QLabel, recentLabel)
-#: src/welcomescreen/welcomescreen.cpp:112 rc.cpp:1264
+#: src/welcomescreen/welcomescreen.cpp:112 rc.cpp:1276
 msgid "Last Opened Collections"
 msgstr "Соңғы ашылған жиындар"
 
@@ -1589,21 +1641,9 @@ msgctxt "@info:status saving a file"
 msgid "Saving %1"
 msgstr "%1 дегенді сақтау"
 
-#: src/parleydocument.cpp:301
-msgid "Masculine"
-msgstr "Аталық тек"
-
-#: src/parleydocument.cpp:304
-msgid "Feminine"
-msgstr "Аналық тек"
-
-#: src/parleydocument.cpp:307
-msgid "Neuter"
-msgstr "Орта тек"
-
 #. i18n: file: src/settings/documentproperties.ui:221
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: src/parleydocument.cpp:336 rc.cpp:607
+#: src/parleydocument.cpp:336 rc.cpp:619
 msgid "Public Domain"
 msgstr "Қоғамдық пайдада"
 
@@ -1611,7 +1651,7 @@ msgstr "Қоғамдық пайдада"
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
 #. i18n: file: src/settings/documentproperties.ui:237
 #. i18n: ectx: property (title), widget (QGroupBox, languageGroupBox)
-#: src/parleydocument.cpp:337 rc.cpp:582 rc.cpp:613
+#: src/parleydocument.cpp:337 rc.cpp:594 rc.cpp:625
 msgid "Languages"
 msgstr "Тілдер"
 
@@ -1671,7 +1711,7 @@ msgstr "Төменгі:"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: src/practice/practicesummarywidget.ui:38
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:17 rc.cpp:531
+#: rc.cpp:17 rc.cpp:543
 msgid "Solution"
 msgstr "Шешімі"
 
@@ -1725,7 +1765,9 @@ msgstr "Алдыңғы"
 
 #. i18n: file: plugins/google_images.ui:116
 #. i18n: ectx: property (text), widget (QPushButton, nextButton)
-#: rc.cpp:44
+#. i18n: file: src/editor/declensionwidget.ui:477
+#. i18n: ectx: property (text), widget (QPushButton, nextButton)
+#: rc.cpp:44 rc.cpp:410
 msgid "Next"
 msgstr "Келесі"
 
@@ -1868,7 +1910,7 @@ msgstr "Ұсыныстар саны:"
 #. i18n: ectx: property (text), widget (QLabel, l_lev2)
 #. i18n: file: src/settings/viewoptionsbase.ui:308
 #. i18n: ectx: property (text), widget (QLabel, l_lev2)
-#: rc.cpp:119 rc.cpp:1174
+#: rc.cpp:119 rc.cpp:1186
 msgid "Level &2:"
 msgstr "&2-деңгей"
 
@@ -1876,7 +1918,7 @@ msgstr "&2-деңгей"
 #. i18n: ectx: property (text), widget (QLabel, l_lev5)
 #. i18n: file: src/settings/viewoptionsbase.ui:185
 #. i18n: ectx: property (text), widget (QLabel, l_lev5)
-#: rc.cpp:122 rc.cpp:1129
+#: rc.cpp:122 rc.cpp:1141
 msgid "Level &5:"
 msgstr "&5-деңгей"
 
@@ -1884,7 +1926,7 @@ msgstr "&5-деңгей"
 #. i18n: ectx: property (text), widget (QLabel, l_lev6)
 #. i18n: file: src/settings/viewoptionsbase.ui:144
 #. i18n: ectx: property (text), widget (QLabel, l_lev6)
-#: rc.cpp:125 rc.cpp:1114
+#: rc.cpp:125 rc.cpp:1126
 msgid "Level &6:"
 msgstr "&6-деңгей"
 
@@ -1904,7 +1946,7 @@ msgstr "&Бұғаттау"
 #. i18n: ectx: property (text), widget (QLabel, l_lev4)
 #. i18n: file: src/settings/viewoptionsbase.ui:226
 #. i18n: ectx: property (text), widget (QLabel, l_lev4)
-#: rc.cpp:134 rc.cpp:1144
+#: rc.cpp:134 rc.cpp:1156
 msgid "Level &4:"
 msgstr "&4-деңгей"
 
@@ -1912,7 +1954,7 @@ msgstr "&4-деңгей"
 #. i18n: ectx: property (text), widget (QLabel, l_lev7)
 #. i18n: file: src/settings/viewoptionsbase.ui:100
 #. i18n: ectx: property (text), widget (QLabel, l_lev7)
-#: rc.cpp:137 rc.cpp:1099
+#: rc.cpp:137 rc.cpp:1111
 msgid "Level &7:"
 msgstr "&7-деңгей"
 
@@ -1920,7 +1962,7 @@ msgstr "&7-деңгей"
 #. i18n: ectx: property (text), widget (QLabel, l_lev1)
 #. i18n: file: src/settings/viewoptionsbase.ui:349
 #. i18n: ectx: property (text), widget (QLabel, l_lev1)
-#: rc.cpp:140 rc.cpp:1189
+#: rc.cpp:140 rc.cpp:1201
 msgid "Level &1:"
 msgstr "&1-деңгей"
 
@@ -1928,7 +1970,7 @@ msgstr "&1-деңгей"
 #. i18n: ectx: property (text), widget (QLabel, l_lev3)
 #. i18n: file: src/settings/viewoptionsbase.ui:267
 #. i18n: ectx: property (text), widget (QLabel, l_lev3)
-#: rc.cpp:143 rc.cpp:1159
+#: rc.cpp:143 rc.cpp:1171
 msgid "Level &3:"
 msgstr "&3-деңгей"
 
@@ -1996,13 +2038,13 @@ msgstr "Қате жауап"
 #. i18n: ectx: property (windowTitle), widget (QWidget, FromToEntryPageForm)
 #. i18n: file: src/editor/conjugationwidget.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, ConjugationWidget)
-#. i18n: file: src/editor/declensionwidget.ui:25
+#. i18n: file: src/editor/declensionwidget.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, DeclensionWidget)
 #. i18n: file: src/settings/documentproperties.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, DocumentProperties)
 #. i18n: file: src/settings/optionlistform.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, OptionListForm)
-#: rc.cpp:176 rc.cpp:254 rc.cpp:320 rc.cpp:546 rc.cpp:852
+#: rc.cpp:176 rc.cpp:296 rc.cpp:362 rc.cpp:558 rc.cpp:864
 msgid "-"
 msgstr "-"
 
@@ -2135,168 +2177,180 @@ msgstr "Таңдаулы шырай (ең тезі)"
 msgid "Superlative:"
 msgstr "Таңдаулы шырайы:"
 
-#. i18n: file: src/editor/conjugationwidget.ui:38
-#. i18n: ectx: property (text), widget (QPushButton, makeVerbButton)
-#: rc.cpp:257
-msgid "Turn the selected word into a verb."
-msgstr "Таңдалған сөзді етістік қылу."
+#. i18n: file: src/editor/latexwidget.ui:17
+#. i18n: ectx: property (text), widget (QLabel, texLabel)
+#: rc.cpp:254
+msgid "LaTeX code"
+msgstr "LaTeX коды"
 
-#. i18n: file: src/editor/conjugationwidget.ui:47
+#. i18n: file: src/editor/latexwidget.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:257 rc.cpp:703
+msgid "Preview"
+msgstr "Қарап-шығу"
+
+#. i18n: file: src/editor/latexwidget.ui:57
+#. i18n: ectx: property (text), widget (QCheckBox, mathModeCheckBox)
+#: rc.cpp:260
+msgid "Math mode"
+msgstr "Математикалық күйі"
+
+#. i18n: file: src/editor/multiplechoicewidget.ui:21
+#. i18n: ectx: property (text), widget (QPushButton, addChoiceButton)
+#: rc.cpp:263
+msgid "Add"
+msgstr "Қосу"
+
+#. i18n: file: src/editor/multiplechoicewidget.ui:28
+#. i18n: ectx: property (text), widget (QPushButton, removeChoiceButton)
+#: rc.cpp:266
+msgid "Remove"
+msgstr "Өшіру"
+
+#. i18n: file: src/editor/summarywordwidget.ui:16
+#. i18n: ectx: property (text), widget (QLabel, languageLabel)
+#: rc.cpp:269
+msgid "Language"
+msgstr "Тіл"
+
+#. i18n: file: src/editor/summarywordwidget.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:275
+msgid "Word type"
+msgstr "Сөз табы"
+
+#. i18n: file: src/editor/conjugationwidget.ui:32
+#. i18n: ectx: property (title), widget (QGroupBox, layout)
+#: rc.cpp:299
+#, fuzzy
+#| msgid "Conjugations"
+msgid "Conjugation Forms"
+msgstr "Етістіктің жіктелуі"
+
+#. i18n: file: src/editor/conjugationwidget.ui:38
 #. i18n: ectx: property (text), widget (QLabel, singularFirstPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:141
+#. i18n: file: src/editor/conjugationwidget.ui:132
 #. i18n: ectx: property (text), widget (QLabel, dualFirstPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:218
+#. i18n: file: src/editor/conjugationwidget.ui:209
 #. i18n: ectx: property (text), widget (QLabel, pluralFirstPersonLabel)
-#: rc.cpp:260 rc.cpp:275 rc.cpp:290
+#: rc.cpp:302 rc.cpp:317 rc.cpp:332
 msgid "First"
 msgstr "Бірінші жақ"
 
-#. i18n: file: src/editor/conjugationwidget.ui:70
+#. i18n: file: src/editor/conjugationwidget.ui:61
 #. i18n: ectx: property (text), widget (QLabel, singularSecondPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:157
+#. i18n: file: src/editor/conjugationwidget.ui:148
 #. i18n: ectx: property (text), widget (QLabel, dualSecondPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:234
+#. i18n: file: src/editor/conjugationwidget.ui:225
 #. i18n: ectx: property (text), widget (QLabel, pluralSecondPersonLabel)
-#: rc.cpp:263 rc.cpp:278 rc.cpp:293
+#: rc.cpp:305 rc.cpp:320 rc.cpp:335
 msgid "Second"
 msgstr "Екінші жақ"
 
-#. i18n: file: src/editor/conjugationwidget.ui:93
+#. i18n: file: src/editor/conjugationwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, singularThirdMalePersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:173
+#. i18n: file: src/editor/conjugationwidget.ui:164
 #. i18n: ectx: property (text), widget (QLabel, dualThirdMalePersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:250
+#. i18n: file: src/editor/conjugationwidget.ui:241
 #. i18n: ectx: property (text), widget (QLabel, pluralThirdMalePersonLabel)
-#: rc.cpp:266 rc.cpp:281 rc.cpp:296
+#: rc.cpp:308 rc.cpp:323 rc.cpp:338
 msgid "Third Male"
 msgstr "Үшінші жақ, аталық тек"
 
-#. i18n: file: src/editor/conjugationwidget.ui:109
+#. i18n: file: src/editor/conjugationwidget.ui:100
 #. i18n: ectx: property (text), widget (QLabel, singularThirdFemalePersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:186
+#. i18n: file: src/editor/conjugationwidget.ui:177
 #. i18n: ectx: property (text), widget (QLabel, dualThirdFemalePersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:269
+#. i18n: file: src/editor/conjugationwidget.ui:260
 #. i18n: ectx: property (text), widget (QLabel, pluralThirdFemalePersonLabel)
-#: rc.cpp:269 rc.cpp:284 rc.cpp:299
+#: rc.cpp:311 rc.cpp:326 rc.cpp:341
 msgid "Third Female"
 msgstr "Үшінші жақ, аналық тек"
 
-#. i18n: file: src/editor/conjugationwidget.ui:125
+#. i18n: file: src/editor/conjugationwidget.ui:116
 #. i18n: ectx: property (text), widget (QLabel, singularThirdNeutralPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:202
+#. i18n: file: src/editor/conjugationwidget.ui:193
 #. i18n: ectx: property (text), widget (QLabel, dualThirdNeutralPersonLabel)
-#. i18n: file: src/editor/conjugationwidget.ui:288
+#. i18n: file: src/editor/conjugationwidget.ui:279
 #. i18n: ectx: property (text), widget (QLabel, pluralThirdNeutralPersonLabel)
-#: rc.cpp:272 rc.cpp:287 rc.cpp:302
+#: rc.cpp:314 rc.cpp:329 rc.cpp:344
 msgid "Third Neutral"
 msgstr "Үшінші жақ, орта тек"
 
-#. i18n: file: src/editor/conjugationwidget.ui:326
+#. i18n: file: src/editor/conjugationwidget.ui:317
 #. i18n: ectx: property (text), widget (QPushButton, nextTenseButton)
-#: rc.cpp:305
+#: rc.cpp:347
 msgid "Ne&xt"
 msgstr "Келе&сі"
 
-#. i18n: file: src/editor/conjugationwidget.ui:339
+#. i18n: file: src/editor/conjugationwidget.ui:330
 #. i18n: ectx: property (text), widget (QLabel, tenselabel)
-#: rc.cpp:308
+#: rc.cpp:350
 msgid "&Tense:"
 msgstr "&Шағы:"
 
-#. i18n: file: src/editor/conjugationwidget.ui:358
-#. i18n: ectx: property (text), widget (QLabel, singularLabel)
-#. i18n: file: src/editor/declensionwidget.ui:186
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: src/settings/languagepropertiespage.ui:378
-#. i18n: ectx: property (text), widget (QLabel, male_label_3)
-#. i18n: file: src/settings/languagepropertiespage.ui:492
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4_2_2)
-#: rc.cpp:311 rc.cpp:350 rc.cpp:757 rc.cpp:772
-msgid "Singular"
-msgstr "Жекеше"
-
-#. i18n: file: src/editor/conjugationwidget.ui:377
-#. i18n: ectx: property (text), widget (QLabel, dualLabel)
-#. i18n: file: src/editor/declensionwidget.ui:193
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: file: src/settings/languagepropertiespage.ui:499
-#. i18n: ectx: property (text), widget (QLabel, dualLabel)
-#: rc.cpp:314 rc.cpp:353 rc.cpp:775
-msgid "Dual"
-msgstr "Екілік сан"
-
-#. i18n: file: src/editor/conjugationwidget.ui:396
-#. i18n: ectx: property (text), widget (QLabel, pluralLabel)
-#. i18n: file: src/editor/declensionwidget.ui:200
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: file: src/settings/languagepropertiespage.ui:391
-#. i18n: ectx: property (text), widget (QLabel, male_label_4)
-#. i18n: file: src/settings/languagepropertiespage.ui:506
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4_3)
-#: rc.cpp:317 rc.cpp:356 rc.cpp:760 rc.cpp:778
-msgid "Plural"
-msgstr "Көптік тұлға"
-
-#. i18n: file: src/editor/declensionwidget.ui:31
-#. i18n: ectx: property (text), widget (QPushButton, makeNounButton)
-#: rc.cpp:323
-msgid "Turn the selected word into a noun."
-msgstr "Таңдалған сөзді сан есім қылу."
-
-#. i18n: file: src/editor/declensionwidget.ui:44
+#. i18n: file: src/editor/declensionwidget.ui:38
 #. i18n: ectx: property (title), widget (QGroupBox, declensionGroupBox)
-#: rc.cpp:326
+#: rc.cpp:365
 msgid "Declension Forms"
 msgstr "Септеу"
 
-#. i18n: file: src/editor/declensionwidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, singularFirstPersonLabel)
-#: rc.cpp:329
+#. i18n: file: src/editor/declensionwidget.ui:52
+#. i18n: ectx: property (text), widget (QLabel, nominativeLabel)
+#: rc.cpp:368
 msgctxt "one of the seven cases (grammatical)"
 msgid "Nominative"
 msgstr "Атау септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:72
-#. i18n: ectx: property (text), widget (QLabel, singularSecondPersonLabel)
-#: rc.cpp:332
+#. i18n: file: src/editor/declensionwidget.ui:71
+#. i18n: ectx: property (text), widget (QLabel, genitivLabel)
+#: rc.cpp:371
 msgctxt "one of the seven cases (grammatical)"
 msgid "Genitive"
 msgstr "Ілік септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:91
-#. i18n: ectx: property (text), widget (QLabel, singularThirdMalePersonLabel)
-#: rc.cpp:335
+#. i18n: file: src/editor/declensionwidget.ui:90
+#. i18n: ectx: property (text), widget (QLabel, dativLabel)
+#: rc.cpp:374
 msgctxt "one of the seven cases (grammatical)"
 msgid "Dative"
 msgstr "Барыс септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:110
-#. i18n: ectx: property (text), widget (QLabel, singularThirdFemalePersonLabel)
-#: rc.cpp:338
+#. i18n: file: src/editor/declensionwidget.ui:109
+#. i18n: ectx: property (text), widget (QLabel, accusativeLabel)
+#: rc.cpp:377
 msgctxt "one of the seven cases (grammatical)"
 msgid "Accusative"
 msgstr "Табыс септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:129
-#. i18n: ectx: property (text), widget (QLabel, singularThirdNeutralPersonLabel)
-#: rc.cpp:341
+#. i18n: file: src/editor/declensionwidget.ui:128
+#. i18n: ectx: property (text), widget (QLabel, ablativLabel)
+#: rc.cpp:380
 msgctxt "one of the seven cases (grammatical)"
 msgid "Ablative"
 msgstr "Шығыс септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:148
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:344
+#. i18n: file: src/editor/declensionwidget.ui:147
+#. i18n: ectx: property (text), widget (QLabel, locativeLabel)
+#: rc.cpp:383
 msgctxt "one of the seven cases (grammatical)"
 msgid "Locative"
 msgstr "Жатыс септік"
 
-#. i18n: file: src/editor/declensionwidget.ui:167
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:347
+#. i18n: file: src/editor/declensionwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, vocativeLabel)
+#: rc.cpp:386
 msgctxt "one of the seven cases (grammatical)"
 msgid "Vocative"
 msgstr "Атау формасы"
+
+#. i18n: file: src/editor/declensionwidget.ui:445
+#. i18n: ectx: property (text), widget (QLabel, numberLabel)
+#: rc.cpp:398
+msgid "Number:"
+msgstr ""
 
 #. i18n: file: src/editor/editorui.rc:7
 #. i18n: ectx: Menu (file)
@@ -2306,13 +2360,13 @@ msgstr "Атау формасы"
 #. i18n: ectx: Menu (file)
 #. i18n: file: src/statistics/statisticsui.rc:7
 #. i18n: ectx: Menu (file)
-#: rc.cpp:359 rc.cpp:516 rc.cpp:537 rc.cpp:1240
+#: rc.cpp:413 rc.cpp:528 rc.cpp:549 rc.cpp:1252
 msgid "&File"
 msgstr "&Файл"
 
 #. i18n: file: src/editor/editorui.rc:12
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:362
+#: rc.cpp:416
 msgid "&Edit"
 msgstr "&Өңдеу"
 
@@ -2320,111 +2374,67 @@ msgstr "&Өңдеу"
 #. i18n: ectx: Menu (view)
 #. i18n: file: src/practice/practiceui.rc:12
 #. i18n: ectx: Menu (view)
-#: rc.cpp:365 rc.cpp:540
+#: rc.cpp:419 rc.cpp:552
 msgid "&View"
 msgstr "&Көрініс"
 
-#. i18n: file: src/editor/editorui.rc:50
+#. i18n: file: src/editor/editorui.rc:49
 #. i18n: ectx: Menu (lesson)
-#: rc.cpp:368
+#: rc.cpp:422
 msgid "&Lesson"
 msgstr "&Сабақ"
 
-#. i18n: file: src/editor/editorui.rc:60
+#. i18n: file: src/editor/editorui.rc:59
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/practice/practicesummaryui.rc:12
 #. i18n: ectx: Menu (learning)
 #. i18n: file: src/statistics/statisticsui.rc:12
 #. i18n: ectx: Menu (learning)
-#: rc.cpp:371 rc.cpp:519 rc.cpp:1243
+#: rc.cpp:425 rc.cpp:531 rc.cpp:1255
 msgid "&Practice"
 msgstr "&Жаттығу"
 
-#. i18n: file: src/editor/editorui.rc:65
+#. i18n: file: src/editor/editorui.rc:64
 #. i18n: ectx: Menu (scripts)
-#: rc.cpp:374
+#: rc.cpp:428
 msgid "&Scripts"
 msgstr "&Скрипттер"
 
-#. i18n: file: src/editor/editorui.rc:74
+#. i18n: file: src/editor/editorui.rc:73
 #. i18n: ectx: ToolBar (editorToolBar)
 #. i18n: file: src/parleyui.rc:27
 #. i18n: ectx: ToolBar (editorToolBar)
-#: rc.cpp:377 rc.cpp:440
+#: rc.cpp:431 rc.cpp:452
 msgid "Editor Toolbar"
 msgstr "Өңдеу құралдары"
 
-#. i18n: file: src/editor/latexwidget.ui:17
-#. i18n: ectx: property (text), widget (QLabel, texLabel)
-#: rc.cpp:380
-msgid "LaTeX code"
-msgstr "LaTeX коды"
-
-#. i18n: file: src/editor/latexwidget.ui:37
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:55
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:383 rc.cpp:691
-msgid "Preview"
-msgstr "Қарап-шығу"
-
-#. i18n: file: src/editor/latexwidget.ui:57
-#. i18n: ectx: property (text), widget (QCheckBox, mathModeCheckBox)
-#: rc.cpp:386
-msgid "Math mode"
-msgstr "Математикалық күйі"
-
-#. i18n: file: src/editor/multiplechoicewidget.ui:21
-#. i18n: ectx: property (text), widget (QPushButton, addChoiceButton)
-#: rc.cpp:389
-msgid "Add"
-msgstr "Қосу"
-
-#. i18n: file: src/editor/multiplechoicewidget.ui:28
-#. i18n: ectx: property (text), widget (QPushButton, removeChoiceButton)
-#: rc.cpp:392
-msgid "Remove"
-msgstr "Өшіру"
-
-#. i18n: file: src/editor/summarywordwidget.ui:16
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:395
-msgid "Language"
-msgstr "Тіл"
-
-#. i18n: file: src/editor/summarywordwidget.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:401
-msgid "Word type"
-msgstr "Сөз табы"
-
 #. i18n: file: src/export/exportdialog.ui:20
 #. i18n: ectx: property (text), widget (QRadioButton, flashCardRadio)
-#: rc.cpp:425
+#: rc.cpp:437
 msgid "Flash Cards - to print learning cards (HTML)"
 msgstr "Тақшалар - жаттау тақшаларын басып шығару үшін (HTML)"
 
 #. i18n: file: src/export/exportdialog.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, tableRadio)
-#: rc.cpp:428
+#: rc.cpp:440
 msgid "A vocabulary list that works in a web-browser and can be printed (HTML)"
 msgstr "Веб браузерде қарауға және басып шығаруға ыңғайлы сөздер тізімі (HTML)"
 
 #. i18n: file: src/export/exportdialog.ui:40
 #. i18n: ectx: property (text), widget (QRadioButton, csvRadio)
-#: rc.cpp:431
+#: rc.cpp:443
 msgid "Comma separated values (CSV)"
 msgstr "Үтірмен бөлшектелген мәндер (CSV)"
 
 #. i18n: file: src/parleyui.rc:19
 #. i18n: ectx: Menu (help)
-#: rc.cpp:434
+#: rc.cpp:446
 msgid "&Help"
 msgstr "&Көмек"
 
 #. i18n: file: src/parleyui.rc:24
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:437
+#: rc.cpp:449
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар"
 
@@ -2432,7 +2442,7 @@ msgstr "Негізгі құралдар"
 #. i18n: ectx: ToolBar (practiceToolBar)
 #. i18n: file: src/practice/practiceui.rc:18
 #. i18n: ectx: ToolBar (practiceToolBar)
-#: rc.cpp:443 rc.cpp:543
+#: rc.cpp:455 rc.cpp:555
 msgid "Practice Toolbar"
 msgstr "Жаттығу құралдары"
 
@@ -2440,7 +2450,7 @@ msgstr "Жаттығу құралдары"
 #. i18n: ectx: ToolBar (statisticsToolBar)
 #. i18n: file: src/statistics/statisticsui.rc:19
 #. i18n: ectx: ToolBar (statisticsToolBar)
-#: rc.cpp:446 rc.cpp:1246
+#: rc.cpp:458 rc.cpp:1258
 msgid "Statistics Toolbar"
 msgstr "Статистика құралдары"
 
@@ -2448,13 +2458,13 @@ msgstr "Статистика құралдары"
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
 #. i18n: file: src/practice/practicesummaryui.rc:19
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: rc.cpp:449 rc.cpp:522
+#: rc.cpp:461 rc.cpp:534
 msgid "Practice Summary Toolbar"
 msgstr "Жаттығу нәттижелері"
 
 #. i18n: file: src/practice/entryfilter.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:452
+#: rc.cpp:464
 msgid ""
 "<p>Your selection of vocabulary for the practice is empty.</p><p>Below you "
 "can choose to ignore some of your configuration settings to start a practice "
@@ -2465,152 +2475,152 @@ msgstr ""
 
 #. i18n: file: src/practice/entryfilter.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:455
+#: rc.cpp:467
 msgid "Ignore Configuration for:"
 msgstr "Не бойынша таңдаудан айну:"
 
 #. i18n: file: src/practice/entryfilter.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, lessonCheckBox)
-#: rc.cpp:458
+#: rc.cpp:470
 msgid "Ignore Lessons"
 msgstr "Сабақтар бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, wordTypeCheckBox)
-#: rc.cpp:461
+#: rc.cpp:473
 msgid "Ignore Word Types"
 msgstr "Сөз табы бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, blockedCheckBox)
-#: rc.cpp:464
+#: rc.cpp:476
 msgid "Ignore Blocked"
 msgstr "Бұғаталғаны бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, timesWrongCheckBox)
-#: rc.cpp:467
+#: rc.cpp:479
 msgid "Ignore Times Answered Incorrectly"
 msgstr "Қате жауап есебі бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:112
 #. i18n: ectx: property (text), widget (QCheckBox, timesPracticedCheckBox)
-#: rc.cpp:470
+#: rc.cpp:482
 msgid "Ignore Times Practiced"
 msgstr "Неше рет өткені бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:132
 #. i18n: ectx: property (text), widget (QCheckBox, minMaxGradeCheckBox)
-#: rc.cpp:473
+#: rc.cpp:485
 msgid "Ignore Minimum/Maximum Grade"
 msgstr "Мин/Макс деңгейі бойынша"
 
 #. i18n: file: src/practice/entryfilter.ui:152
 #. i18n: ectx: property (text), widget (QLabel, lessonLabel_2)
-#: rc.cpp:476
+#: rc.cpp:488
 msgid "Words"
 msgstr "Сөздер"
 
 #. i18n: file: src/practice/entryfilter.ui:167
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:479
+#: rc.cpp:491
 msgid "Total number of entries:"
 msgstr "Жалпы жазбалар саны"
 
 #. i18n: file: src/practice/entryfilter.ui:188
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:482
+#: rc.cpp:494
 msgid "Resulting number of words to practice:"
 msgstr "Жаттығу сөздер саны:"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:118
 #. i18n: ectx: property (toolTip), widget (QPushButton, answerLaterButton)
-#: rc.cpp:485
+#: rc.cpp:497
 msgid "Skip this word for now and ask again later"
 msgstr "Бұл сөзді атап кетіп келешекте қайта сұрау"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:121
 #. i18n: ectx: property (text), widget (QPushButton, answerLaterButton)
-#: rc.cpp:488
+#: rc.cpp:500
 msgid "Answer Later"
 msgstr "Келешекте"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:131
 #. i18n: ectx: property (text), widget (QPushButton, hintButton)
-#: rc.cpp:491
+#: rc.cpp:503
 msgid "Hint"
 msgstr "Ишара"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:192
 #. i18n: ectx: property (text), widget (QPushButton, continueButton)
-#: rc.cpp:494
+#: rc.cpp:506
 msgid "Continue"
 msgstr "Жалғастыру"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:209
 #. i18n: ectx: property (text), widget (QPushButton, countAsWrongButton)
-#: rc.cpp:497
+#: rc.cpp:509
 msgid "I did not know it"
 msgstr "Білмеймін"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:216
 #. i18n: ectx: property (text), widget (QPushButton, countAsCorrectButton)
-#: rc.cpp:500
+#: rc.cpp:512
 msgid "I knew it"
 msgstr "Білемін"
 
 #. i18n: file: src/practice/practice_mainwindow.ui:290
 #. i18n: ectx: property (format), widget (QProgressBar, totalProgress)
-#: rc.cpp:504
+#: rc.cpp:516
 #, no-c-format
 msgid "%v/%m"
 msgstr "%v/%m"
 
 #. i18n: file: src/practice/practice_widget_comparison.ui:32
 #. i18n: ectx: property (text), widget (QLabel, absoluteLabel)
-#: rc.cpp:507
+#: rc.cpp:519
 msgid "absolute"
 msgstr "жай шырай"
 
 #. i18n: file: src/practice/practice_widget_comparison.ui:74
 #. i18n: ectx: property (text), widget (QLabel, comparativeLabel)
-#: rc.cpp:510
+#: rc.cpp:522
 msgid "comparative"
 msgstr "салыстырмалы шырай"
 
 #. i18n: file: src/practice/practice_widget_comparison.ui:116
 #. i18n: ectx: property (text), widget (QLabel, superlativeLabel)
-#: rc.cpp:513
+#: rc.cpp:525
 msgid "superlative"
 msgstr "таңдаулы шырай"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:28
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:525
+#: rc.cpp:537
 msgid "Attempts"
 msgstr "Талпыныстар"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:33
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:528
+#: rc.cpp:540
 msgid "Question"
 msgstr "Сауал"
 
 #. i18n: file: src/practice/practicesummarywidget.ui:43
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
-#: rc.cpp:534
+#: rc.cpp:546
 msgid "Your Answer"
 msgstr "Жауабыңыз"
 
 #. i18n: file: src/settings/documentproperties.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, tiltle_group)
-#: rc.cpp:549
+#: rc.cpp:561
 msgid "General Document Properties"
 msgstr "Жалпы құжаттың қасиеттері"
 
 #. i18n: file: src/settings/documentproperties.ui:37
 #. i18n: ectx: property (text), widget (QLabel, label_title)
-#: rc.cpp:552
+#: rc.cpp:564
 msgid "&Title:"
 msgstr "&Атауы:"
 
@@ -2618,91 +2628,91 @@ msgstr "&Атауы:"
 #. i18n: ectx: property (toolTip), widget (KLineEdit, titleLineEdit)
 #. i18n: file: src/settings/documentproperties.ui:82
 #. i18n: ectx: property (toolTip), widget (KLineEdit, authorLineEdit)
-#: rc.cpp:555 rc.cpp:561
+#: rc.cpp:567 rc.cpp:573
 msgid "A title for your document."
 msgstr "Құжатыңыздың атауы."
 
 #. i18n: file: src/settings/documentproperties.ui:63
 #. i18n: ectx: property (text), widget (QLabel, label_author)
-#: rc.cpp:558
+#: rc.cpp:570
 msgid "&Author:"
 msgstr "&Авторы:"
 
 #. i18n: file: src/settings/documentproperties.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_author_2)
-#: rc.cpp:564
+#: rc.cpp:576
 msgid "&Email:"
 msgstr "Эл.&пошта:"
 
 #. i18n: file: src/settings/documentproperties.ui:108
 #. i18n: ectx: property (toolTip), widget (KLineEdit, contactLineEdit)
-#: rc.cpp:567
+#: rc.cpp:579
 msgid "A way to contact you (email or a webpage)."
 msgstr "Сізбен қалай қатынасу (эл.пошта не веб-парағыңыз)."
 
 #. i18n: file: src/settings/documentproperties.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_remark)
-#: rc.cpp:570
+#: rc.cpp:582
 msgid "&Comment:"
 msgstr "&Түсініктеме:"
 
 #. i18n: file: src/settings/documentproperties.ui:134
 #. i18n: ectx: property (toolTip), widget (KTextEdit, commentTextEdit)
-#: rc.cpp:573
+#: rc.cpp:585
 msgid "Any additional information."
 msgstr "Кез-келген қосымша мәлімет."
 
 #. i18n: file: src/settings/documentproperties.ui:147
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:576
+#: rc.cpp:588
 msgid "Cat&egory"
 msgstr "Сана&ты"
 
 #. i18n: file: src/settings/documentproperties.ui:160
 #. i18n: ectx: property (toolTip), widget (KComboBox, categoryComboBox)
-#: rc.cpp:579
+#: rc.cpp:591
 msgid "A general category into which your document belongs."
 msgstr "Құжатыңыз жататын жалпы санаты."
 
 #. i18n: file: src/settings/documentproperties.ui:172
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
-#: rc.cpp:585
+#: rc.cpp:597
 msgid "Music"
 msgstr "Музыка"
 
 #. i18n: file: src/settings/documentproperties.ui:177
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
-#: rc.cpp:588
+#: rc.cpp:600
 msgid "Geography"
 msgstr "География"
 
 #. i18n: file: src/settings/documentproperties.ui:182
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
-#: rc.cpp:591
+#: rc.cpp:603
 msgid "Anatomy"
 msgstr "Анатомия"
 
 #. i18n: file: src/settings/documentproperties.ui:187
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
-#: rc.cpp:594
+#: rc.cpp:606
 msgid "History"
 msgstr "Тарих"
 
 #. i18n: file: src/settings/documentproperties.ui:192
 #. i18n: ectx: property (text), item, widget (KComboBox, categoryComboBox)
-#: rc.cpp:597
+#: rc.cpp:609
 msgid "Test Preparation"
 msgstr "Сынаққа дайындық"
 
 #. i18n: file: src/settings/documentproperties.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label_license)
-#: rc.cpp:600
+#: rc.cpp:612
 msgid "&License:"
 msgstr "&Лицензиясы:"
 
 #. i18n: file: src/settings/documentproperties.ui:214
 #. i18n: ectx: property (toolTip), widget (KComboBox, licenseComboBox)
-#: rc.cpp:603
+#: rc.cpp:615
 msgid ""
 "The license under which your document will be.\n"
 "If you consider contributing your file to KDE in the future, an appropriate "
@@ -2714,31 +2724,31 @@ msgstr ""
 
 #. i18n: file: src/settings/documentproperties.ui:226
 #. i18n: ectx: property (text), item, widget (KComboBox, licenseComboBox)
-#: rc.cpp:610
+#: rc.cpp:622
 msgid "GPLv2+ (GNU General Public License version 2 or later)"
 msgstr "GPLv2+ (GNU General Public License, 2-ші не одан жаңа нұсқасы)"
 
 #. i18n: file: src/settings/documentproperties.ui:243
 #. i18n: ectx: property (text), widget (QLabel, label_language_1)
-#: rc.cpp:616
+#: rc.cpp:628
 msgid "&First language:"
 msgstr "&Алғашқы тіл:"
 
 #. i18n: file: src/settings/documentproperties.ui:269
 #. i18n: ectx: property (text), widget (QLabel, label_language_2)
-#: rc.cpp:619
+#: rc.cpp:631
 msgid "&Second language:"
 msgstr "&Екінші тіл:"
 
 #. i18n: file: src/settings/documentproperties.ui:298
 #. i18n: ectx: property (text), widget (QCheckBox, grammarCheckBox)
-#: rc.cpp:622
+#: rc.cpp:634
 msgid "&Setup Grammar Details"
 msgstr "Грамматика &егжей-тегжейі"
 
 #. i18n: file: src/settings/documentproperties.ui:308
 #. i18n: ectx: property (text), widget (QCheckBox, downloadGrammarCheckBox)
-#: rc.cpp:625
+#: rc.cpp:637
 msgctxt "Attept to download grammar properties for the selected languages"
 msgid "Download Grammar"
 msgstr "Грамматиканы жүктеп алынсын"
@@ -2751,7 +2761,7 @@ msgstr "Грамматиканы жүктеп алынсын"
 #. i18n: ectx: label, entry (ConjugationTenses), group (Locale $(locale))
 #. i18n: file: src/settings/languagesettings.kcfg:24
 #. i18n: ectx: whatsthis, entry (ConjugationTenses), group (Locale $(locale))
-#: rc.cpp:628 rc.cpp:631 rc.cpp:832 rc.cpp:835
+#: rc.cpp:640 rc.cpp:643 rc.cpp:844 rc.cpp:847
 msgid "Selected tenses for conjugation practice."
 msgstr "Жіктеп жаттығу үшін таңдалған шақтары."
 
@@ -2763,25 +2773,25 @@ msgstr "Жіктеп жаттығу үшін таңдалған шақтары."
 #. i18n: ectx: label, entry (VisibleColumns), group (Locale $(locale))
 #. i18n: file: src/settings/languagesettings.kcfg:29
 #. i18n: ectx: whatsthis, entry (VisibleColumns), group (Locale $(locale))
-#: rc.cpp:634 rc.cpp:637 rc.cpp:838 rc.cpp:841
+#: rc.cpp:646 rc.cpp:649 rc.cpp:850 rc.cpp:853
 msgid "Visible columns in the main editor window."
 msgstr "Редактордың негізгі терезесінде көрсетілетін бағандары."
 
 #. i18n: file: src/settings/generaloptionsbase.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:640
+#: rc.cpp:652
 msgid "Open/Save"
 msgstr "Ашу/Сақтау"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:23
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoOpenLast)
-#: rc.cpp:643
+#: rc.cpp:655
 msgid "Always open the collection that was active when quitting Parley"
 msgstr "Әрқашанда Parley-ден шыққандағы белсенді жиынын ашу."
 
 #. i18n: file: src/settings/generaloptionsbase.ui:26
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoOpenLast)
-#: rc.cpp:646
+#: rc.cpp:658
 msgid ""
 "When this option is checked, the last active collection will be loaded "
 "automatically when starting Parley instead of showing the welcome screen."
@@ -2791,7 +2801,7 @@ msgstr ""
 
 #. i18n: file: src/settings/generaloptionsbase.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoOpenLast)
-#: rc.cpp:649
+#: rc.cpp:661
 msgid "Always load the last opened collection on start"
 msgstr "Әрқашан шыққандағы белсенді жиыны ашылсын"
 
@@ -2799,7 +2809,7 @@ msgstr "Әрқашан шыққандағы белсенді жиыны ашыл
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoSave)
 #. i18n: file: src/settings/generaloptionsbase.ui:60
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoBackup)
-#: rc.cpp:652 rc.cpp:661
+#: rc.cpp:664 rc.cpp:673
 msgid "Allow automatic saving of your work"
 msgstr "Жұмысыңызды автосақтауын рұқсат ету"
 
@@ -2807,37 +2817,37 @@ msgstr "Жұмысыңызды автосақтауын рұқсат ету"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoSave)
 #. i18n: file: src/settings/generaloptionsbase.ui:63
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoBackup)
-#: rc.cpp:655 rc.cpp:664
+#: rc.cpp:667 rc.cpp:676
 msgid "Your work will be automatically saved if you check this option"
 msgstr "Белгісі қойылса, жұмысыңыз автоматты түрде сақталады"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:45
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoSave)
-#: rc.cpp:658
+#: rc.cpp:670
 msgid "&Save vocabularies automatically on close and quit"
 msgstr "&Жауып-шыққанда сөздіктер автосақталсын"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoBackup)
-#: rc.cpp:667
+#: rc.cpp:679
 msgid "&Create a backup every"
 msgstr "&Сақтық көшірмелеу аралығы"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:89
 #. i18n: ectx: property (text), widget (QLabel, lblBackupInterva)
-#: rc.cpp:670
+#: rc.cpp:682
 msgid "minutes"
 msgstr "минут"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_sep)
-#: rc.cpp:673
+#: rc.cpp:685
 msgid "Sep&arator for text file import/export (CSV):"
 msgstr "Мәтін (CSV) файлды экспорт/импорттағандағы &бөлгіші:"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:119
 #. i18n: ectx: property (toolTip), widget (KComboBox, kcfg_SeparatorCombo)
-#: rc.cpp:676
+#: rc.cpp:688
 msgid ""
 "Choose which separator you want to use to separate your data when importing "
 "and exporting text."
@@ -2847,7 +2857,7 @@ msgstr ""
 
 #. i18n: file: src/settings/generaloptionsbase.ui:122
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_SeparatorCombo)
-#: rc.cpp:679
+#: rc.cpp:691
 msgid ""
 "Choose the separator to use to divide the parts of an expression when "
 "importing or exporting data as text."
@@ -2857,97 +2867,97 @@ msgstr ""
 
 #. i18n: file: src/settings/generaloptionsbase.ui:147
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:682
+#: rc.cpp:694
 msgid "Editing"
 msgstr "Өңдеу"
 
 #. i18n: file: src/settings/generaloptionsbase.ui:165
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SmartAppend)
-#: rc.cpp:685
+#: rc.cpp:697
 msgid "&Append new rows automatically when editing"
 msgstr "Өңдегенде жаңа жолдары &автоматты қосылсын"
 
 #. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:40
 #. i18n: ectx: property (text), widget (QPushButton, getNewButton)
-#: rc.cpp:688
+#: rc.cpp:700
 msgid "&Get New Themes..."
 msgstr "&Жаңа нақыштарды табу..."
 
 #. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:97
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:694
+#: rc.cpp:706
 msgid "Theme Details"
 msgstr "Нақыштың егжей-тегжейі"
 
 #. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:131
 #. i18n: ectx: property (text), widget (QLabel, labelContact)
-#: rc.cpp:697
+#: rc.cpp:709
 msgid "Contact:"
 msgstr "Контакт:"
 
 #. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:166
 #. i18n: ectx: property (text), widget (QLabel, labelDescription)
-#: rc.cpp:700
+#: rc.cpp:712
 msgid "Description:"
 msgstr "Сипаттамасы:"
 
 #. i18n: file: src/settings/kgametheme/kgamethemeselector.ui:201
 #. i18n: ectx: property (text), widget (QLabel, labelAuthor)
-#: rc.cpp:703
+#: rc.cpp:715
 msgid "Author:"
 msgstr "Авторы:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:706
+#: rc.cpp:718
 msgid "General"
 msgstr "Жалпы"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:30
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:709
+#: rc.cpp:721
 msgid "Name:"
 msgstr "Атауы:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:46
 #. i18n: ectx: property (text), widget (QLabel, keyboardLayoutLabel)
-#: rc.cpp:712
+#: rc.cpp:724
 msgid "Keyboard layout:"
 msgstr "Пернетақта сәйкестігі:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:75
 #. i18n: ectx: property (text), widget (QPushButton, downloadGrammarButton)
-#: rc.cpp:715
+#: rc.cpp:727
 msgid "&Download Grammar"
 msgstr "&Грамматиканы жүктеу"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:88
 #. i18n: ectx: property (text), widget (QLabel, spellcheckerLabel)
-#: rc.cpp:718
+#: rc.cpp:730
 msgid "Spell checker:"
 msgstr "Емле тексергіші:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:101
 #. i18n: ectx: property (text), widget (QLabel, localeSelectionLabel)
-#: rc.cpp:721
+#: rc.cpp:733
 msgid "Language:"
 msgstr "Тіл:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:117
 #. i18n: ectx: property (text), widget (QLabel, fontLabel_2)
-#: rc.cpp:724
+#: rc.cpp:736
 msgid "Font (practice):"
 msgstr "Қаріпі (жаттығу):"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:127
 #. i18n: ectx: property (text), widget (QLabel, fontLabel_3)
-#: rc.cpp:727
+#: rc.cpp:739
 msgid "Font (editor):"
 msgstr "Қаріпі (өңдегіш):"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:141
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:730
+#: rc.cpp:742
 msgid "Articles"
 msgstr "Артикль"
 
@@ -2955,7 +2965,7 @@ msgstr "Артикль"
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3)
 #. i18n: file: src/settings/languagepropertiespage.ui:410
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
-#: rc.cpp:733 rc.cpp:763
+#: rc.cpp:745 rc.cpp:775
 msgid "Definite"
 msgstr "Белгілілік"
 
@@ -2963,7 +2973,7 @@ msgstr "Белгілілік"
 #. i18n: ectx: property (text), widget (QLabel, TextLabel4)
 #. i18n: file: src/settings/languagepropertiespage.ui:417
 #. i18n: ectx: property (text), widget (QLabel, TextLabel4_2)
-#: rc.cpp:736 rc.cpp:766
+#: rc.cpp:748 rc.cpp:778
 msgid "Indefinite"
 msgstr "Белгісіздік"
 
@@ -2971,7 +2981,7 @@ msgstr "Белгісіздік"
 #. i18n: ectx: property (text), widget (QLabel, male_label)
 #. i18n: file: src/settings/languagepropertiespage.ui:365
 #. i18n: ectx: property (text), widget (QLabel, male_label_2)
-#: rc.cpp:739 rc.cpp:754
+#: rc.cpp:751 rc.cpp:766
 msgid "&Male:"
 msgstr "&Аталық тек:"
 
@@ -2979,7 +2989,7 @@ msgstr "&Аталық тек:"
 #. i18n: ectx: property (text), widget (QLabel, female_label)
 #. i18n: file: src/settings/languagepropertiespage.ui:352
 #. i18n: ectx: property (text), widget (QLabel, female_label_2)
-#: rc.cpp:742 rc.cpp:751
+#: rc.cpp:754 rc.cpp:763
 msgid "&Female:"
 msgstr "А&налық тек:"
 
@@ -2987,67 +2997,67 @@ msgstr "А&налық тек:"
 #. i18n: ectx: property (text), widget (QLabel, natural_label)
 #. i18n: file: src/settings/languagepropertiespage.ui:339
 #. i18n: ectx: property (text), widget (QLabel, natural_label_2)
-#: rc.cpp:745 rc.cpp:748
+#: rc.cpp:757 rc.cpp:760
 msgid "&Neutral:"
 msgstr "&Орта тек:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:457
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: rc.cpp:769
+#: rc.cpp:781
 msgid "Personal Pronouns"
 msgstr "Жіктеу есімдіктер"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:513
 #. i18n: ectx: property (text), widget (QLabel, pers1_label)
-#: rc.cpp:781
+#: rc.cpp:793
 msgid "&1. Person:"
 msgstr "&1-жақ:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:549
 #. i18n: ectx: property (text), widget (QLabel, pers2_label)
-#: rc.cpp:784
+#: rc.cpp:796
 msgid "&2. Person:"
 msgstr "&2-жақ:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:585
 #. i18n: ectx: property (text), widget (QLabel, pers3_label)
-#: rc.cpp:787
+#: rc.cpp:799
 msgid "3. Person:"
 msgstr "3-жақ:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:595
 #. i18n: ectx: property (text), widget (QLabel, male_c_label)
-#: rc.cpp:790
+#: rc.cpp:802
 msgid "M&ale:"
 msgstr "А&талық тек:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:631
 #. i18n: ectx: property (text), widget (QLabel, female_c_label)
-#: rc.cpp:793
+#: rc.cpp:805
 msgid "F&emale:"
 msgstr "Ана&лық тек:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:667
 #. i18n: ectx: property (text), widget (QLabel, natural_c_label)
-#: rc.cpp:796
+#: rc.cpp:808
 msgid "Neu&ter:"
 msgstr "О&рта тек:"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:703
 #. i18n: ectx: property (text), widget (QCheckBox, dualCheckBox)
-#: rc.cpp:799
+#: rc.cpp:811
 msgid "Dual conjugations"
 msgstr "Екілік жіктелу"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:710
 #. i18n: ectx: property (text), widget (QCheckBox, neutralCheckBox)
-#: rc.cpp:802
+#: rc.cpp:814
 msgid "A neutral conjugation form exists"
 msgstr "Орта тегі жіктелуі бар"
 
 #. i18n: file: src/settings/languagepropertiespage.ui:723
 #. i18n: ectx: property (text), widget (QCheckBox, maleFemaleDifferCheckBox)
-#: rc.cpp:805
+#: rc.cpp:817
 msgid "Male/female have different conjugations"
 msgstr "Аталық пен аналық тегі бөлек жіктеледі"
 
@@ -3055,7 +3065,7 @@ msgstr "Аталық пен аналық тегі бөлек жіктеледі"
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #. i18n: file: src/settings/optionlistform.ui:63
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
-#: rc.cpp:811 rc.cpp:855
+#: rc.cpp:823 rc.cpp:867
 msgid "&New..."
 msgstr "&Жаңа..."
 
@@ -3063,7 +3073,7 @@ msgstr "&Жаңа..."
 #. i18n: ectx: property (text), widget (QPushButton, modifyButton)
 #. i18n: file: src/settings/optionlistform.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, modifyButton)
-#: rc.cpp:814 rc.cpp:858
+#: rc.cpp:826 rc.cpp:870
 msgid "&Modify..."
 msgstr "&Өзгерту..."
 
@@ -3071,7 +3081,7 @@ msgstr "&Өзгерту..."
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #. i18n: file: src/settings/optionlistform.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:817 rc.cpp:861
+#: rc.cpp:829 rc.cpp:873
 msgid "&Delete"
 msgstr "Ө&шіру"
 
@@ -3079,7 +3089,7 @@ msgstr "Ө&шіру"
 #. i18n: ectx: label, entry (KeyboardLayout), group (Locale $(locale))
 #. i18n: file: src/settings/languagesettings.kcfg:13
 #. i18n: ectx: whatsthis, entry (KeyboardLayout), group (Locale $(locale))
-#: rc.cpp:820 rc.cpp:823
+#: rc.cpp:832 rc.cpp:835
 msgid "Keyboard layout for this locale"
 msgstr "Жергілікті пернетақта сәйкестігі"
 
@@ -3087,50 +3097,50 @@ msgstr "Жергілікті пернетақта сәйкестігі"
 #. i18n: ectx: label, entry (SpellChecker), group (Locale $(locale))
 #. i18n: file: src/settings/languagesettings.kcfg:18
 #. i18n: ectx: whatsthis, entry (SpellChecker), group (Locale $(locale))
-#: rc.cpp:826 rc.cpp:829
+#: rc.cpp:838 rc.cpp:841
 msgid "Spell checker for this language"
 msgstr "Осы тілдің емле тексергіші"
 
 #. i18n: file: src/settings/languagesettings.kcfg:32
 #. i18n: ectx: label, entry (PracticeFont), group (Locale $(locale))
-#: rc.cpp:844
+#: rc.cpp:856
 msgid "The font used during practice"
 msgstr "Жаттығуда қолданатын қаріпі"
 
 #. i18n: file: src/settings/languagesettings.kcfg:36
 #. i18n: ectx: label, entry (EditorFont), group (Locale $(locale))
-#: rc.cpp:847
+#: rc.cpp:859
 msgid "The font used in the editor"
 msgstr "Өңдегіште қолданатын қаріпі"
 
 #. i18n: file: src/settings/optionlistform.ui:124
 #. i18n: ectx: property (text), widget (QPushButton, cleanUpButton)
-#: rc.cpp:864
+#: rc.cpp:876
 msgid "&Clean Up"
 msgstr "&Тазалау"
 
 #. i18n: file: src/settings/parley.kcfg:11
 #. i18n: ectx: label, entry (Theme), group (General)
-#: rc.cpp:867
+#: rc.cpp:879
 msgid "Theme to use for practice and welcome screen"
 msgstr "Жаттығу мен сәлемдесу экранында қолданатын нақышы"
 
 #. i18n: file: src/settings/parley.kcfg:15
 #. i18n: ectx: label, entry (NumPreSetting), group (General)
-#: rc.cpp:870
+#: rc.cpp:882
 msgid "Number of stored setting profiles"
 msgstr "Сақталған параметрлер іс-әлпетінің саны"
 
 #. i18n: file: src/settings/parley.kcfg:19
 #. i18n: ectx: label, entry (SmartAppend), group (General)
-#: rc.cpp:873
+#: rc.cpp:885
 msgid ""
 "If true, when using the entry dialog, new rows will be appended as needed"
 msgstr "Қосылса, жазу қосу диалогында қажеті кезде керек жолдар қосылады"
 
 #. i18n: file: src/settings/parley.kcfg:23
 #. i18n: ectx: label, entry (Separator), group (General)
-#: rc.cpp:876
+#: rc.cpp:888
 msgid "This sets the separator used when copying/pasting text, default is Tab"
 msgstr ""
 "Бұнда мәтінді көшірмелеу/орналастыруда қолданатын бөлгіші орнатылады. "
@@ -3138,55 +3148,55 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:27
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
-#: rc.cpp:879
+#: rc.cpp:891
 msgid "The number of entries per lesson"
 msgstr "Әр сабақтағы жазу саны"
 
 #. i18n: file: src/settings/parley.kcfg:31
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
-#: rc.cpp:882
+#: rc.cpp:894
 msgid "If true, on each application start the last opened file will be loaded"
 msgstr "Қосылса, әр басталған қолданбада соңғы ашылған файл жүктеледі"
 
 #. i18n: file: src/settings/parley.kcfg:35
 #. i18n: ectx: label, entry (AutoSave), group (General)
-#: rc.cpp:885
+#: rc.cpp:897
 msgid "If true, vocabularies are automatically saved on close and exit"
 msgstr "Қосылса, жауып шыққанда сөздіктер автоматты түрде сақталады"
 
 #. i18n: file: src/settings/parley.kcfg:42
 #. i18n: ectx: label, entry (AutoBackup), group (General)
-#: rc.cpp:888
+#: rc.cpp:900
 msgid "If true, a backup is saved every BackupTime minutes"
 msgstr "Қосылса, әрбір орнатылған аралық сайын сақтық көшірме сақталады"
 
 #. i18n: file: src/settings/parley.kcfg:46
 #. i18n: ectx: label, entry (BackupTime), group (General)
-#: rc.cpp:891
+#: rc.cpp:903
 msgid "Time interval between two automatic backups"
 msgstr "Екі автосақтау арасындағы аралық"
 
 #. i18n: file: src/settings/parley.kcfg:57
 #. i18n: ectx: label, entry (FlashcardsFrontImage), group (PracticeOptions)
-#: rc.cpp:897
+#: rc.cpp:909
 msgid "Show images on the front of the flashcard."
 msgstr "Сөз тақшаның бет жағында кенскінін көрсету."
 
 #. i18n: file: src/settings/parley.kcfg:61
 #. i18n: ectx: label, entry (FlashcardsBackImage), group (PracticeOptions)
-#: rc.cpp:900
+#: rc.cpp:912
 msgid "Show images on the back of the flashcard."
 msgstr "Сөз тақшаның арт жағында кенскінін көрсету."
 
 #. i18n: file: src/settings/parley.kcfg:65
 #. i18n: ectx: label, entry (Block), group (PracticeOptions)
-#: rc.cpp:903
+#: rc.cpp:915
 msgid "In Blocking Query Tab Dialog, if checked then the Query is blocked"
 msgstr "Сауалды бұғатау қойнды диалогында бұл белгіленсе, сауал бұғаталады"
 
 #. i18n: file: src/settings/parley.kcfg:69
 #. i18n: ectx: label, entry (Expire), group (PracticeOptions)
-#: rc.cpp:906
+#: rc.cpp:918
 msgid ""
 "In Blocking Query Tab Dialog, if checked then the Query accepts an expiring "
 "time"
@@ -3196,13 +3206,13 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:73
 #. i18n: ectx: label, entry (AltLearn), group (PracticeOptions)
-#: rc.cpp:909
+#: rc.cpp:921
 msgid "Use the Leitner learning method"
 msgstr "Лейтнердің әдісін қолдану"
 
 #. i18n: file: src/settings/parley.kcfg:77
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
-#: rc.cpp:912
+#: rc.cpp:924
 msgid ""
 "Append new vocabulary in a test in order of their lessons. Note that this "
 "will not be a hard transition, but a slow mix from one lesson to the next."
@@ -3212,7 +3222,7 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:81
 #. i18n: ectx: label, entry (TestNumberOfEntries), group (PracticeOptions)
-#: rc.cpp:915
+#: rc.cpp:927
 msgid ""
 "The number of entries that are practiced at the same time. If one of these "
 "is answered correctly another entry will be appended."
@@ -3222,19 +3232,19 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:85
 #. i18n: ectx: label, entry (SwapDirection), group (PracticeOptions)
-#: rc.cpp:918
+#: rc.cpp:930
 msgid "Swap direction randomly"
 msgstr "Бағытты кездейсоқ өзгерту"
 
 #. i18n: file: src/settings/parley.kcfg:90
 #. i18n: ectx: label, entry (PracticeTimeout), group (PracticeOptions)
-#: rc.cpp:921
+#: rc.cpp:933
 msgid "Limit the time for the user to answer in a test."
 msgstr "Сынақта жауапқа берілетін уақытын шектеу."
 
 #. i18n: file: src/settings/parley.kcfg:94
 #. i18n: ectx: label, entry (PracticeTimeoutMode), group (PracticeOptions)
-#: rc.cpp:924
+#: rc.cpp:936
 msgid ""
 "Show - show the solution after the given time; Continue - go to the next "
 "question after the given time."
@@ -3244,68 +3254,68 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:102
 #. i18n: ectx: label, entry (PracticeTimeoutTimePerAnswer), group (PracticeOptions)
-#: rc.cpp:927
+#: rc.cpp:939
 msgid "Maximum time allowed to answer."
 msgstr "Жауапқа берілетін уақыты."
 
 #. i18n: file: src/settings/parley.kcfg:107
 #. i18n: ectx: label, entry (Suggestions), group (PracticeOptions)
-#: rc.cpp:930
+#: rc.cpp:942
 msgid "Enable suggestion lists in written practice."
 msgstr "Жазбаша жаттығуда ұсыныс тізімдерді рұқсат ету."
 
 #. i18n: file: src/settings/parley.kcfg:111
 #. i18n: ectx: label, entry (ShowHints), group (PracticeOptions)
-#: rc.cpp:933
+#: rc.cpp:945
 msgid "Enable the showing of hints."
 msgstr "Ишараларын рұқсат ету."
 
 #. i18n: file: src/settings/parley.kcfg:115
 #. i18n: ectx: label, entry (IgnoreAccentMistakes), group (PracticeOptions)
-#: rc.cpp:936
+#: rc.cpp:948
 msgid "Count answers as right when only the accentuation is wrong."
 msgstr ""
 "Қате әріптің диакритикалық белгісінде ғана болса - жауап дұрыс деп есептеу."
 
 #. i18n: file: src/settings/parley.kcfg:119
 #. i18n: ectx: label, entry (IgnoreCapitalizationMistakes), group (PracticeOptions)
-#: rc.cpp:939
+#: rc.cpp:951
 msgid "Count answers as right when only the capitalization is wrong."
 msgstr "Қате әріптің үлкен-кішілігінде ғана болса - жауап дұрыс деп есептеу."
 
 #. i18n: file: src/settings/parley.kcfg:124
 #. i18n: ectx: label, entry (SplitTranslations), group (PracticeOptions)
-#: rc.cpp:942
+#: rc.cpp:954
 msgid "Split translations in written practice."
 msgstr "Жазбаша жаттығуда түрлі аудармаларды бөлу."
 
 #. i18n: file: src/settings/parley.kcfg:128
 #. i18n: ectx: label, entry (Periods), group (PracticeOptions)
-#: rc.cpp:945
+#: rc.cpp:957
 msgid "Split translations at periods."
 msgstr "Түрлі аудармаларды нүктемен бөлу."
 
 #. i18n: file: src/settings/parley.kcfg:132
 #. i18n: ectx: label, entry (Colons), group (PracticeOptions)
-#: rc.cpp:948
+#: rc.cpp:960
 msgid "Split translations at colons."
 msgstr "Түрлі аудармаларды қос нүктемен бөлу."
 
 #. i18n: file: src/settings/parley.kcfg:136
 #. i18n: ectx: label, entry (Semicolons), group (PracticeOptions)
-#: rc.cpp:951
+#: rc.cpp:963
 msgid "Split translations at semicolons."
 msgstr "Түрлі аудармаларды үтірлі нүктемен бөлу."
 
 #. i18n: file: src/settings/parley.kcfg:140
 #. i18n: ectx: label, entry (Commas), group (PracticeOptions)
-#: rc.cpp:954
+#: rc.cpp:966
 msgid "Split translations at commas."
 msgstr "Түрлі аудармаларды үтірмен бөлу."
 
 #. i18n: file: src/settings/parley.kcfg:146
 #. i18n: ectx: label, entry (ShowMore), group (PracticeOptions)
-#: rc.cpp:957
+#: rc.cpp:969
 msgid ""
 "Enable Show More button to reveal parts of the solution in written practice."
 msgstr ""
@@ -3314,13 +3324,13 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:150
 #. i18n: ectx: label, entry (SkipKnownEnabled), group (PracticeOptions)
-#: rc.cpp:960
+#: rc.cpp:972
 msgid "Enable Skip (I Know It) button in written practice."
 msgstr "Жазбаша жаттығуда \"Аттап кету\" (Білемін) деген батырманы рұқсат ету."
 
 #. i18n: file: src/settings/parley.kcfg:154
 #. i18n: ectx: label, entry (CountSynonymsAsCorrect), group (PracticeOptions)
-#: rc.cpp:963
+#: rc.cpp:975
 msgid ""
 "When the synonym instead of the word was entered, does it count as correct?"
 msgstr ""
@@ -3328,19 +3338,19 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:158
 #. i18n: ectx: label, entry (PracticeImagesEnabled), group (PracticeOptions)
-#: rc.cpp:966
+#: rc.cpp:978
 msgid "Enable image display in the practice dialogs."
 msgstr "Жаттығу диалогтарында кескіндерін көрсетуін рұқсат ету."
 
 #. i18n: file: src/settings/parley.kcfg:162
 #. i18n: ectx: label, entry (PracticeSoundEnabled), group (PracticeOptions)
-#: rc.cpp:969
+#: rc.cpp:981
 msgid "Enable sound playback in the practice dialogs."
 msgstr "Жаттығу диалогтарында дыбыс шығаруын рұқсат ету."
 
 #. i18n: file: src/settings/parley.kcfg:166
 #. i18n: ectx: label, entry (MultipleChoiceWordTypeConsistancy), group (PracticeOptions)
-#: rc.cpp:972
+#: rc.cpp:984
 msgid ""
 "Use the same word type as the solution for the incorrect answers in a "
 "multiple choice practice."
@@ -3350,7 +3360,7 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:170
 #. i18n: ectx: label, entry (NumberMultipleChoiceAnswers), group (PracticeOptions)
-#: rc.cpp:975
+#: rc.cpp:987
 msgid ""
 "How many answers are provided for a multiple choice question, including the "
 "correct answer."
@@ -3358,79 +3368,79 @@ msgstr "Дұрыс жауабын бірнешеден таңдау үшін қ�
 
 #. i18n: file: src/settings/parley.kcfg:177
 #. i18n: ectx: label, entry (ShowSearch), group (Appearance)
-#: rc.cpp:978
+#: rc.cpp:990
 msgid "Toggle display of the search bar."
 msgstr "Іздеу жолағының көрсету күйін терістеу."
 
 #. i18n: file: src/settings/parley.kcfg:182
 #. i18n: ectx: label, entry (ShowSublessonentries), group (Appearance)
-#: rc.cpp:981
+#: rc.cpp:993
 msgid "When enabled a lesson also shows entries from its sublessons."
 msgstr "Қосылса - сабақ ішіндегі бөлімдері көрсетіледі."
 
 #. i18n: file: src/settings/parley.kcfg:187
 #. i18n: ectx: label, entry (TableLessonColumnVisible), group (Appearance)
-#: rc.cpp:984
+#: rc.cpp:996
 msgid "Show/hide the lesson column."
 msgstr "Сабақ бағанын көрсету/жасыру"
 
 #. i18n: file: src/settings/parley.kcfg:192
 #. i18n: ectx: label, entry (TableActiveColumnVisible), group (Appearance)
-#: rc.cpp:987
+#: rc.cpp:999
 msgid "Show/hide the active column."
 msgstr "Белсенді бағанды көрсету/жасыру"
 
 #. i18n: file: src/settings/parley.kcfg:197
 #. i18n: ectx: label, entry (LessonEditingSelection), group (Appearance)
-#: rc.cpp:990
+#: rc.cpp:1002
 msgid "Select which lessons are displayed for editing"
 msgstr "Өңдеу үшін шығаратын сабақтары"
 
 #. i18n: file: src/settings/parley.kcfg:207
 #. i18n: ectx: label, entry (MainWindowSplitter), group (Appearance)
-#: rc.cpp:993
+#: rc.cpp:1005
 msgid "How the main window is divided."
 msgstr "Негізгі терезенің бөлінуі."
 
 #. i18n: file: src/settings/parley.kcfg:211
 #. i18n: ectx: label, entry (PracticeFont), group (Appearance)
-#: rc.cpp:996
+#: rc.cpp:1008
 msgid "The font used in the vocabulary table"
 msgstr "Сөзік кестесінде қолданатын қаріпі"
 
 #. i18n: file: src/settings/parley.kcfg:215
 #. i18n: ectx: label, entry (IPAFont), group (Appearance)
-#: rc.cpp:999
+#: rc.cpp:1011
 msgid "The font used for phonetics"
 msgstr "Фонетика үшін қолданатын қаріпі"
 
 #. i18n: file: src/settings/parley.kcfg:219
 #. i18n: ectx: label, entry (CurrentCol), group (Appearance)
-#: rc.cpp:1002
+#: rc.cpp:1014
 msgid "Currently selected column"
 msgstr "Қазір таңдалған баған"
 
 #. i18n: file: src/settings/parley.kcfg:223
 #. i18n: ectx: label, entry (CurrentRow), group (Appearance)
-#: rc.cpp:1005
+#: rc.cpp:1017
 msgid "Currently selected row"
 msgstr "Қазір таңдалған жол"
 
 #. i18n: file: src/settings/parley.kcfg:227
 #. i18n: ectx: label, entry (UseGradeColors), group (Appearance)
-#: rc.cpp:1008
+#: rc.cpp:1020
 msgid "Use your own colors"
 msgstr "Өзгеше түстерді қолдану"
 
 #. i18n: file: src/settings/parley.kcfg:232
 #. i18n: ectx: label, entry (GradeColor$(Number)), group (Appearance)
-#: rc.cpp:1011
+#: rc.cpp:1023
 msgid "Colors used to display different grades"
 msgstr "Түрлі білім деңгейлерді белгілейтін түстері"
 
 #. i18n: file: src/settings/parley.kcfg:247
 #. i18n: ectx: label, entry (PracticeMinimumTimesAsked), group (Thresholds)
-#: rc.cpp:1014
+#: rc.cpp:1026
 msgid ""
 "The entry must have been asked at least this often to be included in the "
 "practice."
@@ -3438,7 +3448,7 @@ msgstr "Жазу жаттығуға кіру үшін ол кем дегенде
 
 #. i18n: file: src/settings/parley.kcfg:251
 #. i18n: ectx: label, entry (PracticeMaximumTimesAsked), group (Thresholds)
-#: rc.cpp:1017
+#: rc.cpp:1029
 msgid ""
 "The entry must have been asked at most this often to be included in the "
 "practice."
@@ -3446,7 +3456,7 @@ msgstr "Жазу жаттығуға кіру үшін ол көп дегенде
 
 #. i18n: file: src/settings/parley.kcfg:256
 #. i18n: ectx: label, entry (PracticeMinimumWrongCount), group (Thresholds)
-#: rc.cpp:1020
+#: rc.cpp:1032
 msgid ""
 "The entry must have been answered incorrectly at least this often to be "
 "included in the practice."
@@ -3456,7 +3466,7 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:260
 #. i18n: ectx: label, entry (PracticeMaximumWrongCount), group (Thresholds)
-#: rc.cpp:1023
+#: rc.cpp:1035
 msgid ""
 "The entry must have been answered incorrectly at most this often to be "
 "included in the practice."
@@ -3466,7 +3476,7 @@ msgstr ""
 
 #. i18n: file: src/settings/parley.kcfg:265
 #. i18n: ectx: label, entry (PracticeMinimumGrade), group (Thresholds)
-#: rc.cpp:1026
+#: rc.cpp:1038
 msgid ""
 "The entry must have at least this grade to be included in the practice "
 "(0..7)."
@@ -3474,14 +3484,14 @@ msgstr "Жаттығуға кіру үшін жазу кем дегенде ос
 
 #. i18n: file: src/settings/parley.kcfg:269
 #. i18n: ectx: label, entry (PracticeMaximumGrade), group (Thresholds)
-#: rc.cpp:1029
+#: rc.cpp:1041
 msgid ""
 "The entry must have at most this grade to be included in the practice (0..7)."
 msgstr "Жаттығуға кіру үшін жазу көп дегенде осы деңгейде болу керек (0..7)."
 
 #. i18n: file: src/settings/parley.kcfg:273
 #. i18n: ectx: label, entry (WordTypesInPracticeEnabled), group (Thresholds)
-#: rc.cpp:1032
+#: rc.cpp:1044
 msgid "Only selected word types will be included in practice."
 msgstr "Таңдалған ғана сөз табтары жаттығуға кіреді."
 
@@ -3489,7 +3499,7 @@ msgstr "Таңдалған ғана сөз табтары жаттығуға к�
 #. i18n: ectx: label, entry (WordTypesInPractice), group (Thresholds)
 #. i18n: file: src/settings/parley.kcfg:278
 #. i18n: ectx: whatsthis, entry (WordTypesInPractice), group (Thresholds)
-#: rc.cpp:1035 rc.cpp:1038
+#: rc.cpp:1047 rc.cpp:1050
 msgid "Selected word types for practices."
 msgstr "Жаттығуға таңдалған сөз табтары."
 
@@ -3497,73 +3507,73 @@ msgstr "Жаттығуға таңдалған сөз табтары."
 #. i18n: ectx: label, entry (SubWordTypesInPractice), group (Thresholds)
 #. i18n: file: src/settings/parley.kcfg:282
 #. i18n: ectx: whatsthis, entry (SubWordTypesInPractice), group (Thresholds)
-#: rc.cpp:1041 rc.cpp:1044
+#: rc.cpp:1053 rc.cpp:1056
 msgid "Selected sub word types for practices."
 msgstr "Жаттығуға таңдалған сөз табының арасындағы түрі."
 
 #. i18n: file: src/settings/parley.kcfg:288
 #. i18n: ectx: label, entry (QuestionLanguage), group (PracticeManager)
-#: rc.cpp:1047
+#: rc.cpp:1059
 msgid "The language that is displayed in a test."
 msgstr "Сынақ өткізетін тілі. "
 
 #. i18n: file: src/settings/parley.kcfg:292
 #. i18n: ectx: label, entry (SolutionLanguage), group (PracticeManager)
-#: rc.cpp:1050
+#: rc.cpp:1062
 msgid "The language in which the user has to answer."
 msgstr "Жауап беретін тіл."
 
 #. i18n: file: src/settings/parley.kcfg:297
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswer), group (PracticeManager)
-#: rc.cpp:1053
+#: rc.cpp:1065
 msgid "Show the solution after an answer was given."
 msgstr "Жауап берілген соң шешімін көрсету."
 
 #. i18n: file: src/settings/parley.kcfg:301
 #. i18n: ectx: label, entry (ShowSolutionAfterAnswerTime), group (PracticeManager)
-#: rc.cpp:1056
+#: rc.cpp:1068
 msgid "The time the solution is shown (seconds). 0 is unlimited."
 msgstr "Шешімі көрсетілетін уақыт аралығы (секунд). 0 - шектелмеген дегені."
 
 #. i18n: file: src/settings/parley.kcfg:316
 #. i18n: ectx: label, entry (PracticeMode), group (PracticeManager)
-#: rc.cpp:1059
+#: rc.cpp:1071
 msgid "The practice mode that is currently selected."
 msgstr "Қазір таңдалған жаттығу түрі."
 
 #. i18n: file: src/settings/parley.kcfg:322
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
-#: rc.cpp:1062
+#: rc.cpp:1074
 msgid "Amount of time different grades should be blocked"
 msgstr "Түрлі деңгейлер бекітілетін уақыт аралығы"
 
 #. i18n: file: src/settings/parley.kcfg:333
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
-#: rc.cpp:1065
+#: rc.cpp:1077
 msgid "Amount of time after which different grades should expire"
 msgstr "Түрлі деңгейлер ескіретін уақыт аралығы"
 
 #. i18n: file: src/settings/parley.kcfg:345
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
-#: rc.cpp:1068
+#: rc.cpp:1080
 msgid "The Providers path for Parley"
 msgstr "Parley-ге үлес қасушыларға бағыттама"
 
 #. i18n: file: src/settings/parley.kcfg:349
 #. i18n: ectx: label, entry (InstallationCommand), group (KNewStuff)
-#: rc.cpp:1071
+#: rc.cpp:1083
 msgid "The command used to start a downloaded vocabulary"
 msgstr "Жүктеп алынған сөздікті іске қосатын командасы"
 
 #. i18n: file: src/settings/parley.kcfg:353
 #. i18n: ectx: label, entry (InstallPath), group (KNewStuff)
-#: rc.cpp:1074
+#: rc.cpp:1086
 msgid "The folder where downloaded vocabularies are saved by default"
 msgstr "Жүктеп алынған сөздіктер әдетте сақталатын қапшығы"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:47
 #. i18n: ectx: property (whatsThis), widget (KFontRequester, kcfg_IPAFont)
-#: rc.cpp:1081
+#: rc.cpp:1093
 msgid ""
 "Specify which font to use for displaying pronunciations using phonetic "
 "symbols."
@@ -3572,13 +3582,13 @@ msgstr ""
 
 #. i18n: file: src/settings/viewoptionsbase.ui:54
 #. i18n: ectx: property (text), widget (QLabel, IPAFontLabel)
-#: rc.cpp:1084
+#: rc.cpp:1096
 msgid "&Pronunciation symbols font:"
 msgstr "&Транскрипция қаріпі:"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:75
 #. i18n: ectx: property (title), widget (QGroupBox, gradegroup)
-#: rc.cpp:1087
+#: rc.cpp:1099
 msgid "Grade Colors"
 msgstr "Деңгей түстері"
 
@@ -3586,7 +3596,7 @@ msgstr "Деңгей түстері"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_UseGradeColors)
 #. i18n: file: src/settings/viewoptionsbase.ui:84
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseGradeColors)
-#: rc.cpp:1090 rc.cpp:1093
+#: rc.cpp:1102 rc.cpp:1105
 msgid ""
 "If it is unchecked, you will just have black on white for the grades; if it "
 "is checked, the colors below will be chosen."
@@ -3596,265 +3606,265 @@ msgstr ""
 
 #. i18n: file: src/settings/viewoptionsbase.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseGradeColors)
-#: rc.cpp:1096
+#: rc.cpp:1108
 msgid "&Use colors"
 msgstr "Түрлі-түсті &болсын"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:119
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor7)
-#: rc.cpp:1102
+#: rc.cpp:1114
 msgid "Color for the grade 7"
 msgstr "7-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:122
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor7)
-#: rc.cpp:1105
+#: rc.cpp:1117
 msgid "Click here to change the color for grade 7."
 msgstr "7-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:125
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor7)
-#: rc.cpp:1108
+#: rc.cpp:1120
 msgid "&7"
 msgstr "&7"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:128
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor7)
-#: rc.cpp:1111
+#: rc.cpp:1123
 msgid "Alt+7"
 msgstr "Alt+7"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:163
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor6)
-#: rc.cpp:1117
+#: rc.cpp:1129
 msgid "Color for the grade 6"
 msgstr "6-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:166
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor6)
-#: rc.cpp:1120
+#: rc.cpp:1132
 msgid "Click here to change the color for grade 6."
 msgstr "6-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:169
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor6)
-#: rc.cpp:1123
+#: rc.cpp:1135
 msgid "&6"
 msgstr "&6"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:172
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor6)
-#: rc.cpp:1126
+#: rc.cpp:1138
 msgid "Alt+6"
 msgstr "Alt+6"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:204
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor5)
-#: rc.cpp:1132
+#: rc.cpp:1144
 msgid "Color for the grade 5"
 msgstr "5-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:207
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor5)
-#: rc.cpp:1135
+#: rc.cpp:1147
 msgid "Click here to change the color for grade 5."
 msgstr "5-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:210
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor5)
-#: rc.cpp:1138
+#: rc.cpp:1150
 msgid "&5"
 msgstr "&5"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:213
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor5)
-#: rc.cpp:1141
+#: rc.cpp:1153
 msgid "Alt+5"
 msgstr "Alt+5"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:245
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor4)
-#: rc.cpp:1147
+#: rc.cpp:1159
 msgid "Color for the grade 4"
 msgstr "4-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:248
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor4)
-#: rc.cpp:1150
+#: rc.cpp:1162
 msgid "Click here to change the color for grade 4."
 msgstr "4-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:251
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor4)
-#: rc.cpp:1153
+#: rc.cpp:1165
 msgid "&4"
 msgstr "&4"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:254
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor4)
-#: rc.cpp:1156
+#: rc.cpp:1168
 msgid "Alt+4"
 msgstr "Alt+4"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:286
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor3)
-#: rc.cpp:1162
+#: rc.cpp:1174
 msgid "Color for the grade 3"
 msgstr "3-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:289
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor3)
-#: rc.cpp:1165
+#: rc.cpp:1177
 msgid "Click here to change the color for grade 3."
 msgstr "3-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:292
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor3)
-#: rc.cpp:1168
+#: rc.cpp:1180
 msgid "&3"
 msgstr "&3"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:295
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor3)
-#: rc.cpp:1171
+#: rc.cpp:1183
 msgid "Alt+3"
 msgstr "Alt+3"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:327
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor2)
-#: rc.cpp:1177
+#: rc.cpp:1189
 msgid "Color for the grade 2"
 msgstr "2-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:330
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor2)
-#: rc.cpp:1180
+#: rc.cpp:1192
 msgid "Click here to change the color for grade 2."
 msgstr "2-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:333
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor2)
-#: rc.cpp:1183
+#: rc.cpp:1195
 msgid "&2"
 msgstr "&2"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:336
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor2)
-#: rc.cpp:1186
+#: rc.cpp:1198
 msgid "Alt+2"
 msgstr "Alt+2"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:368
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor1)
-#: rc.cpp:1192
+#: rc.cpp:1204
 msgid "Color for the grade 1"
 msgstr "1-деңгейінің түсі"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:371
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor1)
-#: rc.cpp:1195
+#: rc.cpp:1207
 msgid "Click here to change the color for grade 1."
 msgstr "1-деңгейінің түсін өзгерту үшін осында түртіңіз."
 
 #. i18n: file: src/settings/viewoptionsbase.ui:374
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor1)
-#: rc.cpp:1198
+#: rc.cpp:1210
 msgid "&1"
 msgstr "&1"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:377
 #. i18n: ectx: property (shortcut), widget (KColorButton, kcfg_GradeColor1)
-#: rc.cpp:1201
+#: rc.cpp:1213
 msgid "Alt+1"
 msgstr "Alt+1"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:390
 #. i18n: ectx: property (text), widget (QLabel, l_lev0)
-#: rc.cpp:1204
+#: rc.cpp:1216
 msgid "Not &practiced:"
 msgstr "&Өтпегені:"
 
 #. i18n: file: src/settings/viewoptionsbase.ui:409
 #. i18n: ectx: property (text), widget (KColorButton, kcfg_GradeColor0)
-#: rc.cpp:1207
+#: rc.cpp:1219
 msgid "&N"
 msgstr "&N"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1210
+#: rc.cpp:1222
 msgid "Languages:"
 msgstr "Тілдер:"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1213
+#: rc.cpp:1225
 msgid "Practice Mode:"
 msgstr "Жаттығу түрі:"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:98
 #. i18n: ectx: property (text), widget (QRadioButton, flashCard)
-#: rc.cpp:1216
+#: rc.cpp:1228
 msgid "Flash Cards"
 msgstr "Тақшалар"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, mixedLetters)
-#: rc.cpp:1219
+#: rc.cpp:1231
 msgid "Mixed Letters"
 msgstr "Шатастырған әріптер"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:122
 #. i18n: ectx: property (text), widget (QRadioButton, written)
-#: rc.cpp:1225
+#: rc.cpp:1237
 msgid "Written"
 msgstr "Жазбаша"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:132
 #. i18n: ectx: property (text), widget (QRadioButton, exampleSentence)
-#: rc.cpp:1228
+#: rc.cpp:1240
 msgid "Example Sentences"
 msgstr "Мысал сөйлемі"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:142
 #. i18n: ectx: property (text), widget (QRadioButton, gender)
-#: rc.cpp:1231
+#: rc.cpp:1243
 msgid "Gender of Nouns"
 msgstr "Зат есімнің тегі"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:152
 #. i18n: ectx: property (text), widget (QRadioButton, comparisonForms)
-#: rc.cpp:1234
+#: rc.cpp:1246
 msgid "Comparison Forms"
 msgstr "Шырайлар"
 
 #. i18n: file: src/statistics/statisticsmainwindow.ui:162
 #. i18n: ectx: property (text), widget (QRadioButton, conjugations)
-#: rc.cpp:1237
+#: rc.cpp:1249
 msgid "Conjugations"
 msgstr "Етістіктің жіктелуі"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:20
 #. i18n: ectx: property (text), widget (QLabel, headingLabel)
-#: rc.cpp:1252
+#: rc.cpp:1264
 msgid "<h1>Parley</h1>"
 msgstr "<h1>Parley</h1>"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:27
 #. i18n: ectx: property (text), widget (KPushButton, newButton)
-#: rc.cpp:1255
+#: rc.cpp:1267
 msgid "Create a New Collection"
 msgstr "Жаңа жиынын құру"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:34
 #. i18n: ectx: property (text), widget (KPushButton, openButton)
-#: rc.cpp:1258
+#: rc.cpp:1270
 msgid "Open an Existing Collection"
 msgstr "Бар жиынын ашу"
 
 #. i18n: file: src/welcomescreen/welcomescreen.ui:41
 #. i18n: ectx: property (text), widget (KPushButton, ghnsButton)
-#: rc.cpp:1261
+#: rc.cpp:1273
 msgid "Download New Collections"
 msgstr "Жаңа жиындарды жүктеп алу"
 
@@ -4026,4 +4036,20 @@ msgstr ""
 msgid "Fetches an image for the selected translation"
 msgstr "Тандалған аударма үшін  кескіндерді алып беру"
 
+#~ msgid "Could not determine word type of verbs"
+#~ msgstr "Етістіктің сөз табы анықталмады"
 
+#~ msgid "\"%1\" is a noun"
+#~ msgstr "\"%1\" - зат есім"
+
+#~ msgid "Could not determine word type of nouns"
+#~ msgstr "Зат есімінің сөз табы анықталмады"
+
+#~ msgid "Conjugation"
+#~ msgstr "Есістік жіклелуі"
+
+#~ msgid "Turn the selected word into a verb."
+#~ msgstr "Таңдалған сөзді етістік қылу."
+
+#~ msgid "Turn the selected word into a noun."
+#~ msgstr "Таңдалған сөзді сан есім қылу."
