@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-26 04:14+0100\n"
+"POT-Creation-Date: 2012-02-27 04:55+0100\n"
 "PO-Revision-Date: 2012-01-06 02:44+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -171,7 +171,7 @@ msgstr ""
 "Өзіңіздің бұл қапшыққа қатынау рұқсатыңызды өшіргіңіз келгені шын ба? Бұдан "
 "кейін Сіз қапшыққа қатынай алмайсыз."
 
-#: aclmanager.cpp:281
+#: aclmanager.cpp:281 filter/filtercontroller.cpp:162
 msgid "Remove"
 msgstr "Өшіру"
 
@@ -592,6 +592,7 @@ msgid "Drop your favorite folders here..."
 msgstr ""
 
 #: folderrequester.cpp:59 folderrequester.cpp:90
+#: filter/filteractionmissingargumentdialog.cpp:46
 msgid "Select Folder"
 msgstr "Қапшықты таңдау"
 
@@ -689,16 +690,17 @@ msgstr "Өту"
 msgid "Do Not Go To"
 msgstr "Керегі жоқ"
 
-#: foldertreewidget.cpp:101 foldertreewidget.cpp:359
+#: foldertreewidget.cpp:101 foldertreewidget.cpp:364
 msgid "You can start typing to filter the list of folders."
 msgstr "Алғашқы әріптері бойынша қапшықтар тізімін қысқарту."
 
-#: foldertreewidget.cpp:108
+#: foldertreewidget.cpp:108 filter/filterimporterexporter.cpp:72
+#: filter/kmfilterdialog.cpp:896
 msgctxt "@info/plain Displayed grayed-out inside the textbox, verb to search"
 msgid "Search"
 msgstr "Іздеу"
 
-#: foldertreewidget.cpp:360
+#: foldertreewidget.cpp:365
 #, kde-format
 msgid "Path: (%1)"
 msgstr "Жолы: (%1)"
@@ -1157,7 +1159,7 @@ msgctxt "Receiver of an email."
 msgid "To"
 msgstr "Кімге"
 
-#: searchpatternedit.cpp:73
+#: searchpatternedit.cpp:73 filter/filteractionaddtoaddressbook.cpp:46
 msgid "CC"
 msgstr "Көшірме кімге"
 
@@ -1301,667 +1303,893 @@ msgstr ""
 msgid "Select Sound File"
 msgstr "Дыбыс файлын таңдаңыз"
 
-#~ msgid "Confirm Delivery"
-#~ msgstr "Жеткізуді құптау"
+#: filter/filteractionaddheader.cpp:35
+msgid "Add Header"
+msgstr "Айдарды қосу"
 
-#~ msgid "Set Transport To"
-#~ msgstr "Тасымалдау әдісі "
+#: filter/filteractionaddheader.cpp:82
+msgid "With value:"
+msgstr "Мәні:"
 
-#~ msgid "Set Reply-To To"
-#~ msgstr "Жауап беру адресі"
+#: filter/filteractionaddtag.cpp:38
+msgid "Add Tag"
+msgstr "Белгіні қосу"
 
-#~ msgid "Set Identity To"
-#~ msgstr "Іс-әлпеті"
+#: filter/filteractionaddtoaddressbook.cpp:43
+msgid "Add to Address Book"
+msgstr "Адрестік кітапшасына қосу"
 
-#~ msgid "Mark As"
-#~ msgstr "Былай деп белгілеу"
+#: filter/filteractionaddtoaddressbook.cpp:44
+msgctxt "Email sender"
+msgid "From"
+msgstr "Кімден"
 
-#~ msgctxt "msg status"
-#~ msgid "Important"
-#~ msgstr "Маңызды"
+#: filter/filteractionaddtoaddressbook.cpp:45
+msgctxt "Email recipient"
+msgid "To"
+msgstr "Кімге"
 
-#~ msgctxt "msg status"
-#~ msgid "Read"
-#~ msgstr "Оқылған"
+#: filter/filteractionaddtoaddressbook.cpp:47
+msgid "BCC"
+msgstr "Жасырып кімге"
 
-#~ msgctxt "msg status"
-#~ msgid "Unread"
-#~ msgstr "Оқылмаған"
+#: filter/filteractionaddtoaddressbook.cpp:50
+msgid "KMail Filter"
+msgstr "KMail сүзгісі"
 
-#~ msgctxt "msg status"
-#~ msgid "Replied"
-#~ msgstr "Жауап берілген"
+#: filter/filteractionaddtoaddressbook.cpp:99
+msgid "with category"
+msgstr "санаты"
 
-#~ msgctxt "msg status"
-#~ msgid "Forwarded"
-#~ msgstr "Басқаға жіберілген"
+#: filter/filteractionaddtoaddressbook.cpp:106
+msgid "in address book"
+msgstr "келесі адр.кітапшада:"
 
-#~ msgctxt "msg status"
-#~ msgid "Watched"
-#~ msgstr "Қаралған"
+#: filter/filteractionaddtoaddressbook.cpp:114
+msgid ""
+"<p>This defines the preferred address book.<br />If it is not accessible, "
+"the filter will fallback to the default address book.</p>"
+msgstr ""
+"<p>Бұл алдымен қолданатын адрестік кітапшаны белгілейді.<br />Ол қол "
+"жеткізбесе, онда әдетті адрестік кітапшаға ауысады.</p>"
 
-#~ msgctxt "msg status"
-#~ msgid "Ignored"
-#~ msgstr "Мән берілмеген"
+#: filter/filteractionbeep.cpp:28
+msgid "Beep"
+msgstr ""
 
-#~ msgctxt "msg status"
-#~ msgid "Spam"
-#~ msgstr "Спам"
+#: filter/filteractioncopy.cpp:28
+msgid "Copy Into Folder"
+msgstr "Көшірмелейтін қапшық"
 
-#~ msgctxt "msg status"
-#~ msgid "Ham"
-#~ msgstr "Құнды"
-
-#~ msgctxt "msg status"
-#~ msgid "Action Item"
-#~ msgstr "Амал күтетін"
-
-#~ msgid "Add Tag"
-#~ msgstr "Белгіні қосу"
-
-#~ msgid "Send Fake MDN"
-#~ msgstr "Жалған хабарлау"
-
-#~ msgctxt "MDN type"
-#~ msgid "Ignore"
-#~ msgstr "Елемеу"
-
-#~ msgctxt "MDN type"
-#~ msgid "Displayed"
-#~ msgstr "Көрсетілген"
-
-#~ msgctxt "MDN type"
-#~ msgid "Deleted"
-#~ msgstr "Өшірілген"
-
-#~ msgctxt "MDN type"
-#~ msgid "Dispatched"
-#~ msgstr "Қайта жіберілген"
-
-#~ msgctxt "MDN type"
-#~ msgid "Processed"
-#~ msgstr "Қарастырылған"
-
-#~ msgctxt "MDN type"
-#~ msgid "Denied"
-#~ msgstr "Жетті"
-
-#~ msgctxt "MDN type"
-#~ msgid "Failed"
-#~ msgstr "Жеткізу қатесі"
-
-#~ msgid "Remove Header"
-#~ msgstr "Айдарды өшіру"
-
-#~ msgid "Add Header"
-#~ msgstr "Айдарды қосу"
-
-#~ msgid "With value:"
-#~ msgstr "Мәні:"
-
-#~ msgid "Rewrite Header"
-#~ msgstr "Айдарды қайта жазу"
-
-#~ msgid "Replace:"
-#~ msgstr "Алмастыру:"
-
-#~ msgid "With:"
-#~ msgstr "Мынамен:"
-
-#~ msgid "Move Into Folder"
-#~ msgstr "Салатын қапшық"
-
-#~ msgid "Copy Into Folder"
-#~ msgstr "Көшірмелейтін қапшық"
-
-#~ msgid "Forward To"
-#~ msgstr "Қайта жіберетін адресі"
-
-#~ msgid "The addressee to whom the message will be forwarded."
-#~ msgstr "Басқаға жіберілгенде қай адреске жіберіледі."
-
-#~ msgid "The filter will forward the message to the addressee entered here."
-#~ msgstr "Сүзгі хатты осында көрсетілгенге қайта жібермек."
-
-#~ msgid "Default Template"
-#~ msgstr "Әдетті үлгі"
-
-#~ msgid "The template used when forwarding"
-#~ msgstr "Басқаға жібергенде қолданатын үлгісі"
-
-#~ msgid "Set the forwarding template that will be used with this filter."
-#~ msgstr "Сүзгі басқаға жібергенде қолданатын үлгісін орнатыңыз."
-
-#~ msgid "Forward to %1 with default template"
-#~ msgstr "%1 дегенді әдетті үлгсімен басқаға жіберу"
-
-#~ msgid "Forward to %1 with template %2"
-#~ msgstr "%1 дегенді %2 үлгісімен басқаға жіберу"
-
-#~ msgid "Redirect To"
-#~ msgstr "Келесіге бағыттау"
-
-#~ msgid "Execute Command"
-#~ msgstr "Команданы орындау"
-
-#~ msgid "Pipe Through"
-#~ msgstr "Жіберетін арна"
-
-#~ msgid "Play Sound"
-#~ msgstr "Дыбысты орындау"
-
-#~ msgid "Add to Address Book"
-#~ msgstr "Адрестік кітапшасына қосу"
-
-#~ msgctxt "Email sender"
-#~ msgid "From"
-#~ msgstr "Кімден"
-
-#~ msgctxt "Email recipient"
-#~ msgid "To"
-#~ msgstr "Кімге"
-
-#~ msgid "BCC"
-#~ msgstr "Жасырып кімге"
-
-#~ msgid "KMail Filter"
-#~ msgstr "KMail сүзгісі"
-
-#~ msgid "with category"
-#~ msgstr "санаты"
-
-#~ msgid "in address book"
-#~ msgstr "келесі адр.кітапшада:"
-
-#~ msgid ""
-#~ "<p>This defines the preferred address book.<br />If it is not accessible, "
-#~ "the filter will fallback to the default address book.</p>"
-#~ msgstr ""
-#~ "<p>Бұл алдымен қолданатын адрестік кітапшаны белгілейді.<br />Ол қол "
-#~ "жеткізбесе, онда әдетті адрестік кітапшаға ауысады.</p>"
-
+#: filter/filteractiondelete.cpp:30
 #, fuzzy
-#~| msgid "Complete Message"
-#~ msgid "Delete Message"
-#~ msgstr "Хат толығымен"
+#| msgid "Complete Message"
+msgid "Delete Message"
+msgstr "Хат толығымен"
 
-#~ msgid "The following folders can be used for this filter:"
-#~ msgstr "Бұл сүзгіні қолдану үшін келесі қапшықтар болады:"
+#: filter/filteractiondelete.cpp:47
+msgid "Be careful, mails will be removed."
+msgstr ""
 
-#~ msgid ""
-#~ "Filter folder is missing. Please select a folder to use with filter \"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
-#~ "таңдаңыз"
+#: filter/filteractionexec.cpp:27
+msgid "Execute Command"
+msgstr "Команданы орындау"
 
-#~ msgid "Select Identity"
-#~ msgstr "Іс-әлпетін таңдау"
+#: filter/filteractionforward.cpp:47
+msgid "Forward To"
+msgstr "Қайта жіберетін адресі"
 
-#~ msgid ""
-#~ "Filter identity is missing. Please select an identity to use with filter "
-#~ "\"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін іс-әлпеті келтірілмеген. \"%1\" дегенмен сүзгілейтін іс-"
-#~ "әлпетін таңдаңыз"
+#: filter/filteractionforward.cpp:95
+msgid "The addressee to whom the message will be forwarded."
+msgstr "Басқаға жіберілгенде қай адреске жіберіледі."
 
-#~ msgid "Select Transport"
-#~ msgstr "Тасымалдау әдісін таңдау"
+#: filter/filteractionforward.cpp:96
+msgid "The filter will forward the message to the addressee entered here."
+msgstr "Сүзгі хатты осында көрсетілгенге қайта жібермек."
 
-#~ msgid ""
-#~ "Filter transport is missing. Please select a transport to use with filter "
-#~ "\"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін тасымалдау әдісі келтірілмеген. \"%1\" дегенмен сүзгілейтін "
-#~ "тасымалдау\n"
-#~ "әдісін таңдаңыз"
+#: filter/filteractionforward.cpp:102 filter/filteractionforward.cpp:200
+msgid "Default Template"
+msgstr "Әдетті үлгі"
 
-#~ msgid "Select Template"
-#~ msgstr "Үлгісін таңдау"
+#: filter/filteractionforward.cpp:114
+msgid "The template used when forwarding"
+msgstr "Басқаға жібергенде қолданатын үлгісі"
 
-#~ msgid ""
-#~ "Filter template is missing. Please select a template to use with filter "
-#~ "\"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін үлгі келтірілмеген. \"%1\" дегенмен сүзгілейтін үлгісін "
-#~ "таңдаңыз"
+#: filter/filteractionforward.cpp:115
+msgid "Set the forwarding template that will be used with this filter."
+msgstr "Сүзгі басқаға жібергенде қолданатын үлгісін орнатыңыз."
 
-#~ msgid "Select Account"
-#~ msgstr "Тіркелгіні таңдау"
+#: filter/filteractionforward.cpp:230
+#, kde-format
+msgid "Forward to %1 with default template"
+msgstr "%1 дегенді әдетті үлгсімен басқаға жіберу"
 
-#~ msgid ""
-#~ "Filter account is missing. Please select account to use with filter \"%1\""
-#~ msgstr ""
-#~ "Сүзгілеу үшін тіркелгі келтірілмеген. \"%1\" деген сүзгіні пайдаланатын "
-#~ "тіркелгіні таңдаңыз"
+#: filter/filteractionforward.cpp:232
+#, kde-format
+msgid "Forward to %1 with template %2"
+msgstr "%1 дегенді %2 үлгісімен басқаға жіберу"
 
-#~ msgid "Select Tag"
-#~ msgstr "Белгіні таңдау"
+#: filter/filteractionmissingargumentdialog.cpp:51
+#, kde-format
+msgid "Folder path was \"%1\"."
+msgstr ""
 
-#~ msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін белгісі келтірілмеген. \"%1\" дегенмен сүзгілейтін белгіні "
-#~ "таңдаңыз"
+#: filter/filteractionmissingargumentdialog.cpp:54
+msgid "The following folders can be used for this filter:"
+msgstr "Бұл сүзгіні қолдану үшін келесі қапшықтар болады:"
 
+#: filter/filteractionmissingargumentdialog.cpp:73
+#, kde-format
+msgid ""
+"Filter folder is missing. Please select a folder to use with filter \"%1\""
+msgstr ""
+"Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
+"таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:176
+msgid "Select Identity"
+msgstr "Іс-әлпетін таңдау"
+
+#: filter/filteractionmissingargumentdialog.cpp:182
+#, kde-format
+msgid ""
+"Filter identity is missing. Please select an identity to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін іс-әлпеті келтірілмеген. \"%1\" дегенмен сүзгілейтін іс-әлпетін "
+"таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:205
+msgid "Select Transport"
+msgstr "Тасымалдау әдісін таңдау"
+
+#: filter/filteractionmissingargumentdialog.cpp:211
+#, kde-format
+msgid ""
+"Filter transport is missing. Please select a transport to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін тасымалдау әдісі келтірілмеген. \"%1\" дегенмен сүзгілейтін "
+"тасымалдау\n"
+"әдісін таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:234
+msgid "Select Template"
+msgstr "Үлгісін таңдау"
+
+#: filter/filteractionmissingargumentdialog.cpp:240
+#, kde-format
+msgid ""
+"Filter template is missing. Please select a template to use with filter "
+"\"%1\""
+msgstr ""
+"Сүзгілейтін үлгі келтірілмеген. \"%1\" дегенмен сүзгілейтін үлгісін таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:268
+msgid "Select Account"
+msgstr "Тіркелгіні таңдау"
+
+#: filter/filteractionmissingargumentdialog.cpp:274
+#, kde-format
+msgid ""
+"Filter account is missing. Please select account to use with filter \"%1\""
+msgstr ""
+"Сүзгілеу үшін тіркелгі келтірілмеген. \"%1\" деген сүзгіні пайдаланатын "
+"тіркелгіні таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:321
+msgid "Select Tag"
+msgstr "Белгіні таңдау"
+
+#: filter/filteractionmissingargumentdialog.cpp:326
+#, kde-format
+msgid "Tag was \"%1\"."
+msgstr ""
+
+#: filter/filteractionmissingargumentdialog.cpp:330
+#, kde-format
+msgid "Filter tag is missing. Please select a tag to use with filter \"%1\""
+msgstr ""
+"Сүзгілейтін белгісі келтірілмеген. \"%1\" дегенмен сүзгілейтін белгіні "
+"таңдаңыз"
+
+#: filter/filteractionmissingargumentdialog.cpp:362
 #, fuzzy
-#~| msgid "Select Account"
-#~ msgid "Select sound"
-#~ msgstr "Тіркелгіні таңдау"
+#| msgid "Select Account"
+msgid "Select sound"
+msgstr "Тіркелгіні таңдау"
 
+#: filter/filteractionmissingargumentdialog.cpp:365
+#, kde-format
+msgid "Sound file was \"%1\"."
+msgstr ""
+
+#: filter/filteractionmissingargumentdialog.cpp:369
+#, fuzzy, kde-format
+#| msgid ""
+#| "Filter folder is missing. Please select a folder to use with filter \"%1\""
+msgid "Sound file is missing. Please select a sound to use with filter \"%1\""
+msgstr ""
+"Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
+"таңдаңыз"
+
+#: filter/filteractionmove.cpp:34
+msgid "Move Into Folder"
+msgstr "Салатын қапшық"
+
+#: filter/filteractionpipethrough.cpp:32
+msgid "Pipe Through"
+msgstr "Жіберетін арна"
+
+#: filter/filteractionplaysound.cpp:35
+msgid "Play Sound"
+msgstr "Дыбысты орындау"
+
+#: filter/filteractionredirect.cpp:39
+msgid "Redirect To"
+msgstr "Келесіге бағыттау"
+
+#: filter/filteractionremoveheader.cpp:34
+msgid "Remove Header"
+msgstr "Айдарды өшіру"
+
+#: filter/filteractionreplyto.cpp:32
+msgid "Set Reply-To To"
+msgstr "Жауап беру адресі"
+
+#: filter/filteractionrewriteheader.cpp:40
+msgid "Rewrite Header"
+msgstr "Айдарды қайта жазу"
+
+#: filter/filteractionrewriteheader.cpp:91
+msgid "Replace:"
+msgstr "Алмастыру:"
+
+#: filter/filteractionrewriteheader.cpp:99
+msgid "With:"
+msgstr "Мынамен:"
+
+#: filter/filteractionsendfakedisposition.cpp:45
+msgid "Send Fake MDN"
+msgstr "Жалған хабарлау"
+
+#: filter/filteractionsendfakedisposition.cpp:50
+msgctxt "MDN type"
+msgid "Ignore"
+msgstr "Елемеу"
+
+#: filter/filteractionsendfakedisposition.cpp:51
+msgctxt "MDN type"
+msgid "Displayed"
+msgstr "Көрсетілген"
+
+#: filter/filteractionsendfakedisposition.cpp:52
+msgctxt "MDN type"
+msgid "Deleted"
+msgstr "Өшірілген"
+
+#: filter/filteractionsendfakedisposition.cpp:53
+msgctxt "MDN type"
+msgid "Dispatched"
+msgstr "Қайта жіберілген"
+
+#: filter/filteractionsendfakedisposition.cpp:54
+msgctxt "MDN type"
+msgid "Processed"
+msgstr "Қарастырылған"
+
+#: filter/filteractionsendfakedisposition.cpp:55
+msgctxt "MDN type"
+msgid "Denied"
+msgstr "Жетті"
+
+#: filter/filteractionsendfakedisposition.cpp:56
+msgctxt "MDN type"
+msgid "Failed"
+msgstr "Жеткізу қатесі"
+
+#: filter/filteractionsendreceipt.cpp:33
+msgid "Confirm Delivery"
+msgstr "Жеткізуді құптау"
+
+#: filter/filteractionsetidentity.cpp:39
+msgid "Set Identity To"
+msgstr "Іс-әлпеті"
+
+#: filter/filteractionsetstatus.cpp:33
+msgid "Mark As"
+msgstr "Былай деп белгілеу"
+
+#: filter/filteractionsettransport.cpp:50
+msgid "Set Transport To"
+msgstr "Тасымалдау әдісі "
+
+#: filter/filteractionstatus.cpp:47
+msgctxt "msg status"
+msgid "Important"
+msgstr "Маңызды"
+
+#: filter/filteractionstatus.cpp:48
+msgctxt "msg status"
+msgid "Read"
+msgstr "Оқылған"
+
+#: filter/filteractionstatus.cpp:49
+msgctxt "msg status"
+msgid "Unread"
+msgstr "Оқылмаған"
+
+#: filter/filteractionstatus.cpp:50
+msgctxt "msg status"
+msgid "Replied"
+msgstr "Жауап берілген"
+
+#: filter/filteractionstatus.cpp:51
+msgctxt "msg status"
+msgid "Forwarded"
+msgstr "Басқаға жіберілген"
+
+#: filter/filteractionstatus.cpp:52
+msgctxt "msg status"
+msgid "Watched"
+msgstr "Қаралған"
+
+#: filter/filteractionstatus.cpp:53
+msgctxt "msg status"
+msgid "Ignored"
+msgstr "Мән берілмеген"
+
+#: filter/filteractionstatus.cpp:54
+msgctxt "msg status"
+msgid "Spam"
+msgstr "Спам"
+
+#: filter/filteractionstatus.cpp:55
+msgctxt "msg status"
+msgid "Ham"
+msgstr "Құнды"
+
+#: filter/filteractionstatus.cpp:56
+msgctxt "msg status"
+msgid "Action Item"
+msgstr "Амал күтетін"
+
+#: filter/filteractionunsetstatus.cpp:29
 #, fuzzy
-#~| msgid ""
-#~| "Filter folder is missing. Please select a folder to use with filter "
-#~| "\"%1\""
-#~ msgid ""
-#~ "Sound file is missing. Please select a sound to use with filter \"%1\""
-#~ msgstr ""
-#~ "Сүзгілейтін қапшық келтірілмеген. \"%1\" дегенмен сүзгілейтін қапшықты "
-#~ "таңдаңыз"
+#| msgid "Message Status"
+msgid "Unset Status"
+msgstr "Хаттың жағдайы"
 
-#~ msgid "Please select an action."
-#~ msgstr "Әрекетті таңдаңыз."
+#: filter/filteractionwidget.cpp:80
+msgid "Please select an action."
+msgstr "Әрекетті таңдаңыз."
 
-#~ msgid "Add Filter"
-#~ msgstr "Сүзгіні қосу"
+#: filter/filtercontroller.cpp:78
+msgid "Add Filter"
+msgstr "Сүзгіні қосу"
 
-#~ msgid "Edit Filter"
-#~ msgstr "Сүзгіні өзгерту"
+#: filter/filtercontroller.cpp:97
+msgid "Edit Filter"
+msgstr "Сүзгіні өзгерту"
 
-#~ msgid "Do you really want to remove filter <b>%1</b>?"
-#~ msgstr "<b>%1\"</b> деген сүзгіні шын өшірмексіз бе?"
+#: filter/filtercontroller.cpp:115
+#, kde-format
+msgid "Do you really want to remove filter <b>%1</b>?"
+msgstr "<b>%1\"</b> деген сүзгіні шын өшірмексіз бе?"
 
-#~ msgid "Remove Filter"
-#~ msgstr "Сүзгіні өшіру"
+#: filter/filtercontroller.cpp:117 filter/kmfilterdialog.cpp:1253
+msgid "Remove Filter"
+msgstr "Сүзгіні өшіру"
 
-#~ msgid "Add"
-#~ msgstr "Қосу"
+#: filter/filtercontroller.cpp:160
+msgid "Add"
+msgstr "Қосу"
 
-#~ msgid "Edit"
-#~ msgstr "Өзгерту"
+#: filter/filtercontroller.cpp:161
+msgid "Edit"
+msgstr "Өзгерту"
 
-#~ msgid "Move Up"
-#~ msgstr "Жоғарлату"
+#: filter/filtercontroller.cpp:163
+msgid "Move Up"
+msgstr "Жоғарлату"
 
-#~ msgid "Move Down"
-#~ msgstr "Төмендету"
+#: filter/filtercontroller.cpp:164
+msgid "Move Down"
+msgstr "Төмендету"
 
-#~ msgid "Select Filters"
-#~ msgstr "Сүзгіні таңдау"
+#: filter/filterimporterexporter.cpp:61
+msgid "Select Filters"
+msgstr "Сүзгіні таңдау"
 
-#~ msgid "Select All"
-#~ msgstr "Бүкілін таңдау"
+#: filter/filterimporterexporter.cpp:82
+msgid "Select All"
+msgstr "Бүкілін таңдау"
 
-#~ msgid "Unselect All"
-#~ msgstr "Барлығынан айну"
+#: filter/filterimporterexporter.cpp:84
+msgid "Unselect All"
+msgstr "Барлығынан айну"
 
-#~ msgid ""
-#~ "The following filters have not been saved because they were invalid (e.g. "
-#~ "containing no actions or no search rules)."
-#~ msgstr ""
-#~ "Келесі сүзгілер жарамсыз болғандықтан (мысалы, әрекеті немесе іздеу "
-#~ "ережесі жоқтығынан) сақталмады."
+#: filter/filterimporterexporter.cpp:241 filter/kmfilterdialog.cpp:1169
+msgid ""
+"The following filters have not been saved because they were invalid (e.g. "
+"containing no actions or no search rules)."
+msgstr ""
+"Келесі сүзгілер жарамсыз болғандықтан (мысалы, әрекеті немесе іздеу ережесі "
+"жоқтығынан) сақталмады."
 
+#: filter/filterimporterexporter.cpp:269
 #, fuzzy
-#~| msgid "Import Filters"
-#~ msgid "Import KMail Filters"
-#~ msgstr "Сүзгілерді импорттау"
+#| msgid "Import Filters"
+msgid "Import KMail Filters"
+msgstr "Сүзгілерді импорттау"
 
+#: filter/filterimporterexporter.cpp:273
 #, fuzzy
-#~| msgid "Import Filters"
-#~ msgid "Import Thunderbird Filters"
-#~ msgstr "Сүзгілерді импорттау"
+#| msgid "Import Filters"
+msgid "Import Thunderbird Filters"
+msgstr "Сүзгілерді импорттау"
 
+#: filter/filterimporterexporter.cpp:277
 #, fuzzy
-#~| msgid "Import Filters"
-#~ msgid "Import Evolution Filters"
-#~ msgstr "Сүзгілерді импорттау"
+#| msgid "Import Filters"
+msgid "Import Evolution Filters"
+msgstr "Сүзгілерді импорттау"
 
+#: filter/filterimporterexporter.cpp:281
 #, fuzzy
-#~| msgid "Import Filters"
-#~ msgid "Import Sylpheed Filters"
-#~ msgstr "Сүзгілерді импорттау"
+#| msgid "Import Filters"
+msgid "Import Sylpheed Filters"
+msgstr "Сүзгілерді импорттау"
 
-#~ msgid ""
-#~ "The selected file is not readable. Your file access permissions might be "
-#~ "insufficient."
-#~ msgstr ""
-#~ "Таңдалған деген файл оқылмады. Құқығыңыз жеткілікті емес болуы мүмкін."
-
-#~ msgid "Export Filters"
-#~ msgstr "Сүзгілерді экспорттау"
-
-#~ msgid "Account Name"
-#~ msgstr "Тіркелгінің атауы"
-
-#~ msgid "Type"
-#~ msgstr "Түрі"
-
-#~ msgid ""
-#~ "<qt><p>This is the list of defined filters. They are processed top-to-"
-#~ "bottom.</p><p>Click on any filter to edit it using the controls in the "
-#~ "right-hand half of the dialog.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Бұл дайын сүзгілер тізімі. Олар жоғарыдан бастап төменге қарай "
-#~ "іске қосылады.</p><p>Өзгерту үшін, керек сүзгіні түртіп, оң жағындағы "
-#~ "батырмаларды қолданыңыз.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to create a new filter.</p><p>The filter will be "
-#~ "inserted just before the currently-selected one, but you can always "
-#~ "change that later on.</p><p>If you have clicked this button accidentally, "
-#~ "you can undo this by clicking on the <em>Delete</em> button.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Жаңа сүзгіні құру үшін осы батырманы басыңыз.</p><p> Ол таңдалған "
-#~ "сүзгінің алдына енгізіледі. Оның кезектегі орнын әрқашанда өзгерте аласыз."
-#~ "</p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> "
-#~ "батырмасын басып, сүзгіні құрудан бас тартуға болады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
-#~ "button accidentally, you can undo this by clicking on the <em>Delete</em> "
-#~ "button.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Сүзгінің көшірмесін жасау үшін осы батырманы басыңыз.</p><p>Егер "
-#~ "бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын басып "
-#~ "сүзгінің көшірмесін құрудан бас тартуға болады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to <em>delete</em> the currently-selected filter "
-#~ "from the list above.</p><p>There is no way to get the filter back once it "
-#~ "is deleted, but you can always leave the dialog by clicking <em>Cancel</"
-#~ "em> to discard the changes made.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Осы батырманы бассаңыз таңдалған сүзгі тізімнен <em>өшіріледі</em>."
-#~ "</p><p>Бұдан кейін өшірілген сүзгіні қайтаруға болмайды, бірақ Сіз "
-#~ "әрқашанда <em>Қайту</em> батырмасын басып, диалогтан шығып, бүкіл "
-#~ "өзгертулерден бас тарта аласыз.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to move the currently-selected filter <em>up</"
-#~ "em> one in the list above.</p><p>This is useful since the order of the "
-#~ "filters in the list determines the order in which they are tried on "
-#~ "messages: The topmost filter gets tried first.</p><p>If you have clicked "
-#~ "this button accidentally, you can undo this by clicking on the <em>Down</"
-#~ "em> button.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Таңдалған сүзгіні тізімі бойынша <em>жоғарлату</em> үшін осы "
-#~ "батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға "
-#~ "қолдану кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</"
-#~ "p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Төмендету</em> "
-#~ "батырмасын басып сүзгіні қайтаруға болады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to move the currently-selected filter <em>down</"
-#~ "em> one in the list above.</p><p>This is useful since the order of the "
-#~ "filters in the list determines the order in which they are tried on "
-#~ "messages: The topmost filter gets tried first.</p><p>If you have clicked "
-#~ "this button accidentally, you can undo this by clicking on the <em>Up</"
-#~ "em> button.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Таңдалған сүзгіні тізімі бойынша <em>төмендету</em> үшін осы "
-#~ "батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға "
-#~ "қолдану кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</"
-#~ "p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Жоғарлату</em> "
-#~ "батырмасын басып сүзгіні қайтаруға болады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to move the currently-selected filter to top of "
-#~ "list.</p><p>This is useful since the order of the filters in the list "
-#~ "determines the order in which they are tried on messages: The topmost "
-#~ "filter gets tried first.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Таңдалған сүзгіні тізімінің <em>ең жоғарына</em> шығару үшін осы "
-#~ "батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға "
-#~ "қолдану кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to move the currently-selected filter to bottom "
-#~ "of list.</p><p>This is useful since the order of the filters in the list "
-#~ "determines the order in which they are tried on messages: The topmost "
-#~ "filter gets tried first.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Таңдалған сүзгіні тізімінің <em>ең төменіне</em> шығару үшін осы "
-#~ "батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға "
-#~ "қолдану кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
-
-#~ msgid ""
-#~ "<qt><p>Click this button to rename the currently-selected filter.</"
-#~ "p><p>Filters are named automatically, as long as they start with \"&lt;\"."
-#~ "</p><p>If you have renamed a filter accidentally and want automatic "
-#~ "naming back, click this button and select <em>Clear</em> followed by "
-#~ "<em>OK</em> in the appearing dialog.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Таңдалған сүзгіні қайта атау үшін осы батырманы басыңыз.</"
-#~ "p><p>Сүзгінің атауы \"&lt;\" дегеннен басталатын болса ол атау автоматты "
-#~ "түрде берілген.</p><p>Егер бұны байқамай басып қалып, автоматты түрде "
-#~ "атауды қайтарғыңыз келсе осы батырманы қайта басып, <em>Тазалау</em> "
-#~ "дегенді, содан кейін көрінген диалогта <em>OK</em> дегенді басыңыз.</p></"
-#~ "qt>"
-
-#~ msgid ""
-#~ "<qt><p>Check this button to force the confirmation dialog to be displayed."
-#~ "</p><p>This is useful if you have defined a ruleset that tags messages to "
-#~ "be downloaded later. Without the possibility to force the dialog popup, "
-#~ "these messages could never be downloaded if no other large messages were "
-#~ "waiting on the server, or if you wanted to change the ruleset to tag the "
-#~ "messages differently.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Құптау диалогын шақыру.</p><p>Егер сіз кейінге қалдырылған "
-#~ "хаттарды жүктеу үшін ережелер жиынын таңдасаңыз бұл өте пайдалы. Егер осы "
-#~ "диалог көрсетілмесе, осы хаттар серверде қала берер еді, егер жаңа хат "
-#~ "келмесе немесе хатты басқаша белгілейтін жаңа ереже жиынын көрсеткіңіз "
-#~ "келсе.</p></qt>"
-
-#~ msgid "Filter Rules"
-#~ msgstr "Сүзгі ережелері"
-
-#~ msgid "Import..."
-#~ msgstr "Импорт..."
-
-#~ msgid "Export..."
-#~ msgstr "Экспорт..."
-
+#: filter/filterimporterexporter.cpp:285
 #, fuzzy
-#~| msgid "KMail Filter"
-#~ msgid "KMail filters"
-#~ msgstr "KMail сүзгісі"
+#| msgid "Import Filters"
+msgid "Import Procmail Filters"
+msgstr "Сүзгілерді импорттау"
 
+#: filter/filterimporterexporter.cpp:300
+msgid ""
+"The selected file is not readable. Your file access permissions might be "
+"insufficient."
+msgstr "Таңдалған деген файл оқылмады. Құқығыңыз жеткілікті емес болуы мүмкін."
+
+#: filter/filterimporterexporter.cpp:371
+msgid "Export Filters"
+msgstr "Сүзгілерді экспорттау"
+
+#: filter/kmfilterdialog.cpp:75
+msgid "Account Name"
+msgstr "Тіркелгінің атауы"
+
+#: filter/kmfilterdialog.cpp:75
+msgid "Type"
+msgstr "Түрі"
+
+#: filter/kmfilterdialog.cpp:207
+msgid ""
+"<qt><p>This is the list of defined filters. They are processed top-to-bottom."
+"</p><p>Click on any filter to edit it using the controls in the right-hand "
+"half of the dialog.</p></qt>"
+msgstr ""
+"<qt><p>Бұл дайын сүзгілер тізімі. Олар жоғарыдан бастап төменге қарай іске "
+"қосылады.</p><p>Өзгерту үшін, керек сүзгіні түртіп, оң жағындағы "
+"батырмаларды қолданыңыз.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:214
+msgid ""
+"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
+"inserted just before the currently-selected one, but you can always change "
+"that later on.</p><p>If you have clicked this button accidentally, you can "
+"undo this by clicking on the <em>Delete</em> button.</p></qt>"
+msgstr ""
+"<qt><p>Жаңа сүзгіні құру үшін осы батырманы басыңыз.</p><p> Ол таңдалған "
+"сүзгінің алдына енгізіледі. Оның кезектегі орнын әрқашанда өзгерте аласыз.</"
+"p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын "
+"басып, сүзгіні құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:222
+msgid ""
+"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
+"button accidentally, you can undo this by clicking on the <em>Delete</em> "
+"button.</p></qt>"
+msgstr ""
+"<qt><p>Сүзгінің көшірмесін жасау үшін осы батырманы басыңыз.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын басып сүзгінің "
+"көшірмесін құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:227
+msgid ""
+"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
+"from the list above.</p><p>There is no way to get the filter back once it is "
+"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
+"discard the changes made.</p></qt>"
+msgstr ""
+"<qt><p>Осы батырманы бассаңыз таңдалған сүзгі тізімнен <em>өшіріледі</em>.</"
+"p><p>Бұдан кейін өшірілген сүзгіні қайтаруға болмайды, бірақ Сіз әрқашанда "
+"<em>Қайту</em> батырмасын басып, диалогтан шығып, бүкіл өзгертулерден бас "
+"тарта аласыз.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:235
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>up</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Down</em> button.</"
+"p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімі бойынша <em>жоғарлату</em> үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Төмендету</em> батырмасын басып "
+"сүзгіні қайтаруға болады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:244
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter <em>down</em> "
+"one in the list above.</p><p>This is useful since the order of the filters "
+"in the list determines the order in which they are tried on messages: The "
+"topmost filter gets tried first.</p><p>If you have clicked this button "
+"accidentally, you can undo this by clicking on the <em>Up</em> button.</p></"
+"qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімі бойынша <em>төмендету</em> үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Жоғарлату</em> батырмасын басып "
+"сүзгіні қайтаруға болады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:253
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to top of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімінің <em>ең жоғарына</em> шығару үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:260
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to bottom of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімінің <em>ең төменіне</em> шығару үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:267
+msgid ""
+"<qt><p>Click this button to rename the currently-selected filter.</"
+"p><p>Filters are named automatically, as long as they start with \"&lt;\".</"
+"p><p>If you have renamed a filter accidentally and want automatic naming "
+"back, click this button and select <em>Clear</em> followed by <em>OK</em> in "
+"the appearing dialog.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні қайта атау үшін осы батырманы басыңыз.</"
+"p><p>Сүзгінің атауы \"&lt;\" дегеннен басталатын болса ол атау автоматты "
+"түрде берілген.</p><p>Егер бұны байқамай басып қалып, автоматты түрде атауды "
+"қайтарғыңыз келсе осы батырманы қайта басып, <em>Тазалау</em> дегенді, содан "
+"кейін көрінген диалогта <em>OK</em> дегенді басыңыз.</p></qt>"
+
+#: filter/kmfilterdialog.cpp:275
+msgid ""
+"<qt><p>Check this button to force the confirmation dialog to be displayed.</"
+"p><p>This is useful if you have defined a ruleset that tags messages to be "
+"downloaded later. Without the possibility to force the dialog popup, these "
+"messages could never be downloaded if no other large messages were waiting "
+"on the server, or if you wanted to change the ruleset to tag the messages "
+"differently.</p></qt>"
+msgstr ""
+"<qt><p>Құптау диалогын шақыру.</p><p>Егер сіз кейінге қалдырылған хаттарды "
+"жүктеу үшін ережелер жиынын таңдасаңыз бұл өте пайдалы. Егер осы диалог "
+"көрсетілмесе, осы хаттар серверде қала берер еді, егер жаңа хат келмесе "
+"немесе хатты басқаша белгілейтін жаңа ереже жиынын көрсеткіңіз келсе.</p></"
+"qt>"
+
+#: filter/kmfilterdialog.cpp:294
+msgid "Filter Rules"
+msgstr "Сүзгі ережелері"
+
+#: filter/kmfilterdialog.cpp:304
+msgid "Import..."
+msgstr "Импорт..."
+
+#: filter/kmfilterdialog.cpp:305
+msgid "Export..."
+msgstr "Экспорт..."
+
+#: filter/kmfilterdialog.cpp:310
 #, fuzzy
-#~| msgid "Export Filters"
-#~ msgid "Evolution filters"
-#~ msgstr "Сүзгілерді экспорттау"
+#| msgid "KMail Filter"
+msgid "KMail filters"
+msgstr "KMail сүзгісі"
 
+#: filter/kmfilterdialog.cpp:314
 #, fuzzy
-#~| msgid "Select Filters"
-#~ msgid "Sylpheed filters"
-#~ msgstr "Сүзгіні таңдау"
+#| msgid "Import Filters"
+msgid "Thunderbird filters"
+msgstr "Сүзгілерді импорттау"
 
-#~ msgid "Available Filters"
-#~ msgstr "Бар сүзгілер"
-
-#~ msgctxt "General mail filter settings."
-#~ msgid "General"
-#~ msgstr "Жалпы"
-
-#~ msgctxt "Advanced mail filter settings."
-#~ msgid "Advanced"
-#~ msgstr "Жетелеу"
-
-#~ msgid "Filter Criteria"
-#~ msgstr "Сүзгі шарты"
-
-#~ msgid "Filter Actions"
-#~ msgstr "Сүзгі әрекеттері"
-
-#~ msgid "Advanced Options"
-#~ msgstr "Жетелеу параметрлері"
-
-#~ msgid "Apply this filter to incoming messages:"
-#~ msgstr "Келген хаттарға осы сүзгі қолданылсын:"
-
-#~ msgid "from all accounts"
-#~ msgstr "барлық тіркелгілерден"
-
-#~ msgid "from all but online IMAP accounts"
-#~ msgstr "IMAP-тан басқа барлық тіркелгілерден"
-
-#~ msgid "from checked accounts only"
-#~ msgstr "тек белгіленген тіркелгілерден"
-
-#~ msgid "Apply this filter &before sending messages"
-#~ msgstr "Осы сүзгі жіберу &алдында қолданылсын"
-
-#~ msgid ""
-#~ "<p>The filter will be triggered <b>before</b> the message is sent and it "
-#~ "will affect both the local copy and the sent copy of the message.</"
-#~ "p><p>This is required if the recipient's copy also needs to be modified.</"
-#~ "p>"
-#~ msgstr ""
-#~ "<p>Сүзгі хат жіберер <b>алдында</b> қолданады да, ол жергілікті данасына "
-#~ "мен жіберілгеннің көшірмесіне тиеді.</p><p>Бұл қабылдаушының данасын да "
-#~ "өзгерту қажет болғанда керек амал.</p>"
-
-#~ msgid "Apply this filter to &sent messages"
-#~ msgstr "Осы сүзгі &жіберілген хаттарға қолданылсын"
-
-#~ msgid ""
-#~ "<p>The filter will be triggered <b>after</b> the message is sent and it "
-#~ "will only affect the local copy of the message.</p><p>If the recipient's "
-#~ "copy also needs to be modified, please use \"Apply this filter <b>before</"
-#~ "b> sending messages\".</p>"
-#~ msgstr ""
-#~ "<p>Сүзгі хат жіберуден <b>кейін</b> қолданады да, ол тек жергілікті "
-#~ "данасына ғана тиеді.</p><p>Егер қабылдаушының данасын да өзгерту қажет "
-#~ "болса, онда \"Осы сүзгі жіберу алдында қолданылсын\" дегенді таңдаңыз.</p>"
-
-#~ msgid "Apply this filter on manual &filtering"
-#~ msgstr "Қолмен &сүзгілегенде қолданылсын"
-
-#~ msgid "If this filter &matches, stop processing here"
-#~ msgstr "Сүзгі &сәйкес келгенде өңдеу тоқталсын"
-
-#~ msgid "Add this filter to the Apply Filter menu"
-#~ msgstr "Бұл сүзгі 'Сүзгіні қолдану' мәзіріне қосылсын"
-
-#~ msgid "Shortcut:"
-#~ msgstr "Тіркесімі:"
-
-#~ msgid "Additionally add this filter to the toolbar"
-#~ msgstr "Бұл сүзгі құралдар панеліне қосылсын"
-
-#~ msgid "Icon for this filter:"
-#~ msgstr "Сүзгінің таңбашасы:"
-
+#: filter/kmfilterdialog.cpp:318
 #, fuzzy
-#~| msgid "&Send Now"
-#~ msgid "Run Now"
-#~ msgstr "&Қазір жіберу"
+#| msgid "Export Filters"
+msgid "Evolution filters"
+msgstr "Сүзгілерді экспорттау"
 
+#: filter/kmfilterdialog.cpp:322
 #, fuzzy
-#~| msgid "No Folder Selected"
-#~ msgid "No folder selected."
-#~ msgstr "Қапшық таңдалмаған"
+#| msgid "Select Filters"
+msgid "Sylpheed filters"
+msgstr "Сүзгіні таңдау"
 
+#: filter/kmfilterdialog.cpp:326
 #, fuzzy
-#~| msgid "No Folder Selected"
-#~ msgid "Filters changed."
-#~ msgstr "Қапшық таңдалмаған"
+#| msgid "KMail Filter"
+msgid "Procmail filters"
+msgstr "KMail сүзгісі"
 
+#: filter/kmfilterdialog.cpp:350
+msgid "Available Filters"
+msgstr "Бар сүзгілер"
+
+#: filter/kmfilterdialog.cpp:358
+msgctxt "General mail filter settings."
+msgid "General"
+msgstr "Жалпы"
+
+#: filter/kmfilterdialog.cpp:365
+msgctxt "Advanced mail filter settings."
+msgid "Advanced"
+msgstr "Жетелеу"
+
+#: filter/kmfilterdialog.cpp:377
+msgid "Filter Criteria"
+msgstr "Сүзгі шарты"
+
+#: filter/kmfilterdialog.cpp:387
+msgid "Filter Actions"
+msgstr "Сүзгі әрекеттері"
+
+#: filter/kmfilterdialog.cpp:394
+msgid "Advanced Options"
+msgstr "Жетелеу параметрлері"
+
+#: filter/kmfilterdialog.cpp:403
+msgid "Apply this filter to incoming messages:"
+msgstr "Келген хаттарға осы сүзгі қолданылсын:"
+
+#: filter/kmfilterdialog.cpp:409
+msgid "from all accounts"
+msgstr "барлық тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:414
+msgid "from all but online IMAP accounts"
+msgstr "IMAP-тан басқа барлық тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:419
+msgid "from checked accounts only"
+msgstr "тек белгіленген тіркелгілерден"
+
+#: filter/kmfilterdialog.cpp:428
+msgid "Apply this filter &before sending messages"
+msgstr "Осы сүзгі жіберу &алдында қолданылсын"
+
+#: filter/kmfilterdialog.cpp:430
+msgid ""
+"<p>The filter will be triggered <b>before</b> the message is sent and it "
+"will affect both the local copy and the sent copy of the message.</p><p>This "
+"is required if the recipient's copy also needs to be modified.</p>"
+msgstr ""
+"<p>Сүзгі хат жіберер <b>алдында</b> қолданады да, ол жергілікті данасына мен "
+"жіберілгеннің көшірмесіне тиеді.</p><p>Бұл қабылдаушының данасын да өзгерту "
+"қажет болғанда керек амал.</p>"
+
+#: filter/kmfilterdialog.cpp:436
+msgid "Apply this filter to &sent messages"
+msgstr "Осы сүзгі &жіберілген хаттарға қолданылсын"
+
+#: filter/kmfilterdialog.cpp:438
+msgid ""
+"<p>The filter will be triggered <b>after</b> the message is sent and it will "
+"only affect the local copy of the message.</p><p>If the recipient's copy "
+"also needs to be modified, please use \"Apply this filter <b>before</b> "
+"sending messages\".</p>"
+msgstr ""
+"<p>Сүзгі хат жіберуден <b>кейін</b> қолданады да, ол тек жергілікті данасына "
+"ғана тиеді.</p><p>Егер қабылдаушының данасын да өзгерту қажет болса, онда "
+"\"Осы сүзгі жіберу алдында қолданылсын\" дегенді таңдаңыз.</p>"
+
+#: filter/kmfilterdialog.cpp:445
+msgid "Apply this filter on manual &filtering"
+msgstr "Қолмен &сүзгілегенде қолданылсын"
+
+#: filter/kmfilterdialog.cpp:449
+msgid "If this filter &matches, stop processing here"
+msgstr "Сүзгі &сәйкес келгенде өңдеу тоқталсын"
+
+#: filter/kmfilterdialog.cpp:453
+msgid "Add this filter to the Apply Filter menu"
+msgstr "Бұл сүзгі 'Сүзгіні қолдану' мәзіріне қосылсын"
+
+#: filter/kmfilterdialog.cpp:456
+msgid "Shortcut:"
+msgstr "Тіркесімі:"
+
+#: filter/kmfilterdialog.cpp:468
+msgid "Additionally add this filter to the toolbar"
+msgstr "Бұл сүзгі құралдар панеліне қосылсын"
+
+#: filter/kmfilterdialog.cpp:473
+msgid "Icon for this filter:"
+msgstr "Сүзгінің таңбашасы:"
+
+#: filter/kmfilterdialog.cpp:490
+msgid "Run selected filter(s) on: "
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:497
 #, fuzzy
-#~| msgid "No Folder Selected"
-#~ msgid "No filters selected."
-#~ msgstr "Қапшық таңдалмаған"
+#| msgid "&Send Now"
+msgid "Run Now"
+msgstr "&Қазір жіберу"
 
-#~ msgctxt "Move selected filter up."
-#~ msgid "Up"
-#~ msgstr "Жоғары"
+#: filter/kmfilterdialog.cpp:629
+msgctxt "@info"
+msgid "Unable to apply this filter since there are no folders selected."
+msgstr ""
 
-#~ msgctxt "Move selected filter down."
-#~ msgid "Down"
-#~ msgstr "Төмен"
-
-#~ msgctxt "Move selected filter to the top."
-#~ msgid "Top"
-#~ msgstr "Жоғарға"
-
-#~ msgctxt "Move selected filter to the bottom."
-#~ msgid "Bottom"
-#~ msgstr "Төменге"
-
-#~ msgid "Rename..."
-#~ msgstr "Атын өзгерту..."
-
-#~ msgctxt "@action:button in filter list manipulator"
-#~ msgid "New"
-#~ msgstr "Жаңа"
-
-#~ msgid "Copy"
-#~ msgstr "Көшіріп алу"
-
-#~ msgid "Delete"
-#~ msgstr "Өшіру"
-
-#~ msgid "unnamed"
-#~ msgstr "атаусыз"
-
-#~ msgid ""
-#~ "The following filters are invalid (e.g. containing no actions or no "
-#~ "search rules). Discard or edit invalid filters?"
-#~ msgstr ""
-#~ "Келесі сүзгілер жарамсыз (мысалы, әрекеті немесе іздеу ережесі "
-#~ "жоқтығынан). Оларды ысырып тастайсыз ба, әлде түзейсіз бе?"
-
-#~ msgid "Discard"
-#~ msgstr "Лақтырып тасталды"
-
+#: filter/kmfilterdialog.cpp:630
 #, fuzzy
-#~| msgid "Do you want to remove the filter \"%1\" ?"
-#~ msgid "Do you want to remove the filter \"%1\"?"
-#~ msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+#| msgid "No Folder Selected"
+msgid "No folder selected."
+msgstr "Қапшық таңдалмаған"
 
+#: filter/kmfilterdialog.cpp:638
+msgctxt "@info"
+msgid ""
+"Some filters were changed and not saved yet. You must save your filters "
+"before they can be applied."
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:640
 #, fuzzy
-#~| msgid "Do you want to remove the filter \"%1\" ?"
-#~ msgid "Do you want to remove selected filters?"
-#~ msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+#| msgid "No Folder Selected"
+msgid "Filters changed."
+msgstr "Қапшық таңдалмаған"
 
+#: filter/kmfilterdialog.cpp:649
+msgctxt "@info"
+msgid "Unable to apply a filter since there are no filters currently selected."
+msgstr ""
+
+#: filter/kmfilterdialog.cpp:650
 #, fuzzy
-#~| msgid "Remove Filter"
-#~ msgid "Remove Filters"
-#~ msgstr "Сүзгіні өшіру"
+#| msgid "No Folder Selected"
+msgid "No filters selected."
+msgstr "Қапшық таңдалмаған"
 
-#~ msgid "Rename Filter"
-#~ msgstr "Сүзгіні қайта атау"
+#: filter/kmfilterdialog.cpp:926
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Жоғары"
 
-#~ msgid ""
-#~ "Rename filter \"%1\" to:\n"
-#~ "(leave the field empty for automatic naming)"
-#~ msgstr ""
-#~ "\"%1\" сүзгіcін қайта атау:\n"
-#~ "(автоматты түрде атау үшін өрісті бос қалдырыңыз)"
+#: filter/kmfilterdialog.cpp:927
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Төмен"
 
-#~ msgid "No filter was imported."
-#~ msgstr "Ешбір сүзгі импортталмады"
+#: filter/kmfilterdialog.cpp:928
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Жоғарға"
 
-#~ msgid "Filters which were imported:"
-#~ msgstr "Импортталған сүзгілер:"
+#: filter/kmfilterdialog.cpp:929
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Төменге"
 
-#~ msgid "<b>Applying filter action:</b> %1"
-#~ msgstr "<b>Сүзгі әрекетін қолдану:</b> %1"
+#: filter/kmfilterdialog.cpp:952
+msgid "Rename..."
+msgstr "Атын өзгерту..."
 
-#~ msgid "A critical error occurred. Processing stops here."
-#~ msgstr "Дағдарысты қате пайда болды. Өңдеу тоқтатылды."
+#: filter/kmfilterdialog.cpp:953
+msgctxt "@action:button in filter list manipulator"
+msgid "New"
+msgstr "Жаңа"
 
-#~ msgid "A problem was found while applying this action."
-#~ msgstr "Әрекетті орындау кезінде қате пайда болды."
+#: filter/kmfilterdialog.cpp:954
+msgid "Copy"
+msgstr "Көшіріп алу"
 
-#~ msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
-#~ msgstr "<qt><b>%1</b> сүзгі ережесінде әрекеттер тым көп.</qt>"
+#: filter/kmfilterdialog.cpp:955
+msgid "Delete"
+msgstr "Өшіру"
 
-#~ msgid ""
-#~ "<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
-#~ ">Ignoring it.</qt>"
-#~ msgstr ""
-#~ "<qt><b>%2</b> сүзгі ережесінде<br /> <b>%1</b> әрекеті беймәлім.<br /> "
-#~ "Әрекет еленбей қалдырылды.</qt>"
+#: filter/kmfilterdialog.cpp:1086
+msgid "unnamed"
+msgstr "атаусыз"
+
+#: filter/kmfilterdialog.cpp:1155
+msgid ""
+"The following filters are invalid (e.g. containing no actions or no search "
+"rules). Discard or edit invalid filters?"
+msgstr ""
+"Келесі сүзгілер жарамсыз (мысалы, әрекеті немесе іздеу ережесі жоқтығынан). "
+"Оларды ысырып тастайсыз ба, әлде түзейсіз бе?"
+
+#: filter/kmfilterdialog.cpp:1159
+msgid "Discard"
+msgstr "Лақтырып тасталды"
+
+#: filter/kmfilterdialog.cpp:1252
+#, fuzzy, kde-format
+#| msgid "Do you want to remove the filter \"%1\" ?"
+msgid "Do you want to remove the filter \"%1\"?"
+msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+
+#: filter/kmfilterdialog.cpp:1259
+#, fuzzy
+#| msgid "Do you want to remove the filter \"%1\" ?"
+msgid "Do you want to remove selected filters?"
+msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
+
+#: filter/kmfilterdialog.cpp:1260
+#, fuzzy
+#| msgid "Remove Filter"
+msgid "Remove Filters"
+msgstr "Сүзгіні өшіру"
+
+#: filter/kmfilterdialog.cpp:1477
+msgid "Rename Filter"
+msgstr "Сүзгіні қайта атау"
+
+#: filter/kmfilterdialog.cpp:1478
+#, kde-format
+msgid ""
+"Rename filter \"%1\" to:\n"
+"(leave the field empty for automatic naming)"
+msgstr ""
+"\"%1\" сүзгіcін қайта атау:\n"
+"(автоматты түрде атау үшін өрісті бос қалдырыңыз)"
+
+#: filter/kmfilterdialog.cpp:1640
+msgid "No filter was imported."
+msgstr "Ешбір сүзгі импортталмады"
+
+#: filter/kmfilterdialog.cpp:1653
+msgid "Filters which were imported:"
+msgstr "Импортталған сүзгілер:"
+
+#: filter/mailfilter.cpp:131
+#, kde-format
+msgid "<b>Applying filter action:</b> %1"
+msgstr "<b>Сүзгі әрекетін қолдану:</b> %1"
+
+#: filter/mailfilter.cpp:142
+msgid "A critical error occurred. Processing stops here."
+msgstr "Дағдарысты қате пайда болды. Өңдеу тоқтатылды."
+
+#: filter/mailfilter.cpp:150
+msgid "A problem was found while applying this action."
+msgstr "Әрекетті орындау кезінде қате пайда болды."
+
+#: filter/mailfilter.cpp:397
+#, kde-format
+msgid "<qt>Too many filter actions in filter rule <b>%1</b>.</qt>"
+msgstr "<qt><b>%1</b> сүзгі ережесінде әрекеттер тым көп.</qt>"
+
+#: filter/mailfilter.cpp:428
+#, kde-format
+msgid ""
+"<qt>Unknown filter action <b>%1</b><br />in filter rule <b>%2</b>.<br /"
+">Ignoring it.</qt>"
+msgstr ""
+"<qt><b>%2</b> сүзгі ережесінде<br /> <b>%1</b> әрекеті беймәлім.<br /> "
+"Әрекет еленбей қалдырылды.</qt>"
 
 #~ msgctxt "message status"
 #~ msgid "New"
