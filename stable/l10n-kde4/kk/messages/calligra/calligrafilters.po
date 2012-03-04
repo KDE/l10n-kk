@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-15 02:46+0100\n"
+"POT-Creation-Date: 2012-03-04 11:30+0100\n"
 "PO-Revision-Date: 2011-12-29 04:45+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -20,10 +20,6 @@ msgstr ""
 "\n"
 "\n"
 "\n"
-
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-msgid "Export to Image"
-msgstr "Кескінге экспорт ету"
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: kchart/genericimageexport/genericimageexport.cpp:67
@@ -45,6 +41,10 @@ msgstr "Экспорт қатесі"
 #: kformula/png/pngexport.cc:65 kformula/svg/svgexport.cc:80
 msgid "Malformed XML data."
 msgstr "Жарамсыз XML дерегі."
+
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+msgid "Export to Image"
+msgstr "Кескінге экспорт ету"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -151,10 +151,11 @@ msgstr "Биіктігі (%):"
 #: tables/xlsx/XlsxXmlCommentsReader.cpp:108
 #: tables/xlsx/XlsxXmlDocumentReader.cpp:134
 #: tables/xlsx/XlsxXmlSharedStringsReader.cpp:113
-#: tables/xlsx/XlsxXmlTableReader.cpp:78
 #: tables/xlsx/XlsxXmlStylesReader.cpp:457
+#: tables/xlsx/XlsxXmlTableReader.cpp:78
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:200
 #: words/docx/DocxXmlEndnoteReader.cpp:90
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:95
@@ -162,7 +163,6 @@ msgstr "Биіктігі (%):"
 #: words/docx/DocxXmlHeaderReader.cpp:95
 #: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlSettingsReader.cpp:87
-#: words/docx/DocxXmlDocumentReader.cpp:200
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "\"%1\" атаулар кеңістігі табылмады"
@@ -409,6 +409,10 @@ msgstr "Жергілікті стандарты (%1)"
 msgid "Top"
 msgstr "Жоғары"
 
+#: tables/opencalc/opencalcexport.cc:915
+msgid "Page "
+msgstr "Беті "
+
 #: tables/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "Файл бүлінген сияқты. Кестесі өткізіледі."
@@ -432,10 +436,6 @@ msgstr ""
 #: tables/opencalc/opencalcimport.cc:1948 words/oowriter/oowriterimport.cc:558
 msgid "Unsupported document version"
 msgstr "Танымайтын құжат нұсқасы"
-
-#: tables/opencalc/opencalcexport.cc:915
-msgid "Page "
-msgstr "Беті "
 
 #: tables/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
@@ -479,6 +479,12 @@ msgstr "Деректер толық жүктелмеді, себебі - бет 
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:1428
 msgid "Expected integer or floating point number"
 msgstr "Бүтін не жылжымалы үтірлі сан күтілген еді"
+
+#: words/abiword/ImportField.cc:29
+#, kde-format
+msgctxt "Frameset name"
+msgid "Footnote %1"
+msgstr "%1-астылық сілтеме"
 
 #: words/abiword/abiwordimport.cc:479
 #, kde-format
@@ -530,12 +536,6 @@ msgstr "Құжат мәліметі сақталмайды."
 #: words/abiword/abiwordimport.cc:1638
 msgid "Unable to save main document."
 msgstr "Негізгі құжат сақталмайды."
-
-#: words/abiword/ImportField.cc:29
-#, kde-format
-msgctxt "Frameset name"
-msgid "Footnote %1"
-msgstr "%1-астылық сілтеме"
 
 #: words/ascii/ExportDialog.cc:44
 msgid "Words's Plain Text Export Filter"
@@ -663,18 +663,6 @@ msgstr "Алғашқы беттің төменгі колонтитулы"
 msgid "Words's MS Write Import Filter"
 msgstr "Word-қа MS Write импорттау сүзгісі"
 
-#: words/oowriter/conversion.cc:124
-msgid "Header"
-msgstr "Жоғарғы колонтитулы"
-
-#: words/oowriter/conversion.cc:128
-msgid "Footer"
-msgstr "Төменгі колонтитулы"
-
-#: words/oowriter/oowriterimport.cc:127
-msgid "Main Text Frameset"
-msgstr "Негізгі мәтін фрейм жинағы"
-
 #: words/oowriter/ExportFilter.cc:1066
 #, kde-format
 msgctxt "Object name"
@@ -691,6 +679,18 @@ msgstr "%1 кестесінің фреймі"
 msgctxt "Pseudo-author for annotations"
 msgid "KWord 1.3"
 msgstr "KWord 1.3"
+
+#: words/oowriter/conversion.cc:124
+msgid "Header"
+msgstr "Жоғарғы колонтитулы"
+
+#: words/oowriter/conversion.cc:128
+msgid "Footer"
+msgstr "Төменгі колонтитулы"
+
+#: words/oowriter/oowriterimport.cc:127
+msgid "Main Text Frameset"
+msgstr "Негізгі мәтін фрейм жинағы"
 
 #: words/rtf/import/rtfimport.cpp:56
 msgid "The file cannot be loaded, as it seems not to be an RTF document."
