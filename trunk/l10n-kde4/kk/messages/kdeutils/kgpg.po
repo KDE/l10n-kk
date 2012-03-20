@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-18 04:51+0100\n"
+"POT-Creation-Date: 2012-03-20 06:27+0100\n"
 "PO-Revision-Date: 2011-12-09 05:09+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -88,45 +88,70 @@ msgstr "кілтіңіз "
 msgid "Info"
 msgstr "Ақпар"
 
-#: foldercompressjob.cpp:29
+#: foldercompressjob.cpp:44
 msgid "Processing folder compression and encryption"
 msgstr "Қапшықты сығу және шифрлау барысы"
 
-#: foldercompressjob.cpp:46 foldercompressjob.cpp:94 foldercompressjob.cpp:111
-#: foldercompressjob.cpp:113 transactions/kgpgtransactionjob.cpp:65
+#: foldercompressjob.cpp:70 foldercompressjob.cpp:120
+#: foldercompressjob.cpp:139 foldercompressjob.cpp:141
+#: transactions/kgpgtransactionjob.cpp:65
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "Күйі"
 
-#: foldercompressjob.cpp:46 transactions/kgpgtransactionjob.cpp:39
+#: foldercompressjob.cpp:70 transactions/kgpgtransactionjob.cpp:39
 msgctxt "Job is started up"
 msgid "Startup"
 msgstr "Айдау"
 
-#: foldercompressjob.cpp:77
+#: foldercompressjob.cpp:102
 msgid "Unable to create temporary file"
 msgstr "Уақытша файл құрылмады"
 
-#: foldercompressjob.cpp:95 transactions/kgpgencrypt.cpp:115
+#: foldercompressjob.cpp:121 transactions/kgpgencrypt.cpp:115
 #, kde-format
 msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "%1 дегенді шифрлау"
 
-#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:272
+#: foldercompressjob.cpp:138 editor/kgpgtextedit.cpp:272
 #, kde-format
 msgid "The encryption failed with error code %1"
 msgstr "Шифрлау жаңылды, қатесінің коды: %1"
 
-#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:273
+#: foldercompressjob.cpp:139 editor/kgpgtextedit.cpp:273
 msgid "Encryption failed."
 msgstr "Шифрлау жаңылысы."
 
-#: foldercompressjob.cpp:114 transactions/kgpgencrypt.cpp:118
+#: foldercompressjob.cpp:142 transactions/kgpgencrypt.cpp:118
 #, kde-format
 msgctxt "Status message 'Encrypted <filename>' (operation was completed)"
 msgid "Encrypted %1"
 msgstr "Шифрланған %1"
+
+#: foldercompressjob.cpp:173
+msgid "Zip"
+msgstr "Zip"
+
+#: foldercompressjob.cpp:174
+#, fuzzy
+#| msgid "Gzip"
+msgid "Tar/Gzip"
+msgstr "Gzip"
+
+#: foldercompressjob.cpp:175
+#, fuzzy
+#| msgid "Bzip2"
+msgid "Tar/Bzip2"
+msgstr "Bzip2"
+
+#: foldercompressjob.cpp:176
+msgid "Tar"
+msgstr "Tar"
+
+#: foldercompressjob.cpp:177
+msgid "Tar/XZ"
+msgstr "Tar/XZ"
 
 #: groupedit.cpp:36
 msgid "Available Keys"
@@ -1102,7 +1127,19 @@ msgstr ""
 "шифрын шешкенде маселелерді тудыру мүмкін.<br />GnuPG агентін KGpg "
 "баптауында рұқсат етпеңіз, не агентті жегуін жөндеңіз.</qt>"
 
-#: kgpg.cpp:127
+#: kgpg.cpp:135
+msgid "Cannot decrypt and show folder."
+msgstr "Қапшықтың шифрын шешіп көрсетуге болмайды."
+
+#: kgpg.cpp:140
+msgid "Cannot sign folder."
+msgstr "Қапшықты қолтаңбалауға болмайды."
+
+#: kgpg.cpp:145
+msgid "Cannot verify folder."
+msgstr "Қапшықты тексеруге болмайды."
+
+#: kgpg.cpp:148
 msgid ""
 "Unable to perform requested operation.\n"
 "Please select only one folder, or several files, but do not mix files and "
@@ -1111,18 +1148,6 @@ msgstr ""
 "Талап етілген амал орындалмады.\n"
 "Жалғыз қапшықты не бірнеше файлдарды таңдаңыз, бірақ оларды араластыруға "
 "болмайды."
-
-#: kgpg.cpp:140
-msgid "Cannot decrypt and show folder."
-msgstr "Қапшықтың шифрын шешіп көрсетуге болмайды."
-
-#: kgpg.cpp:145
-msgid "Cannot sign folder."
-msgstr "Қапшықты қолтаңбалауға болмайды."
-
-#: kgpg.cpp:150
-msgid "Cannot verify folder."
-msgstr "Қапшықты тексеруге болмайды."
 
 #: kgpgexternalactions.cpp:125
 #, kde-format
@@ -1142,47 +1167,27 @@ msgstr "Уақытша файл құру"
 msgid "Compression method for archive:"
 msgstr "Архивті сығу әдісі:"
 
-#: kgpgexternalactions.cpp:140
-msgid "Zip"
-msgstr "Zip"
-
-#: kgpgexternalactions.cpp:141
-msgid "Gzip"
-msgstr "Gzip"
-
-#: kgpgexternalactions.cpp:142
-msgid "Bzip2"
-msgstr "Bzip2"
-
-#: kgpgexternalactions.cpp:143
-msgid "Tar"
-msgstr "Tar"
-
-#: kgpgexternalactions.cpp:144
-msgid "Tar/XZ"
-msgstr "Tar/XZ"
-
-#: kgpgexternalactions.cpp:222 kgpgexternalactions.cpp:377
+#: kgpgexternalactions.cpp:199 kgpgexternalactions.cpp:354
 #: editor/kgpgeditor.cpp:521 transactions/kgpgencrypt.cpp:123
 msgid "File Already Exists"
 msgstr "Бұндай файл бар екен"
 
-#: kgpgexternalactions.cpp:299 editor/kgpgeditor.cpp:733
+#: kgpgexternalactions.cpp:276 editor/kgpgeditor.cpp:733
 #: editor/kgpgtextedit.cpp:320
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr "Тексеру аяқталды"
 
-#: kgpgexternalactions.cpp:411
+#: kgpgexternalactions.cpp:388
 msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "Файл(дар) шифрын шешу жаңылысы."
 
-#: kgpgexternalactions.cpp:413 editor/kgpgtextedit.cpp:257
+#: kgpgexternalactions.cpp:390 editor/kgpgtextedit.cpp:257
 msgid "Decryption failed."
 msgstr "Шифрды шешу жаңылысы."
 
-#: kgpgexternalactions.cpp:438
+#: kgpgexternalactions.cpp:415
 msgid ""
 "<qt>You have not set a path to your GnuPG config file.<br />This may cause "
 "some surprising results in KGpg's execution.<br />Would you like to start "
@@ -1192,11 +1197,11 @@ msgstr ""
 "күтпеген жағдайға апарып соғуы мүмкін.<br />KGpg көмекшінің демеуіне жүгініп "
 "бұл мәселені жөндеуді қалайсыз ба?</qt>"
 
-#: kgpgexternalactions.cpp:439
+#: kgpgexternalactions.cpp:416
 msgid "Start Assistant"
 msgstr "Көмекшіге жүгіну"
 
-#: kgpgexternalactions.cpp:439
+#: kgpgexternalactions.cpp:416
 msgid "Do Not Start"
 msgstr "Керегі жоқ"
 
