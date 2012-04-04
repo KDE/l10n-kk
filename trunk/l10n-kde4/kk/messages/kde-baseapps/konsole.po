@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-02 04:21+0200\n"
+"POT-Creation-Date: 2012-04-04 04:27+0200\n"
 "PO-Revision-Date: 2011-12-06 04:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -275,15 +275,29 @@ msgstr "Мынаған эл.пошта жолдау..."
 msgid "Copy Email Address"
 msgstr "Эл.пошта адресін көшіріп алу"
 
-#: HistorySizeDialog.cpp:41
+#: HistorySizeDialog.cpp:32
+#, fuzzy
+#| msgid "Adjust Scrollback"
+msgctxt "@title:window"
 msgid "Adjust Scrollback"
 msgstr "Жүгірткіні лайықтау"
 
-#: HistorySizeDialog.cpp:52
-msgid "<center>The adjustment is only temporary</center>"
+#: HistorySizeDialog.cpp:45
+#, fuzzy
+#| msgid "<center>The adjustment is only temporary</center>"
+msgctxt "@info:status"
+msgid "Any adjustments are only temporary to this session."
 msgstr "<center>Бұл туралау уақытша ғана</center>"
 
-#: HistorySizeWidget.cpp:51
+#: HistorySizeWidget.cpp:44
+msgctxt "@info:status"
+msgid ""
+"When using this option, the scrollback data will be written unencrypted to "
+"temporary files. Those temporary files will be deleted automatically when "
+"quitting Konsole."
+msgstr ""
+
+#: HistorySizeWidget.cpp:60
 #, fuzzy
 #| msgid "lines"
 msgctxt "Unit of scrollback"
@@ -1454,7 +1468,7 @@ msgstr "Таңдалған профилін жаңа терминал сеанс
 msgid "&Set as Default"
 msgstr "&Әдетті қылу"
 
-#. i18n: file: HistorySizeWidget.ui:23
+#. i18n: file: HistorySizeWidget.ui:29
 #. i18n: ectx: property (toolTip), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:341
 #, fuzzy
@@ -1462,19 +1476,19 @@ msgstr "&Әдетті қылу"
 msgid "Do not remember previous output"
 msgstr "Жүгірткі болмасын және өткен шығысы жатталмасын"
 
-#. i18n: file: HistorySizeWidget.ui:26
+#. i18n: file: HistorySizeWidget.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:344
 msgid "No scrollback"
 msgstr "Жүгірткі жады болмасын"
 
-#. i18n: file: HistorySizeWidget.ui:41
+#. i18n: file: HistorySizeWidget.ui:50
 #. i18n: ectx: property (toolTip), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:347
 msgid "Limit the remembered output to a fixed number of lines"
 msgstr "Жатталған шығыс жолдар санын шектеу"
 
-#. i18n: file: HistorySizeWidget.ui:44
+#. i18n: file: HistorySizeWidget.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:350
 #, fuzzy
@@ -1482,19 +1496,19 @@ msgstr "Жатталған шығыс жолдар санын шектеу"
 msgid "Fixed size scrollback:"
 msgstr "Жүгірткі жадының көлемі:"
 
-#. i18n: file: HistorySizeWidget.ui:51
+#. i18n: file: HistorySizeWidget.ui:60
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, historyLineSpinner)
 #: rc.cpp:353
 msgid "Number of lines of output to remember"
 msgstr "Жатталатын шығыс жолдар саны"
 
-#. i18n: file: HistorySizeWidget.ui:85
+#. i18n: file: HistorySizeWidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:356
 msgid "Remember all output produced by the terminal"
 msgstr "Терминалдың барлық өткен жолдарын жаттау"
 
-#. i18n: file: HistorySizeWidget.ui:88
+#. i18n: file: HistorySizeWidget.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:359
 msgid "Unlimited scrollback"
@@ -1903,11 +1917,11 @@ msgid ""
 msgstr ""
 "Бұл сеанста '%1' бағдарламасы орындалып жатыр. Ол жабылуға мәжбүр болсын ба?"
 
-#: SessionController.cpp:1251
+#: SessionController.cpp:1255
 msgid "Save ZModem Download to..."
 msgstr "ZModem жүктеп алуы мынаған..."
 
-#: SessionController.cpp:1259
+#: SessionController.cpp:1263
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
@@ -1917,12 +1931,12 @@ msgstr ""
 "бағдарламасы табылмады.</p><p>'rzsz' не 'lrzsz' дестенің бірін орнатуға "
 "болады.</p>"
 
-#: SessionController.cpp:1271
+#: SessionController.cpp:1275
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr "<p>Қазіргі сеанста бір ZModem файл берілімі орындалып жатыр.</p>"
 
-#: SessionController.cpp:1280
+#: SessionController.cpp:1284
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
@@ -1930,21 +1944,21 @@ msgstr ""
 "<p>Жүйеңізде лайықты ZModem бағдарламасы табылмады.</p><p>'rzsz' не 'lrzsz' "
 "дестенің бірін орнатуға болады.</p>"
 
-#: SessionController.cpp:1286
+#: SessionController.cpp:1290
 msgid "Select Files for ZModem Upload"
 msgstr "ZModem жүктеп беретін файлдарды таңдау"
 
-#: SessionController.cpp:1354
+#: SessionController.cpp:1358
 #, kde-format
 msgid "Save Output From %1"
 msgstr "%1 дегеннің шығысын сақтау"
 
-#: SessionController.cpp:1365
+#: SessionController.cpp:1369
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 жарамсыз URL, шығысы сақталмайды"
 
-#: SessionController.cpp:1440
+#: SessionController.cpp:1444
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2014,12 +2028,12 @@ msgstr "'%1' бағдарламасы, %2 күй-жайын хабарлап, а
 msgid "ZModem Progress"
 msgstr "ZModem күй-жайы"
 
-#: SessionManager.cpp:388
+#: SessionManager.cpp:381
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "Нөмірі"
 
-#: SessionManager.cpp:390
+#: SessionManager.cpp:383
 msgctxt "@item:intable The session title"
 msgid "Title"
 msgstr "Атауы"
