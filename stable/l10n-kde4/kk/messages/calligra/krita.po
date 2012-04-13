@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 11:17+0200\n"
+"POT-Creation-Date: 2012-04-13 11:33+0200\n"
 "PO-Revision-Date: 2012-03-14 03:12+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1218,7 +1218,7 @@ msgstr "HDR қабатты құру"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:500
+#: rc.cpp:80 ui/kis_view2.cpp:502
 msgid "Cancel"
 msgstr "Қайту"
 
@@ -10517,9 +10517,13 @@ msgstr "Амалдан қайту тарихы"
 msgid "Image Docker"
 msgstr "Кескін докері"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
 msgstr "Шағын түс таңдағышы"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "Ерекше түс таңдағышы"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
@@ -10529,10 +10533,6 @@ msgstr "%1:"
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:213
 msgid "Color name:"
 msgstr "Түстің аты:"
-
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
-msgid "Specific Color Selector"
-msgstr "Ерекше түс таңдағышы"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
 msgid "Task Sets"
@@ -13311,7 +13311,7 @@ msgid "&Patterns"
 msgstr "&Өрнектер"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:192
+#: ui/kis_control_frame.cpp:193
 msgid "Gradients"
 msgstr "Градиенттер"
 
@@ -13319,19 +13319,19 @@ msgstr "Градиенттер"
 msgid "&Gradients"
 msgstr "&Градиенттер"
 
-#: ui/kis_control_frame.cpp:100
+#: ui/kis_control_frame.cpp:101
 msgid "&Color"
 msgstr "&Түсі"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:119
 msgid "&Painter's Tools"
 msgstr "&Суретшінің құралдары"
 
-#: ui/kis_control_frame.cpp:152
+#: ui/kis_control_frame.cpp:153
 msgid "Patterns"
 msgstr "Өрнектер"
 
-#: ui/kis_control_frame.cpp:155 ui/kis_control_frame.cpp:157
+#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
 msgid "Custom Pattern"
 msgstr "Өзгеше өрнектер"
 
@@ -13737,24 +13737,6 @@ msgstr "Таңдауы жоқ"
 msgid "No profile"
 msgstr "Профилі жоқ"
 
-#: ui/kis_zoom_manager.cc:89
-msgid "Show Rulers"
-msgstr "Өлшегіштерін көрсету"
-
-#: ui/kis_zoom_manager.cc:91
-msgid ""
-"The rulers show the horizontal and vertical positions of the mouse on the "
-"image and can be used to position your mouse at the right place on the "
-"canvas. <p>Uncheck this to hide the rulers."
-msgstr ""
-"Өлшегіштер меңзердің кескін бетіндегі екі бағыттағы бойлығын көрсетіп, "
-"тышқаныңызды керек орынға дәлдеп апаруға көмектеседі. <p>Өлшегіштерін "
-"жасырғыңыз келсе - белгісін алып тастаңыз."
-
-#: ui/kis_zoom_manager.cc:95
-msgid "Reset zoom"
-msgstr "Үлкейту/Кішірейтуді ысыру"
-
 #: ui/kisexiv2/kis_iptc_io.h:36
 msgid "Iptc"
 msgstr "Iptc"
@@ -13949,33 +13931,51 @@ msgstr "Күй-жай жолағын жасыру"
 msgid "Shows or hides the status bar"
 msgstr "Күй-жай жолағын көрсету/жасыру"
 
-#: ui/kis_view2.cpp:453
+#: ui/kis_view2.cpp:455
 msgid "Pasted Layer"
 msgstr "Орналасқан қабат"
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:493
 msgid "Insert as New Layer"
 msgstr "Жаңа қабат ретінде енгізу"
 
-#: ui/kis_view2.cpp:492
+#: ui/kis_view2.cpp:494
 msgid "Insert as New Layers"
 msgstr "Жаңа қабаттар ретінде енгізу"
 
-#: ui/kis_view2.cpp:494
+#: ui/kis_view2.cpp:496
 msgid "Open in New Document"
 msgstr "Жаңа құжатта ашу"
 
-#: ui/kis_view2.cpp:495
+#: ui/kis_view2.cpp:497
 msgid "Open in New Documents"
 msgstr "Жаңа құжаттарда ашу"
 
-#: ui/kis_view2.cpp:711
+#: ui/kis_view2.cpp:713
 msgid "Edit Palette..."
 msgstr "Палитраны өңдеу..."
 
-#: ui/kis_view2.cpp:839 ui/kis_view2.cpp:842
+#: ui/kis_view2.cpp:841 ui/kis_view2.cpp:844
 msgid "Edit Palette"
 msgstr "Палитраны өңдеу"
+
+#: ui/kis_zoom_manager.cc:89
+msgid "Show Rulers"
+msgstr "Өлшегіштерін көрсету"
+
+#: ui/kis_zoom_manager.cc:91
+msgid ""
+"The rulers show the horizontal and vertical positions of the mouse on the "
+"image and can be used to position your mouse at the right place on the "
+"canvas. <p>Uncheck this to hide the rulers."
+msgstr ""
+"Өлшегіштер меңзердің кескін бетіндегі екі бағыттағы бойлығын көрсетіп, "
+"тышқаныңызды керек орынға дәлдеп апаруға көмектеседі. <p>Өлшегіштерін "
+"жасырғыңыз келсе - белгісін алып тастаңыз."
+
+#: ui/kis_zoom_manager.cc:95
+msgid "Reset zoom"
+msgstr "Үлкейту/Кішірейтуді ысыру"
 
 #~ msgid "Tool Options"
 #~ msgstr "Құрал параметрлері"
