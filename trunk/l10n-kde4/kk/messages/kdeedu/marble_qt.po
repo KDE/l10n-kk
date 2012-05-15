@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-14 04:58+0200\n"
+"POT-Creation-Date: 2012-05-15 05:11+0200\n"
 "PO-Revision-Date: 2012-02-25 05:00+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -569,19 +569,19 @@ msgstr "Маршрутты ашу"
 msgid "Simulates travelling along the current route."
 msgstr ""
 
-#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:36
+#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:35
 #, fuzzy
 #| msgid "Placemark position provider Plugin"
 msgid "FlightGear position provider Plugin"
 msgstr "Орын белгінің орынын анықтауш плагині"
 
-#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:46
+#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:45
 #, fuzzy
 #| msgid "light showers"
 msgid "FlightGear"
 msgstr "өткенші нөсерлер"
 
-#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:56
+#: src/plugins/positionprovider/flightgear/FlightGearPositionProviderPlugin.cpp:55
 #, fuzzy
 #| msgid "Reports the position of a placemark"
 msgid "Reports the position of running flightgear application."
@@ -747,7 +747,7 @@ msgstr "Бұрап аралау кезде экран сақтаушысының
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:53
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:238
 #: src/plugins/render/elevationprofilefloatitem/ElevationProfilePlotAxis.cpp:142
-#: src/lib/MarbleWidget.cpp:1194
+#: src/lib/MarbleWidget.cpp:1194 src/lib/CurrentLocationWidget.cpp:273
 msgid "km"
 msgstr "км"
 
@@ -771,7 +771,7 @@ msgstr "Бастапқы құрастырушысы"
 #: src/plugins/render/gpsinfo/GpsInfo.cpp:140
 #: src/plugins/render/elevationprofilefloatitem/ElevationProfilePlotAxis.cpp:145
 #: src/plugins/render/elevationprofilemarker/ElevationProfileMarker.cpp:169
-#: src/lib/CurrentLocationWidget.cpp:267
+#: src/lib/CurrentLocationWidget.cpp:269 src/lib/CurrentLocationWidget.cpp:270
 msgid "m"
 msgstr "м"
 
@@ -1051,15 +1051,6 @@ msgstr "&Жол салу"
 msgid "Routing information and navigation controls"
 msgstr "Жол мәліметі және шарлауды басқару"
 
-#: src/plugins/render/satellites/SatellitesItem.cpp:68
-#, qt-format
-msgid ""
-"NORAD ID: %2 <br />Perigee: %3 km <br />Apogee: %4 km <br />Inclination: %5 "
-"degrees <br />Period: %6 minutes <br />Semi-major axis: %7 km"
-msgstr ""
-"NORAD ID: %2 <br />Перигей: %3 км <br />Апогей: %4 км <br />Еңісі: %5 "
-"degrees <br />Айналымы: %6 минут <br />Үлкен жарты осі: %7 км"
-
 #: src/plugins/render/satellites/SatellitesConfigModel.cpp:132
 msgid "Category"
 msgstr "Санаты"
@@ -1113,6 +1104,15 @@ msgstr "Ғылыми жерсеріктер"
 msgid "Miscellaneous Satellites"
 msgstr "Түрлі басқа жерсеріктер"
 
+#: src/plugins/render/satellites/SatellitesItem.cpp:68
+#, qt-format
+msgid ""
+"NORAD ID: %2 <br />Perigee: %3 km <br />Apogee: %4 km <br />Inclination: %5 "
+"degrees <br />Period: %6 minutes <br />Semi-major axis: %7 km"
+msgstr ""
+"NORAD ID: %2 <br />Перигей: %3 км <br />Апогей: %4 км <br />Еңісі: %5 "
+"degrees <br />Айналымы: %6 минут <br />Үлкен жарты осі: %7 км"
+
 #: src/plugins/render/stars/StarsPlugin.cpp:58
 msgid "Stars"
 msgstr "Жұлдыздар"
@@ -1137,10 +1137,6 @@ msgstr "&твиттер"
 msgid "show public twitts in their places"
 msgstr "осының орында ашық твиттерді көрсету"
 
-#: src/plugins/render/weather/BBCParser.cpp:117
-msgid "The file is not a valid BBC answer."
-msgstr "Бұл файл дұрыс BBC жаубы емес."
-
 #: src/plugins/render/weather/BBCWeatherItem.cpp:92
 msgid ""
 "Supported by <a href=\"http://backstage.bbc.co.uk\" target=\"_BLANK"
@@ -1148,6 +1144,93 @@ msgid ""
 msgstr ""
 "<a href=\"http://backstage.bbc.co.uk\" target=\"_BLANK\">backstage.bbc.co."
 "uk</a> дегеннен келген.<br>UK MET оффисінің ауа райы ақпары"
+
+#: src/plugins/render/weather/GeoNamesWeatherItem.cpp:37
+msgid ""
+"Supported by <a href=\"http://www.geonames.org/export/JSON-webservices.html"
+"\" target=\"_BLANK\">geonames.org</a>"
+msgstr ""
+
+#: src/plugins/render/weather/WeatherItem.cpp:55
+#: src/plugins/render/weather/WeatherPlugin.cpp:90
+msgid "Weather"
+msgstr "Ауа райы"
+
+#: src/plugins/render/weather/WeatherItem.cpp:109
+#, qt-format
+msgid "Station: %1\n"
+msgstr "Бекеті: %1\n"
+
+#: src/plugins/render/weather/WeatherItem.cpp:119
+#, qt-format
+msgctxt "Wind: WindSpeed, WindDirection"
+msgid "Wind: %4, %5\n"
+msgstr "Жел: %4, %5\n"
+
+#: src/plugins/render/weather/WeatherItem.cpp:123
+#, qt-format
+msgctxt "Wind: WindSpeed"
+msgid "Wind: %4\n"
+msgstr "Жел: %4\n"
+
+#: src/plugins/render/weather/WeatherItem.cpp:126
+#, qt-format
+msgctxt "Wind: WindDirection"
+msgid "Wind: %4\n"
+msgstr "Жел: %4\n"
+
+#: src/plugins/render/weather/WeatherItem.cpp:130
+#, qt-format
+msgctxt "Pressure: Pressure, Development"
+msgid "Pressure: %6, %7"
+msgstr "Ауа қысымы: %6, %7"
+
+#: src/plugins/render/weather/WeatherItem.cpp:134
+#, qt-format
+msgctxt "Pressure: Pressure"
+msgid "Pressure: %6"
+msgstr "Ауа қысымы: %6"
+
+#: src/plugins/render/weather/WeatherItem.cpp:137
+#, qt-format
+msgctxt "Pressure Development"
+msgid "Pressure %7"
+msgstr "Ауа қысымы: %7"
+
+#: src/plugins/render/weather/WeatherItem.cpp:153
+#, qt-format
+msgctxt "DayOfWeek: Condition, MinTemp to MaxTemp"
+msgid "%1: %2, %3 to %4"
+msgstr "%1: %2, %3 - %4"
+
+#: src/plugins/render/weather/WeatherItem.cpp:223
+#, fuzzy
+#| msgid "&Remove Measure Points"
+msgid "Remove from Favorites"
+msgstr "Өлшем нүктелерін ө&шіру"
+
+#: src/plugins/render/weather/WeatherItem.cpp:224
+#, fuzzy
+#| msgid "&Favorite"
+msgid "Add to Favorites"
+msgstr "&Таңдамалы"
+
+#: src/plugins/render/weather/WeatherItem.cpp:482
+#, qt-format
+msgid "Weather for %1"
+msgstr "%1 ауы райы"
+
+#: src/plugins/render/weather/WeatherItem.cpp:484
+msgid "Current Observation"
+msgstr "Қазіргі ауа райы"
+
+#: src/plugins/render/weather/WeatherItem.cpp:490
+msgid "Forecasts"
+msgstr "Болжамдары"
+
+#: src/plugins/render/weather/BBCParser.cpp:117
+msgid "The file is not a valid BBC answer."
+msgstr "Бұл файл дұрыс BBC жаубы емес."
 
 #: src/plugins/render/weather/StationListParser.cpp:48
 msgid "The file is not a valid file."
@@ -1286,7 +1369,7 @@ msgstr "БОБ"
 #: src/plugins/render/weather/WeatherData.cpp:591
 #: src/plugins/render/gpsinfo/GpsInfo.cpp:138
 #: src/plugins/render/speedometer/Speedometer.cpp:137
-#: src/lib/CurrentLocationWidget.cpp:265
+#: src/lib/CurrentLocationWidget.cpp:267
 msgid "km/h"
 msgstr "км/сағ"
 
@@ -1393,89 +1476,6 @@ msgstr "Қысым болжамы: %1<br>"
 msgid "Humidity: %1<br>"
 msgstr "Ылғалдылығы: %1<br>"
 
-#: src/plugins/render/weather/GeoNamesWeatherItem.cpp:37
-msgid ""
-"Supported by <a href=\"http://www.geonames.org/export/JSON-webservices.html"
-"\" target=\"_BLANK\">geonames.org</a>"
-msgstr ""
-
-#: src/plugins/render/weather/WeatherItem.cpp:55
-#: src/plugins/render/weather/WeatherPlugin.cpp:90
-msgid "Weather"
-msgstr "Ауа райы"
-
-#: src/plugins/render/weather/WeatherItem.cpp:109
-#, qt-format
-msgid "Station: %1\n"
-msgstr "Бекеті: %1\n"
-
-#: src/plugins/render/weather/WeatherItem.cpp:119
-#, qt-format
-msgctxt "Wind: WindSpeed, WindDirection"
-msgid "Wind: %4, %5\n"
-msgstr "Жел: %4, %5\n"
-
-#: src/plugins/render/weather/WeatherItem.cpp:123
-#, qt-format
-msgctxt "Wind: WindSpeed"
-msgid "Wind: %4\n"
-msgstr "Жел: %4\n"
-
-#: src/plugins/render/weather/WeatherItem.cpp:126
-#, qt-format
-msgctxt "Wind: WindDirection"
-msgid "Wind: %4\n"
-msgstr "Жел: %4\n"
-
-#: src/plugins/render/weather/WeatherItem.cpp:130
-#, qt-format
-msgctxt "Pressure: Pressure, Development"
-msgid "Pressure: %6, %7"
-msgstr "Ауа қысымы: %6, %7"
-
-#: src/plugins/render/weather/WeatherItem.cpp:134
-#, qt-format
-msgctxt "Pressure: Pressure"
-msgid "Pressure: %6"
-msgstr "Ауа қысымы: %6"
-
-#: src/plugins/render/weather/WeatherItem.cpp:137
-#, qt-format
-msgctxt "Pressure Development"
-msgid "Pressure %7"
-msgstr "Ауа қысымы: %7"
-
-#: src/plugins/render/weather/WeatherItem.cpp:153
-#, qt-format
-msgctxt "DayOfWeek: Condition, MinTemp to MaxTemp"
-msgid "%1: %2, %3 to %4"
-msgstr "%1: %2, %3 - %4"
-
-#: src/plugins/render/weather/WeatherItem.cpp:223
-#, fuzzy
-#| msgid "&Remove Measure Points"
-msgid "Remove from Favorites"
-msgstr "Өлшем нүктелерін ө&шіру"
-
-#: src/plugins/render/weather/WeatherItem.cpp:224
-#, fuzzy
-#| msgid "&Favorite"
-msgid "Add to Favorites"
-msgstr "&Таңдамалы"
-
-#: src/plugins/render/weather/WeatherItem.cpp:482
-#, qt-format
-msgid "Weather for %1"
-msgstr "%1 ауы райы"
-
-#: src/plugins/render/weather/WeatherItem.cpp:484
-msgid "Current Observation"
-msgstr "Қазіргі ауа райы"
-
-#: src/plugins/render/weather/WeatherItem.cpp:490
-msgid "Forecasts"
-msgstr "Болжамдары"
-
 #: src/plugins/render/weather/WeatherPlugin.cpp:95
 msgid "&Weather"
 msgstr "&Ауа райы"
@@ -1492,10 +1492,6 @@ msgid ""
 msgstr ""
 "Supported by backstage.bbc.co.uk.\n"
 "Weather data from UK MET Office"
-
-#: src/plugins/render/wikipedia/GeonamesParser.cpp:42
-msgid "The file is not a valid Geonames answer."
-msgstr "Бұл файл дұрыс Geonames жаубы емес."
 
 #: src/plugins/render/wikipedia/WikipediaItem.cpp:226
 #, qt-format
@@ -1528,6 +1524,10 @@ msgid ""
 msgstr ""
 "geonames.org көмегімен табылған\n"
 "wikipedia.org мәтіндері"
+
+#: src/plugins/render/wikipedia/GeonamesParser.cpp:42
+msgid "The file is not a valid Geonames answer."
+msgstr "Бұл файл дұрыс Geonames жаубы емес."
 
 #: src/plugins/render/sun/SunPlugin.cpp:52
 #: src/plugins/render/sun/SunPlugin.cpp:57
@@ -1589,7 +1589,7 @@ msgstr "Қалқымалы Gps мәліметі."
 #: src/plugins/render/gpsinfo/GpsInfo.cpp:131
 #: src/plugins/render/elevationprofilefloatitem/ElevationProfilePlotAxis.cpp:155
 #: src/plugins/render/elevationprofilemarker/ElevationProfileMarker.cpp:177
-#: src/lib/CurrentLocationWidget.cpp:275
+#: src/lib/CurrentLocationWidget.cpp:282 src/lib/CurrentLocationWidget.cpp:283
 msgid "ft"
 msgstr "фут"
 
@@ -2455,43 +2455,43 @@ msgstr "Қайту"
 msgid "Unable to insert data into cache"
 msgstr "Кэшке деректі енгізуге болмайды"
 
-#: src/lib/CurrentLocationWidget.cpp:206
+#: src/lib/CurrentLocationWidget.cpp:205
 msgid "Waiting for current location information..."
 msgstr "Орын туралы ақпарды күту..."
 
-#: src/lib/CurrentLocationWidget.cpp:209
+#: src/lib/CurrentLocationWidget.cpp:208
 msgid "Initializing current location service..."
 msgstr "Орын туралы мәлімет беру қызметін инициализациялау..."
 
-#: src/lib/CurrentLocationWidget.cpp:215
+#: src/lib/CurrentLocationWidget.cpp:214
 msgid "Error when determining current location: "
 msgstr "Орының анықтау кездегі қате:"
 
-#: src/lib/CurrentLocationWidget.cpp:273
+#: src/lib/CurrentLocationWidget.cpp:280
 msgid "m/h"
 msgstr "м/сағ"
 
-#: src/lib/CurrentLocationWidget.cpp:293
+#: src/lib/CurrentLocationWidget.cpp:304
 msgid "Disabled"
 msgstr "Рұқсат етілмеген"
 
-#: src/lib/CurrentLocationWidget.cpp:352
+#: src/lib/CurrentLocationWidget.cpp:363
 msgid "Save Track"
 msgstr "Ізін сақтау"
 
-#: src/lib/CurrentLocationWidget.cpp:354 src/lib/CurrentLocationWidget.cpp:366
+#: src/lib/CurrentLocationWidget.cpp:365 src/lib/CurrentLocationWidget.cpp:377
 msgid "KML File (*.kml)"
 msgstr "KML файлы (*kml)"
 
-#: src/lib/CurrentLocationWidget.cpp:365
+#: src/lib/CurrentLocationWidget.cpp:376
 msgid "Open Track"
 msgstr "Ізін ашу"
 
-#: src/lib/CurrentLocationWidget.cpp:377
+#: src/lib/CurrentLocationWidget.cpp:388
 msgid "Clear current track"
 msgstr "Назардағы ізін тазалау"
 
-#: src/lib/CurrentLocationWidget.cpp:378
+#: src/lib/CurrentLocationWidget.cpp:389
 msgid "Are you sure you want to clear the current track?"
 msgstr "Назардағы ізін шын тазаламақсыз ба?"
 
@@ -3496,6 +3496,66 @@ msgstr ""
 "<br />(c) 2007-2012 Marble виртуалды глобустың авторлары<br /><br /><a href="
 "\"http://edu.kde.org/marble\">http://edu.kde.org/marble</a>"
 
+#: src/lib/Planet.cpp:62 src/lib/Planet.cpp:353
+msgctxt "a planet without data"
+msgid "Unknown Planet"
+msgstr "Беймәлім планета"
+
+#: src/lib/Planet.cpp:326
+msgctxt "the planet"
+msgid "Mercury"
+msgstr "Меркурий"
+
+#: src/lib/Planet.cpp:328
+msgctxt "the planet"
+msgid "Venus"
+msgstr "Шолпан"
+
+#: src/lib/Planet.cpp:330
+msgctxt "the planet"
+msgid "Earth"
+msgstr "Жер"
+
+#: src/lib/Planet.cpp:332
+msgctxt "the planet"
+msgid "Mars"
+msgstr "Марс"
+
+#: src/lib/Planet.cpp:334
+msgctxt "the planet"
+msgid "Jupiter"
+msgstr "Юпитер"
+
+#: src/lib/Planet.cpp:336
+msgctxt "the planet"
+msgid "Saturn"
+msgstr "Сатурн"
+
+#: src/lib/Planet.cpp:338
+msgctxt "the planet"
+msgid "Uranus"
+msgstr "Уран"
+
+#: src/lib/Planet.cpp:340
+msgctxt "the planet"
+msgid "Neptune"
+msgstr "Нептун"
+
+#: src/lib/Planet.cpp:343
+msgctxt "the planet"
+msgid "Pluto"
+msgstr "Плутон"
+
+#: src/lib/Planet.cpp:346
+msgctxt "the earth's star"
+msgid "Sun"
+msgstr "Күн"
+
+#: src/lib/Planet.cpp:348
+msgctxt "the earth's moon"
+msgid "Moon"
+msgstr "1"
+
 #: src/lib/NewstuffModel.cpp:600 src/lib/NewstuffModel.cpp:609
 msgid "Installation aborted by user."
 msgstr ""
@@ -3697,66 +3757,6 @@ msgstr ""
 "Marble-ды басқа графикалық жүйемен жегуді ұйғардыңыз.\n"
 "Өзгеріс орын алу үшін, Marble жаңадан бастау керек.\n"
 "Қолданбаны жауып, оны қайтадан жегіңіз."
-
-#: src/lib/Planet.cpp:62 src/lib/Planet.cpp:353
-msgctxt "a planet without data"
-msgid "Unknown Planet"
-msgstr "Беймәлім планета"
-
-#: src/lib/Planet.cpp:326
-msgctxt "the planet"
-msgid "Mercury"
-msgstr "Меркурий"
-
-#: src/lib/Planet.cpp:328
-msgctxt "the planet"
-msgid "Venus"
-msgstr "Шолпан"
-
-#: src/lib/Planet.cpp:330
-msgctxt "the planet"
-msgid "Earth"
-msgstr "Жер"
-
-#: src/lib/Planet.cpp:332
-msgctxt "the planet"
-msgid "Mars"
-msgstr "Марс"
-
-#: src/lib/Planet.cpp:334
-msgctxt "the planet"
-msgid "Jupiter"
-msgstr "Юпитер"
-
-#: src/lib/Planet.cpp:336
-msgctxt "the planet"
-msgid "Saturn"
-msgstr "Сатурн"
-
-#: src/lib/Planet.cpp:338
-msgctxt "the planet"
-msgid "Uranus"
-msgstr "Уран"
-
-#: src/lib/Planet.cpp:340
-msgctxt "the planet"
-msgid "Neptune"
-msgstr "Нептун"
-
-#: src/lib/Planet.cpp:343
-msgctxt "the planet"
-msgid "Pluto"
-msgstr "Плутон"
-
-#: src/lib/Planet.cpp:346
-msgctxt "the earth's star"
-msgid "Sun"
-msgstr "Күн"
-
-#: src/lib/Planet.cpp:348
-msgctxt "the earth's moon"
-msgid "Moon"
-msgstr "1"
 
 #: src/lib/MarbleWidgetPopupMenu.cpp:50
 msgid "Copy Coordinates"
@@ -4168,9 +4168,8 @@ msgstr "&Мекен"
 msgid "Choose Placemark"
 msgstr "Орын белгісін таңдау"
 
-#: src/lib/global.h:235
-msgid "not available"
-msgstr "жоқ"
+#~ msgid "not available"
+#~ msgstr "жоқ"
 
 #, fuzzy
 #~| msgid ""
