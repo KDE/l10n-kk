@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-13 12:20+0200\n"
+"POT-Creation-Date: 2012-05-31 14:02+0200\n"
 "PO-Revision-Date: 2012-05-22 03:10+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -94,7 +94,7 @@ msgstr "Атауы"
 #: src/configdialog.cpp:182 src/configdialog.cpp:209 src/configdialog.cpp:227
 #: src/fetch/animenfofetcher.cpp:294 src/fetch/animenfofetcher.cpp:298
 #: src/fetch/freebasefetcher.cpp:367 src/fetch/googlebookfetcher.cpp:249
-#: src/fetch/imdbfetcher.cpp:753 src/fetch/imdbfetcher.cpp:1071
+#: src/fetch/imdbfetcher.cpp:946 src/fetch/imdbfetcher.cpp:1277
 #: src/fetch/filmasterfetcher.cpp:233 src/fetch/moviemeterfetcher.cpp:247
 #: src/fetch/openlibraryfetcher.cpp:283 src/field.cpp:37 src/field.cpp:78
 #: src/translators/gcstarimporter.cpp:89
@@ -1095,7 +1095,7 @@ msgid "Issue Year"
 msgstr "Шыққан жылы"
 
 #: src/collections/stampcollection.cpp:76
-#: src/collections/videocollection.cpp:180
+#: src/collections/videocollection.cpp:180 src/fetch/imdbfetcher.cpp:1389
 msgid "Color"
 msgstr "Түсі"
 
@@ -2179,8 +2179,8 @@ msgid "Original Title"
 msgstr "Бастапқы атауы"
 
 #: src/fetch/animenfofetcher.cpp:279 src/fetch/animenfofetcher.cpp:479
-#: src/fetch/doubanfetcher.cpp:211 src/fetch/imdbfetcher.cpp:823
-#: src/fetch/imdbfetcher.cpp:1268 src/fetch/dvdfrfetcher.cpp:167
+#: src/fetch/doubanfetcher.cpp:211 src/fetch/imdbfetcher.cpp:1016
+#: src/fetch/imdbfetcher.cpp:1550 src/fetch/dvdfrfetcher.cpp:167
 #: src/fetch/themoviedbfetcher.cpp:252 src/fetch/moviemeterfetcher.cpp:253
 #: src/fetch/moviemeterfetcher.cpp:360
 msgid "Alternative Titles"
@@ -2361,8 +2361,8 @@ msgstr "%1 дегенді бұл жинақ түрі іздеуге мүмкін
 msgid "Douban Link"
 msgstr "Douban сілтемесі"
 
-#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:752
-#: src/fetch/imdbfetcher.cpp:1266 src/fetch/themoviedbfetcher.cpp:251
+#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:945
+#: src/fetch/imdbfetcher.cpp:1548 src/fetch/themoviedbfetcher.cpp:251
 msgid "IMDb Link"
 msgstr "IMDb сілтемесі"
 
@@ -2426,47 +2426,105 @@ msgstr "Google Book сілтемесі"
 msgid "Google Book Search"
 msgstr "Google Book іздеуі"
 
-#: src/fetch/imdbfetcher.cpp:615
+#: src/fetch/imdbfetcher.cpp:96 src/fetch/imdbfetcher.cpp:1538
+msgid "Internet Movie Database"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:123
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (French)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:150
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Spanish)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:177
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (German)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:204
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Italian)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:231
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Portuguese)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:804
 msgid "Select IMDb Result"
 msgstr "IMDb нәтижесін таңдау"
 
-#: src/fetch/imdbfetcher.cpp:621
+#: src/fetch/imdbfetcher.cpp:810
 msgid ""
 "<qt>Your search returned multiple matches. Please select one below.</qt>"
 msgstr "<qt>Іздеу шартына бірнеше сәйкестік табылды. Біреуін таңдаңыз.</qt>"
 
-#: src/fetch/imdbfetcher.cpp:638
+#: src/fetch/imdbfetcher.cpp:827
 msgid "<qt>Select a search result.</qt>"
 msgstr "<qt>Іздеу нәтижесін таңдау.</qt>"
 
-#: src/fetch/imdbfetcher.cpp:1070 src/fetch/imdbfetcher.cpp:1267
+#: src/fetch/imdbfetcher.cpp:1276 src/fetch/imdbfetcher.cpp:1549
 msgid "IMDb Rating"
 msgstr "IMDb бағасы"
 
-#: src/fetch/imdbfetcher.cpp:1227 src/fetch/imdbfetcher.cpp:1269
+#: src/fetch/imdbfetcher.cpp:1421 src/fetch/imdbfetcher.cpp:1509
+#: src/fetch/imdbfetcher.cpp:1551
 msgid "Certifications"
 msgstr "Куәландырулары"
 
-#: src/fetch/imdbfetcher.cpp:1256
-msgid "Internet Movie Database"
-msgstr "Интернет фильмдер қоры"
+#: src/fetch/imdbfetcher.cpp:1566 src/fetch/amazonfetcher.cpp:962
+msgid "Country: "
+msgstr "Ел: "
 
-#: src/fetch/imdbfetcher.cpp:1284 src/fetch/srufetcher.cpp:469
-#: src/fetch/z3950fetcher.cpp:591
-msgid "Hos&t: "
-msgstr "Хос&ты: "
+#: src/fetch/imdbfetcher.cpp:1569 src/fetch/amazonfetcher.cpp:965
+msgid "United States"
+msgstr "Құрама Штаттар"
 
-#: src/fetch/imdbfetcher.cpp:1289
+#: src/fetch/imdbfetcher.cpp:1570 src/fetch/amazonfetcher.cpp:969
+msgid "France"
+msgstr "Франция"
+
+#: src/fetch/imdbfetcher.cpp:1571 src/fetch/amazonfetcher.cpp:972
+msgid "Spain"
+msgstr "Испания"
+
+#: src/fetch/imdbfetcher.cpp:1572 src/fetch/amazonfetcher.cpp:967
+msgid "Germany"
+msgstr "Германия"
+
+#: src/fetch/imdbfetcher.cpp:1573 src/fetch/amazonfetcher.cpp:973
+msgid "Italy"
+msgstr "Италия"
+
+#: src/fetch/imdbfetcher.cpp:1574
+msgid "Portugal"
+msgstr ""
+
+#: src/fetch/imdbfetcher.cpp:1578
+#, fuzzy
+#| msgid ""
+#| "Amazon.com provides data from several different localized sites. Choose "
+#| "the one you wish to use for this data source."
 msgid ""
-"The Internet Movie Database uses several different servers. Choose the one "
-"you wish to use."
-msgstr "Интернет фильмдер қорының бірнеше сервері бар. Біреуін таңдаңыз."
+"The Internet Movie Database provides data from several different localized "
+"sites. Choose the one you wish to use for this data source."
+msgstr "Amazon.com бірнеше жергілікті серверді қолданады. Біреуін таңдаңыз."
 
-#: src/fetch/imdbfetcher.cpp:1295 src/fetch/allocinefetcher.cpp:181
+#: src/fetch/imdbfetcher.cpp:1584 src/fetch/allocinefetcher.cpp:181
 msgid "&Maximum cast: "
 msgstr "Актерлер санның шегі:  "
 
-#: src/fetch/imdbfetcher.cpp:1300 src/fetch/allocinefetcher.cpp:186
+#: src/fetch/imdbfetcher.cpp:1589 src/fetch/allocinefetcher.cpp:186
 msgid ""
 "The list of cast members may include many people. Set the maximum number "
 "returned from the search."
@@ -2474,11 +2532,11 @@ msgstr ""
 "Рөлдерді ойнаған актерлер тізімі ұзақ болуы мүмкін. Іздеу нәтижедегі шегін "
 "қойыңыз."
 
-#: src/fetch/imdbfetcher.cpp:1305
+#: src/fetch/imdbfetcher.cpp:1594
 msgid "Download cover &image"
 msgstr "Мұқаба &кескіні жүктеп алынсын"
 
-#: src/fetch/imdbfetcher.cpp:1309 src/fetch/amazonfetcher.cpp:992
+#: src/fetch/imdbfetcher.cpp:1598 src/fetch/amazonfetcher.cpp:992
 msgid ""
 "The cover image may be downloaded as well. However, too many large images in "
 "the collection may degrade performance."
@@ -2511,6 +2569,10 @@ msgstr "Конгрес кітапханасы (АҚШ)"
 #: src/fetch/srufetcher.cpp:443
 msgid "SRU Server"
 msgstr "SRU сервері"
+
+#: src/fetch/srufetcher.cpp:469 src/fetch/z3950fetcher.cpp:591
+msgid "Hos&t: "
+msgstr "Хос&ты: "
 
 #: src/fetch/srufetcher.cpp:476 src/fetch/z3950fetcher.cpp:597
 msgid "Enter the host name of the server."
@@ -2661,29 +2723,13 @@ msgstr "Amazon.com веб-қызметтері"
 msgid "Secret key: "
 msgstr "Құпия кілті: "
 
-#: src/fetch/amazonfetcher.cpp:962
-msgid "Country: "
-msgstr "Ел: "
-
-#: src/fetch/amazonfetcher.cpp:965
-msgid "United States"
-msgstr "Құрама Штаттар"
-
 #: src/fetch/amazonfetcher.cpp:966
 msgid "United Kingdom"
 msgstr "Ұлыбритания"
 
-#: src/fetch/amazonfetcher.cpp:967
-msgid "Germany"
-msgstr "Германия"
-
 #: src/fetch/amazonfetcher.cpp:968
 msgid "Japan"
 msgstr "Жапония"
-
-#: src/fetch/amazonfetcher.cpp:969
-msgid "France"
-msgstr "Франция"
 
 #: src/fetch/amazonfetcher.cpp:970
 msgid "Canada"
@@ -2692,14 +2738,6 @@ msgstr "Канада"
 #: src/fetch/amazonfetcher.cpp:971
 msgid "China"
 msgstr "Қытай"
-
-#: src/fetch/amazonfetcher.cpp:972
-msgid "Spain"
-msgstr "Испания"
-
-#: src/fetch/amazonfetcher.cpp:973
-msgid "Italy"
-msgstr "Италия"
 
 #: src/fetch/amazonfetcher.cpp:977
 msgid ""
@@ -5763,3 +5801,8 @@ msgstr "Allocine.fr"
 #: scripts.cpp:10
 msgid "Spanish Ministry of Culture"
 msgstr "Испания мәдениет министрлігі"
+
+#~ msgid ""
+#~ "The Internet Movie Database uses several different servers. Choose the "
+#~ "one you wish to use."
+#~ msgstr "Интернет фильмдер қорының бірнеше сервері бар. Біреуін таңдаңыз."
