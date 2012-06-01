@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-18 04:25+0200\n"
+"POT-Creation-Date: 2012-06-01 04:37+0200\n"
 "PO-Revision-Date: 2012-05-22 03:10+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -466,8 +466,8 @@ msgstr "Туынды мәнді өрісінде мәннің үлгісі бо�
 #: src/fetch/animenfofetcher.cpp:294 src/fetch/animenfofetcher.cpp:298
 #: src/fetch/filmasterfetcher.cpp:233 src/fetch/freebasefetcher.cpp:367
 #: src/fetch/openlibraryfetcher.cpp:283 src/fetch/moviemeterfetcher.cpp:247
-#: src/fetch/googlebookfetcher.cpp:249 src/fetch/imdbfetcher.cpp:753
-#: src/fetch/imdbfetcher.cpp:1071 src/field.cpp:37 src/field.cpp:78
+#: src/fetch/googlebookfetcher.cpp:249 src/fetch/imdbfetcher.cpp:946
+#: src/fetch/imdbfetcher.cpp:1277 src/field.cpp:37 src/field.cpp:78
 #: src/translators/gcstarimporter.cpp:89 src/collection.cpp:57
 msgid "General"
 msgstr "1"
@@ -1090,7 +1090,7 @@ msgid "Issue Year"
 msgstr "Шыққан жылы"
 
 #: src/collections/stampcollection.cpp:76
-#: src/collections/videocollection.cpp:180
+#: src/collections/videocollection.cpp:180 src/fetch/imdbfetcher.cpp:1389
 msgid "Color"
 msgstr "Түсі"
 
@@ -2192,7 +2192,7 @@ msgstr "Файлды жергілікті кодтауымен экспортт�
 #: src/fetch/doubanfetcher.cpp:211 src/fetch/animenfofetcher.cpp:279
 #: src/fetch/animenfofetcher.cpp:479 src/fetch/dvdfrfetcher.cpp:167
 #: src/fetch/moviemeterfetcher.cpp:253 src/fetch/moviemeterfetcher.cpp:360
-#: src/fetch/imdbfetcher.cpp:823 src/fetch/imdbfetcher.cpp:1268
+#: src/fetch/imdbfetcher.cpp:1016 src/fetch/imdbfetcher.cpp:1550
 #: src/fetch/themoviedbfetcher.cpp:252
 msgid "Alternative Titles"
 msgstr "Басқа атаулары"
@@ -2201,8 +2201,8 @@ msgstr "Басқа атаулары"
 msgid "Douban Link"
 msgstr "Douban сілтемесі"
 
-#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:752
-#: src/fetch/imdbfetcher.cpp:1266 src/fetch/themoviedbfetcher.cpp:251
+#: src/fetch/doubanfetcher.cpp:213 src/fetch/imdbfetcher.cpp:945
+#: src/fetch/imdbfetcher.cpp:1548 src/fetch/themoviedbfetcher.cpp:251
 msgid "IMDb Link"
 msgstr "IMDb сілтемесі"
 
@@ -2462,8 +2462,7 @@ msgstr "Конгрес кітапханасы (АҚШ)"
 msgid "SRU Server"
 msgstr "SRU сервері"
 
-#: src/fetch/srufetcher.cpp:469 src/fetch/imdbfetcher.cpp:1284
-#: src/fetch/z3950fetcher.cpp:591
+#: src/fetch/srufetcher.cpp:469 src/fetch/z3950fetcher.cpp:591
 msgid "Hos&t: "
 msgstr "Хос&ты: "
 
@@ -2574,11 +2573,11 @@ msgstr "Amazon.com веб-қызметтері"
 msgid "Secret key: "
 msgstr "Құпия кілті: "
 
-#: src/fetch/amazonfetcher.cpp:962
+#: src/fetch/amazonfetcher.cpp:962 src/fetch/imdbfetcher.cpp:1566
 msgid "Country: "
 msgstr "Ел: "
 
-#: src/fetch/amazonfetcher.cpp:965
+#: src/fetch/amazonfetcher.cpp:965 src/fetch/imdbfetcher.cpp:1569
 msgid "United States"
 msgstr "Құрама Штаттар"
 
@@ -2586,7 +2585,7 @@ msgstr "Құрама Штаттар"
 msgid "United Kingdom"
 msgstr "Ұлыбритания"
 
-#: src/fetch/amazonfetcher.cpp:967
+#: src/fetch/amazonfetcher.cpp:967 src/fetch/imdbfetcher.cpp:1572
 msgid "Germany"
 msgstr "Германия"
 
@@ -2594,7 +2593,7 @@ msgstr "Германия"
 msgid "Japan"
 msgstr "Жапония"
 
-#: src/fetch/amazonfetcher.cpp:969
+#: src/fetch/amazonfetcher.cpp:969 src/fetch/imdbfetcher.cpp:1570
 msgid "France"
 msgstr "Франция"
 
@@ -2606,11 +2605,11 @@ msgstr "Канада"
 msgid "China"
 msgstr "Қытай"
 
-#: src/fetch/amazonfetcher.cpp:972
+#: src/fetch/amazonfetcher.cpp:972 src/fetch/imdbfetcher.cpp:1571
 msgid "Spain"
 msgstr "Испания"
 
-#: src/fetch/amazonfetcher.cpp:973
+#: src/fetch/amazonfetcher.cpp:973 src/fetch/imdbfetcher.cpp:1573
 msgid "Italy"
 msgstr "Италия"
 
@@ -2640,7 +2639,7 @@ msgstr "Үлкен кескін"
 msgid "No Image"
 msgstr "Кескін жоқ"
 
-#: src/fetch/amazonfetcher.cpp:992 src/fetch/imdbfetcher.cpp:1309
+#: src/fetch/amazonfetcher.cpp:992 src/fetch/imdbfetcher.cpp:1598
 msgid ""
 "The cover image may be downloaded as well. However, too many large images in "
 "the collection may degrade performance."
@@ -2668,42 +2667,81 @@ msgstr "Google Book сілтемесі"
 msgid "Google Book Search"
 msgstr "Google Book іздеуі"
 
-#: src/fetch/imdbfetcher.cpp:615
+#: src/fetch/imdbfetcher.cpp:96 src/fetch/imdbfetcher.cpp:1538
+msgid "Internet Movie Database"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:123
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (French)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:150
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Spanish)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:177
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (German)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:204
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Italian)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:231
+#, fuzzy
+#| msgid "Internet Movie Database"
+msgid "Internet Movie Database (Portuguese)"
+msgstr "Интернет фильмдер қоры"
+
+#: src/fetch/imdbfetcher.cpp:804
 msgid "Select IMDb Result"
 msgstr "IMDb нәтижесін таңдау"
 
-#: src/fetch/imdbfetcher.cpp:621
+#: src/fetch/imdbfetcher.cpp:810
 msgid ""
 "<qt>Your search returned multiple matches. Please select one below.</qt>"
 msgstr "<qt>Іздеу шартына бірнеше сәйкестік табылды. Біреуін таңдаңыз.</qt>"
 
-#: src/fetch/imdbfetcher.cpp:638
+#: src/fetch/imdbfetcher.cpp:827
 msgid "<qt>Select a search result.</qt>"
 msgstr "<qt>Іздеу нәтижесін таңдау.</qt>"
 
-#: src/fetch/imdbfetcher.cpp:1070 src/fetch/imdbfetcher.cpp:1267
+#: src/fetch/imdbfetcher.cpp:1276 src/fetch/imdbfetcher.cpp:1549
 msgid "IMDb Rating"
 msgstr "IMDb бағасы"
 
-#: src/fetch/imdbfetcher.cpp:1227 src/fetch/imdbfetcher.cpp:1269
+#: src/fetch/imdbfetcher.cpp:1421 src/fetch/imdbfetcher.cpp:1509
+#: src/fetch/imdbfetcher.cpp:1551
 msgid "Certifications"
 msgstr "Куәландырулары"
 
-#: src/fetch/imdbfetcher.cpp:1256
-msgid "Internet Movie Database"
-msgstr "Интернет фильмдер қоры"
+#: src/fetch/imdbfetcher.cpp:1574
+msgid "Portugal"
+msgstr ""
 
-#: src/fetch/imdbfetcher.cpp:1289
+#: src/fetch/imdbfetcher.cpp:1578
+#, fuzzy
+#| msgid ""
+#| "Amazon.com provides data from several different localized sites. Choose "
+#| "the one you wish to use for this data source."
 msgid ""
-"The Internet Movie Database uses several different servers. Choose the one "
-"you wish to use."
-msgstr "Интернет фильмдер қорының бірнеше сервері бар. Біреуін таңдаңыз."
+"The Internet Movie Database provides data from several different localized "
+"sites. Choose the one you wish to use for this data source."
+msgstr "Amazon.com бірнеше жергілікті серверді қолданады. Біреуін таңдаңыз."
 
-#: src/fetch/imdbfetcher.cpp:1295 src/fetch/allocinefetcher.cpp:181
+#: src/fetch/imdbfetcher.cpp:1584 src/fetch/allocinefetcher.cpp:181
 msgid "&Maximum cast: "
 msgstr "Актерлер санның шегі:  "
 
-#: src/fetch/imdbfetcher.cpp:1300 src/fetch/allocinefetcher.cpp:186
+#: src/fetch/imdbfetcher.cpp:1589 src/fetch/allocinefetcher.cpp:186
 msgid ""
 "The list of cast members may include many people. Set the maximum number "
 "returned from the search."
@@ -2711,7 +2749,7 @@ msgstr ""
 "Рөлдерді ойнаған актерлер тізімі ұзақ болуы мүмкін. Іздеу нәтижедегі шегін "
 "қойыңыз."
 
-#: src/fetch/imdbfetcher.cpp:1305
+#: src/fetch/imdbfetcher.cpp:1594
 msgid "Download cover &image"
 msgstr "Мұқаба &кескіні жүктеп алынсын"
 
@@ -5754,3 +5792,8 @@ msgstr "Allocine.fr"
 #: scripts.cpp:10
 msgid "Spanish Ministry of Culture"
 msgstr "Испания мәдениет министрлігі"
+
+#~ msgid ""
+#~ "The Internet Movie Database uses several different servers. Choose the "
+#~ "one you wish to use."
+#~ msgstr "Интернет фильмдер қорының бірнеше сервері бар. Біреуін таңдаңыз."
