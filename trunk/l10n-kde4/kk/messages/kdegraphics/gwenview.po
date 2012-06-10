@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-08 07:57+0200\n"
+"POT-Creation-Date: 2012-06-10 04:59+0200\n"
 "PO-Revision-Date: 2012-02-27 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -109,7 +109,7 @@ msgstr "Слайд-шоу күйінде бастау"
 msgid "A starting file or folder"
 msgstr "Бастапқы файл әлде қапшық"
 
-#: app/fullscreencontent.cpp:145
+#: app/fullscreencontent.cpp:150
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "Configure Full Screen Mode"
@@ -117,12 +117,12 @@ msgctxt "@info:tooltip"
 msgid "Configure full screen mode"
 msgstr "Толық экранды күйін баптау"
 
-#: app/fullscreencontent.cpp:321
+#: app/fullscreencontent.cpp:333
 msgctxt "@item:intext fullscreen meta info separator"
 msgid ", "
 msgstr ", "
 
-#: app/fullscreencontent.cpp:412
+#: app/fullscreencontent.cpp:389
 #, kde-format
 msgctxt "Slideshow interval in seconds"
 msgid "%1 sec"
@@ -316,7 +316,50 @@ msgctxt "@info:tooltip"
 msgid "Share images using various services"
 msgstr ""
 
-#: app/browsemainpage.cpp:115 app/viewmainpage.cpp:388 app/mainwindow.cpp:344
+#: app/kipiimagecollectionselector.cpp:55
+#, kde-format
+msgctxt "%1 is collection name, %2 is image count in collection"
+msgid "%1 (%2 image)"
+msgid_plural "%1 (%2 images)"
+msgstr[0] "%1 (%2 кескін)"
+
+#: app/configdialog.cpp:72
+msgid "General"
+msgstr "Жалпы"
+
+#: app/configdialog.cpp:100
+msgid "Image View"
+msgstr "Кескін көрінісі"
+
+#: app/configdialog.cpp:105
+msgid "Advanced"
+msgstr "Қосымша"
+
+#: app/semanticinfocontextmanageritem.cpp:175
+msgid "Semantic Information"
+msgstr "Семантикалық мәліметі"
+
+#: app/semanticinfocontextmanageritem.cpp:197
+#: app/fileopscontextmanageritem.cpp:180
+msgctxt "@title actions category"
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: app/semanticinfocontextmanageritem.cpp:200
+msgctxt "@action"
+msgid "Edit Tags"
+msgstr "Жарлықтарын өңдеу"
+
+#: app/semanticinfocontextmanageritem.cpp:210
+msgctxt "@action Rating value of zero"
+msgid "Zero"
+msgstr "Нөл"
+
+#: app/semanticinfocontextmanageritem.cpp:246
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: app/browsemainpage.cpp:115 app/mainwindow.cpp:344 app/viewmainpage.cpp:388
 #: lib/documentview/documentviewcontroller.cpp:92
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
@@ -377,8 +420,8 @@ msgctxt "@action:inmenu"
 msgid "Rating"
 msgstr "Ұпайлары"
 
-#: app/browsemainpage.cpp:154 app/fileopscontextmanageritem.cpp:179
-#: app/mainwindow.cpp:343
+#: app/browsemainpage.cpp:154 app/mainwindow.cpp:343
+#: app/fileopscontextmanageritem.cpp:179
 msgctxt "@title actions category"
 msgid "File"
 msgstr "Файл"
@@ -394,49 +437,6 @@ msgctxt "@label"
 msgid "%1 document"
 msgid_plural "%1 documents"
 msgstr[0] "%1 құжат"
-
-#: app/kipiimagecollectionselector.cpp:55
-#, kde-format
-msgctxt "%1 is collection name, %2 is image count in collection"
-msgid "%1 (%2 image)"
-msgid_plural "%1 (%2 images)"
-msgstr[0] "%1 (%2 кескін)"
-
-#: app/configdialog.cpp:72
-msgid "General"
-msgstr "Жалпы"
-
-#: app/configdialog.cpp:100
-msgid "Image View"
-msgstr "Кескін көрінісі"
-
-#: app/configdialog.cpp:105
-msgid "Advanced"
-msgstr "Қосымша"
-
-#: app/semanticinfocontextmanageritem.cpp:175
-msgid "Semantic Information"
-msgstr "Семантикалық мәліметі"
-
-#: app/semanticinfocontextmanageritem.cpp:197
-#: app/fileopscontextmanageritem.cpp:180
-msgctxt "@title actions category"
-msgid "Edit"
-msgstr "Өңдеу"
-
-#: app/semanticinfocontextmanageritem.cpp:200
-msgctxt "@action"
-msgid "Edit Tags"
-msgstr "Жарлықтарын өңдеу"
-
-#: app/semanticinfocontextmanageritem.cpp:210
-msgctxt "@action Rating value of zero"
-msgid "Zero"
-msgstr "Нөл"
-
-#: app/semanticinfocontextmanageritem.cpp:246
-msgid "Edit"
-msgstr "Өңдеу"
 
 #: app/filtercontroller.cpp:131
 msgid "Name contains"
@@ -497,6 +497,179 @@ msgstr "Ұпайлары бойынша сүзгілеу"
 msgctxt "@action:inmenu"
 msgid "Filter by Tag"
 msgstr "Жарлығы бойынша сүзгілеу"
+
+#: app/mainwindow.cpp:353
+msgctxt "@action reload the currently viewed image"
+msgid "Reload"
+msgstr "Қайта жүктеу"
+
+#: app/mainwindow.cpp:358
+#, fuzzy
+#| msgctxt "@action Switch to file list"
+#| msgid "Browse"
+msgctxt "@action:intoolbar Switch to file list"
+msgid "Browse"
+msgstr "Ақтару"
+
+#: app/mainwindow.cpp:359
+msgctxt "@info:tooltip"
+msgid "Browse folders for images"
+msgstr ""
+
+#: app/mainwindow.cpp:366
+#, fuzzy
+#| msgctxt "@title actions category - means actions changing smth in interface"
+#| msgid "View"
+msgctxt "@action:intoolbar Switch to image view"
+msgid "View"
+msgstr "Көрініс"
+
+#: app/mainwindow.cpp:367
+#, fuzzy
+#| msgid "Loop on images"
+msgctxt "@info:tooltip"
+msgid "View selected images"
+msgstr "Кескін кезегі тұйық"
+
+#: app/mainwindow.cpp:388
+#, fuzzy
+#| msgid "Start in fullscreen mode"
+msgctxt "@action"
+msgid "Leave Fullscreen Mode"
+msgstr "Толықэкранды күйінде бастау"
+
+#: app/mainwindow.cpp:394
+msgctxt "@action Go to previous image"
+msgid "Previous"
+msgstr "Алдындағыға"
+
+#: app/mainwindow.cpp:395
+#, fuzzy
+#| msgid "Go to Previous Image"
+msgctxt "@info:tooltip"
+msgid "Go to previous image"
+msgstr "Алдыңдағы кескінге өту"
+
+#: app/mainwindow.cpp:401
+msgctxt "@action Go to next image"
+msgid "Next"
+msgstr "Келесіге"
+
+#: app/mainwindow.cpp:402
+#, fuzzy
+#| msgid "Go to Next Image"
+msgctxt "@info:tooltip"
+msgid "Go to next image"
+msgstr "Келесі кескінге өту"
+
+#: app/mainwindow.cpp:407
+msgctxt "@action Go to first image"
+msgid "First"
+msgstr "Біріншіге"
+
+#: app/mainwindow.cpp:408
+#, fuzzy
+#| msgid "Go to First Image"
+msgctxt "@info:tooltip"
+msgid "Go to first image"
+msgstr "Бірінші кескінге өту"
+
+#: app/mainwindow.cpp:413
+msgctxt "@action Go to last image"
+msgid "Last"
+msgstr "Соңғысына"
+
+#: app/mainwindow.cpp:414
+#, fuzzy
+#| msgid "Go to Last Image"
+msgctxt "@info:tooltip"
+msgid "Go to last image"
+msgstr "Соңғы кескінге өту"
+
+#: app/mainwindow.cpp:422
+msgctxt "@action"
+msgid "Start Page"
+msgstr "Бастапқы бет"
+
+#: app/mainwindow.cpp:423
+msgctxt "@info:tooltip"
+msgid "Open the start page"
+msgstr ""
+
+#: app/mainwindow.cpp:430
+msgctxt "@action"
+msgid "Sidebar"
+msgstr "Бүйір панелі"
+
+#: app/mainwindow.cpp:465
+msgctxt "@title actions category - means actions changing smth in interface"
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: app/mainwindow.cpp:470
+msgid "Redo"
+msgstr "Қайтудан айну"
+
+#: app/mainwindow.cpp:477
+msgid "Undo"
+msgstr "Амалдан қайту"
+
+#: app/mainwindow.cpp:523
+msgid "Folders"
+msgstr "Қапшықтары"
+
+#: app/mainwindow.cpp:529
+msgid "Information"
+msgstr "Мәліметі"
+
+#: app/mainwindow.cpp:540
+msgid "Operations"
+msgstr "Амалдары"
+
+#: app/mainwindow.cpp:1147
+#, fuzzy
+#| msgid "Hide Sidebar"
+msgctxt "@info:tooltip"
+msgid "Hide sidebar"
+msgstr "Бүйір панелі жасыру"
+
+#: app/mainwindow.cpp:1147
+#, fuzzy
+#| msgid "Show Sidebar"
+msgctxt "@info:tooltip"
+msgid "Show sidebar"
+msgstr "Бүйір панелі көрсету"
+
+#: app/mainwindow.cpp:1372
+msgctxt "@title:window"
+msgid "Open Image"
+msgstr "Кескінді ашу"
+
+#: app/mainwindow.cpp:1426
+msgid "Stop Slideshow"
+msgstr "Слайд-шоуды тоқтату"
+
+#: app/mainwindow.cpp:1429
+msgid "Start Slideshow"
+msgstr "Слайд-шоуды бастау"
+
+#: app/mainwindow.cpp:1443
+msgid "Save All Changes"
+msgstr "Барлық өзгерістерді сақтау"
+
+#: app/mainwindow.cpp:1444
+msgid "Discard Changes"
+msgstr "Өзгерістерді ысырып тастау"
+
+#: app/mainwindow.cpp:1445
+#, kde-format
+msgid "One image has been modified."
+msgid_plural "%1 images have been modified."
+msgstr[0] "%1 кескін өзгертілген"
+
+#: app/mainwindow.cpp:1447
+msgid "If you quit now, your changes will be lost."
+msgstr "Қазір шықсаңыз барлық өзгерістеріңіз жоғалады."
 
 #: app/viewmainpage.cpp:286 app/viewmainpage.cpp:400
 msgid "Synchronize"
@@ -687,184 +860,24 @@ msgctxt "@title:window"
 msgid "Image Information"
 msgstr "Мета мәліметі"
 
-#: app/mainwindow.cpp:353
-msgctxt "@action reload the currently viewed image"
-msgid "Reload"
-msgstr "Қайта жүктеу"
-
-#: app/mainwindow.cpp:358
-#, fuzzy
-#| msgctxt "@action Switch to file list"
-#| msgid "Browse"
-msgctxt "@action:intoolbar Switch to file list"
-msgid "Browse"
-msgstr "Ақтару"
-
-#: app/mainwindow.cpp:359
-msgctxt "@info:tooltip"
-msgid "Browse folders for images"
-msgstr ""
-
-#: app/mainwindow.cpp:366
-#, fuzzy
-#| msgctxt "@title actions category - means actions changing smth in interface"
-#| msgid "View"
-msgctxt "@action:intoolbar Switch to image view"
-msgid "View"
-msgstr "Көрініс"
-
-#: app/mainwindow.cpp:367
-#, fuzzy
-#| msgid "Loop on images"
-msgctxt "@info:tooltip"
-msgid "View selected images"
-msgstr "Кескін кезегі тұйық"
-
-#: app/mainwindow.cpp:388
-#, fuzzy
-#| msgid "Start in fullscreen mode"
-msgctxt "@action"
-msgid "Leave Fullscreen Mode"
-msgstr "Толықэкранды күйінде бастау"
-
-#: app/mainwindow.cpp:394
-msgctxt "@action Go to previous image"
-msgid "Previous"
-msgstr "Алдындағыға"
-
-#: app/mainwindow.cpp:395
-#, fuzzy
-#| msgid "Go to Previous Image"
-msgctxt "@info:tooltip"
-msgid "Go to previous image"
-msgstr "Алдыңдағы кескінге өту"
-
-#: app/mainwindow.cpp:401
-msgctxt "@action Go to next image"
-msgid "Next"
-msgstr "Келесіге"
-
-#: app/mainwindow.cpp:402
-#, fuzzy
-#| msgid "Go to Next Image"
-msgctxt "@info:tooltip"
-msgid "Go to next image"
-msgstr "Келесі кескінге өту"
-
-#: app/mainwindow.cpp:407
-msgctxt "@action Go to first image"
-msgid "First"
-msgstr "Біріншіге"
-
-#: app/mainwindow.cpp:408
-#, fuzzy
-#| msgid "Go to First Image"
-msgctxt "@info:tooltip"
-msgid "Go to first image"
-msgstr "Бірінші кескінге өту"
-
-#: app/mainwindow.cpp:413
-msgctxt "@action Go to last image"
-msgid "Last"
-msgstr "Соңғысына"
-
-#: app/mainwindow.cpp:414
-#, fuzzy
-#| msgid "Go to Last Image"
-msgctxt "@info:tooltip"
-msgid "Go to last image"
-msgstr "Соңғы кескінге өту"
-
-#: app/mainwindow.cpp:422
-msgctxt "@action"
-msgid "Start Page"
-msgstr "Бастапқы бет"
-
-#: app/mainwindow.cpp:423
-msgctxt "@info:tooltip"
-msgid "Open the start page"
-msgstr ""
-
-#: app/mainwindow.cpp:430
-msgctxt "@action"
-msgid "Sidebar"
-msgstr "Бүйір панелі"
-
-#: app/mainwindow.cpp:465
-msgctxt "@title actions category - means actions changing smth in interface"
-msgid "Edit"
-msgstr "Өңдеу"
-
-#: app/mainwindow.cpp:470
-msgid "Redo"
-msgstr "Қайтудан айну"
-
-#: app/mainwindow.cpp:477
-msgid "Undo"
-msgstr "Амалдан қайту"
-
-#: app/mainwindow.cpp:523
-msgid "Folders"
-msgstr "Қапшықтары"
-
-#: app/mainwindow.cpp:529
-msgid "Information"
-msgstr "Мәліметі"
-
-#: app/mainwindow.cpp:540
-msgid "Operations"
-msgstr "Амалдары"
-
-#: app/mainwindow.cpp:1147
-#, fuzzy
-#| msgid "Hide Sidebar"
-msgctxt "@info:tooltip"
-msgid "Hide sidebar"
-msgstr "Бүйір панелі жасыру"
-
-#: app/mainwindow.cpp:1147
-#, fuzzy
-#| msgid "Show Sidebar"
-msgctxt "@info:tooltip"
-msgid "Show sidebar"
-msgstr "Бүйір панелі көрсету"
-
-#: app/mainwindow.cpp:1372
-msgctxt "@title:window"
-msgid "Open Image"
-msgstr "Кескінді ашу"
-
-#: app/mainwindow.cpp:1426
-msgid "Stop Slideshow"
-msgstr "Слайд-шоуды тоқтату"
-
-#: app/mainwindow.cpp:1429
-msgid "Start Slideshow"
-msgstr "Слайд-шоуды бастау"
-
-#: app/mainwindow.cpp:1443
-msgid "Save All Changes"
-msgstr "Барлық өзгерістерді сақтау"
-
-#: app/mainwindow.cpp:1444
-msgid "Discard Changes"
-msgstr "Өзгерістерді ысырып тастау"
-
-#: app/mainwindow.cpp:1445
-#, kde-format
-msgid "One image has been modified."
-msgid_plural "%1 images have been modified."
-msgstr[0] "%1 кескін өзгертілген"
-
-#: app/mainwindow.cpp:1447
-msgid "If you quit now, your changes will be lost."
-msgstr "Қазір шықсаңыз барлық өзгерістеріңіз жоғалады."
-
 #: importer/importerconfigdialog.cpp:56
 #, kde-format
 msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1: %2"
+
+#: importer/importer.cpp:80
+msgid "Could not create destination folder."
+msgstr "Мақсатты қапшық құрылмайды."
+
+#: importer/importer.cpp:86
+#, kde-format
+msgid ""
+"Could not create temporary upload folder:\n"
+"%1"
+msgstr ""
+"Жүктеп беру үшін уақытша қапшығы құрылмады:\n"
+"%1"
 
 #: importer/importdialog.cpp:73
 #, kde-format
@@ -996,19 +1009,6 @@ msgstr "Файлдың бастапқы атауы"
 msgid "Original filename, in lower case"
 msgstr "Файлдың бастапқы атауы, кіші әріптермен"
 
-#: importer/importer.cpp:80
-msgid "Could not create destination folder."
-msgstr "Мақсатты қапшық құрылмайды."
-
-#: importer/importer.cpp:86
-#, kde-format
-msgid ""
-"Could not create temporary upload folder:\n"
-"%1"
-msgstr ""
-"Жүктеп беру үшін уақытша қапшығы құрылмады:\n"
-"%1"
-
 #: importer/thumbnailpage.cpp:150
 msgid "Import Selected"
 msgstr "Таңдалғанды импорттау"
@@ -1060,26 +1060,6 @@ msgctxt "@info"
 msgid "Gwenview cannot save this kind of documents."
 msgstr "Gwenview бұндай құжаттарды сақтай алмайды."
 
-#: lib/document/savejob.cpp:105
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Could not open file for writing, check that you have the necessary rights in "
-"<filename>%1</filename>."
-msgstr ""
-"Файл жазуға ашылмады, <filename>%1</filename>.дегенге жазу рұқсатңызды "
-"түгелдеңіз."
-
-#: lib/document/savejob.cpp:129
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Could not overwrite file, check that you have the necessary rights to write "
-"in <filename>%1</filename>."
-msgstr ""
-"Файл үстінен жазылмады, <filename>%1</filename>.дегенге жазу рұқсатңызды "
-"түгелдеңіз."
-
 #: lib/document/loadingdocumentimpl.cpp:129
 #, kde-format
 msgctxt "@info"
@@ -1102,10 +1082,46 @@ msgctxt "@info"
 msgid "Loading image failed."
 msgstr "Кескіннің жүктеу жаңылысы."
 
+#: lib/document/savejob.cpp:105
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not open file for writing, check that you have the necessary rights in "
+"<filename>%1</filename>."
+msgstr ""
+"Файл жазуға ашылмады, <filename>%1</filename>.дегенге жазу рұқсатңызды "
+"түгелдеңіз."
+
+#: lib/document/savejob.cpp:129
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
+msgstr ""
+"Файл үстінен жазылмады, <filename>%1</filename>.дегенге жазу рұқсатңызды "
+"түгелдеңіз."
+
 #: lib/document/loadingjob.cpp:57
 #, kde-format
 msgid "Could not load document %1"
 msgstr "%1 құжатты жүктелмеді"
+
+#: lib/documentview/documentviewcontroller.cpp:98
+msgid "Zoom to Fit"
+msgstr "Шақтап масштабтау"
+
+#: lib/documentview/documentviewcontroller.cpp:100
+msgctxt "@action:button Zoom to fit, shown in status bar, keep it short please"
+msgid "Fit"
+msgstr "Шақтау"
+
+#: lib/documentview/documentviewcontroller.cpp:104
+msgctxt ""
+"@action:button Zoom to original size, shown in status bar, keep it short "
+"please"
+msgid "100%"
+msgstr "100%"
 
 #: lib/documentview/documentview.cpp:167
 #, fuzzy
@@ -1130,22 +1146,6 @@ msgstr "Gwenview бұндай құжатты қалай көрсетуді бі�
 #, kde-format
 msgid "Loading <filename>%1</filename> failed"
 msgstr "<filename>%1</filename> жүктеу жаңылысы"
-
-#: lib/documentview/documentviewcontroller.cpp:98
-msgid "Zoom to Fit"
-msgstr "Шақтап масштабтау"
-
-#: lib/documentview/documentviewcontroller.cpp:100
-msgctxt "@action:button Zoom to fit, shown in status bar, keep it short please"
-msgid "Fit"
-msgstr "Шақтау"
-
-#: lib/documentview/documentviewcontroller.cpp:104
-msgctxt ""
-"@action:button Zoom to original size, shown in status bar, keep it short "
-"please"
-msgid "100%"
-msgstr "100%"
 
 #: lib/documentview/messageviewadapter.cpp:52
 msgid "No document selected"
