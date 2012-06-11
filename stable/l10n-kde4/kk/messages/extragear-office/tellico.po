@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-31 14:02+0200\n"
+"POT-Creation-Date: 2012-06-11 12:18+0200\n"
 "PO-Revision-Date: 2012-06-10 07:49+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1949,7 +1949,7 @@ msgstr "*.xsl|XSL файлдары (*.xsl)"
 msgid "*.tar.gz *.tgz|Template Packages (*.tar.gz)"
 msgstr "*.tar.gz *.tgz|Үлгі дестелері (*.tar.gz)"
 
-#: src/configdialog.cpp:1137 src/importdialog.cpp:337 src/reportdialog.cpp:215
+#: src/configdialog.cpp:1137 src/importdialog.cpp:346 src/reportdialog.cpp:215
 #: src/translators/bibtexexporter.cpp:61
 #: src/translators/bibtexmlexporter.cpp:53 src/translators/csvexporter.cpp:59
 #: src/translators/htmlexporter.cpp:91 src/translators/onixexporter.cpp:71
@@ -1969,6 +1969,97 @@ msgstr "Үлгіні өшіру"
 #: src/configdialog.cpp:1169
 msgid "Select template to delete:"
 msgstr "Өшірілетін үлгі:"
+
+#: src/importdialog.cpp:69 src/importdialog.cpp:75
+msgid "Import Options"
+msgstr "Импорттау параметрлері"
+
+#: src/importdialog.cpp:79
+msgid "&Replace current collection"
+msgstr "Назардағы жинақ а&уыстырылсын"
+
+#: src/importdialog.cpp:80
+msgid "Replace the current collection with the contents of the imported file."
+msgstr "Назардағы жинақты импортталған файлдың мазмұнымен ауыстыру."
+
+#: src/importdialog.cpp:82
+msgid "A&ppend to current collection"
+msgstr "Назардағы жинақ жа&лғастырылсын"
+
+#: src/importdialog.cpp:83
+msgid ""
+"Append the contents of the imported file to the current collection. This is "
+"only possible when the collection types match."
+msgstr ""
+"Назардағы жинақты импортталған файлдың мазмұнымен жалғастыру. Әрине, түрі "
+"бірдей болса."
+
+#: src/importdialog.cpp:86
+msgid "&Merge with current collection"
+msgstr "Назардағы жинақпен &біріктірілсін"
+
+#: src/importdialog.cpp:87
+msgid ""
+"Merge the contents of the imported file to the current collection. This is "
+"only possible when the collection types match. Entries must match exactly in "
+"order to be merged."
+msgstr ""
+"Назардағы жинақты импортталған файлдың мазмұнымен біріктіру.  Әрине, түрі "
+"нақты бірдей болса ғана мүмкін."
+
+#. i18n: file: src/tellicoui.rc:24
+#. i18n: ectx: Menu (file_import)
+#: src/importdialog.cpp:122 src/mainwindow.cpp:318 rc.cpp:280
+msgid "&Import"
+msgstr "&Импорт"
+
+#: src/importdialog.cpp:289 src/translators/tellicozipexporter.cpp:56
+#: src/mainwindow.cpp:1063 src/mainwindow.cpp:1230
+msgid "*.tc *.bc|Tellico Files (*.tc)"
+msgstr "*.tc *.bc|Tellico файлдары (*.tc)"
+
+#: src/importdialog.cpp:290 src/importdialog.cpp:303 src/importdialog.cpp:308
+#: src/translators/tellicoxmlexporter.cpp:70 src/mainwindow.cpp:1065
+msgid "*.xml|XML Files (*.xml)"
+msgstr "*.xml|XML файлдары (*.xml)"
+
+#: src/importdialog.cpp:294 src/translators/bibtexexporter.cpp:61
+msgid "*.bib|Bibtex Files (*.bib)"
+msgstr "*.bib|Bibtex файлдары (*.bib)"
+
+#: src/importdialog.cpp:298 src/translators/csvexporter.cpp:59
+msgid "*.csv|CSV Files (*.csv)"
+msgstr "*.csv|CSV файлдары (*.csv)"
+
+#: src/importdialog.cpp:312
+msgid "*.ris|RIS Files (*.ris)"
+msgstr "*.ris|RIS файлдары (*.ris)"
+
+#: src/importdialog.cpp:316 src/translators/gcstarexporter.cpp:60
+msgid "*.gcs|GCstar Data Files (*.gcs)"
+msgstr "*.gcs|GCstar Data файдары (*.gcs)"
+
+#: src/importdialog.cpp:317
+msgid "*.gcf|GCfilms Data Files (*.gcf)"
+msgstr "*.gcf|GCfilms дерек файлдары (*.gcf)"
+
+#: src/importdialog.cpp:321
+msgid "*.amc|AMC Data Files (*.amc)"
+msgstr "*.amc|AMC дерек файлдары (*.amc)"
+
+#: src/importdialog.cpp:325
+msgid "*.pdf|PDF Files (*.pdf)"
+msgstr "*.pdf|PDF файлдары (*.pdf)"
+
+#: src/importdialog.cpp:329
+msgid "*.reflib|Referencer Files (*.reflib)"
+msgstr "*.reflib|Referencer файлдары (*.reflib)"
+
+#: src/importdialog.cpp:333
+#, fuzzy
+#| msgid "*.csv|CSV Files (*.csv)"
+msgid "*.ciw|CIW Files (*.ciw)"
+msgstr "*.csv|CSV файлдары (*.csv)"
 
 #: src/core/tellico_strings.cpp:29
 #, kde-format
@@ -3195,91 +3286,6 @@ msgstr "Күні %1 дегеннен ерте болмау керек"
 msgctxt "@info"
 msgid "Date cannot be later than %1"
 msgstr "Күні %1 дегеннен кеш болмау керек"
-
-#: src/importdialog.cpp:68 src/importdialog.cpp:74
-msgid "Import Options"
-msgstr "Импорттау параметрлері"
-
-#: src/importdialog.cpp:78
-msgid "&Replace current collection"
-msgstr "Назардағы жинақ а&уыстырылсын"
-
-#: src/importdialog.cpp:79
-msgid "Replace the current collection with the contents of the imported file."
-msgstr "Назардағы жинақты импортталған файлдың мазмұнымен ауыстыру."
-
-#: src/importdialog.cpp:81
-msgid "A&ppend to current collection"
-msgstr "Назардағы жинақ жа&лғастырылсын"
-
-#: src/importdialog.cpp:82
-msgid ""
-"Append the contents of the imported file to the current collection. This is "
-"only possible when the collection types match."
-msgstr ""
-"Назардағы жинақты импортталған файлдың мазмұнымен жалғастыру. Әрине, түрі "
-"бірдей болса."
-
-#: src/importdialog.cpp:85
-msgid "&Merge with current collection"
-msgstr "Назардағы жинақпен &біріктірілсін"
-
-#: src/importdialog.cpp:86
-msgid ""
-"Merge the contents of the imported file to the current collection. This is "
-"only possible when the collection types match. Entries must match exactly in "
-"order to be merged."
-msgstr ""
-"Назардағы жинақты импортталған файлдың мазмұнымен біріктіру.  Әрине, түрі "
-"нақты бірдей болса ғана мүмкін."
-
-#. i18n: file: src/tellicoui.rc:24
-#. i18n: ectx: Menu (file_import)
-#: src/importdialog.cpp:121 src/mainwindow.cpp:318 rc.cpp:280
-msgid "&Import"
-msgstr "&Импорт"
-
-#: src/importdialog.cpp:284 src/translators/tellicozipexporter.cpp:56
-#: src/mainwindow.cpp:1063 src/mainwindow.cpp:1230
-msgid "*.tc *.bc|Tellico Files (*.tc)"
-msgstr "*.tc *.bc|Tellico файлдары (*.tc)"
-
-#: src/importdialog.cpp:285 src/importdialog.cpp:298 src/importdialog.cpp:303
-#: src/translators/tellicoxmlexporter.cpp:70 src/mainwindow.cpp:1065
-msgid "*.xml|XML Files (*.xml)"
-msgstr "*.xml|XML файлдары (*.xml)"
-
-#: src/importdialog.cpp:289 src/translators/bibtexexporter.cpp:61
-msgid "*.bib|Bibtex Files (*.bib)"
-msgstr "*.bib|Bibtex файлдары (*.bib)"
-
-#: src/importdialog.cpp:293 src/translators/csvexporter.cpp:59
-msgid "*.csv|CSV Files (*.csv)"
-msgstr "*.csv|CSV файлдары (*.csv)"
-
-#: src/importdialog.cpp:307
-msgid "*.ris|RIS Files (*.ris)"
-msgstr "*.ris|RIS файлдары (*.ris)"
-
-#: src/importdialog.cpp:311 src/translators/gcstarexporter.cpp:60
-msgid "*.gcs|GCstar Data Files (*.gcs)"
-msgstr "*.gcs|GCstar Data файдары (*.gcs)"
-
-#: src/importdialog.cpp:312
-msgid "*.gcf|GCfilms Data Files (*.gcf)"
-msgstr "*.gcf|GCfilms дерек файлдары (*.gcf)"
-
-#: src/importdialog.cpp:316
-msgid "*.amc|AMC Data Files (*.amc)"
-msgstr "*.amc|AMC дерек файлдары (*.amc)"
-
-#: src/importdialog.cpp:320
-msgid "*.pdf|PDF Files (*.pdf)"
-msgstr "*.pdf|PDF файлдары (*.pdf)"
-
-#: src/importdialog.cpp:324
-msgid "*.reflib|Referencer Files (*.reflib)"
-msgstr "*.reflib|Referencer файлдары (*.reflib)"
 
 #: src/loanview.cpp:118
 msgid "Check-in"
