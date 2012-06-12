@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-11 03:42+0200\n"
+"POT-Creation-Date: 2012-06-12 03:18+0200\n"
 "PO-Revision-Date: 2012-05-10 02:56+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -81,7 +81,7 @@ msgctxt "(qtundo-format)"
 msgid "Hide Changes"
 msgstr "Өзгерістерді жасыру"
 
-#: commands/ChangeListLevelCommand.cpp:42
+#: commands/ChangeListLevelCommand.cpp:44
 msgctxt "(qtundo-format)"
 msgid "Change List Level"
 msgstr "Тізімдің деңгейін өзгерту"
@@ -173,7 +173,7 @@ msgstr "Жол астылық"
 msgid "Special Characters"
 msgstr "Арнаулы таңбалар"
 
-#: dialogs/InsertCharacter.cpp:39 TextTool.cpp:2111 ReferencesTool.cpp:94
+#: dialogs/InsertCharacter.cpp:39 TextTool.cpp:2126 ReferencesTool.cpp:94
 msgid "Insert"
 msgstr "Ендіру"
 
@@ -522,6 +522,18 @@ msgstr "Емлесін тексеру"
 msgid "Comments"
 msgstr "Түсініктемелер"
 
+#: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
+msgid "Text"
+msgstr "Мәтін"
+
+#: TextShapeFactory.cpp:44
+msgid "A shape that shows text"
+msgstr "Мәтіннің көрсететін қалып"
+
+#: TextShapeFactory.cpp:54
+msgid "Text Shape"
+msgstr "Мәтін қалыпы"
+
 #: TextTool.cpp:204
 msgid "Paste As Text"
 msgstr "Мәтін деп орналастыру"
@@ -860,35 +872,35 @@ msgstr ""
 
 #. i18n: file: dialogs/StyleManager.ui:53
 #. i18n: ectx: attribute (title), widget (QListView, characterStylesListView)
-#: TextTool.cpp:2105 rc.cpp:746
+#: TextTool.cpp:2120 rc.cpp:746
 msgid "Character"
 msgstr "Таңба"
 
 #. i18n: file: dialogs/StyleManager.ui:39
 #. i18n: ectx: attribute (title), widget (QListView, paragraphStylesListView)
-#: TextTool.cpp:2107 rc.cpp:743
+#: TextTool.cpp:2122 rc.cpp:743
 msgid "Paragraph"
 msgstr "Абзац"
 
-#: TextTool.cpp:2109
+#: TextTool.cpp:2124
 msgid "Table"
 msgstr "Кесте"
 
-#: TextTool.cpp:2417
+#: TextTool.cpp:2446
 msgid "Key Press"
 msgstr "Пернені басу"
 
-#: TextTool.cpp:2417 TextTool.cpp:2422
+#: TextTool.cpp:2446 TextTool.cpp:2451
 msgid "Autocorrection"
 msgstr "Автотүзету"
 
 #. i18n: file: dialogs/StyleManager.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: TextTool.cpp:2422 rc.cpp:752
+#: TextTool.cpp:2451 rc.cpp:752
 msgid "Delete"
 msgstr "Өшіру"
 
-#: TextTool.cpp:2688
+#: TextTool.cpp:2717
 #, kde-format
 msgid ""
 "This link points to the program or script '%1'.\n"
@@ -898,21 +910,9 @@ msgstr ""
 "Бұл '%1' деген бағдарлама не скрипт сілтемесі.\n"
 "Бөтен бағдарлама зиян келтіруі мүмкін. Бағдарлама орындалсын ба?"
 
-#: TextTool.cpp:2693
+#: TextTool.cpp:2722
 msgid "Open Link?"
 msgstr "Сілтеме ашылсын ба?"
-
-#: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
-msgid "Text"
-msgstr "Мәтін"
-
-#: TextShapeFactory.cpp:44
-msgid "A shape that shows text"
-msgstr "Мәтіннің көрсететін қалып"
-
-#: TextShapeFactory.cpp:54
-msgid "Text Shape"
-msgstr "Мәтін қалыпы"
 
 #. i18n: file: dialogs/AcceptRejectChangeDialog.ui:26
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
@@ -1279,6 +1279,9 @@ msgstr "Жалпы"
 #. i18n: file: dialogs/CharacterGeneral.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:139
+#, fuzzy
+#| msgid "Name:"
+msgctxt "Name of the style"
 msgid "Name:"
 msgstr "Атауы:"
 

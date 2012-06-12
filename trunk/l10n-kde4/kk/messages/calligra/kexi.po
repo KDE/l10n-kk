@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-10 03:16+0200\n"
+"POT-Creation-Date: 2012-06-12 03:14+0200\n"
 "PO-Revision-Date: 2012-05-02 04:55+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -680,9 +680,7 @@ msgstr ""
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
-#: core/kexiguimsghandler.cpp:149 plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229
+#: core/kexiguimsghandler.cpp:149
 msgid "Warning"
 msgstr "Ескерту"
 
@@ -3888,9 +3886,7 @@ msgid "This file already exists. Do you want to overwrite it?"
 msgstr "Бұндай файл бар екен. Үстінен жаза берейік пе?"
 
 #: main/startup/KexiStartupFileHandler.cpp:490
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:229 widget/KexiFileWidget.cpp:433
+#: plugins/reports/kexireportview.cpp:175 widget/KexiFileWidget.cpp:433
 msgid "Overwrite"
 msgstr "Жаза беру"
 
@@ -6102,7 +6098,6 @@ msgid "Snap to Grid"
 msgstr "Торға келтіру"
 
 #: plugins/forms/kexiformmanager.cpp:190
-#: plugins/reports/kexireportview.cpp:237
 msgid "Style"
 msgstr "Стиль"
 
@@ -6785,56 +6780,57 @@ msgstr "Баянаты басып шығару"
 msgid "Prints the current report."
 msgstr "Назардағы баянатты басып шығару."
 
-#: plugins/reports/kexireportview.cpp:91
+#: plugins/reports/kexireportview.cpp:89
 msgid "Export:"
 msgstr "Экспорт ету:"
 
-#: plugins/reports/kexireportview.cpp:95
-msgctxt "Note: do not translate 'Words'"
-msgid "Save to Words"
-msgstr "Words үшін сақтау"
+#: plugins/reports/kexireportview.cpp:94
+msgid "Export as Text Document"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:97
+msgid "Export the report as a text document (in OpenDocument Text format)"
+msgstr ""
 
 #: plugins/reports/kexireportview.cpp:98
-msgid "Save the report to a Words application's document"
-msgstr "Баянаты Words құжатына сақтау"
+msgid "Exports the report as a text document (in OpenDocument Text format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:99
-msgid "Saves the report to a Words application's document."
-msgstr "Баянаты Words құжатына сақтау."
-
-#: plugins/reports/kexireportview.cpp:106
-msgctxt "Note: do not translate 'Tables'"
-msgid "Save to Spreadsheet"
+#: plugins/reports/kexireportview.cpp:105
+#, fuzzy
+#| msgctxt "Note: do not translate 'Tables'"
+#| msgid "Save to Spreadsheet"
+msgid "Export as Spreadsheet"
 msgstr "Электрондық кестеге сақтау"
 
+#: plugins/reports/kexireportview.cpp:108
+msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
+msgstr ""
+
 #: plugins/reports/kexireportview.cpp:109
-msgid "Save the report to a spreadsheet"
-msgstr "Баянатты электрондық кестеге сақтау"
+msgid ""
+"Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
-msgid "Saves the current report to a spreadsheet."
-msgstr "Назардағы баянатты электрондық кестеге сақтау."
+#: plugins/reports/kexireportview.cpp:116
+#, fuzzy
+#| msgid "Save Report as Web Page"
+msgid "Export as Web Page"
+msgstr "Баянатты веб параққа сақтау"
 
-#: plugins/reports/kexireportview.cpp:117
-msgid "Save as Web Page"
-msgstr "Веб парақ түрінде сақтау"
-
-#: plugins/reports/kexireportview.cpp:120
-msgid "Save the report as web page"
+#: plugins/reports/kexireportview.cpp:119
+#, fuzzy
+#| msgid "Save the report as web page"
+msgid "Export the report as a web page (in HTML format)"
 msgstr "Баянатты веб парақ түрінде сақтау"
 
-#: plugins/reports/kexireportview.cpp:121
-msgid "Saves the report to a web page file."
+#: plugins/reports/kexireportview.cpp:120
+#, fuzzy
+#| msgid "Saves the report to a web page file."
+msgid "Exports the report as a web page (in HTML format)."
 msgstr "Баянатты веб парақ файлына сақтау."
 
-#: plugins/reports/kexireportview.cpp:171
-#: plugins/reports/kexireportview.cpp:198
-msgid "Save Report to..."
-msgstr "Баянатты мынаған сақтау..."
-
-#: plugins/reports/kexireportview.cpp:177
-#: plugins/reports/kexireportview.cpp:204
-#: plugins/reports/kexireportview.cpp:228
+#: plugins/reports/kexireportview.cpp:174
 #, kde-format
 msgid ""
 "The file %1 exists.\n"
@@ -6843,67 +6839,76 @@ msgstr ""
 "%1 деген файл бар екен.\n"
 "Үстінен жаза берейік пе?"
 
-#: plugins/reports/kexireportview.cpp:183
+#: plugins/reports/kexireportview.cpp:200
+#, fuzzy
+#| msgid "Save the report to a spreadsheet"
+msgid "Export Report as Spreadsheet"
+msgstr "Баянатты электрондық кестеге сақтау"
+
+#: plugins/reports/kexireportview.cpp:207
+#, fuzzy, kde-format
+#| msgid "Save the report to a spreadsheet"
+msgid "Failed to export the report as spreadsheet to %1."
+msgstr "Баянатты электрондық кестеге сақтау"
+
+#: plugins/reports/kexireportview.cpp:208
+#: plugins/reports/kexireportview.cpp:232
+#: plugins/reports/kexireportview.cpp:270
+#, fuzzy
+#| msgid "Saving failed"
+msgid "Export Failed"
+msgstr "Сақтау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:224
+msgid "Export Report as Text Document"
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:231
 #, kde-format
-msgctxt "Note: do not translate 'Tables'"
-msgid "Failed to open %1 in Tables application."
-msgstr "%1 дегенді Tables қолданбасында ашу жаңылысы."
+msgid "Exporting the report as text document to %1 failed."
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:183
-msgid "Opening in Tables application failed"
-msgstr "Tables қолданбасында ашу жаңылысы"
-
-#: plugins/reports/kexireportview.cpp:210
-#, kde-format
-msgctxt "Note: do not translate 'Words'"
-msgid "Failed to save %1 to Words applications"
-msgstr "%1 дегенді Words құжатына сақтау жаңылысы"
-
-#: plugins/reports/kexireportview.cpp:210
-msgid "Saving to Words application failed"
-msgstr "Words құжатына сақтау жаңылысы"
-
-#: plugins/reports/kexireportview.cpp:222
-msgid "Save Report as Web Page"
+#: plugins/reports/kexireportview.cpp:244
+#, fuzzy
+#| msgid "Save Report as Web Page"
+msgid "Export Report as Web Page"
 msgstr "Баянатты веб параққа сақтау"
 
-#: plugins/reports/kexireportview.cpp:236
+#: plugins/reports/kexireportview.cpp:253
 #, fuzzy
 #| msgid ""
 #| "Would you like to export using a Cascading Style Sheet which will give "
 #| "output closer to the original, or export using a Table which outputs a "
 #| "much simpler format."
 msgid ""
-"Would you like to export using a Cascading Style Sheet which will give "
-"output closer to the original, or export using a HTML Table which outputs a "
-"much simpler format."
+"Would you like to export using a Cascading Style Sheet (CSS), which will "
+"give an output closer to the original, or export using a HTML Table, which "
+"outputs a much simpler format?"
 msgstr ""
 "Түпнұсқасына жақын қалдырып CSS-ті қолданып экспорт етуді қалайсыз ба, әлде "
 "қарапайымдау жәй кестеге экспорттап шығарасыз ба?"
 
-#: plugins/reports/kexireportview.cpp:248
-#, kde-format
-msgid "Saving report to %1 failed"
-msgstr "Баянатты %1 деп сақтау жаңылысы"
+#: plugins/reports/kexireportview.cpp:257
+msgid "Use CSS"
+msgstr ""
 
-#: plugins/reports/kexireportview.cpp:248
-msgid "Saving failed"
-msgstr "Сақтау жаңылысы"
+#: plugins/reports/kexireportview.cpp:258
+#, fuzzy
+#| msgid "Table"
+msgid "Use Table"
+msgstr "Кесте"
 
-#: plugins/reports/kexireportview.cpp:250
-#, kde-format
-msgid "Report saved to %1"
-msgstr "Баянат %1 деп сақталды"
+#: plugins/reports/kexireportview.cpp:269
+#, fuzzy, kde-format
+#| msgid "Saves the report to a web page file."
+msgid "Exporting the report as web page to %1 failed."
+msgstr "Баянатты веб парақ файлына сақтау."
 
-#: plugins/reports/kexireportview.cpp:250
-msgid "Saving succeeded"
-msgstr "Сәтті сақталды"
-
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 msgid "Report schema appears to be invalid or corrupt"
 msgstr "Баянат сұлбасы дұрыс емес не бүлінген сияқты"
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:348
 msgid "Opening failed"
 msgstr "Ашу жаңылысы"
 
@@ -8415,6 +8420,51 @@ msgstr "Деректер қоры серверінде сақталатын жо
 msgid "Projects stored in a file"
 msgstr "Файлда сақталатын жобалар"
 
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Save to Words"
+#~ msgstr "Words үшін сақтау"
+
+#~ msgid "Save the report to a Words application's document"
+#~ msgstr "Баянаты Words құжатына сақтау"
+
+#~ msgid "Saves the report to a Words application's document."
+#~ msgstr "Баянаты Words құжатына сақтау."
+
+#~ msgid "Saves the current report to a spreadsheet."
+#~ msgstr "Назардағы баянатты электрондық кестеге сақтау."
+
+#~ msgid "Save as Web Page"
+#~ msgstr "Веб парақ түрінде сақтау"
+
+#~ msgid "Save Report to..."
+#~ msgstr "Баянатты мынаған сақтау..."
+
+#~ msgctxt "Note: do not translate 'Tables'"
+#~ msgid "Failed to open %1 in Tables application."
+#~ msgstr "%1 дегенді Tables қолданбасында ашу жаңылысы."
+
+#~ msgid "Opening in Tables application failed"
+#~ msgstr "Tables қолданбасында ашу жаңылысы"
+
+#~ msgctxt "Note: do not translate 'Words'"
+#~ msgid "Failed to save %1 to Words applications"
+#~ msgstr "%1 дегенді Words құжатына сақтау жаңылысы"
+
+#~ msgid "Saving to Words application failed"
+#~ msgstr "Words құжатына сақтау жаңылысы"
+
+#~ msgid "Saving report to %1 failed"
+#~ msgstr "Баянатты %1 деп сақтау жаңылысы"
+
+#~ msgid "Saving failed"
+#~ msgstr "Сақтау жаңылысы"
+
+#~ msgid "Report saved to %1"
+#~ msgstr "Баянат %1 деп сақталды"
+
+#~ msgid "Saving succeeded"
+#~ msgstr "Сәтті сақталды"
+
 #~ msgid "Documentation for Kexi 2"
 #~ msgstr "Kexi 2 құжаттамасы"
 
@@ -8510,11 +8560,6 @@ msgstr "Файлда сақталатын жобалар"
 
 #~ msgid "Export Style"
 #~ msgstr "Экспорт ету стилі"
-
-#, fuzzy
-#~| msgid "Saving failed"
-#~ msgid "Exporting failed"
-#~ msgstr "Сақтау жаңылысы"
 
 #~ msgid "Main Area"
 #~ msgstr "Негізгі аумақ"
