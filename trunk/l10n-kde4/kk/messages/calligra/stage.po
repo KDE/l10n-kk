@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-13 02:28+0200\n"
+"POT-Creation-Date: 2012-06-14 03:53+0200\n"
 "PO-Revision-Date: 2012-03-14 05:15+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -296,7 +296,7 @@ msgstr "Слайдты көшірмелеу"
 msgid "Copy the current slide"
 msgstr "Назардағы слайдты көшіріп алу"
 
-#: part/KPrView.cpp:88
+#: part/KPrView.cpp:88 part/KPrViewModeSlidesSorter.cpp:188
 msgid "Delete Slide"
 msgstr "Слайдты өшіру"
 
@@ -496,7 +496,7 @@ msgid "Export"
 msgstr "Экспорттау"
 
 #: part/ui/KPrHtmlExportDialog.cpp:158 part/ui/KPrHtmlExportDialog.cpp:210
-#: part/KPrViewModeSlidesSorter.cpp:692
+#: part/KPrViewModeSlidesSorter.cpp:695
 msgid "Error"
 msgstr "Қате"
 
@@ -548,7 +548,7 @@ msgid "Configure Presenter View"
 msgstr "Көрсетуші көрінісін баптау"
 
 #: part/ui/KPrConfigureSlideShowDialog.cpp:41
-#: part/KPrViewModeSlidesSorter.cpp:663
+#: part/KPrViewModeSlidesSorter.cpp:666
 msgid "All slides"
 msgstr "Барлық слайдтар"
 
@@ -558,66 +558,78 @@ msgstr "Барлық слайдтар"
 msgid "Configure Slide Show"
 msgstr "Слайд көрсетілімін баптау"
 
-#: part/KPrViewModeSlidesSorter.cpp:77
+#: part/KPrViewModeNotes.cpp:52
+msgid "Notes"
+msgstr "Жазбалар"
+
+#: part/KPrViewModeSlidesSorter.cpp:79
 msgid "Slides Sorter"
 msgstr "Слайд реттегіші"
 
-#: part/KPrViewModeSlidesSorter.cpp:86
+#: part/KPrViewModeSlidesSorter.cpp:88
 msgid "Slide Show: "
 msgstr "Слайд-шоу:"
 
-#: part/KPrViewModeSlidesSorter.cpp:95
+#: part/KPrViewModeSlidesSorter.cpp:97
 msgid "Add a new custom slide show"
 msgstr "Пайдаланушының жаңа слайд-шоуын қосу"
 
-#: part/KPrViewModeSlidesSorter.cpp:100
+#: part/KPrViewModeSlidesSorter.cpp:102
 msgid "Delete current custom slide show"
 msgstr "Назардағы пайдаланушы слайд-шоуын өшіру"
 
-#: part/KPrViewModeSlidesSorter.cpp:104
+#: part/KPrViewModeSlidesSorter.cpp:106
 msgid "Add slides to current custom slide show"
 msgstr "Назардағы пайдаланушы слайд-шоуына слайдты қосу"
 
-#: part/KPrViewModeSlidesSorter.cpp:109
+#: part/KPrViewModeSlidesSorter.cpp:111
 msgid "Remove slides from current custom slide show"
 msgstr "Назардағы пайдаланушы слайд-шоуынан слайдтарды өшіру"
 
-#: part/KPrViewModeSlidesSorter.cpp:537
+#: part/KPrViewModeSlidesSorter.cpp:187
+#, fuzzy
+#| msgid "Delete Slide"
+msgid "Duplicate Slide"
+msgstr "Слайдты өшіру"
+
+#: part/KPrViewModeSlidesSorter.cpp:189
+#, fuzzy
+#| msgid "Current Slideshow:"
+msgid "Start Slideshow"
+msgstr "Назардағы көрсетілімі:"
+
+#: part/KPrViewModeSlidesSorter.cpp:540
 msgid "Add a new slide"
 msgstr "Жаңа слайдты қосу"
 
-#: part/KPrViewModeSlidesSorter.cpp:538 part/KPrViewModeSlidesSorter.cpp:556
+#: part/KPrViewModeSlidesSorter.cpp:541 part/KPrViewModeSlidesSorter.cpp:559
 msgid "Delete selected slides"
 msgstr "Таңдалған сллайдты өшіру"
 
-#: part/KPrViewModeSlidesSorter.cpp:542
+#: part/KPrViewModeSlidesSorter.cpp:545
 msgid "Rename"
 msgstr "Атауын өзгерту"
 
-#: part/KPrViewModeSlidesSorter.cpp:546
+#: part/KPrViewModeSlidesSorter.cpp:549
 msgid "Cut"
 msgstr "Cut"
 
-#: part/KPrViewModeSlidesSorter.cpp:547
+#: part/KPrViewModeSlidesSorter.cpp:550
 msgid "Copy"
 msgstr "Көшіріп алу"
 
-#: part/KPrViewModeSlidesSorter.cpp:548
+#: part/KPrViewModeSlidesSorter.cpp:551
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: part/KPrViewModeSlidesSorter.cpp:644 part/KPrViewModeSlidesSorter.cpp:649
+#: part/KPrViewModeSlidesSorter.cpp:647 part/KPrViewModeSlidesSorter.cpp:652
 #, kde-format
 msgid "Slide Show %1"
 msgstr "%1 слайд-шоуы"
 
-#: part/KPrViewModeSlidesSorter.cpp:692
+#: part/KPrViewModeSlidesSorter.cpp:695
 msgid "There cannot be two slideshows with the same name."
 msgstr "Бірдей аталған екі слайд-шоу болуға тиіс емес."
-
-#: part/KPrViewModeNotes.cpp:52
-msgid "Notes"
-msgstr "Жазбалар"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:94
 msgctxt "(qtundo-format)"
@@ -2052,9 +2064,6 @@ msgstr "Емлесін тексеру нәтижесі"
 
 #~ msgid "Available Slides"
 #~ msgstr "Бар слайдтары"
-
-#~ msgid "Current Slideshow:"
-#~ msgstr "Назардағы көрсетілімі:"
 
 #~ msgid "Add Slide"
 #~ msgstr "Слайдты қосу"
