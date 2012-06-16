@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-09 04:39+0200\n"
+"POT-Creation-Date: 2012-06-16 05:09+0200\n"
 "PO-Revision-Date: 2011-12-07 04:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -24,104 +24,93 @@ msgstr ""
 "\n"
 "\n"
 
-#: contents/ui/PopupDialog.qml:52
+#: contents/ui/PopupDialog.qml:50
 msgid "Battery:"
 msgstr "Батарея:"
 
-#: contents/ui/PopupDialog.qml:57
+#: contents/ui/PopupDialog.qml:55
 msgid "AC Adapter:"
 msgstr "АТ адаптері"
 
-#: contents/ui/PopupDialog.qml:62
-msgctxt "Label for remaining time"
-msgid "Time Remaining:"
-msgstr "Қалған уақыт:"
-
-#: contents/ui/PopupDialog.qml:68
+#: contents/ui/PopupDialog.qml:60
 msgctxt "Label for power management inhibition"
 msgid "Power management enabled:"
 msgstr "Қосылған қуаттандыруды басқаруы:"
 
-#: contents/ui/PopupDialog.qml:73
+#: contents/ui/PopupDialog.qml:65
 msgid "Screen Brightness:"
 msgstr "Экранның жарықтығы:"
 
-#: contents/ui/PopupDialog.qml:88 contents/ui/batterymonitor.qml:83
+#: contents/ui/PopupDialog.qml:80 contents/ui/batterymonitor.qml:120
 msgctxt "Battery is not plugged in"
 msgid "Not present"
 msgstr "Жоқ"
 
-#: contents/ui/PopupDialog.qml:93
+#: contents/ui/PopupDialog.qml:85
 #, fuzzy
 #| msgctxt "tooltip"
 #| msgid "Plugged in"
 msgid "Plugged in"
 msgstr "Қосылған "
 
-#: contents/ui/PopupDialog.qml:93
+#: contents/ui/PopupDialog.qml:85
 #, fuzzy
 #| msgctxt "tooltip"
 #| msgid "Not plugged in"
 msgid "Not plugged in"
 msgstr "Қосылмаған"
 
-#: contents/ui/PopupDialog.qml:124
-#, kde-format
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] ""
-
-#: contents/ui/PopupDialog.qml:125
-#, kde-format
-msgid "1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] ""
-
-#: contents/ui/PopupDialog.qml:141
+#: contents/ui/PopupDialog.qml:115
 msgctxt "Suspend the computer to RAM; translation should be short"
 msgid "Sleep"
 msgstr "Қалғу"
 
-#: contents/ui/PopupDialog.qml:150
+#: contents/ui/PopupDialog.qml:124
 msgctxt "Suspend the computer to disk; translation should be short"
 msgid "Hibernate"
 msgstr "Ұйықтау"
 
-#: contents/ui/batterymonitor.qml:81
+#: contents/ui/batterymonitor.qml:105
+#, kde-format
+msgctxt "overlay on the battery, needs to be really tiny"
+msgid "%1%"
+msgstr "%1%"
+
+#: contents/ui/batterymonitor.qml:118
 msgid "<b>Battery:</b>"
 msgstr "<b>Батареясы:</b>"
 
-#: contents/ui/batterymonitor.qml:85
+#: contents/ui/batterymonitor.qml:122
 msgctxt "tooltip"
 msgid "<b>AC Adapter:</b>"
 msgstr "<b>АТ адаптері:</b>"
 
-#: contents/ui/batterymonitor.qml:87
+#: contents/ui/batterymonitor.qml:124
 msgctxt "tooltip"
 msgid "Plugged in"
 msgstr "Қосылған "
 
-#: contents/ui/batterymonitor.qml:87
+#: contents/ui/batterymonitor.qml:124
 msgctxt "tooltip"
 msgid "Not plugged in"
 msgstr "Қосылмаған"
 
-#: contents/ui/batterymonitor.qml:103
+#: contents/ui/batterymonitor.qml:140
 #, kde-format
 msgid "%1% (charging)"
 msgstr "%1% (толуда)"
 
-#: contents/ui/batterymonitor.qml:104
+#: contents/ui/batterymonitor.qml:141
 #, kde-format
 msgid "%1% (charged)"
 msgstr "%1% (толық)"
 
-#: contents/ui/batterymonitor.qml:106
+#: contents/ui/batterymonitor.qml:143
 #, kde-format
 msgid "%1% (discharging)"
 msgstr "%1% (толуын жоғалтқан)"
 
-#: contents/ui/batterymonitor.qml:153
+#: contents/ui/batterymonitor.qml:188
 msgid "The battery applet has enabled system-wide inhibition"
 msgstr "Батарея апплеті жалпы жүйелік тежеуді қосқан"
 
@@ -132,18 +121,25 @@ msgid "Configure Battery Monitor"
 msgstr "Батареяны бақылау мониторын баптау"
 
 #. i18n: file: contents/ui/config.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showMultipleBatteries)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showBatteryString)
 #: rc.cpp:6
+msgid "Show charge &information"
+msgstr "Толуы туралы &мәлімет көрсетілсін"
+
+#. i18n: file: contents/ui/config.ui:33
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showMultipleBatteries)
+#: rc.cpp:9
 msgid "Show the state for &each battery present"
 msgstr "Әр&бір батареясының күйі көрсетілсін"
 
-#. i18n: file: contents/ui/config.ui:30
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showRemainingTime)
-#: rc.cpp:9
+#~ msgctxt "Label for remaining time"
+#~ msgid "Time Remaining:"
+#~ msgstr "Қалған уақыт:"
+
 #, fuzzy
-#| msgid "Show the percentage of &charge on the battery"
-msgid "Show remaining time for the battery"
-msgstr "Батареяның &толу пайызы көрсетілсін"
+#~| msgid "Show the percentage of &charge on the battery"
+#~ msgid "Show remaining time for the battery"
+#~ msgstr "Батареяның &толу пайызы көрсетілсін"
 
 #~ msgctxt "tooltip: placeholder is the battery ID"
 #~ msgid "<b>Battery %1:</b>"
@@ -172,13 +168,6 @@ msgstr "Батареяның &толу пайызы көрсетілсін"
 #~ msgctxt "Battery is not plugged in"
 #~ msgid "<b>Not present</b>"
 #~ msgstr "<b>Жоқ</b>"
-
-#~ msgctxt "overlay on the battery, needs to be really tiny"
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#~ msgid "Show charge &information"
-#~ msgstr "Толуы туралы &мәлімет көрсетілсін"
 
 #~ msgid "Power Profile:"
 #~ msgstr "Қуаттандыру профилі:"
