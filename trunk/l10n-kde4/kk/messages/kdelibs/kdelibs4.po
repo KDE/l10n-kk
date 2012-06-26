@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-15 04:37+0200\n"
+"POT-Creation-Date: 2012-06-26 07:39+0200\n"
 "PO-Revision-Date: 2012-06-26 05:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1536,7 +1536,7 @@ msgstr "Жаңа жүктеп беруі"
 
 #. i18n: file: knewstuff/knewstuff3/uploaddialog.ui:207
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:841 khtml/khtml_part.cpp:1855
+#: rc.cpp:841 khtml/khtml_part.cpp:1869
 msgid "Description:"
 msgstr "Сипаттамасы:"
 
@@ -3426,7 +3426,7 @@ msgstr "KDE қолданбасы"
 msgid "Qt"
 msgstr "Qt"
 
-#: kdecore/kernel/kcmdlineargs.cpp:496 khtml/khtml_part.cpp:4819
+#: kdecore/kernel/kcmdlineargs.cpp:496 khtml/khtml_part.cpp:4833
 msgid "KDE"
 msgstr "KDE"
 
@@ -4848,54 +4848,6 @@ msgstr "Беймәлім сокет қатесі"
 msgid "Operation not supported"
 msgstr "Операцияның қолдауы жоқ"
 
-#: kdecore/network/netsupp.cpp:891 kdecore/network/k3resolver.cpp:545
-msgid "no error"
-msgstr "қате жоқ"
-
-#: kdecore/network/netsupp.cpp:892
-msgid "address family for nodename not supported"
-msgstr "торап атауы үшін адрес шоғырының қолдауы жоқ"
-
-#: kdecore/network/netsupp.cpp:893 kdecore/network/k3resolver.cpp:547
-msgid "temporary failure in name resolution"
-msgstr "атуларды айыруының уақытша жаңылысы"
-
-#: kdecore/network/netsupp.cpp:894
-msgid "invalid value for 'ai_flags'"
-msgstr "'ai_flags' мәні жарамсыз"
-
-#: kdecore/network/netsupp.cpp:895 kdecore/network/k3resolver.cpp:548
-msgid "non-recoverable failure in name resolution"
-msgstr "атауларды айыруының жөнделмейтін жаңылысы"
-
-#: kdecore/network/netsupp.cpp:896
-msgid "'ai_family' not supported"
-msgstr "'ai_family' қолдауы жоқ"
-
-#: kdecore/network/netsupp.cpp:897 kdecore/network/k3resolver.cpp:550
-msgid "memory allocation failure"
-msgstr "жадын арнау жаңылысы"
-
-#: kdecore/network/netsupp.cpp:898
-msgid "no address associated with nodename"
-msgstr "бұл торап атауымен ешбір адрес сәйкес келмейді"
-
-#: kdecore/network/netsupp.cpp:899 kdecore/network/k3resolver.cpp:551
-msgid "name or service not known"
-msgstr "беймәлім атау не қызмет"
-
-#: kdecore/network/netsupp.cpp:900
-msgid "servname not supported for ai_socktype"
-msgstr "servname бұл ai_socktype түрі үшін қолданбайды"
-
-#: kdecore/network/netsupp.cpp:901
-msgid "'ai_socktype' not supported"
-msgstr "'ai_socktype' түрінің қолдауы жоқ"
-
-#: kdecore/network/netsupp.cpp:902
-msgid "system error"
-msgstr "жүйе қатесі"
-
 #: kdecore/network/k3socks.cpp:137
 msgid "NEC SOCKS client"
 msgstr "NEC SOCKS клиенті"
@@ -4909,13 +4861,33 @@ msgstr "Dante SOCKS клиенті"
 msgid "Timed out trying to connect to remote host"
 msgstr "Қашықтағы хостқа қосылуын күту уақыты өтті"
 
+#: kdecore/network/k3resolver.cpp:545 kdecore/network/netsupp.cpp:894
+msgid "no error"
+msgstr "қате жоқ"
+
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
 msgstr "сұралған шоғырының бұл хост атауы үшін қолдауы жоқ"
 
+#: kdecore/network/k3resolver.cpp:547 kdecore/network/netsupp.cpp:896
+msgid "temporary failure in name resolution"
+msgstr "атуларды айыруының уақытша жаңылысы"
+
+#: kdecore/network/k3resolver.cpp:548 kdecore/network/netsupp.cpp:898
+msgid "non-recoverable failure in name resolution"
+msgstr "атауларды айыруының жөнделмейтін жаңылысы"
+
 #: kdecore/network/k3resolver.cpp:549
 msgid "invalid flags"
 msgstr "жарамсыз жалаушалар"
+
+#: kdecore/network/k3resolver.cpp:550 kdecore/network/netsupp.cpp:900
+msgid "memory allocation failure"
+msgstr "жадын арнау жаңылысы"
+
+#: kdecore/network/k3resolver.cpp:551 kdecore/network/netsupp.cpp:902
+msgid "name or service not known"
+msgstr "беймәлім атау не қызмет"
 
 #: kdecore/network/k3resolver.cpp:552
 msgid "requested family not supported"
@@ -5016,6 +4988,34 @@ msgstr "Күәлік тізбегі тым ұзын"
 msgctxt "SSL error"
 msgid "Unknown error"
 msgstr "Беймәлім қате"
+
+#: kdecore/network/netsupp.cpp:895
+msgid "address family for nodename not supported"
+msgstr "торап атауы үшін адрес шоғырының қолдауы жоқ"
+
+#: kdecore/network/netsupp.cpp:897
+msgid "invalid value for 'ai_flags'"
+msgstr "'ai_flags' мәні жарамсыз"
+
+#: kdecore/network/netsupp.cpp:899
+msgid "'ai_family' not supported"
+msgstr "'ai_family' қолдауы жоқ"
+
+#: kdecore/network/netsupp.cpp:901
+msgid "no address associated with nodename"
+msgstr "бұл торап атауымен ешбір адрес сәйкес келмейді"
+
+#: kdecore/network/netsupp.cpp:903
+msgid "servname not supported for ai_socktype"
+msgstr "servname бұл ai_socktype түрі үшін қолданбайды"
+
+#: kdecore/network/netsupp.cpp:904
+msgid "'ai_socktype' not supported"
+msgstr "'ai_socktype' түрінің қолдауы жоқ"
+
+#: kdecore/network/netsupp.cpp:905
+msgid "system error"
+msgstr "жүйе қатесі"
 
 #: kdecore/services/kmimetyperepository.cpp:611
 #, kde-format
@@ -5306,6 +5306,44 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Автобайқау"
 
+#: kdeui/actions/krecentfilesaction.cpp:81
+msgid "No Entries"
+msgstr "Жоқ"
+
+#: kdeui/actions/krecentfilesaction.cpp:85
+msgid "Clear List"
+msgstr "Тізімді тазалау"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:48
+msgctxt "@action:inmenu"
+msgid "Exit F&ull Screen Mode"
+msgstr "&Толық экран күйінен шығу"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:49
+msgctxt "@action:intoolbar"
+msgid "Exit Full Screen"
+msgstr "Толық экраннан шығу"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:50
+msgctxt "@info:tooltip"
+msgid "Exit full screen mode"
+msgstr "Толық экран күйінен шығу"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:53
+msgctxt "@action:inmenu"
+msgid "F&ull Screen Mode"
+msgstr "&Толық экран күйі"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:54
+msgctxt "@action:intoolbar"
+msgid "Full Screen"
+msgstr "Толық экран"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:55
+msgctxt "@info:tooltip"
+msgid "Display the window in full screen"
+msgstr "Терезені толық экранды қылу"
+
 #: kdeui/actions/kaction.cpp:122
 #, kde-format
 msgid ""
@@ -5320,14 +5358,6 @@ msgstr ""
 #: kdeui/actions/kaction.cpp:126
 msgid "Ambiguous shortcut detected"
 msgstr "Көп мағналы тіркесім кездесті"
-
-#: kdeui/actions/krecentfilesaction.cpp:81
-msgid "No Entries"
-msgstr "Жоқ"
-
-#: kdeui/actions/krecentfilesaction.cpp:85
-msgid "Clear List"
-msgstr "Тізімді тазалау"
 
 #: kdeui/actions/kstandardaction.cpp:93 kdeui/util/kstandardguiitem.cpp:210
 msgctxt "go back"
@@ -5362,50 +5392,16 @@ msgid "Show St&atusbar"
 msgstr "&Күй жолағын көрсету"
 
 #: kdeui/actions/kstandardaction.cpp:547
+#, fuzzy
 #| msgid ""
-#| "Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
-#| "bottom of the window used for status information."
+#| "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of "
+#| "the window used for status information.</p>"
 msgid ""
-"Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
-"window used for status information.</p>"
+"Show Statusbar<br /><br />Shows the statusbar, which is the bar at the "
+"bottom of the window used for status information."
 msgstr ""
-"Күй жолағын көрсету<p>Күй жолағы - терезенің төменінде, қолданбаның "
-"күйін көрсететін жол.</p>"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:48
-#| msgid "Exit F&ull Screen Mode"
-msgctxt "@action:inmenu"
-msgid "Exit F&ull Screen Mode"
-msgstr "&Толық экран күйінен шығу"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:49
-#| msgid "Exit Full Screen"
-msgctxt "@action:intoolbar"
-msgid "Exit Full Screen"
-msgstr "Толық экраннан шығу"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:50
-#| msgid "Exit F&ull Screen Mode"
-msgctxt "@info:tooltip"
-msgid "Exit full screen mode"
-msgstr "Толық экран күйінен шығу"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:53
-#| msgid "F&ull Screen Mode"
-msgctxt "@action:inmenu"
-msgid "F&ull Screen Mode"
-msgstr "&Толық экран күйі"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:54
-#| msgid "Full Screen"
-msgctxt "@action:intoolbar"
-msgid "Full Screen"
-msgstr "Толық экран"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:55
-msgctxt "@info:tooltip"
-msgid "Display the window in full screen"
-msgstr "Терезені толық экранды қылу"
+"Күй жолағын көрсету<p>Күй жолағы - терезенің төменінде, қолданбаның күйін "
+"көрсететін жол.</p>"
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
 msgid ""
@@ -5884,6 +5880,10 @@ msgstr "Кескін аумағын таңдау"
 msgid "Please click and drag on the image to select the region of interest:"
 msgstr "Батырмасын басып ұстап жүгіртіп кескінге арнайтын аумағын таңдаңыз:"
 
+#: kdeui/dialogs/kconfigdialog.cpp:43 kutils/kcmultidialog.cpp:208
+msgid "Configure"
+msgstr "Баптау"
+
 #: kdeui/dialogs/kshortcutsdialog.cpp:67
 msgid ""
 "The current shortcut scheme is modified. Save before switching to the new "
@@ -5920,10 +5920,6 @@ msgstr "&Бастау кезінде кеңестер көрсетілсін"
 msgctxt "Opposite to Previous"
 msgid "&Next"
 msgstr "&Келесі"
-
-#: kdeui/dialogs/kconfigdialog.cpp:43 kutils/kcmultidialog.cpp:208
-msgid "Configure"
-msgstr "Баптау"
 
 #: kdeui/dialogs/kshortcutseditoritem.cpp:45
 #, kde-format
@@ -6297,7 +6293,7 @@ msgid "Warning"
 msgstr "Ескерту"
 
 #: kdeui/dialogs/kmessagebox.cpp:841 kdeui/dialogs/kmessagebox.cpp:871
-#: khtml/rendering/render_form.cpp:872 kjs/object.cpp:553
+#: khtml/rendering/render_form.cpp:870 kjs/object.cpp:553
 #: knewstuff/knewstuff3/uploaddialog.cpp:528
 msgid "Error"
 msgstr "Қате"
@@ -6346,8 +6342,8 @@ msgstr ""
 msgid "Reset Toolbars"
 msgstr "Құралдарды әдеттіге ысыру"
 
-#: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2807
-#: khtml/khtmlview.cpp:2840 khtml/html/html_formimpl.cpp:1845
+#: kdeui/dialogs/kedittoolbar.cpp:602 khtml/khtmlview.cpp:2811
+#: khtml/khtmlview.cpp:2844 khtml/html/html_formimpl.cpp:1845
 msgid "Reset"
 msgstr "Ысыру"
 
@@ -6875,6 +6871,44 @@ msgctxt "Numeric IDs of scripts for font previews"
 msgid "1"
 msgstr "1"
 
+#: kdeui/fonts/kfontdialog.cpp:75
+msgid "Select Font"
+msgstr "Қаріпті таңдау"
+
+#: kdeui/fonts/kfontrequester.cpp:110
+msgid "Choose..."
+msgstr "Таңдау..."
+
+#: kdeui/fonts/kfontrequester.cpp:215
+msgid "Click to select a font"
+msgstr "Қаріпті таңдау үшін түртіңіз"
+
+#: kdeui/fonts/kfontrequester.cpp:222
+msgid "Preview of the selected font"
+msgstr "Таңдалған қаріптің көрінісі"
+
+#: kdeui/fonts/kfontrequester.cpp:223
+msgid ""
+"This is a preview of the selected font. You can change it by clicking the "
+"\"Choose...\" button."
+msgstr ""
+"Бұл таңдалған қаріптің көрінісі. Қаріпті ауыстыру үшін \"Таңдау..\" "
+"батырмасын басыңыз."
+
+#: kdeui/fonts/kfontrequester.cpp:228
+#, kde-format
+msgid "Preview of the \"%1\" font"
+msgstr "\"%1\" деген қаріптің көрінісі"
+
+#: kdeui/fonts/kfontrequester.cpp:229
+#, kde-format
+msgid ""
+"This is a preview of the \"%1\" font. You can change it by clicking the "
+"\"Choose...\" button."
+msgstr ""
+"\"%1\" қаріпінің үлгі көрінісі. Оны \"Таңдау...\" батырмасын басып "
+"өзгертуіңізге болады."
+
 #: kdeui/fonts/kfontchooser.cpp:162
 msgctxt "@info:whatsthis"
 msgid "Here you can choose the font to be used."
@@ -6953,12 +6987,18 @@ msgctxt "@info:whatsthis"
 msgid "Here you can choose the font style to be used."
 msgstr "Мұнда қаріптің стилін таңдап алуға болады."
 
-#: kdeui/fonts/kfontchooser.cpp:296 kdeui/fonts/kfontchooser.cpp:639
+#: kdeui/fonts/kfontchooser.cpp:295 kdeui/fonts/kfontchooser.cpp:623
+#: kdeui/fonts/kfontchooser.cpp:640
+msgctxt "@item font"
+msgid "Regular"
+msgstr "Қалыпты"
+
+#: kdeui/fonts/kfontchooser.cpp:296 kdeui/fonts/kfontchooser.cpp:644
 msgctxt "@item font"
 msgid "Italic"
 msgstr "Көлбеу"
 
-#: kdeui/fonts/kfontchooser.cpp:297 kdeui/fonts/kfontchooser.cpp:640
+#: kdeui/fonts/kfontchooser.cpp:297 kdeui/fonts/kfontchooser.cpp:645
 msgctxt "@item font"
 msgid "Oblique"
 msgstr "Қиғаш"
@@ -7025,49 +7065,11 @@ msgstr "Қолданыстағы қаріп"
 #. noun-adjective congruence wrt. gender of the family name).
 #. The message provides the dynamic context 'family', which is
 #. the family name to which the style string corresponds.
-#: kdeui/fonts/kfontchooser.cpp:625
+#: kdeui/fonts/kfontchooser.cpp:630
 #, kde-format
 msgctxt "@item Font style"
 msgid "%1"
 msgstr "%1"
-
-#: kdeui/fonts/kfontdialog.cpp:75
-msgid "Select Font"
-msgstr "Қаріпті таңдау"
-
-#: kdeui/fonts/kfontrequester.cpp:110
-msgid "Choose..."
-msgstr "Таңдау..."
-
-#: kdeui/fonts/kfontrequester.cpp:215
-msgid "Click to select a font"
-msgstr "Қаріпті таңдау үшін түртіңіз"
-
-#: kdeui/fonts/kfontrequester.cpp:222
-msgid "Preview of the selected font"
-msgstr "Таңдалған қаріптің көрінісі"
-
-#: kdeui/fonts/kfontrequester.cpp:223
-msgid ""
-"This is a preview of the selected font. You can change it by clicking the "
-"\"Choose...\" button."
-msgstr ""
-"Бұл таңдалған қаріптің көрінісі. Қаріпті ауыстыру үшін \"Таңдау..\" "
-"батырмасын басыңыз."
-
-#: kdeui/fonts/kfontrequester.cpp:228
-#, kde-format
-msgid "Preview of the \"%1\" font"
-msgstr "\"%1\" деген қаріптің көрінісі"
-
-#: kdeui/fonts/kfontrequester.cpp:229
-#, kde-format
-msgid ""
-"This is a preview of the \"%1\" font. You can change it by clicking the "
-"\"Choose...\" button."
-msgstr ""
-"\"%1\" қаріпінің үлгі көрінісі. Оны \"Таңдау...\" батырмасын басып "
-"өзгертуіңізге болады."
 
 #: kdeui/itemviews/kfilterproxysearchline.cpp:73
 #: nepomuk/utils/searchwidget.cpp:142
@@ -9194,6 +9196,66 @@ msgstr "Бөлгіші, Абзац"
 msgid "Separator, Space"
 msgstr "Бөлгіші, Бос_орын"
 
+#. i18n: Placeholder text in line edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter search pattern").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#. i18n: Placeholder text in text edit widgets is the text appearing
+#. before any user input, briefly explaining to the user what to type
+#. (e.g. "Enter message").
+#. By default the text is set in italic, which may not be appropriate
+#. for some languages and scripts (e.g. for CJK ideographs).
+#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
+msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
+msgid "1"
+msgstr "1"
+
+#: kdeui/widgets/klineedit.cpp:296
+msgctxt "@action:button Clear current text in the line edit"
+msgid "Clear text"
+msgstr "Мәтінді кетіру"
+
+#: kdeui/widgets/klineedit.cpp:1216
+msgctxt "@title:menu"
+msgid "Text Completion"
+msgstr "Мәтінді аяқтау"
+
+#: kdeui/widgets/klineedit.cpp:1223
+msgctxt "@item:inmenu Text Completion"
+msgid "None"
+msgstr "Жоқ"
+
+#: kdeui/widgets/klineedit.cpp:1224
+msgctxt "@item:inmenu Text Completion"
+msgid "Manual"
+msgstr "Қолмен"
+
+#: kdeui/widgets/klineedit.cpp:1225
+msgctxt "@item:inmenu Text Completion"
+msgid "Automatic"
+msgstr "Автоматты"
+
+#: kdeui/widgets/klineedit.cpp:1226
+msgctxt "@item:inmenu Text Completion"
+msgid "Dropdown List"
+msgstr "Ашылмалы тізім"
+
+#: kdeui/widgets/klineedit.cpp:1227
+msgctxt "@item:inmenu Text Completion"
+msgid "Short Automatic"
+msgstr "Қысқа автоматты"
+
+#: kdeui/widgets/klineedit.cpp:1228
+msgctxt "@item:inmenu Text Completion"
+msgid "Dropdown List && Automatic"
+msgstr "Ашылмалы тізім && Автоматты"
+
+#: kdeui/widgets/klineedit.cpp:1259
+msgctxt "@item:inmenu Text Completion"
+msgid "Default"
+msgstr "Әдетті"
+
 #: kdeui/widgets/ktoolbar.cpp:292
 msgctxt "@title:menu"
 msgid "Show Text"
@@ -9346,7 +9408,7 @@ msgstr "&Жоғарлату"
 msgid "Move &Down"
 msgstr "&Төмендету"
 
-#: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:995
+#: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:993
 msgid "Clear &History"
 msgstr "&Журналды тазалау"
 
@@ -9477,66 +9539,6 @@ msgstr "Сақтау алдында аутентификациядан өту к
 #: kdeui/widgets/kcmodule.cpp:186
 msgid "You are not allowed to save the configuration"
 msgstr "Баптауларды сақтауға рұқсатыңыз жоқ"
-
-#. i18n: Placeholder text in line edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter search pattern").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#. i18n: Placeholder text in text edit widgets is the text appearing
-#. before any user input, briefly explaining to the user what to type
-#. (e.g. "Enter message").
-#. By default the text is set in italic, which may not be appropriate
-#. for some languages and scripts (e.g. for CJK ideographs).
-#: kdeui/widgets/klineedit.cpp:87 kdeui/widgets/ktextedit.cpp:79
-msgctxt "Italic placeholder text in line edits: 0 no, 1 yes"
-msgid "1"
-msgstr "1"
-
-#: kdeui/widgets/klineedit.cpp:296
-msgctxt "@action:button Clear current text in the line edit"
-msgid "Clear text"
-msgstr "Мәтінді кетіру"
-
-#: kdeui/widgets/klineedit.cpp:1213
-msgctxt "@title:menu"
-msgid "Text Completion"
-msgstr "Мәтінді аяқтау"
-
-#: kdeui/widgets/klineedit.cpp:1220
-msgctxt "@item:inmenu Text Completion"
-msgid "None"
-msgstr "Жоқ"
-
-#: kdeui/widgets/klineedit.cpp:1221
-msgctxt "@item:inmenu Text Completion"
-msgid "Manual"
-msgstr "Қолмен"
-
-#: kdeui/widgets/klineedit.cpp:1222
-msgctxt "@item:inmenu Text Completion"
-msgid "Automatic"
-msgstr "Автоматты"
-
-#: kdeui/widgets/klineedit.cpp:1223
-msgctxt "@item:inmenu Text Completion"
-msgid "Dropdown List"
-msgstr "Ашылмалы тізім"
-
-#: kdeui/widgets/klineedit.cpp:1224
-msgctxt "@item:inmenu Text Completion"
-msgid "Short Automatic"
-msgstr "Қысқа автоматты"
-
-#: kdeui/widgets/klineedit.cpp:1225
-msgctxt "@item:inmenu Text Completion"
-msgid "Dropdown List && Automatic"
-msgstr "Ашылмалы тізім && Автоматты"
-
-#: kdeui/widgets/klineedit.cpp:1256
-msgctxt "@item:inmenu Text Completion"
-msgid "Default"
-msgstr "Әдетті"
 
 #: kdeui/widgets/kpixmapregionselectorwidget.cpp:195
 msgid "Image Operations"
@@ -10049,8 +10051,8 @@ msgstr "Кескіндерді басу"
 msgid "Print header"
 msgstr "Айдарды басу"
 
-#: khtml/khtml_run.cpp:104 khtml/khtml_part.cpp:3716 khtml/khtml_part.cpp:3945
-#: khtml/khtml_part.cpp:4366 kparts/browserrun.cpp:426
+#: khtml/khtml_run.cpp:104 khtml/khtml_part.cpp:3730 khtml/khtml_part.cpp:3959
+#: khtml/khtml_part.cpp:4380 kparts/browserrun.cpp:426
 msgid "Save As"
 msgstr "Былай сақтау"
 
@@ -10058,59 +10060,59 @@ msgstr "Былай сақтау"
 msgid "Inactive"
 msgstr "Белсенді емес"
 
-#: khtml/khtml_part.cpp:251
+#: khtml/khtml_part.cpp:252
 msgid "View Do&cument Source"
 msgstr "&Құжаттың бастапқы мәтінін қарау"
 
-#: khtml/khtml_part.cpp:258 khtml/khtml_ext.cpp:509
+#: khtml/khtml_part.cpp:259 khtml/khtml_ext.cpp:509
 msgid "View Frame Source"
 msgstr "Фреймнің бастапқы мәтінін қарау"
 
-#: khtml/khtml_part.cpp:265
+#: khtml/khtml_part.cpp:266
 msgid "View Document Information"
 msgstr "Құжат туралы мәліметті қарау"
 
-#: khtml/khtml_part.cpp:272
+#: khtml/khtml_part.cpp:273
 msgid "Save &Background Image As..."
 msgstr "Ая &кескінін былай сақтау..."
 
-#: khtml/khtml_part.cpp:281 khtml/khtml_ext.cpp:504
+#: khtml/khtml_part.cpp:282 khtml/khtml_ext.cpp:504
 msgid "Save &Frame As..."
 msgstr "&Фреймді былай сақтау..."
 
-#: khtml/khtml_part.cpp:293 khtml/khtml_part.cpp:4027
+#: khtml/khtml_part.cpp:294 khtml/khtml_part.cpp:4041
 msgid "SSL"
 msgstr "SSL"
 
-#: khtml/khtml_part.cpp:297
+#: khtml/khtml_part.cpp:298
 msgid "Print Rendering Tree to STDOUT"
 msgstr "STDOUT-қа бейнелеу бұтағын шығару "
 
-#: khtml/khtml_part.cpp:301
+#: khtml/khtml_part.cpp:302
 msgid "Print DOM Tree to STDOUT"
 msgstr "STDOUT-қа DOM бұтағын шығару"
 
-#: khtml/khtml_part.cpp:305
+#: khtml/khtml_part.cpp:306
 msgid "Print frame tree to STDOUT"
 msgstr "STDOUT-қа фреймдер бұтағын шығару"
 
-#: khtml/khtml_part.cpp:309
+#: khtml/khtml_part.cpp:310
 msgid "Stop Animated Images"
 msgstr "Кескіндердің анамациясын тоқтату"
 
-#: khtml/khtml_part.cpp:313
+#: khtml/khtml_part.cpp:314
 msgid "Set &Encoding"
 msgstr "&Кодтамасын орнату"
 
-#: khtml/khtml_part.cpp:352
+#: khtml/khtml_part.cpp:353
 msgid "Use S&tylesheet"
 msgstr "&Стиль кестесін қолдану"
 
-#: khtml/khtml_part.cpp:357
+#: khtml/khtml_part.cpp:358
 msgid "Enlarge Font"
 msgstr "Қаріпті ұлғайту"
 
-#: khtml/khtml_part.cpp:360
+#: khtml/khtml_part.cpp:361
 msgid ""
 "<qt>Enlarge Font<br /><br />Make the font in this window bigger. Click and "
 "hold down the mouse button for a menu with all available font sizes.</qt>"
@@ -10118,11 +10120,11 @@ msgstr ""
 "<qt>Қаріпті ұлғайту<br /><br />Осы терезедегі қаріпті ұлғайту. Қаріптің "
 "өлшемдер мәзірін көру үшін тышқанның батырмасын басып ұстап тұрыңыз.</qt>"
 
-#: khtml/khtml_part.cpp:364
+#: khtml/khtml_part.cpp:365
 msgid "Shrink Font"
 msgstr "Қаріпті кішірейту"
 
-#: khtml/khtml_part.cpp:367
+#: khtml/khtml_part.cpp:368
 msgid ""
 "<qt>Shrink Font<br /><br />Make the font in this window smaller. Click and "
 "hold down the mouse button for a menu with all available font sizes.</qt>"
@@ -10130,14 +10132,14 @@ msgstr ""
 "<qt>Қаріпті кішірейту<br /><br />Осы терезедегі қаріпті кішірейту. Қаріптің "
 "өлшемдер мәзірін көру үшін тышқанның батырмасын басып ұстап тұрыңыз.</qt>"
 
-#: khtml/khtml_part.cpp:382
+#: khtml/khtml_part.cpp:383
 msgid ""
 "<qt>Find text<br /><br />Shows a dialog that allows you to find text on the "
 "displayed page.</qt>"
 msgstr ""
 "<qt>Мәтінді табу<br /><br />Көрсетілген беттегі мәтінді іздеу диалогы.</qt>"
 
-#: khtml/khtml_part.cpp:386
+#: khtml/khtml_part.cpp:387
 msgid ""
 "<qt>Find next<br /><br />Find the next occurrence of the text that you have "
 "found using the <b>Find Text</b> function.</qt>"
@@ -10145,7 +10147,7 @@ msgstr ""
 "<qt>Келесісін табу<br /><br /><b>Мәтінді табу</b> дегенімен табылған "
 "мәтіннің келесі үзіндісін іздеу.</qt>"
 
-#: khtml/khtml_part.cpp:392
+#: khtml/khtml_part.cpp:393
 msgid ""
 "<qt>Find previous<br /><br />Find the previous occurrence of the text that "
 "you have found using the <b>Find Text</b> function.</qt>"
@@ -10153,11 +10155,11 @@ msgstr ""
 "<qt>Алдыңғысын табу<br /><br /><b>Мәтінді табу</b> дегенімен табылған "
 "мәтіннің алдыңғы үзіндісін іздеу.</qt>"
 
-#: khtml/khtml_part.cpp:397
+#: khtml/khtml_part.cpp:398
 msgid "Find Text as You Type"
 msgstr "Теру кезінде мәтінді іздеу"
 
-#: khtml/khtml_part.cpp:400
+#: khtml/khtml_part.cpp:401
 msgid ""
 "This shortcut shows the find bar, for finding text in the displayed page. It "
 "cancels the effect of \"Find Links as You Type\", which sets the \"Find "
@@ -10167,22 +10169,22 @@ msgstr ""
 "сілтемелері іздеу\" параметрін орнатқан \"Теру кезінде сілтемелерді іздеу\" "
 "дегеннің  күшін жойяды."
 
-#: khtml/khtml_part.cpp:403
+#: khtml/khtml_part.cpp:404
 msgid "Find Links as You Type"
 msgstr "Теру кезінде сілтемелерді іздеу"
 
-#: khtml/khtml_part.cpp:409
+#: khtml/khtml_part.cpp:410
 msgid ""
 "This shortcut shows the find bar, and sets the option \"Find links only\"."
 msgstr ""
 "Бұл тіркесім іздеу панелін шығарады да, \"Тек сілтемелері іздеу\" параметрін "
 "орнатады."
 
-#: khtml/khtml_part.cpp:421 khtml/khtml_ext.cpp:498
+#: khtml/khtml_part.cpp:422 khtml/khtml_ext.cpp:498
 msgid "Print Frame..."
 msgstr "Фреймді басып шығару..."
 
-#: khtml/khtml_part.cpp:425
+#: khtml/khtml_part.cpp:426
 msgid ""
 "<qt>Print Frame<br /><br />Some pages have several frames. To print only a "
 "single frame, click on it and then use this function.</qt>"
@@ -10191,146 +10193,146 @@ msgstr ""
 "мүмкін. Тек бір фреймді басып шығару үшін, оны түртіңіз де осы функцияны "
 "қолданыңыз.</qt>"
 
-#: khtml/khtml_part.cpp:439
+#: khtml/khtml_part.cpp:440
 msgid "Toggle Caret Mode"
 msgstr "Енгізіп/Үстінен жазу күйін ауыстыру"
 
-#: khtml/khtml_part.cpp:700
+#: khtml/khtml_part.cpp:714
 #, kde-format
 msgid "The fake user-agent '%1' is in use."
 msgstr "Жалған '%1' пайдаланушы-агенті қолдануда."
 
-#: khtml/khtml_part.cpp:1197
+#: khtml/khtml_part.cpp:1211
 msgid "This web page contains coding errors."
 msgstr "Бұл веб-бетте код қатесі бар."
 
-#: khtml/khtml_part.cpp:1239
+#: khtml/khtml_part.cpp:1253
 msgid "&Hide Errors"
 msgstr "Қа&телерді жасыру"
 
-#: khtml/khtml_part.cpp:1240
+#: khtml/khtml_part.cpp:1254
 msgid "&Disable Error Reporting"
 msgstr "&Қателер туралы хабарлау рұқсат етілмесін"
 
-#: khtml/khtml_part.cpp:1284
+#: khtml/khtml_part.cpp:1298
 #, kde-format
 msgid "<qt><b>Error</b>: %1: %2</qt>"
 msgstr "<qt><b>Қате</b>: %1: %2</qt>"
 
-#: khtml/khtml_part.cpp:1333
+#: khtml/khtml_part.cpp:1347
 #, kde-format
 msgid "<qt><b>Error</b>: node %1: %2</qt>"
 msgstr "<qt><b>Қате</b>: торабы %1: %2</qt>"
 
-#: khtml/khtml_part.cpp:1449
+#: khtml/khtml_part.cpp:1463
 msgid "Display Images on Page"
 msgstr "Беттегі кескіндерді көрсету"
 
-#: khtml/khtml_part.cpp:1826
+#: khtml/khtml_part.cpp:1840
 #, kde-format
 msgid "Error: %1 - %2"
 msgstr "Қате: %1 - %2"
 
-#: khtml/khtml_part.cpp:1831
+#: khtml/khtml_part.cpp:1845
 msgid "The requested operation could not be completed"
 msgstr "Талап етілген әрекет аяқталмады"
 
-#: khtml/khtml_part.cpp:1837
+#: khtml/khtml_part.cpp:1851
 msgid "Technical Reason: "
 msgstr "Техникалық себебі: "
 
-#: khtml/khtml_part.cpp:1843
+#: khtml/khtml_part.cpp:1857
 msgid "Details of the Request:"
 msgstr "Талаптың егжей-текжейі:"
 
-#: khtml/khtml_part.cpp:1845
+#: khtml/khtml_part.cpp:1859
 #, kde-format
 msgid "URL: %1"
 msgstr "URL: %1"
 
-#: khtml/khtml_part.cpp:1848
+#: khtml/khtml_part.cpp:1862
 #, kde-format
 msgid "Protocol: %1"
 msgstr "Протоколы: %1"
 
-#: khtml/khtml_part.cpp:1851
+#: khtml/khtml_part.cpp:1865
 #, kde-format
 msgid "Date and Time: %1"
 msgstr "Күні мен уақыты: %1"
 
-#: khtml/khtml_part.cpp:1853
+#: khtml/khtml_part.cpp:1867
 #, kde-format
 msgid "Additional Information: %1"
 msgstr "Қосымша ақпарат: %1"
 
-#: khtml/khtml_part.cpp:1861
+#: khtml/khtml_part.cpp:1875
 msgid "Possible Causes:"
 msgstr "Мүмкін себептері:"
 
-#: khtml/khtml_part.cpp:1868
+#: khtml/khtml_part.cpp:1882
 msgid "Possible Solutions:"
 msgstr "Мүмкін шешімдері:"
 
-#: khtml/khtml_part.cpp:2286
+#: khtml/khtml_part.cpp:2300
 msgid "Page loaded."
 msgstr "Бет жүктелді."
 
-#: khtml/khtml_part.cpp:2288
+#: khtml/khtml_part.cpp:2302
 #, kde-format
 msgid "%1 Image of %2 loaded."
 msgid_plural "%1 Images of %2 loaded."
 msgstr[0] "%2 кескіннің %1 кескіні жүктелді."
 
-#: khtml/khtml_part.cpp:2463
+#: khtml/khtml_part.cpp:2477
 msgid "Automatic Detection"
 msgstr "Автоматты түрде байқау"
 
-#: khtml/khtml_part.cpp:3525 khtml/khtml_part.cpp:3612
-#: khtml/khtml_part.cpp:3623
+#: khtml/khtml_part.cpp:3539 khtml/khtml_part.cpp:3626
+#: khtml/khtml_part.cpp:3637
 msgid " (In new window)"
 msgstr " (Жаңа терезеде)"
 
-#: khtml/khtml_part.cpp:3564
+#: khtml/khtml_part.cpp:3578
 msgid "Symbolic Link"
 msgstr "Символдық сілтеме"
 
-#: khtml/khtml_part.cpp:3566
+#: khtml/khtml_part.cpp:3580
 #, kde-format
 msgid "%1 (Link)"
 msgstr "%1 (Сілтеме)"
 
-#: khtml/khtml_part.cpp:3586
+#: khtml/khtml_part.cpp:3600
 #, kde-format
 msgid "%2 (%1 byte)"
 msgid_plural "%2 (%1 bytes)"
 msgstr[0] "%2 (%1 байт)"
 
-#: khtml/khtml_part.cpp:3590
+#: khtml/khtml_part.cpp:3604
 #, kde-format
 msgid "%2 (%1 K)"
 msgstr "%2 (%1 К)"
 
-#: khtml/khtml_part.cpp:3625
+#: khtml/khtml_part.cpp:3639
 msgid " (In other frame)"
 msgstr " (басқа фреймде)"
 
-#: khtml/khtml_part.cpp:3630
+#: khtml/khtml_part.cpp:3644
 msgid "Email to: "
 msgstr "Эл.пошта кімге: "
 
-#: khtml/khtml_part.cpp:3636
+#: khtml/khtml_part.cpp:3650
 msgid " - Subject: "
 msgstr " - Тақырыбы: "
 
-#: khtml/khtml_part.cpp:3638
+#: khtml/khtml_part.cpp:3652
 msgid " - CC: "
 msgstr " - Көшірмесі кімге: "
 
-#: khtml/khtml_part.cpp:3640
+#: khtml/khtml_part.cpp:3654
 msgid " - BCC: "
 msgstr " - Жасырын кімге: "
 
-#: khtml/khtml_part.cpp:3721
+#: khtml/khtml_part.cpp:3735
 #, kde-format
 msgid ""
 "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
@@ -10339,55 +10341,55 @@ msgstr ""
 "<qt>Осы сенім артылмаған бетте<br /><b>%1</b>.<br />сілтемесі бар: Сілтемеге "
 "еру керек пе?</qt>"
 
-#: khtml/khtml_part.cpp:3722
+#: khtml/khtml_part.cpp:3736
 msgid "Follow"
 msgstr "Еру"
 
-#: khtml/khtml_part.cpp:3823
+#: khtml/khtml_part.cpp:3837
 msgid "Frame Information"
 msgstr "Фрейм мәліметі"
 
-#: khtml/khtml_part.cpp:3829
+#: khtml/khtml_part.cpp:3843
 #, kde-format
 msgid "   <a href=\"%1\">[Properties]</a>"
 msgstr "  <a href=\"%1\">[Қасиеттері]</a>"
 
-#: khtml/khtml_part.cpp:3855
+#: khtml/khtml_part.cpp:3869
 msgctxt "HTML rendering mode (see http://en.wikipedia.org/wiki/Quirks_mode)"
 msgid "Quirks"
 msgstr "Өзгеше"
 
-#: khtml/khtml_part.cpp:3858
+#: khtml/khtml_part.cpp:3872
 msgctxt "HTML rendering mode (see http://en.wikipedia.org/wiki/Quirks_mode)"
 msgid "Almost standards"
 msgstr "Стандарт дерлік"
 
-#: khtml/khtml_part.cpp:3862
+#: khtml/khtml_part.cpp:3876
 msgctxt "HTML rendering mode (see http://en.wikipedia.org/wiki/Quirks_mode)"
 msgid "Strict"
 msgstr "Қатаң"
 
-#: khtml/khtml_part.cpp:3933
+#: khtml/khtml_part.cpp:3947
 msgid "Save Background Image As"
 msgstr "Ая кескінін былай сақтау"
 
-#: khtml/khtml_part.cpp:4025
+#: khtml/khtml_part.cpp:4039
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Қарсы хосттың SSL куәлік тізбегі бүлінген сияқты."
 
-#: khtml/khtml_part.cpp:4044
+#: khtml/khtml_part.cpp:4058
 msgid "Save Frame As"
 msgstr "Фреймді былай сақтау"
 
-#: khtml/khtml_part.cpp:4088
+#: khtml/khtml_part.cpp:4102
 msgid "&Find in Frame..."
 msgstr "&Фреймде іздеу..."
 
-#: khtml/khtml_part.cpp:4090 kdeui/actions/kstandardaction_p.h:64
+#: khtml/khtml_part.cpp:4104 kdeui/actions/kstandardaction_p.h:64
 msgid "&Find..."
 msgstr "&Табу..."
 
-#: khtml/khtml_part.cpp:4707
+#: khtml/khtml_part.cpp:4721
 msgid ""
 "Warning:  This is a secure form but it is attempting to send your data back "
 "unencrypted.\n"
@@ -10399,16 +10401,16 @@ msgstr ""
 "Бөтендер бұл ашық ақпаратты сығалауы мүмкін.\n"
 "Бола берсін бе?"
 
-#: khtml/khtml_part.cpp:4710 khtml/khtml_part.cpp:4719
-#: khtml/khtml_part.cpp:4743
+#: khtml/khtml_part.cpp:4724 khtml/khtml_part.cpp:4733
+#: khtml/khtml_part.cpp:4757
 msgid "Network Transmission"
 msgstr "Желі арқылы беру"
 
-#: khtml/khtml_part.cpp:4710 khtml/khtml_part.cpp:4720
+#: khtml/khtml_part.cpp:4724 khtml/khtml_part.cpp:4734
 msgid "&Send Unencrypted"
 msgstr "&Шифрламай жіберу"
 
-#: khtml/khtml_part.cpp:4717
+#: khtml/khtml_part.cpp:4731
 msgid ""
 "Warning: Your data is about to be transmitted across the network "
 "unencrypted.\n"
@@ -10417,7 +10419,7 @@ msgstr ""
 "Ескерту: Деректеріңіз желі арқылы шифрланбаған түрде жіберудің алдында.\n"
 "Бола берсін бе?"
 
-#: khtml/khtml_part.cpp:4741
+#: khtml/khtml_part.cpp:4755
 msgid ""
 "This site is attempting to submit form data via email.\n"
 "Do you want to continue?"
@@ -10425,11 +10427,11 @@ msgstr ""
 "Бұл сайт деректер пішінді эл.пошта арқылы жіберуге әрекет жасап жатыр.\n"
 "Бола берсін бе?"
 
-#: khtml/khtml_part.cpp:4744
+#: khtml/khtml_part.cpp:4758
 msgid "&Send Email"
 msgstr "&Эл.поштаны жіберу"
 
-#: khtml/khtml_part.cpp:4765
+#: khtml/khtml_part.cpp:4779
 #, kde-format
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
@@ -10438,12 +10440,12 @@ msgstr ""
 "<qt>Пішін жергілікті файлдық жүйенің <br /><b>%1</b><br />дегеніне "
 "жіберілетін болады. <br />Пішінді жібергіңіз келе ме?</qt>"
 
-#: khtml/khtml_part.cpp:4766 khtml/khtmlview.cpp:2793 khtml/khtmlview.cpp:2835
+#: khtml/khtml_part.cpp:4780 khtml/khtmlview.cpp:2797 khtml/khtmlview.cpp:2839
 #: khtml/html/html_formimpl.cpp:1641 khtml/html/html_formimpl.cpp:1853
 msgid "Submit"
 msgstr "Жіберу"
 
-#: khtml/khtml_part.cpp:4819
+#: khtml/khtml_part.cpp:4833
 msgid ""
 "This site attempted to attach a file from your computer in the form "
 "submission. The attachment was removed for your protection."
@@ -10451,55 +10453,55 @@ msgstr ""
 "Сайтқа жіберу пішіміндегі деректерге жергілікті файлды тіркеу әрекеті. "
 "Қауіпсіздігіңіз үшін тіркелген файл жойылды."
 
-#: khtml/khtml_part.cpp:5890
+#: khtml/khtml_part.cpp:5904
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/с)"
 
-#: khtml/khtml_part.cpp:6802
+#: khtml/khtml_part.cpp:6816
 msgid "Security Warning"
 msgstr "Қауіпсіздік ескерту"
 
-#: khtml/khtml_part.cpp:6811
+#: khtml/khtml_part.cpp:6825
 #, kde-format
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>Сенімсіз<br /><b>%1</b><br />бетпен қатынасуға тыйым салынды.</qt>"
 
-#: khtml/khtml_part.cpp:6812 khtml/java/kjavaappletserver.cpp:794
+#: khtml/khtml_part.cpp:6826 khtml/java/kjavaappletserver.cpp:794
 msgid "Security Alert"
 msgstr "Қауіпсіздік дабылы"
 
-#: khtml/khtml_part.cpp:7160
+#: khtml/khtml_part.cpp:7174
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "'%1' әмияны ашық және деректер мен парольді енгізу үшін қолданылады."
 
-#: khtml/khtml_part.cpp:7220
+#: khtml/khtml_part.cpp:7234
 msgid "&Close Wallet"
 msgstr "&Әмиянды жабу"
 
-#: khtml/khtml_part.cpp:7223
+#: khtml/khtml_part.cpp:7237
 msgid "&Allow storing passwords for this site"
 msgstr "Бұл сайт парольдерін сақтау &рұқсат етілсін"
 
-#: khtml/khtml_part.cpp:7228
+#: khtml/khtml_part.cpp:7242
 #, kde-format
 msgid "Remove password for form %1"
 msgstr "%1 пішіннің паролін өшіру"
 
-#: khtml/khtml_part.cpp:7333
+#: khtml/khtml_part.cpp:7347
 msgid "JavaScript &Debugger"
 msgstr "JavaScript &жөндегіші"
 
-#: khtml/khtml_part.cpp:7365
+#: khtml/khtml_part.cpp:7379
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr "Беттің Javascript-ті арқылы жаңа терезе ашу әрекеті болдырылмады."
 
-#: khtml/khtml_part.cpp:7371
+#: khtml/khtml_part.cpp:7385
 msgid "Popup Window Blocked"
 msgstr "Қалқымалы терезе бұғатталды"
 
-#: khtml/khtml_part.cpp:7371
+#: khtml/khtml_part.cpp:7385
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -10509,17 +10511,17 @@ msgstr ""
 "Бұны басқару немесе қалқымалыны ашу үшін күй жолағындағы\n"
 "таңбашасын түртіңіз."
 
-#: khtml/khtml_part.cpp:7384
+#: khtml/khtml_part.cpp:7398
 #, kde-format
 msgid "&Show Blocked Popup Window"
 msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "Бұғ&аталған %1 қалқымалы терезе көрсетілсін"
 
-#: khtml/khtml_part.cpp:7385
+#: khtml/khtml_part.cpp:7399
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "&Бұғатталған терезе туралы әрекетсіз қалқымалы ескерту көрсетілсін"
 
-#: khtml/khtml_part.cpp:7387
+#: khtml/khtml_part.cpp:7401
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&JavaScript жаңа терезе ашу ережесін баптау..."
 
@@ -10812,7 +10814,7 @@ msgstr ""
 msgid "Default Font Size (100%)"
 msgstr "Әдетті қаріп өлшемі (100%)"
 
-#: khtml/khtmlview.cpp:1842
+#: khtml/khtmlview.cpp:1846
 msgid "Access Keys activated"
 msgstr "Қатынау кілттері белсендірілген"
 
@@ -10834,72 +10836,11 @@ msgstr "JavaScript"
 msgid "&Stop Script"
 msgstr "Скриптті т&оқтату"
 
-#: khtml/ecma/kjs_window.cpp:1650 khtml/ecma/kjs_html.cpp:2162
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1660
 msgid "Confirmation: JavaScript Popup"
 msgstr "Құптау: Қалқымалы Javascript терезесі"
 
-#: khtml/ecma/kjs_window.cpp:1653
-msgid ""
-"This site is requesting to open up a new browser window via JavaScript.\n"
-"Do you want to allow this?"
-msgstr ""
-"Бұл сайт Javascript арқылы жаңа терезе ашу әрекетін жасауда.\n"
-"Бұны рұқсат етесіз бе?"
-
-#: khtml/ecma/kjs_window.cpp:1656
-#, kde-format
-msgid ""
-"<qt>This site is requesting to open<p>%1</p>in a new browser window via "
-"JavaScript.<br />Do you want to allow this?</qt>"
-msgstr ""
-"<qt>Бұл сайт JavaScript арқылы шолғыштың жаңа терезесінде <p>%1</p> ашу "
-"әрекетін жасауда.<br />Ашу рұқсат па?</qt>"
-
-#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2169
-msgid "Allow"
-msgstr "Рұқсат"
-
-#: khtml/ecma/kjs_window.cpp:1658 khtml/ecma/kjs_html.cpp:2169
-msgid "Do Not Allow"
-msgstr "Рұқсат жоқ"
-
-#: khtml/ecma/kjs_window.cpp:1971
-msgid "Close window?"
-msgstr "Терезе жабылсын ба?"
-
-#: khtml/ecma/kjs_window.cpp:1971
-msgid "Confirmation Required"
-msgstr "Құптау талап етіледі"
-
-#: khtml/ecma/kjs_window.cpp:2874
-#, kde-format
-msgid ""
-"Do you want a bookmark pointing to the location \"%1\" to be added to your "
-"collection?"
-msgstr "\"%1\" деген орынға сілтейтін бетбелгі жинағыңызға қосылсын ба?"
-
-#: khtml/ecma/kjs_window.cpp:2877
-#, kde-format
-msgid ""
-"Do you want a bookmark pointing to the location \"%1\" titled \"%2\" to be "
-"added to your collection?"
-msgstr ""
-"\"%1\" деген \"%2\" деп аталған орынға сілтейтін бетбелгі жинағыңызға "
-"қосылсын ба?"
-
-#: khtml/ecma/kjs_window.cpp:2885
-msgid "JavaScript Attempted Bookmark Insert"
-msgstr "JavaScript бетбелгіні қою әрекетін жасауда"
-
-#: khtml/ecma/kjs_window.cpp:2889
-msgid "Insert"
-msgstr "Енгізу"
-
-#: khtml/ecma/kjs_window.cpp:2889
-msgid "Disallow"
-msgstr "Тыйым салу"
-
-#: khtml/ecma/kjs_html.cpp:2164
+#: khtml/ecma/kjs_html.cpp:2168
 msgid ""
 "This site is submitting a form which will open up a new browser window via "
 "JavaScript.\n"
@@ -10909,7 +10850,7 @@ msgstr ""
 "жіберуде.\n"
 "Пішінді жіберуге рұқсат бересіз бе?"
 
-#: khtml/ecma/kjs_html.cpp:2167
+#: khtml/ecma/kjs_html.cpp:2171
 #, kde-format
 msgid ""
 "<qt>This site is submitting a form which will open <p>%1</p> in a new "
@@ -10918,6 +10859,67 @@ msgid ""
 msgstr ""
 "<qt>Бұл сайт JavaScript арқылы шолғыштың жаңа терезесінде <p>%1</p> ашатын "
 "пішінді жіберуде.<br />Пішінді жіберуге рұқсат бересіз бе?</qt>"
+
+#: khtml/ecma/kjs_html.cpp:2173 khtml/ecma/kjs_window.cpp:1668
+msgid "Allow"
+msgstr "Рұқсат"
+
+#: khtml/ecma/kjs_html.cpp:2173 khtml/ecma/kjs_window.cpp:1668
+msgid "Do Not Allow"
+msgstr "Рұқсат жоқ"
+
+#: khtml/ecma/kjs_window.cpp:1663
+msgid ""
+"This site is requesting to open up a new browser window via JavaScript.\n"
+"Do you want to allow this?"
+msgstr ""
+"Бұл сайт Javascript арқылы жаңа терезе ашу әрекетін жасауда.\n"
+"Бұны рұқсат етесіз бе?"
+
+#: khtml/ecma/kjs_window.cpp:1666
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open<p>%1</p>in a new browser window via "
+"JavaScript.<br />Do you want to allow this?</qt>"
+msgstr ""
+"<qt>Бұл сайт JavaScript арқылы шолғыштың жаңа терезесінде <p>%1</p> ашу "
+"әрекетін жасауда.<br />Ашу рұқсат па?</qt>"
+
+#: khtml/ecma/kjs_window.cpp:1981
+msgid "Close window?"
+msgstr "Терезе жабылсын ба?"
+
+#: khtml/ecma/kjs_window.cpp:1981
+msgid "Confirmation Required"
+msgstr "Құптау талап етіледі"
+
+#: khtml/ecma/kjs_window.cpp:2884
+#, kde-format
+msgid ""
+"Do you want a bookmark pointing to the location \"%1\" to be added to your "
+"collection?"
+msgstr "\"%1\" деген орынға сілтейтін бетбелгі жинағыңызға қосылсын ба?"
+
+#: khtml/ecma/kjs_window.cpp:2887
+#, kde-format
+msgid ""
+"Do you want a bookmark pointing to the location \"%1\" titled \"%2\" to be "
+"added to your collection?"
+msgstr ""
+"\"%1\" деген \"%2\" деп аталған орынға сілтейтін бетбелгі жинағыңызға "
+"қосылсын ба?"
+
+#: khtml/ecma/kjs_window.cpp:2895
+msgid "JavaScript Attempted Bookmark Insert"
+msgstr "JavaScript бетбелгіні қою әрекетін жасауда"
+
+#: khtml/ecma/kjs_window.cpp:2899
+msgid "Insert"
+msgstr "Енгізу"
+
+#: khtml/ecma/kjs_window.cpp:2899
+msgid "Disallow"
+msgstr "Тыйым салу"
 
 #: khtml/ecma/debugger/consoledock.cpp:220
 msgid "Console"
@@ -11207,28 +11209,28 @@ msgstr "%1 үшін өңдеуіші табылған жоқ."
 msgid "Play"
 msgstr "Айдау"
 
-#: khtml/rendering/render_form.cpp:851
+#: khtml/rendering/render_form.cpp:849
 msgid "New Web Shortcut"
 msgstr "Жаңа Веб-қысқармасы"
 
-#: khtml/rendering/render_form.cpp:872
+#: khtml/rendering/render_form.cpp:870
 #, kde-format
 msgid "%1 is already assigned to %2"
 msgstr "%1 деген %2 дегенге тағайындалған екен"
 
-#: khtml/rendering/render_form.cpp:917
+#: khtml/rendering/render_form.cpp:915
 msgid "Search &provider name:"
 msgstr "Іздеу &провайдерінің атауы:"
 
-#: khtml/rendering/render_form.cpp:919
+#: khtml/rendering/render_form.cpp:917
 msgid "New search provider"
 msgstr "Жаңа іздеу провайдері"
 
-#: khtml/rendering/render_form.cpp:924
+#: khtml/rendering/render_form.cpp:922
 msgid "UR&I shortcuts:"
 msgstr "UR&I қысқармалары:"
 
-#: khtml/rendering/render_form.cpp:1010
+#: khtml/rendering/render_form.cpp:1008
 msgid "Create Web Shortcut"
 msgstr "Веб-қысқарманы құру"
 
@@ -11319,7 +11321,6 @@ msgstr ""
 
 #: kinit/klauncher.cpp:564
 #, kde-format
-#| msgid "KDEInit could not launch '%1'."
 msgid "KDEInit could not launch '%1'"
 msgstr "KDEInit '%1' дегенді жеге алмады"
 
@@ -12097,11 +12098,6 @@ msgstr "Жүктеп беру жаңылысы: %1"
 
 #: knewstuff/knewstuff3/attica/atticaprovider.cpp:286
 #, kde-format
-#| msgctxt ""
-#| "the price of a download item, parameter 1 is the currency, 2 is the price"
-#| msgid ""
-#| "This items costs %1 %2.\n"
-#| "Do you want to buy it?"
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
 msgid ""
@@ -13304,8 +13300,6 @@ msgid "&New"
 msgstr "&Жаңа"
 
 #: kdeui/actions/kstandardaction_p.h:43
-#| msgctxt "@label"
-#| msgid "Create new tag:"
 msgid "Create new document"
 msgstr "Жаңа құжатты бастау"
 
@@ -13322,7 +13316,6 @@ msgid "Open a document which was recently opened"
 msgstr "Жуырда ашылған құжатты ашу"
 
 #: kdeui/actions/kstandardaction_p.h:46
-#| msgid "Close Document"
 msgid "Save document"
 msgstr "Құжатты сақтау"
 
@@ -13339,13 +13332,10 @@ msgid "Revert unsaved changes made to document"
 msgstr "Сақталмаған құжаттың өзгерістерін қайтару"
 
 #: kdeui/actions/kstandardaction_p.h:49
-#| msgid "Close Document"
 msgid "Close document"
 msgstr "Құжатты жабу"
 
 #: kdeui/actions/kstandardaction_p.h:50
-#| msgctxt "keyboard-key-name"
-#| msgid "PrintScreen"
 msgid "Print document"
 msgstr "Құжатты  басып шығару"
 
@@ -13374,10 +13364,6 @@ msgid "Re&do"
 msgstr "Қайтудан а&йну"
 
 #: kdeui/actions/kstandardaction_p.h:56
-#| msgctxt ""
-#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
-#| "browser)"
-#| msgid "Make a donation"
 msgid "Redo last undone action"
 msgstr "Соңғы қайтудан айну"
 
@@ -13402,7 +13388,6 @@ msgid "&Paste"
 msgstr "&Орналастыру"
 
 #: kdeui/actions/kstandardaction_p.h:59 kdeui/actions/kstandardaction_p.h:60
-#| msgid "Upload content"
 msgid "Paste clipboard content"
 msgstr "Алмасу буфері мазмұның орналастыру"
 
@@ -13471,7 +13456,6 @@ msgid "&Zoom..."
 msgstr "Ұлғ&айту/Кішірейту..."
 
 #: kdeui/actions/kstandardaction_p.h:75
-#| msgid "Select a week"
 msgid "Select zoom level"
 msgstr "Масштабын таңдау"
 
@@ -13480,7 +13464,6 @@ msgid "&Redisplay"
 msgstr "&Көріністі жаңарту"
 
 #: kdeui/actions/kstandardaction_p.h:76
-#| msgid "&Redisplay"
 msgid "Redisplay document"
 msgstr "Көріністі жаңарту"
 
@@ -13497,7 +13480,6 @@ msgid "&Previous Page"
 msgstr "&Алдыңғы бет"
 
 #: kdeui/actions/kstandardaction_p.h:83
-#| msgid "&Previous Page"
 msgid "Go to previous page"
 msgstr "Алдыңғы бетке өту"
 
@@ -13506,8 +13488,6 @@ msgid "&Next Page"
 msgstr "&Келесі бет"
 
 #: kdeui/actions/kstandardaction_p.h:84
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "Go to next page"
 msgstr "Келесі бетке өту"
 
@@ -13528,8 +13508,6 @@ msgid "&First Page"
 msgstr "&Бірінші бет"
 
 #: kdeui/actions/kstandardaction_p.h:88
-#| msgctxt "@action"
-#| msgid "Go to Line"
 msgid "Go to first page"
 msgstr "Алғашқы бетке өту"
 
@@ -13538,23 +13516,18 @@ msgid "&Last Page"
 msgstr "&Соңғы бет"
 
 #: kdeui/actions/kstandardaction_p.h:89
-#| msgid "&Go to Page..."
 msgid "Go to last page"
 msgstr "Соңғы бетке өту"
 
 #: kdeui/actions/kstandardaction_p.h:90
-#| msgid "&Back in the Document"
 msgid "Go back in document"
 msgstr "Құжат бойы кері"
 
 #: kdeui/actions/kstandardaction_p.h:91
-#| msgctxt "go forward"
-#| msgid "&Forward"
 msgid "&Forward"
 msgstr "&Алға қарай"
 
 #: kdeui/actions/kstandardaction_p.h:91
-#| msgid "&Forward in the Document"
 msgid "Go forward in document"
 msgstr "Құжат бойы алға"
 
@@ -13571,12 +13544,10 @@ msgid "&Spelling..."
 msgstr "&Емлесін тексеру..."
 
 #: kdeui/actions/kstandardaction_p.h:96
-#| msgid "Check Spelling"
 msgid "Check spelling in document"
 msgstr "Құжатың емлесін тексеру"
 
 #: kdeui/actions/kstandardaction_p.h:98
-#| msgid "Show &Menubar"
 msgid "Show or hide menubar"
 msgstr "Мәзірді көрсету/жасыру"
 
@@ -13585,13 +13556,10 @@ msgid "Show &Toolbar"
 msgstr "Құ&рал панелін көрсету"
 
 #: kdeui/actions/kstandardaction_p.h:99
-#| msgctxt "@action"
-#| msgid "Show Toolbar"
 msgid "Show or hide toolbar"
 msgstr "Құрал панелін көрсету/жасыру"
 
 #: kdeui/actions/kstandardaction_p.h:100
-#| msgid "Show Statusbar"
 msgid "Show or hide statusbar"
 msgstr "Күй жолағын көрсету/жасыру"
 
@@ -13663,10 +13631,6 @@ msgstr "am"
 #: kdecore/date/kdatetime.cpp:2991
 msgid "pm"
 msgstr "pm"
-
-#~ msgctxt "@item font"
-#~ msgid "Regular"
-#~ msgstr "Қалыпты"
 
 #~ msgid "What's &This"
 #~ msgstr "Бұл &не"
