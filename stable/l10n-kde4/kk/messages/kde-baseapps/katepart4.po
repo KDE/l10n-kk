@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-27 04:18+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2012-06-29 03:56+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -227,7 +227,7 @@ msgstr[0] " таңба"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:679 dialogs/katedialogs.cpp:756
-#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:610
+#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:499
 msgid "General"
 msgstr "Жалпы"
 
@@ -283,7 +283,7 @@ msgstr "Тәжірибелі пайдаланушы режімі өзгерті�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:924 rc.cpp:589
+#: dialogs/katedialogs.cpp:924 rc.cpp:478
 msgid "Advanced"
 msgstr "Қосымша"
 
@@ -662,7 +662,7 @@ msgstr "%1 қасиеттері"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:284 rc.cpp:308
+#: mode/katemodeconfigpage.cpp:284 rc.cpp:614
 msgid "Properties"
 msgstr "Қасиеттері"
 
@@ -863,6 +863,17 @@ msgstr "%1 скриптті жүктеу қатесі\n"
 msgid "Error loading script %1"
 msgstr "%1 скриптті жүктеу қатесі"
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, kde-format
+msgid "Command not found: %1"
+msgstr "Келесі команда табылмады: %1"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+"Барлық JavaScript файлдарды (индентерлер, команда жолының скрипттері, т.б.) "
+"қайта жүктеп алу."
+
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
 msgstr "Қате: utils.js ашылмады"
@@ -882,17 +893,6 @@ msgstr "Орындау"
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
 msgstr "Орындайтын код жоқ"
-
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, kde-format
-msgid "Command not found: %1"
-msgstr "Келесі команда табылмады: %1"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
-msgstr ""
-"Барлық JavaScript файлдарды (индентерлер, команда жолының скрипттері, т.б.) "
-"қайта жүктеп алу."
 
 #: search/katesearchbar.cpp:77
 msgid "Add..."
@@ -1114,6 +1114,66 @@ msgstr "Қателер!"
 msgid "Error: %1"
 msgstr "Қате: %1"
 
+#: syntax/katehighlight.cpp:83
+msgctxt "Syntax highlighting"
+msgid "None"
+msgstr "Жоқ"
+
+#: syntax/katehighlight.cpp:737
+msgid "Normal Text"
+msgstr "Кәдімгі мәтін"
+
+#: syntax/katehighlight.cpp:899
+#, kde-format
+msgid ""
+"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+"name<br />"
+msgstr ""
+"<b>%1</b>: Тыйымды синтаксис. (%2) атрибутына символдық атаумен сілтеуге "
+"болмайды<br />"
+
+#: syntax/katehighlight.cpp:1422
+#, kde-format
+msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
+msgstr "<b>%1</b>: Тыйымды синтаксис. %2 контексттің символдық атауы жоқ<br />"
+
+#: syntax/katehighlight.cpp:1508
+#, kde-format
+msgid ""
+"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
+msgstr ""
+"<B>%1</B>: Тыйымды синтаксис. %2 контекстті символдық атаумен сілтеуге "
+"болмайды"
+
+#: syntax/katehighlight.cpp:1652
+msgid ""
+"There were warning(s) and/or error(s) while parsing the syntax highlighting "
+"configuration."
+msgstr ""
+"Синтаксисті талдау ережесін оқып башайлағанда ескерту және/немесе қате "
+"болған."
+
+#: syntax/katehighlight.cpp:1654
+msgid "Kate Syntax Highlighting Parser"
+msgstr "Kate синтаксис талдап бояулағышы"
+
+#: syntax/katehighlight.cpp:1816
+msgid ""
+"Since there has been an error parsing the highlighting description, this "
+"highlighting will be disabled"
+msgstr ""
+"Синтаксисті талдау ережесін оқып башайлағанда қате болғандықтан, бұл талдау "
+"рұқсат етілмеген"
+
+#: syntax/katehighlight.cpp:2042
+#, kde-format
+msgid ""
+"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
+">"
+msgstr ""
+"<b>%1</b>: көрсетілген көп жолды (%2) түсініктемесінің шекарасын анықтау "
+"мүмкін болмады<br />"
+
 #: syntax/katesyntaxmanager.cpp:156
 msgctxt "@item:intable Text context"
 msgid "Normal"
@@ -1184,66 +1244,6 @@ msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "Қате"
 
-#: syntax/katehighlight.cpp:83
-msgctxt "Syntax highlighting"
-msgid "None"
-msgstr "Жоқ"
-
-#: syntax/katehighlight.cpp:737
-msgid "Normal Text"
-msgstr "Кәдімгі мәтін"
-
-#: syntax/katehighlight.cpp:899
-#, kde-format
-msgid ""
-"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-"name<br />"
-msgstr ""
-"<b>%1</b>: Тыйымды синтаксис. (%2) атрибутына символдық атаумен сілтеуге "
-"болмайды<br />"
-
-#: syntax/katehighlight.cpp:1422
-#, kde-format
-msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
-msgstr "<b>%1</b>: Тыйымды синтаксис. %2 контексттің символдық атауы жоқ<br />"
-
-#: syntax/katehighlight.cpp:1508
-#, kde-format
-msgid ""
-"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
-msgstr ""
-"<B>%1</B>: Тыйымды синтаксис. %2 контекстті символдық атаумен сілтеуге "
-"болмайды"
-
-#: syntax/katehighlight.cpp:1652
-msgid ""
-"There were warning(s) and/or error(s) while parsing the syntax highlighting "
-"configuration."
-msgstr ""
-"Синтаксисті талдау ережесін оқып башайлағанда ескерту және/немесе қате "
-"болған."
-
-#: syntax/katehighlight.cpp:1654
-msgid "Kate Syntax Highlighting Parser"
-msgstr "Kate синтаксис талдап бояулағышы"
-
-#: syntax/katehighlight.cpp:1816
-msgid ""
-"Since there has been an error parsing the highlighting description, this "
-"highlighting will be disabled"
-msgstr ""
-"Синтаксисті талдау ережесін оқып башайлағанда қате болғандықтан, бұл талдау "
-"рұқсат етілмеген"
-
-#: syntax/katehighlight.cpp:2042
-#, kde-format
-msgid ""
-"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
-">"
-msgstr ""
-"<b>%1</b>: көрсетілген көп жолды (%2) түсініктемесінің шекарасын анықтау "
-"мүмкін болмады<br />"
-
 #: utils/kateautoindent.cpp:75
 msgctxt "Autoindent mode"
 msgid "None"
@@ -1302,233 +1302,89 @@ msgstr "&Келесі: %1 - \"%2\""
 msgid "&Previous: %1 - \"%2\""
 msgstr "&Алдыңғы: %1 - \"%2\""
 
-#: utils/kateprinter.cpp:246
-msgid "(Selection of) "
-msgstr "(Таңдауы) "
-
-#: utils/kateprinter.cpp:528
+#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
 #, kde-format
-msgid "Typographical Conventions for %1"
-msgstr "%1 үшін типографиялық келісім"
+msgid "Missing argument. Usage: %1 <value>"
+msgstr "Аргументі жоқ. Қолдануы: %1 <мәні>"
 
-#: utils/kateprinter.cpp:558
-msgid "text"
-msgstr "мәтін"
+#: utils/katecmds.cpp:218
+#, kde-format
+msgid "No such highlighting '%1'"
+msgstr "'%1' талдап белгілеуі жоқ"
 
-#: utils/kateprinter.cpp:682
-msgid "Te&xt Settings"
-msgstr "Мә&тіннің параметрлері"
+#: utils/katecmds.cpp:225
+#, kde-format
+msgid "No such mode '%1'"
+msgstr "Бұндай режім жоқ: \"%1\""
 
-#: utils/kateprinter.cpp:686
-msgid "Print line &numbers"
-msgstr "Жол нөмірлері &басып шығарылсын"
+#: utils/katecmds.cpp:240
+#, kde-format
+msgid "Failed to convert argument '%1' to integer."
+msgstr "'%1' аргументін бүтін санға түрлендіру қатесі."
 
-#: utils/kateprinter.cpp:689
-msgid "Print &legend"
-msgstr "Тү&сіндірмелері басып шығарылсын"
+#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
+msgid "Width must be at least 1."
+msgstr "Ені кемінде 1 болу керек."
 
-#: utils/kateprinter.cpp:698
-msgid ""
-"<p>If enabled, line numbers will be printed on the left side of the page(s)."
-"</p>"
-msgstr ""
-"<p>Бұл белгі қойылса, беттің сол жағында жол нөмірлері басылып шығарылады. </"
-"p>"
+#: utils/katecmds.cpp:258
+msgid "Column must be at least 1."
+msgstr "Бағаны кемінде 1 болу керек."
 
-#: utils/kateprinter.cpp:700
-msgid ""
-"<p>Print a box displaying typographical conventions for the document type, "
-"as defined by the syntax highlighting being used.</p>"
-msgstr ""
-"<p>Құжаттың түріне қарай, синтаксисін талдап белгілеу үшін қолданған "
-"типографиялық келісімдер туралы мәліметтер басылып шығарылады.</p>"
+#: utils/katecmds.cpp:297
+#, kde-format
+msgid "Usage: %1 on|off|1|0|true|false"
+msgstr "Қолдануы: %1 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:752
-msgid "Hea&der && Footer"
-msgstr "Ко&лонтитулдар"
+#: utils/katecmds.cpp:328
+#, kde-format
+msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
+msgstr "'%1' аргументі дұрыс емес. Қолдануы: %2 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:759
-msgid "Pr&int header"
-msgstr "&Жоғарғы колонтитул болсын"
+#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
+#, kde-format
+msgid "Unknown command '%1'"
+msgstr "'%1' командасы беймәлім"
 
-#: utils/kateprinter.cpp:761
-msgid "Pri&nt footer"
-msgstr "&Төменгі колонтитул болсын"
+#: utils/katecmds.cpp:409
+#, kde-format
+msgid "No mapping found for \"%1\""
+msgstr "\"%1\" дегенге сәйкесі жоқ"
 
-#: utils/kateprinter.cpp:767
-msgid "Header/footer font:"
-msgstr "Колонтитулдің каріпі:"
+#: utils/katecmds.cpp:412
+#, kde-format
+msgid "\"%1\" is mapped to \"%2\""
+msgstr "\"%1\" деген \"%2\" дегенге сәйкесті"
 
-#: utils/kateprinter.cpp:772
-msgid "Choo&se Font..."
-msgstr "Қаріпті &таңдау..."
+#: utils/katecmds.cpp:417
+#, kde-format
+msgid "Missing argument(s). Usage: %1 <from> [<to>]"
+msgstr "Аргумент(тер)і жоқ. Қолдануы: %1 <неден> [<неге>]"
 
-#: utils/kateprinter.cpp:778
-msgid "Header Properties"
-msgstr "Жоғарғы колонтитул"
+#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
+msgid "Wrong arguments"
+msgstr "Қате аргументтер"
 
-#: utils/kateprinter.cpp:782
-msgid "&Format:"
-msgstr "&Пішімі:"
+#: utils/katecmds.cpp:575
+msgid "Document written to disk"
+msgstr "Құжат дискіге жазылды"
 
-#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
-msgid "Colors:"
-msgstr "Түстері:"
+#: utils/katecmds.cpp:807
+msgid "Sorry, but Kate is not able to replace newlines, yet"
+msgstr "Кешіріңіз, Kate әзірше жаңа жолдарды алмастыра алмайды"
 
-#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
-msgid "Foreground:"
-msgstr "Жазудың:"
+#: utils/katecmds.cpp:846
+#, kde-format
+msgctxt "substituted into the previous message"
+msgid "1 line"
+msgid_plural "%1 lines"
+msgstr[0] "%1 жол"
 
-#: utils/kateprinter.cpp:809
-msgid "Bac&kground"
-msgstr "&Аясының"
-
-#: utils/kateprinter.cpp:813
-msgid "Footer Properties"
-msgstr "Төменгі колонтитул"
-
-#: utils/kateprinter.cpp:818
-msgid "For&mat:"
-msgstr "Пі&шімі:"
-
-#: utils/kateprinter.cpp:846
-msgid "&Background"
-msgstr "&Аясы"
-
-#: utils/kateprinter.cpp:873
-msgid "<p>Format of the page header. The following tags are supported:</p>"
-msgstr "<p>Жоғарғы колонтитул пішімі. Келесі белгілерді қолдануға болады:</p>"
-
-#: utils/kateprinter.cpp:875
-msgid ""
-"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
-"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
-"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
-"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
-"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
-"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
-msgstr ""
-"<ul><li><tt>%u</tt>: пайдаланушының аты</li><li><tt>%d</tt>: қысқа күні мен "
-"уақыты</li><li><tt>%D</tt>: толық күні мен уақыты</li><li><tt>%h</tt>: басып "
-"жатқандағы уақыт</li><li><tt>%y</tt>: қысқа пішімдегі күні</li><li><tt>%Y</"
-"tt>: толық пішімдегі күні</li><li><tt>%f</tt>: файл атауы</li><li><tt>%U</"
-"tt>: құжаттың толық URL-адресі</li><li><tt>%p</tt>: беттің нөмірі</"
-"li><li><tt>%P</tt>: жалпы беттер саны</li></ul><br />"
-
-#: utils/kateprinter.cpp:889
-msgid "<p>Format of the page footer. The following tags are supported:</p>"
-msgstr ""
-"<p>Төменгі колонтитулдың пішімі. Келесі белгілерді қолдануға болады:</p>"
-
-#: utils/kateprinter.cpp:987
-msgid "Add Placeholder..."
-msgstr "Орынбасарды қосу..."
-
-#: utils/kateprinter.cpp:989
-msgid "Current User Name"
-msgstr "Қазіргі пайдаланушының аты"
-
-#: utils/kateprinter.cpp:991
-msgid "Complete Date/Time (short format)"
-msgstr "Толық күн/уақыт (қысқа пішімде)"
-
-#: utils/kateprinter.cpp:993
-msgid "Complete Date/Time (long format)"
-msgstr "Толық күн/уақыт (ұзын пішімде)"
-
-#: utils/kateprinter.cpp:995
-msgid "Current Time"
-msgstr "Қазіргі уақыт"
-
-#: utils/kateprinter.cpp:997
-msgid "Current Date (short format)"
-msgstr "Бүгінгі күн (қысықасы)"
-
-#: utils/kateprinter.cpp:999
-msgid "Current Date (long format)"
-msgstr "Бүгінгі күн (ұзыны)"
-
-#: utils/kateprinter.cpp:1001
-msgid "File Name"
-msgstr "Файл атауы"
-
-#: utils/kateprinter.cpp:1003
-msgid "Full document URL"
-msgstr "Құжаттын толық URL-і"
-
-#: utils/kateprinter.cpp:1005
-msgid "Page Number"
-msgstr "Бет нөмірі"
-
-#: utils/kateprinter.cpp:1007
-msgid "Total Amount of Pages"
-msgstr "Беттер жалпы саны"
-
-#: utils/kateprinter.cpp:1116
-msgid "L&ayout"
-msgstr "О&рналасуы"
-
-#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
-msgid "&Schema:"
-msgstr "&Сұлбасы:"
-
-#: utils/kateprinter.cpp:1127
-msgid "Draw bac&kground color"
-msgstr "&Аясы боялсын"
-
-#: utils/kateprinter.cpp:1130
-msgid "Draw &boxes"
-msgstr "Қор&шаулар сызылсын"
-
-#: utils/kateprinter.cpp:1134
-msgid "Box Properties"
-msgstr "Қоршаудың қасиеттері"
-
-#: utils/kateprinter.cpp:1138
-msgid "W&idth:"
-msgstr "&Ені:"
-
-#: utils/kateprinter.cpp:1146
-msgid "&Margin:"
-msgstr "&Жиегі:"
-
-#: utils/kateprinter.cpp:1154
-msgid "Co&lor:"
-msgstr "&Түсі:"
-
-#: utils/kateprinter.cpp:1171
-msgid "Select the color scheme to use for the print."
-msgstr "Басқанда қолданатын түстер сұлбасын таңдау."
-
-#: utils/kateprinter.cpp:1173
-msgid ""
-"<p>If enabled, the background color of the editor will be used.</p><p>This "
-"may be useful if your color scheme is designed for a dark background.</p>"
-msgstr ""
-"<p>Бұны қоссаңыз, өңдегіштің ая түсі қолданылады.</p><p>Егер қолданыстағы "
-"түстер сұлбаңыздың аясы қою түсті болса, бұл пайдалы болуы мүмкін,.</p>"
-
-#: utils/kateprinter.cpp:1176
-msgid ""
-"<p>If enabled, a box as defined in the properties below will be drawn around "
-"the contents of each page. The Header and Footer will be separated from the "
-"contents with a line as well.</p>"
-msgstr ""
-"<p>Бұны қоссаңыз, әрбір беттің мазмұны, қасиеттері төменде анықталған, "
-"айналдыра қоршаумен өрнектеледі. Сонымен қатар, жоғарғы және төменгі "
-"колонтитулдар негізгі мәтіннен бір жолмен бөлінеді.</p>"
-
-#: utils/kateprinter.cpp:1180
-msgid "The width of the box outline"
-msgstr "Қоршау сұлбасының ені"
-
-#: utils/kateprinter.cpp:1182
-msgid "The margin inside boxes, in pixels"
-msgstr "Мәтінмен қоршау аралығы қанша пиксел"
-
-#: utils/kateprinter.cpp:1184
-msgid "The line color to use for boxes"
-msgstr "Қоршау сызығының түсі "
+#: utils/katecmds.cpp:844
+#, kde-format
+msgctxt "%2 is the translation of the next message"
+msgid "1 replacement done on %2"
+msgid_plural "%1 replacements done on %2"
+msgstr[0] "%2 дегенге %1 алмасу жасалды"
 
 #: utils/kateglobal.cpp:65
 msgid "Kate Part"
@@ -1869,325 +1725,233 @@ msgstr "Файлдарды ашу мен сақтау"
 msgid "Extensions Manager"
 msgstr "Кеңейтулер менеджері"
 
-#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
+#: utils/kateprinter.cpp:246
+msgid "(Selection of) "
+msgstr "(Таңдауы) "
+
+#: utils/kateprinter.cpp:528
 #, kde-format
-msgid "Missing argument. Usage: %1 <value>"
-msgstr "Аргументі жоқ. Қолдануы: %1 <мәні>"
-
-#: utils/katecmds.cpp:218
-#, kde-format
-msgid "No such highlighting '%1'"
-msgstr "'%1' талдап белгілеуі жоқ"
-
-#: utils/katecmds.cpp:225
-#, kde-format
-msgid "No such mode '%1'"
-msgstr "Бұндай режім жоқ: \"%1\""
-
-#: utils/katecmds.cpp:240
-#, kde-format
-msgid "Failed to convert argument '%1' to integer."
-msgstr "'%1' аргументін бүтін санға түрлендіру қатесі."
-
-#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
-msgid "Width must be at least 1."
-msgstr "Ені кемінде 1 болу керек."
-
-#: utils/katecmds.cpp:258
-msgid "Column must be at least 1."
-msgstr "Бағаны кемінде 1 болу керек."
-
-#: utils/katecmds.cpp:297
-#, kde-format
-msgid "Usage: %1 on|off|1|0|true|false"
-msgstr "Қолдануы: %1 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:328
-#, kde-format
-msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
-msgstr "'%1' аргументі дұрыс емес. Қолдануы: %2 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
-#, kde-format
-msgid "Unknown command '%1'"
-msgstr "'%1' командасы беймәлім"
-
-#: utils/katecmds.cpp:409
-#, kde-format
-msgid "No mapping found for \"%1\""
-msgstr "\"%1\" дегенге сәйкесі жоқ"
-
-#: utils/katecmds.cpp:412
-#, kde-format
-msgid "\"%1\" is mapped to \"%2\""
-msgstr "\"%1\" деген \"%2\" дегенге сәйкесті"
-
-#: utils/katecmds.cpp:417
-#, kde-format
-msgid "Missing argument(s). Usage: %1 <from> [<to>]"
-msgstr "Аргумент(тер)і жоқ. Қолдануы: %1 <неден> [<неге>]"
-
-#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
-msgid "Wrong arguments"
-msgstr "Қате аргументтер"
-
-#: utils/katecmds.cpp:575
-msgid "Document written to disk"
-msgstr "Құжат дискіге жазылды"
-
-#: utils/katecmds.cpp:807
-msgid "Sorry, but Kate is not able to replace newlines, yet"
-msgstr "Кешіріңіз, Kate әзірше жаңа жолдарды алмастыра алмайды"
-
-#: utils/katecmds.cpp:846
-#, kde-format
-msgctxt "substituted into the previous message"
-msgid "1 line"
-msgid_plural "%1 lines"
-msgstr[0] "%1 жол"
-
-#: utils/katecmds.cpp:844
-#, kde-format
-msgctxt "%2 is the translation of the next message"
-msgid "1 replacement done on %2"
-msgid_plural "%1 replacements done on %2"
-msgstr[0] "%2 дегенге %1 алмасу жасалды"
-
-#: variableeditor/katehelpbutton.cpp:32
-msgid "Kate Handbook."
-msgstr "Kate анықтамасы."
-
-#: variableeditor/variableeditor.cpp:194
-msgid "true"
-msgstr "ақиқат"
-
-#: variableeditor/variableeditor.cpp:195
-msgid "false"
-msgstr "жалған"
-
-#: variableeditor/variablelineedit.cpp:59
-msgid "Show list of valid variables."
-msgstr "Дұрыс айнымалылар тізімін көрсету."
-
-#: variableeditor/variablelineedit.cpp:140
-msgctxt "short translation please"
-msgid "Set auto insertion of brackets on or off."
-msgstr "Сыңары жақшаны авто енгізу/енгізбеу "
-
-#: variableeditor/variablelineedit.cpp:146
-msgctxt "short translation please"
-msgid "Set the number of autocenter lines."
-msgstr "Ортаға автотураланған жолдар саны."
-
-#: variableeditor/variablelineedit.cpp:151
-msgctxt "short translation please"
-msgid "Auto insert asterisk in doxygen comments."
-msgstr "Doxygen түсініктемелеріне жұлдызшаны автоқосу."
-
-#: variableeditor/variablelineedit.cpp:156
-msgctxt "short translation please"
-msgid "Set the document background color."
-msgstr "Құжат аясының түсін орнату."
-
-#: variableeditor/variablelineedit.cpp:161
-msgctxt "short translation please"
-msgid "Pressing backspace in leading whitespace unindents."
-msgstr "Жол басындағы бос орында Backspace-пен шегіністі кішірейту."
-
-#: variableeditor/variablelineedit.cpp:167
-msgctxt "short translation please"
-msgid "Enable block selection mode."
-msgstr "Блокті таңдау режімін рұқсат ету. "
-
-#: variableeditor/variablelineedit.cpp:172
-msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
-msgstr "Юникодтағы файлды сақтағанда байт реті маркерін рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:177
-msgctxt "short translation please"
-msgid "Set the color for the bracket highlight."
-msgstr "Жақшаны белгілеу түсін орнату."
-
-#: variableeditor/variablelineedit.cpp:182
-msgctxt "short translation please"
-msgid "Set the background color for the current line."
-msgstr "Назардағы жолдың ая түсін орнату."
-
-#: variableeditor/variablelineedit.cpp:188
-msgctxt "short translation please"
-msgid "Set the default dictionary used for spell checking."
-msgstr "Емлесін тексеруде пайдаланатын әдетті сөздік."
-
-#: variableeditor/variablelineedit.cpp:193
-msgctxt "short translation please"
-msgid "Enable dynamic word wrap of long lines."
-msgstr "Ұзын жол сөздерін динамикалық тасымалдауын рұқасат ету.ы"
-
-#: variableeditor/variablelineedit.cpp:198
-msgctxt "short translation please"
-msgid "Sets the end of line mode."
-msgstr "Жол соңы пішімін орнату."
-
-#: variableeditor/variablelineedit.cpp:203
-msgctxt "short translation please"
-msgid "Enable folding markers in the editor border."
-msgstr "Өңдегіш жиегінде бүктеу маркерлерін көрсету."
-
-#: variableeditor/variablelineedit.cpp:209
-msgctxt "short translation please"
-msgid "Set the point size of the document font."
-msgstr "Құжат қаріпінің өлшемін орнату."
-
-#: variableeditor/variablelineedit.cpp:214
-msgctxt "short translation please"
-msgid "Set the font of the document."
-msgstr "Құжат қаріпін орнату."
-
-#: variableeditor/variablelineedit.cpp:226
-msgctxt "short translation please"
-msgid "Set the syntax highlighting."
-msgstr "Ситаксис талдап бояулауды орнату."
-
-#: variableeditor/variablelineedit.cpp:231
-msgctxt "short translation please"
-msgid "Set the icon bar color."
-msgstr "Таңбашалар панелінің түсі."
-
-#: variableeditor/variablelineedit.cpp:236
-msgctxt "short translation please"
-msgid "Enable the icon border in the editor view."
-msgstr "Өндегіш көрінісінде таңбашалар панелін рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:241
-msgctxt "short translation please"
-msgid "Set the auto indentation style."
-msgstr "Автошегініс стилін орнату."
-
-#: variableeditor/variablelineedit.cpp:247
-msgctxt "short translation please"
-msgid "Set the indentation depth for each indent level."
-msgstr "Әрбір шегініс деңгейінің тереңдігін орнату."
-
-#: variableeditor/variablelineedit.cpp:252
-msgctxt "short translation please"
-msgid "Allow odd indentation level (no multiple of indent width)."
-msgstr "Оғаш (еселеген қадамына тең емес) шегініс деңгейін рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:257
-msgctxt "short translation please"
-msgid "Show line numbers."
-msgstr "Жол нөмірлерін көрсету."
-
-#: variableeditor/variablelineedit.cpp:262
-msgctxt "short translation please"
-msgid "Insert newline at end of file on save."
-msgstr "Файл сақтағанда соңына бос жол қосу."
-
-#: variableeditor/variablelineedit.cpp:267
-msgctxt "short translation please"
-msgid "Enable overwrite mode in the document."
-msgstr "Үстінен жазу режімін рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:272
-msgctxt "short translation please"
-msgid "Enable persistent text selection."
-msgstr "Тұрақты мәтінді таңдауын рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:277
-msgctxt "short translation please"
-msgid "Remove trailing spaces when editing a line."
-msgstr "Жол соңындағы бос орындарды өшіру."
-
-#: variableeditor/variablelineedit.cpp:282
-msgctxt "short translation please"
-msgid "Replace tabs with spaces when saving the document."
-msgstr "Құжатты сақтағанда кестелеу белгісін бос орындармен ауыстру."
-
-#: variableeditor/variablelineedit.cpp:287
-msgctxt "short translation please"
-msgid "Replace tabs with spaces."
-msgstr "Кестелеу белгісін бос орындармен ауыстру."
-
-#: variableeditor/variablelineedit.cpp:292
-msgctxt "short translation please"
-msgid "Remove trailing spaces when saving the document."
-msgstr "Құжатты сақтағанда жол соңындағы бос орындарын өшіру."
-
-#: variableeditor/variablelineedit.cpp:298
-msgctxt "short translation please"
-msgid "Set the color scheme."
-msgstr "Түстер сұлбасын орнату."
-
-#: variableeditor/variablelineedit.cpp:303
-msgctxt "short translation please"
-msgid "Set the text selection color."
-msgstr "Мәтінді таңдау түсін орнату."
-
-#: variableeditor/variablelineedit.cpp:308
-msgctxt "short translation please"
-msgid "Visualize tabs and trailing spaces."
-msgstr "Кестелеу және жол соңындағы бос орындарды бояулау."
-
-#: variableeditor/variablelineedit.cpp:313
-msgctxt "short translation please"
-msgid "Enable smart home navigation."
-msgstr "Парасатты басына ауысуды рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:318
-msgctxt "short translation please"
-msgid "Pressing TAB key indents."
-msgstr "TAB пернемен шегіну."
-
-#: variableeditor/variablelineedit.cpp:324
-msgctxt "short translation please"
-msgid "Set the tab display width."
-msgstr "Кестелеу қадамын көрсету."
-
-#: variableeditor/variablelineedit.cpp:330
-msgctxt "short translation please"
-msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr "Жатталатын қайту аалдар тереңдігі (0 дегені - шексіз)."
-
-#: variableeditor/variablelineedit.cpp:336
-msgctxt "short translation please"
-msgid "Set the word wrap column."
-msgstr "Жолды қай бағаннан асырмай тасымалдау керек."
-
-#: variableeditor/variablelineedit.cpp:341
-msgctxt "short translation please"
-msgid "Set the word wrap marker color."
-msgstr "Тасымалдау маркерінің түсі."
-
-#: variableeditor/variablelineedit.cpp:346
-msgctxt "short translation please"
-msgid "Enable word wrap while typing text."
-msgstr "Мәтін терген кезде тасымалдауды рұқсат ету."
-
-#: variableeditor/variablelineedit.cpp:351
-msgctxt "short translation please"
-msgid "Wrap the text cursor at the end of a line."
-msgstr "Жол соңында меңзерді тасымалдау."
-
-#: view/kateviewaccessible.h:80
-msgid "Move To..."
-msgstr "Мынаған жылжу..."
-
-#: view/kateviewaccessible.h:81
-msgid "Move Left"
-msgstr "Солға жылжу"
-
-#: view/kateviewaccessible.h:82
-msgid "Move Right"
-msgstr "Оңға жылжу"
-
-#: view/kateviewaccessible.h:83
-msgid "Move Up"
-msgstr "Жоғарлау"
-
-#: view/kateviewaccessible.h:84
-msgid "Move Down"
-msgstr "Төмендеу"
+msgid "Typographical Conventions for %1"
+msgstr "%1 үшін типографиялық келісім"
+
+#: utils/kateprinter.cpp:558
+msgid "text"
+msgstr "мәтін"
+
+#: utils/kateprinter.cpp:682
+msgid "Te&xt Settings"
+msgstr "Мә&тіннің параметрлері"
+
+#: utils/kateprinter.cpp:686
+msgid "Print line &numbers"
+msgstr "Жол нөмірлері &басып шығарылсын"
+
+#: utils/kateprinter.cpp:689
+msgid "Print &legend"
+msgstr "Тү&сіндірмелері басып шығарылсын"
+
+#: utils/kateprinter.cpp:698
+msgid ""
+"<p>If enabled, line numbers will be printed on the left side of the page(s)."
+"</p>"
+msgstr ""
+"<p>Бұл белгі қойылса, беттің сол жағында жол нөмірлері басылып шығарылады. </"
+"p>"
+
+#: utils/kateprinter.cpp:700
+msgid ""
+"<p>Print a box displaying typographical conventions for the document type, "
+"as defined by the syntax highlighting being used.</p>"
+msgstr ""
+"<p>Құжаттың түріне қарай, синтаксисін талдап белгілеу үшін қолданған "
+"типографиялық келісімдер туралы мәліметтер басылып шығарылады.</p>"
+
+#: utils/kateprinter.cpp:752
+msgid "Hea&der && Footer"
+msgstr "Ко&лонтитулдар"
+
+#: utils/kateprinter.cpp:759
+msgid "Pr&int header"
+msgstr "&Жоғарғы колонтитул болсын"
+
+#: utils/kateprinter.cpp:761
+msgid "Pri&nt footer"
+msgstr "&Төменгі колонтитул болсын"
+
+#: utils/kateprinter.cpp:767
+msgid "Header/footer font:"
+msgstr "Колонтитулдің каріпі:"
+
+#: utils/kateprinter.cpp:772
+msgid "Choo&se Font..."
+msgstr "Қаріпті &таңдау..."
+
+#: utils/kateprinter.cpp:778
+msgid "Header Properties"
+msgstr "Жоғарғы колонтитул"
+
+#: utils/kateprinter.cpp:782
+msgid "&Format:"
+msgstr "&Пішімі:"
+
+#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
+msgid "Colors:"
+msgstr "Түстері:"
+
+#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
+msgid "Foreground:"
+msgstr "Жазудың:"
+
+#: utils/kateprinter.cpp:809
+msgid "Bac&kground"
+msgstr "&Аясының"
+
+#: utils/kateprinter.cpp:813
+msgid "Footer Properties"
+msgstr "Төменгі колонтитул"
+
+#: utils/kateprinter.cpp:818
+msgid "For&mat:"
+msgstr "Пі&шімі:"
+
+#: utils/kateprinter.cpp:846
+msgid "&Background"
+msgstr "&Аясы"
+
+#: utils/kateprinter.cpp:873
+msgid "<p>Format of the page header. The following tags are supported:</p>"
+msgstr "<p>Жоғарғы колонтитул пішімі. Келесі белгілерді қолдануға болады:</p>"
+
+#: utils/kateprinter.cpp:875
+msgid ""
+"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
+"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
+"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
+"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
+"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
+"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
+msgstr ""
+"<ul><li><tt>%u</tt>: пайдаланушының аты</li><li><tt>%d</tt>: қысқа күні мен "
+"уақыты</li><li><tt>%D</tt>: толық күні мен уақыты</li><li><tt>%h</tt>: басып "
+"жатқандағы уақыт</li><li><tt>%y</tt>: қысқа пішімдегі күні</li><li><tt>%Y</"
+"tt>: толық пішімдегі күні</li><li><tt>%f</tt>: файл атауы</li><li><tt>%U</"
+"tt>: құжаттың толық URL-адресі</li><li><tt>%p</tt>: беттің нөмірі</"
+"li><li><tt>%P</tt>: жалпы беттер саны</li></ul><br />"
+
+#: utils/kateprinter.cpp:889
+msgid "<p>Format of the page footer. The following tags are supported:</p>"
+msgstr ""
+"<p>Төменгі колонтитулдың пішімі. Келесі белгілерді қолдануға болады:</p>"
+
+#: utils/kateprinter.cpp:987
+msgid "Add Placeholder..."
+msgstr "Орынбасарды қосу..."
+
+#: utils/kateprinter.cpp:989
+msgid "Current User Name"
+msgstr "Қазіргі пайдаланушының аты"
+
+#: utils/kateprinter.cpp:991
+msgid "Complete Date/Time (short format)"
+msgstr "Толық күн/уақыт (қысқа пішімде)"
+
+#: utils/kateprinter.cpp:993
+msgid "Complete Date/Time (long format)"
+msgstr "Толық күн/уақыт (ұзын пішімде)"
+
+#: utils/kateprinter.cpp:995
+msgid "Current Time"
+msgstr "Қазіргі уақыт"
+
+#: utils/kateprinter.cpp:997
+msgid "Current Date (short format)"
+msgstr "Бүгінгі күн (қысықасы)"
+
+#: utils/kateprinter.cpp:999
+msgid "Current Date (long format)"
+msgstr "Бүгінгі күн (ұзыны)"
+
+#: utils/kateprinter.cpp:1001
+msgid "File Name"
+msgstr "Файл атауы"
+
+#: utils/kateprinter.cpp:1003
+msgid "Full document URL"
+msgstr "Құжаттын толық URL-і"
+
+#: utils/kateprinter.cpp:1005
+msgid "Page Number"
+msgstr "Бет нөмірі"
+
+#: utils/kateprinter.cpp:1007
+msgid "Total Amount of Pages"
+msgstr "Беттер жалпы саны"
+
+#: utils/kateprinter.cpp:1116
+msgid "L&ayout"
+msgstr "О&рналасуы"
+
+#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
+msgid "&Schema:"
+msgstr "&Сұлбасы:"
+
+#: utils/kateprinter.cpp:1127
+msgid "Draw bac&kground color"
+msgstr "&Аясы боялсын"
+
+#: utils/kateprinter.cpp:1130
+msgid "Draw &boxes"
+msgstr "Қор&шаулар сызылсын"
+
+#: utils/kateprinter.cpp:1134
+msgid "Box Properties"
+msgstr "Қоршаудың қасиеттері"
+
+#: utils/kateprinter.cpp:1138
+msgid "W&idth:"
+msgstr "&Ені:"
+
+#: utils/kateprinter.cpp:1146
+msgid "&Margin:"
+msgstr "&Жиегі:"
+
+#: utils/kateprinter.cpp:1154
+msgid "Co&lor:"
+msgstr "&Түсі:"
+
+#: utils/kateprinter.cpp:1171
+msgid "Select the color scheme to use for the print."
+msgstr "Басқанда қолданатын түстер сұлбасын таңдау."
+
+#: utils/kateprinter.cpp:1173
+msgid ""
+"<p>If enabled, the background color of the editor will be used.</p><p>This "
+"may be useful if your color scheme is designed for a dark background.</p>"
+msgstr ""
+"<p>Бұны қоссаңыз, өңдегіштің ая түсі қолданылады.</p><p>Егер қолданыстағы "
+"түстер сұлбаңыздың аясы қою түсті болса, бұл пайдалы болуы мүмкін,.</p>"
+
+#: utils/kateprinter.cpp:1176
+msgid ""
+"<p>If enabled, a box as defined in the properties below will be drawn around "
+"the contents of each page. The Header and Footer will be separated from the "
+"contents with a line as well.</p>"
+msgstr ""
+"<p>Бұны қоссаңыз, әрбір беттің мазмұны, қасиеттері төменде анықталған, "
+"айналдыра қоршаумен өрнектеледі. Сонымен қатар, жоғарғы және төменгі "
+"колонтитулдар негізгі мәтіннен бір жолмен бөлінеді.</p>"
+
+#: utils/kateprinter.cpp:1180
+msgid "The width of the box outline"
+msgstr "Қоршау сұлбасының ені"
+
+#: utils/kateprinter.cpp:1182
+msgid "The margin inside boxes, in pixels"
+msgstr "Мәтінмен қоршау аралығы қанша пиксел"
+
+#: utils/kateprinter.cpp:1184
+msgid "The line color to use for boxes"
+msgstr "Қоршау сызығының түсі "
 
 #: view/kateview.cpp:330
 msgid "Cut the selected text and move it to the clipboard"
@@ -2460,13 +2224,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:508 rc.cpp:554
+#: view/kateview.cpp:508 rc.cpp:443
 msgid "&Dynamic Word Wrap"
 msgstr "&Динамикалық тасымалдау"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:511 rc.cpp:551
+#: view/kateview.cpp:511 rc.cpp:440
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -2894,6 +2658,26 @@ msgstr "ҮСТ"
 msgid "INS"
 msgstr "ЕНД"
 
+#: view/kateviewaccessible.h:80
+msgid "Move To..."
+msgstr "Мынаған жылжу..."
+
+#: view/kateviewaccessible.h:81
+msgid "Move Left"
+msgstr "Солға жылжу"
+
+#: view/kateviewaccessible.h:82
+msgid "Move Right"
+msgstr "Оңға жылжу"
+
+#: view/kateviewaccessible.h:83
+msgid "Move Up"
+msgstr "Жоғарлау"
+
+#: view/kateviewaccessible.h:84
+msgid "Move Down"
+msgstr "Төмендеу"
+
 #: view/kateviewhelpers.cpp:363
 msgid "Available Commands"
 msgstr "Қолдануға болатын командалар"
@@ -3004,99 +2788,225 @@ msgstr "'%1' %2,  Оналт %3,  Сегізд %4"
 msgid "Mark not set: %1"
 msgstr "Белгі орнатылмаған: %1"
 
+#: variableeditor/katehelpbutton.cpp:32
+msgid "Kate Handbook."
+msgstr "Kate анықтамасы."
+
+#: variableeditor/variableeditor.cpp:194
+msgid "true"
+msgstr "ақиқат"
+
+#: variableeditor/variableeditor.cpp:195
+msgid "false"
+msgstr "жалған"
+
+#: variableeditor/variablelineedit.cpp:59
+msgid "Show list of valid variables."
+msgstr "Дұрыс айнымалылар тізімін көрсету."
+
+#: variableeditor/variablelineedit.cpp:140
+msgctxt "short translation please"
+msgid "Set auto insertion of brackets on or off."
+msgstr "Сыңары жақшаны авто енгізу/енгізбеу "
+
+#: variableeditor/variablelineedit.cpp:146
+msgctxt "short translation please"
+msgid "Set the number of autocenter lines."
+msgstr "Ортаға автотураланған жолдар саны."
+
+#: variableeditor/variablelineedit.cpp:151
+msgctxt "short translation please"
+msgid "Auto insert asterisk in doxygen comments."
+msgstr "Doxygen түсініктемелеріне жұлдызшаны автоқосу."
+
+#: variableeditor/variablelineedit.cpp:156
+msgctxt "short translation please"
+msgid "Set the document background color."
+msgstr "Құжат аясының түсін орнату."
+
+#: variableeditor/variablelineedit.cpp:161
+msgctxt "short translation please"
+msgid "Pressing backspace in leading whitespace unindents."
+msgstr "Жол басындағы бос орында Backspace-пен шегіністі кішірейту."
+
+#: variableeditor/variablelineedit.cpp:167
+msgctxt "short translation please"
+msgid "Enable block selection mode."
+msgstr "Блокті таңдау режімін рұқсат ету. "
+
+#: variableeditor/variablelineedit.cpp:172
+msgctxt "short translation please"
+msgid "Enable the byte order marker when saving unicode files."
+msgstr "Юникодтағы файлды сақтағанда байт реті маркерін рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:177
+msgctxt "short translation please"
+msgid "Set the color for the bracket highlight."
+msgstr "Жақшаны белгілеу түсін орнату."
+
+#: variableeditor/variablelineedit.cpp:182
+msgctxt "short translation please"
+msgid "Set the background color for the current line."
+msgstr "Назардағы жолдың ая түсін орнату."
+
+#: variableeditor/variablelineedit.cpp:188
+msgctxt "short translation please"
+msgid "Set the default dictionary used for spell checking."
+msgstr "Емлесін тексеруде пайдаланатын әдетті сөздік."
+
+#: variableeditor/variablelineedit.cpp:193
+msgctxt "short translation please"
+msgid "Enable dynamic word wrap of long lines."
+msgstr "Ұзын жол сөздерін динамикалық тасымалдауын рұқасат ету.ы"
+
+#: variableeditor/variablelineedit.cpp:198
+msgctxt "short translation please"
+msgid "Sets the end of line mode."
+msgstr "Жол соңы пішімін орнату."
+
+#: variableeditor/variablelineedit.cpp:203
+msgctxt "short translation please"
+msgid "Enable folding markers in the editor border."
+msgstr "Өңдегіш жиегінде бүктеу маркерлерін көрсету."
+
+#: variableeditor/variablelineedit.cpp:209
+msgctxt "short translation please"
+msgid "Set the point size of the document font."
+msgstr "Құжат қаріпінің өлшемін орнату."
+
+#: variableeditor/variablelineedit.cpp:214
+msgctxt "short translation please"
+msgid "Set the font of the document."
+msgstr "Құжат қаріпін орнату."
+
+#: variableeditor/variablelineedit.cpp:226
+msgctxt "short translation please"
+msgid "Set the syntax highlighting."
+msgstr "Ситаксис талдап бояулауды орнату."
+
+#: variableeditor/variablelineedit.cpp:231
+msgctxt "short translation please"
+msgid "Set the icon bar color."
+msgstr "Таңбашалар панелінің түсі."
+
+#: variableeditor/variablelineedit.cpp:236
+msgctxt "short translation please"
+msgid "Enable the icon border in the editor view."
+msgstr "Өндегіш көрінісінде таңбашалар панелін рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:241
+msgctxt "short translation please"
+msgid "Set the auto indentation style."
+msgstr "Автошегініс стилін орнату."
+
+#: variableeditor/variablelineedit.cpp:247
+msgctxt "short translation please"
+msgid "Set the indentation depth for each indent level."
+msgstr "Әрбір шегініс деңгейінің тереңдігін орнату."
+
+#: variableeditor/variablelineedit.cpp:252
+msgctxt "short translation please"
+msgid "Allow odd indentation level (no multiple of indent width)."
+msgstr "Оғаш (еселеген қадамына тең емес) шегініс деңгейін рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:257
+msgctxt "short translation please"
+msgid "Show line numbers."
+msgstr "Жол нөмірлерін көрсету."
+
+#: variableeditor/variablelineedit.cpp:262
+msgctxt "short translation please"
+msgid "Insert newline at end of file on save."
+msgstr "Файл сақтағанда соңына бос жол қосу."
+
+#: variableeditor/variablelineedit.cpp:267
+msgctxt "short translation please"
+msgid "Enable overwrite mode in the document."
+msgstr "Үстінен жазу режімін рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:272
+msgctxt "short translation please"
+msgid "Enable persistent text selection."
+msgstr "Тұрақты мәтінді таңдауын рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:277
+msgctxt "short translation please"
+msgid "Remove trailing spaces when editing a line."
+msgstr "Жол соңындағы бос орындарды өшіру."
+
+#: variableeditor/variablelineedit.cpp:282
+msgctxt "short translation please"
+msgid "Replace tabs with spaces when saving the document."
+msgstr "Құжатты сақтағанда кестелеу белгісін бос орындармен ауыстру."
+
+#: variableeditor/variablelineedit.cpp:287
+msgctxt "short translation please"
+msgid "Replace tabs with spaces."
+msgstr "Кестелеу белгісін бос орындармен ауыстру."
+
+#: variableeditor/variablelineedit.cpp:292
+msgctxt "short translation please"
+msgid "Remove trailing spaces when saving the document."
+msgstr "Құжатты сақтағанда жол соңындағы бос орындарын өшіру."
+
+#: variableeditor/variablelineedit.cpp:298
+msgctxt "short translation please"
+msgid "Set the color scheme."
+msgstr "Түстер сұлбасын орнату."
+
+#: variableeditor/variablelineedit.cpp:303
+msgctxt "short translation please"
+msgid "Set the text selection color."
+msgstr "Мәтінді таңдау түсін орнату."
+
+#: variableeditor/variablelineedit.cpp:308
+msgctxt "short translation please"
+msgid "Visualize tabs and trailing spaces."
+msgstr "Кестелеу және жол соңындағы бос орындарды бояулау."
+
+#: variableeditor/variablelineedit.cpp:313
+msgctxt "short translation please"
+msgid "Enable smart home navigation."
+msgstr "Парасатты басына ауысуды рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:318
+msgctxt "short translation please"
+msgid "Pressing TAB key indents."
+msgstr "TAB пернемен шегіну."
+
+#: variableeditor/variablelineedit.cpp:324
+msgctxt "short translation please"
+msgid "Set the tab display width."
+msgstr "Кестелеу қадамын көрсету."
+
+#: variableeditor/variablelineedit.cpp:330
+msgctxt "short translation please"
+msgid "Set the number of undo steps to remember (0 equals infinity)."
+msgstr "Жатталатын қайту аалдар тереңдігі (0 дегені - шексіз)."
+
+#: variableeditor/variablelineedit.cpp:336
+msgctxt "short translation please"
+msgid "Set the word wrap column."
+msgstr "Жолды қай бағаннан асырмай тасымалдау керек."
+
+#: variableeditor/variablelineedit.cpp:341
+msgctxt "short translation please"
+msgid "Set the word wrap marker color."
+msgstr "Тасымалдау маркерінің түсі."
+
+#: variableeditor/variablelineedit.cpp:346
+msgctxt "short translation please"
+msgid "Enable word wrap while typing text."
+msgstr "Мәтін терген кезде тасымалдауды рұқсат ету."
+
+#: variableeditor/variablelineedit.cpp:351
+msgctxt "short translation please"
+msgid "Wrap the text cursor at the end of a line."
+msgstr "Жол соңында меңзерді тасымалдау."
+
 #: schema/katecolortreewidget.cpp:51 schema/katecolortreewidget.cpp:73
 msgid "Use default color from the KDE color scheme"
 msgstr "KDE түстер сұлбасының әдетті түсі қолдансын"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Meaning of text in editor"
-msgid "Context"
-msgstr "Контексті"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Normal"
-msgstr "Кәдімгі"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Selected"
-msgstr "Таңдалған"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Background"
-msgstr "Аясы"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Background Selected"
-msgstr "Таңдалғанның аясы"
-
-#: schema/katestyletreewidget.cpp:135
-msgid "Use Default Style"
-msgstr "Әдеттегі стиль қолданылсын"
-
-#: schema/katestyletreewidget.cpp:223
-msgid "&Bold"
-msgstr "Қа&лың"
-
-#: schema/katestyletreewidget.cpp:228
-msgid "&Italic"
-msgstr "Көл&беу"
-
-#: schema/katestyletreewidget.cpp:233
-msgid "&Underline"
-msgstr "&Асты сызылған"
-
-#: schema/katestyletreewidget.cpp:238
-msgid "S&trikeout"
-msgstr "С&ызылған"
-
-#: schema/katestyletreewidget.cpp:245
-msgid "Normal &Color..."
-msgstr "Кәдімгінің &түсі..."
-
-#: schema/katestyletreewidget.cpp:248
-msgid "&Selected Color..."
-msgstr "&Таңдалғанның түсі..."
-
-#: schema/katestyletreewidget.cpp:251
-msgid "&Background Color..."
-msgstr "&Аясының түсі..."
-
-#: schema/katestyletreewidget.cpp:254
-msgid "S&elected Background Color..."
-msgstr "Т&аңдалғанның аясының түсі..."
-
-#: schema/katestyletreewidget.cpp:266
-msgid "Unset Background Color"
-msgstr "Әдетті ая түсі"
-
-#: schema/katestyletreewidget.cpp:270
-msgid "Unset Selected Background Color"
-msgstr "Таңдалғанның әдетті аясының түсі"
-
-#: schema/katestyletreewidget.cpp:277
-msgid "Use &Default Style"
-msgstr "Ә&детті стиль қолданылсын"
-
-#: schema/katestyletreewidget.cpp:389
-msgctxt "No text or background color set"
-msgid "None set"
-msgstr "Орнатылмаған"
-
-#: schema/katestyletreewidget.cpp:603
-msgid ""
-"\"Use Default Style\" will be automatically unset when you change any style "
-"properties."
-msgstr ""
-"\"Әдетті стиль қолданылсын\" параметрі стиль қасиеттерін өзгерткеннен кейін "
-"автоматты түрде ысырылып тасталынады."
-
-#: schema/katestyletreewidget.cpp:604
-msgid "Kate Styles"
-msgstr "Kate стилдері"
 
 #: schema/kateschemaconfig.cpp:58
 msgid "Use KDE Color Scheme"
@@ -3112,7 +3022,7 @@ msgstr "Мәтін ауданы"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: schema/kateschemaconfig.cpp:89 rc.cpp:494
+#: schema/kateschemaconfig.cpp:89 rc.cpp:383
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>Өңделіп жатқан ауданның ая түсін орнату.</p>"
 
@@ -3135,7 +3045,7 @@ msgstr "Назардағы жол"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: schema/kateschemaconfig.cpp:101 rc.cpp:506
+#: schema/kateschemaconfig.cpp:101 rc.cpp:395
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -3175,7 +3085,7 @@ msgstr "Жол нөмірлері"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: schema/kateschemaconfig.cpp:131 rc.cpp:524
+#: schema/kateschemaconfig.cpp:131 rc.cpp:413
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -3189,7 +3099,7 @@ msgstr "Сөзді тасымалдау маркерлері"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: schema/kateschemaconfig.cpp:137 rc.cpp:536
+#: schema/kateschemaconfig.cpp:137 rc.cpp:425
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -3236,7 +3146,7 @@ msgstr "Емле қатесі бар жолы"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: schema/kateschemaconfig.cpp:169 rc.cpp:548
+#: schema/kateschemaconfig.cpp:169 rc.cpp:437
 msgid ""
 "<p>Sets the color of the line that is used to indicate spelling mistakes.</p>"
 msgstr "<p>Емле қатесі бар жолын көрсететін бояу түсін орнату.</p>"
@@ -3247,7 +3157,7 @@ msgstr "Кестелеу мен бос орын маркерлері"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: schema/kateschemaconfig.cpp:175 rc.cpp:542
+#: schema/kateschemaconfig.cpp:175 rc.cpp:431
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr "<p>Кестелеу белгісінің түсін таңдау.</p>"
 
@@ -3265,7 +3175,7 @@ msgstr "Жақшаларды бояп белгілеуі"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: schema/kateschemaconfig.cpp:187 rc.cpp:530
+#: schema/kateschemaconfig.cpp:187 rc.cpp:419
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -3423,7 +3333,7 @@ msgstr "&Жаңа..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: schema/kateschemaconfig.cpp:970 rc.cpp:305
+#: schema/kateschemaconfig.cpp:970 rc.cpp:611
 msgid "&Delete"
 msgstr "Ө&шіру"
 
@@ -3500,6 +3410,96 @@ msgid ""
 msgstr ""
 "<p>%1 деген сұлба бар не жаңа ғана өшірілген.</p><p>Басқа атауын таңдаңыз.</"
 "p>"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Meaning of text in editor"
+msgid "Context"
+msgstr "Контексті"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Normal"
+msgstr "Кәдімгі"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Selected"
+msgstr "Таңдалған"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Background"
+msgstr "Аясы"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Background Selected"
+msgstr "Таңдалғанның аясы"
+
+#: schema/katestyletreewidget.cpp:135
+msgid "Use Default Style"
+msgstr "Әдеттегі стиль қолданылсын"
+
+#: schema/katestyletreewidget.cpp:223
+msgid "&Bold"
+msgstr "Қа&лың"
+
+#: schema/katestyletreewidget.cpp:228
+msgid "&Italic"
+msgstr "Көл&беу"
+
+#: schema/katestyletreewidget.cpp:233
+msgid "&Underline"
+msgstr "&Асты сызылған"
+
+#: schema/katestyletreewidget.cpp:238
+msgid "S&trikeout"
+msgstr "С&ызылған"
+
+#: schema/katestyletreewidget.cpp:245
+msgid "Normal &Color..."
+msgstr "Кәдімгінің &түсі..."
+
+#: schema/katestyletreewidget.cpp:248
+msgid "&Selected Color..."
+msgstr "&Таңдалғанның түсі..."
+
+#: schema/katestyletreewidget.cpp:251
+msgid "&Background Color..."
+msgstr "&Аясының түсі..."
+
+#: schema/katestyletreewidget.cpp:254
+msgid "S&elected Background Color..."
+msgstr "Т&аңдалғанның аясының түсі..."
+
+#: schema/katestyletreewidget.cpp:266
+msgid "Unset Background Color"
+msgstr "Әдетті ая түсі"
+
+#: schema/katestyletreewidget.cpp:270
+msgid "Unset Selected Background Color"
+msgstr "Таңдалғанның әдетті аясының түсі"
+
+#: schema/katestyletreewidget.cpp:277
+msgid "Use &Default Style"
+msgstr "Ә&детті стиль қолданылсын"
+
+#: schema/katestyletreewidget.cpp:389
+msgctxt "No text or background color set"
+msgid "None set"
+msgstr "Орнатылмаған"
+
+#: schema/katestyletreewidget.cpp:603
+msgid ""
+"\"Use Default Style\" will be automatically unset when you change any style "
+"properties."
+msgstr ""
+"\"Әдетті стиль қолданылсын\" параметрі стиль қасиеттерін өзгерткеннен кейін "
+"автоматты түрде ысырылып тасталынады."
+
+#: schema/katestyletreewidget.cpp:604
+msgid "Kate Styles"
+msgstr "Kate стилдері"
 
 #. i18n: file: data/katepartsimpleui.rc:4
 #. i18n: ectx: Menu (file)
@@ -3579,7 +3579,7 @@ msgstr "Сөздерді толықтыру"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:50 rc.cpp:647
+#: rc.cpp:50 rc.cpp:536
 msgid "Command"
 msgstr "Команда"
 
@@ -3641,7 +3641,7 @@ msgstr "&Сәйкесті командасы:"
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:77 rc.cpp:311
+#: rc.cpp:77 rc.cpp:617
 msgid "&Name:"
 msgstr "&Атауы:"
 
@@ -3944,7 +3944,7 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:230 rc.cpp:570
+#: rc.cpp:230 rc.cpp:459
 msgid "Disabled"
 msgstr "Бұғатталған"
 
@@ -3982,275 +3982,15 @@ msgstr "Меңзерді жылжытқаны және теру таңдалға
 msgid "P&ersistent"
 msgstr "&Тұрақты"
 
-#. i18n: file: dialogs/editconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:248
-msgid "Static Word Wrap"
-msgstr "Статикалық тасымалдау"
-
-#. i18n: file: dialogs/editconfigwidget.ui:26
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:251
-msgid ""
-"<p>Automatically start a new line of text when the current line exceeds the "
-"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
-"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
-"be <i>visually wrapped</i> instead, according to the width of the view, "
-"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
-msgstr ""
-"<p>Назардығы жол <b>Тасымалдайтын деңгейі:</b> параметрін көрсеткішіне "
-"жеткенде сөз автоматты түрде тасымалданады.</p><p>Әлден бар жолдарға бұл "
-"параметр әсер етпейді - бұлар үшін <b>Құралдар</b> мәзіріндегі <b>Статикалық "
-"тасымалдауды қолдану</b> дегенді таңдаңыз.</p><p>Егер жолдар терезенің еніне "
-"сәйкес <i>тасымалданғандай көрсету</i> режімін қаласаңыз, <b>Көрінісі</b> "
-"бетіндегі <b>Динамикалық тасымалдау</b> дегенді таңдаңыз.</p>"
-
-#. i18n: file: dialogs/editconfigwidget.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:254
-msgid "Enable static &word wrap"
-msgstr "Статикалық &тасымалдау болсын"
-
-#. i18n: file: dialogs/editconfigwidget.ui:36
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:257
-msgid ""
-"<p>If this option is checked, a vertical line will be drawn at the word wrap "
-"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
-"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
-msgstr ""
-"<p>Белгісі қойылса, тасымалдау көрсететін бағанында <strong>Өңдеу</strong> "
-"қасиеттеріне сәйкес тік сызық маркері қойылатын болады.</p><p>Бұл маркерлер "
-"тек бірқадамды қаріптерді пайдаланғанда қойылады.</p>"
-
-#. i18n: file: dialogs/editconfigwidget.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:260
-msgid "Show static word wra&p marker (if applicable)"
-msgstr "&Статикалық тасымалдау маркер көрсетілсін"
-
-#. i18n: file: dialogs/editconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:263
-msgid "W&rap words at:"
-msgstr "&Тасымалдайтын деңгейі:"
-
-#. i18n: file: dialogs/editconfigwidget.ui:61
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:266
-msgid ""
-"If the Word Wrap option is selected this entry determines the length (in "
-"characters) at which the editor will automatically start a new line."
-msgstr ""
-"Тасымалдау рұқсат етілсе, бұндағы параметр қай ұзындыққа жеткенде сөз "
-"автоматты түрде тасымалданатынын анықтайды."
-
-#. i18n: file: dialogs/editconfigwidget.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:269
-msgid "Misc"
-msgstr "Түрлі басқа"
-
-#. i18n: file: dialogs/editconfigwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:272
-msgid ""
-"If this is enabled, the editor will remove any trailing whitespace on lines "
-"that are changed through editing."
-msgstr ""
-"Бұл таңдалса, өзгертілген жолдың соңында бос орындар қалса, өңдегіш оларды "
-"өшіреді."
-
-#. i18n: file: dialogs/editconfigwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:275
-msgid "Remove &trailing spaces while editing"
-msgstr "Жол &соңындағы бос орындар өшірілсін"
-
-#. i18n: file: dialogs/editconfigwidget.ui:111
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:278
-msgid ""
-"When the user types a left bracket ([,(, or {) KateView automatically enters "
-"the right bracket (}, ), or ]) to the right of the cursor."
-msgstr ""
-"Ашатын [,(,{ жақшаны енгізгенде, меңзердің оң жағында автоматты түрде  },),] "
-"сыңарысы енгізіледі."
-
-#. i18n: file: dialogs/editconfigwidget.ui:114
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:281
-msgid "Auto &brackets"
-msgstr "&Автожақшалар"
-
-#. i18n: file: dialogs/editconfigwidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:284
-msgid "Copy/Cut the current line if no selection"
-msgstr "Таңдау болмаса назардағы жолды Кошіріп/Қиып алу"
-
-#. i18n: file: dialogs/editconfigwidget.ui:128
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:287
-msgid "Allow scrolling past the end of the document"
-msgstr "Құжаттың соңынан асырып жүгірту рұқсат болсын"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:14
-#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:290
-msgid "&Filetype:"
-msgstr "&Файл түрі:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:293
-msgid "Select the filetype you want to change."
-msgstr "Өзгертем деген файл түрін таңдаңыз."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:31
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:296
-msgid "Create a new file type."
-msgstr "Жаңа файл түрін құру."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:34
-#. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:299
-msgid "&New"
-msgstr "&Жаңа"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:302
-msgid "Delete the current file type."
-msgstr "Назардағы файл түрін кетіру."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:82
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:314
-msgid ""
-"The name of the filetype will be the text of the corresponding menu item."
-msgstr "Файл түрінің атауы арналған мәзір жолының жазуы болады."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:317
-msgid "&Section:"
-msgstr "&Бөлімі:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:320
-msgid "The section name is used to organize the file types in menus."
-msgstr "Бөлімдер файл түрлерін топтастыру үшін қолданылады."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:106
-#. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:323
-msgid "&Variables:"
-msgstr "&Айнымалылар:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:116
-#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
-#: rc.cpp:326
-msgid ""
-"<p>This string allows to configure Kate's settings for the files selected by "
-"this mimetype using Kate variables. Almost any configuration option can be "
-"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
-"known variables, see the manual.</p>"
-msgstr ""
-"<p>Бұл жол арқылы Kate-айнымалылар көмегімен осы MIME түріне сәйкесті "
-"файлдар үшін Kate-тың параметрлерін баптауға болады. Бүкіл дерлік "
-"параметрлер осылай қол жеткізерлік, сол қатарда бояп белгілеу, шегініс "
-"режімі, кодтамасы, т.б.</p><p>Толық айнымалылар тізімін анықтамасынан "
-"қараңыз.</p>"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:123
-#. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:329
-msgid "&Highlighting:"
-msgstr "&Талдап бояулау:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:136
-#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:332
-msgid "&Indentation Mode:"
-msgstr "&Шегіну режімі:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:335
-msgid "File e&xtensions:"
-msgstr "Файл &жұрнақтары:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:159
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:338
-msgid ""
-"The wildcards mask allows to select files by filename. A typical mask uses "
-"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
-"The string is a semicolon-separated list of masks."
-msgstr ""
-"Үлгі қалқасы файлды атауы арқылы таңдауға мүмкіндік береді. Әдетте бұндай "
-"қалқа жұлдызша мен файл жұрнағынан құрылады, мысалы:<code>*.txt; *.text</"
-"code>. Калқалар нүктелі үтірмен бөліктеніп келтіріледі."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:166
-#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:341
-msgid "MIME &types:"
-msgstr "MIME &түрлері:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:181
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:344
-msgid ""
-"The mime type mask allows to select files by mimetype. The string is a "
-"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
-"english</code>."
-msgstr ""
-"MIME түрінің қалқасы файлды MIME түрі арқылы таңдауға мүмкіндік береді. "
-"Калқалар нүктелі үтірмен бөліктеніп келтіріледі, мысалы:<code>text/plain; "
-"text/english</code>."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:188
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:347
-msgid "Displays a wizard that helps you easily select mimetypes."
-msgstr "MIME түрлерін оңай таңдайтың шеберді келтіреді."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:197
-#. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:350
-msgid "P&riority:"
-msgstr "&Артықшылығы:"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:207
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:353
-msgid ""
-"Sets priority for this file type. If more than one file type selects the "
-"same file, the one with the highest priority will be used."
-msgstr ""
-"Осы файл түрінің артықшылығы. Бір файлға бірнеше файл түрлері сәйкес келсе, "
-"артықшылығы асқаны таңдалады."
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:232
-#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:356
-msgid "Download Highlighting Files..."
-msgstr "Бояулаудың ережелерін жүктеп алу..."
-
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:359
+#: rc.cpp:248
 msgid "Default indentation mode:"
 msgstr "Әдетті шегініс режімі:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:362
+#: rc.cpp:251
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4263,31 +4003,31 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:365
+#: rc.cpp:254
 msgid "Indent using"
 msgstr "Шегіністі пайдалану"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:368
+#: rc.cpp:257
 msgid "&Tabulators"
 msgstr "&Кестелеулер"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:371
+#: rc.cpp:260
 msgid "&Spaces"
 msgstr "Б&ос оындар"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:374
+#: rc.cpp:263
 msgid "&Indentation width:"
 msgstr "Ш&егініс қадамы:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:377
+#: rc.cpp:266
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4300,25 +4040,25 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:380
+#: rc.cpp:269
 msgid "Tabulators &and Spaces"
 msgstr "Кестелеу &мен бос орындар"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:383
+#: rc.cpp:272
 msgid "Tab wi&dth:"
 msgstr "Кестелеу қа&дамы:"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:386
+#: rc.cpp:275
 msgid "Indentation Properties"
 msgstr "Шегіністің тәртіптері"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:389
+#: rc.cpp:278
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4328,13 +4068,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:392
+#: rc.cpp:281
 msgid "&Keep extra spaces"
 msgstr "&Артық бос орындар сақталсын"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:395
+#: rc.cpp:284
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4344,19 +4084,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:398
+#: rc.cpp:287
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr "Алмасу буферінен &орналыстырған кодтың шегінісін туралау"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:401
+#: rc.cpp:290
 msgid "Indentation Actions"
 msgstr "Шегініс әрекеттері"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:404
+#: rc.cpp:293
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4367,13 +4107,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:407
+#: rc.cpp:296
 msgid "&Backspace key in leading blank space unindents"
 msgstr "Жол басындағы бос орында &Backspace шегіністі кішірейтеді"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:410
+#: rc.cpp:299
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4395,7 +4135,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:416
+#: rc.cpp:305
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -4409,13 +4149,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:419
+#: rc.cpp:308
 msgid "Always advance to the &next tab position"
 msgstr "&Әрқашан кестелеуден бастау"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:422
+#: rc.cpp:311
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4426,13 +4166,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:425
+#: rc.cpp:314
 msgid "Always increase indentation &level"
 msgstr "Әрқашан шегініс &деңгейін үлкейту"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:428
+#: rc.cpp:317
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -4456,19 +4196,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:431
+#: rc.cpp:320
 msgid "Increase indentation level if in l&eading blank space"
 msgstr "А&лдыңғы бос орында тұрса - шегініс деңгейін үлкейту"
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:434
+#: rc.cpp:323
 msgid "Ignore white space changes"
 msgstr "Бос орын өзгерістері елемей қалсын"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:437
+#: rc.cpp:326
 msgid ""
 "Calculates the difference between the editor contents and the disk file "
 "using diff(1)."
@@ -4478,25 +4218,25 @@ msgstr ""
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:440
+#: rc.cpp:329
 msgid "&View Difference"
 msgstr "Айырмашылығын &көру"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:443
+#: rc.cpp:332
 msgid "Folder Config File"
 msgstr "Баптау файл қапшығы"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:446
+#: rc.cpp:335
 msgid "Search &depth for config file:"
 msgstr "Баптау файлды іздеу &тереңдігі:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:449
+#: rc.cpp:338
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
 "kateconfig file and load the settings line from it."
@@ -4506,13 +4246,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:452
+#: rc.cpp:341
 msgid "Do not use config file"
 msgstr "Баптау файлы қолданбасын"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:455
+#: rc.cpp:344
 msgid ""
 "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
 "prefix&gt;&lt;filename&gt;&lt;suffix&gt;' before saving changes.<p>The "
@@ -4525,13 +4265,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:458
+#: rc.cpp:347
 msgid "Backup on Save"
 msgstr "Сақтау кезіде сақтық көшірмесі жасалсын"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:461
+#: rc.cpp:350
 msgid ""
 "If this option is enabled, backups for local files will be created when "
 "saving."
@@ -4540,13 +4280,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:464
+#: rc.cpp:353
 msgid "&Local files"
 msgstr "&Жергілікті файлдар"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:467
+#: rc.cpp:356
 msgid ""
 "If this option is enabled, backups for remote files will be created when "
 "saving."
@@ -4555,61 +4295,61 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:470
+#: rc.cpp:359
 msgid "&Remote files"
 msgstr "Қа&шықтағы файлдар"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:473
+#: rc.cpp:362
 msgid "&Prefix:"
 msgstr "&Префиксі:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:476
+#: rc.cpp:365
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr "Сақтық көшірме файл атау алдына жалғайтын префиксін келтіріңіз."
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:479
+#: rc.cpp:368
 msgid "&Suffix:"
 msgstr "&Жұрнағы:"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:482
+#: rc.cpp:371
 msgid "Enter the suffix to append to the backup file names."
 msgstr "Сақтық көшірме файл атауына жалғайтын жұрнағын келтіріңіз."
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:485
+#: rc.cpp:374
 msgid "Disable swap files syncing"
 msgstr "Своп файлдар қадамдастырылмасын"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:488
+#: rc.cpp:377
 msgid "Text Area Background"
 msgstr "Мәтін ауданның аясы"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:380
 msgid "Normal text:"
 msgstr "Кәдімгі мәтін:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:497
+#: rc.cpp:386
 msgid "Selected text:"
 msgstr "Таңдалған мәтін:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:500
+#: rc.cpp:389
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4619,19 +4359,19 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:503
+#: rc.cpp:392
 msgid "Current line:"
 msgstr "Назардағы жол:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:509
+#: rc.cpp:398
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>Қай маркер түріне ауыспағыңызды таңдаңыз.</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:512
+#: rc.cpp:401
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4641,68 +4381,68 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:515
+#: rc.cpp:404
 msgid "Additional Elements"
 msgstr "Қосымша элементтері"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:518
+#: rc.cpp:407
 msgid "Left border background:"
 msgstr "Сол жақ шегінің аясы:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:521
+#: rc.cpp:410
 msgid "Line numbers:"
 msgstr "Жол нөмірі:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:527
+#: rc.cpp:416
 msgid "Bracket highlight:"
 msgstr "Жақшаларды бояп белгілеуі:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:533
+#: rc.cpp:422
 msgid "Word wrap markers:"
 msgstr "Сөзді тасымалдау маркерлері:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:539
+#: rc.cpp:428
 msgid "Tab and space markers:"
 msgstr "Кестелеу мен бос орын маркерлері:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:545
+#: rc.cpp:434
 msgid "Spelling mistake line:"
 msgstr "Емле қатесі бар жолы:"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:557
+#: rc.cpp:446
 msgid "Dynamic &word wrap indicators (if applicable):"
 msgstr "Динамикалық &тасымалдаудың индикаторлары (болса):"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:560
+#: rc.cpp:449
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
 msgstr ""
 "Динамикалық тасымалданған жолдар индикаторлары қашан көрсетілітінін таңдау."
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:563
+#: rc.cpp:452
 msgid "Align dynamically wrapped lines to indentation depth:"
 msgstr "Динамикалық тасымалданған жолдарды туралау шегінісі:"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:567
+#: rc.cpp:456
 #, no-c-format
 msgid ""
 "<p>Enables the start of dynamically wrapped lines to be aligned vertically "
@@ -4721,20 +4461,20 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:574
+#: rc.cpp:463
 #, no-c-format
 msgid "% of View Width"
 msgstr "% of view"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:577
+#: rc.cpp:466
 msgid "Whitespace Highlighting"
 msgstr "Бос араларын белгілеу"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:580
+#: rc.cpp:469
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -4742,19 +4482,19 @@ msgstr "Мәтіндегі кестелеулерді таңбалау."
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:583
+#: rc.cpp:472
 msgid "&Highlight tabulators"
 msgstr "Кестелеулерді &бояулау"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:586
+#: rc.cpp:475
 msgid "Highlight trailing &spaces"
 msgstr "Жол &соңындағы бос орындар бояулансын"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:592
+#: rc.cpp:481
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -4764,13 +4504,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:595
+#: rc.cpp:484
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr "Тәжірибелі пайдаланушы (KDE 3) режімі істесін"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:598
+#: rc.cpp:487
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
 "indent lines."
@@ -4780,13 +4520,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:601
+#: rc.cpp:490
 msgid "Show i&ndentation lines"
 msgstr "Ше&гініс сызықшалары көрсетілсін"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:604
+#: rc.cpp:493
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -4795,13 +4535,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:607
+#: rc.cpp:496
 msgid "Highlight range between selected brackets"
 msgstr "Таңдалған жақшалар ара ауықымы боялып белгіленсін"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:613
+#: rc.cpp:502
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -4812,13 +4552,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:616
+#: rc.cpp:505
 msgid "Use Vi input mode"
 msgstr "Vi енгізу режімі болсын"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:619
+#: rc.cpp:508
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -4830,13 +4570,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:622
+#: rc.cpp:511
 msgid "Let Vi commands override Kate shortcuts"
 msgstr "Vi командалары Kate тіркесімдерден басымды болсын"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:625
+#: rc.cpp:514
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -4851,13 +4591,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:630
+#: rc.cpp:519
 msgid "Hide the Vi mode status bar"
 msgstr "Vi режімінің күй-жай жолағы жасырылсын"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:633
+#: rc.cpp:522
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -4879,37 +4619,37 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:641
+#: rc.cpp:530
 msgid "Key Mapping"
 msgstr "Перне сәйкесуі"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:644
+#: rc.cpp:533
 msgid "Normal mode"
 msgstr "Кәдімгі режім"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:650
+#: rc.cpp:539
 msgid "Replacement"
 msgstr "Алмастыруы"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:653
+#: rc.cpp:542
 msgid "Remove selected"
 msgstr "Таңдағанды өшіру"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:656
+#: rc.cpp:545
 msgid "Add new mapping"
 msgstr "Жаңа сәйкестік"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:659
+#: rc.cpp:548
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -4919,9 +4659,269 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:662
+#: rc.cpp:551
 msgid "Import from vimrc file"
 msgstr "vimrc файлынан импорттау"
+
+#. i18n: file: dialogs/editconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
+#: rc.cpp:554
+msgid "Static Word Wrap"
+msgstr "Статикалық тасымалдау"
+
+#. i18n: file: dialogs/editconfigwidget.ui:26
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:557
+msgid ""
+"<p>Automatically start a new line of text when the current line exceeds the "
+"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
+"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
+"be <i>visually wrapped</i> instead, according to the width of the view, "
+"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
+msgstr ""
+"<p>Назардығы жол <b>Тасымалдайтын деңгейі:</b> параметрін көрсеткішіне "
+"жеткенде сөз автоматты түрде тасымалданады.</p><p>Әлден бар жолдарға бұл "
+"параметр әсер етпейді - бұлар үшін <b>Құралдар</b> мәзіріндегі <b>Статикалық "
+"тасымалдауды қолдану</b> дегенді таңдаңыз.</p><p>Егер жолдар терезенің еніне "
+"сәйкес <i>тасымалданғандай көрсету</i> режімін қаласаңыз, <b>Көрінісі</b> "
+"бетіндегі <b>Динамикалық тасымалдау</b> дегенді таңдаңыз.</p>"
+
+#. i18n: file: dialogs/editconfigwidget.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:560
+msgid "Enable static &word wrap"
+msgstr "Статикалық &тасымалдау болсын"
+
+#. i18n: file: dialogs/editconfigwidget.ui:36
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:563
+msgid ""
+"<p>If this option is checked, a vertical line will be drawn at the word wrap "
+"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
+"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
+msgstr ""
+"<p>Белгісі қойылса, тасымалдау көрсететін бағанында <strong>Өңдеу</strong> "
+"қасиеттеріне сәйкес тік сызық маркері қойылатын болады.</p><p>Бұл маркерлер "
+"тек бірқадамды қаріптерді пайдаланғанда қойылады.</p>"
+
+#. i18n: file: dialogs/editconfigwidget.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:566
+msgid "Show static word wra&p marker (if applicable)"
+msgstr "&Статикалық тасымалдау маркер көрсетілсін"
+
+#. i18n: file: dialogs/editconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
+#: rc.cpp:569
+msgid "W&rap words at:"
+msgstr "&Тасымалдайтын деңгейі:"
+
+#. i18n: file: dialogs/editconfigwidget.ui:61
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
+#: rc.cpp:572
+msgid ""
+"If the Word Wrap option is selected this entry determines the length (in "
+"characters) at which the editor will automatically start a new line."
+msgstr ""
+"Тасымалдау рұқсат етілсе, бұндағы параметр қай ұзындыққа жеткенде сөз "
+"автоматты түрде тасымалданатынын анықтайды."
+
+#. i18n: file: dialogs/editconfigwidget.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
+#: rc.cpp:575
+msgid "Misc"
+msgstr "Түрлі басқа"
+
+#. i18n: file: dialogs/editconfigwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:578
+msgid ""
+"If this is enabled, the editor will remove any trailing whitespace on lines "
+"that are changed through editing."
+msgstr ""
+"Бұл таңдалса, өзгертілген жолдың соңында бос орындар қалса, өңдегіш оларды "
+"өшіреді."
+
+#. i18n: file: dialogs/editconfigwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:581
+msgid "Remove &trailing spaces while editing"
+msgstr "Жол &соңындағы бос орындар өшірілсін"
+
+#. i18n: file: dialogs/editconfigwidget.ui:111
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:584
+msgid ""
+"When the user types a left bracket ([,(, or {) KateView automatically enters "
+"the right bracket (}, ), or ]) to the right of the cursor."
+msgstr ""
+"Ашатын [,(,{ жақшаны енгізгенде, меңзердің оң жағында автоматты түрде  },),] "
+"сыңарысы енгізіледі."
+
+#. i18n: file: dialogs/editconfigwidget.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:587
+msgid "Auto &brackets"
+msgstr "&Автожақшалар"
+
+#. i18n: file: dialogs/editconfigwidget.ui:121
+#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
+#: rc.cpp:590
+msgid "Copy/Cut the current line if no selection"
+msgstr "Таңдау болмаса назардағы жолды Кошіріп/Қиып алу"
+
+#. i18n: file: dialogs/editconfigwidget.ui:128
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
+#: rc.cpp:593
+msgid "Allow scrolling past the end of the document"
+msgstr "Құжаттың соңынан асырып жүгірту рұқсат болсын"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:14
+#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
+#: rc.cpp:596
+msgid "&Filetype:"
+msgstr "&Файл түрі:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
+#: rc.cpp:599
+msgid "Select the filetype you want to change."
+msgstr "Өзгертем деген файл түрін таңдаңыз."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:31
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
+#: rc.cpp:602
+msgid "Create a new file type."
+msgstr "Жаңа файл түрін құру."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:34
+#. i18n: ectx: property (text), widget (QPushButton, btnNew)
+#: rc.cpp:605
+msgid "&New"
+msgstr "&Жаңа"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
+#: rc.cpp:608
+msgid "Delete the current file type."
+msgstr "Назардағы файл түрін кетіру."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:82
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
+#: rc.cpp:620
+msgid ""
+"The name of the filetype will be the text of the corresponding menu item."
+msgstr "Файл түрінің атауы арналған мәзір жолының жазуы болады."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, lblSection)
+#: rc.cpp:623
+msgid "&Section:"
+msgstr "&Бөлімі:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
+#: rc.cpp:626
+msgid "The section name is used to organize the file types in menus."
+msgstr "Бөлімдер файл түрлерін топтастыру үшін қолданылады."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, lblVariables)
+#: rc.cpp:629
+msgid "&Variables:"
+msgstr "&Айнымалылар:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:116
+#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
+#: rc.cpp:632
+msgid ""
+"<p>This string allows to configure Kate's settings for the files selected by "
+"this mimetype using Kate variables. Almost any configuration option can be "
+"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
+"known variables, see the manual.</p>"
+msgstr ""
+"<p>Бұл жол арқылы Kate-айнымалылар көмегімен осы MIME түріне сәйкесті "
+"файлдар үшін Kate-тың параметрлерін баптауға болады. Бүкіл дерлік "
+"параметрлер осылай қол жеткізерлік, сол қатарда бояп белгілеу, шегініс "
+"режімі, кодтамасы, т.б.</p><p>Толық айнымалылар тізімін анықтамасынан "
+"қараңыз.</p>"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:123
+#. i18n: ectx: property (text), widget (QLabel, lblHl)
+#: rc.cpp:635
+msgid "&Highlighting:"
+msgstr "&Талдап бояулау:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:136
+#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
+#: rc.cpp:638
+msgid "&Indentation Mode:"
+msgstr "&Шегіну режімі:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
+#: rc.cpp:641
+msgid "File e&xtensions:"
+msgstr "Файл &жұрнақтары:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:159
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
+#: rc.cpp:644
+msgid ""
+"The wildcards mask allows to select files by filename. A typical mask uses "
+"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
+"The string is a semicolon-separated list of masks."
+msgstr ""
+"Үлгі қалқасы файлды атауы арқылы таңдауға мүмкіндік береді. Әдетте бұндай "
+"қалқа жұлдызша мен файл жұрнағынан құрылады, мысалы:<code>*.txt; *.text</"
+"code>. Калқалар нүктелі үтірмен бөліктеніп келтіріледі."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
+#: rc.cpp:647
+msgid "MIME &types:"
+msgstr "MIME &түрлері:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:181
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
+#: rc.cpp:650
+msgid ""
+"The mime type mask allows to select files by mimetype. The string is a "
+"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
+"english</code>."
+msgstr ""
+"MIME түрінің қалқасы файлды MIME түрі арқылы таңдауға мүмкіндік береді. "
+"Калқалар нүктелі үтірмен бөліктеніп келтіріледі, мысалы:<code>text/plain; "
+"text/english</code>."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:188
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
+#: rc.cpp:653
+msgid "Displays a wizard that helps you easily select mimetypes."
+msgstr "MIME түрлерін оңай таңдайтың шеберді келтіреді."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:197
+#. i18n: ectx: property (text), widget (QLabel, lblPriority)
+#: rc.cpp:656
+msgid "P&riority:"
+msgstr "&Артықшылығы:"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:207
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
+#: rc.cpp:659
+msgid ""
+"Sets priority for this file type. If more than one file type selects the "
+"same file, the one with the highest priority will be used."
+msgstr ""
+"Осы файл түрінің артықшылығы. Бір файлға бірнеше файл түрлері сәйкес келсе, "
+"артықшылығы асқаны таңдалады."
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
+#: rc.cpp:662
+msgid "Download Highlighting Files..."
+msgstr "Бояулаудың ережелерін жүктеп алу..."
 
 #. i18n: file: dialogs/bordersappearanceconfigwidget.ui:23
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowFoldingMarkers)

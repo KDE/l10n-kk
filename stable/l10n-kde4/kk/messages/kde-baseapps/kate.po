@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 06:04+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2012-05-15 03:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -899,28 +899,6 @@ msgstr "Бар Kate данасын қайта пайдалану; әдетті, 
 msgid "Document to open"
 msgstr "Ашылатын құжат"
 
-#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " %1-жол %2-баған  "
-
-#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
-#, kde-format
-msgid " Characters: %1 "
-msgstr " Таңбалар: %1 "
-
-#: app/kateviewspace.cpp:298
-msgid " INS "
-msgstr " ЕНД "
-
-#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
-msgid " LINE "
-msgstr " ЖОЛ "
-
-#: app/kateviewspace.cpp:404
-msgid " BLOCK "
-msgstr " БЛОК  "
-
 #: app/katemdi.cpp:122
 msgid "Tool &Views"
 msgstr "Құ&ралдар"
@@ -983,6 +961,34 @@ msgstr ""
 "керек болып қалса, мәзірден <b>Көрініс &gt; Құрал көріністері &gt; Бүйір "
 "панельдер</b> дегенді таңдаңыз. Құралдарды арнаулы перне тіркесімі арқылы да "
 "көрсету/жасыру болады.</qt>"
+
+#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " %1-жол %2-баған  "
+
+#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
+#, kde-format
+msgid " Characters: %1 "
+msgstr " Таңбалар: %1 "
+
+#: app/kateviewspace.cpp:298
+msgid " INS "
+msgstr " ЕНД "
+
+#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
+msgid " LINE "
+msgstr " ЖОЛ "
+
+#: app/kateviewspace.cpp:404
+msgid " BLOCK "
+msgstr " БЛОК  "
+
+#: app/kateapp.cpp:226 app/kateapp.cpp:352
+#, kde-format
+msgid ""
+"The file '%1' could not be opened: it is not a normal file, it is a folder."
+msgstr "'%1' деген файл ашылмайды: бұл кәдімгі файл емес, бұл қапшық."
 
 #: app/kateappcommands.cpp:89
 msgid "All documents written to disk"
@@ -1150,6 +1156,63 @@ msgstr ""
 "құжаттың файлы басқа бір бағдарламамен өзгертілген кезде, оны қайта оқып "
 "өңдеуді қайта бастағанда ыңғайлы.</p>"
 
+#: app/katedocmanager.cpp:68
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+"KDE мәтін өңдегіш компоненті табылмады;\n"
+"KDE орнатуын түгелдеңіз."
+
+#: app/katedocmanager.cpp:308
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+"%1 деген уақытша файлы өзгертілген болуы мүмкін. Сонда да өшірмексіз бе?"
+
+#: app/katedocmanager.cpp:310
+msgid "Delete File?"
+msgstr "Өшіру"
+
+#: app/katedocmanager.cpp:450
+#, kde-format
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>'%1' деген құжат өзертіліп, әлі сақталмаған.</p><p>Өзгерістер сақталсын "
+"немесе ысырып тасталсын ба?</p>"
+
+#: app/katedocmanager.cpp:452
+msgid "Close Document"
+msgstr "Құжатты жабу"
+
+#: app/katedocmanager.cpp:459
+msgid "Save As"
+msgstr "Былай сақтау"
+
+#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:432
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr "Kate жабылып жатқанда жаңа файл ашылды. Жабылуы доғарылды."
+
+#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:433
+msgid "Closing Aborted"
+msgstr "Жабылуы доғарылды"
+
+#: app/katedocmanager.cpp:558
+msgid "Starting Up"
+msgstr "Бастау"
+
+#: app/katedocmanager.cpp:559
+msgid "Reopening files from the last session..."
+msgstr "Соңғы сеанстың файлдарын ашу..."
+
+#: app/katedocmanager.cpp:738
+msgid "Errors/Warnings while opening documents"
+msgstr "Құжаттарды ашқанда қате/ескертулер болды"
+
 #: app/katemainwindow.cpp:229
 msgid "Use this command to show or hide the view's statusbar"
 msgstr "Күй-жай жолағын көрсету-жасыру үшін"
@@ -1310,14 +1373,6 @@ msgstr "Барлық ашық құжаттар жабылады. Жалғаст�
 msgid "Close all documents"
 msgstr "Бүкіл құжаттарды жабу."
 
-#: app/katemainwindow.cpp:432 app/katedocmanager.cpp:485
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr "Kate жабылып жатқанда жаңа файл ашылды. Жабылуы доғарылды."
-
-#: app/katemainwindow.cpp:433 app/katedocmanager.cpp:486
-msgid "Closing Aborted"
-msgstr "Жабылуы доғарылды"
-
 #: app/katemainwindow.cpp:725
 msgid "&Other..."
 msgstr "&Басқа..."
@@ -1330,61 +1385,6 @@ msgstr "'%1' қолданбасы табылмады."
 #: app/katemainwindow.cpp:751
 msgid "Application not found"
 msgstr "Қолданба табылмады"
-
-#: app/katedocmanager.cpp:68
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-"KDE мәтін өңдегіш компоненті табылмады;\n"
-"KDE орнатуын түгелдеңіз."
-
-#: app/katedocmanager.cpp:308
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
-"%1 деген уақытша файлы өзгертілген болуы мүмкін. Сонда да өшірмексіз бе?"
-
-#: app/katedocmanager.cpp:310
-msgid "Delete File?"
-msgstr "Өшіру"
-
-#: app/katedocmanager.cpp:450
-#, kde-format
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
-msgstr ""
-"<p>'%1' деген құжат өзертіліп, әлі сақталмаған.</p><p>Өзгерістер сақталсын "
-"немесе ысырып тасталсын ба?</p>"
-
-#: app/katedocmanager.cpp:452
-msgid "Close Document"
-msgstr "Құжатты жабу"
-
-#: app/katedocmanager.cpp:459
-msgid "Save As"
-msgstr "Былай сақтау"
-
-#: app/katedocmanager.cpp:558
-msgid "Starting Up"
-msgstr "Бастау"
-
-#: app/katedocmanager.cpp:559
-msgid "Reopening files from the last session..."
-msgstr "Соңғы сеанстың файлдарын ашу..."
-
-#: app/katedocmanager.cpp:738
-msgid "Errors/Warnings while opening documents"
-msgstr "Құжаттарды ашқанда қате/ескертулер болды"
-
-#: app/kateapp.cpp:226 app/kateapp.cpp:352
-#, kde-format
-msgid ""
-"The file '%1' could not be opened: it is not a normal file, it is a folder."
-msgstr "'%1' деген файл ашылмайды: бұл кәдімгі файл емес, бұл қапшық."
 
 #: app/katemwmodonhddialog.cpp:65
 msgid "Documents Modified on Disk"

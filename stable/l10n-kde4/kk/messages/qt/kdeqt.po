@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2012-08-02 04:59+0200\n"
+"POT-Creation-Date: 2012-08-07 21:51+0200\n"
 "PO-Revision-Date: 2012-06-20 05:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1573,6 +1573,27 @@ msgstr "Құрылғыда орын қалған жоқ"
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
+#: corelib/io/qprocess_unix.cpp:402 corelib/io/qprocess_win.cpp:138
+msgid "Could not open input redirection for reading"
+msgstr "Қайта бағытталған кіріс оқу үшін ашылмады"
+
+#: corelib/io/qprocess_unix.cpp:414 corelib/io/qprocess_win.cpp:158
+msgid "Could not open output redirection for writing"
+msgstr "Қайта бағытталған шығыс жазу үшін ашылмады"
+
+#: corelib/io/qprocess_unix.cpp:686
+#, qt-format
+msgid "Resource error (fork failure): %1"
+msgstr "Ресурс қатесі (тармақтау жаңылысы): %1"
+
+#: corelib/io/qprocess_unix.cpp:1033 corelib/io/qprocess_unix.cpp:1085
+#: corelib/io/qprocess_unix.cpp:1159 corelib/io/qprocess_unix.cpp:1225
+#: corelib/io/qprocess_win.cpp:591 corelib/io/qprocess_win.cpp:641
+#: corelib/io/qprocess_win.cpp:716 corelib/io/qprocess_win.cpp:758
+#: corelib/io/qprocess_win.cpp:812
+msgid "Process operation timed out"
+msgstr "Процес операциясын күту уақыты бітті"
+
 #: corelib/io/qprocess.cpp:884 corelib/io/qprocess.cpp:936
 #: corelib/io/qprocess_win.cpp:601 corelib/io/qprocess_win.cpp:651
 msgid "Error reading from process"
@@ -1591,26 +1612,10 @@ msgstr "Процесі қирады"
 msgid "No program defined"
 msgstr "Бағдарлама анықталмаған"
 
-#: corelib/io/qprocess_win.cpp:138 corelib/io/qprocess_unix.cpp:402
-msgid "Could not open input redirection for reading"
-msgstr "Қайта бағытталған кіріс оқу үшін ашылмады"
-
-#: corelib/io/qprocess_win.cpp:158 corelib/io/qprocess_unix.cpp:414
-msgid "Could not open output redirection for writing"
-msgstr "Қайта бағытталған шығыс жазу үшін ашылмады"
-
 #: corelib/io/qprocess_win.cpp:431
 #, qt-format
 msgid "Process failed to start: %1"
 msgstr "Процесті бастау қатесі: %1"
-
-#: corelib/io/qprocess_win.cpp:591 corelib/io/qprocess_win.cpp:641
-#: corelib/io/qprocess_win.cpp:716 corelib/io/qprocess_win.cpp:758
-#: corelib/io/qprocess_win.cpp:812 corelib/io/qprocess_unix.cpp:1033
-#: corelib/io/qprocess_unix.cpp:1085 corelib/io/qprocess_unix.cpp:1159
-#: corelib/io/qprocess_unix.cpp:1225
-msgid "Process operation timed out"
-msgstr "Процес операциясын күту уақыты бітті"
 
 #: corelib/io/qfile.cpp:736 corelib/io/qfile.cpp:890
 msgid "Destination file exists"
@@ -1645,11 +1650,6 @@ msgstr "Шығыс үшін %1 құрылмады"
 #: corelib/io/qfile.cpp:1419
 msgid "No file engine available or engine does not support UnMapExtension"
 msgstr "Файл басқару тетігі жоқ не ол UnMapExtension-ді қолдамайды"
-
-#: corelib/io/qprocess_unix.cpp:686
-#, qt-format
-msgid "Resource error (fork failure): %1"
-msgstr "Ресурс қатесі (тармақтау жаңылысы): %1"
 
 #: corelib/kernel/qsharedmemory.cpp:268
 #, qt-format
@@ -2080,6 +2080,31 @@ msgctxt "Debugger::JSAgentWatchData"
 msgid "<undefined>"
 msgstr "<анықталмаған>"
 
+#: declarative/graphicsitems/qdeclarativeflipable.cpp:138
+msgid "front is a write-once property"
+msgstr "front деген бір мәрте жазылатын қасиеті."
+
+#: declarative/graphicsitems/qdeclarativeflipable.cpp:158
+msgid "back is a write-once property"
+msgstr "back деген бір мәрте жазылатын қасиеті."
+
+#: declarative/graphicsitems/qdeclarativeloader.cpp:407
+msgid "Loader does not support loading non-visual elements."
+msgstr "Жүктегіш көрсетелмейтін элементтерін жүктеуді қолдамайды."
+
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:962
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:970
+msgid "Could not load cursor delegate"
+msgstr "Меңзер өкілі жүктелмеді."
+
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:981
+msgid "Could not instantiate cursor delegate"
+msgstr "Меңзер өкілінің данасы құрылмады."
+
+#: declarative/graphicsitems/qdeclarativevisualitemmodel.cpp:1101
+msgid "Delegate component must be Item type."
+msgstr "Өкіл компонентінің түрі Item (аталым) болу тиіс."
+
 #: declarative/graphicsitems/qdeclarativeitem.cpp:814
 msgid "LayoutDirection attached property only works with Items"
 msgstr "LayoutDirection тіркеген қасиеттер тек қана аталымдарымен істейді"
@@ -2103,19 +2128,6 @@ msgstr "Keys тек қана тіркеген қасиеттер арқылы қ
 #: declarative/graphicsitems/qdeclarativeitemsmodule.cpp:201
 msgid "LayoutMirroring is only available via attached properties"
 msgstr "LayoutMirroring тек қана тіркеген қасиеттер арқылы қол жеткізеді"
-
-#: declarative/graphicsitems/qdeclarativeloader.cpp:407
-msgid "Loader does not support loading non-visual elements."
-msgstr "Жүктегіш көрсетелмейтін элементтерін жүктеуді қолдамайды."
-
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:962
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:970
-msgid "Could not load cursor delegate"
-msgstr "Меңзер өкілі жүктелмеді."
-
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:981
-msgid "Could not instantiate cursor delegate"
-msgstr "Меңзер өкілінің данасы құрылмады."
 
 #: declarative/graphicsitems/qdeclarativeanchors.cpp:198
 msgid "Possible anchor loop detected on fill."
@@ -2173,18 +2185,6 @@ msgstr ""
 #: declarative/graphicsitems/qdeclarativeanchors.cpp:1149
 msgid "Cannot anchor a vertical edge to a horizontal edge."
 msgstr "Тік шетін жатық шетіне бекіту болмайды."
-
-#: declarative/graphicsitems/qdeclarativeflipable.cpp:138
-msgid "front is a write-once property"
-msgstr "front деген бір мәрте жазылатын қасиеті."
-
-#: declarative/graphicsitems/qdeclarativeflipable.cpp:158
-msgid "back is a write-once property"
-msgstr "back деген бір мәрте жазылатын қасиеті."
-
-#: declarative/graphicsitems/qdeclarativevisualitemmodel.cpp:1101
-msgid "Delegate component must be Item type."
-msgstr "Өкіл компонентінің түрі Item (аталым) болу тиіс."
 
 #: declarative/qml/parser/qdeclarativejslexer.cpp:545
 #: declarative/qml/parser/qdeclarativejslexer.cpp:668
@@ -2868,56 +2868,6 @@ msgstr "%1 атау кеңістігін түрі ретінде қолдану�
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: declarative/util/qdeclarativelistmodel.cpp:392
-#, qt-format
-msgid "remove: index %1 out of range"
-msgstr "өшіру: %1 индексі шегінен шыққан"
-
-#: declarative/util/qdeclarativelistmodel.cpp:425
-msgid "insert: value is not an object"
-msgstr "енгізу: мәні нысан емес"
-
-#: declarative/util/qdeclarativelistmodel.cpp:430
-#, qt-format
-msgid "insert: index %1 out of range"
-msgstr "енгізу: %1 индексі шегінен шыққан"
-
-#: declarative/util/qdeclarativelistmodel.cpp:460
-msgid "move: out of range"
-msgstr "жылжыту: шегінен шыққан"
-
-#: declarative/util/qdeclarativelistmodel.cpp:500
-msgid "append: value is not an object"
-msgstr ":жалғау: мәні нысан емес"
-
-#: declarative/util/qdeclarativelistmodel.cpp:571
-msgid "set: value is not an object"
-msgstr "орнату: мәні нысан емес"
-
-#: declarative/util/qdeclarativelistmodel.cpp:575
-#: declarative/util/qdeclarativelistmodel.cpp:613
-#, qt-format
-msgid "set: index %1 out of range"
-msgstr "орнату: %1 индексі шегінен шыққан"
-
-#: declarative/util/qdeclarativelistmodel.cpp:650
-#: declarative/util/qdeclarativelistmodel.cpp:667
-msgid "ListElement: cannot contain nested elements"
-msgstr "ListElement: ішіде бір-біріне салынған элементтер бола алмайды"
-
-#: declarative/util/qdeclarativelistmodel.cpp:671
-msgid "ListElement: cannot use reserved \"id\" property"
-msgstr "ListElement: арнаулы \"id\" қасиетін қолданалмайды"
-
-#: declarative/util/qdeclarativelistmodel.cpp:725
-msgid "ListElement: cannot use script for property value"
-msgstr "ListElement: қасиеттің мәнінде скриптті қолданалмайды"
-
-#: declarative/util/qdeclarativelistmodel.cpp:757
-#, qt-format
-msgid "ListModel: undefined property '%1'"
-msgstr "ListModel: '%1' қасиеті анықталмаған"
-
 #: declarative/util/qdeclarativepixmapcache.cpp:311
 #, qt-format
 msgid "Error decoding: %1: %2"
@@ -2994,18 +2944,6 @@ msgstr "XmlListModel сұрансы '/' не \"//\" деп басталуы ти
 msgid "invalid query: \"%1\""
 msgstr "Дұрыс емес сұраныс: \"%1\""
 
-#: declarative/util/qdeclarativeconnections.cpp:217
-msgid "Connections: nested objects not allowed"
-msgstr "Бір-бірінің ішіндегі нысандарды байланыструға рұсат жоқ"
-
-#: declarative/util/qdeclarativeconnections.cpp:220
-msgid "Connections: syntax error"
-msgstr "Байланыстар: синтаксис қатесі"
-
-#: declarative/util/qdeclarativeconnections.cpp:228
-msgid "Connections: script expected"
-msgstr "Байланыстар: күткені скрипт еді"
-
 #: declarative/util/qdeclarativeanimation.cpp:172
 #, qt-format
 msgid "Cannot animate non-existent property \"%1\""
@@ -3025,6 +2963,68 @@ msgstr "Ұзақтық '<0' деп орнатылмайды"
 #: declarative/util/qdeclarativebehavior.cpp:127
 msgid "Cannot change the animation assigned to a Behavior."
 msgstr "Behavior дегенге тағайндалған анимацияны өзгертуге болмайды."
+
+#: declarative/util/qdeclarativeconnections.cpp:217
+msgid "Connections: nested objects not allowed"
+msgstr "Бір-бірінің ішіндегі нысандарды байланыструға рұсат жоқ"
+
+#: declarative/util/qdeclarativeconnections.cpp:220
+msgid "Connections: syntax error"
+msgstr "Байланыстар: синтаксис қатесі"
+
+#: declarative/util/qdeclarativeconnections.cpp:228
+msgid "Connections: script expected"
+msgstr "Байланыстар: күткені скрипт еді"
+
+#: declarative/util/qdeclarativelistmodel.cpp:392
+#, qt-format
+msgid "remove: index %1 out of range"
+msgstr "өшіру: %1 индексі шегінен шыққан"
+
+#: declarative/util/qdeclarativelistmodel.cpp:425
+msgid "insert: value is not an object"
+msgstr "енгізу: мәні нысан емес"
+
+#: declarative/util/qdeclarativelistmodel.cpp:430
+#, qt-format
+msgid "insert: index %1 out of range"
+msgstr "енгізу: %1 индексі шегінен шыққан"
+
+#: declarative/util/qdeclarativelistmodel.cpp:460
+msgid "move: out of range"
+msgstr "жылжыту: шегінен шыққан"
+
+#: declarative/util/qdeclarativelistmodel.cpp:500
+msgid "append: value is not an object"
+msgstr ":жалғау: мәні нысан емес"
+
+#: declarative/util/qdeclarativelistmodel.cpp:571
+msgid "set: value is not an object"
+msgstr "орнату: мәні нысан емес"
+
+#: declarative/util/qdeclarativelistmodel.cpp:575
+#: declarative/util/qdeclarativelistmodel.cpp:613
+#, qt-format
+msgid "set: index %1 out of range"
+msgstr "орнату: %1 индексі шегінен шыққан"
+
+#: declarative/util/qdeclarativelistmodel.cpp:650
+#: declarative/util/qdeclarativelistmodel.cpp:667
+msgid "ListElement: cannot contain nested elements"
+msgstr "ListElement: ішіде бір-біріне салынған элементтер бола алмайды"
+
+#: declarative/util/qdeclarativelistmodel.cpp:671
+msgid "ListElement: cannot use reserved \"id\" property"
+msgstr "ListElement: арнаулы \"id\" қасиетін қолданалмайды"
+
+#: declarative/util/qdeclarativelistmodel.cpp:725
+msgid "ListElement: cannot use script for property value"
+msgstr "ListElement: қасиеттің мәнінде скриптті қолданалмайды"
+
+#: declarative/util/qdeclarativelistmodel.cpp:757
+#, qt-format
+msgid "ListModel: undefined property '%1'"
+msgstr "ListModel: '%1' қасиеті анықталмаған"
 
 #: gui/accessible/qaccessibleobject.cpp:374
 #: plugins/accessible/widgets/complexwidgets.cpp:1617
@@ -3214,6 +3214,209 @@ msgstr "Qt туралы"
 msgid "OK"
 msgstr "ОК"
 
+#: gui/dialogs/qprintdialog_unix.cpp:396 gui/dialogs/qprintdialog_unix.cpp:464
+msgid "&Options >>"
+msgstr "&Параметрлері >>"
+
+#: gui/dialogs/qprintdialog_unix.cpp:401
+msgid "&Print"
+msgstr "&Басып шығару"
+
+#: gui/dialogs/qprintdialog_unix.cpp:468
+msgid "&Options <<"
+msgstr "&Параметрлері <<"
+
+#: gui/dialogs/qprintdialog_unix.cpp:728
+msgid "Print to File (PDF)"
+msgstr "Файлға басып шығару (PDF)"
+
+#: gui/dialogs/qprintdialog_unix.cpp:729
+msgid "Print to File (Postscript)"
+msgstr "Файлға басып шығару (Postscript)"
+
+#: gui/dialogs/qprintdialog_unix.cpp:776
+msgid "Local file"
+msgstr "Жергілікті файл"
+
+#: gui/dialogs/qprintdialog_unix.cpp:777
+#, qt-format
+msgid "Write %1 file"
+msgstr "%1 файлына жазу"
+
+#: gui/dialogs/qprintdialog_unix.cpp:848
+msgid "Print To File ..."
+msgstr "Файлға басып шығару..."
+
+#: gui/dialogs/qprintdialog_unix.cpp:926
+#, qt-format
+msgid ""
+"%1 is a directory.\n"
+"Please choose a different file name."
+msgstr ""
+"%1 деген қапшық бар.\n"
+"Файлды басқаша атаңыз."
+
+#: gui/dialogs/qprintdialog_unix.cpp:930
+#, qt-format
+msgid ""
+"File %1 is not writable.\n"
+"Please choose a different file name."
+msgstr ""
+"\"%1\" деген файлы жазылмайды.\n"
+"Файлды басқаша атаңыз."
+
+#: gui/dialogs/qprintdialog_unix.cpp:934
+#, qt-format
+msgid ""
+"%1 already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"%1 \"%1\" деген бар екен.\n"
+"Үстінен жаза берейік пе?"
+
+#: gui/dialogs/qprintdialog_unix.cpp:1238
+msgctxt "QPPDOptionsModel"
+msgid "Name"
+msgstr "Атауы"
+
+#: gui/dialogs/qprintdialog_unix.cpp:1240
+msgctxt "QPPDOptionsModel"
+msgid "Value"
+msgstr "Мәні"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:249
+#, qt-format
+msgid "%1%"
+msgstr "%1%"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:333
+msgctxt "QPrintPreviewDialog"
+msgid "Print Preview"
+msgstr "Басатынды алдын-ала қарау"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:363
+msgctxt "QPrintPreviewDialog"
+msgid "Next page"
+msgstr "Келесі бет"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:364
+msgctxt "QPrintPreviewDialog"
+msgid "Previous page"
+msgstr "Алдыңғы бет"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:365
+msgctxt "QPrintPreviewDialog"
+msgid "First page"
+msgstr "Алғашқы бет"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:366
+msgctxt "QPrintPreviewDialog"
+msgid "Last page"
+msgstr "Соңғы бет"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:375
+msgctxt "QPrintPreviewDialog"
+msgid "Fit width"
+msgstr "Енің шақтау "
+
+#: gui/dialogs/qprintpreviewdialog.cpp:376
+msgctxt "QPrintPreviewDialog"
+msgid "Fit page"
+msgstr "Бетің шақтау"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:387
+msgctxt "QPrintPreviewDialog"
+msgid "Zoom in"
+msgstr "Жақындау"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:388
+msgctxt "QPrintPreviewDialog"
+msgid "Zoom out"
+msgstr "Алыстау"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:394
+msgctxt "QPrintPreviewDialog"
+msgid "Portrait"
+msgstr "Тік"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:395
+msgctxt "QPrintPreviewDialog"
+msgid "Landscape"
+msgstr "Көлденең"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:405
+msgctxt "QPrintPreviewDialog"
+msgid "Show single page"
+msgstr "Жалғыз бетті көрсету"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:406
+msgctxt "QPrintPreviewDialog"
+msgid "Show facing pages"
+msgstr "Қатар беттерін көрсету"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:407
+msgctxt "QPrintPreviewDialog"
+msgid "Show overview of all pages"
+msgstr "Бүкіл беттерін шолу"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:422
+msgctxt "QPrintPreviewDialog"
+msgid "Print"
+msgstr "Басып шығару"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:423
+msgctxt "QPrintPreviewDialog"
+msgid "Page setup"
+msgstr "Бет баптаулары"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:429
+msgctxt "QPrintPreviewDialog"
+msgid "Close"
+msgstr "Жабу"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:577
+msgctxt "QPrintPreviewDialog"
+msgid "Export to PDF"
+msgstr "PDF-ке экспорттау"
+
+#: gui/dialogs/qprintpreviewdialog.cpp:580
+msgctxt "QPrintPreviewDialog"
+msgid "Export to PostScript"
+msgstr "PostScript-қа экспорттау "
+
+#: gui/dialogs/qprogressdialog.cpp:203 gui/dialogs/qwizard.cpp:700
+#: gui/kernel/qsoftkeymanager.cpp:76
+#: qt3support/dialogs/q3progressdialog.cpp:224
+#: qt3support/dialogs/q3progressdialog.cpp:285
+#: qt3support/dialogs/q3tabdialog.cpp:786
+msgid "Cancel"
+msgstr "Қайту"
+
+#: gui/dialogs/qsidebar.cpp:442
+msgid "Remove"
+msgstr "Өшіру"
+
+#: gui/dialogs/qabstractprintdialog.cpp:116
+#: gui/dialogs/qabstractprintdialog.cpp:129
+msgctxt "QPrintDialog"
+msgid "Print"
+msgstr "Басып шығару"
+
+#: gui/dialogs/qabstractpagesetupdialog.cpp:68
+#: gui/dialogs/qabstractpagesetupdialog.cpp:80
+msgctxt "QPrintPreviewDialog"
+msgid "Page Setup"
+msgstr "Бет баптаулары"
+
+#: gui/dialogs/qdialog.cpp:526 gui/dialogs/qwizard.cpp:698
+#: gui/kernel/qsoftkeymanager.cpp:70
+msgid "Done"
+msgstr "Бітті"
+
+#: gui/dialogs/qdialog.cpp:653 gui/kernel/qwhatsthis.cpp:527
+msgid "What's This?"
+msgstr "Бұл не?"
+
 #: gui/dialogs/qpagesetupdialog_unix.cpp:72
 msgid "A0"
 msgstr "A0"
@@ -3353,146 +3556,6 @@ msgstr "Дюйм (д)"
 #: gui/dialogs/qpagesetupdialog_unix.cpp:304
 msgid "Points (pt)"
 msgstr "Пойнт (пт)"
-
-#: gui/dialogs/qprintdialog_unix.cpp:396 gui/dialogs/qprintdialog_unix.cpp:464
-msgid "&Options >>"
-msgstr "&Параметрлері >>"
-
-#: gui/dialogs/qprintdialog_unix.cpp:401
-msgid "&Print"
-msgstr "&Басып шығару"
-
-#: gui/dialogs/qprintdialog_unix.cpp:468
-msgid "&Options <<"
-msgstr "&Параметрлері <<"
-
-#: gui/dialogs/qprintdialog_unix.cpp:728
-msgid "Print to File (PDF)"
-msgstr "Файлға басып шығару (PDF)"
-
-#: gui/dialogs/qprintdialog_unix.cpp:729
-msgid "Print to File (Postscript)"
-msgstr "Файлға басып шығару (Postscript)"
-
-#: gui/dialogs/qprintdialog_unix.cpp:776
-msgid "Local file"
-msgstr "Жергілікті файл"
-
-#: gui/dialogs/qprintdialog_unix.cpp:777
-#, qt-format
-msgid "Write %1 file"
-msgstr "%1 файлына жазу"
-
-#: gui/dialogs/qprintdialog_unix.cpp:848
-msgid "Print To File ..."
-msgstr "Файлға басып шығару..."
-
-#: gui/dialogs/qprintdialog_unix.cpp:926
-#, qt-format
-msgid ""
-"%1 is a directory.\n"
-"Please choose a different file name."
-msgstr ""
-"%1 деген қапшық бар.\n"
-"Файлды басқаша атаңыз."
-
-#: gui/dialogs/qprintdialog_unix.cpp:930
-#, qt-format
-msgid ""
-"File %1 is not writable.\n"
-"Please choose a different file name."
-msgstr ""
-"\"%1\" деген файлы жазылмайды.\n"
-"Файлды басқаша атаңыз."
-
-#: gui/dialogs/qprintdialog_unix.cpp:934
-#, qt-format
-msgid ""
-"%1 already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"%1 \"%1\" деген бар екен.\n"
-"Үстінен жаза берейік пе?"
-
-#: gui/dialogs/qprintdialog_unix.cpp:1238
-msgctxt "QPPDOptionsModel"
-msgid "Name"
-msgstr "Атауы"
-
-#: gui/dialogs/qprintdialog_unix.cpp:1240
-msgctxt "QPPDOptionsModel"
-msgid "Value"
-msgstr "Мәні"
-
-#: gui/dialogs/qprogressdialog.cpp:203 gui/dialogs/qwizard.cpp:700
-#: gui/kernel/qsoftkeymanager.cpp:76
-#: qt3support/dialogs/q3progressdialog.cpp:224
-#: qt3support/dialogs/q3progressdialog.cpp:285
-#: qt3support/dialogs/q3tabdialog.cpp:786
-msgid "Cancel"
-msgstr "Қайту"
-
-#: gui/dialogs/qabstractpagesetupdialog.cpp:68
-#: gui/dialogs/qabstractpagesetupdialog.cpp:80
-msgctxt "QPrintPreviewDialog"
-msgid "Page Setup"
-msgstr "Бет баптаулары"
-
-#: gui/dialogs/qsidebar.cpp:442
-msgid "Remove"
-msgstr "Өшіру"
-
-#: gui/dialogs/qwizard.cpp:688
-msgid "Go Back"
-msgstr "Артқа қарай өту"
-
-#: gui/dialogs/qwizard.cpp:688 qt3support/dialogs/q3wizard.cpp:178
-msgid "< &Back"
-msgstr "< &Шегіну"
-
-#: gui/dialogs/qwizard.cpp:691 scripttools/debugging/qscriptdebugger.cpp:1694
-msgid "Continue"
-msgstr "Жалғастыру"
-
-#: gui/dialogs/qwizard.cpp:694
-msgid "&Next"
-msgstr "&Келесі"
-
-#: gui/dialogs/qwizard.cpp:694 qt3support/dialogs/q3wizard.cpp:179
-msgid "&Next >"
-msgstr "&Келесі >"
-
-#: gui/dialogs/qwizard.cpp:696
-msgid "Commit"
-msgstr "Тапсыру"
-
-#: gui/dialogs/qwizard.cpp:698 gui/dialogs/qdialog.cpp:526
-#: gui/kernel/qsoftkeymanager.cpp:70
-msgid "Done"
-msgstr "Бітті"
-
-#: gui/dialogs/qwizard.cpp:698 qt3support/dialogs/q3wizard.cpp:180
-msgid "&Finish"
-msgstr "&Аяқтау"
-
-#: gui/dialogs/qwizard.cpp:702 gui/widgets/qmdisubwindow.cpp:355
-#: qt3support/dialogs/q3tabdialog.cpp:691
-msgid "Help"
-msgstr "Анықтама"
-
-#: gui/dialogs/qwizard.cpp:702 qt3support/dialogs/q3wizard.cpp:181
-msgid "&Help"
-msgstr "&Анықтама"
-
-#: gui/dialogs/qdialog.cpp:653 gui/kernel/qwhatsthis.cpp:527
-msgid "What's This?"
-msgstr "Бұл не?"
-
-#: gui/dialogs/qabstractprintdialog.cpp:116
-#: gui/dialogs/qabstractprintdialog.cpp:129
-msgctxt "QPrintDialog"
-msgid "Print"
-msgstr "Басып шығару"
 
 #: gui/dialogs/qprintdialog_qws.cpp:148
 msgid "File exists"
@@ -3638,105 +3701,42 @@ msgstr "Басып шығару"
 msgid "The 'From' value cannot be greater than the 'To' value."
 msgstr "Аяқтау мәні бастау мәнінен артық болу керек."
 
-#: gui/dialogs/qprintpreviewdialog.cpp:249
-#, qt-format
-msgid "%1%"
-msgstr "%1%"
+#: gui/dialogs/qwizard.cpp:688
+msgid "Go Back"
+msgstr "Артқа қарай өту"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:333
-msgctxt "QPrintPreviewDialog"
-msgid "Print Preview"
-msgstr "Басатынды алдын-ала қарау"
+#: gui/dialogs/qwizard.cpp:688 qt3support/dialogs/q3wizard.cpp:178
+msgid "< &Back"
+msgstr "< &Шегіну"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:363
-msgctxt "QPrintPreviewDialog"
-msgid "Next page"
-msgstr "Келесі бет"
+#: gui/dialogs/qwizard.cpp:691 scripttools/debugging/qscriptdebugger.cpp:1694
+msgid "Continue"
+msgstr "Жалғастыру"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:364
-msgctxt "QPrintPreviewDialog"
-msgid "Previous page"
-msgstr "Алдыңғы бет"
+#: gui/dialogs/qwizard.cpp:694
+msgid "&Next"
+msgstr "&Келесі"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:365
-msgctxt "QPrintPreviewDialog"
-msgid "First page"
-msgstr "Алғашқы бет"
+#: gui/dialogs/qwizard.cpp:694 qt3support/dialogs/q3wizard.cpp:179
+msgid "&Next >"
+msgstr "&Келесі >"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:366
-msgctxt "QPrintPreviewDialog"
-msgid "Last page"
-msgstr "Соңғы бет"
+#: gui/dialogs/qwizard.cpp:696
+msgid "Commit"
+msgstr "Тапсыру"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:375
-msgctxt "QPrintPreviewDialog"
-msgid "Fit width"
-msgstr "Енің шақтау "
+#: gui/dialogs/qwizard.cpp:698 qt3support/dialogs/q3wizard.cpp:180
+msgid "&Finish"
+msgstr "&Аяқтау"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:376
-msgctxt "QPrintPreviewDialog"
-msgid "Fit page"
-msgstr "Бетің шақтау"
+#: gui/dialogs/qwizard.cpp:702 gui/widgets/qmdisubwindow.cpp:355
+#: qt3support/dialogs/q3tabdialog.cpp:691
+msgid "Help"
+msgstr "Анықтама"
 
-#: gui/dialogs/qprintpreviewdialog.cpp:387
-msgctxt "QPrintPreviewDialog"
-msgid "Zoom in"
-msgstr "Жақындау"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:388
-msgctxt "QPrintPreviewDialog"
-msgid "Zoom out"
-msgstr "Алыстау"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:394
-msgctxt "QPrintPreviewDialog"
-msgid "Portrait"
-msgstr "Тік"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:395
-msgctxt "QPrintPreviewDialog"
-msgid "Landscape"
-msgstr "Көлденең"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:405
-msgctxt "QPrintPreviewDialog"
-msgid "Show single page"
-msgstr "Жалғыз бетті көрсету"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:406
-msgctxt "QPrintPreviewDialog"
-msgid "Show facing pages"
-msgstr "Қатар беттерін көрсету"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:407
-msgctxt "QPrintPreviewDialog"
-msgid "Show overview of all pages"
-msgstr "Бүкіл беттерін шолу"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:422
-msgctxt "QPrintPreviewDialog"
-msgid "Print"
-msgstr "Басып шығару"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:423
-msgctxt "QPrintPreviewDialog"
-msgid "Page setup"
-msgstr "Бет баптаулары"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:429
-msgctxt "QPrintPreviewDialog"
-msgid "Close"
-msgstr "Жабу"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:577
-msgctxt "QPrintPreviewDialog"
-msgid "Export to PDF"
-msgstr "PDF-ке экспорттау"
-
-#: gui/dialogs/qprintpreviewdialog.cpp:580
-msgctxt "QPrintPreviewDialog"
-msgid "Export to PostScript"
-msgstr "PostScript-қа экспорттау "
+#: gui/dialogs/qwizard.cpp:702 qt3support/dialogs/q3wizard.cpp:181
+msgid "&Help"
+msgstr "&Анықтама"
 
 #: gui/inputmethod/qinputcontextfactory.cpp:301
 msgid "XIM"
@@ -3761,14 +3761,6 @@ msgstr "Mac OS X енгізу әдісі"
 #: gui/inputmethod/qinputcontextfactory.cpp:340
 msgid "S60 FEP input method"
 msgstr "S60 FEP енгізу әдісі"
-
-#: gui/itemviews/qitemeditorfactory.cpp:556 qt3support/sql/q3datatable.cpp:286
-msgid "False"
-msgstr "Жалған"
-
-#: gui/itemviews/qitemeditorfactory.cpp:557 qt3support/sql/q3datatable.cpp:285
-msgid "True"
-msgstr "Ақиқат"
 
 #: gui/itemviews/qdirmodel.cpp:852
 msgctxt "QFileDialog"
@@ -3815,6 +3807,14 @@ msgstr "Тіркесім"
 msgctxt "QFileDialog"
 msgid "Unknown"
 msgstr "Беймәлім"
+
+#: gui/itemviews/qitemeditorfactory.cpp:556 qt3support/sql/q3datatable.cpp:286
+msgid "False"
+msgstr "Жалған"
+
+#: gui/itemviews/qitemeditorfactory.cpp:557 qt3support/sql/q3datatable.cpp:285
+msgid "True"
+msgstr "Ақиқат"
 
 #: gui/kernel/qapplication.cpp:2425
 msgctxt ""
@@ -5281,10 +5281,6 @@ msgstr "PDF жазу бағдарын қайтару"
 msgid "Insert Unicode control character"
 msgstr "Юникод басқару символын енгізу"
 
-#: gui/util/qdesktopservices_mac.cpp:171
-msgid "Home"
-msgstr "Мекен"
-
 #: gui/util/qundogroup.cpp:388 gui/util/qundostack.cpp:877
 #, qt-format
 msgid "Undo %1"
@@ -5308,6 +5304,10 @@ msgstr "Қайтудан айну"
 #: gui/util/qundoview.cpp:101
 msgid "<empty>"
 msgstr "<жоқ>"
+
+#: gui/util/qdesktopservices_mac.cpp:171
+msgid "Home"
+msgstr "Мекен"
 
 #: gui/widgets/qabstractspinbox.cpp:1257
 msgid "&Select All"
@@ -5629,11 +5629,6 @@ msgstr "GestureArea: синтаксис қатесі"
 msgid "GestureArea: script expected"
 msgstr "GestureArea: күткені скрипт еді"
 
-#: network/access/qnetworkaccesshttpbackend.cpp:429
-#: network/access/qnetworkaccessftpbackend.cpp:134
-msgid "No suitable proxy found"
-msgstr "Керек прокси табылмады"
-
 #: network/access/qnetworkaccesscachebackend.cpp:66
 #, qt-format
 msgctxt "QNetworkAccessCacheBackend"
@@ -5689,25 +5684,10 @@ msgctxt "QNetworkAccessFileBackend"
 msgid "Read error reading from %1: %2"
 msgstr "%1 дегеннен оқу қатесі: %2"
 
-#: network/access/qnetworkaccessftpbackend.cpp:148
-#, qt-format
-msgid "Cannot open %1: is a directory"
-msgstr "%1 ашылмады: ол қапшық"
-
-#: network/access/qnetworkaccessftpbackend.cpp:243
-#, qt-format
-msgid "Logging in to %1 failed: authentication required"
-msgstr "%1 кіру жаңылысы: аутентификация қажет"
-
-#: network/access/qnetworkaccessftpbackend.cpp:282
-#, qt-format
-msgid "Error while downloading %1: %2"
-msgstr "%1 жүктеп алу қатесі: %2"
-
-#: network/access/qnetworkaccessftpbackend.cpp:284
-#, qt-format
-msgid "Error while uploading %1: %2"
-msgstr "%1 жүктеп беру қатесі: %2"
+#: network/access/qnetworkaccesshttpbackend.cpp:429
+#: network/access/qnetworkaccessftpbackend.cpp:134
+msgid "No suitable proxy found"
+msgstr "Керек прокси табылмады"
 
 #: network/access/qnetworkreplydataimpl.cpp:95
 #, qt-format
@@ -5745,6 +5725,26 @@ msgstr "Әрекет доғарылды"
 msgctxt "QNetworkAccessManager"
 msgid "Network access is disabled."
 msgstr "Желіге қатынау рұқсат етілмеген."
+
+#: network/access/qnetworkaccessftpbackend.cpp:148
+#, qt-format
+msgid "Cannot open %1: is a directory"
+msgstr "%1 ашылмады: ол қапшық"
+
+#: network/access/qnetworkaccessftpbackend.cpp:243
+#, qt-format
+msgid "Logging in to %1 failed: authentication required"
+msgstr "%1 кіру жаңылысы: аутентификация қажет"
+
+#: network/access/qnetworkaccessftpbackend.cpp:282
+#, qt-format
+msgid "Error while downloading %1: %2"
+msgstr "%1 жүктеп алу қатесі: %2"
+
+#: network/access/qnetworkaccessftpbackend.cpp:284
+#, qt-format
+msgid "Error while uploading %1: %2"
+msgstr "%1 жүктеп беру қатесі: %2"
 
 #: network/bearer/qnetworksession.cpp:456
 msgid "Invalid configuration."
@@ -6001,67 +6001,6 @@ msgstr "Сокет операциясын күту  мерзімі бітті"
 msgid "Socket is not connected"
 msgstr "Сокет қосылған жоқ"
 
-#: network/ssl/qsslsocket_openssl.cpp:287
-#, qt-format
-msgid "Error creating SSL context (%1)"
-msgstr "SSL контекстін құру қатесі (%1)"
-
-#: network/ssl/qsslsocket_openssl.cpp:341
-#, qt-format
-msgid "Invalid or empty cipher list (%1)"
-msgstr "Шифр тізімі дұрыс емес не бос (%1)"
-
-#: network/ssl/qsslsocket_openssl.cpp:385
-#, qt-format
-msgid "Cannot provide a certificate with no key, %1"
-msgstr "Кілтсіз куәлікті беруге болмайды, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:392
-#, qt-format
-msgid "Error loading local certificate, %1"
-msgstr "Жергілікті куәлікті жүктеу қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:407
-#, qt-format
-msgid "Error loading private key, %1"
-msgstr "Сырлы кілтті жүктеу қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:414
-#, qt-format
-msgid "Private key does not certify public key, %1"
-msgstr "Сырлы кілт ашық кілтті куәландыра алмайды, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:434
-#, qt-format
-msgid "Error creating SSL session, %1"
-msgstr "SSL сеансын құру қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:470
-#, qt-format
-msgid "Error creating SSL session: %1"
-msgstr "SSL сеансын құру қатесі: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1023
-#, qt-format
-msgid "Unable to write data: %1"
-msgstr "Деректер жазылмады: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1093
-#, qt-format
-msgid "Unable to decrypt data: %1"
-msgstr "Деректердің шифры шешілмеді: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1171
-#: network/ssl/qsslsocket_openssl.cpp:1181
-#, qt-format
-msgid "Error while reading: %1"
-msgstr "Оқу кезде қате пайда болды: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1276
-#, qt-format
-msgid "Error during SSL handshake: %1"
-msgstr "SSL сеансын бастау кезінде қате пайда болды: %1"
-
 #: network/ssl/qsslerror.cpp:217
 msgid "The issuer certificate could not be found"
 msgstr "Берушісінің куәлігі табылмады"
@@ -6164,6 +6103,67 @@ msgstr "Хост атауы бұл куәлікке жарамды хостта�
 #: network/ssl/qsslerror.cpp:286
 msgid "The peer certificate is blacklisted"
 msgstr "Қарсы жақ күәлігі қара тізімге еңді."
+
+#: network/ssl/qsslsocket_openssl.cpp:287
+#, qt-format
+msgid "Error creating SSL context (%1)"
+msgstr "SSL контекстін құру қатесі (%1)"
+
+#: network/ssl/qsslsocket_openssl.cpp:341
+#, qt-format
+msgid "Invalid or empty cipher list (%1)"
+msgstr "Шифр тізімі дұрыс емес не бос (%1)"
+
+#: network/ssl/qsslsocket_openssl.cpp:385
+#, qt-format
+msgid "Cannot provide a certificate with no key, %1"
+msgstr "Кілтсіз куәлікті беруге болмайды, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:392
+#, qt-format
+msgid "Error loading local certificate, %1"
+msgstr "Жергілікті куәлікті жүктеу қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:407
+#, qt-format
+msgid "Error loading private key, %1"
+msgstr "Сырлы кілтті жүктеу қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:414
+#, qt-format
+msgid "Private key does not certify public key, %1"
+msgstr "Сырлы кілт ашық кілтті куәландыра алмайды, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:434
+#, qt-format
+msgid "Error creating SSL session, %1"
+msgstr "SSL сеансын құру қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:470
+#, qt-format
+msgid "Error creating SSL session: %1"
+msgstr "SSL сеансын құру қатесі: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1023
+#, qt-format
+msgid "Unable to write data: %1"
+msgstr "Деректер жазылмады: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1093
+#, qt-format
+msgid "Unable to decrypt data: %1"
+msgstr "Деректердің шифры шешілмеді: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1171
+#: network/ssl/qsslsocket_openssl.cpp:1181
+#, qt-format
+msgid "Error while reading: %1"
+msgstr "Оқу кезде қате пайда болды: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1276
+#, qt-format
+msgid "Error during SSL handshake: %1"
+msgstr "SSL сеансын бастау кезінде қате пайда болды: %1"
 
 #: plugins/accessible/compat/q3complexwidgets.cpp:246
 msgid "System"
@@ -6402,6 +6402,10 @@ msgstr ""
 msgid "PlayBook IMF"
 msgstr "PlayBook IMF"
 
+#: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
+msgid "Items"
+msgstr "Аталымдар"
+
 #: plugins/qmltooling/qmldbg_inspector/editor/qmltoolbar.cpp:65
 msgid "Inspector Mode"
 msgstr "Тексеріс күйі"
@@ -6469,10 +6473,6 @@ msgstr "Үлкейту"
 #: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:65
 msgid "Zoom Out"
 msgstr "Кішірейту"
-
-#: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
-msgid "Items"
-msgstr "Аталымдар"
 
 #: qt3support/dialogs/q3tabdialog.cpp:648
 msgid "Apply"
@@ -9532,6 +9532,189 @@ msgstr "%1 деген іс-әлпеті шектеуі анықталған ек
 msgid "Duplicated facets in simple type %1."
 msgstr "%1 жәй түрінде қосарлы шектер"
 
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:354
+#, qt-format
+msgid "%1 references unknown %2 or %3 element %4."
+msgstr "%1 деген беймәлм %2 не %3 %4 элементіне сілтейді."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:364
+#, qt-format
+msgid "%1 references identity constraint %2 that is no %3 or %4 element."
+msgstr ""
+"%1 деген %2 профиль шектеуіне сілтейді, бірақ онда %3 не %4 элементі жоқ"
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:374
+#, qt-format
+msgid ""
+"%1 has a different number of fields from the identity constraint %2 that it "
+"references."
+msgstr ""
+"%1 дегендегі өрістер саны, ол сілтеген %2 профиль шектеуіндегінен басқа."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:397
+#, qt-format
+msgid "Base type %1 of %2 element cannot be resolved."
+msgstr "%2 элементі негіздеген %1 түрі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:481
+#, qt-format
+msgid "Item type %1 of %2 element cannot be resolved."
+msgstr "%2 элементтің %1 аталымының түрі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:512
+#, qt-format
+msgid "Member type %1 of %2 element cannot be resolved."
+msgstr "%2 элементтің %1 мүшесінің түрі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:540
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:955
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:985
+#, qt-format
+msgid "Type %1 of %2 element cannot be resolved."
+msgstr "%2 элементтің %1 түрі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:562
+#, qt-format
+msgid "Base type %1 of complex type cannot be resolved."
+msgstr "Күрделі түрі негіздеген %1 түрі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:571
+#, qt-format
+msgid "%1 cannot have complex base type that has a %2."
+msgstr "%1 деген түрі %2 дегені бар күрделі түрді негіздей алмайды."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:857
+#, qt-format
+msgid ""
+"Content model of complex type %1 contains %2 element, so it cannot be "
+"derived by extension from a non-empty type."
+msgstr ""
+"%1 күрделі түрінің мазмұны моделінде %2 деген элемент бар, сонымен ол "
+"кеңейту арқылы бос емес түрінен туындалмайды."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:863
+#, qt-format
+msgid ""
+"Complex type %1 cannot be derived by extension from %2 as the latter "
+"contains %3 element in its content model."
+msgstr ""
+"%1 күрделі түрі кеңейту арқылы %2 түрінен туындалмайды, өйткені екіншісінің "
+"мазмұны моделінде %3 элементі бар."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:964
+#, qt-format
+msgid "Type of %1 element must be a simple type, %2 is not."
+msgstr "%1 элементінің түрі жәй болу тиіс, бірақ %2 жәй емес."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1026
+#, qt-format
+msgid "Substitution group %1 of %2 element cannot be resolved."
+msgstr "%2 элементтің %1 ауыстыру тобы айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1035
+#, qt-format
+msgid "Substitution group %1 has circular definition."
+msgstr "%1 ауыстру тобының анықтамасында тұйықтық бар."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1155
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1162
+#, qt-format
+msgid "Duplicated element names %1 in %2 element."
+msgstr "%2 элементіндегі %1 деген элемент атауы қайталанған."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1191
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1243
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1314
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1342
+#, qt-format
+msgid "Reference %1 of %2 element cannot be resolved."
+msgstr "%2 элементтің %1 сілтемесі айқындалмады. "
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1204
+#, qt-format
+msgid "Circular group reference for %1."
+msgstr "%1 дегенге циклді топ сілтеме."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1220
+#, qt-format
+msgid "%1 element is not allowed in this scope"
+msgstr " %1 деген элемент бұл жерде рұқсат естілмеген."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1225
+#, qt-format
+msgid "%1 element cannot have %2 attribute with value other than %3."
+msgstr "%1 элементінде %2 атрибутының мәні %3 ғана болу тиіс."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1233
+#, qt-format
+msgid "%1 element cannot have %2 attribute with value other than %3 or %4."
+msgstr "%1 элементінде %2 атрибутының мәні %3 не %4 ғана болу тиіс."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1324
+#, qt-format
+msgid ""
+"%1 or %2 attribute of reference %3 does not match with the attribute "
+"declaration %4."
+msgstr ""
+"%3 сілтеменің %1 не %2 аттрибуты %4 атрибут мәлімдемесіне сәйкес келмейді."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1349
+#, qt-format
+msgid "Attribute group %1 has circular reference."
+msgstr "%1 атрибут тобында циклді сілтеме бар."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1480
+#, qt-format
+msgid "%1 attribute in %2 must have %3 use like in base type %4."
+msgstr ""
+"%2 денгеннің %1 атрибуты, ол негіздеген %4 түріндегідей %3 дегенді пайдалану "
+"керек."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1532
+#, qt-format
+msgid ""
+"Attribute wildcard of %1 is not a valid restriction of attribute wildcard of "
+"base type %2."
+msgstr ""
+"%1 дегеннің үлгі қалқа атрибуты ол негіздеген %2 түрінің үлгі қалқа "
+"атрибутынан дұрыс шектеп шығарлмаған."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1539
+#, qt-format
+msgid "%1 has attribute wildcard but its base type %2 has not."
+msgstr ""
+"%1 дегеннің үлгі қалқа атрибуты бар, бірақ ол негіздеген %2 түрінің ондайы "
+"жоқ."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1565
+#, qt-format
+msgid ""
+"Union of attribute wildcard of type %1 and attribute wildcard of its base "
+"type %2 is not expressible."
+msgstr ""
+"Түрі %1 үлгі қалқа атрибутымен ол негіздеген %2 үлгі қалқа атрибут түрінің "
+"бірлестігі өрнектеуге келмейді."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1613
+#, qt-format
+msgid ""
+"Enumeration facet contains invalid content: {%1} is not a value of type %2."
+msgstr "Тізбектеуінің шегі {%1} дұрыс емес, ол түрі %2 мән болу керек."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1623
+#, qt-format
+msgid "Namespace prefix of qualified name %1 is not defined."
+msgstr "Беріліп жатқан %1 атауының атау кеңістігінің префиксі анықталмаған."
+
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1674
+#: xmlpatterns/schema/qxsdschemaresolver.cpp:1692
+#, qt-format
+msgid ""
+"%1 element %2 is not a valid restriction of the %3 element it redefines: %4."
+msgstr ""
+"%2 дегеннің %1 элементі %3 элементінің дұрыс шектеуі емес, ол %4 дегенді "
+"жаңадан анықтайды."
+
 #: xmlpatterns/schema/qxsdtypechecker.cpp:235
 #: xmlpatterns/schema/qxsdtypechecker.cpp:242
 #: xmlpatterns/schema/qxsdtypechecker.cpp:263
@@ -9985,189 +10168,6 @@ msgstr "ID '%1' мәні қайталанған."
 #, qt-format
 msgid "'%1' attribute contains invalid QName content: %2."
 msgstr "'%1' атрибутында дұрыс емес QName мазмұны: %2."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:354
-#, qt-format
-msgid "%1 references unknown %2 or %3 element %4."
-msgstr "%1 деген беймәлм %2 не %3 %4 элементіне сілтейді."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:364
-#, qt-format
-msgid "%1 references identity constraint %2 that is no %3 or %4 element."
-msgstr ""
-"%1 деген %2 профиль шектеуіне сілтейді, бірақ онда %3 не %4 элементі жоқ"
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:374
-#, qt-format
-msgid ""
-"%1 has a different number of fields from the identity constraint %2 that it "
-"references."
-msgstr ""
-"%1 дегендегі өрістер саны, ол сілтеген %2 профиль шектеуіндегінен басқа."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:397
-#, qt-format
-msgid "Base type %1 of %2 element cannot be resolved."
-msgstr "%2 элементі негіздеген %1 түрі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:481
-#, qt-format
-msgid "Item type %1 of %2 element cannot be resolved."
-msgstr "%2 элементтің %1 аталымының түрі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:512
-#, qt-format
-msgid "Member type %1 of %2 element cannot be resolved."
-msgstr "%2 элементтің %1 мүшесінің түрі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:540
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:955
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:985
-#, qt-format
-msgid "Type %1 of %2 element cannot be resolved."
-msgstr "%2 элементтің %1 түрі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:562
-#, qt-format
-msgid "Base type %1 of complex type cannot be resolved."
-msgstr "Күрделі түрі негіздеген %1 түрі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:571
-#, qt-format
-msgid "%1 cannot have complex base type that has a %2."
-msgstr "%1 деген түрі %2 дегені бар күрделі түрді негіздей алмайды."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:857
-#, qt-format
-msgid ""
-"Content model of complex type %1 contains %2 element, so it cannot be "
-"derived by extension from a non-empty type."
-msgstr ""
-"%1 күрделі түрінің мазмұны моделінде %2 деген элемент бар, сонымен ол "
-"кеңейту арқылы бос емес түрінен туындалмайды."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:863
-#, qt-format
-msgid ""
-"Complex type %1 cannot be derived by extension from %2 as the latter "
-"contains %3 element in its content model."
-msgstr ""
-"%1 күрделі түрі кеңейту арқылы %2 түрінен туындалмайды, өйткені екіншісінің "
-"мазмұны моделінде %3 элементі бар."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:964
-#, qt-format
-msgid "Type of %1 element must be a simple type, %2 is not."
-msgstr "%1 элементінің түрі жәй болу тиіс, бірақ %2 жәй емес."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1026
-#, qt-format
-msgid "Substitution group %1 of %2 element cannot be resolved."
-msgstr "%2 элементтің %1 ауыстыру тобы айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1035
-#, qt-format
-msgid "Substitution group %1 has circular definition."
-msgstr "%1 ауыстру тобының анықтамасында тұйықтық бар."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1155
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1162
-#, qt-format
-msgid "Duplicated element names %1 in %2 element."
-msgstr "%2 элементіндегі %1 деген элемент атауы қайталанған."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1191
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1243
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1314
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1342
-#, qt-format
-msgid "Reference %1 of %2 element cannot be resolved."
-msgstr "%2 элементтің %1 сілтемесі айқындалмады. "
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1204
-#, qt-format
-msgid "Circular group reference for %1."
-msgstr "%1 дегенге циклді топ сілтеме."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1220
-#, qt-format
-msgid "%1 element is not allowed in this scope"
-msgstr " %1 деген элемент бұл жерде рұқсат естілмеген."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1225
-#, qt-format
-msgid "%1 element cannot have %2 attribute with value other than %3."
-msgstr "%1 элементінде %2 атрибутының мәні %3 ғана болу тиіс."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1233
-#, qt-format
-msgid "%1 element cannot have %2 attribute with value other than %3 or %4."
-msgstr "%1 элементінде %2 атрибутының мәні %3 не %4 ғана болу тиіс."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1324
-#, qt-format
-msgid ""
-"%1 or %2 attribute of reference %3 does not match with the attribute "
-"declaration %4."
-msgstr ""
-"%3 сілтеменің %1 не %2 аттрибуты %4 атрибут мәлімдемесіне сәйкес келмейді."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1349
-#, qt-format
-msgid "Attribute group %1 has circular reference."
-msgstr "%1 атрибут тобында циклді сілтеме бар."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1480
-#, qt-format
-msgid "%1 attribute in %2 must have %3 use like in base type %4."
-msgstr ""
-"%2 денгеннің %1 атрибуты, ол негіздеген %4 түріндегідей %3 дегенді пайдалану "
-"керек."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1532
-#, qt-format
-msgid ""
-"Attribute wildcard of %1 is not a valid restriction of attribute wildcard of "
-"base type %2."
-msgstr ""
-"%1 дегеннің үлгі қалқа атрибуты ол негіздеген %2 түрінің үлгі қалқа "
-"атрибутынан дұрыс шектеп шығарлмаған."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1539
-#, qt-format
-msgid "%1 has attribute wildcard but its base type %2 has not."
-msgstr ""
-"%1 дегеннің үлгі қалқа атрибуты бар, бірақ ол негіздеген %2 түрінің ондайы "
-"жоқ."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1565
-#, qt-format
-msgid ""
-"Union of attribute wildcard of type %1 and attribute wildcard of its base "
-"type %2 is not expressible."
-msgstr ""
-"Түрі %1 үлгі қалқа атрибутымен ол негіздеген %2 үлгі қалқа атрибут түрінің "
-"бірлестігі өрнектеуге келмейді."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1613
-#, qt-format
-msgid ""
-"Enumeration facet contains invalid content: {%1} is not a value of type %2."
-msgstr "Тізбектеуінің шегі {%1} дұрыс емес, ол түрі %2 мән болу керек."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1623
-#, qt-format
-msgid "Namespace prefix of qualified name %1 is not defined."
-msgstr "Беріліп жатқан %1 атауының атау кеңістігінің префиксі анықталмаған."
-
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1674
-#: xmlpatterns/schema/qxsdschemaresolver.cpp:1692
-#, qt-format
-msgid ""
-"%1 element %2 is not a valid restriction of the %3 element it redefines: %4."
-msgstr ""
-"%2 дегеннің %1 элементі %3 элементінің дұрыс шектеуі емес, ол %4 дегенді "
-"жаңадан анықтайды."
 
 #: xmlpatterns/type/qcardinality.cpp:55
 msgid "empty"

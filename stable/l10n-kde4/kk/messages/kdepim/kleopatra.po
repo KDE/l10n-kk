@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-27 04:28+0200\n"
+"POT-Creation-Date: 2012-08-07 21:45+0200\n"
 "PO-Revision-Date: 2012-07-31 12:07+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -163,6 +163,21 @@ msgctxt "@title:window"
 msgid "Add User-ID Succeeded"
 msgstr "Пайдаланушы ID-ін қосылуы сәтті өтті"
 
+#: commands/certifycertificatecommand.cpp:182
+msgctxt "@info"
+msgid ""
+"To certify other certificates, you first need to create an OpenPGP "
+"certificate for yourself. Choose <interface>File->New Certificate...</"
+"interface> to create one."
+msgstr ""
+"Басқа куәліктерді куәландыру үшін алдымен өзіңізге OpenPGP куәлігін жасап "
+"алу керек. Оны істтеу үшін <interface>Файл->Жаңа куәлік...</interface> "
+"дегенге барыңыз."
+
+#: commands/certifycertificatecommand.cpp:183
+msgid "Certification Not Possible"
+msgstr "Куәландыру мүмкін емес"
+
 #: commands/changeexpirycommand.cpp:222
 #, kde-format
 msgid ""
@@ -204,6 +219,27 @@ msgstr "Иесінің сенімділік деңгей сәтті өзгерт
 #: commands/changeownertrustcommand.cpp:230
 msgid "Owner Trust Change Succeeded"
 msgstr "Иесінің сенімділік деңгейін өзгерту сәтті өтті"
+
+#: commands/changepassphrasecommand.cpp:185
+#, kde-format
+msgid ""
+"<p>An error occurred while trying to change the passphrase for <b>%1</b>:</"
+"p><p>%2</p>"
+msgstr ""
+"<p><b>%1</b> дегеннің паролін озгерту кезінде бір қате орын алды:</p> <p>%2</"
+"p>"
+
+#: commands/changepassphrasecommand.cpp:189
+msgid "Passphrase Change Error"
+msgstr "Паролін өзгерту қатесі"
+
+#: commands/changepassphrasecommand.cpp:193
+msgid "Passphrase changed successfully."
+msgstr "Паролі сәтті өзгертілді."
+
+#: commands/changepassphrasecommand.cpp:194
+msgid "Passphrase Change Succeeded"
+msgstr "Паролін өзгерту сәтті өтті"
 
 #: commands/checksumcreatefilescommand.cpp:154
 #: commands/checksumverifyfilescommand.cpp:154
@@ -280,6 +316,82 @@ msgstr "Файлдардың шифрын шешу/тексеру қатесі"
 #: commands/decryptverifyfilescommand.cpp:175
 msgid "Select One or More Files to Decrypt and/or Verify"
 msgstr "Шифрын шешу не/және тексеруге бір не бірнеше файл таңдаңыз"
+
+#: commands/deletecertificatescommand.cpp:98
+msgctxt "@title:window"
+msgid "Delete Certificates"
+msgstr "Куәліктерді өшіру"
+
+#: commands/deletecertificatescommand.cpp:163
+msgid ""
+"Neither the OpenPGP nor the CMS backends support certificate deletion.\n"
+"Check your installation."
+msgstr ""
+"OpenPGP тетігіңіз де, CMS тетігіңіз де куәлікті өшіруді қолдамайды.\n"
+"Орнатылымын тексеріңіз."
+
+#: commands/deletecertificatescommand.cpp:167
+msgid ""
+"The OpenPGP backend does not support certificate deletion.\n"
+"Check your installation.\n"
+"Only the selected CMS certificates will be deleted."
+msgstr ""
+"OpenPGP тетігіңіз куәлікті өшіруді қолдамайды.\n"
+"Орнатылымын тексеріңіз. Тек таңдалған CMS куәліктері ғана өшіріледі."
+
+#: commands/deletecertificatescommand.cpp:174
+#: commands/deletecertificatescommand.cpp:178
+msgid ""
+"The OpenPGP backend does not support certificate deletion.\n"
+"Check your installation."
+msgstr ""
+"OpenPGP тетігіңіз куәлікті өшіруді қолдамайды.\n"
+"Орнатылымын тексеріңіз."
+
+#: commands/deletecertificatescommand.cpp:184
+msgid ""
+"The CMS backend does not support certificate deletion.\n"
+"Check your installation.\n"
+"Only the selected OpenPGP certificates will be deleted."
+msgstr ""
+"CMS тетігіңіз куәлікті өшіруді қолдамайды.\n"
+"Орнатылымын тексеріңіз. Тек таңдалған OpenPGP куәліктері ғана өшіріледі."
+
+#: commands/deletecertificatescommand.cpp:200
+#: commands/deletecertificatescommand.cpp:213
+msgid ""
+"The CMS backend does not support certificate deletion.\n"
+"Check your installation."
+msgstr ""
+"CMS тетігіңіз куәлікті өшіруді қолдамайды.\n"
+"Орнатылымын тексеріңіз."
+
+#: commands/deletecertificatescommand.cpp:280
+#: commands/deletecertificatescommand.cpp:349
+msgid "Certificate Deletion Failed"
+msgstr "Куәлікті өшіру жаңылысы"
+
+#: commands/deletecertificatescommand.cpp:281
+msgid "Certificate Deletion Problem"
+msgstr "Куәлікті өшіру мәселесі"
+
+#: commands/deletecertificatescommand.cpp:340
+#, kde-format
+msgid "OpenPGP backend: %1"
+msgstr "OpenPGP тетігі: %1"
+
+#: commands/deletecertificatescommand.cpp:343
+#, kde-format
+msgid "CMS backend: %1"
+msgstr "CMS тетігі: %1"
+
+#: commands/deletecertificatescommand.cpp:345
+#, kde-format
+msgid ""
+"<qt><p>An error occurred while trying to delete the certificate:</p><p><b>"
+"%1</b></p></qt>"
+msgstr ""
+"<qt><p>Куәліктерді өшіру кезінде қате пайда болды:</p><p><b>%1</b></p></qt>"
 
 #: commands/dumpcertificatecommand.cpp:90 commands/dumpcrlcachecommand.cpp:87
 msgctxt "@action:button Update the log text widget"
@@ -494,6 +606,147 @@ msgstr "Алмасу буферіндегі куәліктің түрі анық
 msgid "Clipboard"
 msgstr "Алмасу буфері"
 
+#: commands/importcertificatescommand.cpp:207
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Imported Certificates from %1"
+msgstr "%1 дегеннен куәліктер импортталды"
+
+#: commands/importcertificatescommand.cpp:211
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Imported certificates from these sources:<br/>%1"
+msgstr "Келесі жерлерден куәліктер импортталды:<br/>%1"
+
+#: commands/importcertificatescommand.cpp:218
+msgctxt "@title:tab"
+msgid "Imported Certificates"
+msgstr "Импортталған сертификаттар"
+
+#: commands/importcertificatescommand.cpp:231
+#, kde-format
+msgid "<tr><td align=\"right\">%1</td><td>%2</td></tr>"
+msgstr "<tr><td align=\"right\">%1</td><td>%2</td></tr>"
+
+#: commands/importcertificatescommand.cpp:232
+#, kde-format
+msgid "<tr><td align=\"right\"><b>%1</b></td><td>%2</td></tr>"
+msgstr "<tr><td align=\"right\"><b>%1</b></td><td>%2</td></tr>"
+
+#: commands/importcertificatescommand.cpp:233
+#, kde-format
+msgid "<tr><th colspan=\"2\" align=\"center\">%1</th></tr>"
+msgstr "<tr><th colspan=\"2\" align=\"center\">%1</th></tr>"
+
+#: commands/importcertificatescommand.cpp:240
+msgid "Total number processed:"
+msgstr "Қарастырылғандар саны:"
+
+#: commands/importcertificatescommand.cpp:242
+msgid "Imported:"
+msgstr "Импортталған:"
+
+#: commands/importcertificatescommand.cpp:245
+msgid "New signatures:"
+msgstr "Жаңа қолтаңбалар:"
+
+#: commands/importcertificatescommand.cpp:248
+msgid "New user IDs:"
+msgstr "Жаңа пайдаланушы ID-лері:"
+
+#: commands/importcertificatescommand.cpp:251
+msgid "Certificates without user IDs:"
+msgstr "Пайдаланушы ID-лерсіз куәліктер:"
+
+#: commands/importcertificatescommand.cpp:254
+msgid "New subkeys:"
+msgstr "Жаңа ішкі кілттер:"
+
+#: commands/importcertificatescommand.cpp:257
+msgid "Newly revoked:"
+msgstr "Жаңа күші жойылған:"
+
+#: commands/importcertificatescommand.cpp:260
+msgid "Not imported:"
+msgstr "Импортталмаған:"
+
+#: commands/importcertificatescommand.cpp:263
+msgid "Unchanged:"
+msgstr "Өзгертілмеген:"
+
+#: commands/importcertificatescommand.cpp:266
+msgid "Secret keys processed:"
+msgstr "Қарастырылған құпия кілттер:"
+
+#: commands/importcertificatescommand.cpp:269
+msgid "Secret keys imported:"
+msgstr "Импортталған құпия кілттер:"
+
+#: commands/importcertificatescommand.cpp:273
+msgid "Secret keys <em>not</em> imported:"
+msgstr "Импорттал<em>ма</em>ған құпия кілттер:"
+
+#: commands/importcertificatescommand.cpp:276
+msgid "Secret keys unchanged:"
+msgstr "Өзгертілмеген құпия кілттер:"
+
+#: commands/importcertificatescommand.cpp:289
+msgid "No imports (should not happen, please report a bug)."
+msgstr "Ештеңе импортталмаған (болуға тиіс емес, қате туралы хабарлаңыз)."
+
+#: commands/importcertificatescommand.cpp:293
+#: commands/importcertificatescommand.cpp:298
+#, kde-format
+msgid ""
+"<qt><p>Detailed results of certificate import:</p><table width=\"100%\">%1</"
+"table></qt>"
+msgstr ""
+"<qt><p>Куәліктің импорттауының толық нәтижесі:</p><table width=\"100%\">%1</"
+"table></qt>"
+
+#: commands/importcertificatescommand.cpp:295
+#, kde-format
+msgid ""
+"<qt><p>Detailed results of importing %1:</p><table width=\"100%\">%2</"
+"table></qt>"
+msgstr ""
+"<qt><p>%1 дегенді импорттаудың толық нәтижесі:</p><table width=\"100%\">%2</"
+"table></qt>"
+
+#: commands/importcertificatescommand.cpp:299
+msgid "Totals"
+msgstr "Қортындылары"
+
+#: commands/importcertificatescommand.cpp:305
+#: commands/importcertificatescommand.cpp:313
+msgid "Certificate Import Result"
+msgstr "Куәлікті импорттау нәтижесі"
+
+#: commands/importcertificatescommand.cpp:320
+#, kde-format
+msgid ""
+"<qt><p>An error occurred while trying to import the certificate:</p><p><b>"
+"%1</b></p></qt>"
+msgstr ""
+"<qt><p>Куәлікті импорттау кезінде қате пайда болды:</p><p><b>%1</b></p></qt>"
+
+#: commands/importcertificatescommand.cpp:324
+#, kde-format
+msgid ""
+"<qt><p>An error occurred while trying to import the certificate %1:</p><p><b>"
+"%2</b></p></qt>"
+msgstr ""
+"<qt><p>%1 куәлігін импорттау кезінде қате пайда болды:</p><p><b>%2</b></p></"
+"qt>"
+
+#: commands/importcertificatescommand.cpp:399
+#: commands/importcertificatescommand.cpp:436
+#, kde-format
+msgid ""
+"The type of this certificate (%1) is not supported by this Kleopatra "
+"installation."
+msgstr "Орнатыған Kleopatra нұсқасы бұл (%1) куәліктің түрін танымайды."
+
 #: commands/importcrlcommand.cpp:70
 msgid ""
 "Certificate Revocation Lists, DER encoded (*.crl *.arl *-crl.der *-arl.der)"
@@ -560,6 +813,88 @@ msgstr ""
 "<para>Смарт-картаны зерттеу әрекетін бастаған GPG не GpgSM процесы  күтпеген "
 "қатеге тап болып бітпей аяқталды.</para><para>Егжей- тегжейін <icode>%1</"
 "icode> дегеннің шығысынан қараңыз.</para> "
+
+#: commands/lookupcertificatescommand.cpp:210
+msgid ""
+"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
+"keyservers expect different ways to search for these. Some require a \"0x\" "
+"prefix, while others require there be no such prefix.</p><p>If your search "
+"does not yield any results, try removing the 0x prefix from your search.</p>"
+msgstr ""
+"<p>Бақылау тізбегін не кілт идентификаторын іздеп жатқан сияқтысыз. </"
+"p><p>Түрлі серверлер алуан іздеу жолын қолданады. Кейбірлері \"0x\" "
+"префиксін талап етеді, кейбірі етпейді.</p><p>Егерде іздегеніңіз нәтиже "
+"бермесе, онда 0x префиксін алып тастап іздеңіз.</p>"
+
+#: commands/lookupcertificatescommand.cpp:214
+msgid ""
+"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
+"keyservers expect different ways to search for these. Some require a \"0x\" "
+"prefix, while others require there be no such prefix.</p><p>If your search "
+"does not yield any results, try adding the 0x prefix to your search.</p>"
+msgstr ""
+"<p>Бақылау тізбегін не кілт идентификаторын іздеп жатқан сияқтысыз. </"
+"p><p>Түрлі серверлер алуан іздеу жолын қолданады. Кейбірлері \"0x\" "
+"префиксін талап етеді, кейбірі етпейді.</p><p>Егерде іздегеніңіз нәтиже "
+"бермесе, онда 0x префиксін қосып қойып іздеңіз.</p>"
+
+#: commands/lookupcertificatescommand.cpp:218
+msgid "Hex-String Search"
+msgstr "Оналтылық санды іздеу"
+
+#: commands/lookupcertificatescommand.cpp:291
+#: commands/lookupcertificatescommand.cpp:296
+#, kde-format
+msgctxt "@title %1:\"OpenPGP\" or \"CMS\""
+msgid "%1 Certificate Server"
+msgstr "%1 куәлік сервері"
+
+#: commands/lookupcertificatescommand.cpp:324
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Failed to search on certificate server. The error returned was:\n"
+"%1"
+msgstr ""
+"Куәлік серверінде іздеу жңылысы. Қайтарылған қате: \n"
+"%1"
+
+#: commands/lookupcertificatescommand.cpp:332
+msgctxt "@info"
+msgid ""
+"<para>The query result has been truncated.</para><para>Either the local or a "
+"remote limit on the maximum number of returned hits has been exceeded.</"
+"para><para>You can try to increase the local limit in the configuration "
+"dialog, but if one of the configured servers is the limiting factor, you "
+"have to refine your search.</para>"
+msgstr ""
+"<para>Сұраныс нәтижелері келтеленген.</para><para>Себебі - жергілікті не "
+"қашықтағы қайтарылатын нәтижелер саны шегіне жеткен.</para><para>Баптау "
+"диалогында жергілікті шегін үлкейтіп көріңіз, бірақ кедергі - серверлердің "
+"шегі болса, сұраныс шартын тарлыту керек.</para>"
+
+#: commands/lookupcertificatescommand.cpp:340
+msgctxt "@title"
+msgid "Result Truncated"
+msgstr "Келтеленген нәтиже"
+
+#: commands/lookupcertificatescommand.cpp:369
+msgctxt "@info"
+msgid ""
+"<para>You do not have any directory servers configured.</para><para>You need "
+"to configure at least one directory server to search on one.</para><para>You "
+"can configure directory servers here: <interface>Settings->Configure "
+"Kleopatra</interface>.</para>"
+msgstr ""
+"<para>Бірдебір каталог сервері бапталмаған.</para><para>Іздеуді откізу үшін "
+"кемінде бір каталог серверді баптап қою керек.</para> <para>Оны "
+"<interface>Баптау->Kleopatra баптауы</interface> дегенге барып істеуге "
+"болады.</para>"
+
+#: commands/lookupcertificatescommand.cpp:374
+msgctxt "@title"
+msgid "No Directory Servers Configured"
+msgstr "Бапталған каталог сервері жоқ"
 
 #: commands/refreshopenpgpcertscommand.cpp:74
 msgctxt "@info"
@@ -718,341 +1053,6 @@ msgstr "Файлды қолтаңбалау/шифрлау қатесі"
 #: commands/signencryptfilescommand.cpp:245
 msgid "Select One or More Files to Sign and/or Encrypt"
 msgstr "Қолтаңбалау не/және шифрлауға бір не бірнеше файл таңдаңыз "
-
-#: commands/changepassphrasecommand.cpp:185
-#, kde-format
-msgid ""
-"<p>An error occurred while trying to change the passphrase for <b>%1</b>:</"
-"p><p>%2</p>"
-msgstr ""
-"<p><b>%1</b> дегеннің паролін озгерту кезінде бір қате орын алды:</p> <p>%2</"
-"p>"
-
-#: commands/changepassphrasecommand.cpp:189
-msgid "Passphrase Change Error"
-msgstr "Паролін өзгерту қатесі"
-
-#: commands/changepassphrasecommand.cpp:193
-msgid "Passphrase changed successfully."
-msgstr "Паролі сәтті өзгертілді."
-
-#: commands/changepassphrasecommand.cpp:194
-msgid "Passphrase Change Succeeded"
-msgstr "Паролін өзгерту сәтті өтті"
-
-#: commands/certifycertificatecommand.cpp:182
-msgctxt "@info"
-msgid ""
-"To certify other certificates, you first need to create an OpenPGP "
-"certificate for yourself. Choose <interface>File->New Certificate...</"
-"interface> to create one."
-msgstr ""
-"Басқа куәліктерді куәландыру үшін алдымен өзіңізге OpenPGP куәлігін жасап "
-"алу керек. Оны істтеу үшін <interface>Файл->Жаңа куәлік...</interface> "
-"дегенге барыңыз."
-
-#: commands/certifycertificatecommand.cpp:183
-msgid "Certification Not Possible"
-msgstr "Куәландыру мүмкін емес"
-
-#: commands/deletecertificatescommand.cpp:98
-msgctxt "@title:window"
-msgid "Delete Certificates"
-msgstr "Куәліктерді өшіру"
-
-#: commands/deletecertificatescommand.cpp:163
-msgid ""
-"Neither the OpenPGP nor the CMS backends support certificate deletion.\n"
-"Check your installation."
-msgstr ""
-"OpenPGP тетігіңіз де, CMS тетігіңіз де куәлікті өшіруді қолдамайды.\n"
-"Орнатылымын тексеріңіз."
-
-#: commands/deletecertificatescommand.cpp:167
-msgid ""
-"The OpenPGP backend does not support certificate deletion.\n"
-"Check your installation.\n"
-"Only the selected CMS certificates will be deleted."
-msgstr ""
-"OpenPGP тетігіңіз куәлікті өшіруді қолдамайды.\n"
-"Орнатылымын тексеріңіз. Тек таңдалған CMS куәліктері ғана өшіріледі."
-
-#: commands/deletecertificatescommand.cpp:174
-#: commands/deletecertificatescommand.cpp:178
-msgid ""
-"The OpenPGP backend does not support certificate deletion.\n"
-"Check your installation."
-msgstr ""
-"OpenPGP тетігіңіз куәлікті өшіруді қолдамайды.\n"
-"Орнатылымын тексеріңіз."
-
-#: commands/deletecertificatescommand.cpp:184
-msgid ""
-"The CMS backend does not support certificate deletion.\n"
-"Check your installation.\n"
-"Only the selected OpenPGP certificates will be deleted."
-msgstr ""
-"CMS тетігіңіз куәлікті өшіруді қолдамайды.\n"
-"Орнатылымын тексеріңіз. Тек таңдалған OpenPGP куәліктері ғана өшіріледі."
-
-#: commands/deletecertificatescommand.cpp:200
-#: commands/deletecertificatescommand.cpp:213
-msgid ""
-"The CMS backend does not support certificate deletion.\n"
-"Check your installation."
-msgstr ""
-"CMS тетігіңіз куәлікті өшіруді қолдамайды.\n"
-"Орнатылымын тексеріңіз."
-
-#: commands/deletecertificatescommand.cpp:280
-#: commands/deletecertificatescommand.cpp:349
-msgid "Certificate Deletion Failed"
-msgstr "Куәлікті өшіру жаңылысы"
-
-#: commands/deletecertificatescommand.cpp:281
-msgid "Certificate Deletion Problem"
-msgstr "Куәлікті өшіру мәселесі"
-
-#: commands/deletecertificatescommand.cpp:340
-#, kde-format
-msgid "OpenPGP backend: %1"
-msgstr "OpenPGP тетігі: %1"
-
-#: commands/deletecertificatescommand.cpp:343
-#, kde-format
-msgid "CMS backend: %1"
-msgstr "CMS тетігі: %1"
-
-#: commands/deletecertificatescommand.cpp:345
-#, kde-format
-msgid ""
-"<qt><p>An error occurred while trying to delete the certificate:</p><p><b>"
-"%1</b></p></qt>"
-msgstr ""
-"<qt><p>Куәліктерді өшіру кезінде қате пайда болды:</p><p><b>%1</b></p></qt>"
-
-#: commands/importcertificatescommand.cpp:207
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Imported Certificates from %1"
-msgstr "%1 дегеннен куәліктер импортталды"
-
-#: commands/importcertificatescommand.cpp:211
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Imported certificates from these sources:<br/>%1"
-msgstr "Келесі жерлерден куәліктер импортталды:<br/>%1"
-
-#: commands/importcertificatescommand.cpp:218
-msgctxt "@title:tab"
-msgid "Imported Certificates"
-msgstr "Импортталған сертификаттар"
-
-#: commands/importcertificatescommand.cpp:231
-#, kde-format
-msgid "<tr><td align=\"right\">%1</td><td>%2</td></tr>"
-msgstr "<tr><td align=\"right\">%1</td><td>%2</td></tr>"
-
-#: commands/importcertificatescommand.cpp:232
-#, kde-format
-msgid "<tr><td align=\"right\"><b>%1</b></td><td>%2</td></tr>"
-msgstr "<tr><td align=\"right\"><b>%1</b></td><td>%2</td></tr>"
-
-#: commands/importcertificatescommand.cpp:233
-#, kde-format
-msgid "<tr><th colspan=\"2\" align=\"center\">%1</th></tr>"
-msgstr "<tr><th colspan=\"2\" align=\"center\">%1</th></tr>"
-
-#: commands/importcertificatescommand.cpp:240
-msgid "Total number processed:"
-msgstr "Қарастырылғандар саны:"
-
-#: commands/importcertificatescommand.cpp:242
-msgid "Imported:"
-msgstr "Импортталған:"
-
-#: commands/importcertificatescommand.cpp:245
-msgid "New signatures:"
-msgstr "Жаңа қолтаңбалар:"
-
-#: commands/importcertificatescommand.cpp:248
-msgid "New user IDs:"
-msgstr "Жаңа пайдаланушы ID-лері:"
-
-#: commands/importcertificatescommand.cpp:251
-msgid "Certificates without user IDs:"
-msgstr "Пайдаланушы ID-лерсіз куәліктер:"
-
-#: commands/importcertificatescommand.cpp:254
-msgid "New subkeys:"
-msgstr "Жаңа ішкі кілттер:"
-
-#: commands/importcertificatescommand.cpp:257
-msgid "Newly revoked:"
-msgstr "Жаңа күші жойылған:"
-
-#: commands/importcertificatescommand.cpp:260
-msgid "Not imported:"
-msgstr "Импортталмаған:"
-
-#: commands/importcertificatescommand.cpp:263
-msgid "Unchanged:"
-msgstr "Өзгертілмеген:"
-
-#: commands/importcertificatescommand.cpp:266
-msgid "Secret keys processed:"
-msgstr "Қарастырылған құпия кілттер:"
-
-#: commands/importcertificatescommand.cpp:269
-msgid "Secret keys imported:"
-msgstr "Импортталған құпия кілттер:"
-
-#: commands/importcertificatescommand.cpp:273
-msgid "Secret keys <em>not</em> imported:"
-msgstr "Импорттал<em>ма</em>ған құпия кілттер:"
-
-#: commands/importcertificatescommand.cpp:276
-msgid "Secret keys unchanged:"
-msgstr "Өзгертілмеген құпия кілттер:"
-
-#: commands/importcertificatescommand.cpp:289
-msgid "No imports (should not happen, please report a bug)."
-msgstr "Ештеңе импортталмаған (болуға тиіс емес, қате туралы хабарлаңыз)."
-
-#: commands/importcertificatescommand.cpp:293
-#: commands/importcertificatescommand.cpp:298
-#, kde-format
-msgid ""
-"<qt><p>Detailed results of certificate import:</p><table width=\"100%\">%1</"
-"table></qt>"
-msgstr ""
-"<qt><p>Куәліктің импорттауының толық нәтижесі:</p><table width=\"100%\">%1</"
-"table></qt>"
-
-#: commands/importcertificatescommand.cpp:295
-#, kde-format
-msgid ""
-"<qt><p>Detailed results of importing %1:</p><table width=\"100%\">%2</"
-"table></qt>"
-msgstr ""
-"<qt><p>%1 дегенді импорттаудың толық нәтижесі:</p><table width=\"100%\">%2</"
-"table></qt>"
-
-#: commands/importcertificatescommand.cpp:299
-msgid "Totals"
-msgstr "Қортындылары"
-
-#: commands/importcertificatescommand.cpp:305
-#: commands/importcertificatescommand.cpp:313
-msgid "Certificate Import Result"
-msgstr "Куәлікті импорттау нәтижесі"
-
-#: commands/importcertificatescommand.cpp:320
-#, kde-format
-msgid ""
-"<qt><p>An error occurred while trying to import the certificate:</p><p><b>"
-"%1</b></p></qt>"
-msgstr ""
-"<qt><p>Куәлікті импорттау кезінде қате пайда болды:</p><p><b>%1</b></p></qt>"
-
-#: commands/importcertificatescommand.cpp:324
-#, kde-format
-msgid ""
-"<qt><p>An error occurred while trying to import the certificate %1:</p><p><b>"
-"%2</b></p></qt>"
-msgstr ""
-"<qt><p>%1 куәлігін импорттау кезінде қате пайда болды:</p><p><b>%2</b></p></"
-"qt>"
-
-#: commands/importcertificatescommand.cpp:399
-#: commands/importcertificatescommand.cpp:436
-#, kde-format
-msgid ""
-"The type of this certificate (%1) is not supported by this Kleopatra "
-"installation."
-msgstr "Орнатыған Kleopatra нұсқасы бұл (%1) куәліктің түрін танымайды."
-
-#: commands/lookupcertificatescommand.cpp:210
-msgid ""
-"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
-"keyservers expect different ways to search for these. Some require a \"0x\" "
-"prefix, while others require there be no such prefix.</p><p>If your search "
-"does not yield any results, try removing the 0x prefix from your search.</p>"
-msgstr ""
-"<p>Бақылау тізбегін не кілт идентификаторын іздеп жатқан сияқтысыз. </"
-"p><p>Түрлі серверлер алуан іздеу жолын қолданады. Кейбірлері \"0x\" "
-"префиксін талап етеді, кейбірі етпейді.</p><p>Егерде іздегеніңіз нәтиже "
-"бермесе, онда 0x префиксін алып тастап іздеңіз.</p>"
-
-#: commands/lookupcertificatescommand.cpp:214
-msgid ""
-"<p>You seem to be searching for a fingerprint or a key-id.</p><p>Different "
-"keyservers expect different ways to search for these. Some require a \"0x\" "
-"prefix, while others require there be no such prefix.</p><p>If your search "
-"does not yield any results, try adding the 0x prefix to your search.</p>"
-msgstr ""
-"<p>Бақылау тізбегін не кілт идентификаторын іздеп жатқан сияқтысыз. </"
-"p><p>Түрлі серверлер алуан іздеу жолын қолданады. Кейбірлері \"0x\" "
-"префиксін талап етеді, кейбірі етпейді.</p><p>Егерде іздегеніңіз нәтиже "
-"бермесе, онда 0x префиксін қосып қойып іздеңіз.</p>"
-
-#: commands/lookupcertificatescommand.cpp:218
-msgid "Hex-String Search"
-msgstr "Оналтылық санды іздеу"
-
-#: commands/lookupcertificatescommand.cpp:291
-#: commands/lookupcertificatescommand.cpp:296
-#, kde-format
-msgctxt "@title %1:\"OpenPGP\" or \"CMS\""
-msgid "%1 Certificate Server"
-msgstr "%1 куәлік сервері"
-
-#: commands/lookupcertificatescommand.cpp:324
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Failed to search on certificate server. The error returned was:\n"
-"%1"
-msgstr ""
-"Куәлік серверінде іздеу жңылысы. Қайтарылған қате: \n"
-"%1"
-
-#: commands/lookupcertificatescommand.cpp:332
-msgctxt "@info"
-msgid ""
-"<para>The query result has been truncated.</para><para>Either the local or a "
-"remote limit on the maximum number of returned hits has been exceeded.</"
-"para><para>You can try to increase the local limit in the configuration "
-"dialog, but if one of the configured servers is the limiting factor, you "
-"have to refine your search.</para>"
-msgstr ""
-"<para>Сұраныс нәтижелері келтеленген.</para><para>Себебі - жергілікті не "
-"қашықтағы қайтарылатын нәтижелер саны шегіне жеткен.</para><para>Баптау "
-"диалогында жергілікті шегін үлкейтіп көріңіз, бірақ кедергі - серверлердің "
-"шегі болса, сұраныс шартын тарлыту керек.</para>"
-
-#: commands/lookupcertificatescommand.cpp:340
-msgctxt "@title"
-msgid "Result Truncated"
-msgstr "Келтеленген нәтиже"
-
-#: commands/lookupcertificatescommand.cpp:369
-msgctxt "@info"
-msgid ""
-"<para>You do not have any directory servers configured.</para><para>You need "
-"to configure at least one directory server to search on one.</para><para>You "
-"can configure directory servers here: <interface>Settings->Configure "
-"Kleopatra</interface>.</para>"
-msgstr ""
-"<para>Бірдебір каталог сервері бапталмаған.</para><para>Іздеуді откізу үшін "
-"кемінде бір каталог серверді баптап қою керек.</para> <para>Оны "
-"<interface>Баптау->Kleopatra баптауы</interface> дегенге барып істеуге "
-"болады.</para>"
-
-#: commands/lookupcertificatescommand.cpp:374
-msgctxt "@title"
-msgid "No Directory Servers Configured"
-msgstr "Бапталған каталог сервері жоқ"
 
 #: commands/exportcertificatecommand.cpp:212
 msgid "Export Certificates"
@@ -1228,6 +1228,308 @@ msgstr "прокси жоқ"
 msgid "(Current system setting: %1)"
 msgstr "(жүйенің қазіргісі: %1)"
 
+#: crypto/decryptverifytask.cpp:180
+msgid "Error: Signature not verified"
+msgstr "Қате: Қолтаңба тексерілмеді"
+
+#: crypto/decryptverifytask.cpp:182
+msgid "Good signature"
+msgstr "Жарамды қолтаңба"
+
+#: crypto/decryptverifytask.cpp:184
+msgid "Bad signature"
+msgstr "Жарамсыз қолтаңба"
+
+#: crypto/decryptverifytask.cpp:186
+msgid "Signing certificate revoked"
+msgstr "Қолтаңбалау куәлігінің күші жойылған екен"
+
+#: crypto/decryptverifytask.cpp:188
+msgid "Signing certificate expired"
+msgstr "Қолтаңбалау куәлігі ескірген екен"
+
+#: crypto/decryptverifytask.cpp:190
+msgid "No public certificate to verify the signature"
+msgstr "Қолтаңбаны тексеретін ашық куәлігі жоқ"
+
+#: crypto/decryptverifytask.cpp:192
+msgid "Signature expired"
+msgstr "Қолтаңбасы ескірген"
+
+#: crypto/decryptverifytask.cpp:194
+msgid "Certificate missing"
+msgstr "Куәлігі жоқ"
+
+#: crypto/decryptverifytask.cpp:196
+msgid "CRL missing"
+msgstr "Қайтарылып алынған куәліктер тізімі (CRL) жок"
+
+#: crypto/decryptverifytask.cpp:198
+msgid "CRL too old"
+msgstr "Қайтарылып алынған куәліктер тізімі (CRL) тым ескі"
+
+#: crypto/decryptverifytask.cpp:200
+msgid "Bad policy"
+msgstr "Дұрыс емес ереже"
+
+#: crypto/decryptverifytask.cpp:202
+msgid "System error"
+msgstr "Жүйелік қатесі"
+
+#: crypto/decryptverifytask.cpp:211
+msgid ""
+"The signature is valid but the trust in the certificate's validity is only "
+"marginal."
+msgstr "Қолтаңбасы жарамды, бірақ куәлігінің сенімділігі шамалы."
+
+#: crypto/decryptverifytask.cpp:213
+msgid "The signature is valid and the certificate's validity is fully trusted."
+msgstr "Қолттаңбасы жарамды, куәлігінің сенімділігі толық."
+
+#: crypto/decryptverifytask.cpp:215
+msgid ""
+"The signature is valid and the certificate's validity is ultimately trusted."
+msgstr "Қолттаңбасы жарамды және ыкуәлігі әбден сенімді."
+
+#: crypto/decryptverifytask.cpp:217
+msgid ""
+"The signature is valid but the certificate's validity is <em>not trusted</"
+"em>."
+msgstr "Қолттаңбасы жарамды, бірақ куәлігі <em>сенімсіз</em>"
+
+#: crypto/decryptverifytask.cpp:219
+msgid "The signature is valid but the certificate's validity is unknown."
+msgstr "Қолттаңбасы жарамды, бірақ сенімділігі беймәлім."
+
+#: crypto/decryptverifytask.cpp:222
+msgid "The signature is valid but the certificate's validity is undefined."
+msgstr "Қолттаңбасы жарамды, бірақ куәлігінің сенімділігі анықталмаған."
+
+#: crypto/decryptverifytask.cpp:238 crypto/decryptverifytask.cpp:244
+msgid "Unknown certificate"
+msgstr "Беймәлім куәлік"
+
+#: crypto/decryptverifytask.cpp:263
+#, kde-format
+msgid "Signed on %1 with unknown certificate %2."
+msgstr "%2 беймәлім куәлігімен %1 қолтаңбалаған."
+
+#: crypto/decryptverifytask.cpp:265
+#, kde-format
+msgid "Signed with unknown certificate %1."
+msgstr "%1 - беймәлім куәлігімен қолтаңбаланған."
+
+#: crypto/decryptverifytask.cpp:270
+#, kde-format
+msgctxt "date, key owner, key ID"
+msgid "Signed on %1 by %2 (Key ID: %3)."
+msgstr "%2 %1 қолтаңбалаған.(Кілт ID-і: %3)."
+
+#: crypto/decryptverifytask.cpp:275
+#, kde-format
+msgid "Signed by %1 with certificate %2."
+msgstr "%2 куәлігімен %1 қолтаңбалаған."
+
+#: crypto/decryptverifytask.cpp:278
+#, kde-format
+msgid "Signed on %1 with certificate %2."
+msgstr "%2 куәлігімен %1 қолтаңбаланған."
+
+#: crypto/decryptverifytask.cpp:279
+#, kde-format
+msgid "Signed with certificate %1."
+msgstr "%1 куәлігімен қолтаңбаланған."
+
+#: crypto/decryptverifytask.cpp:290 crypto/signencryptfilestask.cpp:74
+#, kde-format
+msgctxt "Input file --> Output file (rarr is arrow"
+msgid "%1 &rarr; %2"
+msgstr "%1 &rarr; %2"
+
+#: crypto/decryptverifytask.cpp:360
+msgid "<b>Verification canceled.</b>"
+msgstr "<b>Тексеру доғарылды.</b>"
+
+#: crypto/decryptverifytask.cpp:362
+#, kde-format
+msgid "<b>Verification failed: %1.</b>"
+msgstr "<b>Тексеру жаңылды: %1.</b>"
+
+#: crypto/decryptverifytask.cpp:368
+msgid "<b>No signatures found.</b>"
+msgstr "<b>Қолтаңбалар табылған жоқ.</b>"
+
+#: crypto/decryptverifytask.cpp:372
+#, kde-format
+msgid "<b>Invalid signature.</b>"
+msgid_plural "<b>%1 invalid signatures.</b>"
+msgstr[0] "<b>%1 жарамсыз қолтаңба.</b>"
+
+#: crypto/decryptverifytask.cpp:376
+#, kde-format
+msgid "<b>Not enough information to check signature validity.</b>"
+msgid_plural "<b>%1 signatures could not be verified.</b>"
+msgstr[0] "<b>%1 қолтаңба тексеруге келмеді.</b>"
+
+#: crypto/decryptverifytask.cpp:383
+msgid "<b>Signature is valid.</b>"
+msgstr "<b>Қолтаңбасы жарамды.</b>"
+
+#: crypto/decryptverifytask.cpp:384
+#, kde-format
+msgid "<b>Signed by %1</b>"
+msgstr "<b>%1 қолтанбалаған</b>"
+
+#: crypto/decryptverifytask.cpp:387
+msgid "certificate"
+msgstr "куәлік"
+
+#: crypto/decryptverifytask.cpp:386
+#, kde-format
+msgid ""
+"<br/><b>Warning:</b> The sender's mail address is not stored in the %1 used "
+"for signing."
+msgstr ""
+"<br/><b>Ескерту:</b> Жіберушінің эл.пошта адресі қолтаңбалауға қолданған  %1 "
+"ішінде жоқ."
+
+#: crypto/decryptverifytask.cpp:390
+#, kde-format
+msgid "<b>Valid signature.</b>"
+msgid_plural "<b>%1 valid signatures.</b>"
+msgstr[0] "<b>%1 жарамды қолтаңба.</b>"
+
+#: crypto/decryptverifytask.cpp:392
+msgid ""
+"<br/><b>Warning:</b> The sender's mail address is not stored in the "
+"certificates used for signing."
+msgstr ""
+"<br/><b>Ескерту:</b> Жіберушінің эл.пошта адресі қолтаңбалауға қолданған "
+"куәліктерінде жоқ."
+
+#: crypto/decryptverifytask.cpp:403
+msgid "<b>Decryption canceled.</b>"
+msgstr "<b>Шифрды шешу доғарылды.</b>"
+
+#: crypto/decryptverifytask.cpp:405 crypto/decryptverifytask.cpp:407
+#, kde-format
+msgid "<b>Decryption failed: %1.</b>"
+msgstr "<b>Шифрды шешу жаңылысы: %1.</b>"
+
+#: crypto/decryptverifytask.cpp:408
+msgid "<b>Decryption succeeded.</b>"
+msgstr "<b>Шифрды шешу сәтті өтті.</b>"
+
+#: crypto/decryptverifytask.cpp:423
+msgid "The signature is bad."
+msgstr "Қолтаңбасы жарамсыз."
+
+#: crypto/decryptverifytask.cpp:425
+msgid "The validity of the signature cannot be verified."
+msgstr "Қолтаңбаның жарамдылы тексеруге келмейді."
+
+#: crypto/decryptverifytask.cpp:426
+#, kde-format
+msgid "The signature is invalid: %1"
+msgstr "Қолтаңбасы жарамсыз: %1"
+
+#: crypto/decryptverifytask.cpp:438 crypto/decryptverifytask.cpp:455
+#: crypto/signencryptfilestask.cpp:223 crypto/signencryptfilestask.cpp:235
+#, kde-format
+msgid "Input error: %1"
+msgstr "Кіріс қатесі: %1"
+
+#: crypto/decryptverifytask.cpp:448
+msgctxt "separator for a list of e-mail addresses"
+msgid ", "
+msgstr ", "
+
+#: crypto/decryptverifytask.cpp:448
+#, kde-format
+msgid ""
+"<p>The sender's address %1 is not stored in the certificate. Stored: %2</p>"
+msgstr ""
+"<p>%1 деген жіберушінің эл.пошта адресі бұл куәлігінде жоқ. Бары: %2</p>"
+
+#: crypto/decryptverifytask.cpp:461
+#, kde-format
+msgid "One unknown recipient."
+msgid_plural "%1 unknown recipients."
+msgstr[0] "%1 беймәлім алушы."
+
+#: crypto/decryptverifytask.cpp:465
+msgid "Recipient:"
+msgid_plural "Recipients:"
+msgstr[0] "Алушылары:"
+
+#: crypto/decryptverifytask.cpp:473
+#, kde-format
+msgid "One unknown recipient"
+msgid_plural "%1 unknown recipients"
+msgstr[0] "%1 беймәлім алушы"
+
+#: crypto/decryptverifytask.cpp:689
+#, kde-format
+msgctxt "label: result example: foo.sig: Verification failed. "
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: crypto/decryptverifytask.cpp:811 crypto/decryptverifytask.cpp:908
+#: crypto/decryptverifytask.cpp:962 crypto/decryptverifytask.cpp:1061
+#: crypto/decryptverifytask.cpp:1114 crypto/decryptverifytask.cpp:1212
+#: crypto/decryptverifytask.cpp:1260 crypto/decryptverifytask.cpp:1346
+#, kde-format
+msgid "Caught exception: %1"
+msgstr "Ерекше жағдайы: %1"
+
+#: crypto/decryptverifytask.cpp:814 crypto/decryptverifytask.cpp:910
+#: crypto/decryptverifytask.cpp:965 crypto/decryptverifytask.cpp:1063
+#: crypto/decryptverifytask.cpp:1117 crypto/decryptverifytask.cpp:1214
+#: crypto/decryptverifytask.cpp:1262 crypto/decryptverifytask.cpp:1348
+#: uiserver/assuanserverconnection.cpp:1426
+#: uiserver/assuanserverconnection.cpp:1472
+msgid "Caught unknown exception"
+msgstr "Ерекше жағдай орын алды"
+
+#: crypto/decryptverifytask.cpp:863
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature/"
+"ciphertext - maybe it is neither ciphertext nor a signature?"
+msgstr ""
+"Бұның шифры S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, бірінші де, "
+"екінші де емес шығар?"
+
+#: crypto/decryptverifytask.cpp:869 crypto/decryptverifytask.cpp:1020
+#, kde-format
+msgid "Decrypting: %1..."
+msgstr "%1 шифрын шешу..."
+
+#: crypto/decryptverifytask.cpp:1014
+msgid ""
+"Could not determine whether this was S/MIME- or OpenPGP-encrypted - maybe it "
+"is not ciphertext at all?"
+msgstr ""
+"Бұның шифры S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, мүлдем "
+"шифрлы мәтін емес шығар?"
+
+#: crypto/decryptverifytask.cpp:1166 crypto/decryptverifytask.cpp:1300
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature - "
+"maybe it is not a signature at all?"
+msgstr ""
+"Бұның қолтаңбасы S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, мүлдем "
+"қолтаңба емес шығар?"
+
+#: crypto/decryptverifytask.cpp:1172
+#, kde-format
+msgid "Verifying: %1..."
+msgstr "Тексеріліп жатқаны: %1..."
+
+#: crypto/decryptverifytask.cpp:1311
+#, kde-format
+msgid "Verifying signature: %1..."
+msgstr "Тексеріліп жатқан қолтаңба: %1..."
+
 #: crypto/encryptemailtask.cpp:85 crypto/signencryptfilestask.cpp:186
 msgid "Encryption canceled."
 msgstr "Шифрлау доғарылды."
@@ -1260,36 +1562,6 @@ msgstr "&Кіріс файлы - архив, ол келесімен тарқа�
 #: crypto/gui/encryptemailwizard.cpp:52
 msgid "Encrypt Mail Message"
 msgstr "Хатты шифрлау"
-
-#: crypto/gui/resultitemwidget.cpp:104
-msgid "Hide Details"
-msgstr "Егжей-тегжейлерін жасыру"
-
-#: crypto/gui/resultitemwidget.cpp:104
-msgid "Show Details"
-msgstr "Егжей-тегжейлерін көрсету"
-
-#: crypto/gui/signemailwizard.cpp:82
-msgid "You need to select a signing certificate to proceed."
-msgstr "Қолтаңбалау куәліктерді таңдау керек."
-
-#: crypto/gui/signemailwizard.cpp:88
-#, kde-format
-msgid "You need to select an %1 signing certificate to proceed."
-msgstr "%1 дегенді қолтаңбалау куәліктерін таңдау керек."
-
-#: crypto/gui/signemailwizard.cpp:90
-#, kde-format
-msgid "You need to select %1 and %2 signing certificates to proceed."
-msgstr "%1 және %2 дегенді қолтаңбалау куәліктерін таңдау керек."
-
-#: crypto/gui/signemailwizard.cpp:118
-msgid "Sign Mail Message"
-msgstr "Хатты қолтаңбалау"
-
-#: crypto/gui/signingcertificateselectiondialog.cpp:49
-msgid "Select Signing Certificates"
-msgstr "Қолтаңбалау куәліктерін таңдау"
 
 #: crypto/gui/newsignencryptfileswizard.cpp:134
 msgctxt "@title:window"
@@ -1481,12 +1753,38 @@ msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr "Әрекеттерінің күй-жайы мен барысы осында көрсетіледі."
 
+#: crypto/gui/resultitemwidget.cpp:104
+msgid "Hide Details"
+msgstr "Егжей-тегжейлерін жасыру"
+
+#: crypto/gui/resultitemwidget.cpp:104
+msgid "Show Details"
+msgstr "Егжей-тегжейлерін көрсету"
+
 #: crypto/gui/resultlistwidget.cpp:224 crypto/gui/newresultpage.cpp:162
 #: crypto/gui/resultpage.cpp:151
 #, kde-format
 msgctxt "number, operation description"
 msgid "Operation %1: %2"
 msgstr "%1-әрекет: %2"
+
+#: crypto/gui/signemailwizard.cpp:82
+msgid "You need to select a signing certificate to proceed."
+msgstr "Қолтаңбалау куәліктерді таңдау керек."
+
+#: crypto/gui/signemailwizard.cpp:88
+#, kde-format
+msgid "You need to select an %1 signing certificate to proceed."
+msgstr "%1 дегенді қолтаңбалау куәліктерін таңдау керек."
+
+#: crypto/gui/signemailwizard.cpp:90
+#, kde-format
+msgid "You need to select %1 and %2 signing certificates to proceed."
+msgstr "%1 және %2 дегенді қолтаңбалау куәліктерін таңдау керек."
+
+#: crypto/gui/signemailwizard.cpp:118
+msgid "Sign Mail Message"
+msgstr "Хатты қолтаңбалау"
 
 #: crypto/gui/signencryptemailconflictdialog.cpp:163
 msgid "(no matching certificates found)"
@@ -1597,6 +1895,10 @@ msgstr "Қайсыға дейін:"
 #, kde-format
 msgid "Select Certificates For Message \"%1\""
 msgstr "\"%1\" хатына куәліктерді таңдау"
+
+#: crypto/gui/signingcertificateselectiondialog.cpp:49
+msgid "Select Signing Certificates"
+msgstr "Қолтаңбалау куәліктерін таңдау"
 
 #: crypto/gui/decryptverifyfileswizard.cpp:207
 msgid "<b>Choose operations to be performed</b>"
@@ -1750,34 +2052,6 @@ msgstr "&Келесі"
 msgid "Back"
 msgstr "Шегіну"
 
-#: crypto/gui/verifychecksumsdialog.cpp:228
-msgid "The following errors and warnings were recorded:"
-msgstr "Келесі қате мен ескертулер жазылып алынған:"
-
-#: crypto/gui/verifychecksumsdialog.cpp:229
-msgid "Checksum Verification Errors"
-msgstr "Бақылау қосындысын тексеру қатесі"
-
-#: crypto/gui/verifychecksumsdialog.cpp:240
-#: crypto/gui/verifychecksumsdialog.cpp:264
-msgid "No errors occurred"
-msgstr "Қате жоқ"
-
-#: crypto/gui/verifychecksumsdialog.cpp:242
-#, kde-format
-msgid "One error occurred"
-msgid_plural "%1 errors occurred"
-msgstr[0] "%1 қате бар"
-
-#: crypto/gui/verifychecksumsdialog.cpp:262
-msgid "Progress:"
-msgstr "Барысы:"
-
-#: crypto/gui/verifychecksumsdialog.cpp:265
-msgctxt "Show Errors"
-msgid "Show"
-msgstr "Көрсету"
-
 #: crypto/gui/newresultpage.cpp:103 crypto/gui/resultpage.cpp:104
 msgid "Keep open after operation completed"
 msgstr "Әрекет біткесін ашық  қалсын"
@@ -1840,23 +2114,50 @@ msgstr "<qt><p>GnuPG параметрлеріндегі алушылары:</p>%
 msgid "Sender"
 msgstr "Жіберушісі"
 
-#: crypto/signencryptfilestask.cpp:74 crypto/decryptverifytask.cpp:290
-#, kde-format
-msgctxt "Input file --> Output file (rarr is arrow"
-msgid "%1 &rarr; %2"
-msgstr "%1 &rarr; %2"
+#: crypto/gui/verifychecksumsdialog.cpp:228
+msgid "The following errors and warnings were recorded:"
+msgstr "Келесі қате мен ескертулер жазылып алынған:"
 
-#: crypto/signencryptfilestask.cpp:173 crypto/signemailtask.cpp:85
+#: crypto/gui/verifychecksumsdialog.cpp:229
+msgid "Checksum Verification Errors"
+msgstr "Бақылау қосындысын тексеру қатесі"
+
+#: crypto/gui/verifychecksumsdialog.cpp:240
+#: crypto/gui/verifychecksumsdialog.cpp:264
+msgid "No errors occurred"
+msgstr "Қате жоқ"
+
+#: crypto/gui/verifychecksumsdialog.cpp:242
+#, kde-format
+msgid "One error occurred"
+msgid_plural "%1 errors occurred"
+msgstr[0] "%1 қате бар"
+
+#: crypto/gui/verifychecksumsdialog.cpp:262
+msgid "Progress:"
+msgstr "Барысы:"
+
+#: crypto/gui/verifychecksumsdialog.cpp:265
+msgctxt "Show Errors"
+msgid "Show"
+msgstr "Көрсету"
+
+#: crypto/signemailtask.cpp:85 crypto/signencryptfilestask.cpp:173
 msgid "Signing canceled."
 msgstr "Қолтаңбалау доғарылды"
+
+#: crypto/signemailtask.cpp:88
+#, kde-format
+msgid "Signing failed: %1"
+msgstr "Қолтаңбалау жаңылысы: %1"
+
+#: crypto/signemailtask.cpp:90 crypto/signencryptfilestask.cpp:177
+msgid "Signing succeeded."
+msgstr "Қолтаңбалау сәтті өтті."
 
 #: crypto/signencryptfilestask.cpp:176
 msgid "Signing failed."
 msgstr "Қолтаңбалау жаңылысы"
-
-#: crypto/signencryptfilestask.cpp:177 crypto/signemailtask.cpp:90
-msgid "Signing succeeded."
-msgstr "Қолтаңбалау сәтті өтті."
 
 #: crypto/signencryptfilestask.cpp:189
 msgid "Encryption failed."
@@ -1865,12 +2166,6 @@ msgstr "Шифрлау жаңылысы"
 #: crypto/signencryptfilestask.cpp:210
 msgid "Signing and encryption succeeded."
 msgstr "Қолтаңбалау мен шифрлау сәтті өтті."
-
-#: crypto/signencryptfilestask.cpp:223 crypto/signencryptfilestask.cpp:235
-#: crypto/decryptverifytask.cpp:438 crypto/decryptverifytask.cpp:455
-#, kde-format
-msgid "Input error: %1"
-msgstr "Кіріс қатесі: %1"
 
 #: crypto/signencryptfilestask.cpp:225 crypto/signencryptfilestask.cpp:237
 #, kde-format
@@ -1904,301 +2199,6 @@ msgstr "Тапсырманың протоколы анықталмады"
 #: crypto/task.cpp:169
 msgid "Unknown exception in Task::start()"
 msgstr "Task::start() дегенде беймәлім ерекше жағдай"
-
-#: crypto/decryptverifytask.cpp:180
-msgid "Error: Signature not verified"
-msgstr "Қате: Қолтаңба тексерілмеді"
-
-#: crypto/decryptverifytask.cpp:182
-msgid "Good signature"
-msgstr "Жарамды қолтаңба"
-
-#: crypto/decryptverifytask.cpp:184
-msgid "Bad signature"
-msgstr "Жарамсыз қолтаңба"
-
-#: crypto/decryptverifytask.cpp:186
-msgid "Signing certificate revoked"
-msgstr "Қолтаңбалау куәлігінің күші жойылған екен"
-
-#: crypto/decryptverifytask.cpp:188
-msgid "Signing certificate expired"
-msgstr "Қолтаңбалау куәлігі ескірген екен"
-
-#: crypto/decryptverifytask.cpp:190
-msgid "No public certificate to verify the signature"
-msgstr "Қолтаңбаны тексеретін ашық куәлігі жоқ"
-
-#: crypto/decryptverifytask.cpp:192
-msgid "Signature expired"
-msgstr "Қолтаңбасы ескірген"
-
-#: crypto/decryptverifytask.cpp:194
-msgid "Certificate missing"
-msgstr "Куәлігі жоқ"
-
-#: crypto/decryptverifytask.cpp:196
-msgid "CRL missing"
-msgstr "Қайтарылып алынған куәліктер тізімі (CRL) жок"
-
-#: crypto/decryptverifytask.cpp:198
-msgid "CRL too old"
-msgstr "Қайтарылып алынған куәліктер тізімі (CRL) тым ескі"
-
-#: crypto/decryptverifytask.cpp:200
-msgid "Bad policy"
-msgstr "Дұрыс емес ереже"
-
-#: crypto/decryptverifytask.cpp:202
-msgid "System error"
-msgstr "Жүйелік қатесі"
-
-#: crypto/decryptverifytask.cpp:211
-msgid ""
-"The signature is valid but the trust in the certificate's validity is only "
-"marginal."
-msgstr "Қолтаңбасы жарамды, бірақ куәлігінің сенімділігі шамалы."
-
-#: crypto/decryptverifytask.cpp:213
-msgid "The signature is valid and the certificate's validity is fully trusted."
-msgstr "Қолттаңбасы жарамды, куәлігінің сенімділігі толық."
-
-#: crypto/decryptverifytask.cpp:215
-msgid ""
-"The signature is valid and the certificate's validity is ultimately trusted."
-msgstr "Қолттаңбасы жарамды және ыкуәлігі әбден сенімді."
-
-#: crypto/decryptverifytask.cpp:217
-msgid ""
-"The signature is valid but the certificate's validity is <em>not trusted</"
-"em>."
-msgstr "Қолттаңбасы жарамды, бірақ куәлігі <em>сенімсіз</em>"
-
-#: crypto/decryptverifytask.cpp:219
-msgid "The signature is valid but the certificate's validity is unknown."
-msgstr "Қолттаңбасы жарамды, бірақ сенімділігі беймәлім."
-
-#: crypto/decryptverifytask.cpp:222
-msgid "The signature is valid but the certificate's validity is undefined."
-msgstr "Қолттаңбасы жарамды, бірақ куәлігінің сенімділігі анықталмаған."
-
-#: crypto/decryptverifytask.cpp:238 crypto/decryptverifytask.cpp:244
-msgid "Unknown certificate"
-msgstr "Беймәлім куәлік"
-
-#: crypto/decryptverifytask.cpp:263
-#, kde-format
-msgid "Signed on %1 with unknown certificate %2."
-msgstr "%2 беймәлім куәлігімен %1 қолтаңбалаған."
-
-#: crypto/decryptverifytask.cpp:265
-#, kde-format
-msgid "Signed with unknown certificate %1."
-msgstr "%1 - беймәлім куәлігімен қолтаңбаланған."
-
-#: crypto/decryptverifytask.cpp:270
-#, kde-format
-msgctxt "date, key owner, key ID"
-msgid "Signed on %1 by %2 (Key ID: %3)."
-msgstr "%2 %1 қолтаңбалаған.(Кілт ID-і: %3)."
-
-#: crypto/decryptverifytask.cpp:275
-#, kde-format
-msgid "Signed by %1 with certificate %2."
-msgstr "%2 куәлігімен %1 қолтаңбалаған."
-
-#: crypto/decryptverifytask.cpp:278
-#, kde-format
-msgid "Signed on %1 with certificate %2."
-msgstr "%2 куәлігімен %1 қолтаңбаланған."
-
-#: crypto/decryptverifytask.cpp:279
-#, kde-format
-msgid "Signed with certificate %1."
-msgstr "%1 куәлігімен қолтаңбаланған."
-
-#: crypto/decryptverifytask.cpp:360
-msgid "<b>Verification canceled.</b>"
-msgstr "<b>Тексеру доғарылды.</b>"
-
-#: crypto/decryptverifytask.cpp:362
-#, kde-format
-msgid "<b>Verification failed: %1.</b>"
-msgstr "<b>Тексеру жаңылды: %1.</b>"
-
-#: crypto/decryptverifytask.cpp:368
-msgid "<b>No signatures found.</b>"
-msgstr "<b>Қолтаңбалар табылған жоқ.</b>"
-
-#: crypto/decryptverifytask.cpp:372
-#, kde-format
-msgid "<b>Invalid signature.</b>"
-msgid_plural "<b>%1 invalid signatures.</b>"
-msgstr[0] "<b>%1 жарамсыз қолтаңба.</b>"
-
-#: crypto/decryptverifytask.cpp:376
-#, kde-format
-msgid "<b>Not enough information to check signature validity.</b>"
-msgid_plural "<b>%1 signatures could not be verified.</b>"
-msgstr[0] "<b>%1 қолтаңба тексеруге келмеді.</b>"
-
-#: crypto/decryptverifytask.cpp:383
-msgid "<b>Signature is valid.</b>"
-msgstr "<b>Қолтаңбасы жарамды.</b>"
-
-#: crypto/decryptverifytask.cpp:384
-#, kde-format
-msgid "<b>Signed by %1</b>"
-msgstr "<b>%1 қолтанбалаған</b>"
-
-#: crypto/decryptverifytask.cpp:387
-msgid "certificate"
-msgstr "куәлік"
-
-#: crypto/decryptverifytask.cpp:386
-#, kde-format
-msgid ""
-"<br/><b>Warning:</b> The sender's mail address is not stored in the %1 used "
-"for signing."
-msgstr ""
-"<br/><b>Ескерту:</b> Жіберушінің эл.пошта адресі қолтаңбалауға қолданған  %1 "
-"ішінде жоқ."
-
-#: crypto/decryptverifytask.cpp:390
-#, kde-format
-msgid "<b>Valid signature.</b>"
-msgid_plural "<b>%1 valid signatures.</b>"
-msgstr[0] "<b>%1 жарамды қолтаңба.</b>"
-
-#: crypto/decryptverifytask.cpp:392
-msgid ""
-"<br/><b>Warning:</b> The sender's mail address is not stored in the "
-"certificates used for signing."
-msgstr ""
-"<br/><b>Ескерту:</b> Жіберушінің эл.пошта адресі қолтаңбалауға қолданған "
-"куәліктерінде жоқ."
-
-#: crypto/decryptverifytask.cpp:403
-msgid "<b>Decryption canceled.</b>"
-msgstr "<b>Шифрды шешу доғарылды.</b>"
-
-#: crypto/decryptverifytask.cpp:405 crypto/decryptverifytask.cpp:407
-#, kde-format
-msgid "<b>Decryption failed: %1.</b>"
-msgstr "<b>Шифрды шешу жаңылысы: %1.</b>"
-
-#: crypto/decryptverifytask.cpp:408
-msgid "<b>Decryption succeeded.</b>"
-msgstr "<b>Шифрды шешу сәтті өтті.</b>"
-
-#: crypto/decryptverifytask.cpp:423
-msgid "The signature is bad."
-msgstr "Қолтаңбасы жарамсыз."
-
-#: crypto/decryptverifytask.cpp:425
-msgid "The validity of the signature cannot be verified."
-msgstr "Қолтаңбаның жарамдылы тексеруге келмейді."
-
-#: crypto/decryptverifytask.cpp:426
-#, kde-format
-msgid "The signature is invalid: %1"
-msgstr "Қолтаңбасы жарамсыз: %1"
-
-#: crypto/decryptverifytask.cpp:448
-msgctxt "separator for a list of e-mail addresses"
-msgid ", "
-msgstr ", "
-
-#: crypto/decryptverifytask.cpp:448
-#, kde-format
-msgid ""
-"<p>The sender's address %1 is not stored in the certificate. Stored: %2</p>"
-msgstr ""
-"<p>%1 деген жіберушінің эл.пошта адресі бұл куәлігінде жоқ. Бары: %2</p>"
-
-#: crypto/decryptverifytask.cpp:461
-#, kde-format
-msgid "One unknown recipient."
-msgid_plural "%1 unknown recipients."
-msgstr[0] "%1 беймәлім алушы."
-
-#: crypto/decryptverifytask.cpp:465
-msgid "Recipient:"
-msgid_plural "Recipients:"
-msgstr[0] "Алушылары:"
-
-#: crypto/decryptverifytask.cpp:473
-#, kde-format
-msgid "One unknown recipient"
-msgid_plural "%1 unknown recipients"
-msgstr[0] "%1 беймәлім алушы"
-
-#: crypto/decryptverifytask.cpp:689
-#, kde-format
-msgctxt "label: result example: foo.sig: Verification failed. "
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: crypto/decryptverifytask.cpp:811 crypto/decryptverifytask.cpp:908
-#: crypto/decryptverifytask.cpp:962 crypto/decryptverifytask.cpp:1061
-#: crypto/decryptverifytask.cpp:1114 crypto/decryptverifytask.cpp:1212
-#: crypto/decryptverifytask.cpp:1260 crypto/decryptverifytask.cpp:1346
-#, kde-format
-msgid "Caught exception: %1"
-msgstr "Ерекше жағдайы: %1"
-
-#: crypto/decryptverifytask.cpp:814 crypto/decryptverifytask.cpp:910
-#: crypto/decryptverifytask.cpp:965 crypto/decryptverifytask.cpp:1063
-#: crypto/decryptverifytask.cpp:1117 crypto/decryptverifytask.cpp:1214
-#: crypto/decryptverifytask.cpp:1262 crypto/decryptverifytask.cpp:1348
-#: uiserver/assuanserverconnection.cpp:1426
-#: uiserver/assuanserverconnection.cpp:1472
-msgid "Caught unknown exception"
-msgstr "Ерекше жағдай орын алды"
-
-#: crypto/decryptverifytask.cpp:863
-msgid ""
-"Could not determine whether this is an S/MIME or an OpenPGP signature/"
-"ciphertext - maybe it is neither ciphertext nor a signature?"
-msgstr ""
-"Бұның шифры S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, бірінші де, "
-"екінші де емес шығар?"
-
-#: crypto/decryptverifytask.cpp:869 crypto/decryptverifytask.cpp:1020
-#, kde-format
-msgid "Decrypting: %1..."
-msgstr "%1 шифрын шешу..."
-
-#: crypto/decryptverifytask.cpp:1014
-msgid ""
-"Could not determine whether this was S/MIME- or OpenPGP-encrypted - maybe it "
-"is not ciphertext at all?"
-msgstr ""
-"Бұның шифры S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, мүлдем "
-"шифрлы мәтін емес шығар?"
-
-#: crypto/decryptverifytask.cpp:1166 crypto/decryptverifytask.cpp:1300
-msgid ""
-"Could not determine whether this is an S/MIME or an OpenPGP signature - "
-"maybe it is not a signature at all?"
-msgstr ""
-"Бұның қолтаңбасы S/MIME ме, әлде OpenPGP ма, анық айырылмады, мүмкін, мүлдем "
-"қолтаңба емес шығар?"
-
-#: crypto/decryptverifytask.cpp:1172
-#, kde-format
-msgid "Verifying: %1..."
-msgstr "Тексеріліп жатқаны: %1..."
-
-#: crypto/decryptverifytask.cpp:1311
-#, kde-format
-msgid "Verifying signature: %1..."
-msgstr "Тексеріліп жатқан қолтаңба: %1..."
-
-#: crypto/signemailtask.cpp:88
-#, kde-format
-msgid "Signing failed: %1"
-msgstr "Қолтаңбалау жаңылысы: %1"
 
 #: crypto/createchecksumscontroller.cpp:84
 msgctxt "@info"
@@ -2326,15 +2326,55 @@ msgstr "Шығыс пен қолтаңбаланған дерек бірмезг
 msgid "No backend support for %1"
 msgstr "%1 дегенді қолдайтын тетігі жоқ"
 
+#: crypto/decryptverifyfilescontroller.cpp:141
+msgid "Cannot determine whether input data is OpenPGP or CMS"
+msgstr "Кірістегі дерегі OpenPGP ме CMS па, анықталмады"
+
+#: crypto/decryptverifyfilescontroller.cpp:197
+#, kde-format
+msgid ""
+"Caught unexpected exception in DecryptVerifyFilesController::Private::"
+"slotWizardOperationPrepared: %1"
+msgstr ""
+"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
+"күтпеген ерекше жағдай: %1"
+
+#: crypto/decryptverifyfilescontroller.cpp:201
+msgid ""
+"Caught unknown exception in DecryptVerifyFilesController::Private::"
+"slotWizardOperationPrepared"
+msgstr ""
+"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
+"күтпеген ерекше жағдай орын алды"
+
+#: crypto/decryptverifyfilescontroller.cpp:252
+msgid "Decrypt/Verify Files"
+msgstr "Файлдардың шифрын шешу/тексеру"
+
+#: crypto/decryptverifyfilescontroller.cpp:380
+msgid "No usable inputs found"
+msgstr "Кірісте жарамды түк те жоқ"
+
 #: crypto/encryptemailcontroller.cpp:150
 msgid "Call to EncryptEMailController::protocolAsString() is ambiguous."
 msgstr "Күдікті EncryptEMailController::protocolAsString() шақырлымы."
 
-#: crypto/encryptemailcontroller.cpp:169 crypto/signemailcontroller.cpp:180
-#: crypto/signencryptfilescontroller.cpp:278
+#: crypto/encryptemailcontroller.cpp:169
 #: crypto/newsignencryptemailcontroller.cpp:382
+#: crypto/signemailcontroller.cpp:180
+#: crypto/signencryptfilescontroller.cpp:278
 msgid "User cancel"
 msgstr "Пайдаланушы доғарған"
+
+#: crypto/newsignencryptemailcontroller.cpp:297
+msgid "Call to NewSignEncryptEMailController::protocolAsString() is ambiguous."
+msgstr "Күмәнді NewSignEncryptEMailController::protocolAsString() шақыруы."
+
+#: crypto/newsignencryptemailcontroller.cpp:517
+#: crypto/newsignencryptemailcontroller.cpp:522
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Қате"
 
 #: crypto/signencryptfilescontroller.cpp:144
 msgid "Archive and Sign Files"
@@ -2379,45 +2419,6 @@ msgstr "%1 файлының бақылау қосынды файлы табыл�
 #, kde-format
 msgid "Verifying checksums (%2) in %1"
 msgstr "%1 ішіндегі бақылау қосындысын тексеру (%2)"
-
-#: crypto/decryptverifyfilescontroller.cpp:141
-msgid "Cannot determine whether input data is OpenPGP or CMS"
-msgstr "Кірістегі дерегі OpenPGP ме CMS па, анықталмады"
-
-#: crypto/decryptverifyfilescontroller.cpp:197
-#, kde-format
-msgid ""
-"Caught unexpected exception in DecryptVerifyFilesController::Private::"
-"slotWizardOperationPrepared: %1"
-msgstr ""
-"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
-"күтпеген ерекше жағдай: %1"
-
-#: crypto/decryptverifyfilescontroller.cpp:201
-msgid ""
-"Caught unknown exception in DecryptVerifyFilesController::Private::"
-"slotWizardOperationPrepared"
-msgstr ""
-"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
-"күтпеген ерекше жағдай орын алды"
-
-#: crypto/decryptverifyfilescontroller.cpp:252
-msgid "Decrypt/Verify Files"
-msgstr "Файлдардың шифрын шешу/тексеру"
-
-#: crypto/decryptverifyfilescontroller.cpp:380
-msgid "No usable inputs found"
-msgstr "Кірісте жарамды түк те жоқ"
-
-#: crypto/newsignencryptemailcontroller.cpp:297
-msgid "Call to NewSignEncryptEMailController::protocolAsString() is ambiguous."
-msgstr "Күмәнді NewSignEncryptEMailController::protocolAsString() шақыруы."
-
-#: crypto/newsignencryptemailcontroller.cpp:517
-#: crypto/newsignencryptemailcontroller.cpp:522
-msgctxt "@title:window"
-msgid "Error"
-msgstr "Қате"
 
 #: dialogs/adduseriddialog.cpp:69 models/keylistmodel.cpp:250
 #: models/useridlistmodel.cpp:249
@@ -2517,133 +2518,6 @@ msgid ""
 msgstr ""
 "<interface>%1</interface> деген дұрыс емес.<nl/>Әкімшінің ережесі: <icode>"
 "%2</icode>"
-
-#: dialogs/deletecertificatesdialog.cpp:94
-msgid "These are the certificates you have selected for deletion:"
-msgstr "Өшіруге таңдалған  куәліктер:"
-
-#: dialogs/deletecertificatesdialog.cpp:96
-msgid ""
-"These certificates will be deleted even though you did <emphasis>not</"
-"emphasis><nl/> explicitly select them (<a href=\"whatsthis://\">Why?</a>):"
-msgstr ""
-"Бұл куәліктер өшіруге әдейі таңдал <emphasis>ма</emphasis>сада өшіріледі<nl/"
-"> (<a href=\"whatsthis://\">Неге?</a>):"
-
-#: dialogs/deletecertificatesdialog.cpp:117
-msgctxt "@info:whatsthis"
-msgid ""
-"<title>Why do you want to delete more certificates than I selected?</"
-"title><para>When you delete CA certificates (both root CAs and intermediate "
-"CAs), the certificates issued by them will also be deleted.</para><para>This "
-"can be nicely seen in <application>Kleopatra</application>'s hierarchical "
-"view mode: In this mode, if you delete a certificate that has children, "
-"those children will also be deleted. Think of CA certificates as folders "
-"containing other certificates: When you delete the folder, you delete its "
-"contents, too.</para>"
-msgstr ""
-"<title>Неге мен таңдағаннан артық куәліктер өшірілмек?</title> "
-"<para>Куәліктер қоймасының (КҚ) куәлігі (мейлі, түбірлі ме, емес пе) "
-"өшірілгенде ол берген куәліктер де өшіріледі..</para><para>Бұл "
-"<application>Kleopatra</application>-ның иерархиялық көрінісінеде анық "
-"суреттеледі, еншілестері бар куәлікті өшіргенде, ол еншілестерімен бірге "
-"құриды. КҚ куәлігі қапшық секілді деп ойлаңыз: қапшық жойылғанда, ішіндегісі "
-"де кетеді.</para>"
-
-#: dialogs/deletecertificatesdialog.cpp:129
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: dialogs/deletecertificatesdialog.cpp:189
-msgid ""
-"The certificate to be deleted is your own. It contains private key material, "
-"which is needed to decrypt past communication encrypted to the certificate, "
-"and should therefore not be deleted."
-msgid_plural ""
-"All of the certificates to be deleted are your own. They contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate, and should therefore not be deleted."
-msgstr[0] ""
-"Өшірілмек куәліктер барлығы өзіңіздікі. Оларда сол куәліктермен шифрланған "
-"деректердің шифрын шешуге қажетті сырлы кілттер болғандықтан олар "
-"өшірілмейді."
-
-#: dialogs/deletecertificatesdialog.cpp:203
-msgid ""
-"One of the certificates to be deleted is your own. It contains private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate, and should therefore not be deleted."
-msgid_plural ""
-"Some of the certificates to be deleted are your own. They contain private "
-"key material, which is needed to decrypt past communication encrypted to the "
-"certificate, and should therefore not be deleted."
-msgstr[0] ""
-"Өшірілмек куәліктердің кейбірі өзіңіздікі. Оларда сол куәліктермен "
-"шифрланған деректердің шифрын шешуге қажетті сырлы кілттер болғандықтан олар "
-"өшірілмейді."
-
-#: dialogs/deletecertificatesdialog.cpp:218
-msgid "Secret Key Deletion"
-msgstr "Құпия кілтін өшіру"
-
-#: dialogs/exportsecretkeydialog.cpp:103
-msgid "Secret Key Files"
-msgstr "Құпия кілт файлдары"
-
-#: dialogs/exportsecretkeydialog.cpp:124
-#, kde-format
-msgctxt "@info"
-msgid "Please select export options for %1:"
-msgstr "%1 үшін экспорттау параметрлерін таңдаңыз:"
-
-#: dialogs/exportsecretkeydialog.cpp:138
-msgid "Secret Key Files (*.pem *.p12 *.gpg *.asc *.pgp)"
-msgstr "Құпия кілт файлдары (*.pem *.p12 *.gpg *.asc *.pgp)"
-
-#: dialogs/exportsecretkeydialog.cpp:206
-msgctxt "@info"
-msgid "You have to enter an output filename."
-msgstr "Шығыс файл атауын келтіруіңіз керек."
-
-#: dialogs/exportsecretkeydialog.cpp:207 dialogs/exportsecretkeydialog.cpp:216
-msgctxt "@title"
-msgid "Incomplete data"
-msgstr "Дерек толық емес"
-
-#: dialogs/exportsecretkeydialog.cpp:215
-msgctxt "@info"
-msgid "You have to choose a passphrase character set."
-msgstr "Паролінің қодтамасын таңдауыңыз керек."
-
-#: dialogs/lookupcertificatesdialog.cpp:121
-msgid "Import"
-msgstr "импорт"
-
-#: dialogs/setinitialpindialog.cpp:89
-msgctxt "@info"
-msgid ""
-"No NullPin found. <warning>If this PIN was not set by you personally, the "
-"card might have been tampered with.</warning>"
-msgstr ""
-"NullPin табылмады. <warning>Егер бұл  PIN-кодты өзіңіз орнатпасаңыз, карта "
-"жалған болуы ықтимал.</warning>"
-
-#: dialogs/setinitialpindialog.cpp:94
-msgctxt "@info"
-msgid "Canceled setting PIN."
-msgstr "PIN-кодты орнату доғарылды."
-
-#: dialogs/setinitialpindialog.cpp:97
-#, kde-format
-msgctxt "@info"
-msgid "There was an error setting the PIN: <message>%1</message>."
-msgstr "PIN-кодты орнату қатесі: <message>%1</message>."
-
-#: dialogs/setinitialpindialog.cpp:100
-msgctxt "@info"
-msgid "PIN set successfully."
-msgstr "PIN-код сәтті орнатылды."
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -2774,6 +2648,133 @@ msgstr "Куәландыру сәтті өтті."
 msgctxt "arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "Растайтын куәлік: %1"
+
+#: dialogs/deletecertificatesdialog.cpp:94
+msgid "These are the certificates you have selected for deletion:"
+msgstr "Өшіруге таңдалған  куәліктер:"
+
+#: dialogs/deletecertificatesdialog.cpp:96
+msgid ""
+"These certificates will be deleted even though you did <emphasis>not</"
+"emphasis><nl/> explicitly select them (<a href=\"whatsthis://\">Why?</a>):"
+msgstr ""
+"Бұл куәліктер өшіруге әдейі таңдал <emphasis>ма</emphasis>сада өшіріледі<nl/"
+"> (<a href=\"whatsthis://\">Неге?</a>):"
+
+#: dialogs/deletecertificatesdialog.cpp:117
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Why do you want to delete more certificates than I selected?</"
+"title><para>When you delete CA certificates (both root CAs and intermediate "
+"CAs), the certificates issued by them will also be deleted.</para><para>This "
+"can be nicely seen in <application>Kleopatra</application>'s hierarchical "
+"view mode: In this mode, if you delete a certificate that has children, "
+"those children will also be deleted. Think of CA certificates as folders "
+"containing other certificates: When you delete the folder, you delete its "
+"contents, too.</para>"
+msgstr ""
+"<title>Неге мен таңдағаннан артық куәліктер өшірілмек?</title> "
+"<para>Куәліктер қоймасының (КҚ) куәлігі (мейлі, түбірлі ме, емес пе) "
+"өшірілгенде ол берген куәліктер де өшіріледі..</para><para>Бұл "
+"<application>Kleopatra</application>-ның иерархиялық көрінісінеде анық "
+"суреттеледі, еншілестері бар куәлікті өшіргенде, ол еншілестерімен бірге "
+"құриды. КҚ куәлігі қапшық секілді деп ойлаңыз: қапшық жойылғанда, ішіндегісі "
+"де кетеді.</para>"
+
+#: dialogs/deletecertificatesdialog.cpp:129
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: dialogs/deletecertificatesdialog.cpp:189
+msgid ""
+"The certificate to be deleted is your own. It contains private key material, "
+"which is needed to decrypt past communication encrypted to the certificate, "
+"and should therefore not be deleted."
+msgid_plural ""
+"All of the certificates to be deleted are your own. They contain private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+"Өшірілмек куәліктер барлығы өзіңіздікі. Оларда сол куәліктермен шифрланған "
+"деректердің шифрын шешуге қажетті сырлы кілттер болғандықтан олар "
+"өшірілмейді."
+
+#: dialogs/deletecertificatesdialog.cpp:203
+msgid ""
+"One of the certificates to be deleted is your own. It contains private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgid_plural ""
+"Some of the certificates to be deleted are your own. They contain private "
+"key material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+"Өшірілмек куәліктердің кейбірі өзіңіздікі. Оларда сол куәліктермен "
+"шифрланған деректердің шифрын шешуге қажетті сырлы кілттер болғандықтан олар "
+"өшірілмейді."
+
+#: dialogs/deletecertificatesdialog.cpp:218
+msgid "Secret Key Deletion"
+msgstr "Құпия кілтін өшіру"
+
+#: dialogs/exportsecretkeydialog.cpp:103
+msgid "Secret Key Files"
+msgstr "Құпия кілт файлдары"
+
+#: dialogs/exportsecretkeydialog.cpp:124
+#, kde-format
+msgctxt "@info"
+msgid "Please select export options for %1:"
+msgstr "%1 үшін экспорттау параметрлерін таңдаңыз:"
+
+#: dialogs/exportsecretkeydialog.cpp:138
+msgid "Secret Key Files (*.pem *.p12 *.gpg *.asc *.pgp)"
+msgstr "Құпия кілт файлдары (*.pem *.p12 *.gpg *.asc *.pgp)"
+
+#: dialogs/exportsecretkeydialog.cpp:206
+msgctxt "@info"
+msgid "You have to enter an output filename."
+msgstr "Шығыс файл атауын келтіруіңіз керек."
+
+#: dialogs/exportsecretkeydialog.cpp:207 dialogs/exportsecretkeydialog.cpp:216
+msgctxt "@title"
+msgid "Incomplete data"
+msgstr "Дерек толық емес"
+
+#: dialogs/exportsecretkeydialog.cpp:215
+msgctxt "@info"
+msgid "You have to choose a passphrase character set."
+msgstr "Паролінің қодтамасын таңдауыңыз керек."
+
+#: dialogs/lookupcertificatesdialog.cpp:121
+msgid "Import"
+msgstr "импорт"
+
+#: dialogs/setinitialpindialog.cpp:89
+msgctxt "@info"
+msgid ""
+"No NullPin found. <warning>If this PIN was not set by you personally, the "
+"card might have been tampered with.</warning>"
+msgstr ""
+"NullPin табылмады. <warning>Егер бұл  PIN-кодты өзіңіз орнатпасаңыз, карта "
+"жалған болуы ықтимал.</warning>"
+
+#: dialogs/setinitialpindialog.cpp:94
+msgctxt "@info"
+msgid "Canceled setting PIN."
+msgstr "PIN-кодты орнату доғарылды."
+
+#: dialogs/setinitialpindialog.cpp:97
+#, kde-format
+msgctxt "@info"
+msgid "There was an error setting the PIN: <message>%1</message>."
+msgstr "PIN-кодты орнату қатесі: <message>%1</message>."
+
+#: dialogs/setinitialpindialog.cpp:100
+msgctxt "@info"
+msgid "PIN set successfully."
+msgstr "PIN-код сәтті орнатылды."
 
 #: dialogs/certificatedetailsdialog.cpp:230
 #, kde-format
@@ -3063,6 +3064,58 @@ msgstr "%1 файлына жазу қатесі"
 msgid "Save As"
 msgstr "Былай сақтау"
 
+#: kleopatraapplication.cpp:93
+msgid "Run UI server only, hide main window"
+msgstr "Тек интерфейс сервері жегілсін, негізгі терезесі керек жоқы"
+
+#: kleopatraapplication.cpp:94
+msgid "Use OpenPGP for the following operation"
+msgstr "Келесі амал үшін OpenPGP пайдалансын"
+
+#: kleopatraapplication.cpp:95
+msgid "Use CMS (X.509, S/MIME) for the following operation"
+msgstr "Келесі амал үшін (X.509, S/MIME) пайдалансын"
+
+#: kleopatraapplication.cpp:96
+msgid "Import certificate file(s)"
+msgstr "Куәлікт(ерд)і импорттау"
+
+#: kleopatraapplication.cpp:97
+msgid "Encrypt file(s)"
+msgstr "Файлд(ард)ы шифрлау"
+
+#: kleopatraapplication.cpp:98
+msgid "Sign file(s)"
+msgstr "Файлд(ард)ы қолтаңбалау"
+
+#: kleopatraapplication.cpp:99
+msgid "Sign and/or encrypt file(s)"
+msgstr "Файл(дар)ды қолтаңбалау және/не шифрлау"
+
+#: kleopatraapplication.cpp:100
+msgid "Same as --sign-encrypt, do not use"
+msgstr "Бұл --sign-encrypt секілді, қолданбаңыз"
+
+#: kleopatraapplication.cpp:101
+msgid "Decrypt file(s)"
+msgstr "Файлд(ард)ың шифрын шешу"
+
+#: kleopatraapplication.cpp:102
+msgid "Verify file/signature"
+msgstr "Файлды/қолтаңбаны тексеру"
+
+#: kleopatraapplication.cpp:103
+msgid "Decrypt and/or verify file(s)"
+msgstr "Файлд(ард)ың шифрын шешу не/және тексеру"
+
+#: kleopatraapplication.cpp:111
+msgid "Location of the socket the ui server is listening on"
+msgstr "Пайдаланушы интерфейсі тыңдайтын сокетінің орналасуы"
+
+#: kleopatraapplication.cpp:118
+msgid "File(s) to process"
+msgstr "Өңдейтін файл(дар)ы"
+
 #: kwatchgnupg/aboutdata.cpp:40
 msgid "GnuPG log viewer"
 msgstr "GnuPG журналын қарау құралы"
@@ -3228,6 +3281,106 @@ msgstr "Үстінен жазу"
 #, kde-format
 msgid "Could not save file %1: %2"
 msgstr "%1 файлы жазылмайды: %2"
+
+#: mainwindow_desktop.cpp:121 mainwindow_mobile.cpp:151
+#, kde-format
+msgctxt "Quit [ApplicationName]"
+msgid "&Quit %1"
+msgstr "%1 дегеннен &шығу"
+
+#: mainwindow_desktop.cpp:127 mainwindow_mobile.cpp:157
+msgid "Only &Close Window"
+msgstr "Тек терезесі &жабылсын"
+
+#: mainwindow_desktop.cpp:159
+#, kde-format
+msgid ""
+"%1 may be used by other applications as a service.\n"
+"You may instead want to close this window without exiting %1."
+msgstr ""
+"%1 қызметін басқа бағдарлама әлі қолдануы мүмкін.\n"
+"%1 дегеннен шықпай, тек терезесін жабуға болады."
+
+#: mainwindow_desktop.cpp:161
+msgid "Really Quit?"
+msgstr "Шын шығасыз ба?"
+
+#: mainwindow_desktop.cpp:188 mainwindow_mobile.cpp:203
+msgid ""
+"Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
+"installation."
+msgstr ""
+"GnuPG журналын қарау құралы (kwatchgnupg) жегілмеді. Орнатылғанын тексеріңіз."
+
+#: mainwindow_desktop.cpp:190 mainwindow_mobile.cpp:205
+msgid "Error Starting KWatchGnuPG"
+msgstr "KWatchGnuPG жегу қатесі"
+
+#: mainwindow_desktop.cpp:195 mainwindow_mobile.cpp:210
+msgid ""
+"Could not start the GnuPG Administrative Console (kgpgconf). Please check "
+"your installation."
+msgstr "GnuPG әкімшілік консолі (kgpgconf) жегілмеді. Орнатылғанын тексеріңіз."
+
+#: mainwindow_desktop.cpp:197 mainwindow_mobile.cpp:212
+msgid "Error Starting KGpgConf"
+msgstr "KGpgConf жжегу қатесі"
+
+#: mainwindow_desktop.cpp:306
+msgid "GnuPG Log Viewer"
+msgstr "GnuPG журналын қарау"
+
+#: mainwindow_desktop.cpp:310
+msgid "GnuPG Administrative Console"
+msgstr "GnuPG әкімшілік консолі"
+
+#: mainwindow_desktop.cpp:315
+msgid "Configure GnuPG Backend..."
+msgstr "GnuPG тетігін баптау..."
+
+#: mainwindow_desktop.cpp:319 mainwindow_mobile.cpp:278
+msgid "Perform Self-Test"
+msgstr "Өз-өзін сынап шығу"
+
+#: mainwindow_desktop.cpp:323
+msgid "About Gpg4win"
+msgstr "Gpg4win туралы"
+
+#: mainwindow_desktop.cpp:351
+msgid "Could not configure the cryptography backend (gpgconf tool not found)"
+msgstr "Криптография тетігін баптауға болмайды (gpgconf табылмады)"
+
+#: mainwindow_desktop.cpp:351
+msgid "Configuration Error"
+msgstr "Баптау қатесі"
+
+#: mainwindow_desktop.cpp:383 mainwindow_mobile.cpp:345
+msgid ""
+"There are still some background operations ongoing. These will be terminated "
+"when closing the window. Proceed?"
+msgstr ""
+"Кейбір амалдар әлі орындалып жатыр. Терезені жапсаңыз, олар үзіледі. Үзіле "
+"берсін бе?"
+
+#: mainwindow_desktop.cpp:386 mainwindow_mobile.cpp:348
+msgid "Ongoing Background Tasks"
+msgstr "Әлі бітпеген тапсырмалар бар"
+
+#: mainwindow_desktop.cpp:467
+msgid "Sign/Encrypt..."
+msgstr "Қолтаңбалау/Шифрлау"
+
+#: mainwindow_desktop.cpp:468 systrayicon.cpp:190
+msgid "Decrypt/Verify..."
+msgstr "Шиифрын шешу/Тексеру"
+
+#: mainwindow_desktop.cpp:472
+msgid "Import Certificates"
+msgstr "Куәліктерді импорттау"
+
+#: mainwindow_desktop.cpp:473
+msgid "Import CRLs"
+msgstr "CRL-лерді импорттау..."
 
 #: models/keylistmodel.cpp:252
 msgid "E-Mail"
@@ -5233,158 +5386,6 @@ msgstr "CRL кэшін дамп ету"
 #: view/keylistcontroller.cpp:391
 msgid "Import CRL From File..."
 msgstr "CRL тізімін файлдан импорттау..."
-
-#: kleopatraapplication.cpp:93
-msgid "Run UI server only, hide main window"
-msgstr "Тек интерфейс сервері жегілсін, негізгі терезесі керек жоқы"
-
-#: kleopatraapplication.cpp:94
-msgid "Use OpenPGP for the following operation"
-msgstr "Келесі амал үшін OpenPGP пайдалансын"
-
-#: kleopatraapplication.cpp:95
-msgid "Use CMS (X.509, S/MIME) for the following operation"
-msgstr "Келесі амал үшін (X.509, S/MIME) пайдалансын"
-
-#: kleopatraapplication.cpp:96
-msgid "Import certificate file(s)"
-msgstr "Куәлікт(ерд)і импорттау"
-
-#: kleopatraapplication.cpp:97
-msgid "Encrypt file(s)"
-msgstr "Файлд(ард)ы шифрлау"
-
-#: kleopatraapplication.cpp:98
-msgid "Sign file(s)"
-msgstr "Файлд(ард)ы қолтаңбалау"
-
-#: kleopatraapplication.cpp:99
-msgid "Sign and/or encrypt file(s)"
-msgstr "Файл(дар)ды қолтаңбалау және/не шифрлау"
-
-#: kleopatraapplication.cpp:100
-msgid "Same as --sign-encrypt, do not use"
-msgstr "Бұл --sign-encrypt секілді, қолданбаңыз"
-
-#: kleopatraapplication.cpp:101
-msgid "Decrypt file(s)"
-msgstr "Файлд(ард)ың шифрын шешу"
-
-#: kleopatraapplication.cpp:102
-msgid "Verify file/signature"
-msgstr "Файлды/қолтаңбаны тексеру"
-
-#: kleopatraapplication.cpp:103
-msgid "Decrypt and/or verify file(s)"
-msgstr "Файлд(ард)ың шифрын шешу не/және тексеру"
-
-#: kleopatraapplication.cpp:111
-msgid "Location of the socket the ui server is listening on"
-msgstr "Пайдаланушы интерфейсі тыңдайтын сокетінің орналасуы"
-
-#: kleopatraapplication.cpp:118
-msgid "File(s) to process"
-msgstr "Өңдейтін файл(дар)ы"
-
-#: mainwindow_desktop.cpp:121 mainwindow_mobile.cpp:151
-#, kde-format
-msgctxt "Quit [ApplicationName]"
-msgid "&Quit %1"
-msgstr "%1 дегеннен &шығу"
-
-#: mainwindow_desktop.cpp:127 mainwindow_mobile.cpp:157
-msgid "Only &Close Window"
-msgstr "Тек терезесі &жабылсын"
-
-#: mainwindow_desktop.cpp:159
-#, kde-format
-msgid ""
-"%1 may be used by other applications as a service.\n"
-"You may instead want to close this window without exiting %1."
-msgstr ""
-"%1 қызметін басқа бағдарлама әлі қолдануы мүмкін.\n"
-"%1 дегеннен шықпай, тек терезесін жабуға болады."
-
-#: mainwindow_desktop.cpp:161
-msgid "Really Quit?"
-msgstr "Шын шығасыз ба?"
-
-#: mainwindow_desktop.cpp:188 mainwindow_mobile.cpp:203
-msgid ""
-"Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
-"installation."
-msgstr ""
-"GnuPG журналын қарау құралы (kwatchgnupg) жегілмеді. Орнатылғанын тексеріңіз."
-
-#: mainwindow_desktop.cpp:190 mainwindow_mobile.cpp:205
-msgid "Error Starting KWatchGnuPG"
-msgstr "KWatchGnuPG жегу қатесі"
-
-#: mainwindow_desktop.cpp:195 mainwindow_mobile.cpp:210
-msgid ""
-"Could not start the GnuPG Administrative Console (kgpgconf). Please check "
-"your installation."
-msgstr "GnuPG әкімшілік консолі (kgpgconf) жегілмеді. Орнатылғанын тексеріңіз."
-
-#: mainwindow_desktop.cpp:197 mainwindow_mobile.cpp:212
-msgid "Error Starting KGpgConf"
-msgstr "KGpgConf жжегу қатесі"
-
-#: mainwindow_desktop.cpp:306
-msgid "GnuPG Log Viewer"
-msgstr "GnuPG журналын қарау"
-
-#: mainwindow_desktop.cpp:310
-msgid "GnuPG Administrative Console"
-msgstr "GnuPG әкімшілік консолі"
-
-#: mainwindow_desktop.cpp:315
-msgid "Configure GnuPG Backend..."
-msgstr "GnuPG тетігін баптау..."
-
-#: mainwindow_desktop.cpp:319 mainwindow_mobile.cpp:278
-msgid "Perform Self-Test"
-msgstr "Өз-өзін сынап шығу"
-
-#: mainwindow_desktop.cpp:323
-msgid "About Gpg4win"
-msgstr "Gpg4win туралы"
-
-#: mainwindow_desktop.cpp:351
-msgid "Could not configure the cryptography backend (gpgconf tool not found)"
-msgstr "Криптография тетігін баптауға болмайды (gpgconf табылмады)"
-
-#: mainwindow_desktop.cpp:351
-msgid "Configuration Error"
-msgstr "Баптау қатесі"
-
-#: mainwindow_desktop.cpp:383 mainwindow_mobile.cpp:345
-msgid ""
-"There are still some background operations ongoing. These will be terminated "
-"when closing the window. Proceed?"
-msgstr ""
-"Кейбір амалдар әлі орындалып жатыр. Терезені жапсаңыз, олар үзіледі. Үзіле "
-"берсін бе?"
-
-#: mainwindow_desktop.cpp:386 mainwindow_mobile.cpp:348
-msgid "Ongoing Background Tasks"
-msgstr "Әлі бітпеген тапсырмалар бар"
-
-#: mainwindow_desktop.cpp:467
-msgid "Sign/Encrypt..."
-msgstr "Қолтаңбалау/Шифрлау"
-
-#: mainwindow_desktop.cpp:468 systrayicon.cpp:190
-msgid "Decrypt/Verify..."
-msgstr "Шиифрын шешу/Тексеру"
-
-#: mainwindow_desktop.cpp:472
-msgid "Import Certificates"
-msgstr "Куәліктерді импорттау"
-
-#: mainwindow_desktop.cpp:473
-msgid "Import CRLs"
-msgstr "CRL-лерді импорттау..."
 
 #: crlview.cpp:61
 msgid "CRL cache dump:"
