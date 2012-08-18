@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-16 02:50+0200\n"
+"POT-Creation-Date: 2012-08-18 03:03+0200\n"
 "PO-Revision-Date: 2012-07-17 04:37+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -79,10 +79,6 @@ msgstr "Қалыптарды орналастыру"
 msgid "Active tool: %1"
 msgstr "Белсенді құрал: %1"
 
-#: flake/svg/SvgShapeFactory.cpp:35
-msgid "Embedded svg shape"
-msgstr "Құрамдағы svg қалыпы"
-
 #: flake/commands/KoConnectionShapeTypeCommand.cpp:31
 msgctxt "(qtundo-format)"
 msgid "Change Connection"
@@ -103,6 +99,11 @@ msgstr "Сүрлеуге аудару"
 msgctxt "(qtundo-format)"
 msgid "Break subpath at points"
 msgstr "Ішкі сүрлеуін нүктеде үзу"
+
+#: flake/commands/KoPathCombineCommand.cpp:58
+msgctxt "(qtundo-format)"
+msgid "Combine paths"
+msgstr "Сүрлеулерді біріктіру"
 
 #: flake/commands/KoPathControlPointMoveCommand.cpp:41
 msgctxt "(qtundo-format)"
@@ -188,6 +189,13 @@ msgctxt "(qtundo-format)"
 msgid "Create shape"
 msgstr "Қалыпты құру"
 
+#: flake/commands/KoShapeDeleteCommand.cpp:56
+#: flake/commands/KoShapeDeleteCommand.cpp:69
+msgctxt "(qtundo-format)"
+msgid "Delete shape"
+msgid_plural "Delete shapes"
+msgstr[0] "Қалыптарды өшіру"
+
 #: flake/commands/KoShapeDistributeCommand.cpp:128
 msgctxt "(qtundo-format)"
 msgid "Distribute shapes"
@@ -227,6 +235,11 @@ msgctxt "(qtundo-format)"
 msgid "Reorder shapes"
 msgstr "Қалыптарды реттеу"
 
+#: flake/commands/KoShapeRunAroundCommand.cpp:72
+msgctxt "(qtundo-format)"
+msgid "Change Shape RunAround"
+msgstr "Қалыпты айналып өтуін өзгерту"
+
 #: flake/commands/KoShapeShadowCommand.cpp:67
 #: flake/commands/KoShapeShadowCommand.cpp:84
 #: flake/commands/KoShapeShadowCommand.cpp:95
@@ -243,6 +256,13 @@ msgstr "Қалыптарды қисайту"
 msgctxt "(qtundo-format)"
 msgid "Resize shapes"
 msgstr "Қалыптардің өлшемін өзгерту"
+
+#: flake/commands/KoShapeStrokeCommand.cpp:72
+#: flake/commands/KoShapeStrokeCommand.cpp:91
+#: flake/commands/KoShapeStrokeCommand.cpp:102
+msgctxt "(qtundo-format)"
+msgid "Set stroke"
+msgstr "Штрихті орнату"
 
 #: flake/commands/KoShapeTransparencyCommand.cpp:49
 #: flake/commands/KoShapeTransparencyCommand.cpp:60
@@ -281,29 +301,21 @@ msgctxt "(qtundo-format)"
 msgid "Remove subpath"
 msgstr "Ішкі сүрлеуін өшіру"
 
-#: flake/commands/KoPathCombineCommand.cpp:58
-msgctxt "(qtundo-format)"
-msgid "Combine paths"
-msgstr "Сүрлеулерді біріктіру"
+#: flake/svg/SvgShapeFactory.cpp:35
+msgid "Embedded svg shape"
+msgstr "Құрамдағы svg қалыпы"
 
-#: flake/commands/KoShapeStrokeCommand.cpp:72
-#: flake/commands/KoShapeStrokeCommand.cpp:91
-#: flake/commands/KoShapeStrokeCommand.cpp:102
-msgctxt "(qtundo-format)"
-msgid "Set stroke"
-msgstr "Штрихті орнату"
+#: flake/tools/KoCreatePathTool.cpp:374 flake/tools/KoPathTool.cpp:201
+msgid "Snapping"
+msgstr "Жабысу"
 
-#: flake/commands/KoShapeDeleteCommand.cpp:56
-#: flake/commands/KoShapeDeleteCommand.cpp:69
-msgctxt "(qtundo-format)"
-msgid "Delete shape"
-msgid_plural "Delete shapes"
-msgstr[0] "Қалыптарды өшіру"
+#: flake/tools/KoCreatePathTool.cpp:380
+msgid "Angle snapping delta:"
+msgstr "Жабысу бұрышының аттамы:"
 
-#: flake/commands/KoShapeRunAroundCommand.cpp:72
-msgctxt "(qtundo-format)"
-msgid "Change Shape RunAround"
-msgstr "Қалыпты айналып өтуін өзгерту"
+#: flake/tools/KoCreatePathTool.cpp:388
+msgid "Angle Constraints"
+msgstr "Бұрыш шектеулері"
 
 #: flake/tools/KoCreatePathToolFactory.cpp:33
 msgid "Create Path"
@@ -321,27 +333,6 @@ msgstr "Мәнзаралау"
 msgctxt "(qtundo-format)"
 msgid "Change Segment"
 msgstr "Кесіндіні өзгерту"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "Сүрлеуді өңдеу құралы"
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr "Ұлғайту/кішірейту"
-
-#: flake/tools/KoCreatePathTool.cpp:374 flake/tools/KoPathTool.cpp:201
-msgid "Snapping"
-msgstr "Жабысу"
-
-#: flake/tools/KoCreatePathTool.cpp:380
-msgid "Angle snapping delta:"
-msgstr "Жабысу бұрышының аттамы:"
-
-#: flake/tools/KoCreatePathTool.cpp:388
-msgid "Angle Constraints"
-msgstr "Бұрыш шектеулері"
 
 #: flake/tools/KoPathTool.cpp:106
 msgid "Corner point"
@@ -430,25 +421,14 @@ msgstr "Сүрлеуді таңдаған нүктеде үзу үшін B-ні 
 msgid "Press B to break path at selected segments."
 msgstr "Сүрлеуді таңдаған кесіндіде үзу үшін B-ні басыңыз."
 
-#: kokross/KoScriptingDocker.cpp:76 kokross/KoScriptingPart.cpp:85
-msgid "Scripts"
-msgstr "Скрипттер"
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "Сүрлеуді өңдеу құралы"
 
-#: kokross/KoScriptingDocker.cpp:111 kokross/KoScriptManager.cpp:297
-msgid "Script Manager"
-msgstr "Скрипт менеджері"
-
-#: kokross/KoScriptingPart.cpp:81
-msgid "Execute Script File..."
-msgstr "Скрипт файлын орындау..."
-
-#: kokross/KoScriptingPart.cpp:89
-msgid "Script Manager..."
-msgstr "Скрипт менеджері..."
-
-#: kokross/KoScriptingPart.cpp:158
-msgid "Execute Script File"
-msgstr "Скрипт файлын орындау"
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr "Ұлғайту/кішірейту"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -511,6 +491,10 @@ msgstr ""
 "\"%1\" скрипт дестесі орнатудан шығарылмайды. \"%1\" қапшығын өшіру "
 "рұқсатыңыз жеткіліксіз болуы мүмкін."
 
+#: kokross/KoScriptManager.cpp:297 kokross/KoScriptingDocker.cpp:111
+msgid "Script Manager"
+msgstr "Скрипт менеджері"
+
 #: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:588
 msgid "Save"
 msgstr "Сақтау"
@@ -557,172 +541,86 @@ msgstr "Скрипт"
 msgid "Collection"
 msgstr "Жинаққа"
 
-#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
+#: kokross/KoScriptingDocker.cpp:76 kokross/KoScriptingPart.cpp:85
+msgid "Scripts"
+msgstr "Скрипттер"
+
+#: kokross/KoScriptingPart.cpp:81
+msgid "Execute Script File..."
+msgstr "Скрипт файлын орындау..."
+
+#: kokross/KoScriptingPart.cpp:89
+msgid "Script Manager..."
+msgstr "Скрипт менеджері..."
+
+#: kokross/KoScriptingPart.cpp:158
+msgid "Execute Script File"
+msgstr "Скрипт файлын орындау"
+
+#: kopageapp/KoPADocumentModel.cpp:171 kopageapp/KoPAPageThumbnailModel.cpp:67
+#, kde-format
+msgid "Slide %1"
+msgstr "%1-слайд"
+
+#: kopageapp/KoPADocumentModel.cpp:173
+#, kde-format
+msgid "Page  %1"
+msgstr "%1-бет"
+
+#: kopageapp/KoPADocumentModel.cpp:177
+#: kopageapp/KoPADocumentStructureDocker.cpp:117
+msgid "Layer"
+msgstr "Қабаты"
+
+#: kopageapp/KoPADocumentModel.cpp:180
+msgid "Group"
+msgstr "Тобы"
+
+#: kopageapp/KoPADocumentModel.cpp:183
+msgid "Shape"
+msgstr "Қалып"
+
+#: kopageapp/KoPADocumentModel.cpp:269
+msgid "Rename Slide"
+msgstr "Слайдтың атауын өзгерту"
+
+#: kopageapp/KoPADocumentModel.cpp:272
+msgid "Rename Page"
+msgstr "Беттің атауын өзгерту"
+
+#: kopageapp/KoPADocumentModel.cpp:276
+msgid "Rename Layer"
+msgstr "Қабаттің атауын өзгерту"
+
+#: kopageapp/KoPADocumentModel.cpp:312
+#: kopageapp/KoPADocumentStructureDocker.cpp:114
+msgid "Slide"
+msgstr "Слайд"
+
+#: kopageapp/KoPADocumentModel.cpp:315
+msgid "Visible"
+msgstr "Көрінетін"
+
+#: kopageapp/KoPADocumentModel.cpp:316
+msgid "Locked"
+msgstr "Бұғатталған"
+
+#: kopageapp/KoPADocumentModel.cpp:524 kopageapp/KoPADocumentModel.cpp:545
 msgctxt "(qtundo-format)"
-msgid "Change master slide"
-msgstr "Үлгі слайдты өзгерту"
+msgid "Reparent shapes"
+msgstr "Қалыптарды қайта еншілеу"
 
-#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:38
-msgctxt "(qtundo-format)"
-msgid "Change master page"
-msgstr "Үлгі бетті өзгерту"
+#: kopageapp/KoPADocumentModel.cpp:666
+msgid "&Move Here"
+msgstr "Мұнда &жылжыту"
 
-#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
-msgctxt "(qtundo-format)"
-msgid "Set Page Layout"
-msgstr "Бетте орналасуы"
+#: kopageapp/KoPADocumentModel.cpp:670
+msgid "&Copy Here"
+msgstr "Мұнда &көшірмелеу"
 
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
-msgctxt "(qtundo-format)"
-msgid "Display master background"
-msgstr "Үлгі аясын көрсету"
-
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:35
-msgctxt "(qtundo-format)"
-msgid "Display slide background"
-msgstr "Слайдтың аясын көрсету"
-
-#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:38
-msgctxt "(qtundo-format)"
-msgid "Display page background"
-msgstr "Беттің аясын көрсету"
-
-#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:31
-msgctxt "(qtundo-format)"
-msgid "Show master shapes"
-msgstr "Жетекші қалыптарды көрсету"
-
-#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:34
-msgctxt "(qtundo-format)"
-msgid "Hide master shapes"
-msgstr "Жетекші қалыптарды жасыру"
-
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
-msgctxt "(qtundo-format)"
-msgid "Delete slide"
-msgid_plural "Delete slides"
-msgstr[0] "Слайдт(ард)ы өшіру"
-
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:42
-#: kopageapp/commands/KoPAPageDeleteCommand.cpp:66
-msgctxt "(qtundo-format)"
-msgid "Delete page"
-msgid_plural "Delete pages"
-msgstr[0] "Бетт(ерд)і өшіру"
-
-#: kopageapp/commands/KoPAPageInsertCommand.cpp:37
-msgctxt "(qtundo-format)"
-msgid "Insert slide"
-msgstr "Слайдты ендіру"
-
-#: kopageapp/commands/KoPAPageInsertCommand.cpp:40
-msgctxt "(qtundo-format)"
-msgid "Insert page"
-msgstr "Бетті ендіру"
-
-#: kopageapp/commands/KoPAPageMoveCommand.cpp:58
-msgctxt "(qtundo-format)"
-msgid "Move slide"
-msgid_plural "Move slides"
-msgstr[0] "Слайдт(ард)ы жылжыту"
-
-#: kopageapp/commands/KoPAPageMoveCommand.cpp:61
-msgctxt "(qtundo-format)"
-msgid "Move page"
-msgid_plural "Move pages"
-msgstr[0] "Бетт(ерд)і жылжыту"
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:41
-msgid "Select a master slide design:"
-msgstr "Слайдтың үлгі құрылымы:"
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:42
-msgid "Master Slide"
-msgstr "Үлгі слайды"
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:44
-msgid "Select a master page design:"
-msgstr "Беттің үлгі құрылымы:"
-
-#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:45
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:113
-msgid "Master Page"
-msgstr "Үлгі бет"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:37 main/KoMainWindow.cpp:1351
-msgid "Configure"
-msgstr "Баптау"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:42
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:43
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
-#: pigment/KoCompositeOpRegistry.cpp:36
-msgid "Misc"
-msgstr "Түрлі басқа"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:47
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:48
-#: main/config/KoConfigGridPage.cpp:65
-msgid "Grid"
-msgstr "Тор"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:54
-msgctxt "@title:tab Document settings page"
-msgid "Document"
-msgstr "Құжат"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:55
-#: main/config/KoConfigDocumentPage.cpp:58
-msgid "Document Settings"
-msgstr "Құжат параметрлері"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:59
-msgctxt "@title:tab Author page"
-msgid "Author"
-msgstr "Авторы"
-
-#: kopageapp/dialogs/KoPAConfigureDialog.cpp:60 main/KoDocumentInfoDlg.cpp:125
-msgid "Author"
-msgstr "Авторы"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
-msgid "Page Background"
-msgstr "Беттің аясын"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
-msgid "Slide Background"
-msgstr "Слайд аясы"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:31
-msgid "Document background"
-msgstr "Құжат аясы"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:51
-msgid "Use background of master slide"
-msgstr "Үлгі слайд аясы қолданылсын"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:51
-msgid "Use background of master page"
-msgstr "Үлгі слайд аясын қолдану"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:54
-msgid "Display shapes of master slide"
-msgstr "Үлгі слайдтың қалыптарын көрсету"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:54
-msgid "Display shapes of master page"
-msgstr "Үлгі бетттің қалыптарын көрсету"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:114
-msgctxt "(qtundo-format)"
-msgid "Change slide background image"
-msgstr "Үлгі слайдтың кескіндерін көрсету"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:115
-msgctxt "(qtundo-format)"
-msgid "Change page background image"
-msgstr "Беттің ая кескінін өзгерту"
+#: kopageapp/KoPADocumentModel.cpp:674
+msgid "C&ancel"
+msgstr "Қ&айту"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1733
 msgid "Document"
@@ -737,19 +635,9 @@ msgid "Add a new page or layer"
 msgstr "Жаңа бетті не қабатты қосу"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:114
-#: kopageapp/KoPADocumentModel.cpp:312
-msgid "Slide"
-msgstr "Слайд"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:114
 #: widgets/KoPageLayoutDialog.cpp:50
 msgid "Page"
 msgstr "Бет"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:117
-#: kopageapp/KoPADocumentModel.cpp:177
-msgid "Layer"
-msgstr "Қабаты"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:124
 #: kopageapp/KoPADocumentStructureDocker.cpp:644
@@ -781,12 +669,12 @@ msgid "View mode"
 msgstr "Көрсету режімі"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:329
-msgid "New Layer"
-msgstr "Жаңа қабат"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:329
 msgid "Enter the name of the new layer:"
 msgstr "Жаңа қабаттың атауы:"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:329
+msgid "New Layer"
+msgstr "Жаңа қабат"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:330
 msgid "New layer"
@@ -836,11 +724,6 @@ msgstr "Көшіріп алу"
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:171
-#, kde-format
-msgid "Slide %1"
-msgstr "%1-слайд"
-
 #: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, kde-format
 msgid "Page %1"
@@ -857,26 +740,6 @@ msgctxt "(qtundo-format)"
 msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Бетт(терд)і орналастыру"
-
-#: kopageapp/widgets/KoPageNavigator.cpp:68
-#, kde-format
-msgid "Master Slide %1/%2"
-msgstr "%1/%2 үлгі слайды"
-
-#: kopageapp/widgets/KoPageNavigator.cpp:69
-#, kde-format
-msgid "Slide %1/%2"
-msgstr "%1/%2-слайды"
-
-#: kopageapp/widgets/KoPageNavigator.cpp:70
-#, kde-format
-msgid "Master Page %1/%2"
-msgstr "%1/%2 үлгі беті"
-
-#: kopageapp/widgets/KoPageNavigator.cpp:71
-#, kde-format
-msgid "Page %1/%2"
-msgstr "%1/%2 беті"
 
 #: kopageapp/KoPAView.cpp:355
 msgid "D&elete"
@@ -966,74 +829,192 @@ msgctxt "(qtundo-format)"
 msgid "Change page layout"
 msgstr "Бет пішімін өзгерту"
 
-#: kopageapp/KoPADocumentModel.cpp:173
-#, kde-format
-msgid "Page  %1"
-msgstr "%1-бет"
-
-#: kopageapp/KoPADocumentModel.cpp:180
-msgid "Group"
-msgstr "Тобы"
-
-#: kopageapp/KoPADocumentModel.cpp:183
-msgid "Shape"
-msgstr "Қалып"
-
-#: kopageapp/KoPADocumentModel.cpp:269
-msgid "Rename Slide"
-msgstr "Слайдтың атауын өзгерту"
-
-#: kopageapp/KoPADocumentModel.cpp:272
-msgid "Rename Page"
-msgstr "Беттің атауын өзгерту"
-
-#: kopageapp/KoPADocumentModel.cpp:276
-msgid "Rename Layer"
-msgstr "Қабаттің атауын өзгерту"
-
-#: kopageapp/KoPADocumentModel.cpp:315
-msgid "Visible"
-msgstr "Көрінетін"
-
-#: kopageapp/KoPADocumentModel.cpp:316
-msgid "Locked"
-msgstr "Бұғатталған"
-
-#: kopageapp/KoPADocumentModel.cpp:524 kopageapp/KoPADocumentModel.cpp:545
+#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
-msgstr "Қалыптарды қайта еншілеу"
+msgid "Change master slide"
+msgstr "Үлгі слайдты өзгерту"
 
-#: kopageapp/KoPADocumentModel.cpp:666
-msgid "&Move Here"
-msgstr "Мұнда &жылжыту"
+#: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Change master page"
+msgstr "Үлгі бетті өзгерту"
 
-#: kopageapp/KoPADocumentModel.cpp:670
-msgid "&Copy Here"
-msgstr "Мұнда &көшірмелеу"
+#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
+msgctxt "(qtundo-format)"
+msgid "Set Page Layout"
+msgstr "Бетте орналасуы"
 
-#: kopageapp/KoPADocumentModel.cpp:674
-msgid "C&ancel"
-msgstr "Қ&айту"
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
+msgctxt "(qtundo-format)"
+msgid "Display master background"
+msgstr "Үлгі аясын көрсету"
 
-#: koreport/common/krpos.cpp:26
-msgid "Position"
-msgstr "Орны"
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:35
+msgctxt "(qtundo-format)"
+msgid "Display slide background"
+msgstr "Слайдтың аясын көрсету"
 
-#: koreport/common/krsize.cpp:26
-msgid "Size"
-msgstr "Өлшемі"
+#: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Display page background"
+msgstr "Беттің аясын көрсету"
 
-#: koreport/common/krsectiondata.cpp:109
-msgid "Height"
-msgstr "Биіктігі"
+#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:31
+msgctxt "(qtundo-format)"
+msgid "Show master shapes"
+msgstr "Жетекші қалыптарды көрсету"
 
-#: koreport/common/krsectiondata.cpp:110
-#: koreport/items/field/KoReportItemField.cpp:99
-#: koreport/items/label/KoReportItemLabel.cpp:102
-#: koreport/items/text/KoReportItemText.cpp:123
-msgid "Background Color"
-msgstr "Аясының түсі"
+#: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Hide master shapes"
+msgstr "Жетекші қалыптарды жасыру"
+
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Слайдт(ард)ы өшіру"
+
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:42
+#: kopageapp/commands/KoPAPageDeleteCommand.cpp:66
+msgctxt "(qtundo-format)"
+msgid "Delete page"
+msgid_plural "Delete pages"
+msgstr[0] "Бетт(ерд)і өшіру"
+
+#: kopageapp/commands/KoPAPageInsertCommand.cpp:37
+msgctxt "(qtundo-format)"
+msgid "Insert slide"
+msgstr "Слайдты ендіру"
+
+#: kopageapp/commands/KoPAPageInsertCommand.cpp:40
+msgctxt "(qtundo-format)"
+msgid "Insert page"
+msgstr "Бетті ендіру"
+
+#: kopageapp/commands/KoPAPageMoveCommand.cpp:58
+msgctxt "(qtundo-format)"
+msgid "Move slide"
+msgid_plural "Move slides"
+msgstr[0] "Слайдт(ард)ы жылжыту"
+
+#: kopageapp/commands/KoPAPageMoveCommand.cpp:61
+msgctxt "(qtundo-format)"
+msgid "Move page"
+msgid_plural "Move pages"
+msgstr[0] "Бетт(ерд)і жылжыту"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:37 main/KoMainWindow.cpp:1351
+msgid "Configure"
+msgstr "Баптау"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:42
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
+#: pigment/KoCompositeOpRegistry.cpp:36
+msgid "Misc"
+msgstr "Түрлі басқа"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:47
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:48
+#: main/config/KoConfigGridPage.cpp:65
+msgid "Grid"
+msgstr "Тор"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:54
+msgctxt "@title:tab Document settings page"
+msgid "Document"
+msgstr "Құжат"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:55
+#: main/config/KoConfigDocumentPage.cpp:58
+msgid "Document Settings"
+msgstr "Құжат параметрлері"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:59
+msgctxt "@title:tab Author page"
+msgid "Author"
+msgstr "Авторы"
+
+#: kopageapp/dialogs/KoPAConfigureDialog.cpp:60 main/KoDocumentInfoDlg.cpp:125
+msgid "Author"
+msgstr "Авторы"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:41
+msgid "Select a master slide design:"
+msgstr "Слайдтың үлгі құрылымы:"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:42
+msgid "Master Slide"
+msgstr "Үлгі слайды"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:44
+msgid "Select a master page design:"
+msgstr "Беттің үлгі құрылымы:"
+
+#: kopageapp/dialogs/KoPAMasterPageDialog.cpp:45
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:113
+msgid "Master Page"
+msgstr "Үлгі бет"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
+msgid "Page Background"
+msgstr "Беттің аясын"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:107
+msgid "Slide Background"
+msgstr "Слайд аясы"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:31
+msgid "Document background"
+msgstr "Құжат аясы"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:51
+msgid "Use background of master page"
+msgstr "Үлгі слайд аясын қолдану"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:51
+msgid "Use background of master slide"
+msgstr "Үлгі слайд аясы қолданылсын"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:54
+msgid "Display shapes of master page"
+msgstr "Үлгі бетттің қалыптарын көрсету"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:54
+msgid "Display shapes of master slide"
+msgstr "Үлгі слайдтың қалыптарын көрсету"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:114
+msgctxt "(qtundo-format)"
+msgid "Change slide background image"
+msgstr "Үлгі слайдтың кескіндерін көрсету"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:115
+msgctxt "(qtundo-format)"
+msgid "Change page background image"
+msgstr "Беттің ая кескінін өзгерту"
+
+#: kopageapp/widgets/KoPageNavigator.cpp:68
+#, kde-format
+msgid "Master Slide %1/%2"
+msgstr "%1/%2 үлгі слайды"
+
+#: kopageapp/widgets/KoPageNavigator.cpp:69
+#, kde-format
+msgid "Slide %1/%2"
+msgstr "%1/%2-слайды"
+
+#: kopageapp/widgets/KoPageNavigator.cpp:70
+#, kde-format
+msgid "Master Page %1/%2"
+msgstr "%1/%2 үлгі беті"
+
+#: kopageapp/widgets/KoPageNavigator.cpp:71
+#, kde-format
+msgid "Page %1/%2"
+msgstr "%1/%2 беті"
 
 #. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -1071,6 +1052,25 @@ msgstr "Сызықтың түсі"
 msgid "Line Style"
 msgstr "Сызықтың түрі"
 
+#: koreport/common/krpos.cpp:26
+msgid "Position"
+msgstr "Орны"
+
+#: koreport/common/krsectiondata.cpp:109
+msgid "Height"
+msgstr "Биіктігі"
+
+#: koreport/common/krsectiondata.cpp:110
+#: koreport/items/field/KoReportItemField.cpp:99
+#: koreport/items/label/KoReportItemLabel.cpp:102
+#: koreport/items/text/KoReportItemText.cpp:123
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#: koreport/common/krsize.cpp:26
+msgid "Size"
+msgstr "Өлшемі"
+
 #: koreport/items/check/KoReportCheckPlugin.cpp:36
 msgid "Check"
 msgstr "Белгісі"
@@ -1080,12 +1080,12 @@ msgid "Cross"
 msgstr "Айқыш"
 
 #: koreport/items/check/KoReportItemCheck.cpp:73
-msgid "Tick"
-msgstr "Құсбелгі"
-
-#: koreport/items/check/KoReportItemCheck.cpp:73
 msgid "Dot"
 msgstr "Нүкте"
+
+#: koreport/items/check/KoReportItemCheck.cpp:73
+msgid "Tick"
+msgstr "Құсбелгі"
 
 #: koreport/items/check/KoReportItemCheck.cpp:74
 msgid "Style"
@@ -1110,12 +1110,6 @@ msgid "Field"
 msgstr "Өріс"
 
 #: koreport/items/field/KoReportItemField.cpp:88
-#: koreport/items/label/KoReportItemLabel.cpp:91
-#: koreport/items/text/KoReportItemText.cpp:112
-msgid "Left"
-msgstr "Солға"
-
-#: koreport/items/field/KoReportItemField.cpp:88
 #: koreport/items/field/KoReportItemField.cpp:94
 #: koreport/items/label/KoReportItemLabel.cpp:91
 #: koreport/items/label/KoReportItemLabel.cpp:97
@@ -1123,6 +1117,12 @@ msgstr "Солға"
 #: koreport/items/text/KoReportItemText.cpp:118
 msgid "Center"
 msgstr "Ортаға"
+
+#: koreport/items/field/KoReportItemField.cpp:88
+#: koreport/items/label/KoReportItemLabel.cpp:91
+#: koreport/items/text/KoReportItemText.cpp:112
+msgid "Left"
+msgstr "Солға"
 
 #: koreport/items/field/KoReportItemField.cpp:88
 #: koreport/items/label/KoReportItemLabel.cpp:91
@@ -1139,14 +1139,14 @@ msgstr "Көлденең туралау"
 #: koreport/items/field/KoReportItemField.cpp:94
 #: koreport/items/label/KoReportItemLabel.cpp:97
 #: koreport/items/text/KoReportItemText.cpp:118
-msgid "Top"
-msgstr "Жоғарға"
+msgid "Bottom"
+msgstr "Төменге"
 
 #: koreport/items/field/KoReportItemField.cpp:94
 #: koreport/items/label/KoReportItemLabel.cpp:97
 #: koreport/items/text/KoReportItemText.cpp:118
-msgid "Bottom"
-msgstr "Төменге"
+msgid "Top"
+msgstr "Жоғарға"
 
 #: koreport/items/field/KoReportItemField.cpp:95
 #: koreport/items/label/KoReportItemLabel.cpp:98
@@ -1163,7 +1163,7 @@ msgstr "Қаріп"
 #: koreport/items/field/KoReportItemField.cpp:102
 #: koreport/items/label/KoReportItemLabel.cpp:104
 #: koreport/items/text/KoReportItemText.cpp:129
-#: widgets/KoUniColorChooser.cpp:418 widgets/KoColorPopupAction.cpp:95
+#: widgets/KoColorPopupAction.cpp:95 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
 msgstr "Мөлдірсіздік"
 
@@ -1227,32 +1227,6 @@ msgstr "Жарлық"
 msgid "Text"
 msgstr "Мәтін"
 
-#: koreport/wrtembed/reportpropertiesbutton.cpp:27
-msgid ""
-"A button that allows a report's surface to be selected, allowing its "
-"properties to be seen."
-msgstr ""
-"Бұл батырманы басқанда, қасиеттері көрсетіліп, баяндаманың қаптама бетін "
-"таңдап алуға мүмкіндік беріледі."
-
-#: koreport/wrtembed/sectioneditor.cpp:279
-msgid "Ascending"
-msgstr "Өсу ретімен"
-
-#: koreport/wrtembed/sectioneditor.cpp:280
-msgid "Descending"
-msgstr "Кему ретімен"
-
-#: koreport/wrtembed/sectioneditor.cpp:302
-#: koreport/wrtembed/sectioneditor.cpp:343
-msgid "Error Encountered"
-msgstr "Қате тап болды"
-
-#: koreport/wrtembed/sectioneditor.cpp:303
-#: koreport/wrtembed/sectioneditor.cpp:344
-msgid "Unable to add a new group because its name would not be unique"
-msgstr "Жаңа топ қосылмады, өйткені оның атауы қайталанады "
-
 #: koreport/wrtembed/KoReportDesigner.cpp:494
 msgid "Page Header (Any)"
 msgstr "Беттің жоғарғы колонтитулы (бүкілі)"
@@ -1306,28 +1280,28 @@ msgid "Report Footer"
 msgstr "Баяндаманың төменгі колонтитулы"
 
 #: koreport/wrtembed/KoReportDesigner.cpp:610
-msgid "Title"
-msgstr "Атауы"
-
-#: koreport/wrtembed/KoReportDesigner.cpp:610
 msgid "Report Title"
 msgstr "Баяндаманың атауы"
+
+#: koreport/wrtembed/KoReportDesigner.cpp:610
+msgid "Title"
+msgstr "Атауы"
 
 #: koreport/wrtembed/KoReportDesigner.cpp:614
 msgid "Page Size"
 msgstr "Беттің өлшемі"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:129
-#. i18n: ectx: property (text), widget (QRadioButton, portrait)
-#: koreport/wrtembed/KoReportDesigner.cpp:618 rc.cpp:616
-msgid "Portrait"
-msgstr "Тігінен"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:136
 #. i18n: ectx: property (text), widget (QRadioButton, landscape)
 #: koreport/wrtembed/KoReportDesigner.cpp:618 rc.cpp:619
 msgid "Landscape"
 msgstr "Көлденеңнен"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:129
+#. i18n: ectx: property (text), widget (QRadioButton, portrait)
+#: koreport/wrtembed/KoReportDesigner.cpp:618 rc.cpp:616
+msgid "Portrait"
+msgstr "Тігінен"
 
 #: koreport/wrtembed/KoReportDesigner.cpp:619
 msgid "Page Orientation"
@@ -1390,9 +1364,35 @@ msgctxt "<data-source>: <object>"
 msgid "%1: %2"
 msgstr "%1: %2"
 
+#: koreport/wrtembed/reportpropertiesbutton.cpp:27
+msgid ""
+"A button that allows a report's surface to be selected, allowing its "
+"properties to be seen."
+msgstr ""
+"Бұл батырманы басқанда, қасиеттері көрсетіліп, баяндаманың қаптама бетін "
+"таңдап алуға мүмкіндік беріледі."
+
 #: koreport/wrtembed/reportsection.cpp:95
 msgid "Detail"
 msgstr "Егжей-тегжейі"
+
+#: koreport/wrtembed/sectioneditor.cpp:279
+msgid "Ascending"
+msgstr "Өсу ретімен"
+
+#: koreport/wrtembed/sectioneditor.cpp:280
+msgid "Descending"
+msgstr "Кему ретімен"
+
+#: koreport/wrtembed/sectioneditor.cpp:302
+#: koreport/wrtembed/sectioneditor.cpp:343
+msgid "Error Encountered"
+msgstr "Қате тап болды"
+
+#: koreport/wrtembed/sectioneditor.cpp:303
+#: koreport/wrtembed/sectioneditor.cpp:344
+msgid "Unable to add a new group because its name would not be unique"
+msgstr "Жаңа топ қосылмады, өйткені оның атауы қайталанады "
 
 #: kotext/InsertTextLocator.cpp:33
 msgid "Index Reference"
@@ -1411,12 +1411,6 @@ msgstr "Алдымен сілтейтін индексін таңдау кере
 msgid "Select the index you want to reference"
 msgstr "Сілтейтін индексін таңдау"
 
-#: kotext/KoInlineTextObjectManager.cpp:321 main/KoView.cpp:530
-#: main/KoView.cpp:568
-msgctxt "choice for author profile"
-msgid "Anonymous"
-msgstr "Анонимді"
-
 #: kotext/KoFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -1427,12 +1421,11 @@ msgstr[0] "%1 сәйкестік табылды"
 msgid "Found no match"
 msgstr "Сәйкестік табылған жоқ"
 
-#: kotext/KoTextEditor_undo.cpp:88
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:373
-#: kotext/commands/DeleteCommand.cpp:253
-msgctxt "(qtundo-format)"
-msgid "Text"
-msgstr "Мәтін"
+#: kotext/KoInlineTextObjectManager.cpp:321 main/KoView.cpp:530
+#: main/KoView.cpp:568
+msgctxt "choice for author profile"
+msgid "Anonymous"
+msgstr "Анонимді"
 
 #: kotext/KoReplaceStrategy.cpp:56
 msgid ""
@@ -1469,12 +1462,6 @@ msgstr "Жалғыз"
 msgctxt "Underline Style"
 msgid "Double"
 msgstr "Қосарлы"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:128 kotext/KoTextEditor_p.h:164 rc.cpp:496
-msgid "Format"
-msgstr "Пішімі"
 
 #: kotext/KoTextEditor.cpp:171 kotext/KoTextEditor.cpp:1599
 #: kotext/KoTextEditor.cpp:1601
@@ -1584,93 +1571,6 @@ msgstr "Теру"
 msgid "Typing"
 msgstr "Теру"
 
-#: kotext/commands/ListItemNumberingCommand.cpp:35
-msgctxt "(qtundo-format)"
-msgid "Change List Numbering"
-msgstr "Тізім нөмірлеуін өзгерту"
-
-#: kotext/commands/TextPasteCommand.cpp:62
-msgctxt "(qtundo-format)"
-msgid "Paste As Text"
-msgstr "Мәтін деп орналастыру"
-
-#: kotext/commands/TextPasteCommand.cpp:64
-msgctxt "(qtundo-format)"
-msgid "Paste"
-msgstr "Орналастыру"
-
-#: kotext/commands/ResizeTableCommand.cpp:46
-msgctxt "(qtundo-format)"
-msgid "Adjust Column Width"
-msgstr "Бағанның енін шақтау"
-
-#: kotext/commands/ResizeTableCommand.cpp:48
-msgctxt "(qtundo-format)"
-msgid "Adjust Row Height"
-msgstr "Жол биіктігін келтіру"
-
-#: kotext/commands/ChangeStylesMacroCommand.cpp:37
-msgctxt "(qtundo-format)"
-msgid "Change Styles"
-msgstr "Стильдерін өзгерту"
-
-#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
-#: kotext/commands/DeleteCommand.cpp:50
-msgctxt "(qtundo-format)"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: kotext/commands/InsertNoteCommand.cpp:38
-msgctxt "(qtundo-format)"
-msgid "Insert Footnote"
-msgstr "Астылық сілтемені ендіру"
-
-#: kotext/commands/InsertNoteCommand.cpp:40
-msgctxt "(qtundo-format)"
-msgid "Insert Endnote"
-msgstr "Соңғылық сілтемені ендіру"
-
-#: kotext/commands/DeleteTableColumnCommand.cpp:40
-msgctxt "(qtundo-format)"
-msgid "Delete Column"
-msgstr "Бағанды өшіру"
-
-#: kotext/commands/DeleteTableRowCommand.cpp:40
-msgctxt "(qtundo-format)"
-msgid "Delete Row"
-msgstr "Қатарды өшіру"
-
-#: kotext/commands/InsertTableColumnCommand.cpp:42
-msgctxt "(qtundo-format)"
-msgid "Insert Column Right"
-msgstr "Оң жағына бағанды ендіру"
-
-#: kotext/commands/InsertTableColumnCommand.cpp:44
-msgctxt "(qtundo-format)"
-msgid "Insert Column Left"
-msgstr "Сол жағына бағанды ендіру"
-
-#: kotext/commands/InsertTableRowCommand.cpp:42
-msgctxt "(qtundo-format)"
-msgid "Insert Row Below"
-msgstr "Төменде қатарды ендіру"
-
-#: kotext/commands/InsertTableRowCommand.cpp:44
-msgctxt "(qtundo-format)"
-msgid "Insert Row Above"
-msgstr "Жоғарда қатарды ендіру"
-
-#: kotext/commands/ChangeListCommand.cpp:41
-#: kotext/commands/ChangeListCommand.cpp:88
-#: kotext/commands/ChangeListCommand.cpp:101
-msgctxt "(qtundo-format)"
-msgid "Change List"
-msgstr "Тізімді өзгерту"
-
-#: kotext/styles/KoStyleManager.cpp:101 kotext/styles/KoStyleManager.cpp:106
-msgid "Default"
-msgstr "Әдетті"
-
 #: kotext/KoTextEditor_format.cpp:77 kotext/KoTextEditor_format.cpp:83
 msgctxt "(qtundo-format)"
 msgid "Bold"
@@ -1744,25 +1644,125 @@ msgstr "Абзац стилін орнату"
 msgid "Formatting"
 msgstr "Пішімдеу"
 
-#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:848
-#, kde-format
-msgid "Undo %1"
-msgstr "%1 амалынан қайту"
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:128 kotext/KoTextEditor_p.h:164 rc.cpp:496
+msgid "Format"
+msgstr "Пішімі"
+
+#: kotext/KoTextEditor_undo.cpp:88
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:373
+#: kotext/commands/DeleteCommand.cpp:253
+msgctxt "(qtundo-format)"
+msgid "Text"
+msgstr "Мәтін"
+
+#: kotext/commands/ChangeListCommand.cpp:41
+#: kotext/commands/ChangeListCommand.cpp:88
+#: kotext/commands/ChangeListCommand.cpp:101
+msgctxt "(qtundo-format)"
+msgid "Change List"
+msgstr "Тізімді өзгерту"
+
+#: kotext/commands/ChangeStylesMacroCommand.cpp:37
+msgctxt "(qtundo-format)"
+msgid "Change Styles"
+msgstr "Стильдерін өзгерту"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:83
+#: kotext/commands/DeleteCommand.cpp:50
+msgctxt "(qtundo-format)"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: kotext/commands/DeleteTableColumnCommand.cpp:40
+msgctxt "(qtundo-format)"
+msgid "Delete Column"
+msgstr "Бағанды өшіру"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:40
+msgctxt "(qtundo-format)"
+msgid "Delete Row"
+msgstr "Қатарды өшіру"
+
+#: kotext/commands/InsertNoteCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Insert Footnote"
+msgstr "Астылық сілтемені ендіру"
+
+#: kotext/commands/InsertNoteCommand.cpp:40
+msgctxt "(qtundo-format)"
+msgid "Insert Endnote"
+msgstr "Соңғылық сілтемені ендіру"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:42
+msgctxt "(qtundo-format)"
+msgid "Insert Column Right"
+msgstr "Оң жағына бағанды ендіру"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:44
+msgctxt "(qtundo-format)"
+msgid "Insert Column Left"
+msgstr "Сол жағына бағанды ендіру"
+
+#: kotext/commands/InsertTableRowCommand.cpp:42
+msgctxt "(qtundo-format)"
+msgid "Insert Row Below"
+msgstr "Төменде қатарды ендіру"
+
+#: kotext/commands/InsertTableRowCommand.cpp:44
+msgctxt "(qtundo-format)"
+msgid "Insert Row Above"
+msgstr "Жоғарда қатарды ендіру"
+
+#: kotext/commands/ListItemNumberingCommand.cpp:35
+msgctxt "(qtundo-format)"
+msgid "Change List Numbering"
+msgstr "Тізім нөмірлеуін өзгерту"
+
+#: kotext/commands/ResizeTableCommand.cpp:46
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr "Бағанның енін шақтау"
+
+#: kotext/commands/ResizeTableCommand.cpp:48
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr "Жол биіктігін келтіру"
+
+#: kotext/commands/TextPasteCommand.cpp:62
+msgctxt "(qtundo-format)"
+msgid "Paste As Text"
+msgstr "Мәтін деп орналастыру"
+
+#: kotext/commands/TextPasteCommand.cpp:64
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Орналастыру"
+
+#: kotext/styles/KoStyleManager.cpp:101 kotext/styles/KoStyleManager.cpp:106
+msgid "Default"
+msgstr "Әдетті"
 
 #: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:848
 msgctxt "Default text for undo action"
 msgid "Undo"
 msgstr "Амалдан қайту"
 
-#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:874
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:848
 #, kde-format
-msgid "Redo %1"
-msgstr "%1 амалын қайталау"
+msgid "Undo %1"
+msgstr "%1 амалынан қайту"
 
 #: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:874
 msgctxt "Default text for redo action"
 msgid "Redo"
 msgstr "Қайтудан айну"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:874
+#, kde-format
+msgid "Redo %1"
+msgstr "%1 амалын қайталау"
 
 #: kundo2/kundo2stack.cpp:1081 main/KoMainWindow.cpp:1472
 #: main/KoUndoStackAction.cpp:45 main/KoUndoStackAction.cpp:53
@@ -1834,170 +1834,17 @@ msgstr "%1 үлгісі жүктелмеді."
 msgid "Unknown Calligra MimeType %1. Check your installation."
 msgstr "Беймәлім Calligra Mime түрі %1. Орнатуын тексеріңіз."
 
-#: main/KoDocumentInfoDlg.cpp:91 main/KoMainWindow.cpp:284
-msgid "Document Information"
-msgstr "Құжат туралы мәлімет"
+#: main/KoAutoSaveRecoveryDialog.cpp:184
+msgid "Recover Files"
+msgstr "Файлдарды қалпына келтіру"
 
-#: main/KoDocumentInfoDlg.cpp:106 main/KoDocumentInfoDlg.cpp:107
-msgid "General"
-msgstr "Жалпы"
+#: main/KoAutoSaveRecoveryDialog.cpp:189
+msgid "The following autosave file can be recovered:"
+msgstr "Келесі автосақталатын файл қалпына келтіруге келеді:"
 
-#: main/KoDocumentInfoDlg.cpp:126
-msgid "Last saved by"
-msgstr "Соңғы сақтағаны:"
-
-#: main/KoDocumentInfoDlg.cpp:141 main/KoDocumentInfoDlg.cpp:142
-msgid "Rdf"
-msgstr "Rdf"
-
-#: main/KoDocumentInfoDlg.cpp:190
-msgid "Use ';' (Example: Office;KDE;Calligra)"
-msgstr "';' таңбаны қолданыңыз (Мысалы: Office;KDE;Calligra)"
-
-#: main/KoDocumentInfoDlg.cpp:220 main/KoDocumentInfoDlg.cpp:318
-msgid "This document will be decrypted"
-msgstr "Құжаттың шифры шешілмек"
-
-#: main/KoDocumentInfoDlg.cpp:222 main/KoDocumentInfoDlg.cpp:320
-msgid "Do not decrypt"
-msgstr "Шифрын шешпеу"
-
-#: main/KoDocumentInfoDlg.cpp:225 main/KoDocumentInfoDlg.cpp:323
-msgid "This document is encrypted"
-msgstr "Құжат шифрланған"
-
-#: main/KoDocumentInfoDlg.cpp:227 main/KoDocumentInfoDlg.cpp:325
-msgid "D&ecrypt"
-msgstr "&Шифрын шешу"
-
-#: main/KoDocumentInfoDlg.cpp:232 main/KoDocumentInfoDlg.cpp:330
-msgid "This document will be encrypted."
-msgstr "Құжат шифрланбақ."
-
-#: main/KoDocumentInfoDlg.cpp:234 main/KoDocumentInfoDlg.cpp:332
-msgid "Do not encrypt"
-msgstr "Шифрламау"
-
-#: main/KoDocumentInfoDlg.cpp:237 main/KoDocumentInfoDlg.cpp:335
-msgid "This document is not encrypted"
-msgstr "Құжат шифрланбаған"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:298
-#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
-#: main/KoDocumentInfoDlg.cpp:239 main/KoDocumentInfoDlg.cpp:337 rc.cpp:433
-msgid "&Encrypt"
-msgstr "&Шифрлау"
-
-#: main/KoDocumentInfoDlg.cpp:243
-msgid "This document does not support encryption"
-msgstr "Бұл құжат шифрлауға жарамайды"
-
-#: main/KoDocumentInfoDlg.cpp:356
-msgid ""
-"<qt>Decrypting the document will remove the password protection from it."
-"<p>Do you still want to decrypt the file?</qt>"
-msgstr ""
-"<qt>Құжаттың шифрын шешсе, оны парольмен қорғауға болмайды.<p>Файлдың шифры "
-"шешілсін бе?</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:358
-msgid "Confirm Decrypt"
-msgstr "Шифрдың шешуін құптау"
-
-#: main/KoDocumentInfoDlg.cpp:359
-msgid "Decrypt"
-msgstr "Шифрын шешу"
-
-#: main/KoDocumentInfoDlg.cpp:370
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"decryption, please save the document.</qt>"
-msgstr ""
-"<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрын шешуді толығымен аяқтау "
-"үшін құжатты сақтаңыз.</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:372 main/KoDocumentInfoDlg.cpp:380
-#: main/KoDocumentInfoDlg.cpp:413 main/KoDocumentInfoDlg.cpp:421
-msgid "Save Document"
-msgstr "Құжатты сақтау"
-
-#: main/KoDocumentInfoDlg.cpp:378
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"decryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-"<qt>Құжат ашылғаннан кейін өзгертілген. Шифрын шешуді толығымен аяқтау үшін "
-"құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:392 main/KoMainWindow.cpp:758
-#, kde-format
-msgid "%1 (unknown file type)"
-msgstr "%1 (беймәлім файл түрі)"
-
-#: main/KoDocumentInfoDlg.cpp:395
-#, kde-format
-msgid ""
-"<qt>The document is currently saved as %1. The document needs to be changed "
-"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
-"file to OASIS OpenDocument?</qt>"
-msgstr ""
-"<qt>Құжат %1 деп сақталған. Шифрлау үшін оны <b>OASIS OpenDocument</b> деп "
-"ауыстыру керек.<p>Файл OASIS OpenDocument түріне ауыстырылсын ба?</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:397
-msgid "Change Filetype"
-msgstr "Файлдың түрін өзгерту"
-
-#: main/KoDocumentInfoDlg.cpp:398
-msgid "Change"
-msgstr "Өзгерту"
-
-#: main/KoDocumentInfoDlg.cpp:411
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"encryption, please save the document.</qt>"
-msgstr ""
-"<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрлауды толығымен аяқтау үшін "
-"құжатты сақтаңыз.</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:419
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"encryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-"<qt>Құжат ашылғаннан кейін өзгертілген. Шифрлауды толығымен аяқтау үшін "
-"құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
-
-#: main/KoDocumentInfo.cpp:53
-msgid "Unknown"
-msgstr "Беймәлім"
-
-#: main/KoView.cpp:521
-msgid "&New View"
-msgstr "&Жаңа көрініс"
-
-#: main/KoView.cpp:528
-msgid "Active Author Profile"
-msgstr "Белсенді автордың профилі"
-
-#: main/KoView.cpp:529 main/config/KoConfigAuthorPage.cpp:80
-msgid "Default Author Profile"
-msgstr "Әдетті автордың профилі"
-
-#: main/KoDocumentSectionDelegate.cpp:512
-#, kde-format
-msgid "%1 %"
-msgstr "%1 %"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "Yes"
-msgstr "Иә"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "No"
-msgstr "Жоқ"
+#: main/KoAutoSaveRecoveryDialog.cpp:192
+msgid "The following autosave files can be recovered:"
+msgstr "Келесі автосақталатын файлдар қалпына келтіруге келеді:"
 
 #: main/KoDocument.cpp:417
 msgid "Making backup..."
@@ -2262,6 +2109,159 @@ msgstr "сурет"
 msgid "Embedding Object"
 msgstr "Ендірме нысаны"
 
+#: main/KoDocumentInfo.cpp:53
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: main/KoDocumentInfoDlg.cpp:91 main/KoMainWindow.cpp:284
+msgid "Document Information"
+msgstr "Құжат туралы мәлімет"
+
+#: main/KoDocumentInfoDlg.cpp:106 main/KoDocumentInfoDlg.cpp:107
+msgid "General"
+msgstr "Жалпы"
+
+#: main/KoDocumentInfoDlg.cpp:126
+msgid "Last saved by"
+msgstr "Соңғы сақтағаны:"
+
+#: main/KoDocumentInfoDlg.cpp:141 main/KoDocumentInfoDlg.cpp:142
+msgid "Rdf"
+msgstr "Rdf"
+
+#: main/KoDocumentInfoDlg.cpp:190
+msgid "Use ';' (Example: Office;KDE;Calligra)"
+msgstr "';' таңбаны қолданыңыз (Мысалы: Office;KDE;Calligra)"
+
+#: main/KoDocumentInfoDlg.cpp:220 main/KoDocumentInfoDlg.cpp:318
+msgid "This document will be decrypted"
+msgstr "Құжаттың шифры шешілмек"
+
+#: main/KoDocumentInfoDlg.cpp:222 main/KoDocumentInfoDlg.cpp:320
+msgid "Do not decrypt"
+msgstr "Шифрын шешпеу"
+
+#: main/KoDocumentInfoDlg.cpp:225 main/KoDocumentInfoDlg.cpp:323
+msgid "This document is encrypted"
+msgstr "Құжат шифрланған"
+
+#: main/KoDocumentInfoDlg.cpp:227 main/KoDocumentInfoDlg.cpp:325
+msgid "D&ecrypt"
+msgstr "&Шифрын шешу"
+
+#: main/KoDocumentInfoDlg.cpp:232 main/KoDocumentInfoDlg.cpp:330
+msgid "This document will be encrypted."
+msgstr "Құжат шифрланбақ."
+
+#: main/KoDocumentInfoDlg.cpp:234 main/KoDocumentInfoDlg.cpp:332
+msgid "Do not encrypt"
+msgstr "Шифрламау"
+
+#: main/KoDocumentInfoDlg.cpp:237 main/KoDocumentInfoDlg.cpp:335
+msgid "This document is not encrypted"
+msgstr "Құжат шифрланбаған"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:298
+#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
+#: main/KoDocumentInfoDlg.cpp:239 main/KoDocumentInfoDlg.cpp:337 rc.cpp:433
+msgid "&Encrypt"
+msgstr "&Шифрлау"
+
+#: main/KoDocumentInfoDlg.cpp:243
+msgid "This document does not support encryption"
+msgstr "Бұл құжат шифрлауға жарамайды"
+
+#: main/KoDocumentInfoDlg.cpp:356
+msgid ""
+"<qt>Decrypting the document will remove the password protection from it."
+"<p>Do you still want to decrypt the file?</qt>"
+msgstr ""
+"<qt>Құжаттың шифрын шешсе, оны парольмен қорғауға болмайды.<p>Файлдың шифры "
+"шешілсін бе?</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:358
+msgid "Confirm Decrypt"
+msgstr "Шифрдың шешуін құптау"
+
+#: main/KoDocumentInfoDlg.cpp:359
+msgid "Decrypt"
+msgstr "Шифрын шешу"
+
+#: main/KoDocumentInfoDlg.cpp:370
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"decryption, please save the document.</qt>"
+msgstr ""
+"<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрын шешуді толығымен аяқтау "
+"үшін құжатты сақтаңыз.</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:372 main/KoDocumentInfoDlg.cpp:380
+#: main/KoDocumentInfoDlg.cpp:413 main/KoDocumentInfoDlg.cpp:421
+msgid "Save Document"
+msgstr "Құжатты сақтау"
+
+#: main/KoDocumentInfoDlg.cpp:378
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"decryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+"<qt>Құжат ашылғаннан кейін өзгертілген. Шифрын шешуді толығымен аяқтау үшін "
+"құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:392 main/KoMainWindow.cpp:758
+#, kde-format
+msgid "%1 (unknown file type)"
+msgstr "%1 (беймәлім файл түрі)"
+
+#: main/KoDocumentInfoDlg.cpp:395
+#, kde-format
+msgid ""
+"<qt>The document is currently saved as %1. The document needs to be changed "
+"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
+"file to OASIS OpenDocument?</qt>"
+msgstr ""
+"<qt>Құжат %1 деп сақталған. Шифрлау үшін оны <b>OASIS OpenDocument</b> деп "
+"ауыстыру керек.<p>Файл OASIS OpenDocument түріне ауыстырылсын ба?</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:397
+msgid "Change Filetype"
+msgstr "Файлдың түрін өзгерту"
+
+#: main/KoDocumentInfoDlg.cpp:398
+msgid "Change"
+msgstr "Өзгерту"
+
+#: main/KoDocumentInfoDlg.cpp:411
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"encryption, please save the document.</qt>"
+msgstr ""
+"<qt>Құжатыңыз автоматты түрде сақталмайды.<p>Шифрлауды толығымен аяқтау үшін "
+"құжатты сақтаңыз.</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:419
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"encryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+"<qt>Құжат ашылғаннан кейін өзгертілген. Шифрлауды толығымен аяқтау үшін "
+"құжатты сақтау керек.<p>Енді сақталсын ба?</qt>"
+
+#: main/KoDocumentSectionDelegate.cpp:512
+#, kde-format
+msgid "%1 %"
+msgstr "%1 %"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "No"
+msgstr "Жоқ"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "Yes"
+msgstr "Иә"
+
 #: main/KoExistingDocumentPane.cpp:45 main/KoMainWindow.cpp:1214
 #: main/KoOpenPane.cpp:359 main/KoOpenPane.cpp:363
 msgid "Open Document"
@@ -2286,18 +2286,6 @@ msgstr "%1 (Шифрланған)"
 #, kde-format
 msgid "%1 (%2 Compatible)"
 msgstr "%1 (%2 үйлесімді)"
-
-#: main/KoRuler.cpp:1270
-msgid "First line indent"
-msgstr "Алғашқы жол шегінісі"
-
-#: main/KoRuler.cpp:1271
-msgid "Left indent"
-msgstr "Сол жақ шегінісі"
-
-#: main/KoRuler.cpp:1272
-msgid "Right indent"
-msgstr "Оң жақ шегінісі"
 
 #: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
 msgid "Could not export file."
@@ -2333,12 +2321,12 @@ msgid "Match cases when searching"
 msgstr "Үлкен-кішілігін ескеріп іздеу"
 
 #: main/KoFindText.cpp:90
-msgid "Whole Words Only"
-msgstr "Тек бүтін сөздерді"
-
-#: main/KoFindText.cpp:90
 msgid "Match only whole words"
 msgstr "Тұтас сөздерді ғана іздеу"
+
+#: main/KoFindText.cpp:90
+msgid "Whole Words Only"
+msgstr "Тек бүтін сөздерді"
 
 #: main/KoFindText.cpp:91
 msgid "Find from Cursor"
@@ -2576,6 +2564,18 @@ msgctxt "File access date and time. %1 is date time"
 msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
 msgstr "<tr><td><b>Ашылған:</b></td><td>%1</td></tr>"
 
+#: main/KoRuler.cpp:1270
+msgid "First line indent"
+msgstr "Алғашқы жол шегінісі"
+
+#: main/KoRuler.cpp:1271
+msgid "Left indent"
+msgstr "Сол жақ шегінісі"
+
+#: main/KoRuler.cpp:1272
+msgid "Right indent"
+msgstr "Оң жақ шегінісі"
+
 #: main/KoStandardAction.cpp:31
 msgid "Show Guides"
 msgstr "Бағыттауыштарын көрсету"
@@ -2690,6 +2690,81 @@ msgstr "Осы Үлгіні қолдану"
 msgid "Tools"
 msgstr "Құралдар"
 
+#: main/KoToolDocker.cpp:191
+msgid "Tool Options"
+msgstr "Құрал параметрлері"
+
+#: main/KoToolDocker.cpp:224
+msgid "Toggles organising the options in tabs or not"
+msgstr "Қойындылар тәртібін қосу/ажырату"
+
+#: main/KoVersionDialog.cpp:49
+msgid "Version"
+msgstr "Нұсқасы"
+
+#: main/KoVersionDialog.cpp:65
+msgid "Date & Time"
+msgstr "Күні мен уақыты"
+
+#: main/KoVersionDialog.cpp:66
+msgid "Saved By"
+msgstr "Сақтаған"
+
+#: main/KoVersionDialog.cpp:67 main/KoVersionDialog.cpp:227
+msgid "Comment"
+msgstr "Түсініктемесі"
+
+#. i18n: file: koreport/wrtembed/sectioneditor.ui:186
+#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
+#: main/KoVersionDialog.cpp:74 rc.cpp:158
+msgid "&Add"
+msgstr "Қ&осу"
+
+#: main/KoVersionDialog.cpp:80
+msgid "&Modify"
+msgstr "Ө&згерту"
+
+#: main/KoVersionDialog.cpp:83
+msgid "&Open"
+msgstr "&Ашу"
+
+#: main/KoVersionDialog.cpp:137
+msgid "A new version could not be added"
+msgstr "Жаңа нұсқа қосылмайды"
+
+#: main/KoVersionDialog.cpp:241 main/KoVersionDialog.cpp:243
+#, kde-format
+msgid "Date: %1"
+msgstr "Күні: %1"
+
+#: main/KoView.cpp:521
+msgid "&New View"
+msgstr "&Жаңа көрініс"
+
+#: main/KoView.cpp:528
+msgid "Active Author Profile"
+msgstr "Белсенді автордың профилі"
+
+#: main/KoView.cpp:529 main/config/KoConfigAuthorPage.cpp:80
+msgid "Default Author Profile"
+msgstr "Әдетті автордың профилі"
+
+#: main/config/KoConfigAuthorPage.cpp:62
+msgid "Add new author profile (starts out as a copy of current)"
+msgstr "Жаңа автордың профилі (қазіргісінің көшірмесі болып басталады)"
+
+#: main/config/KoConfigAuthorPage.cpp:66
+msgid "Delete the author profile"
+msgstr "Автордың профилін өшіру"
+
+#: main/config/KoConfigAuthorPage.cpp:136
+msgid "Name (not duplicate or blank name):"
+msgstr "Атауы (бос емес және қайталанбайтын)"
+
+#: main/config/KoConfigAuthorPage.cpp:136
+msgid "Name of Profile"
+msgstr "Профилінің атауы"
+
 #: main/config/KoConfigDocumentPage.cpp:75
 msgid "Auto save (min):"
 msgstr "Автосақтау (мин)..."
@@ -2752,25 +2827,13 @@ msgstr "Орналастырудың ығысуы:"
 msgid "Paste at Cursor"
 msgstr "Меңзеген жерге орналастыру"
 
-#: main/config/KoConfigAuthorPage.cpp:62
-msgid "Add new author profile (starts out as a copy of current)"
-msgstr "Жаңа автордың профилі (қазіргісінің көшірмесі болып басталады)"
-
-#: main/config/KoConfigAuthorPage.cpp:66
-msgid "Delete the author profile"
-msgstr "Автордың профилін өшіру"
-
-#: main/config/KoConfigAuthorPage.cpp:136
-msgid "Name of Profile"
-msgstr "Профилінің атауы"
-
-#: main/config/KoConfigAuthorPage.cpp:136
-msgid "Name (not duplicate or blank name):"
-msgstr "Атауы (бос емес және қайталанбайтын)"
-
 #: main/rdf/InsertSemanticObjectReferenceAction.cpp:56
 msgid "Select the object you want to reference"
 msgstr "Сілтейтін нысанның түрін таңдау"
+
+#: main/rdf/KoDocumentRdf.cpp:903
+msgid "Reference"
+msgstr "Сілтемелер"
 
 #: main/rdf/KoDocumentRdfEditWidget.cpp:274
 #, kde-format
@@ -2933,105 +2996,6 @@ msgstr "Дерек түрі"
 #: main/rdf/KoSopranoTableModel.cpp:140
 msgid "Stored In"
 msgstr "Сақталған жері"
-
-#: main/rdf/KoDocumentRdf.cpp:903
-msgid "Reference"
-msgstr "Сілтемелер"
-
-#: main/KoAutoSaveRecoveryDialog.cpp:184
-msgid "Recover Files"
-msgstr "Файлдарды қалпына келтіру"
-
-#: main/KoAutoSaveRecoveryDialog.cpp:189
-msgid "The following autosave file can be recovered:"
-msgstr "Келесі автосақталатын файл қалпына келтіруге келеді:"
-
-#: main/KoAutoSaveRecoveryDialog.cpp:192
-msgid "The following autosave files can be recovered:"
-msgstr "Келесі автосақталатын файлдар қалпына келтіруге келеді:"
-
-#: main/KoVersionDialog.cpp:49
-msgid "Version"
-msgstr "Нұсқасы"
-
-#: main/KoVersionDialog.cpp:65
-msgid "Date & Time"
-msgstr "Күні мен уақыты"
-
-#: main/KoVersionDialog.cpp:66
-msgid "Saved By"
-msgstr "Сақтаған"
-
-#: main/KoVersionDialog.cpp:67 main/KoVersionDialog.cpp:227
-msgid "Comment"
-msgstr "Түсініктемесі"
-
-#. i18n: file: koreport/wrtembed/sectioneditor.ui:186
-#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
-#: main/KoVersionDialog.cpp:74 rc.cpp:158
-msgid "&Add"
-msgstr "Қ&осу"
-
-#: main/KoVersionDialog.cpp:80
-msgid "&Modify"
-msgstr "Ө&згерту"
-
-#: main/KoVersionDialog.cpp:83
-msgid "&Open"
-msgstr "&Ашу"
-
-#: main/KoVersionDialog.cpp:137
-msgid "A new version could not be added"
-msgstr "Жаңа нұсқа қосылмайды"
-
-#: main/KoVersionDialog.cpp:241 main/KoVersionDialog.cpp:243
-#, kde-format
-msgid "Date: %1"
-msgstr "Күні: %1"
-
-#: main/KoToolDocker.cpp:191
-msgid "Tool Options"
-msgstr "Құрал параметрлері"
-
-#: main/KoToolDocker.cpp:224
-msgid "Toggles organising the options in tabs or not"
-msgstr "Қойындылар тәртібін қосу/ажырату"
-
-#: odf/KoUnit.cpp:48
-msgid "Millimeters (mm)"
-msgstr "Миллиметр (мм)"
-
-#: odf/KoUnit.cpp:50
-msgid "Centimeters (cm)"
-msgstr "Сантиметр (см)"
-
-#: odf/KoUnit.cpp:52
-msgid "Decimeters (dm)"
-msgstr "Дециметр (дм)"
-
-#: odf/KoUnit.cpp:54
-msgid "Inches (in)"
-msgstr "Дюйм (д)"
-
-#: odf/KoUnit.cpp:56
-msgid "Pica (pi)"
-msgstr "Пика (пи)"
-
-#: odf/KoUnit.cpp:58
-msgid "Cicero (cc)"
-msgstr "Цицеро (цц)"
-
-#: odf/KoUnit.cpp:60
-msgid "Points (pt)"
-msgstr "Пойнт (пт)"
-
-#: odf/KoUnit.cpp:62
-msgid "Pixels (px)"
-msgstr "Пиксел (пк)"
-
-#: odf/KoUnit.cpp:64
-msgid "Error!"
-msgstr "Қате!"
 
 #: odf/KoEncryptedStore.cpp:165
 msgid ""
@@ -3261,6 +3225,42 @@ msgstr "Каталог режімі қашық орналасуын қолдам
 msgid "Calligra Storage"
 msgstr "Calligra сақтау қоймасы"
 
+#: odf/KoUnit.cpp:48
+msgid "Millimeters (mm)"
+msgstr "Миллиметр (мм)"
+
+#: odf/KoUnit.cpp:50
+msgid "Centimeters (cm)"
+msgstr "Сантиметр (см)"
+
+#: odf/KoUnit.cpp:52
+msgid "Decimeters (dm)"
+msgstr "Дециметр (дм)"
+
+#: odf/KoUnit.cpp:54
+msgid "Inches (in)"
+msgstr "Дюйм (д)"
+
+#: odf/KoUnit.cpp:56
+msgid "Pica (pi)"
+msgstr "Пика (пи)"
+
+#: odf/KoUnit.cpp:58
+msgid "Cicero (cc)"
+msgstr "Цицеро (цц)"
+
+#: odf/KoUnit.cpp:60
+msgid "Points (pt)"
+msgstr "Пойнт (пт)"
+
+#: odf/KoUnit.cpp:62
+msgid "Pixels (px)"
+msgstr "Пиксел (пк)"
+
+#: odf/KoUnit.cpp:64
+msgid "Error!"
+msgstr "Қате!"
+
 #: pigment/KoBasicHistogramProducers.cpp:353
 #: pigment/KoBasicHistogramProducers.h:194
 msgid "Generic RGB Histogram"
@@ -3295,6 +3295,10 @@ msgstr "a*"
 #: pigment/colorspaces/KoLabColorSpace.cpp:44
 msgid "b*"
 msgstr "b*"
+
+#: pigment/KoBasicHistogramProducers.h:231
+msgid "Generic L*a*b* Histogram"
+msgstr "Негізгі L*a*b* гистограммасы"
 
 #: pigment/KoColorModelStandardIds.cpp:25
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:261
@@ -3765,26 +3769,6 @@ msgstr "Альфа түстер кеңістігінде анықталмаға�
 msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr "L*a*b* (16-бит бүтін/арна, баптаусыз)"
 
-#: pigment/colorspaces/KoSimpleColorSpace.h:74
-#, kde-format
-msgid "Undefined operation in the %1 space"
-msgstr "%1 кеңістігінде анықталмаған амал"
-
-#: pigment/colorspaces/KoSimpleColorSpace.h:95
-#: pigment/colorspaces/KoSimpleColorSpace.h:100
-#: pigment/colorspaces/KoSimpleColorSpace.h:105
-#: pigment/colorspaces/KoSimpleColorSpace.h:110
-#: pigment/colorspaces/KoSimpleColorSpace.h:115
-#: pigment/colorspaces/KoSimpleColorSpace.h:119
-#: pigment/colorspaces/KoSimpleColorSpace.h:123
-#, kde-format
-msgid "Undefined operation in the %1 color space"
-msgstr "%1 түстер кеңістігінде анықталмаған амал"
-
-#: pigment/colorspaces/KoSimpleColorSpaceEngine.cpp:68
-msgid "Simple Color Conversion Engine"
-msgstr "Қарапайым түстер түрлендіру тетігі"
-
 #: pigment/colorspaces/KoRgbU16ColorSpace.cpp:40
 #: pigment/colorspaces/KoRgbU16ColorSpace.h:60
 msgid "RGB (16-bit integer/channel, unmanaged)"
@@ -3809,6 +3793,26 @@ msgstr "Жасыл"
 #: widgets/KoUniColorChooser.cpp:143
 msgid "Red"
 msgstr "Қызыл"
+
+#: pigment/colorspaces/KoSimpleColorSpace.h:74
+#, kde-format
+msgid "Undefined operation in the %1 space"
+msgstr "%1 кеңістігінде анықталмаған амал"
+
+#: pigment/colorspaces/KoSimpleColorSpace.h:95
+#: pigment/colorspaces/KoSimpleColorSpace.h:100
+#: pigment/colorspaces/KoSimpleColorSpace.h:105
+#: pigment/colorspaces/KoSimpleColorSpace.h:110
+#: pigment/colorspaces/KoSimpleColorSpace.h:115
+#: pigment/colorspaces/KoSimpleColorSpace.h:119
+#: pigment/colorspaces/KoSimpleColorSpace.h:123
+#, kde-format
+msgid "Undefined operation in the %1 color space"
+msgstr "%1 түстер кеңістігінде анықталмаған амал"
+
+#: pigment/colorspaces/KoSimpleColorSpaceEngine.cpp:68
+msgid "Simple Color Conversion Engine"
+msgstr "Қарапайым түстер түрлендіру тетігі"
 
 #: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
 msgid "Alpha darken"
@@ -3841,396 +3845,6 @@ msgstr "Қосымша-Айырылымша"
 #: pigment/resources/KoStopGradient.cpp:420
 msgid "SVG Gradient"
 msgstr "SVG градиенті"
-
-#: pigment/KoBasicHistogramProducers.h:231
-msgid "Generic L*a*b* Histogram"
-msgstr "Негізгі L*a*b* гистограммасы"
-
-#: textlayout/ListItemsHelper.cpp:222
-msgctxt "Text list-style"
-msgid "None"
-msgstr "Жоқ"
-
-#: textlayout/ListItemsHelper.cpp:223
-msgid "Small Bullet"
-msgstr "Шағын нүктелі"
-
-#: textlayout/ListItemsHelper.cpp:224
-msgid "Circle Bullet"
-msgstr "Шеңберлі"
-
-#: textlayout/ListItemsHelper.cpp:225
-msgid "Square Bullet"
-msgstr "Шаршылы"
-
-#: textlayout/ListItemsHelper.cpp:226
-msgid "Rhombus Bullet"
-msgstr "Ромбты"
-
-#: textlayout/ListItemsHelper.cpp:227
-msgid "Check Mark Bullet"
-msgstr "Құсбелілі"
-
-#: textlayout/ListItemsHelper.cpp:228
-msgid "Rightwards Arrow Bullet"
-msgstr "Оң жебелі"
-
-#: textlayout/ListItemsHelper.cpp:229
-msgid "Arabic"
-msgstr "Кәдімгі сан"
-
-#: textlayout/ListItemsHelper.cpp:230
-msgid "Lower Alphabetical"
-msgstr "Кіші әріп"
-
-#: textlayout/ListItemsHelper.cpp:231
-msgid "Upper Alphabetical"
-msgstr "Бас әріп"
-
-#: textlayout/ListItemsHelper.cpp:232
-msgid "Lower Roman"
-msgstr "Кіші римдік"
-
-#: textlayout/ListItemsHelper.cpp:233
-msgid "Upper Roman"
-msgstr "Үлкен римдік"
-
-#: textlayout/ListItemsHelper.cpp:240
-msgid "Large Bullet"
-msgstr "Үлкен нүктелі"
-
-#: textlayout/ListItemsHelper.cpp:241
-msgid "Ballot X Bullet"
-msgstr "Бюллетень X-ті"
-
-#: textlayout/ListItemsHelper.cpp:242
-msgid "Rightwards Arrow Head Bullet"
-msgstr "Оң жебе ұшты"
-
-#: textlayout/ListItemsHelper.cpp:243
-msgid "Bengali"
-msgstr "Бенгали"
-
-#: textlayout/ListItemsHelper.cpp:244
-msgid "Gujarati"
-msgstr "Гуджарати"
-
-#: textlayout/ListItemsHelper.cpp:245
-msgid "Gurumukhi"
-msgstr "Гурумухи"
-
-#: textlayout/ListItemsHelper.cpp:246
-msgid "Kannada"
-msgstr "Каннада"
-
-#: textlayout/ListItemsHelper.cpp:247
-msgid "Malayalam"
-msgstr "Малайям"
-
-#: textlayout/ListItemsHelper.cpp:248
-msgid "Oriya"
-msgstr "Ория"
-
-#: textlayout/ListItemsHelper.cpp:249
-msgid "Tamil"
-msgstr "Тамил"
-
-#: textlayout/ListItemsHelper.cpp:250
-msgid "Telugu"
-msgstr "Телугу"
-
-#: textlayout/ListItemsHelper.cpp:251
-msgid "Tibetan"
-msgstr "Тибеттік"
-
-#: textlayout/ListItemsHelper.cpp:252
-msgid "Thai"
-msgstr "Тай"
-
-#: textlayout/ListItemsHelper.cpp:253
-msgid "Abjad"
-msgstr "Абжад"
-
-#: textlayout/ListItemsHelper.cpp:254
-msgid "AbjadMinor"
-msgstr "КішіАбжад"
-
-#: textlayout/ListItemsHelper.cpp:255
-msgid "ArabicAlphabet"
-msgstr "Араб әліппесі"
-
-#: widgets/KoUniColorChooser.cpp:134
-msgid "Value (brightness)"
-msgstr "Мәні (жарықтығы)"
-
-#: widgets/KoUniColorChooser.cpp:168
-msgid "Cyan"
-msgstr "Циан"
-
-#: widgets/KoUniColorChooser.cpp:176
-msgid "Magenta"
-msgstr "Маджента"
-
-#: widgets/KoUniColorChooser.cpp:184
-msgid "Yellow"
-msgstr "Сары"
-
-#: widgets/KoUniColorChooser.cpp:192
-msgid "Black"
-msgstr "Қара"
-
-#: widgets/KoUniColorChooser.cpp:209
-msgid "Green to magenta*"
-msgstr "Жасылды маджентаға"
-
-#: widgets/KoUniColorChooser.cpp:217
-msgid "Blue to yellow"
-msgstr "Көкті сарыға"
-
-#: widgets/KoUniColorChooser.cpp:221
-msgid "Opacity:"
-msgstr "Мөлдірсіздігі:"
-
-#: widgets/KoCsvImportDialog.cpp:93
-msgid "Import Data"
-msgstr "Деректі импорттау"
-
-#: widgets/KoCsvImportDialog.cpp:96
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr "Жөн деп табылатыны ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:97
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr "Жергілікті стандарт ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:100
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "Басқа ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
-#: widgets/KoCsvImportDialog.cpp:579
-msgid "Generic"
-msgstr "Негізгі"
-
-#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
-msgid "Date"
-msgstr "Күні"
-
-#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
-msgid "Currency"
-msgstr "Ақша"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:268
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
-#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:526
-msgid "None"
-msgstr "Жоқ"
-
-#: widgets/KoCsvImportDialog.cpp:721
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr "Келтірген ауқымды тексеріңіз. Бастауы соңынан кем болу керек қой."
-
-#: widgets/KoCsvImportDialog.cpp:767
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr "Кодтама табылған жоқ: %1"
-
-#: widgets/KoColorSetWidget.cpp:186
-msgid "Recent:"
-msgstr "Жуырдағысы:"
-
-#: widgets/KoColorSetWidget.cpp:199
-msgid "Add / Remove Colors..."
-msgstr "Түстерді қосу / кетіру..."
-
-#: widgets/KoZoomAction.cpp:173 widgets/KoZoomAction.cpp:175
-#: widgets/KoZoomAction.cpp:187 widgets/KoZoomAction.cpp:189
-#: widgets/KoZoomMode.cpp:26
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: widgets/KoZoomAction.cpp:271
-msgid "Use same aspect as pixels"
-msgstr "Жақтар ара қатынасы пикселдердегідей"
-
-#: widgets/KoZoomAction.cpp:279
-msgid "Zoom to Selection"
-msgstr "Тандағанды ұғайту"
-
-#: widgets/KoZoomAction.cpp:287
-msgid "Zoom to All"
-msgstr "Барлығын ұғайту"
-
-#: widgets/KoResourceItemChooser.cpp:126
-msgid "Import Resource"
-msgstr "Ресурсты импорттау"
-
-#: widgets/KoResourceItemChooser.cpp:133
-msgid "Delete Resource"
-msgstr "Ресурсты жою"
-
-#: widgets/KoResourceItemChooser.cpp:140
-msgid "Download Resource"
-msgstr "Ресурсты жүктеп алу"
-
-#: widgets/KoResourceItemChooser.cpp:148
-msgid "Share Resource"
-msgstr "Ресурсты ортақтастыру"
-
-#: widgets/KoResourceItemChooser.cpp:190
-msgid "Choose File to Add"
-msgstr "Қосатын файлды таңдау"
-
-#: widgets/KoViewItemContextBar.cpp:227
-msgid "deselect item"
-msgstr "аталымды таңдауынан айну"
-
-#: widgets/KoViewItemContextBar.cpp:227
-msgid "select item"
-msgstr "аталымды таңдау"
-
-#: widgets/KoPageLayoutDialog.cpp:46
-msgid "Page Layout"
-msgstr "Беттің пішімі"
-
-#: widgets/KoPageLayoutDialog.cpp:107
-msgid "Apply to document"
-msgstr "Құжатқа қолдану"
-
-#: widgets/KoStrokeConfigWidget.cpp:91
-msgid "Style:"
-msgstr "Стилі:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: widgets/KoStrokeConfigWidget.cpp:97 rc.cpp:607
-msgid "Width:"
-msgstr "Ені:"
-
-#: widgets/KoStrokeConfigWidget.cpp:104
-msgid "Set line width of actual selection"
-msgstr "Сызықтың ені таңдалғандай болсын"
-
-#: widgets/KoStrokeConfigWidget.cpp:108
-msgid "Cap:"
-msgstr "Ұшы:"
-
-#: widgets/KoStrokeConfigWidget.cpp:118
-msgid "Butt cap"
-msgstr "Доғал ұшты"
-
-#: widgets/KoStrokeConfigWidget.cpp:125
-msgid "Round cap"
-msgstr "Дөңгелек ұшты"
-
-#: widgets/KoStrokeConfigWidget.cpp:132
-msgid "Square cap"
-msgstr "Тікбұрышты ұшы"
-
-#: widgets/KoStrokeConfigWidget.cpp:137
-msgid "Join:"
-msgstr "Түйісі:"
-
-#: widgets/KoStrokeConfigWidget.cpp:146
-msgid "Miter join"
-msgstr "Фацетті түйісі"
-
-#: widgets/KoStrokeConfigWidget.cpp:153
-msgid "Round join"
-msgstr "Дөңгеленіп түйісу"
-
-#: widgets/KoStrokeConfigWidget.cpp:160
-msgid "Bevel join"
-msgstr "Қиғаштап түйісу"
-
-#: widgets/KoStrokeConfigWidget.cpp:165
-msgid "Miter limit:"
-msgstr "Фацет шегі:"
-
-#: widgets/KoStrokeConfigWidget.cpp:172
-msgid "Set miter limit"
-msgstr "Фацетің шектеу"
-
-#: widgets/KoUniColorDialog.cpp:39
-msgid "Color Selector"
-msgstr "Түс таңдағышы"
-
-#: widgets/KoZoomMode.cpp:27
-msgid "Fit Page Width"
-msgstr "Парақтың енін шақтау"
-
-#: widgets/KoZoomMode.cpp:28
-msgid "Fit Page"
-msgstr "Бетке шақтау"
-
-#: widgets/KoZoomMode.cpp:30
-msgid "Actual Pixels"
-msgstr "Іс жүзіндегі пикселдер"
-
-#: widgets/KoPageLayoutWidget.cpp:184
-msgid "Left Edge:"
-msgstr "Сол жақ шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:185
-msgid "Right Edge:"
-msgstr "Оң жақ шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:188
-msgid "Binding Edge:"
-msgstr "Түбтеу шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:189
-msgid "Page Edge:"
-msgstr "Беттің шеті:"
-
-#: widgets/KoPageLayoutWidget.cpp:285
-msgid "Facing Pages:"
-msgstr "Беттер ашылымы:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:160
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:286 rc.cpp:628
-msgid "Facing pages"
-msgstr "Беттер ашылымы"
-
-#: widgets/KoPageLayoutWidget.cpp:289
-msgid "Page Layout:"
-msgstr "Орналасуы:"
-
-#: widgets/KoPageLayoutWidget.cpp:290
-msgid "Page spread"
-msgstr "Бет жайлымы"
-
-#: widgets/KoEditColorSetDialog.cpp:159
-msgid "Add Color To Palette"
-msgstr "Палитраға түсті қосу"
-
-#: widgets/KoEditColorSetDialog.cpp:159
-msgid "Color name:"
-msgstr "Түстің атауы:"
-
-#: widgets/KoEditColorSetDialog.cpp:197
-#, kde-format
-msgid "Cannot write to palette file %1. Maybe it is read-only. "
-msgstr "%1 палитра файлы жазылмады. Бәлкім, ол тек оқу үшін шығар. "
-
-#: widgets/KoEditColorSetDialog.cpp:197
-msgid "Palette"
-msgstr "Палитра"
-
-#: widgets/KoEditColorSetDialog.cpp:211
-msgid "Add/Remove Colors"
-msgstr "Түстерді қосу/кетіру"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5136,6 +4750,13 @@ msgstr "\""
 msgid "'"
 msgstr "'"
 
+#. i18n: file: widgets/KoCsvImportDialog.ui:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: rc.cpp:526 widgets/KoCsvImportDialog.cpp:223
+#: widgets/KoCsvImportDialog.cpp:587 widgets/KoCsvImportDialog.cpp:694
+msgid "None"
+msgstr "Жоқ"
+
 #. i18n: file: widgets/KoCsvImportDialog.ui:292
 #. i18n: ectx: property (text), widget (QLabel, label3)
 #: rc.cpp:529
@@ -5258,6 +4879,12 @@ msgstr "Стиліне еру"
 msgid "Size:"
 msgstr "Өлшемі:"
 
+#. i18n: file: widgets/KoPageLayoutWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:607 widgets/KoStrokeConfigWidget.cpp:97
+msgid "Width:"
+msgstr "Ені:"
+
 #. i18n: file: widgets/KoPageLayoutWidget.ui:104
 #. i18n: ectx: property (text), widget (QLabel)
 #: rc.cpp:610
@@ -5281,6 +4908,12 @@ msgstr "Беттер ашылымы:"
 #: rc.cpp:625
 msgid "Single sided"
 msgstr "Бір жақты"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:160
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: rc.cpp:628 widgets/KoPageLayoutWidget.cpp:286
+msgid "Facing pages"
+msgstr "Беттер ашылымы"
 
 #. i18n: file: widgets/KoPageLayoutWidget.ui:167
 #. i18n: ectx: property (text), widget (QLabel, directionLabel)
@@ -5335,6 +4968,373 @@ msgstr "Беттің шеті"
 #: rc.cpp:655
 msgid "Bottom:"
 msgstr "Төменгі:"
+
+#: textlayout/ListItemsHelper.cpp:222
+msgctxt "Text list-style"
+msgid "None"
+msgstr "Жоқ"
+
+#: textlayout/ListItemsHelper.cpp:223
+msgid "Small Bullet"
+msgstr "Шағын нүктелі"
+
+#: textlayout/ListItemsHelper.cpp:224
+msgid "Circle Bullet"
+msgstr "Шеңберлі"
+
+#: textlayout/ListItemsHelper.cpp:225
+msgid "Square Bullet"
+msgstr "Шаршылы"
+
+#: textlayout/ListItemsHelper.cpp:226
+msgid "Rhombus Bullet"
+msgstr "Ромбты"
+
+#: textlayout/ListItemsHelper.cpp:227
+msgid "Check Mark Bullet"
+msgstr "Құсбелілі"
+
+#: textlayout/ListItemsHelper.cpp:228
+msgid "Rightwards Arrow Bullet"
+msgstr "Оң жебелі"
+
+#: textlayout/ListItemsHelper.cpp:229
+msgid "Arabic"
+msgstr "Кәдімгі сан"
+
+#: textlayout/ListItemsHelper.cpp:230
+msgid "Lower Alphabetical"
+msgstr "Кіші әріп"
+
+#: textlayout/ListItemsHelper.cpp:231
+msgid "Upper Alphabetical"
+msgstr "Бас әріп"
+
+#: textlayout/ListItemsHelper.cpp:232
+msgid "Lower Roman"
+msgstr "Кіші римдік"
+
+#: textlayout/ListItemsHelper.cpp:233
+msgid "Upper Roman"
+msgstr "Үлкен римдік"
+
+#: textlayout/ListItemsHelper.cpp:240
+msgid "Large Bullet"
+msgstr "Үлкен нүктелі"
+
+#: textlayout/ListItemsHelper.cpp:241
+msgid "Ballot X Bullet"
+msgstr "Бюллетень X-ті"
+
+#: textlayout/ListItemsHelper.cpp:242
+msgid "Rightwards Arrow Head Bullet"
+msgstr "Оң жебе ұшты"
+
+#: textlayout/ListItemsHelper.cpp:243
+msgid "Bengali"
+msgstr "Бенгали"
+
+#: textlayout/ListItemsHelper.cpp:244
+msgid "Gujarati"
+msgstr "Гуджарати"
+
+#: textlayout/ListItemsHelper.cpp:245
+msgid "Gurumukhi"
+msgstr "Гурумухи"
+
+#: textlayout/ListItemsHelper.cpp:246
+msgid "Kannada"
+msgstr "Каннада"
+
+#: textlayout/ListItemsHelper.cpp:247
+msgid "Malayalam"
+msgstr "Малайям"
+
+#: textlayout/ListItemsHelper.cpp:248
+msgid "Oriya"
+msgstr "Ория"
+
+#: textlayout/ListItemsHelper.cpp:249
+msgid "Tamil"
+msgstr "Тамил"
+
+#: textlayout/ListItemsHelper.cpp:250
+msgid "Telugu"
+msgstr "Телугу"
+
+#: textlayout/ListItemsHelper.cpp:251
+msgid "Tibetan"
+msgstr "Тибеттік"
+
+#: textlayout/ListItemsHelper.cpp:252
+msgid "Thai"
+msgstr "Тай"
+
+#: textlayout/ListItemsHelper.cpp:253
+msgid "Abjad"
+msgstr "Абжад"
+
+#: textlayout/ListItemsHelper.cpp:254
+msgid "AbjadMinor"
+msgstr "КішіАбжад"
+
+#: textlayout/ListItemsHelper.cpp:255
+msgid "ArabicAlphabet"
+msgstr "Араб әліппесі"
+
+#: widgets/KoColorSetWidget.cpp:186
+msgid "Recent:"
+msgstr "Жуырдағысы:"
+
+#: widgets/KoColorSetWidget.cpp:199
+msgid "Add / Remove Colors..."
+msgstr "Түстерді қосу / кетіру..."
+
+#: widgets/KoCsvImportDialog.cpp:93
+msgid "Import Data"
+msgstr "Деректі импорттау"
+
+#: widgets/KoCsvImportDialog.cpp:96
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr "Жөн деп табылатыны ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:97
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr "Жергілікті стандарт ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:100
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "Басқа ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
+#: widgets/KoCsvImportDialog.cpp:579
+msgid "Generic"
+msgstr "Негізгі"
+
+#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
+msgid "Date"
+msgstr "Күні"
+
+#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
+msgid "Currency"
+msgstr "Ақша"
+
+#: widgets/KoCsvImportDialog.cpp:721
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr "Келтірген ауқымды тексеріңіз. Бастауы соңынан кем болу керек қой."
+
+#: widgets/KoCsvImportDialog.cpp:767
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr "Кодтама табылған жоқ: %1"
+
+#: widgets/KoEditColorSetDialog.cpp:159
+msgid "Add Color To Palette"
+msgstr "Палитраға түсті қосу"
+
+#: widgets/KoEditColorSetDialog.cpp:159
+msgid "Color name:"
+msgstr "Түстің атауы:"
+
+#: widgets/KoEditColorSetDialog.cpp:197
+#, kde-format
+msgid "Cannot write to palette file %1. Maybe it is read-only. "
+msgstr "%1 палитра файлы жазылмады. Бәлкім, ол тек оқу үшін шығар. "
+
+#: widgets/KoEditColorSetDialog.cpp:197
+msgid "Palette"
+msgstr "Палитра"
+
+#: widgets/KoEditColorSetDialog.cpp:211
+msgid "Add/Remove Colors"
+msgstr "Түстерді қосу/кетіру"
+
+#: widgets/KoPageLayoutDialog.cpp:46
+msgid "Page Layout"
+msgstr "Беттің пішімі"
+
+#: widgets/KoPageLayoutDialog.cpp:107
+msgid "Apply to document"
+msgstr "Құжатқа қолдану"
+
+#: widgets/KoPageLayoutWidget.cpp:184
+msgid "Left Edge:"
+msgstr "Сол жақ шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:185
+msgid "Right Edge:"
+msgstr "Оң жақ шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:188
+msgid "Binding Edge:"
+msgstr "Түбтеу шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:189
+msgid "Page Edge:"
+msgstr "Беттің шеті:"
+
+#: widgets/KoPageLayoutWidget.cpp:285
+msgid "Facing Pages:"
+msgstr "Беттер ашылымы:"
+
+#: widgets/KoPageLayoutWidget.cpp:289
+msgid "Page Layout:"
+msgstr "Орналасуы:"
+
+#: widgets/KoPageLayoutWidget.cpp:290
+msgid "Page spread"
+msgstr "Бет жайлымы"
+
+#: widgets/KoResourceItemChooser.cpp:126
+msgid "Import Resource"
+msgstr "Ресурсты импорттау"
+
+#: widgets/KoResourceItemChooser.cpp:133
+msgid "Delete Resource"
+msgstr "Ресурсты жою"
+
+#: widgets/KoResourceItemChooser.cpp:140
+msgid "Download Resource"
+msgstr "Ресурсты жүктеп алу"
+
+#: widgets/KoResourceItemChooser.cpp:148
+msgid "Share Resource"
+msgstr "Ресурсты ортақтастыру"
+
+#: widgets/KoResourceItemChooser.cpp:190
+msgid "Choose File to Add"
+msgstr "Қосатын файлды таңдау"
+
+#: widgets/KoStrokeConfigWidget.cpp:91
+msgid "Style:"
+msgstr "Стилі:"
+
+#: widgets/KoStrokeConfigWidget.cpp:104
+msgid "Set line width of actual selection"
+msgstr "Сызықтың ені таңдалғандай болсын"
+
+#: widgets/KoStrokeConfigWidget.cpp:108
+msgid "Cap:"
+msgstr "Ұшы:"
+
+#: widgets/KoStrokeConfigWidget.cpp:118
+msgid "Butt cap"
+msgstr "Доғал ұшты"
+
+#: widgets/KoStrokeConfigWidget.cpp:125
+msgid "Round cap"
+msgstr "Дөңгелек ұшты"
+
+#: widgets/KoStrokeConfigWidget.cpp:132
+msgid "Square cap"
+msgstr "Тікбұрышты ұшы"
+
+#: widgets/KoStrokeConfigWidget.cpp:137
+msgid "Join:"
+msgstr "Түйісі:"
+
+#: widgets/KoStrokeConfigWidget.cpp:146
+msgid "Miter join"
+msgstr "Фацетті түйісі"
+
+#: widgets/KoStrokeConfigWidget.cpp:153
+msgid "Round join"
+msgstr "Дөңгеленіп түйісу"
+
+#: widgets/KoStrokeConfigWidget.cpp:160
+msgid "Bevel join"
+msgstr "Қиғаштап түйісу"
+
+#: widgets/KoStrokeConfigWidget.cpp:165
+msgid "Miter limit:"
+msgstr "Фацет шегі:"
+
+#: widgets/KoStrokeConfigWidget.cpp:172
+msgid "Set miter limit"
+msgstr "Фацетің шектеу"
+
+#: widgets/KoUniColorChooser.cpp:134
+msgid "Value (brightness)"
+msgstr "Мәні (жарықтығы)"
+
+#: widgets/KoUniColorChooser.cpp:168
+msgid "Cyan"
+msgstr "Циан"
+
+#: widgets/KoUniColorChooser.cpp:176
+msgid "Magenta"
+msgstr "Маджента"
+
+#: widgets/KoUniColorChooser.cpp:184
+msgid "Yellow"
+msgstr "Сары"
+
+#: widgets/KoUniColorChooser.cpp:192
+msgid "Black"
+msgstr "Қара"
+
+#: widgets/KoUniColorChooser.cpp:209
+msgid "Green to magenta*"
+msgstr "Жасылды маджентаға"
+
+#: widgets/KoUniColorChooser.cpp:217
+msgid "Blue to yellow"
+msgstr "Көкті сарыға"
+
+#: widgets/KoUniColorChooser.cpp:221
+msgid "Opacity:"
+msgstr "Мөлдірсіздігі:"
+
+#: widgets/KoUniColorDialog.cpp:39
+msgid "Color Selector"
+msgstr "Түс таңдағышы"
+
+#: widgets/KoViewItemContextBar.cpp:227
+msgid "deselect item"
+msgstr "аталымды таңдауынан айну"
+
+#: widgets/KoViewItemContextBar.cpp:227
+msgid "select item"
+msgstr "аталымды таңдау"
+
+#: widgets/KoZoomAction.cpp:173 widgets/KoZoomAction.cpp:175
+#: widgets/KoZoomAction.cpp:187 widgets/KoZoomAction.cpp:189
+#: widgets/KoZoomMode.cpp:26
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: widgets/KoZoomAction.cpp:271
+msgid "Use same aspect as pixels"
+msgstr "Жақтар ара қатынасы пикселдердегідей"
+
+#: widgets/KoZoomAction.cpp:279
+msgid "Zoom to Selection"
+msgstr "Тандағанды ұғайту"
+
+#: widgets/KoZoomAction.cpp:287
+msgid "Zoom to All"
+msgstr "Барлығын ұғайту"
+
+#: widgets/KoZoomMode.cpp:27
+msgid "Fit Page Width"
+msgstr "Парақтың енін шақтау"
+
+#: widgets/KoZoomMode.cpp:28
+msgid "Fit Page"
+msgstr "Бетке шақтау"
+
+#: widgets/KoZoomMode.cpp:30
+msgid "Actual Pixels"
+msgstr "Іс жүзіндегі пикселдер"
 
 #~ msgctxt "@info:tooltip"
 #~ msgid "Select Item"

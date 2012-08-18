@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-16 04:42+0200\n"
+"POT-Creation-Date: 2012-08-18 04:21+0200\n"
 "PO-Revision-Date: 2012-08-05 05:43+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
-
-#: csvexportdialog.h:37
-msgctxt "@action:button"
-msgid "&Export"
-msgstr "&Экспорт"
-
-#: csvexportdialog.h:38
-msgctxt "@action:button"
-msgid "E&xport to Clipboard"
-msgstr "Алмасу буферіне эк&спорттау"
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
@@ -46,17 +36,27 @@ msgstr "Сеанс уақыты"
 msgid "All Tasks"
 msgstr "Барлық тапсырмаларын"
 
-#: historydialog.cpp:81 timekard.cpp:65
-msgid "Task"
-msgstr "Тапсырма"
+#: csvexportdialog.h:37
+msgctxt "@action:button"
+msgid "&Export"
+msgstr "&Экспорт"
+
+#: csvexportdialog.h:38
+msgctxt "@action:button"
+msgid "E&xport to Clipboard"
+msgstr "Алмасу буферіне эк&спорттау"
+
+#: historydialog.cpp:81
+msgid "EndTime"
+msgstr "Аяқтау уақыты"
 
 #: historydialog.cpp:81
 msgid "StartTime"
 msgstr "Бастау уақыты"
 
-#: historydialog.cpp:81
-msgid "EndTime"
-msgstr "Аяқтау уақыты"
+#: historydialog.cpp:81 timekard.cpp:65
+msgid "Task"
+msgstr "Тапсырма"
 
 #: historydialog.cpp:82
 msgid "Comment"
@@ -127,6 +127,10 @@ msgstr ""
 "Ktimetracker-ді жегуді үйреніп алыңыз, бұл еске салу болашақта болмайды.\n"
 
 #: karm.cpp:55
+msgid "KArm is now ktimetracker"
+msgstr "KArm енді ktimetracker деп аталады"
+
+#: karm.cpp:55
 msgid ""
 "Someone, probably you, has called karm. KArm has been renamed to "
 "KTimeTracker. This makes it easier to recognize. Compatibility advice: Do "
@@ -139,10 +143,6 @@ msgstr ""
 "ktimetracker файлдарына ауыстыруға қажеті жоқ, олар бір бірінің орнына істей "
 "береді. Ktimetracker-ді жегуді үйреніп алыңыз, бұл еске салу болашақта "
 "болмайды."
-
-#: karm.cpp:55
-msgid "KArm is now ktimetracker"
-msgstr "KArm енді ktimetracker деп аталады"
 
 #: ktimetrackerpart.cpp:74
 msgid "ktimetracker"
@@ -174,20 +174,20 @@ msgid "Copyright © 1997-2012 KDE PIM authors"
 msgstr "Copyright © 1997-2012 KDE PIM авторлары"
 
 #: main.cpp:90
-msgid "Thorsten Stärk"
-msgstr "Thorsten Stärk"
-
-#: main.cpp:90
 msgid "Current Maintainer"
 msgstr "Қазіргі жетілдірушісі"
 
-#: main.cpp:92
-msgid "Sirtaj Singh Kang"
-msgstr "Sirtaj Singh Kang"
+#: main.cpp:90
+msgid "Thorsten Stärk"
+msgstr "Thorsten Stärk"
 
 #: main.cpp:92
 msgid "Original Author"
 msgstr "Бастапқы авторы"
+
+#: main.cpp:92
+msgid "Sirtaj Singh Kang"
+msgstr "Sirtaj Singh Kang"
 
 #: main.cpp:94
 msgid "Allen Winter"
@@ -733,12 +733,12 @@ msgid "Tasks"
 msgstr "Тапсырмалар"
 
 #: taskview.cpp:181
-msgid "Task Name"
-msgstr "Тапсырма атауы"
-
-#: taskview.cpp:181
 msgid "Session Time"
 msgstr "Сеанс уақыты"
+
+#: taskview.cpp:181
+msgid "Task Name"
+msgstr "Тапсырма атауы"
 
 #: taskview.cpp:181 timekard.cpp:64
 msgid "Time"
@@ -924,16 +924,16 @@ msgid "Edit History..."
 msgstr "Журналын өңдеу..."
 
 #: timetrackerwidget.cpp:214
-msgid "Edits history of all tasks of the current document"
-msgstr "Назардағы құжаттың бүкіл тапсырмаларының журналын өңдеу үшін"
-
-#: timetrackerwidget.cpp:214
 msgid ""
 "A window will be opened where you can change start and stop times of tasks "
 "or add a comment to them."
 msgstr ""
 "Тапсырмаларының бастау мен аяқтау уақытын өзгерту жане оларға түсініктемесін "
 "қосу үшін терезе ашылады."
+
+#: timetrackerwidget.cpp:214
+msgid "Edits history of all tasks of the current document"
+msgstr "Назардағы құжаттың бүкіл тапсырмаларының журналын өңдеу үшін"
 
 #: timetrackerwidget.cpp:218
 msgid "&Reset All Times"
@@ -1186,12 +1186,12 @@ msgid "Columns"
 msgstr "Бағандар"
 
 #: treeviewheadercontextmenu.cpp:141
-msgid "Show"
-msgstr "Көрсету"
-
-#: treeviewheadercontextmenu.cpp:141
 msgid "Hide"
 msgstr "Жасыру"
+
+#: treeviewheadercontextmenu.cpp:141
+msgid "Show"
+msgstr "Көрсету"
 
 #~ msgid "Dialog"
 #~ msgstr "Диалогы"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-02 06:06+0200\n"
+"POT-Creation-Date: 2012-08-18 04:16+0200\n"
 "PO-Revision-Date: 2012-03-27 03:57+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -23,22 +23,22 @@ msgid "CollisionSolver"
 msgstr "ҚақтығысШешімі "
 
 #: collisionsolver.cc:32 solver.cc:28
+msgid "Allowed absolute tolerance"
+msgstr "Жарамды абсолютты дәлділік шегі"
+
+#: collisionsolver.cc:32 solver.cc:28
 msgctxt "PropertyName"
 msgid "toleranceAbs"
 msgstr "дәлділШегіАбс"
 
-#: collisionsolver.cc:32 solver.cc:28
-msgid "Allowed absolute tolerance"
-msgstr "Жарамды абсолютты дәлділік шегі"
+#: collisionsolver.cc:33 solver.cc:31
+msgid "Maximal local error during last step"
+msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателігі"
 
 #: collisionsolver.cc:33 solver.cc:31
 msgctxt "PropertyName"
 msgid "localError"
 msgstr "төңірекҚате"
-
-#: collisionsolver.cc:33 solver.cc:31
-msgid "Maximal local error during last step"
-msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателігі"
 
 #: collisionsolver.cc:35
 msgctxt "ObjectClass"
@@ -56,23 +56,23 @@ msgid "CGConstraintSolver"
 msgstr "ШектіCGШешімі"
 
 #: coulombforce.cc:27
-msgctxt "ObjectClass"
-msgid "CoulombForce"
-msgstr "КулонКүші"
-
-#: coulombforce.cc:27
 msgid "Coulomb force"
 msgstr "Кулон күші"
 
-#: coulombforce.cc:29
-msgctxt "PropertyName"
-msgid "coulombConst"
-msgstr "кулонТұрақтысы"
+#: coulombforce.cc:27
+msgctxt "ObjectClass"
+msgid "CoulombForce"
+msgstr "КулонКүші"
 
 #: coulombforce.cc:29 coulombforce.cc:34
 msgctxt "Units"
 msgid "N m²/C²"
 msgstr "Н м²Кл²"
+
+#: coulombforce.cc:29
+msgctxt "PropertyName"
+msgid "coulombConst"
+msgstr "кулонТұрақтысы"
 
 #: coulombforce.cc:30
 msgid "Coulomb constant"
@@ -97,13 +97,13 @@ msgid "Coulomb constant variance"
 msgstr "Кулон тұрақтысының ауытқуы"
 
 #: eulersolver.cc:28
+msgid "Generic Euler solver"
+msgstr "Жалпы Эйлер шешімі"
+
+#: eulersolver.cc:28
 msgctxt "ObjectClass"
 msgid "GenericEulerSolver"
 msgstr "ЖалпыЭйлерШешімі"
-
-#: eulersolver.cc:28
-msgid "Generic Euler solver"
-msgstr "Жалпы Эйлер шешімі"
 
 #: eulersolver.cc:29
 msgctxt "ObjectClass"
@@ -115,22 +115,22 @@ msgid "Non-adaptive Euler solver"
 msgstr "Адаптивті емес Эйлер шешімі"
 
 #: eulersolver.cc:30
+msgid "Adaptive Euler solver"
+msgstr "Адаптивті Эйлер шешімі"
+
+#: eulersolver.cc:30
 msgctxt "ObjectClass"
 msgid "AdaptiveEulerSolver"
 msgstr "АдаптЭйлерШешімі"
 
-#: eulersolver.cc:30
-msgid "Adaptive Euler solver"
-msgstr "Адаптивті Эйлер шешімі"
+#: gas.cc:28
+msgid "Gas particle"
+msgstr "Газ бөлшегі"
 
 #: gas.cc:28
 msgctxt "ObjectClass"
 msgid "GasParticle"
 msgstr "ГазБөлшегі"
-
-#: gas.cc:28
-msgid "Gas particle"
-msgstr "Газ бөлшегі"
 
 #: gas.cc:30
 msgctxt "ObjectClass"
@@ -140,11 +140,6 @@ msgstr "ГазЛДКүші"
 #: gas.cc:30
 msgid "Lennard-Jones force"
 msgstr "Леннард-Джонс күші"
-
-#: gas.cc:32
-msgctxt "PropertyName"
-msgid "depth"
-msgstr "тереңдік"
 
 #: gas.cc:32 gas.cc:38 gas.cc:60 gas.cc:75 particle.cc:38 particle.cc:54
 #: rigidbody.cc:49 rigidbody.cc:80
@@ -156,10 +151,14 @@ msgstr "Дж"
 msgid "Potential depth"
 msgstr "Потенциал тереңдігі"
 
-#: gas.cc:33
+#: gas.cc:32
 msgctxt "PropertyName"
-msgid "rmin"
-msgstr "минрад"
+msgid "depth"
+msgstr "тереңдік"
+
+#: gas.cc:33
+msgid "Distance at which the force is zero"
+msgstr "Күш нөлге айналатың қашықтық"
 
 #: gas.cc:33 gas.cc:34 gas.cc:40 gas.cc:46 gas.cc:48 joint.cc:30 joint.cc:36
 #: joint.cc:37 joint.cc:41 joint.cc:44 joint.cc:46 joint.cc:48 joint.cc:49
@@ -175,26 +174,27 @@ msgid "m"
 msgstr "м"
 
 #: gas.cc:33
-msgid "Distance at which the force is zero"
-msgstr "Күш нөлге айналатың қашықтық"
+msgctxt "PropertyName"
+msgid "rmin"
+msgstr "минрад"
+
+#: gas.cc:34
+msgid "Cut-off distance"
+msgstr "Күш нөлге айналатын қашықтық"
 
 #: gas.cc:34
 msgctxt "PropertyName"
 msgid "cutoff"
 msgstr "табалд"
 
-#: gas.cc:34
-msgid "Cut-off distance"
-msgstr "Күш нөлге айналатын қашықтық"
+#: gas.cc:36
+msgid "Errors class for GasLJForce"
+msgstr "ГазЛДКүші ықателерінің класы"
 
 #: gas.cc:36
 msgctxt "ObjectClass"
 msgid "GasLJForceErrors"
 msgstr "ГазЛДКүшҚате"
-
-#: gas.cc:36
-msgid "Errors class for GasLJForce"
-msgstr "ГазЛДКүші ықателерінің класы"
 
 #: gas.cc:38
 msgctxt "PropertyName"
@@ -242,14 +242,14 @@ msgid "Size of the rect for measurements"
 msgstr "Өлшемге арналаған тікбұрыштың өлшемі"
 
 #: gas.cc:50
-msgctxt "PropertyName"
-msgid "rectVolume"
-msgstr "ткбрКөлем"
-
-#: gas.cc:50
 msgctxt "Units"
 msgid "m²"
 msgstr "м²"
+
+#: gas.cc:50
+msgctxt "PropertyName"
+msgid "rectVolume"
+msgstr "ткбрКөлем"
 
 #: gas.cc:51
 msgid "Volume of the measureRect"
@@ -265,42 +265,42 @@ msgid "Count of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің саны"
 
 #: gas.cc:54
-msgctxt "PropertyName"
-msgid "rectConcentration"
-msgstr "ткбрКонцентр"
-
-#: gas.cc:54
 msgctxt "Units"
 msgid "1/m²"
 msgstr "1/м²"
 
+#: gas.cc:54
+msgctxt "PropertyName"
+msgid "rectConcentration"
+msgstr "ткбрКонцентр"
+
 #: gas.cc:55
 msgid "Concentration of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің концентрациясы"
-
-#: gas.cc:56
-msgctxt "PropertyName"
-msgid "rectPressure"
-msgstr "ткбрҚысым"
 
 #: gas.cc:56 gas.cc:71
 msgctxt "Units"
 msgid "Pa"
 msgstr "Па"
 
+#: gas.cc:56
+msgctxt "PropertyName"
+msgid "rectPressure"
+msgstr "ткбрҚысым"
+
 #: gas.cc:57
 msgid "Pressure of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің қысымы"
-
-#: gas.cc:58
-msgctxt "PropertyName"
-msgid "rectTemperature"
-msgstr "тлбрТемпер"
 
 #: gas.cc:58 gas.cc:73
 msgctxt "Units"
 msgid "K"
 msgstr "K"
+
+#: gas.cc:58
+msgctxt "PropertyName"
+msgid "rectTemperature"
+msgstr "тлбрТемпер"
 
 #: gas.cc:59
 msgid "Temperature of particles in the measureRect"
@@ -315,31 +315,31 @@ msgstr "ткбрОртаКинетЭнерг"
 msgid "Mean kinetic energy of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа кинетикалық энергиясы "
 
-#: gas.cc:62
-msgctxt "PropertyName"
-msgid "rectMeanVelocity"
-msgstr "ткбрОртаЖылдамдыл"
-
 #: gas.cc:62 gas.cc:77 particle.cc:31 particle.cc:44 rigidbody.cc:31
 #: rigidbody.cc:58 softbody.cc:38
 msgctxt "Units"
 msgid "m/s"
 msgstr "м/с"
 
+#: gas.cc:62
+msgctxt "PropertyName"
+msgid "rectMeanVelocity"
+msgstr "ткбрОртаЖылдамдыл"
+
 #: gas.cc:63
 msgid "Mean velocity of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа жылдамдылығы"
-
-#: gas.cc:64
-msgctxt "PropertyName"
-msgid "rectMeanParticleMass"
-msgstr "ткбрОртаБөлшМасса"
 
 #: gas.cc:64 gas.cc:66 gas.cc:79 gas.cc:81 particle.cc:35 particle.cc:50
 #: particle.cc:62 rigidbody.cc:42 rigidbody.cc:71 softbody.cc:50
 msgctxt "Units"
 msgid "kg"
 msgstr "кг"
+
+#: gas.cc:64
+msgctxt "PropertyName"
+msgid "rectMeanParticleMass"
+msgstr "ткбрОртаБөлшМасса"
 
 #: gas.cc:65
 msgid "Mean mass of particles in the measureRect"
@@ -355,13 +355,13 @@ msgid "Total mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің жалпы  массасы"
 
 #: gas.cc:70
+msgid "Errors class for Gas"
+msgstr "Газ қателерінің класы"
+
+#: gas.cc:70
 msgctxt "ObjectClass"
 msgid "GasErrors"
 msgstr "ГазҚате"
-
-#: gas.cc:70
-msgid "Errors class for Gas"
-msgstr "Газ қателерінің класы"
 
 #: gas.cc:71
 msgctxt "PropertyName"
@@ -419,36 +419,36 @@ msgid "Variance of total mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің жалпы массасының ауытқуы"
 
 #: gravitation.cc:28
-msgctxt "ObjectClass"
-msgid "GravitationForce"
-msgstr "ГравитКүші"
-
-#: gravitation.cc:28
 msgid "Gravitation force"
 msgstr "Гравитация күші"
 
-#: gravitation.cc:30
-msgctxt "PropertyName"
-msgid "gravitationConst"
-msgstr "гравитТұрақт"
+#: gravitation.cc:28
+msgctxt "ObjectClass"
+msgid "GravitationForce"
+msgstr "ГравитКүші"
 
 #: gravitation.cc:30 gravitation.cc:35
 msgctxt "Units"
 msgid "N m²/kg²"
 msgstr "Н м²/кг²"
 
+#: gravitation.cc:30
+msgctxt "PropertyName"
+msgid "gravitationConst"
+msgstr "гравитТұрақт"
+
 #: gravitation.cc:31
 msgid "Gravitation constant"
 msgstr "Гравитация тұрақтысы"
 
 #: gravitation.cc:33
+msgid "Errors class for GravitationForce"
+msgstr "ГравитКүші қателерінің класы"
+
+#: gravitation.cc:33
 msgctxt "ObjectClass"
 msgid "GravitationForceErrors"
 msgstr "ГравитКүшҚате"
-
-#: gravitation.cc:33
-msgid "Errors class for GravitationForce"
-msgstr "ГравитКүші қателерінің класы"
 
 #: gravitation.cc:35
 msgctxt "PropertyName"
@@ -460,18 +460,17 @@ msgid "Gravitation constant variance"
 msgstr "Гравитация тұрақтысының ауытқуы"
 
 #: gravitation.cc:38
+msgid "Weight force"
+msgstr "Ауырлық күші"
+
+#: gravitation.cc:38
 msgctxt "ObjectClass"
 msgid "WeightForce"
 msgstr "СалмақКүші"
 
-#: gravitation.cc:38
-msgid "Weight force"
-msgstr "Ауырлық күші"
-
 #: gravitation.cc:40
-msgctxt "PropertyName"
-msgid "weightConst"
-msgstr "еркінТүсҮдеу"
+msgid "Weight constant"
+msgstr "Еркін түсу үдеуі"
 
 #: gravitation.cc:40 gravitation.cc:45 particle.cc:32 particle.cc:46
 #: rigidbody.cc:34 rigidbody.cc:63 softbody.cc:43
@@ -480,17 +479,18 @@ msgid "m/s²"
 msgstr "м/с²"
 
 #: gravitation.cc:40
-msgid "Weight constant"
-msgstr "Еркін түсу үдеуі"
+msgctxt "PropertyName"
+msgid "weightConst"
+msgstr "еркінТүсҮдеу"
+
+#: gravitation.cc:43
+msgid "Errors class for WeightForce"
+msgstr "СалмақКүші қателерінің класы"
 
 #: gravitation.cc:43
 msgctxt "ObjectClass"
 msgid "WeightForceErrors"
 msgstr "СалмақКүшҚате"
-
-#: gravitation.cc:43
-msgid "Errors class for WeightForce"
-msgstr "СалмақКүші қателерінің класы"
 
 #: gravitation.cc:45
 msgctxt "PropertyName"
@@ -502,31 +502,31 @@ msgid "Weight constant variance"
 msgstr "Еркін түсу үдінің ауытқуы"
 
 #: gslsolver.cc:31
+msgid "GSL generic solver"
+msgstr "Жалпы GSL шешімі"
+
+#: gslsolver.cc:31
 msgctxt "ObjectClass"
 msgid "GslGenericSolver"
 msgstr "GslЖалпыШешімі"
 
-#: gslsolver.cc:31
-msgid "GSL generic solver"
-msgstr "Жалпы GSL шешімі"
+#: gslsolver.cc:33
+msgid "GSL non-adaptive solver"
+msgstr "Адаптивті емес GSL шешімі"
 
 #: gslsolver.cc:33
 msgctxt "ObjectClass"
 msgid "GslSolver"
 msgstr "GslШешімі"
 
-#: gslsolver.cc:33
-msgid "GSL non-adaptive solver"
-msgstr "Адаптивті емес GSL шешімі"
+#: gslsolver.cc:36
+msgid "GSL adaptive solver"
+msgstr "Адаптивті GSL шешімі"
 
 #: gslsolver.cc:36
 msgctxt "ObjectClass"
 msgid "GslAdaptiveSolver"
 msgstr "GslАдаптШешімі"
-
-#: gslsolver.cc:36
-msgid "GSL adaptive solver"
-msgstr "Адаптивті GSL шешімі"
 
 #: gslsolver.cc:39
 msgctxt "ObjectClass"
@@ -538,13 +538,13 @@ msgid "Runge-Kutta second-order solver from GSL library"
 msgstr "GSL жиын файлдағы екінші реттік Рунге-Кутта шешімі"
 
 #: gslsolver.cc:41
+msgid "Adaptive Runge-Kutta second-order solver from GSL library"
+msgstr "GSL жиын файлдағы екінші реттік адаптивті Рунге-Кутта шешімі"
+
+#: gslsolver.cc:41
 msgctxt "ObjectClass"
 msgid "GslAdaptiveRK2Solver"
 msgstr "GslАдаптRK2Шешімі"
-
-#: gslsolver.cc:41
-msgid "Adaptive Runge-Kutta second-order solver from GSL library"
-msgstr "GSL жиын файлдағы екінші реттік адаптивті Рунге-Кутта шешімі"
 
 #: gslsolver.cc:44
 msgctxt "ObjectClass"
@@ -556,14 +556,14 @@ msgid "Runge-Kutta classical fourth-order solver from GSL library"
 msgstr "GSL жиын файлдағы классикалық төртінші реттік Рунге-Кутта шешімі"
 
 #: gslsolver.cc:46
-msgctxt "ObjectClass"
-msgid "GslAdaptiveRK4Solver"
-msgstr "GslАдаптRK4Шешімі"
-
-#: gslsolver.cc:46
 msgid "Adaptive Runge-Kutta classical fourth-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы классикалық адаптивті төртінші реттік Рунге-Кутта шешімі"
+
+#: gslsolver.cc:46
+msgctxt "ObjectClass"
+msgid "GslAdaptiveRK4Solver"
+msgstr "GslАдаптRK4Шешімі"
 
 #: gslsolver.cc:49
 msgctxt "ObjectClass"
@@ -575,13 +575,13 @@ msgid "Runge-Kutta-Fehlberg (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта-Фельберг (4,5) шешімі"
 
 #: gslsolver.cc:51
+msgid "Adaptive Runge-Kutta-Fehlberg (4,5) solver from GSL library"
+msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта-Фельберг (4,5) шешімі"
+
+#: gslsolver.cc:51
 msgctxt "ObjectClass"
 msgid "GslAdaptiveRKF45Solver"
 msgstr "GslАдаптRKF45Шешімі"
-
-#: gslsolver.cc:51
-msgid "Adaptive Runge-Kutta-Fehlberg (4,5) solver from GSL library"
-msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта-Фельберг (4,5) шешімі"
 
 #: gslsolver.cc:54
 msgctxt "ObjectClass"
@@ -593,13 +593,13 @@ msgid "Runge-Kutta Cash-Karp (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта Кэш-Карп (4,5) шешімі"
 
 #: gslsolver.cc:56
+msgid "Adaptive Runge-Kutta Cash-Karp (4,5) solver from GSL library"
+msgstr "GSL жиын файлдағы адаптивті  Рунге-Кутта Кэш-Карп (4,5) шешімі"
+
+#: gslsolver.cc:56
 msgctxt "ObjectClass"
 msgid "GslAdaptiveRKCKSolver"
 msgstr "GslАдаптRKCKШешімі"
-
-#: gslsolver.cc:56
-msgid "Adaptive Runge-Kutta Cash-Karp (4,5) solver from GSL library"
-msgstr "GSL жиын файлдағы адаптивті  Рунге-Кутта Кэш-Карп (4,5) шешімі"
 
 #: gslsolver.cc:59
 msgctxt "ObjectClass"
@@ -611,13 +611,13 @@ msgid "Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта Принц-Дорманд (8,9) шешімі"
 
 #: gslsolver.cc:61
+msgid "Adaptive Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
+msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта Принц-Дорманд (8,9) шешімі"
+
+#: gslsolver.cc:61
 msgctxt "ObjectClass"
 msgid "GslAdaptiveRK8PDSolver"
 msgstr "GslАдаптRK8PDШешімі"
-
-#: gslsolver.cc:61
-msgid "Adaptive Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
-msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта Принц-Дорманд (8,9) шешімі"
 
 #: gslsolver.cc:64
 msgctxt "ObjectClass"
@@ -629,14 +629,14 @@ msgid "Runge-Kutta implicit second-order solver from GSL library"
 msgstr "GSL жиын файлдағы айқындалмаған екінші реттік Рунге-Кутта шешімі"
 
 #: gslsolver.cc:66
-msgctxt "ObjectClass"
-msgid "GslAdaptiveRK2IMPSolver"
-msgstr "GslАдаптRK2IMPШешімі"
-
-#: gslsolver.cc:66
 msgid "Adaptive Runge-Kutta implicit second-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы айқындалмаған адаптивті екінші реттік Рунге-Кутта шешімі"
+
+#: gslsolver.cc:66
+msgctxt "ObjectClass"
+msgid "GslAdaptiveRK2IMPSolver"
+msgstr "GslАдаптRK2IMPШешімі"
 
 #: gslsolver.cc:69
 msgctxt "ObjectClass"
@@ -648,14 +648,14 @@ msgid "Runge-Kutta implicit fourth-order solver from GSL library"
 msgstr "GSL жиын файлдағы айқындалмаған төртінші реттік Рунге-Кутта шешімі"
 
 #: gslsolver.cc:71
-msgctxt "ObjectClass"
-msgid "GslAdaptiveRK4IMPSolver"
-msgstr "GslкRK4IMPШешімі"
-
-#: gslsolver.cc:71
 msgid "Adaptive Runge-Kutta implicit fource-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы айқындалмаған адаптивті төртінші реттік Рунге-Кутта шешімі"
+
+#: gslsolver.cc:71
+msgctxt "ObjectClass"
+msgid "GslAdaptiveRK4IMPSolver"
+msgstr "GslкRK4IMPШешімі"
 
 #: joint.cc:27
 msgctxt "ObjectClass"
@@ -666,14 +666,18 @@ msgstr "Бекіткіш"
 msgid "Anchor: fixes position of the body"
 msgstr "Бекіткіш: денені орында бекітеді"
 
+#: joint.cc:29 joint.cc:35 motor.cc:30 motor.cc:36 world.cc:32
+msgid "Body"
+msgstr "Дене"
+
 #: joint.cc:29 joint.cc:35 motor.cc:30 motor.cc:36 tool.cc:97
 msgctxt "PropertyName"
 msgid "body"
 msgstr "дене"
 
-#: joint.cc:29 joint.cc:35 motor.cc:30 motor.cc:36 world.cc:32
-msgid "Body"
-msgstr "Дене"
+#: joint.cc:30 tool.cc:100
+msgid "Position"
+msgstr "Орны"
 
 #: joint.cc:30 joint.cc:37 particle.cc:30 rigidbody.cc:28 softbody.cc:36
 #: tool.cc:38 tool.cc:45 tool.cc:67 tool.cc:79 tool.cc:100
@@ -681,9 +685,9 @@ msgctxt "PropertyName"
 msgid "position"
 msgstr "орны"
 
-#: joint.cc:30 tool.cc:100
-msgid "Position"
-msgstr "Орны"
+#: joint.cc:31
+msgid "Angle"
+msgstr "Бұрыш"
 
 #: joint.cc:31 rigidbody.cc:29
 msgctxt "PropertyName"
@@ -695,10 +699,6 @@ msgctxt "Units"
 msgid "rad"
 msgstr "рад"
 
-#: joint.cc:31
-msgid "Angle"
-msgstr "Бұрыш"
-
 #: joint.cc:33
 msgctxt "ObjectClass"
 msgid "Pin"
@@ -708,54 +708,54 @@ msgstr "Pin"
 msgid "Pin: fixes position of a given point on the body"
 msgstr "Қада"
 
+#: joint.cc:36
+msgid "Position on the body"
+msgstr "Дененің орны"
+
 #: joint.cc:36 motor.cc:31 motor.cc:37 tool.cc:98
 msgctxt "PropertyName"
 msgid "localPosition"
 msgstr "төңірОрын"
-
-#: joint.cc:36
-msgid "Position on the body"
-msgstr "Дененің орны"
 
 #: joint.cc:37
 msgid "Position in the world"
 msgstr "Дененің жалпы орны"
 
 #: joint.cc:39
+msgid "Massless stick which can be connected to bodies"
+msgstr "Денелерге бекітетін салмақсыз таяқша"
+
+#: joint.cc:39
 msgctxt "ObjectClass"
 msgid "Stick"
 msgstr "Таяқша"
 
-#: joint.cc:39
-msgid "Massless stick which can be connected to bodies"
-msgstr "Денелерге бекітетін салмақсыз таяқша"
+#: joint.cc:41
+msgid "Rest length of the stick"
+msgstr "Таяқшаның тыныштылықтағы ұзындылығы"
 
 #: joint.cc:41 spring.cc:30
 msgctxt "PropertyName"
 msgid "restLength"
 msgstr "тынышҰзынд"
 
-#: joint.cc:41
-msgid "Rest length of the stick"
-msgstr "Таяқшаның тыныштылықтағы ұзындылығы"
+#: joint.cc:42 spring.cc:34
+msgid "Body1"
+msgstr "1-дене"
 
 #: joint.cc:42 spring.cc:34
 msgctxt "PropertyName"
 msgid "body1"
 msgstr "дене1"
 
-#: joint.cc:42 spring.cc:34
-msgid "Body1"
-msgstr "1-дене"
+#: joint.cc:43 spring.cc:35
+msgid "Body2"
+msgstr "2-дене"
 
 #: joint.cc:43 spring.cc:35
 msgctxt "PropertyName"
 msgid "body2"
 msgstr "дене2"
-
-#: joint.cc:43 spring.cc:35
-msgid "Body2"
-msgstr "2-дене"
 
 #: joint.cc:44 spring.cc:36
 msgctxt "PropertyName"
@@ -776,49 +776,44 @@ msgid "Local position 2"
 msgstr "2-төңіректі орын"
 
 #: joint.cc:48 spring.cc:40
+msgid "Position1"
+msgstr "1-орын"
+
+#: joint.cc:48 spring.cc:40
 msgctxt "PropertyName"
 msgid "position1"
 msgstr "орын1"
 
-#: joint.cc:48 spring.cc:40
-msgid "Position1"
-msgstr "1-орын"
+#: joint.cc:49 spring.cc:41
+msgid "Position2"
+msgstr "2-орын"
 
 #: joint.cc:49 spring.cc:41
 msgctxt "PropertyName"
 msgid "position2"
 msgstr "орын2"
 
-#: joint.cc:49 spring.cc:41
-msgid "Position2"
-msgstr "2-орын"
+#: joint.cc:52
+msgid "Massless rope which can be connected to bodies"
+msgstr "Денелерге бекітетін салмақсыз бау"
 
 #: joint.cc:52
 msgctxt "ObjectClass"
 msgid "Rope"
 msgstr "Бау"
 
-#: joint.cc:52
-msgid "Massless rope which can be connected to bodies"
-msgstr "Денелерге бекітетін салмақсыз бау"
+#: motor.cc:28
+msgid "Linear motor: applies a constant force to a given position of the body"
+msgstr "Тура тарту: дененің бір жерінен тұрақты күшпен тарту"
 
 #: motor.cc:28
 msgctxt "ObjectClass"
 msgid "LinearMotor"
 msgstr "ТураТарту"
 
-#: motor.cc:28
-msgid "Linear motor: applies a constant force to a given position of the body"
-msgstr "Тура тарту: дененің бір жерінен тұрақты күшпен тарту"
-
 #: motor.cc:31 motor.cc:37
 msgid "Position of the motor on a body"
 msgstr "Денені тартатың күшті салатын жері"
-
-#: motor.cc:32
-msgctxt "PropertyName"
-msgid "forceValue"
-msgstr "күшШамасы"
 
 #: motor.cc:32 particle.cc:34 particle.cc:48 rigidbody.cc:39 rigidbody.cc:68
 #: softbody.cc:48 spring.cc:42 spring.cc:63
@@ -830,19 +825,19 @@ msgstr "Н"
 msgid "Value of the force, acting on the body"
 msgstr "Денеге дұшар ететін күштің шамасы "
 
-#: motor.cc:34
-msgctxt "ObjectClass"
-msgid "CircularMotor"
-msgstr "БұрапАйналдыру"
+#: motor.cc:32
+msgctxt "PropertyName"
+msgid "forceValue"
+msgstr "күшШамасы"
 
 #: motor.cc:34
 msgid "Circular motor: applies a constant torque to the body"
 msgstr "Бұрап айналдыру: денені тұрақты бұрау моментіне дұшар ету"
 
-#: motor.cc:38
-msgctxt "PropertyName"
-msgid "torqueValue"
-msgstr "бұрауМоменті"
+#: motor.cc:34
+msgctxt "ObjectClass"
+msgid "CircularMotor"
+msgstr "БұрапАйналдыру"
 
 #: motor.cc:38 rigidbody.cc:40 rigidbody.cc:69 softbody.cc:49
 msgctxt "Units"
@@ -853,23 +848,28 @@ msgstr "Н м"
 msgid "Value of the torque, acting on the body"
 msgstr "Денеге дұшар ететін моментің шамасы "
 
+#: motor.cc:38
+msgctxt "PropertyName"
+msgid "torqueValue"
+msgstr "бұрауМоменті"
+
+#: object.cc:26
+msgid "Object"
+msgstr "Нысан"
+
 #: object.cc:26
 msgctxt "ObjectClass"
 msgid "Object"
 msgstr "Нысан"
 
-#: object.cc:26
-msgid "Object"
-msgstr "Нысан"
+#: object.cc:27
+msgid "Object name"
+msgstr "Нысанның атауы"
 
 #: object.cc:27
 msgctxt "PropertyName"
 msgid "name"
 msgstr "атау"
-
-#: object.cc:27
-msgid "Object name"
-msgstr "Нысанның атауы"
 
 #: particle.cc:28
 msgctxt "ObjectClass"
@@ -884,12 +884,12 @@ msgstr "Жәй нүкте-бөлшек"
 msgid "position"
 msgstr "орын"
 
-#: particle.cc:31 rigidbody.cc:31 softbody.cc:38
-msgctxt "PropertyName"
+#: particle.cc:31
 msgid "velocity"
 msgstr "жылдамдық"
 
-#: particle.cc:31
+#: particle.cc:31 rigidbody.cc:31 softbody.cc:38
+msgctxt "PropertyName"
 msgid "velocity"
 msgstr "жылдамдық"
 
@@ -902,28 +902,23 @@ msgstr "үдеу"
 msgid "acceleration"
 msgstr "үдеу"
 
+#: particle.cc:34
+msgid "force"
+msgstr "күш"
+
 #: particle.cc:34 rigidbody.cc:39 softbody.cc:48 spring.cc:42
 msgctxt "PropertyName"
 msgid "force"
 msgstr "күш"
 
-#: particle.cc:34
-msgid "force"
-msgstr "күш"
+#: particle.cc:35
+msgid "mass"
+msgstr "масса"
 
 #: particle.cc:35 rigidbody.cc:42 softbody.cc:50
 msgctxt "PropertyName"
 msgid "mass"
 msgstr "масса"
-
-#: particle.cc:35
-msgid "mass"
-msgstr "масса"
-
-#: particle.cc:36 rigidbody.cc:45
-msgctxt "PropertyName"
-msgid "momentum"
-msgstr "импульс"
 
 #: particle.cc:36 particle.cc:52 rigidbody.cc:45 rigidbody.cc:75
 msgctxt "Units"
@@ -934,23 +929,28 @@ msgstr "кг м/с"
 msgid "momentum"
 msgstr "импульс"
 
-#: particle.cc:38 rigidbody.cc:49
+#: particle.cc:36 rigidbody.cc:45
 msgctxt "PropertyName"
-msgid "kineticEnergy"
-msgstr "кинетЭнерг"
+msgid "momentum"
+msgstr "импульс"
 
 #: particle.cc:38 rigidbody.cc:49
 msgid "kinetic energy"
 msgstr "кинетикалық энергия"
 
-#: particle.cc:41
-msgctxt "ObjectClass"
-msgid "ParticleErrors"
-msgstr "Бөлшек қатесі"
+#: particle.cc:38 rigidbody.cc:49
+msgctxt "PropertyName"
+msgid "kineticEnergy"
+msgstr "кинетЭнерг"
 
 #: particle.cc:41
 msgid "Errors class for Particle"
 msgstr "Бөлшек қателерінің класы"
+
+#: particle.cc:41
+msgctxt "ObjectClass"
+msgid "ParticleErrors"
+msgstr "Бөлшек қатесі"
 
 #: particle.cc:42 rigidbody.cc:53
 msgctxt "PropertyName"
@@ -1016,18 +1016,13 @@ msgid "kinetic energy variance"
 msgstr "кинетикалық энергияның ауытқуы"
 
 #: particle.cc:57
-msgctxt "ObjectClass"
-msgid "ChargedParticle"
-msgstr "ЗарядБөлшек"
-
-#: particle.cc:57
 msgid "Charged zero-size particle"
 msgstr "Зарядталған нүкте-бөлшек"
 
-#: particle.cc:58
-msgctxt "PropertyName"
-msgid "charge"
-msgstr "заряд"
+#: particle.cc:57
+msgctxt "ObjectClass"
+msgid "ChargedParticle"
+msgstr "ЗарядБөлшек"
 
 #: particle.cc:58
 msgctxt "Units"
@@ -1035,6 +1030,11 @@ msgid "C"
 msgstr "Кл"
 
 #: particle.cc:58
+msgid "charge"
+msgstr "заряд"
+
+#: particle.cc:58
+msgctxt "PropertyName"
 msgid "charge"
 msgstr "заряд"
 
@@ -1057,13 +1057,13 @@ msgid "charge variance"
 msgstr "зарядтың ауытқуы"
 
 #: rigidbody.cc:27
+msgid "Generic rigid body"
+msgstr "Жалпы қатты дене"
+
+#: rigidbody.cc:27
 msgctxt "ObjectClass"
 msgid "RigidBody"
 msgstr "ҚаттыДене"
-
-#: rigidbody.cc:27
-msgid "Generic rigid body"
-msgstr "Жалпы қатты дене"
 
 #: rigidbody.cc:28 softbody.cc:36
 msgid "Position of the center of mass"
@@ -1078,6 +1078,10 @@ msgid "Velocity of the center of mass"
 msgstr "Массалар центрінің жылдамдылығы"
 
 #: rigidbody.cc:32 softbody.cc:39
+msgid "Angular velocity of the body"
+msgstr "Дененің бұралу жылдамдылығы"
+
+#: rigidbody.cc:32 softbody.cc:39
 msgctxt "PropertyName"
 msgid "angularVelocity"
 msgstr "бұрышЖылдам"
@@ -1086,10 +1090,6 @@ msgstr "бұрышЖылдам"
 msgctxt "Units"
 msgid "rad/s"
 msgstr "рад/с"
-
-#: rigidbody.cc:32 softbody.cc:39
-msgid "Angular velocity of the body"
-msgstr "Дененің бұралу жылдамдылығы"
 
 #: rigidbody.cc:35 softbody.cc:44
 msgid "Acceleration of the center of mass"
@@ -1114,13 +1114,13 @@ msgid "Force that acts upon the body"
 msgstr "Денеге әрекет ететін күш"
 
 #: rigidbody.cc:40 softbody.cc:49
+msgid "Torque that acts upon the body"
+msgstr "Денеге әрекет ететін бұрау күші"
+
+#: rigidbody.cc:40 softbody.cc:49
 msgctxt "PropertyName"
 msgid "torque"
 msgstr "бұрау"
-
-#: rigidbody.cc:40 softbody.cc:49
-msgid "Torque that acts upon the body"
-msgstr "Денеге әрекет ететін бұрау күші"
 
 #: rigidbody.cc:42 softbody.cc:50
 msgid "Total mass of the body"
@@ -1140,6 +1140,10 @@ msgstr "кг м²"
 msgid "Inertia \"tensor\" of the body"
 msgstr "Дененің инерция тензоры"
 
+#: rigidbody.cc:47
+msgid "angular momentum"
+msgstr "импульс моменті"
+
 #: rigidbody.cc:47 softbody.cc:40
 msgctxt "PropertyName"
 msgid "angularMomentum"
@@ -1150,18 +1154,14 @@ msgctxt "Units"
 msgid "kg m² rad/s"
 msgstr "кг м² рад/с"
 
-#: rigidbody.cc:47
-msgid "angular momentum"
-msgstr "импульс моменті"
+#: rigidbody.cc:52
+msgid "Errors class for RigidBody"
+msgstr "ҚаттыДене қателерінің класы"
 
 #: rigidbody.cc:52
 msgctxt "ObjectClass"
 msgid "RigidBodyErrors"
 msgstr "ҚаттыДенеҚате"
-
-#: rigidbody.cc:52
-msgid "Errors class for RigidBody"
-msgstr "ҚаттыДене қателерінің класы"
 
 #: rigidbody.cc:55
 msgctxt "PropertyName"
@@ -1191,13 +1191,13 @@ msgid "angularAcceleration variance"
 msgstr "бұрышҮдеу шамасының ауытқуы"
 
 #: rigidbody.cc:69
+msgid "torque variance"
+msgstr "бұрау күші шамасының ауытқуы"
+
+#: rigidbody.cc:69
 msgctxt "PropertyName"
 msgid "torqueVariance"
 msgstr "бұрауАуытқуы"
-
-#: rigidbody.cc:69
-msgid "torque variance"
-msgstr "бұрау күші шамасының ауытқуы"
 
 #: rigidbody.cc:73
 msgctxt "PropertyName"
@@ -1227,22 +1227,22 @@ msgid "Rigid disk"
 msgstr "Қатты диск"
 
 #: rigidbody.cc:84
+msgid "Radius of the disk"
+msgstr "Дисктің радиусы"
+
+#: rigidbody.cc:84
 msgctxt "PropertyName"
 msgid "radius"
 msgstr "радиус"
 
-#: rigidbody.cc:84
-msgid "Radius of the disk"
-msgstr "Дисктің радиусы"
+#: rigidbody.cc:86
+msgid "Base polygon body"
+msgstr "Дисктің негіз көпбұрышы"
 
 #: rigidbody.cc:86
 msgctxt "ObjectClass"
 msgid "BasePolygon"
 msgstr "НегізКөпбұрыш"
-
-#: rigidbody.cc:86
-msgid "Base polygon body"
-msgstr "Дисктің негіз көпбұрышы"
 
 #: rigidbody.cc:88
 msgctxt "ObjectClass"
@@ -1253,14 +1253,14 @@ msgstr "Блок"
 msgid "Rigid box"
 msgstr "Қатты блок"
 
+#: rigidbody.cc:89
+msgid "Size of the box"
+msgstr "Блоктың өлшемі"
+
 #: rigidbody.cc:89 tool.cc:39 tool.cc:46 tool.cc:68 tool.cc:80
 msgctxt "PropertyName"
 msgid "size"
 msgstr "өлшем"
-
-#: rigidbody.cc:89
-msgid "Size of the box"
-msgstr "Блоктың өлшемі"
 
 #: rigidbody.cc:91
 msgctxt "ObjectClass"
@@ -1272,13 +1272,13 @@ msgid "Rigid polygon body"
 msgstr "Қатты көпбұрышты дене "
 
 #: rigidbody.cc:92
+msgid "Vertex list"
+msgstr "Төбелер тізімі"
+
+#: rigidbody.cc:92
 msgctxt "PropertyName"
 msgid "vertices"
 msgstr "төбелер"
-
-#: rigidbody.cc:92
-msgid "Vertex list"
-msgstr "Төбелер тізімі"
 
 #: rigidbody.cc:95
 msgctxt "ObjectClass"
@@ -1290,58 +1290,58 @@ msgid "Unmovable rigid plane"
 msgstr "Жылжымайтың қатты жазықтық"
 
 #: rigidbody.cc:96
+msgid "First point which defines the plane"
+msgstr "Жазықтықты анықтайтын бірінші нүкте"
+
+#: rigidbody.cc:96
 msgctxt "PropertyName"
 msgid "point1"
 msgstr "нүкте1"
 
-#: rigidbody.cc:96
-msgid "First point which defines the plane"
-msgstr "Жазықтықты анықтайтын бірінші нүкте"
+#: rigidbody.cc:97
+msgid "Second point which defines the plane"
+msgstr "Жазықтықты анықтайтын екінші нүкте"
 
 #: rigidbody.cc:97
 msgctxt "PropertyName"
 msgid "point2"
 msgstr "нүкте2"
 
-#: rigidbody.cc:97
-msgid "Second point which defines the plane"
-msgstr "Жазықтықты анықтайтын екінші нүкте"
+#: softbody.cc:31
+msgid "SoftBody particle"
+msgstr "ИілгішДене бөлшегі"
 
 #: softbody.cc:31
 msgctxt "ObjectClass"
 msgid "SoftBodyParticle"
 msgstr "ИілгішДенеБөлшегі"
 
-#: softbody.cc:31
-msgid "SoftBody particle"
-msgstr "ИілгішДене бөлшегі"
+#: softbody.cc:32
+msgid "SoftBody spring"
+msgstr "ИілгішДене серпінділігі"
 
 #: softbody.cc:32
 msgctxt "ObjectClass"
 msgid "SoftBodySpring"
 msgstr "ИілгішДенеСерпінд"
 
-#: softbody.cc:32
-msgid "SoftBody spring"
-msgstr "ИілгішДене серпінділігі"
+#: softbody.cc:33
+msgid "Deformable SoftBody"
+msgstr "Дефомацияланатын ИілгішДене"
 
 #: softbody.cc:33
 msgctxt "ObjectClass"
 msgid "SoftBody"
 msgstr "ИілгішДене"
 
-#: softbody.cc:33
-msgid "Deformable SoftBody"
-msgstr "Дефомацияланатын ИілгішДене"
+#: softbody.cc:34
+msgid "Show internal items"
+msgstr "Ішкі құрылысын көрсету"
 
 #: softbody.cc:34
 msgctxt "PropertyName"
 msgid "showInternalItems"
 msgstr "ішкіҚұрылКөрсету"
-
-#: softbody.cc:34
-msgid "Show internal items"
-msgstr "Ішкі құрылысын көрсету"
 
 #: softbody.cc:40
 msgctxt "Units"
@@ -1362,27 +1362,26 @@ msgid "Border particle names (temporal property)"
 msgstr "Шеткі бөлшек атаулары (уақытша қасиеті)"
 
 #: solver.cc:25
+msgid "Solver"
+msgstr "Шешім құралы"
+
+#: solver.cc:25
 msgctxt "ObjectClass"
 msgid "Solver"
 msgstr "Шешім"
 
-#: solver.cc:25
-msgid "Solver"
-msgstr "Шешім құралы"
+#: solver.cc:26
+msgid "Solver type"
+msgstr "Шешім түрі"
 
 #: solver.cc:26
 msgctxt "PropertyName"
 msgid "solverType"
 msgstr "шешімТүрі"
 
-#: solver.cc:26
-msgid "Solver type"
-msgstr "Шешім түрі"
-
 #: solver.cc:27
-msgctxt "PropertyName"
-msgid "stepSize"
-msgstr "қадамӨлшемі"
+msgid "Step size"
+msgstr "Қадамының өлшемі"
 
 #: solver.cc:27 world.cc:42
 msgctxt "Units"
@@ -1390,62 +1389,58 @@ msgid "s"
 msgstr "с"
 
 #: solver.cc:27
-msgid "Step size"
-msgstr "Қадамының өлшемі"
+msgctxt "PropertyName"
+msgid "stepSize"
+msgstr "қадамӨлшемі"
+
+#: solver.cc:29
+msgid "Allowed relative tolerance"
+msgstr "Жарамды салыстырмалық дәлділік шегі"
 
 #: solver.cc:29
 msgctxt "PropertyName"
 msgid "toleranceRel"
 msgstr "дәлділШегіСалыст"
 
-#: solver.cc:29
-msgid "Allowed relative tolerance"
-msgstr "Жарамды салыстырмалық дәлділік шегі"
+#: solver.cc:30
+msgid "Count of dynamic variables"
+msgstr "Өзгермелі айнымалылар саны"
 
 #: solver.cc:30
 msgctxt "PropertyName"
 msgid "dimension"
 msgstr "өлшемділік"
 
-#: solver.cc:30
-msgid "Count of dynamic variables"
-msgstr "Өзгермелі айнымалылар саны"
+#: solver.cc:32
+msgid "Maximal local error ratio during last step"
+msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателік қатынасы"
 
 #: solver.cc:32
 msgctxt "PropertyName"
 msgid "localErrorRatio"
 msgstr "төңірекҚатеҚатынас"
 
-#: solver.cc:32
-msgid "Maximal local error ratio during last step"
-msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателік қатынасы"
+#: spring.cc:28
+msgid "Massless spring which can be connected to bodies"
+msgstr "Денелерге бекітетін салмақсыз серіппе"
 
 #: spring.cc:28
 msgctxt "ObjectClass"
 msgid "Spring"
 msgstr "Серпін"
 
-#: spring.cc:28
-msgid "Massless spring which can be connected to bodies"
-msgstr "Денелерге бекітетін салмақсыз серіппе"
-
 #: spring.cc:30
 msgid "Rest length"
 msgstr "Тыныштылықтағы ұзындылығы"
 
 #: spring.cc:31
-msgctxt "PropertyName"
-msgid "length"
-msgstr "ұзындық"
-
-#: spring.cc:31
 msgid "Current length"
 msgstr "Қазіргі ұзындылығы"
 
-#: spring.cc:32
+#: spring.cc:31
 msgctxt "PropertyName"
-msgid "stiffness"
-msgstr "қатаңдық"
+msgid "length"
+msgstr "ұзындық"
 
 #: spring.cc:32 spring.cc:51 spring.cc:53
 msgctxt "Units"
@@ -1456,10 +1451,14 @@ msgstr "Н/м"
 msgid "Stiffness"
 msgstr "Қатаңдығы"
 
-#: spring.cc:33
+#: spring.cc:32
 msgctxt "PropertyName"
-msgid "damping"
-msgstr "басылу"
+msgid "stiffness"
+msgstr "қатаңдық"
+
+#: spring.cc:33
+msgid "Damping"
+msgstr "Тербелістің басылуы"
 
 #: spring.cc:33
 msgctxt "Units"
@@ -1467,21 +1466,22 @@ msgid "N s/m"
 msgstr "Н с/м"
 
 #: spring.cc:33
-msgid "Damping"
-msgstr "Тербелістің басылуы"
+msgctxt "PropertyName"
+msgid "damping"
+msgstr "басылу"
 
 #: spring.cc:42
 msgid "Spring tension force"
 msgstr "Серпінді күші"
 
 #: spring.cc:45
+msgid "Errors class for Spring"
+msgstr "Серпін қателерінің класы"
+
+#: spring.cc:45
 msgctxt "ObjectClass"
 msgid "SpringErrors"
 msgstr "СерпінҚате"
-
-#: spring.cc:45
-msgid "Errors class for Spring"
-msgstr "Серпін қателерінің класы"
 
 #: spring.cc:47
 msgctxt "PropertyName"
@@ -1569,13 +1569,13 @@ msgid "NoteImage: an image embedded in Note"
 msgstr "ЖазбаКескін: Жазба дегенге ендірілген кескін "
 
 #: tool.cc:28
+msgid "Image data"
+msgstr "Кескін дерегі"
+
+#: tool.cc:28
 msgctxt "PropertyName"
 msgid "image"
 msgstr "кескін"
-
-#: tool.cc:28
-msgid "Image data"
-msgstr "Кескін дерегі"
 
 #: tool.cc:31
 msgctxt "ObjectClass"
@@ -1587,13 +1587,13 @@ msgid "NoteFormula: a formula embedded in Note"
 msgstr "ЖазбаФормула: Жазба дегенге ендірілген формула"
 
 #: tool.cc:33
+msgid "Formula code"
+msgstr "Формула коды"
+
+#: tool.cc:33
 msgctxt "PropertyName"
 msgid "code"
 msgstr "код"
-
-#: tool.cc:33
-msgid "Formula code"
-msgstr "Формула коды"
 
 #: tool.cc:36
 msgctxt "ObjectClass"
@@ -1613,13 +1613,13 @@ msgid "Note size on the scene"
 msgstr "Жазбаның өрістегі өлшемі"
 
 #: tool.cc:40
+msgid "Text"
+msgstr "Мәтін"
+
+#: tool.cc:40
 msgctxt "PropertyName"
 msgid "text"
 msgstr "мәтін"
-
-#: tool.cc:40
-msgid "Text"
-msgstr "Мәтін"
 
 #: tool.cc:43
 msgctxt "ObjectClass"
@@ -1639,145 +1639,145 @@ msgid "Graph size on the scene"
 msgstr "Графиктің өрістегі өлшемі"
 
 #: tool.cc:47
+msgid "X axis: object"
+msgstr "X бойлық: нысан"
+
+#: tool.cc:47
 msgctxt "PropertyName"
 msgid "objectX"
 msgstr "X-нысан"
 
-#: tool.cc:47
-msgid "X axis: object"
-msgstr "X бойлық: нысан"
+#: tool.cc:48
+msgid "X axis: object property"
+msgstr "X бойлық: нысанның қасиеті"
 
 #: tool.cc:48
 msgctxt "PropertyName"
 msgid "propertyX"
 msgstr "X-қасиет"
 
-#: tool.cc:48
-msgid "X axis: object property"
-msgstr "X бойлық: нысанның қасиеті"
+#: tool.cc:49
+msgid "X axis: vector index"
+msgstr "X бойлық: вектордың индексі"
 
 #: tool.cc:49
 msgctxt "PropertyName"
 msgid "indexX"
 msgstr "X-индекс"
 
-#: tool.cc:49
-msgid "X axis: vector index"
-msgstr "X бойлық: вектордың индексі"
+#: tool.cc:50
+msgid "Y axis: object"
+msgstr "Y бойлық: нысан"
 
 #: tool.cc:50
 msgctxt "PropertyName"
 msgid "objectY"
 msgstr "Y-нысан"
 
-#: tool.cc:50
-msgid "Y axis: object"
-msgstr "Y бойлық: нысан"
+#: tool.cc:51
+msgid "Y axis: property"
+msgstr "Y бойлық: қасиеті"
 
 #: tool.cc:51
 msgctxt "PropertyName"
 msgid "propertyY"
 msgstr "Y-қасиет"
 
-#: tool.cc:51
-msgid "Y axis: property"
-msgstr "Y бойлық: қасиеті"
+#: tool.cc:52
+msgid "Y axis: vector index"
+msgstr "Y бойлық: вектордың индексі"
 
 #: tool.cc:52
 msgctxt "PropertyName"
 msgid "indexY"
 msgstr "Y-индекс"
 
-#: tool.cc:52
-msgid "Y axis: vector index"
-msgstr "Y бойлық: вектордың индексі"
+#: tool.cc:53
+msgid "Auto-limits along X axis"
+msgstr "X бойлығын авто-шектеуі"
 
 #: tool.cc:53
 msgctxt "PropertyName"
 msgid "autoLimitsX"
 msgstr "автоXшектеу"
 
-#: tool.cc:53
-msgid "Auto-limits along X axis"
-msgstr "X бойлығын авто-шектеуі"
+#: tool.cc:54
+msgid "Auto-limits along Y axis"
+msgstr "Y бойлығын авто-шектеуі"
 
 #: tool.cc:54
 msgctxt "PropertyName"
 msgid "autoLimitsY"
 msgstr "автоYшектеу"
 
-#: tool.cc:54
-msgid "Auto-limits along Y axis"
-msgstr "Y бойлығын авто-шектеуі"
+#: tool.cc:55
+msgid "Limits along X axis"
+msgstr "X бойлықтың шектері"
 
 #: tool.cc:55
 msgctxt "PropertyName"
 msgid "limitsX"
 msgstr "шектерX"
 
-#: tool.cc:55
-msgid "Limits along X axis"
-msgstr "X бойлықтың шектері"
+#: tool.cc:56
+msgid "Limits along Y axis"
+msgstr "Y бойлықтың шектері"
 
 #: tool.cc:56
 msgctxt "PropertyName"
 msgid "limitsY"
 msgstr "шектерY"
 
-#: tool.cc:56
-msgid "Limits along Y axis"
-msgstr "Y бойлықтың шектері"
+#: tool.cc:57
+msgid "Show points on the graph"
+msgstr "Графиктің нүктелерін көрсету"
 
 #: tool.cc:57
 msgctxt "PropertyName"
 msgid "showPoints"
 msgstr "нүктеКөрсет"
 
-#: tool.cc:57
-msgid "Show points on the graph"
-msgstr "Графиктің нүктелерін көрсету"
+#: tool.cc:58
+msgid "Show lines on the graph"
+msgstr "Графиктің сызықтарын көрсету"
 
 #: tool.cc:58
 msgctxt "PropertyName"
 msgid "showLines"
 msgstr "сызықКөрсет"
 
-#: tool.cc:58
-msgid "Show lines on the graph"
-msgstr "Графиктің сызықтарын көрсету"
+#: tool.cc:59
+msgid "Current value"
+msgstr "Қазір назардағы мәні"
 
 #: tool.cc:59
 msgid "currentValue"
 msgstr "назарМәні"
 
-#: tool.cc:59
-msgid "Current value"
-msgstr "Қазір назардағы мәні"
+#: tool.cc:60 tool.cc:101
+msgid "points"
+msgstr "нүктелер"
 
 #: tool.cc:60 tool.cc:101
 msgctxt "PropertyName"
 msgid "points"
 msgstr "нүктелер"
 
-#: tool.cc:60 tool.cc:101
-msgid "points"
-msgstr "нүктелер"
+#: tool.cc:61
+msgid "Units along X axis"
+msgstr "X бойлықтың бірліктері"
 
 #: tool.cc:61
 msgid "unitsX"
 msgstr "бірілікX"
 
-#: tool.cc:61
-msgid "Units along X axis"
-msgstr "X бойлықтың бірліктері"
+#: tool.cc:62
+msgid "Units along Y axis"
+msgstr "Y бойлықтың бірліктері"
 
 #: tool.cc:62
 msgid "unitsY"
 msgstr "бірлікY"
-
-#: tool.cc:62
-msgid "Units along Y axis"
-msgstr "Y бойлықтың бірліктері"
 
 #: tool.cc:65
 msgctxt "ObjectClass"
@@ -1796,57 +1796,57 @@ msgstr "Өлшегіштің өрістегі орыны"
 msgid "Meter size on the scene"
 msgstr "Өлшегіштің өзіннің өрістегі өлшемі"
 
+#: tool.cc:69
+msgid "Observed object"
+msgstr "Назардағы нысан"
+
 #: tool.cc:69 tool.cc:81
 msgctxt "PropertyName"
 msgid "object"
 msgstr "нысан"
 
-#: tool.cc:69
-msgid "Observed object"
-msgstr "Назардағы нысан"
+#: tool.cc:70
+msgid "Observed property"
+msgstr "Назардағы қасиет"
 
 #: tool.cc:70 tool.cc:82
 msgctxt "PropertyName"
 msgid "property"
 msgstr "қасиет"
 
-#: tool.cc:70
-msgid "Observed property"
-msgstr "Назардағы қасиет"
+#: tool.cc:71 tool.cc:83
+msgid "Vector index"
+msgstr "Вектордың индексі"
 
 #: tool.cc:71 tool.cc:83
 msgctxt "PropertyName"
 msgid "index"
 msgstr "индекс"
 
-#: tool.cc:71 tool.cc:83
-msgid "Vector index"
-msgstr "Вектордың индексі"
+#: tool.cc:72
+msgid "Display digits"
+msgstr "Цифрларды көрсету"
 
 #: tool.cc:72
 msgctxt "PropertyName"
 msgid "digits"
 msgstr "цифр"
 
-#: tool.cc:72
-msgid "Display digits"
-msgstr "Цифрларды көрсету"
+#: tool.cc:73 tool.cc:90
+msgid "Value"
+msgstr "Мәні"
 
 #: tool.cc:73
 msgid "value"
 msgstr "мән"
 
-#: tool.cc:73 tool.cc:90
-msgid "Value"
-msgstr "Мәні"
+#: tool.cc:74
+msgid "Units of measured property"
+msgstr "Өлшелінбек қасиеттің бірліктері"
 
 #: tool.cc:74 tool.cc:92
 msgid "units"
 msgstr "бірлік"
-
-#: tool.cc:74
-msgid "Units of measured property"
-msgstr "Өлшелінбек қасиеттің бірліктері"
 
 #: tool.cc:77
 msgctxt "ObjectClass"
@@ -1874,13 +1874,13 @@ msgid "Controlled property"
 msgstr "Басқарылмақ қасиет"
 
 #: tool.cc:84
+msgid "Limits"
+msgstr "Шектері"
+
+#: tool.cc:84
 msgctxt "PropertyName"
 msgid "limits"
 msgstr "шек"
-
-#: tool.cc:84
-msgid "Limits"
-msgstr "Шектері"
 
 #: tool.cc:85
 msgctxt "PropertyName"
@@ -1901,13 +1901,13 @@ msgid "Shortcut to decrease the value"
 msgstr "Мәнің кішірейту тіркесімі"
 
 #: tool.cc:89
+msgid "Increment value"
+msgstr "Мәннің өсуі"
+
+#: tool.cc:89
 msgctxt "PropertyName"
 msgid "increment"
 msgstr "өсіру"
-
-#: tool.cc:89
-msgid "Increment value"
-msgstr "Мәннің өсуі"
 
 #: tool.cc:90
 msgctxt "PropertyName"
@@ -1936,22 +1936,22 @@ msgid "Local position"
 msgstr "Орын нүктесі"
 
 #: world.cc:30
-msgctxt "ObjectClass"
 msgid "Item"
 msgstr "Аталым"
 
 #: world.cc:30
+msgctxt "ObjectClass"
 msgid "Item"
 msgstr "Аталым"
+
+#: world.cc:31
+msgid "Item color"
+msgstr "Аталымының түсі"
 
 #: world.cc:31
 msgctxt "PropertyName"
 msgid "color"
 msgstr "түс"
-
-#: world.cc:31
-msgid "Item color"
-msgstr "Аталымының түсі"
 
 #: world.cc:32
 msgctxt "ObjectClass"
@@ -1959,75 +1959,75 @@ msgid "Body"
 msgstr "Дене"
 
 #: world.cc:33
-msgctxt "ObjectClass"
 msgid "Force"
 msgstr "Күш"
 
 #: world.cc:33
+msgctxt "ObjectClass"
 msgid "Force"
 msgstr "Күш"
+
+#: world.cc:34
+msgid "Joint"
+msgstr "Біріктіру"
 
 #: world.cc:34
 msgctxt "ObjectClass"
 msgid "Joint"
 msgstr "Біріктіру"
 
-#: world.cc:34
-msgid "Joint"
-msgstr "Біріктіру"
+#: world.cc:35
+msgid "Tool"
+msgstr "1"
 
 #: world.cc:35
 msgctxt "ObjectClass"
 msgid "Tool"
 msgstr "Құрал"
 
-#: world.cc:35
-msgid "Tool"
-msgstr "1"
+#: world.cc:37
+msgid "ObjectErrors"
+msgstr "НысанҚате"
 
 #: world.cc:37
 msgctxt "ObjectClass"
 msgid "ObjectErrors"
 msgstr "НысанҚате"
 
-#: world.cc:37
-msgid "ObjectErrors"
-msgstr "НысанҚате"
+#: world.cc:39
+msgid "ItemGroup"
+msgstr "АталымТобы "
 
 #: world.cc:39
 msgctxt "ObjectClass"
 msgid "ItemGroup"
 msgstr "АталымТобы "
 
-#: world.cc:39
-msgid "ItemGroup"
-msgstr "АталымТобы "
+#: world.cc:41
+msgid "World"
+msgstr "Дүние"
 
 #: world.cc:41
 msgctxt "ObjectClass"
 msgid "World"
 msgstr "Дүние"
 
-#: world.cc:41
-msgid "World"
-msgstr "Дүние"
+#: world.cc:42
+msgid "Current time"
+msgstr "Қазіргі уақыты"
 
 #: world.cc:42
 msgctxt "PropertyName"
 msgid "time"
 msgstr "уақыт"
 
-#: world.cc:42
-msgid "Current time"
-msgstr "Қазіргі уақыты"
+#: world.cc:43
+msgid "Simulation speed scale"
+msgstr "Уақыт жылдамдығының масштабы"
 
 #: world.cc:43
 msgid "timeScale"
 msgstr "уақытМасштаб"
-
-#: world.cc:43
-msgid "Simulation speed scale"
-msgstr "Уақыт жылдамдығының масштабы"
 
 #: world.cc:44
 msgid "errorsCalculation"

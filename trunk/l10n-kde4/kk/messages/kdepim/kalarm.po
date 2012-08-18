@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-15 05:03+0200\n"
+"POT-Creation-Date: 2012-08-18 04:21+0200\n"
 "PO-Revision-Date: 2012-08-08 07:00+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -18,52 +18,6 @@ msgstr ""
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
-
-#: deferdlg.cpp:44
-msgctxt "@title:window"
-msgid "Defer Alarm"
-msgstr "Ескертуді кейінге шегіндіру"
-
-#: deferdlg.cpp:46
-msgctxt "@action:button"
-msgid "Cancel Deferral"
-msgstr "Кейінге қалдырудан айну"
-
-#: deferdlg.cpp:65
-msgctxt "@info:whatsthis"
-msgid "Defer the alarm until the specified time."
-msgstr "Ескертуді келтірілген уақытқа дейін кейінге қалдыру."
-
-#: deferdlg.cpp:66
-msgctxt "@info:whatsthis"
-msgid "Cancel the deferred alarm. This does not affect future recurrences."
-msgstr ""
-"Ескертуді кейінге қалдырудан айну. Бұл болашақ қайталануларға әсерін "
-"тигізбейді."
-
-#: deferdlg.cpp:98
-#, kde-format
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
-msgstr "Келесі қайталау өткенге ауыстырылмайды (қазіргісі - %1)"
-
-#: deferdlg.cpp:102
-#, kde-format
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next recurrence (currently %1)"
-msgstr "Келесі ескерту өткенге ауыстырылмайды (қазіргісі - %1)"
-
-#: deferdlg.cpp:106
-#, kde-format
-msgctxt "@info"
-msgid "Cannot defer past the alarm's next reminder (currently %1)"
-msgstr "Келесі еске салу өткенге ауыстырылмайды (қазіргісі - %1)"
-
-#: deferdlg.cpp:110
-#, kde-format
-msgctxt "@info"
-msgid "Cannot defer reminder past the main alarm time (%1)"
-msgstr "Келесі негізгі ескерту өткенге ауыстырмайды (%1)"
 
 #: akonadimodel.cpp:450 eventlistmodel.cpp:313
 msgctxt "@info:tooltip"
@@ -243,6 +197,11 @@ msgctxt "@info/plain"
 msgid "Failed to delete alarm."
 msgstr "Ескертуді өшіру жаңылысы."
 
+#: akonadiresourcecreator.cpp:109
+msgctxt "@info/plain"
+msgid "Failed to create new calendar resource"
+msgstr "Жаңа күнтізбе ресурсын құру жаңылысы"
+
 #: alarmcalendar.cpp:344 alarmcalendar.cpp:901
 #, kde-format
 msgctxt "@info"
@@ -306,6 +265,29 @@ msgctxt "@info"
 msgid "Cannot upload new calendar to:<nl/><filename>%1</filename>"
 msgstr "Жаңа күнтізбе келесіге жүктеп берілмеді:<nl/><filename>%1</filename>"
 
+#: alarmtime.cpp:42 alarmtime.cpp:80
+msgctxt "@info/plain Alarm never occurs"
+msgid "Never"
+msgstr "Ешқашан"
+
+#: alarmtime.cpp:86
+#, no-c-format, kde-format
+msgctxt "@info/plain n days"
+msgid "%1d"
+msgstr "%1к"
+
+#: alarmtime.cpp:95
+#, kde-format
+msgctxt "@info/plain hours:minutes"
+msgid "%1:%2"
+msgstr "%1:%2"
+
+#: alarmtime.cpp:98
+#, kde-format
+msgctxt "@info/plain days hours:minutes"
+msgid "%1d %2:%3"
+msgstr "%1к %2:%3"
+
 #: alarmtimewidget.cpp:52
 msgctxt "@info/plain"
 msgid ""
@@ -330,13 +312,13 @@ msgstr "Бұл баптау диалогында орнатын KAlarm қолд�
 
 #: alarmtimewidget.cpp:108
 msgctxt "@option:radio"
-msgid "Defer to date/time:"
-msgstr "Келесі күн/уақытқа шегіндіру:"
+msgid "At date/time:"
+msgstr "Күні/уақытқы:"
 
 #: alarmtimewidget.cpp:108
 msgctxt "@option:radio"
-msgid "At date/time:"
-msgstr "Күні/уақытқы:"
+msgid "Defer to date/time:"
+msgstr "Келесі күн/уақытқа шегіндіру:"
 
 #: alarmtimewidget.cpp:110
 msgctxt "@info:whatsthis"
@@ -603,6 +585,79 @@ msgctxt "@info:whatsthis"
 msgid "Set up an additional alarm repetition"
 msgstr "Ескертудің қосымша қайталауын орнату"
 
+#: calendarmigrator.cpp:278 collectionmodel.cpp:939
+#: resources/alarmresources.cpp:135
+msgctxt "@info/plain"
+msgid "Active Alarms"
+msgstr "Белсенді ескертулері"
+
+#: calendarmigrator.cpp:286 collectionmodel.cpp:941
+#: resources/alarmresources.cpp:145
+msgctxt "@info/plain"
+msgid "Archived Alarms"
+msgstr "Өткен ескертулері"
+
+#: calendarmigrator.cpp:294 collectionmodel.cpp:943
+#: resources/alarmresources.cpp:140
+msgctxt "@info/plain"
+msgid "Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#: calendarmigrator.cpp:329
+#, kde-format
+msgctxt "@info/plain"
+msgid "Failed to create default calendar <resource>%1</resource>"
+msgstr "Жаңа <resource>%1</resource> күнтізбесін құру жаңылысы"
+
+#: calendarmigrator.cpp:331
+#, kde-format
+msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
+msgid ""
+"Failed to convert old configuration for calendar <resource>%1</resource>. "
+"Please use Import Alarms to load its alarms into a new or existing calendar."
+msgstr ""
+"<resource>%1</resource> күнтізбесі үшін ескі баптауы аударуға келмеді. Жаңа "
+"не бар күнтібе үшін еске салуларды импорттаңыз."
+
+#: calendarmigrator.cpp:333
+#, kde-format
+msgctxt "@info/plain File path or URL"
+msgid "Location: %1"
+msgstr "Орны: %1"
+
+#: calendarmigrator.cpp:335
+#, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>%2</para>"
+msgstr "<para>%1</para><para>%2</para>"
+
+#: calendarmigrator.cpp:337
+#, kde-format
+msgctxt "@info"
+msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
+msgstr "<para>%1</para><para>%2<nl/>(%3)</para>"
+
+#: calendarmigrator.cpp:443
+msgctxt "@info/plain"
+msgid "Invalid collection"
+msgstr "Жарамсыз жинақ"
+
+#: calendarmigrator.cpp:457
+#, kde-format
+msgctxt "@info/plain"
+msgid "Failed to update format of calendar <resource>%1</resource>"
+msgstr "<resource>%1</resource> күнтізбесін жаңарту жаңылысы"
+
+#: calendarmigrator.cpp:735
+msgctxt "@info/plain"
+msgid "New configuration timed out"
+msgstr "Жаңа баптауларды күту уақыты өтті"
+
+#: calendarmigrator.cpp:748
+msgctxt "@info/plain"
+msgid "New configuration was corrupt"
+msgstr "Жаңа баптаулар бүлінген"
+
 #: collectionmodel.cpp:362 resourcemodelview.cpp:422
 msgctxt "@info"
 msgid "You cannot disable your default active alarm calendar."
@@ -669,24 +724,6 @@ msgstr ""
 msgctxt "@info"
 msgid "<para>%1</para><para>Please select a new default calendar.</para>"
 msgstr "<para>%1</para><para>Жаңа әдетті күнтізбені таңдаңыз.</para>"
-
-#: collectionmodel.cpp:939 resources/alarmresources.cpp:135
-#: calendarmigrator.cpp:278
-msgctxt "@info/plain"
-msgid "Active Alarms"
-msgstr "Белсенді ескертулері"
-
-#: collectionmodel.cpp:941 resources/alarmresources.cpp:145
-#: calendarmigrator.cpp:286
-msgctxt "@info/plain"
-msgid "Archived Alarms"
-msgstr "Өткен ескертулері"
-
-#: collectionmodel.cpp:943 resources/alarmresources.cpp:140
-#: calendarmigrator.cpp:294
-msgctxt "@info/plain"
-msgid "Alarm Templates"
-msgstr "Ескерту үлгілері"
 
 #: collectionmodel.cpp:1202
 msgctxt "@title:window"
@@ -770,6 +807,52 @@ msgstr "<icode>%1</icode> параметрі дұрыс емес"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "<icode>%1</icode> деген <icode>%2</icode> дегенмен үйлеспейді"
+
+#: deferdlg.cpp:44
+msgctxt "@title:window"
+msgid "Defer Alarm"
+msgstr "Ескертуді кейінге шегіндіру"
+
+#: deferdlg.cpp:46
+msgctxt "@action:button"
+msgid "Cancel Deferral"
+msgstr "Кейінге қалдырудан айну"
+
+#: deferdlg.cpp:65
+msgctxt "@info:whatsthis"
+msgid "Defer the alarm until the specified time."
+msgstr "Ескертуді келтірілген уақытқа дейін кейінге қалдыру."
+
+#: deferdlg.cpp:66
+msgctxt "@info:whatsthis"
+msgid "Cancel the deferred alarm. This does not affect future recurrences."
+msgstr ""
+"Ескертуді кейінге қалдырудан айну. Бұл болашақ қайталануларға әсерін "
+"тигізбейді."
+
+#: deferdlg.cpp:98
+#, kde-format
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next sub-repetition (currently %1)"
+msgstr "Келесі қайталау өткенге ауыстырылмайды (қазіргісі - %1)"
+
+#: deferdlg.cpp:102
+#, kde-format
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next recurrence (currently %1)"
+msgstr "Келесі ескерту өткенге ауыстырылмайды (қазіргісі - %1)"
+
+#: deferdlg.cpp:106
+#, kde-format
+msgctxt "@info"
+msgid "Cannot defer past the alarm's next reminder (currently %1)"
+msgstr "Келесі еске салу өткенге ауыстырылмайды (қазіргісі - %1)"
+
+#: deferdlg.cpp:110
+#, kde-format
+msgctxt "@info"
+msgid "Cannot defer reminder past the main alarm time (%1)"
+msgstr "Келесі негізгі ескерту өткенге ауыстырмайды (%1)"
 
 #: editdlg.cpp:98
 #, kde-format
@@ -1009,23 +1092,23 @@ msgstr "Құптап растау"
 
 #: editdlgtypes.cpp:144
 msgctxt "@title:window"
-msgid "New Display Alarm Template"
-msgstr "Көрсетілетін ескертудің жаңа үлгісі"
-
-#: editdlgtypes.cpp:144
-msgctxt "@title:window"
 msgid "Edit Display Alarm Template"
 msgstr "Көрсетілетін ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:145
+#: editdlgtypes.cpp:144
 msgctxt "@title:window"
-msgid "New Display Alarm"
-msgstr "Жаңа көрсетілетін ескерту"
+msgid "New Display Alarm Template"
+msgstr "Көрсетілетін ескертудің жаңа үлгісі"
 
 #: editdlgtypes.cpp:145
 msgctxt "@title:window"
 msgid "Edit Display Alarm"
 msgstr "Көрсететін ескертуді өңдеу"
+
+#: editdlgtypes.cpp:145
+msgctxt "@title:window"
+msgid "New Display Alarm"
+msgstr "Жаңа көрсетілетін ескерту"
 
 #: editdlgtypes.cpp:157
 msgctxt "@label:listbox"
@@ -1163,23 +1246,23 @@ msgstr "Терминал терезесінде орындалсын"
 
 #: editdlgtypes.cpp:756
 msgctxt "@title:window"
-msgid "New Command Alarm Template"
-msgstr "Командалық ескертудің жаңа үлгісі"
-
-#: editdlgtypes.cpp:756
-msgctxt "@title:window"
 msgid "Edit Command Alarm Template"
 msgstr "Командалық ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:757
+#: editdlgtypes.cpp:756
 msgctxt "@title:window"
-msgid "New Command Alarm"
-msgstr "Жаңа командалық ескерту"
+msgid "New Command Alarm Template"
+msgstr "Командалық ескертудің жаңа үлгісі"
 
 #: editdlgtypes.cpp:757
 msgctxt "@title:window"
 msgid "Edit Command Alarm"
 msgstr "Командалық ескертуді өңдеу"
+
+#: editdlgtypes.cpp:757
+msgctxt "@title:window"
+msgid "New Command Alarm"
+msgstr "Жаңа командалық ескерту"
 
 #: editdlgtypes.cpp:765
 msgctxt "@info:whatsthis"
@@ -1251,23 +1334,23 @@ msgstr "Эл.поштаның көшірмесі өзіне қалдырылсы
 
 #: editdlgtypes.cpp:1059
 msgctxt "@title:window"
-msgid "New Email Alarm Template"
-msgstr "Эл.пошталық ескертудің жаңа үлгісі"
-
-#: editdlgtypes.cpp:1059
-msgctxt "@title:window"
 msgid "Edit Email Alarm Template"
 msgstr "Эл.пошталық ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:1060
+#: editdlgtypes.cpp:1059
 msgctxt "@title:window"
-msgid "New Email Alarm"
-msgstr "Жаңа эл.пошталық ескерту"
+msgid "New Email Alarm Template"
+msgstr "Эл.пошталық ескертудің жаңа үлгісі"
 
 #: editdlgtypes.cpp:1060
 msgctxt "@title:window"
 msgid "Edit Email Alarm"
 msgstr "Эл.пошталық ескертуді өңдеу"
+
+#: editdlgtypes.cpp:1060
+msgctxt "@title:window"
+msgid "New Email Alarm"
+msgstr "Жаңа эл.пошталық ескерту"
 
 #: editdlgtypes.cpp:1068
 msgctxt "@info:whatsthis"
@@ -1414,23 +1497,23 @@ msgstr "Тіркеме файлын таңдау"
 
 #: editdlgtypes.cpp:1512
 msgctxt "@title:window"
-msgid "New Audio Alarm Template"
-msgstr "Дыбысты ескертудің жаңа үлгісі"
-
-#: editdlgtypes.cpp:1512
-msgctxt "@title:window"
 msgid "Edit Audio Alarm Template"
 msgstr "Дыбысты ескерту үлгісін өңдеу"
 
-#: editdlgtypes.cpp:1513
+#: editdlgtypes.cpp:1512
 msgctxt "@title:window"
-msgid "New Audio Alarm"
-msgstr "Жаңа дыбысты ескерту"
+msgid "New Audio Alarm Template"
+msgstr "Дыбысты ескертудің жаңа үлгісі"
 
 #: editdlgtypes.cpp:1513
 msgctxt "@title:window"
 msgid "Edit Audio Alarm"
 msgstr "Дыбысты ескертуді өңдеу"
+
+#: editdlgtypes.cpp:1513
+msgctxt "@title:window"
+msgid "New Audio Alarm"
+msgstr "Жаңа дыбысты ескерту"
 
 #: editdlgtypes.cpp:1730
 msgctxt "@info:whatsthis"
@@ -1458,6 +1541,161 @@ msgstr "Орындайтын командасын не скриптті келт
 msgctxt "@info:whatsthis"
 msgid "List of scheduled alarms"
 msgstr "Жоспарланған ескертулер тізімі"
+
+#: find.cpp:137
+msgctxt "@title:group"
+msgid "Alarm Type"
+msgstr "Ескерту түрі"
+
+#: find.cpp:145
+msgctxt "@option:check Alarm type"
+msgid "Active"
+msgstr "Белсенді"
+
+#: find.cpp:147
+msgctxt "@info:whatsthis"
+msgid "Check to include active alarms in the search."
+msgstr "Белсенді ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
+
+#: find.cpp:150
+msgctxt "@option:check Alarm type"
+msgid "Archived"
+msgstr "Өткен"
+
+#: find.cpp:152
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to include archived alarms in the search. This option is only "
+"available if archived alarms are currently being displayed."
+msgstr ""
+"Уақыты өткен ескертулерде іздеу жүргізілсін десеңіз, белгісін қойыңыз. Бұл "
+"өткен ескертулер көрсетіліп тұрса ғана істейді."
+
+#: find.cpp:160
+msgctxt "@option:check Alarm action = text display"
+msgid "Text"
+msgstr "Мәтінді"
+
+#: find.cpp:162
+msgctxt "@info:whatsthis"
+msgid "Check to include text message alarms in the search."
+msgstr ""
+"Мәтінді ескерту хабарларында іздеу жүргізілсін.десеңіз белгісін қойыңыз."
+
+#: find.cpp:165
+msgctxt "@option:check Alarm action = file display"
+msgid "File"
+msgstr "Файл"
+
+#: find.cpp:167
+msgctxt "@info:whatsthis"
+msgid "Check to include file alarms in the search."
+msgstr "Ескерту файлдарында іздеу жүргізілсін десеңіз белгісін қойыңыз."
+
+#: find.cpp:170
+msgctxt "@option:check Alarm action"
+msgid "Command"
+msgstr "Командалық"
+
+#: find.cpp:172
+msgctxt "@info:whatsthis"
+msgid "Check to include command alarms in the search."
+msgstr "Командалық ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
+
+#: find.cpp:175
+msgctxt "@option:check Alarm action"
+msgid "Email"
+msgstr "Эл.пошталық"
+
+#: find.cpp:177
+msgctxt "@info:whatsthis"
+msgid "Check to include email alarms in the search."
+msgstr "Эл.пошталық ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
+
+#: find.cpp:180
+msgctxt "@option:check Alarm action"
+msgid "Audio"
+msgstr "Дыбысты"
+
+#: find.cpp:182
+msgctxt "@info:whatsthis"
+msgid "Check to include audio alarms in the search."
+msgstr "Дыбысты ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
+
+#: find.cpp:283
+msgctxt "@info"
+msgid "No alarm types are selected to search"
+msgstr "Іздейтін ескерту түрлері таңдалмаған"
+
+#: find.cpp:439
+msgctxt "@info"
+msgid ""
+"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
+"para>"
+msgstr ""
+"<para>Ескерту тізімінің соңына жетті.</para><para>Басынан бастап "
+"жалғастырмақсыз ба?</para>"
+
+#: find.cpp:440
+msgctxt "@info"
+msgid ""
+"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
+"para>"
+msgstr ""
+"<para>Ескерту тізімінің басына жетті.</para><para>Соңынан бастап "
+"жалғастырмақсыз ба?</para>"
+
+#: fontcolour.cpp:71
+msgctxt "@label:listbox"
+msgid "Foreground color:"
+msgstr "Мәтін түсі:"
+
+#: fontcolour.cpp:76
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message foreground color"
+msgstr "Ескерту хабарламасының мәтін түсін таңдау"
+
+#: fontcolour.cpp:84
+msgctxt "@label:listbox"
+msgid "Background color:"
+msgstr "Ая түсі:"
+
+#: fontcolour.cpp:89
+msgctxt "@info:whatsthis"
+msgid "Select the alarm message background color"
+msgstr "Ескерту хабарының ая түсін таңдау"
+
+#: fontcolour.cpp:97
+msgctxt "@option:check"
+msgid "Use default font"
+msgstr "Әдетті қаріп қолданылсын"
+
+#: fontcolour.cpp:100
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to use the default font current at the time the alarm is displayed."
+msgstr ""
+"Ескертуді көрсету үшін әдетті қаріп қолданылсын десеңіз белгісін қойыңыз."
+
+#: fontcolour.h:39
+msgid "Requested font"
+msgstr "Сұралған қаріп"
+
+#: fontcolourbutton.cpp:43
+msgctxt "@action:button"
+msgid "Font && Color..."
+msgstr "Қаріп && түс..."
+
+#: fontcolourbutton.cpp:47
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose the font, and foreground and background color, for the alarm message."
+msgstr "Ескерту хабарламасы үшін қаріп, жазу және ая түсін таңдау."
+
+#: fontcolourbutton.cpp:71
+msgctxt "@title:window"
+msgid "Choose Alarm Font & Color"
+msgstr "Ескерту қаріпі мен түсін таңдау"
 
 #: functions.cpp:181
 msgctxt "@action"
@@ -1671,57 +1909,89 @@ msgstr ""
 "күнтізбені жаңартсаңыз, ол қолданалмайтын болады.</warning></para> "
 "<para>Күнтізбені жаңартуды қалайсыз ба?</para>"
 
-#: fontcolour.cpp:71
-msgctxt "@label:listbox"
-msgid "Foreground color:"
-msgstr "Мәтін түсі:"
-
-#: fontcolour.cpp:76
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message foreground color"
-msgstr "Ескерту хабарламасының мәтін түсін таңдау"
-
-#: fontcolour.cpp:84
-msgctxt "@label:listbox"
-msgid "Background color:"
-msgstr "Ая түсі:"
-
-#: fontcolour.cpp:89
-msgctxt "@info:whatsthis"
-msgid "Select the alarm message background color"
-msgstr "Ескерту хабарының ая түсін таңдау"
-
-#: fontcolour.cpp:97
-msgctxt "@option:check"
-msgid "Use default font"
-msgstr "Әдетті қаріп қолданылсын"
-
-#: fontcolour.cpp:100
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to use the default font current at the time the alarm is displayed."
+#: kalarmapp.cpp:346
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
+#| "editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not unique"
 msgstr ""
-"Ескертуді көрсету үшін әдетті қаріп қолданылсын десеңіз белгісін қойыңыз."
+"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
+"келмейді"
 
-#: fontcolour.h:39
-msgid "Requested font"
-msgstr "Сұралған қаріп"
+#: kalarmapp.cpp:348
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
+#| "editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found"
+msgstr ""
+"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
+"келмейді"
 
-#: fontcolourbutton.cpp:43
-msgctxt "@action:button"
-msgid "Font && Color..."
-msgstr "Қаріп && түс..."
+#: kalarmapp.cpp:376 kalarmapp.cpp:378
+#, fuzzy, kde-format
+#| msgctxt "@info:shell"
+#| msgid ""
+#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
+#| "editable"
+msgctxt "@info:shell"
+msgid "%1: Event <resource>%2</resource> not found, or not editable"
+msgstr ""
+"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
+"келмейді"
 
-#: fontcolourbutton.cpp:47
-msgctxt "@info:whatsthis"
+#: kalarmapp.cpp:557
+msgctxt "@info"
 msgid ""
-"Choose the font, and foreground and background color, for the alarm message."
-msgstr "Ескерту хабарламасы үшін қаріп, жазу және ая түсін таңдау."
+"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
+"><nl/>(The KDE time zone service is not available:<nl/>check that "
+"<application>ktimezoned</application> is installed.)"
+msgstr ""
+"Уақыт белдеуі орнатылмады:<nl/>KAlarm бүкіләлемдік (UTC) уақытты қолданады."
+"<nl/><nl/>(KDE уақыт белдеу қызметі қол жеткізбейді:<nl/> "
+"<application>ktimezoned</application> бағдарламасы орнатылғаның тексеріңіз.)"
 
-#: fontcolourbutton.cpp:71
-msgctxt "@title:window"
-msgid "Choose Alarm Font & Color"
-msgstr "Ескерту қаріпі мен түсін таңдау"
+#: kalarmapp.cpp:634
+msgctxt "@info"
+msgid ""
+"Quitting will disable alarms (once any alarm message windows are closed)."
+msgstr ""
+"Шықсаңыз ескертулер бұғатталады (барлық ескерту хабарлама терезелері "
+"жабылса)."
+
+#: kalarmapp.cpp:642
+msgctxt "@info"
+msgid "Quitting will cancel the scheduled Wake from Suspend."
+msgstr "Шығу ескертуді аялдаудан оралып ескерту қасиетінен айырады."
+
+#: kalarmapp.cpp:654
+msgctxt "@info"
+msgid ""
+"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
+"if KAlarm is not started.)"
+msgstr ""
+"Жүйеге кіргенде KAlarm жегілсін бе?<nl/>(KAlarm жегілмесе ескертулер "
+"болмайды.)"
+
+#: kalarmapp.cpp:2126
+msgctxt "@info"
+msgid "Error creating temporary script file"
+msgstr "Уақытша скрипт файлын құру қатесі"
+
+#: kalarmapp.cpp:2214
+msgctxt "@info"
+msgid "Pre-alarm action:"
+msgstr "Ескерту алдындағы әрекет:"
+
+#: kalarmapp.cpp:2220
+msgctxt "@info"
+msgid "Post-alarm action:"
+msgstr "Ескерту кейінгі әрекет:"
 
 #: kamail.cpp:91
 msgctxt "@info/plain"
@@ -1830,6 +2100,819 @@ msgstr "Эл.поштаны жіберу жаңылысы"
 msgctxt "@info"
 msgid "Error sending email"
 msgstr "Эл.поштаны жіберу қатесі"
+
+#: latecancel.cpp:44
+msgctxt "@option:check"
+msgid "Cancel if late"
+msgstr "Кешіккен ескерту болмасын"
+
+#: latecancel.cpp:45
+msgctxt "@option:check"
+msgid "Auto-close window after this time"
+msgstr "Осы уақыттан кейін терезе авто жабылсын"
+
+#: latecancel.cpp:46
+msgctxt "@option:check"
+msgid "Auto-close window after late-cancellation time"
+msgstr "Кешігу мерзімі өткен соң терезесі авто жабылсын"
+
+#: latecancel.cpp:56
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If checked, the alarm will be canceled if it cannot be triggered "
+"within the specified period after its scheduled time. Possible reasons for "
+"not triggering include your being logged off, X not running, or "
+"<application>KAlarm</application> not running.</para><para>If unchecked, the "
+"alarm will be triggered at the first opportunity after its scheduled time, "
+"regardless of how late it is.</para>"
+msgstr ""
+"<para>Белгісі қойылса, жоспарланған уақыттан кейін келтірілген уақыт "
+"мерзімінде ескерту жасалмаса, ол орындалмайды.  Жасалмауының себептері: ол "
+"кезде пайдаланушының жүйеден тыс болғаны, X істемегені, <application>KAlarm</"
+"application> жегілмегені.</para><para>Белгісі қойылмаса, ескерту уақыттан "
+"қанша уақыт кешіксе де, мүмкіндік пайда бола қалған кезде жасалады.</para> "
+
+#: latecancel.cpp:82
+msgctxt "@option:check Cancel if late by 10 minutes"
+msgid "Cancel if late by"
+msgstr "Келесіге кешіксе - айну"
+
+#: latecancel.cpp:83
+msgctxt "@info:whatsthis"
+msgid "Enter how late will cause the alarm to be canceled"
+msgstr "Қаншаға кешіккен соң ескерту болмайтынын келтіріңіз"
+
+#: latecancel.cpp:99
+msgctxt "@info:whatsthis"
+msgid ""
+"Automatically close the alarm window after the expiry of the late-"
+"cancellation period"
+msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
+
+#: lib/filedialog.cpp:60
+msgctxt "@option:check"
+msgid "Append to existing file"
+msgstr "Бар файл жалғастырылсын"
+
+#: lib/kalocale.cpp:51
+msgctxt "@option Name of the weekday"
+msgid "Monday"
+msgstr "Дұйсенбі"
+
+#: lib/kalocale.cpp:52
+msgctxt "@option Name of the weekday"
+msgid "Tuesday"
+msgstr "Сейсенбі"
+
+#: lib/kalocale.cpp:53
+msgctxt "@option Name of the weekday"
+msgid "Wednesday"
+msgstr "Сәрсенбі"
+
+#: lib/kalocale.cpp:54
+msgctxt "@option Name of the weekday"
+msgid "Thursday"
+msgstr "Бейсенбі"
+
+#: lib/kalocale.cpp:55
+msgctxt "@option Name of the weekday"
+msgid "Friday"
+msgstr "Жұма"
+
+#: lib/kalocale.cpp:56
+msgctxt "@option Name of the weekday"
+msgid "Saturday"
+msgstr "Сенбі"
+
+#: lib/kalocale.cpp:57
+msgctxt "@option Name of the weekday"
+msgid "Sunday"
+msgstr "Жексенбі"
+
+#: lib/shellprocess.cpp:158
+msgctxt "@info"
+msgid "Failed to execute command (shell access not authorized)"
+msgstr "Команданы орындау қатесі (қоршау ортасына қатынау рұқсат етілмеген):"
+
+#: lib/shellprocess.cpp:161
+msgctxt "@info"
+msgid "Failed to execute command"
+msgstr "Команданы орындау жаңылысы"
+
+#: lib/shellprocess.cpp:163
+msgctxt "@info"
+msgid "Command execution error"
+msgstr "Команданы орындау қатесі"
+
+#: lib/shellprocess.cpp:166
+#, kde-format
+msgctxt "@info"
+msgid "Command exit code: %1"
+msgstr "Команданың шығу коды: %1"
+
+#: lib/timeedit.cpp:177
+msgctxt "@item:inlistbox Morning, as in 2am"
+msgid "am"
+msgstr "am"
+
+#: lib/timeedit.cpp:196
+msgctxt "@item:inlistbox Afternoon, as in 2pm"
+msgid "pm"
+msgstr "pm"
+
+#: lib/timeperiod.cpp:41
+msgctxt "@item:inlistbox Time units"
+msgid "minutes"
+msgstr "минут"
+
+#: lib/timeperiod.cpp:42
+msgctxt "@item:inlistbox Time units"
+msgid "hours/minutes"
+msgstr "сағат/минут"
+
+#: lib/timeperiod.cpp:43
+msgctxt "@item:inlistbox Time units"
+msgid "days"
+msgstr "күн"
+
+#: lib/timeperiod.cpp:44
+msgctxt "@item:inlistbox Time units"
+msgid "weeks"
+msgstr "апта"
+
+#: lib/timespinbox.cpp:77
+msgctxt "@info:whatsthis"
+msgid ""
+"Press the Shift key while clicking the spin buttons to adjust the time by a "
+"larger step (6 hours / 5 minutes)."
+msgstr ""
+"Сан тергіштің жебелерін түрткенде уақытты таңдау қадамын үлкейту үшін (6 "
+"сағат / 5 минут) Shift пернесін басып тұрыңыз."
+
+#: main.cpp:39
+msgid "KAlarm"
+msgstr "KAlarm"
+
+#: main.cpp:40
+msgid "Personal alarm message, command and email scheduler for KDE"
+msgstr ""
+"KDE-дегі дербес ескерту хабарламасын, командасын және эл.поштасын "
+"жоспарлағышы"
+
+#: main.cpp:42
+msgid "Copyright 2001-2012, David Jarvie"
+msgstr "Copyright 2001-2012, David Jarvie"
+
+#: main.cpp:50
+msgid "Prompt for confirmation when alarm is acknowledged"
+msgstr "Ескертуді қабылдағанын растайтын құптауды сұрау"
+
+#: main.cpp:52
+msgid "Attach file to email (repeat as needed)"
+msgstr "Эл.поштаға файлды тіркеу (қажет болса, қайталап)"
+
+#: main.cpp:53
+msgid "Auto-close alarm window after --late-cancel period"
+msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
+
+#: main.cpp:54
+msgid "Blind copy email to self"
+msgstr "Эл.поштаның жасырын көшірмесі өзіңе жіберілсін"
+
+#: main.cpp:56
+msgid "Beep when message is displayed"
+msgstr "Ескертуді көрсетуі дыбыспен сүйемелденсін"
+
+#: main.cpp:59
+msgid "Message background color (name or hex 0xRRGGBB)"
+msgstr "Хабарлама аясының түсі (атауы не оналтылық 0xRRGGBB түрінде)"
+
+#: main.cpp:62
+msgid "Message foreground color (name or hex 0xRRGGBB)"
+msgstr "Хабарлама мәтіннің түсі (атауы не оналтылық 0xRRGGBB түрінде)"
+
+#: main.cpp:63
+msgid "Cancel alarm with the specified event ID"
+msgstr "Келтірілген оқиға ID-і бойынша ескертуден айну"
+
+#: main.cpp:65
+msgid "Disable the alarm"
+msgstr "Ескертуді бұғаттау"
+
+#: main.cpp:66
+msgid "Disable monitoring of all alarms"
+msgstr "Бүкіл ескертулерді қадағалауын бұғаттау"
+
+#: main.cpp:68
+msgid "Execute a shell command line"
+msgstr "Командалық орта командасын орындау"
+
+#: main.cpp:70
+msgid "Command line to generate alarm message text"
+msgstr "Ескерту хабарламасының мәтінін шығаратын командасы"
+
+#: main.cpp:71
+msgid "Display the alarm edit dialog to edit the specified alarm"
+msgstr "Келтірілген ескертуді өңдеу үшін өңдеу диалогын ашу"
+
+#: main.cpp:72
+msgid "Display the alarm edit dialog to edit a new display alarm"
+msgstr "Жаңа көрсетілетін ескертуді өңдеу үшін өңдеу диалогын ашу"
+
+#: main.cpp:73
+msgid "Display the alarm edit dialog to edit a new command alarm"
+msgstr "Жаңа командалық ескертуді өңдеу үшін өңдеу диалогын ашу"
+
+#: main.cpp:74
+msgid "Display the alarm edit dialog to edit a new email alarm"
+msgstr "Жаңа эл.пошталық ескертуді өңдеу үшін өңдеу диалогын ашу"
+
+#: main.cpp:75
+msgid "Display the alarm edit dialog to edit a new audio alarm"
+msgstr "Жаңа дыбыстық ескертуді өңдеу үшін өңдеу диалогын ашу"
+
+#: main.cpp:76
+msgid "Display the alarm edit dialog, preset with a template"
+msgstr "Үлгіге сәйкес толтырылған ескерту өңдеу диалогын көрсету"
+
+#: main.cpp:78
+msgid "File to display"
+msgstr "Көрсететін файл"
+
+#: main.cpp:80
+msgid "KMail identity to use as sender of email"
+msgstr "Қолданатын эл.пошта жіберушінінің KMail іс-әлпеті"
+
+#: main.cpp:82
+msgid "Interval between alarm repetitions"
+msgstr "Ескертуді қайталау аралығы"
+
+#: main.cpp:84
+msgid "Show alarm as an event in KOrganizer"
+msgstr "Ескерту KOrganizer-дегі оқиға ретінде көрсетілсін"
+
+#: main.cpp:86
+msgid "Cancel alarm if more than 'period' late when triggered"
+msgstr "Егер ескертудің кешігу мерзімі өтіп кетсе - ол болмасын"
+
+#: main.cpp:87
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "List of scheduled alarms"
+msgid "Output list of scheduled alarms to stdout"
+msgstr "Жоспарланған ескертулер тізімі"
+
+#: main.cpp:89
+msgid "Repeat alarm at every login"
+msgstr "Ескерту жүйеге кірген сайын қайталансын"
+
+#: main.cpp:91
+msgid "Send an email to the given address (repeat as needed)"
+msgstr "Келтірілген адрестерге эл.пошта жіберілсін (керегінде қайталанады)"
+
+#: main.cpp:93
+msgid "Audio file to play once"
+msgstr "Бір рет орындайтын дыбыс файлы"
+
+#: main.cpp:95
+msgid "Audio file to play repeatedly"
+msgstr "Қайталап орындайтын дыбыс файлы"
+
+#: main.cpp:96
+msgid "Specify alarm recurrence using iCalendar syntax"
+msgstr "Ескерту қайталауын iCalendar пішімінде келтіріңіз"
+
+#: main.cpp:98
+msgid "Display reminder before or after alarm"
+msgstr "Еске салу ескертудің алдында ма кейін бе"
+
+#: main.cpp:99
+msgid "Display reminder once, before or after first alarm recurrence"
+msgstr "Бір еске салу ескертудің бірінші қайталануы алдында ма кейін бе "
+
+#: main.cpp:101
+msgid "Number of times to repeat alarm (including initial occasion)"
+msgstr "Ескертуді қайталау саны (алғашқы ескертуді қоса)"
+
+#: main.cpp:103
+msgid "Speak the message when it is displayed"
+msgstr "Ескертуді көрсеткенде ол дауыстап оқылсын"
+
+#: main.cpp:105
+msgid "Email subject line"
+msgstr "Эл.поштаның тақырып жолы"
+
+#: main.cpp:107
+msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
+msgstr ""
+":Жалған жүйелік уақытын [[[yyyy-]mm-]dd-]hh:mm [TZ} деп қою (жөндеу режімі)"
+
+#: main.cpp:110
+msgid ""
+"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"[[[yyyy-]mm-]dd-]hh:mm [TZ] уақытында немесе yyyy-mm-dd [TZ] күнінде ескерту"
+
+#: main.cpp:111
+msgid "Display system tray icon"
+msgstr "Таңбашасы жүйелік сөреде болсын"
+
+#: main.cpp:112
+msgid "Trigger alarm with the specified event ID"
+msgstr "Келтірген оқиға ID бойынша ескертуді жасау"
+
+#: main.cpp:114
+msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
+msgstr ""
+"[[[yyyy-]mm-]dd-]hh:mm уақыты немесе yyyy-mm-dd күніге дейін қайталансын"
+
+#: main.cpp:116
+msgid "Volume to play audio file"
+msgstr "Дыбыс файлының орындау үнділігі"
+
+#: main.cpp:117
+msgid "Message text to display"
+msgstr "Көрсететін ескерту мәтіні"
+
+#: mainwindow.cpp:126
+msgctxt "@action"
+msgid "Show &Alarm Times"
+msgstr "Е&скерту уақыттарын көрсету"
+
+#: mainwindow.cpp:127
+msgctxt "@option:check"
+msgid "Show alarm time"
+msgstr "Ескерту &уақыты көрсетілсін"
+
+#: mainwindow.cpp:128
+msgctxt "@action"
+msgid "Show Time t&o Alarms"
+msgstr "Ескертуге қ&алған уақыттарын көрсету"
+
+#: mainwindow.cpp:129
+msgctxt "@option:check"
+msgid "Show time until alarm"
+msgstr "Ескертуге қа&лған уақыты көрсетілсін"
+
+#: mainwindow.cpp:437
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
+msgstr ""
+"Мәзірлерді құру жаңылысы (бәлкім, <filename>%1</filename> жоқ немесе "
+"бүлінген)"
+
+#: mainwindow.cpp:458
+msgctxt "@action"
+msgid "&Templates..."
+msgstr "&Үлгілер..."
+
+#: mainwindow.cpp:462
+msgctxt "@action"
+msgid "&New"
+msgstr "&Жаңа"
+
+#: mainwindow.cpp:489
+msgctxt "@action"
+msgid "Create Tem&plate..."
+msgstr "Үл&гіні құру..."
+
+#: mainwindow.cpp:493
+msgctxt "@action"
+msgid "&Copy..."
+msgstr "&Көшіріп алу..."
+
+#: mainwindow.cpp:498 resourceselector.cpp:518
+msgctxt "@action"
+msgid "&Edit..."
+msgstr "Ө&згерту..."
+
+#: mainwindow.cpp:503
+msgctxt "@action"
+msgid "&Delete"
+msgstr "Ө&шіру"
+
+#: mainwindow.cpp:509
+msgctxt "@action"
+msgid "Delete Without Confirmation"
+msgstr "Құптаусыз өшіру"
+
+#: mainwindow.cpp:514
+msgctxt "@action"
+msgid "Reac&tivate"
+msgstr "Қайта бел&сендіру"
+
+#: mainwindow.cpp:524
+msgctxt "@action"
+msgid "Wake From Suspend..."
+msgstr "Аялдау режімінен оралу..."
+
+#: mainwindow.cpp:541
+msgctxt "@action"
+msgid "Show Archi&ved Alarms"
+msgstr "Ө&ткен ескертулер көрсетілсін"
+
+#: mainwindow.cpp:546
+msgctxt "@action"
+msgid "Show in System &Tray"
+msgstr "Жүйелік &сөреде көрсетілсін"
+
+#: mainwindow.cpp:550
+msgctxt "@action"
+msgid "Show &Calendars"
+msgstr "&Күнтізбелер көрсетілсін"
+
+#: mainwindow.cpp:558
+msgctxt "@action"
+msgid "Import &Alarms..."
+msgstr "&Ескертулерді импорттау..."
+
+#: mainwindow.cpp:562
+msgctxt "@action"
+msgid "Import &Birthdays..."
+msgstr "&Туған күндерді импорттау..."
+
+#: mainwindow.cpp:566
+msgctxt "@action"
+msgid "E&xport Selected Alarms..."
+msgstr "Таңдалған &ескертулерді экспорттау..."
+
+#: mainwindow.cpp:570 resourceselector.cpp:538
+msgctxt "@action"
+msgid "E&xport..."
+msgstr "Э&кспорттау..."
+
+#: mainwindow.cpp:574
+msgctxt "@action"
+msgid "&Refresh Alarms"
+msgstr "&Ескертулерді жаңарту"
+
+#: mainwindow.cpp:829
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm?"
+msgid_plural "Do you really want to delete the %1 selected alarms?"
+msgstr[0] "Шынымен таңдалған %1 ескертуді өшірмексіз бе?"
+
+#: mainwindow.cpp:831
+msgctxt "@title:window"
+msgid "Delete Alarm"
+msgid_plural "Delete Alarms"
+msgstr[0] "Ескертулерді өшіру"
+
+#: mainwindow.cpp:832 templatedlg.cpp:214
+msgctxt "@action:button"
+msgid "&Delete"
+msgstr "Ө&шіру"
+
+#: mainwindow.cpp:976
+msgctxt "@info:tooltip"
+msgid "Hide Archived Alarms"
+msgstr "Өткен ескертулер жасырылсын"
+
+#: mainwindow.cpp:977
+msgctxt "@info:tooltip"
+msgid "Show Archived Alarms"
+msgstr "Өткен ескертулер көрсетілсін"
+
+#: mainwindow.cpp:1064
+msgctxt "@info"
+msgid "Import birthdays"
+msgstr "Туған күндерді импорттау"
+
+#: mainwindow.cpp:1234
+#, kde-format
+msgctxt "@action Undo/Redo [action]"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: mainwindow.cpp:1235
+#, kde-format
+msgctxt "@action Undo [action]: message"
+msgid "%1 %2: %3"
+msgstr "%1 %2: %3"
+
+#: mainwindow.cpp:1521
+msgctxt "@item:inlistbox"
+msgid "Display Alarm"
+msgstr "Көрсететін ескерту"
+
+#: mainwindow.cpp:1523
+msgctxt "@item:inlistbox"
+msgid "Email Alarm"
+msgstr "Эл.поштамен ескерту"
+
+#: mainwindow.cpp:1525
+msgctxt "@item:inlistbox"
+msgid "Command Alarm"
+msgstr "Командалық ескерту"
+
+#: mainwindow.cpp:1527
+msgctxt "@title:window"
+msgid "Alarm Type"
+msgstr "Ескерту түрі"
+
+#: mainwindow.cpp:1528
+msgctxt "@info"
+msgid "Choose alarm type to create:"
+msgstr "Ескерту түрін таңдау:"
+
+#: mainwindow.cpp:1681
+msgctxt "@action"
+msgid "Disa&ble"
+msgstr "Бұға&ттау"
+
+#: mainwindow.cpp:1681
+msgctxt "@action"
+msgid "Ena&ble"
+msgstr "Рұқсат &ету"
+
+#: messagewin.cpp:438 messagewin.cpp:861
+msgctxt "@title:window"
+msgid "Message"
+msgstr "Хабарлама"
+
+#: messagewin.cpp:438
+msgctxt "@title:window"
+msgid "Reminder"
+msgstr "Алдын-ала еске салу"
+
+#: messagewin.cpp:456
+msgctxt "@info:whatsthis"
+msgid ""
+"The scheduled date/time for the message (as opposed to the actual time of "
+"display)."
+msgstr ""
+"Хабарламаның жоспарланған күні/уақыты (көрсетудің шын уақыттың орнына)."
+
+#: messagewin.cpp:463
+msgctxt "@info"
+msgid "Reminder"
+msgstr "Алдын-ала еске салу"
+
+#: messagewin.cpp:487
+msgctxt "@info:whatsthis"
+msgid "The file whose contents are displayed below"
+msgstr "Мазмұны төменде көрсетілген файл"
+
+#: messagewin.cpp:543
+msgctxt "@info:whatsthis"
+msgid "The contents of the file to be displayed"
+msgstr "Көрсетілетін файлдың мазмұны"
+
+#: messagewin.cpp:551
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "Файлды ашу жаңылысы"
+
+#: messagewin.cpp:551
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "Бұл файл - қапшық"
+
+#: messagewin.cpp:551
+msgctxt "@info"
+msgid "File not found"
+msgstr "Файл табылмады"
+
+#: messagewin.cpp:571
+msgctxt "@info:whatsthis"
+msgid "The alarm message"
+msgstr "Ескерту хабарламасы"
+
+#: messagewin.cpp:598
+msgctxt "@info:whatsthis"
+msgid "The output of the alarm's command"
+msgstr "Ескерту командасының шығысы"
+
+#: messagewin.cpp:640
+msgctxt "@info:whatsthis"
+msgid "The email to send"
+msgstr "Жіберетін эл.пошта"
+
+#: messagewin.cpp:646
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "Кімге:"
+
+#: messagewin.cpp:653
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "Тақырыбы:"
+
+#: messagewin.cpp:679
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Қате"
+
+#: messagewin.cpp:699
+msgctxt "@option:check"
+msgid "Do not display this error message again for this alarm"
+msgstr "Бұұл ескертуде бұл қатенің хабарламасы енді көрсетілмесін"
+
+#: messagewin.cpp:718
+msgctxt "@info:whatsthis"
+msgid "Acknowledge the alarm"
+msgstr "Ескертуді құптау"
+
+#: messagewin.cpp:723
+msgctxt "@action:button"
+msgid "&Edit..."
+msgstr "Ө&згерту..."
+
+#: messagewin.cpp:728
+msgctxt "@info:whatsthis"
+msgid "Edit the alarm."
+msgstr "Осы ескертуді өңдеу."
+
+#: messagewin.cpp:732
+msgctxt "@action:button"
+msgid "&Defer..."
+msgstr "Кейінге қал&дыру..."
+
+#: messagewin.cpp:737
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Defer the alarm until later.</para><para>You will be prompted to "
+"specify when the alarm should be redisplayed.</para>"
+msgstr ""
+"<para>Ескертуді кейінге шегіндіру.</para><para>Қай кезде оны қайта көрсету "
+"керегі сұралады.</para>"
+
+#: messagewin.cpp:752 sounddlg.cpp:442
+msgctxt "@info:tooltip"
+msgid "Stop sound"
+msgstr "Дыбысты тоқтату"
+
+#: messagewin.cpp:753 sounddlg.cpp:443
+msgctxt "@info:whatsthis"
+msgid "Stop playing the sound"
+msgstr "Дыбысты орындауын тоқтату"
+
+#: messagewin.cpp:767
+msgctxt "@info:tooltip Locate this email in KMail"
+msgid "Locate in <application>KMail</application>"
+msgstr "<application>KMail</application>-де табу"
+
+#: messagewin.cpp:768
+msgctxt "@info:whatsthis"
+msgid "Locate and highlight this email in <application>KMail</application>"
+msgstr "Эл.поштаны <application>KMail</application>-де тауып белгілеу"
+
+#: messagewin.cpp:777
+msgctxt "@info:tooltip"
+msgid "Activate <application>KAlarm</application>"
+msgstr "<application>KAlarm</application> белсендету"
+
+#: messagewin.cpp:778
+msgctxt "@info:whatsthis"
+msgid "Activate <application>KAlarm</application>"
+msgstr "<application>KAlarm</application> белсендету"
+
+#: messagewin.cpp:938
+msgctxt "@info"
+msgid "Today"
+msgstr "Бүгін"
+
+#: messagewin.cpp:940
+#, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] "%1 күн мерзімінде"
+
+#: messagewin.cpp:942
+#, kde-format
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "%1 апта мерзімінде"
+
+#: messagewin.cpp:956
+#, kde-format
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "%1 минут мерзімінде"
+
+#: messagewin.cpp:958
+#, kde-format
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "%1 сағат мерзімінде"
+
+#: messagewin.cpp:961
+#, kde-format
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "%1 сағат"
+
+#: messagewin.cpp:962
+#, kde-format
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "%2 %1 минут мерзімінде"
+
+#: messagewin.cpp:1464 messagewin.cpp:1474
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "Хабарлама дауыстап айтылмады"
+
+#: messagewin.cpp:1474
+msgctxt "@info"
+msgid "D-Bus call say() failed"
+msgstr "D-Bus say() шақыру жаңылысы"
+
+#: messagewin.cpp:1617
+#, kde-format
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr "Келесі дыбыс файлы ашылмады: <filename>%1</filename>"
+
+#: messagewin.cpp:1715
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"<para>Келесі файлды ойнату қатесі: <filename>%1</filename></para><para>%2</"
+"para>"
+
+#: messagewin.cpp:2044
+msgctxt "@info"
+msgid "Do you really want to acknowledge this alarm?"
+msgstr "Бұл ескертуді растауын калайсыз ба?"
+
+#: messagewin.cpp:2045
+msgctxt "@action:button"
+msgid "Acknowledge"
+msgstr "Растау"
+
+#: messagewin.cpp:2045
+msgctxt "@action:button"
+msgid "Acknowledge Alarm"
+msgstr "Ескертуді растау"
+
+#: messagewin.cpp:2096
+msgctxt "@info"
+msgid "Unable to locate this email in <application>KMail</application>"
+msgstr "Бұл эл.пошта <application>KMail</application>-де табылмады"
+
+#: messagewin.cpp:2266
+msgctxt "@info"
+msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
+msgstr ""
+"<para>Ескерту кейінге шегіндірілмеді:</para><para>Ол табылған жоқ.</para>"
+
+#: newalarmaction.cpp:59
+msgctxt "@item:inmenu"
+msgid "&Display Alarm Template"
+msgstr "Көрсетілетін ескерту үлгісі"
+
+#: newalarmaction.cpp:59
+msgctxt "@action"
+msgid "New Display Alarm"
+msgstr "Жаңа көрсетілетін ескерту"
+
+#: newalarmaction.cpp:62
+msgctxt "@item:inmenu"
+msgid "&Command Alarm Template"
+msgstr "&Командалық ескерту үлгісі"
+
+#: newalarmaction.cpp:62
+msgctxt "@action"
+msgid "New Command Alarm"
+msgstr "Жаңа командалық ескерту үлгісі"
+
+#: newalarmaction.cpp:65
+msgctxt "@item:inmenu"
+msgid "&Email Alarm Template"
+msgstr "&Эл.пошталық ескерту үлгісі"
+
+#: newalarmaction.cpp:65
+msgctxt "@action"
+msgid "New Email Alarm"
+msgstr "Жаңа эл.пошталық ескерту"
+
+#: newalarmaction.cpp:68
+msgctxt "@item:inmenu"
+msgid "&Audio Alarm Template"
+msgstr "&Дыбысты ескерту үлгісі"
+
+#: newalarmaction.cpp:68
+msgctxt "@action"
+msgid "New Audio Alarm"
+msgstr "Жаңа дыбысты ескерту"
+
+#: newalarmaction.cpp:79
+msgctxt "@action"
+msgid "New Alarm From &Template"
+msgstr "Үл&гіден жаңа ескерту"
 
 #: prefdlg.cpp:157
 msgctxt "@title:window"
@@ -2818,2598 +3901,6 @@ msgstr ""
 "кәдімгі терезе болады.</item><item>Белгісі қойылмаса, пернелерді басуын "
 "қабылдамайтын, айдары жоқ, жылжытылмайтын және өлшемі өзгермейтін терезе "
 "болады.</item></list></para>"
-
-#: sounddlg.cpp:54
-msgctxt "@option:check"
-msgid "Repeat"
-msgstr "Қайталануы"
-
-#: sounddlg.cpp:158
-msgctxt "@label"
-msgid "Sound file:"
-msgstr "Дыбыс файлы:"
-
-#: sounddlg.cpp:172 sounddlg.cpp:455
-msgctxt "@info:tooltip"
-msgid "Test the sound"
-msgstr "Дыбысты сынап көру"
-
-#: sounddlg.cpp:173 sounddlg.cpp:456
-msgctxt "@info:whatsthis"
-msgid "Play the selected sound file."
-msgstr "Таңдаған дыбыс файлын орындау."
-
-#: sounddlg.cpp:179
-msgctxt "@info:whatsthis"
-msgid "Enter the name or URL of a sound file to play."
-msgstr "Орындалатын дыбыс файл атауын не URL сілтемесін келтіріңіз."
-
-#: sounddlg.cpp:191
-msgctxt "@info:whatsthis"
-msgid "Select a sound file to play."
-msgstr "Орындалатын дыбыс файлын таңдау."
-
-#: sounddlg.cpp:205
-msgctxt "@info:whatsthis"
-msgid ""
-"If checked, the sound file will be played repeatedly for as long as the "
-"message is displayed."
-msgstr ""
-"Белгісі қойылса, хабарлама көрсетіліп тұрғанша дыбыс файлы қайталанып "
-"орындала береді."
-
-#: sounddlg.cpp:215
-msgctxt "@label:spinbox Length of time to pause between repetitions"
-msgid "Pause between repetitions:"
-msgstr "Ескертуді қайталау аралығы:"
-
-#: sounddlg.cpp:222 sounddlg.cpp:276
-msgctxt "@label"
-msgid "seconds"
-msgstr "сек"
-
-#: sounddlg.cpp:224
-msgctxt "@info:whatsthis"
-msgid "Enter how many seconds to pause between repetitions."
-msgstr "Ескертуді қайталау аралығы неше секунд болатынын келтіріңіз."
-
-#: sounddlg.cpp:228
-msgctxt "@title:group Sound volume"
-msgid "Volume"
-msgstr "Үнділігі"
-
-#: sounddlg.cpp:243
-msgctxt "@option:check"
-msgid "Set volume"
-msgstr "Үнділігін орнату"
-
-#: sounddlg.cpp:246
-msgctxt "@info:whatsthis"
-msgid "Select to choose the volume for playing the sound file."
-msgstr "Дыбыс файлының орындалу үнділігін басқару үшін таңдаңыз."
-
-#: sounddlg.cpp:253
-msgctxt "@info:whatsthis"
-msgid "Choose the volume for playing the sound file."
-msgstr "Дыбыс файлының орындалу үнділігін таңдау."
-
-#: sounddlg.cpp:258
-msgctxt "@option:check"
-msgid "Fade"
-msgstr "Біртіндеп өзгеру"
-
-#: sounddlg.cpp:261
-msgctxt "@info:whatsthis"
-msgid "Select to fade the volume when the sound file first starts to play."
-msgstr ""
-"Дыбыс файлы орындалуы басталғанда үнділігі біртіндеп көтерілуін таңдау."
-
-#: sounddlg.cpp:269
-msgctxt "@label:spinbox Time period over which to fade the sound"
-msgid "Fade time:"
-msgstr "Біртіндеп көтерілу уақыты:"
-
-#: sounddlg.cpp:278
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter how many seconds to fade the sound before reaching the set volume."
-msgstr ""
-"Орнатылған үнділік деңгейіне біртіндеп жету үшін неше секунд керек екенін  "
-"келтіріңіз."
-
-#: sounddlg.cpp:285
-msgctxt "@label:slider"
-msgid "Initial volume:"
-msgstr "Бастапқы үнділігі:"
-
-#: sounddlg.cpp:293
-msgctxt "@info:whatsthis"
-msgid "Choose the initial volume for playing the sound file."
-msgstr "Дыбыс файл орындалуының бастапқы үнділік деңгейі."
-
-#: sounddlg.cpp:442 messagewin.cpp:752
-msgctxt "@info:tooltip"
-msgid "Stop sound"
-msgstr "Дыбысты тоқтату"
-
-#: sounddlg.cpp:443 messagewin.cpp:753
-msgctxt "@info:whatsthis"
-msgid "Stop playing the sound"
-msgstr "Дыбысты орындауын тоқтату"
-
-#: find.cpp:137
-msgctxt "@title:group"
-msgid "Alarm Type"
-msgstr "Ескерту түрі"
-
-#: find.cpp:145
-msgctxt "@option:check Alarm type"
-msgid "Active"
-msgstr "Белсенді"
-
-#: find.cpp:147
-msgctxt "@info:whatsthis"
-msgid "Check to include active alarms in the search."
-msgstr "Белсенді ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
-
-#: find.cpp:150
-msgctxt "@option:check Alarm type"
-msgid "Archived"
-msgstr "Өткен"
-
-#: find.cpp:152
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to include archived alarms in the search. This option is only "
-"available if archived alarms are currently being displayed."
-msgstr ""
-"Уақыты өткен ескертулерде іздеу жүргізілсін десеңіз, белгісін қойыңыз. Бұл "
-"өткен ескертулер көрсетіліп тұрса ғана істейді."
-
-#: find.cpp:160
-msgctxt "@option:check Alarm action = text display"
-msgid "Text"
-msgstr "Мәтінді"
-
-#: find.cpp:162
-msgctxt "@info:whatsthis"
-msgid "Check to include text message alarms in the search."
-msgstr ""
-"Мәтінді ескерту хабарларында іздеу жүргізілсін.десеңіз белгісін қойыңыз."
-
-#: find.cpp:165
-msgctxt "@option:check Alarm action = file display"
-msgid "File"
-msgstr "Файл"
-
-#: find.cpp:167
-msgctxt "@info:whatsthis"
-msgid "Check to include file alarms in the search."
-msgstr "Ескерту файлдарында іздеу жүргізілсін десеңіз белгісін қойыңыз."
-
-#: find.cpp:170
-msgctxt "@option:check Alarm action"
-msgid "Command"
-msgstr "Командалық"
-
-#: find.cpp:172
-msgctxt "@info:whatsthis"
-msgid "Check to include command alarms in the search."
-msgstr "Командалық ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
-
-#: find.cpp:175
-msgctxt "@option:check Alarm action"
-msgid "Email"
-msgstr "Эл.пошталық"
-
-#: find.cpp:177
-msgctxt "@info:whatsthis"
-msgid "Check to include email alarms in the search."
-msgstr "Эл.пошталық ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
-
-#: find.cpp:180
-msgctxt "@option:check Alarm action"
-msgid "Audio"
-msgstr "Дыбысты"
-
-#: find.cpp:182
-msgctxt "@info:whatsthis"
-msgid "Check to include audio alarms in the search."
-msgstr "Дыбысты ескертулерде іздеу жүргізілсін десеңіз белгісін қойыңыз."
-
-#: find.cpp:283
-msgctxt "@info"
-msgid "No alarm types are selected to search"
-msgstr "Іздейтін ескерту түрлері таңдалмаған"
-
-#: find.cpp:439
-msgctxt "@info"
-msgid ""
-"<para>End of alarm list reached.</para><para>Continue from the beginning?</"
-"para>"
-msgstr ""
-"<para>Ескерту тізімінің соңына жетті.</para><para>Басынан бастап "
-"жалғастырмақсыз ба?</para>"
-
-#: find.cpp:440
-msgctxt "@info"
-msgid ""
-"<para>Beginning of alarm list reached.</para><para>Continue from the end?</"
-"para>"
-msgstr ""
-"<para>Ескерту тізімінің басына жетті.</para><para>Соңынан бастап "
-"жалғастырмақсыз ба?</para>"
-
-#: latecancel.cpp:44
-msgctxt "@option:check"
-msgid "Cancel if late"
-msgstr "Кешіккен ескерту болмасын"
-
-#: latecancel.cpp:45
-msgctxt "@option:check"
-msgid "Auto-close window after this time"
-msgstr "Осы уақыттан кейін терезе авто жабылсын"
-
-#: latecancel.cpp:46
-msgctxt "@option:check"
-msgid "Auto-close window after late-cancellation time"
-msgstr "Кешігу мерзімі өткен соң терезесі авто жабылсын"
-
-#: latecancel.cpp:56
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If checked, the alarm will be canceled if it cannot be triggered "
-"within the specified period after its scheduled time. Possible reasons for "
-"not triggering include your being logged off, X not running, or "
-"<application>KAlarm</application> not running.</para><para>If unchecked, the "
-"alarm will be triggered at the first opportunity after its scheduled time, "
-"regardless of how late it is.</para>"
-msgstr ""
-"<para>Белгісі қойылса, жоспарланған уақыттан кейін келтірілген уақыт "
-"мерзімінде ескерту жасалмаса, ол орындалмайды.  Жасалмауының себептері: ол "
-"кезде пайдаланушының жүйеден тыс болғаны, X істемегені, <application>KAlarm</"
-"application> жегілмегені.</para><para>Белгісі қойылмаса, ескерту уақыттан "
-"қанша уақыт кешіксе де, мүмкіндік пайда бола қалған кезде жасалады.</para> "
-
-#: latecancel.cpp:82
-msgctxt "@option:check Cancel if late by 10 minutes"
-msgid "Cancel if late by"
-msgstr "Келесіге кешіксе - айну"
-
-#: latecancel.cpp:83
-msgctxt "@info:whatsthis"
-msgid "Enter how late will cause the alarm to be canceled"
-msgstr "Қаншаға кешіккен соң ескерту болмайтынын келтіріңіз"
-
-#: latecancel.cpp:99
-msgctxt "@info:whatsthis"
-msgid ""
-"Automatically close the alarm window after the expiry of the late-"
-"cancellation period"
-msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
-
-#: lib/filedialog.cpp:60
-msgctxt "@option:check"
-msgid "Append to existing file"
-msgstr "Бар файл жалғастырылсын"
-
-#: lib/kalocale.cpp:51
-msgctxt "@option Name of the weekday"
-msgid "Monday"
-msgstr "Дұйсенбі"
-
-#: lib/kalocale.cpp:52
-msgctxt "@option Name of the weekday"
-msgid "Tuesday"
-msgstr "Сейсенбі"
-
-#: lib/kalocale.cpp:53
-msgctxt "@option Name of the weekday"
-msgid "Wednesday"
-msgstr "Сәрсенбі"
-
-#: lib/kalocale.cpp:54
-msgctxt "@option Name of the weekday"
-msgid "Thursday"
-msgstr "Бейсенбі"
-
-#: lib/kalocale.cpp:55
-msgctxt "@option Name of the weekday"
-msgid "Friday"
-msgstr "Жұма"
-
-#: lib/kalocale.cpp:56
-msgctxt "@option Name of the weekday"
-msgid "Saturday"
-msgstr "Сенбі"
-
-#: lib/kalocale.cpp:57
-msgctxt "@option Name of the weekday"
-msgid "Sunday"
-msgstr "Жексенбі"
-
-#: lib/timeedit.cpp:177
-msgctxt "@item:inlistbox Morning, as in 2am"
-msgid "am"
-msgstr "am"
-
-#: lib/timeedit.cpp:196
-msgctxt "@item:inlistbox Afternoon, as in 2pm"
-msgid "pm"
-msgstr "pm"
-
-#: lib/timeperiod.cpp:41
-msgctxt "@item:inlistbox Time units"
-msgid "minutes"
-msgstr "минут"
-
-#: lib/timeperiod.cpp:42
-msgctxt "@item:inlistbox Time units"
-msgid "hours/minutes"
-msgstr "сағат/минут"
-
-#: lib/timeperiod.cpp:43
-msgctxt "@item:inlistbox Time units"
-msgid "days"
-msgstr "күн"
-
-#: lib/timeperiod.cpp:44
-msgctxt "@item:inlistbox Time units"
-msgid "weeks"
-msgstr "апта"
-
-#: lib/timespinbox.cpp:77
-msgctxt "@info:whatsthis"
-msgid ""
-"Press the Shift key while clicking the spin buttons to adjust the time by a "
-"larger step (6 hours / 5 minutes)."
-msgstr ""
-"Сан тергіштің жебелерін түрткенде уақытты таңдау қадамын үлкейту үшін (6 "
-"сағат / 5 минут) Shift пернесін басып тұрыңыз."
-
-#: lib/shellprocess.cpp:158
-msgctxt "@info"
-msgid "Failed to execute command (shell access not authorized)"
-msgstr "Команданы орындау қатесі (қоршау ортасына қатынау рұқсат етілмеген):"
-
-#: lib/shellprocess.cpp:161
-msgctxt "@info"
-msgid "Failed to execute command"
-msgstr "Команданы орындау жаңылысы"
-
-#: lib/shellprocess.cpp:163
-msgctxt "@info"
-msgid "Command execution error"
-msgstr "Команданы орындау қатесі"
-
-#: lib/shellprocess.cpp:166
-#, kde-format
-msgctxt "@info"
-msgid "Command exit code: %1"
-msgstr "Команданың шығу коды: %1"
-
-#: main.cpp:39
-msgid "KAlarm"
-msgstr "KAlarm"
-
-#: main.cpp:40
-msgid "Personal alarm message, command and email scheduler for KDE"
-msgstr ""
-"KDE-дегі дербес ескерту хабарламасын, командасын және эл.поштасын "
-"жоспарлағышы"
-
-#: main.cpp:42
-msgid "Copyright 2001-2012, David Jarvie"
-msgstr "Copyright 2001-2012, David Jarvie"
-
-#: main.cpp:50
-msgid "Prompt for confirmation when alarm is acknowledged"
-msgstr "Ескертуді қабылдағанын растайтын құптауды сұрау"
-
-#: main.cpp:52
-msgid "Attach file to email (repeat as needed)"
-msgstr "Эл.поштаға файлды тіркеу (қажет болса, қайталап)"
-
-#: main.cpp:53
-msgid "Auto-close alarm window after --late-cancel period"
-msgstr "Кешігу мерзімі өткен соң ескерту терезесін автоматты түрде жабу"
-
-#: main.cpp:54
-msgid "Blind copy email to self"
-msgstr "Эл.поштаның жасырын көшірмесі өзіңе жіберілсін"
-
-#: main.cpp:56
-msgid "Beep when message is displayed"
-msgstr "Ескертуді көрсетуі дыбыспен сүйемелденсін"
-
-#: main.cpp:59
-msgid "Message background color (name or hex 0xRRGGBB)"
-msgstr "Хабарлама аясының түсі (атауы не оналтылық 0xRRGGBB түрінде)"
-
-#: main.cpp:62
-msgid "Message foreground color (name or hex 0xRRGGBB)"
-msgstr "Хабарлама мәтіннің түсі (атауы не оналтылық 0xRRGGBB түрінде)"
-
-#: main.cpp:63
-msgid "Cancel alarm with the specified event ID"
-msgstr "Келтірілген оқиға ID-і бойынша ескертуден айну"
-
-#: main.cpp:65
-msgid "Disable the alarm"
-msgstr "Ескертуді бұғаттау"
-
-#: main.cpp:66
-msgid "Disable monitoring of all alarms"
-msgstr "Бүкіл ескертулерді қадағалауын бұғаттау"
-
-#: main.cpp:68
-msgid "Execute a shell command line"
-msgstr "Командалық орта командасын орындау"
-
-#: main.cpp:70
-msgid "Command line to generate alarm message text"
-msgstr "Ескерту хабарламасының мәтінін шығаратын командасы"
-
-#: main.cpp:71
-msgid "Display the alarm edit dialog to edit the specified alarm"
-msgstr "Келтірілген ескертуді өңдеу үшін өңдеу диалогын ашу"
-
-#: main.cpp:72
-msgid "Display the alarm edit dialog to edit a new display alarm"
-msgstr "Жаңа көрсетілетін ескертуді өңдеу үшін өңдеу диалогын ашу"
-
-#: main.cpp:73
-msgid "Display the alarm edit dialog to edit a new command alarm"
-msgstr "Жаңа командалық ескертуді өңдеу үшін өңдеу диалогын ашу"
-
-#: main.cpp:74
-msgid "Display the alarm edit dialog to edit a new email alarm"
-msgstr "Жаңа эл.пошталық ескертуді өңдеу үшін өңдеу диалогын ашу"
-
-#: main.cpp:75
-msgid "Display the alarm edit dialog to edit a new audio alarm"
-msgstr "Жаңа дыбыстық ескертуді өңдеу үшін өңдеу диалогын ашу"
-
-#: main.cpp:76
-msgid "Display the alarm edit dialog, preset with a template"
-msgstr "Үлгіге сәйкес толтырылған ескерту өңдеу диалогын көрсету"
-
-#: main.cpp:78
-msgid "File to display"
-msgstr "Көрсететін файл"
-
-#: main.cpp:80
-msgid "KMail identity to use as sender of email"
-msgstr "Қолданатын эл.пошта жіберушінінің KMail іс-әлпеті"
-
-#: main.cpp:82
-msgid "Interval between alarm repetitions"
-msgstr "Ескертуді қайталау аралығы"
-
-#: main.cpp:84
-msgid "Show alarm as an event in KOrganizer"
-msgstr "Ескерту KOrganizer-дегі оқиға ретінде көрсетілсін"
-
-#: main.cpp:86
-msgid "Cancel alarm if more than 'period' late when triggered"
-msgstr "Егер ескертудің кешігу мерзімі өтіп кетсе - ол болмасын"
-
-#: main.cpp:87
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid "List of scheduled alarms"
-msgid "Output list of scheduled alarms to stdout"
-msgstr "Жоспарланған ескертулер тізімі"
-
-#: main.cpp:89
-msgid "Repeat alarm at every login"
-msgstr "Ескерту жүйеге кірген сайын қайталансын"
-
-#: main.cpp:91
-msgid "Send an email to the given address (repeat as needed)"
-msgstr "Келтірілген адрестерге эл.пошта жіберілсін (керегінде қайталанады)"
-
-#: main.cpp:93
-msgid "Audio file to play once"
-msgstr "Бір рет орындайтын дыбыс файлы"
-
-#: main.cpp:95
-msgid "Audio file to play repeatedly"
-msgstr "Қайталап орындайтын дыбыс файлы"
-
-#: main.cpp:96
-msgid "Specify alarm recurrence using iCalendar syntax"
-msgstr "Ескерту қайталауын iCalendar пішімінде келтіріңіз"
-
-#: main.cpp:98
-msgid "Display reminder before or after alarm"
-msgstr "Еске салу ескертудің алдында ма кейін бе"
-
-#: main.cpp:99
-msgid "Display reminder once, before or after first alarm recurrence"
-msgstr "Бір еске салу ескертудің бірінші қайталануы алдында ма кейін бе "
-
-#: main.cpp:101
-msgid "Number of times to repeat alarm (including initial occasion)"
-msgstr "Ескертуді қайталау саны (алғашқы ескертуді қоса)"
-
-#: main.cpp:103
-msgid "Speak the message when it is displayed"
-msgstr "Ескертуді көрсеткенде ол дауыстап оқылсын"
-
-#: main.cpp:105
-msgid "Email subject line"
-msgstr "Эл.поштаның тақырып жолы"
-
-#: main.cpp:107
-msgid "Simulate system time [[[yyyy-]mm-]dd-]hh:mm [TZ] (debug mode)"
-msgstr ""
-":Жалған жүйелік уақытын [[[yyyy-]mm-]dd-]hh:mm [TZ} деп қою (жөндеу режімі)"
-
-#: main.cpp:110
-msgid ""
-"Trigger alarm at time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"[[[yyyy-]mm-]dd-]hh:mm [TZ] уақытында немесе yyyy-mm-dd [TZ] күнінде ескерту"
-
-#: main.cpp:111
-msgid "Display system tray icon"
-msgstr "Таңбашасы жүйелік сөреде болсын"
-
-#: main.cpp:112
-msgid "Trigger alarm with the specified event ID"
-msgstr "Келтірген оқиға ID бойынша ескертуді жасау"
-
-#: main.cpp:114
-msgid "Repeat until time [[[yyyy-]mm-]dd-]hh:mm [TZ], or date yyyy-mm-dd [TZ]"
-msgstr ""
-"[[[yyyy-]mm-]dd-]hh:mm уақыты немесе yyyy-mm-dd күніге дейін қайталансын"
-
-#: main.cpp:116
-msgid "Volume to play audio file"
-msgstr "Дыбыс файлының орындау үнділігі"
-
-#: main.cpp:117
-msgid "Message text to display"
-msgstr "Көрсететін ескерту мәтіні"
-
-#: mainwindow.cpp:126
-msgctxt "@action"
-msgid "Show &Alarm Times"
-msgstr "Е&скерту уақыттарын көрсету"
-
-#: mainwindow.cpp:127
-msgctxt "@option:check"
-msgid "Show alarm time"
-msgstr "Ескерту &уақыты көрсетілсін"
-
-#: mainwindow.cpp:128
-msgctxt "@action"
-msgid "Show Time t&o Alarms"
-msgstr "Ескертуге қ&алған уақыттарын көрсету"
-
-#: mainwindow.cpp:129
-msgctxt "@option:check"
-msgid "Show time until alarm"
-msgstr "Ескертуге қа&лған уақыты көрсетілсін"
-
-#: mainwindow.cpp:437
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Failure to create menus (perhaps <filename>%1</filename> missing or "
-"corrupted)"
-msgstr ""
-"Мәзірлерді құру жаңылысы (бәлкім, <filename>%1</filename> жоқ немесе "
-"бүлінген)"
-
-#: mainwindow.cpp:458
-msgctxt "@action"
-msgid "&Templates..."
-msgstr "&Үлгілер..."
-
-#: mainwindow.cpp:462
-msgctxt "@action"
-msgid "&New"
-msgstr "&Жаңа"
-
-#: mainwindow.cpp:489
-msgctxt "@action"
-msgid "Create Tem&plate..."
-msgstr "Үл&гіні құру..."
-
-#: mainwindow.cpp:493
-msgctxt "@action"
-msgid "&Copy..."
-msgstr "&Көшіріп алу..."
-
-#: mainwindow.cpp:498 resourceselector.cpp:518
-msgctxt "@action"
-msgid "&Edit..."
-msgstr "Ө&згерту..."
-
-#: mainwindow.cpp:503
-msgctxt "@action"
-msgid "&Delete"
-msgstr "Ө&шіру"
-
-#: mainwindow.cpp:509
-msgctxt "@action"
-msgid "Delete Without Confirmation"
-msgstr "Құптаусыз өшіру"
-
-#: mainwindow.cpp:514
-msgctxt "@action"
-msgid "Reac&tivate"
-msgstr "Қайта бел&сендіру"
-
-#: mainwindow.cpp:524
-msgctxt "@action"
-msgid "Wake From Suspend..."
-msgstr "Аялдау режімінен оралу..."
-
-#: mainwindow.cpp:541
-msgctxt "@action"
-msgid "Show Archi&ved Alarms"
-msgstr "Ө&ткен ескертулер көрсетілсін"
-
-#: mainwindow.cpp:546
-msgctxt "@action"
-msgid "Show in System &Tray"
-msgstr "Жүйелік &сөреде көрсетілсін"
-
-#: mainwindow.cpp:550
-msgctxt "@action"
-msgid "Show &Calendars"
-msgstr "&Күнтізбелер көрсетілсін"
-
-#: mainwindow.cpp:558
-msgctxt "@action"
-msgid "Import &Alarms..."
-msgstr "&Ескертулерді импорттау..."
-
-#: mainwindow.cpp:562
-msgctxt "@action"
-msgid "Import &Birthdays..."
-msgstr "&Туған күндерді импорттау..."
-
-#: mainwindow.cpp:566
-msgctxt "@action"
-msgid "E&xport Selected Alarms..."
-msgstr "Таңдалған &ескертулерді экспорттау..."
-
-#: mainwindow.cpp:570 resourceselector.cpp:538
-msgctxt "@action"
-msgid "E&xport..."
-msgstr "Э&кспорттау..."
-
-#: mainwindow.cpp:574
-msgctxt "@action"
-msgid "&Refresh Alarms"
-msgstr "&Ескертулерді жаңарту"
-
-#: mainwindow.cpp:829
-#, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm?"
-msgid_plural "Do you really want to delete the %1 selected alarms?"
-msgstr[0] "Шынымен таңдалған %1 ескертуді өшірмексіз бе?"
-
-#: mainwindow.cpp:831
-msgctxt "@title:window"
-msgid "Delete Alarm"
-msgid_plural "Delete Alarms"
-msgstr[0] "Ескертулерді өшіру"
-
-#: mainwindow.cpp:832 templatedlg.cpp:214
-msgctxt "@action:button"
-msgid "&Delete"
-msgstr "Ө&шіру"
-
-#: mainwindow.cpp:976
-msgctxt "@info:tooltip"
-msgid "Hide Archived Alarms"
-msgstr "Өткен ескертулер жасырылсын"
-
-#: mainwindow.cpp:977
-msgctxt "@info:tooltip"
-msgid "Show Archived Alarms"
-msgstr "Өткен ескертулер көрсетілсін"
-
-#: mainwindow.cpp:1064
-msgctxt "@info"
-msgid "Import birthdays"
-msgstr "Туған күндерді импорттау"
-
-#: mainwindow.cpp:1234
-#, kde-format
-msgctxt "@action Undo/Redo [action]"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: mainwindow.cpp:1235
-#, kde-format
-msgctxt "@action Undo [action]: message"
-msgid "%1 %2: %3"
-msgstr "%1 %2: %3"
-
-#: mainwindow.cpp:1521
-msgctxt "@item:inlistbox"
-msgid "Display Alarm"
-msgstr "Көрсететін ескерту"
-
-#: mainwindow.cpp:1523
-msgctxt "@item:inlistbox"
-msgid "Email Alarm"
-msgstr "Эл.поштамен ескерту"
-
-#: mainwindow.cpp:1525
-msgctxt "@item:inlistbox"
-msgid "Command Alarm"
-msgstr "Командалық ескерту"
-
-#: mainwindow.cpp:1527
-msgctxt "@title:window"
-msgid "Alarm Type"
-msgstr "Ескерту түрі"
-
-#: mainwindow.cpp:1528
-msgctxt "@info"
-msgid "Choose alarm type to create:"
-msgstr "Ескерту түрін таңдау:"
-
-#: mainwindow.cpp:1681
-msgctxt "@action"
-msgid "Ena&ble"
-msgstr "Рұқсат &ету"
-
-#: mainwindow.cpp:1681
-msgctxt "@action"
-msgid "Disa&ble"
-msgstr "Бұға&ттау"
-
-#: messagewin.cpp:438
-msgctxt "@title:window"
-msgid "Reminder"
-msgstr "Алдын-ала еске салу"
-
-#: messagewin.cpp:438 messagewin.cpp:861
-msgctxt "@title:window"
-msgid "Message"
-msgstr "Хабарлама"
-
-#: messagewin.cpp:456
-msgctxt "@info:whatsthis"
-msgid ""
-"The scheduled date/time for the message (as opposed to the actual time of "
-"display)."
-msgstr ""
-"Хабарламаның жоспарланған күні/уақыты (көрсетудің шын уақыттың орнына)."
-
-#: messagewin.cpp:463
-msgctxt "@info"
-msgid "Reminder"
-msgstr "Алдын-ала еске салу"
-
-#: messagewin.cpp:487
-msgctxt "@info:whatsthis"
-msgid "The file whose contents are displayed below"
-msgstr "Мазмұны төменде көрсетілген файл"
-
-#: messagewin.cpp:543
-msgctxt "@info:whatsthis"
-msgid "The contents of the file to be displayed"
-msgstr "Көрсетілетін файлдың мазмұны"
-
-#: messagewin.cpp:551
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "Бұл файл - қапшық"
-
-#: messagewin.cpp:551
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "Файлды ашу жаңылысы"
-
-#: messagewin.cpp:551
-msgctxt "@info"
-msgid "File not found"
-msgstr "Файл табылмады"
-
-#: messagewin.cpp:571
-msgctxt "@info:whatsthis"
-msgid "The alarm message"
-msgstr "Ескерту хабарламасы"
-
-#: messagewin.cpp:598
-msgctxt "@info:whatsthis"
-msgid "The output of the alarm's command"
-msgstr "Ескерту командасының шығысы"
-
-#: messagewin.cpp:640
-msgctxt "@info:whatsthis"
-msgid "The email to send"
-msgstr "Жіберетін эл.пошта"
-
-#: messagewin.cpp:646
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "Кімге:"
-
-#: messagewin.cpp:653
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "Тақырыбы:"
-
-#: messagewin.cpp:679
-msgctxt "@title:window"
-msgid "Error"
-msgstr "Қате"
-
-#: messagewin.cpp:699
-msgctxt "@option:check"
-msgid "Do not display this error message again for this alarm"
-msgstr "Бұұл ескертуде бұл қатенің хабарламасы енді көрсетілмесін"
-
-#: messagewin.cpp:718
-msgctxt "@info:whatsthis"
-msgid "Acknowledge the alarm"
-msgstr "Ескертуді құптау"
-
-#: messagewin.cpp:723
-msgctxt "@action:button"
-msgid "&Edit..."
-msgstr "Ө&згерту..."
-
-#: messagewin.cpp:728
-msgctxt "@info:whatsthis"
-msgid "Edit the alarm."
-msgstr "Осы ескертуді өңдеу."
-
-#: messagewin.cpp:732
-msgctxt "@action:button"
-msgid "&Defer..."
-msgstr "Кейінге қал&дыру..."
-
-#: messagewin.cpp:737
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Defer the alarm until later.</para><para>You will be prompted to "
-"specify when the alarm should be redisplayed.</para>"
-msgstr ""
-"<para>Ескертуді кейінге шегіндіру.</para><para>Қай кезде оны қайта көрсету "
-"керегі сұралады.</para>"
-
-#: messagewin.cpp:767
-msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail</application>"
-msgstr "<application>KMail</application>-де табу"
-
-#: messagewin.cpp:768
-msgctxt "@info:whatsthis"
-msgid "Locate and highlight this email in <application>KMail</application>"
-msgstr "Эл.поштаны <application>KMail</application>-де тауып белгілеу"
-
-#: messagewin.cpp:777
-msgctxt "@info:tooltip"
-msgid "Activate <application>KAlarm</application>"
-msgstr "<application>KAlarm</application> белсендету"
-
-#: messagewin.cpp:778
-msgctxt "@info:whatsthis"
-msgid "Activate <application>KAlarm</application>"
-msgstr "<application>KAlarm</application> белсендету"
-
-#: messagewin.cpp:938
-msgctxt "@info"
-msgid "Today"
-msgstr "Бүгін"
-
-#: messagewin.cpp:940
-#, kde-format
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] "%1 күн мерзімінде"
-
-#: messagewin.cpp:942
-#, kde-format
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "%1 апта мерзімінде"
-
-#: messagewin.cpp:956
-#, kde-format
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "%1 минут мерзімінде"
-
-#: messagewin.cpp:958
-#, kde-format
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "%1 сағат мерзімінде"
-
-#: messagewin.cpp:961
-#, kde-format
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "%1 сағат"
-
-#: messagewin.cpp:962
-#, kde-format
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "%2 %1 минут мерзімінде"
-
-#: messagewin.cpp:1464 messagewin.cpp:1474
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "Хабарлама дауыстап айтылмады"
-
-#: messagewin.cpp:1474
-msgctxt "@info"
-msgid "D-Bus call say() failed"
-msgstr "D-Bus say() шақыру жаңылысы"
-
-#: messagewin.cpp:1617
-#, kde-format
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr "Келесі дыбыс файлы ашылмады: <filename>%1</filename>"
-
-#: messagewin.cpp:1715
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"<para>Келесі файлды ойнату қатесі: <filename>%1</filename></para><para>%2</"
-"para>"
-
-#: messagewin.cpp:2044
-msgctxt "@info"
-msgid "Do you really want to acknowledge this alarm?"
-msgstr "Бұл ескертуді растауын калайсыз ба?"
-
-#: messagewin.cpp:2045
-msgctxt "@action:button"
-msgid "Acknowledge Alarm"
-msgstr "Ескертуді растау"
-
-#: messagewin.cpp:2045
-msgctxt "@action:button"
-msgid "Acknowledge"
-msgstr "Растау"
-
-#: messagewin.cpp:2096
-msgctxt "@info"
-msgid "Unable to locate this email in <application>KMail</application>"
-msgstr "Бұл эл.пошта <application>KMail</application>-де табылмады"
-
-#: messagewin.cpp:2266
-msgctxt "@info"
-msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
-msgstr ""
-"<para>Ескерту кейінге шегіндірілмеді:</para><para>Ол табылған жоқ.</para>"
-
-#: kalarmapp.cpp:346
-#, fuzzy, kde-format
-#| msgctxt "@info:shell"
-#| msgid ""
-#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
-#| "editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not unique"
-msgstr ""
-"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
-"келмейді"
-
-#: kalarmapp.cpp:348
-#, fuzzy, kde-format
-#| msgctxt "@info:shell"
-#| msgid ""
-#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
-#| "editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found"
-msgstr ""
-"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
-"келмейді"
-
-#: kalarmapp.cpp:376 kalarmapp.cpp:378
-#, fuzzy, kde-format
-#| msgctxt "@info:shell"
-#| msgid ""
-#| "<icode>%1</icode>: Event <resource>%2</resource> not found, or not "
-#| "editable"
-msgctxt "@info:shell"
-msgid "%1: Event <resource>%2</resource> not found, or not editable"
-msgstr ""
-"<icode>%1</icode>: <resource>%2</resource> оқиғасы табылмады немесе өңдеуге "
-"келмейді"
-
-#: kalarmapp.cpp:557
-msgctxt "@info"
-msgid ""
-"Time zones are not accessible:<nl/>KAlarm will use the UTC time zone.<nl/"
-"><nl/>(The KDE time zone service is not available:<nl/>check that "
-"<application>ktimezoned</application> is installed.)"
-msgstr ""
-"Уақыт белдеуі орнатылмады:<nl/>KAlarm бүкіләлемдік (UTC) уақытты қолданады."
-"<nl/><nl/>(KDE уақыт белдеу қызметі қол жеткізбейді:<nl/> "
-"<application>ktimezoned</application> бағдарламасы орнатылғаның тексеріңіз.)"
-
-#: kalarmapp.cpp:634
-msgctxt "@info"
-msgid ""
-"Quitting will disable alarms (once any alarm message windows are closed)."
-msgstr ""
-"Шықсаңыз ескертулер бұғатталады (барлық ескерту хабарлама терезелері "
-"жабылса)."
-
-#: kalarmapp.cpp:642
-msgctxt "@info"
-msgid "Quitting will cancel the scheduled Wake from Suspend."
-msgstr "Шығу ескертуді аялдаудан оралып ескерту қасиетінен айырады."
-
-#: kalarmapp.cpp:654
-msgctxt "@info"
-msgid ""
-"Do you want to start KAlarm at login?<nl/>(Note that alarms will be disabled "
-"if KAlarm is not started.)"
-msgstr ""
-"Жүйеге кіргенде KAlarm жегілсін бе?<nl/>(KAlarm жегілмесе ескертулер "
-"болмайды.)"
-
-#: kalarmapp.cpp:2126
-msgctxt "@info"
-msgid "Error creating temporary script file"
-msgstr "Уақытша скрипт файлын құру қатесі"
-
-#: kalarmapp.cpp:2214
-msgctxt "@info"
-msgid "Pre-alarm action:"
-msgstr "Ескерту алдындағы әрекет:"
-
-#: kalarmapp.cpp:2220
-msgctxt "@info"
-msgid "Post-alarm action:"
-msgstr "Ескерту кейінгі әрекет:"
-
-#: newalarmaction.cpp:59
-msgctxt "@item:inmenu"
-msgid "&Display Alarm Template"
-msgstr "Көрсетілетін ескерту үлгісі"
-
-#: newalarmaction.cpp:59
-msgctxt "@action"
-msgid "New Display Alarm"
-msgstr "Жаңа көрсетілетін ескерту"
-
-#: newalarmaction.cpp:62
-msgctxt "@item:inmenu"
-msgid "&Command Alarm Template"
-msgstr "&Командалық ескерту үлгісі"
-
-#: newalarmaction.cpp:62
-msgctxt "@action"
-msgid "New Command Alarm"
-msgstr "Жаңа командалық ескерту үлгісі"
-
-#: newalarmaction.cpp:65
-msgctxt "@item:inmenu"
-msgid "&Email Alarm Template"
-msgstr "&Эл.пошталық ескерту үлгісі"
-
-#: newalarmaction.cpp:65
-msgctxt "@action"
-msgid "New Email Alarm"
-msgstr "Жаңа эл.пошталық ескерту"
-
-#: newalarmaction.cpp:68
-msgctxt "@item:inmenu"
-msgid "&Audio Alarm Template"
-msgstr "&Дыбысты ескерту үлгісі"
-
-#: newalarmaction.cpp:68
-msgctxt "@action"
-msgid "New Audio Alarm"
-msgstr "Жаңа дыбысты ескерту"
-
-#: newalarmaction.cpp:79
-msgctxt "@action"
-msgid "New Alarm From &Template"
-msgstr "Үл&гіден жаңа ескерту"
-
-#: reminder.cpp:49
-msgctxt "@option:check"
-msgid "Reminder for first recurrence only"
-msgstr "Тек бірінші қайталануға арналған еске салу"
-
-#: reminder.cpp:51
-msgctxt "@item:inlistbox"
-msgid "in advance"
-msgstr "қалғанда"
-
-#: reminder.cpp:65
-msgctxt "@option:check"
-msgid "Reminder:"
-msgstr "Еске салу:"
-
-#: reminder.cpp:69
-msgctxt "@item:inlistbox"
-msgid "afterwards"
-msgstr "кейін"
-
-#: reminder.cpp:91
-msgctxt "@info:whatsthis"
-msgid "Display the reminder only for the first time the alarm is scheduled"
-msgstr ""
-"Алдын-ала еске салу тек жоспарланған бірінші ескертуге ғана көрсетіледі"
-
-#: recurrenceedit.cpp:81
-msgctxt "@item:inlistbox Recurrence type"
-msgid "No Recurrence"
-msgstr "Қайталауы болмасын"
-
-#: recurrenceedit.cpp:82
-msgctxt "@item:inlistbox Recurrence type"
-msgid "At Login"
-msgstr "Жүйеге кіргенде"
-
-#: recurrenceedit.cpp:83
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Hourly/Minutely"
-msgstr "Сағат/минут сайын"
-
-#: recurrenceedit.cpp:84
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Daily"
-msgstr "Күн сайын"
-
-#: recurrenceedit.cpp:85
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Weekly"
-msgstr "Апта сайын"
-
-#: recurrenceedit.cpp:86
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Monthly"
-msgstr "Ай сайын"
-
-#: recurrenceedit.cpp:87
-msgctxt "@item:inlistbox Recurrence type"
-msgid "Yearly"
-msgstr "Жыл сайын"
-
-#: recurrenceedit.cpp:113
-msgctxt "@title:group"
-msgid "Recurrence Rule"
-msgstr "Қайталану ережесі"
-
-#: recurrenceedit.cpp:131
-msgctxt "@info:whatsthis"
-msgid "Do not repeat the alarm"
-msgstr "Ескертуді қайталанбайтын қылу"
-
-#: recurrenceedit.cpp:139
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Trigger the alarm at the specified date/time and at every login until "
-"then.</para><para>Note that it will also be triggered any time "
-"<application>KAlarm</application> is restarted.</para>"
-msgstr ""
-"<para>Келтірілген күні/уақытта және оден дейін жүйеге әрбір кірген сайын "
-"ескертуді жасау.</para><para>Есіңізде болсын: ескерту <application>KAlarm</"
-"application> жегілген сайын да ескерту жасалады.</para>"
-
-#: recurrenceedit.cpp:147
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at hourly/minutely intervals"
-msgstr "Ескертуді сағат/минут аралығында қайталау"
-
-#: recurrenceedit.cpp:154
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at daily intervals"
-msgstr "Ескерту күн сайын қайталансын"
-
-#: recurrenceedit.cpp:161
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at weekly intervals"
-msgstr "Ескерту апта сайын қайталансын"
-
-#: recurrenceedit.cpp:168
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at monthly intervals"
-msgstr "Ескертуді ай сайын қайталау"
-
-#: recurrenceedit.cpp:175
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm at annual intervals"
-msgstr "Ескертуді жыл сайын қайталау"
-
-#: recurrenceedit.cpp:185
-msgctxt "@info:whatsthis"
-msgid ""
-"Set up a repetition within the recurrence, to trigger the alarm multiple "
-"times each time the recurrence is due."
-msgstr ""
-"Жай қайталауын орнату, ескертулердің қайталану мерзімі келгенде бірнешелеп "
-"ескерту."
-
-#: recurrenceedit.cpp:233
-msgctxt "@title:group"
-msgid "Recurrence End"
-msgstr "Қайталанудың шегі"
-
-#: recurrenceedit.cpp:242
-msgctxt "@option:radio"
-msgid "No end"
-msgstr "Шектелмеген"
-
-#: recurrenceedit.cpp:245
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm indefinitely"
-msgstr "Ескертуді шексіз қайталау"
-
-#: recurrenceedit.cpp:253
-msgctxt "@option:radio"
-msgid "End after:"
-msgstr "Келесіден кейін аяқтау:"
-
-#: recurrenceedit.cpp:255
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm for the number of times specified"
-msgstr "Ескертуді келтірілген рет қайталау"
-
-#: recurrenceedit.cpp:262
-msgctxt "@info:whatsthis"
-msgid "Enter the total number of times to trigger the alarm"
-msgstr "Ескертуді неше рет қайталауын келтіріңіз"
-
-#: recurrenceedit.cpp:266
-msgctxt "@label"
-msgid "occurrence(s)"
-msgstr "рет"
-
-#: recurrenceedit.cpp:278
-msgctxt "@option:radio"
-msgid "End by:"
-msgstr "Аяқтау кезі:"
-
-#: recurrenceedit.cpp:281
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
-"applies to the main recurrence only. It does not limit any sub-repetition "
-"which will occur regardless after the last main recurrence.</note></para>"
-msgstr ""
-"<para>Келтірілген күн/уақыт келгеше ескертуді қайталай беру.</para> "
-"<para><note>Бұл негізгі қайталауына ғана тиісті. Бұл әрбір негізгі "
-"ескертудің жәй қайталануына әсер етпейді.</note></para>"
-
-#: recurrenceedit.cpp:286
-msgctxt "@info/plain"
-msgid "This uses the same time zone as the start time."
-msgstr "Бастау уақытының белдеуін қолдануын ұйғару."
-
-#: recurrenceedit.cpp:288
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
-msgstr ""
-"<para>Ескертуді қайталауының соңғы күнін келтіріңіз.</para><para>%1</para>"
-
-#: recurrenceedit.cpp:295
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
-"%2</para>"
-msgstr ""
-"<para>Ескертуді қайталауының соңғы уақытын келтіріңіз.</para><para>%1</para> "
-"<para>%2</para>"
-
-#: recurrenceedit.cpp:300
-msgctxt "@info:whatsthis"
-msgid ""
-"Stop repeating the alarm after your first login on or after the specified "
-"end date"
-msgstr ""
-"Бірінші рет жүйеге кіргеннен кейін немесе келтірілген аяқтау күнінен кейін "
-"ескертуді қайталауды тоқтату"
-
-#: recurrenceedit.cpp:318
-msgctxt "@title:group"
-msgid "Exceptions"
-msgstr "Шығарылып тастайтындар"
-
-#: recurrenceedit.cpp:329
-msgctxt "@info:whatsthis"
-msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
-msgstr ""
-"Шығарлып тастайтындар тізімі, яғни қайталануы болмайтын күн мен уақыттар"
-
-#: recurrenceedit.cpp:348
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter a date to insert in the exceptions list. Use in conjunction with the "
-"Add or Change button below."
-msgstr ""
-"Шығарлып тастайтындар тізіміне енгізілетін күнін келтіріңіз. Төменде "
-"орналасқан 'Қосу' немесе 'Өзгерту' батырмасын қолданыңыз."
-
-#: recurrenceedit.cpp:355
-msgctxt "@action:button"
-msgid "Add"
-msgstr "Қосу..."
-
-#: recurrenceedit.cpp:356
-msgctxt "@info:whatsthis"
-msgid "Add the date entered above to the exceptions list"
-msgstr "Жоғарда келтірілген күнді шығарлып тастайтындар тізіміне қосу"
-
-#: recurrenceedit.cpp:360
-msgctxt "@action:button"
-msgid "Change"
-msgstr "Өзгерту"
-
-#: recurrenceedit.cpp:362
-msgctxt "@info:whatsthis"
-msgid ""
-"Replace the currently highlighted item in the exceptions list with the date "
-"entered above"
-msgstr ""
-"Шығарлып тастайтындар тізімінде белгіленгенін жоғарыда көрсетілген күнмен "
-"алмастыру"
-
-#: recurrenceedit.cpp:366 templatedlg.cpp:120
-msgctxt "@action:button"
-msgid "Delete"
-msgstr "Өшіру"
-
-#: recurrenceedit.cpp:367
-msgctxt "@info:whatsthis"
-msgid "Remove the currently highlighted item from the exceptions list"
-msgstr "Шығарлып тастайтындар тізімінен белгіленіп тұрғанды өшіру"
-
-#: recurrenceedit.cpp:374
-msgctxt "@option:check"
-msgid "Exclude holidays"
-msgstr "Демалыс күндері шығарлып тасталсын"
-
-#: recurrenceedit.cpp:377
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
-"holiday region in the Configuration dialog.</para>"
-msgstr ""
-"<para>Демалыс күндерінде ескетртпеу.</para><para>Қай аймақтың демалыс "
-"күндерін қолданатыңызды баптау диалогында орната аласыз.</para>"
-
-#: recurrenceedit.cpp:382
-msgctxt "@option:check"
-msgid "Only during working time"
-msgstr "Тек жұмыс уақытында ғана"
-
-#: recurrenceedit.cpp:385
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Only execute the alarm during working hours, on working days.</"
-"para><para>You can specify working days and hours in the Configuration "
-"dialog.</para>"
-msgstr ""
-"<para>Жұмыс күндердегі жұмыс уақытында ғана ескерту.</para> <para>Жұмыс "
-"күндер мен уақыттарын баптау диалогында орната аласыз.</para>"
-
-#: recurrenceedit.cpp:428
-msgctxt "@info"
-msgid "End date is earlier than start date"
-msgstr "Аяқтау күні бастау күнінен бұрын"
-
-#: recurrenceedit.cpp:429
-msgctxt "@info"
-msgid "End date/time is earlier than start date/time"
-msgstr "Аяқтау күні/уақыты бастау күні/уақытынан бұрын"
-
-#: recurrenceedit.cpp:699
-msgctxt "@info"
-msgid "Date cannot be earlier than start date"
-msgstr "Күні бастау күннен ерте болмау тиіс"
-
-#: recurrenceedit.cpp:1114
-msgctxt "@label:spinbox"
-msgid "Recur e&very"
-msgstr "Қайталануы ә&рбір"
-
-#: recurrenceedit.cpp:1183
-msgctxt "@label Time units for user-entered numbers"
-msgid "hours:minutes"
-msgstr "сағат:минут"
-
-#: recurrenceedit.cpp:1184
-msgctxt "@info:whatsthis"
-msgid "Enter the number of hours and minutes between repetitions of the alarm"
-msgstr "Ескертуді қайталау арасындағы сағат және минутты келтіріңіз"
-
-#: recurrenceedit.cpp:1204
-msgctxt "@label On: Tuesday"
-msgid "O&n:"
-msgstr "Кү&ні:"
-
-#: recurrenceedit.cpp:1285
-msgctxt "@info"
-msgid "No day selected"
-msgstr "Күні таңдалмаған"
-
-#: recurrenceedit.cpp:1314
-msgctxt "@label Time unit for user-entered number"
-msgid "day(s)"
-msgstr "күн"
-
-#: recurrenceedit.cpp:1315
-msgctxt "@info:whatsthis"
-msgid "Enter the number of days between repetitions of the alarm"
-msgstr "Ескертуді қайталау арасындағы күн санын келтіріңіз"
-
-#: recurrenceedit.cpp:1316
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which the alarm is allowed to occur"
-msgstr "Ескертуді қайталайтын аптадағы күндерді таңдаңыз"
-
-#: recurrenceedit.cpp:1327
-msgctxt "@label Time unit for user-entered number"
-msgid "week(s)"
-msgstr "апта"
-
-#: recurrenceedit.cpp:1328
-msgctxt "@info:whatsthis"
-msgid "Enter the number of weeks between repetitions of the alarm"
-msgstr "Ескертудің қайталану арасындағы апта санын келтіріңіз"
-
-#: recurrenceedit.cpp:1329
-msgctxt "@info:whatsthis"
-msgid "Select the days of the week on which to repeat the alarm"
-msgstr "Ескертуді қайталайтын аптадағы күндерді таңдаңыз"
-
-#: recurrenceedit.cpp:1352
-msgctxt "@option:radio On day number in the month"
-msgid "O&n day"
-msgstr "&Келесі күнінде"
-
-#: recurrenceedit.cpp:1356
-msgctxt "@info:whatsthis"
-msgid "Repeat the alarm on the selected day of the month"
-msgstr "Айдың таңдалған күнінде ескертуді қайталау"
-
-#: recurrenceedit.cpp:1363
-msgctxt "@item:inlistbox Last day of month"
-msgid "Last"
-msgstr "Соңғы"
-
-#: recurrenceedit.cpp:1366
-msgctxt "@info:whatsthis"
-msgid "Select the day of the month on which to repeat the alarm"
-msgstr "Ескертудің қайталану айының күнін таңдаңыз"
-
-#: recurrenceedit.cpp:1380
-msgctxt "@option:radio On the 1st Tuesday"
-msgid "On t&he"
-msgstr "&Күні"
-
-#: recurrenceedit.cpp:1384
-msgctxt "@info:whatsthis"
-msgid ""
-"Repeat the alarm on one day of the week, in the selected week of the month"
-msgstr "Ескертуді осы айдың таңдалған аптасының бір күнінде қайталау"
-
-#: recurrenceedit.cpp:1388
-msgctxt "@item:inlistbox"
-msgid "1st"
-msgstr "1-шісі"
-
-#: recurrenceedit.cpp:1389
-msgctxt "@item:inlistbox"
-msgid "2nd"
-msgstr "2-шісі"
-
-#: recurrenceedit.cpp:1390
-msgctxt "@item:inlistbox"
-msgid "3rd"
-msgstr "3-шісі"
-
-#: recurrenceedit.cpp:1391
-msgctxt "@item:inlistbox"
-msgid "4th"
-msgstr "4-шісі"
-
-#: recurrenceedit.cpp:1392
-msgctxt "@item:inlistbox"
-msgid "5th"
-msgstr "5-шісі"
-
-#: recurrenceedit.cpp:1393
-msgctxt "@item:inlistbox Last Monday in March"
-msgid "Last"
-msgstr "Соңғы"
-
-#: recurrenceedit.cpp:1394
-msgctxt "@item:inlistbox"
-msgid "2nd Last"
-msgstr "Соңынан 2-ншісі"
-
-#: recurrenceedit.cpp:1395
-msgctxt "@item:inlistbox"
-msgid "3rd Last"
-msgstr "Соңынан 3-іншісі"
-
-#: recurrenceedit.cpp:1396
-msgctxt "@item:inlistbox"
-msgid "4th Last"
-msgstr "Соңынан 4-іншісі"
-
-#: recurrenceedit.cpp:1397
-msgctxt "@item:inlistbox"
-msgid "5th Last"
-msgstr "Соңынан 5-іншісі"
-
-#: recurrenceedit.cpp:1400
-msgctxt "@item:inlistbox Every (Monday...) in month"
-msgid "Every"
-msgstr "Әрбір"
-
-#: recurrenceedit.cpp:1403
-msgctxt "@info:whatsthis"
-msgid "Select the week of the month in which to repeat the alarm"
-msgstr "Ескертудің қайталанатын айдың апталарын таңдаңыз"
-
-#: recurrenceedit.cpp:1418
-msgctxt "@info:whatsthis"
-msgid "Select the day of the week on which to repeat the alarm"
-msgstr "Ескертудің қайталану аптасының күндерін таңдаңыз"
-
-#: recurrenceedit.cpp:1541
-msgctxt "@label Time unit for user-entered number"
-msgid "month(s)"
-msgstr "ай"
-
-#: recurrenceedit.cpp:1542
-msgctxt "@info:whatsthis"
-msgid "Enter the number of months between repetitions of the alarm"
-msgstr "Ескертудің қайталану аралығындағы айлар санын келтіріңіз"
-
-#: recurrenceedit.cpp:1553
-msgctxt "@label Time unit for user-entered number"
-msgid "year(s)"
-msgstr "жыл"
-
-#: recurrenceedit.cpp:1554
-msgctxt "@info:whatsthis"
-msgid "Enter the number of years between repetitions of the alarm"
-msgstr "Ескертудің қайталану аралығындағы жылдар санын келтіріңіз"
-
-#: recurrenceedit.cpp:1561
-msgctxt "@label List of months to select"
-msgid "Months:"
-msgstr "Айлары:"
-
-#: recurrenceedit.cpp:1583
-msgctxt "@info:whatsthis"
-msgid "Select the months of the year in which to repeat the alarm"
-msgstr "Ескерту жылдың қай айларында қайталанатынды таңдаңыз"
-
-#: recurrenceedit.cpp:1592
-msgctxt "@label:listbox"
-msgid "February 2&9th alarm in non-leap years:"
-msgstr "Кібісе емес жылдағы 29-ақпанға келетін ескерту күні:"
-
-#: recurrenceedit.cpp:1596
-msgctxt "@item:inlistbox No date"
-msgid "None"
-msgstr "Жоқ"
-
-#: recurrenceedit.cpp:1597
-msgctxt "@item:inlistbox 1st March (short form)"
-msgid "1 Mar"
-msgstr "1-Нау"
-
-#: recurrenceedit.cpp:1598
-msgctxt "@item:inlistbox 28th February (short form)"
-msgid "28 Feb"
-msgstr "28-Ақп"
-
-#: recurrenceedit.cpp:1604
-msgctxt "@info:whatsthis"
-msgid ""
-"Select which date, if any, the February 29th alarm should trigger in non-"
-"leap years"
-msgstr ""
-"29 ақпанға келетін ескертуді кібісе емес жылдың кай күніде көрсетілетінін "
-"таңдаңыз"
-
-#: recurrenceedit.cpp:1688
-msgctxt "@info"
-msgid "No month selected"
-msgstr "Ай таңдалмаған"
-
-#: repetitionbutton.cpp:87
-msgctxt "@title:window"
-msgid "Alarm Sub-Repetition"
-msgstr "Ескертуді қайталау"
-
-#: repetitionbutton.cpp:165
-msgctxt "@option:check Repeat every 10 minutes"
-msgid "Repeat every"
-msgstr "Әрбір"
-
-#: repetitionbutton.cpp:166
-msgctxt "@info:whatsthis"
-msgid ""
-"Instead of the alarm triggering just once at each recurrence, checking this "
-"option makes the alarm trigger multiple times at each recurrence."
-msgstr "Әрбір ескертуді бірнеше рет қайталау үшін осы белгіні қойыңыз."
-
-#: repetitionbutton.cpp:168
-msgctxt "@info:whatsthis"
-msgid "Enter the time between repetitions of the alarm"
-msgstr "Қайталау аралығын келтіріңіз"
-
-#: repetitionbutton.cpp:186
-msgctxt "@option:radio"
-msgid "Number of repetitions:"
-msgstr "Қайталау саны:"
-
-#: repetitionbutton.cpp:188
-msgctxt "@info:whatsthis"
-msgid ""
-"Check to specify the number of times the alarm should repeat after each "
-"recurrence"
-msgstr ""
-"Әрбір ескертуден кейін ол неше рет қайталынатынын келтіргіңіз келсе белгісін "
-"қойыңыз"
-
-#: repetitionbutton.cpp:196
-msgctxt "@info:whatsthis"
-msgid ""
-"Enter the number of times to trigger the alarm after its initial occurrence"
-msgstr "Ескертудің алғашқысынан кейін неше рет қайталынатынын келтіріңіз"
-
-#: repetitionbutton.cpp:204
-msgctxt "@option:radio"
-msgid "Duration:"
-msgstr "Ұзақтығы:"
-
-#: repetitionbutton.cpp:206
-msgctxt "@info:whatsthis"
-msgid "Check to specify how long the alarm is to be repeated"
-msgstr "Ескерту қайталана беретін уақытты келтіру үшін белгілеңіз"
-
-#: repetitionbutton.cpp:212
-msgctxt "@info:whatsthis"
-msgid "Enter the length of time to repeat the alarm"
-msgstr "Ескертуді қайталау уақыт ұзындығын келтіріңіз"
-
-#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
-msgctxt "@title:window"
-msgid "Calendar Configuration"
-msgstr "Күнтізбені баптау"
-
-#: resourceconfigdialog.cpp:61
-msgctxt "@title:group"
-msgid "General Settings"
-msgstr "Жалпы параметрлері"
-
-#: resourceconfigdialog.cpp:63
-msgctxt "@label:textbox Calendar name"
-msgid "Name:"
-msgstr "Атауы:"
-
-#: resourceconfigdialog.cpp:68
-msgctxt "@option:check"
-msgid "Read-only"
-msgstr "Тек оқу үшін"
-
-#: resourceconfigdialog.cpp:81
-#, kde-format
-msgctxt "@title:group"
-msgid "<resource>%1</resource> Calendar Settings"
-msgstr "<resource>%1</resource> күнтізбе параметрлері"
-
-#: resourceconfigdialog.cpp:123
-msgctxt "@info"
-msgid "Please enter a calendar name."
-msgstr "Күнтізбенің атауын келтіріңіз."
-
-#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
-msgctxt "@info/plain"
-msgid "Disabled (wrong alarm type)"
-msgstr "Бұғатталған (қате ескертудің түрі)"
-
-#: resources/resourcelocaldirwidget.cpp:40
-#: resources/resourcelocalwidget.cpp:42
-msgctxt "@label:textbox"
-msgid "Location:"
-msgstr "Орны:"
-
-#: resources/resourcelocaldirwidget.cpp:72
-#: resources/resourcelocalwidget.cpp:77
-msgctxt "@info"
-msgid "No location specified.  The calendar will be invalid."
-msgstr "Орны көрсетілмеген. Күнтізбесі дұрыс болмайды."
-
-#: resources/resourceremotewidget.cpp:42
-msgctxt "@label:textbox"
-msgid "Download from:"
-msgstr "Қайдан жүктеп алу:"
-
-#: resources/resourceremotewidget.cpp:48
-msgctxt "@label:textbox"
-msgid "Upload to:"
-msgstr "Қайда жүктеп беру:"
-
-#: resources/resourceremotewidget.cpp:94
-msgctxt "@info"
-msgid "You have specified no upload URL: the alarm calendar will be read-only."
-msgstr "Жүктеп беру URL-і келтірмеген: ескерту күнтізбесі теқ оқу үшін болады"
-
-#: resources/resourcewidget.cpp:54
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Calendar <resource>%1</resource> cannot be made writable since it either was "
-"not created by <application>KAlarm</application>, or was created by a newer "
-"version of <application>KAlarm</application>"
-msgstr ""
-"<resource>%1</resource> күнтізбесі жазылмайтын болады, өйткені ол "
-"<application>KAlarm</application> бағдарламасымен құрылған емес, "
-"әлде<application>KAlarm</application> бағдаламасының жаңа нұсқасымен құрылған"
-
-#: resources/alarmresource.cpp:354 resourceselector.cpp:856
-msgctxt "@info/plain"
-msgid "Active alarms"
-msgstr "Белсенді ескертулері"
-
-#: resources/alarmresource.cpp:355 resourceselector.cpp:858
-msgctxt "@info/plain"
-msgid "Archived alarms"
-msgstr "Өткен ескертулері"
-
-#: resources/alarmresource.cpp:356 resourceselector.cpp:860
-msgctxt "@info/plain"
-msgid "Alarm templates"
-msgstr "Ескерту үлгілері"
-
-#: resources/alarmresource.cpp:359 resourceselector.cpp:865
-msgctxt "@info/plain"
-msgid "Read-write"
-msgstr "Оқу-жазу үшн"
-
-#: resources/alarmresource.cpp:360 resourceselector.cpp:867
-msgctxt "@info/plain"
-msgid "Enabled"
-msgstr "Рұқсат етілген"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:870
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "Yes"
-msgstr "Иә"
-
-#: resources/alarmresource.cpp:361 resourceselector.cpp:871
-msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
-msgid "No"
-msgstr "Жоқ"
-
-#: resources/alarmresource.cpp:363
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
-"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
-"para>"
-msgstr ""
-"<title>%1</title><para>Күнтізбенің түрі: %2<nl/>Мазмұны: %3<nl/>%4: "
-"<filename>%5</filename><nl/>Рұқсаттары: %6<nl/>Күй-жайы: %7<nl/>Әдетті "
-"күнтізбесі: %8</para>"
-
-#: resources/alarmresources.cpp:159
-#, kde-format
-msgctxt "@info"
-msgid "%1: invalid calendar file name: <filename>%2</filename>"
-msgstr "%1: дұрыс емес күнтізбе файлдың атауы: <filename>%2</filename>"
-
-#: resources/alarmresources.cpp:167
-#, kde-format
-msgctxt "@info"
-msgid "%1: file name not permitted: <filename>%2</filename>"
-msgstr "%1: рұқсат етілмеген файл атауы: <filename>%2</filename>"
-
-#: resourceselector.cpp:100
-msgctxt "@title:group"
-msgid "Calendars"
-msgstr "Күнтізбелер"
-
-#: resourceselector.cpp:104
-msgctxt "@item:inlistbox"
-msgid "Active Alarms"
-msgstr "Белсенді ескертулер"
-
-#: resourceselector.cpp:105
-msgctxt "@item:inlistbox"
-msgid "Archived Alarms"
-msgstr "Өткен ескертулер"
-
-#: resourceselector.cpp:106
-msgctxt "@item:inlistbox"
-msgid "Alarm Templates"
-msgstr "Ескерту үлгілері"
-
-#: resourceselector.cpp:108
-msgctxt "@info:whatsthis"
-msgid "Choose which type of data to show alarm calendars for"
-msgstr "Ескерту күнтізбеде қай деректер түрі көрсетілетінін таңдау"
-
-#: resourceselector.cpp:125
-msgctxt "@info:whatsthis"
-msgid ""
-"List of available calendars of the selected type. The checked state shows "
-"whether a calendar is enabled (checked) or disabled (unchecked). The default "
-"calendar is shown in bold."
-msgstr ""
-"Таңдалған түрдегі бар күнтізбелер тізімі. Белгіленгені - күнтізбе қосылып "
-"тұрғанын, белгісі жоғы - бұғатталғанын көрсетеді. Әдеттегісі қалың қаріппен "
-"ерекшеленген."
-
-#: resourceselector.cpp:136 templatedlg.cpp:110
-msgctxt "@action:button"
-msgid "Edit..."
-msgstr "Өзгерту..."
-
-#: resourceselector.cpp:141
-msgctxt "@info:whatsthis"
-msgid "Edit the highlighted calendar"
-msgstr "Бояуланып тұрған күнтізбені өңдеу"
-
-#: resourceselector.cpp:142
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Remove the highlighted calendar from the list.</para><para>The "
-"calendar itself is left intact, and may subsequently be reinstated in the "
-"list if desired.</para>"
-msgstr ""
-"<para>Бояуланып тұрған күнтізбені тізімінен кетіру.</para><para>Күнтізбе өзі "
-"қалады, керек болғанда, оны тізімге қайтарып аласыз. </para>"
-
-#: resourceselector.cpp:175
-msgctxt "@info:tooltip"
-msgid "Add a new active alarm calendar"
-msgstr "Жаңа белсенді ескерту күнтізбені қосу"
-
-#: resourceselector.cpp:179
-msgctxt "@info:tooltip"
-msgid "Add a new archived alarm calendar"
-msgstr "Жаңа өткен ескерту күнтізбені қосу"
-
-#: resourceselector.cpp:183
-msgctxt "@info:tooltip"
-msgid "Add a new alarm template calendar"
-msgstr "Жаңа ескерту күнтізбенің үлгісін қосу"
-
-#: resourceselector.cpp:239
-msgctxt "@info"
-msgid "Select storage type of new calendar:"
-msgstr "Жаңа күнтізбенің сақтау орнын таңдау"
-
-#: resourceselector.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "Unable to create calendar of type <resource>%1</resource>."
-msgstr "Түрі <resource>%1</resource> күнтізбе құрылмады. "
-
-#: resourceselector.cpp:249
-#, kde-format
-msgctxt "@info/plain"
-msgid "%1 calendar"
-msgstr "%1 күнтізбесі"
-
-#: resourceselector.cpp:363
-msgctxt "@info"
-msgid "You cannot make your default active alarm calendar read-only."
-msgstr "Әдетті белсенді ескертулер күнтізбеңізді тек оқу үшін қылу болмайды."
-
-#: resourceselector.cpp:370
-msgctxt "@info"
-msgid ""
-"You cannot make your default archived alarm calendar read-only while expired "
-"alarms are configured to be kept."
-msgstr ""
-"Ескірген ескертулер сақтауы бапталмағанша, әдетті өткен ескертулер "
-"күнтізбеңізді тек оқу үшін қылу болмайды."
-
-#: resourceselector.cpp:374
-msgctxt "@info"
-msgid "Do you really want to make your default calendar read-only?"
-msgstr "Әдетті күнтізбеңізді тек оқу үшін қылмақсыз ба?"
-
-#: resourceselector.cpp:427
-msgctxt "@info"
-msgid "You cannot remove your default active alarm calendar."
-msgstr "Әдетті белсенді ескертулер күнтізбеңізді өшіруге болмайды."
-
-#: resourceselector.cpp:434
-msgctxt "@info"
-msgid ""
-"You cannot remove your default archived alarm calendar while expired alarms "
-"are configured to be kept."
-msgstr ""
-"Ескірген ескертулер сақтауы бапталмағанша, әдетті өткен ескертулер "
-"күнтізбеңізді өшіруге болмайды."
-
-#: resourceselector.cpp:450
-#, kde-format
-msgctxt "@info"
-msgid "<para>It also contains:%1</para>"
-msgstr "<para>Онда %1 деген де бар</para>"
-
-#: resourceselector.cpp:451
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> is the default calendar for:%2</para>"
-"%3<para>Do you really want to remove it from all calendar lists?</para>"
-msgstr ""
-"<para><resource>%1</resource> деген %2 үшін әдетті күнтізбе</para>"
-"%3<para>Оны бүкіл күнтізбе тізімдерінен өшірмексіз бе?</para>"
-
-#: resourceselector.cpp:455 resourceselector.cpp:463
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove your default calendar (<resource>%1</resource>) "
-"from the list?"
-msgstr ""
-"Әдетті күнтізбеңізді (<resource>%1</resource>) тізімінен өшірмексіз бе?"
-
-#: resourceselector.cpp:458
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
-"remove it from all calendar lists?</para>"
-msgstr ""
-"<para><resource>%1</resource> дегенде %2 бар</para><para>Оны бүкіл күнтізбе "
-"тізімдерінен өшірмексіз бе?</para>"
-
-#: resourceselector.cpp:461 resourceselector.cpp:464
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Do you really want to remove the calendar <resource>%1</resource> from the "
-"list?"
-msgstr "<resource>%1</resource> күнтізбесін тізімінен өшірмексіз бе?"
-
-#: resourceselector.cpp:501
-msgctxt "@action Reload calendar"
-msgid "Re&load"
-msgstr "Қайта &жүктеу"
-
-#: resourceselector.cpp:505
-msgctxt "@action"
-msgid "&Save"
-msgstr "&Сақтау"
-
-#: resourceselector.cpp:509
-msgctxt "@action"
-msgid "Show &Details"
-msgstr "&Егжей-тегжейлері"
-
-#: resourceselector.cpp:512
-msgctxt "@action"
-msgid "Set &Color..."
-msgstr "&Түсін орнату..."
-
-#: resourceselector.cpp:515
-msgctxt "@action"
-msgid "Clear C&olor"
-msgstr "Тү&сін тазалау"
-
-#: resourceselector.cpp:522
-msgctxt "@action"
-msgid "&Update Calendar Format"
-msgstr "Күнтізбе пішімін &жаңарту"
-
-#: resourceselector.cpp:526
-msgctxt "@action"
-msgid "&Remove"
-msgstr "Өші&ру"
-
-#: resourceselector.cpp:532
-msgctxt "@action"
-msgid "&Add..."
-msgstr "Қ&осу..."
-
-#: resourceselector.cpp:535
-msgctxt "@action"
-msgid "Im&port..."
-msgstr "&Импорттау..."
-
-#: resourceselector.cpp:621
-msgctxt "@action"
-msgid "Use as &Default for Active Alarms"
-msgstr "Белсенділер үшін ә&детті болсын"
-
-#: resourceselector.cpp:622
-msgctxt "@action"
-msgid "Use as &Default for Archived Alarms"
-msgstr "Өткендер үшін ә&детті болсын"
-
-#: resourceselector.cpp:623
-msgctxt "@action"
-msgid "Use as &Default for Alarm Templates"
-msgstr "Үлгілер үшін ә&детті болсын"
-
-#: resourceselector.cpp:740
-msgctxt "@info/plain"
-msgid "It is not an active alarm calendar."
-msgstr "Бұл белсенді ескертулер күнтізбесі емес."
-
-#: resourceselector.cpp:743
-msgctxt "@info/plain"
-msgid "It is not an archived alarm calendar."
-msgstr "Бұл өткен ескертулер күнтізбесі емес."
-
-#: resourceselector.cpp:746
-msgctxt "@info/plain"
-msgid "It is not an alarm template calendar."
-msgstr "Бұл үлгі ескертулер күнтізбесі емес."
-
-#: resourceselector.cpp:751
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
-"para>"
-msgstr ""
-"<para><resource>%1</resource> күнтізбесі бұғатталған:</para><para>%2</para>"
-
-#: resourceselector.cpp:861
-msgctxt "@info/plain List separator"
-msgid ", "
-msgstr ", "
-
-#: resourceselector.cpp:873
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
-"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
-"calendar: %9</para>"
-msgstr ""
-"<title>%1</title><para>ID: %2<nl/>Күнтізбенің түрі: %3<nl/>Мазмұны: %4<nl/>"
-"%5: <filename>%6</filename><nl/>Рұқсаттары: %7<nl/>Күй-жайы: %8<nl/>Әдетті "
-"күнтізбесі: %9</para>"
-
-#: soundpicker.cpp:50
-msgctxt "@label:listbox Listbox providing audio options"
-msgid "Sound:"
-msgstr "Дыбысы:"
-
-#: soundpicker.cpp:51
-msgctxt "@item:inlistbox No sound"
-msgid "None"
-msgstr "Жоқ"
-
-#: soundpicker.cpp:52
-msgctxt "@item:inlistbox"
-msgid "Beep"
-msgstr "Шиқыл"
-
-#: soundpicker.cpp:53
-msgctxt "@item:inlistbox"
-msgid "Speak"
-msgstr "Үн қату"
-
-#: soundpicker.cpp:54
-msgctxt "@item:inlistbox"
-msgid "Sound file"
-msgstr "Дыбыс файлы"
-
-#: soundpicker.cpp:98
-msgctxt "@info:tooltip"
-msgid "Configure sound file"
-msgstr "Дыбыс файлын баптау"
-
-#: soundpicker.cpp:99
-msgctxt "@info:whatsthis"
-msgid "Configure a sound file to play when the alarm is displayed."
-msgstr "Ескерту көрсетілгенде орындалатын дыбыс файлын баптау."
-
-#: soundpicker.cpp:132
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message is displayed silently."
-msgstr "<interface>%1</interface>: хабарламасы дыбыссыз көрсетіледі."
-
-#: soundpicker.cpp:133
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: a simple beep is sounded."
-msgstr "<interface>%1</interface>: жай дыбыс белгісі шығарылады."
-
-#: soundpicker.cpp:134
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<interface>%1</interface>: an audio file is played. You will be prompted to "
-"choose the file and set play options."
-msgstr ""
-"<interface>%1</interface>: дыбыс файлы ойнатылады. Файлды таңдау жане "
-"орындау параметрлерін орнату ұсынылады."
-
-#: soundpicker.cpp:138
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid "<interface>%1</interface>: the message text is spoken."
-msgstr ""
-"<interface>%1</interface>: %1: хабарламасының мәтіні дауыстап айтылады."
-
-#: soundpicker.cpp:140
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
-msgstr ""
-"<para>Хабарламасы көрсетілгенде ойнайтын дыбысы:<list><item>%1</item><item>"
-"%2</item><item>%3</item><item>%4</item></list></para>"
-
-#: soundpicker.cpp:148
-#, kde-format
-msgctxt "@info:whatsthis Combination of multiple whatsthis items"
-msgid ""
-"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
-"item><item>%2</item><item>%3</item></list></para>"
-msgstr ""
-"<para>Хабарламасы көрсетілгенде ойнайтын дыбысы:<list><item>%1</item><item>"
-"%2</item><item>%3</item></list></para>"
-
-#: soundpicker.cpp:268
-msgctxt "@title:window"
-msgid "Sound File"
-msgstr "Дыбыс файлы"
-
-#: soundpicker.cpp:330
-msgctxt "@title:window"
-msgid "Choose Sound File"
-msgstr "Дыбыс файлды таңдау"
-
-#: specialactions.cpp:48
-msgctxt "@action:button"
-msgid "Special Actions..."
-msgstr "Арнайы амалдар..."
-
-#: specialactions.cpp:56
-msgctxt "@info:whatsthis"
-msgid "Specify actions to execute before and after the alarm is displayed."
-msgstr ""
-"Ескерту көрсетілгенге дейін және кейін орындалатын әрекеттерін келтіріңіз."
-
-#: specialactions.cpp:107
-msgctxt "@title:window"
-msgid "Special Alarm Actions"
-msgstr "Ескертудің арнайы әрекеттері"
-
-#: specialactions.cpp:165
-msgctxt "@title:group"
-msgid "Pre-Alarm Action"
-msgstr "Ескерту алдындағы әрекет:"
-
-#: specialactions.cpp:175 specialactions.cpp:210
-msgctxt "@label:textbox"
-msgid "Command:"
-msgstr "Командасы:"
-
-#: specialactions.cpp:180
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute before the alarm is displayed.</"
-"para><para>Note that it is executed only when the alarm proper is displayed, "
-"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
-"will wait for the command to complete before displaying the alarm.</note></"
-"para>"
-msgstr ""
-"<para>Ескертуді көрсету алдындағы орындалатын қоршау-орта командасын "
-"келтіріңіз.</para><para>Бұл тек тиісті ескерту көрсетілмекте ғана "
-"орындалады, еске салу не кейінге қалдырған ескертуде ол орындалмайды.</"
-"para><para><note>Ескертуді көрсету алдында, KAlarm осы команданың аяқталуын "
-"күтеді.</note></para>"
-
-#: specialactions.cpp:186
-msgctxt "@option:check"
-msgid "Execute for deferred alarms"
-msgstr "Кейінге қалдырылған ескертулер үшін орындау"
-
-#: specialactions.cpp:187
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>If unchecked, the command is only executed before the alarm proper is "
-"displayed.</para><para>If checked, the pre-alarm command is also executed "
-"before a deferred alarm is displayed.</para>"
-msgstr ""
-"<para>Белгісі қойылмаса, командасы тек қана кейінге қалдырылмаған ескерту "
-"алдында орындалады.</para><para>Белгісі қойылса, ол кейінге қалдырған "
-"ескертуді көрсету алдында да орындалады.</para>"
-
-#: specialactions.cpp:191
-msgctxt "@option:check"
-msgid "Cancel alarm on error"
-msgstr "Қателікте ескерту болмасын"
-
-#: specialactions.cpp:192
-msgctxt "@info:whatsthis"
-msgid ""
-"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
-"alarm or execute any post-alarm action command."
-msgstr ""
-"Алдындағы командасы жаңылса ескертуден айну, яғни ескерту және одан кейінгі "
-"әрекеті болмайды."
-
-#: specialactions.cpp:195
-msgctxt "@option:check"
-msgid "Do not notify errors"
-msgstr "Қателер туралы құлақтандырылмасын"
-
-#: specialactions.cpp:196
-msgctxt "@info:whatsthis"
-msgid ""
-"Do not show error status or error message if the pre-alarm command fails."
-msgstr "Ескерту алдындағы әрекет жаңылыса - қате жайлі хабрлама болмасын."
-
-#: specialactions.cpp:200
-msgctxt "@title:group"
-msgid "Post-Alarm Action"
-msgstr "Ескерту кейінгі әрекет:"
-
-#: specialactions.cpp:214
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Enter a shell command to execute after the alarm window is closed.</"
-"para><para>Note that it is not executed after closing a reminder window. If "
-"you defer the alarm, it is not executed until the alarm is finally "
-"acknowledged or closed.</para>"
-msgstr ""
-"<para>Ескерту терезесі жабылған соң орындалатын қоршау-орта командасын "
-"келтіріңіз.</para><para>Бұл қалған уақытты еске салудан кейін болмайды. "
-"Кейінге қалдырған ескертуде ол, ескерту әдбен құпталып, терезесі "
-"жабылмағанша орындалмайды.</para>"
-
-#: templatedlg.cpp:69
-msgctxt "@title:window"
-msgid "Alarm Templates"
-msgstr "Ескерту үлгілері"
-
-#: templatedlg.cpp:95 templatelistview.cpp:44
-msgctxt "@info:whatsthis"
-msgid "The list of alarm templates"
-msgstr "Ескерту үлгілерінің тізімі"
-
-#: templatedlg.cpp:103
-msgctxt "@action:button"
-msgid "New"
-msgstr "Жаңа"
-
-#: templatedlg.cpp:104
-msgctxt "@action"
-msgid "New"
-msgstr "Жаңа"
-
-#: templatedlg.cpp:107
-msgctxt "@info:whatsthis"
-msgid "Create a new alarm template"
-msgstr "Ескертудің жаңа үлгісін құру"
-
-#: templatedlg.cpp:112
-msgctxt "@info:whatsthis"
-msgid "Edit the currently highlighted alarm template"
-msgstr "Бояуланып тұрған ескерту үлгісін өңдеу"
-
-#: templatedlg.cpp:115
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "Көшіріп алу"
-
-#: templatedlg.cpp:117
-msgctxt "@info:whatsthis"
-msgid ""
-"Create a new alarm template based on a copy of the currently highlighted "
-"template"
-msgstr "Бояуланып түрған үлгіні негіздеп жаңа ескерту үлгісін құру"
-
-#: templatedlg.cpp:122
-msgctxt "@info:whatsthis"
-msgid "Delete the currently highlighted alarm template"
-msgstr "Бояуланған ескерту үлгісін өшіру"
-
-#: templatedlg.cpp:211
-#, kde-format
-msgctxt "@info"
-msgid "Do you really want to delete the selected alarm template?"
-msgid_plural "Do you really want to delete the %1 selected alarm templates?"
-msgstr[0] "Шынымен %1 таңдалған ескерту үлгіні өшірмексіз бе?"
-
-#: templatedlg.cpp:213
-msgctxt "@title:window"
-msgid "Delete Alarm Template"
-msgid_plural "Delete Alarm Templates"
-msgstr[0] "Ескерту үлгілерін өшіру"
-
-#: templatepickdlg.cpp:46
-msgctxt "@title:window"
-msgid "Choose Alarm Template"
-msgstr "Ескерту үлгісін таңдау"
-
-#: templatepickdlg.cpp:77
-msgctxt "@info:whatsthis"
-msgid "Select a template to base the new alarm on."
-msgstr "Жаңа ескерту үшін үлгі таңдау."
-
-#: traywindow.cpp:100
-msgctxt "@action"
-msgid "&New Alarm"
-msgstr "&Жаңа ескерту"
-
-#: traywindow.cpp:333
-msgid "Disabled"
-msgstr "Бұғатталған"
-
-#: traywindow.cpp:338
-msgctxt "@info:tooltip Brief: some alarms are disabled"
-msgid "(Some alarms disabled)"
-msgstr "(Кейбір ескертулер рұқсат етілмеген)"
-
-#: traywindow.cpp:408
-#, kde-format
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "(%1%2:%3)"
-msgstr "(%1%2:%3)"
-
-#: traywindow.cpp:410
-#, kde-format
-msgctxt "@info/plain prefix + hours:minutes"
-msgid "%1%2:%3"
-msgstr "%1%2:%3"
-
-#: rtcwakeaction.cpp:89
-#, kde-format
-msgctxt "@text/plain"
-msgid "Could not run <command>%1</command> to set wake from suspend"
-msgstr "Аялаудан оралуды орнатудағы <command>%1</command> командасы жегілмеді"
-
-#: rtcwakeaction.cpp:92
-#, kde-format
-msgctxt "@text/plain"
-msgid ""
-"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
-">Error code: %2."
-msgstr ""
-"Аялдау режімінен оралу:қатесі.<nl/>Командасы: <command>%1</command><nl/"
-">Қатенің коды: %2."
-
-#: akonadiresourcecreator.cpp:109
-msgctxt "@info/plain"
-msgid "Failed to create new calendar resource"
-msgstr "Жаңа күнтізбе ресурсын құру жаңылысы"
-
-#: calendarmigrator.cpp:329
-#, kde-format
-msgctxt "@info/plain"
-msgid "Failed to create default calendar <resource>%1</resource>"
-msgstr "Жаңа <resource>%1</resource> күнтізбесін құру жаңылысы"
-
-#: calendarmigrator.cpp:331
-#, kde-format
-msgctxt "@info/plain 'Import Alarms' is the name of a menu option"
-msgid ""
-"Failed to convert old configuration for calendar <resource>%1</resource>. "
-"Please use Import Alarms to load its alarms into a new or existing calendar."
-msgstr ""
-"<resource>%1</resource> күнтізбесі үшін ескі баптауы аударуға келмеді. Жаңа "
-"не бар күнтібе үшін еске салуларды импорттаңыз."
-
-#: calendarmigrator.cpp:333
-#, kde-format
-msgctxt "@info/plain File path or URL"
-msgid "Location: %1"
-msgstr "Орны: %1"
-
-#: calendarmigrator.cpp:335
-#, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr "<para>%1</para><para>%2</para>"
-
-#: calendarmigrator.cpp:337
-#, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2<nl/>(%3)</para>"
-msgstr "<para>%1</para><para>%2<nl/>(%3)</para>"
-
-#: calendarmigrator.cpp:443
-msgctxt "@info/plain"
-msgid "Invalid collection"
-msgstr "Жарамсыз жинақ"
-
-#: calendarmigrator.cpp:457
-#, kde-format
-msgctxt "@info/plain"
-msgid "Failed to update format of calendar <resource>%1</resource>"
-msgstr "<resource>%1</resource> күнтізбесін жаңарту жаңылысы"
-
-#: calendarmigrator.cpp:735
-msgctxt "@info/plain"
-msgid "New configuration timed out"
-msgstr "Жаңа баптауларды күту уақыты өтті"
-
-#: calendarmigrator.cpp:748
-msgctxt "@info/plain"
-msgid "New configuration was corrupt"
-msgstr "Жаңа баптаулар бүлінген"
-
-#: undo.cpp:440
-msgctxt "@info/plain"
-msgid "Alarm not found"
-msgstr "Ескерту табылмады"
-
-#: undo.cpp:441
-msgctxt "@info/plain"
-msgid "Error recreating alarm"
-msgstr "Ескертуді қайта құру қатесі"
-
-#: undo.cpp:442
-msgctxt "@info/plain"
-msgid "Error recreating alarm template"
-msgstr "Ескерту үлгісін қайта құру қатесі"
-
-#: undo.cpp:443
-msgctxt "@info/plain"
-msgid "Cannot reactivate archived alarm"
-msgstr "Өткен ескерту қайта белсендірілмейді"
-
-#: undo.cpp:444
-msgctxt "@info/plain"
-msgid "Program error"
-msgstr "Бағдарлама қатесі"
-
-#: undo.cpp:445
-msgctxt "@info/plain"
-msgid "Unknown error"
-msgstr "Беймәлім қате"
-
-#: undo.cpp:447
-#, kde-format
-msgctxt "@info Undo-action: message"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: undo.cpp:684
-msgctxt "@info/plain Action to create a new alarm"
-msgid "New alarm"
-msgstr "Жаңа ескерту"
-
-#: undo.cpp:686
-msgctxt "@info/plain Action to delete an alarm"
-msgid "Delete alarm"
-msgstr "Ескертуді өшіру"
-
-#: undo.cpp:689
-msgctxt "@info/plain Action to create a new alarm template"
-msgid "New template"
-msgstr "Жаңа үлгі"
-
-#: undo.cpp:691
-msgctxt "@info/plain Action to delete an alarm template"
-msgid "Delete template"
-msgstr "Үлгіні өшіру"
-
-#: undo.cpp:693
-msgctxt "@info/plain"
-msgid "Delete archived alarm"
-msgstr "Өткен ескертуді өшіру"
-
-#: undo.cpp:916
-msgctxt "@info/plain"
-msgid "Create multiple alarms"
-msgstr "Бірнеше ескертулерді орнату"
-
-#: undo.cpp:1022
-msgctxt "@info/plain Action to edit an alarm"
-msgid "Edit alarm"
-msgstr "Ескертуді өңдеу"
-
-#: undo.cpp:1024
-msgctxt "@info/plain Action to edit an alarm template"
-msgid "Edit template"
-msgstr "Үлгіні өңдеу"
-
-#: undo.cpp:1207
-msgctxt "@info/plain"
-msgid "Delete multiple alarms"
-msgstr "Бірнеше ескертулерді өшіру"
-
-#: undo.cpp:1209
-msgctxt "@info/plain"
-msgid "Delete multiple templates"
-msgstr "Бірнеше үлгілерін өшіру"
-
-#: undo.cpp:1216
-msgctxt "@info/plain"
-msgid "Delete multiple archived alarms"
-msgstr "Өткен бірнеше ескертулерді өшіру"
-
-#: undo.cpp:1259 undo.cpp:1303
-msgctxt "@info/plain"
-msgid "Reactivate alarm"
-msgstr "Ескертуді қайта белсендіру"
-
-#: undo.cpp:1326
-msgctxt "@info/plain"
-msgid "Reactivate multiple alarms"
-msgstr "Бірнеше ескертулерді қайта белсендіру"
-
-#: wakedlg.cpp:56
-msgctxt "@title:window"
-msgid "Wake From Suspend"
-msgstr "Аялдау режімінен оралу"
-
-#: wakedlg.cpp:181
-msgctxt "@info"
-msgid "Cannot schedule wakeup time for a date-only alarm"
-msgstr "Күні ғана бар ескертуінің уақыты болмайды"
-
-#: wakedlg.cpp:185
-msgctxt "@info"
-msgid ""
-"<para>This wakeup will cancel any existing wakeup which has been set by "
-"KAlarm or any other application, because your computer can only schedule a "
-"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
-"supported at all on some computers, especially older ones, and some "
-"computers only support setting a wakeup time up to 24 hours ahead. You may "
-"wish to set up a test alarm to check your system's capability.</para>"
-msgstr ""
-"<para>Бұл оралуды орнатқанда, бүкіл KAlarm не басқа бадарламалар орнатқан "
-"оралулар өшіріледі, өйткені компьютердің ояну уақыты тек біреу-ақ болмақ. </"
-"para><para><b>Ескерту:</b> Кейбір компьютерлер, әсіресе ескілері, аялдаудан "
-"оралу дегенді білмейді, ал.кейбірлері бұндайды тек келесі 24 сағат "
-"аралығында орната алады. Сондықтан, қаласаңыз, жүйеңіздің мүмкіндіктерін "
-"сынап көріңіз.</para>"
-
-#: alarmtime.cpp:42 alarmtime.cpp:80
-msgctxt "@info/plain Alarm never occurs"
-msgid "Never"
-msgstr "Ешқашан"
-
-#: alarmtime.cpp:86
-#, no-c-format, kde-format
-msgctxt "@info/plain n days"
-msgid "%1d"
-msgstr "%1к"
-
-#: alarmtime.cpp:95
-#, kde-format
-msgctxt "@info/plain hours:minutes"
-msgid "%1:%2"
-msgstr "%1:%2"
-
-#: alarmtime.cpp:98
-#, kde-format
-msgctxt "@info/plain days hours:minutes"
-msgid "%1d %2:%3"
-msgstr "%1к %2:%3"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -6526,6 +5017,1515 @@ msgstr "KAlarm күнтізбе файлының жолы."
 #: rc.cpp:483
 msgid "Monitor file for changes."
 msgstr "Файл өзгерістерін қадағалау."
+
+#: recurrenceedit.cpp:81
+msgctxt "@item:inlistbox Recurrence type"
+msgid "No Recurrence"
+msgstr "Қайталауы болмасын"
+
+#: recurrenceedit.cpp:82
+msgctxt "@item:inlistbox Recurrence type"
+msgid "At Login"
+msgstr "Жүйеге кіргенде"
+
+#: recurrenceedit.cpp:83
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Hourly/Minutely"
+msgstr "Сағат/минут сайын"
+
+#: recurrenceedit.cpp:84
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Daily"
+msgstr "Күн сайын"
+
+#: recurrenceedit.cpp:85
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Weekly"
+msgstr "Апта сайын"
+
+#: recurrenceedit.cpp:86
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Monthly"
+msgstr "Ай сайын"
+
+#: recurrenceedit.cpp:87
+msgctxt "@item:inlistbox Recurrence type"
+msgid "Yearly"
+msgstr "Жыл сайын"
+
+#: recurrenceedit.cpp:113
+msgctxt "@title:group"
+msgid "Recurrence Rule"
+msgstr "Қайталану ережесі"
+
+#: recurrenceedit.cpp:131
+msgctxt "@info:whatsthis"
+msgid "Do not repeat the alarm"
+msgstr "Ескертуді қайталанбайтын қылу"
+
+#: recurrenceedit.cpp:139
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Trigger the alarm at the specified date/time and at every login until "
+"then.</para><para>Note that it will also be triggered any time "
+"<application>KAlarm</application> is restarted.</para>"
+msgstr ""
+"<para>Келтірілген күні/уақытта және оден дейін жүйеге әрбір кірген сайын "
+"ескертуді жасау.</para><para>Есіңізде болсын: ескерту <application>KAlarm</"
+"application> жегілген сайын да ескерту жасалады.</para>"
+
+#: recurrenceedit.cpp:147
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at hourly/minutely intervals"
+msgstr "Ескертуді сағат/минут аралығында қайталау"
+
+#: recurrenceedit.cpp:154
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at daily intervals"
+msgstr "Ескерту күн сайын қайталансын"
+
+#: recurrenceedit.cpp:161
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at weekly intervals"
+msgstr "Ескерту апта сайын қайталансын"
+
+#: recurrenceedit.cpp:168
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at monthly intervals"
+msgstr "Ескертуді ай сайын қайталау"
+
+#: recurrenceedit.cpp:175
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm at annual intervals"
+msgstr "Ескертуді жыл сайын қайталау"
+
+#: recurrenceedit.cpp:185
+msgctxt "@info:whatsthis"
+msgid ""
+"Set up a repetition within the recurrence, to trigger the alarm multiple "
+"times each time the recurrence is due."
+msgstr ""
+"Жай қайталауын орнату, ескертулердің қайталану мерзімі келгенде бірнешелеп "
+"ескерту."
+
+#: recurrenceedit.cpp:233
+msgctxt "@title:group"
+msgid "Recurrence End"
+msgstr "Қайталанудың шегі"
+
+#: recurrenceedit.cpp:242
+msgctxt "@option:radio"
+msgid "No end"
+msgstr "Шектелмеген"
+
+#: recurrenceedit.cpp:245
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm indefinitely"
+msgstr "Ескертуді шексіз қайталау"
+
+#: recurrenceedit.cpp:253
+msgctxt "@option:radio"
+msgid "End after:"
+msgstr "Келесіден кейін аяқтау:"
+
+#: recurrenceedit.cpp:255
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm for the number of times specified"
+msgstr "Ескертуді келтірілген рет қайталау"
+
+#: recurrenceedit.cpp:262
+msgctxt "@info:whatsthis"
+msgid "Enter the total number of times to trigger the alarm"
+msgstr "Ескертуді неше рет қайталауын келтіріңіз"
+
+#: recurrenceedit.cpp:266
+msgctxt "@label"
+msgid "occurrence(s)"
+msgstr "рет"
+
+#: recurrenceedit.cpp:278
+msgctxt "@option:radio"
+msgid "End by:"
+msgstr "Аяқтау кезі:"
+
+#: recurrenceedit.cpp:281
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Repeat the alarm until the date/time specified.</para><para><note>This "
+"applies to the main recurrence only. It does not limit any sub-repetition "
+"which will occur regardless after the last main recurrence.</note></para>"
+msgstr ""
+"<para>Келтірілген күн/уақыт келгеше ескертуді қайталай беру.</para> "
+"<para><note>Бұл негізгі қайталауына ғана тиісті. Бұл әрбір негізгі "
+"ескертудің жәй қайталануына әсер етпейді.</note></para>"
+
+#: recurrenceedit.cpp:286
+msgctxt "@info/plain"
+msgid "This uses the same time zone as the start time."
+msgstr "Бастау уақытының белдеуін қолдануын ұйғару."
+
+#: recurrenceedit.cpp:288
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<para>Enter the last date to repeat the alarm.</para><para>%1</para>"
+msgstr ""
+"<para>Ескертуді қайталауының соңғы күнін келтіріңіз.</para><para>%1</para>"
+
+#: recurrenceedit.cpp:295
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter the last time to repeat the alarm.</para><para>%1</para><para>"
+"%2</para>"
+msgstr ""
+"<para>Ескертуді қайталауының соңғы уақытын келтіріңіз.</para><para>%1</para> "
+"<para>%2</para>"
+
+#: recurrenceedit.cpp:300
+msgctxt "@info:whatsthis"
+msgid ""
+"Stop repeating the alarm after your first login on or after the specified "
+"end date"
+msgstr ""
+"Бірінші рет жүйеге кіргеннен кейін немесе келтірілген аяқтау күнінен кейін "
+"ескертуді қайталауды тоқтату"
+
+#: recurrenceedit.cpp:318
+msgctxt "@title:group"
+msgid "Exceptions"
+msgstr "Шығарылып тастайтындар"
+
+#: recurrenceedit.cpp:329
+msgctxt "@info:whatsthis"
+msgid "The list of exceptions, i.e. dates/times excluded from the recurrence"
+msgstr ""
+"Шығарлып тастайтындар тізімі, яғни қайталануы болмайтын күн мен уақыттар"
+
+#: recurrenceedit.cpp:348
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a date to insert in the exceptions list. Use in conjunction with the "
+"Add or Change button below."
+msgstr ""
+"Шығарлып тастайтындар тізіміне енгізілетін күнін келтіріңіз. Төменде "
+"орналасқан 'Қосу' немесе 'Өзгерту' батырмасын қолданыңыз."
+
+#: recurrenceedit.cpp:355
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Қосу..."
+
+#: recurrenceedit.cpp:356
+msgctxt "@info:whatsthis"
+msgid "Add the date entered above to the exceptions list"
+msgstr "Жоғарда келтірілген күнді шығарлып тастайтындар тізіміне қосу"
+
+#: recurrenceedit.cpp:360
+msgctxt "@action:button"
+msgid "Change"
+msgstr "Өзгерту"
+
+#: recurrenceedit.cpp:362
+msgctxt "@info:whatsthis"
+msgid ""
+"Replace the currently highlighted item in the exceptions list with the date "
+"entered above"
+msgstr ""
+"Шығарлып тастайтындар тізімінде белгіленгенін жоғарыда көрсетілген күнмен "
+"алмастыру"
+
+#: recurrenceedit.cpp:366 templatedlg.cpp:120
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: recurrenceedit.cpp:367
+msgctxt "@info:whatsthis"
+msgid "Remove the currently highlighted item from the exceptions list"
+msgstr "Шығарлып тастайтындар тізімінен белгіленіп тұрғанды өшіру"
+
+#: recurrenceedit.cpp:374
+msgctxt "@option:check"
+msgid "Exclude holidays"
+msgstr "Демалыс күндері шығарлып тасталсын"
+
+#: recurrenceedit.cpp:377
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Do not trigger the alarm on holidays.</para><para>You can specify your "
+"holiday region in the Configuration dialog.</para>"
+msgstr ""
+"<para>Демалыс күндерінде ескетртпеу.</para><para>Қай аймақтың демалыс "
+"күндерін қолданатыңызды баптау диалогында орната аласыз.</para>"
+
+#: recurrenceedit.cpp:382
+msgctxt "@option:check"
+msgid "Only during working time"
+msgstr "Тек жұмыс уақытында ғана"
+
+#: recurrenceedit.cpp:385
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Only execute the alarm during working hours, on working days.</"
+"para><para>You can specify working days and hours in the Configuration "
+"dialog.</para>"
+msgstr ""
+"<para>Жұмыс күндердегі жұмыс уақытында ғана ескерту.</para> <para>Жұмыс "
+"күндер мен уақыттарын баптау диалогында орната аласыз.</para>"
+
+#: recurrenceedit.cpp:428
+msgctxt "@info"
+msgid "End date is earlier than start date"
+msgstr "Аяқтау күні бастау күнінен бұрын"
+
+#: recurrenceedit.cpp:429
+msgctxt "@info"
+msgid "End date/time is earlier than start date/time"
+msgstr "Аяқтау күні/уақыты бастау күні/уақытынан бұрын"
+
+#: recurrenceedit.cpp:699
+msgctxt "@info"
+msgid "Date cannot be earlier than start date"
+msgstr "Күні бастау күннен ерте болмау тиіс"
+
+#: recurrenceedit.cpp:1114
+msgctxt "@label:spinbox"
+msgid "Recur e&very"
+msgstr "Қайталануы ә&рбір"
+
+#: recurrenceedit.cpp:1183
+msgctxt "@label Time units for user-entered numbers"
+msgid "hours:minutes"
+msgstr "сағат:минут"
+
+#: recurrenceedit.cpp:1184
+msgctxt "@info:whatsthis"
+msgid "Enter the number of hours and minutes between repetitions of the alarm"
+msgstr "Ескертуді қайталау арасындағы сағат және минутты келтіріңіз"
+
+#: recurrenceedit.cpp:1204
+msgctxt "@label On: Tuesday"
+msgid "O&n:"
+msgstr "Кү&ні:"
+
+#: recurrenceedit.cpp:1285
+msgctxt "@info"
+msgid "No day selected"
+msgstr "Күні таңдалмаған"
+
+#: recurrenceedit.cpp:1314
+msgctxt "@label Time unit for user-entered number"
+msgid "day(s)"
+msgstr "күн"
+
+#: recurrenceedit.cpp:1315
+msgctxt "@info:whatsthis"
+msgid "Enter the number of days between repetitions of the alarm"
+msgstr "Ескертуді қайталау арасындағы күн санын келтіріңіз"
+
+#: recurrenceedit.cpp:1316
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which the alarm is allowed to occur"
+msgstr "Ескертуді қайталайтын аптадағы күндерді таңдаңыз"
+
+#: recurrenceedit.cpp:1327
+msgctxt "@label Time unit for user-entered number"
+msgid "week(s)"
+msgstr "апта"
+
+#: recurrenceedit.cpp:1328
+msgctxt "@info:whatsthis"
+msgid "Enter the number of weeks between repetitions of the alarm"
+msgstr "Ескертудің қайталану арасындағы апта санын келтіріңіз"
+
+#: recurrenceedit.cpp:1329
+msgctxt "@info:whatsthis"
+msgid "Select the days of the week on which to repeat the alarm"
+msgstr "Ескертуді қайталайтын аптадағы күндерді таңдаңыз"
+
+#: recurrenceedit.cpp:1352
+msgctxt "@option:radio On day number in the month"
+msgid "O&n day"
+msgstr "&Келесі күнінде"
+
+#: recurrenceedit.cpp:1356
+msgctxt "@info:whatsthis"
+msgid "Repeat the alarm on the selected day of the month"
+msgstr "Айдың таңдалған күнінде ескертуді қайталау"
+
+#: recurrenceedit.cpp:1363
+msgctxt "@item:inlistbox Last day of month"
+msgid "Last"
+msgstr "Соңғы"
+
+#: recurrenceedit.cpp:1366
+msgctxt "@info:whatsthis"
+msgid "Select the day of the month on which to repeat the alarm"
+msgstr "Ескертудің қайталану айының күнін таңдаңыз"
+
+#: recurrenceedit.cpp:1380
+msgctxt "@option:radio On the 1st Tuesday"
+msgid "On t&he"
+msgstr "&Күні"
+
+#: recurrenceedit.cpp:1384
+msgctxt "@info:whatsthis"
+msgid ""
+"Repeat the alarm on one day of the week, in the selected week of the month"
+msgstr "Ескертуді осы айдың таңдалған аптасының бір күнінде қайталау"
+
+#: recurrenceedit.cpp:1388
+msgctxt "@item:inlistbox"
+msgid "1st"
+msgstr "1-шісі"
+
+#: recurrenceedit.cpp:1389
+msgctxt "@item:inlistbox"
+msgid "2nd"
+msgstr "2-шісі"
+
+#: recurrenceedit.cpp:1390
+msgctxt "@item:inlistbox"
+msgid "3rd"
+msgstr "3-шісі"
+
+#: recurrenceedit.cpp:1391
+msgctxt "@item:inlistbox"
+msgid "4th"
+msgstr "4-шісі"
+
+#: recurrenceedit.cpp:1392
+msgctxt "@item:inlistbox"
+msgid "5th"
+msgstr "5-шісі"
+
+#: recurrenceedit.cpp:1393
+msgctxt "@item:inlistbox Last Monday in March"
+msgid "Last"
+msgstr "Соңғы"
+
+#: recurrenceedit.cpp:1394
+msgctxt "@item:inlistbox"
+msgid "2nd Last"
+msgstr "Соңынан 2-ншісі"
+
+#: recurrenceedit.cpp:1395
+msgctxt "@item:inlistbox"
+msgid "3rd Last"
+msgstr "Соңынан 3-іншісі"
+
+#: recurrenceedit.cpp:1396
+msgctxt "@item:inlistbox"
+msgid "4th Last"
+msgstr "Соңынан 4-іншісі"
+
+#: recurrenceedit.cpp:1397
+msgctxt "@item:inlistbox"
+msgid "5th Last"
+msgstr "Соңынан 5-іншісі"
+
+#: recurrenceedit.cpp:1400
+msgctxt "@item:inlistbox Every (Monday...) in month"
+msgid "Every"
+msgstr "Әрбір"
+
+#: recurrenceedit.cpp:1403
+msgctxt "@info:whatsthis"
+msgid "Select the week of the month in which to repeat the alarm"
+msgstr "Ескертудің қайталанатын айдың апталарын таңдаңыз"
+
+#: recurrenceedit.cpp:1418
+msgctxt "@info:whatsthis"
+msgid "Select the day of the week on which to repeat the alarm"
+msgstr "Ескертудің қайталану аптасының күндерін таңдаңыз"
+
+#: recurrenceedit.cpp:1541
+msgctxt "@label Time unit for user-entered number"
+msgid "month(s)"
+msgstr "ай"
+
+#: recurrenceedit.cpp:1542
+msgctxt "@info:whatsthis"
+msgid "Enter the number of months between repetitions of the alarm"
+msgstr "Ескертудің қайталану аралығындағы айлар санын келтіріңіз"
+
+#: recurrenceedit.cpp:1553
+msgctxt "@label Time unit for user-entered number"
+msgid "year(s)"
+msgstr "жыл"
+
+#: recurrenceedit.cpp:1554
+msgctxt "@info:whatsthis"
+msgid "Enter the number of years between repetitions of the alarm"
+msgstr "Ескертудің қайталану аралығындағы жылдар санын келтіріңіз"
+
+#: recurrenceedit.cpp:1561
+msgctxt "@label List of months to select"
+msgid "Months:"
+msgstr "Айлары:"
+
+#: recurrenceedit.cpp:1583
+msgctxt "@info:whatsthis"
+msgid "Select the months of the year in which to repeat the alarm"
+msgstr "Ескерту жылдың қай айларында қайталанатынды таңдаңыз"
+
+#: recurrenceedit.cpp:1592
+msgctxt "@label:listbox"
+msgid "February 2&9th alarm in non-leap years:"
+msgstr "Кібісе емес жылдағы 29-ақпанға келетін ескерту күні:"
+
+#: recurrenceedit.cpp:1596
+msgctxt "@item:inlistbox No date"
+msgid "None"
+msgstr "Жоқ"
+
+#: recurrenceedit.cpp:1597
+msgctxt "@item:inlistbox 1st March (short form)"
+msgid "1 Mar"
+msgstr "1-Нау"
+
+#: recurrenceedit.cpp:1598
+msgctxt "@item:inlistbox 28th February (short form)"
+msgid "28 Feb"
+msgstr "28-Ақп"
+
+#: recurrenceedit.cpp:1604
+msgctxt "@info:whatsthis"
+msgid ""
+"Select which date, if any, the February 29th alarm should trigger in non-"
+"leap years"
+msgstr ""
+"29 ақпанға келетін ескертуді кібісе емес жылдың кай күніде көрсетілетінін "
+"таңдаңыз"
+
+#: recurrenceedit.cpp:1688
+msgctxt "@info"
+msgid "No month selected"
+msgstr "Ай таңдалмаған"
+
+#: reminder.cpp:49
+msgctxt "@option:check"
+msgid "Reminder for first recurrence only"
+msgstr "Тек бірінші қайталануға арналған еске салу"
+
+#: reminder.cpp:51
+msgctxt "@item:inlistbox"
+msgid "in advance"
+msgstr "қалғанда"
+
+#: reminder.cpp:65
+msgctxt "@option:check"
+msgid "Reminder:"
+msgstr "Еске салу:"
+
+#: reminder.cpp:69
+msgctxt "@item:inlistbox"
+msgid "afterwards"
+msgstr "кейін"
+
+#: reminder.cpp:91
+msgctxt "@info:whatsthis"
+msgid "Display the reminder only for the first time the alarm is scheduled"
+msgstr ""
+"Алдын-ала еске салу тек жоспарланған бірінші ескертуге ғана көрсетіледі"
+
+#: repetitionbutton.cpp:87
+msgctxt "@title:window"
+msgid "Alarm Sub-Repetition"
+msgstr "Ескертуді қайталау"
+
+#: repetitionbutton.cpp:165
+msgctxt "@option:check Repeat every 10 minutes"
+msgid "Repeat every"
+msgstr "Әрбір"
+
+#: repetitionbutton.cpp:166
+msgctxt "@info:whatsthis"
+msgid ""
+"Instead of the alarm triggering just once at each recurrence, checking this "
+"option makes the alarm trigger multiple times at each recurrence."
+msgstr "Әрбір ескертуді бірнеше рет қайталау үшін осы белгіні қойыңыз."
+
+#: repetitionbutton.cpp:168
+msgctxt "@info:whatsthis"
+msgid "Enter the time between repetitions of the alarm"
+msgstr "Қайталау аралығын келтіріңіз"
+
+#: repetitionbutton.cpp:186
+msgctxt "@option:radio"
+msgid "Number of repetitions:"
+msgstr "Қайталау саны:"
+
+#: repetitionbutton.cpp:188
+msgctxt "@info:whatsthis"
+msgid ""
+"Check to specify the number of times the alarm should repeat after each "
+"recurrence"
+msgstr ""
+"Әрбір ескертуден кейін ол неше рет қайталынатынын келтіргіңіз келсе белгісін "
+"қойыңыз"
+
+#: repetitionbutton.cpp:196
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter the number of times to trigger the alarm after its initial occurrence"
+msgstr "Ескертудің алғашқысынан кейін неше рет қайталынатынын келтіріңіз"
+
+#: repetitionbutton.cpp:204
+msgctxt "@option:radio"
+msgid "Duration:"
+msgstr "Ұзақтығы:"
+
+#: repetitionbutton.cpp:206
+msgctxt "@info:whatsthis"
+msgid "Check to specify how long the alarm is to be repeated"
+msgstr "Ескерту қайталана беретін уақытты келтіру үшін белгілеңіз"
+
+#: repetitionbutton.cpp:212
+msgctxt "@info:whatsthis"
+msgid "Enter the length of time to repeat the alarm"
+msgstr "Ескертуді қайталау уақыт ұзындығын келтіріңіз"
+
+#: resourceconfigdialog.cpp:48 resourceselector.cpp:238
+msgctxt "@title:window"
+msgid "Calendar Configuration"
+msgstr "Күнтізбені баптау"
+
+#: resourceconfigdialog.cpp:61
+msgctxt "@title:group"
+msgid "General Settings"
+msgstr "Жалпы параметрлері"
+
+#: resourceconfigdialog.cpp:63
+msgctxt "@label:textbox Calendar name"
+msgid "Name:"
+msgstr "Атауы:"
+
+#: resourceconfigdialog.cpp:68
+msgctxt "@option:check"
+msgid "Read-only"
+msgstr "Тек оқу үшін"
+
+#: resourceconfigdialog.cpp:81
+#, kde-format
+msgctxt "@title:group"
+msgid "<resource>%1</resource> Calendar Settings"
+msgstr "<resource>%1</resource> күнтізбе параметрлері"
+
+#: resourceconfigdialog.cpp:123
+msgctxt "@info"
+msgid "Please enter a calendar name."
+msgstr "Күнтізбенің атауын келтіріңіз."
+
+#: resourcemodelview.cpp:119 resources/alarmresource.cpp:360
+msgctxt "@info/plain"
+msgid "Disabled (wrong alarm type)"
+msgstr "Бұғатталған (қате ескертудің түрі)"
+
+#: resources/alarmresource.cpp:354 resourceselector.cpp:856
+msgctxt "@info/plain"
+msgid "Active alarms"
+msgstr "Белсенді ескертулері"
+
+#: resources/alarmresource.cpp:355 resourceselector.cpp:858
+msgctxt "@info/plain"
+msgid "Archived alarms"
+msgstr "Өткен ескертулері"
+
+#: resources/alarmresource.cpp:356 resourceselector.cpp:860
+msgctxt "@info/plain"
+msgid "Alarm templates"
+msgstr "Ескерту үлгілері"
+
+#: resources/alarmresource.cpp:359 resourceselector.cpp:865
+msgctxt "@info/plain"
+msgid "Read-write"
+msgstr "Оқу-жазу үшн"
+
+#: resources/alarmresource.cpp:360 resourceselector.cpp:867
+msgctxt "@info/plain"
+msgid "Enabled"
+msgstr "Рұқсат етілген"
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:871
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "No"
+msgstr "Жоқ"
+
+#: resources/alarmresource.cpp:361 resourceselector.cpp:870
+msgctxt "@info/plain Parameter in 'Default calendar: Yes/No'"
+msgid "Yes"
+msgstr "Иә"
+
+#: resources/alarmresource.cpp:363
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>Calendar type: %2<nl/>Contents: %3<nl/>%4: <filename>"
+"%5</filename><nl/>Permissions: %6<nl/>Status: %7<nl/>Default calendar: %8</"
+"para>"
+msgstr ""
+"<title>%1</title><para>Күнтізбенің түрі: %2<nl/>Мазмұны: %3<nl/>%4: "
+"<filename>%5</filename><nl/>Рұқсаттары: %6<nl/>Күй-жайы: %7<nl/>Әдетті "
+"күнтізбесі: %8</para>"
+
+#: resources/alarmresources.cpp:159
+#, kde-format
+msgctxt "@info"
+msgid "%1: invalid calendar file name: <filename>%2</filename>"
+msgstr "%1: дұрыс емес күнтізбе файлдың атауы: <filename>%2</filename>"
+
+#: resources/alarmresources.cpp:167
+#, kde-format
+msgctxt "@info"
+msgid "%1: file name not permitted: <filename>%2</filename>"
+msgstr "%1: рұқсат етілмеген файл атауы: <filename>%2</filename>"
+
+#: resources/resourcelocaldirwidget.cpp:40
+#: resources/resourcelocalwidget.cpp:42
+msgctxt "@label:textbox"
+msgid "Location:"
+msgstr "Орны:"
+
+#: resources/resourcelocaldirwidget.cpp:72
+#: resources/resourcelocalwidget.cpp:77
+msgctxt "@info"
+msgid "No location specified.  The calendar will be invalid."
+msgstr "Орны көрсетілмеген. Күнтізбесі дұрыс болмайды."
+
+#: resources/resourceremotewidget.cpp:42
+msgctxt "@label:textbox"
+msgid "Download from:"
+msgstr "Қайдан жүктеп алу:"
+
+#: resources/resourceremotewidget.cpp:48
+msgctxt "@label:textbox"
+msgid "Upload to:"
+msgstr "Қайда жүктеп беру:"
+
+#: resources/resourceremotewidget.cpp:94
+msgctxt "@info"
+msgid "You have specified no upload URL: the alarm calendar will be read-only."
+msgstr "Жүктеп беру URL-і келтірмеген: ескерту күнтізбесі теқ оқу үшін болады"
+
+#: resources/resourcewidget.cpp:54
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Calendar <resource>%1</resource> cannot be made writable since it either was "
+"not created by <application>KAlarm</application>, or was created by a newer "
+"version of <application>KAlarm</application>"
+msgstr ""
+"<resource>%1</resource> күнтізбесі жазылмайтын болады, өйткені ол "
+"<application>KAlarm</application> бағдарламасымен құрылған емес, "
+"әлде<application>KAlarm</application> бағдаламасының жаңа нұсқасымен құрылған"
+
+#: resourceselector.cpp:100
+msgctxt "@title:group"
+msgid "Calendars"
+msgstr "Күнтізбелер"
+
+#: resourceselector.cpp:104
+msgctxt "@item:inlistbox"
+msgid "Active Alarms"
+msgstr "Белсенді ескертулер"
+
+#: resourceselector.cpp:105
+msgctxt "@item:inlistbox"
+msgid "Archived Alarms"
+msgstr "Өткен ескертулер"
+
+#: resourceselector.cpp:106
+msgctxt "@item:inlistbox"
+msgid "Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#: resourceselector.cpp:108
+msgctxt "@info:whatsthis"
+msgid "Choose which type of data to show alarm calendars for"
+msgstr "Ескерту күнтізбеде қай деректер түрі көрсетілетінін таңдау"
+
+#: resourceselector.cpp:125
+msgctxt "@info:whatsthis"
+msgid ""
+"List of available calendars of the selected type. The checked state shows "
+"whether a calendar is enabled (checked) or disabled (unchecked). The default "
+"calendar is shown in bold."
+msgstr ""
+"Таңдалған түрдегі бар күнтізбелер тізімі. Белгіленгені - күнтізбе қосылып "
+"тұрғанын, белгісі жоғы - бұғатталғанын көрсетеді. Әдеттегісі қалың қаріппен "
+"ерекшеленген."
+
+#: resourceselector.cpp:136 templatedlg.cpp:110
+msgctxt "@action:button"
+msgid "Edit..."
+msgstr "Өзгерту..."
+
+#: resourceselector.cpp:141
+msgctxt "@info:whatsthis"
+msgid "Edit the highlighted calendar"
+msgstr "Бояуланып тұрған күнтізбені өңдеу"
+
+#: resourceselector.cpp:142
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Remove the highlighted calendar from the list.</para><para>The "
+"calendar itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
+msgstr ""
+"<para>Бояуланып тұрған күнтізбені тізімінен кетіру.</para><para>Күнтізбе өзі "
+"қалады, керек болғанда, оны тізімге қайтарып аласыз. </para>"
+
+#: resourceselector.cpp:175
+msgctxt "@info:tooltip"
+msgid "Add a new active alarm calendar"
+msgstr "Жаңа белсенді ескерту күнтізбені қосу"
+
+#: resourceselector.cpp:179
+msgctxt "@info:tooltip"
+msgid "Add a new archived alarm calendar"
+msgstr "Жаңа өткен ескерту күнтізбені қосу"
+
+#: resourceselector.cpp:183
+msgctxt "@info:tooltip"
+msgid "Add a new alarm template calendar"
+msgstr "Жаңа ескерту күнтізбенің үлгісін қосу"
+
+#: resourceselector.cpp:239
+msgctxt "@info"
+msgid "Select storage type of new calendar:"
+msgstr "Жаңа күнтізбенің сақтау орнын таңдау"
+
+#: resourceselector.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "Unable to create calendar of type <resource>%1</resource>."
+msgstr "Түрі <resource>%1</resource> күнтізбе құрылмады. "
+
+#: resourceselector.cpp:249
+#, kde-format
+msgctxt "@info/plain"
+msgid "%1 calendar"
+msgstr "%1 күнтізбесі"
+
+#: resourceselector.cpp:363
+msgctxt "@info"
+msgid "You cannot make your default active alarm calendar read-only."
+msgstr "Әдетті белсенді ескертулер күнтізбеңізді тек оқу үшін қылу болмайды."
+
+#: resourceselector.cpp:370
+msgctxt "@info"
+msgid ""
+"You cannot make your default archived alarm calendar read-only while expired "
+"alarms are configured to be kept."
+msgstr ""
+"Ескірген ескертулер сақтауы бапталмағанша, әдетті өткен ескертулер "
+"күнтізбеңізді тек оқу үшін қылу болмайды."
+
+#: resourceselector.cpp:374
+msgctxt "@info"
+msgid "Do you really want to make your default calendar read-only?"
+msgstr "Әдетті күнтізбеңізді тек оқу үшін қылмақсыз ба?"
+
+#: resourceselector.cpp:427
+msgctxt "@info"
+msgid "You cannot remove your default active alarm calendar."
+msgstr "Әдетті белсенді ескертулер күнтізбеңізді өшіруге болмайды."
+
+#: resourceselector.cpp:434
+msgctxt "@info"
+msgid ""
+"You cannot remove your default archived alarm calendar while expired alarms "
+"are configured to be kept."
+msgstr ""
+"Ескірген ескертулер сақтауы бапталмағанша, әдетті өткен ескертулер "
+"күнтізбеңізді өшіруге болмайды."
+
+#: resourceselector.cpp:450
+#, kde-format
+msgctxt "@info"
+msgid "<para>It also contains:%1</para>"
+msgstr "<para>Онда %1 деген де бар</para>"
+
+#: resourceselector.cpp:451
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> is the default calendar for:%2</para>"
+"%3<para>Do you really want to remove it from all calendar lists?</para>"
+msgstr ""
+"<para><resource>%1</resource> деген %2 үшін әдетті күнтізбе</para>"
+"%3<para>Оны бүкіл күнтізбе тізімдерінен өшірмексіз бе?</para>"
+
+#: resourceselector.cpp:455 resourceselector.cpp:463
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove your default calendar (<resource>%1</resource>) "
+"from the list?"
+msgstr ""
+"Әдетті күнтізбеңізді (<resource>%1</resource>) тізімінен өшірмексіз бе?"
+
+#: resourceselector.cpp:458
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para><resource>%1</resource> contains:%2</para><para>Do you really want to "
+"remove it from all calendar lists?</para>"
+msgstr ""
+"<para><resource>%1</resource> дегенде %2 бар</para><para>Оны бүкіл күнтізбе "
+"тізімдерінен өшірмексіз бе?</para>"
+
+#: resourceselector.cpp:461 resourceselector.cpp:464
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Do you really want to remove the calendar <resource>%1</resource> from the "
+"list?"
+msgstr "<resource>%1</resource> күнтізбесін тізімінен өшірмексіз бе?"
+
+#: resourceselector.cpp:501
+msgctxt "@action Reload calendar"
+msgid "Re&load"
+msgstr "Қайта &жүктеу"
+
+#: resourceselector.cpp:505
+msgctxt "@action"
+msgid "&Save"
+msgstr "&Сақтау"
+
+#: resourceselector.cpp:509
+msgctxt "@action"
+msgid "Show &Details"
+msgstr "&Егжей-тегжейлері"
+
+#: resourceselector.cpp:512
+msgctxt "@action"
+msgid "Set &Color..."
+msgstr "&Түсін орнату..."
+
+#: resourceselector.cpp:515
+msgctxt "@action"
+msgid "Clear C&olor"
+msgstr "Тү&сін тазалау"
+
+#: resourceselector.cpp:522
+msgctxt "@action"
+msgid "&Update Calendar Format"
+msgstr "Күнтізбе пішімін &жаңарту"
+
+#: resourceselector.cpp:526
+msgctxt "@action"
+msgid "&Remove"
+msgstr "Өші&ру"
+
+#: resourceselector.cpp:532
+msgctxt "@action"
+msgid "&Add..."
+msgstr "Қ&осу..."
+
+#: resourceselector.cpp:535
+msgctxt "@action"
+msgid "Im&port..."
+msgstr "&Импорттау..."
+
+#: resourceselector.cpp:621
+msgctxt "@action"
+msgid "Use as &Default for Active Alarms"
+msgstr "Белсенділер үшін ә&детті болсын"
+
+#: resourceselector.cpp:622
+msgctxt "@action"
+msgid "Use as &Default for Archived Alarms"
+msgstr "Өткендер үшін ә&детті болсын"
+
+#: resourceselector.cpp:623
+msgctxt "@action"
+msgid "Use as &Default for Alarm Templates"
+msgstr "Үлгілер үшін ә&детті болсын"
+
+#: resourceselector.cpp:740
+msgctxt "@info/plain"
+msgid "It is not an active alarm calendar."
+msgstr "Бұл белсенді ескертулер күнтізбесі емес."
+
+#: resourceselector.cpp:743
+msgctxt "@info/plain"
+msgid "It is not an archived alarm calendar."
+msgstr "Бұл өткен ескертулер күнтізбесі емес."
+
+#: resourceselector.cpp:746
+msgctxt "@info/plain"
+msgid "It is not an alarm template calendar."
+msgstr "Бұл үлгі ескертулер күнтізбесі емес."
+
+#: resourceselector.cpp:751
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Calendar <resource>%1</resource> has been disabled:</para><para>%2</"
+"para>"
+msgstr ""
+"<para><resource>%1</resource> күнтізбесі бұғатталған:</para><para>%2</para>"
+
+#: resourceselector.cpp:861
+msgctxt "@info/plain List separator"
+msgid ", "
+msgstr ", "
+
+#: resourceselector.cpp:873
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<title>%1</title><para>ID: %2<nl/>Calendar type: %3<nl/>Contents: %4<nl/>%5: "
+"<filename>%6</filename><nl/>Permissions: %7<nl/>Status: %8<nl/>Default "
+"calendar: %9</para>"
+msgstr ""
+"<title>%1</title><para>ID: %2<nl/>Күнтізбенің түрі: %3<nl/>Мазмұны: %4<nl/>"
+"%5: <filename>%6</filename><nl/>Рұқсаттары: %7<nl/>Күй-жайы: %8<nl/>Әдетті "
+"күнтізбесі: %9</para>"
+
+#: rtcwakeaction.cpp:89
+#, kde-format
+msgctxt "@text/plain"
+msgid "Could not run <command>%1</command> to set wake from suspend"
+msgstr "Аялаудан оралуды орнатудағы <command>%1</command> командасы жегілмеді"
+
+#: rtcwakeaction.cpp:92
+#, kde-format
+msgctxt "@text/plain"
+msgid ""
+"Error setting wake from suspend.<nl/>Command was: <command>%1</command><nl/"
+">Error code: %2."
+msgstr ""
+"Аялдау режімінен оралу:қатесі.<nl/>Командасы: <command>%1</command><nl/"
+">Қатенің коды: %2."
+
+#: sounddlg.cpp:54
+msgctxt "@option:check"
+msgid "Repeat"
+msgstr "Қайталануы"
+
+#: sounddlg.cpp:158
+msgctxt "@label"
+msgid "Sound file:"
+msgstr "Дыбыс файлы:"
+
+#: sounddlg.cpp:172 sounddlg.cpp:455
+msgctxt "@info:tooltip"
+msgid "Test the sound"
+msgstr "Дыбысты сынап көру"
+
+#: sounddlg.cpp:173 sounddlg.cpp:456
+msgctxt "@info:whatsthis"
+msgid "Play the selected sound file."
+msgstr "Таңдаған дыбыс файлын орындау."
+
+#: sounddlg.cpp:179
+msgctxt "@info:whatsthis"
+msgid "Enter the name or URL of a sound file to play."
+msgstr "Орындалатын дыбыс файл атауын не URL сілтемесін келтіріңіз."
+
+#: sounddlg.cpp:191
+msgctxt "@info:whatsthis"
+msgid "Select a sound file to play."
+msgstr "Орындалатын дыбыс файлын таңдау."
+
+#: sounddlg.cpp:205
+msgctxt "@info:whatsthis"
+msgid ""
+"If checked, the sound file will be played repeatedly for as long as the "
+"message is displayed."
+msgstr ""
+"Белгісі қойылса, хабарлама көрсетіліп тұрғанша дыбыс файлы қайталанып "
+"орындала береді."
+
+#: sounddlg.cpp:215
+msgctxt "@label:spinbox Length of time to pause between repetitions"
+msgid "Pause between repetitions:"
+msgstr "Ескертуді қайталау аралығы:"
+
+#: sounddlg.cpp:222 sounddlg.cpp:276
+msgctxt "@label"
+msgid "seconds"
+msgstr "сек"
+
+#: sounddlg.cpp:224
+msgctxt "@info:whatsthis"
+msgid "Enter how many seconds to pause between repetitions."
+msgstr "Ескертуді қайталау аралығы неше секунд болатынын келтіріңіз."
+
+#: sounddlg.cpp:228
+msgctxt "@title:group Sound volume"
+msgid "Volume"
+msgstr "Үнділігі"
+
+#: sounddlg.cpp:243
+msgctxt "@option:check"
+msgid "Set volume"
+msgstr "Үнділігін орнату"
+
+#: sounddlg.cpp:246
+msgctxt "@info:whatsthis"
+msgid "Select to choose the volume for playing the sound file."
+msgstr "Дыбыс файлының орындалу үнділігін басқару үшін таңдаңыз."
+
+#: sounddlg.cpp:253
+msgctxt "@info:whatsthis"
+msgid "Choose the volume for playing the sound file."
+msgstr "Дыбыс файлының орындалу үнділігін таңдау."
+
+#: sounddlg.cpp:258
+msgctxt "@option:check"
+msgid "Fade"
+msgstr "Біртіндеп өзгеру"
+
+#: sounddlg.cpp:261
+msgctxt "@info:whatsthis"
+msgid "Select to fade the volume when the sound file first starts to play."
+msgstr ""
+"Дыбыс файлы орындалуы басталғанда үнділігі біртіндеп көтерілуін таңдау."
+
+#: sounddlg.cpp:269
+msgctxt "@label:spinbox Time period over which to fade the sound"
+msgid "Fade time:"
+msgstr "Біртіндеп көтерілу уақыты:"
+
+#: sounddlg.cpp:278
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter how many seconds to fade the sound before reaching the set volume."
+msgstr ""
+"Орнатылған үнділік деңгейіне біртіндеп жету үшін неше секунд керек екенін  "
+"келтіріңіз."
+
+#: sounddlg.cpp:285
+msgctxt "@label:slider"
+msgid "Initial volume:"
+msgstr "Бастапқы үнділігі:"
+
+#: sounddlg.cpp:293
+msgctxt "@info:whatsthis"
+msgid "Choose the initial volume for playing the sound file."
+msgstr "Дыбыс файл орындалуының бастапқы үнділік деңгейі."
+
+#: soundpicker.cpp:50
+msgctxt "@label:listbox Listbox providing audio options"
+msgid "Sound:"
+msgstr "Дыбысы:"
+
+#: soundpicker.cpp:51
+msgctxt "@item:inlistbox No sound"
+msgid "None"
+msgstr "Жоқ"
+
+#: soundpicker.cpp:52
+msgctxt "@item:inlistbox"
+msgid "Beep"
+msgstr "Шиқыл"
+
+#: soundpicker.cpp:53
+msgctxt "@item:inlistbox"
+msgid "Speak"
+msgstr "Үн қату"
+
+#: soundpicker.cpp:54
+msgctxt "@item:inlistbox"
+msgid "Sound file"
+msgstr "Дыбыс файлы"
+
+#: soundpicker.cpp:98
+msgctxt "@info:tooltip"
+msgid "Configure sound file"
+msgstr "Дыбыс файлын баптау"
+
+#: soundpicker.cpp:99
+msgctxt "@info:whatsthis"
+msgid "Configure a sound file to play when the alarm is displayed."
+msgstr "Ескерту көрсетілгенде орындалатын дыбыс файлын баптау."
+
+#: soundpicker.cpp:132
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message is displayed silently."
+msgstr "<interface>%1</interface>: хабарламасы дыбыссыз көрсетіледі."
+
+#: soundpicker.cpp:133
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: a simple beep is sounded."
+msgstr "<interface>%1</interface>: жай дыбыс белгісі шығарылады."
+
+#: soundpicker.cpp:134
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<interface>%1</interface>: an audio file is played. You will be prompted to "
+"choose the file and set play options."
+msgstr ""
+"<interface>%1</interface>: дыбыс файлы ойнатылады. Файлды таңдау жане "
+"орындау параметрлерін орнату ұсынылады."
+
+#: soundpicker.cpp:138
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid "<interface>%1</interface>: the message text is spoken."
+msgstr ""
+"<interface>%1</interface>: %1: хабарламасының мәтіні дауыстап айтылады."
+
+#: soundpicker.cpp:140
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item><item>%4</item></list></para>"
+msgstr ""
+"<para>Хабарламасы көрсетілгенде ойнайтын дыбысы:<list><item>%1</item><item>"
+"%2</item><item>%3</item><item>%4</item></list></para>"
+
+#: soundpicker.cpp:148
+#, kde-format
+msgctxt "@info:whatsthis Combination of multiple whatsthis items"
+msgid ""
+"<para>Choose a sound to play when the message is displayed:<list><item>%1</"
+"item><item>%2</item><item>%3</item></list></para>"
+msgstr ""
+"<para>Хабарламасы көрсетілгенде ойнайтын дыбысы:<list><item>%1</item><item>"
+"%2</item><item>%3</item></list></para>"
+
+#: soundpicker.cpp:268
+msgctxt "@title:window"
+msgid "Sound File"
+msgstr "Дыбыс файлы"
+
+#: soundpicker.cpp:330
+msgctxt "@title:window"
+msgid "Choose Sound File"
+msgstr "Дыбыс файлды таңдау"
+
+#: specialactions.cpp:48
+msgctxt "@action:button"
+msgid "Special Actions..."
+msgstr "Арнайы амалдар..."
+
+#: specialactions.cpp:56
+msgctxt "@info:whatsthis"
+msgid "Specify actions to execute before and after the alarm is displayed."
+msgstr ""
+"Ескерту көрсетілгенге дейін және кейін орындалатын әрекеттерін келтіріңіз."
+
+#: specialactions.cpp:107
+msgctxt "@title:window"
+msgid "Special Alarm Actions"
+msgstr "Ескертудің арнайы әрекеттері"
+
+#: specialactions.cpp:165
+msgctxt "@title:group"
+msgid "Pre-Alarm Action"
+msgstr "Ескерту алдындағы әрекет:"
+
+#: specialactions.cpp:175 specialactions.cpp:210
+msgctxt "@label:textbox"
+msgid "Command:"
+msgstr "Командасы:"
+
+#: specialactions.cpp:180
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute before the alarm is displayed.</"
+"para><para>Note that it is executed only when the alarm proper is displayed, "
+"not when a reminder or deferred alarm is displayed.</para><para><note>KAlarm "
+"will wait for the command to complete before displaying the alarm.</note></"
+"para>"
+msgstr ""
+"<para>Ескертуді көрсету алдындағы орындалатын қоршау-орта командасын "
+"келтіріңіз.</para><para>Бұл тек тиісті ескерту көрсетілмекте ғана "
+"орындалады, еске салу не кейінге қалдырған ескертуде ол орындалмайды.</"
+"para><para><note>Ескертуді көрсету алдында, KAlarm осы команданың аяқталуын "
+"күтеді.</note></para>"
+
+#: specialactions.cpp:186
+msgctxt "@option:check"
+msgid "Execute for deferred alarms"
+msgstr "Кейінге қалдырылған ескертулер үшін орындау"
+
+#: specialactions.cpp:187
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>If unchecked, the command is only executed before the alarm proper is "
+"displayed.</para><para>If checked, the pre-alarm command is also executed "
+"before a deferred alarm is displayed.</para>"
+msgstr ""
+"<para>Белгісі қойылмаса, командасы тек қана кейінге қалдырылмаған ескерту "
+"алдында орындалады.</para><para>Белгісі қойылса, ол кейінге қалдырған "
+"ескертуді көрсету алдында да орындалады.</para>"
+
+#: specialactions.cpp:191
+msgctxt "@option:check"
+msgid "Cancel alarm on error"
+msgstr "Қателікте ескерту болмасын"
+
+#: specialactions.cpp:192
+msgctxt "@info:whatsthis"
+msgid ""
+"Cancel the alarm if the pre-alarm command fails, i.e. do not display the "
+"alarm or execute any post-alarm action command."
+msgstr ""
+"Алдындағы командасы жаңылса ескертуден айну, яғни ескерту және одан кейінгі "
+"әрекеті болмайды."
+
+#: specialactions.cpp:195
+msgctxt "@option:check"
+msgid "Do not notify errors"
+msgstr "Қателер туралы құлақтандырылмасын"
+
+#: specialactions.cpp:196
+msgctxt "@info:whatsthis"
+msgid ""
+"Do not show error status or error message if the pre-alarm command fails."
+msgstr "Ескерту алдындағы әрекет жаңылыса - қате жайлі хабрлама болмасын."
+
+#: specialactions.cpp:200
+msgctxt "@title:group"
+msgid "Post-Alarm Action"
+msgstr "Ескерту кейінгі әрекет:"
+
+#: specialactions.cpp:214
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Enter a shell command to execute after the alarm window is closed.</"
+"para><para>Note that it is not executed after closing a reminder window. If "
+"you defer the alarm, it is not executed until the alarm is finally "
+"acknowledged or closed.</para>"
+msgstr ""
+"<para>Ескерту терезесі жабылған соң орындалатын қоршау-орта командасын "
+"келтіріңіз.</para><para>Бұл қалған уақытты еске салудан кейін болмайды. "
+"Кейінге қалдырған ескертуде ол, ескерту әдбен құпталып, терезесі "
+"жабылмағанша орындалмайды.</para>"
+
+#: templatedlg.cpp:69
+msgctxt "@title:window"
+msgid "Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#: templatedlg.cpp:95 templatelistview.cpp:44
+msgctxt "@info:whatsthis"
+msgid "The list of alarm templates"
+msgstr "Ескерту үлгілерінің тізімі"
+
+#: templatedlg.cpp:103
+msgctxt "@action:button"
+msgid "New"
+msgstr "Жаңа"
+
+#: templatedlg.cpp:104
+msgctxt "@action"
+msgid "New"
+msgstr "Жаңа"
+
+#: templatedlg.cpp:107
+msgctxt "@info:whatsthis"
+msgid "Create a new alarm template"
+msgstr "Ескертудің жаңа үлгісін құру"
+
+#: templatedlg.cpp:112
+msgctxt "@info:whatsthis"
+msgid "Edit the currently highlighted alarm template"
+msgstr "Бояуланып тұрған ескерту үлгісін өңдеу"
+
+#: templatedlg.cpp:115
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: templatedlg.cpp:117
+msgctxt "@info:whatsthis"
+msgid ""
+"Create a new alarm template based on a copy of the currently highlighted "
+"template"
+msgstr "Бояуланып түрған үлгіні негіздеп жаңа ескерту үлгісін құру"
+
+#: templatedlg.cpp:122
+msgctxt "@info:whatsthis"
+msgid "Delete the currently highlighted alarm template"
+msgstr "Бояуланған ескерту үлгісін өшіру"
+
+#: templatedlg.cpp:211
+#, kde-format
+msgctxt "@info"
+msgid "Do you really want to delete the selected alarm template?"
+msgid_plural "Do you really want to delete the %1 selected alarm templates?"
+msgstr[0] "Шынымен %1 таңдалған ескерту үлгіні өшірмексіз бе?"
+
+#: templatedlg.cpp:213
+msgctxt "@title:window"
+msgid "Delete Alarm Template"
+msgid_plural "Delete Alarm Templates"
+msgstr[0] "Ескерту үлгілерін өшіру"
+
+#: templatepickdlg.cpp:46
+msgctxt "@title:window"
+msgid "Choose Alarm Template"
+msgstr "Ескерту үлгісін таңдау"
+
+#: templatepickdlg.cpp:77
+msgctxt "@info:whatsthis"
+msgid "Select a template to base the new alarm on."
+msgstr "Жаңа ескерту үшін үлгі таңдау."
+
+#: traywindow.cpp:100
+msgctxt "@action"
+msgid "&New Alarm"
+msgstr "&Жаңа ескерту"
+
+#: traywindow.cpp:333
+msgid "Disabled"
+msgstr "Бұғатталған"
+
+#: traywindow.cpp:338
+msgctxt "@info:tooltip Brief: some alarms are disabled"
+msgid "(Some alarms disabled)"
+msgstr "(Кейбір ескертулер рұқсат етілмеген)"
+
+#: traywindow.cpp:408
+#, kde-format
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "(%1%2:%3)"
+msgstr "(%1%2:%3)"
+
+#: traywindow.cpp:410
+#, kde-format
+msgctxt "@info/plain prefix + hours:minutes"
+msgid "%1%2:%3"
+msgstr "%1%2:%3"
+
+#: undo.cpp:440
+msgctxt "@info/plain"
+msgid "Alarm not found"
+msgstr "Ескерту табылмады"
+
+#: undo.cpp:441
+msgctxt "@info/plain"
+msgid "Error recreating alarm"
+msgstr "Ескертуді қайта құру қатесі"
+
+#: undo.cpp:442
+msgctxt "@info/plain"
+msgid "Error recreating alarm template"
+msgstr "Ескерту үлгісін қайта құру қатесі"
+
+#: undo.cpp:443
+msgctxt "@info/plain"
+msgid "Cannot reactivate archived alarm"
+msgstr "Өткен ескерту қайта белсендірілмейді"
+
+#: undo.cpp:444
+msgctxt "@info/plain"
+msgid "Program error"
+msgstr "Бағдарлама қатесі"
+
+#: undo.cpp:445
+msgctxt "@info/plain"
+msgid "Unknown error"
+msgstr "Беймәлім қате"
+
+#: undo.cpp:447
+#, kde-format
+msgctxt "@info Undo-action: message"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: undo.cpp:684
+msgctxt "@info/plain Action to create a new alarm"
+msgid "New alarm"
+msgstr "Жаңа ескерту"
+
+#: undo.cpp:686
+msgctxt "@info/plain Action to delete an alarm"
+msgid "Delete alarm"
+msgstr "Ескертуді өшіру"
+
+#: undo.cpp:689
+msgctxt "@info/plain Action to create a new alarm template"
+msgid "New template"
+msgstr "Жаңа үлгі"
+
+#: undo.cpp:691
+msgctxt "@info/plain Action to delete an alarm template"
+msgid "Delete template"
+msgstr "Үлгіні өшіру"
+
+#: undo.cpp:693
+msgctxt "@info/plain"
+msgid "Delete archived alarm"
+msgstr "Өткен ескертуді өшіру"
+
+#: undo.cpp:916
+msgctxt "@info/plain"
+msgid "Create multiple alarms"
+msgstr "Бірнеше ескертулерді орнату"
+
+#: undo.cpp:1022
+msgctxt "@info/plain Action to edit an alarm"
+msgid "Edit alarm"
+msgstr "Ескертуді өңдеу"
+
+#: undo.cpp:1024
+msgctxt "@info/plain Action to edit an alarm template"
+msgid "Edit template"
+msgstr "Үлгіні өңдеу"
+
+#: undo.cpp:1207
+msgctxt "@info/plain"
+msgid "Delete multiple alarms"
+msgstr "Бірнеше ескертулерді өшіру"
+
+#: undo.cpp:1209
+msgctxt "@info/plain"
+msgid "Delete multiple templates"
+msgstr "Бірнеше үлгілерін өшіру"
+
+#: undo.cpp:1216
+msgctxt "@info/plain"
+msgid "Delete multiple archived alarms"
+msgstr "Өткен бірнеше ескертулерді өшіру"
+
+#: undo.cpp:1259 undo.cpp:1303
+msgctxt "@info/plain"
+msgid "Reactivate alarm"
+msgstr "Ескертуді қайта белсендіру"
+
+#: undo.cpp:1326
+msgctxt "@info/plain"
+msgid "Reactivate multiple alarms"
+msgstr "Бірнеше ескертулерді қайта белсендіру"
+
+#: wakedlg.cpp:56
+msgctxt "@title:window"
+msgid "Wake From Suspend"
+msgstr "Аялдау режімінен оралу"
+
+#: wakedlg.cpp:181
+msgctxt "@info"
+msgid "Cannot schedule wakeup time for a date-only alarm"
+msgstr "Күні ғана бар ескертуінің уақыты болмайды"
+
+#: wakedlg.cpp:185
+msgctxt "@info"
+msgid ""
+"<para>This wakeup will cancel any existing wakeup which has been set by "
+"KAlarm or any other application, because your computer can only schedule a "
+"single wakeup time.</para><para><b>Note:</b> Wake From Suspend is not "
+"supported at all on some computers, especially older ones, and some "
+"computers only support setting a wakeup time up to 24 hours ahead. You may "
+"wish to set up a test alarm to check your system's capability.</para>"
+msgstr ""
+"<para>Бұл оралуды орнатқанда, бүкіл KAlarm не басқа бадарламалар орнатқан "
+"оралулар өшіріледі, өйткені компьютердің ояну уақыты тек біреу-ақ болмақ. </"
+"para><para><b>Ескерту:</b> Кейбір компьютерлер, әсіресе ескілері, аялдаудан "
+"оралу дегенді білмейді, ал.кейбірлері бұндайды тек келесі 24 сағат "
+"аралығында орната алады. Сондықтан, қаласаңыз, жүйеңіздің мүмкіндіктерін "
+"сынап көріңіз.</para>"
 
 #~ msgid "Alarm Types"
 #~ msgstr "Ескерту түрлері"

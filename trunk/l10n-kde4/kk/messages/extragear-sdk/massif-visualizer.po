@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-22 03:43+0100\n"
+"POT-Creation-Date: 2012-08-18 04:10+0200\n"
 "PO-Revision-Date: 2012-08-14 04:50+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -158,26 +158,6 @@ msgstr "Өзгеше үлестіргішті қосу"
 msgid "allocator:"
 msgstr "Үлестіргіші:"
 
-#: massifdata/util.cpp:105
-#, kde-format
-msgid "<dt>function:</dt><dd>%1</dd>\n"
-msgstr "<dt>функция:</dt><dd>%1</dd>\n"
-
-#: massifdata/util.cpp:108
-#, kde-format
-msgid "<dt>location:</dt><dd>%1</dd>\n"
-msgstr "<dt>орналасуы:</dt><dd>%1</dd>\n"
-
-#: massifdata/util.cpp:111
-#, kde-format
-msgid "<dt>address:</dt><dd>%1</dd>\n"
-msgstr "<dt>адресі:</dt><dd>%1</dd>\n"
-
-#: massifdata/util.cpp:122
-#, kde-format
-msgid "<dt>cost:</dt><dd>%1, i.e. %2% of snapshot #%3</dd>"
-msgstr "<dt>бағасы:</dt><dd>%1,яғни №%3 суретіндегі %2%</dd>"
-
 #: massifdata/parsethread.cpp:55
 msgid "Download Failed"
 msgstr ""
@@ -210,81 +190,33 @@ msgid "Could not parse file <i>%1</i>.<br>Parse error in line %2:<br>%3"
 msgstr "<i>%1</i> файлы талдаудан өтпеді.<br>Талдау қатесі %2 жолында:<br>%3"
 
 #: massifdata/parsethread.cpp:83
+msgid "Empty Data File"
+msgstr "Дерек файлы бос"
+
+#: massifdata/parsethread.cpp:83
 #, kde-format
 msgid "Empty data file <i>%1</i>."
 msgstr "<i>%1</i> дерек файлы бос."
 
-#: massifdata/parsethread.cpp:83
-msgid "Empty Data File"
-msgstr "Дерек файлы бос"
-
-#: visualizer/datatreemodel.cpp:83
-msgid "Snapshots"
-msgstr "Түсірген суретер"
-
-#: visualizer/datatreemodel.cpp:142
+#: massifdata/util.cpp:105
 #, kde-format
-msgid "Peak snapshot: heap cost of %1"
-msgstr "Төбе суреті: %1 динамикалық жадының бағасы"
+msgid "<dt>function:</dt><dd>%1</dd>\n"
+msgstr "<dt>функция:</dt><dd>%1</dd>\n"
 
-#: visualizer/datatreemodel.cpp:144
+#: massifdata/util.cpp:108
 #, kde-format
-msgid "Snapshot #%1: heap cost of %2"
-msgstr "№%1 суреті: %2 динамикалық жадының бағасы"
+msgid "<dt>location:</dt><dd>%1</dd>\n"
+msgstr "<dt>орналасуы:</dt><dd>%1</dd>\n"
 
-#: visualizer/datatreemodel.cpp:147
-#, fuzzy, kde-format
-#| msgctxt "%1: cost, %2: snapshot number"
-#| msgid "%1: Snapshot #%2"
-msgctxt "%1: snapshot number"
-msgid "Snapshot #%1"
-msgstr "%1: #%2 суреті"
-
-#: visualizer/datatreemodel.cpp:152
+#: massifdata/util.cpp:111
 #, kde-format
-msgctxt "%1: cost, %2: snapshot number"
-msgid "%1: Snapshot #%2 (peak)"
-msgstr "%1: #%2 суреті (төбе)"
+msgid "<dt>address:</dt><dd>%1</dd>\n"
+msgstr "<dt>адресі:</dt><dd>%1</dd>\n"
 
-#: visualizer/datatreemodel.cpp:155
+#: massifdata/util.cpp:122
 #, kde-format
-msgctxt "%1: cost, %2: snapshot number"
-msgid "%1: Snapshot #%2"
-msgstr "%1: #%2 суреті"
-
-#: visualizer/datatreemodel.cpp:165
-#, kde-format
-msgctxt "%1: cost, %2: snapshot label (i.e. func name etc.)"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: visualizer/dotgraphgenerator.cpp:199
-#, kde-format
-msgid "snapshot #%1 (taken at %2%4)\\nheap cost: %3"
-msgstr "№%1 суреті (%2%4 түсірілген)\\nдинамикалық жады: %3"
-
-#: visualizer/dotgraphgenerator.cpp:304
-#, kde-format
-msgid "in one place below threshold"
-msgid_plural "in %1 places, all below threshold"
-msgstr[0] ""
-
-#: visualizer/totalcostmodel.cpp:76
-msgid "Total Memory Heap Consumption"
-msgstr "Жалпы жүмсалған динамикалық жады"
-
-#: visualizer/totalcostmodel.cpp:119
-#, kde-format
-msgid ""
-"Snapshot #%1:\n"
-"Heap cost of %2\n"
-"Extra heap cost of %3\n"
-"Stack cost of %4"
-msgstr ""
-"№%1 суреті:\n"
-"Heap cost of %2\n"
-"Extra heap cost of %3\n"
-"Stack cost of %4"
+msgid "<dt>cost:</dt><dd>%1, i.e. %2% of snapshot #%3</dd>"
+msgstr "<dt>бағасы:</dt><dd>%1,яғни №%3 суретіндегі %2%</dd>"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -449,6 +381,74 @@ msgid ""
 msgstr ""
 "C++ қалыптарды іске асырулардың идентификаторларын аргументтер алынып "
 "тасталып қысқаратынын-қысқармайтқнын ұйғаруы."
+
+#: visualizer/datatreemodel.cpp:83
+msgid "Snapshots"
+msgstr "Түсірген суретер"
+
+#: visualizer/datatreemodel.cpp:142
+#, kde-format
+msgid "Peak snapshot: heap cost of %1"
+msgstr "Төбе суреті: %1 динамикалық жадының бағасы"
+
+#: visualizer/datatreemodel.cpp:144
+#, kde-format
+msgid "Snapshot #%1: heap cost of %2"
+msgstr "№%1 суреті: %2 динамикалық жадының бағасы"
+
+#: visualizer/datatreemodel.cpp:147
+#, fuzzy, kde-format
+#| msgctxt "%1: cost, %2: snapshot number"
+#| msgid "%1: Snapshot #%2"
+msgctxt "%1: snapshot number"
+msgid "Snapshot #%1"
+msgstr "%1: #%2 суреті"
+
+#: visualizer/datatreemodel.cpp:152
+#, kde-format
+msgctxt "%1: cost, %2: snapshot number"
+msgid "%1: Snapshot #%2 (peak)"
+msgstr "%1: #%2 суреті (төбе)"
+
+#: visualizer/datatreemodel.cpp:155
+#, kde-format
+msgctxt "%1: cost, %2: snapshot number"
+msgid "%1: Snapshot #%2"
+msgstr "%1: #%2 суреті"
+
+#: visualizer/datatreemodel.cpp:165
+#, kde-format
+msgctxt "%1: cost, %2: snapshot label (i.e. func name etc.)"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: visualizer/dotgraphgenerator.cpp:199
+#, kde-format
+msgid "snapshot #%1 (taken at %2%4)\\nheap cost: %3"
+msgstr "№%1 суреті (%2%4 түсірілген)\\nдинамикалық жады: %3"
+
+#: visualizer/dotgraphgenerator.cpp:304
+#, kde-format
+msgid "in one place below threshold"
+msgid_plural "in %1 places, all below threshold"
+msgstr[0] ""
+
+#: visualizer/totalcostmodel.cpp:76
+msgid "Total Memory Heap Consumption"
+msgstr "Жалпы жүмсалған динамикалық жады"
+
+#: visualizer/totalcostmodel.cpp:119
+#, kde-format
+msgid ""
+"Snapshot #%1:\n"
+"Heap cost of %2\n"
+"Extra heap cost of %3\n"
+"Stack cost of %4"
+msgstr ""
+"№%1 суреті:\n"
+"Heap cost of %2\n"
+"Extra heap cost of %3\n"
+"Stack cost of %4"
 
 #~ msgid "Peak of %1"
 #~ msgstr "%1 төбесі"
