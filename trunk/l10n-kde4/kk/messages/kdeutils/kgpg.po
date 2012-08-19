@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:25+0200\n"
+"POT-Creation-Date: 2012-08-19 05:49+0200\n"
 "PO-Revision-Date: 2012-08-02 12:06+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -19,6 +19,56 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 "X-Poedit-Country: KAZAKHSTAN\n"
+
+#: kgpg.h:32
+msgid ""
+"Hi,\n"
+"\n"
+"please find attached the user id '%UIDNAME%' of your key %KEYID% signed by "
+"me. This mail is encrypted with that key to make sure you control both the "
+"email address and the key.\n"
+"\n"
+"If you have multiple user ids, I sent the signature for each user id "
+"separately to that user id's associated email address. You can import the "
+"signatures by running each through `gpg --import` after you have decrypted "
+"them with `gpg --decrypt`.\n"
+"\n"
+"If you are using KGpg store the attachment to disk and then import it. Just "
+"select `Import Key...` from `Keys` menu and open the file.\n"
+"\n"
+"Note that I did not upload your key to any keyservers. If you want this new "
+"signature to be available to others, please upload it yourself. With GnuPG "
+"this can be done using gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
+"\n"
+"With KGpg you can right click on the key once you imported all user ids and "
+"choose `Export Public Key...`.\n"
+"\n"
+"If you have any questions, don't hesitate to ask.\n"
+msgstr ""
+"Сәлем,\n"
+"\n"
+"осыған мен қолтаңбалаған %KEYID% кілтіңіздің '%UIDNAME%' идентификаторы "
+"тіркелген. Бұл пошта, бұл эл.пошта адресі мен кілт Сіздікі екен деп сенімді "
+"болу үшін, сол кілт көмегімен шифрланган.\n"
+"\n"
+"Егерде пайдаланушы идентификаторыңыз бірнешеу болса, онда әрбіріне, тиісті "
+"адресіне, бөлек қолтаңбалар жіберілген . Бұл қолтаңбаларды, олардан `gpg --"
+"decrypt` деп шифрын шешкен соң, `gpg --import` деп, әрбірін импорттай "
+"аласыз.\n"
+"\n"
+"Егер KGpg-ны қолдансаңыз, тіркемені дискіге сақтап, содан кейін оны "
+"импорттап алыңыз, ол үшін, 'Кілттер' мәзіріндегі 'Кілтті импорттау...' "
+"дегенге барып ол файлды ашыңыз.\n"
+"\n"
+"Назар аударыңыз, кілтіңізді ешбір кілтсерверге жүктеп берген жоқпын. "
+"Басқаларға шы болсын десеңіз - оны өзіңіз істеңіз. GnuPG-ның көмегімен оны "
+"былай істеуге болады: gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
+"\n"
+"KGpg-ның көмегімен, пайдаланушының бүкіл идентификаторларын импорттағанан "
+"соң, керек кілтті оң жақ батырмамен түртіп, шыққан мәзірінде `Ашық кілтті "
+"экспорттау..` дегенді таңдаңыз.\n"
+"\n"
+"Әлі де сұрағыңыз қалса, марқабат етіңіз.\n"
 
 #: caff.cpp:258
 msgctxt "Email template placeholder for key id"
@@ -34,426 +84,13 @@ msgstr "UIDNAME"
 msgid "your key "
 msgstr "кілтіңіз "
 
-#: core/KGpgGroupNode.cpp:164
-#, kde-format
-msgid "1 key"
-msgid_plural "%1 keys"
-msgstr[0] "%1 кілт"
-
-#: core/KGpgKeyNode.cpp:84
-#, kde-format
-msgctxt "size of signing key / size of encryption key"
-msgid "%1 / %2"
-msgstr "%1 / %2"
-
-#: core/KGpgKeyNode.cpp:164 core/KGpgSignableNode.cpp:48
-#, kde-format
-msgid "1 signature"
-msgid_plural "%1 signatures"
-msgstr[0] "%1 қолтаңба"
-
-#: core/KGpgNode.cpp:56
-#, kde-format
-msgctxt "Name of uid (comment)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:481
-msgid "[No user id found]"
-msgstr "[Пайдаланушының ID-і табылмады]"
-
-#: core/KGpgSignNode.cpp:86
-#, kde-format
-msgid "%1 [local signature]"
-msgstr "%1 [жергілікті қолтаңба]"
-
-#: core/KGpgSubkeyNode.cpp:86
-#, kde-format
-msgid "%1 subkey"
-msgstr "%1 ішкі кілт"
-
-#: core/KGpgUatNode.cpp:105
-msgid "Photo id"
-msgstr "Фото идентификаторы"
-
-#: core/convert.cpp:37
-msgctxt "Encryption algorithm"
-msgid "RSA"
-msgstr "RSA"
-
-#: core/convert.cpp:38
-msgctxt "Encryption algorithm"
-msgid "DSA"
-msgstr "DSA"
-
-#: core/convert.cpp:39
-msgctxt "Encryption algorithm"
-msgid "ElGamal"
-msgstr "ElGamal"
-
-#: core/convert.cpp:40
-msgctxt "Encryption algorithm"
-msgid "DSA & ElGamal"
-msgstr "DSA & ElGamal"
-
-#: core/convert.cpp:41
-msgctxt "Encryption algorithm RSA, Signing algorithm RSA"
-msgid "RSA & RSA"
-msgstr "RSA & RSA"
-
-#: core/convert.cpp:43
-msgctxt "Unknown algorithm"
-msgid "Unknown"
-msgstr "Беймәлім"
-
-#: core/convert.cpp:51
-msgid "Do not Know"
-msgstr "Білмеймін"
-
-#: core/convert.cpp:52
-msgid "Do NOT Trust"
-msgstr "Сенім ЖОҚ"
-
-#. i18n: file: kgpgKeyInfo.ui:193
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:53 rc.cpp:547
-msgid "Marginally"
-msgstr "Шамалы"
-
-#. i18n: file: kgpgKeyInfo.ui:198
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:54 rc.cpp:550
-msgid "Fully"
-msgstr "Толық"
-
-#. i18n: file: kgpgKeyInfo.ui:203
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:55 rc.cpp:553
-msgid "Ultimately"
-msgstr "Шексіз"
-
-#: core/convert.cpp:57
-msgctxt "Unknown trust in key owner"
-msgid "Unknown"
-msgstr "Беймәлім"
-
-#: core/convert.cpp:65
-msgctxt "Invalid key"
-msgid "Invalid"
-msgstr "Жарамсыз"
-
-#: core/convert.cpp:66
-msgctxt "Disabled key"
-msgid "Disabled"
-msgstr "Бұғатталған"
-
-#: core/convert.cpp:67
-msgid "Revoked"
-msgstr "Күші жойылған"
-
-#: core/convert.cpp:68
-msgctxt "Expired key"
-msgid "Expired"
-msgstr "Мерзімі біткен"
-
-#: core/convert.cpp:69
-msgctxt "Undefined key trust"
-msgid "Undefined"
-msgstr "Анықталмаған"
-
-#: core/convert.cpp:70
-msgctxt "No trust in key"
-msgid "None"
-msgstr "Жоқ"
-
-#: core/convert.cpp:71
-msgctxt "Marginal trust in key"
-msgid "Marginal"
-msgstr "Шамалы"
-
-#: core/convert.cpp:72
-msgctxt "Full trust in key"
-msgid "Full"
-msgstr "Толық"
-
-#: core/convert.cpp:73
-msgctxt "Ultimate trust in key"
-msgid "Ultimate"
-msgstr "Шексіз"
-
-#: core/convert.cpp:75
-msgctxt "Unknown trust in key"
-msgid "Unknown"
-msgstr "Беймәлім"
-
 #: detailedconsole.cpp:30
 msgid "Info"
 msgstr "Ақпар"
 
-#: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:240
-#: editor/kgpgeditor.cpp:747 editor/kgpgeditor.cpp:776
-msgid "Untitled"
-msgstr "Аталмаған"
-
-#: editor/kgpgeditor.cpp:186
-msgid "&Encrypt File..."
-msgstr "Файлды ши&фрлау..."
-
-#: editor/kgpgeditor.cpp:190
-msgid "&Decrypt File..."
-msgstr "Файлдың шифрын &шешу..."
-
-#: editor/kgpgeditor.cpp:194
-msgid "&Open Key Manager"
-msgstr "Кілттер менеджерін &ашу"
-
-#: editor/kgpgeditor.cpp:197
-msgid "&Generate Signature..."
-msgstr "Қолтаңбаны құ&ру..."
-
-#: editor/kgpgeditor.cpp:201
-msgid "&Verify Signature..."
-msgstr "&Қолтаңбаны тексеру..."
-
-#: editor/kgpgeditor.cpp:204
-msgid "&Check MD5 Sum..."
-msgstr "&MD5 қосындысын тексеру..."
-
-#: editor/kgpgeditor.cpp:207
-msgid "&Unicode (utf-8) Encoding"
-msgstr "&Юникод (utf-8)"
-
-#: editor/kgpgeditor.cpp:213
-msgid "En&crypt"
-msgstr "Ши&фрлау"
-
-#: editor/kgpgeditor.cpp:217
-msgid "&Decrypt"
-msgstr "Шифрды ш&ешу"
-
-#: editor/kgpgeditor.cpp:221
-msgid "S&ign/Verify"
-msgstr "Қ&олтаңбалау/Тексеру"
-
-#: editor/kgpgeditor.cpp:244
-#, kde-format
-msgid ""
-"The document \"%1\" has changed.\n"
-"Do you want to save it?"
-msgstr ""
-"\"%1\" құжаты өзгертілген.\n"
-"Сақтайсыз ба?"
-
-#: editor/kgpgeditor.cpp:245
-msgid "Close the document"
-msgstr "Құжатты жабу"
-
-#: editor/kgpgeditor.cpp:291
-msgid ""
-"The document could not been saved, as the selected codec is not supported."
-msgstr "Құжат сақталмайды, өйткені танымайтын кодек тандалған."
-
-#: editor/kgpgeditor.cpp:297
-msgid ""
-"The document could not been saved, as the selected encoding cannot encode "
-"every unicode character in it."
-msgstr ""
-"Құжат сақталмады, өйткені таңдалған кодтамада қолданған таңбалар түгел емес."
-
-#: editor/kgpgeditor.cpp:306 editor/kgpgeditor.cpp:325
-msgid ""
-"The document could not be saved, please check your permissions and disk "
-"space."
-msgstr ""
-"Құжат сақталмады, жазу құқықтарыңыз және дискіде орын бар екенін тексеріңіз."
-
-#: editor/kgpgeditor.cpp:351 editor/kgpgeditor.cpp:358 keyexport.cpp:41
-#, kde-format
-msgid "Overwrite existing file %1?"
-msgstr "%1 деген файлдың үстінен жазбақсыз ба?"
-
-#: editor/kgpgeditor.cpp:469 editor/kgpgeditor.cpp:477
-#: editor/kgpgeditor.cpp:612 editor/kgpgeditor.cpp:650
-#: editor/kgpgeditor.cpp:688
-msgid "*|All Files"
-msgstr "*|Барлық файлдар"
-
-#: editor/kgpgeditor.cpp:469
-msgid "Open File to Encode"
-msgstr "Файлды кодтау үшін ашу"
-
-#: editor/kgpgeditor.cpp:477
-msgid "Open File to Decode"
-msgstr "Файлды кодтауын шешу үшін ашу"
-
-#: editor/kgpgeditor.cpp:491
-msgid "Decrypt File To"
-msgstr "Кодтауын мынаған шешу"
-
-#: editor/kgpgeditor.cpp:500 keyexport.cpp:28
-msgid "Save File"
-msgstr "Файлды сақтау"
-
-#. i18n: file: conf_misc.ui:245
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
-#. i18n: file: conf_misc.ui:272
-#. i18n: ectx: attribute (title), widget (QWidget, tabEditor)
-#: editor/kgpgeditor.cpp:502 rc.cpp:202 rc.cpp:205
-msgid "Editor"
-msgstr "Редакторы"
-
-#: editor/kgpgeditor.cpp:521 kgpgexternalactions.cpp:206
-#: kgpgexternalactions.cpp:361 transactions/kgpgencrypt.cpp:123
-msgid "File Already Exists"
-msgstr "Бұндай файл бар екен"
-
-#: editor/kgpgeditor.cpp:612
-msgid "Open File to Sign"
-msgstr "Файлды қолтаңбалау үшін ашу"
-
-#: editor/kgpgeditor.cpp:650 editor/kgpgeditor.cpp:688
-msgid "Open File to Verify"
-msgstr "Файлды тексеру үшін ашу"
-
-#: editor/kgpgeditor.cpp:701 editor/kgpgtextedit.cpp:333
-#, kde-format
-msgid ""
-"<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
-"import this key from a keyserver?</qt>"
-msgstr ""
-"<qt><b>Қолтаңбасы жоқ:</b><br />Кілттің индентификаторы: %1<br /> <br />Бұл "
-"кілт кілт серверінен импортталсын ба?</qt>"
-
-#: editor/kgpgeditor.cpp:702 keytreeview.cpp:168
-msgid "Do Not Import"
-msgstr "Керегі жоқ"
-
-#. i18n: file: keyserver.ui:32
-#. i18n: ectx: attribute (title), widget (QWidget, tab_import)
-#: editor/kgpgeditor.cpp:702 keytreeview.cpp:167 rc.cpp:450
-msgid "Import"
-msgstr "Импорттау"
-
-#: editor/kgpgeditor.cpp:728 transactions/kgpgverify.cpp:149
-msgid "No signature found."
-msgstr "Қолтаңбасы табылмады."
-
-#: editor/kgpgeditor.cpp:733 editor/kgpgtextedit.cpp:320
-#: kgpgexternalactions.cpp:283
-msgctxt "Caption of message box"
-msgid "Verification Finished"
-msgstr "Тексеру аяқталды"
-
-#: editor/kgpgmd5widget.cpp:28
-msgid "MD5 Checksum"
-msgstr "MD5 бақылау қосындысы"
-
-#: editor/kgpgmd5widget.cpp:31
-msgid "Compare MD5 with Clipboard"
-msgstr "MD5-ті алмасу буферіндегімен салыстыру"
-
-#: editor/kgpgmd5widget.cpp:46
-#, kde-format
-msgid "MD5 sum for <b>%1</b> is:"
-msgstr "<b>%1</b> дегеннің MD5 қосындысы:"
-
-#: editor/kgpgmd5widget.cpp:59
-msgid "<b>Unknown status</b>"
-msgstr "<b>Беймәлім күй-жай</b>"
-
-#: editor/kgpgmd5widget.cpp:84
-msgid "Clipboard content is not a MD5 sum."
-msgstr "Алмасу буферіндегісі MD5 қосындысы емес."
-
-#: editor/kgpgmd5widget.cpp:88
-msgid "<b>Correct checksum</b>, file is ok."
-msgstr "<b>Бақылау қосындысы дұрыс</b>, файл шын."
-
-#: editor/kgpgmd5widget.cpp:94
-msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
-msgstr "<b>Бақылау қосындысы келіспейді, <em>файл бұзылған</em></b>"
-
-#: editor/kgpgtextedit.cpp:90
-msgid ""
-"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
-"temporary file to process requested operation. This temporary file will be "
-"deleted after operation.</qt>"
-msgstr ""
-"<qt><b>Қашықтағы файл түсті</b>.<br />Талап етілген амалды орындау үшін "
-"қашықтағы файл уақытша жергілікті файлға көшіріледі. Амал біткен соң бұл "
-"уақытша файл өшіріледі.</qt>"
-
-#: editor/kgpgtextedit.cpp:94
-msgid "Could not download file."
-msgstr "Файл жүктеп алынбады."
-
-#: editor/kgpgtextedit.cpp:127
-msgid ""
-"<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
-"of opening it in editor?</qt>"
-msgstr ""
-"<p>Бұл файл <b>ашық</b> кілт файлы.<br />Бұны редакторда ашудын орнына "
-"импорттайсыз ба?</p>"
-
-#: editor/kgpgtextedit.cpp:130
-msgid ""
-"<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
-"of opening it in editor?</qt>"
-msgstr ""
-"<p>Бұл файл <b>сырлы</b> кілт файлы.<br />Бұны редакторда ашудын орнына "
-"импорттайсыз ба?</p>"
-
-#: editor/kgpgtextedit.cpp:135
-msgid "Key file dropped on Editor"
-msgstr "Редакторға кілт файлы түсті"
-
-#: editor/kgpgtextedit.cpp:257 kgpgexternalactions.cpp:397
-msgid "Decryption failed."
-msgstr "Шифрды шешу жаңылысы."
-
-#: editor/kgpgtextedit.cpp:272 foldercompressjob.cpp:139
-#, kde-format
-msgid "The encryption failed with error code %1"
-msgstr "Шифрлау жаңылды, қатесінің коды: %1"
-
-#: editor/kgpgtextedit.cpp:273 foldercompressjob.cpp:140
-msgid "Encryption failed."
-msgstr "Шифрлау жаңылысы."
-
-#: editor/kgpgtextedit.cpp:286
-msgid "Signing not possible: bad passphrase or missing key"
-msgstr "Қолтаңбалау мүмкін емес: жарамсыз паролі немесе кілті жоқ"
-
-#. i18n: file: keyserver.ui:144
-#. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: editor/kgpgtextedit.cpp:326 keyservers.cpp:211 rc.cpp:476
-msgid "&Import"
-msgstr "&Импорттау"
-
-#: editor/kgpgtextedit.cpp:327
-msgid "Import key in your list"
-msgstr "Кілтті тізіміңізге импорттау"
-
-#: editor/kgpgtextedit.cpp:330
-msgid "Do &Not Import"
-msgstr "Имортта&мау"
-
-#: editor/kgpgtextedit.cpp:331
-msgid "Will not import this key in your list"
-msgstr "Бұл кілт тізіміңізге импорт етілмейді"
-
-#: editor/kgpgtextedit.cpp:333
-msgid "Missing Key"
-msgstr "Кілті жоқ"
-
 #: foldercompressjob.cpp:44
 msgid "Processing folder compression and encryption"
 msgstr "Қапшықты сығу және шифрлау барысы"
-
-#: foldercompressjob.cpp:71 transactions/kgpgtransactionjob.cpp:39
-msgctxt "Job is started up"
-msgid "Startup"
-msgstr "Айдау"
 
 #: foldercompressjob.cpp:71 foldercompressjob.cpp:121
 #: foldercompressjob.cpp:140 foldercompressjob.cpp:142
@@ -461,6 +98,11 @@ msgstr "Айдау"
 msgctxt "State of operation as in status"
 msgid "State"
 msgstr "Күйі"
+
+#: foldercompressjob.cpp:71 transactions/kgpgtransactionjob.cpp:39
+msgctxt "Job is started up"
+msgid "Startup"
+msgstr "Айдау"
 
 #: foldercompressjob.cpp:103
 msgid "Unable to create temporary file"
@@ -471,6 +113,15 @@ msgstr "Уақытша файл құрылмады"
 msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "%1 дегенді шифрлау"
+
+#: foldercompressjob.cpp:139 editor/kgpgtextedit.cpp:272
+#, kde-format
+msgid "The encryption failed with error code %1"
+msgstr "Шифрлау жаңылды, қатесінің коды: %1"
+
+#: foldercompressjob.cpp:140 editor/kgpgtextedit.cpp:273
+msgid "Encryption failed."
+msgstr "Шифрлау жаңылысы."
 
 #: foldercompressjob.cpp:143 transactions/kgpgencrypt.cpp:118
 #, kde-format
@@ -509,6 +160,15 @@ msgstr "Бар сенімді кілттер"
 #: keyexport.cpp:25
 msgid "Public Key Export"
 msgstr "Ашық кілтті экспорттау"
+
+#: keyexport.cpp:28 editor/kgpgeditor.cpp:500
+msgid "Save File"
+msgstr "Файлды сақтау"
+
+#: keyexport.cpp:41 editor/kgpgeditor.cpp:351 editor/kgpgeditor.cpp:358
+#, kde-format
+msgid "Overwrite existing file %1?"
+msgstr "%1 деген файлдың үстінен жазбақсыз ба?"
 
 #: keyinfodialog.cpp:166
 msgid ""
@@ -613,6 +273,12 @@ msgstr "Кілт серверге жүктеп беру жаңылысы"
 msgid "Import Key From Keyserver"
 msgid_plural "Import Keys From Keyserver"
 msgstr[0] "Кілтті кілт серверінен импорттау"
+
+#. i18n: file: keyserver.ui:144
+#. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
+#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:326
+msgid "&Import"
+msgstr "&Импорттау"
 
 #: keyservers.cpp:216
 msgid "Connecting to the server..."
@@ -891,10 +557,6 @@ msgstr "gpg процесі аяқталған жоқ. Жаңа сыңар кіл
 msgid "You can only refresh primary keys. Please check your selection."
 msgstr "Тек негізгі кілттерді жаңарта аласыз. Таңдауыңызды тексеріңіз."
 
-#: keysmanager.cpp:848 keysmanager.cpp:853
-msgid "Add New User Id"
-msgstr "Жаңа пайдаланушының ID-ін қосу"
-
 #: keysmanager.cpp:848
 msgid ""
 "Another operation is still in progress.\n"
@@ -902,6 +564,10 @@ msgid ""
 msgstr ""
 "Басқа амал әлі біткен жоқ.\n"
 "Біткенше сәл күте тұрыңыз."
+
+#: keysmanager.cpp:848 keysmanager.cpp:853
+msgid "Add New User Id"
+msgstr "Жаңа пайдаланушының ID-ін қосу"
 
 #: keysmanager.cpp:888
 msgid ""
@@ -1086,12 +752,12 @@ msgstr ""
 "p><p>Ашық кілтін қайта құруды қалайсыз ба?</p>"
 
 #: keysmanager.cpp:1591
-msgid "Do Not Generate"
-msgstr "Керегі жоқ"
-
-#: keysmanager.cpp:1591
 msgid "Generate"
 msgstr "Құру"
+
+#: keysmanager.cpp:1591
+msgid "Do Not Generate"
+msgstr "Керегі жоқ"
 
 #: keysmanager.cpp:1621
 #, kde-format
@@ -1423,15 +1089,25 @@ msgid "<p>Do you want to import file <b>%1</b> into your key ring?</p>"
 msgstr ""
 "<p><b>%1</b> деген файлды кілттер қорыңызға импорттауды қалайсыз ба?</p>"
 
-#: kgpg.cpp:78
-msgid "GnuPG error"
-msgstr "GnuPG қатесі"
+#. i18n: file: keyserver.ui:32
+#. i18n: ectx: attribute (title), widget (QWidget, tab_import)
+#: keytreeview.cpp:167 rc.cpp:450 editor/kgpgeditor.cpp:702
+msgid "Import"
+msgstr "Импорттау"
+
+#: keytreeview.cpp:168 editor/kgpgeditor.cpp:702
+msgid "Do Not Import"
+msgstr "Керегі жоқ"
 
 #: kgpg.cpp:78
 msgid ""
 "GnuPG failed to start.<br />You must fix the GnuPG error first before "
 "running KGpg."
 msgstr "GnuPG бастай алмады.<br />GnuPG жегудің алдында бұл қатесін жөндеңіз."
+
+#: kgpg.cpp:78
+msgid "GnuPG error"
+msgstr "GnuPG қатесі"
 
 #: kgpg.cpp:95
 #, kde-format
@@ -1468,56 +1144,6 @@ msgstr ""
 "Жалғыз қапшықты не бірнеше файлдарды таңдаңыз, бірақ оларды араластыруға "
 "болмайды."
 
-#: kgpg.h:32
-msgid ""
-"Hi,\n"
-"\n"
-"please find attached the user id '%UIDNAME%' of your key %KEYID% signed by "
-"me. This mail is encrypted with that key to make sure you control both the "
-"email address and the key.\n"
-"\n"
-"If you have multiple user ids, I sent the signature for each user id "
-"separately to that user id's associated email address. You can import the "
-"signatures by running each through `gpg --import` after you have decrypted "
-"them with `gpg --decrypt`.\n"
-"\n"
-"If you are using KGpg store the attachment to disk and then import it. Just "
-"select `Import Key...` from `Keys` menu and open the file.\n"
-"\n"
-"Note that I did not upload your key to any keyservers. If you want this new "
-"signature to be available to others, please upload it yourself. With GnuPG "
-"this can be done using gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
-"\n"
-"With KGpg you can right click on the key once you imported all user ids and "
-"choose `Export Public Key...`.\n"
-"\n"
-"If you have any questions, don't hesitate to ask.\n"
-msgstr ""
-"Сәлем,\n"
-"\n"
-"осыған мен қолтаңбалаған %KEYID% кілтіңіздің '%UIDNAME%' идентификаторы "
-"тіркелген. Бұл пошта, бұл эл.пошта адресі мен кілт Сіздікі екен деп сенімді "
-"болу үшін, сол кілт көмегімен шифрланган.\n"
-"\n"
-"Егерде пайдаланушы идентификаторыңыз бірнешеу болса, онда әрбіріне, тиісті "
-"адресіне, бөлек қолтаңбалар жіберілген . Бұл қолтаңбаларды, олардан `gpg --"
-"decrypt` деп шифрын шешкен соң, `gpg --import` деп, әрбірін импорттай "
-"аласыз.\n"
-"\n"
-"Егер KGpg-ны қолдансаңыз, тіркемені дискіге сақтап, содан кейін оны "
-"импорттап алыңыз, ол үшін, 'Кілттер' мәзіріндегі 'Кілтті импорттау...' "
-"дегенге барып ол файлды ашыңыз.\n"
-"\n"
-"Назар аударыңыз, кілтіңізді ешбір кілтсерверге жүктеп берген жоқпын. "
-"Басқаларға шы болсын десеңіз - оны өзіңіз істеңіз. GnuPG-ның көмегімен оны "
-"былай істеуге болады: gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
-"\n"
-"KGpg-ның көмегімен, пайдаланушының бүкіл идентификаторларын импорттағанан "
-"соң, керек кілтті оң жақ батырмамен түртіп, шыққан мәзірінде `Ашық кілтті "
-"экспорттау..` дегенді таңдаңыз.\n"
-"\n"
-"Әлі де сұрағыңыз қалса, марқабат етіңіз.\n"
-
 #: kgpgexternalactions.cpp:126
 msgid "Cannot create temporary file for folder compression."
 msgstr "Қапшықты сығу үшін керек уақытша файл құрылмады."
@@ -1540,10 +1166,25 @@ msgstr ""
 msgid "Compression method for archive:"
 msgstr "Архивті сығу әдісі:"
 
+#: kgpgexternalactions.cpp:206 kgpgexternalactions.cpp:361
+#: editor/kgpgeditor.cpp:521 transactions/kgpgencrypt.cpp:123
+msgid "File Already Exists"
+msgstr "Бұндай файл бар екен"
+
+#: kgpgexternalactions.cpp:283 editor/kgpgeditor.cpp:733
+#: editor/kgpgtextedit.cpp:320
+msgctxt "Caption of message box"
+msgid "Verification Finished"
+msgstr "Тексеру аяқталды"
+
 #: kgpgexternalactions.cpp:395
 msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "Файл(дар) шифрын шешу жаңылысы."
+
+#: kgpgexternalactions.cpp:397 editor/kgpgtextedit.cpp:257
+msgid "Decryption failed."
+msgstr "Шифрды шешу жаңылысы."
 
 #: kgpgexternalactions.cpp:422
 msgid ""
@@ -1556,12 +1197,12 @@ msgstr ""
 "бұл мәселені жөндеуді қалайсыз ба?</qt>"
 
 #: kgpgexternalactions.cpp:423
-msgid "Do Not Start"
-msgstr "Керегі жоқ"
-
-#: kgpgexternalactions.cpp:423
 msgid "Start Assistant"
 msgstr "Көмекшіге жүгіну"
+
+#: kgpgexternalactions.cpp:423
+msgid "Do Not Start"
+msgstr "Керегі жоқ"
 
 #: kgpgfirstassistant.cpp:44
 msgid "KGpg Assistant"
@@ -1928,32 +1569,32 @@ msgstr ""
 "Сізге ұнайды деп үміттенеміз."
 
 #: main.cpp:30
-msgid "(C) 2003 Jean-Baptiste Mardelle"
-msgstr "(C) 2003 Jean-Baptiste Mardelle"
-
-#: main.cpp:30
 msgid "KGpg"
 msgstr "KGpg"
 
-#: main.cpp:31
-msgid "Author and former maintainer"
-msgstr "Авторы және бұрынғы жетулдірушісі"
+#: main.cpp:30
+msgid "(C) 2003 Jean-Baptiste Mardelle"
+msgstr "(C) 2003 Jean-Baptiste Mardelle"
 
 #: main.cpp:31
 msgid "Jean-Baptiste Mardelle"
 msgstr "Jean-Baptiste Mardelle"
+
+#: main.cpp:31
+msgid "Author and former maintainer"
+msgstr "Авторы және бұрынғы жетулдірушісі"
 
 #: main.cpp:32
 msgid "Jimmy Gilles"
 msgstr "Jimmy Gilles"
 
 #: main.cpp:33
-msgid "Maintainer"
-msgstr "Жетулдірушісі"
-
-#: main.cpp:33
 msgid "Rolf Eike Beer"
 msgstr "Rolf Eike Beer"
+
+#: main.cpp:33
+msgid "Maintainer"
+msgstr "Жетулдірушісі"
 
 #: main.cpp:38
 msgid "Encrypt file"
@@ -1978,83 +1619,6 @@ msgstr "Қолданбаны тексеру"
 #: main.cpp:44
 msgid "File to open"
 msgstr "Ашатын файл"
-
-#: model/keylistproxymodel.cpp:96 transactions/kgpgimport.cpp:193
-#, kde-format
-msgctxt "ID: Name"
-msgid "%1: %2"
-msgstr "%1: %2"
-
-#: model/keylistproxymodel.cpp:98 transactions/kgpgimport.cpp:195
-#, kde-format
-msgctxt "ID: Name <Email>"
-msgid "%1: %2 &lt;%3&gt;"
-msgstr "%1: %2 &lt;%3&gt;"
-
-#: model/keylistproxymodel.cpp:103
-#, kde-format
-msgctxt "Name <Email>: ID"
-msgid "%1 &lt;%2&gt;: %3"
-msgstr "%1 &lt;%2&gt;: %3"
-
-#: model/kgpgitemmodel.cpp:228 model/kgpgitemmodel.cpp:231
-#, kde-format
-msgid "1 Key"
-msgid_plural "%1 Keys"
-msgstr[0] "%1 кілт"
-
-#: model/kgpgitemmodel.cpp:232
-#, kde-format
-msgid "1 Group"
-msgid_plural "%1 Groups"
-msgstr[0] "%1 топ"
-
-#: model/kgpgitemmodel.cpp:234
-#, kde-format
-msgctxt "%1 = something like 7 keys, %2 = something like 2 groups"
-msgid "%1, %2"
-msgstr "%1, %2"
-
-#. i18n: file: groupedit.ui:74
-#. i18n: ectx: property (text), widget (QTableView, availableKeys)
-#. i18n: file: groupedit.ui:158
-#. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: model/kgpgitemmodel.cpp:329 model/kgpgsearchresultmodel.cpp:332 rc.cpp:429
-#: rc.cpp:441
-msgid "Name"
-msgstr "Атауы"
-
-#. i18n: file: groupedit.ui:79
-#. i18n: ectx: property (text), widget (QTableView, availableKeys)
-#. i18n: file: groupedit.ui:163
-#. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: model/kgpgitemmodel.cpp:330 model/kgpgsearchresultmodel.cpp:334 rc.cpp:432
-#: rc.cpp:444
-msgctxt "@title:column Title of a column of emails"
-msgid "Email"
-msgstr "Эл.поштасы"
-
-#: model/kgpgitemmodel.cpp:335
-msgid "ID"
-msgstr "ID"
-
-#: model/kgpgsearchresultmodel.cpp:124
-#, kde-format
-msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
-msgid "ID %1, %2-bit %3 key, created %4, revoked"
-msgstr "ID: %1, %2-битті %3 кілті, құрылған кезі: %4, күші жойылған"
-
-#: model/kgpgsearchresultmodel.cpp:129
-#, kde-format
-msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
-msgid "ID %1, %2-bit %3 key, created %4"
-msgstr "ID: %1, %2-битті %3 кілті, құрылған кезі: %4"
-
-#: model/kgpgsearchresultmodel.cpp:218
-#, kde-format
-msgid "One Photo ID"
-msgid_plural "%1 Photo IDs"
-msgstr[0] "%1 фото ID-і"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2554,6 +2118,14 @@ msgstr "Сол жақ батырмамен түртіп ашатыны:"
 msgid "Key Manager"
 msgstr "Кілт менеджері"
 
+#. i18n: file: conf_misc.ui:245
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
+#. i18n: file: conf_misc.ui:272
+#. i18n: ectx: attribute (title), widget (QWidget, tabEditor)
+#: rc.cpp:202 rc.cpp:205 editor/kgpgeditor.cpp:502
+msgid "Editor"
+msgstr "Редакторы"
+
 #. i18n: file: conf_misc.ui:280
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:208
@@ -3001,6 +2573,25 @@ msgstr ""
 "\"Пайдаланушының ID-ін қолтаңбалап жіберу\" амалымен жіберілетін эл.пошта "
 "мәтіні."
 
+#. i18n: file: groupedit.ui:74
+#. i18n: ectx: property (text), widget (QTableView, availableKeys)
+#. i18n: file: groupedit.ui:158
+#. i18n: ectx: property (text), widget (QTableView, groupKeys)
+#: rc.cpp:429 rc.cpp:441 model/kgpgitemmodel.cpp:329
+#: model/kgpgsearchresultmodel.cpp:332
+msgid "Name"
+msgstr "Атауы"
+
+#. i18n: file: groupedit.ui:79
+#. i18n: ectx: property (text), widget (QTableView, availableKeys)
+#. i18n: file: groupedit.ui:163
+#. i18n: ectx: property (text), widget (QTableView, groupKeys)
+#: rc.cpp:432 rc.cpp:444 model/kgpgitemmodel.cpp:330
+#: model/kgpgsearchresultmodel.cpp:334
+msgctxt "@title:column Title of a column of emails"
+msgid "Email"
+msgstr "Эл.поштасы"
+
 #. i18n: file: groupedit.ui:84
 #. i18n: ectx: property (text), widget (QTableView, availableKeys)
 #. i18n: file: groupedit.ui:168
@@ -3215,6 +2806,24 @@ msgstr "Білмеймін"
 #: rc.cpp:544
 msgid "I do NOT trust"
 msgstr "Сенім ЖОҚ"
+
+#. i18n: file: kgpgKeyInfo.ui:193
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: rc.cpp:547 core/convert.cpp:53
+msgid "Marginally"
+msgstr "Шамалы"
+
+#. i18n: file: kgpgKeyInfo.ui:198
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: rc.cpp:550 core/convert.cpp:54
+msgid "Fully"
+msgstr "Толық"
+
+#. i18n: file: kgpgKeyInfo.ui:203
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: rc.cpp:553 core/convert.cpp:55
+msgid "Ultimately"
+msgstr "Шексіз"
 
 #. i18n: file: kgpgKeyInfo.ui:211
 #. i18n: ectx: property (text), widget (QLabel, tl_algorithm)
@@ -3762,9 +3371,396 @@ msgstr ""
 "<p>Тышқан кілттер менеджерінің өлшем бағанына меңзегенде қолтаңбалардың саны "
 "ишара ретінде көрсетіледі. Бұл істеу үшін кілт бір рет тарқатылу керек.</p>\n"
 
-#: transactions/kgpgaddphoto.cpp:41
-msgid "Do Not Use"
-msgstr "Керегі жоқ"
+#: core/convert.cpp:37
+msgctxt "Encryption algorithm"
+msgid "RSA"
+msgstr "RSA"
+
+#: core/convert.cpp:38
+msgctxt "Encryption algorithm"
+msgid "DSA"
+msgstr "DSA"
+
+#: core/convert.cpp:39
+msgctxt "Encryption algorithm"
+msgid "ElGamal"
+msgstr "ElGamal"
+
+#: core/convert.cpp:40
+msgctxt "Encryption algorithm"
+msgid "DSA & ElGamal"
+msgstr "DSA & ElGamal"
+
+#: core/convert.cpp:41
+msgctxt "Encryption algorithm RSA, Signing algorithm RSA"
+msgid "RSA & RSA"
+msgstr "RSA & RSA"
+
+#: core/convert.cpp:43
+msgctxt "Unknown algorithm"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: core/convert.cpp:51
+msgid "Do not Know"
+msgstr "Білмеймін"
+
+#: core/convert.cpp:52
+msgid "Do NOT Trust"
+msgstr "Сенім ЖОҚ"
+
+#: core/convert.cpp:57
+msgctxt "Unknown trust in key owner"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: core/convert.cpp:65
+msgctxt "Invalid key"
+msgid "Invalid"
+msgstr "Жарамсыз"
+
+#: core/convert.cpp:66
+msgctxt "Disabled key"
+msgid "Disabled"
+msgstr "Бұғатталған"
+
+#: core/convert.cpp:67
+msgid "Revoked"
+msgstr "Күші жойылған"
+
+#: core/convert.cpp:68
+msgctxt "Expired key"
+msgid "Expired"
+msgstr "Мерзімі біткен"
+
+#: core/convert.cpp:69
+msgctxt "Undefined key trust"
+msgid "Undefined"
+msgstr "Анықталмаған"
+
+#: core/convert.cpp:70
+msgctxt "No trust in key"
+msgid "None"
+msgstr "Жоқ"
+
+#: core/convert.cpp:71
+msgctxt "Marginal trust in key"
+msgid "Marginal"
+msgstr "Шамалы"
+
+#: core/convert.cpp:72
+msgctxt "Full trust in key"
+msgid "Full"
+msgstr "Толық"
+
+#: core/convert.cpp:73
+msgctxt "Ultimate trust in key"
+msgid "Ultimate"
+msgstr "Шексіз"
+
+#: core/convert.cpp:75
+msgctxt "Unknown trust in key"
+msgid "Unknown"
+msgstr "Беймәлім"
+
+#: core/KGpgGroupNode.cpp:164
+#, kde-format
+msgid "1 key"
+msgid_plural "%1 keys"
+msgstr[0] "%1 кілт"
+
+#: core/KGpgKeyNode.cpp:84
+#, kde-format
+msgctxt "size of signing key / size of encryption key"
+msgid "%1 / %2"
+msgstr "%1 / %2"
+
+#: core/KGpgKeyNode.cpp:164 core/KGpgSignableNode.cpp:48
+#, kde-format
+msgid "1 signature"
+msgid_plural "%1 signatures"
+msgstr[0] "%1 қолтаңба"
+
+#: core/KGpgNode.cpp:56
+#, kde-format
+msgctxt "Name of uid (comment)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:481
+msgid "[No user id found]"
+msgstr "[Пайдаланушының ID-і табылмады]"
+
+#: core/KGpgSignNode.cpp:86
+#, kde-format
+msgid "%1 [local signature]"
+msgstr "%1 [жергілікті қолтаңба]"
+
+#: core/KGpgSubkeyNode.cpp:86
+#, kde-format
+msgid "%1 subkey"
+msgstr "%1 ішкі кілт"
+
+#: core/KGpgUatNode.cpp:105
+msgid "Photo id"
+msgstr "Фото идентификаторы"
+
+#: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:240
+#: editor/kgpgeditor.cpp:747 editor/kgpgeditor.cpp:776
+msgid "Untitled"
+msgstr "Аталмаған"
+
+#: editor/kgpgeditor.cpp:186
+msgid "&Encrypt File..."
+msgstr "Файлды ши&фрлау..."
+
+#: editor/kgpgeditor.cpp:190
+msgid "&Decrypt File..."
+msgstr "Файлдың шифрын &шешу..."
+
+#: editor/kgpgeditor.cpp:194
+msgid "&Open Key Manager"
+msgstr "Кілттер менеджерін &ашу"
+
+#: editor/kgpgeditor.cpp:197
+msgid "&Generate Signature..."
+msgstr "Қолтаңбаны құ&ру..."
+
+#: editor/kgpgeditor.cpp:201
+msgid "&Verify Signature..."
+msgstr "&Қолтаңбаны тексеру..."
+
+#: editor/kgpgeditor.cpp:204
+msgid "&Check MD5 Sum..."
+msgstr "&MD5 қосындысын тексеру..."
+
+#: editor/kgpgeditor.cpp:207
+msgid "&Unicode (utf-8) Encoding"
+msgstr "&Юникод (utf-8)"
+
+#: editor/kgpgeditor.cpp:213
+msgid "En&crypt"
+msgstr "Ши&фрлау"
+
+#: editor/kgpgeditor.cpp:217
+msgid "&Decrypt"
+msgstr "Шифрды ш&ешу"
+
+#: editor/kgpgeditor.cpp:221
+msgid "S&ign/Verify"
+msgstr "Қ&олтаңбалау/Тексеру"
+
+#: editor/kgpgeditor.cpp:244
+#, kde-format
+msgid ""
+"The document \"%1\" has changed.\n"
+"Do you want to save it?"
+msgstr ""
+"\"%1\" құжаты өзгертілген.\n"
+"Сақтайсыз ба?"
+
+#: editor/kgpgeditor.cpp:245
+msgid "Close the document"
+msgstr "Құжатты жабу"
+
+#: editor/kgpgeditor.cpp:291
+msgid ""
+"The document could not been saved, as the selected codec is not supported."
+msgstr "Құжат сақталмайды, өйткені танымайтын кодек тандалған."
+
+#: editor/kgpgeditor.cpp:297
+msgid ""
+"The document could not been saved, as the selected encoding cannot encode "
+"every unicode character in it."
+msgstr ""
+"Құжат сақталмады, өйткені таңдалған кодтамада қолданған таңбалар түгел емес."
+
+#: editor/kgpgeditor.cpp:306 editor/kgpgeditor.cpp:325
+msgid ""
+"The document could not be saved, please check your permissions and disk "
+"space."
+msgstr ""
+"Құжат сақталмады, жазу құқықтарыңыз және дискіде орын бар екенін тексеріңіз."
+
+#: editor/kgpgeditor.cpp:469 editor/kgpgeditor.cpp:477
+#: editor/kgpgeditor.cpp:612 editor/kgpgeditor.cpp:650
+#: editor/kgpgeditor.cpp:688
+msgid "*|All Files"
+msgstr "*|Барлық файлдар"
+
+#: editor/kgpgeditor.cpp:469
+msgid "Open File to Encode"
+msgstr "Файлды кодтау үшін ашу"
+
+#: editor/kgpgeditor.cpp:477
+msgid "Open File to Decode"
+msgstr "Файлды кодтауын шешу үшін ашу"
+
+#: editor/kgpgeditor.cpp:491
+msgid "Decrypt File To"
+msgstr "Кодтауын мынаған шешу"
+
+#: editor/kgpgeditor.cpp:612
+msgid "Open File to Sign"
+msgstr "Файлды қолтаңбалау үшін ашу"
+
+#: editor/kgpgeditor.cpp:650 editor/kgpgeditor.cpp:688
+msgid "Open File to Verify"
+msgstr "Файлды тексеру үшін ашу"
+
+#: editor/kgpgeditor.cpp:701 editor/kgpgtextedit.cpp:333
+#, kde-format
+msgid ""
+"<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
+"import this key from a keyserver?</qt>"
+msgstr ""
+"<qt><b>Қолтаңбасы жоқ:</b><br />Кілттің индентификаторы: %1<br /> <br />Бұл "
+"кілт кілт серверінен импортталсын ба?</qt>"
+
+#: editor/kgpgeditor.cpp:728 transactions/kgpgverify.cpp:149
+msgid "No signature found."
+msgstr "Қолтаңбасы табылмады."
+
+#: editor/kgpgmd5widget.cpp:28
+msgid "MD5 Checksum"
+msgstr "MD5 бақылау қосындысы"
+
+#: editor/kgpgmd5widget.cpp:31
+msgid "Compare MD5 with Clipboard"
+msgstr "MD5-ті алмасу буферіндегімен салыстыру"
+
+#: editor/kgpgmd5widget.cpp:46
+#, kde-format
+msgid "MD5 sum for <b>%1</b> is:"
+msgstr "<b>%1</b> дегеннің MD5 қосындысы:"
+
+#: editor/kgpgmd5widget.cpp:59
+msgid "<b>Unknown status</b>"
+msgstr "<b>Беймәлім күй-жай</b>"
+
+#: editor/kgpgmd5widget.cpp:84
+msgid "Clipboard content is not a MD5 sum."
+msgstr "Алмасу буферіндегісі MD5 қосындысы емес."
+
+#: editor/kgpgmd5widget.cpp:88
+msgid "<b>Correct checksum</b>, file is ok."
+msgstr "<b>Бақылау қосындысы дұрыс</b>, файл шын."
+
+#: editor/kgpgmd5widget.cpp:94
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr "<b>Бақылау қосындысы келіспейді, <em>файл бұзылған</em></b>"
+
+#: editor/kgpgtextedit.cpp:90
+msgid ""
+"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
+"temporary file to process requested operation. This temporary file will be "
+"deleted after operation.</qt>"
+msgstr ""
+"<qt><b>Қашықтағы файл түсті</b>.<br />Талап етілген амалды орындау үшін "
+"қашықтағы файл уақытша жергілікті файлға көшіріледі. Амал біткен соң бұл "
+"уақытша файл өшіріледі.</qt>"
+
+#: editor/kgpgtextedit.cpp:94
+msgid "Could not download file."
+msgstr "Файл жүктеп алынбады."
+
+#: editor/kgpgtextedit.cpp:127
+msgid ""
+"<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
+msgstr ""
+"<p>Бұл файл <b>ашық</b> кілт файлы.<br />Бұны редакторда ашудын орнына "
+"импорттайсыз ба?</p>"
+
+#: editor/kgpgtextedit.cpp:130
+msgid ""
+"<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
+msgstr ""
+"<p>Бұл файл <b>сырлы</b> кілт файлы.<br />Бұны редакторда ашудын орнына "
+"импорттайсыз ба?</p>"
+
+#: editor/kgpgtextedit.cpp:135
+msgid "Key file dropped on Editor"
+msgstr "Редакторға кілт файлы түсті"
+
+#: editor/kgpgtextedit.cpp:286
+msgid "Signing not possible: bad passphrase or missing key"
+msgstr "Қолтаңбалау мүмкін емес: жарамсыз паролі немесе кілті жоқ"
+
+#: editor/kgpgtextedit.cpp:327
+msgid "Import key in your list"
+msgstr "Кілтті тізіміңізге импорттау"
+
+#: editor/kgpgtextedit.cpp:330
+msgid "Do &Not Import"
+msgstr "Имортта&мау"
+
+#: editor/kgpgtextedit.cpp:331
+msgid "Will not import this key in your list"
+msgstr "Бұл кілт тізіміңізге импорт етілмейді"
+
+#: editor/kgpgtextedit.cpp:333
+msgid "Missing Key"
+msgstr "Кілті жоқ"
+
+#: model/keylistproxymodel.cpp:96 transactions/kgpgimport.cpp:193
+#, kde-format
+msgctxt "ID: Name"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: model/keylistproxymodel.cpp:98 transactions/kgpgimport.cpp:195
+#, kde-format
+msgctxt "ID: Name <Email>"
+msgid "%1: %2 &lt;%3&gt;"
+msgstr "%1: %2 &lt;%3&gt;"
+
+#: model/keylistproxymodel.cpp:103
+#, kde-format
+msgctxt "Name <Email>: ID"
+msgid "%1 &lt;%2&gt;: %3"
+msgstr "%1 &lt;%2&gt;: %3"
+
+#: model/kgpgitemmodel.cpp:228 model/kgpgitemmodel.cpp:231
+#, kde-format
+msgid "1 Key"
+msgid_plural "%1 Keys"
+msgstr[0] "%1 кілт"
+
+#: model/kgpgitemmodel.cpp:232
+#, kde-format
+msgid "1 Group"
+msgid_plural "%1 Groups"
+msgstr[0] "%1 топ"
+
+#: model/kgpgitemmodel.cpp:234
+#, kde-format
+msgctxt "%1 = something like 7 keys, %2 = something like 2 groups"
+msgid "%1, %2"
+msgstr "%1, %2"
+
+#: model/kgpgitemmodel.cpp:335
+msgid "ID"
+msgstr "ID"
+
+#: model/kgpgsearchresultmodel.cpp:124
+#, kde-format
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
+msgid "ID %1, %2-bit %3 key, created %4, revoked"
+msgstr "ID: %1, %2-битті %3 кілті, құрылған кезі: %4, күші жойылған"
+
+#: model/kgpgsearchresultmodel.cpp:129
+#, kde-format
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
+msgid "ID %1, %2-bit %3 key, created %4"
+msgstr "ID: %1, %2-битті %3 кілті, құрылған кезі: %4"
+
+#: model/kgpgsearchresultmodel.cpp:218
+#, kde-format
+msgid "One Photo ID"
+msgid_plural "%1 Photo IDs"
+msgstr[0] "%1 фото ID-і"
 
 #: transactions/kgpgaddphoto.cpp:41
 msgid "This image is very large. Use it anyway?"
@@ -3773,6 +3769,10 @@ msgstr "Кескін өте үлкен. Ала берейік пе?"
 #: transactions/kgpgaddphoto.cpp:41
 msgid "Use Anyway"
 msgstr "Ала беру"
+
+#: transactions/kgpgaddphoto.cpp:41
+msgid "Do Not Use"
+msgstr "Керегі жоқ"
 
 #: transactions/kgpgchangepass.cpp:75
 #, kde-format
@@ -4003,12 +4003,12 @@ msgid_plural "Unchanged Keys"
 msgstr[0] "Өзгертілмеген кілт(тер)"
 
 #: transactions/kgpgkeyservertransaction.cpp:93
-msgid "<b>Connecting to the server...</b>"
-msgstr "<b>Cерверге қосылу...</b>"
-
-#: transactions/kgpgkeyservertransaction.cpp:93
 msgid "Keyserver"
 msgstr "Кілттер сервері"
+
+#: transactions/kgpgkeyservertransaction.cpp:93
+msgid "<b>Connecting to the server...</b>"
+msgstr "<b>Cерверге қосылу...</b>"
 
 #: transactions/kgpgtransaction.cpp:302 transactions/kgpgtransaction.cpp:495
 msgid "Requesting Passphrase"
