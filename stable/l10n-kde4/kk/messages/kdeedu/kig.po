@@ -17,793 +17,488 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.2\n"
 
-#. i18n: file: tips:2
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:3
-msgid ""
-"<p>You can control a kig construction by means of a \"pykig\" \n"
-"python script, that can be executed with the command \n"
-"<code>pykig.py</code>.  Here is a nice example \n"
-"(<code>hexagons.kpy</code>) you can try:\n"
-"<code><pre>\n"
-"kigdocument.hideobjects()\n"
-"def hexagons (c, v, n):\n"
-"  hexagon = PolygonBCV (c, v, 6)\n"
-"  if n &lt;= 0:\n"
-"    hexagon.show()\n"
-"    for i in range(6): \n"
-"      PolygonSide (hexagon, i, True)\n"
-"    return\n"
-"  cnew = MidPoints (c, v)\n"
-"  hexagons (cnew, v, n-1)\n"
-"  for k in [2,4]:\n"
-"    v1 = PolygonVertex (hexagon, k)\n"
-"    cnew = MidPoints (c, v1)\n"
-"    hexagons (cnew, v1, n-1)\n"
-"hexagons (Point(0,0), Point(1,0), 5)\n"
-"</pre></code>\n"
-msgstr ""
-"<p>Kig құрылымын \"pykig\" деген python скриптімен\n"
-"басқаруға болады, ал ол <code>pykig.py</code> деген\n"
-"командамен орындалады.  Мұнда, орындап көру үшін, бір\n"
-"(<code>hexagons.kpy</code> деген) жақсы мысал келтірілген:\n"
-"<code><pre>\n"
-"kigdocument.hideobjects()\n"
-"def hexagons (c, v, n):\n"
-"  hexagon = PolygonBCV (c, v, 6)\n"
-"  if n &lt;= 0:\n"
-"    hexagon.show()\n"
-"    for i in range(6): \n"
-"      PolygonSide (hexagon, i, True)\n"
-"    return\n"
-"  cnew = MidPoints (c, v)\n"
-"  hexagons (cnew, v, n-1)\n"
-"  for k in [2,4]:\n"
-"    v1 = PolygonVertex (hexagon, k)\n"
-"    cnew = MidPoints (c, v1)\n"
-"    hexagons (cnew, v1, n-1)\n"
-"hexagons (Point(0,0), Point(1,0), 5)\n"
-"</pre></code>\n"
-
-#. i18n: file: tips:28
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:28
-msgid ""
-"<p>You can repeat the latest construction simply by pressing the key\n"
-"'Z'; this comes in very handy if you need to construct a sequence\n"
-"of objects with the same construction, especially if there is\n"
-"no shortcut for that construction.</p>\n"
-msgstr ""
-"<p>Ең соңғы құрылымын жәй ғана 'Z' пернесін басып қайталауға\n"
-"болады, бұл бірнеше құрылымы бірдей нысандардан тұратын\n"
-"құрылымды жасағанда ыңғайлы, әсіресе ол құрылым амалының\n"
-"перне тіркесімі болмаса.</p>\n"
-
-#. i18n: file: tips:37
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:36
-msgid ""
-"<p>One of the most powerful tools in Kig are the menus that you can\n"
-"enter by right-clicking on an object, or on some empty space in the\n"
-"document.  You can use them to give objects names, change their colors\n"
-"and line styles, and lots of other interesting things.</p>\n"
-msgstr ""
-"<p>Kig баздарламасының қуатты құралдарының бірі - ол, құжаттағы\n"
-"нысанның не бір бос орынның үстінен тышқанның оң жақ батырмасымен\n"
-"түрткенде шыға келетін мәзірі. Оның көмегімен нысанды атауға, түсін,\n"
-"сызықтатының стилін өзгертуге, және тағы басқа да көп нәрсе істеуге\n"
-"болады.</p>\n"
-
-#. i18n: file: tips:46
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:44
-msgid ""
-"<p>You can construct new points without using the menu or the toolbar, "
-"simply\n"
-"clicking somewhere on the Kig document with the <em>middle mouse\n"
-"button</em>.</p>\n"
-msgstr ""
-"<p>Жаңа нүктелерін мәзір не құрал панелінің пайдаланбай , жәй ғана,\n"
-"Kig құжатының бір жерінде <em>тышқанның ортаңғы батырмасын</em>\n"
-"түртіп құруға болады.</p>\n"
-
-#. i18n: file: tips:54
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:51
-msgid ""
-"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
-"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
-"and <em>Cabri&#8482;</em> files.</p>\n"
-msgstr ""
-"<p>Kig бірнеше пішімдегі файлдарды аша алады: өзінің (<code>.kig</code>) "
-"файлдарын,\n"
-"<em>KGeo</em> файлдарын, <em>KSeg</em> файлдарын, және кейбір <em>Dr. Geo</"
-"em>\n"
-"мен <em>Cabri&#8482;</em> файлдарын.</p>\n"
-
-#. i18n: file: tips:62
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:58
-msgid ""
-"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
-"constructions you can use in your documents: open the <em>Objects</em> \n"
-"menu to see them all.</p>\n"
-msgstr ""
-"<p>Kig құжаттарында пайдалану үшін 20-дан астам нысандар және 10\n"
-"түрлендірулер мен 80-нен астам құрылымдары бар. Бәрін көру үшін\n"
-"мәзірдегі <em>Нысандар</em> дегенді ашыңыз.</p>\n"
-
-#. i18n: file: tips:70
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:65
-msgid ""
-"<p>You can use the selected objects to start the construction of an object\n"
-"which requires the selected objects as arguments. For example, if you have "
-"two\n"
-"points selected, you can choose <em>Start->Circle by Three Points</em> from "
-"the\n"
-"popup menu to start constructing a circle by three points.</p>\n"
-msgstr ""
-"<p>Таңдалған нысандарды, аргумент ретінде қолданатын нысанды\n"
-"құруды бастау үшін пайдалануға болады. Мысалы, егер екі нүкте таңдалып "
-"тұрса,\n"
-"қалқымалы мәзірінен <em>Бастау->Үш нүкте арқылы шеңбер</em> дегенді\n"
-"таңдап алып,\n"
-"үш нүкте арқылы шеңберді құруды бастауға болады.</p>\n"
-
-#. i18n: file: tips:79
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:73
-msgid ""
-"<p>Kig can extends its object set using external macros. You can find some\n"
-"interesting macros on the Kig website:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-msgstr ""
-"<p>Kig нысандар қатарын, сыртқы макростарының көмегімен, кеңейте алады.\n"
-"Kig вебсайтнда бірқатар кызық макростарды таба аласыз:\n"
-"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
-
-#. i18n: file: tips:87
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:80
-msgid ""
-"<p>If you have more than one object under the mouse, and you want to select "
-"any\n"
-"of them, you can click with the <em>left mouse button</em>, while holding "
-"the\n"
-"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
-"which\n"
-"you can then select from.</p>\n"
-msgstr ""
-"<p>Егерде тышқан меңзерінің астында бірнеше нысан болса, онда қалауыңыз\n"
-"бойынша, біреуін таңдай аласыз. Ол үшін, <em>Shift</em> пернені басып "
-"тұрып,\n"
-"<em>тышқанның сол жақ батырмасын</em> түртіңіз де, шыққан тізімінен керегін\n"
-"таңдап алыңыз.</p>\n"
-
-#. i18n: file: tips:96
-#. i18n: ectx: @info:tipoftheday
-#: tips.cpp:88
-msgid ""
-"<p>When you construct a locus, you can click on it with the <em>right</em> "
-"mouse\n"
-"button and select <em>cartesian equation</em> to see its cartesian "
-"equation, \n"
-"whenever it is an algebraic curve of low degree.</p>\n"
-msgstr ""
-"<p>Нүктелер жиынның геометриялық орнын сызганда, ол дәрежесі төмен\n"
-"қисығының бірі болса, оны тышқанның  <em>оң жақ</em> батырмасымен\n"
-"түртіп, <em>Декарт теңдігі</em> дегенді таңдап, оның Декарт\n"
-"теңдігін көруге болады.</p>\n"
-
-#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Сайран Киккарин"
 
-#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@sci.kz"
 
-#. i18n: file: kig/kigpartui.rc:5
-#. i18n: ectx: Menu (file)
-#. i18n: file: kig/kigui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5 rc.cpp:101
-msgid "&File"
-msgstr "&Файл"
-
-#. i18n: file: kig/kigpartui.rc:16
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:8
-msgid "&Edit"
-msgstr "&Өңдеу"
-
-#. i18n: file: kig/kigpartui.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:11
-msgid "&View"
-msgstr "&Көрініс"
-
-#. i18n: file: kig/kigpartui.rc:35
-#. i18n: ectx: Menu (objects)
-#: rc.cpp:14
-msgid "&Objects"
-msgstr "&Нысандар"
-
-#. i18n: file: kig/kigpartui.rc:37
-#. i18n: ectx: Menu (new_point)
-#: rc.cpp:17
-msgid "&Points"
-msgstr "Н&үктелер"
-
-#. i18n: file: kig/kigpartui.rc:49
-#. i18n: ectx: Menu (new_line)
-#: rc.cpp:20
-msgid "&Lines"
-msgstr "&Сызықтар"
-
-#. i18n: file: kig/kigpartui.rc:59
-#. i18n: ectx: Menu (new_circle)
-#: rc.cpp:23
-msgid "&Circles && Arcs"
-msgstr "&Шеңбер && Доғалар"
-
-#. i18n: file: kig/kigpartui.rc:70
-#. i18n: ectx: Menu (new_poligon)
-#: rc.cpp:26
-msgid "Poly&gons"
-msgstr "Көп&бұрыштар"
-
-#. i18n: file: kig/kigpartui.rc:82
-#. i18n: ectx: Menu (new_vector)
-#: rc.cpp:29
-msgid "&Vectors && Segments"
-msgstr "&Вектор && Кесінділер"
-
-#. i18n: file: kig/kigpartui.rc:91
-#. i18n: ectx: Menu (new_conic)
-#: rc.cpp:32
-msgid "Co&nics && Cubics"
-msgstr "К&онустық қима мен Кубтықтыар"
-
-#. i18n: file: kig/kigpartui.rc:98
-#. i18n: ectx: Menu (new_moreconics)
-#: rc.cpp:35
-msgid "More Conics"
-msgstr "Қосымша конустық қималары"
-
-#. i18n: file: kig/kigpartui.rc:113
-#. i18n: ectx: Menu (new_cubic)
-#: rc.cpp:38
-msgid "Cu&bics"
-msgstr "Ку&биктер"
-
-#. i18n: file: kig/kigpartui.rc:121
-#. i18n: ectx: Menu (new_bezier)
-#: rc.cpp:41
-msgid "&Bézier curves"
-msgstr "&Безье қисықтары"
-
-#. i18n: file: kig/kigpartui.rc:131
-#. i18n: ectx: Menu (new_angle)
-#: rc.cpp:44
-msgid "&Angles"
-msgstr "Бұрышт&ар"
-
-#. i18n: file: kig/kigpartui.rc:136
-#. i18n: ectx: Menu (new_transformation)
-#: rc.cpp:47
-msgid "&Transformations"
-msgstr "&Түрлендіру"
-
-#. i18n: file: kig/kigpartui.rc:154
-#. i18n: ectx: Menu (new_differentialgeometry)
-#: rc.cpp:50
-msgid "&Differential geometry"
-msgstr "&Дифференциалдық геометрия"
-
-#. i18n: file: kig/kigpartui.rc:161
-#. i18n: ectx: Menu (new_test)
-#: rc.cpp:53
-msgid "T&ests"
-msgstr "С&ынақ"
-
-#. i18n: file: kig/kigpartui.rc:172
-#. i18n: ectx: Menu (new_other)
-#: rc.cpp:56
-msgid "&Other"
-msgstr "&Басқа"
-
-#. i18n: file: kig/kigpartui.rc:186
-#. i18n: ectx: Menu (types)
-#: rc.cpp:59
-msgid "&Types"
-msgstr "&Түрлер"
-
-#. i18n: file: kig/kigpartui.rc:191
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:62
-msgid "&Tools"
-msgstr "&Құралдар"
-
-#. i18n: file: kig/kigpartui.rc:204
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kig/kigui.rc:23
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:65 rc.cpp:107
-msgid "Main Toolbar"
-msgstr "Негізгі құралдар"
-
-#. i18n: file: kig/kigpartui.rc:218
-#. i18n: ectx: ToolBar (points_toolbar)
-#: rc.cpp:68
-msgid "Points"
-msgstr "Нүктелер"
-
-#. i18n: file: kig/kigpartui.rc:229
-#. i18n: ectx: ToolBar (line_toolbar)
-#: rc.cpp:71
-msgid "Lines"
-msgstr "Сызықтар"
-
-#. i18n: file: kig/kigpartui.rc:239
-#. i18n: ectx: ToolBar (vectseg_toolbar)
-#: rc.cpp:74
-msgid "Vectors && Segments"
-msgstr "Вектор && Кесінділер"
-
-#. i18n: file: kig/kigpartui.rc:247
-#. i18n: ectx: ToolBar (circle_toolbar)
-#: rc.cpp:77
-msgid "Circles && Arcs"
-msgstr "Шеңбер && Доғалар"
-
-#. i18n: file: kig/kigpartui.rc:255
-#. i18n: ectx: ToolBar (conic_toolbar)
-#: rc.cpp:80
-msgid "Conics"
-msgstr "Конустық қималар"
-
-#. i18n: file: kig/kigpartui.rc:264
-#. i18n: ectx: ToolBar (bezier_toolbar)
-#: rc.cpp:83
-msgid "Bézier Curves"
-msgstr "Безье қисықтары"
-
-#. i18n: file: kig/kigpartui.rc:274
-#. i18n: ectx: ToolBar (angles_toolbar)
-#: rc.cpp:86
-msgid "Angles"
-msgstr "Бұрыштар"
-
-#. i18n: file: kig/kigpartui.rc:279
-#. i18n: ectx: ToolBar (transformation_toolbar)
-#: rc.cpp:89
-msgid "Transformations"
-msgstr "Түрлендіру"
-
-#. i18n: file: kig/kigpartui.rc:293
-#. i18n: ectx: ToolBar (tests_toolbar)
-#: rc.cpp:92
-msgid "Tests"
-msgstr "Сынақ"
-
-#. i18n: file: kig/kigpartui.rc:305
-#. i18n: ectx: ToolBar (rest_toolbar)
-#: rc.cpp:95
-msgid "Other Objects"
-msgstr "Басқа нысандар"
-
-#. i18n: file: kig/kigpartui.rc:313
-#. i18n: ectx: ToolBar (view_toolbar)
-#: rc.cpp:98
-msgid "View"
-msgstr "Көрініс"
-
-#. i18n: file: kig/kigui.rc:13
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:104
-msgid "&Settings"
-msgstr "&Баптау"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:120
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: filters/latexexporteroptionswidget.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:110 rc.cpp:134 rc.cpp:164 rc.cpp:176 misc/kigfiledialog.cc:34
-msgid "Options"
-msgstr "Параметрлері"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:95
-#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
-#: rc.cpp:113 rc.cpp:170
-msgid "Show Extra Frame"
-msgstr "Қосымша қоршауы болсын"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:102
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:42
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
-#: rc.cpp:116 rc.cpp:137 rc.cpp:173 rc.cpp:179
-msgid "Show Axes"
-msgstr "Осьтері көрсетілсін"
-
-#. i18n: file: filters/asyexporteroptionswidget.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/imageexporteroptionswidget.ui:147
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/latexexporteroptionswidget.ui:88
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#. i18n: file: filters/svgexporteroptionswidget.ui:49
-#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
-#: rc.cpp:119 rc.cpp:140 rc.cpp:167 rc.cpp:182
-msgid "Show Grid"
-msgstr "Торы болсын"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122
-msgid "Resolution"
-msgstr "Айырымдылығы"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
-#: rc.cpp:125
-msgid "&Keep Aspect Ratio"
-msgstr "Ара қатынасы &сақталсын"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:54
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:128
-msgid "Height:"
-msgstr "Биіктігі:"
-
-#. i18n: file: filters/imageexporteroptionswidget.ui:110
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:131
-msgid "Width:"
-msgstr "Ені:"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:143
-msgid "Output format"
-msgstr "Шығыс пішімі"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:29
-#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
-#: rc.cpp:146
-msgid "PSTricks"
-msgstr "PSTricks"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:36
-#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
-#: rc.cpp:149
-msgid "Tikz/PGF"
-msgstr "Tikz/PGF"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:46
-#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
-#: rc.cpp:152
-msgid "Asymptote"
-msgstr "Asymptote"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:56
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:155
-msgid "Document options"
-msgstr "Құжат парметрлері"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:62
-#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
-#: rc.cpp:158
-msgid "Picture only"
-msgstr "Суреттер ғана"
-
-#. i18n: file: filters/latexexporteroptionswidget.ui:72
-#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
-#: rc.cpp:161
-msgid "Standalone document"
-msgstr "Бөлек құжат"
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:9
-#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
-#: rc.cpp:185
-msgid "&Use default coordinate precision"
-msgstr "Координат дәлдігі әдеттігідей &болсын"
-
-#. i18n: file: misc/kigcoordinateprecisiondialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
-#: rc.cpp:188
-msgid "&Specify coordinate precision:"
-msgstr "&Координат дәлдігі:"
-
-#. i18n: file: modes/edittypewidget.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:191
-msgid ""
-"Here you can modify the name, the description and the icon of this macro "
-"type."
-msgstr ""
-"Мұнда бұл макрос түрінің атауын, түсініктемесін, таңбашасын өзгерте аласыз."
-
-#. i18n: file: modes/edittypewidget.ui:73
-#. i18n: ectx: property (text), widget (QLabel, label_2_3)
-#: rc.cpp:194
-msgid "Name:"
-msgstr "Атауы:"
-
-#. i18n: file: modes/edittypewidget.ui:93
-#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
-#: rc.cpp:197
-msgid "Description:"
-msgstr "Түсініктемесі:"
-
-#. i18n: file: modes/historywidget.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:200
-msgid "Description of the current step:"
-msgstr "Қадамының түсініктемесі:"
-
-#. i18n: file: modes/historywidget.ui:53
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
-#: rc.cpp:203
-msgid "First step"
-msgstr "Алғашқы қадам"
-
-#. i18n: file: modes/historywidget.ui:66
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
-#: rc.cpp:206
-msgid "One step back"
-msgstr "Бір қадамға шегіну"
-
-#. i18n: file: modes/historywidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:209
-msgid "/"
-msgstr "/"
-
-#. i18n: file: modes/historywidget.ui:96
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
-#: rc.cpp:212
-msgid "One step forward"
-msgstr "Бір қадамға ілгерлеу"
-
-#. i18n: file: modes/historywidget.ui:109
-#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
-#: rc.cpp:215
-msgid "Last step"
-msgstr "Соңғы қадам"
-
-#. i18n: file: modes/typeswidget.ui:37
-#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
-#: rc.cpp:218
-msgid "Select types here..."
-msgstr "Түрін таңдау..."
-
-#. i18n: file: modes/typeswidget.ui:40
-#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
-#: rc.cpp:221
-msgid ""
-"This is a list of the current macro types... You can select, edit, delete, "
-"export and import them..."
-msgstr ""
-"Бұл қолданыстағы макро түрлер тізімі... Оларды таңдап, өзгертуге, өшіруге, "
-"импорттауға, экспорттауға болады..."
-
-#. i18n: file: modes/typeswidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
-#: rc.cpp:224
-msgid "Edit the selected type."
-msgstr "Таңдалған түрін өзгерту."
-
-#. i18n: file: modes/typeswidget.ui:102
-#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
-#: rc.cpp:227 modes/typesdialog.cpp:368
-msgid "&Edit..."
-msgstr "&Өңдеу..."
-
-#. i18n: file: modes/typeswidget.ui:109
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
-#: rc.cpp:230
-msgid "Delete all the selected types in the list."
-msgstr "Тізімдегі бүкіл таңдалған түрлерін өшіру."
-
-#. i18n: file: modes/typeswidget.ui:112
-#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
-#: rc.cpp:233 modes/popup.cc:390 modes/typesdialog.cpp:369
-msgid "&Delete"
-msgstr "&Өшіру"
-
-#. i18n: file: modes/typeswidget.ui:151
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
-#: rc.cpp:236
-msgid "Export all the selected types to a file."
-msgstr "Тізімдегі бүкіл таңдалған түрлерін экспорттау"
-
-#. i18n: file: modes/typeswidget.ui:154
-#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
-#: rc.cpp:239 modes/typesdialog.cpp:371
-msgid "E&xport..."
-msgstr "Э&кспорттау..."
-
-#. i18n: file: modes/typeswidget.ui:161
-#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
-#: rc.cpp:242
-msgid "Import macros that are contained in one or more files."
-msgstr "Бір не бірнеше файлдағы макростарды импорттау."
-
-#. i18n: file: modes/typeswidget.ui:164
-#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
-#: rc.cpp:245
-msgid "&Import..."
-msgstr "&Импорттау..."
-
-#: rc.cpp:246
 msgid "Circle by Center && Line"
 msgstr "Центрі мен жанама сызықтан шеңбер"
 
-#: rc.cpp:247
 msgid "A circle constructed by its center and tangent to a given line"
 msgstr "Берілген центрі мен жанасатын сызығы бойынша құрылған шеңбер"
 
-#: rc.cpp:248
 msgid "Construct a circle tangent to this line"
 msgstr "Осы сызыққа жанама қылып шеңберді құру "
 
-#: rc.cpp:249 rc.cpp:254 objects/circle_type.cc:34
-msgid "Construct a circle with this center"
-msgstr "Осы центрімен шеңберді құру "
-
-#: rc.cpp:250
 msgid "Select the line that the new circle should be tangent to..."
 msgstr "Жаңа шеңберге жанама болатын сызықты таңдау..."
 
-#: rc.cpp:251 rc.cpp:256 objects/circle_type.cc:39 objects/circle_type.cc:194
-msgid "Select the center of the new circle..."
-msgstr "Жаңа шеңбердің центрін таңдау..."
-
-#: rc.cpp:252
 msgid "Circle by Point && Segment (as the Diameter)"
 msgstr "Нүкте мен диаметрінен шеңбер"
 
-#: rc.cpp:253
 msgid ""
 "A circle defined by its center and the length of a segment as the diameter"
 msgstr ""
 "Центрі мен кесіндімен берілген диаметр ұзындығы бойынша құрылған шеңбер"
 
-#: rc.cpp:255
 msgid ""
 "Construct a circle with the diameter given by the length of this segment"
 msgstr "Осы кесіндіні диаметр ретінде алып шеңберді құру "
 
-#: rc.cpp:257
 msgid "Select the segment whose length gives the diameter of the new circle..."
 msgstr "Ұзыңдығы жаңа шеңбердің диаметрі болатын кесіндіні таңдау..."
 
-#: rc.cpp:258
 msgid "Equilateral Triangle"
 msgstr "Теңжақты үшбұрыш"
 
-#: rc.cpp:259
 msgid "Equilateral triangle with given two vertices"
 msgstr "Екі төбесімен берілген тең қабырғалы үшбұрыш"
 
-#: rc.cpp:260
 msgid "Evolute"
 msgstr "Эволюта"
 
-#: rc.cpp:261
 msgid "Evolute of a curve"
 msgstr "Қисықтың эволютасы"
 
-#: rc.cpp:262
 msgid "Evolute of this curve"
 msgstr "Осы қисықтың эволютасы"
 
-#: rc.cpp:263 rc.cpp:268 objects/centerofcurvature_type.cc:35
-#: objects/tangent_type.cc:36
-msgid "Select the curve..."
-msgstr "Қисықты таңдау..."
-
-#: rc.cpp:264
 msgid "Osculating Circle"
 msgstr "Жанасқан шеңбер"
 
-#: rc.cpp:265
 msgid "Osculating circle of a curve at a point"
 msgstr "Қисыққа бір нүктеде жанасқан шеңбер"
 
-#: rc.cpp:266
 msgid "Osculating circle of this curve"
 msgstr "Осы қисыққа жанасқан шеңбер"
 
-#: rc.cpp:267
 msgid "Osculating circle at this point"
 msgstr "Осы нүктеде жанасқан шеңбер"
 
-#: rc.cpp:269
 msgid "Select the point..."
 msgstr "Нүктені таңдау..."
 
-#: rc.cpp:270
 msgid "Segment Axis"
 msgstr "Кесіндінің орта перпендикуляры"
 
-#: rc.cpp:271
 msgid "The perpendicular line through a given segment's mid point."
 msgstr "Кесіндіні ортасынан қақ бөлетін перпендикуляры."
 
-#: rc.cpp:272
 msgid "Construct the axis of this segment"
 msgstr "Кесіндінің орта перпендикулярын құру"
 
-#: rc.cpp:273
 msgid "Select the segment of which you want to draw the axis..."
 msgstr "Орта перпендикулярын салатын кесіндіні таңдау..."
 
-#: rc.cpp:274
 msgid "Square"
 msgstr "Квадрат"
 
-#: rc.cpp:275
 msgid "Square with two given adjacent vertices"
 msgstr "Екі қатар төбесі бойынша квадрат"
 
-#: rc.cpp:276
 msgid "Vector Difference"
 msgstr "Векторлар айырылымы"
 
-#: rc.cpp:277
 msgid "Construct the vector difference of two vectors."
 msgstr "Екі вектордың айырылымын құру."
 
-#: rc.cpp:278
 msgid "Construct the vector difference of this vector and another one."
 msgstr "Осы және басқа вектордың айырылымын құру."
 
-#: rc.cpp:279
 msgid "Construct the vector difference of the other vector and this one."
 msgstr "Басқа және осы вектордың айырылымын құру."
 
-#: rc.cpp:280
 msgid "Construct the vector difference starting at this point."
 msgstr "Айырылым векторын осы нүктеден шығару"
 
-#: rc.cpp:281
 msgid ""
 "Select the first of the two vectors of which you want to construct the "
 "difference..."
 msgstr "Айырылымы құрылатын екі вектордың біріншісін таңдау..."
 
-#: rc.cpp:282
 msgid ""
 "Select the other of the two vectors of which you want to construct the "
 "difference..."
 msgstr "Айырылымы құрылатын екі вектордың екіншісін таңдау..."
 
-#: rc.cpp:283
 msgid "Select the point to construct the difference vector in..."
 msgstr "Құрылатын айырылым вектордың шығатын нүктесін таңдау..."
 
-#: filters/filter.h:55 filters/cabri-utils.cc:33 misc/object_hierarchy.cc:486
+#: filters/asyexporter.cc:40
+msgid "Export to &Asymptote..."
+msgstr "&Asymptote-ге экспорттау..."
+
+#: filters/asyexporter.cc:45
+msgid "&Asymptote..."
+msgstr " "
+
+#: filters/asyexporter.cc:56
+msgid "*.asy|Asymptote Documents (*.asy)"
+msgstr "*.asy|Asymptote құжаттары (*.asy)"
+
+#: filters/asyexporter.cc:57
+msgid "Export as Asymptote script"
+msgstr "Asymptote скрипті қылып экспорттау"
+
+#: filters/asyexporter.cc:58
+msgid "Asymptote Options"
+msgstr "Asymptote параметрлері"
+
+#: filters/asyexporter.cc:78 filters/exporter.cc:119
+#: filters/latexexporter.cc:576 filters/svgexporter.cc:81
+#: filters/xfigexporter.cc:592
+#, kde-format
+msgid ""
+"The file \"%1\" could not be opened. Please check if the file permissions "
+"are set correctly."
+msgstr "\"%1\" файлы ашылмады. Рұқсаттарын түгелдеңіз."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: filters/asyexporteroptionswidget.ui:22
+#: filters/imageexporteroptionswidget.ui:120
+#: filters/latexexporteroptionswidget.ui:82
+#: filters/svgexporteroptionswidget.ui:22 misc/kigfiledialog.cc:34
+msgid "Options"
+msgstr "Параметрлері"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showFrameCheckBox)
+#: filters/asyexporteroptionswidget.ui:42
+#: filters/latexexporteroptionswidget.ui:95
+msgid "Show Extra Frame"
+msgstr "Қосымша қоршауы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckBox)
+#: filters/asyexporteroptionswidget.ui:49
+#: filters/imageexporteroptionswidget.ui:140
+#: filters/latexexporteroptionswidget.ui:102
+#: filters/svgexporteroptionswidget.ui:42
+msgid "Show Axes"
+msgstr "Осьтері көрсетілсін"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showGridCheckBox)
+#: filters/asyexporteroptionswidget.ui:56
+#: filters/imageexporteroptionswidget.ui:147
+#: filters/latexexporteroptionswidget.ui:88
+#: filters/svgexporteroptionswidget.ui:49
+msgid "Show Grid"
+msgstr "Торы болсын"
+
+#: filters/cabri-filter.cc:157
+msgid "This is an XFig file, not a Cabri figure."
+msgstr "Бұл XFig файлы, Cabri фигурасы емес."
+
+#: filters/cabri-filter.cc:202
+#, kde-format
+msgid ""
+"This Cabri version (%1) is not supported yet.\n"
+"Please contact the Kig authors to help supporting this Cabri version."
+msgstr ""
+"Бұл Cabri (%1) нұсқасының қолдауы әлі жоқ.\n"
+"Бұны істеуге көмектесе алсаңыз Kig авторларымен байланысыңыз. "
+
+#: filters/cabri-filter.cc:659
+#, kde-format
+msgid ""
+"This Cabri file contains a \"%1\" object, which Kig does not currently "
+"support."
+msgstr "Бұл Cabri файлында, Kig әлі танымайтын \"%1\" нысаны кездесті."
+
+#: filters/cabri-utils.cc:33 filters/filter.h:55 misc/object_hierarchy.cc:486
 #: objects/object_imp_factory.cc:294
 #, kde-format
 msgid "An error was encountered at line %1 in file %2."
 msgstr "%2 файлының %1 жолында қате кездесті.  "
+
+#: filters/drgeo-filter.cc:109
+#, kde-format
+msgid "The Dr. Geo file \"%1\" is a macro file so it contains no figures."
+msgstr "Бұл \"%1\" Dr. Geo макрос файлы, сондықтан бұнда ешбір фигура жоқ."
+
+#: filters/drgeo-filter.cc:112
+#, kde-format
+msgid "There are no figures in Dr. Geo file \"%1\"."
+msgstr "\"%1\" Dr. Geo файлында ешбір фигура жоқ."
+
+#: filters/drgeo-filter.cc:128
+msgid "Dr. Geo Filter"
+msgstr "Dr. Geo сүзгсі"
+
+#: filters/drgeo-filter.cc:129
+msgid ""
+"The current Dr. Geo file contains more than one figure.\n"
+"Please select which to import:"
+msgstr ""
+"Бұл \"%1\" Dr. Geo файлында бірнеше фигура бар.\n"
+"Қайсын импорттау керегін таңдаңыз:"
+
+#: filters/drgeo-filter.cc:339 filters/drgeo-filter.cc:397
+#: filters/drgeo-filter.cc:429 filters/drgeo-filter.cc:442
+#: filters/drgeo-filter.cc:465 filters/drgeo-filter.cc:481
+#: filters/drgeo-filter.cc:504 filters/drgeo-filter.cc:631
+#: filters/drgeo-filter.cc:649 filters/drgeo-filter.cc:690
+#: filters/drgeo-filter.cc:702 filters/drgeo-filter.cc:722
+#, kde-format
+msgid ""
+"This Dr. Geo file contains a \"%1 %2\" object, which Kig does not currently "
+"support."
+msgstr "Бұл Dr. Geo файлында, Kig әлі танымайтын \"%1 %2\" нысаны кездесті."
+
+#: filters/drgeo-filter.cc:376
+msgid ""
+"This Dr. Geo file contains an intersection type, which Kig does not "
+"currently support."
+msgstr "Бұл Dr. Geo файлында, Kig әлі танымайтын қиылыстың түрі кездесті."
+
+#: filters/exporter.cc:72
+msgid "&Export to image"
+msgstr "Кескінге эк&спорттау"
+
+#: filters/exporter.cc:77
+msgid "&Image..."
+msgstr "&Кескін..."
+
+#: filters/exporter.cc:89
+msgid "Export as Image"
+msgstr "Кескін қылып экспорттау"
+
+#: filters/exporter.cc:90
+msgid "Image Options"
+msgstr "Кескіннің параметрлері"
+
+#: filters/exporter.cc:111
+msgid "Sorry, this file format is not supported."
+msgstr "Ғафу етіңіз,. бұл файл пішімінің қолдауы жоқ."
+
+#: filters/exporter.cc:135
+#, kde-format
+msgid "Sorry, something went wrong while saving to image \"%1\""
+msgstr "\"%1\" кескінің сақтаған кезде бірдемесі дұрыс болмады. "
+
+#: filters/exporter.cc:158
+msgid "&Export To"
+msgstr "Мынаған эк&спорттау"
+
+#: filters/filter.cc:73
+#, kde-format
+msgid ""
+"The file \"%1\" could not be opened.  This probably means that it does not "
+"exist, or that it cannot be opened due to its permissions"
+msgstr ""
+"\"%1\" файлы ашылмады. Ол немесе файл жоқ, немесе оны ашуға құқығыңыз жоқ "
+"дегені."
+
+#: filters/filter.cc:82
+#, kde-format
+msgid ""
+"An error was encountered while parsing the file \"%1\".  It cannot be opened."
+msgstr "\"%1\" файлын талдау кезінде қате кездесті. Файл ашылмады."
+
+#: filters/filter.cc:84
+msgid "Parse Error"
+msgstr "Талдау қатесі"
+
+#: filters/filter.cc:95
+#, kde-format
+msgid "Kig cannot open the file \"%1\"."
+msgstr "Kig \"%1\" файлы ашалмады."
+
+#: filters/filter.cc:96 misc/lists.cc:325
+msgid "Not Supported"
+msgstr "Танылмайды"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: filters/imageexporteroptionswidget.ui:22
+msgid "Resolution"
+msgstr "Айырымдылығы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: filters/imageexporteroptionswidget.ui:37
+msgid "&Keep Aspect Ratio"
+msgstr "Ара қатынасы &сақталсын"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: filters/imageexporteroptionswidget.ui:54
+msgid "Height:"
+msgstr "Биіктігі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: filters/imageexporteroptionswidget.ui:110
+msgid "Width:"
+msgstr "Ені:"
+
+#: filters/kseg-filter.cc:182
+msgid ""
+"This KSeg document uses a scaling transformation, which Kig currently cannot "
+"import."
+msgstr ""
+"Бұл KSeg құжаты Kig импорттай алмайтын масштабтау түрлендіруін пайдаланады."
+
+#: filters/kseg-filter.cc:561
+msgid ""
+"This KSeg file contains a filled circle, which Kig does not currently "
+"support."
+msgstr "Бұл KSeq файлында, Kig әлі танымайтын толтырылған шеңбері кездесті."
+
+#: filters/kseg-filter.cc:567
+msgid ""
+"This KSeg file contains an arc sector, which Kig does not currently support."
+msgstr "Бұл KSeq файлында, Kig әлі танымайтын доға сегменті кездесті."
+
+#: filters/kseg-filter.cc:573
+msgid ""
+"This KSeg file contains an arc segment, which Kig does not currently support."
+msgstr "Бұл KSeq файлында, Kig әлі танымайтын доға кесіндісі кездесті."
+
+#: filters/latexexporter.cc:77
+msgid "Export to &Latex..."
+msgstr "&Latex-ке экспорттау..."
+
+#: filters/latexexporter.cc:82
+msgid "&Latex..."
+msgstr "&Latex..."
+
+#: filters/latexexporter.cc:538
+msgid "*.tex|Latex Documents (*.tex)"
+msgstr "*.tex|Latex құжаттары (*.tex)"
+
+#: filters/latexexporter.cc:539
+msgid "Export as Latex"
+msgstr "Latex сияқты экспорттау"
+
+#: filters/latexexporter.cc:540
+msgid "Latex Options"
+msgstr "Latex параметрлері"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: filters/latexexporteroptionswidget.ui:23
+msgid "Output format"
+msgstr "Шығыс пішімі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, psTricksRadioButton)
+#: filters/latexexporteroptionswidget.ui:29
+msgid "PSTricks"
+msgstr "PSTricks"
+
+#. i18n: ectx: property (text), widget (QRadioButton, tikzRadioButton)
+#: filters/latexexporteroptionswidget.ui:36
+msgid "Tikz/PGF"
+msgstr "Tikz/PGF"
+
+#. i18n: ectx: property (text), widget (QRadioButton, asyRadioButton)
+#: filters/latexexporteroptionswidget.ui:46
+msgid "Asymptote"
+msgstr "Asymptote"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: filters/latexexporteroptionswidget.ui:56
+msgid "Document options"
+msgstr "Құжат парметрлері"
+
+#. i18n: ectx: property (text), widget (QRadioButton, pictureRadioButton)
+#: filters/latexexporteroptionswidget.ui:62
+msgid "Picture only"
+msgstr "Суреттер ғана"
+
+#. i18n: ectx: property (text), widget (QRadioButton, documentRadioButton)
+#: filters/latexexporteroptionswidget.ui:72
+msgid "Standalone document"
+msgstr "Бөлек құжат"
+
+#: filters/native-filter.cc:194
+#, kde-format
+msgid ""
+"This file was created by Kig version \"%1\", which this version cannot open."
+msgstr "Бұл файлды Kig \"%1\" нұсқасы жазған, ол бұл нұсқасында ашылмайды."
+
+#: filters/native-filter.cc:200
+#, kde-format
+msgid ""
+"This file was created by Kig version \"%1\".\n"
+"Support for older Kig formats (pre-0.4) has been removed from Kig.\n"
+"You can try to open this file with an older Kig version (0.4 to 0.6),\n"
+"and then save it again, which will save it in the new format."
+msgstr ""
+"Бұл файл Kig-тың \"%1\" нұсқасымен жазылған.\n"
+"Қазіргі Kig тым ескі (0.4 алдындағы) пішімін түсінбейді.\n"
+"Бұл файлды оңша ескірмеген Kig (0.4 - 0.6) нұсқасымен,\n"
+"ашып, жаңа пішіміге ауыстырып алуға болады."
+
+#: filters/native-filter.cc:231 filters/native-filter.cc:425
+msgid ""
+"This Kig file has a coordinate system that this Kig version does not "
+"support.\n"
+"A standard coordinate system will be used instead."
+msgstr ""
+"Бұл Kig файлы осы Kig нұсқасы түсінбейтін координаттар жүйесін қолданады.\n"
+"Оның орнына стандартты координаттар жүйесі пайдаланады."
+
+#: filters/native-filter.cc:336 filters/native-filter.cc:529
+#: objects/object_imp_factory.cc:505
+#, kde-format
+msgid ""
+"This Kig file uses an object of type \"%1\", which this Kig version does not "
+"support.Perhaps you have compiled Kig without support for this object type,"
+"or perhaps you are using an older Kig version."
+msgstr ""
+"Бұл Kig файлда осы Kig түсінбейтін түрі \"%1\" нысан бар. Демек, Kig-іңіз "
+"бұл  нысан түрін қолдауысыз жинақталған немесе қолданып отырған Kig нұсқаңыз "
+"ескірген."
+
+#: filters/native-filter.cc:389
+#, kde-format
+msgid ""
+"This Kig file uses an object of type \"%1\", which is obsolete, you should "
+"save the construction with a different name and check that it works as "
+"expected."
+msgstr ""
+"Бұл Kig файлда түрі \"%1\" ескірген нысан бар, сондықтан, құрылымды басқа "
+"атауымен сақтап, ол керегіндей істейтінің тексеріп көріңіз."
+
+#: filters/svgexporter.cc:45
+msgid "&Export to SVG..."
+msgstr "SVG-ға эк&спорттау..."
+
+#: filters/svgexporter.cc:50
+msgid "&SVG..."
+msgstr "&SVG..."
+
+#: filters/svgexporter.cc:61
+msgid "*.svg|Scalable Vector Graphics (*.svg)"
+msgstr "*.svg|Scalable Vector Graphics (*.svg)"
+
+#: filters/svgexporter.cc:62
+msgid "Export as SVG"
+msgstr "SVGs сияқты экспорттау"
+
+#: filters/svgexporter.cc:63
+msgid "SVG Options"
+msgstr "SVG параметрлері"
+
+#: filters/svgexporter.cc:110
+#, kde-format
+msgid "Sorry, something went wrong while saving to SVG file \"%1\""
+msgstr "SVG \"%1\" файлын сақтаған кезде бірдемесі дұрыс болмады. "
+
+#: filters/xfigexporter.cc:60
+msgid "Export to &XFig file"
+msgstr "&XFig файлына экспорттау"
+
+#: filters/xfigexporter.cc:66
+msgid "&XFig File..."
+msgstr "&XFig файлы..."
+
+#: filters/xfigexporter.cc:580
+msgid "*.fig|XFig Documents (*.fig)"
+msgstr "*.fig|XFig құжаттары (*.fig)"
+
+#: filters/xfigexporter.cc:581
+msgid "Export as XFig File"
+msgstr "XFig сияқты экспорттау"
 
 #: kig/aboutdata.h:29
 msgid "KDE Interactive Geometry"
@@ -953,285 +648,494 @@ msgstr "Danny Allen"
 msgid "Responsible for the new object action icons."
 msgstr "Жаңа нысан әрекет таңбашасының авторы."
 
-#: filters/asyexporter.cc:40
-msgid "Export to &Asymptote..."
-msgstr "&Asymptote-ге экспорттау..."
+#: kig/kig.cpp:90
+msgid "Could not find the necessary Kig library, check your installation."
+msgstr "Қажетті Kid-тың жиын файлы жоқ. Орнатылымыңызды түгелдеңіз."
 
-#: filters/asyexporter.cc:45
-msgid "&Asymptote..."
-msgstr " "
-
-#: filters/asyexporter.cc:56
-msgid "*.asy|Asymptote Documents (*.asy)"
-msgstr "*.asy|Asymptote құжаттары (*.asy)"
-
-#: filters/asyexporter.cc:57
-msgid "Export as Asymptote script"
-msgstr "Asymptote скрипті қылып экспорттау"
-
-#: filters/asyexporter.cc:58
-msgid "Asymptote Options"
-msgstr "Asymptote параметрлері"
-
-#: filters/asyexporter.cc:78 filters/exporter.cc:119
-#: filters/latexexporter.cc:576 filters/svgexporter.cc:81
-#: filters/xfigexporter.cc:592
+#: kig/kig.cpp:203
 #, kde-format
-msgid ""
-"The file \"%1\" could not be opened. Please check if the file permissions "
-"are set correctly."
-msgstr "\"%1\" файлы ашылмады. Рұқсаттарын түгелдеңіз."
+msgid "Save changes to document %1?"
+msgstr "%1 құжатының өзгерістері сақталсын ба?"
 
-#: filters/cabri-filter.cc:157
-msgid "This is an XFig file, not a Cabri figure."
-msgstr "Бұл XFig файлы, Cabri фигурасы емес."
+#: kig/kig.cpp:204
+msgid "Save Changes?"
+msgstr "Өзгерістер сақталсын ба?"
 
-#: filters/cabri-filter.cc:202
-#, kde-format
+#: kig/kig.cpp:239
 msgid ""
-"This Cabri version (%1) is not supported yet.\n"
-"Please contact the Kig authors to help supporting this Cabri version."
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
+"seg *.fgeo *.fig)\n"
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)\n"
+"*.kgeo|KGeo Documents (*.kgeo)\n"
+"*.seg|KSeg Documents (*.seg)\n"
+"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
+"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
 msgstr ""
-"Бұл Cabri (%1) нұсқасының қолдауы әлі жоқ.\n"
-"Бұны істеуге көмектесе алсаңыз Kig авторларымен байланысыңыз. "
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|Бүкіл танитын файлдары (*.kig *.kigz *."
+"seg *.fgeo *.fig)\n"
+"*.kig|Kig құжаттары (*.kig)\n"
+"*.kigz|Сығылған Kig құжаттары (*.kigz)\n"
+"*.kgeo|KGeo құжаттары (*.kgeo)\n"
+"*.seg|KSeg құжаттары (*.seg)\n"
+"*.fgeo|Dr. Geo құжаттары (*.fgeo)\n"
+"*.fig *.FIG|Cabri құжаттары (*.fig *.FIG)"
 
-#: filters/cabri-filter.cc:659
+#: kig/kig_commands.cpp:100
+#, kde-format
+msgid "Remove %1 Object"
+msgid_plural "Remove %1 Objects"
+msgstr[0] "%1 нысанды өшіру"
+
+#: kig/kig_commands.cpp:112
+#, kde-format
+msgid "Add %1 Object"
+msgid_plural "Add %1 Objects"
+msgstr[0] "%1 нысанды қосу"
+
+#: kig/kig_part.cpp:86
+msgid "KigPart"
+msgstr "KigPart"
+
+#: kig/kig_part.cpp:90
+msgid "&Set Coordinate System"
+msgstr "&Координаттар жүйесін құру"
+
+#: kig/kig_part.cpp:131
+msgid "Kig Options"
+msgstr "Kig парметрлері"
+
+#: kig/kig_part.cpp:135
+msgid "Show grid"
+msgstr "Торын көрсету"
+
+#: kig/kig_part.cpp:138
+msgid "Show axes"
+msgstr "Осьтерді көрсету"
+
+#: kig/kig_part.cpp:227
+msgid "Invert Selection"
+msgstr "Таңдауын терістеу"
+
+#: kig/kig_part.cpp:234
+msgid "&Delete Objects"
+msgstr "&Нысандарды өшіру"
+
+#: kig/kig_part.cpp:238
+msgid "Delete the selected objects"
+msgstr "Таңдалған нысандарды өшіру"
+
+#: kig/kig_part.cpp:240
+msgid "Cancel Construction"
+msgstr "Құрылымынан айну"
+
+#: kig/kig_part.cpp:245
+msgid "Cancel the construction of the object being constructed"
+msgstr "Құрылып жатқаннан айну"
+
+#: kig/kig_part.cpp:248
+msgid "Repeat Construction"
+msgstr "Құрылымды қайталау"
+
+#: kig/kig_part.cpp:253
+msgid "Repeat the last construction (with new data)"
+msgstr "Соңғы құрылымын (жаңа деректерімен) қайталау "
+
+#: kig/kig_part.cpp:256 modes/popup.cc:936
+msgid "U&nhide All"
+msgstr "Бүкілін к&өрсету"
+
+#: kig/kig_part.cpp:259
+msgid "Show all hidden objects"
+msgstr "Бүкіл жасырын нысандарды көрсету"
+
+#: kig/kig_part.cpp:262
+msgid "&New Macro..."
+msgstr "&Жаңа макрос..."
+
+#: kig/kig_part.cpp:265
+msgid "Define a new macro"
+msgstr "Жаңа макростың анықтамасын келтіру"
+
+#: kig/kig_part.cpp:267
+msgid "Manage &Types..."
+msgstr "&Түрлерді басқару..."
+
+#: kig/kig_part.cpp:270
+msgid "Manage macro types."
+msgstr "Макрос түрлерін басқару"
+
+#: kig/kig_part.cpp:272
+msgid "&Browse History..."
+msgstr "Журналын ақтару..."
+
+#: kig/kig_part.cpp:275
+msgid "Browse the history of the current construction."
+msgstr "Осы құрылымның тарихын ақтару."
+
+#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
+msgid "Zoom in on the document"
+msgstr "Құжатты жақындату"
+
+#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
+msgid "Zoom out of the document"
+msgstr "Құжатты алыстату"
+
+#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
+msgid "Recenter the screen on the document"
+msgstr "Құжатты экранның ортасына келтіру"
+
+#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
+msgid "View this document full-screen."
+msgstr "Құжатты толық экранда қарау."
+
+#: kig/kig_part.cpp:302
+msgid "&Select Shown Area"
+msgstr "Көрсететін аумағын таңдау"
+
+#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
+msgid "Select the area that you want to be shown in the window."
+msgstr "Терезеде көрсететін аумағын таңдау."
+
+#: kig/kig_part.cpp:308
+msgid "S&elect Zoom Area"
+msgstr "Үлкейту аумағын таңдау"
+
+#: kig/kig_part.cpp:314
+msgid "Set Coordinate &Precision..."
+msgstr "&Координаттың дәлдігі..."
+
+#: kig/kig_part.cpp:316
+msgid "Set the floating point precision of coordinates in the document. "
+msgstr "Құжаттағы координаттың жылжымалы үтірлі дәлдігін келтіру.  "
+
+#: kig/kig_part.cpp:319
+msgid "Show &Grid"
+msgstr "Торын көрсету"
+
+#: kig/kig_part.cpp:321
+msgid "Show or hide the grid."
+msgstr "Торын көрсету не жасыру "
+
+#: kig/kig_part.cpp:325
+msgid "Show &Axes"
+msgstr "&Осьтерді көрсету"
+
+#: kig/kig_part.cpp:327
+msgid "Show or hide the axes."
+msgstr "Осьтерді көрсету не жасыру "
+
+#: kig/kig_part.cpp:331
+msgid "Wear Infrared Glasses"
+msgstr "Инфрақызыл көзілдірігі"
+
+#: kig/kig_part.cpp:333
+msgid "Enable/disable hidden objects' visibility."
+msgstr "Нысаның көрінуін ауыстыру (көрсету/жасыру)."
+
+#: kig/kig_part.cpp:365
+#, kde-format
+msgid "Repeat Construction (%1)"
+msgstr "Құрылымды қайталау (%1)"
+
+#: kig/kig_part.cpp:367
+#, kde-format
+msgid "Repeat %1 (with new data)"
+msgstr "%1 дегенді (жаңа деректерімен) қайталау "
+
+#: kig/kig_part.cpp:396
 #, kde-format
 msgid ""
-"This Cabri file contains a \"%1\" object, which Kig does not currently "
-"support."
-msgstr "Бұл Cabri файлында, Kig әлі танымайтын \"%1\" нысаны кездесті."
+"The file \"%1\" you tried to open does not exist. Please verify that you "
+"entered the correct path."
+msgstr "Сұралған \"%1\" файл жоқ..Орының дұрыс келтірілгенін тексеіңіз."
 
-#: filters/drgeo-filter.cc:109
+#: kig/kig_part.cpp:398
+msgid "File Not Found"
+msgstr "Файл табылған жоқ"
+
+#: kig/kig_part.cpp:416
 #, kde-format
-msgid "The Dr. Geo file \"%1\" is a macro file so it contains no figures."
-msgstr "Бұл \"%1\" Dr. Geo макрос файлы, сондықтан бұнда ешбір фигура жоқ."
-
-#: filters/drgeo-filter.cc:112
-#, kde-format
-msgid "There are no figures in Dr. Geo file \"%1\"."
-msgstr "\"%1\" Dr. Geo файлында ешбір фигура жоқ."
-
-#: filters/drgeo-filter.cc:128
-msgid "Dr. Geo Filter"
-msgstr "Dr. Geo сүзгсі"
-
-#: filters/drgeo-filter.cc:129
 msgid ""
-"The current Dr. Geo file contains more than one figure.\n"
-"Please select which to import:"
+"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
+"support this format. If you think the format in question would be worth "
+"implementing support for, you can always ask us nicely on mailto:pino@kde."
+"org or do the work yourself and send me a patch."
 msgstr ""
-"Бұл \"%1\" Dr. Geo файлында бірнеше фигура бар.\n"
-"Қайсын импорттау керегін таңдаңыз:"
+"\"%1\" түріндегі құжатты сақтау талпынысты жасадыңыз; алайда, Kig бұл "
+"пішімінде файлды сақтай алмайды. Бұл пішім міндетті түрде болуға тиіс деген "
+"пікіріңіз болса, оны mailto:pino@kde.org адресіне жазып жіберуге болады, "
+"немесе керек жамауын озіңіз құрастырып ысалып жіберіңіз."
 
-#: filters/drgeo-filter.cc:339 filters/drgeo-filter.cc:397
-#: filters/drgeo-filter.cc:429 filters/drgeo-filter.cc:442
-#: filters/drgeo-filter.cc:465 filters/drgeo-filter.cc:481
-#: filters/drgeo-filter.cc:504 filters/drgeo-filter.cc:631
-#: filters/drgeo-filter.cc:649 filters/drgeo-filter.cc:690
-#: filters/drgeo-filter.cc:702 filters/drgeo-filter.cc:722
-#, kde-format
+#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
+msgid "Format Not Supported"
+msgstr "Сақтай алмайтын пішімі"
+
+#: kig/kig_part.cpp:463
 msgid ""
-"This Dr. Geo file contains a \"%1 %2\" object, which Kig does not currently "
-"support."
-msgstr "Бұл Dr. Geo файлында, Kig әлі танымайтын \"%1 %2\" нысаны кездесті."
-
-#: filters/drgeo-filter.cc:376
-msgid ""
-"This Dr. Geo file contains an intersection type, which Kig does not "
-"currently support."
-msgstr "Бұл Dr. Geo файлында, Kig әлі танымайтын қиылыстың түрі кездесті."
-
-#: filters/exporter.cc:72
-msgid "&Export to image"
-msgstr "Кескінге эк&спорттау"
-
-#: filters/exporter.cc:77
-msgid "&Image..."
-msgstr "&Кескін..."
-
-#: filters/exporter.cc:89
-msgid "Export as Image"
-msgstr "Кескін қылып экспорттау"
-
-#: filters/exporter.cc:90
-msgid "Image Options"
-msgstr "Кескіннің параметрлері"
-
-#: filters/exporter.cc:111
-msgid "Sorry, this file format is not supported."
-msgstr "Ғафу етіңіз,. бұл файл пішімінің қолдауы жоқ."
-
-#: filters/exporter.cc:135
-#, kde-format
-msgid "Sorry, something went wrong while saving to image \"%1\""
-msgstr "\"%1\" кескінің сақтаған кезде бірдемесі дұрыс болмады. "
-
-#: filters/exporter.cc:158
-msgid "&Export To"
-msgstr "Мынаған эк&спорттау"
-
-#: filters/filter.cc:73
-#, kde-format
-msgid ""
-"The file \"%1\" could not be opened.  This probably means that it does not "
-"exist, or that it cannot be opened due to its permissions"
+"Kig does not support saving to any other file format than its own. Save to "
+"Kig's format instead?"
 msgstr ""
-"\"%1\" файлы ашылмады. Ол немесе файл жоқ, немесе оны ашуға құқығыңыз жоқ "
-"дегені."
+"Kig өзінің пішімінен басқа пішімде файлды сақтай алмайды. Kig пішімінде "
+"сақталсын ба?"
 
-#: filters/filter.cc:82
-#, kde-format
+#: kig/kig_part.cpp:465
+msgid "Save Kig Format"
+msgstr "Kig пішімінде сақтау"
+
+#: kig/kig_part.cpp:700
 msgid ""
-"An error was encountered while parsing the file \"%1\".  It cannot be opened."
-msgstr "\"%1\" файлын талдау кезінде қате кездесті. Файл ашылмады."
-
-#: filters/filter.cc:84
-msgid "Parse Error"
-msgstr "Талдау қатесі"
-
-#: filters/filter.cc:95
-#, kde-format
-msgid "Kig cannot open the file \"%1\"."
-msgstr "Kig \"%1\" файлы ашалмады."
-
-#: filters/filter.cc:96 misc/lists.cc:325
-msgid "Not Supported"
-msgstr "Танылмайды"
-
-#: filters/kseg-filter.cc:182
-msgid ""
-"This KSeg document uses a scaling transformation, which Kig currently cannot "
-"import."
+"*.kig|Kig Documents (*.kig)\n"
+"*.kigz|Compressed Kig Documents (*.kigz)"
 msgstr ""
-"Бұл KSeg құжаты Kig импорттай алмайтын масштабтау түрлендіруін пайдаланады."
+"*.kig|Kig құжаттары (*.kig)\n"
+"*.kigz|Сығылған Kig құжаттары (*.kigz)"
 
-#: filters/kseg-filter.cc:561
-msgid ""
-"This KSeg file contains a filled circle, which Kig does not currently "
-"support."
-msgstr "Бұл KSeq файлында, Kig әлі танымайтын толтырылған шеңбері кездесті."
-
-#: filters/kseg-filter.cc:567
-msgid ""
-"This KSeg file contains an arc sector, which Kig does not currently support."
-msgstr "Бұл KSeq файлында, Kig әлі танымайтын доға сегменті кездесті."
-
-#: filters/kseg-filter.cc:573
-msgid ""
-"This KSeg file contains an arc segment, which Kig does not currently support."
-msgstr "Бұл KSeq файлында, Kig әлі танымайтын доға кесіндісі кездесті."
-
-#: filters/latexexporter.cc:77
-msgid "Export to &Latex..."
-msgstr "&Latex-ке экспорттау..."
-
-#: filters/latexexporter.cc:82
-msgid "&Latex..."
-msgstr "&Latex..."
-
-#: filters/latexexporter.cc:538
-msgid "*.tex|Latex Documents (*.tex)"
-msgstr "*.tex|Latex құжаттары (*.tex)"
-
-#: filters/latexexporter.cc:539
-msgid "Export as Latex"
-msgstr "Latex сияқты экспорттау"
-
-#: filters/latexexporter.cc:540
-msgid "Latex Options"
-msgstr "Latex параметрлері"
-
-#: filters/native-filter.cc:194
+#: kig/kig_part.cpp:711 misc/kigfiledialog.cc:54 modes/typesdialog.cpp:456
 #, kde-format
-msgid ""
-"This file was created by Kig version \"%1\", which this version cannot open."
-msgstr "Бұл файлды Kig \"%1\" нұсқасы жазған, ол бұл нұсқасында ашылмайды."
+msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
+msgstr "\"%1\" деген файл бар екен. Үстінен жаза бермексіз бе?"
 
-#: filters/native-filter.cc:200
+#: kig/kig_part.cpp:712 misc/kigfiledialog.cc:55 modes/typesdialog.cpp:458
+msgid "Overwrite File?"
+msgstr "Файл үстінен жазбақсыз ба?"
+
+#: kig/kig_part.cpp:869
+msgid "Print Geometry"
+msgstr "Басып шығару"
+
+#: kig/kig_part.cpp:936
 #, kde-format
+msgid "Hide %1 Object"
+msgid_plural "Hide %1 Objects"
+msgstr[0] "%1 нысанды жасыру"
+
+#: kig/kig_part.cpp:955
+#, kde-format
+msgid "Show %1 Object"
+msgid_plural "Show %1 Objects"
+msgstr[0] "%1 нысанды көрсету"
+
+#: kig/kig_view.cpp:220
+msgid "Zoom In"
+msgstr "Үлкейту"
+
+#: kig/kig_view.cpp:240
+msgid "Zoom Out"
+msgstr "Кішірейту"
+
+#: kig/kig_view.cpp:520
+msgid "Recenter View"
+msgstr "Ортасына келтіру"
+
+#: kig/kig_view.cpp:542
+msgid "Select the rectangle that should be shown."
+msgstr "Көрсетілетін тікбұрышын таңдау."
+
+#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
+msgid "Change Shown Part of Screen"
+msgstr "Экранда көрсетілетін бөлігін өзгерту"
+
+#: kig/kig_view.cpp:587
+msgid "Select Zoom Area"
+msgstr "Үлкейту аумағын таңдау"
+
+#: kig/kig_view.cpp:588
 msgid ""
-"This file was created by Kig version \"%1\".\n"
-"Support for older Kig formats (pre-0.4) has been removed from Kig.\n"
-"You can try to open this file with an older Kig version (0.4 to 0.6),\n"
-"and then save it again, which will save it in the new format."
+"Select the zoom area by entering the coordinates<br />of the upper left "
+"corner and the lower right corner."
 msgstr ""
-"Бұл файл Kig-тың \"%1\" нұсқасымен жазылған.\n"
-"Қазіргі Kig тым ескі (0.4 алдындағы) пішімін түсінбейді.\n"
-"Бұл файлды оңша ескірмеген Kig (0.4 - 0.6) нұсқасымен,\n"
-"ашып, жаңа пішіміге ауыстырып алуға болады."
+"Жоғарғы сол жақ пен төменгі оң жақ бұрыштарын келтіріп, үлкейтетін аумағын "
+"көрсетіңіз."
 
-#: filters/native-filter.cc:231 filters/native-filter.cc:425
+#. i18n: ectx: Menu (file)
+#: kig/kigpartui.rc:5 kig/kigui.rc:4
+msgid "&File"
+msgstr "&Файл"
+
+#. i18n: ectx: Menu (edit)
+#: kig/kigpartui.rc:16
+msgid "&Edit"
+msgstr "&Өңдеу"
+
+#. i18n: ectx: Menu (view)
+#: kig/kigpartui.rc:27
+msgid "&View"
+msgstr "&Көрініс"
+
+#. i18n: ectx: Menu (objects)
+#: kig/kigpartui.rc:35
+msgid "&Objects"
+msgstr "&Нысандар"
+
+#. i18n: ectx: Menu (new_point)
+#: kig/kigpartui.rc:37
+msgid "&Points"
+msgstr "Н&үктелер"
+
+#. i18n: ectx: Menu (new_line)
+#: kig/kigpartui.rc:49
+msgid "&Lines"
+msgstr "&Сызықтар"
+
+#. i18n: ectx: Menu (new_circle)
+#: kig/kigpartui.rc:59
+msgid "&Circles && Arcs"
+msgstr "&Шеңбер && Доғалар"
+
+#. i18n: ectx: Menu (new_poligon)
+#: kig/kigpartui.rc:70
+msgid "Poly&gons"
+msgstr "Көп&бұрыштар"
+
+#. i18n: ectx: Menu (new_vector)
+#: kig/kigpartui.rc:82
+msgid "&Vectors && Segments"
+msgstr "&Вектор && Кесінділер"
+
+#. i18n: ectx: Menu (new_conic)
+#: kig/kigpartui.rc:91
+msgid "Co&nics && Cubics"
+msgstr "К&онустық қима мен Кубтықтыар"
+
+#. i18n: ectx: Menu (new_moreconics)
+#: kig/kigpartui.rc:98
+msgid "More Conics"
+msgstr "Қосымша конустық қималары"
+
+#. i18n: ectx: Menu (new_cubic)
+#: kig/kigpartui.rc:113
+msgid "Cu&bics"
+msgstr "Ку&биктер"
+
+#. i18n: ectx: Menu (new_bezier)
+#: kig/kigpartui.rc:121
+msgid "&Bézier curves"
+msgstr "&Безье қисықтары"
+
+#. i18n: ectx: Menu (new_angle)
+#: kig/kigpartui.rc:131
+msgid "&Angles"
+msgstr "Бұрышт&ар"
+
+#. i18n: ectx: Menu (new_transformation)
+#: kig/kigpartui.rc:136
+msgid "&Transformations"
+msgstr "&Түрлендіру"
+
+#. i18n: ectx: Menu (new_differentialgeometry)
+#: kig/kigpartui.rc:154
+msgid "&Differential geometry"
+msgstr "&Дифференциалдық геометрия"
+
+#. i18n: ectx: Menu (new_test)
+#: kig/kigpartui.rc:161
+msgid "T&ests"
+msgstr "С&ынақ"
+
+#. i18n: ectx: Menu (new_other)
+#: kig/kigpartui.rc:172
+msgid "&Other"
+msgstr "&Басқа"
+
+#. i18n: ectx: Menu (types)
+#: kig/kigpartui.rc:186
+msgid "&Types"
+msgstr "&Түрлер"
+
+#. i18n: ectx: Menu (tools)
+#: kig/kigpartui.rc:191
+msgid "&Tools"
+msgstr "&Құралдар"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: kig/kigpartui.rc:204 kig/kigui.rc:23
+msgid "Main Toolbar"
+msgstr "Негізгі құралдар"
+
+#. i18n: ectx: ToolBar (points_toolbar)
+#: kig/kigpartui.rc:218
+msgid "Points"
+msgstr "Нүктелер"
+
+#. i18n: ectx: ToolBar (line_toolbar)
+#: kig/kigpartui.rc:229
+msgid "Lines"
+msgstr "Сызықтар"
+
+#. i18n: ectx: ToolBar (vectseg_toolbar)
+#: kig/kigpartui.rc:239
+msgid "Vectors && Segments"
+msgstr "Вектор && Кесінділер"
+
+#. i18n: ectx: ToolBar (circle_toolbar)
+#: kig/kigpartui.rc:247
+msgid "Circles && Arcs"
+msgstr "Шеңбер && Доғалар"
+
+#. i18n: ectx: ToolBar (conic_toolbar)
+#: kig/kigpartui.rc:255
+msgid "Conics"
+msgstr "Конустық қималар"
+
+#. i18n: ectx: ToolBar (bezier_toolbar)
+#: kig/kigpartui.rc:264
+msgid "Bézier Curves"
+msgstr "Безье қисықтары"
+
+#. i18n: ectx: ToolBar (angles_toolbar)
+#: kig/kigpartui.rc:274
+msgid "Angles"
+msgstr "Бұрыштар"
+
+#. i18n: ectx: ToolBar (transformation_toolbar)
+#: kig/kigpartui.rc:279
+msgid "Transformations"
+msgstr "Түрлендіру"
+
+#. i18n: ectx: ToolBar (tests_toolbar)
+#: kig/kigpartui.rc:293
+msgid "Tests"
+msgstr "Сынақ"
+
+#. i18n: ectx: ToolBar (rest_toolbar)
+#: kig/kigpartui.rc:305
+msgid "Other Objects"
+msgstr "Басқа нысандар"
+
+#. i18n: ectx: ToolBar (view_toolbar)
+#: kig/kigpartui.rc:313
+msgid "View"
+msgstr "Көрініс"
+
+#. i18n: ectx: Menu (settings)
+#: kig/kigui.rc:13
+msgid "&Settings"
+msgstr "&Баптау"
+
+#: kig/main.cpp:98
+msgid "Kig"
+msgstr "Kig"
+
+#: kig/main.cpp:104
 msgid ""
-"This Kig file has a coordinate system that this Kig version does not "
-"support.\n"
-"A standard coordinate system will be used instead."
+"Do not show a GUI. Convert the specified file to the native Kig format. "
+"Output goes to stdout unless --outfile is specified."
 msgstr ""
-"Бұл Kig файлы осы Kig нұсқасы түсінбейтін координаттар жүйесін қолданады.\n"
-"Оның орнына стандартты координаттар жүйесі пайдаланады."
+"Графикалық интерфейссыз. Келтірілген файлды Kig пішіміне аудару. --outfile "
+"деген келтірілмесе шығыс stdout-қа болады."
 
-#: filters/native-filter.cc:336 filters/native-filter.cc:529
-#: objects/object_imp_factory.cc:505
-#, kde-format
+#: kig/main.cpp:106
 msgid ""
-"This Kig file uses an object of type \"%1\", which this Kig version does not "
-"support.Perhaps you have compiled Kig without support for this object type,"
-"or perhaps you are using an older Kig version."
+"File to output the created native file to. '-' means output to stdout. "
+"Default is stdout as well."
 msgstr ""
-"Бұл Kig файлда осы Kig түсінбейтін түрі \"%1\" нысан бар. Демек, Kig-іңіз "
-"бұл  нысан түрін қолдауысыз жинақталған немесе қолданып отырған Kig нұсқаңыз "
-"ескірген."
+"Шығыс ақпарат жазатын файлы. \"-\" дегені шығыс файлы стандартты (stdout) "
+"деген сөз.  Әдеттегісі де осы stdout."
 
-#: filters/native-filter.cc:389
-#, kde-format
-msgid ""
-"This Kig file uses an object of type \"%1\", which is obsolete, you should "
-"save the construction with a different name and check that it works as "
-"expected."
-msgstr ""
-"Бұл Kig файлда түрі \"%1\" ескірген нысан бар, сондықтан, құрылымды басқа "
-"атауымен сақтап, ол керегіндей істейтінің тексеріп көріңіз."
-
-#: filters/svgexporter.cc:45
-msgid "&Export to SVG..."
-msgstr "SVG-ға эк&спорттау..."
-
-#: filters/svgexporter.cc:50
-msgid "&SVG..."
-msgstr "&SVG..."
-
-#: filters/svgexporter.cc:61
-msgid "*.svg|Scalable Vector Graphics (*.svg)"
-msgstr "*.svg|Scalable Vector Graphics (*.svg)"
-
-#: filters/svgexporter.cc:62
-msgid "Export as SVG"
-msgstr "SVGs сияқты экспорттау"
-
-#: filters/svgexporter.cc:63
-msgid "SVG Options"
-msgstr "SVG параметрлері"
-
-#: filters/svgexporter.cc:110
-#, kde-format
-msgid "Sorry, something went wrong while saving to SVG file \"%1\""
-msgstr "SVG \"%1\" файлын сақтаған кезде бірдемесі дұрыс болмады. "
-
-#: filters/xfigexporter.cc:60
-msgid "Export to &XFig file"
-msgstr "&XFig файлына экспорттау"
-
-#: filters/xfigexporter.cc:66
-msgid "&XFig File..."
-msgstr "&XFig файлы..."
-
-#: filters/xfigexporter.cc:580
-msgid "*.fig|XFig Documents (*.fig)"
-msgstr "*.fig|XFig құжаттары (*.fig)"
-
-#: filters/xfigexporter.cc:581
-msgid "Export as XFig File"
-msgstr "XFig сияқты экспорттау"
+#: kig/main.cpp:107
+msgid "Document to open"
+msgstr "Ашатын құжат"
 
 #: misc/builtin_stuff.cc:60
 msgid "Point by Numeric Labels"
@@ -1788,6 +1692,54 @@ msgstr "Python скрипті"
 msgid "Construct a new Python script."
 msgstr "Жаңа Python скриптін құру."
 
+#: misc/coordinate_system.cpp:325
+msgid ""
+"Enter coordinates in the following format: \"x;y\",\n"
+"where x is the x coordinate, and y is the y coordinate."
+msgstr ""
+"Координаттарын мынадай түрде келтіріңіз: \"x;y\",\n"
+"мұнда x пен y - кәдімгі Декарт координаттары."
+
+#: misc/coordinate_system.cpp:331
+msgid ""
+"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
+"the x coordinate, and y is the y coordinate."
+msgstr ""
+"Координаттарын мынадай түрде келтіріңіз: <b>\"x;,y\"</b>,<br />мұнда x пен y "
+"- кәдімгі абцисса мен ордината."
+
+#: misc/coordinate_system.cpp:371
+msgid ""
+"Enter coordinates in the following format: \"r; θ°\",\n"
+"where r and θ are the polar coordinates."
+msgstr ""
+"Координаттарын мынадай түрде келтіріңіз: \"r; θ°\",\n"
+"мұнда r мен θ - поляр координаттары."
+
+#: misc/coordinate_system.cpp:378
+msgid ""
+"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
+"and θ are the polar coordinates."
+msgstr ""
+"Координаттарын мынадай түрде келтіріңіз: <b>\"r; θ°\"</b>,<br />мұнда r мен "
+"θ - поляр координаттары."
+
+#: misc/coordinate_system.cpp:530
+msgid "&Euclidean"
+msgstr "&Эвклидтік"
+
+#: misc/coordinate_system.cpp:531
+msgid "&Polar"
+msgstr "&Полярлық"
+
+#: misc/coordinate_system.cpp:581
+msgid "Set Euclidean Coordinate System"
+msgstr "Эвклидтік координаттарды құру"
+
+#: misc/coordinate_system.cpp:583
+msgid "Set Polar Coordinate System"
+msgstr "Полярлық координаттарды құру"
+
 #: misc/goniometry.cc:122
 msgctxt "Translators: Degrees"
 msgid "Deg"
@@ -1845,14 +1797,15 @@ msgstr "Санды құру"
 msgid "Numeric Value"
 msgstr "Сан"
 
-#: misc/kigfiledialog.cc:54 kig/kig_part.cpp:711 modes/typesdialog.cpp:456
-#, kde-format
-msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
-msgstr "\"%1\" деген файл бар екен. Үстінен жаза бермексіз бе?"
+#. i18n: ectx: property (text), widget (QCheckBox, m_defaultCheckBox)
+#: misc/kigcoordinateprecisiondialog.ui:9
+msgid "&Use default coordinate precision"
+msgstr "Координат дәлдігі әдеттігідей &болсын"
 
-#: misc/kigfiledialog.cc:55 kig/kig_part.cpp:712 modes/typesdialog.cpp:458
-msgid "Overwrite File?"
-msgstr "Файл үстінен жазбақсыз ба?"
+#. i18n: ectx: property (text), widget (QLabel, m_precisionLabel)
+#: misc/kigcoordinateprecisiondialog.ui:16
+msgid "&Specify coordinate precision:"
+msgstr "&Координат дәлдігі:"
 
 #: misc/kiginputdialog.cc:130
 msgid "Set Angle Size"
@@ -2460,6 +2413,24 @@ msgstr "Бұл батырма назардағы макро түрінің та�
 msgid "The name of the macro can not be empty."
 msgstr "Макро атауы бос болуға тиіс емес."
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: modes/edittypewidget.ui:36
+msgid ""
+"Here you can modify the name, the description and the icon of this macro "
+"type."
+msgstr ""
+"Мұнда бұл макрос түрінің атауын, түсініктемесін, таңбашасын өзгерте аласыз."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_3)
+#: modes/edittypewidget.ui:73
+msgid "Name:"
+msgstr "Атауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2_2_2)
+#: modes/edittypewidget.ui:93
+msgid "Description:"
+msgstr "Түсініктемесі:"
+
 #: modes/historydialog.cc:41
 msgid "History Browser"
 msgstr "Журнал-шолғышы"
@@ -2467,6 +2438,36 @@ msgstr "Журнал-шолғышы"
 #: modes/historydialog.cc:125
 msgid "Start of the construction"
 msgstr "Құрылымдың бастауы"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: modes/historywidget.ui:22
+msgid "Description of the current step:"
+msgstr "Қадамының түсініктемесі:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonFirst)
+#: modes/historywidget.ui:53
+msgid "First step"
+msgstr "Алғашқы қадам"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonBack)
+#: modes/historywidget.ui:66
+msgid "One step back"
+msgstr "Бір қадамға шегіну"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: modes/historywidget.ui:82
+msgid "/"
+msgstr "/"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonNext)
+#: modes/historywidget.ui:96
+msgid "One step forward"
+msgstr "Бір қадамға ілгерлеу"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonLast)
+#: modes/historywidget.ui:109
+msgid "Last step"
+msgstr "Соңғы қадам"
 
 #: modes/label.cc:168 modes/macrowizard.cc:130 modes/typesdialog.cpp:314
 msgid "Name"
@@ -2663,6 +2664,11 @@ msgstr "&Көрсету"
 msgid "&Move"
 msgstr "Ж&ылжыту"
 
+#. i18n: ectx: property (text), widget (KPushButton, buttonRemove)
+#: modes/popup.cc:390 modes/typesdialog.cpp:369 modes/typeswidget.ui:112
+msgid "&Delete"
+msgstr "&Өшіру"
+
 #: modes/popup.cc:400
 msgid "&Custom Color"
 msgstr "&Өзгеше түстер"
@@ -2704,10 +2710,6 @@ msgctxt "More menu items"
 msgid "More..."
 msgstr "Қосымша..."
 
-#: modes/popup.cc:936 kig/kig_part.cpp:256
-msgid "U&nhide All"
-msgstr "Бүкілін к&өрсету"
-
 #: modes/textlabelwizard.cc:50
 msgid "Enter Label Text"
 msgstr "Жазуын келтіру"
@@ -2743,6 +2745,109 @@ msgstr ""
 #: modes/textlabelwizard.cc:123
 msgid "Construct Label"
 msgstr "Жарлығын құру"
+
+#: modes/typesdialog.cpp:130
+msgid "Macro"
+msgstr "Макрос"
+
+#: modes/typesdialog.cpp:313
+msgid "Type"
+msgstr "Түрі"
+
+#: modes/typesdialog.cpp:315
+msgid "Description"
+msgstr "Түсініктеме"
+
+#: modes/typesdialog.cpp:339
+msgid "Manage Types"
+msgstr "Түрлерін басқару"
+
+#. i18n: ectx: property (text), widget (KPushButton, buttonEdit)
+#: modes/typesdialog.cpp:368 modes/typeswidget.ui:102
+msgid "&Edit..."
+msgstr "&Өңдеу..."
+
+#. i18n: ectx: property (text), widget (KPushButton, buttonExport)
+#: modes/typesdialog.cpp:371 modes/typeswidget.ui:154
+msgid "E&xport..."
+msgstr "Э&кспорттау..."
+
+#: modes/typesdialog.cpp:426
+#, kde-format
+msgid "Are you sure you want to delete this type?"
+msgid_plural "Are you sure you want to delete these %1 types?"
+msgstr[0] "Осы %1 түрлерін шын өшірмексіз бе?"
+
+#: modes/typesdialog.cpp:428
+msgid "Are You Sure?"
+msgstr "Рас па?"
+
+#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
+msgid ""
+"*.kigt|Kig Types Files\n"
+"*|All Files"
+msgstr ""
+"*.kigt|Kig түрлер файлдары\n"
+"*|Бүкіл файлдар"
+
+#: modes/typesdialog.cpp:451
+msgid "Export Types"
+msgstr "Түрлерін экспорттау"
+
+#: modes/typesdialog.cpp:466
+msgid "Import Types"
+msgstr "Түрлерін импорттау"
+
+#: modes/typesdialog.cpp:494
+msgid ""
+"There is more than one type selected. You can only edit one type at a time. "
+"Please select only the type you want to edit and try again."
+msgstr ""
+"Көп түрі таңдалған. Бір кезде бір ғана түрін өңдеуге болады. Біреуін ғана "
+"таңдап, қайталал көріңіз. "
+
+#: modes/typesdialog.cpp:497
+msgid "More Than One Type Selected"
+msgstr "Көп түрі таңдалған"
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, typeList)
+#: modes/typeswidget.ui:37
+msgid "Select types here..."
+msgstr "Түрін таңдау..."
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, typeList)
+#: modes/typeswidget.ui:40
+msgid ""
+"This is a list of the current macro types... You can select, edit, delete, "
+"export and import them..."
+msgstr ""
+"Бұл қолданыстағы макро түрлер тізімі... Оларды таңдап, өзгертуге, өшіруге, "
+"импорттауға, экспорттауға болады..."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
+#: modes/typeswidget.ui:99
+msgid "Edit the selected type."
+msgstr "Таңдалған түрін өзгерту."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonRemove)
+#: modes/typeswidget.ui:109
+msgid "Delete all the selected types in the list."
+msgstr "Тізімдегі бүкіл таңдалған түрлерін өшіру."
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonExport)
+#: modes/typeswidget.ui:151
+msgid "Export all the selected types to a file."
+msgstr "Тізімдегі бүкіл таңдалған түрлерін экспорттау"
+
+#. i18n: ectx: property (whatsThis), widget (KPushButton, buttonImport)
+#: modes/typeswidget.ui:161
+msgid "Import macros that are contained in one or more files."
+msgstr "Бір не бірнеше файлдағы макростарды импорттау."
+
+#. i18n: ectx: property (text), widget (KPushButton, buttonImport)
+#: modes/typeswidget.ui:164
+msgid "&Import..."
+msgstr "&Импорттау..."
 
 #: objects/angle_type.cc:40
 msgid "Construct an angle through this point"
@@ -3123,6 +3228,10 @@ msgstr "Мына басқару нүктесі бар кубтық рацион�
 msgid "Test Result"
 msgstr "Нәтижесін сынау"
 
+#: objects/centerofcurvature_type.cc:35 objects/tangent_type.cc:36
+msgid "Select the curve..."
+msgstr "Қисықты таңдау..."
+
 #: objects/centerofcurvature_type.cc:36
 msgid "Select a point on the curve..."
 msgstr "Қисықта нүктені таңдау..."
@@ -3197,6 +3306,14 @@ msgstr "Шеңберді жасыру"
 #: objects/circle_type.cc:32
 msgid "Construct a circle through this point"
 msgstr "Осы нүктеден өтетін шеңберді құру"
+
+#: objects/circle_type.cc:34
+msgid "Construct a circle with this center"
+msgstr "Осы центрімен шеңберді құру "
+
+#: objects/circle_type.cc:39 objects/circle_type.cc:194
+msgid "Select the center of the new circle..."
+msgstr "Жаңа шеңбердің центрін таңдау..."
 
 #: objects/circle_type.cc:41 objects/circle_type.cc:75
 #: objects/circle_type.cc:77 objects/circle_type.cc:79
@@ -5459,415 +5576,171 @@ msgstr ""
 "Скриптіңізде қате бар сияқты. Python интерпретаторы қате тапқан жоқ, бірақ, "
 "скрипт дұрыс нысанды құрған да жоқ. Скриптті түзеңіз."
 
-#: kig/kig_commands.cpp:100
-#, kde-format
-msgid "Remove %1 Object"
-msgid_plural "Remove %1 Objects"
-msgstr[0] "%1 нысанды өшіру"
-
-#: kig/kig_commands.cpp:112
-#, kde-format
-msgid "Add %1 Object"
-msgid_plural "Add %1 Objects"
-msgstr[0] "%1 нысанды қосу"
-
-#: kig/kig.cpp:90
-msgid "Could not find the necessary Kig library, check your installation."
-msgstr "Қажетті Kid-тың жиын файлы жоқ. Орнатылымыңызды түгелдеңіз."
-
-#: kig/kig.cpp:203
-#, kde-format
-msgid "Save changes to document %1?"
-msgstr "%1 құжатының өзгерістері сақталсын ба?"
-
-#: kig/kig.cpp:204
-msgid "Save Changes?"
-msgstr "Өзгерістер сақталсын ба?"
-
-#: kig/kig.cpp:239
+#. i18n: ectx: @info:tipoftheday
+#: tips:2
 msgid ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|All Supported Files (*.kig *.kigz *."
-"seg *.fgeo *.fig)\n"
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)\n"
-"*.kgeo|KGeo Documents (*.kgeo)\n"
-"*.seg|KSeg Documents (*.seg)\n"
-"*.fgeo|Dr. Geo Documents (*.fgeo)\n"
-"*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
+"<p>You can control a kig construction by means of a \"pykig\" \n"
+"python script, that can be executed with the command \n"
+"<code>pykig.py</code>.  Here is a nice example \n"
+"(<code>hexagons.kpy</code>) you can try:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
 msgstr ""
-"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|Бүкіл танитын файлдары (*.kig *.kigz *."
-"seg *.fgeo *.fig)\n"
-"*.kig|Kig құжаттары (*.kig)\n"
-"*.kigz|Сығылған Kig құжаттары (*.kigz)\n"
-"*.kgeo|KGeo құжаттары (*.kgeo)\n"
-"*.seg|KSeg құжаттары (*.seg)\n"
-"*.fgeo|Dr. Geo құжаттары (*.fgeo)\n"
-"*.fig *.FIG|Cabri құжаттары (*.fig *.FIG)"
+"<p>Kig құрылымын \"pykig\" деген python скриптімен\n"
+"басқаруға болады, ал ол <code>pykig.py</code> деген\n"
+"командамен орындалады.  Мұнда, орындап көру үшін, бір\n"
+"(<code>hexagons.kpy</code> деген) жақсы мысал келтірілген:\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
 
-#: kig/kig_part.cpp:86
-msgid "KigPart"
-msgstr "KigPart"
-
-#: kig/kig_part.cpp:90
-msgid "&Set Coordinate System"
-msgstr "&Координаттар жүйесін құру"
-
-#: kig/kig_part.cpp:131
-msgid "Kig Options"
-msgstr "Kig парметрлері"
-
-#: kig/kig_part.cpp:135
-msgid "Show grid"
-msgstr "Торын көрсету"
-
-#: kig/kig_part.cpp:138
-msgid "Show axes"
-msgstr "Осьтерді көрсету"
-
-#: kig/kig_part.cpp:227
-msgid "Invert Selection"
-msgstr "Таңдауын терістеу"
-
-#: kig/kig_part.cpp:234
-msgid "&Delete Objects"
-msgstr "&Нысандарды өшіру"
-
-#: kig/kig_part.cpp:238
-msgid "Delete the selected objects"
-msgstr "Таңдалған нысандарды өшіру"
-
-#: kig/kig_part.cpp:240
-msgid "Cancel Construction"
-msgstr "Құрылымынан айну"
-
-#: kig/kig_part.cpp:245
-msgid "Cancel the construction of the object being constructed"
-msgstr "Құрылып жатқаннан айну"
-
-#: kig/kig_part.cpp:248
-msgid "Repeat Construction"
-msgstr "Құрылымды қайталау"
-
-#: kig/kig_part.cpp:253
-msgid "Repeat the last construction (with new data)"
-msgstr "Соңғы құрылымын (жаңа деректерімен) қайталау "
-
-#: kig/kig_part.cpp:259
-msgid "Show all hidden objects"
-msgstr "Бүкіл жасырын нысандарды көрсету"
-
-#: kig/kig_part.cpp:262
-msgid "&New Macro..."
-msgstr "&Жаңа макрос..."
-
-#: kig/kig_part.cpp:265
-msgid "Define a new macro"
-msgstr "Жаңа макростың анықтамасын келтіру"
-
-#: kig/kig_part.cpp:267
-msgid "Manage &Types..."
-msgstr "&Түрлерді басқару..."
-
-#: kig/kig_part.cpp:270
-msgid "Manage macro types."
-msgstr "Макрос түрлерін басқару"
-
-#: kig/kig_part.cpp:272
-msgid "&Browse History..."
-msgstr "Журналын ақтару..."
-
-#: kig/kig_part.cpp:275
-msgid "Browse the history of the current construction."
-msgstr "Осы құрылымның тарихын ақтару."
-
-#: kig/kig_part.cpp:282 kig/kig_part.cpp:283
-msgid "Zoom in on the document"
-msgstr "Құжатты жақындату"
-
-#: kig/kig_part.cpp:287 kig/kig_part.cpp:288
-msgid "Zoom out of the document"
-msgstr "Құжатты алыстату"
-
-#: kig/kig_part.cpp:294 kig/kig_part.cpp:295
-msgid "Recenter the screen on the document"
-msgstr "Құжатты экранның ортасына келтіру"
-
-#: kig/kig_part.cpp:298 kig/kig_part.cpp:299
-msgid "View this document full-screen."
-msgstr "Құжатты толық экранда қарау."
-
-#: kig/kig_part.cpp:302
-msgid "&Select Shown Area"
-msgstr "Көрсететін аумағын таңдау"
-
-#: kig/kig_part.cpp:305 kig/kig_part.cpp:306
-msgid "Select the area that you want to be shown in the window."
-msgstr "Терезеде көрсететін аумағын таңдау."
-
-#: kig/kig_part.cpp:308
-msgid "S&elect Zoom Area"
-msgstr "Үлкейту аумағын таңдау"
-
-#: kig/kig_part.cpp:314
-msgid "Set Coordinate &Precision..."
-msgstr "&Координаттың дәлдігі..."
-
-#: kig/kig_part.cpp:316
-msgid "Set the floating point precision of coordinates in the document. "
-msgstr "Құжаттағы координаттың жылжымалы үтірлі дәлдігін келтіру.  "
-
-#: kig/kig_part.cpp:319
-msgid "Show &Grid"
-msgstr "Торын көрсету"
-
-#: kig/kig_part.cpp:321
-msgid "Show or hide the grid."
-msgstr "Торын көрсету не жасыру "
-
-#: kig/kig_part.cpp:325
-msgid "Show &Axes"
-msgstr "&Осьтерді көрсету"
-
-#: kig/kig_part.cpp:327
-msgid "Show or hide the axes."
-msgstr "Осьтерді көрсету не жасыру "
-
-#: kig/kig_part.cpp:331
-msgid "Wear Infrared Glasses"
-msgstr "Инфрақызыл көзілдірігі"
-
-#: kig/kig_part.cpp:333
-msgid "Enable/disable hidden objects' visibility."
-msgstr "Нысаның көрінуін ауыстыру (көрсету/жасыру)."
-
-#: kig/kig_part.cpp:365
-#, kde-format
-msgid "Repeat Construction (%1)"
-msgstr "Құрылымды қайталау (%1)"
-
-#: kig/kig_part.cpp:367
-#, kde-format
-msgid "Repeat %1 (with new data)"
-msgstr "%1 дегенді (жаңа деректерімен) қайталау "
-
-#: kig/kig_part.cpp:396
-#, kde-format
+#. i18n: ectx: @info:tipoftheday
+#: tips:28
 msgid ""
-"The file \"%1\" you tried to open does not exist. Please verify that you "
-"entered the correct path."
-msgstr "Сұралған \"%1\" файл жоқ..Орының дұрыс келтірілгенін тексеіңіз."
-
-#: kig/kig_part.cpp:398
-msgid "File Not Found"
-msgstr "Файл табылған жоқ"
-
-#: kig/kig_part.cpp:416
-#, kde-format
-msgid ""
-"You tried to open a document of type \"%1\"; unfortunately, Kig does not "
-"support this format. If you think the format in question would be worth "
-"implementing support for, you can always ask us nicely on mailto:pino@kde."
-"org or do the work yourself and send me a patch."
+"<p>You can repeat the latest construction simply by pressing the key\n"
+"'Z'; this comes in very handy if you need to construct a sequence\n"
+"of objects with the same construction, especially if there is\n"
+"no shortcut for that construction.</p>\n"
 msgstr ""
-"\"%1\" түріндегі құжатты сақтау талпынысты жасадыңыз; алайда, Kig бұл "
-"пішімінде файлды сақтай алмайды. Бұл пішім міндетті түрде болуға тиіс деген "
-"пікіріңіз болса, оны mailto:pino@kde.org адресіне жазып жіберуге болады, "
-"немесе керек жамауын озіңіз құрастырып ысалып жіберіңіз."
+"<p>Ең соңғы құрылымын жәй ғана 'Z' пернесін басып қайталауға\n"
+"болады, бұл бірнеше құрылымы бірдей нысандардан тұратын\n"
+"құрылымды жасағанда ыңғайлы, әсіресе ол құрылым амалының\n"
+"перне тіркесімі болмаса.</p>\n"
 
-#: kig/kig_part.cpp:422 kig/kig_part.cpp:465
-msgid "Format Not Supported"
-msgstr "Сақтай алмайтын пішімі"
-
-#: kig/kig_part.cpp:463
+#. i18n: ectx: @info:tipoftheday
+#: tips:37
 msgid ""
-"Kig does not support saving to any other file format than its own. Save to "
-"Kig's format instead?"
+"<p>One of the most powerful tools in Kig are the menus that you can\n"
+"enter by right-clicking on an object, or on some empty space in the\n"
+"document.  You can use them to give objects names, change their colors\n"
+"and line styles, and lots of other interesting things.</p>\n"
 msgstr ""
-"Kig өзінің пішімінен басқа пішімде файлды сақтай алмайды. Kig пішімінде "
-"сақталсын ба?"
+"<p>Kig баздарламасының қуатты құралдарының бірі - ол, құжаттағы\n"
+"нысанның не бір бос орынның үстінен тышқанның оң жақ батырмасымен\n"
+"түрткенде шыға келетін мәзірі. Оның көмегімен нысанды атауға, түсін,\n"
+"сызықтатының стилін өзгертуге, және тағы басқа да көп нәрсе істеуге\n"
+"болады.</p>\n"
 
-#: kig/kig_part.cpp:465
-msgid "Save Kig Format"
-msgstr "Kig пішімінде сақтау"
-
-#: kig/kig_part.cpp:700
+#. i18n: ectx: @info:tipoftheday
+#: tips:46
 msgid ""
-"*.kig|Kig Documents (*.kig)\n"
-"*.kigz|Compressed Kig Documents (*.kigz)"
+"<p>You can construct new points without using the menu or the toolbar, "
+"simply\n"
+"clicking somewhere on the Kig document with the <em>middle mouse\n"
+"button</em>.</p>\n"
 msgstr ""
-"*.kig|Kig құжаттары (*.kig)\n"
-"*.kigz|Сығылған Kig құжаттары (*.kigz)"
+"<p>Жаңа нүктелерін мәзір не құрал панелінің пайдаланбай , жәй ғана,\n"
+"Kig құжатының бір жерінде <em>тышқанның ортаңғы батырмасын</em>\n"
+"түртіп құруға болады.</p>\n"
 
-#: kig/kig_part.cpp:869
-msgid "Print Geometry"
-msgstr "Басып шығару"
-
-#: kig/kig_part.cpp:936
-#, kde-format
-msgid "Hide %1 Object"
-msgid_plural "Hide %1 Objects"
-msgstr[0] "%1 нысанды жасыру"
-
-#: kig/kig_part.cpp:955
-#, kde-format
-msgid "Show %1 Object"
-msgid_plural "Show %1 Objects"
-msgstr[0] "%1 нысанды көрсету"
-
-#: kig/kig_view.cpp:220
-msgid "Zoom In"
-msgstr "Үлкейту"
-
-#: kig/kig_view.cpp:240
-msgid "Zoom Out"
-msgstr "Кішірейту"
-
-#: kig/kig_view.cpp:520
-msgid "Recenter View"
-msgstr "Ортасына келтіру"
-
-#: kig/kig_view.cpp:542
-msgid "Select the rectangle that should be shown."
-msgstr "Көрсетілетін тікбұрышын таңдау."
-
-#: kig/kig_view.cpp:550 kig/kig_view.cpp:598
-msgid "Change Shown Part of Screen"
-msgstr "Экранда көрсетілетін бөлігін өзгерту"
-
-#: kig/kig_view.cpp:587
-msgid "Select Zoom Area"
-msgstr "Үлкейту аумағын таңдау"
-
-#: kig/kig_view.cpp:588
+#. i18n: ectx: @info:tipoftheday
+#: tips:54
 msgid ""
-"Select the zoom area by entering the coordinates<br />of the upper left "
-"corner and the lower right corner."
+"<p>Kig can open several file formats: its files (<code>.kig</code> files),\n"
+"<em>KGeo</em> files, <em>KSeg</em> files, and, partially, <em>Dr. Geo</em>\n"
+"and <em>Cabri&#8482;</em> files.</p>\n"
 msgstr ""
-"Жоғарғы сол жақ пен төменгі оң жақ бұрыштарын келтіріп, үлкейтетін аумағын "
-"көрсетіңіз."
+"<p>Kig бірнеше пішімдегі файлдарды аша алады: өзінің (<code>.kig</code>) "
+"файлдарын,\n"
+"<em>KGeo</em> файлдарын, <em>KSeg</em> файлдарын, және кейбір <em>Dr. Geo</"
+"em>\n"
+"мен <em>Cabri&#8482;</em> файлдарын.</p>\n"
 
-#: kig/main.cpp:98
-msgid "Kig"
-msgstr "Kig"
-
-#: kig/main.cpp:104
+#. i18n: ectx: @info:tipoftheday
+#: tips:62
 msgid ""
-"Do not show a GUI. Convert the specified file to the native Kig format. "
-"Output goes to stdout unless --outfile is specified."
+"<p>Kig has more than 20 objects and 10 transformations with more than 80 \n"
+"constructions you can use in your documents: open the <em>Objects</em> \n"
+"menu to see them all.</p>\n"
 msgstr ""
-"Графикалық интерфейссыз. Келтірілген файлды Kig пішіміне аудару. --outfile "
-"деген келтірілмесе шығыс stdout-қа болады."
+"<p>Kig құжаттарында пайдалану үшін 20-дан астам нысандар және 10\n"
+"түрлендірулер мен 80-нен астам құрылымдары бар. Бәрін көру үшін\n"
+"мәзірдегі <em>Нысандар</em> дегенді ашыңыз.</p>\n"
 
-#: kig/main.cpp:106
+#. i18n: ectx: @info:tipoftheday
+#: tips:70
 msgid ""
-"File to output the created native file to. '-' means output to stdout. "
-"Default is stdout as well."
+"<p>You can use the selected objects to start the construction of an object\n"
+"which requires the selected objects as arguments. For example, if you have "
+"two\n"
+"points selected, you can choose <em>Start->Circle by Three Points</em> from "
+"the\n"
+"popup menu to start constructing a circle by three points.</p>\n"
 msgstr ""
-"Шығыс ақпарат жазатын файлы. \"-\" дегені шығыс файлы стандартты (stdout) "
-"деген сөз.  Әдеттегісі де осы stdout."
+"<p>Таңдалған нысандарды, аргумент ретінде қолданатын нысанды\n"
+"құруды бастау үшін пайдалануға болады. Мысалы, егер екі нүкте таңдалып "
+"тұрса,\n"
+"қалқымалы мәзірінен <em>Бастау->Үш нүкте арқылы шеңбер</em> дегенді\n"
+"таңдап алып,\n"
+"үш нүкте арқылы шеңберді құруды бастауға болады.</p>\n"
 
-#: kig/main.cpp:107
-msgid "Document to open"
-msgstr "Ашатын құжат"
-
-#: misc/coordinate_system.cpp:325
+#. i18n: ectx: @info:tipoftheday
+#: tips:79
 msgid ""
-"Enter coordinates in the following format: \"x;y\",\n"
-"where x is the x coordinate, and y is the y coordinate."
+"<p>Kig can extends its object set using external macros. You can find some\n"
+"interesting macros on the Kig website:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
 msgstr ""
-"Координаттарын мынадай түрде келтіріңіз: \"x;y\",\n"
-"мұнда x пен y - кәдімгі Декарт координаттары."
+"<p>Kig нысандар қатарын, сыртқы макростарының көмегімен, кеңейте алады.\n"
+"Kig вебсайтнда бірқатар кызық макростарды таба аласыз:\n"
+"<a href=\"http://edu.kde.org/kig\">http://edu.kde.org/kig</a>.</p>\n"
 
-#: misc/coordinate_system.cpp:331
+#. i18n: ectx: @info:tipoftheday
+#: tips:87
 msgid ""
-"Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
-"the x coordinate, and y is the y coordinate."
+"<p>If you have more than one object under the mouse, and you want to select "
+"any\n"
+"of them, you can click with the <em>left mouse button</em>, while holding "
+"the\n"
+"<em>Shift</em> key, to get a list of the objects under the mouse cursor "
+"which\n"
+"you can then select from.</p>\n"
 msgstr ""
-"Координаттарын мынадай түрде келтіріңіз: <b>\"x;,y\"</b>,<br />мұнда x пен y "
-"- кәдімгі абцисса мен ордината."
+"<p>Егерде тышқан меңзерінің астында бірнеше нысан болса, онда қалауыңыз\n"
+"бойынша, біреуін таңдай аласыз. Ол үшін, <em>Shift</em> пернені басып "
+"тұрып,\n"
+"<em>тышқанның сол жақ батырмасын</em> түртіңіз де, шыққан тізімінен керегін\n"
+"таңдап алыңыз.</p>\n"
 
-#: misc/coordinate_system.cpp:371
+#. i18n: ectx: @info:tipoftheday
+#: tips:96
 msgid ""
-"Enter coordinates in the following format: \"r; θ°\",\n"
-"where r and θ are the polar coordinates."
+"<p>When you construct a locus, you can click on it with the <em>right</em> "
+"mouse\n"
+"button and select <em>cartesian equation</em> to see its cartesian "
+"equation, \n"
+"whenever it is an algebraic curve of low degree.</p>\n"
 msgstr ""
-"Координаттарын мынадай түрде келтіріңіз: \"r; θ°\",\n"
-"мұнда r мен θ - поляр координаттары."
-
-#: misc/coordinate_system.cpp:378
-msgid ""
-"Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
-"and θ are the polar coordinates."
-msgstr ""
-"Координаттарын мынадай түрде келтіріңіз: <b>\"r; θ°\"</b>,<br />мұнда r мен "
-"θ - поляр координаттары."
-
-#: misc/coordinate_system.cpp:530
-msgid "&Euclidean"
-msgstr "&Эвклидтік"
-
-#: misc/coordinate_system.cpp:531
-msgid "&Polar"
-msgstr "&Полярлық"
-
-#: misc/coordinate_system.cpp:581
-msgid "Set Euclidean Coordinate System"
-msgstr "Эвклидтік координаттарды құру"
-
-#: misc/coordinate_system.cpp:583
-msgid "Set Polar Coordinate System"
-msgstr "Полярлық координаттарды құру"
-
-#: modes/typesdialog.cpp:130
-msgid "Macro"
-msgstr "Макрос"
-
-#: modes/typesdialog.cpp:313
-msgid "Type"
-msgstr "Түрі"
-
-#: modes/typesdialog.cpp:315
-msgid "Description"
-msgstr "Түсініктеме"
-
-#: modes/typesdialog.cpp:339
-msgid "Manage Types"
-msgstr "Түрлерін басқару"
-
-#: modes/typesdialog.cpp:426
-#, kde-format
-msgid "Are you sure you want to delete this type?"
-msgid_plural "Are you sure you want to delete these %1 types?"
-msgstr[0] "Осы %1 түрлерін шын өшірмексіз бе?"
-
-#: modes/typesdialog.cpp:428
-msgid "Are You Sure?"
-msgstr "Рас па?"
-
-#: modes/typesdialog.cpp:451 modes/typesdialog.cpp:466
-msgid ""
-"*.kigt|Kig Types Files\n"
-"*|All Files"
-msgstr ""
-"*.kigt|Kig түрлер файлдары\n"
-"*|Бүкіл файлдар"
-
-#: modes/typesdialog.cpp:451
-msgid "Export Types"
-msgstr "Түрлерін экспорттау"
-
-#: modes/typesdialog.cpp:466
-msgid "Import Types"
-msgstr "Түрлерін импорттау"
-
-#: modes/typesdialog.cpp:494
-msgid ""
-"There is more than one type selected. You can only edit one type at a time. "
-"Please select only the type you want to edit and try again."
-msgstr ""
-"Көп түрі таңдалған. Бір кезде бір ғана түрін өңдеуге болады. Біреуін ғана "
-"таңдап, қайталал көріңіз. "
-
-#: modes/typesdialog.cpp:497
-msgid "More Than One Type Selected"
-msgstr "Көп түрі таңдалған"
+"<p>Нүктелер жиынның геометриялық орнын сызганда, ол дәрежесі төмен\n"
+"қисығының бірі болса, оны тышқанның  <em>оң жақ</em> батырмасымен\n"
+"түртіп, <em>Декарт теңдігі</em> дегенді таңдап, оның Декарт\n"
+"теңдігін көруге болады.</p>\n"

@@ -17,6 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.2\n"
 
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Сайран Киккарин"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sairan@computer.org"
+
 #: klettres.cpp:107
 msgid ""
 "The file sounds.xml was not found in\n"
@@ -182,6 +190,71 @@ msgstr ""
 msgid "Error"
 msgstr "Қате"
 
+#. i18n: ectx: label, entry (Language), group (General)
+#: klettres.kcfg:10
+msgid "Language"
+msgstr "Тіл"
+
+#. i18n: ectx: label, entry (Theme), group (General)
+#: klettres.kcfg:14
+msgid "Theme"
+msgstr "Нақыш"
+
+#. i18n: ectx: label, entry (MenuBarBool), group (General)
+#: klettres.kcfg:23
+msgid "Whether the menubar is shown or hidden"
+msgstr "Мәзір жолағы көрсетіле ме, жоқ па"
+
+#. i18n: ectx: label, entry (Mode), group (General)
+#: klettres.kcfg:27
+msgid "Mode"
+msgstr "Күйі"
+
+#. i18n: ectx: label, entry (Level), group (General)
+#: klettres.kcfg:35
+msgid "Difficulty level."
+msgstr "Қиындық деңгейі."
+
+#. i18n: ectx: label, entry (KidTimer), group (General)
+#: klettres.kcfg:41
+msgid "Kid Timer"
+msgstr "Баланың таймері"
+
+#. i18n: ectx: label, entry (GrownTimer), group (General)
+#: klettres.kcfg:45
+msgid "Grown-up Timer"
+msgstr "Ересектің таймері"
+
+#. i18n: ectx: label, entry (Font), group (mFont)
+#: klettres.kcfg:51
+msgid "Font"
+msgstr "Қаріп"
+
+#. i18n: ectx: Menu (file)
+#: klettresui.rc:4
+msgid "&File"
+msgstr "&Файл"
+
+#. i18n: ectx: Menu (look_mode)
+#: klettresui.rc:15
+msgid "L&ook"
+msgstr "К&өрініс"
+
+#. i18n: ectx: Menu (settings)
+#: klettresui.rc:23
+msgid "&Settings"
+msgstr "&Баптау"
+
+#. i18n: ectx: ToolBar (mainToolbar)
+#: klettresui.rc:33
+msgid "Main"
+msgstr "Негізгі"
+
+#. i18n: ectx: ToolBar (specialCharToolbar)
+#: klettresui.rc:47
+msgid "Special Characters"
+msgstr "Арнаулы таңбалар"
+
 #: klettresview.cpp:46
 msgid "Type the letter or syllable that you just heard"
 msgstr "Жаңа естілген әріп не буынды теріп келтіріңіз"
@@ -299,63 +372,27 @@ msgstr "Michael Goettsche"
 msgid "Timer setting widgets"
 msgstr "Таймер виджеті"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Сайран Киккарин"
+#: soundfactory.cpp:98
+msgid "Error while loading the sound names."
+msgstr "Дыбыс атауларын жүктеу қатесі."
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "sairan@computer.org"
+#: timer.cpp:34 timer.cpp:35 timer.cpp:43 timer.cpp:44
+msgid "tenths of second"
+msgstr "(х 0,1) секунд"
 
-#. i18n: file: klettresui.rc:4
-#. i18n: ectx: Menu (file)
-#: rc.cpp:5
-msgid "&File"
-msgstr "&Файл"
-
-#. i18n: file: klettresui.rc:15
-#. i18n: ectx: Menu (look_mode)
-#: rc.cpp:8
-msgid "L&ook"
-msgstr "К&өрініс"
-
-#. i18n: file: klettresui.rc:23
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:11
-msgid "&Settings"
-msgstr "&Баптау"
-
-#. i18n: file: klettresui.rc:33
-#. i18n: ectx: ToolBar (mainToolbar)
-#: rc.cpp:14
-msgid "Main"
-msgstr "Негізгі"
-
-#. i18n: file: klettresui.rc:47
-#. i18n: ectx: ToolBar (specialCharToolbar)
-#: rc.cpp:17
-msgid "Special Characters"
-msgstr "Арнаулы таңбалар"
-
-#. i18n: file: timerui.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:20
+#: timerui.ui:51
 msgid "Set the time between 2 letters."
 msgstr "2 әріптің арасындағы уақыт"
 
-#. i18n: file: timerui.ui:91
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_KidTimer)
-#. i18n: file: timerui.ui:184
 #. i18n: ectx: property (toolTip), widget (QSlider, kcfg_GrownTimer)
-#: rc.cpp:23 rc.cpp:32
+#: timerui.ui:91 timerui.ui:184
 msgid "Set the timer (in tenths of seconds)"
 msgstr "Уақытың орнату (1/10 секундтар)"
 
-#. i18n: file: timerui.ui:94
 #. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_KidTimer)
-#: rc.cpp:26
+#: timerui.ui:94
 msgid ""
 "You can set the time between two letters in Kid mode. Default is 4 tenths of "
 "seconds but younger children might need longer time."
@@ -363,9 +400,8 @@ msgstr ""
 "Балаларға арналған күйдеі екі әріптің арасындағы уақытты орната аласыз. "
 "Әдетте бұл 0,4 секунд, бірақ кішірек балаға көбірек қажет болар."
 
-#. i18n: file: timerui.ui:122
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:29
+#: timerui.ui:122
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
 "white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
@@ -379,9 +415,8 @@ msgstr ""
 "top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
 "indent:0; text-indent:0px;\">Балалық күйі</p></body></html>"
 
-#. i18n: file: timerui.ui:187
 #. i18n: ectx: property (whatsThis), widget (QSlider, kcfg_GrownTimer)
-#: rc.cpp:35
+#: timerui.ui:187
 msgid ""
 "You can set the time between two letters in Grown-up mode. Default is 2 "
 "tenths of seconds."
@@ -389,9 +424,8 @@ msgstr ""
 "Ересектерге арналған күйдеі екі әріптің арасындағы уақытты орната аласыз. "
 "Әдетте бұл 0,2 секунд."
 
-#. i18n: file: timerui.ui:215
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:38
+#: timerui.ui:215
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" "
 "white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-"
@@ -404,59 +438,3 @@ msgstr ""
 "weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-"
 "top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
 "indent:0; text-indent:0px;\">Ересектік күйі</p></body></html>"
-
-#. i18n: file: klettres.kcfg:10
-#. i18n: ectx: label, entry (Language), group (General)
-#: rc.cpp:41
-msgid "Language"
-msgstr "Тіл"
-
-#. i18n: file: klettres.kcfg:14
-#. i18n: ectx: label, entry (Theme), group (General)
-#: rc.cpp:44
-msgid "Theme"
-msgstr "Нақыш"
-
-#. i18n: file: klettres.kcfg:23
-#. i18n: ectx: label, entry (MenuBarBool), group (General)
-#: rc.cpp:47
-msgid "Whether the menubar is shown or hidden"
-msgstr "Мәзір жолағы көрсетіле ме, жоқ па"
-
-#. i18n: file: klettres.kcfg:27
-#. i18n: ectx: label, entry (Mode), group (General)
-#: rc.cpp:50
-msgid "Mode"
-msgstr "Күйі"
-
-#. i18n: file: klettres.kcfg:35
-#. i18n: ectx: label, entry (Level), group (General)
-#: rc.cpp:53
-msgid "Difficulty level."
-msgstr "Қиындық деңгейі."
-
-#. i18n: file: klettres.kcfg:41
-#. i18n: ectx: label, entry (KidTimer), group (General)
-#: rc.cpp:56
-msgid "Kid Timer"
-msgstr "Баланың таймері"
-
-#. i18n: file: klettres.kcfg:45
-#. i18n: ectx: label, entry (GrownTimer), group (General)
-#: rc.cpp:59
-msgid "Grown-up Timer"
-msgstr "Ересектің таймері"
-
-#. i18n: file: klettres.kcfg:51
-#. i18n: ectx: label, entry (Font), group (mFont)
-#: rc.cpp:62
-msgid "Font"
-msgstr "Қаріп"
-
-#: soundfactory.cpp:98
-msgid "Error while loading the sound names."
-msgstr "Дыбыс атауларын жүктеу қатесі."
-
-#: timer.cpp:34 timer.cpp:35 timer.cpp:43 timer.cpp:44
-msgid "tenths of second"
-msgstr "(х 0,1) секунд"

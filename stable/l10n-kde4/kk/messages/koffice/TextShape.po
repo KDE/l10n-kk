@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:56+0200\n"
+"POT-Creation-Date: 2012-08-19 15:45+0200\n"
 "PO-Revision-Date: 2011-08-28 06:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -29,84 +29,385 @@ msgstr ""
 "\n"
 "\n"
 
-#: dialogs/ParagraphGeneral.cpp:49
-msgid "Indent/Spacing"
-msgstr "Шегіну/Аралық"
+#: ChangeTrackingTool.cpp:64
+msgid "Tracked change manager"
+msgstr "Өзгерістерді қадағалауы"
 
-#: dialogs/ParagraphGeneral.cpp:60
-msgid "General Layout"
-msgstr "Жалпы орналасуы"
+#: ChangeTrackingTool.cpp:333
+msgid "Accept"
+msgstr "Қабылдау"
 
-#: dialogs/ParagraphGeneral.cpp:64
-msgid "Bullets/Numbers"
-msgstr "Таңбалау/Нөмірлеу"
+#: ChangeTrackingTool.cpp:334
+msgid "Reject"
+msgstr "Бас тарту"
 
-#: dialogs/ParagraphGeneral.cpp:69 dialogs/CharacterGeneral.cpp:58
+#: ChangeTrackingToolFactory.cpp:33
+msgid "Change Tracking tool"
+msgstr "Өзгерістерді қадағалау құралы"
+
+#: commands/AcceptChangeCommand.cpp:45
+msgid "Accept change"
+msgstr "Өзгерісті қабылдау"
+
+#: commands/ChangeListCommand.cpp:57 commands/ChangeListCommand.cpp:69
+msgid "Change List"
+msgstr "Тізімді өзгерту"
+
+#: commands/ChangeListLevelCommand.cpp:42
+msgid "Change List Level"
+msgstr "Тізімдің деңгейін өзгерту"
+
+#. i18n: ectx: property (text), widget (QPushButton, bDelete)
+#: commands/ChangeTrackedDeleteCommand.cpp:76
+#: commands/ChangeTrackedDeleteCommand.cpp:288 commands/DeleteCommand.cpp:43
+#: dialogs/StyleManager.ui:57 TextTool.cpp:1822
+msgid "Delete"
+msgstr "Өшіру"
+
+#: commands/ChangeTrackedDeleteCommand.cpp:182 TextTool.cpp:1817
+msgid "Key Press"
+msgstr "Пернені басу"
+
+#: commands/ChangeTrackedDeleteCommand.cpp:470 commands/DeleteCommand.cpp:215
+#: TextShapeFactory.cpp:41 TextShapeFactory.cpp:51
+msgid "Text"
+msgstr "Мәтін"
+
+#: commands/ListItemNumberingCommand.cpp:35
+msgid "Change List Numbering"
+msgstr "Тізімдің нөмірлеуін өзгерту"
+
+#: commands/RejectChangeCommand.cpp:47
+msgid "Reject change"
+msgstr "Өзгерістен бас тарту"
+
+#: commands/ShowChangesCommand.cpp:53 TextTool.cpp:371
+msgid "Show Changes"
+msgstr "Өзгерістерді көрсету"
+
+#: commands/ShowChangesCommand.cpp:55
+msgid "Hide Changes"
+msgstr "Өзгерістерді жасыру"
+
+#: commands/TextCutCommand.cpp:34
+msgid "Cut"
+msgstr "Қиып алу"
+
+#: commands/TextPasteCommand.cpp:50
+msgid "Paste"
+msgstr "Орналастыру"
+
+#: dialogs/ChangeConfigureDialog.cpp:128
+msgid "This is a line of inserted text."
+msgstr "Бұл ендірілген мәтіннің жолы.."
+
+#: dialogs/ChangeConfigureDialog.cpp:134
+msgid "This is a line of deleted text."
+msgstr "Бұл өшірілген мәтіннің жолы.."
+
+#: dialogs/ChangeConfigureDialog.cpp:140
+msgid "This is a line of text whose format has been changed."
+msgstr "Бұл пішімі өзгертілген мәтіннің жолы.."
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, ChangeConfigureDialog)
+#: dialogs/ChangeConfigureDialog.ui:17 TextTool.cpp:381
+msgid "Configure Change Tracking"
+msgstr "Өзгерістерді қадағалауын баптау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, insertionGroupBox)
+#: dialogs/ChangeConfigureDialog.ui:52
+msgid "Insertions"
+msgstr "Ендірулер"
+
+#. i18n: ectx: property (text), widget (QLabel, insertionColorLabel)
+#. i18n: ectx: property (text), widget (QLabel, deletionColorLabel)
+#. i18n: ectx: property (text), widget (QLabel, formatColorLabel)
+#: dialogs/ChangeConfigureDialog.ui:74 dialogs/ChangeConfigureDialog.ui:149
+#: dialogs/ChangeConfigureDialog.ui:221
+msgid "Background Color"
+msgstr "Аясының түсі"
+
+#. i18n: ectx: property (text), widget (QPushButton, insertionColorButton)
+#. i18n: ectx: property (text), widget (QPushButton, deletionColorButton)
+#. i18n: ectx: property (text), widget (QPushButton, formatColorButton)
+#. i18n: ectx: property (text), widget (QToolButton, resetBackgroundColor)
+#. i18n: ectx: property (text), widget (QToolButton, resetBackground)
+#. i18n: ectx: property (text), widget (QToolButton, resetTextColor)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_5)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_7)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_4)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_8)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_3)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_6)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_2)
+#. i18n: ectx: property (text), widget (QToolButton, applyStyle)
+#. i18n: ectx: property (text), widget (QToolButton, modifyStyle)
+#. i18n: ectx: property (text), widget (QToolButton, newStyle)
+#. i18n: ectx: property (text), widget (QToolButton, deleteStyle)
+#. i18n: ectx: property (text), widget (QToolButton, customCharacter)
+#: dialogs/ChangeConfigureDialog.ui:106 dialogs/ChangeConfigureDialog.ui:178
+#: dialogs/ChangeConfigureDialog.ui:250 dialogs/FontDecorations.ui:47
+#: dialogs/FontDecorations.ui:73 dialogs/FontDecorations.ui:126
+#: dialogs/FontDecorations.ui:139 dialogs/FontDecorations.ui:152
+#: dialogs/FontDecorations.ui:165 dialogs/FontDecorations.ui:178
+#: dialogs/FontDecorations.ui:191 dialogs/FontDecorations.ui:204
+#: dialogs/FontDecorations.ui:217 dialogs/ParagraphBulletsNumbers.ui:138
+#: dialogs/ParagraphDecorations.ui:55 dialogs/StylesWidget.ui:26
+#: dialogs/StylesWidget.ui:36 dialogs/StylesWidget.ui:59
+#: dialogs/StylesWidget.ui:66
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, deletionGroupBox)
+#: dialogs/ChangeConfigureDialog.ui:127
+msgid "Deletions"
+msgstr "Өшірулер"
+
+#. i18n: ectx: property (title), widget (QGroupBox, formatGroupBox)
+#: dialogs/ChangeConfigureDialog.ui:199
+msgid "Format Changes"
+msgstr "Пішім өзгертулер"
+
+#. i18n: ectx: property (html), widget (QTextEdit, previewTextEdit)
+#: dialogs/ChangeConfigureDialog.ui:283
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600; text-"
+"decoration: underline;\">Preview</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;"
+"\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Inserted Text</"
+"span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
+"inserted text. This is a line of inserted text. This is a line after the "
+"inserted text.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Deleted Text</"
+"span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
+"deleted text. This is a line of deleted text. This is a line after the "
+"deleted text.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Formatted Text</"
+"span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
+"format-change text. This is a line of text whose format has been changed. "
+"This is a line of text after the format-change text.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600; text-"
+"decoration: underline;\">Қарап шығу</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
+"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+"indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;"
+"\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Ендірілген мәтін</"
+"span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау мәтінді ендіру алдындағы "
+"жол. Мынау ендірілген мәтін. Мынау мәтінді ендіруден кейінгі жол. .</span></"
+"p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Өшірілген мәтін</"
+"span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау мәтінді өшіру алдындағы жол. "
+"Мынау өшірілген мәтін. Мынау мәтінді ешірілгеннен кейінгі жол.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
+"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Пішімделген "
+"мәтін</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау пішімі өзгертілген алдындағы "
+"жол. Мынау пішімі өзгертілген мәтін. Мынау пішімі өзгертуден кейінгі жол.</"
+"span></p></body></html>"
+
+#: dialogs/CharacterGeneral.cpp:57 dialogs/FontDia.cpp:103
+#: dialogs/FormattingPreview.cpp:49
+msgid "Font"
+msgstr "Қаріпі"
+
+#: dialogs/CharacterGeneral.cpp:58 dialogs/ParagraphGeneral.cpp:69
 msgid "Decorations"
 msgstr "Безендірулері"
 
-#: dialogs/StyleManagerDialog.cpp:29 TextTool.cpp:385
-msgid "Style Manager"
-msgstr "Стиль менеджері"
+#: dialogs/CharacterGeneral.cpp:59
+msgid "Highlighting"
+msgstr "Бояулауы"
 
-#: dialogs/SimpleStyleWidget.cpp:263
-msgctxt "Short for LeftToRight"
-msgid "LTR"
-msgstr "СолданОңға"
+#: dialogs/CharacterGeneral.cpp:60
+msgid "Layout"
+msgstr "Орналасуы"
 
-#: dialogs/SimpleStyleWidget.cpp:266
-msgctxt "Short for RightToLeft"
-msgid "RTL"
-msgstr "ОңданСолға"
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#. i18n: ectx: attribute (title), widget (QWidget, generalTab)
+#: dialogs/CharacterGeneral.ui:27 dialogs/NewStyleWidget.ui:32
+#: dialogs/ParagraphGeneral.ui:27
+msgid "General"
+msgstr "Жалпы"
 
-#: dialogs/SimpleStyleWidget.cpp:270
-msgctxt "Automatic direction detection"
-msgid "Auto"
-msgstr "Авто"
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/CharacterGeneral.ui:39
+msgid "<b>Character style properties</b>"
+msgstr "<b>Таңба стилінің қасиеттері</b>"
 
-#: dialogs/StylesWidget.cpp:140 dialogs/StylesWidget.cpp:154
-msgid "new style"
-msgstr "жаңа стилі"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: dialogs/CharacterGeneral.ui:46
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: dialogs/ParagraphGeneral.ui:46
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: dialogs/StylesWidget.cpp:141 rc.cpp:114 rc.cpp:135 rc.cpp:222
+#: dialogs/CharacterGeneral.ui:46 dialogs/NewStyleWidget.ui:38
+#: dialogs/ParagraphGeneral.ui:46 dialogs/StylesWidget.cpp:141
 msgid "Name:"
 msgstr "Атауы:"
 
-#. i18n: file: dialogs/NewStyleWidget.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, paragraph)
-#: dialogs/StylesWidget.cpp:142 rc.cpp:120
-msgid "Paragraph style"
-msgstr "Абзац стилі"
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: dialogs/CharacterHighlighting.ui:16
+msgid "Underlining:"
+msgstr "Астын сызу:"
 
-#. i18n: file: dialogs/NewStyleWidget.ui:51
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/CharacterHighlighting.ui:62
+msgid "Capitalization"
+msgstr "Үлкен-кішілігі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, normal)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/CharacterHighlighting.ui:68 dialogs/FontLayoutTab.ui:98
+msgid "Normal"
+msgstr "Кәдімгі"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/StylesWidget.cpp:144 rc.cpp:117
-msgid "Type:"
-msgstr "Түрі:"
+#: dialogs/CharacterHighlighting.ui:78
+msgid "Uppercase"
+msgstr "Бас әріп"
 
-#. i18n: file: dialogs/NewStyleWidget.ui:71
-#. i18n: ectx: property (text), widget (QRadioButton, character)
-#: dialogs/StylesWidget.cpp:145 rc.cpp:123
-msgid "Character style"
-msgstr "Таңба стилі"
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: dialogs/CharacterHighlighting.ui:88
+msgid "Lowercase"
+msgstr "Кіші әріп"
 
-#: dialogs/StylesWidget.cpp:149
-msgid "Create New Style"
-msgstr "Жаңа стилді құру"
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/CharacterHighlighting.ui:98
+msgid "Small Caps"
+msgstr "Шағын үлкен әріп"
 
-#: dialogs/StylesWidget.cpp:217
-msgid "Edit Paragraph Style"
-msgstr "Абзацтың стилін өзгерту"
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: dialogs/CharacterHighlighting.ui:128
+msgid "Capitalize"
+msgstr "Бас әріппен"
 
-#: dialogs/StylesWidget.cpp:217
-msgid "Edit Character Style"
-msgstr "Таңба стилін өзгерту"
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: dialogs/CharacterHighlighting.ui:138
+msgid "Strikethrough:"
+msgstr "Сызып тастау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/FontDecorations.ui:22
+msgid "Colors"
+msgstr "Түстер"
+
+#. i18n: ectx: property (text), widget (QLabel, textColorLabel)
+#: dialogs/FontDecorations.ui:60
+msgid "Text color:"
+msgstr "Мәтіннің түсі:"
+
+#. i18n: ectx: property (text), widget (QLabel, backgroundColorLabel)
+#: dialogs/FontDecorations.ui:80
+msgid "Background color:"
+msgstr "Аясының түсі:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, shadowGroupBox)
+#: dialogs/FontDecorations.ui:106
+msgid "Text Shadow"
+msgstr "Мәтіннің көлеңкесі"
+
+#. i18n: ectx: property (text), widget (QLabel, shadowColorLabel)
+#: dialogs/FontDecorations.ui:261
+msgid "Color:"
+msgstr "Түсі:"
+
+#. i18n: ectx: property (text), widget (QLabel, shadowDistanceLabel)
+#: dialogs/FontDecorations.ui:274
+msgid "Distance:"
+msgstr "Аралығы:"
+
+#: dialogs/FontDia.cpp:80
+msgid "Select Font"
+msgstr "Қаріпті таңдау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, positionGroup)
+#: dialogs/FontLayoutTab.ui:31
+msgid "Position"
+msgstr "Орны"
+
+#. i18n: ectx: property (text), widget (QLabel, offsetLabel)
+#: dialogs/FontLayoutTab.ui:81
+msgid "Offset:"
+msgstr "Шегінісі:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, custom)
+#: dialogs/FontLayoutTab.ui:91
+msgid "Custom"
+msgstr "Өзгеше"
+
+#. i18n: ectx: property (text), widget (QRadioButton, superscript)
+#: dialogs/FontLayoutTab.ui:108 TextTool.cpp:166
+msgid "Superscript"
+msgstr "Жол үстілік"
+
+#. i18n: ectx: property (text), widget (QRadioButton, subscript)
+#: dialogs/FontLayoutTab.ui:115 TextTool.cpp:171
+msgid "Subscript"
+msgstr "Жол астылық"
+
+#. i18n: ectx: property (text), widget (QCheckBox, hyphenate)
+#: dialogs/FontLayoutTab.ui:125
+msgid "Automatic hyphenation"
+msgstr "Автоматты түрде тасымалдансын"
 
 #: dialogs/InsertCharacter.cpp:29
 msgid "Special Characters"
@@ -121,14 +422,30 @@ msgctxt "Close dialog"
 msgid "Close"
 msgstr "Жабу"
 
-#: dialogs/FontDia.cpp:80
-msgid "Select Font"
-msgstr "Қаріпті таңдау"
+#. i18n: ectx: property (text), widget (QLabel, filterLabel)
+#: dialogs/LanguageTab.ui:18
+msgid "Quick search:"
+msgstr "Шұғыл іздестіру"
 
-#: dialogs/FontDia.cpp:103 dialogs/FormattingPreview.cpp:49
-#: dialogs/CharacterGeneral.cpp:57
-msgid "Font"
-msgstr "Қаріпі"
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/NewStyleWidget.ui:51 dialogs/StylesWidget.cpp:144
+msgid "Type:"
+msgstr "Түрі:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, paragraph)
+#: dialogs/NewStyleWidget.ui:61 dialogs/StylesWidget.cpp:142
+msgid "Paragraph style"
+msgstr "Абзац стилі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, character)
+#: dialogs/NewStyleWidget.ui:71 dialogs/StylesWidget.cpp:145
+msgid "Character style"
+msgstr "Таңба стилі"
+
+#. i18n: ectx: property (text), widget (QPushButton, create)
+#: dialogs/NewStyleWidget.ui:78
+msgid "Create"
+msgstr "Құру"
 
 #: dialogs/ParagraphBulletsNumbers.cpp:37
 msgid "Custom Bullet"
@@ -157,6 +474,103 @@ msgstr "Оңға"
 msgctxt "Text alignment"
 msgid "Centered"
 msgstr "Ортаға"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/ParagraphBulletsNumbers.ui:27
+msgid "Prefix:"
+msgstr "Префиксі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: dialogs/ParagraphBulletsNumbers.ui:40
+msgid "Suffix:"
+msgstr "Журнағы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/ParagraphBulletsNumbers.ui:53
+msgid "Start at:"
+msgstr "Бастауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: dialogs/ParagraphBulletsNumbers.ui:76
+msgid "Alignment:"
+msgstr "Туралауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: dialogs/ParagraphBulletsNumbers.ui:89
+msgid "Depth:"
+msgstr "Тереңдігі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: dialogs/ParagraphBulletsNumbers.ui:109
+msgid "Display Levels:"
+msgstr "Көрсететін деңгейлері:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/ParagraphBulletsNumbers.ui:128
+msgid "Custom character:"
+msgstr "Ерекше таңбасы:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, restartNumbering)
+#: dialogs/ParagraphBulletsNumbers.ui:158
+msgid "Restart numbering at this paragraph"
+msgstr "Осы абзацтан нөмірлеу қайта басталсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, letterSynchronization)
+#: dialogs/ParagraphBulletsNumbers.ui:178
+msgid "Letter Synchronization"
+msgstr "Хатты қадамдастыру"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/ParagraphDecorations.ui:31 TextTool.cpp:310
+msgid "Background"
+msgstr "Аясы"
+
+#. i18n: ectx: property (text), widget (QLabel, backgroundColorLabel)
+#: dialogs/ParagraphDecorations.ui:65
+msgid "Background color"
+msgstr "Аясының түсі"
+
+#: dialogs/ParagraphGeneral.cpp:49
+msgid "Indent/Spacing"
+msgstr "Шегіну/Аралық"
+
+#: dialogs/ParagraphGeneral.cpp:60
+msgid "General Layout"
+msgstr "Жалпы орналасуы"
+
+#: dialogs/ParagraphGeneral.cpp:64
+msgid "Bullets/Numbers"
+msgstr "Таңбалау/Нөмірлеу"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: dialogs/ParagraphGeneral.ui:39
+msgid "<b>Paragraph style properties</b>"
+msgstr "<b>Абзац стилінің қасиеттері</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/ParagraphGeneral.ui:56
+msgid "Next style:"
+msgstr "Келесі стилі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: dialogs/ParagraphGeneral.ui:69
+msgid "Inherit style:"
+msgstr "Мұра ететін стилі:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, useCharacterStyle)
+#: dialogs/ParagraphGeneral.ui:82
+msgid "Use named character style"
+msgstr "Аталған таңбалық стилі қолданылсын"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/ParagraphGeneral.ui:105
+msgid "Style:"
+msgstr "Стилі:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, inToc)
+#: dialogs/ParagraphGeneral.ui:118
+msgid "Include in table of contents"
+msgstr "Мазмұны кестесіне енгізілсін"
 
 #: dialogs/ParagraphIndentSpacing.cpp:37
 msgctxt "Line spacing value"
@@ -188,13 +602,117 @@ msgctxt "Line spacing type"
 msgid "Fixed"
 msgstr "Бекітілген"
 
-#: dialogs/CharacterGeneral.cpp:59
-msgid "Highlighting"
-msgstr "Бояулауы"
+#. i18n: ectx: property (whatsThis), widget (QWidget, ParagraphIndentSpacing)
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox_2)
+#: dialogs/ParagraphIndentSpacing.ui:13 dialogs/ParagraphIndentSpacing.ui:87
+msgid "<p><ul><li><b>Single</b>: The normal linespacing</li></ul></p> "
+msgstr "<p><ul><li><b>Жалғыз аралықты</b>: Кәдімгі жол аралығы</li></ul></p> "
 
-#: dialogs/CharacterGeneral.cpp:60
-msgid "Layout"
-msgstr "Орналасуы"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/ParagraphIndentSpacing.ui:19
+msgid "Indent"
+msgstr "Шегінісі"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/ParagraphIndentSpacing.ui:25
+msgid "Left:"
+msgstr "Сол жақ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/ParagraphIndentSpacing.ui:51
+msgid "Right:"
+msgstr "Оң жақ:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: dialogs/ParagraphIndentSpacing.ui:64
+msgid "First Line:"
+msgstr "Алғашқы жолы:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoTextIndent)
+#: dialogs/ParagraphIndentSpacing.ui:77
+msgid "Auto-infer from text size"
+msgstr "Мәтіннің өлшеміне лайық қылу"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: dialogs/ParagraphIndentSpacing.ui:90
+msgid "Line Spacing"
+msgstr "Жол аралығы"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, proportional)
+#: dialogs/ParagraphIndentSpacing.ui:126
+#, no-c-format
+msgid " %"
+msgstr " %"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/ParagraphIndentSpacing.ui:151
+msgid "Use Font Metrics:"
+msgstr "Қолданатын қаріп метрикасы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: dialogs/ParagraphIndentSpacing.ui:168
+msgid "Minimum:"
+msgstr "Минимумы:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: dialogs/ParagraphIndentSpacing.ui:199
+msgid "Paragraph Space"
+msgstr "Абзацтар аралығы"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: dialogs/ParagraphIndentSpacing.ui:205
+msgid "Before:"
+msgstr "Алдында:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: dialogs/ParagraphIndentSpacing.ui:231
+msgid "After:"
+msgstr "Кейін:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/ParagraphLayout.ui:16
+msgid "Alignment"
+msgstr "Туралауы"
+
+#. i18n: ectx: property (text), widget (QRadioButton, left)
+#: dialogs/ParagraphLayout.ui:22
+msgid "Left"
+msgstr "Солға"
+
+#. i18n: ectx: property (text), widget (QRadioButton, center)
+#: dialogs/ParagraphLayout.ui:29
+msgid "Center"
+msgstr "Ортаға"
+
+#. i18n: ectx: property (text), widget (QRadioButton, right)
+#: dialogs/ParagraphLayout.ui:36
+msgid "Right"
+msgstr "Оңға"
+
+#. i18n: ectx: property (text), widget (QRadioButton, justify)
+#: dialogs/ParagraphLayout.ui:43
+msgid "Justify"
+msgstr "Ені бойынша"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: dialogs/ParagraphLayout.ui:53
+msgid "Behavior at End of Frame/Page"
+msgstr "Фрейм/Беттің соңындағы тәртібі"
+
+#. i18n: ectx: property (text), widget (QCheckBox, keepTogether)
+#: dialogs/ParagraphLayout.ui:59
+msgid "Keep lines together"
+msgstr "Жолдары бірге болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, breakBefore)
+#: dialogs/ParagraphLayout.ui:66
+msgid "Insert break before paragraph"
+msgstr "Абзацтың алдында үзілім енгізілсін"
+
+#. i18n: ectx: property (text), widget (QCheckBox, breakAfter)
+#: dialogs/ParagraphLayout.ui:73
+msgid "Insert break after paragraph"
+msgstr "Абзацтан кейін үзілім енгізілсін"
 
 #: dialogs/ParagraphSettingsDialog.cpp:37
 msgid "Paragraph Format"
@@ -204,85 +722,144 @@ msgstr "Абзац пішімі"
 msgid "Paragraph Settings"
 msgstr "Абзац параметрлері"
 
+#: dialogs/SimpleStyleWidget.cpp:263
+msgctxt "Short for LeftToRight"
+msgid "LTR"
+msgstr "СолданОңға"
+
+#: dialogs/SimpleStyleWidget.cpp:266
+msgctxt "Short for RightToLeft"
+msgid "RTL"
+msgstr "ОңданСолға"
+
+#: dialogs/SimpleStyleWidget.cpp:270
+msgctxt "Automatic direction detection"
+msgid "Auto"
+msgstr "Авто"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: dialogs/SimpleStyleWidget.ui:174
+msgid "List Style:"
+msgstr "Тізімнің стилі:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, listStyleAgain)
+#: dialogs/SimpleStyleWidget.ui:193
+msgid "Apply again"
+msgstr "Тағы іске асыру"
+
+#. i18n: ectx: property (text), widget (QPushButton, bNew)
+#: dialogs/StyleManager.ui:50
+msgid "&New"
+msgstr "&Жаңа"
+
+#: dialogs/StyleManagerDialog.cpp:29 TextTool.cpp:385
+msgid "Style Manager"
+msgstr "Стиль менеджері"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: dialogs/StyleManagerWelcome.ui:42
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">It is possible to assign a "
+"named style to text and alter the style properties to change all text with "
+"that style.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Applying a style change "
+"will reformat all text that previously got the named style assigned to it. "
+"Use the Styles docker to apply styles to text.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Мәтінге аталған стильді "
+"тағайындауға болады, сонда, стильдің қасиеттерін өзгертенде сол стильдегі "
+"мәтін де бірден өзгереді.</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Стиль өзгерісті іске "
+"асырған, сол аталған стильдегі барлық мәтіндер пішімін өзгертеді. Стильдерді "
+"мәтінге қолдану үшін Стильдер докерін пайдаланыңыз.</p></body></html>"
+
+#: dialogs/StylesWidget.cpp:140 dialogs/StylesWidget.cpp:154
+msgid "new style"
+msgstr "жаңа стилі"
+
+#: dialogs/StylesWidget.cpp:149
+msgid "Create New Style"
+msgstr "Жаңа стилді құру"
+
+#: dialogs/StylesWidget.cpp:217
+msgid "Edit Paragraph Style"
+msgstr "Абзацтың стилін өзгерту"
+
+#: dialogs/StylesWidget.cpp:217
+msgid "Edit Character Style"
+msgstr "Таңба стилін өзгерту"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, applyStyle)
+#: dialogs/StylesWidget.ui:23
+msgid "Apply selected style to text"
+msgstr "таңдалған стилі мәтінге қолданылсын"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, modifyStyle)
+#: dialogs/StylesWidget.ui:33
+msgid "Show properties"
+msgstr "Қасиеттерді көрсету"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, newStyle)
+#: dialogs/StylesWidget.ui:56
+msgid "Add a new style"
+msgstr "Жаңа стилді қосу"
+
 #: dialogs/TableDialog.cpp:27
 msgid "Insert Table"
 msgstr "Кестені ендіру"
 
-#: dialogs/ChangeConfigureDialog.cpp:128
-msgid "This is a line of inserted text."
-msgstr "Бұл ендірілген мәтіннің жолы.."
+#. i18n: ectx: property (title), widget (QGroupBox, groupLogical)
+#: dialogs/TableDialog.ui:23
+msgid "Columns and rows"
+msgstr "Баған мен жолдар"
 
-#: dialogs/ChangeConfigureDialog.cpp:134
-msgid "This is a line of deleted text."
-msgstr "Бұл өшірілген мәтіннің жолы.."
+#. i18n: ectx: property (text), widget (QLabel, labelColumns)
+#: dialogs/TableDialog.ui:32
+msgid "Number of columns:"
+msgstr "Бағандар саны:"
 
-#: dialogs/ChangeConfigureDialog.cpp:140
-msgid "This is a line of text whose format has been changed."
-msgstr "Бұл пішімі өзгертілген мәтіннің жолы.."
+#. i18n: ectx: property (text), widget (QLabel, labelRows)
+#: dialogs/TableDialog.ui:55
+msgid "Number of rows:"
+msgstr "Жолдар саны:"
 
-#: commands/TextCutCommand.cpp:34
-msgid "Cut"
-msgstr "Қиып алу"
+#. i18n: ectx: property (title), widget (QGroupBox, groupPhysical)
+#: dialogs/TableDialog.ui:97
+msgid "Width strategy"
+msgstr "Ені ережесі"
 
-#: commands/ListItemNumberingCommand.cpp:35
-msgid "Change List Numbering"
-msgstr "Тізімдің нөмірлеуін өзгерту"
+#. i18n: ectx: property (text), widget (QRadioButton, radioFixed)
+#: dialogs/TableDialog.ui:112
+msgid "Fixed column width:"
+msgstr "Тұрақты бағанның ені:"
 
-#. i18n: file: dialogs/StyleManager.ui:57
-#. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: commands/DeleteCommand.cpp:43 commands/ChangeTrackedDeleteCommand.cpp:76
-#: commands/ChangeTrackedDeleteCommand.cpp:288 TextTool.cpp:1822 rc.cpp:291
-msgid "Delete"
-msgstr "Өшіру"
+#. i18n: ectx: property (text), widget (QRadioButton, radioFitContents)
+#: dialogs/TableDialog.ui:125
+msgid "Fit to contents"
+msgstr "Мазмұнына шақтау"
 
-#: commands/DeleteCommand.cpp:215 commands/ChangeTrackedDeleteCommand.cpp:470
-#: TextShapeFactory.cpp:41 TextShapeFactory.cpp:51
-msgid "Text"
-msgstr "Мәтін"
-
-#: commands/AcceptChangeCommand.cpp:45
-msgid "Accept change"
-msgstr "Өзгерісті қабылдау"
-
-#: commands/ChangeTrackedDeleteCommand.cpp:182 TextTool.cpp:1817
-msgid "Key Press"
-msgstr "Пернені басу"
-
-#: commands/ChangeListLevelCommand.cpp:42
-msgid "Change List Level"
-msgstr "Тізімдің деңгейін өзгерту"
-
-#: commands/ShowChangesCommand.cpp:53 TextTool.cpp:371
-msgid "Show Changes"
-msgstr "Өзгерістерді көрсету"
-
-#: commands/ShowChangesCommand.cpp:55
-msgid "Hide Changes"
-msgstr "Өзгерістерді жасыру"
-
-#: commands/ChangeListCommand.cpp:57 commands/ChangeListCommand.cpp:69
-msgid "Change List"
-msgstr "Тізімді өзгерту"
-
-#: commands/TextPasteCommand.cpp:50
-msgid "Paste"
-msgstr "Орналастыру"
-
-#: commands/RejectChangeCommand.cpp:47
-msgid "Reject change"
-msgstr "Өзгерістен бас тарту"
-
-#: ChangeTrackingTool.cpp:64
-msgid "Tracked change manager"
-msgstr "Өзгерістерді қадағалауы"
-
-#: ChangeTrackingTool.cpp:333
-msgid "Accept"
-msgstr "Қабылдау"
-
-#: ChangeTrackingTool.cpp:334
-msgid "Reject"
-msgstr "Бас тарту"
+#. i18n: ectx: property (text), widget (QRadioButton, radioFitAvail)
+#: dialogs/TableDialog.ui:138
+msgid "Fit to available surrounding"
+msgstr "Айналасына шақтау"
 
 #: ListItemsHelper.cpp:179
 msgctxt "Text list-style"
@@ -397,6 +974,14 @@ msgstr "КішіАбжад"
 msgid "ArabicAlphabet"
 msgstr "Араб әліппесі"
 
+#: TextShapeFactory.cpp:43
+msgid "A shape that shows text"
+msgstr "Мәтіннің көрсететін қалып"
+
+#: TextShapeFactory.cpp:53
+msgid "Text Shape"
+msgstr "Мәтін қалыпы"
+
 #: TextTool.cpp:114
 msgid "Bold"
 msgstr "Қалың"
@@ -429,18 +1014,6 @@ msgstr "Ортаға туралау"
 #: TextTool.cpp:159
 msgid "Align Block"
 msgstr "Енін туралау"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:108
-#. i18n: ectx: property (text), widget (QRadioButton, superscript)
-#: TextTool.cpp:166 rc.cpp:150
-msgid "Superscript"
-msgstr "Жол үстілік"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:115
-#. i18n: ectx: property (text), widget (QRadioButton, subscript)
-#: TextTool.cpp:171 rc.cpp:153
-msgid "Subscript"
-msgstr "Жол астылық"
 
 #: TextTool.cpp:178
 msgid "Increase Indent"
@@ -502,12 +1075,6 @@ msgstr "Мәтіннің түсі..."
 msgid "Background Color..."
 msgstr "Аясының түсі..."
 
-#. i18n: file: dialogs/ParagraphDecorations.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: TextTool.cpp:310 rc.cpp:159
-msgid "Background"
-msgstr "Аясы"
-
 #: TextTool.cpp:314
 msgid "Default Format"
 msgstr "Әдетті пішім"
@@ -553,12 +1120,6 @@ msgstr ""
 #: TextTool.cpp:376
 msgid "Record Changes"
 msgstr "Өзгерістерді жазып алу"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:17
-#. i18n: ectx: property (windowTitle), widget (QDialog, ChangeConfigureDialog)
-#: TextTool.cpp:381 rc.cpp:65
-msgid "Configure Change Tracking"
-msgstr "Өзгерістерді қадағалауын баптау"
 
 #: TextTool.cpp:387
 msgid "Change attributes of styles"
@@ -622,677 +1183,9 @@ msgstr "Стильдер"
 msgid "Autocorrection"
 msgstr "Автотүзету"
 
-#: TextShapeFactory.cpp:43
-msgid "A shape that shows text"
-msgstr "Мәтіннің көрсететін қалып"
-
-#: TextShapeFactory.cpp:53
-msgid "Text Shape"
-msgstr "Мәтін қалыпы"
-
-#: ChangeTrackingToolFactory.cpp:33
-msgid "Change Tracking tool"
-msgstr "Өзгерістерді қадағалау құралы"
-
 #: TextToolFactory.cpp:29
 msgid "Text editing tool"
 msgstr "Мәтін өңдеу құралы"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:3
-msgid "Alignment"
-msgstr "Туралауы"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:22
-#. i18n: ectx: property (text), widget (QRadioButton, left)
-#: rc.cpp:6
-msgid "Left"
-msgstr "Солға"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:29
-#. i18n: ectx: property (text), widget (QRadioButton, center)
-#: rc.cpp:9
-msgid "Center"
-msgstr "Ортаға"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:36
-#. i18n: ectx: property (text), widget (QRadioButton, right)
-#: rc.cpp:12
-msgid "Right"
-msgstr "Оңға"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:43
-#. i18n: ectx: property (text), widget (QRadioButton, justify)
-#: rc.cpp:15
-msgid "Justify"
-msgstr "Ені бойынша"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:53
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:18
-msgid "Behavior at End of Frame/Page"
-msgstr "Фрейм/Беттің соңындағы тәртібі"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:59
-#. i18n: ectx: property (text), widget (QCheckBox, keepTogether)
-#: rc.cpp:21
-msgid "Keep lines together"
-msgstr "Жолдары бірге болсын"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:66
-#. i18n: ectx: property (text), widget (QCheckBox, breakBefore)
-#: rc.cpp:24
-msgid "Insert break before paragraph"
-msgstr "Абзацтың алдында үзілім енгізілсін"
-
-#. i18n: file: dialogs/ParagraphLayout.ui:73
-#. i18n: ectx: property (text), widget (QCheckBox, breakAfter)
-#: rc.cpp:27
-msgid "Insert break after paragraph"
-msgstr "Абзацтан кейін үзілім енгізілсін"
-
-#. i18n: file: dialogs/StyleManagerWelcome.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:30
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">It is possible to assign a "
-"named style to text and alter the style properties to change all text with "
-"that style.</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Applying a style change "
-"will reformat all text that previously got the named style assigned to it. "
-"Use the Styles docker to apply styles to text.</p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Мәтінге аталған стильді "
-"тағайындауға болады, сонда, стильдің қасиеттерін өзгертенде сол стильдегі "
-"мәтін де бірден өзгереді.</p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Стиль өзгерісті іске "
-"асырған, сол аталған стильдегі барлық мәтіндер пішімін өзгертеді. Стильдерді "
-"мәтінге қолдану үшін Стильдер докерін пайдаланыңыз.</p></body></html>"
-
-#. i18n: file: dialogs/TableDialog.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupLogical)
-#: rc.cpp:38
-msgid "Columns and rows"
-msgstr "Баған мен жолдар"
-
-#. i18n: file: dialogs/TableDialog.ui:32
-#. i18n: ectx: property (text), widget (QLabel, labelColumns)
-#: rc.cpp:41
-msgid "Number of columns:"
-msgstr "Бағандар саны:"
-
-#. i18n: file: dialogs/TableDialog.ui:55
-#. i18n: ectx: property (text), widget (QLabel, labelRows)
-#: rc.cpp:44
-msgid "Number of rows:"
-msgstr "Жолдар саны:"
-
-#. i18n: file: dialogs/TableDialog.ui:97
-#. i18n: ectx: property (title), widget (QGroupBox, groupPhysical)
-#: rc.cpp:47
-msgid "Width strategy"
-msgstr "Ені ережесі"
-
-#. i18n: file: dialogs/TableDialog.ui:112
-#. i18n: ectx: property (text), widget (QRadioButton, radioFixed)
-#: rc.cpp:50
-msgid "Fixed column width:"
-msgstr "Тұрақты бағанның ені:"
-
-#. i18n: file: dialogs/TableDialog.ui:125
-#. i18n: ectx: property (text), widget (QRadioButton, radioFitContents)
-#: rc.cpp:53
-msgid "Fit to contents"
-msgstr "Мазмұнына шақтау"
-
-#. i18n: file: dialogs/TableDialog.ui:138
-#. i18n: ectx: property (text), widget (QRadioButton, radioFitAvail)
-#: rc.cpp:56
-msgid "Fit to available surrounding"
-msgstr "Айналасына шақтау"
-
-#. i18n: file: dialogs/SimpleStyleWidget.ui:174
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:59
-msgid "List Style:"
-msgstr "Тізімнің стилі:"
-
-#. i18n: file: dialogs/SimpleStyleWidget.ui:193
-#. i18n: ectx: property (toolTip), widget (QToolButton, listStyleAgain)
-#: rc.cpp:62
-msgid "Apply again"
-msgstr "Тағы іске асыру"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:52
-#. i18n: ectx: property (title), widget (QGroupBox, insertionGroupBox)
-#: rc.cpp:68
-msgid "Insertions"
-msgstr "Ендірулер"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:74
-#. i18n: ectx: property (text), widget (QLabel, insertionColorLabel)
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:149
-#. i18n: ectx: property (text), widget (QLabel, deletionColorLabel)
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:221
-#. i18n: ectx: property (text), widget (QLabel, formatColorLabel)
-#: rc.cpp:71 rc.cpp:80 rc.cpp:89
-msgid "Background Color"
-msgstr "Аясының түсі"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:106
-#. i18n: ectx: property (text), widget (QPushButton, insertionColorButton)
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:178
-#. i18n: ectx: property (text), widget (QPushButton, deletionColorButton)
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:250
-#. i18n: ectx: property (text), widget (QPushButton, formatColorButton)
-#. i18n: file: dialogs/ParagraphDecorations.ui:55
-#. i18n: ectx: property (text), widget (QToolButton, resetBackgroundColor)
-#. i18n: file: dialogs/FontDecorations.ui:47
-#. i18n: ectx: property (text), widget (QToolButton, resetBackground)
-#. i18n: file: dialogs/FontDecorations.ui:73
-#. i18n: ectx: property (text), widget (QToolButton, resetTextColor)
-#. i18n: file: dialogs/FontDecorations.ui:126
-#. i18n: ectx: property (text), widget (QToolButton, toolButton)
-#. i18n: file: dialogs/FontDecorations.ui:139
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_5)
-#. i18n: file: dialogs/FontDecorations.ui:152
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_7)
-#. i18n: file: dialogs/FontDecorations.ui:165
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_4)
-#. i18n: file: dialogs/FontDecorations.ui:178
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_8)
-#. i18n: file: dialogs/FontDecorations.ui:191
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_3)
-#. i18n: file: dialogs/FontDecorations.ui:204
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_6)
-#. i18n: file: dialogs/FontDecorations.ui:217
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_2)
-#. i18n: file: dialogs/StylesWidget.ui:26
-#. i18n: ectx: property (text), widget (QToolButton, applyStyle)
-#. i18n: file: dialogs/StylesWidget.ui:36
-#. i18n: ectx: property (text), widget (QToolButton, modifyStyle)
-#. i18n: file: dialogs/StylesWidget.ui:59
-#. i18n: ectx: property (text), widget (QToolButton, newStyle)
-#. i18n: file: dialogs/StylesWidget.ui:66
-#. i18n: ectx: property (text), widget (QToolButton, deleteStyle)
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:138
-#. i18n: ectx: property (text), widget (QToolButton, customCharacter)
-#: rc.cpp:74 rc.cpp:83 rc.cpp:92 rc.cpp:162 rc.cpp:171 rc.cpp:177 rc.cpp:186
-#: rc.cpp:189 rc.cpp:192 rc.cpp:195 rc.cpp:198 rc.cpp:201 rc.cpp:204
-#: rc.cpp:207 rc.cpp:270 rc.cpp:276 rc.cpp:282 rc.cpp:285 rc.cpp:315
-msgid "..."
-msgstr "..."
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:127
-#. i18n: ectx: property (title), widget (QGroupBox, deletionGroupBox)
-#: rc.cpp:77
-msgid "Deletions"
-msgstr "Өшірулер"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:199
-#. i18n: ectx: property (title), widget (QGroupBox, formatGroupBox)
-#: rc.cpp:86
-msgid "Format Changes"
-msgstr "Пішім өзгертулер"
-
-#. i18n: file: dialogs/ChangeConfigureDialog.ui:283
-#. i18n: ectx: property (html), widget (QTextEdit, previewTextEdit)
-#: rc.cpp:95
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600; text-"
-"decoration: underline;\">Preview</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;"
-"\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Inserted Text</"
-"span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
-"inserted text. This is a line of inserted text. This is a line after the "
-"inserted text.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Deleted Text</"
-"span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
-"deleted text. This is a line of deleted text. This is a line after the "
-"deleted text.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Formatted Text</"
-"span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">This is a line of text before the "
-"format-change text. This is a line of text whose format has been changed. "
-"This is a line of text after the format-change text.</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
-"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-family:'MS Shell Dlg 2'; font-size:11pt; font-weight:600; text-"
-"decoration: underline;\">Қарап шығу</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-"
-"bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
-"indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600;"
-"\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Ендірілген мәтін</"
-"span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау мәтінді ендіру алдындағы "
-"жол. Мынау ендірілген мәтін. Мынау мәтінді ендіруден кейінгі жол. .</span></"
-"p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Өшірілген мәтін</"
-"span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау мәтінді өшіру алдындағы жол. "
-"Мынау өшірілген мәтін. Мынау мәтінді ешірілгеннен кейінгі жол.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-"
-"family:'MS Shell Dlg 2'; font-size:9pt;\"></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:9pt; font-weight:600;\">Пішімделген "
-"мәтін</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"family:'MS Shell Dlg 2'; font-size:8pt;\">Мынау пішімі өзгертілген алдындағы "
-"жол. Мынау пішімі өзгертілген мәтін. Мынау пішімі өзгертуден кейінгі жол.</"
-"span></p></body></html>"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:32
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: file: dialogs/CharacterGeneral.ui:27
-#. i18n: ectx: attribute (title), widget (QWidget, generalTab)
-#. i18n: file: dialogs/ParagraphGeneral.ui:27
-#. i18n: ectx: attribute (title), widget (QWidget, generalTab)
-#: rc.cpp:111 rc.cpp:129 rc.cpp:216
-msgid "General"
-msgstr "Жалпы"
-
-#. i18n: file: dialogs/NewStyleWidget.ui:78
-#. i18n: ectx: property (text), widget (QPushButton, create)
-#: rc.cpp:126
-msgid "Create"
-msgstr "Құру"
-
-#. i18n: file: dialogs/CharacterGeneral.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:132
-msgid "<b>Character style properties</b>"
-msgstr "<b>Таңба стилінің қасиеттері</b>"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, positionGroup)
-#: rc.cpp:138
-msgid "Position"
-msgstr "Орны"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:81
-#. i18n: ectx: property (text), widget (QLabel, offsetLabel)
-#: rc.cpp:141
-msgid "Offset:"
-msgstr "Шегінісі:"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:91
-#. i18n: ectx: property (text), widget (QRadioButton, custom)
-#: rc.cpp:144
-msgid "Custom"
-msgstr "Өзгеше"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:98
-#. i18n: ectx: property (text), widget (QRadioButton, normal)
-#. i18n: file: dialogs/CharacterHighlighting.ui:68
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:147 rc.cpp:249
-msgid "Normal"
-msgstr "Кәдімгі"
-
-#. i18n: file: dialogs/FontLayoutTab.ui:125
-#. i18n: ectx: property (text), widget (QCheckBox, hyphenate)
-#: rc.cpp:156
-msgid "Automatic hyphenation"
-msgstr "Автоматты түрде тасымалдансын"
-
-#. i18n: file: dialogs/ParagraphDecorations.ui:65
-#. i18n: ectx: property (text), widget (QLabel, backgroundColorLabel)
-#: rc.cpp:165
-msgid "Background color"
-msgstr "Аясының түсі"
-
-#. i18n: file: dialogs/FontDecorations.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:168
-msgid "Colors"
-msgstr "Түстер"
-
-#. i18n: file: dialogs/FontDecorations.ui:60
-#. i18n: ectx: property (text), widget (QLabel, textColorLabel)
-#: rc.cpp:174
-msgid "Text color:"
-msgstr "Мәтіннің түсі:"
-
-#. i18n: file: dialogs/FontDecorations.ui:80
-#. i18n: ectx: property (text), widget (QLabel, backgroundColorLabel)
-#: rc.cpp:180
-msgid "Background color:"
-msgstr "Аясының түсі:"
-
-#. i18n: file: dialogs/FontDecorations.ui:106
-#. i18n: ectx: property (title), widget (QGroupBox, shadowGroupBox)
-#: rc.cpp:183
-msgid "Text Shadow"
-msgstr "Мәтіннің көлеңкесі"
-
-#. i18n: file: dialogs/FontDecorations.ui:261
-#. i18n: ectx: property (text), widget (QLabel, shadowColorLabel)
-#: rc.cpp:210
-msgid "Color:"
-msgstr "Түсі:"
-
-#. i18n: file: dialogs/FontDecorations.ui:274
-#. i18n: ectx: property (text), widget (QLabel, shadowDistanceLabel)
-#: rc.cpp:213
-msgid "Distance:"
-msgstr "Аралығы:"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:39
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:219
-msgid "<b>Paragraph style properties</b>"
-msgstr "<b>Абзац стилінің қасиеттері</b>"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:56
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:225
-msgid "Next style:"
-msgstr "Келесі стилі:"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:69
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:228
-msgid "Inherit style:"
-msgstr "Мұра ететін стилі:"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:82
-#. i18n: ectx: property (text), widget (QCheckBox, useCharacterStyle)
-#: rc.cpp:231
-msgid "Use named character style"
-msgstr "Аталған таңбалық стилі қолданылсын"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:105
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:234
-msgid "Style:"
-msgstr "Стилі:"
-
-#. i18n: file: dialogs/ParagraphGeneral.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, inToc)
-#: rc.cpp:237
-msgid "Include in table of contents"
-msgstr "Мазмұны кестесіне енгізілсін"
-
-#. i18n: file: dialogs/LanguageTab.ui:18
-#. i18n: ectx: property (text), widget (QLabel, filterLabel)
-#: rc.cpp:240
-msgid "Quick search:"
-msgstr "Шұғыл іздестіру"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:16
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:243
-msgid "Underlining:"
-msgstr "Астын сызу:"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:62
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:246
-msgid "Capitalization"
-msgstr "Үлкен-кішілігі"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:78
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:252
-msgid "Uppercase"
-msgstr "Бас әріп"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:88
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:255
-msgid "Lowercase"
-msgstr "Кіші әріп"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:98
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:258
-msgid "Small Caps"
-msgstr "Шағын үлкен әріп"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:128
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:261
-msgid "Capitalize"
-msgstr "Бас әріппен"
-
-#. i18n: file: dialogs/CharacterHighlighting.ui:138
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:264
-msgid "Strikethrough:"
-msgstr "Сызып тастау"
-
-#. i18n: file: dialogs/StylesWidget.ui:23
-#. i18n: ectx: property (toolTip), widget (QToolButton, applyStyle)
-#: rc.cpp:267
-msgid "Apply selected style to text"
-msgstr "таңдалған стилі мәтінге қолданылсын"
-
-#. i18n: file: dialogs/StylesWidget.ui:33
-#. i18n: ectx: property (toolTip), widget (QToolButton, modifyStyle)
-#: rc.cpp:273
-msgid "Show properties"
-msgstr "Қасиеттерді көрсету"
-
-#. i18n: file: dialogs/StylesWidget.ui:56
-#. i18n: ectx: property (toolTip), widget (QToolButton, newStyle)
-#: rc.cpp:279
-msgid "Add a new style"
-msgstr "Жаңа стилді қосу"
-
-#. i18n: file: dialogs/StyleManager.ui:50
-#. i18n: ectx: property (text), widget (QPushButton, bNew)
-#: rc.cpp:288
-msgid "&New"
-msgstr "&Жаңа"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:27
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:294
-msgid "Prefix:"
-msgstr "Префиксі:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:40
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:297
-msgid "Suffix:"
-msgstr "Журнағы:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:53
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:300
-msgid "Start at:"
-msgstr "Бастауы:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:76
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:303
-msgid "Alignment:"
-msgstr "Туралауы:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:306
-msgid "Depth:"
-msgstr "Тереңдігі:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:109
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:309
-msgid "Display Levels:"
-msgstr "Көрсететін деңгейлері:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:128
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:312
-msgid "Custom character:"
-msgstr "Ерекше таңбасы:"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:158
-#. i18n: ectx: property (text), widget (QCheckBox, restartNumbering)
-#: rc.cpp:318
-msgid "Restart numbering at this paragraph"
-msgstr "Осы абзацтан нөмірлеу қайта басталсын"
-
-#. i18n: file: dialogs/ParagraphBulletsNumbers.ui:178
-#. i18n: ectx: property (text), widget (QCheckBox, letterSynchronization)
-#: rc.cpp:321
-msgid "Letter Synchronization"
-msgstr "Хатты қадамдастыру"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:13
-#. i18n: ectx: property (whatsThis), widget (QWidget, ParagraphIndentSpacing)
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:87
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox_2)
-#: rc.cpp:324 rc.cpp:342
-msgid "<p><ul><li><b>Single</b>: The normal linespacing</li></ul></p> "
-msgstr "<p><ul><li><b>Жалғыз аралықты</b>: Кәдімгі жол аралығы</li></ul></p> "
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:327
-msgid "Indent"
-msgstr "Шегінісі"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:25
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:330
-msgid "Left:"
-msgstr "Сол жақ:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:333
-msgid "Right:"
-msgstr "Оң жақ:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:64
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:336
-msgid "First Line:"
-msgstr "Алғашқы жолы:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:77
-#. i18n: ectx: property (text), widget (QCheckBox, autoTextIndent)
-#: rc.cpp:339
-msgid "Auto-infer from text size"
-msgstr "Мәтіннің өлшеміне лайық қылу"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:90
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:345
-msgid "Line Spacing"
-msgstr "Жол аралығы"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:126
-#. i18n: ectx: property (suffix), widget (QSpinBox, proportional)
-#: rc.cpp:349
-#, no-c-format
-msgid " %"
-msgstr " %"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:151
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:352
-msgid "Use Font Metrics:"
-msgstr "Қолданатын қаріп метрикасы:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:168
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:355
-msgid "Minimum:"
-msgstr "Минимумы:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:199
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:358
-msgid "Paragraph Space"
-msgstr "Абзацтар аралығы"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:205
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:361
-msgid "Before:"
-msgstr "Алдында:"
-
-#. i18n: file: dialogs/ParagraphIndentSpacing.ui:231
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:364
-msgid "After:"
-msgstr "Кейін:"
 
 #, fuzzy
 #~| msgid "Normal"
