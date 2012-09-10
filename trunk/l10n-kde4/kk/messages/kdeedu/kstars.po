@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-04 06:16+0200\n"
+"POT-Creation-Date: 2012-09-10 04:32+0200\n"
 "PO-Revision-Date: 2012-08-06 07:36+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1188,7 +1188,7 @@ msgstr "Файлды жүктеп беруі болмады"
 msgid "KStars Exported Sky Image"
 msgstr "KStars экспорттаған аспан кескіні "
 
-#: dialogs/exportimagedialog.cpp:177 main.cpp:95
+#: dialogs/exportimagedialog.cpp:177 main.cpp:96
 #: printing/foveditordialog.cpp:154
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -2603,52 +2603,48 @@ msgstr "Мин."
 msgid "&Apply"
 msgstr "&Іске асыру"
 
-#: fitsviewer/fitsimage.cpp:137
+#: fitsviewer/fitsimage.cpp:165
 msgid "Please hold while loading FITS file..."
 msgstr "FITS файлы жүктелгенің күте тұрыңыз..."
 
-#: fitsviewer/fitsimage.cpp:137 oal/oal.h:39
-msgid "Cancel"
-msgstr "Айну"
-
-#: fitsviewer/fitsimage.cpp:138
+#: fitsviewer/fitsimage.cpp:166
 msgid "Loading FITS"
 msgstr "FITS жүктеу"
 
-#: fitsviewer/fitsimage.cpp:147
+#: fitsviewer/fitsimage.cpp:177
 #, kde-format
 msgid "Could not open file %1 (fits_get_img_param). Error %2"
 msgstr "%1 деген (fits_get_img_param) файл ашылмады. Қатесі: %2"
 
-#: fitsviewer/fitsimage.cpp:147 fitsviewer/fitsimage.cpp:162
-#: fitsviewer/fitsimage.cpp:168 fitsviewer/fitsimage.cpp:177
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:177 fitsviewer/fitsimage.cpp:194
+#: fitsviewer/fitsimage.cpp:200 fitsviewer/fitsimage.cpp:209
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS Open"
 msgstr "FITS-ты ашу"
 
-#: fitsviewer/fitsimage.cpp:162
+#: fitsviewer/fitsimage.cpp:194
 #, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "FITS (fits_get_img_param) файлын ашу қатесі: %1"
 
-#: fitsviewer/fitsimage.cpp:168
+#: fitsviewer/fitsimage.cpp:200
 msgid "1D FITS images are not supported in KStars."
 msgstr ""
 
-#: fitsviewer/fitsimage.cpp:177
+#: fitsviewer/fitsimage.cpp:209
 #, kde-format
 msgid "FITS file open error (fits_get_img_type): %1"
 msgstr "FITS (fits_get_img_type) файлын ашу қатесі: %1"
 
-#: fitsviewer/fitsimage.cpp:414
+#: fitsviewer/fitsimage.cpp:444
 msgid "FITS image is saturated and cannot be displayed."
 msgstr "FITS кескіні аса толып көрсетуге келмейді."
 
-#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:339
+#: fitsviewer/fitstab.cpp:53 fitsviewer/fitsviewer.cpp:345
 msgid "Save Changes to FITS?"
 msgstr "Өзгерістерді FITS-ке сақталсын ба?"
 
-#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:340
+#: fitsviewer/fitstab.cpp:54 fitsviewer/fitsviewer.cpp:346
 msgid ""
 "The current FITS file has unsaved changes.  Would you like to save before "
 "closing it?"
@@ -2693,7 +2689,7 @@ msgstr "KStars-тың FITS қарау құралына қош келдіңіз"
 msgid "Statistics"
 msgstr "Статистика"
 
-#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:457
+#: fitsviewer/fitsviewer.cpp:145 fitsviewer/fitsviewer.cpp:463
 #, fuzzy
 #| msgid "Markers"
 msgid "Mark Stars"
@@ -2703,17 +2699,23 @@ msgstr "Маркерлері"
 msgid "KStars FITS Viewer"
 msgstr "KStars-тың FITS қарау құралы"
 
-#: fitsviewer/fitsviewer.cpp:194
+#: fitsviewer/fitsviewer.cpp:196
 msgid "Focus"
 msgstr "Көздегені"
 
-#: fitsviewer/fitsviewer.cpp:240 fitsviewer/fitsviewer.cpp:464
+#: fitsviewer/fitsviewer.cpp:200
+#, fuzzy
+#| msgid "Guides"
+msgid "Guide"
+msgstr "Бағыттамалар"
+
+#: fitsviewer/fitsviewer.cpp:246 fitsviewer/fitsviewer.cpp:470
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] ""
 
-#: fitsviewer/fitsviewer.cpp:462
+#: fitsviewer/fitsviewer.cpp:468
 msgid "Unmark Stars"
 msgstr ""
 
@@ -3035,6 +3037,15 @@ msgstr ""
 "Жегілген INDI құрылғысы жоқ. Құрылғыны жегу үшін оны Құрылғы менеджеріндегі "
 "құрылғылар мәзірінен таңдап алыңыз."
 
+#: indi/indiccd.cpp:286 indi/servermanager.cpp:74
+msgid "Error making temporary filename."
+msgstr "Уақытша файл атауын құрғанда қате орын алды."
+
+#: indi/indiccd.cpp:325
+#, kde-format
+msgid "FITS file saved to %1"
+msgstr "FITS файлы %1 деп сақталды"
+
 #: indi/indielement.cpp:322
 msgid "INDI DATA STREAM"
 msgstr "INDI ДЕРЕКТЕР ЛЕГІ"
@@ -3104,15 +3115,6 @@ msgstr "%1 байланыста."
 #, kde-format
 msgid "%1 is online and ready."
 msgstr "%1 байланыста және дайын"
-
-#: indi/indistd.cpp:966 indi/servermanager.cpp:74
-msgid "Error making temporary filename."
-msgstr "Уақытша файл атауын құрғанда қате орын алды."
-
-#: indi/indistd.cpp:1005
-#, kde-format
-msgid "FITS file saved to %1"
-msgstr "FITS файлы %1 деп сақталды"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, fitsLabel)
 #: indi/opsindi.ui:22
@@ -30935,7 +30937,9 @@ msgid "KStars"
 msgstr "KStars"
 
 #: main.cpp:47
-msgid "(c) 2001-2009, The KStars Team"
+#, fuzzy
+#| msgid "(c) 2001-2009, The KStars Team"
+msgid "(c) 2001-2012, The KStars Team"
 msgstr "(c) 2001-2009, KStars тобы"
 
 #: main.cpp:48
@@ -31023,64 +31027,75 @@ msgid "Technical documentation on Astronomy and KStars"
 msgstr ""
 
 #: main.cpp:67
+#, fuzzy
+#| msgctxt "City in Alabama USA"
+#| msgid "Alexander City"
+msgid "Alexander Stepanenko"
+msgstr "Александер-Сити"
+
+#: main.cpp:67
+msgid "Guiding code based on lin_guider"
+msgstr ""
+
+#: main.cpp:68
 msgid "Nuno Pinheiro"
 msgstr ""
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Artwork"
 msgstr ""
 
-#: main.cpp:71
+#: main.cpp:72
 msgid "Dump sky image to file"
 msgstr "Аспан кескінін файлға түсіру"
 
-#: main.cpp:72
+#: main.cpp:73
 msgid "Script to execute"
 msgstr "Орындайтын скрипт"
 
-#: main.cpp:73
+#: main.cpp:74
 msgid "Width of sky image"
 msgstr "Аспан кескінінің ені"
 
-#: main.cpp:74
+#: main.cpp:75
 msgid "Height of sky image"
 msgstr "Аспан кескінінің биіктігі"
 
-#: main.cpp:75
+#: main.cpp:76
 msgid "Filename for sky image"
 msgstr "Аспан кескіні файлының атауы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, InputComboBatch)
-#: main.cpp:76 tools/modcalcjd.ui:120
+#: main.cpp:77 tools/modcalcjd.ui:120
 msgid "Date and time"
 msgstr "Тәулік пен уақыт"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Start with clock paused"
 msgstr "Тоқтаулы сағатымен бастау"
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Dumping sky image"
 msgstr "Аспан кескінін түсіру"
 
-#: main.cpp:136 main.cpp:192
+#: main.cpp:137 main.cpp:193
 msgid "Using CPU date/time instead."
 msgstr "Компьютердің күн/уақыт мәліметі пайдаланылды."
 
-#: main.cpp:165
+#: main.cpp:166
 msgid "Script executed."
 msgstr "Скрипт орындалды."
 
-#: main.cpp:167
+#: main.cpp:168
 msgid "Could not execute script."
 msgstr "Скрипт орындалмады."
 
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgid "Unable to save image: %1 "
 msgstr "Келесі кескін сақталмады: %1"
 
-#: main.cpp:177
+#: main.cpp:178
 #, kde-format
 msgid "Saved to file: %1"
 msgstr "Сақталған файл: %1"
@@ -31474,6 +31489,10 @@ msgstr "Келесі >"
 #: oal/oal.h:39
 msgid "Overwrite"
 msgstr "Үстінен жазу"
+
+#: oal/oal.h:39
+msgid "Cancel"
+msgstr "Айну"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ObserverAdd)
 #. i18n: ectx: property (text), widget (QPushButton, AddObserver)
