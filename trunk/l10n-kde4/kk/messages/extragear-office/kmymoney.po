@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-08-30 04:15+0200\n"
-"PO-Revision-Date: 2012-09-12 03:56+0600\n"
+"PO-Revision-Date: 2012-09-16 09:13+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -36,7 +36,7 @@ msgstr ""
 #: kmymoney/converter/mymoneygncreader.cpp:231
 #, kde-format
 msgid "Account%1"
-msgstr "%1-шот"
+msgstr "%1-есепшот"
 
 #: kmymoney/converter/mymoneygncreader.cpp:236
 #, kde-format
@@ -144,7 +144,7 @@ msgid ""
 "Account or Category %1, transaction date %2; split contains invalid value; "
 "please check"
 msgstr ""
-"%1 есеп-шот па немесе санат па, транзакция күні - %2; бөлуі дұрыс емес: "
+"%1 есепшот па немесе санат па, транзакция күні - %2; бөлуі дұрыс емес: "
 "тексеріңіз"
 
 #: kmymoney/converter/mymoneygncreader.cpp:1691
@@ -259,7 +259,7 @@ msgstr ""
 
 #: kmymoney/converter/mymoneygncreader.cpp:2267
 msgid " commodities (equities)\n"
-msgstr " құндылық (құнды қағаз)\n"
+msgstr " құндылық (өзіндік капитал)\n"
 
 #: kmymoney/converter/mymoneygncreader.cpp:2268
 msgid " prices\n"
@@ -695,7 +695,7 @@ msgid ""
 "selection box."
 msgstr ""
 "%1 <b>%2</b> есепшоты жоқ екен. <b>Құру</b> батырмасын басып жаңа %3 дегенді "
-"құрып, немесе тізімінен %4 данасын қолмен таңдап алыңыз."
+"құрып, немесе панелінің көмегімен %4 данасын қолмен таңдап алыңыз."
 
 #: kmymoney/converter/mymoneyqifreader.cpp:2211
 msgid "You must select or create an account."
@@ -834,7 +834,7 @@ msgstr "Құнды қағаз саны туралы мәлімет жоқ"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:830
 msgid "(Fees) "
-msgstr ""
+msgstr "(шығындар) "
 
 #: kmymoney/converter/mymoneystatementreader.cpp:907
 #, kde-format
@@ -842,6 +842,8 @@ msgid ""
 "Do you want to add \"%1\" as payee/receiver?\n"
 "\n"
 msgstr ""
+"\"%1\" дегенді алушылар қатарына қосу керек пе?\n"
+"\n"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:908
 #, kde-format
@@ -854,23 +856,30 @@ msgid ""
 "payee information for all following transactions referencing \"%1\" will be "
 "removed."
 msgstr ""
+"\"Иә\" десеңіз жаңа алушы пайда болады, \"Жоқ\" десеңіз - алушы"
+"туралы ештеңе жазылмай, ол туралы мәлімет алынып тасталады. "
+"\"Қайту\" дегенді таңдасаңыз, импортау амалы доғарылады.\n"
+"\n"
+"Мұнда \"Жоқ\" деп \"Ендігәрі сұралмасын\" белгісін қойсаңыз, онда "
+"келерде бүкіл \"%1\" дегенге қатысты транзакцияларда осы "
+"алушы туралы мәлімет келтірілмейді."
 
 #: kmymoney/converter/mymoneystatementreader.cpp:919
 #: kmymoney/kmymoney.cpp:4518
 msgid "New payee/receiver"
-msgstr ""
+msgstr "Жаңа алушы"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:940
 msgid "Default Category for Payee"
-msgstr ""
+msgstr "Алушының әдетті санаты"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:943
 msgid "Save Category"
-msgstr ""
+msgstr "Санатын сақтау"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:944
 msgid "No Category"
-msgstr ""
+msgstr "Санатсыз"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_kButtonAbort)
 #. i18n: ectx: property (text), widget (QPushButton, abortButton)
@@ -878,15 +887,15 @@ msgstr ""
 #: kmymoney/dialogs/kaccountselectdlgdecl.ui:134
 #: kmymoney/plugins/kbanking/dialogs/kbmapaccount.ui:132
 msgid "Abort"
-msgstr ""
+msgstr "Доғару"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:951
 msgid "Please select a default category for payee"
-msgstr ""
+msgstr "Алушының әдетті санатын таңдау"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:991
 msgid "Unable to add payee/receiver"
-msgstr ""
+msgstr "Алушыны қосуға болмайды"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1205
 #, kde-format
@@ -895,39 +904,42 @@ msgid ""
 "imported transaction. Do you want KMyMoney to enter this schedule now so "
 "that the transaction can be matched? "
 msgstr ""
+"KMyMoney кестеде <b>%1</b> деген импорталған транзакциямен бірдей "
+"тразакциясын тапты. Транзакциялар бірдей бола берісн деп оны енгізе "
+"берсін бе? "
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1205
 msgid "Schedule found"
-msgstr ""
+msgstr "Кесте табылды"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1276
 #, kde-format
 msgid "Problem adding or matching imported transaction with id '%1': %2"
-msgstr ""
+msgstr "'%1' деген импорталған транзакцияның қосу не сәйкестік мәселесі: %2"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1322
 msgid ""
 "<b>You have downloaded a statement for the following account:</b><br/><br/>"
-msgstr ""
+msgstr "Келесі есепшоттың үзінді көшірмесі жүктеп алынды: <b>%1</b>t<br/><br/>"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1323
 #, kde-format
 msgid " - Account Name: %1"
-msgstr ""
+msgstr " - Есепшоттың атауы: %1"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1324
 #, kde-format
 msgid " - Account Type: %1"
-msgstr ""
+msgstr " - Есепшоттың түрі: %1"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1325
 #, kde-format
 msgid " - Account Number: %1"
-msgstr ""
+msgstr " - Есепшоттың нөмірі: %1"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1332
 msgid "Do you want to import transactions to this account?"
-msgstr ""
+msgstr "Осы есепшотың транзакциялары импортталсын ба?"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1334
 msgid ""
@@ -935,6 +947,9 @@ msgid ""
 "new account by pressing the <b>Create</b> button or select another one "
 "manually from the selection box below."
 msgstr ""
+"KMyMoney қай есершотты қолданатынын білмейді. <b>Құру</b> "
+"батырмасын басып жаңа есепшотты құрып, немесе панелінің көмегімен "
+"барынан қолмен таңдап алыңыз."
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1338
 msgid ""
@@ -942,16 +957,21 @@ msgid ""
 "select an account using the selection box in the dialog or create a new "
 "account by pressing the <b>Create</b> button."
 msgstr ""
+"Таңдалған үзінді көшірме файлында есепшот мәліметі табылмады. "
+"Таңдау диалогы көмегімен есепшоты таңдаңыз, немесе <b>Құру</b> "
+"батырманы басып жаңасын құрып алыңыз."
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1345
 msgid "Import transactions"
-msgstr ""
+msgstr "Транзакцияларды импорттау"
 
 #: kmymoney/converter/mymoneystatementreader.cpp:1376
 msgid ""
 "You must select an account, create a new one, or press the <b>Abort</b> "
 "button."
 msgstr ""
+"Есепшотты таңдау керек не жаңасын құру керек, немесе <b>Доғару</b> "
+"батырмасын басу керек."
 
 #: kmymoney/converter/mymoneytemplate.cpp:87
 #, kde-format
@@ -1014,7 +1034,7 @@ msgstr "Борыш"
 #: kmymoney/widgets/kmymoneyaccountselector.cpp:305
 #: kmymoney/widgets/register.cpp:670
 msgid "Income"
-msgstr "Табыс"
+msgstr "Кіріс"
 
 #: kmymoney/converter/mymoneytemplate.cpp:193
 #: kmymoney/converter/mymoneytemplate.cpp:194
@@ -1025,7 +1045,7 @@ msgstr "Табыс"
 #: kmymoney/widgets/kmymoneyaccountselector.cpp:316
 #: kmymoney/widgets/register.cpp:671
 msgid "Expense"
-msgstr "Шығын"
+msgstr "Шығыс"
 
 #: kmymoney/converter/mymoneytemplate.cpp:197
 #: kmymoney/converter/mymoneytemplate.cpp:198 kmymoney/kmymoneyutils.cpp:100
@@ -1034,7 +1054,7 @@ msgstr "Шығын"
 #: kmymoney/widgets/kmymoneyaccountselector.cpp:327
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:473
 msgid "Equity"
-msgstr "Пайда"
+msgstr "Өзіндік капитал"
 
 #: kmymoney/converter/mymoneytemplate.cpp:217
 #, kde-format
@@ -1046,8 +1066,8 @@ msgstr "%1 үлгісін жүктеу"
 msgid ""
 "<p>Invalid top-level account type <b>%1</b> in template file <b>%2</b></p>"
 msgstr ""
-"<p><b>%2</b> үлгі файлда <b>%1</b> деген жоғарғы деңгейлі шотының түрі дұрыс "
-"емес</p>"
+"<p><b>%2</b> үлгі файлда <b>%1</b> деген жоғарғы деңгейлі есепшотының түрі "
+"дұрыс емес</p>"
 
 #: kmymoney/converter/mymoneytemplate.cpp:312
 #, kde-format
@@ -1055,7 +1075,7 @@ msgid ""
 "<p>Invalid flag type <b>%1</b> for account <b>%3</b> in template file <b>%2</"
 "b></p>"
 msgstr ""
-"<p><b>%2</b> үлгі файлда <b>%3</b> шотының <b>%1</b> деген жалауша түрі "
+"<p><b>%2</b> үлгі файлда <b>%3</b> есепшотының <b>%1</b> деген жалауша түрі "
 "дұрыс емес</p>"
 
 #: kmymoney/converter/mymoneytemplate.cpp:416
@@ -1076,64 +1096,64 @@ msgstr "'%1' дегенге жүктеп берілмеді"
 #: kmymoney/converter/webpricequote.cpp:115
 #, kde-format
 msgid "Source <placeholder>%1</placeholder> does not exist."
-msgstr ""
+msgstr "<placeholder>%1</placeholder> дерек көзі жоқ."
 
 #: kmymoney/converter/webpricequote.cpp:134
 #, kde-format
 msgctxt "The process x is executing"
 msgid "Executing %1..."
-msgstr ""
+msgstr "%1 дегенді орындау"
 
 #: kmymoney/converter/webpricequote.cpp:146
 #: kmymoney/converter/webpricequote.cpp:206
 #, kde-format
 msgid "Unable to launch: %1"
-msgstr ""
+msgstr "Жіберіліп жегілмеді: %1"
 
 #: kmymoney/converter/webpricequote.cpp:150
 #, kde-format
 msgid "Fetching URL %1..."
-msgstr ""
+msgstr "URL %1 дерегін қабылдау..."
 
 #: kmymoney/converter/webpricequote.cpp:167
 msgid "Failed to open downloaded file"
-msgstr ""
+msgstr "Жүктеп алынған файлды ашу жаңылысы"
 
 #: kmymoney/converter/webpricequote.cpp:197
 #, kde-format
 msgctxt "Executing 'script' 'online source' 'investment symbol' "
 msgid "Executing %1 %2 %3..."
-msgstr ""
+msgstr "%1 %2 %3 дегенді орындау..."
 
 #: kmymoney/converter/webpricequote.cpp:245
 #, kde-format
 msgid "Symbol found: %1"
-msgstr ""
+msgstr "Табылған символы: %1"
 
 #: kmymoney/converter/webpricequote.cpp:272
 #, kde-format
 msgid "Price found: %1 (%2)"
-msgstr ""
+msgstr "Табылған баға: %1 (%2)"
 
 #: kmymoney/converter/webpricequote.cpp:283
 #, kde-format
 msgid "Date found: %1"
-msgstr ""
+msgstr "Табылған күні: %1"
 
 #: kmymoney/converter/webpricequote.cpp:295
 #, kde-format
 msgid "Unable to update price for %1 (no price or no date)"
-msgstr ""
+msgstr "%1 дегеннің бағасы жаңартылмады (бағасы не күні жоқ)"
 
 #: kmymoney/converter/webpricequote.cpp:299
 #, kde-format
 msgid "Unable to update price for %1 (empty quote data)"
-msgstr ""
+msgstr "%1 дегеннің бағасы жаңартылмады (бағам дерегі бос)"
 
 #: kmymoney/dialogs/investactivities.cpp:176
 #, kde-format
 msgid "%1 (Brokerage)"
-msgstr ""
+msgstr "%1 (Делдал ақысы)"
 
 #: kmymoney/dialogs/investactivities.cpp:204
 #: kmymoney/dialogs/investactivities.cpp:297
@@ -1145,7 +1165,7 @@ msgstr ""
 #: kmymoney/reports/listtable.cpp:239 kmymoney/widgets/transaction.cpp:1451
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:81
 msgid "Fees"
-msgstr ""
+msgstr "Шығындар"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_qcheckboxAccount)
 #. i18n: ectx: attribute (title), widget (QWidget, m_accountTab)
@@ -1177,7 +1197,7 @@ msgstr ""
 #: kmymoney/widgets/transaction.cpp:1421
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:77
 msgid "Account"
-msgstr ""
+msgstr "Есепшот"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkShares)
 #: kmymoney/dialogs/investactivities.cpp:206
@@ -1191,7 +1211,7 @@ msgstr ""
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:175
 #: kmymoney/widgets/transaction.cpp:1399
 msgid "Shares"
-msgstr ""
+msgstr "Акциялар"
 
 #: kmymoney/dialogs/investactivities.cpp:207
 #: kmymoney/dialogs/investactivities.cpp:300
@@ -1199,7 +1219,7 @@ msgstr ""
 #: kmymoney/dialogs/investtransactioneditor.cpp:303
 #: kmymoney/widgets/transaction.cpp:1434
 msgid "Price/share"
-msgstr ""
+msgstr "Баға/акция"
 
 #: kmymoney/dialogs/investactivities.cpp:208
 #: kmymoney/dialogs/investactivities.cpp:301
@@ -1209,7 +1229,7 @@ msgstr ""
 #: kmymoney/dialogs/investtransactioneditor.cpp:324
 msgctxt "Total value"
 msgid "Total"
-msgstr ""
+msgstr "Барлығы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_Actions)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
@@ -1230,11 +1250,11 @@ msgstr ""
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:301
 #: kmymoney/wizards/newloanwizard/interestwizardpagedecl.ui:6
 msgid "Interest"
-msgstr ""
+msgstr "Өсімі"
 
 #: kmymoney/dialogs/investactivities.cpp:636
 msgid "Ratio 1/"
-msgstr ""
+msgstr "Ара қатынасы: 1/"
 
 #. i18n: ectx: property (text), widget (KMyMoneyRegister::Register, m_register)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
@@ -1251,11 +1271,11 @@ msgstr ""
 #: kmymoney/widgets/register.cpp:76 kmymoney/widgets/register.cpp:508
 #: kmymoney/widgets/transaction.cpp:1386
 msgid "Security"
-msgstr ""
+msgstr "Құнды қағаз"
 
 #: kmymoney/dialogs/investtransactioneditor.cpp:217
 msgid "Asset account"
-msgstr ""
+msgstr "Актив есепшоты"
 
 #. i18n: ectx: property (text), widget (KMyMoneyRegister::Register, m_register)
 #. i18n: ectx: property (text), widget (QTreeWidget, m_priceList)
@@ -1283,12 +1303,12 @@ msgstr ""
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:188
 #: kmymoney/widgets/register.cpp:514
 msgid "Price"
-msgstr ""
+msgstr "Бағасы"
 
 #: kmymoney/dialogs/investtransactioneditor.cpp:288
 #: kmymoney/widgets/transaction.cpp:740 kmymoney/widgets/transaction.cpp:1359
 msgid "Activity"
-msgstr ""
+msgstr "Амал"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
@@ -1314,7 +1334,7 @@ msgstr ""
 #: kmymoney/widgets/register.cpp:506 kmymoney/widgets/transaction.cpp:879
 #: kmymoney/widgets/transaction.cpp:1370
 msgid "Date"
-msgstr ""
+msgstr "Күні"
 
 #. i18n: ectx: property (text), widget (QLabel, labelInv_memo)
 #. i18n: ectx: property (text), widget (QLabel, labelBnk_memo)
@@ -1332,14 +1352,14 @@ msgstr ""
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:162
 #: kmymoney/widgets/transaction.cpp:894 kmymoney/widgets/transaction.cpp:1514
 msgid "Memo"
-msgstr ""
+msgstr "Жазбасы"
 
 #: kmymoney/dialogs/investtransactioneditor.cpp:327
 #: kmymoney/dialogs/transactioneditor.cpp:868
 #: kmymoney/plugins/kbanking/widgets/kbjoblist.cpp:185
 #: kmymoney/widgets/transaction.cpp:923 kmymoney/widgets/transaction.cpp:1544
 msgid "Status"
-msgstr ""
+msgstr "Күй-жайы"
 
 #: kmymoney/dialogs/investtransactioneditor.cpp:491
 msgid "Fee Amount"
@@ -1347,68 +1367,70 @@ msgstr ""
 
 #: kmymoney/dialogs/investtransactioneditor.cpp:1112
 msgid "Price/Share"
-msgstr ""
+msgstr "Баға/акция"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:63
 #: kmymoney/widgets/kmymoneybriefschedule.cpp:59
 msgid "&Skip"
-msgstr ""
+msgstr "Тастап кету"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:65
 #: kmymoney/widgets/kmymoneybriefschedule.cpp:61
 msgid "Skip this transaction"
-msgstr ""
+msgstr "Транзакцияны тастап кету"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:66
 msgid ""
 "Use this to skip importing this transaction and proceed with the next one."
-msgstr ""
+msgstr "Бұл транзакцяны импорттамай келесіге ауысуға пайдаланады."
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:69
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:1391
 #: kmymoney/wizards/newloanwizard/assetaccountwizardpage.cpp:46
 #: kmymoney/wizards/newloanwizard/interestcategorywizardpage.cpp:47
 msgid "&Create..."
-msgstr ""
+msgstr "Құ&ру..."
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:71
 msgid "Create a new account/category"
-msgstr ""
+msgstr "Жаңа есепшот/санатты құру"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:72
 msgid "Use this to add a new account/category to the file"
-msgstr ""
+msgstr "Осымен жаңа есепшот/санатты файлға қосуға болады"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:76
 msgid "&Abort"
-msgstr ""
+msgstr "&Доғару"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:78
 msgid "Abort the import operation and dismiss all changes"
-msgstr ""
+msgstr "Орындалудаы амалын доғарып бүкіл өзгерістерін жоғалту"
 
 #: kmymoney/dialogs/kaccountselectdlg.cpp:79
 msgid ""
 "Use this to abort the import. Your financial data will be in the state "
 "before you started the QIF import."
 msgstr ""
+"Бұны импортты доғару үшін қолданыңыз. Қаржы деректеріңіз QIF "
+"импорттың алдындағы күйіне қайтады."
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, KAccountSelectDlgDecl)
 #: kmymoney/dialogs/kaccountselectdlgdecl.ui:14
 msgid "Account selection"
-msgstr ""
+msgstr "Есепшотын таңдау"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_createButton)
 #. i18n: ectx: property (text), widget (KPushButton, m_createAssetButton)
 #: kmymoney/dialogs/kaccountselectdlgdecl.ui:51
 #: kmymoney/wizards/newaccountwizard/kloanpayoutpagedecl.ui:85
 msgid "Create"
-msgstr ""
+msgstr "Құру"
 
 #. i18n: ectx: property (text), widget (QLabel, m_headerLabel)
 #: kmymoney/dialogs/kaccountselectdlgdecl.ui:84
 msgid "Account to import to"
-msgstr ""
+msgstr "Мынаған импорттайын есепшот"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_qbuttonOk)
 #. i18n: ectx: property (text), widget (KPushButton, btnOK)
@@ -1436,7 +1458,7 @@ msgstr ""
 #: kmymoney/dialogs/ksortoptiondlg.ui:61
 #: kmymoney/dialogs/mymoneyqifprofileeditordecl.ui:749
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_qbuttonCancel)
 #. i18n: ectx: property (text), widget (KPushButton, buttonSkip)
@@ -1445,19 +1467,19 @@ msgstr ""
 #: kmymoney/dialogs/kenterscheduledlgdecl.ui:269
 #: kmymoney/widgets/kschedulebriefwidget.ui:270
 msgid "Skip"
-msgstr ""
+msgstr "Тастап кету"
 
 #: kmymoney/dialogs/kbackupdlg.cpp:54
 msgid "C&hoose..."
-msgstr ""
+msgstr "Таң&дау..."
 
 #: kmymoney/dialogs/kbackupdlg.cpp:56
 msgid "Select mount point"
-msgstr ""
+msgstr "Жалғау орнын таңдау"
 
 #: kmymoney/dialogs/kbackupdlg.cpp:57
 msgid "Use this to browse to the mount point."
-msgstr ""
+msgstr "Жалғау орнын ақтару"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, kbackupdlgdecl)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:9 kmymoney/kmymoney.cpp:2530
@@ -1465,7 +1487,7 @@ msgstr ""
 #: kmymoney/kmymoney.cpp:2596 kmymoney/kmymoney.cpp:2621
 #: kmymoney/kmymoney.cpp:2623
 msgid "Backup"
-msgstr ""
+msgstr "Сақтық көшірме"
 
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:33
@@ -1480,27 +1502,36 @@ msgid ""
 "make sure you mark the checkbox below to \"mount this directory before "
 "backing up.\""
 msgstr ""
+"Деректеріңіздің сақтык көшрмесін жасау.\n"
+"\n"
+"Жазатын дискі салынған, дискжетегі істеп тұрғанына көз жеткізіңіз. "
+"Сосын Таңдау баттырмасы арқылы немесе жолын келтіріп "
+"жалғау орнын таңдау керек.\n"
+"\n"
+"ОК батырмасын басып сақтық көшірмесін жасаңыз. Егерде жүйеңіз "
+"автожалғауды істей алмайтын болса, онда төмендегі \"Алдында осы "
+"қапшығына жалғансын\" дегенді белгілеңіз."
 
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:58
 msgid "Device options"
-msgstr ""
+msgstr "Құрылғы параметрлері"
 
 #. i18n: ectx: property (text), widget (QLabel, lblMountPoint)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:78
 msgctxt "This is the mount point"
 msgid "Mount Point:"
-msgstr ""
+msgstr "Жалғау нүктесі:"
 
 #. i18n: ectx: property (text), widget (KPushButton, chooseButton)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:91
 msgid "Choose..."
-msgstr ""
+msgstr "Таңдау..."
 
 #. i18n: ectx: property (text), widget (QCheckBox, mountCheckBox)
 #: kmymoney/dialogs/kbackupdlgdecl.ui:100
 msgid "Mount this directory before backing up."
-msgstr ""
+msgstr "Алдында осы қапшығына жалғансын"
 
 #. i18n: ectx: property (text), widget (KPushButton, btnCancel)
 #. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
@@ -1536,23 +1567,23 @@ msgstr ""
 #: kmymoney/plugins/csvimport/csvdialog.cpp:3211
 #: kmymoney/plugins/ofximport/dialogs/kofxdirectconnectdlgdecl.ui:57
 msgid "Cancel"
-msgstr ""
+msgstr "Қайту"
 
 #: kmymoney/dialogs/kbalancechartdlg.cpp:44
 #, kde-format
 msgid "Balance of %1"
-msgstr ""
+msgstr "%1 балансы"
 
 #: kmymoney/dialogs/kbalancechartdlg.cpp:80
 #, kde-format
 msgid "%1 Balance History"
-msgstr ""
+msgstr "%1 балансының тарихы"
 
 #: kmymoney/dialogs/kbalancechartdlg.cpp:81 kmymoney/kmymoney.cpp:4137
 #: kmymoney/views/kforecastview.cpp:997 kmymoney/views/khomeview.cpp:315
 #: kmymoney/views/khomeview.cpp:1338 kmymoney/views/kreportsview.cpp:755
 msgid "Generated Report"
-msgstr ""
+msgstr "Есеп беру"
 
 #: kmymoney/dialogs/kcategoryreassigndlg.cpp:81
 #, kde-format
@@ -1561,21 +1592,24 @@ msgid ""
 "However, at least one category with the same currency must exist so that the "
 "transactions/schedules can be reassigned."
 msgstr ""
+"<b>%1</b> санатына әлі кемінде бір транзакция/кесте сілтейді. "
+"Алайда, транзакция/кестені жаңадан тағайындау үшін ақша түрі бірдей "
+"кемінде бір санат болу керек. "
 
 #: kmymoney/dialogs/kcategoryreassigndlg.cpp:100
 msgid ""
 "This dialog does not allow new categories to be created. Please pick a "
 "category from the list."
-msgstr ""
+msgstr "Бұл диалогта жаңа санат құрылмайды. Тізіміннен таңдап алыңыз."
 
 #: kmymoney/dialogs/kcategoryreassigndlg.cpp:100
 msgid "Category creation"
-msgstr ""
+msgstr "Санатты құру"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, KCategoryeReassignDlgDecl)
 #: kmymoney/dialogs/kcategoryreassigndlgdecl.ui:17
 msgid "Reassign categories"
-msgstr ""
+msgstr "Санаттарды қайта тағайындау"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: kmymoney/dialogs/kcategoryreassigndlgdecl.ui:35
@@ -1584,11 +1618,14 @@ msgid ""
 "category need to be re-assigned to a different category before the selected "
 "category can be deleted. Please select a category from the list below."
 msgstr ""
+"Таңдалған санатты өшіру алдында оған жататыны бар транзакциялар, "
+"кестелер, бюджеттерді басқаларына жатқызу керек. Жаңа санатын "
+"төмендегі тізімінен таңдап алыңыз."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: kmymoney/dialogs/kcategoryreassigndlgdecl.ui:64
 msgid "Available categories:"
-msgstr ""
+msgstr "Бар санаттар:"
 
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:57
 msgid ""
@@ -1604,13 +1641,13 @@ msgstr ""
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:61
 #: kmymoney/dialogs/kchooseimportexportdlgdecl.ui:76
 msgid "Choose import type:"
-msgstr ""
+msgstr "Импорттың түрі:"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, kChooseImportDlgDecl)
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:62
 #: kmymoney/dialogs/kchooseimportexportdlgdecl.ui:9
 msgid "Choose Import Type Dialog"
-msgstr ""
+msgstr "Импорттың түрін таңдау диалогы"
 
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:64
 msgid ""
@@ -1624,23 +1661,23 @@ msgstr ""
 
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:68
 msgid "Choose export type:"
-msgstr ""
+msgstr "Экспорттың түрі"
 
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:69
 msgid "Choose Export Type Dialog"
-msgstr ""
+msgstr "Экспорттың түрін таңдау диалогы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, typeCombo)
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:74
 #: kmymoney/dialogs/kchooseimportexportdlgdecl.ui:93
 msgid "QIF"
-msgstr ""
+msgstr "QIF"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, typeCombo)
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:74
 #: kmymoney/dialogs/kchooseimportexportdlgdecl.ui:98
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: kmymoney/dialogs/kchooseimportexportdlg.cpp:90
 msgid ""
@@ -1671,7 +1708,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, descriptionLabel)
 #: kmymoney/dialogs/kchooseimportexportdlgdecl.ui:120
 msgid "Some description"
-msgstr ""
+msgstr "Сипаттамасы"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:78
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:80
@@ -1705,31 +1742,37 @@ msgstr ""
 #: kmymoney/widgets/transaction.cpp:1296
 msgctxt "Split transaction (category replacement)"
 msgid "Split transaction"
-msgstr ""
+msgstr "Транзакция бөлінген"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:130
 #, kde-format
 msgid ""
 "<p>Category changed.<br/>&nbsp;&nbsp;&nbsp;Old: <b>%1</b>, New: <b>%2</b></p>"
 msgstr ""
+"<p>Санаты өзгертілген.<br/>&nbsp;&nbsp;&nbsp;Ескісі: <b>%1</b>, Жаңасы: <b>%"
+"2</b></p>"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:138
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:140
 msgctxt "Empty memo"
 msgid "empty"
-msgstr ""
+msgstr "бос"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:143
 #, kde-format
 msgid ""
 "<p>Memo changed.<br/>&nbsp;&nbsp;&nbsp;Old: <b>%1</b>, New: <b>%2</b></p>"
 msgstr ""
+"<p>Жазбасы өзгертілген.<br/>&nbsp;&nbsp;&nbsp;Ескісі: <b>%1</b>, Жаңасы: <b>%"
+"2</b></p>"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:152
 #, kde-format
 msgid ""
 "<p>Amount changed.<br/>&nbsp;&nbsp;&nbsp;Old: <b>%1</b>, New: <b>%2</b></p>"
 msgstr ""
+"<p>Мөлшері өзгертілген.<br/>&nbsp;&nbsp;&nbsp;Ескісі: <b>%1</b>, Жаңасы: <b>%"
+"2</b></p>"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:160
 #, kde-format
@@ -1737,6 +1780,8 @@ msgid ""
 "<p>Reconciliation flag changed.<br/>&nbsp;&nbsp;&nbsp;Old: <b>%1</b>, New: "
 "<b>%2</b></p>"
 msgstr ""
+"<p>Келістіру жалаушасы өзгертілген.<br/>&nbsp;&nbsp;&nbsp;Ескісі: "
+"<b>%1</b>, Жаңасы: <b>%2</b></p>"
 
 #: kmymoney/dialogs/kconfirmmanualenterdlg.cpp:163
 msgid "Fatal error in determining data: "
@@ -1801,7 +1846,7 @@ msgstr ""
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:1669
 #: kmymoney/wizards/newaccountwizard/knewaccountwizard.cpp:1675
 msgid "Amount"
-msgstr ""
+msgstr "Сома"
 
 #. i18n: ectx: property (text), widget (QLabel, m_fromAmount)
 #. i18n: ectx: property (text), widget (QLabel, m_dateText)
@@ -18134,3 +18179,5 @@ msgid ""
 "p>\n"
 "<p>Provided by Jose Jorge</p>\n"
 msgstr ""
+
+
