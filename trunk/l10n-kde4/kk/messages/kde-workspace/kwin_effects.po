@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-16 04:33+0200\n"
+"POT-Creation-Date: 2012-09-20 04:37+0200\n"
 "PO-Revision-Date: 2012-07-29 10:27+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -58,7 +58,7 @@ msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "Үстелді көрсету"
 
-#: coverswitch/coverswitch_config.cpp:72 magiclamp/magiclamp_config.cpp:58
+#: coverswitch/coverswitch_config.cpp:72
 msgid " millisecond"
 msgid_plural " milliseconds"
 msgstr[0] " милисекунда"
@@ -113,15 +113,15 @@ msgid "Animation on tab box close"
 msgstr "Қойындыны жабуы анимациялансын"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: coverswitch/coverswitch_config.ui:139 magiclamp/magiclamp_config.ui:16
+#: coverswitch/coverswitch_config.ui:139 magiclamp/magiclamp_config.ui:17
 msgid "Animation duration:"
 msgstr "Анимацияның ұзақтығы:"
 
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, spinDuration)
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_RotationDuration)
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, animationDurationSpin)
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_AnimationDuration)
 #: coverswitch/coverswitch_config.ui:158 cube/cube_config.ui:146
-#: cube/cubeslide_config.ui:49 magiclamp/magiclamp_config.ui:35
+#: cube/cubeslide_config.ui:49 magiclamp/magiclamp_config.ui:36
 msgctxt "Duration of rotation"
 msgid "Default"
 msgstr "Әдетті"
@@ -224,7 +224,7 @@ msgstr "Белсендету"
 #: cube/cube_config.ui:101 desktopgrid/desktopgrid_config.ui:17
 #: flipswitch/flipswitch_config.ui:17 mousemark/mousemark_config.ui:17
 #: presentwindows/presentwindows_config.ui:389
-#: thumbnailaside/thumbnailaside_config.ui:16
+#: thumbnailaside/thumbnailaside_config.ui:17
 msgid "Appearance"
 msgstr "Көрінісі"
 
@@ -254,8 +254,8 @@ msgid "Opacity"
 msgstr "Буалдырлығы"
 
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_OpacitySpin)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinOpacity)
-#: cube/cube_config.ui:222 thumbnailaside/thumbnailaside_config.ui:99
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Opacity)
+#: cube/cube_config.ui:222 thumbnailaside/thumbnailaside_config.ui:87
 #, no-c-format
 msgid " %"
 msgstr " %"
@@ -431,12 +431,12 @@ msgstr "Өшуінің ұзақтығы:"
 msgid "ms"
 msgstr "мс"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, blur)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Blur)
 #: dashboard/dashboard_config.ui:193
 msgid "The blur effect must be enabled before it can be used."
 msgstr "Бұған алдымен бұлдырлату эффектін қосу керек."
 
-#. i18n: ectx: property (text), widget (QCheckBox, blur)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Blur)
 #: dashboard/dashboard_config.ui:196
 msgid "Apply blur effect to background"
 msgstr "Бұлдырлату эффекті аясына қолданылсын"
@@ -643,7 +643,7 @@ msgstr "Терістеу эффектін терістеу"
 msgid "Toggle Invert Effect on Window"
 msgstr "Терезедегіні терістеу эффектін болдыру/кетіру"
 
-#. i18n: ectx: property (text), widget (QCheckBox, fadetoblackBox)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FadeToBlack)
 #: login/login_config.ui:17
 msgid "Fade to black (fullscreen splash screens only)"
 msgstr "Біртіндеп қарайсын (тек толық экранды бейнепердер үшін)"
@@ -653,24 +653,32 @@ msgstr "Біртіндеп қарайсын (тек толық экранды б
 msgid "&Radius:"
 msgstr "&Радиусы:"
 
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AnimationDuration)
+#: magiclamp/magiclamp_config.ui:39
+#, fuzzy
+#| msgid " millisecond"
+#| msgid_plural " milliseconds"
+msgid "milliseconds"
+msgstr " милисекунда"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupSize)
-#: magnifier/magnifier_config.ui:16
+#: magnifier/magnifier_config.ui:17
 msgid "Size"
 msgstr "Өлшемі"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: magnifier/magnifier_config.ui:22 mousemark/mousemark_config.ui:23
+#: magnifier/magnifier_config.ui:23 mousemark/mousemark_config.ui:23
 msgid "&Width:"
 msgstr "&Ені:"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinWidth)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinHeight)
-#: magnifier/magnifier_config.ui:41 magnifier/magnifier_config.ui:73
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Width)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Height)
+#: magnifier/magnifier_config.ui:42 magnifier/magnifier_config.ui:74
 msgid " px"
 msgstr " пк"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: magnifier/magnifier_config.ui:54
+#: magnifier/magnifier_config.ui:55
 msgid "&Height:"
 msgstr "&Биіктігі:"
 
@@ -683,8 +691,6 @@ msgid "Clear Last Mouse Mark"
 msgstr "Тышқанның соңғы ізін тазалау"
 
 #: mousemark/mousemark_config.cpp:51
-#: thumbnailaside/thumbnailaside_config.cpp:90
-#: thumbnailaside/thumbnailaside_config.cpp:92
 msgid " pixel"
 msgid_plural " pixels"
 msgstr[0] " пиксел"
@@ -974,23 +980,33 @@ msgstr "Жазуының түсі:"
 msgid "Text alpha:"
 msgstr "Жазуының альфасы:"
 
-#: thumbnailaside/thumbnailaside.cpp:38
-#: thumbnailaside/thumbnailaside_config.cpp:66
+#: thumbnailaside/thumbnailaside.cpp:39
+#: thumbnailaside/thumbnailaside_config.cpp:67
 msgid "Toggle Thumbnail for Current Window"
 msgstr "Назардағы терезедегі нобайларын ауыстыру"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: thumbnailaside/thumbnailaside_config.ui:22
+#: thumbnailaside/thumbnailaside_config.ui:23
 msgid "Maximum &width:"
 msgstr "&Енінің шегі:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: thumbnailaside/thumbnailaside_config.ui:51
+#: thumbnailaside/thumbnailaside_config.ui:36
 msgid "&Spacing:"
 msgstr "&Аралығы:"
 
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Spacing)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MaxWidth)
+#: thumbnailaside/thumbnailaside_config.ui:55
+#: thumbnailaside/thumbnailaside_config.ui:106
+#, fuzzy
+#| msgid " pixel"
+#| msgid_plural " pixels"
+msgid " pixels"
+msgstr " пиксел"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: thumbnailaside/thumbnailaside_config.ui:80
+#: thumbnailaside/thumbnailaside_config.ui:68
 msgid "&Opacity:"
 msgstr "&Мөлдір  еместігі:"
 
@@ -1093,20 +1109,20 @@ msgstr "Қалқымалы мәзірлер:"
 msgid "Torn-off menus:"
 msgstr "Тармақты мәзірллер:"
 
-#: windowgeometry/windowgeometry.cpp:60
+#: windowgeometry/windowgeometry.cpp:63
 msgid "Toggle window geometry display (effect only)"
 msgstr "Терезе өлшемдерін көрсету/жасыру"
 
-#: windowgeometry/windowgeometry_config.cpp:46
+#: windowgeometry/windowgeometry_config.cpp:49
 msgid "Toggle KWin composited geometry display"
 msgstr "KWin құрастырған өлшемдерін көрсету/жасыру"
 
-#. i18n: ectx: property (text), widget (QCheckBox, handleMove)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Move)
 #: windowgeometry/windowgeometry_config.ui:17
 msgid "Display for moving windows"
 msgstr "Терезелер жылжығанда көрсетілсін"
 
-#. i18n: ectx: property (text), widget (QCheckBox, handleResize)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Resize)
 #: windowgeometry/windowgeometry_config.ui:24
 msgid "Display for resizing windows"
 msgstr "Терезенің өлшемі өзгергенде көрсетілсін"
