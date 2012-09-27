@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-16 03:02+0200\n"
+"POT-Creation-Date: 2012-09-27 03:30+0200\n"
 "PO-Revision-Date: 2012-08-29 05:15+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -152,12 +152,12 @@ msgid "Deleted"
 msgstr "Өшірілген"
 
 #: kernel/kptglobal.cpp:32 kernel/kptnode.cpp:605 kernel/kptschedule.cpp:1807
-#: models/kptschedulemodel.cpp:753
+#: models/kptschedulemodel.cpp:758
 msgid "Not scheduled"
 msgstr "Жоспарланған жоқ"
 
-#: kernel/kptglobal.cpp:34 models/kptschedulemodel.cpp:753
-#: models/kptschedulemodel.cpp:836
+#: kernel/kptglobal.cpp:34 models/kptschedulemodel.cpp:758
+#: models/kptschedulemodel.cpp:902
 msgid "Scheduled"
 msgstr "Жоспарлаған"
 
@@ -194,7 +194,7 @@ msgstr "Жоспарлау қатесі"
 #: models/kptnodeitemmodel.cpp:730 models/kptresourceallocationmodel.cpp:840
 #: models/kptresourcemodel.cpp:212 models/kptresourcemodel.cpp:244
 #: models/kptresourcemodel.cpp:365 models/kptresourcemodel.cpp:369
-#: models/kptresourcemodel.cpp:378 models/kptschedulemodel.cpp:524
+#: models/kptresourcemodel.cpp:378 models/kptschedulemodel.cpp:529
 #: models/kpttreecombobox.cpp:124 ui/kptpertresult.cpp:139
 #: ui/kptpertresult.cpp:494 ui/kptresourcedialog.cpp:300
 #: ui/kptresourcedialog.cpp:326 ui/kpttaskcostpanel.cpp:50
@@ -700,8 +700,8 @@ msgstr "%1 (Әдетті есебі)"
 #: models/kptresourceappointmentsmodel.cpp:907
 #: models/kptresourceappointmentsmodel.cpp:922
 #: models/kptresourceappointmentsmodel.cpp:1483
-#: models/kptresourcemodel.cpp:448 models/kptschedulemodel.cpp:827
-#: models/kptschedulemodel.cpp:1105 ui/kptresourceassignmentview.ui:27
+#: models/kptresourcemodel.cpp:448 models/kptschedulemodel.cpp:892
+#: models/kptschedulemodel.cpp:1172 ui/kptresourceassignmentview.ui:27
 msgid "Name"
 msgstr "Атауы"
 
@@ -1413,56 +1413,64 @@ msgstr ""
 "ресурс жоба жоспарлағышының біреуі.</para>"
 
 #: models/kptcommonstrings.cpp:165
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "The scheduler used for calculating the project schedule"
+msgctxt "@info:tooltip"
+msgid "The granularity used when calculating the project schedule"
+msgstr "Жабаны жоспарлауға қолданатын жоспарлағыш"
+
+#: models/kptcommonstrings.cpp:167
 msgctxt "@info:tooltip"
 msgid "The url of the document"
 msgstr "Құжаттың URL-адресі"
 
-#: models/kptcommonstrings.cpp:166
+#: models/kptcommonstrings.cpp:168
 msgctxt "@info:tooltip"
 msgid "The type of the document"
 msgstr "Құжаттың түрі"
 
-#: models/kptcommonstrings.cpp:167
+#: models/kptcommonstrings.cpp:169
 msgctxt "@info:tooltip"
 msgid "The status of the document"
 msgstr "Құжаттың күй-жайы"
 
-#: models/kptcommonstrings.cpp:168
+#: models/kptcommonstrings.cpp:170
 msgctxt "@info:tooltip"
 msgid "Defines how this document is sent"
 msgstr "Құжат қалай жіберілетінін анықтау"
 
-#: models/kptcommonstrings.cpp:170
+#: models/kptcommonstrings.cpp:172
 msgctxt "@info:tooltip"
 msgid "The name of the calendar"
 msgstr "Күнтібенің атауы."
 
-#: models/kptcommonstrings.cpp:171
+#: models/kptcommonstrings.cpp:173
 msgctxt "@info:tooltip"
 msgid "The timezone of the calendar"
 msgstr "Күнтібенің уақыт белдеуі"
 
-#: models/kptcommonstrings.cpp:173
+#: models/kptcommonstrings.cpp:175
 msgctxt "@info:tooltip"
 msgid "The name of the required task"
 msgstr "Қажетті тапсырманың атауы."
 
-#: models/kptcommonstrings.cpp:174
+#: models/kptcommonstrings.cpp:176
 msgctxt "@info:tooltip"
 msgid "The name of the dependent task"
 msgstr "Тәуелді тапсырманың атауы."
 
-#: models/kptcommonstrings.cpp:175
+#: models/kptcommonstrings.cpp:177
 msgctxt "@info:tooltip"
 msgid "The type of relation"
 msgstr "Қатынастың түрі"
 
-#: models/kptcommonstrings.cpp:176
+#: models/kptcommonstrings.cpp:178
 msgctxt "@info:tooltip"
 msgid "The relations time lag"
 msgstr "Қатынас жағының уақыт айырмашылығы"
 
-#: models/kptcommonstrings.cpp:180 ui/kptdocumentspanel.cpp:198
+#: models/kptcommonstrings.cpp:182 ui/kptdocumentspanel.cpp:198
 msgctxt "(qtundo-format)"
 msgid "Remove document"
 msgstr "Құжатты кетіру"
@@ -2689,7 +2697,7 @@ msgstr "Тапсырманың саласын қосу"
 msgid "Path"
 msgstr "Тізбегі"
 
-#: models/kptpertcpmmodel.cpp:428 ui/kptscheduleeditor.cpp:726
+#: models/kptpertcpmmodel.cpp:428 ui/kptscheduleeditor.cpp:727
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
@@ -3137,223 +3145,254 @@ msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "Атқарушы тобын қосу..."
 
-#: models/kptschedulemodel.cpp:388
+#: models/kptschedulemodel.cpp:393
 msgctxt "(qtundo-format)"
 msgid "Modify schedule name"
 msgstr "Жоспардың атауын өзгерту"
 
-#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:461
+#: models/kptschedulemodel.cpp:463 models/kptschedulemodel.cpp:466
 msgid "Allow"
 msgstr "Рұқсат ету"
 
-#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:464
+#: models/kptschedulemodel.cpp:463 models/kptschedulemodel.cpp:469
 msgid "Avoid"
 msgstr "Безу"
 
-#: models/kptschedulemodel.cpp:461
+#: models/kptschedulemodel.cpp:466
 msgid "(Avoid)"
 msgstr "(Безу)"
 
-#: models/kptschedulemodel.cpp:464
+#: models/kptschedulemodel.cpp:469
 msgid "(Allow)"
 msgstr "(Рұқсат ету)"
 
-#: models/kptschedulemodel.cpp:472
+#: models/kptschedulemodel.cpp:477
 msgctxt "@info:tooltip"
 msgid "Allow overbooking resources"
 msgstr "Атқарушыларды асыра жоспарлауды рұқсат ету"
 
-#: models/kptschedulemodel.cpp:473 models/kptschedulemodel.cpp:483
+#: models/kptschedulemodel.cpp:478 models/kptschedulemodel.cpp:488
 msgctxt "@info:tooltip"
 msgid "Avoid overbooking resources"
 msgstr "Атқарушыларды асыра жоспарлаудан безу"
 
-#: models/kptschedulemodel.cpp:477
+#: models/kptschedulemodel.cpp:482
 msgctxt "@info:tooltip"
 msgid "Allow overbooking of resources"
 msgstr "Атқарушыларды асыра жұмсауды рұқсат ету"
 
-#: models/kptschedulemodel.cpp:478
+#: models/kptschedulemodel.cpp:483
 #, kde-format
 msgctxt "@info:tooltip 1=scheduler name"
 msgid "%1 always allows overbooking of resources"
 msgstr "%1 ылғи атқарушыларды асыра жұмсауды рұқсат етеді"
 
-#: models/kptschedulemodel.cpp:482
+#: models/kptschedulemodel.cpp:487
 #, kde-format
 msgctxt "@info:tooltip 1=scheduler name"
 msgid "%1 always avoids overbooking of resources"
 msgstr "%1 ылғи атқарушыларды асыра жұмсаудан безеді"
 
-#: models/kptschedulemodel.cpp:487
+#: models/kptschedulemodel.cpp:492
 msgctxt "@label:listbox"
 msgid "Avoid"
 msgstr "Безу"
 
-#: models/kptschedulemodel.cpp:487
+#: models/kptschedulemodel.cpp:492
 msgctxt "@label:listbox"
 msgid "Allow"
 msgstr "Рұқсат ету"
 
-#: models/kptschedulemodel.cpp:507
+#: models/kptschedulemodel.cpp:512
 msgctxt "(qtundo-format)"
 msgid "Modify allow overbooking"
 msgstr "Мүмкіндіктерін асыруға рұқсатын өзгерту"
 
-#: models/kptschedulemodel.cpp:524
+#: models/kptschedulemodel.cpp:529
 msgid "PERT"
 msgstr "PERT (ЖЖБЖ)"
 
-#: models/kptschedulemodel.cpp:527
+#: models/kptschedulemodel.cpp:532
 msgctxt "@info:tooltip"
 msgid "Use PERT distribution to calculate expected estimate for the tasks"
 msgstr ""
 "Тапсырмаларды болжап бағалағанда ЖЖБЖ-ті (PERT - жобаларды жоспарлау және "
 "басқару жүйесі) қолдану"
 
-#: models/kptschedulemodel.cpp:528
+#: models/kptschedulemodel.cpp:533
 msgctxt "@info:tooltip"
 msgid "Use the tasks expected estimate directly"
 msgstr "Тікелей тапсырмаларды болжап бағалауды қолдану"
 
-#: models/kptschedulemodel.cpp:530
+#: models/kptschedulemodel.cpp:535
 msgctxt "@label:listbox"
 msgid "None"
 msgstr "Жоқ"
 
-#: models/kptschedulemodel.cpp:530
+#: models/kptschedulemodel.cpp:535
 msgctxt "@label:listbox"
 msgid "PERT"
 msgstr "PERT (ЖЖБЖ)"
 
-#: models/kptschedulemodel.cpp:550
+#: models/kptschedulemodel.cpp:555
 msgctxt "(qtundo-format)"
 msgid "Modify scheduling distribution"
 msgstr "Жоспарлау үлестірімін өзгерту"
 
-#: models/kptschedulemodel.cpp:579
+#: models/kptschedulemodel.cpp:584
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Planned start: %1<nl/>Target start: %2"
 msgstr "Жоспарланған бастау: %1<nl/>Көздеген кезі: %2"
 
-#: models/kptschedulemodel.cpp:581
+#: models/kptschedulemodel.cpp:586
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Target start: %1"
 msgstr "Көздеген бастауы: %1"
 
-#: models/kptschedulemodel.cpp:615
+#: models/kptschedulemodel.cpp:620
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Planned finish: %1<nl/>Target finish: %2"
 msgstr "Жоспарлаған аяқтауы: %1<nl/>Көздеген кезі: %2"
 
-#: models/kptschedulemodel.cpp:617
+#: models/kptschedulemodel.cpp:622
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Target finish: %1"
 msgstr "Көздеген аяқтауы: %1"
 
-#: models/kptschedulemodel.cpp:643 models/kptschedulemodel.cpp:649
+#: models/kptschedulemodel.cpp:648 models/kptschedulemodel.cpp:654
 msgid "Backwards"
 msgstr "Кері"
 
-#: models/kptschedulemodel.cpp:643 models/kptschedulemodel.cpp:646
+#: models/kptschedulemodel.cpp:648 models/kptschedulemodel.cpp:651
 msgid "Forward"
 msgstr "Ілгері"
 
-#: models/kptschedulemodel.cpp:646
+#: models/kptschedulemodel.cpp:651
 msgid "(Backwards)"
 msgstr "(Кері)"
 
-#: models/kptschedulemodel.cpp:649
+#: models/kptschedulemodel.cpp:654
 msgid "(Forward)"
 msgstr "(Ілгері)"
 
-#: models/kptschedulemodel.cpp:657 models/kptschedulemodel.cpp:667
+#: models/kptschedulemodel.cpp:662 models/kptschedulemodel.cpp:672
 msgctxt "@info:tooltip"
 msgid "Schedule project from target end time"
 msgstr "Жобаны көздеген аяқтау кезінен жоспарлау"
 
-#: models/kptschedulemodel.cpp:658 models/kptschedulemodel.cpp:663
+#: models/kptschedulemodel.cpp:663 models/kptschedulemodel.cpp:668
 msgctxt "@info:tooltip"
 msgid "Schedule project from target start time"
 msgstr "Жобаны көздеген бастау кезінен жоспарлау"
 
-#: models/kptschedulemodel.cpp:662
+#: models/kptschedulemodel.cpp:667
 #, kde-format
 msgctxt "@info:tooltip 1=scheduler name"
 msgid "%1 always schedules from target start time"
 msgstr "%1 жобаны ылғи көздеген бастау кезінен жоспарлайды"
 
-#: models/kptschedulemodel.cpp:668
+#: models/kptschedulemodel.cpp:673
 #, kde-format
 msgctxt "@info:tooltip 1=scheduler name"
 msgid "%1 always schedules from target end time"
 msgstr "%1 жобаны ылғи көздеген аяқтау кезінен жоспарлайды"
 
-#: models/kptschedulemodel.cpp:672
+#: models/kptschedulemodel.cpp:677
 msgctxt "@label:listbox"
 msgid "Forward"
 msgstr "Ілгері"
 
-#: models/kptschedulemodel.cpp:672
+#: models/kptschedulemodel.cpp:677
 msgctxt "@label:listbox"
 msgid "Backwards"
 msgstr "Кері"
 
-#: models/kptschedulemodel.cpp:692
+#: models/kptschedulemodel.cpp:697
 msgctxt "(qtundo-format)"
 msgid "Modify scheduling direction"
 msgstr "Жоспарлау бағытын өзгерту"
 
-#: models/kptschedulemodel.cpp:710
+#: models/kptschedulemodel.cpp:715
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: models/kptschedulemodel.cpp:735
+#: models/kptschedulemodel.cpp:740
 msgctxt "(qtundo-format)"
 msgid "Modify scheduler"
 msgstr "Жоспарлағышты өзгерту"
 
-#: models/kptschedulemodel.cpp:828
+#: models/kptschedulemodel.cpp:783
+#, fuzzy
+#| msgid "None"
+msgctxt "Scheduling granularity not supported"
+msgid "None"
+msgstr "Жоқ"
+
+#: models/kptschedulemodel.cpp:792
+msgctxt "@info:tooltip"
+msgid "Scheduling granularity not supported"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:796
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Selected scheduling granularity: %1"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:820
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Modify scheduling direction"
+msgctxt "(qtundo-format)"
+msgid "Modify scheduling granularity"
+msgstr "Жоспарлау бағытын өзгерту"
+
+#: models/kptschedulemodel.cpp:893
 msgid "State"
 msgstr "Күйі"
 
-#: models/kptschedulemodel.cpp:829
+#: models/kptschedulemodel.cpp:894
 msgid "Direction"
 msgstr "Бағыты"
 
-#: models/kptschedulemodel.cpp:830
+#: models/kptschedulemodel.cpp:895
 msgid "Overbooking"
 msgstr "Асыру"
 
-#: models/kptschedulemodel.cpp:831
+#: models/kptschedulemodel.cpp:896
 msgid "Distribution"
 msgstr "Үлестірімі"
 
-#: models/kptschedulemodel.cpp:833
+#: models/kptschedulemodel.cpp:898
 msgid "Planned Start"
 msgstr "Жоспарланған бастауы"
 
-#: models/kptschedulemodel.cpp:834
+#: models/kptschedulemodel.cpp:899
 msgid "Planned Finish"
 msgstr "Жоспарлаған бітіруі"
 
-#: models/kptschedulemodel.cpp:835
+#: models/kptschedulemodel.cpp:900
 msgid "Scheduler"
 msgstr "Жоспарлағыш"
 
-#: models/kptschedulemodel.cpp:1105
+#: models/kptschedulemodel.cpp:901
+msgctxt "title:column"
+msgid "Granularity"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:1172
 msgid "Phase"
 msgstr "Кезені"
 
-#: models/kptschedulemodel.cpp:1105
+#: models/kptschedulemodel.cpp:1172
 msgid "Severity"
 msgstr "Қатандығы"
 
-#: models/kptschedulemodel.cpp:1105
+#: models/kptschedulemodel.cpp:1172
 msgid "Message"
 msgstr "Хабарлама"
 
@@ -3446,7 +3485,7 @@ msgstr "Ішкі есебін қосу"
 
 #: ui/kptaccountseditor.cpp:276 ui/kptcalendareditor.cpp:630
 #: ui/kptdependencyeditor.cpp:2338 ui/kptresourceeditor.cpp:291
-#: ui/kptscheduleeditor.cpp:291 ui/kpttaskeditor.cpp:729
+#: ui/kptscheduleeditor.cpp:292 ui/kpttaskeditor.cpp:729
 msgctxt "@action"
 msgid "Delete"
 msgstr "Өшіру"
@@ -3677,7 +3716,7 @@ msgstr "Тапсырма саласын қосу..."
 msgid "Add Sub-Milestone..."
 msgstr "Ішкі кезеңін қосу....."
 
-#: ui/kptdocumentseditor.cpp:217 ui/kptscheduleeditor.cpp:638
+#: ui/kptdocumentseditor.cpp:217 ui/kptscheduleeditor.cpp:639
 msgid "Edit..."
 msgstr "Өзгерту..."
 
@@ -4365,48 +4404,48 @@ msgstr "Атқарушы тобын қосу..."
 msgid "Add Resource"
 msgstr "Атқарушыны қосу"
 
-#: ui/kptscheduleeditor.cpp:279
+#: ui/kptscheduleeditor.cpp:280
 msgid "Add Schedule"
 msgstr "Жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:285
+#: ui/kptscheduleeditor.cpp:286
 msgid "Add Sub-schedule"
 msgstr "Бағыныңқы жоспарды қосу"
 
-#: ui/kptscheduleeditor.cpp:297
+#: ui/kptscheduleeditor.cpp:298
 msgid "Calculate"
 msgstr "Есептеу"
 
-#: ui/kptscheduleeditor.cpp:303
+#: ui/kptscheduleeditor.cpp:304
 msgid "Baseline"
 msgstr "Негіздемелеу"
 
-#: ui/kptscheduleeditor.cpp:309
+#: ui/kptscheduleeditor.cpp:310
 msgctxt "@action"
 msgid "Detach"
 msgstr "Айыру"
 
-#: ui/kptscheduleeditor.cpp:369 ui/kptscheduleeditor.cpp:402
+#: ui/kptscheduleeditor.cpp:370 ui/kptscheduleeditor.cpp:403
 msgctxt "(qtundo-format)"
 msgid "Create sub-schedule"
 msgstr "Бағыныңқы жоспарды құру"
 
-#: ui/kptscheduleeditor.cpp:380
+#: ui/kptscheduleeditor.cpp:381
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Add schedule %1"
 msgstr "%1 жоспарын қосу"
 
-#: ui/kptscheduleeditor.cpp:485
+#: ui/kptscheduleeditor.cpp:486
 msgctxt "@action"
 msgid "Show Debug Information"
 msgstr "Жөндеуге жарар мәліметін көрсету"
 
-#: ui/kptscheduleeditor.cpp:721
+#: ui/kptscheduleeditor.cpp:722
 msgid "Result"
 msgstr "Нәтижесі"
 
-#: ui/kptscheduleeditor.cpp:731
+#: ui/kptscheduleeditor.cpp:732
 msgid "Scheduling Log"
 msgstr "Жоспарлау журналы"
 
