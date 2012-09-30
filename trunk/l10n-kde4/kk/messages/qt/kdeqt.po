@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2012-09-28 02:38+0200\n"
+"POT-Creation-Date: 2012-09-30 04:49+0200\n"
 "PO-Revision-Date: 2012-06-20 05:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1564,6 +1564,15 @@ msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "Құрылғыда орын қалған жоқ"
 
+#: corelib/io/qiodevice.cpp:1630 corelib/plugin/qpluginloader.cpp:367
+#: corelib/plugin/qlibrary.cpp:1236
+#: corelib/statemachine/qstatemachine.cpp:1046
+#: network/kernel/qhostinfo_unix.cpp:301
+#: network/socket/qnativesocketengine.cpp:276
+#: network/socket/qsymbiansocketengine.cpp:1435 network/ssl/qsslerror.cpp:289
+msgid "Unknown error"
+msgstr "Беймәлім қате"
+
 #: corelib/io/qprocess.cpp:884 corelib/io/qprocess.cpp:936
 #: corelib/io/qprocess_win.cpp:601 corelib/io/qprocess_win.cpp:651
 msgid "Error reading from process"
@@ -1581,15 +1590,6 @@ msgstr "Процесі қирады"
 #: corelib/io/qprocess.cpp:2054
 msgid "No program defined"
 msgstr "Бағдарлама анықталмаған"
-
-#: corelib/io/qiodevice.cpp:1630 corelib/plugin/qlibrary.cpp:1236
-#: corelib/plugin/qpluginloader.cpp:367
-#: corelib/statemachine/qstatemachine.cpp:1046
-#: network/kernel/qhostinfo_unix.cpp:301
-#: network/socket/qnativesocketengine.cpp:276
-#: network/socket/qsymbiansocketengine.cpp:1435 network/ssl/qsslerror.cpp:289
-msgid "Unknown error"
-msgstr "Беймәлім қате"
 
 #: corelib/io/qprocess_win.cpp:138 corelib/io/qprocess_unix.cpp:402
 msgid "Could not open input redirection for reading"
@@ -1825,6 +1825,30 @@ msgctxt "QSystemSemaphore"
 msgid "%1: ftok failed"
 msgstr "%1: ftok жаңылысы"
 
+#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:136
+#, qt-format
+msgid "Cannot load library %1: %2"
+msgstr "%1 жинақ файлы жүктелмеді: %2"
+
+#: corelib/plugin/qlibrary_unix.cpp:278 corelib/plugin/qlibrary_win.cpp:158
+#, qt-format
+msgid "Cannot unload library %1: %2"
+msgstr "%1 жинақ файлы босатылмады: %2"
+
+#: corelib/plugin/qlibrary_unix.cpp:312 corelib/plugin/qlibrary_win.cpp:173
+#, qt-format
+msgid "Cannot resolve symbol \"%1\" in %2: %3"
+msgstr "%2 дегендегі \"%1\" символы түсініксіз: %3"
+
+#: corelib/plugin/qpluginloader.cpp:254
+msgid "The plugin was not loaded."
+msgstr "Плагиіні жүктелмеген."
+
+#: corelib/plugin/qpluginloader.cpp:343 corelib/plugin/qlibrary.cpp:682
+#: corelib/plugin/qlibrary.cpp:828
+msgid "The shared library was not found."
+msgstr "Ортақ жиын файлы табылған жоқ."
+
 #: corelib/plugin/qelfparser_p.cpp:77
 #, qt-format
 msgid "'%1' is not an ELF object (%2)"
@@ -1849,11 +1873,6 @@ msgstr "%1 - дұрыс ELF нысаны емес (%2)"
 #, qt-format
 msgid "Plugin verification data mismatch in '%1'"
 msgstr "%1 плагинінде тексеріс дерегінің қайшылығы "
-
-#: corelib/plugin/qlibrary.cpp:682 corelib/plugin/qlibrary.cpp:828
-#: corelib/plugin/qpluginloader.cpp:343
-msgid "The shared library was not found."
-msgstr "Ортақ жиын файлы табылған жоқ."
 
 #: corelib/plugin/qlibrary.cpp:830
 #, qt-format
@@ -1882,25 +1901,6 @@ msgid ""
 msgstr ""
 "'%1' плагині үйлесіпейтін Qt жиын файлын қолданады. (Жөндеуге арналған жинақ "
 "файлдары мен шығарлым файлдары арыласқан.)"
-
-#: corelib/plugin/qlibrary_unix.cpp:261 corelib/plugin/qlibrary_win.cpp:136
-#, qt-format
-msgid "Cannot load library %1: %2"
-msgstr "%1 жинақ файлы жүктелмеді: %2"
-
-#: corelib/plugin/qlibrary_unix.cpp:278 corelib/plugin/qlibrary_win.cpp:158
-#, qt-format
-msgid "Cannot unload library %1: %2"
-msgstr "%1 жинақ файлы босатылмады: %2"
-
-#: corelib/plugin/qlibrary_unix.cpp:312 corelib/plugin/qlibrary_win.cpp:173
-#, qt-format
-msgid "Cannot resolve symbol \"%1\" in %2: %3"
-msgstr "%2 дегендегі \"%1\" символы түсініксіз: %3"
-
-#: corelib/plugin/qpluginloader.cpp:254
-msgid "The plugin was not loaded."
-msgstr "Плагиіні жүктелмеген."
 
 #: corelib/statemachine/qstatemachine.cpp:1028
 #, qt-format
@@ -2108,12 +2108,12 @@ msgstr "LayoutMirroring тек қана тіркеген қасиеттер ар
 msgid "Loader does not support loading non-visual elements."
 msgstr "Жүктегіш көрсетелмейтін элементтерін жүктеуді қолдамайды."
 
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:962
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:970
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:961
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:969
 msgid "Could not load cursor delegate"
 msgstr "Меңзер өкілі жүктелмеді."
 
-#: declarative/graphicsitems/qdeclarativetextinput.cpp:981
+#: declarative/graphicsitems/qdeclarativetextinput.cpp:980
 msgid "Could not instantiate cursor delegate"
 msgstr "Меңзер өкілінің данасы құрылмады."
 
@@ -2961,22 +2961,6 @@ msgstr "Біркелкі емес масштабтаудан кейін көрі
 msgid "Unable to preserve appearance under scale of 0"
 msgstr "Масштабы 0 болғанда көрінісін сақтауға мүмкін емес"
 
-#: declarative/util/qdeclarativexmllistmodel.cpp:581
-#, qt-format
-msgid "\"%1\" duplicates a previous role name and will be disabled."
-msgstr "\"%1\" деген алдыңғы мідеттің атауын қайталайды, сондықтан бұғатталады"
-
-#: declarative/util/qdeclarativexmllistmodel.cpp:826
-msgctxt "QDeclarativeXmlRoleList"
-msgid "An XmlListModel query must start with '/' or \"//\""
-msgstr "XmlListModel сұрансы '/' не \"//\" деп басталуы тиіс"
-
-#: declarative/util/qdeclarativexmllistmodel.cpp:1105
-#: declarative/util/qdeclarativexmllistmodel.cpp:1109
-#, qt-format
-msgid "invalid query: \"%1\""
-msgstr "Дұрыс емес сұраныс: \"%1\""
-
 #: declarative/util/qdeclarativeutilmodule.cpp:80
 msgid "Application is an abstract class"
 msgstr "Application деген абстрактты класс"
@@ -2994,6 +2978,22 @@ msgctxt "QDeclarativeXmlListModel"
 msgid "Qt was built without support for xmlpatterns"
 msgstr "Qt дестесі xmlpatterns қолдауысыз жинақталған"
 
+#: declarative/util/qdeclarativexmllistmodel.cpp:581
+#, qt-format
+msgid "\"%1\" duplicates a previous role name and will be disabled."
+msgstr "\"%1\" деген алдыңғы мідеттің атауын қайталайды, сондықтан бұғатталады"
+
+#: declarative/util/qdeclarativexmllistmodel.cpp:826
+msgctxt "QDeclarativeXmlRoleList"
+msgid "An XmlListModel query must start with '/' or \"//\""
+msgstr "XmlListModel сұрансы '/' не \"//\" деп басталуы тиіс"
+
+#: declarative/util/qdeclarativexmllistmodel.cpp:1105
+#: declarative/util/qdeclarativexmllistmodel.cpp:1109
+#, qt-format
+msgid "invalid query: \"%1\""
+msgstr "Дұрыс емес сұраныс: \"%1\""
+
 #: declarative/util/qdeclarativeconnections.cpp:217
 msgid "Connections: nested objects not allowed"
 msgstr "Бір-бірінің ішіндегі нысандарды байланыструға рұсат жоқ"
@@ -3005,6 +3005,10 @@ msgstr "Байланыстар: синтаксис қатесі"
 #: declarative/util/qdeclarativeconnections.cpp:228
 msgid "Connections: script expected"
 msgstr "Байланыстар: күткені скрипт еді"
+
+#: declarative/util/qdeclarativebehavior.cpp:127
+msgid "Cannot change the animation assigned to a Behavior."
+msgstr "Behavior дегенге тағайндалған анимацияны өзгертуге болмайды."
 
 #: declarative/util/qdeclarativeanimation.cpp:172
 #, qt-format
@@ -3021,10 +3025,6 @@ msgstr "Тек оқу үшін \"%1 \" қасиетті анимациялауғ
 #: declarative/util/qdeclarativeanimation.cpp:2867
 msgid "Cannot set a duration of < 0"
 msgstr "Ұзақтық '<0' деп орнатылмайды"
-
-#: declarative/util/qdeclarativebehavior.cpp:127
-msgid "Cannot change the animation assigned to a Behavior."
-msgstr "Behavior дегенге тағайндалған анимацияны өзгертуге болмайды."
 
 #: gui/accessible/qaccessibleobject.cpp:374
 #: plugins/accessible/widgets/complexwidgets.cpp:1617
@@ -3160,6 +3160,30 @@ msgid "<h3>About Qt</h3><p>This program uses Qt version %1.</p>"
 msgstr "<h3>Qt туралы</h3><p>Бұл бағдарлама Qt %1 нұсқасын негіздейді.</p>"
 
 #: gui/dialogs/qmessagebox.cpp:1767
+#, fuzzy
+#| msgid ""
+#| "<p>Qt is a C++ toolkit for cross-platform application development.</"
+#| "p><p>Qt provides single-source portability across MS&nbsp;Windows, "
+#| "Mac&nbsp;OS&nbsp;X, Linux, and all major commercial Unix variants. Qt is "
+#| "also available for embedded devices as Qt for Embedded Linux and Qt for "
+#| "Windows CE.</p><p>Qt is available under three different licensing options "
+#| "designed to accommodate the needs of our various users.</p><p>Qt licensed "
+#| "under our commercial license agreement is appropriate for development of "
+#| "proprietary/commercial software where you do not want to share any source "
+#| "code with third parties or otherwise cannot comply with the terms of the "
+#| "GNU LGPL version 2.1 or GNU GPL version 3.0.</p><p>Qt licensed under the "
+#| "GNU LGPL version 2.1 is appropriate for the development of Qt "
+#| "applications (proprietary or open source) provided you can comply with "
+#| "the terms and conditions of the GNU LGPL version 2.1.</p><p>Qt licensed "
+#| "under the GNU General Public License version 3.0 is appropriate for the "
+#| "development of Qt applications where you wish to use such applications in "
+#| "combination with software subject to the terms of the GNU GPL version 3.0 "
+#| "or where you are otherwise willing to comply with the terms of the GNU "
+#| "GPL version 3.0.</p><p>Please see <a href=\"http://qt.nokia.com/products/"
+#| "licensing\">qt.nokia.com/products/licensing</a> for an overview of Qt "
+#| "licensing.</p><p>Copyright (C) 2012 Nokia Corporation and/or its "
+#| "subsidiary(-ies).</p><p>Qt is a Nokia product. See <a href=\"http://qt."
+#| "nokia.com/\">qt.nokia.com</a> for more information.</p>"
 msgid ""
 "<p>Qt is a C++ toolkit for cross-platform application development.</p><p>Qt "
 "provides single-source portability across MS&nbsp;Windows, Mac&nbsp;OS&nbsp;"
@@ -3179,9 +3203,9 @@ msgid ""
 "terms of the GNU GPL version 3.0 or where you are otherwise willing to "
 "comply with the terms of the GNU GPL version 3.0.</p><p>Please see <a href="
 "\"http://qt.nokia.com/products/licensing\">qt.nokia.com/products/licensing</"
-"a> for an overview of Qt licensing.</p><p>Copyright (C) 2012 Nokia "
-"Corporation and/or its subsidiary(-ies).</p><p>Qt is a Nokia product. See <a "
-"href=\"http://qt.nokia.com/\">qt.nokia.com</a> for more information.</p>"
+"a> for an overview of Qt licensing.</p><p>Copyright (C) 2012 Digia Plc and/"
+"or its subsidiary(-ies).</p><p>Qt is a Nokia product. See <a href=\"http://"
+"qt.nokia.com/\">qt.nokia.com</a> for more information.</p>"
 msgstr ""
 "<p>Qt деген C++ тіліне арналған көп-платформалық бағдаралама құрастыру "
 "құралдар жиыны.</p><p>Qt келесі платформаларында бірыңғай бастапқы кодты "
@@ -3432,16 +3456,6 @@ msgstr "Мәні"
 msgid "Cancel"
 msgstr "Қайту"
 
-#: gui/dialogs/qabstractpagesetupdialog.cpp:68
-#: gui/dialogs/qabstractpagesetupdialog.cpp:80
-msgctxt "QPrintPreviewDialog"
-msgid "Page Setup"
-msgstr "Бет баптаулары"
-
-#: gui/dialogs/qsidebar.cpp:442
-msgid "Remove"
-msgstr "Өшіру"
-
 #: gui/dialogs/qwizard.cpp:688
 msgid "Go Back"
 msgstr "Артқа қарай өту"
@@ -3484,15 +3498,25 @@ msgstr "Анықтама"
 msgid "&Help"
 msgstr "&Анықтама"
 
-#: gui/dialogs/qdialog.cpp:653 gui/kernel/qwhatsthis.cpp:527
-msgid "What's This?"
-msgstr "Бұл не?"
+#: gui/dialogs/qabstractpagesetupdialog.cpp:68
+#: gui/dialogs/qabstractpagesetupdialog.cpp:80
+msgctxt "QPrintPreviewDialog"
+msgid "Page Setup"
+msgstr "Бет баптаулары"
 
 #: gui/dialogs/qabstractprintdialog.cpp:116
 #: gui/dialogs/qabstractprintdialog.cpp:129
 msgctxt "QPrintDialog"
 msgid "Print"
 msgstr "Басып шығару"
+
+#: gui/dialogs/qsidebar.cpp:442
+msgid "Remove"
+msgstr "Өшіру"
+
+#: gui/dialogs/qdialog.cpp:653 gui/kernel/qwhatsthis.cpp:527
+msgid "What's This?"
+msgstr "Бұл не?"
 
 #: gui/dialogs/qprintdialog_qws.cpp:148
 msgid "File exists"
@@ -3762,14 +3786,6 @@ msgstr "Mac OS X енгізу әдісі"
 msgid "S60 FEP input method"
 msgstr "S60 FEP енгізу әдісі"
 
-#: gui/itemviews/qitemeditorfactory.cpp:556 qt3support/sql/q3datatable.cpp:286
-msgid "False"
-msgstr "Жалған"
-
-#: gui/itemviews/qitemeditorfactory.cpp:557 qt3support/sql/q3datatable.cpp:285
-msgid "True"
-msgstr "Ақиқат"
-
 #: gui/itemviews/qdirmodel.cpp:852
 msgctxt "QFileDialog"
 msgid "My Computer"
@@ -3815,6 +3831,14 @@ msgstr "Тіркесім"
 msgctxt "QFileDialog"
 msgid "Unknown"
 msgstr "Беймәлім"
+
+#: gui/itemviews/qitemeditorfactory.cpp:556 qt3support/sql/q3datatable.cpp:286
+msgid "False"
+msgstr "Жалған"
+
+#: gui/itemviews/qitemeditorfactory.cpp:557 qt3support/sql/q3datatable.cpp:285
+msgid "True"
+msgstr "Ақиқат"
 
 #: gui/kernel/qapplication.cpp:2428
 msgctxt ""
@@ -5501,7 +5525,7 @@ msgstr "Қалпына қайтару"
 #: gui/widgets/qmdisubwindow.cpp:352 gui/widgets/qworkspace.cpp:113
 #: plugins/accessible/compat/q3complexwidgets.cpp:256
 #: plugins/accessible/widgets/complexwidgets.cpp:1614
-#: plugins/accessible/widgets/complexwidgets.cpp:1910
+#: plugins/accessible/widgets/complexwidgets.cpp:1912
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:157
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:382
 #: plugins/accessible/widgets/qaccessiblewidgets.cpp:1329
@@ -5791,6 +5815,103 @@ msgstr "Хостттың атауы берілмеген"
 msgid "Invalid hostname"
 msgstr "Жарамсыз хост атауы"
 
+#: network/socket/qsocks5socketengine.cpp:623
+msgid "Connection to proxy refused"
+msgstr "Прокси қосылымдан бас тартты"
+
+#: network/socket/qsocks5socketengine.cpp:627
+msgid "Connection to proxy closed prematurely"
+msgstr "Проксимен байланыс тым ерте үзілді"
+
+#: network/socket/qsocks5socketengine.cpp:631
+msgid "Proxy host not found"
+msgstr "Прокси хосты табылмады"
+
+#: network/socket/qsocks5socketengine.cpp:636
+msgid "Connection to proxy timed out"
+msgstr "Поркси қосылымын күту мерзімі бітті"
+
+#: network/socket/qsocks5socketengine.cpp:653
+msgid "Proxy authentication failed"
+msgstr "Прокси аутентификациясы өтпеді"
+
+#: network/socket/qsocks5socketengine.cpp:654
+#, qt-format
+msgid "Proxy authentication failed: %1"
+msgstr "Прокси аутентификациясы өтпеді: %1"
+
+#: network/socket/qsocks5socketengine.cpp:663
+msgid "SOCKS version 5 protocol error"
+msgstr "SOCKS 5-нұсқа протоколының қатесі"
+
+#: network/socket/qsocks5socketengine.cpp:682
+msgid "General SOCKSv5 server failure"
+msgstr "Жалпы SOCKSv5 сервер жаңылысы"
+
+#: network/socket/qsocks5socketengine.cpp:686
+msgid "Connection not allowed by SOCKSv5 server"
+msgstr "Қосылымды SOCKSv5 сервері рұқсат етпеді"
+
+#: network/socket/qsocks5socketengine.cpp:690
+#: network/socket/qnativesocketengine.cpp:231
+#: network/socket/qsymbiansocketengine.cpp:1384
+msgid "Network unreachable"
+msgstr "Желі қол жеткізбейді"
+
+#: network/socket/qsocks5socketengine.cpp:698
+#: network/socket/qabstractsocket.cpp:968
+#: network/socket/qnativesocketengine.cpp:240
+#: network/socket/qsymbiansocketengine.cpp:1393
+msgid "Connection refused"
+msgstr "Байланыс болмады"
+
+#: network/socket/qsocks5socketengine.cpp:702
+msgid "TTL expired"
+msgstr "TTL мерзімі біткен"
+
+#: network/socket/qsocks5socketengine.cpp:706
+msgid "SOCKSv5 command not supported"
+msgstr "Танымайтын SOCKSv5 командасы"
+
+#: network/socket/qsocks5socketengine.cpp:710
+msgid "Address type not supported"
+msgstr "Танымайтын адрес түрі"
+
+#: network/socket/qsocks5socketengine.cpp:715
+#, qt-format
+msgid "Unknown SOCKSv5 proxy error code 0x%1"
+msgstr "Беймәлім SOCKSv5 прокси қатесінің коды: 0x%1"
+
+#: network/socket/qsocks5socketengine.cpp:1409
+msgctxt "QSocks5SocketEngine"
+msgid "Network operation timed out"
+msgstr "Желі операциясыны күту мерзімі бітті"
+
+#: network/socket/qudpsocket.cpp:199
+msgid "This platform does not support IPv6"
+msgstr "Бұл платфома IPv6 протоколын танымайды"
+
+#: network/socket/qabstractsocket.cpp:555
+#: network/socket/qabstractsocket.cpp:1382
+#: network/socket/qabstractsocket.cpp:1607 network/socket/qtcpserver.cpp:292
+#: network/socket/qtcpserver.cpp:421
+msgid "Operation on socket is not supported"
+msgstr "Сокет операцияның қолдауы жоқ"
+
+#: network/socket/qabstractsocket.cpp:1110
+#: network/socket/qnativesocketengine.cpp:237
+#: network/socket/qsymbiansocketengine.cpp:1390
+msgid "Connection timed out"
+msgstr "Қосылымды күту мерзімі бітті"
+
+#: network/socket/qabstractsocket.cpp:1826
+msgid "Socket operation timed out"
+msgstr "Сокет операциясын күту  мерзімі бітті"
+
+#: network/socket/qabstractsocket.cpp:2263
+msgid "Socket is not connected"
+msgstr "Сокет қосылған жоқ"
+
 #: network/socket/qnativesocketengine.cpp:201
 #: network/socket/qsymbiansocketengine.cpp:1354
 msgid "Unable to initialize non-blocking socket"
@@ -5840,25 +5961,6 @@ msgstr "Жарамсыз сокет дескрипторы"
 #: network/socket/qsymbiansocketengine.cpp:1381
 msgid "Host unreachable"
 msgstr "Хост қол жеткізбейді"
-
-#: network/socket/qnativesocketengine.cpp:231
-#: network/socket/qsocks5socketengine.cpp:690
-#: network/socket/qsymbiansocketengine.cpp:1384
-msgid "Network unreachable"
-msgstr "Желі қол жеткізбейді"
-
-#: network/socket/qnativesocketengine.cpp:237
-#: network/socket/qsymbiansocketengine.cpp:1390
-#: network/socket/qabstractsocket.cpp:1110
-msgid "Connection timed out"
-msgstr "Қосылымды күту мерзімі бітті"
-
-#: network/socket/qnativesocketengine.cpp:240
-#: network/socket/qsocks5socketengine.cpp:698
-#: network/socket/qsymbiansocketengine.cpp:1393
-#: network/socket/qabstractsocket.cpp:968
-msgid "Connection refused"
-msgstr "Байланыс болмады"
 
 #: network/socket/qnativesocketengine.cpp:243
 #: network/socket/qsymbiansocketengine.cpp:1396
@@ -5915,65 +6017,6 @@ msgstr "Сокеттік емес амал"
 msgid "The proxy type is invalid for this operation"
 msgstr "Бұл операцияға бұл проксидің түрі жарамайды"
 
-#: network/socket/qsocks5socketengine.cpp:623
-msgid "Connection to proxy refused"
-msgstr "Прокси қосылымдан бас тартты"
-
-#: network/socket/qsocks5socketengine.cpp:627
-msgid "Connection to proxy closed prematurely"
-msgstr "Проксимен байланыс тым ерте үзілді"
-
-#: network/socket/qsocks5socketengine.cpp:631
-msgid "Proxy host not found"
-msgstr "Прокси хосты табылмады"
-
-#: network/socket/qsocks5socketengine.cpp:636
-msgid "Connection to proxy timed out"
-msgstr "Поркси қосылымын күту мерзімі бітті"
-
-#: network/socket/qsocks5socketengine.cpp:653
-msgid "Proxy authentication failed"
-msgstr "Прокси аутентификациясы өтпеді"
-
-#: network/socket/qsocks5socketengine.cpp:654
-#, qt-format
-msgid "Proxy authentication failed: %1"
-msgstr "Прокси аутентификациясы өтпеді: %1"
-
-#: network/socket/qsocks5socketengine.cpp:663
-msgid "SOCKS version 5 protocol error"
-msgstr "SOCKS 5-нұсқа протоколының қатесі"
-
-#: network/socket/qsocks5socketengine.cpp:682
-msgid "General SOCKSv5 server failure"
-msgstr "Жалпы SOCKSv5 сервер жаңылысы"
-
-#: network/socket/qsocks5socketengine.cpp:686
-msgid "Connection not allowed by SOCKSv5 server"
-msgstr "Қосылымды SOCKSv5 сервері рұқсат етпеді"
-
-#: network/socket/qsocks5socketengine.cpp:702
-msgid "TTL expired"
-msgstr "TTL мерзімі біткен"
-
-#: network/socket/qsocks5socketengine.cpp:706
-msgid "SOCKSv5 command not supported"
-msgstr "Танымайтын SOCKSv5 командасы"
-
-#: network/socket/qsocks5socketengine.cpp:710
-msgid "Address type not supported"
-msgstr "Танымайтын адрес түрі"
-
-#: network/socket/qsocks5socketengine.cpp:715
-#, qt-format
-msgid "Unknown SOCKSv5 proxy error code 0x%1"
-msgstr "Беймәлім SOCKSv5 прокси қатесінің коды: 0x%1"
-
-#: network/socket/qsocks5socketengine.cpp:1409
-msgctxt "QSocks5SocketEngine"
-msgid "Network operation timed out"
-msgstr "Желі операциясыны күту мерзімі бітті"
-
 #: network/socket/qsymbiansocketengine.cpp:1429
 msgid "The address is invalid for this operation"
 msgstr "Бұл операцияға бұл адресі жарамайды"
@@ -5981,86 +6024,6 @@ msgstr "Бұл операцияға бұл адресі жарамайды"
 #: network/socket/qsymbiansocketengine.cpp:1432
 msgid "The specified network session is not opened"
 msgstr "Келтірілген желілік сеанс ашылмаған"
-
-#: network/socket/qtcpserver.cpp:292 network/socket/qtcpserver.cpp:421
-#: network/socket/qabstractsocket.cpp:555
-#: network/socket/qabstractsocket.cpp:1382
-#: network/socket/qabstractsocket.cpp:1607
-msgid "Operation on socket is not supported"
-msgstr "Сокет операцияның қолдауы жоқ"
-
-#: network/socket/qudpsocket.cpp:199
-msgid "This platform does not support IPv6"
-msgstr "Бұл платфома IPv6 протоколын танымайды"
-
-#: network/socket/qabstractsocket.cpp:1826
-msgid "Socket operation timed out"
-msgstr "Сокет операциясын күту  мерзімі бітті"
-
-#: network/socket/qabstractsocket.cpp:2263
-msgid "Socket is not connected"
-msgstr "Сокет қосылған жоқ"
-
-#: network/ssl/qsslsocket_openssl.cpp:287
-#, qt-format
-msgid "Error creating SSL context (%1)"
-msgstr "SSL контекстін құру қатесі (%1)"
-
-#: network/ssl/qsslsocket_openssl.cpp:341
-#, qt-format
-msgid "Invalid or empty cipher list (%1)"
-msgstr "Шифр тізімі дұрыс емес не бос (%1)"
-
-#: network/ssl/qsslsocket_openssl.cpp:385
-#, qt-format
-msgid "Cannot provide a certificate with no key, %1"
-msgstr "Кілтсіз куәлікті беруге болмайды, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:392
-#, qt-format
-msgid "Error loading local certificate, %1"
-msgstr "Жергілікті куәлікті жүктеу қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:407
-#, qt-format
-msgid "Error loading private key, %1"
-msgstr "Сырлы кілтті жүктеу қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:414
-#, qt-format
-msgid "Private key does not certify public key, %1"
-msgstr "Сырлы кілт ашық кілтті куәландыра алмайды, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:434
-#, qt-format
-msgid "Error creating SSL session, %1"
-msgstr "SSL сеансын құру қатесі, %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:470
-#, qt-format
-msgid "Error creating SSL session: %1"
-msgstr "SSL сеансын құру қатесі: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1023
-#, qt-format
-msgid "Unable to write data: %1"
-msgstr "Деректер жазылмады: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1093
-#, qt-format
-msgid "Unable to decrypt data: %1"
-msgstr "Деректердің шифры шешілмеді: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1171
-#: network/ssl/qsslsocket_openssl.cpp:1181
-#, qt-format
-msgid "Error while reading: %1"
-msgstr "Оқу кезде қате пайда болды: %1"
-
-#: network/ssl/qsslsocket_openssl.cpp:1276
-#, qt-format
-msgid "Error during SSL handshake: %1"
-msgstr "SSL сеансын бастау кезінде қате пайда болды: %1"
 
 #: network/ssl/qsslerror.cpp:217
 msgid "The issuer certificate could not be found"
@@ -6165,6 +6128,67 @@ msgstr "Хост атауы бұл куәлікке жарамды хостта�
 msgid "The peer certificate is blacklisted"
 msgstr "Қарсы жақ куәлігі қара тізімге еңді."
 
+#: network/ssl/qsslsocket_openssl.cpp:287
+#, qt-format
+msgid "Error creating SSL context (%1)"
+msgstr "SSL контекстін құру қатесі (%1)"
+
+#: network/ssl/qsslsocket_openssl.cpp:341
+#, qt-format
+msgid "Invalid or empty cipher list (%1)"
+msgstr "Шифр тізімі дұрыс емес не бос (%1)"
+
+#: network/ssl/qsslsocket_openssl.cpp:385
+#, qt-format
+msgid "Cannot provide a certificate with no key, %1"
+msgstr "Кілтсіз куәлікті беруге болмайды, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:392
+#, qt-format
+msgid "Error loading local certificate, %1"
+msgstr "Жергілікті куәлікті жүктеу қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:407
+#, qt-format
+msgid "Error loading private key, %1"
+msgstr "Сырлы кілтті жүктеу қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:414
+#, qt-format
+msgid "Private key does not certify public key, %1"
+msgstr "Сырлы кілт ашық кілтті куәландыра алмайды, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:434
+#, qt-format
+msgid "Error creating SSL session, %1"
+msgstr "SSL сеансын құру қатесі, %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:470
+#, qt-format
+msgid "Error creating SSL session: %1"
+msgstr "SSL сеансын құру қатесі: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1023
+#, qt-format
+msgid "Unable to write data: %1"
+msgstr "Деректер жазылмады: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1093
+#, qt-format
+msgid "Unable to decrypt data: %1"
+msgstr "Деректердің шифры шешілмеді: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1171
+#: network/ssl/qsslsocket_openssl.cpp:1181
+#, qt-format
+msgid "Error while reading: %1"
+msgstr "Оқу кезде қате пайда болды: %1"
+
+#: network/ssl/qsslsocket_openssl.cpp:1276
+#, qt-format
+msgid "Error during SSL handshake: %1"
+msgstr "SSL сеансын бастау кезінде қате пайда болды: %1"
+
 #: plugins/accessible/compat/q3complexwidgets.cpp:246
 msgid "System"
 msgstr "Жуйе"
@@ -6228,8 +6252,8 @@ msgstr "Қойындыны жабу"
 msgid "Activate the tab"
 msgstr "Қойындыны белсендету"
 
-#: plugins/accessible/widgets/complexwidgets.cpp:1844
-#: plugins/accessible/widgets/complexwidgets.cpp:1910
+#: plugins/accessible/widgets/complexwidgets.cpp:1846
+#: plugins/accessible/widgets/complexwidgets.cpp:1912
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:158
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:383
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:437
@@ -6244,6 +6268,14 @@ msgstr "Ашу"
 #: plugins/accessible/widgets/qaccessiblemenu.cpp:438
 msgid "Execute"
 msgstr "Орындау"
+
+#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1331
+msgid "Dock"
+msgstr "Орнықтыру"
+
+#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1332
+msgid "Float"
+msgstr "Қалқымалы"
 
 #: plugins/accessible/widgets/rangecontrols.cpp:149
 #: plugins/accessible/widgets/rangecontrols.cpp:412
@@ -6280,14 +6312,6 @@ msgstr "Спидометр"
 #: plugins/accessible/widgets/rangecontrols.cpp:937
 msgid "SliderHandle"
 msgstr "ЖүгірткіТұтқасы"
-
-#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1331
-msgid "Dock"
-msgstr "Орнықтыру"
-
-#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1332
-msgid "Float"
-msgstr "Қалқымалы"
 
 #: plugins/accessible/widgets/simplewidgets.cpp:123
 #: plugins/accessible/widgets/simplewidgets.cpp:268
@@ -6398,9 +6422,29 @@ msgid ""
 msgstr ""
 "Мәтін виджетінің контексті мәзірінқолданатын бірнеше енгізу әдіс ауыстырғышы"
 
-#: plugins/platforms/blackberry/qbbinputcontext_imf.cpp:889
+#: plugins/platforms/blackberry/qbbinputcontext_imf.cpp:893
 msgid "PlayBook IMF"
 msgstr "PlayBook IMF"
+
+#: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
+msgid "Items"
+msgstr "Аталымдар"
+
+#: plugins/qmltooling/qmldbg_inspector/editor/toolbarcolorbox.cpp:65
+msgid "Copy Color"
+msgstr "Түсін көшіріп алу"
+
+#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:63
+msgid "Zoom to &100%"
+msgstr "&100% масштабы"
+
+#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:64
+msgid "Zoom In"
+msgstr "Үлкейту"
+
+#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:65
+msgid "Zoom Out"
+msgstr "Кішірейту"
 
 #: plugins/qmltooling/qmldbg_inspector/editor/qmltoolbar.cpp:65
 msgid "Inspector Mode"
@@ -6454,26 +6498,6 @@ msgstr "0.125x"
 msgid "0.1x"
 msgstr "0.1x"
 
-#: plugins/qmltooling/qmldbg_inspector/editor/toolbarcolorbox.cpp:65
-msgid "Copy Color"
-msgstr "Түсін көшіріп алу"
-
-#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:63
-msgid "Zoom to &100%"
-msgstr "&100% масштабы"
-
-#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:64
-msgid "Zoom In"
-msgstr "Үлкейту"
-
-#: plugins/qmltooling/qmldbg_inspector/editor/zoomtool.cpp:65
-msgid "Zoom Out"
-msgstr "Кішірейту"
-
-#: plugins/qmltooling/qmldbg_inspector/editor/liveselectiontool.cpp:143
-msgid "Items"
-msgstr "Аталымдар"
-
 #: qt3support/dialogs/q3tabdialog.cpp:648
 msgid "Apply"
 msgstr "Іске асыру"
@@ -6499,14 +6523,6 @@ msgstr "%1, %2 анықталмаған"
 #, qt-format
 msgid "Ambiguous %1 not handled"
 msgstr "Бірмағыналы емес %1 өңделмеді"
-
-#: qt3support/sql/q3datatable.cpp:791
-msgid "Insert"
-msgstr "Ендіру"
-
-#: qt3support/sql/q3datatable.cpp:792
-msgid "Update"
-msgstr "Жаңарту"
 
 #: qt3support/sql/q3sqlmanager_p.cpp:890
 msgctxt "QSql"
@@ -6560,17 +6576,25 @@ msgctxt "QSql"
 msgid "Cancel your edits?"
 msgstr "Өзгерістерінен айнисыз ба?"
 
+#: qt3support/sql/q3datatable.cpp:791
+msgid "Insert"
+msgstr "Ендіру"
+
+#: qt3support/sql/q3datatable.cpp:792
+msgid "Update"
+msgstr "Жаңарту"
+
 #: qt3support/text/q3textedit.cpp:5441
 msgid "Clear"
 msgstr "Тазалау"
 
-#: qt3support/widgets/q3toolbar.cpp:692
-msgid "More..."
-msgstr "Қосымша..."
-
 #: qt3support/widgets/q3mainwindow.cpp:2053
 msgid "Customize..."
 msgstr "Баптау..."
+
+#: qt3support/widgets/q3toolbar.cpp:692
+msgid "More..."
+msgstr "Қосымша..."
 
 #: scripttools/debugging/qscriptbreakpointsmodel.cpp:455
 msgctxt "QScriptBreakpointsModel"
@@ -7827,15 +7851,6 @@ msgstr "%1 параметрі тапсырылды, бірақ оған сәйк
 msgid "The parameter %1 is required, but no corresponding %2 is supplied."
 msgstr "%1 параметрі керек, бірақ оған сәйкесті %2 келтірілмеген."
 
-#: xmlpatterns/functions/qcontextnodechecker.cpp:54
-#, qt-format
-msgid ""
-"The root node of the second argument to function %1 must be a document node. "
-"%2 is not a document node."
-msgstr ""
-"%1 функциясының екінші аргументінің түбір түйіні құжат түйіні болу керек. Ал "
-"%2 құжат түйіні емес."
-
 #: xmlpatterns/functions/qdatetimefn.cpp:86
 #, qt-format
 msgid ""
@@ -7993,6 +8008,15 @@ msgstr "%1 дұрыс XML 1.0 символы емес."
 #, qt-format
 msgid "The first argument to %1 cannot be of type %2."
 msgstr "%1 дегеннің бірінші аргументінің түрі %2 болмау керек."
+
+#: xmlpatterns/functions/qcontextnodechecker.cpp:54
+#, qt-format
+msgid ""
+"The root node of the second argument to function %1 must be a document node. "
+"%2 is not a document node."
+msgstr ""
+"%1 функциясының екінші аргументінің түбір түйіні құжат түйіні болу керек. Ал "
+"%2 құжат түйіні емес."
 
 #: xmlpatterns/janitors/qcardinalityverifier.cpp:58
 #, qt-format
@@ -9353,78 +9377,78 @@ msgstr ""
 
 #: xmlpatterns/schema/qxsdschemaparser.cpp:1584
 #: xmlpatterns/schema/qxsdschemaparser.cpp:1703
-#: xmlpatterns/schema/qxsdschemaparser.cpp:1795
+#: xmlpatterns/schema/qxsdschemaparser.cpp:1792
 #, qt-format
 msgid "%1 element has neither %2 attribute nor %3 child element."
 msgstr "%1 элементінде не %2, не %3 еншілес элементі жоқ.ы"
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:2630
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4104
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4336
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4343
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4603
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4620
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4878
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4884
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4901
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4907
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4924
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4935
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4946
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4957
+#: xmlpatterns/schema/qxsdschemaparser.cpp:2627
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4101
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4333
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4340
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4600
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4617
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4875
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4881
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4898
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4904
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4921
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4932
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4943
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4954
 #, qt-format
 msgid "%1 element with %2 child element must not have a %3 attribute."
 msgstr "%2 еншілес элементі бар %1 элементінің %3 атрибуты болмау керек."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:3632
+#: xmlpatterns/schema/qxsdschemaparser.cpp:3629
 #, qt-format
 msgid "%1 attribute of %2 element must be %3 or %4."
 msgstr "%2 элементінің %1 атрибуты %3 не %4 болуы тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:3668
+#: xmlpatterns/schema/qxsdschemaparser.cpp:3665
 #, qt-format
 msgid "%1 attribute of %2 element must have a value of %3."
 msgstr "%2 элементінің %1 атрибутының мәні %3 болуы тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:3675
-#: xmlpatterns/schema/qxsdschemaparser.cpp:3709
+#: xmlpatterns/schema/qxsdschemaparser.cpp:3672
+#: xmlpatterns/schema/qxsdschemaparser.cpp:3706
 #, qt-format
 msgid "%1 attribute of %2 element must have a value of %3 or %4."
 msgstr "%2 элементінің %1 атрибутының мәні %3 не %4 болуы тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4028
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4157
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4166
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4173
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4180
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4507
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4710
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4716
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4722
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4728
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4734
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4740
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4746
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4823
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4025
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4154
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4163
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4170
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4177
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4504
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4707
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4713
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4719
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4725
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4731
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4737
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4743
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4820
 #, qt-format
 msgid "%1 element must not have %2 and %3 attribute together."
 msgstr "%1 элементінде %2 және %3 атрибуттары бірдей болуға тиіс емес."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4055
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4277
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4052
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4274
 #, qt-format
 msgid "Content of %1 attribute of %2 element must not be from namespace %3."
 msgstr ""
 "%2 элементінің  %1 атрибутының мазмұны %3 атаулар кеңістігінен емес болу "
 "керек."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4062
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4284
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4059
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4281
 #, qt-format
 msgid "%1 attribute of %2 element must not be %3."
 msgstr "%2 элементінің %1 атрибуты %3 болуы тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4220
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4217
 #, qt-format
 msgid ""
 "%1 attribute of %2 element must have the value %3 because the %4 attribute "
@@ -9433,101 +9457,101 @@ msgstr ""
 "%2 элементінің %1 атрибутының мәні %3 болуы тиіс, өйткені %4 атрибуты "
 "орнатылған."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4407
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4404
 msgid "Specifying use='prohibited' inside an attribute group has no effect."
 msgstr "Атрибут тобының ішінде use='prohibited' деген істемейді."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:4760
+#: xmlpatterns/schema/qxsdschemaparser.cpp:4757
 #, qt-format
 msgid "%1 element must have either %2 or %3 attribute."
 msgstr " %1 элементінде немесе %2, немесе %3 атрибуты болу тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5314
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5311
 #, qt-format
 msgid "%1 element must have either %2 attribute or %3 or %4 as child element."
 msgstr ""
 " %1 элементінде немесе %2 атрибуты, немесе %3, не оның %4 еншілес элементі "
 "ретінде болу тиіс."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5369
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5366
 #, qt-format
 msgid "%1 element requires either %2 or %3 attribute."
 msgstr "%1 элементі %2 не %3 атрибутын қажет етеді."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5388
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5385
 #, qt-format
 msgid "Text or entity references not allowed inside %1 element"
 msgstr ""
 "%1 элементінің ішінде мәтін не басқа бірдемеге сілтемелер рұқсат етілмеген"
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5429
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5541
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5426
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5538
 #, qt-format
 msgid "%1 attribute of %2 element must contain %3, %4 or a list of URIs."
 msgstr "%2 элементінің %1 атрибутында %3, %4 не URI тізімі болу керек."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5667
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5664
 #, qt-format
 msgid "%1 element is not allowed in this context."
 msgstr "%1 элементі бұл контексте жөнсіз."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5720
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5717
 #, qt-format
 msgid "%1 attribute of %2 element has larger value than %3 attribute."
 msgstr "%2 элементінің %1 атрибутының мәні %3 атрибутынан артық"
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5745
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5742
 #, qt-format
 msgid "Prefix of qualified name %1 is not defined."
 msgstr "Беріліп жатқан %1 атауының префиксі анықталмаған."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5810
-#: xmlpatterns/schema/qxsdschemaparser.cpp:5871
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5807
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5868
 #, qt-format
 msgid "%1 attribute of %2 element must either contain %3 or the other values."
 msgstr "%2 элементінің %1 атрибутының мәні %3 не басқа бір болу керек."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6002
+#: xmlpatterns/schema/qxsdschemaparser.cpp:5999
 #, qt-format
 msgid "Component with ID %1 has been defined previously."
 msgstr "Компонентің %1 деген ID-і алдында анықталған."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6019
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6016
 #, qt-format
 msgid "Element %1 already defined."
 msgstr "%1 деген элемент анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6030
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6027
 #, qt-format
 msgid "Attribute %1 already defined."
 msgstr "%1 деген атрибут анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6045
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6042
 #, qt-format
 msgid "Type %1 already defined."
 msgstr "%1 деген түрі анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6068
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6065
 #, qt-format
 msgid "Attribute group %1 already defined."
 msgstr "%1 деген атрибут тобы анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6079
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6076
 #, qt-format
 msgid "Element group %1 already defined."
 msgstr "%1 деген элемент тобы анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6090
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6087
 #, qt-format
 msgid "Notation %1 already defined."
 msgstr "%1 деген белгілеуі анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6101
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6098
 #, qt-format
 msgid "Identity constraint %1 already defined."
 msgstr "%1 деген іс-әлпеті шектеуі анықталған екен."
 
-#: xmlpatterns/schema/qxsdschemaparser.cpp:6112
+#: xmlpatterns/schema/qxsdschemaparser.cpp:6109
 #, qt-format
 msgid "Duplicated facets in simple type %1."
 msgstr "%1 жәй түрінде қосарлы шектер"
