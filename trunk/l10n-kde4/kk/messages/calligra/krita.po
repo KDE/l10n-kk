@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-10 01:47+0100\n"
+"POT-Creation-Date: 2012-11-11 01:50+0100\n"
 "PO-Revision-Date: 2012-08-08 09:15+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -995,10 +995,15 @@ msgstr "Тұрақты"
 msgid "default"
 msgstr "әдетті"
 
-#: image/commands/kis_change_filter_command.h:48
+#: image/commands/kis_change_filter_command.h:40
 msgctxt "(qtundo-format)"
 msgid "Change Filter"
 msgstr "Сүзгіні өзгерту"
+
+#: image/commands/kis_change_generator_command.h:40
+msgctxt "(qtundo-format)"
+msgid "Change Generator"
+msgstr "Генераторды өзгерту"
 
 #: image/commands/kis_deselect_global_selection_command.cpp:30
 msgctxt "(qtundo-format)"
@@ -1120,12 +1125,12 @@ msgstr "Фотореалистикалық емес"
 msgid "Other"
 msgstr "Басқа"
 
-#: image/generator/kis_generator_layer.cpp:104
+#: image/generator/kis_generator_layer.cpp:119
 msgid "Generator"
 msgstr "Генератор"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:123
+#: image/kis_adjustment_layer.cc:139
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/recorder/kis_recorded_filter_action_creator.cpp:59
@@ -1241,7 +1246,7 @@ msgstr "Кескіннің түстер кеңістігін ауыстыру"
 msgid "Convert Projection Color Space"
 msgstr "Кескін проекциясының түстер кеңістігін ауыстыру"
 
-#: image/kis_image.cc:910 ui/kis_layer_manager.cc:778
+#: image/kis_image.cc:910 ui/kis_layer_manager.cc:767
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
@@ -2579,12 +2584,12 @@ msgstr "Қабаттың араласу күйін таңдау."
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnFont)
+#. i18n: ectx: property (text), widget (QToolButton, bnSelectOcioConfigPath)
 #. i18n: ectx: property (text), widget (QToolButton, bnPortrait)
 #. i18n: ectx: property (text), widget (QToolButton, bnLandscape)
 #. i18n: ectx: property (text), widget (QToolButton, paintColor)
 #. i18n: ectx: property (text), widget (QToolButton, backgroundColor)
 #. i18n: ectx: property (text), widget (QToolButton, viewModeButton)
-#. i18n: ectx: property (text), widget (QToolButton, bnSelectOcioConfigPath)
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:50
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:99
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:124
@@ -3236,8 +3241,8 @@ msgstr "Айырымдылығы"
 
 #. i18n: ectx: property (text), widget (QLabel, labelResolution)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: ectx: property (text), widget (QLabel, lblResolution)
 #. i18n: ectx: property (text), widget (QLabel, lblYResolution_3)
+#. i18n: ectx: property (text), widget (QLabel, lblResolution)
 #: plugins/extensions/imagesize/wdg_imagescale.ui:369
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:81 ui/forms/wdg_resolution.ui:87
 #: ui/forms/wdgimageproperties.ui:51 ui/forms/wdgnewimage.ui:211
@@ -4196,7 +4201,7 @@ msgid "Separate Image"
 msgstr "Кескінді жіктеу"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:875
+#: ui/kis_layer_manager.cc:864
 msgid "Export Layer"
 msgstr "Қабатты экспорттау"
 
@@ -8815,8 +8820,8 @@ msgstr "&Монитордың профилі: "
 msgid "Preferences"
 msgstr "Баптаулары"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #: ui/dialogs/kis_dlg_preferences.cc:624 ui/dialogs/kis_dlg_preferences.cc:625
 #: ui/forms/wdgcolorsettings.ui:53 ui/forms/wdgdisplaysettings.ui:20
 msgid "Display"
@@ -8886,8 +8891,8 @@ msgstr "%1 вектролы қабаты"
 msgid "Matrix Widget"
 msgstr "Матрица"
 
-#. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
+#. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:56
 msgid "Preview"
 msgstr "Нобайы"
@@ -9109,8 +9114,8 @@ msgstr "Назардағыны бетбелгілеу"
 msgid "Delete"
 msgstr "Жою"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgColorSettings)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #: ui/forms/wdgcolorsettings.ui:14 ui/forms/wdgtabletsettings.ui:20
 msgid "Color Settings"
 msgstr "Түс баптаулары"
@@ -10456,7 +10461,7 @@ msgstr "Кескінді &біріктіру"
 msgid "&Flatten Layer"
 msgstr "Қабатты &біріктіру"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:847
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:836
 msgid "Rasterize Layer"
 msgstr "Қабатты нүктелеу"
 
@@ -10482,43 +10487,43 @@ msgstr "Жаңа бояу қабатты қосу"
 msgid "Filter Layer Properties"
 msgstr "Сүзгілеу қабатың қасиеттері"
 
-#: ui/kis_layer_manager.cc:423
+#: ui/kis_layer_manager.cc:419
 msgid "Generator Layer Properties"
 msgstr "Генератор қабаттың қасиеттері"
 
-#: ui/kis_layer_manager.cc:481 ui/kis_layer_manager.cc:495
-#: ui/kis_layer_manager.cc:536 ui/kis_layer_manager.cc:567
-#: ui/kis_layer_manager.cc:668
+#: ui/kis_layer_manager.cc:470 ui/kis_layer_manager.cc:484
+#: ui/kis_layer_manager.cc:525 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:657
 msgid "Could not add layer to image."
 msgstr "Кескінге қабат қосылмады."
 
-#: ui/kis_layer_manager.cc:481 ui/kis_layer_manager.cc:495
-#: ui/kis_layer_manager.cc:536 ui/kis_layer_manager.cc:567
-#: ui/kis_layer_manager.cc:668
+#: ui/kis_layer_manager.cc:470 ui/kis_layer_manager.cc:484
+#: ui/kis_layer_manager.cc:525 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:657
 msgid "Layer Error"
 msgstr "Қабат қатесі"
 
-#: ui/kis_layer_manager.cc:591
+#: ui/kis_layer_manager.cc:580
 msgid "New Filter Layer"
 msgstr "Жаңа сүзгілеу қабаты"
 
-#: ui/kis_layer_manager.cc:735
+#: ui/kis_layer_manager.cc:724
 msgid "Scale Layer"
 msgstr "Қабатты масштабтау"
 
-#: ui/kis_layer_manager.cc:777
+#: ui/kis_layer_manager.cc:766
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескін жасырын қабаттарын жоғалтпақ."
 
-#: ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:768
 msgid "&Flatten Image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:935
+#: ui/kis_layer_manager.cc:924
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:938
+#: ui/kis_layer_manager.cc:927
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -11119,10 +11124,6 @@ msgstr "Жұмыс кеңістігі"
 #, kde-format
 msgid "Workspace %1"
 msgstr "%1 жұмыс кеңістігі"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Generator"
-#~ msgstr "Генераторды өзгерту"
 
 #~ msgid "&Themes"
 #~ msgstr "&Нақыштар"
