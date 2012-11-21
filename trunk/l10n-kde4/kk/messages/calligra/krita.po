@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-16 02:04+0100\n"
+"POT-Creation-Date: 2012-11-21 01:54+0100\n"
 "PO-Revision-Date: 2012-08-08 09:15+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2162,6 +2162,7 @@ msgstr "үлкейтілген өлшемі"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:481
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:670
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:683
+#: plugins/paintops/experiment/kis_experimentop_option.cpp:36
 #: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:73
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:57
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:83
@@ -6130,33 +6131,38 @@ msgstr "Эксперименталды қылқалам"
 msgid "Particle type"
 msgstr "Бөлшектің түрі"
 
-#: plugins/paintops/experiment/kis_experimentop_option.cpp:43
+#: plugins/paintops/experiment/kis_experimentop_option.cpp:53
 msgid "Experiment option"
 msgstr "Эксперименталдық параметрі"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:29
-msgid "Shape creation"
+#, fuzzy
+#| msgid "Shape creation"
+msgid "Shape creation:"
 msgstr "Қалыпты құру"
 
 #. i18n: ectx: property (text), widget (QCheckBox, speedCHBox)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:57
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:53
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Speed"
 msgstr "Жылдамдығы"
 
 #. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:69
-msgid "Smooth shapes"
-msgstr "Қалыптарды тегістеу"
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgctxt "smooth out the painting strokes the filter creates"
+#| msgid "Smooth"
+msgid "Smooth"
+msgstr "Тегістеу"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:76
+#. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:89
 msgid "Post-processing"
 msgstr "Кейінгі өңдеу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, displaceCHBox)
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:85
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:98
 msgid "Displace"
 msgstr "Ауыстыру"
 
@@ -8956,12 +8962,12 @@ msgid "Show original layer"
 msgstr "Бастапқы қабатты көрсету"
 
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: ui/forms/kis_previewwidgetbase.ui:122 ui/input/kis_zoom_action.cpp:47
+#: ui/forms/kis_previewwidgetbase.ui:122 ui/input/kis_zoom_action.cpp:88
 msgid "Zoom Out"
 msgstr "Алыстау"
 
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: ui/forms/kis_previewwidgetbase.ui:135 ui/input/kis_zoom_action.cpp:46
+#: ui/forms/kis_previewwidgetbase.ui:135 ui/input/kis_zoom_action.cpp:87
 msgid "Zoom In"
 msgstr "Жақыңдау"
 
@@ -10029,7 +10035,7 @@ msgstr "Толтыруы жоқ"
 msgid "Input pressure global curve"
 msgstr "Қазіргі жалпы қысымының қисығы"
 
-#: ui/input/kis_abstract_input_action.cpp:39
+#: ui/input/kis_abstract_input_action.cpp:40
 msgid "Activate"
 msgstr "Белсендету"
 
@@ -10057,40 +10063,46 @@ msgstr ""
 "Құралдың \"негізгі параметрі\" дегенің өзгерту,  мысалы қылқалам үшін - ол "
 "өлшемі."
 
-#: ui/input/kis_input_manager.cpp:302
+#: ui/input/kis_input_manager.cpp:309
 msgid "Set Mirror Axis"
 msgstr "Шағылысу осьтерін орнату"
 
-#: ui/input/kis_pan_action.cpp:45
+#: ui/input/kis_pan_action.cpp:44
 msgid "Pan Canvas"
 msgstr "Өрістерді мәнзаралау"
 
-#: ui/input/kis_pan_action.cpp:48
+#: ui/input/kis_pan_action.cpp:47
 msgid "Toggle Pan Mode"
 msgstr "Мәнзаралау күйін ауыстыру"
 
-#: ui/input/kis_pan_action.cpp:49
+#: ui/input/kis_pan_action.cpp:48
 msgid "Pan Left"
 msgstr "Солға мәнзаралау"
 
-#: ui/input/kis_pan_action.cpp:50
+#: ui/input/kis_pan_action.cpp:49
 msgid "Pan Right"
 msgstr "Оңға мәнзаралау"
 
-#: ui/input/kis_pan_action.cpp:51
+#: ui/input/kis_pan_action.cpp:50
 msgid "Pan Up"
 msgstr "Жоғарға мәнзаралау"
 
-#: ui/input/kis_pan_action.cpp:52
+#: ui/input/kis_pan_action.cpp:51
 msgid "Pan Down"
 msgstr "Төменге мәнзаралау"
 
-#: ui/input/kis_rotate_canvas_action.cpp:43
+#: ui/input/kis_rotate_canvas_action.cpp:42
 msgid "Rotate Canvas"
 msgstr "Өрісті бұру"
 
-#: ui/input/kis_rotate_canvas_action.cpp:45
+#: ui/input/kis_rotate_canvas_action.cpp:44
 msgid "Toggle Rotate Mode"
+msgstr "Бұру күйін ауыстыру"
+
+#: ui/input/kis_rotate_canvas_action.cpp:45
+#, fuzzy
+#| msgid "Toggle Rotate Mode"
+msgid "Toggle Discrete Rotate Mode"
 msgstr "Бұру күйін ауыстыру"
 
 #: ui/input/kis_rotate_canvas_action.cpp:46
@@ -10109,11 +10121,11 @@ msgstr "Бұрылысты ысыру"
 msgid "Show Popup Palette"
 msgstr "Қалқымалы палитрасын көрсету"
 
-#: ui/input/kis_tool_invocation_action.cpp:51
+#: ui/input/kis_tool_invocation_action.cpp:44
 msgid "Tool Invocation"
 msgstr "Құралды қолдануын бастау"
 
-#: ui/input/kis_tool_invocation_action.cpp:52
+#: ui/input/kis_tool_invocation_action.cpp:45
 msgid ""
 "Tool Invocation invokes the current tool, for example, using the brush tool, "
 "it will start painting."
@@ -10121,23 +10133,29 @@ msgstr ""
 "Құралды қолдануын бастау - назардағы құралын, мысалы, қылқаламмен бояуды "
 "бастайды."
 
-#: ui/input/kis_zoom_action.cpp:42
+#: ui/input/kis_zoom_action.cpp:82
 msgid "Zoom Canvas"
 msgstr "Өрісті масштабтау"
 
-#: ui/input/kis_zoom_action.cpp:45
+#: ui/input/kis_zoom_action.cpp:85
 msgid "Toggle Zoom Mode"
 msgstr "Масштабтау күйін ауыстыру"
 
-#: ui/input/kis_zoom_action.cpp:48
+#: ui/input/kis_zoom_action.cpp:86
+#, fuzzy
+#| msgid "Toggle Zoom Mode"
+msgid "Toggle Discrete Zoom Mode"
+msgstr "Масштабтау күйін ауыстыру"
+
+#: ui/input/kis_zoom_action.cpp:89
 msgid "Reset Zoom to 100%"
 msgstr "Масштабты 100% қылу"
 
-#: ui/input/kis_zoom_action.cpp:49
+#: ui/input/kis_zoom_action.cpp:90
 msgid "Fit to Page"
 msgstr "Парақ бетіне шақтау"
 
-#: ui/input/kis_zoom_action.cpp:50
+#: ui/input/kis_zoom_action.cpp:91
 #, fuzzy
 #| msgid "Print Width:"
 msgid "Fit to Width"
@@ -10931,11 +10949,11 @@ msgstr ""
 "Тек өріс күйіне ауысу.\n"
 "Қайтарылу үшін %1 басыңыз."
 
-#: ui/kis_zoom_manager.cc:115
+#: ui/kis_zoom_manager.cc:120
 msgid "Show Rulers"
 msgstr "Өлшегіштерін көрсету"
 
-#: ui/kis_zoom_manager.cc:117
+#: ui/kis_zoom_manager.cc:122
 msgid ""
 "The rulers show the horizontal and vertical positions of the mouse on the "
 "image and can be used to position your mouse at the right place on the "
@@ -10945,7 +10963,7 @@ msgstr ""
 "тышқаныңызды керек орынға дәлдеп апаруға көмектеседі. <p>Өлшегіштерін "
 "жасырғыңыз келсе - белгісін алып тастаңыз."
 
-#: ui/kis_zoom_manager.cc:121
+#: ui/kis_zoom_manager.cc:126
 msgid "Reset zoom"
 msgstr "Үлкейту/Кішірейтуді ысыру"
 
@@ -11134,6 +11152,9 @@ msgstr "Жұмыс кеңістігі"
 #, kde-format
 msgid "Workspace %1"
 msgstr "%1 жұмыс кеңістігі"
+
+#~ msgid "Smooth shapes"
+#~ msgstr "Қалыптарды тегістеу"
 
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Change Generator"
