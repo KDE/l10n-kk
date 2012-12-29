@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-28 02:09+0100\n"
+"POT-Creation-Date: 2012-12-29 02:36+0100\n"
 "PO-Revision-Date: 2012-11-01 12:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -88,19 +88,33 @@ msgctxt "@label"
 msgid "Waiting for authorization"
 msgstr "Құптауды күту"
 
-#: utils/qapt-batch/qaptbatch.cpp:77 utils/qapt-batch/qaptbatch.cpp:149
+#: utils/qapt-batch/qaptbatch.cpp:77 utils/qapt-batch/qaptbatch.cpp:158
 msgctxt "@label"
 msgid ""
 "The package system could not be initialized, your configuration may be "
 "broken."
 msgstr "Десте жүйесі бастайтын күйіне келтірілмеді. Баптауыңыз бүлінген."
 
-#: utils/qapt-batch/qaptbatch.cpp:79 utils/qapt-batch/qaptbatch.cpp:151
+#: utils/qapt-batch/qaptbatch.cpp:79 utils/qapt-batch/qaptbatch.cpp:160
 msgctxt "@title:window"
 msgid "Initialization error"
 msgstr "Инициализациялау қатесі"
 
-#: utils/qapt-batch/qaptbatch.cpp:158
+#: utils/qapt-batch/qaptbatch.cpp:105 utils/qapt-batch/qaptbatch.cpp:227
+#, kde-format
+msgctxt "@label"
+msgid ""
+"The package \"%1\" has not been found among your software sources. "
+"Therefore, it cannot be installed. "
+msgstr ""
+"Бағдарламалар көздерінде \"%1\" дестесі табылған жоқ. Сондықтан орнатылмады."
+
+#: utils/qapt-batch/qaptbatch.cpp:108 utils/qapt-batch/qaptbatch.cpp:230
+msgctxt "@title:window"
+msgid "Package Not Found"
+msgstr "Десте табылмады"
+
+#: utils/qapt-batch/qaptbatch.cpp:167
 msgctxt "@label"
 msgid ""
 "Another application seems to be using the package system at this time. You "
@@ -110,12 +124,12 @@ msgstr ""
 "Десте жүйесін басқа бір қолданба пайдалануда. Кез-келген дестелерді орнату "
 "не өшіру үшін басқа десте менеджерлерін жабу керек."
 
-#: utils/qapt-batch/qaptbatch.cpp:162
+#: utils/qapt-batch/qaptbatch.cpp:171
 msgctxt "@title:window"
 msgid "Unable to obtain package system lock"
 msgstr "Десте жүйесі бұғатталмады"
 
-#: utils/qapt-batch/qaptbatch.cpp:167
+#: utils/qapt-batch/qaptbatch.cpp:176
 #, kde-format
 msgctxt "@label"
 msgid ""
@@ -123,22 +137,22 @@ msgid ""
 "this operation."
 msgstr "Бұл амалды жалғастыру үшін %1 қапшығында дискі орыны жетіспейді."
 
-#: utils/qapt-batch/qaptbatch.cpp:169
+#: utils/qapt-batch/qaptbatch.cpp:178
 msgctxt "@title:window"
 msgid "Low disk space"
 msgstr "Дискіде орын тапшылығы"
 
-#: utils/qapt-batch/qaptbatch.cpp:174
+#: utils/qapt-batch/qaptbatch.cpp:183
 msgctxt "@label"
 msgid "Could not download packages"
 msgstr "Десте жүктеп алынбады"
 
-#: utils/qapt-batch/qaptbatch.cpp:175
+#: utils/qapt-batch/qaptbatch.cpp:184
 msgctxt "@title:window"
 msgid "Download failed"
 msgstr "Жүктеп алу жаңылысы"
 
-#: utils/qapt-batch/qaptbatch.cpp:179
+#: utils/qapt-batch/qaptbatch.cpp:188
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "An error occurred while applying changes:"
@@ -147,23 +161,23 @@ msgctxt "@label"
 msgid "An error occurred while applying changes:"
 msgstr "Өзгерістерді іске асырғанда пайда болған қате(лер):"
 
-#: utils/qapt-batch/qaptbatch.cpp:180
+#: utils/qapt-batch/qaptbatch.cpp:189
 msgctxt "@title:window"
 msgid "Commit error"
 msgstr "Тапсыру қатесі"
 
-#: utils/qapt-batch/qaptbatch.cpp:186
+#: utils/qapt-batch/qaptbatch.cpp:195
 msgctxt "@label"
 msgid ""
 "This operation cannot continue since proper authorization was not provided"
 msgstr "Бұл амал жалғастырылмайды, өйткені керек авторизацясы етілмегн"
 
-#: utils/qapt-batch/qaptbatch.cpp:188
+#: utils/qapt-batch/qaptbatch.cpp:197
 msgctxt "@title:window"
 msgid "Authentication error"
 msgstr "Аутентификация қатесі"
 
-#: utils/qapt-batch/qaptbatch.cpp:192
+#: utils/qapt-batch/qaptbatch.cpp:201
 msgctxt "@label"
 msgid ""
 "It appears that the QApt worker has either crashed or disappeared. Please "
@@ -172,12 +186,12 @@ msgstr ""
 "QApt жұмыс бағдарламасы қирады не жоқ болып кетті. QApt жетілдірушісіне "
 "қатені хабарлаңыз."
 
-#: utils/qapt-batch/qaptbatch.cpp:194
+#: utils/qapt-batch/qaptbatch.cpp:203
 msgctxt "@title:window"
 msgid "Unexpected Error"
 msgstr "Күтпеген қате"
 
-#: utils/qapt-batch/qaptbatch.cpp:202
+#: utils/qapt-batch/qaptbatch.cpp:211
 msgctxt "@label"
 msgid ""
 "The following package has not been verified by its author. Downloading "
@@ -189,42 +203,28 @@ msgstr[0] ""
 "Келесі дестелерде авторлардың растауы жоқ, қолданыстағы баптауы бойынша "
 "сенімсіз дестелері жүктелмейді."
 
-#: utils/qapt-batch/qaptbatch.cpp:211
+#: utils/qapt-batch/qaptbatch.cpp:220
 msgctxt "@title:window"
 msgid "Untrusted Packages"
 msgstr "Сенім артылмаған дестелер"
 
-#: utils/qapt-batch/qaptbatch.cpp:218
-#, kde-format
-msgctxt "@label"
-msgid ""
-"The package \"%1\" has not been found among your software sources. "
-"Therefore, it cannot be installed. "
-msgstr ""
-"Бағдарламалар көздерінде \"%1\" дестесі табылған жоқ. Сондықтан орнатылмады."
-
-#: utils/qapt-batch/qaptbatch.cpp:221
-msgctxt "@title:window"
-msgid "Package Not Found"
-msgstr "Десте табылмады"
-
-#: utils/qapt-batch/qaptbatch.cpp:234
+#: utils/qapt-batch/qaptbatch.cpp:243
 msgctxt "@title:window"
 msgid "Media Change Required"
 msgstr "Тасушыны ауыстыру керек"
 
-#: utils/qapt-batch/qaptbatch.cpp:235
+#: utils/qapt-batch/qaptbatch.cpp:244
 #, kde-format
 msgctxt "@label"
 msgid "Please insert %1 into <filename>%2</filename>"
 msgstr "<filename>%2</filename> дегенге %1 салыңыз"
 
-#: utils/qapt-batch/qaptbatch.cpp:244
+#: utils/qapt-batch/qaptbatch.cpp:253
 msgctxt "@title:window"
 msgid "Warning - Unverified Software"
 msgstr "Ескерту - расталмаған бағдарламалар"
 
-#: utils/qapt-batch/qaptbatch.cpp:246
+#: utils/qapt-batch/qaptbatch.cpp:255
 msgctxt "@label"
 msgid ""
 "The following piece of software cannot be verified. <warning>Installing "
@@ -241,7 +241,7 @@ msgstr[0] ""
 "<warning>Расталмаған бағдарламаны қолданғаны жүйеңізді тәуекел етеді.</"
 "warning> Жалғастыра берейік пе?"
 
-#: utils/qapt-batch/qaptbatch.cpp:281
+#: utils/qapt-batch/qaptbatch.cpp:290
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Waiting for authorization"
@@ -249,7 +249,7 @@ msgctxt "@label Progress bar label when waiting to start"
 msgid "Waiting to start."
 msgstr "Құптауды күту"
 
-#: utils/qapt-batch/qaptbatch.cpp:286
+#: utils/qapt-batch/qaptbatch.cpp:295
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Waiting for authorization"
@@ -257,7 +257,7 @@ msgctxt "@label Status label when waiting for a password"
 msgid "Waiting for authentication."
 msgstr "Құптауды күту"
 
-#: utils/qapt-batch/qaptbatch.cpp:291
+#: utils/qapt-batch/qaptbatch.cpp:300
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Waiting for authorization"
@@ -265,12 +265,12 @@ msgctxt "@label Status label when waiting for a CD-ROM"
 msgid "Waiting for required media."
 msgstr "Құптауды күту"
 
-#: utils/qapt-batch/qaptbatch.cpp:296
+#: utils/qapt-batch/qaptbatch.cpp:305
 msgctxt "@label Status label"
 msgid "Waiting for other package managers to quit."
 msgstr ""
 
-#: utils/qapt-batch/qaptbatch.cpp:304
+#: utils/qapt-batch/qaptbatch.cpp:313
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "Downloading package file"
@@ -279,38 +279,38 @@ msgctxt "@label Status label"
 msgid "Loading package cache."
 msgstr "Десте файлдарды жүктеу"
 
-#: utils/qapt-batch/qaptbatch.cpp:308
+#: utils/qapt-batch/qaptbatch.cpp:317
 msgctxt "@title:window"
 msgid "Refreshing Package Information"
 msgstr "Десте мәліметті жаңарту"
 
-#: utils/qapt-batch/qaptbatch.cpp:309
+#: utils/qapt-batch/qaptbatch.cpp:318
 msgctxt "@info:status"
 msgid "Checking for new, removed or upgradeable packages"
 msgstr "Жаңа, өшірілген не жаңартылатын дестелерді қарастыру"
 
-#: utils/qapt-batch/qaptbatch.cpp:311
+#: utils/qapt-batch/qaptbatch.cpp:320
 msgctxt "@title:window"
 msgid "Downloading"
 msgstr "Жүктелу"
 
-#: utils/qapt-batch/qaptbatch.cpp:313
+#: utils/qapt-batch/qaptbatch.cpp:322
 msgctxt "@info:status"
 msgid "Downloading package file"
 msgid_plural "Downloading package files"
 msgstr[0] "Десте файлдарды жүктеу"
 
-#: utils/qapt-batch/qaptbatch.cpp:322
+#: utils/qapt-batch/qaptbatch.cpp:331
 msgctxt "@title:window"
 msgid "Installing Packages"
 msgstr "Дестелерді орнату"
 
-#: utils/qapt-batch/qaptbatch.cpp:327
+#: utils/qapt-batch/qaptbatch.cpp:336
 msgctxt "@title:window"
 msgid "Installation Complete"
 msgstr "Орнату бітті"
 
-#: utils/qapt-batch/qaptbatch.cpp:331
+#: utils/qapt-batch/qaptbatch.cpp:340
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Package installation finished with errors."
@@ -318,7 +318,7 @@ msgctxt "@label"
 msgid "Package installation failed."
 msgstr "Дестені орнату қатемен аяқталды."
 
-#: utils/qapt-batch/qaptbatch.cpp:334
+#: utils/qapt-batch/qaptbatch.cpp:343
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Package successfully installed"
@@ -328,12 +328,12 @@ msgid "Package successfully installed."
 msgid_plural "Packages successfully installed."
 msgstr[0] "Десте(лер) сәтті орнатылды"
 
-#: utils/qapt-batch/qaptbatch.cpp:338
+#: utils/qapt-batch/qaptbatch.cpp:347
 msgctxt "@title:window"
 msgid "Removal Complete"
 msgstr "Өшіру бітті"
 
-#: utils/qapt-batch/qaptbatch.cpp:342
+#: utils/qapt-batch/qaptbatch.cpp:351
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Package removal finished with errors."
@@ -341,7 +341,7 @@ msgctxt "@label"
 msgid "Package removal failed."
 msgstr "Дестені өшіру қатемен аяқталды."
 
-#: utils/qapt-batch/qaptbatch.cpp:346
+#: utils/qapt-batch/qaptbatch.cpp:355
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Package successfully uninstalled"
@@ -351,12 +351,12 @@ msgid "Package successfully uninstalled."
 msgid_plural "Packages successfully uninstalled."
 msgstr[0] "Десте(лер) орнатудан сәтті шығарылды"
 
-#: utils/qapt-batch/qaptbatch.cpp:350
+#: utils/qapt-batch/qaptbatch.cpp:359
 msgctxt "@title:window"
 msgid "Refresh Complete"
 msgstr "Жаңарту бітті"
 
-#: utils/qapt-batch/qaptbatch.cpp:353
+#: utils/qapt-batch/qaptbatch.cpp:362
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Refresh Complete"
@@ -364,7 +364,7 @@ msgctxt "@info:status"
 msgid "Refresh failed."
 msgstr "Жаңарту бітті"
 
-#: utils/qapt-batch/qaptbatch.cpp:355
+#: utils/qapt-batch/qaptbatch.cpp:364
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Package information successfully refreshed"
