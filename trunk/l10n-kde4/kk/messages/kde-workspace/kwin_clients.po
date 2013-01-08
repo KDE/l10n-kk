@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-12 03:00+0100\n"
+"POT-Creation-Date: 2013-01-08 12:37+0100\n"
 "PO-Revision-Date: 2013-01-04 04:38+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -43,20 +43,23 @@ msgid "Title &Alignment"
 msgstr "&Айдардың жазуының ығысуы"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignLeft)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:29
-#: oxygen/oxygenconfiguration.cpp:247
+#: oxygen/config/ui/oxygenconfigurationui.ui:115
 msgid "Left"
 msgstr "Солға"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignCenter)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:36
-#: oxygen/oxygenconfiguration.cpp:252
+#: oxygen/config/ui/oxygenconfigurationui.ui:120
 msgid "Center"
 msgstr "Ортаға"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignRight)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:43
-#: oxygen/oxygenconfiguration.cpp:255
+#: oxygen/config/ui/oxygenconfigurationui.ui:130
 msgid "Right"
 msgstr "Онға"
 
@@ -114,19 +117,19 @@ msgstr "Барлық үстелдерінде емес"
 msgid "On all desktops"
 msgstr "Барлық үстелдерінде"
 
-#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:224
+#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:226
 msgid "Minimize"
 msgstr "Түю"
 
-#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:227
+#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:229
 msgid "Maximize"
 msgstr "Кең жаю"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:230
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:232
 msgid "Close"
 msgstr "Жабу"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:221
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:223
 msgid "Help"
 msgstr "Анықтама"
 
@@ -223,7 +226,7 @@ msgstr ""
 "Мәзір батырмасында қос шертім жасағанда болатын әрекетті таңдаңыз. "
 "Күмәндәнсаңыз, ештеңе етпейтін күйінде қалдырыңыз."
 
-#: laptop/laptopclient.cpp:370
+#: laptop/laptopclient.cpp:376
 msgid "Laptop"
 msgstr "Ноутбук"
 
@@ -261,36 +264,23 @@ msgstr "Терезе топтастыру анимациясы"
 msgid "Configure window titlebar animations when windows are grouped/ungrouped"
 msgstr "Терезелер топтасу/ыдырау кезіндегі айдарының анимациясын баптау"
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 msgid "Hide Advanced Configuration Options"
 msgstr "Жетелеп баптау параметрлерін жасыру"
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 msgid "Show Advanced Configuration Options"
 msgstr "Жетелеп баптау параметрлерін көрсету"
 
-#: oxygen/config/oxygenconfigurationui.cpp:162
+#: oxygen/config/oxygenconfigwidget.cpp:177
 msgid "Animations"
 msgstr "Анимация"
 
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-#: oxygen/config/oxygenexceptiondialog.cpp:146
-msgctxt "outline window title"
-msgid "Enabled"
-msgstr "Болсын"
-
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-msgctxt "outline window title"
-msgid "Disabled"
-msgstr "Болмасын"
-
-#: oxygen/config/oxygenexceptionlistwidget.cpp:201
+#: oxygen/config/oxygenexceptionlistwidget.cpp:190
 msgid "Remove selected exception?"
 msgstr "Таңдалған ерекшелік өшірілсін бе?"
 
-#: oxygen/config/oxygenexceptionlistwidget.cpp:340
+#: oxygen/config/oxygenexceptionlistwidget.cpp:331
 msgid "Regular Expression syntax is incorrect"
 msgstr "Үлгі өрнегінің синтаксисі қате"
 
@@ -302,7 +292,19 @@ msgstr "Ерекшеліктің түрі"
 msgid "Regular Expression"
 msgstr "Үлгі өрнегі"
 
-#: oxygen/config/oxygenexceptionmodel.cpp:67
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:61
+#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+msgid "Window Title"
+msgstr "Терезенің айдары"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:65
+#: oxygen/config/ui/oxygenexceptiondialog.ui:64
+msgid "Window Class Name"
+msgstr "Терезе класының атауы"
+
+#: oxygen/config/oxygenexceptionmodel.cpp:81
 msgid "Enable/disable this exception"
 msgstr "Осы ерекшелікті рұқсат ету/етпеу"
 
@@ -314,100 +316,228 @@ msgstr "Жалпы"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QCheckBox, frameBorderCheckBox)
 #: oxygen/config/ui/oxygenconfigurationui.ui:39
-#: oxygen/config/ui/oxygenexceptiondialog.ui:75
+#: oxygen/config/ui/oxygenexceptiondialog.ui:86
 msgid "Border size:"
 msgstr "Шеттің қалыңдығы:"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:53
+#: oxygen/config/ui/oxygenexceptiondialog.ui:142
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Border"
+msgid "No Border"
+msgstr "Жиегі жоқ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:58
+#: oxygen/config/ui/oxygenexceptiondialog.ui:147
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Border"
+msgid "No Side Borders"
+msgstr "Жақтарда жиегі жоқ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:63
+#: oxygen/config/ui/oxygenexceptiondialog.ui:152
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Жұқа"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:68
+#: oxygen/config/ui/oxygenconfigurationui.ui:170
+#: oxygen/config/ui/oxygenexceptiondialog.ui:157
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Кәдімгі"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:73
+#: oxygen/config/ui/oxygenconfigurationui.ui:175
+#: oxygen/config/ui/oxygenexceptiondialog.ui:162
+msgid "Large"
+msgstr "Үлкен"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:78
+#: oxygen/config/ui/oxygenconfigurationui.ui:180
+#: oxygen/config/ui/oxygenexceptiondialog.ui:167
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Оте үлкен"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:83
+#: oxygen/config/ui/oxygenconfigurationui.ui:185
+#: oxygen/config/ui/oxygenexceptiondialog.ui:172
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Зор"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:88
+#: oxygen/config/ui/oxygenexceptiondialog.ui:177
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Өте зор"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:93
+#: oxygen/config/ui/oxygenexceptiondialog.ui:182
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Шектен асқан"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:55
+#: oxygen/config/ui/oxygenconfigurationui.ui:101
 msgid "Title alignment:"
 msgstr "Айдар жазуының орны"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
+#: oxygen/config/ui/oxygenconfigurationui.ui:125
+msgid "Center (Full Width)"
+msgstr "Ортасы (Толық ені)"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:84
+#: oxygen/config/ui/oxygenconfigurationui.ui:151
 msgid "Button size:"
 msgstr "Батырманың өлшемі:"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#: oxygen/config/ui/oxygenconfigurationui.ui:165
+msgid "Small"
+msgstr "Кіші"
+
 #. i18n: ectx: property (text), widget (QCheckBox, animationsEnabled)
-#: oxygen/config/ui/oxygenconfigurationui.ui:100
+#: oxygen/config/ui/oxygenconfigurationui.ui:206
 msgid "Enable animations"
 msgstr "Анимациялары рұқсат етілсін"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:121
+#: oxygen/config/ui/oxygenconfigurationui.ui:214
 msgid "Fine Tuning"
 msgstr "Дәлдеп лайықтау"
 
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: ectx: property (text), widget (QCheckBox, separatorCheckBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:130
-#: oxygen/config/ui/oxygenexceptiondialog.ui:96
-msgid "Separator display:"
-msgstr "Бөлгішін көрсетуі:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:143
-msgid "Background style: "
-msgstr "Аясының  стилі: "
-
-#. i18n: ectx: property (text), widget (QCheckBox, titleOutline)
-#: oxygen/config/ui/oxygenconfigurationui.ui:172
-msgid "Outline active window title"
-msgstr "Беллсенді терезе айдарын белдеулеу"
-
-#. i18n: ectx: property (text), widget (QCheckBox, narrowButtonSpacing)
-#: oxygen/config/ui/oxygenconfigurationui.ui:192
-msgid "Use narrow space between decoration buttons"
-msgstr "Безендіру батыралар арасында шағын аралық болсын"
-
-#. i18n: ectx: property (text), widget (QLabel, sizeGripModeLabel)
-#: oxygen/config/ui/oxygenconfigurationui.ui:202
-msgid "Extra size grip display: "
-msgstr "Өлшем өзгерткішін көрсету: "
-
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:216
-#: oxygen/config/ui/oxygenexceptiondialog.ui:140
+#: oxygen/config/ui/oxygenconfigurationui.ui:224
+#: oxygen/config/ui/oxygenexceptiondialog.ui:250
 msgid "Never Draw Separator"
 msgstr "Бөлгіші болмасын"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:221
-#: oxygen/config/ui/oxygenexceptiondialog.ui:145
+#: oxygen/config/ui/oxygenconfigurationui.ui:229
+#: oxygen/config/ui/oxygenexceptiondialog.ui:255
 msgid "Draw Separator When Window is Active"
 msgstr "Белснді терезесінің бөлгіші болсын"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:226
-#: oxygen/config/ui/oxygenexceptiondialog.ui:150
+#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenexceptiondialog.ui:260
 msgid "Always Draw Separator"
 msgstr "Бөлгіші болсын"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QCheckBox, separatorCheckBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenexceptiondialog.ui:107
+msgid "Separator display:"
+msgstr "Бөлгішін көрсетуі:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: oxygen/config/ui/oxygenconfigurationui.ui:255
+msgid "Background style: "
+msgstr "Аясының  стилі: "
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:269
+#: oxygen/config/ui/oxygenexceptiondialog.ui:194
+msgid "Solid Color"
+msgstr "Кою түс"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:274
+#: oxygen/config/ui/oxygenexceptiondialog.ui:199
+msgid "Radial Gradient"
+msgstr "Радиалды градиент"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:279
+#: oxygen/config/ui/oxygenexceptiondialog.ui:204
+msgid "Follow Style Hint"
+msgstr "Стиль кеңесіне еру"
+
+#. i18n: ectx: property (text), widget (QCheckBox, titleOutline)
+#: oxygen/config/ui/oxygenconfigurationui.ui:300
+msgid "Outline active window title"
+msgstr "Беллсенді терезе айдарын белдеулеу"
+
+#. i18n: ectx: property (text), widget (QCheckBox, narrowButtonSpacing)
+#: oxygen/config/ui/oxygenconfigurationui.ui:307
+msgid "Use narrow space between decoration buttons"
+msgstr "Безендіру батыралар арасында шағын аралық болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, drawSizeGrip)
+#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:314
+#: oxygen/config/ui/oxygenexceptiondialog.ui:93
+msgid "Add handle to resize windows with no border"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, closeFromMenuButton)
-#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenconfigurationui.ui:321
 msgid "Close windows by double clicking the menu button"
 msgstr "Мәзір батырмасын қос шерткенде терезе жабылсын"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenconfigurationui.ui:342
 msgid "Shadows"
 msgstr "Көлеңкелеу"
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, inactiveShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:250
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, inactiveShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:350
 msgid "Window Drop-Down Shadow"
 msgstr "Терезенің көлеңкесі болсын"
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, activeShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:260
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, activeShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:360
 msgid "Active Window Glow"
 msgstr "Белсенді терезесі жарқырап көрсетілсін"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:286
+#: oxygen/config/ui/oxygenconfigurationui.ui:386
 msgid "Window-Specific Overrides"
 msgstr "Терезенің ерекшеліктері"
 
@@ -462,29 +592,53 @@ msgid "Detect Window Properties"
 msgstr "Терезенің қасиеттерін байқау"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+#: oxygen/config/ui/oxygenexceptiondialog.ui:80
 msgid "Decoration Options"
 msgstr "Безендіру параметрлері"
 
-#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:82
-msgid "Extra size grip display:"
-msgstr "Өлшем өзгертуді көрсету:"
-
 #. i18n: ectx: property (text), widget (QCheckBox, titleOutlineCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:89
+#: oxygen/config/ui/oxygenexceptiondialog.ui:100
 msgid "Outline active window title:"
 msgstr "Беллсенді терезе айдарын белдеулеу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, blendColorCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:103
+#: oxygen/config/ui/oxygenexceptiondialog.ui:114
 msgid "Background style:"
 msgstr "Аясынның стилі:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, hideTitleBar)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:110
+#: oxygen/config/ui/oxygenexceptiondialog.ui:121
 msgid "Hide window title bar"
 msgstr "Терезе айдарының жолы жасырылсын"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:216
+#, fuzzy
+#| msgid "Disabled"
+msgctxt "Add handle to resize windows with no border"
+msgid "Disabled"
+msgstr "Бұғатталған"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:221
+#, fuzzy
+#| msgctxt "outline window title"
+#| msgid "Enabled"
+msgctxt "Add handle to resize windows with no border"
+msgid "Enabled"
+msgstr "Болсын"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:233
+msgctxt "outline window title"
+msgid "Disabled"
+msgstr "Болмасын"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:238
+msgctxt "outline window title"
+msgid "Enabled"
+msgstr "Болсын"
 
 #. i18n: ectx: property (text), widget (KPushButton, moveUpButton)
 #: oxygen/config/ui/oxygenexceptionlistwidget.ui:29
@@ -511,34 +665,7 @@ msgstr "Өшіру"
 msgid "Edit"
 msgstr "Өзгерту"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:23
-msgid "Inner Color:"
-msgstr "Ішінің түсі:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:42
-msgid "Outer Color:"
-msgstr "Сыртының түсі:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:69
-msgid "Vertical Offset:"
-msgstr "Тік шегінуі:"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:82
-msgid "Size: "
-msgstr "Өлшемі: "
-
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, shadowSize)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, verticalOffset)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:95
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:102
-msgid "px"
-msgstr "пкс"
-
-#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:47
+#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:46
 msgid "Oxygen Shadow Demo"
 msgstr "Oxygen көлеңкелерін көру"
 
@@ -554,15 +681,15 @@ msgstr "(c) 2011, Hugo Pereira Da Costa"
 msgid "Hugo Pereira Da Costa"
 msgstr "Hugo Pereira Da Costa"
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:50
+#: oxygen/demo/oxygenshadowdemodialog.cpp:49
 msgid "Save"
 msgstr "Сақтау"
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:52
+#: oxygen/demo/oxygenshadowdemodialog.cpp:51
 msgid "Save shadows as pixmaps in provided directory"
 msgstr "Көлеңкелерді нүктелі кескін ретінде келтірілген каталогта сақтау"
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:72
+#: oxygen/demo/oxygenshadowdemodialog.cpp:71
 msgid "Draw window background"
 msgstr "Терезенің аясын салу"
 
@@ -580,131 +707,80 @@ msgstr "Белсенді терезе"
 msgid "Oxygen"
 msgstr "Oxygen"
 
-#: oxygen/oxygenclient.cpp:215
+#: oxygen/oxygenclient.cpp:217
 msgid "Window Actions Menu"
 msgstr "Терезе әрекеттер ммәзірі"
 
-#: oxygen/oxygenclient.cpp:218
+#: oxygen/oxygenclient.cpp:220
 msgid "Application Menu"
 msgstr "Қолданбаның мәзірі"
 
-#: oxygen/oxygenclient.cpp:233
+#: oxygen/oxygenclient.cpp:235
 msgid "Keep Above Others"
 msgstr "Бет алдында ұстау"
 
-#: oxygen/oxygenclient.cpp:236
+#: oxygen/oxygenclient.cpp:238
 msgid "Keep Below Others"
 msgstr "Ең артында ұстау"
 
-#: oxygen/oxygenclient.cpp:239
+#: oxygen/oxygenclient.cpp:241
 msgid "On All Desktops"
 msgstr "Барлық үстелдерінде"
 
-#: oxygen/oxygenclient.cpp:242
+#: oxygen/oxygenclient.cpp:244
 msgid "Shade Button"
 msgstr "Айдарға түю батырмасы"
 
-#: oxygen/oxygenconfiguration.cpp:251
-msgid "Center (Full Width)"
-msgstr "Ортасы (Толық ені)"
+#~ msgid "Extra size grip display: "
+#~ msgstr "Өлшем өзгерткішін көрсету: "
 
-#: oxygen/oxygenconfiguration.cpp:278
-msgctxt "@item:inlistbox Button size:"
-msgid "Small"
-msgstr "Шағын"
+#~ msgid "Extra size grip display:"
+#~ msgstr "Өлшем өзгертуді көрсету:"
 
-#: oxygen/oxygenconfiguration.cpp:279
-msgctxt "@item:inlistbox Button size:"
-msgid "Normal"
-msgstr "Кәдімгі"
+#~ msgid "Inner Color:"
+#~ msgstr "Ішінің түсі:"
 
-#: oxygen/oxygenconfiguration.cpp:280
-msgctxt "@item:inlistbox Button size:"
-msgid "Large"
-msgstr "Үлкен"
+#~ msgid "Outer Color:"
+#~ msgstr "Сыртының түсі:"
 
-#: oxygen/oxygenconfiguration.cpp:281
-msgctxt "@item:inlistbox Button size:"
-msgid "Very Large"
-msgstr "Оте үлкен"
+#~ msgid "Vertical Offset:"
+#~ msgstr "Тік шегінуі:"
 
-#: oxygen/oxygenconfiguration.cpp:282
-msgctxt "@item:inlistbox Button size:"
-msgid "Huge"
-msgstr "Зор"
+#~ msgid "Size: "
+#~ msgstr "Өлшемі: "
 
-#: oxygen/oxygenconfiguration.cpp:322
-msgctxt "@item:inlistbox Border size:"
-msgid "No Border"
-msgstr "Жиегі жоқ"
+#~ msgid "px"
+#~ msgstr "пкс"
 
-#: oxygen/oxygenconfiguration.cpp:323
-msgctxt "@item:inlistbox Border size:"
-msgid "No Side Border"
-msgstr "Жақтарда жиегі жоқ"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Small"
+#~ msgstr "Шағын"
 
-#: oxygen/oxygenconfiguration.cpp:324
-msgctxt "@item:inlistbox Border size:"
-msgid "Tiny"
-msgstr "Жұқа"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Large"
+#~ msgstr "Үлкен"
 
-#: oxygen/oxygenconfiguration.cpp:325
-msgctxt "@item:inlistbox Border size:"
-msgid "Normal"
-msgstr "Кәдімгі"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Normal"
+#~ msgstr "Кәдімгі"
 
-#: oxygen/oxygenconfiguration.cpp:326
-msgctxt "@item:inlistbox Border size:"
-msgid "Large"
-msgstr "Үлкен"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Large"
+#~ msgstr "Үлкен"
 
-#: oxygen/oxygenconfiguration.cpp:327
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Large"
-msgstr "Оте үлкен"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Very Large"
+#~ msgstr "Оте үлкен"
 
-#: oxygen/oxygenconfiguration.cpp:328
-msgctxt "@item:inlistbox Border size:"
-msgid "Huge"
-msgstr "Зор"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Huge"
+#~ msgstr "Зор"
 
-#: oxygen/oxygenconfiguration.cpp:329
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Huge"
-msgstr "Өте зор"
+#~ msgid "Always Hide Extra Size Grip"
+#~ msgstr "Өлшем өзгерткішін әрқашан жасыру"
 
-#: oxygen/oxygenconfiguration.cpp:330
-msgctxt "@item:inlistbox Border size:"
-msgid "Oversized"
-msgstr "Шектен асқан"
-
-#: oxygen/oxygenconfiguration.cpp:359
-msgid "Solid Color"
-msgstr "Кою түс"
-
-#: oxygen/oxygenconfiguration.cpp:360
-msgid "Radial Gradient"
-msgstr "Радиалды градиент"
-
-#: oxygen/oxygenconfiguration.cpp:361
-msgid "Follow Style Hint"
-msgstr "Стиль кеңесіне еру"
-
-#: oxygen/oxygenconfiguration.cpp:384
-msgid "Always Hide Extra Size Grip"
-msgstr "Өлшем өзгерткішін әрқашан жасыру"
-
-#: oxygen/oxygenconfiguration.cpp:385
-msgid "Show Extra Size Grip When Needed"
-msgstr "Өлшем өзгерткішін керегінде көрсету"
-
-#: oxygen/oxygenexception.cpp:79
-msgid "Window Title"
-msgstr "Терезенің айдары"
-
-#: oxygen/oxygenexception.cpp:80
-msgid "Window Class Name"
-msgstr "Терезе класының атауы"
+#~ msgid "Show Extra Size Grip When Needed"
+#~ msgstr "Өлшем өзгерткішін керегінде көрсету"
 
 #~ msgid ""
 #~ "Check this option if you want windows to be closed when you double click "
@@ -760,9 +836,6 @@ msgstr "Терезе класының атауы"
 
 #~ msgid "Enable title transition animations"
 #~ msgstr "Атау ауысуы анимациялансын"
-
-#~ msgid "Disabled"
-#~ msgstr "Бұғатталған"
 
 #~ msgid "Variable"
 #~ msgstr "Айнымалы"
@@ -891,14 +964,8 @@ msgstr "Терезе класының атауы"
 #~ "Мұнда терезенің өлшемін өзгерту үшін қолданатын бұрыштаманың өлшемін "
 #~ "өзгерте аласыз."
 
-#~ msgid "Small"
-#~ msgstr "Кіші"
-
 #~ msgid "Medium"
 #~ msgstr "Орташа"
-
-#~ msgid "Large"
-#~ msgstr "Үлкен"
 
 #~ msgid "Modern System"
 #~ msgstr "Modern System"
