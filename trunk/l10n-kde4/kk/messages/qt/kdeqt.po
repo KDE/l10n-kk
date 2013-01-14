@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2013-01-10 03:32+0100\n"
+"POT-Creation-Date: 2013-01-14 03:34+0100\n"
 "PO-Revision-Date: 2013-01-08 03:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1598,40 +1598,26 @@ msgstr "Шығыс үшін %1 құрылмады"
 msgid "No file engine available or engine does not support UnMapExtension"
 msgstr "Файл басқару тетігі жоқ не ол UnMapExtension-ді қолдамайды"
 
-#: corelib/io/qprocess_unix.cpp:404 corelib/io/qprocess_win.cpp:138
+#: corelib/io/qprocess_win.cpp:138 corelib/io/qprocess_unix.cpp:404
 msgid "Could not open input redirection for reading"
 msgstr "Қайта бағытталған кіріс оқу үшін ашылмады"
 
-#: corelib/io/qprocess_unix.cpp:416 corelib/io/qprocess_win.cpp:158
+#: corelib/io/qprocess_win.cpp:158 corelib/io/qprocess_unix.cpp:416
 msgid "Could not open output redirection for writing"
 msgstr "Қайта бағытталған шығыс жазу үшін ашылмады"
-
-#: corelib/io/qprocess_unix.cpp:688
-#, qt-format
-msgid "Resource error (fork failure): %1"
-msgstr "Ресурс қатесі (тармақтау жаңылысы): %1"
-
-#: corelib/io/qprocess_unix.cpp:1034 corelib/io/qprocess_unix.cpp:1086
-#: corelib/io/qprocess_unix.cpp:1160 corelib/io/qprocess_unix.cpp:1226
-#: corelib/io/qprocess_win.cpp:591 corelib/io/qprocess_win.cpp:641
-#: corelib/io/qprocess_win.cpp:716 corelib/io/qprocess_win.cpp:758
-#: corelib/io/qprocess_win.cpp:812
-msgid "Process operation timed out"
-msgstr "Процес операциясын күту уақыты бітті"
-
-#: corelib/io/qiodevice.cpp:1630 corelib/plugin/qlibrary.cpp:1236
-#: corelib/plugin/qpluginloader.cpp:367
-#: corelib/statemachine/qstatemachine.cpp:1046
-#: network/kernel/qhostinfo_unix.cpp:301
-#: network/socket/qnativesocketengine.cpp:276
-#: network/socket/qsymbiansocketengine.cpp:1435 network/ssl/qsslerror.cpp:289
-msgid "Unknown error"
-msgstr "Беймәлім қате"
 
 #: corelib/io/qprocess_win.cpp:431
 #, qt-format
 msgid "Process failed to start: %1"
 msgstr "Процесті бастау қатесі: %1"
+
+#: corelib/io/qprocess_win.cpp:591 corelib/io/qprocess_win.cpp:641
+#: corelib/io/qprocess_win.cpp:716 corelib/io/qprocess_win.cpp:758
+#: corelib/io/qprocess_win.cpp:812 corelib/io/qprocess_unix.cpp:1034
+#: corelib/io/qprocess_unix.cpp:1086 corelib/io/qprocess_unix.cpp:1160
+#: corelib/io/qprocess_unix.cpp:1226
+msgid "Process operation timed out"
+msgstr "Процес операциясын күту уақыты бітті"
 
 #: corelib/io/qprocess_win.cpp:601 corelib/io/qprocess_win.cpp:651
 #: corelib/io/qprocess.cpp:884 corelib/io/qprocess.cpp:936
@@ -1643,6 +1629,15 @@ msgstr "Процестен оқу қатесі"
 msgid "Error writing to process"
 msgstr "Процеске жазу қатесі"
 
+#: corelib/io/qiodevice.cpp:1630 corelib/plugin/qlibrary.cpp:1236
+#: corelib/plugin/qpluginloader.cpp:367
+#: corelib/statemachine/qstatemachine.cpp:1046
+#: network/kernel/qhostinfo_unix.cpp:301
+#: network/socket/qnativesocketengine.cpp:276
+#: network/socket/qsymbiansocketengine.cpp:1435 network/ssl/qsslerror.cpp:289
+msgid "Unknown error"
+msgstr "Беймәлім қате"
+
 #: corelib/io/qprocess.cpp:1052
 msgid "Process crashed"
 msgstr "Процесі қирады"
@@ -1650,6 +1645,11 @@ msgstr "Процесі қирады"
 #: corelib/io/qprocess.cpp:2054
 msgid "No program defined"
 msgstr "Бағдарлама анықталмаған"
+
+#: corelib/io/qprocess_unix.cpp:688
+#, qt-format
+msgid "Resource error (fork failure): %1"
+msgstr "Ресурс қатесі (тармақтау жаңылысы): %1"
 
 #: corelib/kernel/qsystemsemaphore_symbian.cpp:68
 #: corelib/kernel/qsystemsemaphore_unix.cpp:91
@@ -2080,10 +2080,6 @@ msgctxt "Debugger::JSAgentWatchData"
 msgid "<undefined>"
 msgstr "<анықталмаған>"
 
-#: declarative/graphicsitems/qdeclarativeitem.cpp:814
-msgid "LayoutDirection attached property only works with Items"
-msgstr "LayoutDirection тіркеген қасиеттер тек қана аталымдарымен істейді"
-
 #: declarative/graphicsitems/qdeclarativeanchors.cpp:198
 msgid "Possible anchor loop detected on fill."
 msgstr "fill дегенде бекіткіш тұйықтығы байқалған сияқты."
@@ -2156,6 +2152,10 @@ msgstr "Жүктегіш көрсетелмейтін элементтерін �
 #: declarative/graphicsitems/qdeclarativevisualitemmodel.cpp:1101
 msgid "Delegate component must be Item type."
 msgstr "Өкіл компонентінің түрі Item (аталым) болу тиіс."
+
+#: declarative/graphicsitems/qdeclarativeitem.cpp:814
+msgid "LayoutDirection attached property only works with Items"
+msgstr "LayoutDirection тіркеген қасиеттер тек қана аталымдарымен істейді"
 
 #: declarative/graphicsitems/qdeclarativeitemsmodule.cpp:106
 #: declarative/graphicsitems/qdeclarativeitemsmodule.cpp:214
@@ -2934,23 +2934,6 @@ msgstr "ListElement: қасиеттің мәнінде скриптті қолд
 msgid "ListModel: undefined property '%1'"
 msgstr "ListModel: '%1' қасиеті анықталмаған"
 
-#: declarative/util/qdeclarativestateoperations.cpp:110
-#: declarative/util/qdeclarativeanimation.cpp:2699
-msgid "Unable to preserve appearance under complex transform"
-msgstr "Күрделі түрлендіруден кейін көрінісін сақтауға мүмкін емес"
-
-#: declarative/util/qdeclarativestateoperations.cpp:121
-#: declarative/util/qdeclarativestateoperations.cpp:128
-#: declarative/util/qdeclarativeanimation.cpp:2710
-#: declarative/util/qdeclarativeanimation.cpp:2717
-msgid "Unable to preserve appearance under non-uniform scale"
-msgstr "Біркелкі емес масштабтаудан кейін көрінісін сақтауға мүмкін емес"
-
-#: declarative/util/qdeclarativestateoperations.cpp:135
-#: declarative/util/qdeclarativeanimation.cpp:2724
-msgid "Unable to preserve appearance under scale of 0"
-msgstr "Масштабы 0 болғанда көрінісін сақтауға мүмкін емес"
-
 #: declarative/util/qdeclarativepixmapcache.cpp:311
 #, qt-format
 msgid "Error decoding: %1: %2"
@@ -2976,6 +2959,23 @@ msgstr "PropertyChanges-де күйі ерекше нысандардың қод
 #, qt-format
 msgid "Cannot assign to read-only property \"%1\""
 msgstr "Тек оқу үшін \"%1\" қасиетіне мән тағайындалмайды"
+
+#: declarative/util/qdeclarativestateoperations.cpp:110
+#: declarative/util/qdeclarativeanimation.cpp:2699
+msgid "Unable to preserve appearance under complex transform"
+msgstr "Күрделі түрлендіруден кейін көрінісін сақтауға мүмкін емес"
+
+#: declarative/util/qdeclarativestateoperations.cpp:121
+#: declarative/util/qdeclarativestateoperations.cpp:128
+#: declarative/util/qdeclarativeanimation.cpp:2710
+#: declarative/util/qdeclarativeanimation.cpp:2717
+msgid "Unable to preserve appearance under non-uniform scale"
+msgstr "Біркелкі емес масштабтаудан кейін көрінісін сақтауға мүмкін емес"
+
+#: declarative/util/qdeclarativestateoperations.cpp:135
+#: declarative/util/qdeclarativeanimation.cpp:2724
+msgid "Unable to preserve appearance under scale of 0"
+msgstr "Масштабы 0 болғанда көрінісін сақтауға мүмкін емес"
 
 #: declarative/util/qdeclarativeutilmodule.cpp:80
 msgid "Application is an abstract class"
@@ -3034,12 +3034,6 @@ msgstr "Белсендету"
 #: gui/accessible/qaccessibleobject.cpp:376
 msgid "Activates the program's main window"
 msgstr "Бағадарламаның негізгі терезесін белсендету"
-
-#: gui/dialogs/qabstractpagesetupdialog.cpp:68
-#: gui/dialogs/qabstractpagesetupdialog.cpp:80
-msgctxt "QPrintPreviewDialog"
-msgid "Page Setup"
-msgstr "Бет баптаулары"
 
 #: gui/dialogs/qabstractprintdialog.cpp:116
 #: gui/dialogs/qabstractprintdialog.cpp:129
@@ -3156,6 +3150,108 @@ msgstr "Жа&зу жүйесі"
 #: gui/dialogs/qinputdialog.cpp:223
 msgid "Enter a value:"
 msgstr "Мәнін келтіріңіз:"
+
+#: gui/dialogs/qmessagebox.cpp:139
+msgid "Show Details..."
+msgstr "Егжей-тегжейлері..."
+
+#: gui/dialogs/qmessagebox.cpp:139
+msgid "Hide Details..."
+msgstr "Егжей-тегжейін жасыру..."
+
+#: gui/dialogs/qmessagebox.cpp:427 gui/dialogs/qmessagebox.cpp:1272
+msgctxt "QMessageBox"
+msgid "OK"
+msgstr "ОК"
+
+#: gui/dialogs/qmessagebox.cpp:1273
+msgctxt "QMessageBox"
+msgid "Help"
+msgstr "Анықтама"
+
+#: gui/dialogs/qmessagebox.cpp:1762
+#, qt-format
+msgid "<h3>About Qt</h3><p>This program uses Qt version %1.</p>"
+msgstr "<h3>Qt туралы</h3><p>Бұл бағдарлама Qt %1 нұсқасын негіздейді.</p>"
+
+#: gui/dialogs/qmessagebox.cpp:1767
+#, fuzzy
+#| msgid ""
+#| "<p>Qt is a C++ toolkit for cross-platform application development.</"
+#| "p><p>Qt provides single-source portability across MS&nbsp;Windows, "
+#| "Mac&nbsp;OS&nbsp;X, Linux, and all major commercial Unix variants. Qt is "
+#| "also available for embedded devices as Qt for Embedded Linux and Qt for "
+#| "Windows CE.</p><p>Qt is available under three different licensing options "
+#| "designed to accommodate the needs of our various users.</p><p>Qt licensed "
+#| "under our commercial license agreement is appropriate for development of "
+#| "proprietary/commercial software where you do not want to share any source "
+#| "code with third parties or otherwise cannot comply with the terms of the "
+#| "GNU LGPL version 2.1 or GNU GPL version 3.0.</p><p>Qt licensed under the "
+#| "GNU LGPL version 2.1 is appropriate for the development of Qt "
+#| "applications (proprietary or open source) provided you can comply with "
+#| "the terms and conditions of the GNU LGPL version 2.1.</p><p>Qt licensed "
+#| "under the GNU General Public License version 3.0 is appropriate for the "
+#| "development of Qt applications where you wish to use such applications in "
+#| "combination with software subject to the terms of the GNU GPL version 3.0 "
+#| "or where you are otherwise willing to comply with the terms of the GNU "
+#| "GPL version 3.0.</p><p>Please see <a href=\"http://qt.digia.com/product/"
+#| "licensing\">qt.digia.com/product/licensing</a> for an overview of Qt "
+#| "licensing.</p><p>Copyright (C) 2012 Digia Plc and/or its subsidiary(-ies)."
+#| "</p><p>Qt is a Digia product. See <a href=\"http://qt.digia.com/\">qt."
+#| "digia.com</a> for more information.</p>"
+msgid ""
+"<p>Qt is a C++ toolkit for cross-platform application development.</p><p>Qt "
+"provides single-source portability across MS&nbsp;Windows, Mac&nbsp;OS&nbsp;"
+"X, Linux, and all major commercial Unix variants. Qt is also available for "
+"embedded devices as Qt for Embedded Linux and Qt for Windows CE.</p><p>Qt is "
+"available under three different licensing options designed to accommodate "
+"the needs of our various users.</p><p>Qt licensed under our commercial "
+"license agreement is appropriate for development of proprietary/commercial "
+"software where you do not want to share any source code with third parties "
+"or otherwise cannot comply with the terms of the GNU LGPL version 2.1 or GNU "
+"GPL version 3.0.</p><p>Qt licensed under the GNU LGPL version 2.1 is "
+"appropriate for the development of Qt applications (proprietary or open "
+"source) provided you can comply with the terms and conditions of the GNU "
+"LGPL version 2.1.</p><p>Qt licensed under the GNU General Public License "
+"version 3.0 is appropriate for the development of Qt applications where you "
+"wish to use such applications in combination with software subject to the "
+"terms of the GNU GPL version 3.0 or where you are otherwise willing to "
+"comply with the terms of the GNU GPL version 3.0.</p><p>Please see <a href="
+"\"http://qt.digia.com/product/licensing\">qt.digia.com/product/licensing</a> "
+"for an overview of Qt licensing.</p><p>Copyright (C) 2013 Digia Plc and/or "
+"its subsidiary(-ies).</p><p>Qt is a Digia product. See <a href=\"http://qt."
+"digia.com/\">qt.digia.com</a> for more information.</p>"
+msgstr ""
+"<p>Qt деген C++ тіліне арналған көп-платформалық бағдаралама құрастыру "
+"құралдар жиыны.</p><p>Qt келесі платформаларында бірыңғай бастапқы кодты "
+"қолдануға мүмкіндік береді: MS&nbsp;Windows, Mac&nbsp;OS&nbsp;X, Linux, және "
+"барлық негізгі коммерциялық Unix түрлері. Сонымен қатар, жабдықтау "
+"құралдарында істейтін Embedded Linux пен for Windows CE жүйелеріне де "
+"арналған Qt дестелері бар.</p><p>Qt-нің үш, алуан пайдаланушы түрін "
+"қамытатын, лицензиясы бар.</p><p>Qt-нің  комерциялық лицензиясы, GNU LGPL "
+"2.1-нұсқасымен не GNU GPL3.0-нұсқасымен келіспейтін, ешбір үшінші "
+"тұлғалармен бастапқы кодымен бөліспетін жәғдайға, меншікті/коммерциялық "
+"бағдарламалардың құрастушысына жарайды.</p><p>Qt-нің GNU LGPL 2.1-нұсқасы, "
+"LGPL v.2.1 дегенге бағынатын (меншікті не ашық кодты) Qt қолданбаларды "
+"құрастыруға арналған.</p><p>Qt-нің GNU General Public License version 3.0 "
+"дегені сондай Qt қолданбаңызды GNU GPL v.3.0 лицензиялы бағдарламалармен "
+"біріктіріп қолданатын қылғанда, немесе түгелдей осы лицензияға бағынатын "
+"бағдарлама құрастыру жағдайына келеді.</p><p>Qt лицензияларды шолу үшін <a "
+"href=\"http://qt.nokia.com/products/licensing\">qt.nokia.com/products/"
+"licensing</a> дегенді қараңыз.</p><p>Copyright (C) 2012 Digla Plc мен оның "
+"бөлімдері.</p><p>Qt - Nokia-ның өнімі. Толығрақ мәлімет үшін <a href="
+"\"http://qt.nokia.com/\">qt.nokia.com</a> сайтын қараңыз.</p>"
+
+#: gui/dialogs/qmessagebox.cpp:1797
+msgid "About Qt"
+msgstr "Qt туралы"
+
+#: gui/dialogs/qmessagebox.cpp:1937 gui/dialogs/qmessagebox.cpp:2383
+#: gui/dialogs/qprintdialog_win.cpp:272 gui/kernel/qsoftkeymanager.cpp:64
+#: qt3support/dialogs/q3tabdialog.cpp:190
+#: qt3support/dialogs/q3tabdialog.cpp:1014
+msgid "OK"
+msgstr "ОК"
 
 #: gui/dialogs/qpagesetupdialog_unix.cpp:72
 msgid "A0"
@@ -3511,13 +3607,6 @@ msgstr "Басып шығару"
 msgid "The 'From' value cannot be greater than the 'To' value."
 msgstr "Аяқтау мәні бастау мәнінен артық болу керек."
 
-#: gui/dialogs/qprintdialog_win.cpp:272 gui/dialogs/qmessagebox.cpp:1937
-#: gui/dialogs/qmessagebox.cpp:2383 gui/kernel/qsoftkeymanager.cpp:64
-#: qt3support/dialogs/q3tabdialog.cpp:190
-#: qt3support/dialogs/q3tabdialog.cpp:1014
-msgid "OK"
-msgstr "ОК"
-
 #: gui/dialogs/qprintpreviewdialog.cpp:249
 #, qt-format
 msgid "%1%"
@@ -3667,76 +3756,11 @@ msgstr "Анықтама"
 msgid "&Help"
 msgstr "&Анықтама"
 
-#: gui/dialogs/qmessagebox.cpp:139
-msgid "Show Details..."
-msgstr "Егжей-тегжейлері..."
-
-#: gui/dialogs/qmessagebox.cpp:139
-msgid "Hide Details..."
-msgstr "Егжей-тегжейін жасыру..."
-
-#: gui/dialogs/qmessagebox.cpp:427 gui/dialogs/qmessagebox.cpp:1272
-msgctxt "QMessageBox"
-msgid "OK"
-msgstr "ОК"
-
-#: gui/dialogs/qmessagebox.cpp:1273
-msgctxt "QMessageBox"
-msgid "Help"
-msgstr "Анықтама"
-
-#: gui/dialogs/qmessagebox.cpp:1762
-#, qt-format
-msgid "<h3>About Qt</h3><p>This program uses Qt version %1.</p>"
-msgstr "<h3>Qt туралы</h3><p>Бұл бағдарлама Qt %1 нұсқасын негіздейді.</p>"
-
-#: gui/dialogs/qmessagebox.cpp:1767
-msgid ""
-"<p>Qt is a C++ toolkit for cross-platform application development.</p><p>Qt "
-"provides single-source portability across MS&nbsp;Windows, Mac&nbsp;OS&nbsp;"
-"X, Linux, and all major commercial Unix variants. Qt is also available for "
-"embedded devices as Qt for Embedded Linux and Qt for Windows CE.</p><p>Qt is "
-"available under three different licensing options designed to accommodate "
-"the needs of our various users.</p><p>Qt licensed under our commercial "
-"license agreement is appropriate for development of proprietary/commercial "
-"software where you do not want to share any source code with third parties "
-"or otherwise cannot comply with the terms of the GNU LGPL version 2.1 or GNU "
-"GPL version 3.0.</p><p>Qt licensed under the GNU LGPL version 2.1 is "
-"appropriate for the development of Qt applications (proprietary or open "
-"source) provided you can comply with the terms and conditions of the GNU "
-"LGPL version 2.1.</p><p>Qt licensed under the GNU General Public License "
-"version 3.0 is appropriate for the development of Qt applications where you "
-"wish to use such applications in combination with software subject to the "
-"terms of the GNU GPL version 3.0 or where you are otherwise willing to "
-"comply with the terms of the GNU GPL version 3.0.</p><p>Please see <a href="
-"\"http://qt.digia.com/product/licensing\">qt.digia.com/product/licensing</a> "
-"for an overview of Qt licensing.</p><p>Copyright (C) 2012 Digia Plc and/or "
-"its subsidiary(-ies).</p><p>Qt is a Digia product. See <a href=\"http://qt."
-"digia.com/\">qt.digia.com</a> for more information.</p>"
-msgstr ""
-"<p>Qt деген C++ тіліне арналған көп-платформалық бағдаралама құрастыру "
-"құралдар жиыны.</p><p>Qt келесі платформаларында бірыңғай бастапқы кодты "
-"қолдануға мүмкіндік береді: MS&nbsp;Windows, Mac&nbsp;OS&nbsp;X, Linux, және "
-"барлық негізгі коммерциялық Unix түрлері. Сонымен қатар, жабдықтау "
-"құралдарында істейтін Embedded Linux пен for Windows CE жүйелеріне де "
-"арналған Qt дестелері бар.</p><p>Qt-нің үш, алуан пайдаланушы түрін "
-"қамытатын, лицензиясы бар.</p><p>Qt-нің  комерциялық лицензиясы, GNU LGPL "
-"2.1-нұсқасымен не GNU GPL3.0-нұсқасымен келіспейтін, ешбір үшінші "
-"тұлғалармен бастапқы кодымен бөліспетін жәғдайға, меншікті/коммерциялық "
-"бағдарламалардың құрастушысына жарайды.</p><p>Qt-нің GNU LGPL 2.1-нұсқасы, "
-"LGPL v.2.1 дегенге бағынатын (меншікті не ашық кодты) Qt қолданбаларды "
-"құрастыруға арналған.</p><p>Qt-нің GNU General Public License version 3.0 "
-"дегені сондай Qt қолданбаңызды GNU GPL v.3.0 лицензиялы бағдарламалармен "
-"біріктіріп қолданатын қылғанда, немесе түгелдей осы лицензияға бағынатын "
-"бағдарлама құрастыру жағдайына келеді.</p><p>Qt лицензияларды шолу үшін <a "
-"href=\"http://qt.nokia.com/products/licensing\">qt.nokia.com/products/"
-"licensing</a> дегенді қараңыз.</p><p>Copyright (C) 2012 Digla Plc мен оның "
-"бөлімдері.</p><p>Qt - Nokia-ның өнімі. Толығрақ мәлімет үшін <a href="
-"\"http://qt.nokia.com/\">qt.nokia.com</a> сайтын қараңыз.</p>"
-
-#: gui/dialogs/qmessagebox.cpp:1797
-msgid "About Qt"
-msgstr "Qt туралы"
+#: gui/dialogs/qabstractpagesetupdialog.cpp:68
+#: gui/dialogs/qabstractpagesetupdialog.cpp:80
+msgctxt "QPrintPreviewDialog"
+msgid "Page Setup"
+msgstr "Бет баптаулары"
 
 #: gui/inputmethod/qinputcontextfactory.cpp:301
 msgid "XIM"
@@ -5281,6 +5305,10 @@ msgstr "PDF жазу бағдарын қайтару"
 msgid "Insert Unicode control character"
 msgstr "Юникод басқару символын енгізу"
 
+#: gui/util/qdesktopservices_mac.cpp:171
+msgid "Home"
+msgstr "Мекен"
+
 #: gui/util/qundogroup.cpp:388 gui/util/qundostack.cpp:877
 #, qt-format
 msgid "Undo %1"
@@ -5305,9 +5333,9 @@ msgstr "Қайтудан айну"
 msgid "<empty>"
 msgstr "<жоқ>"
 
-#: gui/util/qdesktopservices_mac.cpp:171
-msgid "Home"
-msgstr "Мекен"
+#: gui/widgets/qtabbar.cpp:2324
+msgid "Close Tab"
+msgstr "Қойындыны жабу"
 
 #: gui/widgets/qmdiarea.cpp:290
 msgid "(Untitled)"
@@ -5605,10 +5633,6 @@ msgstr "Оңға жүгірту"
 msgid "Scroll down"
 msgstr "Төменге жүгірту"
 
-#: gui/widgets/qtabbar.cpp:2324
-msgid "Close Tab"
-msgstr "Қойындыны жабу"
-
 #: gui/widgets/qworkspace.cpp:1106 gui/widgets/qworkspace.cpp:2164
 msgid "Sh&ade"
 msgstr "&Айдарына түю"
@@ -5757,10 +5781,9 @@ msgstr "Хостттың атауы берілмеген"
 
 #: network/kernel/qhostinfo_symbian.cpp:73
 #: network/kernel/qhostinfo_unix.cpp:265 network/kernel/qhostinfo_unix.cpp:297
-#: network/kernel/qhostinfo_win.cpp:115
+#: network/kernel/qhostinfo_win.cpp:115 network/socket/qabstractsocket.cpp:918
 #: network/socket/qsocks5socketengine.cpp:668
 #: network/socket/qsocks5socketengine.cpp:694
-#: network/socket/qabstractsocket.cpp:918
 msgid "Host not found"
 msgstr "Хост табылмады"
 
@@ -5790,6 +5813,34 @@ msgstr "Хостттың атауы берілмеген"
 #: network/kernel/qhostinfo_win.cpp:185
 msgid "Invalid hostname"
 msgstr "Жарамсыз хост атауы"
+
+#: network/socket/qabstractsocket.cpp:555
+#: network/socket/qabstractsocket.cpp:1382
+#: network/socket/qabstractsocket.cpp:1607 network/socket/qtcpserver.cpp:292
+#: network/socket/qtcpserver.cpp:421
+msgid "Operation on socket is not supported"
+msgstr "Сокет операцияның қолдауы жоқ"
+
+#: network/socket/qabstractsocket.cpp:968
+#: network/socket/qnativesocketengine.cpp:240
+#: network/socket/qsocks5socketengine.cpp:698
+#: network/socket/qsymbiansocketengine.cpp:1393
+msgid "Connection refused"
+msgstr "Байланыс болмады"
+
+#: network/socket/qabstractsocket.cpp:1110
+#: network/socket/qnativesocketengine.cpp:237
+#: network/socket/qsymbiansocketengine.cpp:1390
+msgid "Connection timed out"
+msgstr "Қосылымды күту мерзімі бітті"
+
+#: network/socket/qabstractsocket.cpp:1826
+msgid "Socket operation timed out"
+msgstr "Сокет операциясын күту  мерзімі бітті"
+
+#: network/socket/qabstractsocket.cpp:2263
+msgid "Socket is not connected"
+msgstr "Сокет қосылған жоқ"
 
 #: network/socket/qnativesocketengine.cpp:201
 #: network/socket/qsymbiansocketengine.cpp:1354
@@ -5846,19 +5897,6 @@ msgstr "Хост қол жеткізбейді"
 #: network/socket/qsymbiansocketengine.cpp:1384
 msgid "Network unreachable"
 msgstr "Желі қол жеткізбейді"
-
-#: network/socket/qnativesocketengine.cpp:237
-#: network/socket/qsymbiansocketengine.cpp:1390
-#: network/socket/qabstractsocket.cpp:1110
-msgid "Connection timed out"
-msgstr "Қосылымды күту мерзімі бітті"
-
-#: network/socket/qnativesocketengine.cpp:240
-#: network/socket/qsocks5socketengine.cpp:698
-#: network/socket/qsymbiansocketengine.cpp:1393
-#: network/socket/qabstractsocket.cpp:968
-msgid "Connection refused"
-msgstr "Байланыс болмады"
 
 #: network/socket/qnativesocketengine.cpp:243
 #: network/socket/qsymbiansocketengine.cpp:1396
@@ -5982,24 +6020,9 @@ msgstr "Бұл операцияға бұл адресі жарамайды"
 msgid "The specified network session is not opened"
 msgstr "Келтірілген желілік сеанс ашылмаған"
 
-#: network/socket/qtcpserver.cpp:292 network/socket/qtcpserver.cpp:421
-#: network/socket/qabstractsocket.cpp:555
-#: network/socket/qabstractsocket.cpp:1382
-#: network/socket/qabstractsocket.cpp:1607
-msgid "Operation on socket is not supported"
-msgstr "Сокет операцияның қолдауы жоқ"
-
 #: network/socket/qudpsocket.cpp:199
 msgid "This platform does not support IPv6"
 msgstr "Бұл платфома IPv6 протоколын танымайды"
-
-#: network/socket/qabstractsocket.cpp:1826
-msgid "Socket operation timed out"
-msgstr "Сокет операциясын күту  мерзімі бітті"
-
-#: network/socket/qabstractsocket.cpp:2263
-msgid "Socket is not connected"
-msgstr "Сокет қосылған жоқ"
 
 #: network/ssl/qsslerror.cpp:217
 msgid "The issuer certificate could not be found"
@@ -6245,6 +6268,14 @@ msgstr "Ашу"
 msgid "Execute"
 msgstr "Орындау"
 
+#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1331
+msgid "Dock"
+msgstr "Орнықтыру"
+
+#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1332
+msgid "Float"
+msgstr "Қалқымалы"
+
 #: plugins/accessible/widgets/rangecontrols.cpp:149
 #: plugins/accessible/widgets/rangecontrols.cpp:412
 msgid "More"
@@ -6280,14 +6311,6 @@ msgstr "Спидометр"
 #: plugins/accessible/widgets/rangecontrols.cpp:937
 msgid "SliderHandle"
 msgstr "ЖүгірткіТұтқасы"
-
-#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1331
-msgid "Dock"
-msgstr "Орнықтыру"
-
-#: plugins/accessible/widgets/qaccessiblewidgets.cpp:1332
-msgid "Float"
-msgstr "Қалқымалы"
 
 #: plugins/accessible/widgets/simplewidgets.cpp:124
 #: plugins/accessible/widgets/simplewidgets.cpp:269
@@ -6564,13 +6587,13 @@ msgstr "Өзгерістерінен айнисыз ба?"
 msgid "Clear"
 msgstr "Тазалау"
 
-#: qt3support/widgets/q3mainwindow.cpp:2053
-msgid "Customize..."
-msgstr "Баптау..."
-
 #: qt3support/widgets/q3toolbar.cpp:692
 msgid "More..."
 msgstr "Қосымша..."
+
+#: qt3support/widgets/q3mainwindow.cpp:2053
+msgid "Customize..."
+msgstr "Баптау..."
 
 #: scripttools/debugging/qscriptedit.cpp:411
 #: scripttools/debugging/qscriptdebugger.cpp:1795
@@ -7525,6 +7548,71 @@ msgstr "Кемінде бірі болу тиіс."
 msgid "At least one time component must appear after the %1-delimiter."
 msgstr "%1-бөлгіштен кейін кемінде бір компоненті болу тиіс."
 
+#: xmlpatterns/data/qabstractfloatmathematician.cpp:64
+#, qt-format
+msgid "No operand in an integer division, %1, can be %2."
+msgstr "Бүтін бөлу үшін операнды жетіспейді, %1, %2 болу мүмкін."
+
+#: xmlpatterns/data/qabstractfloatmathematician.cpp:71
+#, qt-format
+msgid "The first operand in an integer division, %1, cannot be infinity (%2)."
+msgstr "Бүтін бөлуінің бірінші операнды, %1, ақырсыздық бола алмайды (%2)."
+
+#: xmlpatterns/data/qabstractfloatmathematician.cpp:77
+#, qt-format
+msgid "The second operand in a division, %1, cannot be zero (%2)."
+msgstr "Бүтін бөлуінің екінші операнды, %1, нөл бола алмайды (%2)."
+
+#: xmlpatterns/data/qatomicvalue.cpp:79
+#, qt-format
+msgid "A value of type %1 cannot have an Effective Boolean Value."
+msgstr "%1 түрдегі мән нәтижелі логикалық мән бола алмайды."
+
+#: xmlpatterns/data/qboolean.cpp:78
+msgid ""
+"Effective Boolean Value cannot be calculated for a sequence containing two "
+"or more atomic values."
+msgstr ""
+"Нәтижелі логикалық мән екі не одан да көп элементарлы мәндер тізбегінен "
+"есептелмейді."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:65
+#, qt-format
+msgid "Integer division (%1) by zero (%2) is undefined."
+msgstr "Нөлге (%2) бүтін бөлуі (%1) неғайбыл."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:72
+#, qt-format
+msgid "Division (%1) by zero (%2) is undefined."
+msgstr "Нөлге (%2) бөлуі (%1) неғайбыл."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:79
+#, qt-format
+msgid "Modulus division (%1) by zero (%2) is undefined."
+msgstr "Нөлге (%2) бөлуінің (%1) модулі неғайбыл."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:202
+#: xmlpatterns/data/qatomicmathematicians.cpp:234
+#, qt-format
+msgid "Dividing a value of type %1 by %2 (not-a-number) is not allowed."
+msgstr "%1 түрдегі мәнді %2 дегенге (сан емеске) бөлуге болмайды."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:214
+#, qt-format
+msgid ""
+"Dividing a value of type %1 by %2 or %3 (plus or minus zero) is not allowed."
+msgstr ""
+"%1 түрдегі мәнді %2 не %3 дегенге (плюс не минус нөлге) бөлуге болмайды."
+
+#: xmlpatterns/data/qatomicmathematicians.cpp:246
+#, qt-format
+msgid ""
+"Multiplication of a value of type %1 by %2 or %3 (plus or minus infinity) is "
+"not allowed."
+msgstr ""
+"%1 түрдегі мәнді %2 не %3 дегенге (плюс не минус ақырсыздыққа) көбейтуге "
+"болмайды."
+
 #: xmlpatterns/data/qabstractdatetime.cpp:80
 #, qt-format
 msgid "Year %1 is invalid because it begins with %2."
@@ -7567,71 +7655,6 @@ msgstr "%1:%2:%3.%4 деген уақыт дұрыс емес."
 #: xmlpatterns/data/qabstractdatetime.cpp:302
 msgid "Overflow: Date can't be represented."
 msgstr "Толып кетті: Күні келтірілмеді."
-
-#: xmlpatterns/data/qabstractfloatmathematician.cpp:64
-#, qt-format
-msgid "No operand in an integer division, %1, can be %2."
-msgstr "Бүтін бөлу үшін операнды жетіспейді, %1, %2 болу мүмкін."
-
-#: xmlpatterns/data/qabstractfloatmathematician.cpp:71
-#, qt-format
-msgid "The first operand in an integer division, %1, cannot be infinity (%2)."
-msgstr "Бүтін бөлуінің бірінші операнды, %1, ақырсыздық бола алмайды (%2)."
-
-#: xmlpatterns/data/qabstractfloatmathematician.cpp:77
-#, qt-format
-msgid "The second operand in a division, %1, cannot be zero (%2)."
-msgstr "Бүтін бөлуінің екінші операнды, %1, нөл бола алмайды (%2)."
-
-#: xmlpatterns/data/qatomicvalue.cpp:79
-#, qt-format
-msgid "A value of type %1 cannot have an Effective Boolean Value."
-msgstr "%1 түрдегі мән нәтижелі логикалық мән бола алмайды."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:65
-#, qt-format
-msgid "Integer division (%1) by zero (%2) is undefined."
-msgstr "Нөлге (%2) бүтін бөлуі (%1) неғайбыл."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:72
-#, qt-format
-msgid "Division (%1) by zero (%2) is undefined."
-msgstr "Нөлге (%2) бөлуі (%1) неғайбыл."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:79
-#, qt-format
-msgid "Modulus division (%1) by zero (%2) is undefined."
-msgstr "Нөлге (%2) бөлуінің (%1) модулі неғайбыл."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:202
-#: xmlpatterns/data/qatomicmathematicians.cpp:234
-#, qt-format
-msgid "Dividing a value of type %1 by %2 (not-a-number) is not allowed."
-msgstr "%1 түрдегі мәнді %2 дегенге (сан емеске) бөлуге болмайды."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:214
-#, qt-format
-msgid ""
-"Dividing a value of type %1 by %2 or %3 (plus or minus zero) is not allowed."
-msgstr ""
-"%1 түрдегі мәнді %2 не %3 дегенге (плюс не минус нөлге) бөлуге болмайды."
-
-#: xmlpatterns/data/qatomicmathematicians.cpp:246
-#, qt-format
-msgid ""
-"Multiplication of a value of type %1 by %2 or %3 (plus or minus infinity) is "
-"not allowed."
-msgstr ""
-"%1 түрдегі мәнді %2 не %3 дегенге (плюс не минус ақырсыздыққа) көбейтуге "
-"болмайды."
-
-#: xmlpatterns/data/qboolean.cpp:78
-msgid ""
-"Effective Boolean Value cannot be calculated for a sequence containing two "
-"or more atomic values."
-msgstr ""
-"Нәтижелі логикалық мән екі не одан да көп элементарлы мәндер тізбегінен "
-"есептелмейді."
 
 #: xmlpatterns/data/qhexbinary.cpp:92
 #, qt-format
@@ -7689,19 +7712,6 @@ msgid ""
 msgstr ""
 "Есептейтін атрибуттын атауының атау кеңістігінде URI, жергілікті атауы %2 "
 "боғанда, %1 бола алмайды."
-
-#: xmlpatterns/expr/qgenericpredicate.cpp:106
-#, qt-format
-msgid ""
-"A value of type %1 cannot be a predicate. A predicate must have either a "
-"numeric type or an Effective Boolean Value type."
-msgstr ""
-"%1 түрдегі мән предикат бола алмайды. Предикаттың түрі немесе сан немесе "
-"нәтижелі логикалық мән болу керек."
-
-#: xmlpatterns/expr/qgenericpredicate.cpp:138
-msgid "A positional predicate must evaluate to a single numeric value."
-msgstr "Позициялық предикат жалғыз санды мәнді қабылдайды. "
 
 #: xmlpatterns/expr/qcastas.cpp:88
 #, qt-format
@@ -7807,6 +7817,19 @@ msgstr ""
 "Атрибут құжаттың туынды саласы бола алмайды. Сондықтан %1 атрибуты орнында "
 "емес."
 
+#: xmlpatterns/expr/qgenericpredicate.cpp:106
+#, qt-format
+msgid ""
+"A value of type %1 cannot be a predicate. A predicate must have either a "
+"numeric type or an Effective Boolean Value type."
+msgstr ""
+"%1 түрдегі мән предикат бола алмайды. Предикаттың түрі немесе сан немесе "
+"нәтижелі логикалық мән болу керек."
+
+#: xmlpatterns/expr/qgenericpredicate.cpp:138
+msgid "A positional predicate must evaluate to a single numeric value."
+msgstr "Позициялық предикат жалғыз санды мәнді қабылдайды. "
+
 #: xmlpatterns/expr/qprocessinginstructionconstructor.cpp:84
 #, qt-format
 msgid "The data of a processing instruction cannot contain the string %1"
@@ -7827,33 +7850,6 @@ msgstr "%1 параметрі тапсырылды, бірақ оған сәйк
 msgid "The parameter %1 is required, but no corresponding %2 is supplied."
 msgstr "%1 параметрі керек, бірақ оған сәйкесті %2 келтірілмеген."
 
-#: xmlpatterns/functions/qaggregatefns.cpp:120
-#, qt-format
-msgid ""
-"The first argument to %1 cannot be of type %2. It must be a numeric type, xs:"
-"yearMonthDuration or xs:dayTimeDuration."
-msgstr ""
-"%1 дегеннің бірінші аргументінің түрі %2 болмау керек. Ол не сан, не xs:"
-"yearMonthDuration, не xs:dayTimeDuration болу тиіс."
-
-#: xmlpatterns/functions/qaggregatefns.cpp:194
-#, qt-format
-msgid ""
-"The first argument to %1 cannot be of type %2. It must be of type %3, %4, or "
-"%5."
-msgstr ""
-"%1 дегеннің бірінші аргументінің түрі %2 болмау керек. Ол %3, %4 немесе %5 "
-"болу тиіс."
-
-#: xmlpatterns/functions/qaggregatefns.cpp:285
-#, qt-format
-msgid ""
-"The second argument to %1 cannot be of type %2. It must be of type %3, %4, "
-"or %5."
-msgstr ""
-"%1 дегеннің екінші аргументінің түрі %2 болмау керек. Ол %3, %4 немесе %5 "
-"болу тиіс."
-
 #: xmlpatterns/functions/qassemblestringfns.cpp:88
 #, qt-format
 msgid "%1 is not a valid XML 1.0 character."
@@ -7870,10 +7866,28 @@ msgstr "Зоналық шегініс %1..%2 арада болу керек, ш�
 msgid "%1 is not a whole number of minutes."
 msgstr "%1 - толық минут саны емес."
 
-#: xmlpatterns/functions/qcomparingaggregator.cpp:197
+#: xmlpatterns/functions/qdatetimefn.cpp:86
 #, qt-format
-msgid "The first argument to %1 cannot be of type %2."
-msgstr "%1 дегеннің бірінші аргументінің түрі %2 болмау керек."
+msgid ""
+"If both values have zone offsets, they must have the same zone offset. %1 "
+"and %2 are not the same."
+msgstr ""
+"Мәннің екеунде де зоналық шегіністері бар, олар бірдей болу керек. %1 және "
+"%2 бірдей емес."
+
+#: xmlpatterns/functions/qqnamefns.cpp:69
+#, qt-format
+msgid "%1 is an invalid %2"
+msgstr "%1 деген дұрыс емес %2"
+
+#: xmlpatterns/functions/qqnamefns.cpp:87
+#, qt-format
+msgid ""
+"If the first argument is the empty sequence or a zero-length string (no "
+"namespace), a prefix cannot be specified. Prefix %1 was specified."
+msgstr ""
+"Егер бірінші аргументі бос тізбек не ұзындығы нөл мәтін жолы (атау кеңістігі "
+"жоқ) болса, онда префикс келтірілмейді. %1 префиксі келтірілген."
 
 #: xmlpatterns/functions/qcontextnodechecker.cpp:54
 #, qt-format
@@ -7883,6 +7897,11 @@ msgid ""
 msgstr ""
 "%1 функциясының екінші аргументінің түбір түйіні құжат түйіні болу керек. Ал "
 "%2 құжат түйіні емес."
+
+#: xmlpatterns/functions/qcomparingaggregator.cpp:197
+#, qt-format
+msgid "The first argument to %1 cannot be of type %2."
+msgstr "%1 дегеннің бірінші аргументінің түрі %2 болмау керек."
 
 #: xmlpatterns/functions/qpatternmatchingfns.cpp:94
 #, qt-format
@@ -7923,6 +7942,33 @@ msgstr "%1 дегенді алу мүмкін болмайды."
 msgid "%1 was called."
 msgstr "%1 шақырылған."
 
+#: xmlpatterns/functions/qaggregatefns.cpp:120
+#, qt-format
+msgid ""
+"The first argument to %1 cannot be of type %2. It must be a numeric type, xs:"
+"yearMonthDuration or xs:dayTimeDuration."
+msgstr ""
+"%1 дегеннің бірінші аргументінің түрі %2 болмау керек. Ол не сан, не xs:"
+"yearMonthDuration, не xs:dayTimeDuration болу тиіс."
+
+#: xmlpatterns/functions/qaggregatefns.cpp:194
+#, qt-format
+msgid ""
+"The first argument to %1 cannot be of type %2. It must be of type %3, %4, or "
+"%5."
+msgstr ""
+"%1 дегеннің бірінші аргументінің түрі %2 болмау керек. Ол %3, %4 немесе %5 "
+"болу тиіс."
+
+#: xmlpatterns/functions/qaggregatefns.cpp:285
+#, qt-format
+msgid ""
+"The second argument to %1 cannot be of type %2. It must be of type %3, %4, "
+"or %5."
+msgstr ""
+"%1 дегеннің екінші аргументінің түрі %2 болмау керек. Ол %3, %4 немесе %5 "
+"болу тиіс."
+
 #: xmlpatterns/functions/qsequencegeneratingfns.cpp:282
 msgid "The default collection is undefined"
 msgstr "Әдетті жинағы анықталмаған"
@@ -7962,29 +8008,6 @@ msgstr "%1 деген дұрыс емес үлгі өрнегі: %2"
 msgid "%1 is an invalid flag for regular expressions. Valid flags are:"
 msgstr "%1 деген үлгі өрнегінің дұрыс емес жалаушасы. Дұрысы:"
 
-#: xmlpatterns/functions/qdatetimefn.cpp:86
-#, qt-format
-msgid ""
-"If both values have zone offsets, they must have the same zone offset. %1 "
-"and %2 are not the same."
-msgstr ""
-"Мәннің екеунде де зоналық шегіністері бар, олар бірдей болу керек. %1 және "
-"%2 бірдей емес."
-
-#: xmlpatterns/functions/qqnamefns.cpp:69
-#, qt-format
-msgid "%1 is an invalid %2"
-msgstr "%1 деген дұрыс емес %2"
-
-#: xmlpatterns/functions/qqnamefns.cpp:87
-#, qt-format
-msgid ""
-"If the first argument is the empty sequence or a zero-length string (no "
-"namespace), a prefix cannot be specified. Prefix %1 was specified."
-msgstr ""
-"Егер бірінші аргументі бос тізбек не ұзындығы нөл мәтін жолы (атау кеңістігі "
-"жоқ) болса, онда префикс келтірілмейді. %1 префиксі келтірілген."
-
 #: xmlpatterns/functions/qstringvaluefns.cpp:252
 #, qt-format
 msgid ""
@@ -8003,161 +8026,6 @@ msgstr "Керек қуаттылығы - %1. Бар қуаттылығы - %2."
 #, qt-format
 msgid "The item %1 did not match the required type %2."
 msgstr "%1 деген керек %2 түріне жатпайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:519
-#, qt-format
-msgid "Element %1 is not allowed at this location."
-msgstr "%1 элементіне бұнда тұруға болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:528
-msgid "Text nodes are not allowed at this location."
-msgstr "Мәтін түйініне бұнда тұруға болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:548
-#, qt-format
-msgid "Parse error: %1"
-msgstr "Талдау қатесі: %1"
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:610
-#, qt-format
-msgid ""
-"The value of the XSL-T version attribute must be a value of type %1, which "
-"%2 isn't."
-msgstr "XSL-T нұсқа атрибут мәнінің түрі %1 болуы тиіс, бірақ %2 ондай емес."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:630
-msgid "Running an XSL-T 1.0 stylesheet with a 2.0 processor."
-msgstr "XSL-T 1.0 стиль кестесі 2.0 процессормен орындалуда."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:738
-#, qt-format
-msgid "Unknown XSL-T attribute %1."
-msgstr "Беймәлім XSL-T атрибуты: %1."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:761
-#, qt-format
-msgid "Attribute %1 and %2 are mutually exclusive."
-msgstr "%1 және %2 атрибуттары бірге сиыспайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:927
-#, qt-format
-msgid "In a simplified stylesheet module, attribute %1 must be present."
-msgstr "Жеңілдетілген стиль модулінде %1 атрибуты болу міндет."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:999
-#, qt-format
-msgid "If element %1 has no attribute %2, it cannot have attribute %3 or %4."
-msgstr ""
-"Егерде %1 элементінде %2 атрибуты болмаса, онда %3 не %4 атибуттары да "
-"болмау керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1008
-#, qt-format
-msgid "Element %1 must have at least one of the attributes %2 or %3."
-msgstr "%1 элементінде %2 не %3 атрибуттарының кемінде біреуі болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1036
-#, qt-format
-msgid "At least one mode must be specified in the %1-attribute on element %2."
-msgstr "%2 элементінің %1-атрибутінде кемінде бір режімді келтіру керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1159
-#, qt-format
-msgid "Element %1 must come last."
-msgstr "%1 элементі соңғы болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1183
-#, qt-format
-msgid "At least one %1-element must occur before %2."
-msgstr "%2 алдында кемінде бір %1 элементі болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1190
-#, qt-format
-msgid "Only one %1-element can appear."
-msgstr "Тек қана бір %1 элементі болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1221
-#, qt-format
-msgid "At least one %1-element must occur inside %2."
-msgstr "%2 ішінде кемінде бір %1 элементі болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1279
-#, qt-format
-msgid ""
-"When attribute %1 is present on %2, a sequence constructor cannot be used."
-msgstr "%2 дегенде %1 атрибуты болса, тізбек конструкторын қолдануға болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1292
-#, qt-format
-msgid "Element %1 must have either a %2-attribute or a sequence constructor."
-msgstr "%1 элементінде %2 атрибуты немесе тізбек конструкторы болу тиіс."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1417
-#, qt-format
-msgid ""
-"When a parameter is required, a default value cannot be supplied through a "
-"%1-attribute or a sequence constructor."
-msgstr ""
-"Параметр талап етілгенде, әдетті мән %1 атрибуты немесе тізбек конструкторы "
-"арқылы келтірілмейді."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:1687
-#, qt-format
-msgid "Element %1 cannot have children."
-msgstr "%1 элементінде еншілеісі болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2121
-#, qt-format
-msgid "Element %1 cannot have a sequence constructor."
-msgstr "%1 элементінде тізбек конструкторы болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2207
-#: xmlpatterns/parser/qxslttokenizer.cpp:2216
-#, qt-format
-msgid "The attribute %1 cannot appear on %2, when it is a child of %3."
-msgstr "%2 деген %3 дегеннің еншілесі болғанда онда %1 атрибуты бола алмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2231
-msgid "A parameter in a function cannot be declared to be a tunnel."
-msgstr "Фнкцияның параметрін туннель деп мәлімдеуге болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2380
-#, qt-format
-msgid "This processor is not Schema-aware and therefore %1 cannot be used."
-msgstr ""
-"Бұл процессордың Schema-aware функциясыз. сондықтан %1 дегенді пайдалануға "
-"болмайды."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2437
-#, qt-format
-msgid ""
-"Top level stylesheet elements must be in a non-null namespace, which %1 "
-"isn't."
-msgstr ""
-"Жоғарғы денгейлі стиль кестесінің элементі нөл емес атау кеңістігінде болу "
-"керек, бірақ %1 онда жоқ. "
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2485
-#, qt-format
-msgid ""
-"The value for attribute %1 on element %2 must either be %3 or %4, not %5."
-msgstr ""
-"%2 элементінің %1 атрибутының мәні %3 не %4 болуы тиіс, %5 болмау керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2505
-#, qt-format
-msgid "Attribute %1 cannot have the value %2."
-msgstr "%1 атрибутының мәні %2 болмау тиіс."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2563
-#, qt-format
-msgid "The attribute %1 can only appear on the first %2 element."
-msgstr "%1 атрибуты тек бірінші %2 элементінде болу керек."
-
-#: xmlpatterns/parser/qxslttokenizer.cpp:2662
-#, qt-format
-msgid "At least one %1 element must appear as child of %2."
-msgstr "Кеміде бір %1 элемент %2 дегеннің енішлесі болу керек."
 
 #: xmlpatterns/parser/qmaintainingreader.cpp:184
 #, qt-format
@@ -8612,6 +8480,161 @@ msgstr ""
 #: querytransformparser.ypp:4553
 msgid "The name of an extension expression must be in a namespace."
 msgstr "Атауының жұрнағы атау кеңісігінде болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:519
+#, qt-format
+msgid "Element %1 is not allowed at this location."
+msgstr "%1 элементіне бұнда тұруға болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:528
+msgid "Text nodes are not allowed at this location."
+msgstr "Мәтін түйініне бұнда тұруға болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:548
+#, qt-format
+msgid "Parse error: %1"
+msgstr "Талдау қатесі: %1"
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:610
+#, qt-format
+msgid ""
+"The value of the XSL-T version attribute must be a value of type %1, which "
+"%2 isn't."
+msgstr "XSL-T нұсқа атрибут мәнінің түрі %1 болуы тиіс, бірақ %2 ондай емес."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:630
+msgid "Running an XSL-T 1.0 stylesheet with a 2.0 processor."
+msgstr "XSL-T 1.0 стиль кестесі 2.0 процессормен орындалуда."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:738
+#, qt-format
+msgid "Unknown XSL-T attribute %1."
+msgstr "Беймәлім XSL-T атрибуты: %1."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:761
+#, qt-format
+msgid "Attribute %1 and %2 are mutually exclusive."
+msgstr "%1 және %2 атрибуттары бірге сиыспайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:927
+#, qt-format
+msgid "In a simplified stylesheet module, attribute %1 must be present."
+msgstr "Жеңілдетілген стиль модулінде %1 атрибуты болу міндет."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:999
+#, qt-format
+msgid "If element %1 has no attribute %2, it cannot have attribute %3 or %4."
+msgstr ""
+"Егерде %1 элементінде %2 атрибуты болмаса, онда %3 не %4 атибуттары да "
+"болмау керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1008
+#, qt-format
+msgid "Element %1 must have at least one of the attributes %2 or %3."
+msgstr "%1 элементінде %2 не %3 атрибуттарының кемінде біреуі болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1036
+#, qt-format
+msgid "At least one mode must be specified in the %1-attribute on element %2."
+msgstr "%2 элементінің %1-атрибутінде кемінде бір режімді келтіру керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1159
+#, qt-format
+msgid "Element %1 must come last."
+msgstr "%1 элементі соңғы болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1183
+#, qt-format
+msgid "At least one %1-element must occur before %2."
+msgstr "%2 алдында кемінде бір %1 элементі болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1190
+#, qt-format
+msgid "Only one %1-element can appear."
+msgstr "Тек қана бір %1 элементі болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1221
+#, qt-format
+msgid "At least one %1-element must occur inside %2."
+msgstr "%2 ішінде кемінде бір %1 элементі болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1279
+#, qt-format
+msgid ""
+"When attribute %1 is present on %2, a sequence constructor cannot be used."
+msgstr "%2 дегенде %1 атрибуты болса, тізбек конструкторын қолдануға болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1292
+#, qt-format
+msgid "Element %1 must have either a %2-attribute or a sequence constructor."
+msgstr "%1 элементінде %2 атрибуты немесе тізбек конструкторы болу тиіс."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1417
+#, qt-format
+msgid ""
+"When a parameter is required, a default value cannot be supplied through a "
+"%1-attribute or a sequence constructor."
+msgstr ""
+"Параметр талап етілгенде, әдетті мән %1 атрибуты немесе тізбек конструкторы "
+"арқылы келтірілмейді."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:1687
+#, qt-format
+msgid "Element %1 cannot have children."
+msgstr "%1 элементінде еншілеісі болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2121
+#, qt-format
+msgid "Element %1 cannot have a sequence constructor."
+msgstr "%1 элементінде тізбек конструкторы болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2207
+#: xmlpatterns/parser/qxslttokenizer.cpp:2216
+#, qt-format
+msgid "The attribute %1 cannot appear on %2, when it is a child of %3."
+msgstr "%2 деген %3 дегеннің еншілесі болғанда онда %1 атрибуты бола алмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2231
+msgid "A parameter in a function cannot be declared to be a tunnel."
+msgstr "Фнкцияның параметрін туннель деп мәлімдеуге болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2380
+#, qt-format
+msgid "This processor is not Schema-aware and therefore %1 cannot be used."
+msgstr ""
+"Бұл процессордың Schema-aware функциясыз. сондықтан %1 дегенді пайдалануға "
+"болмайды."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2437
+#, qt-format
+msgid ""
+"Top level stylesheet elements must be in a non-null namespace, which %1 "
+"isn't."
+msgstr ""
+"Жоғарғы денгейлі стиль кестесінің элементі нөл емес атау кеңістігінде болу "
+"керек, бірақ %1 онда жоқ. "
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2485
+#, qt-format
+msgid ""
+"The value for attribute %1 on element %2 must either be %3 or %4, not %5."
+msgstr ""
+"%2 элементінің %1 атрибутының мәні %3 не %4 болуы тиіс, %5 болмау керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2505
+#, qt-format
+msgid "Attribute %1 cannot have the value %2."
+msgstr "%1 атрибутының мәні %2 болмау тиіс."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2563
+#, qt-format
+msgid "The attribute %1 can only appear on the first %2 element."
+msgstr "%1 атрибуты тек бірінші %2 элементінде болу керек."
+
+#: xmlpatterns/parser/qxslttokenizer.cpp:2662
+#, qt-format
+msgid "At least one %1 element must appear as child of %2."
+msgstr "Кеміде бір %1 элемент %2 дегеннің енішлесі болу керек."
 
 #: xmlpatterns/schema/qxsdschemaresolver.cpp:354
 #, qt-format
