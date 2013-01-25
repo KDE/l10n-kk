@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-01-22 17:40+0100\n"
-"PO-Revision-Date: 2013-01-25 05:00+0600\n"
+"PO-Revision-Date: 2013-01-25 06:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -7469,6 +7469,10 @@ msgid ""
 "that when the focuser moves TICKS steps, the difference in HFR is more than "
 "0.1 pixels. Lower the value when you are close to optimal focus."
 msgstr ""
+"Абсолютті тоғыс қашықтығының қадамы. Қадам өлшемінің белгілері, тоғысы "
+"олар бойынша жылжығанда, жарты лек радиусы (HFR) кемінде 0,1 пикселге "
+"өзгеріп тұратындай болу керек. Оптималды тоғысқа жақындағанда бұл "
+"қадамды қысқартуға болады."
 
 #. i18n: ectx: label, entry (FocusTolerance), group (Ekos)
 #: kstars.kcfg:1204
@@ -7484,6 +7488,10 @@ msgid ""
 "Adjustment of this value is necessary to prevent the focusing algorithm from "
 "oscillating back and forth."
 msgstr ""
+"Ауытқу шегі жеткен тоғыс қашықтығы және тоғыстау кезінде табылған "
+"минималды тоғыс қашықтық арасындағы пайыздық айырмашылығы. "
+"Бұл мән тоғыстау алгоритмі тоғысты іздеп узақ уақыт әрі-бері "
+"жүре бермеуге қажетті."
 
 #. i18n: ectx: label, entry (FocusExposure), group (Ekos)
 #: kstars.kcfg:1209
@@ -7497,6 +7505,9 @@ msgid ""
 "to avoid saturation of bright stars which adversely affects HFR measurement. "
 "Increase the value if no stars are detected."
 msgstr ""
+"Тоғыстау кезіндегі CCD экспозициясын келтіру. Төмен мәні жарық жұлдыздарды "
+"тым қанықтырып көрсетеді. Ол жарты лек радиусын (HFR) өлшеуге кедергі қылады. "
+"Жұлдыздар көрінбесе мәнін үлкейтіңіз."
 
 #. i18n: ectx: label, entry (remoteScopeName), group (Ekos)
 #: kstars.kcfg:1214
@@ -31309,6 +31320,8 @@ msgid ""
 "Unable to find INDI server. Please make sure the package that provides the "
 "'indiserver' binary is installed."
 msgstr ""
+"INDI сервері табылмады. Оңың 'indiserver' деген бинарлы файлын орнататын "
+"десте орнатылған ба, тексеріңіз."
 
 #: kstarsactions.cpp:436
 msgid "Catalogs"
@@ -31338,7 +31351,7 @@ msgstr "KStars::slotFind() - Диалог үшін жады жетпейді"
 #: tools/scriptbuilder.cpp:974 tools/scriptbuilder.cpp:1029
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
-msgstr ""
+msgstr "KStars скрипттері (*.kstars)"
 
 #: kstarsactions.cpp:597
 msgid ""
@@ -32262,54 +32275,53 @@ msgstr "Шебердің алдыңғы бетіне шегіну"
 #: libindi_strings.cpp:1
 msgctxt "string from libindi, used in the config dialog"
 msgid "100x"
-msgstr ""
+msgstr "100x"
 
 #: libindi_strings.cpp:2
 msgctxt "string from libindi, used in the config dialog"
 msgid "10x"
-msgstr ""
+msgstr "10x"
 
 #: libindi_strings.cpp:3
 msgctxt "string from libindi, used in the config dialog"
 msgid "1200x"
-msgstr ""
+msgstr "1200x"
 
 #: libindi_strings.cpp:4
 msgctxt "string from libindi, used in the config dialog"
 msgid "12x"
-msgstr ""
+msgstr "12x"
 
 #: libindi_strings.cpp:5
 msgctxt "string from libindi, used in the config dialog"
 msgid "600x"
-msgstr ""
+msgstr "600x"
 
 #: libindi_strings.cpp:6
 msgctxt "string from libindi, used in the config dialog"
 msgid "64x"
-msgstr ""
+msgstr "64x"
 
 #: libindi_strings.cpp:7
 msgctxt "string from libindi, used in the config dialog"
 msgid "900x"
-msgstr ""
+msgstr "900x"
 
 #: libindi_strings.cpp:8
 msgctxt "string from libindi, used in the config dialog"
 msgid ":CM#"
-msgstr ""
+msgstr ":CM#"
 
 #: libindi_strings.cpp:9
 msgctxt "string from libindi, used in the config dialog"
 msgid ":CMR#"
-msgstr ""
+msgstr ":CMR#"
 
 #: libindi_strings.cpp:10
-#, fuzzy
 #| msgid "UT offset:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "AP UTC Offset"
-msgstr "Уақыт белдігі:"
+msgstr "UTC-мен айырмашылығы (AP)"
 
 #: libindi_strings.cpp:11
 #| msgid "local time"
@@ -32383,186 +32395,174 @@ msgstr "Туралау"
 #: libindi_strings.cpp:23
 msgctxt "string from libindi, used in the config dialog"
 msgid "Alt  D:M:S"
-msgstr ""
+msgstr "Биік. Г:М:С"
 
 #: libindi_strings.cpp:24
 msgctxt "string from libindi, used in the config dialog"
 msgid "Alt/Dec Anti-backlash"
-msgstr ""
+msgstr "Биік./Еңс., люфт-қарсы"
 
 #: libindi_strings.cpp:25
 msgctxt "string from libindi, used in the config dialog"
 msgid "Alt/Dec PEC"
-msgstr ""
+msgstr "Биік./Еңс., мезг.қат.түз.(PEC)"
 
 #: libindi_strings.cpp:26
 msgctxt "string from libindi, used in the config dialog"
 msgid "AltAz"
-msgstr ""
+msgstr "БиікАзм"
 
 #: libindi_strings.cpp:27
 msgctxt "string from libindi, used in the config dialog"
 msgid "Anti Flicker"
-msgstr ""
+msgstr "Жарқыл-қарсы"
 
 #: libindi_strings.cpp:28
-#, fuzzy
 #| msgid "Aperture:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Aperture (mm)"
-msgstr "Апертурасы:"
+msgstr "Апертура,мм)"
 
 #: libindi_strings.cpp:29
 msgctxt "string from libindi, used in the config dialog"
 msgid "Arp"
-msgstr ""
+msgstr "Арп"
 
 #: libindi_strings.cpp:30
-#, fuzzy
 #| msgctxt "City in Alabama USA"
 #| msgid "Atmore"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Atmosphere"
-msgstr "Атмор"
+msgstr "Атмосфера"
 
 #: libindi_strings.cpp:31
-#, fuzzy
 #| msgid "Auto"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Auto"
 msgstr "Авто"
 
 #: libindi_strings.cpp:32
-#, fuzzy
 #| msgid "Remove Label"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Auxiliary"
-msgstr "Жазуын өшіру"
+msgstr "Жабдық"
 
 #: libindi_strings.cpp:33
 msgctxt "string from libindi, used in the config dialog"
 msgid "Az D:M:S"
-msgstr ""
+msgstr "Азм Г:М:С"
 
 #: libindi_strings.cpp:34
 msgctxt "string from libindi, used in the config dialog"
 msgid "Az/Ra Anti-backlash"
-msgstr ""
+msgstr "Азм/Тк, люфт-қарсы"
 
 #: libindi_strings.cpp:35
 msgctxt "string from libindi, used in the config dialog"
 msgid "Az/Ra PEC"
-msgstr ""
+msgstr "Азм/Тк, мезг.қат.түз.(PEC)"
 
 #: libindi_strings.cpp:36
-#, fuzzy
 #| msgctxt "City in New Zealand"
 #| msgid "Black Birch"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Back Light"
-msgstr "Блэк-Бёрч"
+msgstr "Артынан жарық"
 
 #: libindi_strings.cpp:37
-#, fuzzy
 #| msgid "Backends"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Backlash"
-msgstr "Тетіктер"
+msgstr "Люфт"
 
 #: libindi_strings.cpp:38
 msgctxt "string from libindi, used in the config dialog"
 msgid "Bias"
-msgstr ""
+msgstr "Ығысуы"
 
 #: libindi_strings.cpp:39
-#, fuzzy
 #| msgctxt "City in United Kingdom"
 #| msgid "Finningley"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Binning"
-msgstr "Финнингли"
+msgstr "Жинақтау"
 
 #: libindi_strings.cpp:40
 msgctxt "string from libindi, used in the config dialog"
 msgid "Bits per pixel"
-msgstr ""
+msgstr "Бит/пиксел"
 
 #: libindi_strings.cpp:41
-#, fuzzy
 #| msgctxt "City in West Virginia USA"
 #| msgid "Bluefield"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Blue"
-msgstr "Блуфилд"
+msgstr "Көк"
 
 #: libindi_strings.cpp:42
 msgctxt "string from libindi, used in the config dialog"
 msgid "Brightness"
-msgstr ""
+msgstr "Жарықтық"
 
 #: libindi_strings.cpp:43
-#, fuzzy
 #| msgid "CCD V"
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Bias"
-msgstr "CCD V"
+msgstr "CCD ығысуы"
 
 #: libindi_strings.cpp:44
-#, fuzzy
 #| msgid "Information"
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Information"
-msgstr "Мәлімет"
+msgstr "CCD ақпараты"
 
 #: libindi_strings.cpp:45
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Maximum ADU"
-msgstr ""
+msgstr "Макс. аналог./цифр. CCD"
 
 #: libindi_strings.cpp:46
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Noise"
-msgstr ""
+msgstr "CCD шуылы"
 
 #: libindi_strings.cpp:47
-#, fuzzy
 #| msgid "Calculator"
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Simulator"
-msgstr "Калькулятор"
+msgstr "CCD иммитаторы"
 
 #: libindi_strings.cpp:48
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD X Pixel Size"
-msgstr ""
+msgstr "CCD пиксел X-өлшемі"
 
 #: libindi_strings.cpp:49
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD X resolution"
-msgstr ""
+msgstr "CCD X-айырымдылығы"
 
 #: libindi_strings.cpp:50
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Y Pixel Size"
-msgstr ""
+msgstr "CCD пиксел Y-өлшемі"
 
 #: libindi_strings.cpp:51
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD Y resolution"
-msgstr ""
+msgstr "CCD Y-айырымдылығы"
 
 #: libindi_strings.cpp:52
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCD1"
-msgstr ""
+msgstr "CCD1"
 
 #: libindi_strings.cpp:53
 msgctxt "string from libindi, used in the config dialog"
 msgid "CCDs"
-msgstr ""
+msgstr "CCD-лер"
 
 #: libindi_strings.cpp:54
-#, fuzzy
 #| msgctxt "City in Idaho USA"
 #| msgid "Caldwell"
 msgctxt "string from libindi, used in the config dialog"
@@ -32570,193 +32570,172 @@ msgid "Caldwell"
 msgstr "Колдуэлл"
 
 #: libindi_strings.cpp:55
-#, fuzzy
 #| msgid "Camera"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Camera Model"
-msgstr "Камера"
+msgstr "Камераның үлгісі"
 
 #: libindi_strings.cpp:56
 msgctxt "string from libindi, used in the config dialog"
 msgid "Celsius"
-msgstr ""
+msgstr "Цельсий градусы"
 
 #: libindi_strings.cpp:57
-#, fuzzy
 #| msgid "Center"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Centering"
-msgstr "Ортасы"
+msgstr "Ортаға келтіру"
 
 #: libindi_strings.cpp:58
-#, fuzzy
 #| msgid "Color:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Color"
-msgstr "Түсі:"
+msgstr "Түсі"
 
 #: libindi_strings.cpp:59
 msgctxt "string from libindi, used in the config dialog"
 msgid "Comet DEC motion arcmin/day"
-msgstr ""
+msgstr "Кометаның ЕҢС қимылы (бұрыш.мин/күн)"
 
 #: libindi_strings.cpp:60
 msgctxt "string from libindi, used in the config dialog"
 msgid "Comet RA motion arcmin/day"
-msgstr ""
+msgstr "Кометаның ТК қимылы (бұрыш.мин/күн)"
 
 #: libindi_strings.cpp:61
 msgctxt "string from libindi, used in the config dialog"
 msgid "Comet tracking parameters"
-msgstr ""
+msgstr "Кометаны қадағалау параметрлері"
 
 #: libindi_strings.cpp:62
-#, fuzzy
 #| msgid "Comet"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Comet"
 msgstr "Комета"
 
 #: libindi_strings.cpp:63
-#, fuzzy
 #| msgid "Conjunction"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Communication"
-msgstr "Тоғысу"
+msgstr "Байланыс"
 
 #: libindi_strings.cpp:64
-#, fuzzy
 #| msgid "Compute"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Compress"
-msgstr "Есептеу"
+msgstr "Сығу"
 
 #: libindi_strings.cpp:65
-#, fuzzy
 #| msgid "session_"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Compression"
-msgstr "сеанс_"
+msgstr "Сығылымы"
 
 #: libindi_strings.cpp:66
-#, fuzzy
 #| msgid "Legend Configuration"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Configuration"
-msgstr "Түсіндірме баптауы"
+msgstr "Баптауы"
 
 #: libindi_strings.cpp:67
-#, fuzzy
 #| msgid "Connect"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Connect"
 msgstr "Қосылу"
 
 #: libindi_strings.cpp:68
-#, fuzzy
 #| msgid "Connection"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Connection"
-msgstr "Қосылым"
+msgstr "Байланыс"
 
 #: libindi_strings.cpp:69
-#, fuzzy
 #| msgid "Contact"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Contrast"
-msgstr "Контакты"
+msgstr "Контрасттық"
 
 #: libindi_strings.cpp:70
-#, fuzzy
 #| msgctxt "City in Quebec Canada"
 #| msgid "Montreal"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Control"
-msgstr "Монреаль"
+msgstr "Басқару"
 
 #: libindi_strings.cpp:71
-#, fuzzy
 #| msgid "Count:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Count"
-msgstr "Саны:"
+msgstr "Саны"
 
 #: libindi_strings.cpp:72
 msgctxt "string from libindi, used in the config dialog"
 msgid "DEC (dd:mm:ss)"
-msgstr ""
+msgstr "ЕҢС (град:минm:сек)"
 
 #: libindi_strings.cpp:73
 msgctxt "string from libindi, used in the config dialog"
 msgid "Dark"
-msgstr ""
+msgstr "Қараңғы"
 
 #: libindi_strings.cpp:74
-#, fuzzy
 #| msgid "Date:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Date"
-msgstr "Тәулік:"
+msgstr "Тәулік"
 
 #: libindi_strings.cpp:75
-#, fuzzy
 #| msgid "Date/Time:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Date/Time"
 msgstr "Тәулік/Уақыт:"
 
 #: libindi_strings.cpp:76
-#, fuzzy
 #| msgid "Date && Location"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Date/Time/Location"
-msgstr "Тәулік && жер"
+msgstr "Тәулік/уақыт/орын"
 
 #: libindi_strings.cpp:77
 msgctxt "string from libindi, used in the config dialog"
 msgid "Debug"
-msgstr ""
+msgstr "Жөндеу"
 
 #: libindi_strings.cpp:78
-#, fuzzy
 #| msgid "arcmin"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Dec (arcmin)"
-msgstr "бұрыш.мин."
+msgstr "Еңс. (бұрыш.мин.)"
 
 #: libindi_strings.cpp:79
 msgctxt "string from libindi, used in the config dialog"
 msgid "Dec (dd:mm:ss)"
-msgstr ""
+msgstr "Еңс (град:минm:сек)"
 
 #: libindi_strings.cpp:80
 msgctxt "string from libindi, used in the config dialog"
 msgid "Dec D:M:S"
-msgstr ""
+msgstr "Еңс Г:М:С"
 
 #: libindi_strings.cpp:81
-#, fuzzy
 #| msgid "Declination"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Declination axis"
-msgstr "Еңістік"
+msgstr "Еңістік білігі"
 
 #: libindi_strings.cpp:82
-#, fuzzy
 #| msgid "Deep-Sky Catalogs"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Deep Sky Catalogs"
 msgstr "Алыс ғарыш каталогтары"
 
 #: libindi_strings.cpp:83
-#, fuzzy
 #| msgid "Default"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Default"
 msgstr "Әдетті"
 
 #: libindi_strings.cpp:84
-#, fuzzy
 #| msgid "Device"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Device"
@@ -32765,87 +32744,80 @@ msgstr "Құрылғы"
 #: libindi_strings.cpp:85
 msgctxt "string from libindi, used in the config dialog"
 msgid "Diff. Eq."
-msgstr ""
+msgstr "Диф.экв."
 
 #: libindi_strings.cpp:86
-#, fuzzy
 #| msgid "Projection"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Direction"
-msgstr "Проекция"
+msgstr "Бағыт"
 
 #: libindi_strings.cpp:87
-#, fuzzy
 #| msgid "Details tables"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Disable"
-msgstr "Кестелердің деректері"
+msgstr "Бұғаттау"
 
 #: libindi_strings.cpp:88
-#, fuzzy
 #| msgid "Disconnect"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Disconnect"
 msgstr "Ажырату"
 
 #: libindi_strings.cpp:89
-#, fuzzy
 #| msgid "Time step control"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Dome control"
-msgstr "Уақыт жүрісін басқару"
+msgstr "Күмбезді басқару"
 
 #: libindi_strings.cpp:90
-#, fuzzy
 #| msgid "Duration:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Duration (s)"
-msgstr "Ұзақтық:"
+msgstr "Ұзақтық (сек)"
 
 #: libindi_strings.cpp:91
 msgctxt "string from libindi, used in the config dialog"
 msgid "Duty cycle"
-msgstr ""
+msgstr "Жұмыс циклі"
 
 #: libindi_strings.cpp:92
 msgctxt "string from libindi, used in the config dialog"
 msgid "EQ Coord"
-msgstr ""
+msgstr "Экв.коорд."
 
 #: libindi_strings.cpp:93
 msgctxt "string from libindi, used in the config dialog"
 msgid "EQ PEC"
-msgstr ""
+msgstr "Экв. Мезг.қат.түз.(PEC)"
 
 #: libindi_strings.cpp:94
 msgctxt "string from libindi, used in the config dialog"
 msgid "East (msec)"
-msgstr ""
+msgstr "Шығыс (мсек)"
 
 #: libindi_strings.cpp:95
 msgctxt "string from libindi, used in the config dialog"
 msgid "East (sec)"
-msgstr ""
+msgstr "Шығыс (сек)"
 
 #: libindi_strings.cpp:96
-#, fuzzy
 #| msgid "&East"
 msgctxt "string from libindi, used in the config dialog"
 msgid "East"
-msgstr "&Шығыс"
+msgstr "Шығыс"
 
 #: libindi_strings.cpp:97
-#, fuzzy
 #| msgctxt "City in Washington USA"
 #| msgid "East Wenatchee"
 msgctxt "string from libindi, used in the config dialog"
 msgid "East/West"
-msgstr "Ист-Венатчи"
+msgstr "Шығыс/Батыс"
 
 #: libindi_strings.cpp:98
 msgctxt "string from libindi, used in the config dialog"
 msgid "Enable"
-msgstr ""
+msgstr "Рұқсат ету"
 
 #: libindi_strings.cpp:99
 #| msgid "Coordinates"
@@ -32880,7 +32852,7 @@ msgstr "Экспозиция"
 #: libindi_strings.cpp:104
 msgctxt "string from libindi, used in the config dialog"
 msgid "Extended GPS Features"
-msgstr ""
+msgstr "Кеңейтілген GPS мүкіндіктері"
 
 #: libindi_strings.cpp:105
 msgctxt "string from libindi, used in the config dialog"
@@ -32888,45 +32860,42 @@ msgid "Extrema"
 msgstr "Экстремум"
 
 #: libindi_strings.cpp:106
-#, fuzzy
 #| msgid "arcseconds"
 msgctxt "string from libindi, used in the config dialog"
 msgid "FWHM (arcseconds)"
-msgstr "бұрыш.сек."
+msgstr "Жарты ені (бұрыш.сек.)"
 
 #: libindi_strings.cpp:107
 msgctxt "string from libindi, used in the config dialog"
 msgid "FWHM"
-msgstr ""
+msgstr "Жарты ені"
 
 #: libindi_strings.cpp:108
-#, fuzzy
 #| msgid "Factor:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Factory"
-msgstr "Еселеуі:"
+msgstr "Фабрикалық"
 
 #: libindi_strings.cpp:109
-#, fuzzy
 #| msgid "and"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Fan"
-msgstr "және"
+msgstr "Желдеткіш"
 
 #: libindi_strings.cpp:110
 msgctxt "string from libindi, used in the config dialog"
 msgid "Fast"
-msgstr ""
+msgstr "Жылдам"
 
 #: libindi_strings.cpp:111
 msgctxt "string from libindi, used in the config dialog"
 msgid "Feed"
-msgstr ""
+msgstr "Қамтамасыз ету"
 
 #: libindi_strings.cpp:112
 msgctxt "string from libindi, used in the config dialog"
 msgid "Feedback"
-msgstr ""
+msgstr "Кері байланыс"
 
 #: libindi_strings.cpp:113
 msgctxt "string from libindi, used in the config dialog"
@@ -32934,94 +32903,84 @@ msgid "Field De-rotator"
 msgstr ""
 
 #: libindi_strings.cpp:114
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter #1"
-msgstr "Сүзгі"
+msgstr "#1-сүзгі"
 
 #: libindi_strings.cpp:115
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter #2"
-msgstr "Сүзгі"
+msgstr "#2-сүзгі"
 
 #: libindi_strings.cpp:116
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter #3"
-msgstr "Сүзгі"
+msgstr "#3-сүзгі"
 
 #: libindi_strings.cpp:117
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter #4"
-msgstr "Сүзгі"
+msgstr "#4-сүзгі"
 
 #: libindi_strings.cpp:118
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter #5"
-msgstr "Сүзгі"
+msgstr "#5-сүзгі"
 
 #: libindi_strings.cpp:119
-#, fuzzy
 #| msgid "Filter:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter Count"
-msgstr "Сүзгі:"
+msgstr "Сүзгі саны"
 
 #: libindi_strings.cpp:120
-#, fuzzy
 #| msgid "Filter:"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter Simulator"
-msgstr "Сүзгі:"
+msgstr "Сүзгі иммитаторы"
 
 #: libindi_strings.cpp:121
-#, fuzzy
 #| msgid "Filter Wheel"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter Wheel"
-msgstr "Жарық сүзгілер кезегі"
+msgstr "Сүзгілер кезегі"
 
 #: libindi_strings.cpp:122
-#, fuzzy
 #| msgid "Filter"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Filter"
 msgstr "Сүзгі"
 
 #: libindi_strings.cpp:123
-#, fuzzy
 #| msgid "Find City"
 msgctxt "string from libindi, used in the config dialog"
 msgid "Find"
-msgstr "Қаланы табу"
+msgstr "Табу"
 
 #: libindi_strings.cpp:124
 msgctxt "string from libindi, used in the config dialog"
 msgid "Firmware Info"
-msgstr ""
+msgstr "Микропрограмма ақпары"
 
 #: libindi_strings.cpp:125
 msgctxt "string from libindi, used in the config dialog"
 msgid "Firmware data"
-msgstr ""
+msgstr "Микропрограмма дерегі"
 
 #: libindi_strings.cpp:126
 msgctxt "string from libindi, used in the config dialog"
 msgid "Firmware version"
-msgstr ""
+msgstr "Микропрограмма нұсқасы"
 
 #: libindi_strings.cpp:127
 msgctxt "string from libindi, used in the config dialog"
 msgid "Firmware"
-msgstr ""
+msgstr "Микропрограммасы"
 
 #: libindi_strings.cpp:128
 msgctxt "string from libindi, used in the config dialog"
