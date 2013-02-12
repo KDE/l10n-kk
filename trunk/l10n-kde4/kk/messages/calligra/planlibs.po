@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 02:40+0100\n"
+"POT-Creation-Date: 2012-12-21 01:54+0100\n"
 "PO-Revision-Date: 2012-12-28 05:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -185,6 +185,7 @@ msgstr "Көтермейтін жұмыс көлемі"
 msgid "Scheduling error"
 msgstr "Жоспарлау қатесі"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:139 kernel/kptnode.cpp:1631 kernel/kpttask.cpp:3712
 #: models/kptnodeitemmodel.cpp:401 models/kptnodeitemmodel.cpp:417
 #: models/kptnodeitemmodel.cpp:427 models/kptnodeitemmodel.cpp:625
@@ -197,12 +198,14 @@ msgstr "Жоспарлау қатесі"
 #: models/kpttreecombobox.cpp:124 ui/kptpertresult.cpp:139
 #: ui/kptpertresult.cpp:494 ui/kptresourcedialog.cpp:304
 #: ui/kptresourcedialog.cpp:330 ui/kpttaskcostpanel.cpp:50
-#: ui/kpttaskgeneralpanel.cpp:80 ui/reports/reportview.cpp:1676
+#: ui/kpttaskgeneralpanel.cpp:80 ui/kpttaskgeneralpanelbase.ui:344
+#: ui/reports/reportview.cpp:1676
 msgid "None"
 msgstr "Жоқ"
 
+#. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:140 models/kptpertcpmmodel.cpp:423
-#: models/kptresourceappointmentsmodel.cpp:1220
+#: models/kptresourceappointmentsmodel.cpp:1220 ui/kptscheduleeditor.ui:19
 msgid "Project"
 msgstr "Жоба"
 
@@ -210,7 +213,8 @@ msgstr "Жоба"
 msgid "Sub-Project"
 msgstr "Жоба саласы"
 
-#: kernel/kptnode.cpp:142
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: kernel/kptnode.cpp:142 ui/kptscheduleeditor.ui:167
 msgid "Task"
 msgstr "Тапсырма"
 
@@ -234,11 +238,13 @@ msgstr "Барынша тез"
 msgid "As Late As Possible"
 msgstr "Барынша кеш"
 
-#: kernel/kptnode.cpp:713
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:713 ui/kpttaskgeneralpanelbase.ui:192
 msgid "Must Start On"
 msgstr "Бастайтын кезі"
 
-#: kernel/kptnode.cpp:714
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:714 ui/kpttaskgeneralpanelbase.ui:197
 msgid "Must Finish On"
 msgstr "Аяқтайтын кезі"
 
@@ -250,23 +256,30 @@ msgstr "Бастау мерзімінің басы"
 msgid "Finish Not Later"
 msgstr "Аяқтау мерзімінің соңы"
 
-#: kernel/kptnode.cpp:717
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:717 ui/kpttaskgeneralpanelbase.ui:212
 msgid "Fixed Interval"
 msgstr "Белгілі уақыт аралығы"
 
-#: kernel/kptnode.cpp:1598
+#. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1598 ui/kptperformancestatusviewsettingspanel.ui:142
+#: ui/kpttaskgeneralpanelbase.ui:281
 msgid "Effort"
 msgstr "Жұмыс көлемі"
 
-#: kernel/kptnode.cpp:1599
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1599 ui/kpttaskgeneralpanelbase.ui:286
 msgid "Duration"
 msgstr "Жұмсалған уақыт"
 
-#: kernel/kptnode.cpp:1632
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1632 ui/kpttaskgeneralpanelbase.ui:349
 msgid "Low"
 msgstr "Төмен"
 
-#: kernel/kptnode.cpp:1633
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1633 ui/kpttaskgeneralpanelbase.ui:354
 msgid "High"
 msgstr "Жоғары"
 
@@ -394,23 +407,30 @@ msgstr "Есепке кеткені: %1"
 msgid "Plan"
 msgstr "Жоспар"
 
-#: kernel/kptrelation.cpp:87
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishStart)
+#: kernel/kptrelation.cpp:87 ui/relationpanel.ui:114
 msgid "Finish-Start"
 msgstr "Аяқтау-Бастау"
 
-#: kernel/kptrelation.cpp:88
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishFinish)
+#: kernel/kptrelation.cpp:88 ui/relationpanel.ui:121
 msgid "Finish-Finish"
 msgstr "Аяқтау-Аяқтау"
 
-#: kernel/kptrelation.cpp:89
+#. i18n: ectx: property (text), widget (QRadioButton, bStartStart)
+#: kernel/kptrelation.cpp:89 ui/relationpanel.ui:128
 msgid "Start-Start"
 msgstr "Бастау-Бастау"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:82
+#: ui/resourcedialogbase.ui:169
 msgid "Work"
 msgstr "Жұмыс"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: kernel/kptresource.cpp:125 ui/kptresourceassignmentview.cpp:86
+#: ui/resourcedialogbase.ui:174
 msgid "Material"
 msgstr "Материал"
 
@@ -674,13 +694,14 @@ msgctxt "1=account name"
 msgid "%1 (Default account)"
 msgstr "%1 (Әдетті есебі)"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:129 models/kptaccountsmodel.cpp:1031
 #: models/kptdocumentmodel.cpp:200 models/kptresourceallocationmodel.cpp:335
 #: models/kptresourceappointmentsmodel.cpp:907
 #: models/kptresourceappointmentsmodel.cpp:922
 #: models/kptresourceappointmentsmodel.cpp:1483
 #: models/kptresourcemodel.cpp:448 models/kptschedulemodel.cpp:892
-#: models/kptschedulemodel.cpp:1172
+#: models/kptschedulemodel.cpp:1172 ui/kptresourceassignmentview.ui:27
 msgid "Name"
 msgstr "Атауы"
 
@@ -1455,10 +1476,11 @@ msgstr "Құжатты кетіру"
 msgid "Url"
 msgstr "Url"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:201 models/kptrelationmodel.cpp:149
 #: models/kptresourceallocationmodel.cpp:336
 #: models/kptresourceappointmentsmodel.cpp:1484
-#: models/kptresourcemodel.cpp:449
+#: models/kptresourcemodel.cpp:449 ui/kptresourceassignmentview.ui:32
 msgid "Type"
 msgstr "Түрі"
 
@@ -1827,8 +1849,10 @@ msgstr "Кеш аяқталған"
 msgid "Finished early"
 msgstr "Ерте аяқталған"
 
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
 #: models/kptnodeitemmodel.cpp:1315 models/kpttaskstatusmodel.cpp:60
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: ui/kptmilestoneprogresspanelbase.ui:23 ui/kptresourceassignmentview.cpp:257
+#: ui/kptresourceassignmentview.cpp:335
 msgid "Finished"
 msgstr "Аяқталған"
 
@@ -1836,7 +1860,9 @@ msgstr "Аяқталған"
 msgid "Running late"
 msgstr "Кешігу"
 
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
 #: models/kptnodeitemmodel.cpp:1321 models/kpttaskstatusmodel.cpp:56
+#: ui/kpttaskcostpanelbase.ui:24
 msgid "Running"
 msgstr "Орындалып жатыр"
 
@@ -3404,6 +3430,92 @@ msgstr "Жалпы"
 msgid "View Settings"
 msgstr "Көрініс параметрлері"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptaccountsviewconfigurepanelbase.ui:26
+msgid "Show:"
+msgstr "Көрсету:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ui/kptaccountsviewconfigurepanelbase.ui:33
+msgid "Periodicity:"
+msgstr "Мезгілдігі:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:44
+msgid "Day"
+msgstr "Күн"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:49
+msgid "Week"
+msgstr "Апта"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:54
+msgid "Month"
+msgstr "Ай"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cumulative)
+#: ui/kptaccountsviewconfigurepanelbase.ui:62
+msgid "Cumulative"
+msgstr "Интегралды"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:70
+msgid "Actual cost"
+msgstr "Шын бағасы"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:75
+msgid "Planned cost"
+msgstr "Жоспарлаған бағасы"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:80
+msgid "Actual and planned"
+msgstr "Шын және жоспарлаған"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:85
+msgid "Deviation"
+msgstr "Ауытқы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:101
+msgid "Start date"
+msgstr "Бастау кезі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectstartBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:107
+msgid "Project start"
+msgstr "Жобаның басы"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_startdateBtn)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_enddateBtn)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerDate)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerDate)
+#: ui/kptaccountsviewconfigurepanelbase.ui:114
+#: ui/kptaccountsviewconfigurepanelbase.ui:144
+#: ui/kptprintingheaderfooter.ui:46 ui/kptprintingheaderfooter.ui:86
+#: ui/kptusedefforteditor.cpp:387
+msgid "Date"
+msgstr "Күні"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/kptaccountsviewconfigurepanelbase.ui:131
+msgid "End date"
+msgstr "Аяқтау кезі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_currentdateBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:137
+msgid "Current date"
+msgstr "Бүгінгі күн"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectendBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:158
+msgid "Project end"
+msgstr "Жобаның аяқтауы"
+
 #: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:639
 msgid "Work..."
 msgstr "Жұмыс..."
@@ -3465,6 +3577,48 @@ msgstr "%1: жұмыс емес қылу"
 #, kde-format
 msgid "Set %1 to Undefined"
 msgstr "%1 дегенді анықталмаған қылу"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: ui/kptcpmwidget.ui:36 ui/kptpertresult.ui:45
+msgid "Project Schedule:"
+msgstr "Жоба жоспары:"
+
+#. i18n: ectx: property (text), widget (QLabel, scheduleName)
+#. i18n: ectx: property (text), widget (QLabel, totalFloat)
+#. i18n: ectx: property (text), widget (QLabel, labelResultCriticalPath)
+#. i18n: ectx: property (text), widget (QLabel, labelResultProjectFloat)
+#. i18n: ectx: property (text), widget (QToolButton, btnAdd)
+#. i18n: ectx: property (text), widget (QToolButton, btnRemove)
+#. i18n: ectx: property (text), widget (QToolButton, btnMoveUp)
+#. i18n: ectx: property (text), widget (QToolButton, btnMoveDown)
+#: ui/kptcpmwidget.ui:58 ui/kptpertresult.ui:70 ui/kptpertresult.ui:133
+#: ui/kptscheduleeditor.ui:84 ui/kptscheduleeditor.ui:117
+#: ui/reports/reportgroupsectionswidget.ui:25
+#: ui/reports/reportgroupsectionswidget.ui:32
+#: ui/reports/reportgroupsectionswidget.ui:39
+#: ui/reports/reportgroupsectionswidget.ui:46
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptcpmwidget.ui:92
+msgid "Probability of finishing before"
+msgstr "Келесіге дейін аяқтау ықтималдығы"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptcpmwidget.ui:112
+msgid "is"
+msgstr ":"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, probability)
+#. i18n: ectx: property (suffix), widget (QSpinBox, optimisticValue)
+#. i18n: ectx: property (suffix), widget (QSpinBox, pessimisticValue)
+#. i18n: ectx: property (suffix), widget (QSpinBox, units)
+#: ui/kptcpmwidget.ui:119 ui/kpttaskgeneralpanelbase.ui:375
+#: ui/kpttaskgeneralpanelbase.ui:404 ui/resourcedialogbase.ui:233
+#, no-c-format
+msgid "%"
+msgstr "%"
 
 #: ui/kptdependencyeditor.cpp:2309 ui/kpttaskeditor.cpp:698
 #: ui/kpttaskeditor.cpp:703
@@ -3560,6 +3714,89 @@ msgctxt "(qtundo-format)"
 msgid "Add document"
 msgstr "Құжатты қосу"
 
+#. i18n: ectx: property (text), widget (QPushButton, pbAdd)
+#: ui/kptdocumentspanel.ui:31
+msgid "Add..."
+msgstr "Қосу..."
+
+#. i18n: ectx: property (text), widget (QPushButton, pbChange)
+#: ui/kptdocumentspanel.ui:38
+msgid "Change..."
+msgstr "Өзгерту..."
+
+#. i18n: ectx: property (text), widget (QPushButton, pbRemove)
+#. i18n: ectx: property (text), widget (QPushButton, bRemoveInterval)
+#. i18n: ectx: property (text), widget (QPushButton, removeBtn)
+#: ui/kptdocumentspanel.ui:45 ui/kptintervaleditbase.ui:77
+#: ui/kptwbsdefinitionpanelbase.ui:180
+msgid "Remove"
+msgstr "Өшіру"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbView)
+#: ui/kptdocumentspanel.ui:52
+msgid "Open"
+msgstr "Ашу"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptganttchartdisplayoptions.ui:23
+msgid "Additional text information"
+msgstr "Қосымша мәтін мәліметі"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showTaskName)
+#: ui/kptganttchartdisplayoptions.ui:29
+msgid "Task name"
+msgstr "Тапсырма атауы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showResourceNames)
+#: ui/kptganttchartdisplayoptions.ui:36
+msgid "Resource names"
+msgstr "Атқарушының атаулары"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/kptganttchartdisplayoptions.ui:46
+msgid "Additional graphics information"
+msgstr "Қосымша графикалық мәлімет"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showDependencies)
+#: ui/kptganttchartdisplayoptions.ui:55
+msgid "Task dependencies"
+msgstr "Тапсырманың тәуелдіктері"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCompletion)
+#: ui/kptganttchartdisplayoptions.ui:62
+msgid "Task completion"
+msgstr "Тапсырманың орындалуы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showTimeConstraint)
+#: ui/kptganttchartdisplayoptions.ui:69
+msgid "Time constraints"
+msgstr "Уақыт шектеулері"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
+#: ui/kptganttchartdisplayoptions.ui:89
+msgid "Scheduling errors"
+msgstr "Жоспарлау қателері"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showPositiveFloat)
+#: ui/kptganttchartdisplayoptions.ui:96
+msgid "Positive float"
+msgstr "Артық уақыты"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showNegativeFloat)
+#: ui/kptganttchartdisplayoptions.ui:103
+msgid "Negative float"
+msgstr "Жетпейтін уақыты"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
+#: ui/kptganttchartdisplayoptions.ui:110
+msgid "Critical path"
+msgstr "Шешуші тізбек"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
+#: ui/kptganttchartdisplayoptions.ui:117
+msgid "Critical tasks"
+msgstr "Шешуші тапсырмалары"
+
 #: ui/kptganttitemdelegate.cpp:77
 #, kde-format
 msgctxt "@info:tooltip"
@@ -3605,6 +3842,21 @@ msgctxt "@info:tooltip"
 msgid "Name: %1<nl/>Planned: %2 - %3"
 msgstr "Атауы: %1<nl/>Жоспарланған: %2 - %3"
 
+#. i18n: ectx: property (text), widget (QCheckBox, ui_printRowLabels)
+#: ui/kptganttprintingoptions.ui:16
+msgid "Print row labels"
+msgstr "Жол жарлықтары басып шығарылсын"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_singlePage)
+#: ui/kptganttprintingoptions.ui:35
+msgid "Print chart on a single page"
+msgstr "Диаграмма бір парақта басылсын"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_multiplePages)
+#: ui/kptganttprintingoptions.ui:45
+msgid "Divide chart on multiple pages"
+msgstr "Диаграмма бірнеше параққа бөлінсін"
+
 #: ui/kptganttview.cpp:135 ui/kpttaskstatusview.cpp:1363
 #: ui/kpttaskstatusview.cpp:1378
 msgid "Chart"
@@ -3641,6 +3893,52 @@ msgstr "Жұмыс уақытын өзгерту"
 msgctxt "(qtundo-format)"
 msgid "Modify Work Interval"
 msgstr "Жұмыс уақытын өзгерту"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, intervalList)
+#: ui/kptintervaleditbase.ui:21
+msgid "1"
+msgstr "1"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptintervaleditbase.ui:31
+msgctxt "Start time"
+msgid "From:"
+msgstr "Бастауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kptintervaleditbase.ui:47
+msgid "Length"
+msgstr "Ұзындығы"
+
+#. i18n: ectx: property (text), widget (QPushButton, bAddInterval)
+#: ui/kptintervaleditbase.ui:70
+msgid "Add"
+msgstr "Қосу"
+
+#. i18n: ectx: property (text), widget (QPushButton, bClear)
+#: ui/kptintervaleditbase.ui:97
+msgid "Clear"
+msgstr "Тазалау"
+
+#. i18n: ectx: property (text), widget (QCheckBox, stretchLastSection)
+#: ui/kptitemviewsettings.ui:28
+msgid "Stretch last section"
+msgstr "Соңғы бөлімін созу"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptitemviewsettings.ui:35
+msgid "Select columns to be shown:"
+msgstr "Көрсететін бағандарды таңдаңыз:"
+
+#. i18n: ectx: property (availableLabel), widget (KActionSelector, selector)
+#: ui/kptitemviewsettings.ui:56
+msgid "&Hidden columns:"
+msgstr "&Жасырылған бағандары:"
+
+#. i18n: ectx: property (selectedLabel), widget (KActionSelector, selector)
+#: ui/kptitemviewsettings.ui:59
+msgid "&Visible columns:"
+msgstr "&Көрінетін бағандары:"
 
 #: ui/kptitemviewsettup.cpp:151
 msgid "Tree View"
@@ -3698,6 +3996,59 @@ msgstr ""
 "Құралдар мәзірінде ЖЖҚ үлгісін анықтау командасы арқылы ЖЖҚ кодының үлгісін "
 "анықтап бере аласыз."
 
+#. i18n: ectx: property (text), widget (QLabel, wbslabel)
+#: ui/kptmainprojectpanelbase.ui:26 ui/kptsummarytaskgeneralpanelbase.ui:32
+#: ui/kpttaskgeneralpanelbase.ui:26
+msgid "WBS:"
+msgstr "ЖЖҚ:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
+#: ui/kptmainprojectpanelbase.ui:58 ui/kptmainprojectpanelbase.ui:80
+msgid "The project name."
+msgstr "Жобаның атауы."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptmainprojectpanelbase.ui:61
+msgid "N&ame:"
+msgstr "&Атауы:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
+#: ui/kptmainprojectpanelbase.ui:87 ui/kptmainprojectpanelbase.ui:112
+msgid "The project leader."
+msgstr "Жобаның басшысы."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kptmainprojectpanelbase.ui:90 ui/kptviewbase.cpp:485
+msgid "Manager:"
+msgstr "Менеджері:"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: ui/kptmainprojectpanelbase.ui:119
+msgid "Choose a project leader from your address book."
+msgstr "Жобаның басшысын адрестік кітапшаңыздан таңдап алыңыз."
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#: ui/kptmainprojectpanelbase.ui:122
+msgid "&Choose..."
+msgstr "&Таңдау..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
+#: ui/kptmainprojectpanelbase.ui:131
+msgid "Scheduling Range"
+msgstr "Жоспарлау ауықымы"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptmainprojectpanelbase.ui:163
+msgid "Earliest start:"
+msgstr "Ең ерте бастауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptmainprojectpanelbase.ui:170
+msgid "Latest finish:"
+msgstr "Ең соңғы аяқтауы:"
+
 #: ui/kptmilestoneprogressdialog.cpp:39
 msgid "Milestone Progress"
 msgstr "Кезең барысы"
@@ -3706,14 +4057,156 @@ msgstr "Кезең барысы"
 msgid "Modify milestone completion"
 msgstr "Кезеңді орындауды өзгерту"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptperformancestatusviewsettingspanel.ui:17
+msgid "Chart type"
+msgstr "Диаграмманың түрі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_linechart)
+#: ui/kptperformancestatusviewsettingspanel.ui:23
+msgid "Line chart"
+msgstr "Сызықты диаграмма"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_barchart)
+#: ui/kptperformancestatusviewsettingspanel.ui:33
+msgid "Bar chart"
+msgstr "Бағанды диаграмма"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_table)
+#: ui/kptperformancestatusviewsettingspanel.ui:40
+msgid "Table"
+msgstr "Кесте"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showbasevalues)
+#: ui/kptperformancestatusviewsettingspanel.ui:59
+msgid "Base values"
+msgstr "Негізгі мәндері"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showindeces)
+#: ui/kptperformancestatusviewsettingspanel.ui:69
+msgid "Indices"
+msgstr "Көрсеткіштері"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_costgroup)
+#: ui/kptperformancestatusviewsettingspanel.ui:91 ui/resourcedialogbase.ui:408
+msgid "Cost"
+msgstr "Бағасы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:106
+#: ui/kptperformancestatusviewsettingspanel.ui:154
+msgid "Show BCWS plot"
+msgstr "ЖЖББ графигін көрсету"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:116
+#: ui/kptperformancestatusviewsettingspanel.ui:164
+msgid "Show BCWP plot"
+msgstr "ОЖББ графигін көрсету"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:126
+#: ui/kptperformancestatusviewsettingspanel.ui:174
+msgid "Show ACWP plot"
+msgstr "ОЖШБ графигін көрсету"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spicost)
+#: ui/kptperformancestatusviewsettingspanel.ui:194
+msgid "SPI Cost"
+msgstr "ЖОК бойынша бағасы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spieffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:204
+msgid "SPI Effort"
+msgstr "ЖОК бойынша жұмыс көлемі"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpieffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:211
+msgid "CPI Effort"
+msgstr "БҰК бойынша жұмыс көлемі"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpicost)
+#: ui/kptperformancestatusviewsettingspanel.ui:218
+msgid "CPI Cost"
+msgstr "БҰК бойынша бағасы"
+
 #: ui/kptperteditor.cpp:163
 msgctxt "(qtundo-format)"
 msgid "Remove task dependency"
 msgstr "Тапсырманың тәуелдігін жоқ қылу"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, taskList)
+#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
+#: ui/kptperteditor.ui:37 ui/kptresourceassignmentview.ui:39
+#: ui/reports/reportdata.cpp:349 ui/reports/reportview.cpp:980
+msgid "Tasks"
+msgstr "Тапсырмалар"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, available)
+#: ui/kptperteditor.ui:46
+msgid "Available tasks"
+msgstr "Бар тапсырмалары"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, addBtn)
+#: ui/kptperteditor.ui:81
+msgid "Add required task"
+msgstr "Керек тапсырманы қосу"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeBtn)
+#: ui/kptperteditor.ui:97
+msgid "Remove required task"
+msgstr "Керек тапсырманы өшіру"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ui/kptpertresult.ui:114
+msgid "Total Float:"
+msgstr "Жалпы бар қосымша уақыт:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_header)
+#: ui/kptprintingheaderfooter.ui:16
+msgid "Header"
+msgstr "Жоғарғы колонтитулы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerProject)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerProject)
+#: ui/kptprintingheaderfooter.ui:25 ui/kptprintingheaderfooter.ui:65
+msgid "Project name"
+msgstr "Жобаның атауы"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerPage)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerPage)
+#: ui/kptprintingheaderfooter.ui:32 ui/kptprintingheaderfooter.ui:72
+msgid "Page number"
+msgstr "Беттің нөмері"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerManager)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerManager)
+#: ui/kptprintingheaderfooter.ui:39 ui/kptprintingheaderfooter.ui:79
+msgid "Project manager"
+msgstr "Жоба менеджері"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_footer)
+#: ui/kptprintingheaderfooter.ui:56
+msgid "Footer"
+msgstr "Төменгі колонтитулы"
+
 #: ui/kptrecalculatedialog.cpp:47
 msgid "Re-calculate Schedule"
 msgstr "Жоспарды қайта есептеп шығу"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnCurrent)
+#: ui/kptrecalculatedialog.ui:26
+msgid "Re-calculate from current date/time"
+msgstr "Осы күн/уақыттан қайта есептеу"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnFrom)
+#: ui/kptrecalculatedialog.ui:33
+msgid "Re-calculate from:"
+msgstr "Мынадан қайта есептеу:"
 
 #: ui/kptrelationdialog.cpp:38
 msgctxt "@label:spinbox Time lag"
@@ -3755,6 +4248,16 @@ msgctxt "(qtundo-format)"
 msgid "Modify task dependency"
 msgstr "Тапсырманың тәуелдігін өзгерту"
 
+#. i18n: ectx: property (text), widget (QCheckBox, ui_internalAppointments)
+#: ui/kptresourceappointmentsdisplayoptions.ui:16
+msgid "Show internal appointments"
+msgstr "Ішкі тағайындаулар көрсетілсін"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_externalAppointments)
+#: ui/kptresourceappointmentsdisplayoptions.ui:23
+msgid "Show external appointments"
+msgstr "Сыртқы тағайындаулар көрсетілсін"
+
 #: ui/kptresourceappointmentsview.cpp:95
 msgid "Resource Assignments View Settings"
 msgstr "Тағайындалған атқарушылар көрінісінің параметрлері"
@@ -3766,6 +4269,11 @@ msgstr "Тиісті жұмыс белгіленбеген"
 #: ui/kptresourceassignmentview.cpp:322
 msgid "No resource attributed"
 msgstr "Тиісті атқарушы белгіленбеген"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
+#: ui/kptresourceassignmentview.ui:44
+msgid "Advance"
+msgstr "Өсу"
 
 #: ui/kptresourcedialog.cpp:74
 msgctxt "title:column"
@@ -3857,6 +4365,56 @@ msgstr "Нәтижесі"
 msgid "Scheduling Log"
 msgstr "Жоспарлау журналы"
 
+#. i18n: ectx: property (text), widget (QLabel, labelCriticalPath)
+#: ui/kptscheduleeditor.ui:77
+msgid "Critical Path (Task Id) :"
+msgstr "Шешуші тізбекі (тапсырма ID-і) :"
+
+#. i18n: ectx: property (text), widget (QLabel, labelProjectFloat)
+#: ui/kptscheduleeditor.ui:110
+msgid "Project Float :"
+msgstr "Жобада бар қосымша уақыт:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, taskGroupBoxDetail)
+#: ui/kptscheduleeditor.ui:131
+msgid "Task details "
+msgstr "Тапсырма егжей-тегжейі "
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:162
+msgid "Id"
+msgstr "ID"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:172
+msgid "Early start date"
+msgstr "Бастау мерзімінің басы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:177
+msgid "Early finish date"
+msgstr "Аяқтау мерзімінің басы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:182
+msgid "Late start date"
+msgstr "Бастау мерзімінің соңы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:187
+msgid "Late finish date"
+msgstr "Аяқтау мерзімінің соңы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:192
+msgid "Float"
+msgstr "Бар қосымша уақыт"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:197
+msgid "Free Margin"
+msgstr "Бар бос уақыт"
+
 #: ui/kptstandardworktimedialog.cpp:89
 msgid "Estimate Conversions"
 msgstr "Болжамды түрлендіруі"
@@ -3879,10 +4437,91 @@ msgctxt "(qtundo-format)"
 msgid "Modify task"
 msgstr "Тапсырманы өзгерту"
 
+#. i18n: ectx: property (toolTip), widget (QLabel, wbslabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:29 ui/kpttaskgeneralpanelbase.ui:23
+msgid "Work Breakdown Structure"
+msgstr "Жұмыстың жіктелген құрылымы"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, namelabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
+#: ui/kptsummarytaskgeneralpanelbase.ui:42
+#: ui/kptsummarytaskgeneralpanelbase.ui:67
+#: ui/kpttaskdescriptionpanelbase.ui:24 ui/kpttaskdescriptionpanelbase.ui:40
+#: ui/kpttaskgeneralpanelbase.ui:52 ui/kpttaskgeneralpanelbase.ui:68
+msgid "The name of the Task."
+msgstr "Тапсырманың атауы."
+
+#. i18n: ectx: property (text), widget (QLabel, namelabel)
+#. i18n: ectx: property (text), widget (QLabel, ui_namelabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:45
+#: ui/kpttaskdescriptionpanelbase.ui:27 ui/kpttaskgeneralpanelbase.ui:55
+#: ui/resourcedialogbase.ui:30
+msgid "Name:"
+msgstr "Атауы:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
+#: ui/kptsummarytaskgeneralpanelbase.ui:76
+#: ui/kptsummarytaskgeneralpanelbase.ui:105 ui/kpttaskgeneralpanelbase.ui:77
+#: ui/kpttaskgeneralpanelbase.ui:103
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+"Осы тапсырмаға жауыпты тұлға.\n"
+"\n"
+"Бұл атқарушы тобындағыларымен шектелмей, кез келген тұлға бола алады. "
+"\"Таңдау\" батырмасы арқылы тікелей адрестік кітапшаңызға қатнауға болады."
+
+#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:79 ui/kpttaskgeneralpanelbase.ui:80
+msgid "Responsible:"
+msgstr "Жауаптысы:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
+#: ui/kptsummarytaskgeneralpanelbase.ui:112 ui/kpttaskgeneralpanelbase.ui:110
+msgid "Insert a person from your address book"
+msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз"
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#. i18n: ectx: property (text), widget (QPushButton, chooseBtn)
+#: ui/kptsummarytaskgeneralpanelbase.ui:115 ui/kpttaskgeneralpanelbase.ui:116
+#: ui/resourcedialogbase.ui:64
+msgid "Choose..."
+msgstr "Таңдау..."
+
 #: ui/kpttaskcostpanel.cpp:94
 msgctxt "(qtundo-format)"
 msgid "Modify Task Cost"
 msgstr "Тапсырманың бағасын өзгерту"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskcostpanelbase.ui:36 ui/kpttaskcostpanelbase.ui:106
+#: ui/kpttaskcostpanelbase.ui:176 ui/resourcedialogbase.ui:486
+msgid "Account:"
+msgstr "Есебі:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, startupGroup)
+#: ui/kpttaskcostpanelbase.ui:78
+msgid "Startup"
+msgstr "Бастау"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kpttaskcostpanelbase.ui:90 ui/kpttaskcostpanelbase.ui:160
+msgid "Cost:"
+msgstr "Бағасы:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, shutdownGroup)
+#: ui/kpttaskcostpanelbase.ui:148
+msgid "Shutdown"
+msgstr "Доғару"
 
 #: ui/kpttaskdescriptiondialog.cpp:50
 msgid "Modify task description"
@@ -4049,6 +4688,124 @@ msgctxt "(qtundo-format)"
 msgid "Modify Task"
 msgstr "Тапсырманы өзгерту"
 
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: ui/kpttaskgeneralpanelbase.ui:113
+msgid "Insert a person from your address book."
+msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, schedulingGroup)
+#: ui/kpttaskgeneralpanelbase.ui:132
+msgid ""
+"Scheduling Configuration. These settings affect the actual scheduling of the "
+"task.\n"
+"\n"
+"The estimation can be either effort based or duration based. If it is effort "
+"based, the final duration will depend on the resources assigned to the task. "
+"For duration based estimation, the assigned resources don't affect the fixed "
+"duration of the task, but only the costs."
+msgstr ""
+"Жоспарлауды баптау. Бұл назардағы тапсырманы жоспарлауына әсер ететін "
+"баптаулары.\n"
+"\n"
+"Есебі жұмыстың көлемі немесе жұмсалған уақыты негізінде жүргізіледі. Жұмыс "
+"көлемі негізінде жүргізгенде нәтижедегі уақыты тағайындалған атқарушыларына  "
+"тәуелді. Уақыт негізінде жүргізілгенде оған тағайындалған атқарушылар  әсер "
+"етпейді, ол атқарушылар тек жұмыстың бағасына әсер етеді."
+
+#. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
+#: ui/kpttaskgeneralpanelbase.ui:135
+msgid "Timing"
+msgstr "Уақыты"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: ui/kpttaskgeneralpanelbase.ui:162
+msgid "Schedule:"
+msgstr "Жоспары:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:182
+msgid "As Soon as Possible"
+msgstr "Барынша ертерек"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:187
+msgid "As Late as Possible"
+msgstr "Барынша кешірек"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:202
+msgid "Start Not Earlier Than"
+msgstr "Бастаудың ең ертесі:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:207
+msgid "Finish Not Later Than"
+msgstr "Аяқтаудың ең кеші:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: ui/kpttaskgeneralpanelbase.ui:258
+msgid "Estimate:"
+msgstr "Болжамы:"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel3_2_3)
+#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
+#: ui/kpttaskgeneralpanelbase.ui:303 ui/kpttaskgeneralpanelbase.ui:331
+msgid ""
+"Risk controls the PERT distribution used when calculating the actual "
+"estimate for this task."
+msgstr ""
+"Назардағы тапсырманы болжағанда PERT (жобаларды жоспарлау және басқару "
+"жүйесі) негізінде тәуекел бақылауын қолдану."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3_2_3)
+#: ui/kpttaskgeneralpanelbase.ui:309
+msgid ""
+"<p>Risk controls the PERT distribution used when calculating the actual "
+"estimate for the task.\n"
+"<b>None</b> means the Expected estimate is used as is.\n"
+"<b>Low risk</b> means that a normal distribution is used.\n"
+"<b>High risk</b> means that the estimate will be slightly pessimistic "
+"compared to Low risk.</p>"
+msgstr ""
+"<p>Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және басқару "
+"жүйесі) үлестірім негізінде тәуекел бақылауын қолдану.\n"
+"<b>Жоқ</b> - \"болжалды бағалауы\" деген бар түрінде қолданалады.\n"
+"<b>Тәуекелі төмен</b> деген қалыпты үлестірімі қолданалады.\n"
+"<b>Тәуекелі жоғары</b> - бағалауы \"Төмен\" тәуекел дегеннен сәл "
+"пессимисттік болады деген сөз.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2_3)
+#: ui/kpttaskgeneralpanelbase.ui:312
+msgid "Risk:"
+msgstr "Тәуекелі:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, risk)
+#: ui/kpttaskgeneralpanelbase.ui:337
+msgid ""
+"<p>Risk controles the PERT distribution used when calculating the actual "
+"estimate for the task.\n"
+"<b>None</b> means the Expected estimate is used as is.\n"
+"<b>Low risk</b> means that a normal distribution is used.\n"
+"<b>High risk</b> means that the estimate will be slightly pessimistic "
+"compared to Low risk.</p>"
+msgstr ""
+"<p>Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және басқару "
+"жүйесі) үлестірім негізінде тәуекел бақылауын қолдану.\n"
+"<b>Жоқ</b> - \"болжалды бағалауы\" деген бар түрінде қолданалады.\n"
+"<b>Тәуекелі төмен</b> деген қалыпты үлестірімі қолданалады.\n"
+"<b>Тәуекелі жоғары</b> - бағалауы \"Төмен\" тәуекел дегеннен сәл "
+"пессимисттік болады деген сөз.</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ui/kpttaskgeneralpanelbase.ui:362
+msgid "Optimistic:"
+msgstr "Оптимисттік:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: ui/kpttaskgeneralpanelbase.ui:388
+msgid "Pessimistic:"
+msgstr "Пессимисттік:"
+
 #: ui/kpttaskprogressdialog.cpp:38 ui/kptworkpackagemergedialog.cpp:58
 msgid "Task Progress"
 msgstr "Тапсырма барысы"
@@ -4074,6 +4831,71 @@ msgctxt "Week number"
 msgid "Week %1"
 msgstr "%1-апта"
 
+#. i18n: ectx: property (text), widget (QCheckBox, started)
+#: ui/kpttaskprogresspanelbase.ui:27
+msgid "Started:"
+msgstr "Бастаған:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: ui/kpttaskprogresspanelbase.ui:44
+msgid "Finished:"
+msgstr "Аяқталған:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskprogresspanelbase.ui:74
+msgid "Edit mode:"
+msgstr "Өңдеу режімі:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:82
+msgid "Calculate effort"
+msgstr "Жұмыс көлемін есептеу"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:87
+msgid "Per task"
+msgstr "Тапсырмаға шаққанда"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:92
+msgid "Per resource"
+msgstr "Атқарушыға шаққанда"
+
+#. i18n: ectx: attribute (title), widget (QWidget, completionTab)
+#: ui/kpttaskprogresspanelbase.ui:107
+msgid "Completion"
+msgstr "Бітіруі"
+
+#. i18n: ectx: property (text), widget (QPushButton, addEntryBtn)
+#: ui/kpttaskprogresspanelbase.ui:136
+msgid "Add Entry"
+msgstr "Жазуды қосу"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeEntryBtn)
+#: ui/kpttaskprogresspanelbase.ui:143
+msgid "Remove Entry"
+msgstr "Жазуды өшіру"
+
+#. i18n: ectx: attribute (title), widget (QWidget, usedEffortTab)
+#: ui/kpttaskprogresspanelbase.ui:176
+msgid "Per Resource"
+msgstr "Атқарушыға шаққанда"
+
+#. i18n: ectx: property (text), widget (QPushButton, prevWeekBtn)
+#: ui/kpttaskprogresspanelbase.ui:212
+msgid "Prev"
+msgstr "Алдыңғы"
+
+#. i18n: ectx: property (text), widget (QPushButton, nextWeekBtn)
+#: ui/kpttaskprogresspanelbase.ui:222
+msgid "Next"
+msgstr "Келесі"
+
+#. i18n: ectx: property (text), widget (QPushButton, addResource)
+#: ui/kpttaskprogresspanelbase.ui:242
+msgid "Add Resource..."
+msgstr "Атқарушыны қосу..."
+
 #: ui/kpttaskstatusview.cpp:421
 msgid "General Settings"
 msgstr "Жалпы баптаулары"
@@ -4093,6 +4915,26 @@ msgstr "Жұмыс көлемі (сағат)"
 msgid "Chart Settings"
 msgstr "Диаграмма параметрлері"
 
+#. i18n: ectx: property (title), widget (QGroupBox, periodGroupBox)
+#: ui/kpttaskstatusviewsettingspanel.ui:16
+msgid "Period Definition"
+msgstr "Кезең анықтауы"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskstatusviewsettingspanel.ui:25
+msgid "Period length (days):"
+msgstr "Кезең ұзындығы (күн):"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useCurrentDate)
+#: ui/kpttaskstatusviewsettingspanel.ui:48
+msgid "Use current date"
+msgstr "Бүгінгі күн болсын"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useWeekday)
+#: ui/kpttaskstatusviewsettingspanel.ui:68
+msgid "Use weekday:"
+msgstr "Аптадағы күн:"
+
 #: ui/kptusedefforteditor.cpp:47
 msgid "Resource"
 msgstr "Атқарушы"
@@ -4104,10 +4946,6 @@ msgstr "Осы апта"
 #: ui/kptusedefforteditor.cpp:224
 msgid "Total effort this week"
 msgstr "Осы аптадағы жұмыс көлемі"
-
-#: ui/kptusedefforteditor.cpp:387
-msgid "Date"
-msgstr "Күні"
 
 #: ui/kptusedefforteditor.cpp:389
 #, no-c-format
@@ -4148,10 +4986,6 @@ msgstr "Жоба:"
 msgid "Date:"
 msgstr "Күні:"
 
-#: ui/kptviewbase.cpp:485
-msgid "Manager:"
-msgstr "Менеджері:"
-
 #: ui/kptviewbase.cpp:560
 msgid "This view does not support printing."
 msgstr "Бұр көрініс басып шығарылмайды."
@@ -4187,6 +5021,66 @@ msgctxt "(qtundo-format)"
 msgid "Modify WBS Code Definition"
 msgstr "ЖЖҚ код анықтамасын өзгерту"
 
+#. i18n: ectx: property (toolTip), widget (QFrame, frame_2)
+#: ui/kptwbsdefinitionpanelbase.ui:21
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define WBS code for the project"
+msgstr "Жобаның ЖЖҚ кодын анықтау"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptwbsdefinitionpanelbase.ui:33
+msgid "Project Code Definition"
+msgstr "Жоба кодын анықтау"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptwbsdefinitionpanelbase.ui:42 ui/kptwbsdefinitionpanelbase.ui:107
+msgid "Code:"
+msgstr "Коды:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
+#: ui/kptwbsdefinitionpanelbase.ui:58 ui/kptwbsdefinitionpanelbase.ui:127
+msgid "Separator:"
+msgstr "Бөлгіші:"
+
+#. i18n: ectx: property (toolTip), widget (QFrame, frame)
+#: ui/kptwbsdefinitionpanelbase.ui:86
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define default WBS code"
+msgstr "Әдетті ЖЖҚ кодты анықтау"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptwbsdefinitionpanelbase.ui:98
+msgid "Default Definition"
+msgstr "Әдетті анықтауы"
+
+#. i18n: ectx: property (toolTip), widget (QGroupBox, levelsGroup)
+#: ui/kptwbsdefinitionpanelbase.ui:148
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define separate WBS codes for individual levels"
+msgstr "Жеке деңгейлерге бөлек ЖЖҚ кодтарын анықтау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, levelsGroup)
+#: ui/kptwbsdefinitionpanelbase.ui:151
+msgid "Use Levels Definition"
+msgstr "Деңгейлердің анықтауы"
+
+#. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
+#: ui/kptwbsdefinitionpanelbase.ui:167
+msgid "Code"
+msgstr "Коды"
+
+#. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
+#: ui/kptwbsdefinitionpanelbase.ui:172
+msgid "Separator"
+msgstr "Бөлгіші"
+
+#. i18n: ectx: property (text), widget (QPushButton, addBtn)
+#: ui/kptwbsdefinitionpanelbase.ui:187
+msgid "Add Level"
+msgstr "Деңгейді қосу"
+
 #: ui/kptworkpackagesenddialog.cpp:35
 msgctxt "@title:window"
 msgid "Send Work Packages"
@@ -4196,7 +5090,8 @@ msgstr "Жұмыс дестесін жіберу"
 msgid "Send To..."
 msgstr "Мынаған жіберу"
 
-#: ui/locale/localemon.cpp:52
+#. i18n: ectx: property (text), widget (QLabel, m_labMonCurSym)
+#: ui/locale/localemon.cpp:52 ui/locale/localemon.ui:19
 msgid "Currency symbol:"
 msgstr "Ақша белгісі:"
 
@@ -4204,39 +5099,62 @@ msgstr "Ақша белгісі:"
 msgid "Fract digits:"
 msgstr "Бөлшек таңб. саны:"
 
-#: ui/locale/localemon.cpp:56
+#. i18n: ectx: property (title), widget (QGroupBox, m_positiveGB)
+#: ui/locale/localemon.cpp:56 ui/locale/localemon.ui:49
 msgid "Positive"
 msgstr "Оң"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_chMonPosPreCurSym)
+#. i18n: ectx: property (text), widget (QCheckBox, m_chMonNegPreCurSym)
 #: ui/locale/localemon.cpp:57 ui/locale/localemon.cpp:60
+#: ui/locale/localemon.ui:55 ui/locale/localemon.ui:124
 msgid "Prefix currency symbol"
 msgstr "Префикс ақша белгісі"
 
+#. i18n: ectx: property (text), widget (QLabel, m_labMonPosMonSignPos)
+#. i18n: ectx: property (text), widget (QLabel, m_labMonNegMonSignPos)
 #: ui/locale/localemon.cpp:58 ui/locale/localemon.cpp:61
+#: ui/locale/localemon.ui:64 ui/locale/localemon.ui:133
 msgid "Sign position:"
 msgstr "Белгі орны:"
 
-#: ui/locale/localemon.cpp:59
+#. i18n: ectx: property (title), widget (QGroupBox, m_negativeGB)
+#: ui/locale/localemon.cpp:59 ui/locale/localemon.ui:118
 msgid "Negative"
 msgstr "Теріс"
 
-#: ui/locale/localemon.cpp:265
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:265 ui/locale/localemon.ui:72
+#: ui/locale/localemon.ui:141
 msgid "Parentheses Around"
 msgstr "Орама жақшалар"
 
-#: ui/locale/localemon.cpp:266
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:266 ui/locale/localemon.ui:77
+#: ui/locale/localemon.ui:146
 msgid "Before Quantity Money"
 msgstr "Соманың алдында"
 
-#: ui/locale/localemon.cpp:267
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:267 ui/locale/localemon.ui:82
+#: ui/locale/localemon.ui:151
 msgid "After Quantity Money"
 msgstr "Сомадан кейін"
 
-#: ui/locale/localemon.cpp:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:268 ui/locale/localemon.ui:87
+#: ui/locale/localemon.ui:156
 msgid "Before Money"
 msgstr "Ақша белг. алдында"
 
-#: ui/locale/localemon.cpp:269
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:269 ui/locale/localemon.ui:92
+#: ui/locale/localemon.ui:161
 msgid "After Money"
 msgstr "Ақша белг. кейін"
 
@@ -4289,9 +5207,26 @@ msgstr ""
 "Мұнда санның теріс екендігін білдіретін белгісінің орнын таңдай аласыз. Бұл "
 "тек ақша сомаларына бағышталған."
 
-#: ui/reports/reportdata.cpp:349 ui/reports/reportview.cpp:980
-msgid "Tasks"
-msgstr "Тапсырмалар"
+#. i18n: ectx: property (text), widget (QLabel, m_labMonFraDig)
+#: ui/locale/localemon.ui:32
+msgid "Fractional digits:"
+msgstr "Бөлшек таңбалары:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_fromgroup)
+#: ui/relationpanel.ui:44 ui/resourcedialogbase.ui:265
+msgid "From"
+msgstr "Басы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/relationpanel.ui:72
+msgid "To"
+msgstr "Аяғы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, relationType)
+#: ui/relationpanel.ui:102
+msgid "Dependency Type"
+msgstr "Тәуелдіктің түрі"
 
 #: ui/reports/reportdata.cpp:396 ui/reports/reportview.cpp:985
 msgid "Task status"
@@ -4360,6 +5295,172 @@ msgstr "HTML"
 #: ui/reports/reportexportpanel.cpp:38
 msgid "XHTML"
 msgstr "XHTML"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/reports/reportexportpanel.ui:17
+msgid "Select format:"
+msgstr "Пішімін таңдау"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/reports/reportnavigator.ui:20
+msgid "Page"
+msgstr "Бет"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_first)
+#: ui/reports/reportnavigator.ui:42
+msgid "Go to first page"
+msgstr "Алғашқы бетке өту"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_prev)
+#: ui/reports/reportnavigator.ui:61
+msgid "Go to previous page"
+msgstr "Алдыңғы бетке өту"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, ui_selector)
+#: ui/reports/reportnavigator.ui:71
+msgid "Show page"
+msgstr "Бетті көрсету"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/reports/reportnavigator.ui:93
+msgid "of"
+msgstr "/"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_next)
+#: ui/reports/reportnavigator.ui:143
+msgid "Go to next page"
+msgstr "Келесі бетке өту"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_last)
+#: ui/reports/reportnavigator.ui:162
+msgid "Go to last page"
+msgstr "Соңғы бетке өту"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, reportheader)
+#: ui/reports/reportsectionswidget.ui:31
+msgid "Enable report header"
+msgstr "Баянаттың жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, reportheader)
+#: ui/reports/reportsectionswidget.ui:34
+msgid "Report Header"
+msgstr "Баянаттың жоғарғы колонтитулы"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, reportfooter)
+#: ui/reports/reportsectionswidget.ui:41
+msgid "Enable report footer"
+msgstr "Баянаттың төменгі колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, reportfooter)
+#: ui/reports/reportsectionswidget.ui:44
+msgid "Report Footer"
+msgstr "Баянаттың төменгі колонтитулы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/reports/reportsectionswidget.ui:53
+msgid "Page Header"
+msgstr "Беттің жоғарғы колонтитулы"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerFirstpage)
+#: ui/reports/reportsectionswidget.ui:65
+msgid "Enable header on first page"
+msgstr "Алғашқы бетте жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerFirstpage)
+#. i18n: ectx: property (text), widget (QCheckBox, footerFirstpage)
+#: ui/reports/reportsectionswidget.ui:68
+#: ui/reports/reportsectionswidget.ui:133
+msgid "First page"
+msgstr "Алғашқы бет"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerLastpage)
+#: ui/reports/reportsectionswidget.ui:75
+msgid "Enable header on last page"
+msgstr "Соңғы бетте жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerLastpage)
+#. i18n: ectx: property (text), widget (QCheckBox, footerLastpage)
+#: ui/reports/reportsectionswidget.ui:78
+#: ui/reports/reportsectionswidget.ui:163
+msgid "Last page"
+msgstr "Соңғы бет"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerOddpages)
+#: ui/reports/reportsectionswidget.ui:85
+msgid "Enable header on odd pages"
+msgstr "Тақ беттерде жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerOddpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerOddpages)
+#: ui/reports/reportsectionswidget.ui:88
+#: ui/reports/reportsectionswidget.ui:143
+msgid "Odd pages"
+msgstr "Тақ беттер"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerEvenpages)
+#: ui/reports/reportsectionswidget.ui:95
+msgid "Enable header on even pages"
+msgstr "Жұп беттерде жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerEvenpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerEvenpages)
+#: ui/reports/reportsectionswidget.ui:98
+#: ui/reports/reportsectionswidget.ui:153
+msgid "Even pages"
+msgstr "Жұп беттер"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerAllpages)
+#: ui/reports/reportsectionswidget.ui:105
+msgid "Enable header on all pages"
+msgstr "Бүкіл беттерде жоғарғы колонтитулы болсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerAllpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerAllpages)
+#: ui/reports/reportsectionswidget.ui:108
+#: ui/reports/reportsectionswidget.ui:173
+msgid "All pages"
+msgstr "Бүкіл беттер"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/reports/reportsectionswidget.ui:118
+msgid "Page Footer"
+msgstr "Төменгі колонтитулы"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerFirstpage)
+#: ui/reports/reportsectionswidget.ui:130
+msgid "Enable footer on first page"
+msgstr "Алғашқы бетте төменгі колонтитулы болсын"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerOddpages)
+#: ui/reports/reportsectionswidget.ui:140
+msgid "Enable footer on odd pages"
+msgstr "Тақ беттерде төменгі колонтитулы болсын"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerEvenpages)
+#: ui/reports/reportsectionswidget.ui:150
+msgid "Enable footer on even pages"
+msgstr "Жұп беттерде төменгі колонтитулы болсын"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerLastpage)
+#: ui/reports/reportsectionswidget.ui:160
+msgid "Enable footer on last page"
+msgstr "Соңғы бетте төменгі колонтитулы болсын"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerAllpages)
+#: ui/reports/reportsectionswidget.ui:170
+msgid "Enable footer on all pages"
+msgstr "Бүкіл беттерде төменгі колонтитулы болсын"
 
 #: ui/reports/reportview.cpp:352
 msgctxt "@title:window"
@@ -4572,679 +5673,113 @@ msgstr "Төменгі колонтитулдан кейін"
 msgid "Before header"
 msgstr "Жоғарғы колонтитулының алдында"
 
-#~ msgid "Show:"
-#~ msgstr "Көрсету:"
-
-#~ msgid "Periodicity:"
-#~ msgstr "Мезгілдігі:"
-
-#~ msgid "Day"
-#~ msgstr "Күн"
-
-#~ msgid "Week"
-#~ msgstr "Апта"
-
-#~ msgid "Month"
-#~ msgstr "Ай"
-
-#~ msgid "Cumulative"
-#~ msgstr "Интегралды"
-
-#~ msgid "Actual cost"
-#~ msgstr "Шын бағасы"
-
-#~ msgid "Planned cost"
-#~ msgstr "Жоспарлаған бағасы"
-
-#~ msgid "Actual and planned"
-#~ msgstr "Шын және жоспарлаған"
-
-#~ msgid "Deviation"
-#~ msgstr "Ауытқы"
-
-#~ msgid "Start date"
-#~ msgstr "Бастау кезі"
-
-#~ msgid "Project start"
-#~ msgstr "Жобаның басы"
-
-#~ msgid "End date"
-#~ msgstr "Аяқтау кезі"
-
-#~ msgid "Current date"
-#~ msgstr "Бүгінгі күн"
-
-#~ msgid "Project end"
-#~ msgstr "Жобаның аяқтауы"
-
-#~ msgid "Project Schedule:"
-#~ msgstr "Жоба жоспары:"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Probability of finishing before"
-#~ msgstr "Келесіге дейін аяқтау ықтималдығы"
-
-#~ msgid "is"
-#~ msgstr ":"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "Add..."
-#~ msgstr "Қосу..."
-
-#~ msgid "Change..."
-#~ msgstr "Өзгерту..."
-
-#~ msgid "Remove"
-#~ msgstr "Өшіру"
-
-#~ msgid "Open"
-#~ msgstr "Ашу"
-
-#~ msgid "Additional text information"
-#~ msgstr "Қосымша мәтін мәліметі"
-
-#~ msgid "Task name"
-#~ msgstr "Тапсырма атауы"
-
-#~ msgid "Resource names"
-#~ msgstr "Атқарушының атаулары"
-
-#~ msgid "Additional graphics information"
-#~ msgstr "Қосымша графикалық мәлімет"
-
-#~ msgid "Task dependencies"
-#~ msgstr "Тапсырманың тәуелдіктері"
-
-#~ msgid "Task completion"
-#~ msgstr "Тапсырманың орындалуы"
-
-#~ msgid "Time constraints"
-#~ msgstr "Уақыт шектеулері"
-
-#~ msgid "Scheduling errors"
-#~ msgstr "Жоспарлау қателері"
-
-#~ msgid "Positive float"
-#~ msgstr "Артық уақыты"
-
-#~ msgid "Negative float"
-#~ msgstr "Жетпейтін уақыты"
-
-#~ msgid "Critical path"
-#~ msgstr "Шешуші тізбек"
-
-#~ msgid "Critical tasks"
-#~ msgstr "Шешуші тапсырмалары"
-
-#~ msgid "Print row labels"
-#~ msgstr "Жол жарлықтары басып шығарылсын"
-
-#~ msgid "Print chart on a single page"
-#~ msgstr "Диаграмма бір парақта басылсын"
-
-#~ msgid "Divide chart on multiple pages"
-#~ msgstr "Диаграмма бірнеше параққа бөлінсін"
-
-#~ msgid "1"
-#~ msgstr "1"
-
-#~ msgctxt "Start time"
-#~ msgid "From:"
-#~ msgstr "Бастауы:"
-
-#~ msgid "Length"
-#~ msgstr "Ұзындығы"
-
-#~ msgid "Add"
-#~ msgstr "Қосу"
-
-#~ msgid "Clear"
-#~ msgstr "Тазалау"
-
-#~ msgid "Stretch last section"
-#~ msgstr "Соңғы бөлімін созу"
-
-#~ msgid "Select columns to be shown:"
-#~ msgstr "Көрсететін бағандарды таңдаңыз:"
-
-#~ msgid "&Hidden columns:"
-#~ msgstr "&Жасырылған бағандары:"
-
-#~ msgid "&Visible columns:"
-#~ msgstr "&Көрінетін бағандары:"
-
-#~ msgid "WBS:"
-#~ msgstr "ЖЖҚ:"
-
-#~ msgid "The project name."
-#~ msgstr "Жобаның атауы."
-
-#~ msgid "N&ame:"
-#~ msgstr "&Атауы:"
-
-#~ msgid "The project leader."
-#~ msgstr "Жобаның басшысы."
-
-#~ msgid "Choose a project leader from your address book."
-#~ msgstr "Жобаның басшысын адрестік кітапшаңыздан таңдап алыңыз."
-
-#~ msgid "&Choose..."
-#~ msgstr "&Таңдау..."
-
-#~ msgid "Scheduling Range"
-#~ msgstr "Жоспарлау ауықымы"
-
-#~ msgid "Earliest start:"
-#~ msgstr "Ең ерте бастауы:"
-
-#~ msgid "Latest finish:"
-#~ msgstr "Ең соңғы аяқтауы:"
-
-#~ msgid "Chart type"
-#~ msgstr "Диаграмманың түрі"
-
-#~ msgid "Line chart"
-#~ msgstr "Сызықты диаграмма"
-
-#~ msgid "Bar chart"
-#~ msgstr "Бағанды диаграмма"
-
-#~ msgid "Table"
-#~ msgstr "Кесте"
-
-#~ msgid "Base values"
-#~ msgstr "Негізгі мәндері"
-
-#~ msgid "Indices"
-#~ msgstr "Көрсеткіштері"
-
-#~ msgid "Cost"
-#~ msgstr "Бағасы"
-
-#~ msgid "Show BCWS plot"
-#~ msgstr "ЖЖББ графигін көрсету"
-
-#~ msgid "Show BCWP plot"
-#~ msgstr "ОЖББ графигін көрсету"
-
-#~ msgid "Show ACWP plot"
-#~ msgstr "ОЖШБ графигін көрсету"
-
-#~ msgid "SPI Cost"
-#~ msgstr "ЖОК бойынша бағасы"
-
-#~ msgid "SPI Effort"
-#~ msgstr "ЖОК бойынша жұмыс көлемі"
-
-#~ msgid "CPI Effort"
-#~ msgstr "БҰК бойынша жұмыс көлемі"
-
-#~ msgid "CPI Cost"
-#~ msgstr "БҰК бойынша бағасы"
-
-#~ msgid "Available tasks"
-#~ msgstr "Бар тапсырмалары"
-
-#~ msgid "Add required task"
-#~ msgstr "Керек тапсырманы қосу"
-
-#~ msgid "Remove required task"
-#~ msgstr "Керек тапсырманы өшіру"
-
-#~ msgid "Total Float:"
-#~ msgstr "Жалпы бар қосымша уақыт:"
-
-#~ msgid "Header"
-#~ msgstr "Жоғарғы колонтитулы"
-
-#~ msgid "Project name"
-#~ msgstr "Жобаның атауы"
-
-#~ msgid "Page number"
-#~ msgstr "Беттің нөмері"
-
-#~ msgid "Project manager"
-#~ msgstr "Жоба менеджері"
-
-#~ msgid "Footer"
-#~ msgstr "Төменгі колонтитулы"
-
-#~ msgid "Re-calculate from current date/time"
-#~ msgstr "Осы күн/уақыттан қайта есептеу"
-
-#~ msgid "Re-calculate from:"
-#~ msgstr "Мынадан қайта есептеу:"
-
-#~ msgid "Show internal appointments"
-#~ msgstr "Ішкі тағайындаулар көрсетілсін"
-
-#~ msgid "Show external appointments"
-#~ msgstr "Сыртқы тағайындаулар көрсетілсін"
-
-#~ msgid "Advance"
-#~ msgstr "Өсу"
-
-#~ msgid "Critical Path (Task Id) :"
-#~ msgstr "Шешуші тізбекі (тапсырма ID-і) :"
-
-#~ msgid "Project Float :"
-#~ msgstr "Жобада бар қосымша уақыт:"
-
-#~ msgid "Task details "
-#~ msgstr "Тапсырма егжей-тегжейі "
-
-#~ msgid "Id"
-#~ msgstr "ID"
-
-#~ msgid "Early start date"
-#~ msgstr "Бастау мерзімінің басы"
-
-#~ msgid "Early finish date"
-#~ msgstr "Аяқтау мерзімінің басы"
-
-#~ msgid "Late start date"
-#~ msgstr "Бастау мерзімінің соңы"
-
-#~ msgid "Late finish date"
-#~ msgstr "Аяқтау мерзімінің соңы"
-
-#~ msgid "Float"
-#~ msgstr "Бар қосымша уақыт"
-
-#~ msgid "Free Margin"
-#~ msgstr "Бар бос уақыт"
-
-#~ msgid "Work Breakdown Structure"
-#~ msgstr "Жұмыстың жіктелген құрылымы"
-
-#~ msgid "The name of the Task."
-#~ msgstr "Тапсырманың атауы."
-
-#~ msgid "Name:"
-#~ msgstr "Атауы:"
-
-#~ msgid ""
-#~ "The person responsible for this task.\n"
-#~ "\n"
-#~ "This is not limited to persons available in a resource group but can be "
-#~ "anyone. You can even directly access your address book with the Choose "
-#~ "button."
-#~ msgstr ""
-#~ "Осы тапсырмаға жауыпты тұлға.\n"
-#~ "\n"
-#~ "Бұл атқарушы тобындағыларымен шектелмей, кез келген тұлға бола алады. "
-#~ "\"Таңдау\" батырмасы арқылы тікелей адрестік кітапшаңызға қатнауға болады."
-
-#~ msgid "Responsible:"
-#~ msgstr "Жауаптысы:"
-
-#~ msgid "Insert a person from your address book"
-#~ msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз"
-
-#~ msgid "Choose..."
-#~ msgstr "Таңдау..."
-
-#~ msgid "Account:"
-#~ msgstr "Есебі:"
-
-#~ msgid "Startup"
-#~ msgstr "Бастау"
-
-#~ msgid "Cost:"
-#~ msgstr "Бағасы:"
-
-#~ msgid "Shutdown"
-#~ msgstr "Доғару"
-
-#~ msgid "Insert a person from your address book."
-#~ msgstr "Адрестік кітапшаңыздан адамды таңдап алыңыз."
-
-#~ msgid ""
-#~ "Scheduling Configuration. These settings affect the actual scheduling of "
-#~ "the task.\n"
-#~ "\n"
-#~ "The estimation can be either effort based or duration based. If it is "
-#~ "effort based, the final duration will depend on the resources assigned to "
-#~ "the task. For duration based estimation, the assigned resources don't "
-#~ "affect the fixed duration of the task, but only the costs."
-#~ msgstr ""
-#~ "Жоспарлауды баптау. Бұл назардағы тапсырманы жоспарлауына әсер ететін "
-#~ "баптаулары.\n"
-#~ "\n"
-#~ "Есебі жұмыстың көлемі немесе жұмсалған уақыты негізінде жүргізіледі. "
-#~ "Жұмыс көлемі негізінде жүргізгенде нәтижедегі уақыты тағайындалған "
-#~ "атқарушыларына  тәуелді. Уақыт негізінде жүргізілгенде оған тағайындалған "
-#~ "атқарушылар  әсер етпейді, ол атқарушылар тек жұмыстың бағасына әсер "
-#~ "етеді."
-
-#~ msgid "Timing"
-#~ msgstr "Уақыты"
-
-#~ msgid "Schedule:"
-#~ msgstr "Жоспары:"
-
-#~ msgid "As Soon as Possible"
-#~ msgstr "Барынша ертерек"
-
-#~ msgid "As Late as Possible"
-#~ msgstr "Барынша кешірек"
-
-#~ msgid "Start Not Earlier Than"
-#~ msgstr "Бастаудың ең ертесі:"
-
-#~ msgid "Finish Not Later Than"
-#~ msgstr "Аяқтаудың ең кеші:"
-
-#~ msgid "Estimate:"
-#~ msgstr "Болжамы:"
-
-#~ msgid ""
-#~ "Risk controls the PERT distribution used when calculating the actual "
-#~ "estimate for this task."
-#~ msgstr ""
-#~ "Назардағы тапсырманы болжағанда PERT (жобаларды жоспарлау және басқару "
-#~ "жүйесі) негізінде тәуекел бақылауын қолдану."
-
-#~ msgid ""
-#~ "<p>Risk controls the PERT distribution used when calculating the actual "
-#~ "estimate for the task.\n"
-#~ "<b>None</b> means the Expected estimate is used as is.\n"
-#~ "<b>Low risk</b> means that a normal distribution is used.\n"
-#~ "<b>High risk</b> means that the estimate will be slightly pessimistic "
-#~ "compared to Low risk.</p>"
-#~ msgstr ""
-#~ "<p>Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және "
-#~ "басқару жүйесі) үлестірім негізінде тәуекел бақылауын қолдану.\n"
-#~ "<b>Жоқ</b> - \"болжалды бағалауы\" деген бар түрінде қолданалады.\n"
-#~ "<b>Тәуекелі төмен</b> деген қалыпты үлестірімі қолданалады.\n"
-#~ "<b>Тәуекелі жоғары</b> - бағалауы \"Төмен\" тәуекел дегеннен сәл "
-#~ "пессимисттік болады деген сөз.</p>"
-
-#~ msgid "Risk:"
-#~ msgstr "Тәуекелі:"
-
-#~ msgid ""
-#~ "<p>Risk controles the PERT distribution used when calculating the actual "
-#~ "estimate for the task.\n"
-#~ "<b>None</b> means the Expected estimate is used as is.\n"
-#~ "<b>Low risk</b> means that a normal distribution is used.\n"
-#~ "<b>High risk</b> means that the estimate will be slightly pessimistic "
-#~ "compared to Low risk.</p>"
-#~ msgstr ""
-#~ "<p>Назардағы тапсырманың есеп еткенде PERT (жобаларды жоспарлау және "
-#~ "басқару жүйесі) үлестірім негізінде тәуекел бақылауын қолдану.\n"
-#~ "<b>Жоқ</b> - \"болжалды бағалауы\" деген бар түрінде қолданалады.\n"
-#~ "<b>Тәуекелі төмен</b> деген қалыпты үлестірімі қолданалады.\n"
-#~ "<b>Тәуекелі жоғары</b> - бағалауы \"Төмен\" тәуекел дегеннен сәл "
-#~ "пессимисттік болады деген сөз.</p>"
-
-#~ msgid "Optimistic:"
-#~ msgstr "Оптимисттік:"
-
-#~ msgid "Pessimistic:"
-#~ msgstr "Пессимисттік:"
-
-#~ msgid "Started:"
-#~ msgstr "Бастаған:"
-
-#~ msgid "Finished:"
-#~ msgstr "Аяқталған:"
-
-#~ msgid "Edit mode:"
-#~ msgstr "Өңдеу режімі:"
-
-#~ msgid "Calculate effort"
-#~ msgstr "Жұмыс көлемін есептеу"
-
-#~ msgid "Per task"
-#~ msgstr "Тапсырмаға шаққанда"
-
-#~ msgid "Per resource"
-#~ msgstr "Атқарушыға шаққанда"
-
-#~ msgid "Completion"
-#~ msgstr "Бітіруі"
-
-#~ msgid "Add Entry"
-#~ msgstr "Жазуды қосу"
-
-#~ msgid "Remove Entry"
-#~ msgstr "Жазуды өшіру"
-
-#~ msgid "Per Resource"
-#~ msgstr "Атқарушыға шаққанда"
-
-#~ msgid "Prev"
-#~ msgstr "Алдыңғы"
-
-#~ msgid "Next"
-#~ msgstr "Келесі"
-
-#~ msgid "Add Resource..."
-#~ msgstr "Атқарушыны қосу..."
-
-#~ msgid "Period Definition"
-#~ msgstr "Кезең анықтауы"
-
-#~ msgid "Period length (days):"
-#~ msgstr "Кезең ұзындығы (күн):"
-
-#~ msgid "Use current date"
-#~ msgstr "Бүгінгі күн болсын"
-
-#~ msgid "Use weekday:"
-#~ msgstr "Аптадағы күн:"
-
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define WBS code for the project"
-#~ msgstr "Жобаның ЖЖҚ кодын анықтау"
-
-#~ msgid "Project Code Definition"
-#~ msgstr "Жоба кодын анықтау"
-
-#~ msgid "Code:"
-#~ msgstr "Коды:"
-
-#~ msgid "Separator:"
-#~ msgstr "Бөлгіші:"
-
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define default WBS code"
-#~ msgstr "Әдетті ЖЖҚ кодты анықтау"
-
-#~ msgid "Default Definition"
-#~ msgstr "Әдетті анықтауы"
-
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define separate WBS codes for individual levels"
-#~ msgstr "Жеке деңгейлерге бөлек ЖЖҚ кодтарын анықтау"
-
-#~ msgid "Use Levels Definition"
-#~ msgstr "Деңгейлердің анықтауы"
-
-#~ msgid "Code"
-#~ msgstr "Коды"
-
-#~ msgid "Separator"
-#~ msgstr "Бөлгіші"
-
-#~ msgid "Add Level"
-#~ msgstr "Деңгейді қосу"
-
-#~ msgid "Fractional digits:"
-#~ msgstr "Бөлшек таңбалары:"
-
-#~ msgid "From"
-#~ msgstr "Басы"
-
-#~ msgid "To"
-#~ msgstr "Аяғы"
-
-#~ msgid "Dependency Type"
-#~ msgstr "Тәуелдіктің түрі"
-
-#~ msgid "Select format:"
-#~ msgstr "Пішімін таңдау"
-
-#~ msgid "Page"
-#~ msgstr "Бет"
-
-#~ msgid "Go to first page"
-#~ msgstr "Алғашқы бетке өту"
-
-#~ msgid "Go to previous page"
-#~ msgstr "Алдыңғы бетке өту"
-
-#~ msgid "Show page"
-#~ msgstr "Бетті көрсету"
-
-#~ msgid "of"
-#~ msgstr "/"
-
-#~ msgid "Go to next page"
-#~ msgstr "Келесі бетке өту"
-
-#~ msgid "Go to last page"
-#~ msgstr "Соңғы бетке өту"
-
-#~ msgid "Enable report header"
-#~ msgstr "Баянаттың жоғарғы колонтитулы болсын"
-
-#~ msgid "Report Header"
-#~ msgstr "Баянаттың жоғарғы колонтитулы"
-
-#~ msgid "Enable report footer"
-#~ msgstr "Баянаттың төменгі колонтитулы болсын"
-
-#~ msgid "Report Footer"
-#~ msgstr "Баянаттың төменгі колонтитулы"
-
-#~ msgid "Page Header"
-#~ msgstr "Беттің жоғарғы колонтитулы"
-
-#~ msgid "Enable header on first page"
-#~ msgstr "Алғашқы бетте жоғарғы колонтитулы болсын"
-
-#~ msgid "First page"
-#~ msgstr "Алғашқы бет"
-
-#~ msgid "Enable header on last page"
-#~ msgstr "Соңғы бетте жоғарғы колонтитулы болсын"
-
-#~ msgid "Last page"
-#~ msgstr "Соңғы бет"
-
-#~ msgid "Enable header on odd pages"
-#~ msgstr "Тақ беттерде жоғарғы колонтитулы болсын"
-
-#~ msgid "Odd pages"
-#~ msgstr "Тақ беттер"
-
-#~ msgid "Enable header on even pages"
-#~ msgstr "Жұп беттерде жоғарғы колонтитулы болсын"
-
-#~ msgid "Even pages"
-#~ msgstr "Жұп беттер"
-
-#~ msgid "Enable header on all pages"
-#~ msgstr "Бүкіл беттерде жоғарғы колонтитулы болсын"
-
-#~ msgid "All pages"
-#~ msgstr "Бүкіл беттер"
-
-#~ msgid "Page Footer"
-#~ msgstr "Төменгі колонтитулы"
-
-#~ msgid "Enable footer on first page"
-#~ msgstr "Алғашқы бетте төменгі колонтитулы болсын"
-
-#~ msgid "Enable footer on odd pages"
-#~ msgstr "Тақ беттерде төменгі колонтитулы болсын"
-
-#~ msgid "Enable footer on even pages"
-#~ msgstr "Жұп беттерде төменгі колонтитулы болсын"
-
-#~ msgid "Enable footer on last page"
-#~ msgstr "Соңғы бетте төменгі колонтитулы болсын"
-
-#~ msgid "Enable footer on all pages"
-#~ msgstr "Бүкіл беттерде төменгі колонтитулы болсын"
-
-#~ msgid "Group:"
-#~ msgstr "Тобы:"
-
-#~ msgid "Choose resource from address book"
-#~ msgstr "Атқарушыны адрестік кітапшадан таңдау"
-
-#~ msgid "Initials:"
-#~ msgstr "Инициалдары:"
-
-#~ msgid "<p align=\"right\">Email:</p>"
-#~ msgstr "<p align=\"right\">Эл.поштасы:</p>"
-
-#~ msgid "Resource type:"
-#~ msgstr "Атқарушының түрі:"
-
-#~ msgid "Team"
-#~ msgstr "Топ"
-
-#~ msgid "Available:"
-#~ msgstr "Бар-жоғы:"
-
-#~ msgid "<p align=\"right\">Calendar:</p>"
-#~ msgstr "<p align=\"right\"> Күнтізбе:</p>"
-
-#~ msgid "Unlimited"
-#~ msgstr "Шектелмеген"
-
-#~ msgid "Until"
-#~ msgstr "Мына кезге дейін:"
-
-#~ msgid "Required resources:"
-#~ msgstr "Қажетті атқарушылары:"
-
-#~ msgid "Hourly rate:"
-#~ msgstr "Сағаттық бағасы:"
-
-#~ msgid "Overtime rate:"
-#~ msgstr "Уақытынан тыс жұмыс бағасы:"
-
-#~ msgid ""
-#~ "These values are used if your estimate is not in hours.\n"
-#~ "Let us say Hours per day is 8. If you estimate that a task needs 3 days "
-#~ "effort to complete, this is converted to 24 hours when the task is "
-#~ "scheduled. The actual time it will take to complete is of course "
-#~ "dependent on the availability of the person (or persons) that is assigned "
-#~ "to the task."
-#~ msgstr ""
-#~ "Бұл мәндер егерде болжам бірлігі сағат болмаса қолданылады.\n"
-#~ "Айталық, сағат/күн параметрі 8 болсын. Егер тапсырманың жұмыс көлемі 3 "
-#~ "күн десеңіз. онда бұл мерзім жоспарда 24 сағатқа айналады. Шынында бұл "
-#~ "қанша уақыт алатыны, тапырмаға бөлінген  тұлғаның (не тұлғалардың) қолы "
-#~ "бос уақытына тәуелді."
-
-#~ msgid "Hours per year:"
-#~ msgstr "Сағат/Жыл:"
-
-#~ msgid "Hours per month:"
-#~ msgstr "Сағат/Ай:"
-
-#~ msgid "Hours per week:"
-#~ msgstr "Сағат/Апта::"
-
-#~ msgid ""
-#~ "These values are used when you estimate the effort needed to complete a "
-#~ "task."
-#~ msgstr ""
-#~ "Бұл мәндер тапсырманы орындау үшін қажет жұмыс көлемін бағалауда "
-#~ "қолданылады."
-
-#~ msgid "Hours per day:"
-#~ msgstr "Сағат/Күн:"
+#. i18n: ectx: property (text), widget (QLabel, groupLabel)
+#: ui/resourcedialogbase.ui:23
+msgid "Group:"
+msgstr "Тобы:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseBtn)
+#: ui/resourcedialogbase.ui:61
+msgid "Choose resource from address book"
+msgstr "Атқарушыны адрестік кітапшадан таңдау"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_initialslabel)
+#: ui/resourcedialogbase.ui:73
+msgid "Initials:"
+msgstr "Инициалдары:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_emaillabel)
+#: ui/resourcedialogbase.ui:113
+msgid "<p align=\"right\">Email:</p>"
+msgstr "<p align=\"right\">Эл.поштасы:</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel7)
+#: ui/resourcedialogbase.ui:155
+msgid "Resource type:"
+msgstr "Атқарушының түрі:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: ui/resourcedialogbase.ui:179
+msgid "Team"
+msgstr "Топ"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_unitslabel)
+#: ui/resourcedialogbase.ui:214
+msgid "Available:"
+msgstr "Бар-жоғы:"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_calendarlabel)
+#: ui/resourcedialogbase.ui:249
+msgid "<p align=\"right\">Calendar:</p>"
+msgstr "<p align=\"right\"> Күнтізбе:</p>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbfromunlimited)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbuntilunlimited)
+#: ui/resourcedialogbase.ui:277 ui/resourcedialogbase.ui:326
+msgid "Unlimited"
+msgstr "Шектелмеген"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_untilgroup)
+#: ui/resourcedialogbase.ui:311
+msgid "Until"
+msgstr "Мына кезге дейін:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, useRequired)
+#: ui/resourcedialogbase.ui:383
+msgid "Required resources:"
+msgstr "Қажетті атқарушылары:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: ui/resourcedialogbase.ui:420
+msgid "Hourly rate:"
+msgstr "Сағаттық бағасы:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
+#: ui/resourcedialogbase.ui:440
+msgid "Overtime rate:"
+msgstr "Уақытынан тыс жұмыс бағасы:"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, KPlato::StandardWorktimeDialogBase)
+#: ui/standardworktimedialogbase.ui:16
+msgid ""
+"These values are used if your estimate is not in hours.\n"
+"Let us say Hours per day is 8. If you estimate that a task needs 3 days "
+"effort to complete, this is converted to 24 hours when the task is "
+"scheduled. The actual time it will take to complete is of course dependent "
+"on the availability of the person (or persons) that is assigned to the task."
+msgstr ""
+"Бұл мәндер егерде болжам бірлігі сағат болмаса қолданылады.\n"
+"Айталық, сағат/күн параметрі 8 болсын. Егер тапсырманың жұмыс көлемі 3 күн "
+"десеңіз. онда бұл мерзім жоспарда 24 сағатқа айналады. Шынында бұл қанша "
+"уақыт алатыны, тапырмаға бөлінген  тұлғаның (не тұлғалардың) қолы бос "
+"уақытына тәуелді."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/standardworktimedialogbase.ui:25
+msgid "Hours per year:"
+msgstr "Сағат/Жыл:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/standardworktimedialogbase.ui:51
+msgid "Hours per month:"
+msgstr "Сағат/Ай:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabe3)
+#: ui/standardworktimedialogbase.ui:80
+msgid "Hours per week:"
+msgstr "Сағат/Апта::"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
+#: ui/standardworktimedialogbase.ui:106
+msgid ""
+"These values are used when you estimate the effort needed to complete a task."
+msgstr ""
+"Бұл мәндер тапсырманы орындау үшін қажет жұмыс көлемін бағалауда қолданылады."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: ui/standardworktimedialogbase.ui:109
+msgid "Hours per day:"
+msgstr "Сағат/Күн:"
 
 #~ msgid "BCWS"
 #~ msgstr "ЖЖБК"

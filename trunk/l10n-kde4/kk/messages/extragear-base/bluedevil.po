@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 02:52+0100\n"
+"POT-Creation-Date: 2013-02-11 17:27+0100\n"
 "PO-Revision-Date: 2013-01-29 04:20+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -121,13 +121,23 @@ msgstr "файлдарды қабылдайтын құрылғының UUID-і"
 msgid "Files that will be sent"
 msgstr "Жіберілетін файлдар"
 
+#. i18n: ectx: property (text), widget (QLabel, connLabel)
+#. i18n: ectx: property (text), widget (QLabel, connecting)
+#: actionplugins/sendfile/helper/pages/connecting.ui:17
+#: wizard/pages/nopairing.ui:51
+#, no-c-format, kde-format
+msgid "Connecting to: %1"
+msgstr "%1 дегенге қосылу"
+
 #: actionplugins/sendfile/helper/pages/connectingpage.cpp:41
 #, kde-format
 msgctxt "Connecting to a Bluetooth device"
 msgid "Connecting to %1..."
 msgstr "%1 дегенге қосылу..."
 
+#. i18n: ectx: property (text), widget (QLabel, selectLbl)
 #: actionplugins/sendfile/helper/pages/selectdeviceandfilespage.cpp:87
+#: actionplugins/sendfile/helper/pages/selectfilediscover.ui:112
 msgid "Select one or more files:"
 msgstr "Жіберілетін бір не бірнеше файл:"
 
@@ -135,6 +145,16 @@ msgstr "Жіберілетін бір не бірнеше файл:"
 #, kde-format
 msgid "Selected files: <b>%1</b>"
 msgstr "Таңдалған файлдар: <b>%1</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: actionplugins/sendfile/helper/pages/selectfilediscover.ui:29
+msgid "Select a device from the list:"
+msgstr "Құрылғыны тізімінен таңдау:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: actionplugins/sendfile/helper/pages/selectfilediscover.ui:92
+msgid "Scanning"
+msgstr "Қарастыру"
 
 #: actionplugins/sendfile/helper/sendfilesjob.cpp:83
 #: actionplugins/sendfile/helper/sendfilesjob.cpp:115
@@ -274,6 +294,11 @@ msgstr "PIN дұрыс"
 msgctxt "Notification button to say that the PIN is wrong"
 msgid "PIN incorrect"
 msgstr "PIN дұрыс емес"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: daemon/helpers/requestpin/dialogWidget.ui:39
+msgid "PIN:"
+msgstr "PIN коды:"
 
 #: daemon/helpers/requestpin/requestpin.cpp:45
 #, kde-format
@@ -643,6 +668,56 @@ msgstr "Bluetooth жүйесімен әрекеттесу оңтайлы еме�
 msgid "Bluetooth is not completely enabled."
 msgstr "Bluetooth толығымен рұқсат етілмеген."
 
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: kcmodule/transfer.ui:17
+msgid "<b>Receiving</b>"
+msgstr "<b>Қабылдау</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kcmodule/transfer.ui:36
+msgid "Save files in:"
+msgstr "Файлдарды мынада сақтау:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kcmodule/transfer.ui:71
+msgid "Accept automatically:"
+msgstr "А̀втоматты қабылдайтыны:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kcmodule/transfer.ui:91
+msgid "Receive files:"
+msgstr "Қабылдайтын файлдар:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: kcmodule/transfer.ui:107
+msgid "<b>Sharing</b>"
+msgstr "<b>Ортактасу</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kcmodule/transfer.ui:120
+msgid "Share Files:"
+msgstr "Ортақ файлдар:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kcmodule/transfer.ui:140
+msgid "Require PIN:"
+msgstr "PIN коды:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: kcmodule/transfer.ui:153
+msgid "Permissions:"
+msgstr "Рұқсаттары:"
+
+#. i18n: ectx: property (text), widget (KPushButton, sharedFiles)
+#: kcmodule/transfer.ui:184
+msgid "Shared Files"
+msgstr "Ортақ файлдар"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: kcmodule/transfer.ui:212
+msgid "Shared Folder"
+msgstr "Ортақ қапшық"
+
 #: kio/bluetooth/kiobluetooth.cpp:44
 msgid "kiobluetooth"
 msgstr "kiobluetooth"
@@ -792,6 +867,41 @@ msgctxt "When the bluetooth is disabled or not powered"
 msgid "Bluetooth is Off"
 msgstr "Bluetooth сөңдірілген"
 
+#. i18n: ectx: label, entry (enabled), group (General)
+#: settings/filereceiver.kcfg:21
+msgid "Enable or disable receiving files"
+msgstr "Файлдарды қабылдауын рұқсат ету не етпеу"
+
+#. i18n: ectx: label, entry (saveUrl), group (General)
+#: settings/filereceiver.kcfg:25
+msgid "Save received files to:"
+msgstr "Қабылданған файлдарды мынада сақтау:"
+
+#. i18n: ectx: label, entry (autoAccept), group (General)
+#: settings/filereceiver.kcfg:29
+msgid "Whether allow to modify shared files"
+msgstr "Ортақ файлдарды өзгертуге бола ма, жоқ па"
+
+#. i18n: ectx: label, entry (shareEnabled), group (General)
+#: settings/filereceiver.kcfg:34
+msgid "Enable or disable file sharing"
+msgstr "Файл ортақтастыруды рұқсат ету не етпеу"
+
+#. i18n: ectx: label, entry (requirePin), group (General)
+#: settings/filereceiver.kcfg:38
+msgid "Whether require the PIN"
+msgstr "PIN коды керек па, жоқ па"
+
+#. i18n: ectx: label, entry (allowWrite), group (General)
+#: settings/filereceiver.kcfg:42
+msgid "Allow external devices to modify the shared files"
+msgstr "Ортақ файлдарды сыртқы құрылғыға өзгертуге рұқсат беру"
+
+#. i18n: ectx: label, entry (enableGlobalBluetooth), group (General)
+#: settings/global.kcfg:10
+msgid "Enable or disable the global KDE Bluetooth integration"
+msgstr "Жалпы жүйелік KDE Bluetooth біріктіруін рұқсат ету не етпеу"
+
 #: wizard/bluewizard.cpp:44
 msgid "Bluetooth Device Wizard"
 msgstr "Bluetooth құрылғы шебері"
@@ -814,6 +924,26 @@ msgstr "Bluetooth шебері"
 msgid "Device to pair with"
 msgstr "Қай құрлығымен жұптау"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: wizard/pages/discover.ui:63
+msgid "Scanning..."
+msgstr "Қарастыру..."
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: wizard/pages/discover.ui:83
+msgid "Manual PIN:"
+msgstr "PIN кодты теру:"
+
+#. i18n: ectx: property (inputMask), widget (QLineEdit, pinText)
+#: wizard/pages/discover.ui:118
+msgid "999999999; "
+msgstr "999999999; "
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, pinText)
+#: wizard/pages/discover.ui:124
+msgid "0000"
+msgstr " 0000"
+
 #: wizard/pages/discoverpage.cpp:39
 msgid "Select a device"
 msgstr "Құрылғыны таңдау"
@@ -833,6 +963,28 @@ msgstr "Жабу"
 msgctxt "This string is shown when the wizard fail"
 msgid "The setup of the device has failed"
 msgstr "Құрылғыны баптау жаңылысы"
+
+#. i18n: ectx: property (text), widget (QLabel, failLbl)
+#: wizard/pages/fail.ui:35
+#, no-c-format, kde-format
+msgid "The setup of %1 has failed"
+msgstr "%1 дегенді баптау жаңылысы"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: wizard/pages/keyboardpairing.ui:108
+msgid ""
+"Please introduce the PIN in your keyboard when it appears and press Enter"
+msgstr "PIN коды көрсетілгенде оны пернетақтада теріп Enter пернесін басыңыз"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: wizard/pages/legacypairing.ui:108
+msgid "Please introduce the PIN in your device when it appears"
+msgstr "құрылғы көрінгенде оның PIN кодын келтіріңіз"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: wizard/pages/services.ui:19
+msgid "The following compatible services have been found:"
+msgstr "Табылған үйлесімді қызметтер:"
 
 #: wizard/pages/servicespage.cpp:32
 msgid "Service Selection"
@@ -866,94 +1018,8 @@ msgid ""
 "Please, confirm that the PIN displayed on \"%1\" matches the wizard one."
 msgstr "\"%1\" дегендегі PIN код шебердегімен сәйкестігін құптаңыз."
 
-#~ msgid "Connecting to: %1"
-#~ msgstr "%1 дегенге қосылу"
-
-#~ msgid "Select a device from the list:"
-#~ msgstr "Құрылғыны тізімінен таңдау:"
-
-#~ msgid "Scanning"
-#~ msgstr "Қарастыру"
-
-#~ msgid "PIN:"
-#~ msgstr "PIN коды:"
-
-#~ msgid "<b>Receiving</b>"
-#~ msgstr "<b>Қабылдау</b>"
-
-#~ msgid "Save files in:"
-#~ msgstr "Файлдарды мынада сақтау:"
-
-#~ msgid "Accept automatically:"
-#~ msgstr "А̀втоматты қабылдайтыны:"
-
-#~ msgid "Receive files:"
-#~ msgstr "Қабылдайтын файлдар:"
-
-#~ msgid "<b>Sharing</b>"
-#~ msgstr "<b>Ортактасу</b>"
-
-#~ msgid "Share Files:"
-#~ msgstr "Ортақ файлдар:"
-
-#~ msgid "Require PIN:"
-#~ msgstr "PIN коды:"
-
-#~ msgid "Permissions:"
-#~ msgstr "Рұқсаттары:"
-
-#~ msgid "Shared Files"
-#~ msgstr "Ортақ файлдар"
-
-#~ msgid "Shared Folder"
-#~ msgstr "Ортақ қапшық"
-
-#~ msgid "Enable or disable receiving files"
-#~ msgstr "Файлдарды қабылдауын рұқсат ету не етпеу"
-
-#~ msgid "Save received files to:"
-#~ msgstr "Қабылданған файлдарды мынада сақтау:"
-
-#~ msgid "Whether allow to modify shared files"
-#~ msgstr "Ортақ файлдарды өзгертуге бола ма, жоқ па"
-
-#~ msgid "Enable or disable file sharing"
-#~ msgstr "Файл ортақтастыруды рұқсат ету не етпеу"
-
-#~ msgid "Whether require the PIN"
-#~ msgstr "PIN коды керек па, жоқ па"
-
-#~ msgid "Allow external devices to modify the shared files"
-#~ msgstr "Ортақ файлдарды сыртқы құрылғыға өзгертуге рұқсат беру"
-
-#~ msgid "Enable or disable the global KDE Bluetooth integration"
-#~ msgstr "Жалпы жүйелік KDE Bluetooth біріктіруін рұқсат ету не етпеу"
-
-#~ msgid "Scanning..."
-#~ msgstr "Қарастыру..."
-
-#~ msgid "Manual PIN:"
-#~ msgstr "PIN кодты теру:"
-
-#~ msgid "999999999; "
-#~ msgstr "999999999; "
-
-#~ msgid "0000"
-#~ msgstr " 0000"
-
-#~ msgid "The setup of %1 has failed"
-#~ msgstr "%1 дегенді баптау жаңылысы"
-
-#~ msgid ""
-#~ "Please introduce the PIN in your keyboard when it appears and press Enter"
-#~ msgstr ""
-#~ "PIN коды көрсетілгенде оны пернетақтада теріп Enter пернесін басыңыз"
-
-#~ msgid "Please introduce the PIN in your device when it appears"
-#~ msgstr "құрылғы көрінгенде оның PIN кодын келтіріңіз"
-
-#~ msgid "The following compatible services have been found:"
-#~ msgstr "Табылған үйлесімді қызметтер:"
-
-#~ msgid "Connecting to %1 ..."
-#~ msgstr "%1 дегенге қосылу ..."
+#. i18n: ectx: property (text), widget (QLabel, confirmLbl)
+#: wizard/pages/ssppairing.ui:117
+#, no-c-format, kde-format
+msgid "Connecting to %1 ..."
+msgstr "%1 дегенге қосылу ..."
