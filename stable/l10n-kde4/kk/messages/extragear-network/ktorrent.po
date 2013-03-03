@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-12-19 08:39+0100\n"
-"PO-Revision-Date: 2013-02-22 07:13+0600\n"
+"PO-Revision-Date: 2013-03-03 07:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -281,15 +281,14 @@ msgstr "Диалог"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: ktorrent/dialogs/addpeersdlg.ui:20
-#, fuzzy
 msgid ""
 "Enter the IP address or hostname and port number of the peer you wish to add:"
-msgstr "Қосылғыңыз келген Sametime сервердің IP-адресі немесе хост атауы:"
+msgstr "Қосылғыңыз келген қатарластың IP-адресі немесе хост атауы және порты:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: ktorrent/dialogs/addpeersdlg.ui:34
 msgid "Peer:"
-msgstr ""
+msgstr "Қатарласы:"
 
 #. i18n: ectx: property (toolTip), widget (QLineEdit, m_ip)
 #: ktorrent/dialogs/addpeersdlg.ui:43
@@ -299,12 +298,15 @@ msgid ""
 "<p><span style=\" font-weight:600;\">Note:</span> We accept both IPv4 and "
 "IPv6 addresses</p>\n"
 msgstr ""
+"<p>Қосылғыңыз келген қатарласының IP адресі не хост атауы.</p>\n"
+"<p><span style=\" font-weight:600;\">Ескерту:</span> Адресі IPv4 "
+"түрінде де, IPv6 түрінде де қабылданады</p>\n"
 
 #. i18n: ectx: property (text), widget (QLineEdit, m_ip)
 #. i18n: ectx: property (text), widget (KLineEdit, m_ip_to_add)
 #: ktorrent/dialogs/addpeersdlg.ui:46 ktorrent/ipfilterwidget.ui:34
 msgid "127.0.0.1"
-msgstr ""
+msgstr "127.0.0.1"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -318,7 +320,7 @@ msgstr ""
 #: plugins/scripting/scripts/email_notifications/emailconfig.ui:61
 #: plugins/webinterface/webinterfaceprefwidget.ui:148
 msgid "Port:"
-msgstr ""
+msgstr "Порты:"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_add_tracker)
 #. i18n: ectx: property (text), widget (KPushButton, m_add_node)
@@ -331,7 +333,7 @@ msgstr ""
 #: ktorrent/dialogs/torrentcreatordlg.ui:319 ktorrent/ipfilterwidget.ui:46
 #: plugins/search/searchpref.ui:160 plugins/syndication/managefiltersdlg.ui:60
 msgid "Add"
-msgstr ""
+msgstr "Қосу"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_close_button)
 #. i18n: ectx: property (text), widget (KPushButton, m_close)
@@ -340,24 +342,24 @@ msgstr ""
 #: ktorrent/dialogs/torrentmigratordlg.ui:61 ktorrent/ipfilterwidget.ui:106
 #: ktorrent/view/scanextender.ui:221
 msgid "Close"
-msgstr ""
+msgstr "Жабу"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:89
 msgid "Show a file tree"
-msgstr ""
+msgstr "Файлдар бұтағы көрсетілсін"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:92
 msgid "Show a file list"
-msgstr ""
+msgstr "Файлдар тізімі көрсетілсін"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:101 plugins/infowidget/fileview.cpp:72
 msgid "Filter"
-msgstr ""
+msgstr "Сүзгі"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:118
 #, kde-format
 msgid "Opening %1"
-msgstr ""
+msgstr "%1 дегенді ашу"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:227
 msgid ""
@@ -365,6 +367,9 @@ msgid ""
 "directory. Do you want to import these files and use the completed downloads "
 "directory as the location?"
 msgstr ""
+"Торренттің кейбір файлдары жүктеуі біткен қапшығында табылды. "
+"Оларды импорттап жүктеуі біткен қапшығын оның орналасу орны "
+"қылу керек пе?"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:230
 msgid ""
@@ -372,6 +377,9 @@ msgid ""
 "directory. Do you want to import these files and use the completed downloads "
 "directory as the location?"
 msgstr ""
+"Торренттің бүкіл файлдары жүктеуі біткен қапшығында табылды. "
+"Оларды импорттап жүктеуі біткен қапшығын оның орналасу орны "
+"қылу керек пе?"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:234
 #, kde-format
@@ -379,26 +387,30 @@ msgid ""
 "The file <b>%1</b> was found in the completed downloads directory. Do you "
 "want to import this file?"
 msgstr ""
+"<b>%1</b> файлы жүктеуі біткен қапшығында табылды. "
+"Оны импорттауды қалайсыз ба?"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:249
 #: ktorrent/dialogs/fileselectdlg.cpp:266
 #, kde-format
 msgid "The directory %1 does not exist, do you want to create it?"
-msgstr ""
+msgstr "%1 деген қапшық жоқ. Оны құру керек пе?"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:299
 msgid ""
 "You have deselected the following existing files. You will lose all data in "
 "these files, are you sure you want to do this?"
 msgstr ""
+"Келесі файлдар таңдауыңыздан шықты. Бұл файлдардағы бүкіл дерек "
+"жоғалса да, бәлібір амалды істемексіз бе?"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:303
 msgid "Yes, delete the files"
-msgstr ""
+msgstr "Иә, файлдар өшірілсін"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:304
 msgid "No, keep the files"
-msgstr ""
+msgstr "Жоқ, файлдар қалсын"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:329
 #, kde-format
@@ -407,51 +419,54 @@ msgid ""
 "following torrents. Torrents are not allowed to write to the same files. "
 "Please select a different location."
 msgstr ""
+"<b>%1</b> торрентін ашқанда, оның бір не бірнеше файлы төменде "
+"көрсетілген торрентпен ортақ болады. Бірнеше торррентке бір "
+"файлға жазуға болмайды. Басқа орынды таңдаңыз.."
 
 #: ktorrent/dialogs/fileselectdlg.cpp:430 ktorrent/dialogs/pastedialog.cpp:62
 #: ktorrent/dialogs/torrentcreatordlg.cpp:118 libktcore/groups/allgroup.cpp:26
 msgid "All Torrents"
-msgstr ""
+msgstr "Бүкіл торренттер"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:507
 msgid "<b>Unable to determine free space</b>"
-msgstr ""
+msgstr "<b>Бос орын анықталмады</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:517
 #, kde-format
 msgid "%1 (%2 in use by existing files)"
-msgstr ""
+msgstr "%1 (%2 бар файлдар пайдалануда)"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:526
 #, kde-format
 msgctxt "We are %1 bytes short of what we need"
 msgid "%1 short"
-msgstr ""
+msgstr "%1 жетпейді"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:558
 msgid "Existing files: <b>None</b>"
-msgstr ""
+msgstr "Бар файлдар: <b>Жоқ</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:560
 msgid "Existing files: <b>All</b>"
-msgstr ""
+msgstr "Бар файлдар: <b>Бүкілі</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:562
 #, kde-format
 msgid "Existing files: <b>%1</b> of <b>%2</b>"
-msgstr ""
+msgstr "Бар файлдар: <b>%1</b>/<b>%2</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:569
 msgid "Existing file: <b>No</b>"
-msgstr ""
+msgstr "Файл бар ма: <b>Жоқ</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:574
 msgid "Existing file: <b>Yes</b>"
-msgstr ""
+msgstr "Файл бар ма: <b>Иә</b>"
 
 #: ktorrent/dialogs/fileselectdlg.cpp:654
 msgid "Clear History"
-msgstr ""
+msgstr "Тарихын тазалау"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, FileSelectDlg)
 #: ktorrent/dialogs/fileselectdlg.ui:14
@@ -487,7 +502,7 @@ msgstr ""
 #: plugins/mediaplayer/mediacontroller.ui:71
 #: plugins/mediaplayer/mediacontroller.ui:84
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_moveCompleted)
 #: ktorrent/dialogs/fileselectdlg.ui:52
@@ -512,7 +527,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ktorrent/dialogs/fileselectdlg.ui:96
 msgid "Text encoding:"
-msgstr ""
+msgstr "Мәтін кодтамасы:"
 
 #. i18n: ectx: property (toolTip), widget (QTreeView, m_file_view)
 #: ktorrent/dialogs/fileselectdlg.ui:123
@@ -7309,3 +7324,4 @@ msgstr " сек"
 #: plugins/zeroconf/zeroconfplugin.cpp:68
 msgid "ZeroConf"
 msgstr "ZeroConf"
+
