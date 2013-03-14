@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-05 03:15+0100\n"
-"PO-Revision-Date: 2013-03-13 05:45+0600\n"
+"PO-Revision-Date: 2013-03-15 04:44+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -1570,6 +1570,14 @@ msgid ""
 "%s<term>%: term used to separate nicknames in %u\n"
 "%u: List of selected nicknames"
 msgstr ""
+"%c: Назардағы арна\n"
+"%i: Енгізу өрістегі мәтін\n"
+"%k: Арна кілті\n"
+"%K: Серверінің паролі\n"
+"%n: Команданы, енгізу өрістің өрнына, тікелей серверге жіберу\n"
+"%o: Назардағы бүркеншік ат\n"
+"%s<шарт>%: %u дегенде бүркеншік аттарды бөліп алатын шарт\n"
+"%u: Таңдалған бүркеншік аттар тізімі"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, buttonListView)
 #: src/config/quickbuttons_configui.ui:74
@@ -1601,6 +1609,8 @@ msgstr "Батырма амалы:"
 #: src/config/quickbuttons_configui.ui:177
 msgid "Show quick buttons that operate on nicknames in nickname context menus"
 msgstr ""
+"Бүркеншік аттарының контекстік мәзірінде онымен шұғыл айналысу "
+"батырмалар көрсетілсін"
 
 #: src/config/settingsdialog.cpp:46
 msgid "Interface"
@@ -3270,19 +3280,19 @@ msgstr ""
 
 #: src/identitydialog.cpp:81
 msgid "Standard NickServ"
-msgstr ""
+msgstr "Стандартты NickServ"
 
 #: src/identitydialog.cpp:82
 msgid "Server Password"
-msgstr ""
+msgstr "Сервердің паролі"
 
 #: src/identitydialog.cpp:83
 msgid "SASL"
-msgstr ""
+msgstr "SASL"
 
 #: src/identitydialog.cpp:85
 msgid "SSL Client Certificate"
-msgstr ""
+msgstr "SSL клиент күәлігі"
 
 #: src/identitydialog.cpp:92
 msgid " minute"
@@ -3356,12 +3366,16 @@ msgid ""
 "The password entered here will override the one set in the server settings, "
 "if any."
 msgstr ""
+"Бұнда келтірілген пароль, сервер баптауында паролі орнатылған болса, "
+"оны ауыстырады."
 
 #: src/identitydialog.cpp:410
 msgid ""
 "SSL Client Certificate authentication forces SSL to be enabled for a "
 "connection, overriding any server settings."
 msgstr ""
+"SSL клиент күәлік SSL аутентификациясы, сервер баптауына қарамастан, "
+"SSL-ді мәжбүрлеп қосады."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/identitydialog.ui:25
@@ -3429,7 +3443,7 @@ msgstr "Команда:"
 #. i18n: ectx: property (text), widget (QLabel, saslAccountLabel)
 #: src/identitydialog.ui:258
 msgid "Account:"
-msgstr ""
+msgstr "Тіркелгі:"
 
 #. i18n: ectx: property (text), widget (QLabel, authPasswordLabel)
 #: src/identitydialog.ui:271
@@ -3439,12 +3453,12 @@ msgstr "Пар&олі:"
 #. i18n: ectx: property (text), widget (QLabel, pemClientCertFileLabel)
 #: src/identitydialog.ui:288
 msgid "PEM file:"
-msgstr ""
+msgstr "PEM файлы:"
 
 #. i18n: ectx: property (filter), widget (KUrlRequester, m_pemClientCertFile)
 #: src/identitydialog.ui:295
 msgid "*.pem"
-msgstr ""
+msgstr "*.pem"
 
 #. i18n: ectx: attribute (title), widget (QWidget, awayWidget)
 #: src/identitydialog.ui:306
@@ -3779,13 +3793,13 @@ msgstr "Кіру"
 #, kde-format
 msgctxt "%1 = our hostmask, %2 = channel"
 msgid "You (%1) have joined the channel %2."
-msgstr ""
+msgstr "Сіз (%1) %2 арнасына кірдіңіз."
 
 #: src/irc/channel.cpp:1105
 #, kde-format
 msgctxt "%1 is the nick joining and %2 the hostmask of that nick"
 msgid "%1 (%2) has joined this channel."
-msgstr ""
+msgstr "Осы арнаға %1 (%2) кірді."
 
 #: src/irc/channel.cpp:1131 src/irc/channel.cpp:1133 src/irc/channel.cpp:1155
 #: src/irc/channel.cpp:1158 src/irc/query.cpp:514 src/irc/query.cpp:522
@@ -3797,13 +3811,13 @@ msgstr "Шығу"
 #: src/irc/channel.cpp:1131
 #, kde-format
 msgid "You (%1) have left this server."
-msgstr ""
+msgstr "Сіз (%1) бұл серверінен кеттініз."
 
 #: src/irc/channel.cpp:1133
 #, kde-format
 msgctxt "%1 = our hostmask, %2 = reason"
 msgid "You (%1) have left this server (%2)."
-msgstr ""
+msgstr "Сіз (%1) бұл серверінен (%2) кеттініз."
 
 #: src/irc/channel.cpp:1139 src/irc/channel.cpp:1141 src/irc/channel.cpp:1164
 #: src/irc/channel.cpp:1167 src/viewer/ircview.cpp:774
@@ -3820,29 +3834,29 @@ msgstr "%1 арнадан кеттіңіз."
 #, kde-format
 msgctxt "%1 = our hostmask, %2 = channel, %3 = reason"
 msgid "You (%1) have left channel %2 (%3)."
-msgstr ""
+msgstr "Сіз (%1) %2(%3) арнасынан кеттіңіз."
 
 #: src/irc/channel.cpp:1155
 #, kde-format
 msgid "%1 (%2) has left this server."
-msgstr ""
+msgstr "%1 (%2) бұл серверінен кетті."
 
 #: src/irc/channel.cpp:1159
 #, kde-format
 msgctxt "%1 = nick, %2 = hostname, %3 = reason"
 msgid "%1 (%2) has left this server (%3)."
-msgstr ""
+msgstr "%1 (%2) бұл серверінен (%3) кетті."
 
 #: src/irc/channel.cpp:1164
 #, kde-format
 msgid "%1 (%2) has left this channel."
-msgstr ""
+msgstr "%1 (%2) бұл арнадан кетті."
 
 #: src/irc/channel.cpp:1168
 #, kde-format
 msgctxt "%1 = nick, %2 = hostmask, %3 = reason"
 msgid "%1 (%2) has left this channel (%3)."
-msgstr ""
+msgstr "%1 (%2) бұл арнадан (%3) кетті."
 
 #: src/irc/channel.cpp:1216 src/irc/channel.cpp:1218 src/irc/channel.cpp:1225
 #: src/irc/channel.cpp:1230 src/irc/channel.cpp:1251 src/irc/channel.cpp:1253
@@ -5205,19 +5219,19 @@ msgstr ""
 #: src/irc/inputfilter.cpp:2155
 #, kde-format
 msgid "You are now logged in as %1."
-msgstr ""
+msgstr "Қазір Сіз %1 деп кіргенсіз."
 
 #: src/irc/inputfilter.cpp:2163
 msgid "SASL authentication successful."
-msgstr ""
+msgstr "SASL аутентификациясы сәтті өтті."
 
 #: src/irc/inputfilter.cpp:2176
 msgid "SASL authentication attempt failed."
-msgstr ""
+msgstr "SASL аутентификация өтпеді."
 
 #: src/irc/inputfilter.cpp:2185
 msgid "SASL authentication aborted."
-msgstr ""
+msgstr "SASL аутентификация доғарылды."
 
 #: src/irc/inputfilter.cpp:2217
 #, kde-format
@@ -5345,6 +5359,19 @@ msgid ""
 "p><p>Hovering over any nick shows their current status. See the Konversation "
 "Handbook for more information.</p></qt>"
 msgstr ""
+"<qt><p>Бұнда бүкіл арнадағылар көрсетіледі. Пайдаланушының бүкеншік "
+"аты мен оның күй-жайын көрсететін сурет.<br /></p><table><tr><th><img src="
+"\"%1\"/></th><td>Бұл арна әкімшісі.</td></tr><tr><th><img src=\"%2\"/>"
+"</th><td>Бұл арна иесі.</td></tr><tr><th><img src=\"%3\"/></th><td>Бұл "
+"арна операторы.</td></tr><tr><th><img src=\"%4\"/></th><td>Бұл "
+"арнаның жартылай операторы.</td></tr><tr><th><img src=\"%5\"/></th><td>"
+"Бұл дауысы бар тұлға, сондықтан .ол модерацияланатын арнаға жаза алады."
+"</td></tr><tr><th><img src=\"%6\"/></th><td>Бұл ешбір артықшылығы жоқ "
+"кәдімгі пайдаланушы.</td></tr><tr><th><img src=\"%7\"/></th>"
+"<td>Бұл адам орында жоқ дегенннің белгісі.</td></tr></table><p>Әкімші, "
+"иесі, жартылай операторының құқықтары түрлі IRC серверлерінде сан алуан. "
+"Бұркеншік атың үстінен меңзеп өткенде оның қазіргі күйін көрсетеді. Қосымша "
+"мәліметті Konversation анықтамасынан біліңіз.</p></qt>"
 
 #: src/irc/nicksonline.cpp:42
 msgid "Watched Nicks Online"
@@ -5990,13 +6017,13 @@ msgstr "Жеке әңгімені жабу"
 #, kde-format
 msgctxt "%1 = nick, %2 = hostmask"
 msgid "%1 (%2) has left this server."
-msgstr ""
+msgstr "%1 (%2) бұл серверінен кетті."
 
 #: src/irc/query.cpp:522
 #, kde-format
 msgctxt "%1 = nick, %2 = hostmask, %3 = reason"
 msgid "%1 (%2) has left this server (%3)."
-msgstr ""
+msgstr "%1 (%2) бұл серверінен (%3) кетті."
 
 #: src/irc/server.cpp:406 src/irc/server.cpp:416
 msgid "Warning"
@@ -6013,29 +6040,32 @@ msgstr "Сервері табылды, байланысу..."
 
 #: src/irc/server.cpp:667
 msgid "Negotiating capabilities with server..."
-msgstr ""
+msgstr "Серверінің мүмкіндіктерін білу..."
 
 #: src/irc/server.cpp:669
 msgid "Requesting SASL capability..."
-msgstr ""
+msgstr "SASL мүмкіндігін сұрау..."
 
 #: src/irc/server.cpp:682
 msgid "Closing capabilities negotiation."
-msgstr ""
+msgstr "Мүмкіндіктер туралы келіссөзін аяқтау."
 
 #: src/irc/server.cpp:690
 msgid "Capabilities negotiation failed: Appears not supported by server."
 msgstr ""
+"Мүмкіндіктер туралы келіссөз жаңылысы: сервер жақтан қолдауы жақ сияқты."
 
 #: src/irc/server.cpp:699
 msgid ""
 "SASL capability acknowledged by server, attempting SASL PLAIN "
 "authentication..."
 msgstr ""
+"Сервер SASL протоколын таниды, SASL PLAIN аутентификация "
+"талпынысы..."
 
 #: src/irc/server.cpp:707
 msgid "SASL capability denied or not supported by server."
-msgstr ""
+msgstr "Сервер SASL аутентификациядан бас тартты немесе оны қолдамайды."
 
 #: src/irc/server.cpp:789 src/irc/server.cpp:886
 msgid "SSL Connection Error"
@@ -6640,11 +6670,11 @@ msgstr "Ө&шіру"
 
 #: src/irc/topichistorymodel.cpp:46
 msgid "Unknown"
-msgstr ""
+msgstr "Беймәлім"
 
 #: src/irc/topichistorymodel.cpp:190
 msgid "Text"
-msgstr ""
+msgstr "Мәтін"
 
 #: src/irc/topichistorymodel.cpp:193
 msgid "Author"
@@ -6652,7 +6682,7 @@ msgstr "Авторы"
 
 #: src/irc/topichistorymodel.cpp:196
 msgid "Time"
-msgstr ""
+msgstr "Уақыт"
 
 #: src/konsolepanel.cpp:28 src/viewer/viewcontainer.cpp:2207
 #: src/viewer/viewcontainer.cpp:2208
@@ -6960,6 +6990,11 @@ msgid ""
 "Meet friends on the net, make new acquaintances and lose yourself in talk "
 "about your favorite subject."
 msgstr ""
+"Konversation деген Internet Relay Chat (IRC) клиенті протоколы"
+"бойынша істейтін бағдарлама.\n"
+"\n"
+"Достарымен желіде кездесіңіз, жаңа тұлғаларымен танысып "
+"әңгімелерде рақаттаныңыз."
 
 #: src/main.cpp:46
 msgid "Dario Abatianni"
@@ -7308,6 +7343,8 @@ msgstr "Konversation-ді доғарып қайта жегу (егер жегі�
 msgid ""
 "Sets KUniqueApplication::NonUniqueInstance (debug only, use with caution)"
 msgstr ""
+"KUniqueApplication::NonUniqueInstance орнатады (абайлаңыз, тек "
+"жөндеуге арналған)"
 
 #: src/mainwindow.cpp:123
 msgid "Restart"
@@ -7458,7 +7495,7 @@ msgstr "Байланысқанда кіру"
 
 #: src/mainwindow.cpp:376
 msgid "Connect at Startup"
-msgstr ""
+msgstr "Бастағанда қосылу"
 
 #: src/mainwindow.cpp:381
 msgid "Default"
@@ -7691,7 +7728,7 @@ msgstr "Ашу"
 #: src/notificationhandler.cpp:293
 #, kde-format
 msgid "%1 changed modes in %2: %3"
-msgstr ""
+msgstr "%2 дегенде %1 күйін өзгертті: %3"
 
 #: src/notificationhandler.cpp:308
 #, kde-format
@@ -8698,7 +8735,7 @@ msgstr[0] "Сәйкестіктерін кетіру"
 
 #: src/viewer/irccontextmenus.cpp:1007
 msgid "Query author"
-msgstr ""
+msgstr "Авторымен жеке әңгімелесу"
 
 #: src/viewer/ircinput.cpp:61
 msgid ""
@@ -8729,7 +8766,7 @@ msgstr ""
 
 #: src/viewer/ircinput.cpp:95
 msgid "Spell Checking Language"
-msgstr ""
+msgstr "Емлесін тексеретін тіл"
 
 #: src/viewer/ircinput.cpp:554
 #, kde-format
@@ -8911,6 +8948,9 @@ msgid ""
 "\n"
 "All associated tabs will be closed as well."
 msgstr ""
+"'%1' дегенді рас жаппақсыз ба?\n"
+"\n"
+"Онымен байланысты қойындылар да жабылады."
 
 #: src/viewer/statuspanel.cpp:228
 msgid "Close Tab"
@@ -8923,6 +8963,9 @@ msgid ""
 "\n"
 "All associated tabs will be closed as well."
 msgstr ""
+"'%1' дегеннен ажыратылмақсыз ба?\n"
+"\n"
+"Онымен байланысты қойындылар да жабылады."
 
 #: src/viewer/statuspanel.cpp:238
 msgid "Disconnect From Server"
@@ -8934,18 +8977,18 @@ msgstr "Ажырату"
 
 #: src/viewer/topicedit.cpp:172
 msgid "Delete excess text"
-msgstr ""
+msgstr "Артық мәтінді өшіру"
 
 #: src/viewer/topicedit.cpp:186
 #, kde-format
 msgid "Text past the server limit of %1 characters is shown in color."
-msgstr ""
+msgstr "Орналастратын мәтін таңбалар шегі (%1) бояумен көрсетілген."
 
 #: src/viewer/topichistoryview.cpp:54
 #, kde-format
 msgctxt "%1 is a timestamp, %2 is the author's name"
 msgid "On %1 by %2"
-msgstr ""
+msgstr "%1, %2 бойынша"
 
 #: src/viewer/topichistoryview.cpp:228
 msgid ""
@@ -9041,3 +9084,5 @@ msgstr "Арна тізімінің ескертуі"
 #: src/viewer/viewcontainer.cpp:2634
 msgid "Watched Nicks"
 msgstr "Бақылаудағылар"
+
+
