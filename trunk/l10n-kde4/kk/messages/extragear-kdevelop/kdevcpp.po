@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-25 03:01+0100\n"
-"PO-Revision-Date: 2013-04-16 05:24+0600\n"
+"PO-Revision-Date: 2013-04-18 04:34+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -208,7 +208,7 @@ msgstr "Жаңартқан кезде мәлімдемесі жоғалды."
 
 #: codegen/simplerefactoring.cpp:187
 msgid "Cannot create definition for this declaration."
-msgstr "Бұл мәәлімдеме анықтамасы құрылмады."
+msgstr "Бұл мәлімдеме анықтамасы құрылмады."
 
 #: codegen/simplerefactoring.cpp:192
 #, kde-format
@@ -333,6 +333,10 @@ msgid ""
 "resolve the include-paths using the make utility. For this, set up a mapping "
 "from a source- to a build-directory here."
 msgstr ""
+"Жобаңыз қарапайым Makefile-ды қолданатын болса, make утилитаның "
+"көмегімен кірме-файл жолдарын автоматты түрде табуға болады. Ол үшін, "
+"осында бқстапқы код пен құрастыру каталог арасындағы сәйкестігін "
+"орнатыңыз."
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: codegen/ui/custom_include_paths.ui:86
@@ -347,7 +351,7 @@ msgstr "Құрастыру каталогы:"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: codegen/ui/custom_include_paths.ui:111
 msgid "Custom Include Paths"
-msgstr "Әдеттен тыс кірме жолдарыы"
+msgstr "Әдеттен тыс кірме жолдары"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: codegen/ui/custom_include_paths.ui:117
@@ -355,6 +359,8 @@ msgid ""
 "You can add a list of custom include paths here. Relative paths will be "
 "resolved from the storage directory."
 msgstr ""
+"Әдеттен тыс кірме-файлдар жолдар тізімін осында қосуға болады. Өрбіген "
+"жолдар сақтау каталогынан деп саналады."
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: codegen/ui/custom_include_paths.ui:140
@@ -362,6 +368,9 @@ msgid ""
 "Note: These settings do not affect the compiler or the project in any way, "
 "they are only used to find included headers within KDevelop."
 msgstr ""
+"Ескерту: Бұл параметрлері ешбір жолымен компилятор не жобаға "
+"тиісті емес, олар тек KDevelop-та кірме-файлдарды ғана табуға "
+"арналған."
 
 #. i18n: ectx: property (whatsThis), widget (QWidget, PrivateImplementationDialog)
 #: codegen/ui/privateimplementation.ui:14
@@ -369,16 +378,18 @@ msgid ""
 "Options & settings to move the private data fields of a class into a private "
 "structure"
 msgstr ""
+"Кластың сырлы (private) дерек өрістерін сырлы (private) құрылымға орналастыру "
+"амал мен параметрлері"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: codegen/ui/privateimplementation.ui:42
 msgid "Private structure name:"
-msgstr ""
+msgstr "Сырлы (private) құрылым атауы:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, optionGroup)
 #: codegen/ui/privateimplementation.ui:55
 msgid "Options"
-msgstr ""
+msgstr "Амалдар"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, classOption)
 #: codegen/ui/privateimplementation.ui:75
@@ -399,11 +410,26 @@ msgid ""
 "the private implementation structure be declared as <span style=\" font-"
 "style:italic;\">class</span> with public access.</p></body></html>"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Әдетте, іске асырудағы "
+"сырлы (private) құрылымдары, ашық болу үшін <span style=\" font-style:italic;"
+"\">struct</span> деп мәлімделеді.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Осы көзді белгілесеңіз, "
+"олар ашық <span style=\" font-style:italic;\">class</span> деп жарияланады."
+"</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, classOption)
 #: codegen/ui/privateimplementation.ui:78
 msgid "Use class instead of struct"
-msgstr ""
+msgstr "struct орнына class болсын"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, variableOption)
 #: codegen/ui/privateimplementation.ui:97
@@ -428,11 +454,31 @@ msgid ""
 "with types that do not offer default constructors are moved regardless of "
 "the state of this option.</p></body></html>"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Конструктордың "
+"инициализация "
+"тізіміндегі айнымалыларды сырлы (private) құрылымының конструктор "
+"инициализациясының тізіміне жылжыту.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:12pt; font-weight:600;\">Ескерту:</span> Әдеттегі конструкторы жоқ "
+"сілтеме не айнымалының бүкіл түрлері, бұл параметрге қарамастан, бәрі де "
+"жылжытылады.</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, variableOption)
 #: codegen/ui/privateimplementation.ui:100
 msgid "Move Variable initialization to private structure"
-msgstr ""
+msgstr "Айнымалы инициализациясы сырлы құрылымға ауыссын"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, methodOption)
 #: codegen/ui/privateimplementation.ui:113
@@ -440,128 +486,130 @@ msgid ""
 "Move all currently declared private methods to the private implementation "
 "structure."
 msgstr ""
+"Жарияланған сырлы (private) әдістері сырлы іске асыру құрылымға "
+"ауысын."
 
 #. i18n: ectx: property (text), widget (QCheckBox, methodOption)
 #: codegen/ui/privateimplementation.ui:116
 msgid "Move Private methods"
-msgstr ""
+msgstr "Сырлы (Private) әдістері жылжытылсын"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: codegen/ui/privateimplementation.ui:130
 msgid "Pointer name:"
-msgstr ""
+msgstr "Сілтеме атауы:"
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, pointerName)
 #: codegen/ui/privateimplementation.ui:146
 msgid ""
 "The name of the member variable that will be the pointer held to the private "
 "implementation"
-msgstr ""
+msgstr "Сырлы (private) іске асыруға сілтейтін мүше айнымалының атауы"
 
 #. i18n: ectx: property (text), widget (KLineEdit, pointerName)
 #: codegen/ui/privateimplementation.ui:149
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #: codegen/unresolvedincludeassistant.cpp:71
 msgid "Setup Custom Include Paths"
-msgstr ""
+msgstr "Әдеттен тыс кірме жолдарын орнату"
 
 #: codegen/unresolvedincludeassistant.cpp:94
 #, kde-format
 msgid "Failed to save custom include paths in directory: %1"
-msgstr ""
+msgstr "Әдеттен тыс кірме жолдарын мына каталогқа сақтау жаңылысы: %1"
 
 #: codegen/unresolvedincludeassistant.cpp:111
 msgid "Add Custom Include Path"
-msgstr ""
+msgstr "Әдеттен тыс кірме жолдарын қосу"
 
 #: codegen/unresolvedincludeassistant.cpp:124
 msgid "Open Project"
-msgstr ""
+msgstr "Жобаны ашу"
 
 #: codegen/unresolvedincludeassistant.cpp:128
 #, kde-format
 msgid "Include file \"%1\" not found"
-msgstr ""
+msgstr "\"%1\" қірме-файлы табылмады"
 
 #: cppduchain/contextbuilder.cpp:150
 #, kde-format
 msgid "Could not resolve base class, adding it indirectly: %1"
-msgstr ""
+msgstr "Негізгі класы таңылмай, ол жанамалы түрде қосылды: %1"
 
 #: cppduchain/contextbuilder.cpp:155
 #, kde-format
 msgid "Invalid base class: %1"
-msgstr ""
+msgstr "Негізді класы жарамсыз: %1"
 
 #: cppduchain/missingdeclarationassistant.cpp:113
 msgid "<b>local</b> variable"
-msgstr ""
+msgstr "<b>жергілікті</b> айнымалысы"
 
 #: cppduchain/missingdeclarationassistant.cpp:117
 #, kde-format
 msgid "Create local declaration %1"
-msgstr ""
+msgstr "%1 жергілікті мәлімдемесі құрылмады"
 
 #: cppduchain/missingdeclarationassistant.cpp:227
 #, kde-format
 msgctxt "%1: access, %2: identifier/signature"
 msgid "Declare %1 %2"
-msgstr ""
+msgstr "%1 %2 мәлімдеуі"
 
 #: cppduchain/missingdeclarationassistant.cpp:346
 #, kde-format
 msgctxt "assistant, declare member in class identified by %1"
 msgid "member of <code>%1</code>:"
-msgstr ""
+msgstr "<code>%1</code> мүшесі:"
 
 #: cppduchain/missingdeclarationassistant.cpp:352
 #, kde-format
 msgctxt "assistant, declare %1 as member of class identified by %2"
 msgid "Declare <code>'%1'</code> as member of <code>%2</code>"
-msgstr ""
+msgstr "<code>'%1'</code> дегенді <code>%2</code> мүшесі деп мәлімдеу"
 
 #: cppduchain/missingdeclarationassistant.cpp:376
 #, kde-format
 msgid "Declare <code>'%1'</code> as"
-msgstr ""
+msgstr "<code>'%1'</code> мына деп мәлімдеу:"
 
 #: cppduchain/missingdeclarationproblem.cpp:27
 #, kde-format
 msgid "Declaration not found: %1"
-msgstr ""
+msgstr "Мәлімдемесі жоқ: %1"
 
 #: cppduchain/navigation/includenavigationcontext.cpp:52
 msgctxt "Headers included into this header"
 msgid "Includes"
-msgstr ""
+msgstr "Кірмелер"
 
 #: cppduchain/navigation/includenavigationcontext.cpp:53
 msgctxt "Count of files this header was included into"
 msgid "Included by"
-msgstr ""
+msgstr "Мынаға кірген:"
 
 #: cppduchain/navigation/includenavigationcontext.cpp:54
 msgctxt "Count of macros defined in this header"
 msgid "Defined macros"
-msgstr ""
+msgstr "Пайдаланушы анықтаған"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:81
 msgid "Preprocessed Body:"
-msgstr ""
+msgstr "Алдын-ала өңделген дене:"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:84
 msgid "Preprocessed Body: (empty)"
-msgstr ""
+msgstr "Алдын-ала өңделген дене: (бос)"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:87
 msgid "Body:"
-msgstr ""
+msgstr "Дене:"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:90
 msgid "Body: (empty)"
-msgstr ""
+msgstr "Дене: (бос)"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:141
 #, kde-format
@@ -569,55 +617,55 @@ msgctxt ""
 "%1: macro type, i.e.: 'Function macro' or just 'Macro'%2: the macro name and "
 "arguments%3 the link to the definition"
 msgid "%1: %2, defined in %3"
-msgstr ""
+msgstr "%1: %2, %3 дегенде анықталған"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:142
 msgid "Function macro"
-msgstr ""
+msgstr "Макрос-функция"
 
 #: cppduchain/navigation/macronavigationcontext.cpp:142
 msgid "Macro"
-msgstr ""
+msgstr "Макрос"
 
 #: cppduchain/usebuilder.cpp:140
 msgid "use of deleted function"
-msgstr ""
+msgstr "өшірілген функцияны пайдалану"
 
 #: cpplanguagesupport.cpp:146
 msgid "C++ Support"
-msgstr ""
+msgstr "C++ қолдауы"
 
 #: cpplanguagesupport.cpp:146
 msgid "Support for C++ Language"
-msgstr ""
+msgstr "C++ тілін қолдау"
 
 #: cpplanguagesupport.cpp:195
 msgid "Files"
-msgstr ""
+msgstr "Файлдар"
 
 #: cpplanguagesupport.cpp:214
 msgid "&Switch Definition/Declaration"
-msgstr ""
+msgstr "Мәлімдеме/анықтама &ауыстыруы"
 
 #: cpplanguagesupport.cpp:224
 msgid "Rename Declaration"
-msgstr ""
+msgstr "Мәлімдеме атауын өзгерту"
 
 #: cpplanguagesupport.cpp:230
 msgid "Move into Source"
-msgstr ""
+msgstr "Бастапқы кодына жылжыту"
 
 #: cpplanguagesupport.cpp:778
 msgid "Emptied by preprocessor<br />"
-msgstr ""
+msgstr "Алдын-ала өңдеумен босатылған<br />"
 
 #: cppparsejob.cpp:160
 msgid "Parsing included files"
-msgstr ""
+msgstr "Кірме-файлдарды талдау"
 
 #: cppparsejob.cpp:466
 msgid "Parsing actual file"
-msgstr ""
+msgstr "Өзекті файды талдау"
 
 #: cppparsejob.cpp:578
 #, kde-format
@@ -630,12 +678,12 @@ msgstr ""
 
 #: cppparsejob.cpp:864
 msgid "Ready"
-msgstr ""
+msgstr "Дайын"
 
 #: includepathcomputer.cpp:182
 #, kde-format
 msgid "Build manager for project %1 did not return a build directory"
-msgstr ""
+msgstr "Құрастыру менеджері %1 жобасының құрастыру каталогын қайтармады"
 
 #: includepathcomputer.cpp:183
 msgid ""
@@ -886,3 +934,5 @@ msgstr "Кірме жолы"
 #: quickopen.cpp:411 quickopen.cpp:418
 msgid "Includers"
 msgstr ""
+
+
