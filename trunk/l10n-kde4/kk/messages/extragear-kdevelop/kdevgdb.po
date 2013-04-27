@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-18 02:22+0200\n"
-"PO-Revision-Date: 2013-04-28 03:16+0600\n"
+"PO-Revision-Date: 2013-04-28 05:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -202,7 +202,6 @@ msgstr "Қашық бағдарламаны жегу скрипті"
 
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_runShellScript)
 #: debuggerconfigwidget.ui:224
-#, fuzzy
 msgid ""
 "This shell script is run after the Config gdb script has been sourced by "
 "gdb.\n"
@@ -217,12 +216,13 @@ msgid ""
 msgstr ""
 "Бұл скрипт gdb-ге оны баптау скрипті тапсырылған соң жегіледі.\n"
 "Бұл қашықтан жөндеу процесін бастауға арналған скрипт.\n"
-"[It is expected that the debug executable can be reached on the target, "
-"maybe by downloading it as a final build step]\n"
-"1) Find a way to execute a command remotely - rsh, ssh, telnet, ...\n"
-"2a) Execute \"gdbserver ... application\" on target.\n"
-"or if your executable contains the gdb stub\n"
-"2b) Execute \"application\" on target."
+"[Қашықтағы компьютерінде, кемінде құрастыру соңғы кезеңінде "
+"жүктеп алынған, орындалатын бағдарлама файлы бар деп есептеледі]\n"
+"1) Команданы қашықтан орындау жолын табыңыз - rsh, ssh, telnet, ...\n"
+"2a) Қашықтағы компьютерінде \"gdbserver ... бағдарлама\" командасын "
+"орындаңыз.\n"
+"немесе егер орындалатын файлда gdb бітеуіші болса\n"
+"2b) Қашықтағы компьютерінде \"бағдарлама\" командасын орындаңыз."
 
 #. i18n: ectx: property (text), widget (QLabel, configGdbScript_label)
 #: debuggerconfigwidget.ui:231
@@ -266,7 +266,7 @@ msgstr "Gdb баптау скрипті"
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, kcfg_configGdbScript)
 #: debuggerconfigwidget.ui:274
 msgid "This script is sourced by gdb when the debugging starts."
-msgstr ""
+msgstr "Бұл жөндеу басталғанда gdb оқитын скрипт."
 
 #: debuggerplugin.cpp:93
 msgid "GDB Support"
@@ -290,11 +290,11 @@ msgstr ""
 
 #: debuggerplugin.cpp:200
 msgid "Examine Core File..."
-msgstr "Жад дампын зерттеу"
+msgstr "Core файлын зерттеу..."
 
 #: debuggerplugin.cpp:201
 msgid "Examine core file"
-msgstr "Жад дампын зерттеу"
+msgstr "Core файлын зерттеу"
 
 #: debuggerplugin.cpp:202
 msgid ""
@@ -303,6 +303,10 @@ msgid ""
 "The core file contains an image of the program memory at the time it "
 "crashed, allowing you to do a post-mortem analysis.</p>"
 msgstr ""
+"<b>Core файлын зерттеу</b><p>Әдетте, бағдарлама (мысалы, "
+"сегментация қатесінен) қираған соң құрылатын core файлын жүктеу. "
+"Ол файлда, қирағаннан кейін талдауға мүмкіндік беретін, қираған "
+"кездегі бағдарламаға қатысты жадының мазмұны сақталады.</p>"
 
 #: debuggerplugin.cpp:212
 msgid "Attach to Process"
@@ -315,7 +319,7 @@ msgstr "Процеске ілектіру..."
 #: debuggerplugin.cpp:214
 msgid ""
 "<b>Attach to process</b><p>Attaches the debugger to a running process.</p>"
-msgstr ""
+msgstr "<b>Процеске ілектіру</b><p>Жөндегішті жегілген процеске ілектіру.</p>"
 
 #: debuggerplugin.cpp:246
 msgid "KDevelop"
@@ -331,6 +335,8 @@ msgid ""
 "<b>Evaluate expression</b><p>Shows the value of the expression under the "
 "cursor.</p>"
 msgstr ""
+"<b>Өрнекті есептеу</b><p>Меңзердің астындағы өрнектің мәнін "
+"есептеп беру.</p>"
 
 #: debuggerplugin.cpp:324
 #, kde-format
@@ -342,43 +348,45 @@ msgid ""
 "<b>Watch expression</b><p>Adds an expression under the cursor to the "
 "Variables/Watch list.</p>"
 msgstr ""
+"<b>Өрнекті бақылау</b><p>Меңзердің астындағы өрнекті"
+"Айнымалы/Бақылау тізіміне қосу.</p>"
 
 #: debuggerplugin.cpp:356
 msgid "Choose a core file to examine..."
-msgstr "Дамп файлын таңдау..."
+msgstr "Зерттеуге core файлын таңдау..."
 
 #: debuggerplugin.cpp:363
 #, kde-format
 msgid "Examining core file %1"
-msgstr "%1 жад дампын зерттеу"
+msgstr "%1 core файлын зерттеу"
 
 #: debuggerplugin.cpp:369
 msgid "Debug core file"
-msgstr ""
+msgstr "Core файлы бойынша жөндеу"
 
 #: debuggerplugin.cpp:377
 msgid "Choose a process to attach to..."
-msgstr ""
+msgstr "Қай процеске ілектіру..."
 
 #: debuggerplugin.cpp:386
 #, kde-format
 msgid "Not attaching to process %1: cannot attach the debugger to itself."
-msgstr ""
+msgstr "%1 процесіне ілекпеді: жөндегіш өзі-өзіне ілекпейді."
 
 #: debuggerplugin.cpp:394
 #, kde-format
 msgid "Attaching to process %1"
-msgstr ""
+msgstr "%1 процесіне ілегу"
 
 #: debuggerplugin.cpp:400
 #, kde-format
 msgid "Debug process %1"
-msgstr ""
+msgstr "%1 процесін жөндеу"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, DebuggerTracingDialog)
 #: debuggertracingdialog.ui:13
 msgid "Tracing Configuration"
-msgstr ""
+msgstr "Қадамдауды баптау"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, enable)
 #: debuggertracingdialog.ui:20
@@ -392,22 +400,22 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, enable)
 #: debuggertracingdialog.ui:23
 msgid "Enable tracing"
-msgstr ""
+msgstr "Қадамдауды рұқсат ету"
 
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: debuggertracingdialog.ui:30 memviewdlg.cpp:102
 msgid "Cancel"
-msgstr ""
+msgstr "Қайту"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableCustomFormat)
 #: debuggertracingdialog.ui:40
 msgid "Custom format string"
-msgstr ""
+msgstr "Өзіндік пішім мәтін-жолы"
 
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: debuggertracingdialog.ui:47 memviewdlg.cpp:99
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, customFormat)
 #: debuggertracingdialog.ui:79
@@ -435,33 +443,35 @@ msgstr ""
 
 #: debugsession.cpp:157
 msgid "Debugger stopped"
-msgstr ""
+msgstr "Жөндегіш тоқтады"
 
 #: debugsession.cpp:186
 msgid "Application interrupted"
-msgstr ""
+msgstr "Бағдарлама үзілді"
 
 #: debugsession.cpp:190
 msgid "Process exited"
-msgstr ""
+msgstr "Процестен шықты"
 
 #: debugsession.cpp:197
 msgid "Application is running"
-msgstr ""
+msgstr "Бағдарлама орындалып жатыр"
 
 #: debugsession.cpp:203
 msgid "Application is paused"
-msgstr ""
+msgstr "Бағдарлама аялдап тұр"
 
 #: debugsession.cpp:417
 msgid ""
 "<b>GDB exited abnormally</b><p>This is likely a bug in GDB. Examine the gdb "
 "output window and then stop the debugger"
 msgstr ""
+"<b>GDB қатемен шықты</b><p>Бұл  GDB қатесі болу ықтимал. gdb-дің "
+"шығыс терезесін қараңыз да, жөндегішті тоқтатыңыз"
 
 #: debugsession.cpp:420
 msgid "GDB exited abnormally"
-msgstr ""
+msgstr "GDB қатемен доғарылды"
 
 #: debugsession.cpp:549
 #, kde-format
@@ -858,4 +868,5 @@ msgstr ""
 #: stty.cpp:332
 msgid "kdevelop: Debug application console"
 msgstr ""
+
 
