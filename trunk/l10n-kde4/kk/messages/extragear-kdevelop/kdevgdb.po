@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-18 02:22+0200\n"
-"PO-Revision-Date: 2013-04-28 05:26+0600\n"
+"PO-Revision-Date: 2013-04-29 05:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -409,7 +409,7 @@ msgstr "Қайту"
 #. i18n: ectx: property (text), widget (QCheckBox, enableCustomFormat)
 #: debuggertracingdialog.ui:40
 msgid "Custom format string"
-msgstr "Өзіндік пішім мәтін-жолы"
+msgstr "Өзіндік пішім жолы"
 
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
 #: debuggertracingdialog.ui:47 memviewdlg.cpp:99
@@ -427,11 +427,16 @@ msgid ""
 "If custom format string is not enabled, names and values of all expressions "
 "will be printed, using \"%d\" as format specifier for all expressions."
 msgstr ""
+"<b>Өзіндік пішім жолы</b>\n"
+"<p>Таңдалған өрнекті басып шығарғанда қолданатын C-стильді "
+"пішім жолы. Мысалы:\n"
+"<p align=\"center\"> <tt>Tracepoint 1: g = %d</tt></p>\n"
+"Егер бұл рұқсат етілмесе бүкіл өрнектер үшін \"%d\" қолданылады."
 
 #. i18n: ectx: property (text), widget (QLabel, expressionsLabel)
 #: debuggertracingdialog.ui:99
 msgid "Expressions to print:"
-msgstr ""
+msgstr "Басып шығарылатын өрнек:"
 
 #: debugjob.cpp:71
 #, kde-format
@@ -439,6 +444,8 @@ msgid ""
 "No environment group specified, looks like a broken configuration, please "
 "check run configuration '%1'. Using default environment group."
 msgstr ""
+"Орталар тобы келтірілмеген, жегу баптауы жарамсыз секілді, "
+"'%1' жегу баптауын тексеріңіз. Әдетті орталар тобы қолданбақ."
 
 #: debugsession.cpp:157
 msgid "Debugger stopped"
@@ -478,42 +485,44 @@ msgid ""
 "<b>Gdb command sent when debugger is not running</b><br>The command was:<br> "
 "%1"
 msgstr ""
+"<b>Gdb командасы жөндегіш жегілмеген кезде жіберілген</b><br>Командасы:<br> "
+"%1"
 
 #: debugsession.cpp:551
 msgid "Internal error"
-msgstr ""
+msgstr "Ішкі қате"
 
 #: debugsession.cpp:648
 #, kde-format
 msgid "<b>Invalid debugger command</b><br>%1"
-msgstr ""
+msgstr "<b>Жарамсыз жөндегіш командасы</b><br>%1"
 
 #: debugsession.cpp:649
 msgid "Invalid debugger command"
-msgstr ""
+msgstr "Жарамсыз жөндегіш командасы"
 
 #: debugsession.cpp:677
 #, kde-format
 msgid "Exited with return code: %1"
-msgstr ""
+msgstr "Шығу коды: %1"
 
 #: debugsession.cpp:679
 msgid "Exited normally"
-msgstr ""
+msgstr "Дұрыс аяқталды"
 
 #: debugsession.cpp:688
 #, kde-format
 msgid "Exited on signal %1"
-msgstr ""
+msgstr "%1 сигналымен шықты"
 
 #: debugsession.cpp:743
 #, kde-format
 msgid "Program received signal %1 (%2)"
-msgstr ""
+msgstr "Бығдарлама %1 (%2) сигналын қабылдады"
 
 #: debugsession.cpp:952
 msgid "Running program"
-msgstr ""
+msgstr "Бағдарлама орындалуда"
 
 #: debugsession.cpp:1016
 msgid ""
@@ -522,37 +531,44 @@ msgid ""
 "As root you may need to \"chmod ug+rw\" tty* and pty* devices and/or add the "
 "user to the tty group using \"usermod -G tty username\"."
 msgstr ""
+"GDB tty* мен pty* құрылғыларды қолдана алмады.\n"
+"/dev/tty* және /dev/pty* дегендерінің параметрлерін қараңыз.\n"
+"Мүмкін root атынан \"chmod ug+rw\" командасын tty* және pty* "
+"құрылғыларға беріп және/немесе \"usermod -G tty пайдаланушы\" "
+"деп пайдаланушыны tty тобына қосу керек шығар."
 
 #: debugsession.cpp:1020
 msgid "Warning"
-msgstr ""
+msgstr "Ескерту"
 
 #: debugsession.cpp:1208
 #, kde-format
 msgid "<b>Debugger error</b><p>Debugger reported the following error:<p><tt>%1"
 msgstr ""
+"<b>Жөндегіш қатесі</b><p>Жөндегіш келесі қате туралы хабарлады:"
+"<p><tt>%1"
 
 #: debugsession.cpp:1211
 msgid "Debugger error"
-msgstr ""
+msgstr "Жөндегіш қатесі"
 
 #: debugsession.cpp:1310
 #, kde-format
 msgid "1 command in queue\n"
 msgid_plural "%1 commands in queue\n"
-msgstr[0] ""
+msgstr[0] "%1 команда кезекте\n"
 
 #: debugsession.cpp:1311
 #, kde-format
 msgctxt "Only the 0 and 1 cases need to be translated"
 msgid "1 command being processed by gdb\n"
 msgid_plural "%1 commands being processed by gdb\n"
-msgstr[0] ""
+msgstr[0] "%1 команда gdb-мен өңделмек\n"
 
 #: debugsession.cpp:1312
 #, kde-format
 msgid "Debugger state: %1\n"
-msgstr ""
+msgstr "Жөндегіштің күй-жайы: %1\n"
 
 #: debugsession.cpp:1316
 #, kde-format
@@ -561,48 +577,51 @@ msgid ""
 "Current command text: '%2'\n"
 "Current command original text: '%3'\n"
 msgstr ""
+"Назардағы команда класы: '%1'\n"
+"Назардағы команда мәтіні: '%2'\n"
+"Назардағы команданың бастапқы мәтіні: '%3'\n"
 
 #: debugsession.cpp:1327
 msgid "Debugger status"
-msgstr ""
+msgstr "Жөндегіш күй-жайы"
 
 #: debugsession.cpp:1436
 #, kde-format
 msgid "<b>You need gdb 7.0.0 or higher.</b><br />You are using: %1"
-msgstr ""
+msgstr "<b>Сізге керегі gdb 7.0.0 не одан да жаңасы.</b><br />Сізде: %1"
 
 #: debugsession.cpp:1438
 msgid "gdb error"
-msgstr ""
+msgstr "gdb қатесі"
 
 #: debugsession.cpp:1449
 msgid "<b>Could not start debugger:</b><br />"
-msgstr ""
+msgstr "<b>Жөндеу басталмады:</b><br />"
 
 #: debugsession.cpp:1451 debugsession.cpp:1463
 msgid "Startup error"
-msgstr ""
+msgstr "Бастау қатесі"
 
 #: debugsession.cpp:1461
 msgid "<b>Could not attach debugger:</b><br />"
-msgstr ""
+msgstr "<b>Жөндегіш ілектірілмеді:</b><br />"
 
 #: disassemblewidget.cpp:60
 msgid "Address Selector"
-msgstr ""
+msgstr "Адресін таңдау"
 
 #: disassemblewidget.cpp:111
 msgid "Start address:"
-msgstr ""
+msgstr "Бастау адресі:"
 
 #: disassemblewidget.cpp:112
 msgid "End Address:"
-msgstr ""
+msgstr "Аяқтау адресі:"
 
 #: disassemblewidget.cpp:126
 msgctxt "@action:button"
 msgid "Display"
-msgstr ""
+msgstr "Көрсету"
 
 #: disassemblewidget.cpp:149
 msgid ""
@@ -867,3 +886,4 @@ msgstr ""
 #: stty.cpp:332
 msgid "kdevelop: Debug application console"
 msgstr ""
+
