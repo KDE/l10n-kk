@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-19 03:00+0100\n"
-"PO-Revision-Date: 2013-04-19 06:42+0600\n"
+"PO-Revision-Date: 2013-05-02 03:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: \n"
@@ -231,6 +231,12 @@ msgid ""
 "<p>K3b comes with a selection of predefined external applications that "
 "depends on the installed applications."
 msgstr ""
+"<p>Бұл диалогы аудио кодері ретінде сыртқы командалы бағдарламаны "
+"орнату үшін. Ол бағдарламаны K3b аудио деректерін (Аудио CD "
+"жолсызықтары немесе аудио жоба аталымдары) кодтауға қолданады. "
+"Әдетте оны істемейді (яғни, кодер плагині бар болады).\n"
+"<p>K3b ортатылымына тәуелді, алдын-ала анықталған сыртқы "
+"бағдарламасымен келеді."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ../plugins/encoder/external/base_k3bexternalencoderconfigwidget.ui:32
@@ -307,6 +313,21 @@ msgid ""
 "<b>%x</b> - Album comment<br>\n"
 "<b>%y</b> - Release Year"
 msgstr ""
+"Аудио деректерін кодтау командасын келтіру. Команда стандартты кірісінен "
+"\"шикі\" 16-биттік little endian (<em>Байттар реті ауыстырылсын</em> "
+"дегенді қараңыз) стереоаудио кадрларын оқиды.\n"
+"<p>Келесіні K3b ауыстырады:<br>\n"
+"<b>%f</b> дегенді - нәтиже файл атауымен. Бұл команданың шығысы.<br>\n"
+"<em>Келесі метадеректерін сілтемелері, мысалы, mp3 файлдың  ID3 тэгі "
+"сақтаған (Мәндері бос болу мүмксін).</em><br>\n"
+"<b>%t</b> - Атауы<br>\n"
+"<b>%a</b> - Орындаушысы<br>\n"
+"<b>%c</b> - Түсініктемесі<br>\n"
+"<b>%n</b> - Жолсызық нөмірі<br>\n"
+"<b>%m</b> - Альбом атауы<br>\n"
+"<b>%r</b> - Альбом орындаушысы<br>\n"
+"<b>%x</b> - Альбом түсініктемесі<br>\n"
+"<b>%y</b> - Шығарылған жылы"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
@@ -330,6 +351,10 @@ msgid ""
 "<p>If the resulting audio file sounds bad it is highly likely that the byte "
 "order is wrong and this option has to be checked."
 msgstr ""
+"<p> Бұл параметрі белгіленсе, K3b кіріс дерктерінің байттар ретін "
+"ауыстрады. Команда big endian аудио кадрларын оқи алуға тиіс.\n"
+"<p>Егер шығыс аудио файлы біртүрлі болып естілсе, онда байт реті "
+"дұрыс емес болуы мүмкін - осы параметрді түзеңіз."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkSwapByteOrder)
 #: ../plugins/encoder/external/base_k3bexternalencodereditwidget.ui:122
@@ -541,6 +566,11 @@ msgid ""
 "strict ISO compatibility. This compatibility might be important for hardware "
 "players."
 msgstr ""
+"<p>Бұл параметрі белгіленсе, LAME жалпы кадр өлшемінің 7680 биттік шегін "
+"қатаң ұстанады.<br>\n"
+"Жоғары бит легінде бұл орынды бекер шығындауға әкелу мүмкін. "
+"Бірақ бұл ISO стандартты қатаң ұстануы плейер жабдықтар үшін "
+"маңызды болу мүмкін."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkISO)
 #: ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui:350
@@ -560,6 +590,9 @@ msgid ""
 "MP3 stream to be detected; however, it takes 16 bits per frame that would "
 "otherwise be used for encoding, thus slightly reducing the sound quality."
 msgstr ""
+"<p>Бұл парамерті белгіленсе, MP3 ағымын әр кадрына, тасымалдаудың "
+"мүмкін қателерін түзеуге арналған 16 биттік қате тексеру (CRC) коды "
+"қосылады. Ол сәл орын алып, дыбыстың сапасын сәл төмендетеді."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_checkError)
 #: ../plugins/encoder/lame/base_k3blameencodersettingswidget.ui:363
@@ -826,6 +859,7 @@ msgstr "Дискретизациясы:"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_comboEncoding)
 #: ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui:63
+#, fuzzy
 msgid ""
 "<p>The sample data encoding is signed linear (2's complement), unsigned "
 "linear, u-law (logarithmic), A-law (logarithmic), ADPCM, IMA_ADPCM, GSM, or "
@@ -849,6 +883,31 @@ msgid ""
 "good quality. It is usually CPU intensive to work with GSM audio data.</p> "
 "<p><em>Description based on the SoX manpage</em></p>"
 msgstr ""
+"<p>Дискреттелген деректерін кодтау тәсілдері: таңбамен сызықты "
+"(2-Қосымша бойынша), таңбасыз сызықты, мю-заңы бойынша (логарифмді) "
+"A-заңы бойынша (логрифмді),  ADPCM, IMA_ADPCM, GSM, және Жылжымалы "
+"үтірлі.</p>\n"
+"<p><b>Мю-заңы</b> (mu-law немесе қысқасы: u-law) мен<b>A-заңы</b> "
+"бойыншасы АҚШ және халықаралық телефон дыбысын логарифмді сығу "
+"стандарттары. Мю-заңы бойыншасы. сығылмағанда шамамен 16 биттік PCM-ге, "
+"ал A-заңы бойыншасы 13 биттік PCM аудиоға сәйкесті. Мю және A заңы "
+"гггггбойыншасы кейбірде"
+"When uncompressed u-law has roughly the precision of 14-bit PCM audio and A-"
+"law has roughly the precision of 13-bit PCM audio. A-law and u-law data is "
+"sometimes encoded using a reversed bit-ordering (i.e. MSB becomes LSB).<br> "
+"<b>ADPCM </b> is a form of sound compression that has a good compromise "
+"between good sound quality and fast encoding/decoding time. It is used for "
+"telephone sound compression and places where full fidelity is not as "
+"important. When uncompressed it has roughly the precision of 16-bit PCM "
+"audio. Popular versions of ADPCM include G.726, MS ADPCM, and IMA ADPCM. It "
+"has different meanings in different file handlers. In .wav files it "
+"represents MS ADPCM files, in all others it means G.726 ADPCM. <br> <b>IMA "
+"ADPCM</b> is a specific form of ADPCM compression, slightly simpler and "
+"slightly lower fidelity than Microsoft's flavor of ADPCM. IMA ADPCM is also "
+"called DVI ADPCM.<br> <b>GSM</b> is a standard used for telephone sound "
+"compression in European countries and is gaining popularity because of its "
+"good quality. It is usually CPU intensive to work with GSM audio data.</p> "
+"<p><em>Description based on the SoX manpage</em></p>"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboEncoding)
 #: ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui:67
@@ -863,12 +922,12 @@ msgstr "Сызықт,ы таңбасыз"
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboEncoding)
 #: ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui:77
 msgid "u-law (logarithmic)"
-msgstr "u-law (логарифмді)"
+msgstr "мю-заңы (логарифмді)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboEncoding)
 #: ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui:82
 msgid "A-law (logarithmic)"
-msgstr "A-law (логарифмді)"
+msgstr "A-заңы (логарифмді)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboEncoding)
 #: ../plugins/encoder/sox/base_k3bsoxencoderconfigwidget.ui:87
