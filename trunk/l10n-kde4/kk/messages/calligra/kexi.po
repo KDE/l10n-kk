@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-05-05 02:27+0200\n"
-"PO-Revision-Date: 2013-05-27 04:37+0600\n"
+"PO-Revision-Date: 2013-05-28 06:22+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -735,6 +735,8 @@ msgid ""
 "No <resource>%1</resource> service type installed. Check your <application>"
 "%2</application> installation. The application will be closed."
 msgstr ""
+"<resource>%1</resource> қызмет түрі орнатылмаған! <application>%2"
+"</application> орнатуын тексеріңіз. Доғарылады."
 
 #: core/kexipartmanager.cpp:104
 #, kde-format
@@ -744,6 +746,9 @@ msgid ""
 "<resource>%2</resource> key). Check your <application>%1</application> "
 "installation. The application will be closed."
 msgstr ""
+"<application>%1</application> бағдарламаның әдетті баптауы  жоқ не жарамсыз "
+"(<resource>%2</resource> кілті жоқ). <application>%1</application> "
+"бағдарламасы орнатылғанын тексеріңіз. Жабылады."
 
 #: core/kexipartmanager.cpp:185
 #, kde-format
@@ -847,7 +852,6 @@ msgstr ""
 "Жоба өшірілмейді. Бұл жоба бойынша деректер қоры тек оқуға ғана деп қосылған."
 
 #: core/kexiproject.cpp:1399
-#, fuzzy
 #| msgid "Open As Read-Only"
 msgid "Open As Read Only"
 msgstr "Тек оқу үшін ашу"
@@ -3578,11 +3582,11 @@ msgid "Properties"
 msgstr "Қасиеттер"
 
 #: main/KexiMainWindow.cpp:2011
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Read only"
 msgctxt "<project-name> (read only)"
 msgid "%1 (read only)"
-msgstr "Тек оқу үшін"
+msgstr "%1 (тек оқу үшін)"
 
 #: main/KexiMainWindow.cpp:2618
 msgid "From File..."
@@ -3603,22 +3607,21 @@ msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "Таңдалған көрініс (%1) нысанның бұл түріне (%2) жарамайды."
 
 #: main/KexiMainWindow.cpp:2746
-#, fuzzy
 #| msgid "Could not access the table directly using its name"
 msgctxt "Could not save object under the original name."
 msgid "Could not save under the original name."
-msgstr "Кестеге атауы бойынша тікелей қатынау жоқ"
+msgstr "Бастапқы атауымен сақталмайды."
 
 #: main/KexiMainWindow.cpp:2772
 msgid "Save Object As"
 msgstr "Нысанды былай сақтау"
 
 #: main/KexiMainWindow.cpp:2808
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info Saving object failed"
 msgid "Saving <resource>%1</resource> object failed."
-msgstr "\"%1\" нысаны сақталмады."
+msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
 #: main/KexiMainWindow.cpp:2928 main/KexiMainWindow.cpp:3993
 msgid "Save changes"
@@ -4073,10 +4076,9 @@ msgid "Select project on database server <b>%1 (%2)</b> to open."
 msgstr "<b>%1 (%2)</b> деректер қоры сервердегі ашатын жобаны таңдау."
 
 #: main/startup/KexiPasswordPage.cpp:44
-#, fuzzy
 #| msgid "Database"
 msgid "Database Password"
-msgstr "Деректер қоры"
+msgstr "Деректер қорының паролі"
 
 #. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_file)
 #: main/startup/KexiProjectStorageTypeSelectionPage.ui:22
@@ -4166,7 +4168,6 @@ msgid "Project's database name:"
 msgstr "Деректер қоры жобасының атауы: "
 
 #: main/startup/KexiStartup.cpp:169
-#, fuzzy
 #| msgid "Opening database"
 msgctxt "@title:window"
 msgid "Opening Database"
@@ -4175,7 +4176,7 @@ msgstr "Деректер қорын ашу"
 #: main/startup/KexiStartup.cpp:170
 msgctxt "@info"
 msgid "Supply a password below."
-msgstr ""
+msgstr "Паролін төменде келтіріңіз."
 
 #: main/startup/KexiStartup.cpp:177
 msgid "local database server"
@@ -4183,10 +4184,9 @@ msgstr "жергілікті деректер қорының сервері"
 
 #. i18n: ectx: property (text), widget (QLabel, domainLabel)
 #: main/startup/KexiStartup.cpp:181 widget/KexiPasswordWidget.ui:111
-#, fuzzy
 #| msgid "Database server: %1"
 msgid "Database server:"
-msgstr "Деректер қорының сервері: %1"
+msgstr "Деректер қорының сервері:"
 
 #: main/startup/KexiStartup.cpp:187
 msgctxt "unspecified user"
@@ -4195,7 +4195,7 @@ msgstr "(келтірілмеген)"
 
 #: main/startup/KexiStartup.cpp:196
 msgid "&Details"
-msgstr "&Егжей-тегжейлері"
+msgstr "&Егжей-тегжейі"
 
 #: main/startup/KexiStartup.cpp:198 widget/kexidbconnectionwidget.cpp:411
 #: widget/KexiProjectSelectorWidget.cpp:325
@@ -4294,22 +4294,19 @@ msgid "Project \"%1\" dropped successfully."
 msgstr "\"%1\" жобасы сәтті өшірілді."
 
 #: main/startup/KexiStartup.cpp:787
-#, fuzzy
 #| msgid "Could not remove file \"%1\"."
 msgctxt "@info"
 msgid "Could not open file. Missing filename."
-msgstr "\"%1\" файлы өшірілмейді."
+msgstr "Файл ашылмады. Атауы келтірілмеген."
 
 #: main/startup/KexiStartup.cpp:794
-#, fuzzy, kde-format
+#, kde-format
 #| msgid ""
 #| "Could not remove project.\n"
 #| "The file \"%1\" does not exist."
 msgctxt "@info"
 msgid "Could not open file. The file <filename>%1</filename> does not exist."
-msgstr ""
-"Жоба өшірілмеді.\n"
-"\"%1\" деген файл жоқ."
+msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
 
 #: main/startup/KexiStartup.cpp:804
 #, fuzzy, kde-format
