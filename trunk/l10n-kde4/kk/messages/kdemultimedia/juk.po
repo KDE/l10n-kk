@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-26 03:25+0100\n"
+"POT-Creation-Date: 2013-05-30 01:53+0000\n"
 "PO-Revision-Date: 2013-01-07 03:07+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -94,7 +94,7 @@ msgid "Remove Cover"
 msgstr "Мұқабасын өшіру"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: coverdialogbase.ui:13 playlistcollection.cpp:900
+#: coverdialogbase.ui:13 playlistcollection.cpp:955
 msgid "Cover Manager"
 msgstr "Мұқабалар менеджері"
 
@@ -163,11 +163,11 @@ msgstr ""
 msgid "&Delete files instead of moving them to the trash"
 msgstr "Өшірілгендерге тастаудың орнына файлдар ж&ойылсын"
 
-#: directorylist.cpp:48
+#: directorylist.cpp:50
 msgid "Folder List"
 msgstr "Қапшықтар тізімі"
 
-#: directorylist.cpp:146
+#: directorylist.cpp:191
 msgid "Music"
 msgstr "Музыка"
 
@@ -177,22 +177,32 @@ msgid "Please choose the folders where you keep your music:"
 msgstr "Музыкаңызды сақтайтын қапшығыңыз:"
 
 #. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
-#: directorylistbase.ui:34
+#. i18n: ectx: property (toolTip), widget (QListView, excludeDirectoryListView)
+#: directorylistbase.ui:34 directorylistbase.ui:117
 msgid "These folders will be scanned on startup for new files."
 msgstr "Бастағанда осы қапшықтарда жаңа файлдар қарастырылады."
 
 #. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
-#: directorylistbase.ui:64
+#. i18n: ectx: property (text), widget (KPushButton, addExcludeDirectoryButton)
+#: directorylistbase.ui:64 directorylistbase.ui:147
 msgid "Add Folder..."
 msgstr "Қапшықты қосу..."
 
 #. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
-#: directorylistbase.ui:71
+#. i18n: ectx: property (text), widget (KPushButton, removeExcludeDirectoryButton)
+#: directorylistbase.ui:71 directorylistbase.ui:154
 msgid "Remove Folder"
 msgstr "Қапшықты өшіру"
 
+#. i18n: ectx: property (text), widget (QLabel, ExcludeInformationLabel)
+#: directorylistbase.ui:102
+#, fuzzy
+#| msgid "Please choose the folders where you keep your music:"
+msgid "Please choose the folders that should be excluded from music search:"
+msgstr "Музыкаңызды сақтайтын қапшығыңыз:"
+
 #. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
-#: directorylistbase.ui:98
+#: directorylistbase.ui:183
 msgid "Import playlists"
 msgstr "Орындау тізімдерін импорттау"
 
@@ -1026,32 +1036,32 @@ msgstr "Файл атауы (толық жолымен)"
 msgid "&Show Columns"
 msgstr "Бағандар &көрсетілсін"
 
-#: playlist.cpp:2135
+#: playlist.cpp:2124
 msgid "Add to Play Queue"
 msgstr "Орындау кезегіне қосу"
 
-#: playlist.cpp:2148 playlist.cpp:2298
+#: playlist.cpp:2137 playlist.cpp:2287
 msgid "Edit"
 msgstr "Өңдеу"
 
-#: playlist.cpp:2163
+#: playlist.cpp:2152
 msgid "Create Playlist From Selected Items..."
 msgstr "Таңдап орындау тізімін құру..."
 
-#: playlist.cpp:2184
+#: playlist.cpp:2173
 #, kde-format
 msgid "Edit '%1'"
 msgstr "'%1' дегенді өңдеу"
 
-#: playlist.cpp:2296
+#: playlist.cpp:2285
 msgid "This will edit multiple files. Are you sure?"
 msgstr "Бұл бірнеше файлдарды өзгертеді. Жалғастырайық па?"
 
-#: playlist.cpp:2355 playlistcollection.h:180
+#: playlist.cpp:2344 playlistcollection.h:187
 msgid "Create New Playlist"
 msgstr "Жаңа орындау тізімін құру"
 
-#: playlist.cpp:2364
+#: playlist.cpp:2353
 msgid ""
 "Manual column widths have been enabled.  You can switch back to automatic "
 "column sizes in the view menu."
@@ -1059,7 +1069,7 @@ msgstr ""
 "Бағандар енін қолмен өзгерту рұқсат етілген.  Оларды автоматты күйіне "
 "\"Көрінісі\" мәзірі арқылы қайтаруға болады."
 
-#: playlist.cpp:2367
+#: playlist.cpp:2356
 msgid "Manual Column Widths Enabled"
 msgstr "Бағандар енін қолмен өзгерту рұқсат етілген"
 
@@ -1071,7 +1081,7 @@ msgstr "Көрініс күйлері"
 msgid "Show &History"
 msgstr "&Журналын көрсету"
 
-#: playlistbox.cpp:214 playlistcollection.cpp:403
+#: playlistbox.cpp:214 playlistcollection.cpp:424
 msgctxt "verb, copy the playlist"
 msgid "Duplicate"
 msgstr "Қосарлау"
@@ -1105,151 +1115,151 @@ msgstr "Ө&шіру"
 msgid "Hid&e"
 msgstr "Жасыр&у"
 
-#: playlistbox.cpp:671 playlistcollection.cpp:892
+#: playlistbox.cpp:671 playlistcollection.cpp:947
 msgid "R&emove"
 msgstr "Өш&іру"
 
-#: playlistcollection.cpp:189
+#: playlistcollection.cpp:205
 msgid "Dynamic List"
 msgstr "Өзгермелі тізім"
 
-#: playlistcollection.cpp:232
+#: playlistcollection.cpp:248
 msgid "Now Playing"
 msgstr "Қазір ойнауда"
 
-#: playlistcollection.cpp:334
+#: playlistcollection.cpp:350
 msgid ""
 "Do you want to add these items to the current list or to the collection list?"
 msgstr "Осылар қазіргі орындау тізіміне, әлде жинағыңызға қосылсын ба?"
 
-#: playlistcollection.cpp:336
+#: playlistcollection.cpp:352
 msgctxt "current playlist"
 msgid "Current"
 msgstr "Ойнап жатқаны"
 
-#: playlistcollection.cpp:337
+#: playlistcollection.cpp:353
 msgid "Collection"
 msgstr "Жинаққа"
 
-#: playlistcollection.cpp:391
+#: playlistcollection.cpp:412
 msgid "Rename"
 msgstr "Қайта атау"
 
-#: playlistcollection.cpp:505
+#: playlistcollection.cpp:526
 msgid "Search Playlist"
 msgstr "Тізімінде іздеу"
 
-#: playlistcollection.cpp:522
+#: playlistcollection.cpp:543
 msgid "Create Folder Playlist"
 msgstr "Қапшықтағыдан тізім құру"
 
-#: playlistcollection.cpp:561
+#: playlistcollection.cpp:582
 msgid "History"
 msgstr "Журнал"
 
-#: playlistcollection.cpp:743
+#: playlistcollection.cpp:764
 msgid "Please enter a name for this playlist:"
 msgstr "Бұл тізімге атау беріңіз:"
 
-#: playlistcollection.cpp:853
+#: playlistcollection.cpp:908
 msgctxt "new playlist"
 msgid "&New"
 msgstr "&Жаңа"
 
-#: playlistcollection.cpp:856
+#: playlistcollection.cpp:911
 msgid "&Empty Playlist..."
 msgstr "&Бос тізім..."
 
-#: playlistcollection.cpp:858
+#: playlistcollection.cpp:913
 msgid "&Search Playlist..."
 msgstr "Тізімінде &іздеу..."
 
-#: playlistcollection.cpp:860
+#: playlistcollection.cpp:915
 msgid "Playlist From &Folder..."
 msgstr "Қ&апшықтан тізім..."
 
-#: playlistcollection.cpp:866
+#: playlistcollection.cpp:921
 msgid "&Guess Tag Information"
 msgstr "Тегтің мәліметін &тауып алу"
 
-#: playlistcollection.cpp:871
+#: playlistcollection.cpp:926
 msgid "From &File Name"
 msgstr "&Файл атауынан"
 
-#: playlistcollection.cpp:873
+#: playlistcollection.cpp:928
 msgid "From &Internet"
 msgstr "&Интернеттен"
 
-#: playlistcollection.cpp:876
+#: playlistcollection.cpp:931
 msgid "Guess Tag Information From &File Name"
 msgstr "Тегтің мәліметін &файл атауынан тауып алу"
 
-#: playlistcollection.cpp:881
+#: playlistcollection.cpp:936
 msgid "Play First Track"
 msgstr "Бірінші жолсызығын ойнау"
 
-#: playlistcollection.cpp:882
+#: playlistcollection.cpp:937
 msgid "Play Next Album"
 msgstr "Келесі альбомды ойнау"
 
-#: playlistcollection.cpp:888
+#: playlistcollection.cpp:943
 msgid "Manage &Folders..."
 msgstr "Қ&апшықтарды басқару..."
 
-#: playlistcollection.cpp:889
+#: playlistcollection.cpp:944
 msgid "&Rename..."
 msgstr "Қ&айта атау..."
 
-#: playlistcollection.cpp:890
+#: playlistcollection.cpp:945
 msgctxt "verb, copy the playlist"
 msgid "D&uplicate..."
 msgstr "Қ&осарлау"
 
-#: playlistcollection.cpp:893
+#: playlistcollection.cpp:948
 msgid "Reload"
 msgstr "Қайта жүктеп алу"
 
-#: playlistcollection.cpp:894
+#: playlistcollection.cpp:949
 msgid "Edit Search..."
 msgstr "Іздейтінді өзгерту..."
 
-#: playlistcollection.cpp:896
+#: playlistcollection.cpp:951
 msgid "&Delete"
 msgstr "Ө&шіру"
 
-#: playlistcollection.cpp:897
+#: playlistcollection.cpp:952
 msgid "Refresh"
 msgstr "Жаңарту"
 
-#: playlistcollection.cpp:898
+#: playlistcollection.cpp:953
 msgid "&Rename File"
 msgstr "&Файлды қайта атау"
 
-#: playlistcollection.cpp:903
+#: playlistcollection.cpp:958
 msgid "&View Cover"
 msgstr "Мұқабасын қ&арау"
 
-#: playlistcollection.cpp:905
+#: playlistcollection.cpp:960
 msgid "Get Cover From &File..."
 msgstr "Мұқабасын &файлдан алу..."
 
-#: playlistcollection.cpp:907
+#: playlistcollection.cpp:962
 msgid "Get Cover From &Internet..."
 msgstr "Мұқабасын &Интернеттен алу..."
 
-#: playlistcollection.cpp:909
+#: playlistcollection.cpp:964
 msgid "&Delete Cover"
 msgstr "Мұқабасын ө&шіру"
 
-#: playlistcollection.cpp:911
+#: playlistcollection.cpp:966
 msgid "Show Cover &Manager"
 msgstr "&Мұқабалар менеджерін көрсету"
 
-#: playlistcollection.cpp:915
+#: playlistcollection.cpp:970
 msgid "Show &Play Queue"
 msgstr "&Орындау кезегін көрсету"
 
-#: playlistcollection.h:183
+#: playlistcollection.h:190
 msgid "Playlist"
 msgstr "Орындау тізімі"
 
