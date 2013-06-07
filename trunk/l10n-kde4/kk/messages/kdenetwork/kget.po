@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-05 02:11+0000\n"
+"POT-Creation-Date: 2013-06-07 01:35+0000\n"
 "PO-Revision-Date: 2013-03-25 03:25+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -414,8 +414,7 @@ msgid "Keyservers:"
 msgstr "Қілт серверлері:"
 
 #: core/datasourcefactory.cpp:279 core/datasourcefactory.cpp:624
-#: core/kget.cpp:1393 transfer-plugins/metalink/metalinkhttp.cpp:223
-#: transfer-plugins/metalink/metalinkxml.cpp:198
+#: core/kget.cpp:1393 transfer-plugins/metalink/metalink.cpp:202
 #: ui/metalinkcreator/metalinkcreator.cpp:161
 #: ui/metalinkcreator/metalinkcreator.cpp:178
 msgid "Error"
@@ -641,7 +640,7 @@ msgid "You are already downloading the same file"
 msgstr "Дәл осындай файл жүктелуде екен"
 
 #: core/kget.cpp:1123 core/kget.cpp:1126 core/urlchecker.cpp:648
-#: core/urlchecker.cpp:744 transfer-plugins/metalink/abstractmetalink.cpp:483
+#: core/urlchecker.cpp:744 transfer-plugins/metalink/metalink.cpp:720
 msgid "File already exists"
 msgstr "Файл бар екен"
 
@@ -1350,7 +1349,7 @@ msgstr "Озық KDE жүктеу менеджері"
 #| "(C) 2002, Carsten Pfeiffer\n"
 #| "(C) 1998 - 2000, Matej Koss"
 msgid ""
-"(C) 2005 - 2012, The KGet developers\n"
+"(C) 2005 - 2011, The KGet developers\n"
 "(C) 2001 - 2002, Patrick Charbonnier\n"
 "(C) 2002, Carsten Pfeiffer\n"
 "(C) 1998 - 2000, Matej Koss"
@@ -1405,70 +1404,62 @@ msgid "Developer"
 msgstr "Құрастырушысы"
 
 #: main.cpp:120
-msgid "Aish Raj Dahal"
-msgstr ""
-
-#: main.cpp:120
-msgid "Google Summer of Code Student"
-msgstr ""
-
-#: main.cpp:121
 msgid "Ernesto Rodriguez Ortiz"
 msgstr "Ernesto Rodriguez Ortiz"
 
-#: main.cpp:121
+#: main.cpp:120
 msgid "Mms Plugin Author"
 msgstr "Mms плагиннің авторы"
 
-#: main.cpp:122
+#: main.cpp:121
 msgid "Patrick Charbonnier"
 msgstr "Patrick Charbonnier"
 
-#: main.cpp:122 main.cpp:123 main.cpp:124
+#: main.cpp:121 main.cpp:122 main.cpp:123
 msgid "Former Developer"
 msgstr "Бұрынғы құрастырушысы"
 
-#: main.cpp:123
+#: main.cpp:122
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
-#: main.cpp:124
+#: main.cpp:123
 msgid "Matej Koss"
 msgstr "Matej Koss"
 
-#: main.cpp:125
+#: main.cpp:124
 msgid "Joris Guisson"
 msgstr "Joris Guisson"
 
-#: main.cpp:125
+#: main.cpp:124
 msgid "BTCore (KTorrent) Developer"
 msgstr "BTCore (KTorrent) құрастырушысы"
 
-#: main.cpp:126
+#: main.cpp:125
 msgid "Mensur Zahirovic (Nookie)"
 msgstr "Mensur Zahirovic (Nookie)"
 
-#: main.cpp:126
+#: main.cpp:125
 msgid "Design of Web Interface"
 msgstr "Веб интерфейсін жобалау"
 
-#: main.cpp:131
+#: main.cpp:130
 msgid "Start KGet with drop target"
 msgstr "KGet-ті сүйреп әкелетін орынымен бастау"
 
-#: main.cpp:132
+#: main.cpp:131
 msgid "Start KGet with hidden main window"
 msgstr "KGet-ті негізгі терезесін жасырып бастау"
 
-#: main.cpp:133
+#: main.cpp:132
 msgid "Start KGet without drop target animation"
 msgstr "KGet-ті сүйреп әкелетін орнының анимациясыз бастау"
 
-#: main.cpp:135
+#: main.cpp:134
 msgid "Execute Unit Testing"
 msgstr "Модуль сынағын орындау"
 
-#: main.cpp:137
+#: main.cpp:136
 msgid "URL(s) to download"
 msgstr "Жүктейтін URL адрес(тер)"
 
@@ -2823,14 +2814,6 @@ msgstr "Бұл жүктеу (%1) тексерілмейді. Қайта жүкт
 msgid "Verification failed."
 msgstr "Тексеру жаңылысы."
 
-#: transfer-plugins/metalink/abstractmetalink.cpp:219
-msgid ""
-"The download could not be verified, do you want to repair (if repairing does "
-"not work the download would be restarted) it?"
-msgstr ""
-"Жүктеген тексеруден өтпеді, жөндеп (жөндеуге келмесе - қайта жүктеп) көресіз "
-"бе?"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: transfer-plugins/metalink/dlgmetalink.ui:22
 msgid "Number of simultaneous file downloads:"
@@ -2858,29 +2841,30 @@ msgstr "Жүктеп алатын файлдарды таңдау."
 msgid "File Selection"
 msgstr "Файл таңдау"
 
-#: transfer-plugins/metalink/metalinkhttp.cpp:142
-#, fuzzy
-#| msgid "The download (%1) could not be verified. Do you want to repair it?"
-msgid "The download could not be verified, try to repair it?"
-msgstr "Бұл жүктеу (%1) тексерілмейді. Жөндейік пе?"
-
-#: transfer-plugins/metalink/metalinkhttp.cpp:223
-#: transfer-plugins/metalink/metalinkxml.cpp:198
-msgid "Download failed, no working URLs were found."
-msgstr "Жуктеу жаңылысы, істейтін URL табылған жоқ."
-
-#: transfer-plugins/metalink/metalinkxml.cpp:78
+#: transfer-plugins/metalink/metalink.cpp:83
 msgid "Downloading Metalink File...."
 msgstr "Метасілтеме файлды жүктеу..."
 
-#: transfer-plugins/metalink/metalinkxml.cpp:112
+#: transfer-plugins/metalink/metalink.cpp:117
 msgid ""
 "A newer version of this Metalink might exist, do you want to download it?"
 msgstr "Бұл метасілтеменің жаңа нұсқасы болуы мүмкін, оны жүктеп алмақсыз ба?"
 
-#: transfer-plugins/metalink/metalinkxml.cpp:113
+#: transfer-plugins/metalink/metalink.cpp:118
 msgid "Redownload Metalink"
 msgstr "Метасілтемені қайта жүктеп алу"
+
+#: transfer-plugins/metalink/metalink.cpp:202
+msgid "Download failed, no working URLs were found."
+msgstr "Жуктеу жаңылысы, істейтін URL табылған жоқ."
+
+#: transfer-plugins/metalink/metalink.cpp:493
+msgid ""
+"The download could not be verified, do you want to repair (if repairing does "
+"not work the download would be restarted) it?"
+msgstr ""
+"Жүктеген тексеруден өтпеді, жөндеп (жөндеуге келмесе - қайта жүктеп) көресіз "
+"бе?"
 
 #. i18n: ectx: property (text), widget (QLabel, engineNameLabel)
 #: transfer-plugins/mirrorsearch/dlgengineediting.ui:16
@@ -4144,6 +4128,11 @@ msgstr "&Растау"
 #: ui/verificationdialog.ui:71
 msgid "Verifying:"
 msgstr "Растап жатқаны:"
+
+#, fuzzy
+#~| msgid "The download (%1) could not be verified. Do you want to repair it?"
+#~ msgid "The download could not be verified, try to repair it?"
+#~ msgstr "Бұл жүктеу (%1) тексерілмейді. Жөндейік пе?"
 
 #~ msgctxt "on a question"
 #~ msgid "Yes all"
