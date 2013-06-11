@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-07 01:37+0000\n"
-"PO-Revision-Date: 2013-04-21 03:08+0600\n"
+"PO-Revision-Date: 2013-06-11 06:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -72,10 +72,9 @@ msgid "KWin: "
 msgstr "KWin: "
 
 #: killer/killer.cpp:43
-#, fuzzy
 #| msgid "KDE window manager"
 msgid "Window Manager"
-msgstr "KDE терезе менеджері "
+msgstr "Терезе менеджері "
 
 #: killer/killer.cpp:44
 msgid "KWin helper utility"
@@ -113,7 +112,7 @@ msgstr "Көмекші утилитасы өзі жеке орындалмайд
 #, kde-format
 msgctxt "@info"
 msgid "<b>Application \"%1\" is not responding</b>"
-msgstr ""
+msgstr "<b>\"%1\" қолданбасы жауап бермеді</b>"
 
 #: killer/killer.cpp:81
 #, kde-format
@@ -122,6 +121,8 @@ msgid ""
 "<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
 "%3) but the application is not responding.</para>"
 msgstr ""
+"<para>\"%2\" (процесс ID-і: %3), қолданбасынан \"%1\" терезені "
+"жаппақсыз, бірақ қолданба жауап бермейді.</para>"
 
 #: killer/killer.cpp:83
 #, kde-format
@@ -130,6 +131,8 @@ msgid ""
 "<para>You tried to close window \"%1\" from application \"%2\" (Process ID: "
 "%3), running on host \"%4\", but the application is not responding.</para>"
 msgstr ""
+"<para>\"%4\" хостында жегілген \"%2\" (процесс ID-і: %3), қолданбасынан "
+"\"%1\" терезені жаппақсыз, бірақ қолданба жауап бермейді.</para>"
 
 #: killer/killer.cpp:86
 msgctxt "@info"
@@ -138,6 +141,9 @@ msgid ""
 "para><para><warning>Terminating the application will close all of its child "
 "windows. Any unsaved data will be lost.</warning></para>"
 msgstr ""
+"<para>Қолданбаны доғармақсыз ба?</"
+"para><para><warning>Бүкіл еншілес терезелері де доғарылады. "
+"Сақталмаған деректер де жоғалады.</warning></para>"
 
 #: killer/killer.cpp:90
 #, kde-format
@@ -146,7 +152,7 @@ msgstr "%1 қолданбаны &доғару"
 
 #: killer/killer.cpp:91
 msgid "Wait Longer"
-msgstr ""
+msgstr "Ұзақтау күту"
 
 #: kwinbindings.cpp:48
 msgid "System"
@@ -371,10 +377,9 @@ msgid "Window to Next Screen"
 msgstr "Терезені келесі экранына"
 
 #: kwinbindings.cpp:154
-#, fuzzy
 #| msgid "Window to Previous Desktop"
 msgid "Window to Previous Screen"
-msgstr "Терезені алдыңғы үстелге ауыстыру"
+msgstr "Терезені алдыңғы экранына ауыстыру"
 
 #: kwinbindings.cpp:155
 msgid "Show Desktop"
@@ -390,10 +395,9 @@ msgid "Switch to Next Screen"
 msgstr "Келесі экранына ауысу"
 
 #: kwinbindings.cpp:162
-#, fuzzy
 #| msgid "Switch to Previous Desktop"
 msgid "Switch to Previous Screen"
-msgstr "Алдыңғы үстелге ауысу"
+msgstr "Алдыңғы экранына ауысу"
 
 #: kwinbindings.cpp:165
 msgid "Miscellaneous"
@@ -485,7 +489,7 @@ msgstr "KWin өткенде n рет қирағанын көрсетеді"
 
 #: scene_opengl.cpp:335
 msgid "Desktop effects were restarted due to a graphics reset"
-msgstr ""
+msgstr "Үстел эффекттері графика ысыруға байланысты жаңадан басталды"
 
 #: scene_opengl.cpp:528
 #, kde-format
@@ -496,6 +500,11 @@ msgid ""
 "well.<br>Alternatively, lower the combined resolution of all screens to %1x"
 "%2 "
 msgstr ""
+"<h1>OpenGL үстел эффекттері мүмкін емес</h1>Қолданыстағы "
+"айырымдылықта жүйеңіз OpenGL үстел эффекттерін орындай алмайды "
+"<br><br>XRender тетігін пайдаланып көре алуға болады, бірақ, "
+"бұл айырымдылықта ол тым баяу болар.<br>Әйтпесе, бүкіл "
+"экрандар үшін айырымдылықты %1x%2  дейін төмендетіңіз."
 
 #: scene_opengl.cpp:535
 msgid ""
@@ -504,6 +513,10 @@ msgid ""
 "does not know such limitation, but the performance will usually be impacted "
 "by the hardware limitations that restrict the OpenGL viewport size."
 msgstr ""
+"Талап етілген айырымдылық процессорыңыздың GL_MAX_VIEWPORT_DIMS "
+"параметр шектеуінен асады да, OpenGL композициялауымен үйлеспейді. "
+"<br>XRender бұндай шектеуді білмейді, бірақ, әдетте жылдамдылығына "
+"OpenGL алаңың шектеңйтін жабдықтың шектеулері кері әсер етеді "
 
 #: scene_opengl.cpp:560
 #, kde-format
@@ -513,6 +526,11 @@ msgid ""
 "<br>Also large windows will turn entirely black.<br><br>Consider to suspend "
 "compositing, switch to the XRender backend or lower the resolution to %1x%1."
 msgstr ""
+"<h1>OpenGL үстел эффекттері қолдануға келмеуі мүмкін/</h1>Қалданыстағы "
+"айырымдылықта OpenGL үстел эффекттері істейді, бірақ аса баяу түрде."
+"<br>Оған қоса, үлкен терезелер қап-қара болып көрсетіледі..<br><br>"
+"Композициялауын тоқтатуды қарастырыңыз да, XRender тетігіне немесе "
+"%1x%1 айырымдылығына ауысыңыз."
 
 #: scene_opengl.cpp:566
 msgid ""
@@ -522,6 +540,12 @@ msgid ""
 "despite below GL_MAX_VIEWPORT_DIMS, because the driver might fall back to "
 "software rendering in this case."
 msgstr ""
+"Талап етілген айырымдылық процессорыңыздың GL_MAX_TEXTURE_SIZE "
+"параметр шектеуінен асады да,  бұл өлшемді терезе текстураға "
+"тағайындалмай қап-қара болады.<br>Оған қоса, бұл шектеу "
+"GL_MAX_VIEWPORT_DIMS дегеннен аспаса да, жылдамдықа тосқауыл "
+"болады, себебі, бұндайда, драйвері бағдарламалық кескіндеуге көшу "
+"мүмкін."
 
 #: tabbox/tabbox.cpp:354
 msgctxt "Special entry in alt+tab list for minimizing all windows"
@@ -666,10 +690,9 @@ msgid "Close Entire &Group"
 msgstr "&Топты түгел жабу"
 
 #: useractions.cpp:385
-#, fuzzy
 #| msgid "More Actions"
 msgid "&More Actions"
-msgstr "Қосымша әрекеттер"
+msgstr "Қ&осымша әрекеттер"
 
 #: useractions.cpp:389
 msgid "&Close"
@@ -692,17 +715,16 @@ msgstr "Келесі"
 #: useractions.cpp:561
 msgctxt "There's no window available to be attached as tab to this one"
 msgid "None available"
-msgstr ""
+msgstr "Қол жетімдісі жоқ"
 
 #: useractions.cpp:570
 msgid "Switch to Tab"
 msgstr "Қойындыға ауысу"
 
 #: useractions.cpp:582
-#, fuzzy
 #| msgid "Attach as tab to"
 msgid "&Attach as tab to"
-msgstr "Мынаған қойынды қылып қосу"
+msgstr "Мынаған қойынды қылып қо&су"
 
 #: useractions.cpp:606
 msgid "Move To &Desktop"
@@ -758,6 +780,9 @@ msgid ""
 "as active one.\n"
 "Therefore it is not possible to switch to a screen explicitly."
 msgstr ""
+"Терезе менеджердің баптауы бойынша тышқан меңзері астындағы "
+"экран белсенді болып саналады.\n"
+"Сондықтан тура басқа экранға ауысу болмайды."
 
 #: virtualdesktops.cpp:332 virtualdesktops.cpp:394
 #, kde-format
