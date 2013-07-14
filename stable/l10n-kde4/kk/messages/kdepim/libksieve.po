@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: libksieve\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-06-27 01:36+0000\n"
-"PO-Revision-Date: 2013-07-13 04:44+0600\n"
+"PO-Revision-Date: 2013-07-15 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
 "Language: kk\n"
@@ -387,6 +387,9 @@ msgid ""
 "action makes no changes to the message body or existing headers, but it may "
 "add new headers."
 msgstr ""
+"\"redirect\" амалы келтірілген адресіне хатты қайта бағыттайды. \"redirect\" "
+"амалы хаттың бетіне не бар айдарларына ешбір өзгеріс енгізбейді, бірақ "
+"жаңа айдарларды қоса алады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionredirect.cpp:105
 msgid ""
@@ -394,20 +397,25 @@ msgid ""
 "cancel the implicit \"keep\". Instead, it redirects a copy in addition to "
 "whatever else is happening to the message."
 msgstr ""
+"Команданың міндетті емес \":copy\" деген параметрі айқындалмаған \"keep\" "
+"дегеннің күшін жоймайды. Оның орына ол, не болсада, хатты жаңадан "
+"бағыттайды."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreject.cpp:29
 msgid "Reject"
-msgstr ""
+msgstr "Бас тарту"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreject.cpp:78
 msgid ""
 " The \"reject\" action cancels the implicit keep and refuses delivery of a "
 "message."
 msgstr ""
+" \"reject\" амалы айқындалмаған keep дегеннің күшін жояды да, "
+"хатты жеткізуден бас тартады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionremoveflags.cpp:25
 msgid "Remove Flags"
-msgstr ""
+msgstr "Жалаушаларын өшіру"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionremoveflags.cpp:41
 msgid ""
@@ -415,30 +423,38 @@ msgid ""
 "clears flags previously set by \"set\"/\"addflag\". Calling removeflag with "
 "a flag that wasn't set before is not an error and is ignored."
 msgstr ""
+"Removeflag деген [IMAP] жалауша тізімінен оларды өшіруге қолданады. "
+"Removeflag амалы \"set\"/\"addflag\" деп орнатылған жалаушаларын өшіреді. "
+"Removeflag-ты орнатылмаған жалаушамен шақыру - қате емес, ондайы "
+"елемей қалдырылады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:31
 msgid "Replace"
-msgstr ""
+msgstr "Ауыстыру"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:54
 msgid "from:"
-msgstr ""
+msgstr "нені:"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreplace.cpp:114
 msgid ""
 "The \"replace\" command is defined to allow a MIME part to be replaced with "
 "the text supplied in the command."
 msgstr ""
+"\"replace\" командасы MIME бөлімін келтірілген мәтінімен ауыстыруға "
+"мүмкіндік береді."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreturn.cpp:28
 msgid "Return"
-msgstr ""
+msgstr "Қайтарылу"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionreturn.cpp:44
 msgid ""
 "The \"return\" command stops processing of the immediately included script "
 "only and returns processing control to the script that includes it."
 msgstr ""
+"\"return\" командасы орындылып жатқан скрипттен оны шақырған "
+"скриптке қайтарады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionsetflags.cpp:26
 msgid "Set Flags"
@@ -462,27 +478,31 @@ msgstr "Айнымалы"
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:65
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:65
 msgid "Value:"
-msgstr ""
+msgstr "Мәні::"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:57
 msgid "In variable:"
-msgstr ""
+msgstr "Қай айнымалыға:"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:105
 msgid ""
 "The \"set\" action stores the specified value in the variable identified by "
 "name."
 msgstr ""
+"\"set\" амалы келтірілген мәнді идентификаторы берілген айнымалыға "
+"сақтайды."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionstop.cpp:25
 msgid "Stop"
-msgstr ""
+msgstr "Тоқтау"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionstop.cpp:41
 msgid ""
 "The \"stop\" action ends all processing.  If the implicit keep has not been "
 "cancelled, then it is taken."
 msgstr ""
+"\"stop\" амалы скриптті орындауын тоқтатады.  Әрекет keep деп "
+"доғарылмаса, ол қабылданады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:38
 msgid "Vacation"
@@ -511,6 +531,9 @@ msgid ""
 "provide correspondents with notification that the user is away for an "
 "extended period of time and that they should not expect quick responses."
 msgstr ""
+"\"vacation\" амалы, Unix жүйелердің көбіндегі vacation командадағыдай, "
+"тұлғадан тез жауап күтпесін деп хабарлама жібереді, өйткені ол ұзақ "
+"уақыт орында болмайды деп."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:152
 msgid ""
@@ -519,24 +542,29 @@ msgid ""
 "are cases when one needs more granularity, if one would like to generate "
 "\"vacation\" replies more frequently."
 msgstr ""
+"\":days\" параметрі, бір қабылдаушыға қанша күнде бір рет автожауап "
+"беру керегін анықтайды. Кейбірде  күннен қысқа өлшем керек болып "
+"қалады."
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionvacation.cpp:153
 msgid ""
 "This extension defines a \":seconds\" parameter to provide more granularity "
 "for such situations."
 msgstr ""
+"Қысқа уақыт өлшем керек болғанда \":seconds\" қосымша параметрін "
+"қолдануға болады."
 
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectaddheaderpositioncombobox.cpp:36
 msgid "Insert at the beginning"
-msgstr ""
+msgstr "Басына ендіру"
 
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectaddheaderpositioncombobox.cpp:37
 msgid "Append at the end"
-msgstr ""
+msgstr "Соңына жалғау"
 
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectfileintowidget.cpp:31
 msgid "Select folder"
-msgstr ""
+msgstr "Қапшықты таңдау"
 
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectfileintowidget.cpp:56
 #: ksieveui/autocreatescripts/sieveactions/widgets/selectflagswidget.cpp:117
@@ -704,6 +732,9 @@ msgid ""
 "The \"envelope\" test is true if the specified part of the [SMTP] (or "
 "equivalent) envelope matches the specified key."
 msgstr ""
+"Егер келтірілген [SMTP] (немесе баламасының) орамы "
+"көрсетілген кілтке сәйкесті болса \"envelope\" сынағы "
+"True (ақиқат) дейді."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:31
 msgid "Environment"
@@ -711,7 +742,7 @@ msgstr "Айналасы"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:46
 msgid "Item:"
-msgstr ""
+msgstr "Жазуы:"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:104
 msgid ""
@@ -719,6 +750,9 @@ msgid ""
 "by the name string and matches it to the values specified in the key-list "
 "argument."
 msgstr ""
+"\"environment\" сынақ көмегімен кілт тізіміндегі мәндеріне сәйкес келетін "
+"мәтін-жолды атауымен келтірілген айнала ортасының мәлімет жазуын "
+"алып шығуға болады."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionexists.cpp:33
 msgid "Exists"
@@ -783,6 +817,9 @@ msgid ""
 "The \"header\" test evaluates to true if the value of any of the named "
 "headers, ignoring leading and trailing whitespace, matches any key."
 msgstr ""
+"Егер кез-келген атауы бар айдарлардың мәні (алдындағы - артындағы "
+"бос орындарын елемей) кез-келген кілтіне сәйкес келсе, \"header\" сынағы "
+"True (ақиқат) дейді."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionihave.cpp:31
 msgid "IHave"
@@ -797,6 +834,8 @@ msgid ""
 "The \"ihave\" test provides a means for Sieve scripts to test for the "
 "existence of a given extension prior to actually using it."
 msgstr ""
+"\"ihave\" сынағы Sieve скрипттерді, пайдалану алдында, келтірілген "
+"кеңейтуі бар ма деп тексереді."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmailboxexists.cpp:30
 msgid "Mailbox exist"
@@ -808,6 +847,10 @@ msgid ""
 "names\" argument exist in the mailstore, and each allows the user in whose "
 "context the Sieve script runs to \"deliver\" messages into it."
 msgstr ""
+"\"mailboxexists\" сынағы осы пошта қоймасында \"mailbox-names\" "
+"аргументінде тізімделген бүкіл пошта жәшіктері бар болса және "
+"скрипт ие пайдаланушыға \"deliver\" арқылы хатты жолдауы болса, "
+"true (ақиқат) дейді."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:32
 msgid "Meta Data"
@@ -842,17 +885,19 @@ msgstr "Метадерегі бар"
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:52
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:45
 msgid "Annotation:"
-msgstr ""
+msgstr "Аңдатпасы:"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadataexists.cpp:89
 msgid ""
 "The \"metadataexists\" test is true if all of the annotations listed in the "
 "\"annotation-names\" argument exist for the specified mailbox."
 msgstr ""
+"\"metadataexists\" сынағы келтірілген пошта жәшігі үшін \"annotation-names\" "
+"аргументінде тізімделген бүкіл аңдатпалар бар болса true (ақиқат) дейді."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:31
 msgid "Server Meta Data"
-msgstr ""
+msgstr "Сервер метадерегі"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadata.cpp:118
 msgid ""
@@ -860,10 +905,13 @@ msgid ""
 "The retrieved value is compared to the \"key-list\". The test returns true "
 "if the annotation exists and its value matches any of the keys."
 msgstr ""
+"Бұл сынақ серверінің андатпасының \"annotation-name\" атауын "
+"табады. Табылғаны  \"key-list\" тізімдегілерімен салыстырылады. Бар "
+"болса true (ақиқат) деген жауап қайтарады."
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:29
 msgid "Server Meta Data Exists"
-msgstr ""
+msgstr "Сервер метадерегі бар"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionservermetadataexists.cpp:79
 msgid ""
@@ -873,19 +921,19 @@ msgstr ""
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:29
 msgid "Size"
-msgstr ""
+msgstr "Өлшемі"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:47
 msgid "under"
-msgstr ""
+msgstr "мынадан кем:"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:48
 msgid "over"
-msgstr ""
+msgstr "мынадан асады:"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:54
 msgid " KB"
-msgstr ""
+msgstr " КБ"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionsize.cpp:71
 msgid ""
