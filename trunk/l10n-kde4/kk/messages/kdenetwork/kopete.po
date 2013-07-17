@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-10 07:42+0000\n"
+"POT-Creation-Date: 2013-07-17 01:42+0000\n"
 "PO-Revision-Date: 2013-06-13 05:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -3349,7 +3349,8 @@ msgstr "&Файл"
 #. i18n: ectx: property (text), widget (QPushButton, m_btnEdit)
 #. i18n: ectx: property (text), widget (QPushButton, m_edit)
 #: kopete/kopeteui.rc:17 plugins/autoreplace/autoreplaceprefs.ui:137
-#: plugins/contactnotes/contactnotesui.rc:5 plugins/history/historyui.rc:5
+#: plugins/contactnotes/contactnotesui.rc:5
+#: plugins/cryptography/cryptographyui.rc:5 plugins/history/historyui.rc:5
 #: plugins/history2/history2ui.rc:5 plugins/otr/otrui.rc:5
 #: plugins/statistics/statisticsui.rc:5 plugins/translator/translatorui.rc:5
 #: protocols/groupwise/ui/gwcustomstatus.ui:44 protocols/skype/skypeui.rc:5
@@ -6196,6 +6197,302 @@ msgstr "%1 туралы жазбалар"
 msgid "&Notes"
 msgstr "&Жазбалар"
 
+#. i18n: ectx: Menu (tools)
+#: plugins/cryptography/cryptographychatui.rc:5
+#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
+#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
+#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
+#: protocols/skype/skypechatui.rc:5
+msgid "&Tools"
+msgstr "Құ&ралдар"
+
+#. i18n: ectx: ToolBar (cryptographyToolBar)
+#: plugins/cryptography/cryptographychatui.rc:12
+#, fuzzy
+#| msgid "Cryptography"
+msgid "Cryptography Toolbar"
+msgstr "Шифрлау"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+msgid "Cryptography"
+msgstr "Шифрлау"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:81
+#, fuzzy
+#| msgid "Never encrypt messages"
+msgctxt "@action toggle action"
+msgid "Encrypt Messages"
+msgstr "Ешқашанда шифрламау"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:83
+#, fuzzy
+#| msgid "&Send Message"
+msgctxt "@action toggle action"
+msgid "Sign Messages"
+msgstr "&Хабарды жіберу"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:85
+#, fuzzy
+#| msgid "Export contact's details to the KDE Address Book"
+msgctxt "@action toggle action"
+msgid "Export Contacts' Keys to Address Book"
+msgstr "KDE адрес кітапшасына контакттың егжей-тегжейін экспорттау"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:109
+msgctxt "@info"
+msgid ""
+"You have not selected a private key for yourself, so signing is not "
+"possible. Please select a private key in the Cryptography preferences dialog."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:110
+#, fuzzy
+#| msgid "Private Keys"
+msgid "No Private Key"
+msgstr "Жеке кілттер"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:164
+msgctxt "@info"
+msgid ""
+"This protocol may not work with messages that are encrypted. This is because "
+"encrypted messages are very long, and the server or peer may reject them due "
+"to their length. To avoid being signed off or your account being warned or "
+"temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyguiclient.cpp:165
+#, fuzzy
+#| msgid "Unsupported protocol version."
+msgid "Cryptography Unsupported Protocol"
+msgstr "Протоколдың қолдау таппайтын нұсқасы."
+
+#: plugins/cryptography/cryptographyguiclient.cpp:172
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid ""
+"You need to select a public key for %2 to send encrypted messages to that "
+"contact."
+msgid_plural ""
+"You need to select a public key for the following meta-contacts to send "
+"encrypted messages to them:\n"
+"%2"
+msgstr[0] "Әңгіме терезесіндегі журналдың хабар түстері"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:174
+msgid "Missing public key"
+msgid_plural "Missing public keys"
+msgstr[0] ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:92
+#, fuzzy
+#| msgid "Select Public Key"
+msgctxt "@action"
+msgid "&Select Public Key..."
+msgstr "Ашық кілтті таңдау"
+
+#: plugins/cryptography/cryptographyplugin.cpp:98
+#, fuzzy
+#| msgid "Export to Address Book"
+msgctxt "@action"
+msgid "&Export Public Keys To Address Book..."
+msgstr "Адрес кітапшасына экспорттау"
+
+#: plugins/cryptography/cryptographyplugin.cpp:382
+#, kde-format
+msgctxt "@info"
+msgid ""
+"This protocol %1 may not work with messages that are encrypted. This is "
+"because encrypted messages are very long, and the server or peer may reject "
+"them due to their length. To avoid being signed off or your account being "
+"warned or temporarily suspended, turn off encryption."
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:383
+#, fuzzy, kde-format
+#| msgid "Unsupported protocol version."
+msgid "Cryptography Unsupported Protocol %1"
+msgstr "Протоколдың қолдау таппайтын нұсқасы."
+
+#: plugins/cryptography/cryptographyplugin.cpp:419
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found an encryption key for %1 (%2) in your KDE "
+"address book. Do you want to use key %3 as this contact's public key? "
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:420
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Key Found"
+msgstr "Ашық кілтті таңдау"
+
+#: plugins/cryptography/cryptographyplugin.cpp:431
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Keys Found"
+msgstr "Ашық кілтті таңдау"
+
+#: plugins/cryptography/cryptographyplugin.cpp:434
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Cryptography plugin has found multiple encryption keys for %1 (%2) in your "
+"KDE address book. To use one of these keys, select it and choose OK."
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:43
+#, fuzzy
+#| msgid "Private Keys"
+msgid "Private Key: "
+msgstr "Жеке кілттер"
+
+#: plugins/cryptography/cryptographypreferences.cpp:46
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgctxt "@label:chooser"
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr ""
+"Лезде хабарласу қызметін қолданып кіммен байланысуды қалайтыңызды таңдаңыз"
+
+#: plugins/cryptography/cryptographypreferences.cpp:47
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgid "Select the key you want to use to sign and encrypt messages"
+msgstr ""
+"Лезде хабарласу қызметін қолданып кіммен байланысуды қалайтыңызды таңдаңыз"
+
+#: plugins/cryptography/cryptographypreferences.cpp:48
+#, fuzzy
+#| msgid "Enter passphrase for <b>%1</b>:"
+msgctxt "@info:tooltip"
+msgid "The private key used for decryption and signing"
+msgstr "<b>%1</b> үшін парольді келтіріңіз:"
+
+#: plugins/cryptography/cryptographypreferences.cpp:49
+msgctxt "@info:whatsthis"
+msgid ""
+"View and change the private key used for signing and encrypting messages "
+"using the Cryptography plugin"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:51
+msgctxt "@info"
+msgid ""
+"<para>Before you can sign messages or receive encrypted ones, you must "
+"select a private key for yourself.</para><para>Before you can send encrypted "
+"messages to someone, you must select their public key by right-clicking on "
+"their name in your contact list and choosing \"Select Public Key\".</para>"
+msgstr ""
+
+#: plugins/cryptography/cryptographypreferences.cpp:54
+msgid "Sign messages in clearsign mode"
+msgstr ""
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:40
+msgid "Select Contact's Public Key"
+msgstr "Контакттың ашық кілтін таңдау"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:49
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgctxt "@label:chooser"
+msgid "Select the key you want to use encrypt messages to the recipient"
+msgstr ""
+"Лезде хабарласу қызметін қолданып кіммен байланысуды қалайтыңызды таңдаңыз"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:50
+#, fuzzy
+#| msgid "Select public key for %1"
+msgid "Select public key"
+msgstr "%1 үшін ашық кілтті таңдау"
+
+#: plugins/cryptography/cryptographyselectuserkey.cpp:53
+#, fuzzy, kde-format
+#| msgid "Select public key for %1"
+msgctxt "@label:chooser"
+msgid "Select public key for %1"
+msgstr "%1 үшін ашық кілтті таңдау"
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:12
+#, fuzzy
+#| msgid "Verify fingerprint"
+msgid "User's private key fingerprint."
+msgstr "Бақылау тізбегін тексеру"
+
+#. i18n: ectx: label, entry, group (Cryptography Plugin)
+#: plugins/cryptography/cryptographysettings.kcfg:16
+msgid "Sign messages in clearsign mode."
+msgstr ""
+
+#: plugins/cryptography/exportkeys.cpp:40
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Export Public Keys"
+msgstr "Ашық кілтті таңдау"
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+#| msgid "Export"
+msgctxt "@action:button"
+msgid "Export"
+msgstr "Экспорт"
+
+#: plugins/cryptography/exportkeys.cpp:42
+#, fuzzy
+#| msgid "Export to Address Book"
+msgctxt "@info:tooltip"
+msgid "Export checked keys to address book"
+msgstr "Адрес кітапшасына экспорттау"
+
+#: plugins/cryptography/exportkeys.cpp:75
+#, fuzzy
+#| msgid "No Contacts with Photo Support"
+msgctxt "@item:inlistbox"
+msgid "&lt;No metacontacts with keys to export&gt;"
+msgstr "Фото қолдауымен контакттар жоқ"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/cryptography/exportkeysbase.ui:17
+msgid ""
+"Cryptography plugin will export keys for the chosen metacontacts. If no "
+"address book entry has been linked to each metacontact, one will be created."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:27
+#, fuzzy
+#| msgid "Select Resource"
+msgid "Select Keys to Export"
+msgstr "Ресурсты таңдау"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/exportkeysbase.ui:30
+msgid ""
+"Check the box next to the name and key of each user that you want to export "
+"to the address book."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:27
+#, fuzzy
+#| msgid "Select Resource"
+msgid "Select Keys to Use"
+msgstr "Ресурсты таңдау"
+
+#. i18n: ectx: property (whatsThis), widget (KListWidget, keyList)
+#: plugins/cryptography/kabckeyselectorbase.ui:30
+#, fuzzy
+#| msgid ""
+#| "Select the contact you want to communicate with via Instant Messaging"
+msgid "Select the key you want to use for to encrypt to the metacontact"
+msgstr ""
+"Лезде хабарласу қызметін қолданып кіммен байланысуды қалайтыңызды таңдаңыз"
+
 #: plugins/highlight/highlightconfig.cpp:71
 msgid "-New filter-"
 msgstr "-Жаңа сүзгі-"
@@ -6322,14 +6619,6 @@ msgid ""
 msgstr ""
 "Ескі %1 журналын талдау:\n"
 "%2"
-
-#. i18n: ectx: Menu (tools)
-#: plugins/history/historychatui.rc:5 plugins/history2/history2chatui.rc:5
-#: plugins/latex/latexchatui.rc:5 plugins/nowlistening/nowlisteningchatui.rc:5
-#: plugins/otr/otrchatui.rc:4 plugins/translator/translatorchatui.rc:5
-#: protocols/skype/skypechatui.rc:5
-msgid "&Tools"
-msgstr "Құ&ралдар"
 
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History Plugin)
 #. i18n: ectx: label, entry (Auto_chatwindow), group (History2 Plugin)
@@ -21202,10 +21491,6 @@ msgstr "Тіркелгіні тексеру - Yahoo"
 #~ msgstr "Қолтаңбасы жарамсыз."
 
 #, fuzzy
-#~ msgid "You do not have permission to send a message to this contact."
-#~ msgstr "Әңгіме терезесіндегі журналдың хабар түстері"
-
-#, fuzzy
 #~ msgid "Message is too long."
 #~ msgstr "Хабар тым ұзын."
 
@@ -22793,11 +23078,6 @@ msgstr "Тіркелгіні тексеру - Yahoo"
 #~ msgid "Export Contacts"
 #~ msgstr "Контакттарды экспорттау"
 
-#, fuzzy
-#~| msgid "Cryptography"
-#~ msgid "Cryptography Toolbar"
-#~ msgstr "Шифрлау"
-
 #~ msgid "Cache Passphrase"
 #~ msgstr "Парольді сақтау"
 
@@ -22814,24 +23094,6 @@ msgstr "Тіркелгіні тексеру - Yahoo"
 #~ msgid "Until Kopete closes (Dangerous)"
 #~ msgstr "Kopete жабылғанша"
 
-#~ msgid "Select Contact's Public Key"
-#~ msgstr "Контакттың ашық кілтін таңдау"
-
-#~ msgid "Select public key for %1"
-#~ msgstr "%1 үшін ашық кілтті таңдау"
-
-#, fuzzy
-#~| msgid ""
-#~| "Select the contact you want to communicate with via Instant Messaging"
-#~ msgid "Select the key you want to use to decrypt and sign messages"
-#~ msgstr ""
-#~ "Лезде хабарласу қызметін қолданып кіммен байланысуды қалайтыңызды таңдаңыз"
-
-#, fuzzy
-#~| msgid "Enter passphrase for <b>%1</b>:"
-#~ msgid "The private key used for decryption and signing"
-#~ msgstr "<b>%1</b> үшін парольді келтіріңіз:"
-
 #, fuzzy
 #~| msgid "Do not ask for the passphrase"
 #~ msgid "Ask for passphrase on Kopete startup (Recommended)"
@@ -22843,44 +23105,9 @@ msgstr "Тіркелгіні тексеру - Yahoo"
 #~ msgstr "Паролі сұралмасын"
 
 #, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "Export Public Keys"
-#~ msgstr "Ашық кілтті таңдау"
-
-#, fuzzy
-#~| msgid "Export to Address Book"
-#~ msgid "Export checked keys to address book"
-#~ msgstr "Адрес кітапшасына экспорттау"
-
-#, fuzzy
-#~| msgid "No Contacts with Photo Support"
-#~ msgid "<No meta-contacts with keys to export>"
-#~ msgstr "Фото қолдауымен контакттар жоқ"
-
-#, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "&Select Public Key..."
-#~ msgstr "Ашық кілтті таңдау"
-
-#, fuzzy
-#~| msgid "Export to Address Book"
-#~ msgid "&Export Public Keys To Address Book..."
-#~ msgstr "Адрес кітапшасына экспорттау"
-
-#, fuzzy
 #~| msgid "Enter passphrase for <b>%1</b>:"
 #~ msgid "Enter password for GPG encryption and signing key"
 #~ msgstr "<b>%1</b> үшін парольді келтіріңіз:"
-
-#, fuzzy
-#~| msgid "Unsupported protocol version."
-#~ msgid "Cryptography Unsupported Protocol"
-#~ msgstr "Протоколдың қолдау таппайтын нұсқасы."
-
-#, fuzzy
-#~| msgid "Select Public Key"
-#~ msgid "Public Key Found"
-#~ msgstr "Ашық кілтті таңдау"
 
 #, fuzzy
 #~| msgid "Enter passphrase for <b>%1</b>:"
@@ -22888,19 +23115,6 @@ msgstr "Тіркелгіні тексеру - Yahoo"
 #~ "Enter passphrase for secret key %1:\n"
 #~ "You have %2 tries left."
 #~ msgstr "<b>%1</b> үшін парольді келтіріңіз:"
-
-#~ msgid "Cryptography"
-#~ msgstr "Шифрлау"
-
-#, fuzzy
-#~| msgid "&Send Message"
-#~ msgid "Sign Messages"
-#~ msgstr "&Хабарды жіберу"
-
-#, fuzzy
-#~| msgid "Export contact's details to the KDE Address Book"
-#~ msgid "Export Contacts' Keys to Address Book"
-#~ msgstr "KDE адрес кітапшасына контакттың егжей-тегжейін экспорттау"
 
 #, fuzzy
 #~| msgid "Rename Identity"
