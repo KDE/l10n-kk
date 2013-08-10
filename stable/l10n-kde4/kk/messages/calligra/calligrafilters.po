@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:41+0000\n"
+"POT-Creation-Date: 2013-08-10 05:22+0000\n"
 "PO-Revision-Date: 2013-05-28 05:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -22,15 +22,19 @@ msgstr ""
 "\n"
 
 #: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
 msgid "Failed to read data."
 msgstr "Деректерді оқығанда жаңылыс."
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:68
+#: kchart/genericimageexport/genericimageexport.cpp:81
 msgid "Export Error"
 msgstr "Экспорт қатесі"
 
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "Жарамсыз XML дерегі."
 
@@ -65,11 +69,13 @@ msgstr "Өзгеше өлшемі (пикселде):"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:108
+#: libdialogfilter/exportsizedia.cpp:87
 msgid "Height:"
 msgstr "Биіктігі:"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:119
+#: libdialogfilter/exportsizedia.cpp:82
 msgid "Width:"
 msgstr "Ені:"
 
@@ -78,7 +84,27 @@ msgstr "Ені:"
 msgid "Margin:"
 msgstr "Жиегі:"
 
-#: karbon/image/ImageExport.cpp:97
+#: karbon/eps/EpsExportDlg.cpp:37
+msgid "EPS Export"
+msgstr "EPS экспорты"
+
+#: karbon/eps/EpsExportDlg.cpp:42
+msgid "Options"
+msgstr "Параметрлері"
+
+#: karbon/eps/EpsExportDlg.cpp:45
+msgid "PostScript level 1"
+msgstr "PostScript 1-деңгейі"
+
+#: karbon/eps/EpsExportDlg.cpp:46
+msgid "PostScript level 2"
+msgstr "PostScript 2-деңгейі"
+
+#: karbon/eps/EpsExportDlg.cpp:47
+msgid "PostScript level 3"
+msgstr "PostScript 3-деңгейі"
+
+#: karbon/image/ImageExport.cpp:99
 msgid "PNG Export Options"
 msgstr "PNG экспорттау параметрлері"
 
@@ -131,6 +157,36 @@ msgstr "Түсі"
 msgid "Opacity"
 msgstr "Мөлдірсіздік"
 
+#: kchart/genericimageexport/genericimageexport.cpp:122
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "Failed to write file."
+msgstr "Файлды жазу қатесі."
+
+#: kchart/genericimageexport/genericimageexport.cpp:123
+#, kde-format
+msgid "%1 Export Error"
+msgstr "%1 экспорттау қатесі"
+
+#: libdialogfilter/exportsizedia.cpp:42
+msgid "Export Filter Parameters"
+msgstr "Экспорт сүзгісінің паметрлері"
+
+#: libdialogfilter/exportsizedia.cpp:76
+msgid "Keep ratio"
+msgstr "Ара қатынасы сақталсын"
+
+#: libdialogfilter/exportsizedia.cpp:98
+msgid "Width (%):"
+msgstr "Ені (%):"
+
+#: libdialogfilter/exportsizedia.cpp:103
+msgid "Height (%):"
+msgstr "Биіктігі (%):"
+
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "PNG Export Error"
+msgstr "PNG экспорт қатесі"
+
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
 #: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
@@ -141,15 +197,15 @@ msgstr "Мөлдірсіздік"
 #: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
-#: words/docx/import/DocxXmlCommentsReader.cpp:89
-#: words/docx/import/DocxXmlDocumentReader.cpp:201
-#: words/docx/import/DocxXmlEndnoteReader.cpp:90
-#: words/docx/import/DocxXmlFontTableReader.cpp:89
-#: words/docx/import/DocxXmlFooterReader.cpp:95
-#: words/docx/import/DocxXmlFootnoteReader.cpp:90
-#: words/docx/import/DocxXmlHeaderReader.cpp:95
-#: words/docx/import/DocxXmlNumberingReader.cpp:87
-#: words/docx/import/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: words/docx/DocxXmlEndnoteReader.cpp:90
+#: words/docx/DocxXmlFontTableReader.cpp:89
+#: words/docx/DocxXmlFooterReader.cpp:95
+#: words/docx/DocxXmlFootnoteReader.cpp:90
+#: words/docx/DocxXmlHeaderReader.cpp:95
+#: words/docx/DocxXmlNumberingReader.cpp:87
+#: words/docx/DocxXmlSettingsReader.cpp:87
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "\"%1\" атаулар кеңістігі табылмады"
@@ -271,48 +327,182 @@ msgstr "\"%1\" деген жазуға ашылмады."
 msgid "Could not write block"
 msgstr "Блок жазылмады."
 
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<SHEETNAME>"
+#: sheets/csv/csvdialog.cpp:61
+msgid "Import"
+msgstr "Импорт"
 
-#: sheets/csv/csvexportdialog.cpp:46 words/ascii/ImportDialog.cc:50
+#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
+#: words/ascii/ImportDialog.cc:49
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Recommended ( %1 )"
 msgstr "Ұсынылғаны ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:47 words/ascii/ImportDialog.cc:51
+#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
+#: words/ascii/ImportDialog.cc:50
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Locale ( %1 )"
 msgstr "Жергілікті стандарт ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:50 words/ascii/ImportDialog.cc:54
+#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
+#: words/ascii/ImportDialog.cc:53
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Other ( %1 )"
 msgstr "Басқа ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:284 words/ascii/ImportDialog.cc:108
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+msgid "Text"
+msgstr "Мәтін"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "Сан"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "Ақша"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "Күні"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr "Ондық бөлшекті (үтірлі) сан"
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr "Ондық бөлшекті (нүктелі) сан"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 sheets/csv/dialogui.ui:275
+msgid "None"
+msgstr "Жоқ"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr "Келтірген ауқымды тексеріңіз. Бастауы соңынан кем болу керек қой."
+
+#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:284
+#: words/ascii/ImportDialog.cc:107
 #, kde-format
 msgid "Cannot find encoding: %1"
 msgstr "Табылмаған кодтама: %1"
 
-#: sheets/csv/csvimport.cc:93
+#: sheets/csv/csvexport.cc:283
+msgid "<SHEETNAME>"
+msgstr "<SHEETNAME>"
+
+#: sheets/csv/csvimport.cc:92
 msgid "CSV filter cannot open input file - please report."
 msgstr "CSV сүзгісі кіріс файлды аша алмады - қате туралы хабарлаңыз."
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
 #. i18n: ectx: attribute (title), widget (QWidget, encodingPage)
-#: sheets/csv/exportdialogui.ui:27
-#: sheets/latex/export/latexexportwidget.ui:219
+#: sheets/csv/dialogui.ui:52 sheets/csv/exportdialogui.ui:27
+#: sheets/latex/export/latexexportdia.ui:344
 msgid "Encoding"
 msgstr "Кодтамасы"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: sheets/csv/exportdialogui.ui:35 words/ascii/ImportDialogUI.ui:24
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: sheets/csv/dialogui.ui:66 sheets/csv/exportdialogui.ui:35
+#: words/ascii/ImportDialogUI.ui:30
 msgid "E&ncoding:"
 msgstr "&Кодтамасы:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:124
+msgid "Common"
+msgstr "Жалпы"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_delimiterBox)
+#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
+#: sheets/csv/dialogui.ui:141 sheets/csv/exportdialogui.ui:222
+msgid "Delimiter"
+msgstr "Бөлгіші"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
+#: sheets/csv/dialogui.ui:153 sheets/csv/exportdialogui.ui:228
+msgid "Comma"
+msgstr "Үтір"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
+#: sheets/csv/dialogui.ui:163 sheets/csv/exportdialogui.ui:238
+msgid "Semicolon"
+msgstr "Үтірлі нүкте"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
+#: sheets/csv/dialogui.ui:170 sheets/csv/exportdialogui.ui:245
+msgid "Tabulator"
+msgstr "Кестелегіш"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
+#: sheets/csv/dialogui.ui:177 sheets/csv/exportdialogui.ui:252
+msgid "Space"
+msgstr "Бос орын"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
+#: sheets/csv/dialogui.ui:184
+msgid "Other"
+msgstr "Басқа"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
+#: sheets/csv/dialogui.ui:212
+msgid "Ignore duplicate delimiters"
+msgstr "Қайталанатын бөлгішті елемеу"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: sheets/csv/dialogui.ui:227
+msgid "Text&quote:"
+msgstr "&Тырнақшадағы мәтін:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: sheets/csv/dialogui.ui:240
+msgid "&Format:"
+msgstr "&Пішімі:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:265 sheets/csv/exportdialogui.ui:329
+msgid "\""
+msgstr "\""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:270 sheets/csv/exportdialogui.ui:334
+msgid "'"
+msgstr "'"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:316
+msgid "Ranges"
+msgstr "Ауқымдары"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: sheets/csv/dialogui.ui:337 sheets/csv/dialogui.ui:390
+msgid "to"
+msgstr "-"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: sheets/csv/dialogui.ui:370
+msgid "Import lines:"
+msgstr "Импорттайтын жолдар:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
+#: sheets/csv/dialogui.ui:430
+msgid "Import columns:"
+msgstr "Импорттайтын бағандар:"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
+#: sheets/csv/dialogui.ui:504
+msgid "Update"
+msgstr "Жаңарту"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupEndOfLine)
 #: sheets/csv/exportdialogui.ui:76
@@ -370,31 +560,6 @@ msgstr "Әрбір беттің жоғарында бөлгіш жол басы�
 msgid "Cells"
 msgstr "Ұяшықтар"
 
-#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
-#: sheets/csv/exportdialogui.ui:222
-msgid "Delimiter"
-msgstr "Бөлгіші"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: sheets/csv/exportdialogui.ui:228
-msgid "Comma"
-msgstr "Үтір"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: sheets/csv/exportdialogui.ui:238
-msgid "Semicolon"
-msgstr "Үтірлі нүкте"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: sheets/csv/exportdialogui.ui:245
-msgid "Tabulator"
-msgstr "Кестелегіш"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: sheets/csv/exportdialogui.ui:252
-msgid "Space"
-msgstr "Бос орын"
-
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
 #: sheets/csv/exportdialogui.ui:259
 msgid "Other:"
@@ -404,16 +569,6 @@ msgstr "Басқа:"
 #: sheets/csv/exportdialogui.ui:309
 msgid "Quotes:"
 msgstr "Тырнақшалары:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:329
-msgid "\""
-msgstr "\""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:334
-msgid "'"
-msgstr "'"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_selectionOnly)
 #: sheets/csv/exportdialogui.ui:365
@@ -559,46 +714,52 @@ msgstr ""
 msgid "Pi&xels between cells:"
 msgstr "Ұяшық аралықтағы &пикселдер саны:"
 
-#: sheets/html/htmlexport.cc:208 sheets/html/htmlexport.cc:384
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
 msgid "Top"
 msgstr "Жоғары"
 
-#: sheets/latex/export/latexexportdialog.cc:156
+#. i18n: ectx: property (caption), widget (QDialog)
+#: sheets/latex/export/latexexportdia.ui:18
 msgid "Latex Export Filter Configuration"
 msgstr "Latex экспорт сүзгінің баптаулары"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget2)
-#: sheets/latex/export/latexexportwidget.ui:24
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:45
 msgid "Document"
 msgstr "Құжат"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: sheets/latex/export/latexexportwidget.ui:32
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:82
 msgid "Document Style"
 msgstr "Құжаттың стилі"
 
-#. i18n: ectx: property (text), widget (QRadioButton, latexStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:38
-msgid "Latex style"
-msgstr "Latex стилі"
-
-#. i18n: ectx: property (text), widget (QRadioButton, wordsStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:45
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:97
 msgid "Words style"
 msgstr "Word стилі"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: sheets/latex/export/latexexportwidget.ui:58
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:116
+msgid "Latex style"
+msgstr "Latex стилі"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:133
 msgid "Document Type"
 msgstr "Құжаттың түрі"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:64
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:148
+msgid "Independent document"
+msgstr "Жеке құжат"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:154
 msgid "The document will be able to be compiled alone"
 msgstr "Жеке компиляциялауға келетін құжат"
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:157
 msgid ""
 "The document will be generated as a full latex document since all the "
 "include will be generated before the \\begin[document} and \\end{document} "
@@ -607,18 +768,18 @@ msgstr ""
 "Құжат толық latex құжат түрінде құрылады, өйткені барлық қосатындары \\begin"
 "[document} және \\end{document} командаларының алдында құрылмақ."
 
-#. i18n: ectx: property (text), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:70
-msgid "Independent document"
-msgstr "Жеке құжат"
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:173
+msgid "Document to include"
+msgstr "Қосымша құжат"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:80
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:176
 msgid "Do not generate either the latex header or the document environment"
 msgstr "Latex айдарын және құжат ортасы құрылмасын"
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:83
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:179
 msgid ""
 "The document will be generated as a latex document which will have to be "
 "included in a main latex document. It will allow you to generate several "
@@ -628,116 +789,137 @@ msgstr ""
 "Бұл құжатыңыздың әрбір тарауын бөлек шағын файл ретінде құруға мүмкіндік "
 "береді."
 
-#. i18n: ectx: property (text), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:86
-msgid "Document to include"
-msgstr "Қосымша құжат"
-
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: sheets/latex/export/latexexportwidget.ui:98
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:196
 msgid "Document class:"
 msgstr "Құжат класы:"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: sheets/latex/export/latexexportwidget.ui:111
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:212
 msgid "Quality:"
 msgstr "Сапасы:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:122
-msgid "Final"
-msgstr "Ақырғы"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:127
-msgid "Draft"
-msgstr "Алдын-ала жобасы"
-
-#. i18n: ectx: property (text), widget (QLabel, defaultFontSizeTextZone)
-#: sheets/latex/export/latexexportwidget.ui:135
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:228
 msgid "Default font size:"
 msgstr "Әдетті қаріп өлшемі:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget3)
-#: sheets/latex/export/latexexportwidget.ui:176
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:247
+msgid "Final"
+msgstr "Ақырғы"
+
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:252
+msgid "Draft"
+msgstr "Алдын-ала жобасы"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:273
 msgid "Pictures"
 msgstr "Суреттер"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: sheets/latex/export/latexexportwidget.ui:182
-msgid "Convert the pictures:"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:301
+#, fuzzy
+#| msgid "Convert the pictures:"
+msgid "Convert the pictures"
 msgstr "Аударатын суреттер:"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: sheets/latex/export/latexexportwidget.ui:199
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:320
 msgid "Pictures directory:"
 msgstr "Суреттер қапшығы:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: sheets/latex/export/latexexportwidget.ui:213
-#: sheets/latex/export/latexexportwidget.ui:244
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: sheets/latex/export/latexexportdia.ui:329
+#: sheets/latex/export/latexexportdia.ui:376
 msgid "Language"
 msgstr "Тілі"
 
-#. i18n: ectx: property (text), widget (QPushButton, addLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:261
-msgid "Add"
-msgstr "Қосу"
-
-#. i18n: ectx: property (text), widget (QPushButton, rmLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:268
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:391
 msgid "Remove"
 msgstr "Өшіру"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: sheets/latex/export/latexexportwidget.ui:293
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:407
+msgid "Add"
+msgstr "Қосу"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:443
 msgid "Contents"
 msgstr "Мазмұны"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: sheets/latex/export/latexexportwidget.ui:301
-msgid "Export information about author:"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:461
+#, fuzzy
+#| msgid "Export information about author:"
+msgid "Export information about author"
 msgstr "Авторы туралы экспорталатын мәлімет:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: sheets/latex/export/latexexportwidget.ui:321
-msgid "Add a table of content:"
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:483
+#, fuzzy
+#| msgid "Add a table of content:"
+msgid "Add a table of content"
 msgstr "Мазмұн кестесін қосу:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: sheets/latex/export/latexexportwidget.ui:340
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:502
 msgid "Notes"
 msgstr "Жазбалар"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
-#: sheets/latex/export/latexexportwidget.ui:346
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:517
 msgid "Don't export"
 msgstr "Экспорттамау"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
-#: sheets/latex/export/latexexportwidget.ui:353
-msgid "Export notes in margin notes"
-msgstr "Жазбалары жиектегі жазбалар ретінде экспортталсын"
-
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton6)
-#: sheets/latex/export/latexexportwidget.ui:360
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:533
 msgid "Export notes in comments"
 msgstr "Жазбалары түсініктемелер ретінде экспортталсын"
 
-#: sheets/opencalc/opencalcexport.cc:914
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:549
+msgid "Export notes in margin notes"
+msgstr "Жазбалары жиектегі жазбалар ретінде экспортталсын"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:574
+msgid "&Help"
+msgstr "&Анықтама"
+
+#. i18n: ectx: property (accel), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:577
+msgid "F1"
+msgstr "F1"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:605
+msgid "&OK"
+msgstr "&ОК"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:619
+msgid "&Cancel"
+msgstr "Қ&айту"
+
+#: sheets/opencalc/opencalcexport.cc:918
 msgid "Page "
 msgstr "Беті "
 
-#: sheets/opencalc/opencalcimport.cc:1235
+#: sheets/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "Файл бүлінген сияқты. Кестесі өткізіледі."
 
-#: sheets/opencalc/opencalcimport.cc:1246
+#: sheets/opencalc/opencalcimport.cc:1247
 msgid "Skipping a table."
 msgstr "Кесте өткізіледі."
 
-#: sheets/opencalc/opencalcimport.cc:1946
+#: sheets/opencalc/opencalcimport.cc:1947
 #, kde-format
 msgid ""
 "This document was created with OpenOffice.org version '%1'. This filter was "
@@ -749,15 +931,15 @@ msgstr ""
 "жасалған. Файлды оқығанда оғаш жағдай, қирау не деректі дұрыс көрсетпеу орын "
 "алды. Аударуды жалғастыруды қалайсыз ба?"
 
-#: sheets/opencalc/opencalcimport.cc:1947
+#: sheets/opencalc/opencalcimport.cc:1948
 msgid "Unsupported document version"
 msgstr "Танымайтын құжат нұсқасы"
 
-#: sheets/qpro/qproimport.cc:127
+#: sheets/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
 msgstr "QPRO сүзгісі кіріс файлды аша алмады - қате туралы хабарлаңыз."
 
-#: sheets/qpro/qproimport.cc:238
+#: sheets/qpro/qproimport.cc:239
 msgid ""
 "Unable to open password protected files.\n"
 "The password algorithm has not been published"
@@ -766,7 +948,7 @@ msgstr ""
 "Паролінің алгоритімі жарияланбаған"
 
 #: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/import/DocxImport.cpp:168
+#: words/docx/DocxImport.cpp:168
 #, kde-format
 msgid "Unable to find part for type %1"
 msgstr "%1 түрінің бөлшегі табылмады"
@@ -812,7 +994,7 @@ msgstr "\"%1\" слайд пішімі табылмады"
 msgid "Slide %1"
 msgstr "%1 слайды"
 
-#: words/ascii/ImportDialog.cc:46
+#: words/ascii/ImportDialog.cc:45
 msgid "Words's Plain Text Import Filter"
 msgstr "Word-қа жай мәтінді импорттау сүзгісі"
 
@@ -822,26 +1004,26 @@ msgid "Plain Text Import Dialog"
 msgstr "Жай мәтін импорттау диалогы"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupParagraph)
-#: words/ascii/ImportDialogUI.ui:65
+#: words/ascii/ImportDialogUI.ui:71
 msgid "End of Paragraph"
 msgstr "Абзацты аяқтауы"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphAsIs)
-#: words/ascii/ImportDialogUI.ui:71
+#: words/ascii/ImportDialogUI.ui:83
 msgid "&As is: At the end of line"
 msgstr "&Бар түрінде: Жол аяқтауы"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphSentence)
-#: words/ascii/ImportDialogUI.ui:81
+#: words/ascii/ImportDialogUI.ui:93
 msgid "&Sentence: If the end of line is the end of a sentence"
 msgstr "&Сөйлем: Жол аяқтауы - сөйлем аяқтауы болса"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphEmptyLine)
-#: words/ascii/ImportDialogUI.ui:88
+#: words/ascii/ImportDialogUI.ui:100
 msgid "&Empty Line: If the line is empty"
 msgstr "&Бос жол: Егер жол бос болса"
 
-#: words/epub/OdtHtmlConverter.cpp:304 words/mobi/OdtMobiHtmlConverter.cpp:325
+#: words/epub/OdtHtmlConverter.cpp:299 words/mobi/OdtMobiHtmlConverter.cpp:325
 msgid "End notes"
 msgstr "Аяғындағы жазба"
 
@@ -886,113 +1068,6 @@ msgstr "Word-қа RTF импорттау сүзгісі"
 #: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
 msgid "The file cannot be loaded."
 msgstr "Файл жүктелмейді"
-
-#~ msgid "Failed to write file."
-#~ msgstr "Файлды жазу қатесі."
-
-#~ msgid "%1 Export Error"
-#~ msgstr "%1 экспорттау қатесі"
-
-#~ msgid "Export Filter Parameters"
-#~ msgstr "Экспорт сүзгісінің паметрлері"
-
-#~ msgid "Keep ratio"
-#~ msgstr "Ара қатынасы сақталсын"
-
-#~ msgid "Width (%):"
-#~ msgstr "Ені (%):"
-
-#~ msgid "Height (%):"
-#~ msgstr "Биіктігі (%):"
-
-#~ msgid "PNG Export Error"
-#~ msgstr "PNG экспорт қатесі"
-
-#~ msgid "EPS Export"
-#~ msgstr "EPS экспорты"
-
-#~ msgid "Options"
-#~ msgstr "Параметрлері"
-
-#~ msgid "PostScript level 1"
-#~ msgstr "PostScript 1-деңгейі"
-
-#~ msgid "PostScript level 2"
-#~ msgstr "PostScript 2-деңгейі"
-
-#~ msgid "PostScript level 3"
-#~ msgstr "PostScript 3-деңгейі"
-
-#~ msgid "Import"
-#~ msgstr "Импорт"
-
-#~ msgid "Text"
-#~ msgstr "Мәтін"
-
-#~ msgid "Number"
-#~ msgstr "Сан"
-
-#~ msgid "Currency"
-#~ msgstr "Ақша"
-
-#~ msgid "Date"
-#~ msgstr "Күні"
-
-#~ msgid "Decimal Comma Number"
-#~ msgstr "Ондық бөлшекті (үтірлі) сан"
-
-#~ msgid "Decimal Point Number"
-#~ msgstr "Ондық бөлшекті (нүктелі) сан"
-
-#~ msgid "None"
-#~ msgstr "Жоқ"
-
-#~ msgid ""
-#~ "Please check the ranges you specified. The start value must be lower than "
-#~ "the end value."
-#~ msgstr "Келтірген ауқымды тексеріңіз. Бастауы соңынан кем болу керек қой."
-
-#~ msgid "Common"
-#~ msgstr "Жалпы"
-
-#~ msgid "Other"
-#~ msgstr "Басқа"
-
-#~ msgid "Ignore duplicate delimiters"
-#~ msgstr "Қайталанатын бөлгішті елемеу"
-
-#~ msgid "Text&quote:"
-#~ msgstr "&Тырнақшадағы мәтін:"
-
-#~ msgid "&Format:"
-#~ msgstr "&Пішімі:"
-
-#~ msgid "Ranges"
-#~ msgstr "Ауқымдары"
-
-#~ msgid "to"
-#~ msgstr "-"
-
-#~ msgid "Import lines:"
-#~ msgstr "Импорттайтын жолдар:"
-
-#~ msgid "Import columns:"
-#~ msgstr "Импорттайтын бағандар:"
-
-#~ msgid "Update"
-#~ msgstr "Жаңарту"
-
-#~ msgid "&Help"
-#~ msgstr "&Анықтама"
-
-#~ msgid "F1"
-#~ msgstr "F1"
-
-#~ msgid "&OK"
-#~ msgstr "&ОК"
-
-#~ msgid "&Cancel"
-#~ msgstr "Қ&айту"
 
 #~ msgid ""
 #~ "An error has occurred while parsing the Words file.\n"
