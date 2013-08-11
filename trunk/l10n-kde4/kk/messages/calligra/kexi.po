@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-05 02:27+0200\n"
+"POT-Creation-Date: 2013-08-11 01:31+0000\n"
 "PO-Revision-Date: 2013-05-29 04:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2554,7 +2554,7 @@ msgid "Execute"
 msgstr "Орындау"
 
 #: formeditor/kexiactionselectiondialog.cpp:286
-#: plugins/reports/kexireportview.cpp:83
+#: plugins/reports/kexireportview.cpp:92
 msgid "Print"
 msgstr "Басып шығару"
 
@@ -2812,12 +2812,12 @@ msgstr "\"%1\" кестесі шығыс деректер қорына көші�
 msgid "Could not export data to \"%1\"."
 msgstr "\"%1\" дегенге деректер экспорт етілмеді."
 
-#: kexiutils/identifier.cpp:74
+#: kexiutils/identifier.cpp:73
 #, kde-format
 msgid "Value of \"%1\" column must be an identifier."
 msgstr "\"%1\" бағанның мәні идентификатор болу керек."
 
-#: kexiutils/identifier.cpp:75
+#: kexiutils/identifier.cpp:74
 #, kde-format
 msgid "\"%1\" is not a valid identifier."
 msgstr "\"%1\" деген дұрыс идентификаторы емес."
@@ -4109,22 +4109,22 @@ msgid "Opened one year ago"
 msgid_plural "Opened %1 years ago"
 msgstr[0] "%1 жыл бұрын ашылған"
 
-#: main/startup/KexiRecentProjectsModel.cpp:112
+#: main/startup/KexiRecentProjectsModel.cpp:111
 msgid "on local server"
 msgstr "жергілікті серверінде"
 
-#: main/startup/KexiRecentProjectsModel.cpp:115
+#: main/startup/KexiRecentProjectsModel.cpp:114
 #, kde-format
 msgid "on \"%1\" server"
 msgstr "\"%1\" серверінде"
 
-#: main/startup/KexiRecentProjectsModel.cpp:123
+#: main/startup/KexiRecentProjectsModel.cpp:122
 #, kde-format
 msgctxt "File database <file>"
 msgid "File database %1"
 msgstr "%1 файл деректер қоры"
 
-#: main/startup/KexiRecentProjectsModel.cpp:128
+#: main/startup/KexiRecentProjectsModel.cpp:127
 #, kde-format
 msgctxt "<type> database"
 msgid "%1 database"
@@ -4491,7 +4491,7 @@ msgid "This file already exists. Do you want to overwrite it?"
 msgstr "Бұндай файл бар екен. Үстінен жаза берейік пе?"
 
 #: main/startup/KexiStartupFileHandler.cpp:490
-#: plugins/reports/kexireportview.cpp:191 widget/KexiFileWidget.cpp:433
+#: plugins/reports/kexireportview.cpp:200 widget/KexiFileWidget.cpp:433
 msgid "Overwrite"
 msgstr "Жаза беру"
 
@@ -6288,64 +6288,128 @@ msgstr "Жаңа есеп беруді құру."
 msgid "Page"
 msgstr "Беті"
 
-#: plugins/reports/kexireportview.cpp:85
+#: plugins/reports/kexireportview.cpp:75
+#, fuzzy
+#| msgid "Go to first record"
+msgid "Go to first page"
+msgstr "Алғашқы жазуға өту"
+
+#: plugins/reports/kexireportview.cpp:76
+#, fuzzy
+#| msgid "Go to first record"
+msgid "Goes to first page"
+msgstr "Алғашқы жазуға өту"
+
+#: plugins/reports/kexireportview.cpp:77
+#, fuzzy
+#| msgctxt "Go to Previous Page of a Stacked Widget"
+#| msgid "Go to Previous Page"
+msgid "Go to previous page"
+msgstr "Алдыңғы бетке өту"
+
+#: plugins/reports/kexireportview.cpp:78
+#, fuzzy
+#| msgctxt "Go to Previous Page of a Stacked Widget"
+#| msgid "Go to Previous Page"
+msgid "Goes to previous page"
+msgstr "Алдыңғы бетке өту"
+
+#: plugins/reports/kexireportview.cpp:79
+#, fuzzy
+#| msgctxt "Go to Next Page of a Stacked Widget"
+#| msgid "Go to Next Page"
+msgid "Go to next page"
+msgstr "Келесі бетке өту"
+
+#: plugins/reports/kexireportview.cpp:80
+#, fuzzy
+#| msgctxt "Go to Next Page of a Stacked Widget"
+#| msgid "Go to Next Page"
+msgid "Goes to next page"
+msgstr "Келесі бетке өту"
+
+#: plugins/reports/kexireportview.cpp:81
+#, fuzzy
+#| msgid "Go to last record"
+msgid "Go to last page"
+msgstr "Соңғы жазуға өту"
+
+#: plugins/reports/kexireportview.cpp:82
+#, fuzzy
+#| msgid "Go to last record"
+msgid "Goes to last page"
+msgstr "Соңғы жазуға өту"
+
+#: plugins/reports/kexireportview.cpp:83
+#, fuzzy
+#| msgid "Current record number"
+msgid "Current page number"
+msgstr "Назардағы жазуының нөмірі"
+
+#: plugins/reports/kexireportview.cpp:83
+#, fuzzy
+#| msgid "Number of records"
+msgid "Number of pages"
+msgstr "Жазулардың жалпы саны"
+
+#: plugins/reports/kexireportview.cpp:94
 msgid "Print report"
 msgstr "Баянаты басып шығару"
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:95
 msgid "Prints the current report."
 msgstr "Назардағы баянатты басып шығару."
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:98
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "Былай э&кспорт ету"
 
-#: plugins/reports/kexireportview.cpp:95
+#: plugins/reports/kexireportview.cpp:104
 msgid "Export:"
 msgstr "Экспорт ету:"
 
-#: plugins/reports/kexireportview.cpp:101
+#: plugins/reports/kexireportview.cpp:110
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "Мәтін құжаты..."
 
-#: plugins/reports/kexireportview.cpp:104
+#: plugins/reports/kexireportview.cpp:113
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr "Мәтін құжат түрінде экспорттау (OpenDocument мәтін пішіміде)"
 
-#: plugins/reports/kexireportview.cpp:105
+#: plugins/reports/kexireportview.cpp:114
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr "Мәтін құжат түрінде экспорттау (OpenDocument мәтін пішіміде)."
 
-#: plugins/reports/kexireportview.cpp:113
+#: plugins/reports/kexireportview.cpp:122
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "Электрондық кесте..."
 
-#: plugins/reports/kexireportview.cpp:116
+#: plugins/reports/kexireportview.cpp:125
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау"
 
-#: plugins/reports/kexireportview.cpp:117
+#: plugins/reports/kexireportview.cpp:126
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау."
 
-#: plugins/reports/kexireportview.cpp:125
+#: plugins/reports/kexireportview.cpp:134
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "Веб парағы..."
 
-#: plugins/reports/kexireportview.cpp:128
+#: plugins/reports/kexireportview.cpp:137
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)"
 
-#: plugins/reports/kexireportview.cpp:129
+#: plugins/reports/kexireportview.cpp:138
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)."
 
-#: plugins/reports/kexireportview.cpp:190
+#: plugins/reports/kexireportview.cpp:199
 #, kde-format
 msgid ""
 "The file %1 exists.\n"
@@ -6354,35 +6418,35 @@ msgstr ""
 "%1 деген файл бар екен.\n"
 "Үстінен жаза берейік пе?"
 
-#: plugins/reports/kexireportview.cpp:216
+#: plugins/reports/kexireportview.cpp:225
 msgid "Export Report as Spreadsheet"
 msgstr "Электрондық кестеге экспорттау"
 
-#: plugins/reports/kexireportview.cpp:223
+#: plugins/reports/kexireportview.cpp:232
 #, kde-format
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "%1 электрондық кестеге экспорттау жаңылды."
 
-#: plugins/reports/kexireportview.cpp:224
-#: plugins/reports/kexireportview.cpp:248
-#: plugins/reports/kexireportview.cpp:286
+#: plugins/reports/kexireportview.cpp:233
+#: plugins/reports/kexireportview.cpp:257
+#: plugins/reports/kexireportview.cpp:295
 msgid "Export Failed"
 msgstr "Экспорттау жаңылысы"
 
-#: plugins/reports/kexireportview.cpp:240
+#: plugins/reports/kexireportview.cpp:249
 msgid "Export Report as Text Document"
 msgstr "Мәтін құжатына экспорттау"
 
-#: plugins/reports/kexireportview.cpp:247
+#: plugins/reports/kexireportview.cpp:256
 #, kde-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr "%1 мәтін құжатына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:260
+#: plugins/reports/kexireportview.cpp:269
 msgid "Export Report as Web Page"
 msgstr "Баянатты веб параққа экспорттау"
 
-#: plugins/reports/kexireportview.cpp:269
+#: plugins/reports/kexireportview.cpp:278
 msgid ""
 "Would you like to export using a Cascading Style Sheet (CSS), which will "
 "give an output closer to the original, or export using a HTML Table, which "
@@ -6391,24 +6455,24 @@ msgstr ""
 "Түпнұсқасына жақын қалдырып CSS-ті қолданып экспорт етуді қалайсыз ба, әлде "
 "қарапайымдау жәй кестеге экспорттап шығарасыз ба?"
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:282
 msgid "Use CSS"
 msgstr "CSS"
 
-#: plugins/reports/kexireportview.cpp:274
+#: plugins/reports/kexireportview.cpp:283
 msgid "Use Table"
 msgstr "Кесте"
 
-#: plugins/reports/kexireportview.cpp:285
+#: plugins/reports/kexireportview.cpp:294
 #, kde-format
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Баянатты %1 веб парағына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:364
+#: plugins/reports/kexireportview.cpp:373
 msgid "Report schema appears to be invalid or corrupt"
 msgstr "Баянат сұлбасы дұрыс емес не бүлінген сияқты"
 
-#: plugins/reports/kexireportview.cpp:364
+#: plugins/reports/kexireportview.cpp:373
 msgid "Opening failed"
 msgstr "Ашу жаңылысы"
 
@@ -7778,67 +7842,67 @@ msgstr "/"
 msgid "Number of records"
 msgstr "Жазулардың жалпы саны"
 
-#: widget/utils/kexirecordnavigator.cpp:480
+#: widget/utils/kexirecordnavigator.cpp:507
 msgid "Editing indicator"
 msgstr "Өңдеу көрсеткіші"
 
-#: widget/utils/kexirecordnavigator.cpp:507
+#: widget/utils/kexirecordnavigator.cpp:534
 msgid "First record"
 msgstr "Алғашқы жазуға"
 
-#: widget/utils/kexirecordnavigator.cpp:507
+#: widget/utils/kexirecordnavigator.cpp:534
 msgid "Go to first record"
 msgstr "Алғашқы жазуға өту"
 
-#: widget/utils/kexirecordnavigator.cpp:508
+#: widget/utils/kexirecordnavigator.cpp:535
 msgid "Previous record"
 msgstr "Алдыңғы жазуға"
 
-#: widget/utils/kexirecordnavigator.cpp:508
+#: widget/utils/kexirecordnavigator.cpp:535
 msgid "Go to previous record"
 msgstr "Алдыңғы жазуға өту"
 
-#: widget/utils/kexirecordnavigator.cpp:509
+#: widget/utils/kexirecordnavigator.cpp:536
 msgid "Next record"
 msgstr "Келесі жазуға"
 
-#: widget/utils/kexirecordnavigator.cpp:509
+#: widget/utils/kexirecordnavigator.cpp:536
 msgid "Go to next record"
 msgstr "Келесі жазуға өту"
 
-#: widget/utils/kexirecordnavigator.cpp:510
+#: widget/utils/kexirecordnavigator.cpp:537
 msgid "Last record"
 msgstr "Соңғы жазуға"
 
-#: widget/utils/kexirecordnavigator.cpp:510
+#: widget/utils/kexirecordnavigator.cpp:537
 msgid "Go to last record"
 msgstr "Соңғы жазуға өту"
 
-#: widget/utils/kexirecordnavigator.cpp:511
+#: widget/utils/kexirecordnavigator.cpp:538
 msgid "New record"
 msgstr "Жаңа жазуға"
 
-#: widget/utils/kexirecordnavigator.cpp:511
+#: widget/utils/kexirecordnavigator.cpp:538
 msgid "Go to new record"
 msgstr "Жаңа жазуға өту"
 
-#: widget/utils/kexirecordnavigator.cpp:512
+#: widget/utils/kexirecordnavigator.cpp:539
 msgid "Moves cursor to first record."
 msgstr "Меңзерді алғашқы жазуға көшіреді."
 
-#: widget/utils/kexirecordnavigator.cpp:513
+#: widget/utils/kexirecordnavigator.cpp:540
 msgid "Moves cursor to previous record."
 msgstr "Меңзерді алдыңғы жазуға көшіреді."
 
-#: widget/utils/kexirecordnavigator.cpp:514
+#: widget/utils/kexirecordnavigator.cpp:541
 msgid "Moves cursor to next record."
 msgstr "Меңзерді келесі жазуға көшіреді."
 
-#: widget/utils/kexirecordnavigator.cpp:515
+#: widget/utils/kexirecordnavigator.cpp:542
 msgid "Moves cursor to last record."
 msgstr "Меңзерді соңғы жазуға көшіреді."
 
-#: widget/utils/kexirecordnavigator.cpp:516
+#: widget/utils/kexirecordnavigator.cpp:543
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Меңзерді жаңа жазуға көшіріп ендіруге мүмкіндік береді."
 
