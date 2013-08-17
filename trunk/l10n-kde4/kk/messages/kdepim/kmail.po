@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:39+0000\n"
+"POT-Creation-Date: 2013-08-17 01:40+0000\n"
 "PO-Revision-Date: 2013-07-21 01:42+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -4333,7 +4333,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Жауап беру"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:227
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr "&Жауап беру..."
 
@@ -4341,11 +4341,11 @@ msgstr "&Жауап беру..."
 msgid "Reply to A&uthor..."
 msgstr "А&вторға жауап беру..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:231
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr "Б&үкіліне жауап беру..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:235
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr "Тарату &тізіміне жауап беру..."
 
@@ -4391,7 +4391,7 @@ msgstr "Хатты өңд&еу"
 msgid "Add Note..."
 msgstr "Жазуды қосу..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:239
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Басқаға жіберу"
@@ -4520,53 +4520,127 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "Қапшығы"
 
-#: searchdialog/searchwindow.cpp:90
+#: searchdialog/searchdebugdialog.cpp:35
+msgid "Search query debug"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:37
+#, fuzzy
+msgid "Save As..."
+msgstr "&Былай сақтау..."
+
+#: searchdialog/searchdebugdialog.cpp:71
+msgid "all files (*)"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:81
+#, kde-format
+msgid ""
+"Could not write the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+"%1 файл жазылмады:\n"
+"Қатенің сипаттамасы: \"%2\"."
+
+#: searchdialog/searchdebugdialog.cpp:85
+msgid "Sieve Editor Error"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:52
+msgid "UIDS:"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:53
+#, fuzzy
+#| msgid "Messages"
+msgid "Message:"
+msgstr "Хаттар"
+
+#: searchdialog/searchdebugwidget.cpp:57 searchdialog/searchwindow.cpp:410
+#: searchdialog/searchwindow.cpp:438 searchdialog/searchwindow.cpp:441
+#, fuzzy
+msgid "Search"
+msgstr "&Іздеу"
+
+#: searchdialog/searchdebugwidget.cpp:176
+#, fuzzy, kde-format
+#| msgid " message"
+#| msgid_plural " messages"
+msgid "1 message found"
+msgid_plural "%1 messages found"
+msgstr[0] " хат"
+
+#: searchdialog/searchdebugwidget.cpp:195
+#, fuzzy
+#| msgid "Error connecting to server %1"
+msgid "Error on fetching item"
+msgstr "%1 сервермен байланыс қатесі"
+
+#: searchdialog/searchwindow.cpp:91
 msgid "Find Messages"
 msgstr "Хаттарды іздеу"
 
-#: searchdialog/searchwindow.cpp:102
+#: searchdialog/searchwindow.cpp:103
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Іздеу"
 
-#: searchdialog/searchwindow.cpp:189 searchdialog/searchwindow.cpp:382
+#: searchdialog/searchwindow.cpp:108
+msgid "Debug query"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:386
 msgid "Last Search"
 msgstr "Соңғы іздеу"
 
-#: searchdialog/searchwindow.cpp:244
+#: searchdialog/searchwindow.cpp:248
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "Хаттың &бетінде..."
 
-#: searchdialog/searchwindow.cpp:249
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "&Тіркеме ретінде..."
 
-#: searchdialog/searchwindow.cpp:263
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "Тіркемелерді сақтау..."
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr "Таңдаудан айну"
 
-#: searchdialog/searchwindow.cpp:353
+#: searchdialog/searchwindow.cpp:357
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 сәйкестік"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:410
+#, fuzzy
+#| msgid "Could not sync maildir folder."
+msgid "You did not selected a valid folder."
+msgstr "Пошта қапшығы қадамдастырылмады."
+
+#: searchdialog/searchwindow.cpp:438
+msgid "You forgot to define condition."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:441
+msgid "All folders selected are empty or were not indexed."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:463
 msgid "Searching..."
 msgstr "Іздеп жатыр..."
 
-#: searchdialog/searchwindow.cpp:451
+#: searchdialog/searchwindow.cpp:471
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr "Іздеу нәтижесіз болды. %1"
 
-#: searchdialog/searchwindow.cpp:562
+#: searchdialog/searchwindow.cpp:582
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
@@ -4574,13 +4648,13 @@ msgstr ""
 "Іздеу қапшықтың атауын өзгерту мәселесі. Бұның ең ықтимал себебі - дәл "
 "осылай аталған іздеу қапшықтың болғаны."
 
-#: searchdialog/searchwindow.cpp:665
+#: searchdialog/searchwindow.cpp:685
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "%1 хатты көшшірмелеу"
 
-#: searchdialog/searchwindow.cpp:668
+#: searchdialog/searchwindow.cpp:688
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -6952,13 +7026,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ "жұмсалады. Мұнда қолданылатын жадының жоғарғы шегін орнатуға болады. Егер "
 #~ "журналдың өлшемі келтірілген шегіне жетсе, онда орынды босату үшін ескі "
 #~ "деректер журналдан жойылады. "
-
-#~ msgid ""
-#~ "Could not write the file %1:\n"
-#~ "\"%2\" is the detailed error description."
-#~ msgstr ""
-#~ "%1 файл жазылмады:\n"
-#~ "Қатенің сипаттамасы: \"%2\"."
 
 #~ msgid "Not enough free disk space?"
 #~ msgstr "Дискіде бос орын жеткіліксіз бе?"
@@ -9555,10 +9622,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ msgid "&Save Attachment As..."
 #~ msgstr "Тіркемесін былай &сақтау..."
 
-#, fuzzy
-#~ msgid "Save As..."
-#~ msgstr "&Былай сақтау..."
-
 #~ msgid "Attachment Pr&operties"
 #~ msgstr "Тіркеменің қа&сиеттері"
 
@@ -11203,9 +11266,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ msgid "Connecting to server %1, please wait..."
 #~ msgstr "%1 сервермен байланыс құрылуда, күте тұрыңыз..."
 
-#~ msgid "Error connecting to server %1"
-#~ msgstr "%1 сервермен байланыс қатесі"
-
 #~ msgid ""
 #~ "This IMAP server does not have support for access control lists (ACL)"
 #~ msgstr "Бұл IMAP сервері қатынауды басқару тізімін (ACL) қолдамайды"
@@ -12121,9 +12181,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ "%1 дегенді ашқанда қате пайда болды, немесе бұл жарамды пошта қапшығы "
 #~ "емес немесе қатнауға жеткілікті рұқсатыңыз жоқ."
 
-#~ msgid "Could not sync maildir folder."
-#~ msgstr "Пошта қапшығы қадамдастырылмады."
-
 #~ msgid ""
 #~ "Message could not be added to the folder, possibly disk space is low."
 #~ msgstr "Хат қапшыққа қосылмады, дискіде орын жеткіліксіз болуы мүмкін."
@@ -12190,11 +12247,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ msgctxt "type of folder storage"
 #~ msgid "Disconnected IMAP"
 #~ msgstr "Тіркелгінің түрі: ажыратылған  IMAP"
-
-#, fuzzy
-#~ msgctxt "type of folder storage"
-#~ msgid "Search"
-#~ msgstr "&Іздеу"
 
 #, fuzzy
 #~| msgid "Unknown"
@@ -14130,10 +14182,6 @@ msgstr "Сыртқы өңдегіш жұмысын бастады."
 #~ "хаттарды сүзгілеу үшін қажет; сондықтан бұл параметр рұқсат етілмеген.\n"
 #~ " Кейбір серверлер өзінің мүмкіндігін дұрыс жарияламайды, сондықтан бұған "
 #~ "қарамай, сервердегі хаттарды сүзгілеп көруге болады."
-
-#~ msgid " message"
-#~ msgid_plural " messages"
-#~ msgstr[0] " хат"
 
 #~ msgid " byte"
 #~ msgid_plural " bytes"
