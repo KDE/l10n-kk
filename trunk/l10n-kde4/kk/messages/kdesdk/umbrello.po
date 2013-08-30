@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-29 01:41+0000\n"
+"POT-Creation-Date: 2013-08-30 01:39+0000\n"
 "PO-Revision-Date: 2013-08-29 02:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -646,7 +646,7 @@ msgstr "Класс кодын құрғанда келесі қолданылсы
 #: dialogs/classgenpage.cpp:391 dialogs/classifierlistpage.cpp:218
 #: dialogs/diagrampropertiespage.ui:307 dialogs/notedialog.cpp:43
 #: dialogs/objectnodedialog.cpp:200 dialogs/parmpropdlg.cpp:115
-#: dialogs/statedialog.cpp:143 dialogs/umlrolepropertiesbase.ui:140
+#: dialogs/statedialog.cpp:173 dialogs/umlrolepropertiesbase.ui:140
 msgid "Documentation"
 msgstr "Құжаттама"
 
@@ -1516,7 +1516,7 @@ msgstr "Кластың атауы"
 #: dialogs/activitydialog.cpp:43 dialogs/activitydialog.cpp:150
 #: dialogs/assocgenpage.cpp:77 dialogs/classpropdlg.cpp:128
 #: dialogs/objectnodedialog.cpp:45 dialogs/parmpropdlg.cpp:71
-#: dialogs/statedialog.cpp:45 dialogs/statedialog.cpp:128
+#: dialogs/statedialog.cpp:45 dialogs/statedialog.cpp:125
 #: dialogs/umlviewdialog.cpp:40 listpopupmenu.cpp:620
 #: refactoring/refactoringassistant.cpp:455
 msgid "Properties"
@@ -1552,7 +1552,7 @@ msgid "General"
 msgstr "Жалпы"
 
 #: dialogs/activitydialog.cpp:146 dialogs/objectnodedialog.cpp:144
-#: dialogs/statedialog.cpp:124 dialogs/umlattributedialog.cpp:68
+#: dialogs/statedialog.cpp:121 dialogs/umlattributedialog.cpp:68
 #: dialogs/umlentityattributedialog.cpp:70 dialogs/umloperationdialog.cpp:88
 #: dialogs/umltemplatedialog.cpp:64
 msgid "General Properties"
@@ -1586,8 +1586,8 @@ msgstr "&Істейтін әрекеті:"
 msgid "&Parameter activity node"
 msgstr "Іс торабының параметрі"
 
-#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:166
-#: dialogs/statedialog.cpp:167
+#: dialogs/activitypage.cpp:58 dialogs/statedialog.cpp:196
+#: dialogs/statedialog.cpp:197
 msgid "Activities"
 msgstr "Істер"
 
@@ -2850,31 +2850,73 @@ msgstr "Автоорналастыру"
 msgid "Auto Layout Settings"
 msgstr "Автоорналастырудың баптауы"
 
-#: dialogs/statedialog.cpp:117
-msgctxt "initial state in statechart"
-msgid "Initial state"
-msgstr "Бастапқы күйі"
-
-#: dialogs/statedialog.cpp:118
-msgctxt "state in statechart"
-msgid "State"
-msgstr "Күйі"
-
-#: dialogs/statedialog.cpp:119
-msgctxt "end state in statechart"
-msgid "End state"
-msgstr "Соңғы күйі"
-
-#: dialogs/statedialog.cpp:123
+#: dialogs/statedialog.cpp:120
 msgctxt "general page"
 msgid "General"
 msgstr "Жалпы"
 
-#: dialogs/statedialog.cpp:135
+#: dialogs/statedialog.cpp:134
+msgctxt "initial state in statechart"
+msgid "Initial state"
+msgstr "Бастапқы күйі"
+
+#: dialogs/statedialog.cpp:137
+msgctxt "state in statechart"
+msgid "State"
+msgstr "Күйі"
+
+#: dialogs/statedialog.cpp:140
+msgctxt "end state in statechart"
+msgid "End state"
+msgstr "Соңғы күйі"
+
+#: dialogs/statedialog.cpp:143
+#, fuzzy
+#| msgid "Fork"
+msgctxt "fork state in statechart"
+msgid "Fork"
+msgstr "Айырылу"
+
+#: dialogs/statedialog.cpp:146
+#, fuzzy
+#| msgid "Join"
+msgctxt "join state in statechart"
+msgid "Join"
+msgstr "Түйісі"
+
+#: dialogs/statedialog.cpp:149
+#, fuzzy
+#| msgid "Junction"
+msgctxt "junction state in statechart"
+msgid "Junction"
+msgstr "Түйіс"
+
+#: dialogs/statedialog.cpp:152
+#, fuzzy
+#| msgid "Deep History"
+msgctxt "deep history state in statechart"
+msgid "DeepHistory"
+msgstr "Тереңдеу"
+
+#: dialogs/statedialog.cpp:155
+#, fuzzy
+#| msgid "Shallow History"
+msgctxt "shallow history state in statechart"
+msgid "ShallowHistory"
+msgstr "Тайыздау"
+
+#: dialogs/statedialog.cpp:158
+#, fuzzy
+#| msgid "Choice"
+msgctxt "choice state in statechart"
+msgid "Choice"
+msgstr "Таңдау"
+
+#: dialogs/statedialog.cpp:165
 msgid "State type:"
 msgstr "Күй-жай түрі:"
 
-#: dialogs/statedialog.cpp:140
+#: dialogs/statedialog.cpp:170
 msgid "State name:"
 msgstr "Күйінің атауы:"
 
@@ -5801,31 +5843,31 @@ msgstr "Бос диаграмма сақталмайды"
 msgid "A problem occurred while saving diagram in %1"
 msgstr "Диаграмманы %1 дегенге сақтағанда бір мәселе туды."
 
-#: widgets/associationwidget.cpp:2936
+#: widgets/associationwidget.cpp:2938
 msgid "Multiplicity"
 msgstr "Көптігі"
 
-#: widgets/associationwidget.cpp:2937 widgets/floatingtextwidget.cpp:369
+#: widgets/associationwidget.cpp:2939 widgets/floatingtextwidget.cpp:369
 msgid "Enter multiplicity:"
 msgstr "Көптігі:"
 
-#: widgets/associationwidget.cpp:2954
+#: widgets/associationwidget.cpp:2956
 msgid "Association Name"
 msgstr "Байланыстың атауы"
 
-#: widgets/associationwidget.cpp:2955 widgets/floatingtextwidget.cpp:376
+#: widgets/associationwidget.cpp:2957 widgets/floatingtextwidget.cpp:376
 msgid "Enter association name:"
 msgstr "Байланыстың атауы:"
 
-#: widgets/associationwidget.cpp:2974
+#: widgets/associationwidget.cpp:2976
 msgid "Role Name"
 msgstr "Міндеттің атауы"
 
-#: widgets/associationwidget.cpp:2975 widgets/floatingtextwidget.cpp:367
+#: widgets/associationwidget.cpp:2977 widgets/floatingtextwidget.cpp:367
 msgid "Enter role name:"
 msgstr "Міндеттің атауы:"
 
-#: widgets/associationwidget.cpp:3663
+#: widgets/associationwidget.cpp:3665
 msgid "Press crtl with left mouse click to delete a point"
 msgstr ""
 "Нүктені өшіру үшін Crtl-ды басып тұрып тышқанның сол жақ батырмасымен "
