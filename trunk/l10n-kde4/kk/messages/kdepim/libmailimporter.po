@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-01 01:38+0000\n"
+"POT-Creation-Date: 2013-09-17 01:46+0000\n"
 "PO-Revision-Date: 2013-07-05 05:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -75,9 +75,10 @@ msgstr "Импорттайтын файлдар табылмады."
 
 #: filter_evolution.cpp:87 filter_evolution_v2.cpp:129
 #: filter_evolution_v3.cpp:111 filter_kmail_maildir.cpp:104
-#: filter_mailapp.cpp:134 filter_mbox.cpp:141 filter_opera.cpp:139
-#: filter_plain.cpp:83 filter_pmail.cpp:82 filter_sylpheed.cpp:139
-#: filter_thebat.cpp:101 filter_thunderbird.cpp:182 filterbalsa.cpp:113
+#: filter_mailapp.cpp:134 filter_mailmangzip.cpp:143 filter_mbox.cpp:141
+#: filter_opera.cpp:139 filter_plain.cpp:83 filter_pmail.cpp:82
+#: filter_sylpheed.cpp:139 filter_thebat.cpp:101 filter_thunderbird.cpp:182
+#: filterbalsa.cpp:113
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "%1 эл.поштасын импорттау аяқталды"
@@ -90,8 +91,8 @@ msgstr "%1 эл.поштасын импорттау аяқталды"
 msgid "Unable to open %1, skipping"
 msgstr "%1 ашылмай өткізіп жіберілді"
 
-#: filter_evolution.cpp:158 filter_mailapp.cpp:85 filter_mbox.cpp:73
-#: filter_opera.cpp:83
+#: filter_evolution.cpp:158 filter_mailapp.cpp:85 filter_mailmangzip.cpp:73
+#: filter_mbox.cpp:73 filter_opera.cpp:83
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "%1 эл.поштасын импорттау..."
@@ -132,10 +133,10 @@ msgid "Start import file %1..."
 msgstr "%1 файлын импорттауы басталды..."
 
 #: filter_evolution_v2.cpp:134 filter_evolution_v3.cpp:118
-#: filter_kmail_maildir.cpp:110 filter_mailapp.cpp:144 filter_mbox.cpp:148
-#: filter_oe.cpp:113 filter_opera.cpp:200 filter_plain.cpp:88
-#: filter_sylpheed.cpp:145 filter_thebat.cpp:107 filter_thunderbird.cpp:188
-#: filterbalsa.cpp:120
+#: filter_kmail_maildir.cpp:110 filter_mailapp.cpp:144
+#: filter_mailmangzip.cpp:150 filter_mbox.cpp:148 filter_oe.cpp:113
+#: filter_opera.cpp:200 filter_plain.cpp:88 filter_sylpheed.cpp:145
+#: filter_thebat.cpp:107 filter_thunderbird.cpp:188 filterbalsa.cpp:120
 msgid "Finished import, canceled by user."
 msgstr "Пайдаланушысы айнып, импорт тоқталды."
 
@@ -307,7 +308,8 @@ msgstr ""
 msgid "All Files (*)"
 msgstr "Бүкіл файлдар (*)"
 
-#: filter_lnotes.cpp:58 filter_mailapp.cpp:62 filter_mbox.cpp:48
+#: filter_lnotes.cpp:58 filter_mailapp.cpp:62 filter_mailmangzip.cpp:46
+#: filter_mbox.cpp:48
 msgid "No files selected."
 msgstr "Файлдар таңдалмаған."
 
@@ -338,11 +340,46 @@ msgstr ""
 "<p><b>OS X Mail клиентінен импорттау сүзгісі</b></p><p>Бұл Apple Mac OS X "
 "Mail клиентінен импорттау сүзгісі.</p>"
 
-#: filter_mailapp.cpp:136 filter_mbox.cpp:143
+#: filter_mailapp.cpp:136 filter_mailmangzip.cpp:145 filter_mbox.cpp:143
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "KMail-дің %2 қапшығына %1 қосарланған хат түсті"
+
+#: filter_mailmangzip.cpp:29
+#, fuzzy
+#| msgid "Import KMail Archive File"
+msgid "Import mailman gzip Files"
+msgstr "KMail архив файлын импортау"
+
+#: filter_mailmangzip.cpp:31
+#, fuzzy
+#| msgid ""
+#| "<p><b>mbox import filter</b></p><p>This filter will import mbox files "
+#| "into KMail. Use this filter if you want to import mails from Ximian "
+#| "Evolution or other mailers that use this traditional UNIX format.</"
+#| "p><p><b>Note:</b> Emails will be imported into folders named after the "
+#| "file they came from, prefixed with MBOX-</p>"
+msgid ""
+"<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
+"gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
+"folders named after the file they came from, prefixed with MAILMAN-</p>"
+msgstr ""
+"<p><b>mbox-ты импорттау сүзгісі</b></p><p>Бұл mbox файлдарды KMail-ге импорт "
+"ететін сүзгі. Бұны Ximian Evolution немесе басқа да UNIX-тің дәстүрлі "
+"пішімін пайдаланатын пошта бағдарламасының импорт етуге қолданыңыз.</"
+"p><p><b>Ескерту:</b> Хаттар \"MBOX-\" деген префикстен кейін алынған файлдың "
+"атын жалғап аталған қапшыққа импортталды.</p>"
+
+#: filter_mailmangzip.cpp:44
+msgid "gzip Files (*.txt.gz)"
+msgstr ""
+
+#: filter_mailmangzip.cpp:64
+#, fuzzy, kde-format
+#| msgid "Unable to open archive file '%1'"
+msgid "Unable to open archive file '%1', skipping"
+msgstr "'%1' архив файлы ашылмады"
 
 #: filter_mbox.cpp:28
 msgid "Import mbox Files (UNIX, Evolution)"
