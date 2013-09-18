@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libksieve\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-14 01:38+0000\n"
+"POT-Creation-Date: 2013-09-18 01:46+0000\n"
 "PO-Revision-Date: 2013-09-18 06:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -520,11 +520,15 @@ msgstr ""
 "Setflag деген [IMAP] үйелік жалаушаларды не түйінді сөздерді орнатуға "
 "арналған. Ол тек бұрын орнатылған жалаушаларды ғана өзгерте алады."
 
-#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:32
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:34
 msgid "Variable"
 msgstr "Айнымалы"
 
-#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:52
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:56
+msgid "Protect special character"
+msgstr ""
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:61
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionenvironment.cpp:68
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionhasflag.cpp:64
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionmetadata.cpp:71
@@ -532,16 +536,28 @@ msgstr "Айнымалы"
 msgid "Value:"
 msgstr "Мәні::"
 
-#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:59
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:68
 msgid "In variable:"
 msgstr "Қай айнымалыға:"
 
-#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:145
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:107
+msgid "Script needs regex support, but server does not have it."
+msgstr ""
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:172
 msgid ""
 "The \"set\" action stores the specified value in the variable identified by "
 "name."
 msgstr ""
 "\"set\" амалы келтірілген мәнді идентификаторы берілген айнымалыға сақтайды."
+
+#: ksieveui/autocreatescripts/sieveactions/sieveactionsetvariable.cpp:174
+msgid ""
+"This modifier adds the necessary quoting to ensure that the expanded text "
+"will only match a literal occurrence if used as a parameterto :regex.  Every "
+"character with special meaning (. , *, ? , etc.) is prefixed with \\ in the "
+"expansion"
+msgstr ""
 
 #: ksieveui/autocreatescripts/sieveactions/sieveactionstop.cpp:25
 msgid "Stop"
@@ -1243,11 +1259,11 @@ msgstr "ГБ"
 msgid "Please select an condition."
 msgstr "Шартын таңдаңыз."
 
-#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:49
+#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:50
 msgid "Sieve Script"
 msgstr "Sieve скрипті"
 
-#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:145
+#: ksieveui/autocreatescripts/sieveeditorgraphicalmodewidget.cpp:151
 msgid "Error during importing script. Do you want to switch in text mode ?"
 msgstr "Скриптті импорттау қатесі. Мәтінді күйге ауыспақсыз ба?"
 
@@ -1633,13 +1649,25 @@ msgstr ""
 "Талдау кезінде қателер кездесті. <a href=\"sieveerrordetails\">(Егжей-"
 "тегжейі...)</a>"
 
-#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:37
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:39
 msgid "Switch in graphical mode"
 msgstr "Графикалық режіміне ауысу"
 
-#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:41
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:43
 msgid "Keep in text mode"
 msgstr "Мәтін режімінде қалу"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:50
+#, fuzzy
+#| msgid "Keep in text mode"
+msgid "Switch in text mode"
+msgstr "Мәтін режімінде қалу"
+
+#: ksieveui/editor/sieveeditorparsingmissingfeaturewarning.cpp:54
+#, fuzzy
+#| msgid "Switch in graphical mode"
+msgid "Keep in Graphical mode"
+msgstr "Графикалық режіміне ауысу"
 
 #: ksieveui/editor/sieveeditortextmodewidget.cpp:72
 msgid "Sieve Template:"

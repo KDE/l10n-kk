@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-12 01:40+0000\n"
+"POT-Creation-Date: 2013-09-18 01:44+0000\n"
 "PO-Revision-Date: 2013-06-28 02:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -62,7 +62,7 @@ msgstr "Журналы:"
 msgid "Remember folders and URLs"
 msgstr "Қапшықтар мен URL-дер жатталсын"
 
-#: app/browsemainpage.cpp:117 app/mainwindow.cpp:348 app/viewmainpage.cpp:430
+#: app/browsemainpage.cpp:117 app/mainwindow.cpp:357 app/viewmainpage.cpp:431
 #: lib/documentview/documentviewcontroller.cpp:92
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
@@ -124,7 +124,7 @@ msgid "Rating"
 msgstr "Ұпайлары"
 
 #: app/browsemainpage.cpp:156 app/fileopscontextmanageritem.cpp:165
-#: app/mainwindow.cpp:347
+#: app/mainwindow.cpp:356
 msgctxt "@title actions category"
 msgid "File"
 msgstr "Файл"
@@ -454,11 +454,6 @@ msgstr "Көріп жатқаныңыз - жаңа құжат."
 msgid "Go back to the original"
 msgstr "Түпнұсқасына қайта өту"
 
-#: app/gvcore.cpp:367 lib/document/documentjob.cpp:79
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "Gwenview бұндай кескіндерді өңдей алмайды."
-
 #. i18n: ectx: Menu (rating)
 #: app/gwenviewui.rc:47
 msgid "&Rating"
@@ -484,52 +479,57 @@ msgctxt "@title:window"
 msgid "Image Information"
 msgstr "Кескіннің мәліметі"
 
-#: app/imageopscontextmanageritem.cpp:81
+#: app/imageopscontextmanageritem.cpp:82
 msgctxt "@title actions category - means actions changing image"
 msgid "Edit"
 msgstr "Өңдеу"
 
-#: app/imageopscontextmanageritem.cpp:84
+#: app/imageopscontextmanageritem.cpp:85
 msgid "Rotate Left"
 msgstr "Солға бұру"
 
-#: app/imageopscontextmanageritem.cpp:85
+#: app/imageopscontextmanageritem.cpp:86
 msgctxt "@info:tooltip"
 msgid "Rotate image to the left"
 msgstr "Кескінді солға бұрау"
 
-#: app/imageopscontextmanageritem.cpp:91
+#: app/imageopscontextmanageritem.cpp:92
 msgid "Rotate Right"
 msgstr "Оңға бұру"
 
-#: app/imageopscontextmanageritem.cpp:92
+#: app/imageopscontextmanageritem.cpp:93
 msgctxt "@info:tooltip"
 msgid "Rotate image to the right"
 msgstr "Кескінді оңға бұрау"
 
-#: app/imageopscontextmanageritem.cpp:97
+#: app/imageopscontextmanageritem.cpp:98
 msgid "Mirror"
 msgstr "Аунату"
 
-#: app/imageopscontextmanageritem.cpp:101
+#: app/imageopscontextmanageritem.cpp:102
 msgid "Flip"
 msgstr "Төңкеру"
 
-#: app/imageopscontextmanageritem.cpp:105 lib/resize/resizeimagedialog.cpp:51
+#: app/imageopscontextmanageritem.cpp:106 lib/resize/resizeimagedialog.cpp:51
 msgid "Resize"
 msgstr "Өлшемін өзгерту"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:110 lib/crop/cropimageoperation.cpp:71
+#: app/imageopscontextmanageritem.cpp:111 lib/crop/cropimageoperation.cpp:71
 #: lib/crop/cropwidget.cpp:191 lib/crop/cropwidget.ui:20
 msgid "Crop"
 msgstr "Ойып алу"
 
-#: app/imageopscontextmanageritem.cpp:115
+#: app/imageopscontextmanageritem.cpp:116
 msgid "Red Eye Reduction"
 msgstr "Көз қызаруын кетіру"
 
-#: app/imageopscontextmanageritem.cpp:142
+#: app/imageopscontextmanageritem.cpp:142 lib/document/documentjob.cpp:79
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "Gwenview бұндай кескіндерді өңдей алмайды."
+
+#: app/imageopscontextmanageritem.cpp:154
 msgid "Image Operations"
 msgstr "Кескін амалдары"
 
@@ -616,50 +616,50 @@ msgstr "Тік"
 msgid "Row count:"
 msgstr "Қанша жолдар:"
 
-#: app/infocontextmanageritem.cpp:176
+#: app/infocontextmanageritem.cpp:181
 #, kde-format
 msgctxt ""
 "@item:intext %1 is a key, we append a colon to it. A value is displayed after"
 msgid "%1:"
 msgstr "%1:"
 
-#: app/infocontextmanageritem.cpp:253
+#: app/infocontextmanageritem.cpp:268
 msgctxt "@action show more image meta info"
 msgid "More..."
 msgstr "Өзге..."
 
-#: app/infocontextmanageritem.cpp:264
+#: app/infocontextmanageritem.cpp:279
 msgctxt "@title:group"
 msgid "Meta Information"
 msgstr "Мета мәліметі"
 
-#: app/infocontextmanageritem.cpp:357
+#: app/infocontextmanageritem.cpp:372
 #, kde-format
 msgctxt "@label"
 msgid "%1 file selected"
 msgid_plural "%1 files selected"
 msgstr[0] "%1 файл таңдалған"
 
-#: app/infocontextmanageritem.cpp:359
+#: app/infocontextmanageritem.cpp:374
 #, kde-format
 msgctxt "@label"
 msgid "%1 folder selected"
 msgid_plural "%1 folders selected"
 msgstr[0] "%1 қапшық таңдалған"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgid "%1 folder"
 msgid_plural "%1 folders"
 msgstr[0] "%1 қапшық"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgid "%1 file"
 msgid_plural "%1 files"
 msgstr[0] "%1 файл"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
@@ -757,162 +757,162 @@ msgstr "Слайд-шоу күйінде бастау"
 msgid "A starting file or folder"
 msgstr "Бастапқы файл әлде қапшық"
 
-#: app/mainwindow.cpp:357
+#: app/mainwindow.cpp:366
 msgctxt "@action reload the currently viewed image"
 msgid "Reload"
 msgstr "Қайта жүктеу"
 
-#: app/mainwindow.cpp:362
+#: app/mainwindow.cpp:371
 msgctxt "@action:intoolbar Switch to file list"
 msgid "Browse"
 msgstr "Ақтару"
 
-#: app/mainwindow.cpp:363
+#: app/mainwindow.cpp:372
 msgctxt "@info:tooltip"
 msgid "Browse folders for images"
 msgstr "Қапшықтардағы кескіндерді ақтару"
 
-#: app/mainwindow.cpp:371
+#: app/mainwindow.cpp:380
 msgctxt "@action:intoolbar Switch to image view"
 msgid "View"
 msgstr "Көру"
 
-#: app/mainwindow.cpp:372
+#: app/mainwindow.cpp:381
 msgctxt "@info:tooltip"
 msgid "View selected images"
 msgstr "Таңдалған кескіндерді қарау"
 
-#: app/mainwindow.cpp:395
+#: app/mainwindow.cpp:404
 msgctxt "@action"
 msgid "Leave Fullscreen Mode"
 msgstr "Толық экранды күйінен кету"
 
-#: app/mainwindow.cpp:400
+#: app/mainwindow.cpp:409
 msgctxt "@action Go to previous image"
 msgid "Previous"
 msgstr "Алдыңғы"
 
-#: app/mainwindow.cpp:401
+#: app/mainwindow.cpp:410
 msgctxt "@info:tooltip"
 msgid "Go to previous image"
 msgstr "Алдындағы кескінге өту"
 
-#: app/mainwindow.cpp:407
+#: app/mainwindow.cpp:416
 msgctxt "@action Go to next image"
 msgid "Next"
 msgstr "Келесі"
 
-#: app/mainwindow.cpp:408
+#: app/mainwindow.cpp:417
 msgctxt "@info:tooltip"
 msgid "Go to next image"
 msgstr "Келесі кескінге өту"
 
-#: app/mainwindow.cpp:413
+#: app/mainwindow.cpp:422
 msgctxt "@action Go to first image"
 msgid "First"
 msgstr "Бірінші"
 
-#: app/mainwindow.cpp:414
+#: app/mainwindow.cpp:423
 msgctxt "@info:tooltip"
 msgid "Go to first image"
 msgstr "Бірінші кескінге өту"
 
-#: app/mainwindow.cpp:419
+#: app/mainwindow.cpp:428
 msgctxt "@action Go to last image"
 msgid "Last"
 msgstr "Соңғы"
 
-#: app/mainwindow.cpp:420
+#: app/mainwindow.cpp:429
 msgctxt "@info:tooltip"
 msgid "Go to last image"
 msgstr "Соңғы кескінге өту"
 
-#: app/mainwindow.cpp:430
+#: app/mainwindow.cpp:439
 msgctxt "@action"
 msgid "Start Page"
 msgstr "Бастапқы бет"
 
-#: app/mainwindow.cpp:431
+#: app/mainwindow.cpp:440
 msgctxt "@info:tooltip"
 msgid "Open the start page"
 msgstr "Бастапқы бетті ашу"
 
-#: app/mainwindow.cpp:438
+#: app/mainwindow.cpp:447
 msgctxt "@action"
 msgid "Sidebar"
 msgstr "Бүйір панелі"
 
-#: app/mainwindow.cpp:473
+#: app/mainwindow.cpp:482
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "Edit"
 msgstr "Өңдеу"
 
-#: app/mainwindow.cpp:478
+#: app/mainwindow.cpp:487
 msgid "Redo"
 msgstr "Қайтудан айну"
 
-#: app/mainwindow.cpp:485
+#: app/mainwindow.cpp:494
 msgid "Undo"
 msgstr "Амалдан қайту"
 
-#: app/mainwindow.cpp:530
+#: app/mainwindow.cpp:532
 msgid "Folders"
 msgstr "Қапшықтары"
 
-#: app/mainwindow.cpp:536
+#: app/mainwindow.cpp:538
 msgid "Information"
 msgstr "Мәліметі"
 
-#: app/mainwindow.cpp:547
+#: app/mainwindow.cpp:549
 msgid "Operations"
 msgstr "Амалдары"
 
-#: app/mainwindow.cpp:622
+#: app/mainwindow.cpp:616
 msgid "Last document reached, continuing on first document."
 msgstr "Соңғы құжатқа жетті, біріншісінен жалғастыру."
 
-#: app/mainwindow.cpp:623
+#: app/mainwindow.cpp:617
 msgid "First document reached, continuing on last document."
 msgstr "Бірінші құжатқа жетті, соңғысынан жалғастыру."
 
-#: app/mainwindow.cpp:1214
+#: app/mainwindow.cpp:1107
 msgctxt "@info:tooltip"
 msgid "Hide sidebar"
 msgstr "Бүйір панелін жасыру"
 
-#: app/mainwindow.cpp:1214
+#: app/mainwindow.cpp:1107
 msgctxt "@info:tooltip"
 msgid "Show sidebar"
 msgstr "Бүйір панелін көрсету"
 
-#: app/mainwindow.cpp:1452
+#: app/mainwindow.cpp:1352
 msgctxt "@title:window"
 msgid "Open Image"
 msgstr "Кескінді ашу"
 
-#: app/mainwindow.cpp:1509
+#: app/mainwindow.cpp:1408
 msgid "Stop Slideshow"
 msgstr "Слайд-шоуды тоқтату"
 
-#: app/mainwindow.cpp:1512
+#: app/mainwindow.cpp:1411
 msgid "Start Slideshow"
 msgstr "Слайд-шоуды бастау"
 
-#: app/mainwindow.cpp:1526
+#: app/mainwindow.cpp:1425
 msgid "Save All Changes"
 msgstr "Барлық өзгерістерді сақтау"
 
-#: app/mainwindow.cpp:1527
+#: app/mainwindow.cpp:1426
 msgid "Discard Changes"
 msgstr "Өзгерістерді ысырып тастау"
 
-#: app/mainwindow.cpp:1528
+#: app/mainwindow.cpp:1427
 #, kde-format
 msgid "One image has been modified."
 msgid_plural "%1 images have been modified."
 msgstr[0] "%1 кескін өзгертілген"
 
-#: app/mainwindow.cpp:1530
+#: app/mainwindow.cpp:1429
 msgid "If you quit now, your changes will be lost."
 msgstr "Қазір шықсаңыз барлық өзгерістеріңіз жоғалады."
 
@@ -1076,20 +1076,20 @@ msgstr ""
 "Жарлықтары ақтарылмайды. Nepomuk компьютеріңізде дұрыс орнатылғанын "
 "тексеріңіз."
 
-#: app/viewmainpage.cpp:307 app/viewmainpage.cpp:442
+#: app/viewmainpage.cpp:307 app/viewmainpage.cpp:443
 msgid "Synchronize"
 msgstr "Қадамдастыру"
 
-#: app/viewmainpage.cpp:433
+#: app/viewmainpage.cpp:434
 msgid "Thumbnail Bar"
 msgstr "Нобай панелі"
 
-#: app/viewmainpage.cpp:720
+#: app/viewmainpage.cpp:721
 msgctxt "@action:button"
 msgid "Discard Changes and Reload"
 msgstr "Өзгерістерін ысырып, қайта жүктеу"
 
-#: app/viewmainpage.cpp:722
+#: app/viewmainpage.cpp:723
 msgctxt "@info"
 msgid ""
 "This image has been modified. Reloading it will discard all your changes."
@@ -1422,17 +1422,17 @@ msgstr ""
 "Файл үстінен жазылмады, <filename>%1</filename>.дегенге жазу рұқсатңызды "
 "түгелдеңіз."
 
-#: lib/documentview/documentview.cpp:176
+#: lib/documentview/documentview.cpp:178
 msgctxt "@info:tooltip"
 msgid "Trash"
 msgstr "Тастау"
 
-#: lib/documentview/documentview.cpp:177
+#: lib/documentview/documentview.cpp:179
 msgctxt "@action:button"
 msgid "Deselect"
 msgstr "Таңдаудан айну"
 
-#: lib/documentview/documentview.cpp:366
+#: lib/documentview/documentview.cpp:368
 msgid "Gwenview does not know how to display this kind of document"
 msgstr "Gwenview бұндай құжатты қалай көрсетуді білмейді"
 
