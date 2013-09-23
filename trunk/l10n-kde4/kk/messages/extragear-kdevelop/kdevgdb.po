@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-09 01:32+0000\n"
+"POT-Creation-Date: 2013-09-23 01:31+0000\n"
 "PO-Revision-Date: 2013-04-30 04:00+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -277,8 +277,10 @@ msgid "Support for running apps in GDB"
 msgstr "Бағдарламаларды GDB ортасында жегуді қолдау"
 
 #: debuggerplugin.cpp:155
-msgid "Disassemble"
-msgstr "Дизассемблдеу"
+#, fuzzy
+#| msgid "Disassemble View"
+msgid "Disassemble/Registers"
+msgstr "Дизассемблдеу көрінісі"
 
 #: debuggerplugin.cpp:159 gdblaunchconfig.cpp:141
 msgid "GDB"
@@ -609,44 +611,31 @@ msgstr "Бастау қатесі"
 msgid "<b>Could not attach debugger:</b><br />"
 msgstr "<b>Жөндегіш ілектірілмеді:</b><br />"
 
-#: disassemblewidget.cpp:60
+#: disassemblewidget.cpp:64
 msgid "Address Selector"
 msgstr "Адресін таңдау"
 
-#: disassemblewidget.cpp:100
+#: disassemblewidget.cpp:104
 msgid "Change &address"
 msgstr "&Аадресті өзгерту"
 
-#: disassemblewidget.cpp:104
+#: disassemblewidget.cpp:108
 msgid "&Jump to Cursor"
 msgstr ""
 
-#: disassemblewidget.cpp:105
+#: disassemblewidget.cpp:109
 msgid "Sets the execution pointer to the current cursor position."
 msgstr ""
 
-#: disassemblewidget.cpp:108
+#: disassemblewidget.cpp:112
 msgid "&Run to Cursor"
 msgstr ""
 
-#: disassemblewidget.cpp:109
+#: disassemblewidget.cpp:113
 msgid "Continues execution until the cursor position is reached."
 msgstr ""
 
-#: disassemblewidget.cpp:142
-msgid "Start address:"
-msgstr "Бастау адресі:"
-
-#: disassemblewidget.cpp:143
-msgid "End Address:"
-msgstr "Аяқтау адресі:"
-
-#: disassemblewidget.cpp:157
-msgctxt "@action:button"
-msgid "Display"
-msgstr "Көрсету"
-
-#: disassemblewidget.cpp:186
+#: disassemblewidget.cpp:153
 msgid ""
 "<b>Machine code display</b><p>A machine code view into your running "
 "executable with the current instruction highlighted. You can step "
@@ -658,20 +647,22 @@ msgstr ""
 "Нұсқаудан нұсқауға жөндегіш құралдарындағы \"қадам жасау\", \"аттап кіру\" "
 "батырмаларын басып ауысуға болады."
 
-#: disassemblewidget.cpp:200
+#: disassemblewidget.cpp:167
 msgid "Address"
 msgstr "Адрес"
 
-#: disassemblewidget.cpp:200
+#: disassemblewidget.cpp:167
 msgid "Function"
 msgstr "Функция"
 
-#: disassemblewidget.cpp:200
+#: disassemblewidget.cpp:167
 msgid "Instruction"
 msgstr "Нұсқау"
 
-#: disassemblewidget.cpp:210
-msgid "Disassemble View"
+#: disassemblewidget.cpp:186
+#, fuzzy
+#| msgid "Disassemble View"
+msgid "Disassemble/Registers View"
 msgstr "Дизассемблдеу көрінісі"
 
 #: gdb.cpp:104
@@ -885,6 +876,81 @@ msgstr ""
 msgid "Attach to a process"
 msgstr "Процеске ілегу"
 
+#: registers/converters.cpp:31
+msgid "Binary"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Octal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Decimal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Hexadecimal"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Raw"
+msgstr ""
+
+#: registers/converters.cpp:31
+msgid "Unsigned"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+#: registers/registercontroller_x86.cpp:107
+msgid "General"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+#: registers/registercontroller_x86.cpp:107
+msgid "Flags"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP single-word"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP double-word"
+msgstr ""
+
+#: registers/registercontroller_arm.cpp:107
+msgid "VFP quad-word"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "FPU"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "XMM"
+msgstr ""
+
+#: registers/registercontroller_x86.cpp:107
+msgid "Segment"
+msgstr ""
+
+#: registers/registersview.cpp:68
+msgid "Format"
+msgstr ""
+
+#: registers/registersview.cpp:77
+msgid "Mode"
+msgstr ""
+
+#: registers/registersview.cpp:213
+msgid "Update"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, RegistersView)
+#: registers/registersview.ui:14
+msgid "Form"
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, SelectAddress)
 #: selectaddress.ui:20
 msgid "Address selector"
@@ -917,6 +983,19 @@ msgstr "Core файлды таңдау"
 #: stty.cpp:332
 msgid "kdevelop: Debug application console"
 msgstr "kdevelop: Жөндегіш қолданба консолі"
+
+#~ msgid "Disassemble"
+#~ msgstr "Дизассемблдеу"
+
+#~ msgid "Start address:"
+#~ msgstr "Бастау адресі:"
+
+#~ msgid "End Address:"
+#~ msgstr "Аяқтау адресі:"
+
+#~ msgctxt "@action:button"
+#~ msgid "Display"
+#~ msgstr "Көрсету"
 
 #~ msgid "Offset"
 #~ msgstr "Шегініс"
