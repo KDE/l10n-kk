@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-26 01:44+0000\n"
+"POT-Creation-Date: 2013-09-27 01:50+0000\n"
 "PO-Revision-Date: 2013-09-27 04:39+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -18,9 +18,112 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
+#: adblock/adblockmanager.cpp:352
+#, fuzzy
+msgctxt "@title:window"
+msgid "Ad Block Settings"
+msgstr "&Жіберу"
+
+#: adblock/adblocksettingwidget.cpp:53
+msgid ""
+"<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
+"\"filterhelp\">more information</a>):"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:69
+msgid " day"
+msgid_plural " days"
+msgstr[0] " күн"
+
+#: adblock/adblocksettingwidget.cpp:86
+msgid ""
+"<qt><p>Enter an expression to filter. Filters can be defined as either:"
+"<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
+"the wildcards <tt>*?[]</tt> may be used</li><li>a full regular expression by "
+"surrounding the string with '<tt>/</tt>', e.g. <tt>/\\/(ad|banner)\\./</tt></"
+"li></ul><p>Any filter string can be preceded by '<tt>@@</tt>' to whitelist "
+"(allow) any matching URL, which takes priority over any blacklist (blocking) "
+"filter."
+msgstr ""
+
 #: adblock/networkaccessmanager.cpp:51
 msgid "Blocked by ad filter"
 msgstr "Жарнама сүзгісі бұғаттаған"
+
+#. i18n: ectx: property (text), widget (QLabel, BlockedLabel)
+#: adblock/ui/blocked_elements.ui:17
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Blocked elements</"
+"span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, HidedLabel)
+#: adblock/ui/blocked_elements.ui:101
+msgid "<b>Hidden elements</b>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/blocked_elements.ui:108
+msgid "TextLabel"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkEnableAdblock)
+#: adblock/ui/settings_adblock.ui:17
+#, fuzzy
+#| msgid "Enabled ad block"
+msgid "&Enable Ad Block"
+msgstr "Жарнама бұғаталсын"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkHideAds)
+#: adblock/ui/settings_adblock.ui:24
+msgid "&Hide filtered elements"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: adblock/ui/settings_adblock.ui:38
+#, fuzzy
+#| msgid "Never Automatically"
+msgid "Automatic Filters"
+msgstr "Автоматты түрде жіберілмесін"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: adblock/ui/settings_adblock.ui:49
+msgid "Update enabled automatic filters every:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: adblock/ui/settings_adblock.ui:88
+#, fuzzy
+#| msgid "Available Filters"
+msgid "Manual Filters"
+msgstr "Бар сүзгілер"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: adblock/ui/settings_adblock.ui:96
+#, fuzzy
+#| msgid "&Search:"
+msgid "Search:"
+msgstr "&Іздеу:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
+#: adblock/ui/settings_adblock.ui:123
+#, fuzzy
+#| msgid "Add Permissions"
+msgid "Add filter expression"
+msgstr "Рұқсаттарды қосу"
+
+#. i18n: ectx: property (text), widget (QToolButton, insertButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#, fuzzy
+#| msgid "Add..."
+msgid "..."
+msgstr "Қосу..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: adblock/ui/settings_adblock.ui:133
+msgid "Remove filter expression"
+msgstr ""
 
 #: findbar/findbarbase.cpp:48 findbar/findbarbase.cpp:51
 msgid "Close"
@@ -610,7 +713,6 @@ msgstr "Эл.пошта алаяқтық емес адрестер \"Ақ\" ті
 
 #. i18n: ectx: label, entry (AdBlockEnabled), group (Reader)
 #: settings/messageviewer.kcfg.cmake:175
-#| msgid "Enable access key"
 msgid "Enabled ad block"
 msgstr "Жарнама бұғаталсын"
 
@@ -4035,9 +4137,6 @@ msgstr "&Алдыңғы карта"
 #~ msgid "Modify Permissions"
 #~ msgstr "Рұқсаттарды өзгерту"
 
-#~ msgid "Add Permissions"
-#~ msgstr "Рұқсаттарды қосу"
-
 #~ msgid ""
 #~ "Do you really want to remove your own permissions for this folder? You "
 #~ "will not be able to access it afterwards."
@@ -6026,10 +6125,6 @@ msgstr "&Алдыңғы карта"
 #~ "HTML жалпы баптауын өзгерту барлық қапшықтардың параметрлеріне әсерін "
 #~ "тигізеді."
 
-#~ msgid " day"
-#~ msgid_plural " days"
-#~ msgstr[0] " күн"
-
 #~ msgid "This option requires dirmngr >= 0.9.0"
 #~ msgstr "Бұл параметр dirmngr >= 0.9.0 орнатылғанын кажет етеді"
 
@@ -6659,11 +6754,6 @@ msgstr "&Алдыңғы карта"
 #~ msgstr "Жасырын көшірмесі"
 
 #, fuzzy
-#~| msgid "Available Filters"
-#~ msgid "KMail Filter"
-#~ msgstr "Бар сүзгілер"
-
-#, fuzzy
 #~| msgid "is in category"
 #~ msgid "with category"
 #~ msgstr "санатта бар"
@@ -7162,12 +7252,6 @@ msgstr "&Алдыңғы карта"
 #~| msgid "Search Criteria"
 #~ msgid "Search &Directory Service"
 #~ msgstr "Іздеу шарты"
-
-#, fuzzy
-#~| msgid "&Search:"
-#~ msgctxt "Search for recipient."
-#~ msgid "Search:"
-#~ msgstr "&Іздеу:"
 
 #, fuzzy
 #~| msgid "Add as To"
@@ -8674,11 +8758,6 @@ msgstr "&Алдыңғы карта"
 #~ msgid "Check inter&val:"
 #~ msgstr "Тексеріс ара&лығы:"
 
-#, fuzzy
-#~ msgctxt "@title:tab"
-#~ msgid "IMAP Settings"
-#~ msgstr "&Жіберу"
-
 #~ msgid "Automaticall&y compact folders (expunges deleted messages)"
 #~ msgstr ""
 #~ "Қапшықтар автоматт&ы түрде шағындау (өшірілген хаттарды жойып отырып)"
@@ -8756,11 +8835,6 @@ msgstr "&Алдыңғы карта"
 #~ msgstr ""
 #~ "Атаулы орындарды серверден қайта жүктеу. Бұл бүкіл өзгерістерді "
 #~ "жоғалтқызады."
-
-#, fuzzy
-#~| msgid "Add..."
-#~ msgid "..."
-#~ msgstr "Қосу..."
 
 #~ msgid "Personal namespaces include your personal folders."
 #~ msgstr "Дербес атаулы орындарға дербес қапшықтарыңыз кіреді."
@@ -13886,12 +13960,6 @@ msgstr "&Алдыңғы карта"
 #~ msgctxt "@action:inmenu Group header background color setting"
 #~ msgid "None"
 #~ msgstr "Жоқ"
-
-#, fuzzy
-#~| msgid "Never Automatically"
-#~ msgctxt "@action:inmenu Group header background color setting"
-#~ msgid "Automatic"
-#~ msgstr "Автоматты түрде жіберілмесін"
 
 #, fuzzy
 #~| msgid "Alternative Background Color"
