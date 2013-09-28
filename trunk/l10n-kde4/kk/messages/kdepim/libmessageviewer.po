@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-27 01:50+0000\n"
+"POT-Creation-Date: 2013-09-28 01:40+0000\n"
 "PO-Revision-Date: 2013-09-27 04:39+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -18,24 +18,29 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: adblock/adblockmanager.cpp:352
+#: adblock/adblockaddsubscriptiondialog.cpp:31
 #, fuzzy
-msgctxt "@title:window"
-msgid "Ad Block Settings"
-msgstr "&Жіберу"
+#| msgid "Subscription"
+msgid "Add subscription"
+msgstr "Жазылу"
 
-#: adblock/adblocksettingwidget.cpp:53
+#: adblock/adblockaddsubscriptiondialog.cpp:36
+#, fuzzy
+msgid "Select List:"
+msgstr "Қапшықты таңдау"
+
+#: adblock/adblocksettingwidget.cpp:58
 msgid ""
 "<qt>Filter expression (e.g. <tt>http://www.example.com/ad/*</tt>, <a href="
 "\"filterhelp\">more information</a>):"
 msgstr ""
 
-#: adblock/adblocksettingwidget.cpp:69
+#: adblock/adblocksettingwidget.cpp:73
 msgid " day"
 msgid_plural " days"
 msgstr[0] " күн"
 
-#: adblock/adblocksettingwidget.cpp:86
+#: adblock/adblocksettingwidget.cpp:91
 msgid ""
 "<qt><p>Enter an expression to filter. Filters can be defined as either:"
 "<ul><li>a shell-style wildcard, e.g. <tt>http://www.example.com/ads*</tt>, "
@@ -46,7 +51,17 @@ msgid ""
 "filter."
 msgstr ""
 
-#: adblock/networkaccessmanager.cpp:51
+#: adblock/adblocksettingwidget.cpp:253
+msgid "Do you want to delete current list?"
+msgstr ""
+
+#: adblock/adblocksettingwidget.cpp:253
+#, fuzzy
+#| msgid "Collapse the current thread"
+msgid "Delete current list"
+msgstr "Назардағы ілеспелерді бүктеу"
+
+#: adblock/networkaccessmanager.cpp:52
 msgid "Blocked by ad filter"
 msgstr "Жарнама сүзгісі бұғаттаған"
 
@@ -86,27 +101,41 @@ msgstr ""
 msgid "Automatic Filters"
 msgstr "Автоматты түрде жіберілмесін"
 
+#. i18n: ectx: property (text), widget (QPushButton, addFilters)
+#: adblock/ui/settings_adblock.ui:47
+#, fuzzy
+#| msgid "Subscription..."
+msgid "Add Filters subscriptions..."
+msgstr "Жазылу..."
+
+#. i18n: ectx: property (text), widget (QPushButton, removeSubscription)
+#: adblock/ui/settings_adblock.ui:54
+#, fuzzy
+#| msgid "Subscription"
+msgid "Remove subscrition"
+msgstr "Жазылу"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: adblock/ui/settings_adblock.ui:49
+#: adblock/ui/settings_adblock.ui:76
 msgid "Update enabled automatic filters every:"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: adblock/ui/settings_adblock.ui:88
+#: adblock/ui/settings_adblock.ui:115
 #, fuzzy
 #| msgid "Available Filters"
 msgid "Manual Filters"
 msgstr "Бар сүзгілер"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: adblock/ui/settings_adblock.ui:96
+#: adblock/ui/settings_adblock.ui:123
 #, fuzzy
 #| msgid "&Search:"
 msgid "Search:"
 msgstr "&Іздеу:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, insertButton)
-#: adblock/ui/settings_adblock.ui:123
+#: adblock/ui/settings_adblock.ui:150
 #, fuzzy
 #| msgid "Add Permissions"
 msgid "Add filter expression"
@@ -114,14 +143,14 @@ msgstr "Рұқсаттарды қосу"
 
 #. i18n: ectx: property (text), widget (QToolButton, insertButton)
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:126 adblock/ui/settings_adblock.ui:136
+#: adblock/ui/settings_adblock.ui:153 adblock/ui/settings_adblock.ui:163
 #, fuzzy
 #| msgid "Add..."
 msgid "..."
 msgstr "Қосу..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
-#: adblock/ui/settings_adblock.ui:133
+#: adblock/ui/settings_adblock.ui:160
 msgid "Remove filter expression"
 msgstr ""
 
@@ -716,13 +745,23 @@ msgstr "Эл.пошта алаяқтық емес адрестер \"Ақ\" ті
 msgid "Enabled ad block"
 msgstr "Жарнама бұғаталсын"
 
+#. i18n: ectx: label, entry (HideAdsEnabled), group (Reader)
+#: settings/messageviewer.kcfg.cmake:179
+msgid "Hide advertisement enabled"
+msgstr ""
+
+#. i18n: ectx: label, entry (AdBlockUpdateInterval), group (Reader)
+#: settings/messageviewer.kcfg.cmake:183
+msgid "Update interval list of adblock"
+msgstr ""
+
 #. i18n: ectx: label, entry (notSendWhenEncrypted), group (MDN)
-#: settings/messageviewer.kcfg.cmake:189
+#: settings/messageviewer.kcfg.cmake:204
 msgid "Do not send MDNs in response to encrypted messages"
 msgstr "Шифрланған хаттарға MDN жауаптар жіберілмесін"
 
 #. i18n: ectx: label, entry (DefaultPolicy), group (MDN)
-#: settings/messageviewer.kcfg.cmake:193
+#: settings/messageviewer.kcfg.cmake:208
 msgid ""
 "Specifies the default policy to use, for the Message Disposition "
 "Notifications (for internal use only)"
@@ -731,19 +770,19 @@ msgstr ""
 "үшін)"
 
 #. i18n: ectx: label, entry (QuoteMessage), group (MDN)
-#: settings/messageviewer.kcfg.cmake:197
+#: settings/messageviewer.kcfg.cmake:212
 msgid ""
 "Specifies the default quoting action to take, when replying to a message "
 "(for internal use only)"
 msgstr "Хатқа жауап бергендегі әдетті дәйектеу амалы (тек ішкі қолданысы үшін)"
 
 #. i18n: ectx: label, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:213
+#: settings/messageviewer.kcfg.cmake:228
 msgid "Mangle From:/To: headers in replies to replies"
 msgstr "Жауақа берген жауапта Кімден:/Кімге: айдарларын қайталау"
 
 #. i18n: ectx: whatsthis, entry (LegacyMangleFromToHeaders), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:214
+#: settings/messageviewer.kcfg.cmake:229
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -756,12 +795,12 @@ msgstr ""
 "ала алмаса, осы параметрді орнатып көріңіз."
 
 #. i18n: ectx: label, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:219
+#: settings/messageviewer.kcfg.cmake:234
 msgid "Send groupware invitations in the mail body"
 msgstr "Бірлескен іс шақырулары хат бетінде жіберілсін"
 
 #. i18n: ectx: whatsthis, entry (LegacyBodyInvites), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:220
+#: settings/messageviewer.kcfg.cmake:235
 msgid ""
 "Microsoft Outlook has a number of shortcomings in its implementation of the "
 "iCalendar standard; this option works around one of them. If you have "
@@ -774,12 +813,12 @@ msgstr ""
 "шақыруларыңызды ала алмаса, осы параметрді орнатып көріңіз."
 
 #. i18n: ectx: label, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:225
+#: settings/messageviewer.kcfg.cmake:240
 msgid "Exchange-compatible invitation naming"
 msgstr "Шақыру хаты Exchange-үйлесімді болсын"
 
 #. i18n: ectx: whatsthis, entry (ExchangeCompatibleInvitations), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:226
+#: settings/messageviewer.kcfg.cmake:241
 msgid ""
 "Microsoft Outlook, when used in combination with a Microsoft Exchange "
 "server, has a problem understanding standards-compliant groupware email. "
@@ -792,12 +831,12 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComments)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:231 ui/invitationsettings.ui:58
+#: settings/messageviewer.kcfg.cmake:246 ui/invitationsettings.ui:58
 msgid "Outlook compatible invitation reply comments"
 msgstr "Шақыруға жауап пайымдамалары Outlook-үйлесімді болсын"
 
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationReplyComments), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:232
+#: settings/messageviewer.kcfg.cmake:247
 msgid ""
 "When replying to invitations, send the reply comment in way that Microsoft "
 "Outlook understands."
@@ -807,13 +846,13 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: label, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:237 ui/invitationsettings.ui:71
+#: settings/messageviewer.kcfg.cmake:252 ui/invitationsettings.ui:71
 msgid "Show invitation update differences in the Outlook style"
 msgstr "Outlook стиліндегі шақырудағы жаңарту өзгерістері көрсетлсін"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mOutlookCompatibleInvitationComparisons)
 #. i18n: ectx: whatsthis, entry (OutlookCompatibleInvitationComparisons), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:238 ui/invitationsettings.ui:68
+#: settings/messageviewer.kcfg.cmake:253 ui/invitationsettings.ui:68
 msgid ""
 "When viewing invitation updates, show the differences in the Microsoft "
 "Outlook style."
@@ -822,12 +861,12 @@ msgstr ""
 "өзгерістерді көрсету. "
 
 #. i18n: ectx: label, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:243
+#: settings/messageviewer.kcfg.cmake:258
 msgid "Automatic invitation sending"
 msgstr "Шақыру автоматты түрде жіберілсін"
 
 #. i18n: ectx: whatsthis, entry (AutomaticSending), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:244
+#: settings/messageviewer.kcfg.cmake:259
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
 "all invitation mails are sent automatically. If you want to see the mail "
@@ -842,12 +881,12 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, mDeleteInvitations)
 #. i18n: ectx: label, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:249 ui/invitationsettings.ui:100
+#: settings/messageviewer.kcfg.cmake:264 ui/invitationsettings.ui:100
 msgid "Delete invitation emails after the reply to them has been sent"
 msgstr "Жауабы жіберілген соң шақыру хаты өшірілсін"
 
 #. i18n: ectx: whatsthis, entry (DeleteInvitationEmailsAfterSendingReply), group (Invitations)
-#: settings/messageviewer.kcfg.cmake:250
+#: settings/messageviewer.kcfg.cmake:265
 msgid ""
 "When this is checked, received invitation emails that have been replied to "
 "will be moved to the Trash folder, once the reply has been successfully sent."
@@ -856,7 +895,7 @@ msgstr ""
 "Шелекке кетеді."
 
 #. i18n: ectx: label, entry (UseFixedFont), group (Composer)
-#: settings/messageviewer.kcfg.cmake:274 viewer/viewer_p.cpp:1707
+#: settings/messageviewer.kcfg.cmake:289 viewer/viewer_p.cpp:1704
 msgid "Use Fi&xed Font"
 msgstr "Ені б&ірыңғай қаріп"
 
@@ -1173,7 +1212,7 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "Тіркемені өңдеу мүмкін емес."
 
-#: viewer/mailsourceviewer.cpp:122 viewer/viewer_p.cpp:1806
+#: viewer/mailsourceviewer.cpp:122 viewer/viewer_p.cpp:1803
 msgid "Speak Text"
 msgstr "Мәтінді дауыстау"
 
@@ -1395,7 +1434,7 @@ msgstr ""
 msgid "Show Raw Message"
 msgstr "Хаттың бастапқы кодын көрсету"
 
-#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2915
+#: viewer/objecttreeparser.cpp:2067 viewer/viewer_p.cpp:2916
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
@@ -1403,13 +1442,13 @@ msgstr ""
 "Chiasmus бағдарламасы \"x-obtain-keys\" функциясын ұсынбады. Қате туралы "
 "хабарлаңыз."
 
-#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2917
-#: viewer/viewer_p.cpp:2922 viewer/viewer_p.cpp:2931 viewer/viewer_p.cpp:2940
-#: viewer/viewer_p.cpp:2958 viewer/viewer_p.cpp:2970 viewer/viewer_p.cpp:3010
+#: viewer/objecttreeparser.cpp:2073 viewer/viewer_p.cpp:2918
+#: viewer/viewer_p.cpp:2923 viewer/viewer_p.cpp:2932 viewer/viewer_p.cpp:2941
+#: viewer/viewer_p.cpp:2959 viewer/viewer_p.cpp:2971 viewer/viewer_p.cpp:3011
 msgid "Chiasmus Backend Error"
 msgstr "Chiasmus бағдарламасының қатесі"
 
-#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2928
+#: viewer/objecttreeparser.cpp:2079 viewer/viewer_p.cpp:2929
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -1417,7 +1456,7 @@ msgstr ""
 "Chiasmus бағдарламасы күтпеген мәнді қайтарды. Оның \"x-obtain-keys\" "
 "функциясы жолдар тізімін қайтару тиіс емес. Қате туралы хабарлаңыз."
 
-#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2937
+#: viewer/objecttreeparser.cpp:2087 viewer/viewer_p.cpp:2938
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
@@ -1425,11 +1464,11 @@ msgstr ""
 "Кілттер табылмады. Chiasmus баптау параметрлеріндегі кілттің жолын "
 "дұрыстаңыз."
 
-#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2944
+#: viewer/objecttreeparser.cpp:2093 viewer/viewer_p.cpp:2945
 msgid "Chiasmus Decryption Key Selection"
 msgstr "Chiasmus шифрді шешу кілтін таңдау"
 
-#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2956
+#: viewer/objecttreeparser.cpp:2106 viewer/viewer_p.cpp:2957
 msgid ""
 "Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
 "this bug."
@@ -1437,7 +1476,7 @@ msgstr ""
 "Chiasmus бағдарламасы \"x-decrypt\" функциясын ұсынбады. Қате туралы "
 "хабарлаңыз."
 
-#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2968
+#: viewer/objecttreeparser.cpp:2114 viewer/viewer_p.cpp:2969
 msgid ""
 "The \"x-decrypt\" function does not accept the expected parameters. Please "
 "report this bug."
@@ -1445,12 +1484,12 @@ msgstr ""
 "\"x-decrypt\" функциясы күткен параметрлерді қабылдамады. Қате туралы "
 "хабарлаңыз."
 
-#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2975
-#: viewer/viewer_p.cpp:3002
+#: viewer/objecttreeparser.cpp:2120 viewer/viewer_p.cpp:2976
+#: viewer/viewer_p.cpp:3003
 msgid "Chiasmus Decryption Error"
 msgstr "Chiasmus шифрді шешу қатесі"
 
-#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3007
+#: viewer/objecttreeparser.cpp:2126 viewer/viewer_p.cpp:3008
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
 "did not return a byte array. Please report this bug."
@@ -1738,7 +1777,7 @@ msgstr "Сипаттамасы жоқ"
 msgid "Turn on HTML rendering for this message."
 msgstr "Бұл хатты HTML түрде көрсету керек."
 
-#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1803
+#: viewer/urlhandlermanager.cpp:522 viewer/viewer_p.cpp:1800
 msgid "Load external references from the Internet for this message."
 msgstr "Бұл хат үшін Интернеттен сыртқы сілтемелерді жүктеу керек."
 
@@ -1815,7 +1854,7 @@ msgstr "Адрестік кітапшасында а&шу"
 msgid "&Copy Email Address"
 msgstr "Эл.пошта адресін &көшіріп алу"
 
-#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2772
+#: viewer/urlhandlermanager.cpp:737 viewer/viewer_p.cpp:2773
 msgid "Address copied to clipboard."
 msgstr "Адрес алмасу буферіне көшірімеленді."
 
@@ -1872,7 +1911,7 @@ msgstr ""
 "істелмейді."
 
 #: viewer/viewer_p.cpp:417 viewer/viewer_p.cpp:423 viewer/viewer_p.cpp:660
-#: viewer/viewer_p.cpp:1888
+#: viewer/viewer_p.cpp:1889
 msgid "Delete Attachment"
 msgstr "Тіркемесін өшіру"
 
@@ -1888,7 +1927,7 @@ msgid ""
 "message."
 msgstr "Тіркемені өзгерту хаттың цифрлық қолтаңбасын бұзуы мүмкін."
 
-#: viewer/viewer_p.cpp:488 viewer/viewer_p.cpp:654 viewer/viewer_p.cpp:1892
+#: viewer/viewer_p.cpp:488 viewer/viewer_p.cpp:654 viewer/viewer_p.cpp:1893
 msgid "Edit Attachment"
 msgstr "Тіркемені өзгерту"
 
@@ -1911,12 +1950,12 @@ msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "Мынамен &ашу..."
 
-#: viewer/viewer_p.cpp:616 viewer/viewer_p.cpp:1865
+#: viewer/viewer_p.cpp:616 viewer/viewer_p.cpp:1866
 msgctxt "to open"
 msgid "Open"
 msgstr "Ашу"
 
-#: viewer/viewer_p.cpp:624 viewer/viewer_p.cpp:1872
+#: viewer/viewer_p.cpp:624 viewer/viewer_p.cpp:1873
 msgctxt "to view something"
 msgid "View"
 msgstr "Көру"
@@ -1925,7 +1964,7 @@ msgstr "Көру"
 msgid "Scroll To"
 msgstr "Мынаған дейін жүгірту"
 
-#: viewer/viewer_p.cpp:642 viewer/viewer_p.cpp:1884
+#: viewer/viewer_p.cpp:642 viewer/viewer_p.cpp:1885
 msgid "Copy"
 msgstr "Көшіріп алу"
 
@@ -1933,7 +1972,7 @@ msgstr "Көшіріп алу"
 msgid "Decrypt With Chiasmus..."
 msgstr "Chiasmus-пен шифрын шешу..."
 
-#: viewer/viewer_p.cpp:671 viewer/viewer_p.cpp:1897
+#: viewer/viewer_p.cpp:671 viewer/viewer_p.cpp:1898
 msgid "Properties"
 msgstr "Қасиеттері"
 
@@ -1941,290 +1980,294 @@ msgstr "Қасиеттері"
 msgid "The KDE email client."
 msgstr "KDE эл.пошта клиенті"
 
-#: viewer/viewer_p.cpp:1410
+#: viewer/viewer_p.cpp:1407
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Көретін тіркеме: %1"
 
-#: viewer/viewer_p.cpp:1567
+#: viewer/viewer_p.cpp:1564
 msgctxt "View->"
 msgid "&Headers"
 msgstr "&Айдарлар"
 
-#: viewer/viewer_p.cpp:1569
+#: viewer/viewer_p.cpp:1566
 msgid "Choose display style of message headers"
 msgstr "Хат айдарларың көрсету түрін таңдаңыз"
 
-#: viewer/viewer_p.cpp:1572
+#: viewer/viewer_p.cpp:1569
 msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr "І&скерлік айдарлар"
 
-#: viewer/viewer_p.cpp:1575
+#: viewer/viewer_p.cpp:1572
 msgid "Show the list of headers in Enterprise style"
 msgstr "Айдарлар тізімі іскерлік стилінде көрсету"
 
-#: viewer/viewer_p.cpp:1579
+#: viewer/viewer_p.cpp:1576
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr "&Әсем айдарлар"
 
-#: viewer/viewer_p.cpp:1582
+#: viewer/viewer_p.cpp:1579
 msgid "Show the list of headers in a fancy format"
 msgstr "Айдарлар тізімі әсем пішімінде көрсету"
 
-#: viewer/viewer_p.cpp:1586
+#: viewer/viewer_p.cpp:1583
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr "Қ&ысқа айдарлар"
 
-#: viewer/viewer_p.cpp:1589
+#: viewer/viewer_p.cpp:1586
 msgid "Show brief list of message headers"
 msgstr "Хат айдарларының қысқа тізімін көрсету"
 
-#: viewer/viewer_p.cpp:1593
+#: viewer/viewer_p.cpp:1590
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr "&Стандартты айдарлар"
 
-#: viewer/viewer_p.cpp:1596
+#: viewer/viewer_p.cpp:1593
 msgid "Show standard list of message headers"
 msgstr "Хат айдарларының стандартты тізімін көрсету"
 
-#: viewer/viewer_p.cpp:1600
+#: viewer/viewer_p.cpp:1597
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr "&Толық айдарлар"
 
-#: viewer/viewer_p.cpp:1603
+#: viewer/viewer_p.cpp:1600
 msgid "Show long list of message headers"
 msgstr "Хат айдарларының толық тізімін көрсету"
 
-#: viewer/viewer_p.cpp:1607
+#: viewer/viewer_p.cpp:1604
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr "&Барлық айдарлар"
 
-#: viewer/viewer_p.cpp:1610
+#: viewer/viewer_p.cpp:1607
 msgid "Show all message headers"
 msgstr "Хат айдарларының барлығын көрсету"
 
-#: viewer/viewer_p.cpp:1614
+#: viewer/viewer_p.cpp:1611
 msgctxt "View->headers->"
 msgid "&Custom Headers"
 msgstr "&Өзгеше айдарлары"
 
-#: viewer/viewer_p.cpp:1617
+#: viewer/viewer_p.cpp:1614
 msgid "Show custom headers"
 msgstr "Өзгеше айдарларының көрсету"
 
-#: viewer/viewer_p.cpp:1625
+#: viewer/viewer_p.cpp:1622
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "&Тіркемелер"
 
-#: viewer/viewer_p.cpp:1627
+#: viewer/viewer_p.cpp:1624
 msgid "Choose display style of attachments"
 msgstr "Тіркемені көрсету түрін таңдаңыз"
 
-#: viewer/viewer_p.cpp:1630
+#: viewer/viewer_p.cpp:1627
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "&Таңбаша түрінде"
 
-#: viewer/viewer_p.cpp:1633
+#: viewer/viewer_p.cpp:1630
 msgid "Show all attachments as icons. Click to see them."
 msgstr ""
 "Барлық тіркемелерді таңбаша түрінде көрсету. Қарау үшін оларды түрту керек."
 
-#: viewer/viewer_p.cpp:1637
+#: viewer/viewer_p.cpp:1634
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "&Парасаты"
 
-#: viewer/viewer_p.cpp:1640
+#: viewer/viewer_p.cpp:1637
 msgid "Show attachments as suggested by sender."
 msgstr "Тіркемелерді жіберуші ұсынған күйінде көрсету."
 
-#: viewer/viewer_p.cpp:1644
+#: viewer/viewer_p.cpp:1641
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "&Хат бетінде"
 
-#: viewer/viewer_p.cpp:1647
+#: viewer/viewer_p.cpp:1644
 msgid "Show all attachments inline (if possible)"
 msgstr "Тіркеме хаттың мәтін бетінде (мүмкін болса) көрсету"
 
-#: viewer/viewer_p.cpp:1651
+#: viewer/viewer_p.cpp:1648
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "&Жасыру"
 
-#: viewer/viewer_p.cpp:1654
+#: viewer/viewer_p.cpp:1651
 msgid "Do not show attachments in the message viewer"
 msgstr "Хат бетінде тіркемелерді көрсетпеу"
 
-#: viewer/viewer_p.cpp:1658
+#: viewer/viewer_p.cpp:1655
 msgctxt "View->attachments->"
 msgid "In Header Only"
 msgstr "Тек айдарында"
 
-#: viewer/viewer_p.cpp:1662
+#: viewer/viewer_p.cpp:1659
 msgid "Show Attachments only in the header of the mail"
 msgstr "Хаттарының тіркемелері тек айдарында ғана көрсетілсін"
 
-#: viewer/viewer_p.cpp:1667
+#: viewer/viewer_p.cpp:1664
 msgid "&Set Encoding"
 msgstr "Кодтамасын &орнату"
 
-#: viewer/viewer_p.cpp:1673 widgets/configurewidget.cpp:45
+#: viewer/viewer_p.cpp:1670 widgets/configurewidget.cpp:45
 #: widgets/configurewidget.cpp:128
 msgid "Auto"
 msgstr "Авто"
 
-#: viewer/viewer_p.cpp:1690
+#: viewer/viewer_p.cpp:1687
 msgid "Select All Text"
 msgstr "Барлық мәтінді таңдау"
 
-#: viewer/viewer_p.cpp:1697 viewer/viewer_p.cpp:2162
+#: viewer/viewer_p.cpp:1694 viewer/viewer_p.cpp:2163
 msgid "Copy Link Address"
 msgstr "Адресін көшірп алу"
 
-#: viewer/viewer_p.cpp:1702
+#: viewer/viewer_p.cpp:1699
 msgid "Open URL"
 msgstr "URL адресін ашу"
 
-#: viewer/viewer_p.cpp:1714
+#: viewer/viewer_p.cpp:1711
 msgid "Zoom Text Only"
 msgstr "Жазуды ғана масштабтау"
 
-#: viewer/viewer_p.cpp:1717
+#: viewer/viewer_p.cpp:1714
 msgid "&Zoom In"
 msgstr "&Үлкейту"
 
-#: viewer/viewer_p.cpp:1722
+#: viewer/viewer_p.cpp:1719
 msgid "Zoom &Out"
 msgstr "К&ішірейту"
 
-#: viewer/viewer_p.cpp:1727
+#: viewer/viewer_p.cpp:1724
 msgid "Reset"
 msgstr "Ысырып тастау"
 
-#: viewer/viewer_p.cpp:1734
+#: viewer/viewer_p.cpp:1731
 msgid "Show Message Structure"
 msgstr "Хат құрылымын көрсету"
 
-#: viewer/viewer_p.cpp:1739
+#: viewer/viewer_p.cpp:1736
 msgid "&View Source"
 msgstr "Бастапқы кодын кө&ру"
 
-#: viewer/viewer_p.cpp:1744
+#: viewer/viewer_p.cpp:1741
 msgid "&Save message..."
 msgstr "Хатты &сақтау"
 
-#: viewer/viewer_p.cpp:1750
+#: viewer/viewer_p.cpp:1747
 msgid "&Save Display Format"
 msgstr "Көрсету пішімін &сақтау"
 
-#: viewer/viewer_p.cpp:1754
+#: viewer/viewer_p.cpp:1751
 msgid "&Reset Display Format"
 msgstr "Көрсету пішімін &ысыру"
 
-#: viewer/viewer_p.cpp:1761
+#: viewer/viewer_p.cpp:1758
 msgid "Scroll Message Up"
 msgstr "Хатты жоғарға жүгірту"
 
-#: viewer/viewer_p.cpp:1767
+#: viewer/viewer_p.cpp:1764
 msgid "Scroll Message Down"
 msgstr "Хатты төменге жүгірту"
 
-#: viewer/viewer_p.cpp:1773
+#: viewer/viewer_p.cpp:1770
 msgid "Scroll Message Up (More)"
 msgstr "Хатты жоғарға жүгірту (біртіндеп)"
 
-#: viewer/viewer_p.cpp:1779
+#: viewer/viewer_p.cpp:1776
 msgid "Scroll Message Down (More)"
 msgstr "Хатты төменге жүгірту (біртіндеп)"
 
-#: viewer/viewer_p.cpp:1790
+#: viewer/viewer_p.cpp:1787
 msgid "Toggle HTML Display Mode"
 msgstr "HTML көрсету режімін ауыстыру"
 
-#: viewer/viewer_p.cpp:1795
+#: viewer/viewer_p.cpp:1792
 msgid "Toggle display mode between HTML and plain text"
 msgstr "HTML ден жәй мәтінді көрсету режіміне немесе кері ауысу"
 
-#: viewer/viewer_p.cpp:1798
+#: viewer/viewer_p.cpp:1795
 msgid "Load external references"
 msgstr "Сыртқы сілтемелерді жүктеу"
 
-#: viewer/viewer_p.cpp:1812
+#: viewer/viewer_p.cpp:1809
 msgid "Copy Image Location"
 msgstr "Кескін сілтемесін көшірмелеу"
 
-#: viewer/viewer_p.cpp:1819
+#: viewer/viewer_p.cpp:1816
 msgid "Translate..."
 msgstr "Аудару..."
 
-#: viewer/viewer_p.cpp:1826
+#: viewer/viewer_p.cpp:1823
 msgid "&Find in Message..."
 msgstr "&Хаттарда табу..."
 
-#: viewer/viewer_p.cpp:1832
+#: viewer/viewer_p.cpp:1829
 msgid "Toggle Caret Browsing"
 msgstr "Мәтінді шарлау күйін ауыстыру"
 
-#: viewer/viewer_p.cpp:1861
+#: viewer/viewer_p.cpp:1835
+msgid "Block image"
+msgstr ""
+
+#: viewer/viewer_p.cpp:1862
 msgid "Save &As..."
 msgstr "&Былай сақтау..."
 
-#: viewer/viewer_p.cpp:1871
+#: viewer/viewer_p.cpp:1872
 msgid "Open With..."
 msgstr "Мынамен ашу..."
 
-#: viewer/viewer_p.cpp:1877
+#: viewer/viewer_p.cpp:1878
 msgid "Save All Attachments..."
 msgstr "Барлық тіркемелерді сақтау..."
 
-#: viewer/viewer_p.cpp:2160
+#: viewer/viewer_p.cpp:2161
 msgid "Copy Email Address"
 msgstr "Эл.пошта адресін көшіріп алу"
 
-#: viewer/viewer_p.cpp:2226
+#: viewer/viewer_p.cpp:2227
 msgid "Message as Plain Text"
 msgstr "Жай мәтін түріндегі хат"
 
-#: viewer/viewer_p.cpp:2493
+#: viewer/viewer_p.cpp:2494
 msgid "Attachments:"
 msgstr "Тіркемелері:"
 
-#: viewer/viewer_p.cpp:2777
+#: viewer/viewer_p.cpp:2778
 msgid "URL copied to clipboard."
 msgstr "URL алмасу буферіне көшірімеленді."
 
-#: viewer/viewer_p.cpp:3069
+#: viewer/viewer_p.cpp:3070
 msgid "Hide full address list"
 msgstr "Толық адрес тізімін жасыру"
 
-#: viewer/viewer_p.cpp:3073
+#: viewer/viewer_p.cpp:3074
 msgid "Show full address list"
 msgstr "Толық адрес тізімін көрсету"
 
-#: viewer/viewer_p.cpp:3096
+#: viewer/viewer_p.cpp:3097
 #, kde-format
 msgid "Message loading failed: %1."
 msgstr "Хаттың жүктеу жаңылысы: %1."
 
-#: viewer/viewer_p.cpp:3101
+#: viewer/viewer_p.cpp:3102
 msgid "Message not found."
 msgstr "Хат табылмады."
 
-#: viewer/viewer_p.cpp:3225
+#: viewer/viewer_p.cpp:3226
 msgid "Caret Browsing will be activated. Switch off with F7 shortcut."
 msgstr ""
 "Мәтінді шарлау күйін белсендетіледі. Оны F7 пернесімен ауыстыра аласыз."
 
-#: viewer/viewer_p.cpp:3226
+#: viewer/viewer_p.cpp:3227
 msgid "Activate Caret Browsing"
 msgstr "Мәтінді шарлау күйін белсендету"
 
@@ -2318,6 +2361,11 @@ msgstr "&Келесі карта"
 #: widgets/vcardviewer.cpp:50
 msgid "&Previous Card"
 msgstr "&Алдыңғы карта"
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Ad Block Settings"
+#~ msgstr "&Жіберу"
 
 #~ msgid ""
 #~ "Could not write the file %1:\n"
@@ -5497,9 +5545,6 @@ msgstr "&Алдыңғы карта"
 #~ msgid "&Troubleshoot IMAP Cache..."
 #~ msgstr "&IMAP кэшін жөндеу..."
 
-#~ msgid "Subscription"
-#~ msgstr "Жазылу"
-
 #, fuzzy
 #~ msgid "Local Subscription"
 #~ msgstr "Жазылу"
@@ -7112,11 +7157,6 @@ msgstr "&Алдыңғы карта"
 #~ msgstr "Алушы"
 
 #, fuzzy
-#~| msgid "Subscription..."
-#~ msgid "Serverside Subscription..."
-#~ msgstr "Жазылу..."
-
-#, fuzzy
 #~ msgid "Local Subscription..."
 #~ msgstr "Жазылу..."
 
@@ -8249,12 +8289,6 @@ msgstr "&Алдыңғы карта"
 #~ msgid "Collapse All Groups"
 #~ msgstr "Барлық ілеспе топтарды &бүктеу"
 
-#, fuzzy
-#~| msgid "Collapse the current thread"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Close the current tab"
-#~ msgstr "Назардағы ілеспелерді бүктеу"
-
 #~ msgid "Show Quick Search"
 #~ msgstr "Жедел іздеу панелін көрсету"
 
@@ -8507,10 +8541,6 @@ msgstr "&Алдыңғы карта"
 #~| msgid "Subscription..."
 #~ msgid "Starting..."
 #~ msgstr "Жазылу..."
-
-#, fuzzy
-#~ msgid "Select Font"
-#~ msgstr "Қапшықты таңдау"
 
 #, fuzzy
 #~ msgid "Select Size"
