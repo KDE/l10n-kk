@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-18 01:40+0000\n"
+"POT-Creation-Date: 2013-10-24 01:32+0000\n"
 "PO-Revision-Date: 2013-10-20 04:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -104,15 +104,17 @@ msgstr "Ресурстарын сақтық көшірмелеу бітті."
 
 #: addressbook/exportaddressbookjob.cpp:101
 #: akregator/exportakregatorjob.cpp:67 alarm/exportalarmjob.cpp:84
-#: calendar/exportcalendarjob.cpp:88 jot/exportjotjob.cpp:83
-#: mail/exportmailjob.cpp:182 notes/exportnotesjob.cpp:67
+#: blogilo/exportblogilojob.cpp:67 calendar/exportcalendarjob.cpp:88
+#: jot/exportjotjob.cpp:83 mail/exportmailjob.cpp:182
+#: notes/exportnotesjob.cpp:67
 msgid "Backing up config..."
 msgstr "Баптауларын сақтық көшірмелеу..."
 
 #: addressbook/exportaddressbookjob.cpp:137
 #: akregator/exportakregatorjob.cpp:72 alarm/exportalarmjob.cpp:109
-#: calendar/exportcalendarjob.cpp:134 jot/exportjotjob.cpp:108
-#: mail/exportmailjob.cpp:419 notes/exportnotesjob.cpp:73
+#: blogilo/exportblogilojob.cpp:73 calendar/exportcalendarjob.cpp:134
+#: jot/exportjotjob.cpp:108 mail/exportmailjob.cpp:419
+#: notes/exportnotesjob.cpp:73
 msgid "Config backup done."
 msgstr "Баптауларын сақтық көшірмелеу бітті."
 
@@ -134,8 +136,9 @@ msgstr "Ресурстар қалпына келтірілді."
 
 #: addressbook/importaddressbookjob.cpp:191
 #: akregator/importakregatorjob.cpp:57 alarm/importalarmjob.cpp:130
-#: calendar/importcalendarjob.cpp:192 jot/importjotjob.cpp:128
-#: mail/importmailjob.cpp:792 notes/importnotesjob.cpp:57
+#: blogilo/importblogilojob.cpp:57 calendar/importcalendarjob.cpp:192
+#: jot/importjotjob.cpp:128 mail/importmailjob.cpp:792
+#: notes/importnotesjob.cpp:57
 msgid "Config restored."
 msgstr "Баптауы қалпына келтірілді."
 
@@ -143,7 +146,8 @@ msgstr "Баптауы қалпына келтірілді."
 msgid "Start export akregator settings..."
 msgstr "Akregator баптауын экспорттауды бастау..."
 
-#: akregator/exportakregatorjob.cpp:77 notes/exportnotesjob.cpp:78
+#: akregator/exportakregatorjob.cpp:77 blogilo/exportblogilojob.cpp:78
+#: notes/exportnotesjob.cpp:78
 msgid "Backing up data..."
 msgstr "Деректерді сақтық көшірмелеу..."
 
@@ -153,7 +157,8 @@ msgstr "Деректерді сақтық көшірмелеу..."
 msgid "\"%1\" directory cannot be added to backup file."
 msgstr "\"%1\" файлы сақтық көшірме файлына қосылмады."
 
-#: akregator/exportakregatorjob.cpp:87 notes/exportnotesjob.cpp:94
+#: akregator/exportakregatorjob.cpp:87 blogilo/exportblogilojob.cpp:86
+#: notes/exportnotesjob.cpp:94
 msgid "Data backup done."
 msgstr "Деректер сақтық көшірмеленді."
 
@@ -161,7 +166,8 @@ msgstr "Деректер сақтық көшірмеленді."
 msgid "Start import akregator settings..."
 msgstr "Akregator баптауын импорттауды бастау..."
 
-#: akregator/importakregatorjob.cpp:69 notes/importnotesjob.cpp:69
+#: akregator/importakregatorjob.cpp:69 blogilo/importblogilojob.cpp:69
+#: notes/importnotesjob.cpp:69
 msgid "Data restored."
 msgstr "Деректер қалпына келтірілді."
 
@@ -180,6 +186,15 @@ msgstr "Архив жазылатын күйде ашылмады."
 #: archivestorage.cpp:48 utils.cpp:254
 msgid "Archive cannot be opened in read mode."
 msgstr "Архив окитын күйде ашылмады."
+
+#: blogilo/exportblogilojob.cpp:46 mail/exportmailjob.cpp:68
+#: notes/exportnotesjob.cpp:46
+msgid "Start export knotes settings..."
+msgstr "Knotes баптауын экспорттауды бастау..."
+
+#: blogilo/importblogilojob.cpp:45 notes/importnotesjob.cpp:45
+msgid "Start import knotes settings..."
+msgstr "Knotes баптауын импорттауды бастау..."
 
 #: calendar/exportcalendarjob.cpp:47
 msgid "Start export korganizer settings..."
@@ -200,10 +215,6 @@ msgstr "Kjots баптауын импорттауды бастау..."
 #: mail/exportmailjob.cpp:57
 msgid "mysqldump not found. Export data aborted"
 msgstr "mysqldump табылмады. Экспорттау доғарылды."
-
-#: mail/exportmailjob.cpp:68 notes/exportnotesjob.cpp:46
-msgid "Start export knotes settings..."
-msgstr "Knotes баптауын экспорттауды бастау..."
 
 #: mail/exportmailjob.cpp:124
 msgid "Backing up transports..."
@@ -384,39 +395,35 @@ msgstr "Laurent Montel"
 msgid "Maintainer"
 msgstr "Желілдірушісі"
 
-#: notes/importnotesjob.cpp:45
-msgid "Start import knotes settings..."
-msgstr "Knotes баптауын импорттауды бастау..."
-
-#: pimsettingexporterwindow.cpp:88
+#: pimsettingexporterwindow.cpp:91
 msgid "Zip program not found. Install it before to launch this application."
 msgstr "Zip бағдарламасы табылған жоқ. Қолданбаны жегу алдында оны орнатыңыз."
 
-#: pimsettingexporterwindow.cpp:88
+#: pimsettingexporterwindow.cpp:91
 msgid "Zip program not found."
 msgstr "Zip бағдарламасы табылған жоқ."
 
-#: pimsettingexporterwindow.cpp:103
+#: pimsettingexporterwindow.cpp:106
 msgid "Back Up Data..."
 msgstr "Деректің сақтық көшірмесін жасау..."
 
-#: pimsettingexporterwindow.cpp:107
+#: pimsettingexporterwindow.cpp:110
 msgid "Restore Data..."
 msgstr "Деректі қалпына келтіру..."
 
-#: pimsettingexporterwindow.cpp:111
+#: pimsettingexporterwindow.cpp:114
 msgid "Save log..."
 msgstr "Журналын сақтау..."
 
-#: pimsettingexporterwindow.cpp:120
+#: pimsettingexporterwindow.cpp:123
 msgid "Log is empty."
 msgstr "Журнал бос."
 
-#: pimsettingexporterwindow.cpp:120
+#: pimsettingexporterwindow.cpp:123
 msgid "Save log"
 msgstr "Журналын сақтау"
 
-#: pimsettingexporterwindow.cpp:129
+#: pimsettingexporterwindow.cpp:132
 msgid ""
 "Before to backup data, close all kdepim applications. Do you want to "
 "continue?"
@@ -424,15 +431,15 @@ msgstr ""
 "Деректің сақтық көшірмесін жасау алдында бүкіл kdepim қолданбаларын жабу "
 "керек. Жалғастыра берейік пе?"
 
-#: pimsettingexporterwindow.cpp:129 pimsettingexporterwindow.cpp:228
+#: pimsettingexporterwindow.cpp:132 pimsettingexporterwindow.cpp:233
 msgid "Backup"
 msgstr "Сақтық көшірмелеу"
 
-#: pimsettingexporterwindow.cpp:132
+#: pimsettingexporterwindow.cpp:135
 msgid "Create backup"
 msgstr "Сақтық көшірмені жасау"
 
-#: pimsettingexporterwindow.cpp:228
+#: pimsettingexporterwindow.cpp:233
 msgid ""
 "Before to restore data, close all kdepim applications. Do you want to "
 "continue?"
@@ -440,7 +447,7 @@ msgstr ""
 "Деректің сақтық көшірмесінен қалпына қайтару алдында бүкіл kdepim "
 "қолданбаларын жабу керек. Жалғастыра берейік пе?"
 
-#: pimsettingexporterwindow.cpp:230
+#: pimsettingexporterwindow.cpp:235
 msgid "Restore backup"
 msgstr "Көшірмеден қалпына келтіру"
 
@@ -448,35 +455,69 @@ msgstr "Көшірмеден қалпына келтіру"
 msgid "Select Type"
 msgstr "Түрін таңдау"
 
-#: selectiontypetreewidget.cpp:138
+#: selectiontypetreewidget.cpp:42
+#, fuzzy
+#| msgid "Mails"
+msgid "KMail"
+msgstr "Хаттар"
+
+#: selectiontypetreewidget.cpp:51
+msgid "KAddressBook"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:56
+msgid "KAlarm"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:61
+msgid "KOrganizer"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:66
+msgid "KJots"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:71
+msgid "KNotes"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:76
+msgid "Akregator"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:81
+msgid "Blogilo"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:126
 msgid "Identity"
 msgstr "Әлпеті"
 
-#: selectiontypetreewidget.cpp:146
+#: selectiontypetreewidget.cpp:134
 msgid "Mails"
 msgstr "Хаттар"
 
-#: selectiontypetreewidget.cpp:154
+#: selectiontypetreewidget.cpp:142
 msgid "Mail Transport"
 msgstr "Пошта тасымалдауы"
 
-#: selectiontypetreewidget.cpp:162
+#: selectiontypetreewidget.cpp:150
 msgid "Resources"
 msgstr "Ресурстар"
 
-#: selectiontypetreewidget.cpp:170
+#: selectiontypetreewidget.cpp:158
 msgid "Config"
 msgstr "Баптау"
 
-#: selectiontypetreewidget.cpp:178
+#: selectiontypetreewidget.cpp:166
 msgid "Akonadi Database"
 msgstr "Akonadi деректер қоры"
 
-#: selectiontypetreewidget.cpp:186
+#: selectiontypetreewidget.cpp:174
 msgid "Nepomuk Database"
 msgstr "Nepomuk деректер қоры"
 
-#: selectiontypetreewidget.cpp:194
+#: selectiontypetreewidget.cpp:182
 msgid "Data"
 msgstr "Дерек"
 

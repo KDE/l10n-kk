@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-23 01:33+0000\n"
+"POT-Creation-Date: 2013-10-24 01:33+0000\n"
 "PO-Revision-Date: 2013-10-20 04:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -712,17 +712,17 @@ msgid "Do NOT Trust"
 msgstr "Сенім ЖОҚ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:57 kgpgKeyInfo.ui:193
+#: core/convert.cpp:57 kgpgKeyInfo.ui:196
 msgid "Marginally"
 msgstr "Шамалы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:58 kgpgKeyInfo.ui:198
+#: core/convert.cpp:58 kgpgKeyInfo.ui:201
 msgid "Fully"
 msgstr "Толық"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:59 kgpgKeyInfo.ui:203
+#: core/convert.cpp:59 kgpgKeyInfo.ui:206
 msgid "Ultimately"
 msgstr "Шексіз"
 
@@ -779,6 +779,37 @@ msgstr "Шексіз"
 msgctxt "Unknown trust in key"
 msgid "Unknown"
 msgstr "Беймәлім"
+
+#: core/convert.cpp:93
+#, fuzzy
+#| msgid "Signature"
+msgctxt "key capability"
+msgid "Signature"
+msgstr "Қолтаңба"
+
+#: core/convert.cpp:95
+#, fuzzy
+#| msgid "Encryption"
+msgctxt "key capability"
+msgid "Encryption"
+msgstr "Шифрлау"
+
+#: core/convert.cpp:97
+msgctxt "key capability"
+msgid "Authentication"
+msgstr ""
+
+#: core/convert.cpp:99
+#, fuzzy
+#| msgid "Creation"
+msgctxt "key capability"
+msgid "Certification"
+msgstr "Құрылған кезі"
+
+#: core/convert.cpp:101
+msgctxt "used to join a list of key types, e.g. 'encryption, signature'"
+msgid ", "
+msgstr ""
 
 #: core/KGpgGroupNode.cpp:164
 #, kde-format
@@ -1249,7 +1280,7 @@ msgctxt "no email address"
 msgid "none"
 msgstr "жоқ"
 
-#: keyinfodialog.cpp:204
+#: keyinfodialog.cpp:205
 msgid ""
 "<qt>The left part is the algorithm used by the <b>signature</b> key. The "
 "right part is the algorithm used by the <b>encryption</b> key.</qt>"
@@ -1257,12 +1288,12 @@ msgstr ""
 "<qt>Сол жақта <b>қолтаңбалау</b> кілтін  қолданатын алгоритмі. Оң жақта "
 "<b>шифрлау</b> кілтін қолданатын алгоритмі.</qt>"
 
-#: keyinfodialog.cpp:207
+#: keyinfodialog.cpp:208
 msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "Шектелмеген"
 
-#: keyinfodialog.cpp:213
+#: keyinfodialog.cpp:214
 msgid ""
 "<qt>The left part is the size of the <b>signature</b> key. The right part is "
 "the size of the <b>encryption</b> key.</qt>"
@@ -1270,33 +1301,33 @@ msgstr ""
 "<qt>Сол жақта <b>қолтаңбалау</b> кілттің өлшемі. Оң жақта <b>шифрлау</b> "
 "кілттің өлшемі.</qt>"
 
-#: keyinfodialog.cpp:218
+#: keyinfodialog.cpp:219
 msgctxt "no key comment"
-msgid "none"
-msgstr "жоқ"
+msgid "<em>none</em>"
+msgstr ""
 
-#: keyinfodialog.cpp:312
+#: keyinfodialog.cpp:316
 msgid "Passphrase for the key was changed"
 msgstr "Кілттің паролі өзгертілген"
 
-#: keyinfodialog.cpp:315
+#: keyinfodialog.cpp:319
 msgid "Bad old passphrase, the passphrase for the key was not changed"
 msgstr "Ескі паролі дұрыс емес, кілттің паролі өзгертілген жоқ"
 
-#: keyinfodialog.cpp:315
+#: keyinfodialog.cpp:319
 msgid "Could not change passphrase"
 msgstr "Паролі өзгертілмеді"
 
-#: keyinfodialog.cpp:320
+#: keyinfodialog.cpp:324
 msgid "KGpg was unable to change the passphrase."
 msgstr "KGpg парольді өзгерте алмады."
 
-#: keyinfodialog.cpp:356
+#: keyinfodialog.cpp:360
 msgid "Changing key properties failed."
 msgstr "Кілт қасиеттерін өзгерту жаңылысы."
 
 #. i18n: ectx: property (title), widget (QGroupBox, gr_properties)
-#: keyinfodialog.cpp:356 kgpgKeyInfo.ui:37
+#: keyinfodialog.cpp:360 kgpgKeyInfo.ui:37
 msgid "Key properties"
 msgstr "Кілттің қасиеттері"
 
@@ -2784,7 +2815,7 @@ msgid "Commen&t (optional):"
 msgstr "Түсіні&ктеме (міндетті емес):"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_expiration)
-#: kgpgkeygenerate.cpp:66 kgpgKeyInfo.ui:136
+#: kgpgkeygenerate.cpp:66 kgpgKeyInfo.ui:139
 msgid "Expiration:"
 msgstr "Мерзімі:"
 
@@ -2870,47 +2901,52 @@ msgid "Comment:"
 msgstr "Түсініктемесі:"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_creation)
-#: kgpgKeyInfo.ui:119
+#: kgpgKeyInfo.ui:122
 msgid "Creation:"
 msgstr "Құрылған кезі:"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_trust)
-#: kgpgKeyInfo.ui:153
+#: kgpgKeyInfo.ui:156
 msgid "Trust:"
 msgstr "Сенімділігі:"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_owtrust)
-#: kgpgKeyInfo.ui:160
+#: kgpgKeyInfo.ui:163
 msgid "Owner trust:"
 msgstr "Иесінің сенімділігі:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: kgpgKeyInfo.ui:183
+#: kgpgKeyInfo.ui:186
 msgid "I do not know"
 msgstr "Білмеймін"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: kgpgKeyInfo.ui:188
+#: kgpgKeyInfo.ui:191
 msgid "I do NOT trust"
 msgstr "Сенім ЖОҚ"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_algorithm)
-#: kgpgKeyInfo.ui:211
+#: kgpgKeyInfo.ui:214
 msgid "Algorithm:"
 msgstr "Алгоритмі:"
 
 #. i18n: ectx: property (text), widget (QLabel, tl_length)
-#: kgpgKeyInfo.ui:228
+#: kgpgKeyInfo.ui:231
 msgid "Length:"
 msgstr "Ұзындығы:"
 
+#. i18n: ectx: property (text), widget (QLabel, tl_caps)
+#: kgpgKeyInfo.ui:248
+msgid "Capabilities"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, gr_photo)
-#: kgpgKeyInfo.ui:277
+#: kgpgKeyInfo.ui:309
 msgid "Photo"
 msgstr "Фото"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_photo)
-#: kgpgKeyInfo.ui:297
+#: kgpgKeyInfo.ui:329
 msgid ""
 "<qt><b>Photo:</b><p>A photo can be included with a public key for extra "
 "security. The photo can be used as an additional method of authenticating "
@@ -2922,27 +2958,27 @@ msgstr ""
 "жалғыз түрі ретінде қолдануға болмайды.</p></qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, m_photo)
-#: kgpgKeyInfo.ui:306
+#: kgpgKeyInfo.ui:338
 msgid "No Photo"
 msgstr "Фото жоқ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_disable)
-#: kgpgKeyInfo.ui:343
+#: kgpgKeyInfo.ui:375
 msgid "Disable key"
 msgstr "Кілтті бұғаттау"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_expirationbtn)
-#: kgpgKeyInfo.ui:350
+#: kgpgKeyInfo.ui:382
 msgid "Change Expiration"
 msgstr "Мерзімін өзгерту"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_password)
-#: kgpgKeyInfo.ui:357
+#: kgpgKeyInfo.ui:389
 msgid "Change Passphrase"
 msgstr "Паролін өзгерту"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gr_fingerprint)
-#: kgpgKeyInfo.ui:383
+#: kgpgKeyInfo.ui:415
 msgid "Fingerprint"
 msgstr "Бақылау тізбегі"
 
@@ -3892,6 +3928,10 @@ msgstr "<qt>Қолтаңбасы дұрыс, бірақ кілтіне сені�
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "Қолтаңбасы дұрыс және кілтіне шексіз сенім артылған"
+
+#~ msgctxt "no key comment"
+#~ msgid "none"
+#~ msgstr "жоқ"
 
 #~ msgid "Unable to contact the address book. Please check your installation."
 #~ msgstr "Адрес кітапшасы табылмады. Орнатылғанын тексеріңіз."
