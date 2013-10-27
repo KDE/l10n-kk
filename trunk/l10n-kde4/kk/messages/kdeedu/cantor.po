@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-24 01:33+0000\n"
+"POT-Creation-Date: 2013-10-27 01:28+0000\n"
 "PO-Revision-Date: 2013-09-25 05:35+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -103,6 +103,20 @@ msgstr "x"
 #: assistants/differentiate/differentiatedlg.ui:47
 msgid "Times: "
 msgstr "Еселігі: "
+
+#. i18n: ectx: Menu (import_package)
+#: assistants/importpackage/cantor_import_package_assistant.rc:4
+msgid "&Package"
+msgstr ""
+
+#: assistants/importpackage/importpackageassistant.cpp:46
+msgid "Import Package"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: assistants/importpackage/importpackagedlg.ui:17
+msgid "Package:"
+msgstr ""
 
 #: assistants/integrate/integrateassistant.cpp:44
 msgid "Integrate"
@@ -294,10 +308,12 @@ msgstr "Maxima орындалатын файлының жолы"
 
 #. i18n: ectx: label, entry (integratePlots), group (RBackend)
 #. i18n: ectx: label, entry (integratePlots), group (MaximaBackend)
+#. i18n: ectx: label, entry (integratePlots), group (PythonBackend)
 #. i18n: ectx: label, entry (integratePlots), group (ScilabBackend)
 #. i18n: ectx: label, entry (integratePlots), group (OctaveBackend)
 #: backends/maxima/maximabackend.kcfg:14 backends/octave/octavebackend.kcfg:14
-#: backends/R/rserver/rserver.kcfg:9 backends/scilab/scilabbackend.kcfg:15
+#: backends/python2/python2backend.kcfg:14 backends/R/rserver/rserver.kcfg:9
+#: backends/scilab/scilabbackend.kcfg:14
 msgid "Integrate Plots into the Worksheet"
 msgstr "Графиктер құжатқа ендірілсін"
 
@@ -355,7 +371,8 @@ msgstr "Maxima қайда:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_integratePlots)
 #: backends/maxima/settings.ui:31 backends/octave/settings.ui:31
-#: backends/R/settings.ui:17 backends/scilab/settings.ui:31
+#: backends/python2/settings.ui:31 backends/R/settings.ui:17
+#: backends/scilab/settings.ui:31
 msgid "Integrate Plots in Worksheet"
 msgstr "Графиктер құжатқа ендірілсін"
 
@@ -401,6 +418,32 @@ msgstr "*.m|Octave скрипт файлы"
 #: backends/octave/settings.ui:19
 msgid "Path to Octave:"
 msgstr "Octave қайда:"
+
+#: backends/python2/python2backend.cpp:91
+msgctxt "the url to the documentation Python 2"
+msgid "http://docs.python.org/2/"
+msgstr ""
+
+#: backends/python2/python2backend.cpp:96
+msgid ""
+"<p>Python is a remarkably powerful dynamic programming language that is used "
+"in a wide variety of application domains.There are several Python packages "
+"to scientific programming.</p><p>This backend supports Python 2.</p>"
+msgstr ""
+
+#. i18n: ectx: label, entry (Path), group (PythonBackend)
+#: backends/python2/python2backend.kcfg:10
+#, fuzzy
+#| msgid "Path to scilab-adv-cli command:"
+msgid "Path to python command"
+msgstr "scilab-adv-cli командасының жолы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: backends/python2/settings.ui:19
+#, fuzzy
+#| msgid "Path to scilab-adv-cli command:"
+msgid "Path to python2 command:"
+msgstr "scilab-adv-cli командасының жолы:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, QalculatePlotAssistantBase)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:14
@@ -1474,16 +1517,22 @@ msgstr "Sage жегу жаңылысы"
 msgid "Path to Sage:"
 msgstr "Sage қайда:"
 
-#: backends/scilab/scilabbackend.cpp:85
+#: backends/scilab/scilabbackend.cpp:89
 msgctxt ""
 "the url to the documentation of Scilab, please check if there is a "
 "translated version and use the correct url"
 msgid "http://www.scilab.org/support/documentation"
 msgstr "http://www.scilab.org/support/documentation"
 
-#: backends/scilab/scilabbackend.cpp:90
+#: backends/scilab/scilabbackend.cpp:94
+#, fuzzy
+#| msgid ""
+#| "<p><b>Warning:</b> this backend works only with Scilab version 5.4 or "
+#| "later</p><p>Scilab is a free software, cross-platform numerical "
+#| "computational package and a high-level, numerically oriented programming "
+#| "language.</p>Scilab is distributed under CeCILL license (GPL compatible)"
 msgid ""
-"<p><b>Warning:</b> this backend works only with Scilab version 5.4 or later</"
+"<p><b>Warning:</b> this backend works only with Scilab version 5.5 or later</"
 "p><p>Scilab is a free software, cross-platform numerical computational "
 "package and a high-level, numerically oriented programming language.</"
 "p>Scilab is distributed under CeCILL license (GPL compatible)"
@@ -1982,7 +2031,9 @@ msgid "Filipe Saraiva"
 msgstr "Filipe Saraiva"
 
 #: main.cpp:45
-msgid "Scilab backend"
+#, fuzzy
+#| msgid "Scilab backend"
+msgid "Scilab and Python backends"
 msgstr "Scilab орындауышы бағдарламасы"
 
 #: main.cpp:46

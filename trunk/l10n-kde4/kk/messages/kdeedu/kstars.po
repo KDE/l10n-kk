@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-25 01:27+0000\n"
+"POT-Creation-Date: 2013-10-27 01:30+0000\n"
 "PO-Revision-Date: 2013-10-27 06:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1350,15 +1350,15 @@ msgstr "Түрі бойынша сүзгілеу:"
 msgid "Set Coordinates Manually"
 msgstr "Координаттарды қолмен келтіру"
 
-#: dialogs/focusdialog.cpp:88 ekos/align.cpp:293 tools/flagmanager.cpp:164
+#: dialogs/focusdialog.cpp:88 ekos/align.cpp:361 tools/flagmanager.cpp:164
 msgid "The Right Ascension value must be between 0.0 and 24.0."
 msgstr "Тура көтерілу 0,0 мен 24,0 аралығында болуы тиіс."
 
-#: dialogs/focusdialog.cpp:90 ekos/align.cpp:295 tools/flagmanager.cpp:166
+#: dialogs/focusdialog.cpp:90 ekos/align.cpp:363 tools/flagmanager.cpp:166
 msgid "The Declination value must be between -90.0 and 90.0."
 msgstr "Еңістік -90.0 мен 90.0 аралығында болуы тиіс."
 
-#: dialogs/focusdialog.cpp:92 dialogs/focusdialog.cpp:114 ekos/align.cpp:298
+#: dialogs/focusdialog.cpp:92 dialogs/focusdialog.cpp:114 ekos/align.cpp:366
 #: tools/flagmanager.cpp:168
 msgid "Invalid Coordinate Data"
 msgstr "Координатасы дұрыс келтірілмеген"
@@ -2447,92 +2447,110 @@ msgstr ""
 "параметрледі келтіруге көмектеседі.</p><p></p><p>Бастау үшін <span style=\" "
 "font-weight:600;\">Келесі</span> дегенді басыңыз.</p></body></html>"
 
-#: ekos/align.cpp:79 ekos/focus.cpp:71
+#: ekos/align.cpp:69 ekos/focus.cpp:71
 msgid "Idle."
 msgstr "Іссіз."
 
-#: ekos/align.cpp:158
-#| msgid ""
-#| "Sorry. KStars failed to detect any attached telescopes, please check your "
-#| "settings and try again."
+#: ekos/align.cpp:170
 msgid ""
 "Telescope aperture and focal length are missing. Please check your driver "
 "settings and try again."
 msgstr ""
-"Телескоптың апертурасы мен тоғыс қашықтығы көрсетілмеген. "
-"Драйверінің параметрлерін тексеріп, қайталап көріңіз."
+"Телескоптың апертурасы мен тоғыс қашықтығы көрсетілмеген. Драйверінің "
+"параметрлерін тексеріп, қайталап көріңіз."
 
-#: ekos/align.cpp:177
-#| msgid "Telescope driver is missing."
+#: ekos/align.cpp:189
 msgid "Telescope does not support syncing."
 msgstr "Телескоп қадамдастыруды қолдамайды."
 
-#: ekos/align.cpp:218
+#: ekos/align.cpp:230
 msgid ""
 "CCD pixel size is missing. Please check your driver settings and try again."
 msgstr ""
-"Телескоптың CCD пикселдер өлшемі көрсетілмеген. "
-"Драйверінің параметрлерін тексеріп, қайталап көріңіз."
+"Телескоптың CCD пикселдер өлшемі көрсетілмеген. Драйверінің параметрлерін "
+"тексеріп, қайталап көріңіз."
 
-#: ekos/align.cpp:308
-#| msgid "Invalid file"
+#: ekos/align.cpp:307
+#, kde-format
+msgid ""
+"Index file %1 is missing. Astrometry.net would not be able to adequately "
+"solve plates until you install the missing index files. Download the index "
+"files from http://www.astrometry.net"
+msgstr ""
+
+#: ekos/align.cpp:308 ekos/align.cpp:311
+msgid "Missing index files"
+msgstr ""
+
+#: ekos/align.cpp:308 ekos/align.cpp:311
+#, fuzzy
+#| msgid "Don't ask again"
+msgid "Do not show again"
+msgstr "Ендігәрі сұралмасын"
+
+#: ekos/align.cpp:310
+#, kde-format
+msgid ""
+"Index files %1 to %2 are missing. Astrometry.net would not be able to "
+"adequately solve plates until you install the missing index files. Download "
+"the index files from http://www.astrometry.net"
+msgstr ""
+
+#: ekos/align.cpp:376
 msgid "Invalid radius value"
 msgstr "Радиус мәні жарамсыз"
 
-#: ekos/align.cpp:356 ekos/focus.cpp:215 ekos/guide.cpp:224
+#: ekos/align.cpp:424 ekos/focus.cpp:215 ekos/guide.cpp:224
 msgid "Error: Lost connection to CCD."
 msgstr "Қате: CCD-мен байланыс үзілді."
 
-#: ekos/align.cpp:374 ekos/capture.cpp:487 ekos/focus.cpp:229
+#: ekos/align.cpp:442 ekos/capture.cpp:487 ekos/focus.cpp:229
 #: ekos/guide/rcalibration.cpp:679
 msgid "Capturing image..."
 msgstr "Кескінді түсіріп алу..."
 
-#: ekos/align.cpp:387
-#| msgid "Image captured..."
+#: ekos/align.cpp:455
 msgid "Image received."
 msgstr "Кескін қабылданды."
 
-#: ekos/align.cpp:420
-#| msgid "Starting on:"
+#: ekos/align.cpp:484
 msgid "Starting solver..."
 msgstr "Есеп шығарғышын жегу..."
 
-#: ekos/align.cpp:441
-#| msgid "Capture Image"
+#: ekos/align.cpp:505
 msgid "Capture aborted."
 msgstr "Түсіріп алу доғарылды."
 
-#: ekos/align.cpp:446
+#: ekos/align.cpp:510
 #, kde-format
 msgid "Solver aborted after %1 second."
 msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғарылды"
 
-#: ekos/align.cpp:460
+#: ekos/align.cpp:524
 msgid "Solver failed. Try again."
 msgstr "Есеп шығарғыш жаңылысы. Қайталап көріңіз."
 
-#: ekos/align.cpp:479
+#: ekos/align.cpp:543
 msgid "WCS header missing or corrupted. Solver failed."
 msgstr ""
-"Дүниежүзлік координат жүйесінің айдары жоқ не бүлінген. "
-"Есеп шығарғыш жаңылды."
+"Дүниежүзлік координат жүйесінің айдары жоқ не бүлінген. Есеп шығарғыш "
+"жаңылды."
 
-#: ekos/align.cpp:517
+#: ekos/align.cpp:581
 #, kde-format
 msgid "Solver completed in %1 second."
 msgid_plural "Solver completed in %1 seconds."
 msgstr[0] "Есеп %1 секундта шығарылды."
 
-#: ekos/align.cpp:543 ekos/capture.cpp:563 ekos/ekosmanager.cpp:1032
-#: ekos/focus.cpp:750 ekos/guide.cpp:289
+#: ekos/align.cpp:607 ekos/capture.cpp:563 ekos/ekosmanager.cpp:1032
+#: ekos/focus.cpp:758 ekos/guide.cpp:289
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: ekos/align.cpp:586
+#: ekos/align.cpp:650
 #, kde-format
 msgid ""
 "Slew complete. Please adjust your mount's' azimuth knob %1 until the target "
@@ -2541,142 +2559,130 @@ msgstr ""
 "Бұралу бітті. Қондырғының %1 азимут тұтқасын, нысанды шолу өрісінің ортасына "
 "келтіріп, бұраңыз."
 
-#: ekos/align.cpp:587
-#| msgctxt "City in Alaska USA"
-#| msgid "Seward"
+#: ekos/align.cpp:651
 msgid "eastward"
 msgstr "шығысқа"
 
-#: ekos/align.cpp:587
-#| msgctxt "City in Alaska USA"
-#| msgid "Seward"
+#: ekos/align.cpp:651
 msgid "westward"
 msgstr "батысқа"
 
-#: ekos/align.cpp:614
+#: ekos/align.cpp:678
 #, kde-format
 msgid ""
 "Slew complete. Please %1 the altitude knob on your mount until the target is "
 "in the center of the view."
 msgstr ""
-"Бұралу бітті. Қондырғының %1 биіктік тұтқасын, нысанды шолу өрісінің ортасына "
-"келтіріп, бұраңыз."
+"Бұралу бітті. Қондырғының %1 биіктік тұтқасын, нысанды шолу өрісінің "
+"ортасына келтіріп, бұраңыз."
 
-#: ekos/align.cpp:615
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "Power"
+#: ekos/align.cpp:679
 msgid "lower"
 msgstr "төменге"
 
-#: ekos/align.cpp:615
+#: ekos/align.cpp:679
 msgid "raise"
 msgstr "жоғарға"
 
-#: ekos/align.cpp:648
+#: ekos/align.cpp:715
 msgid "Syncing successful."
 msgstr "Қадамдастыру сәтті өтті."
 
-#: ekos/align.cpp:650
+#: ekos/align.cpp:717
 msgid "Syncing failed."
 msgstr "Қадамдастыру жаңылды."
 
-#: ekos/align.cpp:661
+#: ekos/align.cpp:728
 msgid "Slewing to target."
 msgstr "Нысанға бұралу."
 
-#: ekos/align.cpp:682
+#: ekos/align.cpp:749
 msgid "Processing solution for polar alignment..."
 msgstr "Полярлық дәлдеу шешімін іздеу..."
 
-#: ekos/align.cpp:711
-#| msgid "south"
+#: ekos/align.cpp:778
 msgid "southern"
 msgstr "оңтүстік"
 
-#: ekos/align.cpp:711
-#| msgid "north"
+#: ekos/align.cpp:778
 msgid "northern"
 msgstr "солтүстік"
 
-#: ekos/align.cpp:719
+#: ekos/align.cpp:786
 #, kde-format
-#| msgid "Point the telescope at the highlighted object in the list"
 msgid "Point the telescope at the %1 meridian. Press continue when ready."
-msgstr ""
-"Телескопты %1 меридианына көздеу. Дайын болғанда жалғастыруды "
-"басыңыз."
+msgstr "Телескопты %1 меридианына көздеу. Дайын болғанда жалғастыруды басыңыз."
 
-#: ekos/align.cpp:720 ekos/align.cpp:804
+#: ekos/align.cpp:787 ekos/align.cpp:871
 msgid "Polar Alignment Measurement"
 msgstr "Полярлық дәлдеу өлшемі"
 
-#: ekos/align.cpp:721 ekos/align.cpp:805
+#: ekos/align.cpp:788 ekos/align.cpp:872
 msgid "Don't ask again"
 msgstr "Ендігәрі сұралмасын"
 
-#: ekos/align.cpp:724
+#: ekos/align.cpp:791
 msgid "Solving first frame near the meridian."
 msgstr "Меридианның маңайында бірінші кадрды есептеу."
 
-#: ekos/align.cpp:749 ekos/align.cpp:835
+#: ekos/align.cpp:816 ekos/align.cpp:902
 msgid "Slewing 30 arcminutes in RA..."
 msgstr "ТК бойынша 30 бұрыш минутқа бұралу..."
 
-#: ekos/align.cpp:755
+#: ekos/align.cpp:822
 msgid "Solving second frame near the meridian."
 msgstr "Меридианның маңайында екінші кадрды есептеу."
 
-#: ekos/align.cpp:766
+#: ekos/align.cpp:833
 msgid "Calculating azimuth alignment error..."
 msgstr "Азимут дәлдігінің қатесін есептеу..."
 
-#: ekos/align.cpp:778 ekos/align.cpp:864
+#: ekos/align.cpp:845 ekos/align.cpp:931
 msgid "Slewing back to original position..."
 msgstr "Бастапқы орнына қайтып бұралу..."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:795 tools/arglooktoward.ui:62
+#: ekos/align.cpp:862 tools/arglooktoward.ui:62
 msgid "east"
 msgstr "шығыс"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:795 tools/arglooktoward.ui:82
+#: ekos/align.cpp:862 tools/arglooktoward.ui:82
 msgid "west"
 msgstr "батыс"
 
-#: ekos/align.cpp:803
+#: ekos/align.cpp:870
 #, kde-format
 msgid ""
 "Point the telescope to the %1 with a minimum altitude of 20 degrees. Press "
 "continue when ready."
 msgstr ""
-"Телескопты 20 градустық минималды биіктікке, %1 бағытына көздеу. "
-"Дайын болғанда жалғастыруды басыңыз."
+"Телескопты 20 градустық минималды биіктікке, %1 бағытына көздеу. Дайын "
+"болғанда жалғастыруды басыңыз."
 
-#: ekos/align.cpp:808
+#: ekos/align.cpp:875
 msgid "Solving first frame."
 msgstr "Бірінші кадрды есептеу."
 
-#: ekos/align.cpp:841
+#: ekos/align.cpp:908
 msgid "Solving second frame."
 msgstr "Екінші кадрды есептеу."
 
-#: ekos/align.cpp:851
+#: ekos/align.cpp:918
 msgid "Calculating altitude alignment error..."
 msgstr "Биіктік дәлдігінің қатесін есептеу..."
 
-#: ekos/align.cpp:974 ekos/align.cpp:980
+#: ekos/align.cpp:1041 ekos/align.cpp:1047
 #, kde-format
-#| msgid "1"
 msgid "%1"
 msgstr "%1"
 
-#: ekos/align.cpp:974 ekos/align.cpp:980
+#: ekos/align.cpp:1041 ekos/align.cpp:1047
 #, kde-format
 msgid "%1° %2"
 msgstr "%1° %2"
 
-#: ekos/align.cpp:1012 ekos/align.cpp:1042
+#: ekos/align.cpp:1079 ekos/align.cpp:1106
 msgid ""
 "Slewing to calibration position, please wait until telescope is finished "
 "slewing."
@@ -2691,7 +2697,6 @@ msgstr "Басқару"
 
 #. i18n: ectx: property (text), widget (QPushButton, solveB)
 #: ekos/align.ui:32
-#| msgid "Capture Image"
 msgid "Capture && Solve"
 msgstr "Қармау және есептеу"
 
@@ -2714,22 +2719,17 @@ msgstr "Режімі"
 #. i18n: ectx: property (text), widget (QRadioButton, gotoR)
 #. i18n: ectx: property (title), widget (QGroupBox, gotoBox)
 #: ekos/align.ui:78 ekos/align.ui:538
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "GOTO"
 msgid "GOTO"
 msgstr "ӨТУ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, polarR)
 #. i18n: ectx: property (title), widget (QGroupBox, alignmentBox)
 #: ekos/align.ui:91 ekos/align.ui:602
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "Alignment"
 msgid "Polar Alignment"
 msgstr "Полярлық дәлдеу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: ekos/align.ui:134
-#| msgid "Calibration Options"
 msgid "Plate Solve Options"
 msgstr "Астрометриялық шешім параметрлері"
 
@@ -2743,8 +2743,8 @@ msgstr "CCD:"
 #: ekos/align.ui:157
 msgid "estimated RA of target center to limit the solver's search area"
 msgstr ""
-"көздеген нүктенің болжамды ТК мәні (есеп шығарғышқа іздеу аумағын "
-"шектеу үшін)"
+"көздеген нүктенің болжамды ТК мәні (есеп шығарғышқа іздеу аумағын шектеу "
+"үшін)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -2772,8 +2772,8 @@ msgstr "Экспозиция:"
 #: ekos/align.ui:192
 msgid "estimated DEC of target center to limit the solver's search area"
 msgstr ""
-"көздеген нүктенің болжамды Еңістігі (есеп шығарғышқа іздеу аумағын "
-"шектеу үшін)"
+"көздеген нүктенің болжамды Еңістігі (есеп шығарғышқа іздеу аумағын шектеу "
+"үшін)"
 
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
@@ -2795,8 +2795,6 @@ msgstr "сек"
 
 #. i18n: ectx: property (text), widget (QLabel, label_17)
 #: ekos/align.ui:242
-#| msgctxt "City in Quebec Canada"
-#| msgid "Radisson"
 msgid "Radius:"
 msgstr "Радиусы:"
 
@@ -2807,7 +2805,6 @@ msgstr "Есеп шығарғыш іздейтін блжамды ТК мен Е
 
 #. i18n: ectx: property (text), widget (QLineEdit, radiusBox)
 #: ekos/align.ui:261
-#| msgid "0"
 msgid "30"
 msgstr "30"
 
@@ -2827,7 +2824,6 @@ msgstr "ТК және ЕҢС мәндерін өшіріп, есеп шығар�
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: ekos/align.ui:344
-#| msgid "Options"
 msgid "Options:"
 msgstr "Параметрлері:"
 
@@ -2838,7 +2834,6 @@ msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: ekos/align.ui:395
-#| msgid "Horizontal Coordinates"
 msgid "Solution Coordinates"
 msgstr "Шешім координаттары"
 
@@ -2866,7 +2861,6 @@ msgstr "Солтүс. Оңтүстігі"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
 #: ekos/align.ui:474
-#| msgid "Select Input Coordinates"
 msgid "Telescope Coordinates"
 msgstr "Телескоптың координатары"
 
@@ -2877,14 +2871,11 @@ msgstr "Шешім табылған соң қай амалды істеу кер
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, syncR)
 #: ekos/align.ui:544
-#| msgid "Display the telescope position on the sky map"
 msgid "Sync the telescope to the solution coordinates"
 msgstr "Телескопты шешім координаттармен қадамдастыру"
 
 #. i18n: ectx: property (text), widget (QRadioButton, syncR)
 #: ekos/align.ui:550
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "Sync"
 msgid "Sync"
 msgstr "Қадамдастыру"
 
@@ -2895,7 +2886,6 @@ msgstr "Телескопты көздеген координаттарға бұ�
 
 #. i18n: ectx: property (text), widget (QRadioButton, slewR)
 #: ekos/align.ui:566
-#| msgid "Next Target >"
 msgid "Slew to Target"
 msgstr "Көздегенге бұрау"
 
@@ -2906,28 +2896,21 @@ msgstr "Тек есептеп шешу"
 
 #. i18n: ectx: property (text), widget (QRadioButton, nothingR)
 #: ekos/align.ui:579
-#| msgid "nothing"
 msgid "Nothing"
 msgstr "Ештеңе"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: ekos/align.ui:612
-#| msgctxt "Map projection method"
-#| msgid "Hemisphere"
 msgid "Hemisphere:"
 msgstr "Жартышарлығы:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, hemisphereCombo)
 #: ekos/align.ui:620
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "North"
 msgid "Northern"
 msgstr "Солтүстік"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, hemisphereCombo)
 #: ekos/align.ui:625
-#| msgctxt "City in Indiana USA"
-#| msgid "South Bend"
 msgid "Southern"
 msgstr "Оңтүстік"
 
@@ -2937,38 +2920,31 @@ msgid ""
 "Direction of the mount when measuring altitude error. It is either east or "
 "west of the meridian"
 msgstr ""
-"Биіктік қатесін өлшегендегі қондырғының бағыты. Ол меридианның "
-"шығысы не батысы"
+"Биіктік қатесін өлшегендегі қондырғының бағыты. Ол меридианның шығысы не "
+"батысы"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #: ekos/align.ui:639
-#| msgid "Altitude at noon:"
 msgid "Altitude Direction:"
 msgstr "Биіктік бағыты:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, altDirCombo)
 #: ekos/align.ui:647
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "East"
 msgid "East"
 msgstr "Шығыс"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, altDirCombo)
 #: ekos/align.ui:652
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "West"
 msgid "West"
 msgstr "Батыс"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: ekos/align.ui:671
-#| msgid "Error"
 msgid "Az Error:"
 msgstr "Азимут қатесі:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: ekos/align.ui:685
-#| msgid "Write Error"
 msgid "Alt Error:"
 msgstr "Биіктік қатесі:"
 
@@ -3047,7 +3023,7 @@ msgstr "секунд қалды"
 
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture.ui:39 ekos/ekosmanager.cpp:1064 ekos/opsekos.ui:157
+#: ekos/capture.ui:39 ekos/ekosmanager.cpp:1064 ekos/opsekos.ui:161
 msgid "CCD"
 msgstr "CCD"
 
@@ -3207,7 +3183,7 @@ msgstr "Белсенді сүзгі орны"
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: attribute (title), widget (QWidget, Filter)
 #: ekos/capture.ui:396 ekos/capture.ui:481 ekos/capture.ui:680
-#: ekos/opsekos.ui:178 oal/equipmentwriter.ui:553
+#: ekos/opsekos.ui:182 oal/equipmentwriter.ui:553
 msgid "Filter"
 msgstr "Сүзгі"
 
@@ -3369,8 +3345,6 @@ msgid "%1 is offline."
 msgstr "%1 желіден тыс."
 
 #: ekos/ekosmanager.cpp:1076
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "Alignment"
 msgid "Alignment"
 msgstr "Дәлдеу"
 
@@ -3518,29 +3492,29 @@ msgstr "Ішке қарай тоғыстау..."
 msgid "Focusing outward..."
 msgstr "Сыртқа қарай тоғыстау..."
 
-#: ekos/focus.cpp:325
+#: ekos/focus.cpp:333
 msgid "FITS received. No stars detected."
 msgstr "FITS қабылданды. Жұлдыздар табылған жоқ."
 
-#: ekos/focus.cpp:360
+#: ekos/focus.cpp:368
 #, kde-format
 msgid "FITS received. HFR %1 @ %2. Delta (%3%)"
 msgstr "FITS қабылданды. HFR %1 @ %2. Дельта (%3%)"
 
-#: ekos/focus.cpp:362
+#: ekos/focus.cpp:370
 #, kde-format
 msgid "FITS received. HFR %1 @ %2."
 msgstr "FITS қабылданды. HFR %1 @ %2."
 
-#: ekos/focus.cpp:366
+#: ekos/focus.cpp:374
 msgid "Autofocus failed to reach proper focus. Try increasing tolerance value."
 msgstr "Автотоғыстау керек тоғысқа жетпеді. Ауытқу шегін үлкейтіп көріңіз."
 
-#: ekos/focus.cpp:374 ekos/focus.cpp:592
+#: ekos/focus.cpp:382 ekos/focus.cpp:600
 msgid "No stars detected, capturing again..."
 msgstr "Жұлдыздар табылған жоқ, қайталап көру..."
 
-#: ekos/focus.cpp:437
+#: ekos/focus.cpp:445
 msgid ""
 "Change in HFR is too small. Try increasing the step size or decreasing the "
 "tolerance."
@@ -3548,29 +3522,29 @@ msgstr ""
 "HFR тым аз өзгерді. Аттам өлшемін үлкейтіп немесе ауытқу шегін азайтып "
 "көріңіз."
 
-#: ekos/focus.cpp:439 ekos/focus.cpp:547 ekos/focus.cpp:607 ekos/focus.cpp:657
+#: ekos/focus.cpp:447 ekos/focus.cpp:555 ekos/focus.cpp:615 ekos/focus.cpp:665
 msgid "Autofocus complete."
 msgstr "Автотоғыстыру бітті."
 
-#: ekos/focus.cpp:555
+#: ekos/focus.cpp:563
 msgid "Deadlock reached. Please try again with different settings."
 msgstr "Мүлдем бұғатталды. Басқаша баптап көріңіз."
 
-#: ekos/focus.cpp:581
+#: ekos/focus.cpp:589
 #, kde-format
 msgid "FITS received. HFR %1. Delta (%2%)"
 msgstr "FITS қабылданды. HFR %1. Дельта (%2%)"
 
-#: ekos/focus.cpp:585
+#: ekos/focus.cpp:593
 msgid ""
 "Autofocus failed to reach proper focus. Try adjusting the tolerance value."
 msgstr "Автотоғыстау керек тоғысқа жетпеді. Ауытқу шегін лайықтап көріңіз."
 
-#: ekos/focus.cpp:719 ekos/focus.cpp:737
+#: ekos/focus.cpp:727 ekos/focus.cpp:745
 msgid "Focuser error, check INDI panel."
 msgstr "Тоғыс келтіргіш қатесі, INDI басқару панелін қараңыз."
 
-#: ekos/focus.cpp:769
+#: ekos/focus.cpp:777
 msgid "Starting continuous exposure..."
 msgstr "Ұзақ экспозицияны бастау..."
 
@@ -3673,7 +3647,6 @@ msgstr "Автодәлдеу басталды."
 
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_StartStop)
 #: ekos/guide/guider.cpp:373 ekos/guide/guider.ui:467
-#| msgid "Start Focus"
 msgid "Start Autoguide"
 msgstr "Автодәлдеуді бастау"
 
@@ -4051,10 +4024,17 @@ msgstr "Қосылымда"
 msgid "Always load defaults"
 msgstr "Әрқашан әдеттегісін жүктеу"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: ekos/opsekos.ui:135
+#, fuzzy
+#| msgid "Remote Server"
+msgid "Remote Devices"
+msgstr "Қашық сервері"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_useDeviceSource)
-#: ekos/opsekos.ui:141 indi/devmanager.ui:189 indi/drivermanager.ui:185
+#: ekos/opsekos.ui:145 indi/devmanager.ui:189 indi/drivermanager.ui:185
 #: indi/opsindi.ui:366
 msgid "Device"
 msgstr "Құрылғы"
@@ -4062,30 +4042,42 @@ msgstr "Құрылғы"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: attribute (title), widget (QWidget, Scope)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TelescopeCheck)
-#: ekos/opsekos.ui:150 oal/equipmentwriter.ui:30
+#: ekos/opsekos.ui:154 oal/equipmentwriter.ui:30
 #: tools/whatsinteresting/wiequipsettings.ui:50
 msgid "Telescope"
 msgstr "Телескоп"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: ekos/opsekos.ui:164
+#: ekos/opsekos.ui:168
 msgid "Guider"
 msgstr "Дәлдегіш"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: ekos/opsekos.ui:171
+#: ekos/opsekos.ui:175
 msgid "Focuser"
 msgstr "Тоғыс келтіргіші"
 
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: ekos/opsekos.ui:185
+#: ekos/opsekos.ui:189
 msgid "Auxiliary"
 msgstr "Жабдық"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: ekos/opsekos.ui:198
+#: ekos/opsekos.ui:202
 msgid "Remote Name"
 msgstr "Қашық атауы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ekos/opsekos.ui:275
+msgid "Astrometry.net"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: ekos/opsekos.ui:281
+#, fuzzy
+#| msgid "Default FITS directory:"
+msgid "Data directory:"
+msgstr "Әдетті FITS қапшығы:"
 
 #. i18n: ectx: Menu (file)
 #: fitsviewer.rc:5 kstarsui-indi.rc:5 kstarsui-win.rc:5 kstarsui.rc:5
@@ -8048,7 +8040,6 @@ msgstr ""
 
 #. i18n: ectx: label, entry (AlignExposure), group (Ekos)
 #: kstars.kcfg:1244
-#| msgid "Default Focuser exposure value"
 msgid "Default alignment exposure value"
 msgstr "Дәлдегіш экспозициясының әдетті мәні"
 
@@ -8172,6 +8163,16 @@ msgstr "Құрылғы конфигурациясы сәтті қосылымд�
 #: kstars.kcfg:1299
 msgid "Always load device default configuration upon successful connection?"
 msgstr "Құрылғы конфигурациясы сәтті қосылымда әрқашан жүктелсін бе?"
+
+#. i18n: ectx: label, entry (astrometryDataDir), group (Ekos)
+#: kstars.kcfg:1303
+msgid "astrometry.net data directory"
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (astrometryDataDir), group (Ekos)
+#: kstars.kcfg:1304
+msgid "Directory where astrometry.net index files are located."
+msgstr ""
 
 #: kstars_i18n.cpp:2
 msgctxt "Constellation name (optional)"
