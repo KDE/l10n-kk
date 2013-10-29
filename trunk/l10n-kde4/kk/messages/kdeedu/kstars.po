@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-28 01:29+0000\n"
+"POT-Creation-Date: 2013-10-29 01:28+0000\n"
 "PO-Revision-Date: 2013-10-29 04:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1350,15 +1350,15 @@ msgstr "Түрі бойынша сүзгілеу:"
 msgid "Set Coordinates Manually"
 msgstr "Координаттарды қолмен келтіру"
 
-#: dialogs/focusdialog.cpp:88 ekos/align.cpp:361 tools/flagmanager.cpp:164
+#: dialogs/focusdialog.cpp:88 ekos/align.cpp:398 tools/flagmanager.cpp:164
 msgid "The Right Ascension value must be between 0.0 and 24.0."
 msgstr "Тура көтерілу 0,0 мен 24,0 аралығында болуы тиіс."
 
-#: dialogs/focusdialog.cpp:90 ekos/align.cpp:363 tools/flagmanager.cpp:166
+#: dialogs/focusdialog.cpp:90 ekos/align.cpp:400 tools/flagmanager.cpp:166
 msgid "The Declination value must be between -90.0 and 90.0."
 msgstr "Еңістік -90.0 мен 90.0 аралығында болуы тиіс."
 
-#: dialogs/focusdialog.cpp:92 dialogs/focusdialog.cpp:114 ekos/align.cpp:366
+#: dialogs/focusdialog.cpp:92 dialogs/focusdialog.cpp:114 ekos/align.cpp:403
 #: tools/flagmanager.cpp:168
 msgid "Invalid Coordinate Data"
 msgstr "Координатасы дұрыс келтірілмеген"
@@ -2470,27 +2470,37 @@ msgstr ""
 "Телескоптың CCD пикселдер өлшемі көрсетілмеген. Драйверінің параметрлерін "
 "тексеріп, қайталап көріңіз."
 
-#: ekos/align.cpp:307
+#: ekos/align.cpp:268
+#, kde-format
+msgid ""
+"Astrometry configuration file corrupted or missing: %1\n"
+"Please set the configuration file full path in INDI options."
+msgstr ""
+
+#: ekos/align.cpp:292
+msgid "Unable to find data dir in astrometry configuration file."
+msgstr ""
+
+#: ekos/align.cpp:345
 #, kde-format
 msgid ""
 "Index file %1 is missing. Astrometry.net would not be able to adequately "
 "solve plates until you install the missing index files. Download the index "
 "files from http://www.astrometry.net"
 msgstr ""
-"%1 индекс файлы жоқ. Жоқ индекс файлдары орнатылмай Astrometry.net "
-"дұрыс шешімге келе алмайды. http://www.astrometry.net дегеннен индекс "
-"файлдарын жүктеп алыңыз."
+"%1 индекс файлы жоқ. Жоқ индекс файлдары орнатылмай Astrometry.net дұрыс "
+"шешімге келе алмайды. http://www.astrometry.net дегеннен индекс файлдарын "
+"жүктеп алыңыз."
 
-#: ekos/align.cpp:308 ekos/align.cpp:311
+#: ekos/align.cpp:346 ekos/align.cpp:349
 msgid "Missing index files"
 msgstr "Индекс файлдары жоқ"
 
-#: ekos/align.cpp:308 ekos/align.cpp:311
-#| msgid "Don't ask again"
+#: ekos/align.cpp:346 ekos/align.cpp:349
 msgid "Do not show again"
 msgstr "Ендігәрі көрсетілмесін"
 
-#: ekos/align.cpp:310
+#: ekos/align.cpp:348
 #, kde-format
 msgid ""
 "Index files %1 to %2 are missing. Astrometry.net would not be able to "
@@ -2501,61 +2511,61 @@ msgstr ""
 "дұрыс шешімге келе алмайды. http://www.astrometry.net дегеннен индекс "
 "файлдарын жүктеп алыңыз."
 
-#: ekos/align.cpp:376
+#: ekos/align.cpp:413
 msgid "Invalid radius value"
 msgstr "Радиус мәні жарамсыз"
 
-#: ekos/align.cpp:424 ekos/focus.cpp:215 ekos/guide.cpp:224
+#: ekos/align.cpp:461 ekos/focus.cpp:215 ekos/guide.cpp:224
 msgid "Error: Lost connection to CCD."
 msgstr "Қате: CCD-мен байланыс үзілді."
 
-#: ekos/align.cpp:442 ekos/capture.cpp:487 ekos/focus.cpp:229
+#: ekos/align.cpp:479 ekos/capture.cpp:487 ekos/focus.cpp:229
 #: ekos/guide/rcalibration.cpp:679
 msgid "Capturing image..."
 msgstr "Кескінді түсіріп алу..."
 
-#: ekos/align.cpp:455
+#: ekos/align.cpp:492
 msgid "Image received."
 msgstr "Кескін қабылданды."
 
-#: ekos/align.cpp:484
+#: ekos/align.cpp:521
 msgid "Starting solver..."
 msgstr "Есеп шығарғышын жегу..."
 
-#: ekos/align.cpp:505
+#: ekos/align.cpp:542
 msgid "Capture aborted."
 msgstr "Түсіріп алу доғарылды."
 
-#: ekos/align.cpp:510
+#: ekos/align.cpp:547
 #, kde-format
 msgid "Solver aborted after %1 second."
 msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғарылды"
 
-#: ekos/align.cpp:524
+#: ekos/align.cpp:561
 msgid "Solver failed. Try again."
 msgstr "Есеп шығарғыш жаңылысы. Қайталап көріңіз."
 
-#: ekos/align.cpp:543
+#: ekos/align.cpp:580
 msgid "WCS header missing or corrupted. Solver failed."
 msgstr ""
 "Дүниежүзлік координат жүйесінің айдары жоқ не бүлінген. Есеп шығарғыш "
 "жаңылды."
 
-#: ekos/align.cpp:581
+#: ekos/align.cpp:618
 #, kde-format
 msgid "Solver completed in %1 second."
 msgid_plural "Solver completed in %1 seconds."
 msgstr[0] "Есеп %1 секундта шығарылды."
 
-#: ekos/align.cpp:607 ekos/capture.cpp:563 ekos/ekosmanager.cpp:1032
+#: ekos/align.cpp:644 ekos/capture.cpp:563 ekos/ekosmanager.cpp:1032
 #: ekos/focus.cpp:758 ekos/guide.cpp:289
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: ekos/align.cpp:650
+#: ekos/align.cpp:687
 #, kde-format
 msgid ""
 "Slew complete. Please adjust your mount's' azimuth knob %1 until the target "
@@ -2564,15 +2574,15 @@ msgstr ""
 "Бұралу бітті. Қондырғының %1 азимут тұтқасын, нысанды шолу өрісінің ортасына "
 "келтіріп, бұраңыз."
 
-#: ekos/align.cpp:651
+#: ekos/align.cpp:688
 msgid "eastward"
 msgstr "шығысқа"
 
-#: ekos/align.cpp:651
+#: ekos/align.cpp:688
 msgid "westward"
 msgstr "батысқа"
 
-#: ekos/align.cpp:678
+#: ekos/align.cpp:715
 #, kde-format
 msgid ""
 "Slew complete. Please %1 the altitude knob on your mount until the target is "
@@ -2581,82 +2591,82 @@ msgstr ""
 "Бұралу бітті. Қондырғының %1 биіктік тұтқасын, нысанды шолу өрісінің "
 "ортасына келтіріп, бұраңыз."
 
-#: ekos/align.cpp:679
+#: ekos/align.cpp:716
 msgid "lower"
 msgstr "төменге"
 
-#: ekos/align.cpp:679
+#: ekos/align.cpp:716
 msgid "raise"
 msgstr "жоғарға"
 
-#: ekos/align.cpp:715
+#: ekos/align.cpp:752
 msgid "Syncing successful."
 msgstr "Қадамдастыру сәтті өтті."
 
-#: ekos/align.cpp:717
+#: ekos/align.cpp:754
 msgid "Syncing failed."
 msgstr "Қадамдастыру жаңылды."
 
-#: ekos/align.cpp:728
+#: ekos/align.cpp:765
 msgid "Slewing to target."
 msgstr "Нысанға бұралу."
 
-#: ekos/align.cpp:749
+#: ekos/align.cpp:786
 msgid "Processing solution for polar alignment..."
 msgstr "Полярлық дәлдеу шешімін іздеу..."
 
-#: ekos/align.cpp:778
+#: ekos/align.cpp:815
 msgid "southern"
 msgstr "оңтүстік"
 
-#: ekos/align.cpp:778
+#: ekos/align.cpp:815
 msgid "northern"
 msgstr "солтүстік"
 
-#: ekos/align.cpp:786
+#: ekos/align.cpp:823
 #, kde-format
 msgid "Point the telescope at the %1 meridian. Press continue when ready."
 msgstr "Телескопты %1 меридианына көздеу. Дайын болғанда жалғастыруды басыңыз."
 
-#: ekos/align.cpp:787 ekos/align.cpp:871
+#: ekos/align.cpp:824 ekos/align.cpp:908
 msgid "Polar Alignment Measurement"
 msgstr "Полярлық дәлдеу өлшемі"
 
-#: ekos/align.cpp:788 ekos/align.cpp:872
+#: ekos/align.cpp:825 ekos/align.cpp:909
 msgid "Don't ask again"
 msgstr "Ендігәрі сұралмасын"
 
-#: ekos/align.cpp:791
+#: ekos/align.cpp:828
 msgid "Solving first frame near the meridian."
 msgstr "Меридианның маңайында бірінші кадрды есептеу."
 
-#: ekos/align.cpp:816 ekos/align.cpp:902
+#: ekos/align.cpp:853 ekos/align.cpp:939
 msgid "Slewing 30 arcminutes in RA..."
 msgstr "ТК бойынша 30 бұрыш минутқа бұралу..."
 
-#: ekos/align.cpp:822
+#: ekos/align.cpp:859
 msgid "Solving second frame near the meridian."
 msgstr "Меридианның маңайында екінші кадрды есептеу."
 
-#: ekos/align.cpp:833
+#: ekos/align.cpp:870
 msgid "Calculating azimuth alignment error..."
 msgstr "Азимут дәлдігінің қатесін есептеу..."
 
-#: ekos/align.cpp:845 ekos/align.cpp:931
+#: ekos/align.cpp:882 ekos/align.cpp:968
 msgid "Slewing back to original position..."
 msgstr "Бастапқы орнына қайтып бұралу..."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:862 tools/arglooktoward.ui:62
+#: ekos/align.cpp:899 tools/arglooktoward.ui:62
 msgid "east"
 msgstr "шығыс"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, FocusEdit)
-#: ekos/align.cpp:862 tools/arglooktoward.ui:82
+#: ekos/align.cpp:899 tools/arglooktoward.ui:82
 msgid "west"
 msgstr "батыс"
 
-#: ekos/align.cpp:870
+#: ekos/align.cpp:907
 #, kde-format
 msgid ""
 "Point the telescope to the %1 with a minimum altitude of 20 degrees. Press "
@@ -2665,29 +2675,29 @@ msgstr ""
 "Телескопты 20 градустық минималды биіктікке, %1 бағытына көздеу. Дайын "
 "болғанда жалғастыруды басыңыз."
 
-#: ekos/align.cpp:875
+#: ekos/align.cpp:912
 msgid "Solving first frame."
 msgstr "Бірінші кадрды есептеу."
 
-#: ekos/align.cpp:908
+#: ekos/align.cpp:945
 msgid "Solving second frame."
 msgstr "Екінші кадрды есептеу."
 
-#: ekos/align.cpp:918
+#: ekos/align.cpp:955
 msgid "Calculating altitude alignment error..."
 msgstr "Биіктік дәлдігінің қатесін есептеу..."
 
-#: ekos/align.cpp:1041 ekos/align.cpp:1047
+#: ekos/align.cpp:1078 ekos/align.cpp:1084
 #, kde-format
 msgid "%1"
 msgstr "%1"
 
-#: ekos/align.cpp:1041 ekos/align.cpp:1047
+#: ekos/align.cpp:1078 ekos/align.cpp:1084
 #, kde-format
 msgid "%1° %2"
 msgstr "%1° %2"
 
-#: ekos/align.cpp:1079 ekos/align.cpp:1106
+#: ekos/align.cpp:1116 ekos/align.cpp:1143
 msgid ""
 "Slewing to calibration position, please wait until telescope is finished "
 "slewing."
@@ -4031,7 +4041,6 @@ msgstr "Әрқашан әдеттегісін жүктеу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: ekos/opsekos.ui:135
-#| msgid "Remote Server"
 msgid "Remote Devices"
 msgstr "Қашық құрылғылар"
 
@@ -4078,9 +4087,10 @@ msgstr "Astrometry.net"
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: ekos/opsekos.ui:281
-#| msgid "Default FITS directory:"
-msgid "Data directory:"
-msgstr "Деректер қапшығы:"
+#, fuzzy
+#| msgid "Config file"
+msgid "Conf. File"
+msgstr "Баптау файлы"
 
 #. i18n: ectx: Menu (file)
 #: fitsviewer.rc:5 kstarsui-indi.rc:5 kstarsui-win.rc:5 kstarsui.rc:5
@@ -8167,14 +8177,18 @@ msgstr "Құрылғы конфигурациясы сәтті қосылымд�
 msgid "Always load device default configuration upon successful connection?"
 msgstr "Құрылғы конфигурациясы сәтті қосылымда әрқашан жүктелсін бе?"
 
-#. i18n: ectx: label, entry (astrometryDataDir), group (Ekos)
+#. i18n: ectx: label, entry (astrometryConfFile), group (Ekos)
 #: kstars.kcfg:1303
-msgid "astrometry.net data directory"
+#, fuzzy
+#| msgid "astrometry.net data directory"
+msgid "astrometry.net configuration filey"
 msgstr "astrometry.net деректер қапшығы"
 
-#. i18n: ectx: whatsthis, entry (astrometryDataDir), group (Ekos)
+#. i18n: ectx: whatsthis, entry (astrometryConfFile), group (Ekos)
 #: kstars.kcfg:1304
-msgid "Directory where astrometry.net index files are located."
+#, fuzzy
+#| msgid "Directory where astrometry.net index files are located."
+msgid "Path to astrometry.net file location."
 msgstr "astrometry.net индекс файлдары жататын қапшығы."
 
 #: kstars_i18n.cpp:2
@@ -44571,6 +44585,10 @@ msgstr "Аясының түсі"
 #: xplanet/opsxplanet.ui:943
 msgid "Set the color for the background."
 msgstr "Аспан аясының түсін орнату."
+
+#~| msgid "Default FITS directory:"
+#~ msgid "Data directory:"
+#~ msgstr "Деректер қапшығы:"
 
 #~ msgid "Align"
 #~ msgstr "Туралау"
