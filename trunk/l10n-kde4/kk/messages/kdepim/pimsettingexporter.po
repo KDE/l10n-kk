@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-29 01:32+0000\n"
+"POT-Creation-Date: 2013-10-30 01:38+0000\n"
 "PO-Revision-Date: 2013-10-30 03:54+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -42,6 +42,7 @@ msgstr ""
 "\"%1\" деген файл бар екен. Үстінен жаза берейік пе, әлде біріктірейік пе?"
 
 #: abstractimportexportjob.cpp:125 abstractimportexportjob.cpp:130
+#: abstractimportexportjob.cpp:148
 msgid "Restore"
 msgstr "Қалпына келтіру"
 
@@ -58,29 +59,35 @@ msgstr "Біріктіру"
 msgid "\"%1\" already exists. Do you want to overwrite it?"
 msgstr "\"%1\" деген бар екен. Үстінен жаза берейік пе?"
 
-#: abstractimportexportjob.cpp:206
+#: abstractimportexportjob.cpp:148
+#, fuzzy, kde-format
+#| msgid "\"%1\" already exists. Do you want to overwrite it?"
+msgid "Directory \"%1\" already exists. Do you want to overwrite it?"
+msgstr "\"%1\" деген бар екен. Үстінен жаза берейік пе?"
+
+#: abstractimportexportjob.cpp:224
 #, kde-format
 msgid "\"%1\" was copied."
 msgstr "\"%1\" дегеннің көшірмесі жасалды."
 
-#: abstractimportexportjob.cpp:230
+#: abstractimportexportjob.cpp:248
 #, kde-format
 msgid "File \"%1\" cannot be copied to \"%2\"."
 msgstr "\"%1\" файлы \"%2\" дегенге көшірілмеді."
 
-#: abstractimportexportjob.cpp:230
+#: abstractimportexportjob.cpp:248
 msgid "Copy file"
 msgstr "Файлды көшірмелеу"
 
-#: abstractimportexportjob.cpp:248 abstractimportexportjob.cpp:255
-#: abstractimportexportjob.cpp:370 addressbook/exportaddressbookjob.cpp:86
+#: abstractimportexportjob.cpp:266 abstractimportexportjob.cpp:273
+#: abstractimportexportjob.cpp:388 addressbook/exportaddressbookjob.cpp:86
 #: mail/exportmailjob.cpp:508 mail/exportmailjob.cpp:514
 #, kde-format
 msgid "\"%1\" was backuped."
 msgstr "\"%1\" дегеннің сақтық көшірмесі жасалды."
 
-#: abstractimportexportjob.cpp:257 abstractimportexportjob.cpp:261
-#: abstractimportexportjob.cpp:372 addressbook/exportaddressbookjob.cpp:88
+#: abstractimportexportjob.cpp:275 abstractimportexportjob.cpp:279
+#: abstractimportexportjob.cpp:390 addressbook/exportaddressbookjob.cpp:88
 #: mail/exportmailjob.cpp:310 mail/exportmailjob.cpp:516
 #, kde-format
 msgid "\"%1\" file cannot be added to backup file."
@@ -166,8 +173,8 @@ msgstr "Деректер сақтық көшірмеленді."
 msgid "Start import akregator settings..."
 msgstr "Akregator баптауын импорттауды бастау..."
 
-#: akregator/importakregatorjob.cpp:69 blogilo/importblogilojob.cpp:69
-#: notes/importnotesjob.cpp:69
+#: akregator/importakregatorjob.cpp:67 blogilo/importblogilojob.cpp:67
+#: notes/importnotesjob.cpp:67
 msgid "Data restored."
 msgstr "Деректер қалпына келтірілді."
 
@@ -187,13 +194,17 @@ msgstr "Архив жазылатын күйде ашылмады."
 msgid "Archive cannot be opened in read mode."
 msgstr "Архив окитын күйде ашылмады."
 
-#: backupfilestructureinfodialog.cpp:34
+#: backupfilestructureinfodialog.cpp:35
 msgid "Archive File Structure"
 msgstr "Архив файл құрылымы"
 
-#: backupfilestructureinfodialog.cpp:44
+#: backupfilestructureinfodialog.cpp:45
 msgid "Backup Archive Structure:"
 msgstr "Сақтық көшірме архив құрылымы:"
+
+#: backupfilestructureinfodialog.cpp:67
+msgid "backup-structure.txt file was not found."
+msgstr ""
 
 #: blogilo/exportblogilojob.cpp:46 mail/exportmailjob.cpp:68
 #: notes/exportnotesjob.cpp:46
@@ -428,7 +439,9 @@ msgid "Save log..."
 msgstr "Журналын сақтау..."
 
 #: pimsettingexporterwindow.cpp:119
-msgid "Show Archive Structure Informations..."
+#, fuzzy
+#| msgid "Show Archive Structure Informations..."
+msgid "Show Archive Structure Information..."
 msgstr "Архив құрылымы мәліметін көрсету..."
 
 #: pimsettingexporterwindow.cpp:128
@@ -466,15 +479,18 @@ msgid "Backup in '%1' done."
 msgstr "'%1' сақтық көшірмеленді."
 
 #: pimsettingexporterwindow.cpp:222
+#, fuzzy
+#| msgid ""
+#| "For restoring datas, you must use \"pimsettingexporter\". Becareful it "
+#| "can overwrite existing settings, datas."
 msgid ""
-"For restoring datas, you must use \"pimsettingexporter\". Becareful it can "
-"overwrite existing settings, datas."
+"For restoring data, you must use \"pimsettingexporter\". Be careful it can "
+"overwrite existing settings, data."
 msgstr ""
 "Деректерді қалпына келтіру үшін \"pimsettingexporter\"дегенді қолданыңыз. "
 "Абайлаңыз, бар деректердің үстінен жазуы мүмкін."
 
 #: pimsettingexporterwindow.cpp:222
-#| msgid "Backup"
 msgid "Backup infos."
 msgstr "Ақпарларды сақтық көшірмелеу"
 
@@ -505,7 +521,6 @@ msgid "Select Type"
 msgstr "Түрін таңдау"
 
 #: selectiontypedialog.cpp:40
-#| msgid "Select Type"
 msgid "Select All"
 msgstr "Бүкілін таңдау"
 
