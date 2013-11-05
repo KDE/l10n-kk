@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-29 01:26+0000\n"
+"POT-Creation-Date: 2013-11-05 08:17+0000\n"
 "PO-Revision-Date: 2012-08-14 04:50+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgstr "Бағаның дәлділігі:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShortenTemplates)
 #. i18n: ectx: label, entry (ShortenTemplates), group (Settings)
-#: app/config.ui:27 app/mainwindow.cpp:310
+#: app/config.ui:27 app/mainwindow.cpp:202
 #: app/massif-visualizer-settings.kcfg:14
 msgid "Shorten Templates"
 msgstr "Үлгілерін қысқарту"
@@ -41,7 +41,49 @@ msgstr "Үлгілерін қысқарту"
 msgid "Settings"
 msgstr "Баптау"
 
-#: app/main.cpp:36 app/mainwindow.cpp:151 app/mainwindow.cpp:775
+#: app/documentwidget.cpp:166
+msgid "&Evolution of Memory Consumption"
+msgstr "&Жүмсаған жадын бағалауы"
+
+#: app/documentwidget.cpp:171
+msgid "&Detailed Snapshot Analysis"
+msgstr "&Толық сурет талдауы"
+
+#: app/documentwidget.cpp:196
+msgid "loading..."
+msgstr ""
+
+#: app/documentwidget.cpp:401
+#, kde-format
+msgid "time in %1"
+msgstr "уақыт (%1)"
+
+#: app/documentwidget.cpp:408
+#, fuzzy
+#| msgid "memory heap size in bytes"
+msgid "memory heap size in kilobytes"
+msgstr "динамикалық жадының өлшемі (байт)"
+
+#: app/documentwidget.cpp:500
+#, kde-format
+msgid "Memory consumption of %1"
+msgstr "%1 жүмсаған жады"
+
+#: app/documentwidget.cpp:501
+#, kde-format
+msgid "Peak of %1 at snapshot #%2"
+msgstr "№%2  суреттегі %1 төбесі"
+
+#: app/documentwidget.cpp:503
+#, kde-format
+msgid ""
+"Command: %1\n"
+"Valgrind Options: %2"
+msgstr ""
+"Команда: %1\n"
+"Valgrind параметрлері: %2"
+
+#: app/main.cpp:36 app/mainwindow.cpp:104 app/mainwindow.cpp:749
 msgid "Massif Visualizer"
 msgstr "Massif визуализаторы"
 
@@ -57,155 +99,113 @@ msgstr "Copyright 2010, Milian Wolff <mail@milianw.de>"
 msgid "Opens given output file and visualize it."
 msgstr "Келтірілген шығыс файлын  ашып визуализациялау."
 
-#: app/mainwindow.cpp:299
+#: app/mainwindow.cpp:191
 msgid "Stop Parser"
 msgstr ""
 
-#: app/mainwindow.cpp:316
+#: app/mainwindow.cpp:208
 msgid "Toggle total cost graph"
 msgstr "Жалпы бағасы графигінің күйін ауыстыру"
 
-#: app/mainwindow.cpp:323
+#: app/mainwindow.cpp:215
 msgid "Toggle detailed cost graph"
 msgstr "Толық бағасы графигінің күйін ауыстыру"
 
-#: app/mainwindow.cpp:336
+#: app/mainwindow.cpp:229
 msgid "Focus most expensive node"
 msgstr "Ең қымбат түйініне назар аудару"
 
-#: app/mainwindow.cpp:343
+#: app/mainwindow.cpp:236
 msgid "Select peak snapshot"
 msgstr "Таңдалған төбені түсіріп алу"
 
-#: app/mainwindow.cpp:349
+#: app/mainwindow.cpp:242
 msgid "Stacked diagrams"
 msgstr "Бағанды диаграммалар"
 
-#: app/mainwindow.cpp:352
+#: app/mainwindow.cpp:245
 msgid "Stacked diagrams:"
 msgstr "Бағанды диаграммалар:"
 
-#: app/mainwindow.cpp:363
+#: app/mainwindow.cpp:256
 msgid "add"
 msgstr "қосу"
 
-#: app/mainwindow.cpp:364
+#: app/mainwindow.cpp:257
 msgid "add custom allocator"
 msgstr "өзге үлестіргішті қосу"
 
-#: app/mainwindow.cpp:367
+#: app/mainwindow.cpp:260
 msgid "remove"
 msgstr "өшіру"
 
-#: app/mainwindow.cpp:369
+#: app/mainwindow.cpp:262
 msgid "remove selected allocator"
 msgstr "таңдалған үлестіргішті өшіру"
 
-#: app/mainwindow.cpp:376
+#: app/mainwindow.cpp:269
 msgid "mark as custom allocator"
 msgstr "өзгеше үлестіргішті деп қою"
 
-#: app/mainwindow.cpp:382
+#: app/mainwindow.cpp:275
 msgid "hide function"
 msgstr "функцияны жасыру"
 
-#: app/mainwindow.cpp:385
+#: app/mainwindow.cpp:278
 msgid "hide other functions"
 msgstr "басқа функцияларды жасыру"
 
-#: app/mainwindow.cpp:396
+#: app/mainwindow.cpp:289
 msgid "Open Massif Data File"
 msgstr "Massif деректер файлын ашу"
 
-#: app/mainwindow.cpp:435
+#: app/mainwindow.cpp:324
 msgid "Open Massif Output File"
 msgstr "Massif шығыс файлын ашу"
 
-#: app/mainwindow.cpp:468
+#: app/mainwindow.cpp:365
 #, fuzzy, kde-format
 #| msgid "Empty data file <i>%1</i>."
 msgid "loading file <i>%1</i>..."
 msgstr "<i>%1</i> дерек файлы бос."
 
-#: app/mainwindow.cpp:527
+#: app/mainwindow.cpp:602
+msgid "Add Custom Allocator"
+msgstr "Өзгеше үлестіргішті қосу"
+
+#: app/mainwindow.cpp:602
+msgid "allocator:"
+msgstr "Үлестіргіші:"
+
+#: app/mainwindow.cpp:731
+msgid "Massif Chart Print Preview"
+msgstr ""
+
+#: app/mainwindow.cpp:747
 #, kde-format
 msgid "Massif Visualizer - evaluation of %1 (%2)"
 msgstr "Massif визуализаторы - %1 (%2) бағалауы"
 
-#: app/mainwindow.cpp:543
-#, kde-format
-msgid "time in %1"
-msgstr "уақыт (%1)"
-
-#: app/mainwindow.cpp:550
-#, fuzzy
-#| msgid "memory heap size in bytes"
-msgid "memory heap size in kilobytes"
-msgstr "динамикалық жадының өлшемі (байт)"
-
-#: app/mainwindow.cpp:609
-#, kde-format
-msgid "Memory consumption of %1"
-msgstr "%1 жүмсаған жады"
-
-#: app/mainwindow.cpp:610
-#, kde-format
-msgid "Peak of %1 at snapshot #%2"
-msgstr "№%2  суреттегі %1 төбесі"
-
-#: app/mainwindow.cpp:612
-#, kde-format
-msgid ""
-"Command: %1\n"
-"Valgrind Options: %2"
-msgstr ""
-"Команда: %1\n"
-"Valgrind параметрлері: %2"
-
-#: app/mainwindow.cpp:967
-msgid "Add Custom Allocator"
-msgstr "Өзгеше үлестіргішті қосу"
-
-#: app/mainwindow.cpp:967
-msgid "allocator:"
-msgstr "Үлестіргіші:"
-
-#: app/mainwindow.cpp:1096
-msgid "Massif Chart Print Preview"
-msgstr ""
-
-#. i18n: ectx: attribute (title), widget (QWidget, plotterTab)
-#: app/mainwindow.ui:29
-msgid "&Evolution of Memory Consumption"
-msgstr "&Жүмсаған жадын бағалауы"
-
-#. i18n: ectx: attribute (title), widget (QWidget, dotGraphTab)
-#: app/mainwindow.ui:39
-msgid "&Detailed Snapshot Analysis"
-msgstr "&Толық сурет талдауы"
-
 #. i18n: ectx: property (text), widget (QToolButton, openFile)
-#. i18n: ectx: property (text), widget (QToolButton, stopParsing)
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: app/mainwindow.ui:72 app/mainwindow.ui:138
-#: kdchart/src/KDChartDatasetSelector.ui:64
+#: app/mainwindow.ui:67 kdchart/src/KDChartDatasetSelector.ui:64
 #: kdchart/src/KDChartDatasetSelector.ui:100
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, dataTreeDock)
-#: app/mainwindow.ui:180
+#: app/mainwindow.ui:109
 msgid "Massif Data"
 msgstr "Massif деректері"
 
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, filterDataTree)
-#: app/mainwindow.ui:193
+#: app/mainwindow.ui:122
 msgid "filter"
 msgstr "сүзгі"
 
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, allocatorDock)
-#: app/mainwindow.ui:208
+#: app/mainwindow.ui:137
 msgid "Custom Allocators"
 msgstr "Өзгеше үлестіргіш"
 
