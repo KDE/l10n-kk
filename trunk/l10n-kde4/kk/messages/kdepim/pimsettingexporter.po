@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-05 08:22+0000\n"
+"POT-Creation-Date: 2013-11-06 01:41+0000\n"
 "PO-Revision-Date: 2013-11-04 03:05+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -81,8 +81,8 @@ msgstr "Файлды көшірмелеу"
 #: abstractimportexportjob.cpp:270 abstractimportexportjob.cpp:279
 #: abstractimportexportjob.cpp:307 abstractimportexportjob.cpp:314
 #: abstractimportexportjob.cpp:440 addressbook/exportaddressbookjob.cpp:86
-#: calendar/exportcalendarjob.cpp:92 mail/exportmailjob.cpp:508
-#: mail/exportmailjob.cpp:514
+#: calendar/exportcalendarjob.cpp:92 mail/exportmailjob.cpp:509
+#: mail/exportmailjob.cpp:515
 #, kde-format
 msgid "\"%1\" was backuped."
 msgstr "\"%1\" дегеннің сақтық көшірмесі жасалды."
@@ -90,7 +90,7 @@ msgstr "\"%1\" дегеннің сақтық көшірмесі жасалды."
 #: abstractimportexportjob.cpp:281 abstractimportexportjob.cpp:286
 #: abstractimportexportjob.cpp:316 abstractimportexportjob.cpp:320
 #: abstractimportexportjob.cpp:442 addressbook/exportaddressbookjob.cpp:88
-#: calendar/exportcalendarjob.cpp:94 mail/exportmailjob.cpp:516
+#: calendar/exportcalendarjob.cpp:94 mail/exportmailjob.cpp:517
 #, kde-format
 msgid "\"%1\" file cannot be added to backup file."
 msgstr "\"%1\" файлы сақтық көшірме файлына қосылмады."
@@ -132,16 +132,16 @@ msgstr "Ресурстарын сақтық көшірмелеу бітті."
 #: addressbook/exportaddressbookjob.cpp:101
 #: akregator/exportakregatorjob.cpp:67 alarm/exportalarmjob.cpp:84
 #: blogilo/exportblogilojob.cpp:67 calendar/exportcalendarjob.cpp:108
-#: jot/exportjotjob.cpp:83 mail/exportmailjob.cpp:182
-#: notes/exportnotesjob.cpp:67
+#: jot/exportjotjob.cpp:83 knode/exportknodejob.cpp:67
+#: mail/exportmailjob.cpp:182 notes/exportnotesjob.cpp:67
 msgid "Backing up config..."
 msgstr "Баптауларын сақтық көшірмелеу..."
 
 #: addressbook/exportaddressbookjob.cpp:137
 #: akregator/exportakregatorjob.cpp:72 alarm/exportalarmjob.cpp:109
 #: blogilo/exportblogilojob.cpp:73 calendar/exportcalendarjob.cpp:154
-#: jot/exportjotjob.cpp:108 mail/exportmailjob.cpp:420
-#: notes/exportnotesjob.cpp:73
+#: jot/exportjotjob.cpp:108 knode/exportknodejob.cpp:73
+#: mail/exportmailjob.cpp:421 notes/exportnotesjob.cpp:73
 msgid "Config backup done."
 msgstr "Баптауларын сақтық көшірмелеу бітті."
 
@@ -158,8 +158,8 @@ msgstr "Ресурстарды қалпына қайтару..."
 #: addressbook/importaddressbookjob.cpp:202
 #: akregator/importakregatorjob.cpp:57 alarm/importalarmjob.cpp:130
 #: blogilo/importblogilojob.cpp:57 calendar/importcalendarjob.cpp:245
-#: jot/importjotjob.cpp:128 mail/importmailjob.cpp:832
-#: notes/importnotesjob.cpp:57
+#: jot/importjotjob.cpp:128 knode/importknodejob.cpp:57
+#: mail/importmailjob.cpp:810 notes/importnotesjob.cpp:57
 msgid "Config restored."
 msgstr "Баптауы қалпына келтірілді."
 
@@ -168,7 +168,7 @@ msgid "Start export akregator settings..."
 msgstr "Akregator баптауын экспорттауды бастау..."
 
 #: akregator/exportakregatorjob.cpp:77 blogilo/exportblogilojob.cpp:78
-#: notes/exportnotesjob.cpp:78
+#: knode/exportknodejob.cpp:78 notes/exportnotesjob.cpp:78
 msgid "Backing up data..."
 msgstr "Деректерді сақтық көшірмелеу..."
 
@@ -179,7 +179,7 @@ msgid "\"%1\" directory cannot be added to backup file."
 msgstr "\"%1\" файлы сақтық көшірме файлына қосылмады."
 
 #: akregator/exportakregatorjob.cpp:87 blogilo/exportblogilojob.cpp:86
-#: notes/exportnotesjob.cpp:102
+#: knode/exportknodejob.cpp:81 notes/exportnotesjob.cpp:102
 msgid "Data backup done."
 msgstr "Деректер сақтық көшірмеленді."
 
@@ -188,7 +188,7 @@ msgid "Start import akregator settings..."
 msgstr "Akregator баптауын импорттауды бастау..."
 
 #: akregator/importakregatorjob.cpp:67 blogilo/importblogilojob.cpp:67
-#: notes/importnotesjob.cpp:67
+#: knode/importknodejob.cpp:69 notes/importnotesjob.cpp:67
 msgid "Data restored."
 msgstr "Деректер қалпына келтірілді."
 
@@ -245,6 +245,18 @@ msgstr "Kjots баптауын экспорттауды бастау..."
 msgid "Start import kjots settings..."
 msgstr "Kjots баптауын импорттауды бастау..."
 
+#: knode/exportknodejob.cpp:46
+#, fuzzy
+#| msgid "Start export knotes settings..."
+msgid "Start export knode settings..."
+msgstr "Knotes баптауын экспорттауды бастау..."
+
+#: knode/importknodejob.cpp:45
+#, fuzzy
+#| msgid "Start import knotes settings..."
+msgid "Start import knode settings..."
+msgstr "Knotes баптауын импорттауды бастау..."
+
 #: mail/exportmailjob.cpp:57
 msgid "mysqldump not found. Export data aborted"
 msgstr "mysqldump табылмады. Экспорттау доғарылды."
@@ -269,75 +281,75 @@ msgstr "Сүзгілерін сақтық көшірмелеу бітті."
 msgid "Filters cannot be exported."
 msgstr "Сүзгілерді экспорттауға болмайды."
 
-#: mail/exportmailjob.cpp:310
+#: mail/exportmailjob.cpp:311
 #, fuzzy, kde-format
 #| msgid "\"%1\" directory cannot be added to backup file."
 msgid "Theme directory \"%1\" cannot be added to backup file."
 msgstr "\"%1\" файлы сақтық көшірме файлына қосылмады."
 
-#: mail/exportmailjob.cpp:426
+#: mail/exportmailjob.cpp:427
 msgid "Backing up identity..."
 msgstr "Іс-әлпетін сақтық көшірмелеу..."
 
-#: mail/exportmailjob.cpp:464
+#: mail/exportmailjob.cpp:465
 #, kde-format
 msgid "vCard file \"%1\" cannot be saved."
 msgstr "vCard \"%1\" файлы сақталмады."
 
-#: mail/exportmailjob.cpp:476
+#: mail/exportmailjob.cpp:477
 msgid "Identity backup done."
 msgstr "Іс-әлпетін сақтық көшірмелеу бітті."
 
-#: mail/exportmailjob.cpp:478
+#: mail/exportmailjob.cpp:479
 msgid "Identity file cannot be added to backup file."
 msgstr "Іс-әлпеті файлы сақтық көшірме файлына қосылмады."
 
-#: mail/exportmailjob.cpp:483
+#: mail/exportmailjob.cpp:484
 msgid "Backing up Mails..."
 msgstr "Поштаны сақтық көшірмелеу..."
 
-#: mail/exportmailjob.cpp:525
+#: mail/exportmailjob.cpp:526
 msgid "Mails backup done."
 msgstr "Поштаны сақтық көшірмелеу бітті."
 
-#: mail/exportmailjob.cpp:556 mail/exportmailjob.cpp:582
+#: mail/exportmailjob.cpp:557 mail/exportmailjob.cpp:583
 #, kde-format
 msgid "Mail \"%1\" file cannot be added to backup file."
 msgstr "\"%1\" пошта файлы сақтық көшірме файлына қосылмады."
 
-#: mail/exportmailjob.cpp:579
+#: mail/exportmailjob.cpp:580
 #, kde-format
 msgid "Mail \"%1\" was backuped."
 msgstr "\"%1\" пошта файлдың сақтық көшірмесі жасалды."
 
-#: mail/exportmailjob.cpp:589
+#: mail/exportmailjob.cpp:590
 msgid "Backing up Akonadi Database..."
 msgstr "Akonadi деректер қорын сақтық көшірмелеу..."
 
-#: mail/exportmailjob.cpp:616 mail/importmailjob.cpp:965
+#: mail/exportmailjob.cpp:617 mail/importmailjob.cpp:943
 #, kde-format
 msgid "Database driver \"%1\" not supported."
 msgstr "\"%1\" деректер қоры драйверінің қолдауы жоқ."
 
-#: mail/exportmailjob.cpp:621
+#: mail/exportmailjob.cpp:622
 #, kde-format
 msgid "Could not find \"%1\" necessary to dump database."
 msgstr "Деректер қорын дамп ету үшін қажеті \"%1\" табылмады."
 
-#: mail/exportmailjob.cpp:634
+#: mail/exportmailjob.cpp:635
 #, kde-format
 msgid "Akonadi Database \"%1\" cannot be added to backup file."
 msgstr "\"%1\" Akonadi деректер қоры сақтық көшірме файлына қосылмады."
 
-#: mail/exportmailjob.cpp:636
+#: mail/exportmailjob.cpp:637
 msgid "Akonadi Database backup done."
 msgstr "Akonadi деректер қоры сақтық көшірмеленді."
 
-#: mail/exportmailjob.cpp:641
+#: mail/exportmailjob.cpp:642
 msgid "Backing up Nepomuk Database..."
 msgstr "Nepomuk деректер қорын сақтық көшірмелеу..."
 
-#: mail/exportmailjob.cpp:643
+#: mail/exportmailjob.cpp:644
 msgid "Nepomuk Database backup done."
 msgstr "Nepomuk деректер қорын сақтық көшірмелеу бітті."
 
@@ -373,48 +385,48 @@ msgstr "Пошта қалпына келтірілді."
 msgid "filters file could not be found in the archive."
 msgstr "filters файлы архивте табылған жоқ."
 
-#: mail/importmailjob.cpp:839
+#: mail/importmailjob.cpp:817
 msgid "emailidentities file could not be found in the archive."
 msgstr "emailidentities файлы архивте табылған жоқ."
 
-#: mail/importmailjob.cpp:842
+#: mail/importmailjob.cpp:820
 msgid "Restore identities..."
 msgstr "Іс-әлпеттерін қалпына келтіру..."
 
-#: mail/importmailjob.cpp:908
+#: mail/importmailjob.cpp:886
 msgid "Identities restored."
 msgstr "Іс-әлпеттері қалпына келтірілді."
 
-#: mail/importmailjob.cpp:910
+#: mail/importmailjob.cpp:888
 msgid "Failed to restore identity file."
 msgstr "Іс-әлпетін файлынан қалпына келтіру жаңылысы."
 
-#: mail/importmailjob.cpp:929
+#: mail/importmailjob.cpp:907
 msgid "akonadi database file could not be found in the archive."
 msgstr "Akonadi деректер қорының файлы архивте табылған жоқ."
 
-#: mail/importmailjob.cpp:932
+#: mail/importmailjob.cpp:910
 msgid "Restore Akonadi Database..."
 msgstr "Akonadi дерек қорын қалпына келтіру..."
 
-#: mail/importmailjob.cpp:970
+#: mail/importmailjob.cpp:948
 #, kde-format
 msgid "Could not find \"%1\" necessary to restore database."
 msgstr "Деректер қорын қалпына келтіру үшін қажеті \"%1\" табылмады."
 
-#: mail/importmailjob.cpp:979
+#: mail/importmailjob.cpp:957
 msgid "Failed to restore Akonadi Database."
 msgstr "Akonadi деректер қорын қалпына келтіру жаңылысы."
 
-#: mail/importmailjob.cpp:983
+#: mail/importmailjob.cpp:961
 msgid "Akonadi Database restored."
 msgstr "Akonadi деректер қоры қалпына келтірілді."
 
-#: mail/importmailjob.cpp:989
+#: mail/importmailjob.cpp:967
 msgid "Nepomuk Database restored."
 msgstr "Nepomuk деректер қоры қалпына келтірілді."
 
-#: mail/importmailjob.cpp:990
+#: mail/importmailjob.cpp:968
 msgid "Failed to restore Nepomuk Database."
 msgstr "Nepomuk деректер қорын қалпына келтіру жаңылысы."
 
@@ -438,39 +450,39 @@ msgstr "Желілдірушісі"
 msgid "Start import knotes settings..."
 msgstr "Knotes баптауын импорттауды бастау..."
 
-#: pimsettingexporterwindow.cpp:93
+#: pimsettingexporterwindow.cpp:96
 msgid "Zip program not found. Install it before to launch this application."
 msgstr "Zip бағдарламасы табылған жоқ. Қолданбаны жегу алдында оны орнатыңыз."
 
-#: pimsettingexporterwindow.cpp:93
+#: pimsettingexporterwindow.cpp:96
 msgid "Zip program not found."
 msgstr "Zip бағдарламасы табылған жоқ."
 
-#: pimsettingexporterwindow.cpp:111
+#: pimsettingexporterwindow.cpp:114
 msgid "Back Up Data..."
 msgstr "Деректің сақтық көшірмесін жасау..."
 
-#: pimsettingexporterwindow.cpp:115
+#: pimsettingexporterwindow.cpp:118
 msgid "Restore Data..."
 msgstr "Деректі қалпына келтіру..."
 
-#: pimsettingexporterwindow.cpp:119
+#: pimsettingexporterwindow.cpp:122
 msgid "Save log..."
 msgstr "Журналын сақтау..."
 
-#: pimsettingexporterwindow.cpp:122
+#: pimsettingexporterwindow.cpp:125
 msgid "Show Archive Structure Information..."
 msgstr "Архив құрылымы мәліметтерін көрсету..."
 
-#: pimsettingexporterwindow.cpp:142
+#: pimsettingexporterwindow.cpp:145
 msgid "Log is empty."
 msgstr "Журнал бос."
 
-#: pimsettingexporterwindow.cpp:142
+#: pimsettingexporterwindow.cpp:145
 msgid "Save log"
 msgstr "Журналын сақтау"
 
-#: pimsettingexporterwindow.cpp:152
+#: pimsettingexporterwindow.cpp:155
 msgid ""
 "Before to backup data, close all kdepim applications. Do you want to "
 "continue?"
@@ -478,25 +490,25 @@ msgstr ""
 "Деректің сақтық көшірмесін жасау алдында бүкіл kdepim қолданбаларын жабу "
 "керек. Жалғастыра берейік пе?"
 
-#: pimsettingexporterwindow.cpp:152 pimsettingexporterwindow.cpp:277
+#: pimsettingexporterwindow.cpp:155 pimsettingexporterwindow.cpp:286
 msgid "Backup"
 msgstr "Сақтық көшірмелеу"
 
-#: pimsettingexporterwindow.cpp:155
+#: pimsettingexporterwindow.cpp:158
 msgid "Create backup"
 msgstr "Сақтық көшірмені жасау"
 
-#: pimsettingexporterwindow.cpp:176
+#: pimsettingexporterwindow.cpp:179
 #, kde-format
 msgid "Start to backup data in '%1'"
 msgstr "'%1' дегенде сақтық көшірмелеу басталды"
 
-#: pimsettingexporterwindow.cpp:235
+#: pimsettingexporterwindow.cpp:244
 #, kde-format
 msgid "Backup in '%1' done."
 msgstr "'%1' сақтық көшірмеленді."
 
-#: pimsettingexporterwindow.cpp:241
+#: pimsettingexporterwindow.cpp:250
 msgid ""
 "For restoring data, you must use \"pimsettingexporter\". Be careful it can "
 "overwrite existing settings, data."
@@ -504,15 +516,15 @@ msgstr ""
 "Деректерді қалпына келтіру үшін \"pimsettingexporter\"дегенді қолданыңыз. "
 "Абайлаңыз, бар деректердің үстінен жазуы мүмкін."
 
-#: pimsettingexporterwindow.cpp:241
+#: pimsettingexporterwindow.cpp:250
 msgid "Backup infos."
 msgstr "Ақпарларды сақтық көшірмелеу"
 
-#: pimsettingexporterwindow.cpp:269
+#: pimsettingexporterwindow.cpp:278
 msgid "Restore backup"
 msgstr "Көшірмеден қалпына келтіру"
 
-#: pimsettingexporterwindow.cpp:277
+#: pimsettingexporterwindow.cpp:286
 msgid ""
 "Before to restore data, close all kdepim applications. Do you want to "
 "continue?"
@@ -520,12 +532,12 @@ msgstr ""
 "Деректің сақтық көшірмесінен қалпына қайтару алдында бүкіл kdepim "
 "қолданбаларын жабу керек. Жалғастыра берейік пе?"
 
-#: pimsettingexporterwindow.cpp:299
+#: pimsettingexporterwindow.cpp:308
 #, kde-format
 msgid "Start to restore data from '%1'"
 msgstr "'%1' дегеннен дерек қалпына келтіру басталды"
 
-#: pimsettingexporterwindow.cpp:356
+#: pimsettingexporterwindow.cpp:371
 #, kde-format
 msgid "Restoring data from '%1' done."
 msgstr "'%1' дегеннен дерек қалпына келтірілді."
@@ -574,35 +586,39 @@ msgstr "Akregator"
 msgid "Blogilo"
 msgstr "Blogilo"
 
-#: selectiontypetreewidget.cpp:151
+#: selectiontypetreewidget.cpp:94
+msgid "KNode"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:162
 msgid "Identity"
 msgstr "Әлпеті"
 
-#: selectiontypetreewidget.cpp:159
+#: selectiontypetreewidget.cpp:170
 msgid "Mails"
 msgstr "Хаттар"
 
-#: selectiontypetreewidget.cpp:167
+#: selectiontypetreewidget.cpp:178
 msgid "Mail Transport"
 msgstr "Пошта тасымалдауы"
 
-#: selectiontypetreewidget.cpp:175
+#: selectiontypetreewidget.cpp:186
 msgid "Resources"
 msgstr "Ресурстар"
 
-#: selectiontypetreewidget.cpp:183
+#: selectiontypetreewidget.cpp:194
 msgid "Config"
 msgstr "Баптау"
 
-#: selectiontypetreewidget.cpp:191
+#: selectiontypetreewidget.cpp:202
 msgid "Akonadi Database"
 msgstr "Akonadi деректер қоры"
 
-#: selectiontypetreewidget.cpp:199
+#: selectiontypetreewidget.cpp:210
 msgid "Nepomuk Database"
 msgstr "Nepomuk деректер қоры"
 
-#: selectiontypetreewidget.cpp:207
+#: selectiontypetreewidget.cpp:218
 msgid "Data"
 msgstr "Дерек"
 
