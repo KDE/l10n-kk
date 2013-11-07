@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-16 05:35+0000\n"
+"POT-Creation-Date: 2013-11-07 05:06+0000\n"
 "PO-Revision-Date: 2013-05-31 02:19+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -130,7 +130,7 @@ msgstr "CMake құжаттамасы"
 msgid "Support for CMake documentation"
 msgstr "CMake құжаттамасын қолдау "
 
-#: cmakedocumentation.cpp:71 cmakemanager.cpp:497
+#: cmakedocumentation.cpp:71 cmakemanager.cpp:118
 msgid "cmake is not installed"
 msgstr "cmake орнатылмаған"
 
@@ -168,66 +168,68 @@ msgstr "Саясаттар"
 msgid "CMake Content Page"
 msgstr "CMake мазмұны беті"
 
-#: cmakemanager.cpp:99
+#: cmakemanager.cpp:82
 msgid "CMake Manager"
 msgstr "CMake менеджері"
 
-#: cmakemanager.cpp:99
+#: cmakemanager.cpp:82
 msgid "Support for managing CMake projects"
 msgstr "CMake жобалар басқаруын қолдау"
 
-#: cmakemanager.cpp:103
+#: cmakemanager.cpp:84
 msgid "KDevelop - CMake Support"
 msgstr "KDevelop - CMake қолдауы"
 
-#: cmakemanager.cpp:1455
-msgid "Jump to target definition"
+#: cmakemanager.cpp:472
+#, fuzzy
+#| msgid "Jump to target definition"
+msgid "Jump to Target Definition"
 msgstr "Мақсат анықтамасына ауысу"
 
-#: cmakemanager.cpp:1519
+#: cmakemanager.cpp:506
 msgid "Move files and folders within CMakeLists as follows:"
 msgstr "CMakeLists тізіміндегі файлдар мен қапшықтар былай жылжытылсын:"
 
-#: cmakemanager.cpp:1558
+#: cmakemanager.cpp:545
 msgid "Changes to CMakeLists failed, abort move?"
 msgstr "CMakeLists тізімін өзгерту жаңылды, жылжыту доғарылсын ба?"
 
-#: cmakemanager.cpp:1605
+#: cmakemanager.cpp:601
 msgid "Remove files and folders from CMakeLists as follows:"
 msgstr "Мынау CMakeLists тізіміндегі файлдар мен қапшықтар өшірілсін:"
 
-#: cmakemanager.cpp:1615
+#: cmakemanager.cpp:611
 msgid "Changes to CMakeLists failed, abort deletion?"
 msgstr "CMakeLists тізімін өзгерту жаңылды, өшіру доғарылсын ба?"
 
-#: cmakemanager.cpp:1634
+#: cmakemanager.cpp:632
 msgid "Modify project targets as follows:"
 msgstr "Жобаның мақсатарын былай өзгерту:"
 
-#: cmakemanager.cpp:1653
+#: cmakemanager.cpp:653
 #, kde-format
 msgid "Create folder '%1':"
 msgstr "'%1' қапшығын құру:"
 
-#: cmakemanager.cpp:1665
+#: cmakemanager.cpp:665
 msgid "Could not save the change."
 msgstr "Өзгерістер сақталмады."
 
-#: cmakemanager.cpp:1711
+#: cmakemanager.cpp:713
 #, kde-format
 msgid "Modify target '%1' as follows:"
 msgstr "'%1' мақсатын былай өзгерту:"
 
-#: cmakemanager.cpp:1718
+#: cmakemanager.cpp:720
 msgid "CMakeLists changes failed."
 msgstr "CMakeLists өзгерту жаңылды."
 
-#: cmakemanager.cpp:1727
+#: cmakemanager.cpp:731
 #, kde-format
 msgid "Rename '%1' to '%2':"
 msgstr "'%1' дегенді '%2' деп атауын өзгерту:"
 
-#: cmakemanager.cpp:1751
+#: cmakemanager.cpp:755
 msgid "Changes to CMakeLists failed, abort rename?"
 msgstr "CMakeLists тізімін өзгерту жаңылды, атауын өзгерту доғарылсын ба?"
 
@@ -239,12 +241,12 @@ msgid ""
 msgstr ""
 "KDevelop жобаның бірнеше мүмкін түбір каталогын табып отыр, керегін таңдаңыз."
 
-#: parser/cmakeprojectvisitor.cpp:2300
+#: parser/cmakeprojectvisitor.cpp:2355
 #, kde-format
 msgid "%1 is a deprecated command and should not be used"
 msgstr "%1 деген ескірген команда, ол қолдануға тиіс емес"
 
-#: parser/cmakeprojectvisitor.cpp:2318
+#: parser/cmakeprojectvisitor.cpp:2373
 msgid "Unfinished function. "
 msgstr "Аяқталмаған функция. "
 
@@ -278,25 +280,20 @@ msgstr "Жетелеу"
 msgid "Advanced"
 msgstr "Жетелеу"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: settings/cmakebuildsettings.ui:116
-msgid "CMake Directory"
-msgstr "CMake каталогы"
-
-#. i18n: ectx: property (text), widget (QCheckBox, showInternal)
-#: settings/cmakebuildsettings.ui:126
-msgid "Show Advanced Values"
-msgstr "Жетелеген мәндері көрсетілсін"
+msgid "Configure Environment"
+msgstr "Ортаны баптау"
 
 #. i18n: ectx: property (toolTip), widget (KDevelop::EnvironmentSelectionWidget, environment)
-#: settings/cmakebuildsettings.ui:141
+#: settings/cmakebuildsettings.ui:131
 msgid "Select an environment to be used"
 msgstr "Қолданатын ортасын таңдау"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: settings/cmakebuildsettings.ui:153
-msgid "Configure Environment"
-msgstr "Ортаны баптау"
+#. i18n: ectx: property (text), widget (QCheckBox, showInternal)
+#: settings/cmakebuildsettings.ui:143
+msgid "Show Advanced Values"
+msgstr "Жетелеген мәндері көрсетілсін"
 
 #: settings/cmakecachemodel.cpp:49
 msgid "Name"
@@ -314,7 +311,7 @@ msgstr "Мәні"
 msgid "Comment"
 msgstr "Түсініктемесі"
 
-#: settings/cmakepreferences.cpp:151
+#: settings/cmakepreferences.cpp:150
 #, kde-format
 msgid ""
 "Could not write CMake settings to file '%1'.\n"
@@ -323,7 +320,7 @@ msgstr ""
 "CMake параметрлерін '%1' файлға сақтауы болмады.\n"
 "Бұнда жазу рұқсатыңыз бар екенін тексеріңіз"
 
-#: settings/cmakepreferences.cpp:331
+#: settings/cmakepreferences.cpp:328
 #, kde-format
 msgid ""
 "The %1 directory is about to be removed in KDevelop's list.\n"
@@ -332,7 +329,7 @@ msgstr ""
 "%1 каталогы KDevelop тізімінен өшірілмек\n"
 "KDevelop оны файл жүйесінен де өшірсін бе?"
 
-#: settings/cmakepreferences.cpp:337
+#: settings/cmakepreferences.cpp:334
 #, kde-format
 msgid "Could not remove: %1.\n"
 msgstr "Өшірілмеді: %1.\n"
@@ -342,6 +339,9 @@ msgstr "Өшірілмеді: %1.\n"
 msgid "Parse test suite %1"
 msgstr "%1 сынақ дестесін талдау"
 
-#: testing/ctestrunjob.cpp:92
+#: testing/ctestrunjob.cpp:93
 msgid "CTest"
 msgstr "CTest"
+
+#~ msgid "CMake Directory"
+#~ msgstr "CMake каталогы"
