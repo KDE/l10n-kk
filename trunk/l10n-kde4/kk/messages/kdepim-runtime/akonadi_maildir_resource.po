@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-09 21:20+0000\n"
+"POT-Creation-Date: 2013-11-16 01:32+0000\n"
 "PO-Revision-Date: 2013-07-11 03:56+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -26,28 +26,28 @@ msgstr "MailDir қапшығын таңдау"
 msgid "The selected path is empty."
 msgstr "Таңдалған жолы бос."
 
-#: configdialog.cpp:67
+#: configdialog.cpp:66
 msgid "The selected path contains valid Maildir folders."
 msgstr "Таңдалған жолында жарамды MailDir қапшықтар бар."
 
-#: configdialog.cpp:74
+#: configdialog.cpp:73
 msgid "The selected path is a valid Maildir."
 msgstr "Таңдалған жолы жарамды MailDir қапшығының өзі."
 
-#: configdialog.cpp:80
+#: configdialog.cpp:79
 msgid "The selected path does not exist yet, a new Maildir will be created."
 msgstr "Таңдалған MailDir қапшығы әлі жоқ, бірақ құрылмақ."
 
-#: configdialog.cpp:84
+#: configdialog.cpp:83
 msgid "The selected path does not exist."
 msgstr "Тандалған жол табылған жоқ."
 
-#: libmaildir/maildir.cpp:252 libmaildir/maildir.cpp:257
+#: libmaildir/maildir.cpp:253 libmaildir/maildir.cpp:258
 #, kde-format
 msgid "Error opening %1; this folder is missing."
 msgstr "%1 ашу қатесі; бұндай қапшық жоқ."
 
-#: libmaildir/maildir.cpp:262
+#: libmaildir/maildir.cpp:263
 #, kde-format
 msgid ""
 "Error opening %1; either this is not a valid maildir folder, or you do not "
@@ -55,9 +55,40 @@ msgid ""
 msgstr ""
 "%1 ашу қатесі; немесе жарамсыз maildir қапшығы, немесе керек құқығыңыз жоқ."
 
-#: maildirresource.cpp:139 maildirresource.cpp:265 maildirresource.cpp:296
-#: maildirresource.cpp:377 maildirresource.cpp:415 maildirresource.cpp:532
-#: maildirresource.cpp:563 maildirresource.cpp:605 maildirresource.cpp:638
+#: libmaildir/maildir.cpp:458 libmaildir/maildir.cpp:479
+#: libmaildir/maildir.cpp:497 libmaildir/maildir.cpp:516
+#: libmaildir/maildir.cpp:534 libmaildir/maildir.cpp:559
+#: libmaildir/maildir.cpp:634 libmaildir/maildir.cpp:776
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot locate mail file %1."
+msgstr "'%1' MailDir түбір қапшығы жылжытылмады."
+
+#: libmaildir/maildir.cpp:464 libmaildir/maildir.cpp:485
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot open mail file %1."
+msgstr "'%1' MailDir түбір қапшығы жылжытылмады."
+
+#: libmaildir/maildir.cpp:567 libmaildir/maildir.cpp:594
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot write to mail file %1."
+msgstr "'%1' MailDir түбір қапшығы жылжытылмады."
+
+#: libmaildir/maildir.cpp:608
+#, kde-format
+msgid "Failed to create mail file %1. The error was: %2"
+msgstr ""
+
+#: libmaildir/maildir.cpp:700
+#, kde-format
+msgid "Failed to update the file name %1 to %2 on the disk. The error was: %3."
+msgstr ""
+
+#: maildirresource.cpp:139 maildirresource.cpp:265 maildirresource.cpp:301
+#: maildirresource.cpp:385 maildirresource.cpp:422 maildirresource.cpp:538
+#: maildirresource.cpp:569 maildirresource.cpp:611 maildirresource.cpp:644
 msgid "Unusable configuration."
 msgstr "Баптауы жарамсыз."
 
@@ -66,70 +97,73 @@ msgstr "Баптауы жарамсыз."
 msgid "Unable to fetch item: The maildir folder \"%1\" is not valid."
 msgstr "Керегі алынбады: \"%1\" MaiDir қапшығы жарамсыз."
 
-#: maildirresource.cpp:277
+#: maildirresource.cpp:276
 msgid "Error: Unsupported type."
 msgstr "Қате: Танымайтын түрі."
 
-#: maildirresource.cpp:336
-msgid "Failed to change the flags for the mail."
+#: maildirresource.cpp:340
+#, fuzzy, kde-format
+#| msgid "Failed to change the flags for the mail."
+msgid "Failed to change the flags for the mail. %1"
 msgstr "Поштаның жалаушаларын өзгерту жаңылысы."
 
-#: maildirresource.cpp:384
+#: maildirresource.cpp:391
 #, kde-format
 msgid "Source folder is invalid: '%1'."
 msgstr "'%1' көз қапшығы жарамсыз."
 
-#: maildirresource.cpp:390
+#: maildirresource.cpp:397
 #, kde-format
 msgid "Destination folder is invalid: '%1'."
 msgstr "Жарамсыз мақсатты қапшық: '%1'"
 
-#: maildirresource.cpp:403
-#, kde-format
-msgid "Could not move message '%1' from '%2' to '%3'."
+#: maildirresource.cpp:410
+#, fuzzy, kde-format
+#| msgid "Could not move message '%1' from '%2' to '%3'."
+msgid "Could not move message '%1' from '%2' to '%3'. The error was %4."
 msgstr "'%1' деген хат '%2' дегеннен '%3' дегенге жылжытылмады."
 
-#: maildirresource.cpp:425
+#: maildirresource.cpp:432
 #, kde-format
 msgid "Failed to delete message: %1"
 msgstr "'%1' деген хат өшірілмеді."
 
-#: maildirresource.cpp:512
+#: maildirresource.cpp:518
 #, kde-format
 msgid "Maildir '%1' for collection '%2' is invalid."
 msgstr "'%1' MailDir қапшығы '%2' жинағы үшін жарамайды.."
 
-#: maildirresource.cpp:590
+#: maildirresource.cpp:596
 #, kde-format
 msgid "Unable to rename maildir folder '%1'."
 msgstr "'%1' MailDir қапшығының атауы өзгертілмеді."
 
-#: maildirresource.cpp:611
+#: maildirresource.cpp:617
 #, kde-format
 msgid "Cannot move root maildir folder '%1'."
 msgstr "'%1' MailDir түбір қапшығы жылжытылмады."
 
-#: maildirresource.cpp:626
+#: maildirresource.cpp:632
 #, kde-format
 msgid "Unable to move maildir folder '%1' from '%2' to '%3'."
 msgstr "'%1' MailDir қапшығы '%2' дегенен '%3' дегенге жылжытылмады."
 
-#: maildirresource.cpp:644
+#: maildirresource.cpp:650
 #, kde-format
 msgid "Cannot delete top-level maildir folder '%1'."
 msgstr "Жоғары деңгейлі '%1' MailDir қапшығы өшірілмеді."
 
-#: maildirresource.cpp:653
+#: maildirresource.cpp:659
 #, kde-format
 msgid "Failed to delete sub-folder '%1'."
 msgstr "'%1' ішкі қапшықты өшіру жаңылысы."
 
-#: maildirresource.cpp:667
+#: maildirresource.cpp:673
 #, kde-format
 msgid "Unable to create maildir '%1'."
 msgstr "'%1' MailDir қапшығы құрылмады."
 
-#: maildirresource.cpp:676
+#: maildirresource.cpp:682
 msgid "No usable storage location configured."
 msgstr "Баптауында жарамсыз сақтағышы көрсетілген."
 

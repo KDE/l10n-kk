@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-15 01:31+0000\n"
+"POT-Creation-Date: 2013-11-16 01:21+0000\n"
 "PO-Revision-Date: 2013-06-19 02:15+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,53 +27,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: src/engine.cpp:181
+#: src/engine.cpp:212
 msgctxt "@info:tooltip "
 msgid "Cannot load built-in <icode>pate</icode> module"
 msgstr ""
 
-#: src/engine.cpp:197
+#: src/engine.cpp:228
 msgctxt "@info:tooltip "
 msgid "Cannot update Python paths"
 msgstr ""
 
-#: src/engine.cpp:228
+#: src/engine.cpp:244
 msgctxt "@info:tooltip "
 msgid "No <icode>pate</icode> built-in module"
 msgstr ""
 
-#: src/engine.cpp:243
+#: src/engine.cpp:263
 msgctxt "@info:tooltip "
 msgid "Cannot load <icode>kate</icode> module"
 msgstr ""
 
-#: src/engine.cpp:285
+#: src/engine.cpp:305
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Атауы"
 
-#: src/engine.cpp:287
+#: src/engine.cpp:307
 #, fuzzy
 #| msgid "Comment"
 msgctxt "@title:column"
 msgid "Comment"
 msgstr "Түсініктеме"
 
-#: src/engine.cpp:466
+#: src/engine.cpp:493
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Unable to find the module specified <application>%1</application>"
 msgstr ""
 
-#: src/engine.cpp:493
+#: src/engine.cpp:520
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Failure on checking dependency <application>%1</application>:<nl/>%2"
 msgstr ""
 
-#: src/engine.cpp:567
+#: src/engine.cpp:583
 #, fuzzy, kde-format
 #| msgid "Not Loaded: %1"
 msgctxt "@info:tooltip"
@@ -195,7 +195,7 @@ msgstr "Программисттік сілтемелер"
 msgid "Select a Plugin or Built-in Module"
 msgstr "Плагинді не құрамындағы модулін таңдау"
 
-#: src/kate/__init__.py:312
+#: src/kate/decorators.py:206
 msgctxt "@title:window"
 msgid "Error in action <icode>%1</icode>"
 msgstr "<icode>%1</icode> амалында қате"
@@ -207,117 +207,188 @@ msgstr "<icode>%1</icode> амалында қате"
 msgid "Error: The Python engine could not be initialized"
 msgstr "ҚАТЕ: Python тетігі бастау күйіне келтірілмеді"
 
-#. i18n: ectx: attribute (title), widget (QWidget, manageTab)
-#: src/manager.ui:23
-msgid "Manager"
-msgstr "Менеджер"
-
-#. i18n: ectx: property (toolTip), widget (KPushButton, reload)
-#: src/manager.ui:69
+#: src/plugin.cpp:65
 #, fuzzy
-#| msgid ""
-#| "Reloading a running plugin may have unpredictable effects. Consider "
-#| "saving your work before using this command."
-msgid ""
-"<html><head/><body><p><span style=\" font-weight:600;\">Caution:</span> "
-"Reloading a running plugin may have unpredictable effects. Consider saving "
-"your work before using this command.</p></body></html>"
-msgstr ""
-"Жегілген плагинін қайта жүктеген қауіпті. Бұл бұйрықтан бұрын жұмысыңызды "
-"сақтаған жөн."
+#| msgid "Python Plugins"
+msgid "Pâté Plugin"
+msgstr "Python плагиндері"
 
-#. i18n: ectx: property (text), widget (KPushButton, reload)
-#: src/manager.ui:72
-msgid "Reload Plugins"
-msgstr "Плагиндерді қайта жүктеу"
+#: src/plugin.cpp:67
+#, fuzzy
+#| msgid "Pâté host for Python plugins"
+msgid "Pâté host for Python plugins"
+msgstr "Python плагиндерінің Pâté хосты"
 
-#: src/plugin.cpp:127 src/plugins/cmake_utils/cmake_utils.py:422
-msgctxt "@title:window"
-msgid "Attention"
-msgstr "Байқаңыз"
-
-#: src/plugin.cpp:128
-msgctxt "@info"
-msgid "<application>kate</application> must be restarted"
-msgstr ""
-
-#: src/plugin.cpp:158
+#: src/plugin.cpp:143
 #, fuzzy
 #| msgid "Pate engine could not be initialised"
 msgctxt "@title:window"
 msgid "Pate engine could not be initialised"
 msgstr "Pate тетігі бастау күйіне келтірілмеді"
 
-#: src/plugin.cpp:235
+#: src/plugin.cpp:220
 #, fuzzy
 #| msgid "Python Plugins"
 msgctxt "@title:row"
 msgid "Python Plugins"
 msgstr "Python плагиндері"
 
-#: src/plugin.cpp:251
+#: src/plugin.cpp:235
 #, fuzzy
 #| msgid "Pâté host for Python plugins"
 msgctxt "@title:tab"
 msgid "Pâté host for Python plugins"
 msgstr "Python плагиндерінің Pâté хосты"
 
-#: src/plugin.cpp:342
-#, fuzzy
-#| msgid "Documentation"
+#. i18n: ectx: Menu (pate)
+#: src/plugins/block_ui.rc:10 src/plugins/commentar_ui.rc:10
+#: src/plugins/expand_ui.rc:10 src/plugins/format_ui.rc:10 src/ui.rc:10
+msgid "&Pate"
+msgstr ""
+
+#. i18n: ectx: Menu (block)
+#: src/plugins/block_ui.rc:12
+msgid "Block Operations"
+msgstr ""
+
+#: src/plugins/cmake_utils/__init__.py:167
+#: src/plugins/cmake_utils/__init__.py:197
+#: src/plugins/cmake_utils/__init__.py:594
+#: src/plugins/cmake_utils/__init__.py:830 src/plugins/expand.py:255
+#: src/plugins/expand.py:313
+msgctxt "@title:window"
+msgid "Error"
+msgstr "Қате"
+
+#: src/plugins/cmake_utils/__init__.py:168
+msgctxt "@info:tooltip"
+msgid "Unable to open the document: <filename>%1</filename>"
+msgstr "Мына құжат ашылмады: <filename>%1</filename>"
+
+#: src/plugins/cmake_utils/__init__.py:177
+msgctxt "@title:window"
+msgid "<filename>CMakeLists.txt</filename> location"
+msgstr "<filename>CMakeLists.txt</filename> орналасуы"
+
+#: src/plugins/cmake_utils/__init__.py:198
+msgctxt "@info:tooltip"
+msgid "No such file <filename>%1</filename>"
+msgstr "<filename>%1</filename> деген файл жоқ"
+
+#: src/plugins/cmake_utils/__init__.py:290
+msgctxt "@label:listbox"
+msgid "CMake Auto Completion"
+msgstr "CMake автотолықтыру"
+
+#: src/plugins/cmake_utils/__init__.py:337
+msgctxt "@label:listbox"
+msgid "CMake Variables Completion"
+msgstr "CMake айнымалыларды толықтыру"
+
+#: src/plugins/cmake_utils/__init__.py:354
+msgctxt "@label:listbox"
+msgid "CMake Commands Completion"
+msgstr "CMake командаларын толықтыру"
+
+#: src/plugins/cmake_utils/__init__.py:423
+msgctxt "@title:window"
+msgid "Attention"
+msgstr "Байқаңыз"
+
+#: src/plugins/cmake_utils/__init__.py:424
+msgctxt "@info:tooltip"
+msgid "Sorry, no completion for <command>%1()</command>"
+msgstr "Ғафу етіңіз, <command>%1()</command> дегеннің толықтыруы жоқ"
+
+#: src/plugins/cmake_utils/__init__.py:434
+msgctxt "@label:listbox"
+msgid "CMake <command>%1()</command> Completion"
+msgstr "CMake <command>%1()</command> толықтыруы"
+
+#: src/plugins/cmake_utils/__init__.py:490
 msgctxt "@title:tab"
-msgid "Documentation"
-msgstr "Құжатамасы"
+msgid "CMake"
+msgstr "CMake"
 
-#: src/plugins/block.py:31
-msgctxt "@action:inmenu"
-msgid "Insert Char From Line Above"
-msgstr "Жоғарындағы жолдан таңбаны ендіру"
+#: src/plugins/cmake_utils/__init__.py:508
+msgctxt "@info/plain"
+msgid "Project build directory"
+msgstr "Жоба құрастыру каталогы"
 
-#: src/plugins/block.py:51
-msgctxt "@action:inmenu"
-msgid "Insert Char From Line Below"
-msgstr "Төмендегі жолдан таңбаны ендіру"
+#: src/plugins/cmake_utils/__init__.py:515
+msgctxt "@title:tab"
+msgid "CMake Cache Viewer"
+msgstr "CMake кэшін қарау құралы"
 
-#: src/plugins/block.py:71
-msgctxt "@action:inmenu"
-msgid "Kill Text After Cursor"
-msgstr "Меңзерден кейінгі мәтінді құрту"
+#: src/plugins/cmake_utils/__init__.py:531
+msgctxt "@title:tab"
+msgid "CMake Help"
+msgstr "CMake көмегі"
 
-#: src/plugins/block.py:86
-msgctxt "@action:inmenu"
-msgid "Kill Text Before Cursor"
-msgstr "Меңзердің алдындағы мәтінді құрту"
+#: src/plugins/cmake_utils/__init__.py:538
+msgctxt "@title:tab"
+msgid "Tool View Settings"
+msgstr "Құрал көрініс параметрлері"
 
-#: src/plugins/block.py:172
-msgctxt "@action:inmenu"
-msgid "Wrap into Round Brackets"
-msgstr "Дөңгелек жақшамен қоршау"
+#: src/plugins/cmake_utils/__init__.py:597
+msgctxt "@info:tooltip"
+msgid "Unable to get CMake cache content:<nl/><message>%1</message>"
+msgstr "CMake кэш мазмұны табылмады:<nl/><message>%1</message>"
 
-#: src/plugins/block.py:177
-msgctxt "@action:inmenu"
-msgid "Wrap into Square Brackets"
-msgstr "Тікбұрышты жақшамен қоршау"
+#: src/plugins/cmake_utils/__init__.py:618
+msgctxt "@item::inlistbox/plain"
+msgid "Commands"
+msgstr "Командалар"
 
-#: src/plugins/block.py:182
-msgctxt "@action:inmenu"
-msgid "Wrap into Curve Brackets"
-msgstr "Мәнерлі жақшамен қоршау"
+#: src/plugins/cmake_utils/__init__.py:646
+msgctxt "@item:inlistbox"
+msgid "Modules from %1 (%2)"
+msgstr "%1 (%2) модульдері"
 
-#: src/plugins/block.py:187
-msgctxt "@action:inmenu"
-msgid "Wrap into Angle Brackets"
-msgstr "Бұрышты жақшамен қоршау"
+#: src/plugins/cmake_utils/__init__.py:650
+msgctxt "@item:inlistbox"
+msgid "Standard modules (%1)"
+msgstr "Стандартты модульдері (%1)"
 
-#: src/plugins/block.py:192
-msgctxt "@action:inmenu"
-msgid "Wrap into Double Quotes"
-msgstr "Қос тырнақшамен қоршау"
+#: src/plugins/cmake_utils/__init__.py:655
+msgctxt "@item::inlistbox/plain"
+msgid "Modules (%1)"
+msgstr "Модульдер (%1)"
 
-#: src/plugins/block.py:197
+#: src/plugins/cmake_utils/__init__.py:674
+msgctxt "@item::inlistbox/plain"
+msgid "Policies"
+msgstr "Саясаттар"
+
+#: src/plugins/cmake_utils/__init__.py:687
+msgctxt "@item::inlistbox/plain"
+msgid "Properties"
+msgstr "Қасиеттер"
+
+#: src/plugins/cmake_utils/__init__.py:707
+msgctxt "@item::inlistbox/plain"
+msgid "Variables"
+msgstr "Айнымалылар"
+
+#: src/plugins/cmake_utils/__init__.py:831
+msgctxt "@info:tooltip"
+msgid "CMake executable test run failed:<nl/><message>%1</message>"
+msgstr "CMake орындалатын файды сынақ жегу жаңылысы:<nl/><message>%1</message>"
+
+#: src/plugins/cmake_utils/__init__.py:870
+msgctxt "@title:window"
+msgid "Select a Directory with CMake Modules"
+msgstr "CMake модульдер жатқан каталогын таңдау"
+
+#: src/plugins/cmake_utils/__init__.py:904
 msgctxt "@action:inmenu"
-msgid "Wrap into Quotes"
-msgstr "Тырнақшамен қоршау"
+msgid "CMake Helper Plugin"
+msgstr "CMake көмекші плагині"
+
+#: src/plugins/cmake_utils/__init__.py:905
+msgctxt "@title:group"
+msgid "CMake Helper Settings"
+msgstr "CMake көмекшісін баптау"
 
 #: src/plugins/cmake_utils/cmake_help_parser.py:122
 msgctxt "@item:intext"
@@ -346,144 +417,12 @@ msgctxt "@item:intext/plain"
 msgid "Specified path %1 does not look like a CMake build directory"
 msgstr "Келтірілген %1 жолы дұрыс CMake құрастыру каталогы емес сияқты"
 
-#: src/plugins/cmake_utils/cmake_utils.py:166
-#: src/plugins/cmake_utils/cmake_utils.py:196
-#: src/plugins/cmake_utils/cmake_utils.py:593
-#: src/plugins/cmake_utils/cmake_utils.py:829 src/plugins/expand.py:257
-#: src/plugins/expand.py:315
-msgctxt "@title:window"
-msgid "Error"
-msgstr "Қате"
-
-#: src/plugins/cmake_utils/cmake_utils.py:167
-msgctxt "@info:tooltip"
-msgid "Unable to open the document: <filename>%1</filename>"
-msgstr "Мына құжат ашылмады: <filename>%1</filename>"
-
-#: src/plugins/cmake_utils/cmake_utils.py:176
-msgctxt "@title:window"
-msgid "<filename>CMakeLists.txt</filename> location"
-msgstr "<filename>CMakeLists.txt</filename> орналасуы"
-
-#: src/plugins/cmake_utils/cmake_utils.py:197
-msgctxt "@info:tooltip"
-msgid "No such file <filename>%1</filename>"
-msgstr "<filename>%1</filename> деген файл жоқ"
-
-#: src/plugins/cmake_utils/cmake_utils.py:210
-msgctxt "@action:inmenu"
-msgid "Open CMakeLists..."
-msgstr "CMakeLists-ты ашу..."
-
-#: src/plugins/cmake_utils/cmake_utils.py:289
-msgctxt "@label:listbox"
-msgid "CMake Auto Completion"
-msgstr "CMake автотолықтыру"
-
-#: src/plugins/cmake_utils/cmake_utils.py:336
-msgctxt "@label:listbox"
-msgid "CMake Variables Completion"
-msgstr "CMake айнымалыларды толықтыру"
-
-#: src/plugins/cmake_utils/cmake_utils.py:353
-msgctxt "@label:listbox"
-msgid "CMake Commands Completion"
-msgstr "CMake командаларын толықтыру"
-
-#: src/plugins/cmake_utils/cmake_utils.py:423
-msgctxt "@info:tooltip"
-msgid "Sorry, no completion for <command>%1()</command>"
-msgstr "Ғафу етіңіз, <command>%1()</command> дегеннің толықтыруы жоқ"
-
-#: src/plugins/cmake_utils/cmake_utils.py:433
-msgctxt "@label:listbox"
-msgid "CMake <command>%1()</command> Completion"
-msgstr "CMake <command>%1()</command> толықтыруы"
-
-#: src/plugins/cmake_utils/cmake_utils.py:489
-msgctxt "@title:tab"
-msgid "CMake"
-msgstr "CMake"
-
-#: src/plugins/cmake_utils/cmake_utils.py:507
-msgctxt "@info/plain"
-msgid "Project build directory"
-msgstr "Жоба құрастыру каталогы"
-
-#: src/plugins/cmake_utils/cmake_utils.py:514
-msgctxt "@title:tab"
-msgid "CMake Cache Viewer"
-msgstr "CMake кэшін қарау құралы"
-
-#: src/plugins/cmake_utils/cmake_utils.py:530
-msgctxt "@title:tab"
-msgid "CMake Help"
-msgstr "CMake көмегі"
-
-#: src/plugins/cmake_utils/cmake_utils.py:537
-msgctxt "@title:tab"
-msgid "Tool View Settings"
-msgstr "Құрал көрініс параметрлері"
-
-#: src/plugins/cmake_utils/cmake_utils.py:596
-msgctxt "@info:tooltip"
-msgid "Unable to get CMake cache content:<nl/><message>%1</message>"
-msgstr "CMake кэш мазмұны табылмады:<nl/><message>%1</message>"
-
-#: src/plugins/cmake_utils/cmake_utils.py:617
-msgctxt "@item::inlistbox/plain"
-msgid "Commands"
-msgstr "Командалар"
-
-#: src/plugins/cmake_utils/cmake_utils.py:645
-msgctxt "@item:inlistbox"
-msgid "Modules from %1 (%2)"
-msgstr "%1 (%2) модульдері"
-
-#: src/plugins/cmake_utils/cmake_utils.py:649
-msgctxt "@item:inlistbox"
-msgid "Standard modules (%1)"
-msgstr "Стандартты модульдері (%1)"
-
-#: src/plugins/cmake_utils/cmake_utils.py:654
-msgctxt "@item::inlistbox/plain"
-msgid "Modules (%1)"
-msgstr "Модульдер (%1)"
-
-#: src/plugins/cmake_utils/cmake_utils.py:673
-msgctxt "@item::inlistbox/plain"
-msgid "Policies"
-msgstr "Саясаттар"
-
-#: src/plugins/cmake_utils/cmake_utils.py:686
-msgctxt "@item::inlistbox/plain"
-msgid "Properties"
-msgstr "Қасиеттер"
-
-#: src/plugins/cmake_utils/cmake_utils.py:706
-msgctxt "@item::inlistbox/plain"
-msgid "Variables"
-msgstr "Айнымалылар"
-
-#: src/plugins/cmake_utils/cmake_utils.py:830
-msgctxt "@info:tooltip"
-msgid "CMake executable test run failed:<nl/><message>%1</message>"
-msgstr "CMake орындалатын файды сынақ жегу жаңылысы:<nl/><message>%1</message>"
-
-#: src/plugins/cmake_utils/cmake_utils.py:869
-msgctxt "@title:window"
-msgid "Select a Directory with CMake Modules"
-msgstr "CMake модульдер жатқан каталогын таңдау"
-
-#: src/plugins/cmake_utils/cmake_utils.py:903
-msgctxt "@action:inmenu"
-msgid "CMake Helper Plugin"
-msgstr "CMake көмекші плагині"
-
-#: src/plugins/cmake_utils/cmake_utils.py:904
-msgctxt "@title:group"
-msgid "CMake Helper Settings"
-msgstr "CMake көмекшісін баптау"
+#. i18n: ectx: Menu (file)
+#: src/plugins/cmake_utils/cmake_utils_ui.rc:10
+#, fuzzy
+#| msgid "File"
+msgid "&File"
+msgstr "Файл"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, cmakeSettings)
 #: src/plugins/cmake_utils/settings.ui:6
@@ -659,17 +598,12 @@ msgstr ""
 msgid "Try to beautify the help output"
 msgstr "Көмек шығысын әсемдетіп көру"
 
-#: src/plugins/color_tools.py:97
+#: src/plugins/color_tools.py:101
 msgctxt "@action:button"
 msgid "&Other..."
 msgstr "&Басқа..."
 
-#: src/plugins/color_tools.py:242
-msgctxt "@action:inmenu"
-msgid "Insert Color"
-msgstr "Түсін енгізу"
-
-#: src/plugins/color_tools.py:339
+#: src/plugins/color_tools.py:334
 msgctxt "@title:tab"
 msgid "Palette"
 msgstr "Палитра"
@@ -684,87 +618,37 @@ msgstr "Назардағы құжатта #colors дегенді қайта қа
 msgid "Update"
 msgstr "Жаңарту"
 
-#: src/plugins/commentar.py:175
-msgctxt "@action:inmenu"
-msgid "Inline Comment"
-msgstr "Құрамындағы түсініктеме"
-
-#: src/plugins/commentar.py:235
-msgctxt "@action:inmenu"
-msgid "Move Comment Above"
-msgstr "Түсініктемені жоғары жылжыту"
-
-#: src/plugins/commentar.py:286
-msgctxt "@action:inmenu"
-msgid "Move Comment Inline"
-msgstr "Құрамындағы түсініктеме қылу"
-
-#: src/plugins/commentar.py:362
-msgctxt "@action:inmenu"
-msgid "Comment Block with <command>#if0</command>"
-msgstr "Блокты <command>#if0</command> деп түсініктеме қылу"
-
-#: src/plugins/commentar.py:396
-msgctxt "@action:inmenu"
-msgid "Toggle <icode>#if0</icode>/<icode>#if1</icode> Block"
-msgstr "<icode>#if0</icode>/<icode>#if1</icode> блок ауыстыруы"
-
-#: src/plugins/commentar.py:435 src/plugins/commentar.py:489
-#: src/plugins/commentar.py:521 src/plugins/commentar.py:681
-#: src/plugins/format.py:325 src/plugins/format.py:336
-#: src/plugins/format.py:352 src/plugins/format.py:399
-#: src/plugins/format.py:410 src/plugins/format.py:426
-#: src/plugins/libkatepate/decorators.py:61
-#: src/plugins/libkatepate/decorators.py:111
-#: src/plugins/libkatepate/decorators.py:140
+#: src/plugins/commentar.py:427 src/plugins/commentar.py:481
+#: src/plugins/commentar.py:509 src/plugins/commentar.py:669
+#: src/plugins/format.py:324 src/plugins/format.py:335
+#: src/plugins/format.py:351 src/plugins/format.py:398
+#: src/plugins/format.py:409 src/plugins/format.py:425
+#: src/plugins/libkatepate/decorators.py:62
+#: src/plugins/libkatepate/decorators.py:112
+#: src/plugins/libkatepate/decorators.py:141
 msgctxt "@title:window"
 msgid "Alert"
 msgstr "Дабыл"
 
-#: src/plugins/commentar.py:438 src/plugins/commentar.py:492
-#: src/plugins/commentar.py:524
+#: src/plugins/commentar.py:430 src/plugins/commentar.py:484
+#: src/plugins/commentar.py:512
 msgctxt "@info:tooltip"
 msgid ""
 "The cursor is not positioned in any <icode>#if0</icode>/<icode>#if1</icode> "
 "block"
 msgstr "Меңзер <icode>#if0</icode>/<icode>#if1</icode> блокта емес"
 
-#: src/plugins/commentar.py:444
-msgctxt "@action:inmenu"
-msgid "Remove <icode>#if0</icode> Block"
-msgstr "<icode>#if0</icode> блогын өшіру"
-
-#: src/plugins/commentar.py:499
-msgctxt "@action:inmenu"
-msgid "Select Current <icode>#if0</icode>/<icode>#if1</icode> Block"
-msgstr "Назардағы <icode>#if0</icode>/<icode>#if1</icode> блогын таңдау"
-
-#: src/plugins/commentar.py:627
-msgctxt "@action:inmenu"
-msgid "Transform Doxygen Comments"
-msgstr "Doxygen түсініктемелерін түрлендіру"
-
-#: src/plugins/commentar.py:684
+#: src/plugins/commentar.py:672
 msgctxt "@info:tooltip"
 msgid "Unable to detect a commented paragraph at cursor..."
 msgstr "Меңзер астында түсініктеме абзацы байқалмады..."
 
-#: src/plugins/commentar.py:740
-msgctxt "@action:inmenu"
-msgid "Shrink Comment Paragraph"
-msgstr "Түсініктеме абзаңын қысу"
-
-#: src/plugins/commentar.py:748
-msgctxt "@action:inmenu"
-msgid "Extend Comment Paragraph"
-msgstr "Түсініктеме абзаңын тарқату"
-
-#: src/plugins/commentar.py:808
+#: src/plugins/commentar.py:796
 msgctxt "@action:inmenu"
 msgid "Commentar Plugin"
 msgstr "Түсініктеме плагині"
 
-#: src/plugins/commentar.py:809
+#: src/plugins/commentar.py:797
 msgctxt "@title:group"
 msgid "Commentar Plugin Settings"
 msgstr "Түсініктеме плагинін баптауы"
@@ -773,6 +657,13 @@ msgstr "Түсініктеме плагинін баптауы"
 #: src/plugins/commentar_config.ui:13
 msgid "Same-line comment position"
 msgstr "Түсініктемесімен бір жолда орналасуы"
+
+#. i18n: ectx: Menu (comments)
+#: src/plugins/commentar_ui.rc:13
+#, fuzzy
+#| msgid "Comment"
+msgid "&Comments"
+msgstr "Түсініктеме"
 
 #: src/plugins/django_utils/django_settings.py:22
 msgid "Create Django Form"
@@ -827,47 +718,37 @@ msgstr "Өрнек үлгі пішіні"
 msgid "Pattern Model"
 msgstr "Өрнек үлгісі"
 
-#: src/plugins/expand.py:150
+#: src/plugins/expand.py:148
 msgctxt "@info"
 msgid "end of file reached"
 msgstr "файл соңына жетті"
 
-#: src/plugins/expand.py:156
+#: src/plugins/expand.py:154
 msgctxt "@info"
 msgid "end of line reached while searching for <icode>%1</icode>"
 msgstr "<icode>%1</icode> дегенді іздегенде файл соңына жетті"
 
-#: src/plugins/expand.py:214
-msgctxt "@action:inmenu"
-msgid "Expand Usage"
-msgstr "Тарқатуды қолдану"
-
-#: src/plugins/expand.py:221 src/plugins/expand.py:249
+#: src/plugins/expand.py:219 src/plugins/expand.py:247
 msgctxt "@title:window"
 msgid "Parse error"
 msgstr "Талдау қатесі"
 
-#: src/plugins/expand.py:237
-msgctxt "@action:inmenu a verb"
-msgid "Expand"
-msgstr "Тарқату"
-
-#: src/plugins/expand.py:258
+#: src/plugins/expand.py:256
 msgctxt "@info:tooltip"
 msgid "Expansion \"<icode>%1</icode>\" not found"
 msgstr "\"<icode>%1</icode>\" тарқатуы жоқ"
 
-#: src/plugins/expand.py:295
+#: src/plugins/expand.py:293
 msgctxt "@info"
 msgid "Traceback (most recent call last):<nl/>"
 msgstr "Кері трассалау (ең жуырдасы  - ең соңғы):<nl/>"
 
-#: src/plugins/expand.py:304
+#: src/plugins/expand.py:302
 msgctxt "@info"
 msgid "<link url=\"%1\">%2</link>"
 msgstr "<link url=\"%1\">%2</link>"
 
-#: src/plugins/expand.py:309
+#: src/plugins/expand.py:307
 msgctxt "@info"
 msgid ""
 "File <filename>\"(/[^\n"
@@ -876,19 +757,19 @@ msgstr ""
 "<filename>\"(/[^\n"
 "]+)\"</filename> файлы, жолы:"
 
-#: src/plugins/expand.py:316
+#: src/plugins/expand.py:314
 msgctxt "@info:tooltip"
 msgid "<bcode>%1</bcode>"
 msgstr "<bcode>%1</bcode>"
 
-#: src/plugins/expand.py:332
+#: src/plugins/expand.py:330
 msgctxt "@label:listbox"
 msgid "Expands Available"
 msgstr "Тарқатуы бар"
 
-#: src/plugins/format.py:122 src/plugins/format.py:154
-#: src/plugins/format.py:206 src/plugins/format.py:238
-#: src/plugins/format.py:263
+#: src/plugins/format.py:122 src/plugins/format.py:155
+#: src/plugins/format.py:207 src/plugins/format.py:240
+#: src/plugins/format.py:265
 msgctxt "@info"
 msgid ""
 "Misbalanced brackets: at <numid>%1</numid>,<numid>%2</numid> and <numid>%3</"
@@ -897,27 +778,80 @@ msgstr ""
 "Орынсыз жақшалар мұнда: <numid>%1</numid>,<numid>%2</numid> and <numid>%3</"
 "numid>,<numid>%4</numid>"
 
-#: src/plugins/format.py:306
-msgctxt "@action:inmenu `boost`, means http://boost.org library"
-msgid "Boost-like Format Params"
-msgstr "Boost-пішімді параметрлер"
-
-#: src/plugins/format.py:328 src/plugins/format.py:339
-#: src/plugins/format.py:355 src/plugins/format.py:402
-#: src/plugins/format.py:413 src/plugins/format.py:429
+#: src/plugins/format.py:327 src/plugins/format.py:338
+#: src/plugins/format.py:354 src/plugins/format.py:401
+#: src/plugins/format.py:412 src/plugins/format.py:428
 msgctxt "@info:tooltip"
 msgid "Failed to parse C++ expression:<nl/><message>%1</message>"
 msgstr "C++ өрнегін талдау жаңылысы:<nl/><message>%1</message>"
 
-#: src/plugins/format.py:340 src/plugins/format.py:414
+#: src/plugins/format.py:339 src/plugins/format.py:413
 msgctxt "@info:tooltip"
 msgid "Did not find anything to format"
 msgstr "Пішімдейтін ештеңе жоқ"
 
-#: src/plugins/format.py:386
+#: src/plugins/gid/__init__.py:194
+msgid "File"
+msgstr "Файл"
+
+#: src/plugins/gid/__init__.py:194
+msgid "Match"
+msgstr "Сәйкестік"
+
+#: src/plugins/gid/__init__.py:360
+msgid "Filter '%1' is not a valid regular expression"
+msgstr "'%1' сүзгісі дұрыс үлгі өрнегі емес"
+
+#: src/plugins/gid/__init__.py:360
+msgid "Invalid filter"
+msgstr "Жарамсыз сүзгі"
+
+#: src/plugins/gid/__init__.py:392
+msgid "Scanned %1 of %2 files in %3 seconds"
+msgstr "%1/%2 файл %3 секундта зерттелді"
+
+#: src/plugins/gid/__init__.py:393
+msgid "Scan more files?"
+msgstr "Енді қай файлдарды зерттеу?"
+
+#: src/plugins/gid/__init__.py:393
+msgid "All Files"
+msgstr "Бүкіл файлдар"
+
+#: src/plugins/gid/__init__.py:393
+msgid "More Files"
+msgstr "Қосымша файлдар"
+
+#: src/plugins/gid/__init__.py:478
+msgid "gid Search"
+msgstr "gid іздеуі"
+
+#: src/plugins/gid/__init__.py:617
+msgid "ID database error"
+msgstr "ID деректер қорының қатесі"
+
+#: src/plugins/gid/__init__.py:634
+#, no-python-format
+msgid "'%1' does not contain '%2'"
+msgstr "'%1' дегенде '%2' деген жоқ"
+
+#: src/plugins/gid/__init__.py:634
+#, python-format
+msgid "Cannot use %i"
+msgstr "%i дегенді пайдалануға болмайды"
+
+#: src/plugins/gid/__init__.py:714
 msgctxt "@action:inmenu"
-msgid "Unformat Function Params"
-msgstr "Функция параметрлерінің пішімдеуін алып тастау"
+msgid "GNU idutils"
+msgstr ""
+
+#: src/plugins/gid/__init__.py:714
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "gid(1) token Lookup and Navigation"
+msgctxt "@title:group"
+msgid "<command section='1'>gid</command> token Lookup and Navigation"
+msgstr "gid(1) кілтін қарастырып шолу"
 
 #. i18n: ectx: property (text), widget (QLabel, labelIdFile)
 #: src/plugins/gid/config.ui:12
@@ -1077,86 +1011,13 @@ msgstr "Мына жұрнақты файлдар бояулансын:"
 msgid "Use .h;.hxx to highlight files which may contain declarations."
 msgstr "Жариялаулары болуы мүмкін файлдарды .h;.hxx деп белгілеу."
 
-#: src/plugins/gid/gid.py:194
-msgid "File"
-msgstr "Файл"
-
-#: src/plugins/gid/gid.py:194
-msgid "Match"
-msgstr "Сәйкестік"
-
-#: src/plugins/gid/gid.py:360
-msgid "Filter '%1' is not a valid regular expression"
-msgstr "'%1' сүзгісі дұрыс үлгі өрнегі емес"
-
-#: src/plugins/gid/gid.py:360
-msgid "Invalid filter"
-msgstr "Жарамсыз сүзгі"
-
-#: src/plugins/gid/gid.py:392
-msgid "Scanned %1 of %2 files in %3 seconds"
-msgstr "%1/%2 файл %3 секундта зерттелді"
-
-#: src/plugins/gid/gid.py:393
-msgid "Scan more files?"
-msgstr "Енді қай файлдарды зерттеу?"
-
-#: src/plugins/gid/gid.py:393
-msgid "All Files"
-msgstr "Бүкіл файлдар"
-
-#: src/plugins/gid/gid.py:393
-msgid "More Files"
-msgstr "Қосымша файлдар"
-
-#: src/plugins/gid/gid.py:478
-msgid "gid Search"
-msgstr "gid іздеуі"
-
-#: src/plugins/gid/gid.py:617
-msgid "ID database error"
-msgstr "ID деректер қорының қатесі"
-
-#: src/plugins/gid/gid.py:634
-#, no-python-format
-msgid "'%1' does not contain '%2'"
-msgstr "'%1' дегенде '%2' деген жоқ"
-
-#: src/plugins/gid/gid.py:634
-#, python-format
-msgid "Cannot use %i"
-msgstr "%i дегенді пайдалануға болмайды"
-
-#: src/plugins/gid/gid.py:671
-msgctxt "@action:inmenu"
-msgid "Browse Tokens"
-msgstr "Кілтерді шолу"
-
-#: src/plugins/gid/gid.py:671 src/plugins/gid/gid.py:687
-#: src/plugins/gid/gid.py:704
-msgctxt "@action:inmenu"
+#. i18n: ectx: Menu (gid)
+#: src/plugins/gid/gid_ui.rc:10
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "&Gid"
 msgid "&Gid"
 msgstr "&Gid"
-
-#: src/plugins/gid/gid.py:687
-msgctxt "@action:inmenu"
-msgid "Lookup Current Token"
-msgstr "Назардағы кілттерді қарастыру"
-
-#: src/plugins/gid/gid.py:704
-msgctxt "@action:inmenu"
-msgid "Go to Definition"
-msgstr "Анықтамасына ауысу"
-
-#: src/plugins/gid/gid.py:714
-msgctxt "@action:inmenu"
-msgid "gid"
-msgstr "gid"
-
-#: src/plugins/gid/gid.py:714
-msgctxt "@title:group"
-msgid "gid(1) token Lookup and Navigation"
-msgstr "gid(1) кілтін қарастырып шолу"
 
 #. i18n: ectx: property (whatsThis), widget (KHistoryComboBox, filter)
 #: src/plugins/gid/tool.ui:17
@@ -1213,27 +1074,8 @@ msgstr "Сүзгі:"
 #, fuzzy
 #| msgid "JavaScript Utils"
 msgctxt "@title:group"
-msgid "JavaScript Utilities"
+msgid "JavaScript Utilites"
 msgstr "JavaScript утилиталары"
-
-#: src/plugins/js_utils/__init__.py:50
-#, fuzzy
-#| msgid "JavaScript Utils"
-msgctxt "@action:inmenu"
-msgid "Lint JavaScript"
-msgstr "JavaScript утилиталары"
-
-#: src/plugins/js_utils/__init__.py:56
-msgctxt "@action:inmenu"
-msgid "jQuery Ready"
-msgstr ""
-
-#: src/plugins/js_utils/__init__.py:62
-#, fuzzy
-#| msgid "Pretty JSON"
-msgctxt "@action:inmenu"
-msgid "Prettify JSON"
-msgstr "Безендірілген JSON"
 
 #: src/plugins/js_utils/js_autocomplete.py:33
 #, fuzzy
@@ -1319,6 +1161,13 @@ msgstr ""
 msgid "jQuery ready Snippet"
 msgstr "Дайын jQuery үзіндісі"
 
+#. i18n: ectx: Menu (javascript)
+#: src/plugins/js_utils/js_utils_ui.rc:10
+#, fuzzy
+#| msgid "JavaScript Utils"
+msgid "&JavaScript"
+msgstr "JavaScript утилиталары"
+
 #: src/plugins/js_utils/json_pretty.py:45
 #, fuzzy
 #| msgid "Please select JSON text and press: %1"
@@ -1337,50 +1186,50 @@ msgstr "Таңдалған мәтін дұрыс JSON емес: %1"
 msgid "Autopate"
 msgstr "Autopate"
 
-#: src/plugins/libkatepate/decorators.py:64
+#: src/plugins/libkatepate/decorators.py:65
 msgctxt "@info:tooltip placeholder is a mime-type"
 msgid "This action has no sense for <command>%1</command> documents"
 msgstr "Бұл амалдын <command>%1</command> құжаттар үшін мәні жоқ"
 
-#: src/plugins/libkatepate/decorators.py:84
+#: src/plugins/libkatepate/decorators.py:85
 msgctxt "@title:window"
 msgid "Sorry..."
 msgstr "Ғафу етіңіз..."
 
-#: src/plugins/libkatepate/decorators.py:87
+#: src/plugins/libkatepate/decorators.py:88
 msgctxt "@info:tooltip placeholder is a mime-type"
 msgid "<command>%1</command> is unsupported document type."
 msgstr "<command>%1</command> деген танымайтын құжат түрі."
 
-#: src/plugins/libkatepate/decorators.py:114
+#: src/plugins/libkatepate/decorators.py:115
 msgctxt "@info:tooltip"
 msgid "This operation is for block selection mode"
 msgstr "Бұл операция блокты таңдау режімі үшін"
 
-#: src/plugins/libkatepate/decorators.py:119
+#: src/plugins/libkatepate/decorators.py:120
 msgctxt "@info:tooltip"
 msgid "This operation is for normal selection mode"
 msgstr "Бұл операция кәдімгі таңдау режімі үшін"
 
-#: src/plugins/libkatepate/decorators.py:137
+#: src/plugins/libkatepate/decorators.py:138
 msgctxt "@info:tooltip"
 msgid "This operation cannot be performed while text is selected"
 msgstr "Бұл операцияны орындау үшін мәтін таңдауы болмау керек"
 
-#: src/plugins/libkatepate/decorators.py:139
+#: src/plugins/libkatepate/decorators.py:140
 msgctxt "@info:tooltip"
 msgid "Text must be selected to perform this operation"
 msgstr "Бұл операцияны орындау үшін мәтінді таңдау керек"
 
-#: src/plugins/libkatepate/errors.py:44
+#: src/plugins/libkatepate/errors.py:45
 msgid "You need install the following packages:\n"
 msgstr "Келесі дестелерді орнатү керек:\n"
 
-#: src/plugins/libkatepate/errors.py:54
+#: src/plugins/libkatepate/errors.py:55
 msgid "\t%1. Use easy_install (or pip install) %1==%2"
 msgstr "\t%1. easy_install қолданыңыз (немесе pip орнату) %1==%2"
 
-#: src/plugins/libkatepate/errors.py:113
+#: src/plugins/libkatepate/errors.py:114
 msgid ""
 "\n"
 "\n"
@@ -1390,11 +1239,11 @@ msgstr ""
 "\n"
 "Және басқа қателері"
 
-#: src/plugins/libkatepate/errors.py:146
+#: src/plugins/libkatepate/errors.py:147
 msgid "~*~ Position: (%1, %2)"
 msgstr "~*~ Орны: (%1, %2)"
 
-#: src/plugins/libkatepate/errors.py:148
+#: src/plugins/libkatepate/errors.py:149
 msgid "~*~ Line: %1"
 msgstr "~*~ Жолы: %1"
 
@@ -1682,11 +1531,10 @@ msgstr "IPython pdb үзіндісі"
 msgid "import ipdb; ipdb.set_trace()"
 msgstr "ipdb; ipdb.set_trace() импорты"
 
-#: src/plugins/xml_pretty.py:64
-msgid "Please select XML text and press: %1"
-msgstr "XML мәтінді таңдап мынаны басыңыз: %1"
-
-#: src/plugins/xml_pretty.py:80
+#: src/plugins/xml_pretty.py:81
+#, fuzzy
+#| msgid "The selected text is not valid XML: %1"
+msgctxt "@info:tooltip"
 msgid "The selected text is not valid XML: %1"
 msgstr "Таңдалған мәтін дұрыс XML емес: %1"
 
@@ -1705,6 +1553,171 @@ msgstr "Жаңа жолы:"
 #: src/plugins/xml_pretty.ui:36 src/plugins/xml_pretty.ui:46
 msgid "\\\\t"
 msgstr "\\\\t"
+
+#. i18n: ectx: Menu (xml)
+#: src/plugins/xml_pretty_ui.rc:10
+msgid "&XML"
+msgstr ""
+
+#. i18n: ectx: Menu (help)
+#: src/ui.rc:15
+#, fuzzy
+#| msgid "Help:"
+msgid "&Help"
+msgstr "Көмек:"
+
+#~ msgid "Manager"
+#~ msgstr "Менеджер"
+
+#, fuzzy
+#~| msgid ""
+#~| "Reloading a running plugin may have unpredictable effects. Consider "
+#~| "saving your work before using this command."
+#~ msgid ""
+#~ "<html><head/><body><p><span style=\" font-weight:600;\">Caution:</span> "
+#~ "Reloading a running plugin may have unpredictable effects. Consider "
+#~ "saving your work before using this command.</p></body></html>"
+#~ msgstr ""
+#~ "Жегілген плагинін қайта жүктеген қауіпті. Бұл бұйрықтан бұрын жұмысыңызды "
+#~ "сақтаған жөн."
+
+#~ msgid "Reload Plugins"
+#~ msgstr "Плагиндерді қайта жүктеу"
+
+#, fuzzy
+#~| msgid "Documentation"
+#~ msgctxt "@title:tab"
+#~ msgid "Documentation"
+#~ msgstr "Құжатамасы"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Insert Char From Line Above"
+#~ msgstr "Жоғарындағы жолдан таңбаны ендіру"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Insert Char From Line Below"
+#~ msgstr "Төмендегі жолдан таңбаны ендіру"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Kill Text After Cursor"
+#~ msgstr "Меңзерден кейінгі мәтінді құрту"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Kill Text Before Cursor"
+#~ msgstr "Меңзердің алдындағы мәтінді құрту"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Round Brackets"
+#~ msgstr "Дөңгелек жақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Square Brackets"
+#~ msgstr "Тікбұрышты жақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Curve Brackets"
+#~ msgstr "Мәнерлі жақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Angle Brackets"
+#~ msgstr "Бұрышты жақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Double Quotes"
+#~ msgstr "Қос тырнақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Wrap into Quotes"
+#~ msgstr "Тырнақшамен қоршау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Open CMakeLists..."
+#~ msgstr "CMakeLists-ты ашу..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Insert Color"
+#~ msgstr "Түсін енгізу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Inline Comment"
+#~ msgstr "Құрамындағы түсініктеме"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Move Comment Above"
+#~ msgstr "Түсініктемені жоғары жылжыту"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Move Comment Inline"
+#~ msgstr "Құрамындағы түсініктеме қылу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Comment Block with <command>#if0</command>"
+#~ msgstr "Блокты <command>#if0</command> деп түсініктеме қылу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Toggle <icode>#if0</icode>/<icode>#if1</icode> Block"
+#~ msgstr "<icode>#if0</icode>/<icode>#if1</icode> блок ауыстыруы"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove <icode>#if0</icode> Block"
+#~ msgstr "<icode>#if0</icode> блогын өшіру"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Select Current <icode>#if0</icode>/<icode>#if1</icode> Block"
+#~ msgstr "Назардағы <icode>#if0</icode>/<icode>#if1</icode> блогын таңдау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Transform Doxygen Comments"
+#~ msgstr "Doxygen түсініктемелерін түрлендіру"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Shrink Comment Paragraph"
+#~ msgstr "Түсініктеме абзаңын қысу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Extend Comment Paragraph"
+#~ msgstr "Түсініктеме абзаңын тарқату"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Expand Usage"
+#~ msgstr "Тарқатуды қолдану"
+
+#~ msgctxt "@action:inmenu a verb"
+#~ msgid "Expand"
+#~ msgstr "Тарқату"
+
+#~ msgctxt "@action:inmenu `boost`, means http://boost.org library"
+#~ msgid "Boost-like Format Params"
+#~ msgstr "Boost-пішімді параметрлер"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Unformat Function Params"
+#~ msgstr "Функция параметрлерінің пішімдеуін алып тастау"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Browse Tokens"
+#~ msgstr "Кілтерді шолу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Lookup Current Token"
+#~ msgstr "Назардағы кілттерді қарастыру"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Go to Definition"
+#~ msgstr "Анықтамасына ауысу"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "gid"
+#~ msgstr "gid"
+
+#, fuzzy
+#~| msgid "Pretty JSON"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Prettify JSON"
+#~ msgstr "Безендірілген JSON"
+
+#~ msgid "Please select XML text and press: %1"
+#~ msgstr "XML мәтінді таңдап мынаны басыңыз: %1"
 
 #~ msgid "Enable JavaScript Autocomplete (needs close and open kate editor)"
 #~ msgstr "JavaScript автотолықтыруы болсын (kate-ті жаңадан жегу керек)"
