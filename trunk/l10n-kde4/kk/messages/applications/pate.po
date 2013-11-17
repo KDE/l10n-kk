@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-16 01:21+0000\n"
+"POT-Creation-Date: 2013-11-17 01:23+0000\n"
 "PO-Revision-Date: 2013-11-17 03:57+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,51 +27,46 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: src/engine.cpp:212
+#: src/engine.cpp:215
 msgctxt "@info:tooltip "
 msgid "Cannot load built-in <icode>pate</icode> module"
 msgstr ""
 
-#: src/engine.cpp:228
+#: src/engine.cpp:231
 msgctxt "@info:tooltip "
 msgid "Cannot update Python paths"
 msgstr ""
 
-#: src/engine.cpp:244
+#: src/engine.cpp:247
 msgctxt "@info:tooltip "
 msgid "No <icode>pate</icode> built-in module"
 msgstr ""
 
-#: src/engine.cpp:263
-msgctxt "@info:tooltip "
-msgid "Cannot load <icode>kate</icode> module"
-msgstr ""
-
-#: src/engine.cpp:305
-#| msgid "Name"
+#: src/engine.cpp:303
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Атауы"
 
-#: src/engine.cpp:307
-#| msgid "Comment"
+#: src/engine.cpp:305
 msgctxt "@title:column"
 msgid "Comment"
 msgstr "Түсініктеме"
 
-#: src/engine.cpp:493
+#: src/engine.cpp:501
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Unable to find the module specified <application>%1</application>"
 msgstr ""
 
-#: src/engine.cpp:520
+#: src/engine.cpp:556
 #, kde-format
 msgctxt "@info:tooltip"
-msgid "Failure on checking dependency <application>%1</application>:<nl/>%2"
+msgid ""
+"<qt>Failure on checking dependency <code>%1</code> (<code>%2</code>):<br/"
+"><pre>%3</pre></qt>"
 msgstr ""
 
-#: src/engine.cpp:583
+#: src/engine.cpp:620
 #, fuzzy, kde-format
 #| msgid "Not Loaded: %1"
 msgctxt "@info:tooltip"
@@ -193,7 +188,7 @@ msgstr "Программисттік сілтемелер"
 msgid "Select a Plugin or Built-in Module"
 msgstr "Плагинді не құрамындағы модулін таңдау"
 
-#: src/kate/decorators.py:206
+#: src/kate/decorators.py:219
 msgctxt "@title:window"
 msgid "Error in action <icode>%1</icode>"
 msgstr "<icode>%1</icode> амалында қате"
@@ -206,32 +201,32 @@ msgid "Error: The Python engine could not be initialized"
 msgstr "ҚАТЕ: Python тетігі бастау күйіне келтірілмеді"
 
 #: src/plugin.cpp:65
-#| msgid "Python Plugins"
 msgid "Pâté Plugin"
 msgstr "Pâté плагині"
 
 #: src/plugin.cpp:67
-#| msgid "Pâté host for Python plugins"
 msgid "Pâté host for Python plugins"
 msgstr "Python плагиндерінің Pâté хосты"
 
 #: src/plugin.cpp:143
-#| msgid "Pate engine could not be initialised"
 msgctxt "@title:window"
 msgid "Pate engine could not be initialised"
 msgstr "Pate тетігі бастау күйіне келтірілмеді"
 
-#: src/plugin.cpp:220
-#| msgid "Python Plugins"
+#: src/plugin.cpp:218
 msgctxt "@title:row"
 msgid "Python Plugins"
 msgstr "Python плагиндері"
 
-#: src/plugin.cpp:235
-#| msgid "Pâté host for Python plugins"
+#: src/plugin.cpp:233
 msgctxt "@title:tab"
 msgid "Pâté host for Python plugins"
 msgstr "Python плагиндерінің Pâté хосты"
+
+#: src/plugin.cpp:312
+msgctxt "@info:tooltip "
+msgid "Cannot load <icode>kate</icode> module"
+msgstr ""
 
 #. i18n: ectx: Menu (pate)
 #: src/plugins/block_ui.rc:10 src/plugins/commentar_ui.rc:10
@@ -247,8 +242,8 @@ msgstr ""
 #: src/plugins/cmake_utils/__init__.py:167
 #: src/plugins/cmake_utils/__init__.py:197
 #: src/plugins/cmake_utils/__init__.py:594
-#: src/plugins/cmake_utils/__init__.py:830 src/plugins/expand.py:255
-#: src/plugins/expand.py:313
+#: src/plugins/cmake_utils/__init__.py:830 src/plugins/expand.py:256
+#: src/plugins/expand.py:314 src/plugins/libkatepate/errors.py:77
 msgctxt "@title:window"
 msgid "Error"
 msgstr "Қате"
@@ -374,7 +369,10 @@ msgid "Select a Directory with CMake Modules"
 msgstr "CMake модульдер жатқан каталогын таңдау"
 
 #: src/plugins/cmake_utils/__init__.py:904
-msgctxt "@action:inmenu"
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "CMake Helper Plugin"
+msgctxt "@item:inmenu"
 msgid "CMake Helper Plugin"
 msgstr "CMake көмекші плагині"
 
@@ -412,7 +410,6 @@ msgstr "Келтірілген %1 жолы дұрыс CMake құрастыру �
 
 #. i18n: ectx: Menu (file)
 #: src/plugins/cmake_utils/cmake_utils_ui.rc:10
-#| msgid "File"
 msgid "&File"
 msgstr "&Файл"
 
@@ -610,8 +607,8 @@ msgstr "Назардағы құжатта #colors дегенді қайта қа
 msgid "Update"
 msgstr "Жаңарту"
 
-#: src/plugins/commentar.py:427 src/plugins/commentar.py:481
-#: src/plugins/commentar.py:509 src/plugins/commentar.py:669
+#: src/plugins/commentar.py:419 src/plugins/commentar.py:471
+#: src/plugins/commentar.py:497 src/plugins/commentar.py:656
 #: src/plugins/format.py:324 src/plugins/format.py:335
 #: src/plugins/format.py:351 src/plugins/format.py:398
 #: src/plugins/format.py:409 src/plugins/format.py:425
@@ -622,25 +619,28 @@ msgctxt "@title:window"
 msgid "Alert"
 msgstr "Дабыл"
 
-#: src/plugins/commentar.py:430 src/plugins/commentar.py:484
-#: src/plugins/commentar.py:512
+#: src/plugins/commentar.py:422 src/plugins/commentar.py:474
+#: src/plugins/commentar.py:500
 msgctxt "@info:tooltip"
 msgid ""
 "The cursor is not positioned in any <icode>#if0</icode>/<icode>#if1</icode> "
 "block"
 msgstr "Меңзер <icode>#if0</icode>/<icode>#if1</icode> блокта емес"
 
-#: src/plugins/commentar.py:672
+#: src/plugins/commentar.py:659
 msgctxt "@info:tooltip"
 msgid "Unable to detect a commented paragraph at cursor..."
 msgstr "Меңзер астында түсініктеме абзацы байқалмады..."
 
-#: src/plugins/commentar.py:796
-msgctxt "@action:inmenu"
+#: src/plugins/commentar.py:779
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Commentar Plugin"
+msgctxt "@item:inmenu"
 msgid "Commentar Plugin"
 msgstr "Түсініктеме плагині"
 
-#: src/plugins/commentar.py:797
+#: src/plugins/commentar.py:780
 msgctxt "@title:group"
 msgid "Commentar Plugin Settings"
 msgstr "Түсініктеме плагинін баптауы"
@@ -710,37 +710,37 @@ msgstr "Өрнек үлгі пішіні"
 msgid "Pattern Model"
 msgstr "Өрнек үлгісі"
 
-#: src/plugins/expand.py:148
+#: src/plugins/expand.py:149
 msgctxt "@info"
 msgid "end of file reached"
 msgstr "файл соңына жетті"
 
-#: src/plugins/expand.py:154
+#: src/plugins/expand.py:155
 msgctxt "@info"
 msgid "end of line reached while searching for <icode>%1</icode>"
 msgstr "<icode>%1</icode> дегенді іздегенде файл соңына жетті"
 
-#: src/plugins/expand.py:219 src/plugins/expand.py:247
+#: src/plugins/expand.py:220 src/plugins/expand.py:248
 msgctxt "@title:window"
 msgid "Parse error"
 msgstr "Талдау қатесі"
 
-#: src/plugins/expand.py:256
+#: src/plugins/expand.py:257
 msgctxt "@info:tooltip"
 msgid "Expansion \"<icode>%1</icode>\" not found"
 msgstr "\"<icode>%1</icode>\" тарқатуы жоқ"
 
-#: src/plugins/expand.py:293
+#: src/plugins/expand.py:294
 msgctxt "@info"
 msgid "Traceback (most recent call last):<nl/>"
 msgstr "Кері трассалау (ең жуырдасы  - ең соңғы):<nl/>"
 
-#: src/plugins/expand.py:302
+#: src/plugins/expand.py:303
 msgctxt "@info"
 msgid "<link url=\"%1\">%2</link>"
 msgstr "<link url=\"%1\">%2</link>"
 
-#: src/plugins/expand.py:307
+#: src/plugins/expand.py:308
 msgctxt "@info"
 msgid ""
 "File <filename>\"(/[^\n"
@@ -749,12 +749,12 @@ msgstr ""
 "<filename>\"(/[^\n"
 "]+)\"</filename> файлы, жолы:"
 
-#: src/plugins/expand.py:314
+#: src/plugins/expand.py:315
 msgctxt "@info:tooltip"
 msgid "<bcode>%1</bcode>"
 msgstr "<bcode>%1</bcode>"
 
-#: src/plugins/expand.py:330
+#: src/plugins/expand.py:331
 msgctxt "@label:listbox"
 msgid "Expands Available"
 msgstr "Тарқатуы бар"
@@ -832,12 +832,12 @@ msgstr "'%1' дегенде '%2' деген жоқ"
 msgid "Cannot use %i"
 msgstr "%i дегенді пайдалануға болмайды"
 
-#: src/plugins/gid/__init__.py:714
-msgctxt "@action:inmenu"
+#: src/plugins/gid/__init__.py:715
+msgctxt "@item:inmenu"
 msgid "GNU idutils"
 msgstr ""
 
-#: src/plugins/gid/__init__.py:714
+#: src/plugins/gid/__init__.py:716
 #, fuzzy
 #| msgctxt "@title:group"
 #| msgid "gid(1) token Lookup and Navigation"
@@ -1062,11 +1062,18 @@ msgstr "Алдыңғы орындар тізімі. Керегін белсен�
 msgid "Filter:"
 msgstr "Сүзгі:"
 
-#: src/plugins/js_utils/__init__.py:39
+#: src/plugins/js_utils/__init__.py:41
+#, fuzzy
+#| msgid "JavaScript Utils"
+msgctxt "@item:inmenu"
+msgid "JavaScript Utilities"
+msgstr "JavaScript утилиталары"
+
+#: src/plugins/js_utils/__init__.py:42
 #, fuzzy
 #| msgid "JavaScript Utils"
 msgctxt "@title:group"
-msgid "JavaScript Utilites"
+msgid "JavaScript Utilities Options"
 msgstr "JavaScript утилиталары"
 
 #: src/plugins/js_utils/js_autocomplete.py:33
@@ -1083,12 +1090,12 @@ msgctxt "@title:menu"
 msgid "jQuery autocomplete"
 msgstr "jQuery автотолықтыруы"
 
-#: src/plugins/js_utils/js_lint.py:72
+#: src/plugins/js_utils/js_lint.py:70
 msgctxt "@info:status"
 msgid "<application>%1</application> OK"
 msgstr ""
 
-#: src/plugins/js_utils/js_lint.py:88
+#: src/plugins/js_utils/js_lint.py:86
 msgctxt "@info:status"
 msgid "<application>%1</application> Errors:"
 msgstr ""
@@ -1160,14 +1167,7 @@ msgstr "Дайын jQuery үзіндісі"
 msgid "&JavaScript"
 msgstr "JavaScript утилиталары"
 
-#: src/plugins/js_utils/json_pretty.py:45
-#, fuzzy
-#| msgid "Please select JSON text and press: %1"
-msgctxt "@info:status"
-msgid "Please select JSON text and press: <shortcut>%1</shortcut>"
-msgstr "JSON мәтінді таңдап мынаны басыңыз: %1"
-
-#: src/plugins/js_utils/json_pretty.py:60
+#: src/plugins/js_utils/json_pretty.py:55
 #, fuzzy
 #| msgid "This selected text is not valid JSON: %1"
 msgctxt "@info:status"
@@ -1213,15 +1213,7 @@ msgctxt "@info:tooltip"
 msgid "Text must be selected to perform this operation"
 msgstr "Бұл операцияны орындау үшін мәтінді таңдау керек"
 
-#: src/plugins/libkatepate/errors.py:45
-msgid "You need install the following packages:\n"
-msgstr "Келесі дестелерді орнатү керек:\n"
-
-#: src/plugins/libkatepate/errors.py:55
-msgid "\t%1. Use easy_install (or pip install) %1==%2"
-msgstr "\t%1. easy_install қолданыңыз (немесе pip орнату) %1==%2"
-
-#: src/plugins/libkatepate/errors.py:114
+#: src/plugins/libkatepate/errors.py:72
 msgid ""
 "\n"
 "\n"
@@ -1231,27 +1223,28 @@ msgstr ""
 "\n"
 "Және басқа қателері"
 
-#: src/plugins/libkatepate/errors.py:147
+#: src/plugins/libkatepate/errors.py:81
+msgctxt "@title:window"
+msgid "Success"
+msgstr ""
+
+#: src/plugins/libkatepate/errors.py:105
 msgid "~*~ Position: (%1, %2)"
 msgstr "~*~ Орны: (%1, %2)"
 
-#: src/plugins/libkatepate/errors.py:149
+#: src/plugins/libkatepate/errors.py:107
 msgid "~*~ Line: %1"
 msgstr "~*~ Жолы: %1"
 
-#: src/plugins/python_autocomplete/python_autocomplete.py:25
-msgid "The Python autocomplete plugin only is available for Python 2"
-msgstr "Python автотолықтыру плагині тек Python 2 үшін ғана бар"
-
-#: src/plugins/python_autocomplete/python_autocomplete.py:57
+#: src/plugins/python_autocomplete/python_autocomplete.py:52
 msgid "Python autocomplete"
 msgstr "Python автотолықтыруы"
 
-#: src/plugins/python_autocomplete/python_autocomplete.py:145
+#: src/plugins/python_autocomplete/python_autocomplete.py:140
 msgid "There was a syntax error in this file:"
 msgstr "Мына файлда синтаксис қате бар:"
 
-#: src/plugins/python_autocomplete/python_autocomplete.py:147
+#: src/plugins/python_autocomplete/python_autocomplete.py:142
 msgctxt "%1 is error message"
 msgid ""
 "%1\n"
@@ -1260,7 +1253,7 @@ msgstr ""
 "%1\n"
 "  * файлы: %2"
 
-#: src/plugins/python_autocomplete/python_autocomplete.py:149
+#: src/plugins/python_autocomplete/python_autocomplete.py:144
 msgctxt "%1 is error message"
 msgid ""
 "%1\n"
@@ -1269,7 +1262,7 @@ msgstr ""
 "%1\n"
 "  * мәтіні: %2"
 
-#: src/plugins/python_autocomplete/python_autocomplete.py:151
+#: src/plugins/python_autocomplete/python_autocomplete.py:146
 msgctxt "%1 is error message"
 msgid ""
 "%1\n"
@@ -1277,6 +1270,13 @@ msgid ""
 msgstr ""
 "%1\n"
 "  * жолы: %2"
+
+#: src/plugins/python_autocomplete_jedi.py:74
+#, fuzzy
+#| msgid "Python autocomplete"
+msgctxt "@label:listbox"
+msgid "Python Jedi autocomplete"
+msgstr "Python автотолықтыруы"
 
 #. i18n: ectx: attribute (title), widget (QWidget, generalTab)
 #: src/plugins/python_console_classic/config.ui:10
@@ -1361,7 +1361,28 @@ msgstr ""
 "Нысан туралы көмек үшін help(нысан) деп теріңіз.\n"
 "Өрнекті есептеу үшін өрнекті келтіріңіз."
 
-#: src/plugins/python_console_ipython/python_console_ipython.py:137
+#: src/plugins/python_console_classic/python_console_classic.py:552
+#, fuzzy
+#| msgid "Python autocomplete"
+msgctxt "@title:tab"
+msgid "Python Console"
+msgstr "Python автотолықтыруы"
+
+#: src/plugins/python_console_classic/python_console_classic.py:558
+#, fuzzy
+#| msgid "Python autocomplete"
+msgctxt "@item:inmenu"
+msgid "Python Console"
+msgstr "Python автотолықтыруы"
+
+#: src/plugins/python_console_classic/python_console_classic.py:559
+#, fuzzy
+#| msgid "Tool View Settings"
+msgctxt "@title:group"
+msgid "Python Console Settings"
+msgstr "Құрал көрініс параметрлері"
+
+#: src/plugins/python_console_ipython/python_console_ipython.py:128
 msgid ""
 "\n"
 "Failed to import “%1” from “%2” reason: %3"
@@ -1369,7 +1390,7 @@ msgstr ""
 "\n"
 "“%2” дегеннен “%1” импорттау жаңылысы, себебі: %3"
 
-#: src/plugins/python_console_ipython/python_console_ipython.py:140
+#: src/plugins/python_console_ipython/python_console_ipython.py:131
 msgid ""
 "\n"
 "From “%1” autoload: %2"
@@ -1377,7 +1398,7 @@ msgstr ""
 "\n"
 "“%1” дегеннен автожүктеуі: %2"
 
-#: src/plugins/python_console_ipython/python_console_ipython.py:157
+#: src/plugins/python_console_ipython/python_console_ipython.py:148
 msgid ""
 "\n"
 "\n"
@@ -1387,7 +1408,7 @@ msgstr ""
 "\n"
 "Мына жоба жүктелмеді: %1. Python нұсқасы үйлеспейді"
 
-#: src/plugins/python_console_ipython/python_console_ipython.py:165
+#: src/plugins/python_console_ipython/python_console_ipython.py:156
 msgid ""
 "\n"
 "\n"
@@ -1397,7 +1418,7 @@ msgstr ""
 "\n"
 "Жүктеу жобасы: %1"
 
-#: src/plugins/python_console_ipython/python_console_ipython.py:189
+#: src/plugins/python_console_ipython/python_console_ipython.py:180
 msgid ""
 "\n"
 "Available variables are everything from pylab, “%1”, and this console as "
@@ -1406,6 +1427,27 @@ msgstr ""
 "\n"
 "pylab, “%1” дегеннен бүкіл айнамалылар, және “console” деп аталған осы "
 "консолі қол жеткізеді"
+
+#: src/plugins/python_console_ipython/python_console_ipython.py:267
+#, fuzzy
+#| msgid "Python autocomplete"
+msgctxt "@item:inmenu"
+msgid "IPython Console"
+msgstr "Python автотолықтыруы"
+
+#: src/plugins/python_console_ipython/python_console_ipython.py:268
+#, fuzzy
+#| msgid "Tool View Settings"
+msgctxt "@title:group"
+msgid "IPython Console Settings"
+msgstr "Құрал көрініс параметрлері"
+
+#: src/plugins/python_console_ipython/python_console_ipython.py:283
+#, fuzzy
+#| msgid "Python autocomplete"
+msgctxt "@title:tab"
+msgid "IPython Console"
+msgstr "Python автотолықтыруы"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: src/plugins/python_console_ipython/python_console_ipython.ui:9
@@ -1427,7 +1469,7 @@ msgstr "Ашылмалы тізім"
 msgid "Normal"
 msgstr "Кәдімгі"
 
-#: src/plugins/python_utils/python_checkers/all_checker.py:82
+#: src/plugins/python_utils/python_checkers/all_checker.py:62
 #: src/plugins/python_utils/python_checkers/pep8_checker.py:84
 msgid "You must save the file first"
 msgstr "Алдымен файлды сақтаңыз"
@@ -1557,6 +1599,21 @@ msgstr ""
 #| msgid "Help:"
 msgid "&Help"
 msgstr "Көмек:"
+
+#, fuzzy
+#~| msgid "Please select JSON text and press: %1"
+#~ msgctxt "@info:status"
+#~ msgid "Please select JSON text and press: <shortcut>%1</shortcut>"
+#~ msgstr "JSON мәтінді таңдап мынаны басыңыз: %1"
+
+#~ msgid "You need install the following packages:\n"
+#~ msgstr "Келесі дестелерді орнатү керек:\n"
+
+#~ msgid "\t%1. Use easy_install (or pip install) %1==%2"
+#~ msgstr "\t%1. easy_install қолданыңыз (немесе pip орнату) %1==%2"
+
+#~ msgid "The Python autocomplete plugin only is available for Python 2"
+#~ msgstr "Python автотолықтыру плагині тек Python 2 үшін ғана бар"
 
 #~ msgid "Manager"
 #~ msgstr "Менеджер"
