@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-30 01:26+0000\n"
+"POT-Creation-Date: 2013-12-01 01:28+0000\n"
 "PO-Revision-Date: 2013-08-12 05:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -36,7 +36,7 @@ msgid "Annotation"
 msgstr "Аңдатпасы:"
 
 #: AnnotationTextShapeFactory.cpp:46
-msgid "Annotation shape to show annotaion content"
+msgid "Annotation shape to show annotation content"
 msgstr ""
 
 #: AnnotationTextShapeFactory.cpp:54
@@ -316,7 +316,7 @@ msgstr "Аясының түсі"
 #: dialogs/SimpleInsertWidget.ui:40 dialogs/SimpleInsertWidget.ui:72
 #: dialogs/SimpleInsertWidget.ui:91 dialogs/SimpleInsertWidget.ui:107
 #: dialogs/SimpleParagraphWidget.ui:65 dialogs/SimpleParagraphWidget.ui:189
-#: dialogs/SimpleSpellCheckingWidget.ui:17 dialogs/SimpleTableWidget.ui:128
+#: dialogs/SimpleSpellCheckingWidget.ui:23 dialogs/SimpleTableWidget.ui:128
 #: dialogs/SimpleTableWidget.ui:144 dialogs/SimpleTableWidget.ui:176
 msgid "..."
 msgstr "..."
@@ -499,11 +499,11 @@ msgstr "Кіші әріп"
 msgid "Capitalize"
 msgstr "Бас әріппен"
 
-#: dialogs/CharacterHighlighting.cpp:293 TextTool.cpp:274
+#: dialogs/CharacterHighlighting.cpp:293 TextTool.cpp:282
 msgid "Superscript"
 msgstr "Жол үстілік"
 
-#: dialogs/CharacterHighlighting.cpp:294 TextTool.cpp:280
+#: dialogs/CharacterHighlighting.cpp:294 TextTool.cpp:288
 msgid "Subscript"
 msgstr "Жол астылық"
 
@@ -1016,7 +1016,7 @@ msgstr "Арнаулы таңбалар"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonInsert)
 #: dialogs/InsertCharacter.cpp:39 dialogs/ManageBookmark.ui:34
-#: ReferencesTool.cpp:125 TextTool.cpp:2135
+#: ReferencesTool.cpp:125 TextTool.cpp:2169
 msgid "Insert"
 msgstr "Ендіру"
 
@@ -1400,7 +1400,7 @@ msgid "Browse..."
 msgstr "Ақтару..."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/ParagraphDecorations.ui:31 TextTool.cpp:382
+#: dialogs/ParagraphDecorations.ui:31 TextTool.cpp:390
 msgid "Background"
 msgstr "Аясы"
 
@@ -1608,6 +1608,25 @@ msgstr "Абзац пішімі"
 msgid "Insert a table"
 msgstr "Кестені ендіру"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SimpleAnnotationWidget)
+#: dialogs/SimpleAnnotationWidget.ui:20
+msgid "Form"
+msgstr "Пішін"
+
+#. i18n: ectx: property (text), widget (QToolButton, insertAnnotation)
+#: dialogs/SimpleAnnotationWidget.ui:26
+#, fuzzy
+#| msgid "Insert a table"
+msgid "Insert Note"
+msgstr "Кестені ендіру"
+
+#. i18n: ectx: property (text), widget (QToolButton, removeAnnotation)
+#: dialogs/SimpleAnnotationWidget.ui:36
+#, fuzzy
+#| msgid "<<Remove"
+msgid "Remove Note"
+msgstr "<< Өшіру"
+
 #. i18n: ectx: property (text), widget (QToolButton, addCitation)
 #: dialogs/SimpleCaptionsWidget.ui:34
 msgid "Add caption"
@@ -1715,12 +1734,12 @@ msgid "Another style named '%1' already exist. Please choose another name."
 msgstr "'%1' деп аталған стилі бар екен. Басқаша атаңыз."
 
 #. i18n: ectx: attribute (title), widget (QListView, paragraphStylesListView)
-#: dialogs/StyleManager.ui:39 TextTool.cpp:2127
+#: dialogs/StyleManager.ui:39 TextTool.cpp:2161
 msgid "Paragraph"
 msgstr "Абзац"
 
 #. i18n: ectx: attribute (title), widget (QListView, characterStylesListView)
-#: dialogs/StyleManager.ui:53 TextTool.cpp:2125
+#: dialogs/StyleManager.ui:53 TextTool.cpp:2159
 msgid "Character"
 msgstr "Таңба"
 
@@ -1730,7 +1749,7 @@ msgid "&New"
 msgstr "&Жаңа"
 
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: dialogs/StyleManager.ui:84 TextTool.cpp:2460
+#: dialogs/StyleManager.ui:84 TextTool.cpp:2497
 msgid "Delete"
 msgstr "Өшіру"
 
@@ -1932,7 +1951,7 @@ msgstr "Мазмұны кестесі"
 msgid "Insert a Table of Contents into the document."
 msgstr "Құжатқа мазмұны кестесін енгізу."
 
-#: ReferencesTool.cpp:129 TextTool.cpp:402
+#: ReferencesTool.cpp:129 TextTool.cpp:410
 msgid "Insert Custom..."
 msgstr "Өзгеше ендіру..."
 
@@ -2059,7 +2078,23 @@ msgstr "Атауды қосарлау. \"Бетбелгілерді басқар
 msgid "to Rename or Delete Bookmarks"
 msgstr "Атауын өзгерту не бетбелгілерді өшіру үшін"
 
-#: ReviewToolFactory.cpp:36
+#: ReviewTool.cpp:69 ReviewTool.cpp:70
+#, fuzzy
+#| msgid "Comments"
+msgid "Remove Comment"
+msgstr "Түсініктемелер"
+
+#: ReviewTool.cpp:114
+#, fuzzy
+#| msgid "Spell checking"
+msgid "SpellCheck"
+msgstr "Емлесін тексеру"
+
+#: ReviewTool.cpp:117
+msgid "Comments"
+msgstr "Түсініктемелер"
+
+#: ReviewToolFactory.cpp:37
 msgid "Review"
 msgstr "Шолу"
 
@@ -2075,226 +2110,226 @@ msgstr "Мәтіннің көрсететін қалып"
 msgid "Text Shape"
 msgstr "Мәтін қалыпы"
 
-#: TextTool.cpp:209
+#: TextTool.cpp:217
 msgid "Paste As Text"
 msgstr "Мәтін деп орналастыру"
 
-#: TextTool.cpp:214
+#: TextTool.cpp:222
 msgid "Bold"
 msgstr "Қалың"
 
-#: TextTool.cpp:220
+#: TextTool.cpp:228
 msgid "Italic"
 msgstr "Көлбеу"
 
-#: TextTool.cpp:226
+#: TextTool.cpp:234
 msgctxt "Text formatting"
 msgid "Underline"
 msgstr "Асты сызық"
 
-#: TextTool.cpp:232
+#: TextTool.cpp:240
 msgid "Strikethrough"
 msgstr "Сызып тастау"
 
-#: TextTool.cpp:238
+#: TextTool.cpp:246
 msgid "Align Left"
 msgstr "Солға туралау"
 
-#: TextTool.cpp:245
+#: TextTool.cpp:253
 msgid "Align Right"
 msgstr "Оңға туралау"
 
-#: TextTool.cpp:252
+#: TextTool.cpp:260
 msgid "Align Center"
 msgstr "Ортаға туралау"
 
-#: TextTool.cpp:259
+#: TextTool.cpp:267
 msgid "Align Block"
 msgstr "Енін туралау"
 
-#: TextTool.cpp:266
+#: TextTool.cpp:274
 msgid "Change text direction"
 msgstr "Мәтіннің бағытын өзгерту"
 
-#: TextTool.cpp:268
+#: TextTool.cpp:276
 msgid "Change writing direction"
 msgstr "Жазу бағытын өзгерту"
 
-#: TextTool.cpp:290
+#: TextTool.cpp:298
 msgid "Increase Indent"
 msgstr "Шегінуін үлкейту"
 
-#: TextTool.cpp:297
+#: TextTool.cpp:305
 msgid "Decrease Indent"
 msgstr "Шегінуін азайту"
 
-#: TextTool.cpp:301
+#: TextTool.cpp:309
 msgid "Bullet list"
 msgstr "Таңбаланған тізім"
 
-#: TextTool.cpp:304
+#: TextTool.cpp:312
 msgid "Numbered list"
 msgstr "Нөмірленген тізім"
 
-#: TextTool.cpp:307
+#: TextTool.cpp:315
 msgid "Increase Font Size"
 msgstr "Қаріп өлшемін үлкейту"
 
-#: TextTool.cpp:312
+#: TextTool.cpp:320
 msgid "Decrease Font Size"
 msgstr "Қаріп өлшемін кішірейту"
 
-#: TextTool.cpp:318
+#: TextTool.cpp:326
 msgid "Font Family"
 msgstr "Қаріп шоғыры"
 
-#: TextTool.cpp:323
+#: TextTool.cpp:331
 msgid "Variable"
 msgstr "Айнымалы"
 
-#: TextTool.cpp:327
+#: TextTool.cpp:335
 msgid "Insert Non-Breaking Space"
 msgstr "Үзілмейтін аралықты ендіру"
 
-#: TextTool.cpp:332
+#: TextTool.cpp:340
 msgid "Insert Non-Breaking Hyphen"
 msgstr "Үзілмейтін сызықшаны ендіру"
 
-#: TextTool.cpp:337
+#: TextTool.cpp:345
 msgid "Insert Index"
 msgstr "Индексті ендіру"
 
-#: TextTool.cpp:342
+#: TextTool.cpp:350
 msgid "Insert Soft Hyphen"
 msgstr "\"Жұмсақ\" тасымалдауды ендіру"
 
-#: TextTool.cpp:348
+#: TextTool.cpp:356
 msgid "Line Break"
 msgstr "Жол үзілмі"
 
-#: TextTool.cpp:353
+#: TextTool.cpp:361
 msgid "Page Break"
 msgstr "Бет үзілімі"
 
-#: TextTool.cpp:357
+#: TextTool.cpp:365
 msgid "Insert a page break"
 msgstr "Бет үзілімін енгізу"
 
-#: TextTool.cpp:358
+#: TextTool.cpp:366
 msgid "All text after this point will be moved into the next page."
 msgstr "Осыдан кейінгі мәтін келесі бетке ығыстырылады."
 
-#: TextTool.cpp:361
+#: TextTool.cpp:369
 msgid "Font..."
 msgstr "Қаріп..."
 
-#: TextTool.cpp:364
+#: TextTool.cpp:372
 msgid "Change character size, font, boldface, italics etc."
 msgstr "Таңбаның өлшемін, қаріпін,қалыңдығын, көлбеулігін және т.б. өзгерту."
 
-#: TextTool.cpp:365
+#: TextTool.cpp:373
 msgid "Change the attributes of the currently selected characters."
 msgstr "Таңдалған таңбалардың қасиеттерін өзгерту."
 
-#: TextTool.cpp:368
+#: TextTool.cpp:376
 msgid "Font Size"
 msgstr "Қаріп өлшемі"
 
-#: TextTool.cpp:374
+#: TextTool.cpp:382
 msgid "Text Color..."
 msgstr "Мәтіннің түсі..."
 
-#: TextTool.cpp:375
+#: TextTool.cpp:383
 msgid "Text Color"
 msgstr "Мәтіннің түсі"
 
-#: TextTool.cpp:381
+#: TextTool.cpp:389
 msgid "Background Color..."
 msgstr "Аясының түсі..."
 
-#: TextTool.cpp:386
+#: TextTool.cpp:394
 msgid "Grow To Fit Width"
 msgstr "Өсіріп енің шақтау "
 
-#: TextTool.cpp:391
+#: TextTool.cpp:399
 msgid "Grow To Fit Height"
 msgstr "Өсіріп биіктігін шақтау"
 
-#: TextTool.cpp:396
+#: TextTool.cpp:404
 msgid "Shrink To Fit"
 msgstr "Сыйғызып шақтау"
 
-#: TextTool.cpp:404
+#: TextTool.cpp:412
 msgid "Insert a table into the document."
 msgstr "Кестені құжатқа енгізу."
 
-#: TextTool.cpp:407
+#: TextTool.cpp:415
 msgid "Row Above"
 msgstr "Жолды жоғарында"
 
-#: TextTool.cpp:408
+#: TextTool.cpp:416
 msgid "Insert Row Above"
 msgstr "Жоғарында жолды ендіру"
 
-#: TextTool.cpp:412
+#: TextTool.cpp:420
 msgid "Row Below"
 msgstr "Жолды төменінде"
 
-#: TextTool.cpp:413
+#: TextTool.cpp:421
 msgid "Insert Row Below"
 msgstr "Төменінде жолды ендіру"
 
-#: TextTool.cpp:417
+#: TextTool.cpp:425
 msgid "Column Left"
 msgstr "Бағанды солға"
 
-#: TextTool.cpp:418
+#: TextTool.cpp:426
 msgid "Insert Column Left"
 msgstr "Сол жағына бағанды ендіру"
 
-#: TextTool.cpp:422
+#: TextTool.cpp:430
 msgid "Column Right"
 msgstr "Бағанды оңға"
 
-#: TextTool.cpp:423
+#: TextTool.cpp:431
 msgid "Insert Column Right"
 msgstr "Оң жағына бағанды ендіру"
 
-#: TextTool.cpp:427
+#: TextTool.cpp:435
 msgid "Column"
 msgstr "Баған"
 
-#: TextTool.cpp:428
+#: TextTool.cpp:436
 msgid "Delete Column"
 msgstr "Бағанды өшіру"
 
-#: TextTool.cpp:432
+#: TextTool.cpp:440
 msgid "Row"
 msgstr "Жол"
 
-#: TextTool.cpp:433
+#: TextTool.cpp:441
 msgid "Delete Row"
 msgstr "Жолды өшіру"
 
-#: TextTool.cpp:437
+#: TextTool.cpp:445
 msgid "Merge Cells"
 msgstr "Ұяшықтарды біріктіру"
 
-#: TextTool.cpp:441
+#: TextTool.cpp:449
 msgid "Split Cells"
 msgstr "Ұяшықтарды бөлу"
 
-#: TextTool.cpp:446
+#: TextTool.cpp:454
 msgid "Paragraph..."
 msgstr "Абзац..."
 
-#: TextTool.cpp:449
+#: TextTool.cpp:457
 msgid "Change paragraph margins, text flow, borders, bullets, numbering etc."
 msgstr ""
 "Абзацтың жиектерін, мәтінін, шектерін, таңбалауын, нөмірлеуін және т.б. "
 "өзгерту."
 
-#: TextTool.cpp:450
+#: TextTool.cpp:458
 msgid ""
 "Change paragraph margins, text flow, borders, bullets, numbering etc."
 "<p>Select text in multiple paragraphs to change the formatting of all "
@@ -2305,15 +2340,15 @@ msgstr ""
 "өзгерту.<p>Бірнеше абзацтарды таңдап барлығынын пішімін бірден өзгертіңіз."
 "<p>Егер ештеңе таңдалмаса - меңзер тұрған абзац өзгертіледі.</p>"
 
-#: TextTool.cpp:453
+#: TextTool.cpp:461
 msgid "Style Manager..."
 msgstr "Стиль менеджері..."
 
-#: TextTool.cpp:455
+#: TextTool.cpp:463
 msgid "Change attributes of styles"
 msgstr "Стильдерінің атрибуттарын өзгерту"
 
-#: TextTool.cpp:456
+#: TextTool.cpp:464
 msgid ""
 "Change font and paragraph attributes of styles.<p>Multiple styles can be "
 "changed using the dialog box."
@@ -2321,87 +2356,93 @@ msgstr ""
 "Стильдерінің қаріп пен абзац атрибуттарын өзгерту.<p>Диалог терезесінде "
 "бірнеше стильдерді өзгертуге болады."
 
-#: TextTool.cpp:463
+#: TextTool.cpp:471
 msgid "Special Character..."
 msgstr "Арнаулы таңба..."
 
-#: TextTool.cpp:467
+#: TextTool.cpp:475
 msgid "Insert one or more symbols or characters not found on the keyboard"
 msgstr "Пернетақтада жоқ бір не бірнеше таңбаны келтіріңіз"
 
-#: TextTool.cpp:468
+#: TextTool.cpp:476
 msgid "Insert one or more symbols or characters not found on the keyboard."
 msgstr "Пернетақтада жоқ бір не бірнеше таңбаны келтіріңіз."
 
-#: TextTool.cpp:471
+#: TextTool.cpp:479
 msgid "Repaint"
 msgstr "Қайта бояу"
 
-#: TextTool.cpp:555
+#: TextTool.cpp:484
+#, fuzzy
+#| msgid "Insert Column Left"
+msgid "Insert Comment"
+msgstr "Сол жағына бағанды ендіру"
+
+#: TextTool.cpp:568
 msgid "Insertion"
 msgstr "Ендіру"
 
-#: TextTool.cpp:557
+#: TextTool.cpp:570
 msgid "Deletion"
 msgstr "Өшіру"
 
-#: TextTool.cpp:559
+#: TextTool.cpp:572
 msgid "Formatting"
 msgstr "Пішімдеу"
 
-#: TextTool.cpp:574
+#: TextTool.cpp:587
 msgid "Ctrl+click to go to link "
 msgstr "Сілтемеге еру үшін Ctrl+түрту"
 
-#: TextTool.cpp:581
+#: TextTool.cpp:594
 msgid "Ctrl+click to go to the note "
 msgstr "Сілтемеге еру үшін Ctrl+түрту"
 
-#: TextTool.cpp:587
+#: TextTool.cpp:600
 msgid "Ctrl+click to go to the note reference"
 msgstr "Сілтемеге еру үшін Ctrl+түрту"
 
-#: TextTool.cpp:688
+#: TextTool.cpp:701
 msgid "follows along"
 msgstr "мына бойынша"
 
-#: TextTool.cpp:718
+#: TextTool.cpp:731
 msgid "Press shift to not resize this"
 msgstr "Өлшемін өзгертпеу үшін shift-ті басыңыз"
 
-#: TextTool.cpp:912
+#: TextTool.cpp:925
 msgctxt "(qtundo-format)"
 msgid "Change Border Formatting"
 msgstr "Шегінің пішімін өзгерту"
 
-#: TextTool.cpp:1096
+#: TextTool.cpp:1117
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Қиып алу"
 
-#: TextTool.cpp:1346
+#: TextTool.cpp:1377
 msgctxt "(qtundo-format)"
 msgid "Adjust Column Width"
 msgstr "Бағанның енін шақтау"
 
-#: TextTool.cpp:1389
+#: TextTool.cpp:1420
 msgctxt "(qtundo-format)"
 msgid "Adjust Row Height"
 msgstr "Жол биіктігін келтіру"
 
-#: TextTool.cpp:2133
+#: TextTool.cpp:2167
 msgid "Table"
 msgstr "Кесте"
 
-#: TextTool.cpp:2455
+#: TextTool.cpp:2492
 msgid "Key Press"
 msgstr "Пернені басу"
 
-#: TextTool.cpp:2455 TextTool.cpp:2460
+#: TextTool.cpp:2492 TextTool.cpp:2497
 msgid "Autocorrection"
 msgstr "Автотүзету"
 
-#: TextTool.cpp:2727
+#: TextTool.cpp:2764
 #, kde-format
 msgid ""
 "This link points to the program or script '%1'.\n"
@@ -2411,19 +2452,16 @@ msgstr ""
 "Бұл '%1' деген бағдарлама не скрипт сілтемесі.\n"
 "Бөтен бағдарлама зиян келтіруі мүмкін. Бағдарлама орындалсын ба?"
 
-#: TextTool.cpp:2732
+#: TextTool.cpp:2769
 msgid "Open Link?"
 msgstr "Сілтеме ашылсын ба?"
 
-#: TextToolFactory.cpp:30
+#: TextToolFactory.cpp:31
 msgid "Text editing"
 msgstr "Мәтінді өңдеу"
 
 #~ msgid "Table of Contents"
 #~ msgstr "Мазмұны кестесі"
-
-#~ msgid "Form"
-#~ msgstr "Пішін"
 
 #~ msgid "Tracked change manager"
 #~ msgstr "Өзгерістерді қадағалауы"
@@ -2433,12 +2471,6 @@ msgstr "Мәтінді өңдеу"
 
 #~ msgid "Changes"
 #~ msgstr "Өзгерістер"
-
-#~ msgid "Spell checking"
-#~ msgstr "Емлесін тексеру"
-
-#~ msgid "Comments"
-#~ msgstr "Түсініктемелер"
 
 #~ msgid "Paragraph Settings"
 #~ msgstr "Абзац параметрлері"
