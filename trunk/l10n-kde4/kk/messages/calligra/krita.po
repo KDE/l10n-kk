@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-05 01:22+0000\n"
+"POT-Creation-Date: 2013-12-06 01:31+0000\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1103,38 +1103,42 @@ msgstr "Кескінді масштабтау"
 msgid "Change Image Resolution"
 msgstr "Кескін айырымдылығын озгерту"
 
-#: image/kis_image.cc:600 plugins/extensions/rotateimage/rotateimage.cc:155
+#: image/kis_image.cc:528
+msgid "Scale Layer"
+msgstr "Қабатты масштабтау"
+
+#: image/kis_image.cc:622 plugins/extensions/rotateimage/rotateimage.cc:155
 msgid "Rotate Layer"
 msgstr "Қабатты бұрау"
 
-#: image/kis_image.cc:667
+#: image/kis_image.cc:689
 msgid "Shear layer"
 msgstr "Қабатты қисайту"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: image/kis_image.cc:673 plugins/extensions/shearimage/dlg_shearimage.cc:32
+#: image/kis_image.cc:695 plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:64
 #: plugins/extensions/shearimage/wdg_shearimage.ui:14
 msgid "Shear Image"
 msgstr "Кескінді қисайту"
 
-#: image/kis_image.cc:686
+#: image/kis_image.cc:708
 msgid "Convert Image Color Space"
 msgstr "Кескіннің түстер кеңістігін ауыстыру"
 
-#: image/kis_image.cc:720
+#: image/kis_image.cc:742
 msgid "Convert Projection Color Space"
 msgstr "Кескін проекциясының түстер кеңістігін ауыстыру"
 
-#: image/kis_image.cc:899 ui/kis_layer_manager.cc:728
+#: image/kis_image.cc:921 ui/kis_layer_manager.cc:707
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
-#: image/kis_image.cc:975
+#: image/kis_image.cc:997
 msgid "Merge with Layer Below"
 msgstr "Төмендегі қабатымен біріктіру"
 
-#: image/kis_image.cc:1021
+#: image/kis_image.cc:1043
 msgid "Flatten Layer"
 msgstr "Кескінді біріктіру"
 
@@ -1207,10 +1211,6 @@ msgstr "Таңдауды терістеу"
 #: image/kis_selection_mask.cpp:106 ui/kis_node_model.cpp:422
 msgid "Active"
 msgstr "Белсенді"
-
-#: image/kis_transform_visitor.h:158
-msgid "Rotate Node"
-msgstr "Түйінді бұру"
 
 #: image/metadata/kis_meta_data_filter_p.cc:51
 msgid "Anonymizer"
@@ -2441,7 +2441,7 @@ msgid "&Select Opaque"
 msgstr "Мөлдірсіздікті &таңдау"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:458
-#: ui/kis_layer_manager.cc:283
+#: ui/kis_layer_manager.cc:285
 msgid "&Merge with Layer Below"
 msgstr "Астыңғы қабатпен &біріктіру"
 
@@ -3115,29 +3115,28 @@ msgstr "Жаңа өлшемге масштабтау"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgLayerSize)
 #: plugins/extensions/imagesize/dlg_layersize.cc:46
-#: plugins/extensions/imagesize/imagesize.cc:135
+#: plugins/extensions/imagesize/imagesize.cc:130
 #: plugins/extensions/imagesize/wdg_layersize.ui:14
 msgid "Layer Size"
 msgstr "Қабаттың өлшемі"
 
-#: plugins/extensions/imagesize/imagesize.cc:56
+#: plugins/extensions/imagesize/imagesize.cc:51
 msgid "Scale To New Size..."
 msgstr "Жаңа өлшеміне масштабтау..."
 
-#: plugins/extensions/imagesize/imagesize.cc:60
+#: plugins/extensions/imagesize/imagesize.cc:55
 msgid "Size Canvas..."
 msgstr "Өріс өлшемі..."
 
-#: plugins/extensions/imagesize/imagesize.cc:64
+#: plugins/extensions/imagesize/imagesize.cc:59
 msgid "Scale &Layer..."
 msgstr "Қа&батты масштабтау..."
 
-#: plugins/extensions/imagesize/imagesize.cc:70
+#: plugins/extensions/imagesize/imagesize.cc:65
 msgid "&Scale..."
 msgstr "&Масштабы"
 
-#: plugins/extensions/imagesize/imagesize.cc:165
-#: plugins/extensions/imagesize/imagesize.cc:172
+#: plugins/extensions/imagesize/imagesize.cc:159
 msgid "Scale Selection"
 msgstr "Таңдауды масштабтау"
 
@@ -8695,7 +8694,7 @@ msgstr "Ұқсасын таңдау"
 msgid "Select similar colors"
 msgstr "Ұқсас түстерді таңдау"
 
-#: plugins/tools/tool_crop/kis_tool_crop.h:200
+#: plugins/tools/tool_crop/kis_tool_crop.h:201
 msgid "Crop the image to an area"
 msgstr "Кескіннің бір аумағын ойып алу"
 
@@ -11160,75 +11159,71 @@ msgstr "Қасиеттері..."
 msgid "Import Image"
 msgstr "Кескінді импорттау"
 
-#: ui/kis_layer_manager.cc:278
+#: ui/kis_layer_manager.cc:280
 msgid "&Flatten image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:288
+#: ui/kis_layer_manager.cc:290
 msgid "&Flatten Layer"
 msgstr "Қабатты &біріктіру"
 
-#: ui/kis_layer_manager.cc:292 ui/kis_layer_manager.cc:797
+#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:776
 msgid "Rasterize Layer"
 msgstr "Қабатты нүктелеу"
 
-#: ui/kis_layer_manager.cc:298
+#: ui/kis_layer_manager.cc:300
 msgid "Save Group Layers..."
 msgstr "Қабат тобын сақтау..."
 
-#: ui/kis_layer_manager.cc:302
+#: ui/kis_layer_manager.cc:304
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Өрісінің өлшемін назардағы қабатына шақтау"
 
-#: ui/kis_layer_manager.cc:357
+#: ui/kis_layer_manager.cc:359
 msgid "Filter Layer Properties"
 msgstr "Сүзгілеу қабатың қасиеттері"
 
-#: ui/kis_layer_manager.cc:402
+#: ui/kis_layer_manager.cc:404
 msgid "Generator Layer Properties"
 msgstr "Генератор қабаттың қасиеттері"
 
-#: ui/kis_layer_manager.cc:480
+#: ui/kis_layer_manager.cc:482
 msgid "Convert to a Paint Layer"
 msgstr "Бояу қабатына аудару"
 
-#: ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:561
 msgid "New Filter Layer"
 msgstr "Жаңа сүзгілеу қабаты"
 
-#: ui/kis_layer_manager.cc:618
+#: ui/kis_layer_manager.cc:620
 msgid "Could not add layer to image."
 msgstr "Кескінге қабат қосылмады."
 
-#: ui/kis_layer_manager.cc:618
+#: ui/kis_layer_manager.cc:620
 msgid "Layer Error"
 msgstr "Қабат қатесі"
 
-#: ui/kis_layer_manager.cc:685
-msgid "Scale Layer"
-msgstr "Қабатты масштабтау"
-
-#: ui/kis_layer_manager.cc:727
+#: ui/kis_layer_manager.cc:706
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескін жасырын қабаттарын жоғалтпақ."
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:708
 msgid "&Flatten Image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:833
+#: ui/kis_layer_manager.cc:812
 msgid "Convert Invisible Groups"
 msgstr "Көрінбейтін топтарды аудару"
 
-#: ui/kis_layer_manager.cc:836
+#: ui/kis_layer_manager.cc:815
 msgid "Export Only Toplevel Groups"
 msgstr "Тек жоғарғы деңгейлі топтарды экспорттау"
 
-#: ui/kis_layer_manager.cc:894
+#: ui/kis_layer_manager.cc:873
 msgid "No file name specified."
 msgstr "Файл атауы келтірілмеген."
 
-#: ui/kis_layer_manager.cc:894
+#: ui/kis_layer_manager.cc:873
 msgid "No file specified"
 msgstr "Файл келтірілмеген"
 
@@ -11376,7 +11371,7 @@ msgstr "Қабатты Y бойлығын терістеу"
 msgid "Mirror Mask Y"
 msgstr "Масканы Y бойынша шағылстырсу"
 
-#: ui/kis_node_manager.cpp:764
+#: ui/kis_node_manager.cpp:768
 msgid "Export Node"
 msgstr "Түйінді экспорттау"
 
@@ -11890,6 +11885,9 @@ msgstr "Жұмыс кеңістігі"
 #, kde-format
 msgid "Workspace %1"
 msgstr "%1 жұмыс кеңістігі"
+
+#~ msgid "Rotate Node"
+#~ msgstr "Түйінді бұру"
 
 #~ msgid "File size:"
 #~ msgstr "Файл өлшемі:"
