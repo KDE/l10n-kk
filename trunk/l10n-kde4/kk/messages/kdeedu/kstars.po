@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-05 01:28+0000\n"
+"POT-Creation-Date: 2013-12-11 01:30+0000\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2525,11 +2525,11 @@ msgstr ""
 msgid "Invalid radius value"
 msgstr "Радиус мәні жарамсыз"
 
-#: ekos/align.cpp:475 ekos/focus.cpp:251 ekos/guide.cpp:227
+#: ekos/align.cpp:475 ekos/focus.cpp:251 ekos/guide.cpp:229
 msgid "Error: Lost connection to CCD."
 msgstr "Қате: CCD-мен байланыс үзілді."
 
-#: ekos/align.cpp:493 ekos/capture.cpp:580 ekos/focus.cpp:266
+#: ekos/align.cpp:493 ekos/capture.cpp:588 ekos/focus.cpp:266
 #: ekos/guide/rcalibration.cpp:700
 msgid "Capturing image..."
 msgstr "Кескінді түсіріп алу..."
@@ -2568,8 +2568,8 @@ msgid "Solver completed in %1 second."
 msgid_plural "Solver completed in %1 seconds."
 msgstr[0] "Есеп %1 секундта шығарылды."
 
-#: ekos/align.cpp:662 ekos/capture.cpp:663 ekos/ekosmanager.cpp:1033
-#: ekos/focus.cpp:949 ekos/guide.cpp:311
+#: ekos/align.cpp:662 ekos/capture.cpp:671 ekos/ekosmanager.cpp:1033
+#: ekos/focus.cpp:949 ekos/guide.cpp:314
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
@@ -3031,44 +3031,57 @@ msgstr "Доғарылды"
 msgid "Complete"
 msgstr "Бітті"
 
-#: ekos/capture.cpp:237 ekos/capture.cpp:697
+#: ekos/capture.cpp:242 ekos/capture.cpp:705
 msgid "Auto dark subtract is not supported in batch mode."
 msgstr "Қарасын автоалып тастауы десте режімінде жоқ."
 
-#: ekos/capture.cpp:257
+#: ekos/capture.cpp:265
 msgid "No pending jobs found. Please add a job to the sequence queue."
 msgstr "Күтіп тұрған тапсырмалар жоқ. Кезек тізбегіне тапсырманы қосыңыз."
 
-#: ekos/capture.cpp:439
+#: ekos/capture.cpp:447
 #, kde-format
 msgid "Unable to find FILTER_SLOT property in driver %1"
 msgstr "%1 драйверінде FILTER_SLOT қасиеті табылмады"
 
-#: ekos/capture.cpp:522
+#: ekos/capture.cpp:530
 #, kde-format
 msgid "Received image %1 out of %2."
 msgstr "%2 дегеннен қабылданған %1 кескіні."
 
-#: ekos/capture.cpp:577
+#: ekos/capture.cpp:585
 msgid "Capturing dark frame..."
 msgstr "Қараңғы қоршауын түсіріп алу..."
 
-#: ekos/capture.cpp:584
+#: ekos/capture.cpp:592
 msgid "Failed to set sub frame."
 msgstr "Ішкі қоршауын орнату жаңылысы"
 
-#: ekos/capture.cpp:589
+#: ekos/capture.cpp:597
 msgid "Failed to set binning."
 msgstr "Жинақтау жаңылысы"
 
 #. i18n: ectx: property (text), widget (QLabel, secondsLabel)
-#: ekos/capture.cpp:683 ekos/capture.ui:843
+#: ekos/capture.cpp:691 ekos/capture.ui:885
 msgid "second left"
 msgstr "секунд қалды"
 
-#: ekos/capture.cpp:685
+#: ekos/capture.cpp:693
 msgid "seconds left"
 msgstr "секунд қалды"
+
+#: ekos/capture.cpp:996
+#, kde-format
+msgid ""
+"Guiding deviation %1 exceeded limit value of %2 arcsecs, aborting exposure."
+msgstr ""
+
+#: ekos/capture.cpp:1007
+#, kde-format
+msgid ""
+"Guiding deviation %1 is now lower than limit value of %2 arcsecs, resuming "
+"exposure."
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
@@ -3082,7 +3095,7 @@ msgstr "CCD"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_5_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: ekos/capture.ui:55 ekos/capture.ui:696 tools/argsetdeviceindi.ui:30
+#: ekos/capture.ui:55 ekos/capture.ui:694 tools/argsetdeviceindi.ui:30
 #: tools/argshutdownindi.ui:38 tools/argstartindi.ui:30
 msgid "Device:"
 msgstr "Құрылғы:"
@@ -3127,7 +3140,8 @@ msgstr "Префиксі:"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_2_3)
-#: ekos/capture.ui:127 ekos/capture.ui:703
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_2_4)
+#: ekos/capture.ui:127 ekos/capture.ui:701 ekos/capture.ui:813
 msgid "Number of images to capture"
 msgstr "Түсіретін кескіндер саны"
 
@@ -3233,7 +3247,7 @@ msgstr "Белсенді сүзгі орны"
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #. i18n: ectx: attribute (title), widget (QWidget, Filter)
-#: ekos/capture.ui:396 ekos/capture.ui:481 ekos/capture.ui:680
+#: ekos/capture.ui:396 ekos/capture.ui:481 ekos/capture.ui:678
 #: ekos/opsekos.ui:182 oal/equipmentwriter.ui:553
 msgid "Filter"
 msgstr "Сүзгі"
@@ -3289,52 +3303,64 @@ msgstr "&Тоқтату"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
 #. i18n: ectx: property (text), widget (QLabel, label_18)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: ekos/capture.ui:709 oal/execute.ui:377 tools/argsetfilternumindi.ui:30
+#: ekos/capture.ui:707 oal/execute.ui:377 tools/argsetfilternumindi.ui:30
 msgid "Filter:"
 msgstr "Сүзгі:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, darkSubCheck)
-#: ekos/capture.ui:748
+#: ekos/capture.ui:746
 msgid "Auto dark subtract"
 msgstr "Қарасын автоалып тастау"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, ISOCheck)
-#: ekos/capture.ui:758
+#: ekos/capture.ui:756
 msgid "Add time stamp to the file name"
 msgstr "Файл атауына уақыт белгісін қосу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ISOCheck)
-#: ekos/capture.ui:761
+#: ekos/capture.ui:759
 msgid "Add ISO 8601 time stamp"
 msgstr "ISO 8601 уақыт белгісін қосу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, displayCheck)
-#: ekos/capture.ui:774
+#: ekos/capture.ui:772
 msgid "Display in FITS Viewer"
 msgstr "FITS қарау құралында көрсету"
 
+#. i18n: ectx: property (text), widget (QCheckBox, guideDeviationCheck)
+#: ekos/capture.ui:790
+#, fuzzy
+#| msgid "Maximum allowed separation:"
+msgid "Maximum Guiding Deviation"
+msgstr "Есепке кіретін максималды аралығы"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_4)
+#: ekos/capture.ui:819
+msgid "\""
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, progressGroup)
-#: ekos/capture.ui:810
+#: ekos/capture.ui:852
 msgid "Progress"
 msgstr "Барысы"
 
 #. i18n: ectx: property (text), widget (QLabel, progressLabel_3)
-#: ekos/capture.ui:820
+#: ekos/capture.ui:862
 msgid "Expose:"
 msgstr "Экспозиция:"
 
 #. i18n: ectx: property (text), widget (QLabel, progressLabel_2)
-#: ekos/capture.ui:850
+#: ekos/capture.ui:892
 msgid "Progress:"
 msgstr "Барысы:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2_3)
-#: ekos/capture.ui:873
+#: ekos/capture.ui:915
 msgid "of"
 msgstr "/"
 
 #. i18n: ectx: property (text), widget (QLabel, completedLabel_2)
-#: ekos/capture.ui:899
+#: ekos/capture.ui:941
 msgid "completed"
 msgstr "түсірілген"
 
@@ -3406,7 +3432,7 @@ msgstr "Көздегені"
 msgid "Guide"
 msgstr "Бағыттамасы"
 
-#: ekos/ekosmanager.cpp:1109
+#: ekos/ekosmanager.cpp:1115
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr "%1 дегеннін дәлдегіш порты дайын."
@@ -3744,11 +3770,11 @@ msgstr "V-қисығы:"
 msgid "HFR:"
 msgstr "ЖЛР (HFR):"
 
-#: ekos/guide.cpp:190
+#: ekos/guide.cpp:192
 msgid "Connection to the guide CCD is lost."
 msgstr ""
 
-#: ekos/guide.cpp:379
+#: ekos/guide.cpp:382
 #, fuzzy
 #| msgid ""
 #| "Lost track of the guide star. Try increasing the square size and check "
@@ -3758,7 +3784,7 @@ msgstr ""
 "Жұлдыз қадағалаудан шығып кеті. Квадратты үлғайтып көріңіз және қондырғының "
 "жалғауын тексеріп шығыңыз."
 
-#: ekos/guide.cpp:417
+#: ekos/guide.cpp:420
 msgid "The CCD does not support Rapid Guiding. Aborting..."
 msgstr ""
 
@@ -8339,13 +8365,30 @@ msgstr "astrometry.net баптау файлы"
 msgid "Path to astrometry.net file location."
 msgstr "astrometry.net файл жататын қапшығы."
 
-#. i18n: ectx: label, entry (FocusTicks), group (Focus)
+#. i18n: ectx: label, entry (GuideDeviation), group (Capture)
 #: kstars.kcfg:1300
+msgid "Default maximum permittable guide deviation"
+msgstr ""
+
+#. i18n: ectx: whatsthis, entry (GuideDeviation), group (Capture)
+#: kstars.kcfg:1301
+msgid ""
+"If guide deviation exceeds this limit, the exposure will be automatically "
+"aborted and only resumed when the deviation is within this limit."
+msgstr ""
+
+#. i18n: ectx: label, entry (EnforceGuideDeviation), group (Capture)
+#: kstars.kcfg:1305
+msgid "Enforce guiding deviation limit."
+msgstr ""
+
+#. i18n: ectx: label, entry (FocusTicks), group (Focus)
+#: kstars.kcfg:1311
 msgid "Default Focuser step ticks"
 msgstr "Әдетті тоғыс келтіргіштің қадам белгілері"
 
 #. i18n: ectx: whatsthis, entry (FocusTicks), group (Focus)
-#: kstars.kcfg:1301
+#: kstars.kcfg:1312
 msgid ""
 "Step size of the absolute focuser. The step size TICKS should be adjusted so "
 "that when the focuser moves TICKS steps, the difference in HFR is more than "
@@ -8357,12 +8400,12 @@ msgstr ""
 "болады."
 
 #. i18n: ectx: label, entry (FocusTolerance), group (Focus)
-#: kstars.kcfg:1305
+#: kstars.kcfg:1316
 msgid "Default Focuser tolerance value"
 msgstr "Тоғыс келтіргіш ауытқу шегінің әдетті мәні"
 
 #. i18n: ectx: whatsthis, entry (FocusTolerance), group (Focus)
-#: kstars.kcfg:1306
+#: kstars.kcfg:1317
 msgid ""
 "The tolerance specifies the percentage difference between the current "
 "focusing position and the minimum obtained during the focusing run. "
@@ -8374,7 +8417,7 @@ msgstr ""
 "тоғысты іздеп узақ уақыт әрі-бері жүре бермеуге қажетті."
 
 #. i18n: ectx: label, entry (FocusMaxTravel), group (Focus)
-#: kstars.kcfg:1310
+#: kstars.kcfg:1321
 #, fuzzy
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Maximum travel"
@@ -8382,19 +8425,19 @@ msgid "Maximum Focus Travel Distance"
 msgstr "Максимум кезу"
 
 #. i18n: ectx: whatsthis, entry (FocusMaxTravel), group (Focus)
-#: kstars.kcfg:1311
+#: kstars.kcfg:1322
 #, fuzzy
 #| msgid "The maximum solar distance for drawing comets."
 msgid "Set the maximum travel distance of an absolute focuser."
 msgstr "Көрсетілетін кометалардың Күннең ең алыс қашықтығы."
 
 #. i18n: ectx: label, entry (FocusExposure), group (Focus)
-#: kstars.kcfg:1315
+#: kstars.kcfg:1326
 msgid "Default Focuser exposure value"
 msgstr "Тоғыс келтіргіш экспозициясының әдетті мәні"
 
 #. i18n: ectx: whatsthis, entry (FocusExposure), group (Focus)
-#: kstars.kcfg:1316
+#: kstars.kcfg:1327
 msgid ""
 "Specifies exposure value of CCD when performing focusing. Lower this value "
 "to avoid saturation of bright stars which adversely affects HFR measurement. "
@@ -8405,83 +8448,83 @@ msgstr ""
 "қылады. Жұлдыздар көрінбесе мәнін үлкейтіңіз."
 
 #. i18n: ectx: label, entry (FocusBoxSize), group (Focus)
-#: kstars.kcfg:1320
+#: kstars.kcfg:1331
 msgid "Default Focuser star selection box size"
 msgstr "Әдетті тоғыс келтіргіштің жұлдыз таңдау тікбұрыш өлшемі"
 
 #. i18n: ectx: whatsthis, entry (FocusBoxSize), group (Focus)
-#: kstars.kcfg:1321
+#: kstars.kcfg:1332
 msgid "Set box size to select a focus star."
 msgstr "Тоғыстағы жұлдызды таңдау тікбұрыш өлшемін орнату."
 
 #. i18n: ectx: label, entry (FocusXBin), group (Focus)
-#: kstars.kcfg:1325
+#: kstars.kcfg:1336
 msgid "Default CCD X binning in focus mode"
 msgstr "Тоғыс күйдегі әдетті CCD X жақтауы"
 
 #. i18n: ectx: whatsthis, entry (FocusXBin), group (Focus)
-#: kstars.kcfg:1326
+#: kstars.kcfg:1337
 msgid "Set horizontal binning of CCD camera while in focus mode."
 msgstr "Тоғыс күйдегі CCD камера жатық жақтауын орнату."
 
 #. i18n: ectx: label, entry (FocusYBin), group (Focus)
-#: kstars.kcfg:1330
+#: kstars.kcfg:1341
 msgid "Default CCD Y binning in focus mode"
 msgstr "Тоғыс күйдегі әдетті CCD Y жақтауы"
 
 #. i18n: ectx: whatsthis, entry (FocusYBin), group (Focus)
-#: kstars.kcfg:1331
+#: kstars.kcfg:1342
 msgid "Set vertical binning of CCD camera while in focus mode."
 msgstr "Тоғыс күйдегі CCD камера тік жақтауын орнату."
 
 #. i18n: ectx: label, entry (FocusSubFrame), group (Focus)
-#: kstars.kcfg:1335
+#: kstars.kcfg:1346
 msgid "Subframe the focus star during the autofocus procedure."
 msgstr ""
 
 #. i18n: ectx: label, entry (AutoSelectStar), group (Focus)
-#: kstars.kcfg:1339
+#: kstars.kcfg:1350
 msgid "Automatically select a star to focus."
 msgstr "Тоғыстағы жұлдызды автоматты түрде таңдау."
 
 #. i18n: ectx: label, entry (AlignExposure), group (Align)
-#: kstars.kcfg:1345
+#: kstars.kcfg:1356
 msgid "Default alignment exposure value"
 msgstr "Дәлдегіш экспозициясының әдетті мәні"
 
 #. i18n: ectx: whatsthis, entry (AlignExposure), group (Align)
-#: kstars.kcfg:1346
+#: kstars.kcfg:1357
 msgid ""
 "Specifies exposure value of CCD in seconds when performing plate solving."
 msgstr "Астрометрикалық шешімін іздегендегі CCD экспозициясын (сек) келтіру."
 
 #. i18n: ectx: label, entry (SolverXBin), group (Align)
-#: kstars.kcfg:1350
+#: kstars.kcfg:1361
 msgid "Default CCD X binning while in alignment mode"
 msgstr "Дәлдеу күйдегі әдетті CCD X жақтауы"
 
 #. i18n: ectx: whatsthis, entry (SolverXBin), group (Align)
-#: kstars.kcfg:1351
+#: kstars.kcfg:1362
 msgid "Set horizontal binning of CCD camera while in alignment mode."
 msgstr "Дәлдеу күйдегі CCD камера жатық жақтауын орнату."
 
 #. i18n: ectx: label, entry (SolverYBin), group (Align)
-#: kstars.kcfg:1355
+#: kstars.kcfg:1366
 msgid "Default CCD Y binning while in alignment mode"
 msgstr "Дәлдеу күйдегі әдетті CCD Y жақтауы"
 
 #. i18n: ectx: whatsthis, entry (SolverYBin), group (Align)
-#: kstars.kcfg:1356
+#: kstars.kcfg:1367
 msgid "Set vertical binning of CCD camera while in alignment mode."
 msgstr "Дәлдеу күйдегі CCD камера тік жақтауын орнату."
 
 #. i18n: ectx: label, entry (SolverUpdateCoords), group (Align)
-#: kstars.kcfg:1360
+#: kstars.kcfg:1371
 msgid "Update Solver RA and DEC search coordinates."
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (SolverUpdateCoords), group (Align)
-#: kstars.kcfg:1361
+#: kstars.kcfg:1372
 msgid ""
 "Automatically update the solver RA and Declination coordinates after "
 "telescope slew is completed."
