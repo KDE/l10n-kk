@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-13 01:38+0000\n"
+"POT-Creation-Date: 2014-01-16 01:34+0000\n"
 "PO-Revision-Date: 2013-11-08 01:50+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -167,7 +167,7 @@ msgstr ""
 msgid "That is an invalid name."
 msgstr "Атауы жарамсыз."
 
-#: classifier.cpp:407 classifier.cpp:784 dialogs/umlviewdialog.cpp:230
+#: classifier.cpp:407 classifier.cpp:784 dialogs/diagrampropertiespage.cpp:73
 #: entity.cpp:125 entity.cpp:178 entity.cpp:228 entity.cpp:277 enum.cpp:107
 #: object_factory.cpp:212 package.cpp:175 umldoc.cpp:1280 umldoc.cpp:1351
 #: umldoc.cpp:1381 umldoc.cpp:1415
@@ -283,7 +283,7 @@ msgstr "Толтыру түсін өзгерту : %1"
 msgid "No fill color : %1"
 msgstr "Толтыру түсін өзгерту : %1"
 
-#: cmds/widget/cmd_changeVisualProperty.cpp:31
+#: cmds/widget/cmd_changeVisualProperty.cpp:32
 #, fuzzy, kde-format
 #| msgid "Change visibility : %1"
 msgid "Change visual property : %1"
@@ -686,7 +686,7 @@ msgstr "Класс кодын құрғанда келесі қолданылсы
 #: dialogs/assocrolepage.cpp:93 dialogs/assocrolepage.cpp:94
 #: dialogs/classgenpage.cpp:236 dialogs/classgenpage.cpp:328
 #: dialogs/classgenpage.cpp:392 dialogs/classifierlistpage.cpp:218
-#: dialogs/diagrampropertiespage.ui:281 dialogs/notedialog.cpp:43
+#: dialogs/diagrampropertiespage.ui:287 dialogs/notedialog.cpp:43
 #: dialogs/objectnodedialog.cpp:200 dialogs/parmpropdlg.cpp:115
 #: dialogs/statedialog.cpp:173 dialogs/umlrolepropertiesbase.ui:140
 msgid "Documentation"
@@ -1559,7 +1559,7 @@ msgstr "Кластың атауы"
 #: dialogs/assocgenpage.cpp:77 dialogs/classpropdlg.cpp:128
 #: dialogs/objectnodedialog.cpp:45 dialogs/parmpropdlg.cpp:71
 #: dialogs/statedialog.cpp:45 dialogs/statedialog.cpp:125
-#: dialogs/umlviewdialog.cpp:40 listpopupmenu.cpp:632
+#: dialogs/umlviewdialog.cpp:41 listpopupmenu.cpp:632
 #: refactoring/refactoringassistant.cpp:456
 msgid "Properties"
 msgstr "Қасиеттері"
@@ -1666,12 +1666,12 @@ msgstr "Атауын өзгерту"
 msgid "New Activity"
 msgstr "Жаңа іс"
 
-#: dialogs/activitypage.cpp:175 toolbarstateother.cpp:251 umlscene.cpp:3062
+#: dialogs/activitypage.cpp:175 toolbarstateother.cpp:251 umlscene.cpp:3068
 #: widgets/activitywidget.cpp:364 widgets/statewidget.cpp:497
 msgid "Enter the name of the new activity:"
 msgstr "Жаңа істің атауы:"
 
-#: dialogs/activitypage.cpp:175 toolbarstateother.cpp:251 umlscene.cpp:3063
+#: dialogs/activitypage.cpp:175 toolbarstateother.cpp:251 umlscene.cpp:3069
 #: widgets/statewidget.cpp:498
 msgid "new activity"
 msgstr "жаңа іс"
@@ -1703,7 +1703,7 @@ msgstr "Байланыс қасиеттері"
 
 #: dialogs/assocpropdlg.cpp:104 dialogs/classpropdlg.cpp:242
 #: dialogs/classpropdlg.cpp:376 dialogs/settingsdlg.cpp:179
-#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:92
+#: dialogs/umlforeignkeyconstraintdialog.cpp:208 dialogs/umlviewdialog.cpp:93
 msgid "General Settings"
 msgstr "Жалпы баптау"
 
@@ -1732,7 +1732,7 @@ msgstr "Міндеттің стилі"
 
 #: dialogs/assocpropdlg.cpp:122 dialogs/classpropdlg.cpp:395
 #: dialogs/dialogbase.cpp:57 dialogs/settingsdlg.cpp:234
-#: dialogs/umlviewdialog.cpp:158
+#: dialogs/umlviewdialog.cpp:142
 msgid "Font Settings"
 msgstr "Қаріп баптауы"
 
@@ -2116,7 +2116,7 @@ msgstr "Ж&ана шекктеу..."
 #: dialogs/classifierlistpage.cpp:206
 #: dialogs/umlforeignkeyconstraintdialog.cpp:321
 #: dialogs/umloperationdialog.cpp:166
-#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1477 umlscene.cpp:3281
+#: dialogs/umluniqueconstraintdialog.cpp:122 umldoc.cpp:1477 umlscene.cpp:3287
 msgid "&Delete"
 msgstr "Ө&шіру"
 
@@ -2264,7 +2264,7 @@ msgstr "Жалпы"
 #. i18n: ectx: label, entry (uiFont), group (UI Options)
 #. i18n: ectx: label, entry (codeViewerFont), group (Code Viewer Options)
 #: dialogs/classpropdlg.cpp:394 dialogs/dialogbase.cpp:57
-#: dialogs/settingsdlg.cpp:233 dialogs/umlviewdialog.cpp:157 umbrello.kcfg:160
+#: dialogs/settingsdlg.cpp:233 dialogs/umlviewdialog.cpp:141 umbrello.kcfg:160
 #: umbrello.kcfg:270
 msgid "Font"
 msgstr "Қаріпі"
@@ -2462,6 +2462,18 @@ msgstr "Таңдау"
 msgid "No diagrams selected."
 msgstr "Диаграммалар таңдалмаған."
 
+#: dialogs/diagrampropertiespage.cpp:72
+msgid "The name you have entered is invalid."
+msgstr "Келтірілген атау дұрыс емес."
+
+#: dialogs/diagrampropertiespage.cpp:82
+msgid "The name you have entered is not unique."
+msgstr "Келтірілген атау қайталанған."
+
+#: dialogs/diagrampropertiespage.cpp:83 umldoc.cpp:1421
+msgid "Name Not Unique"
+msgstr "Қайталанған атауы"
+
 #. i18n: ectx: property (title), widget (QGroupBox, ui_groupBoxDiagramProperties)
 #: dialogs/diagrampropertiespage.ui:17
 msgid "Diagram Properties"
@@ -2483,24 +2495,18 @@ msgstr "Масштабы:"
 msgid "%"
 msgstr "%"
 
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showOpSigs)
-#. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
-#: dialogs/diagrampropertiespage.ui:94 umbrello.kcfg:218
-msgid "Show operation signature"
-msgstr "Операция сигнатурасы көрсетілісін"
-
 #. i18n: ectx: property (text), widget (QCheckBox, ui_checkBoxShowGrid)
-#: dialogs/diagrampropertiespage.ui:118
+#: dialogs/diagrampropertiespage.ui:124
 msgid "Show &grid"
 msgstr "&Тор көрсетілсін"
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapToGrid)
-#: dialogs/diagrampropertiespage.ui:125
+#: dialogs/diagrampropertiespage.ui:131
 msgid "Snap &to grid"
 msgstr "Торға к&елтірілсін"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:133
+#: dialogs/diagrampropertiespage.ui:139
 msgid ""
 "Snap the size of the components to be a multiple of the grid spacing.\n"
 "If 'Snap to Grid' is enabled a component will always be aligned with the "
@@ -2511,32 +2517,32 @@ msgstr ""
 "торға сәйкестірілінеді."
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_snapComponentSizeToGrid)
-#: dialogs/diagrampropertiespage.ui:136
+#: dialogs/diagrampropertiespage.ui:142
 msgid "Snap component size"
 msgstr "Өлшемі торға сәйкес болсын"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelGridSpacing)
-#: dialogs/diagrampropertiespage.ui:153
+#: dialogs/diagrampropertiespage.ui:159
 msgid "Grid spacing:  "
 msgstr "Тор аралығы:  "
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelX)
-#: dialogs/diagrampropertiespage.ui:176
+#: dialogs/diagrampropertiespage.ui:182
 msgid "X"
 msgstr "X"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labelY)
-#: dialogs/diagrampropertiespage.ui:212
+#: dialogs/diagrampropertiespage.ui:218
 msgid "Y"
 msgstr "Y"
 
 #. i18n: ectx: property (text), widget (QLabel, ui_labeLineWidth)
-#: dialogs/diagrampropertiespage.ui:242
+#: dialogs/diagrampropertiespage.ui:248
 msgid "Line width:  "
 msgstr "Сызықтың қалыңдығы:  "
 
 #. i18n: ectx: property (text), widget (QCheckBox, ui_autoIncrementSequence)
-#: dialogs/diagrampropertiespage.ui:271
+#: dialogs/diagrampropertiespage.ui:277
 msgid "Autoincrement Sequence "
 msgstr "Автоинкремент тізбегі "
 
@@ -2860,7 +2866,7 @@ msgstr "Сызықтың өзгеше қалыңдығы:"
 msgid "&Use fill color"
 msgstr "&Толтыру түсі болсын"
 
-#: dialogs/settingsdlg.cpp:178 dialogs/umlviewdialog.cpp:91
+#: dialogs/settingsdlg.cpp:178 dialogs/umlviewdialog.cpp:92
 msgctxt "general settings page"
 msgid "General"
 msgstr "Жалпы"
@@ -3326,35 +3332,23 @@ msgstr "Келтірілген шектеуінің атауы дұрыс еме
 msgid "Constraint Name Invalid"
 msgstr "Шектеуінің атауы дұрыс емес"
 
-#: dialogs/umlviewdialog.cpp:125
+#: dialogs/umlviewdialog.cpp:109
 msgctxt "classes display options page"
 msgid "Display"
 msgstr "Көрсету"
 
-#: dialogs/umlviewdialog.cpp:126
+#: dialogs/umlviewdialog.cpp:110
 msgid "Classes Display Options"
 msgstr "Қластарды көрсету параметрлері"
 
-#: dialogs/umlviewdialog.cpp:141
+#: dialogs/umlviewdialog.cpp:125
 msgctxt "diagram style page"
 msgid "Style"
 msgstr "Стилі"
 
-#: dialogs/umlviewdialog.cpp:142
+#: dialogs/umlviewdialog.cpp:126
 msgid "Diagram Style"
 msgstr "Диаграмманың стилі"
-
-#: dialogs/umlviewdialog.cpp:229
-msgid "The name you have entered is invalid."
-msgstr "Келтірілген атау дұрыс емес."
-
-#: dialogs/umlviewdialog.cpp:239
-msgid "The name you have entered is not unique."
-msgstr "Келтірілген атау қайталанған."
-
-#: dialogs/umlviewdialog.cpp:240 umldoc.cpp:1421
-msgid "Name Not Unique"
-msgstr "Қайталанған атауы"
 
 #: dialogs/umlwidgetstylepage.cpp:86
 msgctxt "title of color group"
@@ -4326,7 +4320,7 @@ msgstr "Байланысты қолдануы дұрыс емес."
 msgid "Association Error"
 msgstr "Қате байланыс"
 
-#: toolbarstateother.cpp:250 umlscene.cpp:3061 widgets/activitywidget.cpp:363
+#: toolbarstateother.cpp:250 umlscene.cpp:3067 widgets/activitywidget.cpp:363
 msgid "Enter Activity Name"
 msgstr "Істің атауын келтіріңіз"
 
@@ -4366,15 +4360,15 @@ msgstr "Құрама фрагментті келтіріңіз"
 msgid "new Combined Fragment"
 msgstr "жаңа құрама фрагмент"
 
-#: toolbarstateother.cpp:279 umlscene.cpp:3026 widgets/statewidget.cpp:483
+#: toolbarstateother.cpp:279 umlscene.cpp:3032 widgets/statewidget.cpp:483
 msgid "Enter State Name"
 msgstr "Күйінің атауын келтіріңіз"
 
-#: toolbarstateother.cpp:280 umlscene.cpp:3027 widgets/statewidget.cpp:484
+#: toolbarstateother.cpp:280 umlscene.cpp:3033 widgets/statewidget.cpp:484
 msgid "Enter the name of the new state:"
 msgstr "Жаңа күйінің атауы:"
 
-#: toolbarstateother.cpp:280 umlscene.cpp:3028
+#: toolbarstateother.cpp:280 umlscene.cpp:3034
 msgid "new state"
 msgstr "жаңа күйі"
 
@@ -4652,6 +4646,11 @@ msgstr "Атрибуттың сигнатурасын көрсету"
 #: umbrello.kcfg:217
 msgid "Show Operation Signature"
 msgstr "Операцияның сигнатурасын көрсету"
+
+#. i18n: ectx: whatsthis, entry (showOpSig), group (Class Options)
+#: umbrello.kcfg:218
+msgid "Show operation signature"
+msgstr "Операция сигнатурасы көрсетілісін"
 
 #. i18n: ectx: label, entry (defaultAttributeScope), group (Class Options)
 #. i18n: ectx: whatsthis, entry (defaultAttributeScope), group (Class Options)
@@ -5532,19 +5531,19 @@ msgctxt "reset status bar"
 msgid "Ready."
 msgstr "Дайын."
 
-#: uml.cpp:2102
+#: uml.cpp:2103
 msgid "Cannot view code until you generate some first."
 msgstr "Кодты көру үшін алдымен оны құру керек."
 
-#: uml.cpp:2102 uml.cpp:2105
+#: uml.cpp:2103 uml.cpp:2106
 msgid "Cannot View Code"
 msgstr "Код көрсетілмейді"
 
-#: uml.cpp:2105
+#: uml.cpp:2106
 msgid "Cannot view code from simple code writer."
 msgstr "Қарапайым код жазу құралдағы коды көрсетілмейді."
 
-#: uml.cpp:2995
+#: uml.cpp:2996
 msgid "XHTML Generation failed ."
 msgstr "XHTML құру жаңылысы"
 
@@ -5853,69 +5852,69 @@ msgstr "Жарамсыз атау"
 msgid "Diagram: %2 Page %1"
 msgstr "Диаграмма: %2 %1-бет"
 
-#: umlscene.cpp:1311
+#: umlscene.cpp:1317
 #, fuzzy
 #| msgid "&Use fill color"
 msgid "Use fill color"
 msgstr "&Толтыру түсі болсын"
 
-#: umlscene.cpp:1313
+#: umlscene.cpp:1319
 #, fuzzy
 #| msgid "Fill Color"
 msgid "No fill color"
 msgstr "Толтыру түсі"
 
-#: umlscene.cpp:1328
+#: umlscene.cpp:1334
 #, fuzzy
 #| msgid "Change font : %1"
 msgid "Change font"
 msgstr "Қаріпті ауыстыру : %1"
 
-#: umlscene.cpp:1342
+#: umlscene.cpp:1348
 #, fuzzy
 #| msgid "Change Line Color"
 msgid "Change line color"
 msgstr "Сызықтың түсін өзгерту"
 
-#: umlscene.cpp:1360
+#: umlscene.cpp:1366
 #, fuzzy
 #| msgid "Custom line width:"
 msgid "Change line width"
 msgstr "Сызықтың өзгеше қалыңдығы:"
 
-#: umlscene.cpp:1380
+#: umlscene.cpp:1386
 #, fuzzy
 #| msgid "Change Fill Color"
 msgid "Change fill color"
 msgstr "Толтыру түсін өзгерту"
 
-#: umlscene.cpp:1395
+#: umlscene.cpp:1401
 #, fuzzy
 #| msgid "Change Properties"
 msgid "Change visual property"
 msgstr "Қасиеттерін өзгерту"
 
-#: umlscene.cpp:1415
+#: umlscene.cpp:1421
 #, fuzzy
 #| msgid "Delete Point"
 msgid "Delete widgets"
 msgstr "Нүктені өшіру"
 
-#: umlscene.cpp:1466
+#: umlscene.cpp:1472
 #, fuzzy
 #| msgid "Resize widget : %1"
 msgid "Resize widgets"
 msgstr "Виджеттің өлшемін өзгерту : %1"
 
-#: umlscene.cpp:3099
+#: umlscene.cpp:3105
 msgid "Enter Diagram Name"
 msgstr "Диаграмманың атауын келтіріңіз"
 
-#: umlscene.cpp:3100
+#: umlscene.cpp:3106
 msgid "Enter the new name of the diagram:"
 msgstr "Диаграмманың жаңа атауы:"
 
-#: umlscene.cpp:3279
+#: umlscene.cpp:3285
 msgid ""
 "You are about to delete the entire diagram.\n"
 "Are you sure?"
@@ -5923,7 +5922,7 @@ msgstr ""
 "Тұтас диаграмманы өшірмексіз.\n"
 "Шын ба?"
 
-#: umlscene.cpp:3280
+#: umlscene.cpp:3286
 msgid "Delete Diagram?"
 msgstr "Диаграмма өшірілсін бе?"
 
