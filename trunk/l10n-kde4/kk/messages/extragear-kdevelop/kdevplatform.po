@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-22 01:24+0000\n"
+"POT-Creation-Date: 2014-01-24 18:48+0000\n"
 "PO-Revision-Date: 2013-11-20 06:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -292,7 +292,7 @@ msgid "Delete"
 msgstr "Өшіру"
 
 #: debugger/variable/variablecollection.cpp:201
-#: language/interfaces/iproblem.cpp:116
+#: language/duchain/problem.cpp:127
 msgid "Error"
 msgstr "Қате"
 
@@ -836,23 +836,27 @@ msgstr "Атаулар кеңістігінің басқа атауы"
 msgid "Forward Declaration"
 msgstr "Алдын-ала мәлімдеме"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:43
+#: language/duchain/navigation/problemnavigationcontext.cpp:46
 #, kde-format
 msgid "Solve: %1"
 msgstr "Шешімі: %1"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:45
+#: language/duchain/navigation/problemnavigationcontext.cpp:48
 msgid "Solve"
 msgstr "Шешу"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:78
+#: language/duchain/navigation/problemnavigationcontext.cpp:81
 msgid "Problem"
 msgstr "Мәселе"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:88
+#: language/duchain/navigation/problemnavigationcontext.cpp:91
 #, kde-format
 msgid "Problem in <b>%1</b>:<br/>"
 msgstr "<b>%1</b> мәселесі:<br/>"
+
+#: language/duchain/navigation/problemnavigationcontext.cpp:111
+msgid " in "
+msgstr ""
 
 #: language/duchain/navigation/usescollector.cpp:379
 #, kde-format
@@ -936,6 +940,48 @@ msgstr "Бүкілін тарқату"
 msgid "Collapse all"
 msgstr "Бүкілін бүктеу"
 
+#: language/duchain/problem.cpp:129
+#, fuzzy
+#| msgid "Show warnings"
+msgid "Warning"
+msgstr "Ескертулерді көрсету"
+
+#: language/duchain/problem.cpp:131
+msgid "Hint"
+msgstr ""
+
+#: language/duchain/problem.cpp:140
+msgid "Disk"
+msgstr "Диск"
+
+#: language/duchain/problem.cpp:142
+msgid "Preprocessor"
+msgstr "Алдыңғы талдау"
+
+#: language/duchain/problem.cpp:144
+msgid "Lexer"
+msgstr "Лексика талдауы"
+
+#: language/duchain/problem.cpp:146
+msgid "Parser"
+msgstr "Синтаксис талдауы"
+
+#: language/duchain/problem.cpp:148
+msgid "Definition-Use Chain"
+msgstr "Анықтама-пайдалану тізбегі"
+
+#: language/duchain/problem.cpp:150
+msgid "Semantic Analysis"
+msgstr "Семантикалық талдау"
+
+#: language/duchain/problem.cpp:152
+msgid "TODO"
+msgstr "TODO"
+
+#: language/duchain/problem.cpp:155
+msgid "Unknown"
+msgstr "Беймәлім"
+
 #: language/duchain/repositories/itemrepository.h:207
 #: language/duchain/repositories/itemrepository.h:2126
 #, kde-format
@@ -972,61 +1018,19 @@ msgstr ""
 "KDevelop кэшті тазаласын десеңіз ОК-ді басыңыз, әлде кэштің мазмұны дұрыс "
 "десеңіз Қайту дегенді басыңыз."
 
-#: language/interfaces/iproblem.cpp:118
-#, fuzzy
-#| msgid "Show warnings"
-msgid "Warning"
-msgstr "Ескертулерді көрсету"
-
-#: language/interfaces/iproblem.cpp:120
-msgid "Hint"
-msgstr ""
-
-#: language/interfaces/iproblem.cpp:129
-msgid "Disk"
-msgstr "Диск"
-
-#: language/interfaces/iproblem.cpp:131
-msgid "Preprocessor"
-msgstr "Алдыңғы талдау"
-
-#: language/interfaces/iproblem.cpp:133
-msgid "Lexer"
-msgstr "Лексика талдауы"
-
-#: language/interfaces/iproblem.cpp:135
-msgid "Parser"
-msgstr "Синтаксис талдауы"
-
-#: language/interfaces/iproblem.cpp:137
-msgid "Definition-Use Chain"
-msgstr "Анықтама-пайдалану тізбегі"
-
-#: language/interfaces/iproblem.cpp:139
-msgid "Semantic Analysis"
-msgstr "Семантикалық талдау"
-
-#: language/interfaces/iproblem.cpp:141
-msgid "TODO"
-msgstr "TODO"
-
-#: language/interfaces/iproblem.cpp:144
-msgid "Unknown"
-msgstr "Беймәлім"
-
-#: language/util/debuglanguageparserhelper.h:167
+#: language/util/debuglanguageparserhelper.h:166
 msgid "print generated AST tree"
 msgstr "жасаған AST бұтағын шығару"
 
-#: language/util/debuglanguageparserhelper.h:168
+#: language/util/debuglanguageparserhelper.h:167
 msgid "print generated token stream"
 msgstr "жасаған лексема ағынды шығару"
 
-#: language/util/debuglanguageparserhelper.h:169
+#: language/util/debuglanguageparserhelper.h:168
 msgid "code to parse"
 msgstr "талдайтын код"
 
-#: language/util/debuglanguageparserhelper.h:170
+#: language/util/debuglanguageparserhelper.h:169
 msgid ""
 "files or - to read from STDIN, the latter is the default if nothing is "
 "provided"
@@ -4248,7 +4252,7 @@ msgstr "Айырмашылығын көрсету..."
 msgid "Revert"
 msgstr "Қайтару"
 
-#: vcs/vcspluginhelper.cpp:105 vcs/vcspluginhelper.cpp:477
+#: vcs/vcspluginhelper.cpp:105 vcs/vcspluginhelper.cpp:480
 msgid "History..."
 msgstr "Тарихы..."
 
@@ -4272,25 +4276,25 @@ msgstr "Кіргізу"
 msgid "Pull"
 msgstr "Суырып алу"
 
-#: vcs/vcspluginhelper.cpp:318
+#: vcs/vcspluginhelper.cpp:323
 msgid "There are no differences."
 msgstr "Айырмашылық жоқ."
 
-#: vcs/vcspluginhelper.cpp:319
+#: vcs/vcspluginhelper.cpp:324
 msgid "VCS support"
 msgstr "Нұсқалардын қадағалау жүйесін қолдау"
 
-#: vcs/vcspluginhelper.cpp:325
+#: vcs/vcspluginhelper.cpp:330
 msgid "Unable to get difference."
 msgstr "Айырмашылығы табылмады."
 
-#: vcs/vcspluginhelper.cpp:373
+#: vcs/vcspluginhelper.cpp:378
 #, kde-format
 msgctxt "%1: path or URL, %2: name of a version control system"
 msgid "%2 History (%1)"
 msgstr "%2 тарихы (%1)"
 
-#: vcs/vcspluginhelper.cpp:423
+#: vcs/vcspluginhelper.cpp:426
 msgid ""
 "Cannot display annotations, missing interface KTextEditor::"
 "AnnotationInterface for the editor."
@@ -4298,7 +4302,7 @@ msgstr ""
 "Аңдатпа көрсетілмеді, редақторында KTextEditor::AnnotationInterface "
 "интерфейсі жоқ."
 
-#: vcs/vcspluginhelper.cpp:427
+#: vcs/vcspluginhelper.cpp:430
 #, kde-format
 msgid ""
 "Cannot execute annotate action because the document was not found, or was "
@@ -4309,7 +4313,7 @@ msgstr ""
 "емес:\n"
 "%1"
 
-#: vcs/vcspluginhelper.cpp:476
+#: vcs/vcspluginhelper.cpp:479
 msgid "Copy Revision"
 msgstr "Жетілдірімін көшіріп алу"
 
