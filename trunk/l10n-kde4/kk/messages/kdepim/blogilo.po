@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-24 01:41+0000\n"
+"POT-Creation-Date: 2014-01-30 01:35+0000\n"
 "PO-Revision-Date: 2013-10-10 03:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -242,13 +242,18 @@ msgstr "Блог"
 msgid "Post"
 msgstr "Жазба"
 
-#. i18n: ectx: Menu (settings)
+#. i18n: ectx: Menu (storageservice)
 #: src/blogiloui.rc:14
+msgid "Import Export File"
+msgstr ""
+
+#. i18n: ectx: Menu (settings)
+#: src/blogiloui.rc:18
 msgid "Settings"
 msgstr "Баптау"
 
 #. i18n: ectx: Menu (settings)
-#: src/blogiloui.rc:19
+#: src/blogiloui.rc:23
 msgid "Toolbar"
 msgstr "Құралдар"
 
@@ -327,6 +332,44 @@ msgstr "HMTL файлы алынбады."
 msgid "Cannot write data to file %1"
 msgstr "%1 файлына дерек жазылмады"
 
+#: src/configuredialog.cpp:61
+msgctxt "Configure Page"
+msgid "General"
+msgstr "Жалпы"
+
+#: src/configuredialog.cpp:62
+msgctxt "Configure Page"
+msgid "Blogs"
+msgstr "Блогтар"
+
+#: src/configuredialog.cpp:63
+msgctxt "Configure Page"
+msgid "Editor"
+msgstr "Редактор"
+
+#: src/configuredialog.cpp:64
+msgctxt "Configure Page"
+msgid "Advanced"
+msgstr "Қосымша"
+
+#: src/configuredialog.cpp:65
+msgctxt "Configure Page"
+msgid "Storage Service"
+msgstr ""
+
+#: src/configurestorageservicewidget.cpp:38
+msgid "Manage Storage Service"
+msgstr ""
+
+#: src/configurestorageservicewidget.cpp:57
+msgid ""
+"Could not start storage service manager; please check your installation."
+msgstr ""
+
+#: src/configurestorageservicewidget.cpp:59
+msgid "KMail Error"
+msgstr ""
+
 #: src/dbman.cpp:76
 msgid "Cannot create database"
 msgstr "Деректер қоры құрылмады"
@@ -343,7 +386,7 @@ msgstr "Сұралған ID-мен жазбасы жоқ"
 msgid "There is no local post with the requested ID "
 msgstr "Сұралған ID-мен жергілікті жазба жоқ"
 
-#: src/main.cpp:34 src/mainwindow.cpp:393
+#: src/main.cpp:34 src/mainwindow.cpp:408
 msgid "A KDE Blogging Client"
 msgstr "KDE-нің Блог клиенті"
 
@@ -389,83 +432,85 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: src/mainwindow.cpp:74 src/mainwindow.cpp:393
+#: src/mainwindow.cpp:81 src/mainwindow.cpp:408
 msgid "Blogilo"
 msgstr "Blogilo"
 
-#: src/mainwindow.cpp:84
+#: src/mainwindow.cpp:92
 msgid "Toolbox"
 msgstr "Құралдары"
 
-#: src/mainwindow.cpp:164
+#: src/mainwindow.cpp:156
+#, fuzzy, kde-format
+#| msgid ""
+#| "Media uploaded.\n"
+#| "You can find it here:\n"
+#| "%1"
+msgid "File uploaded. You can access to it at this url %1"
+msgstr ""
+"Мультимедиа жүктеп берілді.\n"
+"Ол мұнда:\n"
+"%1"
+
+#: src/mainwindow.cpp:156 src/mainwindow.cpp:163
+#, fuzzy
+#| msgid "Upload via:"
+msgid "Upload File"
+msgstr "Не арқылы жүктеп беру:"
+
+#: src/mainwindow.cpp:163
+msgid "Error during upload."
+msgstr ""
+
+#: src/mainwindow.cpp:197
 msgid "New Post"
 msgstr "Жаңа жазба"
 
-#: src/mainwindow.cpp:169
+#: src/mainwindow.cpp:202
 msgid "Add Blog..."
 msgstr "Блогты қосу..."
 
-#: src/mainwindow.cpp:173
+#: src/mainwindow.cpp:206
 msgid "Submit..."
 msgstr "Тапсыру..."
 
-#: src/mainwindow.cpp:177 src/uploadmediadialog.cpp:50
+#: src/mainwindow.cpp:210 src/uploadmediadialog.cpp:50
 msgid "Upload Media..."
 msgstr "Мультимедианы жүктеп беру..."
 
-#: src/mainwindow.cpp:181
+#: src/mainwindow.cpp:214
 msgid "Save Locally"
 msgstr "Жергілікті сақтау"
 
-#: src/mainwindow.cpp:186
+#: src/mainwindow.cpp:219
 msgid "Show Toolbox"
 msgstr "Құралдарын көрсету"
 
-#: src/mainwindow.cpp:197 src/toolbox.cpp:493
+#: src/mainwindow.cpp:230 src/toolbox.cpp:493
 msgid "Open in browser"
 msgstr "Шолғышта ашу"
 
-#: src/mainwindow.cpp:199
+#: src/mainwindow.cpp:232
 msgid "Open current blog in browser"
 msgstr "Назардағы блогты шолғышта ашу"
 
-#: src/mainwindow.cpp:311
-msgctxt "Configure Page"
-msgid "General"
-msgstr "Жалпы"
-
-#: src/mainwindow.cpp:312
-msgctxt "Configure Page"
-msgid "Blogs"
-msgstr "Блогтар"
-
-#: src/mainwindow.cpp:313
-msgctxt "Configure Page"
-msgid "Editor"
-msgstr "Редактор"
-
-#: src/mainwindow.cpp:314
-msgctxt "Configure Page"
-msgid "Advanced"
-msgstr "Қосымша"
-
-#: src/mainwindow.cpp:451
+#: src/mainwindow.cpp:466
 msgid "You have to select a blog to publish this post to."
 msgstr "Бұл жазбаны жариялайтын блогты таңдаңыз."
 
-#: src/mainwindow.cpp:455
+#: src/mainwindow.cpp:470
 msgid "There is no open post to submit."
 msgstr "Тапсыратын ашылған жазба жоқ."
 
-#: src/mainwindow.cpp:529
+#: src/mainwindow.cpp:544
 msgid "An error occurred in the last transaction."
 msgstr "Соңғы әрекет кезінде бір қате орын алды."
 
-#: src/mainwindow.cpp:576
+#: src/mainwindow.cpp:591
 msgid "Submitting post failed"
 msgstr "Жазбаны тапсыру жаңылысы"
 
-#: src/mainwindow.cpp:580
+#: src/mainwindow.cpp:595
 #, kde-format
 msgid ""
 "%1\n"
@@ -474,7 +519,7 @@ msgstr ""
 "%1\n"
 "Жазба ашық бола берсін бе?"
 
-#: src/mainwindow.cpp:666
+#: src/mainwindow.cpp:681
 msgid "Cannot find current blog URL."
 msgstr "Назардағы блог URL.-і табылмады"
 
