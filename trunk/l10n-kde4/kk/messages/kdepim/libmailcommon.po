@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-17 01:45+0000\n"
+"POT-Creation-Date: 2014-04-02 01:49+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -734,6 +734,12 @@ msgstr ""
 "*.siv|sieve файлдары (*.siv)\n"
 "*|бүкіл файлдар (*)"
 
+#: filter/filterconverter/filterconverttosieveresultdialog.cpp:65
+#, fuzzy
+#| msgid "Convert to sieve script"
+msgid "Convert to Script Sieve"
+msgstr "Sieve скриптіне аудару"
+
 #: filter/filterimporterexporter.cpp:143 filter/kmfilterdialog.cpp:1208
 msgid ""
 "The following filters have not been saved because they were invalid (e.g. "
@@ -1109,7 +1115,7 @@ msgctxt "@info"
 msgid "Unable to apply a filter since there are no filters currently selected."
 msgstr "Сүзгі таңдалмағаннан ешбір сүзгі іске аспады."
 
-#: filter/kmfilterdialog.cpp:690
+#: filter/kmfilterdialog.cpp:690 filter/kmfilterdialog.cpp:1738
 msgid "No filters selected."
 msgstr "Сүзгі таңдалмаған."
 
@@ -1201,9 +1207,14 @@ msgid "Filters which were imported:"
 msgstr "Импортталған сүзгілер:"
 
 #: filter/kmfilterdialog.cpp:1722
+#, fuzzy
+#| msgctxt "@info"
+#| msgid ""
+#| "Some filters were changed and not saved yet. You must save your filters "
+#| "before they can be exported."
 msgctxt "@info"
 msgid ""
-"Some filters were changed and not saved yet. You must save your filters "
+"Some filters were changed and not saved yet.<br>You must save your filters "
 "before they can be exported."
 msgstr ""
 "Кейбір сүзгілер өзгертіліп әлі сақталмаған. Экспорттау алдында сақтау керек."
@@ -1214,7 +1225,7 @@ msgstr ""
 "KMail сүзгілері түгелдей sieve скрипттеріне аударылмайды, бірақ талпынып "
 "көріңіз :)"
 
-#: filter/kmfilterdialog.cpp:1727
+#: filter/kmfilterdialog.cpp:1727 filter/kmfilterdialog.cpp:1738
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail сүзгілерін sieve скрипттеріне аудару"
 
@@ -1761,9 +1772,14 @@ msgid " kB"
 msgstr " кБ"
 
 #: search/numericrulewidgethandler.cpp:188
+#, fuzzy
+#| msgctxt "Expire messages after %1"
+#| msgid " day"
+#| msgid_plural " days"
 msgctxt "Unit suffix where units are days."
-msgid " days"
-msgstr " күн"
+msgid " day"
+msgid_plural " days"
+msgstr[0] " күн"
 
 #: search/searchpattern.cpp:232
 msgid "equal"
@@ -2223,31 +2239,6 @@ msgstr "Тірке&сімі:"
 msgid "Enable &toolbar button"
 msgstr "&Құралдар панелінде батырмасы болын"
 
-#: util/mailutil.cpp:275
-#, kde-format
-msgid ""
-"From: %1\n"
-"To: %2\n"
-"Subject: %3"
-msgstr ""
-"Кімге: %1\n"
-"Кімден: %2\n"
-"Тақырыбы: %3"
-
-#: util/mailutil.cpp:331
-msgid "Removing attachments from an email might invalidate its signature."
-msgstr "Эл.поштанның тіркемесін өшірген оның қолтаңбалауын бұзуы мүмкін."
-
-#: util/mailutil.cpp:332
-msgid "Remove Attachments"
-msgstr "Тіркемелерді өшіру"
-
-#: util/mailutil.cpp:367 util/mailutil.cpp:380 util/mailutil.cpp:405
-#: util/mailutil.cpp:415
-#, kde-format
-msgid "Mail: %1"
-msgstr "Пошта: %1"
-
 #: util/mailutil_p.h:49
 msgid "Create Todo/Reminder"
 msgstr "Іс/Еске түсіруді жоспарлау"
@@ -2288,52 +2279,88 @@ msgstr "Таңбашалы күйі"
 msgid "Drop your favorite folders here..."
 msgstr "Таңдамалы қапшықтарыңызды осында тастаңыз..."
 
-#: widgets/redirectdialog.cpp:127
-msgid "Redirect Message"
-msgstr "Хатты баскаға жіберу"
+#: widgets/redirectdialog.cpp:74
+msgid "Resend-To:"
+msgstr ""
 
-#: widgets/redirectdialog.cpp:133
-msgid "Select the recipient &addresses to redirect to:"
-msgstr "Басқаға жіберу үшін &адресті таңдаңыз:"
+#: widgets/redirectdialog.cpp:77
+msgid "Resend-Cc:"
+msgstr ""
 
-#: widgets/redirectdialog.cpp:147
+#: widgets/redirectdialog.cpp:80
+msgid "Resend-Bcc:"
+msgstr ""
+
+#: widgets/redirectdialog.cpp:95
 msgid "Use the Address-Selection Dialog"
 msgstr "Адрес таңдау диалогы"
 
-#: widgets/redirectdialog.cpp:148
+#: widgets/redirectdialog.cpp:96
 msgid ""
 "This button opens a separate dialog where you can select recipients out of "
 "all available addresses."
 msgstr ""
 "Бұл батырма бар адрестерден керек алушының таңдауға арналған диалогын ашады."
 
-#: widgets/redirectdialog.cpp:159
+#: widgets/redirectdialog.cpp:190
+msgid "Redirect Message"
+msgstr "Хатты баскаға жіберу"
+
+#: widgets/redirectdialog.cpp:199
+#, fuzzy
+#| msgid "Select the recipient &addresses to redirect to:"
+msgid "Select the recipient addresses to redirect:"
+msgstr "Басқаға жіберу үшін &адресті таңдаңыз:"
+
+#: widgets/redirectdialog.cpp:215
 msgid "Identity:"
 msgstr "Іс-әлпеті:"
 
-#: widgets/redirectdialog.cpp:164
+#: widgets/redirectdialog.cpp:223
 msgid "Transport:"
 msgstr "Тасымалдауы:"
 
-#: widgets/redirectdialog.cpp:168
+#: widgets/redirectdialog.cpp:229
 msgid "&Send Now"
 msgstr "&Қазір жіберу"
 
-#: widgets/redirectdialog.cpp:169
+#: widgets/redirectdialog.cpp:230
 msgid "Send &Later"
 msgstr "&Кейінірек жіберу"
 
-#: widgets/redirectdialog.cpp:207
+#: widgets/redirectdialog.cpp:278
 msgid "You cannot redirect the message without an address."
 msgstr "Адресін көрсетпей хатты басқаға жібере алмайсыз."
 
-#: widgets/redirectdialog.cpp:208
+#: widgets/redirectdialog.cpp:279
 msgid "Empty Redirection Address"
 msgstr "Басқаға жіберетін адрес жоқ"
 
 #: widgets/regexplineedit.cpp:81
 msgid "Edit..."
 msgstr "Өзгерту..."
+
+#~ msgctxt "Unit suffix where units are days."
+#~ msgid " days"
+#~ msgstr " күн"
+
+#~ msgid ""
+#~ "From: %1\n"
+#~ "To: %2\n"
+#~ "Subject: %3"
+#~ msgstr ""
+#~ "Кімге: %1\n"
+#~ "Кімден: %2\n"
+#~ "Тақырыбы: %3"
+
+#~ msgid "Removing attachments from an email might invalidate its signature."
+#~ msgstr "Эл.поштанның тіркемесін өшірген оның қолтаңбалауын бұзуы мүмкін."
+
+#~ msgid "Remove Attachments"
+#~ msgstr "Тіркемелерді өшіру"
+
+#~ msgid "Mail: %1"
+#~ msgstr "Пошта: %1"
 
 #~ msgid "Search..."
 #~ msgstr "Іздеу..."

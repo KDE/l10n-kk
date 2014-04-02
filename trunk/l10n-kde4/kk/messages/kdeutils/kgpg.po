@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-12 01:39+0000\n"
+"POT-Creation-Date: 2014-04-02 01:52+0000\n"
 "PO-Revision-Date: 2013-10-28 03:36+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -45,17 +45,51 @@ msgstr "Эл.поштасы:"
 msgid "Comment (optional):"
 msgstr "Түсініктемесі (міндетті емес):"
 
-#: caff.cpp:254
+#: caff.cpp:151 caff.cpp:169
+#, fuzzy, kde-format
+#| msgctxt "Name: ID"
+#| msgid "%1: %2"
+msgctxt "%1 is the key id, %2 is the name and comment of the key or uid"
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: caff.cpp:154 caff.cpp:172
+#, fuzzy, kde-format
+#| msgctxt "ID: Name <Email>"
+#| msgid "%1: %2 &lt;%3&gt;"
+msgctxt ""
+"%1 is the key id, %2 is the name and comment of the key or uid, %3 is the "
+"email address of the uid"
+msgid "%1: %2 &lt;%3&gt;"
+msgstr "%1: %2 &lt;%3&gt;"
+
+#: caff.cpp:157
+msgid ""
+"No mail was sent for the following user id because it belongs to a key "
+"without encryption capability:"
+msgid_plural ""
+"No mail was sent for the following user ids because they belong to keys "
+"without encryption capability:"
+msgstr[0] ""
+
+#: caff.cpp:175
+msgid ""
+"No mail was sent for the following user id because it was already signed:"
+msgid_plural ""
+"No mail was sent for the following user ids because they were already signed:"
+msgstr[0] ""
+
+#: caff.cpp:308
 msgctxt "Email template placeholder for key id"
 msgid "KEYID"
 msgstr "KEYID"
 
-#: caff.cpp:255
+#: caff.cpp:309
 msgctxt "Email template placeholder for key id"
 msgid "UIDNAME"
 msgstr "UIDNAME"
 
-#: caff.cpp:288
+#: caff.cpp:342
 #, kde-format
 msgctxt "%1 is 64 bit key id (in hex), text is used as email subject"
 msgid "Your key %1"
@@ -674,41 +708,41 @@ msgstr "Оңнан солға, домен алда"
 msgid "Right to left, FQDN first"
 msgstr "Оңнан солға, FQDN алда"
 
-#: core/convert.cpp:41
+#: core/convert.cpp:39
 msgctxt "Encryption algorithm"
 msgid "RSA"
 msgstr "RSA"
 
-#: core/convert.cpp:42
+#: core/convert.cpp:40
 msgctxt "Encryption algorithm"
 msgid "DSA"
 msgstr "DSA"
 
-#: core/convert.cpp:43
+#: core/convert.cpp:41
 msgctxt "Encryption algorithm"
 msgid "ElGamal"
 msgstr "ElGamal"
 
-#: core/convert.cpp:44
+#: core/convert.cpp:42
 msgctxt "Encryption algorithm"
 msgid "DSA & ElGamal"
 msgstr "DSA & ElGamal"
 
-#: core/convert.cpp:45
+#: core/convert.cpp:43
 msgctxt "Encryption algorithm RSA, Signing algorithm RSA"
 msgid "RSA & RSA"
 msgstr "RSA & RSA"
 
-#: core/convert.cpp:47
+#: core/convert.cpp:45
 msgctxt "Unknown algorithm"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: core/convert.cpp:55
+#: core/convert.cpp:53
 msgid "Do not Know"
 msgstr "Білмеймін"
 
-#: core/convert.cpp:56
+#: core/convert.cpp:55
 msgid "Do NOT Trust"
 msgstr "Сенім ЖОҚ"
 
@@ -718,90 +752,90 @@ msgid "Marginally"
 msgstr "Шамалы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:58 kgpgKeyInfo.ui:201
+#: core/convert.cpp:59 kgpgKeyInfo.ui:201
 msgid "Fully"
 msgstr "Толық"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: core/convert.cpp:59 kgpgKeyInfo.ui:206
+#: core/convert.cpp:61 kgpgKeyInfo.ui:206
 msgid "Ultimately"
 msgstr "Шексіз"
 
-#: core/convert.cpp:61
+#: core/convert.cpp:64
 msgctxt "Unknown trust in key owner"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: core/convert.cpp:69
+#: core/convert.cpp:72
 msgctxt "Invalid key"
 msgid "Invalid"
 msgstr "Жарамсыз"
 
-#: core/convert.cpp:70
+#: core/convert.cpp:73
 msgctxt "Disabled key"
 msgid "Disabled"
 msgstr "Бұғатталған"
 
-#: core/convert.cpp:71
+#: core/convert.cpp:74
 msgid "Revoked"
 msgstr "Күші жойылған"
 
-#: core/convert.cpp:72
+#: core/convert.cpp:75
 msgctxt "Expired key"
 msgid "Expired"
 msgstr "Мерзімі біткен"
 
-#: core/convert.cpp:73
+#: core/convert.cpp:76
 msgctxt "Undefined key trust"
 msgid "Undefined"
 msgstr "Анықталмаған"
 
-#: core/convert.cpp:74
+#: core/convert.cpp:77
 msgctxt "No trust in key"
 msgid "None"
 msgstr "Жоқ"
 
-#: core/convert.cpp:75
+#: core/convert.cpp:78
 msgctxt "Marginal trust in key"
 msgid "Marginal"
 msgstr "Шамалы"
 
-#: core/convert.cpp:76
+#: core/convert.cpp:79
 msgctxt "Full trust in key"
 msgid "Full"
 msgstr "Толық"
 
-#: core/convert.cpp:77
+#: core/convert.cpp:80
 msgctxt "Ultimate trust in key"
 msgid "Ultimate"
 msgstr "Шексіз"
 
-#: core/convert.cpp:79
+#: core/convert.cpp:82
 msgctxt "Unknown trust in key"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: core/convert.cpp:93
+#: core/convert.cpp:91
 msgctxt "key capability"
 msgid "Signature"
 msgstr "Қолтаңба"
 
-#: core/convert.cpp:95
+#: core/convert.cpp:93
 msgctxt "key capability"
 msgid "Encryption"
 msgstr "Шифрлау"
 
-#: core/convert.cpp:97
+#: core/convert.cpp:95
 msgctxt "key capability"
 msgid "Authentication"
 msgstr "Аутентификация"
 
-#: core/convert.cpp:99
+#: core/convert.cpp:97
 msgctxt "key capability"
 msgid "Certification"
 msgstr "Куәландыру"
 
-#: core/convert.cpp:101
+#: core/convert.cpp:99
 msgctxt "used to join a list of key types, e.g. 'encryption, signature'"
 msgid ", "
 msgstr ", "
@@ -1258,7 +1292,7 @@ msgctxt ""
 msgid "Clean key"
 msgstr "Кілтті тазалау"
 
-#: keyinfodialog.cpp:164
+#: keyinfodialog.cpp:165
 msgid ""
 "<qt>The requested key is not present in the keyring anymore.<br />Perhaps it "
 "was deleted by another application</qt>"
@@ -1266,16 +1300,16 @@ msgstr ""
 "<qt>Керек кілт кілттер қорында жоқ.<br />Бәлкім, оны басқа бағдарлама өшіріп "
 "тастаған сияқты</qt>"
 
-#: keyinfodialog.cpp:164
+#: keyinfodialog.cpp:165
 msgid "Key not found"
 msgstr "<b>Кілт табылмады</b>"
 
-#: keyinfodialog.cpp:178
+#: keyinfodialog.cpp:179
 msgctxt "no email address"
 msgid "none"
 msgstr "жоқ"
 
-#: keyinfodialog.cpp:203
+#: keyinfodialog.cpp:204
 msgid ""
 "<qt>The left part is the algorithm used by the <b>signature</b> key. The "
 "right part is the algorithm used by the <b>encryption</b> key.</qt>"
@@ -1283,12 +1317,12 @@ msgstr ""
 "<qt>Сол жақта <b>қолтаңбалау</b> кілтін  қолданатын алгоритмі. Оң жақта "
 "<b>шифрлау</b> кілтін қолданатын алгоритмі.</qt>"
 
-#: keyinfodialog.cpp:206
+#: keyinfodialog.cpp:207
 msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "Шектелмеген"
 
-#: keyinfodialog.cpp:212
+#: keyinfodialog.cpp:213
 msgid ""
 "<qt>The left part is the size of the <b>signature</b> key. The right part is "
 "the size of the <b>encryption</b> key.</qt>"
@@ -1296,33 +1330,33 @@ msgstr ""
 "<qt>Сол жақта <b>қолтаңбалау</b> кілттің өлшемі. Оң жақта <b>шифрлау</b> "
 "кілттің өлшемі.</qt>"
 
-#: keyinfodialog.cpp:217
+#: keyinfodialog.cpp:218
 msgctxt "no key comment"
 msgid "<em>none</em>"
 msgstr "<em>жоқ</em>"
 
-#: keyinfodialog.cpp:304
+#: keyinfodialog.cpp:305
 msgid "Passphrase for the key was changed"
 msgstr "Кілттің паролі өзгертілген"
 
-#: keyinfodialog.cpp:307
+#: keyinfodialog.cpp:308
 msgid "Bad old passphrase, the passphrase for the key was not changed"
 msgstr "Ескі паролі дұрыс емес, кілттің паролі өзгертілген жоқ"
 
-#: keyinfodialog.cpp:307
+#: keyinfodialog.cpp:308
 msgid "Could not change passphrase"
 msgstr "Паролі өзгертілмеді"
 
-#: keyinfodialog.cpp:312
+#: keyinfodialog.cpp:313
 msgid "KGpg was unable to change the passphrase."
 msgstr "KGpg парольді өзгерте алмады."
 
-#: keyinfodialog.cpp:362
+#: keyinfodialog.cpp:363
 msgid "Changing key properties failed."
 msgstr "Кілт қасиеттерін өзгерту жаңылысы."
 
 #. i18n: ectx: property (title), widget (QGroupBox, gr_properties)
-#: keyinfodialog.cpp:362 kgpgKeyInfo.ui:37
+#: keyinfodialog.cpp:363 kgpgKeyInfo.ui:37
 msgid "Key properties"
 msgstr "Кілттің қасиеттері"
 
@@ -2773,7 +2807,7 @@ msgstr ""
 "GnuPG нұсқасыңыз (%1) тым ескі сияқты.<br />1.4.0 дегеннен ескі нұсқасының "
 "үйлесімдігіне кепілі жоқ."
 
-#: kgpginterface.cpp:273
+#: kgpginterface.cpp:279
 msgid "An error occurred while scanning your keyring"
 msgstr "Кілттер қорыңызды қарастыру кезде бір қате пайда болды"
 
