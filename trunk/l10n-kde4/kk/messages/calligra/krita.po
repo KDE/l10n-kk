@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-02 01:33+0000\n"
+"POT-Creation-Date: 2014-04-04 01:47+0000\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -52,7 +52,7 @@ msgid "Your emails"
 msgstr "sairan@computer.org"
 
 #: benchmarks/kis_floodfill_benchmark.cpp:86
-#: plugins/tools/defaulttools/kis_tool_fill.cc:125
+#: plugins/tools/defaulttools/kis_tool_fill.cc:128
 #: ui/actions/kis_selection_action_factories.cpp:171
 msgid "Flood Fill"
 msgstr "Құйып толтыру"
@@ -67,7 +67,7 @@ msgstr "Градиенттың толтыруы"
 msgid "Krita Crash Reporter"
 msgstr "Krita PNG экспорты"
 
-#: crashreporter/main.cpp:55 ui/kis_aboutdata.h:60
+#: crashreporter/main.cpp:55 ui/kis_aboutdata.h:46
 msgid "Digital Painting for Artists"
 msgstr "Суретшілерге цифрлық сурет салу құралы"
 
@@ -77,11 +77,14 @@ msgstr "Суретшілерге цифрлық сурет салу құралы
 msgid "(c) 2014 The Krita team.\n"
 msgstr "(c) 1999-2013 Krita тобы.\n"
 
-#: crashreporter/main.cpp:62 ui/kis_aboutdata.h:71
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_2)
+#: crashreporter/main.cpp:62
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:688
+#: ui/kis_aboutdata.h:57
 msgid "Boudewijn Rempt"
 msgstr "Boudewijn Rempt"
 
-#: crashreporter/main.cpp:63 ui/kis_aboutdata.h:71
+#: crashreporter/main.cpp:63 ui/kis_aboutdata.h:57
 msgid "Maintainer"
 msgstr "Жетілдірушісі"
 
@@ -157,31 +160,119 @@ msgstr ""
 msgid "Open Document"
 msgstr "Құжатты ашу"
 
-#: gemini/main.cpp:55 gemini/MainWindow.cpp:226
+#. i18n: ectx: Menu (file)
+#: gemini/kritagemini.rc:6 krita.rc:6 sketch/kritasketch.rc:6
+msgid "&File"
+msgstr "&Файл"
+
+#. i18n: ectx: Menu (Edit)
+#: gemini/kritagemini.rc:13 krita.rc:13
+#: plugins/paintops/resourcemanager/resourcemanager.rc:4
+#: sketch/kritasketch.rc:13
+msgid "&Edit"
+msgstr "&Өңдеу"
+
+#. i18n: ectx: Menu (Resources)
+#: gemini/kritagemini.rc:31 krita.rc:31
+#: plugins/paintops/resourcemanager/resourcemanager.rc:5
+#: sketch/kritasketch.rc:31
+msgid "&Resources"
+msgstr "&Ресурстар"
+
+#. i18n: ectx: Menu (View)
+#: gemini/kritagemini.rc:40 krita.rc:40 sketch/kritasketch.rc:40
+msgid "&View"
+msgstr "&Көрініс"
+
+#. i18n: ectx: Menu (view_fast_grid_config)
+#: gemini/kritagemini.rc:60 krita.rc:60 sketch/kritasketch.rc:60
+msgid "Grid Spacing"
+msgstr "Тор аралығы"
+
+#. i18n: ectx: Menu (Image)
+#: gemini/kritagemini.rc:80 krita.rc:80
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:5
+#: plugins/extensions/rotateimage/rotateimage.rc:4
+#: plugins/extensions/shearimage/shearimage.rc:4 sketch/kritasketch.rc:80
+msgid "&Image"
+msgstr "&Кескін"
+
+#. i18n: ectx: Menu (Layer)
+#: gemini/kritagemini.rc:91 krita.rc:91
+#: plugins/extensions/histogram/histogram.rc:4 sketch/kritasketch.rc:91
+msgid "&Layer"
+msgstr "Қ&абат"
+
+#. i18n: ectx: Menu (LayerNew)
+#: gemini/kritagemini.rc:92 krita.rc:92 sketch/kritasketch.rc:92
+msgid "New"
+msgstr "Жаңа"
+
+#. i18n: ectx: Menu (LayerConvert)
+#: gemini/kritagemini.rc:101 krita.rc:101 sketch/kritasketch.rc:101
+msgid "Convert"
+msgstr "Аудару"
+
+#. i18n: ectx: property (text), widget (QPushButton, bnSelect)
+#. i18n: ectx: Menu (Select)
+#: gemini/kritagemini.rc:126 krita.rc:126
+#: plugins/extensions/colorrange/wdg_colorrange.ui:131
+#: plugins/extensions/imagesize/imagesize.rc:12
+#: plugins/extensions/modify_selection/modify_selection.rc:4
+#: sketch/kritasketch.rc:126
+msgid "&Select"
+msgstr "&Таңдау"
+
+#. i18n: ectx: Menu (Filter)
+#: gemini/kritagemini.rc:139 krita.rc:139 sketch/kritasketch.rc:139
+msgid "Filte&r"
+msgstr "Сүз&гі"
+
+#. i18n: ectx: Menu (Tools)
+#: gemini/kritagemini.rc:156 krita.rc:156 sketch/kritasketch.rc:156
+msgid "&Tools"
+msgstr "&Құралдар"
+
+#. i18n: ectx: Menu (settings)
+#: gemini/kritagemini.rc:159 krita.rc:159 sketch/kritasketch.rc:159
+msgid "Settings"
+msgstr "Баптау"
+
+#. i18n: ectx: ToolBar (BrushesAndStuff)
+#: gemini/kritagemini.rc:172 krita.rc:172 sketch/kritasketch.rc:172
+msgid "Brushes and Stuff"
+msgstr "Қылқалам және басқа"
+
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:229
 msgid "Krita Gemini"
 msgstr "Krita Gemini"
 
-#: gemini/main.cpp:57
+#: gemini/main.cpp:72
 msgid "Krita Gemini: Painting at Home and on the Go for Artists"
 msgstr "Krita Gemini: суретшілерге үйде не жолда сурет салу үшін"
 
-#: gemini/main.cpp:59 sketch/main.cpp:60
-msgid "(c) 1999-2012 The Krita team and KO GmbH.\n"
+#: gemini/main.cpp:74
+#, fuzzy, kde-format
+#| msgid "(c) 1999-2012 The Krita team and KO GmbH.\n"
+msgid "(c) 1999-%1 The Krita team and KO GmbH.\n"
 msgstr "(c) 1999-2013 Krita тобы және KO GmbH.\n"
 
-#: gemini/main.cpp:67 sketch/main.cpp:68
+#: gemini/main.cpp:82 sketch/main.cpp:69
 msgid "Images to open"
 msgstr "Ашатын кескіндер"
 
-#: gemini/main.cpp:68 sketch/main.cpp:69
-msgid "Don't use the virtual keyboard"
+#: gemini/main.cpp:83 sketch/main.cpp:70
+#, fuzzy
+#| msgid "Don't use the virtual keyboard"
+msgid "Use the virtual keyboard"
 msgstr "Виртуалды пернетақтаны қолданбау"
 
-#: gemini/MainWindow.cpp:536
+#: gemini/MainWindow.cpp:546
 msgid "Untitled"
 msgstr "Аталмаған"
 
-#: gemini/MainWindow.cpp:539
+#: gemini/MainWindow.cpp:549
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -189,734 +280,1290 @@ msgid ""
 msgstr "<p><b>'%1'</b> құжаты өзгерілген.</p><p>Сақтауды қалайсыз ба?</p>"
 
 #: i18ndata:1
+#, fuzzy
+#| msgid "BG-Krita2. Gradient background for brush preset icons."
+msgctxt "./data/gradients/BG-Krita2.ggr"
 msgid "BG-Krita2. Gradient background for brush preset icons."
 msgstr "BG-Krita2. Дайын қылқалам таңбашалар аясының градиенті."
 
 #: i18ndata:2
+#, fuzzy
+#| msgid "GPS eye (Blue)"
+msgctxt "./data/gradients/GPS-eye-_Blue_.ggr"
 msgid "GPS eye (Blue)"
 msgstr "GPS: (Көк) көз"
 
 #: i18ndata:3
+#, fuzzy
+#| msgid "GPS FG Glare"
+msgctxt "./data/gradients/GPS-FG-Glare.ggr"
 msgid "GPS FG Glare"
 msgstr "GPS: жарығы"
 
 #: i18ndata:4
+#, fuzzy
+#| msgid "GPS Fire Blueish"
+msgctxt "./data/gradients/GPS-Fire-Blueish.ggr"
 msgid "GPS Fire Blueish"
 msgstr "GPS: Көгілдір от"
 
 #: i18ndata:5
+#, fuzzy
+#| msgid "GPS Fire Burning Cloud"
+msgctxt "./data/gradients/GPS-Fire-Burning-Cloud.ggr"
 msgid "GPS Fire Burning Cloud"
 msgstr "GPS: от будағы"
 
 #: i18ndata:6
+#, fuzzy
+#| msgid "GPS Fire Dust Blended"
+msgctxt "./data/gradients/GPS-Fire-Dust-Blended.ggr"
 msgid "GPS Fire Dust Blended"
 msgstr "GPS: от пен күл"
 
 #: i18ndata:7
+#, fuzzy
+#| msgid "GPS Fire Dust"
+msgctxt "./data/gradients/GPS-Fire-Dust.ggr"
 msgid "GPS Fire Dust"
 msgstr "GPS: күл"
 
 #: i18ndata:8
+#, fuzzy
+#| msgid "GPS Fire Incandescent"
+msgctxt "./data/gradients/GPS-Fire-Incandescent.ggr"
 msgid "GPS Fire Incandescent"
 msgstr "GPS: отпен қызыған"
 
 #: i18ndata:9
+#, fuzzy
+#| msgid "GPS Fire Life Span"
+msgctxt "./data/gradients/GPS-Fire-Life-Span.ggr"
 msgid "GPS Fire Life Span"
 msgstr "GPS: жалын"
 
 #: i18ndata:10
+#, fuzzy
+#| msgid "GPS Haze and Atmosphere"
+msgctxt "./data/gradients/GPS-Haze-and-Atmosphere.ggr"
 msgid "GPS Haze and Atmosphere"
 msgstr "GPS: тұман мен атмосфера"
 
 #: i18ndata:11
+#, fuzzy
+#| msgid "GPS Light Saber (Use FG color)"
+msgctxt "./data/gradients/GPS-Light-Saber-_Use-FG-color_.ggr"
 msgid "GPS Light Saber (Use FG color)"
 msgstr "GPS: Жарық қылышы (Нысан түсімен)"
 
 #: i18ndata:12
+#, fuzzy
+#| msgid "GPS Nature browns copy"
+msgctxt "./data/gradients/GPS-Nature-browns-copy.ggr"
 msgid "GPS Nature browns copy"
 msgstr "GPS: Табиғи қоңыр"
 
 #: i18ndata:13
+#, fuzzy
+#| msgid "GPS Nature Pure greens"
+msgctxt "./data/gradients/GPS-Nature-Pure-greens.ggr"
 msgid "GPS Nature Pure greens"
 msgstr "GPS: Табиғи таза жасыл"
 
 #: i18ndata:14
+#, fuzzy
+#| msgid "GPS Nature random greens"
+msgctxt "./data/gradients/GPS-Nature-random-greens.ggr"
 msgid "GPS Nature random greens"
 msgstr "GPS: Табиғи кездейсоқ жасыл"
 
 #: i18ndata:15
+#, fuzzy
+#| msgid "GPS Nature_Grass"
+msgctxt "./data/gradients/GPS-Nature_Grass.ggr"
 msgid "GPS Nature_Grass"
 msgstr "GPS: Шөп"
 
 #: i18ndata:16
+#, fuzzy
+#| msgid "GPS Simple Smoke"
+msgctxt "./data/gradients/GPS-Simple-Smoke.ggr"
 msgid "GPS Simple Smoke"
 msgstr "GPS: Кәдімгі түтін"
 
 #: i18ndata:17
+#, fuzzy
+#| msgid "GPS Steel Bars"
+msgctxt "./data/gradients/GPS-Steel-Bars.ggr"
 msgid "GPS Steel Bars"
 msgstr "GPS: Болат кесектер"
 
 #: i18ndata:18
+#, fuzzy
+#| msgid "3_eroded"
+msgctxt "./data/brushes/3_eroded.gih"
 msgid "3_eroded"
 msgstr "3_селдір"
 
 #: i18ndata:19
+#, fuzzy
+#| msgid "A-4 Bamboo Leaves"
+msgctxt "./data/brushes/A_bamboo-leaves.gih"
 msgid "A-4 Bamboo Leaves"
 msgstr "A-4 бамбук жапырақтары"
 
 #: i18ndata:20
+#, fuzzy
+#| msgid "A-4 Bamboo"
+msgctxt "./data/brushes/A_bamboo.gih"
 msgid "A-4 Bamboo"
 msgstr "A-4 бамбук"
 
 #: i18ndata:21
+#, fuzzy
+#| msgid "A - 2 Dirty Brush2"
+msgctxt "./data/brushes/A_dirty-brush.gih"
 msgid "A - 2 Dirty Brush2"
 msgstr "A - 2 былғаған қылқалам2"
 
 #: i18ndata:22
+#, fuzzy
+#| msgid "A-4 distant-mountain"
+msgctxt "./data/brushes/A_distant-mountain.gih"
 msgid "A-4 distant-mountain"
 msgstr "A-4 алыс таулар"
 
 #: i18ndata:23
+#, fuzzy
+#| msgid "A - 2 Dynamic Brush"
+msgctxt "./data/brushes/A_dynamic-brush.gih"
 msgid "A - 2 Dynamic Brush"
 msgstr "A - 2 динамикалық қылқалам"
 
 #: i18ndata:24
+#, fuzzy
+#| msgid "A-2 Dynamic brush 2"
+msgctxt "./data/brushes/A_dynamic-brush3.gih"
 msgid "A-2 Dynamic brush 2"
 msgstr "A-2 динамикалық қылқалам 2"
 
 #: i18ndata:25
+#, fuzzy
+#| msgid "A -2 Eroded Brush 2"
+msgctxt "./data/brushes/A_eroded-brush2.gih"
 msgid "A -2 Eroded Brush 2"
 msgstr "A -2 селдір қылқалам 2"
 
 #: i18ndata:26
+#, fuzzy
+#| msgid "A -18 Round eroded anim"
+msgctxt "./data/brushes/A_eroded-cercle-anim.gih"
 msgid "A -18 Round eroded anim"
 msgstr "A -18 дөнгелек селдір"
 
 #: i18ndata:27
+#, fuzzy
+#| msgid "A -2 Chinese eroded anim"
+msgctxt "./data/brushes/A_eroded-chinese-anim.gih"
 msgid "A -2 Chinese eroded anim"
 msgstr "A -2 қытай селдір"
 
 #: i18ndata:28
+#, fuzzy
+#| msgid "A - 2 Dirty Brush"
+msgctxt "./data/brushes/A_eroded-dirtybrush-anim.gih"
 msgid "A - 2 Dirty Brush"
 msgstr "A - 2 былғаған қылқалам"
 
 #: i18ndata:29
+#, fuzzy
+#| msgid "A-17 Knife eroded anim"
+msgctxt "./data/brushes/A_eroded-knife-anim.gih"
 msgid "A-17 Knife eroded anim"
 msgstr "A -17 датталған пішақ"
 
 #: i18ndata:30
+#, fuzzy
+#| msgid "A-4 Fairy Dust"
+msgctxt "./data/brushes/A_fairy-dust.gih"
 msgid "A-4 Fairy Dust"
 msgstr "A-4 шаң-тозаң"
 
 #: i18ndata:31
+#, fuzzy
+#| msgid "A-4 Floor"
+msgctxt "./data/brushes/A_floor.gih"
 msgid "A-4 Floor"
 msgstr "A-4 Еден"
 
 #: i18ndata:32
+#, fuzzy
+#| msgid "A-4 Flower"
+msgctxt "./data/brushes/A_flowers.gih"
 msgid "A-4 Flower"
 msgstr "A-4 Гүл"
 
 #: i18ndata:33
+#, fuzzy
+#| msgid "A-4 Forest"
+msgctxt "./data/brushes/A_forest.gih"
 msgid "A-4 Forest"
 msgstr "A-4 Орман"
 
 #: i18ndata:34
+#, fuzzy
+#| msgid "A-4 Fur"
+msgctxt "./data/brushes/A_fur.gih"
 msgid "A-4 Fur"
 msgstr "A-4 Ішік"
 
 #: i18ndata:35
+#, fuzzy
+#| msgid "A-4 Grass-Floor"
+msgctxt "./data/brushes/A_grass-floor.gih"
 msgid "A-4 Grass-Floor"
 msgstr "A-4 Шөпті еден"
 
 #: i18ndata:36
+#, fuzzy
+#| msgid "A-4 herbs"
+msgctxt "./data/brushes/A_herbs.gih"
 msgid "A-4 herbs"
 msgstr "A-4 шөп"
 
 #: i18ndata:37
+#, fuzzy
+#| msgid "A-4 Leaves Mapples"
+msgctxt "./data/brushes/A_leaves-mapple.gih"
 msgid "A-4 Leaves Mapples"
 msgstr "A-4 үйеңкі жапырақтары"
 
 #: i18ndata:38
+#, fuzzy
+#| msgid "A-4 Leaves"
+msgctxt "./data/brushes/A_leaves.gih"
 msgid "A-4 Leaves"
 msgstr "A-4 жапырақтар"
 
 #: i18ndata:39
+#, fuzzy
+#| msgid "A-3 minerals"
+msgctxt "./data/brushes/A_mineral-cristal.gih"
 msgid "A-3 minerals"
 msgstr "A-3 минералдар"
 
 #: i18ndata:40
+#, fuzzy
+#| msgid "A-4 Pin"
+msgctxt "./data/brushes/A_pin.gih"
 msgid "A-4 Pin"
 msgstr "A-4 Қада"
 
 #: i18ndata:41
+#, fuzzy
+#| msgid "A-4 random vegetal"
+msgctxt "./data/brushes/A_random-vegetal.gih"
 msgid "A-4 random vegetal"
 msgstr "A-4 кездейсоқ өсімдік"
 
 #: i18ndata:42
+#, fuzzy
+#| msgid "A-4 random vegetal2"
+msgctxt "./data/brushes/A_random-vegetal2.gih"
 msgid "A-4 random vegetal2"
 msgstr "A-4 кездейсоқ өсімдік2"
 
 #: i18ndata:43
+#, fuzzy
+#| msgid "A-4 rocksfloor neg"
+msgctxt "./data/brushes/A_rocks-floor-neg.gih"
 msgid "A-4 rocksfloor neg"
 msgstr "A-4 тас еден (теріс)"
 
 #: i18ndata:44
+#, fuzzy
+#| msgid "A-3 Rocks"
+msgctxt "./data/brushes/A_rocks.gih"
 msgid "A-3 Rocks"
 msgstr "A-3 тастар"
 
 #: i18ndata:45
+#, fuzzy
+#| msgid "A-4 SnowPack"
+msgctxt "./data/brushes/A_snow-pack.gih"
 msgid "A-4 SnowPack"
 msgstr "A-4 Қар"
 
 #: i18ndata:46
+#, fuzzy
+#| msgid "A-2 Splat"
+msgctxt "./data/brushes/A_splat2.gih"
 msgid "A-2 Splat"
 msgstr "A-2 төрткілдеш"
 
 #: i18ndata:47
+#, fuzzy
+#| msgid "A-4 starfield intense"
+msgctxt "./data/brushes/A_starfield.gih"
 msgid "A-4 starfield intense"
 msgstr "A-4 қатты жарқыраған жұлдыздар"
 
 #: i18ndata:48
+#, fuzzy
+#| msgid "A-4 Wall"
+msgctxt "./data/brushes/A_wall-texture.gih"
 msgid "A-4 Wall"
 msgstr "A-4 дуал"
 
 #: i18ndata:49
+#, fuzzy
+#| msgid "D_Dust Particles"
+msgctxt "./data/brushes/D_Dust_Particles.gih"
 msgid "D_Dust Particles"
 msgstr "D Шаң бөлшектері"
 
 #: i18ndata:50
+#, fuzzy
+#| msgid "G_Sparks"
+msgctxt "./data/brushes/G_Sparks.gih"
 msgid "G_Sparks"
 msgstr "G Ұшқындар"
 
 #: i18ndata:51
+#, fuzzy
+#| msgid "L_Trees"
+msgctxt "./data/brushes/L_Trees.gih"
 msgid "L_Trees"
 msgstr "L Ағаштар"
 
 #: i18ndata:52
+#, fuzzy
+#| msgid "GIMP Brush Pipe"
+msgctxt "./data/brushes/LJF_smoke_c.gih"
 msgid "GIMP Brush Pipe"
 msgstr "GIMP қылқалам жиыны"
 
 #: i18ndata:53
+#, fuzzy
+#| msgid "LJF Water Brush 2"
+msgctxt "./data/brushes/LJF_Water_Brush_02.gih"
 msgid "LJF Water Brush 2"
 msgstr "LJF акварель қылқаламы 2"
 
 #: i18ndata:54
+#, fuzzy
+#| msgid "LJF Water Brush 3"
+msgctxt "./data/brushes/LJF_Water_Brush_03.gih"
 msgid "LJF Water Brush 3"
 msgstr "LJF акварель қылқаламы 3"
 
 #: i18ndata:55
+#, fuzzy
+#| msgid "N_Grass 1"
+msgctxt "./data/brushes/N_Grass_1.gih"
 msgid "N_Grass 1"
 msgstr "N Шөп 1"
 
 #: i18ndata:56
+#, fuzzy
+#| msgid "N_Grass 2"
+msgctxt "./data/brushes/N_Grass_2.gih"
 msgid "N_Grass 2"
 msgstr "N Шөп 2"
 
 #: i18ndata:57
+#, fuzzy
+#| msgid "P_2B Pencil  Angled"
+msgctxt "./data/brushes/P_2B_Pencil_Angled.gih"
 msgid "P_2B Pencil  Angled"
 msgstr "A_2B қарындаш (бұрыш)"
 
 #: i18ndata:58
+#, fuzzy
+#| msgid "P_6B Pencil  Angled"
+msgctxt "./data/brushes/P_6B_Pencil_Angled.gih"
 msgid "P_6B Pencil  Angled"
 msgstr "P_6B қарындаш (бұрыш)"
 
 #: i18ndata:59
+#, fuzzy
+#| msgid "P_Graphite Black Grass"
+msgctxt "./data/brushes/P_Graphite_Black_Grass.gih"
 msgid "P_Graphite Black Grass"
 msgstr "P графит қара шөп"
 
 #: i18ndata:60
+#, fuzzy
+#| msgid "P_Graphite Pencil"
+msgctxt "./data/brushes/P_Graphite_Pencil.gih"
 msgid "P_Graphite Pencil"
 msgstr "P графит қарындашы"
 
 #: i18ndata:61
+#, fuzzy
+#| msgid "P_Graphite Pencil _grain"
+msgctxt "./data/brushes/P_Graphite_Pencil_grain.gih"
 msgid "P_Graphite Pencil _grain"
 msgstr "P графит қарындашы (тұйіршік)"
 
 #: i18ndata:62
+#, fuzzy
+#| msgid "P_Graphite Pencil _grainb"
+msgctxt "./data/brushes/P_Graphite_Pencil_grainb.gih"
 msgid "P_Graphite Pencil _grainb"
 msgstr "P графит қарындашы (тұйіршік b)"
 
 #: i18ndata:63
+#, fuzzy
+#| msgid "P_Real Pencil 10x10"
+msgctxt "./data/brushes/P_RealPencil10x10.gih"
 msgid "P_Real Pencil 10x10"
 msgstr "P кәдімгі қарындаш 10x10"
 
 #: i18ndata:64
+#, fuzzy
+#| msgid "P_Real Pencil 16x16"
+msgctxt "./data/brushes/P_RealPencil16x16.gih"
 msgid "P_Real Pencil 16x16"
 msgstr "P кәдімгі қарындаш 16x16"
 
 #: i18ndata:65
+#, fuzzy
+#| msgid "S_Splats 2"
+msgctxt "./data/brushes/S_splats_02.gih"
 msgid "S_Splats 2"
 msgstr "S Шашрау 2"
 
 #: i18ndata:66
+#, fuzzy
+#| msgid "Sc_Scratch"
+msgctxt "./data/brushes/Sc_Scratch.gih"
 msgid "Sc_Scratch"
 msgstr "Sc сызық"
 
 #: i18ndata:67
+#, fuzzy
+#| msgid "T_Fibers 1"
+msgctxt "./data/brushes/T_Fibers_1.gih"
 msgid "T_Fibers 1"
 msgstr "T Талшықтар 1"
 
 #: i18ndata:68
+#, fuzzy
+#| msgid "T_Fibers 2"
+msgctxt "./data/brushes/T_Fibers_2.gih"
 msgid "T_Fibers 2"
 msgstr "T Талшықтар 2"
 
 #: i18ndata:69
+#, fuzzy
+#| msgid "T_Texture 2"
+msgctxt "./data/brushes/T_Texture_2.gih"
 msgid "T_Texture 2"
 msgstr "T Текстура 2"
 
 #: i18ndata:70
+#, fuzzy
+#| msgid "T_Texture 3"
+msgctxt "./data/brushes/T_Texture_3.gih"
 msgid "T_Texture 3"
 msgstr "T Текстура 3"
 
 #: i18ndata:71
+#, fuzzy
+#| msgid "T_Texture 4"
+msgctxt "./data/brushes/T_Texture_4.gih"
 msgid "T_Texture 4"
 msgstr "T Текстура 4"
 
 #: i18ndata:72
+#, fuzzy
+#| msgid "T_Texture 5"
+msgctxt "./data/brushes/T_Texture_5.gih"
 msgid "T_Texture 5"
 msgstr "T Текстура 5"
 
 #: i18ndata:73
+#, fuzzy
+#| msgid "T_Texture 6"
+msgctxt "./data/brushes/T_Texture_6.gih"
 msgid "T_Texture 6"
 msgstr "T Текстура 6"
 
 #: i18ndata:74
+#, fuzzy
+#| msgid "T_Texture 7"
+msgctxt "./data/brushes/T_Texture_7.gih"
 msgid "T_Texture 7"
 msgstr "T Текстура 7"
 
 #: i18ndata:75
+#, fuzzy
+#| msgid "Te_Techno 1"
+msgctxt "./data/brushes/Te_Techno_1.gih"
 msgid "Te_Techno 1"
 msgstr "Te Техно 1"
 
 #: i18ndata:76
+#, fuzzy
+#| msgid "Vyle Rock"
+msgctxt "./data/brushes/V_Vyle_Rock.gih"
 msgid "Vyle Rock"
 msgstr "Вюле тасы"
 
 #: i18ndata:77
+#, fuzzy
+#| msgid "Z_study pencil 2H"
+msgctxt "./data/brushes/z_study_pencil_2H.gih"
 msgid "Z_study pencil 2H"
 msgstr "Z оқу қарындашы 2H"
 
 #: i18ndata:78
+#, fuzzy
+#| msgid "Z_study pencil 2H_horiz"
+msgctxt "./data/brushes/z_study_pencil_2H_horiz.gih"
 msgid "Z_study pencil 2H_horiz"
 msgstr "Z оқу қарындашы 2H (жатық)"
 
 #: i18ndata:79
+#, fuzzy
+#| msgid "2B pencil Grain 2 b"
+msgctxt "./data/brushes/z_study_pencil_2Hb.gih"
 msgid "2B pencil Grain 2 b"
 msgstr "2B қарындаш (түйіршік 2b)"
 
 #: i18ndata:80
+#, fuzzy
+#| msgid "Z_study pencil H"
+msgctxt "./data/brushes/z_study_pencil_H.gih"
 msgid "Z_study pencil H"
 msgstr "Z оқу қарындашы H"
 
 #: i18ndata:81
+#, fuzzy
+#| msgid "Z_study pencil H_horiz"
+msgctxt "./data/brushes/z_study_pencil_H_h.gih"
 msgid "Z_study pencil H_horiz"
 msgstr "Z оқу қарындашы H (жатық)"
 
 #: i18ndata:82
+#, fuzzy
+#| msgid "Z- Test pressure"
+msgctxt "./data/brushes/Z_Test-pressure.gih"
 msgid "Z- Test pressure"
 msgstr "Z- сынақ басымы"
 
 #: i18ndata:83
+#, fuzzy
+#| msgid "A_abstract-textured1"
+msgctxt "./data/brushes/A_abstract-textured1.gbr"
 msgid "A_abstract-textured1"
 msgstr "A_абстракты-текстура1"
 
 #: i18ndata:84
+#, fuzzy
+#| msgid "A_abstract-textured2"
+msgctxt "./data/brushes/A_abstract-textured2.gbr"
 msgid "A_abstract-textured2"
 msgstr "A_абстракты-текстура2"
 
 #: i18ndata:85
+#, fuzzy
+#| msgid "A_Angular_church"
+msgctxt "./data/brushes/A_Angular_church.gbr"
 msgid "A_Angular_church"
 msgstr "А_Бұрышты шіркеу"
 
 #: i18ndata:86
+#, fuzzy
+#| msgid "A_Angular_church_HR"
+msgctxt "./data/brushes/A_Angular_church_HR.gbr"
 msgid "A_Angular_church_HR"
 msgstr "А_Бұрышты шіркеу_HR"
 
 #: i18ndata:87
+#, fuzzy
+#| msgid "A -52 Bokey"
+msgctxt "./data/brushes/A_bokey.gbr"
 msgid "A -52 Bokey"
 msgstr "A -52 Боки"
 
 #: i18ndata:88
+#, fuzzy
+#| msgid "A_Braids.gbr"
+msgctxt "./data/brushes/A_Braids.gbr"
 msgid "A_Braids.gbr"
 msgstr "A_бұрымдары.gbr"
 
 #: i18ndata:89
+#, fuzzy
+#| msgid "A_Braids_b"
+msgctxt "./data/brushes/A_Braids_b.gbr"
 msgid "A_Braids_b"
 msgstr "A_бұрымдары_b"
 
 #: i18ndata:90
+#, fuzzy
+#| msgid "A_Chain"
+msgctxt "./data/brushes/A_Chain.gbr"
 msgid "A_Chain"
 msgstr "A_Шыңжыр"
 
 #: i18ndata:91
+#, fuzzy
+#| msgid "A_cloudy"
+msgctxt "./data/brushes/A_cloudy.gbr"
 msgid "A_cloudy"
 msgstr "A_бұлтты"
 
 #: i18ndata:92
+#, fuzzy
+#| msgid "A_concrete"
+msgctxt "./data/brushes/A_concrete.gbr"
 msgid "A_concrete"
 msgstr "A_бетон"
 
 #: i18ndata:93
+#, fuzzy
+#| msgid "A_crackled"
+msgctxt "./data/brushes/A_crackled.gbr"
 msgid "A_crackled"
 msgstr "A_сызатталған"
 
 #: i18ndata:94
+#, fuzzy
+#| msgid "A_craqules"
+msgctxt "./data/brushes/A_craqules.gbr"
 msgid "A_craqules"
 msgstr "A_сызаттар"
 
 #: i18ndata:95
+#, fuzzy
+#| msgid "A_crayon"
+msgctxt "./data/brushes/A_crayon.gbr"
 msgid "A_crayon"
 msgstr "A_боры"
 
 #: i18ndata:96
+#, fuzzy
+#| msgid "A_dirty-spot"
+msgctxt "./data/brushes/A_dirty-spot.gbr"
 msgid "A_dirty-spot"
 msgstr "A_былғаған дақ"
 
 #: i18ndata:97
+#, fuzzy
+#| msgid "A_eroded-cercle_2"
+msgctxt "./data/brushes/A_eroded-cercle_2.gbr"
 msgid "A_eroded-cercle_2"
 msgstr "A_қисық шеңбер_2"
 
 #: i18ndata:98
+#, fuzzy
+#| msgid "A-5 Lucky-star"
+msgctxt "./data/brushes/A_lucky_star.gbr"
 msgid "A-5 Lucky-star"
 msgstr "A-5 Бақыт-жұлдызы"
 
 #: i18ndata:99
+#, fuzzy
+#| msgid "A_mountain-texture"
+msgctxt "./data/brushes/A_mountain-texture.gbr"
 msgid "A_mountain-texture"
 msgstr "A_таулы текстура"
 
 #: i18ndata:100
+#, fuzzy
+#| msgid "A_Nice Sketch"
+msgctxt "./data/brushes/A_Nice_sketch.gbr"
 msgid "A_Nice Sketch"
 msgstr "A Тамаша нобайы"
 
 #: i18ndata:101
+#, fuzzy
+#| msgid "A_Nice Sketch2"
+msgctxt "./data/brushes/A_Nice_sketch2.gbr"
 msgid "A_Nice Sketch2"
 msgstr "A Тамаша нобайы2"
 
 #: i18ndata:102
+#, fuzzy
+#| msgid "A_provencal"
+msgctxt "./data/brushes/A_provencal.gbr"
 msgid "A_provencal"
 msgstr "A_провансаль"
 
 #: i18ndata:103
+#, fuzzy
+#| msgid "A_Rake"
+msgctxt "./data/brushes/A_Rake.gbr"
 msgid "A_Rake"
 msgstr "R_тырнауыш"
 
 #: i18ndata:104
+#, fuzzy
+#| msgid "A_random-vegetal3"
+msgctxt "./data/brushes/A_random-vegetal3.gbr"
 msgid "A_random-vegetal3"
 msgstr "A_кездейсоқ өсімдік3"
 
 #: i18ndata:105
+#, fuzzy
+#| msgid "A_reptile-skin"
+msgctxt "./data/brushes/A_reptile-skin.gbr"
 msgid "A_reptile-skin"
 msgstr "A_жылан терісі"
 
 #: i18ndata:106
+#, fuzzy
+#| msgid "A_smoke"
+msgctxt "./data/brushes/A_smoke.gbr"
 msgid "A_smoke"
 msgstr "A_түтін"
 
 #: i18ndata:107
+#, fuzzy
+#| msgid "A -2 Sparkle 1"
+msgctxt "./data/brushes/A_sparkle1.gbr"
 msgid "A -2 Sparkle 1"
 msgstr "A -2 Ұшқын 1"
 
 #: i18ndata:108
+#, fuzzy
+#| msgid "A -2 Sparkle 2"
+msgctxt "./data/brushes/A_sparkle2.gbr"
 msgid "A -2 Sparkle 2"
 msgstr "A -2 Ұшқын 2"
 
 #: i18ndata:109
+#, fuzzy
+#| msgid "A -2 Sparkle 3"
+msgctxt "./data/brushes/A_sparkle3.gbr"
 msgid "A -2 Sparkle 3"
 msgstr "A -2 Ұшқын 3"
 
 #: i18ndata:110
+#, fuzzy
+#| msgid "A_splat1"
+msgctxt "./data/brushes/A_splat1.gbr"
 msgid "A_splat1"
 msgstr "A_төрткілдеш1"
 
 #: i18ndata:111
+#, fuzzy
+#| msgid "A_starfield2"
+msgctxt "./data/brushes/A_starfield2.gbr"
 msgid "A_starfield2"
 msgstr "A_жұлдызды өріс2"
 
 #: i18ndata:112
+#, fuzzy
+#| msgid "C_Cloud_1"
+msgctxt "./data/brushes/C_Cloud_1.gbr"
 msgid "C_Cloud_1"
 msgstr "C_Бұлт_1"
 
 #: i18ndata:113
+#, fuzzy
+#| msgid "C_Dirty_Spot"
+msgctxt "./data/brushes/C_Dirty_Spot.gbr"
 msgid "C_Dirty_Spot"
 msgstr "C_былғаған дақ"
 
 #: i18ndata:114
+#, fuzzy
+#| msgid "C_Dust_1"
+msgctxt "./data/brushes/D_Dust_1.gbr"
 msgid "C_Dust_1"
 msgstr "C_Шаң_1"
 
 #: i18ndata:115
+#, fuzzy
+#| msgid "D_Normal dust"
+msgctxt "./data/brushes/D_Normal_dust.gbr"
 msgid "D_Normal dust"
 msgstr "D_ Кәдімгі шаң"
 
 #: i18ndata:116
+#, fuzzy
+#| msgid "F_Furr fast"
+msgctxt "./data/brushes/F_Furr_fast.gbr"
 msgid "F_Furr fast"
 msgstr "F Фурр-фаст"
 
 #: i18ndata:117
+#, fuzzy
+#| msgid "L_Coroballs"
+msgctxt "./data/brushes/L_Coroballs.gbr"
 msgid "L_Coroballs"
 msgstr "L Домалақтар"
 
 #: i18ndata:118
+#, fuzzy
+#| msgid "L_Foliage_1"
+msgctxt "./data/brushes/L_Foliage_1.gbr"
 msgid "L_Foliage_1"
 msgstr "L_Жапырақтар_1"
 
 #: i18ndata:119
+#, fuzzy
+#| msgid "L_Leaf_2"
+msgctxt "./data/brushes/L_Leaf_2.gbr"
 msgid "L_Leaf_2"
 msgstr "L_Жапырақ _2"
 
 #: i18ndata:120
+#, fuzzy
+#| msgid "L_Leaf_3"
+msgctxt "./data/brushes/L_Leaf_3.gbr"
 msgid "L_Leaf_3"
 msgstr "L_Жапырақ _3"
 
 #: i18ndata:121
+#, fuzzy
+#| msgid "LJF_Foliage_Brush_01"
+msgctxt "./data/brushes/LJF_Foliage_Brush_01.gbr"
 msgid "LJF_Foliage_Brush_01"
 msgstr "LJF Жапырақты қылқалам 01"
 
 #: i18ndata:122
+#, fuzzy
+#| msgid "LJF_Foliage_Brush_02"
+msgctxt "./data/brushes/LJF_Foliage_Brush_02.gbr"
 msgid "LJF_Foliage_Brush_02"
 msgstr "LJF Жапырақты қылқалам 02"
 
 #: i18ndata:123
+#, fuzzy
+#| msgid "M_01"
+msgctxt "./data/brushes/M_01.gbr"
 msgid "M_01"
 msgstr "M_01"
 
 #: i18ndata:124
+#, fuzzy
+#| msgid "M_02"
+msgctxt "./data/brushes/M_02.gbr"
 msgid "M_02"
 msgstr "M_02"
 
 #: i18ndata:125
+#, fuzzy
+#| msgid "M_03"
+msgctxt "./data/brushes/M_03.gbr"
 msgid "M_03"
 msgstr "M_03"
 
 #: i18ndata:126
+#, fuzzy
+#| msgid "M_04"
+msgctxt "./data/brushes/M_04.gbr"
 msgid "M_04"
 msgstr "M_04"
 
 #: i18ndata:127
+#, fuzzy
+#| msgid "M_05"
+msgctxt "./data/brushes/M_05.gbr"
 msgid "M_05"
 msgstr "M_05"
 
 #: i18ndata:128
+#, fuzzy
+#| msgid "M_06"
+msgctxt "./data/brushes/M_06.gbr"
 msgid "M_06"
 msgstr "M_06"
 
-#: i18ndata:129 i18ndata:130
+#: i18ndata:129
+#, fuzzy
+#| msgid "M_07"
+msgctxt "./data/brushes/M_07.gbr"
+msgid "M_07"
+msgstr "M_07"
+
+#: i18ndata:130
+#, fuzzy
+#| msgid "M_07"
+msgctxt "./data/brushes/M_08.gbr"
 msgid "M_07"
 msgstr "M_07"
 
 #: i18ndata:131
+#, fuzzy
+#| msgid "M_09"
+msgctxt "./data/brushes/M_09.gbr"
 msgid "M_09"
 msgstr "M_09"
 
 #: i18ndata:132
+#, fuzzy
+#| msgid "M_Arrow"
+msgctxt "./data/brushes/M_Arrow.gbr"
 msgid "M_Arrow"
 msgstr "M жебе"
 
 #: i18ndata:133
+#, fuzzy
+#| msgid "M_Bulb"
+msgctxt "./data/brushes/M_Bulb.gbr"
 msgid "M_Bulb"
 msgstr "M құмалақ"
 
 #: i18ndata:134
+#, fuzzy
+#| msgid "M_Cage"
+msgctxt "./data/brushes/M_Cage.gbr"
 msgid "M_Cage"
 msgstr "M тор"
 
 #: i18ndata:135
+#, fuzzy
+#| msgid "M_Pipe_1"
+msgctxt "./data/brushes/M_Pipe_1.gbr"
 msgid "M_Pipe_1"
 msgstr "M түтік 1"
 
 #: i18ndata:136
+#, fuzzy
+#| msgid "M_Pipe_2"
+msgctxt "./data/brushes/M_Pipe_2.gbr"
 msgid "M_Pipe_2"
 msgstr "M түтік 2"
 
 #: i18ndata:137
+#, fuzzy
+#| msgid "M_Pipe_3"
+msgctxt "./data/brushes/M_Pipe_3.gbr"
 msgid "M_Pipe_3"
 msgstr "M түтік 3"
 
 #: i18ndata:138
+#, fuzzy
+#| msgid "MZ_leaves"
+msgctxt "./data/brushes/MZ_leaves.gbr"
 msgid "MZ_leaves"
 msgstr "MZ_жапырақтары"
 
 #: i18ndata:139
+#, fuzzy
+#| msgid "O_Oil Soft"
+msgctxt "./data/brushes/O_Oil_Soft.gbr"
 msgid "O_Oil Soft"
 msgstr "O Май (жұмсақ)"
 
 #: i18ndata:140
+#, fuzzy
+#| msgid "O_Oils 1"
+msgctxt "./data/brushes/O_Oils_1.gbr"
 msgid "O_Oils 1"
 msgstr "O Май 1"
 
 #: i18ndata:141
+#, fuzzy
+#| msgid "O_Oils 1 GP"
+msgctxt "./data/brushes/O_Oils_1_GP.gbr"
 msgid "O_Oils 1 GP"
 msgstr "O Май 1 GP"
 
 #: i18ndata:142
+#, fuzzy
+#| msgid "O_Oils Softer"
+msgctxt "./data/brushes/O_Oils_Softer.gbr"
 msgid "O_Oils Softer"
 msgstr "O Май  (жүмсағырақ)"
 
 #: i18ndata:143
+#, fuzzy
+#| msgid "R_Rake1"
+msgctxt "./data/brushes/R_Rake1.gbr"
 msgid "R_Rake1"
 msgstr "R тырнауыш1"
 
 #: i18ndata:144
+#, fuzzy
+#| msgid "R_Rake2"
+msgctxt "./data/brushes/R_Rake2.gbr"
 msgid "R_Rake2"
 msgstr "R тырнауыш2"
 
 #: i18ndata:145
+#, fuzzy
+#| msgid "R_Rake3"
+msgctxt "./data/brushes/R_Rake3.gbr"
 msgid "R_Rake3"
 msgstr "R тырнауыш3"
 
 #: i18ndata:146
+#, fuzzy
+#| msgid "R_Rake4"
+msgctxt "./data/brushes/R_Rake4.gbr"
 msgid "R_Rake4"
 msgstr "R тырнауыш4"
 
 #: i18ndata:147
+#, fuzzy
+#| msgid "R_Rake_small"
+msgctxt "./data/brushes/R_Rake_small.gbr"
 msgid "R_Rake_small"
 msgstr "R шағын тырнауыш "
 
 #: i18ndata:148
+#, fuzzy
+#| msgid "Rake_textured_01"
+msgctxt "./data/brushes/rake_textured_01.gbr"
 msgid "Rake_textured_01"
 msgstr "Тырнауыш текстура 01"
 
 #: i18ndata:149
+#, fuzzy
+#| msgid "Rake_textured_02"
+msgctxt "./data/brushes/rake_textured_02.gbr"
 msgid "Rake_textured_02"
 msgstr "Тырнауыш текстура 02"
 
 #: i18ndata:150
+#, fuzzy
+#| msgid "Real Oil 1"
+msgctxt "./data/brushes/Real_oil_1.gbr"
 msgid "Real Oil 1"
 msgstr "Кәдімгі май 1"
 
 #: i18ndata:151
+#, fuzzy
+#| msgid "Real_Oil_2"
+msgctxt "./data/brushes/Real_Oil_2.gbr"
 msgid "Real_Oil_2"
 msgstr "Кәдімгі май 2"
 
 #: i18ndata:152
+#, fuzzy
+#| msgid "S_Smudge Cheese"
+msgctxt "./data/brushes/S_Smudge_Cheese.gbr"
 msgid "S_Smudge Cheese"
 msgstr "S Жағу (Cheese)"
 
 #: i18ndata:153
+#, fuzzy
+#| msgid "Sc_Scratches"
+msgctxt "./data/brushes/Sc_Scratches.gbr"
 msgid "Sc_Scratches"
 msgstr "Sc сызықтар"
 
 #: i18ndata:154
+#, fuzzy
+#| msgid "Sc_Scratches2"
+msgctxt "./data/brushes/Sc_Scratches_2.gbr"
 msgid "Sc_Scratches2"
 msgstr "Sc сызықтар2"
 
 #: i18ndata:155
+#, fuzzy
+#| msgid "Sc_Scratches3"
+msgctxt "./data/brushes/Sc_Scratches_3.gbr"
 msgid "Sc_Scratches3"
 msgstr "Sc сызықтар3"
 
 #: i18ndata:156
+#, fuzzy
+#| msgid "T_Texture_1"
+msgctxt "./data/brushes/T_Texture_1.gbr"
 msgid "T_Texture_1"
 msgstr "T Текстура 1"
 
 #: i18ndata:157
+#, fuzzy
+#| msgid "Te_Techno_Angular_Cross"
+msgctxt "./data/brushes/Te_Techno_Angular_Cross.gbr"
 msgid "Te_Techno_Angular_Cross"
 msgstr "Te Техно_Бұрыш_Айқыш"
 
 #: i18ndata:158
+#, fuzzy
+#| msgid "U_Circle circuit"
+msgctxt "./data/brushes/U_Circle_circuit.gbr"
 msgid "U_Circle circuit"
 msgstr "U Шеңбер сұлбасы"
 
 #: i18ndata:159
+#, fuzzy
+#| msgid "U Circle shape 1"
+msgctxt "./data/brushes/U_Circle_shape_1.gbr"
 msgid "U Circle shape 1"
 msgstr "U Шеңбер қалыпы 1"
 
 #: i18ndata:160
+#, fuzzy
+#| msgid "U Circle shape 2"
+msgctxt "./data/brushes/U_Circle_shape_2.gbr"
 msgid "U Circle shape 2"
 msgstr "U Шеңбер қалыпы 2"
 
 #: i18ndata:161
+#, fuzzy
+#| msgid "U Circle shape 3"
+msgctxt "./data/brushes/U_Circle_shape_3.gbr"
 msgid "U Circle shape 3"
 msgstr "U Шеңбер қалыпы 3"
 
 #: i18ndata:162
+#, fuzzy
+#| msgid "U Circle shape 4"
+msgctxt "./data/brushes/U_Circle_shape_4.gbr"
 msgid "U Circle shape 4"
 msgstr "U Шеңбер қалыпы 4"
 
 #: i18ndata:163
+#, fuzzy
+#| msgid "U Circle shape 5"
+msgctxt "./data/brushes/U_Circle_shape_5.gbr"
 msgid "U Circle shape 5"
 msgstr "U Шеңбер қалыпы 5"
 
 #: i18ndata:164
+#, fuzzy
+#| msgid "U Circle shape 5b"
+msgctxt "./data/brushes/U_Circle_shape_5b.gbr"
 msgid "U Circle shape 5b"
 msgstr "U Шеңбер қалыпы 5b"
 
 #: i18ndata:165
+#, fuzzy
+#| msgid "U Circle shape 5c"
+msgctxt "./data/brushes/U_Circle_shape_5c.gbr"
 msgid "U Circle shape 5c"
 msgstr "U Шеңбер қалыпы 5c"
 
 #: i18ndata:166
+#, fuzzy
+#| msgid "Z_Chain_1"
+msgctxt "./data/brushes/Z_Chain_1.gbr"
 msgid "Z_Chain_1"
 msgstr "Z Шыңжыр 1"
 
 #: i18ndata:167
+#, fuzzy
+#| msgid "Z_Pixel 1"
+msgctxt "./data/brushes/Z_Pixel_1.gbr"
 msgid "Z_Pixel 1"
 msgstr "Z Пиксел 1"
 
 #: i18ndata:168
+#, fuzzy
+#| msgid "Z_Pixel 4x4 rounded"
+msgctxt "./data/brushes/Z_Pixel_4x4_rounded.gbr"
 msgid "Z_Pixel 4x4 rounded"
 msgstr "Z Пиксел  4x4 дөңгеленген"
 
 #: i18ndata:169
+#, fuzzy
+#| msgid "Z_Pixel 4pix _45a"
+msgctxt "./data/brushes/Z_Pixel__4_pix__45a.gbr"
 msgid "Z_Pixel 4pix _45a"
 msgstr "Z Пиксел 4пкс 45a"
 
 #: i18ndata:170
+#, fuzzy
+#| msgid "Z_Pixel Cross"
+msgctxt "./data/brushes/Z_Pixel_Cross.gbr"
 msgid "Z_Pixel Cross"
 msgstr "Z Пиксел (айқыш)"
 
 #: i18ndata:171
+#, fuzzy
+#| msgid "Z_Triangle_shape_1"
+msgctxt "./data/brushes/Z_Triangle_shape_1.gbr"
 msgid "Z_Triangle_shape_1"
 msgstr "Z Үшбұрыш қалыпты 1"
 
 #: i18ndata:172
+#, fuzzy
+#| msgid "Z_Triangle_shape_2"
+msgctxt "./data/brushes/Z_Triangle_shape_2.gbr"
 msgid "Z_Triangle_shape_2"
 msgstr "Z Үшбұрыш қалыпты 2"
 
 #: i18ndata:173
+#, fuzzy
+#| msgid "Canvas Covered"
+msgctxt "./data/patterns/Canvas_covered.pat"
 msgid "Canvas Covered"
 msgstr "Грунталған өріс"
 
 #: i18ndata:174
+#, fuzzy
+#| msgid "Canvas 01"
+msgctxt "./data/patterns/Canvas_Hard.pat"
 msgid "Canvas 01"
 msgstr "Өрісі 01"
 
 #: i18ndata:175
+#, fuzzy
+#| msgid "Canvas 02"
+msgctxt "./data/patterns/Canvas_small_01.pat"
 msgid "Canvas 02"
 msgstr "Өрісі 02"
 
 #: i18ndata:176
+#, fuzzy
+#| msgid "Canvas 03"
+msgctxt "./data/patterns/Canvas_small_02.pat"
 msgid "Canvas 03"
 msgstr "Өрісі 03"
 
 #: i18ndata:177
+#, fuzzy
+#| msgid "Canvas 04"
+msgctxt "./data/patterns/Crumpled_Paper.pat"
 msgid "Canvas 04"
 msgstr "Өрісі 04"
 
 #: i18ndata:178
+#, fuzzy
+#| msgid "Fractal Pattern"
+msgctxt "./data/patterns/fractal_pattern.pat"
 msgid "Fractal Pattern"
 msgstr "Фрактал өрнегі"
 
 #: i18ndata:179
+#, fuzzy
+#| msgid "Generic Paper 2"
+msgctxt "./data/patterns/generic_paper1.pat"
 msgid "Generic Paper 2"
 msgstr "Кәдімгі қағаз 2"
 
 #: i18ndata:180
+#, fuzzy
+#| msgid "Generic Paper 3"
+msgctxt "./data/patterns/generic_paper2.pat"
 msgid "Generic Paper 3"
 msgstr "Кәдімгі қағаз 3"
 
 #: i18ndata:181
+#, fuzzy
+#| msgid "Granite 1b"
+msgctxt "./data/patterns/granite.pat"
 msgid "Granite 1b"
 msgstr "Гранит 1b"
 
 #: i18ndata:182
+#, fuzzy
+#| msgid "Hexacol BW By Tarkan"
+msgctxt "./data/patterns/hexacolBW__2.pat"
 msgid "Hexacol BW By Tarkan"
 msgstr "Гексакол А/Қ, авторы - Таркан"
 
 #: i18ndata:183
+#, fuzzy
+#| msgid "HR Pastel Paper 02"
+msgctxt "./data/patterns/HR_PastelPaper_02.pat"
 msgid "HR Pastel Paper 02"
 msgstr "HR Пастел қағазы 02"
 
 #: i18ndata:184
+#, fuzzy
+#| msgid "HR Wall Paper"
+msgctxt "./data/patterns/HR_Wall_Paper.pat"
 msgid "HR Wall Paper"
 msgstr "HR Тұсқағаз"
 
@@ -1064,9 +1711,11 @@ msgstr "Басқа"
 msgid "Generator"
 msgstr "Генератор"
 
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: image/kis_adjustment_layer.cc:127
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:123
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
@@ -1078,8 +1727,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, defaultRadioButton)
 #: image/kis_base_mask_generator.h:32
-#: image/kis_bookmarked_configuration_manager.cc:34
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:968
+#: ui/kis_bookmarked_configurations_model.cc:66
 msgid "Default"
 msgstr "Әдетті"
 
@@ -1100,10 +1749,6 @@ msgstr "Көрінетін"
 #: ui/kis_node_model.cpp:421
 msgid "Locked"
 msgstr "Бұғатталған"
-
-#: image/kis_bookmarked_configuration_manager.cc:35
-msgid "Last used"
-msgstr "Соңғы пайдаланған"
 
 #: image/kis_clone_layer.cpp:264
 msgid "Copy From"
@@ -1222,7 +1867,7 @@ msgstr "Кескіннің түстер кеңістігін ауыстыру"
 msgid "Convert Projection Color Space"
 msgstr "Кескін проекциясының түстер кеңістігін ауыстыру"
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:918 ui/kis_layer_manager.cc:716
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
@@ -1257,12 +1902,12 @@ msgstr "%1%"
 msgid "Composite Mode"
 msgstr "Біріктіру режімі"
 
-#: image/kis_paint_layer.cc:153 image/kis_paint_layer.cc:162
+#: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:160
 #: ui/kis_node_model.cpp:429
 msgid "Alpha Locked"
 msgstr "Альфа-бұғатталған"
 
-#: image/kis_paint_layer.cc:154 image/kis_paint_layer.cc:165
+#: image/kis_paint_layer.cc:152 image/kis_paint_layer.cc:163
 msgid "Inherit Alpha"
 msgstr "Альфа мұралау"
 
@@ -1389,7 +2034,7 @@ msgid "Play macro"
 msgstr "Макросты орындау"
 
 #: image/recorder/kis_macro_player.cc:81
-#: plugins/extensions/bigbrother/bigbrother.cc:134
+#: plugins/extensions/bigbrother/bigbrother.cc:124
 msgid "Playing back macro"
 msgstr "Макросты орындау"
 
@@ -1432,82 +2077,35 @@ msgstr "Эллипс"
 msgid "Rectangle"
 msgstr "Төртбұрыш"
 
-#. i18n: ectx: Menu (file)
-#: krita.rc:6
-msgid "&File"
-msgstr "&Файл"
+#: kis_splash_screen.cpp:55
+msgid ""
+"<html><head/><body><p align=\"center\"><b>Links</b></p><p><a href=\"http://"
+"krita.org/support-krita#general\"><span style=\" text-decoration: underline; "
+"color:#FFFFFF;\">Donations</span></a></p><p><a href=\"http://www.zazzle.com/"
+"kritashop\"><span style=\" text-decoration: underline; color:#FFFFFF;"
+"\">Merchandise</span></a></p><p><a href=\"http://krita.org/resources\"><span "
+"style=\" text-decoration: underline; color:#FFFFFF;\">Getting Started</"
+"span></a></p><p><a href=\"http://krita.org\"><span style=\" text-decoration: "
+"underline; color:#FFFFFF;\">Krita Website</span></a></p><p><a href=\"http://"
+"forum.kde.org/viewforum.php?f=136\"><span style=\" text-decoration: "
+"underline; color:#FFFFFF;\">User Community</span></a></p><p><a href="
+"\"https://projects.kde.org/projects/calligra\"><span style=\" text-"
+"decoration: underline; color:#FFFFFF;\">Source Code</span></a></p><p><a href="
+"\"http://kritastudio.com\"><span style=\" text-decoration: underline; color:"
+"#FFFFFF;\">Commercial Support</span></a></p><p><a href=\"http://store."
+"steampowered.com/app/280680/\"><span style=\" text-decoration: underline; "
+"color:#FFFFFF;\">Krita on Steam</span></a></p></body></html>"
+msgstr ""
 
-#. i18n: ectx: Menu (Edit)
-#: krita.rc:13
-msgid "&Edit"
-msgstr "&Өңдеу"
+#: kis_splash_screen.cpp:75
+#, fuzzy, kde-format
+#| msgid "Version:"
+msgid "Version: %1"
+msgstr "Нұсқасы:"
 
-#. i18n: ectx: Menu (Resources)
-#: krita.rc:31
-msgid "&Resources"
-msgstr "&Ресурстар"
-
-#. i18n: ectx: Menu (View)
-#: krita.rc:40
-msgid "&View"
-msgstr "&Көрініс"
-
-#. i18n: ectx: Menu (view_fast_grid_config)
-#: krita.rc:60
-msgid "Grid Spacing"
-msgstr "Тор аралығы"
-
-#. i18n: ectx: Menu (Image)
-#: krita.rc:80
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:4
-#: plugins/extensions/offsetimage/offsetimage.rc:5
-#: plugins/extensions/rotateimage/rotateimage.rc:4
-#: plugins/extensions/shearimage/shearimage.rc:4
-msgid "&Image"
-msgstr "&Кескін"
-
-#. i18n: ectx: Menu (Layer)
-#: krita.rc:91 plugins/extensions/histogram/histogram.rc:4
-msgid "&Layer"
-msgstr "Қ&абат"
-
-#. i18n: ectx: Menu (LayerNew)
-#: krita.rc:92
-msgid "New"
-msgstr "Жаңа"
-
-#. i18n: ectx: Menu (LayerConvert)
-#: krita.rc:101
-msgid "Convert"
-msgstr "Аудару"
-
-#. i18n: ectx: property (text), widget (QPushButton, bnSelect)
-#. i18n: ectx: Menu (Select)
-#: krita.rc:126 plugins/extensions/colorrange/wdg_colorrange.ui:131
-#: plugins/extensions/imagesize/imagesize.rc:12
-#: plugins/extensions/modify_selection/modify_selection.rc:4
-msgid "&Select"
-msgstr "&Таңдау"
-
-#. i18n: ectx: Menu (Filter)
-#: krita.rc:139
-msgid "Filte&r"
-msgstr "Сүз&гі"
-
-#. i18n: ectx: Menu (Tools)
-#: krita.rc:156
-msgid "&Tools"
-msgstr "&Құралдар"
-
-#. i18n: ectx: Menu (settings)
-#: krita.rc:159
-msgid "Settings"
-msgstr "Баптау"
-
-#. i18n: ectx: ToolBar (BrushesAndStuff)
-#: krita.rc:172
-msgid "Brushes and Stuff"
-msgstr "Қылқалам және басқа"
+#: kis_splash_screen.cpp:80
+msgid "<html><head/><body><p align=\"center\"><b>Recent Files</b></p>"
+msgstr ""
 
 #: main.cc:78
 msgid "File(s) or URL(s) to open"
@@ -1536,15 +2134,21 @@ msgstr "Ашу..."
 msgid "Ellipse assistant"
 msgstr "Эллипс құрғышы"
 
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:493
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:443
+#, fuzzy
+#| msgid "Spline assistant"
+msgid "Select an Assistant"
+msgstr "Сплайн құрғышы"
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:528
+msgid "Errors were encountered. Not all assistants were successfully loaded."
+msgstr "Қателер орын алды. Көмекші құралдар сәтті жүктелген жоқ."
+
+#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:573
 #, fuzzy
 #| msgid "Assistant:"
 msgid "Save Assistant"
 msgstr "Көмекші:"
-
-#: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.cc:589
-msgid "Errors were encountered. Not all assistants were successfully loaded."
-msgstr "Қателер орын алды. Көмекші құралдар сәтті жүктелген жоқ."
 
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:101
 msgid "Ruler assistant editor tool"
@@ -1574,45 +2178,6 @@ msgstr "Сплайн құрғышы"
 #: plugins/assistants/RulerAssistant/SplineAssistant.cc:135
 msgid "Spline"
 msgstr "Сплайн"
-
-#: plugins/colorspaces/extensions/kis_burnhighlights_adjustment.cpp:98
-msgid "BurnHighlights Adjustment"
-msgstr "Қою жарықтерын түзету"
-
-#: plugins/colorspaces/extensions/kis_burnmidtones_adjustment.cpp:98
-msgid "BurnMidtones Adjustment"
-msgstr "Қою жарым реңктерді түзету"
-
-#: plugins/colorspaces/extensions/kis_burnshadows_adjustment.cpp:106
-msgid "BurnShadows Adjustment"
-msgstr "Қою көлеңкелерін түзету"
-
-#: plugins/colorspaces/extensions/kis_color_balance_adjustment.cpp:168
-msgid "ColorBalanceMidtones Adjustment"
-msgstr "Түс балансы жарым реңктерді түзету"
-
-#: plugins/colorspaces/extensions/kis_desaturate_adjustment.cpp:152
-#, fuzzy
-#| msgid "BurnMidtones Adjustment"
-msgid "Desaturate Adjustment"
-msgstr "Қою жарым реңктерді түзету"
-
-#: plugins/colorspaces/extensions/kis_dodgehighlights_adjustment.cpp:99
-msgid "DODGE Adjustment"
-msgstr "DODGE түзету"
-
-#: plugins/colorspaces/extensions/kis_dodgemidtones_adjustment.cpp:101
-msgid "DodgeMidtones Adjustment"
-msgstr "Dodge жарым реңктерді түзету"
-
-#: plugins/colorspaces/extensions/kis_dodgeshadows_adjustment.cpp:103
-msgid "DodgeShadows Adjustment"
-msgstr "Dodge көлеңкелерін түзету"
-
-#: plugins/colorspaces/extensions/kis_hsv_adjustment.cpp:231
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.h:51
-msgid "HSV/HSL Adjustment"
-msgstr "HSV/HSL түзеу"
 
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:109
 msgid "Failed to create an action."
@@ -1680,24 +2245,20 @@ msgid "Open and edit..."
 msgstr "Ашып өзгерту..."
 
 #: plugins/extensions/bigbrother/bigbrother.cc:99
-msgid "Save all actions"
-msgstr "Барлық амалдарды сақтау"
-
-#: plugins/extensions/bigbrother/bigbrother.cc:104
 msgid "Start recording macro"
 msgstr "Макросты жазуды бастау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:109
+#: plugins/extensions/bigbrother/bigbrother.cc:104
 msgid "Stop recording actions"
 msgstr "Амалдарды жазуды тоқтату"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:198
+#: plugins/extensions/bigbrother/bigbrother.cc:188
 #, fuzzy
 #| msgid "Save Macro"
 msgid "Open Macro"
 msgstr "Макросты сақтау"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:237
+#: plugins/extensions/bigbrother/bigbrother.cc:226
 msgid "Save Macro"
 msgstr "Макросты сақтау"
 
@@ -1707,7 +2268,7 @@ msgid "Recording"
 msgstr "Жазып алу"
 
 #. i18n: ectx: Menu (Macros)
-#: plugins/extensions/bigbrother/bigbrother.rc:11
+#: plugins/extensions/bigbrother/bigbrother.rc:9
 msgid "Macros"
 msgstr "Макростар"
 
@@ -2157,7 +2718,7 @@ msgstr "Ығысуы: "
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:24
-#: ui/dialogs/kis_dlg_preferences.cc:617 ui/dialogs/kis_dlg_preferences.cc:618
+#: ui/dialogs/kis_dlg_preferences.cc:639 ui/dialogs/kis_dlg_preferences.cc:640
 msgid "General"
 msgstr "Жалпы"
 
@@ -2346,7 +2907,7 @@ msgstr "Көрсетілсін"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:693
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:97
-#: ui/forms/wdgdisplaysettings.ui:67 ui/kis_paintop_box.cc:152
+#: ui/forms/wdgdisplaysettings.ui:77 ui/kis_paintop_box.cc:152
 msgid "Size:"
 msgstr "Өлшемі"
 
@@ -2502,27 +3063,27 @@ msgstr "Арналары"
 msgid "Enabled"
 msgstr "Рұқсат етілген"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:48
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:49
 msgid "Compositions"
 msgstr "Құрамалар"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:59
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:60
 msgid "Delete Composition"
 msgstr "Құраманы өшіру"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:60
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:61
 msgid "New Composition"
 msgstr "Жаңа құрама"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:61
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:62
 msgid "Export Composition"
 msgstr "Құраманы экспорттау"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:73
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:74
 msgid "Insert Name"
 msgstr "Атауын ендіру"
 
-#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:149
+#: plugins/extensions/dockers/compositiondocker/compositiondocker_dock.cpp:150
 msgid "Select a Directory"
 msgstr "Каталогын таңдау"
 
@@ -2562,16 +3123,18 @@ msgstr "Қа&сиеттері..."
 msgid "&Select Opaque"
 msgstr "Мөлдірсіздікті &таңдау"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:458
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:459
 #: ui/kis_layer_manager.cc:285
 msgid "&Merge with Layer Below"
 msgstr "Астыңғы қабатпен &біріктіру"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:462
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:463
 msgid "&Convert"
 msgstr "&Аудару"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:38
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:68
 msgid "Palettes"
 msgstr "Палитралары"
 
@@ -2757,13 +3320,13 @@ msgstr "Назардағы кинеографтағы таңдалған сур�
 msgid "Save flipbook"
 msgstr "Кинеографты сақтау"
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:193
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:264
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:192
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:261
 #: ui/widgets/KisFlipbookSelector.cpp:50
 msgid "Select files to add to flipbook"
 msgstr "Кинеографқа қосатын файлдарды таңдау"
 
-#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:232
+#: plugins/extensions/dockers/flipbook/flipbookdocker_dock.cpp:230
 msgid "Load flipbook"
 msgstr "Кинеографты жүктеу"
 
@@ -2881,7 +3444,7 @@ msgid "All Channels"
 msgstr "Бүкіл арналары"
 
 #: plugins/extensions/dockers/lut/lutdocker_dock.cpp:281
-#: ui/dialogs/kis_dlg_preferences.cc:353
+#: ui/dialogs/kis_dlg_preferences.cc:356
 #, fuzzy
 #| msgid "OpenColorIO configuration path:"
 msgid "Select OpenColorIO Configuration"
@@ -2950,12 +3513,12 @@ msgstr "Көрініс:"
 msgid "Overview"
 msgstr "Шолу"
 
-#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:89
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:299
+#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:115
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:294
 msgid "Palette"
 msgstr "Палитрасы"
 
-#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:135
+#: plugins/extensions/dockers/palettedocker/palettedocker_dock.cpp:159
 msgid "Choose palette"
 msgstr "Палитраны таңдау"
 
@@ -2974,7 +3537,9 @@ msgstr "Нысан түсін қосу"
 msgid "Add color"
 msgstr "Түсті қосу"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
 #: plugins/extensions/dockers/patterndocker/patterndocker_dock.cpp:37
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:73
 #: ui/kis_control_frame.cpp:151
 msgid "Patterns"
 msgstr "Өрнектер"
@@ -3083,7 +3648,7 @@ msgstr "Бұлдырлық шеңбері:"
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:511
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:694
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:871
-#: ui/forms/wdgdisplaysettings.ui:32 ui/forms/wdgdisplaysettings.ui:103
+#: ui/forms/wdgdisplaysettings.ui:32 ui/forms/wdgdisplaysettings.ui:113
 msgid "Color:"
 msgstr "Түсі:"
 
@@ -3123,9 +3688,11 @@ msgstr "Керек болса, көлеңкесі болу үшін кесікі
 msgid "Apply G'Mic Action..."
 msgstr "G'Mic амалын қолдану..."
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:129
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:138
-#: ui/dialogs/kis_dlg_preferences.cc:789 ui/kis_aboutdata.h:58
+#: ui/dialogs/kis_dlg_preferences.cc:811 ui/kis_aboutdata.h:44
+#: wdgsplash.ui:300
 msgid "Krita"
 msgstr "Krita"
 
@@ -3511,8 +4078,10 @@ msgstr "Экспозиция режімі:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editExposureMode)
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
+#. i18n: ectx: property (text), widget (QCheckBox, autoPrecisionCheckBox)
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
 msgid "Auto"
 msgstr "Авто"
 
@@ -3671,7 +4240,7 @@ msgstr "Бінеше жарық дағы"
 #: plugins/extensions/metadataeditor/editors/exif.ui:432
 #: plugins/generators/pattern/patterngenerator.h:53
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:59
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:122
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:136
 #: plugins/tools/tool_text/wdgtextoptions.ui:48
 #: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdgshapeoptions.ui:72
 msgid "Pattern"
@@ -4070,7 +4639,7 @@ msgid "Date"
 msgstr "Күні"
 
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:68
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:397
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:389
 msgid "Number"
 msgstr "Саны"
 
@@ -4139,9 +4708,10 @@ msgstr "Шегін таңдау..."
 msgid "Feather Selection..."
 msgstr "Таңдау шегін еріту..."
 
-#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
 #: plugins/extensions/modify_selection/modify_selection.cc:78
-#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Smooth"
+msgctxt "Verb for a selection modification action"
 msgid "Smooth"
 msgstr "Тегіс"
 
@@ -4306,7 +4876,7 @@ msgstr "&Өзге:"
 msgid "Separate Image"
 msgstr "Кескінді жіктеу"
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:243
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:241
 msgid "Export Layer"
 msgstr "Қабатты экспорттау"
 
@@ -4623,7 +5193,7 @@ msgstr "Арнаны барынша кішірейту"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/colors/wdgcolortoalphabase.ui:64
-#: plugins/filters/unsharp/wdgunsharp.ui:61
+#: plugins/filters/unsharp/wdgunsharp.ui:103
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:139
 msgid "Threshold:"
@@ -4669,7 +5239,11 @@ msgstr "&HSV түзету..."
 msgid "Lightness"
 msgstr "Ашықтық"
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:445
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.h:51
+msgid "HSV/HSL Adjustment"
+msgstr "HSV/HSL түзеу"
+
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:466
 msgid "&Color Adjustment curves..."
 msgstr "&Түсті түзету қисығы..."
 
@@ -4725,8 +5299,10 @@ msgstr "Жасыл"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, label_14)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:68
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:168
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
 msgid "Yellow"
 msgstr "Сары"
 
@@ -4746,8 +5322,10 @@ msgstr "Дайын көлеңкелер  "
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_17)
+#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:99
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:151
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
 msgid "Cyan"
 msgstr "Циан"
 
@@ -4756,20 +5334,10 @@ msgstr "Циан"
 msgid "Reset Midtones  "
 msgstr "Жарым реңктерді ысыру"
 
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:251
-msgid "     Cyan"
-msgstr "     Циан"
-
 #. i18n: ectx: property (text), widget (QPushButton, pushResetHighlights)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:261
 msgid "Reset Highlights"
 msgstr "Жарықтарды ысыру"
-
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:268
-msgid "    Yellow"
-msgstr "    Сары"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkPreserveLuminosity)
 #: plugins/filters/colorsfilters/wdg_color_balance.ui:336
@@ -4827,10 +5395,12 @@ msgstr "&Реңкі:"
 msgid "&Saturation:"
 msgstr "Қ&анықтығы:"
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, lblType)
 #: plugins/filters/colorsfilters/wdg_hsv_adjustment.ui:109
 #: plugins/formats/ppm/kis_wdg_options_ppm.ui:17
+#: ui/forms/wdgimageproperties.ui:150
 msgid "Type:"
 msgstr "Түрі:"
 
@@ -5044,7 +5614,7 @@ msgstr "<b>Кіріс деңгейлері</b>"
 msgid "Logarithmic"
 msgstr "Логарифмдік"
 
-#: plugins/filters/noisefilter/noisefilter.cpp:68
+#: plugins/filters/noisefilter/noisefilter.cpp:69
 msgid "&Random Noise..."
 msgstr "&Кездейсоқ шуыл..."
 
@@ -5068,7 +5638,6 @@ msgstr "&Майбояу..."
 #: plugins/paintops/gridbrush/kis_gridop_option.cpp:33
 #: plugins/paintops/particle/kis_particleop_option.cpp:36
 #: plugins/paintops/sketch/kis_sketchop_option.cpp:32
-#: plugins/paintops/spray/kis_sprayop_option.cpp:37
 msgid "Brush size"
 msgstr "Қылқалам өлшемі"
 
@@ -5266,11 +5835,11 @@ msgstr "Пикселдеу"
 msgid "&Raindrops..."
 msgstr "&Жаңбыр тамшылары..."
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:396
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:388
 msgid "Drop size"
 msgstr "Тамшының өлшемі"
 
-#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:398
+#: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:390
 msgid "Fish eyes"
 msgstr "\"Балық көзділері\""
 
@@ -5339,20 +5908,31 @@ msgstr "Собел"
 msgid "&Unsharp Mask..."
 msgstr "&Тегістеу қалқасы..."
 
-#: plugins/filters/unsharp/kis_unsharp_filter.cpp:80
+#: plugins/filters/unsharp/kis_unsharp_filter.cpp:81
 #: plugins/filters/unsharp/kis_unsharp_filter.h:39
 msgid "Unsharp Mask"
 msgstr "Тегістеу қалқасы"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/filters/unsharp/wdgunsharp.ui:29
-msgid "Half-Size:"
-msgstr "Жарты-өлшемі:"
+#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
+#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
+#: plugins/filters/unsharp/wdgunsharp.ui:23
+#: plugins/paintops/chalk/wdgchalkoptions.ui:40
+#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
+msgid "Radius:"
+msgstr "Радиусы:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/filters/unsharp/wdgunsharp.ui:80
+#: plugins/filters/unsharp/wdgunsharp.ui:68
 msgid "Amount:"
 msgstr "Саны:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filters/unsharp/wdgunsharp.ui:126
+#, fuzzy
+#| msgid "Lightness"
+msgid "Lightness Only:"
+msgstr "Ашықтық"
 
 #: plugins/filters/wavefilter/wavefilter.cpp:103
 msgid "&Wave..."
@@ -5438,7 +6018,7 @@ msgstr "JPEG 2000 экспорттау параметрлері"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:19
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:70
 #, fuzzy
 #| msgid "Compress:"
 msgid "Compression"
@@ -5446,7 +6026,7 @@ msgstr "Сығу:"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:26
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:77
 msgid ""
 "<html><head/><body><p>These settings determine how much information is lost "
 "during compression. Low: small files, bad quality. High: big files, good "
@@ -5467,7 +6047,7 @@ msgstr ""
 "%1 дегенге кескіндердің экспорты болмады.\n"
 "RGB қылып сақталады."
 
-#: plugins/formats/jpeg/kis_jpeg_export.cc:81
+#: plugins/formats/jpeg/kis_jpeg_export.cc:83
 msgid "JPEG Export Options"
 msgstr "JPEG экспорттау параметрлері"
 
@@ -5477,20 +6057,20 @@ msgid "Basic"
 msgstr "Негізгі"
 
 #. i18n: ectx: property (text), widget (QCheckBox, progressive)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:82
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:40
 msgctxt "A progressive jpeg file can be displayed while loading."
 msgid "Progressive"
 msgstr "Прогрессивті"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:91
-#: plugins/formats/png/kis_wdg_options_png.ui:178
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:49
+#: plugins/formats/png/kis_wdg_options_png.ui:156
 msgid "Transparent pixel fill color:"
 msgstr "Мөлдір пикселдің орнын толтыратын түсі:"
 
 #. i18n: ectx: property (toolTip), widget (KColorButton, bnTransparencyFillColor)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:101
-#: plugins/formats/png/kis_wdg_options_png.ui:188
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:59
+#: plugins/formats/png/kis_wdg_options_png.ui:166
 msgid ""
 "<html><head/><body><p>Background color to replace transparent pixels with.</"
 "p></body></html>"
@@ -5498,81 +6078,87 @@ msgstr ""
 "<html><head/><body><p>Мөлдір пикселдер орнын толтыратын ая түсі.</p></body></"
 "html>"
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkForceSRGB)
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:123
+#: plugins/formats/png/kis_wdg_options_png.ui:214
+msgid "Force convert to sRGB"
+msgstr ""
+
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:124
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:131
 msgid "Advanced quality"
 msgstr "Жетелеген сапасы"
 
 #. i18n: ectx: property (text), widget (QCheckBox, optimize)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:130
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:137
 msgid "Optimize"
 msgstr "Оңтайландыру"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:142
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:149
 msgctxt "the result will be artificially smoothed to hide jpeg artefacts"
 msgid "Smooth:"
 msgstr "Тегістеу:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, baseLineJPEG)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:170
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:177
 msgid "Force baseline JPEG"
 msgstr "Негіз сызықты JPEG-ті мәжбүрлеп"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:182
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:189
 msgid "Subsampling:"
 msgstr "Субдискретизациясы:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:193
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:200
 msgid "2x2, 1x1, 1x1 (smallest file)"
 msgstr "2x2, 1x1, 1x1 (ең шағын файл)"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:198
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:205
 msgid "2x1, 1x1, 1x1"
 msgstr " "
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:203
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:210
 msgid "1x2, 1x1, 1x1"
 msgstr "1x2, 1x1, 1x1"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, subsampling)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:208
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:215
 msgid "1x1, 1x1, 1x1 (best quality)"
 msgstr "1x1, 1x1, 1x1 (ең сапалы)"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:219
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:226
 msgid "Metadata"
 msgstr "Метадерек"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:225
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:232
 msgid "Formats:"
 msgstr "Пішімдері:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, exif)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:231
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:238
 #: ui/kisexiv2/kis_exif_io.h:35
 msgid "Exif"
 msgstr "Exif"
 
 #. i18n: ectx: property (text), widget (QCheckBox, iptc)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:241
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:248
 msgid "IPTC"
 msgstr "IPTC"
 
 #. i18n: ectx: property (text), widget (QCheckBox, xmp)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:251
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:258
 #: ui/kisexiv2/kis_xmp_io.h:35
 msgid "XMP"
 msgstr "XMP"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:277
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:284
 msgid "Filters:"
 msgstr "Сүзгілер:"
 
@@ -5677,14 +6263,63 @@ msgstr "Krita PNG экспорты"
 msgid "PNG Options"
 msgstr "PNG параметрлері"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:20
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:158
+msgid "Disable to get smaller files if your image has no transparency"
+msgstr "Кескініңізде мөлдірлігі болмаса, шағын файлдарды жасамау"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:24
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:162
+msgid ""
+"<p>The Portable Network Graphics (PNG) file format allows transparency in "
+"your image to be stored by saving an alpha channel.\n"
+"You can uncheck the box if you are not using transparency and you want to "
+"make the resulting file smaller .<br>Always saving the alpha channel is "
+"recommended.</p>"
+msgstr ""
+"<p>Portable Network Graphics (PNG) файл пішімі кескініңіздің мөлдірлігін "
+"альфа-  арнасын жазу арқылы сақтауға мүмкіндік береді.\n"
+"Егерде мөлдірлігін қолданбайтын болсаңыз және файлдарыңыз шағын болуын "
+"қаласаңыз, бұл белгіні алып тастаңз.<br>Жалпы, альфа - арнасын сақтау жөн "
+"болар.</p>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, alpha)
+#: plugins/formats/png/kis_wdg_options_png.ui:27
+msgid "Store alpha channel (transparency)"
+msgstr "Альфа арнасы (мөлдірлігі) сақталсын"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:37
+msgid "Use interlacing when publishing on the Internet."
+msgstr "Интернетте жариялағанда ішінаралап кескіндеу."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:41
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+"<p>Ішінаралап кескіндеу әдісі Интернетте жариялағанда ыңғайлы.<br>\n"
+"Ішінаралап кескіндегенде кескін жүктеуі бітпей шолғышында көрсетіле бастайды."
+"</p>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/formats/png/kis_wdg_options_png.ui:44
+msgid "Interlacing"
+msgstr "Ішінаралап кескінделсін"
+
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevelDeflate)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4_2)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevelPixarLog)
 #. i18n: ectx: property (toolTip), widget (QSlider, compressionLevel)
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel1)
-#: plugins/formats/png/kis_wdg_options_png.ui:37
-#: plugins/formats/png/kis_wdg_options_png.ui:63
+#: plugins/formats/png/kis_wdg_options_png.ui:59
+#: plugins/formats/png/kis_wdg_options_png.ui:85
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:369
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:391
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:554
@@ -5704,12 +6339,12 @@ msgstr "Ескерту: сығу деңгейі нәтиженің сапасы�
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
-#: plugins/formats/png/kis_wdg_options_png.ui:41
-#: plugins/formats/png/kis_wdg_options_png.ui:67
-#: plugins/formats/png/kis_wdg_options_png.ui:81
-#: plugins/formats/png/kis_wdg_options_png.ui:95
-#: plugins/formats/png/kis_wdg_options_png.ui:106
-#: plugins/formats/png/kis_wdg_options_png.ui:120
+#: plugins/formats/png/kis_wdg_options_png.ui:63
+#: plugins/formats/png/kis_wdg_options_png.ui:89
+#: plugins/formats/png/kis_wdg_options_png.ui:103
+#: plugins/formats/png/kis_wdg_options_png.ui:117
+#: plugins/formats/png/kis_wdg_options_png.ui:128
+#: plugins/formats/png/kis_wdg_options_png.ui:142
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:373
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:395
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:423
@@ -5729,87 +6364,38 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: plugins/formats/png/kis_wdg_options_png.ui:70
+#: plugins/formats/png/kis_wdg_options_png.ui:92
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:376
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:561
 msgid "Compress:"
 msgstr "Сығу:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: plugins/formats/png/kis_wdg_options_png.ui:84
+#: plugins/formats/png/kis_wdg_options_png.ui:106
 msgctxt "The compression will take a long time; saving the file will be slow."
 msgid "Slow"
 msgstr "Баяу"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/formats/png/kis_wdg_options_png.ui:98
+#: plugins/formats/png/kis_wdg_options_png.ui:120
 msgctxt "The file will save fast but will not be compressed a lot"
 msgid "Fast"
 msgstr "Жылдам"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: plugins/formats/png/kis_wdg_options_png.ui:109
+#: plugins/formats/png/kis_wdg_options_png.ui:131
 msgctxt "the file will be small"
 msgid "Small"
 msgstr "Шағын"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: plugins/formats/png/kis_wdg_options_png.ui:123
+#: plugins/formats/png/kis_wdg_options_png.ui:145
 msgctxt "the file will be big"
 msgid "Big"
 msgstr "Үлкен"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:132
-msgid "Use interlacing when publishing on the Internet."
-msgstr "Интернетте жариялағанда ішінаралап кескіндеу."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:136
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-"<p>Ішінаралап кескіндеу әдісі Интернетте жариялағанда ыңғайлы.<br>\n"
-"Ішінаралап кескіндегенде кескін жүктеуі бітпей шолғышында көрсетіле бастайды."
-"</p>"
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/formats/png/kis_wdg_options_png.ui:139
-msgid "Interlacing"
-msgstr "Ішінаралап кескінделсін"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:146
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:158
-msgid "Disable to get smaller files if your image has no transparency"
-msgstr "Кескініңізде мөлдірлігі болмаса, шағын файлдарды жасамау"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:150
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:162
-msgid ""
-"<p>The Portable Network Graphics (PNG) file format allows transparency in "
-"your image to be stored by saving an alpha channel.\n"
-"You can uncheck the box if you are not using transparency and you want to "
-"make the resulting file smaller .<br>Always saving the alpha channel is "
-"recommended.</p>"
-msgstr ""
-"<p>Portable Network Graphics (PNG) файл пішімі кескініңіздің мөлдірлігін "
-"альфа-  арнасын жазу арқылы сақтауға мүмкіндік береді.\n"
-"Егерде мөлдірлігін қолданбайтын болсаңыз және файлдарыңыз шағын болуын "
-"қаласаңыз, бұл белгіні алып тастаңз.<br>Жалпы, альфа - арнасын сақтау жөн "
-"болар.</p>"
-
-#. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/formats/png/kis_wdg_options_png.ui:153
-msgid "Store alpha channel (transparency)"
-msgstr "Альфа арнасы (мөлдірлігі) сақталсын"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/formats/png/kis_wdg_options_png.ui:163
+#: plugins/formats/png/kis_wdg_options_png.ui:191
 msgid ""
 "Indexed PNG images are smaller. If you enabled this option, your image will "
 "be analyzed to see whether it is possible to save as an indexed PNG."
@@ -5818,12 +6404,12 @@ msgstr ""
 "кескініңіз индесктелген PNG ретінде сақтауға келе ме деп талдауға жатады."
 
 #. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/formats/png/kis_wdg_options_png.ui:166
+#: plugins/formats/png/kis_wdg_options_png.ui:194
 msgid "Save as indexed PNG, if possible"
 msgstr "PNG индекстелсін, мүмкін болса"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkSRGB)
-#: plugins/formats/png/kis_wdg_options_png.ui:213
+#: plugins/formats/png/kis_wdg_options_png.ui:204
 msgid ""
 "<html><head/><body><p><span style=\" font-weight:600;\">PNG</span> files "
 "have <span style=\" font-style:italic;\">two</span> options to save <span "
@@ -5841,8 +6427,10 @@ msgstr ""
 "<span style=\" font-style:italic;\">белгілеңіз</span>. </p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSRGB)
-#: plugins/formats/png/kis_wdg_options_png.ui:216
-msgid "save sRGB profile"
+#: plugins/formats/png/kis_wdg_options_png.ui:207
+#, fuzzy
+#| msgid "save sRGB profile"
+msgid "Embed sRGB profile"
 msgstr "sRGB профилі сақталсын"
 
 #: plugins/formats/ppm/kis_ppm_export.cpp:155
@@ -6071,7 +6659,7 @@ msgstr "&Таза түс..."
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpMode)
 #: plugins/generators/solid/colorgenerator.h:53
-#: ui/dialogs/kis_dlg_preferences.cc:634 ui/forms/wdgnewimage.ui:361
+#: ui/dialogs/kis_dlg_preferences.cc:656 ui/forms/wdgnewimage.ui:361
 #: ui/kis_paintop_option.cpp:31
 msgid "Color"
 msgstr "Түсі"
@@ -6079,13 +6667,6 @@ msgstr "Түсі"
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:43
 msgid "Chalk brush"
 msgstr "Бор қылқаламы"
-
-#. i18n: ectx: property (text), widget (QLabel, radiusLabel)
-#. i18n: ectx: property (text), widget (QLabel, lbl_diameter)
-#: plugins/paintops/chalk/wdgchalkoptions.ui:40
-#: plugins/paintops/mypaint/wdgmypaintoptions.ui:29
-msgid "Radius:"
-msgstr "Радиусы:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
 #. i18n: ectx: property (text), widget (QCheckBox, inkDepletionCHBox)
@@ -6109,23 +6690,35 @@ msgstr "Қанықтықтың азаюы"
 msgid "Color Smudge Brush"
 msgstr "Түсті жағу қылқаламы"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
 #| msgid "smudge length"
 msgid "Smudge Length"
 msgstr "жуықтау ұзақтығы"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
 #| msgid "Length:"
 msgid "Length: "
 msgstr "Ұзындығы:"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "smudge radius"
+msgid "Smudge Radius"
+msgstr "жағу радиусы"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "Radius:"
+msgid "Radius: "
+msgstr "Радиусы:"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 msgid "Color Rate"
 msgstr "Түстер ауыстыруы"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 #: plugins/paintops/libpaintop/kis_pressure_rate_option_widget.cpp:38
 msgid "Rate: "
 msgstr "Дәрежесі: "
@@ -6432,6 +7025,14 @@ msgstr "Қалыпты құру:"
 msgid "Speed"
 msgstr "Жылдамдығы"
 
+#. i18n: ectx: property (text), widget (QCheckBox, smoothCHBox)
+#: plugins/paintops/experiment/wdgexperimentoptions.ui:70
+#, fuzzy
+#| msgid "Smooth"
+msgctxt "Noun for an experiment brush shape smoothness"
+msgid "Smooth"
+msgstr "Тегіс"
+
 #. i18n: ectx: property (text), widget (QLabel, lblPostprocessing)
 #: plugins/paintops/experiment/wdgexperimentoptions.ui:89
 msgid "Post-processing"
@@ -6546,7 +7147,7 @@ msgstr "Қысып бөлу"
 #: plugins/paintops/gridbrush/wdggridoptions.ui:114
 #: plugins/paintops/hairy/wdgbristleoptions.ui:40
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:99
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:72
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:75
 #: plugins/paintops/spray/wdgsprayoptions.ui:166
 msgid "Scale:"
 msgstr "Масштабы:"
@@ -6904,8 +7505,43 @@ msgstr "Кездейсоқтығы:"
 msgid "Spacing:"
 msgstr "Аралығы: "
 
+#. i18n: ectx: property (toolTip), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:95
+msgid ""
+"Use to set the size from which the Automatic Precision Setting should begin. "
+"The Precision will remain 5 before this value."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:98
+#, fuzzy
+#| msgid "Start Search From"
+msgid "Size to Start From"
+msgstr "Іздеуді қайдан баста керек"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_2)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:108
+msgid ""
+"This determines every interval after which the precision should change. For "
+"example : if the delta alue is set to be 15.00, after every 15 pts change in "
+"the size of brush, the precision will change"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:111
+#, fuzzy
+#| msgid "Value:"
+msgid "Delta Value :"
+msgstr "Мәні:"
+
+#. i18n: ectx: property (text), widget (QLabel, lblPrecisionValue)
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:121
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:31
+msgid "0"
+msgstr "0"
+
 #. i18n: ectx: property (text), widget (QLabel, lblPrecision)
-#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:91
+#: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:134
 msgid "Precision:"
 msgstr "Дәлдігі:"
 
@@ -6936,7 +7572,9 @@ msgid "Save brush:"
 msgstr "Қылқаламын сақтау:"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_12)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:121
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:827
 #: ui/widgets/kis_workspace_chooser.cpp:89
 msgid "Save"
 msgstr "Сақтау"
@@ -7186,30 +7824,43 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "Қылқалам ұшы"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:57
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 msgid "Autobrush"
 msgstr "Автоқылқалам"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:61
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
 msgid "Predefined Brushes"
 msgstr "Дайын қылқаламдар"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:63
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:65
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 msgid "Custom Brush"
 msgstr "Өзіндік қылқалам"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:67
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:69
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
 msgid "Clipboard Brush"
 msgstr "Алмасу буфері қылқаламы"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:71
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:73
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
 msgid "Text Brush"
 msgstr "Мәтін қылқаламы"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:235
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
+msgid ""
+"Use to set the size from which the Automatic Precision Setting should "
+"begin. \n"
+"The Precision will remain 5 before this value."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:99
+msgid ""
+"Use to set the interval at which the Automatic Precision will change. \n"
+"The Precision will decrease as brush size increases."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:252
 msgid ""
 "Precision Level 1 (fastest)\n"
 "Subpixel precision: disabled\n"
@@ -7223,7 +7874,7 @@ msgstr ""
 "\n"
 "Өте үлкен қылқаламдарға қолайлы"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:243
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:260
 msgid ""
 "Precision Level 2\n"
 "Subpixel precision: disabled\n"
@@ -7237,7 +7888,7 @@ msgstr ""
 "\n"
 "Үлкен қылқаламдарға қолайлы"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:251
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:268
 msgid ""
 "Precision Level 3\n"
 "Subpixel precision: disabled\n"
@@ -7247,7 +7898,7 @@ msgstr ""
 "Субпикселдік дәлдігі: жоқ\n"
 "Қылқалам өлшем дәлдігі: нақты"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:257
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:274
 msgid ""
 "Precision Level 4 (optimal)\n"
 "Subpixel precision: 50%\n"
@@ -7261,7 +7912,7 @@ msgstr ""
 "\n"
 "Жылдамдылығы 5-деңгейімен салыстырғанда 50% артық"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:265
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:282
 msgid ""
 "Precision Level 5 (best quality)\n"
 "Subpixel precision: exact\n"
@@ -7359,14 +8010,14 @@ msgstr "Күңгірттеу"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:39
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:29
-#: ui/forms/wdgnewimage.ui:417
+#: ui/forms/wdgnewimage.ui:455
 msgid "Transparent"
 msgstr "Мөлдір"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:40
 #: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:30
-#: ui/forms/wdgnewimage.ui:452
+#: ui/forms/wdgnewimage.ui:490
 msgid "Opaque"
 msgstr "Мөлдірсіздік"
 
@@ -7502,43 +8153,50 @@ msgstr "Осал"
 msgid "Strong"
 msgstr "Күшті"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:76
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:81
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "Random offset"
+msgid "Random Offset"
+msgstr "Кездейсоқ шегіну"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:84
 msgid "Horizontal Offset:"
 msgstr "Жатық шегініс:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:80
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:92
 msgid "Vertical Offset:"
 msgstr "Тік шегініс:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:85
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
 msgid "Multiply"
 msgstr "Көбейту"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:85
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
 msgid "Subtract"
 msgstr "Алып тастау"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:87
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:99
 msgid "Texturing Mode:"
 msgstr "Текстуралау режімі:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 msgid "Cut Off Disabled"
 msgstr "Кесіп тастауы бұғатталған"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 msgid "Cut Off Brush"
 msgstr "Кесіп тастау қылқаламы"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:93
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 msgid "Cut Off Pattern"
 msgstr "Кесіп тастау өрнегі"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:95
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:107
 msgid "Cutoff Policy:"
 msgstr "Кесіп тастау ережесі:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:101
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:113
 msgid ""
 "When pattern texture values are outside the range specified by the slider, "
 "the cut-off policy will be applied."
@@ -7546,11 +8204,11 @@ msgstr ""
 "Текстура өрнегі жүгірткімен келтірілген мәнінен асқанда кесіп тастау ережесі "
 "қолданылады."
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:103
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:115
 msgid "Cutoff:"
 msgstr "Кесіп тастау:"
 
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:107
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:119
 msgid "Invert Texture:"
 msgstr "Текстураны терістеу:"
 
@@ -7571,10 +8229,6 @@ msgstr "%1 пкс"
 msgid "Fan Corners"
 msgstr "Желпуіш секілді бұрыштар"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:31
-msgid "0"
-msgstr "0"
-
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:66
 #, kde-format
 msgid "%1"
@@ -7582,7 +8236,7 @@ msgstr "%1"
 
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fuzzy.cpp:38
 msgid ""
-"Positve and\n"
+"Positive and\n"
 "Negative\n"
 "Rotation"
 msgstr ""
@@ -8298,6 +8952,284 @@ msgstr "Итерациялары:"
 msgid "Gravity:"
 msgstr "Гравитация:"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgResourceManager)
+#: plugins/paintops/resourcemanager/dlg_resourcemanager.cpp:32
+#: plugins/paintops/resourcemanager/wdg_resourcemanager.ui:14
+#, fuzzy
+#| msgid "&Resources"
+msgid "Manage Resources"
+msgstr "&Ресурстар"
+
+#. i18n: ectx: property (windowTitle), widget (QMainWindow, KoResourceManagerWidget)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:14
+#, fuzzy
+#| msgid "Maintainer"
+msgid "MainWindow"
+msgstr "Жетілдірушісі"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:43
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:956
+#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
+msgid "All"
+msgstr "Бүкіл"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:48
+msgid "Bundles"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveBrushes)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:53
+#: ui/forms/wdgdlgblacklistcleanup.ui:113
+msgid "Brushes"
+msgstr "Қылқаламдар"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveGradients)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:58
+#: ui/forms/wdgdlgblacklistcleanup.ui:73 ui/kis_control_frame.cpp:87
+#: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
+msgid "Gradients"
+msgstr "Градиенттер"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:63
+#, fuzzy
+#| msgid "Edit Presets"
+msgid "Pt. Presets"
+msgstr "Дайындарын өзгерту"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:78
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
+msgid "Workspaces"
+msgstr "Жұмыс кеңістігі"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:159
+#, fuzzy
+#| msgid "Available Presets"
+msgid "Available"
+msgstr "Бар Дайындары"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:200
+#, fuzzy
+#| msgid "Uninstall"
+msgid "Installed"
+msgstr "Орнатудан шығару"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:238
+msgid "Blacklist"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:276
+msgid "Downloads"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:314
+#: ui/kis_composite_ops_model.cc:30
+msgid "Favorites"
+msgstr "Таңдамалылар"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_2)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:393
+#, fuzzy
+#| msgid "&Create"
+msgid "Create Set"
+msgstr "Құр&у"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:431
+#, fuzzy
+#| msgid "Confirm"
+msgid "Configure"
+msgstr "Құптау"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_6)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:438
+#: ui/kis_palette_manager.cpp:126
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
+msgid "Details"
+msgstr "Егжей-тегжейі"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_7)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:458
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:908
+#, fuzzy
+#| msgid "Uninstall"
+msgid "Install"
+msgstr "Орнатудан шығару"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_8)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:465
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:913
+msgid "Uninstall"
+msgstr "Орнатудан шығару"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButtonDelete)
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_9)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:485
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:938
+#: ui/forms/wdgbookmarkedconfigurationseditor.ui:50
+msgid "Delete"
+msgstr "Жою"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:655
+msgid "Website"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:695
+#, fuzzy
+#| msgid "&Create"
+msgid "Created"
+msgstr "Құр&у"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:702
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:988
+msgid "License"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:709
+msgid "Tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:716
+#, fuzzy
+#| msgid "Update"
+msgid "Updated"
+msgstr "Жаңарту"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:726
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:980
+#: ui/dialogs/kis_dlg_preferences.cc:701
+msgid "Author"
+msgstr "Авторы"
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:749
+msgid "www.krita.fr"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, lineEdit_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:756
+msgid "LGPL"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:778
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Add Layer"
+msgid "Add Tag"
+msgstr "Қабатты қосу"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_11)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:798
+#, fuzzy
+#| msgid "Remove"
+msgid "Remove Tag"
+msgstr "Өшіру"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton_3)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:845
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:903
+msgid "Quit"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QMenu, menuFile)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:862
+#: ui/kis_file_layer.cpp:83
+msgid "File"
+msgstr "Файл"
+
+#. i18n: ectx: property (title), widget (QMenu, menuEdit)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:873
+msgid "Edit"
+msgstr "Өңдеу"
+
+#. i18n: ectx: property (title), widget (QMenu, menu)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:887
+msgid "?"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:898
+#, fuzzy
+#| msgid "Cleanup resource files"
+msgid "Create Resources Set"
+msgstr "Ресурс файлдарын тазалап босату"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:918
+msgid "About ResManager"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:923
+#, fuzzy
+#| msgid "Import Image"
+msgid "Import"
+msgstr "Кескінді импорттау"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:928
+msgid "Export"
+msgstr "Экспорт"
+
+#. i18n: ectx: property (text), widget (KPushButton, renameButton)
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:933
+#: ui/input/config/kis_edit_profiles_dialog.ui:17
+msgid "Rename"
+msgstr "Атауын өзгерту"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:943
+msgid "Undo"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:948
+msgid "Redo"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:964
+msgid "Name"
+msgstr "Атауы"
+
+#. i18n: ectx: property (text), widget (QStatusBar, statusbar)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:972
+msgid "Tag"
+msgstr ""
+
+#: plugins/paintops/resourcemanager/resourcemanager.cpp:37
+#, fuzzy
+#| msgid "Resource Tagging"
+msgid "Resource Manager..."
+msgstr "Ресурс белгілері"
+
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/paintops/sketch/kis_density_option.cpp:23
@@ -8365,6 +9297,12 @@ msgstr "Қалыптың динамикасы"
 msgid "Spray shape"
 msgstr "Бүрку дақ қалыпы"
 
+#: plugins/paintops/spray/kis_sprayop_option.cpp:37
+#, fuzzy
+#| msgid "Spray shape"
+msgid "Spray area"
+msgstr "Бүрку дақ қалыпы"
+
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
 msgid "Spray brush"
 msgstr "Бүркіш қылқаламы"
@@ -8429,15 +9367,15 @@ msgstr "Көмекші жабысқақтық"
 msgid "Paint with brushes"
 msgstr "Қылқаламмен бояу"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:253
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:248
 msgid "Cannot pick a color as no layer is active."
 msgstr "Белсенді қабат жоқтығынан түсті таңдауға болмайды."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:258
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:253
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr "Белсенді қабат жасырын болғандықтан түсті таңдауға болмайды."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:299
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:294
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr "%1 палитра файл жазылмады. Бәлкім ол тек оқу үшін деп белгіленген."
@@ -8450,25 +9388,40 @@ msgstr "Кескіннен не назардағы қабаттан түсті �
 msgid "Draw an ellipse"
 msgstr "Эллипсті салу"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:154
+#: plugins/tools/defaulttools/kis_tool_fill.cc:158
+#, fuzzy
+#| msgid "Fax mode:"
+msgid "Fast mode: "
+msgstr "Факс режімі:"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:161
+msgid ""
+"Fills area faster, but does not take composition mode into account. "
+"Selections and other extended features will also be disabled."
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:166
 msgid "Threshold: "
 msgstr "Табалдырығы: "
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:161
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:162
-msgid "Grow/shrink selection: "
-msgstr "Өсу/Тарылтуын таңдау: "
+#: plugins/tools/defaulttools/kis_tool_fill.cc:173
+#, fuzzy
+#| msgid "Grow selection by"
+msgid "Grow selection: "
+msgstr "Кеңейту жиегі"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:169
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:177
+#: plugins/tools/defaulttools/kis_tool_fill.cc:181
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:178
 msgid "Feathering radius: "
 msgstr "Ерту радиусы:"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:177
-msgid "Use pattern"
+#: plugins/tools/defaulttools/kis_tool_fill.cc:189
+#, fuzzy
+#| msgid "Use pattern"
+msgid "Use pattern:"
 msgstr "Өрнекті пайдалану"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:178
+#: plugins/tools/defaulttools/kis_tool_fill.cc:191
 msgid ""
 "When checked do not use the foreground color, but the gradient selected to "
 "fill with"
@@ -8476,16 +9429,19 @@ msgstr ""
 "Белгісі қойылса, бояу үшін таңдалған түстің орнына таңдалған градиент "
 "пайдаланады"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:181
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:191
-msgid "Limit to current layer"
+#: plugins/tools/defaulttools/kis_tool_fill.cc:194
+#, fuzzy
+#| msgid "Limit to current layer"
+msgid "Limit to current layer:"
 msgstr "Назардағы қабатпен шектелу"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:184
-msgid "Fill entire selection"
+#: plugins/tools/defaulttools/kis_tool_fill.cc:198
+#, fuzzy
+#| msgid "Fill entire selection"
+msgid "Fill entire selection:"
 msgstr "Таңдағанды толық толтыру"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:185
+#: plugins/tools/defaulttools/kis_tool_fill.cc:200
 msgid ""
 "When checked do not look at the current layer colors, but just fill all of "
 "the selected area"
@@ -8493,7 +9449,7 @@ msgstr ""
 "Белгісі қойылса, назардағы қабат түстеріне қарамай, таңдалған аумақты "
 "түгелдей бояумен толтырады"
 
-#: plugins/tools/defaulttools/kis_tool_fill.h:84
+#: plugins/tools/defaulttools/kis_tool_fill.h:92
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr "Біртұтас біртүсті не таңдаған аумақты бір түспен толтыру."
 
@@ -8767,14 +9723,22 @@ msgid "Select by brush"
 msgstr "Қылқаламмен таңдау"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:55
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:105
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
 msgid "Contiguous Area Selection"
 msgstr "Біртұтас аумақты таңдау"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:147
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:148
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:139
 msgid "Fuzziness: "
 msgstr "Ауытқуы: "
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:163
+msgid "Grow/shrink selection: "
+msgstr "Өсу/Тарылтуын таңдау: "
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:192
+msgid "Limit to current layer"
+msgstr "Назардағы қабатпен шектелу"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:67
 msgid "Select a contiguous area of colors"
@@ -8827,11 +9791,6 @@ msgstr "Назардағы қабатпен шектелу"
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:113
 msgid "Left"
 msgstr "Сол жақтан"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
-#: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:150
-msgid "All"
-msgstr "Бүкіл"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, m_colorLimitation)
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:155
@@ -9205,15 +10164,21 @@ msgstr "Безендірулерін көрсету"
 msgid "Work Recursively"
 msgstr "Рекурсивті істеу"
 
-#: sketch/main.cpp:56 sketch/MainWindow.cpp:81
+#: sketch/main.cpp:57 sketch/MainWindow.cpp:82
 msgid "Krita Sketch"
 msgstr "Krita Sketch"
 
-#: sketch/main.cpp:58
+#: sketch/main.cpp:59
 msgid "Krita Sketch: Painting on the Go for Artists"
 msgstr "Krita Sketch: суретшілерге жолда сурет салу үшін"
 
-#: sketch/main.cpp:70
+#: sketch/main.cpp:61
+#, fuzzy
+#| msgid "(c) 1999-2012 The Krita team and KO GmbH.\n"
+msgid "(c) 1999-2014 The Krita team and KO GmbH.\n"
+msgstr "(c) 1999-2013 Krita тобы және KO GmbH.\n"
+
+#: sketch/main.cpp:71
 msgid "Open sketch in a window, otherwise defaults to full-screen"
 msgstr ""
 
@@ -9221,39 +10186,39 @@ msgstr ""
 msgid "Select All"
 msgstr "Бүкілін таңдау"
 
-#: ui/actions/kis_selection_action_factories.cpp:260
+#: ui/actions/kis_selection_action_factories.cpp:261
 msgid "Cut"
 msgstr "Қиып алу"
 
-#: ui/actions/kis_selection_action_factories.cpp:260
+#: ui/actions/kis_selection_action_factories.cpp:261
 msgid "Copy"
 msgstr "Көшіріп алу"
 
-#: ui/actions/kis_selection_action_factories.cpp:284
+#: ui/actions/kis_selection_action_factories.cpp:285
 msgid "Copy Merged"
 msgstr "Көшіріп біріктірілген"
 
-#: ui/actions/kis_selection_action_factories.cpp:294
+#: ui/actions/kis_selection_action_factories.cpp:295
 msgid "(pasted)"
 msgstr "(орналастырған)"
 
-#: ui/actions/kis_selection_action_factories.cpp:325
+#: ui/actions/kis_selection_action_factories.cpp:326
 msgid "Pasted"
 msgstr "Орналасқан"
 
-#: ui/actions/kis_selection_action_factories.cpp:372
+#: ui/actions/kis_selection_action_factories.cpp:373
 #: ui/kis_selection_manager.cc:222
 msgid "Convert to Vector Selection"
 msgstr "Вектор таңдауына аудару"
 
-#: ui/canvas/kis_canvas_controller.cpp:184
+#: ui/canvas/kis_canvas_controller.cpp:193
 msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
 
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:651
-#: ui/dialogs/kis_dlg_preferences.cc:652
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
 msgid "Grid"
 msgstr "Тор"
 
@@ -9317,11 +10282,11 @@ msgstr "Бұл сүзгіде баптайтын параметрлері жоқ
 msgid "Cleanup resource files"
 msgstr "Ресурс файлдарын тазалап босату"
 
-#: ui/dialogs/kis_dlg_file_layer.cpp:99
+#: ui/dialogs/kis_dlg_file_layer.cpp:97
 msgid "Select file to use as dynamic file layer."
 msgstr "Динамикалық қабат файлы болатын файлын таңдау."
 
-#: ui/dialogs/kis_dlg_image_properties.cc:51
+#: ui/dialogs/kis_dlg_image_properties.cc:52
 msgid "Image Properties"
 msgstr "Кескін қасиеттері"
 
@@ -9357,81 +10322,97 @@ msgstr "Шағын дөңгелек қылқалам қалыпы"
 msgid "Brush Outline with Crosshair"
 msgstr "Айқышты қылқалам қалыпы"
 
-#: ui/dialogs/kis_dlg_preferences.cc:180
+#: ui/dialogs/kis_dlg_preferences.cc:100
+msgid "Triangle Righthanded"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:101
+msgid "Triangle Lefthanded"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:102
+#, fuzzy
+#| msgid "Brush Outline with Small Circle"
+msgid "Brush Outline with Triangle Righthanded"
+msgstr "Шағын дөңгелек қылқалам қалыпы"
+
+#: ui/dialogs/kis_dlg_preferences.cc:103
+#, fuzzy
+#| msgid "Brush Outline with Small Circle"
+msgid "Brush Outline with Triangle Lefthanded"
+msgstr "Шағын дөңгелек қылқалам қалыпы"
+
+#: ui/dialogs/kis_dlg_preferences.cc:184
 #: ui/widgets/kis_color_space_selector.cc:63
 msgid "Open Color Profile"
 msgstr "Түс профилін ашу"
 
-#: ui/dialogs/kis_dlg_preferences.cc:232
+#: ui/dialogs/kis_dlg_preferences.cc:236
 #: ui/widgets/kis_color_space_selector.cc:181
 #, fuzzy
 #| msgid "Open Color Profile"
 msgid "Install Color Profiles"
 msgstr "Түс профилін ашу"
 
-#: ui/dialogs/kis_dlg_preferences.cc:273
+#: ui/dialogs/kis_dlg_preferences.cc:276
 msgid "Monitor profile: "
 msgstr "Монитордың профилі: "
 
-#: ui/dialogs/kis_dlg_preferences.cc:278
+#: ui/dialogs/kis_dlg_preferences.cc:281
 msgid "&Monitor profile: "
 msgstr "&Монитордың профилі: "
 
-#: ui/dialogs/kis_dlg_preferences.cc:609
+#: ui/dialogs/kis_dlg_preferences.cc:631
 msgid "Preferences"
 msgstr "Баптаулары"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplayBlacklist)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
-#: ui/dialogs/kis_dlg_preferences.cc:625 ui/dialogs/kis_dlg_preferences.cc:626
+#: ui/dialogs/kis_dlg_preferences.cc:647 ui/dialogs/kis_dlg_preferences.cc:648
 #: ui/forms/wdgcolorsettings.ui:53 ui/forms/wdgdisplaysettings.ui:20
 #: ui/forms/wdgdlgblacklistcleanup.ui:20
 msgid "Display"
 msgstr "Дисплей"
 
-#: ui/dialogs/kis_dlg_preferences.cc:633
+#: ui/dialogs/kis_dlg_preferences.cc:655
 msgid "Color Management"
 msgstr "Түсін қадағалау"
 
-#: ui/dialogs/kis_dlg_preferences.cc:642 ui/dialogs/kis_dlg_preferences.cc:643
+#: ui/dialogs/kis_dlg_preferences.cc:664 ui/dialogs/kis_dlg_preferences.cc:665
 msgid "Performance"
 msgstr "Жылдамдылығы"
 
-#: ui/dialogs/kis_dlg_preferences.cc:659
+#: ui/dialogs/kis_dlg_preferences.cc:681
 msgid "Tablet settings"
 msgstr "Планшеттің параметрлері"
 
-#: ui/dialogs/kis_dlg_preferences.cc:660
+#: ui/dialogs/kis_dlg_preferences.cc:682
 msgid "Tablet"
 msgstr "Планшет"
 
-#: ui/dialogs/kis_dlg_preferences.cc:668
+#: ui/dialogs/kis_dlg_preferences.cc:690
 msgid "Canvas-only settings"
 msgstr "Тек өріс баптаулары"
 
-#: ui/dialogs/kis_dlg_preferences.cc:669
+#: ui/dialogs/kis_dlg_preferences.cc:691
 msgid "Canvas-only"
 msgstr "Тек өріс"
 
-#: ui/dialogs/kis_dlg_preferences.cc:678
+#: ui/dialogs/kis_dlg_preferences.cc:700
 msgctxt "@title:tab Author page"
 msgid "Author"
 msgstr "Авторы"
 
-#: ui/dialogs/kis_dlg_preferences.cc:679
-msgid "Author"
-msgstr "Авторы"
-
-#: ui/dialogs/kis_dlg_preferences.cc:683
+#: ui/dialogs/kis_dlg_preferences.cc:705
 msgid "Canvas Input Settings"
 msgstr "Өрістер кірісінің параметрлері"
 
-#: ui/dialogs/kis_dlg_preferences.cc:684
+#: ui/dialogs/kis_dlg_preferences.cc:706
 msgid "Canvas Input"
 msgstr "Өрістер кірісі"
 
-#: ui/dialogs/kis_dlg_preferences.cc:786
+#: ui/dialogs/kis_dlg_preferences.cc:808
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -9681,11 +10662,6 @@ msgstr "Орнатылғандарын өзгерту"
 msgid "Bookmark current"
 msgstr "Назардағыны бетбелгілеу"
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonDelete)
-#: ui/forms/wdgbookmarkedconfigurationseditor.ui:50
-msgid "Delete"
-msgstr "Жою"
-
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgColorSettings)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgTabletSettings)
 #: ui/forms/wdgcolorsettings.ui:14 ui/forms/wdgtabletsettings.ui:20
@@ -9907,19 +10883,26 @@ msgstr "Дайын өрнектерге қ&осу"
 msgid "Canvas border"
 msgstr "Өрісінің жиегі"
 
+#. i18n: ectx: property (text), widget (QCheckBox, hideScrollbars)
+#: ui/forms/wdgdisplaysettings.ui:58
+#, fuzzy
+#| msgid "Scrollbars"
+msgid "Hide Scrollbars"
+msgstr "Жүгірткілері"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpCheckers)
-#: ui/forms/wdgdisplaysettings.ui:61
+#: ui/forms/wdgdisplaysettings.ui:71
 msgid "Transparency Checkboxes"
 msgstr "Дойбы торының мөлдірлігі"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:132
+#: ui/forms/wdgdisplaysettings.ui:142
 msgid "If checked, the checkers will move when scrolling the canvas."
 msgstr ""
 "Белгісі қойылса, өрісін жүгірткенде, дойбы тақта тәрізді тор бірге жүгіреді."
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:135
+#: ui/forms/wdgdisplaysettings.ui:145
 msgid ""
 "Determines whether the checks will stay put or whether they will scroll "
 "together with the canvas"
@@ -9928,32 +10911,74 @@ msgstr ""
 "анықтау"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkMoving)
-#: ui/forms/wdgdisplaysettings.ui:138
+#: ui/forms/wdgdisplaysettings.ui:148
 msgid "&Move checkers when scrolling"
 msgstr "&Жүгірткенде дойбы тақта торы бірге жылжысын"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/forms/wdgdisplaysettings.ui:151
+#: ui/forms/wdgdisplaysettings.ui:161
 msgid "Miscellaneous"
 msgstr "Түрлі басқа"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkChannelsAsColor)
-#: ui/forms/wdgdisplaysettings.ui:157
+#: ui/forms/wdgdisplaysettings.ui:167
 msgid "Color Channels in Color"
 msgstr "Түстегі түс арналары"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkCurveAntialiasing)
-#: ui/forms/wdgdisplaysettings.ui:167
+#: ui/forms/wdgdisplaysettings.ui:177
 msgid "Enable curve anti-aliasing"
 msgstr "Қисықтар тегістелсін"
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkSelectionOutlineAntialiasing)
+#: ui/forms/wdgdisplaysettings.ui:184
+#, fuzzy
+#| msgid "Enable curve anti-aliasing"
+msgid "Enable selection outline anti-aliasing"
+msgstr "Қисықтар тегістелсін"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpOpenGL)
-#: ui/forms/wdgdisplaysettings.ui:190
+#: ui/forms/wdgdisplaysettings.ui:207
 msgid "OpenGL"
 msgstr "OpenGL"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkDisableDoubleBuffering)
+#: ui/forms/wdgdisplaysettings.ui:213
+msgid ""
+"<html><head/><body><p>Try to disable double buffering. This makes painting "
+"more responsive, but might cause crashes with some ATI GPU/driver "
+"combinations.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkDisableDoubleBuffering)
+#: ui/forms/wdgdisplaysettings.ui:216
+msgid "Disable double buffering (needs restart)"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:230
+msgid "Nearest Neighbour"
+msgstr "Ең жақын көршісі"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:235
+msgid "Bilinear Filtering"
+msgstr "Қосызықты сүзгілеу"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:240
+msgid "Trilinear Filtering"
+msgstr "Үшсызықты сүзгілеу"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
+#: ui/forms/wdgdisplaysettings.ui:245
+#, fuzzy
+#| msgid "Bilinear Filtering"
+msgid "High Quality Filtering"
+msgstr "Қосызықты сүзгілеу"
+
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkUseTextureBuffer)
-#: ui/forms/wdgdisplaysettings.ui:196
+#: ui/forms/wdgdisplaysettings.ui:253
 msgid ""
 "<html><head/><body><p>Use Texture Buffering. This can be faster on some GPU/"
 "Driver combinations (like Intel) or broken on some others (like AMD/Radeon)."
@@ -9964,46 +10989,32 @@ msgstr ""
 "істемейді.</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkUseTextureBuffer)
-#: ui/forms/wdgdisplaysettings.ui:199
+#: ui/forms/wdgdisplaysettings.ui:256
 msgid "Use Texture Buffer"
 msgstr "Текстура буферін қолдану"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbUseOpenGL)
-#: ui/forms/wdgdisplaysettings.ui:206
+#: ui/forms/wdgdisplaysettings.ui:263
 msgid "Enable OpenGL"
 msgstr "OpenGL рұқсат етілсін"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:220
-msgid "Nearest Neighbour"
-msgstr "Ең жақын көршісі"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:225
-msgid "Bilinear Filtering"
-msgstr "Қосызықты сүзгілеу"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:230
-msgid "Trilinear Filtering"
-msgstr "Үшсызықты сүзгілеу"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFilterMode)
-#: ui/forms/wdgdisplaysettings.ui:235
-#, fuzzy
-#| msgid "Bilinear Filtering"
-msgid "High Quality Filtering"
-msgstr "Қосызықты сүзгілеу"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/forms/wdgdisplaysettings.ui:243
+#: ui/forms/wdgdisplaysettings.ui:273
 msgid "Scaling Mode:"
 msgstr "Масштабтау режімі:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:253
-msgid "Workspaces"
-msgstr "Жұмыс кеңістігі"
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkDisableVsync)
+#: ui/forms/wdgdisplaysettings.ui:280
+msgid ""
+"<html><head/><body><p>Try to disable vsync for Krita. This makes painting "
+"more responsive. Uncheck only when experiencing crashes with some GPU/driver "
+"combinations.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkDisableVsync)
+#: ui/forms/wdgdisplaysettings.ui:283
+msgid "Disable vsync (needs restart)"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: ui/forms/wdgdlgblacklistcleanup.ui:55
@@ -10041,12 +11052,6 @@ msgstr ""
 "Масштабтағанда үшсызықты сүзгіні қолдану. Бұны рұқсат етпесе бояу жылдамдығы "
 "көтерілу мүмкін."
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveGradients)
-#: ui/forms/wdgdlgblacklistcleanup.ui:73 ui/kis_control_frame.cpp:87
-#: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
-msgid "Gradients"
-msgstr "Градиенттер"
-
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemovePresets)
 #: ui/forms/wdgdlgblacklistcleanup.ui:93
 msgid "Presets"
@@ -10056,11 +11061,6 @@ msgstr "Дайындары"
 #: ui/forms/wdgdlgblacklistcleanup.ui:103
 msgid "Colorsets"
 msgstr "Түстер жиындары"
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbRemoveBrushes)
-#: ui/forms/wdgdlgblacklistcleanup.ui:113
-msgid "Brushes"
-msgstr "Қылқаламдар"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: ui/forms/wdgdlgfilelayer.ui:23 ui/forms/wdgdlggeneratorlayer.ui:19
@@ -10088,7 +11088,7 @@ msgstr "Тегістемеу"
 #: ui/forms/wdgdlgfilelayer.ui:82
 #, fuzzy
 #| msgid "Scale Image"
-msgid "Scale to Image SIze"
+msgid "Scale to Image Size"
 msgstr "Кескінді масштабтау"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioScalePPI)
@@ -10273,6 +11273,19 @@ msgid ""
 "of the layers, use Convert Image Colorspace.</p></body></html>"
 msgstr ""
 
+#. i18n: ectx: property (title), widget (QGroupBox, grpAnnotations)
+#: ui/forms/wdgimageproperties.ui:139
+#, fuzzy
+#| msgid "Rotation"
+msgid "Annotations"
+msgstr "Бұрылыс"
+
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#. i18n: ectx: property (text), widget (QLabel, lblVersion)
+#: ui/forms/wdgimageproperties.ui:163 wdgsplash.ui:340
+msgid "TextLabel"
+msgstr "ЖарлықЖазуы"
+
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #: ui/forms/wdglayerproperties.ui:25 ui/forms/wdgnewimage.ui:22
@@ -10281,7 +11294,7 @@ msgstr "&Атауы:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: ectx: property (text), widget (QLabel, lblOpacity)
-#: ui/forms/wdglayerproperties.ui:41 ui/forms/wdgnewimage.ui:392
+#: ui/forms/wdglayerproperties.ui:41 ui/forms/wdgnewimage.ui:430
 msgid "&Opacity:"
 msgstr "&Мөлдірсіздігі:"
 
@@ -10441,23 +11454,30 @@ msgstr "Мазмұны"
 msgid "C&anvas color:"
 msgstr "Ө&рісінің түсі:"
 
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ui/forms/wdgnewimage.ui:410
+#, fuzzy
+#| msgid "Number of tiles"
+msgid "Number of layers:"
+msgstr "Блоктардың саны"
+
 #. i18n: ectx: property (toolTip), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:427
+#: ui/forms/wdgnewimage.ui:465
 msgid "Opacity of the background color"
 msgstr "Ая түсінің мөлдірсіздігі"
 
 #. i18n: ectx: property (whatsThis), widget (QSlider, sliderOpacity)
-#: ui/forms/wdgnewimage.ui:430
+#: ui/forms/wdgnewimage.ui:468
 msgid "Opacity of the background color."
 msgstr "Ая түсінің мөлдірсіздігі."
 
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: ui/forms/wdgnewimage.ui:462
+#: ui/forms/wdgnewimage.ui:500
 msgid "&Description:"
 msgstr "&Сипаттамасы:"
 
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: ui/forms/wdgnewimage.ui:520
+#: ui/forms/wdgnewimage.ui:551
 msgid "&Create"
 msgstr "Құр&у"
 
@@ -10689,11 +11709,6 @@ msgstr ""
 #| msgid "Reset All Rings"
 msgid "Reset All Profiles"
 msgstr "Бүкіл шеңберлерін ысыру"
-
-#. i18n: ectx: property (text), widget (KPushButton, renameButton)
-#: ui/input/config/kis_edit_profiles_dialog.ui:17
-msgid "Rename"
-msgstr "Атауын өзгерту"
 
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
 #: ui/input/config/kis_edit_profiles_dialog.ui:30
@@ -11013,7 +12028,7 @@ msgstr ""
 msgid "Confirm"
 msgstr "Құптау"
 
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:557
+#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:562
 msgid "Cancel"
 msgstr "Қайту"
 
@@ -11045,211 +12060,213 @@ msgstr "Парақ бетіне шақтау"
 msgid "Fit to Width"
 msgstr "Еніне шақтау"
 
-#: ui/kis_aboutdata.h:62
-msgid "(c) 1999-2013 The Krita team.\n"
+#: ui/kis_aboutdata.h:48
+#, fuzzy, kde-format
+#| msgid "(c) 1999-2013 The Krita team.\n"
+msgid "© 1999-%1, The Krita Team"
 msgstr "(c) 1999-2013 Krita тобы.\n"
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:53
 msgid "Adrian Page"
 msgstr "Adrian Page"
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:54
 msgid "Adam Celarek"
 msgstr "Adam Celarek"
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:55
 msgid "Alan Horkan"
 msgstr "Alan Horkan"
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:56
 msgid "Bart Coppens"
 msgstr "Bart Coppens"
 
-#: ui/kis_aboutdata.h:72
+#: ui/kis_aboutdata.h:58
 msgid "David Revoy"
 msgstr "David Revoy"
 
-#: ui/kis_aboutdata.h:72
+#: ui/kis_aboutdata.h:58
 msgid "Brush and palette set"
 msgstr "Қылқалам мен Палитра жиыны"
 
-#: ui/kis_aboutdata.h:73
+#: ui/kis_aboutdata.h:59
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
-#: ui/kis_aboutdata.h:74
+#: ui/kis_aboutdata.h:60
 msgid "C. Boemann"
 msgstr "C. Boemann"
 
-#: ui/kis_aboutdata.h:75
+#: ui/kis_aboutdata.h:61
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
 
-#: ui/kis_aboutdata.h:76
+#: ui/kis_aboutdata.h:62
 msgid "Cyrille Berger"
 msgstr "Cyrille Berger"
 
-#: ui/kis_aboutdata.h:77
+#: ui/kis_aboutdata.h:63
 msgid "Dirk Schoenberger"
 msgstr "Dirk Schoenberger"
 
-#: ui/kis_aboutdata.h:78
+#: ui/kis_aboutdata.h:64
 msgid "Danny Allen"
 msgstr "Danny Allen"
 
-#: ui/kis_aboutdata.h:79
+#: ui/kis_aboutdata.h:65
 msgid "Dmitry Kazakov"
 msgstr "Dmitry Kazakov"
 
-#: ui/kis_aboutdata.h:80
+#: ui/kis_aboutdata.h:66
 msgid "Edward Apap"
 msgstr "Edward Apap"
 
-#: ui/kis_aboutdata.h:81
+#: ui/kis_aboutdata.h:67
 msgid "Geoffry Song"
 msgstr "Geoffry Song"
 
-#: ui/kis_aboutdata.h:82
+#: ui/kis_aboutdata.h:68
 msgid "Hanisch Elián"
 msgstr "Hanisch Elián"
 
-#: ui/kis_aboutdata.h:83
+#: ui/kis_aboutdata.h:69
 msgid "Emanuele Tamponi"
 msgstr "Emanuele Tamponi"
 
-#: ui/kis_aboutdata.h:84
+#: ui/kis_aboutdata.h:70
 msgid "Gábor Lehel"
 msgstr "Gábor Lehel"
 
-#: ui/kis_aboutdata.h:85
+#: ui/kis_aboutdata.h:71
 msgid "Ilya Portnov"
 msgstr "Ilya Portnov"
 
-#: ui/kis_aboutdata.h:85 ui/kis_aboutdata.h:92
+#: ui/kis_aboutdata.h:71 ui/kis_aboutdata.h:78
 msgid "MyPaint shade selector"
 msgstr "MyPaint көлеңке таңдағышы"
 
-#: ui/kis_aboutdata.h:86
+#: ui/kis_aboutdata.h:72
 msgid "John Califf"
 msgstr "John Califf"
 
-#: ui/kis_aboutdata.h:87
+#: ui/kis_aboutdata.h:73
 msgid "José Luis Vergara Toloza"
 msgstr " "
 
-#: ui/kis_aboutdata.h:88
+#: ui/kis_aboutdata.h:74
 msgid "Justin Noel"
 msgstr "Justin Noel"
 
-#: ui/kis_aboutdata.h:88
+#: ui/kis_aboutdata.h:74
 msgid "Slider widget"
 msgstr "Жүгірткі виджеті"
 
-#: ui/kis_aboutdata.h:89
+#: ui/kis_aboutdata.h:75
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: ui/kis_aboutdata.h:90
+#: ui/kis_aboutdata.h:76
 msgid "Lukáš Tvrdý"
 msgstr "Lukáš Tvrdý"
 
-#: ui/kis_aboutdata.h:91
+#: ui/kis_aboutdata.h:77
 msgid "Marc Pegon"
 msgstr "Marc Pegon"
 
-#: ui/kis_aboutdata.h:92
+#: ui/kis_aboutdata.h:78
 msgid "Martin Renold"
 msgstr "Martin Renold"
 
-#: ui/kis_aboutdata.h:93
+#: ui/kis_aboutdata.h:79
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: ui/kis_aboutdata.h:94
+#: ui/kis_aboutdata.h:80
 msgid "Matus Talcik"
 msgstr "Matus Talcik"
 
-#: ui/kis_aboutdata.h:95
+#: ui/kis_aboutdata.h:81
 msgid "Melchior Franz"
 msgstr "Melchior Franz"
 
-#: ui/kis_aboutdata.h:96
+#: ui/kis_aboutdata.h:82
 msgid "Michael Koch"
 msgstr "Michael Koch"
 
-#: ui/kis_aboutdata.h:97
+#: ui/kis_aboutdata.h:83
 msgid "Michael Thaler"
 msgstr "Michael Thaler"
 
-#: ui/kis_aboutdata.h:98
+#: ui/kis_aboutdata.h:84
 msgid "Øyvind Kolås"
 msgstr "Øyvind Kolås"
 
-#: ui/kis_aboutdata.h:98
+#: ui/kis_aboutdata.h:84
 msgid "Wiseguy"
 msgstr "Дана ғой"
 
-#: ui/kis_aboutdata.h:99
+#: ui/kis_aboutdata.h:85
 msgid "Patrick Julien"
 msgstr "Patrick Julien"
 
-#: ui/kis_aboutdata.h:100
+#: ui/kis_aboutdata.h:86
 msgid "Peter Sikking"
 msgstr "Peter Sikking"
 
-#: ui/kis_aboutdata.h:100
+#: ui/kis_aboutdata.h:86
 msgid "Vision master"
 msgstr "Дезайнің жартушісі"
 
-#: ui/kis_aboutdata.h:101
+#: ui/kis_aboutdata.h:87
 msgid "Roger Larsson"
 msgstr "Roger Larsson"
 
-#: ui/kis_aboutdata.h:102
+#: ui/kis_aboutdata.h:88
 msgid "Samy Lange"
 msgstr "Samy Lange"
 
-#: ui/kis_aboutdata.h:103
+#: ui/kis_aboutdata.h:89
 msgid "Silvio Heinrich"
 msgstr "Silvio Heinrich"
 
-#: ui/kis_aboutdata.h:104
+#: ui/kis_aboutdata.h:90
 msgid "Sven Langkamp"
 msgstr "Sven Langkamp"
 
-#: ui/kis_aboutdata.h:105
+#: ui/kis_aboutdata.h:91
 msgid "Timothée Giet"
 msgstr "Timothée Giet"
 
-#: ui/kis_aboutdata.h:105
+#: ui/kis_aboutdata.h:91
 msgid "BD Artist, brush presets and templates"
 msgstr "BD суретшісі, қылқаламдар мен үлгілерін құрастырушысы"
 
-#: ui/kis_aboutdata.h:106
+#: ui/kis_aboutdata.h:92
 msgid "Toshitaka Fujioka"
 msgstr "Toshitaka Fujioka"
 
-#: ui/kis_aboutdata.h:107
+#: ui/kis_aboutdata.h:93
 msgid "Thomas Zander"
 msgstr "Thomas Zander"
 
-#: ui/kis_aboutdata.h:108
+#: ui/kis_aboutdata.h:94
 msgid "Tom Burdick"
 msgstr "Tom Burdick"
 
-#: ui/kis_aboutdata.h:109
+#: ui/kis_aboutdata.h:95
 msgid "Vera Lukman"
 msgstr "Vera Lukman"
 
-#: ui/kis_aboutdata.h:110
+#: ui/kis_aboutdata.h:96
 msgid "Sander Koning"
 msgstr "Sander Koning"
 
-#: ui/kis_aboutdata.h:111
+#: ui/kis_aboutdata.h:97
 msgid "Andreas Lundin"
 msgstr "Andreas Lundin"
 
-#: ui/kis_aboutdata.h:112
+#: ui/kis_aboutdata.h:98
 msgid "Siddharth Sharma"
 msgstr "Siddharth Sharma"
 
@@ -11257,6 +12274,12 @@ msgstr "Siddharth Sharma"
 #, kde-format
 msgid "New configuration %1"
 msgstr "%1 жаңа баптауы"
+
+#: ui/kis_bookmarked_configurations_model.cc:68
+#, fuzzy
+#| msgid "Last used"
+msgid "Last Used"
+msgstr "Соңғы пайдаланған"
 
 #: ui/kis_canvas_controls_manager.cpp:47
 msgid "Make brush color lighter"
@@ -11308,10 +12331,6 @@ msgstr "&Вебтегідей"
 msgid "As on &Monitor"
 msgstr "&Монитордағыдай"
 
-#: ui/kis_composite_ops_model.cc:30
-msgid "Favorites"
-msgstr "Таңдамалылар"
-
 #: ui/kis_control_frame.cpp:79 ui/kis_control_frame.cpp:80
 msgid "Fill Patterns"
 msgstr "Өрнекпен толтыру"
@@ -11336,7 +12355,7 @@ msgstr "&Суретшінің құралдары"
 msgid "Custom Pattern"
 msgstr "Өзгеше өрнектер"
 
-#: ui/kis_custom_pattern.cc:169
+#: ui/kis_custom_pattern.cc:168
 msgid ""
 "The current image is too big to create a pattern. The pattern will be scaled "
 "down."
@@ -11345,10 +12364,6 @@ msgstr "Назардағы кескін өрнек жасау үшін тым ү
 #: ui/kis_doc2.cc:407 ui/kis_part2.cpp:129 ui/kis_part2.cpp:144
 msgid "unnamed"
 msgstr "аталмаған"
-
-#: ui/kis_file_layer.cpp:83
-msgid "File"
-msgstr "Файл"
 
 #: ui/kis_filter_manager.cc:86
 msgid "Apply Filter Again"
@@ -11398,63 +12413,69 @@ msgstr "Кескінді &біріктіру"
 msgid "&Flatten Layer"
 msgstr "Қабатты &біріктіру"
 
-#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:294
+#, fuzzy
+#| msgid "Delete current layer"
+msgid "Rename current layer"
+msgstr "Назардағы қабатты өшіру"
+
+#: ui/kis_layer_manager.cc:300 ui/kis_layer_manager.cc:785
 msgid "Rasterize Layer"
 msgstr "Қабатты нүктелеу"
 
-#: ui/kis_layer_manager.cc:300
+#: ui/kis_layer_manager.cc:306
 msgid "Save Group Layers..."
 msgstr "Қабат тобын сақтау..."
 
-#: ui/kis_layer_manager.cc:304
+#: ui/kis_layer_manager.cc:310
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Өрісінің өлшемін назардағы қабатына шақтау"
 
-#: ui/kis_layer_manager.cc:359
+#: ui/kis_layer_manager.cc:365
 msgid "Filter Layer Properties"
 msgstr "Сүзгілеу қабатың қасиеттері"
 
-#: ui/kis_layer_manager.cc:404
+#: ui/kis_layer_manager.cc:410
 msgid "Generator Layer Properties"
 msgstr "Генератор қабаттың қасиеттері"
 
-#: ui/kis_layer_manager.cc:485
+#: ui/kis_layer_manager.cc:491
 msgid "Convert to a Paint Layer"
 msgstr "Бояу қабатына аудару"
 
-#: ui/kis_layer_manager.cc:564
+#: ui/kis_layer_manager.cc:570
 msgid "New Filter Layer"
 msgstr "Жаңа сүзгілеу қабаты"
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:629
 msgid "Could not add layer to image."
 msgstr "Кескінге қабат қосылмады."
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:629
 msgid "Layer Error"
 msgstr "Қабат қатесі"
 
-#: ui/kis_layer_manager.cc:709
+#: ui/kis_layer_manager.cc:715
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескін жасырын қабаттарын жоғалтпақ."
 
-#: ui/kis_layer_manager.cc:711
+#: ui/kis_layer_manager.cc:717
 msgid "&Flatten Image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:821
 msgid "Convert Invisible Groups"
 msgstr "Көрінбейтін топтарды аудару"
 
-#: ui/kis_layer_manager.cc:818
+#: ui/kis_layer_manager.cc:824
 msgid "Export Only Toplevel Groups"
 msgstr "Тек жоғарғы деңгейлі топтарды экспорттау"
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:882
 msgid "No file name specified."
 msgstr "Файл атауы келтірілмеген."
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:882
 msgid "No file specified"
 msgstr "Файл келтірілмеген"
 
@@ -11723,11 +12744,6 @@ msgstr "Таңдамалы дайындары"
 msgid "Thumbnails"
 msgstr "Нобайлары"
 
-#: ui/kis_palette_manager.cpp:126
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
-msgid "Details"
-msgstr "Егжей-тегжейі"
-
 #: ui/kis_part2.cpp:109
 msgid ""
 "The Calligra LittleCMS color management plugin is not installed. Krita will "
@@ -11747,7 +12763,7 @@ msgstr "Кинеографтар"
 msgid "Installation error"
 msgstr "Орнату қатесі"
 
-#: ui/kis_selection_decoration.cc:44
+#: ui/kis_selection_decoration.cc:45
 msgid "Selection decoration"
 msgstr "Таңдалғанның ерекшелеуі"
 
@@ -11824,89 +12840,89 @@ msgstr "Таңдауы жоқ"
 msgid "No profile"
 msgstr "Профилі жоқ"
 
-#: ui/kis_view2.cpp:288
+#: ui/kis_view2.cpp:289
 msgid "Save Incremental &Version"
 msgstr "Инкременттік &нұсқасын сақтау"
 
-#: ui/kis_view2.cpp:293
+#: ui/kis_view2.cpp:294
 msgid "Save Incremental Backup"
 msgstr "Инкременттік сақтық сақтау"
 
-#: ui/kis_view2.cpp:306
+#: ui/kis_view2.cpp:307
 msgid "Total Refresh"
 msgstr "Жалпы жаңарту"
 
-#: ui/kis_view2.cpp:312
+#: ui/kis_view2.cpp:313
 msgid "Toggle Tablet Debugger"
 msgstr "Планшет жөндегіш күйін ауыстыру"
 
-#: ui/kis_view2.cpp:317
+#: ui/kis_view2.cpp:318
 msgid "&Create Template From Image..."
 msgstr "Кескіннен үлгі &жасау..."
 
-#: ui/kis_view2.cpp:321
+#: ui/kis_view2.cpp:322
 msgid "Mirror View"
 msgstr "Шағылыстырған көрінісі"
 
-#: ui/kis_view2.cpp:327
+#: ui/kis_view2.cpp:328
 #, fuzzy
 #| msgid "Cleanup resource files"
 msgid "Open Resources Folder"
 msgstr "Ресурс файлдарын тазалап босату"
 
-#: ui/kis_view2.cpp:328 ui/kis_view2.cpp:329
+#: ui/kis_view2.cpp:329 ui/kis_view2.cpp:330
 msgid ""
 "Opens a file browser at the location Krita saves resources such as brushes "
 "to."
 msgstr ""
 
-#: ui/kis_view2.cpp:333
+#: ui/kis_view2.cpp:334
 msgid "Rotate Canvas Right"
 msgstr "Өрісті оңға бұру"
 
-#: ui/kis_view2.cpp:338
+#: ui/kis_view2.cpp:339
 msgid "Rotate Canvas Left"
 msgstr "Өрісті солға бұру"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:344
 msgid "Reset Canvas Transformations"
 msgstr "Өрістің түрлендірулерін ысырып тастау"
 
-#: ui/kis_view2.cpp:348
+#: ui/kis_view2.cpp:349
 msgid "Wrap Around Mode"
 msgstr "Айнала өту режімі"
 
-#: ui/kis_view2.cpp:353
+#: ui/kis_view2.cpp:354
 msgid "Show Status Bar"
 msgstr "Күй-жай жолағын көрсету"
 
-#: ui/kis_view2.cpp:354
+#: ui/kis_view2.cpp:355
 msgid "Hide Status Bar"
 msgstr "Күй-жай жолағын жасыру"
 
-#: ui/kis_view2.cpp:356
+#: ui/kis_view2.cpp:357
 msgid "Shows or hides the status bar"
 msgstr "Күй-жай жолағын көрсету/жасыру"
 
-#: ui/kis_view2.cpp:360
+#: ui/kis_view2.cpp:361
 msgid "Show Canvas Only"
 msgstr "Өрістерді қана көрсету"
 
-#: ui/kis_view2.cpp:361
+#: ui/kis_view2.cpp:362
 msgid "Return to Window"
 msgstr "Терезеге қайту"
 
-#: ui/kis_view2.cpp:362
+#: ui/kis_view2.cpp:363
 msgid "Shows just the canvas or the whole window"
 msgstr "Тек өрісін не түгел терезесін көрсету"
 
-#: ui/kis_view2.cpp:456
+#: ui/kis_view2.cpp:460
 #, fuzzy
 #| msgid "Vertical border:"
 msgid "Critical Error"
 msgstr "Тік жиегі:"
 
-#: ui/kis_view2.cpp:456
+#: ui/kis_view2.cpp:460
 #, fuzzy
 #| msgid "ColorSpace %1 %2 is not available, please check your installation."
 msgid ""
@@ -11914,31 +12930,31 @@ msgid ""
 "installation."
 msgstr "%1 %2 түстер кеңістігі табылған жоқ, орнатылғанын тексеріңіз."
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:554
 msgid "Insert as New Layer"
 msgstr "Жаңа қабат ретінде енгізу"
 
-#: ui/kis_view2.cpp:550
+#: ui/kis_view2.cpp:555
 msgid "Insert Many Layers"
 msgstr "Көп қабаттарды енгізу"
 
-#: ui/kis_view2.cpp:552
+#: ui/kis_view2.cpp:557
 msgid "Open in New Document"
 msgstr "Жаңа құжатта ашу"
 
-#: ui/kis_view2.cpp:553
+#: ui/kis_view2.cpp:558
 msgid "Open Many Documents"
 msgstr "Көп құжаттарды ашу"
 
-#: ui/kis_view2.cpp:555
+#: ui/kis_view2.cpp:560
 msgid "Replace Current Document"
 msgstr "Назардағы құжатты ауыстыру"
 
-#: ui/kis_view2.cpp:940
+#: ui/kis_view2.cpp:945
 msgid "Cleanup removed files..."
 msgstr "Өшірілген файлдарын тазалау..."
 
-#: ui/kis_view2.cpp:1512
+#: ui/kis_view2.cpp:1511
 #, kde-format
 msgid ""
 "Going into Canvas-Only mode.\n"
@@ -11947,11 +12963,11 @@ msgstr ""
 "Тек өріс күйіне ауысу.\n"
 "Қайтарылу үшін %1 басыңыз."
 
-#: ui/kis_zoom_manager.cc:119
+#: ui/kis_zoom_manager.cc:120
 msgid "Show Rulers"
 msgstr "Өлшегіштерін көрсету"
 
-#: ui/kis_zoom_manager.cc:121
+#: ui/kis_zoom_manager.cc:122
 msgid ""
 "The rulers show the horizontal and vertical positions of the mouse on the "
 "image and can be used to position your mouse at the right place on the "
@@ -11961,7 +12977,7 @@ msgstr ""
 "тышқаныңызды керек орынға дәлдеп апаруға көмектеседі. Өшегіштерін жасырғыңыз "
 "келсе - белгісін алып тастаңыз."
 
-#: ui/kis_zoom_manager.cc:125
+#: ui/kis_zoom_manager.cc:131
 msgid "Reset zoom"
 msgstr "Үлкейту/Кішірейтуді ысыру"
 
@@ -11969,7 +12985,7 @@ msgstr "Үлкейту/Кішірейтуді ысыру"
 msgid "Iptc"
 msgstr "Iptc"
 
-#: ui/opengl/kis_opengl_canvas2.cpp:497 ui/opengl/kis_opengl_canvas2.cpp:534
+#: ui/opengl/kis_opengl_canvas2.cpp:498 ui/opengl/kis_opengl_canvas2.cpp:535
 #, kde-format
 msgid ""
 "Krita could not initialize the OpenGL canvas:\n"
@@ -12014,6 +13030,12 @@ msgstr ""
 "<i>../1</i> - назардағы қабаттың аталық қабатының астыдан екінші қабаты<br/"
 ">\n"
 "<i>./0</i> - назардағының бірінші еншілес қабаты"
+
+#: ui/tool/kis_selection_tool_helper.cpp:129
+msgid ""
+"Shape selection does not fully support wraparound mode. Please use pixel "
+"selection instead"
+msgstr ""
 
 #: ui/tool/kis_tool.cc:121
 msgid "Swap Foreground and Background Color"
@@ -12149,6 +13171,72 @@ msgstr "Жұмыс кеңістігі"
 msgid "Workspace %1"
 msgstr "%1 жұмыс кеңістігі"
 
+#. i18n: ectx: property (text), widget (QLabel, lblLinks)
+#: wdgsplash.ui:373
+#, fuzzy
+#| msgid "<html><head/><body><p>Action Description</p></body></html>"
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-weight:600;"
+"\">Links</span></p></body></html>"
+msgstr "<html><head/><body><p>Амалды сипаттау</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QLabel, lblRecent)
+#: wdgsplash.ui:389
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-weight:600;"
+"\">Recent files</span></p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowAtStartup)
+#: wdgsplash.ui:437
+msgid "Hide after startup."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, bnClose)
+#: wdgsplash.ui:444
+#, fuzzy
+#| msgid "Close"
+msgid "&Close"
+msgstr "Жабу"
+
+#~ msgid "BurnHighlights Adjustment"
+#~ msgstr "Қою жарықтерын түзету"
+
+#~ msgid "BurnMidtones Adjustment"
+#~ msgstr "Қою жарым реңктерді түзету"
+
+#~ msgid "BurnShadows Adjustment"
+#~ msgstr "Қою көлеңкелерін түзету"
+
+#~ msgid "ColorBalanceMidtones Adjustment"
+#~ msgstr "Түс балансы жарым реңктерді түзету"
+
+#, fuzzy
+#~| msgid "BurnMidtones Adjustment"
+#~ msgid "Desaturate Adjustment"
+#~ msgstr "Қою жарым реңктерді түзету"
+
+#~ msgid "DODGE Adjustment"
+#~ msgstr "DODGE түзету"
+
+#~ msgid "DodgeMidtones Adjustment"
+#~ msgstr "Dodge жарым реңктерді түзету"
+
+#~ msgid "DodgeShadows Adjustment"
+#~ msgstr "Dodge көлеңкелерін түзету"
+
+#~ msgid "Save all actions"
+#~ msgstr "Барлық амалдарды сақтау"
+
+#~ msgid "     Cyan"
+#~ msgstr "     Циан"
+
+#~ msgid "    Yellow"
+#~ msgstr "    Сары"
+
+#~ msgid "Half-Size:"
+#~ msgstr "Жарты-өлшемі:"
+
 #~ msgid "New Profile"
 #~ msgstr "Жаңа профилі"
 
@@ -12170,9 +13258,6 @@ msgstr "%1 жұмыс кеңістігі"
 #~| msgid "Can't paint on vector layer."
 #~ msgid "Can't paint on this layer."
 #~ msgstr "Векторлы қабат салынбайды."
-
-#~ msgid "Resource Tagging"
-#~ msgstr "Ресурс белгілері"
 
 #~ msgid "Backend for Tagging :"
 #~ msgstr "Белгі қою тетігі :"
@@ -12238,9 +13323,6 @@ msgstr "%1 жұмыс кеңістігі"
 #~ msgid "Feather selection by"
 #~ msgstr "Ерту жиегі"
 
-#~ msgid "Grow selection by"
-#~ msgstr "Кеңейту жиегі"
-
 #~ msgid "Shrink selection by"
 #~ msgstr "Тарылту жиегі"
 
@@ -12305,9 +13387,6 @@ msgstr "%1 жұмыс кеңістігі"
 
 #~ msgid "Print Height:"
 #~ msgstr "Басатын биіктігі:"
-
-#~ msgid "TextLabel"
-#~ msgstr "ЖарлықЖазуы"
 
 #~ msgid "&Resize"
 #~ msgstr "&Өлшемін өзгерту"
@@ -12483,9 +13562,6 @@ msgstr "%1 жұмыс кеңістігі"
 #~ msgid "Layer from Mask"
 #~ msgstr "Қалқадан қабат"
 
-#~ msgid "Delete current layer"
-#~ msgstr "Назардағы қабатты өшіру"
-
 #~ msgid ""
 #~ "Krita needs at least Qt 4.6.3 to work correctly. Your Qt version is %1. "
 #~ "If you have a graphics tablet it will not work correctly!"
@@ -12636,9 +13712,6 @@ msgstr "%1 жұмыс кеңістігі"
 
 #~ msgid "Scale"
 #~ msgstr "Масштабтау"
-
-#~ msgid "Name"
-#~ msgstr "Атауы"
 
 #~ msgid "Flow"
 #~ msgstr "Ағын"
@@ -12875,9 +13948,6 @@ msgstr "%1 жұмыс кеңістігі"
 #~ msgid "View"
 #~ msgstr "Көрініс"
 
-#~ msgid "Edit"
-#~ msgstr "Өңдеу"
-
 #~ msgid "Navigation"
 #~ msgstr "Шарлау"
 
@@ -12993,17 +14063,11 @@ msgstr "%1 жұмыс кеңістігі"
 #~ msgid "Extension Information"
 #~ msgstr "Кеңейтілім туралы"
 
-#~ msgid "Version:"
-#~ msgstr "Нұсқасы:"
-
 #~ msgid "Extensions manager"
 #~ msgstr "Кеңейтулер менеджері"
 
 #~ msgid "Install from file"
 #~ msgstr "Файлдан орнату"
-
-#~ msgid "Uninstall"
-#~ msgstr "Орнатудан шығару"
 
 #~ msgid "W: 88% V: 888 PC: 88%"
 #~ msgstr "W: 88% V: 888 PC: 88%"
@@ -14127,9 +15191,6 @@ msgstr "%1 жұмыс кеңістігі"
 #~| msgid "Magnetic Outline Selection"
 #~ msgid "Magnetic selection tool (SHIFT+E)"
 #~ msgstr "Жабысқақ сұлбаны таңдау"
-
-#~ msgid "Export"
-#~ msgstr "Экспорт"
 
 #, fuzzy
 #~| msgid "Vertical:"
