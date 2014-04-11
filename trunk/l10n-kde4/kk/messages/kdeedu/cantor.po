@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-06 01:54+0000\n"
+"POT-Creation-Date: 2014-04-11 01:57+0000\n"
 "PO-Revision-Date: 2013-11-01 23:02+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -329,9 +329,12 @@ msgstr "Айнымалы басқаруын рұқсат ету"
 #. i18n: ectx: label, entry (autorunScripts), group (PythonBackend)
 #. i18n: ectx: label, entry (autorunScripts), group (ScilabBackend)
 #. i18n: ectx: label, entry (autorunScripts), group (OctaveBackend)
+#. i18n: ectx: label, entry (autorunScripts), group (QalculateBackend)
 #: backends/maxima/maximabackend.kcfg:22 backends/octave/octavebackend.kcfg:18
-#: backends/python2/python2backend.kcfg:18 backends/R/rserver/rserver.kcfg:13
-#: backends/sage/sagebackend.kcfg:14 backends/scilab/scilabbackend.kcfg:18
+#: backends/python2/python2backend.kcfg:18
+#: backends/qalculate/qalculatebackend.kcfg:130
+#: backends/R/rserver/rserver.kcfg:13 backends/sage/sagebackend.kcfg:14
+#: backends/scilab/scilabbackend.kcfg:18
 msgid "List of scripts to autorun at the beginning of session"
 msgstr "Сеанс басында автожегілетін скрипттер тізімі"
 
@@ -396,8 +399,9 @@ msgstr "Cantor айнымалыларды құру/жоюды қадағалас
 
 #. i18n: ectx: property (title), widget (KEditListBox, kcfg_autorunScripts)
 #: backends/maxima/settings.ui:48 backends/octave/settings.ui:38
-#: backends/python2/settings.ui:38 backends/R/settings.ui:24
-#: backends/sage/settings.ui:31 backends/scilab/settings.ui:38
+#: backends/python2/settings.ui:38 backends/qalculate/settings.ui:183
+#: backends/R/settings.ui:24 backends/sage/settings.ui:31
+#: backends/scilab/settings.ui:38
 msgid "Scripts to autorun"
 msgstr "Автожегілетін скрипттер"
 
@@ -513,35 +517,35 @@ msgstr "Стилі"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:139
-#: backends/qalculate/settings.ui:497
+#: backends/qalculate/settings.ui:504
 msgid "Lines"
 msgstr "Сызықтар"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:144
-#: backends/qalculate/settings.ui:502
+#: backends/qalculate/settings.ui:509
 msgid "Points"
 msgstr "Нүктелер"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:149
-#: backends/qalculate/settings.ui:507
+#: backends/qalculate/settings.ui:514
 msgid "Points and Lines"
 msgstr "Нүктелер мен сызықтар"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:154
-#: backends/qalculate/settings.ui:512
+#: backends/qalculate/settings.ui:519
 msgid "Boxes"
 msgstr "Шаршылар"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:159
-#: backends/qalculate/settings.ui:517
+#: backends/qalculate/settings.ui:524
 msgid "Histogram"
 msgstr "Гистограмма"
 
@@ -553,14 +557,14 @@ msgstr "Баспалдақ"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:169
-#: backends/qalculate/settings.ui:527
+#: backends/qalculate/settings.ui:534
 msgid "Candlesticks"
 msgstr "Жапон шырағы"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, styleBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:174
-#: backends/qalculate/settings.ui:532
+#: backends/qalculate/settings.ui:539
 msgid "Dots"
 msgstr "Дақ нүктелер"
 
@@ -575,15 +579,15 @@ msgstr "Тегістеу"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotSmoothing)
 #. i18n: ectx: property (text), item, widget (KComboBox, smoothingBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:197
-#: backends/qalculate/settings.ui:95 backends/qalculate/settings.ui:237
-#: backends/qalculate/settings.ui:275 backends/qalculate/settings.ui:454
+#: backends/qalculate/settings.ui:95 backends/qalculate/settings.ui:244
+#: backends/qalculate/settings.ui:282 backends/qalculate/settings.ui:461
 msgid "None"
 msgstr "Жоқ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotSmoothing)
 #. i18n: ectx: property (text), item, widget (KComboBox, smoothingBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:202
-#: backends/qalculate/settings.ui:459
+#: backends/qalculate/settings.ui:466
 msgid "Monotonic"
 msgstr "Бірсарынды"
 
@@ -595,14 +599,14 @@ msgstr "Натурал кубтық сплайн"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotSmoothing)
 #. i18n: ectx: property (text), item, widget (KComboBox, smoothingBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:212
-#: backends/qalculate/settings.ui:469
+#: backends/qalculate/settings.ui:476
 msgid "Bezier"
 msgstr "Безье"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotSmoothing)
 #. i18n: ectx: property (text), item, widget (KComboBox, smoothingBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:217
-#: backends/qalculate/settings.ui:474
+#: backends/qalculate/settings.ui:481
 msgid "Bezier (monotonic)"
 msgstr "Безье (бірсарынды)"
 
@@ -669,49 +673,49 @@ msgstr "Түсіндірменің орны"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:397
-#: backends/qalculate/settings.ui:555
+#: backends/qalculate/settings.ui:562
 msgid "Hide legend"
 msgstr "Түсіндірмені жасыру"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:402
-#: backends/qalculate/settings.ui:560
+#: backends/qalculate/settings.ui:567
 msgid "Top-left"
 msgstr "Жоғары солда"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:407
-#: backends/qalculate/settings.ui:565
+#: backends/qalculate/settings.ui:572
 msgid "Top-right"
 msgstr "Жоғары оңда"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:412
-#: backends/qalculate/settings.ui:570
+#: backends/qalculate/settings.ui:577
 msgid "Bottom-left"
 msgstr "Төменгі солда"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:417
-#: backends/qalculate/settings.ui:575
+#: backends/qalculate/settings.ui:582
 msgid "Bottom-right"
 msgstr "Төменгі оңда"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:422
-#: backends/qalculate/settings.ui:580
+#: backends/qalculate/settings.ui:587
 msgid "Below"
 msgstr "Төменде"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotLegend)
 #. i18n: ectx: property (text), item, widget (KComboBox, legendBox)
 #: backends/qalculate/plotassistant/qalculateplotdialog.ui:427
-#: backends/qalculate/settings.ui:585
+#: backends/qalculate/settings.ui:592
 msgid "Outside"
 msgstr "Тыста"
 
@@ -1261,9 +1265,9 @@ msgstr "Ақырсыз тізбектерді белгілеу:"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_plotGrid)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_plotBorder)
 #: backends/qalculate/settings.ui:132 backends/qalculate/settings.ui:153
-#: backends/qalculate/settings.ui:174 backends/qalculate/settings.ui:215
-#: backends/qalculate/settings.ui:327 backends/qalculate/settings.ui:348
-#: backends/qalculate/settings.ui:369 backends/qalculate/settings.ui:390
+#: backends/qalculate/settings.ui:174 backends/qalculate/settings.ui:222
+#: backends/qalculate/settings.ui:334 backends/qalculate/settings.ui:355
+#: backends/qalculate/settings.ui:376 backends/qalculate/settings.ui:397
 msgid "Enabled"
 msgstr "Рұқсат етілсін"
 
@@ -1278,108 +1282,108 @@ msgid "Use negative exponents:"
 msgstr "Теріс дәрежелер:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: backends/qalculate/settings.ui:197
+#: backends/qalculate/settings.ui:204
 msgid "Evaluate"
 msgstr "Есептеу"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: backends/qalculate/settings.ui:205
+#: backends/qalculate/settings.ui:212
 msgid "Convert to best SI units:"
 msgstr "Лайықты СИ бірліктеріне келтіру:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: backends/qalculate/settings.ui:226
+#: backends/qalculate/settings.ui:233
 msgid "Angle unit:"
 msgstr "Бұрыш бірлігі:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_angleUnit)
-#: backends/qalculate/settings.ui:242
+#: backends/qalculate/settings.ui:249
 msgid "Radians"
 msgstr "Радиан"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_angleUnit)
-#: backends/qalculate/settings.ui:247
+#: backends/qalculate/settings.ui:254
 msgid "Degrees"
 msgstr "Градус"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_angleUnit)
-#: backends/qalculate/settings.ui:252
+#: backends/qalculate/settings.ui:259
 msgid "Gradians"
 msgstr "Градиан"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: backends/qalculate/settings.ui:264
+#: backends/qalculate/settings.ui:271
 msgid "Structuring Mode:"
 msgstr "Келтіру режімі:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_structuring)
-#: backends/qalculate/settings.ui:280
+#: backends/qalculate/settings.ui:287
 msgid "Simplify"
 msgstr "Ықшамдату"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_structuring)
-#: backends/qalculate/settings.ui:285
+#: backends/qalculate/settings.ui:292
 msgid "Factorize"
 msgstr "Көбейткіштерге жіктеу"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: backends/qalculate/settings.ui:309
+#: backends/qalculate/settings.ui:316
 msgid "Plotting"
 msgstr "Графикті сызу"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: backends/qalculate/settings.ui:317
+#: backends/qalculate/settings.ui:324
 msgid "Display plots inline:"
 msgstr "Графиктерді бірге көрсету:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_15)
-#: backends/qalculate/settings.ui:338
+#: backends/qalculate/settings.ui:345
 msgid "Colored Plots:"
 msgstr "Түрлі-түсті графиктер:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: backends/qalculate/settings.ui:359
+#: backends/qalculate/settings.ui:366
 msgid "Show grid:"
 msgstr "Торды көрсету:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: backends/qalculate/settings.ui:380
+#: backends/qalculate/settings.ui:387
 msgid "Show full borders:"
 msgstr "Толық қоршауы:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: backends/qalculate/settings.ui:401
+#: backends/qalculate/settings.ui:408
 msgid "Width of lines:"
 msgstr "Сызықтар қалыңдығы:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_18)
-#: backends/qalculate/settings.ui:422
+#: backends/qalculate/settings.ui:429
 msgid "Sampling rate:"
 msgstr "Дискреттеу жиілігі:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: backends/qalculate/settings.ui:443
+#: backends/qalculate/settings.ui:450
 msgid "Smoothing Mode:"
 msgstr "Тегістеуі:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotSmoothing)
-#: backends/qalculate/settings.ui:464
+#: backends/qalculate/settings.ui:471
 msgid "Natural cubic Splines"
 msgstr "Натурал кубтық сплайн"
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: backends/qalculate/settings.ui:486
+#: backends/qalculate/settings.ui:493
 msgid "Plot Style:"
 msgstr "График стилі:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_plotStyle)
-#: backends/qalculate/settings.ui:522
+#: backends/qalculate/settings.ui:529
 msgctxt "Plot Style"
 msgid "Steps"
 msgstr "Баспалдақ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_16)
-#: backends/qalculate/settings.ui:544
+#: backends/qalculate/settings.ui:551
 msgid "Legend Position:"
 msgstr "Түсіндірменің орны:"
 
