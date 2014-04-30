@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-11 06:54+0000\n"
+"POT-Creation-Date: 2014-04-30 06:10+0000\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -700,9 +700,13 @@ msgstr "M_05"
 msgid "M_06"
 msgstr "M_06"
 
-#: i18ndata:129 i18ndata:130
+#: i18ndata:129
 msgid "M_07"
 msgstr "M_07"
+
+#: i18ndata:130
+msgid "M_08"
+msgstr ""
 
 #: i18ndata:131
 msgid "M_09"
@@ -1218,7 +1222,7 @@ msgstr "Кескіннің түстер кеңістігін ауыстыру"
 msgid "Convert Projection Color Space"
 msgstr "Кескін проекциясының түстер кеңістігін ауыстыру"
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:710
+#: image/kis_image.cc:918 ui/kis_layer_manager.cc:704
 msgid "Flatten Image"
 msgstr "Кескінді біріктіру"
 
@@ -2595,7 +2599,7 @@ msgid "&Select Opaque"
 msgstr "Мөлдірсіздікті &таңдау"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:458
-#: ui/kis_layer_manager.cc:285
+#: ui/kis_layer_manager.cc:284
 msgid "&Merge with Layer Below"
 msgstr "Астыңғы қабатпен &біріктіру"
 
@@ -2876,7 +2880,7 @@ msgstr "50%"
 msgid "25%"
 msgstr "25%"
 
-#: plugins/extensions/dockers/imagedocker/imagedocker_dock.cpp:163
+#: plugins/extensions/dockers/imagedocker/imagedocker_dock.cpp:177
 msgid "Reference Images"
 msgstr "Эталон кескіндері"
 
@@ -6293,7 +6297,9 @@ msgid "Deform Mode"
 msgstr "Қисайған режім"
 
 #. i18n: ectx: property (text), widget (QRadioButton, growBtn)
+#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
 #: plugins/paintops/deform/wdgdeformoptions.ui:44
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:108
 msgid "Grow"
 msgstr "Өсіру"
 
@@ -8646,21 +8652,23 @@ msgstr "Қабатты жылжыту"
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:223
 #, fuzzy
 #| msgid "Show Grid"
-msgid "Show Axis"
+msgid "Show Axes"
 msgstr "Торын көрсету"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:227
-msgid "Axis point"
+#, fuzzy
+#| msgid "Axis point"
+msgid "Axes point"
 msgstr "Бойлықтар нүктесі"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:233
-msgid "Set axis angle (degrees)"
+msgid "Set axes angle (degrees)"
 msgstr ""
 
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:238
 #, fuzzy
 #| msgid "Angle:"
-msgid "Axis Angle:"
+msgid "Axes Angle:"
 msgstr "Бұрышы:"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:241
@@ -8942,24 +8950,19 @@ msgstr "Тігінен орны"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, boolCenter)
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:95
-msgid "resize keeping center fixed"
+msgid "Resize keeping center fixed"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, boolCenter)
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:98
 #, fuzzy
 #| msgid "Center:"
-msgid "center"
+msgid "Center"
 msgstr "Ортасы:"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, boolGrow)
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:105
-msgid "allow growing the image by dragging outside bounds of the image"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:108
-msgid "grow"
+msgid "Allow growing the image by dragging outside bounds of the image"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, boolWidth)
@@ -10692,17 +10695,17 @@ msgstr "Ым қимылы"
 msgid "Unknown Input"
 msgstr "Беймәлім кіріс"
 
-#: ui/input/config/kis_action_shortcuts_model.cpp:194
+#: ui/input/config/kis_action_shortcuts_model.cpp:186
 msgctxt "Type of shortcut"
 msgid "Type"
 msgstr "Түрі"
 
-#: ui/input/config/kis_action_shortcuts_model.cpp:197
+#: ui/input/config/kis_action_shortcuts_model.cpp:189
 msgctxt "Input for shortcut"
 msgid "Input"
 msgstr "Кіріс"
 
-#: ui/input/config/kis_action_shortcuts_model.cpp:200
+#: ui/input/config/kis_action_shortcuts_model.cpp:192
 msgctxt "Action to trigger with shortcut"
 msgid "Action"
 msgstr "Амал"
@@ -10758,8 +10761,11 @@ msgstr "Жоқ"
 
 #: ui/input/config/kis_input_button.cpp:140
 #: ui/input/config/kis_input_button.cpp:202
+#, fuzzy
+#| msgctxt "Waiting for user input"
+#| msgid "Input ..."
 msgctxt "Waiting for user input"
-msgid "Input ..."
+msgid "Input..."
 msgstr "Кіріс ..."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -10883,7 +10889,9 @@ msgstr ""
 "ол өлшемі."
 
 #: ui/input/kis_input_manager.cpp:490
-msgid "Set Mirror Axis"
+#, fuzzy
+#| msgid "Set Mirror Axis"
+msgid "Set Mirror Axes"
 msgstr "Шағылысу осьтерін орнату"
 
 #: ui/input/kis_pan_action.cpp:50
@@ -10954,79 +10962,121 @@ msgstr "Меңзер астындағы қабатты таңдау"
 msgid "Toggle Select Layer Mode"
 msgstr "Қабатты таңдау күйін ауыстыру"
 
-#: ui/input/kis_shortcut_configuration.cpp:238
+#: ui/input/kis_shortcut_configuration.cpp:234
+msgctxt "Separator in the list of mouse buttons for shortcut"
+msgid " + "
+msgstr ""
+
+#: ui/input/kis_shortcut_configuration.cpp:239
 msgctxt "Left Mouse Button"
 msgid "Left"
 msgstr "Солға"
 
-#: ui/input/kis_shortcut_configuration.cpp:247
+#: ui/input/kis_shortcut_configuration.cpp:248
 msgctxt "Right Mouse Button"
 msgid "Right"
 msgstr "Оңға"
 
-#: ui/input/kis_shortcut_configuration.cpp:255
+#: ui/input/kis_shortcut_configuration.cpp:256
 msgctxt "Middle Mouse Button"
 msgid "Middle"
 msgstr "Ортаға"
 
-#: ui/input/kis_shortcut_configuration.cpp:263
+#: ui/input/kis_shortcut_configuration.cpp:264
 msgctxt "Mouse Back Button"
 msgid "Back"
 msgstr "Артқа"
 
-#: ui/input/kis_shortcut_configuration.cpp:271
+#: ui/input/kis_shortcut_configuration.cpp:272
 msgctxt "Mouse Forward Button"
 msgid "Forward"
 msgstr "Ілгері"
 
-#: ui/input/kis_shortcut_configuration.cpp:275
-#: ui/input/kis_shortcut_configuration.cpp:320
-#: ui/input/kis_shortcut_configuration.cpp:346
-msgctxt "No input"
+#: ui/input/kis_shortcut_configuration.cpp:276
+#, fuzzy
+#| msgid "None"
+msgctxt "No mouse buttons for shortcut"
 msgid "None"
 msgstr "Жоқ"
 
-#: ui/input/kis_shortcut_configuration.cpp:279
-msgctxt "Mouse Buttons"
-msgid "Button"
-msgid_plural "Buttons"
+#: ui/input/kis_shortcut_configuration.cpp:282
+#, fuzzy, kde-format
+#| msgctxt "Mouse Buttons"
+#| msgid "Button"
+#| msgid_plural "Buttons"
+msgctxt ""
+"%1 = List of mouse buttons for shortcut. Plural form is chosen upon the "
+"number of buttons in that list."
+msgid "%1 Button"
+msgid_plural "%1 Buttons"
 msgstr[0] "Батырмалары"
 
-#: ui/input/kis_shortcut_configuration.cpp:296
+#: ui/input/kis_shortcut_configuration.cpp:294
+msgctxt "Separator in the list of keys for shortcut"
+msgid " + "
+msgstr ""
+
+#: ui/input/kis_shortcut_configuration.cpp:299
 msgctxt "Ctrl key"
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: ui/input/kis_shortcut_configuration.cpp:300
+#: ui/input/kis_shortcut_configuration.cpp:303
 msgctxt "Meta key"
 msgid "Meta"
 msgstr "Meta"
 
-#: ui/input/kis_shortcut_configuration.cpp:304
+#: ui/input/kis_shortcut_configuration.cpp:307
 msgctxt "Alt key"
 msgid "Alt"
 msgstr "Alt"
 
-#: ui/input/kis_shortcut_configuration.cpp:308
+#: ui/input/kis_shortcut_configuration.cpp:311
 msgctxt "Shift key"
 msgid "Shift"
 msgstr "Shift"
 
-#: ui/input/kis_shortcut_configuration.cpp:330
+#: ui/input/kis_shortcut_configuration.cpp:323
+#, fuzzy
+#| msgid "None"
+msgctxt "No keys for shortcut"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/input/kis_shortcut_configuration.cpp:333
 msgid "Mouse Wheel Up"
 msgstr "Тышқанның тегершігін жоғары бұрау"
 
-#: ui/input/kis_shortcut_configuration.cpp:334
+#: ui/input/kis_shortcut_configuration.cpp:337
 msgid "Mouse Wheel Down"
 msgstr "Тышқанның тегершігін төменге бұрау"
 
-#: ui/input/kis_shortcut_configuration.cpp:338
+#: ui/input/kis_shortcut_configuration.cpp:341
 msgid "Mouse Wheel Left"
 msgstr "Тышқанның тегершігін солға"
 
-#: ui/input/kis_shortcut_configuration.cpp:342
+#: ui/input/kis_shortcut_configuration.cpp:345
 msgid "Mouse Wheel Right"
 msgstr "Тышқанның тегершігін оңға"
+
+#: ui/input/kis_shortcut_configuration.cpp:349
+#, fuzzy
+#| msgid "None"
+msgctxt "No mouse wheel buttons for shortcut"
+msgid "None"
+msgstr "Жоқ"
+
+#: ui/input/kis_shortcut_configuration.cpp:361
+#, kde-format
+msgctxt "%1 = modifier keys in shortcut; %2 = mouse buttons in shortcut"
+msgid "%1 + %2"
+msgstr ""
+
+#: ui/input/kis_shortcut_configuration.cpp:377
+#, kde-format
+msgctxt "%1 = modifier keys in shortcut; %2 = mouse wheel buttons in shortcut"
+msgid "%1 + %2"
+msgstr ""
 
 #: ui/input/kis_show_palette_action.cpp:33
 msgid "Show Popup Palette"
@@ -11435,71 +11485,71 @@ msgstr "Қасиеттері..."
 msgid "Import Image"
 msgstr "Кескінді импорттау"
 
-#: ui/kis_layer_manager.cc:280
+#: ui/kis_layer_manager.cc:279
 msgid "&Flatten image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:290
+#: ui/kis_layer_manager.cc:289
 msgid "&Flatten Layer"
 msgstr "Қабатты &біріктіру"
 
-#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:779
+#: ui/kis_layer_manager.cc:293 ui/kis_layer_manager.cc:773
 msgid "Rasterize Layer"
 msgstr "Қабатты нүктелеу"
 
-#: ui/kis_layer_manager.cc:300
+#: ui/kis_layer_manager.cc:299
 msgid "Save Group Layers..."
 msgstr "Қабат тобын сақтау..."
 
-#: ui/kis_layer_manager.cc:304
+#: ui/kis_layer_manager.cc:303
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Өрісінің өлшемін назардағы қабатына шақтау"
 
-#: ui/kis_layer_manager.cc:359
+#: ui/kis_layer_manager.cc:353
 msgid "Filter Layer Properties"
 msgstr "Сүзгілеу қабатың қасиеттері"
 
-#: ui/kis_layer_manager.cc:404
+#: ui/kis_layer_manager.cc:398
 msgid "Generator Layer Properties"
 msgstr "Генератор қабаттың қасиеттері"
 
-#: ui/kis_layer_manager.cc:485
+#: ui/kis_layer_manager.cc:479
 msgid "Convert to a Paint Layer"
 msgstr "Бояу қабатына аудару"
 
-#: ui/kis_layer_manager.cc:564
+#: ui/kis_layer_manager.cc:558
 msgid "New Filter Layer"
 msgstr "Жаңа сүзгілеу қабаты"
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:617
 msgid "Could not add layer to image."
 msgstr "Кескінге қабат қосылмады."
 
-#: ui/kis_layer_manager.cc:623
+#: ui/kis_layer_manager.cc:617
 msgid "Layer Error"
 msgstr "Қабат қатесі"
 
-#: ui/kis_layer_manager.cc:709
+#: ui/kis_layer_manager.cc:703
 msgid "The image contains hidden layers that will be lost."
 msgstr "Кескін жасырын қабаттарын жоғалтпақ."
 
-#: ui/kis_layer_manager.cc:711
+#: ui/kis_layer_manager.cc:705
 msgid "&Flatten Image"
 msgstr "Кескінді &біріктіру"
 
-#: ui/kis_layer_manager.cc:815
+#: ui/kis_layer_manager.cc:809
 msgid "Convert Invisible Groups"
 msgstr "Көрінбейтін топтарды аудару"
 
-#: ui/kis_layer_manager.cc:818
+#: ui/kis_layer_manager.cc:812
 msgid "Export Only Toplevel Groups"
 msgstr "Тек жоғарғы деңгейлі топтарды экспорттау"
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:870
 msgid "No file name specified."
 msgstr "Файл атауы келтірілмеген."
 
-#: ui/kis_layer_manager.cc:876
+#: ui/kis_layer_manager.cc:870
 msgid "No file specified"
 msgstr "Файл келтірілмеген"
 
@@ -11631,23 +11681,23 @@ msgstr "Таңдау қалқасына аудару"
 msgid "Remove Last Layer"
 msgstr "Соңғы қабатты алып тастау"
 
-#: ui/kis_node_manager.cpp:666
+#: ui/kis_node_manager.cpp:669
 msgid "Mirror Layer X"
 msgstr "Қабатты X бойлығын терістеу"
 
-#: ui/kis_node_manager.cpp:668
+#: ui/kis_node_manager.cpp:671
 msgid "Mirror Mask X"
 msgstr "Масканы X бойынша шағылстырсу"
 
-#: ui/kis_node_manager.cpp:679
+#: ui/kis_node_manager.cpp:682
 msgid "Mirror Layer Y"
 msgstr "Қабатты Y бойлығын терістеу"
 
-#: ui/kis_node_manager.cpp:681
+#: ui/kis_node_manager.cpp:684
 msgid "Mirror Mask Y"
 msgstr "Масканы Y бойынша шағылстырсу"
 
-#: ui/kis_node_manager.cpp:802
+#: ui/kis_node_manager.cpp:805
 msgid "Export Node"
 msgstr "Түйінді экспорттау"
 
@@ -12226,6 +12276,10 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Жабу"
+
+#~ msgctxt "No input"
+#~ msgid "None"
+#~ msgstr "Жоқ"
 
 #~ msgid "     Cyan"
 #~ msgstr "     Циан"
