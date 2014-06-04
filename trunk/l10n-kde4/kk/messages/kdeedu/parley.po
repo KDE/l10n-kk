@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-22 01:48+0000\n"
+"POT-Creation-Date: 2014-06-04 01:40+0000\n"
 "PO-Revision-Date: 2013-11-16 05:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -80,7 +80,7 @@ msgstr[0] " секунд"
 msgid "*.kvtml|Vocabulary Collections"
 msgstr "*.kvtml|Сөздер жиындары"
 
-#: plugins/example.py:14 src/vocabulary/lessonview.cpp:37
+#: plugins/example.py:14
 msgid "New Lesson"
 msgstr "Жаңа сабақ"
 
@@ -854,10 +854,15 @@ msgid "Lessons"
 msgstr "Сабақтар"
 
 #: src/editor/editor.cpp:164
+#, fuzzy
+#| msgid ""
+#| "Right click to add, delete, or rename lessons. \n"
+#| "With the checkboxes you can select which lessons you want to practice. \n"
+#| "Only checked lessons [x] will be asked in the tests!"
 msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
+"Right click to add, delete, or rename units. \n"
+"With the checkboxes you can select which units you want to practice. \n"
+"Only checked units [x] will be asked in the practice!"
 msgstr ""
 "Сабақтарды қосу, өшіру не атың өзгерту үшін оң жақ түртім жасаңыз. \n"
 "Белгі көзін белгілеп жаттығу үшін сабақтарды таңдап алыңыз.\n"
@@ -933,8 +938,8 @@ msgstr "&Көрініс"
 
 #. i18n: ectx: Menu (lesson)
 #: src/editor/editorui.rc:49
-msgid "&Lesson"
-msgstr "&Сабақ"
+msgid "&Unit"
+msgstr ""
 
 #. i18n: ectx: Menu (learning)
 #: src/editor/editorui.rc:62 src/practice/practicesummaryui.rc:12
@@ -953,8 +958,9 @@ msgid "Editor Toolbar"
 msgstr "Өңдеу құралдары"
 
 #: src/editor/FromToEntryPage.cpp:160
-#, kde-format
-msgid "Grades from %1 to %2"
+#, fuzzy, kde-format
+#| msgid "Grades from %1 to %2"
+msgid "Confidence Levels from %1 to %2"
 msgstr "Дәрежесі %1 және %2 арасында"
 
 #. i18n: ectx: property (title), widget (QGroupBox, direc_label)
@@ -964,8 +970,8 @@ msgstr "Қасиетер бастапқыдан"
 
 #. i18n: ectx: property (text), widget (QLabel, grade_label)
 #: src/editor/FromToEntryPageForm.ui:72
-msgid "&Grade:"
-msgstr "&Деңгейі:"
+msgid "&Confidence Level:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fauxami_label)
 #: src/editor/FromToEntryPageForm.ui:95
@@ -1019,8 +1025,8 @@ msgstr "dd.MM.yyyy"
 
 #. i18n: ectx: property (text), widget (QPushButton, resetGradesButton)
 #: src/editor/FromToEntryPageForm.ui:260
-msgid "&Reset Grades"
-msgstr "&Деңгейлерін ысыру"
+msgid "&Reset Confidence Levels"
+msgstr ""
 
 #: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
 #: src/vocabulary/wordtypeview.cpp:123
@@ -1078,7 +1084,7 @@ msgid "Language"
 msgstr "Тіл"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/editor/summarywordwidget.ui:32 src/vocabulary/containermodel.cpp:170
+#: src/editor/summarywordwidget.ui:32
 msgid "Lesson"
 msgstr "Сабақ"
 
@@ -1410,20 +1416,26 @@ msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr "Жиын қай тілдерге арналған және олардың грамматикалық қасиетері. "
 
-#: src/parleyactions.cpp:121
-msgid "Remove Grades"
-msgstr "Деңгейлерін өшіру"
+#: src/parleyactions.cpp:121 src/vocabulary/lessonview.cpp:69
+msgid "Remove Confidence Levels"
+msgstr ""
 
 #: src/parleyactions.cpp:122
-msgid "Remove all grades from the current document"
+#, fuzzy
+#| msgid "Remove all grades from the current document"
+msgid "Remove all confidence levels from the current document"
 msgstr "Назардағы құжаттан деңгейлерін кетіру"
 
 #: src/parleyactions.cpp:129
-msgid "Show Entries from Child Lessons"
+#, fuzzy
+#| msgid "Show Entries from Child Lessons"
+msgid "Show Entries from Child Units"
 msgstr "Еншілес сабақтарының жазуларын көрсету "
 
 #: src/parleyactions.cpp:130
-msgid "Enable to also see the entries of child lessons in each lesson."
+#, fuzzy
+#| msgid "Enable to also see the entries of child lessons in each lesson."
+msgid "Enable to also see the entries of child units in each unit."
 msgstr "Сабақтын еншілес сабақтар жазуларын көруді рұқсат ету"
 
 #: src/parleyactions.cpp:136
@@ -1432,7 +1444,9 @@ msgstr "Автоаудару"
 
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
 #: src/parleyactions.cpp:137 src/settings/parley.kcfg:50
-msgid "Enable automatic translation of the lesson entries."
+#, fuzzy
+#| msgid "Enable automatic translation of the lesson entries."
+msgid "Enable automatic translation of the unit entries."
 msgstr "Сабақ жазуларын автоматты түрде аударуды рұқсат ету"
 
 #: src/parleyactions.cpp:143
@@ -1782,9 +1796,9 @@ msgstr "%1 дегеннің тегі орта"
 
 #: src/practice/guifrontend.cpp:129
 #, kde-format
-msgctxt "Display of the current lesson during practice"
-msgid "Lesson: %1"
-msgstr "Сабақ: %1"
+msgctxt "Display of the current unit during practice"
+msgid "Unit: %1"
+msgstr ""
 
 #: src/practice/guifrontend.cpp:136
 #, fuzzy
@@ -2748,7 +2762,9 @@ msgstr ""
 
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
 #: src/settings/parley.kcfg:27
-msgid "The number of entries per lesson"
+#, fuzzy
+#| msgid "The number of entries per lesson"
+msgid "The number of entries per unit"
 msgstr "Әр сабақтағы жазу саны"
 
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
@@ -2802,9 +2818,13 @@ msgstr "Лейтнердің әдісін қолдану"
 
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
 #: src/settings/parley.kcfg:77
+#, fuzzy
+#| msgid ""
+#| "Append new vocabulary in a test in order of their lessons. Note that this "
+#| "will not be a hard transition, but a slow mix from one lesson to the next."
 msgid ""
-"Append new vocabulary in a test in order of their lessons. Note that this "
-"will not be a hard transition, but a slow mix from one lesson to the next."
+"Append new vocabulary in a collection in order of their units. Note that "
+"this will not be a hard transition, but a slow mix from one unit to the next."
 msgstr ""
 "Сынақтың сабақтары ретімен, оған жаңа сөздіктерді қосып отыру. Сонда бұл "
 "қүрт өзгерістерге әкелмейді, сабақ сабаққа біртіндеп ауысады."
@@ -2963,12 +2983,16 @@ msgstr "Іздеу жолағының көрсету күйін терістеу
 
 #. i18n: ectx: label, entry (ShowSublessonentries), group (Appearance)
 #: src/settings/parley.kcfg:198
-msgid "When enabled a lesson also shows entries from its sublessons."
+#, fuzzy
+#| msgid "When enabled a lesson also shows entries from its sublessons."
+msgid "When enabled a unit also shows entries from its subunits."
 msgstr "Қосылса - сабақ ішіндегі бөлімдері көрсетіледі."
 
 #. i18n: ectx: label, entry (TableLessonColumnVisible), group (Appearance)
 #: src/settings/parley.kcfg:203
-msgid "Show/hide the lesson column."
+#, fuzzy
+#| msgid "Show/hide the lesson column."
+msgid "Show/hide the unit column."
 msgstr "Сабақ бағанын көрсету/жасыру"
 
 #. i18n: ectx: label, entry (TableActiveColumnVisible), group (Appearance)
@@ -2978,7 +3002,9 @@ msgstr "Белсенді бағанды көрсету/жасыру"
 
 #. i18n: ectx: label, entry (LessonEditingSelection), group (Appearance)
 #: src/settings/parley.kcfg:213
-msgid "Select which lessons are displayed for editing"
+#, fuzzy
+#| msgid "Select which lessons are displayed for editing"
+msgid "Select which units are displayed for editing"
 msgstr "Өңдеу үшін шығаратын сабақтары"
 
 #. i18n: ectx: label, entry (MainWindowSplitter), group (Appearance)
@@ -3007,11 +3033,10 @@ msgid "Currently selected row"
 msgstr "Қазір таңдалған жол"
 
 #. i18n: ectx: label, entry (GradeColor), group (Appearance)
-#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
-#: src/settings/parley.kcfg:243 src/settings/viewoptionsbase.ui:102
+#: src/settings/parley.kcfg:243
 #, fuzzy
 #| msgid "Colors used to display different grades"
-msgid "Color used to display the grades"
+msgid "Color used to display the confidence levels"
 msgstr "Түрлі білім деңгейлерді белгілейтін түстері"
 
 #. i18n: ectx: label, entry (PracticeMinimumTimesAsked), group (Thresholds)
@@ -3048,15 +3073,24 @@ msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMinimumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:269
+#, fuzzy
+#| msgid ""
+#| "The entry must have at least this grade to be included in the practice "
+#| "(0..7)."
 msgid ""
-"The entry must have at least this grade to be included in the practice "
-"(0..7)."
+"The entry must have at least this confidence level to be included in the "
+"practice (0..7)."
 msgstr "Жаттығуға кіру үшін жазу кем дегенде осы деңгейде болу керек (0..7)."
 
 #. i18n: ectx: label, entry (PracticeMaximumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:273
+#, fuzzy
+#| msgid ""
+#| "The entry must have at most this grade to be included in the practice "
+#| "(0..7)."
 msgid ""
-"The entry must have at most this grade to be included in the practice (0..7)."
+"The entry must have at most this confidence level to be included in the "
+"practice (0..7)."
 msgstr "Жаттығуға кіру үшін жазу көп дегенде осы деңгейде болу керек (0..7)."
 
 #. i18n: ectx: label, entry (WordTypesInPracticeEnabled), group (Thresholds)
@@ -3114,12 +3148,16 @@ msgstr "Қазір таңдалған жаттығу түрі."
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:338
-msgid "Amount of time different grades should be blocked"
+#, fuzzy
+#| msgid "Amount of time different grades should be blocked"
+msgid "Amount of time different confidence levels should be blocked"
 msgstr "Түрлі деңгейлер бекітілетін уақыт аралығы"
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:349
-msgid "Amount of time after which different grades should expire"
+#, fuzzy
+#| msgid "Amount of time after which different grades should expire"
+msgid "Amount of time after which different confidence levels should expire"
 msgstr "Түрлі деңгейлер ескіретін уақыт аралығы"
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
@@ -3178,6 +3216,13 @@ msgstr "&Транскрипция қаріпі:"
 msgid "Base color for displaying grades:"
 msgstr "Түрлі білім деңгейлерді белгілейтін түстері"
 
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
+#: src/settings/viewoptionsbase.ui:102
+#, fuzzy
+#| msgid "Colors used to display different grades"
+msgid "Color used to display the grades"
+msgstr "Түрлі білім деңгейлерді белгілейтін түстері"
+
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor)
 #: src/settings/viewoptionsbase.ui:105
 #, fuzzy
@@ -3210,27 +3255,22 @@ msgid "Not practiced"
 msgstr "&Өтпегені:"
 
 #: src/statistics/lessonstatistics.cpp:182
-#, fuzzy
-#| msgid "Remove all grades from this lesson"
-msgid "Remove &Grades from this lesson"
-msgstr "Сабақтағы деңгейлерін кетіру"
-
 #: src/statistics/lessonstatistics.cpp:184
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove grades from this lesson"
+msgid "Remove confidence levels from this unit"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/statistics/lessonstatistics.cpp:192
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove &Grades from this lesson and all sub-lessons"
+msgid "Remove confidence levels from this unit and all sub-units"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/statistics/lessonstatistics.cpp:194
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove grades from this lesson and all sub-lessons"
+msgid "Remove confidence level from this unit and all sub-units"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/statistics/statisticsmainwindow.cpp:196
@@ -3310,27 +3350,36 @@ msgstr "Жаттығу диалогтары"
 
 #: src/statistics/statisticsmodel.cpp:31
 #, kde-format
-msgctxt "Grade in language, table header"
-msgid "Grade (%1)"
-msgstr "Деңгейі (%1)"
+msgctxt "Confidence level in language, table header"
+msgid "Confidence (%1)"
+msgstr ""
 
 #: src/vocabulary/basiccontainermodel.cpp:145
 msgid "None"
 msgstr "Жоқ"
 
+#: src/vocabulary/containermodel.cpp:170
+msgid "Unit"
+msgstr ""
+
 #: src/vocabulary/containermodel.cpp:178
 msgid "Number of entries in this lesson."
 msgstr "Осы сабақтың жазбалар саны"
 
-#: src/vocabulary/leitnerview.cpp:117 src/vocabulary/lessonview.cpp:194
-msgid "The root lesson cannot be deleted."
+#: src/vocabulary/leitnerview.cpp:117
+#, fuzzy
+#| msgid "The root lesson cannot be deleted."
+msgid "The root unit cannot be deleted."
 msgstr "Түбірлі сабақ өшірілмейді."
 
 #: src/vocabulary/leitnerview.cpp:126 src/vocabulary/lessonview.cpp:203
-#, kde-format
-msgid "There is %1 word left in this lesson. Do you want to delete it?"
+#, fuzzy, kde-format
+#| msgid "There is %1 word left in this lesson. Do you want to delete it?"
+#| msgid_plural ""
+#| "There are %1 words left in this lesson. Do you want to delete them?"
+msgid "There is %1 word left in this unit. Do you want to delete it?"
 msgid_plural ""
-"There are %1 words left in this lesson. Do you want to delete them?"
+"There are %1 words left in this unit. Do you want to delete them?"
 msgstr[0] "Сабақта %1 сөз қалды. Оны өшірмексіз бе?"
 
 #: src/vocabulary/lessonmodel.cpp:61
@@ -3339,86 +3388,106 @@ msgctxt "display of the name of the vocabulary collection"
 msgid "Collection: %1"
 msgstr "Жиыны: %1"
 
+#: src/vocabulary/lessonview.cpp:37
+msgid "New Unit"
+msgstr ""
+
 #: src/vocabulary/lessonview.cpp:39
-msgid "Add a new lesson to your document"
+#, fuzzy
+#| msgid "Add a new lesson to your document"
+msgid "Add a new unit to your document"
 msgstr "Құжатқа жаңа сабақты қосу"
 
 #: src/vocabulary/lessonview.cpp:45
-msgid "Rename Lesson"
-msgstr "Сабақтың атауын өзгерту"
+#, fuzzy
+#| msgid "Rename"
+msgid "Rename Unit"
+msgstr "Атауын өзгерту"
 
 #: src/vocabulary/lessonview.cpp:53
-msgid "Delete Lesson"
-msgstr "Сабақты өшіру"
+#, fuzzy
+#| msgid "&Delete Entry"
+msgid "Delete Unit"
+msgstr "Жазуды ө&шіру"
 
 #: src/vocabulary/lessonview.cpp:55
-msgid "Delete the selected lesson."
+#, fuzzy
+#| msgid "Delete the selected lesson."
+msgid "Delete the selected unit."
 msgstr "Таңдалған сабақты өшіру."
 
 #: src/vocabulary/lessonview.cpp:61
-msgid "Split Lesson into Smaller Lessons"
+#, fuzzy
+#| msgid "Split Lesson into Smaller Lessons"
+msgid "Split Unit into Smaller Units"
 msgstr "Сабақты біірнешеге бөлу"
 
 #: src/vocabulary/lessonview.cpp:63
-msgid "Make multiple smaller lessons out of one big lesson."
-msgstr "Бір үлкен сабақты бірнеше кішірегіне бөлу."
-
-#: src/vocabulary/lessonview.cpp:69
 #, fuzzy
-#| msgid "Remove all grades from this lesson"
-msgid "Remove Grades from this Lesson"
-msgstr "Сабақтағы деңгейлерін кетіру"
+#| msgid "Make multiple smaller lessons out of one big lesson."
+msgid "Make multiple smaller units out of one big unit."
+msgstr "Бір үлкен сабақты бірнеше кішірегіне бөлу."
 
 #: src/vocabulary/lessonview.cpp:71
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove grades from this lesson."
+msgid "Remove confidence levels from this unit."
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:77
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove Grades from this Lesson and all Sub-Lessons"
+msgid "Remove Confidence Levels From This Unit And All Subunits"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:79
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Remove grades from this lesson and all sub-lessons."
+msgid "Remove confidence levels from this unit and all subunits."
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:85
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Expand all lessons and sub-lessons"
+msgid "Expand Units and Subunits"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:87
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Expand all lessons and sub-lessons."
+msgid "Expand all units and subunits."
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:93
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Collapse all lessons and sub-lessons"
+msgid "Collapse All Units And Subunits"
 msgstr "Сабақтағы деңгейлерін кетіру"
 
 #: src/vocabulary/lessonview.cpp:95
 #, fuzzy
 #| msgid "Remove all grades from this lesson"
-msgid "Collapse all lessons and sub-lessons."
+msgid "Collapse all units and subunits."
 msgstr "Сабақтағы деңгейлерін кетіру"
 
+#: src/vocabulary/lessonview.cpp:194
+msgid "The root lesson cannot be deleted."
+msgstr "Түбірлі сабақ өшірілмейді."
+
 #: src/vocabulary/lessonview.cpp:217
-msgid "Entries per Lesson"
+#, fuzzy
+#| msgid "Entries per Lesson"
+msgid "Entries per Unit"
 msgstr "Әр сабақ қанша жазудан"
 
 #: src/vocabulary/lessonview.cpp:217
+#, fuzzy
+#| msgid ""
+#| "The lesson will be split into smaller lessons. How many entries in each "
+#| "lesson do you want?"
 msgid ""
-"The lesson will be split into smaller lessons. How many entries in each "
-"lesson do you want?"
+"The unit will be split into smaller unit. How many entries in each unit do "
+"you want?"
 msgstr "Сабақ бірнешеге бөлінбек. Неше жазуларынан бөлмексіз?"
 
 #: src/vocabulary/vocabularycolumnsdialog.cpp:53
@@ -3470,11 +3539,15 @@ msgid "No Languages Defined"
 msgstr "Тілдер анықталмаған"
 
 #: src/vocabulary/vocabularymodel.cpp:328
-msgid "Select a lesson before adding vocabulary."
+#, fuzzy
+#| msgid "Select a lesson before adding vocabulary."
+msgid "Select a unit before adding vocabulary."
 msgstr "Сөздікті толықтырудын алдында сабақты таңдаңыз."
 
 #: src/vocabulary/vocabularymodel.cpp:328
-msgid "No Lesson Selected"
+#, fuzzy
+#| msgid "No Lesson Selected"
+msgid "No Unit Selected"
 msgstr "Сабақ таңдалмаған"
 
 #: src/vocabulary/vocabularyview.cpp:87
@@ -3813,6 +3886,47 @@ msgstr ""
 "құжаттарыні таба аласыз:\n"
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
+
+#~ msgid "&Lesson"
+#~ msgstr "&Сабақ"
+
+#~ msgid "&Grade:"
+#~ msgstr "&Деңгейі:"
+
+#~ msgid "&Reset Grades"
+#~ msgstr "&Деңгейлерін ысыру"
+
+#~ msgid "Remove Grades"
+#~ msgstr "Деңгейлерін өшіру"
+
+#~ msgctxt "Display of the current lesson during practice"
+#~ msgid "Lesson: %1"
+#~ msgstr "Сабақ: %1"
+
+#, fuzzy
+#~| msgid "Remove all grades from this lesson"
+#~ msgid "Remove &Grades from this lesson"
+#~ msgstr "Сабақтағы деңгейлерін кетіру"
+
+#, fuzzy
+#~| msgid "Remove all grades from this lesson"
+#~ msgid "Remove &Grades from this lesson and all sub-lessons"
+#~ msgstr "Сабақтағы деңгейлерін кетіру"
+
+#~ msgctxt "Grade in language, table header"
+#~ msgid "Grade (%1)"
+#~ msgstr "Деңгейі (%1)"
+
+#~ msgid "Rename Lesson"
+#~ msgstr "Сабақтың атауын өзгерту"
+
+#~ msgid "Delete Lesson"
+#~ msgstr "Сабақты өшіру"
+
+#, fuzzy
+#~| msgid "Remove all grades from this lesson"
+#~ msgid "Remove Grades from this Lesson"
+#~ msgstr "Сабақтағы деңгейлерін кетіру"
 
 #~ msgctxt "caption for an overview of the grades for a document"
 #~ msgid "Statistics for \"%1\""
