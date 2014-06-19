@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krossmodulekspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-01 01:28+0000\n"
+"POT-Creation-Date: 2014-06-19 01:30+0000\n"
 "PO-Revision-Date: 2013-05-28 04:35+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -84,6 +84,9 @@ msgid "Range"
 msgstr "Ауқым"
 
 #: ScriptingWriter.h:246
+#, fuzzy
+#| msgid "Set Values"
+msgctxt "(qtundo-format)"
 msgid "Set Values"
 msgstr "Мәндерін орнату"
 
@@ -130,15 +133,15 @@ msgstr "Орындау"
 msgid "Open File"
 msgstr "Файлды ашу"
 
+#: scripts/consoledocker.py:98
+msgid "<qt>Failed to open file \"%1\"<br><br>%2</qt>"
+msgstr "<qt>\"%1\" файлды ашу жаңылысы: <br><br>%2</qt>"
+
 #: scripts/consoledocker.py:98 scripts/consoledocker.py:108
 #: scripts/csvexport.py:46 scripts/csvimport.py:45 scripts/htmlexport.py:444
 #: scripts/xmlviewer.py:175 scripts/xmlviewer.py:283
 msgid "Error"
 msgstr "Қате"
-
-#: scripts/consoledocker.py:98
-msgid "<qt>Failed to open file \"%1\"<br><br>%2</qt>"
-msgstr "<qt>\"%1\" файлды ашу жаңылысы: <br><br>%2</qt>"
 
 #: scripts/consoledocker.py:108
 msgid "<qt>Failed to save file \"%1\"<br><br>%2</qt>"
@@ -180,19 +183,15 @@ msgstr "Қарау"
 msgid "CSV Export"
 msgstr "CVS экспортты"
 
+#: scripts/csvexport.py:29
+msgid "Export to CSV File"
+msgstr "CSV файлына экспорттау"
+
 #: scripts/csvexport.py:29 scripts/htmlexport.py:377
 #: scripts/kexidbexport.py:95 scripts/logger.py:22 scripts/odfpyexport.py:241
 msgctxt "Options page name"
 msgid "Save"
 msgstr "Сақтау"
-
-#: scripts/csvexport.py:29
-msgid "Export to CSV File"
-msgstr "CSV файлына экспорттау"
-
-#: scripts/csvexport.py:32 scripts/csvimport.py:32
-msgid "Comma-Separated-Value Files"
-msgstr "Үтірмен бөлінген мәндер (CSV) файлдары"
 
 #: scripts/csvexport.py:32 scripts/csvimport.py:32 scripts/htmlexport.py:374
 #: scripts/htmlexport.py:380 scripts/kexidbexport.py:98
@@ -200,6 +199,10 @@ msgstr "Үтірмен бөлінген мәндер (CSV) файлдары"
 #: scripts/vcardimport.py:45 scripts/xmlviewer.py:32
 msgid "All Files"
 msgstr "Бүкіл файлдар"
+
+#: scripts/csvexport.py:32 scripts/csvimport.py:32
+msgid "Comma-Separated-Value Files"
+msgstr "Үтірмен бөлінген мәндер (CSV) файлдары"
 
 #: scripts/csvexport.py:34 scripts/kexidbexport.py:100
 msgctxt "Options page name"
@@ -211,12 +214,12 @@ msgid "Export Sheets and ranges"
 msgstr "Кесте беттер мен аумақтарын экспорттау"
 
 #: scripts/csvexport.py:39 scripts/csvimport.py:38
-msgid "Options"
-msgstr "Параметрлері"
-
-#: scripts/csvexport.py:39 scripts/csvimport.py:38
 msgid "Comma Separated Value Options"
 msgstr "CSV параметрлері"
+
+#: scripts/csvexport.py:39 scripts/csvimport.py:38
+msgid "Options"
+msgstr "Параметрлері"
 
 #: scripts/csvexport.py:79
 msgid "No CSV file chosen"
@@ -226,21 +229,15 @@ msgstr "CVS файлы таңдалмаған"
 msgid "CSV Import"
 msgstr "CSV импорты"
 
+#: scripts/csvimport.py:29
+msgid "Import from CSV File"
+msgstr "CVS файлдан импорттау"
+
 #: scripts/csvimport.py:29 scripts/htmlexport.py:371
 #: scripts/kexidbimport.py:91 scripts/vcardimport.py:40
 #: scripts/xmlviewer.py:30
 msgid "Open"
 msgstr "Ашу"
-
-#: scripts/csvimport.py:29
-msgid "Import from CSV File"
-msgstr "CVS файлдан импорттау"
-
-#. i18n: tag collection attribute text
-#: scripts/csvimport.py:34 scripts/kexidbimport.py:96 scripts/scripts.rc:4
-#: scripts/vcardimport.py:47
-msgid "Import"
-msgstr "Импорттау"
 
 #: scripts/csvimport.py:34 scripts/kexidbimport.py:96
 #: scripts/vcardimport.py:47
@@ -399,20 +396,20 @@ msgid "HTML Documents"
 msgstr "HTML құжаттары"
 
 #: scripts/htmlexport.py:382
-msgid "Info"
-msgstr "Ақпар"
-
-#: scripts/htmlexport.py:382
 msgid "HTML Document Information"
 msgstr "HTML құжаты туралы мәлімет"
 
-#: scripts/htmlexport.py:388
-msgid "Styles"
-msgstr "Стильдер"
+#: scripts/htmlexport.py:382
+msgid "Info"
+msgstr "Ақпар"
 
 #: scripts/htmlexport.py:388
 msgid "Style of the HTML Document"
 msgstr "HTML құжат стилі"
+
+#: scripts/htmlexport.py:388
+msgid "Styles"
+msgstr "Стильдер"
 
 #: scripts/htmlexport.py:426 scripts/logger.py:30
 msgid "Overwrite file?"
@@ -548,11 +545,6 @@ msgstr "\"%1\" деген сұраныс сұлбасы жоқ"
 msgid "Unknown item %1"
 msgstr "Беймәлім %1 аталымы"
 
-#. i18n: tag script attribute text
-#: scripts/logger.py:18 scripts/scripts.rc:72
-msgid "Logger"
-msgstr "Журнал жүргізу"
-
 #: scripts/logger.py:22
 msgid "Save to Log File"
 msgstr "Журнал файлына сақтау"
@@ -592,11 +584,6 @@ msgstr "%1 кесте бетін көрсету"
 #: scripts/myorca.py:104
 msgid "Hide sheet %1"
 msgstr "%1 кесте бетін жасыру"
-
-#. i18n: tag script attribute comment
-#: scripts/myorca.py:130 scripts/myorca.py:192 scripts/scripts.rc:68
-msgid "Orca Screen Reader"
-msgstr "Orca экраннан оқу құралы"
 
 #: scripts/myorca.py:136
 msgid "Action"
@@ -691,12 +678,12 @@ msgid "All Supported Files"
 msgstr "Бүкіл танитын файлдар"
 
 #: scripts/odfpyexport.py:254
-msgid "Sheets"
-msgstr "Кесте беттері"
-
-#: scripts/odfpyexport.py:254
 msgid "Export Sheets"
 msgstr "Кесте беттерді экспорттау"
+
+#: scripts/odfpyexport.py:254
+msgid "Sheets"
+msgstr "Кесте беттері"
 
 #: scripts/odfpyexport.py:280
 msgid "No OpenDocument file to write defined."
@@ -769,6 +756,26 @@ msgid ""
 msgstr ""
 "Бұл функция қалыпты үлестірімінің ықтималдық тығыздығын есептеп береді."
 
+#: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:124
+#: scripts/rpyfunctions.py:131 scripts/rpyfunctions.py:138
+#: scripts/rpyfunctions.py:145 scripts/rpyfunctions.py:152
+#: scripts/rpyfunctions.py:159 scripts/rpyfunctions.py:166
+#: scripts/rpyfunctions.py:173 scripts/rpyfunctions.py:180
+#: scripts/rpyfunctions.py:187 scripts/rpyfunctions.py:194
+#: scripts/rpyfunctions.py:201 scripts/rpyfunctions.py:208
+#: scripts/rpyfunctions.py:215
+msgid ""
+"If true, log of the result will be returned instead. This is useful if the "
+"result would otherwise underflow to 0. Defaults to false."
+msgstr ""
+"\"Ақиқат\" (true немесе 1) болса, онда нәтижесі натурал логарифмде беріледі. "
+"Нәтиже нөлге жақын болғанда ыңғайлы. Әдеттісі \"Жалған\" (false немесе 0)."
+
+#: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:119
+#: scripts/rpyfunctions.py:121
+msgid "mean of the distribution"
+msgstr "үлестірімінің орташасы"
+
 #: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:119
 #: scripts/rpyfunctions.py:124 scripts/rpyfunctions.py:126
 #: scripts/rpyfunctions.py:128 scripts/rpyfunctions.py:131
@@ -791,28 +798,8 @@ msgstr "бақылау"
 
 #: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:119
 #: scripts/rpyfunctions.py:121
-msgid "mean of the distribution"
-msgstr "үлестірімінің орташасы"
-
-#: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:119
-#: scripts/rpyfunctions.py:121
 msgid "standard deviation of the distribution"
 msgstr "үлестірімінің стандартты ауытқуы"
-
-#: scripts/rpyfunctions.py:117 scripts/rpyfunctions.py:124
-#: scripts/rpyfunctions.py:131 scripts/rpyfunctions.py:138
-#: scripts/rpyfunctions.py:145 scripts/rpyfunctions.py:152
-#: scripts/rpyfunctions.py:159 scripts/rpyfunctions.py:166
-#: scripts/rpyfunctions.py:173 scripts/rpyfunctions.py:180
-#: scripts/rpyfunctions.py:187 scripts/rpyfunctions.py:194
-#: scripts/rpyfunctions.py:201 scripts/rpyfunctions.py:208
-#: scripts/rpyfunctions.py:215
-msgid ""
-"If true, log of the result will be returned instead. This is useful if the "
-"result would otherwise underflow to 0. Defaults to false."
-msgstr ""
-"\"Ақиқат\" (true немесе 1) болса, онда нәтижесі натурал логарифмде беріледі. "
-"Нәтиже нөлге жақын болғанда ыңғайлы. Әдеттісі \"Жалған\" (false немесе 0)."
 
 #: scripts/rpyfunctions.py:118
 msgid ""
@@ -923,17 +910,17 @@ msgstr "Бұл функция гамма үлестірімінің ықтима
 #: scripts/rpyfunctions.py:131 scripts/rpyfunctions.py:133
 #: scripts/rpyfunctions.py:135 scripts/rpyfunctions.py:166
 #: scripts/rpyfunctions.py:168 scripts/rpyfunctions.py:170
-msgid "the shape parameter of the distribution"
-msgstr "үлестірім қалпының параметрі"
-
-#: scripts/rpyfunctions.py:131 scripts/rpyfunctions.py:133
-#: scripts/rpyfunctions.py:135 scripts/rpyfunctions.py:166
-#: scripts/rpyfunctions.py:168 scripts/rpyfunctions.py:170
 #: scripts/rpyfunctions.py:180 scripts/rpyfunctions.py:182
 #: scripts/rpyfunctions.py:184 scripts/rpyfunctions.py:215
 #: scripts/rpyfunctions.py:217 scripts/rpyfunctions.py:219
 msgid "the scale parameter of the distribution"
 msgstr "үлестірім масштабының параметрі"
+
+#: scripts/rpyfunctions.py:131 scripts/rpyfunctions.py:133
+#: scripts/rpyfunctions.py:135 scripts/rpyfunctions.py:166
+#: scripts/rpyfunctions.py:168 scripts/rpyfunctions.py:170
+msgid "the shape parameter of the distribution"
+msgstr "үлестірім қалпының параметрі"
 
 #: scripts/rpyfunctions.py:132
 msgid ""
@@ -1194,8 +1181,8 @@ msgstr ""
 
 #: scripts/rpyfunctions.py:201 scripts/rpyfunctions.py:203
 #: scripts/rpyfunctions.py:205
-msgid "the number of red balls"
-msgstr "қызыл құмалақ саны"
+msgid "the number of balls drawn"
+msgstr "суреттелген құмалақ саны"
 
 #: scripts/rpyfunctions.py:201 scripts/rpyfunctions.py:203
 #: scripts/rpyfunctions.py:205
@@ -1204,8 +1191,8 @@ msgstr "қара құмалақ саны"
 
 #: scripts/rpyfunctions.py:201 scripts/rpyfunctions.py:203
 #: scripts/rpyfunctions.py:205
-msgid "the number of balls drawn"
-msgstr "суреттелген құмалақ саны"
+msgid "the number of red balls"
+msgstr "қызыл құмалақ саны"
 
 #: scripts/rpyfunctions.py:202
 msgid ""
@@ -1269,6 +1256,11 @@ msgstr ""
 "Бұл функция үлестірімінің квантилін, яғни терістелген Коши ықтималдық "
 "үлестірім мәнін есептеп береді."
 
+#. i18n: tag collection attribute text
+#: scripts/scripts.rc:4
+msgid "Import"
+msgstr "Импорттау"
+
 #. i18n: tag collection attribute comment
 #: scripts/scripts.rc:4
 msgid "Import content"
@@ -1286,7 +1278,7 @@ msgid "Import from a Comma-Separated-Value File"
 msgstr "Үтірмен бөлінген мәндер (CSV) файлынан импорттау"
 
 #. i18n: tag script attribute text
-#: scripts/scripts.rc:9 scripts/vcardimport.py:40
+#: scripts/scripts.rc:9
 msgid "vCard File"
 msgstr "vCard файлы"
 
@@ -1418,7 +1410,7 @@ msgid "Miscellaneous scripts"
 msgstr "Түрлі басқа скрипттер"
 
 #. i18n: tag script attribute text
-#: scripts/scripts.rc:64 scripts/xmlviewer.py:27 scripts/xmlviewer.py:42
+#: scripts/scripts.rc:64
 msgid "XML Viewer"
 msgstr "XML қарау құралы"
 
@@ -1433,6 +1425,16 @@ msgstr "Назардағы құжаттың OpenDocument XML көрнісін қ
 #: scripts/scripts.rc:68
 msgid "Orca Speech"
 msgstr "Orca дыбыстау"
+
+#. i18n: tag script attribute comment
+#: scripts/scripts.rc:68
+msgid "Orca Screen Reader"
+msgstr "Orca экраннан оқу құралы"
+
+#. i18n: tag script attribute text
+#: scripts/scripts.rc:72
+msgid "Logger"
+msgstr "Журнал жүргізу"
 
 #. i18n: tag script attribute comment
 #: scripts/scripts.rc:72
