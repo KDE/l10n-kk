@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-16 05:56+0000\n"
+"POT-Creation-Date: 2014-06-26 05:39+0000\n"
 "PO-Revision-Date: 2013-11-20 06:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,62 +27,73 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: debugger/breakpoint/breakpoint.cpp:135
+#: debugger/breakpoint/breakpoint.cpp:152
+#, fuzzy
+#| msgid "Error"
 msgctxt "@info:tooltip"
-msgid "error"
-msgstr "қате"
+msgid "Error"
+msgstr "Қате"
 
-#: debugger/breakpoint/breakpoint.cpp:141
+#: debugger/breakpoint/breakpoint.cpp:158
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "dirty"
 msgctxt "@info:tooltip"
-msgid "dirty"
+msgid "Dirty"
 msgstr "тапсырылмаған"
 
-#: debugger/breakpoint/breakpoint.cpp:143
+#: debugger/breakpoint/breakpoint.cpp:160
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "pending"
 msgctxt "@info:tooltip"
-msgid "pending"
+msgid "Pending"
 msgstr "кезекте"
 
-#: debugger/breakpoint/breakpoint.cpp:145
+#: debugger/breakpoint/breakpoint.cpp:162
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "clean"
 msgctxt "@info:tooltip"
-msgid "clean"
+msgid "Clean"
 msgstr "тапсырылған"
 
-#: debugger/breakpoint/breakpointdetails.cpp:74
-#: debugger/breakpoint/breakpointdetails.cpp:151
+#: debugger/breakpoint/breakpointdetails.cpp:57
+#: debugger/breakpoint/breakpointdetails.cpp:134
 msgid "Not hit yet"
 msgstr "Әлі келмеген"
 
-#: debugger/breakpoint/breakpointdetails.cpp:82
+#: debugger/breakpoint/breakpointdetails.cpp:65
 msgid "Ignore"
 msgstr "Елемеу"
 
-#: debugger/breakpoint/breakpointdetails.cpp:91
+#: debugger/breakpoint/breakpointdetails.cpp:73
 msgid "next hits"
 msgstr "келесі келгендері"
 
-#: debugger/breakpoint/breakpointdetails.cpp:136
+#: debugger/breakpoint/breakpointdetails.cpp:119
 msgid "Breakpoint is <a href=\"pending\">pending</a>"
 msgstr "Аялдау нүкте <a href=\"pending\">кезекте</a>"
 
-#: debugger/breakpoint/breakpointdetails.cpp:139
+#: debugger/breakpoint/breakpointdetails.cpp:122
 msgid "Breakpoint is <a href=\"dirty\">dirty</a>"
 msgstr "Аялдау нүкте <a href=\"dirty\">тапсырылмаған</a>"
 
-#: debugger/breakpoint/breakpointdetails.cpp:142
+#: debugger/breakpoint/breakpointdetails.cpp:125
 msgid "Breakpoint is active"
 msgstr "Аялдау нүкте белсенді"
 
-#: debugger/breakpoint/breakpointdetails.cpp:149
+#: debugger/breakpoint/breakpointdetails.cpp:132
 #, kde-format
 msgid "Hit %1 time"
 msgid_plural "Hit %1 times"
 msgstr[0] "%1 рет өткен"
 
-#: debugger/breakpoint/breakpointdetails.cpp:153
+#: debugger/breakpoint/breakpointdetails.cpp:136
 msgid "Breakpoint has errors"
 msgstr "Аялдау нүктеде қателер бар"
 
-#: debugger/breakpoint/breakpointdetails.cpp:164
+#: debugger/breakpoint/breakpointdetails.cpp:147
 msgid ""
 "<b>Breakpoint is pending</b><p>Pending breakpoints are those that have been "
 "passed to GDB, but which are not yet installed in the target, because GDB "
@@ -95,7 +106,7 @@ msgstr ""
 "нүкте. Көбінде бұл ортақ жиын файлға сілтейтін аялдау нүктесі: GDB бұны жиын "
 "файлы жүктелгенде ғана орнатады.</p>"
 
-#: debugger/breakpoint/breakpointdetails.cpp:177
+#: debugger/breakpoint/breakpointdetails.cpp:160
 msgid ""
 "<b>Breakpoint is dirty</b><p>The breakpoint has not yet been passed to the "
 "debugger.</p>"
@@ -120,6 +131,8 @@ msgid "&Enable Breakpoint"
 msgstr "Аялдау нүктені &рұқсат ету"
 
 #: debugger/breakpoint/breakpointmodel.cpp:169
+#: debugger/variable/variablecollection.cpp:406
+#: debugger/variable/variabletooltip.cpp:100
 msgid "Type"
 msgstr "Түрі"
 
@@ -136,20 +149,16 @@ msgstr "Шарты"
 msgid "Active status"
 msgstr "Белсенділік күй-жайы"
 
-#: debugger/breakpoint/breakpointmodel.cpp:176 shell/sessioncontroller.cpp:855
+#: debugger/breakpoint/breakpointmodel.cpp:176 shell/sessioncontroller.cpp:839
 msgid "State"
 msgstr "Күй-жайы"
 
-#: debugger/breakpoint/breakpointmodel.cpp:253
-msgid "Double-click to create new code breakpoint"
-msgstr "Жаңа аялдау нүкте құру үшін қос түртім жасаңыз"
-
-#: debugger/breakpoint/breakpointwidget.cpp:52
+#: debugger/breakpoint/breakpointwidget.cpp:54
 msgctxt "@title:window"
 msgid "Debugger Breakpoints"
 msgstr "Жөндегіштің аялдау нүктелері"
 
-#: debugger/breakpoint/breakpointwidget.cpp:53
+#: debugger/breakpoint/breakpointwidget.cpp:55
 msgctxt "@info:whatsthis"
 msgid ""
 "Displays a list of breakpoints with their current status. Clicking on a "
@@ -159,68 +168,95 @@ msgstr ""
 "Аялдау нүктелерді және олардың күй-жайын көрсетеді. Аталымды түртсе, оны "
 "өзгертуге мүмкіндікпен оған сәйкесті коды редактор терезесінде ұсынылады."
 
-#: debugger/breakpoint/breakpointwidget.cpp:103
+#: debugger/breakpoint/breakpointwidget.cpp:81
+#, fuzzy
+#| msgid "Toggle breakpoint"
+msgid "New code breakpoint ..."
+msgstr "Аялдау нүктені қосу/өшіру"
+
+#: debugger/breakpoint/breakpointwidget.cpp:82
+#, fuzzy
+#| msgid "Open Configuration..."
+msgid "Enter condition ..."
+msgstr "Баптауын ашу..."
+
+#: debugger/breakpoint/breakpointwidget.cpp:112
 msgctxt "New breakpoint"
 msgid "&New"
 msgstr "&Жаңа"
 
-#: debugger/breakpoint/breakpointwidget.cpp:106
+#: debugger/breakpoint/breakpointwidget.cpp:116
 msgctxt "Code breakpoint"
 msgid "&Code"
 msgstr "&Код"
 
-#: debugger/breakpoint/breakpointwidget.cpp:115
+#: debugger/breakpoint/breakpointwidget.cpp:125
+#, fuzzy
+#| msgctxt "Data breakpoint"
+#| msgid "Data &write"
 msgctxt "Data breakpoint"
-msgid "Data &write"
+msgid "Data &Write"
 msgstr "Деректі жа&зу"
 
-#: debugger/breakpoint/breakpointwidget.cpp:118
+#: debugger/breakpoint/breakpointwidget.cpp:128
+#, fuzzy
+#| msgctxt "Data read breakpoint"
+#| msgid "Data &read"
 msgctxt "Data read breakpoint"
-msgid "Data &read"
+msgid "Data &Read"
 msgstr "Деректі &оқу"
 
-#: debugger/breakpoint/breakpointwidget.cpp:121
+#: debugger/breakpoint/breakpointwidget.cpp:131
+#, fuzzy
+#| msgctxt "Data access breakpoint"
+#| msgid "Data &access"
 msgctxt "Data access breakpoint"
-msgid "Data &access"
+msgid "Data &Access"
 msgstr "Дерекке қ&атынау"
 
-#: debugger/breakpoint/breakpointwidget.cpp:126
+#: debugger/breakpoint/breakpointwidget.cpp:136
 msgid "&Delete"
 msgstr "Ө&шіру"
 
-#: debugger/breakpoint/breakpointwidget.cpp:135
-msgid "Disable &all"
+#: debugger/breakpoint/breakpointwidget.cpp:145
+#, fuzzy
+#| msgid "Disable &all"
+msgid "Disable &All"
 msgstr "&Бүкілін бұғаттау"
 
-#: debugger/breakpoint/breakpointwidget.cpp:136
-msgid "&Enable all"
+#: debugger/breakpoint/breakpointwidget.cpp:146
+#, fuzzy
+#| msgid "&Enable all"
+msgid "&Enable All"
 msgstr "Бүкілін &рұқсат ету"
 
-#: debugger/breakpoint/breakpointwidget.cpp:137
-msgid "&Remove all"
-msgstr "Бүкілін ө&шіру"
+#: debugger/breakpoint/breakpointwidget.cpp:147
+#, fuzzy
+#| msgid "Remove All"
+msgid "&Remove All"
+msgstr "Бүкілін өшіру"
 
-#: debugger/framestack/framestackmodel.cpp:151
+#: debugger/framestack/framestackmodel.cpp:145
 #, kde-format
 msgctxt "#thread-id at function-name or address"
 msgid "#%1 at %2"
 msgstr "%2 дегендегі #%1"
 
-#: debugger/framestack/framestackmodel.cpp:229
+#: debugger/framestack/framestackmodel.cpp:223
 msgid "Depth"
 msgstr "Тереңдігі"
 
-#: debugger/framestack/framestackmodel.cpp:231
-#: language/duchain/navigation/abstractnavigationcontext.cpp:405
+#: debugger/framestack/framestackmodel.cpp:225
+#: language/duchain/navigation/abstractnavigationcontext.cpp:397
 msgid "Function"
 msgstr "Функция"
 
 #. i18n: ectx: property (title), widget (QGroupBox, sourceBox)
-#: debugger/framestack/framestackmodel.cpp:233 shell/projectsourcepage.ui:66
+#: debugger/framestack/framestackmodel.cpp:227 shell/projectsourcepage.ui:66
 msgid "Source"
 msgstr "Бастапқы коды"
 
-#: debugger/framestack/framestackwidget.cpp:59
+#: debugger/framestack/framestackwidget.cpp:60
 msgid ""
 "<b>Frame stack</b>Often referred to as the \"call stack\", this is a list "
 "showing which function is currently active, and what called each function to "
@@ -232,7 +268,7 @@ msgstr ""
 "көрсетеді. Аталымды түртіп өткен шақырылымда функция қандай мәнін "
 "қайтарғанын біле аласыз."
 
-#: debugger/framestack/framestackwidget.cpp:94
+#: debugger/framestack/framestackwidget.cpp:95
 msgid "Threads:"
 msgstr "Ағындары:"
 
@@ -263,38 +299,43 @@ msgstr "Жергілікті қапшық жолы"
 msgid "Delete"
 msgstr "Өшіру"
 
-#: debugger/variable/variablecollection.cpp:201
+#: debugger/variable/variablecollection.cpp:212
+#: language/duchain/problem.cpp:181
 msgid "Error"
 msgstr "Қате"
 
-#: debugger/variable/variablecollection.cpp:222
+#: debugger/variable/variablecollection.cpp:233
 msgid "Auto"
 msgstr "Авто"
 
 #. i18n: ectx: property (text), widget (QLabel, configName)
-#: debugger/variable/variablecollection.cpp:395
-#: debugger/variable/variabletooltip.cpp:98
+#: debugger/variable/variablecollection.cpp:406
+#: debugger/variable/variabletooltip.cpp:100
 #: shell/launchconfigurationdialog.ui:112
 msgid "Name"
 msgstr "Атауы"
 
-#: debugger/variable/variablecollection.cpp:395
-#: debugger/variable/variabletooltip.cpp:98
-#: shell/settings/environmentgroupmodel.cpp:93
+#: debugger/variable/variablecollection.cpp:406
+#: debugger/variable/variabletooltip.cpp:100
+#: shell/settings/environmentgroupmodel.cpp:98
 msgid "Value"
 msgstr "Мәні"
 
-#: debugger/variable/variablecollection.h:208
+#: debugger/variable/variablecollection.h:216
 msgid "Locals"
 msgstr "Жергілікті"
 
-#: debugger/variable/variabletooltip.cpp:133
-msgid "<a href=\"add_watch\">Watch this</a>"
-msgstr "<a href=\"add_watch\">Мынаны бақылау</a>"
-
 #: debugger/variable/variabletooltip.cpp:135
-msgid "<a href=\"watchpoint\">Stop on change</a>"
-msgstr "<a href=\"watchpoint\">Өзгерісте тоқтау</a>"
+#, fuzzy
+#| msgid "Match case"
+msgid "Watch this"
+msgstr "Үлкен-кішілігін &ескеріп"
+
+#: debugger/variable/variabletooltip.cpp:137
+#, fuzzy
+#| msgid "&Stop on change"
+msgid "Stop on Change"
+msgstr "Өзгерісте тоқтау"
 
 #: debugger/variable/variablewidget.cpp:87
 msgid "Debugger Variables"
@@ -356,7 +397,9 @@ msgid "&Copy Value"
 msgstr "Мәнін &көшіріп алу"
 
 #: debugger/variable/variablewidget.cpp:255
-msgid "&Stop on change"
+#, fuzzy
+#| msgid "&Stop on change"
+msgid "&Stop on Change"
 msgstr "Өзгерісте тоқтау"
 
 #: debugger/variable/variablewidget.cpp:335
@@ -364,6 +407,7 @@ msgid "Recent Expressions"
 msgstr "Жуырдағы өрнектер"
 
 #: debugger/variable/variablewidget.cpp:336
+#: shell/workingsets/workingsettooltipwidget.cpp:138
 msgid "Remove All"
 msgstr "Бүкілін өшіру"
 
@@ -416,8 +460,8 @@ msgstr "Алдыңғы"
 msgid "Match case"
 msgstr "Үлкен-кішілігін &ескеріп"
 
-#: documentation/documentationview.cpp:46 shell/documentationcontroller.cpp:85
-#: shell/documentationcontroller.cpp:189
+#: documentation/documentationview.cpp:46
+#: shell/documentationcontroller.cpp:124 shell/documentationcontroller.cpp:226
 msgid "Documentation"
 msgstr "Құжаттама"
 
@@ -441,8 +485,8 @@ msgstr "Табу"
 msgid "Home"
 msgstr "Мекен"
 
-#: interfaces/contextmenuextension.cpp:153 shell/debugcontroller.cpp:398
-#: shell/runcontroller.cpp:80 shell/uicontroller.cpp:90
+#: interfaces/contextmenuextension.cpp:153 shell/debugcontroller.cpp:389
+#: shell/runcontroller.cpp:82 shell/uicontroller.cpp:92
 msgid "Debug"
 msgstr "Жөндеу"
 
@@ -454,7 +498,7 @@ msgstr "Қайта құрылымдау"
 msgid "Version Control"
 msgstr "Нұсқаларды қадағалау"
 
-#: interfaces/isourceformatter.cpp:66
+#: interfaces/isourceformatter.cpp:188
 #, kde-format
 msgid ""
 "The executable %1 cannot be found. Please make sure it is installed and can "
@@ -462,6 +506,24 @@ msgid ""
 msgstr ""
 "Орындалатын %1 файлы табылмады. Ол орнатылған және орындауға әзір екенге көз "
 "жеткізіңіз.<br />Бұл мәселені шешпейінше плагин істемейді."
+
+#: language/assistant/renameaction.cpp:76
+#, kde-format
+msgid "Rename \"%1\" to \"%2\""
+msgstr ""
+
+#: language/assistant/renameaction.cpp:110
+#: language/assistant/renamefileaction.cpp:78
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Failed to Lock Session %1"
+msgid "Failed to apply changes: %1"
+msgstr "%1 сеансын иемдеу жаңылысы"
+
+#: language/assistant/renamefileaction.cpp:54
+#, kde-format
+msgid "Rename file from \"%1\" to \"%2\"."
+msgstr ""
 
 #: language/backgroundparser/backgroundparser.cpp:212
 #, kde-format
@@ -472,69 +534,118 @@ msgstr "Талдау: %1  "
 msgid "Background Parser"
 msgstr "Қатар істейтін синтаксис талдағышы"
 
-#: language/backgroundparser/parsejob.cpp:285
+#: language/backgroundparser/parsejob.cpp:280
 #, kde-format
 msgctxt "%1: filename"
 msgid "Skipped file that is too large: '%1'"
 msgstr "Тым үлкен файл. Елемей кетеміз: '%1'"
 
-#: language/backgroundparser/parsejob.cpp:287
+#: language/backgroundparser/parsejob.cpp:282
 #, kde-format
 msgctxt "%1: file size, %2: limit file size"
 msgid "The file is %1 and exceeds the limit of %2."
 msgstr "%1 файлы %2 шегінен асады."
 
-#: language/backgroundparser/parsejob.cpp:300
+#: language/backgroundparser/parsejob.cpp:295
 #, kde-format
 msgid "Could not open file '%1'"
 msgstr "'%1' файлы ашылмады"
 
-#: language/backgroundparser/parsejob.cpp:303
+#: language/backgroundparser/parsejob.cpp:298
 msgid "File could not be read from disk."
 msgstr "Файл дискіден оқылмады."
 
-#: language/backgroundparser/parsejob.cpp:306
+#: language/backgroundparser/parsejob.cpp:301
 msgid "File could not be opened."
 msgstr "Файл ашылмады"
 
-#: language/backgroundparser/parsejob.cpp:309
+#: language/backgroundparser/parsejob.cpp:304
 msgid "File could not be read from disk due to permissions."
 msgstr "Рұқсатар жетпегеннен файл дискіден оқылмады."
 
-#: language/backgroundparser/parseprojectjob.cpp:52
+#: language/backgroundparser/parseprojectjob.cpp:54
 #, kde-format
 msgid "Process 1 file in %2"
 msgid_plural "Process %1 files in %2"
 msgstr[0] "%2 дегендегі %1 файлды өңдеу"
 
-#: language/codegen/applychangeswidget.cpp:86
-#: language/codegen/applychangeswidget.cpp:203
-msgid "Edit Document"
-msgstr "Құжатты өңдеу"
+#: language/codegen/basicrefactoring.cpp:105
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgid "Rename \"%1\"..."
+msgstr "Атауын өзгерту"
 
-#: language/codegen/applychangeswidget.cpp:205
-msgid "View Differences"
-msgstr "Айырмашылықтарын қөру"
+#: language/codegen/basicrefactoring.cpp:226
+msgid "No declaration under cursor"
+msgstr ""
 
-#: language/codegen/applychangeswidget.cpp:247
-msgid "Text"
-msgstr "Мәтін"
+#: language/codegen/basicrefactoring.cpp:232
+#, kde-format
+msgid "Declaration is located in non-writeable file %1."
+msgstr ""
 
-#: language/codegen/applychangeswidget.cpp:247
-msgid "Action"
-msgstr "Амалы"
+#: language/codegen/basicrefactoring.cpp:288
+#, fuzzy, kde-format
+#| msgid "Rename"
+msgctxt "Renaming some declaration"
+msgid "Rename \"%1\""
+msgstr "Атауын өзгерту"
 
-#: language/codegen/applychangeswidget.cpp:269
-msgid "Change"
-msgstr "Өзгерту"
+#: language/codegen/basicrefactoring.cpp:292
+#, fuzzy
+#| msgid "Uses of "
+msgid "Uses"
+msgstr "Мынаны пайдалануы"
 
-#: language/codegen/applychangeswidget.cpp:274
-msgid "Insert"
-msgstr "Ендіру"
+#: language/codegen/basicrefactoring.cpp:294
+#, fuzzy
+#| msgid "Declaration"
+msgid "Declaration Info"
+msgstr "Мәлімдеме"
 
-#: language/codegen/applychangeswidget.cpp:279
-msgid "Remove"
-msgstr "Өшіру"
+#: language/codegen/basicrefactoring.cpp:300
+#, kde-format
+msgid "Renaming \"%1\" to \"%2\""
+msgstr ""
+
+#: language/codegen/basicrefactoring.cpp:326
+#: language/codegen/basicrefactoring.cpp:334
+#: language/codegen/basicrefactoring.cpp:347
+#, kde-format
+msgid "Applying changes failed: %1"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, RenameDialog)
+#. i18n: ectx: property (text), widget (QPushButton, renameButton)
+#: language/codegen/basicrefactoring.ui:14 vcs/dvcs/ui/branchmanager.ui:55
+msgid "Rename"
+msgstr "Атауын өзгерту"
+
+#. i18n: ectx: property (text), widget (QLabel, newNameLabel)
+#: language/codegen/basicrefactoring.ui:22
+#, fuzzy
+#| msgid "&Username:"
+msgid "&New name:"
+msgstr "&Пайдаланушы:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, goButton)
+#: language/codegen/basicrefactoring.ui:35
+msgid ""
+"<html><head/><body><p>\"Note: All overloaded functions, overloads, forward-"
+"declarations, etc. will be renamed too\"</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, goButton)
+#: language/codegen/basicrefactoring.ui:38
+#, fuzzy
+#| msgid "Rename"
+msgid "&Rename"
+msgstr "Атауын өзгерту"
+
+#. i18n: ectx: property (text), widget (QPushButton, cancelButton)
+#: language/codegen/basicrefactoring.ui:45
+msgid "&Cancel"
+msgstr ""
 
 #: language/codegen/codegenerator.cpp:134
 msgid "Could not find an open document"
@@ -559,48 +670,62 @@ msgstr "Мына пайдаланушы туралы мәлімет жинау �
 msgid "Error generating code: %1"
 msgstr "Кодты жасап шығару қатесі: %1"
 
-#: language/codegen/documentchangeset.cpp:263
+#: language/codegen/documentchangeset.cpp:229
 #, kde-format
 msgid "Could not rename '%1' to '%2'"
 msgstr "'%1' деген '%2' деп өзгертілмеді"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, RefactoringDialog)
+#: language/codegen/progressdialogs/refactoringdialog.ui:14
+#, fuzzy
+#| msgid "Refactor"
+msgid "Refactoring"
+msgstr "Қайта құрылымдау"
+
+#. i18n: ectx: property (text), widget (QPushButton, abortButton)
+#: language/codegen/progressdialogs/refactoringdialog.ui:27
+msgid "&Abort"
+msgstr ""
 
 #: language/duchain/forwarddeclaration.cpp:61
 #, kde-format
 msgid "context-free forward-declaration %1"
 msgstr "контекстсіз алдын-ала %1 мәлімдемесі"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:71
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:72
 msgid "<br /> lost declaration <br />"
 msgstr "<br /> жоғалған мәлімдеме <br />"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:77
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:78
 #, kde-format
 msgid "Back to %1<br />"
 msgstr "%1 дегенге қайту"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:93
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:94
 msgid "enumerator "
 msgstr "тізбелеуіш"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:110
-#, kde-format
-msgid "namespace %1 <br />"
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:111
+#, fuzzy, kde-format
+#| msgid "namespace %1 <br />"
+msgid "namespace %1 "
 msgstr "%1 атаулар кеңістігі<br />"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:115
-#, kde-format
-msgid "enumeration %1 <br/>"
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:116
+#, fuzzy, kde-format
+#| msgid "enumeration %1 <br/>"
+msgid "enumeration %1 "
 msgstr "%1 тізбелеуі <br/>"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:122
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:123
 msgid "( resolved forward-declaration: "
 msgstr "( анықталған алдын-ала мәлімдемесі: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:124
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:125
 msgid ") "
 msgstr ") "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:126
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:127
 msgid "(unresolved forward-declaration) "
 msgstr "( анықталмаған алдын-ала мәлімдемесі: "
 
@@ -608,129 +733,129 @@ msgstr "( анықталмаған алдын-ала мәлімдемесі: "
 msgid "possible resolution from"
 msgstr "анықтамасы мынадан мүмкін:"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:150
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:148
 msgid "Returns: "
 msgstr "Қайтаратыны"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:152
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:150
 msgid "Type: "
 msgstr "Түрі: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:172
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:170
 msgid "Enum: "
 msgstr "Тізбектеу: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:174
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:172
 msgid "Container: "
 msgstr "Контейнер: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:181
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:179
 #, kde-format
 msgid "Scope: %1 "
 msgstr "Шеңбері: %1"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:200
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:198
 #, kde-format
 msgid "Access: %1 "
 msgstr "Қатынау: %1 "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:220
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:218
 #, kde-format
 msgid "Kind: %1 %2 "
 msgstr "Қалпы: %1 %2 "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:222
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:220
 #, kde-format
 msgid "Kind: %1 "
 msgstr "Қалпы: %1  "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:224
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:222
 #, kde-format
 msgid "Modifiers: %1 "
 msgstr "Түрлендіргіштері: %1 "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:234
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:232
 msgid "Def.: "
 msgstr "Анықт.: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:236
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:234
 msgid "Decl.: "
 msgstr "Мәлімд.: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:243
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:241
 msgid " Def.: "
 msgstr " Анықт.: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:250
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:248
 msgid " Decl.: "
 msgstr " Мәлімд.: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:256
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:254
 msgid "Show uses"
 msgstr "Пайдалануларды көрсету"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:278
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:276
 msgid "Show documentation for "
 msgstr "Мынаның құжаттамасын көрсету: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:378
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:376
 msgid "Overrides a "
 msgstr "Мынаны жаңадан анықтайды: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:379
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:394
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:377
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:392
 msgid "function"
 msgstr "функция"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:380
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:395
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:378
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:393
 msgid " from "
 msgstr " мынадан: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:393
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:391
 msgid "Hides a "
 msgstr "Мынаны жасырады: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:411
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:409
 msgid "Overridden in "
 msgstr "Мынада қайта анықталған: "
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:424
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:422
 msgid "Overriders possible, show all"
 msgstr "Қайта анықтамалар мүмкін, бүкілін көрсету"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:424
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:422
 msgid "More overriders possible, show all"
 msgstr "Тағы қайта анықтамалар мүмкін, бүкілін көрсету"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:434
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:432
 msgid "Inherited by "
 msgstr "Мынау мұралаған:"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:447
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:445
 msgid "Inheriters possible, show all"
 msgstr "Мұралағандар мүмкін, бүкілін көрсету"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:447
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:445
 msgid "More inheriters possible, show all"
 msgstr "Тағы мұралағандар мүмкін, бүкілін көрсету"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:624
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:622
 msgctxt "A declaration that is unknown"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:650
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:648
 msgctxt "tells if a declaration is defining the variable's value"
 msgid "definition"
 msgstr "анықтама"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:655
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:653
 msgctxt "as in c++ forward declaration"
 msgid "forward"
 msgstr "алдын ала"
 
-#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:660
+#: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:658
 msgctxt "a variable that won't change, const"
 msgid "constant"
 msgstr "тұрақты мән"
@@ -753,158 +878,206 @@ msgctxt "Count of files this file was included into"
 msgid "Included by"
 msgstr "Мынаға кірген:"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:387
+#: language/duchain/navigation/abstractnavigationcontext.cpp:379
 msgid "Typedef"
 msgstr "Түрін анықтау"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:390
+#: language/duchain/navigation/abstractnavigationcontext.cpp:382
 msgid "Class"
 msgstr "Класс"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:392
-#: shell/settings/environmentgroupmodel.cpp:90
+#: language/duchain/navigation/abstractnavigationcontext.cpp:384
+#: shell/settings/environmentgroupmodel.cpp:95
 msgid "Variable"
 msgstr "Айнымалы"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:394
+#: language/duchain/navigation/abstractnavigationcontext.cpp:386
 msgid "Namespace"
 msgstr "Атаулар кеңістігі"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:399
+#: language/duchain/navigation/abstractnavigationcontext.cpp:391
 msgid "Namespace import"
 msgstr "Атаулар кеңістігін импорттау"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:401
+#: language/duchain/navigation/abstractnavigationcontext.cpp:393
 msgid "Namespace alias"
 msgstr "Атаулар кеңістігінің басқа атауы"
 
-#: language/duchain/navigation/abstractnavigationcontext.cpp:408
+#: language/duchain/navigation/abstractnavigationcontext.cpp:400
 msgid "Forward Declaration"
 msgstr "Алдын-ала мәлімдеме"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:43
+#: language/duchain/navigation/problemnavigationcontext.cpp:46
 #, kde-format
 msgid "Solve: %1"
 msgstr "Шешімі: %1"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:45
+#: language/duchain/navigation/problemnavigationcontext.cpp:48
 msgid "Solve"
 msgstr "Шешу"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:78
+#: language/duchain/navigation/problemnavigationcontext.cpp:81
 msgid "Problem"
 msgstr "Мәселе"
 
-#: language/duchain/navigation/problemnavigationcontext.cpp:88
+#: language/duchain/navigation/problemnavigationcontext.cpp:91
 #, kde-format
 msgid "Problem in <b>%1</b>:<br/>"
 msgstr "<b>%1</b> мәселесі:<br/>"
+
+#: language/duchain/navigation/problemnavigationcontext.cpp:111
+msgid " in "
+msgstr ""
 
 #: language/duchain/navigation/usescollector.cpp:379
 #, kde-format
 msgid "%1 still needs an update!"
 msgstr "%1 дегенді әлі жаңарту керек!"
 
-#: language/duchain/navigation/usesnavigationcontext.cpp:44
+#: language/duchain/navigation/usesnavigationcontext.cpp:46
 msgid "Uses of "
 msgstr "Мынаны пайдалануы"
 
-#: language/duchain/navigation/usesnavigationcontext.cpp:49
+#: language/duchain/navigation/usesnavigationcontext.cpp:51
 #, kde-format
 msgid "Uses of %1"
 msgstr "%1 пайдалануы"
 
-#: language/duchain/navigation/useswidget.cpp:128
+#: language/duchain/navigation/useswidget.cpp:118
 #, kde-format
 msgctxt "refers to a line in source code"
 msgid "Line <b>%1</b>:"
 msgstr "<b>%1</b> жолы:"
 
-#: language/duchain/navigation/useswidget.cpp:177
-#: language/duchain/navigation/useswidget.cpp:182
+#: language/duchain/navigation/useswidget.cpp:167
+#: language/duchain/navigation/useswidget.cpp:172
 #, kde-format
 msgctxt "Refers to a line in source code"
 msgid "Line <b>%1</b>"
 msgstr "<b>%1</b> жолы"
 
-#: language/duchain/navigation/useswidget.cpp:341
+#: language/duchain/navigation/useswidget.cpp:331
 msgid "Unknown context"
 msgstr "Контексті беймәлім"
 
-#: language/duchain/navigation/useswidget.cpp:348
-#: shell/launchconfigurationdialog.cpp:481
+#: language/duchain/navigation/useswidget.cpp:338
+#: shell/launchconfigurationdialog.cpp:482
 msgid "Global"
 msgstr "Глобалды"
 
-#: language/duchain/navigation/useswidget.cpp:371
+#: language/duchain/navigation/useswidget.cpp:361
 #, kde-format
 msgctxt "%1: source file"
 msgid "In %1"
 msgstr "%1 ішінде"
 
-#: language/duchain/navigation/useswidget.cpp:400
+#: language/duchain/navigation/useswidget.cpp:390
 msgid "Definition"
 msgstr "Анықтама"
 
-#: language/duchain/navigation/useswidget.cpp:400
+#: language/duchain/navigation/useswidget.cpp:390
 msgid "Declaration"
 msgstr "Мәлімдеме"
 
-#: language/duchain/navigation/useswidget.cpp:435
+#: language/duchain/navigation/useswidget.cpp:425
 #, kde-format
 msgctxt "%1: number of uses, %2: filename with uses"
 msgid "%2: 1 use"
 msgid_plural "%2: %1 uses"
 msgstr[0] "%2: %1 пайдалану"
 
-#: language/duchain/navigation/useswidget.cpp:439
-#: language/duchain/navigation/useswidget.cpp:473
+#: language/duchain/navigation/useswidget.cpp:429
+#: language/duchain/navigation/useswidget.cpp:463
 msgctxt "Refers to closing a UI element"
 msgid "Collapse"
 msgstr "Бүктеу"
 
-#: language/duchain/navigation/useswidget.cpp:470
+#: language/duchain/navigation/useswidget.cpp:460
 msgctxt "Refers to opening a UI element"
 msgid "Expand"
 msgstr "Тарқату"
 
-#: language/duchain/navigation/useswidget.cpp:546
+#: language/duchain/navigation/useswidget.cpp:541
 #, kde-format
 msgid "1 use found"
 msgid_plural "%1 uses found"
 msgstr[0] "%1 пайдалану табылды"
 
-#: language/duchain/navigation/useswidget.cpp:547
+#: language/duchain/navigation/useswidget.cpp:542
 msgid "Expand all"
 msgstr "Бүкілін тарқату"
 
-#: language/duchain/navigation/useswidget.cpp:548
+#: language/duchain/navigation/useswidget.cpp:543
 msgid "Collapse all"
 msgstr "Бүкілін бүктеу"
 
+#: language/duchain/problem.cpp:183
+#, fuzzy
+#| msgid "Show warnings"
+msgid "Warning"
+msgstr "Ескертулерді көрсету"
+
+#: language/duchain/problem.cpp:185
+msgid "Hint"
+msgstr ""
+
+#: language/duchain/problem.cpp:194
+msgid "Disk"
+msgstr "Диск"
+
+#: language/duchain/problem.cpp:196
+msgid "Preprocessor"
+msgstr "Алдыңғы талдау"
+
+#: language/duchain/problem.cpp:198
+msgid "Lexer"
+msgstr "Лексика талдауы"
+
+#: language/duchain/problem.cpp:200
+msgid "Parser"
+msgstr "Синтаксис талдауы"
+
+#: language/duchain/problem.cpp:202
+msgid "Definition-Use Chain"
+msgstr "Анықтама-пайдалану тізбегі"
+
+#: language/duchain/problem.cpp:204
+msgid "Semantic Analysis"
+msgstr "Семантикалық талдау"
+
+#: language/duchain/problem.cpp:206
+msgid "TODO"
+msgstr "TODO"
+
+#: language/duchain/problem.cpp:209
+msgid "Unknown"
+msgstr "Беймәлім"
+
 #: language/duchain/repositories/itemrepository.h:207
-#: language/duchain/repositories/itemrepository.h:2126
+#: language/duchain/repositories/itemrepository.h:2134
 #, kde-format
 msgid "Failed writing to %1, probably the disk is full"
 msgstr "%1 жазу жаңылысы, дискі толып кеткен сияқты"
 
-#: language/duchain/repositories/itemrepositoryregistry.cpp:262
-#, kde-format
-msgid "Session crashed %1 time in a row"
+#: language/duchain/repositories/itemrepositoryregistry.cpp:90
+#, fuzzy, kde-format
+#| msgid "The Session crashed once."
+#| msgid_plural "The Session crashed %1 times in a row."
+msgid "The previous session crashed"
 msgid_plural "Session crashed %1 times in a row"
-msgstr[0] "Сеанс %1 рет қатар қирады"
+msgstr[0] "Сеанс %1 рет қатар қирады."
 
-#: language/duchain/repositories/itemrepositoryregistry.cpp:263
+#: language/duchain/repositories/itemrepositoryregistry.cpp:91
 msgctxt "@action"
 msgid "Clear cache"
 msgstr "Кэшін тазалау"
 
-#: language/duchain/repositories/itemrepositoryregistry.cpp:264
+#: language/duchain/repositories/itemrepositoryregistry.cpp:92
 msgctxt "@title"
 msgid "Session crashed"
 msgstr "Сеанс қирады"
 
-#: language/duchain/repositories/itemrepositoryregistry.cpp:265
+#: language/duchain/repositories/itemrepositoryregistry.cpp:93
 msgid ""
 "The crash may be caused by a corruption of cached data.\n"
 "\n"
@@ -916,51 +1089,36 @@ msgstr ""
 "KDevelop кэшті тазаласын десеңіз ОК-ді басыңыз, әлде кэштің мазмұны дұрыс "
 "десеңіз Қайту дегенді басыңыз."
 
-#: language/interfaces/iproblem.cpp:132
-msgid "Disk"
-msgstr "Диск"
+#: language/duchain/types/containertypes.cpp:87
+#, kde-format
+msgid "%1 of %2"
+msgstr ""
 
-#: language/interfaces/iproblem.cpp:134
-msgid "Preprocessor"
-msgstr "Алдыңғы талдау"
-
-#: language/interfaces/iproblem.cpp:136
-msgid "Lexer"
-msgstr "Лексика талдауы"
-
-#: language/interfaces/iproblem.cpp:138
-msgid "Parser"
-msgstr "Синтаксис талдауы"
-
-#: language/interfaces/iproblem.cpp:140
-msgid "Definition-Use Chain"
-msgstr "Анықтама-пайдалану тізбегі"
-
-#: language/interfaces/iproblem.cpp:142
-msgid "Semantic Analysis"
-msgstr "Семантикалық талдау"
-
-#: language/interfaces/iproblem.cpp:144
-msgid "TODO"
-msgstr "TODO"
-
-#: language/interfaces/iproblem.cpp:147
-msgid "Unknown"
+#: language/duchain/types/containertypes.cpp:97
+#: language/duchain/types/containertypes.cpp:98
+#, fuzzy
+#| msgid "Unknown"
+msgid "unknown"
 msgstr "Беймәлім"
 
-#: language/util/debuglanguageparserhelper.h:167
+#: language/duchain/types/containertypes.cpp:100
+#, kde-format
+msgid "%1 of %2 : %3"
+msgstr ""
+
+#: language/util/debuglanguageparserhelper.h:166
 msgid "print generated AST tree"
 msgstr "жасаған AST бұтағын шығару"
 
-#: language/util/debuglanguageparserhelper.h:168
+#: language/util/debuglanguageparserhelper.h:167
 msgid "print generated token stream"
 msgstr "жасаған лексема ағынды шығару"
 
-#: language/util/debuglanguageparserhelper.h:169
+#: language/util/debuglanguageparserhelper.h:168
 msgid "code to parse"
 msgstr "талдайтын код"
 
-#: language/util/debuglanguageparserhelper.h:170
+#: language/util/debuglanguageparserhelper.h:169
 msgid ""
 "files or - to read from STDIN, the latter is the default if nothing is "
 "provided"
@@ -1050,64 +1208,64 @@ msgstr "*** Жаңылыс: %1 ***"
 msgid "*** Finished ***"
 msgstr "*** Аяқталды ***"
 
-#: outputview/outputfilteringstrategies.cpp:117
-#: outputview/outputfilteringstrategies.cpp:126
-#: outputview/outputfilteringstrategies.cpp:134
-#: outputview/outputfilteringstrategies.cpp:146
+#: outputview/outputfilteringstrategies.cpp:160
+#: outputview/outputfilteringstrategies.cpp:169
+#: outputview/outputfilteringstrategies.cpp:177
+#: outputview/outputfilteringstrategies.cpp:189
 #, fuzzy
 #| msgid "compiling"
 msgctxt ""
 msgid "compiling"
 msgstr "компиляция"
 
-#: outputview/outputfilteringstrategies.cpp:121
-#: outputview/outputfilteringstrategies.cpp:127
-#: outputview/outputfilteringstrategies.cpp:135
-#: outputview/outputfilteringstrategies.cpp:145
+#: outputview/outputfilteringstrategies.cpp:164
+#: outputview/outputfilteringstrategies.cpp:170
+#: outputview/outputfilteringstrategies.cpp:178
+#: outputview/outputfilteringstrategies.cpp:188
 #, fuzzy
 #| msgid "generating"
 msgctxt ""
 msgid "generating"
 msgstr "жасау"
 
-#: outputview/outputfilteringstrategies.cpp:123
-#: outputview/outputfilteringstrategies.cpp:129
-#: outputview/outputfilteringstrategies.cpp:131
-#: outputview/outputfilteringstrategies.cpp:137
+#: outputview/outputfilteringstrategies.cpp:166
+#: outputview/outputfilteringstrategies.cpp:172
+#: outputview/outputfilteringstrategies.cpp:174
+#: outputview/outputfilteringstrategies.cpp:180
 msgctxt "Linking object files into a library or executable"
 msgid "linking"
 msgstr "жинақтау"
 
-#: outputview/outputfilteringstrategies.cpp:133
+#: outputview/outputfilteringstrategies.cpp:176
 #, fuzzy
 #| msgid "built"
 msgctxt ""
 msgid "built"
 msgstr "құрастыру"
 
-#: outputview/outputfilteringstrategies.cpp:138
+#: outputview/outputfilteringstrategies.cpp:181
 #, fuzzy
 #| msgid "configuring"
 msgctxt ""
 msgid "configuring"
 msgstr "баптау"
 
-#: outputview/outputfilteringstrategies.cpp:139
-#: outputview/outputfilteringstrategies.cpp:142
+#: outputview/outputfilteringstrategies.cpp:182
+#: outputview/outputfilteringstrategies.cpp:185
 #, fuzzy
 #| msgid "installing"
 msgctxt ""
 msgid "installing"
 msgstr "орнату"
 
-#: outputview/outputfilteringstrategies.cpp:141
+#: outputview/outputfilteringstrategies.cpp:184
 #, fuzzy
 #| msgid "creating"
 msgctxt ""
 msgid "creating"
 msgstr "жарату"
 
-#: project/abstractfilemanagerplugin.cpp:312
+#: project/abstractfilemanagerplugin.cpp:316
 #, kde-format
 msgid ""
 "The base folder of project <b>%1</b> got deleted or moved outside of "
@@ -1118,11 +1276,11 @@ msgstr ""
 "басқа орынға ауыстырылды.\n"
 "Жоба жабылады."
 
-#: project/abstractfilemanagerplugin.cpp:315
+#: project/abstractfilemanagerplugin.cpp:319
 msgid "Project Folder Deleted"
 msgstr "Жоба қапшығы өшірілген"
 
-#: project/abstractfilemanagerplugin.cpp:339
+#: project/abstractfilemanagerplugin.cpp:343
 #, kde-format
 msgid ""
 "You tried to rename '%1' to '%2', but the latter is filtered and will be "
@@ -1163,32 +1321,32 @@ msgctxt "Unspecified set of build items (e. g. projects, targets)"
 msgid "Various items"
 msgstr "Түрлі аталымдар"
 
-#: project/helper.cpp:66
+#: project/helper.cpp:67
 #, kde-format
 msgid "Cannot remove folder <i>%1</i>."
 msgstr "<i>%1</i> қапшығы өшірілмеді."
 
-#: project/helper.cpp:67
+#: project/helper.cpp:68
 #, kde-format
 msgid "Cannot remove file <i>%1</i>."
 msgstr "<i>%1</i> файлы өшірілмеді."
 
-#: project/helper.cpp:77
+#: project/helper.cpp:83
 #, kde-format
 msgid "The file <i>%1</i> already exists."
 msgstr "<i>%1</i> файлы бар екен."
 
-#: project/helper.cpp:85
+#: project/helper.cpp:91
 #, kde-format
 msgid "Cannot create temporary file to create <i>%1</i>."
 msgstr "<i>%1</i> құру үшін керек уақытша файл құрылмады."
 
-#: project/helper.cpp:90
+#: project/helper.cpp:96
 #, kde-format
 msgid "Cannot create file <i>%1</i>."
 msgstr "<i>%1</i> файлы құрылмады."
 
-#: project/helper.cpp:100
+#: project/helper.cpp:111
 #, kde-format
 msgid "Cannot create folder <i>%1</i>."
 msgstr "<i>%1</i> қапшығы құрылмады."
@@ -1228,17 +1386,17 @@ msgstr "Жолын табуды қалаған аталымды таңдау."
 msgid "Select an item..."
 msgstr "Аталымды таңдау..."
 
-#: project/projectutils.cpp:86
+#: project/projectutils.cpp:87
 #, kde-format
 msgid "Folder %1"
 msgstr "%1 қапшығы"
 
-#: project/projectutils.cpp:88
+#: project/projectutils.cpp:89
 #, kde-format
 msgid "Project %1"
 msgstr "%1 жобасы"
 
-#: shell/areadisplay.cpp:53
+#: shell/areadisplay.cpp:54
 msgid ""
 "Execute actions to change the area.<br />An area is a toolview configuration "
 "for a specific use case. From here you can also navigate back to the default "
@@ -1248,11 +1406,11 @@ msgstr ""
 "қолданатың құрал панелінің баптауы. Бұдан бастап, әдетті код алаңына қайтуға "
 "болады."
 
-#: shell/areadisplay.cpp:79
+#: shell/areadisplay.cpp:80
 msgid "Back to code"
 msgstr "Кодына қайту"
 
-#: shell/assistantpopup.cpp:133
+#: shell/assistantpopup.cpp:297
 msgid "Hide"
 msgstr "Жасыру"
 
@@ -1265,7 +1423,9 @@ msgid "Development Platform for IDE-like Applications"
 msgstr "IDE-секілді бағдарламаларды жасау платформасы"
 
 #: shell/core.cpp:100
-msgid "Copyright 2004-2013, The KDevelop developers"
+#, fuzzy
+#| msgid "Copyright 2004-2013, The KDevelop developers"
+msgid "Copyright 2004-2014, The KDevelop developers"
 msgstr "Copyright 2004-2013, KDevelop құрастырушылары"
 
 #: shell/core.cpp:102
@@ -1386,27 +1546,27 @@ msgstr ""
 "KDevelop-ті KDE SC 4.6-дан бұрынғы жүйесінде қолданатын SmartInterface-пен "
 "істеу үшін KDevelop-тың 4.1 не одан да ертегісі керек."
 
-#: shell/debugcontroller.cpp:132
+#: shell/debugcontroller.cpp:131
 msgid "Frame Stack"
 msgstr "Фрейм стегі"
 
-#: shell/debugcontroller.cpp:138
+#: shell/debugcontroller.cpp:137
 msgid "Breakpoints"
 msgstr "Аялдау нүктелері"
 
-#: shell/debugcontroller.cpp:144
+#: shell/debugcontroller.cpp:143
 msgid "Variables"
 msgstr "Айнымалылары"
 
-#: shell/debugcontroller.cpp:202
+#: shell/debugcontroller.cpp:201
 msgid "&Continue"
 msgstr "Жа&лғастыру"
 
-#: shell/debugcontroller.cpp:203
+#: shell/debugcontroller.cpp:202
 msgid "Continue application execution"
 msgstr "Бағдарлама орындалуын жалғастыру"
 
-#: shell/debugcontroller.cpp:204
+#: shell/debugcontroller.cpp:203
 msgid ""
 "Continues the execution of your application in the debugger. This only takes "
 "effect when the application has been halted by the debugger (i.e. a "
@@ -1415,63 +1575,63 @@ msgstr ""
 "Жөндегіштегі бағдарламаны орындауын жалғастыру. Бағдарламаны жөндегіш "
 "тоқтатқанда ғана істейді (мысалы аялдау нүктесінде не үзу бұйрығымен)."
 
-#: shell/debugcontroller.cpp:212
+#: shell/debugcontroller.cpp:211
 msgid "&Restart"
 msgstr "&Қайта бастау"
 
-#: shell/debugcontroller.cpp:213
+#: shell/debugcontroller.cpp:212
 msgid "Restart program"
 msgstr "Бағдарламаны қайта бастау"
 
-#: shell/debugcontroller.cpp:214
+#: shell/debugcontroller.cpp:213
 msgid "Restarts applications from the beginning."
 msgstr "Бағдарламаны басынан жаңадан жегу."
 
-#: shell/debugcontroller.cpp:220
+#: shell/debugcontroller.cpp:219
 msgid "Interrupt"
 msgstr "Үзу"
 
-#: shell/debugcontroller.cpp:221
+#: shell/debugcontroller.cpp:220
 msgid "Interrupt application"
 msgstr "Бағдарлама орындауын үзу"
 
-#: shell/debugcontroller.cpp:222
+#: shell/debugcontroller.cpp:221
 msgid "Interrupts the debugged process or current debugger command."
 msgstr "Жөндеп жатқан процесті назардағы командасында үзу."
 
-#: shell/debugcontroller.cpp:226
+#: shell/debugcontroller.cpp:225
 msgid "Run to &Cursor"
 msgstr "&Меңзерге дейін"
 
-#: shell/debugcontroller.cpp:227
+#: shell/debugcontroller.cpp:226
 msgid "Run to cursor"
 msgstr "Меңзерге дейін орындау"
 
-#: shell/debugcontroller.cpp:228
+#: shell/debugcontroller.cpp:227
 msgid "Continues execution until the cursor position is reached."
 msgstr "Бағдарламаны меңзер тұрған орынға дейін орындау."
 
-#: shell/debugcontroller.cpp:233
+#: shell/debugcontroller.cpp:232
 msgid "Set E&xecution Position to Cursor"
 msgstr "Орындау орынды меңзегенге а&уыстыру"
 
-#: shell/debugcontroller.cpp:234
+#: shell/debugcontroller.cpp:233
 msgid "Jump to cursor"
 msgstr "Меңзерге секіріп өту"
 
-#: shell/debugcontroller.cpp:235
+#: shell/debugcontroller.cpp:234
 msgid "Continue execution from the current cursor position."
 msgstr "Орындау орынның көрсеткішін меңзер көрсетіп тұрған жерге ауыстыру."
 
-#: shell/debugcontroller.cpp:239
+#: shell/debugcontroller.cpp:238
 msgid "Step &Over"
 msgstr "Қадам жа&сау"
 
-#: shell/debugcontroller.cpp:241
+#: shell/debugcontroller.cpp:240
 msgid "Step over the next line"
 msgstr "Келесі жолға аттау"
 
-#: shell/debugcontroller.cpp:242
+#: shell/debugcontroller.cpp:241
 msgid ""
 "Executes one line of source in the current source file. If the source line "
 "is a call to a function the whole function is executed and the app will stop "
@@ -1481,27 +1641,27 @@ msgstr ""
 "функция болса - оны түгелдей орындап, функцияны шақыру жолының кейінгі жолға "
 "ауысу."
 
-#: shell/debugcontroller.cpp:250
+#: shell/debugcontroller.cpp:249
 msgid "Step over Ins&truction"
 msgstr "Келесі &нұсқауға өту"
 
-#: shell/debugcontroller.cpp:251
+#: shell/debugcontroller.cpp:250
 msgid "Step over instruction"
 msgstr "Келесі нұсқауға өту"
 
-#: shell/debugcontroller.cpp:252
+#: shell/debugcontroller.cpp:251
 msgid "Steps over the next assembly instruction."
 msgstr "Келесі ассемблер нұсқауына өту."
 
-#: shell/debugcontroller.cpp:257
+#: shell/debugcontroller.cpp:256
 msgid "Step &Into"
 msgstr "Аттап &кіру"
 
-#: shell/debugcontroller.cpp:259
+#: shell/debugcontroller.cpp:258
 msgid "Step into the next statement"
 msgstr "Тура бір қадам жасау"
 
-#: shell/debugcontroller.cpp:260
+#: shell/debugcontroller.cpp:259
 msgid ""
 "Executes exactly one line of source. If the source line is a call to a "
 "function then execution will stop after the function has been entered."
@@ -1509,27 +1669,27 @@ msgstr ""
 "Назардағы бастапқы код файлда тура бір жолды орындап келесіне өту. Яғни егер "
 "ол жол функция болса - оған кіріп, бірінші орындайтын жолында тоқтау."
 
-#: shell/debugcontroller.cpp:267
+#: shell/debugcontroller.cpp:266
 msgid "Step into I&nstruction"
 msgstr "Келесі нұ&сқауға аттап кіру"
 
-#: shell/debugcontroller.cpp:268
+#: shell/debugcontroller.cpp:267
 msgid "Step into instruction"
 msgstr "Келесі нұсқауға аттап кіру"
 
-#: shell/debugcontroller.cpp:269
+#: shell/debugcontroller.cpp:268
 msgid "Steps into the next assembly instruction."
 msgstr "Келесі ассемблер нұсқауына аттап кіру."
 
-#: shell/debugcontroller.cpp:273
+#: shell/debugcontroller.cpp:272
 msgid "Step O&ut"
 msgstr "Аттап кету"
 
-#: shell/debugcontroller.cpp:275
+#: shell/debugcontroller.cpp:274
 msgid "Step out of the current function"
 msgstr "Назардағы функциядан шығып кету"
 
-#: shell/debugcontroller.cpp:276
+#: shell/debugcontroller.cpp:275
 msgid ""
 "Executes the application until the currently executing function is "
 "completed. The debugger will then display the line after the original call "
@@ -1540,19 +1700,19 @@ msgstr ""
 "жолынан кейінгі жолға ауысады. Егер орындалып жатқаны сыртқы блок болса "
 "(мысалы, main()) ештеңе орындалмайды."
 
-#: shell/debugcontroller.cpp:284
+#: shell/debugcontroller.cpp:283
 msgid "Toggle Breakpoint"
 msgstr "Аялдау нүктені қосу/өшіру"
 
-#: shell/debugcontroller.cpp:285
+#: shell/debugcontroller.cpp:284
 msgid "Ctrl+Alt+B"
 msgstr "Ctrl+Alt+B"
 
-#: shell/debugcontroller.cpp:286
+#: shell/debugcontroller.cpp:285
 msgid "Toggle breakpoint"
 msgstr "Аялдау нүктені қосу/өшіру"
 
-#: shell/debugcontroller.cpp:287
+#: shell/debugcontroller.cpp:286
 msgid "Toggles the breakpoint at the current line in editor."
 msgstr "Редакторындағы назардағы жолда аялдау нүктені қосу не өшіру."
 
@@ -1567,23 +1727,23 @@ msgstr "Жегу"
 msgid "Debugger Toolbar"
 msgstr "Жөндегіш құрал панелі"
 
-#: shell/documentationcontroller.cpp:77
+#: shell/documentationcontroller.cpp:116
 msgid "Show Documentation"
 msgstr "Құжаттамасын көрсету"
 
-#: shell/documentcontroller.cpp:75
+#: shell/documentcontroller.cpp:72
 msgid "Untitled"
 msgstr "Аталмаған"
 
-#: shell/documentcontroller.cpp:136 shell/documentcontroller.cpp:219
+#: shell/documentcontroller.cpp:133 shell/documentcontroller.cpp:216
 msgid "*|Text File\n"
 msgstr "*|Мәтін файлы\n"
 
-#: shell/documentcontroller.cpp:138 shell/documentcontroller.cpp:221
+#: shell/documentcontroller.cpp:135 shell/documentcontroller.cpp:218
 msgid "Open File"
 msgstr "Файлды ашу"
 
-#: shell/documentcontroller.cpp:319
+#: shell/documentcontroller.cpp:315
 #, kde-format
 msgid ""
 "KDevelop could not find the editor for file '%1' of type %2.\n"
@@ -1592,120 +1752,107 @@ msgstr ""
 "KDevelop түрі %2 деген %1 файлын ашатын редакторын таба алмады.\n"
 "Кәдімгі мәтін ретінде ашылсын ба?"
 
-#: shell/documentcontroller.cpp:319
+#: shell/documentcontroller.cpp:315
 msgctxt "@title:window"
 msgid "Could Not Find Editor"
 msgstr "Редакторы табылмады"
 
-#: shell/documentcontroller.cpp:625
+#: shell/documentcontroller.cpp:617
 msgid "&Open..."
 msgstr "&Ашу..."
 
-#: shell/documentcontroller.cpp:627
+#: shell/documentcontroller.cpp:619
 msgid "Open file"
 msgstr "Файлды ашу"
 
-#: shell/documentcontroller.cpp:628
+#: shell/documentcontroller.cpp:620
 msgid "Opens a file for editing."
 msgstr "Өңдейтін файлды ашу."
 
-#: shell/documentcontroller.cpp:632
+#: shell/documentcontroller.cpp:624
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
 msgstr "Қайтадан ашуды тездететін жуырда ашылған файлдар тізімі."
 
-#: shell/documentcontroller.cpp:637
+#: shell/documentcontroller.cpp:629
 msgid "Save Al&l"
 msgstr "Бүкі&лін сақтау"
 
-#: shell/documentcontroller.cpp:639
+#: shell/documentcontroller.cpp:631
 msgid "Save all open documents"
 msgstr "Барлық ашық құжаттарды сақтау"
 
-#: shell/documentcontroller.cpp:640
+#: shell/documentcontroller.cpp:632
 msgid ""
 "Save all open documents, prompting for additional information when necessary."
 msgstr "Керегінде қосымша мәліметті сұрап барлық ашық құжаттарды сақтау."
 
-#: shell/documentcontroller.cpp:646 shell/mainwindow_p.cpp:370
+#: shell/documentcontroller.cpp:638 shell/mainwindow_p.cpp:370
 msgid "Reload All"
 msgstr "Бүкілін қайта жүктеу"
 
-#: shell/documentcontroller.cpp:648
+#: shell/documentcontroller.cpp:640
 msgid "Revert all open documents"
 msgstr "Бүкіл ашық құжаттарды қайта жүктеп алу"
 
-#: shell/documentcontroller.cpp:649
+#: shell/documentcontroller.cpp:641
 msgid "Revert all open documents, returning to the previously saved state."
 msgstr "Барлық ашық құжаттарын соңғы сақталған түріне қайтару."
 
-#: shell/documentcontroller.cpp:655
+#: shell/documentcontroller.cpp:647
 msgid "&Close"
 msgstr "&Жабу"
 
-#: shell/documentcontroller.cpp:657
+#: shell/documentcontroller.cpp:649
 msgid "Close file"
 msgstr "Файлды жабу"
 
-#: shell/documentcontroller.cpp:658
+#: shell/documentcontroller.cpp:650
 msgid "Closes current file."
 msgstr "Назардағы файлды жабу."
 
-#: shell/documentcontroller.cpp:663
+#: shell/documentcontroller.cpp:655
 msgid "Clos&e All"
 msgstr "Бүкілін &жабу"
 
-#: shell/documentcontroller.cpp:665
+#: shell/documentcontroller.cpp:657
 msgid "Close all open documents"
 msgstr "Барлық ашық құжаттарды жабу"
 
-#: shell/documentcontroller.cpp:666
+#: shell/documentcontroller.cpp:658
 msgid ""
 "Close all open documents, prompting for additional information when "
 "necessary."
 msgstr "Керегінде қосымша мәліметті сұрап барлық ашық құжаттарды жабу."
 
-#: shell/documentcontroller.cpp:672
+#: shell/documentcontroller.cpp:664
 msgid "Close All Ot&hers"
 msgstr "Бүкіл ба&сқаларын жабу"
 
-#: shell/documentcontroller.cpp:674
+#: shell/documentcontroller.cpp:666
 msgid "Close all other documents"
 msgstr "Бүкіл басқа ашық құжаттарды жабу"
 
-#: shell/documentcontroller.cpp:675
+#: shell/documentcontroller.cpp:667
 msgid ""
 "Close all open documents, with the exception of the currently active "
 "document."
 msgstr "Назардағы құжаттан басқа барлық ашық құжаттарды жабу."
 
-#: shell/documentcontroller.cpp:680
+#: shell/documentcontroller.cpp:672
 msgid "Show Annotate on current document"
 msgstr "Назардағы құжаттың аңдатпасын көрсету"
 
-#: shell/documentcontroller.cpp:681
+#: shell/documentcontroller.cpp:673
 msgid "Annotate"
 msgstr "Аңдатпасы"
 
-#: shell/documentcontroller.cpp:1248 vcs/vcspluginhelper.cpp:395
+#: shell/documentcontroller.cpp:1228
 msgid ""
-"Cannot display annotations, missing interface KTextEditor::"
-"AnnotationInterface for the editor."
+"Could not annotate the document because it is not part of a version-"
+"controlled project."
 msgstr ""
-"Аңдатпа көрсетілмеді, редақторында KTextEditor::AnnotationInterface "
-"интерфейсі жоқ."
-
-#: shell/documentcontroller.cpp:1252
-#, kde-format
-msgid ""
-"Cannot execute annotate action because the document was not found, it was "
-"not versioned or it was not a text document:\n"
-"%1"
-msgstr ""
-"Аңдатпа жасау амалы болмады, өйткені құжат табылмады, не нұсқасы "
-"белгіленбеген, немесе ол мәтін құжаты емес:\n"
-"%1"
 
 #. i18n: ectx: Menu (session)
 #: shell/kdevsessionui.rc:5
@@ -1719,105 +1866,44 @@ msgctxt "@title:menu"
 msgid "Edit"
 msgstr "Өңдеу"
 
-#. i18n: ectx: property (text), widget (QPushButton, close)
-#: shell/kross/examples/guiexample/GUIExample/example.ui:25
-#: shell/workingsets/workingsettooltipwidget.cpp:316
-msgid "Close"
-msgstr "Жабу"
-
-#: shell/kross/xmltokross/mainduchain.cpp:46 shell/uicontroller.cpp:79
-msgid "Code"
-msgstr "Коды"
-
-#: shell/kross/xmltokross/mainduchain.cpp:82
-msgid "duchaintokross"
-msgstr "duchaintokross"
-
-#: shell/kross/xmltokross/mainduchain.cpp:83
-msgid "Wrapper generator from C++ to Kross"
-msgstr "C++ -> Kross кодын аударушы құралдың сырты"
-
-#: shell/kross/xmltokross/mainduchain.cpp:84
-msgid "(c) 2008, The KDevelop developers"
-msgstr "(c) Copyright 2008, KDevelop құрастырушылары"
-
-#: shell/kross/xmltokross/mainduchain.cpp:87
-msgid "input .cpp file"
-msgstr "кіріс .cpp файлы"
-
-#: shell/kross/xmltokross/mainduchain.cpp:88
-msgid "include directories for the parser (colon separated)"
-msgstr "синтаксис талдауына каталогтарды кіргізу (қос нүктемен бөліктеп)"
-
-#: shell/kross/xmltokross/mainduchain.cpp:89
-msgid ""
-"include directories that the generated implementation file will have (colon "
-"separated)"
-msgstr ""
-"іске асыруының файлды сыйғызатын каталогтарды кіргізу (қос нүктемен бөліктеп)"
-
-#: shell/kross/xmltokross/mainduchain.cpp:90
-msgid "build dir where the Makefile for the input is added"
-msgstr "кіріске Makefile жататын құрастыруға қолданатын каталог косылады"
-
-#: shell/kross/xmltokross/mainduchain.cpp:91
-msgid "filename to be used for the .moc and the .h file"
-msgstr ".moc және .h файл үшін қолданатын файл атауы"
-
-#: shell/kross/xmltokross/mainduchain.cpp:92
-msgid "directory where to put the .h output"
-msgstr "шығыс .h файлын салатын каталогы"
-
-#: shell/kross/xmltokross/mainduchain.cpp:93
-msgid "directory where to put the code output"
-msgstr "шығыс кодын салатын каталогы"
-
-#: shell/kross/xmltokross/mainduchain.cpp:94
-msgid "create implementation"
-msgstr "іске асыру кодын жасау"
-
-#: shell/kross/xmltokross/mainduchain.cpp:95
-msgid "Verbose output"
-msgstr "Егжей-тегжейлі шығыс"
-
-#: shell/launchconfigurationdialog.cpp:63
+#: shell/launchconfigurationdialog.cpp:64
 msgid "Launch Configurations"
 msgstr "Жегуді баптау"
 
-#: shell/launchconfigurationdialog.cpp:72
+#: shell/launchconfigurationdialog.cpp:73
 msgctxt "@info:tooltip"
 msgid "Add a new launch configuration."
 msgstr "Жаңа жегуді баптауын қосу."
 
-#: shell/launchconfigurationdialog.cpp:75
+#: shell/launchconfigurationdialog.cpp:76
 msgctxt "@info:tooltip"
 msgid "Delete selected launch configuration."
 msgstr "Таңдалған жегуді баптауын кетіру"
 
-#: shell/launchconfigurationdialog.cpp:200
+#: shell/launchconfigurationdialog.cpp:201
 msgid "Rename configuration"
 msgstr "Баптауды қайта атау"
 
-#: shell/launchconfigurationdialog.cpp:201
+#: shell/launchconfigurationdialog.cpp:202
 msgid "Delete configuration"
 msgstr "Баптауын кетіру"
 
-#: shell/launchconfigurationdialog.cpp:255
+#: shell/launchconfigurationdialog.cpp:256
 msgid ""
 "Selected Launch Configuration has unsaved changes. Do you want to save it?"
 msgstr "Таңдалған жегуді баптауының сақталмаған өзгерістері бар. Сақталсын ба?"
 
-#: shell/launchconfigurationdialog.cpp:255
+#: shell/launchconfigurationdialog.cpp:256
 msgid "Unsaved Changes"
 msgstr "Сақталмаған өзгерістер"
 
-#: shell/launchconfigurationdialog.cpp:325
+#: shell/launchconfigurationdialog.cpp:326
 #, kde-format
 msgctxt "%1 is a launcher name"
 msgid "No configuration is needed for '%1'"
 msgstr "'%1' дегенге баптау керегі жоқ"
 
-#: shell/launchconfigurationdialog.cpp:369
+#: shell/launchconfigurationdialog.cpp:370
 msgid ""
 "<i>Select a configuration to edit from the left,<br>or click the \"Add New\" "
 "button to add a new one.</i>"
@@ -1825,17 +1911,17 @@ msgstr ""
 "<i>Сол жақтан өңдеу үшін бір баптауын таңдаңыз<br>немесе 'Жаңасын қосу' "
 "батырманы басып жаңа баптауын бастаңыз</i>"
 
-#: shell/launchconfigurationdialog.cpp:437
+#: shell/launchconfigurationdialog.cpp:438
 #, kde-format
 msgid "Editing %2: <b>%1</b>"
 msgstr "%2 өңдеуі: <b>%1</b>"
 
-#: shell/launchconfigurationdialog.cpp:709
+#: shell/launchconfigurationdialog.cpp:710
 msgctxt "Name of the Launch Configurations"
 msgid "Name"
 msgstr "Атауы"
 
-#: shell/launchconfigurationdialog.cpp:712
+#: shell/launchconfigurationdialog.cpp:713
 msgctxt ""
 "The type of the Launch Configurations (i.e. Python Application, C++ "
 "Application)"
@@ -2080,13 +2166,16 @@ msgstr "Жоба мәліметі"
 msgid "Open Project"
 msgstr "Жобаны ашу"
 
-#: shell/openprojectdialog.cpp:139
-#, kde-format
-msgid "open %1 as project"
+#: shell/openprojectdialog.cpp:115
+#, fuzzy, kde-format
+#| msgid "open %1 as project"
+msgid "Open \"%1\" as project"
 msgstr "%1 дегенді жоба ретінде ашу"
 
-#: shell/openprojectdialog.cpp:145
-msgid "Selected URL is invalid."
+#: shell/openprojectdialog.cpp:119
+#, fuzzy
+#| msgid "Selected URL is invalid."
+msgid "Selected URL is invalid"
 msgstr "Таңдаған ULR дұрыс емес."
 
 #: shell/openprojectpage.cpp:63
@@ -2108,7 +2197,7 @@ msgstr ""
 msgid "System Configuration Error"
 msgstr "Жүйе баптауының қатесі"
 
-#: shell/partdocument.cpp:102 shell/textdocument.cpp:491
+#: shell/partdocument.cpp:102 shell/textdocument.cpp:553
 #, kde-format
 msgid "The document \"%1\" has unsaved changes. Would you like to save them?"
 msgstr "\"%1\" деген құжатта сақталмаған өзгерістер бар. Сақталсын ба?"
@@ -2128,7 +2217,7 @@ msgstr ""
 "процесімен өзгертілген.\n"
 "Сырттан жасалған өзгерістерді жоғалсын ба?"
 
-#: shell/plugincontroller.cpp:439
+#: shell/plugincontroller.cpp:470
 #, kde-format
 msgid ""
 "Plugin '%1' could not be loaded correctly and was disabled.\n"
@@ -2157,50 +2246,52 @@ msgstr "Егжей-тегжейлі барыс терезесін жасыру"
 msgid "Show detailed progress window"
 msgstr "Егжей-тегжейлі барыс терезесін көрсету"
 
-#: shell/project.cpp:111
+#: shell/project.cpp:113
 #, kde-format
 msgid "Loading Project %1"
 msgstr "%1 жобаны жүктеу"
 
-#: shell/project.cpp:119
+#: shell/project.cpp:121
 #, kde-format
 msgctxt "%1: Project name"
 msgid "Loading %1"
 msgstr "%1 дегенді жүктеу"
 
-#: shell/project.cpp:282
+#: shell/project.cpp:264
 #, kde-format
-msgid "Unable to load the project file %1"
-msgstr "%1 жоба файлы жүктелмеді"
+msgid ""
+"Unable to load the project file %1.<br>The project has been removed from the "
+"session."
+msgstr ""
 
-#: shell/project.cpp:305
+#: shell/project.cpp:289
 #, kde-format
 msgid "Unable to create hidden dir (%1) for developer file"
 msgstr "Құрылыс файл үшін жасырын (%1) каталогы құрылмады"
 
-#: shell/project.cpp:317
+#: shell/project.cpp:301
 #, kde-format
 msgid "Unable to get project file: %1"
 msgstr "Жоба файлы алынбады: %1"
 
-#: shell/project.cpp:357
+#: shell/project.cpp:341
 #, kde-format
 msgid "Could not load %1, a project with the same name '%2' is already open."
 msgstr "%1 файлы жүктелмеді, дәл солай аталған ('%2') ашылған жоба бар екен."
 
-#: shell/project.cpp:388
+#: shell/project.cpp:372
 #, kde-format
 msgid "Could not load project management plugin %1."
 msgstr "%1 жоба басқару плагині жүктелмеді."
 
-#: shell/project.cpp:395
+#: shell/project.cpp:379
 #, kde-format
 msgid ""
 "project importing plugin (%1) does not support the IProjectFileManager "
 "interface."
 msgstr "жоба импорттау плагині (%1) IProjectFileManager интерфейсін танымайды."
 
-#: shell/project.cpp:439
+#: shell/project.cpp:423
 msgid "Could not open project"
 msgstr "Жоба ашылмады."
 
@@ -2212,51 +2303,51 @@ msgstr ""
 "Құрастырушының өзіндік жоба баптауы сақталмады. Назар аударыңыз: жоба баптау "
 "өзгертулеріңіз жоғалады."
 
-#: shell/projectcontroller.cpp:150
+#: shell/projectcontroller.cpp:151
 #, kde-format
 msgid "Configure Project %1"
 msgstr "%1 жоба баптауы"
 
-#: shell/projectcontroller.cpp:272
+#: shell/projectcontroller.cpp:271
 #, kde-format
 msgid "Invalid Location: %1"
 msgstr "Жарамсыз орын: %1"
 
-#: shell/projectcontroller.cpp:279
+#: shell/projectcontroller.cpp:278
 msgid "Project already being opened"
 msgstr "Жоба ашылған екен"
 
-#: shell/projectcontroller.cpp:280
+#: shell/projectcontroller.cpp:279
 #, kde-format
 msgid "Already opening %1, not opening again"
 msgstr "Ашылған %1, екінші рет ашылмайды"
 
-#: shell/projectcontroller.cpp:411
+#: shell/projectcontroller.cpp:416
 msgid "Override"
 msgstr "Үстінен жазу"
 
-#: shell/projectcontroller.cpp:412
+#: shell/projectcontroller.cpp:417
 msgctxt "@info:tooltip"
 msgid ""
 "Continue to open the project and use the just provided project configuration."
 msgstr "Жобаны ашуды жалғастырып жаңа берілген баптауларды қолдану."
 
-#: shell/projectcontroller.cpp:415
+#: shell/projectcontroller.cpp:420
 msgid "Open Existing File"
 msgstr "Бар файлды ашу"
 
-#: shell/projectcontroller.cpp:416
+#: shell/projectcontroller.cpp:421
 msgctxt "@info:tooltip"
 msgid ""
 "Continue to open the project but use the existing project configuration."
 msgstr "Жобаны ашуды жалғастыру, бірақ бұрынғы баптауларды қолдану."
 
-#: shell/projectcontroller.cpp:419
+#: shell/projectcontroller.cpp:424
 msgctxt "@info:tooltip"
 msgid "Cancel and do not open the project."
 msgstr "Жобаны ашпай доғару."
 
-#: shell/projectcontroller.cpp:421
+#: shell/projectcontroller.cpp:426
 #, kde-format
 msgid ""
 "There already exists a project configuration file at %1.\n"
@@ -2265,30 +2356,30 @@ msgstr ""
 "%1 дегенде жоба баптау файлы бар екен.\n"
 "Оны ауыстырмақсыз ба?"
 
-#: shell/projectcontroller.cpp:423
+#: shell/projectcontroller.cpp:428
 msgid "Override existing project configuration"
 msgstr "Жоба баптау файлын ауыстыру"
 
-#: shell/projectcontroller.cpp:439
+#: shell/projectcontroller.cpp:444
 #, kde-format
 msgid "Unable to create configuration file %1"
 msgstr "%1 жоба баптау файл құрылмады"
 
-#: shell/projectcontroller.cpp:450
+#: shell/projectcontroller.cpp:455
 msgid "Reopen the current project?"
 msgstr "Назардағы жобаны жаңадан жүктеу"
 
-#: shell/projectcontroller.cpp:484
+#: shell/projectcontroller.cpp:489
 msgctxt "@action"
 msgid "Open / Import Project..."
 msgstr "Жобаны ашу/импорттау..."
 
-#: shell/projectcontroller.cpp:485
+#: shell/projectcontroller.cpp:490
 msgctxt "@info:tooltip"
 msgid "Open or import project"
 msgstr "Жобаны ашу не импорттау"
 
-#: shell/projectcontroller.cpp:486
+#: shell/projectcontroller.cpp:491
 msgctxt "@info:whatsthis"
 msgid ""
 "Open an existing KDevelop 4 project or import an existing Project into "
@@ -2301,72 +2392,72 @@ msgstr ""
 "KDevelop4 жоба файлын немесе бар каталогын KDevelop-та ашуға таңдау "
 "беріледі. Каталогты ашқанда, KDevelop4 жоба файлы табылмаса ол құрылады."
 
-#: shell/projectcontroller.cpp:497
+#: shell/projectcontroller.cpp:502
 msgctxt "@action"
 msgid "Fetch Project..."
 msgstr "Жобаны жүктеу..."
 
-#: shell/projectcontroller.cpp:499
+#: shell/projectcontroller.cpp:504
 msgctxt "@info:tooltip"
 msgid "Fetch project"
 msgstr "Жобаны жүктеу"
 
-#: shell/projectcontroller.cpp:500
+#: shell/projectcontroller.cpp:505
 msgctxt "@info:whatsthis"
 msgid ""
 "Guides the user through the project fetch and then imports it into KDevelop "
 "4."
 msgstr "Жобаны жүктеп, сосын KDevelop 4-ке импорттап береді."
 
-#: shell/projectcontroller.cpp:514
+#: shell/projectcontroller.cpp:519
 msgctxt "@action"
 msgid "Close Project(s)"
 msgstr "Жобаларды жабу"
 
-#: shell/projectcontroller.cpp:516
+#: shell/projectcontroller.cpp:521
 msgctxt "@info:tooltip"
 msgid "Closes all currently selected projects"
 msgstr "Бүкіл таңдалған жобаларды жабу"
 
-#: shell/projectcontroller.cpp:521
+#: shell/projectcontroller.cpp:526
 msgid "Open Configuration..."
 msgstr "Баптауын ашу..."
 
-#: shell/projectcontroller.cpp:527
+#: shell/projectcontroller.cpp:532
 msgid "Commit Current Project..."
 msgstr "Назардағы жобаны тапсыру..."
 
-#: shell/projectcontroller.cpp:528 vcs/vcspluginhelper.cpp:102
+#: shell/projectcontroller.cpp:533 vcs/vcspluginhelper.cpp:98
 msgid "Commit..."
 msgstr "Тапсыру..."
 
-#: shell/projectcontroller.cpp:537
+#: shell/projectcontroller.cpp:544
 msgid "Open Recent Project"
 msgstr "Жуырдағы жобаны ашу"
 
-#: shell/projectcontroller.cpp:538
+#: shell/projectcontroller.cpp:545
 msgctxt "@info:whatsthis"
 msgid "Opens recently opened project."
 msgstr "Жуырда ашылған жобаны ашу."
 
-#: shell/projectcontroller.cpp:543
+#: shell/projectcontroller.cpp:550
 msgid "Open Project for Current File"
 msgstr "Назардағы файлға қатысты жобаны ашу"
 
-#: shell/projectcontroller.cpp:659
+#: shell/projectcontroller.cpp:670
 #, kde-format
 msgid "Project already open: %1"
 msgstr "Жоба ашылған екен: %1"
 
-#: shell/projectcontroller.cpp:662
+#: shell/projectcontroller.cpp:673
 msgid "No active document"
 msgstr "Белсенді құжат жоқ"
 
-#: shell/projectcontroller.cpp:726
+#: shell/projectcontroller.cpp:737
 msgid "Project Already Open"
 msgstr "Жоба ашылған екен"
 
-#: shell/projectcontroller.cpp:730
+#: shell/projectcontroller.cpp:741
 msgid ""
 "The project you're trying to open is already open in at least one other "
 "session.<br>What do you want to do?"
@@ -2374,11 +2465,11 @@ msgstr ""
 "Ашып жатқан жобаңыз кемінде бір басқа сеансында ашылған екен. <br> Не "
 "істемексіз?"
 
-#: shell/projectcontroller.cpp:734
+#: shell/projectcontroller.cpp:745
 msgid "Add project to current session"
 msgstr "Назардағы сеансқа жобаны қосу"
 
-#: shell/projectcontroller.cpp:738
+#: shell/projectcontroller.cpp:749
 #, kde-format
 msgid "Open session %1"
 msgstr "%1 сеансын ашу"
@@ -2454,58 +2545,58 @@ msgstr "Қолданатын қапшықты таңдау..."
 msgid "Get"
 msgstr "табу"
 
-#: shell/runcontroller.cpp:89
+#: shell/runcontroller.cpp:91
 msgid "Profile"
 msgstr "Профилі"
 
-#: shell/runcontroller.cpp:98
+#: shell/runcontroller.cpp:100
 msgid "Execute"
 msgstr "Орындау"
 
-#: shell/runcontroller.cpp:399
+#: shell/runcontroller.cpp:401
 #, kde-format
 msgid "The current launch configuration does not support the '%1' mode."
 msgstr "Қолданыстағы жегу баптауы '%1' режімін танымайды."
 
-#: shell/runcontroller.cpp:416
+#: shell/runcontroller.cpp:418
 msgid "Configure Launches..."
 msgstr "Жегуді баптау..."
 
-#: shell/runcontroller.cpp:418
+#: shell/runcontroller.cpp:420
 msgid "Open Launch Configuration Dialog"
 msgstr "Жегуді баптау диалогын ашу"
 
-#: shell/runcontroller.cpp:419
+#: shell/runcontroller.cpp:421
 msgctxt "@info:tooltip"
 msgid "Open Launch Configuration Dialog"
 msgstr "Жегуді баптау диалогын ашу"
 
-#: shell/runcontroller.cpp:420
+#: shell/runcontroller.cpp:422
 msgctxt "@info:whatsthis"
 msgid ""
 "Opens a dialog to setup new launch configurations, or to change the existing "
 "ones."
 msgstr "Жаңа жегу баптауын орнату немесе барын өзгерту диалогын ашу."
 
-#: shell/runcontroller.cpp:423
+#: shell/runcontroller.cpp:425
 msgid "Execute Launch"
 msgstr "Жегуді орындау"
 
-#: shell/runcontroller.cpp:424
+#: shell/runcontroller.cpp:426
 msgctxt "Short text for 'Execute launch' used in the toolbar"
 msgid "Execute"
 msgstr "Орындау"
 
-#: shell/runcontroller.cpp:426
+#: shell/runcontroller.cpp:428
 msgctxt "@info:tooltip"
 msgid "Execute current launch"
 msgstr "Назардағы жегуді орындау"
 
-#: shell/runcontroller.cpp:427
+#: shell/runcontroller.cpp:429
 msgid "Execute current launch"
 msgstr "Назардағы жегуді орындау"
 
-#: shell/runcontroller.cpp:428
+#: shell/runcontroller.cpp:430
 msgctxt "@info:whatsthis"
 msgid ""
 "Executes the target or the program specified in currently active launch "
@@ -2513,25 +2604,25 @@ msgid ""
 msgstr ""
 "Қолданыстағы жегу баптауында көрсетілген мақсатты файлын орындауға жіберу."
 
-#: shell/runcontroller.cpp:432
+#: shell/runcontroller.cpp:434
 msgid "Debug Launch"
 msgstr "Жөндеу үшін жегу"
 
-#: shell/runcontroller.cpp:434
+#: shell/runcontroller.cpp:436
 msgctxt "Short text for 'Debug launch' used in the toolbar"
 msgid "Debug"
 msgstr "Жөндеу"
 
-#: shell/runcontroller.cpp:435
+#: shell/runcontroller.cpp:437
 msgctxt "@info:tooltip"
 msgid "Debug current launch"
 msgstr "Назардағы жегуді жөндеу"
 
-#: shell/runcontroller.cpp:436
+#: shell/runcontroller.cpp:438
 msgid "Debug current launch"
 msgstr "Назардағы жегуді жөндеу"
 
-#: shell/runcontroller.cpp:437
+#: shell/runcontroller.cpp:439
 msgctxt "@info:whatsthis"
 msgid ""
 "Executes the target or the program specified in currently active launch "
@@ -2540,77 +2631,77 @@ msgstr ""
 "Қолданыстағы жегу баптауында көрсетілген мақсатты файлын орындауға жөндегіш "
 "бақылауында жіберу."
 
-#: shell/runcontroller.cpp:450
+#: shell/runcontroller.cpp:452
 msgid "Stop All Jobs"
 msgstr "Бүкіл тапсырмаларды тоқтату"
 
-#: shell/runcontroller.cpp:451
+#: shell/runcontroller.cpp:453
 msgctxt "Short text for 'Stop All Jobs' used in the toolbar"
 msgid "Stop All"
 msgstr "Бүкілін тоқтату"
 
-#: shell/runcontroller.cpp:454
+#: shell/runcontroller.cpp:456
 msgctxt "@info:tooltip"
 msgid "Stop all currently running jobs"
 msgstr "Бүкіл орындалып жатқан тапсырмаларды тоқтату"
 
-#: shell/runcontroller.cpp:455
+#: shell/runcontroller.cpp:457
 msgctxt "@info:whatsthis"
 msgid "Requests that all running jobs are stopped."
 msgstr "Бүкіл орындалып жатқан тапсырмаларды тоқтату талабы."
 
-#: shell/runcontroller.cpp:461
+#: shell/runcontroller.cpp:463
 msgid "Stop"
 msgstr "Тоқтату"
 
-#: shell/runcontroller.cpp:462
+#: shell/runcontroller.cpp:464
 msgctxt "Short text for 'Stop' used in the toolbar"
 msgid "Stop"
 msgstr "Тоқтату"
 
-#: shell/runcontroller.cpp:463
+#: shell/runcontroller.cpp:465
 msgctxt "@info:tooltip"
 msgid "Menu allowing to stop individual jobs"
 msgstr "Жеке тапсырмаларды тоқтату мәзірі"
 
-#: shell/runcontroller.cpp:464
+#: shell/runcontroller.cpp:466
 msgctxt "@info:whatsthis"
 msgid "List of jobs that can be stopped individually."
 msgstr "Жекелеп тоқтатуға болатын тапсырмалар тізімі."
 
-#: shell/runcontroller.cpp:468
+#: shell/runcontroller.cpp:470
 msgid "Current Launch Configuration"
 msgstr "Қолданыстағы жегу баптауы"
 
-#: shell/runcontroller.cpp:469
+#: shell/runcontroller.cpp:471
 msgctxt "@info:tooltip"
 msgid "Current launch configuration"
 msgstr "Қолданыстағы жегу баптауы"
 
-#: shell/runcontroller.cpp:470
+#: shell/runcontroller.cpp:472
 msgid "Current launch Configuration"
 msgstr "Қолданыстағы жегу баптауы"
 
-#: shell/runcontroller.cpp:471
+#: shell/runcontroller.cpp:473
 msgctxt "@info:whatsthis"
 msgid "Select which launch configuration to run when run is invoked."
 msgstr "Жегу дегенде жегілетін баптауын таңдау."
 
-#: shell/runcontroller.cpp:565
+#: shell/runcontroller.cpp:567
 #, kde-format
 msgid "<%1> Unnamed job"
 msgstr "<%1> Атаусыз тапсырма"
 
-#: shell/runcontroller.cpp:670
+#: shell/runcontroller.cpp:672
 msgid "Process Error"
 msgstr "Процес қатесі"
 
-#: shell/runcontroller.cpp:896
+#: shell/runcontroller.cpp:898
 #, kde-format
 msgid "New %1 Launcher"
 msgstr "Жаңа %1 жеккіші"
 
-#: shell/runcontroller.cpp:933
+#: shell/runcontroller.cpp:935
 #, kde-format
 msgid "%1 As..."
 msgstr "%1 дегенді былай..."
@@ -2640,7 +2731,7 @@ msgstr "&Ештеңе сақтамау"
 msgid "Discard all modifications"
 msgstr "Бүкіл өзгерістерді ысырып тастау"
 
-#: shell/session.cpp:173
+#: shell/session.cpp:185
 msgid "(no projects)"
 msgstr "(жобалар жоқ)"
 
@@ -2716,11 +2807,11 @@ msgstr "Сеанстың атауын өзгерту"
 msgid "New Session Name"
 msgstr "Жаңа сеанс атауы"
 
-#: shell/sessioncontroller.cpp:385
+#: shell/sessioncontroller.cpp:383
 msgid "Recover"
 msgstr "Қалпына келтіру"
 
-#: shell/sessioncontroller.cpp:389
+#: shell/sessioncontroller.cpp:387
 #, kde-format
 msgctxt "%1: date of the last snapshot"
 msgid ""
@@ -2730,20 +2821,20 @@ msgstr ""
 "Сеанс соңғы қолданғанда қираған. %1 кезінде жасалған сақтық көшірмесінен "
 "келесі өзгертілген файлдарын қалпына келтіруге болады."
 
-#: shell/sessioncontroller.cpp:391
+#: shell/sessioncontroller.cpp:389
 msgid "Crash Recovery"
 msgstr "Қираудан қалпына келтіру"
 
-#: shell/sessioncontroller.cpp:411
+#: shell/sessioncontroller.cpp:409
 #, kde-format
 msgid "Could not recover %1, the recovery file is empty"
 msgstr "%1 деген қалпына келмеді, файлы бос"
 
-#: shell/sessioncontroller.cpp:411
+#: shell/sessioncontroller.cpp:409
 msgid "Recovery"
 msgstr "Қалпына келтіру"
 
-#: shell/sessioncontroller.cpp:520
+#: shell/sessioncontroller.cpp:516
 #, kde-format
 msgid ""
 "Failed to write recovery copies to %1. Please make sure that your home "
@@ -2756,66 +2847,66 @@ msgstr ""
 "үшін мекен каталогыңызда орын жететін болу керек. Орынды босатпай ол қирай "
 "береді."
 
-#: shell/sessioncontroller.cpp:521
+#: shell/sessioncontroller.cpp:517
 msgid "Recovery Error"
 msgstr "Қалпына келтіру қатесі"
 
-#: shell/sessioncontroller.cpp:566
+#: shell/sessioncontroller.cpp:554
 msgctxt "@action:inmenu"
 msgid "Start New Session"
 msgstr "Жаңа сеансты бастау"
 
-#: shell/sessioncontroller.cpp:567
+#: shell/sessioncontroller.cpp:555
 msgctxt "@info:tooltip"
 msgid "Start a new KDevelop instance with an empty session"
 msgstr "Бос KDevelop сеансын бастау"
 
-#: shell/sessioncontroller.cpp:571
+#: shell/sessioncontroller.cpp:559
 msgid "Rename Current Session..."
 msgstr "Сеанстың атауын өзгерту..."
 
-#: shell/sessioncontroller.cpp:575
+#: shell/sessioncontroller.cpp:563
 msgid "Delete Current Session..."
 msgstr "Сеансын өшіру"
 
-#: shell/sessioncontroller.cpp:579
+#: shell/sessioncontroller.cpp:567
 msgid "Quit"
 msgstr "Шығу"
 
-#: shell/sessioncontroller.cpp:585
+#: shell/sessioncontroller.cpp:573
 msgid "Configure Sessions..."
 msgstr "Сеансты баптау"
 
-#: shell/sessioncontroller.cpp:586
+#: shell/sessioncontroller.cpp:574
 msgid "Create/Delete/Activate Sessions"
 msgstr "Сеанстарды құру/өшіру/белсендету"
 
-#: shell/sessioncontroller.cpp:587
+#: shell/sessioncontroller.cpp:575
 msgid "Shows a dialog to Create/Delete Sessions and set a new active session."
 msgstr "Сеансты құру/өшіру және жаңа сеансты белсеңдету диалогын көрсету."
 
-#: shell/sessioncontroller.cpp:775
+#: shell/sessioncontroller.cpp:759
 #, kde-format
 msgid "Copy of %1"
 msgstr "%1 дегеннің көшірмесі "
 
-#: shell/sessioncontroller.cpp:830
+#: shell/sessioncontroller.cpp:814
 msgid "Search"
 msgstr "Іздеу"
 
-#: shell/sessioncontroller.cpp:853
+#: shell/sessioncontroller.cpp:837
 msgid "Identity"
 msgstr "Іс-әлпеті"
 
-#: shell/sessioncontroller.cpp:854
+#: shell/sessioncontroller.cpp:838
 msgid "Contents"
 msgstr "Мазмұны"
 
-#: shell/sessioncontroller.cpp:861
+#: shell/sessioncontroller.cpp:845
 msgid "Filter:"
 msgstr "Сүзгі:"
 
-#: shell/sessioncontroller.cpp:892
+#: shell/sessioncontroller.cpp:876
 msgid "Create New Session"
 msgstr "Жаңа сеансты бастау"
 
@@ -3145,7 +3236,7 @@ msgid " files"
 msgstr " файл"
 
 #: shell/settings/editstyledialog.cpp:69
-#: shell/settings/sourceformattersettings.cpp:82
+#: shell/settings/sourceformattersettings.cpp:76
 msgid ""
 "A KDE text-editor component could not be found.\n"
 "Please check your KDE installation."
@@ -3153,7 +3244,7 @@ msgstr ""
 "KDE мәтін өңдегіш компоненті табылмады;\n"
 "KDE орнатуын түгелдеңіз."
 
-#: shell/settings/editstyledialog.cpp:102
+#: shell/settings/editstyledialog.cpp:103
 msgid "No Source Formatter available"
 msgstr "Пішімдеу құралы жоқ"
 
@@ -3166,19 +3257,17 @@ msgstr "Қарап-шығу"
 msgid "Environment Settings"
 msgstr "Орта параметрлері"
 
-#: shell/settings/environmentwidget.cpp:123
-msgid "New Environment Variable"
+#: shell/settings/environmentwidget.cpp:57
+#, fuzzy
+#| msgid "Add new variable"
+msgid "Enter variable ..."
+msgstr "Жаңа айнымалыны қосу"
+
+#: shell/settings/environmentwidget.cpp:155
+#, fuzzy
+#| msgid "New Environment Variable"
+msgid "New Environment Variables"
 msgstr "Жаңа орта айнымалысы"
-
-#: shell/settings/environmentwidget.cpp:130
-msgctxt "Name of an environment variable"
-msgid "Variable Name:"
-msgstr "Айнымалының атауы:"
-
-#: shell/settings/environmentwidget.cpp:135
-msgctxt "Value of an environment variable"
-msgid "Variable Value:"
-msgstr "Айнымалының мәні:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: shell/settings/environmentwidget.ui:19
@@ -3200,15 +3289,17 @@ msgstr "Топты өшіру"
 msgid "Set As Default Group"
 msgstr "Әдетті топ қылу"
 
-#. i18n: ectx: property (toolTip), widget (KPushButton, newButton)
-#: shell/settings/environmentwidget.ui:92
-msgid "Add new variable"
-msgstr "Жаңа айнымалыны қосу"
-
 #. i18n: ectx: property (toolTip), widget (KPushButton, deleteButton)
-#: shell/settings/environmentwidget.ui:105
+#: shell/settings/environmentwidget.ui:92
 msgid "Remove variable"
 msgstr "Айнымалыны өшіру"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, newMultipleButton)
+#: shell/settings/environmentwidget.ui:105
+#, fuzzy
+#| msgid "Add new variable"
+msgid "Add Multiple Variables"
+msgstr "Жаңа айнымалыны қосу"
 
 #: shell/settings/pluginpreferences.cpp:40
 msgid "Plugin Selection"
@@ -3337,7 +3428,7 @@ msgstr "'Құрастыру' амалы жіберілгенде барлық ө
 msgid "Save all documents before building"
 msgstr "Құрастыру алдында бүкіл құжаттар сақталсын"
 
-#: shell/settings/sourceformattersettings.cpp:383
+#: shell/settings/sourceformattersettings.cpp:369
 #, kde-format
 msgid ""
 "The style %1 is also used for the following languages:\n"
@@ -3348,20 +3439,20 @@ msgstr ""
 "%2.\n"
 "Сонда да өшірмексіз бе?"
 
-#: shell/settings/sourceformattersettings.cpp:384
+#: shell/settings/sourceformattersettings.cpp:370
 msgid "Style being deleted"
 msgstr "Стилі өшірілмек"
 
-#: shell/settings/sourceformattersettings.cpp:436
+#: shell/settings/sourceformattersettings.cpp:422
 #, kde-format
 msgid "New %1"
 msgstr "Жаңа %1"
 
-#: shell/settings/sourceformattersettings.cpp:439
+#: shell/settings/sourceformattersettings.cpp:425
 msgid "New Style"
 msgstr "Жаңа стилі"
 
-#: shell/settings/sourceformattersettings.cpp:518
+#: shell/settings/sourceformattersettings.cpp:504
 msgid "No Language selected"
 msgstr "Тіл таңдалмаған"
 
@@ -3527,61 +3618,61 @@ msgstr "Тиісті құжаттар қатарлап қойылсын"
 msgid "User Interface Settings"
 msgstr "Пайдаланушы интерфейс баптауы"
 
-#: shell/sourceformattercontroller.cpp:73
+#: shell/sourceformattercontroller.cpp:75
 msgid "&Reformat Source"
 msgstr "Кодты қ&айта пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:74
+#: shell/sourceformattercontroller.cpp:76
 msgid "Reformat source using AStyle"
 msgstr "AStyle көмегімен кодты қайта пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:75
+#: shell/sourceformattercontroller.cpp:77
 msgid "Source reformatting functionality using <b>astyle</b> library."
 msgstr ""
 "<b>astyle</b> жиын файл көмегімен бастапқы кодты қайта пішімдеу функциясы."
 
-#: shell/sourceformattercontroller.cpp:79
+#: shell/sourceformattercontroller.cpp:81
 msgid "Reformat Line"
 msgstr "Жолды қайта пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:80
+#: shell/sourceformattercontroller.cpp:82
 msgid "Reformat current line using AStyle"
 msgstr "AStyle көмегімен назардағы жолды қайта пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:81
+#: shell/sourceformattercontroller.cpp:83
 msgid "Source reformatting of line under cursor using <b>astyle</b> library."
 msgstr ""
 "<b>astyle</b> жиын файл көмегімен меңзер орналасқан бастапқы код жолын қайта "
 "пішімдеу."
 
-#: shell/sourceformattercontroller.cpp:85
+#: shell/sourceformattercontroller.cpp:87
 msgid "Format Files"
 msgstr "Файлдарды пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:86
+#: shell/sourceformattercontroller.cpp:88
 msgid "Format file(s) using the current theme"
 msgstr "Қолданыстағы нақышпен файд(ард)ы қайта пішімдеу"
 
-#: shell/sourceformattercontroller.cpp:87
+#: shell/sourceformattercontroller.cpp:89
 msgid "Formatting functionality using <b>astyle</b> library."
 msgstr "<b>astyle</b> жиын файл көмегімен пішімдеу функциясы."
 
-#: shell/sourceformattercontroller.cpp:512
+#: shell/sourceformattercontroller.cpp:545
 #, kde-format
 msgid "Unable to read %1"
 msgstr "%1 оқылмады"
 
-#: shell/sourceformattercontroller.cpp:520
+#: shell/sourceformattercontroller.cpp:553
 #, kde-format
 msgid "Unable to write to %1"
 msgstr "%1 жазылмады"
 
-#: shell/textdocument.cpp:492
+#: shell/textdocument.cpp:554
 msgctxt "@title:window"
 msgid "Close Document"
 msgstr "Құжатты жабу"
 
-#: shell/textdocument.cpp:504
+#: shell/textdocument.cpp:566
 #, kde-format
 msgid ""
 "The file \"%1\" is modified on disk.\n"
@@ -3592,21 +3683,25 @@ msgstr ""
 "\n"
 "Үстінен жаза бермексіз бе? (Сырттан енгізілген өзгерістер жоғалады.)"
 
-#: shell/textdocument.cpp:507
+#: shell/textdocument.cpp:569
 msgctxt "@title:window"
 msgid "Document Externally Modified"
 msgstr "Құжат сырттан өзгертілген"
 
-#: shell/textdocument.cpp:804
+#: shell/textdocument.cpp:866
 #, kde-format
 msgid " Line: %1 Col: %2 "
 msgstr " Жол: %1 Бағ.: %2 "
 
-#: shell/uicontroller.cpp:99
+#: shell/uicontroller.cpp:81
+msgid "Code"
+msgstr "Коды"
+
+#: shell/uicontroller.cpp:101
 msgid "Review"
 msgstr "Шолу"
 
-#: shell/uicontroller.cpp:399
+#: shell/uicontroller.cpp:405
 msgid "Select Tool View to Add"
 msgstr "Қосатын құралдар панелін таңдау"
 
@@ -3636,10 +3731,6 @@ msgid ""
 "working set."
 msgstr "Осы жұмыс жиындағы бүкіл құжатарды қазір белсенді жұмыс жиынға қосу"
 
-#: shell/workingsets/workingsettooltipwidget.cpp:138
-msgid "Subtract All"
-msgstr "Бүкілін алып тастау"
-
 #: shell/workingsets/workingsettooltipwidget.cpp:139
 msgid ""
 "Remove all documents that are part of this working set from the currently "
@@ -3660,27 +3751,31 @@ msgstr "Назардағы жұмыс жиыннан осы файлды кет�
 msgid "Add this file to the current working set"
 msgstr "Назардағы жұмыс жиыннан осы файлды қосу"
 
+#: shell/workingsets/workingsettooltipwidget.cpp:316
+msgid "Stash"
+msgstr ""
+
 #: shell/workingsets/workingsettooltipwidget.cpp:322
 msgid "Load"
 msgstr "Жүктеу"
 
-#: sublime/container.cpp:190
+#: sublime/container.cpp:191
 msgid "Line: 00000 Col: 000"
 msgstr "Жол: 00000 Бағ.:  000"
 
-#: sublime/container.cpp:217
+#: sublime/container.cpp:218
 msgid "Show sorted list of opened documents"
 msgstr "Ашылған құжаттар реттелген тізімін көрсету"
 
-#: sublime/container.cpp:515
+#: sublime/container.cpp:517
 msgid "Close File"
 msgstr "Файлды жабу"
 
-#: sublime/container.cpp:516
+#: sublime/container.cpp:518
 msgid "Close Other Files"
 msgstr "Басқа файлдарын жабу"
 
-#: sublime/container.cpp:517
+#: sublime/container.cpp:519
 msgid "Close All Files"
 msgstr "Бүкіл файлдарын жабу"
 
@@ -3696,7 +3791,7 @@ msgstr "(c) 2007, Alexander Dymo"
 msgid "Example 2"
 msgstr "2-мысал"
 
-#: sublime/idealbuttonbarwidget.cpp:46
+#: sublime/idealbuttonbarwidget.cpp:49
 msgctxt "@info:tooltip"
 msgid "Right click to add new tool views."
 msgstr "Жаңа құралдар панелін қосу үшін оң жақпен түртіңіз."
@@ -3732,22 +3827,22 @@ msgstr "Оң жақта"
 
 #: sublime/idealdockwidget.cpp:120
 msgctxt "toolview position"
-msgid "Top"
-msgstr "Жоғарда"
+msgid "Detached"
+msgstr ""
 
-#: sublime/idealdockwidget.cpp:143
+#: sublime/idealdockwidget.cpp:138
 msgid "Assign Shortcut..."
 msgstr "Тіркесімді орнату..."
 
-#: sublime/idealdockwidget.cpp:144
+#: sublime/idealdockwidget.cpp:139
 msgid "Use this shortcut to trigger visibility of the toolview."
 msgstr "Құрал панелінің көріну күйін ауыстыру үшін осы тіркесімін қолданыңыз."
 
-#: sublime/idealdockwidget.cpp:147
+#: sublime/idealdockwidget.cpp:142
 msgid "Remove Toolview"
 msgstr "Құралдар панелін кетіру"
 
-#: sublime/idealdockwidget.cpp:158
+#: sublime/idealdockwidget.cpp:153
 #, kde-format
 msgid "Assign Shortcut For '%1' Tool View"
 msgstr "Тіркесімді '%1' құрал панеліне арнау"
@@ -3797,37 +3892,37 @@ msgstr "Оң жақ батырмалар панелі"
 msgid "Bottom Button Bar"
 msgstr "Төменгі батырмалар панелі"
 
-#: util/duchainify/main.cpp:220
+#: util/duchainify/main.cpp:227
 msgid "duchainify"
 msgstr "duchainify"
 
-#: util/duchainify/main.cpp:221
+#: util/duchainify/main.cpp:228
 msgid "Duchain builder application"
 msgstr "Анықтама-пайдалану тізбегін (duchain) құру бағдарламасы"
 
-#: util/duchainify/main.cpp:222
+#: util/duchainify/main.cpp:229
 msgid "(c) 2009 David Nolden"
 msgstr "(c) 2009 David Nolden"
 
-#: util/duchainify/main.cpp:225
+#: util/duchainify/main.cpp:232
 msgid "directory"
 msgstr "каталог"
 
-#: util/duchainify/main.cpp:227
+#: util/duchainify/main.cpp:234
 msgid "Show warnings"
 msgstr "Ескертулерді көрсету"
 
-#: util/duchainify/main.cpp:228
+#: util/duchainify/main.cpp:235
 msgid "Show warnings and debug output"
 msgstr "Ескертулер мен жөндеу шығысын көрсету"
 
-#: util/duchainify/main.cpp:229
+#: util/duchainify/main.cpp:236
 msgid "Enforce an update of the top-contexts corresponding to the given files"
 msgstr ""
 "Келтірілген файлдарға сәйкесті жоғарғы деңгейлі контексттерін мәжбүрлеп "
 "жаңарту"
 
-#: util/duchainify/main.cpp:230
+#: util/duchainify/main.cpp:237
 msgid ""
 "Enforce an update of the top-contexts corresponding to the given files and "
 "all included files"
@@ -3835,11 +3930,11 @@ msgstr ""
 "Келтірілген файлдарға және бүкіл кірме файлдарына сәйкесті жоғарғы деңгейлі "
 "контексттерін мәжбүрлеп жаңарту"
 
-#: util/duchainify/main.cpp:231
+#: util/duchainify/main.cpp:238
 msgid "Number of threads to use"
 msgstr "Қолданатын ағындар саны"
 
-#: util/duchainify/main.cpp:232
+#: util/duchainify/main.cpp:239
 msgid ""
 "Features to build. Options: empty, simplified-visible-declarations, visible-"
 "declarations (default), all-declarations, all-declarations-and-uses, all-"
@@ -3849,13 +3944,36 @@ msgstr ""
 "visible-declarations (әдеттісі), all-declarations, all-declarations-and-"
 "uses, all-declarations-and-uses-and-AST"
 
-#: util/duchainify/main.cpp:233
+#: util/duchainify/main.cpp:240
+msgid "Print complete Definition-Use Chain on successful parse"
+msgstr ""
+
+#: util/duchainify/main.cpp:241
 msgid "Print problems encountered during parsing"
 msgstr "Талдау кезде шығыс мәселелер тап болды"
 
-#: util/environmentconfigurebutton.cpp:85
+#: util/environmentconfigurebutton.cpp:74
 msgid "Configure environment variables"
 msgstr "Орта айнымалыларын баптау"
+
+#: util/environmentselectionmodel.cpp:52
+#, fuzzy
+#| msgid "Profile"
+msgctxt "@title:column"
+msgid "Profile"
+msgstr "Профилі"
+
+#: util/environmentselectionmodel.cpp:63
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Use default profile (currently: %1)"
+msgstr ""
+
+#: util/environmentselectionmodel.cpp:67
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "%1 (does not exist)"
+msgstr ""
 
 #: util/projecttestjob.cpp:94
 #, kde-format
@@ -3990,17 +4108,17 @@ msgstr "Сервер қолдайтын аутентификация түрі ж
 msgid "Select keys"
 msgstr "Кілтерді таңдау"
 
-#: vcs/dvcs/dvcsjob.cpp:155
+#: vcs/dvcs/dvcsjob.cpp:163
 #, kde-format
 msgid "Working Directory does not exist: %1"
 msgstr "Жұмыс қапшығы жоқ: %1"
 
-#: vcs/dvcs/dvcsjob.cpp:164
+#: vcs/dvcs/dvcsjob.cpp:172
 #, kde-format
 msgid "Working Directory is not absolute: %1"
 msgstr "Жұмыс қапшығы абсолютті емес: %1"
 
-#: vcs/dvcs/dvcsjob.cpp:206
+#: vcs/dvcs/dvcsjob.cpp:214
 #, fuzzy, kde-format
 #| msgid "Process '%1' exited with status %2"
 msgid ""
@@ -4008,12 +4126,12 @@ msgid ""
 "%3"
 msgstr "'%1' процестен %2 күйінде шығу"
 
-#: vcs/dvcs/dvcsjob.cpp:236
+#: vcs/dvcs/dvcsjob.cpp:244
 #, kde-format
 msgid "Command finished with error %1."
 msgstr "Команда мына қатемен аяқталды: %1"
 
-#: vcs/dvcs/dvcsjob.cpp:248
+#: vcs/dvcs/dvcsjob.cpp:256
 #, kde-format
 msgid "Command exited with value %1."
 msgstr "Команда аяқталды. Аяқтау мән-жайы: %1."
@@ -4081,11 +4199,6 @@ msgstr "Таңдалғанның негізінде жаңа тармақты қ
 msgid "The same as git branch -D"
 msgstr "git branch -D дегенге тең"
 
-#. i18n: ectx: property (text), widget (QPushButton, renameButton)
-#: vcs/dvcs/ui/branchmanager.ui:55
-msgid "Rename"
-msgstr "Атауын өзгерту"
-
 #. i18n: ectx: property (toolTip), widget (QPushButton, checkoutButton)
 #: vcs/dvcs/ui/branchmanager.ui:62
 msgid "Checkout to the selected branch"
@@ -4096,13 +4209,13 @@ msgstr "Таңдалған тармақты жүктеп алу"
 msgid "Checkout"
 msgstr "Жүктеп алу"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, ImportMetadataWidget)
-#: vcs/dvcs/ui/importmetadatawidget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, DvcsImportMetadataWidget)
+#: vcs/dvcs/ui/dvcsimportmetadatawidget.ui:13
 msgid "Import"
 msgstr "Импорттау"
 
 #. i18n: ectx: property (text), widget (QLabel, labelUrl)
-#: vcs/dvcs/ui/importmetadatawidget.ui:19
+#: vcs/dvcs/ui/dvcsimportmetadatawidget.ui:19
 msgid "Source Directory:"
 msgstr "Қай каталогтан"
 
@@ -4116,17 +4229,17 @@ msgstr "\"%1\" деп аталған тармақ бар екен."
 msgid "Are you sure you want to rename \"%1\" to \"%2\"?"
 msgstr "\"%1\" дегенді \"%2\" деп атамақсыз ба?"
 
-#: vcs/models/projectchangesmodel.cpp:265
+#: vcs/models/projectchangesmodel.cpp:267
 msgid "no branch"
 msgstr "тармағы жоқ"
 
-#: vcs/models/projectchangesmodel.cpp:266
+#: vcs/models/projectchangesmodel.cpp:268
 #, kde-format
 msgctxt "project name (branch name)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: vcs/models/vcsannotationmodel.cpp:106
+#: vcs/models/vcsannotationmodel.cpp:128
 #, kde-format
 msgid ""
 "Author: %1\n"
@@ -4137,21 +4250,21 @@ msgstr ""
 "Кезі: %2\n"
 "Тапсыру түсініктемесі: %3"
 
-#: vcs/models/vcseventmodel.cpp:113
+#: vcs/models/vcseventmodel.cpp:110
 msgid "Revision"
 msgstr "Жетілдірімі"
 
-#: vcs/models/vcseventmodel.cpp:116
+#: vcs/models/vcseventmodel.cpp:112
+msgid "Message"
+msgstr "Түсініктемесі"
+
+#: vcs/models/vcseventmodel.cpp:114
 msgid "Author"
 msgstr "Авторы"
 
-#: vcs/models/vcseventmodel.cpp:119
+#: vcs/models/vcseventmodel.cpp:116
 msgid "Date"
 msgstr "Кезі"
-
-#: vcs/models/vcseventmodel.cpp:122
-msgid "Message"
-msgstr "Түсініктемесі"
 
 #: vcs/models/vcsfilechangesmodel.cpp:43
 msgctxt "file was added to versioncontrolsystem"
@@ -4233,65 +4346,73 @@ msgstr "Көзі қайда"
 msgid "Source Revision"
 msgstr "Көзінің жетілдірімі"
 
-#: vcs/vcspluginhelper.cpp:103
+#: vcs/vcspluginhelper.cpp:99
 msgid "Update"
 msgstr "Жаңарту"
 
-#: vcs/vcspluginhelper.cpp:104
+#: vcs/vcspluginhelper.cpp:100
 msgid "Add"
 msgstr "Қосу"
 
-#: vcs/vcspluginhelper.cpp:105
+#: vcs/vcspluginhelper.cpp:101
 msgid "Show Differences..."
 msgstr "Айырмашылығын көрсету..."
 
-#: vcs/vcspluginhelper.cpp:106
+#: vcs/vcspluginhelper.cpp:102
 msgid "Revert"
 msgstr "Қайтару"
 
-#: vcs/vcspluginhelper.cpp:107 vcs/vcspluginhelper.cpp:449
+#: vcs/vcspluginhelper.cpp:103 vcs/vcspluginhelper.cpp:478
 msgid "History..."
 msgstr "Тарихы..."
 
-#: vcs/vcspluginhelper.cpp:108
+#: vcs/vcspluginhelper.cpp:104
 msgid "Annotation..."
 msgstr "Аңдатпасы..."
 
-#: vcs/vcspluginhelper.cpp:109
+#: vcs/vcspluginhelper.cpp:105
 msgid "Show Diff..."
 msgstr "Айырмашылығын көрсету..."
 
-#: vcs/vcspluginhelper.cpp:110
+#: vcs/vcspluginhelper.cpp:106
 msgid "Show Diff (all files)..."
 msgstr "Айырмашылығын көрсету (бүкіл файлдар)..."
 
-#: vcs/vcspluginhelper.cpp:111
+#: vcs/vcspluginhelper.cpp:107
 msgid "Push"
 msgstr "Кіргізу"
 
-#: vcs/vcspluginhelper.cpp:112
+#: vcs/vcspluginhelper.cpp:108
 msgid "Pull"
 msgstr "Суырып алу"
 
-#: vcs/vcspluginhelper.cpp:308
+#: vcs/vcspluginhelper.cpp:321
 msgid "There are no differences."
 msgstr "Айырмашылық жоқ."
 
-#: vcs/vcspluginhelper.cpp:309
+#: vcs/vcspluginhelper.cpp:322
 msgid "VCS support"
 msgstr "Нұсқалардын қадағалау жүйесін қолдау"
 
-#: vcs/vcspluginhelper.cpp:315
+#: vcs/vcspluginhelper.cpp:328
 msgid "Unable to get difference."
 msgstr "Айырмашылығы табылмады."
 
-#: vcs/vcspluginhelper.cpp:363
+#: vcs/vcspluginhelper.cpp:376
 #, kde-format
 msgctxt "%1: path or URL, %2: name of a version control system"
 msgid "%2 History (%1)"
 msgstr "%2 тарихы (%1)"
 
-#: vcs/vcspluginhelper.cpp:399
+#: vcs/vcspluginhelper.cpp:424
+msgid ""
+"Cannot display annotations, missing interface KTextEditor::"
+"AnnotationInterface for the editor."
+msgstr ""
+"Аңдатпа көрсетілмеді, редақторында KTextEditor::AnnotationInterface "
+"интерфейсі жоқ."
+
+#: vcs/vcspluginhelper.cpp:428
 #, kde-format
 msgid ""
 "Cannot execute annotate action because the document was not found, or was "
@@ -4302,7 +4423,7 @@ msgstr ""
 "емес:\n"
 "%1"
 
-#: vcs/vcspluginhelper.cpp:448
+#: vcs/vcspluginhelper.cpp:477
 msgid "Copy Revision"
 msgstr "Жетілдірімін көшіріп алу"
 
@@ -4395,11 +4516,11 @@ msgstr "Алдыңғысымен айырмашылық"
 msgid "Diff between revisions"
 msgstr "Жетілдірім арасындағы айырмашылық"
 
-#: vcs/widgets/vcseventwidget.cpp:146
+#: vcs/widgets/vcseventwidget.cpp:145
 msgid "Difference To Previous"
 msgstr "Алдыңғысымен айырмашылық"
 
-#: vcs/widgets/vcseventwidget.cpp:165
+#: vcs/widgets/vcseventwidget.cpp:164
 msgid "Difference between Revisions"
 msgstr "Жетілдірім арасындағы айырмашылық"
 
@@ -4407,6 +4528,117 @@ msgstr "Жетілдірім арасындағы айырмашылық"
 #: vcs/widgets/vcseventwidget.ui:20
 msgid "Logview"
 msgstr "Журнал көрінісі"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "error"
+#~ msgstr "қате"
+
+#~ msgid "Double-click to create new code breakpoint"
+#~ msgstr "Жаңа аялдау нүкте құру үшін қос түртім жасаңыз"
+
+#~ msgid "&Remove all"
+#~ msgstr "Бүкілін ө&шіру"
+
+#~ msgid "<a href=\"add_watch\">Watch this</a>"
+#~ msgstr "<a href=\"add_watch\">Мынаны бақылау</a>"
+
+#~ msgid "<a href=\"watchpoint\">Stop on change</a>"
+#~ msgstr "<a href=\"watchpoint\">Өзгерісте тоқтау</a>"
+
+#~ msgid "Edit Document"
+#~ msgstr "Құжатты өңдеу"
+
+#~ msgid "View Differences"
+#~ msgstr "Айырмашылықтарын қөру"
+
+#~ msgid "Text"
+#~ msgstr "Мәтін"
+
+#~ msgid "Action"
+#~ msgstr "Амалы"
+
+#~ msgid "Change"
+#~ msgstr "Өзгерту"
+
+#~ msgid "Insert"
+#~ msgstr "Ендіру"
+
+#~ msgid "Remove"
+#~ msgstr "Өшіру"
+
+#~ msgid "Session crashed %1 time in a row"
+#~ msgid_plural "Session crashed %1 times in a row"
+#~ msgstr[0] "Сеанс %1 рет қатар қирады"
+
+#~ msgid ""
+#~ "Cannot execute annotate action because the document was not found, it was "
+#~ "not versioned or it was not a text document:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Аңдатпа жасау амалы болмады, өйткені құжат табылмады, не нұсқасы "
+#~ "белгіленбеген, немесе ол мәтін құжаты емес:\n"
+#~ "%1"
+
+#~ msgid "Close"
+#~ msgstr "Жабу"
+
+#~ msgid "duchaintokross"
+#~ msgstr "duchaintokross"
+
+#~ msgid "Wrapper generator from C++ to Kross"
+#~ msgstr "C++ -> Kross кодын аударушы құралдың сырты"
+
+#~ msgid "(c) 2008, The KDevelop developers"
+#~ msgstr "(c) Copyright 2008, KDevelop құрастырушылары"
+
+#~ msgid "input .cpp file"
+#~ msgstr "кіріс .cpp файлы"
+
+#~ msgid "include directories for the parser (colon separated)"
+#~ msgstr "синтаксис талдауына каталогтарды кіргізу (қос нүктемен бөліктеп)"
+
+#~ msgid ""
+#~ "include directories that the generated implementation file will have "
+#~ "(colon separated)"
+#~ msgstr ""
+#~ "іске асыруының файлды сыйғызатын каталогтарды кіргізу (қос нүктемен "
+#~ "бөліктеп)"
+
+#~ msgid "build dir where the Makefile for the input is added"
+#~ msgstr "кіріске Makefile жататын құрастыруға қолданатын каталог косылады"
+
+#~ msgid "filename to be used for the .moc and the .h file"
+#~ msgstr ".moc және .h файл үшін қолданатын файл атауы"
+
+#~ msgid "directory where to put the .h output"
+#~ msgstr "шығыс .h файлын салатын каталогы"
+
+#~ msgid "directory where to put the code output"
+#~ msgstr "шығыс кодын салатын каталогы"
+
+#~ msgid "create implementation"
+#~ msgstr "іске асыру кодын жасау"
+
+#~ msgid "Verbose output"
+#~ msgstr "Егжей-тегжейлі шығыс"
+
+#~ msgid "Unable to load the project file %1"
+#~ msgstr "%1 жоба файлы жүктелмеді"
+
+#~ msgctxt "Name of an environment variable"
+#~ msgid "Variable Name:"
+#~ msgstr "Айнымалының атауы:"
+
+#~ msgctxt "Value of an environment variable"
+#~ msgid "Variable Value:"
+#~ msgstr "Айнымалының мәні:"
+
+#~ msgid "Subtract All"
+#~ msgstr "Бүкілін алып тастау"
+
+#~ msgctxt "toolview position"
+#~ msgid "Top"
+#~ msgstr "Жоғарда"
 
 #~ msgid "Show text"
 #~ msgstr "Матінді көрсету"
@@ -4419,10 +4651,6 @@ msgstr "Журнал көрінісі"
 
 #~ msgid "Enable"
 #~ msgstr "Рұқсат ету"
-
-#~ msgid "The Session crashed once."
-#~ msgid_plural "The Session crashed %1 times in a row."
-#~ msgstr[0] "Сеанс %1 рет қатар қирады."
 
 #~ msgid "<b>Close File</b><p>Closes current file.</p>"
 #~ msgstr "<b>Файлды жабу</b><p>Назардағы файлды жабу.</p>"
