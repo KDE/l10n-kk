@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-06 01:34+0000\n"
+"POT-Creation-Date: 2014-07-16 01:51+0000\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -4518,7 +4518,7 @@ msgid "This file already exists. Do you want to overwrite it?"
 msgstr "Бұндай файл бар екен. Үстінен жаза берейік пе?"
 
 #: main/startup/KexiStartupFileHandler.cpp:433
-#: plugins/reports/kexireportview.cpp:206 widget/KexiFileWidget.cpp:394
+#: plugins/reports/kexireportview.cpp:258 widget/KexiFileWidget.cpp:394
 msgid "Overwrite"
 msgstr "Жаза беру"
 
@@ -6449,33 +6449,69 @@ msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr "Мәтін құжат түрінде экспорттау (OpenDocument мәтін пішіміде)."
 
 #: plugins/reports/kexireportview.cpp:128
+msgctxt "Portable Document Format..."
+msgid "PDF..."
+msgstr ""
+
+#: plugins/reports/kexireportview.cpp:131
+#, fuzzy
+#| msgid "Export as Web Page"
+msgid "Export as PDF"
+msgstr "Веб параққа экспорттау"
+
+#: plugins/reports/kexireportview.cpp:132
+#, fuzzy
+#| msgid "Prints the current report."
+msgid "Exports the current report as PDF."
+msgstr "Назардағы баянатты басып шығару."
+
+#: plugins/reports/kexireportview.cpp:140
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "Электрондық кесте..."
 
-#: plugins/reports/kexireportview.cpp:131
+#: plugins/reports/kexireportview.cpp:143
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау"
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:144
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау."
 
-#: plugins/reports/kexireportview.cpp:140
+#: plugins/reports/kexireportview.cpp:152
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "Веб парағы..."
 
-#: plugins/reports/kexireportview.cpp:143
+#: plugins/reports/kexireportview.cpp:155
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)"
 
-#: plugins/reports/kexireportview.cpp:144
+#: plugins/reports/kexireportview.cpp:156
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)."
 
-#: plugins/reports/kexireportview.cpp:205
+#: plugins/reports/kexireportview.cpp:212
+#, fuzzy
+#| msgid "Export Report as Web Page"
+msgid "Export Report as PDF"
+msgstr "Баянатты веб параққа экспорттау"
+
+#: plugins/reports/kexireportview.cpp:231
+#, fuzzy, kde-format
+#| msgid "Exporting the report as web page to %1 failed."
+msgid "Exporting the report as PDF to %1 failed."
+msgstr "Баянатты %1 веб парағына экспорттау жаңылысы."
+
+#: plugins/reports/kexireportview.cpp:232
+#: plugins/reports/kexireportview.cpp:308
+#: plugins/reports/kexireportview.cpp:334
+#: plugins/reports/kexireportview.cpp:375
+msgid "Export Failed"
+msgstr "Экспорттау жаңылысы"
+
+#: plugins/reports/kexireportview.cpp:257
 #, kde-format
 msgid ""
 "The file %1 exists.\n"
@@ -6484,41 +6520,35 @@ msgstr ""
 "%1 деген файл бар екен.\n"
 "Үстінен жаза берейік пе?"
 
-#: plugins/reports/kexireportview.cpp:227
+#: plugins/reports/kexireportview.cpp:279
 #, fuzzy
 #| msgid "Do you want to open it in Text View?"
 msgid "Do you want to open exported document?"
 msgstr "Мәтін көрінісінде ашып көресіз бе?"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:298
 msgid "Export Report as Spreadsheet"
 msgstr "Электрондық кестеге экспорттау"
 
-#: plugins/reports/kexireportview.cpp:253
+#: plugins/reports/kexireportview.cpp:307
 #, kde-format
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "%1 электрондық кестеге экспорттау жаңылды."
 
-#: plugins/reports/kexireportview.cpp:254
-#: plugins/reports/kexireportview.cpp:278
-#: plugins/reports/kexireportview.cpp:316
-msgid "Export Failed"
-msgstr "Экспорттау жаңылысы"
-
-#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:324
 msgid "Export Report as Text Document"
 msgstr "Мәтін құжатына экспорттау"
 
-#: plugins/reports/kexireportview.cpp:277
+#: plugins/reports/kexireportview.cpp:333
 #, kde-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr "%1 мәтін құжатына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:290
+#: plugins/reports/kexireportview.cpp:346
 msgid "Export Report as Web Page"
 msgstr "Баянатты веб параққа экспорттау"
 
-#: plugins/reports/kexireportview.cpp:299
+#: plugins/reports/kexireportview.cpp:358
 msgid ""
 "Would you like to export using a Cascading Style Sheet (CSS), which will "
 "give an output closer to the original, or export using a HTML Table, which "
@@ -6527,24 +6557,24 @@ msgstr ""
 "Түпнұсқасына жақын қалдырып CSS-ті қолданып экспорт етуді қалайсыз ба, әлде "
 "қарапайымдау жәй кестеге экспорттап шығарасыз ба?"
 
-#: plugins/reports/kexireportview.cpp:303
+#: plugins/reports/kexireportview.cpp:362
 msgid "Use CSS"
 msgstr "CSS"
 
-#: plugins/reports/kexireportview.cpp:304
+#: plugins/reports/kexireportview.cpp:363
 msgid "Use Table"
 msgstr "Кесте"
 
-#: plugins/reports/kexireportview.cpp:315
+#: plugins/reports/kexireportview.cpp:374
 #, kde-format
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Баянатты %1 веб парағына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:395
+#: plugins/reports/kexireportview.cpp:454
 msgid "Opening failed"
 msgstr "Ашу жаңылысы"
 
-#: plugins/reports/kexireportview.cpp:395
+#: plugins/reports/kexireportview.cpp:454
 msgid "Report schema appears to be invalid or corrupt"
 msgstr "Баянат сұлбасы дұрыс емес не бүлінген сияқты"
 
@@ -8095,9 +8125,6 @@ msgstr "Меңзерді жаңа жазуға көшіріп ендіруге �
 
 #~ msgid "Record deleting failed."
 #~ msgstr "Жазуды кетіру жаңылысы."
-
-#~ msgid "Export as Web Page"
-#~ msgstr "Веб параққа экспорттау"
 
 #~ msgid ""
 #~ "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
