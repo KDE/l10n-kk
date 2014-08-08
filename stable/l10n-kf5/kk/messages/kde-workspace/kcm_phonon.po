@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_phonon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-07 08:44+0000\n"
+"POT-Creation-Date: 2014-08-08 09:23+0000\n"
 "PO-Revision-Date: 2012-07-04 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -50,10 +50,72 @@ msgstr "Жеке құрылғылар"
 msgid "KDE Audio Hardware Setup"
 msgstr "KDE аудио жабдықтарын баптау"
 
+#. i18n: ectx: property (title), widget (QGroupBox, hardwareGroupBox)
+#: audiosetup.ui:18
+msgid "Hardware"
+msgstr "бдық"
+
+#. i18n: ectx: property (text), widget (QLabel, profileLabel)
+#: audiosetup.ui:44
+msgid "Profile"
+msgstr "Профилі"
+
+#. i18n: ectx: property (text), widget (QLabel, cardLabel)
+#: audiosetup.ui:54
+msgid "Sound Card"
+msgstr "Дыбыстық тақша"
+
+#. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
+#: audiosetup.ui:67
+msgid "Device Configuration"
+msgstr "Құрылғы конфигурациясы"
+
+#. i18n: ectx: property (text), widget (QLabel, portLabel)
+#: audiosetup.ui:83
+msgid "Connector"
+msgstr "Түйістіргіш"
+
+#. i18n: ectx: property (text), widget (QLabel, deviceLabel)
+#: audiosetup.ui:103
+msgid "Sound Device"
+msgstr "Дыбыс құрылғысы"
+
+#. i18n: ectx: property (title), widget (QGroupBox, outputGroupBox)
+#: audiosetup.ui:144
+msgid "Speaker Placement and Testing"
+msgstr "Динамигін орналастыру және сынау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, inputGroupBox)
+#: audiosetup.ui:181
+msgid "Input Levels"
+msgstr "Кіріс деңгейлері"
+
 #: backendselection.cpp:74
 msgctxt "@info User changed Phonon backend"
 msgid "To apply the backend change you will have to log out and back in again."
 msgstr "Тетігінің өзгертуін іске асыру үшін жүйеден шығып қайта кіру керек."
+
+#. i18n: ectx: property (toolTip), widget (QListWidget, m_select)
+#. i18n: ectx: property (whatsThis), widget (QListWidget, m_select)
+#: backendselection.ui:38 backendselection.ui:41
+msgid ""
+"A list of Phonon Backends found on your system.  The order here determines "
+"the order Phonon will use them in."
+msgstr ""
+"Жүйеңізде Phonon тетіктер тізімі табылды.  Осында табылған ретімен Phonon "
+"оларды пайдаланады."
+
+#. i18n: ectx: property (text), widget (QToolButton, m_up)
+#. i18n: ectx: property (text), widget (QToolButton, preferButton)
+#: backendselection.ui:57 devicepreference.ui:190
+msgid "Prefer"
+msgstr "Артықтығын көтеру"
+
+#. i18n: ectx: property (text), widget (QToolButton, m_down)
+#. i18n: ectx: property (text), widget (QToolButton, deferButton)
+#: backendselection.ui:70 devicepreference.ui:206
+msgid "Defer"
+msgstr "Артықтығын төмендету"
 
 #: devicepreference.cpp:92
 msgid "Audio Playback"
@@ -137,6 +199,65 @@ msgstr "Тетік бағдарламаңыз бейне жазбайтын си
 msgid "Testing %1"
 msgstr "%1 дегенді сынау"
 
+#. i18n: ectx: property (toolTip), widget (QTreeView, categoryTree)
+#. i18n: ectx: property (whatsThis), widget (QTreeView, categoryTree)
+#: devicepreference.ui:29 devicepreference.ui:32
+msgid ""
+"Various categories of media use cases.  For each category, you may choose "
+"what device you prefer to be used by the Phonon applications."
+msgstr ""
+"Түрлі медиа қолдану санаттары.  Әрбір санат үшін қай құрылғы Phonon "
+"қолданбасы пайдаланатынын таңдауға болады."
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAdvancedDevicesCheckBox)
+#: devicepreference.ui:47
+msgid "Show advanced devices"
+msgstr "Үздік құрылғыларын көрсету"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, applyPreferencesButton)
+#. i18n: ectx: property (whatsThis), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:77 devicepreference.ui:80
+msgid "Use the currently shown device list for more categories."
+msgstr "Назардағы құрылғылар тізімін өзге саннтатарына қолдану."
+
+#. i18n: ectx: property (text), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:83
+msgid "Apply Device List To..."
+msgstr "Құрылғылар тізімін қолдану..."
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, deviceList)
+#: devicepreference.ui:113
+msgid ""
+"Devices found on your system, suitable for the selected category.  Choose "
+"the device that you wish to be used by the applications."
+msgstr ""
+"Жүйеңізде табылған құрылғылар таңдаған санатқа жарайды. Қолданбада "
+"пайдаланатын құрылғыны таңдаңыз."
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, deviceList)
+#: devicepreference.ui:116
+msgid ""
+"The order determines the preference of the devices. If for some reason the "
+"first device cannot be used Phonon will try to use the second, and so on."
+msgstr ""
+"Реті құрылғылардың басымдылықтарын анықтайды. Бір себеппен Phonon бірінші "
+"құрылғыны қолдана алмай қалса, екіншісіне көшеді, солай тізім бойынша."
+
+#. i18n: ectx: property (text), widget (QToolButton, testPlaybackButton)
+#: devicepreference.ui:171
+msgid "Test"
+msgstr "Сынақ"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, preferButton)
+#: devicepreference.ui:187
+msgid "prefer the selected device"
+msgstr "таңдалғаны - артығы"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, deferButton)
+#: devicepreference.ui:203
+msgid "no preference for the selected device"
+msgstr "таңдалғаны - артығы емес"
+
 #: main.cpp:43
 msgid "Phonon Configuration Module"
 msgstr "Phonon баптау модулі"
@@ -216,83 +337,6 @@ msgstr "Сабвуфер"
 #: testspeakerwidget.cpp:174
 msgid "Unknown Channel"
 msgstr "Беймәлім арна"
-
-#~ msgid "Hardware"
-#~ msgstr "бдық"
-
-#~ msgid "Profile"
-#~ msgstr "Профилі"
-
-#~ msgid "Sound Card"
-#~ msgstr "Дыбыстық тақша"
-
-#~ msgid "Device Configuration"
-#~ msgstr "Құрылғы конфигурациясы"
-
-#~ msgid "Connector"
-#~ msgstr "Түйістіргіш"
-
-#~ msgid "Sound Device"
-#~ msgstr "Дыбыс құрылғысы"
-
-#~ msgid "Speaker Placement and Testing"
-#~ msgstr "Динамигін орналастыру және сынау"
-
-#~ msgid "Input Levels"
-#~ msgstr "Кіріс деңгейлері"
-
-#~ msgid ""
-#~ "A list of Phonon Backends found on your system.  The order here "
-#~ "determines the order Phonon will use them in."
-#~ msgstr ""
-#~ "Жүйеңізде Phonon тетіктер тізімі табылды.  Осында табылған ретімен Phonon "
-#~ "оларды пайдаланады."
-
-#~ msgid "Prefer"
-#~ msgstr "Артықтығын көтеру"
-
-#~ msgid "Defer"
-#~ msgstr "Артықтығын төмендету"
-
-#~ msgid ""
-#~ "Various categories of media use cases.  For each category, you may choose "
-#~ "what device you prefer to be used by the Phonon applications."
-#~ msgstr ""
-#~ "Түрлі медиа қолдану санаттары.  Әрбір санат үшін қай құрылғы Phonon "
-#~ "қолданбасы пайдаланатынын таңдауға болады."
-
-#~ msgid "Show advanced devices"
-#~ msgstr "Үздік құрылғыларын көрсету"
-
-#~ msgid "Use the currently shown device list for more categories."
-#~ msgstr "Назардағы құрылғылар тізімін өзге саннтатарына қолдану."
-
-#~ msgid "Apply Device List To..."
-#~ msgstr "Құрылғылар тізімін қолдану..."
-
-#~ msgid ""
-#~ "Devices found on your system, suitable for the selected category.  Choose "
-#~ "the device that you wish to be used by the applications."
-#~ msgstr ""
-#~ "Жүйеңізде табылған құрылғылар таңдаған санатқа жарайды. Қолданбада "
-#~ "пайдаланатын құрылғыны таңдаңыз."
-
-#~ msgid ""
-#~ "The order determines the preference of the devices. If for some reason "
-#~ "the first device cannot be used Phonon will try to use the second, and so "
-#~ "on."
-#~ msgstr ""
-#~ "Реті құрылғылардың басымдылықтарын анықтайды. Бір себеппен Phonon бірінші "
-#~ "құрылғыны қолдана алмай қалса, екіншісіне көшеді, солай тізім бойынша."
-
-#~ msgid "Test"
-#~ msgstr "Сынақ"
-
-#~ msgid "prefer the selected device"
-#~ msgstr "таңдалғаны - артығы"
-
-#~ msgid "no preference for the selected device"
-#~ msgstr "таңдалғаны - артығы емес"
 
 #~ msgid "Speaker Setup"
 #~ msgstr "Динамикті орнату"
