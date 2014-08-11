@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-30 01:52+0000\n"
+"POT-Creation-Date: 2014-08-11 01:55+0000\n"
 "PO-Revision-Date: 2013-10-31 04:24+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -280,7 +280,7 @@ msgstr ""
 msgid "The free/busy information was successfully sent."
 msgstr "Бос/Істе мәліметі сәтті жіберілді."
 
-#: freebusymanager.cpp:658 itiphandler_p.cpp:161
+#: freebusymanager.cpp:658 itiphandler_p.cpp:167
 msgid "Sending Free/Busy"
 msgstr "Бос/Істе мәліметті жіберу"
 
@@ -375,34 +375,41 @@ msgstr "Біріктіретін ical файл бос."
 msgid "Merge ical file into existing calendar."
 msgstr "ical файлын бар күнтізбемен біріктіру."
 
-#: incidencechanger.cpp:288
+#: incidencechanger.cpp:277
 #, kde-format
 msgid "Error while trying to create calendar item. Error was: %1"
 msgstr "Күнтізбе жазуын құру кезде қате орын алды. Қатесі мынадай: %1"
 
-#: incidencechanger.cpp:337
+#: incidencechanger.cpp:357
 #, kde-format
 msgid "Error while trying to delete calendar item. Error was: %1"
 msgstr "Күнтізбе жазуын өшіру кезде қате орын алды. Қатесі мынадай: %1"
 
-#: incidencechanger.cpp:394
+#: incidencechanger.cpp:395
+#, fuzzy
+#| msgid "Unknown error"
+msgctxt "errormessage for a job ended with an unexpected result"
+msgid "An unknown error occurred"
+msgstr "Беймәлім қате"
+
+#: incidencechanger.cpp:435
 #, kde-format
 msgid "Error while trying to modify calendar item. Error was: %1"
 msgstr "Күнтізбе жазуын өзгерту кезде қате орын алды. Қатесі мынадай: %1"
 
-#: incidencechanger.cpp:768 incidencechanger.cpp:878
+#: incidencechanger.cpp:848 incidencechanger.cpp:972
 msgid "That calendar item was already deleted, or currently being deleted."
 msgstr "Ол күнтізбе жазуы өшірілген, немесе өшіріліп жатыр."
 
-#: incidencechanger.cpp:1095
+#: incidencechanger.cpp:1206
 msgid "Operation can not be performed due to ACL restrictions"
 msgstr "ACL шектеулер себебінен амал орындалмайды"
 
-#: incidencechanger.cpp:1098
+#: incidencechanger.cpp:1209
 msgid "The chosen collection is invalid"
 msgstr "Таңдалған жинағы жарамсыз"
 
-#: incidencechanger.cpp:1101
+#: incidencechanger.cpp:1212
 msgid ""
 "Default collection is invalid or doesn't have proper ACLs and "
 "DestinationPolicyNeverAsk was used"
@@ -410,11 +417,11 @@ msgstr ""
 "Әдетті жиын жарамсыз не оның ACL-і (қатынауды басқару тізімі) не дұрыс емес, "
 "DestinationPolicyNeverAsk қолданған"
 
-#: incidencechanger.cpp:1105
+#: incidencechanger.cpp:1216
 msgid "Duplicate item id in a group operation"
 msgstr "Топтық амалда қосарланған ID кездесті"
 
-#: incidencechanger.cpp:1108
+#: incidencechanger.cpp:1219
 msgid ""
 "One change belonging to a group of changes failed. All changes are being "
 "rolled back."
@@ -422,66 +429,80 @@ msgstr ""
 "Топтық өзгерістерге жататын бір өзгеріс жаңылысы. Бүкіл өзгерістер "
 "қайтарылады."
 
-#: incidencechanger.cpp:1113
+#: incidencechanger.cpp:1224
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
-#: itiphandler.cpp:122
+#: itiphandler.cpp:127
 msgid "Error loading calendar."
 msgstr "Күнтізбе жүктелмеді"
 
-#: itiphandler.cpp:130
+#: itiphandler.cpp:135
 #, kde-format
 msgid "Error message: %1"
 msgstr "Қатенің хабарламасы: %1"
 
-#: itiphandler.cpp:131
+#: itiphandler.cpp:136
 msgid "Unknown error while parsing iCal invitation"
 msgstr "iCal шақыруын талдау беймәлім қатесі"
 
-#: itiphandler.cpp:137
+#: itiphandler.cpp:142
 msgid "Error while processing an invitation or update."
 msgstr "Шақыру не жаңартуды өңдеу кезінде қате орын алды."
 
-#: itiphandler.cpp:154
+#: itiphandler.cpp:159
 msgid "Invalid incidence"
 msgstr "Жарамсыз оқиға"
 
-#: itiphandler.cpp:223
+#: itiphandler.cpp:228
 #, kde-format
 msgid "Invalid action: %1"
 msgstr "Жарамсыз әрекет: %1"
 
-#: itiphandler.cpp:246
+#: itiphandler.cpp:251
 msgid "Error sending counter proposal"
 msgstr "Қарсы ұсынысты жіберу қатесі"
 
-#: itiphandler.cpp:253
+#: itiphandler.cpp:258
 msgid "Could not start editor to edit counter proposal"
 msgstr "Қарсы ұсынысты өзгерту үшін редактор жегілмеді"
 
-#: itiphandler.cpp:286
+#: itiphandler.cpp:291
 #, kde-format
 msgid ""
 "The item '%1' has no attendees. Therefore no groupware message will be sent."
 msgstr "'%1' дегенде қатысушылары жоқ. Сондықтан топтық хат жіберілмеді."
 
-#: itiphandler.cpp:289
+#: itiphandler.cpp:294
 msgid "Message Not Sent"
 msgstr "Хат жіберілмеді"
 
-#: itiphandler_p.cpp:76 itiphandler_p.cpp:79 itiphandler_p.cpp:148
-#: itiphandlerhelper_p.cpp:406
+#: itiphandler.h:104 itiphandler.h:122 itiphandler.h:138 itiphandler.h:151
+#, fuzzy
+#| msgid "Send Email"
+msgctxt "@action:button dialog positive answer"
+msgid "Send Email"
+msgstr "Эл.поштаны жіберу"
+
+#: itiphandler.h:105 itiphandler.h:123 itiphandler.h:139 itiphandler.h:152
+#, fuzzy
+#| msgid "Do Not Send"
+msgctxt "@action:button dialog negative answer"
+msgid "Do Not Send"
+msgstr "Жібермеу"
+
+#: itiphandler_p.cpp:79 itiphandler_p.cpp:82 itiphandler_p.cpp:145
+#: itiphandlerhelper_p.cpp:495
 #, kde-format
 msgid "Error: %1"
 msgstr "Қате: %1"
 
-#: itiphandler_p.cpp:102
+#: itiphandler_p.cpp:105
 #, kde-format
 msgid "Error loading calendar: %1"
 msgstr "Күнтізбе жүктелмеді: %1"
 
-#: itiphandler_p.cpp:157
+#: itiphandler_p.cpp:163
 #, kde-format
 msgid ""
 "The groupware message for item '%1' was successfully sent.\n"
@@ -490,7 +511,7 @@ msgstr ""
 "'%1' дегенге қатысты топтық хабарлама жіберілді.\n"
 "Әдісі: %2"
 
-#: itiphandler_p.cpp:168
+#: itiphandler_p.cpp:174
 #, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -501,29 +522,29 @@ msgstr ""
 "'%1' деген жіберілмеді.\n"
 "Әдісі: %2"
 
-#: itiphandler_p.cpp:185 itiphandler_p.cpp:207
+#: itiphandler_p.cpp:191 itiphandler_p.cpp:213
 msgid "The item information was successfully sent."
 msgstr "Мәліметі сәтті жіберілді."
 
-#: itiphandler_p.cpp:186
+#: itiphandler_p.cpp:192
 msgid "Publishing"
 msgstr "Жариялау"
 
-#: itiphandler_p.cpp:191
+#: itiphandler_p.cpp:197
 #, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "'%1' деген жарияланбады"
 
-#: itiphandler_p.cpp:208
+#: itiphandler_p.cpp:214
 msgid "Forwarding"
 msgstr "Басқаға жолдау"
 
-#: itiphandler_p.cpp:215
+#: itiphandler_p.cpp:221
 #, kde-format
 msgid "Unable to forward the item '%1'"
 msgstr "'%1' деген басқаға жіберілмеді"
 
-#: itiphandler_p.cpp:217
+#: itiphandler_p.cpp:223
 msgid "Forwarding Error"
 msgstr "Басқаға жіберу қатесі"
 
@@ -532,15 +553,15 @@ msgstr "Басқаға жіберу қатесі"
 msgid "Proposed new meeting time: %1 - %2"
 msgstr "Жаңа жиналыс уақыты ұсынылды: %1 - %2"
 
-#: itiphandlerhelper_p.cpp:76
+#: itiphandlerhelper_p.cpp:87
 msgid "Group Scheduling Email"
 msgstr "Топтық жоспарлау эл.поштасы"
 
-#: itiphandlerhelper_p.cpp:108
+#: itiphandlerhelper_p.cpp:145
 msgid "<placeholder>No summary given</placeholder>"
 msgstr "<placeholder>Тұжырымы жоқ</placeholder>"
 
-#: itiphandlerhelper_p.cpp:194
+#: itiphandlerhelper_p.cpp:238
 #, kde-format
 msgid ""
 "The event \"%1\" includes other people.\n"
@@ -549,7 +570,7 @@ msgstr ""
 "\"%1\" оқиғасына басқалар да қатысты.\n"
 "Оларға шақыру эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:198
+#: itiphandlerhelper_p.cpp:242
 #, kde-format
 msgid ""
 "The todo \"%1\" includes other people.\n"
@@ -558,7 +579,7 @@ msgstr ""
 "\"%1\" іс жоспарына басқалар да қатысты.\n"
 "Оларға эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:202
+#: itiphandlerhelper_p.cpp:246
 msgid ""
 "This incidence includes other people. Should an email be sent to the "
 "attendees?"
@@ -566,7 +587,7 @@ msgstr ""
 "Бұған басқалар да қатысты.\n"
 "Оларға эл.пошта жолдау керек пе?"
 
-#: itiphandlerhelper_p.cpp:218
+#: itiphandlerhelper_p.cpp:270
 msgid ""
 "You are not the organizer of this event. Editing it will bring your calendar "
 "out of sync with the organizer's calendar. Do you really want to edit it?"
@@ -574,7 +595,7 @@ msgstr ""
 "Сіз бұл оқиғаның ұйымдастырушысы емессіз.Бұн өзгертсеңіз, күнтізбеңіздің "
 "ұйымдастырушыдағысымен қадамдасуын бұзады. Сонда да өзгертпексіз бе?"
 
-#: itiphandlerhelper_p.cpp:249
+#: itiphandlerhelper_p.cpp:304
 #, kde-format
 msgid ""
 "You changed the invitation \"%1\".\n"
@@ -583,17 +604,16 @@ msgstr ""
 "\"%1\" шақыруын өзгерттіңіз.\n"
 "Қатысушыларға, ол туралы эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:253 itiphandlerhelper_p.cpp:268
-#: itiphandlerhelper_p.cpp:277 itiphandlerhelper_p.cpp:329
-#: itiphandlerhelper_p.cpp:349
+#: itiphandlerhelper_p.cpp:308 itiphandlerhelper_p.cpp:326
+#: itiphandlerhelper_p.cpp:336
 msgid "Send Update"
 msgstr "Жаңартуды жіберу"
 
-#: itiphandlerhelper_p.cpp:266 itiphandlerhelper_p.cpp:324
+#: itiphandlerhelper_p.cpp:324 itiphandlerhelper_p.cpp:400
 msgid "Do you want to send a status update to the organizer of this task?"
 msgstr "Ұйымдастырушысына күй-жай туралы жаңа мәліметін жібермексіз бе?"
 
-#: itiphandlerhelper_p.cpp:275
+#: itiphandlerhelper_p.cpp:333
 msgid ""
 "Your status as an attendee of this event changed. Do you want to send a "
 "status update to the event organizer?"
@@ -601,7 +621,7 @@ msgstr ""
 "Оқиғаның қатысушысы ретіндегі күй-жайыңыз өзгерді. Ұйымдастырушысына ол "
 "туралы мәліметті жібермексіз бе?"
 
-#: itiphandlerhelper_p.cpp:297
+#: itiphandlerhelper_p.cpp:371
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -610,7 +630,7 @@ msgstr ""
 "\"%1\" шақыруын өшірдіңіз.\n"
 "Қатысушыларға, оқиға болмайды деп, эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:301
+#: itiphandlerhelper_p.cpp:375
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -619,7 +639,7 @@ msgstr ""
 "\"%1\" шақыруын өшірдіңіз.\n"
 "Қатысушыларға, жоспар жойылды деп, эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:305
+#: itiphandlerhelper_p.cpp:379
 #, kde-format
 msgid ""
 "You removed the invitation \"%1\".\n"
@@ -628,11 +648,18 @@ msgstr ""
 "\"%1\" шақыруын өшірдіңіз.\n"
 "Қатысушыларға, күн тәртібі жойылды деп, эл.пошта жолдаймысыз?"
 
-#: itiphandlerhelper_p.cpp:326
+#: itiphandlerhelper_p.cpp:402
 msgid "Do you want to send a status update to the organizer of this journal?"
 msgstr "Ұйымдастырушысына күй-жай туралы жаңа мәліметін жібермексіз бе?"
 
-#: itiphandlerhelper_p.cpp:346
+#: itiphandlerhelper_p.cpp:405 itiphandlerhelper_p.cpp:426
+#, fuzzy
+#| msgid "Send Update"
+msgctxt "@action:button dialog positive answer"
+msgid "Send Update"
+msgstr "Жаңартуды жіберу"
+
+#: itiphandlerhelper_p.cpp:422
 msgid ""
 "You had previously accepted an invitation to this event. Do you want to send "
 "an updated response to the organizer declining the invitation?"
@@ -640,26 +667,21 @@ msgstr ""
 "Бұдан бұрын оқиғаға қатысам дегенсіз. Енді үәдеңізді өзгертіп, "
 "ұйымдастырушысына қатыспаймын деп жауап бермескіз бе?"
 
-#: itiphandlerhelper_p.cpp:374 mailscheduler_p.cpp:116
+#: itiphandlerhelper_p.cpp:462 mailscheduler_p.cpp:116
 #, kde-format
 msgid "Counter proposal: %1"
 msgstr "Қарсы ұсынс: %1"
 
-#: itiphandlerhelper_p.cpp:392
+#: itiphandlerhelper_p.cpp:480
 msgid "Sending group scheduling email failed."
 msgstr "Топтық жоспарлау эл.поштасын жіберу жаңылысы."
 
-#: itiphandlerhelper_p.cpp:393
+#: itiphandlerhelper_p.cpp:487
+#, fuzzy
+#| msgid "Abort Update"
+msgctxt "@action:button dialog positive answer to abort question"
 msgid "Abort Update"
 msgstr "Жаңартуды доғару"
-
-#: itiphandlerhelper_p.h:170
-msgid "Send Email"
-msgstr "Эл.поштаны жіберу"
-
-#: itiphandlerhelper_p.h:171
-msgid "Do Not Send"
-msgstr "Жібермеу"
 
 #: mailclient_p.cpp:67 mailclient_p.cpp:103
 msgid "There are no attendees to e-mail"
