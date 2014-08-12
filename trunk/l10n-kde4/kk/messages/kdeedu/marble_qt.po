@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 01:49+0000\n"
+"POT-Creation-Date: 2014-08-12 01:53+0000\n"
 "PO-Revision-Date: 2013-11-01 04:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -949,6 +949,7 @@ msgstr "Бүкілін аттап кету"
 #: src/lib/marble/BookmarkManagerDialog.cpp:471
 #: src/lib/marble/MapThemeDownloadDialog.cpp:248
 #: src/lib/marble/MapThemeDownloadDialog.cpp:283
+#: src/lib/marble/TourCaptureDialog.cpp:102
 msgid "Cancel"
 msgstr "Қайту"
 
@@ -1407,6 +1408,9 @@ msgstr "Орнату"
 
 #: src/lib/marble/MapThemeDownloadDialog.cpp:247
 #: src/lib/marble/MapThemeDownloadDialog.cpp:286
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:922
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1009
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1120
 msgid "Remove"
 msgstr "Өшіру"
 
@@ -2401,6 +2405,8 @@ msgstr ""
 "\">http://edu.kde.org/marble</a>"
 
 #: src/lib/marble/MarbleWebView.cpp:23
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:918
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1116
 msgid "Copy"
 msgstr "Көшіріп алу"
 
@@ -2469,39 +2475,39 @@ msgid "Address Details"
 msgstr "Адрес егжей-тегжейі"
 
 #: src/lib/marble/MovieCaptureDialog.cpp:57
-#: src/lib/marble/TourCaptureDialog.cpp:63
+#: src/lib/marble/TourCaptureDialog.cpp:72
 #, fuzzy
 #| msgid "Save Annotation File"
 msgid "Save video file"
 msgstr "Аңдатпа файлды сақтау"
 
 #: src/lib/marble/MovieCaptureDialog.cpp:58
-#: src/lib/marble/TourCaptureDialog.cpp:64
+#: src/lib/marble/TourCaptureDialog.cpp:73
 #, fuzzy
 #| msgid "All Supported Files (*.txt *.msc)"
 msgid "Supported video (*.mp4 *.webm *.ogg)"
 msgstr "Бүкіл танитын файлдар (*.txt *.msc)"
 
 #: src/lib/marble/MovieCaptureDialog.cpp:74
-#: src/lib/marble/TourCaptureDialog.cpp:80
+#: src/lib/marble/TourCaptureDialog.cpp:89
 #, fuzzy
 #| msgid "The file is not a valid file."
 msgid "Filename is not valid"
 msgstr "Дұрыс емес файлы."
 
 #: src/lib/marble/MovieCaptureDialog.cpp:75
-#: src/lib/marble/TourCaptureDialog.cpp:81
+#: src/lib/marble/TourCaptureDialog.cpp:90
 msgid ""
 "This file format is not supported. Please, use .ogg, .mp4 or .webm instead"
 msgstr ""
 
 #: src/lib/marble/MovieCaptureDialog.cpp:89
-#: src/lib/marble/TourCaptureDialog.cpp:95
+#: src/lib/marble/TourCaptureDialog.cpp:106
 msgid "Missing filename"
 msgstr ""
 
 #: src/lib/marble/MovieCaptureDialog.cpp:90
-#: src/lib/marble/TourCaptureDialog.cpp:96
+#: src/lib/marble/TourCaptureDialog.cpp:107
 msgid ""
 "Destination video file is not set. I don't know where to save recorded "
 "video. Please, specify one."
@@ -3035,6 +3041,25 @@ msgstr "Іздеу нәтижесі"
 msgid "Search for '%1'"
 msgstr "'%1' дегенді іздеу"
 
+#: src/lib/marble/TourCaptureDialog.cpp:101
+#: src/lib/marble/TourCaptureDialog.cpp:120
+#: src/lib/marble/TourCaptureDialog.cpp:155
+#: src/plugins/render/eclipses/EclipsesModel.cpp:169
+#, fuzzy
+#| msgid "Stars"
+msgid "Start"
+msgstr "Жұлдыздар"
+
+#: src/lib/marble/TourCaptureDialog.cpp:138
+#, fuzzy
+#| msgid "Archiving failed"
+msgid "Video writing failed."
+msgstr "Архивтеу жаңылысы"
+
+#: src/lib/marble/TourCaptureDialog.cpp:156
+msgid "Video export completed."
+msgstr ""
+
 #: src/lib/marble/TourWidget.cpp:178
 msgid "Play the tour"
 msgstr ""
@@ -3239,178 +3264,181 @@ msgstr "WLAN картаны ашу"
 msgid "Reports the current position based on nearby WLAN access points"
 msgstr "WLAN қатынау түкте төңірегіндегі қазіргі орының анықтап береді"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:80
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:83
 msgid "Annotations"
 msgstr "Аңдатпалары"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:128
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:133
 msgid "Annotation"
 msgstr "Аңдатпасы"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:133
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:138
 msgid "&Annotation"
 msgstr "&Аңдатпа"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:143
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:148
 msgid "Draws annotations on maps with placemarks or polygons."
 msgstr "Орын белгілерімен не көпбұрышпен аңдатпаларды картаға салу."
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:379
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:382
 msgid "Clear all annotations"
 msgstr "Бүкіл аңдатпаларды тазалау"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:380
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:383
 msgid "Are you sure you want to clear all annotations?"
 msgstr "Бүкіл аңдатпаларды тазаламақсыз ба?"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:399
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:848
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:402
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:833
 msgid "Save Annotation File"
 msgstr "Аңдатпа файлды сақтау"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:400
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:403
 msgid "All Supported Files (*.kml);;KML file (*.kml)"
 msgstr "Бүкіл танитын файлдар (*.kml);;KML файл (*.kml)"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:416
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:420
 #: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:89
 #: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:211
 msgid "Open Annotation File"
 msgstr "Аңдатпа файлды ашу"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:417
-msgid "All Supported Files (*.kml);;Kml Annotation file (*.kml)"
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:422
+#, fuzzy
+#| msgid "All Supported Files (*.kml);;Kml Annotation file (*.kml)"
+msgid ""
+"All Supported Files (*.kml *.osm);;Kml Annotation file (*.kml);;Open Street "
+"Map file (*.osm)"
 msgstr "Бүкіл танитын файлдар (*.kml);;Kml аңдатпа файлы (*.kml)"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:701
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:706
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:711
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1143
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1218
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:694
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:699
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:704
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1175
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1240
 msgid "Operation not permitted"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:702
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:695
 msgid ""
 "Cannot merge a node from polygon's outer boundary with a node from one of "
 "its inner boundaries."
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:707
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:700
 msgid "Cannot merge two nodes from two different inner boundaries."
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:712
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:705
 msgid ""
 "Cannot merge the selected nodes. Most probably this would make the polygon's "
 "outer boundary not contain all its inner boundary nodes."
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:737
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:723
 msgid "Remove current item"
 msgstr "Назардағы аталымды өшіру"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:738
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:724
 msgid "Are you sure you want to remove the current item?"
 msgstr "Назардағы аталымды тазаламақсыз ба?"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:787
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:772
 #, fuzzy
 #| msgid "Selection Method"
 msgid "Select item"
 msgstr "Таңдау әдісі"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:795
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:780
 msgid "Add Polygon"
 msgstr "Көпбұрышты қосу"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:802
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:787
 #, fuzzy
 #| msgid "Add Polygon"
 msgid "Add Polygon Hole"
 msgstr "Көпбұрышты қосу"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:809
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:794
 #, fuzzy
 #| msgid "Deleted"
 msgid "Merge Nodes"
 msgstr "Өшірілді"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:816
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:801
 #, fuzzy
 #| msgid "Deleted"
 msgid "Add Nodes"
 msgstr "Өшірілді"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:823
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:808
 msgid "Add Placemark"
 msgstr "Орын белгісін қосу"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:829
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:814
 msgid "Add Ground Overlay"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:835
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:820
 msgid "Remove Item"
 msgstr "Аталымды өшіру"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:842
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:827
 msgid "Load Annotation File"
 msgstr "Аңдатпа файлын жүктеу"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:854
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:839
 msgid "Clear all Annotations"
 msgstr "Бүкіл аңдатпаларды тазалау"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:912
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:984
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1102
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:899
+msgid "Paste Graphic Item"
+msgstr ""
+
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:914
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1112
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "Өзгеше"
+
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:928
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1003
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1126
 msgid "Properties"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:985
-#, fuzzy
-#| msgid "Remove from device"
-msgid "Remove Ground Overlay"
-msgstr "Құрылғыдан өшіру"
-
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1088
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1102
 msgid "Deselect All Nodes"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1092
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1106
 #, fuzzy
 #| msgid "Delete selected data source"
 msgid "Delete All Selected Nodes"
 msgstr "Таңдалған дерек көзін өшіру"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1096
-#, fuzzy
-#| msgid "Add Polygon"
-msgid "Remove Polygon"
-msgstr "Көпбұрышты қосу"
-
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1144
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1219
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1176
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1241
 msgid ""
 "Cannot delete one of the selected nodes. Most probably this would make the "
 "polygon's outer boundary not contain all its inner boundary nodes."
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1175
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1192
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1195
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1212
 #, fuzzy
 #| msgid "Selection Method"
 msgid "Select Node"
 msgstr "Таңдау әдісі"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1176
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1196
 #, fuzzy
 #| msgid "Deleted"
 msgid "Delete Node"
 msgstr "Өшірілді"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1190
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1210
 msgid "Deselect Node"
 msgstr ""
 
@@ -3612,12 +3640,6 @@ msgstr ""
 #: src/plugins/render/eclipses/EclipsesItem.cpp:93
 msgid "Sun, Annular/Total"
 msgstr ""
-
-#: src/plugins/render/eclipses/EclipsesModel.cpp:169
-#, fuzzy
-#| msgid "Stars"
-msgid "Start"
-msgstr "Жұлдыздар"
 
 #: src/plugins/render/eclipses/EclipsesModel.cpp:170
 msgid "End"
@@ -5820,6 +5842,16 @@ msgstr "Қалқымалы &үлгісі"
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:68
 msgid "This is a template class for float items."
 msgstr "Қалқымалы нәрселердің үлгі класы."
+
+#, fuzzy
+#~| msgid "Remove from device"
+#~ msgid "Remove Ground Overlay"
+#~ msgstr "Құрылғыдан өшіру"
+
+#, fuzzy
+#~| msgid "Add Polygon"
+#~ msgid "Remove Polygon"
+#~ msgstr "Көпбұрышты қосу"
 
 #~ msgid "Enable Moving Map"
 #~ msgstr "Карта жылжуы рұқсат етілсін"
