@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-12 01:49+0000\n"
+"POT-Creation-Date: 2014-10-19 01:50+0000\n"
 "PO-Revision-Date: 2013-11-01 04:04+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1057,12 +1057,14 @@ msgid "Upload to cloud"
 msgstr "Бұлтқа жүктеп беру"
 
 #: src/lib/marble/CurrentLocationWidget.cpp:205
-msgid "Waiting for current location information..."
-msgstr "Орын туралы ақпарды күту..."
+#, fuzzy
+#| msgid "No description available."
+msgid "No position available."
+msgstr "Сипаттамасы жоқ."
 
 #: src/lib/marble/CurrentLocationWidget.cpp:208
-msgid "Initializing current location service..."
-msgstr "Орын туралы мәлімет беру қызметін инициализациялау..."
+msgid "Waiting for current location information..."
+msgstr "Орын туралы ақпарды күту..."
 
 #: src/lib/marble/CurrentLocationWidget.cpp:214
 msgid "Error when determining current location: "
@@ -1122,28 +1124,29 @@ msgstr ""
 msgid "nm"
 msgstr "м"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:321
-msgid "Disabled"
-msgstr "Рұқсат етілмеген"
+#: src/lib/marble/CurrentLocationWidget.cpp:340
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:46
+msgid "Placemark"
+msgstr "Орын белгісі"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:380
+#: src/lib/marble/CurrentLocationWidget.cpp:375
 msgid "Save Track"
 msgstr "Ізін сақтау"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:382
-#: src/lib/marble/CurrentLocationWidget.cpp:398
+#: src/lib/marble/CurrentLocationWidget.cpp:377
+#: src/lib/marble/CurrentLocationWidget.cpp:393
 msgid "KML File (*.kml)"
 msgstr "KML файлы (*kml)"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:397
+#: src/lib/marble/CurrentLocationWidget.cpp:392
 msgid "Open Track"
 msgstr "Ізін ашу"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:409
+#: src/lib/marble/CurrentLocationWidget.cpp:404
 msgid "Clear current track"
 msgstr "Назардағы ізін тазалау"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:410
+#: src/lib/marble/CurrentLocationWidget.cpp:405
 msgid "Are you sure you want to clear the current track?"
 msgstr "Назардағы ізін шын тазаламақсыз ба?"
 
@@ -2545,6 +2548,14 @@ msgstr ""
 msgid "Installation aborted by user."
 msgstr "Орнатуды пайдаланушы доғарды."
 
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:36
+msgid "Placemark position provider Plugin"
+msgstr "Орын белгінің орынын анықтауш плагині"
+
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:56
+msgid "Reports the position of a placemark"
+msgstr "Орын белгісінің орынын анықтап береді"
+
 #: src/lib/marble/PlanetFactory.cpp:229
 msgctxt "the planet"
 msgid "Mercury"
@@ -2780,6 +2791,18 @@ msgstr ""
 "Marble-ды басқа графикалық жүйемен жегуді ұйғардыңыз.\n"
 "Өзгеріс орын алу үшін, Marble жаңадан бастау керек.\n"
 "Қолданбаны жауып, оны қайтадан жегіңіз."
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:34
+msgid "Current Route Position Provider Plugin"
+msgstr "Маршруттағы қазіргі орынды анықтауш плагині"
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:44
+msgid "Current Route"
+msgstr "Қазіргі маршрут"
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:54
+msgid "Simulates traveling along the current route."
+msgstr "Назардағы маршрут бойы жүру иммитациясы."
 
 #: src/lib/marble/routing/instructions/RoutingInstruction.cpp:250
 msgid "Enter the roundabout."
@@ -3134,7 +3157,7 @@ msgstr "Жүктеп беру маршруты..."
 msgid "No route found"
 msgstr "Маршрут табылмады"
 
-#: src/lib/marble/RoutingRunner.cpp:51
+#: src/lib/marble/RoutingRunner.cpp:40
 #, qt-format
 msgctxt "journey duration"
 msgid "%1:%2 h"
@@ -3334,18 +3357,6 @@ msgstr "Maemo"
 msgid "Reports the GPS position of a Maemo device (e.g. Nokia N900)."
 msgstr "Maemo (мысалы, Nokia N900) құрылғының орынын анықтап береді."
 
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:35
-msgid "Placemark position provider Plugin"
-msgstr "Орын белгінің орынын анықтауш плагині"
-
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:45
-msgid "Placemark"
-msgstr "Орын белгісі"
-
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:55
-msgid "Reports the position of a placemark"
-msgstr "Орын белгісінің орынын анықтап береді"
-
 #: src/plugins/positionprovider/qtmobility/QtMobilityPositionProviderPlugin.cpp:39
 msgid "Qt Mobility Position Provider Plugin"
 msgstr "Qt Mobility орын анықтаушының плагині"
@@ -3357,18 +3368,6 @@ msgstr "Qt Mobility бойынша орын"
 #: src/plugins/positionprovider/qtmobility/QtMobilityPositionProviderPlugin.cpp:59
 msgid "Reports the GPS position of a QtMobility compatible device."
 msgstr "QtMobility үйлесімді құрылғының GPS орнын баяндап береді."
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:35
-msgid "Current Route Position Provider Plugin"
-msgstr "Маршруттағы қазіргі орынды анықтауш плагині"
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:45
-msgid "Current Route"
-msgstr "Қазіргі маршрут"
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:55
-msgid "Simulates traveling along the current route."
-msgstr "Назардағы маршрут бойы жүру иммитациясы."
 
 #: src/plugins/positionprovider/wlocate/WlocatePositionProviderPlugin.cpp:63
 msgid "Wlocate Position Provider Plugin"
@@ -5997,6 +5996,12 @@ msgstr "Қалқымалы &үлгісі"
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:68
 msgid "This is a template class for float items."
 msgstr "Қалқымалы нәрселердің үлгі класы."
+
+#~ msgid "Initializing current location service..."
+#~ msgstr "Орын туралы мәлімет беру қызметін инициализациялау..."
+
+#~ msgid "Disabled"
+#~ msgstr "Рұқсат етілмеген"
 
 #, fuzzy
 #~| msgid "Deleted"
