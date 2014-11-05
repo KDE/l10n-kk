@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-30 01:55+0000\n"
+"POT-Creation-Date: 2014-11-04 10:02+0000\n"
 "PO-Revision-Date: 2013-09-14 04:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -25,652 +25,1141 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: Data.cpp:491
+#: dialogs/edgeproperties.cpp:39
+#, fuzzy
+#| msgid "Edge Properties"
+msgctxt "@title:window"
+msgid "Edge Properties"
+msgstr "Қырының қасиеттері"
+
+#: dialogs/edgeproperties.cpp:94 dialogs/edgetypeproperties.cpp:56
+#: dialogs/nodeproperties.cpp:95 dialogs/nodetypeproperties.cpp:55
+msgid "Name"
+msgstr "Атауы"
+
+#: dialogs/edgeproperties.cpp:95 dialogs/nodeproperties.cpp:96
+msgid "Value"
+msgstr "Мәні"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, EdgeProperties)
+#: dialogs/edgeproperties.ui:26
+msgid "Edge Properties"
+msgstr "Қырының қасиеттері"
+
+#. i18n: ectx: property (text), widget (QLabel, labelType)
+#: dialogs/edgeproperties.ui:52 dialogs/nodeproperties.ui:78
+msgid "Type:"
+msgstr "Түрі:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, DynamicProperties)
+#: dialogs/edgeproperties.ui:98 dialogs/nodeproperties.ui:124
+msgid "Dynamic Properties"
+msgstr "Динамикалық қасиеттер"
+
+#: dialogs/edgetypeproperties.cpp:51
+#, fuzzy
+#| msgid "Edge Properties"
+msgctxt "@title:window"
+msgid "Edge Type Properties"
+msgstr "Қырының қасиеттері"
+
+#. i18n: ectx: property (text), widget (QLabel, labelIdentifier)
+#: dialogs/edgetypeproperties.cpp:57 dialogs/nodetypeproperties.cpp:56
+#: editorplugins/generategraph/generategraphwidget.ui:113
+#, fuzzy
+#| msgid "Identifier:"
+msgid "Identifier"
+msgstr "Идентификаторы:"
+
+#: dialogs/edgetypeproperties.cpp:58 dialogs/nodetypeproperties.cpp:57
+#, fuzzy
+#| msgid "Color:"
+msgid "Color"
+msgstr "Түсі:"
+
+#: dialogs/edgetypeproperties.cpp:59
+#, fuzzy
+#| msgid "Connection"
+msgid "Unidirectional"
+msgstr "Байланыс"
+
+#: dialogs/edgetypeproperties.cpp:60
+#, fuzzy
+#| msgid "Connection"
+msgid "Bidirectional"
+msgstr "Байланыс"
+
+#: dialogs/edgetypeproperties.cpp:61
+#, fuzzy
+#| msgid "Connection"
+msgid "Direction"
+msgstr "Байланыс"
+
+#: dialogs/nodeproperties.cpp:39
+#, fuzzy
+#| msgid "Node Properties"
+msgctxt "@title:window"
+msgid "Node Properties"
+msgstr "Төбенің қасиеттері"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, NodeProperties)
+#: dialogs/nodeproperties.ui:26
+msgid "Node Properties"
+msgstr "Төбенің қасиеттері"
+
+#. i18n: ectx: property (toolTip), widget (KColorCombo, color)
+#. i18n: ectx: property (toolTip), widget (QLabel, labelColor)
+#: dialogs/nodeproperties.ui:43 dialogs/nodeproperties.ui:56
+msgid "Node color"
+msgstr "Төбенің түсі"
+
+#. i18n: ectx: property (text), widget (QLabel, labelColor)
+#: dialogs/nodeproperties.ui:59
+msgid "Color:"
+msgstr "Түсі:"
+
+#: dialogs/nodetypeproperties.cpp:50
+#, fuzzy
+#| msgid "Node Properties"
+msgctxt "@title:window"
+msgid "Node Type Properties"
+msgstr "Төбенің қасиеттері"
+
+#: dialogs/propertieswidget.cpp:48
+msgid "Add Property"
+msgstr "Қасиетін қосу"
+
+#: dialogs/propertydelegate.cpp:65
+msgid "Delete this property."
+msgstr ""
+
+#: editorplugins/assignvalues/assignvalueswidget.cpp:47
+#, fuzzy
+#| msgid "Assign Values"
+msgctxt "@title:window"
+msgid "Assign Values"
+msgstr "Мәндерін келтіру"
+
+#: editorplugins/assignvalues/assignvalueswidget.cpp:66
+#, fuzzy
+#| msgid "Data Types"
+msgid "All Data Types"
+msgstr "Дерек түрлері"
+
+#: editorplugins/assignvalues/assignvalueswidget.cpp:70
+#, fuzzy
+#| msgid "Add Connection"
+msgid "All Connection Types"
+msgstr "Байланыс құру"
+
+#: editorplugins/assignvalues/assignvalueswidget.cpp:93
+#, fuzzy
+#| msgid "Pointer Properties"
+msgid "Enter Property Name"
+msgstr "Көрсеткіштің қасиеттері"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AssignValuesWidget)
+#: editorplugins/assignvalues/assignvalueswidget.ui:32
+msgid "Assign Values"
+msgstr "Мәндерін келтіру"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: editorplugins/assignvalues/assignvalueswidget.ui:40
+#, fuzzy
+#| msgid "Node Properties"
+msgid "Choose Properties"
+msgstr "Төбенің қасиеттері"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonShowAdvanced)
+#: editorplugins/assignvalues/assignvalueswidget.ui:59
+#, fuzzy
+#| msgid "Show values of pointers"
+msgid "Show advanced options."
+msgstr "Көрсеткіштерінің мәндерін көрсету"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: editorplugins/assignvalues/assignvalueswidget.ui:74
+msgid "Assignment Method"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:81
+msgid "Enumerate Items"
+msgstr "Нөмірлеп шығу"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:86
+#, fuzzy
+#| msgid "Enumerate"
+msgid "Enumerate Alpha"
+msgstr "Санап шығу"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:91
+msgid "Enumerate Alpha-Numeric"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:96
+msgid "Assign Random Integers"
+msgstr "Кездейсоқ бүтін сандар"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:101
+msgid "Assign Random Reals"
+msgstr "Кездейсоқ нақты сандар"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMethod)
+#: editorplugins/assignvalues/assignvalueswidget.ui:106
+#, fuzzy
+#| msgid "Assign Values"
+msgid "Assign Constant Value"
+msgstr "Мәндерін келтіру"
+
+#. i18n: ectx: property (text), widget (QLabel, IDlabelStartValue)
+#. i18n: ectx: property (text), widget (QLabel, LabelAlphaNumericID)
+#: editorplugins/assignvalues/assignvalueswidget.ui:132
+#: editorplugins/assignvalues/assignvalueswidget.ui:192
+msgid "Start ID"
+msgstr "Бастапқы идентификатор"
+
+#. i18n: ectx: property (text), widget (QLabel, LabelInitialString)
+#: editorplugins/assignvalues/assignvalueswidget.ui:167
+msgid "Initial string"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, LineEditInitialString)
+#: editorplugins/assignvalues/assignvalueswidget.ui:174
+msgid "a"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, LabelAlphaNumericPrefix)
+#: editorplugins/assignvalues/assignvalueswidget.ui:209
+msgid "Prefix"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: editorplugins/assignvalues/assignvalueswidget.ui:230
+#: editorplugins/assignvalues/assignvalueswidget.ui:298
+msgid "Lower Limit"
+msgstr "Төменгі шек"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: editorplugins/assignvalues/assignvalueswidget.ui:250
+#: editorplugins/assignvalues/assignvalueswidget.ui:305
+msgid "Upper Limit"
+msgstr "Жоғарғы шек"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: editorplugins/assignvalues/assignvalueswidget.ui:257
+#: editorplugins/assignvalues/assignvalueswidget.ui:312
+msgid "Generator Seed"
+msgstr "Генератордың бастапқы саны"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: editorplugins/assignvalues/assignvalueswidget.ui:372
+msgid "Constant"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: editorplugins/assignvalues/assignvalueswidget.ui:400
+msgid "Overwrite existing values"
+msgstr "Бар мәндерін ауыстырып"
+
+#. i18n: ectx: property (text), widget (QLabel, labelData)
+#: editorplugins/assignvalues/assignvalueswidget.ui:434
+msgid "Nodes"
+msgstr "Төбелер"
+
+#. i18n: ectx: property (text), widget (QLabel, labelProperty)
+#: editorplugins/assignvalues/assignvalueswidget.ui:447
+#, fuzzy
+#| msgid "Property"
+msgid "Property Name"
+msgstr "Қасиет"
+
+#. i18n: ectx: property (text), widget (QLabel, labelConnection)
+#: editorplugins/assignvalues/assignvalueswidget.ui:460
+msgid "Edges"
+msgstr "Қырлар"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, applyToEdges)
+#: editorplugins/assignvalues/assignvalueswidget.ui:482
+msgid "Assign values to selected edges."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, applyToNodes)
+#: editorplugins/assignvalues/assignvalueswidget.ui:509
+msgid "Assign values to selected nodes."
+msgstr ""
+
+#: editorplugins/generategraph/generategraphwidget.cpp:89
+#, fuzzy
+#| msgid "Generate Graph"
+msgctxt "@title:window"
+msgid "Generate Graph"
+msgstr "Графты құру"
+
+#: editorplugins/generategraph/generategraphwidget.cpp:129
+#: editorplugins/generategraph/generategraphwidget.cpp:140
 #, kde-format
-msgid "Could not set data type for node %1: data type does not exist."
-msgstr "%1 төбе дерегінің түрі орнатылмады: дерек түрі жоқ."
-
-#: Data.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"An abstract data element is a unit of information that belongs to an "
-"abstract data structure and possibly is connected to other data elements by "
-"pointers.\n"
+msgctxt "@item:inlistbox"
+msgid "%1 (ID %2)"
 msgstr ""
-"\n"
-"Абстрактты дерек элементі деген деректер құрылымына жататын және "
-"көрсеткіштер арқылы олардың арасындағы мүмкін байланыстарды анықтайтын "
-"ақпарат бірлігі.\n"
 
-#: Data.xml:12 DataStructure.xml:12 DataStructures/Graph/GraphEdge.xml:12
-#: DataStructures/Graph/GraphNode.xml:12
-#: DataStructures/Graph/GraphStructure.xml:12
-#: DataStructures/LinkedList/ListNode.xml:12
-#: DataStructures/LinkedList/ListStructure.xml:12 Pointer.xml:10
-msgctxt "Scripting API Description"
-msgid "\n"
-msgstr "\n"
+#. i18n: ectx: property (windowTitle), widget (QWidget, GenerateGraphWidget)
+#: editorplugins/generategraph/generategraphwidget.ui:14
+msgid "Generate Graph"
+msgstr "Графты құру"
 
-#: Data.xml:16
-msgctxt "Scripting API Description"
-msgid "The unique identifier of this data element."
-msgstr "Осы деректер элементінің бірегей идентификаторы."
+#. i18n: ectx: property (text), widget (QLabel, labelGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:20
+#, fuzzy
+#| msgid "Graph File"
+msgid "Graph Generator"
+msgstr "Граф файлы"
 
-#: Data.xml:21
-msgctxt "Scripting API Description"
-msgid "The x-coordinate of this data element."
-msgstr "Осы деректер элементінің x-координаты."
-
-#: Data.xml:26
-msgctxt "Scripting API Description"
-msgid "The y-coordinate of this data element."
-msgstr "Осы деректер элементінің y-координаты."
-
-#: Data.xml:31
-msgctxt "Scripting API Description"
-msgid "The size of this data element."
-msgstr "Осы деректер элементінің өлшемі."
-
-#: Data.xml:36
-msgctxt "Scripting API Description"
-msgid "The color of this data element stated as hexadecimal value."
-msgstr "Осы деректер элементінің түсі (оналтылық мәнімен берілген)."
-
-#: DataStructure.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"An abstract data structure defines a set of data elements and possible "
-"connections between them.\n"
+#. i18n: ectx: property (toolTip), widget (QLabel, labelNodeType)
+#: editorplugins/generategraph/generategraphwidget.ui:27
+msgid "The node type to create the nodes of the graph with"
 msgstr ""
-"\n"
-"Абстрактты деректер құрылымы дерек элементтерін және олардың арасындағы "
-"мүмкін байланыстарды анықтайды.\n"
 
-#: DataStructure.xml:16
-msgctxt "Scripting API Description"
-msgid "The unique name of this data structure."
-msgstr "Осы деректер құрылымының бірегей атауы."
-
-#: DataStructures/Graph/GraphEdge.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"An Edge is the connection of two GraphNodes. Edges can be directed or "
-"undirected, depending on their type.\n"
+#. i18n: ectx: property (text), widget (QLabel, labelNodeType)
+#: editorplugins/generategraph/generategraphwidget.ui:30
+msgid "Node type"
 msgstr ""
-"\n"
-"Қыр графтың екі төбесін байланыстырады. Қырлар, түріне қарай, бағытталған "
-"немесе бағытталмаған болады.\n"
 
-#: DataStructures/Graph/GraphNode.cpp:91 DataStructures/Graph/GraphNode.cpp:99
-#: DataStructures/Graph/GraphNode.cpp:107
-#: DataStructures/Graph/GraphNode.cpp:118
-#: DataStructures/Graph/GraphNode.cpp:126
-#: DataStructures/Graph/GraphNode.cpp:134
-#: DataStructures/LinkedList/ListStructure.cpp:152
-#: DataStructures/LinkedList/ListStructure.cpp:160
-#, kde-format
-msgid "The method \"%1\" is deprecated, please use \"%2\" instead."
-msgstr "\"%1\" әдісі ескірген, оның орнына \"%2\" дегенді қолданыңыз."
-
-#: DataStructures/Graph/GraphNode.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"A node is the data element of a graph.\n"
+#. i18n: ectx: property (toolTip), widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:46
+msgid "Select the graph generator."
 msgstr ""
-"\n"
-"Төбе - графтың дерек элементі.\n"
 
-#: DataStructures/Graph/GraphNode.xml:19
-msgctxt "Scripting API Description"
-msgid ""
-"Return list all nodes connected to this node. This method respects if edges "
-"are directed."
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:50
+msgid "Mesh Graph"
+msgstr "Торлы граф"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:55
+msgid "Star Graph"
+msgstr "Жүлдызды граф"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:60
+msgid "Circle Graph"
+msgstr "Дөңгелек граф"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:65
+msgid "Random Graph"
+msgstr "Кездейсоқ граф"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:70
+msgid "Erdös-Renyi Graph"
+msgstr "Эрдеш-Реньи графы"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboGraphGenerator)
+#: editorplugins/generategraph/generategraphwidget.ui:75
+#, fuzzy
+#| msgid "Random Graph"
+msgid "Random Tree Graph"
+msgstr "Кездейсоқ граф"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, buttonShowAdvanced)
+#: editorplugins/generategraph/generategraphwidget.ui:95
+msgid "Show advanced settings."
 msgstr ""
-"Осы төбемен байланысты бүкіл қырлар тізімін қайтарады. Әдіс қырдың "
-"бағытталғанын есепке алады."
 
-#: DataStructures/Graph/GraphNode.xml:28
-msgctxt "Scripting API Description"
-msgid "Return a list of all edges (incoming and outgoing) of this node."
-msgstr "Осы төбеге кіретін, төбеден шығатын бүкіл қырлар тізімін қайтарады."
-
-#: DataStructures/Graph/GraphNode.xml:37
-msgctxt "Scripting API Description"
-msgid ""
-"Return a list of all edges (incoming and outgoing) of this node of a "
-"specified type."
+#. i18n: ectx: property (toolTip), widget (QLabel, labelIdentifier)
+#: editorplugins/generategraph/generategraphwidget.ui:110
+msgid "The identifier of the created graph (used for scripting)"
 msgstr ""
-"Осы төбеге кіретін, не төбеден шығатын бүкіл сұралған қырлар түрінің тізімін "
-"қайтарады."
 
-#: DataStructures/Graph/GraphNode.xml:51
-msgctxt "Scripting API Description"
-msgid "Return a list of incoming edges of this node."
-msgstr "Осы төбеге кіретін қырлар тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QLabel, label_columns)
+#: editorplugins/generategraph/generategraphwidget.ui:132
+msgid "Number of Columns:"
+msgstr "Бағандар саны:"
 
-#: DataStructures/Graph/GraphNode.xml:60
-msgctxt "Scripting API Description"
-msgid "Return a list of all incoming edges of this node of a specified type."
-msgstr "Осы төбеге кіретін бүкіл сұралған қырлар түрінің тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QLabel, label_rows)
+#: editorplugins/generategraph/generategraphwidget.ui:152
+msgid "Number of Rows:"
+msgstr "Жолдар саны:"
 
-#: DataStructures/Graph/GraphNode.xml:74
-msgctxt "Scripting API Description"
-msgid "Return a list of all outgoing edges of this node."
-msgstr "Осы төбеден шығатын бүкіл қырлар тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QLabel, label_numberSatellite)
+#: editorplugins/generategraph/generategraphwidget.ui:180
+msgid "Satellite Nodes:"
+msgstr "Серіктес төбелері:"
 
-#: DataStructures/Graph/GraphNode.xml:83
-msgctxt "Scripting API Description"
-msgid "Return a list of all outgoing edges of this node of a specified type."
-msgstr "Осы төбедеен шығатын бүкіл сұралған қырлар түрінің тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QLabel, label_numberCircle)
+#: editorplugins/generategraph/generategraphwidget.ui:208
+msgid "Number of Nodes:"
+msgstr "Төбелер саны:"
 
-#: DataStructures/Graph/GraphNode.xml:97
-msgctxt "Scripting API Description"
-msgid "Return a list of all edges of this node to the specified node."
-msgstr "Осы төбеден сұралған төбеге дейінгі қырлар тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QLabel, label_randomNodes)
+#. i18n: ectx: property (text), widget (QLabel, label_randomTreeNodes)
+#: editorplugins/generategraph/generategraphwidget.ui:236
+#: editorplugins/generategraph/generategraphwidget.ui:388
+msgid "Nodes:"
+msgstr "Төбелер:"
 
-#: DataStructures/Graph/GraphPlugin.cpp:36
-msgctxt "@title Displayed plugin name"
-msgid "Graph Structure"
-msgstr "Граф құрылымы"
+#. i18n: ectx: property (text), widget (QLabel, label_randomEdges)
+#: editorplugins/generategraph/generategraphwidget.ui:256
+msgid "Edges:"
+msgstr "Қырлар:"
 
-#: DataStructures/Graph/GraphPlugin.cpp:94
-msgctxt "coordinate axis"
-msgid "x"
-msgstr "x"
+#. i18n: ectx: property (text), widget (QLabel, label_randomSelfEdges)
+#. i18n: ectx: property (text), widget (QLabel, label_GNPSelfEdges)
+#: editorplugins/generategraph/generategraphwidget.ui:270
+#: editorplugins/generategraph/generategraphwidget.ui:316
+msgid "Allow self-edges:"
+msgstr "Өз-өзіне түйілген қырлар:"
 
-#: DataStructures/Graph/GraphPlugin.cpp:95
-msgctxt "coordinate axis"
-msgid "y"
-msgstr "y"
+#. i18n: ectx: property (text), widget (QLabel, label_randomGeneratorSeed)
+#. i18n: ectx: property (text), widget (QLabel, label_GNPGeneratorSeed)
+#. i18n: ectx: property (text), widget (QLabel, label_randomTreeGeneratorSeed)
+#: editorplugins/generategraph/generategraphwidget.ui:277
+#: editorplugins/generategraph/generategraphwidget.ui:340
+#: editorplugins/generategraph/generategraphwidget.ui:405
+msgid "Generator Seed:"
+msgstr "Генератордың бастапқы саны:"
 
-#: DataStructures/Graph/GraphPlugin.cpp:96
-msgid "Size"
-msgstr "Өлшемі"
+#. i18n: ectx: property (text), widget (QLabel, label_GNPNodes)
+#: editorplugins/generategraph/generategraphwidget.ui:309
+msgid "Nodes (n):"
+msgstr "Төбелер (n):"
 
-#: DataStructures/Graph/GraphPlugin.cpp:113
-msgid "Graph Type:"
-msgstr "Граф түрі:"
+#. i18n: ectx: property (text), widget (QLabel, label_GNPEdgeProbability)
+#: editorplugins/generategraph/generategraphwidget.ui:333
+msgid "Edge Probability (p):"
+msgstr "Қыр ықтималдығы (p):"
 
-#: DataStructures/Graph/GraphPlugin.cpp:115
-msgctxt "@label:inlistbox"
+#. i18n: ectx: property (toolTip), widget (QLabel, labelEdgeType)
+#: editorplugins/generategraph/generategraphwidget.ui:428
+msgid "The edge type to create the edges of the graph with"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelEdgeType)
+#: editorplugins/generategraph/generategraphwidget.ui:431
+#, fuzzy
+#| msgid "Edge style"
+msgid "Edge type"
+msgstr "Қырының стилі"
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, nodeTypeSelector)
+#: editorplugins/generategraph/generategraphwidget.ui:438
+msgid "Select the node type for node elements of the generated graph."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KComboBox, edgeTypeSelector)
+#: editorplugins/generategraph/generategraphwidget.ui:445
+msgid "Select the edge type for connections of the generated graph."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, identifier)
+#: editorplugins/generategraph/generategraphwidget.ui:452
+#, fuzzy
+#| msgid "This is the unique identifier for the pointer type."
+msgid "Set the unique identifier of the generated graph."
+msgstr "Бұл осы көрсеткіш түрінің бірегей идентификаторы."
+
+#. i18n: ectx: property (text), widget (QLineEdit, identifier)
+#: editorplugins/generategraph/generategraphwidget.ui:455
+#, fuzzy
+#| msgctxt "@label:inlistbox"
+#| msgid "Graph"
 msgid "Graph"
 msgstr "Граф"
 
-#: DataStructures/Graph/GraphPlugin.cpp:117
-msgctxt ""
-"@label:inlistbox graph for which several edges between same nodes may exist"
-msgid "Multigraph"
-msgstr "Мультиграф"
+#: editorplugins/transformedges/transformedgeswidget.cpp:38
+#, fuzzy
+#| msgid "Transform Edges"
+msgctxt "@title:window"
+msgid "Transform Edges"
+msgstr "Қырларын түрлендіру"
 
-#: DataStructures/Graph/GraphStructure.cpp:156
-msgid "Cannot create edge: nodes are not defined."
-msgstr "Қыр құрылмады: төбелері анықталмаған."
+#. i18n: ectx: property (windowTitle), widget (QWidget, TransformEdgesWidget)
+#: editorplugins/transformedges/transformedgeswidget.ui:14
+msgid "Transform Edges"
+msgstr "Қырларын түрлендіру"
 
-#: DataStructures/Graph/GraphStructure.cpp:160
-#, kde-format
-msgid "Cannot create edge: pointer type %1 not defined"
-msgstr "Қыр құрылмады: %1 көрсеткіш түрі анықталмаған"
-
-#: DataStructures/Graph/GraphStructure.cpp:179
-#: DataStructures/Graph/GraphStructure.cpp:187
-#: DataStructures/Graph/GraphStructure.cpp:195
-#: DataStructures/Graph/GraphStructure.cpp:203
-#: DataStructures/Graph/GraphStructure.cpp:211
-#: DataStructures/Graph/GraphStructure.cpp:219
-#: DataStructures/Graph/GraphStructure.cpp:229
-#: DataStructures/Graph/GraphStructure.cpp:237 QtScriptBackend.cpp:265
-#: QtScriptBackend.cpp:271
-#, kde-format
-msgid "The global method \"%1\" is deprecated, please use \"%2\" instead."
-msgstr "Глобалды \"%1\" әдісі ескірген, оның орнына \"%2\" дегенді қолданыңыз."
-
-#: DataStructures/Graph/GraphStructure.cpp:390
-msgid "This action will probably remove some edges. Do you want to continue?"
-msgstr "Бұл амал кейбір қырларды өшіру ықтимал. Жалғастыра бересіз бе?"
-
-#: DataStructures/Graph/GraphStructure.cpp:430
-#, kde-format
-msgid "Could not add back-edge (%1->%2) to undirected graph."
-msgstr "Бағытталмаған графқа кері (%1->%2) бағытты қырын қосуға болмайды."
-
-#: DataStructures/Graph/GraphStructure.cpp:441
-#, kde-format
-msgid "Could not add existing edge (%1->%2): this graph is no multigraph."
-msgstr "Бар (%1->%2) қырын қосуға болмайды: бұл мультиграф емес."
-
-#: DataStructures/Graph/GraphStructure.xml:9
-msgctxt "Scripting API Description"
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioButtonMakeComplete)
+#: editorplugins/transformedges/transformedgeswidget.ui:22
 msgid ""
-"\n"
-"A graph objects holds the information of a data structure of type \"Graph"
-"\".\n"
+"This option connects all nodes of the given graph. The new edges do not have "
+"any preset weights."
 msgstr ""
-"\n"
-"Граф нысанында \"Graph\" деген дерек құрылымының мәліметі бар.\n"
+"Бұнымен осы графтың бүкіл төбелері байланыстырлады. Жаңа қырларға "
+"тағайындалған салмақтар берілмейді. "
 
-#: DataStructures/Graph/GraphStructure.xml:19
-msgctxt "Scripting API Description"
-msgid "Return list all nodes in the graph."
-msgstr "Графтың бүкіл төбелер тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QRadioButton, radioButtonMakeComplete)
+#: editorplugins/transformedges/transformedgeswidget.ui:25
+msgid "Complete Graph"
+msgstr "Графты бітіру"
 
-#: DataStructures/Graph/GraphStructure.xml:28
-msgctxt "Scripting API Description"
-msgid "Return list all nodes in the graph of specified type."
-msgstr "Графтың бүкіл сұралған төбелер түрінің тізімін қайтарады."
-
-#: DataStructures/Graph/GraphStructure.xml:37
-msgctxt "Scripting API Description"
-msgid "Return list all edges in the graph."
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioButtonEraseEdges)
+#: editorplugins/transformedges/transformedgeswidget.ui:35
+#, fuzzy
+#| msgctxt "Scripting API Description"
+#| msgid "Return list all edges in the graph."
+msgid "This option removes all edges from the given graph."
 msgstr "Графтың бүкіл қырларының тізімін қайтарады."
 
-#: DataStructures/Graph/GraphStructure.xml:46
-msgctxt "Scripting API Description"
-msgid "Return list all edges in the graph of specified type."
-msgstr "Графтың бүкіл сұралған төбелер түрінің тізімін қайтарады."
+#. i18n: ectx: property (text), widget (QRadioButton, radioButtonEraseEdges)
+#: editorplugins/transformedges/transformedgeswidget.ui:38
+msgid "Remove all Edges"
+msgstr "Бүкіл қырларын өшіру"
 
-#: DataStructures/Graph/GraphStructure.xml:60
-#: DataStructures/LinkedList/ListStructure.xml:42
-msgctxt "Scripting API Description"
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioButtonReverseEdges)
+#: editorplugins/transformedges/transformedgeswidget.ui:45
 msgid ""
-"Create a new node of the specified type and return the created node. If the "
-"type is not registered, no node is created."
+"This option reverses all edges of a directed graph. Note that this does not "
+"apply to undirected graphs."
 msgstr ""
-"Сұралған төбе түрінің жаңа төбесін құрып беріп қайтарады. Түрі тіркелмеген "
-"болса, ол құрылмайды."
+"Бұнымен бағытты графтың бүкіл қырларының бағытын керіге ауыстырады. Тек "
+"бағытты графтарға қолданылады. "
 
-#: DataStructures/Graph/GraphStructure.xml:74
-#: DataStructures/LinkedList/ListStructure.xml:56
-msgctxt "Scripting API Description"
-msgid "Create a new node of default type and return the created node."
-msgstr "Әдетті төбе түрінің жаңа төбесін құрып беріп қайтарады."
+#. i18n: ectx: property (text), widget (QRadioButton, radioButtonReverseEdges)
+#: editorplugins/transformedges/transformedgeswidget.ui:48
+msgid "Reverse all Edges"
+msgstr "Бүкіл қырларының бағытын кері қылу"
 
-#: DataStructures/Graph/GraphStructure.xml:83
-msgctxt "Scripting API Description"
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioButtonMakeSpanningtree)
+#: editorplugins/transformedges/transformedgeswidget.ui:59
 msgid ""
-"Create an edge from node \"from\" to node \"to\" of the specified type and "
-"return the created edge. If the type is not registered, no edge is created."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">This option executes <span "
+"style=\" font-style:italic;\">Prim's Minimal Spanning Tree Algorithm</span> "
+"at the graph. All edges without given weights are assumed to have weights "
+"equals 1. Directed and undirected graphs are processed accordingly.</p></"
+"body></html>"
 msgstr ""
-"Сұралған қыр түрінің қырын бір төбеден басқа төбеге дейін құрып беріп "
-"қайтарады. Түрі тіркелмеген болса, ол құрылмайды."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Бұл <span style=\" font-"
+"style:italic;\">Графты минималдыру Прим алгоритмын</span> графқа қолдануы. "
+"Салмағы белгіленбеген қырларының салмағы 1 деп есептеледі. Бағытты және "
+"бағытталмаған графтар өз жолымен қарастырлады.</p></body></html>"
 
-#: DataStructures/Graph/GraphStructure.xml:107
-msgctxt "Scripting API Description"
-msgid ""
-"Create an edge from node \"from\" to node \"to\" of default type and return "
-"the created edge."
-msgstr ""
-"Әдетті қыр түрінің қырын бір төбеден басқа төбеге дейін құрып беріп "
-"қайтарады."
+#. i18n: ectx: property (text), widget (QRadioButton, radioButtonMakeSpanningtree)
+#: editorplugins/transformedges/transformedgeswidget.ui:62
+msgid "Spanning Tree Transformation"
+msgstr "Графты минималдыру"
 
-#: DataStructures/Graph/GraphStructure.xml:126
-msgctxt "Scripting API Description"
-msgid ""
-"Returns an array of shortest path lengths from this node to every other node "
-"in the graph."
-msgstr ""
-"Осы төбеден бүкіл басқа төбелерге апаратынең қысқа жол ұзыңдықтар жиымын "
-"қайтарады."
-
-#: DataStructures/LinkedList/ListNode.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"A node is the data element of a linked list.\n"
-msgstr ""
-"\n"
-"Төбе - байланысқан тізімінің дерек элементі\n"
-
-#: DataStructures/LinkedList/ListNode.xml:19
-msgctxt "Scripting API Description"
-msgid "Set pointer of this list node to the target node."
-msgstr "Осы тізімдегі төбенің мақсатты төбеге сілтейтін көрсеткішін орнату."
-
-#: DataStructures/LinkedList/ListPlugin.cpp:41
-msgctxt "@title Displayed plugin name"
-msgid "Linked List Structure"
-msgstr "Байланысты тізім құрылымы"
-
-#: DataStructures/LinkedList/ListPlugin.cpp:82
-msgid "Front value"
-msgstr "Алғашқы мәні"
-
-#: DataStructures/LinkedList/ListPlugin.cpp:101
-#, kde-format
-msgid "Data '%1' has more than one out pointer."
-msgstr "'%1' дерегінде бірден артық сырт көрсеткіші болған."
-
-#: DataStructures/LinkedList/ListPlugin.cpp:109
-#: DataStructures/RootedTree/RootedTreePlugin.cpp:129
-#, kde-format
-msgid "Cannot convert document '%1'"
-msgstr "'%1' құжат аударылмады"
-
-#: DataStructures/LinkedList/ListStructure.xml:9
-msgctxt "Scripting API Description"
-msgid ""
-"\n"
-"A list objects holds the information of a data structure of type \"Linked "
-"List\".\n"
-msgstr ""
-"\n"
-"Тізім нысанында \"Linked List\" деген дерек құрылымының мәліметі бар.\n"
-
-#: DataStructures/LinkedList/ListStructure.xml:19
-msgctxt "Scripting API Description"
-msgid "Return head node of the list."
-msgstr "Тізімінің басты төбесін қайтарады."
-
-#: DataStructures/LinkedList/ListStructure.xml:28
-msgctxt "Scripting API Description"
-msgid "Set the head of the list."
-msgstr "Тізімінің басты төбесін орнатады."
-
-#: DataStructures/RootedTree/RootedTreePlugin.cpp:36
-msgctxt "@title Displayed plugin name"
-msgid "RootedTree Structure"
-msgstr "Түбірлі бұтақ құрылымы"
-
-#: DataStructures/RootedTree/RootedTreePlugin.cpp:86
-msgctxt "@option:check"
-msgid "Show all pointers"
-msgstr "Бүкіл көрсеткіштер көрсетілсін"
-
-#: DataStructures/RootedTree/RootedTreePlugin.cpp:116
-#, kde-format
-msgid "There are cycles at node %1. Data will be lost by conversion."
-msgstr "%1 төбесінде циклдері бар. Аударғанда деректер жоғалмақ."
-
-#: DataType.cpp:42
-msgid "Element"
-msgstr "Элемент"
-
-#: DocumentManager.cpp:227
-msgctxt ""
-"document that contains graphs or data structures as a visual representation"
-msgid "Document"
-msgstr "Құжат"
-
-#: EngineModules/Console/Console.xml:7
-msgctxt "Scripting API Description"
-msgid ""
-"The Console object allows you to print messages of different importance to a "
-"log."
-msgstr ""
-"Console нысаны маңызы түрлі хабарламаларды журналға жазуға мүмкіндік "
-"береді.        "
-
-#: EngineModules/Console/Console.xml:8
-msgctxt "Scripting API Description"
-msgid ""
-"Console is not a constructor. All properties and methods of Console can be "
-"called by using Console as an object, without creating it."
-msgstr ""
-"Console конструктор емес. Console-ды құрмай-ақ, нысан ретінде қолданып, оның "
-"қасиеттер мен әдістерін шақыруға болады.        "
-
-#: EngineModules/Console/Console.xml:11
-msgctxt "Scripting API Description"
-msgid ""
-"Console.log(\"This is a program message.\"); // print a program message\n"
-"Console.debug(\"A debug message.\"); // print a debug message"
-msgstr ""
-"Console.log(\"Бұл бағдарламаның хабарламасы.\"); // бағдарламаның "
-"шығарлымыConsole.debug(\"Бұл жөндеу хабарламасы.\"); // жөндеудің шығарлымы"
-
-#: EngineModules/Console/Console.xml:18
-msgctxt "Scripting API Description"
-msgid "Print the given message of normal severity."
-msgstr "Берілген жәй қате туралы хабарламаны шығару.                "
-
-#: EngineModules/Console/Console.xml:32
-msgctxt "Scripting API Description"
-msgid "Print the given debug message."
-msgstr "Берілген жөндеу хабарламаны шығару.                "
-
-#: EngineModules/Console/Console.xml:46
-msgctxt "Scripting API Description"
-msgid "Print the given error message of high severity."
-msgstr "Берілген өрескел қате туралы хабарламаны шығару.                "
-
-#: Group.cpp:53
-msgid "Group"
-msgstr "Топ"
-
-#: IncludeManager.cpp:98
-#, kde-format
-msgid "Cannot open file %1."
-msgstr "%1 файлы ашылмады."
-
-#: IncludeManager.cpp:128
-#, kde-format
-msgid "Invalid include directive: %1. Cannot find file in directive."
-msgstr "Жарамсыз кіргізу бұйрығы: %1. Бұйрықта файл атауы табылмады."
-
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:41
-msgctxt "@title Displayed plugin name"
-msgid "Graphviz Graph File Backend"
-msgstr "Graphviz граф файл тетігі"
-
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:43
-msgid "Read and write Graphviz graph files."
-msgstr "Graphviz граф файлдарын жазу және оқу"
-
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:65
+#: fileformats/dot/dotfileformat.cpp:56
 #, fuzzy, kde-format
 #| msgid "*.dot *.gv|Graphviz Format"
-msgid "%1|Graphviz Format"
+msgid "Graphviz Format (%1)"
 msgstr "*.dot *.gz|Graphviz пішімі"
 
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:71
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:65
-#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:144
-msgid "Import"
-msgstr "Импорт"
-
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:77
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:71
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:72
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:85
+#: fileformats/dot/dotfileformat.cpp:67 fileformats/gml/gmlfileformat.cpp:66
+#: fileformats/rocs1/rocs1fileformat.cpp:74
+#: fileformats/rocs2/rocs2fileformat.cpp:67
+#: fileformats/tgf/tgffileformat.cpp:67
 #, kde-format
 msgid "Could not open file \"%1\" in read mode: %2"
 msgstr "\"%1\" файлы оқу үшін ашылмады: %2"
 
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:83
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:77
+#: fileformats/dot/dotfileformat.cpp:72 fileformats/gml/gmlfileformat.cpp:72
 #, kde-format
 msgid "Could not parse file \"%1\"."
 msgstr "\"%1\" файлы талдауға келмеді."
 
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:99
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:91
-msgid "No active graph in this document."
-msgstr "Бұл құжатта белсенді граф жоқ."
-
-#: LoadSave/Plugins/dotFileFormat/DotFileFormatPlugin.cpp:107
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:98
+#: fileformats/dot/dotfileformat.cpp:86 fileformats/gml/gmlfileformat.cpp:87
 #, kde-format
 msgid "Cannot open file %1 to write document. Error: %2"
 msgstr "%1 файлы құжатты жазу үшін ашылмады. Қатесі: %2"
 
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:38
-msgctxt "@title Displayed plugin name"
-msgid "GML File Backend"
-msgstr "GML файл тетігі"
-
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:40
-msgid "Read and write Graph Markup Language (GML) files."
-msgstr "Graph Markup Language (GML) файлдарын жазу және оқу."
-
-#: LoadSave/Plugins/gmlFileFormat/GmlFileFormatPlugin.cpp:60
-msgid "*.gml|Graph Markup Language Format"
+#: fileformats/gml/gmlfileformat.cpp:55
+#, fuzzy, kde-format
+#| msgid "*.gml|Graph Markup Language Format"
+msgid "Graph Markup Language Format (%1)"
 msgstr "*.gml|Graph Markup Language пішімі"
 
-#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:40
-msgctxt "@title Displayed plugin name"
-msgid "KML File Backend"
-msgstr "KML файл тетігі"
+#: fileformats/rocs1/rocs1fileformat.cpp:64
+#, fuzzy, kde-format
+#| msgid "*.graph|Rocs Graph File Format"
+msgid "Rocs 1 Graph File Format (%1)"
+msgstr "*.graph|Rocs граф файл пішімі"
 
-#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:42
-msgid "Read and write Keyhole Markup Language (KML) files."
-msgstr "Keyhole Markup Language (KML) файлдарын жазу және оқу"
-
-#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:62
-msgid "*.kml|Keyhole Markup Language Format"
-msgstr "*.kml|Keyhole Markup Language пішімі"
-
-#: LoadSave/Plugins/kmlFileFormat/KmlFileFormatPlugin.cpp:72
+#: fileformats/rocs1/rocs1fileformat.cpp:264
+#: fileformats/rocs2/rocs2fileformat.cpp:199
+#: fileformats/tgf/tgffileformat.cpp:118
+#: fileformats/tikz/tikzfileformat.cpp:71
 #, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "%1 файлы ашылмады: %2"
+msgid "Could not open file \"%1\" in write mode: %2"
+msgstr "\"%1\" файлы жазу үшін ашылмады. Қатесі: %2"
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:35
-msgctxt "@title Displayed plugin name"
-msgid "TGF File Backend"
-msgstr "TGF файл тетігі"
+#: fileformats/rocs1/rocs1fileformat.cpp:275
+#, kde-format
+msgid "Could not write data, aborting. Error: %1."
+msgstr "Дерек жазылмады, іс доғарылады. Қатесі: %1."
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:37
-msgid "Read and write Trivial Graph Format (TGF) files."
-msgstr "Trivial Graph Format (TGF) пішіміндегі граф файлдарды оқу және жазу."
+#: fileformats/rocs2/rocs2fileformat.cpp:54
+#, fuzzy, kde-format
+#| msgid "*.graph|Rocs Graph File Format"
+msgid "Rocs Graph Format (%1)"
+msgstr "*.graph|Rocs граф файл пішімі"
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:56
-msgid "*.tgf|Trivial Graph Format"
+#: fileformats/rocs2/rocs2fileformat.cpp:288
+msgid "Error on serializing file format to file."
+msgstr ""
+
+#: fileformats/tgf/tgffileformat.cpp:52
+#, fuzzy, kde-format
+#| msgid "*.tgf|Trivial Graph Format"
+msgid "Trivial Graph Format (%1)"
 msgstr "*.tgf|Trivial Graph Format пішімі"
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:91
+#: fileformats/tgf/tgffileformat.cpp:88
 #, kde-format
 msgid "Could not parse file. Identifier \"%1\" is used more than once."
 msgstr "Файл талдаудан өтпеді. \"%1\" идентификаторы қайталанады."
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:103
+#: fileformats/tgf/tgffileformat.cpp:100
 #, kde-format
 msgid "Could not parse file. Edge from \"%1\" to \"%2\" uses undefined nodes."
 msgstr ""
 "Файл талдаудан өтпеді. \"%1\" -> '%2\" қыры анықталмаған төбелерді ң "
 "қолданады."
 
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:121
-#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:75
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:301
-#, kde-format
-msgid "Could not open file \"%1\" in write mode: %2"
-msgstr "\"%1\" файлы жазу үшін ашылмады. Қатесі: %2"
-
-#: LoadSave/Plugins/tgfFileFormat/TgfFileFormatPlugin.cpp:128
-#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:82
-msgid "No data structure specified for output in this document."
-msgstr "Бұл құжатта шығысқа арналған дерек құрылымы жоқ."
-
-#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:33
-msgctxt "@title Displayed plugin name"
-msgid "PGF/TikZ Export File Backend"
-msgstr "PGF/TikZ экспорттау файл тетігі"
-
-#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:35
-msgid "Export graph documents in PGF/TikZ format."
-msgstr "PGF/TikZ пішімдегі экспорттау файл құжаттары."
-
-#: LoadSave/Plugins/tikzFileFormat/TikzFileFormatPlugin.cpp:54
-msgid "*.pgf|TikZ (PGF) Format"
+#: fileformats/tikz/tikzfileformat.cpp:52
+#, fuzzy, kde-format
+#| msgid "*.pgf|TikZ (PGF) Format"
+msgid "TikZ (PGF) Format (%1)"
 msgstr "*.pgf|TikZ (PGF) пішімі"
 
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:39
-msgctxt "@title Displayed plugin name"
-msgid "Rocs Graph File Backend"
-msgstr "Rocs граф файл тетігі"
+#: graphdocument.cpp:131 graphdocument.cpp:132
+#, fuzzy
+#| msgid "Default Color:"
+msgid "default"
+msgstr "Әдетті түс:"
 
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:41
-msgid "Read and write Rocs Graph Files"
-msgstr "Rocs граф файлдарын жазу және оқу"
+#: graphdocument.cpp:307
+#, fuzzy
+#| msgid "Mesh Graph"
+msgctxt "@title:tab initial title for graph document"
+msgid "New Graph"
+msgstr "Торлы граф"
 
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:70
-msgid "*.graph|Rocs Graph File Format"
-msgstr "*.graph|Rocs граф файл пішімі"
-
-#: LoadSave/RocsGraphFileFormatPlugin.cpp:312
-#, kde-format
-msgid "Could not write data, aborting. Error: %1."
-msgstr "Дерек жазылмады, іс доғарылады. Қатесі: %1."
-
-#: Pointer.cpp:300
-msgid "Could not set pointer type: pointer type does not exist."
-msgstr "Көрсеткіш түрі орнатылмады: көрсеткіш түрі жоқ."
-
-#: Pointer.xml:7
-msgctxt "Scripting API Description"
-msgid ""
-"A pointer connects two data elements and can itself hold information by its "
-"properties."
-msgstr ""
-"Көрсеткіш екі дерек элементін байланыстырып, өзі де олардың қасиетері туралы "
-"мәліметті таси алады."
-
-#: Pointer.xml:14
-msgctxt "Scripting API Description"
-msgid "Start of the connection."
-msgstr "Мына байланысының басы."
-
-#: Pointer.xml:19
-msgctxt "Scripting API Description"
-msgid "End of the connection"
-msgstr "Мына байланысының аяғы"
-
-#: Pointer.xml:24
-msgctxt "Scripting API Description"
-msgid ""
-"If true, the connection is directed. Otherwise is connection is undirected."
-msgstr "Ақиқат болса, байланыс бағытталған. Әйтпесе, бағытталмаған."
-
-#: Pointer.xml:29
-msgctxt "Scripting API Description"
-msgid "ID of the connection type."
-msgstr "Байланыс түрінің ID-і."
-
-#: Pointer.xml:34
-msgctxt "Scripting API Description"
-msgid "The width of the connection."
-msgstr "Байланыстың қалыңдығы."
-
-#: Pointer.xml:42
-msgctxt "Scripting API Description"
-msgid "Remove this connection."
-msgstr "Байланысты өшіру."
-
-#: Pointer.xml:51
-msgctxt "Scripting API Description"
-msgid "Add a new property to the connection."
-msgstr "Байланысқа жаңа қасиетті қосу."
-
-#: Pointer.xml:70
-msgctxt "Scripting API Description"
-msgid "Remove an existing property from the connection."
-msgstr "Байланыстың бар қасиетін өшіру."
-
-#: PointerType.cpp:39
-msgid "Connection"
-msgstr "Байланыс"
-
-#: QtScriptBackend.cpp:189
-msgid "Rocs Console script"
-msgstr "Rocs консоль скрипті"
-
-#: QtScriptBackend.cpp:191 QtScriptBackend.cpp:235
-#, kde-format
-msgid "Script Error: %1"
-msgstr "Скрипт қатесі: %1"
-
-#: QtScriptBackend.cpp:195 QtScriptBackend.cpp:240
+#: kernel/kernel.cpp:108
 msgctxt "@info status message after successful script execution"
 msgid "<i>Execution Finished</i>"
 msgstr "<i>Орындау аяқталды</i>"
 
-#: QtScriptBackend.cpp:298
-#, kde-format
-msgid "Script error in included file %1"
-msgstr "%1 кірме файлында скрипт қатесі"
+#: models/edgemodel.cpp:168
+#, fuzzy
+#| msgid "Edges"
+msgctxt "@title:column"
+msgid "Edge"
+msgstr "Қырлар"
+
+#: models/edgepropertymodel.cpp:168
+#, fuzzy
+#| msgid "Edge Properties"
+msgctxt "@title:column"
+msgid "EdgeProperty"
+msgstr "Қырының қасиеттері"
+
+#: models/edgetypemodel.cpp:211
+#, fuzzy
+#| msgid "Edge style"
+msgctxt "@title:column"
+msgid "Edge Type"
+msgstr "Қырының стилі"
+
+#: models/edgetypepropertymodel.cpp:163
+#, fuzzy
+#| msgid "Edge Properties"
+msgctxt "@title:column"
+msgid "EdgeTypeProperty"
+msgstr "Қырының қасиеттері"
+
+#: models/nodemodel.cpp:168
+#, fuzzy
+#| msgid "Nodes"
+msgctxt "@title:column"
+msgid "Node"
+msgstr "Төбелер"
+
+#: models/nodepropertymodel.cpp:167
+#, fuzzy
+#| msgid "Node Properties"
+msgctxt "@title:column"
+msgid "NodeProperty"
+msgstr "Төбенің қасиеттері"
+
+#: models/nodetypemodel.cpp:203
+#, fuzzy
+#| msgid "Pointer Types"
+msgctxt "@title:column"
+msgid "Node Type"
+msgstr "Көрсеткіш түрлері"
+
+#: models/nodetypepropertymodel.cpp:163
+#, fuzzy
+#| msgid "Node Properties"
+msgctxt "@title:column"
+msgid "NodeTypeProperty"
+msgstr "Төбенің қасиеттері"
+
+#~ msgid "Could not set data type for node %1: data type does not exist."
+#~ msgstr "%1 төбе дерегінің түрі орнатылмады: дерек түрі жоқ."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "An abstract data element is a unit of information that belongs to an "
+#~ "abstract data structure and possibly is connected to other data elements "
+#~ "by pointers.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Абстрактты дерек элементі деген деректер құрылымына жататын және "
+#~ "көрсеткіштер арқылы олардың арасындағы мүмкін байланыстарды анықтайтын "
+#~ "ақпарат бірлігі.\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "\n"
+#~ msgstr "\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The unique identifier of this data element."
+#~ msgstr "Осы деректер элементінің бірегей идентификаторы."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The x-coordinate of this data element."
+#~ msgstr "Осы деректер элементінің x-координаты."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The y-coordinate of this data element."
+#~ msgstr "Осы деректер элементінің y-координаты."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The size of this data element."
+#~ msgstr "Осы деректер элементінің өлшемі."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The color of this data element stated as hexadecimal value."
+#~ msgstr "Осы деректер элементінің түсі (оналтылық мәнімен берілген)."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "An abstract data structure defines a set of data elements and possible "
+#~ "connections between them.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Абстрактты деректер құрылымы дерек элементтерін және олардың арасындағы "
+#~ "мүмкін байланыстарды анықтайды.\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The unique name of this data structure."
+#~ msgstr "Осы деректер құрылымының бірегей атауы."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "An Edge is the connection of two GraphNodes. Edges can be directed or "
+#~ "undirected, depending on their type.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Қыр графтың екі төбесін байланыстырады. Қырлар, түріне қарай, бағытталған "
+#~ "немесе бағытталмаған болады.\n"
+
+#~ msgid "The method \"%1\" is deprecated, please use \"%2\" instead."
+#~ msgstr "\"%1\" әдісі ескірген, оның орнына \"%2\" дегенді қолданыңыз."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "A node is the data element of a graph.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Төбе - графтың дерек элементі.\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Return list all nodes connected to this node. This method respects if "
+#~ "edges are directed."
+#~ msgstr ""
+#~ "Осы төбемен байланысты бүкіл қырлар тізімін қайтарады. Әдіс қырдың "
+#~ "бағытталғанын есепке алады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return a list of all edges (incoming and outgoing) of this node."
+#~ msgstr "Осы төбеге кіретін, төбеден шығатын бүкіл қырлар тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Return a list of all edges (incoming and outgoing) of this node of a "
+#~ "specified type."
+#~ msgstr ""
+#~ "Осы төбеге кіретін, не төбеден шығатын бүкіл сұралған қырлар түрінің "
+#~ "тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return a list of incoming edges of this node."
+#~ msgstr "Осы төбеге кіретін қырлар тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Return a list of all incoming edges of this node of a specified type."
+#~ msgstr "Осы төбеге кіретін бүкіл сұралған қырлар түрінің тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return a list of all outgoing edges of this node."
+#~ msgstr "Осы төбеден шығатын бүкіл қырлар тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Return a list of all outgoing edges of this node of a specified type."
+#~ msgstr ""
+#~ "Осы төбедеен шығатын бүкіл сұралған қырлар түрінің тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return a list of all edges of this node to the specified node."
+#~ msgstr "Осы төбеден сұралған төбеге дейінгі қырлар тізімін қайтарады."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Graph Structure"
+#~ msgstr "Граф құрылымы"
+
+#~ msgctxt "coordinate axis"
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgctxt "coordinate axis"
+#~ msgid "y"
+#~ msgstr "y"
+
+#~ msgid "Size"
+#~ msgstr "Өлшемі"
+
+#~ msgid "Graph Type:"
+#~ msgstr "Граф түрі:"
+
+#~ msgctxt ""
+#~ "@label:inlistbox graph for which several edges between same nodes may "
+#~ "exist"
+#~ msgid "Multigraph"
+#~ msgstr "Мультиграф"
+
+#~ msgid "Cannot create edge: nodes are not defined."
+#~ msgstr "Қыр құрылмады: төбелері анықталмаған."
+
+#~ msgid "Cannot create edge: pointer type %1 not defined"
+#~ msgstr "Қыр құрылмады: %1 көрсеткіш түрі анықталмаған"
+
+#~ msgid "The global method \"%1\" is deprecated, please use \"%2\" instead."
+#~ msgstr ""
+#~ "Глобалды \"%1\" әдісі ескірген, оның орнына \"%2\" дегенді қолданыңыз."
+
+#~ msgid ""
+#~ "This action will probably remove some edges. Do you want to continue?"
+#~ msgstr "Бұл амал кейбір қырларды өшіру ықтимал. Жалғастыра бересіз бе?"
+
+#~ msgid "Could not add back-edge (%1->%2) to undirected graph."
+#~ msgstr "Бағытталмаған графқа кері (%1->%2) бағытты қырын қосуға болмайды."
+
+#~ msgid "Could not add existing edge (%1->%2): this graph is no multigraph."
+#~ msgstr "Бар (%1->%2) қырын қосуға болмайды: бұл мультиграф емес."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "A graph objects holds the information of a data structure of type \"Graph"
+#~ "\".\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Граф нысанында \"Graph\" деген дерек құрылымының мәліметі бар.\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return list all nodes in the graph."
+#~ msgstr "Графтың бүкіл төбелер тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return list all nodes in the graph of specified type."
+#~ msgstr "Графтың бүкіл сұралған төбелер түрінің тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return list all edges in the graph of specified type."
+#~ msgstr "Графтың бүкіл сұралған төбелер түрінің тізімін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Create a new node of the specified type and return the created node. If "
+#~ "the type is not registered, no node is created."
+#~ msgstr ""
+#~ "Сұралған төбе түрінің жаңа төбесін құрып беріп қайтарады. Түрі "
+#~ "тіркелмеген болса, ол құрылмайды."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Create a new node of default type and return the created node."
+#~ msgstr "Әдетті төбе түрінің жаңа төбесін құрып беріп қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Create an edge from node \"from\" to node \"to\" of the specified type "
+#~ "and return the created edge. If the type is not registered, no edge is "
+#~ "created."
+#~ msgstr ""
+#~ "Сұралған қыр түрінің қырын бір төбеден басқа төбеге дейін құрып беріп "
+#~ "қайтарады. Түрі тіркелмеген болса, ол құрылмайды."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Create an edge from node \"from\" to node \"to\" of default type and "
+#~ "return the created edge."
+#~ msgstr ""
+#~ "Әдетті қыр түрінің қырын бір төбеден басқа төбеге дейін құрып беріп "
+#~ "қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Returns an array of shortest path lengths from this node to every other "
+#~ "node in the graph."
+#~ msgstr ""
+#~ "Осы төбеден бүкіл басқа төбелерге апаратынең қысқа жол ұзыңдықтар жиымын "
+#~ "қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "A node is the data element of a linked list.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Төбе - байланысқан тізімінің дерек элементі\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Set pointer of this list node to the target node."
+#~ msgstr "Осы тізімдегі төбенің мақсатты төбеге сілтейтін көрсеткішін орнату."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Linked List Structure"
+#~ msgstr "Байланысты тізім құрылымы"
+
+#~ msgid "Front value"
+#~ msgstr "Алғашқы мәні"
+
+#~ msgid "Data '%1' has more than one out pointer."
+#~ msgstr "'%1' дерегінде бірден артық сырт көрсеткіші болған."
+
+#~ msgid "Cannot convert document '%1'"
+#~ msgstr "'%1' құжат аударылмады"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "\n"
+#~ "A list objects holds the information of a data structure of type \"Linked "
+#~ "List\".\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Тізім нысанында \"Linked List\" деген дерек құрылымының мәліметі бар.\n"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Return head node of the list."
+#~ msgstr "Тізімінің басты төбесін қайтарады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Set the head of the list."
+#~ msgstr "Тізімінің басты төбесін орнатады."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "RootedTree Structure"
+#~ msgstr "Түбірлі бұтақ құрылымы"
+
+#~ msgctxt "@option:check"
+#~ msgid "Show all pointers"
+#~ msgstr "Бүкіл көрсеткіштер көрсетілсін"
+
+#~ msgid "There are cycles at node %1. Data will be lost by conversion."
+#~ msgstr "%1 төбесінде циклдері бар. Аударғанда деректер жоғалмақ."
+
+#~ msgid "Element"
+#~ msgstr "Элемент"
+
+#~ msgctxt ""
+#~ "document that contains graphs or data structures as a visual "
+#~ "representation"
+#~ msgid "Document"
+#~ msgstr "Құжат"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "The Console object allows you to print messages of different importance "
+#~ "to a log."
+#~ msgstr ""
+#~ "Console нысаны маңызы түрлі хабарламаларды журналға жазуға мүмкіндік "
+#~ "береді.        "
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Console is not a constructor. All properties and methods of Console can "
+#~ "be called by using Console as an object, without creating it."
+#~ msgstr ""
+#~ "Console конструктор емес. Console-ды құрмай-ақ, нысан ретінде қолданып, "
+#~ "оның қасиеттер мен әдістерін шақыруға болады.        "
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "Console.log(\"This is a program message.\"); // print a program message\n"
+#~ "Console.debug(\"A debug message.\"); // print a debug message"
+#~ msgstr ""
+#~ "Console.log(\"Бұл бағдарламаның хабарламасы.\"); // бағдарламаның "
+#~ "шығарлымыConsole.debug(\"Бұл жөндеу хабарламасы.\"); // жөндеудің "
+#~ "шығарлымы"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Print the given message of normal severity."
+#~ msgstr "Берілген жәй қате туралы хабарламаны шығару.                "
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Print the given debug message."
+#~ msgstr "Берілген жөндеу хабарламаны шығару.                "
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Print the given error message of high severity."
+#~ msgstr "Берілген өрескел қате туралы хабарламаны шығару.                "
+
+#~ msgid "Group"
+#~ msgstr "Топ"
+
+#~ msgid "Cannot open file %1."
+#~ msgstr "%1 файлы ашылмады."
+
+#~ msgid "Invalid include directive: %1. Cannot find file in directive."
+#~ msgstr "Жарамсыз кіргізу бұйрығы: %1. Бұйрықта файл атауы табылмады."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Graphviz Graph File Backend"
+#~ msgstr "Graphviz граф файл тетігі"
+
+#~ msgid "Read and write Graphviz graph files."
+#~ msgstr "Graphviz граф файлдарын жазу және оқу"
+
+#~ msgid "Import"
+#~ msgstr "Импорт"
+
+#~ msgid "No active graph in this document."
+#~ msgstr "Бұл құжатта белсенді граф жоқ."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "GML File Backend"
+#~ msgstr "GML файл тетігі"
+
+#~ msgid "Read and write Graph Markup Language (GML) files."
+#~ msgstr "Graph Markup Language (GML) файлдарын жазу және оқу."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "KML File Backend"
+#~ msgstr "KML файл тетігі"
+
+#~ msgid "Read and write Keyhole Markup Language (KML) files."
+#~ msgstr "Keyhole Markup Language (KML) файлдарын жазу және оқу"
+
+#~ msgid "*.kml|Keyhole Markup Language Format"
+#~ msgstr "*.kml|Keyhole Markup Language пішімі"
+
+#~ msgid "Cannot open file %1: %2"
+#~ msgstr "%1 файлы ашылмады: %2"
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "TGF File Backend"
+#~ msgstr "TGF файл тетігі"
+
+#~ msgid "Read and write Trivial Graph Format (TGF) files."
+#~ msgstr ""
+#~ "Trivial Graph Format (TGF) пішіміндегі граф файлдарды оқу және жазу."
+
+#~ msgid "No data structure specified for output in this document."
+#~ msgstr "Бұл құжатта шығысқа арналған дерек құрылымы жоқ."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "PGF/TikZ Export File Backend"
+#~ msgstr "PGF/TikZ экспорттау файл тетігі"
+
+#~ msgid "Export graph documents in PGF/TikZ format."
+#~ msgstr "PGF/TikZ пішімдегі экспорттау файл құжаттары."
+
+#~ msgctxt "@title Displayed plugin name"
+#~ msgid "Rocs Graph File Backend"
+#~ msgstr "Rocs граф файл тетігі"
+
+#~ msgid "Read and write Rocs Graph Files"
+#~ msgstr "Rocs граф файлдарын жазу және оқу"
+
+#~ msgid "Could not set pointer type: pointer type does not exist."
+#~ msgstr "Көрсеткіш түрі орнатылмады: көрсеткіш түрі жоқ."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "A pointer connects two data elements and can itself hold information by "
+#~ "its properties."
+#~ msgstr ""
+#~ "Көрсеткіш екі дерек элементін байланыстырып, өзі де олардың қасиетері "
+#~ "туралы мәліметті таси алады."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Start of the connection."
+#~ msgstr "Мына байланысының басы."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "End of the connection"
+#~ msgstr "Мына байланысының аяғы"
+
+#~ msgctxt "Scripting API Description"
+#~ msgid ""
+#~ "If true, the connection is directed. Otherwise is connection is "
+#~ "undirected."
+#~ msgstr "Ақиқат болса, байланыс бағытталған. Әйтпесе, бағытталмаған."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "ID of the connection type."
+#~ msgstr "Байланыс түрінің ID-і."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "The width of the connection."
+#~ msgstr "Байланыстың қалыңдығы."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Remove this connection."
+#~ msgstr "Байланысты өшіру."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Add a new property to the connection."
+#~ msgstr "Байланысқа жаңа қасиетті қосу."
+
+#~ msgctxt "Scripting API Description"
+#~ msgid "Remove an existing property from the connection."
+#~ msgstr "Байланыстың бар қасиетін өшіру."
+
+#~ msgid "Connection"
+#~ msgstr "Байланыс"
+
+#~ msgid "Rocs Console script"
+#~ msgstr "Rocs консоль скрипті"
+
+#~ msgid "Script Error: %1"
+#~ msgstr "Скрипт қатесі: %1"
+
+#~ msgid "Script error in included file %1"
+#~ msgstr "%1 кірме файлында скрипт қатесі"
 
 #~ msgctxt "dynamic property that is present exactly once"
 #~ msgid "Unique"
@@ -818,18 +1307,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Static Properties"
 #~ msgstr "Динамикалық қасиеттер"
 
-#~ msgid "Node color"
-#~ msgstr "Төбенің түсі"
-
-#~ msgid "Color:"
-#~ msgstr "Түсі:"
-
-#~ msgid "Type:"
-#~ msgstr "Түрі:"
-
-#~ msgid "Dynamic Properties"
-#~ msgstr "Динамикалық қасиеттер"
-
 #~ msgid "Name:"
 #~ msgstr "Атауы:"
 
@@ -848,30 +1325,10 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgstr "Деректер құрылымы"
 
 #, fuzzy
-#~| msgid "Data Types"
-#~ msgctxt "@title:tab"
-#~ msgid "Data Types"
-#~ msgstr "Дерек түрлері"
-
-#, fuzzy
-#~| msgid "Pointer Types"
-#~ msgctxt "@title:tab"
-#~ msgid "Pointer Types"
-#~ msgstr "Көрсеткіш түрлері"
-
-#, fuzzy
 #~| msgid "Data Structure Properties"
 #~ msgctxt "@title:window"
 #~ msgid "Data Structure Properties"
 #~ msgstr "Деректер құрылымының қасиеттері"
-
-#~ msgid "Name"
-#~ msgstr "Атауы"
-
-#, fuzzy
-#~| msgid "Default Color:"
-#~ msgid "Default Value"
-#~ msgstr "Әдетті түс:"
 
 #, fuzzy
 #~| msgid "Display Options"
@@ -920,12 +1377,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Document Properties"
 #~ msgstr "Құжаттың қасиеттері"
 
-#~ msgid "Property"
-#~ msgstr "Қасиет"
-
-#~ msgid "Value"
-#~ msgstr "Мәні"
-
 #, fuzzy
 #~| msgid "Pointer Types"
 #~ msgid "Edit Pointer Types"
@@ -934,9 +1385,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #, fuzzy
 #~| msgid "Pointer Properties"
 #~ msgctxt "@title:window"
-#~ msgid "Pointer Properties"
-#~ msgstr "Көрсеткіштің қасиеттері"
-
 #~ msgid "Pointer Properties"
 #~ msgstr "Көрсеткіштің қасиеттері"
 
@@ -979,11 +1427,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~| msgid "Select Pointer Type:"
 #~ msgid "Remove selected pointer type."
 #~ msgstr "Көрсеткіштің түрі:"
-
-#, fuzzy
-#~| msgid "Connection"
-#~ msgid "Direction:"
-#~ msgstr "Байланыс"
 
 #~ msgid "Style:"
 #~ msgstr "Стилі:"
@@ -1095,12 +1538,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgstr "Мәндері"
 
 #, fuzzy
-#~| msgid "Enumerate"
-#~ msgctxt "@action:inmenu Value"
-#~ msgid "Enumerate"
-#~ msgstr "Санап шығу"
-
-#, fuzzy
 #~| msgid "Random Integers"
 #~ msgctxt "@action:inmenu Value"
 #~ msgid "Random Integers"
@@ -1121,9 +1558,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #, fuzzy
 #~| msgid "Assign Values"
 #~ msgctxt "@title Displayed plugin name"
-#~ msgid "Assign Values"
-#~ msgstr "Мәндерін келтіру"
-
 #~ msgid "Assign Values"
 #~ msgstr "Мәндерін келтіру"
 
@@ -1155,168 +1589,20 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ "style:italic;\">Graph</span> түріне жататын бүкіл деректер құрылымдар "
 #~ "тізімі.</p></body></html>"
 
-#~ msgid "Nodes"
-#~ msgstr "Төбелер"
-
-#~ msgid "Edges"
-#~ msgstr "Қырлар"
-
-#~ msgid "Start ID"
-#~ msgstr "Бастапқы идентификатор"
-
-#~ msgid "Lower Limit"
-#~ msgstr "Төменгі шек"
-
-#~ msgid "Upper Limit"
-#~ msgstr "Жоғарғы шек"
-
-#~ msgid "Generator Seed"
-#~ msgstr "Генератордың бастапқы саны"
-
-#~ msgid "Enumerate Items"
-#~ msgstr "Нөмірлеп шығу"
-
-#~ msgid "Assign Random Integers"
-#~ msgstr "Кездейсоқ бүтін сандар"
-
-#~ msgid "Assign Random Reals"
-#~ msgstr "Кездейсоқ нақты сандар"
-
-#~ msgid "Overwrite existing values"
-#~ msgstr "Бар мәндерін ауыстырып"
-
 #, fuzzy
 #~| msgid "Generate Graph"
 #~ msgctxt "@Title Displayed plugin name"
 #~ msgid "Generate Graph"
 #~ msgstr "Графты құру"
 
-#, fuzzy
-#~| msgid "Generate Graph"
-#~ msgctxt "@title:window"
-#~ msgid "Generate Graph"
-#~ msgstr "Графты құру"
-
-#~ msgid "Mesh Graph"
-#~ msgstr "Торлы граф"
-
-#~ msgid "Star Graph"
-#~ msgstr "Жүлдызды граф"
-
-#~ msgid "Circle Graph"
-#~ msgstr "Дөңгелек граф"
-
 #~ msgid "RandomGraph"
 #~ msgstr "Қездейсоқ граф"
-
-#~ msgid "Generate Graph"
-#~ msgstr "Графты құру"
-
-#~ msgid "Random Graph"
-#~ msgstr "Кездейсоқ граф"
-
-#~ msgid "Erdös-Renyi Graph"
-#~ msgstr "Эрдеш-Реньи графы"
-
-#~ msgid "Number of Columns:"
-#~ msgstr "Бағандар саны:"
-
-#~ msgid "Number of Rows:"
-#~ msgstr "Жолдар саны:"
-
-#~ msgid "Satellite Nodes:"
-#~ msgstr "Серіктес төбелері:"
-
-#~ msgid "Number of Nodes:"
-#~ msgstr "Төбелер саны:"
-
-#~ msgid "Nodes:"
-#~ msgstr "Төбелер:"
-
-#~ msgid "Edges:"
-#~ msgstr "Қырлар:"
-
-#~ msgid "Allow self-edges:"
-#~ msgstr "Өз-өзіне түйілген қырлар:"
-
-#~ msgid "Generator Seed:"
-#~ msgstr "Генератордың бастапқы саны:"
-
-#~ msgid "Nodes (n):"
-#~ msgstr "Төбелер (n):"
-
-#~ msgid "Edge Probability (p):"
-#~ msgstr "Қыр ықтималдығы (p):"
 
 #, fuzzy
 #~| msgid "Transform Edges"
 #~ msgctxt "@title Displayed plugin name"
 #~ msgid "Transform Edges"
 #~ msgstr "Қырларын түрлендіру"
-
-#, fuzzy
-#~| msgid "Transform Edges"
-#~ msgctxt "@title:window"
-#~ msgid "Transform Edges"
-#~ msgstr "Қырларын түрлендіру"
-
-#~ msgid "Transform Edges"
-#~ msgstr "Қырларын түрлендіру"
-
-#~ msgid ""
-#~ "This option connects all nodes of the given graph. The new edges do not "
-#~ "have any preset weights."
-#~ msgstr ""
-#~ "Бұнымен осы графтың бүкіл төбелері байланыстырлады. Жаңа қырларға "
-#~ "тағайындалған салмақтар берілмейді. "
-
-#~ msgid "Complete Graph"
-#~ msgstr "Графты бітіру"
-
-#~ msgid "Remove all Edges"
-#~ msgstr "Бүкіл қырларын өшіру"
-
-#~ msgid ""
-#~ "This option reverses all edges of a directed graph. Note that this does "
-#~ "not apply to undirected graphs."
-#~ msgstr ""
-#~ "Бұнымен бағытты графтың бүкіл қырларының бағытын керіге ауыстырады. Тек "
-#~ "бағытты графтарға қолданылады. "
-
-#~ msgid "Reverse all Edges"
-#~ msgstr "Бүкіл қырларының бағытын кері қылу"
-
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">This option executes "
-#~ "<span style=\" font-style:italic;\">Prim's Minimal Spanning Tree "
-#~ "Algorithm</span> at the graph. All edges without given weights are "
-#~ "assumed to have weights equals 1. Directed and undirected graphs are "
-#~ "processed accordingly.</p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Бұл <span style=\" font-"
-#~ "style:italic;\">Графты минималдыру Прим алгоритмын</span> графқа "
-#~ "қолдануы. Салмағы белгіленбеген қырларының салмағы 1 деп есептеледі. "
-#~ "Бағытты және бағытталмаған графтар өз жолымен қарастырлады.</p></body></"
-#~ "html>"
-
-#~ msgid "Spanning Tree Transformation"
-#~ msgstr "Графты минималдыру"
 
 #~ msgid ""
 #~ "A KDE Text Editor could not be found, \n"
@@ -1462,12 +1748,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgctxt "@info:tooltip"
 #~ msgid "Add new data element"
 #~ msgstr "Жаңа дерек элементін қосу"
-
-#, fuzzy
-#~| msgid "Add Connection"
-#~ msgctxt "@action:intoolbar"
-#~ msgid "Add Connection"
-#~ msgstr "Байланыс құру"
 
 #, fuzzy
 #~| msgid "Add a new connection between two data elements of selected type"
@@ -1690,11 +1970,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgctxt "@title:window"
 #~ msgid "Save Graph Document"
 #~ msgstr "Граф құжатын сақтау"
-
-#, fuzzy
-#~| msgid "Graph File"
-#~ msgid "Graph name"
-#~ msgstr "Граф файлы"
 
 #, fuzzy
 #~| msgid "Enter Filename for the New Graph Document"
@@ -1982,9 +2257,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Export Project"
 #~ msgstr "Жобаны экспорттау"
 
-#~ msgid "Edge Properties"
-#~ msgstr "Қырының қасиеттері"
-
 #~ msgid "Edge name"
 #~ msgstr "Қырының атауы"
 
@@ -2009,9 +2281,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Show/add edge value"
 #~ msgstr "Қырының мәнін көрсету/жасыру"
 
-#~ msgid "Add Property"
-#~ msgstr "Қасиетін қосу"
-
 #~ msgid "Global"
 #~ msgstr "Жалпы"
 
@@ -2029,9 +2298,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgctxt "Property keyword only caracters from a to z (no spaces)"
 #~ msgid "untitled%1"
 #~ msgstr "аталмаған %1"
-
-#~ msgid "Node Properties"
-#~ msgstr "Төбенің қасиеттері"
 
 #~ msgid "Main Definitions"
 #~ msgstr "Негізгі анықтаулары"
@@ -2070,15 +2336,6 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Show names of pointers"
 #~ msgstr "Көрсеткіштерінің атауларын көрсету"
 
-#, fuzzy
-#~| msgid "Show values of pointers"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Show values of pointers"
-#~ msgstr "Көрсеткіштерінің мәндерін көрсету"
-
-#~ msgid "Identifier:"
-#~ msgstr "Идентификаторы:"
-
 #~ msgid "Icon:"
 #~ msgstr "Таңбашасы:"
 
@@ -2088,14 +2345,8 @@ msgstr "%1 кірме файлында скрипт қатесі"
 #~ msgid "Create new Data Type"
 #~ msgstr "Жаңа деректер түрін құру"
 
-#~ msgid "This is the unique identifier for the pointer type."
-#~ msgstr "Бұл осы көрсеткіш түрінің бірегей идентификаторы."
-
 #~ msgid "Type"
 #~ msgstr "Түрі"
-
-#~ msgid "Edge style"
-#~ msgstr "Қырының стилі"
 
 #~ msgid "dot"
 #~ msgstr "нүктелі"
