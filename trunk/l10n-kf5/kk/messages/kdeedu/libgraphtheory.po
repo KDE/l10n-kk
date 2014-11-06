@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-04 10:02+0000\n"
+"POT-Creation-Date: 2014-11-06 07:56+0000\n"
 "PO-Revision-Date: 2013-09-14 04:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -32,8 +32,8 @@ msgctxt "@title:window"
 msgid "Edge Properties"
 msgstr "Қырының қасиеттері"
 
-#: dialogs/edgeproperties.cpp:94 dialogs/edgetypeproperties.cpp:56
-#: dialogs/nodeproperties.cpp:95 dialogs/nodetypeproperties.cpp:55
+#: dialogs/edgeproperties.cpp:94 dialogs/edgetypeproperties.cpp:57
+#: dialogs/nodeproperties.cpp:95 dialogs/nodetypeproperties.cpp:56
 msgid "Name"
 msgstr "Атауы"
 
@@ -56,7 +56,7 @@ msgstr "Түрі:"
 msgid "Dynamic Properties"
 msgstr "Динамикалық қасиеттер"
 
-#: dialogs/edgetypeproperties.cpp:51
+#: dialogs/edgetypeproperties.cpp:52
 #, fuzzy
 #| msgid "Edge Properties"
 msgctxt "@title:window"
@@ -64,36 +64,50 @@ msgid "Edge Type Properties"
 msgstr "Қырының қасиеттері"
 
 #. i18n: ectx: property (text), widget (QLabel, labelIdentifier)
-#: dialogs/edgetypeproperties.cpp:57 dialogs/nodetypeproperties.cpp:56
+#: dialogs/edgetypeproperties.cpp:58 dialogs/nodetypeproperties.cpp:57
 #: editorplugins/generategraph/generategraphwidget.ui:113
 #, fuzzy
 #| msgid "Identifier:"
 msgid "Identifier"
 msgstr "Идентификаторы:"
 
-#: dialogs/edgetypeproperties.cpp:58 dialogs/nodetypeproperties.cpp:57
+#: dialogs/edgetypeproperties.cpp:60 dialogs/nodetypeproperties.cpp:59
 #, fuzzy
 #| msgid "Color:"
 msgid "Color"
 msgstr "Түсі:"
 
-#: dialogs/edgetypeproperties.cpp:59
+#: dialogs/edgetypeproperties.cpp:61
 #, fuzzy
 #| msgid "Connection"
 msgid "Unidirectional"
 msgstr "Байланыс"
 
-#: dialogs/edgetypeproperties.cpp:60
+#: dialogs/edgetypeproperties.cpp:62
 #, fuzzy
 #| msgid "Connection"
 msgid "Bidirectional"
 msgstr "Байланыс"
 
-#: dialogs/edgetypeproperties.cpp:61
+#: dialogs/edgetypeproperties.cpp:63
 #, fuzzy
 #| msgid "Connection"
 msgid "Direction"
 msgstr "Байланыс"
+
+#: dialogs/edgetypeproperties.cpp:137
+#, fuzzy
+#| msgid "Select Pointer Type:"
+msgctxt "@info:tooltip"
+msgid "The selected ID for this edge type."
+msgstr "Көрсеткіштің түрі:"
+
+#: dialogs/edgetypeproperties.cpp:141
+msgctxt "@info:tooltip"
+msgid ""
+"The selected ID is already used for another edge type, please select a "
+"different one."
+msgstr ""
 
 #: dialogs/nodeproperties.cpp:39
 #, fuzzy
@@ -118,12 +132,26 @@ msgstr "Төбенің түсі"
 msgid "Color:"
 msgstr "Түсі:"
 
-#: dialogs/nodetypeproperties.cpp:50
+#: dialogs/nodetypeproperties.cpp:51
 #, fuzzy
 #| msgid "Node Properties"
 msgctxt "@title:window"
 msgid "Node Type Properties"
 msgstr "Төбенің қасиеттері"
+
+#: dialogs/nodetypeproperties.cpp:131
+#, fuzzy
+#| msgid "Select Pointer Type:"
+msgctxt "@info:tooltip"
+msgid "The selected ID for this node type."
+msgstr "Көрсеткіштің түрі:"
+
+#: dialogs/nodetypeproperties.cpp:135
+msgctxt "@info:tooltip"
+msgid ""
+"The selected ID is already used for another node type, please select a "
+"different one."
+msgstr ""
 
 #: dialogs/propertieswidget.cpp:48
 msgid "Add Property"
@@ -677,7 +705,7 @@ msgctxt "@title:column"
 msgid "EdgeProperty"
 msgstr "Қырының қасиеттері"
 
-#: models/edgetypemodel.cpp:211
+#: models/edgetypemodel.cpp:219
 #, fuzzy
 #| msgid "Edge style"
 msgctxt "@title:column"
@@ -705,7 +733,7 @@ msgctxt "@title:column"
 msgid "NodeProperty"
 msgstr "Төбенің қасиеттері"
 
-#: models/nodetypemodel.cpp:203
+#: models/nodetypemodel.cpp:211
 #, fuzzy
 #| msgid "Pointer Types"
 msgctxt "@title:column"
@@ -718,6 +746,49 @@ msgstr "Көрсеткіш түрлері"
 msgctxt "@title:column"
 msgid "NodeTypeProperty"
 msgstr "Төбенің қасиеттері"
+
+#: qml/AddEdgeAction.qml:42
+msgid "Create Edge"
+msgstr ""
+
+#: qml/AddEdgeAction.qml:45
+#, fuzzy
+#| msgid "Creates a new edge between 2 nodes"
+msgid "Create an edge between two nodes"
+msgstr "Екі төбе арасындағы қырын құру"
+
+#: qml/AddNodeAction.qml:27
+msgid "Create Node"
+msgstr ""
+
+#: qml/AddNodeAction.qml:30
+#, fuzzy
+#| msgctxt "Scripting API Description"
+#| msgid "Add a new property to the connection."
+msgid "Add a node to the scene"
+msgstr "Байланысқа жаңа қасиетті қосу."
+
+#: qml/DeleteAction.qml:27
+#, fuzzy
+#| msgid "Element"
+msgid "Delete Element"
+msgstr "Элемент"
+
+#: qml/DeleteAction.qml:30
+msgid "Delete element from scene"
+msgstr ""
+
+#: qml/SelectMoveAction.qml:33
+#, fuzzy
+#| msgid "Selected"
+msgid "Select & Move"
+msgstr "Таңдалғанды"
+
+#: qml/SelectMoveAction.qml:36
+#, fuzzy
+#| msgid "Select and move items."
+msgid "Select and move elements on the scene"
+msgstr "Бірдемені таңдап алып жылжыту."
 
 #~ msgid "Could not set data type for node %1: data type does not exist."
 #~ msgstr "%1 төбе дерегінің түрі орнатылмады: дерек түрі жоқ."
@@ -991,9 +1062,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgid "There are cycles at node %1. Data will be lost by conversion."
 #~ msgstr "%1 төбесінде циклдері бар. Аударғанда деректер жоғалмақ."
 
-#~ msgid "Element"
-#~ msgstr "Элемент"
-
 #~ msgctxt ""
 #~ "document that contains graphs or data structures as a visual "
 #~ "representation"
@@ -1142,10 +1210,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgstr "Байланысты өшіру."
 
 #~ msgctxt "Scripting API Description"
-#~ msgid "Add a new property to the connection."
-#~ msgstr "Байланысқа жаңа қасиетті қосу."
-
-#~ msgctxt "Scripting API Description"
 #~ msgid "Remove an existing property from the connection."
 #~ msgstr "Байланыстың бар қасиетін өшіру."
 
@@ -1182,12 +1246,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgctxt "@action:intoolbar"
 #~ msgid "Add Edge"
 #~ msgstr "Қырды қосу"
-
-#, fuzzy
-#~| msgid "Creates a new edge between 2 nodes"
-#~ msgctxt "@info:tooltip"
-#~ msgid "Creates a new edge between 2 nodes"
-#~ msgstr "Екі төбе арасындағы қырын құру"
 
 #, fuzzy
 #~| msgid "Add %1"
@@ -1242,12 +1300,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgctxt "@action:intoolbar"
 #~ msgid "Move"
 #~ msgstr "Жылжыту"
-
-#, fuzzy
-#~| msgid "Select and move items."
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select and move items."
-#~ msgstr "Бірдемені таңдап алып жылжыту."
 
 #, fuzzy
 #~| msgid "Zoom"
@@ -1423,11 +1475,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgid "Select Pointer Type:"
 #~ msgstr "Көрсеткіштің түрі:"
 
-#, fuzzy
-#~| msgid "Select Pointer Type:"
-#~ msgid "Remove selected pointer type."
-#~ msgstr "Көрсеткіштің түрі:"
-
 #~ msgid "Style:"
 #~ msgstr "Стилі:"
 
@@ -1441,12 +1488,6 @@ msgstr "Төбенің қасиеттері"
 #~ msgctxt "@title:menu"
 #~ msgid "Data Structure"
 #~ msgstr "Деректер құрылымы"
-
-#, fuzzy
-#~| msgid "Selected"
-#~ msgctxt "@title:menu"
-#~ msgid "Selected"
-#~ msgstr "Таңдалғанды"
 
 #, fuzzy
 #~| msgid "Zoom"
