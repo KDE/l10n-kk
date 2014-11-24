@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-23 07:51+0000\n"
+"POT-Creation-Date: 2014-11-24 07:48+0000\n"
 "PO-Revision-Date: 2013-11-20 06:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -473,7 +473,7 @@ msgid "Home"
 msgstr "Мекен"
 
 #: interfaces/contextmenuextension.cpp:153 shell/debugcontroller.cpp:389
-#: shell/runcontroller.cpp:83 shell/uicontroller.cpp:98
+#: shell/runcontroller.cpp:83 shell/uicontroller.cpp:103
 msgid "Debug"
 msgstr "Жөндеу"
 
@@ -519,6 +519,7 @@ msgid "Parsing: %1"
 msgstr ""
 
 #: language/backgroundparser/backgroundparser.cpp:498
+#: shell/settings/bgpreferences.cpp:81
 msgid "Background Parser"
 msgstr "Қатар істейтін синтаксис талдағышы"
 
@@ -1369,6 +1370,23 @@ msgstr "Кодына қайту"
 msgid "Hide"
 msgstr "Жасыру"
 
+#: shell/configdialog.cpp:43
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "configure"
+msgid "Configure"
+msgstr "баптау"
+
+#: shell/configdialog.cpp:95
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: shell/configdialog.cpp:96
+msgid "Apply Settings"
+msgstr ""
+
 #: shell/core.cpp:97
 msgid "KDevelop Platform"
 msgstr "KDevelop платформасы"
@@ -1801,6 +1819,22 @@ msgid ""
 "controlled project."
 msgstr ""
 
+#: shell/editorconfigpage.cpp:96
+#, fuzzy
+#| msgid "Edit"
+msgid "Editor"
+msgstr "Өзгерту"
+
+#: shell/editorconfigpage.cpp:106
+#, fuzzy
+#| msgid "Configure Editor..."
+msgid "Configure Text editor"
+msgstr "Редакторын баптау..."
+
+#: shell/environmentconfigurebutton.cpp:87
+msgid "Configure environment variables"
+msgstr ""
+
 #. i18n: ectx: Menu (session)
 #: shell/kdevsessionui.rc:5
 msgctxt "@title:menu"
@@ -2144,7 +2178,7 @@ msgstr ""
 "процесімен өзгертілген.\n"
 "Сырттан жасалған өзгерістерді жоғалсын ба?"
 
-#: shell/plugincontroller.cpp:517
+#: shell/plugincontroller.cpp:531
 #, kde-format
 msgid ""
 "Plugin '%1' could not be loaded correctly and was disabled.\n"
@@ -2230,51 +2264,51 @@ msgstr ""
 "Құрастырушының өзіндік жоба баптауы сақталмады. Назар аударыңыз: жоба баптау "
 "өзгертулеріңіз жоғалады."
 
-#: shell/projectcontroller.cpp:152
+#: shell/projectcontroller.cpp:161
 #, kde-format
 msgid "Configure Project %1"
 msgstr "%1 жоба баптауы"
 
-#: shell/projectcontroller.cpp:277
+#: shell/projectcontroller.cpp:278
 #, kde-format
 msgid "Invalid Location: %1"
 msgstr "Жарамсыз орын: %1"
 
-#: shell/projectcontroller.cpp:284
+#: shell/projectcontroller.cpp:285
 msgid "Project already being opened"
 msgstr "Жоба ашылған екен"
 
-#: shell/projectcontroller.cpp:285
+#: shell/projectcontroller.cpp:286
 #, kde-format
 msgid "Already opening %1, not opening again"
 msgstr "Ашылған %1, екінші рет ашылмайды"
 
-#: shell/projectcontroller.cpp:430
+#: shell/projectcontroller.cpp:431
 msgid "Override"
 msgstr "Үстінен жазу"
 
-#: shell/projectcontroller.cpp:431
+#: shell/projectcontroller.cpp:432
 msgctxt "@info:tooltip"
 msgid ""
 "Continue to open the project and use the just provided project configuration."
 msgstr "Жобаны ашуды жалғастырып жаңа берілген баптауларды қолдану."
 
-#: shell/projectcontroller.cpp:434
+#: shell/projectcontroller.cpp:435
 msgid "Open Existing File"
 msgstr "Бар файлды ашу"
 
-#: shell/projectcontroller.cpp:435
+#: shell/projectcontroller.cpp:436
 msgctxt "@info:tooltip"
 msgid ""
 "Continue to open the project but use the existing project configuration."
 msgstr "Жобаны ашуды жалғастыру, бірақ бұрынғы баптауларды қолдану."
 
-#: shell/projectcontroller.cpp:438
+#: shell/projectcontroller.cpp:439
 msgctxt "@info:tooltip"
 msgid "Cancel and do not open the project."
 msgstr "Жобаны ашпай доғару."
 
-#: shell/projectcontroller.cpp:440
+#: shell/projectcontroller.cpp:441
 #, kde-format
 msgid ""
 "There already exists a project configuration file at %1.\n"
@@ -2283,30 +2317,30 @@ msgstr ""
 "%1 дегенде жоба баптау файлы бар екен.\n"
 "Оны ауыстырмақсыз ба?"
 
-#: shell/projectcontroller.cpp:442
+#: shell/projectcontroller.cpp:443
 msgid "Override existing project configuration"
 msgstr "Жоба баптау файлын ауыстыру"
 
-#: shell/projectcontroller.cpp:458
+#: shell/projectcontroller.cpp:459
 #, kde-format
 msgid "Unable to create configuration file %1"
 msgstr "%1 жоба баптау файл құрылмады"
 
-#: shell/projectcontroller.cpp:469
+#: shell/projectcontroller.cpp:470
 msgid "Reopen the current project?"
 msgstr "Назардағы жобаны жаңадан жүктеу"
 
-#: shell/projectcontroller.cpp:503
+#: shell/projectcontroller.cpp:504
 msgctxt "@action"
 msgid "Open / Import Project..."
 msgstr "Жобаны ашу/импорттау..."
 
-#: shell/projectcontroller.cpp:504
+#: shell/projectcontroller.cpp:505
 msgctxt "@info:tooltip"
 msgid "Open or import project"
 msgstr ""
 
-#: shell/projectcontroller.cpp:505
+#: shell/projectcontroller.cpp:506
 msgctxt "@info:whatsthis"
 msgid ""
 "Open an existing KDevelop 4 project or import an existing Project into "
@@ -2316,82 +2350,82 @@ msgid ""
 "created."
 msgstr ""
 
-#: shell/projectcontroller.cpp:516
+#: shell/projectcontroller.cpp:517
 msgctxt "@action"
 msgid "Fetch Project..."
 msgstr "Жобаны жүктеу..."
 
-#: shell/projectcontroller.cpp:518
+#: shell/projectcontroller.cpp:519
 msgctxt "@info:tooltip"
 msgid "Fetch project"
 msgstr ""
 
-#: shell/projectcontroller.cpp:519
+#: shell/projectcontroller.cpp:520
 msgctxt "@info:whatsthis"
 msgid ""
 "Guides the user through the project fetch and then imports it into KDevelop "
 "4."
 msgstr ""
 
-#: shell/projectcontroller.cpp:533
+#: shell/projectcontroller.cpp:534
 msgctxt "@action"
 msgid "Close Project(s)"
 msgstr "Жобаларды жабу"
 
-#: shell/projectcontroller.cpp:535
+#: shell/projectcontroller.cpp:536
 msgctxt "@info:tooltip"
 msgid "Closes all currently selected projects"
 msgstr "Бүкіл таңдалған жобаларды жабу"
 
-#: shell/projectcontroller.cpp:540
+#: shell/projectcontroller.cpp:541
 msgid "Open Configuration..."
 msgstr "Баптауын ашу..."
 
-#: shell/projectcontroller.cpp:546
+#: shell/projectcontroller.cpp:547
 msgid "Commit Current Project..."
 msgstr "Назардағы жобаны тапсыру..."
 
-#: shell/projectcontroller.cpp:547 vcs/vcspluginhelper.cpp:100
+#: shell/projectcontroller.cpp:548 vcs/vcspluginhelper.cpp:100
 msgid "Commit..."
 msgstr "Тапсыру..."
 
-#: shell/projectcontroller.cpp:558
+#: shell/projectcontroller.cpp:559
 msgid "Open Recent Project"
 msgstr "Жуырдағы жобаны ашу"
 
-#: shell/projectcontroller.cpp:559
+#: shell/projectcontroller.cpp:560
 msgctxt "@info:whatsthis"
 msgid "Opens recently opened project."
 msgstr ""
 
-#: shell/projectcontroller.cpp:564
+#: shell/projectcontroller.cpp:565
 msgid "Open Project for Current File"
 msgstr "Назардағы файлға қатысты жобаны ашу"
 
-#: shell/projectcontroller.cpp:682
+#: shell/projectcontroller.cpp:680
 #, kde-format
 msgid "Project already open: %1"
 msgstr "Жоба ашылған екен: %1"
 
-#: shell/projectcontroller.cpp:685
+#: shell/projectcontroller.cpp:683
 msgid "No active document"
 msgstr "Белсенді құжат жоқ"
 
-#: shell/projectcontroller.cpp:757
+#: shell/projectcontroller.cpp:755
 msgid "Project Already Open"
 msgstr "Жоба ашылған екен"
 
-#: shell/projectcontroller.cpp:760
+#: shell/projectcontroller.cpp:758
 msgid ""
 "The project you're trying to open is already open in at least one other "
 "session.<br>What do you want to do?"
 msgstr ""
 
-#: shell/projectcontroller.cpp:764
+#: shell/projectcontroller.cpp:762
 msgid "Add project to current session"
 msgstr ""
 
-#: shell/projectcontroller.cpp:768
+#: shell/projectcontroller.cpp:766
 #, kde-format
 msgid "Open session %1"
 msgstr ""
@@ -2906,6 +2940,12 @@ msgctxt "@info"
 msgid "The session %1 is already active in another running instance."
 msgstr "%1 сеансы басқа жегілген данасында белсенді екен."
 
+#: shell/settings/bgpreferences.cpp:86
+#, fuzzy
+#| msgid "Enable Background Parser"
+msgid "Configure Background Parser"
+msgstr "Қатарлас синтаксис талдағышын қосу"
+
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_enable)
 #: shell/settings/bgsettings.ui:29
 msgid ""
@@ -2956,6 +2996,17 @@ msgstr "Ағындар саннын шегі:"
 #: shell/settings/bgsettings.ui:98
 msgid " threads"
 msgstr " ағын"
+
+#: shell/settings/ccpreferences.cpp:87
+#, fuzzy
+#| msgctxt "@title:group"
+#| msgid "Language Support"
+msgid "Language Support"
+msgstr "Тілді қолдау"
+
+#: shell/settings/ccpreferences.cpp:92
+msgid "Configure code-completion and semantic highlighting"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: shell/settings/ccsettings.ui:17
@@ -3146,6 +3197,18 @@ msgstr "Пішімдеу құралы жоқ"
 msgid "Preview"
 msgstr "Қарап-шығу"
 
+#: shell/settings/environmentpreferences.cpp:83
+#, fuzzy
+#| msgid "Environment group:"
+msgid "Environment"
+msgstr "Орта тобы:"
+
+#: shell/settings/environmentpreferences.cpp:88
+#, fuzzy
+#| msgid "New Environment Variable"
+msgid "Configure Environment Variables"
+msgstr "Жаңа орта айнымалысы"
+
 #: shell/settings/environmentwidget.cpp:60
 #, fuzzy
 #| msgid "Add new variable"
@@ -3192,50 +3255,62 @@ msgstr "Айнымалыны өшіру"
 msgid "Add Multiple Variables"
 msgstr "Жаңа айнымалыны қосу"
 
-#: shell/settings/pluginpreferences.cpp:51
+#: shell/settings/pluginpreferences.cpp:46
 msgctxt "@title:group"
 msgid "Core"
 msgstr "Өзек"
 
-#: shell/settings/pluginpreferences.cpp:52
+#: shell/settings/pluginpreferences.cpp:47
 msgctxt "@title:group"
 msgid "Project Management"
 msgstr "Жобаны басқару"
 
-#: shell/settings/pluginpreferences.cpp:53
+#: shell/settings/pluginpreferences.cpp:48
 msgctxt "@title:group"
 msgid "Version Control"
 msgstr "Нұсқаларды қадағалау"
 
-#: shell/settings/pluginpreferences.cpp:54
+#: shell/settings/pluginpreferences.cpp:49
 msgctxt "@title:group"
 msgid "Utilities"
 msgstr "Утилиталар"
 
-#: shell/settings/pluginpreferences.cpp:55
+#: shell/settings/pluginpreferences.cpp:50
 msgctxt "@title:group"
 msgid "Documentation"
 msgstr "Құжаттама"
 
-#: shell/settings/pluginpreferences.cpp:56
+#: shell/settings/pluginpreferences.cpp:51
 msgctxt "@title:group"
 msgid "Language Support"
 msgstr "Тілді қолдау"
 
-#: shell/settings/pluginpreferences.cpp:57
+#: shell/settings/pluginpreferences.cpp:52
 msgctxt "@title:group"
 msgid "Debugging"
 msgstr "Жөндеу"
 
-#: shell/settings/pluginpreferences.cpp:58
+#: shell/settings/pluginpreferences.cpp:53
 msgctxt "@title:group"
 msgid "Testing"
 msgstr "Сынау"
 
-#: shell/settings/pluginpreferences.cpp:59
+#: shell/settings/pluginpreferences.cpp:54
 msgctxt "@title:group"
 msgid "Other"
 msgstr "Басқа"
+
+#: shell/settings/pluginpreferences.h:40
+#, fuzzy
+#| msgid "Loaded Plugins"
+msgid "Plugins"
+msgstr "Жүктелген плагиндері"
+
+#: shell/settings/pluginpreferences.h:41
+#, fuzzy
+#| msgid "Configure Sessions"
+msgid "Configure Plugins"
+msgstr "Сеансты баптау"
 
 #. i18n: ectx: label, entry (parseAllProjectSources), group (Project Manager)
 #: shell/settings/projectconfig.kcfg:11
@@ -3280,6 +3355,18 @@ msgstr ""
 "Бұл параметр орнатылса, бірдемені құру алдында барлық ашық құжаттар "
 "автоматты түрде сақталады."
 
+#: shell/settings/projectpreferences.cpp:65
+#, fuzzy
+#| msgid "Project %1"
+msgid "Projects"
+msgstr "%1 жобасы"
+
+#: shell/settings/projectpreferences.cpp:70
+#, fuzzy
+#| msgid "Configure Project %1"
+msgid "Configure Projects"
+msgstr "%1 жоба баптауы"
+
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, kcfg_projectsBaseDirectory)
 #: shell/settings/projectsettings.ui:19 shell/settings/projectsettings.ui:32
@@ -3311,7 +3398,7 @@ msgstr "'Құрастыру' амалы жіберілгенде барлық ө
 msgid "Save all documents before building"
 msgstr "Құрастыру алдында бүкіл құжаттар сақталсын"
 
-#: shell/settings/sourceformattersettings.cpp:369
+#: shell/settings/sourceformattersettings.cpp:373
 #, kde-format
 msgid ""
 "The style %1 is also used for the following languages:\n"
@@ -3322,22 +3409,34 @@ msgstr ""
 "%2.\n"
 "Сонда да өшірмексіз бе?"
 
-#: shell/settings/sourceformattersettings.cpp:370
+#: shell/settings/sourceformattersettings.cpp:374
 msgid "Style being deleted"
 msgstr "Стилі өшірілмек"
 
-#: shell/settings/sourceformattersettings.cpp:422
+#: shell/settings/sourceformattersettings.cpp:426
 #, kde-format
 msgid "New %1"
 msgstr "Жаңа %1"
 
-#: shell/settings/sourceformattersettings.cpp:425
+#: shell/settings/sourceformattersettings.cpp:429
 msgid "New Style"
 msgstr "Жаңа стилі"
 
-#: shell/settings/sourceformattersettings.cpp:504
+#: shell/settings/sourceformattersettings.cpp:508
 msgid "No Language selected"
 msgstr "Тіл таңдалмаған"
+
+#: shell/settings/sourceformattersettings.cpp:524
+#, fuzzy
+#| msgid "No Source Formatter available"
+msgid "Source Formatter"
+msgstr "Пішімдеу құралы жоқ"
+
+#: shell/settings/sourceformattersettings.cpp:529
+#, fuzzy
+#| msgid "No Source Formatter available"
+msgid "Configure Source Formatter"
+msgstr "Пішімдеу құралы жоқ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: shell/settings/sourceformattersettings.ui:17
@@ -3399,8 +3498,38 @@ msgstr "Стилі:"
 msgid "Edit..."
 msgstr "Өңдеу..."
 
+#: shell/settings/templateconfig.cpp:52
+msgid "Templates"
+msgstr ""
+
+#: shell/settings/templateconfig.cpp:57
+#, fuzzy
+#| msgid "Configure Launches..."
+msgid "Configure Templates"
+msgstr "Жегуді баптау..."
+
+#. i18n: ectx: property (text), widget (QPushButton, loadButton)
+#: shell/settings/templatepage.ui:26
+msgid "Load Template From File"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, getNewButton)
+#: shell/settings/templatepage.ui:38
+msgid "Get More Templates"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, shareButton)
+#: shell/settings/templatepage.ui:50
+msgid "Share Templates"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, extractButton)
+#: shell/settings/templatepage.ui:62
+msgid "Clone Template"
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, UiConfig)
-#: shell/settings/uiconfig.ui:14
+#: shell/settings/uiconfig.ui:14 shell/settings/uipreferences.cpp:62
 msgid "User Interface"
 msgstr "Пайдаланушы интерфейсі"
 
@@ -3497,6 +3626,12 @@ msgstr ""
 msgid "Arrange related documents side by side"
 msgstr "Тиісті құжаттар қатарлап қойылсын"
 
+#: shell/settings/uipreferences.cpp:72
+#, fuzzy
+#| msgid "User Interface"
+msgid "Configure User Interface"
+msgstr "Пайдаланушы интерфейсі"
+
 #: shell/sourceformattercontroller.cpp:78
 msgid "&Reformat Source"
 msgstr "Кодты қ&айта пішімдеу"
@@ -3559,15 +3694,15 @@ msgstr "Құжат сырттан өзгертілген"
 msgid " Line: %1 Col: %2 "
 msgstr " Жол: %1 Бағ.: %2 "
 
-#: shell/uicontroller.cpp:87
+#: shell/uicontroller.cpp:92
 msgid "Code"
 msgstr "Коды"
 
-#: shell/uicontroller.cpp:107
+#: shell/uicontroller.cpp:112
 msgid "Review"
 msgstr "Шолу"
 
-#: shell/uicontroller.cpp:415
+#: shell/uicontroller.cpp:414
 msgid "Select Tool View to Add"
 msgstr "Қосатын құралдар панелін таңдау"
 
@@ -3826,10 +3961,6 @@ msgstr ""
 #: util/duchainify/main.cpp:286
 msgid "Print problems encountered during parsing"
 msgstr "Талдау кезде шығыс мәселелер тап болды"
-
-#: util/environmentconfigurebutton.cpp:87
-msgid "Configure environment variables"
-msgstr ""
 
 #: util/environmentselectionmodel.cpp:52
 #, fuzzy
@@ -4403,9 +4534,6 @@ msgstr "Журнал көрінісі"
 #~ msgid "Projects Settings"
 #~ msgstr "Жобаларды баптау"
 
-#~ msgid "Configure Editor..."
-#~ msgstr "Редакторын баптау..."
-
 #~ msgctxt "@info:whatsthis"
 #~ msgid "Configure various aspects of this editor."
 #~ msgstr "Редактордың түрлі параметрлерін баптау."
@@ -4609,9 +4737,6 @@ msgstr "Журнал көрінісі"
 
 #~ msgid "Show text"
 #~ msgstr "Матінді көрсету"
-
-#~ msgid "Edit"
-#~ msgstr "Өзгерту"
 
 #~ msgid "Disable"
 #~ msgstr "Бұғаттау"
