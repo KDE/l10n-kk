@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-26 01:42+0000\n"
+"POT-Creation-Date: 2014-11-27 01:43+0000\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -105,14 +105,14 @@ msgid "New"
 msgstr "Жаңа"
 
 #. i18n: ectx: Menu (LayerConvert)
-#: animator/kritaanimation.rc:96 gemini/kritagemini.rc:101 krita.rc:103
+#: animator/kritaanimation.rc:96 gemini/kritagemini.rc:101
 #: sketch/kritasketch.rc:101
 msgid "Convert"
 msgstr "Аудару"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSelect)
 #. i18n: ectx: Menu (Select)
-#: animator/kritaanimation.rc:121 gemini/kritagemini.rc:126 krita.rc:129
+#: animator/kritaanimation.rc:121 gemini/kritagemini.rc:126 krita.rc:140
 #: plugins/extensions/colorrange/wdg_colorrange.ui:131
 #: plugins/extensions/imagesize/imagesize.rc:12
 #: plugins/extensions/modify_selection/modify_selection.rc:4
@@ -121,20 +121,20 @@ msgid "&Select"
 msgstr "&Таңдау"
 
 #. i18n: ectx: Menu (Filter)
-#: animator/kritaanimation.rc:134 gemini/kritagemini.rc:139 krita.rc:144
+#: animator/kritaanimation.rc:134 gemini/kritagemini.rc:139 krita.rc:155
 #: sketch/kritasketch.rc:139
 msgid "Filte&r"
 msgstr "Сүз&гі"
 
 #. i18n: ectx: Menu (Tools)
-#: animator/kritaanimation.rc:151 gemini/kritagemini.rc:156 krita.rc:161
+#: animator/kritaanimation.rc:151 gemini/kritagemini.rc:156 krita.rc:172
 #: sketch/kritasketch.rc:156
 msgid "&Tools"
 msgstr "&Құралдар"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: Menu (settings)
-#: animator/kritaanimation.rc:154 gemini/kritagemini.rc:159 krita.rc:164
+#: animator/kritaanimation.rc:154 gemini/kritagemini.rc:159 krita.rc:175
 #: plugins/extensions/dockers/animator/kis_timeline.cpp:203
 #: plugins/extensions/dockers/animator/kis_timeline.cpp:218
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
@@ -143,7 +143,7 @@ msgid "Settings"
 msgstr "Баптау"
 
 #. i18n: ectx: ToolBar (BrushesAndStuff)
-#: animator/kritaanimation.rc:166 gemini/kritagemini.rc:172 krita.rc:177
+#: animator/kritaanimation.rc:166 gemini/kritagemini.rc:172 krita.rc:188
 #: sketch/kritasketch.rc:172
 msgid "Brushes and Stuff"
 msgstr "Қылқалам және басқа"
@@ -2222,6 +2222,34 @@ msgstr "Нұсқасы:"
 msgid "<html><head/><body><p align=\"center\"><b>Recent Files</b></p>"
 msgstr ""
 
+#. i18n: ectx: Menu (LayerImportExport)
+#: krita.rc:101
+#, fuzzy
+#| msgid "Import Image"
+msgid "&Import/Export"
+msgstr "Кескінді импорттау"
+
+#. i18n: ectx: Menu (LayerImportAs)
+#: krita.rc:106
+#, fuzzy
+#| msgid "Import Image"
+msgid "Import"
+msgstr "Кескінді импорттау"
+
+#. i18n: ectx: Menu (LayerConvert)
+#: krita.rc:113
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:491
+msgid "&Convert"
+msgstr "&Аудару"
+
+#. i18n: ectx: Menu (LayerSplitAlpha)
+#: krita.rc:120
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:498
+#, fuzzy
+#| msgid "Inherit Alpha"
+msgid "S&plit Alpha"
+msgstr "Альфа мұралау"
+
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
 #: plugins/assistants/RulerAssistant/AssistantsToolOptions.ui:46
 msgid "Delete all"
@@ -3717,10 +3745,6 @@ msgstr ""
 #: ui/kis_layer_manager.cc:277
 msgid "&Merge with Layer Below"
 msgstr "Астыңғы қабатпен &біріктіру"
-
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:491
-msgid "&Convert"
-msgstr "&Аудару"
 
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:38
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:194
@@ -11634,7 +11658,7 @@ msgid "Image Properties"
 msgstr "Кескін қасиеттері"
 
 #: ui/dialogs/kis_dlg_image_properties.cc:72
-#: ui/dialogs/kis_dlg_preferences.cc:426 ui/kis_image_manager.cc:60
+#: ui/dialogs/kis_dlg_preferences.cc:426 ui/kis_image_manager.cc:76
 #, fuzzy
 #| msgid "background color change"
 msgid "Change the background color of the image"
@@ -14080,16 +14104,40 @@ msgid "I&mport Layer..."
 msgstr "Қабатты и&мпорттау..."
 
 #: ui/kis_image_manager.cc:55
+#, fuzzy
+#| msgid "&Paint Layer"
+msgid "as Paint Layer..."
+msgstr "Қабатты &салу"
+
+#: ui/kis_image_manager.cc:59
+#, fuzzy
+#| msgid "Transparency Mask"
+msgid "as Transparency Mask..."
+msgstr "Мөлдірлік қалқасы"
+
+#: ui/kis_image_manager.cc:63
+#, fuzzy
+#| msgid "&Filter Mask..."
+msgid "as Filter Mask..."
+msgstr "&Сүзгі қалқасы..."
+
+#: ui/kis_image_manager.cc:67
+#, fuzzy
+#| msgid "to &Selection Mask"
+msgid "as Selection Mask..."
+msgstr "&Таңдау қалқасына"
+
+#: ui/kis_image_manager.cc:71
 msgid "Properties..."
 msgstr "Қасиеттері..."
 
-#: ui/kis_image_manager.cc:59
+#: ui/kis_image_manager.cc:75
 #, fuzzy
 #| msgid "Background Color"
 msgid "Image Background Color and Transparency..."
 msgstr "Ая түсі"
 
-#: ui/kis_image_manager.cc:84
+#: ui/kis_image_manager.cc:116
 msgid "Import Image"
 msgstr "Кескінді импорттау"
 
@@ -14242,173 +14290,216 @@ msgstr "Мынаны қосарлау"
 msgid "Filter Mask Properties"
 msgstr "Сүзгілеу қалқанын қасиеттері"
 
-#: ui/kis_node_manager.cpp:153
+#: ui/kis_node_manager.cpp:174
 #, fuzzy
 #| msgid "Select Layer"
 msgid "&Merge Selected Layers"
 msgstr "Қабатты таңдау"
 
-#: ui/kis_node_manager.cpp:202
+#: ui/kis_node_manager.cpp:223
 msgid "Mirror Layer Horizontally"
 msgstr "Қабатты аунату"
 
-#: ui/kis_node_manager.cpp:208
+#: ui/kis_node_manager.cpp:229
 msgid "Mirror Layer Vertically"
 msgstr "Қабатты төңкеру"
 
-#: ui/kis_node_manager.cpp:214
+#: ui/kis_node_manager.cpp:235
 msgid "Activate next layer"
 msgstr "Келесі қабатқа ауысу"
 
-#: ui/kis_node_manager.cpp:220
+#: ui/kis_node_manager.cpp:241
 msgid "Activate previous layer"
 msgstr "Алдыңғы қабатқа ауысу"
 
-#: ui/kis_node_manager.cpp:226
+#: ui/kis_node_manager.cpp:247
 msgid "Save Layer/Mask..."
 msgstr "Қабат/Қалқасын сақтау..."
 
-#: ui/kis_node_manager.cpp:231
+#: ui/kis_node_manager.cpp:252
 msgid "&Duplicate Layer or Mask"
 msgstr "Қалқа не қабаттың кө&шірмесін жасау"
 
-#: ui/kis_node_manager.cpp:238
+#: ui/kis_node_manager.cpp:259
 msgid "&Paint Layer"
 msgstr "Қабатты &салу"
 
-#: ui/kis_node_manager.cpp:242
+#: ui/kis_node_manager.cpp:263
 msgid "&Group Layer"
 msgstr "Қабатты &топтастыру"
 
-#: ui/kis_node_manager.cpp:245
+#: ui/kis_node_manager.cpp:266
 msgid "&Clone Layer"
 msgstr "&Егіз қабатын құру"
 
-#: ui/kis_node_manager.cpp:248
+#: ui/kis_node_manager.cpp:269
 msgid "&Vector Layer"
 msgstr "&Векторлы қабат"
 
-#: ui/kis_node_manager.cpp:251
+#: ui/kis_node_manager.cpp:272
 msgid "&Filter Layer..."
 msgstr "Қабатты &сүзгілеу..."
 
-#: ui/kis_node_manager.cpp:254
+#: ui/kis_node_manager.cpp:275
 #, fuzzy
 #| msgid "&Filter Layer..."
 msgid "&Fill Layer..."
 msgstr "Қабатты &сүзгілеу..."
 
-#: ui/kis_node_manager.cpp:257
+#: ui/kis_node_manager.cpp:278
 #, fuzzy
 #| msgid "&Filter Layer..."
 msgid "&File Layer..."
 msgstr "Қабатты &сүзгілеу..."
 
-#: ui/kis_node_manager.cpp:260
+#: ui/kis_node_manager.cpp:281
 msgid "&Transparency Mask"
 msgstr "&Мөлдірлік қалқасы"
 
-#: ui/kis_node_manager.cpp:263
+#: ui/kis_node_manager.cpp:284
 msgid "&Filter Mask..."
 msgstr "&Сүзгі қалқасы..."
 
-#: ui/kis_node_manager.cpp:266
+#: ui/kis_node_manager.cpp:287
 #, fuzzy
 #| msgid "&Transformation Mask..."
 msgid "&Transform Mask..."
 msgstr "Түрл&ендіру қалқасы..."
 
-#: ui/kis_node_manager.cpp:269
+#: ui/kis_node_manager.cpp:290
 msgid "&Local Selection"
 msgstr "&Жергілікті таңдау"
 
-#: ui/kis_node_manager.cpp:275
+#: ui/kis_node_manager.cpp:296
 msgid "to &Paint Layer"
 msgstr "&Бояу қабатына"
 
-#: ui/kis_node_manager.cpp:278
+#: ui/kis_node_manager.cpp:299
 msgid "to &Selection Mask"
 msgstr "&Таңдау қалқасына"
 
-#: ui/kis_node_manager.cpp:281
+#: ui/kis_node_manager.cpp:302
 #, fuzzy
 #| msgid "&Filter Mask..."
 msgid "to &Filter Mask..."
 msgstr "&Сүзгі қалқасы..."
 
-#: ui/kis_node_manager.cpp:284
+#: ui/kis_node_manager.cpp:305
 msgid "to &Transparency Mask"
 msgstr "&Мөлдірлік қалқасына"
 
-#: ui/kis_node_manager.cpp:290
+#: ui/kis_node_manager.cpp:311
 msgid "&Isolate Layer"
 msgstr "Қабатты &оқшаулау"
 
-#: ui/kis_node_manager.cpp:477
+#: ui/kis_node_manager.cpp:317
+#, fuzzy
+#| msgid "Alpha Options"
+msgid "Alpha into Mask"
+msgstr "Альфа параметрлері"
+
+#: ui/kis_node_manager.cpp:323
+#, fuzzy
+#| msgid "Inherit Alpha"
+msgid "Write as Alpha"
+msgstr "Альфа мұралау"
+
+#: ui/kis_node_manager.cpp:329
+#, fuzzy
+#| msgid "Sample merged"
+msgid "Save Merged..."
+msgstr "Үлгі бойынша біріктірілген"
+
+#: ui/kis_node_manager.cpp:516
 #, fuzzy
 #| msgid "Convert to a Selection Mask"
 msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "Таңдау қалқасына аудару"
 
-#: ui/kis_node_manager.cpp:704
+#: ui/kis_node_manager.cpp:743
 #, fuzzy
 #| msgid "Remove Last Layer"
 msgctxt "(qtundo-format)"
 msgid "Remove Last Layer"
 msgstr "Соңғы қабатты алып тастау"
 
-#: ui/kis_node_manager.cpp:718
+#: ui/kis_node_manager.cpp:757
 msgctxt "(qtundo-format)"
 msgid "Remove Multiple Layers and Masks"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:749
+#: ui/kis_node_manager.cpp:788
 #, fuzzy
 #| msgid "Mirror Layer X"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "Қабатты X бойлығын терістеу"
 
-#: ui/kis_node_manager.cpp:751
+#: ui/kis_node_manager.cpp:790
 #, fuzzy
 #| msgid "Mirror Mask X"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "Масканы X бойынша шағылстырсу"
 
-#: ui/kis_node_manager.cpp:762
+#: ui/kis_node_manager.cpp:801
 #, fuzzy
 #| msgid "Mirror Layer Y"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "Қабатты Y бойлығын терістеу"
 
-#: ui/kis_node_manager.cpp:764
+#: ui/kis_node_manager.cpp:803
 #, fuzzy
 #| msgid "Mirror Mask Y"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "Масканы Y бойынша шағылстырсу"
 
-#: ui/kis_node_manager.cpp:863
+#: ui/kis_node_manager.cpp:902
 #, fuzzy
 #| msgid "Copy Merged"
 msgid "Merged"
 msgstr "Көшіріп біріктірілген"
 
-#: ui/kis_node_manager.cpp:866
+#: ui/kis_node_manager.cpp:905
 #, fuzzy
 #| msgid "Remove Selected Color"
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "Таңдалған түсті өшіру"
 
-#: ui/kis_node_manager.cpp:957
+#: ui/kis_node_manager.cpp:994
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Export \"%1\""
 msgstr "Экспорт"
+
+#: ui/kis_node_manager.cpp:1065
+msgctxt "(qtundo-format)"
+msgid "Split Alpha into a Mask"
+msgstr ""
+
+#: ui/kis_node_manager.cpp:1095
+#, kde-format
+msgid ""
+"Cannot write alpha channel of the parent layer \"%1\".\n"
+"The operation will be cancelled."
+msgstr ""
+
+#: ui/kis_node_manager.cpp:1098
+#, fuzzy, kde-format
+#| msgid "Group not editable."
+msgid "Layer %1 is not editable"
+msgstr "Топ өңдеуге келмейді."
+
+#: ui/kis_node_manager.cpp:1121
+#, fuzzy
+#| msgid "Create a new mask or layer"
+msgctxt "(qtundo-format)"
+msgid "Write Alpha into a Layer"
+msgstr "Жаңа қалқа не қабатты құру"
 
 #: ui/kis_painting_assistants_decoration.cpp:114
 msgid "Show Painting Assistants"
@@ -16068,11 +16159,6 @@ msgstr "Жабу"
 
 #~ msgid "Uninstall"
 #~ msgstr "Орнатудан шығару"
-
-#, fuzzy
-#~| msgid "Import Image"
-#~ msgid "Import"
-#~ msgstr "Кескінді импорттау"
 
 #~ msgid "Export"
 #~ msgstr "Экспорт"
@@ -18174,11 +18260,6 @@ msgstr "Жабу"
 #~ msgstr "Құ&рылған қабат..."
 
 #, fuzzy
-#~| msgid "Create a new mask or layer"
-#~ msgid "Create a new Shape Layer"
-#~ msgstr "Жаңа қалқа не қабатты құру"
-
-#, fuzzy
 #~| msgid "&Local Selection"
 #~ msgid "Add a New Local Selection Mask"
 #~ msgstr "&Жергілікті таңдау"
@@ -19097,9 +19178,6 @@ msgstr "Жабу"
 
 #~ msgid "Select with curves"
 #~ msgstr "Қисықтармен таңдау"
-
-#~ msgid "Sample merged"
-#~ msgstr "Үлгі бойынша біріктірілген"
 
 #~ msgid "GRAY/Alpha16 Histogram"
 #~ msgstr "GRAY/Alpha16 гистограма"
