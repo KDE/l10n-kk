@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-22 08:16+0000\n"
+"POT-Creation-Date: 2014-11-30 07:51+0000\n"
 "PO-Revision-Date: 2013-08-28 04:37+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -114,6 +114,18 @@ msgctxt "@info"
 msgid "This page was created "
 msgstr "Бұл парақты жасағаны: "
 
+#: htmlexport.cpp:676
+#, kde-format
+msgctxt "@info/plain page creator email link with name"
+msgid "by <link url='mailto:%1'>%2</link> "
+msgstr "<link url='mailto:%1'>%2</link>"
+
+#: htmlexport.cpp:680
+#, kde-format
+msgctxt "@info/plain page creator email link"
+msgid "by <link url='mailto:%1'>%2</link> "
+msgstr "<link url='mailto:%1'>%2</link> "
+
 #: htmlexport.cpp:686
 #, fuzzy, kde-format
 #| msgctxt "@info/plain page creator name only"
@@ -121,6 +133,12 @@ msgstr "Бұл парақты жасағаны: "
 msgctxt "@info page creator name only"
 msgid "by %1 "
 msgstr "%1 "
+
+#: htmlexport.cpp:692
+#, kde-format
+msgctxt "@info/plain page credit with name and link"
+msgid "with <link url='%1'>%2</link>"
+msgstr "<link url='%1'>%2</link> дегенмен бірге"
 
 #: htmlexport.cpp:696
 #, fuzzy, kde-format
@@ -2038,6 +2056,7 @@ msgstr[0] "Қайталауы: %2 дейін, әрбір %1 минут"
 
 #: incidenceformatter.cpp:4114 incidenceformatter.cpp:4130
 #: incidenceformatter.cpp:4145 incidenceformatter.cpp:4176
+#: incidenceformatter.cpp:4202 incidenceformatter.cpp:4229
 #: incidenceformatter.cpp:4256 incidenceformatter.cpp:4299
 #: incidenceformatter.cpp:4328
 #, fuzzy, kde-format
@@ -2198,6 +2217,16 @@ msgid "Every year on the %2 %3 of %4 until %5"
 msgid_plural "Every %1 years on the %2 %3 of %4 until %5"
 msgstr[0] "Әрбір <numid>%1</numid> жыл сайын, %4 айындағы %2 %3, %5 дейін"
 
+#: incidenceformatter.cpp:4334
+#, fuzzy, kde-format
+#| msgctxt "Every N years on the [2nd|3rd|...] weekdayname of monthname"
+#| msgid "Every year on the %2 %3 of %4"
+#| msgid_plural "Every <numid>%1</numid> years on the %2 %3 of %4"
+msgctxt "Every N years on the [2nd|3rd|...] weekdayname of monthname"
+msgid "Every year on the %2 %3 of %4"
+msgid_plural "Every %1 years on the %2 %3 of %4"
+msgstr[0] "Әрбір <numid>%1</numid> жыл сайын, %4 айындағы %2 %3"
+
 #: incidenceformatter.cpp:4347
 msgid "Incidence recurs"
 msgstr "Қайталау кезі"
@@ -2353,6 +2382,26 @@ msgid ""
 msgstr ""
 "Келтірілген күнінен кейін болатын күнтізбе аталымдарын таңдауды қаласаңыз - "
 "осыны белгілеңіз."
+
+#: scheduler.cpp:246
+msgctxt "@info"
+msgid ""
+"<para>You accepted an invitation update, but an earlier version of the item "
+"could not be found in your calendar.</para><para>This may have occurred "
+"because:<list><item>the organizer did not include you in the original "
+"invitation</item><item>you did not accept the original invitation yet</"
+"item><item>you deleted the original invitation from your calendar</"
+"item><item>you no longer have access to the calendar containing the "
+"invitation</item></list></para><para>This is not a problem, but we thought "
+"you should know.</para>"
+msgstr ""
+"<para>Сіз шақырудың жаңартуын қабылдадыңыз, бірақ жаңатылатыны күнтізбеңізде "
+"жоқ.</para><para>Бұндайдын себептері мынадай болуы мүмкін:"
+"<list><item>ұйымдастырушысы Сізді бастапқы шақырылғандар қатарына "
+"кіргізбеген</item><item>Сіз әлі бастапқы шақыруды қабылдамадыңыз.</"
+"item><item>бастапқы шақыру күнтізбеңізден өшірілген</item><item>шақыру "
+"жазылған күнтізбеге Сіз енді қатынай алмайсыз</item></list></"
+"para><para>Жағдайда ешбір қиыншылық жоқ, бірақ бұны Сіз білген жөн.</para>"
 
 #: scheduler.cpp:255
 msgctxt "@title"
@@ -2685,18 +2734,6 @@ msgctxt "@item unknown status"
 msgid "Unknown Status: %1"
 msgstr "Беймәлім күйі: %1"
 
-#~ msgctxt "@info/plain page creator email link with name"
-#~ msgid "by <link url='mailto:%1'>%2</link> "
-#~ msgstr "<link url='mailto:%1'>%2</link>"
-
-#~ msgctxt "@info/plain page creator email link"
-#~ msgid "by <link url='mailto:%1'>%2</link> "
-#~ msgstr "<link url='mailto:%1'>%2</link> "
-
-#~ msgctxt "@info/plain page credit with name and link"
-#~ msgid "with <link url='%1'>%2</link>"
-#~ msgstr "<link url='%1'>%2</link> дегенмен бірге"
-
 #~ msgid "Calendar"
 #~ msgstr "Күнтізбе"
 
@@ -2708,30 +2745,6 @@ msgstr "Беймәлім күйі: %1"
 
 #~ msgid "Busy times"
 #~ msgstr "Бос емес уақыттар"
-
-#~ msgctxt "Every N years on the [2nd|3rd|...] weekdayname of monthname"
-#~ msgid "Every year on the %2 %3 of %4"
-#~ msgid_plural "Every <numid>%1</numid> years on the %2 %3 of %4"
-#~ msgstr[0] "Әрбір <numid>%1</numid> жыл сайын, %4 айындағы %2 %3"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "<para>You accepted an invitation update, but an earlier version of the "
-#~ "item could not be found in your calendar.</para><para>This may have "
-#~ "occurred because:<list><item>the organizer did not include you in the "
-#~ "original invitation</item><item>you did not accept the original "
-#~ "invitation yet</item><item>you deleted the original invitation from your "
-#~ "calendar</item><item>you no longer have access to the calendar containing "
-#~ "the invitation</item></list></para><para>This is not a problem, but we "
-#~ "thought you should know.</para>"
-#~ msgstr ""
-#~ "<para>Сіз шақырудың жаңартуын қабылдадыңыз, бірақ жаңатылатыны "
-#~ "күнтізбеңізде жоқ.</para><para>Бұндайдын себептері мынадай болуы мүмкін:"
-#~ "<list><item>ұйымдастырушысы Сізді бастапқы шақырылғандар қатарына "
-#~ "кіргізбеген</item><item>Сіз әлі бастапқы шақыруды қабылдамадыңыз.</"
-#~ "item><item>бастапқы шақыру күнтізбеңізден өшірілген</item><item>шақыру "
-#~ "жазылған күнтізбеге Сіз енді қатынай алмайсыз</item></list></"
-#~ "para><para>Жағдайда ешбір қиыншылық жоқ, бірақ бұны Сіз білген жөн.</para>"
 
 #, fuzzy
 #~| msgid "[Check my calendar] "

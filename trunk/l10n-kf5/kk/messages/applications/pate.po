@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-05 07:41+0000\n"
+"POT-Creation-Date: 2014-11-30 07:45+0000\n"
 "PO-Revision-Date: 2013-11-19 03:45+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,10 +27,20 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
+#: src/engine.cpp:209
+msgctxt "@info:tooltip "
+msgid "Cannot load built-in <icode>pate</icode> module"
+msgstr "Құрамындағы <icode>pate</icode> модулі жүктелмеді"
+
 #: src/engine.cpp:225
 msgctxt "@info:tooltip "
 msgid "Cannot update Python paths"
 msgstr "Python жолдары жаңартылмады"
+
+#: src/engine.cpp:241
+msgctxt "@info:tooltip "
+msgid "No <icode>pate</icode> built-in module"
+msgstr "Құрамындағы <icode>pate</icode> модулі жоқ"
 
 #: src/engine.cpp:297
 msgctxt "@title:column"
@@ -42,9 +52,82 @@ msgctxt "@title:column"
 msgid "Comment"
 msgstr "Түсініктеме"
 
+#: src/engine.cpp:462
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Unable to find the module specified <application>%1</application>"
+msgstr "<application>%1</application> келтірген модулі табылмады"
+
+#: src/engine.cpp:486
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"<p>Specified version has invalid format for dependency <application>%1</"
+"application>: <icode>%2</icode>. Skipped</p>"
+msgstr ""
+
+#: src/engine.cpp:557
+msgctxt "@info:tooltip"
+msgid "<title>Dependency check</title>"
+msgstr ""
+
+#: src/engine.cpp:593
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"<p>Failed to check version of dependency <application>%1</application>: "
+"Module do not have PEP396 <code>__version__</code> attribute. It is not "
+"disabled, but behaviour is unpredictable...</p>"
+msgstr ""
+
+#: src/engine.cpp:613
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "<application>%1</application> Errors:"
+msgctxt "@info:tooltip"
+msgid "<p><application>%1</application>: Unexpected module's version format"
+msgstr "<application>%1</application> Қателері:"
+
+#: src/engine.cpp:628
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "<application>%1</application> Errors:"
+msgctxt "@info:tooltip"
+msgid ""
+"<p><application>%1</application>: No suitable version found. Required "
+"version %2 %3, but found %4</p>"
+msgstr "<application>%1</application> Қателері:"
+
+#: src/engine.cpp:645
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Unable to find the module specified <application>%1</application>"
+msgctxt "@info:tooltip"
+msgid ""
+"<p>Failure on module load <application>%1</application>:</p><pre>%3</pre>"
+msgstr "<application>%1</application> келтірген модулі табылмады"
+
 #: src/engine.cpp:736
 msgctxt "@info:tooltip"
 msgid "Internal engine failure"
+msgstr ""
+
+#: src/engine.cpp:742
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Module not loaded:<nl/>%1"
+msgstr "Модуль жүктелмеді:<nl/>%1"
+
+#: src/kate/decorators.py:223
+msgctxt "@title:window"
+msgid "Error in action <icode>%1</icode>"
+msgstr "<icode>%1</icode> амалында қате"
+
+#: src/kate/decorators.py:310
+msgctxt "@info:tooltip"
+msgid ""
+"Invalid <filename>%1</filename> file: No action with name <icode>%2</icode> "
+"defined"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, errorLabel)
@@ -97,6 +180,11 @@ msgstr "Python плагиндерінің Pâté хосты"
 #: src/plugin.cpp:318
 msgid "About Pate"
 msgstr ""
+
+#: src/plugin.cpp:333
+msgctxt "@info:tooltip "
+msgid "Cannot load <icode>kate</icode> module"
+msgstr "<icode>kate</icode> модулі жүктелмеді"
 
 #: src/plugin.cpp:369
 #, kde-format
@@ -1530,45 +1618,6 @@ msgstr "&XML"
 #: src/ui.rc:12
 msgid "&Help"
 msgstr "&Көмек"
-
-#~ msgctxt "@info:tooltip "
-#~ msgid "Cannot load built-in <icode>pate</icode> module"
-#~ msgstr "Құрамындағы <icode>pate</icode> модулі жүктелмеді"
-
-#~ msgctxt "@info:tooltip "
-#~ msgid "No <icode>pate</icode> built-in module"
-#~ msgstr "Құрамындағы <icode>pate</icode> модулі жоқ"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Unable to find the module specified <application>%1</application>"
-#~ msgstr "<application>%1</application> келтірген модулі табылмады"
-
-#, fuzzy
-#~| msgctxt "@info:status"
-#~| msgid "<application>%1</application> Errors:"
-#~ msgctxt "@info:tooltip"
-#~ msgid "<p><application>%1</application>: Unexpected module's version format"
-#~ msgstr "<application>%1</application> Қателері:"
-
-#, fuzzy
-#~| msgctxt "@info:tooltip"
-#~| msgid "Unable to find the module specified <application>%1</application>"
-#~ msgctxt "@info:tooltip"
-#~ msgid ""
-#~ "<p>Failure on module load <application>%1</application>:</p><pre>%2</pre>"
-#~ msgstr "<application>%1</application> келтірген модулі табылмады"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Module not loaded:<nl/>%1"
-#~ msgstr "Модуль жүктелмеді:<nl/>%1"
-
-#~ msgctxt "@title:window"
-#~ msgid "Error in action <icode>%1</icode>"
-#~ msgstr "<icode>%1</icode> амалында қате"
-
-#~ msgctxt "@info:tooltip "
-#~ msgid "Cannot load <icode>kate</icode> module"
-#~ msgstr "<icode>kate</icode> модулі жүктелмеді"
 
 #~ msgid "Rescan current document for #colors"
 #~ msgstr "Назардағы құжатта #colors дегенді қайта қарастыру"
