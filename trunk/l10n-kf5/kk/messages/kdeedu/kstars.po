@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-07 07:53+0000\n"
+"POT-Creation-Date: 2015-01-08 07:49+0000\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -553,7 +553,8 @@ msgid "Image"
 msgstr "Кескін"
 
 #. i18n: ectx: property (text), widget (QRadioButton, InfoRadio)
-#: dialogs/addlinkdialog.ui:41
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: dialogs/addlinkdialog.ui:41 ekos/mount.ui:19
 msgid "Information"
 msgstr "Мәлімет"
 
@@ -2592,8 +2593,8 @@ msgid "Solver aborted after %1 second."
 msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғарылды"
 
-#: ekos/align.cpp:709 ekos/capture.cpp:1128 ekos/ekosmanager.cpp:1353
-#: ekos/focus.cpp:1454 ekos/guide.cpp:449
+#: ekos/align.cpp:709 ekos/capture.cpp:1128 ekos/ekosmanager.cpp:1393
+#: ekos/focus.cpp:1454 ekos/guide.cpp:449 ekos/mount.cpp:149
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
@@ -2705,14 +2706,14 @@ msgstr "Биіктік дәлдігінің қатесін есептеу..."
 #, fuzzy, kde-format
 #| msgctxt "A planet transits across the meridian"
 #| msgid "%1 transits"
-msgid "%1 too far west"
+msgid "%1 too far east"
 msgstr "%1 меридианын кешуде"
 
 #: ekos/align.cpp:1103 ekos/align.cpp:1137
 #, fuzzy, kde-format
 #| msgctxt "A planet transits across the meridian"
 #| msgid "%1 transits"
-msgid "%1 too far east"
+msgid "%1 too far west"
 msgstr "%1 меридианын кешуде"
 
 #: ekos/align.cpp:1112 ekos/align.cpp:1123 ekos/align.cpp:1150
@@ -2746,7 +2747,9 @@ msgstr "Кескін URL-лерін жүктеу"
 #. i18n: ectx: property (title), widget (QGroupBox, controlBox)
 #. i18n: ectx: property (title), widget (QGroupBox, controlGroup)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_Control)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
 #: ekos/align.ui:21 ekos/focus.ui:176 ekos/guide/guider.ui:597
+#: ekos/mount.ui:220
 msgid "Control"
 msgstr "Басқару"
 
@@ -2821,15 +2824,15 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_15)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_12)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (text), widget (QCheckBox, raCheckBatch)
-#. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QCheckBox, RACheckBatch)
-#: ekos/align.ui:253 ekos/align.ui:536 ekos/align.ui:609 tools/altvstime.ui:97
-#: tools/argsetradec.ui:37 tools/argsettargetcoordindi.ui:38
-#: tools/modcalcgalcoord.ui:288 tools/modcalcplanets.ui:202
-#: tools/modcalcvlsr.ui:508
+#: ekos/align.ui:253 ekos/align.ui:536 ekos/align.ui:609 ekos/mount.ui:80
+#: tools/altvstime.ui:97 tools/argsetradec.ui:37
+#: tools/argsettargetcoordindi.ui:38 tools/modcalcgalcoord.ui:288
+#: tools/modcalcplanets.ui:202 tools/modcalcvlsr.ui:508
 msgid "RA:"
 msgstr "ТК:"
 
@@ -2954,7 +2957,8 @@ msgstr "ШӨР:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: ekos/align.ui:529 ekos/align.ui:623
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: ekos/align.ui:529 ekos/align.ui:623 ekos/mount.ui:94
 msgid "DEC:"
 msgstr "ЕҢС:"
 
@@ -3292,7 +3296,7 @@ msgstr "Сілтемені өзгерту..."
 #. i18n: ectx: property (title), widget (QGroupBox, ccdGroup)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayCCDAlarm)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture.ui:39 ekos/ekosmanager.cpp:1383 ekos/focus.ui:21
+#: ekos/capture.ui:39 ekos/ekosmanager.cpp:1426 ekos/focus.ui:21
 #: ekos/opsekos.ui:156 ekos/opsekos.ui:235
 msgid "CCD"
 msgstr "CCD"
@@ -3670,51 +3674,51 @@ msgstr "/"
 msgid "completed"
 msgstr "түсірілген"
 
-#: ekos/ekosmanager.cpp:142
+#: ekos/ekosmanager.cpp:144
 msgid "Cannot switch modes while INDI services are running."
 msgstr ""
 
-#: ekos/ekosmanager.cpp:142
+#: ekos/ekosmanager.cpp:144
 #, fuzzy
 #| msgid "Focus Mode"
 msgid "Ekos Mode"
 msgstr "Тоғыстау әдісі"
 
 #. i18n: ectx: property (text), widget (QPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:325 ekos/ekosmanager.cpp:789 ekos/ekosmanager.ui:237
+#: ekos/ekosmanager.cpp:328 ekos/ekosmanager.cpp:804 ekos/ekosmanager.ui:237
 msgid "Start INDI"
 msgstr "INDI жұмысын бастау"
 
-#: ekos/ekosmanager.cpp:531
+#: ekos/ekosmanager.cpp:534
 msgid "Ekos requires at least one CCD or Guider to operate."
 msgstr "Ekos істеу үшін кемінде бір CCD не дәлдегішті керек қылады."
 
-#: ekos/ekosmanager.cpp:595
+#: ekos/ekosmanager.cpp:598
 msgid ""
 "Ekos detected an instance of INDI server running. Do you wish to shut down "
 "the existing instance before starting a new one?"
 msgstr ""
 
-#: ekos/ekosmanager.cpp:596
+#: ekos/ekosmanager.cpp:599
 #, fuzzy
 #| msgid "INDI Server:"
 msgid "INDI Server"
 msgstr "INDI сервері:"
 
-#: ekos/ekosmanager.cpp:611
+#: ekos/ekosmanager.cpp:614
 msgid "INDI services started. Please connect devices."
 msgstr "INDI қызметі басталды. Құрылғыларды қосыңыз."
 
-#: ekos/ekosmanager.cpp:624
+#: ekos/ekosmanager.cpp:627
 #, kde-format
 msgid "INDI services started. Connection to %1 at %2 is successful."
 msgstr "INDI қызметі басталды. %2 дегендегі %1 құрылғысы сәтті қосылды."
 
-#: ekos/ekosmanager.cpp:634
+#: ekos/ekosmanager.cpp:637
 msgid "Stop INDI"
 msgstr "INDI-ні тоқтату"
 
-#: ekos/ekosmanager.cpp:647
+#: ekos/ekosmanager.cpp:650
 #, fuzzy, kde-format
 #| msgid "Unable to completely establish remote devices. %1 device remaining."
 #| msgid_plural ""
@@ -3727,61 +3731,67 @@ msgid_plural ""
 "ensure remote device name corresponds to actual device name."
 msgstr[0] "Қашықтағы құрылғылар толығымен орнатылған жоқ. %1 құрылғылар қалды."
 
-#: ekos/ekosmanager.cpp:703
+#: ekos/ekosmanager.cpp:711
 msgid "Connecting INDI devices..."
 msgstr "INDI құрылғылармен байланысу..."
 
-#: ekos/ekosmanager.cpp:756
+#: ekos/ekosmanager.cpp:771
 msgid "Disconnecting INDI devices..."
 msgstr "INDI құрылғыларды ажырату."
 
-#: ekos/ekosmanager.cpp:795
+#: ekos/ekosmanager.cpp:810
 msgid "INDI services stopped."
 msgstr "INDI қызметтері тоқталды."
 
-#: ekos/ekosmanager.cpp:932
+#: ekos/ekosmanager.cpp:947
 msgid "Remote devices established. Please connect devices."
 msgstr "Қашықтағы құрылғылар орнатылған. Құрылғыларды қосыңыз."
 
-#: ekos/ekosmanager.cpp:1022 ekos/ekosmanager.cpp:1063
-#: ekos/ekosmanager.cpp:1082 indi/indistd.cpp:409
+#: ekos/ekosmanager.cpp:1037 ekos/ekosmanager.cpp:1082
+#: ekos/ekosmanager.cpp:1101 indi/indistd.cpp:409
 #, kde-format
 msgid "%1 is online."
 msgstr "%1 байланыста."
 
-#: ekos/ekosmanager.cpp:1109
+#: ekos/ekosmanager.cpp:1128
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 filter is online."
 msgstr "%1 байланыста."
 
-#: ekos/ekosmanager.cpp:1131
+#: ekos/ekosmanager.cpp:1150
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 focuser is online."
 msgstr "%1 байланыста."
 
-#: ekos/ekosmanager.cpp:1151
+#: ekos/ekosmanager.cpp:1170
 #, kde-format
 msgid "%1 is offline."
 msgstr "%1 желіден тыс."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayAlignmentAlarm)
-#: ekos/ekosmanager.cpp:1403 ekos/opsekos.ui:195
+#: ekos/ekosmanager.cpp:1446 ekos/opsekos.ui:195
 msgid "Alignment"
 msgstr "Дәлдеу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayFocusAlarm)
-#: ekos/ekosmanager.cpp:1414 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:242
+#: ekos/ekosmanager.cpp:1457 ekos/opsekos.ui:169 fitsviewer/fitsviewer.cpp:242
 msgid "Focus"
 msgstr "Көздегені"
 
+#: ekos/ekosmanager.cpp:1481
+#, fuzzy
+#| msgid "Count"
+msgid "Mount"
+msgstr "Саны:"
+
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PlayGuideAlarm)
-#: ekos/ekosmanager.cpp:1443 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:246
+#: ekos/ekosmanager.cpp:1496 ekos/opsekos.ui:182 fitsviewer/fitsviewer.cpp:246
 msgid "Guide"
 msgstr "Бағыттамасы"
 
-#: ekos/ekosmanager.cpp:1482
+#: ekos/ekosmanager.cpp:1535
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr "%1 дегеннін дәлдегіш порты дайын."
@@ -3892,14 +3902,14 @@ msgid "Disconnect"
 msgstr "Ажырату"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableLoggingCheck)
-#: ekos/ekosmanager.ui:327
+#: ekos/ekosmanager.ui:340
 msgid "Enable logging"
 msgstr "Журнал жүргізілсін"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearB)
 #. i18n: ectx: property (text), widget (QPushButton, ClearButton)
 #. i18n: ectx: property (text), widget (QPushButton, Clear)
-#: ekos/ekosmanager.ui:350 indi/guimanager.cpp:68 indi/indimenu.cpp:72
+#: ekos/ekosmanager.ui:363 indi/guimanager.cpp:68 indi/indimenu.cpp:72
 #: tools/conjunctions.ui:211 tools/modcalcgeod.ui:160
 msgid "Clear"
 msgstr "Тазалау"
@@ -4714,6 +4724,75 @@ msgstr "Бұрыш-торы"
 msgid "Auto mode"
 msgstr "Авто режімі"
 
+#: ekos/mount.cpp:108
+#, kde-format
+msgid "%1 guide scope"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, primaryScopeGroup)
+#: ekos/mount.ui:25
+#, fuzzy
+#| msgid "Save Telescope"
+msgid "Primary Telescope"
+msgstr "Телескоп мәліметін сақтау"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ekos/mount.ui:36 ekos/mount.ui:150
+#, fuzzy
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Aperture (mm)"
+msgid "Aperture (mm):"
+msgstr "Апертура (мм)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ekos/mount.ui:56 ekos/mount.ui:170
+#, fuzzy
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Focal Length (mm)"
+msgid "Focal Length (mm)"
+msgstr "Тоғыс қашықтығы (мм):"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: ekos/mount.ui:111 tools/argsetaltaz.ui:30 tools/modcalcplanets.ui:245
+msgid "Az:"
+msgstr "Азим.:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ekos/mount.ui:125 tools/argsetaltaz.ui:37 tools/modcalcplanets.ui:238
+msgid "Alt:"
+msgstr "Биік.:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, guideScopeGroup)
+#: ekos/mount.ui:144
+#, fuzzy
+#| msgid "Save Telescope"
+msgid "Guide Telescope"
+msgstr "Телескоп мәліметін сақтау"
+
+#. i18n: ectx: property (text), widget (QPushButton, saveB)
+#. i18n: ectx: property (text), widget (QPushButton, SaveImage)
+#: ekos/mount.ui:195 imageviewer.cpp:133 tools/observinglist.ui:580
+msgid "Save"
+msgstr "Сақтау"
+
+#. i18n: ectx: property (toolTip), widget (QDial, mountSpeedDial)
+#: ekos/mount.ui:351
+#, fuzzy
+#| msgid "Adjust time step"
+msgid "Adjust slew speed"
+msgstr "Уақыт қадамынын таңдау"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ekos/mount.ui:360 tools/argsetfocusspeedindi.ui:30
+msgid "Speed:"
+msgstr "Жылдамдығы:"
+
 #: ekos/offlineastrometryparser.cpp:63
 msgid ""
 "Failed to find astrometry.net binaries. Please ensure astrometry.net is "
@@ -5480,11 +5559,6 @@ msgid ""
 msgstr ""
 "Кескінің түстерін терістеу. Кейбірде контрастығын жоғарлатуға ыңғайлы. "
 "Сақталмайды, көрсетуге ғана әсер етеді."
-
-#. i18n: ectx: property (text), widget (QPushButton, SaveImage)
-#: imageviewer.cpp:133 tools/observinglist.ui:580
-msgid "Save"
-msgstr "Сақтау"
 
 #: imageviewer.cpp:134
 msgid "Save the image to disk"
@@ -22605,18 +22679,6 @@ msgstr "Жұлдыз картасының түстері"
 msgid "Action:"
 msgstr "Әрекеті:"
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: tools/argsetaltaz.ui:30 tools/modcalcplanets.ui:245
-msgid "Az:"
-msgstr "Азим.:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: tools/argsetaltaz.ui:37 tools/modcalcplanets.ui:238
-msgid "Alt:"
-msgstr "Биік.:"
-
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: tools/argsetccdtempindi.ui:30
 msgid "Temp:"
@@ -22631,11 +22693,6 @@ msgstr "Түстің атауы:"
 #: tools/argsetcolor.ui:37
 msgid "Color value:"
 msgstr "Түсі:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: tools/argsetfocusspeedindi.ui:30
-msgid "Speed:"
-msgstr "Жылдамдығы:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: tools/argsetfocustimeoutindi.ui:30
