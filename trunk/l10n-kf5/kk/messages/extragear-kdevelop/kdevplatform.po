@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-07 07:49+0000\n"
+"POT-Creation-Date: 2015-01-09 08:21+0000\n"
 "PO-Revision-Date: 2013-11-20 06:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -57,6 +57,13 @@ msgstr "кезекте"
 msgctxt "@info:tooltip"
 msgid "Clean"
 msgstr "тапсырылған"
+
+#: debugger/breakpoint/breakpoint.cpp:198
+#, fuzzy, kde-format
+#| msgid "%1 (%2 Filtered)"
+msgctxt "location (address)"
+msgid "%1 (%2)"
+msgstr "%1 (%2 сүзгіленген)"
 
 #: debugger/breakpoint/breakpointdetails.cpp:56
 #: debugger/breakpoint/breakpointdetails.cpp:133
@@ -265,6 +272,20 @@ msgstr ""
 #: debugger/framestack/framestackwidget.cpp:97
 msgid "Threads:"
 msgstr "Ағындары:"
+
+#: debugger/framestack/framestackwidget.cpp:218
+#, fuzzy, kde-format
+#| msgctxt "#thread-id at function-name or address"
+#| msgid "#%1 at %2"
+msgctxt "#frame function() at file"
+msgid "#%1 %2() at %3\n"
+msgstr "%2 дегендегі #%1"
+
+#: debugger/framestack/framestackwidget.cpp:220
+#, kde-format
+msgctxt "#frame function() at file:line"
+msgid "#%1 %2() at %3:%4\n"
+msgstr ""
 
 #: debugger/interfaces/ibreakpointcontroller.cpp:86
 #, kde-format
@@ -513,12 +534,12 @@ msgstr "%1 сеансын иемдеу жаңылысы"
 msgid "Rename file from \"%1\" to \"%2\"."
 msgstr ""
 
-#: language/backgroundparser/backgroundparser.cpp:207
+#: language/backgroundparser/backgroundparser.cpp:206
 #, kde-format
 msgid "Parsing: %1"
 msgstr ""
 
-#: language/backgroundparser/backgroundparser.cpp:498
+#: language/backgroundparser/backgroundparser.cpp:494
 #: shell/settings/bgpreferences.cpp:81
 msgid "Background Parser"
 msgstr "Қатар істейтін синтаксис талдағышы"
@@ -557,6 +578,12 @@ msgstr "Рұқсатар жетпегеннен файл дискіден оқы
 msgid "Process 1 file in %2"
 msgid_plural "Process %1 files in %2"
 msgstr[0] "%2 дегендегі %1 файлды өңдеу"
+
+#: language/codecompletion/codecompletionitem.cpp:122
+#, fuzzy
+#| msgid "create implementation"
+msgid "not implemented"
+msgstr "іске асыру кодын жасау"
 
 #: language/codegen/basicrefactoring.cpp:107
 #, kde-format
@@ -639,6 +666,12 @@ msgstr ""
 msgid "Could not find an open document"
 msgstr "Ашылған құжат табылмады"
 
+#: language/codegen/codegenerator.cpp:154
+#, fuzzy, kde-format
+#| msgid "Could not find an open document"
+msgid "Could not find the chain for the selected document: %1"
+msgstr "Ашылған құжат табылмады"
+
 #: language/codegen/codegenerator.cpp:174
 msgid "Error finding context for selection range"
 msgstr "Таңдау ауықымының контекстін табу қатесі"
@@ -663,6 +696,39 @@ msgstr "Кодты жасап шығару қатесі: %1"
 msgid "Could not rename '%1' to '%2'"
 msgstr "'%1' деген '%2' деп өзгертілмеді"
 
+#: language/codegen/documentchangeset.cpp:319
+#, kde-format
+msgid ""
+"Inconsistent change in %1 at %2:%3 -> %4:%5 = %6(encountered \"%7\") -> "
+"\"%8\""
+msgstr ""
+
+#: language/codegen/documentchangeset.cpp:342
+#, fuzzy, kde-format
+#| msgid "Could not create the directory: %1"
+msgid "Could not replace text in the document: %1"
+msgstr "Каталогы құрылмады: %1"
+
+#: language/codegen/documentchangeset.cpp:444
+#, kde-format
+msgid ""
+"Inconsistent change in %1 at %2:%3 -> %4:%5 = \"%6\"(encountered \"%7\") -> "
+"\"%8\""
+msgstr ""
+
+#: language/codegen/documentchangeset.cpp:480
+#, kde-format
+msgctxt "text range line:column->line:column"
+msgid "%1:%2->%3:%4"
+msgstr ""
+
+#: language/codegen/documentchangeset.cpp:523
+#, kde-format
+msgid ""
+"Inconsistent change-request at %1; intersecting changes: \"%2\"->\"%3\"@%4 & "
+"\"%5\"->\"%6\"@%7 "
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, RefactoringDialog)
 #: language/codegen/progressdialogs/refactoringdialog.ui:14
 #, fuzzy
@@ -675,10 +741,46 @@ msgstr "Қайта құрылымдау"
 msgid "&Abort"
 msgstr ""
 
+#: language/duchain/aliasdeclaration.cpp:58
+#, fuzzy, kde-format
+#| msgctxt "#thread-id at function-name or address"
+#| msgid "#%1 at %2"
+msgid "Alias %1 as %2"
+msgstr "%2 дегендегі #%1"
+
+#: language/duchain/aliasdeclaration.cpp:60
+#, kde-format
+msgid "Lost alias %1"
+msgstr ""
+
+#: language/duchain/classfunctiondeclaration.cpp:98
+#, kde-format
+msgid "invalid member-function %1 type %2"
+msgstr ""
+
+#: language/duchain/declarationid.cpp:206
+msgid "(unknown direct declaration)"
+msgstr ""
+
+#: language/duchain/declarationid.cpp:209
+msgid "(missing)"
+msgstr ""
+
 #: language/duchain/forwarddeclaration.cpp:61
 #, kde-format
 msgid "context-free forward-declaration %1"
 msgstr "контекстсіз алдын-ала %1 мәлімдемесі"
+
+#: language/duchain/namespacealiasdeclaration.cpp:107
+#, kde-format
+msgid "Import %1 as %2"
+msgstr ""
+
+#: language/duchain/namespacealiasdeclaration.cpp:109
+#, fuzzy, kde-format
+#| msgid "Import"
+msgid "Import %1"
+msgstr "Импорттау"
 
 #: language/duchain/navigation/abstractdeclarationnavigationcontext.cpp:74
 msgid "<br /> lost declaration <br />"
@@ -1050,6 +1152,16 @@ msgstr ""
 msgid "Unknown"
 msgstr "Беймәлім"
 
+#: language/duchain/problem.cpp:215
+#, kde-format
+msgctxt "problem description"
+msgid "%1: %2 in %3:[(%4,%5),(%6,%7)]: %8 (found by %9)"
+msgstr ""
+
+#: language/duchain/problem.cpp:223
+msgid "<no explanation>"
+msgstr ""
+
 #: language/duchain/types/containertypes.cpp:87
 #, kde-format
 msgid "%1 of %2"
@@ -1087,85 +1199,85 @@ msgstr "жасаған лексема ағынды шығару"
 msgid "code to parse"
 msgstr "талдайтын код"
 
-#: outputview/outputexecutejob.cpp:175
+#: outputview/outputexecutejob.cpp:176
 msgid "No build directory specified for a builder job."
 msgstr "Құрастыру тапсырмаға құрастыру қапшығы келтірілмеген."
 
-#: outputview/outputexecutejob.cpp:177
+#: outputview/outputexecutejob.cpp:178
 msgid "No working directory specified for a process."
 msgstr "Процестің жұмыс қапшығы келтірілмеген."
 
-#: outputview/outputexecutejob.cpp:188
+#: outputview/outputexecutejob.cpp:189
 #, kde-format
 msgid "Invalid build directory '%1'"
 msgstr "Жарамсыз құрастыру каталогы '%1'"
 
-#: outputview/outputexecutejob.cpp:190
+#: outputview/outputexecutejob.cpp:191
 #, kde-format
 msgid "Invalid working directory '%1'"
 msgstr "Жарамсыз жұмыс қапшығы '%1'"
 
-#: outputview/outputexecutejob.cpp:196
+#: outputview/outputexecutejob.cpp:197
 #, kde-format
 msgid "Build directory '%1' is not a local path"
 msgstr "%1 құрастыру қапшығы жергілікті емес"
 
-#: outputview/outputexecutejob.cpp:198
+#: outputview/outputexecutejob.cpp:199
 #, kde-format
 msgid "Working directory '%1' is not a local path"
 msgstr "%1 жұмыс қапшығы жергілікті емес"
 
-#: outputview/outputexecutejob.cpp:216
+#: outputview/outputexecutejob.cpp:217
 #, kde-format
 msgid "Build directory '%1' does not exist or is not a directory"
 msgstr "'%1 деген құрастыру қапшық жоқ немесе ол қапшық емес"
 
-#: outputview/outputexecutejob.cpp:218
+#: outputview/outputexecutejob.cpp:219
 #, kde-format
 msgid "Working directory '%1' does not exist or is not a directory"
 msgstr "'%1 деген жұмыс қапшық жоқ немесе ол қапшық емес"
 
-#: outputview/outputexecutejob.cpp:285
+#: outputview/outputexecutejob.cpp:286
 msgid "*** Aborted ***"
 msgstr "*** Доғарылды ***"
 
-#: outputview/outputexecutejob.cpp:288
+#: outputview/outputexecutejob.cpp:289
 msgid "*** Warning: could not kill the process ***"
 msgstr "***Ескерту: Процес құртылмады ***"
 
-#: outputview/outputexecutejob.cpp:304
+#: outputview/outputexecutejob.cpp:305
 #, kde-format
 msgid "%1 has failed to start"
 msgstr "%1 бастау жаңылысы"
 
-#: outputview/outputexecutejob.cpp:308
+#: outputview/outputexecutejob.cpp:309
 #, kde-format
 msgid "%1 has crashed"
 msgstr "%1 қирады"
 
-#: outputview/outputexecutejob.cpp:312
+#: outputview/outputexecutejob.cpp:313
 msgid "Read error"
 msgstr "Оқу қатесі"
 
-#: outputview/outputexecutejob.cpp:316
+#: outputview/outputexecutejob.cpp:317
 msgid "Write error"
 msgstr "Жазу қатесі"
 
-#: outputview/outputexecutejob.cpp:320
+#: outputview/outputexecutejob.cpp:321
 msgid "Waiting for the process has timed out"
 msgstr "Процесті күту уақыты бітті"
 
-#: outputview/outputexecutejob.cpp:325
+#: outputview/outputexecutejob.cpp:326
 #, kde-format
 msgid "Exit code %1"
 msgstr "%1 шығу коды"
 
-#: outputview/outputexecutejob.cpp:338
+#: outputview/outputexecutejob.cpp:339
 #, kde-format
 msgid "*** Failure: %1 ***"
 msgstr "*** Жаңылыс: %1 ***"
 
-#: outputview/outputexecutejob.cpp:354
+#: outputview/outputexecutejob.cpp:355
 msgid "*** Finished ***"
 msgstr "*** Аяқталды ***"
 
@@ -3884,41 +3996,41 @@ msgstr "Оң жақ батырмалар панелі"
 msgid "Bottom Button Bar"
 msgstr "Төменгі батырмалар панелі"
 
-#: util/duchainify/main.cpp:259
+#: util/duchainify/main.cpp:258
 msgid "duchainify"
 msgstr "duchainify"
 
-#: util/duchainify/main.cpp:260
+#: util/duchainify/main.cpp:259
 #, fuzzy
 #| msgid "Duchain builder application"
 msgid "DUChain builder application"
 msgstr "Анықтама-пайдалану тізбегін (duchain) құру бағдарламасы"
 
-#: util/duchainify/main.cpp:261
+#: util/duchainify/main.cpp:260
 msgid "(c) 2009 David Nolden"
 msgstr "(c) 2009 David Nolden"
 
-#: util/duchainify/main.cpp:272
+#: util/duchainify/main.cpp:271
 #, fuzzy
 #| msgid "directory"
 msgid "file or directory"
 msgstr "каталог"
 
-#: util/duchainify/main.cpp:274
+#: util/duchainify/main.cpp:273
 msgid "Show warnings"
 msgstr "Ескертулерді көрсету"
 
-#: util/duchainify/main.cpp:275
+#: util/duchainify/main.cpp:274
 msgid "Show warnings and debug output"
 msgstr "Ескертулер мен жөндеу шығысын көрсету"
 
-#: util/duchainify/main.cpp:276
+#: util/duchainify/main.cpp:275
 msgid "Enforce an update of the top-contexts corresponding to the given files"
 msgstr ""
 "Келтірілген файлдарға сәйкесті жоғарғы деңгейлі контексттерін мәжбүрлеп "
 "жаңарту"
 
-#: util/duchainify/main.cpp:277
+#: util/duchainify/main.cpp:276
 msgid ""
 "Enforce an update of the top-contexts corresponding to the given files and "
 "all included files"
@@ -3926,11 +4038,11 @@ msgstr ""
 "Келтірілген файлдарға және бүкіл кірме файлдарына сәйкесті жоғарғы деңгейлі "
 "контексттерін мәжбүрлеп жаңарту"
 
-#: util/duchainify/main.cpp:278
+#: util/duchainify/main.cpp:277
 msgid "Number of threads to use"
 msgstr "Қолданатын ағындар саны"
 
-#: util/duchainify/main.cpp:279
+#: util/duchainify/main.cpp:278
 msgid ""
 "Features to build. Options: empty, simplified-visible-declarations, visible-"
 "declarations (default), all-declarations, all-declarations-and-uses, all-"
@@ -3940,28 +4052,28 @@ msgstr ""
 "visible-declarations (әдеттісі), all-declarations, all-declarations-and-"
 "uses, all-declarations-and-uses-and-AST"
 
-#: util/duchainify/main.cpp:281
+#: util/duchainify/main.cpp:280
 msgid "Print complete Definition-Use Chain on successful parse"
 msgstr ""
 
-#: util/duchainify/main.cpp:282
+#: util/duchainify/main.cpp:281
 msgid "Print complete DUChain Definitions repository on successful parse"
 msgstr ""
 
-#: util/duchainify/main.cpp:283
+#: util/duchainify/main.cpp:282
 msgid ""
 "Print complete DUChain PersistentSymbolTable repository on successful parse"
 msgstr ""
 
-#: util/duchainify/main.cpp:284
+#: util/duchainify/main.cpp:283
 msgid "Number defining the maximum depth where declaration details are printed"
 msgstr ""
 
-#: util/duchainify/main.cpp:285
+#: util/duchainify/main.cpp:284
 msgid "Dump DUChain graph (in .dot format)"
 msgstr ""
 
-#: util/duchainify/main.cpp:286
+#: util/duchainify/main.cpp:285
 msgid "Print problems encountered during parsing"
 msgstr "Талдау кезде шығыс мәселелер тап болды"
 
@@ -4657,9 +4769,6 @@ msgstr "Журнал көрінісі"
 #~ msgid "directory where to put the code output"
 #~ msgstr "шығыс кодын салатын каталогы"
 
-#~ msgid "create implementation"
-#~ msgstr "іске асыру кодын жасау"
-
 #~ msgid "Verbose output"
 #~ msgstr "Егжей-тегжейлі шығыс"
 
@@ -4714,11 +4823,6 @@ msgstr "Журнал көрінісі"
 
 #~ msgid "Unable to load the project file %1"
 #~ msgstr "%1 жоба файлы жүктелмеді"
-
-#, fuzzy
-#~| msgid "%1 (%2 Filtered)"
-#~ msgid "%1 (%2 hidden)"
-#~ msgstr "%1 (%2 сүзгіленген)"
 
 #~ msgid "Events:"
 #~ msgstr "Оқиғалар:"
