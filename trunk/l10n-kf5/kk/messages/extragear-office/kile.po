@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-26 07:48+0000\n"
+"POT-Creation-Date: 2015-02-08 08:41+0000\n"
 "PO-Revision-Date: 2013-11-18 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -163,15 +163,15 @@ msgstr "&Қысқармасы:"
 msgid "&Expanded Text:"
 msgstr "&Тарқатылған мәтін:"
 
-#: dialogs/cleandialog.cpp:41
+#: dialogs/cleandialog.cpp:39
 msgid "Delete Files"
 msgstr "Файлдарды өшіру"
 
-#: dialogs/cleandialog.cpp:77
+#: dialogs/cleandialog.cpp:62
 msgid "Do you really want to delete these files?"
 msgstr "Шынымен осы файлдарды өшіргіңіз келе ме?"
 
-#: dialogs/cleandialog.cpp:85 dialogs/listselector.cpp:80
+#: dialogs/cleandialog.cpp:70 dialogs/listselector.cpp:80
 msgid "Files"
 msgstr "Файлдар"
 
@@ -393,8 +393,8 @@ msgstr "Құрылым көрінісі"
 msgid "Symbol View"
 msgstr "Символды көрініс"
 
-#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:81
-#: kileproject.cpp:476
+#: dialogs/findfilesdialog.cpp:114 dialogs/projectdialogs.cpp:62
+#: kileproject.cpp:471
 msgid "Project"
 msgstr "Жоба"
 
@@ -456,7 +456,7 @@ msgstr "Сілтеме"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: dialogs/findfilesdialog.cpp:172 dialogs/includegraphicsdialog_base.ui:17
-#: dialogs/projectdialogs.cpp:271
+#: dialogs/projectdialogs.cpp:231
 msgid "File"
 msgstr "Файл"
 
@@ -1440,7 +1440,8 @@ msgstr "Математикалық айналасы"
 msgid "Without n&umbering:"
 msgstr "Н&өмірлеусіз:"
 
-#: dialogs/mathenvironmentdialog.cpp:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: dialogs/mathenvironmentdialog.cpp:61 dialogs/tabbingdialog_base.ui:45
 msgid "Number of &rows:"
 msgstr "Ж&олдар саны:"
 
@@ -2060,7 +2061,7 @@ msgid "Background:"
 msgstr "&Ая түсі:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_tbProperties)
-#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:481
+#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:420
 #: widgets/previewconfigwidget.cpp:118
 msgid "Properties"
 msgstr "Қасиеттері"
@@ -2369,11 +2370,15 @@ msgstr "ps файлын 'okular' көрсетсін"
 msgid "When you want to copy pages, you must enter the number of copies"
 msgstr "Егер көшірмелеуді қаласаңыз, қанша көшірме керегін келтіру керек"
 
-#: dialogs/projectdialogs.cpp:89
+#: dialogs/projectdialogs.cpp:63
+msgid "Extensions"
+msgstr "Жұрнақтары"
+
+#: dialogs/projectdialogs.cpp:69
 msgid "Insert a short descriptive name of your project here."
 msgstr "Мұнда жобаңыздың қысқа сипаттамасын келтіріңіз."
 
-#: dialogs/projectdialogs.cpp:90
+#: dialogs/projectdialogs.cpp:70
 msgid ""
 "Insert a list (separated by spaces) of file extensions which should be "
 "treated also as files of the corresponding type in this project."
@@ -2381,76 +2386,72 @@ msgstr ""
 "Осы жобаның сәйкесті түрлі файлдары деп есептейтін файл жұрнақтарын (бос "
 "орынмен бөліктеп) келтіріңіз."
 
-#: dialogs/projectdialogs.cpp:91
+#: dialogs/projectdialogs.cpp:74
+msgid "Project &title:"
+msgstr "Жобаның &атауы:"
+
+#: dialogs/projectdialogs.cpp:87
+msgid "Project &folder:"
+msgstr "Жоба қ&апшығы:"
+
+#: dialogs/projectdialogs.cpp:89
+msgid "Insert the path to your project here."
+msgstr "Жоба қапшығының жолын келтіріңіз."
+
+#: dialogs/projectdialogs.cpp:101
+msgid "(use global settings)"
+msgstr "(жалпы жүйелік баптаулары болсын)"
+
+#: dialogs/projectdialogs.cpp:102
 msgid "Default graphic extension to open when none specified by file name."
 msgstr ""
 "Графика файл атауында келтірілмегенде оны ашу үшін қолданатын әдетті жұрнағы."
 
-#: dialogs/projectdialogs.cpp:95
-msgid "Project &title:"
-msgstr "Жобаның &атауы:"
-
-#: dialogs/projectdialogs.cpp:100
-msgid "Extensions"
-msgstr "Жұрнақтары"
-
-#: dialogs/projectdialogs.cpp:114
-msgid "(use global settings)"
-msgstr "(жалпы жүйелік баптаулары болсын)"
-
-#: dialogs/projectdialogs.cpp:115
-msgid "Default Graphics Extension:"
-msgstr "Әдетті графика жұрнағы:"
-
-#: dialogs/projectdialogs.cpp:123
+#: dialogs/projectdialogs.cpp:113
 msgid "Source Files"
 msgstr "Бастапқы файлдары"
 
-#: dialogs/projectdialogs.cpp:124
+#: dialogs/projectdialogs.cpp:114
 msgid "Package Files"
 msgstr "Десте файлдары"
 
-#: dialogs/projectdialogs.cpp:125
+#: dialogs/projectdialogs.cpp:115
 msgid "Image Files"
 msgstr "Кескін файлдары"
 
-#: dialogs/projectdialogs.cpp:126
+#: dialogs/projectdialogs.cpp:122
+msgid "Default Graphics Extension:"
+msgstr "Әдетті графика жұрнағы:"
+
+#: dialogs/projectdialogs.cpp:124
 msgid "Predefined:"
 msgstr "Анықталғаны:"
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "Error in extension"
 msgstr "Жұрнақ қатесі"
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "All user-defined extensions should look like '.xyz'"
 msgstr ""
 
-#: dialogs/projectdialogs.cpp:175
+#: dialogs/projectdialogs.cpp:156
 msgid "Invalid extension"
 msgstr "Жарамсыз жұрнақ"
 
-#: dialogs/projectdialogs.cpp:241
+#: dialogs/projectdialogs.cpp:221
 msgid "Create New Project"
 msgstr "Жаңа жобаны құру"
 
-#: dialogs/projectdialogs.cpp:260
-msgid "Insert the path to your project here."
-msgstr "Жоба қапшығының жолын келтіріңіз."
-
-#: dialogs/projectdialogs.cpp:262
-msgid "Project &folder:"
-msgstr "Жоба қ&апшығы:"
-
-#: dialogs/projectdialogs.cpp:278
+#: dialogs/projectdialogs.cpp:235
 msgid "Create a new file and add it to this project"
 msgstr "Жаңа файлды құрып жобаға қосу"
 
-#: dialogs/projectdialogs.cpp:280
+#: dialogs/projectdialogs.cpp:237
 msgid "File&name (relative to where the project file is):"
 msgstr "&Файл атауы (жоба қапшықтан өрбіген жолымен):"
 
-#: dialogs/projectdialogs.cpp:287
+#: dialogs/projectdialogs.cpp:244
 msgid ""
 "If you want Kile to create a new file and add it to the project, then check "
 "this option and select a template from the list that will appear below."
@@ -2458,32 +2459,101 @@ msgstr ""
 "Kile-де жаңа файлды құрып жобаға қосу үшін осыны түртіп, төменде шыққан "
 "тізімінен үлгі қалыпын таңдап алу керек."
 
+#: dialogs/projectdialogs.cpp:326
+msgid ""
+"You have not entered a project name. If you decide to proceed, the project "
+"name will be set to \"Untitled\".\n"
+"Do you want to create the project nevertheless?"
+msgstr ""
+"Жобаның атауы келтірілмеген. Жобаның аты \"Аталмаған\" деген болмақ.\n"
+"Бола берсін бе?"
+
+#: dialogs/projectdialogs.cpp:327
+msgid "No Project Name Given"
+msgstr "Жобаға атауы берілмеген"
+
+#: dialogs/projectdialogs.cpp:328 kileviewmanager.cpp:872
+msgid "Untitled"
+msgstr "Аталмаған"
+
+#: dialogs/projectdialogs.cpp:336
+msgid "Please enter the folder where the project file should be saved to."
+msgstr "Жоба қай қапшыққа сақталатынын келтіріңіз."
+
+#: dialogs/projectdialogs.cpp:336
+msgid "Empty Location"
+msgstr "Орны келтірілмеген"
+
+#: dialogs/projectdialogs.cpp:342
+msgid "Please enter an absolute (local) path to the project folder."
+msgstr "Жоба қай қапшыққа (толық атауы) сақталатынын келтіріңіз."
+
+#: dialogs/projectdialogs.cpp:342
+msgid "Invalid Location"
+msgstr "Жарамсыз орын"
+
+#: dialogs/projectdialogs.cpp:354
+msgid "Could not create the project folder, check your permissions."
+msgstr "Жоба қапшығы құрылмады. Рұқсаттарыңызды түгелдеңіз."
+
+#: dialogs/projectdialogs.cpp:360
+msgid "The project folder is not writable, check your permissions."
+msgstr "Жоба қапшығына жазу болмады. Рұқсаттарыңызды түгелдеңіз."
+
+#: dialogs/projectdialogs.cpp:365
+msgid ""
+"The project file already exists, please select another name. Delete the "
+"existing project file if your intention was to overwrite it."
+msgstr "Жоба файлы бар екен. Қайта жазбақ болсаңыз, оны өшіріңіз."
+
+#: dialogs/projectdialogs.cpp:365
+msgid "Project File Already Exists"
+msgstr "Жоба файлы бар екен"
+
+#: dialogs/projectdialogs.cpp:371
+msgid ""
+"Please enter a filename for the file that should be added to this project."
+msgstr "Жобаға қосылатын файлының атауын келтіріңіз."
+
+#: dialogs/projectdialogs.cpp:371
+msgid "No File Name Given"
+msgstr "Файл атауы берілмеген"
+
+#: dialogs/projectdialogs.cpp:385
+#, kde-format
+msgid "The file \"%1\" already exists, overwrite it?"
+msgstr "\"%1\" файлы бар екен. Үстінен жаза берейік пе?"
+
+#: dialogs/projectdialogs.cpp:385 documentinfo.cpp:132
+msgid "File Already Exists"
+msgstr "Файл бар екен"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: dialogs/projectdialogs.cpp:456 widgets/generalconfigwidget.ui:32
+#: dialogs/projectdialogs.cpp:410 widgets/generalconfigwidget.ui:32
 msgid "Project Options"
 msgstr "Жоба параметрлері"
 
-#: dialogs/projectdialogs.cpp:457
+#: dialogs/projectdialogs.cpp:411
 msgid "(use global setting)"
 msgstr "(жалпы жүйеліктері қолданылсын)"
 
-#: dialogs/projectdialogs.cpp:490
+#: dialogs/projectdialogs.cpp:426
 msgid "Select the default master document. Leave empty for auto detection."
 msgstr "Әдетті басты құжатын таңдау. Автоанықтау үшін бос қалдырыңыз."
 
-#: dialogs/projectdialogs.cpp:495
+#: dialogs/projectdialogs.cpp:431
 msgid "&Master document:"
 msgstr "&Басты кұжаты:"
 
-#: dialogs/projectdialogs.cpp:501
+#: dialogs/projectdialogs.cpp:437
 msgid "(auto-detect)"
 msgstr "(авто-анықтау)"
 
-#: dialogs/projectdialogs.cpp:518
+#: dialogs/projectdialogs.cpp:454
 msgid "&QuickBuild configuration:"
 msgstr "&QuickBuild баптауы:"
 
-#: dialogs/projectdialogs.cpp:536
+#: dialogs/projectdialogs.cpp:473
 msgid "&MakeIndex options"
 msgstr "&MakeIndex баптауы"
 
@@ -3419,13 +3489,10 @@ msgstr "'Аталмаған' дегеннің статистикасы"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: dialogs/tabbingdialog_base.ui:28
-msgid "Num of &columns:"
+#, fuzzy
+#| msgid "Num of &columns:"
+msgid "Number of &columns:"
 msgstr "&Бағандар саны:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: dialogs/tabbingdialog_base.ui:45
-msgid "Num of &rows:"
-msgstr "&Жолдар саны:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: dialogs/tabbingdialog_base.ui:62
@@ -4421,10 +4488,6 @@ msgid ""
 msgstr ""
 "Файл аталауында жарамсыз ($~ #) таңбалар бар.<br>Түзеңіз, немесе бола берсін "
 "десеңіз \"Қайту\" дегенді түртіңіз."
-
-#: documentinfo.cpp:132
-msgid "File Already Exists"
-msgstr "Файл бар екен"
 
 #: documentinfo.cpp:133
 #, kde-format
@@ -6250,7 +6313,7 @@ msgstr "BibTeX деректер қорын қосу"
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: kileproject.cpp:483
+#: kileproject.cpp:478
 #, kde-format
 msgid ""
 "The project file of %1 was created by a newer version of kile. Opening it "
@@ -8785,10 +8848,6 @@ msgstr "&Тез қарап-шығу - Айнала"
 msgid "&QuickPreview Math"
 msgstr "&Тез қарап-шығу - Формула"
 
-#: kileviewmanager.cpp:872
-msgid "Untitled"
-msgstr "Аталмаған"
-
 #: kileviewmanager.cpp:974
 msgid "Print Compiled Document..."
 msgstr ""
@@ -10959,6 +11018,9 @@ msgstr ""
 msgid "Show the user menu in the menu bar"
 msgstr ""
 
+#~ msgid "Num of &rows:"
+#~ msgstr "&Жолдар саны:"
+
 #~ msgid "*.png *.jpg *.pdf|Graphics\n"
 #~ msgstr "*.png *.jpg *.pdf|Графика файлдары\n"
 
@@ -10995,53 +11057,6 @@ msgstr ""
 
 #~ msgid "Manage the local completion files in the file manager"
 #~ msgstr "Файл менеджерінде компьютердегі автотолықтыру файлдарды басқару"
-
-#~ msgid ""
-#~ "You have not entered a project name. If you decide to proceed, the "
-#~ "project name will be set to \"Untitled\".\n"
-#~ "Do you want to create the project nevertheless?"
-#~ msgstr ""
-#~ "Жобаның атауы келтірілмеген. Жобаның аты \"Аталмаған\" деген болмақ.\n"
-#~ "Бола берсін бе?"
-
-#~ msgid "No Project Name Given"
-#~ msgstr "Жобаға атауы берілмеген"
-
-#~ msgid "Please enter the folder where the project file should be saved to."
-#~ msgstr "Жоба қай қапшыққа сақталатынын келтіріңіз."
-
-#~ msgid "Empty Location"
-#~ msgstr "Орны келтірілмеген"
-
-#~ msgid "Please enter an absolute (local) path to the project folder."
-#~ msgstr "Жоба қай қапшыққа (толық атауы) сақталатынын келтіріңіз."
-
-#~ msgid "Invalid Location"
-#~ msgstr "Жарамсыз орын"
-
-#~ msgid "Could not create the project folder, check your permissions."
-#~ msgstr "Жоба қапшығы құрылмады. Рұқсаттарыңызды түгелдеңіз."
-
-#~ msgid "The project folder is not writable, check your permissions."
-#~ msgstr "Жоба қапшығына жазу болмады. Рұқсаттарыңызды түгелдеңіз."
-
-#~ msgid ""
-#~ "The project file already exists, please select another name. Delete the "
-#~ "existing project file if your intention was to overwrite it."
-#~ msgstr "Жоба файлы бар екен. Қайта жазбақ болсаңыз, оны өшіріңіз."
-
-#~ msgid "Project File Already Exists"
-#~ msgstr "Жоба файлы бар екен"
-
-#~ msgid ""
-#~ "Please enter a filename for the file that should be added to this project."
-#~ msgstr "Жобаға қосылатын файлының атауын келтіріңіз."
-
-#~ msgid "No File Name Given"
-#~ msgstr "Файл атауы берілмеген"
-
-#~ msgid "The file \"%1\" already exists, overwrite it?"
-#~ msgstr "\"%1\" файлы бар екен. Үстінен жаза берейік пе?"
 
 #~ msgid "This document class already exists."
 #~ msgstr "Бұндай құжат класы бар екен"
