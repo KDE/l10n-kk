@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-09 10:08+0000\n"
+"POT-Creation-Date: 2015-02-10 10:04+0000\n"
 "PO-Revision-Date: 2013-11-08 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -149,10 +149,6 @@ msgstr "Көмекшісі"
 #: contactfields.cpp:171
 msgid "Spouse"
 msgstr "Жұбайы"
-
-#: contactselectiondialog.cpp:32
-msgid "Select Contacts"
-msgstr "Контакттарды таңдау"
 
 #: contactselectionwidget.cpp:111
 msgctxt "@option:radio"
@@ -544,7 +540,7 @@ msgid "Select Contacts to merge"
 msgstr "Контакттарды таңдау"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:66
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:72
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "You must assign at least one column."
@@ -611,10 +607,10 @@ msgstr "Контакттарды таңдау"
 msgid "No contacts selected."
 msgstr "Тек қазір таңдалған қонтакттар"
 
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:58
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:62
 #, fuzzy
 #| msgid "Select Contacts"
-msgid "No duplicated contact found."
+msgid "No contact duplicated found."
 msgstr "Контакттарды таңдау"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:59
@@ -1141,6 +1137,10 @@ msgstr ""
 "Осы өрісте іздейтін контакттың атауын тере бастаңыз - сәйкес келетіндер "
 "тізімі көрсетіледі. Бұл іздеудің ең оңайы."
 
+#: xxport/contactselectiondialog.cpp:34
+msgid "Select Contacts"
+msgstr "Контакттарды таңдау"
+
 #: xxport/csv/csv_xxport.cpp:67 xxport/gmx/gmx_xxport.cpp:370
 #: xxport/ldif/ldif_xxport.cpp:105
 #, kde-format
@@ -1552,27 +1552,22 @@ msgctxt "@info"
 msgid "The vCard does not contain any contacts."
 msgstr "vCard мазмұнында ешқандай контакт жоқ."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:35
-msgctxt "@title:window"
-msgid "Select vCard Fields"
-msgstr "vCard өрістерін таңдау"
-
-#: xxport/vcard/vcardexportselectiondialog.cpp:59
+#: xxport/vcard/vcardexportselectionwidget.cpp:34
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "Экспорттайтын өрістер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:63
+#: xxport/vcard/vcardexportselectionwidget.cpp:38
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Сырлы өрістер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:65
+#: xxport/vcard/vcardexportselectionwidget.cpp:40
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Сырлы өрістері экспортталсын"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:68
+#: xxport/vcard/vcardexportselectionwidget.cpp:43
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
@@ -1581,17 +1576,17 @@ msgstr ""
 "Шығыс vCard файлға контакттың сырлы өрістері экспортталсын десеңіз - осыны "
 "белгілеңіз."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:72
+#: xxport/vcard/vcardexportselectionwidget.cpp:47
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Іскери өрістер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:74
+#: xxport/vcard/vcardexportselectionwidget.cpp:49
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Іскери өрістері экспортталсын "
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:77
+#: xxport/vcard/vcardexportselectionwidget.cpp:52
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
@@ -1600,17 +1595,17 @@ msgstr ""
 "Шығыс vCard файлға контакттың іскери өрістері экспортталсын десеңіз - осыны "
 "белгілеңіз."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:81
+#: xxport/vcard/vcardexportselectionwidget.cpp:56
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Басқа өрістер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:83
+#: xxport/vcard/vcardexportselectionwidget.cpp:58
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Басқа өрістер экспортталсын"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:86
+#: xxport/vcard/vcardexportselectionwidget.cpp:61
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
@@ -1619,17 +1614,17 @@ msgstr ""
 "Шығыс vCard файлға контакттың басқа өрістері экспортталсын десеңіз - осыны "
 "белгілеңіз."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:90
+#: xxport/vcard/vcardexportselectionwidget.cpp:65
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Шифрлау кілттер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:92
+#: xxport/vcard/vcardexportselectionwidget.cpp:67
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Шифрлау кілттері экспортталсын"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:95
+#: xxport/vcard/vcardexportselectionwidget.cpp:70
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
@@ -1638,17 +1633,17 @@ msgstr ""
 "Шығыс vCard файлға контакттың шифрлау кілттері экспортталсын десеңіз - осыны "
 "белгілеңіз."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:99
+#: xxport/vcard/vcardexportselectionwidget.cpp:74
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "Суреттер"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:101
+#: xxport/vcard/vcardexportselectionwidget.cpp:76
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "Суреттер экспортталсын"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:104
+#: xxport/vcard/vcardexportselectionwidget.cpp:79
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
@@ -1657,22 +1652,22 @@ msgstr ""
 "Шығыс vCard файлға контакттың суреттері экспортталсын десеңіз - осыны "
 "белгілеңіз."
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:109
+#: xxport/vcard/vcardexportselectionwidget.cpp:84
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Экспорттау параметрлері"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:113
+#: xxport/vcard/vcardexportselectionwidget.cpp:88
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "Көрсетілген атауы - толық аты"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:115
+#: xxport/vcard/vcardexportselectionwidget.cpp:90
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "Көрсетілген атауы - толық аты деп экспорттау"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:118
+#: xxport/vcard/vcardexportselectionwidget.cpp:93
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
@@ -1683,17 +1678,17 @@ msgstr ""
 "десеңіз - осыны белгілеңіз. Бұл GMail не Android-те атты дұрыс келтіруге "
 "керек."
 
-#: xxport/vcard/vcardviewerdialog.cpp:34
+#: xxport/vcard/vcardviewerdialog.cpp:33
 msgctxt "@title:window"
 msgid "Import vCard"
 msgstr "vCard-ты импорттау"
 
-#: xxport/vcard/vcardviewerdialog.cpp:58
+#: xxport/vcard/vcardviewerdialog.cpp:57
 msgctxt "@info"
 msgid "Do you want to import this contact into your address book?"
 msgstr "Осы контакт адрес кітапшаңызға импортталсын ба?"
 
-#: xxport/vcard/vcardviewerdialog.cpp:68
+#: xxport/vcard/vcardviewerdialog.cpp:67
 msgctxt "@action:button"
 msgid "Import All..."
 msgstr "Бүкілін импорттау..."
@@ -1716,13 +1711,17 @@ msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "%1 контактты %2 дегенге импорттау"
 
-#: xxport/xxportmanager.cpp:184
+#: xxport/xxportmanager.cpp:185
 msgid "Which contact do you want to export?"
 msgstr "Қай контактты экспорттауды қалайсыз?"
 
-#: xxport/xxportmanager.cpp:195
+#: xxport/xxportmanager.cpp:197
 msgid "You have not selected any contacts to export."
 msgstr "Экспорттауға ешбір контакт таңдалмаған."
+
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "vCard өрістерін таңдау"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
