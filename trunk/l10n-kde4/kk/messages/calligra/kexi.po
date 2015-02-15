@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-04 01:39+0000\n"
+"POT-Creation-Date: 2015-02-15 01:47+0000\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -715,7 +715,7 @@ msgstr ""
 "Kexi деректер қоры жобасы."
 
 #: core/kexiguimsghandler.cpp:119 core/kexitextmsghandler.cpp:78
-#: migration/importtablewizard.cpp:354
+#: migration/importtablewizard.cpp:381
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
@@ -3269,12 +3269,12 @@ msgstr "\"%1\" нысанның атауы өзгертілмеді."
 msgid "Setting caption for object \"%1\" failed."
 msgstr "\"%1\" нысанның атауы орнатылмады."
 
-#: main/KexiMainWindow.cpp:3540
+#: main/KexiMainWindow.cpp:3548
 #, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr "Деректер қорының <nobr>\"%1\"</nobr> файлы ықшамдауға келмейді."
 
-#: main/KexiMainWindow.cpp:3552
+#: main/KexiMainWindow.cpp:3560
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -4161,28 +4161,24 @@ msgctxt "donations count"
 msgid "%1 (thanks!)"
 msgstr ""
 
-#: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
+#: migration/AlterSchemaWidget.cpp:54 migration/AlterSchemaWidget.cpp:113
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1281
 #, kde-format
 msgid "Column %1"
 msgstr "%1 бағаны"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: migration/AlterSchemaWidget.cpp:52
+#: migration/AlterSchemaWidget.cpp:55
 #: plugins/tables/kexitabledesignerview.cpp:339
 #: widget/KexiConnectionSelector.ui:99 widget/KexiProjectSelector.ui:96
 msgid "Type"
 msgstr "Түрі"
 
-#: migration/AlterSchemaWidget.cpp:53
+#: migration/AlterSchemaWidget.cpp:56
 #: plugins/tables/kexitabledesignerview.cpp:181
 #: plugins/tables/kexitabledesignerview.cpp:413
 msgid "Primary Key"
 msgstr "Негізгі кілті"
-
-#: migration/AlterSchemaWidget.cpp:54
-msgid "Table Name"
-msgstr "Кестенің атауы"
 
 #: migration/importoptionsdlg.cpp:43
 #, fuzzy
@@ -4215,18 +4211,18 @@ msgstr "Мәтіннің қодтамасы:"
 msgid "Always use this encoding in similar situations"
 msgstr "Ұқсас жағдайларда әрқашан осы қодтама қолданылсын"
 
-#: migration/importtablewizard.cpp:114
+#: migration/importtablewizard.cpp:118
 #, kde-format
 msgid ""
-"<resource>%1</resource> name is already used by an existing object. Enter "
+"<resource>%1</resource> name is already used by an existing table. Enter "
 "different table name to continue."
 msgstr ""
 
-#: migration/importtablewizard.cpp:116
+#: migration/importtablewizard.cpp:120
 msgid "Name Already Used"
 msgstr ""
 
-#: migration/importtablewizard.cpp:147
+#: migration/importtablewizard.cpp:159
 msgid ""
 "<para>Table Importing Assistant allows you to import a table from an "
 "existing database into the current Kexi project.</para><para>Click "
@@ -4234,86 +4230,105 @@ msgid ""
 "interface> button to exit this assistant.</para>"
 msgstr ""
 
-#: migration/importtablewizard.cpp:154
+#: migration/importtablewizard.cpp:166
 #, fuzzy
 #| msgid "Welcome to the Table Importing Wizard"
 msgid "Welcome to the Table Importing Assistant"
 msgstr "Деректер қоры кестесін импорттау шеберіне қош келдіңіз"
 
-#: migration/importtablewizard.cpp:181 migration/importwizard.cpp:283
+#: migration/importtablewizard.cpp:193 migration/importwizard.cpp:283
 msgid "Select Location for Source Database"
 msgstr "Қай деректер қорынан, орнын көрсетіңіз"
 
-#: migration/importtablewizard.cpp:191 migration/importwizard.cpp:294
+#: migration/importtablewizard.cpp:203 migration/importwizard.cpp:294
 msgid "Select Source Database"
 msgstr "Қай деректер қорынан"
 
-#: migration/importtablewizard.cpp:208
+#: migration/importtablewizard.cpp:220
 msgid "Select the Table to Import"
 msgstr "Импорттайтын кестені таңдау"
 
-#: migration/importtablewizard.cpp:240 migration/importwizard.cpp:453
+#: migration/importtablewizard.cpp:252 migration/importwizard.cpp:453
 msgid "Advanced Options"
 msgstr "Жетелеу параметрлері"
 
-#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:465
+#: migration/importtablewizard.cpp:261 migration/importwizard.cpp:465
 msgid "Importing"
 msgstr "Импорттау"
 
-#: migration/importtablewizard.cpp:265
+#: migration/importtablewizard.cpp:277
 #, fuzzy
 #| msgid "Alter the Detected Design"
 msgid "Alter the Detected Table Design"
 msgstr "Табылғанды өзгерту"
 
-#: migration/importtablewizard.cpp:282 migration/importwizard.cpp:489
+#: migration/importtablewizard.cpp:292
+#, fuzzy
+#| msgid "Open imported project"
+msgid "Open imported table"
+msgstr "Импортталған жобаны ашу"
+
+#: migration/importtablewizard.cpp:298 migration/importwizard.cpp:489
 #: migration/importwizard.cpp:876
 msgid "Success"
 msgstr "Сәтті бітті"
 
-#: migration/importtablewizard.cpp:326 migration/importwizard.cpp:548
+#: migration/importtablewizard.cpp:344 migration/importwizard.cpp:548
 msgid "Select source database you wish to import:"
 msgstr "Импорттайтын деректер қоры:"
 
-#: migration/importtablewizard.cpp:420
-#, fuzzy
+#: migration/importtablewizard.cpp:424
+#, kde-format
+msgctxt "<basename-filename> <tablename>"
+msgid "%1 %2"
+msgstr ""
+
+#: migration/importtablewizard.cpp:432
+#, kde-format
+msgid ""
+"No data has been found in table <resource>%1</resource>. Select different "
+"table or cancel importing."
+msgstr ""
+
+#: migration/importtablewizard.cpp:466
+#, fuzzy, kde-format
 #| msgid ""
 #| "All required information has now been gathered. Click \"Next\" button to "
 #| "start importing.\n"
 #| "\n"
-#| "Depending on size of the tables this may take some time.\n"
-#| "\n"
-#| "You have chosen to import the following table:\n"
-#| "\n"
+#| "Depending on size of the database this may take some time."
+msgctxt "@info Table import wizard, final message"
 msgid ""
 "<para>All required information has now been gathered. Click <interface>Next</"
-"interface> button to start importing.</para><para>Depending on size of the "
-"tables this may take some time.</para><para>You have chosen to import the "
-"following table:</para>"
+"interface> button to start importing table <resource>%1</resource>.</"
+"para><note>Depending on size of the table this may take some time.</note>"
 msgstr ""
 "Бүкіл қажетті мәліметтер жиналып болды. \"Келесі\" деген батырманы басып "
 "импорттауды бастаңыз.\n"
 "\n"
-"Бұл импорттау дестесінің үлкендігіне қарай біраз уақыт алуы мүмкін.\n"
-"\n"
-"Импорттауға таңдалған кесте:\n"
-"\n"
+"Импорттау деректер қорының үлкендігіне қарай біраз уақыт алуы мүмкін."
 
-#: migration/importtablewizard.cpp:468 migration/importwizard.cpp:757
+#: migration/importtablewizard.cpp:497
+#, fuzzy, kde-format
+#| msgid "Design of table \"%1\" has been modified."
+msgid "Table <resource>%1</resource> has been imported."
+msgstr "\"%1\" кестенің құрылымы өзгертілген."
+
+#: migration/importtablewizard.cpp:516 migration/importwizard.cpp:757
 msgid "No appropriate migration driver found."
 msgstr "Лайықты көшу драйвері табылмады."
 
-#: migration/importtablewizard.cpp:557
+#: migration/importtablewizard.cpp:605
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:395
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1743
 msgid "No project available."
 msgstr "Кол жетерлік жоба жоқ."
 
-#: migration/importtablewizard.cpp:568
+#: migration/importtablewizard.cpp:616
 msgid "No table was selected to import."
 msgstr "Импорттайтын кесте таңдалмаған."
 
-#: migration/importtablewizard.cpp:580
+#: migration/importtablewizard.cpp:628
 #, fuzzy, kde-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -7217,37 +7232,37 @@ msgstr "Деректер қорының таңдалған қосылымын ө
 msgid "File"
 msgstr "Файл"
 
-#: widget/KexiConnectionSelectorWidget.cpp:371
+#: widget/KexiConnectionSelectorWidget.cpp:381
 msgid "&Add"
 msgstr "Қ&осу"
 
-#: widget/KexiConnectionSelectorWidget.cpp:371
+#: widget/KexiConnectionSelectorWidget.cpp:381
 msgid "Add database connection"
 msgstr "Деректер қорының қосылымын қосу"
 
-#: widget/KexiConnectionSelectorWidget.cpp:372
+#: widget/KexiConnectionSelectorWidget.cpp:382
 #, fuzzy
 #| msgid "Add New Database Connection"
 msgctxt "@title:window"
 msgid "Add a New Database Connection"
 msgstr "Жаңа деректер қорының қосылымын қосу"
 
-#: widget/KexiConnectionSelectorWidget.cpp:400
+#: widget/KexiConnectionSelectorWidget.cpp:410
 msgid "&Save"
 msgstr "&Сақтау"
 
-#: widget/KexiConnectionSelectorWidget.cpp:401
+#: widget/KexiConnectionSelectorWidget.cpp:411
 msgid "Save changes made to this database connection"
 msgstr "Деректер қорының қосылымына енгізген өзгерістерді сақтау"
 
-#: widget/KexiConnectionSelectorWidget.cpp:402
+#: widget/KexiConnectionSelectorWidget.cpp:412
 #, fuzzy
 #| msgid "Edit Database Connection"
 msgctxt "@title:window"
 msgid "Edit Database Connection"
 msgstr "Деректер қорының қосылымын өзгерту"
 
-#: widget/KexiConnectionSelectorWidget.cpp:425
+#: widget/KexiConnectionSelectorWidget.cpp:435
 #, kde-format
 msgid ""
 "Do you want to remove database connection \"%1\" from the list of available "
@@ -8008,6 +8023,32 @@ msgstr "Меңзерді соңғы жазуға көшіреді."
 #: widget/utils/kexirecordnavigator.cpp:577
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Меңзерді жаңа жазуға көшіріп ендіруге мүмкіндік береді."
+
+#~ msgid "Table Name"
+#~ msgstr "Кестенің атауы"
+
+#, fuzzy
+#~| msgid ""
+#~| "All required information has now been gathered. Click \"Next\" button to "
+#~| "start importing.\n"
+#~| "\n"
+#~| "Depending on size of the tables this may take some time.\n"
+#~| "\n"
+#~| "You have chosen to import the following table:\n"
+#~| "\n"
+#~ msgid ""
+#~ "<para>All required information has now been gathered. Click "
+#~ "<interface>Next</interface> button to start importing.</"
+#~ "para><para>Depending on size of the tables this may take some time.</"
+#~ "para><para>You have chosen to import the following table:</para>"
+#~ msgstr ""
+#~ "Бүкіл қажетті мәліметтер жиналып болды. \"Келесі\" деген батырманы басып "
+#~ "импорттауды бастаңыз.\n"
+#~ "\n"
+#~ "Бұл импорттау дестесінің үлкендігіне қарай біраз уақыт алуы мүмкін.\n"
+#~ "\n"
+#~ "Импорттауға таңдалған кесте:\n"
+#~ "\n"
 
 #~ msgid ""
 #~ "Skip displaying startup dialog window.\n"
