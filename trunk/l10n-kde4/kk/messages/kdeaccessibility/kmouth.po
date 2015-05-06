@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-27 01:54+0000\n"
+"POT-Creation-Date: 2015-05-06 02:01+0000\n"
 "PO-Revision-Date: 2013-04-13 03:03+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -29,15 +29,15 @@ msgstr "sairan@computer.org"
 msgid "Initial Configuration - KMouth"
 msgstr "KMouth - Бастапқы баптау"
 
-#: configwizard.cpp:57
+#: configwizard.cpp:59
 msgid "Text-to-Speech Configuration"
 msgstr "Мәтінді дауыстап оқуын баптау"
 
-#: configwizard.cpp:71
+#: configwizard.cpp:73
 msgid "Initial Phrase Book"
 msgstr "Бастапқы тілашары"
 
-#: configwizard.cpp:103 optionsdialog.cpp:144 optionsdialog.cpp:145
+#: configwizard.cpp:105 optionsdialog.cpp:150 optionsdialog.cpp:151
 msgid "Word Completion"
 msgstr "Сөздерді толықтыру"
 
@@ -97,11 +97,11 @@ msgstr ""
 "таңдалған мәтін көшіріп алынады. Ол болмаса, журналдағы, өткен сөйлемдерінен "
 "таңдалғаны (болса) көшірмеленеді."
 
-#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:412
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:262
 msgid "Pastes the clipboard contents to current position"
 msgstr "Алмасу буфердегіні тұрған орынға орналастыру"
 
-#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:413
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:263
 msgid ""
 "Pastes the clipboard contents at the current cursor position into the edit "
 "field."
@@ -116,7 +116,7 @@ msgstr "&Дауыстап оқу"
 msgid "Speaks the currently active sentence(s)"
 msgstr "Қазір белсенді сөйлемд(ерд)і дауыстау"
 
-#: kmouth.cpp:157 phraselist.cpp:86
+#: kmouth.cpp:157 phraselist.cpp:89
 msgid ""
 "Speaks the currently active sentence(s). If there is some text in the edit "
 "field it is spoken. Otherwise the selected sentences in the history (if any) "
@@ -149,7 +149,7 @@ msgstr "KMouth &баптауы..."
 msgid "Opens the configuration dialog"
 msgstr "Баптау диалогын ашу"
 
-#: kmouth.cpp:194 phraselist.cpp:83
+#: kmouth.cpp:194 phraselist.cpp:86
 msgid "&Speak"
 msgstr "&Дауыстап оқу"
 
@@ -157,7 +157,7 @@ msgstr "&Дауыстап оқу"
 msgid "Speaks the currently selected phrases in the history"
 msgstr "Журналдағы, өткен сөйлемдерінен таңдалғанын оқу"
 
-#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:417
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:267
 msgid "&Delete"
 msgstr "&Өшіру"
 
@@ -200,52 +200,52 @@ msgstr "Бүкіл таңдауларынан а&йну"
 msgid "Deselects all phrases in the history"
 msgstr "Журналдағы бүкіл таңдауларынан айну"
 
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:365 kmouth.cpp:373 kmouth.cpp:391
-#: kmouth.cpp:441 kmouth.cpp:458 kmouth.cpp:475 kmouth.cpp:492
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:362 kmouth.cpp:371 kmouth.cpp:388
+#: kmouth.cpp:438 kmouth.cpp:452 kmouth.cpp:466 kmouth.cpp:480
 msgctxt "The job is done"
 msgid "Ready."
 msgstr "Дайын."
 
-#: kmouth.cpp:259 kmouth.cpp:361
+#: kmouth.cpp:259 kmouth.cpp:358
 msgid "Opening file..."
 msgstr "Файлы ашу"
 
-#: kmouth.cpp:369
+#: kmouth.cpp:367
 msgid "Saving history with a new filename..."
 msgstr "Журналды жаңа файлға сақтау..."
 
-#: kmouth.cpp:378
+#: kmouth.cpp:376
 msgid "Printing..."
 msgstr "Басып шығару..."
 
-#: kmouth.cpp:396
+#: kmouth.cpp:393
 msgctxt "Shutting down the application"
 msgid "Exiting..."
 msgstr "Шығу..."
 
-#: kmouth.cpp:434
+#: kmouth.cpp:431
 msgid "Toggling menubar..."
 msgstr "Мәзірін көрсету/жасыру"
 
-#: kmouth.cpp:446
+#: kmouth.cpp:443
 msgid "Toggling toolbar..."
 msgstr "Кұралдарын көрсету/жасыру"
 
-#: kmouth.cpp:463
+#: kmouth.cpp:457
 msgid "Toggling phrasebook bar..."
 msgstr "Тілашар панелін көрсету/жасыру..."
 
-#: kmouth.cpp:480
+#: kmouth.cpp:471
 msgid "Toggle the statusbar..."
 msgstr "Күй-жай жолағын көрсету/жасыру..."
 
 #. i18n: ectx: Menu (file)
-#: kmouthui.rc:4
+#: kmouthui.rc:4 phrasebookdialogui.rc:5
 msgid "&File"
 msgstr "&Файл"
 
 #. i18n: ectx: Menu (edit)
-#: kmouthui.rc:11
+#: kmouthui.rc:11 phrasebookdialogui.rc:19
 msgid "&Edit"
 msgstr "Өңд&еу"
 
@@ -287,50 +287,269 @@ msgstr "Olaf Schmidt"
 msgid "Tips, extended phrase books"
 msgstr "Кеңестер, кенейтілген тілашарлары"
 
-#: optionsdialog.cpp:119
+#: optionsdialog.cpp:125
 msgid "Configuration"
 msgstr "Баптау"
 
-#: optionsdialog.cpp:132
+#: optionsdialog.cpp:138
 msgid "&Preferences"
 msgstr "&Параметрлер"
 
-#: optionsdialog.cpp:136
+#: optionsdialog.cpp:142
 msgid "&Text-to-Speech"
 msgstr "&Мәтінді дауыстап оқу"
 
-#: optionsdialog.cpp:138 optionsdialog.cpp:139
+#: optionsdialog.cpp:144 optionsdialog.cpp:145
 msgid "General Options"
 msgstr "Жалпы параметрлері"
 
-#: optionsdialog.cpp:151
+#: optionsdialog.cpp:157
 msgid "Jovie Speech Service"
 msgstr "Jovie дауыстап оқу қызметі"
 
-#: optionsdialog.cpp:153
+#: optionsdialog.cpp:159
 msgid "KDE Text-to-Speech Daemon Configuration"
 msgstr "KDE-нің мәтінді дауыстап оқу қызметін баптау"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, ButtonBoxUI)
-#: phrasebook/buttonboxui.ui:13
-msgid "Currently Selected Phrase or Phrase Book"
-msgstr "Таңдалған сөйлем не тілашары"
+#: phrasebook/initialphrasebookwidget.cpp:41
+msgid "Please decide which phrase books you need:"
+msgstr "Керек тілашарлары:"
+
+#: phrasebook/initialphrasebookwidget.cpp:46
+msgid "Book"
+msgstr "Тілашар"
+
+#: phrasebook/phrasebook.cpp:284 phrasebook/phrasebookdialog.cpp:609
+msgid ""
+"*.phrasebook|Phrase Books (*.phrasebook)\n"
+"*.txt|Plain Text Files (*.txt)\n"
+"*|All Files"
+msgstr ""
+"*.phrasebook|Тілашарлар (*.phrasebook)\n"
+"*.txt|Кәдімгі мәтін файлдары (*.txt)\n"
+"*|Бүкіл файлдар"
+
+#: phrasebook/phrasebook.cpp:286
+msgid ""
+"*.txt|Plain Text Files (*.txt)\n"
+"*.phrasebook|Phrase Books (*.phrasebook)\n"
+"*|All Files"
+msgstr ""
+"*.txt|Кәдімгі мәтін файлдары (*.txt)\n"
+"*.phrasebook|Тілашарлар (*.phrasebook)\n"
+"*|Бүкіл файлдар"
+
+#: phrasebook/phrasebook.cpp:304 wordcompletion/wordcompletionwidget.cpp:218
+#, kde-format
+msgid "The file %1 already exists. Do you want to overwrite it?"
+msgstr "%1 деген файл бар екен, үстінен жаза берейік пе?"
+
+#: phrasebook/phrasebook.cpp:305 wordcompletion/wordcompletionwidget.cpp:219
+msgid "File Exists"
+msgstr "Файл бар екен"
+
+#: phrasebook/phrasebook.cpp:305 wordcompletion/wordcompletionwidget.cpp:219
+msgid "&Overwrite"
+msgstr "&Үстінен жазу"
+
+#: phrasebook/phrasebook.cpp:315
+#, kde-format
+msgid ""
+"Your chosen filename <i>%1</i> has a different extension than <i>."
+"phrasebook</i>. Do you wish to add <i>.phrasebook</i> to the filename?"
+msgstr ""
+"Таңдалған <i>%1</i> файлыңыздың жұрнағы <i>phrasebook</i>. емес. Осы <i>."
+"phrasebook</i> жұрнақ қосылсын ба?"
+
+#: phrasebook/phrasebook.cpp:316 phrasebook/phrasebook.cpp:330
+msgid "File Extension"
+msgstr "Файл жұрнағы"
+
+#: phrasebook/phrasebook.cpp:316
+msgid "Add"
+msgstr "Қ&осу"
+
+#: phrasebook/phrasebook.cpp:316
+msgid "Do Not Add"
+msgstr "Керегі жоқ"
+
+#: phrasebook/phrasebook.cpp:329
+#, kde-format
+msgid ""
+"Your chosen filename <i>%1</i> has the extension <i>.phrasebook</i>. Do you "
+"wish to save in phrasebook format?"
+msgstr ""
+"Таңдалған <i>%1</i> файлыңыздың жұрнағы <i>phrasebook</i>. Ол тілашар "
+"пішімінде сақталсын ба?"
+
+#: phrasebook/phrasebook.cpp:330
+msgid "As Phrasebook"
+msgstr "Тілашар қылу"
+
+#: phrasebook/phrasebook.cpp:330
+msgid "As Plain Text"
+msgstr "Жәй мәтін қылу"
+
+#: phrasebook/phrasebookdialog.cpp:65
+msgid "Phrase"
+msgstr "Сөйлемі"
+
+#: phrasebook/phrasebookdialog.cpp:66
+msgid "Shortcut"
+msgstr "Тіркесімі"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PhraseBookDialog)
+#: phrasebook/phrasebookdialog.cpp:69 phrasebook/phrasebookdialog.ui:14
+msgid "Phrase Book"
+msgstr "Тілашары"
+
+#: phrasebook/phrasebookdialog.cpp:202
+msgid "&New Phrase"
+msgstr "&Жаңа сөйлем"
+
+#: phrasebook/phrasebookdialog.cpp:204 phrasebook/phrasebookdialog.cpp:205
+msgid "Adds a new phrase"
+msgstr "Жаңа сөйлемді қосу"
+
+#: phrasebook/phrasebookdialog.cpp:209
+msgid "New Phrase &Book"
+msgstr "Жаңа &тілашар"
+
+#: phrasebook/phrasebookdialog.cpp:211 phrasebook/phrasebookdialog.cpp:212
+msgid "Adds a new phrase book into which other books and phrases can be placed"
+msgstr ""
+"Жаңа тілашарды құру. Оның ішінде басқа тілашарлар мен сөйлемдерді "
+"орналастыруға болады."
+
+#: phrasebook/phrasebookdialog.cpp:215 phrasebook/phrasebookdialog.cpp:216
+msgid "Saves the phrase book onto the hard disk"
+msgstr "Тілашарды дискіге сақтау"
+
+#: phrasebook/phrasebookdialog.cpp:220 phrasebook/phrasebookdialog.cpp:225
+msgid "&Import..."
+msgstr "&Импорттау..."
+
+#: phrasebook/phrasebookdialog.cpp:222 phrasebook/phrasebookdialog.cpp:223
+#: phrasebook/phrasebookdialog.cpp:228 phrasebook/phrasebookdialog.cpp:229
+msgid "Imports a file and adds its contents to the phrase book"
+msgstr "Файлды импортап, оның мазмұның тілашарға қосып алу"
+
+#: phrasebook/phrasebookdialog.cpp:233
+msgid "I&mport Standard Phrase Book"
+msgstr "Стандартты тілашарын и&мпорттау"
+
+#: phrasebook/phrasebookdialog.cpp:234 phrasebook/phrasebookdialog.cpp:235
+msgid "Imports a standard phrase book and adds its contents to the phrase book"
+msgstr "Стандартты тілашарын импортап, оның мазмұның тілашарына қосып алу"
+
+#: phrasebook/phrasebookdialog.cpp:239
+msgid "&Export..."
+msgstr "&Экспорттау..."
+
+#: phrasebook/phrasebookdialog.cpp:241 phrasebook/phrasebookdialog.cpp:242
+msgid "Exports the currently selected phrase(s) or phrase book(s) into a file"
+msgstr "Таңдалған сөйлем(дер)ді не тілашар(лар)ды бір файлға экспорттау"
+
+#: phrasebook/phrasebookdialog.cpp:249 phrasebook/phrasebookdialog.cpp:250
+msgid "Closes the window"
+msgstr "Терезені жабу"
+
+#: phrasebook/phrasebookdialog.cpp:254 phrasebook/phrasebookdialog.cpp:255
+msgid ""
+"Cuts the currently selected entries from the phrase book and puts it to the "
+"clipboard"
+msgstr ""
+"Таңдалған жазуларды тілашарынан қиып алып, оларды алмасу буферіне орналастыру"
+
+#: phrasebook/phrasebookdialog.cpp:258 phrasebook/phrasebookdialog.cpp:259
+msgid ""
+"Copies the currently selected entry from the phrase book to the clipboard"
+msgstr "Таңдалған жазуларды тілашарынан алмасу буферіне көшірмелеу"
+
+#: phrasebook/phrasebookdialog.cpp:269 phrasebook/phrasebookdialog.cpp:270
+msgid "Deletes the selected entries from the phrase book"
+msgstr "Таңдалған жазуларды тілашарынан өшіру"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel)
+#: phrasebook/phrasebookdialog.cpp:347 phrasebook/phrasebookdialog.cpp:361
+#: phrasebook/phrasebookdialog.ui:82
+msgid "Text of the &phrase:"
+msgstr "С&өйлем мәтіні:"
+
+#: phrasebook/phrasebookdialog.cpp:379
+msgid "Name of the &phrase book:"
+msgstr "&Тілашарының атауы:"
+
+#: phrasebook/phrasebookdialog.cpp:400
+msgid ""
+"<qt>There are unsaved changes.<br />Do you want to apply the changes before "
+"closing the \"phrase book\" window or discard the changes?</qt>"
+msgstr ""
+"<qt>Cақталмаған өзгерістер бар.<br />\"Тілашар\" терезесін жабу алдында олар "
+"іске асырылсын ба әлде жолғала берсін бе?</qt>"
+
+#: phrasebook/phrasebookdialog.cpp:401
+msgid "Closing \"Phrase Book\" Window"
+msgstr "\"Тілашар\" терезесін жабу"
+
+#: phrasebook/phrasebookdialog.cpp:561
+msgid "(New Phrase Book)"
+msgstr "(Жаңа тілашар)"
+
+#: phrasebook/phrasebookdialog.cpp:577
+msgid "(New Phrase)"
+msgstr "(Жаңа сөйлем)"
+
+#: phrasebook/phrasebookdialog.cpp:609
+msgid "Import Phrasebook"
+msgstr "Тілашарді импорттау"
+
+#: phrasebook/phrasebookdialog.cpp:639 phraselist.cpp:504
+#, kde-format
+msgid ""
+"There was an error loading file\n"
+"%1"
+msgstr ""
+"Файлды жүктегенде қате пайда болды\n"
+"%1"
+
+#: phrasebook/phrasebookdialog.cpp:650
+msgid "Export Phrase Book"
+msgstr "Тілашарды экспорттау"
+
+#: phrasebook/phrasebookdialog.cpp:657 phraselist.cpp:477
+#, kde-format
+msgid ""
+"There was an error saving file\n"
+"%1"
+msgstr ""
+"Файлды сақтағанда қате пайда болды\n"
+"%1"
 
 #. i18n: ectx: property (title), widget (QGroupBox, phrasebox)
-#: phrasebook/buttonboxui.ui:25
+#: phrasebook/phrasebookdialog.ui:26
 msgid "&Currently Selected Phrase or Phrase Book"
 msgstr "&Таңдалған сөйлем не тілашары"
 
+#. i18n: ectx: property (whatsThis), widget (KKeySequenceWidget, keyButton)
+#: phrasebook/phrasebookdialog.ui:38
+msgid ""
+"By clicking on this button you can select the keyboard shortcut associated "
+"with the selected phrase."
+msgstr ""
+"Осы батырманы басып таңдалған сөйлемімен байланысты перне тіркесімін таңдап "
+"бере аласыз."
+
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, lineEdit)
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel)
-#: phrasebook/buttonboxui.ui:40 phrasebook/buttonboxui.ui:74
+#: phrasebook/phrasebookdialog.ui:45 phrasebook/phrasebookdialog.ui:79
 msgid ""
 "With this line edit you define the name of a sub-phrasebook or the contents "
 "of a phrase."
 msgstr "Бұл жолда ішкі-тілашардың атауы не сөйлем келтіріледі."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, noKey)
-#: phrasebook/buttonboxui.ui:47
+#: phrasebook/phrasebookdialog.ui:52
 msgid ""
 "If you select this option then the selected phrase will not be reachable by "
 "a keyboard shortcut."
@@ -338,12 +557,12 @@ msgstr ""
 "Бұл таңдалған сөйлемді перене тіркесімі арқылы дауыстайтын қылу-қылмауы."
 
 #. i18n: ectx: property (text), widget (QRadioButton, noKey)
-#: phrasebook/buttonboxui.ui:50
+#: phrasebook/phrasebookdialog.ui:55
 msgid "&None"
 msgstr "&Жоқ"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, customKey)
-#: phrasebook/buttonboxui.ui:57
+#: phrasebook/phrasebookdialog.ui:62
 msgid ""
 "If you select this option then the selected phrase will be reachable by a "
 "keyboard shortcut. You can change the shortcut with the button next to this "
@@ -353,127 +572,17 @@ msgstr ""
 "Тіркесімін осыдан кейінгі батырманы басып өзгерте аласыз."
 
 #. i18n: ectx: property (text), widget (QRadioButton, customKey)
-#: phrasebook/buttonboxui.ui:60
+#: phrasebook/phrasebookdialog.ui:65
 msgid "C&ustom"
 msgstr "&Өзгерту"
 
 #. i18n: ectx: property (text), widget (QLabel, shortcutLabel)
-#: phrasebook/buttonboxui.ui:67
+#: phrasebook/phrasebookdialog.ui:72
 msgid "Shortcut for the phrase:"
 msgstr "Сөйлемнің перене тіркесімі:"
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel)
-#: phrasebook/buttonboxui.ui:77 phrasebook/phrasebookdialog.cpp:543
-#: phrasebook/phrasebookdialog.cpp:557
-msgid "Text of the &phrase:"
-msgstr "С&өйлем мәтіні:"
-
-#: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:789
-msgid ""
-"*.phrasebook|Phrase Books (*.phrasebook)\n"
-"*.txt|Plain Text Files (*.txt)\n"
-"*|All Files"
-msgstr ""
-"*.phrasebook|Тілашарлар (*.phrasebook)\n"
-"*.txt|Кәдімгі мәтін файлдары (*.txt)\n"
-"*|Бүкіл файлдар"
-
-#: phrasebook/phrasebook.cpp:265
-msgid ""
-"*.txt|Plain Text Files (*.txt)\n"
-"*.phrasebook|Phrase Books (*.phrasebook)\n"
-"*|All Files"
-msgstr ""
-"*.txt|Кәдімгі мәтін файлдары (*.txt)\n"
-"*.phrasebook|Тілашарлар (*.phrasebook)\n"
-"*|Бүкіл файлдар"
-
-#: phrasebook/phrasebook.cpp:283 wordcompletion/wordcompletionwidget.cpp:259
-#, kde-format
-msgid "The file %1 already exists. Do you want to overwrite it?"
-msgstr "%1 деген файл бар екен, үстінен жаза берейік пе?"
-
-#: phrasebook/phrasebook.cpp:284 wordcompletion/wordcompletionwidget.cpp:260
-msgid "File Exists"
-msgstr "Файл бар екен"
-
-#: phrasebook/phrasebook.cpp:284 wordcompletion/wordcompletionwidget.cpp:260
-msgid "&Overwrite"
-msgstr "&Үстінен жазу"
-
-#: phrasebook/phrasebook.cpp:295
-#, kde-format
-msgid ""
-"Your chosen filename <i>%1</i> has a different extension than <i>."
-"phrasebook</i>. Do you wish to add <i>.phrasebook</i> to the filename?"
-msgstr ""
-"Таңдалған <i>%1</i> файлыңыздың жұрнағы <i>phrasebook</i>. емес. Осы <i>."
-"phrasebook</i> жұрнақ қосылсын ба?"
-
-#: phrasebook/phrasebook.cpp:296 phrasebook/phrasebook.cpp:312
-msgid "File Extension"
-msgstr "Файл жұрнағы"
-
-#: phrasebook/phrasebook.cpp:296
-msgid "Add"
-msgstr "Қ&осу"
-
-#: phrasebook/phrasebook.cpp:296
-msgid "Do Not Add"
-msgstr "Керегі жоқ"
-
-#: phrasebook/phrasebook.cpp:311
-#, kde-format
-msgid ""
-"Your chosen filename <i>%1</i> has the extension <i>.phrasebook</i>. Do you "
-"wish to save in phrasebook format?"
-msgstr ""
-"Таңдалған <i>%1</i> файлыңыздың жұрнағы <i>phrasebook</i>. Ол тілашар "
-"пішімінде сақталсын ба?"
-
-#: phrasebook/phrasebook.cpp:312
-msgid "As Phrasebook"
-msgstr "Тілашар қылу"
-
-#: phrasebook/phrasebook.cpp:312
-msgid "As Plain Text"
-msgstr "Жәй мәтін қылу"
-
-#: phrasebook/phrasebookdialog.cpp:142
-#, kde-format
-msgid " (%2 of 1 book selected)"
-msgid_plural " (%2 of %1 books selected)"
-msgstr[0] " (%2 / %1 тілашар таңдалған)"
-
-#: phrasebook/phrasebookdialog.cpp:156
-msgid "Please decide which phrase books you need:"
-msgstr "Керек тілашарлары:"
-
-#: phrasebook/phrasebookdialog.cpp:165
-msgid "Book"
-msgstr "Тілашар"
-
-#: phrasebook/phrasebookdialog.cpp:262
-msgid ""
-"By clicking on this button you can select the keyboard shortcut associated "
-"with the selected phrase."
-msgstr ""
-"Осы батырманы басып таңдалған сөйлемімен байланысты перне тіркесімін таңдап "
-"бере аласыз."
-
-#: phrasebook/phrasebookdialog.cpp:284
-msgid "Phrase Book"
-msgstr "Тілашары"
-
-#: phrasebook/phrasebookdialog.cpp:325
-msgid "Phrase"
-msgstr "Сөйлемі"
-
-#: phrasebook/phrasebookdialog.cpp:326
-msgid "Shortcut"
-msgstr "Тіркесімі"
-
-#: phrasebook/phrasebookdialog.cpp:330
+#. i18n: ectx: property (whatsThis), widget (QTreeView, treeView)
+#: phrasebook/phrasebookdialog.ui:98
 msgid ""
 "This list contains the current phrase book in a tree structure. You can "
 "select and modify individual phrases and sub phrase books"
@@ -481,176 +590,7 @@ msgstr ""
 "Бұл бұтақ түрінде ашылған тілашардың құрылымы. Бұнда бөлек сөйлемдері мен "
 "ішкі бөлімдерін таңдап өзгертуге болады."
 
-#: phrasebook/phrasebookdialog.cpp:352
-msgid "&New Phrase"
-msgstr "&Жаңа сөйлем"
-
-#: phrasebook/phrasebookdialog.cpp:354 phrasebook/phrasebookdialog.cpp:355
-msgid "Adds a new phrase"
-msgstr "Жаңа сөйлемді қосу"
-
-#: phrasebook/phrasebookdialog.cpp:359
-msgid "New Phrase &Book"
-msgstr "Жаңа &тілашар"
-
-#: phrasebook/phrasebookdialog.cpp:361 phrasebook/phrasebookdialog.cpp:362
-msgid "Adds a new phrase book into which other books and phrases can be placed"
-msgstr ""
-"Жаңа тілашарды құру. Оның ішінде басқа тілашарлар мен сөйлемдерді "
-"орналастыруға болады."
-
-#: phrasebook/phrasebookdialog.cpp:365 phrasebook/phrasebookdialog.cpp:366
-msgid "Saves the phrase book onto the hard disk"
-msgstr "Тілашарды дискіге сақтау"
-
-#: phrasebook/phrasebookdialog.cpp:370 phrasebook/phrasebookdialog.cpp:375
-msgid "&Import..."
-msgstr "&Импорттау..."
-
-#: phrasebook/phrasebookdialog.cpp:372 phrasebook/phrasebookdialog.cpp:373
-#: phrasebook/phrasebookdialog.cpp:378 phrasebook/phrasebookdialog.cpp:379
-msgid "Imports a file and adds its contents to the phrase book"
-msgstr "Файлды импортап, оның мазмұның тілашарға қосып алу"
-
-#: phrasebook/phrasebookdialog.cpp:383
-msgid "I&mport Standard Phrase Book"
-msgstr "Стандартты тілашарын и&мпорттау"
-
-#: phrasebook/phrasebookdialog.cpp:384 phrasebook/phrasebookdialog.cpp:385
-msgid "Imports a standard phrase book and adds its contents to the phrase book"
-msgstr "Стандартты тілашарын импортап, оның мазмұның тілашарына қосып алу"
-
-#: phrasebook/phrasebookdialog.cpp:389
-msgid "&Export..."
-msgstr "&Экспорттау..."
-
-#: phrasebook/phrasebookdialog.cpp:391 phrasebook/phrasebookdialog.cpp:392
-msgid "Exports the currently selected phrase(s) or phrase book(s) into a file"
-msgstr "Таңдалған сөйлем(дер)ді не тілашар(лар)ды бір файлға экспорттау"
-
-#: phrasebook/phrasebookdialog.cpp:395 phrasebook/phrasebookdialog.cpp:396
-msgid "Prints the currently selected phrase(s) or phrase book(s)"
-msgstr "Таңдалған сөйлем(дер)ді не тілашар(лар)ды басып шығару"
-
-#: phrasebook/phrasebookdialog.cpp:399 phrasebook/phrasebookdialog.cpp:400
-msgid "Closes the window"
-msgstr "Терезені жабу"
-
-#: phrasebook/phrasebookdialog.cpp:404 phrasebook/phrasebookdialog.cpp:405
-msgid ""
-"Cuts the currently selected entries from the phrase book and puts it to the "
-"clipboard"
-msgstr ""
-"Таңдалған жазуларды тілашарынан қиып алып, оларды алмасу буферіне орналастыру"
-
-#: phrasebook/phrasebookdialog.cpp:408 phrasebook/phrasebookdialog.cpp:409
-msgid ""
-"Copies the currently selected entry from the phrase book to the clipboard"
-msgstr "Таңдалған жазуларды тілашарынан алмасу буферіне көшірмелеу"
-
-#: phrasebook/phrasebookdialog.cpp:419 phrasebook/phrasebookdialog.cpp:420
-msgid "Deletes the selected entries from the phrase book"
-msgstr "Таңдалған жазуларды тілашарынан өшіру"
-
-#: phrasebook/phrasebookdialog.cpp:581
-msgid "Name of the &phrase book:"
-msgstr "&Тілашарының атауы:"
-
-#: phrasebook/phrasebookdialog.cpp:600
-msgid ""
-"<qt>There are unsaved changes.<br />Do you want to apply the changes before "
-"closing the \"phrase book\" window or discard the changes?</qt>"
-msgstr ""
-"<qt>Cақталмаған өзгерістер бар.<br />\"Тілашар\" терезесін жабу алдында олар "
-"іске асырылсын ба әлде жолғала берсін бе?</qt>"
-
-#: phrasebook/phrasebookdialog.cpp:601
-msgid "Closing \"Phrase Book\" Window"
-msgstr "\"Тілашар\" терезесін жабу"
-
-#: phrasebook/phrasebookdialog.cpp:661
-#, kde-format
-msgid ""
-"In order to use the '%1' key as a shortcut, it must be combined with the "
-"Win, Alt, Ctrl, and/or Shift keys."
-msgstr ""
-"'%1' пернесі тек Win, Alt, Ctrl, және/немесе Shift пернелерімен бірге "
-"тіркесім құра алады.."
-
-#: phrasebook/phrasebookdialog.cpp:664
-msgid "Invalid Shortcut Key"
-msgstr "Жарамсыз тіркесім пернесі"
-
-#: phrasebook/phrasebookdialog.cpp:761
-msgid "(New Phrase Book)"
-msgstr "(Жаңа тілашар)"
-
-#: phrasebook/phrasebookdialog.cpp:772
-msgid "(New Phrase)"
-msgstr "(Жаңа сөйлем)"
-
-#: phrasebook/phrasebookdialog.cpp:789
-msgid "Import Phrasebook"
-msgstr "Тілашарді импорттау"
-
-#: phrasebook/phrasebookdialog.cpp:800 phraselist.cpp:480
-#, kde-format
-msgid ""
-"There was an error loading file\n"
-"%1"
-msgstr ""
-"Файлды жүктегенде қате пайда болды\n"
-"%1"
-
-#: phrasebook/phrasebookdialog.cpp:809
-msgid "Export Phrase Book"
-msgstr "Тілашарды экспорттау"
-
-#: phrasebook/phrasebookdialog.cpp:810 phraselist.cpp:454
-#, kde-format
-msgid ""
-"There was an error saving file\n"
-"%1"
-msgstr ""
-"Файлды сақтағанда қате пайда болды\n"
-"%1"
-
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
-msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
-msgstr ""
-"'%1' перне тіркесімі %2 дегенге бұрын арнап қойылған.\n"
-"Кайталанбайтын тіркесімді таңдаңыз."
-
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "\"%1\" әрекеті үшін стандартты"
-
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Қолданбаның стандартты тіркесімімен қайшылық"
-
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "\"%1\" әрекеті үшін жалпы жүйелігі"
-
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "Жалпы жүйелік тіркесімімен қайшылық"
-
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "басқа сөйлем"
-
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "Перне қайшылығы"
-
-#: phraselist.cpp:60
+#: phraselist.cpp:63
 msgid ""
 "This list contains the history of spoken sentences. You can select sentences "
 "and press the speak button for re-speaking."
@@ -658,7 +598,7 @@ msgstr ""
 "Өткенде оқылған сөйлемдер журналы. Қайталау үшін керегін таңдап, дауыстау "
 "батырмасын басыңыз."
 
-#: phraselist.cpp:78
+#: phraselist.cpp:81
 msgid ""
 "Into this edit field you can type a phrase. Click on the speak button in "
 "order to speak the entered phrase."
@@ -666,11 +606,11 @@ msgstr ""
 "Бұл өріске сөйлемді келтіріңіз. Оны дауыстап оқу үшін дауыстау батырмасын "
 "басыңыз."
 
-#: phraselist.cpp:453
+#: phraselist.cpp:476
 msgid "Save As"
 msgstr "Былай сақтау"
 
-#: phraselist.cpp:459
+#: phraselist.cpp:483
 msgid ""
 "*|All Files\n"
 "*.phrasebook|Phrase Books (*.phrasebook)\n"
@@ -680,7 +620,7 @@ msgstr ""
 "*phrasebook|Тілашарлар (*.phrasebook)\n"
 "*.txt|Кәдімгі мәтін файлдары (*.txt)"
 
-#: phraselist.cpp:459
+#: phraselist.cpp:483
 msgid "Open File as History"
 msgstr "Журнал ретінде ашу"
 
@@ -820,19 +760,19 @@ msgstr ""
 "синтезаторына KDE қолданбаларға интерфейсі стандартталған KDE-нің кезекші "
 "қызметі. Ол да KDE-мен, бір SVN-қоймасында құрастырылып жатқан дүние."
 
-#: texttospeechconfigurationwidget.cpp:47
-#: wordcompletion/dictionarycreationwizard.cpp:100
+#: texttospeechconfigurationwidget.cpp:49
+#: wordcompletion/dictionarycreationwizard.cpp:121
 msgctxt "Local characterset"
 msgid "Local"
 msgstr "Кодтамасы"
 
-#: texttospeechconfigurationwidget.cpp:50
+#: texttospeechconfigurationwidget.cpp:52
 msgctxt "Latin1 characterset"
 msgid "Latin1"
 msgstr "Latin1"
 
-#: texttospeechconfigurationwidget.cpp:51
-#: wordcompletion/dictionarycreationwizard.cpp:104
+#: texttospeechconfigurationwidget.cpp:53
+#: wordcompletion/dictionarycreationwizard.cpp:125
 msgid "Unicode"
 msgstr "Unicode"
 
@@ -896,7 +836,7 @@ msgstr "Бұл ашылмалы тізімінен жаңа сөздік қай 
 
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
 #: wordcompletion/creationsourcedetailsui.ui:139
-#: wordcompletion/kdedocsourceui.ui:67 wordcompletion/wordcompletionui.ui:51
+#: wordcompletion/kdedocsourceui.ui:67 wordcompletion/wordcompletionui.ui:50
 msgid "&Language:"
 msgstr "&Тілі:"
 
@@ -989,28 +929,24 @@ msgstr ""
 "Бұны таңдасаңыз, бос жаңа сөздік құрылады. Бұл сөздік Сіз теріп келтірген "
 "сөздерді жаттап, бірте-бірте толығады."
 
-#: wordcompletion/dictionarycreationwizard.cpp:49
+#: wordcompletion/dictionarycreationwizard.cpp:70
 msgid "Source of New Dictionary (1)"
 msgstr "Жаңа сөздіктін көзі (1)"
 
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
+#: wordcompletion/dictionarycreationwizard.cpp:76
+#: wordcompletion/dictionarycreationwizard.cpp:82
+#: wordcompletion/dictionarycreationwizard.cpp:92
+#: wordcompletion/dictionarycreationwizard.cpp:99
 msgid "Source of New Dictionary (2)"
 msgstr "Жаңа сөздіктін көзі (2)"
 
-#: wordcompletion/dictionarycreationwizard.cpp:59
+#: wordcompletion/dictionarycreationwizard.cpp:85
 msgctxt "In which directory is the file located?"
 msgid "&Directory:"
 msgstr "&Каталогы:"
 
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: wordcompletion/dictionarycreationwizard.cpp:86
+#: wordcompletion/dictionarycreationwizard.cpp:88
 msgid ""
 "With this input field you specify which directory you want to load for "
 "creating the new dictionary."
@@ -1018,25 +954,25 @@ msgstr ""
 "Жаңа сөздікті құру үшін қай каталогты жүктеп алатыныңызды, осы өрісте "
 "келтіресіз."
 
-#: wordcompletion/dictionarycreationwizard.cpp:103
+#: wordcompletion/dictionarycreationwizard.cpp:124
 msgctxt "Latin characterset"
 msgid "Latin1"
 msgstr "Latin1"
 
-#: wordcompletion/dictionarycreationwizard.cpp:237
+#: wordcompletion/dictionarycreationwizard.cpp:209
 msgid "Merge result"
 msgstr "Нәтижесін біріктіру"
 
-#: wordcompletion/dictionarycreationwizard.cpp:240
+#: wordcompletion/dictionarycreationwizard.cpp:211
 msgctxt "In the sense of a blank word list"
 msgid "Empty list"
 msgstr "Бос тізім"
 
-#: wordcompletion/dictionarycreationwizard.cpp:249
+#: wordcompletion/dictionarycreationwizard.cpp:217
 msgid "KDE Documentation"
 msgstr "KDE құжаттамасы"
 
-#: wordcompletion/dictionarycreationwizard.cpp:372
+#: wordcompletion/dictionarycreationwizard.cpp:342
 msgctxt "Default dictionary"
 msgid "Default"
 msgstr "Әдетті"
@@ -1061,12 +997,12 @@ msgstr ""
 "тек осы тілдегі құжаттамасын талдайды."
 
 #. i18n: ectx: property (title), widget (QGroupBox, selectedDictionaryDetails)
-#: wordcompletion/wordcompletionui.ui:33
+#: wordcompletion/wordcompletionui.ui:32
 msgid "&Selected Dictionary"
 msgstr "&Таңдалған сөздік"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
-#: wordcompletion/wordcompletionui.ui:48
+#: wordcompletion/wordcompletionui.ui:47
 msgid ""
 "With this combo box you select the language associated with the selected "
 "dictionary."
@@ -1075,12 +1011,12 @@ msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, dictionaryNameLabel)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, dictionaryName)
-#: wordcompletion/wordcompletionui.ui:61 wordcompletion/wordcompletionui.ui:74
+#: wordcompletion/wordcompletionui.ui:63 wordcompletion/wordcompletionui.ui:76
 msgid "With this input field you specify the name of the selected dictionary."
 msgstr "Таңдалған сөздіктің атауын осы өрісте келтіресіз."
 
 #. i18n: ectx: property (text), widget (QLabel, dictionaryNameLabel)
-#: wordcompletion/wordcompletionui.ui:64
+#: wordcompletion/wordcompletionui.ui:66
 msgid "&Name:"
 msgstr "&Атауы:"
 
@@ -1099,47 +1035,47 @@ msgid "Add D&ictionary..."
 msgstr "С&өздікті қосу..."
 
 #. i18n: ectx: property (whatsThis), widget (KPushButton, deleteButton)
-#: wordcompletion/wordcompletionui.ui:121
+#: wordcompletion/wordcompletionui.ui:119
 msgid "With this button you delete the selected dictionary."
 msgstr "Бұл батырма таңдалған сөздікті өшіреді."
 
 #. i18n: ectx: property (text), widget (KPushButton, deleteButton)
-#: wordcompletion/wordcompletionui.ui:124
+#: wordcompletion/wordcompletionui.ui:122
 msgid "&Delete Dictionary"
 msgstr "Сөздікті ө&шіру"
 
 #. i18n: ectx: property (whatsThis), widget (KPushButton, moveUpButton)
-#: wordcompletion/wordcompletionui.ui:142
+#: wordcompletion/wordcompletionui.ui:138
 msgid "With this button you move the selected dictionary up."
 msgstr "Бұл батырма таңдалған сөздікті тізімінде жоғарлатады."
 
 #. i18n: ectx: property (text), widget (KPushButton, moveUpButton)
-#: wordcompletion/wordcompletionui.ui:145
+#: wordcompletion/wordcompletionui.ui:141
 msgid "Move &Up"
 msgstr "Жоғарлат&у"
 
 #. i18n: ectx: property (whatsThis), widget (KPushButton, moveDownButton)
-#: wordcompletion/wordcompletionui.ui:163
+#: wordcompletion/wordcompletionui.ui:157
 msgid "With this button you move the selected dictionary down."
 msgstr "Бұл батырма таңдалған сөздікті тізімінде төмендетеді."
 
 #. i18n: ectx: property (text), widget (KPushButton, moveDownButton)
-#: wordcompletion/wordcompletionui.ui:166
+#: wordcompletion/wordcompletionui.ui:160
 msgid "&Move Down"
 msgstr "&Төмендету"
 
 #. i18n: ectx: property (whatsThis), widget (KPushButton, exportButton)
-#: wordcompletion/wordcompletionui.ui:184
+#: wordcompletion/wordcompletionui.ui:176
 msgid "With this button you export the selected dictionary to a file."
 msgstr "Бұл батырма таңдалған сөздікті файлға экспорттайды."
 
 #. i18n: ectx: property (text), widget (KPushButton, exportButton)
-#: wordcompletion/wordcompletionui.ui:187
+#: wordcompletion/wordcompletionui.ui:179
 msgid "&Export Dictionary..."
 msgstr "Сөздікті э&кспорттау..."
 
-#. i18n: ectx: property (whatsThis), widget (K3ListView, dictionaryList)
-#: wordcompletion/wordcompletionui.ui:212
+#. i18n: ectx: property (whatsThis), widget (QTableView, dictionaryView)
+#: wordcompletion/wordcompletionui.ui:204
 msgid ""
 "This list contains all available dictionaries for the word completion. "
 "KMouth will display a combo box next to the edit field in the main window if "
@@ -1152,46 +1088,88 @@ msgstr ""
 "ашылмалы тізімді шығарады.Сол ашылмалы тізімінде қазір қолданатын "
 "автотолықтыру сөздігін таңдап аласыз."
 
-#. i18n: ectx: property (text), widget (K3ListView, dictionaryList)
-#: wordcompletion/wordcompletionui.ui:219
+#: wordcompletion/wordcompletionwidget.cpp:87
 msgid "Dictionary"
 msgstr "Сөздік"
 
-#. i18n: ectx: property (text), widget (K3ListView, dictionaryList)
-#: wordcompletion/wordcompletionui.ui:224
+#: wordcompletion/wordcompletionwidget.cpp:87
 msgid "Language"
 msgstr "Тіл"
 
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
+#: wordcompletion/wordcompletionwidget.cpp:105
+#: wordcompletion/wordcompletionwidget.cpp:164
 msgid "without name"
 msgstr "атаусыз"
 
-#: wordcompletion/wordcompletionwidget.cpp:254
+#: wordcompletion/wordcompletionwidget.cpp:213
 msgid "Export Dictionary"
 msgstr "Сөздікті экспорттау"
 
-#: wordcompletion/wordlist.cpp:114
+#: wordcompletion/wordlist.cpp:129
 msgid "Creating Word List"
 msgstr "Сөз тізімін құру"
 
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:294
+#: wordcompletion/wordlist.cpp:129 wordcompletion/wordlist.cpp:313
 msgid "Parsing the KDE documentation..."
 msgstr "KDE құжаттамасын талдау..."
 
-#: wordcompletion/wordlist.cpp:241
+#: wordcompletion/wordlist.cpp:259
 msgid "Merging dictionaries..."
 msgstr "Сөздіктерді біріктіру..."
 
-#: wordcompletion/wordlist.cpp:312
+#: wordcompletion/wordlist.cpp:332
 msgid "Parsing file..."
 msgstr "Файлды талдау..."
 
-#: wordcompletion/wordlist.cpp:323
+#: wordcompletion/wordlist.cpp:344
 msgid "Parsing directory..."
 msgstr "Каталогты талдау..."
 
-#: wordcompletion/wordlist.cpp:515
+#: wordcompletion/wordlist.cpp:536
 msgid "Performing spell check..."
 msgstr "Емлені тексеру..."
+
+#~ msgid "Currently Selected Phrase or Phrase Book"
+#~ msgstr "Таңдалған сөйлем не тілашары"
+
+#~ msgid " (%2 of 1 book selected)"
+#~ msgid_plural " (%2 of %1 books selected)"
+#~ msgstr[0] " (%2 / %1 тілашар таңдалған)"
+
+#~ msgid "Prints the currently selected phrase(s) or phrase book(s)"
+#~ msgstr "Таңдалған сөйлем(дер)ді не тілашар(лар)ды басып шығару"
+
+#~ msgid ""
+#~ "In order to use the '%1' key as a shortcut, it must be combined with the "
+#~ "Win, Alt, Ctrl, and/or Shift keys."
+#~ msgstr ""
+#~ "'%1' пернесі тек Win, Alt, Ctrl, және/немесе Shift пернелерімен бірге "
+#~ "тіркесім құра алады.."
+
+#~ msgid "Invalid Shortcut Key"
+#~ msgstr "Жарамсыз тіркесім пернесі"
+
+#~ msgid ""
+#~ "The '%1' key combination has already been allocated to %2.\n"
+#~ "Please choose a unique key combination."
+#~ msgstr ""
+#~ "'%1' перне тіркесімі %2 дегенге бұрын арнап қойылған.\n"
+#~ "Кайталанбайтын тіркесімді таңдаңыз."
+
+#~ msgid "the standard \"%1\" action"
+#~ msgstr "\"%1\" әрекеті үшін стандартты"
+
+#~ msgid "Conflict with Standard Application Shortcut"
+#~ msgstr "Қолданбаның стандартты тіркесімімен қайшылық"
+
+#~ msgid "the global \"%1\" action"
+#~ msgstr "\"%1\" әрекеті үшін жалпы жүйелігі"
+
+#~ msgid "Conflict with Global Shortcuts"
+#~ msgstr "Жалпы жүйелік тіркесімімен қайшылық"
+
+#~ msgid "an other phrase"
+#~ msgstr "басқа сөйлем"
+
+#~ msgid "Key Conflict"
+#~ msgstr "Перне қайшылығы"
