@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-04-24 08:25+0000\n"
+"POT-Creation-Date: 2015-07-03 08:38+0000\n"
 "PO-Revision-Date: 2011-08-28 06:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -48,7 +48,7 @@ msgstr "\"%1\" деген жоқ не орындалмайтын файл."
 msgid "Output from chiasmus"
 msgstr "Chiasmus-тың шығысы"
 
-#: backends/chiasmus/chiasmusjob.cpp:234 ui/messagebox.cpp:269
+#: backends/chiasmus/chiasmusjob.cpp:234 ui/messagebox.cpp:135
 #, kde-format
 msgid "Encryption failed: %1"
 msgstr "Шифрлау жаңылысы: %1"
@@ -394,6 +394,35 @@ msgstr "Сенімді куәліктер"
 #: kleo/keyfiltermanager.cpp:134
 msgid "Other Certificates"
 msgstr "Басқа куәліктер"
+
+#: ui/auditlogviewer.cpp:38
+msgid "View GnuPG Audit Log"
+msgstr "GnuPG аудит журналын көру"
+
+#: ui/auditlogviewer.cpp:49
+msgid "&Save to Disk..."
+msgstr "Дискіне &сақтау..."
+
+#: ui/auditlogviewer.cpp:52
+msgid "&Copy to Clipboard"
+msgstr "Алма&су буферіне көшіріп алу"
+
+#: ui/auditlogviewer.cpp:52
+msgid "Copy Audit Log to Clipboard"
+msgstr "Аудит журналын алмасу буферіне көшіріп алу"
+
+#: ui/auditlogviewer.cpp:87
+msgid "Choose File to Save GnuPG Audit Log to"
+msgstr "GnuPG аудит журналын сақтайтын файлын таңдау"
+
+#: ui/auditlogviewer.cpp:110
+#, kde-format
+msgid "Could not save to file \"%1\": %2"
+msgstr "\"%1\" файлына сақтау болмайды: %2"
+
+#: ui/auditlogviewer.cpp:112
+msgid "File Save Error"
+msgstr "Файлды сақтау қатесі"
 
 #: ui/cryptoconfigdialog.cpp:44
 msgid "Configure GnuPG Backend"
@@ -953,48 +982,15 @@ msgstr "Нәтижелі кілт тізімі"
 msgid "Recheck Key"
 msgstr "Кілтті қайта тексеру"
 
-#: ui/messagebox.cpp:70
-msgid "&Save to Disk..."
-msgstr "Дискіне &сақтау..."
-
-#: ui/messagebox.cpp:77
-msgid "&Copy to Clipboard"
-msgstr "Алма&су буферіне көшіріп алу"
-
-#: ui/messagebox.cpp:77
-msgid "Copy Audit Log to Clipboard"
-msgstr "Аудит журналын алмасу буферіне көшіріп алу"
-
-#: ui/messagebox.cpp:83
-msgid "&Show Audit Log"
-msgstr "Аудит журналы &көрсетілсін"
-
-#: ui/messagebox.cpp:93
-msgid "View GnuPG Audit Log"
-msgstr "GnuPG аудит журналын көру"
-
-#: ui/messagebox.cpp:142
-msgid "Choose File to Save GnuPG Audit Log to"
-msgstr "GnuPG аудит журналын сақтайтын файлын таңдау"
-
-#: ui/messagebox.cpp:165
-#, kde-format
-msgid "Could not save to file \"%1\": %2"
-msgstr "\"%1\" файлына сақтау болмайды: %2"
-
-#: ui/messagebox.cpp:167
-msgid "File Save Error"
-msgstr "Файлды сақтау қатесі"
-
-#: ui/messagebox.cpp:207
+#: ui/messagebox.cpp:73
 msgid "Your system does not have support for GnuPG Audit Logs"
 msgstr "Жүйеңіз GnuPG аудит журналыдарын жургізу дегенді білмейді."
 
-#: ui/messagebox.cpp:208
+#: ui/messagebox.cpp:74
 msgid "System Error"
 msgstr "Жүйелік қате"
 
-#: ui/messagebox.cpp:215
+#: ui/messagebox.cpp:81
 #, kde-format
 msgid ""
 "An error occurred while trying to retrieve the GnuPG Audit Log:\n"
@@ -1003,50 +999,54 @@ msgstr ""
 "GnuPG аудит журналын көру әрекеті кезінде бір қате орын алды:\n"
 "%1"
 
-#: ui/messagebox.cpp:217
+#: ui/messagebox.cpp:83
 msgid "GnuPG Audit Log Error"
 msgstr "GnuPG аудит журнал қатесі"
 
-#: ui/messagebox.cpp:224
+#: ui/messagebox.cpp:90
 msgid "No GnuPG Audit Log available for this operation."
 msgstr "Бұндай әрекет істетін GnuPG аудит журналы жоқ."
 
-#: ui/messagebox.cpp:225
+#: ui/messagebox.cpp:91
 msgid "No GnuPG Audit Log"
 msgstr "GnuPG аудит журналы жоқ"
 
-#: ui/messagebox.cpp:245 ui/messagebox.cpp:251
+#: ui/messagebox.cpp:111 ui/messagebox.cpp:117
 msgid "GnuPG Audit Log Viewer"
 msgstr "GnuPG аудит журналын қарау"
 
-#: ui/messagebox.cpp:257
+#: ui/messagebox.cpp:123
 #, kde-format
 msgid "Signing failed: %1"
 msgstr "Қолтаңбалау жаңылысы: %1"
 
-#: ui/messagebox.cpp:258
+#: ui/messagebox.cpp:124
 msgid "Signing successful"
 msgstr "Қолтаңбалау сәтті өтті"
 
-#: ui/messagebox.cpp:270
+#: ui/messagebox.cpp:136
 msgid "Encryption successful"
 msgstr "Шифрлау сәтті өтті"
 
-#: ui/messagebox.cpp:291
+#: ui/messagebox.cpp:157
 msgid "Signing Result"
 msgstr "Қолтаңбалау нәтижелері"
 
-#: ui/messagebox.cpp:303
+#: ui/messagebox.cpp:169
 msgid "Signing Error"
 msgstr "Қолтаңбалау қатесі"
 
-#: ui/messagebox.cpp:315 ui/messagebox.cpp:339
+#: ui/messagebox.cpp:181 ui/messagebox.cpp:205
 msgid "Encryption Result"
 msgstr "Шифрлау нәтижесі"
 
-#: ui/messagebox.cpp:327 ui/messagebox.cpp:351
+#: ui/messagebox.cpp:193 ui/messagebox.cpp:217
 msgid "Encryption Error"
 msgstr "Шифрлау қатесі"
+
+#: ui/messagebox.cpp:265
+msgid "&Show Audit Log"
+msgstr "Аудит журналы &көрсетілсін"
 
 #: ui/progressdialog.cpp:92
 #, kde-format
