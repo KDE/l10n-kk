@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-21 07:56+0000\n"
+"POT-Creation-Date: 2015-09-22 10:02+0000\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -300,7 +300,7 @@ msgstr "fov.dat ашылмады."
 msgid "KStars Exported Sky Image"
 msgstr "KStars экспорттаған аспан кескіні "
 
-#: auxiliary/imageexporter.cpp:84 main.cpp:116
+#: auxiliary/imageexporter.cpp:84 main.cpp:117
 #: printing/foveditordialog.cpp:164
 #, kde-format
 msgid "Could not parse image format of %1; assuming PNG."
@@ -2936,7 +2936,7 @@ msgid "Solver aborted after %1 second."
 msgid_plural "Solver aborted after %1 seconds"
 msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғарылды"
 
-#: ekos/align.cpp:808 ekos/capture.cpp:1352 ekos/ekosmanager.cpp:2162
+#: ekos/align.cpp:808 ekos/capture.cpp:1352 ekos/ekosmanager.cpp:2176
 #: ekos/focus.cpp:1492 ekos/guide.cpp:466 ekos/mount.cpp:314
 #: ekos/scheduler.cpp:139
 #, kde-format
@@ -3838,7 +3838,7 @@ msgstr "Жәй"
 #. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
 #. i18n: ectx: property (title), widget (QGroupBox, ccdGroup)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture.ui:34 ekos/ekosmanager.cpp:2197 ekos/focus.ui:21
+#: ekos/capture.ui:34 ekos/ekosmanager.cpp:2211 ekos/focus.ui:21
 #: ekos/opsekos.ui:235
 msgid "CCD"
 msgstr "CCD"
@@ -4296,7 +4296,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, processINDIB)
-#: ekos/ekosmanager.cpp:821 ekos/ekosmanager.cpp:1385 ekos/ekosmanager.ui:326
+#: ekos/ekosmanager.cpp:821 ekos/ekosmanager.cpp:1395 ekos/ekosmanager.ui:326
 msgid "Start INDI"
 msgstr "INDI жұмысын бастау"
 
@@ -4316,20 +4316,39 @@ msgstr ""
 msgid "INDI Server"
 msgstr "INDI сервері:"
 
-#: ekos/ekosmanager.cpp:1073
+#: ekos/ekosmanager.cpp:1064
+#, fuzzy
+#| msgid "Connecting INDI devices..."
+msgid "Starting INDI services..."
+msgstr "INDI құрылғылармен байланысу..."
+
+#: ekos/ekosmanager.cpp:1075
 msgid "INDI services started. Please connect devices."
 msgstr "INDI қызметі басталды. Құрылғыларды қосыңыз."
 
-#: ekos/ekosmanager.cpp:1094
-#, kde-format
-msgid "INDI services started. Connection to %1 at %2 is successful."
+#: ekos/ekosmanager.cpp:1085
+#, fuzzy, kde-format
+#| msgid "Connection to INDI server at host %1 with port %2 failed."
+msgid "Connecting to remote INDI server at %1 on port %2 ..."
+msgstr "INDI сервері %1 хостының %2 портына қосылу жаңылысы."
+
+#: ekos/ekosmanager.cpp:1092
+#, fuzzy
+#| msgid "Name of the remote INDI focuser device."
+msgid "Failed to connect to remote INDI server!"
+msgstr "Қашық INDI тоғыс келтіргіш құрылғының атауы."
+
+#: ekos/ekosmanager.cpp:1104
+#, fuzzy
+#| msgid "INDI services started. Connection to %1 at %2 is successful."
+msgid "INDI services started. Connection to remote INDI server is successful."
 msgstr "INDI қызметі басталды. %2 дегендегі %1 құрылғысы сәтті қосылды."
 
-#: ekos/ekosmanager.cpp:1106
+#: ekos/ekosmanager.cpp:1116
 msgid "Stop INDI"
 msgstr "INDI-ні тоқтату"
 
-#: ekos/ekosmanager.cpp:1151
+#: ekos/ekosmanager.cpp:1161
 #, fuzzy, kde-format
 #| msgid "Unable to completely establish remote devices. %1 device remaining."
 #| msgid_plural ""
@@ -4340,15 +4359,15 @@ msgid ""
 "Please ensure the device is connected and powered on."
 msgstr "Қашықтағы құрылғылар толығымен орнатылған жоқ. %1 құрылғылар қалды."
 
-#: ekos/ekosmanager.cpp:1152 ekos/ekosmanager.cpp:1157
-#: ekos/ekosmanager.cpp:1191 ekos/ekosmanager.cpp:1196
+#: ekos/ekosmanager.cpp:1162 ekos/ekosmanager.cpp:1167
+#: ekos/ekosmanager.cpp:1201 ekos/ekosmanager.cpp:1206
 #, fuzzy
 #| msgid "1 star detected."
 #| msgid_plural "%1 stars detected."
 msgid "Ekos startup error"
 msgstr "%1 жұлдыз көрінді."
 
-#: ekos/ekosmanager.cpp:1156
+#: ekos/ekosmanager.cpp:1166
 #, fuzzy, kde-format
 #| msgid "Unable to completely establish remote devices. %1 device remaining."
 #| msgid_plural ""
@@ -4359,7 +4378,7 @@ msgid ""
 "Please ensure each device is connected and powered on."
 msgstr "Қашықтағы құрылғылар толығымен орнатылған жоқ. %1 құрылғылар қалды."
 
-#: ekos/ekosmanager.cpp:1190
+#: ekos/ekosmanager.cpp:1200
 #, fuzzy, kde-format
 #| msgid "Unable to completely establish remote devices. %1 device remaining."
 #| msgid_plural ""
@@ -4370,7 +4389,7 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr "Қашықтағы құрылғылар толығымен орнатылған жоқ. %1 құрылғылар қалды."
 
-#: ekos/ekosmanager.cpp:1195
+#: ekos/ekosmanager.cpp:1205
 #, fuzzy, kde-format
 #| msgid "Unable to completely establish remote devices. %1 device remaining."
 #| msgid_plural ""
@@ -4381,69 +4400,69 @@ msgid ""
 "Please ensure remote device name corresponds to actual device name."
 msgstr "Қашықтағы құрылғылар толығымен орнатылған жоқ. %1 құрылғылар қалды."
 
-#: ekos/ekosmanager.cpp:1276
+#: ekos/ekosmanager.cpp:1286
 msgid "Connecting INDI devices..."
 msgstr "INDI құрылғылармен байланысу..."
 
-#: ekos/ekosmanager.cpp:1348
+#: ekos/ekosmanager.cpp:1358
 msgid "Disconnecting INDI devices..."
 msgstr "INDI құрылғыларды ажырату."
 
-#: ekos/ekosmanager.cpp:1393
+#: ekos/ekosmanager.cpp:1403
 msgid "INDI services stopped."
 msgstr "INDI қызметтері тоқталды."
 
-#: ekos/ekosmanager.cpp:1588
+#: ekos/ekosmanager.cpp:1602
 msgid "Remote devices established. Please connect devices."
 msgstr "Қашықтағы құрылғылар орнатылған. Құрылғыларды қосыңыз."
 
-#: ekos/ekosmanager.cpp:1733 ekos/ekosmanager.cpp:1780
-#: ekos/ekosmanager.cpp:1891 ekos/ekosmanager.cpp:1902
-#: ekos/ekosmanager.cpp:1913 indi/indistd.cpp:438
+#: ekos/ekosmanager.cpp:1747 ekos/ekosmanager.cpp:1794
+#: ekos/ekosmanager.cpp:1905 ekos/ekosmanager.cpp:1916
+#: ekos/ekosmanager.cpp:1927 indi/indistd.cpp:447
 #, kde-format
 msgid "%1 is online."
 msgstr "%1 байланыста."
 
-#: ekos/ekosmanager.cpp:1867
+#: ekos/ekosmanager.cpp:1881
 #, fuzzy, kde-format
 #| msgid "%1 is online."
 msgid "%1 filter is online."
 msgstr "%1 байланыста."
 
-#: ekos/ekosmanager.cpp:1933
+#: ekos/ekosmanager.cpp:1947
 #, kde-format
 msgid "%1 is offline."
 msgstr "%1 желіден тыс."
 
-#: ekos/ekosmanager.cpp:2235
+#: ekos/ekosmanager.cpp:2249
 msgid "Alignment"
 msgstr "Дәлдеу"
 
 #. i18n: ectx: property (text), widget (QCheckBox, focusModuleCheck)
-#: ekos/ekosmanager.cpp:2262 ekos/scheduler.ui:177
+#: ekos/ekosmanager.cpp:2276 ekos/scheduler.ui:177
 #: fitsviewer/fitsviewer.cpp:298
 msgid "Focus"
 msgstr "Көздегені"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: ekos/ekosmanager.cpp:2295 ekos/opsekos.ui:225
+#: ekos/ekosmanager.cpp:2309 ekos/opsekos.ui:225
 #, fuzzy
 #| msgid "Count"
 msgid "Mount"
 msgstr "Саны:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, guideModuleCheck)
-#: ekos/ekosmanager.cpp:2318 ekos/scheduler.ui:203
+#: ekos/ekosmanager.cpp:2332 ekos/scheduler.ui:203
 #: fitsviewer/fitsviewer.cpp:302
 msgid "Guide"
 msgstr "Бағыттамасы"
 
-#: ekos/ekosmanager.cpp:2377
+#: ekos/ekosmanager.cpp:2391
 #, kde-format
 msgid "Guider port from %1 is ready."
 msgstr "%1 дегеннін дәлдегіш порты дайын."
 
-#: ekos/ekosmanager.cpp:2694
+#: ekos/ekosmanager.cpp:2708
 msgid "No active FITS Viewer windows to show/hide."
 msgstr ""
 
@@ -8079,7 +8098,7 @@ msgstr "Бинарлық деректерді бұдан KStars-ға және к
 msgid "Upload"
 msgstr "Жүктеп беру"
 
-#: indi/indistd.cpp:382
+#: indi/indistd.cpp:391
 #, kde-format
 msgid "Data file saved to %1"
 msgstr "Деректер файлы %1 деп сақталды"
@@ -50142,57 +50161,68 @@ msgstr "Дениелс-Харбор"
 msgid "Extensive testing and suggestions for Ekos/INDI."
 msgstr ""
 
-#: main.cpp:92
+#: main.cpp:82
+#, fuzzy
+#| msgctxt "Country name"
+#| msgid "St. Lucia"
+msgid "Stephane Lucas"
+msgstr "Сент-Люсия"
+
+#: main.cpp:82
+msgid "Extensive testing and suggestions for Ekos Scheduler."
+msgstr ""
+
+#: main.cpp:93
 msgid "Dump sky image to file"
 msgstr "Аспан кескінін файлға түсіру"
 
-#: main.cpp:93
+#: main.cpp:94
 msgid "Script to execute"
 msgstr "Орындайтын скрипт"
 
-#: main.cpp:94
+#: main.cpp:95
 msgid "Width of sky image"
 msgstr "Аспан кескінінің ені"
 
-#: main.cpp:95
+#: main.cpp:96
 msgid "Height of sky image"
 msgstr "Аспан кескінінің биіктігі"
 
-#: main.cpp:96
+#: main.cpp:97
 msgid "Filename for sky image"
 msgstr "Аспан кескіні файлының атауы"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, InputComboBatch)
-#: main.cpp:97 tools/modcalcjd.ui:120
+#: main.cpp:98 tools/modcalcjd.ui:120
 msgid "Date and time"
 msgstr "Тәулік пен уақыт"
 
-#: main.cpp:98
+#: main.cpp:99
 msgid "Start with clock paused"
 msgstr "Тоқтаулы сағатымен бастау"
 
-#: main.cpp:105
+#: main.cpp:106
 msgid "Dumping sky image"
 msgstr "Аспан кескінін түсіру"
 
-#: main.cpp:159 main.cpp:209
+#: main.cpp:160 main.cpp:210
 msgid "Using CPU date/time instead."
 msgstr "Компьютердің күн/уақыт мәліметі пайдаланылды."
 
-#: main.cpp:185
+#: main.cpp:186
 msgid "Script executed."
 msgstr "Скрипт орындалды."
 
-#: main.cpp:187
+#: main.cpp:188
 msgid "Could not execute script."
 msgstr "Скрипт орындалмады."
 
-#: main.cpp:196
+#: main.cpp:197
 #, kde-format
 msgid "Unable to save image: %1 "
 msgstr "Келесі кескін сақталмады: %1"
 
-#: main.cpp:197
+#: main.cpp:198
 #, kde-format
 msgid "Saved to file: %1"
 msgstr "Сақталған файл: %1"
