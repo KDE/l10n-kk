@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-22 08:34+0000\n"
+"POT-Creation-Date: 2015-10-23 07:53+0000\n"
 "PO-Revision-Date: 2013-07-11 02:26+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -643,6 +643,7 @@ msgid "Property"
 msgstr "Қасиеті"
 
 #: src/collectionfieldsdialog.cpp:852 src/collections/filecatalog.cpp:108
+#: src/fetch/srufetcher.cpp:552
 msgid "Value"
 msgstr "Мәні"
 
@@ -739,7 +740,7 @@ msgid "Publisher"
 msgstr "Шығарушысы"
 
 #: src/collections/bibtexcollection.cpp:139
-#: src/fetch/hathitrustfetcher.cpp:302 src/fetch/srufetcher.cpp:474
+#: src/fetch/hathitrustfetcher.cpp:302 src/fetch/srufetcher.cpp:481
 #: src/fetch/z3950fetcher.cpp:562
 msgid "Address"
 msgstr "Адресі"
@@ -833,7 +834,7 @@ msgid "URL"
 msgstr "URL"
 
 #: src/collections/bibtexcollection.cpp:245 src/fetch/entrezfetcher.cpp:457
-#: src/fetch/hathitrustfetcher.cpp:303 src/fetch/srufetcher.cpp:475
+#: src/fetch/hathitrustfetcher.cpp:303 src/fetch/srufetcher.cpp:482
 #: src/fetch/z3950fetcher.cpp:563
 msgid "Abstract"
 msgstr "Түйіндеме"
@@ -2921,7 +2922,7 @@ msgstr "BoardGameGeek"
 msgid "Source Options"
 msgstr "Көздің параметрлері"
 
-#: src/fetch/configwidget.cpp:56
+#: src/fetch/configwidget.cpp:68
 msgid "Available Fields"
 msgstr "Бар өрістері"
 
@@ -3140,13 +3141,13 @@ msgid "Illustrator"
 msgstr "Иллюстраторы"
 
 #: src/fetch/hathitrustfetcher.cpp:305 src/fetch/isbndbfetcher.cpp:353
-#: src/fetch/srufetcher.cpp:476 src/fetch/z3950fetcher.cpp:565
+#: src/fetch/srufetcher.cpp:483 src/fetch/z3950fetcher.cpp:565
 msgctxt "Dewey Decimal classification system"
 msgid "Dewey Decimal"
 msgstr "Ондық Dewey жіктеуі"
 
 #: src/fetch/hathitrustfetcher.cpp:306 src/fetch/isbndbfetcher.cpp:354
-#: src/fetch/srufetcher.cpp:477 src/fetch/z3950fetcher.cpp:566
+#: src/fetch/srufetcher.cpp:484 src/fetch/z3950fetcher.cpp:566
 msgctxt "Library of Congress classification system"
 msgid "LoC Classification"
 msgstr "Конгрес кітапханасының жіктеуі"
@@ -3217,46 +3218,52 @@ msgstr "Бірнеше дерек көздері"
 msgid "OpenLibrary Link"
 msgstr "OpenLibrary сілтемесі"
 
-#: src/fetch/srufetcher.cpp:459 z3950.cpp:2
+#: src/fetch/srufetcher.cpp:466 z3950.cpp:2
 msgid "Library of Congress (US)"
 msgstr "Конгрес кітапханасы (АҚШ)"
 
-#: src/fetch/srufetcher.cpp:464
+#: src/fetch/srufetcher.cpp:471
 msgid "SRU Server"
 msgstr "SRU сервері"
 
-#: src/fetch/srufetcher.cpp:492 src/fetch/z3950fetcher.cpp:588
+#: src/fetch/srufetcher.cpp:499 src/fetch/z3950fetcher.cpp:588
 msgid "Hos&t: "
 msgstr "Хос&ты: "
 
-#: src/fetch/srufetcher.cpp:499 src/fetch/z3950fetcher.cpp:594
+#: src/fetch/srufetcher.cpp:506 src/fetch/z3950fetcher.cpp:594
 msgid "Enter the host name of the server."
 msgstr "Сервер хостының атауын кетіру."
 
-#: src/fetch/srufetcher.cpp:504 src/fetch/z3950fetcher.cpp:599
+#: src/fetch/srufetcher.cpp:511 src/fetch/z3950fetcher.cpp:599
 msgid "&Port: "
 msgstr "&Порты: "
 
-#: src/fetch/srufetcher.cpp:509 src/fetch/z3950fetcher.cpp:604
+#: src/fetch/srufetcher.cpp:516 src/fetch/z3950fetcher.cpp:604
 #, kde-format
 msgid "Enter the port number of the server. The default is %1."
 msgstr "Сервердің порттың нөмірін келтіріңіз. Әдетте бұл %1"
 
-#: src/fetch/srufetcher.cpp:514
+#: src/fetch/srufetcher.cpp:521
 msgid "Path: "
 msgstr "Жолы: "
 
-#: src/fetch/srufetcher.cpp:519
+#: src/fetch/srufetcher.cpp:526
 msgid "Enter the path to the database used by the server."
 msgstr "Сервер пайдаланатын деректер қорының жолын келтіру."
 
-#: src/fetch/srufetcher.cpp:524
+#: src/fetch/srufetcher.cpp:531
 msgid "Format: "
 msgstr "Пішімі: "
 
-#: src/fetch/srufetcher.cpp:534
+#: src/fetch/srufetcher.cpp:543
 msgid "Enter the result format used by the server."
 msgstr "Сервер пайдаланатын нәтиже пішімін келтіру."
+
+#: src/fetch/srufetcher.cpp:552
+#, fuzzy
+#| msgid "Fields"
+msgid "Field"
+msgstr "Өрістер"
 
 #: src/fetch/themoviedbfetcher.cpp:258 src/fetch/themoviedbfetcher.cpp:428
 msgid "TMDb Link"
@@ -3780,12 +3787,12 @@ msgstr "Үлгі нобайы"
 msgid "Cancel"
 msgstr "Қайту"
 
-#: src/gui/stringmapdialog.cpp:75
+#: src/gui/stringmapwidget.cpp:68
 msgctxt "set a value"
 msgid "&Set"
 msgstr "&Орнату"
 
-#: src/gui/stringmapdialog.cpp:79
+#: src/gui/stringmapwidget.cpp:72
 msgctxt "delete a value"
 msgid "&Delete"
 msgstr "&Өшіру"
