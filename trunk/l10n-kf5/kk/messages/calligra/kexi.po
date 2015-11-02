@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-01 08:17+0000\n"
+"POT-Creation-Date: 2015-11-02 07:46+0000\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -968,7 +968,24 @@ msgstr "\"%1\" нысанның атауы өзгертілмеді."
 msgid "Could not open project \"%1\"."
 msgstr "\"%1\" жобасы ашылмалы."
 
-#: core/kexiproject.cpp:336
+#: core/kexiproject.cpp:304
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not open file. The file <filename>%1</filename> does not exist."
+msgctxt "@info"
+msgid ""
+"Could not open project file. The file <filename>%1</filename> does not exist."
+msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
+
+#: core/kexiproject.cpp:307 core/kexiproject.cpp:1462
+#: main/startup/KexiStartup.cpp:811 main/startup/KexiStartup.cpp:820
+#: main/startup/KexiStartup.cpp:831
+msgctxt "@title:window"
+msgid "Could Not Open File"
+msgstr "Файл ашылмады"
+
+#: core/kexiproject.cpp:343
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database project %1 does not appear to have been created using Kexi and "
@@ -982,28 +999,28 @@ msgstr ""
 "%1 деректер қоры жобасы Kexi бағдарламада құрған емес сияқты, сондықтан "
 "ашылмайды.<br><br>Ол басқа құралымен жасалған SQLite файлы.</qt>"
 
-#: core/kexiproject.cpp:361
+#: core/kexiproject.cpp:368
 #, kde-format
 msgid "Could not create project \"%1\"."
 msgstr "\"%1\" жобасы құрылмады."
 
-#: core/kexiproject.cpp:404 core/kexiproject.cpp:473
+#: core/kexiproject.cpp:411 core/kexiproject.cpp:480
 msgid "Project major version"
 msgstr "Жобаның басты нұсқасы"
 
-#: core/kexiproject.cpp:406 core/kexiproject.cpp:475
+#: core/kexiproject.cpp:413 core/kexiproject.cpp:482
 msgid "Project minor version"
 msgstr "Жоба нұсқасының тармағы"
 
-#: core/kexiproject.cpp:408
+#: core/kexiproject.cpp:415
 msgid "Project caption"
 msgstr "Жоба айдары"
 
-#: core/kexiproject.cpp:410
+#: core/kexiproject.cpp:417
 msgid "Project description"
 msgstr "Жобаның сипаттамасы"
 
-#: core/kexiproject.cpp:945
+#: core/kexiproject.cpp:952
 #, fuzzy, kde-format
 #| msgid "Opening object \"%1\" failed."
 msgid ""
@@ -1011,19 +1028,19 @@ msgid ""
 "%2%3"
 msgstr "\"%1\" нысаны ашылмады."
 
-#: core/kexiproject.cpp:964
+#: core/kexiproject.cpp:971
 msgid "This project is opened as read only."
 msgstr "Бұл жоба тек оқу үшін ашылған."
 
-#: core/kexiproject.cpp:996
+#: core/kexiproject.cpp:1003
 msgid "Could not remove object's user data."
 msgstr "Нысанның пайдаланушы деректері өшірілмеді."
 
-#: core/kexiproject.cpp:1124
+#: core/kexiproject.cpp:1131
 msgid "Warning: entire project's data will be removed."
 msgstr "Ескерту: жобаның барлық деректері өшіріледі."
 
-#: core/kexiproject.cpp:1140
+#: core/kexiproject.cpp:1147
 #, fuzzy, kde-format
 #| msgid ""
 #| "The project %1 already exists.\n"
@@ -1036,14 +1053,14 @@ msgstr ""
 "%1 деген жоба бар ғой.\n"
 "Оны жаңа, бос жобамен ауыстырмақсыз ба?"
 
-#: core/kexiproject.cpp:1144
+#: core/kexiproject.cpp:1151
 #, fuzzy
 #| msgid "Replace"
 msgctxt "@action:button"
 msgid "Replace"
 msgstr "Ауыстыру"
 
-#: core/kexiproject.cpp:1168
+#: core/kexiproject.cpp:1175
 #, fuzzy, kde-format
 #| msgid "Do you want to drop the project \"%1\"?"
 msgid ""
@@ -1051,14 +1068,14 @@ msgid ""
 "%1"
 msgstr "\"%1\" жобаны өшірмексіз бе?"
 
-#: core/kexiproject.cpp:1170
+#: core/kexiproject.cpp:1177
 #, fuzzy
 #| msgid "Delete object"
 msgctxt "@action:button"
 msgid "Delete Project"
 msgstr "Нысанды өшіру"
 
-#: core/kexiproject.cpp:1184
+#: core/kexiproject.cpp:1191
 #, fuzzy
 #| msgid ""
 #| "Could not drop this project. Database connection for this project has "
@@ -1069,11 +1086,11 @@ msgid ""
 msgstr ""
 "Жоба өшірілмейді. Бұл жоба бойынша деректер қоры тек оқуға ғана деп қосылған."
 
-#: core/kexiproject.cpp:1449
+#: core/kexiproject.cpp:1456
 msgid "Open As Read Only"
 msgstr "Тек оқу үшін ашу"
 
-#: core/kexiproject.cpp:1452
+#: core/kexiproject.cpp:1459
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1082,12 +1099,6 @@ msgid ""
 msgstr ""
 "<para><filename>%1</filename> файлы оқу мен жазуға ашылмады.</para><para>Тек "
 "оқу үшін ашылсын ба?</para>"
-
-#: core/kexiproject.cpp:1455 main/startup/KexiStartup.cpp:811
-#: main/startup/KexiStartup.cpp:820 main/startup/KexiStartup.cpp:831
-msgctxt "@title:window"
-msgid "Could Not Open File"
-msgstr "Файл ашылмады"
 
 #: core/kexiprojectdata.cpp:197
 #, fuzzy, kde-format
