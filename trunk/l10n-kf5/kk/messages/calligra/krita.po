@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-12-17 07:23+0000\n"
+"POT-Creation-Date: 2015-12-19 07:06+0000\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -3573,7 +3573,7 @@ msgid "Layer Style"
 msgstr "Қабаттың өлшемі"
 
 #: image/kis_layer_properties_icons.cpp:34 image/kis_paint_layer.cc:208
-#: plugins/extensions/dockers/animation/animation_docker.cpp:126
+#: plugins/extensions/dockers/animation/animation_docker.cpp:148
 #: plugins/extensions/dockers/animation/onion_skins_docker.cpp:37
 #, fuzzy
 #| msgid "&Constrain proportions"
@@ -10306,54 +10306,71 @@ msgstr ""
 msgid "Luma"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:43
+#: plugins/extensions/dockers/animation/animation_docker.cpp:57
 #, fuzzy
 #| msgid "Animated"
 msgid "Animation"
 msgstr "Анимацияланған"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:54
+#: plugins/extensions/dockers/animation/animation_docker.cpp:68
+#: ui/input/kis_change_frame_action.cpp:43
 #, fuzzy
 #| msgid "Previous Favourite Preset"
 msgid "Previous Frame"
 msgstr "Алдыңғы таңдамалы дайыны"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:58
+#: plugins/extensions/dockers/animation/animation_docker.cpp:72
+#: ui/input/kis_change_frame_action.cpp:42
 #, fuzzy
 #| msgctxt "(qtundo-format)"
 #| msgid "Remove Layer"
 msgid "Next Frame"
 msgstr "Қабатты алып тастау"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:62
+#: plugins/extensions/dockers/animation/animation_docker.cpp:76
 #, fuzzy
 #| msgid "Previous Favourite Preset"
 msgid "Previous Key Frame"
 msgstr "Алдыңғы таңдамалы дайыны"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:66
+#: plugins/extensions/dockers/animation/animation_docker.cpp:80
 #, fuzzy
 #| msgid "Insert Name"
 msgid "Next Key Frame"
 msgstr "Атауын ендіру"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:70
+#: plugins/extensions/dockers/animation/animation_docker.cpp:84
 #, fuzzy
 #| msgid "&First page"
 msgid "First Frame"
 msgstr "&Алғашқы бетті"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:74
+#: plugins/extensions/dockers/animation/animation_docker.cpp:88
 #, fuzzy
 #| msgid "Last used"
 msgid "Last Frame"
 msgstr "Соңғы пайдаланған"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:78
+#: plugins/extensions/dockers/animation/animation_docker.cpp:92
 #, fuzzy
 #| msgid "Play macro"
 msgid "Play / Pause"
 msgstr "Макросты орындау"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:497
+#, kde-format
+msgid "Effective FPS:\t%1"
+msgstr ""
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:498
+#, kde-format
+msgid "Real FPS:\t%1"
+msgstr ""
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:499
+#, kde-format
+msgid "Frames dropped:\t%1\\%"
+msgstr ""
 
 #: plugins/extensions/dockers/animation/kis_animation_utils.cpp:32
 #, fuzzy
@@ -10389,12 +10406,18 @@ msgstr "Авто режімі"
 
 #: plugins/extensions/dockers/animation/kis_animation_utils.cpp:37
 #, fuzzy
+#| msgid "Copy From"
+msgid "Drop Frames"
+msgstr "Келесіден көшірмелеу"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:38
+#, fuzzy
 #| msgid "Line width:"
 msgid "Show in Timeline"
 msgstr "Сызықтың қалыңдығы:"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:54
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:146
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:55
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:147
 #, fuzzy
 #| msgid "Insert Name"
 msgctxt "(qtundo-format)"
@@ -10402,14 +10425,14 @@ msgid "Copy Keyframe"
 msgid_plural "Copy Keyframes"
 msgstr[0] "Атауын ендіру"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:62
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:63
 #, fuzzy
 #| msgid "Insert Name"
 msgctxt "(qtundo-format)"
 msgid "Add Keyframe"
 msgstr "Атауын ендіру"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:74
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:75
 #, fuzzy
 #| msgid "Insert Name"
 msgctxt "(qtundo-format)"
@@ -10417,7 +10440,7 @@ msgid "Remove Keyframe"
 msgid_plural "Remove Keyframes"
 msgstr[0] "Атауын ендіру"
 
-#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:143
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:144
 #, fuzzy
 #| msgid "Insert Name"
 msgctxt "(qtundo-format)"
@@ -10541,6 +10564,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, btnDeleteKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnOnionSkinOptions)
 #. i18n: ectx: property (text), widget (QToolButton, btnLazyFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnDropFrames)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnViewMode)
@@ -10570,6 +10594,7 @@ msgstr ""
 #: plugins/extensions/dockers/animation/wdg_animation.ui:411
 #: plugins/extensions/dockers/animation/wdg_animation.ui:428
 #: plugins/extensions/dockers/animation/wdg_animation.ui:438
+#: plugins/extensions/dockers/animation/wdg_animation.ui:448
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:66
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:151
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:170
@@ -10606,14 +10631,14 @@ msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, lblPlaySpeed)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:470
+#: plugins/extensions/dockers/animation/wdg_animation.ui:480
 #, fuzzy
 #| msgid "Speed"
 msgid "Play Speed:"
 msgstr "Жылдамдығы"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFramerate)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:493
+#: plugins/extensions/dockers/animation/wdg_animation.ui:503
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
@@ -22142,6 +22167,18 @@ msgstr ""
 #: ui/input/kis_alternate_invocation_action.cpp:50
 msgid "Pick Background Color from Merged Image"
 msgstr ""
+
+#: ui/input/kis_change_frame_action.cpp:38
+#, fuzzy
+#| msgid "Save the current dimensions"
+msgid "Switch Time"
+msgstr "Қазіргі өлшемдерін сақтау"
+
+#: ui/input/kis_change_frame_action.cpp:39
+#, fuzzy
+#| msgid "The <i>Rotate Canvas</i> action rotates the canvas."
+msgid "The <i>Switch Time</i> action changes the current time of the image."
+msgstr "<i>Өрісті бұру</i> амалы."
 
 #: ui/input/kis_change_primary_setting_action.cpp:34
 msgid "Change Primary Setting"
