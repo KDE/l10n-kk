@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-13 07:41+0000\n"
+"POT-Creation-Date: 2016-01-15 07:49+0000\n"
 "PO-Revision-Date: 2012-08-03 07:39+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,8 +27,15 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
+#. i18n: ectx: Menu (archive)
+#: app/arkui.rc:5 part/ark_part.rc:5
+#, fuzzy
+#| msgid "Open an archive"
+msgid "&Archive"
+msgstr "Архивті ашу"
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: app/arkui.rc:13
+#: app/arkui.rc:20
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар"
 
@@ -243,35 +250,35 @@ msgstr ""
 msgid "Unable to find Ark's KPart component, please check your installation."
 msgstr "Ark-тың KPart компоненті табылған жоқ, орнатылғанын тексеріңіз."
 
-#: app/mainwindow.cpp:172
+#: app/mainwindow.cpp:174
 msgctxt "action, to open an archive"
 msgid "Open"
 msgstr "Ашу"
 
-#: app/mainwindow.cpp:173
+#: app/mainwindow.cpp:175
 msgid ""
 "Click to open an archive, click and hold to open a recently-opened archive"
 msgstr ""
 "Архивті ашу үшін түріңіз, жуырда ашылғанын ашу үшін түртіп басып тұрыңыз"
 
-#: app/mainwindow.cpp:174
+#: app/mainwindow.cpp:176
 msgid "Open an archive"
 msgstr "Архивті ашу"
 
-#: app/mainwindow.cpp:224
+#: app/mainwindow.cpp:226
 #, fuzzy
 #| msgid "Open an archive"
 msgctxt "to open an archive"
 msgid "Open Archive"
 msgstr "Архивті ашу"
 
-#: app/mainwindow.cpp:233
+#: app/mainwindow.cpp:235
 #, fuzzy
 #| msgid "All Valid Archives\n"
 msgid "All supported archives ("
 msgstr "Барлық архив түрлері\n"
 
-#: app/mainwindow.cpp:314
+#: app/mainwindow.cpp:316
 #, fuzzy
 #| msgid "Create New Archive"
 msgid "Create a new Archive"
@@ -793,11 +800,6 @@ msgctxt "Unnamed column"
 msgid "??"
 msgstr "??"
 
-#. i18n: ectx: Menu (file)
-#: part/ark_part.rc:5
-msgid "&File"
-msgstr "&Файл"
-
 #. i18n: ectx: Menu (action)
 #: part/ark_part.rc:9
 msgid "&Action"
@@ -1248,23 +1250,30 @@ msgid "Could not add the file <filename>%1</filename> to the archive."
 msgstr "<filename>%1</filename> файлы архивке қосылмады."
 
 #: plugins/libarchive/libarchivehandler.cpp:105
-#: plugins/libarchive/libarchivehandler.cpp:178
-#, kde-format
+#, fuzzy
+#| msgid "Could not create the folder %1"
+msgctxt "@info"
+msgid "Could not open the archive."
+msgstr "%1 қапшығы құрылмады"
+
+#: plugins/libarchive/libarchivehandler.cpp:130
+#, fuzzy
+#| msgid "An error occurred while adding the files to the archive."
+msgctxt "@info"
+msgid "Could not read until the end of the archive"
+msgstr "Архивке файлдарды қосқан кезде бір қате орын алды."
+
+#: plugins/libarchive/libarchivehandler.cpp:179
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not open the archive <filename>%1</filename> for reading"
 msgctxt "@info"
 msgid ""
-"Could not open the archive <filename>%1</filename>, libarchive cannot handle "
-"it."
-msgstr ""
-"<filename>%1</filename> архиві ашылмады, libarchive онымен айналаса алмайды."
+"Could not open the archive <filename>%1</filename>.<nl/>Check whether you "
+"have sufficient permissions."
+msgstr "<filename>%1</filename> архиві оқуға ашылмады"
 
-#: plugins/libarchive/libarchivehandler.cpp:129
-#, kde-format
-msgctxt "@info"
-msgid ""
-"The archive reading failed with the following error: <message>%1</message>"
-msgstr "Архивті оқу жаңылысы. Қате хабарламасы: <message>%1</message>"
-
-#: plugins/libarchive/libarchivehandler.cpp:249
+#: plugins/libarchive/libarchivehandler.cpp:251
 #, fuzzy
 #| msgid ""
 #| "This archive contains archive entries with absolute paths, which are not "
@@ -1276,7 +1285,7 @@ msgstr ""
 "Бұл архивте абсолютті жолы көрсетілген жазулары бар. Ark ондайды әлі "
 "таңымайды."
 
-#: plugins/libarchive/libarchivehandler.cpp:388
+#: plugins/libarchive/libarchivehandler.cpp:390
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error creating directory <filename>%1</filename>"
@@ -1284,17 +1293,17 @@ msgctxt "@info"
 msgid "Extraction failed at:<nl/><filename>%1</filename>"
 msgstr "<filename>%1</filename> қапшығын құрғанда қате пайда болды"
 
-#: plugins/libarchive/libarchivehandler.cpp:442
-#: plugins/libarchive/libarchivehandler.cpp:635
+#: plugins/libarchive/libarchivehandler.cpp:444
+#: plugins/libarchive/libarchivehandler.cpp:637
 msgid "The archive reader could not be initialized."
 msgstr "Архивті оқитын бағдарламасы бастайтын күйіне келтірілмеді."
 
-#: plugins/libarchive/libarchivehandler.cpp:455
-#: plugins/libarchive/libarchivehandler.cpp:648
+#: plugins/libarchive/libarchivehandler.cpp:457
+#: plugins/libarchive/libarchivehandler.cpp:650
 msgid "The source file could not be read."
 msgstr "Көз файлы оқылмады."
 
-#: plugins/libarchive/libarchivehandler.cpp:466
+#: plugins/libarchive/libarchivehandler.cpp:468
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to locate program <filename>%2</filename> on disk."
@@ -1303,14 +1312,14 @@ msgctxt "@info"
 msgid "Failed to create a temporary file to compress <filename>%1</filename>."
 msgstr "Дискіде <filename>%2</filename> бағдарламасы табылған жоқ."
 
-#: plugins/libarchive/libarchivehandler.cpp:472
-#: plugins/libarchive/libarchivehandler.cpp:664
+#: plugins/libarchive/libarchivehandler.cpp:474
+#: plugins/libarchive/libarchivehandler.cpp:666
 msgid "The archive writer could not be initialized."
 msgstr "Архивті жазатын бағдарламасы бастайтын күйіне келтірілмеді."
 
-#: plugins/libarchive/libarchivehandler.cpp:502
-#: plugins/libarchive/libarchivehandler.cpp:530
-#: plugins/libarchive/libarchivehandler.cpp:694
+#: plugins/libarchive/libarchivehandler.cpp:504
+#: plugins/libarchive/libarchivehandler.cpp:532
+#: plugins/libarchive/libarchivehandler.cpp:696
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1322,14 +1331,14 @@ msgid ""
 "%1</message>"
 msgstr "Сығу әдісін орнату жаңылысы. Қатесі: <message>%1</message>"
 
-#: plugins/libarchive/libarchivehandler.cpp:524
-#: plugins/libarchive/libarchivehandler.cpp:689
+#: plugins/libarchive/libarchivehandler.cpp:526
+#: plugins/libarchive/libarchivehandler.cpp:691
 #, kde-format
 msgid "The compression type '%1' is not supported by Ark."
 msgstr "'%1' сығу түрін Ark танымайды."
 
-#: plugins/libarchive/libarchivehandler.cpp:538
-#: plugins/libarchive/libarchivehandler.cpp:701
+#: plugins/libarchive/libarchivehandler.cpp:540
+#: plugins/libarchive/libarchivehandler.cpp:703
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1341,8 +1350,8 @@ msgid ""
 "><message>%1</message>"
 msgstr "Архивті жазуға ашу жаңылысы. Қате хабарламасы: <message>%1</message>"
 
-#: plugins/libarchive/libarchivehandler.cpp:605
-#: plugins/libarchive/libarchivehandler.cpp:732
+#: plugins/libarchive/libarchivehandler.cpp:607
+#: plugins/libarchive/libarchivehandler.cpp:734
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1350,7 +1359,7 @@ msgid ""
 ">Operation aborted."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:658
+#: plugins/libarchive/libarchivehandler.cpp:660
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Failed to locate program <filename>%2</filename> on disk."
@@ -1359,7 +1368,7 @@ msgctxt "@info"
 msgid "Failed to create a temporary file."
 msgstr "Дискіде <filename>%2</filename> бағдарламасы табылған жоқ."
 
-#: plugins/libarchive/libarchivehandler.cpp:895
+#: plugins/libarchive/libarchivehandler.cpp:897
 #, kde-format
 msgctxt "@info Error in a message box"
 msgid "Ark could not compress <filename>%1</filename>:<nl/>%2"
@@ -1383,6 +1392,22 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді оқу қатесі."
+
+#~ msgid "&File"
+#~ msgstr "&Файл"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Could not open the archive <filename>%1</filename>, libarchive cannot "
+#~ "handle it."
+#~ msgstr ""
+#~ "<filename>%1</filename> архиві ашылмады, libarchive онымен айналаса "
+#~ "алмайды."
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The archive reading failed with the following error: <message>%1</message>"
+#~ msgstr "Архивті оқу жаңылысы. Қате хабарламасы: <message>%1</message>"
 
 #, fuzzy
 #~| msgid "Extra Compression Options"
@@ -1505,11 +1530,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 #~ msgstr "Архивті тарқатқан кезде бір қате орын алды."
 
 #, fuzzy
-#~| msgid "Could not create the folder %1"
-#~ msgid "Could not open the archive '%1'"
-#~ msgstr "%1 қапшығы құрылмады"
-
-#, fuzzy
 #~| msgid "An error occurred while trying to create the archive."
 #~ msgid "An error occurred while trying to read entry #%1 of the archive"
 #~ msgstr "Архивті құрған кезде бір қате орын алды."
@@ -1547,11 +1567,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 #, fuzzy
 #~| msgid "An error occurred while adding the files to the archive."
 #~ msgid "Couldn't open the file '%1', libarchive can't handle it."
-#~ msgstr "Архивке файлдарды қосқан кезде бір қате орын алды."
-
-#, fuzzy
-#~| msgid "An error occurred while adding the files to the archive."
-#~ msgid "Could not add the file %1 to the archive"
 #~ msgstr "Архивке файлдарды қосқан кезде бір қате орын алды."
 
 #, fuzzy
