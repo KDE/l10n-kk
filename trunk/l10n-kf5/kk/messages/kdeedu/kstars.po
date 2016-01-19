@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-18 09:20+0000\n"
+"POT-Creation-Date: 2016-01-19 08:58+0000\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -338,7 +338,7 @@ msgstr "Кескін экспорталмады: %1 URL жарамсыз"
 msgid "KStars image viewer: %1"
 msgstr "Кескінді қарау құралы: %1"
 
-#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:87
+#: auxiliary/imageviewer.cpp:132 tools/eyepiecefield.cpp:92
 msgid "Invert colors"
 msgstr "Түстерін терістеу"
 
@@ -3355,7 +3355,7 @@ msgid "Display received FITS images unto solver FOV rectangle in the sky map"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_solverOverlay)
-#: ekos/align.ui:286 tools/eyepiecefield.cpp:86
+#: ekos/align.ui:286 tools/eyepiecefield.cpp:91
 msgid "Overlay"
 msgstr ""
 
@@ -8698,8 +8698,9 @@ msgstr "Келесі INDI драйверінің файлы ашылмады: %1
 #. i18n: ectx: property (text), item, widget (QComboBox, driverComboBox)
 #. i18n: ectx: property (text), widget (QPushButton, NoneButton)
 #: indi/drivermanager.cpp:1230 indi/indidriver.cpp:751
-#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/eyepiecefield.cpp:111
-#: tools/obslistwizard.ui:147 tools/whatsinteresting/wiequipsettings.ui:344
+#: oal/equipmentwriter.ui:197 oal/log.cpp:262 tools/exporteyepieceview.cpp:67
+#: tools/eyepiecefield.cpp:116 tools/obslistwizard.ui:147
+#: tools/whatsinteresting/wiequipsettings.ui:344
 msgid "None"
 msgstr "Жоқ"
 
@@ -51344,7 +51345,7 @@ msgstr "Үлгісі:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, Type)
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:114
+#: oal/equipmentwriter.ui:94 tools/eyepiecefield.cpp:119
 #: tools/whatsinteresting/wiequipsettings.ui:328
 msgid "Refractor"
 msgstr "Рефрактор"
@@ -56375,66 +56376,116 @@ msgstr "Күзгі күн-түн теңілуі:"
 msgid "Winter solstice:"
 msgstr "Қысқы Күн тоқырауы:"
 
-#: tools/eyepiecefield.cpp:48
+#: tools/exporteyepieceview.cpp:50
+#, fuzzy
+#| msgid "Eyepiece AFOV:"
+msgid "Export eyepiece view"
+msgstr "Окулярдың көрінетін ШӨР-і:"
+
+#: tools/exporteyepieceview.cpp:65
+msgid "Overlay orientation vs. time ticks: "
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:68
+msgid "Towards Zenith"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:69
+#, fuzzy
+#| msgctxt "Country name"
+#| msgid "Estonia"
+msgid "Dobsonian View"
+msgstr "Эстония"
+
+#: tools/exporteyepieceview.cpp:105
+msgid ""
+"Note: This overlay makes sense only if the view was generated in alt/az mode "
+"with a preset such as Refractor or Vanilla"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:107
+msgid ""
+"Note: This overlay  makes sense only if the view was generated in alt/az "
+"mode with a preset such as Dobsonian"
+msgstr ""
+
+#: tools/exporteyepieceview.cpp:178
+#, fuzzy
+#| msgid "Save all Images"
+msgid "Save image as"
+msgstr "Бүкіл кескіндерді сақтау"
+
+#: tools/exporteyepieceview.cpp:178
+msgid "Image files (*.png *.jpg *.xpm *.bmp *.gif)"
+msgstr ""
+
+#: tools/eyepiecefield.cpp:50
 #, fuzzy
 #| msgid "Eyepiece AFOV:"
 msgid "Eyepiece Field View"
 msgstr "Окулярдың көрінетін ШӨР-і:"
 
-#: tools/eyepiecefield.cpp:84
+#: tools/eyepiecefield.cpp:65
+#, fuzzy
+#| msgid "Export"
+msgctxt "Export image"
+msgid "Export"
+msgstr "Экспорт ету"
+
+#: tools/eyepiecefield.cpp:89
 #, fuzzy
 #| msgid "Overview"
 msgid "Invert view"
 msgstr "Шолу"
 
-#: tools/eyepiecefield.cpp:85
+#: tools/eyepiecefield.cpp:90
 #, fuzzy
 #| msgctxt "City in Alberta Canada"
 #| msgid "Fairview"
 msgid "Flip view"
 msgstr "Фервью"
 
-#: tools/eyepiecefield.cpp:88
+#: tools/eyepiecefield.cpp:93
 #, fuzzy
 #| msgid "Show DSS image"
 msgid "Fetch DSS image"
 msgstr "DSS кескінін көрсету"
 
-#: tools/eyepiecefield.cpp:108
+#: tools/eyepiecefield.cpp:113
 #, fuzzy
 #| msgid "Rotation:"
 msgid "Rotation: "
 msgstr "Бұрылысы:"
 
-#: tools/eyepiecefield.cpp:112
+#: tools/eyepiecefield.cpp:117
 #, fuzzy
 #| msgctxt "City in Philippines"
 #| msgid "Manila"
 msgid "Vanilla"
 msgstr "Манила"
 
-#: tools/eyepiecefield.cpp:113
+#: tools/eyepiecefield.cpp:118
 #, fuzzy
 #| msgctxt "City in Alberta Canada"
 #| msgid "Fairview"
 msgid "Flipped"
 msgstr "Фервью"
 
-#: tools/eyepiecefield.cpp:115
+#: tools/eyepiecefield.cpp:120
 #, fuzzy
 #| msgctxt "Country name"
 #| msgid "Estonia"
 msgid "Dobsonian"
 msgstr "Эстония"
 
-#: tools/eyepiecefield.cpp:117
+#: tools/eyepiecefield.cpp:122
 #, fuzzy
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "reset"
 msgid "Preset: "
 msgstr "ысырып тастау"
 
-#: tools/eyepiecefield.cpp:539 tools/observinglist.cpp:1128
+#: tools/eyepiecefield.cpp:542 tools/observinglist.cpp:1128
 #, fuzzy
 #| msgid "Save the downloaded DSS/SDSS images?"
 msgid "Failed to download DSS/SDSS image!"
