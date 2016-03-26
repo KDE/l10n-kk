@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-20 07:35+0000\n"
+"POT-Creation-Date: 2016-03-26 07:49+0000\n"
 "PO-Revision-Date: 2012-08-03 07:39+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -352,13 +352,19 @@ msgstr ""
 msgid "Preview file size limit in megabytes."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:303
+#: kerfuffle/cliinterface.cpp:197
 #, fuzzy
 #| msgid "Incorrect password."
-msgid "Extraction failed due to a wrong password."
+msgid "Extraction failed. Make sure that enough space is available."
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/cliinterface.cpp:313 kerfuffle/cliinterface.cpp:327
+#: kerfuffle/cliinterface.cpp:200
+msgid ""
+"Extraction failed. Make sure you provided the correct password and that "
+"enough space is available."
+msgstr ""
+
+#: kerfuffle/cliinterface.cpp:215 kerfuffle/cliinterface.cpp:229
 #, fuzzy
 #| msgid "Could not create the folder %1"
 msgctxt "@info"
@@ -366,57 +372,64 @@ msgid "Could not move the extracted file to the destination directory."
 msgid_plural "Could not move the extracted files to the destination directory."
 msgstr[0] "%1 қапшығы құрылмады"
 
-#: kerfuffle/cliinterface.cpp:495
+#: kerfuffle/cliinterface.cpp:397
 #, kde-format
 msgctxt "@info"
 msgid "Failed to locate program <filename>%2</filename> on disk."
 msgid_plural "Failed to locate programs <filename>%2</filename> on disk."
 msgstr[0] "Дискіде <filename>%2</filename> бағдарламасы табылған жоқ."
 
-#: kerfuffle/cliinterface.cpp:866
+#: kerfuffle/cliinterface.cpp:891
+#, fuzzy
+#| msgid "Extraction failed because of an unexpected error."
+msgctxt "@info"
+msgid "Extraction failed because the disk is full."
+msgstr "Тарқату бір күтпеген қате себебінен жаңылды."
+
+#: kerfuffle/cliinterface.cpp:899
 #, fuzzy
 #| msgid "Incorrect password."
 msgctxt "@info"
 msgid "Extraction failed: Incorrect password"
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/cliinterface.cpp:873 kerfuffle/cliinterface.cpp:915
+#: kerfuffle/cliinterface.cpp:906 kerfuffle/cliinterface.cpp:948
 msgid "Extraction failed because of an unexpected error."
 msgstr "Тарқату бір күтпеген қате себебінен жаңылды."
 
-#: kerfuffle/cliinterface.cpp:908
+#: kerfuffle/cliinterface.cpp:941
 msgid "Incorrect password."
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/createdialog.cpp:166
+#: kerfuffle/createdialog.cpp:165
 msgid "The chosen password does not match the given verification password."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:169
+#: kerfuffle/createdialog.cpp:168
 #, fuzzy
 #| msgid "The password was incorrect. "
 msgid "The password cannot be empty."
 msgstr "Пароль жарамсыз. "
 
-#: kerfuffle/createdialog.cpp:188
+#: kerfuffle/createdialog.cpp:187
 #, kde-format
 msgid ""
 "Protection of the archive with password is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:201
+#: kerfuffle/createdialog.cpp:200
 #, kde-format
 msgid "Protection of the list of files is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "Deleting a file from the archive"
 #| msgid_plural "Deleting %1 files"
 msgid "Please select a filename for the archive."
 msgstr "%1 файлды өшіру"
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "One file selected"
 #| msgid_plural "%1 files selected"
@@ -1219,24 +1232,17 @@ msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr "<filename>%1</filename> деген қапшық екен."
 
-#: part/part.cpp:592
-#, kde-format
+#: part/part.cpp:594
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not open the archive <filename>%1</filename> for reading"
 msgctxt "@info"
 msgid ""
-"The archive <filename>%1</filename> already exists. Would you like to open "
-"it instead?"
-msgstr "<filename>%1</filename> деген архиві бар екен. Соны аша берелік пе?"
+"Could not overwrite <filename>%1</filename>. Check whether you have write "
+"permission."
+msgstr "<filename>%1</filename> архиві оқуға ашылмады"
 
-#: part/part.cpp:592
-msgctxt "@title:window"
-msgid "File Exists"
-msgstr "Файл бар екен"
-
-#: part/part.cpp:592
-msgid "Open File"
-msgstr "Файлды ашу"
-
-#: part/part.cpp:598
+#: part/part.cpp:600
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "The archive <filename>%1</filename> was not found."
@@ -1246,13 +1252,13 @@ msgid ""
 "file."
 msgstr "<filename>%1</filename> деген архив табылмады."
 
-#: part/part.cpp:601
+#: part/part.cpp:603
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr "<filename>%1</filename> деген архив табылмады."
 
-#: part/part.cpp:606
+#: part/part.cpp:608
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1264,7 +1270,31 @@ msgid ""
 "possible to read from it."
 msgstr "<filename>%1</filename> деген архиві бар екен. Соны аша берелік пе?"
 
+#: part/part.cpp:621
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "The archive <filename>%1</filename> already exists. Would you like to "
+#| "open it instead?"
+msgctxt "@info"
+msgid ""
+"The archive <filename>%1</filename> already exists. Do you wish to overwrite "
+"it?"
+msgstr "<filename>%1</filename> деген архиві бар екен. Соны аша берелік пе?"
+
 #: part/part.cpp:623
+msgctxt "@title:window"
+msgid "File Exists"
+msgstr "Файл бар екен"
+
+#: part/part.cpp:624
+#, fuzzy
+#| msgid "Overwrite"
+msgctxt "@action:button"
+msgid "Overwrite"
+msgstr "Үстінен жазу"
+
+#: part/part.cpp:645
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1278,23 +1308,23 @@ msgstr ""
 "<filename>%1</filename> архивті жүктеу жаңылысы. Қатесі: <message>%2</"
 "message>"
 
-#: part/part.cpp:666
+#: part/part.cpp:688
 #, fuzzy
 #| msgid "The archive writer could not be initialized."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "Архивті жазатын бағдарламасы бастайтын күйіне келтірілмеді."
 
-#: part/part.cpp:671
+#: part/part.cpp:693
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:718
+#: part/part.cpp:748
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:830
+#: part/part.cpp:860
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1306,24 +1336,24 @@ msgid ""
 msgstr ""
 "<filename>%1</filename> деген қапшық бар екен. Соған тарқата берелік пе?"
 
-#: part/part.cpp:832
+#: part/part.cpp:862
 #, fuzzy
 #| msgid "Files to be added"
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr "Қосуға арналған файлдар"
 
-#: part/part.cpp:1101
+#: part/part.cpp:1131
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "Файлдарды қосу"
 
-#: part/part.cpp:1108
+#: part/part.cpp:1138
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "Қапшықты қосу"
 
-#: part/part.cpp:1135
+#: part/part.cpp:1165
 #, fuzzy
 #| msgid ""
 #| "Deleting these files is not undoable. Are you sure you want to do this?"
@@ -1333,7 +1363,7 @@ msgid_plural ""
 "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr[0] "Бұл файлдарды өшірсе - қайтарылмайды. Сонда да өшірілсін бе?"
 
-#: part/part.cpp:1138
+#: part/part.cpp:1168
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Delete files"
@@ -1342,14 +1372,14 @@ msgid "Delete File"
 msgid_plural "Delete Files"
 msgstr[0] "Файлдарды өшіру"
 
-#: part/part.cpp:1177
+#: part/part.cpp:1207
 #, fuzzy
 #| msgid "Save Archive As"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "Архивті былай сақтау"
 
-#: part/part.cpp:1184
+#: part/part.cpp:1214
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1358,7 +1388,7 @@ msgid ""
 msgstr ""
 "<filename>%1</filename> деген архиві бар екен. Үстінен жазыла берсін бе?"
 
-#: part/part.cpp:1198
+#: part/part.cpp:1228
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1368,7 +1398,7 @@ msgstr ""
 "<filename>%1</filename> архиві көрсетілген орынға көшірілмеді. Архив енді "
 "жоқ."
 
-#: part/part.cpp:1212
+#: part/part.cpp:1242
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1526,6 +1556,9 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді оқу қатесі."
+
+#~ msgid "Open File"
+#~ msgstr "Файлды ашу"
 
 #~ msgid "Main Toolbar"
 #~ msgstr "Негізгі құралдар"
@@ -1727,9 +1760,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 
 #~ msgid "Delete files"
 #~ msgstr "Файлдарды өшіру"
-
-#~ msgid "Overwrite"
-#~ msgstr "Үстінен жазу"
 
 #~ msgid "Unable to open the file '%1', libarchive cannot handle it."
 #~ msgstr "'%1' файлы ашылмады, libarchive онымен айналаса алмайды."
