@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-29 01:59+0000\n"
+"POT-Creation-Date: 2016-03-30 01:46+0000\n"
 "PO-Revision-Date: 2013-09-27 04:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1742,20 +1742,25 @@ msgid "Spell checking Options"
 msgstr "Емле тексеру параметрлері"
 
 #: dialogs/preferences/mysqlserverprefs.cpp:32
-#: dialogs/preferences/postgresqlserverprefs.cpp:32 setupassistant.cpp:509
+#: dialogs/preferences/postgresqlserverprefs.cpp:32
+#: dialogs/setupassistant/serversetuppage.cpp:130
 msgid "Server:"
 msgstr "Сервері:"
 
 #: dialogs/preferences/mysqlserverprefs.cpp:35
-#: dialogs/preferences/postgresqlserverprefs.cpp:35 setupassistant.cpp:232
-#: setupassistant.cpp:360 setupassistant.cpp:465
+#: dialogs/preferences/postgresqlserverprefs.cpp:35
+#: dialogs/setupassistant/permissionssetuppage.cpp:105
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:109
+#: dialogs/setupassistant/serversetuppage.cpp:86
 msgctxt "@label:textbox Database Username"
 msgid "Username:"
 msgstr "Пайдаланушы:"
 
 #: dialogs/preferences/mysqlserverprefs.cpp:39
-#: dialogs/preferences/postgresqlserverprefs.cpp:39 setupassistant.cpp:236
-#: setupassistant.cpp:364 setupassistant.cpp:472
+#: dialogs/preferences/postgresqlserverprefs.cpp:39
+#: dialogs/setupassistant/permissionssetuppage.cpp:109
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:113
+#: dialogs/setupassistant/serversetuppage.cpp:93
 msgid "Password:"
 msgstr "Паролі:"
 
@@ -1766,12 +1771,14 @@ msgid "Default"
 msgstr "Әдетті"
 
 #: dialogs/preferences/mysqlserverprefs.cpp:44
-#: dialogs/preferences/postgresqlserverprefs.cpp:44 setupassistant.cpp:520
+#: dialogs/preferences/postgresqlserverprefs.cpp:44
+#: dialogs/setupassistant/serversetuppage.cpp:141
 msgid "Port:"
 msgstr "Порты:"
 
 #: dialogs/preferences/mysqlserverprefs.cpp:47
-#: dialogs/preferences/postgresqlserverprefs.cpp:47 setupassistant.cpp:479
+#: dialogs/preferences/postgresqlserverprefs.cpp:47
+#: dialogs/setupassistant/serversetuppage.cpp:100
 msgid "Database name:"
 msgstr "Деректер қорының атауы:"
 
@@ -1887,7 +1894,8 @@ msgstr ""
 "Ескерту: Сервер баптауларының көбі күшіне ену үшін Krecipes қайта бастау "
 "керек."
 
-#: dialogs/preferences/sqliteserverprefs.cpp:32 setupassistant.cpp:611
+#: dialogs/preferences/sqliteserverprefs.cpp:32
+#: dialogs/setupassistant/sqlitesetuppage.cpp:65
 msgid "Database file:"
 msgstr "Деректер қорының файлы:"
 
@@ -1915,7 +1923,8 @@ msgstr "Жаңа SQLite нұсқасының командасын таңдау"
 msgid "Path to SQLite new version command:"
 msgstr "Жаңа SQLite нұсқа командасының жолы:"
 
-#: dialogs/preferences/sqliteserverprefs.cpp:75 setupassistant.cpp:641
+#: dialogs/preferences/sqliteserverprefs.cpp:75
+#: dialogs/setupassistant/sqlitesetuppage.cpp:95
 msgid "Select SQLite database file"
 msgstr "SQLite деректер қоры файлы"
 
@@ -2071,7 +2080,7 @@ msgctxt "@title:column"
 msgid "Id"
 msgstr ""
 
-#: dialogs/recipeinput/ingredientseditor.cpp:545
+#: dialogs/recipeinput/ingredientseditor.cpp:549
 msgctxt "@title"
 msgid "Nutritive information status"
 msgstr ""
@@ -2102,6 +2111,30 @@ msgstr "Айдарлар"
 msgid "Paste from text"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, m_moveUpButton)
+#: dialogs/recipeinput/ingredientseditor.ui:109
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Move ingredient up"
+msgid "Move ingredient up"
+msgstr "Қоспаны жоғарлату"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, m_moveDownButton)
+#: dialogs/recipeinput/ingredientseditor.ui:120
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Move ingredient down"
+msgid "Move ingredient down"
+msgstr "Қоспаны төмендету"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, m_deleteButton)
+#: dialogs/recipeinput/ingredientseditor.ui:144
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Remove ingredient"
+msgid "Remove ingredient"
+msgstr "Қоспаны өшіру"
+
 #: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:88
 #: dialogs/recipeinput/recipeinputdialog.cpp:1202
 msgctxt "@info"
@@ -2119,17 +2152,21 @@ msgid ""
 msgstr "Нәрлік туралы мәліметті анықтағанда келесі жуықтау жасалған:"
 
 #: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:125
-#: dialogs/recipeinput/recipeinputdialog.cpp:1064
-#, kde-format
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:137
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<b>%1:</b> No nutrient information available. <a href=\"ingredient#"
+#| "%2\">Provide nutrient information.</a>"
 msgctxt "@info"
 msgid ""
-"<b>%1:</b> No nutrient information available. <a href=\"ingredient#"
-"%2\">Provide nutrient information.</a>"
+"<b>%1:</b> No nutrient information available. <a href=\"%2\">Provide "
+"nutrient information.</a>"
 msgstr ""
 "<b>%1:</b> Нәрлік туралы мәлімет жоқ. <a href=\"ingredient#%2\">Мәліметін "
 "келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:159
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:170
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2143,7 +2180,7 @@ msgstr ""
 "<b>%1:</b> Қоспаның салмағы келтірілмеген. <a href=\"ingredient#"
 "%2\">Салмағын келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:167
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:178
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2157,7 +2194,7 @@ msgstr ""
 "<b>%1:</b> Нәрлік туралы мәлімет жоқ. <a href=\"ingredient#%2\">Мәліметін "
 "келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:196
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:207
 #: dialogs/recipeinput/recipeinputdialog.cpp:1114
 #, kde-format
 msgctxt "@info"
@@ -2169,7 +2206,7 @@ msgstr ""
 "<b>%1:</b> Немесе <a href=\"ingredient#%3\">қоспаның керек салмағын "
 "келтіріңіз</a>, немесе мынау аудару мәліметін келтіріңіз: %2"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:207
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:218
 #: dialogs/recipeinput/recipeinputdialog.cpp:1126
 #, kde-format
 msgctxt "@info"
@@ -2180,7 +2217,7 @@ msgstr ""
 "<b>%1:</b> Қоспаның салмағы келтірілмеген. <a href=\"ingredient#"
 "%2\">Салмағын келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:216
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:227
 #: dialogs/recipeinput/recipeinputdialog.cpp:1133
 #, kde-format
 msgctxt "@info"
@@ -2191,7 +2228,7 @@ msgstr ""
 "<b>%1:</b> Әзірлеу әдісі келтірілген де, қоспаның салмағы жазылмаған. <a "
 "href=\"ingredient#%2\">Салмағын келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:223
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:234
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2207,7 +2244,7 @@ msgstr ""
 "<b>%1:</b> Келесі әзірлеу әдістері келтірілген де, қоспаның салмағы "
 "жазылмаған: %2<a href=\"ingredient#%3\">Салмағын келтіріңіз.</a>"
 
-#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:233
+#: dialogs/recipeinput/nutrientinfodetailsdialog.cpp:244
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2609,6 +2646,16 @@ msgid ""
 "saved. Would you like to save it now?"
 msgstr "Өзгертілген рецептті көрсету алдында сақтау керек. Қазір сақталсын ба?"
 
+#: dialogs/recipeinput/recipeinputdialog.cpp:1064
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<b>%1:</b> No nutrient information available. <a href=\"ingredient#"
+"%2\">Provide nutrient information.</a>"
+msgstr ""
+"<b>%1:</b> Нәрлік туралы мәлімет жоқ. <a href=\"ingredient#%2\">Мәліметін "
+"келтіріңіз.</a>"
+
 #: dialogs/recipeinput/recipeinputdialog.cpp:1085
 #, kde-format
 msgctxt "@info"
@@ -2828,6 +2875,216 @@ msgstr "Бірлікті таңдау"
 msgctxt "@title:group"
 msgid "Choose Unit"
 msgstr "Бірлікті таңдау"
+
+#: dialogs/setupassistant/datainitializepage.cpp:43
+msgid ""
+"<p>Krecipes comes with some delicious default recipes and useful data.</"
+"p><p>Would you like to initialize your database with those? Note that this "
+"will erase all your previous recipes if you have any.</p>"
+msgstr ""
+"<p>Krecipes бірқатар таңдамалы әдетті рецептерімен және пайдалы деректерімен "
+"орнатылады.</p><p>Деректер қорыңыз бастапқыда ол деректерімен толтырылсын "
+"ба? Бұл амал деректер қорында бар рецепттеріңізді өшіреді.</p>"
+
+#: dialogs/setupassistant/datainitializepage.cpp:68
+msgid "Yes please, initialize the database with the examples"
+msgstr "Иә, деректер қорында бастау кезінде мысалдары болсын"
+
+#: dialogs/setupassistant/datainitializepage.cpp:77
+msgid ""
+"<p>Krecipes can import nutrient data from the USDA's nutrient database for "
+"over 400 foods.  A total of 43 food properties are included for each food, "
+"such as energy, fat, vitamin C, etc.</p><p>Would you like to import this "
+"data now?  Note that this operation is safe to use on an existing database, "
+"and no data loss will occur.  This operation may take several minutes.</p>"
+msgstr ""
+"<p>Krecipes 400-ден аса азық-түлік нәрлігі туралы мәліметін АҚШ нәрлік "
+"туралы деректер қорынан импорттай алады. Әр азық-түлігінің 43 қасиетері "
+"келтірілген, мәселен, құндылығы, майлығы, C дәруменнің қаншалығы, т.б.</"
+"p><p>Оларды қазір импорттауды қалайсыз ба? Бұл амал деректер қорындағы басқа "
+"мәліметке тимейді, қауіпсіз және бірнеше минут алмақ.</p>"
+
+#: dialogs/setupassistant/datainitializepage.cpp:91
+msgid "Yes please, load the database with nutrient data for 400+ foods."
+msgstr "Иә, деректер қорына 400+ азық-түлік нәрлігі туралы дерегін жүктеу."
+
+#: dialogs/setupassistant/dbtypesetuppage.cpp:49
+msgid ""
+"Choose the type of database that you want to use. Most users will want to "
+"choose a simple local database here. However, you can also use remote "
+"servers by means of a MySQL or PostgreSQL database."
+msgstr ""
+"Қолданатын деректер қорын таңдау. Көбінде қарапайым жергілікті деректер қоры "
+"жетер. Бірақ MySQL не PostgreSQL қашық деректер қоры серверлерін де "
+"қолдануға болады."
+
+#: dialogs/setupassistant/dbtypesetuppage.cpp:66
+msgid "Simple Local File (SQLite)"
+msgstr "Қарапайым жергілікті файл (SQLite)"
+
+#: dialogs/setupassistant/dbtypesetuppage.cpp:69
+msgid "Local or Remote MySQL Database"
+msgstr "Жергілікті не қашық MySQL деректер қоры"
+
+#: dialogs/setupassistant/dbtypesetuppage.cpp:72
+msgid "Local or Remote PostgreSQL Database"
+msgstr "Жергілікті не қашық PostgreSQL деректер қоры"
+
+#: dialogs/setupassistant/permissionssetuppage.cpp:53
+msgid ""
+"<p>This dialog will allow you to specify a MySQL account that has the "
+"necessary permissions to access the Krecipes MySQL database.</p><p><b><font "
+"size=\"+1\">Most users that use Krecipes and MySQL for the first time can "
+"just leave the default parameters and press 'Next'.</font></b></p> <p>If you "
+"set a MySQL root password before, or you have already permissions as normal "
+"user, click on the appropriate option. Otherwise the account 'root' will be "
+"used, with no password.</p><p>[For security reasons, we strongly encourage "
+"you to setup a MySQL root password if you have not done so yet. Just type as "
+"root: mysqladmin password <i>your_password</i>]</p>"
+msgstr ""
+"<p>Бұл диалогта керек рұқсаттары бар Krecipes MySQL деректер қорының MySQL "
+"тіркелгісін келтіруге болады.</p><p><b><font size=\"+1\">Krecipes пен MySQL-"
+"ді бірінші рет қолданып жатқандар әдетті параметрлерін қалдырып \"Келесі' "
+"дегенді баса беруге болар.</font></b></p> <p>Егер MySQL әкімші паролі бұрын "
+"орнатылған болса, немесе кәдімгі пайдаланушының құқықтарына әлден ие "
+"болсаңыз, сәйкесті парметрлерді түртіңіз. Әйтпесе парольсіз 'root' "
+"тіркелгісі қолданбақ.</p><p>[Қауіпсіздік үшін MySQL root паролін орнатып "
+"қойғаны әбден абзал. Ол үшін root атынан былай теріңіз: mysqladmin password "
+"<i>пароліңіз</i>]</p>"
+
+#: dialogs/setupassistant/permissionssetuppage.cpp:71
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:74
+msgid "I have already set the necessary permissions"
+msgstr "Керек рұқсаттары бұрын орнатылған еді"
+
+#: dialogs/setupassistant/permissionssetuppage.cpp:88
+msgid "I have already set a MySQL root/admin account"
+msgstr "MySQL root/admin тіркелгісі бұрын орнатылған еді"
+
+#: dialogs/setupassistant/permissionssetuppage.cpp:100
+msgid "MySQL Administrator Account"
+msgstr "MySQL әкімшісінің тіркелгісі"
+
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:55
+msgid ""
+"<p>This dialog will allow you to specify a PostgreSQL account that has the "
+"necessary permissions to access the Krecipes PostgreSQL database.  This "
+"account may either be a <b>PostgreSQL superuser</b> or have the ability to "
+"both <b>create new PostgreSQL users and databases</b>.</p><p>If no superuser "
+"or privileged account is given, the account 'postgres' will be attempted, "
+"with no password.  If this is insufficient for your PostgreSQL setup, you "
+"<b>must</b> select the appropriate option below to enter the information of "
+"a privileged PostgreSQL account.</p>"
+msgstr ""
+"<p>Бұл диалогта керек рұқсаттары бар Krecipes PostgreSQL деректер қорының "
+"PostgreSQL тіркелгісін келтіруге болады.  Бұл тіркелгі <b>PostgreSQL "
+"әкімшісі</b> немесе  <b>жаңа PostgreSQL пайдаланушы және деректер қорларын "
+"құруға</b> құқылы болу тиіс.</p><p>Егер әкімшісі не артықшылықты тіркелгісі "
+"келтірілмесе, парольсіз 'postgres' деген тіркелгі қолданып көріледі.  Егер "
+"бұл әррекет Сіздің PostgreSQL-ге жеткілікті болмаса, <b>міндеті түрде</b> "
+"төмендегі мүмкіндікті қолданып артықшылықты PostgreSQL тіркелгісінің "
+"мәліметін келтіріңіз.</p>"
+
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:91
+msgid "I have already set a superuser or privileged account"
+msgstr ""
+"root әкімші не артықшылықты пайдаланушы тіркелгісі бұрын орнатылған еді"
+
+#: dialogs/setupassistant/psqlpermissionssetuppage.cpp:104
+msgid "PostgreSQL Superuser or Privileged Account"
+msgstr "PostgreSQL әкімші не артықшылықты пайдаланушы тіркелгісі"
+
+#: dialogs/setupassistant/savepage.cpp:41
+msgid ""
+"Congratulations; all the necessary configuration setup is done. Press "
+"'Finish' to continue, and enjoy cooking!"
+msgstr ""
+"Құттықтаймыз; бүкіл керек баптау жасалды. 'Аяқтау' деп, тағамдарды әзірлеуге "
+"кірісіңіз!"
+
+#: dialogs/setupassistant/serversetuppage.cpp:56
+msgid ""
+"<p>In this dialog you can adjust the database server settings.</"
+"p><p><b>Warning: Passwords are stored in plain text and could potentially be "
+"compromised.  We recommend that you create a username and password "
+"combination solely for use by Krecipes.</b></p>"
+msgstr ""
+"<p>Бұл диалогта деректер қорын баптай аласыз.</p><p><b>Ескерту: Парольдер "
+"жәй мәтінді түрде сақталады, оны көріп қалу оңай. Сондықтан Krecipes-ке "
+"бөлек пайдаланушы мен паролі жұбын арнап қою жөн.</b></p>"
+
+#: dialogs/setupassistant/serversetuppage.cpp:110
+msgid "The server is remote"
+msgstr "Қашықтағы сервері"
+
+#: dialogs/setupassistant/serversetuppage.cpp:122
+msgid "Server / Client Settings"
+msgstr "Сервер/клиент параметрлері"
+
+#: dialogs/setupassistant/serversetuppage.cpp:135
+msgid "Client:"
+msgstr "Клиенті:"
+
+#: dialogs/setupassistant/serversetuppage.cpp:140
+msgctxt "@label:textbox Default Port"
+msgid "Default"
+msgstr "Әдетті"
+
+#: dialogs/setupassistant/setupassistant.cpp:40
+msgid "Welcome to Krecipes"
+msgstr "Krecipes: қош келдіңіз"
+
+#: dialogs/setupassistant/setupassistant.cpp:44
+msgid "Database Type"
+msgstr "Деректер қорының түрі"
+
+#: dialogs/setupassistant/setupassistant.cpp:48
+msgid "Database Management System Settings"
+msgstr "Деректер қоры жүйесін басқарып баптау"
+
+#: dialogs/setupassistant/setupassistant.cpp:52
+#: dialogs/setupassistant/setupassistant.cpp:56
+msgid "Database Permissions"
+msgstr "Деректер қорының рұқсаттары"
+
+#: dialogs/setupassistant/setupassistant.cpp:60
+msgid "Server Settings"
+msgstr "Серверінің параметрлері"
+
+#: dialogs/setupassistant/setupassistant.cpp:64
+msgid "Initialize Database"
+msgstr "Деректер қорын бастау күйіне келтіру"
+
+#: dialogs/setupassistant/setupassistant.cpp:68
+msgid "Finish & Save Settings"
+msgstr "Аяқтап баптауларын сақтау"
+
+#: dialogs/setupassistant/setupassistant.cpp:87
+msgid ""
+"There is currently no localized ingredient data for this locale.\n"
+"Would you like to load the English ingredients instead?"
+msgstr ""
+"Баламалы жергілікті қоспа дерегі жоқ.\n"
+"Аылшын қоспаларымен ауыстырылсын ба?"
+
+#: dialogs/setupassistant/sqlitesetuppage.cpp:51
+msgid "In this dialog you can adjust SQLite settings."
+msgstr "Бұл диалогта SQLite-ті баптай аласыз."
+
+#: dialogs/setupassistant/sqlitesetuppage.cpp:73
+msgid "Open file dialog"
+msgstr "Файл ашу диалогы"
+
+#: dialogs/setupassistant/welcomepage.cpp:42
+msgid ""
+"<p><b><font size=\"+1\">Thank you very much for choosing Krecipes.</font></"
+"b></p><p>It looks like this is the first time you are using it. This wizard "
+"will help you with the initial setup so that you can start using it quickly."
+"</p><p>Welcome, and enjoy cooking!</p>"
+msgstr ""
+"<p><b><font size=\"+1\">Krecipes-ті қолданғаныңызға рақмет.</font></b></"
+"p><p>Оны бірінші рет қолданып жатқаңыз секілді. Бұл шебер кірісуді тездетіп, "
+"бастапқы баптауына көмектеседі.</p><p>Тағам әзірлеуді тамашалаңыз!</p>"
 
 #: dialogs/setupdisplay.cpp:69
 msgid "Recipe Title"
@@ -4252,214 +4509,6 @@ msgstr "Ө&шіру"
 #| msgid "Comments:"
 msgid "Comments:"
 msgstr "Түсініктемелері:"
-
-#: setupassistant.cpp:43
-msgid "Welcome to Krecipes"
-msgstr "Krecipes: қош келдіңіз"
-
-#: setupassistant.cpp:47
-msgid "Database Type"
-msgstr "Деректер қорының түрі"
-
-#: setupassistant.cpp:51
-msgid "Database Management System Settings"
-msgstr "Деректер қоры жүйесін басқарып баптау"
-
-#: setupassistant.cpp:55 setupassistant.cpp:59
-msgid "Database Permissions"
-msgstr "Деректер қорының рұқсаттары"
-
-#: setupassistant.cpp:63
-msgid "Server Settings"
-msgstr "Серверінің параметрлері"
-
-#: setupassistant.cpp:67
-msgid "Initialize Database"
-msgstr "Деректер қорын бастау күйіне келтіру"
-
-#: setupassistant.cpp:71
-msgid "Finish & Save Settings"
-msgstr "Аяқтап баптауларын сақтау"
-
-#: setupassistant.cpp:90
-msgid ""
-"There is currently no localized ingredient data for this locale.\n"
-"Would you like to load the English ingredients instead?"
-msgstr ""
-"Баламалы жергілікті қоспа дерегі жоқ.\n"
-"Аылшын қоспаларымен ауыстырылсын ба?"
-
-#: setupassistant.cpp:146
-msgid ""
-"<p><b><font size=\"+1\">Thank you very much for choosing Krecipes.</font></"
-"b></p><p>It looks like this is the first time you are using it. This wizard "
-"will help you with the initial setup so that you can start using it quickly."
-"</p><p>Welcome, and enjoy cooking!</p>"
-msgstr ""
-"<p><b><font size=\"+1\">Krecipes-ті қолданғаныңызға рақмет.</font></b></"
-"p><p>Оны бірінші рет қолданып жатқаңыз секілді. Бұл шебер кірісуді тездетіп, "
-"бастапқы баптауына көмектеседі.</p><p>Тағам әзірлеуді тамашалаңыз!</p>"
-
-#: setupassistant.cpp:179
-msgid ""
-"<p>This dialog will allow you to specify a MySQL account that has the "
-"necessary permissions to access the Krecipes MySQL database.</p><p><b><font "
-"size=\"+1\">Most users that use Krecipes and MySQL for the first time can "
-"just leave the default parameters and press 'Next'.</font></b></p> <p>If you "
-"set a MySQL root password before, or you have already permissions as normal "
-"user, click on the appropriate option. Otherwise the account 'root' will be "
-"used, with no password.</p><p>[For security reasons, we strongly encourage "
-"you to setup a MySQL root password if you have not done so yet. Just type as "
-"root: mysqladmin password <i>your_password</i>]</p>"
-msgstr ""
-"<p>Бұл диалогта керек рұқсаттары бар Krecipes MySQL деректер қорының MySQL "
-"тіркелгісін келтіруге болады.</p><p><b><font size=\"+1\">Krecipes пен MySQL-"
-"ді бірінші рет қолданып жатқандар әдетті параметрлерін қалдырып \"Келесі' "
-"дегенді баса беруге болар.</font></b></p> <p>Егер MySQL әкімші паролі бұрын "
-"орнатылған болса, немесе кәдімгі пайдаланушының құқықтарына әлден ие "
-"болсаңыз, сәйкесті парметрлерді түртіңіз. Әйтпесе парольсіз 'root' "
-"тіркелгісі қолданбақ.</p><p>[Қауіпсіздік үшін MySQL root паролін орнатып "
-"қойғаны әбден абзал. Ол үшін root атынан былай теріңіз: mysqladmin password "
-"<i>пароліңіз</i>]</p>"
-
-#: setupassistant.cpp:198 setupassistant.cpp:325
-msgid "I have already set the necessary permissions"
-msgstr "Керек рұқсаттары бұрын орнатылған еді"
-
-#: setupassistant.cpp:215
-msgid "I have already set a MySQL root/admin account"
-msgstr "MySQL root/admin тіркелгісі бұрын орнатылған еді"
-
-#: setupassistant.cpp:227
-msgid "MySQL Administrator Account"
-msgstr "MySQL әкімшісінің тіркелгісі"
-
-#: setupassistant.cpp:306
-msgid ""
-"<p>This dialog will allow you to specify a PostgreSQL account that has the "
-"necessary permissions to access the Krecipes PostgreSQL database.  This "
-"account may either be a <b>PostgreSQL superuser</b> or have the ability to "
-"both <b>create new PostgreSQL users and databases</b>.</p><p>If no superuser "
-"or privileged account is given, the account 'postgres' will be attempted, "
-"with no password.  If this is insufficient for your PostgreSQL setup, you "
-"<b>must</b> select the appropriate option below to enter the information of "
-"a privileged PostgreSQL account.</p>"
-msgstr ""
-"<p>Бұл диалогта керек рұқсаттары бар Krecipes PostgreSQL деректер қорының "
-"PostgreSQL тіркелгісін келтіруге болады.  Бұл тіркелгі <b>PostgreSQL "
-"әкімшісі</b> немесе  <b>жаңа PostgreSQL пайдаланушы және деректер қорларын "
-"құруға</b> құқылы болу тиіс.</p><p>Егер әкімшісі не артықшылықты тіркелгісі "
-"келтірілмесе, парольсіз 'postgres' деген тіркелгі қолданып көріледі.  Егер "
-"бұл әррекет Сіздің PostgreSQL-ге жеткілікті болмаса, <b>міндеті түрде</b> "
-"төмендегі мүмкіндікті қолданып артықшылықты PostgreSQL тіркелгісінің "
-"мәліметін келтіріңіз.</p>"
-
-#: setupassistant.cpp:342
-msgid "I have already set a superuser or privileged account"
-msgstr ""
-"root әкімші не артықшылықты пайдаланушы тіркелгісі бұрын орнатылған еді"
-
-#: setupassistant.cpp:355
-msgid "PostgreSQL Superuser or Privileged Account"
-msgstr "PostgreSQL әкімші не артықшылықты пайдаланушы тіркелгісі"
-
-#: setupassistant.cpp:435
-msgid ""
-"<p>In this dialog you can adjust the database server settings.</"
-"p><p><b>Warning: Passwords are stored in plain text and could potentially be "
-"compromised.  We recommend that you create a username and password "
-"combination solely for use by Krecipes.</b></p>"
-msgstr ""
-"<p>Бұл диалогта деректер қорын баптай аласыз.</p><p><b>Ескерту: Парольдер "
-"жәй мәтінді түрде сақталады, оны көріп қалу оңай. Сондықтан Krecipes-ке "
-"бөлек пайдаланушы мен паролі жұбын арнап қою жөн.</b></p>"
-
-#: setupassistant.cpp:489
-msgid "The server is remote"
-msgstr "Қашықтағы сервері"
-
-#: setupassistant.cpp:501
-msgid "Server / Client Settings"
-msgstr "Сервер/клиент параметрлері"
-
-#: setupassistant.cpp:514
-msgid "Client:"
-msgstr "Клиенті:"
-
-#: setupassistant.cpp:519
-msgctxt "@label:textbox Default Port"
-msgid "Default"
-msgstr "Әдетті"
-
-#: setupassistant.cpp:597
-msgid "In this dialog you can adjust SQLite settings."
-msgstr "Бұл диалогта SQLite-ті баптай аласыз."
-
-#: setupassistant.cpp:619
-msgid "Open file dialog"
-msgstr "Файл ашу диалогы"
-
-#: setupassistant.cpp:671
-msgid ""
-"Congratulations; all the necessary configuration setup is done. Press "
-"'Finish' to continue, and enjoy cooking!"
-msgstr ""
-"Құттықтаймыз; бүкіл керек баптау жасалды. 'Аяқтау' деп, тағамдарды әзірлеуге "
-"кірісіңіз!"
-
-#: setupassistant.cpp:768
-msgid ""
-"<p>Krecipes comes with some delicious default recipes and useful data.</"
-"p><p>Would you like to initialize your database with those? Note that this "
-"will erase all your previous recipes if you have any.</p>"
-msgstr ""
-"<p>Krecipes бірқатар таңдамалы әдетті рецептерімен және пайдалы деректерімен "
-"орнатылады.</p><p>Деректер қорыңыз бастапқыда ол деректерімен толтырылсын "
-"ба? Бұл амал деректер қорында бар рецепттеріңізді өшіреді.</p>"
-
-#: setupassistant.cpp:793
-msgid "Yes please, initialize the database with the examples"
-msgstr "Иә, деректер қорында бастау кезінде мысалдары болсын"
-
-#: setupassistant.cpp:802
-msgid ""
-"<p>Krecipes can import nutrient data from the USDA's nutrient database for "
-"over 400 foods.  A total of 43 food properties are included for each food, "
-"such as energy, fat, vitamin C, etc.</p><p>Would you like to import this "
-"data now?  Note that this operation is safe to use on an existing database, "
-"and no data loss will occur.  This operation may take several minutes.</p>"
-msgstr ""
-"<p>Krecipes 400-ден аса азық-түлік нәрлігі туралы мәліметін АҚШ нәрлік "
-"туралы деректер қорынан импорттай алады. Әр азық-түлігінің 43 қасиетері "
-"келтірілген, мәселен, құндылығы, майлығы, C дәруменнің қаншалығы, т.б.</"
-"p><p>Оларды қазір импорттауды қалайсыз ба? Бұл амал деректер қорындағы басқа "
-"мәліметке тимейді, қауіпсіз және бірнеше минут алмақ.</p>"
-
-#: setupassistant.cpp:816
-msgid "Yes please, load the database with nutrient data for 400+ foods."
-msgstr "Иә, деректер қорына 400+ азық-түлік нәрлігі туралы дерегін жүктеу."
-
-#: setupassistant.cpp:864
-msgid ""
-"Choose the type of database that you want to use. Most users will want to "
-"choose a simple local database here. However, you can also use remote "
-"servers by means of a MySQL or PostgreSQL database."
-msgstr ""
-"Қолданатын деректер қорын таңдау. Көбінде қарапайым жергілікті деректер қоры "
-"жетер. Бірақ MySQL не PostgreSQL қашық деректер қоры серверлерін де "
-"қолдануға болады."
-
-#: setupassistant.cpp:881
-msgid "Simple Local File (SQLite)"
-msgstr "Қарапайым жергілікті файл (SQLite)"
-
-#: setupassistant.cpp:884
-msgid "Local or Remote MySQL Database"
-msgstr "Жергілікті не қашық MySQL деректер қоры"
-
-#: setupassistant.cpp:887
-msgid "Local or Remote PostgreSQL Database"
-msgstr "Жергілікті не қашық PostgreSQL деректер қоры"
 
 #: widgets/categorycombobox.cpp:36 widgets/categorycombobox.cpp:63
 msgid "All Categories"
