@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-31 07:59+0000\n"
+"POT-Creation-Date: 2016-04-07 08:08+0000\n"
 "PO-Revision-Date: 2012-08-03 07:39+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -262,7 +262,7 @@ msgstr "Архивті ашу"
 #: app/mainwindow.cpp:298
 #, fuzzy
 #| msgid "Create New Archive"
-msgid "Create a new Archive"
+msgid "Create New Archive"
 msgstr "Жаңа архивті құру"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupCompressFiles)
@@ -274,11 +274,11 @@ msgstr "Сығатын файлдар/қапшықтар"
 msgid "Compress to Archive"
 msgstr "Сығып архивтеу"
 
-#: kerfuffle/addtoarchive.cpp:140
+#: kerfuffle/addtoarchive.cpp:137
 msgid "No input files were given."
 msgstr "Кіріс файлдар келтірілген жоқ."
 
-#: kerfuffle/addtoarchive.cpp:151
+#: kerfuffle/addtoarchive.cpp:148
 msgid ""
 "You need to either supply a filename for the archive or a suffix (such as "
 "rar, tar.gz) with the <command>--autofilename</command> argument."
@@ -286,21 +286,21 @@ msgstr ""
 "Архив файлын атауын немесе <command>--autofilename</command> аргументіне "
 "керек (rar, tar.gz сияқты) жұрнағын келтіріңіз."
 
-#: kerfuffle/addtoarchive.cpp:182
+#: kerfuffle/addtoarchive.cpp:179
 #, fuzzy
 #| msgid ""
 #| "Failed to create the new archive. Permissions might not be sufficient."
 msgid "Failed to create the new archive. No suitable plugin found."
 msgstr "Жаңа архивті құру жаңылысы. Бәлкім, рұқсаттар жетіспейді."
 
-#: kerfuffle/addtoarchive.cpp:187
+#: kerfuffle/addtoarchive.cpp:184
 #, fuzzy
 #| msgid ""
 #| "Failed to create the new archive. Permissions might not be sufficient."
 msgid "Failed to create the new archive. Could not load a suitable plugin."
 msgstr "Жаңа архивті құру жаңылысы. Бәлкім, рұқсаттар жетіспейді."
 
-#: kerfuffle/addtoarchive.cpp:192
+#: kerfuffle/addtoarchive.cpp:189
 msgid "It is not possible to create archives of this type."
 msgstr "Архивтің бұл түрін құруға мүмкіндік жоқ."
 
@@ -379,75 +379,89 @@ msgid "Failed to locate program <filename>%2</filename> on disk."
 msgid_plural "Failed to locate programs <filename>%2</filename> on disk."
 msgstr[0] "Дискіде <filename>%2</filename> бағдарламасы табылған жоқ."
 
-#: kerfuffle/cliinterface.cpp:903
+#: kerfuffle/cliinterface.cpp:898
 #, fuzzy
 #| msgid "Extraction failed because of an unexpected error."
 msgctxt "@info"
 msgid "Extraction failed because the disk is full."
 msgstr "Тарқату бір күтпеген қате себебінен жаңылды."
 
-#: kerfuffle/cliinterface.cpp:911
+#: kerfuffle/cliinterface.cpp:906
 #, fuzzy
 #| msgid "Incorrect password."
 msgctxt "@info"
 msgid "Extraction failed: Incorrect password"
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/cliinterface.cpp:918 kerfuffle/cliinterface.cpp:960
+#: kerfuffle/cliinterface.cpp:913 kerfuffle/cliinterface.cpp:955
 msgid "Extraction failed because of an unexpected error."
 msgstr "Тарқату бір күтпеген қате себебінен жаңылды."
 
-#: kerfuffle/cliinterface.cpp:953
+#: kerfuffle/cliinterface.cpp:948
 msgid "Incorrect password."
 msgstr "Пароль дұрыс емес."
 
-#: kerfuffle/createdialog.cpp:165
-msgid "The chosen password does not match the given verification password."
-msgstr ""
-
-#: kerfuffle/createdialog.cpp:168
-#, fuzzy
-#| msgid "The password was incorrect. "
-msgid "The password cannot be empty."
-msgstr "Пароль жарамсыз. "
-
-#: kerfuffle/createdialog.cpp:187
+#: kerfuffle/createdialog.cpp:133
 #, kde-format
 msgid ""
 "Protection of the archive with password is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:200
+#: kerfuffle/createdialog.cpp:141
+#, fuzzy, kde-format
+#| msgid "&Automatically create subfolders"
+msgid "Automatically add .%1"
+msgstr "Ішкі қапшықтар &автоматты түрде құрылсын"
+
+#: kerfuffle/createdialog.cpp:205
+msgid "The chosen password does not match the given verification password."
+msgstr ""
+
+#: kerfuffle/createdialog.cpp:227
 #, kde-format
 msgid "Protection of the list of files is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:226
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kerfuffle/createdialog.ui:28
 #, fuzzy
-#| msgid "Deleting a file from the archive"
-#| msgid_plural "Deleting %1 files"
-msgid "Please select a filename for the archive."
-msgstr "%1 файлды өшіру"
+#| msgid "&Folders"
+msgid "Folder:"
+msgstr "Қа&пшықтар"
 
-#: kerfuffle/createdialog.cpp:226
-#, fuzzy
-#| msgid "One file selected"
-#| msgid_plural "%1 files selected"
-msgid "No file selected"
-msgstr "%1 файл таңдалған"
-
-#. i18n: ectx: property (text), widget (QCheckBox, encryptCheckBox)
-#: kerfuffle/createdialog.ui:29
-msgid "Protect the archive with a password"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupEncryptionOptions)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #: kerfuffle/createdialog.ui:45
-msgid "Password options"
+#, fuzzy
+#| msgid " Filename "
+msgid "Filename:"
+msgstr " Файлдың атауы "
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, filenameLineEdit)
+#: kerfuffle/createdialog.ui:52
+#, fuzzy
+#| msgid "Open an archive"
+msgid "Type archive name..."
+msgstr "Архивті ашу"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kerfuffle/createdialog.ui:59
+msgid "Type:"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kerfuffle/createdialog.ui:86
+msgid "Extension:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (KCollapsibleGroupBox, collapsibleEncryption)
+#: kerfuffle/createdialog.ui:104
+#, fuzzy
+#| msgid "<b>Password protected:</b> Yes<br/>"
+msgid "Password Protection"
+msgstr "<b>Парольмен қорғалғаны:</b> Иә<br/>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptHeaderCheckBox)
-#: kerfuffle/createdialog.ui:57
+#: kerfuffle/createdialog.ui:126
 msgid "Ask for password before showing the list of files in the archive"
 msgstr ""
 
@@ -605,34 +619,34 @@ msgstr ""
 msgid "Extract to a subfolder if the archive has more than one top-level entry"
 msgstr ""
 
-#: kerfuffle/jobs.cpp:202
+#: kerfuffle/jobs.cpp:210
 msgid "Loading archive..."
 msgstr "Архивті жүктеу..."
 
-#: kerfuffle/jobs.cpp:281
+#: kerfuffle/jobs.cpp:289
 msgid "Extracting all files"
 msgstr "Барлық файлдарды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:283
+#: kerfuffle/jobs.cpp:291
 #, kde-format
 msgid "Extracting one file"
 msgid_plural "Extracting %1 files"
 msgstr[0] "%1 файлды тарқатып алу"
 
-#: kerfuffle/jobs.cpp:289
+#: kerfuffle/jobs.cpp:297
 #, kde-format
 msgid ""
 "Could not write to destination <filename>%1</filename>.<nl/>Check whether "
 "you have sufficient permissions."
 msgstr ""
 
-#: kerfuffle/jobs.cpp:344
+#: kerfuffle/jobs.cpp:352
 #, kde-format
 msgid "Adding a file"
 msgid_plural "Adding %1 files"
 msgstr[0] "%1 файлды қосу"
 
-#: kerfuffle/jobs.cpp:367
+#: kerfuffle/jobs.cpp:375
 #, kde-format
 msgid "Deleting a file from the archive"
 msgid_plural "Deleting %1 files"
@@ -1569,6 +1583,23 @@ msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді оқу қатесі."
 
+#, fuzzy
+#~| msgid "The password was incorrect. "
+#~ msgid "The password cannot be empty."
+#~ msgstr "Пароль жарамсыз. "
+
+#, fuzzy
+#~| msgid "Deleting a file from the archive"
+#~| msgid_plural "Deleting %1 files"
+#~ msgid "Please select a filename for the archive."
+#~ msgstr "%1 файлды өшіру"
+
+#, fuzzy
+#~| msgid "One file selected"
+#~| msgid_plural "%1 files selected"
+#~ msgid "No file selected"
+#~ msgstr "%1 файл таңдалған"
+
 #~ msgid "Open File"
 #~ msgstr "Файлды ашу"
 
@@ -1611,11 +1642,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 #~| msgid "Invalid Archive Type"
 #~ msgid "lblArchiveType"
 #~ msgstr "Архивтің түрі дұрыс емес"
-
-#, fuzzy
-#~| msgid "<b>Password protected:</b> Yes<br/>"
-#~ msgid "lblPasswordProtected"
-#~ msgstr "<b>Парольмен қорғалғаны:</b> Иә<br/>"
 
 #, fuzzy
 #~| msgctxt "File comment"
@@ -2319,9 +2345,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 #~ msgid "Trouble writing to the tempfile..."
 #~ msgstr "Уақытша файлды жазғанда қиыншылық туды..."
 
-#~ msgid " Filename "
-#~ msgstr " Файлдың атауы "
-
 #~ msgid " Permissions "
 #~ msgstr " Рұқсаттары "
 
@@ -2360,9 +2383,6 @@ msgstr "Тарқату кезде Ark <filename>%1</filename> дегенді о�
 
 #~ msgid "&Extracting"
 #~ msgstr "&Тарқату"
-
-#~ msgid "&Folders"
-#~ msgstr "Қа&пшықтар"
 
 #~ msgid "Add Settings"
 #~ msgstr "Қосу баптаулары"
