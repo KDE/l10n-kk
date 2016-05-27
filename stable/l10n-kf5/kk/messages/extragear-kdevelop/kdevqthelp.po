@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-12 10:22+0000\n"
+"POT-Creation-Date: 2016-05-27 10:44+0000\n"
 "PO-Revision-Date: 2013-11-14 03:01+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,111 +27,99 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sairan@computer.org"
 
-#: qthelpconfig.cpp:58
+#: qthelpconfig.cpp:62
 #, fuzzy
 #| msgid "Modify"
 msgid "Modify Entry"
 msgstr "Өзгерту"
 
-#: qthelpconfig.cpp:60
+#: qthelpconfig.cpp:64
 msgid "Add New Entry"
 msgstr ""
 
-#: qthelpconfig.cpp:78
+#: qthelpconfig.cpp:82
 msgid "Name cannot be empty."
 msgstr "Атауы бос бола алмайды."
 
-#: qthelpconfig.cpp:118
+#: qthelpconfig.cpp:119
 msgctxt "Allow user to get some API documentation with GHNS"
 msgid "Get New Documentation"
 msgstr "Жаңа құжаттамасын табу"
 
-#: qthelpconfig.cpp:131
+#: qthelpconfig.cpp:132
 msgid ""
 "The command \"qmake -query\" could not provide a path to a QtHelp file (QCH)."
 msgstr ""
 
-#: qthelpconfig.cpp:259
+#: qthelpconfig.cpp:216
 msgid "Documentation provided by GHNS"
 msgstr "GHNS қамтамасыз еткен құжаттама"
 
-#: qthelpconfig.cpp:285
+#: qthelpconfig.cpp:242
 msgid "Qt Compressed Help file is not valid."
 msgstr "Qt сығылған көмек файлы жарамсыз."
 
-#: qthelpconfig.cpp:294
+#: qthelpconfig.cpp:251
 msgid "Documentation already imported"
 msgstr "Құжаттама импортталған екен"
 
-#: qthelpconfig.cpp:390
+#: qthelpconfig.cpp:311
 #, fuzzy
 #| msgid "Manage QtHelp Documentation"
 msgid "QtHelp Documentation"
 msgstr "QtHelp құжаттамасын басқару"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: qthelpconfig.ui:20
-msgid "Documentation Files from System Location"
+#: qthelpconfig.cpp:336
+msgid "Modify"
+msgstr "Өзгерту"
+
+#: qthelpconfig.cpp:342
+msgid "Delete"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, loadQtDocsCheckBox)
+#. i18n: ectx: property (title), widget (QGroupBox, boxAutoLoad)
+#: qthelpconfig.ui:20
+msgid "Load QtHelp Documentation from System Locations"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelLoadQtApiDocs)
 #: qthelpconfig.ui:26
 #, fuzzy
 #| msgid "Load Qt documentation"
-msgid "Load Qt API Documentation"
+msgid "Load Qt API documentation:"
 msgstr "Qt құжаттамасын жүктеу"
 
-#. i18n: ectx: property (title), widget (QGroupBox, qchManage)
-#: qthelpconfig.ui:46
+#. i18n: ectx: property (text), widget (QLabel, labelLoadFromDirectory)
+#: qthelpconfig.ui:36
+msgid "Load QtHelp files from directory:"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, qchSearchDir)
+#: qthelpconfig.ui:100
+msgid "Search QtHelp files in this directory..."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, boxQchManage)
+#: qthelpconfig.ui:129
 #, fuzzy
 #| msgid "Manage QtHelp Documentation"
-msgid "Additional Documentation Files"
+msgid "Install Additional Documentation Files"
 msgstr "QtHelp құжаттамасын басқару"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, qchTable)
-#: qthelpconfig.ui:78
+#: qthelpconfig.ui:164
 msgid "Name"
 msgstr "Атауы"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, qchTable)
-#: qthelpconfig.ui:83
+#: qthelpconfig.ui:169
 msgid "Path"
 msgstr "Жолы"
 
-#. i18n: ectx: property (placeholderText), widget (QLineEdit, qchSearchDir)
-#: qthelpconfig.ui:109
-msgid "Search qch files in directory..."
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: qthelpconfig.ui:122
+#: qthelpconfig.ui:194
 msgid "Add"
 msgstr "Қосу"
-
-#. i18n: ectx: property (text), widget (QPushButton, editButton)
-#: qthelpconfig.ui:129
-msgid "Modify"
-msgstr "Өзгерту"
-
-#. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: qthelpconfig.ui:136
-msgid "Remove"
-msgstr "Өшіру"
-
-#. i18n: ectx: property (text), widget (QPushButton, upButton)
-#: qthelpconfig.ui:143
-msgid "Move Up"
-msgstr "Жоғарлату"
-
-#. i18n: ectx: property (text), widget (QPushButton, downButton)
-#: qthelpconfig.ui:150
-msgid "Move Down"
-msgstr "Төмендету"
-
-#. i18n: ectx: property (text), widget (QPushButton, qchSearchDirButton)
-#: qthelpconfig.ui:170
-msgid "Choose dir"
-msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, QtHelpConfigEditDialog)
 #: qthelpconfigeditdialog.ui:14
@@ -158,8 +146,14 @@ msgid "Name:"
 msgstr "Атауы"
 
 #. i18n: ectx: property (toolTip), widget (QLineEdit, qchName)
+#: qthelpconfigeditdialog.ui:47
+#, fuzzy
+#| msgid "Select a name"
+msgid "Enter a name"
+msgstr "Атауын таңдау"
+
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, qchName)
-#: qthelpconfigeditdialog.ui:47 qthelpconfigeditdialog.ui:50
+#: qthelpconfigeditdialog.ui:50
 msgid "Select a name"
 msgstr "Атауын таңдау"
 
@@ -208,6 +202,15 @@ msgstr "about:blank"
 #: testqthelp/docwidget.ui:49
 msgid "Debug info:"
 msgstr "Жөндеу ақпары:"
+
+#~ msgid "Remove"
+#~ msgstr "Өшіру"
+
+#~ msgid "Move Up"
+#~ msgstr "Жоғарлату"
+
+#~ msgid "Move Down"
+#~ msgstr "Төмендету"
 
 #~ msgid "Manage QtHelp Documentation"
 #~ msgstr "QtHelp құжаттамасын басқару"
