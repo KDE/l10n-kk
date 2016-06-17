@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-06-16 08:06+0000\n"
+"POT-Creation-Date: 2016-06-17 07:50+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1895,7 +1895,7 @@ msgid "Status and progress of the crypto operations is shown here."
 msgstr "Әрекеттердің күй-жайы мен барысы осында көрсетіледі."
 
 #: src/crypto/decryptverifyemailcontroller.cpp:167
-#: src/crypto/decryptverifyfilescontroller.cpp:209
+#: src/crypto/decryptverifyfilescontroller.cpp:200
 msgid "User canceled"
 msgstr "Пайдаланушысы доғарды"
 
@@ -1936,30 +1936,13 @@ msgstr "%1 дегенді қолдайтын тетігі жоқ"
 msgid "Cannot determine whether input data is OpenPGP or CMS"
 msgstr "Кірістегі дерегі OpenPGP ме CMS па, анықталмады"
 
-#: src/crypto/decryptverifyfilescontroller.cpp:198
-#, kde-format
-msgid ""
-"Caught unexpected exception in DecryptVerifyFilesController::Private::"
-"slotWizardOperationPrepared: %1"
-msgstr ""
-"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
-"күтпеген ерекше жағдай: %1"
-
-#: src/crypto/decryptverifyfilescontroller.cpp:202
-msgid ""
-"Caught unknown exception in DecryptVerifyFilesController::Private::"
-"slotWizardOperationPrepared"
-msgstr ""
-"DecryptVerifyFilesController::Private::slotWizardOperationPrepared дегенде "
-"күтпеген ерекше жағдай орын алды"
-
-#: src/crypto/decryptverifyfilescontroller.cpp:257
-msgid "Decrypt/Verify Files"
-msgstr "Файлдардың шифрын шешу/тексеру"
-
-#: src/crypto/decryptverifyfilescontroller.cpp:394
+#: src/crypto/decryptverifyfilescontroller.cpp:182
 msgid "No usable inputs found"
 msgstr "Кірісте жарамды түк те жоқ"
+
+#: src/crypto/decryptverifyfilescontroller.cpp:248
+msgid "Decrypt/Verify Files"
+msgstr "Файлдардың шифрын шешу/тексеру"
 
 #: src/crypto/decryptverifytask.cpp:198
 msgid "Error: Signature not verified"
@@ -2211,7 +2194,7 @@ msgstr "%1: %2"
 #: src/crypto/decryptverifytask.cpp:921 src/crypto/decryptverifytask.cpp:1019
 #: src/crypto/decryptverifytask.cpp:1074 src/crypto/decryptverifytask.cpp:1175
 #: src/crypto/decryptverifytask.cpp:1229 src/crypto/decryptverifytask.cpp:1329
-#: src/crypto/decryptverifytask.cpp:1378 src/crypto/decryptverifytask.cpp:1466
+#: src/crypto/decryptverifytask.cpp:1378 src/crypto/decryptverifytask.cpp:1482
 #, kde-format
 msgid "Caught exception: %1"
 msgstr "Ерекше жағдайы: %1"
@@ -2219,7 +2202,7 @@ msgstr "Ерекше жағдайы: %1"
 #: src/crypto/decryptverifytask.cpp:924 src/crypto/decryptverifytask.cpp:1021
 #: src/crypto/decryptverifytask.cpp:1077 src/crypto/decryptverifytask.cpp:1177
 #: src/crypto/decryptverifytask.cpp:1232 src/crypto/decryptverifytask.cpp:1331
-#: src/crypto/decryptverifytask.cpp:1380 src/crypto/decryptverifytask.cpp:1468
+#: src/crypto/decryptverifytask.cpp:1380 src/crypto/decryptverifytask.cpp:1484
 #: src/uiserver/assuanserverconnection.cpp:1584
 #: src/uiserver/assuanserverconnection.cpp:1635
 msgid "Caught unknown exception"
@@ -2259,10 +2242,38 @@ msgstr ""
 msgid "Verifying: %1..."
 msgstr "Тексеріліп жатқаны: %1..."
 
-#: src/crypto/decryptverifytask.cpp:1431
+#: src/crypto/decryptverifytask.cpp:1434
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgctxt ""
+"Verification of a detached signature in progress. The first file contains "
+"the data.The second file is the signature file."
+msgid "Verifying: <filename>%1</filename> with <filename>%2</filename>..."
+msgstr ""
+"<filename>%1</filename> уақытша файлын <filename>%2</filename> файлына "
+"көшірмелеу болмайды: <message>%3</message>"
+
+#: src/crypto/decryptverifytask.cpp:1439
 #, kde-format
 msgid "Verifying signature: %1..."
 msgstr "Тексеріліп жатқан қолтаңба: %1..."
+
+#: src/crypto/decryptverifytask.cpp:1447
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgctxt ""
+"Verification of a detached signature summary. The first file contains the "
+"data.The second file is signature."
+msgid "Verified <filename>%1</filename> with <filename>%2</filename>"
+msgstr ""
+"<filename>%1</filename> уақытша файлын <filename>%2</filename> файлына "
+"көшірмелеу болмайды: <message>%3</message>"
 
 #: src/crypto/encryptemailcontroller.cpp:155
 msgid "Call to EncryptEMailController::protocolAsString() is ambiguous."
@@ -4148,17 +4159,17 @@ msgstr ""
 msgid "No fingerprint argument specified for --query"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:338
+#: src/kleopatraapplication.cpp:337
 #, kde-format
 msgid "Ambiguous commands \"%1\" and \"%2\""
 msgstr ""
 
-#: src/kleopatraapplication.cpp:344
+#: src/kleopatraapplication.cpp:343
 #, kde-format
 msgid "No files specified for \"%1\" command"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:362
+#: src/kleopatraapplication.cpp:361
 #, fuzzy, kde-format
 #| msgid "Cannot send \"%1\" status"
 msgid "Cannot read \"%1\""
@@ -6569,6 +6580,20 @@ msgstr "Оңға жылжыту"
 #: src/view/tabwidget.cpp:787
 msgid "Hierarchical Certificate List"
 msgstr "Иерархиялық куәліктер тізімі"
+
+#~ msgid ""
+#~ "Caught unexpected exception in DecryptVerifyFilesController::Private::"
+#~ "slotWizardOperationPrepared: %1"
+#~ msgstr ""
+#~ "DecryptVerifyFilesController::Private::slotWizardOperationPrepared "
+#~ "дегенде күтпеген ерекше жағдай: %1"
+
+#~ msgid ""
+#~ "Caught unknown exception in DecryptVerifyFilesController::Private::"
+#~ "slotWizardOperationPrepared"
+#~ msgstr ""
+#~ "DecryptVerifyFilesController::Private::slotWizardOperationPrepared "
+#~ "дегенде күтпеген ерекше жағдай орын алды"
 
 #~ msgid "Performing Self-Check..."
 #~ msgstr "Өз-өзін тексеру..."
