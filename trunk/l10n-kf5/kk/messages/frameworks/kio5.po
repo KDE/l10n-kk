@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-25 07:36+0000\n"
+"POT-Creation-Date: 2016-08-01 07:34+0000\n"
 "PO-Revision-Date: 2012-12-31 04:15+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -4173,12 +4173,12 @@ msgid "Disk cache &size:"
 msgstr "Дискідегі кэштің &өлшемі:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, sbMaxCacheSize)
-#: kcms/kio/cache.ui:101
+#: kcms/kio/cache.ui:104
 msgid " KiB"
 msgstr " КиБ"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearCacheButton)
-#: kcms/kio/cache.ui:111
+#: kcms/kio/cache.ui:114
 msgid "C&lear Cache"
 msgstr "Кэшін &тазалау"
 
@@ -4678,12 +4678,14 @@ msgstr ""
 "бірақ кейбір ескі FTP серверлері пассивті FTP дегенді білмейді."
 
 #. i18n: ectx: label, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:16
+#. i18n: ectx: label, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:16 kcms/kio/kioslave.kcfg:34
 msgid "Mark partially uploaded files"
 msgstr "Жарым-жарты жүктеліп алынған файлдарды белгілеу"
 
 #. i18n: ectx: whatsthis, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:17
+#. i18n: ectx: whatsthis, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:17 kcms/kio/kioslave.kcfg:35
 msgid ""
 "While a file is being uploaded its extension is \".part\". When fully "
 "uploaded it is renamed to its real name."
@@ -5149,14 +5151,40 @@ msgid "&Server response:"
 msgstr "&Сервердің жауабы:"
 
 #: kcms/kio/netpref.cpp:67
+#, fuzzy
+#| msgid "Options"
+msgid "Global Options"
+msgstr "Параметрлер"
+
+#: kcms/kio/netpref.cpp:71 kcms/kio/netpref.cpp:93
+msgid "Mark &partially uploaded files"
+msgstr "&Жарым-жарты жүктеп берілген файлдарды белгілеу"
+
+#: kcms/kio/netpref.cpp:72
+#, fuzzy
+#| msgid ""
+#| "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
+#| "partially uploaded files will have a \".part\" extension. This extension "
+#| "will be removed once the transfer is complete.</p>"
+msgid ""
+"<p>Marks partially uploaded files through SMB, SFTP and other protocols.</"
+"p><p>When this option is enabled, partially uploaded files will have a \"."
+"part\" extension. This extension will be removed once the transfer is "
+"complete.</p>"
+msgstr ""
+"<p>Жарым-жарты жүктеп берілген FTP файлдарды белгілеу.</p><p>Бұл параметр "
+"рұқсат етілсе жарым-жарты жүктелген файлдарға \".part\" деген жұрнақ "
+"ілектіріледі. Жүктеуі болғасын бұл жұрнақ алынып тасталады.</p>"
+
+#: kcms/kio/netpref.cpp:82
 msgid "FTP Options"
 msgstr "FTP параметрлері"
 
-#: kcms/kio/netpref.cpp:71
+#: kcms/kio/netpref.cpp:86
 msgid "Enable passive &mode (PASV)"
 msgstr "Пассивті &күйін (PASV) рұқсат ету"
 
-#: kcms/kio/netpref.cpp:72
+#: kcms/kio/netpref.cpp:87
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
 "behind firewalls."
@@ -5164,11 +5192,7 @@ msgstr ""
 "\"Пассивті\" күйдегі FTP қызметін рұқсат ету. Бұл FTP-ге желіаралық "
 "қалқанның артынан істеуді рұқсат ету үшін керек."
 
-#: kcms/kio/netpref.cpp:78
-msgid "Mark &partially uploaded files"
-msgstr "&Жарым-жарты жүктеп берілген файлдарды белгілеу"
-
-#: kcms/kio/netpref.cpp:79
+#: kcms/kio/netpref.cpp:94
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
 "partially uploaded files will have a \".part\" extension. This extension "
@@ -5178,7 +5202,7 @@ msgstr ""
 "рұқсат етілсе жарым-жарты жүктелген файлдарға \".part\" деген жұрнақ "
 "ілектіріледі. Жүктеуі болғасын бұл жұрнақ алынып тасталады.</p>"
 
-#: kcms/kio/netpref.cpp:147
+#: kcms/kio/netpref.cpp:168
 msgid ""
 "<h1>Network Preferences</h1>Here you can define the behavior of KDE programs "
 "when using Internet and network connections. If you experience timeouts or "
