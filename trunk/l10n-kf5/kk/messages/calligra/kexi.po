@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-08-19 06:58+0000\n"
+"POT-Creation-Date: 2016-08-20 07:11+0000\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -45,8 +45,12 @@ msgid "This function is not available for version %1 of %2 application."
 msgstr "Бұл функция %2 қолданбаның %1 нұсқасында жоқ."
 
 #: core/kexi.cpp:344
-#, kde-format
-msgid "\"%1\" function is not available for version %2 of %3 application."
+#, fuzzy, kde-format
+#| msgid "\"%1\" function is not available for version %2 of %3 application."
+msgctxt "@info"
+msgid ""
+"<resource>%1</resource> function is not available for version %2 of %3 "
+"application."
 msgstr "\"%1\" деген функция %3 қолданбаның %2 нұсқасында жоқ."
 
 #: core/kexi.cpp:397
@@ -733,7 +737,7 @@ msgctxt "'user' command line option"
 msgid ""
 "Database server's user name when connecting to a project. Ignored if the "
 "project is opened using a shortcut file. Default user name is the same as "
-"the current login (\"%1\")."
+"the current login (<resource>%1</resource>)."
 msgstr ""
 "Қосылу үшін қолданатын деректер\n"
 "қоры жобасы серверінің (хосттың) атауы.\n"
@@ -874,20 +878,22 @@ msgstr "Беймәлім қате"
 msgid "Details:"
 msgstr "Егжей-тегжейлері:"
 
-#: core/kexipart.cpp:68
-#, kde-format
-msgid "Object \"%1\" could not be opened in Design View."
+#: core/kexipart.cpp:69
+#, fuzzy, kde-format
+#| msgid "Object \"%1\" could not be opened in Design View."
+msgctxt "@info"
+msgid "Object <resource>%1</resource> could not be opened in Design View."
 msgstr "\"%1\" нысаны Құрастыру көрінісінде ашылмайды."
 
-#: core/kexipart.cpp:69
+#: core/kexipart.cpp:70
 msgid "Object could not be opened in Data View."
 msgstr "Нысан Деректер көрінісінде ашылмайды."
 
-#: core/kexipart.cpp:70
+#: core/kexipart.cpp:71
 msgid "Do you want to open it in Text View?"
 msgstr "Мәтін көрінісінде ашып көресіз бе?"
 
-#: core/kexipart.cpp:109
+#: core/kexipart.cpp:110
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
 "0..9). Use '_' character instead of spaces. First character should be a..z "
@@ -896,60 +902,72 @@ msgctxt ""
 msgid "object"
 msgstr "object"
 
-#: core/kexipart.cpp:246
+#: core/kexipart.cpp:247
 msgid "Could not create object's window."
 msgstr "Нысанның терезесі құрылмады."
 
-#: core/kexipart.cpp:246
+#: core/kexipart.cpp:247
 msgid "The plugin or object definition may be corrupted."
 msgstr "Бұл плагині не нысан анықтамасы бүлінгені мүмкін."
 
-#: core/kexipart.cpp:268
+#: core/kexipart.cpp:269
 msgid "Could not load object's definition."
 msgstr "Нысанның анықтамасы жүктелмеді."
 
-#: core/kexipart.cpp:268
+#: core/kexipart.cpp:269
 msgid "Object design may be corrupted."
 msgstr "Нысан құрылымы бұзылғаны мүмкін."
 
-#: core/kexipart.cpp:270
-#, kde-format
-msgid "You can delete \"%1\" object and create it again."
+#: core/kexipart.cpp:272
+#, fuzzy, kde-format
+#| msgid "You can delete \"%1\" object and create it again."
+msgctxt "@info"
+msgid "You can delete <resource>%1</resource> object and create it again."
 msgstr "\"%1\" нысанды жойып қайта құра аласыз."
 
-#: core/kexipart.cpp:353
+#: core/kexipart.cpp:355
 msgid "Could not load object's data."
 msgstr "Нысанның деректері жүктелмейді."
 
-#: core/kexipart.cpp:354
-#, kde-format
-msgid "Data identifier: \"%1\"."
-msgstr "Деректің идентификаторы: \"%1\"."
+#: core/kexipart.cpp:357
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Data identifier: <resource>%1</resource>."
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexipartinfo.cpp:108
-#, kde-format
-msgid "Create new object of type \"%1\""
+#: core/kexipartinfo.cpp:109
+#, fuzzy, kde-format
+#| msgid "Create new object of type \"%1\""
+msgctxt "@info"
+msgid "Create new object of type <resource>%1</resource>"
 msgstr "Түрі \"%1\" жаңа нысанды құру"
 
-#: core/kexipartinfo.cpp:110
-#, kde-format
-msgid "Creates new object of type \"%1\""
+#: core/kexipartinfo.cpp:112
+#, fuzzy, kde-format
+#| msgid "Creates new object of type \"%1\""
+msgctxt "@info"
+msgid "Creates new object of type <resource>%1</resource>"
 msgstr "Түрі \"%1\" жаңа нысанды құру"
 
 #: core/kexipartmanager.cpp:113
 #, fuzzy, kde-format
-#| msgid "Could not load \"%1\" plugin."
+#| msgctxt "@info"
+#| msgid "Could not write <filename>%1</filename>."
 msgctxt "@info"
-msgid "Could not load Kexi plugin file \"%1\"."
-msgstr "\"%1\" плагині жүктеп алынбады."
+msgid "Could not load Kexi plugin file <filename>%1</filename>."
+msgstr "<filename>%1</filename> дегенге жазылмады."
 
-#: core/kexipartmanager.cpp:125
+#: core/kexipartmanager.cpp:126
 #, fuzzy, kde-format
-#| msgid "Could not open project \"%1\"."
-msgid "Could not open Kexi plugin \"%1\"."
-msgstr "\"%1\" жобасы ашылмалы."
+#| msgctxt "@info"
+#| msgid "Could not read <filename>%1</filename>."
+msgctxt "@info"
+msgid "Could not open Kexi plugin <filename>%1</filename>."
+msgstr "<filename>%1</filename> деген оқылмады."
 
-#: core/kexipartmanager.cpp:273
+#: core/kexipartmanager.cpp:274
 #, fuzzy, kde-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -957,43 +975,52 @@ msgctxt "@info"
 msgid "No plugin for ID <resource>%1</resource>"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexiproject.cpp:132 main/KexiMainWindow.cpp:3477
+#: core/kexiproject.cpp:132 main/KexiMainWindow.cpp:3481
 msgid "Could not set empty name for this object."
 msgstr "Бұл нысанның атауын бос қалдыруға болмайды."
 
-#: core/kexiproject.cpp:137
-#, kde-format
-msgid "Could not use this name. Object with name \"%1\" already exists."
+#: core/kexiproject.cpp:138
+#, fuzzy, kde-format
+#| msgid "Could not use this name. Object with name \"%1\" already exists."
+msgctxt "@info"
+msgid "Could not use this name. Object <resource>%1</resource> already exists."
 msgstr "Былай атауға болмайды. \"%1\" деп аталған нысан бар ғой."
 
-#: core/kexiproject.cpp:148
-#, kde-format
-msgid "Could not rename object \"%1\"."
-msgstr "\"%1\" нысанның атауы өзгертілмеді."
+#: core/kexiproject.cpp:150
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Could not rename object <resource>%1</resource>."
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexiproject.cpp:299
-#, kde-format
-msgid "Could not open project \"%1\"."
-msgstr "\"%1\" жобасы ашылмалы."
+#: core/kexiproject.cpp:302
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Could not open project <resource>%1</resource>."
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexiproject.cpp:304
+#: core/kexiproject.cpp:308
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
 #| "Could not open file. The file <filename>%1</filename> does not exist."
 msgctxt "@info"
 msgid ""
-"Could not open project file. The file <filename>%1</filename> does not exist."
+"Could not open project. The project file <filename>%1</filename> does not "
+"exist."
 msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
 
-#: core/kexiproject.cpp:307 core/kexiproject.cpp:1462
-#: main/startup/KexiStartup.cpp:812 main/startup/KexiStartup.cpp:821
-#: main/startup/KexiStartup.cpp:832
+#: core/kexiproject.cpp:311 core/kexiproject.cpp:1474
+#: main/startup/KexiStartup.cpp:817 main/startup/KexiStartup.cpp:826
+#: main/startup/KexiStartup.cpp:837
 msgctxt "@title:window"
 msgid "Could Not Open File"
 msgstr "Файл ашылмады"
 
-#: core/kexiproject.cpp:343
+#: core/kexiproject.cpp:347
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database project %1 does not appear to have been created using Kexi and "
@@ -1007,83 +1034,91 @@ msgstr ""
 "%1 деректер қоры жобасы Kexi бағдарламада құрған емес сияқты, сондықтан "
 "ашылмайды.<br><br>Ол басқа құралымен жасалған SQLite файлы.</qt>"
 
-#: core/kexiproject.cpp:368
-#, kde-format
-msgid "Could not create project \"%1\"."
-msgstr "\"%1\" жобасы құрылмады."
+#: core/kexiproject.cpp:374
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Could not create project <resource>%1</resource>."
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexiproject.cpp:411 core/kexiproject.cpp:480
+#: core/kexiproject.cpp:418 core/kexiproject.cpp:487
 msgid "Project major version"
 msgstr "Жобаның басты нұсқасы"
 
-#: core/kexiproject.cpp:413 core/kexiproject.cpp:482
+#: core/kexiproject.cpp:420 core/kexiproject.cpp:489
 msgid "Project minor version"
 msgstr "Жоба нұсқасының тармағы"
 
-#: core/kexiproject.cpp:415
+#: core/kexiproject.cpp:422
 msgid "Project caption"
 msgstr "Жоба айдары"
 
-#: core/kexiproject.cpp:417
+#: core/kexiproject.cpp:424
 msgid "Project description"
 msgstr "Жобаның сипаттамасы"
 
-#: core/kexiproject.cpp:952
+#: core/kexiproject.cpp:960
 #, fuzzy, kde-format
-#| msgid "Opening object \"%1\" failed."
+#| msgctxt "@info Saving object failed"
+#| msgid "Saving <resource>%1</resource> object failed."
+msgctxt "@info"
 msgid ""
-"Opening object \"%1\" failed.\n"
+"Opening object <resource>%1</resource> failed.\n"
 "%2%3"
-msgstr "\"%1\" нысаны ашылмады."
+msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: core/kexiproject.cpp:971
+#: core/kexiproject.cpp:979
 msgid "This project is opened as read only."
 msgstr "Бұл жоба тек оқу үшін ашылған."
 
-#: core/kexiproject.cpp:1003
+#: core/kexiproject.cpp:1011
 msgid "Could not remove object's user data."
 msgstr "Нысанның пайдаланушы деректері өшірілмеді."
 
-#: core/kexiproject.cpp:1131
-msgid "Warning: entire project's data will be removed."
+#: core/kexiproject.cpp:1139
+#, fuzzy
+#| msgid "Warning: entire project's data will be removed."
+msgctxt "warning"
+msgid "Entire project's data and design will be removed."
 msgstr "Ескерту: жобаның барлық деректері өшіріледі."
 
-#: core/kexiproject.cpp:1147
+#: core/kexiproject.cpp:1155
 #, fuzzy, kde-format
 #| msgid ""
 #| "The project %1 already exists.\n"
 #| "Do you want to replace it with a new, blank one?"
 msgctxt "@info (don't add tags around %1, it's done already)"
 msgid ""
-"The project %1 already exists.<nl/>Do you want to replace it with a new, "
-"blank one?<nl/>%2"
+"<para>The project %1 already exists.</para><para>Do you want to replace it "
+"with a new, blank one?</para><para><warning>%2</warning></para>"
 msgstr ""
 "%1 деген жоба бар ғой.\n"
 "Оны жаңа, бос жобамен ауыстырмақсыз ба?"
 
-#: core/kexiproject.cpp:1151
+#: core/kexiproject.cpp:1160
 #, fuzzy
 #| msgid "Replace"
 msgctxt "@action:button"
 msgid "Replace"
 msgstr "Ауыстыру"
 
-#: core/kexiproject.cpp:1175
-#, fuzzy, kde-format
-#| msgid "Do you want to drop the project \"%1\"?"
+#: core/kexiproject.cpp:1185
+#, kde-format
+msgctxt "@info"
 msgid ""
-"Do you want to delete the project \"%1\"?\n"
-"%1"
-msgstr "\"%1\" жобаны өшірмексіз бе?"
+"<para>Do you want to delete the project <resource>%1</resource>?</"
+"para><para><warning>%2</warning></para>"
+msgstr ""
 
-#: core/kexiproject.cpp:1177
+#: core/kexiproject.cpp:1189
 #, fuzzy
 #| msgid "Delete object"
 msgctxt "@action:button"
 msgid "Delete Project"
 msgstr "Нысанды өшіру"
 
-#: core/kexiproject.cpp:1191
+#: core/kexiproject.cpp:1203
 #, fuzzy
 #| msgid ""
 #| "Could not drop this project. Database connection for this project has "
@@ -1094,11 +1129,11 @@ msgid ""
 msgstr ""
 "Жоба өшірілмейді. Бұл жоба бойынша деректер қоры тек оқуға ғана деп қосылған."
 
-#: core/kexiproject.cpp:1456
+#: core/kexiproject.cpp:1468
 msgid "Open As Read Only"
 msgstr "Тек оқу үшін ашу"
 
-#: core/kexiproject.cpp:1459
+#: core/kexiproject.cpp:1471
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1108,7 +1143,7 @@ msgstr ""
 "<para><filename>%1</filename> файлы оқу мен жазуға ашылмады.</para><para>Тек "
 "оқу үшін ашылсын ба?</para>"
 
-#: core/kexiprojectdata.cpp:200
+#: core/kexiprojectdata.cpp:199
 #, fuzzy, kde-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -1116,7 +1151,7 @@ msgctxt "@info database connection"
 msgid "<resource>%1</resource> (connection <resource>%2</resource>)"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: core/kexiprojectdata.cpp:205
+#: core/kexiprojectdata.cpp:204
 #, fuzzy, kde-format
 #| msgctxt "@info Object \"objectname\""
 #| msgid "%1 <resource>%2</resource>"
@@ -1124,27 +1159,27 @@ msgctxt "@info database name"
 msgid "<resource>%1</resource>"
 msgstr "<resource>%2</resource> деген %1"
 
-#: core/kexiprojectdata.cpp:240
+#: core/kexiprojectdata.cpp:239
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "The file or directory <filename>%1</filename> does not exist."
 msgid "File <filename>%1</filename> contains no connection information."
 msgstr "<filename>%1</filename> деген файл я каталог жоқ."
 
-#: core/kexiprojectdata.cpp:248
+#: core/kexiprojectdata.cpp:247
 #, kde-format
 msgid ""
 "File <filename>%1</filename> does not contain group <resource>%2</resource>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:264
+#: core/kexiprojectdata.cpp:263
 #, kde-format
 msgid ""
 "Invalid value <resource>%1</resource> type specified in group <resource>%2</"
 "resource> of file <filename>%3</filename>."
 msgstr ""
 
-#: core/kexiprojectdata.cpp:272
+#: core/kexiprojectdata.cpp:271
 #, kde-format
 msgid ""
 "No valid \"engine\" field specified in group <resource>%1</resource> of file "
@@ -1296,7 +1331,7 @@ msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "Құрылымы өзгертілген. Басқа көрінісіне ауысу алдында оны сақтау керек."
 
-#: core/KexiWindow.cpp:555 main/KexiMainWindow.cpp:2694
+#: core/KexiWindow.cpp:555 main/KexiMainWindow.cpp:2696
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Басқа көрінісіне ауысу болмады (%1)."
@@ -1316,126 +1351,137 @@ msgid "Saving object's data failed."
 msgstr "Нысанның деректері сақталмады."
 
 #: formeditor/commands.cpp:157
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "(qtundo-format)"
+#| msgid "Change \"%1\" property for multiple widgets"
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for multiple widgets"
+msgid "Change <resource>%1</resource> property for multiple widgets"
 msgstr "Бірнеше виджеттерінің \"%1\" қасиетін өзгерту"
 
-#: formeditor/commands.cpp:160
-#, kde-format
+#: formeditor/commands.cpp:161
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for widget \"%2\""
-msgstr "\"%2\" виджеттінің \"%1\" қасиетін өзгерту"
+msgid ""
+"Change <resource>%1</resource> property for widget <resource>%2</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: formeditor/commands.cpp:333
+#: formeditor/commands.cpp:334
 msgctxt "(qtundo-format)"
 msgid "Move multiple widgets"
 msgstr "Бірнеше виджеттерді жылжыту"
 
-#: formeditor/commands.cpp:436
+#: formeditor/commands.cpp:437
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Grid"
 msgstr "Виджеттерді торға туралау"
 
-#: formeditor/commands.cpp:439
+#: formeditor/commands.cpp:440
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Left"
 msgstr "Виджеттерді солға туралау"
 
-#: formeditor/commands.cpp:442
+#: formeditor/commands.cpp:443
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Right"
 msgstr "Виджеттерді оңға туралау"
 
-#: formeditor/commands.cpp:445
+#: formeditor/commands.cpp:446
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Top"
 msgstr "Виджеттерді жоғарға туралау"
 
-#: formeditor/commands.cpp:448
+#: formeditor/commands.cpp:449
 msgctxt "(qtundo-format)"
 msgid "Align Widgets to Bottom"
 msgstr "Виджеттерді төменге туралау"
 
-#: formeditor/commands.cpp:611
+#: formeditor/commands.cpp:612
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Grid"
 msgstr "Виджеттердің өлшемін торға келтіру"
 
-#: formeditor/commands.cpp:614
+#: formeditor/commands.cpp:615
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Fit Contents"
 msgstr "Виджеттердің өлшемін мазмұнына шақтау"
 
-#: formeditor/commands.cpp:617
+#: formeditor/commands.cpp:618
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Narrowest"
 msgstr "Виджеттерді ең жіңішкесіне теңістіру"
 
-#: formeditor/commands.cpp:620
+#: formeditor/commands.cpp:621
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Widest"
 msgstr "Виджеттерді ең кеңіне теңестіру"
 
-#: formeditor/commands.cpp:623
+#: formeditor/commands.cpp:624
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Shortest"
 msgstr "Виджеттерді ең қысқасына теңестіру"
 
-#: formeditor/commands.cpp:626
+#: formeditor/commands.cpp:627
 msgctxt "(qtundo-format)"
 msgid "Resize Widgets to Tallest"
 msgstr "Виджеттерді ең биігіне теңестіру"
 
-#: formeditor/commands.cpp:902
-#, kde-format
+#: formeditor/commands.cpp:903
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
 msgctxt "(qtundo-format)"
-msgid "Insert widget \"%1\""
-msgstr "\"%1\" виджетін енгізу"
+msgid "Insert widget <resource>%1</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: formeditor/commands.cpp:905
+#: formeditor/commands.cpp:906
 msgctxt "(qtundo-format)"
 msgid "Insert widget"
 msgstr "Виджетті енгізу"
 
-#: formeditor/commands.cpp:946
-#, kde-format
+#: formeditor/commands.cpp:948
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not insert widget of type \"%1\". A problem with widget's creation "
+#| "encountered."
+msgctxt "@info"
 msgid ""
-"Could not insert widget of type \"%1\". A problem with widget's creation "
-"encountered."
+"Could not insert widget of type <resource>%1</resource>. A problem with "
+"widget's creation encountered."
 msgstr "\"%1\" виджет түрін ендіруі болмады. Виджет құру мәселесі."
 
-#: formeditor/commands.cpp:1115
+#: formeditor/commands.cpp:1117
 msgctxt "(qtundo-format)"
 msgid "Paste"
 msgstr "Орналастыру"
 
-#: formeditor/commands.cpp:1401
+#: formeditor/commands.cpp:1403
 msgctxt "(qtundo-format)"
 msgid "Delete widget"
 msgstr "Виджетті өшіру"
 
-#: formeditor/commands.cpp:1509
+#: formeditor/commands.cpp:1511
 msgctxt "(qtundo-format)"
 msgid "Duplicate widget"
 msgstr "Виджетті  қосарлау"
 
-#: formeditor/commands.cpp:1568
+#: formeditor/commands.cpp:1570
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Қиып алу"
 
-#: formeditor/commands.cpp:1801
+#: formeditor/commands.cpp:1803
 msgctxt "(qtundo-format)"
 msgid "Add Page"
 msgstr "Бетті қосу"
 
-#: formeditor/commands.cpp:1848 formeditor/WidgetTreeWidget.cpp:117
+#: formeditor/commands.cpp:1850 formeditor/WidgetTreeWidget.cpp:117
 #, kde-format
 msgid "Page %1"
 msgstr "%1-бет"
 
-#: formeditor/commands.cpp:1941
+#: formeditor/commands.cpp:1943
 msgctxt "(qtundo-format)"
 msgid "Remove Page"
 msgstr "Бетті кетіру"
@@ -1548,7 +1594,7 @@ msgid "Contents"
 msgstr "Мазмұны"
 
 #: formeditor/editlistviewdialog.cpp:116 formeditor/form_p.cpp:254
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1817
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1820
 #: plugins/tables/kexitabledesignerview.cpp:366
 msgid "Caption"
 msgstr "Айдары"
@@ -2072,68 +2118,75 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "әдетті"
 
-#: formeditor/form.cpp:761
-#, kde-format
-msgid "Renaming widget \"%1\" to \"%2\" failed."
-msgstr "\"%1\" виджеттінің атауын \"%2\" деп өзгерту жаңылысы"
+#: formeditor/form.cpp:762
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid ""
+"Renaming widget <resource>%1</resource> to <resource>%2</resource> failed."
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: formeditor/form.cpp:1318
+#: formeditor/form.cpp:1320
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid "
 #| "name (identifier) for a widget.\n"
+msgctxt "@info"
 msgid ""
-"Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
-"(identifier) for a widget."
+"Could not rename widget <resource>%1</resource> to <resource>%2</resource> "
+"because <resource>%3</resource> is not a valid name (identifier) for a "
+"widget."
 msgstr ""
 "\"%1\" деген виджеттің атауын \"%2\" деп өзгерту болмайды. өйткені \"%3\" "
 "деген виджеттің атауына жарамсыз ат (идентификатор).\n"
 
-#: formeditor/form.cpp:1329
+#: formeditor/form.cpp:1333
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not rename widget \"%1\" to \"%2\" because a widget with the name "
 #| "\"%3\" already exists.\n"
+msgctxt "@info"
 msgid ""
-"Could not rename widget \"%1\" to \"%2\" because a widget with the name "
-"\"%3\" already exists."
+"Could not rename widget <resource>%1</resource> to <resource>%2</resource> "
+"because a widget with the name <resource>%3</resource> already exists."
 msgstr ""
 "\"%1\" деген виджеттің атауын \"%2\" деп өзгерту болмайды, өйткені \"%3\" "
 "деген виджет бар екен.\n"
 
-#: formeditor/form.cpp:1439 formeditor/form.cpp:1706
+#: formeditor/form.cpp:1443 formeditor/form.cpp:1710
 #, kde-format
 msgid "Multiple Widgets (%1)"
 msgstr "Бірнеше виджет (%1)"
 
-#: formeditor/form.cpp:1696
+#: formeditor/form.cpp:1700
 #, kde-format
 msgid "%1 : Form"
 msgstr "%1 : пішін"
 
-#: formeditor/form.cpp:1755
+#: formeditor/form.cpp:1759
 msgid "No Buddy"
 msgstr "Сыңары жоқ"
 
-#: formeditor/form.cpp:2164
+#: formeditor/form.cpp:2168
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Hor. Alignment"
 msgstr "Жатығ. туралау"
 
-#: formeditor/form.cpp:2165
+#: formeditor/form.cpp:2169
 msgid "Horizontal Alignment"
 msgstr "Көлденең туралау"
 
-#: formeditor/form.cpp:2187
+#: formeditor/form.cpp:2191
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Ver. Alignment"
 msgstr "Тіг. туралау"
 
-#: formeditor/form.cpp:2188
+#: formeditor/form.cpp:2192
 msgid "Vertical Alignment"
 msgstr "Тігінен туралау"
 
-#: formeditor/form.cpp:2200
+#: formeditor/form.cpp:2204
 msgid "Word Break"
 msgstr "Сөзді бөлу"
 
@@ -2657,33 +2710,34 @@ msgstr "Экспорттайтын деректер ашылмайды."
 #| "Could not open shortcut file\n"
 #| "\"%1\"."
 msgctxt "@info"
-msgid "Could not load Kexi Form Widgets plugin file \"%1\"."
+msgid "Could not load Kexi Form Widgets plugin file <filename>%1</filename>."
 msgstr ""
 "\"%1\"\n"
 "сілтеме жарлық файлы ашылмайды."
 
-#: formeditor/widgetlibrary.cpp:245
+#: formeditor/widgetlibrary.cpp:246
 #, fuzzy, kde-format
 #| msgid "Could not open project \"%1\"."
-msgid "Could not open Kexi Form Widgets plugin \"%1\"."
+msgctxt "@info"
+msgid "Could not open Kexi Form Widgets plugin <filename>%1</filename>."
 msgstr "\"%1\" жобасы ашылмалы."
 
-#: formeditor/widgetlibrary.cpp:724
+#: formeditor/widgetlibrary.cpp:725
 msgctxt "Insert Horizontal Widget"
 msgid "Insert Horizontal"
 msgstr "Қатарлап енгізу"
 
-#: formeditor/widgetlibrary.cpp:730
+#: formeditor/widgetlibrary.cpp:731
 msgctxt "Insert Vertical Widget"
 msgid "Insert Vertical"
 msgstr "Тігінен енгізу"
 
-#: formeditor/widgetlibrary.cpp:734
+#: formeditor/widgetlibrary.cpp:735
 #, kde-format
 msgid "Insert Widget: %1"
 msgstr "Виджетті ендіру: %1"
 
-#: formeditor/widgetlibrary.cpp:738
+#: formeditor/widgetlibrary.cpp:739
 msgid "Cancel"
 msgstr "Қайту"
 
@@ -3559,82 +3613,94 @@ msgstr "Мынау файлдан..."
 msgid "From Server..."
 msgstr "Мынау серверден..."
 
-#: main/KexiMainWindow.cpp:2682
-#, kde-format
-msgid "Selected view is not supported for \"%1\" object."
+#: main/KexiMainWindow.cpp:2683
+#, fuzzy, kde-format
+#| msgid "Selected view is not supported for \"%1\" object."
+msgctxt "@info"
+msgid "Selected view is not supported for <resource>%1</resource> object."
 msgstr "Таңдалған көрініс \"%1\" нысанына жарамайды."
 
-#: main/KexiMainWindow.cpp:2684
-#, kde-format
+#: main/KexiMainWindow.cpp:2686
+#, fuzzy, kde-format
+#| msgid "Selected view (%1) is not supported by this object type (%2)."
+msgctxt "@info"
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr "Таңдалған көрініс (%1) нысанның бұл түріне (%2) жарамайды."
 
-#: main/KexiMainWindow.cpp:2756
+#: main/KexiMainWindow.cpp:2758
 msgctxt "Could not save object under the original name."
 msgid "Could not save under the original name."
 msgstr "Бастапқы атауымен сақталмайды."
 
-#: main/KexiMainWindow.cpp:2777
+#: main/KexiMainWindow.cpp:2779
 #, fuzzy
 #| msgid "Save"
 msgctxt "@action:button Save object"
 msgid "Save"
 msgstr "Сақтау"
 
-#: main/KexiMainWindow.cpp:2783
+#: main/KexiMainWindow.cpp:2785
 #, fuzzy
 #| msgid "Save Object As"
 msgctxt "@title:window"
 msgid "Save Object As"
 msgstr "Нысанды былай сақтау"
 
-#: main/KexiMainWindow.cpp:2833
+#: main/KexiMainWindow.cpp:2835
 #, kde-format
 msgctxt "@info Saving object failed"
 msgid "Saving <resource>%1</resource> object failed."
 msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: main/KexiMainWindow.cpp:2951
+#: main/KexiMainWindow.cpp:2953
 msgid "Save changes"
 msgstr "Өзгерістерін сақтау"
 
-#: main/KexiMainWindow.cpp:2953
+#: main/KexiMainWindow.cpp:2955
 #, fuzzy, kde-format
 #| msgid ""
 #| "Pressing this button will save all recent changes made in \"%1\" object."
-msgid "Saves all recent changes made in \"%1\" object."
+msgctxt "@info"
+msgid "Saves all recent changes made in <resource>%1</resource> object."
 msgstr "Бұл батырманы басқанда \"%1\" нысанның барлық өзгерстері сақталады."
 
-#: main/KexiMainWindow.cpp:2957
+#: main/KexiMainWindow.cpp:2959
 #, fuzzy, kde-format
 #| msgid ""
 #| "Pressing this button will discard all recent changes made in \"%1\" "
 #| "object."
-msgid "Discards all recent changes made in \"%1\" object."
+msgctxt "@info"
+msgid "Discards all recent changes made in <resource>%1</resource> object."
 msgstr ""
 "Бұл батырманы басқанда \"%1\" нысанның барлық өзгерістері ысырып тасталады."
 
-#: main/KexiMainWindow.cpp:2979
+#: main/KexiMainWindow.cpp:2981
 msgid "Do you want to save changes?"
 msgstr "Өзгерістерін сақтауды қалайсыз ба?"
 
-#: main/KexiMainWindow.cpp:3173
+#: main/KexiMainWindow.cpp:3175
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr "\"%1\" режімінде ашуы рұқсат етілмеген"
 
-#: main/KexiMainWindow.cpp:3227
-#, kde-format
-msgid "Tab for \"%1\" (%2)."
-msgstr "\"%1\" (%2) қойндысы."
+#: main/KexiMainWindow.cpp:3230
+#, fuzzy, kde-format
+#| msgctxt "@info Object \"objectname\""
+#| msgid "%1 <resource>%2</resource>"
+msgctxt "@info"
+msgid "Tab for <resource>%1</resource> (%2)."
+msgstr "<resource>%2</resource> деген %1"
 
-#: main/KexiMainWindow.cpp:3231
-#, kde-format
-msgid "Tab for \"%1\"."
-msgstr "\"%1\" қойндысы."
+#: main/KexiMainWindow.cpp:3235
+#, fuzzy, kde-format
+#| msgctxt "@info Object \"objectname\""
+#| msgid "%1 <resource>%2</resource>"
+msgctxt "@info"
+msgid "Tab for <resource>%1</resource>."
+msgstr "<resource>%2</resource> деген %1"
 
-#: main/KexiMainWindow.cpp:3403
+#: main/KexiMainWindow.cpp:3407
 #, fuzzy, kde-format
 #| msgid ""
 #| "Do you want to permanently delete:\n"
@@ -3651,7 +3717,7 @@ msgstr ""
 "дегенді мүлдем жоюды қалайсыз ба?\n"
 "\"Жою\" дегенді басқан соң қайтуға болмайды."
 
-#: main/KexiMainWindow.cpp:3409
+#: main/KexiMainWindow.cpp:3413
 #, fuzzy, kde-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -3659,18 +3725,18 @@ msgctxt "@title:window Delete Object %1."
 msgid "Delete <resource>%1</resource>?"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: main/KexiMainWindow.cpp:3410
+#: main/KexiMainWindow.cpp:3414
 #, fuzzy
 #| msgid "Delete"
 msgctxt "@action:button Delete object"
 msgid "Delete"
 msgstr "Жою"
 
-#: main/KexiMainWindow.cpp:3462
+#: main/KexiMainWindow.cpp:3466
 msgid "Could not remove object."
 msgstr "Нысан жойылмады."
 
-#: main/KexiMainWindow.cpp:3485
+#: main/KexiMainWindow.cpp:3489
 #, fuzzy, kde-format
 #| msgid ""
 #| "<para>Before renaming object <resource>%1</resource> it should be closed."
@@ -3683,35 +3749,40 @@ msgstr ""
 "<para><resource>%1</resource> нысанның атауын өзгерту алдында оны жабу керек."
 "</para><para>Жаппақсыз ба?</para>"
 
-#: main/KexiMainWindow.cpp:3489
+#: main/KexiMainWindow.cpp:3493
 #, fuzzy
 #| msgid "Close window"
 msgctxt "@action:button"
 msgid "Close Window"
 msgstr "Терезені жабу"
 
-#: main/KexiMainWindow.cpp:3500
-#, kde-format
-msgid "Renaming object \"%1\" failed."
-msgstr "\"%1\" нысанның атауы өзгертілмеді."
+#: main/KexiMainWindow.cpp:3504
+#, fuzzy, kde-format
+#| msgctxt "@info Saving object failed"
+#| msgid "Saving <resource>%1</resource> object failed."
+msgctxt "@info"
+msgid "Renaming object <resource>%1</resource> failed."
+msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: main/KexiMainWindow.cpp:3518
-#, kde-format
-msgid "Setting caption for object \"%1\" failed."
+#: main/KexiMainWindow.cpp:3524
+#, fuzzy, kde-format
+#| msgid "Setting caption for object \"%1\" failed."
+msgctxt "@info"
+msgid "Setting caption for object <resource>%1</resource> failed."
 msgstr "\"%1\" нысанның атауы орнатылмады."
 
-#: main/KexiMainWindow.cpp:3685
+#: main/KexiMainWindow.cpp:3692
 #, fuzzy, kde-format
 #| msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgid "Compacting database file <filename>%1</filename> is not supported."
 msgstr "Деректер қорының <nobr>\"%1\"</nobr> файлы ықшамдауға келмейді."
 
-#: main/KexiMainWindow.cpp:3697
+#: main/KexiMainWindow.cpp:3704
 msgctxt "@action:button Compact database"
 msgid "Compact"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3699
+#: main/KexiMainWindow.cpp:3706
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -3723,7 +3794,7 @@ msgstr ""
 "\n"
 "Жалғастыра берейік пе?"
 
-#: main/KexiMainWindow.cpp:3834
+#: main/KexiMainWindow.cpp:3841
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -3732,12 +3803,12 @@ msgid ""
 "query for exporting or from its original (saved) version?"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3839
+#: main/KexiMainWindow.cpp:3846
 msgctxt "@action:button Export query data"
 msgid "Use the Changed Query"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3840
+#: main/KexiMainWindow.cpp:3847
 msgctxt "@action:button Export query data"
 msgid "Use the Original Query"
 msgstr ""
@@ -3768,10 +3839,10 @@ msgstr "Kexi қолданбаның қателері туралы хабарла
 msgid "Activates a \"What's This?\" tool."
 msgstr "\"Бұл не?\" анықтама құралы шығарады."
 
-#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1095
-#: migration/importwizard.cpp:1098 migration/importwizard.cpp:1100
-#: migration/importwizard.cpp:1102 migration/importwizard.cpp:1104
-#: migration/importwizard.cpp:1106
+#: main/KexiMainWindow_p.cpp:662 migration/importwizard.cpp:1106
+#: migration/importwizard.cpp:1109 migration/importwizard.cpp:1111
+#: migration/importwizard.cpp:1113 migration/importwizard.cpp:1115
+#: migration/importwizard.cpp:1117
 msgid "Help"
 msgstr "Көмек"
 
@@ -3810,13 +3881,17 @@ msgid "Report Design"
 msgstr "Баянатты құрастыру"
 
 #: main/KexiMainWindow_p.cpp:1333
-#, kde-format
-msgid "Could not start %1 application."
+#, fuzzy, kde-format
+#| msgid "Could not start %1 application."
+msgctxt "@info"
+msgid "Could not start <application>%1</application> application."
 msgstr "%1 қолданбасы жегілмеді."
 
-#: main/KexiMainWindow_p.cpp:1334
-#, kde-format
-msgid "Command \"%1\" failed."
+#: main/KexiMainWindow_p.cpp:1336
+#, fuzzy, kde-format
+#| msgid "Command \"%1\" failed."
+msgctxt "@info"
+msgid "Command <command>%1</command> failed."
 msgstr "\"%1\" командасы орындалмады."
 
 #: main/KexiMenuWidget.cpp:2173
@@ -4213,15 +4288,20 @@ msgid "on local server"
 msgstr "жергілікті серверінде"
 
 #: main/startup/KexiRecentProjectsModel.cpp:118
-#, kde-format
-msgid "on \"%1\" server"
-msgstr "\"%1\" серверінде"
+#, fuzzy, kde-format
+#| msgctxt "@info Object \"objectname\""
+#| msgid "%1 <resource>%2</resource>"
+msgctxt "@info"
+msgid "on <resource>%1</resource> server"
+msgstr "<resource>%2</resource> деген %1"
 
 #: main/startup/KexiRecentProjectsModel.cpp:126
-#, kde-format
-msgctxt "File database <file>"
-msgid "File database %1"
-msgstr "%1 файл деректер қоры"
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not read <filename>%1</filename>."
+msgctxt "@info File database <file>"
+msgid "File database <filename>%1</filename>"
+msgstr "<filename>%1</filename> деген оқылмады."
 
 #: main/startup/KexiRecentProjectsModel.cpp:133
 #, fuzzy
@@ -4359,34 +4439,33 @@ msgstr ""
 "Келтірілген \"user-mode\" және \"design-mode\" параметрлері бір-біріне қайшы "
 "келеді."
 
-#: main/startup/KexiStartup.cpp:484
-#, kde-format
+#: main/startup/KexiStartup.cpp:485
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not open file. The file <filename>%1</filename> does not exist."
+msgctxt "@info"
 msgid ""
-"Could not remove project.\n"
-"The file \"%1\" does not exist."
-msgstr ""
-"Жоба өшірілмеді.\n"
-"\"%1\" деген файл жоқ."
+"Could not remove project. The file <filename>%1</filename> does not exist."
+msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
 
-#: main/startup/KexiStartup.cpp:533
-#, kde-format
-msgid ""
-"Could not open shortcut file\n"
-"\"%1\"."
-msgstr ""
-"\"%1\"\n"
-"сілтеме жарлық файлы ашылмайды."
+#: main/startup/KexiStartup.cpp:536
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not write <filename>%1</filename>."
+msgctxt "@info"
+msgid "Could not open shortcut file <filename>%1</filename>."
+msgstr "<filename>%1</filename> дегенге жазылмады."
 
-#: main/startup/KexiStartup.cpp:564
-#, kde-format
-msgid ""
-"Could not open connection data file\n"
-"\"%1\"."
-msgstr ""
-"\"%1\"\n"
-"қосылым деректер файлы ашылмайды."
+#: main/startup/KexiStartup.cpp:568
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not write <filename>%1</filename>."
+msgctxt "@info"
+msgid "Could not open connection data file <filename>%1</filename>."
+msgstr "<filename>%1</filename> дегенге жазылмады."
 
-#: main/startup/KexiStartup.cpp:663
+#: main/startup/KexiStartup.cpp:667
 msgid ""
 "You have specified a few database objects to be opened automatically, using "
 "startup options.\n"
@@ -4398,28 +4477,32 @@ msgstr ""
 "Бұл параметрлер еленбей қалады, өйткені ол жобаны құрғанда немесе өшіргенде "
 "қол жеткізбейді."
 
-#: main/startup/KexiStartup.cpp:680
-#, kde-format
-msgid "Project \"%1\" created successfully."
+#: main/startup/KexiStartup.cpp:685
+#, fuzzy, kde-format
+#| msgid "Project \"%1\" created successfully."
+msgctxt "@info"
+msgid "Project <resource>%1</resource> created successfully."
 msgstr "\"%1\" жобасы сәтті құрылды."
 
-#: main/startup/KexiStartup.cpp:689
-#, kde-format
-msgid "Project \"%1\" dropped successfully."
+#: main/startup/KexiStartup.cpp:694
+#, fuzzy, kde-format
+#| msgid "Project \"%1\" dropped successfully."
+msgctxt "@info"
+msgid "Project <resource>%1</resource>dropped successfully."
 msgstr "\"%1\" жобасы сәтті өшірілді."
 
-#: main/startup/KexiStartup.cpp:811
+#: main/startup/KexiStartup.cpp:816
 msgctxt "@info"
 msgid "Could not open file. Missing filename."
 msgstr "Файл ашылмады. Атауы келтірілмеген."
 
-#: main/startup/KexiStartup.cpp:818
+#: main/startup/KexiStartup.cpp:823
 #, kde-format
 msgctxt "@info"
 msgid "Could not open file. The file <filename>%1</filename> does not exist."
 msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
 
-#: main/startup/KexiStartup.cpp:828
+#: main/startup/KexiStartup.cpp:833
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -4435,7 +4518,7 @@ msgstr ""
 "<filename>%1</filename> файлы оқу үшін ашылмады. <note>Файлдың рұқсатарын "
 "тексеріңіз. Немесе ол басқа бағдарламамен ашылып бұғаталғаны мүмкін.</note>"
 
-#: main/startup/KexiStartup.cpp:871
+#: main/startup/KexiStartup.cpp:876
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -4451,7 +4534,7 @@ msgstr ""
 "<filename>%1</filename> файлы оқу үшін ашылмады. <note>Файлдың рұқсатарын "
 "тексеріңіз. Немесе ол басқа бағдарламамен ашылып бұғаталғаны мүмкін.</note>"
 
-#: main/startup/KexiStartup.cpp:895
+#: main/startup/KexiStartup.cpp:900
 #, fuzzy, kde-format
 #| msgid ""
 #| "\"%1\" is an external file of type:\n"
@@ -4467,53 +4550,63 @@ msgstr ""
 "\"%2\".\n"
 "Файлды Kexi жобасына импорттайсыз ба?"
 
-#: main/startup/KexiStartup.cpp:898
+#: main/startup/KexiStartup.cpp:903
 msgid "Open External File"
 msgstr "Бөтен файлды ашу"
 
-#: main/startup/KexiStartup.cpp:899
+#: main/startup/KexiStartup.cpp:904
 #, fuzzy
 #| msgid "Import..."
 msgctxt "@action:button Import File"
 msgid "Import..."
 msgstr "Импорт..."
 
-#: main/startup/KexiStartup.cpp:932
-#, kde-format
+#: main/startup/KexiStartup.cpp:937
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project file \"%1\" is recognized as compatible with \"%2\" database "
+#| "driver, while you have asked for \"%3\" database driver to be used.\n"
+#| "Do you want to use \"%4\" database driver?"
+msgctxt "@info"
 msgid ""
-"The project file \"%1\" is recognized as compatible with \"%2\" database "
-"driver, while you have asked for \"%3\" database driver to be used.\n"
-"Do you want to use \"%4\" database driver?"
+"The project file <filename>%1</filename> is recognized as compatible with "
+"<resource>%2</resource> database driver, while you have asked for <resource>"
+"%3</resource> database driver to be used.\n"
+"Do you want to use <resource>%4</resource> database driver?"
 msgstr ""
 "\"%1\" жоба файлы \"%2\" деректер қоры драйверімен үйлесімді деп табылды, "
 "бірақ \"%3\" деректер қоры драйверін қолдану талап етілген.\n"
 "\"%4\" деректер қоры драйверін пайдаланасыз ба?"
 
-#: main/startup/KexiStartup.cpp:952
-msgid "Possible problems:"
+#: main/startup/KexiStartup.cpp:958
+#, fuzzy, kde-format
+#| msgid "Possible problems:"
+msgid "Possible problems: %1"
 msgstr "Мүмкін кедергілері:"
 
-#: main/startup/KexiStartup.cpp:957
+#: main/startup/KexiStartup.cpp:963
 #, fuzzy, kde-format
 #| msgid "The file \"%1\" is not recognized as being supported by Kexi."
+msgctxt "@info"
 msgid ""
 "The file <filename>%1</filename> is not recognized as being supported by "
 "Kexi."
 msgstr "Kexi \"%1\" деген файлды танымайды."
 
-#: main/startup/KexiStartup.cpp:959
+#: main/startup/KexiStartup.cpp:966
 #, fuzzy, kde-format
 #| msgid ""
 #| "Database driver for this file type not found.\n"
 #| "Detected MIME type: %1"
+msgctxt "@info"
 msgid ""
-"<para>Database driver for this file type not found.\n"
-"Detected MIME type is %1%2.</para>%3"
+"<para>Could not find plugin supporting for this file type.</"
+"para><para>Detected MIME type is <resource>%1</resource>%2.</para>%3"
 msgstr ""
 "Бұл файлдың түрі үшін деректер қоры драйвері табылмады.\n"
 "Байқалған MIME түрі: %1"
 
-#: main/startup/KexiStartup.cpp:994
+#: main/startup/KexiStartup.cpp:1002
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not load list of available projects for <b>%1</b> database server."
@@ -4524,7 +4617,7 @@ msgstr ""
 "<b>%1</b> деректер қоры сервері үшін қол жеткізер жобалар тізімін жүктей "
 "алмады."
 
-#: main/startup/KexiStartup.cpp:1035
+#: main/startup/KexiStartup.cpp:1043
 #, fuzzy, kde-format
 #| msgid ""
 #| "Failed saving connection data to\n"
@@ -4746,11 +4839,11 @@ msgstr ""
 msgid "Welcome to the Table Importing Assistant"
 msgstr "Деректер қоры кестесін импорттау шеберіне қош келдіңіз"
 
-#: migration/importtablewizard.cpp:194 migration/importwizard.cpp:298
+#: migration/importtablewizard.cpp:194 migration/importwizard.cpp:300
 msgid "Select Location for Source Database"
 msgstr "Қай деректер қорынан, орнын көрсетіңіз"
 
-#: migration/importtablewizard.cpp:204 migration/importwizard.cpp:309
+#: migration/importtablewizard.cpp:204 migration/importwizard.cpp:311
 msgid "Select Source Database"
 msgstr "Қай деректер қорынан"
 
@@ -4758,11 +4851,11 @@ msgstr "Қай деректер қорынан"
 msgid "Select the Table to Import"
 msgstr "Импорттайтын кестені таңдау"
 
-#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:467
+#: migration/importtablewizard.cpp:249 migration/importwizard.cpp:469
 msgid "Advanced Options"
 msgstr "Жетелеу параметрлері"
 
-#: migration/importtablewizard.cpp:256 migration/importwizard.cpp:479
+#: migration/importtablewizard.cpp:256 migration/importwizard.cpp:481
 msgid "Importing"
 msgstr "Импорттау"
 
@@ -4784,12 +4877,12 @@ msgstr "Баянаты басып шығару"
 msgid "Open imported table"
 msgstr "Импортталған жобаны ашу"
 
-#: migration/importtablewizard.cpp:319 migration/importwizard.cpp:504
-#: migration/importwizard.cpp:895
+#: migration/importtablewizard.cpp:319 migration/importwizard.cpp:506
+#: migration/importwizard.cpp:905
 msgid "Success"
 msgstr "Сәтті бітті"
 
-#: migration/importtablewizard.cpp:374 migration/importwizard.cpp:564
+#: migration/importtablewizard.cpp:374 migration/importwizard.cpp:569
 msgid "Select source database you wish to import:"
 msgstr "Импорттайтын деректер қоры:"
 
@@ -4854,7 +4947,7 @@ msgstr "\"%1\" кестенің құрылымы өзгертілген."
 msgid "An error occured."
 msgstr "Жазуды ендіру кезінде қате пайда болды."
 
-#: migration/importtablewizard.cpp:579 migration/importwizard.cpp:773
+#: migration/importtablewizard.cpp:579 migration/importwizard.cpp:783
 msgid "No appropriate migration driver found."
 msgstr "Лайықты көшу драйвері табылмады."
 
@@ -4888,6 +4981,7 @@ msgstr "Деректер қорын импорттау"
 #| msgid ""
 #| "<qt>Database Importing wizard is about to import \"%1\" database <nobr>"
 #| "(connection %2)</nobr> into a Kexi database.</qt>"
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant is about to import <resource>%1</resource> "
 "database (connection <resource>%2</resource>) into a Kexi project."
@@ -4900,6 +4994,7 @@ msgstr ""
 #| msgid ""
 #| "<qt>Database Importing wizard is about to import <nobr>\"%1\"</nobr> file "
 #| "of type \"%2\" into a Kexi database.</qt>"
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant is about to import <filename>%1</filename> file "
 "of type <resource>%2</resource> into a Kexi project."
@@ -4907,11 +5002,12 @@ msgstr ""
 "<qt>Деректер қорын импорттау шебері түрі \"%2\" <nobr>\"%1\"</nobr> файлын "
 "Kexi деректер қорына импорттаудың алдында.</qt>"
 
-#: migration/importwizard.cpp:260
+#: migration/importwizard.cpp:261
 #, fuzzy
 #| msgid ""
 #| "Database Importing wizard allows you to import an existing database into "
 #| "a Kexi database."
+msgctxt "@info"
 msgid ""
 "Database Importing Assistant allows you to import an existing database into "
 "a Kexi project."
@@ -4919,7 +5015,7 @@ msgstr ""
 "Деректер қорын импорттау шебері бар деректер қорын Kexi деректер қорына "
 "импорттауға мүмкіндік береді."
 
-#: migration/importwizard.cpp:264
+#: migration/importwizard.cpp:266
 #, fuzzy, kde-format
 #| msgid ""
 #| "Click \"Next\" button to continue or \"Cancel\" button to exit this "
@@ -4932,91 +5028,91 @@ msgstr ""
 "Жалғастыру үшін \"Келесі\" дегенді, шеберден шығу үшін \"Қайту\" деген "
 "батырманы басыңыз."
 
-#: migration/importwizard.cpp:271
+#: migration/importwizard.cpp:273
 #, fuzzy
 #| msgid "Welcome to the Database Importing Wizard"
 msgid "Welcome to the Database Importing Assistant"
 msgstr "Деректер қорын импорттау шеберіне қош келдіңіз"
 
-#: migration/importwizard.cpp:324
+#: migration/importwizard.cpp:326
 msgid "Destination database type:"
 msgstr "Шығыс деректер қорының түрі:"
 
-#: migration/importwizard.cpp:331
+#: migration/importwizard.cpp:333
 msgid "Database project stored in a file"
 msgstr "Файлда сақталған деректер қоры жобасы"
 
-#: migration/importwizard.cpp:332
+#: migration/importwizard.cpp:334
 msgid "Database project stored on a server"
 msgstr "Серверде сақталған деректер қоры жобасы"
 
-#: migration/importwizard.cpp:336
+#: migration/importwizard.cpp:338
 msgid "Select Destination Database Type"
 msgstr "Мақсатты деректер қорының түрін таңдаңыз"
 
-#: migration/importwizard.cpp:344
+#: migration/importwizard.cpp:346
 #, fuzzy
 #| msgid "Destination project's title:"
 msgid "Destination project's caption:"
 msgstr "Мақсатты жобаның атауы:"
 
-#: migration/importwizard.cpp:356
+#: migration/importwizard.cpp:358
 #, fuzzy
 #| msgid "Destination project's title:"
 msgid "Destination project's name:"
 msgstr "Мақсатты жобаның атауы:"
 
-#: migration/importwizard.cpp:365
+#: migration/importwizard.cpp:367
 #, fuzzy
 #| msgid "Select Destination Database Project's Title"
 msgid "Enter Destination Database Project's Caption"
 msgstr "Мақсатты деректер қоры жобасының атауын таңдау"
 
-#: migration/importwizard.cpp:401
+#: migration/importwizard.cpp:403
 #, fuzzy
 #| msgid "Select Location for Destination Database"
 msgid "Select Location for Destination Database Project"
 msgstr "Шығыс деректер қорының сақтау орнын таңдаңыз"
 
-#: migration/importwizard.cpp:419
+#: migration/importwizard.cpp:421
 #, fuzzy
 #| msgid "Structure and data"
 msgctxt "Scope of import"
 msgid "Structure and data"
 msgstr "Құрылым мен дерегі"
 
-#: migration/importwizard.cpp:424
+#: migration/importwizard.cpp:426
 #, fuzzy
 #| msgid "Structure only"
 msgctxt "Scope of import"
 msgid "Structure only"
 msgstr "Тек құрылымы ғана"
 
-#: migration/importwizard.cpp:430
+#: migration/importwizard.cpp:432
 #, fuzzy
 #| msgid "Select Type of Import"
 msgid "Select Scope of Import"
 msgstr "Импорттау түрін таңдаңыз"
 
-#: migration/importwizard.cpp:497
+#: migration/importwizard.cpp:499
 msgid "Open imported project"
 msgstr "Импортталған жобаны ашу"
 
-#: migration/importwizard.cpp:515
+#: migration/importwizard.cpp:517
 #, fuzzy
 #| msgid "No new database name was entered."
 msgctxt "@info"
 msgid "<para>No new database name was entered.</para>"
 msgstr "Жаңа деректер қорының атауы келтірілмеген."
 
-#: migration/importwizard.cpp:521
+#: migration/importwizard.cpp:524
 #, fuzzy, kde-format
 #| msgid "Source database is the same as destination."
 msgctxt "@info"
 msgid "%1<para>Source database is the same as destination.</para>"
 msgstr "Кіріс пен шығыс деп бір деректер қоры көрсетілген."
 
-#: migration/importwizard.cpp:526
+#: migration/importwizard.cpp:531
 #, fuzzy, kde-format
 #| msgid "Please click 'Back' button and correct these errors."
 msgctxt "@info"
@@ -5026,7 +5122,7 @@ msgid ""
 "issues.</para>"
 msgstr "'Шегіну' батырмасын түртіп бұл қателерді түзеңіз."
 
-#: migration/importwizard.cpp:624
+#: migration/importwizard.cpp:629
 #, fuzzy
 #| msgid ""
 #| "All required information has now been gathered. Click \"Next\" button to "
@@ -5044,28 +5140,28 @@ msgstr ""
 "\n"
 "Импорттау деректер қорының үлкендігіне қарай біраз уақыт алуы мүмкін."
 
-#: migration/importwizard.cpp:867
+#: migration/importwizard.cpp:877
 #, fuzzy, kde-format
 #| msgid ""
 #| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
 msgctxt "@info (don't add tags around %1, it's done already)"
 msgid ""
-"<para>Database <resource>%1</resource> already exists.</para><para>Do you "
-"want to replace it with a new one?</para>"
+"<para>Database %1 already exists.</para><para>Do you want to replace it with "
+"a new one?</para>"
 msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен ауыстырмақсыз ба?"
 
-#: migration/importwizard.cpp:870
+#: migration/importwizard.cpp:880
 #, fuzzy
 #| msgid "&Replace"
 msgctxt "@action:button Replace Database"
 msgid "&Replace"
 msgstr "&Алмастыру"
 
-#: migration/importwizard.cpp:909
+#: migration/importwizard.cpp:919
 msgid "Failure"
 msgstr "Жаңылыс"
 
-#: migration/importwizard.cpp:912
+#: migration/importwizard.cpp:923
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
@@ -5078,19 +5174,19 @@ msgstr ""
 "<p>Импорт жаңылысы.</p>%1<p>%2</p><p>\"Шегіну\"дегенді басып қайталап көре "
 "аласыз.</p>"
 
-#: migration/importwizard.cpp:935
+#: migration/importwizard.cpp:946
 msgid "Select source database filename."
 msgstr "Кіріс деректер қоры файлдың атауын таңдаңыз."
 
-#: migration/importwizard.cpp:941
+#: migration/importwizard.cpp:952
 msgid "Select source database."
 msgstr "Кіріс деректер қорының атауын таңдаңыз."
 
-#: migration/importwizard.cpp:955
+#: migration/importwizard.cpp:966
 msgid "Could not import database. This type is not supported."
 msgstr "Деректер қоры импортталмайды. Оның бұл түрінің қолдауы жоқ."
 
-#: migration/importwizard.cpp:957
+#: migration/importwizard.cpp:968
 #, fuzzy, kde-format
 #| msgid "Could not import database \"%1\". This type is not supported."
 msgctxt "@info"
@@ -5099,34 +5195,34 @@ msgid ""
 "supported."
 msgstr "\"%1\" деректер қоры импортталмайды. Оның бұл түрінің қолдауы жоқ."
 
-#: migration/importwizard.cpp:1016
+#: migration/importwizard.cpp:1027
 msgid "Importing in progress..."
 msgstr "Импорттау..."
 
-#: migration/importwizard.cpp:1021
+#: migration/importwizard.cpp:1032
 #, fuzzy, kde-format
 #| msgid "Database has been imported into Kexi database project \"%1\"."
 msgctxt "@info"
 msgid "Database has been imported into Kexi project <resource>%1</resource>."
 msgstr "Деректер қоры \"%1\" деген Kexi деректер қоры жобасына импортталды."
 
-#: migration/importwizard.cpp:1095 migration/importwizard.cpp:1106
+#: migration/importwizard.cpp:1106 migration/importwizard.cpp:1117
 msgid "No help is available for this page."
 msgstr "Бұл беттің анықтама мәліметі жоқ."
 
-#: migration/importwizard.cpp:1098
+#: migration/importwizard.cpp:1109
 msgid "Here you can choose the location to import data from."
 msgstr "Мұнда деректерін қай орыннан импорттауды таңдаңыз."
 
-#: migration/importwizard.cpp:1100
+#: migration/importwizard.cpp:1111
 msgid "Here you can choose the actual database to import data from."
 msgstr "Мұнда деректерін қай дайын деректер қорынан импорттауды таңдаңыз."
 
-#: migration/importwizard.cpp:1102
+#: migration/importwizard.cpp:1113
 msgid "Here you can choose the location to save the data."
 msgstr "Мұнда деректерін қай орынға сақтауды таңдаңыз."
 
-#: migration/importwizard.cpp:1104
+#: migration/importwizard.cpp:1115
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
@@ -6446,7 +6542,7 @@ msgstr "Жазуды ендіру кезінде қате пайда болды.
 #: plugins/importexport/csv/kexicsvwidgets.cpp:189
 #: plugins/importexport/csv/kexicsvwidgets.cpp:239
 #: plugins/importexport/csv/kexicsvwidgets.cpp:251
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 #: plugins/tables/kexitabledesignerview.cpp:403
 msgid "None"
 msgstr "Жоқ"
@@ -6478,7 +6574,7 @@ msgstr ""
 "болмауы мүмкін (деректер қорының түріне қарай)."
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1864
-#: plugins/tables/kexitabledesignerview.cpp:1205
+#: plugins/tables/kexitabledesignerview.cpp:1206
 #, fuzzy
 #| msgid "&Add Primary Key"
 msgctxt "@action:button Add Database Primary Key to a Table"
@@ -6486,7 +6582,7 @@ msgid "&Add Primary Key"
 msgstr "Негізгі кілтті қ&осу"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1865
-#: plugins/tables/kexitabledesignerview.cpp:1206
+#: plugins/tables/kexitabledesignerview.cpp:1207
 #, fuzzy
 #| msgctxt "Do Not Add Database Primary Key to a Table"
 #| msgid "Do Not Add"
@@ -6532,39 +6628,41 @@ msgstr "Импорт доғарылды."
 msgid "Error occurred during import."
 msgstr "Ипортттау кезінде қате пайда болды."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2065
-#, kde-format
-msgid "Data has been successfully imported to table \"%1\"."
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2066
+#, fuzzy, kde-format
+#| msgid "Data has been successfully imported to table \"%1\"."
+msgctxt "@info"
+msgid "Data has been successfully imported to table <resource>%1</resource>."
 msgstr "Деректер сәтті \"%1\" кестесіне импортталды."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2092
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2093
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "Мәтін"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2094
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2095
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "Сан"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2096
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2097
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "Ақша"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2176
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2177
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(%1 жол)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2180
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2181
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(%1 жолдан артық)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2181
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2182
 msgid "Not all rows are visible on this preview"
 msgstr "Бұнда барлық жолдар көрсетілмеген"
 
@@ -6678,7 +6776,7 @@ msgid "Describes visibility for a given field or expression."
 msgstr "Өріс не өрнегінің көрінетіні."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:280
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1836
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1839
 msgid "Sorting"
 msgstr "Реттеу"
 
@@ -6687,12 +6785,12 @@ msgid "Describes a way of sorting for a given field."
 msgstr "Өрістің реттеу тәртібі."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:284
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 msgid "Ascending"
 msgstr "Өсу ретімен"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:285
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1834
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1837
 msgid "Descending"
 msgstr "Кему ретімен"
 
@@ -6713,30 +6811,37 @@ msgstr ""
 "Алдымен құрлымын құрыңыз."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:428
-#, kde-format
-msgid "Select column for table \"%1\""
-msgstr "\"%1\" кестесі үшін бағанды таңдаңыз"
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Select column for table <resource>%1</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:450
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1727
-#, kde-format
-msgid "Invalid criteria \"%1\""
+#: plugins/queries/kexiquerydesignerguieditor.cpp:451
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1730
+#, fuzzy, kde-format
+#| msgid "Invalid criteria \"%1\""
+msgctxt "@info"
+msgid "Invalid criteria <icode>%1</icode>"
 msgstr "\"%1\" шарты жарамсыз"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:470
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1523
-#, kde-format
-msgid "Invalid expression \"%1\""
+#: plugins/queries/kexiquerydesignerguieditor.cpp:472
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1526
+#, fuzzy, kde-format
+#| msgid "Invalid expression \"%1\""
+msgctxt "@info"
+msgid "Invalid expression <icode>%1</icode>"
 msgstr "\"%1\" өрнегі жарамсыз"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:669
-#: plugins/queries/kexiquerydesignerguieditor.cpp:683
-#: plugins/queries/kexiquerydesignerguieditor.cpp:705
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1105
+#: plugins/queries/kexiquerydesignerguieditor.cpp:671
+#: plugins/queries/kexiquerydesignerguieditor.cpp:685
+#: plugins/queries/kexiquerydesignerguieditor.cpp:707
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1107
 msgid "Query definition loading failed."
 msgstr "Сұраныс анықтауының жүктеу жаңылысы."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:670
+#: plugins/queries/kexiquerydesignerguieditor.cpp:672
 msgid ""
 "Query design may be corrupted so it could not be opened even in text view.\n"
 "You can delete the query and create it again."
@@ -6744,42 +6849,47 @@ msgstr ""
 "Сұраныстың құрылымы бұзылған, сондықтан мәтін көрінісінде де ашылмайды.\n"
 "Сұранысты жойып қайтадан құрыңыз."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1297
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1299
 msgctxt "short for 'expression' word (only latin letters, please)"
 msgid "expr"
 msgstr "expr"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1504
-#, kde-format
-msgid "Entered column alias \"%1\" is not a valid identifier."
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1506
+#, fuzzy, kde-format
+#| msgid "Entered column alias \"%1\" is not a valid identifier."
+msgctxt "@info"
+msgid "Entered column alias <resource>%1</resource> is not a valid identifier."
 msgstr "\"%1\" деп келтірілген бағанның бүркеншік атауы жарамсыз."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1505
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1508
 msgid "Identifiers should start with a letter or '_' character"
 msgstr "Идентификатор әріп не '_' таңбасынан басталуы тиіс"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1675
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1678
 #, kde-format
 msgid "Could not set sorting for multiple columns (%1)"
 msgstr "Бірнеше баған (%1) бойынша реттеу болмайды"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1700
-#, kde-format
-msgid "Could not set criteria for \"%1\""
-msgstr "\"%1\" үшін шарт қойылмайды"
-
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1703
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Could not set criteria for <resource>%1</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1706
 msgid "Could not set criteria for empty record"
 msgstr "Бос жазу үшін шарт қойылмайды"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1797
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1800
 #, fuzzy
 #| msgid "Column"
 msgctxt "Query column"
 msgid "Column"
 msgstr "Баған"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1822
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1825
 msgid "Alias"
 msgstr "Бүркеншік атауы"
 
@@ -7251,12 +7361,14 @@ msgstr "Интерпретаторы"
 msgid "The used scripting interpreter."
 msgstr "Қолданатын скрипт интерпретаторы."
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:376
-#, kde-format
-msgid "Execution of the script \"%1\" started."
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:377
+#, fuzzy, kde-format
+#| msgid "Execution of the script \"%1\" started."
+msgctxt "@info"
+msgid "Execution of the script <resource>%1<resource> started."
 msgstr "\"%1\" скрипттің орындалуы басталды."
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:392
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:394
 #, no-c-format, kde-format
 msgid "Successfully executed. Time elapsed: %1ms"
 msgstr "Сәтті орындалды. Кеткен уақыты: %1мс"
@@ -7321,26 +7433,29 @@ msgstr "Өріс таңдалмаған"
 
 #: plugins/tables/kexitabledesignercommands.cpp:93
 #, fuzzy, kde-format
-#| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
-msgstr "Кесте өрісінің \"%1\" қасиетін \"%2\" дегеннен \"%3\" дегенге өзгерту"
+msgid ""
+"Change <resource>%1</resource> property for table field from <resource>%2</"
+"resource> to <resource>%3</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/tables/kexitabledesignercommands.cpp:158
+#: plugins/tables/kexitabledesignercommands.cpp:159
 #, fuzzy, kde-format
-#| msgid "Remove table field \"%1\""
+#| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
-msgid "Remove table field \"%1\""
-msgstr "Кестенің \"%1\" өрісін жою"
+msgid "Remove table field <resource>%1</resource>"
+msgstr "\"%1\" өрісін автонөмірлемеу"
 
-#: plugins/tables/kexitabledesignercommands.cpp:160
+#: plugins/tables/kexitabledesignercommands.cpp:161
 #, fuzzy, kde-format
 #| msgid "Remove empty row at position %1"
 msgctxt "(qtundo-format)"
 msgid "Remove empty row at position %1"
 msgstr "%1-жол бос, өшірілсін"
 
-#: plugins/tables/kexitabledesignercommands.cpp:211
+#: plugins/tables/kexitabledesignercommands.cpp:212
 #, fuzzy, kde-format
 #| msgid "Insert table field \"%1\""
 msgctxt "(qtundo-format)"
@@ -7508,23 +7623,23 @@ msgid "Discard Design"
 msgstr "Өзгерістерді ысырып тастау"
 
 #: plugins/tables/kexitabledesignerview.cpp:651
-#, fuzzy, kde-format
-#| msgid ""
-#| "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#, kde-format
 msgctxt "(qtundo-format)"
-msgid "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+msgid ""
+"Change <resource>%1</resource> field name to <resource>%2</resource> and "
+"caption from <resource>%3</resource> to <resource>4</resource>"
 msgstr ""
-"\"%1\" өрісінің атауын \"%2\" деп және айдарын \"%3\"дегеннен \"%4\" дегенге "
-"өзгерту"
 
-#: plugins/tables/kexitabledesignerview.cpp:729
+#: plugins/tables/kexitabledesignerview.cpp:730
 #, fuzzy, kde-format
-#| msgid "Change data type for field \"%1\" to \"%2\""
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
 msgctxt "(qtundo-format)"
-msgid "Change data type for field \"%1\" to \"%2\""
-msgstr "Өріс дерегінің түрін  \"%1\" дегеннен \"%2\" дегенге өзгерту"
+msgid ""
+"Change data type for field <resource>%1</resource> to <resource>%2</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/tables/kexitabledesignerview.cpp:903
+#: plugins/tables/kexitabledesignerview.cpp:904
 #, fuzzy
 #| msgid "Setting autonumber requires primary key to be set for current field."
 msgid ""
@@ -7532,13 +7647,13 @@ msgid ""
 "para>"
 msgstr "Автонөмірлеу орнатқанда негізгі кілтті де осы өріске орнату керек."
 
-#: plugins/tables/kexitabledesignerview.cpp:905
+#: plugins/tables/kexitabledesignerview.cpp:906
 #, fuzzy
 #| msgid "Previous primary key will be removed."
 msgid "<para>Previous primary key will be removed.</para>"
 msgstr "Бұрынғы негізгі кілт өшіріледі."
 
-#: plugins/tables/kexitabledesignerview.cpp:906
+#: plugins/tables/kexitabledesignerview.cpp:907
 #, fuzzy
 #| msgid ""
 #| "Do you want to create primary key for current field? Click \"Cancel\" to "
@@ -7550,18 +7665,18 @@ msgstr ""
 "Осы өрісті негізгі кілт қылу керек пе? Автонөмірлеуді орнатпау үшін \"Қайту"
 "\" дегенді басыңыз."
 
-#: plugins/tables/kexitabledesignerview.cpp:910
+#: plugins/tables/kexitabledesignerview.cpp:911
 msgid "Setting Autonumber Field"
 msgstr "Автонөмірленетін өрісті орнату"
 
-#: plugins/tables/kexitabledesignerview.cpp:911
+#: plugins/tables/kexitabledesignerview.cpp:912
 #, fuzzy
 #| msgid "Create &Primary Key"
 msgctxt "@action:button"
 msgid "Create &Primary Key"
 msgstr "&Негізгі кілтті құру"
 
-#: plugins/tables/kexitabledesignerview.cpp:918
+#: plugins/tables/kexitabledesignerview.cpp:919
 #, fuzzy, kde-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -7569,45 +7684,45 @@ msgctxt "(qtundo-format)"
 msgid "Set autonumber for field <resource>%1</resource>"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/tables/kexitabledesignerview.cpp:923
+#: plugins/tables/kexitabledesignerview.cpp:924
 #, fuzzy, kde-format
 #| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Remove autonumber from field <resource>%1</resource>"
 msgstr "\"%1\" өрісін автонөмірлемеу"
 
-#: plugins/tables/kexitabledesignerview.cpp:941
+#: plugins/tables/kexitabledesignerview.cpp:942
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Set <resource>%1</resource> property for field <resource>%2</resource>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:982
+#: plugins/tables/kexitabledesignerview.cpp:983
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid ""
 "Change type for field <resource>%1</resource> to <resource>%2</resource>"
 msgstr ""
 
-#: plugins/tables/kexitabledesignerview.cpp:1022
+#: plugins/tables/kexitabledesignerview.cpp:1023
 #, fuzzy, kde-format
 #| msgid "Set primary key for field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Set primary key for field <resource>%1</resource>"
 msgstr "\"%1\" өрісін негізгі кілт қылу"
 
-#: plugins/tables/kexitabledesignerview.cpp:1046
+#: plugins/tables/kexitabledesignerview.cpp:1047
 #, fuzzy, kde-format
 #| msgid "Unset primary key for field \"%1\""
 msgctxt "(qtundo-format)"
 msgid "Unset primary key for field <resource>%1</resource>"
 msgstr "\"%1\" өрісін негізгі кілт қылмау"
 
-#: plugins/tables/kexitabledesignerview.cpp:1151
+#: plugins/tables/kexitabledesignerview.cpp:1152
 msgid "You should enter field caption."
 msgstr "Өріс айдарын келтіру керек."
 
-#: plugins/tables/kexitabledesignerview.cpp:1168
+#: plugins/tables/kexitabledesignerview.cpp:1169
 msgid ""
 "You have added no fields.\n"
 "Every table should have at least one field."
@@ -7615,16 +7730,20 @@ msgstr ""
 "Өріс қосылмаған.\n"
 "Кестеде кемінде бір өріс болу керек."
 
-#: plugins/tables/kexitabledesignerview.cpp:1184
-#, kde-format
+#: plugins/tables/kexitabledesignerview.cpp:1185
+#, fuzzy, kde-format
+#| msgid ""
+#| "You have added \"%1\" field name twice.\n"
+#| "Field names cannot be repeated. Correct name of the field."
+msgctxt "@info"
 msgid ""
-"You have added \"%1\" field name twice.\n"
-"Field names cannot be repeated. Correct name of the field."
+"<para>You have added <resource>%1</resource> field name twice.</"
+"para><para>Field names cannot be repeated. Correct name of the field.</para>"
 msgstr ""
 "\"%1\" деген өріс атауы қайталанған.\n"
 "Өріс атаулары қайталанбайды. Қатені түзеңіз."
 
-#: plugins/tables/kexitabledesignerview.cpp:1198
+#: plugins/tables/kexitabledesignerview.cpp:1199
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Table \"%1\" has no <b>primary key</b> defined.</p><p>Although a "
@@ -7647,27 +7766,34 @@ msgstr ""
 "қолмен қосуды қаласаңыз, \"Қайту\" дегенді басып, кестенің құрылымын "
 "сақтаудан айныңыз.</p>"
 
-#: plugins/tables/kexitabledesignerview.cpp:1217
+#: plugins/tables/kexitabledesignerview.cpp:1218
 #, kde-format
 msgctxt "Identifier%1"
 msgid "Id%1"
 msgstr "Id%1"
 
-#: plugins/tables/kexitabledesignerview.cpp:1430
-#, kde-format
+#: plugins/tables/kexitabledesignerview.cpp:1432
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are about to remove table <resource>%1</resource> but following "
+#| "objects using this table are opened:"
+msgctxt "@info"
 msgid ""
-"You are about to change the design of table \"%1\" but following objects "
-"using this table are opened:"
+"You are about to change the design of table <resource>%1</resource> but "
+"following objects using this table are opened:"
 msgstr ""
-"\"%1\" кестеснің құрылымын өзгерту алдындасыз, бірақ оны келесі ашылған "
+"<resource>%1</resource> кестесін жабу алдындасыз, бірақ оны келесі ашылған "
 "нысандар қолдануда:"
 
-#: plugins/tables/kexitabledesignerview.cpp:1618
-#, kde-format
-msgid "Table field \"%1\""
-msgstr "Кестенің \"%1\" өрісі"
-
 #: plugins/tables/kexitabledesignerview.cpp:1620
+#, fuzzy, kde-format
+#| msgctxt "@title:window Rename Object %1."
+#| msgid "Rename <resource>%1</resource>"
+msgctxt "@info"
+msgid "Table field <resource>%1</resource>"
+msgstr "<resource>%1</resource> дегенді қайта атау"
+
+#: plugins/tables/kexitabledesignerview.cpp:1622
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "Бос жол"
@@ -7964,10 +8090,14 @@ msgid "Edit Database Connection"
 msgstr "Деректер қорының қосылымын өзгерту"
 
 #: widget/KexiConnectionSelectorWidget.cpp:451
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Do you want to remove database connection \"%1\" from the list of "
+#| "available connections?"
+msgctxt "@info"
 msgid ""
-"Do you want to remove database connection \"%1\" from the list of available "
-"connections?"
+"Do you want to remove database connection <resource>%1</resource> from the "
+"list of available connections?"
 msgstr ""
 "Шынымен \"%1\" деректер қорының қосылымын бар қосылымдар тізімінен "
 "өшірмексіз бе?"
@@ -8227,31 +8357,44 @@ msgstr "Бүкіл танитын файлдар (%1)"
 msgid "All Supported Files (%1)"
 msgstr "Бүкіл танитын файлдар (%1)"
 
-#: widget/KexiFileWidget.cpp:320 widget/KexiFileWidget.cpp:362
-#: widget/KexiStartupFileHandler.cpp:354 widget/KexiStartupFileHandler.cpp:405
+#: widget/KexiFileWidget.cpp:320 widget/KexiStartupFileHandler.cpp:354
 msgid "Enter a filename."
 msgstr "Файл атауын келтіріңіз."
 
-#: widget/KexiFileWidget.cpp:357 widget/KexiStartupFileHandler.cpp:399
-#, kde-format
-msgid "The file \"%1\" does not exist."
-msgstr "\"%1\" деген файл жоқ."
+#: widget/KexiFileWidget.cpp:358 widget/KexiStartupFileHandler.cpp:399
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "The file or directory <filename>%1</filename> does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1</filename> does not exist."
+msgstr "<filename>%1</filename> деген файл я каталог жоқ."
 
-#: widget/KexiFileWidget.cpp:365 widget/KexiStartupFileHandler.cpp:409
-#, kde-format
-msgid "The file \"%1\" is not readable."
-msgstr "\"%1\" деген файл оқылмайды."
+#: widget/KexiFileWidget.cpp:363 widget/KexiStartupFileHandler.cpp:405
+#, fuzzy
+#| msgid "Enter a filename."
+msgctxt "@info"
+msgid "Enter a filename."
+msgstr "Файл атауын келтіріңіз."
 
-#: widget/KexiFileWidget.cpp:383
-#, kde-format
-msgid ""
-"The file \"%1\" already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"\"%1\" деген файл бар ғой.\n"
-"Үстінен жаза берейік пе?"
+#: widget/KexiFileWidget.cpp:367
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "The file or directory <filename>%1</filename> does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1</filename> is not readable."
+msgstr "<filename>%1</filename> деген файл я каталог жоқ."
 
 #: widget/KexiFileWidget.cpp:385
+#, fuzzy, kde-format
+#| msgid ""
+#| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
+msgctxt "@info"
+msgid ""
+"<para>The file <filename>%1<filename> already exists.</para><para>Do you "
+"want to overwrite it?</para>"
+msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен ауыстырмақсыз ба?"
+
+#: widget/KexiFileWidget.cpp:389
 #, fuzzy
 #| msgid "Overwrite"
 msgctxt "@action:button Overwrite File"
@@ -8419,6 +8562,14 @@ msgstr ""
 "менеджерін жұмсап  <filename>                 calligra-kexi-xxxx-driver</"
 "filename> деген дестені орнатыңыз. Дистрибутивіңізге орай дестенің атауы сәл "
 "басқа болу ықтимал.</para>"
+
+#: widget/KexiStartupFileHandler.cpp:409
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "The file or directory <filename>%1</filename> does not exist."
+msgctxt "@info"
+msgid "The file <filename>%1<filename> is not readable."
+msgstr "<filename>%1</filename> деген файл я каталог жоқ."
 
 #: widget/KexiStartupFileHandler.cpp:454
 msgid "This file already exists. Do you want to overwrite it?"
@@ -8812,6 +8963,149 @@ msgstr "Меңзерді соңғы жазуға көшіреді."
 #: widget/utils/kexirecordnavigator.cpp:570
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Меңзерді жаңа жазуға көшіріп ендіруге мүмкіндік береді."
+
+#~ msgid "Data identifier: \"%1\"."
+#~ msgstr "Деректің идентификаторы: \"%1\"."
+
+#, fuzzy
+#~| msgid "Could not load \"%1\" plugin."
+#~ msgctxt "@info"
+#~ msgid "Could not load Kexi plugin file \"%1\"."
+#~ msgstr "\"%1\" плагині жүктеп алынбады."
+
+#, fuzzy
+#~| msgid "Could not open project \"%1\"."
+#~ msgid "Could not open Kexi plugin \"%1\"."
+#~ msgstr "\"%1\" жобасы ашылмалы."
+
+#~ msgid "Could not rename object \"%1\"."
+#~ msgstr "\"%1\" нысанның атауы өзгертілмеді."
+
+#~ msgid "Could not open project \"%1\"."
+#~ msgstr "\"%1\" жобасы ашылмалы."
+
+#~ msgid "Could not create project \"%1\"."
+#~ msgstr "\"%1\" жобасы құрылмады."
+
+#, fuzzy
+#~| msgid "Opening object \"%1\" failed."
+#~ msgid ""
+#~ "Opening object \"%1\" failed.\n"
+#~ "%2%3"
+#~ msgstr "\"%1\" нысаны ашылмады."
+
+#, fuzzy
+#~| msgid "Do you want to drop the project \"%1\"?"
+#~ msgid ""
+#~ "Do you want to delete the project \"%1\"?\n"
+#~ "%1"
+#~ msgstr "\"%1\" жобаны өшірмексіз бе?"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change \"%1\" property for widget \"%2\""
+#~ msgstr "\"%2\" виджеттінің \"%1\" қасиетін өзгерту"
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Insert widget \"%1\""
+#~ msgstr "\"%1\" виджетін енгізу"
+
+#~ msgid "Renaming widget \"%1\" to \"%2\" failed."
+#~ msgstr "\"%1\" виджеттінің атауын \"%2\" деп өзгерту жаңылысы"
+
+#~ msgid "Tab for \"%1\" (%2)."
+#~ msgstr "\"%1\" (%2) қойндысы."
+
+#~ msgid "Tab for \"%1\"."
+#~ msgstr "\"%1\" қойндысы."
+
+#~ msgid "Renaming object \"%1\" failed."
+#~ msgstr "\"%1\" нысанның атауы өзгертілмеді."
+
+#~ msgid "on \"%1\" server"
+#~ msgstr "\"%1\" серверінде"
+
+#~ msgctxt "File database <file>"
+#~ msgid "File database %1"
+#~ msgstr "%1 файл деректер қоры"
+
+#~ msgid ""
+#~ "Could not remove project.\n"
+#~ "The file \"%1\" does not exist."
+#~ msgstr ""
+#~ "Жоба өшірілмеді.\n"
+#~ "\"%1\" деген файл жоқ."
+
+#~ msgid ""
+#~ "Could not open shortcut file\n"
+#~ "\"%1\"."
+#~ msgstr ""
+#~ "\"%1\"\n"
+#~ "сілтеме жарлық файлы ашылмайды."
+
+#~ msgid ""
+#~ "Could not open connection data file\n"
+#~ "\"%1\"."
+#~ msgstr ""
+#~ "\"%1\"\n"
+#~ "қосылым деректер файлы ашылмайды."
+
+#~ msgid "Select column for table \"%1\""
+#~ msgstr "\"%1\" кестесі үшін бағанды таңдаңыз"
+
+#~ msgid "Could not set criteria for \"%1\""
+#~ msgstr "\"%1\" үшін шарт қойылмайды"
+
+#, fuzzy
+#~| msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change \"%1\" property for table field from \"%2\" to \"%3\""
+#~ msgstr ""
+#~ "Кесте өрісінің \"%1\" қасиетін \"%2\" дегеннен \"%3\" дегенге өзгерту"
+
+#, fuzzy
+#~| msgid "Remove table field \"%1\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove table field \"%1\""
+#~ msgstr "Кестенің \"%1\" өрісін жою"
+
+#, fuzzy
+#~| msgid ""
+#~| "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid ""
+#~ "Change \"%1\" field's name to \"%2\" and caption from \"%3\" to \"%4\""
+#~ msgstr ""
+#~ "\"%1\" өрісінің атауын \"%2\" деп және айдарын \"%3\"дегеннен \"%4\" "
+#~ "дегенге өзгерту"
+
+#, fuzzy
+#~| msgid "Change data type for field \"%1\" to \"%2\""
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Change data type for field \"%1\" to \"%2\""
+#~ msgstr "Өріс дерегінің түрін  \"%1\" дегеннен \"%2\" дегенге өзгерту"
+
+#~ msgid ""
+#~ "You are about to change the design of table \"%1\" but following objects "
+#~ "using this table are opened:"
+#~ msgstr ""
+#~ "\"%1\" кестеснің құрылымын өзгерту алдындасыз, бірақ оны келесі ашылған "
+#~ "нысандар қолдануда:"
+
+#~ msgid "Table field \"%1\""
+#~ msgstr "Кестенің \"%1\" өрісі"
+
+#~ msgid "The file \"%1\" does not exist."
+#~ msgstr "\"%1\" деген файл жоқ."
+
+#~ msgid "The file \"%1\" is not readable."
+#~ msgstr "\"%1\" деген файл оқылмайды."
+
+#~ msgid ""
+#~ "The file \"%1\" already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "\"%1\" деген файл бар ғой.\n"
+#~ "Үстінен жаза берейік пе?"
 
 #, fuzzy
 #~| msgid "Following problems were found with the data you entered:"
