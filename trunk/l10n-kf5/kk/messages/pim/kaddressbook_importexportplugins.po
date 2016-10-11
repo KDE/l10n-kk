@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-10 07:24+0000\n"
+"POT-Creation-Date: 2016-10-11 08:12+0000\n"
 "PO-Revision-Date: 2013-11-08 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -20,21 +20,359 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: csv/csvimportexportplugininterface.cpp:40
+#: csv/csvimportexportplugininterface.cpp:53
 msgid "Export CSV file..."
 msgstr "CSV файлын экспорттау..."
 
-#: csv/csvimportexportplugininterface.cpp:41
+#: csv/csvimportexportplugininterface.cpp:54
 msgid "Export contacts to a file in comma separated value format."
 msgstr "Контакттарды үтірмен бөліктелген мәтін пішімді файлға экспорттау."
 
-#: csv/csvimportexportplugininterface.cpp:46
+#: csv/csvimportexportplugininterface.cpp:59
 msgid "Import CSV file..."
 msgstr "CSV файлын импорттау..."
 
-#: csv/csvimportexportplugininterface.cpp:47
+#: csv/csvimportexportplugininterface.cpp:60
 msgid "Import contacts from a file in comma separated value format."
 msgstr "Үтірмен бөліктелген мәтін файлынан контакттарды импорттау."
+
+#: csv/csvimportexportplugininterface.cpp:201
+#: ldif/ldifimportexportplugininterface.cpp:135
+#, kde-format
+msgid "<qt>Unable to open file <b>%1</b></qt>"
+msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
+
+#: csv/csvimportexportplugininterface.cpp:215
+#: ldif/ldifimportexportplugininterface.cpp:167
+#, kde-format
+msgid "<qt>Unable to open file <b>%1</b>.</qt>"
+msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
+
+#: csv/import/csvimportdialog.cpp:182
+msgctxt "@title:window"
+msgid "CSV Import Dialog"
+msgstr "CSV импорттау диалогы"
+
+#: csv/import/csvimportdialog.cpp:221
+msgctxt "@label"
+msgid "Importing contacts"
+msgstr "Контакттарды импорттау"
+
+#: csv/import/csvimportdialog.cpp:293
+msgctxt "@label"
+msgid "File to import:"
+msgstr "Импорттайтын файл:"
+
+#: csv/import/csvimportdialog.cpp:302
+msgctxt "@info:tooltip"
+msgid "Select a csv file to import"
+msgstr "Импорттайтын csv файлын таңдау"
+
+#: csv/import/csvimportdialog.cpp:305
+msgctxt "@info:whatsthis"
+msgid ""
+"Click this button to start a file chooser that will allow you to select a "
+"csv file to import."
+msgstr ""
+"Бұл батырманы басқанда ипорттайтын csv файлын таңдау мүмкіндігі беріледі."
+
+#: csv/import/csvimportdialog.cpp:312
+msgctxt "@title:group"
+msgid "Delimiter"
+msgstr "Бөлгіші"
+
+#: csv/import/csvimportdialog.cpp:322
+msgctxt "@option:radio Field separator"
+msgid "Comma"
+msgstr "Үтір"
+
+#: csv/import/csvimportdialog.cpp:324
+msgctxt "@info:tooltip"
+msgid "Set the field separator to a comma"
+msgstr "Бөлгішін үтір қылу"
+
+#: csv/import/csvimportdialog.cpp:327
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option if your csv file uses the comma as a field separator."
+msgstr "Бұл сsv файлда өрістер бөлгіші үтір деп таңдау."
+
+#: csv/import/csvimportdialog.cpp:332
+msgctxt "@option:radio Field separator"
+msgid "Semicolon"
+msgstr "Үтірлі нүкте"
+
+#: csv/import/csvimportdialog.cpp:334
+msgctxt "@info:tooltip"
+msgid "Set the field separator to a semicolon"
+msgstr "Бөлгішін үтірлі нүкте қылу"
+
+#: csv/import/csvimportdialog.cpp:337
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option if your csv file uses the semicolon as a field separator."
+msgstr "Бұл сsv файлда өрістер бөлгіші үтірлі нүкте деп таңдау."
+
+#: csv/import/csvimportdialog.cpp:341
+msgctxt "@option:radio Field separator"
+msgid "Tabulator"
+msgstr "Кестелегіш"
+
+#: csv/import/csvimportdialog.cpp:343
+msgctxt "@info:tooltip"
+msgid "Set the field separator to a tab character"
+msgstr "Өріс бөлгіші ретінде кестелегіш таңбасын орнату"
+
+#: csv/import/csvimportdialog.cpp:346
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option if your csv file uses the tab character as a field "
+"separator."
+msgstr "Бұл сsv файлда өрістер бөлгіші кестелегіш деп таңдау."
+
+#: csv/import/csvimportdialog.cpp:350
+msgctxt "@option:radio Field separator"
+msgid "Space"
+msgstr "Бос орын"
+
+#: csv/import/csvimportdialog.cpp:352
+msgctxt "@info:tooltip"
+msgid "Set the field separator to a space character"
+msgstr "Өріс бөлгіші ретінде бос орын таңбасын орнату"
+
+#: csv/import/csvimportdialog.cpp:355
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option if your csv file uses the space character as a field "
+"separator."
+msgstr "Бұл сsv файлда өрістер бөлгіші бос орын деп таңдау."
+
+#: csv/import/csvimportdialog.cpp:359
+msgctxt "@option:radio Custum field separator"
+msgid "Other"
+msgstr "Басқа"
+
+#: csv/import/csvimportdialog.cpp:361
+msgctxt "@info:tooltip"
+msgid "Set the field separator to a custom character"
+msgstr "Өріс бөлгіші ретінде өзгеше таңбаны орнату"
+
+#: csv/import/csvimportdialog.cpp:364
+msgctxt "@info:whatsthis"
+msgid ""
+"Select this option if to use some other character as the field delimiter for "
+"the data in your csv file."
+msgstr "Бұл сsv файлда өрістер бөлгіші ретінде басқа бір таңбаны таңдау."
+
+#: csv/import/csvimportdialog.cpp:372
+msgctxt "@info:tooltip"
+msgid "Set the custom delimiter character"
+msgstr "Бөлгіш ретінде өзгеше таңбаны орнату"
+
+#: csv/import/csvimportdialog.cpp:375
+msgctxt "@info:whatsthis"
+msgid ""
+"Enter a custom character to use as the delimiter character. If you enter "
+"more than 1 character, only the first will be used and the remaining "
+"characters will be ignored."
+msgstr ""
+"Бөлгіш таңбасы ретінде өзгеше таңбаны келтіріңіз. Бірнешесін келтірсеңіз "
+"біріншісі ғана алынады."
+
+#: csv/import/csvimportdialog.cpp:381
+msgctxt "@label:listbox"
+msgid "Text quote:"
+msgstr "Мәтін дәйекшесі:"
+
+#: csv/import/csvimportdialog.cpp:388
+msgctxt "@info:tooltip"
+msgid "Select the quote character"
+msgstr "Дәйексөз таңбасын таңдау"
+
+#: csv/import/csvimportdialog.cpp:391
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose the character that your csv data uses to \"quote\" the field "
+"delimiter if that character happens to occur within the data.  For example, "
+"if the comma is the field delimiter, then any comma occurring with the data "
+"will be \"quoted\" by the character specified here."
+msgstr ""
+"csv деректеріңізде \"дәйексөздеуге\" қолданатын таңба. Осы таңбасымен "
+"дәексөзделгені тырнақшаға алынады."
+
+#: csv/import/csvimportdialog.cpp:396
+msgctxt "@item:inlistbox Qoute character option"
+msgid "\""
+msgstr "\""
+
+#: csv/import/csvimportdialog.cpp:397
+msgctxt "@item:inlistbox Quote character option"
+msgid "'"
+msgstr "'"
+
+#: csv/import/csvimportdialog.cpp:398
+msgctxt "@item:inlistbox Quote character option"
+msgid "None"
+msgstr "Жоқ"
+
+#: csv/import/csvimportdialog.cpp:402
+msgctxt "@label:listbox"
+msgid "Date format:"
+msgstr "Күн пішімі:"
+
+#: csv/import/csvimportdialog.cpp:411
+msgctxt "@info:tooltip"
+msgid ""
+"<para><list><item>y: year with 2 digits</item><item>Y: year with 4 digits</"
+"item><item>m: month with 1 or 2 digits</item><item>M: month with 2 digits</"
+"item><item>d: day with 1 or 2 digits</item><item>D: day with 2 digits</"
+"item><item>H: hours with 2 digits</item><item>I: minutes with 2 digits</"
+"item><item>S: seconds with 2 digits</item></list></para>"
+msgstr ""
+"<para><list><item>y: екі цифрлы жыл саны</item><item>Y: төрт цифрлы жыл "
+"саны</item><item>m: бір не екі цифрлы ай нөмірі</item><item>M: екі цифрлы ай "
+"нөмірі</item><item>d: бір не екі цифрлы күн саны</item> <item>D: екі цифрлы "
+"күн саны</item><item>H: екі цифрлы сағат саны </item><item>I: екі цифрлы "
+"минут саны</item><item>S: екі цифрлы секунд саны</item></list></para>"
+
+#: csv/import/csvimportdialog.cpp:423
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Specify a format to use for dates included in your csv data. Use the "
+"following sequences to help you define the format:</"
+"para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
+"digits</item><item>m: month with 1 or 2 digits</item><item>M: month with 2 "
+"digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
+"digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
+"digits</item><item>S: seconds with 2 digits</item></list></"
+"para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
+"para>"
+msgstr ""
+"<para>csv дерегіңізге кіретін сандардың пішімін анықтаңыз. Пішімін анықтау "
+"үшін келесілерден құрылған тізбекті келтіріңіз:</para><para><list><item>y: 2 "
+"цифрлы жыл саны</item><item>Y: 4 цифрлы жыл саны</item><item>m: 1 не 2 "
+"цифрлы ай нөмірі</item><item>M: 2 цифрлы ай нөмірі</item><item>d: 1 не 2 "
+"цифрлы күн саны</item><item>D: 2 цифрлы күн саны</item><item>H: 2 цифрлы "
+"сағат саны</item><item>I: 2 цифрлы минут саны</item><item>S: 2 цифрлы секунд "
+"саны</item></list></para><para>Мысалы: \"Y-M-D\" деген \"2012-01-04\" деген "
+"күнге сәйкес келеді</para> "
+
+#: csv/import/csvimportdialog.cpp:439
+msgctxt "@label:listbox"
+msgid "Text codec:"
+msgstr "Мәтіндік кодек:"
+
+#: csv/import/csvimportdialog.cpp:446
+msgctxt "@info:tooltip"
+msgid "Select the text codec"
+msgstr "Мәтіндік кодекті таңдау"
+
+#: csv/import/csvimportdialog.cpp:449
+msgctxt "@info:whatsthis"
+msgid "Choose the character encoding of the data in your csv file."
+msgstr "csv файлыңыздағы деректің  кодтамасын таңдау."
+
+#: csv/import/csvimportdialog.cpp:453
+msgctxt "@option:check"
+msgid "Skip first row of file"
+msgstr "Файлдың бірінші жолы елемей қалсын"
+
+#: csv/import/csvimportdialog.cpp:456
+msgctxt "@info:tooltip"
+msgid "Skip first row of csv file when importing"
+msgstr "Импорттағанда csv файлдың бірінші жолы елемей қалсын"
+
+#: csv/import/csvimportdialog.cpp:459
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want the import to skip over the first row of the csv "
+"data. In many cases, the first line of a csv file will be a comment line "
+"describing the order of the data fields included in the file."
+msgstr ""
+"Егерде импорттағанда csv деректердің бірінші жолын елемей қалдыру керек "
+"болса - осы белгіні қою керек. Көбінде, бірінші жолы түсініктеме мәліметінен "
+"тұрады."
+
+#: csv/import/csvimportdialog.cpp:475
+msgctxt "@action:button"
+msgid "Apply Template..."
+msgstr "Үлгіні қолдану..."
+
+#: csv/import/csvimportdialog.cpp:476
+msgctxt "@action:button"
+msgid "Save Template..."
+msgstr "Үлгіні сақтау..."
+
+#: csv/import/csvimportdialog.cpp:496
+#, kde-format
+msgctxt "@item:inlistbox Codec setting"
+msgid "Local (%1)"
+msgstr "Жергілікті стандарт (%1)"
+
+#: csv/import/csvimportdialog.cpp:498
+msgctxt "@item:inlistbox Codec setting"
+msgid "Latin1"
+msgstr "Latin1"
+
+#: csv/import/csvimportdialog.cpp:499
+msgctxt "@item:inlistbox Codec setting"
+msgid "Unicode"
+msgstr "Unicode"
+
+#: csv/import/csvimportdialog.cpp:500
+msgctxt "@item:inlistbox Codec setting"
+msgid "Microsoft Unicode"
+msgstr "Microsoft Unicode"
+
+#: csv/import/csvimportdialog.cpp:605
+msgctxt "@info:status"
+msgid "You must assign at least one column."
+msgstr "Кем дегенде бір бағанды тағайындауңыз қажет."
+
+#: csv/import/csvimportdialog.cpp:617
+msgctxt "@label"
+msgid "There are no templates available yet."
+msgstr "Қол жетерлік үлгілер жоқ."
+
+#: csv/import/csvimportdialog.cpp:618
+msgctxt "@title:window"
+msgid "No templates available"
+msgstr "Үлгілер жоқ"
+
+#: csv/import/csvimportdialog.cpp:684
+msgctxt "@title:window"
+msgid "Template Name"
+msgstr "Үлгінің атауы"
+
+#: csv/import/csvimportdialog.cpp:685
+msgctxt "@info"
+msgid "Please enter a name for the template:"
+msgstr "Үлгінің атауын келтіріңіз:"
+
+#: csv/import/csvimportdialog.cpp:739
+msgctxt "@info:status"
+msgid "Cannot open input file."
+msgstr "Кіріс файлы ашылмады."
+
+#: csv/import/qcsvreader.cpp:111
+msgid "Device is not open"
+msgstr "Құрылғы ашылмаған екен"
+
+#: csv/import/templateselectiondialog.cpp:194
+#, kde-format
+msgctxt "@label"
+msgid "Do you really want to delete template '%1'?"
+msgstr "'%1' үлгісін шын өшірмексіз бе?"
+
+#: csv/import/templateselectiondialog.cpp:212
+msgctxt "@title:window"
+msgid "Template Selection"
+msgstr "Үлгіні таңдау"
+
+#: csv/import/templateselectiondialog.cpp:215
+msgctxt "@info"
+msgid "Please select a template, that matches the CSV file:"
+msgstr "CSV файлына сәйкес келетін үлгіні таңдаңыз:"
 
 #: gmx/gmximportexportplugininterface.cpp:40
 msgid "Import GMX file..."
@@ -52,29 +390,57 @@ msgstr "GMX файлына экспорттау...."
 msgid "Export contacts to a GMX address book file."
 msgstr "Контакттарды GMX адрес кітапша файлға экспорттау."
 
-#: ldap/ldapimportexportplugininterface.cpp:40
+#: ldap/ldapimportexportplugininterface.cpp:45
 msgid "Import From LDAP server..."
 msgstr "LDIF серверінен импорттау..."
 
-#: ldap/ldapimportexportplugininterface.cpp:41
+#: ldap/ldapimportexportplugininterface.cpp:46
 msgid "Import contacts from an LDAP server."
 msgstr "LDIF серверінен контакттарды импорттау."
 
-#: ldif/ldifimportexportplugininterface.cpp:40
+#: ldif/ldifimportexportplugininterface.cpp:50
 msgid "Import LDIF file..."
 msgstr "LDIF файлынан импорттау..."
 
-#: ldif/ldifimportexportplugininterface.cpp:41
+#: ldif/ldifimportexportplugininterface.cpp:51
 msgid "Import contacts from an LDIF file."
 msgstr "LDIF файлынан контакттарды импорттау."
 
-#: ldif/ldifimportexportplugininterface.cpp:46
+#: ldif/ldifimportexportplugininterface.cpp:56
 msgid "Export LDIF file..."
 msgstr "LDIF файлына экспорттау..."
 
-#: ldif/ldifimportexportplugininterface.cpp:47
+#: ldif/ldifimportexportplugininterface.cpp:57
 msgid "Export contacts to an LDIF file."
 msgstr "Контакттарды LDIF файлына экспорттау."
+
+#: ldif/ldifimportexportplugininterface.cpp:90
+#: ldif/ldifimportexportplugininterface.cpp:127
+msgid "LDif Files (*.ldif)"
+msgstr ""
+
+#: ldif/ldifimportexportplugininterface.cpp:97
+#, kde-format
+msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
+msgstr "<qt><b>%1</b> файлы оқу үшін ашылмады.</qt>"
+
+#: shared/importexportengine.cpp:81
+msgid "Select Address Book"
+msgstr "Адрес кітапшасын таңдау"
+
+#: shared/importexportengine.cpp:83
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Импортталған контакттар қай адрес кітапшасына сақталатынын таңдау:"
+
+#: shared/importexportengine.cpp:96
+msgid "Import Contacts"
+msgstr "Контакттарды импорттау"
+
+#: shared/importexportengine.cpp:98
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "%1 контактты %2 дегенге импорттау"
 
 #: vcards/engine/vcard_xxport.cpp:94
 msgctxt "@info"
@@ -1000,306 +1366,11 @@ msgstr "Контакттарды vCard 2.1 файлына экспорттау..
 #~ "Осы өрісте іздейтін контакттың атауын тере бастаңыз - сәйкес келетіндер "
 #~ "тізімі көрсетіледі. Бұл іздеудің ең оңайы."
 
-#~ msgid "<qt>Unable to open file <b>%1</b></qt>"
-#~ msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
-
-#~ msgid "<qt>Unable to open file <b>%1</b>.</qt>"
-#~ msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
-
-#~ msgctxt "@title:window"
-#~ msgid "CSV Import Dialog"
-#~ msgstr "CSV импорттау диалогы"
-
-#~ msgctxt "@label"
-#~ msgid "Importing contacts"
-#~ msgstr "Контакттарды импорттау"
-
-#~ msgctxt "@label"
-#~ msgid "File to import:"
-#~ msgstr "Импорттайтын файл:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select a csv file to import"
-#~ msgstr "Импорттайтын csv файлын таңдау"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Click this button to start a file chooser that will allow you to select a "
-#~ "csv file to import."
-#~ msgstr ""
-#~ "Бұл батырманы басқанда ипорттайтын csv файлын таңдау мүмкіндігі беріледі."
-
-#~ msgctxt "@title:group"
-#~ msgid "Delimiter"
-#~ msgstr "Бөлгіші"
-
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Comma"
-#~ msgstr "Үтір"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the field separator to a comma"
-#~ msgstr "Бөлгішін үтір қылу"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Select this option if your csv file uses the comma as a field separator."
-#~ msgstr "Бұл сsv файлда өрістер бөлгіші үтір деп таңдау."
-
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Semicolon"
-#~ msgstr "Үтірлі нүкте"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the field separator to a semicolon"
-#~ msgstr "Бөлгішін үтірлі нүкте қылу"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Select this option if your csv file uses the semicolon as a field "
-#~ "separator."
-#~ msgstr "Бұл сsv файлда өрістер бөлгіші үтірлі нүкте деп таңдау."
-
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Tabulator"
-#~ msgstr "Кестелегіш"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the field separator to a tab character"
-#~ msgstr "Өріс бөлгіші ретінде кестелегіш таңбасын орнату"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Select this option if your csv file uses the tab character as a field "
-#~ "separator."
-#~ msgstr "Бұл сsv файлда өрістер бөлгіші кестелегіш деп таңдау."
-
-#~ msgctxt "@option:radio Field separator"
-#~ msgid "Space"
-#~ msgstr "Бос орын"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the field separator to a space character"
-#~ msgstr "Өріс бөлгіші ретінде бос орын таңбасын орнату"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Select this option if your csv file uses the space character as a field "
-#~ "separator."
-#~ msgstr "Бұл сsv файлда өрістер бөлгіші бос орын деп таңдау."
-
-#~ msgctxt "@option:radio Custum field separator"
-#~ msgid "Other"
-#~ msgstr "Басқа"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the field separator to a custom character"
-#~ msgstr "Өріс бөлгіші ретінде өзгеше таңбаны орнату"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Select this option if to use some other character as the field delimiter "
-#~ "for the data in your csv file."
-#~ msgstr "Бұл сsv файлда өрістер бөлгіші ретінде басқа бір таңбаны таңдау."
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Set the custom delimiter character"
-#~ msgstr "Бөлгіш ретінде өзгеше таңбаны орнату"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Enter a custom character to use as the delimiter character. If you enter "
-#~ "more than 1 character, only the first will be used and the remaining "
-#~ "characters will be ignored."
-#~ msgstr ""
-#~ "Бөлгіш таңбасы ретінде өзгеше таңбаны келтіріңіз. Бірнешесін келтірсеңіз "
-#~ "біріншісі ғана алынады."
-
-#~ msgctxt "@label:listbox"
-#~ msgid "Text quote:"
-#~ msgstr "Мәтін дәйекшесі:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select the quote character"
-#~ msgstr "Дәйексөз таңбасын таңдау"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Choose the character that your csv data uses to \"quote\" the field "
-#~ "delimiter if that character happens to occur within the data.  For "
-#~ "example, if the comma is the field delimiter, then any comma occurring "
-#~ "with the data will be \"quoted\" by the character specified here."
-#~ msgstr ""
-#~ "csv деректеріңізде \"дәйексөздеуге\" қолданатын таңба. Осы таңбасымен "
-#~ "дәексөзделгені тырнақшаға алынады."
-
-#~ msgctxt "@item:inlistbox Qoute character option"
-#~ msgid "\""
-#~ msgstr "\""
-
-#~ msgctxt "@item:inlistbox Quote character option"
-#~ msgid "'"
-#~ msgstr "'"
-
-#~ msgctxt "@item:inlistbox Quote character option"
-#~ msgid "None"
-#~ msgstr "Жоқ"
-
-#~ msgctxt "@label:listbox"
-#~ msgid "Date format:"
-#~ msgstr "Күн пішімі:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid ""
-#~ "<para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
-#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
-#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
-#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
-#~ "digits</item><item>S: seconds with 2 digits</item></list></para>"
-#~ msgstr ""
-#~ "<para><list><item>y: екі цифрлы жыл саны</item><item>Y: төрт цифрлы жыл "
-#~ "саны</item><item>m: бір не екі цифрлы ай нөмірі</item><item>M: екі цифрлы "
-#~ "ай нөмірі</item><item>d: бір не екі цифрлы күн саны</item> <item>D: екі "
-#~ "цифрлы күн саны</item><item>H: екі цифрлы сағат саны </item><item>I: екі "
-#~ "цифрлы минут саны</item><item>S: екі цифрлы секунд саны</item></list></"
-#~ "para>"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<para>Specify a format to use for dates included in your csv data. Use "
-#~ "the following sequences to help you define the format:</"
-#~ "para><para><list><item>y: year with 2 digits</item><item>Y: year with 4 "
-#~ "digits</item><item>m: month with 1 or 2 digits</item><item>M: month with "
-#~ "2 digits</item><item>d: day with 1 or 2 digits</item><item>D: day with 2 "
-#~ "digits</item><item>H: hours with 2 digits</item><item>I: minutes with 2 "
-#~ "digits</item><item>S: seconds with 2 digits</item></list></"
-#~ "para><para>Example: \"Y-M-D\" corresponds to a date like \"2012-01-04\"</"
-#~ "para>"
-#~ msgstr ""
-#~ "<para>csv дерегіңізге кіретін сандардың пішімін анықтаңыз. Пішімін "
-#~ "анықтау үшін келесілерден құрылған тізбекті келтіріңіз:</"
-#~ "para><para><list><item>y: 2 цифрлы жыл саны</item><item>Y: 4 цифрлы жыл "
-#~ "саны</item><item>m: 1 не 2 цифрлы ай нөмірі</item><item>M: 2 цифрлы ай "
-#~ "нөмірі</item><item>d: 1 не 2 цифрлы күн саны</item><item>D: 2 цифрлы күн "
-#~ "саны</item><item>H: 2 цифрлы сағат саны</item><item>I: 2 цифрлы минут "
-#~ "саны</item><item>S: 2 цифрлы секунд саны</item></list></"
-#~ "para><para>Мысалы: \"Y-M-D\" деген \"2012-01-04\" деген күнге сәйкес "
-#~ "келеді</para> "
-
-#~ msgctxt "@label:listbox"
-#~ msgid "Text codec:"
-#~ msgstr "Мәтіндік кодек:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select the text codec"
-#~ msgstr "Мәтіндік кодекті таңдау"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid "Choose the character encoding of the data in your csv file."
-#~ msgstr "csv файлыңыздағы деректің  кодтамасын таңдау."
-
-#~ msgctxt "@option:check"
-#~ msgid "Skip first row of file"
-#~ msgstr "Файлдың бірінші жолы елемей қалсын"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Skip first row of csv file when importing"
-#~ msgstr "Импорттағанда csv файлдың бірінші жолы елемей қалсын"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want the import to skip over the first row of the "
-#~ "csv data. In many cases, the first line of a csv file will be a comment "
-#~ "line describing the order of the data fields included in the file."
-#~ msgstr ""
-#~ "Егерде импорттағанда csv деректердің бірінші жолын елемей қалдыру керек "
-#~ "болса - осы белгіні қою керек. Көбінде, бірінші жолы түсініктеме "
-#~ "мәліметінен тұрады."
-
-#~ msgctxt "@action:button"
-#~ msgid "Apply Template..."
-#~ msgstr "Үлгіні қолдану..."
-
-#~ msgctxt "@action:button"
-#~ msgid "Save Template..."
-#~ msgstr "Үлгіні сақтау..."
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Local (%1)"
-#~ msgstr "Жергілікті стандарт (%1)"
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Latin1"
-#~ msgstr "Latin1"
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Unicode"
-#~ msgstr "Unicode"
-
-#~ msgctxt "@item:inlistbox Codec setting"
-#~ msgid "Microsoft Unicode"
-#~ msgstr "Microsoft Unicode"
-
-#~ msgctxt "@info:status"
-#~ msgid "You must assign at least one column."
-#~ msgstr "Кем дегенде бір бағанды тағайындауңыз қажет."
-
-#~ msgctxt "@label"
-#~ msgid "There are no templates available yet."
-#~ msgstr "Қол жетерлік үлгілер жоқ."
-
-#~ msgctxt "@title:window"
-#~ msgid "No templates available"
-#~ msgstr "Үлгілер жоқ"
-
-#~ msgctxt "@title:window"
-#~ msgid "Template Name"
-#~ msgstr "Үлгінің атауы"
-
-#~ msgctxt "@info"
-#~ msgid "Please enter a name for the template:"
-#~ msgstr "Үлгінің атауын келтіріңіз:"
-
-#~ msgctxt "@info:status"
-#~ msgid "Cannot open input file."
-#~ msgstr "Кіріс файлы ашылмады."
-
-#~ msgid "Device is not open"
-#~ msgstr "Құрылғы ашылмаған екен"
-
-#~ msgctxt "@label"
-#~ msgid "Do you really want to delete template '%1'?"
-#~ msgstr "'%1' үлгісін шын өшірмексіз бе?"
-
-#~ msgctxt "@title:window"
-#~ msgid "Template Selection"
-#~ msgstr "Үлгіні таңдау"
-
-#~ msgctxt "@info"
-#~ msgid "Please select a template, that matches the CSV file:"
-#~ msgstr "CSV файлына сәйкес келетін үлгіні таңдаңыз:"
-
 #~ msgid "GMX address book file (*.gmxa)"
 #~ msgstr "GMX адрес кітапша файлы (*.gmxa)"
 
-#~ msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
-#~ msgstr "<qt><b>%1</b> файлы оқу үшін ашылмады.</qt>"
-
 #~ msgid "%1 is not a GMX address book file."
 #~ msgstr "%1 дегені GMX  адрес кітапша файлы емес."
-
-#~ msgid "Select Address Book"
-#~ msgstr "Адрес кітапшасын таңдау"
-
-#~ msgid "Select the address book the imported contact(s) shall be saved in:"
-#~ msgstr "Импортталған контакттар қай адрес кітапшасына сақталатынын таңдау:"
-
-#~ msgid "Import Contacts"
-#~ msgstr "Контакттарды импорттау"
-
-#~ msgid "Importing one contact to %2"
-#~ msgid_plural "Importing %1 contacts to %2"
-#~ msgstr[0] "%1 контактты %2 дегенге импорттау"
 
 #~ msgid "Which contact do you want to export?"
 #~ msgstr "Қай контактты экспорттауды қалайсыз?"
