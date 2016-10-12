@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-11 08:12+0000\n"
+"POT-Creation-Date: 2016-10-12 07:15+0000\n"
 "PO-Revision-Date: 2013-11-08 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -36,14 +36,26 @@ msgstr "CSV файлын импорттау..."
 msgid "Import contacts from a file in comma separated value format."
 msgstr "Үтірмен бөліктелген мәтін файлынан контакттарды импорттау."
 
-#: csv/csvimportexportplugininterface.cpp:201
-#: ldif/ldifimportexportplugininterface.cpp:135
+#: csv/csvimportexportplugininterface.cpp:168
+#: ldif/ldifimportexportplugininterface.cpp:137
+#: vcards/vcardimportexportplugininterface.cpp:416
+msgid "Which contact do you want to export?"
+msgstr "Қай контактты экспорттауды қалайсыз?"
+
+#: csv/csvimportexportplugininterface.cpp:178
+#: ldif/ldifimportexportplugininterface.cpp:147
+#: vcards/vcardimportexportplugininterface.cpp:428
+msgid "You have not selected any contacts to export."
+msgstr "Экспорттауға ешбір контакт таңдалмаған."
+
+#: csv/csvimportexportplugininterface.cpp:207 gmx/engine/gmx_xxport.cpp:375
+#: ldif/ldifimportexportplugininterface.cpp:163
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b></qt>"
 msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
 
-#: csv/csvimportexportplugininterface.cpp:215
-#: ldif/ldifimportexportplugininterface.cpp:167
+#: csv/csvimportexportplugininterface.cpp:219 gmx/engine/gmx_xxport.cpp:390
+#: ldif/ldifimportexportplugininterface.cpp:195
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b>.</qt>"
 msgstr "<qt><b>%1</b> деген файл ашылмады.</qt>"
@@ -374,75 +386,85 @@ msgctxt "@info"
 msgid "Please select a template, that matches the CSV file:"
 msgstr "CSV файлына сәйкес келетін үлгіні таңдаңыз:"
 
-#: gmx/gmximportexportplugininterface.cpp:40
-msgid "Import GMX file..."
-msgstr "GMX файлын импорттау..."
+#: gmx/engine/gmx_xxport.cpp:98
+msgid "GMX address book file (*.gmxa)"
+msgstr "GMX адрес кітапша файлы (*.gmxa)"
 
-#: gmx/gmximportexportplugininterface.cpp:41
-msgid "Import contacts from a GMX address book file."
-msgstr "GMX адрес кітапша файлынан контакттарды импорттау."
-
-#: gmx/gmximportexportplugininterface.cpp:46
-msgid "Export GMX file..."
-msgstr "GMX файлына экспорттау...."
-
-#: gmx/gmximportexportplugininterface.cpp:47
-msgid "Export contacts to a GMX address book file."
-msgstr "Контакттарды GMX адрес кітапша файлға экспорттау."
-
-#: ldap/ldapimportexportplugininterface.cpp:45
-msgid "Import From LDAP server..."
-msgstr "LDIF серверінен импорттау..."
-
-#: ldap/ldapimportexportplugininterface.cpp:46
-msgid "Import contacts from an LDAP server."
-msgstr "LDIF серверінен контакттарды импорттау."
-
-#: ldif/ldifimportexportplugininterface.cpp:50
-msgid "Import LDIF file..."
-msgstr "LDIF файлынан импорттау..."
-
-#: ldif/ldifimportexportplugininterface.cpp:51
-msgid "Import contacts from an LDIF file."
-msgstr "LDIF файлынан контакттарды импорттау."
-
-#: ldif/ldifimportexportplugininterface.cpp:56
-msgid "Export LDIF file..."
-msgstr "LDIF файлына экспорттау..."
-
-#: ldif/ldifimportexportplugininterface.cpp:57
-msgid "Export contacts to an LDIF file."
-msgstr "Контакттарды LDIF файлына экспорттау."
-
-#: ldif/ldifimportexportplugininterface.cpp:90
-#: ldif/ldifimportexportplugininterface.cpp:127
-msgid "LDif Files (*.ldif)"
-msgstr ""
-
-#: ldif/ldifimportexportplugininterface.cpp:97
+#: gmx/engine/gmx_xxport.cpp:138 ldif/ldifimportexportplugininterface.cpp:100
 #, kde-format
 msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
 msgstr "<qt><b>%1</b> файлы оқу үшін ашылмады.</qt>"
 
-#: shared/importexportengine.cpp:81
+#: gmx/engine/gmx_xxport.cpp:153
+#, kde-format
+msgid "%1 is not a GMX address book file."
+msgstr "%1 дегені GMX  адрес кітапша файлы емес."
+
+#: gmx/gmximportexportplugininterface.cpp:41
+msgid "Import GMX file..."
+msgstr "GMX файлын импорттау..."
+
+#: gmx/gmximportexportplugininterface.cpp:42
+msgid "Import contacts from a GMX address book file."
+msgstr "GMX адрес кітапша файлынан контакттарды импорттау."
+
+#: gmx/gmximportexportplugininterface.cpp:47
+msgid "Export GMX file..."
+msgstr "GMX файлына экспорттау...."
+
+#: gmx/gmximportexportplugininterface.cpp:48
+msgid "Export contacts to a GMX address book file."
+msgstr "Контакттарды GMX адрес кітапша файлға экспорттау."
+
+#: ldap/ldapimportexportplugininterface.cpp:44
+msgid "Import From LDAP server..."
+msgstr "LDIF серверінен импорттау..."
+
+#: ldap/ldapimportexportplugininterface.cpp:45
+msgid "Import contacts from an LDAP server."
+msgstr "LDIF серверінен контакттарды импорттау."
+
+#: ldif/ldifimportexportplugininterface.cpp:53
+msgid "Import LDIF file..."
+msgstr "LDIF файлынан импорттау..."
+
+#: ldif/ldifimportexportplugininterface.cpp:54
+msgid "Import contacts from an LDIF file."
+msgstr "LDIF файлынан контакттарды импорттау."
+
+#: ldif/ldifimportexportplugininterface.cpp:59
+msgid "Export LDIF file..."
+msgstr "LDIF файлына экспорттау..."
+
+#: ldif/ldifimportexportplugininterface.cpp:60
+msgid "Export contacts to an LDIF file."
+msgstr "Контакттарды LDIF файлына экспорттау."
+
+#: ldif/ldifimportexportplugininterface.cpp:93
+#: ldif/ldifimportexportplugininterface.cpp:155
+msgid "LDif Files (*.ldif)"
+msgstr ""
+
+#: shared/importexportengine.cpp:77
 msgid "Select Address Book"
 msgstr "Адрес кітапшасын таңдау"
 
-#: shared/importexportengine.cpp:83
+#: shared/importexportengine.cpp:79
 msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr "Импортталған контакттар қай адрес кітапшасына сақталатынын таңдау:"
 
-#: shared/importexportengine.cpp:96
+#: shared/importexportengine.cpp:93
 msgid "Import Contacts"
 msgstr "Контакттарды импорттау"
 
-#: shared/importexportengine.cpp:98
+#: shared/importexportengine.cpp:95
 #, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "%1 контактты %2 дегенге импорттау"
 
 #: vcards/engine/vcard_xxport.cpp:94
+#: vcards/vcardimportexportplugininterface.cpp:469
 msgctxt "@info"
 msgid ""
 "You have selected a list of contacts, shall they be exported to several "
@@ -450,43 +472,51 @@ msgid ""
 msgstr "Бірнеше контакттар таңдалған. Олар бірнеше файлдарға экспортталсын ба?"
 
 #: vcards/engine/vcard_xxport.cpp:97
+#: vcards/vcardimportexportplugininterface.cpp:472
 msgctxt "@action:button"
 msgid "Export to One File"
 msgstr "Бір файлға экспорттау"
 
 #: vcards/engine/vcard_xxport.cpp:98
+#: vcards/vcardimportexportplugininterface.cpp:473
 msgctxt "@action:button"
 msgid "Export to Several Files"
 msgstr "Бірнешеге экспорттау"
 
 #: vcards/engine/vcard_xxport.cpp:162
+#: vcards/vcardimportexportplugininterface.cpp:137
 msgid ""
 "*.vcf|vCard (*.vcf)\n"
 "*|all files (*)"
 msgstr ""
 
 #: vcards/engine/vcard_xxport.cpp:164
+#: vcards/vcardimportexportplugininterface.cpp:139
 msgctxt "@title:window"
 msgid "Select vCard to Import"
 msgstr "Импорттайтын vCard-ты таңдаңыз"
 
 #: vcards/engine/vcard_xxport.cpp:173
+#: vcards/vcardimportexportplugininterface.cpp:148
 msgctxt "@title:window"
 msgid "vCard Import Failed"
 msgstr "vCard-ты импорттау қатесі "
 
 #: vcards/engine/vcard_xxport.cpp:191
+#: vcards/vcardimportexportplugininterface.cpp:166
 #, kde-format
 msgctxt "@info"
 msgid "<para>Unable to access vCard:</para><para>%1</para>"
 msgstr "<para>vCard-қа қатынау мүмкін болмады:</para><para>%1</para>"
 
 #: vcards/engine/vcard_xxport.cpp:203
+#: vcards/vcardimportexportplugininterface.cpp:178
 msgctxt "@info"
 msgid "No contacts were imported, due to errors with the vCards."
 msgstr "vCard қатесінің салдарынан контакттар импортталмады."
 
 #: vcards/engine/vcard_xxport.cpp:207
+#: vcards/vcardimportexportplugininterface.cpp:182
 msgctxt "@info"
 msgid "The vCard does not contain any contacts."
 msgstr "vCard мазмұнында ешқандай контакт жоқ."
@@ -632,41 +662,39 @@ msgctxt "@action:button"
 msgid "Import All..."
 msgstr "Бүкілін импорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:40
-#: vcards/vcardimportexportplugininterface.cpp:47
+#: vcards/vcardimportexportplugininterface.cpp:58
 msgid "Import vCard..."
 msgstr "vCard-ты импорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:41
-#: vcards/vcardimportexportplugininterface.cpp:48
+#: vcards/vcardimportexportplugininterface.cpp:59
 msgid "Import contacts from a vCard file."
 msgstr "vCard файлынан контакттарды импорттау."
 
-#: vcards/vcardimportexportplugininterface.cpp:52
+#: vcards/vcardimportexportplugininterface.cpp:66
 #, fuzzy
 #| msgid "Export contacts to a vCard 3.0 file."
 msgid "Export contacts to a vCard 4.0 file."
 msgstr "Контакттарды vCard 3.0 файлына экспорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:53
+#: vcards/vcardimportexportplugininterface.cpp:67
 #, fuzzy
 #| msgid "Export vCard 3.0..."
 msgid "Export vCard 4.0..."
 msgstr "vCard 3.0-ге экспорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:57
+#: vcards/vcardimportexportplugininterface.cpp:72
 msgid "Export vCard 3.0..."
 msgstr "vCard 3.0-ге экспорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:58
+#: vcards/vcardimportexportplugininterface.cpp:73
 msgid "Export contacts to a vCard 3.0 file."
 msgstr "Контакттарды vCard 3.0 файлына экспорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:62
+#: vcards/vcardimportexportplugininterface.cpp:78
 msgid "Export vCard 2.1..."
 msgstr "vCard 2.1-ге экспорттау..."
 
-#: vcards/vcardimportexportplugininterface.cpp:63
+#: vcards/vcardimportexportplugininterface.cpp:79
 msgid "Export contacts to a vCard 2.1 file."
 msgstr "Контакттарды vCard 2.1 файлына экспорттау..."
 
@@ -1365,18 +1393,6 @@ msgstr "Контакттарды vCard 2.1 файлына экспорттау..
 #~ msgstr ""
 #~ "Осы өрісте іздейтін контакттың атауын тере бастаңыз - сәйкес келетіндер "
 #~ "тізімі көрсетіледі. Бұл іздеудің ең оңайы."
-
-#~ msgid "GMX address book file (*.gmxa)"
-#~ msgstr "GMX адрес кітапша файлы (*.gmxa)"
-
-#~ msgid "%1 is not a GMX address book file."
-#~ msgstr "%1 дегені GMX  адрес кітапша файлы емес."
-
-#~ msgid "Which contact do you want to export?"
-#~ msgstr "Қай контактты экспорттауды қалайсыз?"
-
-#~ msgid "You have not selected any contacts to export."
-#~ msgstr "Экспорттауға ешбір контакт таңдалмаған."
 
 #, fuzzy
 #~| msgid "Select Contacts"
