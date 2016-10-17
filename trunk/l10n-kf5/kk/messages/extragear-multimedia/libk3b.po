@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-13 07:52+0000\n"
+"POT-Creation-Date: 2016-10-17 06:57+0000\n"
 "PO-Revision-Date: 2013-04-25 03:57+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -290,7 +290,7 @@ msgid "Use CDDB entry"
 msgstr "Cddb жазуын қолдану"
 
 #: jobs/k3bcdcopyjob.cpp:483 projects/k3bcdrdaowriter.cpp:526
-#: projects/k3bcdrecordwriter.cpp:419 projects/k3bgrowisofswriter.cpp:336
+#: projects/k3bcdrecordwriter.cpp:419 projects/k3bgrowisofswriter.cpp:339
 msgid "Preparing write process..."
 msgstr "Жазуға дайындалу..."
 
@@ -356,7 +356,7 @@ msgstr "Көшірмесін жазу (%1-сеансы)"
 #: jobs/k3bcdcopyjob.cpp:715 projects/audiocd/k3baudiojob.cpp:651
 #: projects/datacd/k3bdatajob.cpp:438 projects/k3bcdrdaowriter.cpp:568
 #: projects/k3bcdrdaowriter.cpp:586 projects/k3bcdrecordwriter.cpp:447
-#: projects/k3bgrowisofswriter.cpp:361 projects/mixedcd/k3bmixedjob.cpp:1012
+#: projects/k3bgrowisofswriter.cpp:364 projects/mixedcd/k3bmixedjob.cpp:1012
 msgid "Simulating"
 msgstr "Эмуляциялау"
 
@@ -472,7 +472,7 @@ msgstr "Орындайтын %1 файлы табылмады."
 #: jobs/k3bvideodvdtitletranscodingjob.cpp:383
 #: projects/datacd/k3bisoimager.cpp:307 projects/datacd/k3bisoimager.cpp:449
 #: projects/k3bcdrdaowriter.cpp:555 projects/k3bcdrecordwriter.cpp:439
-#: projects/k3bgrowisofswriter.cpp:356 projects/videocd/k3bvcdjob.cpp:255
+#: projects/k3bgrowisofswriter.cpp:359 projects/videocd/k3bvcdjob.cpp:255
 #, kde-format
 msgid "Could not start %1."
 msgstr "%1 бастай алмады"
@@ -898,7 +898,7 @@ msgid "Formatting disc"
 msgstr "Дискін пішімдеу"
 
 #: jobs/k3bdvdformattingjob.cpp:130 projects/k3bcdrdaowriter.cpp:538
-#: projects/k3bcdrecordwriter.cpp:423 projects/k3bgrowisofswriter.cpp:340
+#: projects/k3bcdrecordwriter.cpp:423 projects/k3bgrowisofswriter.cpp:343
 msgid "Unmounting medium"
 msgstr "Дискін айыру"
 
@@ -1585,7 +1585,7 @@ msgstr "%2%3 дегеннің %1 жолсызығы жазылып жатыр"
 
 #: projects/audiocd/k3baudiojob.cpp:655 projects/datacd/k3bdatajob.cpp:442
 #: projects/k3bcdrdaowriter.cpp:574 projects/k3bcdrecordwriter.cpp:455
-#: projects/k3bgrowisofswriter.cpp:366
+#: projects/k3bgrowisofswriter.cpp:369
 msgid "Writing"
 msgstr "Жазу"
 
@@ -1775,12 +1775,19 @@ msgstr ""
 "%1 дегенде бос дискі не дискі салынбаған. Жалғастыратын көпсеанстық дискі "
 "жоқ."
 
-#: projects/datacd/k3bdatamultisessionparameterjob.cpp:252
+#: projects/datacd/k3bdatamultisessionparameterjob.cpp:254
 #: projects/datacd/k3bmsinfofetcher.cpp:152
 #, fuzzy, kde-format
 #| msgid "Could not open Iso9660 filesystem in %1."
 msgid "Could not open ISO 9660 filesystem in %1."
 msgstr "%1 дегенде Iso9660 файлдық жүйесі ашылмады."
+
+#: projects/datacd/k3bdatamultisessionparameterjob.cpp:286
+#: projects/k3bgrowisofswriter.cpp:205
+msgid ""
+"Medium is not of multi-session type and does not contain ISO 9660. Cannot "
+"emulate multi-session on it."
+msgstr ""
 
 #: projects/datacd/k3bdatapreparationjob.cpp:101
 #, kde-format
@@ -2093,7 +2100,7 @@ msgstr ""
 "оны қалпына келтіре алмады."
 
 #: projects/k3bcdrdaowriter.cpp:738 projects/k3bcdrecordwriter.cpp:792
-#: projects/k3bgrowisofswriter.cpp:518
+#: projects/k3bgrowisofswriter.cpp:521
 msgid "Simulation successfully completed"
 msgstr "Иммитация сәтті бітті"
 
@@ -2102,7 +2109,7 @@ msgid "Reading successfully completed"
 msgstr "Оқу сәтті бітті"
 
 #: projects/k3bcdrdaowriter.cpp:746 projects/k3bcdrecordwriter.cpp:794
-#: projects/k3bgrowisofswriter.cpp:520
+#: projects/k3bgrowisofswriter.cpp:523
 msgid "Writing successfully completed"
 msgstr "Жазу сәтті бітті"
 
@@ -2115,7 +2122,7 @@ msgid "Blanking successfully completed"
 msgstr "Тазалау сәтті бітті"
 
 #: projects/k3bcdrdaowriter.cpp:758 projects/k3bcdrecordwriter.cpp:798
-#: projects/k3bgrowisofswriter.cpp:513
+#: projects/k3bgrowisofswriter.cpp:516
 #, kde-format
 msgid "Average overall write speed: %1 KB/s (%2x)"
 msgstr "Орташа жалпы жылдамдығы: %1 KБ/с (%2x)"
@@ -2266,7 +2273,7 @@ msgstr "%1x жылдамдығымен жазуын бастау..."
 msgid "Starting %1 writing at %2x speed..."
 msgstr "%2x жылдамдығымен %1 жазуын бастау..."
 
-#: projects/k3bcdrecordwriter.cpp:554 projects/k3bgrowisofswriter.cpp:432
+#: projects/k3bcdrecordwriter.cpp:554 projects/k3bgrowisofswriter.cpp:435
 msgid "Writing data"
 msgstr "Деректі жазу"
 
@@ -2659,16 +2666,16 @@ msgid ""
 "an unstable burn process."
 msgstr ""
 
-#: projects/k3bgrowisofswriter.cpp:217
+#: projects/k3bgrowisofswriter.cpp:220
 #, kde-format
 msgid "Could not open file %1."
 msgstr ""
 
-#: projects/k3bgrowisofswriter.cpp:362
+#: projects/k3bgrowisofswriter.cpp:365
 msgid "Starting simulation..."
 msgstr ""
 
-#: projects/k3bgrowisofswriter.cpp:367
+#: projects/k3bgrowisofswriter.cpp:370
 msgid "Starting disc write..."
 msgstr ""
 
