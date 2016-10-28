@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-22 07:34+0000\n"
+"POT-Creation-Date: 2016-10-28 07:10+0000\n"
 "PO-Revision-Date: 2013-10-28 03:36+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -121,7 +121,7 @@ msgstr "Өзім қалаған шифрын шешу командасы:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capEncrypt)
 #. i18n: ectx: property (windowTitle), widget (QWidget, Encryption)
-#: conf_encryption.ui:15 kgpgkeygenerate.ui:172 kgpgoptions.cpp:113
+#: conf_encryption.ui:15 kgpgkeygenerate.ui:205 kgpgoptions.cpp:113
 msgid "Encryption"
 msgstr "Шифрлау"
 
@@ -1845,7 +1845,7 @@ msgid "Key Group"
 msgstr "Кілт тобы"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capSign)
-#: keysmanager.cpp:1117 kgpgkeygenerate.ui:152
+#: keysmanager.cpp:1117 kgpgkeygenerate.ui:185
 msgid "Signature"
 msgstr "Қолтаңба"
 
@@ -2849,56 +2849,35 @@ msgstr ""
 "Жетелі режіміне ауысатын болсаңыз, онда кілтіңізді құру үшін команда жолын "
 "пайдаланыңыз."
 
-#: kgpgkeygenerate.cpp:75
-msgctxt "Key will not expire"
-msgid "Never"
-msgstr "Ескірмейтін"
-
-#: kgpgkeygenerate.cpp:76
-msgid "Days"
-msgstr "күн"
-
-#: kgpgkeygenerate.cpp:77
-msgid "Weeks"
-msgstr "апта"
-
-#: kgpgkeygenerate.cpp:78
-msgid "Months"
-msgstr "ай"
-
-#: kgpgkeygenerate.cpp:79
-msgid "Years"
-msgstr "жыл"
-
-#: kgpgkeygenerate.cpp:85
+#: kgpgkeygenerate.cpp:66
 msgid "1024"
 msgstr "1024"
 
-#: kgpgkeygenerate.cpp:86
+#: kgpgkeygenerate.cpp:67
 msgid "2048"
 msgstr "2048"
 
-#: kgpgkeygenerate.cpp:87
+#: kgpgkeygenerate.cpp:68
 msgid "4096"
 msgstr "4096"
 
-#: kgpgkeygenerate.cpp:118
+#: kgpgkeygenerate.cpp:99
 msgid "You must give a name."
 msgstr "Атау керек."
 
-#: kgpgkeygenerate.cpp:124
+#: kgpgkeygenerate.cpp:105
 msgid "The name must have at least 5 characters"
 msgstr "Атауы кемінде 5 таңбадан болу тиіс"
 
-#: kgpgkeygenerate.cpp:130
+#: kgpgkeygenerate.cpp:111
 msgid "The name must not start with a digit"
 msgstr "Атауы цифрден басталмау керек"
 
-#: kgpgkeygenerate.cpp:137
+#: kgpgkeygenerate.cpp:118
 msgid "You are about to create a key with no email address"
 msgstr "Эл. пошта адрессіз кілтті құрудың алдындасыз"
 
-#: kgpgkeygenerate.cpp:144
+#: kgpgkeygenerate.cpp:125
 msgid "Email address not valid"
 msgstr "Эл. пошта адресі дұрыс емес"
 
@@ -2947,39 +2926,60 @@ msgstr "Түсіні&ктеме (міндетті емес):"
 msgid "Expiration:"
 msgstr "Мерзімі:"
 
-#. i18n: ectx: property (text), widget (QLineEdit, m_days)
-#: kgpgkeygenerate.ui:88
-msgid "0"
-msgstr "0"
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:98
+msgctxt "Key will not expire"
+msgid "Never"
+msgstr "Ескірмейтін"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:103
+msgid "Days"
+msgstr "күн"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:108
+msgid "Weeks"
+msgstr "апта"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:113
+msgid "Months"
+msgstr "ай"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_keyexp)
+#: kgpgkeygenerate.ui:118
+msgid "Years"
+msgstr "жыл"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: kgpgkeygenerate.ui:95
+#: kgpgkeygenerate.ui:128
 msgid "&Key size:"
 msgstr "&Кілт ұзындығы:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: kgpgkeygenerate.ui:108
+#: kgpgkeygenerate.ui:141
 msgid "&Algorithm:"
 msgstr "&Алгоритмі:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, capabilities)
 #. i18n: ectx: property (text), widget (QLabel, tl_caps)
-#: kgpgkeygenerate.ui:127 kgpgKeyInfo.ui:248
+#: kgpgkeygenerate.ui:160 kgpgKeyInfo.ui:248
 msgid "Capabilities"
 msgstr "Мүмкіндіктері"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, capCert)
-#: kgpgkeygenerate.ui:139
+#: kgpgkeygenerate.ui:172
 msgid "Certification is automatically enabled for all keys"
 msgstr "Куәландыру бүкіл кілттерге автоматты түрде рұқсат етіледі"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capCert)
-#: kgpgkeygenerate.ui:142
+#: kgpgkeygenerate.ui:175
 msgid "Certification"
 msgstr "Куәландыру"
 
 #. i18n: ectx: property (text), widget (QCheckBox, capAuth)
-#: kgpgkeygenerate.ui:162
+#: kgpgkeygenerate.ui:195
 #, fuzzy
 #| msgctxt "key capability"
 #| msgid "Authentication"
@@ -4151,6 +4151,9 @@ msgstr "<qt>Қолтаңбасы дұрыс, бірақ кілтіне сені�
 msgctxt "@info"
 msgid "<para>The signature is valid, and the key is ultimately trusted</para>"
 msgstr "Қолтаңбасы дұрыс және кілтіне шексіз сенім артылған"
+
+#~ msgid "0"
+#~ msgstr "0"
 
 #~ msgid "Id"
 #~ msgstr "Идентификаторы"
