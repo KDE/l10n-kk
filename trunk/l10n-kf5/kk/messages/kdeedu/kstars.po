@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-03 07:23+0000\n"
+"POT-Creation-Date: 2016-11-04 07:13+0000\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -159,7 +159,7 @@ msgid "Visible Satellites"
 msgstr "Көрінетін серіктері"
 
 #: auxiliary/colorscheme.cpp:89 dialogs/finddialog.cpp:52
-#: kstarsactions.cpp:667 kstarslite/dialogs/finddialoglite.cpp:53
+#: kstarsactions.cpp:727 kstarslite/dialogs/finddialoglite.cpp:53
 msgid "Satellites"
 msgstr "Серіктері"
 
@@ -168,7 +168,7 @@ msgid "Satellites Labels"
 msgstr "Серіктерінің жарлықтары"
 
 #: auxiliary/colorscheme.cpp:91 dialogs/finddialog.cpp:51
-#: kstarsactions.cpp:670 kstarslite/dialogs/finddialoglite.cpp:52
+#: kstarsactions.cpp:730 kstarslite/dialogs/finddialoglite.cpp:52
 msgid "Supernovae"
 msgstr "Аса жаңалар"
 
@@ -241,7 +241,7 @@ msgstr ""
 #: ekos/scheduler/scheduler.cpp:3169 ekos/scheduler/scheduler.cpp:3468
 #: ekos/scheduler/scheduler.cpp:3869 ekos/scheduler/scheduler.cpp:4594
 #: ekos/scheduler/scheduler.cpp:4623 ekos/scheduler/scheduler.cpp:4665
-#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:965
+#: indi/drivermanager.cpp:1465 indi/indidriver.cpp:946 kstarsactions.cpp:1025
 #: oal/execute.cpp:317 options/opscolors.cpp:212 tools/modcalcangdist.cpp:134
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:247
 #: tools/modcalcgalcoord.cpp:192 tools/modcalcgeodcoord.cpp:230
@@ -272,6 +272,18 @@ msgstr ""
 #: auxiliary/colorscheme.cpp:284
 msgid "Invalid Filename"
 msgstr "Жарамсыз файл атауы"
+
+#: auxiliary/filedownloader.cpp:96
+#, fuzzy
+#| msgid "Download New Data..."
+msgid "Downloading"
+msgstr "Жаңа деректерді алу..."
+
+#: auxiliary/filedownloader.cpp:101
+#, fuzzy
+#| msgid "Download New Data..."
+msgid "Downloading Data..."
+msgstr "Жаңа деректерді алу..."
 
 #: auxiliary/fov.cpp:51 kstarslite/skyitems/fovitem.cpp:25
 msgctxt "use field-of-view for binoculars"
@@ -397,7 +409,7 @@ msgstr "Бүкіл кескіндерді сақтау"
 
 #: auxiliary/imageviewer.cpp:333 dialogs/addcatdialog.cpp:212
 #: ekos/capture/capture.cpp:2463 ekos/scheduler/scheduler.cpp:3435
-#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:838 printing/pwizprint.cpp:88
+#: fitsviewer/fitstab.cpp:275 kstarsactions.cpp:898 printing/pwizprint.cpp:88
 #: tools/scriptbuilder.cpp:839
 #, kde-format
 msgid "A file named \"%1\" already exists. Overwrite it?"
@@ -405,7 +417,7 @@ msgstr "\"%1\" деп аталған файл бар екен. Үстінен ж
 
 #: auxiliary/imageviewer.cpp:335 dialogs/addcatdialog.cpp:214
 #: ekos/capture/capture.cpp:2465 ekos/scheduler/scheduler.cpp:3437
-#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:839 printing/pwizprint.cpp:89
+#: fitsviewer/fitstab.cpp:277 kstarsactions.cpp:899 printing/pwizprint.cpp:89
 #: tools/scriptbuilder.cpp:841
 msgid "Overwrite File?"
 msgstr "Үстінен жазыла берсін бе?"
@@ -1254,7 +1266,7 @@ msgstr ""
 msgid "Could not Open File"
 msgstr "Файл ашылмады"
 
-#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:700
+#: dialogs/detaildialog.cpp:664 kstarsactions.cpp:760
 msgid "Advanced"
 msgstr "Қосымша"
 
@@ -1766,7 +1778,7 @@ msgstr "Кез келген"
 msgid "Stars"
 msgstr "Жұлдыздар"
 
-#: dialogs/finddialog.cpp:42 kstarsactions.cpp:664 kstarsinit.cpp:444
+#: dialogs/finddialog.cpp:42 kstarsactions.cpp:724 kstarsinit.cpp:444
 #: kstarslite/dialogs/finddialoglite.cpp:43 tools/astrocalc.cpp:181
 #: tools/conjunctions.cpp:78
 msgid "Solar System"
@@ -4819,7 +4831,7 @@ msgid "Count"
 msgstr "Саны:"
 
 #. i18n: ectx: property (text), widget (QPushButton, previewB)
-#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:468
+#: ekos/capture/capture.ui:388 fitsviewer/fitsviewer.cpp:473
 #: indi/indiccd.cpp:1315
 msgid "Preview"
 msgstr "Қарап-шығу"
@@ -5682,7 +5694,7 @@ msgstr "CCD"
 
 #. i18n: ectx: property (text), widget (QCheckBox, alignStepCheck)
 #: ekos/ekosmanager.cpp:1436 ekos/scheduler/scheduler.ui:184
-#: fitsviewer/fitsviewer.cpp:380
+#: fitsviewer/fitsviewer.cpp:385
 msgid "Align"
 msgstr "Туралау"
 
@@ -5690,7 +5702,7 @@ msgstr "Туралау"
 #. i18n: ectx: property (text), widget (QCheckBox, focusStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusLogging)
 #: ekos/ekosmanager.cpp:1463 ekos/ekosmanager.ui:926
-#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:372
+#: ekos/scheduler/scheduler.ui:168 fitsviewer/fitsviewer.cpp:377
 #: options/opsadvanced.ui:361
 msgid "Focus"
 msgstr "Көздегені"
@@ -5707,7 +5719,7 @@ msgstr "Саны:"
 #. i18n: ectx: property (text), widget (QCheckBox, guideStepCheck)
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GuideLogging)
 #: ekos/ekosmanager.cpp:1547 ekos/ekosmanager.ui:1598 ekos/guide/guide.ui:115
-#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:376
+#: ekos/scheduler/scheduler.ui:200 fitsviewer/fitsviewer.cpp:381
 #: options/opsadvanced.ui:374
 msgid "Guide"
 msgstr "Бағыттамасы"
@@ -5740,7 +5752,7 @@ msgid "Failed to update site location to %1. City not found."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
-#: ekos/ekosmanager.ui:26 kstarsactions.cpp:686 kstarsinit.cpp:430
+#: ekos/ekosmanager.ui:26 kstarsactions.cpp:746 kstarsinit.cpp:430
 msgid "Ekos"
 msgstr "Ekos"
 
@@ -6796,7 +6808,7 @@ msgid "Control"
 msgstr "Басқару"
 
 #. i18n: ectx: property (text), widget (QPushButton, calibrateB)
-#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:368
+#: ekos/guide/guide.ui:78 fitsviewer/fitsviewer.cpp:373
 msgid "Calibrate"
 msgstr "Калибрлеу"
 
@@ -7910,11 +7922,11 @@ msgstr "Бағдарлау рұқсатты"
 msgid "Internal or External Plate Solver."
 msgstr ""
 
-#: ekos/opsekos.cpp:39
+#: ekos/opsekos.cpp:43
 msgid "Internal or External Astrometry.cfg."
 msgstr ""
 
-#: ekos/opsekos.cpp:42
+#: ekos/opsekos.cpp:50
 msgid "Internal or External WCS Info."
 msgstr ""
 
@@ -8107,7 +8119,7 @@ msgid "Always apply auto stretch to captured images in FITS Viewer"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoStretch)
-#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:65
+#: ekos/opsekos.ui:332 fitsviewer/fitsviewer.cpp:68
 msgid "Auto Stretch"
 msgstr "Автосозу"
 
@@ -10114,80 +10126,80 @@ msgstr "Қарсыласу"
 msgid "Repositioning complete"
 msgstr "Калибрлеу бітті."
 
-#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdatalite.cpp:137
+#: fitsviewer/fitsdata.cpp:147 fitsviewer/fitsdatalite.cpp:137
 #, fuzzy, kde-format
 #| msgid "Could not open file %1."
 msgid "Could not open file %1. Error %2"
 msgstr "%1 файлы ашылмайды."
 
-#: fitsviewer/fitsdata.cpp:151 fitsviewer/fitsdata.cpp:163
-#: fitsviewer/fitsdata.cpp:173 fitsviewer/fitsdata.cpp:201
-#: fitsviewer/fitsdata.cpp:215 fitsviewer/fitsdata.cpp:248
+#: fitsviewer/fitsdata.cpp:149 fitsviewer/fitsdata.cpp:161
+#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdata.cpp:199
+#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdata.cpp:246
 msgid "FITS Open"
 msgstr "FITS-ты ашу"
 
-#: fitsviewer/fitsdata.cpp:161 fitsviewer/fitsdatalite.cpp:148
+#: fitsviewer/fitsdata.cpp:159 fitsviewer/fitsdatalite.cpp:148
 #, kde-format
 msgid "FITS file open error (fits_get_img_param): %1"
 msgstr "FITS (fits_get_img_param) файлын ашу қатесі: %1"
 
-#: fitsviewer/fitsdata.cpp:171 fitsviewer/fitsdatalite.cpp:157
+#: fitsviewer/fitsdata.cpp:169 fitsviewer/fitsdatalite.cpp:157
 msgid "1D FITS images are not supported in KStars."
 msgstr "1D FITS кескіндерді KStars танымайды."
 
-#: fitsviewer/fitsdata.cpp:199 fitsviewer/fitsdatalite.cpp:184
+#: fitsviewer/fitsdata.cpp:197 fitsviewer/fitsdatalite.cpp:184
 #, kde-format
 msgid "Bit depth %1 is not supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:213 fitsviewer/fitsdatalite.cpp:197
+#: fitsviewer/fitsdata.cpp:211 fitsviewer/fitsdatalite.cpp:197
 #, kde-format
 msgid "Image has invalid dimensions %1x%2"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:246 fitsviewer/fitsdatalite.cpp:229
+#: fitsviewer/fitsdata.cpp:244 fitsviewer/fitsdatalite.cpp:229
 #, fuzzy, kde-format
 #| msgid "Error: Unable to save image: %1 "
 msgid "Error reading image: %1"
 msgstr "Қате: Келесі кескін сақталмады: %1"
 
-#: fitsviewer/fitsdata.cpp:2491
+#: fitsviewer/fitsdata.cpp:2493
 msgid "Only 8 and 16 bits bayered images supported."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2491 fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2493 fitsviewer/fitsdata.cpp:2560
 #, fuzzy
 #| msgctxt "City in Tennessee USA"
 #| msgid "Dyer Observatory"
 msgid "Debayer error"
 msgstr "Дайер обс."
 
-#: fitsviewer/fitsdata.cpp:2516
+#: fitsviewer/fitsdata.cpp:2518
 msgid "Unable to allocate memory for bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2516 kstarsactions.cpp:804
+#: fitsviewer/fitsdata.cpp:2518 kstarsactions.cpp:864
 #, fuzzy
 #| msgid "Open FITS..."
 msgid "Open FITS"
 msgstr "FITS ашу..."
 
-#: fitsviewer/fitsdata.cpp:2551
+#: fitsviewer/fitsdata.cpp:2553
 msgid "Unable to allocate memory for temporary bayer buffer."
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2551 fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2553 fitsviewer/fitsdata.cpp:2578
 #, fuzzy
 #| msgid "Measure Az Error"
 msgid "Debayer Error"
 msgstr "Азимут қатесін өлшеу"
 
-#: fitsviewer/fitsdata.cpp:2558
+#: fitsviewer/fitsdata.cpp:2560
 #, kde-format
 msgid "Debayer failed (%1)"
 msgstr ""
 
-#: fitsviewer/fitsdata.cpp:2576
+#: fitsviewer/fitsdata.cpp:2578
 msgid "Unable to allocate memory for debayerd buffer."
 msgstr ""
 
@@ -10286,8 +10298,8 @@ msgid "Y Offset:"
 msgstr "Шегініс"
 
 #. i18n: ectx: property (text), widget (QLineEdit, statusEdit)
-#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:413
-#: fitsviewer/fitsviewer.cpp:974
+#: fitsviewer/fitsdebayer.ui:130 fitsviewer/fitsviewer.cpp:418
+#: fitsviewer/fitsviewer.cpp:979
 #, fuzzy
 #| msgctxt "City in Pennsylvania USA"
 #| msgid "Reading"
@@ -10296,7 +10308,7 @@ msgstr "Ридинг"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, fitsHeaderDialog)
 #: fitsviewer/fitsheaderdialog.ui:13 fitsviewer/fitstab.cpp:202
-#: fitsviewer/fitsviewer.cpp:159
+#: fitsviewer/fitsviewer.cpp:164
 msgid "FITS Header"
 msgstr "FITS айдары"
 
@@ -10350,7 +10362,7 @@ msgid "Square Root Scale"
 msgstr "Квадрат түбірлі масштаб"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FITSHistogramUI)
-#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:141
+#: fitsviewer/fitshistogramui.ui:32 fitsviewer/fitsviewer.cpp:146
 msgid "Histogram"
 msgstr "Гистограмма"
 
@@ -10366,7 +10378,7 @@ msgstr "Макс."
 
 #. i18n: ectx: property (text), widget (QLabel, maxLabel_2)
 #. i18n: ectx: property (text), widget (QLabel, meanLabel_2)
-#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitshistogramui.ui:120 fitsviewer/fitsviewer.cpp:69
 #: fitsviewer/statform.ui:121
 #, fuzzy
 #| msgctxt "City in Connecticut USA"
@@ -10413,7 +10425,7 @@ msgstr "Логарифмдік"
 msgid "&Apply"
 msgstr "&Іске асыру"
 
-#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:700
+#: fitsviewer/fitstab.cpp:59 fitsviewer/fitsviewer.cpp:705
 msgid "Save Changes to FITS?"
 msgstr "Өзгерістерді FITS-ке сақталсын ба?"
 
@@ -10491,116 +10503,116 @@ msgid "1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] "%1 жұлдыз көрінді."
 
-#: fitsviewer/fitsviewer.cpp:65
+#: fitsviewer/fitsviewer.cpp:68
 msgid "High Contrast"
 msgstr "Жоғары контраст"
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 msgid "Equalize"
 msgstr "Теңестіру"
 
-#: fitsviewer/fitsviewer.cpp:66
+#: fitsviewer/fitsviewer.cpp:69
 msgid "High Pass"
 msgstr "Жоғары жиіліктер"
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:125
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:130
 #, fuzzy
 #| msgid "Bottom right"
 msgid "Rotate Right"
 msgstr "Төменгі оң жақта"
 
-#: fitsviewer/fitsviewer.cpp:67 fitsviewer/fitsviewer.cpp:129
+#: fitsviewer/fitsviewer.cpp:70 fitsviewer/fitsviewer.cpp:134
 #, fuzzy
 #| msgctxt "City in Alberta Canada"
 #| msgid "Cadotte Lake"
 msgid "Rotate Left"
 msgstr "Кадот-Лейк"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:133
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:138
 #, fuzzy
 #| msgid "Horizontal"
 msgid "Flip Horizontal"
 msgstr "Жатық"
 
-#: fitsviewer/fitsviewer.cpp:68 fitsviewer/fitsviewer.cpp:137
+#: fitsviewer/fitsviewer.cpp:71 fitsviewer/fitsviewer.cpp:142
 #, fuzzy
 #| msgid "Vertical"
 msgid "Flip Vertical"
 msgstr "Тік"
 
-#: fitsviewer/fitsviewer.cpp:165
+#: fitsviewer/fitsviewer.cpp:170
 msgid "Debayer..."
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:169
+#: fitsviewer/fitsviewer.cpp:174
 msgid "Auto stretch"
 msgstr "Автосозу"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, statForm)
-#: fitsviewer/fitsviewer.cpp:200 fitsviewer/statform.ui:14
+#: fitsviewer/fitsviewer.cpp:205 fitsviewer/statform.ui:14
 msgid "Statistics"
 msgstr "Статистика"
 
-#: fitsviewer/fitsviewer.cpp:205
+#: fitsviewer/fitsviewer.cpp:210
 #, fuzzy
 #| msgid "Crosshairs"
 msgid "Show Cross Hairs"
 msgstr "Айқыш"
 
-#: fitsviewer/fitsviewer.cpp:211
+#: fitsviewer/fitsviewer.cpp:216
 #, fuzzy
 #| msgid "Show satellites"
 msgid "Show Pixel Gridlines"
 msgstr "Серіктері көрсетілсін"
 
-#: fitsviewer/fitsviewer.cpp:217 fitsviewer/fitsviewer.cpp:869
+#: fitsviewer/fitsviewer.cpp:222 fitsviewer/fitsviewer.cpp:874
 #, fuzzy
 #| msgid "Equatorial Coordinates"
 msgid "Show Equatorial Gridlines"
 msgstr "Экваторлық координаттар"
 
-#: fitsviewer/fitsviewer.cpp:224 fitsviewer/fitsviewer.cpp:871
+#: fitsviewer/fitsviewer.cpp:229 fitsviewer/fitsviewer.cpp:876
 #, fuzzy
 #| msgid "Show Objects"
 msgid "Show Objects in Image"
 msgstr "Нысандарды көрсету"
 
-#: fitsviewer/fitsviewer.cpp:231 fitsviewer/fitsviewer.cpp:879
+#: fitsviewer/fitsviewer.cpp:236 fitsviewer/fitsviewer.cpp:884
 msgid ""
 "Center Telescope\n"
 "*No Telescopes Detected*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:238
+#: fitsviewer/fitsviewer.cpp:243
 msgid "Zoom To Fit"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:242 fitsviewer/fitsviewer.cpp:945
+#: fitsviewer/fitsviewer.cpp:247 fitsviewer/fitsviewer.cpp:950
 msgid "Mark Stars"
 msgstr "Жұлдыздарды маркерлеу"
 
-#: fitsviewer/fitsviewer.cpp:265
+#: fitsviewer/fitsviewer.cpp:270
 msgid "KStars FITS Viewer"
 msgstr "KStars-тың FITS қарау құралы"
 
-#: fitsviewer/fitsviewer.cpp:503
+#: fitsviewer/fitsviewer.cpp:508
 #, kde-format
 msgid "%1 star detected."
 msgid_plural "%1 stars detected."
 msgstr[0] "%1 жұлдыз көрінді."
 
-#: fitsviewer/fitsviewer.cpp:570
+#: fitsviewer/fitsviewer.cpp:575
 #, fuzzy
 #| msgid "Open FITS..."
 msgid "Open FITS Image"
 msgstr "FITS ашу..."
 
-#: fitsviewer/fitsviewer.cpp:701
+#: fitsviewer/fitsviewer.cpp:706
 #, kde-format
 msgid "%1 has unsaved changes.  Would you like to save before closing it?"
 msgstr "%1 дегенде сақталмаған өзгерістер бар.  Жабу алдында сақталсын ба?"
 
-#: fitsviewer/fitsviewer.cpp:875
+#: fitsviewer/fitsviewer.cpp:880
 #, fuzzy
 #| msgid "Center in Telescope"
 msgid ""
@@ -10608,13 +10620,13 @@ msgid ""
 "*Ready*"
 msgstr "Телескоптың ортасында"
 
-#: fitsviewer/fitsviewer.cpp:884
+#: fitsviewer/fitsviewer.cpp:889
 msgid ""
 "Show Equatorial Gridlines\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:886
+#: fitsviewer/fitsviewer.cpp:891
 #, fuzzy
 #| msgid "Center in Telescope"
 msgid ""
@@ -10622,17 +10634,17 @@ msgid ""
 "*No WCS Info*"
 msgstr "Телескоптың ортасында"
 
-#: fitsviewer/fitsviewer.cpp:888
+#: fitsviewer/fitsviewer.cpp:893
 msgid ""
 "Show Objects in Image\n"
 "*No WCS Info*"
 msgstr ""
 
-#: fitsviewer/fitsviewer.cpp:950
+#: fitsviewer/fitsviewer.cpp:955
 msgid "Unmark Stars"
 msgstr "ЖҰлдыз маркерлерін кетіру"
 
-#: fitsviewer/fitsviewer.cpp:968
+#: fitsviewer/fitsviewer.cpp:973
 #, fuzzy, kde-format
 #| msgid "Focusing inward..."
 msgid "Processing %1..."
@@ -11042,13 +11054,13 @@ msgstr ""
 msgid "Internal or External INDI Drivers."
 msgstr ""
 
-#: indi/opsindi.cpp:90
+#: indi/opsindi.cpp:100
 #, fuzzy
 #| msgid "FITS Default directory"
 msgid "FITS Default Directory"
 msgstr "FITS әдетті қапшығы"
 
-#: indi/opsindi.cpp:98
+#: indi/opsindi.cpp:108
 #, fuzzy
 #| msgid "INDI Drivers Directory:"
 msgid "INDI Drivers Directory"
@@ -11662,15 +11674,15 @@ msgstr "Орта айқышы"
 msgid "KStars"
 msgstr "KStars"
 
-#: kstars.cpp:222 kstarsactions.cpp:1118 skymap.cpp:381
+#: kstars.cpp:222 kstarsactions.cpp:1178 skymap.cpp:381
 msgid "Stop &Tracking"
 msgstr "Қа&дағалауды тоқтату"
 
-#: kstars.cpp:227 kstarsactions.cpp:1233 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1293 kstarsinit.cpp:259
 msgid "Switch to horizonal view (Horizontal &Coordinates)"
 msgstr "Көкжиектік көрініске ауысу (Көкжиектік &координаттар)"
 
-#: kstars.cpp:227 kstarsactions.cpp:1239 kstarsinit.cpp:259
+#: kstars.cpp:227 kstarsactions.cpp:1299 kstarsinit.cpp:259
 msgid "Switch to star globe view (Equatorial &Coordinates)"
 msgstr "Аспан глобусына ауысу (Экваторлық &координаттар)"
 
@@ -50200,8 +50212,8 @@ msgstr "Бөгде жарық параметрлері"
 msgid "Equipment Settings - Equipment Type and Parameters"
 msgstr "Жабдық баптауы - Жабдықтың түрі мен параметрлері"
 
-#: kstarsactions.cpp:534 kstarsactions.cpp:551 kstarsactions.cpp:565
-#: kstarsactions.cpp:585
+#: kstarsactions.cpp:548 kstarsactions.cpp:580 kstarsactions.cpp:609
+#: kstarsactions.cpp:644
 msgid ""
 "Unable to find INDI server. Please make sure the package that provides the "
 "'indiserver' binary is installed."
@@ -50209,55 +50221,55 @@ msgstr ""
 "INDI сервері табылмады. Оңың 'indiserver' деген бинарлы файлын орнататын "
 "десте орнатылған ба, тексеріңіз."
 
-#: kstarsactions.cpp:661
+#: kstarsactions.cpp:721
 msgid "Catalogs"
 msgstr "Каталогтар"
 
-#: kstarsactions.cpp:673
+#: kstarsactions.cpp:733
 msgid "Guides"
 msgstr "Бағыттамалар"
 
-#: kstarsactions.cpp:676
+#: kstarsactions.cpp:736
 msgid "Colors"
 msgstr "Түстер"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_INDILogging)
-#: kstarsactions.cpp:681 options/opsadvanced.ui:312
+#: kstarsactions.cpp:741 options/opsadvanced.ui:312
 msgid "INDI"
 msgstr "INDI"
 
-#: kstarsactions.cpp:696
+#: kstarsactions.cpp:756
 msgid "Xplanet"
 msgstr "Xplanet"
 
-#: kstarsactions.cpp:786
+#: kstarsactions.cpp:846
 msgid "KStars::slotFind() - Not enough memory for dialog"
 msgstr "KStars::slotFind() - Диалог үшін жады жетпейді"
 
-#: kstarsactions.cpp:827
+#: kstarsactions.cpp:887
 #, fuzzy
 #| msgid "Export image"
 msgid "Export Image"
 msgstr "Кескінді экспорт ету"
 
-#: kstarsactions.cpp:864 tools/scriptbuilder.cpp:764
+#: kstarsactions.cpp:924 tools/scriptbuilder.cpp:764
 #: tools/scriptbuilder.cpp:826
 msgctxt "Filter by file type: KStars Scripts."
 msgid "KStars Scripts (*.kstars)"
 msgstr "KStars скрипттері (*.kstars)"
 
-#: kstarsactions.cpp:873
+#: kstarsactions.cpp:933
 #, fuzzy
 #| msgid "Autofocus in progress..."
 msgid "Executing remote scripts is not supported."
 msgstr "Автотоғыстау барысында..."
 
-#: kstarsactions.cpp:964 oal/execute.cpp:316 tools/observinglist.cpp:842
+#: kstarsactions.cpp:1024 oal/execute.cpp:316 tools/observinglist.cpp:842
 #, kde-format
 msgid "Could not open file %1"
 msgstr "%1 деген файл ашылмады"
 
-#: kstarsactions.cpp:990
+#: kstarsactions.cpp:1050
 msgid ""
 "The selected script contains unrecognized elements, indicating that it was "
 "not created using the KStars script builder. This script may not function "
@@ -50269,24 +50281,24 @@ msgstr ""
 "дұрыс орындалмауы мүмкін, тіпті келірлі болу ықтимал. Мейлі, орындала берсін "
 "бе?"
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 msgid "Script Validation Failed"
 msgstr "Скрипт тексеруден өте алмады"
 
-#: kstarsactions.cpp:994
+#: kstarsactions.cpp:1054
 msgid "Run Nevertheless"
 msgstr "Мейлі, орындау"
 
-#: kstarsactions.cpp:999
+#: kstarsactions.cpp:1059
 #, kde-format
 msgid "Running script: %1"
 msgstr "Орындалып жатқан скрипт: %1"
 
-#: kstarsactions.cpp:1013
+#: kstarsactions.cpp:1073
 msgid "Script finished."
 msgstr "Скрипт аяқталды."
 
-#: kstarsactions.cpp:1022
+#: kstarsactions.cpp:1082
 msgid ""
 "You can save printer ink by using the \"Star Chart\" color scheme, which "
 "uses a white background. Would you like to temporarily switch to the Star "
@@ -50296,60 +50308,60 @@ msgstr ""
 "үнемдей аласыз. Басып шығару үшін, уақытша, \"Жұлдыз картасы\" сұлбасына "
 "ауысайық па?"
 
-#: kstarsactions.cpp:1027
+#: kstarsactions.cpp:1087
 msgid "Switch to Star Chart Colors?"
 msgstr "Жұлдыз картасына ауысайық па?"
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 msgid "Switch Color Scheme"
 msgstr "Түстер сұлбасын ауыстыру"
 
-#: kstarsactions.cpp:1028
+#: kstarsactions.cpp:1088
 msgid "Do Not Switch"
 msgstr "Керегі жоқ"
 
-#: kstarsactions.cpp:1100 kstarsinit.cpp:230
+#: kstarsactions.cpp:1160 kstarsinit.cpp:230
 msgid "Engage &Tracking"
 msgstr "Қ&адағалауды бастау"
 
-#: kstarsactions.cpp:1191
+#: kstarsactions.cpp:1251
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 degrees"
 msgstr "Жуық ШӨР: %1 градус"
 
-#: kstarsactions.cpp:1194
+#: kstarsactions.cpp:1254
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcminutes"
 msgstr "Жуық ШӨР: %1 бұрыштық мин"
 
-#: kstarsactions.cpp:1198
+#: kstarsactions.cpp:1258
 #, kde-format
 msgctxt "approximate field of view"
 msgid "Approximate FOV: %1 arcseconds"
 msgstr "Жуық ШӨР: %1 бұрыштық сек"
 
-#: kstarsactions.cpp:1212
+#: kstarsactions.cpp:1272
 msgctxt "The user should enter an angle for the field-of-view of the display"
 msgid "Enter Desired Field-of-View Angle"
 msgstr "Керек шолу өрісі бұрышын келтіріңіз"
 
-#: kstarsactions.cpp:1213
+#: kstarsactions.cpp:1273
 msgid "Enter a field-of-view angle in degrees: "
 msgstr "Шолу өріс бұрышы (градус):"
 
-#: kstarsactions.cpp:1345
+#: kstarsactions.cpp:1405
 msgid "Attempt to determine from image"
 msgstr ""
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 #, fuzzy
 #| msgid "Star Hopper: Choose a field-of-view"
 msgid "Eyepiece View: Choose a field-of-view"
 msgstr "Жұлдыздан-жұлдызға өту: Шолу өрісін таңдау"
 
-#: kstarsactions.cpp:1346
+#: kstarsactions.cpp:1406
 msgid "FOV to render eyepiece view for:"
 msgstr ""
 
