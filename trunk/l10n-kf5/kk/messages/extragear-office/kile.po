@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-10-25 07:35+0000\n"
+"POT-Creation-Date: 2016-11-17 10:25+0000\n"
 "PO-Revision-Date: 2013-11-18 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -400,7 +400,6 @@ msgid "Symbol View"
 msgstr "Символды көрініс"
 
 #: dialogs/findfilesdialog.cpp:96 dialogs/projectdialogs.cpp:58
-#: kileproject.cpp:469
 msgid "Project"
 msgstr "Жоба"
 
@@ -579,8 +578,8 @@ msgstr "Файлдарда іздеу"
 msgid "Find in Project"
 msgstr "Жобада іздеу"
 
-#: dialogs/findfilesdialog.cpp:398 kileactions.cpp:378 kiledocmanager.cpp:795
-#: kiledocmanager.cpp:1004
+#: dialogs/findfilesdialog.cpp:398 kileactions.cpp:378 kiledocmanager.cpp:794
+#: kiledocmanager.cpp:1002
 msgid "All Files"
 msgstr "Бүкіл файлдар"
 
@@ -2139,7 +2138,7 @@ msgid "Background:"
 msgstr "&Ая түсі:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, m_tbProperties)
-#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:418
+#: dialogs/pdf-wizard/pdfdialog_base.ui:376 dialogs/projectdialogs.cpp:414
 #: widgets/previewconfigwidget.cpp:118
 msgid "Properties"
 msgstr "Қасиеттері"
@@ -2581,71 +2580,80 @@ msgstr "Жобаға қосылатын файлының атауын келті
 msgid "No File Name Given"
 msgstr "Файл атауы берілмеген"
 
-#: dialogs/projectdialogs.cpp:355
-#, fuzzy
-#| msgid "Could not create the project folder, check your permissions."
-msgid ""
-"Could not create the project folder. Please check if you have write "
-"permission."
-msgstr "Жоба қапшығы құрылмады. Рұқсаттарыңызды түгелдеңіз."
-
-#: dialogs/projectdialogs.cpp:361
-#, fuzzy
-#| msgid "The project folder is not writable, check your permissions."
-msgid ""
-"The project folder is not writable. Please check the permissions of the "
-"project folder."
-msgstr "Жоба қапшығына жазу болмады. Рұқсаттарыңызды түгелдеңіз."
-
-#: dialogs/projectdialogs.cpp:367
+#: dialogs/projectdialogs.cpp:357
 #, fuzzy
 #| msgid ""
 #| "The project file already exists, please select another name. Delete the "
 #| "existing project file if your intention was to overwrite it."
-msgid "The project file already exists. Please select another name."
+msgid "The project file exists already. Please choose another name."
 msgstr "Жоба файлы бар екен. Қайта жазбақ болсаңыз, оны өшіріңіз."
 
-#: dialogs/projectdialogs.cpp:367
+#: dialogs/projectdialogs.cpp:357 dialogs/projectdialogs.cpp:363
 msgid "Project File Already Exists"
 msgstr "Жоба файлы бар екен"
 
-#: dialogs/projectdialogs.cpp:382
+#: dialogs/projectdialogs.cpp:363
+#, fuzzy
+#| msgid ""
+#| "The project file already exists, please select another name. Delete the "
+#| "existing project file if your intention was to overwrite it."
+msgid ""
+"The GUI settings file exists already. Please choose another project name."
+msgstr "Жоба файлы бар екен. Қайта жазбақ болсаңыз, оны өшіріңіз."
+
+#: dialogs/projectdialogs.cpp:378
 #, kde-format
 msgid "The file \"%1\" already exists, overwrite it?"
 msgstr "\"%1\" файлы бар екен. Үстінен жаза берейік пе?"
 
-#: dialogs/projectdialogs.cpp:382 documentinfo.cpp:134
+#: dialogs/projectdialogs.cpp:378 documentinfo.cpp:134
 msgid "File Already Exists"
 msgstr "Файл бар екен"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: dialogs/projectdialogs.cpp:408 widgets/generalconfigwidget.ui:32
+#: dialogs/projectdialogs.cpp:404 widgets/generalconfigwidget.ui:32
 msgid "Project Options"
 msgstr "Жоба параметрлері"
 
-#: dialogs/projectdialogs.cpp:409
+#: dialogs/projectdialogs.cpp:405
 msgid "(use global setting)"
 msgstr "(жалпы жүйеліктері қолданылсын)"
 
-#: dialogs/projectdialogs.cpp:424
+#: dialogs/projectdialogs.cpp:420
 msgid "Select the default master document. Leave empty for auto detection."
 msgstr "Әдетті басты құжатын таңдау. Автоанықтау үшін бос қалдырыңыз."
 
-#: dialogs/projectdialogs.cpp:429
+#: dialogs/projectdialogs.cpp:425
 msgid "&Master document:"
 msgstr "&Басты кұжаты:"
 
-#: dialogs/projectdialogs.cpp:435
+#: dialogs/projectdialogs.cpp:431
 msgid "(auto-detect)"
 msgstr "(авто-анықтау)"
 
-#: dialogs/projectdialogs.cpp:452
+#: dialogs/projectdialogs.cpp:448
 msgid "&QuickBuild configuration:"
 msgstr "&QuickBuild баптауы:"
 
-#: dialogs/projectdialogs.cpp:471
+#: dialogs/projectdialogs.cpp:467
 msgid "&MakeIndex options"
 msgstr "&MakeIndex баптауы"
+
+#: dialogs/projectdialogs.cpp:571
+#, fuzzy, kde-format
+#| msgid "Could not create the project folder, check your permissions."
+msgid ""
+"<p>Could not create the project folder \"\n"
+"%1\"</p>.<p>Please check whether you have write permissions.</p>"
+msgstr "Жоба қапшығы құрылмады. Рұқсаттарыңызды түгелдеңіз."
+
+#: dialogs/projectdialogs.cpp:578
+#, fuzzy, kde-format
+#| msgid "The project folder is not writable, check your permissions."
+msgid ""
+"<p>The project folder \"(%1)\" is not writable.</p><p>Please check the "
+"permissions of the project folder.</p>"
+msgstr "Жоба қапшығына жазу болмады. Рұқсаттарыңызды түгелдеңіз."
 
 #: dialogs/quickdocumentdialog.cpp:108
 msgid "Cla&ss Options"
@@ -4030,7 +4038,7 @@ msgid ""
 "dvi *.epub);;All Files (*.*)"
 msgstr ""
 
-#: dialogs/userhelpdialog.cpp:435 kileactions.cpp:380 kiledocmanager.cpp:2044
+#: dialogs/userhelpdialog.cpp:435 kileactions.cpp:380 kiledocmanager.cpp:2071
 msgid "Select File"
 msgstr "Файлды таңдау"
 
@@ -5059,8 +5067,8 @@ msgstr "Ж&обаның бүкіл файлдарын ашу"
 msgid "Find in &Project..."
 msgstr "&Жобада іздеу..."
 
-#: kile.cpp:775 kile.cpp:839 kile.cpp:2121 kiledocmanager.cpp:1893
-#: kiledocmanager.cpp:1903
+#: kile.cpp:775 kile.cpp:839 kile.cpp:2121 kiledocmanager.cpp:1920
+#: kiledocmanager.cpp:1930
 msgid "Clean"
 msgstr "Тазалау"
 
@@ -6001,15 +6009,15 @@ msgstr ""
 msgid "&Label:"
 msgstr "&Жарлығы:"
 
-#: kiledocmanager.cpp:93
+#: kiledocmanager.cpp:92
 msgid "No editor component found. Please check your KDE installation."
 msgstr "KDE-нің өңдегіш компоненті табылмады. KDE орнатуын түгелдеңіз."
 
-#: kiledocmanager.cpp:94
+#: kiledocmanager.cpp:93
 msgid "No editor component found."
 msgstr "Редактор компоненті табылмады"
 
-#: kiledocmanager.cpp:145
+#: kiledocmanager.cpp:144
 msgid ""
 "The internal structure of Kile is corrupted (probably due to a bug in Kile). "
 "Please select Save All from the File menu and close Kile.\n"
@@ -6020,40 +6028,40 @@ msgstr ""
 "Бүкілін сақтау деңіз де Kile-ді жабыңыз.\n"
 "Kile тобы Сізден кешірім сұрап қате тұралы хабарлауын өтінеді."
 
-#: kiledocmanager.cpp:661
+#: kiledocmanager.cpp:660
 #, kde-format
 msgid "Could not find template: %1"
 msgstr "Үлгісі табылмады: %1"
 
-#: kiledocmanager.cpp:661
+#: kiledocmanager.cpp:660
 msgid "File Not Found"
 msgstr "Файл табылмады"
 
-#: kiledocmanager.cpp:719
+#: kiledocmanager.cpp:718
 msgid "Please save the file first."
 msgstr "Алдымен файлды сақтаңыз."
 
-#: kiledocmanager.cpp:724
+#: kiledocmanager.cpp:723
 msgid "Open/create a document first."
 msgstr "Алдымен құжатты ашу не құру керек."
 
-#: kiledocmanager.cpp:732
+#: kiledocmanager.cpp:731
 msgid "A template for this type of document cannot be created."
 msgstr "Құжаттың бұл түрінің үлгісі жасалмайды."
 
-#: kiledocmanager.cpp:736
+#: kiledocmanager.cpp:735
 msgid "Create Template From Document"
 msgstr "Құжаттан үлгі жасау"
 
-#: kiledocmanager.cpp:742
+#: kiledocmanager.cpp:741
 msgid "Remove Template"
 msgstr "Үлгіні өшіру"
 
-#: kiledocmanager.cpp:801
+#: kiledocmanager.cpp:800
 msgid "Open Files"
 msgstr "Файлдарды ашу"
 
-#: kiledocmanager.cpp:876
+#: kiledocmanager.cpp:875
 #, kde-format
 msgid ""
 "Kile encountered problems while saving the file %1. Do you have enough free "
@@ -6062,33 +6070,33 @@ msgstr ""
 "%1 файды сақтаймын дегенде Kile кедергіге ұшрады. Дискіде бос орын "
 "жеткілікті ме?"
 
-#: kiledocmanager.cpp:877
+#: kiledocmanager.cpp:876
 msgid "Saving"
 msgstr "Сақтау"
 
-#: kiledocmanager.cpp:1005
+#: kiledocmanager.cpp:1003
 msgid "Save File"
 msgstr "Файлды сақтау"
 
-#: kiledocmanager.cpp:1018
+#: kiledocmanager.cpp:1016
 #, kde-format
 msgid ""
 "A file with the name \"%1\" exists already. Do you want to overwrite it?"
 msgstr "\"%1\" деп аталған файл бар екен, оның үстінен жазбақсыз ба?"
 
-#: kiledocmanager.cpp:1018
+#: kiledocmanager.cpp:1016
 msgid "Overwrite File?"
 msgstr "Үстінен жазбақсыз ба?"
 
-#: kiledocmanager.cpp:1018
+#: kiledocmanager.cpp:1016
 msgid "&Overwrite"
 msgstr "Үстінен жазу"
 
-#: kiledocmanager.cpp:1261
+#: kiledocmanager.cpp:1259
 msgid "Refresh Project Tree"
 msgstr "Жоба бұтақтарын жаңарту"
 
-#: kiledocmanager.cpp:1269
+#: kiledocmanager.cpp:1267
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to build the tree for, "
@@ -6097,31 +6105,31 @@ msgstr ""
 "Назардағы құжат ешбір жобаға қатысы жоқ. Бұтақтар көрінісін құруыңыз  келген "
 "жобаға қатысы бар құжатқа ауысып жобаны қайта жаңартып көріңіз."
 
-#: kiledocmanager.cpp:1269
+#: kiledocmanager.cpp:1267
 msgid "Could Not Refresh Project Tree"
 msgstr "Жобаның бұтақтары жаңартылмады"
 
-#: kiledocmanager.cpp:1343 kiledocmanager.cpp:2065 kiledocmanager.cpp:2139
-#: kiledocmanager.cpp:2176
+#: kiledocmanager.cpp:1341 kiledocmanager.cpp:2092 kiledocmanager.cpp:2166
+#: kiledocmanager.cpp:2203
 msgid "Select Project"
 msgstr "Жобаны таңдау"
 
-#: kiledocmanager.cpp:1368 kiledocmanager.cpp:1383 kiledocmanager.cpp:1390
+#: kiledocmanager.cpp:1366 kiledocmanager.cpp:1381 kiledocmanager.cpp:1388
 msgid "Add to Project"
 msgstr "Жобаға қосу"
 
-#: kiledocmanager.cpp:1382
+#: kiledocmanager.cpp:1380
 #, kde-format
 msgid "The file %1 is already member of the project %2"
 msgstr "%1 деген файл бұрыннан %2 деген жоба мүшесі"
 
-#: kiledocmanager.cpp:1389
+#: kiledocmanager.cpp:1387
 #, kde-format
 msgid ""
 "The file %1 can not be added because it does not exist or is not readable"
 msgstr "%1 деген файл қосылмады, өйткені ол жоқ немесе оқылмайды"
 
-#: kiledocmanager.cpp:1408
+#: kiledocmanager.cpp:1406
 msgid ""
 "This file is the project file, which holds all the information about your "
 "project.  As such, it cannot be removed from the project."
@@ -6129,39 +6137,101 @@ msgstr ""
 "Бұл жоба туралы мәліметті сақтайтын жоба файлы. Сондықтан оны жобадан "
 "кетіруге болмайды."
 
-#: kiledocmanager.cpp:1408
+#: kiledocmanager.cpp:1406
 msgid "Cannot Remove File From Project"
 msgstr "Жобадан файл кетірілмеді"
 
-#: kiledocmanager.cpp:1475
+#: kiledocmanager.cpp:1472
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project you tried to open is already opened. If you wanted to reload "
+#| "the project, close the project before you re-open it."
 msgid ""
-"The project you tried to open is already opened. If you wanted to reload the "
+"<p>The project \"%1\" is already open.</p><p>If you wanted to reload the "
 "project, close the project before you re-open it."
 msgstr ""
 "Бұл ашық тұрған жоба екен. Қайта жүктеп алам десеңіз, алдымен жобаны жабыңыз."
 
-#: kiledocmanager.cpp:1475
+#: kiledocmanager.cpp:1474
 msgid "Project Already Open"
 msgstr "Жоба ашылған екен"
 
-#: kiledocmanager.cpp:1485
-#, kde-format
+#: kiledocmanager.cpp:1484
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project file for the project \"%1\" does not exist or is not "
+#| "readable. Remove this project from the recent projects list?"
 msgid ""
-"The project file for the project \"%1\" does not exist or is not readable. "
-"Remove this project from the recent projects list?"
+"<p>The project file for the project \"%1\" does not exist or it is not "
+"readable.</p><p>Do you want to remove this project from the recent projects "
+"list?</p>"
 msgstr ""
 "\"%1\" деген жобаның жоба файлы оқуға келмейді. Жуырдағылардың тізімінен "
 "алынып тасталсын ба?"
 
-#: kiledocmanager.cpp:1485
-msgid "Could Not Load Project File"
+#: kiledocmanager.cpp:1487
+#, fuzzy
+#| msgid "Could Not Close Project"
+msgid "Could Not Open Project"
+msgstr "Жоба жабылмады"
+
+#: kiledocmanager.cpp:1504
+#, kde-format
+msgid ""
+"<p>The project \"%1\" cannot be opened as it was created <br/>by a newer "
+"version of Kile.</p>"
+msgstr ""
+
+#: kiledocmanager.cpp:1506
+#, fuzzy
+#| msgid "Open Project"
+msgid "Impossible to Open Project"
+msgstr "Жобаны ашу"
+
+#: kiledocmanager.cpp:1516
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project file of %1 was created by a newer version of kile. Opening it "
+#| "can lead to unexpected results.\n"
+#| "Do you really want to continue (not recommended)?"
+msgid ""
+"<p>The project file \"%1\" was created by a previous version of Kile.<br/>It "
+"needs to be updated before it can be opened.</p><p>Do you want to update it?"
+"</p>"
+msgstr ""
+"%1 жоба файлы бұдан жаңарақ Kile нұсқасымен құрылған. Бұнда ашқаны нәтижелі "
+"болмауы мүмкін.\n"
+"Ашуды қалайсыз ба? (Ашпағаны жөн болар)"
+
+#: kiledocmanager.cpp:1519
+#, fuzzy
+#| msgid "Tools need to be updated"
+msgid "Project File Needs to be Updated"
+msgstr "Құалдарды жаңарту керек"
+
+#: kiledocmanager.cpp:1525
+#, fuzzy, kde-format
+#| msgid ""
+#| "The project file for the project \"%1\" does not exist or is not "
+#| "readable. Remove this project from the recent projects list?"
+msgid ""
+"<p>The project file \"%1\" could be not updated.</p><p>Do you want to remove "
+"this project from the recent projects list?</p>"
+msgstr ""
+"\"%1\" деген жобаның жоба файлы оқуға келмейді. Жуырдағылардың тізімінен "
+"алынып тасталсын ба?"
+
+#: kiledocmanager.cpp:1527
+#, fuzzy
+#| msgid "Could Not Load Project File"
+msgid "Could Not Update Project File"
 msgstr "Жоба файлы жүктелмеді"
 
-#: kiledocmanager.cpp:1588
+#: kiledocmanager.cpp:1628
 msgid "Open Project"
 msgstr "Жобаны ашу"
 
-#: kiledocmanager.cpp:1588
+#: kiledocmanager.cpp:1628
 msgid ""
 "*.kilepr|Kile Project Files\n"
 "*|All Files"
@@ -6169,11 +6239,11 @@ msgstr ""
 "*.kilepr|Kile жоба файлдары\n"
 "*|Бүкіл файлдар"
 
-#: kiledocmanager.cpp:1605
+#: kiledocmanager.cpp:1645
 msgid "Save Project"
 msgstr "Жобаны сақтау"
 
-#: kiledocmanager.cpp:1657
+#: kiledocmanager.cpp:1697
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to save, then choose "
@@ -6182,27 +6252,27 @@ msgstr ""
 "Назардағы құжат ешбір жобаға қатысы жоқ. Сақтауыңыз келген жобаға қатысы бар "
 "құжатқа ауысып жобаны қайта сақтап көріңіз."
 
-#: kiledocmanager.cpp:1657
+#: kiledocmanager.cpp:1697
 msgid "Could Determine Active Project"
 msgstr "Белсенді жоба анықталды"
 
-#: kiledocmanager.cpp:1678
+#: kiledocmanager.cpp:1718
 msgid "Add Files to Project"
 msgstr "Жобаға файлдарды қосу"
 
-#: kiledocmanager.cpp:1691
+#: kiledocmanager.cpp:1731
 msgid "Add Files"
 msgstr "Файлдарды қосу"
 
-#: kiledocmanager.cpp:1691
+#: kiledocmanager.cpp:1731
 msgid "*|All Files"
 msgstr "*|Бүкіл файлдар"
 
-#: kiledocmanager.cpp:1694
+#: kiledocmanager.cpp:1734
 msgid "Add"
 msgstr "Қосу"
 
-#: kiledocmanager.cpp:1709
+#: kiledocmanager.cpp:1749
 msgid ""
 "There are no projects opened. Please open the project you want to add files "
 "to, then choose Add Files again."
@@ -6210,15 +6280,15 @@ msgstr ""
 "Ашылған жоба жоқ. Файлдарды қосқыңыз келген жобаны ашып Файлдарды қосу "
 "дегенге барыңыз."
 
-#: kiledocmanager.cpp:1709 kiledocmanager.cpp:1744
+#: kiledocmanager.cpp:1749 kiledocmanager.cpp:1784
 msgid "Could Not Determine Active Project"
 msgstr "Белсенді жоба анықталмады"
 
-#: kiledocmanager.cpp:1735
+#: kiledocmanager.cpp:1775
 msgid "Project Options For"
 msgstr "Жоба параметрлері"
 
-#: kiledocmanager.cpp:1744
+#: kiledocmanager.cpp:1784
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to modify, then choose "
@@ -6227,11 +6297,11 @@ msgstr ""
 "Назардағы құжат ешбір жобаға қатысы жоқ. Өзгертуіңіз келген жобаға қатысы "
 "бар құжатқа ауысып Жоба параметрлері дегенге қайта барыңыз."
 
-#: kiledocmanager.cpp:1770
+#: kiledocmanager.cpp:1810
 msgid "Close Project"
 msgstr "Жобаны жабу"
 
-#: kiledocmanager.cpp:1824
+#: kiledocmanager.cpp:1864
 msgid ""
 "The current document is not associated to a project. Please activate a "
 "document that is associated to the project you want to close, then choose "
@@ -6240,66 +6310,66 @@ msgstr ""
 "Назардағы құжат ешбір жобаға қатысы жоқ. Жабуыңыз келген жобаға қатысы бар "
 "құжатқа ауысып жобаны қайта жауып көріңіз."
 
-#: kiledocmanager.cpp:1824
+#: kiledocmanager.cpp:1864
 msgid "Could Not Close Project"
 msgstr "Жоба жабылмады"
 
-#: kiledocmanager.cpp:1892
+#: kiledocmanager.cpp:1919
 #, kde-format
 msgid "Nothing to clean for %1"
 msgstr "%1 үшін тазалайтын ештеңе жоқ"
 
-#: kiledocmanager.cpp:1902
+#: kiledocmanager.cpp:1929
 #, kde-format
 msgid "Cleaning %1: %2"
 msgstr "%1 тазалау: %2"
 
-#: kiledocmanager.cpp:1976
+#: kiledocmanager.cpp:2003
 msgid "Switch Project"
 msgstr "Жобаны ауыстыру"
 
-#: kiledocmanager.cpp:2034
+#: kiledocmanager.cpp:2061
 msgid "Select Files to Remove"
 msgstr "Өшіретін файлдарды таңдау"
 
-#: kiledocmanager.cpp:2047 kiledocmanager.cpp:2050
+#: kiledocmanager.cpp:2074 kiledocmanager.cpp:2077
 msgid "Show Project Files"
 msgstr "Жоба файлдарын көрсету"
 
-#: kiledocmanager.cpp:2047 kiledocmanager.cpp:2095
+#: kiledocmanager.cpp:2074 kiledocmanager.cpp:2122
 msgid "project configuration file"
 msgstr "жобаның баптау файлы"
 
-#: kiledocmanager.cpp:2050 kiledocmanager.cpp:2098
+#: kiledocmanager.cpp:2077 kiledocmanager.cpp:2125
 msgid "graphics file"
 msgstr "графика файлы"
 
-#: kiledocmanager.cpp:2095 kiledocmanager.cpp:2098
+#: kiledocmanager.cpp:2122 kiledocmanager.cpp:2125
 msgid "Open All Project Files"
 msgstr "Жобаның бүкіл файлдарын ашу"
 
-#: kiledocmanager.cpp:2132
+#: kiledocmanager.cpp:2159
 #, kde-format
 msgid "not opened: %1 (%2)"
 msgstr "ашылмағаны: %1 (%2)"
 
-#: kiledocmanager.cpp:2157 kiledocmanager.cpp:2194
+#: kiledocmanager.cpp:2184 kiledocmanager.cpp:2221
 msgid "Project Files"
 msgstr "Жоба файлдары"
 
-#: kiledocmanager.cpp:2165 kiledocmanager.cpp:2204
+#: kiledocmanager.cpp:2192 kiledocmanager.cpp:2231
 msgid "Could not determine the selected file."
 msgstr "аңдалған файл анықталмады."
 
-#: kiledocmanager.cpp:2165 kiledocmanager.cpp:2204
+#: kiledocmanager.cpp:2192 kiledocmanager.cpp:2231
 msgid "Project Error"
 msgstr "Жоба қатесі"
 
-#: kiledocmanager.cpp:2303
+#: kiledocmanager.cpp:2330
 msgid "Opening Project..."
 msgstr "Жобаны ашу..."
 
-#: kiledocmanager.cpp:2306
+#: kiledocmanager.cpp:2333
 msgid "Scanning project files..."
 msgstr "Жоба файлдарды зерттеу..."
 
@@ -6436,17 +6506,6 @@ msgstr "BibTeX деректер қорын қосу"
 #: kilelyxserver.cpp:246
 msgid "Paste"
 msgstr "Орналастыру"
-
-#: kileproject.cpp:476
-#, kde-format
-msgid ""
-"The project file of %1 was created by a newer version of kile. Opening it "
-"can lead to unexpected results.\n"
-"Do you really want to continue (not recommended)?"
-msgstr ""
-"%1 жоба файлы бұдан жаңарақ Kile нұсқасымен құрылған. Бұнда ашқаны нәтижелі "
-"болмауы мүмкін.\n"
-"Ашуды қалайсыз ба? (Ашпағаны жөн болар)"
 
 #: kilestdactions.cpp:31
 msgid "Document Class Selection - \\documentclass{}"
