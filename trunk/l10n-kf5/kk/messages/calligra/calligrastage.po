@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2013-09-30 04:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -77,6 +77,81 @@ msgstr "&Көрсетілім"
 msgid "&Settings"
 msgstr "&Баптау"
 
+#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
+#, fuzzy
+#| msgid "Add custom slide show"
+msgctxt "(qtundo-format)"
+msgid "Add custom slide show"
+msgstr "Пайдаланушының слайд-шоуын қосу"
+
+#: part/commands/KPrAnimationCreateCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Create shape animation"
+msgstr "Қалыптың анимациясын жасау"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:35
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr "Анимацияны бастау кезін өзгерту"
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
+msgstr "Қалыптың анимациясын өшіру"
+
+#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
+#, fuzzy
+#| msgid "Delete custom slide show"
+msgctxt "(qtundo-format)"
+msgid "Delete custom slide show"
+msgstr "Пайдаланушы слайд-шоуын өшіру"
+
+#: part/commands/KPrDeleteSlidesCommand.cpp:38
+#: part/commands/KPrDeleteSlidesCommand.cpp:57
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Слайдтарды өшіру"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:37
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr "Анимацияны кідірту мен ұзақтығын өзгерту"
+
+#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
+#, fuzzy
+#| msgid "Edit custom slide show"
+msgctxt "(qtundo-format)"
+msgid "Edit custom slide show"
+msgstr "Пайдаланушының слайд-шоуын өңдеу"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Create Slide Effect"
+msgstr "Слайд эффектін жобалау"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:41
+msgctxt "(qtundo-format)"
+msgid "Modify Slide Effect"
+msgstr "Слайд эффектін өзгерту"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:45
+msgctxt "(qtundo-format)"
+msgid "Delete Slide Effect"
+msgstr "Слайд эффектін өшіру"
+
+#: part/commands/KPrRenameCustomSlideShowCommand.cpp:33
+#, fuzzy
+#| msgid "Rename custom slide show"
+msgctxt "(qtundo-format)"
+msgid "Rename custom slide show"
+msgstr "Пайдаланушының слайд-шоуын қайта атау"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:33
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Анимациясын қайта реттеу"
+
 #: part/KPrAboutData.h:34
 #, fuzzy, kde-format
 #| msgid "Configure Stage..."
@@ -103,15 +178,15 @@ msgstr ""
 msgid "Copyright 1998-%1, The Stage Team"
 msgstr "(c) 1998-2013, Stage тобы"
 
-#: part/KPrAboutData.h:48
-#, kde-format
-msgid "Thorsten Zachmann"
-msgstr "Thorsten Zachmann"
-
 #: part/KPrAboutData.h:48 part/KPrAboutData.h:49
 #, kde-format
 msgid "Former maintainer"
 msgstr "Бұрынғы жетілдірушісі"
+
+#: part/KPrAboutData.h:48
+#, kde-format
+msgid "Thorsten Zachmann"
+msgstr "Thorsten Zachmann"
 
 #: part/KPrAboutData.h:49
 #, kde-format
@@ -120,13 +195,13 @@ msgstr "Laurent Montel"
 
 #: part/KPrAboutData.h:50
 #, kde-format
-msgid "Reginald Stadlbauer"
-msgstr "Reginald Stadlbauer"
+msgid "Original author"
+msgstr "Бастапқы авторы"
 
 #: part/KPrAboutData.h:50
 #, kde-format
-msgid "Original author"
-msgstr "Бастапқы авторы"
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
 
 #: part/KPrAboutData.h:51
 #, kde-format
@@ -265,6 +340,11 @@ msgstr ""
 #, kde-format
 msgid "Installation Error"
 msgstr "Орнату қатесі"
+
+#: part/KPrPicturesImport.cpp:75
+msgctxt "(qtundo-format)"
+msgid "Insert Pictures"
+msgstr "Суреттерді енгізу"
 
 #: part/KPrPlaceholderShapeFactory.cpp:32
 #, kde-format
@@ -675,16 +755,22 @@ msgstr "%1 слайд-шоуы"
 msgid "All slides"
 msgstr "Барлық слайдтар"
 
-#: part/KPrViewModeSlidesSorter.cpp:699
-#, kde-format
-msgid "There cannot be two slideshows with the same name."
-msgstr "Бірдей аталған екі слайд-шоу болуға тиіс емес."
-
 #: part/KPrViewModeSlidesSorter.cpp:699 part/ui/KPrHtmlExportDialog.cpp:162
 #: part/ui/KPrHtmlExportDialog.cpp:216
 #, kde-format
 msgid "Error"
 msgstr "Қате"
+
+#: part/KPrViewModeSlidesSorter.cpp:699
+#, kde-format
+msgid "There cannot be two slideshows with the same name."
+msgstr "Бірдей аталған екі слайд-шоу болуға тиіс емес."
+
+#: part/pagelayout/KPrPlaceholders.cpp:59
+#: part/pagelayout/KPrPlaceholders.cpp:60
+msgctxt "(qtundo-format)"
+msgid "Set Layout"
+msgstr "Орналасуы"
 
 #: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
 #, kde-format
@@ -767,6 +853,13 @@ msgstr " сек"
 #, fuzzy, kde-format
 #| msgid "All slides"
 msgid "Apply To All Slides"
+msgstr "Барлық слайдтар"
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:236
+#, fuzzy
+#| msgid "All slides"
+msgctxt "(qtundo-format)"
+msgid "Apply Slide Effect to all Slides"
 msgstr "Барлық слайдтар"
 
 #: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:178
@@ -922,6 +1015,11 @@ msgstr "Кескін"
 #, kde-format
 msgid "&Crop"
 msgstr "&Ойып алу"
+
+#: part/tools/KPrPlaceholderTool.cpp:92
+msgctxt "(qtundo-format)"
+msgid "Edit Shape"
+msgstr "Қалыпты өңдеу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: part/ui/KPrConfigurePresenterView.ui:16
@@ -1096,13 +1194,18 @@ msgstr "Үлгіні қосу"
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, kde-format
-msgid "Confirm remove"
-msgstr "Өшіруді құптау"
+msgid "Are you sure you want to remove \"%1\"?"
+msgstr "\"%1\"дегенді өшіргіңіз келгені рас па?"
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, kde-format
-msgid "Are you sure you want to remove \"%1\"?"
-msgstr "\"%1\"дегенді өшіргіңіз келгені рас па?"
+msgid "Confirm remove"
+msgstr "Өшіруді құптау"
+
+#: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:95
+msgctxt "(qtundo-format)"
+msgid "Change sound action"
+msgstr "Дыбысты әрекетін өзгерту"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:118
 #, kde-format
@@ -2506,67 +2609,6 @@ msgstr "Төменгі колонтитулы"
 #~ msgstr "Көрсетуді рұқсат ету"
 
 #, fuzzy
-#~| msgid "Add custom slide show"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add custom slide show"
-#~ msgstr "Пайдаланушының слайд-шоуын қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape animation"
-#~ msgstr "Қалыптың анимациясын жасау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit animation trigger event"
-#~ msgstr "Анимацияны бастау кезін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove shape animation"
-#~ msgstr "Қалыптың анимациясын өшіру"
-
-#, fuzzy
-#~| msgid "Delete custom slide show"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete custom slide show"
-#~ msgstr "Пайдаланушы слайд-шоуын өшіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete slide"
-#~ msgid_plural "Delete slides"
-#~ msgstr[0] "Слайдтарды өшіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit animation delay/duration"
-#~ msgstr "Анимацияны кідірту мен ұзақтығын өзгерту"
-
-#, fuzzy
-#~| msgid "Edit custom slide show"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit custom slide show"
-#~ msgstr "Пайдаланушының слайд-шоуын өңдеу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Slide Effect"
-#~ msgstr "Слайд эффектін жобалау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify Slide Effect"
-#~ msgstr "Слайд эффектін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Slide Effect"
-#~ msgstr "Слайд эффектін өшіру"
-
-#, fuzzy
-#~| msgid "Rename custom slide show"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename custom slide show"
-#~ msgstr "Пайдаланушының слайд-шоуын қайта атау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reorder animations"
-#~ msgstr "Анимациясын қайта реттеу"
-
-#, fuzzy
 #~| msgid "Configure Stage..."
 #~ msgctxt "(qtundo-format) application name"
 #~ msgid "Calligra Stage"
@@ -2774,10 +2816,6 @@ msgstr "Төменгі колонтитулы"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Installation Error"
 #~ msgstr "Орнату қатесі"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Pictures"
-#~ msgstr "Суреттерді енгізу"
 
 #, fuzzy
 #~| msgid "Placeholder shape"
@@ -3271,10 +3309,6 @@ msgstr "Төменгі колонтитулы"
 #~ msgid "There cannot be two slideshows with the same name."
 #~ msgstr "Бірдей аталған екі слайд-шоу болуға тиіс емес."
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Layout"
-#~ msgstr "Орналасуы"
-
 #, fuzzy
 #~| msgid "Automatic animation preview"
 #~ msgctxt "(qtundo-format)"
@@ -3467,10 +3501,6 @@ msgstr "Төменгі колонтитулы"
 #~ msgid "seconds"
 #~ msgstr "секунд"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit Shape"
-#~ msgstr "Қалыпты өңдеу"
-
 #, fuzzy
 #~| msgid "Monitor %1 (primary)"
 #~ msgctxt "(qtundo-format)"
@@ -3554,10 +3584,6 @@ msgstr "Төменгі колонтитулы"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Confirm remove"
 #~ msgstr "Өшіруді құптау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change sound action"
-#~ msgstr "Дыбысты әрекетін өзгерту"
 
 #, fuzzy
 #~| msgid "No sound"

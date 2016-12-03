@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2012-08-28 03:39+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -124,13 +124,13 @@ msgstr "Басқа"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "rest"
-msgstr "пауза"
+msgid "note"
+msgstr "нота"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "note"
-msgstr "нота"
+msgid "rest"
+msgstr "пауза"
 
 #: actions/NoteEntryAction.cpp:70
 #, kde-format
@@ -179,13 +179,13 @@ msgstr "128-ден бірі "
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown rest"
-msgstr "Беймәлім пауза"
+msgid "Unknown note"
+msgstr "Беймәлім нота"
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown note"
-msgstr "Беймәлім нота"
+msgid "Unknown rest"
+msgstr "Беймәлім пауза"
 
 #: actions/RemoveBarAction.cpp:35
 #, kde-format
@@ -242,11 +242,117 @@ msgstr "Беймәлім құлақкүйі"
 msgid "Tied notes"
 msgstr "Ноталар лигасы"
 
+#: commands/AddBarsCommand.cpp:30
+msgctxt "(qtundo-format)"
+msgid "Add measures"
+msgstr "Тұрық өлшемдерін қосу"
+
+#: commands/AddDotCommand.cpp:30
+msgctxt "(qtundo-format)"
+msgid "Add dot"
+msgstr "Нотаны 1,5 есе ұзарту"
+
+#: commands/AddNoteCommand.cpp:42
+msgctxt "(qtundo-format)"
+msgid "Set chord duration"
+msgstr "Аккордтың ұзындығын орнату"
+
+#: commands/AddNoteCommand.cpp:44
+msgctxt "(qtundo-format)"
+msgid "Add note"
+msgstr "Нотаны қосу"
+
+#: commands/AddPartCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Add part"
+msgstr "Партияны қосу"
+
 #: commands/AddPartCommand.cpp:39
 #, fuzzy, kde-format
 #| msgid "Parts"
 msgid "Part %1"
 msgstr "Партиялар"
+
+#: commands/ChangePartDetailsCommand.cpp:43
+msgctxt "(qtundo-format)"
+msgid "Change part details"
+msgstr "Партиясының бөлімдерін өзгерту"
+
+#: commands/CreateChordCommand.cpp:33
+msgctxt "(qtundo-format)"
+msgid "Add chord"
+msgstr "Аккордты қосу"
+
+#: commands/CreateChordCommand.cpp:41
+msgctxt "(qtundo-format)"
+msgid "Add rest"
+msgstr "Паузаны қосу"
+
+#: commands/MakeRestCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Convert chord to rest"
+msgstr "Аккордты паузаға айналдыру"
+
+#: commands/RemoveBarCommand.cpp:31
+msgctxt "(qtundo-format)"
+msgid "Remove bar"
+msgstr "Такт сызығын алып тастау"
+
+#: commands/RemoveChordCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Remove rest"
+msgstr "Паузаны алып тастау"
+
+#: commands/RemoveChordCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Remove chord"
+msgstr "Аккордты алып тастау"
+
+#: commands/RemoveNoteCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Remove note"
+msgstr "Нотаны алып тастау"
+
+#: commands/RemovePartCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Remove part"
+msgstr "Партияны алып тастау"
+
+#: commands/RemoveStaffElementCommand.cpp:35
+msgctxt "(qtundo-format)"
+msgid "Remove clef"
+msgstr "Құлақкүйін алып тастау"
+
+#: commands/RemoveStaffElementCommand.cpp:37
+msgctxt "(qtundo-format)"
+msgid "Remove staff element"
+msgstr "Нота тасушы элементін алып тастау"
+
+#: commands/SetAccidentalsCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Set accidentals"
+msgstr "Альтерация белгісін қою"
+
+#: commands/SetClefCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Change clef"
+msgstr "Құлақкүйін өзгерту"
+
+#: commands/SetKeySignatureCommand.cpp:38
+#: commands/SetKeySignatureCommand.cpp:85
+msgctxt "(qtundo-format)"
+msgid "Change key signature"
+msgstr "Кілт белгісін өзгерту"
+
+#: commands/SetTimeSignatureCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Change time signature"
+msgstr "Темп белгісін өзгерту"
+
+#: commands/ToggleTiedNoteCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Toggle Note Tie"
+msgstr "Лигасын орнату/алып тастау"
 
 #: dialogs/KeySignatureDialog.cpp:28
 #, kde-format
@@ -742,10 +848,6 @@ msgstr "Музыканы өңдеу құралы"
 #~ msgid "Unknown rest"
 #~ msgstr "Беймәлім пауза"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove bar"
-#~ msgstr "Такт сызығын алып тастау"
-
 #, fuzzy
 #~| msgid "Select"
 #~ msgctxt "(qtundo-format)"
@@ -805,91 +907,11 @@ msgstr "Музыканы өңдеу құралы"
 #~ msgid "Tied notes"
 #~ msgstr "Ноталар лигасы"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add measures"
-#~ msgstr "Тұрық өлшемдерін қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add dot"
-#~ msgstr "Нотаны 1,5 есе ұзарту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set chord duration"
-#~ msgstr "Аккордтың ұзындығын орнату"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add note"
-#~ msgstr "Нотаны қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add part"
-#~ msgstr "Партияны қосу"
-
 #, fuzzy
 #~| msgid "Parts"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Part %1"
 #~ msgstr "Партиялар"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change part details"
-#~ msgstr "Партиясының бөлімдерін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add chord"
-#~ msgstr "Аккордты қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add rest"
-#~ msgstr "Паузаны қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Convert chord to rest"
-#~ msgstr "Аккордты паузаға айналдыру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove rest"
-#~ msgstr "Паузаны алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove chord"
-#~ msgstr "Аккордты алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove note"
-#~ msgstr "Нотаны алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove part"
-#~ msgstr "Партияны алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove clef"
-#~ msgstr "Құлақкүйін алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove staff element"
-#~ msgstr "Нота тасушы элементін алып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set accidentals"
-#~ msgstr "Альтерация белгісін қою"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change clef"
-#~ msgstr "Құлақкүйін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change key signature"
-#~ msgstr "Кілт белгісін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change time signature"
-#~ msgstr "Темп белгісін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Toggle Note Tie"
-#~ msgstr "Лигасын орнату/алып тастау"
 
 #, fuzzy
 #~| msgid "Set key signature"

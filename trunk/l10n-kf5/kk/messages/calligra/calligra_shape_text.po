@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2013-08-12 05:21+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -46,17 +46,60 @@ msgstr ""
 msgid "Annotation Shape"
 msgstr "Аңдатпасы:"
 
-#: commands/AutoResizeCommand.cpp:36
-#, kde-format
-msgctxt "Enable Shrink To Fit"
-msgid "Enable"
-msgstr "Рұқсат ету"
+#: commands/AcceptChangeCommand.cpp:45
+msgctxt "(qtundo-format)"
+msgid "Accept change"
+msgstr "Өзгерісті қабылдау"
 
 #: commands/AutoResizeCommand.cpp:36
 #, kde-format
 msgctxt "Disable Shrink To Fit"
 msgid "Disable"
 msgstr "Бұғаттау"
+
+#: commands/AutoResizeCommand.cpp:36
+#, kde-format
+msgctxt "Enable Shrink To Fit"
+msgid "Enable"
+msgstr "Рұқсат ету"
+
+#: commands/AutoResizeCommand.cpp:39
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
+msgid "%1 Grow To Fit Width"
+msgstr "%1 өсіріп енің шақтау "
+
+#: commands/AutoResizeCommand.cpp:42
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
+msgid "%1 Grow To Fit Height"
+msgstr "%1 өсіріп биіктігін шақтау"
+
+#: commands/AutoResizeCommand.cpp:45
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
+msgid "%1 Shrink To Fit"
+msgstr "%1 сыйғызып шақтау"
+
+#: commands/ChangeListLevelCommand.cpp:42
+msgctxt "(qtundo-format)"
+msgid "Change List Level"
+msgstr "Тізімдің деңгейін өзгерту"
+
+#: commands/RejectChangeCommand.cpp:47
+msgctxt "(qtundo-format)"
+msgid "Reject change"
+msgstr "Өзгерістен бас тарту"
+
+#: commands/ShowChangesCommand.cpp:53
+msgctxt "(qtundo-format)"
+msgid "Show Changes"
+msgstr "Өзгерістерді көрсету"
+
+#: commands/ShowChangesCommand.cpp:55
+msgctxt "(qtundo-format)"
+msgid "Hide Changes"
+msgstr "Өзгерістерді жасыру"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
 #. i18n: ectx: property (windowTitle), widget (QDialog, TableOfContentsConfigure)
@@ -571,11 +614,6 @@ msgstr "Орны:"
 msgid "Select"
 msgstr "Таңдау"
 
-#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
-#, kde-format
-msgid "Warning"
-msgstr "Ескерту"
-
 #: dialogs/CitationInsertionDialog.cpp:52
 #, kde-format
 msgid ""
@@ -584,6 +622,11 @@ msgid ""
 msgstr ""
 "Құжатта өзінде библиография аталымдары бар екен.\n"
 "Соны түзейсіз бе?"
+
+#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
+#, kde-format
+msgid "Warning"
+msgstr "Ескерту"
 
 #: dialogs/CitationInsertionDialog.cpp:67
 #: dialogs/CitationInsertionDialog.cpp:85
@@ -1011,6 +1054,13 @@ msgstr "Автоматты түрде тасымалдансын"
 #, kde-format
 msgid "Select Font"
 msgstr "Қаріпті таңдау"
+
+#: dialogs/FontDia.cpp:81
+#, fuzzy
+#| msgid "Font"
+msgctxt "(qtundo-format)"
+msgid "Font"
+msgstr "Қаріпі"
 
 #. i18n: ectx: property (text), widget (FormattingButton, addBibliography)
 #. i18n: ectx: property (windowTitle), widget (QDialog, InsertBibliographyDialog)
@@ -3005,20 +3055,40 @@ msgstr "мына бойынша"
 msgid "Press shift to not resize this"
 msgstr "Өлшемін өзгертпеу үшін shift-ті басыңыз"
 
+#: TextTool.cpp:950
+msgctxt "(qtundo-format)"
+msgid "Change Border Formatting"
+msgstr "Шегінің пішімін өзгерту"
+
+#: TextTool.cpp:1169
+msgctxt "(qtundo-format)"
+msgid "Cut"
+msgstr "Қиып алу"
+
+#: TextTool.cpp:1429
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr "Бағанның енін шақтау"
+
+#: TextTool.cpp:1472
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr "Жол биіктігін келтіру"
+
 #: TextTool.cpp:2245
 #, kde-format
 msgid "Table"
 msgstr "Кесте"
 
-#: TextTool.cpp:2604
-#, kde-format
-msgid "Key Press"
-msgstr "Пернені басу"
-
 #: TextTool.cpp:2604 TextTool.cpp:2609
 #, kde-format
 msgid "Autocorrection"
 msgstr "Автотүзету"
+
+#: TextTool.cpp:2604
+#, kde-format
+msgid "Key Press"
+msgstr "Пернені басу"
 
 #: TextTool.cpp:2894
 #, kde-format
@@ -4712,10 +4782,6 @@ msgstr "Мәтінді өңдеу"
 #~ msgid "Annotation Shape"
 #~ msgstr "Аңдатпасы:"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Accept change"
-#~ msgstr "Өзгерісті қабылдау"
-
 #, fuzzy
 #~| msgctxt "Disable Shrink To Fit"
 #~| msgid "Disable"
@@ -4729,34 +4795,6 @@ msgstr "Мәтінді өңдеу"
 #~ msgctxt "(qtundo-format) Enable Shrink To Fit"
 #~ msgid "Enable"
 #~ msgstr "Рұқсат ету"
-
-#~ msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
-#~ msgid "%1 Grow To Fit Width"
-#~ msgstr "%1 өсіріп енің шақтау "
-
-#~ msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
-#~ msgid "%1 Grow To Fit Height"
-#~ msgstr "%1 өсіріп биіктігін шақтау"
-
-#~ msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
-#~ msgid "%1 Shrink To Fit"
-#~ msgstr "%1 сыйғызып шақтау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List Level"
-#~ msgstr "Тізімдің деңгейін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reject change"
-#~ msgstr "Өзгерістен бас тарту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Show Changes"
-#~ msgstr "Өзгерістерді көрсету"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Hide Changes"
-#~ msgstr "Өзгерістерді жасыру"
 
 #, fuzzy
 #~| msgid "Ascending"
@@ -4799,12 +4837,6 @@ msgstr "Мәтінді өңдеу"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "This is a line of text whose format has been changed."
 #~ msgstr "Бұл пішімі өзгертілген мәтіннің жолы.."
-
-#, fuzzy
-#~| msgid "Font"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Font"
-#~ msgstr "Қаріпі"
 
 #, fuzzy
 #~| msgid "Normal"
@@ -6073,22 +6105,6 @@ msgstr "Мәтінді өңдеу"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Press shift to not resize this"
 #~ msgstr "Өлшемін өзгертпеу үшін shift-ті басыңыз"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Border Formatting"
-#~ msgstr "Шегінің пішімін өзгерту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Cut"
-#~ msgstr "Қиып алу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Adjust Column Width"
-#~ msgstr "Бағанның енін шақтау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Adjust Row Height"
-#~ msgstr "Жол биіктігін келтіру"
 
 #, fuzzy
 #~| msgid "Character"

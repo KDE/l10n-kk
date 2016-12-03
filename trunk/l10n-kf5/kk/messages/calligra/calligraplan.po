@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2013-07-04 01:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -477,16 +477,16 @@ msgstr ""
 "Бұл құжаттың синтаксис нұсқасы жоқ.\n"
 "Plan-да ашсаңыз ақпарат жоғалуы мүмкін."
 
-#: KPlatoXmlLoader.cpp:70
-#, kde-format
-msgid "File-Format Error"
-msgstr "Файл пішім қатесі"
-
 #: KPlatoXmlLoader.cpp:70 KPlatoXmlLoader.cpp:82 KPlatoXmlLoader.cpp:124
 #: kptmaindocument.cpp:209 kptmaindocument.cpp:496
 #, kde-format
 msgid "Continue"
 msgstr "Жалғастыру"
+
+#: KPlatoXmlLoader.cpp:70
+#, kde-format
+msgid "File-Format Error"
+msgstr "Файл пішім қатесі"
 
 #: KPlatoXmlLoader.cpp:79
 #, kde-format
@@ -1028,6 +1028,11 @@ msgstr "Дестеде сақтайтын ештеңе жоқ"
 msgid "Internal error, failed to insert file."
 msgstr "Ішкі қате, файлды енгізу жаңылысы."
 
+#: kptmaindocument.cpp:988
+msgctxt "(qtundo-format)"
+msgid "Insert project"
+msgstr "Жобаны ендіру"
+
 #: kptschedulesdocker.cpp:38
 #, kde-format
 msgid "Schedule Selector"
@@ -1376,6 +1381,12 @@ msgstr "Орындалуы"
 msgid "Reports"
 msgstr "Баянаттар"
 
+#: kptview.cpp:1682
+#, kde-format
+msgctxt "(qtundo-format) @info:status 1=schedule name"
+msgid "Calculate %1"
+msgstr "%1 жоспарын есептеу"
+
 #: kptview.cpp:1701
 #, kde-format
 msgid "Cannot baseline. The project is already baselined."
@@ -1385,6 +1396,46 @@ msgstr "Негізгідемесі құрылған жоқ. Жобаның не�
 #, kde-format
 msgid "This schedule is baselined. Do you want to remove the baseline?"
 msgstr "Жоспардың негіздемесі бар екен. Оны өшіргіңіз келе ме?"
+
+#: kptview.cpp:1710
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Reset baseline %1"
+msgstr "%1 жоспар негіздемесін ысырып тастау"
+
+#: kptview.cpp:1712
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Baseline %1"
+msgstr "%1 негіздемесі"
+
+#: kptview.cpp:1723
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Add schedule %1"
+msgstr "%1 жоспарын қосу"
+
+#: kptview.cpp:1732
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Delete schedule %1"
+msgstr "%1 жоспарын өшіру"
+
+#: kptview.cpp:1741
+#, kde-format
+msgctxt "(qtundo-format)"
+msgid "Move schedule %1"
+msgstr "%1 жоспарын жылжыту"
+
+#: kptview.cpp:1810
+msgctxt "(qtundo-format)"
+msgid "Add milestone"
+msgstr "Кезеңді қосу"
+
+#: kptview.cpp:1836
+msgctxt "(qtundo-format)"
+msgid "Add sub-milestone"
+msgstr "Ішкі кезеңді қосу"
 
 #: kptview.cpp:1877
 #, kde-format
@@ -1408,10 +1459,64 @@ msgid ""
 "schedule."
 msgstr "Жоспарланған тапсырма өшіріледі. Бұл жоспардың түгелдігін бұзады."
 
+#: kptview.cpp:2210 kptview.cpp:2214 kptview.cpp:2230 kptview.cpp:2254
+msgctxt "(qtundo-format)"
+msgid "Delete task"
+msgid_plural "Delete tasks"
+msgstr[0] "Тапсырмаларын өшіру"
+
 #: kptview.cpp:2249
 #, kde-format
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr "Тапсырма жоспарға кіргізілген. Бұл жоспардың түгелдігін бұзады."
+
+#: kptview.cpp:2273
+msgctxt "(qtundo-format)"
+msgid "Indent task"
+msgstr "Тапсырманы шегіндіру"
+
+#: kptview.cpp:2287
+msgctxt "(qtundo-format)"
+msgid "Unindent task"
+msgstr "Тапсырманы ілгерлету"
+
+#: kptview.cpp:2309
+msgctxt "(qtundo-format)"
+msgid "Move task up"
+msgstr "Тапсырманы жоғарлату"
+
+#: kptview.cpp:2330
+msgctxt "(qtundo-format)"
+msgid "Move task down"
+msgstr "Тапсырманы төмендету"
+
+#: kptview.cpp:2368
+msgctxt "(qtundo-format)"
+msgid "Add task dependency"
+msgstr "Тапсырма тәуелдігін қосу"
+
+#: kptview.cpp:2431
+msgctxt "(qtundo-format)"
+msgid "Delete task dependency"
+msgstr "Тапсырманың тәуелдігін жоқ қылу"
+
+#: kptview.cpp:2470 kptview.cpp:2531
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Delete resource"
+msgctxt "(qtundo-format)"
+msgid "Delete resource"
+msgid_plural "Delete resources"
+msgstr[0] "Ресурсын кетіру"
+
+#: kptview.cpp:2475 kptview.cpp:2533
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Delete resourcegroup"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroup"
+msgid_plural "Delete resourcegroups"
+msgstr[0] "Ресурс тобын кетіру"
 
 #: kptview.cpp:2484 kptview.cpp:2492
 #, kde-format
@@ -1420,11 +1525,53 @@ msgid ""
 "schedule."
 msgstr "Жоспарланған ресурс өшіріледі. Бұл жоспардың түгелдігін бұзады."
 
+#: kptview.cpp:2529
+#, fuzzy
+#| msgid "Delete resourcegroups and resources"
+msgctxt "(qtundo-format)"
+msgid "Delete resourcegroups and resources"
+msgstr "Ресурс тобымен ресурсты жоқ қылу"
+
 #: kptview.cpp:2701
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "Мына файл ашылмады:<br/><filename>%1</filename>"
+
+#: kptview.cpp:2810
+#, fuzzy
+#| msgid "Modify name"
+msgctxt "(qtundo-format)"
+msgid "Modify name"
+msgstr "Атауын өзгерту"
+
+#: kptview.cpp:2812
+#, fuzzy
+#| msgid "Modify task name"
+msgctxt "(qtundo-format)"
+msgid "Modify task name"
+msgstr "Файл атауын өзгерту"
+
+#: kptview.cpp:2813
+#, fuzzy
+#| msgid "Modify milestone name"
+msgctxt "(qtundo-format)"
+msgid "Modify milestone name"
+msgstr "Кезеңнің атауын өзгерту"
+
+#: kptview.cpp:2814
+#, fuzzy
+#| msgid "Modify summarytask name"
+msgctxt "(qtundo-format)"
+msgid "Modify summarytask name"
+msgstr "Қортынды тапсырма атауын өзгерту"
+
+#: kptview.cpp:2815
+#, fuzzy
+#| msgid "Modify project name"
+msgctxt "(qtundo-format)"
+msgid "Modify project name"
+msgstr "Жобаның атауын өзгерту"
 
 #: kptview.cpp:2901
 #, kde-kuit-format
@@ -3133,10 +3280,6 @@ msgstr "Сақтайтын URL:"
 #~ msgid "Internal error, failed to insert file."
 #~ msgstr "Ішкі қате, файлды енгізу жаңылысы."
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert project"
-#~ msgstr "Жобаны ендіру"
-
 #, fuzzy
 #~| msgid "Schedule Selector"
 #~ msgctxt "(qtundo-format)"
@@ -3552,10 +3695,6 @@ msgstr "Сақтайтын URL:"
 #~ msgid "Reports"
 #~ msgstr "Баянаттар"
 
-#~ msgctxt "(qtundo-format) @info:status 1=schedule name"
-#~ msgid "Calculate %1"
-#~ msgstr "%1 жоспарын есептеу"
-
 #, fuzzy
 #~| msgid "Cannot baseline. The project is already baselined."
 #~ msgctxt "(qtundo-format)"
@@ -3567,34 +3706,6 @@ msgstr "Сақтайтын URL:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "This schedule is baselined. Do you want to remove the baseline?"
 #~ msgstr "Жоспардың негіздемесі бар екен. Оны өшіргіңіз келе ме?"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reset baseline %1"
-#~ msgstr "%1 жоспар негіздемесін ысырып тастау"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Baseline %1"
-#~ msgstr "%1 негіздемесі"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add schedule %1"
-#~ msgstr "%1 жоспарын қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete schedule %1"
-#~ msgstr "%1 жоспарын өшіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move schedule %1"
-#~ msgstr "%1 жоспарын жылжыту"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add milestone"
-#~ msgstr "Кезеңді қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add sub-milestone"
-#~ msgstr "Ішкі кезеңді қосу"
 
 #, fuzzy
 #~| msgid "Task Defaults"
@@ -3624,56 +3735,11 @@ msgstr "Сақтайтын URL:"
 #~ "schedule."
 #~ msgstr "Жоспарланған тапсырма өшіріледі. Бұл жоспардың түгелдігін бұзады."
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task"
-#~ msgid_plural "Delete tasks"
-#~ msgstr[0] "Тапсырмаларын өшіру"
-
 #, fuzzy
 #~| msgid "This task has been scheduled. This will invalidate the schedule."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "This task has been scheduled. This will invalidate the schedule."
 #~ msgstr "Тапсырма жоспарға кіргізілген. Бұл жоспардың түгелдігін бұзады."
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Indent task"
-#~ msgstr "Тапсырманы шегіндіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Unindent task"
-#~ msgstr "Тапсырманы ілгерлету"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move task up"
-#~ msgstr "Тапсырманы жоғарлату"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Move task down"
-#~ msgstr "Тапсырманы төмендету"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add task dependency"
-#~ msgstr "Тапсырма тәуелдігін қосу"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete task dependency"
-#~ msgstr "Тапсырманың тәуелдігін жоқ қылу"
-
-#, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Delete resource"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resource"
-#~ msgid_plural "Delete resources"
-#~ msgstr[0] "Ресурсын кетіру"
-
-#, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Delete resourcegroup"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resourcegroup"
-#~ msgid_plural "Delete resourcegroups"
-#~ msgstr[0] "Ресурс тобын кетіру"
 
 #, fuzzy
 #~| msgid ""
@@ -3686,47 +3752,11 @@ msgstr "Сақтайтын URL:"
 #~ msgstr "Жоспарланған ресурс өшіріледі. Бұл жоспардың түгелдігін бұзады."
 
 #, fuzzy
-#~| msgid "Delete resourcegroups and resources"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete resourcegroups and resources"
-#~ msgstr "Ресурс тобымен ресурсты жоқ қылу"
-
-#, fuzzy
 #~| msgctxt "@info"
 #~| msgid "Cannot open file:<br/><filename>%1</filename>"
 #~ msgctxt "(qtundo-format) @info"
 #~ msgid "Cannot open file:<br/><filename>%1</filename>"
 #~ msgstr "Мына файл ашылмады:<br/><filename>%1</filename>"
-
-#, fuzzy
-#~| msgid "Modify name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify name"
-#~ msgstr "Атауын өзгерту"
-
-#, fuzzy
-#~| msgid "Modify task name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify task name"
-#~ msgstr "Файл атауын өзгерту"
-
-#, fuzzy
-#~| msgid "Modify milestone name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify milestone name"
-#~ msgstr "Кезеңнің атауын өзгерту"
-
-#, fuzzy
-#~| msgid "Modify summarytask name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify summarytask name"
-#~ msgstr "Қортынды тапсырма атауын өзгерту"
-
-#, fuzzy
-#~| msgid "Modify project name"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify project name"
-#~ msgstr "Жобаның атауын өзгерту"
 
 #, fuzzy
 #~| msgctxt "@info:status"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2013-09-30 04:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -95,6 +95,26 @@ msgstr "Айнымалы"
 #, kde-format
 msgid "&Tools"
 msgstr "Құ&ралдар"
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "Бет стилін орнату"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "Бет стилін ендіру"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "Беттің қасиеттері"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+msgctxt "(qtundo-format)"
+msgid "Create shape"
+msgstr "Қалыпты құру"
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
 #, kde-format
@@ -367,6 +387,11 @@ msgstr "Мәтіннің айнала өтуі"
 msgid "Connect Text Frames"
 msgstr "Мәтін фреймдердің байланысы"
 
+#: part/dialogs/KWFrameDialog.cpp:79
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Қалып қасиеттерін өзгерту"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -520,15 +545,20 @@ msgstr "Егізін құру"
 msgid "Delete"
 msgstr "Өшіру"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, kde-format
-msgid "Clone Page Style"
-msgstr "Бет стилінің егізін құру"
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
+msgstr "Беттің стилін өзгерту"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr "Жаңа құрылатын бет стилінің атауы:"
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, kde-format
+msgid "Clone Page Style"
+msgstr "Бет стилінің егізін құру"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -644,15 +674,15 @@ msgid "Navigation"
 msgstr ""
 
 #: part/dockers/KWNavigationWidget.cpp:108
-#, kde-format
-msgid "Section"
-msgstr ""
-
-#: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
 #| msgid "&Page"
 msgid "Page #"
 msgstr "&Бетті"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, kde-format
+msgid "Section"
+msgstr ""
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1056,31 +1086,31 @@ msgstr "Мәтін өңдеуші"
 msgid "Copyright 1998-%1, The Words Team"
 msgstr "(c) 1998-2013, Words тобы"
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr "Pierre Ducroquet"
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
 msgstr "Жетілдірушінің бірі"
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
+msgstr "Pierre Ducroquet"
 
 #: part/KWAboutData.h:46
 #, kde-format
 msgid "C. Boemann"
 msgstr "C. Boemann"
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr "Sebastian Sauer"
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
 msgstr "Барлығы"
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
+msgstr "Sebastian Sauer"
 
 #: part/KWAboutData.h:48
 #, kde-format
@@ -1094,23 +1124,18 @@ msgstr "Pierre Stirnweiss"
 
 #: part/KWAboutData.h:50
 #, kde-format
-msgid "Inge Wallin"
-msgstr "Inge Wallin"
+msgid "Formatting stuff"
+msgstr "Пішімдеуі"
 
 #: part/KWAboutData.h:50
 #, kde-format
-msgid "Formatting stuff"
-msgstr "Пішімдеуі"
+msgid "Inge Wallin"
+msgstr "Inge Wallin"
 
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
 msgstr "Thorsten Zachmann"
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
-msgstr "Matus Uzak"
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
 #: part/KWAboutData.h:60 part/KWAboutData.h:72 part/KWAboutData.h:73
@@ -1121,15 +1146,20 @@ msgstr "Matus Uzak"
 msgid "Filter"
 msgstr "Сүзгі"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
-msgstr "Pavol Korinek"
+msgid "Matus Uzak"
+msgstr "Matus Uzak"
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
 msgstr "Пішімі мен бояуы"
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
+msgstr "Pavol Korinek"
 
 #: part/KWAboutData.h:54
 #, kde-format
@@ -1153,13 +1183,13 @@ msgstr "Астылық пен соңғылық сілтемелері"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
-msgstr "Smit Patel"
+msgid "Bibliography"
+msgstr "Библиография тізімі"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
-msgstr "Библиография тізімі"
+msgid "Smit Patel"
+msgstr "Smit Patel"
 
 #: part/KWAboutData.h:57
 #, kde-format
@@ -1243,13 +1273,13 @@ msgstr "Nash Hoogwater"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
-msgstr "Ulrich Kuettler"
+msgid "KFormula"
+msgstr "KFormula"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
-msgstr "KFormula"
+msgid "Ulrich Kuettler"
+msgstr "Ulrich Kuettler"
 
 #: part/KWAboutData.h:72
 #, kde-format
@@ -2307,22 +2337,6 @@ msgstr "Басқа мәтін"
 #~ msgid "&Tools"
 #~ msgstr "Құ&ралдар"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "Бет стилін орнату"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "Бет стилін ендіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "Беттің қасиеттері"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Қалыпты құру"
-
 #, fuzzy
 #~| msgid "Baseline"
 #~ msgctxt "(qtundo-format)"
@@ -2468,10 +2482,6 @@ msgstr "Басқа мәтін"
 #~ msgid "Connect Text Frames"
 #~ msgstr "Мәтін фреймдердің байланысы"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "Қалып қасиеттерін өзгерту"
-
 #, fuzzy
 #~| msgid "Columns"
 #~ msgctxt "(qtundo-format)"
@@ -2495,10 +2505,6 @@ msgstr "Басқа мәтін"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "Өшіру"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "Беттің стилін өзгерту"
 
 #, fuzzy
 #~| msgid "Add a new page style with the name:"
