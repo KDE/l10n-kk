@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-01-09 03:49+0100\n"
+"POT-Creation-Date: 2017-01-10 07:47+0100\n"
 "PO-Revision-Date: 2013-11-17 02:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1879,15 +1879,24 @@ msgstr "Қ&осалқы кодтамасы:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
 #: dialogs/opensaveconfigwidget.ui:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This defines the fallback encoding to try for opening files if neither "
+#| "the encoding chosen as standard above, nor the encoding specified in the "
+#| "open/save dialog, nor the encoding specified on command line match the "
+#| "content of the file.  Before this is used, an attempt will be made to "
+#| "determine the encoding to use by looking for a byte order marker at start "
+#| "of file: if one is found, the right unicode encoding will be chosen; "
+#| "otherwise encoding detection will run, if both fail fallback encoding "
+#| "will be tried."
 msgid ""
 "This defines the fallback encoding to try for opening files if neither the "
 "encoding chosen as standard above, nor the encoding specified in the open/"
 "save dialog, nor the encoding specified on command line match the content of "
 "the file.  Before this is used, an attempt will be made to determine the "
-"encoding to use by looking for a byte order marker at start of file: if one "
-"is found, the right unicode encoding will be chosen; otherwise encoding "
-"detection will run, if both fail fallback encoding will be tried."
+"encoding to use by looking for a byte order mark at start of file: if one is "
+"found, the right Unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail the fallback encoding will be tried."
 msgstr ""
 "Жоғарда стандартты кодтамасы таңдалмаған, не ашу/сақтау диалогында "
 "келтірілмесе, не команда жолында келтірілгені файлдың мазмұнына сәйкес "
@@ -1938,11 +1947,16 @@ msgstr "Жол аяқтау түрі авт&обайқау"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
 #: dialogs/opensaveconfigwidget.ui:115
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The byte order mark is a special sequence at the beginning of unicode "
+#| "encoded documents. It helps editors to open text documents with the "
+#| "correct unicode encoding. The byte order mark is not visible in the "
+#| "displayed document."
 msgid ""
-"The byte order mark is a special sequence at the beginning of unicode "
+"The byte order mark is a special sequence at the beginning of Unicode "
 "encoded documents. It helps editors to open text documents with the correct "
-"unicode encoding. The byte order mark is not visible in the displayed "
+"Unicode encoding. The byte order mark is not visible in the displayed "
 "document."
 msgstr ""
 "Байт реті маркері деген юникодта жазылған файлдың басындағы арнаулы байт "
@@ -1951,8 +1965,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
 #: dialogs/opensaveconfigwidget.ui:118
-#, kde-format
-msgid "Enable byte order marker"
+#, fuzzy, kde-format
+#| msgid "Enable byte order marker"
+msgid "Enable byte order mark (BOM)"
 msgstr "Байт реті маркері болсын"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2335,9 +2350,12 @@ msgid "Possible Data Loss"
 msgstr "Деректердің жоғалуы мүмкін"
 
 #: document/katedocument.cpp:2360
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The selected encoding cannot encode every unicode character in this "
+#| "document. Do you really want to save it? There could be some data lost."
 msgid ""
-"The selected encoding cannot encode every unicode character in this "
+"The selected encoding cannot encode every Unicode character in this "
 "document. Do you really want to save it? There could be some data lost."
 msgstr ""
 "Қолданыстағы кодтамада осы құжаттағы кейбір UNICODE таңбалары жоқ. Шынымен "
@@ -3150,7 +3168,7 @@ msgstr ""
 msgid "Marker Colors"
 msgstr "Маркер түстері"
 
-#: schema/kateschemaconfig.cpp:206 view/kateviewhelpers.cpp:1337
+#: schema/kateschemaconfig.cpp:206 view/kateviewhelpers.cpp:1342
 #, kde-format
 msgid "Bookmark"
 msgstr "Бетбелгі"
@@ -6036,9 +6054,11 @@ msgid "Enable block selection mode."
 msgstr "Блокті таңдау режімін рұқсат ету. "
 
 #: variableeditor/variablelineedit.cpp:164
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "short translation please"
+#| msgid "Enable the byte order marker when saving unicode files."
 msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
+msgid "Enable the byte order mark (BOM) when saving Unicode files."
 msgstr "Юникодтағы файлды сақтағанда байт реті маркерін рұқсат ету."
 
 #: variableeditor/variablelineedit.cpp:169
@@ -6985,9 +7005,12 @@ msgid "Add &Byte Order Mark (BOM)"
 msgstr "&Байт реті маркерін (БРМ) қосу"
 
 #: view/kateview.cpp:792
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded "
+#| "files while saving"
 msgid ""
-"Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded files "
+"Enable/disable adding of byte order marks for UTF-8/UTF-16 encoded files "
 "while saving"
 msgstr ""
 "Құжаттарды сақтау кезінде қолданылатын, кодтамасы UTF-8/UTF-16 файлдарға "
@@ -7369,18 +7392,18 @@ msgid "Export File as HTML"
 msgstr "HTML түрінде экспорттау"
 
 #: view/kateviewhelpers.cpp:213 view/kateviewhelpers.cpp:260
-#: view/kateviewhelpers.cpp:836
+#: view/kateviewhelpers.cpp:841
 #, kde-format
 msgctxt "from line - to line"
 msgid "<center>%1<br/>&#x2014;<br/>%2</center>"
 msgstr "<center>%1<br/>&#x2014;<br/>%2</center>"
 
-#: view/kateviewhelpers.cpp:1010
+#: view/kateviewhelpers.cpp:1015
 #, kde-format
 msgid "Available Commands"
 msgstr "Қолдануға болатын командалар"
 
-#: view/kateviewhelpers.cpp:1012
+#: view/kateviewhelpers.cpp:1017
 #, kde-format
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
@@ -7389,17 +7412,17 @@ msgstr ""
 "<p>Жеке бір команда туралы анықтаманы алу үшін <code>'help  &lt;"
 "команда&gt;'</code> деп жазыңыз.</p>"
 
-#: view/kateviewhelpers.cpp:1020
+#: view/kateviewhelpers.cpp:1025
 #, kde-format
 msgid "No help for '%1'"
 msgstr "'%1' туралы анықтама жоқ"
 
-#: view/kateviewhelpers.cpp:1023
+#: view/kateviewhelpers.cpp:1028
 #, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "<b>%1</b> деген команда жоқ"
 
-#: view/kateviewhelpers.cpp:1029
+#: view/kateviewhelpers.cpp:1034
 #, kde-format
 msgid ""
 "<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
@@ -7412,37 +7435,37 @@ msgstr ""
 "list</b></code> деп жазыңыз.<br />Жеке бір команда туралы анықтаманы алу "
 "үшін <code>'help &lt;команда&gt;'</code> деп жазыңыз.</p>"
 
-#: view/kateviewhelpers.cpp:1115 vimode/emulatedcommandbar/commandmode.cpp:222
+#: view/kateviewhelpers.cpp:1120 vimode/emulatedcommandbar/commandmode.cpp:222
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "Бұндай команда жоқ: \"%1\""
 
-#: view/kateviewhelpers.cpp:1119 vimode/emulatedcommandbar/commandmode.cpp:203
+#: view/kateviewhelpers.cpp:1124 vimode/emulatedcommandbar/commandmode.cpp:203
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr "Қате: \"%1\" командасында ауықым келтірілмейді."
 
-#: view/kateviewhelpers.cpp:1130 vimode/emulatedcommandbar/commandmode.cpp:208
+#: view/kateviewhelpers.cpp:1135 vimode/emulatedcommandbar/commandmode.cpp:208
 #, kde-format
 msgid "Success: "
 msgstr "Сәтті болғаны: "
 
-#: view/kateviewhelpers.cpp:1144 vimode/emulatedcommandbar/commandmode.cpp:217
+#: view/kateviewhelpers.cpp:1149 vimode/emulatedcommandbar/commandmode.cpp:217
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "\"%1\" командасының қатесі."
 
-#: view/kateviewhelpers.cpp:2227 view/kateviewhelpers.cpp:2228
+#: view/kateviewhelpers.cpp:2232 view/kateviewhelpers.cpp:2233
 #, kde-format
 msgid "Mark Type %1"
 msgstr "Белгі түрі %1"
 
-#: view/kateviewhelpers.cpp:2250
+#: view/kateviewhelpers.cpp:2255
 #, kde-format
 msgid "Set Default Mark Type"
 msgstr "Әдеттегі белгі түрін орнату"
 
-#: view/kateviewhelpers.cpp:2309
+#: view/kateviewhelpers.cpp:2314
 #, kde-format
 msgid "Disable Annotation Bar"
 msgstr "Аңдатпа панелін жасыру"

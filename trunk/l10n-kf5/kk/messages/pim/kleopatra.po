@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-01-02 03:49+0100\n"
+"POT-Creation-Date: 2017-01-10 08:11+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -3452,31 +3452,32 @@ msgid "Verifying checksums (%2) in %1"
 msgstr "%1 ішіндегі бақылау қосындысын тексеру (%2)"
 
 #: src/dialogs/adduseriddialog.cpp:71
+#: src/dialogs/certificatedetailswidget.cpp:104
 #: src/newcertificatewizard/newcertificatewizard.cpp:1187
 #, kde-format
 msgid "Name"
 msgstr "Атауы"
 
-#: src/dialogs/adduseriddialog.cpp:74
+#: src/dialogs/adduseriddialog.cpp:73
 #: src/newcertificatewizard/newcertificatewizard.cpp:1190
 #, kde-format
 msgid "Comment"
 msgstr "Түсініктемесі"
 
-#: src/dialogs/adduseriddialog.cpp:77
+#: src/dialogs/adduseriddialog.cpp:75
 #: src/newcertificatewizard/newcertificatewizard.cpp:1193
 #, kde-format
 msgid "EMail"
 msgstr "Эл.поштасы"
 
-#: src/dialogs/adduseriddialog.cpp:93
+#: src/dialogs/adduseriddialog.cpp:91
 #: src/newcertificatewizard/newcertificatewizard.cpp:1209
 #, kde-format
 msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: src/dialogs/adduseriddialog.cpp:125
+#: src/dialogs/adduseriddialog.cpp:123
 #: src/newcertificatewizard/newcertificatewizard.cpp:1314
 #, kde-format
 msgctxt "interpunctation for labels"
@@ -3485,7 +3486,7 @@ msgstr "%1:"
 
 #. i18n: ectx: property (text), widget (QLabel, nameRequiredLB)
 #. i18n: ectx: property (text), widget (QLabel, emailRequiredLB)
-#: src/dialogs/adduseriddialog.cpp:127
+#: src/dialogs/adduseriddialog.cpp:125
 #: src/newcertificatewizard/enterdetailspage.ui:26
 #: src/newcertificatewizard/enterdetailspage.ui:43
 #: src/newcertificatewizard/newcertificatewizard.cpp:1316
@@ -3494,21 +3495,21 @@ msgid "(required)"
 msgstr "(қажетті)"
 
 #. i18n: ectx: property (text), widget (QLabel, commentRequiredLB)
-#: src/dialogs/adduseriddialog.cpp:127
+#: src/dialogs/adduseriddialog.cpp:125
 #: src/newcertificatewizard/enterdetailspage.ui:60
 #: src/newcertificatewizard/newcertificatewizard.cpp:1316
 #, kde-format
 msgid "(optional)"
 msgstr "(міндетті емес)"
 
-#: src/dialogs/adduseriddialog.cpp:303
+#: src/dialogs/adduseriddialog.cpp:301
 #: src/newcertificatewizard/newcertificatewizard.cpp:1490
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr "<interface>%1</interface> деген қажет, бірақ бос."
 
-#: src/dialogs/adduseriddialog.cpp:305
+#: src/dialogs/adduseriddialog.cpp:303
 #: src/newcertificatewizard/newcertificatewizard.cpp:1492
 #, kde-kuit-format
 msgctxt "@info"
@@ -3519,14 +3520,14 @@ msgstr ""
 "<interface>%1</interface> деген қажет, бірақ бос.<nl/>Әкімшінің ережесі: "
 "<icode>%2</icode>"
 
-#: src/dialogs/adduseriddialog.cpp:311
+#: src/dialogs/adduseriddialog.cpp:309
 #: src/newcertificatewizard/newcertificatewizard.cpp:1498
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr "<interface>%1</interface> толтырылмаған"
 
-#: src/dialogs/adduseriddialog.cpp:313
+#: src/dialogs/adduseriddialog.cpp:311
 #: src/newcertificatewizard/newcertificatewizard.cpp:1500
 #, kde-kuit-format
 msgctxt "@info"
@@ -3537,14 +3538,14 @@ msgstr ""
 "<interface>%1</interface> өрісі толтырылмаған.<nl/>Әкімшінің ережесі: <icode>"
 "%2</icode>"
 
-#: src/dialogs/adduseriddialog.cpp:318
+#: src/dialogs/adduseriddialog.cpp:316
 #: src/newcertificatewizard/newcertificatewizard.cpp:1505
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr "<interface>%1</interface> дұрыс емес."
 
-#: src/dialogs/adduseriddialog.cpp:320
+#: src/dialogs/adduseriddialog.cpp:318
 #: src/newcertificatewizard/newcertificatewizard.cpp:1507
 #, kde-kuit-format
 msgctxt "@info"
@@ -3566,190 +3567,247 @@ msgstr "Жаңа пайдаланушы ID-ін қосу"
 msgid "This is how the new User-ID will be stored in the certificate:"
 msgstr "Жаңа пайдаланушы ID-і куәлікте қалай сақталады:"
 
-#: src/dialogs/certificatedetailsdialog.cpp:288
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"<para>An error occurred while loading the certifications: <message>%1</"
-"message></para>"
+#: src/dialogs/certificatedetailswidget.cpp:98
+#, fuzzy, kde-format
+#| msgid "Never"
+msgctxt "Expires"
+msgid "never"
+msgstr "Ешқашанда"
+
+#: src/dialogs/certificatedetailswidget.cpp:104
+#, kde-format
+msgid "Email"
+msgstr "Эл.поштасы"
+
+#: src/dialogs/certificatedetailswidget.cpp:106
+#, fuzzy, kde-format
+#| msgid "Newly revoked:"
+msgid "Trust Level"
+msgstr "Жаңа күші жойылған:"
+
+#: src/dialogs/certificatedetailswidget.cpp:152
+#, kde-format
+msgid "Revoke this User ID"
 msgstr ""
-"<para>Куәліктерді жүктеп алу кезінде қате пайда болды: <message>%1</"
-"message></para>"
 
-#: src/dialogs/certificatedetailsdialog.cpp:291
+#: src/dialogs/certificatedetailswidget.cpp:235
+#, fuzzy, kde-format
+#| msgid "Certify..."
+msgid "Certify ..."
+msgstr "Растау..."
+
+#: src/dialogs/certificatedetailswidget.cpp:288
+#, fuzzy, kde-format
+#| msgid "Never"
+msgid "never"
+msgstr "Ешқашанда"
+
+#. i18n: ectx: property (text), widget (QCheckBox, signingCB)
+#: src/dialogs/certificatedetailswidget.cpp:290
+#: src/newcertificatewizard/advancedsettingsdialog.ui:206
 #, kde-format
-msgctxt "@title"
-msgid "Certifications Loading Failed"
-msgstr "Куәліктерді жүктеу жаңылысы"
+msgid "Signing"
+msgstr "Қолтаңбалау"
 
-#: src/dialogs/certificatedetailsdialog.cpp:319
+#: src/dialogs/certificatedetailswidget.cpp:291
+#: src/dialogs/certificatedetailswidget.cpp:295
 #, kde-format
-msgid "Please wait while generating the dump..."
-msgstr "Дамп-хаттамасы жазылғанын күте тұрыңыз..."
+msgid "First message"
+msgstr ""
 
-#: src/dialogs/certificatedetailsdialog.cpp:425
+#: src/dialogs/certificatedetailswidget.cpp:292
+#: src/dialogs/certificatedetailswidget.cpp:296
 #, kde-format
-msgid "Issuer Certificate Not Found (%1)"
-msgstr "Берушісінің куәлігі табылмады ( %1)"
+msgid "Last message"
+msgstr ""
 
-#: src/dialogs/certificatedetailsdialog.cpp:480
+#: src/dialogs/certificatedetailswidget.cpp:293
+#: src/dialogs/certificatedetailswidget.cpp:297
+#, fuzzy, kde-format
+#| msgid "Message #%1"
+msgid "Message count"
+msgstr "#%1 хабарлама"
+
+#. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
+#: src/dialogs/certificatedetailswidget.cpp:294
+#: src/newcertificatewizard/advancedsettingsdialog.ui:216
 #, kde-format
-msgctxt "@title"
-msgid "Subkeys"
-msgstr "Ішкі кілттер"
+msgid "Encryption"
+msgstr "Шифрлау"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsDialog)
-#: src/dialogs/certificatedetailsdialog.ui:14
+#: src/dialogs/certificatedetailswidget.cpp:337
+#, kde-format
+msgctxt "<name> of <company>"
+msgid "%1 of %2"
+msgstr ""
+
+#: src/dialogs/certificatedetailswidget.cpp:372
+#, kde-format
+msgid "Common Name"
+msgstr "Аты-жөні"
+
+#: src/dialogs/certificatedetailswidget.cpp:373
+#, kde-format
+msgid "Organization"
+msgstr "Ұйымы"
+
+#: src/dialogs/certificatedetailswidget.cpp:374
+#, fuzzy, kde-format
+#| msgid "Strength"
+msgid "Street"
+msgstr "Мықтылығы"
+
+#: src/dialogs/certificatedetailswidget.cpp:375
+#, kde-format
+msgid "City"
+msgstr ""
+
+#: src/dialogs/certificatedetailswidget.cpp:376
+#, fuzzy, kde-format
+#| msgid "Status"
+msgid "State"
+msgstr "Күйі"
+
+#: src/dialogs/certificatedetailswidget.cpp:377
+#, kde-format
+msgid "Country"
+msgstr "Елі"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CertificateDetailsWidget)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/dialogs/certificatedetailswidget.cpp:437
+#: src/dialogs/certificatedetailswidget.ui:14
+#: src/dialogs/certificatedetailswidget.ui:46
 #: src/view/keylistcontroller.cpp:431
 #, kde-format
 msgid "Certificate Details"
 msgstr "Куәліктің егжей-тегжейі"
 
-#. i18n: ectx: attribute (title), widget (QWidget, overviewTab)
-#: src/dialogs/certificatedetailsdialog.ui:33
-#, kde-format
-msgid "Overview"
-msgstr "Шолу"
+#. i18n: ectx: property (text), widget (QPushButton, addUserIDBtn)
+#: src/dialogs/certificatedetailswidget.ui:32
+#, fuzzy, kde-format
+#| msgid "Add. Email Address:"
+msgid "&Add email address"
+msgstr "Қосымша эл.поштасы:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, overviewActionsGB)
-#: src/dialogs/certificatedetailsdialog.ui:39
+#. i18n: ectx: property (text), widget (QPushButton, trustChainDetailsBtn)
+#: src/dialogs/certificatedetailswidget.ui:39
 #, kde-format
-msgid "Actions"
-msgstr "Әрекеттер"
+msgid "Trust chain &details..."
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, changePassphrasePB)
-#: src/dialogs/certificatedetailsdialog.ui:45
-#: src/view/keylistcontroller.cpp:460
+#. i18n: ectx: property (text), widget (QLabel, expiresLbl)
+#: src/dialogs/certificatedetailswidget.ui:61
+#, fuzzy, kde-format
+#| msgid "expired"
+msgid "Expires:"
+msgstr "ескірген"
+
+#. i18n: ectx: property (text), widget (QLabel, smimeIssuer)
+#. i18n: ectx: property (text), widget (QLabel, type)
+#. i18n: ectx: property (text), widget (QLabel, fingerprint)
+#. i18n: ectx: property (text), widget (QLabel, smimeOwner)
+#. i18n: ectx: property (text), widget (QLabel, stored)
+#: src/dialogs/certificatedetailswidget.ui:68
+#: src/dialogs/certificatedetailswidget.ui:129
+#: src/dialogs/certificatedetailswidget.ui:190
+#: src/dialogs/certificatedetailswidget.ui:271 src/dialogs/subkeyswidget.ui:83
+#, fuzzy, kde-format
+#| msgctxt "unknown trust level"
+#| msgid "unknown"
+msgid "unknown"
+msgstr "беймәлім"
+
+#. i18n: ectx: property (text), widget (QPushButton, moreDetailsBtn)
+#: src/dialogs/certificatedetailswidget.ui:81
+#, fuzzy, kde-format
+#| msgid "Details..."
+msgid "&More details..."
+msgstr "Егжей-тегжейлер..."
+
+#. i18n: ectx: property (text), widget (QLabel, expires)
+#. i18n: ectx: property (text), widget (QLabel, validFrom)
+#: src/dialogs/certificatedetailswidget.ui:90
+#: src/dialogs/certificatedetailswidget.ui:146
 #, kde-format
-msgid "Change Passphrase..."
+msgid "00/00/00"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, changeExpirationBtn)
+#: src/dialogs/certificatedetailswidget.ui:100
+#, fuzzy, kde-format
+#| msgid "Change Passphrase..."
+msgid "Change"
 msgstr "Паролін өзгерту..."
 
-#. i18n: ectx: property (text), widget (QPushButton, changeTrustLevelPB)
-#: src/dialogs/certificatedetailsdialog.ui:55
-#, kde-format
-msgid "Trust Certifications Made by This Certificate..."
-msgstr "Осы куәліктің растауына сенім арту..."
+#. i18n: ectx: property (text), widget (QLabel, validFromLbl)
+#: src/dialogs/certificatedetailswidget.ui:122
+#, fuzzy, kde-format
+#| msgid "Valid From"
+msgid "Valid from:"
+msgstr "Жарамдылықтың басталуы"
 
-#. i18n: ectx: property (text), widget (QPushButton, changeExpiryDatePB)
-#: src/dialogs/certificatedetailsdialog.ui:65
-#: src/view/keylistcontroller.cpp:444
-#, kde-format
-msgid "Change Expiry Date..."
-msgstr "Мерзімін өзгерту..."
+#. i18n: ectx: property (text), widget (QLabel, fingerprintLbl)
+#: src/dialogs/certificatedetailswidget.ui:139
+#, fuzzy, kde-format
+#| msgid "Fingerprint"
+msgid "Fingerprint:"
+msgstr "Бақылау тізбегі"
 
-#. i18n: ectx: property (text), widget (QPushButton, revokeCertificatePB)
-#: src/dialogs/certificatedetailsdialog.ui:75
-#, kde-format
-msgid "Revoke This Certificate..."
-msgstr "Осы куәліктің күшін жою..."
+#. i18n: ectx: property (text), widget (QLabel, smimeIssuerLbl)
+#: src/dialogs/certificatedetailswidget.ui:156
+#, fuzzy, kde-format
+#| msgid "Issuer"
+msgid "Issuer:"
+msgstr "Берушісі"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: src/dialogs/certificatedetailsdialog.ui:123
+#. i18n: ectx: property (text), widget (QLabel, publishingLbl)
+#: src/dialogs/certificatedetailswidget.ui:163
 #, kde-format
-msgid "Photo"
-msgstr "Фотосуреті"
-
-#. i18n: ectx: property (text), widget (QLabel, photoLB)
-#: src/dialogs/certificatedetailsdialog.ui:133
-#, kde-format
-msgid ""
-"<p>At the moment, Kleopatra does not support photos in certificates. It has "
-"no support for adding, nor for displaying them. This is for the following "
-"reasons:</p>\n"
-"<ul>\n"
-"<li>Photos give a false sense of security.</li>\n"
-"<li>Photos increase the size of certificates.</li>\n"
-"</ul>"
+msgid "Publishing:"
 msgstr ""
-"<p>Қазіргі кезде Kleopatra куәлікте фотосурет болуын қолдамайды. Онің қосуын "
-"да, корсеуін де істемейді. Бұның себептері мынандай:</p>\n"
-"<ul>\n"
-"<li>Фотосурет жалған шындылық сезімін береді.</li>\n"
-"<li>Фотосурет куәліктің өлшемін өте ұлғайтады.</li>\n"
-"</ul>"
 
-#. i18n: ectx: attribute (title), widget (QWidget, certificationsTab)
-#: src/dialogs/certificatedetailsdialog.ui:150
+#. i18n: ectx: property (text), widget (QLabel, typeLbl)
+#: src/dialogs/certificatedetailswidget.ui:170
 #, kde-format
-msgid "User-IDs && Certifications"
-msgstr "Пайдарланушы ID-лері және растау"
+msgid "Type:"
+msgstr "Түрі:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, userIDsActionsGB)
-#: src/dialogs/certificatedetailsdialog.ui:170
-#, kde-format
-msgid "User-IDs"
-msgstr "Пайдарланушы ID-лері"
+#. i18n: ectx: property (text), widget (QPushButton, publishing)
+#: src/dialogs/certificatedetailswidget.ui:200
+#, fuzzy, kde-format
+#| msgid "Dump Certificate"
+msgid "Publish Certificate"
+msgstr "Куаліктің дампын жасау"
 
-#. i18n: ectx: property (text), widget (QPushButton, addUserIDPB)
-#: src/dialogs/certificatedetailsdialog.ui:176
-#, kde-format
-msgid "Add..."
-msgstr "Қосу..."
-
-#. i18n: ectx: property (text), widget (QPushButton, revokeUserIDPB)
-#. i18n: ectx: property (text), widget (QPushButton, revokeCertificationPB)
-#: src/dialogs/certificatedetailsdialog.ui:186
-#: src/dialogs/certificatedetailsdialog.ui:215
-#, kde-format
-msgid "Revoke..."
-msgstr "Күшін жою..."
-
-#. i18n: ectx: property (text), widget (QPushButton, certifyUserIDPB)
-#: src/dialogs/certificatedetailsdialog.ui:196
-#, kde-format
-msgid "Certify..."
-msgstr "Растау..."
-
-#. i18n: ectx: property (title), widget (QGroupBox, certificationsActionGB)
-#: src/dialogs/certificatedetailsdialog.ui:209
-#, kde-format
-msgid "Certifications"
-msgstr "Куәландыру"
-
-#. i18n: ectx: property (text), widget (QPushButton, expandAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:241 src/view/tabwidget.cpp:812
-#, kde-format
-msgid "Expand All"
-msgstr "Барлығын тарқату"
-
-#. i18n: ectx: property (text), widget (QPushButton, collapseAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:251 src/view/tabwidget.cpp:816
-#, kde-format
-msgid "Collapse All"
-msgstr "Барлығын бүктеу"
-
-#. i18n: ectx: attribute (title), widget (QWidget, detailsTab)
-#. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
-#: src/dialogs/certificatedetailsdialog.ui:266
-#: src/newcertificatewizard/advancedsettingsdialog.ui:21
-#, kde-format
-msgid "Technical Details"
-msgstr "Техникалық егжей-тегжейі"
-
-#. i18n: ectx: attribute (title), widget (QWidget, chainTab)
-#: src/dialogs/certificatedetailsdialog.ui:299
-#, kde-format
-msgid "Chain"
-msgstr "Тізбегі"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, chainTW)
-#: src/dialogs/certificatedetailsdialog.ui:312
-#, kde-format
-msgid "1"
-msgstr "1"
-
-#. i18n: ectx: attribute (title), widget (QWidget, dumpTab)
-#: src/dialogs/certificatedetailsdialog.ui:321
-#, kde-format
-msgid "Dump"
-msgstr "Дамп"
+#. i18n: ectx: property (text), widget (QPushButton, changePassphraseBtn)
+#: src/dialogs/certificatedetailswidget.ui:234
+#, fuzzy, kde-format
+#| msgid "Change Passphrase..."
+msgid "Change &passphrase"
+msgstr "Паролін өзгерту..."
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/dialogs/certificatedetailsdialog.ui:327
+#: src/dialogs/certificatedetailswidget.ui:241
 #, kde-format
 msgid ""
-"This is a dump of all information the backend has about this certificate:"
-msgstr "Осы куәлік туралы не мәлім - бүкілі жазылған дамп-хаттамасы:"
+"You can use this certificate to secure communication with the following "
+"email addresses:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, smimeOwnerLbl)
+#: src/dialogs/certificatedetailswidget.ui:251
+#, fuzzy, kde-format
+#| msgid "Ownertrust"
+msgid "Owner:"
+msgstr "Иесінің сенімділігі"
+
+#. i18n: ectx: property (text), widget (QLabel, smimeRelatedAddresses)
+#: src/dialogs/certificatedetailswidget.ui:264
+#, fuzzy, kde-format
+#| msgid "EMail address:"
+msgid "Related addresses:"
+msgstr "Эл.пошта адресі:"
 
 #: src/dialogs/certificateselectiondialog.cpp:112
 #, kde-format
@@ -4011,6 +4069,12 @@ msgstr[0] ""
 msgid "Secret Key Deletion"
 msgstr "Құпия кілтін өшіру"
 
+#: src/dialogs/expirydialog.cpp:148
+#, fuzzy, kde-format
+#| msgid "Change Expiry Date..."
+msgid "Change Expiry"
+msgstr "Мерзімін өзгерту..."
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
 #: src/dialogs/expirydialog.ui:14
 #, kde-format
@@ -4018,51 +4082,52 @@ msgid "Change Certificate Date of Expiry"
 msgstr "Куәліктін жарамдылық мерзімін өзерту"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/dialogs/expirydialog.ui:20
+#: src/dialogs/expirydialog.ui:32
 #, kde-format
 msgid "Please select when to expire this certificate:"
 msgstr "Куәлік ескіретін мерзімін таңдаңыз:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, neverRB)
-#: src/dialogs/expirydialog.ui:27
+#: src/dialogs/expirydialog.ui:39
 #, kde-format
-msgid "Never"
-msgstr "Ешқашанда"
+msgid "Ne&ver"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, inRB)
-#: src/dialogs/expirydialog.ui:39
+#: src/dialogs/expirydialog.ui:51
 #, kde-format
 msgid "In"
 msgstr "келесі арада:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:63
+#: src/dialogs/expirydialog.ui:75
 #, kde-format
 msgid "Days"
 msgstr "күн"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:68
+#: src/dialogs/expirydialog.ui:80
 #, kde-format
 msgid "Weeks"
 msgstr "апта"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:73
+#: src/dialogs/expirydialog.ui:85
 #, kde-format
 msgid "Months"
 msgstr "ай"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:78
+#: src/dialogs/expirydialog.ui:90
 #, kde-format
 msgid "Years"
 msgstr "жыл"
 
 #. i18n: ectx: property (text), widget (QRadioButton, onRB)
-#: src/dialogs/expirydialog.ui:101
-#, kde-format
-msgid "On this day:"
+#: src/dialogs/expirydialog.ui:113
+#, fuzzy, kde-format
+#| msgid "On this day:"
+msgid "On this da&y:"
 msgstr "Мынау күнде:"
 
 #: src/dialogs/exportcertificatesdialog.cpp:79
@@ -4554,6 +4619,100 @@ msgstr "2-қадам: Кепілденген (\"SigG) куәлігінің ба�
 #, kde-format
 msgid "Set Initial PIN (SigG)"
 msgstr "PIN-ің беру (SigG)"
+
+#: src/dialogs/subkeyswidget.cpp:75
+#, kde-format
+msgctxt "stored..."
+msgid "on SmartCard with serial no. %1"
+msgstr "Тізбекті № %1 смарт-картасында"
+
+#: src/dialogs/subkeyswidget.cpp:77
+#, kde-format
+msgctxt "stored..."
+msgid "on this computer"
+msgstr "Осы компьютерінде"
+
+#: src/dialogs/subkeyswidget.cpp:92
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Subkeys"
+msgid "Subkeys details"
+msgstr "Ішкі кілттер"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TrustChainWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, SubKeysWidget)
+#: src/dialogs/subkeyswidget.ui:14 src/dialogs/trustchainwidget.ui:14
+#, kde-format
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/dialogs/subkeyswidget.ui:32
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Subkeys"
+msgid "Subkeys:"
+msgstr "Ішкі кілттер"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:43
+#, kde-format
+msgid "ID"
+msgstr "ID"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:48
+#, kde-format
+msgid "Type"
+msgstr "Түрі"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:53
+#, kde-format
+msgid "Valid From"
+msgstr "Жарамдылықтың басталуы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:58
+#, kde-format
+msgid "Valid Until"
+msgstr "Жарамдылықтың аяқталуы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:63
+#, kde-format
+msgid "Status"
+msgstr "Күйі"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:68
+#, kde-format
+msgid "Strength"
+msgstr "Мықтылығы"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, subkeysTree)
+#: src/dialogs/subkeyswidget.ui:73
+#, kde-format
+msgid "Usage"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, storedLbl)
+#: src/dialogs/subkeyswidget.ui:90
+#, fuzzy, kde-format
+#| msgid "Stored"
+msgid "Stored:"
+msgstr " Қайда сақталған:"
+
+#: src/dialogs/trustchainwidget.cpp:75
+#, kde-format
+msgid "Issuer Certificate Not Found (%1)"
+msgstr "Берушісінің куәлігі табылмады ( %1)"
+
+#: src/dialogs/trustchainwidget.cpp:98
+#, fuzzy, kde-format
+#| msgid "Chain"
+msgid "Trust Chain"
+msgstr "Тізбегі"
 
 #. i18n: ectx: label, entry (QuickSignEMail), group (EMailOperations)
 #: src/kcfg/emailoperationspreferences.kcfg:10
@@ -5117,6 +5276,12 @@ msgstr "CRL-лерді импорттау..."
 msgid "Advanced Settings"
 msgstr "Жетелеп баптау"
 
+#. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
+#: src/newcertificatewizard/advancedsettingsdialog.ui:21
+#, kde-format
+msgid "Technical Details"
+msgstr "Техникалық егжей-тегжейі"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:27
 #, kde-format
@@ -5176,18 +5341,6 @@ msgstr "Қашанға дейін жарамды:"
 #, kde-format
 msgid "Certification"
 msgstr "Куәландыру"
-
-#. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/newcertificatewizard/advancedsettingsdialog.ui:206
-#, kde-format
-msgid "Signing"
-msgstr "Қолтаңбалау"
-
-#. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
-#: src/newcertificatewizard/advancedsettingsdialog.ui:216
-#, kde-format
-msgid "Encryption"
-msgstr "Шифрлау"
 
 #. i18n: ectx: property (text), widget (QCheckBox, authenticationCB)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:226
@@ -7062,6 +7215,11 @@ msgstr "Өшіру"
 msgid "Certify Certificate..."
 msgstr "Куәлікті растау..."
 
+#: src/view/keylistcontroller.cpp:444
+#, kde-format
+msgid "Change Expiry Date..."
+msgstr "Мерзімін өзгерту..."
+
 #: src/view/keylistcontroller.cpp:448
 #, kde-format
 msgid "Change Owner Trust..."
@@ -7076,6 +7234,11 @@ msgstr "Түбір куәлігін сенімді қылу"
 #, kde-format
 msgid "Distrust Root Certificate"
 msgstr "Түбір куәлігін сенімсіз қылу"
+
+#: src/view/keylistcontroller.cpp:460
+#, kde-format
+msgid "Change Passphrase..."
+msgstr "Паролін өзгерту..."
 
 #: src/view/keylistcontroller.cpp:464
 #, kde-format
@@ -7201,6 +7364,87 @@ msgstr "Оңға жылжыту"
 msgid "Hierarchical Certificate List"
 msgstr "Иерархиялық куәліктер тізімі"
 
+#: src/view/tabwidget.cpp:812
+#, kde-format
+msgid "Expand All"
+msgstr "Барлығын тарқату"
+
+#: src/view/tabwidget.cpp:816
+#, kde-format
+msgid "Collapse All"
+msgstr "Барлығын бүктеу"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "<para>An error occurred while loading the certifications: <message>%1</"
+#~ "message></para>"
+#~ msgstr ""
+#~ "<para>Куәліктерді жүктеп алу кезінде қате пайда болды: <message>%1</"
+#~ "message></para>"
+
+#~ msgctxt "@title"
+#~ msgid "Certifications Loading Failed"
+#~ msgstr "Куәліктерді жүктеу жаңылысы"
+
+#~ msgid "Please wait while generating the dump..."
+#~ msgstr "Дамп-хаттамасы жазылғанын күте тұрыңыз..."
+
+#~ msgid "Overview"
+#~ msgstr "Шолу"
+
+#~ msgid "Actions"
+#~ msgstr "Әрекеттер"
+
+#~ msgid "Trust Certifications Made by This Certificate..."
+#~ msgstr "Осы куәліктің растауына сенім арту..."
+
+#~ msgid "Revoke This Certificate..."
+#~ msgstr "Осы куәліктің күшін жою..."
+
+#~ msgid "Photo"
+#~ msgstr "Фотосуреті"
+
+#~ msgid ""
+#~ "<p>At the moment, Kleopatra does not support photos in certificates. It "
+#~ "has no support for adding, nor for displaying them. This is for the "
+#~ "following reasons:</p>\n"
+#~ "<ul>\n"
+#~ "<li>Photos give a false sense of security.</li>\n"
+#~ "<li>Photos increase the size of certificates.</li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "<p>Қазіргі кезде Kleopatra куәлікте фотосурет болуын қолдамайды. Онің "
+#~ "қосуын да, корсеуін де істемейді. Бұның себептері мынандай:</p>\n"
+#~ "<ul>\n"
+#~ "<li>Фотосурет жалған шындылық сезімін береді.</li>\n"
+#~ "<li>Фотосурет куәліктің өлшемін өте ұлғайтады.</li>\n"
+#~ "</ul>"
+
+#~ msgid "User-IDs && Certifications"
+#~ msgstr "Пайдарланушы ID-лері және растау"
+
+#~ msgid "User-IDs"
+#~ msgstr "Пайдарланушы ID-лері"
+
+#~ msgid "Add..."
+#~ msgstr "Қосу..."
+
+#~ msgid "Revoke..."
+#~ msgstr "Күшін жою..."
+
+#~ msgid "Certifications"
+#~ msgstr "Куәландыру"
+
+#~ msgid "1"
+#~ msgstr "1"
+
+#~ msgid "Dump"
+#~ msgstr "Дамп"
+
+#~ msgid ""
+#~ "This is a dump of all information the backend has about this certificate:"
+#~ msgstr "Осы куәлік туралы не мәлім - бүкілі жазылған дамп-хаттамасы:"
+
 #~ msgctxt "@info"
 #~ msgid "Could not connect to GpgAgent: <message>%1</message>"
 #~ msgstr "GpgAgent дегенге қосылуға болмайды: <message>%1</message>"
@@ -7289,26 +7533,8 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgid "E-Mail"
 #~ msgstr "Эл.пошта адресі"
 
-#~ msgid "Valid From"
-#~ msgstr "Жарамдылықтың басталуы"
-
-#~ msgid "Valid Until"
-#~ msgstr "Жарамдылықтың аяқталуы"
-
 #~ msgid "Key-ID"
 #~ msgstr "Кілт-ID"
-
-#~ msgid "ID"
-#~ msgstr "ID"
-
-#~ msgid "Type"
-#~ msgstr "Түрі"
-
-#~ msgid "Status"
-#~ msgstr "Күйі"
-
-#~ msgid "Strength"
-#~ msgstr "Мықтылығы"
 
 #~ msgid "<tr><th>%1:</th><td>%2</td></tr>"
 #~ msgstr "<tr><th>%1:</th><td>%2</td></tr>"
@@ -7352,9 +7578,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgid "Serial number"
 #~ msgstr "Тізбекті нөмірі"
 
-#~ msgid "Issuer"
-#~ msgstr "Берушісі"
-
 #~ msgid "Subject"
 #~ msgstr "Нысаны"
 
@@ -7379,12 +7602,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgid "Certificate usage"
 #~ msgstr "Куәлікті қолдануы"
 
-#~ msgid "Fingerprint"
-#~ msgstr "Бақылау тізбегі"
-
-#~ msgid "Ownertrust"
-#~ msgstr "Иесінің сенімділігі"
-
 #~ msgid "Trusted issuer?"
 #~ msgstr "Сенімді берушісі мә?"
 
@@ -7394,17 +7611,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgid "No"
 #~ msgstr "Жоқ"
 
-#~ msgid "Stored"
-#~ msgstr " Қайда сақталған:"
-
-#~ msgctxt "stored..."
-#~ msgid "on SmartCard with serial no. %1"
-#~ msgstr "Тізбекті № %1 смарт-картасында"
-
-#~ msgctxt "stored..."
-#~ msgid "on this computer"
-#~ msgstr "Осы компьютерінде"
-
 #~ msgctxt "X.509/CMS encryption standard"
 #~ msgid "X.509"
 #~ msgstr "X.509"
@@ -7412,10 +7618,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgctxt "Unknown encryption protocol"
 #~ msgid "Unknown"
 #~ msgstr "Беймәлім"
-
-#~ msgctxt "unknown trust level"
-#~ msgid "unknown"
-#~ msgstr "беймәлім"
 
 #~ msgid "untrusted"
 #~ msgstr "сенімсіз"
@@ -7438,9 +7640,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 
 #~ msgid "revoked"
 #~ msgstr "күші жойылған"
-
-#~ msgid "expired"
-#~ msgstr "ескірген"
 
 #~ msgid "disabled"
 #~ msgstr "бұғатталған"
@@ -7826,9 +8025,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 
 #~ msgid "Description:"
 #~ msgstr "Сипаттамасы:"
-
-#~ msgid "Type:"
-#~ msgstr "Түрі:"
 
 #~ msgid "Reset user settings to built-in default"
 #~ msgstr "Өзгерістерін өзінің әдетттегісіне ысыру"
@@ -8518,23 +8714,11 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~ msgid "Can be used for authentication"
 #~ msgstr "Аутентификациялауға жарамды"
 
-#~ msgid "Country"
-#~ msgstr "Елі"
-
 #~ msgid "Organizational Unit"
 #~ msgstr "Бөлімі"
 
-#~ msgid "Organization"
-#~ msgstr "Ұйымы"
-
 #~ msgid "Location"
 #~ msgstr "Орыны"
-
-#~ msgid "Common Name"
-#~ msgstr "Аты-жөні"
-
-#~ msgid "Email"
-#~ msgstr "Эл.поштасы"
 
 #~ msgid "A.k.a."
 #~ msgstr "Басқа аты"
@@ -8692,11 +8876,6 @@ msgstr "Иерархиялық куәліктер тізімі"
 #~| msgid "Save Certificate"
 #~ msgid "Change Trust in Certificate Owner"
 #~ msgstr "Куәлікті сақтау"
-
-#, fuzzy
-#~| msgid "Newly revoked:"
-#~ msgid "New trust level:"
-#~ msgstr "Жаңа күші жойылған:"
 
 #, fuzzy
 #~| msgid "New signatures:"
