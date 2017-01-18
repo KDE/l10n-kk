@@ -25,10 +25,10 @@ msgctxt "ObjectClass|"
 msgid "Body"
 msgstr "Дене"
 
-#: body.cc:26 joints.cc:29 joints.cc:35 motor.cc:30 motor.cc:36
+#: body.cc:26
 #, fuzzy
 #| msgid "Body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Body"
 msgstr "Дене"
 
@@ -42,18 +42,25 @@ msgstr "ҚақтығысШешімі "
 
 #: collisionsolver.cc:33 solver.cc:28
 #, fuzzy
+#| msgid "Allowed absolute tolerance"
+msgctxt "PropertyDescription|"
+msgid "Allowed absolute tolerance"
+msgstr "Жарамды абсолютты дәлділік шегі"
+
+#: collisionsolver.cc:33 solver.cc:28
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "toleranceAbs"
 msgctxt "PropertyName|"
 msgid "toleranceAbs"
 msgstr "дәлділШегіАбс"
 
-#: collisionsolver.cc:33 solver.cc:28
+#: collisionsolver.cc:34 solver.cc:31
 #, fuzzy
-#| msgid "Allowed absolute tolerance"
-msgctxt "StepCore|"
-msgid "Allowed absolute tolerance"
-msgstr "Жарамды абсолютты дәлділік шегі"
+#| msgid "Maximal local error during last step"
+msgctxt "PropertyDescription|"
+msgid "Maximal local error during last step"
+msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателігі"
 
 #: collisionsolver.cc:34 solver.cc:31
 #, fuzzy
@@ -62,13 +69,6 @@ msgstr "Жарамды абсолютты дәлділік шегі"
 msgctxt "PropertyName|"
 msgid "localError"
 msgstr "төңірекҚате"
-
-#: collisionsolver.cc:34 solver.cc:31
-#, fuzzy
-#| msgid "Maximal local error during last step"
-msgctxt "StepCore|"
-msgid "Maximal local error during last step"
-msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателігі"
 
 #: collisionsolver.cc:36
 #, fuzzy
@@ -105,7 +105,7 @@ msgstr "КулонКүші"
 #: coulombforce.cc:27
 #, fuzzy
 #| msgid "Coulomb force"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Coulomb force"
 msgstr "Кулон күші"
 
@@ -128,7 +128,7 @@ msgstr "Н м²Кл²"
 #: coulombforce.cc:30
 #, fuzzy
 #| msgid "Coulomb constant"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Coulomb constant"
 msgstr "Кулон түрақтысы"
 
@@ -143,7 +143,7 @@ msgstr "КулонКүшҚате"
 #: coulombforce.cc:32
 #, fuzzy
 #| msgid "Errors class for CoulombForce"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for CoulombForce"
 msgstr "КулонКүші қателерінің класы"
 
@@ -158,7 +158,7 @@ msgstr "кулонТұрақАуытқу"
 #: coulombforce.cc:35
 #, fuzzy
 #| msgid "Coulomb constant variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Coulomb constant variance"
 msgstr "Кулон тұрақтысының ауытқуы"
 
@@ -173,7 +173,7 @@ msgstr "ЖалпыЭйлерШешімі"
 #: eulersolver.cc:28
 #, fuzzy
 #| msgid "Generic Euler solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Generic Euler solver"
 msgstr "Жалпы Эйлер шешімі"
 
@@ -188,7 +188,7 @@ msgstr "ЭйлерШешімі"
 #: eulersolver.cc:29
 #, fuzzy
 #| msgid "Non-adaptive Euler solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Non-adaptive Euler solver"
 msgstr "Адаптивті емес Эйлер шешімі"
 
@@ -203,7 +203,7 @@ msgstr "АдаптЭйлерШешімі"
 #: eulersolver.cc:30
 #, fuzzy
 #| msgid "Adaptive Euler solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Euler solver"
 msgstr "Адаптивті Эйлер шешімі"
 
@@ -217,7 +217,7 @@ msgstr "Күш"
 #: force.cc:27
 #, fuzzy
 #| msgid "Force"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Force"
 msgstr "Күш"
 
@@ -232,7 +232,7 @@ msgstr "ГазБөлшегі"
 #: gas.cc:28
 #, fuzzy
 #| msgid "Gas particle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Gas particle"
 msgstr "Газ бөлшегі"
 
@@ -247,9 +247,16 @@ msgstr "ГазЛДКүші"
 #: gas.cc:30
 #, fuzzy
 #| msgid "Lennard-Jones force"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Lennard-Jones force"
 msgstr "Леннард-Джонс күші"
+
+#: gas.cc:32
+#, fuzzy
+#| msgid "Potential depth"
+msgctxt "PropertyDescription|"
+msgid "Potential depth"
+msgstr "Потенциал тереңдігі"
 
 #: gas.cc:32
 #, fuzzy
@@ -258,13 +265,6 @@ msgstr "Леннард-Джонс күші"
 msgctxt "PropertyName|"
 msgid "depth"
 msgstr "тереңдік"
-
-#: gas.cc:32
-#, fuzzy
-#| msgid "Potential depth"
-msgctxt "StepCore|"
-msgid "Potential depth"
-msgstr "Потенциал тереңдігі"
 
 #: gas.cc:32 gas.cc:38 gas.cc:60 gas.cc:75 particle.cc:38 particle.cc:54
 #: rigidbody.cc:49 rigidbody.cc:80
@@ -277,28 +277,28 @@ msgstr "Дж"
 
 #: gas.cc:33
 #, fuzzy
+#| msgid "Distance at which the force is zero"
+msgctxt "PropertyDescription|"
+msgid "Distance at which the force is zero"
+msgstr "Күш нөлге айналатың қашықтық"
+
+#: gas.cc:33
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "rmin"
 msgctxt "PropertyName|"
 msgid "rmin"
 msgstr "минрад"
 
-#: gas.cc:33
-#, fuzzy
-#| msgid "Distance at which the force is zero"
-msgctxt "StepCore|"
-msgid "Distance at which the force is zero"
-msgstr "Күш нөлге айналатың қашықтық"
-
 #: gas.cc:33 gas.cc:34 gas.cc:40 gas.cc:46 gas.cc:48 joints.cc:30 joints.cc:36
 #: joints.cc:37 joints.cc:41 joints.cc:44 joints.cc:46 joints.cc:48
 #: joints.cc:49 motor.cc:31 motor.cc:37 particle.cc:30 particle.cc:42
 #: rigidbody.cc:28 rigidbody.cc:53 rigidbody.cc:84 rigidbody.cc:89
-#: rigidbody.cc:92 rigidbody.cc:96 rigidbody.cc:97 softbody.cc:36 spring.cc:30
-#: spring.cc:31 spring.cc:36 spring.cc:38 spring.cc:40 spring.cc:41
-#: spring.cc:47 spring.cc:49 spring.cc:55 spring.cc:57 spring.cc:59
-#: spring.cc:61 tool.cc:38 tool.cc:39 tool.cc:45 tool.cc:46 tool.cc:67
-#: tool.cc:68 tool.cc:79 tool.cc:80 tool.cc:98 tool.cc:100 tool.cc:101
+#: rigidbody.cc:92 softbody.cc:36 spring.cc:30 spring.cc:31 spring.cc:36
+#: spring.cc:38 spring.cc:40 spring.cc:41 spring.cc:47 spring.cc:49
+#: spring.cc:55 spring.cc:57 spring.cc:59 spring.cc:61 tool.cc:38 tool.cc:39
+#: tool.cc:45 tool.cc:46 tool.cc:67 tool.cc:68 tool.cc:79 tool.cc:80 tool.cc:98
+#: tool.cc:100 tool.cc:101
 #, fuzzy
 #| msgctxt "Units"
 #| msgid "m"
@@ -308,18 +308,18 @@ msgstr "м"
 
 #: gas.cc:34
 #, fuzzy
+#| msgid "Cut-off distance"
+msgctxt "PropertyDescription|"
+msgid "Cut-off distance"
+msgstr "Күш нөлге айналатын қашықтық"
+
+#: gas.cc:34
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "cutoff"
 msgctxt "PropertyName|"
 msgid "cutoff"
 msgstr "табалд"
-
-#: gas.cc:34
-#, fuzzy
-#| msgid "Cut-off distance"
-msgctxt "StepCore|"
-msgid "Cut-off distance"
-msgstr "Күш нөлге айналатын қашықтық"
 
 #: gas.cc:36
 #, fuzzy
@@ -332,7 +332,7 @@ msgstr "ГазЛДКүшҚате"
 #: gas.cc:36
 #, fuzzy
 #| msgid "Errors class for GasLJForce"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for GasLJForce"
 msgstr "ГазЛДКүші ықателерінің класы"
 
@@ -347,7 +347,7 @@ msgstr "тереңдАуытқу"
 #: gas.cc:39
 #, fuzzy
 #| msgid "Potential depth variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Potential depth variance"
 msgstr "Потенциал тереңдігінің  ауытқуы"
 
@@ -362,7 +362,7 @@ msgstr "минрадАуытқу"
 #: gas.cc:41
 #, fuzzy
 #| msgid "Variance of the distance at which the force is zero"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of the distance at which the force is zero"
 msgstr "Күш нөлге айналатың қашықтықтың ауытқуы"
 
@@ -377,7 +377,7 @@ msgstr "Газ"
 #: gas.cc:45
 #, fuzzy
 #| msgid "Particle gas"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Particle gas"
 msgstr "Бөлшектерден тұратын газ"
 
@@ -392,7 +392,7 @@ msgstr "өлшемТкбрОрта"
 #: gas.cc:47
 #, fuzzy
 #| msgid "Center of the rect for measurements"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Center of the rect for measurements"
 msgstr "Өлшемге арналаған тікбұрыштың ортасы "
 
@@ -407,7 +407,7 @@ msgstr "өлшемТкбрӨлшем"
 #: gas.cc:49
 #, fuzzy
 #| msgid "Size of the rect for measurements"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Size of the rect for measurements"
 msgstr "Өлшемге арналаған тікбұрыштың өлшемі"
 
@@ -430,7 +430,7 @@ msgstr "м²"
 #: gas.cc:51
 #, fuzzy
 #| msgid "Volume of the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Volume of the measureRect"
 msgstr "Өшем тікбұрыштың көлемі"
 
@@ -445,7 +445,7 @@ msgstr "ткбрБөлшСаны"
 #: gas.cc:53
 #, fuzzy
 #| msgid "Count of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Count of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің саны"
 
@@ -468,7 +468,7 @@ msgstr "1/м²"
 #: gas.cc:55
 #, fuzzy
 #| msgid "Concentration of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Concentration of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің концентрациясы"
 
@@ -491,7 +491,7 @@ msgstr "Па"
 #: gas.cc:57
 #, fuzzy
 #| msgid "Pressure of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Pressure of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің қысымы"
 
@@ -514,7 +514,7 @@ msgstr "K"
 #: gas.cc:59
 #, fuzzy
 #| msgid "Temperature of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Temperature of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің температурасы"
 
@@ -529,7 +529,7 @@ msgstr "ткбрОртаКинетЭнерг"
 #: gas.cc:61
 #, fuzzy
 #| msgid "Mean kinetic energy of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Mean kinetic energy of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа кинетикалық энергиясы "
 
@@ -553,7 +553,7 @@ msgstr "м/с"
 #: gas.cc:63
 #, fuzzy
 #| msgid "Mean velocity of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Mean velocity of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа жылдамдылығы"
 
@@ -577,7 +577,7 @@ msgstr "кг"
 #: gas.cc:65
 #, fuzzy
 #| msgid "Mean mass of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Mean mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа массасы"
 
@@ -592,7 +592,7 @@ msgstr "ткбрМасса"
 #: gas.cc:67
 #, fuzzy
 #| msgid "Total mass of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Total mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің жалпы  массасы"
 
@@ -607,7 +607,7 @@ msgstr "ГазҚате"
 #: gas.cc:70
 #, fuzzy
 #| msgid "Errors class for Gas"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for Gas"
 msgstr "Газ қателерінің класы"
 
@@ -622,7 +622,7 @@ msgstr "ткбрҚысымАуытқу"
 #: gas.cc:72
 #, fuzzy
 #| msgid "Variance of pressure of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of pressure of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектер қысымының  ауытқуы"
 
@@ -637,7 +637,7 @@ msgstr "ткбрТемперАуытқу"
 #: gas.cc:74
 #, fuzzy
 #| msgid "Variance of temperature of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of temperature of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектер температурасының ауытқуы"
 
@@ -652,7 +652,7 @@ msgstr "ткбрОртаКинетЭнерАуытқу"
 #: gas.cc:76
 #, fuzzy
 #| msgid "Variance of mean kinetic energy of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of mean kinetic energy of particles in the measureRect"
 msgstr ""
 "Өлшем тікбұрыштағы газ бөлшектерінің орташа кинетикалық энергиясының ауытқуы"
@@ -668,7 +668,7 @@ msgstr "ткбрОртаЖылдамдыл"
 #: gas.cc:78
 #, fuzzy
 #| msgid "Variance of mean velocity of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of mean velocity of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа жылдамдылығының ауытқуы"
 
@@ -683,7 +683,7 @@ msgstr "ткбрОртаБөлшМассаАуытқу"
 #: gas.cc:80
 #, fuzzy
 #| msgid "Variance of mean mass of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of mean mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің орташа массасының ауытқуы"
 
@@ -698,7 +698,7 @@ msgstr "ткбрМассаАуытқу"
 #: gas.cc:82
 #, fuzzy
 #| msgid "Variance of total mass of particles in the measureRect"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Variance of total mass of particles in the measureRect"
 msgstr "Өлшем тікбұрыштағы газ бөлшектерінің жалпы массасының ауытқуы"
 
@@ -713,7 +713,7 @@ msgstr "ГравитКүші"
 #: gravitation.cc:28
 #, fuzzy
 #| msgid "Gravitation force"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Gravitation force"
 msgstr "Гравитация күші"
 
@@ -736,7 +736,7 @@ msgstr "Н м²/кг²"
 #: gravitation.cc:31
 #, fuzzy
 #| msgid "Gravitation constant"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Gravitation constant"
 msgstr "Гравитация тұрақтысы"
 
@@ -751,7 +751,7 @@ msgstr "ГравитКүшҚате"
 #: gravitation.cc:33
 #, fuzzy
 #| msgid "Errors class for GravitationForce"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for GravitationForce"
 msgstr "ГравитКүші қателерінің класы"
 
@@ -766,7 +766,7 @@ msgstr "гравитТұрақтАуытқу"
 #: gravitation.cc:36
 #, fuzzy
 #| msgid "Gravitation constant variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Gravitation constant variance"
 msgstr "Гравитация тұрақтысының ауытқуы"
 
@@ -781,9 +781,16 @@ msgstr "СалмақКүші"
 #: gravitation.cc:38
 #, fuzzy
 #| msgid "Weight force"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Weight force"
 msgstr "Ауырлық күші"
+
+#: gravitation.cc:40
+#, fuzzy
+#| msgid "Weight constant"
+msgctxt "PropertyDescription|"
+msgid "Weight constant"
+msgstr "Еркін түсу үдеуі"
 
 #: gravitation.cc:40
 #, fuzzy
@@ -792,13 +799,6 @@ msgstr "Ауырлық күші"
 msgctxt "PropertyName|"
 msgid "weightConst"
 msgstr "еркінТүсҮдеу"
-
-#: gravitation.cc:40
-#, fuzzy
-#| msgid "Weight constant"
-msgctxt "StepCore|"
-msgid "Weight constant"
-msgstr "Еркін түсу үдеуі"
 
 #: gravitation.cc:40 gravitation.cc:45 particle.cc:32 particle.cc:46
 #: rigidbody.cc:34 rigidbody.cc:63 softbody.cc:43
@@ -820,7 +820,7 @@ msgstr "СалмақКүшҚате"
 #: gravitation.cc:43
 #, fuzzy
 #| msgid "Errors class for WeightForce"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for WeightForce"
 msgstr "СалмақКүші қателерінің класы"
 
@@ -835,7 +835,7 @@ msgstr "еркінТүсҮдеуАуытқу"
 #: gravitation.cc:46
 #, fuzzy
 #| msgid "Weight constant variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Weight constant variance"
 msgstr "Еркін түсу үдінің ауытқуы"
 
@@ -850,7 +850,7 @@ msgstr "GslЖалпыШешімі"
 #: gslsolver.cc:31
 #, fuzzy
 #| msgid "GSL generic solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "GSL generic solver"
 msgstr "Жалпы GSL шешімі"
 
@@ -865,7 +865,7 @@ msgstr "GslШешімі"
 #: gslsolver.cc:33
 #, fuzzy
 #| msgid "GSL non-adaptive solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "GSL non-adaptive solver"
 msgstr "Адаптивті емес GSL шешімі"
 
@@ -880,7 +880,7 @@ msgstr "GslАдаптШешімі"
 #: gslsolver.cc:36
 #, fuzzy
 #| msgid "GSL adaptive solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "GSL adaptive solver"
 msgstr "Адаптивті GSL шешімі"
 
@@ -895,7 +895,7 @@ msgstr "GslRK2Шешімі"
 #: gslsolver.cc:39
 #, fuzzy
 #| msgid "Runge-Kutta second-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta second-order solver from GSL library"
 msgstr "GSL жиын файлдағы екінші реттік Рунге-Кутта шешімі"
 
@@ -910,7 +910,7 @@ msgstr "GslАдаптRK2Шешімі"
 #: gslsolver.cc:41
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta second-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta second-order solver from GSL library"
 msgstr "GSL жиын файлдағы екінші реттік адаптивті Рунге-Кутта шешімі"
 
@@ -925,7 +925,7 @@ msgstr "GslRK4Шешімі"
 #: gslsolver.cc:44
 #, fuzzy
 #| msgid "Runge-Kutta classical fourth-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta classical fourth-order solver from GSL library"
 msgstr "GSL жиын файлдағы классикалық төртінші реттік Рунге-Кутта шешімі"
 
@@ -940,7 +940,7 @@ msgstr "GslАдаптRK4Шешімі"
 #: gslsolver.cc:46
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta classical fourth-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta classical fourth-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы классикалық адаптивті төртінші реттік Рунге-Кутта шешімі"
@@ -956,7 +956,7 @@ msgstr "GslRKF45Шешімі"
 #: gslsolver.cc:49
 #, fuzzy
 #| msgid "Runge-Kutta-Fehlberg (4,5) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta-Fehlberg (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта-Фельберг (4,5) шешімі"
 
@@ -971,7 +971,7 @@ msgstr "GslАдаптRKF45Шешімі"
 #: gslsolver.cc:51
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta-Fehlberg (4,5) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta-Fehlberg (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта-Фельберг (4,5) шешімі"
 
@@ -986,7 +986,7 @@ msgstr "GslRKCKШешімі"
 #: gslsolver.cc:54
 #, fuzzy
 #| msgid "Runge-Kutta Cash-Karp (4,5) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta Cash-Karp (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта Кэш-Карп (4,5) шешімі"
 
@@ -1001,7 +1001,7 @@ msgstr "GslАдаптRKCKШешімі"
 #: gslsolver.cc:56
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta Cash-Karp (4,5) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta Cash-Karp (4,5) solver from GSL library"
 msgstr "GSL жиын файлдағы адаптивті  Рунге-Кутта Кэш-Карп (4,5) шешімі"
 
@@ -1016,7 +1016,7 @@ msgstr "GslRK8PDШешімі"
 #: gslsolver.cc:59
 #, fuzzy
 #| msgid "Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
 msgstr "GSL жиын файлдағы Рунге-Кутта Принц-Дорманд (8,9) шешімі"
 
@@ -1031,7 +1031,7 @@ msgstr "GslАдаптRK8PDШешімі"
 #: gslsolver.cc:61
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta Prince-Dormand (8,9) solver from GSL library"
 msgstr "GSL жиын файлдағы адаптивті Рунге-Кутта Принц-Дорманд (8,9) шешімі"
 
@@ -1046,7 +1046,7 @@ msgstr "GslRK2IMPШешімі"
 #: gslsolver.cc:64
 #, fuzzy
 #| msgid "Runge-Kutta implicit second-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta implicit second-order solver from GSL library"
 msgstr "GSL жиын файлдағы айқындалмаған екінші реттік Рунге-Кутта шешімі"
 
@@ -1061,7 +1061,7 @@ msgstr "GslАдаптRK2IMPШешімі"
 #: gslsolver.cc:66
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta implicit second-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta implicit second-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы айқындалмаған адаптивті екінші реттік Рунге-Кутта шешімі"
@@ -1077,7 +1077,7 @@ msgstr "GslRK4IMPШешімі"
 #: gslsolver.cc:69
 #, fuzzy
 #| msgid "Runge-Kutta implicit fourth-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Runge-Kutta implicit fourth-order solver from GSL library"
 msgstr "GSL жиын файлдағы айқындалмаған төртінші реттік Рунге-Кутта шешімі"
 
@@ -1092,7 +1092,7 @@ msgstr "GslкRK4IMPШешімі"
 #: gslsolver.cc:71
 #, fuzzy
 #| msgid "Adaptive Runge-Kutta implicit fource-order solver from GSL library"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Adaptive Runge-Kutta implicit fource-order solver from GSL library"
 msgstr ""
 "GSL жиын файлдағы айқындалмаған адаптивті төртінші реттік Рунге-Кутта шешімі"
@@ -1107,7 +1107,7 @@ msgstr "Аталым"
 #: item.cc:28
 #, fuzzy
 #| msgid "Item"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Item"
 msgstr "Аталым"
 
@@ -1122,7 +1122,7 @@ msgstr "түс"
 #: item.cc:31
 #, fuzzy
 #| msgid "Item color"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Item color"
 msgstr "Аталымының түсі"
 
@@ -1136,7 +1136,7 @@ msgstr "АталымТобы "
 #: itemgroup.cc:28
 #, fuzzy
 #| msgid "ItemGroup"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "ItemGroup"
 msgstr "АталымТобы "
 
@@ -1150,7 +1150,7 @@ msgstr "Біріктіру"
 #: joint.cc:26
 #, fuzzy
 #| msgid "Joint"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Joint"
 msgstr "Біріктіру"
 
@@ -1165,9 +1165,16 @@ msgstr "Бекіткіш"
 #: joints.cc:27
 #, fuzzy
 #| msgid "Anchor: fixes position of the body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Anchor: fixes position of the body"
 msgstr "Бекіткіш: денені орында бекітеді"
+
+#: joints.cc:29 joints.cc:35 motor.cc:30 motor.cc:36
+#, fuzzy
+#| msgid "Body"
+msgctxt "PropertyDescription|"
+msgid "Body"
+msgstr "Дене"
 
 #: joints.cc:29 joints.cc:35 motor.cc:30 motor.cc:36 tool.cc:97
 #, fuzzy
@@ -1177,6 +1184,13 @@ msgctxt "PropertyName|"
 msgid "body"
 msgstr "дене"
 
+#: joints.cc:30 tool.cc:100
+#, fuzzy
+#| msgid "Position"
+msgctxt "PropertyDescription|"
+msgid "Position"
+msgstr "Орны"
+
 #: joints.cc:30 joints.cc:37 particle.cc:30 rigidbody.cc:28 softbody.cc:36
 #: tool.cc:38 tool.cc:45 tool.cc:67 tool.cc:79 tool.cc:100
 #, fuzzy
@@ -1185,12 +1199,12 @@ msgctxt "PropertyName|"
 msgid "position"
 msgstr "орын"
 
-#: joints.cc:30 tool.cc:100
+#: joints.cc:31
 #, fuzzy
-#| msgid "Position"
-msgctxt "StepCore|"
-msgid "Position"
-msgstr "Орны"
+#| msgid "Angle"
+msgctxt "PropertyDescription|"
+msgid "Angle"
+msgstr "Бұрыш"
 
 #: joints.cc:31 rigidbody.cc:29
 #, fuzzy
@@ -1199,13 +1213,6 @@ msgstr "Орны"
 msgctxt "PropertyName|"
 msgid "angle"
 msgstr "бұрыш"
-
-#: joints.cc:31
-#, fuzzy
-#| msgid "Angle"
-msgctxt "StepCore|"
-msgid "Angle"
-msgstr "Бұрыш"
 
 #: joints.cc:31 rigidbody.cc:29 rigidbody.cc:55
 #, fuzzy
@@ -1226,9 +1233,16 @@ msgstr "Pin"
 #: joints.cc:33
 #, fuzzy
 #| msgid "Pin: fixes position of a given point on the body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Pin: fixes position of a given point on the body"
 msgstr "Қада"
+
+#: joints.cc:36
+#, fuzzy
+#| msgid "Position on the body"
+msgctxt "PropertyDescription|"
+msgid "Position on the body"
+msgstr "Дененің орны"
 
 #: joints.cc:36 motor.cc:31 motor.cc:37 tool.cc:98
 #, fuzzy
@@ -1238,17 +1252,10 @@ msgctxt "PropertyName|"
 msgid "localPosition"
 msgstr "төңірОрын"
 
-#: joints.cc:36
-#, fuzzy
-#| msgid "Position on the body"
-msgctxt "StepCore|"
-msgid "Position on the body"
-msgstr "Дененің орны"
-
 #: joints.cc:37
 #, fuzzy
 #| msgid "Position in the world"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Position in the world"
 msgstr "Дененің жалпы орны"
 
@@ -1263,9 +1270,16 @@ msgstr "Таяқша"
 #: joints.cc:39
 #, fuzzy
 #| msgid "Massless stick which can be connected to bodies"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Massless stick which can be connected to bodies"
 msgstr "Денелерге бекітетін салмақсыз таяқша"
+
+#: joints.cc:41
+#, fuzzy
+#| msgid "Rest length of the stick"
+msgctxt "PropertyDescription|"
+msgid "Rest length of the stick"
+msgstr "Таяқшаның тыныштылықтағы ұзындылығы"
 
 #: joints.cc:41 spring.cc:30
 #, fuzzy
@@ -1275,12 +1289,12 @@ msgctxt "PropertyName|"
 msgid "restLength"
 msgstr "тынышҰзынд"
 
-#: joints.cc:41
+#: joints.cc:42 spring.cc:34
 #, fuzzy
-#| msgid "Rest length of the stick"
-msgctxt "StepCore|"
-msgid "Rest length of the stick"
-msgstr "Таяқшаның тыныштылықтағы ұзындылығы"
+#| msgid "Body1"
+msgctxt "PropertyDescription|"
+msgid "Body1"
+msgstr "1-дене"
 
 #: joints.cc:42 spring.cc:34
 #, fuzzy
@@ -1290,12 +1304,12 @@ msgctxt "PropertyName|"
 msgid "body1"
 msgstr "дене1"
 
-#: joints.cc:42 spring.cc:34
+#: joints.cc:43 spring.cc:35
 #, fuzzy
-#| msgid "Body1"
-msgctxt "StepCore|"
-msgid "Body1"
-msgstr "1-дене"
+#| msgid "Body2"
+msgctxt "PropertyDescription|"
+msgid "Body2"
+msgstr "2-дене"
 
 #: joints.cc:43 spring.cc:35
 #, fuzzy
@@ -1304,13 +1318,6 @@ msgstr "1-дене"
 msgctxt "PropertyName|"
 msgid "body2"
 msgstr "дене2"
-
-#: joints.cc:43 spring.cc:35
-#, fuzzy
-#| msgid "Body2"
-msgctxt "StepCore|"
-msgid "Body2"
-msgstr "2-дене"
 
 #: joints.cc:44 spring.cc:36
 #, fuzzy
@@ -1323,7 +1330,7 @@ msgstr "төңірОрын1"
 #: joints.cc:45 spring.cc:37
 #, fuzzy
 #| msgid "Local position 1"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Local position 1"
 msgstr "1-төңіректі орын"
 
@@ -1338,9 +1345,16 @@ msgstr "төңірОрын2"
 #: joints.cc:47 spring.cc:39
 #, fuzzy
 #| msgid "Local position 2"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Local position 2"
 msgstr "2-төңіректі орын"
+
+#: joints.cc:48 spring.cc:40
+#, fuzzy
+#| msgid "Position1"
+msgctxt "PropertyDescription|"
+msgid "Position1"
+msgstr "1-орын"
 
 #: joints.cc:48 spring.cc:40
 #, fuzzy
@@ -1350,12 +1364,12 @@ msgctxt "PropertyName|"
 msgid "position1"
 msgstr "орын1"
 
-#: joints.cc:48 spring.cc:40
+#: joints.cc:49 spring.cc:41
 #, fuzzy
-#| msgid "Position1"
-msgctxt "StepCore|"
-msgid "Position1"
-msgstr "1-орын"
+#| msgid "Position2"
+msgctxt "PropertyDescription|"
+msgid "Position2"
+msgstr "2-орын"
 
 #: joints.cc:49 spring.cc:41
 #, fuzzy
@@ -1364,13 +1378,6 @@ msgstr "1-орын"
 msgctxt "PropertyName|"
 msgid "position2"
 msgstr "орын2"
-
-#: joints.cc:49 spring.cc:41
-#, fuzzy
-#| msgid "Position2"
-msgctxt "StepCore|"
-msgid "Position2"
-msgstr "2-орын"
 
 #: joints.cc:52
 #, fuzzy
@@ -1383,7 +1390,7 @@ msgstr "Бау"
 #: joints.cc:52
 #, fuzzy
 #| msgid "Massless rope which can be connected to bodies"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Massless rope which can be connected to bodies"
 msgstr "Денелерге бекітетін салмақсыз бау"
 
@@ -1399,16 +1406,23 @@ msgstr "ТураТарту"
 #, fuzzy
 #| msgid ""
 #| "Linear motor: applies a constant force to a given position of the body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Linear motor: applies a constant force to a given position of the body"
 msgstr "Тура тарту: дененің бір жерінен тұрақты күшпен тарту"
 
 #: motor.cc:31 motor.cc:37
 #, fuzzy
 #| msgid "Position of the motor on a body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Position of the motor on a body"
 msgstr "Денені тартатың күшті салатын жері"
+
+#: motor.cc:32
+#, fuzzy
+#| msgid "Value of the force, acting on the body"
+msgctxt "PropertyDescription|"
+msgid "Value of the force, acting on the body"
+msgstr "Денеге дұшар ететін күштің шамасы "
 
 #: motor.cc:32
 #, fuzzy
@@ -1417,13 +1431,6 @@ msgstr "Денені тартатың күшті салатын жері"
 msgctxt "PropertyName|"
 msgid "forceValue"
 msgstr "күшШамасы"
-
-#: motor.cc:32
-#, fuzzy
-#| msgid "Value of the force, acting on the body"
-msgctxt "StepCore|"
-msgid "Value of the force, acting on the body"
-msgstr "Денеге дұшар ететін күштің шамасы "
 
 #: motor.cc:32 particle.cc:34 particle.cc:48 rigidbody.cc:39 rigidbody.cc:68
 #: softbody.cc:48 spring.cc:42 spring.cc:63
@@ -1445,9 +1452,16 @@ msgstr "БұрапАйналдыру"
 #: motor.cc:34
 #, fuzzy
 #| msgid "Circular motor: applies a constant torque to the body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Circular motor: applies a constant torque to the body"
 msgstr "Бұрап айналдыру: денені тұрақты бұрау моментіне дұшар ету"
+
+#: motor.cc:38
+#, fuzzy
+#| msgid "Value of the torque, acting on the body"
+msgctxt "PropertyDescription|"
+msgid "Value of the torque, acting on the body"
+msgstr "Денеге дұшар ететін моментің шамасы "
 
 #: motor.cc:38
 #, fuzzy
@@ -1456,13 +1470,6 @@ msgstr "Бұрап айналдыру: денені тұрақты бұрау м
 msgctxt "PropertyName|"
 msgid "torqueValue"
 msgstr "бұрауМоменті"
-
-#: motor.cc:38
-#, fuzzy
-#| msgid "Value of the torque, acting on the body"
-msgctxt "StepCore|"
-msgid "Value of the torque, acting on the body"
-msgstr "Денеге дұшар ететін моментің шамасы "
 
 #: motor.cc:38 rigidbody.cc:40 rigidbody.cc:69 softbody.cc:49
 #, fuzzy
@@ -1482,9 +1489,16 @@ msgstr "Нысан"
 #: object.cc:26
 #, fuzzy
 #| msgid "Object"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Object"
 msgstr "Нысан"
+
+#: object.cc:27
+#, fuzzy
+#| msgid "Object name"
+msgctxt "PropertyDescription|"
+msgid "Object name"
+msgstr "Нысанның атауы"
 
 #: object.cc:27
 #, fuzzy
@@ -1493,13 +1507,6 @@ msgstr "Нысан"
 msgctxt "PropertyName|"
 msgid "name"
 msgstr "атау"
-
-#: object.cc:27
-#, fuzzy
-#| msgid "Object name"
-msgctxt "StepCore|"
-msgid "Object name"
-msgstr "Нысанның атауы"
 
 #: objecterrors.cc:26
 #, fuzzy
@@ -1511,7 +1518,7 @@ msgstr "НысанҚате"
 #: objecterrors.cc:26
 #, fuzzy
 #| msgid "ObjectErrors"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "ObjectErrors"
 msgstr "НысанҚате"
 
@@ -1526,28 +1533,28 @@ msgstr "Бөлшек"
 #: particle.cc:28
 #, fuzzy
 #| msgid "Simple zero-size particle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Simple zero-size particle"
 msgstr "Жәй нүкте-бөлшек"
 
 #: particle.cc:30
 #, fuzzy
 #| msgid "position"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "position"
 msgstr "орын"
+
+#: particle.cc:31
+#, fuzzy
+#| msgid "velocity"
+msgctxt "PropertyDescription|"
+msgid "velocity"
+msgstr "жылдамдық"
 
 #: particle.cc:31 rigidbody.cc:31 softbody.cc:38
 #, fuzzy
 #| msgid "velocity"
 msgctxt "PropertyName|"
-msgid "velocity"
-msgstr "жылдамдық"
-
-#: particle.cc:31
-#, fuzzy
-#| msgid "velocity"
-msgctxt "StepCore|"
 msgid "velocity"
 msgstr "жылдамдық"
 
@@ -1561,9 +1568,16 @@ msgstr "үдеу"
 #: particle.cc:33
 #, fuzzy
 #| msgid "acceleration"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "acceleration"
 msgstr "үдеу"
+
+#: particle.cc:34
+#, fuzzy
+#| msgid "force"
+msgctxt "PropertyDescription|"
+msgid "force"
+msgstr "күш"
 
 #: particle.cc:34 rigidbody.cc:39 softbody.cc:48 spring.cc:42
 #, fuzzy
@@ -1572,12 +1586,12 @@ msgctxt "PropertyName|"
 msgid "force"
 msgstr "күш"
 
-#: particle.cc:34
+#: particle.cc:35
 #, fuzzy
-#| msgid "force"
-msgctxt "StepCore|"
-msgid "force"
-msgstr "күш"
+#| msgid "mass"
+msgctxt "PropertyDescription|"
+msgid "mass"
+msgstr "масса"
 
 #: particle.cc:35 rigidbody.cc:42 softbody.cc:50
 #, fuzzy
@@ -1586,24 +1600,17 @@ msgctxt "PropertyName|"
 msgid "mass"
 msgstr "масса"
 
-#: particle.cc:35
-#, fuzzy
-#| msgid "mass"
-msgctxt "StepCore|"
-msgid "mass"
-msgstr "масса"
-
 #: particle.cc:36 rigidbody.cc:45
 #, fuzzy
 #| msgid "momentum"
-msgctxt "PropertyName|"
+msgctxt "PropertyDescription|"
 msgid "momentum"
 msgstr "импульс"
 
 #: particle.cc:36 rigidbody.cc:45
 #, fuzzy
 #| msgid "momentum"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "momentum"
 msgstr "импульс"
 
@@ -1617,18 +1624,18 @@ msgstr "кг м/с"
 
 #: particle.cc:38 rigidbody.cc:49
 #, fuzzy
+#| msgid "kinetic energy"
+msgctxt "PropertyDescription|"
+msgid "kinetic energy"
+msgstr "кинетикалық энергия"
+
+#: particle.cc:38 rigidbody.cc:49
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "kineticEnergy"
 msgctxt "PropertyName|"
 msgid "kineticEnergy"
 msgstr "кинетЭнерг"
-
-#: particle.cc:38 rigidbody.cc:49
-#, fuzzy
-#| msgid "kinetic energy"
-msgctxt "StepCore|"
-msgid "kinetic energy"
-msgstr "кинетикалық энергия"
 
 #: particle.cc:41
 #, fuzzy
@@ -1641,7 +1648,7 @@ msgstr "Бөлшек қатесі"
 #: particle.cc:41
 #, fuzzy
 #| msgid "Errors class for Particle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for Particle"
 msgstr "Бөлшек қателерінің класы"
 
@@ -1656,7 +1663,7 @@ msgstr "орынАуытқу"
 #: particle.cc:43 rigidbody.cc:54
 #, fuzzy
 #| msgid "position variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "position variance"
 msgstr "Орынның ауытқуы"
 
@@ -1671,7 +1678,7 @@ msgstr "жылдамдАуытқу"
 #: particle.cc:45 rigidbody.cc:59
 #, fuzzy
 #| msgid "velocity variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "velocity variance"
 msgstr "жылдамдықтың ауытқуы"
 
@@ -1686,7 +1693,7 @@ msgstr "үдеуАуытқу"
 #: particle.cc:47 rigidbody.cc:64
 #, fuzzy
 #| msgid "acceleration variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "acceleration variance"
 msgstr "үдеудің ауытқуы"
 
@@ -1701,7 +1708,7 @@ msgstr "күшАуытқу"
 #: particle.cc:49 rigidbody.cc:68
 #, fuzzy
 #| msgid "force variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "force variance"
 msgstr "күштің ауытқуы"
 
@@ -1716,7 +1723,7 @@ msgstr "массаАуытқу"
 #: particle.cc:51 rigidbody.cc:72
 #, fuzzy
 #| msgid "mass variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "mass variance"
 msgstr "масаның ауытқуы"
 
@@ -1731,7 +1738,7 @@ msgstr "импулАуытқу"
 #: particle.cc:53 rigidbody.cc:76
 #, fuzzy
 #| msgid "momentum variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "momentum variance"
 msgstr "импульстің ауытқуы"
 
@@ -1746,7 +1753,7 @@ msgstr "кинетЭнергАуытқу"
 #: particle.cc:55 rigidbody.cc:81
 #, fuzzy
 #| msgid "kinetic energy variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "kinetic energy variance"
 msgstr "кинетикалық энергияның ауытқуы"
 
@@ -1761,21 +1768,21 @@ msgstr "ЗарядБөлшек"
 #: particle.cc:57
 #, fuzzy
 #| msgid "Charged zero-size particle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Charged zero-size particle"
 msgstr "Зарядталған нүкте-бөлшек"
 
 #: particle.cc:58
 #, fuzzy
 #| msgid "charge"
-msgctxt "PropertyName|"
+msgctxt "PropertyDescription|"
 msgid "charge"
 msgstr "заряд"
 
 #: particle.cc:58
 #, fuzzy
 #| msgid "charge"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "charge"
 msgstr "заряд"
 
@@ -1798,7 +1805,7 @@ msgstr "Зарядталған бөлшек қатесі"
 #: particle.cc:60
 #, fuzzy
 #| msgid "Errors class for ChargedParticle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for ChargedParticle"
 msgstr "Зарятталған бөлшек қателерінің класы"
 
@@ -1813,7 +1820,7 @@ msgstr "зарядАуытқу"
 #: particle.cc:63
 #, fuzzy
 #| msgid "charge variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "charge variance"
 msgstr "зарядтың ауытқуы"
 
@@ -1828,30 +1835,37 @@ msgstr "ҚаттыДене"
 #: rigidbody.cc:27
 #, fuzzy
 #| msgid "Generic rigid body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Generic rigid body"
 msgstr "Жалпы қатты дене"
 
 #: rigidbody.cc:28 softbody.cc:36
 #, fuzzy
 #| msgid "Position of the center of mass"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Position of the center of mass"
 msgstr "Массалар центрі"
 
 #: rigidbody.cc:29
 #, fuzzy
 #| msgid "Rotation angle"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Rotation angle"
 msgstr "Бұралыс бұрышы"
 
 #: rigidbody.cc:31 softbody.cc:38
 #, fuzzy
 #| msgid "Velocity of the center of mass"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Velocity of the center of mass"
 msgstr "Массалар центрінің жылдамдылығы"
+
+#: rigidbody.cc:32 softbody.cc:39
+#, fuzzy
+#| msgid "Angular velocity of the body"
+msgctxt "PropertyDescription|"
+msgid "Angular velocity of the body"
+msgstr "Дененің бұралу жылдамдылығы"
 
 #: rigidbody.cc:32 softbody.cc:39
 #, fuzzy
@@ -1860,13 +1874,6 @@ msgstr "Массалар центрінің жылдамдылығы"
 msgctxt "PropertyName|"
 msgid "angularVelocity"
 msgstr "бұрышЖылдам"
-
-#: rigidbody.cc:32 softbody.cc:39
-#, fuzzy
-#| msgid "Angular velocity of the body"
-msgctxt "StepCore|"
-msgid "Angular velocity of the body"
-msgstr "Дененің бұралу жылдамдылығы"
 
 #: rigidbody.cc:32 rigidbody.cc:60 softbody.cc:39
 #, fuzzy
@@ -1879,7 +1886,7 @@ msgstr "рад/с"
 #: rigidbody.cc:35 softbody.cc:44
 #, fuzzy
 #| msgid "Acceleration of the center of mass"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Acceleration of the center of mass"
 msgstr "Массалар центрінің үдеуі"
 
@@ -1902,16 +1909,23 @@ msgstr "рад/с²"
 #: rigidbody.cc:37 softbody.cc:46
 #, fuzzy
 #| msgid "Angular acceleration of the body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Angular acceleration of the body"
 msgstr "Дене бұралуының үдеуі"
 
 #: rigidbody.cc:39 softbody.cc:48
 #, fuzzy
 #| msgid "Force that acts upon the body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Force that acts upon the body"
 msgstr "Денеге әрекет ететін күш"
+
+#: rigidbody.cc:40 softbody.cc:49
+#, fuzzy
+#| msgid "Torque that acts upon the body"
+msgctxt "PropertyDescription|"
+msgid "Torque that acts upon the body"
+msgstr "Денеге әрекет ететін бұрау күші"
 
 #: rigidbody.cc:40 softbody.cc:49
 #, fuzzy
@@ -1921,17 +1935,10 @@ msgctxt "PropertyName|"
 msgid "torque"
 msgstr "бұрау"
 
-#: rigidbody.cc:40 softbody.cc:49
-#, fuzzy
-#| msgid "Torque that acts upon the body"
-msgctxt "StepCore|"
-msgid "Torque that acts upon the body"
-msgstr "Денеге әрекет ететін бұрау күші"
-
 #: rigidbody.cc:42 softbody.cc:50
 #, fuzzy
 #| msgid "Total mass of the body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Total mass of the body"
 msgstr "Дененің жалпы массасы"
 
@@ -1954,9 +1961,16 @@ msgstr "кг м²"
 #: rigidbody.cc:44 softbody.cc:52
 #, fuzzy
 #| msgid "Inertia \"tensor\" of the body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Inertia \"tensor\" of the body"
 msgstr "Дененің инерция тензоры"
+
+#: rigidbody.cc:47
+#, fuzzy
+#| msgid "angular momentum"
+msgctxt "PropertyDescription|"
+msgid "angular momentum"
+msgstr "импульс моменті"
 
 #: rigidbody.cc:47 softbody.cc:40
 #, fuzzy
@@ -1965,13 +1979,6 @@ msgstr "Дененің инерция тензоры"
 msgctxt "PropertyName|"
 msgid "angularMomentum"
 msgstr "импулМомент"
-
-#: rigidbody.cc:47
-#, fuzzy
-#| msgid "angular momentum"
-msgctxt "StepCore|"
-msgid "angular momentum"
-msgstr "импульс моменті"
 
 #: rigidbody.cc:47 rigidbody.cc:77
 #, fuzzy
@@ -1992,7 +1999,7 @@ msgstr "ҚаттыДенеҚате"
 #: rigidbody.cc:52
 #, fuzzy
 #| msgid "Errors class for RigidBody"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for RigidBody"
 msgstr "ҚаттыДене қателерінің класы"
 
@@ -2007,7 +2014,7 @@ msgstr "бұрышАуытқу"
 #: rigidbody.cc:56
 #, fuzzy
 #| msgid "angle variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "angle variance"
 msgstr "бұрыш шамасының ауытқуы"
 
@@ -2022,7 +2029,7 @@ msgstr "бұрышЖылдымдАуытқу"
 #: rigidbody.cc:61
 #, fuzzy
 #| msgid "angularVelocity variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "angularVelocity variance"
 msgstr "бұрышЖылдам шамасының ауытқуы"
 
@@ -2037,9 +2044,16 @@ msgstr "бұрышУдеуАуытқу"
 #: rigidbody.cc:66
 #, fuzzy
 #| msgid "angularAcceleration variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "angularAcceleration variance"
 msgstr "бұрышҮдеу шамасының ауытқуы"
+
+#: rigidbody.cc:69
+#, fuzzy
+#| msgid "torque variance"
+msgctxt "PropertyDescription|"
+msgid "torque variance"
+msgstr "бұрау күші шамасының ауытқуы"
 
 #: rigidbody.cc:69
 #, fuzzy
@@ -2048,13 +2062,6 @@ msgstr "бұрышҮдеу шамасының ауытқуы"
 msgctxt "PropertyName|"
 msgid "torqueVariance"
 msgstr "бұрауАуытқуы"
-
-#: rigidbody.cc:69
-#, fuzzy
-#| msgid "torque variance"
-msgctxt "StepCore|"
-msgid "torque variance"
-msgstr "бұрау күші шамасының ауытқуы"
 
 #: rigidbody.cc:73
 #, fuzzy
@@ -2067,7 +2074,7 @@ msgstr "инерцАуытқу"
 #: rigidbody.cc:74
 #, fuzzy
 #| msgid "inertia variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "inertia variance"
 msgstr "инерция шамасының ауытқуы"
 
@@ -2082,7 +2089,7 @@ msgstr "импулМоментАуытқу"
 #: rigidbody.cc:78
 #, fuzzy
 #| msgid "angular momentum variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "angular momentum variance"
 msgstr "импульс моментінің ауытқуы"
 
@@ -2097,9 +2104,16 @@ msgstr "Диск"
 #: rigidbody.cc:83
 #, fuzzy
 #| msgid "Rigid disk"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Rigid disk"
 msgstr "Қатты диск"
+
+#: rigidbody.cc:84
+#, fuzzy
+#| msgid "Radius of the disk"
+msgctxt "PropertyDescription|"
+msgid "Radius of the disk"
+msgstr "Дисктің радиусы"
 
 #: rigidbody.cc:84
 #, fuzzy
@@ -2108,13 +2122,6 @@ msgstr "Қатты диск"
 msgctxt "PropertyName|"
 msgid "radius"
 msgstr "радиус"
-
-#: rigidbody.cc:84
-#, fuzzy
-#| msgid "Radius of the disk"
-msgctxt "StepCore|"
-msgid "Radius of the disk"
-msgstr "Дисктің радиусы"
 
 #: rigidbody.cc:86
 #, fuzzy
@@ -2127,7 +2134,7 @@ msgstr "НегізКөпбұрыш"
 #: rigidbody.cc:86
 #, fuzzy
 #| msgid "Base polygon body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Base polygon body"
 msgstr "Дисктің негіз көпбұрышы"
 
@@ -2142,9 +2149,16 @@ msgstr "Блок"
 #: rigidbody.cc:88
 #, fuzzy
 #| msgid "Rigid box"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Rigid box"
 msgstr "Қатты блок"
+
+#: rigidbody.cc:89
+#, fuzzy
+#| msgid "Size of the box"
+msgctxt "PropertyDescription|"
+msgid "Size of the box"
+msgstr "Блоктың өлшемі"
 
 #: rigidbody.cc:89 tool.cc:39 tool.cc:46 tool.cc:68 tool.cc:80
 #, fuzzy
@@ -2153,13 +2167,6 @@ msgstr "Қатты блок"
 msgctxt "PropertyName|"
 msgid "size"
 msgstr "өлшем"
-
-#: rigidbody.cc:89
-#, fuzzy
-#| msgid "Size of the box"
-msgctxt "StepCore|"
-msgid "Size of the box"
-msgstr "Блоктың өлшемі"
 
 #: rigidbody.cc:91
 #, fuzzy
@@ -2172,9 +2179,16 @@ msgstr "Көпбұрыш"
 #: rigidbody.cc:91
 #, fuzzy
 #| msgid "Rigid polygon body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Rigid polygon body"
 msgstr "Қатты көпбұрышты дене "
+
+#: rigidbody.cc:92
+#, fuzzy
+#| msgid "Vertex list"
+msgctxt "PropertyDescription|"
+msgid "Vertex list"
+msgstr "Төбелер тізімі"
 
 #: rigidbody.cc:92
 #, fuzzy
@@ -2183,58 +2197,6 @@ msgstr "Қатты көпбұрышты дене "
 msgctxt "PropertyName|"
 msgid "vertices"
 msgstr "төбелер"
-
-#: rigidbody.cc:92
-#, fuzzy
-#| msgid "Vertex list"
-msgctxt "StepCore|"
-msgid "Vertex list"
-msgstr "Төбелер тізімі"
-
-#: rigidbody.cc:95
-#, fuzzy
-#| msgctxt "ObjectClass"
-#| msgid "Plane"
-msgctxt "ObjectClass|"
-msgid "Plane"
-msgstr "Жазықтық"
-
-#: rigidbody.cc:95
-#, fuzzy
-#| msgid "Unmovable rigid plane"
-msgctxt "StepCore|"
-msgid "Unmovable rigid plane"
-msgstr "Жылжымайтың қатты жазықтық"
-
-#: rigidbody.cc:96
-#, fuzzy
-#| msgctxt "PropertyName"
-#| msgid "point1"
-msgctxt "PropertyName|"
-msgid "point1"
-msgstr "нүкте1"
-
-#: rigidbody.cc:96
-#, fuzzy
-#| msgid "First point which defines the plane"
-msgctxt "StepCore|"
-msgid "First point which defines the plane"
-msgstr "Жазықтықты анықтайтын бірінші нүкте"
-
-#: rigidbody.cc:97
-#, fuzzy
-#| msgctxt "PropertyName"
-#| msgid "point2"
-msgctxt "PropertyName|"
-msgid "point2"
-msgstr "нүкте2"
-
-#: rigidbody.cc:97
-#, fuzzy
-#| msgid "Second point which defines the plane"
-msgctxt "StepCore|"
-msgid "Second point which defines the plane"
-msgstr "Жазықтықты анықтайтын екінші нүкте"
 
 #: softbody.cc:31
 #, fuzzy
@@ -2247,7 +2209,7 @@ msgstr "ИілгішДенеБөлшегі"
 #: softbody.cc:31
 #, fuzzy
 #| msgid "SoftBody particle"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "SoftBody particle"
 msgstr "ИілгішДене бөлшегі"
 
@@ -2262,7 +2224,7 @@ msgstr "ИілгішДенеСерпінд"
 #: softbody.cc:32
 #, fuzzy
 #| msgid "SoftBody spring"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "SoftBody spring"
 msgstr "ИілгішДене серпінділігі"
 
@@ -2277,9 +2239,16 @@ msgstr "ИілгішДене"
 #: softbody.cc:33
 #, fuzzy
 #| msgid "Deformable SoftBody"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Deformable SoftBody"
 msgstr "Дефомацияланатын ИілгішДене"
+
+#: softbody.cc:34
+#, fuzzy
+#| msgid "Show internal items"
+msgctxt "PropertyDescription|"
+msgid "Show internal items"
+msgstr "Ішкі құрылысын көрсету"
 
 #: softbody.cc:34
 #, fuzzy
@@ -2288,13 +2257,6 @@ msgstr "Дефомацияланатын ИілгішДене"
 msgctxt "PropertyName|"
 msgid "showInternalItems"
 msgstr "ішкіҚұрылКөрсету"
-
-#: softbody.cc:34
-#, fuzzy
-#| msgid "Show internal items"
-msgctxt "StepCore|"
-msgid "Show internal items"
-msgstr "Ішкі құрылысын көрсету"
 
 #: softbody.cc:40
 #, fuzzy
@@ -2307,7 +2269,7 @@ msgstr "кг м²/с"
 #: softbody.cc:41
 #, fuzzy
 #| msgid "Angular momentum of the body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Angular momentum of the body"
 msgstr "Дененің бұралу импульс моменті"
 
@@ -2322,7 +2284,7 @@ msgstr "ШетБөлшекАтаулар"
 #: softbody.cc:54
 #, fuzzy
 #| msgid "Border particle names (temporal property)"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Border particle names (temporal property)"
 msgstr "Шеткі бөлшек атаулары (уақытша қасиеті)"
 
@@ -2336,9 +2298,16 @@ msgstr "Шешім құралы"
 #: solver.cc:25
 #, fuzzy
 #| msgid "Solver"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Solver"
 msgstr "Шешім құралы"
+
+#: solver.cc:26
+#, fuzzy
+#| msgid "Solver type"
+msgctxt "PropertyDescription|"
+msgid "Solver type"
+msgstr "Шешім түрі"
 
 #: solver.cc:26
 #, fuzzy
@@ -2348,12 +2317,12 @@ msgctxt "PropertyName|"
 msgid "solverType"
 msgstr "шешімТүрі"
 
-#: solver.cc:26
+#: solver.cc:27
 #, fuzzy
-#| msgid "Solver type"
-msgctxt "StepCore|"
-msgid "Solver type"
-msgstr "Шешім түрі"
+#| msgid "Step size"
+msgctxt "PropertyDescription|"
+msgid "Step size"
+msgstr "Қадамының өлшемі"
 
 #: solver.cc:27
 #, fuzzy
@@ -2362,13 +2331,6 @@ msgstr "Шешім түрі"
 msgctxt "PropertyName|"
 msgid "stepSize"
 msgstr "қадамӨлшемі"
-
-#: solver.cc:27
-#, fuzzy
-#| msgid "Step size"
-msgctxt "StepCore|"
-msgid "Step size"
-msgstr "Қадамының өлшемі"
 
 #: solver.cc:27 world.cc:35
 #, fuzzy
@@ -2380,18 +2342,25 @@ msgstr "с"
 
 #: solver.cc:29
 #, fuzzy
+#| msgid "Allowed relative tolerance"
+msgctxt "PropertyDescription|"
+msgid "Allowed relative tolerance"
+msgstr "Жарамды салыстырмалық дәлділік шегі"
+
+#: solver.cc:29
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "toleranceRel"
 msgctxt "PropertyName|"
 msgid "toleranceRel"
 msgstr "дәлділШегіСалыст"
 
-#: solver.cc:29
+#: solver.cc:30
 #, fuzzy
-#| msgid "Allowed relative tolerance"
-msgctxt "StepCore|"
-msgid "Allowed relative tolerance"
-msgstr "Жарамды салыстырмалық дәлділік шегі"
+#| msgid "Count of dynamic variables"
+msgctxt "PropertyDescription|"
+msgid "Count of dynamic variables"
+msgstr "Өзгермелі айнымалылар саны"
 
 #: solver.cc:30
 #, fuzzy
@@ -2401,12 +2370,12 @@ msgctxt "PropertyName|"
 msgid "dimension"
 msgstr "өлшемділік"
 
-#: solver.cc:30
+#: solver.cc:32
 #, fuzzy
-#| msgid "Count of dynamic variables"
-msgctxt "StepCore|"
-msgid "Count of dynamic variables"
-msgstr "Өзгермелі айнымалылар саны"
+#| msgid "Maximal local error ratio during last step"
+msgctxt "PropertyDescription|"
+msgid "Maximal local error ratio during last step"
+msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателік қатынасы"
 
 #: solver.cc:32
 #, fuzzy
@@ -2415,13 +2384,6 @@ msgstr "Өзгермелі айнымалылар саны"
 msgctxt "PropertyName|"
 msgid "localErrorRatio"
 msgstr "төңірекҚатеҚатынас"
-
-#: solver.cc:32
-#, fuzzy
-#| msgid "Maximal local error ratio during last step"
-msgctxt "StepCore|"
-msgid "Maximal local error ratio during last step"
-msgstr "Соңғы қадамдағы жіберілетін максимал төңіректік қателік қатынасы"
 
 #: spring.cc:28
 #, fuzzy
@@ -2434,16 +2396,23 @@ msgstr "Серпін"
 #: spring.cc:28
 #, fuzzy
 #| msgid "Massless spring which can be connected to bodies"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Massless spring which can be connected to bodies"
 msgstr "Денелерге бекітетін салмақсыз серіппе"
 
 #: spring.cc:30
 #, fuzzy
 #| msgid "Rest length"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Rest length"
 msgstr "Тыныштылықтағы ұзындылығы"
+
+#: spring.cc:31
+#, fuzzy
+#| msgid "Current length"
+msgctxt "PropertyDescription|"
+msgid "Current length"
+msgstr "Қазіргі ұзындылығы"
 
 #: spring.cc:31
 #, fuzzy
@@ -2453,12 +2422,12 @@ msgctxt "PropertyName|"
 msgid "length"
 msgstr "ұзындық"
 
-#: spring.cc:31
+#: spring.cc:32
 #, fuzzy
-#| msgid "Current length"
-msgctxt "StepCore|"
-msgid "Current length"
-msgstr "Қазіргі ұзындылығы"
+#| msgid "Stiffness"
+msgctxt "PropertyDescription|"
+msgid "Stiffness"
+msgstr "Қатаңдығы"
 
 #: spring.cc:32
 #, fuzzy
@@ -2467,13 +2436,6 @@ msgstr "Қазіргі ұзындылығы"
 msgctxt "PropertyName|"
 msgid "stiffness"
 msgstr "қатаңдық"
-
-#: spring.cc:32
-#, fuzzy
-#| msgid "Stiffness"
-msgctxt "StepCore|"
-msgid "Stiffness"
-msgstr "Қатаңдығы"
 
 #: spring.cc:32 spring.cc:51 spring.cc:53
 #, fuzzy
@@ -2485,18 +2447,18 @@ msgstr "Н/м"
 
 #: spring.cc:33
 #, fuzzy
+#| msgid "Damping"
+msgctxt "PropertyDescription|"
+msgid "Damping"
+msgstr "Тербелістің басылуы"
+
+#: spring.cc:33
+#, fuzzy
 #| msgctxt "PropertyName"
 #| msgid "damping"
 msgctxt "PropertyName|"
 msgid "damping"
 msgstr "басылу"
-
-#: spring.cc:33
-#, fuzzy
-#| msgid "Damping"
-msgctxt "StepCore|"
-msgid "Damping"
-msgstr "Тербелістің басылуы"
 
 #: spring.cc:33
 #, fuzzy
@@ -2509,7 +2471,7 @@ msgstr "Н с/м"
 #: spring.cc:42
 #, fuzzy
 #| msgid "Spring tension force"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Spring tension force"
 msgstr "Серпінді күші"
 
@@ -2524,7 +2486,7 @@ msgstr "СерпінҚате"
 #: spring.cc:45
 #, fuzzy
 #| msgid "Errors class for Spring"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Errors class for Spring"
 msgstr "Серпін қателерінің класы"
 
@@ -2539,7 +2501,7 @@ msgstr "тынышҰзындАуытқу"
 #: spring.cc:48
 #, fuzzy
 #| msgid "Rest length variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Rest length variance"
 msgstr "Тыныштықтағы ұзындық ауытқуы"
 
@@ -2554,7 +2516,7 @@ msgstr "ұзындАуытқу"
 #: spring.cc:50
 #, fuzzy
 #| msgid "Current length variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Current length variance"
 msgstr "Қазіргі ұзындылығының ауытқуы"
 
@@ -2569,7 +2531,7 @@ msgstr "қатандАуытқу"
 #: spring.cc:52
 #, fuzzy
 #| msgid "Stiffness variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Stiffness variance"
 msgstr "Қатандылықтың ауытқуы"
 
@@ -2584,7 +2546,7 @@ msgstr "БасылАуытқу"
 #: spring.cc:54
 #, fuzzy
 #| msgid "Damping variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Damping variance"
 msgstr "Басылуының ауытқуы"
 
@@ -2599,7 +2561,7 @@ msgstr "төңірОрынАуытқу"
 #: spring.cc:56
 #, fuzzy
 #| msgid "Local position 1 variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Local position 1 variance"
 msgstr "Төңіректі 1-орынның ауытқуы"
 
@@ -2614,7 +2576,7 @@ msgstr "төңірОрын1Ауытқу"
 #: spring.cc:58
 #, fuzzy
 #| msgid "Local position 2 variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Local position 2 variance"
 msgstr "Төңіректі 2-орынның ауытқуы"
 
@@ -2629,7 +2591,7 @@ msgstr "орын ауытқуы"
 #: spring.cc:60
 #, fuzzy
 #| msgid "Position1 variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Position1 variance"
 msgstr "1-орын ауытқуы"
 
@@ -2644,14 +2606,14 @@ msgstr "орын1Ауытқ"
 #: spring.cc:62
 #, fuzzy
 #| msgid "Position2 variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Position2 variance"
 msgstr "2-орын ауытқуы"
 
 #: spring.cc:64
 #, fuzzy
 #| msgid "Spring tension force variance"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Spring tension force variance"
 msgstr "Серпінді күшітің ауытқуы"
 
@@ -2666,9 +2628,16 @@ msgstr "ЖазбаКескін"
 #: tool.cc:26
 #, fuzzy
 #| msgid "NoteImage: an image embedded in Note"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "NoteImage: an image embedded in Note"
 msgstr "ЖазбаКескін: Жазба дегенге ендірілген кескін "
+
+#: tool.cc:28
+#, fuzzy
+#| msgid "Image data"
+msgctxt "PropertyDescription|"
+msgid "Image data"
+msgstr "Кескін дерегі"
 
 #: tool.cc:28
 #, fuzzy
@@ -2677,13 +2646,6 @@ msgstr "ЖазбаКескін: Жазба дегенге ендірілген �
 msgctxt "PropertyName|"
 msgid "image"
 msgstr "кескін"
-
-#: tool.cc:28
-#, fuzzy
-#| msgid "Image data"
-msgctxt "StepCore|"
-msgid "Image data"
-msgstr "Кескін дерегі"
 
 #: tool.cc:31
 #, fuzzy
@@ -2696,9 +2658,16 @@ msgstr "ЖазбаФормула"
 #: tool.cc:31
 #, fuzzy
 #| msgid "NoteFormula: a formula embedded in Note"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "NoteFormula: a formula embedded in Note"
 msgstr "ЖазбаФормула: Жазба дегенге ендірілген формула"
+
+#: tool.cc:33
+#, fuzzy
+#| msgid "Formula code"
+msgctxt "PropertyDescription|"
+msgid "Formula code"
+msgstr "Формула коды"
 
 #: tool.cc:33
 #, fuzzy
@@ -2707,13 +2676,6 @@ msgstr "ЖазбаФормула: Жазба дегенге ендірілген
 msgctxt "PropertyName|"
 msgid "code"
 msgstr "код"
-
-#: tool.cc:33
-#, fuzzy
-#| msgid "Formula code"
-msgctxt "StepCore|"
-msgid "Formula code"
-msgstr "Формула коды"
 
 #: tool.cc:36
 #, fuzzy
@@ -2726,23 +2688,30 @@ msgstr "Жазба"
 #: tool.cc:36
 #, fuzzy
 #| msgid "Note: displays a textual note on the scene"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Note: displays a textual note on the scene"
 msgstr "Жазба: өрісте мәтін жазбасын көрсетеді"
 
 #: tool.cc:38
 #, fuzzy
 #| msgid "Note position on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Note position on the scene"
 msgstr "Жазбаның өрістегі орыны"
 
 #: tool.cc:39
 #, fuzzy
 #| msgid "Note size on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Note size on the scene"
 msgstr "Жазбаның өрістегі өлшемі"
+
+#: tool.cc:40
+#, fuzzy
+#| msgid "Text"
+msgctxt "PropertyDescription|"
+msgid "Text"
+msgstr "Мәтін"
 
 #: tool.cc:40
 #, fuzzy
@@ -2751,13 +2720,6 @@ msgstr "Жазбаның өрістегі өлшемі"
 msgctxt "PropertyName|"
 msgid "text"
 msgstr "мәтін"
-
-#: tool.cc:40
-#, fuzzy
-#| msgid "Text"
-msgctxt "StepCore|"
-msgid "Text"
-msgstr "Мәтін"
 
 #: tool.cc:43
 #, fuzzy
@@ -2770,23 +2732,30 @@ msgstr "График"
 #: tool.cc:43
 #, fuzzy
 #| msgid "Graph: plots a graph of any properties"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Graph: plots a graph of any properties"
 msgstr "График: түрлі қасиетерінің графиктердін салады"
 
 #: tool.cc:45
 #, fuzzy
 #| msgid "Graph position on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Graph position on the scene"
 msgstr "Графиктің өрістегі орыны"
 
 #: tool.cc:46
 #, fuzzy
 #| msgid "Graph size on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Graph size on the scene"
 msgstr "Графиктің өрістегі өлшемі"
+
+#: tool.cc:47
+#, fuzzy
+#| msgid "X axis: object"
+msgctxt "PropertyDescription|"
+msgid "X axis: object"
+msgstr "X бойлық: нысан"
 
 #: tool.cc:47
 #, fuzzy
@@ -2796,12 +2765,12 @@ msgctxt "PropertyName|"
 msgid "objectX"
 msgstr "X-нысан"
 
-#: tool.cc:47
+#: tool.cc:48
 #, fuzzy
-#| msgid "X axis: object"
-msgctxt "StepCore|"
-msgid "X axis: object"
-msgstr "X бойлық: нысан"
+#| msgid "X axis: object property"
+msgctxt "PropertyDescription|"
+msgid "X axis: object property"
+msgstr "X бойлық: нысанның қасиеті"
 
 #: tool.cc:48
 #, fuzzy
@@ -2811,12 +2780,12 @@ msgctxt "PropertyName|"
 msgid "propertyX"
 msgstr "X-қасиет"
 
-#: tool.cc:48
+#: tool.cc:49
 #, fuzzy
-#| msgid "X axis: object property"
-msgctxt "StepCore|"
-msgid "X axis: object property"
-msgstr "X бойлық: нысанның қасиеті"
+#| msgid "X axis: vector index"
+msgctxt "PropertyDescription|"
+msgid "X axis: vector index"
+msgstr "X бойлық: вектордың индексі"
 
 #: tool.cc:49
 #, fuzzy
@@ -2826,12 +2795,12 @@ msgctxt "PropertyName|"
 msgid "indexX"
 msgstr "X-индекс"
 
-#: tool.cc:49
+#: tool.cc:50
 #, fuzzy
-#| msgid "X axis: vector index"
-msgctxt "StepCore|"
-msgid "X axis: vector index"
-msgstr "X бойлық: вектордың индексі"
+#| msgid "Y axis: object"
+msgctxt "PropertyDescription|"
+msgid "Y axis: object"
+msgstr "Y бойлық: нысан"
 
 #: tool.cc:50
 #, fuzzy
@@ -2841,12 +2810,12 @@ msgctxt "PropertyName|"
 msgid "objectY"
 msgstr "Y-нысан"
 
-#: tool.cc:50
+#: tool.cc:51
 #, fuzzy
-#| msgid "Y axis: object"
-msgctxt "StepCore|"
-msgid "Y axis: object"
-msgstr "Y бойлық: нысан"
+#| msgid "Y axis: property"
+msgctxt "PropertyDescription|"
+msgid "Y axis: property"
+msgstr "Y бойлық: қасиеті"
 
 #: tool.cc:51
 #, fuzzy
@@ -2856,12 +2825,12 @@ msgctxt "PropertyName|"
 msgid "propertyY"
 msgstr "Y-қасиет"
 
-#: tool.cc:51
+#: tool.cc:52
 #, fuzzy
-#| msgid "Y axis: property"
-msgctxt "StepCore|"
-msgid "Y axis: property"
-msgstr "Y бойлық: қасиеті"
+#| msgid "Y axis: vector index"
+msgctxt "PropertyDescription|"
+msgid "Y axis: vector index"
+msgstr "Y бойлық: вектордың индексі"
 
 #: tool.cc:52
 #, fuzzy
@@ -2871,12 +2840,12 @@ msgctxt "PropertyName|"
 msgid "indexY"
 msgstr "Y-индекс"
 
-#: tool.cc:52
+#: tool.cc:53
 #, fuzzy
-#| msgid "Y axis: vector index"
-msgctxt "StepCore|"
-msgid "Y axis: vector index"
-msgstr "Y бойлық: вектордың индексі"
+#| msgid "Auto-limits along X axis"
+msgctxt "PropertyDescription|"
+msgid "Auto-limits along X axis"
+msgstr "X бойлығын авто-шектеуі"
 
 #: tool.cc:53
 #, fuzzy
@@ -2886,12 +2855,12 @@ msgctxt "PropertyName|"
 msgid "autoLimitsX"
 msgstr "автоXшектеу"
 
-#: tool.cc:53
+#: tool.cc:54
 #, fuzzy
-#| msgid "Auto-limits along X axis"
-msgctxt "StepCore|"
-msgid "Auto-limits along X axis"
-msgstr "X бойлығын авто-шектеуі"
+#| msgid "Auto-limits along Y axis"
+msgctxt "PropertyDescription|"
+msgid "Auto-limits along Y axis"
+msgstr "Y бойлығын авто-шектеуі"
 
 #: tool.cc:54
 #, fuzzy
@@ -2901,12 +2870,12 @@ msgctxt "PropertyName|"
 msgid "autoLimitsY"
 msgstr "автоYшектеу"
 
-#: tool.cc:54
+#: tool.cc:55
 #, fuzzy
-#| msgid "Auto-limits along Y axis"
-msgctxt "StepCore|"
-msgid "Auto-limits along Y axis"
-msgstr "Y бойлығын авто-шектеуі"
+#| msgid "Limits along X axis"
+msgctxt "PropertyDescription|"
+msgid "Limits along X axis"
+msgstr "X бойлықтың шектері"
 
 #: tool.cc:55
 #, fuzzy
@@ -2916,12 +2885,12 @@ msgctxt "PropertyName|"
 msgid "limitsX"
 msgstr "шектерX"
 
-#: tool.cc:55
+#: tool.cc:56
 #, fuzzy
-#| msgid "Limits along X axis"
-msgctxt "StepCore|"
-msgid "Limits along X axis"
-msgstr "X бойлықтың шектері"
+#| msgid "Limits along Y axis"
+msgctxt "PropertyDescription|"
+msgid "Limits along Y axis"
+msgstr "Y бойлықтың шектері"
 
 #: tool.cc:56
 #, fuzzy
@@ -2931,12 +2900,12 @@ msgctxt "PropertyName|"
 msgid "limitsY"
 msgstr "шектерY"
 
-#: tool.cc:56
+#: tool.cc:57
 #, fuzzy
-#| msgid "Limits along Y axis"
-msgctxt "StepCore|"
-msgid "Limits along Y axis"
-msgstr "Y бойлықтың шектері"
+#| msgid "Show points on the graph"
+msgctxt "PropertyDescription|"
+msgid "Show points on the graph"
+msgstr "Графиктің нүктелерін көрсету"
 
 #: tool.cc:57
 #, fuzzy
@@ -2946,12 +2915,12 @@ msgctxt "PropertyName|"
 msgid "showPoints"
 msgstr "нүктеКөрсет"
 
-#: tool.cc:57
+#: tool.cc:58
 #, fuzzy
-#| msgid "Show points on the graph"
-msgctxt "StepCore|"
-msgid "Show points on the graph"
-msgstr "Графиктің нүктелерін көрсету"
+#| msgid "Show lines on the graph"
+msgctxt "PropertyDescription|"
+msgid "Show lines on the graph"
+msgstr "Графиктің сызықтарын көрсету"
 
 #: tool.cc:58
 #, fuzzy
@@ -2961,26 +2930,26 @@ msgctxt "PropertyName|"
 msgid "showLines"
 msgstr "сызықКөрсет"
 
-#: tool.cc:58
+#: tool.cc:59
 #, fuzzy
-#| msgid "Show lines on the graph"
-msgctxt "StepCore|"
-msgid "Show lines on the graph"
-msgstr "Графиктің сызықтарын көрсету"
+#| msgid "Current value"
+msgctxt "PropertyDescription|"
+msgid "Current value"
+msgstr "Қазір назардағы мәні"
 
 #: tool.cc:59
 #, fuzzy
 #| msgid "currentValue"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "currentValue"
 msgstr "назарМәні"
 
-#: tool.cc:59
+#: tool.cc:60 tool.cc:101
 #, fuzzy
-#| msgid "Current value"
-msgctxt "StepCore|"
-msgid "Current value"
-msgstr "Қазір назардағы мәні"
+#| msgid "points"
+msgctxt "PropertyDescription|"
+msgid "points"
+msgstr "нүктелер"
 
 #: tool.cc:60 tool.cc:101
 #, fuzzy
@@ -2989,38 +2958,31 @@ msgctxt "PropertyName|"
 msgid "points"
 msgstr "нүктелер"
 
-#: tool.cc:60 tool.cc:101
-#, fuzzy
-#| msgid "points"
-msgctxt "StepCore|"
-msgid "points"
-msgstr "нүктелер"
-
 #: tool.cc:61
 #, fuzzy
 #| msgid "unitsX"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "unitsX"
 msgstr "бірілікX"
 
 #: tool.cc:61
 #, fuzzy
 #| msgid "Units along X axis"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "Units along X axis"
 msgstr "X бойлықтың бірліктері"
 
 #: tool.cc:62
 #, fuzzy
 #| msgid "unitsY"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "unitsY"
 msgstr "бірлікY"
 
 #: tool.cc:62
 #, fuzzy
 #| msgid "Units along Y axis"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "Units along Y axis"
 msgstr "Y бойлықтың бірліктері"
 
@@ -3035,23 +2997,30 @@ msgstr "Өлшегіш"
 #: tool.cc:65
 #, fuzzy
 #| msgid "Meter: displays any property on the scene"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Meter: displays any property on the scene"
 msgstr "Өлшегіш: өрістегінің барлық қасиетін көрсетеді"
 
 #: tool.cc:67
 #, fuzzy
 #| msgid "Meter position on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Meter position on the scene"
 msgstr "Өлшегіштің өрістегі орыны"
 
 #: tool.cc:68
 #, fuzzy
 #| msgid "Meter size on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Meter size on the scene"
 msgstr "Өлшегіштің өзіннің өрістегі өлшемі"
+
+#: tool.cc:69
+#, fuzzy
+#| msgid "Observed object"
+msgctxt "PropertyDescription|"
+msgid "Observed object"
+msgstr "Назардағы нысан"
 
 #: tool.cc:69 tool.cc:81
 #, fuzzy
@@ -3061,12 +3030,12 @@ msgctxt "PropertyName|"
 msgid "object"
 msgstr "нысан"
 
-#: tool.cc:69
+#: tool.cc:70
 #, fuzzy
-#| msgid "Observed object"
-msgctxt "StepCore|"
-msgid "Observed object"
-msgstr "Назардағы нысан"
+#| msgid "Observed property"
+msgctxt "PropertyDescription|"
+msgid "Observed property"
+msgstr "Назардағы қасиет"
 
 #: tool.cc:70 tool.cc:82
 #, fuzzy
@@ -3076,12 +3045,12 @@ msgctxt "PropertyName|"
 msgid "property"
 msgstr "қасиет"
 
-#: tool.cc:70
+#: tool.cc:71 tool.cc:83
 #, fuzzy
-#| msgid "Observed property"
-msgctxt "StepCore|"
-msgid "Observed property"
-msgstr "Назардағы қасиет"
+#| msgid "Vector index"
+msgctxt "PropertyDescription|"
+msgid "Vector index"
+msgstr "Вектордың индексі"
 
 #: tool.cc:71 tool.cc:83
 #, fuzzy
@@ -3091,12 +3060,12 @@ msgctxt "PropertyName|"
 msgid "index"
 msgstr "индекс"
 
-#: tool.cc:71 tool.cc:83
+#: tool.cc:72
 #, fuzzy
-#| msgid "Vector index"
-msgctxt "StepCore|"
-msgid "Vector index"
-msgstr "Вектордың индексі"
+#| msgid "Display digits"
+msgctxt "PropertyDescription|"
+msgid "Display digits"
+msgstr "Цифрларды көрсету"
 
 #: tool.cc:72
 #, fuzzy
@@ -3106,40 +3075,33 @@ msgctxt "PropertyName|"
 msgid "digits"
 msgstr "цифр"
 
-#: tool.cc:72
-#, fuzzy
-#| msgid "Display digits"
-msgctxt "StepCore|"
-msgid "Display digits"
-msgstr "Цифрларды көрсету"
-
-#: tool.cc:73
-#, fuzzy
-#| msgid "value"
-msgctxt "StepCore|"
-msgid "value"
-msgstr "мән"
-
 #: tool.cc:73 tool.cc:90
 #, fuzzy
 #| msgid "Value"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Value"
 msgstr "Мәні"
 
-#: tool.cc:74 tool.cc:92
+#: tool.cc:73 tool.cc:90
 #, fuzzy
-#| msgid "units"
-msgctxt "StepCore|"
-msgid "units"
-msgstr "бірлік"
+#| msgid "value"
+msgctxt "PropertyName|"
+msgid "value"
+msgstr "мән"
 
 #: tool.cc:74
 #, fuzzy
 #| msgid "Units of measured property"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Units of measured property"
 msgstr "Өлшелінбек қасиеттің бірліктері"
+
+#: tool.cc:74 tool.cc:92
+#, fuzzy
+#| msgid "units"
+msgctxt "PropertyName|"
+msgid "units"
+msgstr "бірлік"
 
 #: tool.cc:77
 #, fuzzy
@@ -3152,37 +3114,44 @@ msgstr "Басқарғыш"
 #: tool.cc:77
 #, fuzzy
 #| msgid "Controller: allows to easily control any property"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Controller: allows to easily control any property"
 msgstr "Басқарғыш: қасиетерді басқару үшін ыңғайлы құрал"
 
 #: tool.cc:79
 #, fuzzy
 #| msgid "Controller position on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Controller position on the scene"
 msgstr "Басқарғыштың өрістегі орыны"
 
 #: tool.cc:80
 #, fuzzy
 #| msgid "Controller size on the scene"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Controller size on the scene"
 msgstr "Басқарғыштың өрістегі өлшемі"
 
 #: tool.cc:81
 #, fuzzy
 #| msgid "Controlled object"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Controlled object"
 msgstr "Басқарылмақ нысан"
 
 #: tool.cc:82
 #, fuzzy
 #| msgid "Controlled property"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Controlled property"
 msgstr "Басқарылмақ қасиет"
+
+#: tool.cc:84
+#, fuzzy
+#| msgid "Limits"
+msgctxt "PropertyDescription|"
+msgid "Limits"
+msgstr "Шектері"
 
 #: tool.cc:84
 #, fuzzy
@@ -3191,13 +3160,6 @@ msgstr "Басқарылмақ қасиет"
 msgctxt "PropertyName|"
 msgid "limits"
 msgstr "шек"
-
-#: tool.cc:84
-#, fuzzy
-#| msgid "Limits"
-msgctxt "StepCore|"
-msgid "Limits"
-msgstr "Шектері"
 
 #: tool.cc:85
 #, fuzzy
@@ -3210,7 +3172,7 @@ msgstr "үлкейтТіркесім"
 #: tool.cc:86
 #, fuzzy
 #| msgid "Shortcut to increase the value"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Shortcut to increase the value"
 msgstr "Мәнің үлкейту тіркесімі"
 
@@ -3225,9 +3187,16 @@ msgstr "кішірейтТіркесім"
 #: tool.cc:88
 #, fuzzy
 #| msgid "Shortcut to decrease the value"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Shortcut to decrease the value"
 msgstr "Мәнің кішірейту тіркесімі"
+
+#: tool.cc:89
+#, fuzzy
+#| msgid "Increment value"
+msgctxt "PropertyDescription|"
+msgid "Increment value"
+msgstr "Мәннің өсуі"
 
 #: tool.cc:89
 #, fuzzy
@@ -3237,24 +3206,10 @@ msgctxt "PropertyName|"
 msgid "increment"
 msgstr "өсіру"
 
-#: tool.cc:89
-#, fuzzy
-#| msgid "Increment value"
-msgctxt "StepCore|"
-msgid "Increment value"
-msgstr "Мәннің өсуі"
-
-#: tool.cc:90
-#, fuzzy
-#| msgid "value"
-msgctxt "PropertyName|"
-msgid "value"
-msgstr "мән"
-
 #: tool.cc:92
 #, fuzzy
 #| msgid "Units of controlled property"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Units of controlled property"
 msgstr "Басқарылмақ қасиеттің бірліктері"
 
@@ -3269,21 +3224,21 @@ msgstr "Траектория"
 #: tool.cc:95
 #, fuzzy
 #| msgid "Tracer: traces trajectory of a point on a body"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Tracer: traces trajectory of a point on a body"
 msgstr "Траектория: нүктенің не дененің траекториясын салады"
 
 #: tool.cc:97
 #, fuzzy
 #| msgid "Traced body"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Traced body"
 msgstr "Бақылайтын дене"
 
 #: tool.cc:99
 #, fuzzy
 #| msgid "Local position"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Local position"
 msgstr "Орын нүктесі"
 
@@ -3297,7 +3252,7 @@ msgstr "Құрал"
 #: world.cc:32
 #, fuzzy
 #| msgid "Tool"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "Tool"
 msgstr "Құрал"
 
@@ -3311,9 +3266,16 @@ msgstr "Дүние"
 #: world.cc:34
 #, fuzzy
 #| msgid "World"
-msgctxt "StepCore|"
+msgctxt "ObjectDescription|"
 msgid "World"
 msgstr "Дүние"
+
+#: world.cc:35
+#, fuzzy
+#| msgid "Current time"
+msgctxt "PropertyDescription|"
+msgid "Current time"
+msgstr "Қазіргі уақыты"
 
 #: world.cc:35
 #, fuzzy
@@ -3323,38 +3285,31 @@ msgctxt "PropertyName|"
 msgid "time"
 msgstr "уақыт"
 
-#: world.cc:35
+#: world.cc:36
 #, fuzzy
-#| msgid "Current time"
-msgctxt "StepCore|"
-msgid "Current time"
-msgstr "Қазіргі уақыты"
+#| msgid "Simulation speed scale"
+msgctxt "PropertyDescription|"
+msgid "Simulation speed scale"
+msgstr "Уақыт жылдамдығының масштабы"
 
 #: world.cc:36
 #, fuzzy
 #| msgid "timeScale"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "timeScale"
 msgstr "уақытМасштаб"
-
-#: world.cc:36
-#, fuzzy
-#| msgid "Simulation speed scale"
-msgctxt "StepCore|"
-msgid "Simulation speed scale"
-msgstr "Уақыт жылдамдығының масштабы"
 
 #: world.cc:37
 #, fuzzy
 #| msgid "errorsCalculation"
-msgctxt "StepCore|"
+msgctxt "PropertyName|"
 msgid "errorsCalculation"
 msgstr "есебҚателері"
 
 #: world.cc:38
 #, fuzzy
 #| msgid "Enable global error calculation"
-msgctxt "StepCore|"
+msgctxt "PropertyDescription|"
 msgid "Enable global error calculation"
 msgstr "Жалпы есеп қателерін рұқсат етуі"
 
@@ -3420,6 +3375,159 @@ msgstr "\"%2\" дегеннің \"%1\" деген қасиетінің мәні 
 msgctxt "QObject|"
 msgid "File is not writable."
 msgstr "Файл жазылмайды."
+
+#, fuzzy
+#~| msgid "Body"
+#~ msgctxt "StepCore|"
+#~ msgid "Body"
+#~ msgstr "Дене"
+
+#, fuzzy
+#~| msgid "Force"
+#~ msgctxt "StepCore|"
+#~ msgid "Force"
+#~ msgstr "Күш"
+
+#, fuzzy
+#~| msgid "Item"
+#~ msgctxt "StepCore|"
+#~ msgid "Item"
+#~ msgstr "Аталым"
+
+#, fuzzy
+#~| msgid "ItemGroup"
+#~ msgctxt "StepCore|"
+#~ msgid "ItemGroup"
+#~ msgstr "АталымТобы "
+
+#, fuzzy
+#~| msgid "Joint"
+#~ msgctxt "StepCore|"
+#~ msgid "Joint"
+#~ msgstr "Біріктіру"
+
+#, fuzzy
+#~| msgid "Object"
+#~ msgctxt "StepCore|"
+#~ msgid "Object"
+#~ msgstr "Нысан"
+
+#, fuzzy
+#~| msgid "ObjectErrors"
+#~ msgctxt "StepCore|"
+#~ msgid "ObjectErrors"
+#~ msgstr "НысанҚате"
+
+#, fuzzy
+#~| msgid "position"
+#~ msgctxt "StepCore|"
+#~ msgid "position"
+#~ msgstr "орын"
+
+#, fuzzy
+#~| msgid "velocity"
+#~ msgctxt "StepCore|"
+#~ msgid "velocity"
+#~ msgstr "жылдамдық"
+
+#, fuzzy
+#~| msgid "acceleration"
+#~ msgctxt "StepCore|"
+#~ msgid "acceleration"
+#~ msgstr "үдеу"
+
+#, fuzzy
+#~| msgid "force"
+#~ msgctxt "StepCore|"
+#~ msgid "force"
+#~ msgstr "күш"
+
+#, fuzzy
+#~| msgid "mass"
+#~ msgctxt "StepCore|"
+#~ msgid "mass"
+#~ msgstr "масса"
+
+#, fuzzy
+#~| msgid "momentum"
+#~ msgctxt "StepCore|"
+#~ msgid "momentum"
+#~ msgstr "импульс"
+
+#, fuzzy
+#~| msgid "charge"
+#~ msgctxt "StepCore|"
+#~ msgid "charge"
+#~ msgstr "заряд"
+
+#, fuzzy
+#~| msgctxt "ObjectClass"
+#~| msgid "Plane"
+#~ msgctxt "ObjectClass|"
+#~ msgid "Plane"
+#~ msgstr "Жазықтық"
+
+#, fuzzy
+#~| msgid "Unmovable rigid plane"
+#~ msgctxt "StepCore|"
+#~ msgid "Unmovable rigid plane"
+#~ msgstr "Жылжымайтың қатты жазықтық"
+
+#, fuzzy
+#~| msgctxt "PropertyName"
+#~| msgid "point1"
+#~ msgctxt "PropertyName|"
+#~ msgid "point1"
+#~ msgstr "нүкте1"
+
+#, fuzzy
+#~| msgid "First point which defines the plane"
+#~ msgctxt "StepCore|"
+#~ msgid "First point which defines the plane"
+#~ msgstr "Жазықтықты анықтайтын бірінші нүкте"
+
+#, fuzzy
+#~| msgctxt "PropertyName"
+#~| msgid "point2"
+#~ msgctxt "PropertyName|"
+#~ msgid "point2"
+#~ msgstr "нүкте2"
+
+#, fuzzy
+#~| msgid "Second point which defines the plane"
+#~ msgctxt "StepCore|"
+#~ msgid "Second point which defines the plane"
+#~ msgstr "Жазықтықты анықтайтын екінші нүкте"
+
+#, fuzzy
+#~| msgid "Solver"
+#~ msgctxt "StepCore|"
+#~ msgid "Solver"
+#~ msgstr "Шешім құралы"
+
+#, fuzzy
+#~| msgid "points"
+#~ msgctxt "StepCore|"
+#~ msgid "points"
+#~ msgstr "нүктелер"
+
+#, fuzzy
+#~| msgid "value"
+#~ msgctxt "StepCore|"
+#~ msgid "value"
+#~ msgstr "мән"
+
+#, fuzzy
+#~| msgid "Tool"
+#~ msgctxt "StepCore|"
+#~ msgid "Tool"
+#~ msgstr "Құрал"
+
+#, fuzzy
+#~| msgid "World"
+#~ msgctxt "StepCore|"
+#~ msgid "World"
+#~ msgstr "Дүние"
 
 #~ msgctxt "ObjectClass"
 #~ msgid "Body"
