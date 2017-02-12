@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_folderview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-11 08:15+0100\n"
+"POT-Creation-Date: 2017-02-12 07:49+0100\n"
 "PO-Revision-Date: 2013-05-28 03:59+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,7 @@ msgstr "Орналасуы"
 
 #: package/contents/config/config.qml:36
 #: package/contents/ui/ConfigIcons.qml:252
-#: package/contents/ui/FolderViewLayer.qml:342
+#: package/contents/ui/FolderViewLayer.qml:340
 msgid "Icons"
 msgstr "Таңбашалар"
 
@@ -59,10 +59,6 @@ msgstr ""
 
 #: package/contents/ui/AppletHandle.qml:312
 msgid "Remove"
-msgstr ""
-
-#: package/contents/ui/BackButtonItem.qml:105
-msgid "Back"
 msgstr ""
 
 #: package/contents/ui/ConfigFilter.qml:53
@@ -351,23 +347,29 @@ msgstr "Қалаған атауы"
 msgid "Enter custom title here"
 msgstr "Қалаған атауды осында келтіріңіз"
 
-#: package/contents/ui/ConfigTweaks.qml:42
+#: package/contents/ui/ConfigTweaks.qml:44
+msgid ""
+"Tweaks are experimental options that may become defaults depending on your "
+"feedback."
+msgstr ""
+
+#: package/contents/ui/ConfigTweaks.qml:50
 #, fuzzy
 #| msgid "Desktop Folder"
 msgid "Desktop Layout"
 msgstr "Үстел қапшығы"
 
-#: package/contents/ui/ConfigTweaks.qml:51
+#: package/contents/ui/ConfigTweaks.qml:59
 #, fuzzy
 #| msgid "Show the Desktop folder"
 msgid "Show the desktop toolbox"
 msgstr "Үстел қапшығын көрсету"
 
-#: package/contents/ui/ConfigTweaks.qml:59
+#: package/contents/ui/ConfigTweaks.qml:67
 msgid "Widget Handling"
 msgstr ""
 
-#: package/contents/ui/ConfigTweaks.qml:69
+#: package/contents/ui/ConfigTweaks.qml:77
 msgid "Press and hold widgets to move them and reveal their handles"
 msgstr ""
 
@@ -403,65 +405,166 @@ msgstr ""
 msgid "Configure Desktop"
 msgstr "Үстелді &жаңарту"
 
+#: package/contents/ui/UpButtonItem.qml:105
+msgid "Up"
+msgstr ""
+
 #: plugins/folder/directorypicker.cpp:45
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgid "Select Folder"
 msgstr "Барлығын таңдау"
 
-#: plugins/folder/foldermodel.cpp:254
+#: plugins/folder/foldermodel.cpp:250
 #, kde-format
 msgid "&Refresh Desktop"
 msgstr "Үстелді &жаңарту"
 
-#: plugins/folder/foldermodel.cpp:254 plugins/folder/foldermodel.cpp:1239
+#: plugins/folder/foldermodel.cpp:250 plugins/folder/foldermodel.cpp:1195
 #, kde-format
 msgid "&Refresh View"
 msgstr "Көрінсін &жаңартү"
 
-#: plugins/folder/foldermodel.cpp:1236
+#: plugins/folder/foldermodel.cpp:1192
 #, kde-format
 msgid "&Reload"
 msgstr "Қ&айта жүктеу"
 
-#: plugins/folder/foldermodel.cpp:1242
+#: plugins/folder/foldermodel.cpp:1198
 #, kde-format
 msgid "&Rename"
 msgstr "Қ&айта атау"
 
-#: plugins/folder/foldermodel.cpp:1245
+#: plugins/folder/foldermodel.cpp:1201
 #, kde-format
 msgid "&Move to Trash"
 msgstr "Өшірілгендерге &тастау"
 
-#: plugins/folder/foldermodel.cpp:1248
+#: plugins/folder/foldermodel.cpp:1204
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:334
 #, kde-format
 msgid "&Empty Trash Bin"
 msgstr "'Өшіргендер' шелегін &босату"
 
-#: plugins/folder/foldermodel.cpp:1251
-#, fuzzy, kde-format
-#| msgid "&Restore"
-msgctxt "Restore from trash"
-msgid "Restore"
-msgstr "Орнына қайта&ру"
-
-#: plugins/folder/foldermodel.cpp:1254
+#: plugins/folder/foldermodel.cpp:1207
 #, kde-format
 msgid "&Delete"
 msgstr "Ө&шіру"
 
-#: plugins/folder/foldermodel.cpp:1257
-#, kde-format
-msgid "&Open"
-msgstr "&Ашу"
-
-#: plugins/folder/foldermodel.cpp:1327
+#: plugins/folder/foldermodel.cpp:1267
 #, kde-format
 msgid "&Paste"
 msgstr "&Орналастыру"
 
-#: plugins/folder/foldermodel.cpp:1449
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:84
+#, kde-format
+msgctxt "@title:menu"
+msgid "Copy To"
+msgstr "Мынаған көшірмелеу"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:90
+#, kde-format
+msgctxt "@title:menu"
+msgid "Move To"
+msgstr "Мынаған жылжыту"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:114
+#, fuzzy, kde-format
+#| msgid "Desktop Folder"
+msgctxt "@title:menu"
+msgid "Home Folder"
+msgstr "Үстел қапшығы"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:121
+#, fuzzy, kde-format
+#| msgid "Desktop Folder"
+msgctxt "@title:menu"
+msgid "Root Folder"
+msgstr "Үстел қапшығы"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:156
+#, kde-format
+msgctxt "@title:menu in Copy To or Move To submenu"
+msgid "Browse..."
+msgstr "Ақтару..."
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:229
+#, kde-format
+msgctxt "@title:menu"
+msgid "Copy Here"
+msgstr "Осында көшірмелеу"
+
+#: plugins/folder/internallibkonq/konq_copytomenu.cpp:230
+#, kde-format
+msgctxt "@title:menu"
+msgid "Move Here"
+msgstr "Осында жылжыту"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:241
+#, kde-format
+msgid "&Open"
+msgstr "&Ашу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:264
+#, kde-format
+msgid "Create &Folder..."
+msgstr "Қ&апшықты құру..."
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:275
+#, fuzzy, kde-format
+#| msgid "&Restore"
+msgid "&Restore"
+msgstr "Орнына қайта&ру"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:299
+#, kde-format
+msgid "Show Original Directory"
+msgstr "Бастапқы қапшығын көрсету"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:299
+#, fuzzy, kde-format
+#| msgid "Show All Files"
+msgid "Show Original File"
+msgstr "Барлық файлдарды көрсету"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:346
+#, fuzzy, kde-format
+#| msgid "&Empty Trash Bin"
+msgid "&Configure Trash Bin"
+msgstr "'Өшіргендер' шелегін &босату"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:370
+#, kde-format
+msgid "&Bookmark This Page"
+msgstr "Парақты &бетбегілеу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:372
+#, kde-format
+msgid "&Bookmark This Location"
+msgstr "Орынды &бетбегілеу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:375
+#, kde-format
+msgid "&Bookmark This Folder"
+msgstr "Қапшықты &бетбегілеу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:377
+#, kde-format
+msgid "&Bookmark This Link"
+msgstr "Сілтемені &бетбегілеу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:379
+#, kde-format
+msgid "&Bookmark This File"
+msgstr "Файлды &бетбегілеу"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:413
+#, fuzzy, kde-format
+#| msgid "Previews:"
+msgid "Preview In"
+msgstr "Мазмұнын көру:"
+
+#: plugins/folder/internallibkonq/konq_popupmenu.cpp:448
 #, kde-format
 msgid "&Properties"
 msgstr "Қасиетте&р"
@@ -524,74 +627,6 @@ msgstr ""
 #, kde-format
 msgid "Locked"
 msgstr ""
-
-#~ msgctxt "@title:menu"
-#~ msgid "Copy To"
-#~ msgstr "Мынаған көшірмелеу"
-
-#~ msgctxt "@title:menu"
-#~ msgid "Move To"
-#~ msgstr "Мынаған жылжыту"
-
-#, fuzzy
-#~| msgid "Desktop Folder"
-#~ msgctxt "@title:menu"
-#~ msgid "Home Folder"
-#~ msgstr "Үстел қапшығы"
-
-#, fuzzy
-#~| msgid "Desktop Folder"
-#~ msgctxt "@title:menu"
-#~ msgid "Root Folder"
-#~ msgstr "Үстел қапшығы"
-
-#~ msgctxt "@title:menu in Copy To or Move To submenu"
-#~ msgid "Browse..."
-#~ msgstr "Ақтару..."
-
-#~ msgctxt "@title:menu"
-#~ msgid "Copy Here"
-#~ msgstr "Осында көшірмелеу"
-
-#~ msgctxt "@title:menu"
-#~ msgid "Move Here"
-#~ msgstr "Осында жылжыту"
-
-#~ msgid "Create &Folder..."
-#~ msgstr "Қ&апшықты құру..."
-
-#~ msgid "Show Original Directory"
-#~ msgstr "Бастапқы қапшығын көрсету"
-
-#, fuzzy
-#~| msgid "Show All Files"
-#~ msgid "Show Original File"
-#~ msgstr "Барлық файлдарды көрсету"
-
-#, fuzzy
-#~| msgid "&Empty Trash Bin"
-#~ msgid "&Configure Trash Bin"
-#~ msgstr "'Өшіргендер' шелегін &босату"
-
-#~ msgid "&Bookmark This Page"
-#~ msgstr "Парақты &бетбегілеу"
-
-#~ msgid "&Bookmark This Location"
-#~ msgstr "Орынды &бетбегілеу"
-
-#~ msgid "&Bookmark This Folder"
-#~ msgstr "Қапшықты &бетбегілеу"
-
-#~ msgid "&Bookmark This Link"
-#~ msgstr "Сілтемені &бетбегілеу"
-
-#~ msgid "&Bookmark This File"
-#~ msgstr "Файлды &бетбегілеу"
-
-#, fuzzy
-#~| msgid "Previews:"
-#~ msgid "Preview In"
-#~ msgstr "Мазмұнын көру:"
 
 #~ msgid "Share"
 #~ msgstr "Ортақтастыру"
