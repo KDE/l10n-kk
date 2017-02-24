@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-21 08:43+0100\n"
+"POT-Creation-Date: 2017-02-24 03:55+0100\n"
 "PO-Revision-Date: 2013-11-20 06:31+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -393,7 +393,7 @@ msgstr "Атауы"
 
 #: debugger/variable/variablecollection.cpp:422
 #: debugger/variable/variabletooltip.cpp:102
-#: shell/settings/environmentgroupmodel.cpp:98
+#: shell/settings/environmentprofilemodel.cpp:106
 #, kde-format
 msgid "Value"
 msgstr "Мәні"
@@ -1175,7 +1175,7 @@ msgid "Class"
 msgstr "Класс"
 
 #: language/duchain/navigation/abstractnavigationcontext.cpp:403
-#: shell/settings/environmentgroupmodel.cpp:95
+#: shell/settings/environmentprofilemodel.cpp:104
 #, kde-format
 msgid "Variable"
 msgstr "Айнымалы"
@@ -3190,7 +3190,7 @@ msgid "Provide a name for the project"
 msgstr "Жобаға атау беру"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: shell/projectinfopage.ui:30
+#: shell/projectinfopage.ui:30 shell/settings/environmentwidget.cpp:188
 #, kde-format
 msgid "Name:"
 msgstr "Атауы:"
@@ -3786,72 +3786,80 @@ msgstr "Пішімдеу құралы жоқ"
 msgid "Preview"
 msgstr "Қарап-шығу"
 
-#: shell/settings/environmentpreferences.cpp:84
+#: shell/settings/environmentpreferences.cpp:86
 #, fuzzy, kde-format
 #| msgid "Environment group:"
 msgid "Environment"
 msgstr "Орта тобы:"
 
-#: shell/settings/environmentpreferences.cpp:89
+#: shell/settings/environmentpreferences.cpp:91
 #, fuzzy, kde-format
 #| msgid "New Environment Variable"
 msgid "Configure Environment Variables"
 msgstr "Жаңа орта айнымалысы"
 
-#: shell/settings/environmentwidget.cpp:53
+#: shell/settings/environmentprofilelistmodel.cpp:61
+#, kde-format
+msgid "%1 (default profile)"
+msgstr ""
+
+#: shell/settings/environmentwidget.cpp:94
 #, fuzzy, kde-format
 #| msgid "Add new variable"
-msgid "Enter variable ..."
+msgid "Enter variable..."
 msgstr "Жаңа айнымалыны қосу"
 
+#: shell/settings/environmentwidget.cpp:182
+#, fuzzy, kde-format
+#| msgid "New Environment Variable"
+msgid "Enter Name of New Environment Profile"
+msgstr "Жаңа орта айнымалысы"
+
 #. i18n: ectx: property (toolTip), widget (QPushButton, batchModeEditButton)
-#: shell/settings/environmentwidget.cpp:154
-#: shell/settings/environmentwidget.ui:115
+#: shell/settings/environmentwidget.cpp:245
+#: shell/settings/environmentwidget.ui:130
 #, kde-format
 msgid "Batch Edit Mode"
 msgstr ""
 
-#: shell/settings/environmentwidget.cpp:202
-#, fuzzy, kde-format
-#| msgid "%1 (%2 Filtered)"
-msgctxt "a copy of the existing environment was created"
-msgid "%1 (Cloned %2)"
-msgstr "%1 (%2 сүзгіленген)"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: shell/settings/environmentwidget.ui:22
-#, kde-format
-msgid "Environment group:"
+#, fuzzy, kde-format
+#| msgid "Environment group:"
+msgid "Environment profile:"
 msgstr "Орта тобы:"
 
-#. i18n: ectx: property (text), widget (QPushButton, addgrpBtn)
-#: shell/settings/environmentwidget.ui:42
-#, kde-format
-msgid "Add Group"
-msgstr ""
+#. i18n: ectx: property (toolTip), widget (QPushButton, addProfileButton)
+#: shell/settings/environmentwidget.ui:39
+#, fuzzy, kde-format
+#| msgid "&Add Tool View..."
+msgid "Add profile..."
+msgstr "Құралдар панелін қ&осу..."
 
-#. i18n: ectx: property (text), widget (QPushButton, clonegrpBtn)
+#. i18n: ectx: property (toolTip), widget (QPushButton, cloneProfileButton)
 #: shell/settings/environmentwidget.ui:49
 #, fuzzy, kde-format
-#| msgid "Remove All"
-msgid "Clone Group"
-msgstr "Бүкілін өшіру"
+#| msgid "Clone Template"
+msgid "Clone profile..."
+msgstr "Үлгіні қосарлау"
 
-#. i18n: ectx: property (text), widget (QPushButton, removegrpBtn)
-#: shell/settings/environmentwidget.ui:56
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeProfileButton)
+#: shell/settings/environmentwidget.ui:59
 #, fuzzy, kde-format
-#| msgid "Remove All"
-msgid "Remove Group"
-msgstr "Бүкілін өшіру"
+#| msgctxt "@action:button"
+#| msgid "Remove lock file"
+msgid "Remove profile"
+msgstr "Иемдеу файлын өшіру"
 
-#. i18n: ectx: property (text), widget (QPushButton, setAsDefaultBtn)
-#: shell/settings/environmentwidget.ui:63
-#, kde-format
-msgid "Set As Default Group"
+#. i18n: ectx: property (toolTip), widget (QPushButton, setAsDefaultProfileButton)
+#: shell/settings/environmentwidget.ui:69
+#, fuzzy, kde-format
+#| msgid "Set As Default Group"
+msgid "Set as default"
 msgstr "Әдетті топ қылу"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteButton)
-#: shell/settings/environmentwidget.ui:102
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeVariableButton)
+#: shell/settings/environmentwidget.ui:114
 #, kde-format
 msgid "Remove variable"
 msgstr "Айнымалыны өшіру"
@@ -5573,6 +5581,22 @@ msgid "Logview"
 msgstr "Журнал көрінісі"
 
 #, fuzzy
+#~| msgid "%1 (%2 Filtered)"
+#~ msgctxt "a copy of the existing environment was created"
+#~ msgid "%1 (Cloned %2)"
+#~ msgstr "%1 (%2 сүзгіленген)"
+
+#, fuzzy
+#~| msgid "Remove All"
+#~ msgid "Clone Group"
+#~ msgstr "Бүкілін өшіру"
+
+#, fuzzy
+#~| msgid "Remove All"
+#~ msgid "Remove Group"
+#~ msgstr "Бүкілін өшіру"
+
+#, fuzzy
 #~| msgid "Remove All"
 #~ msgid "Remove Selected"
 #~ msgstr "Бүкілін өшіру"
@@ -6011,9 +6035,6 @@ msgstr "Журнал көрінісі"
 #~ msgid_plural "Session crashed %1 times in a row"
 #~ msgstr[0] "Сеанс %1 рет қатар қирады"
 
-#~ msgid "New Environment Variable"
-#~ msgstr "Жаңа орта айнымалысы"
-
 #~ msgctxt "Name of an environment variable"
 #~ msgid "Variable Name:"
 #~ msgstr "Айнымалының атауы:"
@@ -6093,10 +6114,6 @@ msgstr "Журнал көрінісі"
 #~ "><strong>Абайлаңыз:</strong> Бұндайды тек бұл сеанста басқа процестері "
 #~ "болмаса ғана істеңіз.</p><p>Әйтпесе, шатасқан бағдаламаның данасын "
 #~ "жабыңыз немесе басқа сеансты бастаңыз.</p>"
-
-#~ msgctxt "@action:button"
-#~ msgid "Remove lock file"
-#~ msgstr "Иемдеу файлын өшіру"
 
 #~ msgid "Do not obtain"
 #~ msgstr "Керегі жоқ"
