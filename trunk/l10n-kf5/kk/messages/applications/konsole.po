@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-22 02:46+0200\n"
+"POT-Creation-Date: 2017-04-28 02:46+0200\n"
 "PO-Revision-Date: 2013-11-18 03:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -126,6 +126,7 @@ msgstr ""
 
 #: Application.cpp:76
 #, kde-format
+msgctxt "@info:shell"
 msgid "Run in a separate process"
 msgstr ""
 
@@ -414,7 +415,9 @@ msgid "Color 8 (Faint)"
 msgstr "8-түс (қанық)"
 
 #: ColorScheme.cpp:348
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Un-named Color Scheme"
+msgctxt "@item"
 msgid "Un-named Color Scheme"
 msgstr "Аталмаған түс сұлбасы"
 
@@ -468,13 +471,17 @@ msgctxt "Filter in file open dialog"
 msgid "Supported Images"
 msgstr ""
 
-#: ColorSchemeEditor.cpp:238 ColorSchemeEditor.cpp:239
-#, kde-format
+#: ColorSchemeEditor.cpp:238
+#, fuzzy, kde-format
+#| msgid "New Color Scheme"
+msgctxt "@title:window"
 msgid "New Color Scheme"
 msgstr "Жаңа түс сұлбасы"
 
 #: ColorSchemeEditor.cpp:241
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Edit Color Scheme"
+msgctxt "@title:window"
 msgid "Edit Color Scheme"
 msgstr "Түс сұлбасын өңдеу"
 
@@ -1696,19 +1703,17 @@ msgctxt "@info:tooltip"
 msgid "Sets whether matching text should be highlighted"
 msgstr "Сәйкесті мәтіндерді бояулап ерекшелеуді бұйыру"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SearchReverseSearch)
-#. i18n: ectx: label, entry (SearchReverseSearch), group (SearchSettings)
-#: IncrementalSearchBar.cpp:134 settings/GeneralSettings.ui:195
-#: settings/konsole.kcfg:60
-#, kde-format
+#: IncrementalSearchBar.cpp:134
+#, fuzzy, kde-format
+#| msgid "Search backwards"
+msgctxt "@item:inmenu"
 msgid "Search backwards"
 msgstr "Артқа қарай іздеу"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_SearchReverseSearch)
-#. i18n: ectx: tooltip, entry (SearchReverseSearch), group (SearchSettings)
-#: IncrementalSearchBar.cpp:136 settings/GeneralSettings.ui:198
-#: settings/konsole.kcfg:61
-#, kde-format
+#: IncrementalSearchBar.cpp:136
+#, fuzzy, kde-format
+#| msgid "Sets whether search should start from the bottom"
+msgctxt "@info:tooltip"
 msgid "Sets whether search should start from the bottom"
 msgstr "Төменнен бастап іздеу керек деп орнату"
 
@@ -1719,7 +1724,9 @@ msgid "From bottom"
 msgstr "Төменнен"
 
 #: IncrementalSearchBar.cpp:158
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search for the current search phrase from the bottom"
+msgctxt "@info:tooltip"
 msgid "Search for the current search phrase from the bottom"
 msgstr "Таңдалған сөйлемді төменнен бастап іздеу"
 
@@ -1730,7 +1737,9 @@ msgid "From top"
 msgstr "Жоғарынан"
 
 #: IncrementalSearchBar.cpp:163
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search for the current search phrase from the top"
+msgctxt "@info:tooltip"
 msgid "Search for the current search phrase from the top"
 msgstr "Таңдалған сөйлемді жоғарынан бастап іздеу"
 
@@ -1784,6 +1793,7 @@ msgstr "Терминал эмуляторы"
 
 #: main.cpp:101
 #, kde-format
+msgctxt "@info:credit"
 msgid "(c) 1997-2017, The Konsole Developers"
 msgstr ""
 
@@ -2179,7 +2189,12 @@ msgstr "&Әдетті қылу"
 msgid "Default profile"
 msgstr "Әдетті профилі"
 
-#: ProfileManager.cpp:366
+#: ProfileManager.cpp:333
+#, kde-format
+msgid "Konsole does not have permission to save this profile to %1"
+msgstr ""
+
+#: ProfileManager.cpp:369
 #, fuzzy, kde-format
 #| msgid "Edit Profile \"%1\""
 msgctxt "The default name of a profile"
@@ -2294,18 +2309,18 @@ msgstr "Linux консолі"
 msgid "Solaris console"
 msgstr "Solaris консолі"
 
-#: Session.cpp:348
+#: Session.cpp:347
 #, kde-format
 msgid "Could not find binary: "
 msgstr "Табылмаған бинарлық: "
 
-#: Session.cpp:357
+#: Session.cpp:356
 #, kde-format
 msgctxt "@info:shell Alert the user with red color text"
 msgid "Warning: "
 msgstr "Ескерту: "
 
-#: Session.cpp:414
+#: Session.cpp:413
 #, kde-format
 msgid ""
 "Could not find '%1', starting '%2' instead.  Please check your profile "
@@ -2314,32 +2329,32 @@ msgstr ""
 "'%1' табылмай, оның орнына '%2' жегілді.  Профиліңіздің параметрлерін "
 "тексеріңіз."
 
-#: Session.cpp:417
+#: Session.cpp:416
 #, kde-format
 msgid "Could not find an interactive shell to start."
 msgstr "Жегетін интерактивті командалық орта табылмады."
 
-#: Session.cpp:455
+#: Session.cpp:454
 #, kde-format
 msgid "Could not start program '%1' with arguments '%2'."
 msgstr "'%1' бағдарламасы '%2' аргументтерімен жегілмеді."
 
-#: Session.cpp:584
+#: Session.cpp:583
 #, kde-format
 msgid "Silence in session '%1'"
 msgstr "'%1' сеансында тыныштық"
 
-#: Session.cpp:632
+#: Session.cpp:631
 #, kde-format
 msgid "Bell in session '%1'"
 msgstr "'%1' сеансы қоңырау соқты"
 
-#: Session.cpp:645
+#: Session.cpp:644
 #, kde-format
 msgid "Activity in session '%1'"
 msgstr "'%1' сеансында белсендік"
 
-#: Session.cpp:839
+#: Session.cpp:838
 #, kde-format
 msgid ""
 "The D-Bus methods sendText/runCommand were just used.  There are security "
@@ -2348,23 +2363,23 @@ msgid ""
 "warning will only show once for this Konsole instance.</p>"
 msgstr ""
 
-#: Session.cpp:866
+#: Session.cpp:865
 #, kde-format
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "Бітті"
 
-#: Session.cpp:880 Session.cpp:892
+#: Session.cpp:879 Session.cpp:891
 #, kde-format
 msgid "Program '%1' crashed."
 msgstr "'%1' бағдарламасы қирады."
 
-#: Session.cpp:882
+#: Session.cpp:881
 #, kde-format
 msgid "Program '%1' exited with status %2."
 msgstr "'%1' бағдарламасы, %2 күй-жайын хабарлап, аяқталды."
 
-#: Session.cpp:1279
+#: Session.cpp:1278
 #, kde-format
 msgid "ZModem Progress"
 msgstr "ZModem күй-жайы"
@@ -2816,6 +2831,20 @@ msgstr "Үлгі өрнек сәйкестігі"
 #| msgid "Highlight all matches"
 msgid "Highlight all search matches"
 msgstr "Бүкіл сәйкестіктерін бояулау"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SearchReverseSearch)
+#. i18n: ectx: label, entry (SearchReverseSearch), group (SearchSettings)
+#: settings/GeneralSettings.ui:195 settings/konsole.kcfg:60
+#, kde-format
+msgid "Search backwards"
+msgstr "Артқа қарай іздеу"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_SearchReverseSearch)
+#. i18n: ectx: tooltip, entry (SearchReverseSearch), group (SearchSettings)
+#: settings/GeneralSettings.ui:198 settings/konsole.kcfg:61
+#, kde-format
+msgid "Sets whether search should start from the bottom"
+msgstr "Төменнен бастап іздеу керек деп орнату"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: settings/GeneralSettings.ui:216
@@ -3278,85 +3307,85 @@ msgstr ""
 "<title>Қойынды жиегі</title><para>Қойынды жиегі оларды аралауға мүмкіндік "
 "береді. Қос түртім жасап атауын өзгертуге болады.</para>"
 
-#: ViewManager.cpp:132
+#: ViewManager.cpp:131
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Next Tab"
 msgstr "Келесі қойынды"
 
-#: ViewManager.cpp:133
+#: ViewManager.cpp:132
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Previous Tab"
 msgstr "Алдыңғы қойынды"
 
-#: ViewManager.cpp:134
+#: ViewManager.cpp:133
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Switch to Last Tab"
 msgstr "Соңғы қойындыға ауысу"
 
-#: ViewManager.cpp:135
+#: ViewManager.cpp:134
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Next View Container"
 msgstr "Келесі көрініс контейнері"
 
-#: ViewManager.cpp:137
+#: ViewManager.cpp:136
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Move Tab Left"
 msgstr "Қойындыны солға жылжыту"
 
-#: ViewManager.cpp:138
+#: ViewManager.cpp:137
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Move Tab Right"
 msgstr "Қойындыны оңға жылжыту"
 
-#: ViewManager.cpp:146
+#: ViewManager.cpp:145
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Split View Left/Right"
 msgstr "Көріністі оң/сол жақтарға бөлу"
 
-#: ViewManager.cpp:153
+#: ViewManager.cpp:152
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Split View Top/Bottom"
 msgstr "Көріністі жоғары/төмен жақтарға бөлу"
 
-#: ViewManager.cpp:158
+#: ViewManager.cpp:157
 #, kde-format
 msgctxt "@action:inmenu Close Active View"
 msgid "Close Active"
 msgstr "Назардағыны жабу"
 
-#: ViewManager.cpp:167
+#: ViewManager.cpp:166
 #, kde-format
 msgctxt "@action:inmenu Close Other Views"
 msgid "Close Others"
 msgstr "Басқаларын жабу"
 
-#: ViewManager.cpp:176
+#: ViewManager.cpp:175
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Expand View"
 msgstr "Көріністі кеңейту"
 
-#: ViewManager.cpp:184
+#: ViewManager.cpp:183
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Shrink View"
 msgstr "Көріністі тарлыту"
 
-#: ViewManager.cpp:195
+#: ViewManager.cpp:194
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "D&etach Current Tab"
 msgstr "Назардағы қойындыны бөл&іп алу"
 
-#: ViewManager.cpp:217
+#: ViewManager.cpp:216
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Switch to Tab %1"
