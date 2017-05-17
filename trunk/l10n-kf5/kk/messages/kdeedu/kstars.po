@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-16 02:57+0200\n"
+"POT-Creation-Date: 2017-05-17 05:10+0200\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1902,7 +1902,7 @@ msgstr "Еегжей-тегжейі - Координаттары"
 
 #. i18n: ectx: property (text), widget (QLabel, CoordTitle)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/details_position.ui:66 ekos/mount/mount.ui:178
+#: dialogs/details_position.ui:66 ekos/mount/mount.ui:185
 #: kstarslite/qml/dialogs/DetailsDialog.qml:242 printing/detailstable.cpp:534
 #, kde-format, kde-kuit-format
 msgid "Coordinates"
@@ -4208,7 +4208,7 @@ msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғар
 
 #: ekos/align/align.cpp:3038 ekos/capture/capture.cpp:1500
 #: ekos/ekosmanager.cpp:1469 ekos/focus/focus.cpp:2226 ekos/guide/guide.cpp:880
-#: ekos/mount/mount.cpp:327 ekos/scheduler/scheduler.cpp:280
+#: ekos/mount/mount.cpp:410 ekos/scheduler/scheduler.cpp:280
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
 msgid "%1 %2"
@@ -4762,7 +4762,7 @@ msgstr "Сиэттл"
 #. i18n: ectx: property (text), widget (QCheckBox, raCheckBatch)
 #. i18n: ectx: property (text), widget (QCheckBox, RACheckBatch)
 #: ekos/align/align.ui:257 ekos/align/align.ui:348 ekos/ekosmanager.ui:912
-#: ekos/mount/mount.ui:184 tools/adddeepskyobject.ui:167 tools/altvstime.ui:97
+#: ekos/mount/mount.ui:191 tools/adddeepskyobject.ui:167 tools/altvstime.ui:97
 #: tools/argsetradec.ui:37 tools/modcalcgalcoord.ui:288
 #: tools/modcalcplanets.ui:251 tools/modcalcvlsr.ui:508
 #, kde-format
@@ -7223,7 +7223,7 @@ msgstr "Уоллес"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/capture/calibrationoptions.ui:76 ekos/mount/mount.ui:215
+#: ekos/capture/calibrationoptions.ui:76 ekos/mount/mount.ui:222
 #: tools/argsetaltaz.ui:30 tools/modcalcplanets.ui:303
 #, kde-format
 msgid "Az:"
@@ -7232,7 +7232,7 @@ msgstr "Азим.:"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: ekos/capture/calibrationoptions.ui:90 ekos/mount/mount.ui:229
+#: ekos/capture/calibrationoptions.ui:90 ekos/mount/mount.ui:236
 #: tools/argsetaltaz.ui:37 tools/modcalcplanets.ui:296
 #, kde-format
 msgid "Alt:"
@@ -7530,7 +7530,7 @@ msgstr "секунд қалды"
 
 #: ekos/capture/capture.cpp:1612
 #, kde-format
-msgid "You must set remote remote directory for Local & Both modes."
+msgid "You must set remote directory for Local & Both modes."
 msgstr ""
 
 #: ekos/capture/capture.cpp:1790
@@ -11716,62 +11716,69 @@ msgstr "12x"
 msgid "1024"
 msgstr ""
 
-#: ekos/mount/mount.cpp:86
+#: ekos/mount/mount.cpp:96
 #, fuzzy, kde-format
 #| msgid "Calibration completed."
 msgid "Alignment Model cleared."
 msgstr "Калибрлеу бітті."
 
-#: ekos/mount/mount.cpp:88
+#: ekos/mount/mount.cpp:98
 #, fuzzy, kde-format
 #| msgid "Polar Alignment"
 msgid "Failed to clear Alignment Model."
 msgstr "Полярлық дәлдеу"
 
-#: ekos/mount/mount.cpp:136 ekos/mount/mount.cpp:447
+#: ekos/mount/mount.cpp:122
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Movement Control"
+msgid "Mount Control"
+msgstr "Жылжуды басқару"
+
+#: ekos/mount/mount.cpp:186 ekos/mount/mount.cpp:543
 #, kde-format
 msgid "%1 guide scope"
 msgstr ""
 
-#: ekos/mount/mount.cpp:231
+#: ekos/mount/mount.cpp:299
 #, kde-format
 msgid ""
 "Telescope altitude is below minimum altitude limit of %1. Aborting motion..."
 msgstr ""
 
-#: ekos/mount/mount.cpp:243
+#: ekos/mount/mount.cpp:311
 #, kde-format
 msgid ""
 "Telescope altitude is above maximum altitude limit of %1. Aborting motion..."
 msgstr ""
 
-#: ekos/mount/mount.cpp:284
+#: ekos/mount/mount.cpp:352
 #, kde-format
 msgid ""
 "Error syncing telescope info. Please fill telescope aperture and focal "
 "length."
 msgstr ""
 
-#: ekos/mount/mount.cpp:286
+#: ekos/mount/mount.cpp:354
 #, kde-format
 msgid ""
 "Error syncing telescope info. Check INDI control panel for more details."
 msgstr ""
 
-#: ekos/mount/mount.cpp:296
+#: ekos/mount/mount.cpp:364
 #, fuzzy, kde-format
 #| msgid "Telescope Wizard completed successfully."
 msgid "Telescope info updated successfully."
 msgstr "Телескоп шебері сәтті аяқтады."
 
-#: ekos/mount/mount.cpp:341
+#: ekos/mount/mount.cpp:424
 #, fuzzy, kde-format
 #| msgid "%1"
 msgctxt "Message shown in Ekos Mount module"
 msgid "%1"
 msgstr "%1"
 
-#: ekos/mount/mount.cpp:474
+#: ekos/mount/mount.cpp:570
 #, fuzzy, kde-format
 #| msgid "Failed to set binning."
 msgid "Failed to save telescope information."
@@ -11814,28 +11821,36 @@ msgstr "Көрсетілген баптау файлын қолдану"
 msgid "Save Telescope Info"
 msgstr "Телескоп мәліметін сақтау"
 
+#. i18n: ectx: property (text), widget (QPushButton, mountToolBoxB)
+#: ekos/mount/mount.ui:163
+#, fuzzy, kde-format
+#| msgctxt "City in Australia"
+#| msgid "Mount Stromlo"
+msgid "Mount Control Box"
+msgstr "Маунт-Стромло"
+
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: ekos/mount/mount.ui:198
+#: ekos/mount/mount.ui:205
 #, kde-format
 msgid "DEC:"
 msgstr "ЕҢС:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: ekos/mount/mount.ui:243
+#: ekos/mount/mount.ui:250
 #, fuzzy, kde-format
 #| msgid "H:"
 msgid "HA:"
 msgstr "Б:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: ekos/mount/mount.ui:257
+#: ekos/mount/mount.ui:264
 #, fuzzy, kde-format
 #| msgid "LSR"
 msgid "LST"
 msgstr "ҚЖС (Қимылсыз жер стандарты)"
 
 #. i18n: ectx: property (text), widget (QPushButton, parkB)
-#: ekos/mount/mount.ui:279
+#: ekos/mount/mount.ui:286
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park"
@@ -11843,7 +11858,7 @@ msgid "Park"
 msgstr "Жинап қою"
 
 #. i18n: ectx: property (text), widget (QPushButton, unparkB)
-#: ekos/mount/mount.ui:289
+#: ekos/mount/mount.ui:296
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park"
@@ -11851,14 +11866,14 @@ msgid "UnPark"
 msgstr "Жинап қою"
 
 #. i18n: ectx: property (text), widget (QPushButton, clearAlignmentModelB)
-#: ekos/mount/mount.ui:296
+#: ekos/mount/mount.ui:316
 #, fuzzy, kde-format
 #| msgid "Polar Alignment"
 msgid "Clear Alignment Model"
 msgstr "Полярлық дәлдеу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: ekos/mount/mount.ui:328
+#: ekos/mount/mount.ui:335
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Motion"
@@ -11866,21 +11881,21 @@ msgid "Motion"
 msgstr "Жылжу"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, slewSpeedCombo)
-#: ekos/mount/mount.ui:468
+#: ekos/mount/mount.ui:475
 #, fuzzy, kde-format
 #| msgid "Adjust time step"
 msgid "Slew speed"
 msgstr "Уақыт қадамынын таңдау"
 
 #. i18n: ectx: property (title), widget (QGroupBox, LimitGroup)
-#: ekos/mount/mount.ui:477 tools/scriptbuilder.cpp:688
+#: ekos/mount/mount.ui:484 tools/scriptbuilder.cpp:688
 #, kde-format
 msgid "Limits"
 msgstr "Шектері"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, minAltLabel)
 #. i18n: ectx: whatsthis, entry (MinimumAltLimit), group (Mount)
-#: ekos/mount/mount.ui:486 kstars.kcfg:1396
+#: ekos/mount/mount.ui:493 kstars.kcfg:1396
 #, kde-format
 msgid ""
 "Minimum telescope altitude limit. If the telescope is below this limit, it "
@@ -11888,7 +11903,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, minAltLabel)
-#: ekos/mount/mount.ui:489
+#: ekos/mount/mount.ui:496
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "min Alt"
@@ -11896,7 +11911,7 @@ msgid "Min. Alt:"
 msgstr "мин. биік."
 
 #. i18n: ectx: property (toolTip), widget (QLabel, maxAltLabel)
-#: ekos/mount/mount.ui:518
+#: ekos/mount/mount.ui:525
 #, kde-format
 msgid ""
 "<html><head/><body><p>Maximum telescope altitude limit. If the telescope is "
@@ -11904,7 +11919,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, maxAltLabel)
-#: ekos/mount/mount.ui:521
+#: ekos/mount/mount.ui:528
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "max Alt"
@@ -11912,7 +11927,7 @@ msgid "Max. Alt:"
 msgstr "макс. биік."
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableLimitsCheck)
-#: ekos/mount/mount.ui:547
+#: ekos/mount/mount.ui:554
 #, fuzzy, kde-format
 #| msgid "Enable directions"
 msgid "Enable Limits"
