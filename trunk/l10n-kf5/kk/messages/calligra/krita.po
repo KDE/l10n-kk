@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-25 02:57+0200\n"
+"POT-Creation-Date: 2017-05-31 06:44+0200\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -8711,7 +8711,7 @@ msgstr "Сызықтар"
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:35
 #: plugins/flake/pathshapes/spiral/SpiralShapeConfigWidget.ui:20
 #: plugins/impex/ppm/kis_wdg_options_ppm.ui:17
-#: plugins/tools/basictools/wdgmultihandtool.ui:35
+#: plugins/tools/basictools/wdgmultihandtool.ui:57
 #, kde-format
 msgid "Type:"
 msgstr "Түрі:"
@@ -9136,8 +9136,10 @@ msgstr "Өлшемі"
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intHalfWidth)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intHalfHeight)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, radius)
+#. i18n: ectx: property (suffix), widget (KisDoubleParseSpinBox, spinMoveStep)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intX)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intY)
+#. i18n: ectx: property (suffix), widget (QSpinBox, patchRadius)
 #: libs/image/brushengine/kis_standard_uniform_properties_factory.cpp:60
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:593
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:596
@@ -9195,14 +9197,16 @@ msgstr "Өлшемі"
 #: plugins/tools/basictools/kis_tool_fill.cc:196
 #: plugins/tools/basictools/kis_tool_movetooloptionswidget.cpp:63
 #: plugins/tools/basictools/kis_tool_movetooloptionswidget.cpp:64
-#: plugins/tools/basictools/kis_tool_multihand.cpp:302
+#: plugins/tools/basictools/kis_tool_multihand.cpp:304
 #: plugins/tools/basictools/wdgcolorpicker.ui:64
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:231
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:234
+#: plugins/tools/basictools/wdgmovetool.ui:127
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:223
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:226
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:113
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:138
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:246
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:271
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:130
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:108
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:109
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:118
@@ -21134,10 +21138,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, CurveResetButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnReset)
 #. i18n: ectx: property (text), widget (QPushButton, btnResetCustomLine)
+#. i18n: ectx: property (text), widget (QPushButton, resetOriginButton)
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:679
 #: plugins/dockers/artisticcolorselector/forms/wdgArtisticColorSelector.ui:32
 #: plugins/impex/video/video_export_options_dialog.ui:128
 #: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:197
+#: plugins/tools/basictools/wdgmultihandtool.ui:97
 #, kde-format
 msgid "Reset"
 msgstr "Ысыру"
@@ -26680,7 +26686,7 @@ msgstr "Қалыпы:"
 #: plugins/filters/blur/wdg_lens_blur.ui:73
 #: plugins/filters/blur/wdg_lens_blur.ui:92
 #: plugins/filters/unsharp/wdgunsharp.ui:23
-#: plugins/tools/basictools/wdgmultihandtool.ui:58
+#: plugins/tools/basictools/wdgmultihandtool.ui:221
 #, kde-format
 msgid "Radius:"
 msgstr "Радиусы:"
@@ -26692,7 +26698,7 @@ msgstr "Радиусы:"
 #: plugins/filters/blur/wdg_lens_blur.ui:102
 #: plugins/filters/blur/wdg_lens_blur.ui:124
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:144
-#: plugins/tools/basictools/wdgmultihandtool.ui:77
+#: plugins/tools/basictools/wdgmultihandtool.ui:118
 #, kde-format
 msgid "Rotation:"
 msgstr "Бұрылысы: "
@@ -27796,7 +27802,9 @@ msgstr "Тегістеу қалқасы"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: ectx: property (text), widget (QLabel, lblAmount)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/unsharp/wdgunsharp.ui:68
+#: plugins/tools/basictools/wdgmovetool.ui:149
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1952
 #, kde-format
 msgid "Amount:"
@@ -29088,7 +29096,7 @@ msgstr "Мәтіннің көлеңкесі"
 #. i18n: ectx: property (title), widget (QGroupBox, positionGroupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, moveGroup)
 #: plugins/flake/textshape/dialogs/FontDecorations.ui:289
-#: plugins/tools/basictools/wdgmovetool.ui:138
+#: plugins/tools/basictools/wdgmovetool.ui:184
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:998
 #, fuzzy, kde-format
 msgid "Position"
@@ -33437,7 +33445,7 @@ msgstr "0%"
 #: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:53
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:60
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:62
-#: plugins/tools/basictools/kis_tool_multihand.cpp:272
+#: plugins/tools/basictools/kis_tool_multihand.cpp:274
 #, kde-format
 msgid "Mirror"
 msgstr "Айналық шағылыс"
@@ -33804,8 +33812,10 @@ msgstr "Оң шиыршық"
 
 #. i18n: ectx: property (text), widget (QRadioButton, moveBtn)
 #. i18n: ectx: property (text), widget (QToolButton, liquifyMove)
+#. i18n: ectx: property (text), widget (QPushButton, moveOriginButton)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:172
 #: plugins/paintops/deform/wdgdeformoptions.ui:75
+#: plugins/tools/basictools/wdgmultihandtool.ui:78
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1737
 #, kde-format
 msgid "Move"
@@ -35164,9 +35174,7 @@ msgstr "%1 с"
 msgid "360°"
 msgstr "360°"
 
-#. i18n: ectx: property (text), widget (QLabel, Fast)
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:262
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:100
 #, kde-format
 msgid "Fast"
 msgstr "Жылдам"
@@ -36009,6 +36017,12 @@ msgstr "Көмекші жабысқақтық"
 msgid "Toggle Assistant"
 msgstr "Көмекші:"
 
+#: plugins/tools/basictools/kis_tool_brush.cc:439
+#, fuzzy, kde-format
+#| msgid "Magnetify"
+msgid "Magnetism:"
+msgstr "Магниттеу"
+
 #: plugins/tools/basictools/kis_tool_brush.cc:442
 #, fuzzy, kde-format
 msgid "Snap Single:"
@@ -36087,7 +36101,7 @@ msgid "Grow selection: "
 msgstr "Кеңейту жиегі"
 
 #: plugins/tools/basictools/kis_tool_fill.cc:191
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:209
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:200
 #, kde-format
 msgid "Feathering radius: "
 msgstr "Ерту радиусы:"
@@ -36282,22 +36296,22 @@ msgctxt "(qtundo-format)"
 msgid "Multibrush Stroke"
 msgstr "Қылқалам"
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:271
+#: plugins/tools/basictools/kis_tool_multihand.cpp:273
 #, kde-format
 msgid "Symmetry"
 msgstr "Симметрия"
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:273
+#: plugins/tools/basictools/kis_tool_multihand.cpp:275
 #, kde-format
 msgid "Translate"
 msgstr "Жылжыту"
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:274
+#: plugins/tools/basictools/kis_tool_multihand.cpp:276
 #, kde-format
 msgid "Snowflake"
 msgstr ""
 
-#: plugins/tools/basictools/kis_tool_multihand.h:102
+#: plugins/tools/basictools/kis_tool_multihand.h:103
 #, fuzzy, kde-format
 msgid "Multibrush Tool"
 msgstr "Қылқалам"
@@ -36391,13 +36405,13 @@ msgid "Sample All Visible Layers"
 msgstr "Барлық көрінетін қабатарынан алу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpSelectionMethod)
-#: plugins/tools/basictools/wdgmovetool.ui:17
+#: plugins/tools/basictools/wdgmovetool.ui:23
 #, kde-format
 msgid "Selection Mode"
 msgstr "Таңдау режімі"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioSelectedLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:23
+#: plugins/tools/basictools/wdgmovetool.ui:29
 #, kde-format
 msgid ""
 "Move the layer that you have currently selected in the layerbox with its "
@@ -36407,14 +36421,14 @@ msgstr ""
 "түртім."
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioSelectedLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:26
+#: plugins/tools/basictools/wdgmovetool.ui:32
 #, fuzzy, kde-format
 #| msgid "Move current layer"
 msgid "&Move current layer"
 msgstr "Назардағы қабатты жылжыту"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioFirstLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:36
+#: plugins/tools/basictools/wdgmovetool.ui:42
 #, kde-format
 msgid ""
 "Move the first layer with visible content at the place where you click. This "
@@ -36424,14 +36438,14 @@ msgstr ""
 "сол қабатты тізімінде таңдайды."
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioFirstLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:39
+#: plugins/tools/basictools/wdgmovetool.ui:45
 #, fuzzy, kde-format
 #| msgid "Move layer with content"
 msgid "Mo&ve layer with content"
 msgstr "Қабатты мазмұнымен жылжыту"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioGroup)
-#: plugins/tools/basictools/wdgmovetool.ui:49
+#: plugins/tools/basictools/wdgmovetool.ui:55
 #, kde-format
 msgid ""
 "Move the group containing the first layer that contains visible content. "
@@ -36441,54 +36455,48 @@ msgstr ""
 "shift-түртім."
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioGroup)
-#: plugins/tools/basictools/wdgmovetool.ui:52
+#: plugins/tools/basictools/wdgmovetool.ui:58
 #, fuzzy, kde-format
 #| msgid "Move the whole group"
 msgid "Move &the whole group"
 msgstr "Топты тұтастай жылжыту"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpMoveStep)
-#: plugins/tools/basictools/wdgmovetool.ui:65
+#: plugins/tools/basictools/wdgmovetool.ui:74
 #, fuzzy, kde-format
-msgid "Shortcut Move Distance"
-msgstr "Нысанға дейінгі қашықтық:"
-
-#. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveStep)
-#: plugins/tools/basictools/wdgmovetool.ui:71
-#, kde-format
-msgid "Number of pixels to move after move shortcut keypress."
-msgstr ""
+msgid "Move Shortcut"
+msgstr "Баптау..."
 
 #. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveScale)
-#: plugins/tools/basictools/wdgmovetool.ui:90
+#: plugins/tools/basictools/wdgmovetool.ui:86
 #, kde-format
 msgid "When holding shift, move keyboard shortcuts scale up by this amount."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, scaleLabel)
-#: plugins/tools/basictools/wdgmovetool.ui:106
+#: plugins/tools/basictools/wdgmovetool.ui:108
+#, fuzzy, kde-format
+#| msgid "Multiline"
+msgid "Multiplier:"
+msgstr "Көпжолды"
+
+#. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveStep)
+#: plugins/tools/basictools/wdgmovetool.ui:124
 #, kde-format
-msgid "Large Move Scale"
+msgid "Number of pixels to move after move shortcut keypress."
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, chkShowCoordinates)
-#: plugins/tools/basictools/wdgmovetool.ui:116
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/tools/basictools/wdgmovetool.ui:162
 #, fuzzy, kde-format
-#| msgid "Show Decorations"
-msgid "Show coordinates on canvas"
-msgstr "Безендірулерін көрсету"
-
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowCoordinates)
-#: plugins/tools/basictools/wdgmovetool.ui:119
-#, fuzzy, kde-format
-#| msgid "Show Decorations"
-msgid "Show coordinates"
-msgstr "Безендірулерін көрсету"
+#| msgid "Unit:"
+msgid "Unit:"
+msgstr "Өлшеу бірлігі:"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_offsetX)
 #. i18n: ectx: property (toolTip), widget (KisIntParseSpinBox, translateXBox)
-#: plugins/tools/basictools/wdgmovetool.ui:176
-#: plugins/tools/basictools/wdgmovetool.ui:198
+#: plugins/tools/basictools/wdgmovetool.ui:234
+#: plugins/tools/basictools/wdgmovetool.ui:256
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1036
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1058
 #, kde-format
@@ -36497,7 +36505,7 @@ msgstr "Жатығынан жылжыту"
 
 #. i18n: ectx: property (text), widget (QLabel, label_rotateX)
 #. i18n: ectx: property (text), widget (QLabel, label_offsetX)
-#: plugins/tools/basictools/wdgmovetool.ui:182
+#: plugins/tools/basictools/wdgmovetool.ui:240
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:728
 #, kde-format
 msgid "&x:"
@@ -36505,8 +36513,8 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KisIntParseSpinBox, translateYBox)
 #. i18n: ectx: property (toolTip), widget (QLabel, label_offsetY)
-#: plugins/tools/basictools/wdgmovetool.ui:214
-#: plugins/tools/basictools/wdgmovetool.ui:227
+#: plugins/tools/basictools/wdgmovetool.ui:272
+#: plugins/tools/basictools/wdgmovetool.ui:285
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1074
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1087
 #, kde-format
@@ -36515,44 +36523,54 @@ msgstr "Тігінен жылжыту"
 
 #. i18n: ectx: property (text), widget (QLabel, label_rotateY)
 #. i18n: ectx: property (text), widget (QLabel, label_offsetY)
-#: plugins/tools/basictools/wdgmovetool.ui:230
+#: plugins/tools/basictools/wdgmovetool.ui:288
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:763
 #, fuzzy, kde-format
 msgid "&y:"
 msgstr "Кілт:"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkShowCoordinates)
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowCoordinates)
+#: plugins/tools/basictools/wdgmovetool.ui:303
+#: plugins/tools/basictools/wdgmovetool.ui:306
+#, fuzzy, kde-format
+#| msgid "Show Decorations"
+msgid "Show coordinates on canvas"
+msgstr "Безендірулерін көрсету"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckbox)
+#: plugins/tools/basictools/wdgmultihandtool.ui:153
+#, fuzzy, kde-format
+msgid "Show Origin"
+msgstr "Торды көрсету:"
+
 #. i18n: ectx: property (text), widget (QLabel, brushesLabel)
-#: plugins/tools/basictools/wdgmultihandtool.ui:45
+#: plugins/tools/basictools/wdgmultihandtool.ui:166
 #, fuzzy, kde-format
 #| msgid "Brushes"
 msgid "Brushes:"
 msgstr "Қылқаламдар"
 
-#. i18n: ectx: property (text), widget (QCheckBox, verticalCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:87
-#, fuzzy, kde-format
-#| msgid "Vertical"
-msgid "Vertical"
-msgstr "Тік"
-
 #. i18n: ectx: property (text), widget (QCheckBox, horizontalCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:94
+#: plugins/tools/basictools/wdgmultihandtool.ui:182
 #, fuzzy, kde-format
 #| msgid "Horizontal"
 msgid "Horizontal"
 msgstr "Жатық"
 
-#. i18n: ectx: property (text), widget (QPushButton, moveOriginButton)
-#: plugins/tools/basictools/wdgmultihandtool.ui:110
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/tools/basictools/wdgmultihandtool.ui:198
 #, fuzzy, kde-format
-msgid "Move Origin"
-msgstr "Қабатты жылжыту"
+#| msgid "Origin X:"
+msgid "Origin:"
+msgstr "X басталуы:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:145
+#. i18n: ectx: property (text), widget (QCheckBox, verticalCheckbox)
+#: plugins/tools/basictools/wdgmultihandtool.ui:208
 #, fuzzy, kde-format
-msgid "Show Origin"
-msgstr "Торды көрсету:"
+#| msgid "Vertical"
+msgid "Vertical"
+msgstr "Тік"
 
 #. i18n: ectx: property (text), widget (QCheckBox, toggleEditMode)
 #: plugins/tools/defaulttool/connectionTool/ConnectionPointWidget.ui:30
@@ -37336,29 +37354,29 @@ msgstr "Өрнек параметрлері"
 msgid "Pattern editing"
 msgstr "Өрнек салу құралы"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:59
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:58
 #, kde-format
 msgid "Contiguous Area Selection"
 msgstr "Біртұтас аумақты таңдау"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:136
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:135
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Contiguous Area"
 msgstr "Біртұтас аумақты таңдау"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:180
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:179
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:151
 #, kde-format
 msgid "Fuzziness: "
 msgstr "Ауытқуы: "
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:195
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:190
 #, kde-format
 msgid "Grow/shrink selection: "
 msgstr "Өсу/Тарылтуын таңдау: "
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:222
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:214
 #, kde-format
 msgid "Limit to current layer"
 msgstr "Назардағы қабатпен шектелу"
@@ -37669,23 +37687,32 @@ msgstr "Жұлдыз"
 msgid "Smart Patch Tool"
 msgstr "Қолмен сүрлеу салу"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (text), widget (QLabel, Fast)
 #: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:23
 #, fuzzy, kde-format
-msgid "Inpaint Tool"
-msgstr "Градиенттың толтыруы"
+#| msgctxt "(qtundo-format)"
+#| msgid "Paste"
+msgid "low/fast"
+msgstr "Орналастыру"
 
 #. i18n: ectx: property (text), widget (QLabel, Accurate)
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:84
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:46
+#, fuzzy, kde-format
+#| msgid "Flower"
+msgid "high/slow"
+msgstr "Гүл"
+
+#. i18n: ectx: property (text), widget (QLabel, Fast_2)
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:94
 #, kde-format
-msgid "Accurate"
+msgid "Accuracy:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:114
+#. i18n: ectx: property (text), widget (QLabel, patchRadiusLabel)
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:111
 #, fuzzy, kde-format
 #| msgid "Vertical Radius"
-msgid "Patch Radius"
+msgid "Patch Radius:"
 msgstr "Тік радиусы"
 
 #: plugins/tools/tool_text/kis_tool_text.h:93
@@ -38153,6 +38180,23 @@ msgstr "Безендірулерін көрсету"
 #, kde-format
 msgid "Work Recursively"
 msgstr "Рекурсивті істеу"
+
+#, fuzzy
+#~ msgid "Shortcut Move Distance"
+#~ msgstr "Нысанға дейінгі қашықтық:"
+
+#, fuzzy
+#~| msgid "Show Decorations"
+#~ msgid "Show coordinates"
+#~ msgstr "Безендірулерін көрсету"
+
+#, fuzzy
+#~ msgid "Move Origin"
+#~ msgstr "Қабатты жылжыту"
+
+#, fuzzy
+#~ msgid "Inpaint Tool"
+#~ msgstr "Градиенттың толтыруы"
 
 #, fuzzy
 #~| msgid "Start Search From"
@@ -62894,29 +62938,12 @@ msgstr "Рекурсивті істеу"
 #~ msgstr "Орналастыру"
 
 #, fuzzy
-#~| msgctxt "(qtundo-format)"
-#~| msgid "Paste"
-#~ msgctxt ""
-#~ "(qtundo-format) h264 preset name, check simplescreenrecorder for standard "
-#~ "translations"
-#~ msgid "fast"
-#~ msgstr "Орналастыру"
-
-#, fuzzy
 #~| msgid "medium"
 #~ msgctxt ""
 #~ "(qtundo-format) h264 preset name, check simplescreenrecorder for standard "
 #~ "translations"
 #~ msgid "medium"
 #~ msgstr "орташа"
-
-#, fuzzy
-#~| msgid "Flower"
-#~ msgctxt ""
-#~ "(qtundo-format) h264 preset name, check simplescreenrecorder for standard "
-#~ "translations"
-#~ msgid "slow"
-#~ msgstr "Гүл"
 
 #, fuzzy
 #~| msgid "Flower"
