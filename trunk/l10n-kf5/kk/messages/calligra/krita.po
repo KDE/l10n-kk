@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-15 03:03+0200\n"
+"POT-Creation-Date: 2017-07-16 03:09+0200\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -11265,6 +11265,7 @@ msgstr "Сүрлеулерді біріктіру"
 #: libs/ui/dialogs/kis_dlg_preferences.cc:911 libs/ui/forms/wdgnewimage.ui:375
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:150
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:188
+#: libs/ui/kis_palette_view.cpp:101 libs/ui/kis_palette_view.cpp:272
 #: libs/ui/layerstyles/WdgColorOverlay.ui:23
 #: libs/ui/layerstyles/WdgStroke.ui:134
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpColor.h:38
@@ -11737,7 +11738,7 @@ msgstr "Құрастыру бұрышы:"
 msgid "Untitled"
 msgstr "Аталмаған"
 
-#: libs/pigment/resources/KoStopGradient.cpp:441
+#: libs/pigment/resources/KoStopGradient.cpp:442
 #, kde-format
 msgid "SVG Gradient"
 msgstr "SVG градиенті"
@@ -16278,6 +16279,99 @@ msgstr "Текстура"
 msgctxt "option category"
 msgid "Filter"
 msgstr "Сүзгі"
+
+#: libs/ui/kis_palette_view.cpp:86
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Add a new Colorset Entry"
+msgstr "Түс профилін ашу"
+
+#: libs/ui/kis_palette_view.cpp:90
+#, fuzzy, kde-format
+#| msgid "Default"
+msgctxt "Name for default group"
+msgid "Default"
+msgstr "Әдетті"
+
+#: libs/ui/kis_palette_view.cpp:97 libs/ui/kis_palette_view.cpp:269
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"A spot color is a color that the printer is able to print without mixing the "
+"paints it has available to it. The opposite is called a process color."
+msgstr ""
+
+#: libs/ui/kis_palette_view.cpp:98
+#, fuzzy, kde-format
+#| msgid "Group:"
+msgid "Group"
+msgstr "Тобы:"
+
+#: libs/ui/kis_palette_view.cpp:99 libs/ui/kis_palette_view.cpp:270
+#, kde-format
+msgid "ID"
+msgstr ""
+
+#: libs/ui/kis_palette_view.cpp:100 libs/ui/kis_palette_view.cpp:271
+#, fuzzy, kde-format
+#| msgid "Name"
+msgid "Name"
+msgstr "Атауы"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
+#: libs/ui/kis_palette_view.cpp:102 libs/ui/kis_palette_view.cpp:273
+#: plugins/extensions/metadataeditor/editors/exif.ui:422
+#, kde-format
+msgid "Spot"
+msgstr "Жарық дағы"
+
+#: libs/ui/kis_palette_view.cpp:104
+#, fuzzy, kde-format
+#| msgid "Color"
+msgctxt "Part of a default name for a color"
+msgid "Color"
+msgstr "Түсі"
+
+#: libs/ui/kis_palette_view.cpp:130
+#, fuzzy, kde-format
+#| msgctxt "(qtundo-format)"
+#| msgid "Add shapes to group"
+msgctxt "@title:window"
+msgid "Add a new group"
+msgstr "Қалыпты топқа қосу"
+
+#: libs/ui/kis_palette_view.cpp:134
+#, fuzzy, kde-format
+#| msgid "Name"
+msgctxt "Name for a group"
+msgid "Name"
+msgstr "Атауы"
+
+#: libs/ui/kis_palette_view.cpp:135
+#, fuzzy, kde-format
+msgctxt "Part of default name for a new group"
+msgid "Color Group"
+msgstr "Түсі:"
+
+#: libs/ui/kis_palette_view.cpp:150
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Removing Group"
+msgstr "Қабатты алып тастау"
+
+#: libs/ui/kis_palette_view.cpp:154
+#, fuzzy, kde-format
+#| msgid "Delete color"
+msgctxt "Shows up when deleting a group"
+msgid "Keep the Colors"
+msgstr "Түсті өшіру"
+
+#: libs/ui/kis_palette_view.cpp:258
+#, fuzzy, kde-format
+#| msgid "Name"
+msgctxt "Name for a colorgroup"
+msgid "Name"
+msgstr "Атауы"
 
 #: libs/ui/kis_popup_palette.cpp:214
 #, fuzzy, kde-format
@@ -25102,12 +25196,6 @@ msgid "Center weighted average"
 msgstr "Зілдеме орташасын ортаға"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
-#: plugins/extensions/metadataeditor/editors/exif.ui:422
-#, kde-format
-msgid "Spot"
-msgstr "Жарық дағы"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
 #: plugins/extensions/metadataeditor/editors/exif.ui:427
 #, kde-format
 msgid "Multi spot"
@@ -27305,7 +27393,7 @@ msgstr "Түс тасымалдауы"
 msgid "Reference image:"
 msgstr "Қай кескінінен:"
 
-#: plugins/filters/gradientmap/krita_filter_gradient_map.cpp:38
+#: plugins/filters/gradientmap/krita_filter_gradient_map.cpp:39
 #, fuzzy, kde-format
 msgid "&Gradient Map..."
 msgstr "&Градиенттер"
@@ -32143,15 +32231,56 @@ msgctxt "The file will save fast but will not be compressed a lot"
 msgid "Large file size"
 msgstr "Блок өлшемі"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
 #: plugins/impex/png/kis_wdg_options_png.ui:110
+#, kde-format
+msgid "Use interlacing when publishing on the Internet."
+msgstr "Интернетте жариялағанда ішінаралап кескіндеу."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:114
+#, kde-format
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+"<p>Ішінаралап кескіндеу әдісі Интернетте жариялағанда ыңғайлы.<br>\n"
+"Ішінаралап кескіндегенде кескін жүктеуі бітпей шолғышында көрсетіле бастайды."
+"</p>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:117
+#, kde-format
+msgid "Interlacing"
+msgstr "Ішінаралап кескінделсін"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:124
+#, kde-format
+msgid ""
+"Indexed PNG images are smaller. If you enabled this option, your image will "
+"be analyzed to see whether it is possible to save as an indexed PNG."
+msgstr ""
+"Индекстелген PNG кескіндер кішірек болады. Егер бұл белгі қойылса, онда "
+"кескініңіз индесктелген PNG ретінде сақтауға келе ме деп талдауға жатады."
+
+#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:127
+#, kde-format
+msgid "Save as indexed PNG, if possible"
+msgstr "PNG индекстелсін, мүмкін болса"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/impex/png/kis_wdg_options_png.ui:137
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:149
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
 msgstr "Кескініңізде мөлдірлігі болмаса, шағын файлдарды жасамау"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:114
+#: plugins/impex/png/kis_wdg_options_png.ui:141
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:153
 #, kde-format
 msgid ""
@@ -32168,51 +32297,10 @@ msgstr ""
 "болар.</p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:117
+#: plugins/impex/png/kis_wdg_options_png.ui:144
 #, kde-format
 msgid "Store alpha channel (transparency)"
 msgstr "Альфа арнасы (мөлдірлігі) сақталсын"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:127
-#, kde-format
-msgid "Use interlacing when publishing on the Internet."
-msgstr "Интернетте жариялағанда ішінаралап кескіндеу."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:131
-#, kde-format
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-"<p>Ішінаралап кескіндеу әдісі Интернетте жариялағанда ыңғайлы.<br>\n"
-"Ішінаралап кескіндегенде кескін жүктеуі бітпей шолғышында көрсетіле бастайды."
-"</p>"
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:134
-#, kde-format
-msgid "Interlacing"
-msgstr "Ішінаралап кескінделсін"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:141
-#, kde-format
-msgid ""
-"Indexed PNG images are smaller. If you enabled this option, your image will "
-"be analyzed to see whether it is possible to save as an indexed PNG."
-msgstr ""
-"Индекстелген PNG кескіндер кішірек болады. Егер бұл белгі қойылса, онда "
-"кескініңіз индесктелген PNG ретінде сақтауға келе ме деп талдауға жатады."
-
-#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:144
-#, kde-format
-msgid "Save as indexed PNG, if possible"
-msgstr "PNG индекстелсін, мүмкін болса"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: plugins/impex/png/kis_wdg_options_png.ui:154
@@ -47514,12 +47602,6 @@ msgstr "Рекурсивті істеу"
 #~ msgctxt "(qtundo-format) action"
 #~ msgid "Vertically Center"
 #~ msgstr "Тік"
-
-#, fuzzy
-#~| msgid "Group:"
-#~ msgctxt "(qtundo-format) action"
-#~ msgid "Group"
-#~ msgstr "Тобы:"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format) action"
