@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-09-05 02:57+0200\n"
+"POT-Creation-Date: 2017-09-26 03:19+0200\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1173,15 +1173,16 @@ msgid "This project is opened as read only."
 msgstr "Бұл жоба тек оқу үшін ашылған."
 
 #: core/kexiproject.cpp:1024
-#, kde-kuit-format
-msgid "Could not remove object's user data."
+#, fuzzy, kde-kuit-format
+#| msgid "Could not remove object's user data."
+msgid "Could not delete object's user data."
 msgstr "Нысанның пайдаланушы деректері өшірілмеді."
 
 #: core/kexiproject.cpp:1152
 #, fuzzy, kde-format
 #| msgid "Warning: entire project's data will be removed."
 msgctxt "warning"
-msgid "Entire project's data and design will be removed."
+msgid "Entire project's data and design will be deleted."
 msgstr "Ескерту: жобаның барлық деректері өшіріледі."
 
 #: core/kexiproject.cpp:1168
@@ -1393,7 +1394,7 @@ msgstr "Назардағы терезеге арналған мәзір"
 msgid "Shows menu for the current window."
 msgstr "Назардағы терезеге арналған мәзірді көрсету."
 
-#: core/KexiView.cpp:267 kexiutils/utils.cpp:316
+#: core/KexiView.cpp:267 kexiutils/utils.cpp:317
 #, kde-format, kde-kuit-format
 msgid "Save"
 msgstr "Сақтау"
@@ -1451,29 +1452,29 @@ msgstr ""
 msgid "Confirm Saving Changes"
 msgstr "Өзгерістерін сақтауын құптау"
 
-#: core/KexiWindow.cpp:480
+#: core/KexiWindow.cpp:481
 #, kde-kuit-format
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr "Құрылымы өзгертілген. Басқа көрінісіне ауысу алдында оны сақтау керек."
 
-#: core/KexiWindow.cpp:555 main/KexiMainWindow.cpp:2718
+#: core/KexiWindow.cpp:556 main/KexiMainWindow.cpp:2718
 #, kde-kuit-format
 msgid "Switching to other view failed (%1)."
 msgstr "Басқа көрінісіне ауысу болмады (%1)."
 
-#: core/KexiWindow.cpp:680
+#: core/KexiWindow.cpp:681
 #, kde-kuit-format
 msgctxt "@title:window with dirty indicator"
 msgid "%1*"
 msgstr ""
 
-#: core/KexiWindow.cpp:713 core/KexiWindow.cpp:800
+#: core/KexiWindow.cpp:714 core/KexiWindow.cpp:801
 #, kde-kuit-format
 msgid "Saving object's definition failed."
 msgstr "Нысанның анықтамасы сақталмады."
 
-#: core/KexiWindow.cpp:741
+#: core/KexiWindow.cpp:742
 #, kde-kuit-format
 msgid "Saving object's data failed."
 msgstr "Нысанның деректері сақталмады."
@@ -1610,9 +1611,12 @@ msgid "Page %1"
 msgstr "%1-бет"
 
 #: formeditor/commands.cpp:1962
+#, fuzzy
+#| msgctxt "(qtundo-format)"
+#| msgid "Delete widget"
 msgctxt "(qtundo-format)"
-msgid "Remove Page"
-msgstr "Бетті кетіру"
+msgid "Delete Page"
+msgstr "Виджетті өшіру"
 
 #: formeditor/connectiondialog.cpp:75
 #, fuzzy, kde-kuit-format
@@ -1627,9 +1631,10 @@ msgid "&New Connection"
 msgstr "&Жаңа байланыс"
 
 #: formeditor/connectiondialog.cpp:121
-#, kde-kuit-format
-msgid "&Remove Connection"
-msgstr "Байланысты ө&шіру"
+#, fuzzy, kde-kuit-format
+#| msgid "&Delete Connection"
+msgid "&Delete Connection"
+msgstr "Байлансты ө&шіру"
 
 #: formeditor/connectiondialog.cpp:141
 #, kde-kuit-format
@@ -1719,9 +1724,10 @@ msgid "New &Subitem"
 msgstr "Жаңа аталым &саласы"
 
 #: formeditor/editlistviewdialog.cpp:71 formeditor/editlistviewdialog.cpp:140
-#, kde-kuit-format
-msgid "&Remove Item"
-msgstr "Аталымды &кетіру"
+#, fuzzy, kde-kuit-format
+#| msgid "&Delete"
+msgid "&Delete Item"
+msgstr "&Өшіру"
 
 #: formeditor/editlistviewdialog.cpp:78 formeditor/editlistviewdialog.cpp:147
 #, kde-kuit-format
@@ -2549,12 +2555,12 @@ msgctxt "Next button arrow: next button in assistant (wizard)"
 msgid "%L ›"
 msgstr "%L ›"
 
-#: kexiutils/utils.cpp:302 main/startup/KexiOpenProjectAssistant.cpp:154
+#: kexiutils/utils.cpp:303 main/startup/KexiOpenProjectAssistant.cpp:154
 #, kde-format, kde-kuit-format
 msgid "Open"
 msgstr "Ашу"
 
-#: kexiutils/utils.cpp:333
+#: kexiutils/utils.cpp:334
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "File \"%1\" already exists.<p>Do you want to replace it with a new one?"
@@ -2564,31 +2570,31 @@ msgid ""
 "want to overwrite it?</para>"
 msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен ауыстырмақсыз ба?"
 
-#: kexiutils/utils.cpp:724
+#: kexiutils/utils.cpp:725
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The file or directory <filename>%1</filename> does not exist."
 msgstr "<filename>%1</filename> деген файл я каталог жоқ."
 
-#: kexiutils/utils.cpp:730
+#: kexiutils/utils.cpp:731
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Invalid hyperlink <link>%1</link>."
 msgstr "<link>%1</link> гиперсілтемесі жоқ."
 
-#: kexiutils/utils.cpp:739
+#: kexiutils/utils.cpp:740
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Executable <link>%1</link> not allowed."
 msgstr "<link>%1</link> орындалатын файлын пайдалануға рұқсат жоқ."
 
-#: kexiutils/utils.cpp:745
+#: kexiutils/utils.cpp:746
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Remote hyperlink <link>%1</link> not allowed."
 msgstr "<link>%1</link> деген гиперсілтеменгі пайдалануға рұқсат жоқ."
 
-#: kexiutils/utils.cpp:752
+#: kexiutils/utils.cpp:753
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -2597,24 +2603,24 @@ msgid ""
 msgstr ""
 "Осы файлды орындамақсыз ба?<warning>Орындау қауіпті болуы мүмкін.</warning>"
 
-#: kexiutils/utils.cpp:755
+#: kexiutils/utils.cpp:756
 #, kde-kuit-format
 msgctxt "@action:button Run script file"
 msgid "Run"
 msgstr ""
 
-#: kexiutils/utils.cpp:816
+#: kexiutils/utils.cpp:817
 #, kde-kuit-format
 msgctxt "'Dirty (modified) object' flag"
 msgid "%1*"
 msgstr ""
 
-#: kexiutils/utils.cpp:1102
+#: kexiutils/utils.cpp:1103
 #, kde-kuit-format
 msgid "modified"
 msgstr ""
 
-#: kexiutils/utils.cpp:1113
+#: kexiutils/utils.cpp:1114
 #, kde-kuit-format
 msgctxt "Document/application separator in titlebar"
 msgid " – "
@@ -3605,7 +3611,7 @@ msgstr "<resource>%2</resource> деген %1"
 #| "Do you want to permanently delete:\n"
 #| "%1\n"
 #| "If you click \"Delete\", you will not be able to undo the deletion."
-msgctxt "@info Remove <objecttype> <objectname>?"
+msgctxt "@info Delete <objecttype> <objectname>?"
 msgid ""
 "<para>Do you want to permanently delete the following object?<nl/><nl/>%1 "
 "<resource>%2</resource></para><para><note>If you click <interface>Delete</"
@@ -3625,8 +3631,9 @@ msgid "Delete <resource>%1</resource>?"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
 #: main/KexiMainWindow.cpp:3487
-#, kde-kuit-format
-msgid "Could not remove object."
+#, fuzzy, kde-kuit-format
+#| msgid "Could not remove object."
+msgid "Could not delete object."
 msgstr "Нысан жойылмады."
 
 #: main/KexiMainWindow.cpp:3510
@@ -3996,7 +4003,7 @@ msgstr "Деректер қорына қосылымы"
 msgctxt "@info"
 msgid ""
 "<para>Select database server's connection you wish to use to create a new "
-"Kexi project.</para><para>Here you may also add, edit or remove connections "
+"Kexi project.</para><para>Here you may also add, edit or delete connections "
 "from the list.</para>"
 msgstr ""
 "Жаңа Kexi жобасын құру үшін қолданатын деректер қоры серверінің қосылымын "
@@ -4114,7 +4121,7 @@ msgstr "Деректер қоры серверінде сақталған жоб
 msgctxt "@info"
 msgid ""
 "<para>Select database server's connection with project you wish to open.</"
-"para><para>Here you may also add, edit or remove connections from the list.</"
+"para><para>Here you may also add, edit or delete connections from the list.</"
 "para>"
 msgstr ""
 "Жобаны ашуға қолданатын деректер қоры серверінің қосылымын таңдау. "
@@ -4373,7 +4380,7 @@ msgstr ""
 #| "Could not open file. The file <filename>%1</filename> does not exist."
 msgctxt "@info"
 msgid ""
-"Could not remove project. The file <filename>%1</filename> does not exist."
+"Could not delete project. The file <filename>%1</filename> does not exist."
 msgstr "Файл ашылмады. <filename>%1</filename> деген файл жоқ."
 
 #: main/startup/KexiStartup.cpp:540
@@ -5282,7 +5289,7 @@ msgid "Goes to selected form's data source"
 msgstr "Таңдалған пішіннің деректер көзіне ауыстырады"
 
 #: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:365
-#: plugins/reports/kexireportpart.cpp:173
+#: plugins/reports/kexireportpart.cpp:175
 #, kde-kuit-format
 msgid "Data Source"
 msgstr "Деректер көзі"
@@ -6671,10 +6678,12 @@ msgid "Add Page"
 msgstr "Бетті қосу"
 
 #: plugins/forms/widgets/main/KexiStandardContainerFormWidgets.cpp:266
-#, kde-kuit-format
-msgctxt "Remove tab widget's page"
-msgid "Remove Page"
-msgstr "Бетті кетіру"
+#, fuzzy, kde-kuit-format
+#| msgctxt "(qtundo-format)"
+#| msgid "Delete widget"
+msgctxt "Delete tab widget's page"
+msgid "Delete Page"
+msgstr "Виджетті өшіру"
 
 #: plugins/forms/widgets/main/KexiStandardContainerFormWidgets.cpp:287
 #, kde-kuit-format
@@ -6701,10 +6710,12 @@ msgid "Add Page..."
 msgstr "Бетті қосу..."
 
 #: plugins/forms/widgets/main/KexiStandardContainerFormWidgets.cpp:338
-#, kde-kuit-format
-msgctxt "Remove page from a stacked widget"
-msgid "Remove Page"
-msgstr "Бетті кетіру"
+#, fuzzy, kde-kuit-format
+#| msgctxt "(qtundo-format)"
+#| msgid "Delete widget"
+msgctxt "Delete page from a stacked widget"
+msgid "Delete Page"
+msgstr "Виджетті өшіру"
 
 #: plugins/forms/widgets/main/KexiStandardContainerFormWidgets.cpp:385
 #, kde-kuit-format
@@ -7555,12 +7566,6 @@ msgstr "Ауысу керегі жоқ"
 msgid "<para>This query is invalid.</para><para>Do you want to save it?</para>"
 msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен ауыстырмақсыз ба?"
 
-#: plugins/queries/kexiquerydesignersql.cpp:409
-#, fuzzy, kde-kuit-format
-#| msgid "Not Saved"
-msgid "Don't Save"
-msgstr "Сақталмаған"
-
 #: plugins/queries/kexiquerypart.cpp:45
 #, kde-kuit-format
 msgctxt ""
@@ -7919,34 +7924,34 @@ msgstr "Ашу жаңылысы"
 msgid "Report schema appears to be invalid or corrupt"
 msgstr "Баянат сұлбасы дұрыс емес не бүлінген сияқты"
 
-#: plugins/reports/kexisourceselector.cpp:69
+#: plugins/reports/kexisourceselector.cpp:70
 #, kde-kuit-format
 msgid "Set Data"
 msgstr "Деректерді орнату"
 
-#: plugins/reports/kexisourceselector.cpp:73
+#: plugins/reports/kexisourceselector.cpp:74
 #, kde-kuit-format
 msgid "Internal"
 msgstr "Ішкі"
 
-#: plugins/reports/kexisourceselector.cpp:74
+#: plugins/reports/kexisourceselector.cpp:75
 #, kde-kuit-format
 msgid "External"
 msgstr "Сыртқы"
 
-#: plugins/reports/kexisourceselector.cpp:80
+#: plugins/reports/kexisourceselector.cpp:81
 #, fuzzy, kde-kuit-format
 #| msgid "Source Type:"
 msgid "Source type:"
 msgstr "Деректер көзінің түрі:"
 
-#: plugins/reports/kexisourceselector.cpp:88
+#: plugins/reports/kexisourceselector.cpp:89
 #, fuzzy, kde-kuit-format
 #| msgid "Form's data source"
 msgid "Report's data source:"
 msgstr "Пішіннің деректер көзі"
 
-#: plugins/reports/kexisourceselector.cpp:93
+#: plugins/reports/kexisourceselector.cpp:94
 #, fuzzy, kde-kuit-format
 #| msgid "External Source:"
 msgid "External source:"
@@ -8158,14 +8163,14 @@ msgstr "<resource>%1</resource> дегенді қайта атау"
 #, fuzzy, kde-format
 #| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
-msgid "Remove table field <resource>%1</resource>"
+msgid "Delete table field <resource>%1</resource>"
 msgstr "\"%1\" өрісін автонөмірлемеу"
 
 #: plugins/tables/kexitabledesignercommands.cpp:162
 #, fuzzy, kde-format
 #| msgid "Remove empty row at position %1"
 msgctxt "(qtundo-format)"
-msgid "Remove empty row at position %1"
+msgid "Delete empty row at position %1"
 msgstr "%1-жол бос, өшірілсін"
 
 #: plugins/tables/kexitabledesignercommands.cpp:212
@@ -8212,13 +8217,15 @@ msgid "Describes additional comments for the field"
 msgstr "Өріс туралы қосымша түсініктеме"
 
 #: plugins/tables/kexitabledesignerview.cpp:176
-#, kde-kuit-format
-msgid "Sets or removes primary key"
+#, fuzzy, kde-kuit-format
+#| msgid "Sets or removes primary key"
+msgid "Sets or deletes primary key"
 msgstr "Негізгі кілтін орнату/алып тастау"
 
 #: plugins/tables/kexitabledesignerview.cpp:177
-#, kde-kuit-format
-msgid "Sets or removes primary key for currently selected field."
+#, fuzzy, kde-kuit-format
+#| msgid "Sets or removes primary key for currently selected field."
+msgid "Sets or deletes primary key for currently selected field."
 msgstr "Таңдалған өрісті негізгі кілт қылып орнату/алып тастау."
 
 #: plugins/tables/kexitabledesignerview.cpp:310
@@ -8353,7 +8360,7 @@ msgstr "Кесте құрылымының өзгерістеді сақтау қ
 #: plugins/tables/kexitabledesignerview.cpp:579
 #, kde-kuit-format
 msgctxt "@action:button"
-msgid "Save Design and Remove Table Data"
+msgid "Save Design and Delete Table Data"
 msgstr ""
 
 #: plugins/tables/kexitabledesignerview.cpp:580
@@ -8393,7 +8400,7 @@ msgstr "Автонөмірлеу орнатқанда негізгі кілтт�
 #: plugins/tables/kexitabledesignerview.cpp:896
 #, fuzzy, kde-kuit-format
 #| msgid "Previous primary key will be removed."
-msgid "<para>Previous primary key will be removed.</para>"
+msgid "<para>Previous primary key will be deleted.</para>"
 msgstr "Бұрынғы негізгі кілт өшіріледі."
 
 #: plugins/tables/kexitabledesignerview.cpp:897
@@ -8432,7 +8439,7 @@ msgstr "<resource>%1</resource> дегенді қайта атау"
 #, fuzzy, kde-format
 #| msgid "Remove autonumber from field \"%1\""
 msgctxt "(qtundo-format)"
-msgid "Remove autonumber from field <resource>%1</resource>"
+msgid "Delete autonumber from field <resource>%1</resource>"
 msgstr "\"%1\" өрісін автонөмірлемеу"
 
 #: plugins/tables/kexitabledesignerview.cpp:932
@@ -8531,7 +8538,7 @@ msgstr ""
 "<resource>%1</resource> кестесін жабу алдындасыз, бірақ оны келесі ашылған "
 "нысандар қолдануда:"
 
-#: plugins/tables/kexitabledesignerview.cpp:1617
+#: plugins/tables/kexitabledesignerview.cpp:1622
 #, fuzzy, kde-kuit-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -8539,7 +8546,7 @@ msgctxt "@info"
 msgid "Table field <resource>%1</resource>"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/tables/kexitabledesignerview.cpp:1619
+#: plugins/tables/kexitabledesignerview.cpp:1624
 #, kde-kuit-format
 msgctxt "Empty table row"
 msgid "Empty Row"
@@ -8631,7 +8638,7 @@ msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 #| "Warning! Any data in this table will be removed upon design's saving!"
 msgctxt "@info"
 msgid ""
-"<warning>Any data in this table will be removed upon design's saving!</"
+"<warning>Any data in this table will be deleted upon design's saving!</"
 "warning>"
 msgstr "Ескерту! Құрылымын сақтағанда кестедегі барлық деректер өшіріледі!"
 
@@ -8768,7 +8775,7 @@ msgid ""
 "<title>Select Existing Database Server's Connection From the List Below</"
 "title>\n"
 "<para>You will see existing Kexi projects available for the selected "
-"connection. Here you may also add, edit or remove connections from the list."
+"connection. Here you may also add, edit or delete connections from the list."
 "</para>\n"
 msgstr ""
 "<b>Төмендегі тізімінен деректер қоры серверіне қосылымын таңдау</b>\n"
@@ -8795,9 +8802,9 @@ msgstr "Ө&згерту..."
 
 #. i18n: ectx: property (text), widget (QPushButton, btn_remove)
 #: widget/KexiConnectionSelector.ui:181
-#, fuzzy, kde-format
-#| msgid "&Remove"
-msgid "&Remove..."
+#: widget/navigator/KexiProjectNavigator.cpp:172
+#, kde-format, kde-kuit-format
+msgid "&Delete..."
 msgstr "Ө&шіру"
 
 #: widget/KexiConnectionSelectorWidget.cpp:62
@@ -8811,8 +8818,9 @@ msgid "Edit selected database connection"
 msgstr "Деректер қорының таңдалған қосылымын өзгерту"
 
 #: widget/KexiConnectionSelectorWidget.cpp:64
-#, kde-kuit-format
-msgid "Remove selected database connections"
+#, fuzzy, kde-kuit-format
+#| msgid "Remove selected database connections"
+msgid "Delete selected database connections"
 msgstr "Деректер қорының таңдалған қосылымын өшіру"
 
 #: widget/KexiConnectionSelectorWidget.cpp:89
@@ -8871,7 +8879,7 @@ msgstr "Деректер қорының қосылымын өзгерту"
 #| "available connections?"
 msgctxt "@info"
 msgid ""
-"Do you want to remove database connection <resource>%1</resource> from the "
+"Do you want to delete database connection <resource>%1</resource> from the "
 "list of available connections?"
 msgstr ""
 "Шынымен \"%1\" деректер қорының қосылымын бар қосылымдар тізімінен "
@@ -9425,11 +9433,6 @@ msgstr "Нысанды ашу"
 msgid "Opens object selected in the list."
 msgstr "Тізімінен таңдалған нысанды ашу."
 
-#: widget/navigator/KexiProjectNavigator.cpp:172
-#, kde-kuit-format
-msgid "&Delete..."
-msgstr "Ө&шіру"
-
 #: widget/navigator/KexiProjectNavigator.cpp:173
 #, kde-kuit-format
 msgid "Delete object"
@@ -9567,8 +9570,9 @@ msgid "&Hide Selected Table/Query"
 msgstr "Таңдалған кесте/сұранысты &жасыру"
 
 #: widget/relations/KexiRelationsScrollArea.cpp:122
-#, kde-kuit-format
-msgid "&Remove Selected Relationship"
+#, fuzzy, kde-kuit-format
+#| msgid "&Remove Selected Relationship"
+msgid "&Delete Selected Relationship"
 msgstr "&Таңдалған қатынасты үзу"
 
 #: widget/relations/KexiRelationsScrollArea.cpp:124
@@ -9839,6 +9843,34 @@ msgstr "Меңзерді соңғы жазуға көшіреді."
 #, kde-kuit-format
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Меңзерді жаңа жазуға көшіріп ендіруге мүмкіндік береді."
+
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Remove Page"
+#~ msgstr "Бетті кетіру"
+
+#~ msgid "&Remove Connection"
+#~ msgstr "Байланысты ө&шіру"
+
+#~ msgid "&Remove Item"
+#~ msgstr "Аталымды &кетіру"
+
+#~ msgctxt "Remove tab widget's page"
+#~ msgid "Remove Page"
+#~ msgstr "Бетті кетіру"
+
+#~ msgctxt "Remove page from a stacked widget"
+#~ msgid "Remove Page"
+#~ msgstr "Бетті кетіру"
+
+#, fuzzy
+#~| msgid "Not Saved"
+#~ msgid "Don't Save"
+#~ msgstr "Сақталмаған"
+
+#, fuzzy
+#~| msgid "&Remove"
+#~ msgid "&Remove..."
+#~ msgstr "Ө&шіру"
 
 #~ msgctxt "@info Object \"objectname\""
 #~ msgid "%1 <resource>%2</resource>"
