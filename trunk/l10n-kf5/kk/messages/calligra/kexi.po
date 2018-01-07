@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-19 02:59+0100\n"
+"POT-Creation-Date: 2018-01-07 03:03+0100\n"
 "PO-Revision-Date: 2013-11-08 01:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -5288,8 +5288,8 @@ msgstr "Таңдалған пішіннің деректер көзіне өту
 msgid "Goes to selected form's data source"
 msgstr "Таңдалған пішіннің деректер көзіне ауыстырады"
 
-#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:365
-#: plugins/reports/kexireportpart.cpp:175
+#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:366
+#: plugins/reports/kexireportpart.cpp:210
 #, kde-kuit-format
 msgid "Data Source"
 msgstr "Деректер көзі"
@@ -5452,14 +5452,14 @@ msgstr "Ең қысық"
 msgid "To Widest"
 msgstr "Ең айдынды"
 
-#: plugins/forms/kexiformpart.cpp:319
+#: plugins/forms/kexiformpart.cpp:320
 #, fuzzy, kde-format
 #| msgid "Design of form \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of form <resource>%1</resource> has been modified."
 msgstr "\"%1\" пішіннің құрылымы өзгертілген."
 
-#: plugins/forms/kexiformpart.cpp:321
+#: plugins/forms/kexiformpart.cpp:322
 #, fuzzy, kde-format
 #| msgctxt "@info Saving object failed"
 #| msgid "Saving <resource>%1</resource> object failed."
@@ -5467,10 +5467,18 @@ msgctxt "@info"
 msgid "Form <resource>%1</resource> already exists."
 msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: plugins/forms/kexiformpart.cpp:376
+#: plugins/forms/kexiformpart.cpp:377
 #, kde-kuit-format
 msgid "Widgets"
 msgstr "Виджеттер"
+
+#: plugins/forms/kexiformpart.cpp:446
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info Object \"objectname\""
+#| msgid "%1 <resource>%2</resource>"
+msgctxt "@info"
+msgid "Form <resource>%1</resource>"
+msgstr "<resource>%2</resource> деген %1"
 
 #: plugins/forms/kexiformview.cpp:246
 #: plugins/forms/widgets/main/KexiMainFormWidgetsFactory.cpp:86
@@ -7566,7 +7574,7 @@ msgstr "Ауысу керегі жоқ"
 msgid "<para>This query is invalid.</para><para>Do you want to save it?</para>"
 msgstr "\"%1\" деген файл бар екен.<p>Оны жаңасымен ауыстырмақсыз ба?"
 
-#: plugins/queries/kexiquerypart.cpp:45
+#: plugins/queries/kexiquerypart.cpp:48
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7576,31 +7584,43 @@ msgctxt ""
 msgid "query"
 msgstr "query"
 
-#: plugins/queries/kexiquerypart.cpp:46
+#: plugins/queries/kexiquerypart.cpp:49
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new query"
 msgstr "Жаңа сұранысты құру"
 
-#: plugins/queries/kexiquerypart.cpp:47
+#: plugins/queries/kexiquerypart.cpp:50
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new query."
 msgstr "Жаңа сұранысты құру."
 
-#: plugins/queries/kexiquerypart.cpp:50
+#: plugins/queries/kexiquerypart.cpp:53
 #, kde-kuit-format
 msgid "SQL"
 msgstr "SQL"
 
-#: plugins/queries/kexiquerypart.cpp:174
+#: plugins/queries/kexiquerypart.cpp:108
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "You are about to remove table <resource>%1</resource> but following "
+#| "objects using this table are opened:"
+msgid ""
+"<para>You are about to delete query <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
+msgstr ""
+"<resource>%1</resource> кестесін жабу алдындасыз, бірақ оны келесі ашылған "
+"нысандар қолдануда:"
+
+#: plugins/queries/kexiquerypart.cpp:186
 #, fuzzy, kde-format
 #| msgid "Design of query \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of query <resource>%1</resource> has been modified."
 msgstr "\"%1\" сұранысының құрылымы өзгертілген."
 
-#: plugins/queries/kexiquerypart.cpp:176
+#: plugins/queries/kexiquerypart.cpp:188
 #, fuzzy, kde-format
 #| msgctxt "@info Saving object failed"
 #| msgid "Saving <resource>%1</resource> object failed."
@@ -7608,7 +7628,36 @@ msgctxt "@info"
 msgid "Query <resource>%1</resource> already exists."
 msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:236 plugins/tables/kexitablepart.cpp:207
+#, kde-format
+msgctxt "@info/plain Sentence1 Sentence2 Sentence3"
+msgid "%1%2%3"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:239 plugins/tables/kexitablepart.cpp:210
+#, fuzzy, kde-kuit-format
+#| msgid "Do you want to save the design now?"
+msgctxt "@info"
+msgid ""
+"<para>Do you want to close these windows and save the design or cancel "
+"saving?</para>"
+msgstr "Құрылымды қазір сақтауды қалайсыз ба?"
+
+#: plugins/queries/kexiquerypart.cpp:244 plugins/tables/kexitablepart.cpp:215
+#, fuzzy, kde-kuit-format
+#| msgid "Close window"
+msgctxt "@action:button Close all windows and save"
+msgid "Close Windows and Save"
+msgstr "Терезені жабу"
+
+#: plugins/queries/kexiquerypart.cpp:246 plugins/tables/kexitablepart.cpp:217
+#, fuzzy, kde-kuit-format
+#| msgid "Close window"
+msgctxt "@info:tooltip Close all windows and save design"
+msgid "Close all windows and save design"
+msgstr "Терезені жабу"
+
+#: plugins/queries/kexiquerypart.cpp:273
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info Object \"objectname\""
 #| msgid "%1 <resource>%2</resource>"
@@ -7621,22 +7670,22 @@ msgstr "<resource>%2</resource> деген %1"
 msgid "Query executing failed."
 msgstr "Сұраныс жаңылысы."
 
-#: plugins/reports/kexireportdesignview.cpp:57
+#: plugins/reports/kexireportdesignview.cpp:58
 #, kde-kuit-format
 msgid "Edit Sections"
 msgstr "Бөлімдерін өзгерту"
 
-#: plugins/reports/kexireportdesignview.cpp:60
+#: plugins/reports/kexireportdesignview.cpp:61
 #, kde-kuit-format
 msgid "Raise"
 msgstr "Көтеру"
 
-#: plugins/reports/kexireportdesignview.cpp:62
+#: plugins/reports/kexireportdesignview.cpp:63
 #, kde-kuit-format
 msgid "Lower"
 msgstr "Төмендету"
 
-#: plugins/reports/kexireportpart.cpp:64
+#: plugins/reports/kexireportpart.cpp:65
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7646,26 +7695,26 @@ msgctxt ""
 msgid "report"
 msgstr "Баянат"
 
-#: plugins/reports/kexireportpart.cpp:65
+#: plugins/reports/kexireportpart.cpp:66
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new report"
 msgstr "Жаңа есеп беруді құру"
 
-#: plugins/reports/kexireportpart.cpp:66
+#: plugins/reports/kexireportpart.cpp:67
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new report."
 msgstr "Жаңа есеп беруді құру."
 
-#: plugins/reports/kexireportpart.cpp:85
+#: plugins/reports/kexireportpart.cpp:86
 #, fuzzy, kde-format
 #| msgid "Design of script \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of report <resource>%1</resource> has been modified."
 msgstr "\"%1\" скрипттің құрылымы өзгертілген."
 
-#: plugins/reports/kexireportpart.cpp:87
+#: plugins/reports/kexireportpart.cpp:88
 #, fuzzy, kde-format
 #| msgctxt "@info Saving object failed"
 #| msgid "Saving <resource>%1</resource> object failed."
@@ -7673,220 +7722,228 @@ msgctxt "@info"
 msgid "Report <resource>%1</resource> already exists."
 msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:68
+#: plugins/reports/kexireportpart.cpp:183
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info Object \"objectname\""
+#| msgid "%1 <resource>%2</resource>"
+msgctxt "@info"
+msgid "Report <resource>%1</resource>"
+msgstr "<resource>%2</resource> деген %1"
+
+#: plugins/reports/kexireportview.cpp:64
 #, fuzzy, kde-kuit-format
 #| msgid "Page"
 msgctxt "Page selector label"
 msgid "Page:"
 msgstr "Беті"
 
-#: plugins/reports/kexireportview.cpp:69
+#: plugins/reports/kexireportview.cpp:65
 #, kde-kuit-format
 msgid "Go to first page"
 msgstr "Алғашқы бетке өту"
 
-#: plugins/reports/kexireportview.cpp:70
+#: plugins/reports/kexireportview.cpp:66
 #, kde-kuit-format
 msgid "Goes to first page"
 msgstr "1Алғашқы жазуға өту"
 
-#: plugins/reports/kexireportview.cpp:71
+#: plugins/reports/kexireportview.cpp:67
 #, kde-kuit-format
 msgid "Go to previous page"
 msgstr "Алдыңғы бетке өту"
 
-#: plugins/reports/kexireportview.cpp:72
+#: plugins/reports/kexireportview.cpp:68
 #, kde-kuit-format
 msgid "Goes to previous page"
 msgstr "Алдыңғы бетке өту"
 
-#: plugins/reports/kexireportview.cpp:73
+#: plugins/reports/kexireportview.cpp:69
 #, kde-kuit-format
 msgid "Go to next page"
 msgstr "Келесі бетке өту"
 
-#: plugins/reports/kexireportview.cpp:74
+#: plugins/reports/kexireportview.cpp:70
 #, kde-kuit-format
 msgid "Goes to next page"
 msgstr "Келесі бетке өту"
 
-#: plugins/reports/kexireportview.cpp:75
+#: plugins/reports/kexireportview.cpp:71
 #, kde-kuit-format
 msgid "Go to last page"
 msgstr "Соңғы бетке ауысу"
 
-#: plugins/reports/kexireportview.cpp:76
+#: plugins/reports/kexireportview.cpp:72
 #, kde-kuit-format
 msgid "Goes to last page"
 msgstr "Соңғы бетке ауысу"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, kde-kuit-format
 msgid "Current page number"
 msgstr "Назардағы беттің нөмірі"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, kde-kuit-format
 msgid "Number of pages"
 msgstr "Беттер саны"
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:82
 #, kde-kuit-format
 msgid "Print"
 msgstr "Басып шығару"
 
-#: plugins/reports/kexireportview.cpp:88
+#: plugins/reports/kexireportview.cpp:84
 #, kde-kuit-format
 msgid "Print report"
 msgstr "Баянаты басып шығару"
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:85
 #, kde-kuit-format
 msgid "Prints the current report."
 msgstr "Назардағы баянатты басып шығару."
 
-#: plugins/reports/kexireportview.cpp:92
+#: plugins/reports/kexireportview.cpp:88
 #, kde-kuit-format
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "Былай э&кспорт ету"
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:95
 #, kde-kuit-format
 msgid "Export:"
 msgstr "Экспорт ету:"
 
-#: plugins/reports/kexireportview.cpp:106
+#: plugins/reports/kexireportview.cpp:102
 #, kde-kuit-format
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "Мәтін құжаты..."
 
-#: plugins/reports/kexireportview.cpp:109
+#: plugins/reports/kexireportview.cpp:105
 #, kde-kuit-format
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr "Мәтін құжат түрінде экспорттау (OpenDocument мәтін пішіміде)"
 
-#: plugins/reports/kexireportview.cpp:110
+#: plugins/reports/kexireportview.cpp:106
 #, kde-kuit-format
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr "Мәтін құжат түрінде экспорттау (OpenDocument мәтін пішіміде)."
 
-#: plugins/reports/kexireportview.cpp:119
+#: plugins/reports/kexireportview.cpp:115
 #, kde-kuit-format
 msgctxt "Portable Document Format..."
 msgid "PDF..."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:122
+#: plugins/reports/kexireportview.cpp:118
 #, fuzzy, kde-kuit-format
 #| msgid "Export as Web Page"
 msgid "Export as PDF"
 msgstr "Веб параққа экспорттау"
 
-#: plugins/reports/kexireportview.cpp:123
+#: plugins/reports/kexireportview.cpp:119
 #, fuzzy, kde-kuit-format
 #| msgid "Prints the current report."
 msgid "Exports the current report as PDF."
 msgstr "Назардағы баянатты басып шығару."
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:128
 #, kde-kuit-format
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "Электрондық кесте..."
 
-#: plugins/reports/kexireportview.cpp:135
+#: plugins/reports/kexireportview.cpp:131
 #, kde-kuit-format
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау"
 
-#: plugins/reports/kexireportview.cpp:136
+#: plugins/reports/kexireportview.cpp:132
 #, kde-kuit-format
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr "OpenDocument эл.кестесі пішіміне экспорттау."
 
-#: plugins/reports/kexireportview.cpp:146
+#: plugins/reports/kexireportview.cpp:142
 #, kde-kuit-format
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "Веб парағы..."
 
-#: plugins/reports/kexireportview.cpp:149
+#: plugins/reports/kexireportview.cpp:145
 #, kde-kuit-format
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)"
 
-#: plugins/reports/kexireportview.cpp:150
+#: plugins/reports/kexireportview.cpp:146
 #, kde-kuit-format
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Веб парақ түрінде экспорттау (HTML пішіміде)."
 
-#: plugins/reports/kexireportview.cpp:185
+#: plugins/reports/kexireportview.cpp:181
 #, fuzzy, kde-kuit-format
 #| msgid "Record inserting on the server failed."
 msgid "Printing the report failed."
 msgstr "Серверінде жазуын ендіру жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:186
+#: plugins/reports/kexireportview.cpp:182
 #, fuzzy, kde-kuit-format
 #| msgid "Export Failed"
 msgid "Print Failed"
 msgstr "Экспорттау жаңылысы"
 
-#: plugins/reports/kexireportview.cpp:198
+#: plugins/reports/kexireportview.cpp:194
 #, fuzzy, kde-kuit-format
 #| msgid "Export Report as Web Page"
 msgid "Export Report as PDF"
 msgstr "Баянатты веб параққа экспорттау"
 
-#: plugins/reports/kexireportview.cpp:217
+#: plugins/reports/kexireportview.cpp:213
 #, fuzzy, kde-kuit-format
 #| msgid "Exporting the report as web page to %1 failed."
 msgid "Exporting the report as PDF to %1 failed."
 msgstr "Баянатты %1 веб парағына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:218
-#: plugins/reports/kexireportview.cpp:274
-#: plugins/reports/kexireportview.cpp:299
-#: plugins/reports/kexireportview.cpp:339
+#: plugins/reports/kexireportview.cpp:214
+#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:295
+#: plugins/reports/kexireportview.cpp:335
 #, kde-kuit-format
 msgid "Export Failed"
 msgstr "Экспорттау жаңылысы"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:242
 #, fuzzy, kde-kuit-format
 #| msgid "Do you want to open it in Text View?"
 msgid "Do you want to open exported document?"
 msgstr "Мәтін көрінісінде ашып көресіз бе?"
 
-#: plugins/reports/kexireportview.cpp:264
+#: plugins/reports/kexireportview.cpp:260
 #, kde-kuit-format
 msgid "Export Report as Spreadsheet"
 msgstr "Электрондық кестеге экспорттау"
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:269
 #, kde-kuit-format
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "%1 электрондық кестеге экспорттау жаңылды."
 
-#: plugins/reports/kexireportview.cpp:289
+#: plugins/reports/kexireportview.cpp:285
 #, kde-kuit-format
 msgid "Export Report as Text Document"
 msgstr "Мәтін құжатына экспорттау"
 
-#: plugins/reports/kexireportview.cpp:298
+#: plugins/reports/kexireportview.cpp:294
 #, kde-kuit-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr "%1 мәтін құжатына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:309
+#: plugins/reports/kexireportview.cpp:305
 #, kde-kuit-format
 msgid "Export Report as Web Page"
 msgstr "Баянатты веб параққа экспорттау"
 
-#: plugins/reports/kexireportview.cpp:323
+#: plugins/reports/kexireportview.cpp:319
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7895,36 +7952,36 @@ msgid ""
 "original.</note></para>"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:323
 #, fuzzy, kde-kuit-format
 #| msgid "Use CSS"
 msgctxt "@action:button"
 msgid "Use CSS"
 msgstr "CSS"
 
-#: plugins/reports/kexireportview.cpp:328
+#: plugins/reports/kexireportview.cpp:324
 #, fuzzy, kde-kuit-format
 #| msgid "Use Table"
 msgctxt "@action:button"
 msgid "Use Table"
 msgstr "Кесте"
 
-#: plugins/reports/kexireportview.cpp:338
+#: plugins/reports/kexireportview.cpp:334
 #, kde-kuit-format
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Баянатты %1 веб парағына экспорттау жаңылысы."
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, kde-kuit-format
 msgid "Opening failed"
 msgstr "Ашу жаңылысы"
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, kde-kuit-format
 msgid "Report schema appears to be invalid or corrupt"
 msgstr "Баянат сұлбасы дұрыс емес не бүлінген сияқты"
 
-#: plugins/reports/kexisourceselector.cpp:60
+#: plugins/reports/kexisourceselector.cpp:59
 #, fuzzy, kde-kuit-format
 #| msgid "Form's data source"
 msgid "Report's data source:"
@@ -8505,13 +8562,13 @@ msgstr "Id%1"
 #| "objects using this table are opened:"
 msgctxt "@info"
 msgid ""
-"You are about to change the design of table <resource>%1</resource> but "
-"following objects using this table are opened:"
+"<para>You are about to change the design of table <resource>%1</resource> "
+"but following objects using this table are open:</para>"
 msgstr ""
 "<resource>%1</resource> кестесін жабу алдындасыз, бірақ оны келесі ашылған "
 "нысандар қолдануда:"
 
-#: plugins/tables/kexitabledesignerview.cpp:1622
+#: plugins/tables/kexitabledesignerview.cpp:1627
 #, fuzzy, kde-kuit-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -8519,7 +8576,7 @@ msgctxt "@info"
 msgid "Table field <resource>%1</resource>"
 msgstr "<resource>%1</resource> дегенді қайта атау"
 
-#: plugins/tables/kexitabledesignerview.cpp:1624
+#: plugins/tables/kexitabledesignerview.cpp:1629
 #, kde-kuit-format
 msgctxt "Empty table row"
 msgid "Empty Row"
@@ -8532,7 +8589,7 @@ msgctxt "@info"
 msgid "<para>Do you want to save the design now?</para>%1"
 msgstr "Құрылымды қазір сақтауды қалайсыз ба?"
 
-#: plugins/tables/kexitablepart.cpp:62
+#: plugins/tables/kexitablepart.cpp:63
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -8542,62 +8599,50 @@ msgctxt ""
 msgid "table"
 msgstr "table"
 
-#: plugins/tables/kexitablepart.cpp:63
+#: plugins/tables/kexitablepart.cpp:64
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new table"
 msgstr "Жаңа кестені құру"
 
-#: plugins/tables/kexitablepart.cpp:64
+#: plugins/tables/kexitablepart.cpp:65
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new table."
 msgstr "Жаңа кестені құру."
 
-#: plugins/tables/kexitablepart.cpp:136
-#, kde-kuit-format
+#: plugins/tables/kexitablepart.cpp:137
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "You are about to remove table <resource>%1</resource> but following "
+#| "objects using this table are opened:"
 msgid ""
-"You are about to remove table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to delete table <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
 msgstr ""
 "<resource>%1</resource> кестесін жабу алдындасыз, бірақ оны келесі ашылған "
 "нысандар қолдануда:"
 
-#: plugins/tables/kexitablepart.cpp:156
-#, kde-kuit-format
+#: plugins/tables/kexitablepart.cpp:158
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are about to rename table <resource>%1</resource> but following "
+#| "objects using this table are opened:"
 msgid ""
-"You are about to rename table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to rename table <resource>%1</resource> but it is used "
+"by following opened windows:"
 msgstr ""
 "<resource>%1</resource> кестесін қайта атау алдындасыз, бірақ оны келесі "
 "ашылған нысандар қолдануда:"
 
-#: plugins/tables/kexitablepart.cpp:203
-#, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr ""
-
-#: plugins/tables/kexitablepart.cpp:205
-#, kde-kuit-format
-msgid "Do you want to close all windows for these objects?"
-msgstr "Барлық осы нысандардың терезелерін жабуын қалайсыз ба?"
-
-#: plugins/tables/kexitablepart.cpp:207
-#, fuzzy, kde-kuit-format
-#| msgid "Close window"
-msgctxt "@action:button Close All Windows"
-msgid "Close Windows"
-msgstr "Терезені жабу"
-
-#: plugins/tables/kexitablepart.cpp:225
+#: plugins/tables/kexitablepart.cpp:239
 #, fuzzy, kde-format
 #| msgid "Design of table \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of table <resource>%1</resource> has been modified."
 msgstr "\"%1\" кестенің құрылымы өзгертілген."
 
-#: plugins/tables/kexitablepart.cpp:228
+#: plugins/tables/kexitablepart.cpp:242
 #, fuzzy, kde-format
 #| msgctxt "@info Saving object failed"
 #| msgid "Saving <resource>%1</resource> object failed."
@@ -8605,7 +8650,7 @@ msgctxt "@info"
 msgid "Table <resource>%1</resource> already exists."
 msgstr "<resource>%1</resource> нысанын сақтау жаңылысы."
 
-#: plugins/tables/kexitablepart.cpp:232
+#: plugins/tables/kexitablepart.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Warning! Any data in this table will be removed upon design's saving!"
@@ -8615,12 +8660,12 @@ msgid ""
 "warning>"
 msgstr "Ескерту! Құрылымын сақтағанда кестедегі барлық деректер өшіріледі!"
 
-#: plugins/tables/kexitablepart.cpp:261
+#: plugins/tables/kexitablepart.cpp:275
 #, kde-kuit-format
 msgid "Lookup column"
 msgstr "Бағанды қарастыру"
 
-#: plugins/tables/kexitablepart.cpp:290
+#: plugins/tables/kexitablepart.cpp:304
 #, fuzzy, kde-kuit-format
 #| msgctxt "@title:window Rename Object %1."
 #| msgid "Rename <resource>%1</resource>"
@@ -9816,6 +9861,15 @@ msgstr "Меңзерді соңғы жазуға көшіреді."
 #, kde-kuit-format
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Меңзерді жаңа жазуға көшіріп ендіруге мүмкіндік береді."
+
+#~ msgid "Do you want to close all windows for these objects?"
+#~ msgstr "Барлық осы нысандардың терезелерін жабуын қалайсыз ба?"
+
+#, fuzzy
+#~| msgid "Close window"
+#~ msgctxt "@action:button Close All Windows"
+#~ msgid "Close Windows"
+#~ msgstr "Терезені жабу"
 
 #~ msgid "Set Data"
 #~ msgstr "Деректерді орнату"
