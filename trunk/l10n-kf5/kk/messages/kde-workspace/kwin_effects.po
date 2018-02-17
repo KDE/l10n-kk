@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-14 03:21+0100\n"
+"POT-Creation-Date: 2018-02-17 03:23+0100\n"
 "PO-Revision-Date: 2013-09-30 00:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -143,7 +143,7 @@ msgid "Default"
 msgstr "Әдетті"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Duration)
-#: coverswitch/coverswitch_config.ui:161 slide/slide_config.ui:39
+#: coverswitch/coverswitch_config.ui:161 slide/slide_config.ui:53
 #, kde-format
 msgid " milliseconds"
 msgstr " милисекунд"
@@ -960,10 +960,11 @@ msgid "Slide"
 msgstr ""
 
 #: effect_builtins.cpp:523
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Slide when switching tabs"
 msgctxt "Comment describing the KWin Effect"
-msgid "Slide windows across the screen when switching virtual desktops"
-msgstr ""
+msgid "Slide desktops when switching virtual desktops"
+msgstr "Қойынды ауыстырғышы жүгірткімен болсын"
 
 #: effect_builtins.cpp:537
 #, kde-format
@@ -1703,21 +1704,47 @@ msgstr "Жазуының түсі:"
 msgid "Text alpha:"
 msgstr "Жазуының альфасы:"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: slide/slide_config.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_Duration)
+#: slide/slide_config.ui:25
 #, fuzzy, kde-format
 #| msgid "Duration"
-msgid "Duration:"
+msgid "D&uration:"
 msgstr "Ұзақтығы"
 
+#. i18n: Duration of the slide animation.
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
-#: slide/slide_config.ui:36
+#: slide/slide_config.ui:50
 #, fuzzy, kde-format
 #| msgctxt "Duration of rotation"
 #| msgid "Default"
-msgctxt "Duration of the slide animation"
 msgid "Default"
 msgstr "Әдетті"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupbox_Gaps)
+#: slide/slide_config.ui:71
+#, kde-format
+msgid "Gap between desktops"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_HorizontalGap)
+#: slide/slide_config.ui:85
+#, fuzzy, kde-format
+#| msgid "Horizontal"
+msgid "Hori&zontal:"
+msgstr "Көлденең"
+
+#. i18n: ectx: property (text), widget (QLabel, label_VerticalGap)
+#: slide/slide_config.ui:127
+#, fuzzy, kde-format
+#| msgid "Vertical"
+msgid "Ver&tical:"
+msgstr "Тігінен"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlideDocks)
+#: slide/slide_config.ui:161
+#, kde-format
+msgid "Slide docks"
+msgstr ""
 
 #: thumbnailaside/thumbnailaside.cpp:38
 #: thumbnailaside/thumbnailaside_config.cpp:73
@@ -2103,6 +2130,13 @@ msgstr "Буғатталған"
 msgid "Mouse Tracking:"
 msgstr "Тышқанның ізі"
 
+#, fuzzy
+#~| msgctxt "Duration of rotation"
+#~| msgid "Default"
+#~ msgctxt "Duration of the slide animation"
+#~ msgid "Default"
+#~ msgstr "Әдетті"
+
 #~ msgid "Strength of the effect:"
 #~ msgstr "Эффекттің күші:"
 
@@ -2181,15 +2215,6 @@ msgstr "Тышқанның ізі"
 
 #~ msgid "Slide when grouping"
 #~ msgstr "Топтасқандырғанда сырғанасын"
-
-#~ msgid "Slide when switching tabs"
-#~ msgstr "Қойынды ауыстырғышы жүгірткімен болсын"
-
-#~ msgid "Vertical"
-#~ msgstr "Тігінен"
-
-#~ msgid "Horizontal"
-#~ msgstr "Көлденең"
 
 #~ msgctxt ""
 #~ "Window geometry display, %1 and %2 are the new size, %3 and %4 are pixel "
