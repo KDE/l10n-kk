@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ChartShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-05-05 03:22+0200\n"
+"POT-Creation-Date: 2018-05-09 03:23+0200\n"
 "PO-Revision-Date: 2012-12-19 05:22+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -182,45 +182,59 @@ msgstr "График аумағы"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: ChartConfigWidget.ui:52
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#| "REC-html40/strict.dtd\">\n"
+#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#| "css\">\n"
+#| "p, li { white-space: pre-wrap; }\n"
+#| "</style></head><body style=\" font-family:'Ubuntu'; font-size:9pt; font-"
+#| "weight:400; font-style:normal;\">\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#| "family:'Sans Serif'; font-size:8pt; font-weight:600;\">Pie Properties</"
+#| "span></p></body></html>"
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"</style></head><body style=\" font-family:'Noto Sans'; font-size:10pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><span style="
-"\" font-weight:600;\">Labels</span></p></body></html>"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-size:8pt; font-weight:600;\">Chart Titles</span></"
+"p></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><span style="
-"\" font-weight:600;\">Жарлықтары</span></p></body></html>"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"family:'Sans Serif'; font-size:8pt; font-weight:600;\">Үлес қасиеттері</"
+"span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showTitle)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: ChartConfigWidget.ui:67 ChartConfigWidget.ui:690 ChartShape.cpp:487
+#: ChartConfigWidget.ui:67 ChartConfigWidget.ui:690 ChartShape.cpp:543
 #, kde-format
 msgid "Title"
 msgstr "Атауы"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showSubTitle)
-#: ChartConfigWidget.ui:80 ChartShape.cpp:514
+#: ChartConfigWidget.ui:80 ChartShape.cpp:572
 #, kde-format
 msgid "Subtitle"
 msgstr "Бағыныңқы атау"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showFooter)
-#: ChartConfigWidget.ui:93 ChartShape.cpp:543
+#: ChartConfigWidget.ui:93 ChartShape.cpp:603
 #, kde-format
 msgid "Footer"
 msgstr "Төменгі колонтитулы"
@@ -253,9 +267,10 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, axisShowTitle)
 #: ChartConfigWidget.ui:142
-#, kde-format
-msgid "Label"
-msgstr "Жарлық"
+#, fuzzy, kde-format
+#| msgid "Show Grid Lines"
+msgid "Axis Title"
+msgstr "Тор сызықтары көрсетілсін"
 
 #. i18n: ectx: property (text), widget (QCheckBox, axisShowGridLines)
 #: ChartConfigWidget.ui:154
@@ -270,10 +285,10 @@ msgid "Scaling..."
 msgstr "Масштабтау..."
 
 #. i18n: ectx: property (text), widget (QPushButton, axisEditFontButton)
-#. i18n: ectx: property (text), widget (QPushButton, legendEditFontButton)
-#: ChartConfigWidget.ui:170 ChartConfigWidget.ui:738
-#, kde-format
-msgid "Edit Fonts..."
+#: ChartConfigWidget.ui:170
+#, fuzzy, kde-format
+#| msgid "Edit Fonts..."
+msgid "Edit Label Fonts..."
 msgstr "Қаріптерді өзгерту..."
 
 #. i18n: ectx: property (text), widget (QLabel, gapBetweenBarsLabel)
@@ -458,18 +473,24 @@ msgstr "v"
 msgid "h"
 msgstr "с"
 
-#: ChartShape.cpp:460
+#. i18n: ectx: property (text), widget (QPushButton, legendEditFontButton)
+#: ChartConfigWidget.ui:738
+#, kde-format
+msgid "Edit Fonts..."
+msgstr "Қаріптерді өзгерту..."
+
+#: ChartShape.cpp:515
 #, kde-format
 msgid ""
 "The plugin needed for displaying text labels in a chart is not available."
 msgstr "Диаграммада мәтін жарлықтарын көрсететін плагині қол жекізбеуде."
 
-#: ChartShape.cpp:461
+#: ChartShape.cpp:516
 #, kde-format
 msgid "Plugin Missing"
 msgstr "Плагині жоқ"
 
-#: ChartShape.cpp:465
+#: ChartShape.cpp:520
 #, kde-format
 msgid ""
 "The plugin needed for displaying text labels is not compatible with the "
@@ -478,12 +499,12 @@ msgstr ""
 "Мәтін жарлықтарын көрсететін плагині диаграманың Flake қалыптың қолданыстағы "
 "нұсқасымен үйлеспейді."
 
-#: ChartShape.cpp:466
+#: ChartShape.cpp:521
 #, kde-format
 msgid "Plugin Incompatible"
 msgstr "Үйлеспейтін плагині"
 
-#: ChartShape.cpp:929
+#: ChartShape.cpp:983
 #, kde-format
 msgid ""
 "This document contains an external link to a remote document\n"
@@ -492,17 +513,17 @@ msgstr ""
 "Құжатта қашықтағы құжатқа сыртқы сілтемесі бар\n"
 "%1"
 
-#: ChartShape.cpp:930
+#: ChartShape.cpp:984
 #, kde-format
 msgid "Confirmation Required"
 msgstr "Құптау талап етілген"
 
-#: ChartShape.cpp:930
+#: ChartShape.cpp:984
 #, kde-format
 msgid "Download"
 msgstr "Жүктеп алу"
 
-#: ChartShape.cpp:930
+#: ChartShape.cpp:984
 #, kde-format
 msgid "Skip"
 msgstr "Өткізіп жіберу"
@@ -1262,6 +1283,32 @@ msgstr ""
 #, kde-format
 msgid "Title:"
 msgstr "Атауы:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><span "
+#~ "style=\" font-weight:600;\">Labels</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><span "
+#~ "style=\" font-weight:600;\">Жарлықтары</span></p></body></html>"
+
+#~ msgid "Label"
+#~ msgstr "Жарлық"
 
 #~ msgid "Show Frame"
 #~ msgstr "Қоршауы көрсетілсін"
