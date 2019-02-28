@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-19 03:20+0100\n"
+"POT-Creation-Date: 2019-02-28 03:18+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -763,7 +763,7 @@ msgstr ""
 "<icode>%1</icode> дегеннің шығысынан қараңыз.</para> "
 
 #: src/commands/exportpaperkeycommand.cpp:146
-#: src/commands/exportsecretkeycommand.cpp:156
+#: src/commands/exportsecretkeycommand.cpp:162
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -773,19 +773,31 @@ msgstr ""
 "<para>Құпия кілтін экспорттау әрекетінде бір қате орын алды.</para> "
 "<para><command>%1</command> дегеннің шығысы: <message>%2</message></para>"
 
-#: src/commands/exportsecretkeycommand.cpp:137
+#: src/commands/exportsecretkeycommand.cpp:97
+#, fuzzy, kde-format
+#| msgid "Export Secret Key..."
+msgid "Export Secret Key"
+msgstr "Құпия кілтін экспорттау..."
+
+#: src/commands/exportsecretkeycommand.cpp:101
+#: src/commands/exportsecretkeycommand.cpp:102
+#, kde-format
+msgid "Secret Key Files"
+msgstr "Құпия кілт файлдары"
+
+#: src/commands/exportsecretkeycommand.cpp:143
 #, kde-format
 msgctxt "@title:window"
 msgid "Secret Key Export Error"
 msgstr "Құпия кілтін экспорттау қатесі"
 
-#: src/commands/exportsecretkeycommand.cpp:142
+#: src/commands/exportsecretkeycommand.cpp:148
 #, kde-format
 msgctxt "@title:window"
 msgid "Secret Key Export Finished"
 msgstr "Құпия кілтін экспорттау аяқталды"
 
-#: src/commands/exportsecretkeycommand.cpp:148
+#: src/commands/exportsecretkeycommand.cpp:154
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -797,7 +809,7 @@ msgstr ""
 "күтпеген қатеге тап болып бітпей аяқталды.</para><para>Егжей- тегжейін "
 "<icode>%1</icode> дегеннің шығысынан қараңыз.</para> "
 
-#: src/commands/exportsecretkeycommand.cpp:163
+#: src/commands/exportsecretkeycommand.cpp:169
 #, kde-format
 msgctxt "@info"
 msgid "Secret key successfully exported."
@@ -4233,7 +4245,7 @@ msgstr "Жаңа куәлікті жасау"
 #. i18n: ectx: property (text), widget (QPushButton, certifyBtn)
 #: src/dialogs/certificatedetailswidget.ui:67
 #: src/dialogs/certifycertificatedialog.cpp:199
-#: src/newcertificatewizard/newcertificatewizard.cpp:1646
+#: src/newcertificatewizard/newcertificatewizard.cpp:1649
 #, kde-format
 msgid "Certify"
 msgstr "Растау"
@@ -4729,65 +4741,6 @@ msgstr "%1 орындау жаңылысы: %2"
 #| msgid "Export"
 msgid "Export..."
 msgstr "Эспорт"
-
-#: src/dialogs/exportsecretkeydialog.cpp:104
-#, kde-format
-msgid "Secret Key Files"
-msgstr "Құпия кілт файлдары"
-
-#: src/dialogs/exportsecretkeydialog.cpp:128
-#, kde-format
-msgctxt "@info"
-msgid "Please select export options for %1:"
-msgstr "%1 үшін экспорттау параметрлерін таңдаңыз:"
-
-#: src/dialogs/exportsecretkeydialog.cpp:142
-#, kde-format
-msgid "Secret Key Files (*.pem *.p12 *.gpg *.asc *.pgp)"
-msgstr "Құпия кілт файлдары (*.pem *.p12 *.gpg *.asc *.pgp)"
-
-#: src/dialogs/exportsecretkeydialog.cpp:221
-#, kde-format
-msgctxt "@info"
-msgid "You have to enter an output filename."
-msgstr "Шығыс файл атауын келтіруіңіз керек."
-
-#: src/dialogs/exportsecretkeydialog.cpp:222
-#: src/dialogs/exportsecretkeydialog.cpp:231
-#, kde-format
-msgctxt "@title"
-msgid "Incomplete data"
-msgstr "Дерек толық емес"
-
-#: src/dialogs/exportsecretkeydialog.cpp:230
-#, kde-format
-msgctxt "@info"
-msgid "You have to choose a passphrase character set."
-msgstr "Паролінің қодтамасын таңдауыңыз керек."
-
-#. i18n: ectx: property (windowTitle), widget (QDialog, ExportSecretKeyDialog)
-#: src/dialogs/exportsecretkeydialog.ui:13
-#, kde-format
-msgid "Export Secret Certificate"
-msgstr "Құпия куәлігіні экспорттау"
-
-#. i18n: ectx: property (text), widget (QLabel, outputFileLB)
-#: src/dialogs/exportsecretkeydialog.ui:26
-#, kde-format
-msgid "Output file:"
-msgstr "Шығыс файлы"
-
-#. i18n: ectx: property (text), widget (QLabel, charsetLB)
-#: src/dialogs/exportsecretkeydialog.ui:36
-#, kde-format
-msgid "Passphrase charset:"
-msgstr "Паролінің кодтамасы:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, armorCB)
-#: src/dialogs/exportsecretkeydialog.ui:66
-#, kde-format
-msgid "ASCII armor"
-msgstr "ASCII-мен шектелсін"
 
 #: src/dialogs/gencardkeydialog.cpp:77
 #: src/newcertificatewizard/newcertificatewizard.cpp:1708
@@ -6463,18 +6416,18 @@ msgctxt "@title"
 msgid "Key Pair Creation Wizard"
 msgstr "Куәлікті жасау шебері"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1638
+#: src/newcertificatewizard/newcertificatewizard.cpp:1639
 #, kde-format
 msgid "Sign"
 msgstr "Қолтаңбалау"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1642
+#: src/newcertificatewizard/newcertificatewizard.cpp:1643
 #: src/newcertificatewizard/newcertificatewizard.cpp:1671
 #, kde-format
 msgid "Encrypt"
 msgstr "Шифрлау"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1649
+#: src/newcertificatewizard/newcertificatewizard.cpp:1646
 #, kde-format
 msgid "Authenticate"
 msgstr "Аутентификациялау"
@@ -8673,6 +8626,37 @@ msgstr "%1 дегеннен куәліктер импортталды"
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
+#~ msgctxt "@info"
+#~ msgid "Please select export options for %1:"
+#~ msgstr "%1 үшін экспорттау параметрлерін таңдаңыз:"
+
+#~ msgid "Secret Key Files (*.pem *.p12 *.gpg *.asc *.pgp)"
+#~ msgstr "Құпия кілт файлдары (*.pem *.p12 *.gpg *.asc *.pgp)"
+
+#~ msgctxt "@info"
+#~ msgid "You have to enter an output filename."
+#~ msgstr "Шығыс файл атауын келтіруіңіз керек."
+
+#~ msgctxt "@title"
+#~ msgid "Incomplete data"
+#~ msgstr "Дерек толық емес"
+
+#~ msgctxt "@info"
+#~ msgid "You have to choose a passphrase character set."
+#~ msgstr "Паролінің қодтамасын таңдауыңыз керек."
+
+#~ msgid "Export Secret Certificate"
+#~ msgstr "Құпия куәлігіні экспорттау"
+
+#~ msgid "Output file:"
+#~ msgstr "Шығыс файлы"
+
+#~ msgid "Passphrase charset:"
+#~ msgstr "Паролінің кодтамасы:"
+
+#~ msgid "ASCII armor"
+#~ msgstr "ASCII-мен шектелсін"
+
 #, fuzzy
 #~| msgid "Please select a certificate"
 #~ msgid "Please select a certificate."
@@ -9864,11 +9848,6 @@ msgstr ""
 #~| msgid "Could not generate certificate: %1"
 #~ msgid "Could not determine parent directory of \"%1\""
 #~ msgstr "Келесі куәлікті жасау мүмкін емес: %1"
-
-#, fuzzy
-#~| msgid "Export Secret Key..."
-#~ msgid "Export Secret Key"
-#~ msgstr "Құпия кілтін экспорттау..."
 
 #~ msgid "Certificate Download Failed"
 #~ msgstr "Куәлікті жүктеп алу жаңылысы"
