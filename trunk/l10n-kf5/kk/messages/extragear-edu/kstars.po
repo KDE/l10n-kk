@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-03 02:36+0200\n"
+"POT-Creation-Date: 2019-07-04 02:31+0200\n"
 "PO-Revision-Date: 2013-11-16 05:16+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -507,7 +507,7 @@ msgstr "Жұлдыздарды қайта индекстеуді күте тұр
 #: ekos/guide/internalguide/rcalibration.cpp:837
 #: ekos/scheduler/schedulerjob.cpp:453 indi/drivermanager.cpp:427
 #: indi/drivermanager.cpp:750 indi/indicap.cpp:247 indi/indicap.cpp:250
-#: indi/indidome.cpp:461 indi/indidome.cpp:464 indi/inditelescope.cpp:1259
+#: indi/indidome.cpp:516 indi/indidome.cpp:519 indi/inditelescope.cpp:1259
 #: indi/inditelescope.cpp:1262
 #, kde-format
 msgid "Error"
@@ -2432,9 +2432,10 @@ msgctxt ""
 msgid "%1 in %2"
 msgstr "%2 ш/жұлдыздағы %1"
 
+#. i18n: ectx: property (text), widget (QLabel, domeAzimuthPositionLabel)
 #. i18n: ectx: attribute (title), widget (QWidget, XplanetTabPosition)
-#: dialogs/detaildialog.cpp:499 kstarslite/qml/dialogs/DetailsDialog.qml:45
-#: xplanet/opsxplanet.ui:871
+#: dialogs/detaildialog.cpp:499 ekos/observatory/observatory.ui:372
+#: kstarslite/qml/dialogs/DetailsDialog.qml:45 xplanet/opsxplanet.ui:871
 #, kde-format, kde-kuit-format
 msgid "Position"
 msgstr "Орны"
@@ -2924,11 +2925,10 @@ msgid "DE (J2000.0):"
 msgstr "Еңс (J2000.0):"
 
 #. i18n: ectx: property (text), widget (QLabel, AzLabel)
-#. i18n: ectx: property (text), widget (QLabel, angleLabel)
 #. i18n: ectx: property (text), widget (QLabel, label_23)
 #. i18n: ectx: property (text), widget (QLabel, azLabel)
-#: dialogs/details_position.ui:336 ekos/observatory/observatory.ui:171
-#: oal/execute.ui:216 printing/detailstable.cpp:568 tools/modcalcaltaz.ui:313
+#: dialogs/details_position.ui:336 oal/execute.ui:216
+#: printing/detailstable.cpp:568 tools/modcalcaltaz.ui:313
 #, kde-format
 msgid "Azimuth:"
 msgstr "Азимуты:"
@@ -4254,9 +4254,11 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLineEdit, FOVEditOffsetY)
 #. i18n: ectx: property (text), widget (QLineEdit, FOVEditOffsetX)
 #. i18n: ectx: property (text), widget (QLabel, PAHErrorLabel)
+#. i18n: ectx: property (text), widget (QLabel, domeAzimuthPosition)
 #. i18n: ectx: property (text), widget (QLabel, PositionAngle)
 #: dialogs/newfov.ui:1054 dialogs/newfov.ui:1074 dialogs/newfov.ui:1137
-#: ekos/align/align.ui:1453 tools/modcalcangdist.ui:353
+#: ekos/align/align.ui:1453 ekos/observatory/observatory.ui:312
+#: tools/modcalcangdist.ui:353
 #, kde-format
 msgid "0"
 msgstr "0"
@@ -4707,7 +4709,7 @@ msgstr ""
 #: ekos/manager.ui:1013 ekos/manager.ui:1206 ekos/manager.ui:1400
 #: ekos/scheduler/scheduler.ui:855 ekos/scheduler/schedulerjob.cpp:446
 #: ekos/scheduler/schedulerjob.cpp:470 indi/indicap.cpp:235
-#: indi/indidome.cpp:443 indi/inditelescope.cpp:1241
+#: indi/indidome.cpp:498 indi/inditelescope.cpp:1241
 #, kde-format
 msgid "Idle"
 msgstr "Іссіз"
@@ -5223,7 +5225,7 @@ msgstr[0] "Есеп шығарғыш %1 секундтан кейін доғар
 
 #: ekos/align/align.cpp:3425 ekos/capture/capture.cpp:2084
 #: ekos/focus/focus.cpp:2153 ekos/guide/guide.cpp:1178 ekos/manager.cpp:1909
-#: ekos/mount/mount.cpp:651 ekos/observatory/observatory.cpp:382
+#: ekos/mount/mount.cpp:651 ekos/observatory/observatory.cpp:456
 #: ekos/scheduler/scheduler.cpp:334
 #, kde-format
 msgctxt "log entry; %1 is the date, %2 is the text"
@@ -7717,11 +7719,9 @@ msgstr "Сақтау орны жарамсыз"
 #. i18n: ectx: property (text), widget (QPushButton, setIndexFileB)
 #. i18n: ectx: property (text), widget (QPushButton, setAngleB)
 #. i18n: ectx: property (text), widget (QPushButton, setPAB)
-#. i18n: ectx: property (text), widget (QPushButton, setDomeAngleButton)
 #: ekos/align/opsastrometrycfg.ui:85 ekos/capture/rotatorsettings.ui:226
-#: ekos/capture/rotatorsettings.ui:388 ekos/observatory/observatory.ui:200
-#: indi/indiproperty.cpp:236 indi/indiproperty.cpp:264
-#: kstarslite/qml/indi/modules/KSINDITextField.qml:39
+#: ekos/capture/rotatorsettings.ui:388 indi/indiproperty.cpp:236
+#: indi/indiproperty.cpp:264 kstarslite/qml/indi/modules/KSINDITextField.qml:39
 #, kde-format, kde-kuit-format
 msgid "Set"
 msgstr "Орнату"
@@ -7878,7 +7878,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, openIndexFileDirectory)
 #. i18n: ectx: property (text), widget (QPushButton, shutterOpen)
 #: ekos/align/opsastrometryindexfiles.ui:217
-#: ekos/observatory/observatory.cpp:229 ekos/observatory/observatory.ui:304
+#: ekos/observatory/observatory.cpp:260 ekos/observatory/observatory.ui:612
 #, fuzzy, kde-format
 #| msgid "FITS Open"
 msgid "Open"
@@ -8927,8 +8927,8 @@ msgstr "Жарықтығы:"
 #. i18n: ectx: property (text), widget (QCheckBox, useWeatherCB)
 #. i18n: ectx: property (title), widget (QGroupBox, weatherBox)
 #. i18n: ectx: property (text), widget (QCheckBox, weatherCheck)
-#: ekos/auxiliary/opslogs.ui:252 ekos/observatory/observatory.ui:380
-#: ekos/observatory/observatory.ui:440 ekos/scheduler/scheduler.ui:1131
+#: ekos/auxiliary/opslogs.ui:252 ekos/observatory/observatory.ui:675
+#: ekos/observatory/observatory.ui:741 ekos/scheduler/scheduler.ui:1131
 #, fuzzy, kde-format
 #| msgctxt "Satellite group name"
 #| msgid "Weather"
@@ -8974,7 +8974,7 @@ msgstr "INDI"
 #. i18n: ectx: property (title), widget (QGroupBox, domeBox)
 #. i18n: ectx: property (text), widget (QCheckBox, useDomeCB)
 #: ekos/auxiliary/opslogs.ui:295 ekos/observatory/observatory.ui:51
-#: ekos/observatory/observatory.ui:360
+#: ekos/observatory/observatory.ui:655
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park Scope"
@@ -9306,8 +9306,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, closeB)
 #. i18n: ectx: property (text), widget (QPushButton, shutterClosed)
 #: ekos/auxiliary/serialportassistant.ui:264
-#: ekos/ekoslive/ekoslivedialog.ui:294 ekos/observatory/observatory.cpp:218
-#: ekos/observatory/observatory.ui:262 indi/guimanager.cpp:73
+#: ekos/ekoslive/ekoslivedialog.ui:294 ekos/observatory/observatory.cpp:249
+#: ekos/observatory/observatory.ui:570 indi/guimanager.cpp:73
 #: kstarslite/qml/modules/tutorial/TutorialPopup.qml:68
 #, kde-format, kde-kuit-format
 msgid "Close"
@@ -9484,8 +9484,8 @@ msgstr "Саны:"
 #. i18n: ectx: property (text), widget (QCheckBox, weatherWarningDomeCB)
 #. i18n: ectx: property (text), widget (QCheckBox, weatherAlertDomeCB)
 #. i18n: ectx: property (text), widget (QCheckBox, parkDomeCheck)
-#: ekos/capture/calibrationoptions.ui:253 ekos/observatory/observatory.ui:560
-#: ekos/observatory/observatory.ui:659 ekos/scheduler/scheduler.ui:1568
+#: ekos/capture/calibrationoptions.ui:253 ekos/observatory/observatory.ui:810
+#: ekos/observatory/observatory.ui:909 ekos/scheduler/scheduler.ui:1568
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park Scope"
@@ -10203,7 +10203,7 @@ msgstr "FITS кескінің жүктеу жаңылысы, доғарылад�
 msgid "Mount parked."
 msgstr "Экар тауы"
 
-#: ekos/capture/capture.cpp:5279 ekos/observatory/observatorydomemodel.cpp:49
+#: ekos/capture/capture.cpp:5279 ekos/observatory/observatorydomemodel.cpp:51
 #: ekos/scheduler/scheduler.cpp:5493
 #, fuzzy, kde-format
 #| msgid "Radiotelescope"
@@ -10329,35 +10329,35 @@ msgid ""
 "Ekos will refocus as soon as possible, last procedure was %1 seconds ago."
 msgstr ""
 
-#: ekos/capture/capture.cpp:6053
+#: ekos/capture/capture.cpp:6055
 #, fuzzy, kde-format
 #| msgid "Use the specified configuration file"
 msgid "Reset %1 configuration to default?"
 msgstr "Көрсетілген баптау файлын қолдану"
 
-#: ekos/capture/capture.cpp:6053
+#: ekos/capture/capture.cpp:6055
 #, fuzzy, kde-format
 #| msgid "Configuration"
 msgid "Confirmation"
 msgstr "Баптауы"
 
-#: ekos/capture/capture.cpp:6092
+#: ekos/capture/capture.cpp:6094
 #, kde-format
 msgid "Cooler is on"
 msgstr ""
 
-#: ekos/capture/capture.cpp:6092
+#: ekos/capture/capture.cpp:6094
 #, kde-format
 msgid "Cooler is off"
 msgstr ""
 
-#: ekos/capture/capture.cpp:6102 ekos/focus/focus.cpp:2932
+#: ekos/capture/capture.cpp:6104 ekos/focus/focus.cpp:2932
 #, fuzzy, kde-format
 #| msgid "Start Camera/CCD exposure. The duration is in seconds."
 msgid "Exposure timeout. Aborting..."
 msgstr "Камера/CCD түсірілімін бастау. Экспозициясы - секундаларда."
 
-#: ekos/capture/capture.cpp:6107 ekos/focus/focus.cpp:2944
+#: ekos/capture/capture.cpp:6109 ekos/focus/focus.cpp:2944
 #: ekos/guide/guide.cpp:1061
 #, fuzzy, kde-format
 #| msgid "Autofocus in progress..."
@@ -14037,7 +14037,9 @@ msgstr "Еңіс бойынша телескоп қимылы. Керек бол
 msgid "Calibration rejected. Start drift is too short."
 msgstr "Калибрлеу болмады. Бастапқы қимыл тым қысқа."
 
+#. i18n: ectx: property (text), widget (QPushButton, motionAbortButton)
 #: ekos/guide/internalguide/rcalibration.cpp:502
+#: ekos/observatory/observatory.ui:193
 #: skycomponents/satellitescomponent.cpp:154 tools/conjunctions.cpp:362
 #, kde-format
 msgid "Abort"
@@ -15244,7 +15246,7 @@ msgid "Ctrl+S"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, trackingGroup)
-#: ekos/mount/mount.ui:587 indi/indidome.cpp:458 indi/inditelescope.cpp:1256
+#: ekos/mount/mount.ui:587 indi/indidome.cpp:513 indi/inditelescope.cpp:1256
 #, fuzzy, kde-format
 #| msgid "Track"
 msgid "Tracking"
@@ -15267,8 +15269,8 @@ msgid "OFF"
 msgstr "АЖЫРАТ."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ekos/mount/mount.ui:674 ekos/observatory/observatory.cpp:194
-#: indi/indicap.cpp:241 indi/indidome.cpp:449 indi/inditelescope.cpp:1247
+#: ekos/mount/mount.ui:674 ekos/observatory/observatory.cpp:222
+#: indi/indicap.cpp:241 indi/indidome.cpp:504 indi/inditelescope.cpp:1247
 #, fuzzy, kde-format
 #| msgctxt "City in China"
 #| msgid "Peking"
@@ -15277,8 +15279,8 @@ msgstr "Пекин"
 
 #. i18n: ectx: property (text), widget (QPushButton, parkB)
 #. i18n: ectx: property (text), widget (QPushButton, domePark)
-#: ekos/mount/mount.ui:703 ekos/observatory/observatory.cpp:178
-#: ekos/observatory/observatory.cpp:199 ekos/observatory/observatory.ui:98
+#: ekos/mount/mount.ui:703 ekos/observatory/observatory.cpp:203
+#: ekos/observatory/observatory.cpp:228 ekos/observatory/observatory.ui:99
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park"
@@ -15287,8 +15289,8 @@ msgstr "Жинап қою"
 
 #. i18n: ectx: property (text), widget (QPushButton, unparkB)
 #. i18n: ectx: property (text), widget (QPushButton, domeUnpark)
-#: ekos/mount/mount.ui:733 ekos/observatory/observatory.cpp:190
-#: ekos/observatory/observatory.cpp:195 ekos/observatory/observatory.ui:140
+#: ekos/mount/mount.ui:733 ekos/observatory/observatory.cpp:217
+#: ekos/observatory/observatory.cpp:223 ekos/observatory/observatory.ui:141
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park"
@@ -15341,134 +15343,134 @@ msgstr ""
 msgid "Max. Alt:"
 msgstr "макс. биік."
 
-#: ekos/observatory/observatory.cpp:180
+#: ekos/observatory/observatory.cpp:205
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Park"
 msgid "UnParked"
 msgstr "Жинап қою"
 
-#: ekos/observatory/observatory.cpp:181
+#: ekos/observatory/observatory.cpp:207
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
-msgid "Dome is unparked."
+msgid "Dome is idle."
 msgstr "Доум-Крик"
 
-#: ekos/observatory/observatory.cpp:184
+#: ekos/observatory/observatory.cpp:211
 #, fuzzy, kde-format
 #| msgid "Focusing inward..."
 msgid "Dome is moving..."
 msgstr "Ішке қарай тоғыстау..."
 
-#: ekos/observatory/observatory.cpp:188 indi/indicap.cpp:238
-#: indi/indidome.cpp:446 indi/inditelescope.cpp:1244
+#: ekos/observatory/observatory.cpp:215 indi/indicap.cpp:238
+#: indi/indidome.cpp:501 indi/inditelescope.cpp:1244
 #, fuzzy, kde-format
 #| msgctxt "City in Australia"
 #| msgid "Parkes"
 msgid "Parked"
 msgstr "Паркес"
 
-#: ekos/observatory/observatory.cpp:191
+#: ekos/observatory/observatory.cpp:219
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome is parked."
 msgstr "Доум-Крик"
 
-#: ekos/observatory/observatory.cpp:196
+#: ekos/observatory/observatory.cpp:225
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome is parking..."
 msgstr "Доум-Крик"
 
-#: ekos/observatory/observatory.cpp:200 indi/indicap.cpp:244
-#: indi/indidome.cpp:452
+#: ekos/observatory/observatory.cpp:229 indi/indicap.cpp:244
+#: indi/indidome.cpp:507
 #, fuzzy, kde-format
 #| msgctxt "City in China"
 #| msgid "Peking"
 msgid "UnParking"
 msgstr "Пекин"
 
-#: ekos/observatory/observatory.cpp:201
+#: ekos/observatory/observatory.cpp:231
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome is unparking..."
 msgstr "Доум-Крик"
 
-#: ekos/observatory/observatory.cpp:204
+#: ekos/observatory/observatory.cpp:235
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome is tracking."
 msgstr "Доум-Крик"
 
-#: ekos/observatory/observatory.cpp:217 ekos/observatory/observatory.cpp:234
+#: ekos/observatory/observatory.cpp:248 ekos/observatory/observatory.cpp:265
 #, fuzzy, kde-format
 #| msgid "FITS Open"
 msgid "Opened"
 msgstr "FITS-ты ашу"
 
-#: ekos/observatory/observatory.cpp:219
+#: ekos/observatory/observatory.cpp:250
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Shutter Speed"
 msgid "Shutter is open."
 msgstr "Экспозициясы"
 
-#: ekos/observatory/observatory.cpp:222
+#: ekos/observatory/observatory.cpp:253
 #, fuzzy, kde-format
 #| msgid "FITS Open"
 msgid "Opening"
 msgstr "FITS-ты ашу"
 
-#: ekos/observatory/observatory.cpp:223 ekos/observatory/observatory.cpp:230
+#: ekos/observatory/observatory.cpp:254 ekos/observatory/observatory.cpp:261
 #, fuzzy, kde-format
 #| msgid "Close"
 msgid "Closed"
 msgstr "Жабу"
 
-#: ekos/observatory/observatory.cpp:224
+#: ekos/observatory/observatory.cpp:255
 #, kde-format
 msgid "Shutter is opening..."
 msgstr ""
 
-#: ekos/observatory/observatory.cpp:231
+#: ekos/observatory/observatory.cpp:262
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Shutter Speed"
 msgid "Shutter is closed."
 msgstr "Экспозициясы"
 
-#: ekos/observatory/observatory.cpp:235
+#: ekos/observatory/observatory.cpp:266
 #, fuzzy, kde-format
 #| msgid "Close"
 msgid "Closing"
 msgstr "Жабу"
 
-#: ekos/observatory/observatory.cpp:236
+#: ekos/observatory/observatory.cpp:267
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Settings"
 msgid "Shutter is closing..."
 msgstr "Баптау"
 
-#: ekos/observatory/observatory.cpp:308
+#: ekos/observatory/observatory.cpp:377
 #, fuzzy, kde-format
 #| msgctxt "Satellite group name"
 #| msgid "Weather"
 msgid "Weather is OK"
 msgstr "Метеорологикалық"
 
-#: ekos/observatory/observatory.cpp:312
+#: ekos/observatory/observatory.cpp:381
 #, fuzzy, kde-format
 #| msgid "Separation"
 msgid "Weather Warning"
 msgstr "Аралығы"
 
-#: ekos/observatory/observatory.cpp:316
+#: ekos/observatory/observatory.cpp:385
 #, fuzzy, kde-format
 #| msgctxt "Satellite group name"
 #| msgid "Weather"
@@ -15484,7 +15486,7 @@ msgid "Status of the Observatory"
 msgstr "Дайер обс."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, domePark)
-#: ekos/observatory/observatory.ui:87
+#: ekos/observatory/observatory.ui:88
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15493,7 +15495,7 @@ msgid ""
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, domeUnpark)
-#: ekos/observatory/observatory.ui:129
+#: ekos/observatory/observatory.ui:130
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15501,9 +15503,133 @@ msgid ""
 "please use the INDI tab.</p></body></html>"
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, motionAbortButton)
+#: ekos/observatory/observatory.ui:182
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Abort Motion"
+msgid "Abort dome motion"
+msgstr "Кимылын доғару"
+
+#. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, relativeMotionSB)
+#: ekos/observatory/observatory.ui:207
+#, kde-format
+msgid "Relative position the dome should move."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, motionMoveRelButton)
+#: ekos/observatory/observatory.ui:235
+#, kde-format
+msgid "Move the dome for the given degrees and direction."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, motionMoveRelButton)
+#: ekos/observatory/observatory.ui:246
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Move to rate"
+msgid "Move (rel)"
+msgstr "Жылдамдыққа жету"
+
+#. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, absoluteMotionSB)
+#: ekos/observatory/observatory.ui:256
+#, kde-format
+msgid "Absolute position the dome should move."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, motionMoveAbsButton)
+#: ekos/observatory/observatory.ui:281
+#, fuzzy, kde-format
+#| msgid "Slew the telescope to the target coordinates"
+msgid "Move the dome to the given absolute position."
+msgstr "Телескопты көздеген координаттарға бұрау"
+
+#. i18n: ectx: property (text), widget (QPushButton, motionMoveAbsButton)
+#: ekos/observatory/observatory.ui:284
+#, kde-format
+msgid "Move (abs)"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, motionCCWButton)
+#: ekos/observatory/observatory.ui:337
+#, kde-format
+msgid "Rotate counter clockwise"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, motionCCWButton)
+#: ekos/observatory/observatory.ui:348
+#, fuzzy, kde-format
+#| msgid "CCD"
+msgid "CCW"
+msgstr "CCD"
+
+#. i18n: ectx: property (text), widget (QLabel, motionLabel)
+#: ekos/observatory/observatory.ui:358
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Motion"
+msgid "Motion:"
+msgstr "Жылжу"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, motionCWButton)
+#: ekos/observatory/observatory.ui:394
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Shutter Speed"
+msgid "Rotate clockwise"
+msgstr "Экспозициясы"
+
+#. i18n: ectx: property (text), widget (QPushButton, motionCWButton)
+#: ekos/observatory/observatory.ui:405
+#, kde-format
+msgid "&CW"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ekos/observatory/observatory.ui:414
+#, fuzzy, kde-format
+#| msgid "Loading %1"
+msgid "Slaving"
+msgstr "%1 дегенді жүктеу"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, slavingEnableButton)
+#: ekos/observatory/observatory.ui:446
+#, fuzzy, kde-format
+#| msgid "Additional options to be the solver"
+msgid ""
+"<html><head/><body><p>Enable slaving, dome motion <span style=\" font-"
+"weight:600;\">follows telescope motion</span></p></body></html>"
+msgstr "Есеп шығарғыштың қосымша параметрлері"
+
+#. i18n: ectx: property (text), widget (QPushButton, slavingEnableButton)
+#. i18n: ectx: property (text), widget (QCheckBox, f_UseAutoFocus)
+#: ekos/observatory/observatory.ui:457 oal/equipmentwriter.ui:747
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Enable"
+msgid "Enable"
+msgstr "Рұқсат ету"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, slavingDisableButton)
+#: ekos/observatory/observatory.ui:479
+#, fuzzy, kde-format
+#| msgid "Additional options to be the solver"
+msgid ""
+"<html><head/><body><p>Disable slaving, dome <span style=\" font-weight:600;"
+"\">does not follow telescope motion</span>.</p></body></html>"
+msgstr "Есеп шығарғыштың қосымша параметрлері"
+
+#. i18n: ectx: property (text), widget (QPushButton, slavingDisableButton)
+#: ekos/observatory/observatory.ui:490
+#, fuzzy, kde-format
+#| msgctxt "string from libindi, used in the config dialog"
+#| msgid "Disable"
+msgid "Disable"
+msgstr "Бұғаттау"
+
 #. i18n: ectx: property (title), widget (QGroupBox, shutterBox)
 #. i18n: ectx: property (text), widget (QCheckBox, useShutterCB)
-#: ekos/observatory/observatory.ui:215 ekos/observatory/observatory.ui:370
+#: ekos/observatory/observatory.ui:510 ekos/observatory/observatory.ui:665
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Shutter Speed"
@@ -15511,8 +15637,7 @@ msgid "Shutter"
 msgstr "Экспозициясы"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, shutterClosed)
-#. i18n: ectx: property (toolTip), widget (QPushButton, statusReadyButton)
-#: ekos/observatory/observatory.ui:251 ekos/observatory/observatory.ui:402
+#: ekos/observatory/observatory.ui:559
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15521,7 +15646,7 @@ msgid ""
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, shutterOpen)
-#: ekos/observatory/observatory.ui:293
+#: ekos/observatory/observatory.ui:601
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15530,14 +15655,14 @@ msgid ""
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (title), widget (QGroupBox, statusDefinitionBox)
-#: ekos/observatory/observatory.ui:336
+#: ekos/observatory/observatory.ui:631
 #, fuzzy, kde-format
 #| msgid "Start Focus"
 msgid "Observatory Status"
 msgstr "Тоғыстауды бастау"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useDomeCB)
-#: ekos/observatory/observatory.ui:357
+#: ekos/observatory/observatory.ui:652
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15546,7 +15671,7 @@ msgid ""
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useShutterCB)
-#: ekos/observatory/observatory.ui:367
+#: ekos/observatory/observatory.ui:662
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15555,7 +15680,7 @@ msgid ""
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, useWeatherCB)
-#: ekos/observatory/observatory.ui:377
+#: ekos/observatory/observatory.ui:672
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15563,39 +15688,38 @@ msgid ""
 "observatory status being \"READY\".</p></body></html>"
 msgstr "Есеп шығарғыштың қосымша параметрлері"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, statusReadyButton)
+#: ekos/observatory/observatory.ui:703
+#, kde-format
+msgid ""
+"<html><head/><body><p>Observatory status. Select the observatory elements "
+"that are relevant for the status:</p>\n"
+"<ul>\n"
+"<li><b>Dome</b>: unparked &rarr; ready</li>\n"
+"<li><b>Shutter</b>: open &rarr; ready</li>\n"
+"<li><b>Weather</b>: OK &rarr; ready</li>\n"
+"</ul>\n"
+"</body></html>"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QPushButton, statusReadyButton)
 #. i18n: ectx: property (text), widget (QPushButton, windowsReadyB)
-#: ekos/observatory/observatory.ui:413 ekos/profilewizard.ui:859
+#: ekos/observatory/observatory.ui:714 ekos/profilewizard.ui:859
 #, fuzzy, kde-format
 #| msgctxt "City in Pennsylvania USA"
 #| msgid "Reading"
 msgid "Ready"
 msgstr "Ридинг"
 
-#. i18n: ectx: property (toolTip), widget (QLabel, weatherLabel)
-#: ekos/observatory/observatory.ui:477
-#, kde-format
-msgid ""
-"Display the weather status. The warning and alert limits are set in the INDI "
-"tab."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, weatherLabel)
-#: ekos/observatory/observatory.ui:480
-#, fuzzy, kde-format
-#| msgid "Separation"
-msgid "Weather Status: "
-msgstr "Аралығы"
-
 #. i18n: ectx: property (title), widget (QGroupBox, weatherActionsBox)
-#: ekos/observatory/observatory.ui:515
+#: ekos/observatory/observatory.ui:765
 #, fuzzy, kde-format
 #| msgid "Action:"
 msgid "Actions"
 msgstr "Әрекеті:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, weatherWarningBox)
-#: ekos/observatory/observatory.ui:536
+#: ekos/observatory/observatory.ui:786
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgid "War&ning"
@@ -15603,14 +15727,14 @@ msgstr "Ескерту"
 
 #. i18n: ectx: property (text), widget (QCheckBox, weatherWarningShutterCB)
 #. i18n: ectx: property (text), widget (QCheckBox, weatherAlertShutterCB)
-#: ekos/observatory/observatory.ui:567 ekos/observatory/observatory.ui:652
+#: ekos/observatory/observatory.ui:817 ekos/observatory/observatory.ui:902
 #, kde-format
 msgid "Close Shutter"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, weatherWarningSchedulerCB)
 #. i18n: ectx: property (text), widget (QCheckBox, weatherAlertSchedulerCB)
-#: ekos/observatory/observatory.ui:574 ekos/observatory/observatory.ui:666
+#: ekos/observatory/observatory.ui:824 ekos/observatory/observatory.ui:916
 #: ekos/scheduler/scheduler.cpp:1287 ekos/scheduler/scheduler.cpp:1313
 #, fuzzy, kde-format
 #| msgid "&Start Sequence"
@@ -15619,7 +15743,7 @@ msgstr "Тізбекті &бастау"
 
 #. i18n: ectx: property (text), widget (QLabel, weatherWarningStatusLabel)
 #. i18n: ectx: property (text), widget (QLabel, weatherAlertStatusLabel)
-#: ekos/observatory/observatory.ui:583 ekos/observatory/observatory.ui:675
+#: ekos/observatory/observatory.ui:833 ekos/observatory/observatory.ui:925
 #, fuzzy, kde-format
 #| msgid "Additional options to be the solver"
 msgid ""
@@ -15629,32 +15753,60 @@ msgstr "Есеп шығарғыштың қосымша параметрлері"
 
 #. i18n: ectx: property (text), widget (QLabel, weatherWarningDelayLabel)
 #. i18n: ectx: property (text), widget (QLabel, weatherAlertDelayLabel)
-#: ekos/observatory/observatory.ui:606 ekos/observatory/observatory.ui:698
+#: ekos/observatory/observatory.ui:856 ekos/observatory/observatory.ui:948
 #, fuzzy, kde-format
 #| msgid "Delay:"
 msgid "Delay (sec):"
 msgstr "Кідірісі:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, weatherAlertBox)
-#: ekos/observatory/observatory.ui:628
+#: ekos/observatory/observatory.ui:878
 #, kde-format
 msgid "Ale&rt"
 msgstr ""
 
-#: ekos/observatory/observatorydomemodel.cpp:59
+#. i18n: ectx: property (toolTip), widget (QLabel, weatherLabel)
+#: ekos/observatory/observatory.ui:1014
+#, kde-format
+msgid ""
+"Display the weather status. The warning and alert limits are set in the INDI "
+"tab."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, weatherLabel)
+#: ekos/observatory/observatory.ui:1017
+#, fuzzy, kde-format
+#| msgid "Separation"
+msgid "Weather Status: "
+msgstr "Аралығы"
+
+#: ekos/observatory/observatorydomemodel.cpp:61
 #: ekos/scheduler/scheduler.cpp:5522
 #, fuzzy, kde-format
 #| msgid "Radiotelescope"
 msgid "Unparking dome..."
 msgstr "Радиотелескоп"
 
-#: ekos/observatory/observatorydomemodel.cpp:68
+#: ekos/observatory/observatorydomemodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "Satellite group name"
+#| msgid "Other"
+msgid "Slaving activated."
+msgstr "Басқа"
+
+#: ekos/observatory/observatorydomemodel.cpp:80
+#, fuzzy, kde-format
+#| msgid "Calibration"
+msgid "Aborting..."
+msgstr "Калибрлеу"
+
+#: ekos/observatory/observatorydomemodel.cpp:89
 #, fuzzy, kde-format
 #| msgid "Loading stars"
 msgid "Opening shutter..."
 msgstr "Жұлдыздарды жүктеу"
 
-#: ekos/observatory/observatorydomemodel.cpp:77
+#: ekos/observatory/observatorydomemodel.cpp:98
 #, fuzzy, kde-format
 #| msgid "Focusing outward..."
 msgid "Closing shutter..."
@@ -20861,59 +21013,59 @@ msgctxt "Message shown in INDI control panel"
 msgid "%1"
 msgstr "%1"
 
-#: indi/indidome.cpp:151
+#: indi/indidome.cpp:155
 #, fuzzy, kde-format
 #| msgid "Autofocus in progress..."
 msgid "Dome parking is in progress"
 msgstr "Автотоғыстау барысында..."
 
-#: indi/indidome.cpp:163
+#: indi/indidome.cpp:167
 #, fuzzy, kde-format
 #| msgid "Autofocus in progress..."
 msgid "Dome unparking is in progress"
 msgstr "Автотоғыстау барысында..."
 
-#: indi/indidome.cpp:175
+#: indi/indidome.cpp:179
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome parked"
 msgstr "Доум-Крик"
 
-#: indi/indidome.cpp:195
+#: indi/indidome.cpp:199
 #, fuzzy, kde-format
 #| msgctxt "City in British Columbia Canada"
 #| msgid "Dome Creek"
 msgid "Dome unparked"
 msgstr "Доум-Крик"
 
-#: indi/indidome.cpp:257
+#: indi/indidome.cpp:261
 #, fuzzy, kde-format
 #| msgid "Autofocus in progress..."
 msgid "Shutter closing is in progress"
 msgstr "Автотоғыстау барысында..."
 
-#: indi/indidome.cpp:265
+#: indi/indidome.cpp:269
 #, fuzzy, kde-format
 #| msgid "Autofocus in progress..."
 msgid "Shutter opening is in progress"
 msgstr "Автотоғыстау барысында..."
 
-#: indi/indidome.cpp:273
+#: indi/indidome.cpp:277
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Shutter Speed"
 msgid "Shutter closed"
 msgstr "Экспозициясы"
 
-#: indi/indidome.cpp:281
+#: indi/indidome.cpp:285
 #, fuzzy, kde-format
 #| msgctxt "string from libindi, used in the config dialog"
 #| msgid "Shutter Speed"
 msgid "Shutter opened"
 msgstr "Экспозициясы"
 
-#: indi/indidome.cpp:455
+#: indi/indidome.cpp:510
 #, fuzzy, kde-format
 #| msgid "Loading %1"
 msgid "Moving"
@@ -100248,14 +100400,6 @@ msgstr "Шегініс"
 msgid "Auto Focus:"
 msgstr "Тоғыстауды бастау"
 
-#. i18n: ectx: property (text), widget (QCheckBox, f_UseAutoFocus)
-#: oal/equipmentwriter.ui:747
-#, fuzzy, kde-format
-#| msgctxt "string from libindi, used in the config dialog"
-#| msgid "Enable"
-msgid "Enable"
-msgstr "Рұқсат ету"
-
 #. i18n: ectx: property (text), widget (QLabel, label_20)
 #: oal/equipmentwriter.ui:754
 #, fuzzy, kde-format
@@ -110621,6 +110765,12 @@ msgid "Set the color for the background."
 msgstr "Аспан аясының түсін орнату."
 
 #, fuzzy
+#~| msgctxt "City in British Columbia Canada"
+#~| msgid "Dome Creek"
+#~ msgid "Dome is unparked."
+#~ msgstr "Доум-Крик"
+
+#, fuzzy
 #~| msgctxt "string from libindi, used in the config dialog"
 #~| msgid "NGC"
 #~ msgid "FPS"
@@ -111462,12 +111612,6 @@ msgstr "Аспан аясының түсін орнату."
 #~| msgid "Settings"
 #~ msgid "Guide Settings"
 #~ msgstr "Баптау"
-
-#, fuzzy
-#~| msgctxt "string from libindi, used in the config dialog"
-#~| msgid "Motion"
-#~ msgid "Motion"
-#~ msgstr "Жылжу"
 
 #, fuzzy
 #~| msgid "Adjust time step"
