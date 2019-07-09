@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-19 03:24+0200\n"
+"POT-Creation-Date: 2019-07-09 03:10+0200\n"
 "PO-Revision-Date: 2012-08-05 05:43+0600\n"
 "Last-Translator: Sairan Kikkarin\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -244,29 +244,11 @@ msgstr ""
 msgid "Description:"
 msgstr "Сипаттамасы:"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/edittaskdialog.ui:70
-#, kde-format
-msgid "Change time (in minutes, e.g. -60)"
-msgstr "Уақытты өзгерту (мысалы, минуттарда: -60)"
-
 #. i18n: ectx: property (title), widget (QGroupBox, autotrackinggroupbox)
-#: src/edittaskdialog.ui:99
+#: src/edittaskdialog.ui:76
 #, kde-format
 msgid "Auto Tracking"
 msgstr "Авто қадағалау"
-
-#. i18n: ectx: property (whatsThis), widget (QPushButton, edittimespushbutton)
-#: src/edittaskdialog.ui:129
-#, kde-format
-msgid "To change this task's time, you have to edit its event history."
-msgstr "Бұл тапсырманың уақытын өзгерту үшін оқиғалар журналын өңдеу керек."
-
-#. i18n: ectx: property (text), widget (QPushButton, edittimespushbutton)
-#: src/edittaskdialog.ui:132
-#, kde-format
-msgid "Edit Times"
-msgstr "Уақыттарын өзгерту"
 
 #: src/export/export.cpp:60
 #, kde-format
@@ -723,7 +705,7 @@ msgstr "Орындалу пайызы"
 msgid "Save tasks every:"
 msgstr "Тапсырмаларды сыақтау аралығы:"
 
-#: src/taskview.cpp:118
+#: src/taskview.cpp:135
 #, kde-format
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
@@ -735,32 +717,32 @@ msgstr ""
 "жабыңыз және ол файлға қатысты ~/.kde/share/apps/kabc/lock/ қапшығындағы "
 "бүкіл бұғат файлдарды өшіріп тастаңыз."
 
-#: src/taskview.cpp:210
+#: src/taskview.cpp:227
 #, kde-format
 msgid "Your virtual desktop number is too high, desktop tracking will not work"
 msgstr "Виртуалды үстелдер тым көп, үстел қадағалауы істемейді"
 
-#: src/taskview.cpp:369
+#: src/taskview.cpp:386
 #, kde-format
 msgid "Stopping timers..."
 msgstr ""
 
-#: src/taskview.cpp:369
+#: src/taskview.cpp:386
 #, kde-format
 msgid "Cancel"
 msgstr ""
 
-#: src/taskview.cpp:461
+#: src/taskview.cpp:478
 #, kde-format
 msgid "New Task"
 msgstr "Жаңа тапсырма"
 
-#: src/taskview.cpp:471 src/taskview.cpp:550
+#: src/taskview.cpp:488 src/taskview.cpp:567
 #, kde-format
 msgid "Unnamed Task"
 msgstr "Аталмаған тапсырма"
 
-#: src/taskview.cpp:491
+#: src/taskview.cpp:508
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error storing new task. Your changes were not saved. Make sure you can "
@@ -777,22 +759,22 @@ msgstr ""
 "жабыңыз және ол файлға қатысты ~/.kde/share/apps/kabc/lock/ қапшығындағы "
 "бүкіл бұғат файлдарды өшіріп тастаңыз."
 
-#: src/taskview.cpp:528
+#: src/taskview.cpp:545
 #, kde-format
 msgid "New Sub Task"
 msgstr "Жаңа ішкі тапсырмасы"
 
-#: src/taskview.cpp:545
+#: src/taskview.cpp:562
 #, kde-format
 msgid "Edit Task"
 msgstr "Тапсырманы өңдеу"
 
-#: src/taskview.cpp:581 src/taskview.cpp:621 src/taskview.cpp:642
+#: src/taskview.cpp:619 src/taskview.cpp:659 src/taskview.cpp:680
 #, kde-format
 msgid "No task selected."
 msgstr "Таңдалған тапсырма жоқ."
 
-#: src/taskview.cpp:626
+#: src/taskview.cpp:664
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to delete the selected task and its entire "
@@ -805,7 +787,7 @@ msgstr ""
 "\"%1\" деп аталған тапсырманы, оның журналымен қоса шын өшірмексіз бе?\n"
 "ЕСКЕРТУ: оның барлық ішкі тапсырмалары де өздерінің журналдарымен өшіріледі."
 
-#: src/taskview.cpp:630
+#: src/taskview.cpp:668
 #, kde-format
 msgid "Deleting Task"
 msgstr "Тапсырманы өшіру"
@@ -1035,52 +1017,76 @@ msgstr ""
 "диалогы шығарылады."
 
 #: src/timetrackerwidget.cpp:252
+#, fuzzy, kde-format
+#| msgid "Edit Times"
+msgid "Edit &Time..."
+msgstr "Уақыттарын өзгерту"
+
+#: src/timetrackerwidget.cpp:253
+#, fuzzy, kde-format
+#| msgid "Edits name or times for selected task"
+msgid "Edit time for selected task"
+msgstr "Таңдалғанның атауы не уақыттарын өңдеу"
+
+#: src/timetrackerwidget.cpp:254
+#, fuzzy, kde-format
+#| msgid ""
+#| "This will bring up a dialog box where you may edit the parameters for the "
+#| "selected task."
+msgid ""
+"This will bring up a dialog box where you may edit the times for the "
+"selected task."
+msgstr ""
+"Бұнымен таңдалған тапсырманың параметрлерін өңдеуге мүмкіндік беретін "
+"диалогы шығарылады."
+
+#: src/timetrackerwidget.cpp:261
 #, kde-format
 msgid "&Mark as Complete"
 msgstr "Біт&кен деп белгілеу"
 
-#: src/timetrackerwidget.cpp:258
+#: src/timetrackerwidget.cpp:267
 #, kde-format
 msgid "&Mark as Incomplete"
 msgstr "Біт&пеген деп белгілеу"
 
-#: src/timetrackerwidget.cpp:264
+#: src/timetrackerwidget.cpp:273
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "&Export..."
 msgstr "&Экспорт"
 
-#: src/timetrackerwidget.cpp:269
+#: src/timetrackerwidget.cpp:278
 #, kde-format
 msgid "Import Tasks From &Planner..."
 msgstr "Тапсырмаларды ж&оспарлағыштан импорттау..."
 
-#: src/timetrackerwidget.cpp:279
+#: src/timetrackerwidget.cpp:288
 #, kde-format
 msgid "Show Searchbar"
 msgstr "Іздеу панелін көрсету"
 
-#: src/timetrackerwidget.cpp:400
+#: src/timetrackerwidget.cpp:409
 #, fuzzy, kde-format
 #| msgid "Behavior"
 msgctxt "@title:tab"
 msgid "Behavior"
 msgstr "Тәртібі"
 
-#: src/timetrackerwidget.cpp:401
+#: src/timetrackerwidget.cpp:410
 #, kde-format
 msgctxt "@title:tab"
 msgid "Appearance"
 msgstr ""
 
-#: src/timetrackerwidget.cpp:402
+#: src/timetrackerwidget.cpp:411
 #, fuzzy, kde-format
 #| msgid "Storage"
 msgctxt "@title:tab"
 msgid "Storage"
 msgstr "Сақтау"
 
-#: src/timetrackerwidget.cpp:490
+#: src/timetrackerwidget.cpp:504
 #, kde-format
 msgctxt "@info in message box"
 msgid ""
@@ -1089,7 +1095,7 @@ msgid ""
 msgstr ""
 "Журналда жазу әлі жоқ. Тапсырманы бастап тоқтатқанда жазу пайда болады."
 
-#: src/timetrackerwidget.cpp:500
+#: src/timetrackerwidget.cpp:514
 #, kde-format
 msgid ""
 "Do you really want to reset the time to zero for all tasks? This will delete "
@@ -1098,57 +1104,57 @@ msgstr ""
 "Бүкіл тапсырмалар уақыттарын шын нөлге ысырып тастамақсыз ба? Журналы "
 "толығымен өшіріледі."
 
-#: src/timetrackerwidget.cpp:501
+#: src/timetrackerwidget.cpp:515
 #, kde-format
 msgid "Confirmation Required"
 msgstr "Құптау талап етілген"
 
-#: src/timetrackerwidget.cpp:502
+#: src/timetrackerwidget.cpp:516
 #, kde-format
 msgid "Reset All Times"
 msgstr "Бүкілін ысырып тастау"
 
-#: src/timetrackerwidget.cpp:693
+#: src/timetrackerwidget.cpp:707
 #, kde-format
 msgid "Save failed, most likely because the file could not be locked."
 msgstr "Сақтау жаңылысы, себебі, бәлкім, файл сақтау кезіне бұғатталмады."
 
-#: src/timetrackerwidget.cpp:695
+#: src/timetrackerwidget.cpp:709
 #, kde-format
 msgid "Could not modify calendar resource."
 msgstr "Күнтізбе ресурсы өзгертуге келмеді."
 
-#: src/timetrackerwidget.cpp:697
+#: src/timetrackerwidget.cpp:711
 #, kde-format
 msgid "Out of memory--could not create object."
 msgstr "Нысанды құру үшін жады жетпеді."
 
-#: src/timetrackerwidget.cpp:699
+#: src/timetrackerwidget.cpp:713
 #, kde-format
 msgid "UID not found."
 msgstr "UID табылмады."
 
-#: src/timetrackerwidget.cpp:701
+#: src/timetrackerwidget.cpp:715
 #, kde-format
 msgid "Invalidate date--format is YYYY-MM-DD."
 msgstr "Жарамсыз күн пішімі -- керегі: YYYY-MM-DD."
 
-#: src/timetrackerwidget.cpp:703
+#: src/timetrackerwidget.cpp:717
 #, kde-format
 msgid "Invalid time--format is YYYY-MM-DDTHH:MM:SS."
 msgstr "Жарамсыз уақыт пішімі - керегі: YYYY-MM-DDTHH:MM:SS."
 
-#: src/timetrackerwidget.cpp:705
+#: src/timetrackerwidget.cpp:719
 #, kde-format
 msgid "Invalid task duration--must be greater than zero."
 msgstr "Жарамсыз тапсырма ұзындығы -- нөлден артық болу керек."
 
-#: src/timetrackerwidget.cpp:707
+#: src/timetrackerwidget.cpp:721
 #, kde-format
 msgid "Invalid error number: %1"
 msgstr "Дұрыс емес қате нөмірі: %1"
 
-#: src/timetrackerwidget.cpp:923
+#: src/timetrackerwidget.cpp:937
 #, kde-format
 msgid ""
 "This is ktimetracker, KDE's program to help you track your time. Best, start "
@@ -1159,7 +1165,7 @@ msgstr ""
 "іздеу не қосу\" деп тұрған өрісіне бірінші тапсырманыңызды келтіріп бастаған "
 "жөн. "
 
-#: src/timetrackerwidget.cpp:925
+#: src/timetrackerwidget.cpp:939
 #, kde-format
 msgid "You have already created a task. You can now start and stop timing"
 msgstr "Тапсырма құрылған. Енді уақыт есебін бастау я тоқтатуын істей аласыз"
@@ -1227,6 +1233,12 @@ msgstr "5 (орташа)"
 msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr "9 (ең төмені)"
+
+#~ msgid "Change time (in minutes, e.g. -60)"
+#~ msgstr "Уақытты өзгерту (мысалы, минуттарда: -60)"
+
+#~ msgid "To change this task's time, you have to edit its event history."
+#~ msgstr "Бұл тапсырманың уақытын өзгерту үшін оқиғалар журналын өңдеу керек."
 
 #~ msgid "Cannot create new file."
 #~ msgstr "Жаңа файл құрылмады."
