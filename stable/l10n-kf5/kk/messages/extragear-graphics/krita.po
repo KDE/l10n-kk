@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-10 07:44+0200\n"
+"POT-Creation-Date: 2019-10-11 07:58+0200\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -28789,23 +28789,18 @@ msgstr "270 гр&адусқа"
 msgid "&Custom:"
 msgstr "&Өзге:"
 
-#: plugins/extensions/separate_channels/dlg_separate.cc:39
+#: plugins/extensions/separate_channels/dlg_separate.cc:41
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:74
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:86
 #, kde-format
 msgid "Separate Image"
 msgstr "Кескінді жіктеу"
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:210
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:203
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Separate Image"
 msgstr "Кескінді жіктеу"
-
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:238
-#, kde-format
-msgid "Export Layer"
-msgstr "Қабатты экспорттау"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/extensions/separate_channels/wdg_separations.ui:19
@@ -28832,62 +28827,56 @@ msgstr "Назардағы қабат"
 msgid "Flatten all layers before separation"
 msgstr "Жіктеу алдында барлық қабаттар біріктірілсін"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpOutput)
-#: plugins/extensions/separate_channels/wdg_separations.ui:84
-#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:46
-#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:68
-#: plugins/python/scripter/ui_scripter/tabwidgets/outputwidget/outputwidget.py:28
-#, kde-format
-msgid "Output"
-msgstr "Шығысы"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioLayers)
-#: plugins/extensions/separate_channels/wdg_separations.ui:90
-#, kde-format
-msgid "To layers"
-msgstr "Қабаттарына"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioImages)
-#: plugins/extensions/separate_channels/wdg_separations.ui:100
-#, kde-format
-msgid "To images"
-msgstr "Кескіндеріне"
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:112
+#: plugins/extensions/separate_channels/wdg_separations.ui:86
 #, kde-format
 msgid "Alpha Options"
 msgstr "Альфа параметрлері"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioCopyAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:118
+#: plugins/extensions/separate_channels/wdg_separations.ui:92
 #, kde-format
 msgid "Copy alpha channel to each separated channel as an alpha channel"
 msgstr "Альфа арнасын әрбір бөлек арнаға альфа арнасы ретінде көшірмелеу"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioDiscardAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:125
+#: plugins/extensions/separate_channels/wdg_separations.ui:99
 #, kde-format
 msgid "Discard alpha channel"
 msgstr "Альфа арнасын ысырып тастау"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioSeparateAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:135
+#: plugins/extensions/separate_channels/wdg_separations.ui:109
 #, kde-format
 msgid "Create separate separation from alpha channel"
 msgstr "Альфа арнасынан бөлек жіктеуін жасау"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkDownscale)
-#: plugins/extensions/separate_channels/wdg_separations.ui:145
+#: plugins/extensions/separate_channels/wdg_separations.ui:119
 #, kde-format
 msgid "Downscale to 8-bit before separating"
 msgstr "Жіктеу алдында түс байлығын 8 битке дейін төмендету"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkColors)
-#: plugins/extensions/separate_channels/wdg_separations.ui:152
+#: plugins/extensions/separate_channels/wdg_separations.ui:126
 #, kde-format
 msgid "Output to color, not grayscale"
 msgstr "Түрлі түсті (сұр реңкті емес) қылып шығару"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkActivateCurrentChannel)
+#: plugins/extensions/separate_channels/wdg_separations.ui:133
+#, kde-format
+msgid ""
+"Activate only the current channel for the new node, deactivate all other "
+"channels."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkActivateCurrentChannel)
+#: plugins/extensions/separate_channels/wdg_separations.ui:136
+#, fuzzy, kde-format
+#| msgid "Delete the current action"
+msgid "Activate the current channel"
+msgstr "Назардағы әрекетті өшіру"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
@@ -39644,6 +39633,12 @@ msgstr "Бар құжатты ашу"
 msgid "Please specify a document by opening it before reloading"
 msgstr ""
 
+#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:46
+#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:68
+#: plugins/python/scripter/ui_scripter/tabwidgets/outputwidget/outputwidget.py:28
+msgid "Output"
+msgstr "Шығысы"
+
 #: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:50
 msgid "Run"
 msgstr ""
@@ -43151,6 +43146,15 @@ msgstr "Безендірулерін көрсету"
 msgid "Work Recursively"
 msgstr "Рекурсивті істеу"
 
+#~ msgid "Export Layer"
+#~ msgstr "Қабатты экспорттау"
+
+#~ msgid "To layers"
+#~ msgstr "Қабаттарына"
+
+#~ msgid "To images"
+#~ msgstr "Кескіндеріне"
+
 #~ msgid "Could not create the output document"
 #~ msgstr "Шығыс құжаты құрылмады"
 
@@ -43685,9 +43689,6 @@ msgstr "Рекурсивті істеу"
 
 #~ msgid "Move an action down"
 #~ msgstr "Әрекетін төмендету"
-
-#~ msgid "Delete the current action"
-#~ msgstr "Назардағы әрекетті өшіру"
 
 #, fuzzy
 #~ msgid "Open Macro"
