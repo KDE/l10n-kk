@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-21 02:26+0200\n"
+"POT-Creation-Date: 2019-10-28 02:27+0100\n"
 "PO-Revision-Date: 2013-07-07 01:53+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2159,7 +2159,7 @@ msgid ""
 msgstr ""
 "Орындар панеліндегі таңбашалар өлшемі (-1 \"шағын өлшем стилі\" дегені)"
 
-#: panels/places/placesitemmodel.cpp:201
+#: panels/places/placesitemmodel.cpp:203
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Eject '%1'"
@@ -2167,7 +2167,7 @@ msgctxt "@item"
 msgid "Eject"
 msgstr "'%1' дегенді алып-шығу"
 
-#: panels/places/placesitemmodel.cpp:236
+#: panels/places/placesitemmodel.cpp:238
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Release '%1'"
@@ -2175,7 +2175,7 @@ msgctxt "@item"
 msgid "Release"
 msgstr "'%1' дегенді шығару"
 
-#: panels/places/placesitemmodel.cpp:238
+#: panels/places/placesitemmodel.cpp:240
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Safely Remove '%1'"
@@ -2183,7 +2183,7 @@ msgctxt "@item"
 msgid "Safely Remove"
 msgstr "'%1' дегенді қауіпсіз кетіру"
 
-#: panels/places/placesitemmodel.cpp:241
+#: panels/places/placesitemmodel.cpp:243
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Unmount '%1'"
@@ -2191,19 +2191,40 @@ msgctxt "@item"
 msgid "Unmount"
 msgstr "'%1' дегенді айыру"
 
-#: panels/places/placesitemmodel.cpp:263
+#: panels/places/placesitemmodel.cpp:265
 #, kde-format
 msgctxt "@info"
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr "'%1' құрылғы диск емес, алып-шығару болмайды."
 
-#: panels/places/placesitemmodel.cpp:498
+#: panels/places/placesitemmodel.cpp:485
+#, kde-format
+msgid "One or more files on this device are open within an application."
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:492
+#, kde-kuit-format
+msgid ""
+"One or more files on this device are opened in application <application>"
+"\"%2\"</application>."
+msgid_plural ""
+"One or more files on this device are opened in following applications: "
+"<application>%2</application>."
+msgstr[0] ""
+
+#: panels/places/placesitemmodel.cpp:494
+#, kde-format
+msgctxt "separator in list of apps blocking device unmount"
+msgid ", "
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:522
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "'%1' дегенге қатынау кезде қате орын алды, жүйенің хабарлауы: %2"
 
-#: panels/places/placesitemmodel.cpp:502
+#: panels/places/placesitemmodel.cpp:526
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1'"
@@ -2329,115 +2350,147 @@ msgstr "Нені"
 msgid "Show facets widget"
 msgstr "Қырлар виджеттерін көрсету"
 
-#: search/dolphinfacetswidget.cpp:52
+#: search/dolphinfacetswidget.cpp:38
 #, fuzzy, kde-format
-#| msgctxt "@label Any (file size)"
-#| msgid "Any"
-msgctxt "@option:check"
-msgid "Any"
-msgstr "Кез келген"
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Type"
+msgctxt "@item:inlistbox"
+msgid "Any Type"
+msgstr "Түрі бойынша"
 
-#: search/dolphinfacetswidget.cpp:53
+#: search/dolphinfacetswidget.cpp:39
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Folders"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Folders"
 msgstr "Қапшықтар"
 
-#: search/dolphinfacetswidget.cpp:54
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Documents"
+msgctxt "@item:inlistbox"
 msgid "Documents"
 msgstr "Құжаттар"
 
-#: search/dolphinfacetswidget.cpp:55
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Images"
+msgctxt "@item:inlistbox"
 msgid "Images"
 msgstr "Кескіндер"
 
-#: search/dolphinfacetswidget.cpp:56
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Audio Files"
+msgctxt "@item:inlistbox"
 msgid "Audio Files"
 msgstr "Аудио файлдар"
 
-#: search/dolphinfacetswidget.cpp:57
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Videos"
+msgctxt "@item:inlistbox"
 msgid "Videos"
 msgstr "Видео"
 
-#: search/dolphinfacetswidget.cpp:70
-#, kde-format
-msgctxt "@option:option"
-msgid "Anytime"
-msgstr "Әр кезде"
+#: search/dolphinfacetswidget.cpp:49
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Sort"
+#| msgid "By Date"
+msgctxt "@item:inlistbox"
+msgid "Any Date"
+msgstr "Күні бойынша"
 
-#: search/dolphinfacetswidget.cpp:71
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:50
+#, fuzzy, kde-format
+#| msgctxt "@title:group Date"
+#| msgid "Today"
+msgctxt "@item:inlistbox"
 msgid "Today"
 msgstr "Бүгін"
 
-#: search/dolphinfacetswidget.cpp:72
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:51
+#, fuzzy, kde-format
+#| msgctxt "@title:group Date"
+#| msgid "Yesterday"
+msgctxt "@item:inlistbox"
 msgid "Yesterday"
 msgstr "Кеше"
 
-#: search/dolphinfacetswidget.cpp:73
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:52
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Week"
+msgctxt "@item:inlistbox"
 msgid "This Week"
 msgstr "Осы аптада"
 
-#: search/dolphinfacetswidget.cpp:74
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:53
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Month"
+msgctxt "@item:inlistbox"
 msgid "This Month"
 msgstr "Осы ай"
 
-#: search/dolphinfacetswidget.cpp:75
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:54
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Year"
+msgctxt "@item:inlistbox"
 msgid "This Year"
 msgstr "Биыл"
 
-#: search/dolphinfacetswidget.cpp:88
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:58
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "Any Rating"
+msgctxt "@item:inlistbox"
 msgid "Any Rating"
 msgstr "Кез-келген ұпайы"
 
-#: search/dolphinfacetswidget.cpp:89
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:59
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "1 or more"
+msgctxt "@item:inlistbox"
 msgid "1 or more"
 msgstr "1 не артық"
 
-#: search/dolphinfacetswidget.cpp:90
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:60
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "2 or more"
+msgctxt "@item:inlistbox"
 msgid "2 or more"
 msgstr "2 не артық"
 
-#: search/dolphinfacetswidget.cpp:91
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:61
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "3 or more"
+msgctxt "@item:inlistbox"
 msgid "3 or more"
 msgstr "3 не артық"
 
-#: search/dolphinfacetswidget.cpp:92
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:62
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "4 or more"
+msgctxt "@item:inlistbox"
 msgid "4 or more"
 msgstr "4 не артық"
 
-#: search/dolphinfacetswidget.cpp:93
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:63
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "Highest Rating"
+msgctxt "@item:inlistbox"
 msgid "Highest Rating"
 msgstr "Ең жоғары ұпайы"
 
@@ -4338,6 +4391,32 @@ msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Нұқасы туралы мәліметті жаңарту"
 
+#, fuzzy
+#~| msgctxt "@label Any (file size)"
+#~| msgid "Any"
+#~ msgctxt "@option:check"
+#~ msgid "Any"
+#~ msgstr "Кез келген"
+
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Folders"
+#~ msgctxt "@option:check"
+#~ msgid "Folders"
+#~ msgstr "Қапшықтар"
+
+#~ msgctxt "@option:option"
+#~ msgid "Anytime"
+#~ msgstr "Әр кезде"
+
+#~ msgctxt "@option:option"
+#~ msgid "Today"
+#~ msgstr "Бүгін"
+
+#~ msgctxt "@option:option"
+#~ msgid "Yesterday"
+#~ msgstr "Кеше"
+
 #~ msgctxt "@action:inmenu"
 #~ msgid "Location Bar"
 #~ msgstr "Орын панелі"
@@ -4854,10 +4933,6 @@ msgstr "Нұқасы туралы мәліметті жаңарту"
 #~ msgstr "Өлшемі бойынша"
 
 #~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Date"
-#~ msgstr "Күні бойынша"
-
-#~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Permissions"
 #~ msgstr "Рұқсаттары бойынша"
 
@@ -4868,10 +4943,6 @@ msgstr "Нұқасы туралы мәліметті жаңарту"
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Group"
 #~ msgstr "Тобы бойынша"
-
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Type"
-#~ msgstr "Түрі бойынша"
 
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Link Destination"
