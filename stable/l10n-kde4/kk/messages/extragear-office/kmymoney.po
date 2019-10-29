@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-12 01:43+0200\n"
+"POT-Creation-Date: 2019-10-29 01:43+0100\n"
 "PO-Revision-Date: 2013-10-05 05:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1515,7 +1515,7 @@ msgstr "Амал"
 #: kmymoney/plugins/csvexport/csvwriter.cpp:112
 #: kmymoney/plugins/csvimport/bankingwizardpage.ui:327
 #: kmymoney/plugins/csvimport/investmentwizardpage.ui:329
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:231
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:240
 #: kmymoney/reports/listtable.cpp:214 kmymoney/views/khomeview.cpp:430
 #: kmymoney/views/khomeview.cpp:485 kmymoney/views/khomeview.cpp:518
 #: kmymoney/widgets/register.cpp:509 kmymoney/widgets/transaction.cpp:971
@@ -1537,7 +1537,7 @@ msgstr "Күні"
 #: kmymoney/plugins/csvimport/bankingwizardpage.ui:571
 #: kmymoney/plugins/csvimport/investmentwizardpage.ui:495
 #: kmymoney/plugins/kbanking/dialogs/kbaccountsettings.ui:78
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:234
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:243
 #: kmymoney/reports/listtable.cpp:221
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:167
 #: kmymoney/widgets/transaction.cpp:1018 kmymoney/widgets/transaction.cpp:1658
@@ -2140,7 +2140,7 @@ msgstr "Бағам мен бағалар редакторы"
 #: kmymoney/plugins/csvexport/csvwriter.cpp:112
 #: kmymoney/plugins/csvimport/redefinedlg.cpp:124
 #: kmymoney/plugins/onlinetasks/sepa/ui/sepacredittransferedit.ui:61
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:236
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:245
 #: kmymoney/reports/listtable.cpp:215 kmymoney/views/khomeview.cpp:439
 #: kmymoney/views/khomeview.cpp:494 kmymoney/views/khomeview.cpp:527
 #: kmymoney/views/kscheduledviewdecl.ui:99 kmymoney/widgets/register.cpp:69
@@ -2464,7 +2464,7 @@ msgstr "Келесі өтеу күні"
 #: kmymoney/dialogs/transactioneditor.cpp:952
 #: kmymoney/plugins/csvexport/csvwriter.cpp:112
 #: kmymoney/plugins/ofx/import/dialogs/konlinebankingsetupwizard.ui:318
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:232
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:241
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:238
 #: kmymoney/widgets/register.cpp:70 kmymoney/widgets/transaction.cpp:942
 #, kde-format
@@ -3124,7 +3124,7 @@ msgstr "Мәтін"
 #: kmymoney/dialogs/transactioneditor.cpp:1627
 #: kmymoney/dialogs/transactioneditor.cpp:1689
 #: kmymoney/dialogs/transactioneditor.cpp:1698
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:235
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:244
 #: kmymoney/reports/listtable.cpp:219
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:295
 #: kmymoney/widgets/register.cpp:73 kmymoney/widgets/transaction.cpp:793
@@ -3307,7 +3307,7 @@ msgstr "Ештеңе таңдамау"
 #: kmymoney/plugins/csvexport/csvwriter.cpp:112
 #: kmymoney/plugins/kbanking/dialogs/kbaccountsettings.ui:21
 #: kmymoney/plugins/kbanking/dialogs/kbaccountsettings.ui:68
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:233
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:242
 #: kmymoney/reports/listtable.cpp:217 kmymoney/views/kscheduledviewdecl.ui:94
 #: kmymoney/widgets/kmymoneyreportconfigtab3decl.ui:276
 #: kmymoney/widgets/register.cpp:68
@@ -9312,7 +9312,7 @@ msgstr ""
 "Таңдалған транзакциялардағы кемінде бір бөлігінің салыстырып тексерілген "
 "белгісі бар. Сонда да өшірілсін бе?"
 
-#: kmymoney/kmymoney.cpp:5478 kmymoney/views/kgloballedgerview.cpp:1135
+#: kmymoney/kmymoney.cpp:5478 kmymoney/views/kgloballedgerview.cpp:1139
 #, kde-format
 msgid "Transaction already reconciled"
 msgstr "Транзакция салыстырып тексерілген ғой"
@@ -14841,73 +14841,111 @@ msgid "%1 cleared payment"
 msgid_plural "%1 cleared payments in total"
 msgstr[0] "Қортындыда %1 салыстырып тексерілген төлем"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:142
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:143
+#, fuzzy, kde-format
+#| msgid "%1 cleared payment"
+#| msgid_plural "%1 cleared payments in total"
+msgid "%1 cleared charge"
+msgid_plural "%1 cleared charges in total"
+msgstr[0] "Қортындыда %1 салыстырып тексерілген төлем"
+
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:145
 #, kde-format
 msgid "%1 cleared deposit"
 msgid_plural "%1 cleared deposits in total"
 msgstr[0] "Қортындыда %1 салыстырып тексерілген салым"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:148
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:151
 #, kde-format
 msgid "Ending balance on bank statement"
 msgstr "Банкінің үзінді көшірмесінің соңғы балансы"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:158
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:161
 #, kde-format
 msgid "Cleared balance"
 msgstr "Тексерілген баланс"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:164
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:167
 #, kde-format
 msgid "%1 outstanding payment"
 msgid_plural "%1 outstanding payments in total"
 msgstr[0] "Қортындыда %1 кезінде төленбеген төлем"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:170
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:174
+#, fuzzy, kde-format
+#| msgid "%1 outstanding payment"
+#| msgid_plural "%1 outstanding payments in total"
+msgid "%1 outstanding charge"
+msgid_plural "%1 outstanding charges in total"
+msgstr[0] "Қортындыда %1 кезінде төленбеген төлем"
+
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:176
 #, kde-format
 msgid "%1 outstanding deposit"
 msgid_plural "%1 outstanding deposits in total"
 msgstr[0] "Қортындыда %1 кезінде төленбеген салым"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:176
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:182
 #, kde-format
 msgid "Register balance as of %1"
 msgstr "%1 дегеннің балансы"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:209
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:215
 #, kde-format
 msgid "%1 payment after %2"
 msgid_plural "%1 payments after %2"
 msgstr[0] "%1 төлем %2 деген күннен кейін"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:215
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:222
+#, fuzzy, kde-format
+#| msgid "%1 payment after %2"
+#| msgid_plural "%1 payments after %2"
+msgid "%1 charge after %2"
+msgid_plural "%1 charges after %2"
+msgstr[0] "%1 төлем %2 деген күннен кейін"
+
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:224
 #, kde-format
 msgid "%1 deposit after %2"
 msgid_plural "%1 deposits after %2"
 msgstr[0] "%1 салым %2 деген күннен кейін"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:221
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:230
 #, kde-format
 msgid "Register ending balance"
 msgstr "Ақырғы балансы"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:240
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:249
 #, kde-format
 msgid "Outstanding payments"
 msgstr "Кезінде төленбегендері"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:273
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:282
 #, kde-format
 msgid "One outstanding payment of"
 msgid_plural "Total of %1 outstanding payments amounting to"
 msgstr[0] "Жалпы %1 кезінде төленбеген төлем бойынша қортындысы"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:276
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:286
+#, fuzzy, kde-format
+#| msgid "Outstanding payments"
+msgid "Outstanding charges"
+msgstr "Кезінде төленбегендері"
+
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:286
 #, kde-format
 msgid "Outstanding deposits"
 msgstr "Кезінде төленбеген салымдар"
 
-#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:309
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:321
+#, fuzzy, kde-format
+#| msgid "One outstanding payment of"
+#| msgid_plural "Total of %1 outstanding payments amounting to"
+msgid "One outstanding charge of"
+msgid_plural "Total of %1 outstanding charges amounting to"
+msgstr[0] "Жалпы %1 кезінде төленбеген төлем бойынша қортындысы"
+
+#: kmymoney/plugins/reconciliationreport/reconciliationreport.cpp:322
 #, kde-format
 msgid "One outstanding deposit of"
 msgid_plural "Total of %1 outstanding deposits amounting to"
@@ -16383,64 +16421,72 @@ msgid "Statement Payment Details"
 msgstr "Төлем есепшоттың үзінді көшірме егжей-текжейі"
 
 #: kmymoney/views/kgloballedgerview.cpp:700
-#: kmymoney/views/kgloballedgerview.cpp:712
+#: kmymoney/views/kgloballedgerview.cpp:716
 #, kde-format
 msgid "%1 deposit (%2)"
 msgid_plural "%1 deposits (%2)"
 msgstr[0] "%1 салым (%2)"
 
 #: kmymoney/views/kgloballedgerview.cpp:702
-#: kmymoney/views/kgloballedgerview.cpp:708
+#, fuzzy, kde-format
+#| msgid "%1 payment (%2)"
+#| msgid_plural "%1 payments (%2)"
+msgid "%1 charge (%2)"
+msgid_plural "%1 charges (%2)"
+msgstr[0] "%1 төлем (%2)"
+
+#: kmymoney/views/kgloballedgerview.cpp:704
+#: kmymoney/views/kgloballedgerview.cpp:712
 #, kde-format
 msgid "%1 payment (%2)"
 msgid_plural "%1 payments (%2)"
 msgstr[0] "%1 төлем (%2)"
 
-#: kmymoney/views/kgloballedgerview.cpp:705
+#: kmymoney/views/kgloballedgerview.cpp:707
 #, kde-format
 msgctxt "%1 is a string, e.g. 7 deposits; %2 is a string, e.g. 4 payments"
 msgid "%1, %2"
 msgstr "%1, %2"
 
-#: kmymoney/views/kgloballedgerview.cpp:768
+#: kmymoney/views/kgloballedgerview.cpp:772
 #, kde-format
 msgid "Statement: %1"
 msgstr "Үзінді көшірме: %1"
 
-#: kmymoney/views/kgloballedgerview.cpp:769
-#: kmymoney/views/kgloballedgerview.cpp:785
+#: kmymoney/views/kgloballedgerview.cpp:773
+#: kmymoney/views/kgloballedgerview.cpp:789
 #, kde-format
 msgctxt "Cleared balance"
 msgid "Cleared: %1"
 msgstr "Салыстырып тексерілген: %1"
 
-#: kmymoney/views/kgloballedgerview.cpp:777
+#: kmymoney/views/kgloballedgerview.cpp:781
 #, kde-format
 msgid "Last reconciled: %1"
 msgstr "Соңғы салыстырып тексерілгені: %1"
 
-#: kmymoney/views/kgloballedgerview.cpp:779
+#: kmymoney/views/kgloballedgerview.cpp:783
 #, kde-format
 msgid "Never reconciled"
 msgstr "Ешқашан салыстырып тексерілген"
 
-#: kmymoney/views/kgloballedgerview.cpp:837
+#: kmymoney/views/kgloballedgerview.cpp:841
 #, kde-format
 msgid "Difference: %1"
 msgstr "Айырмашылығы: %1"
 
-#: kmymoney/views/kgloballedgerview.cpp:841 kmymoney/views/kpayeesview.cpp:503
+#: kmymoney/views/kgloballedgerview.cpp:845 kmymoney/views/kpayeesview.cpp:503
 #: kmymoney/views/ktagsview.cpp:390
 #, kde-format
 msgid "Balance: %1"
 msgstr "Балансы: %1"
 
-#: kmymoney/views/kgloballedgerview.cpp:851
+#: kmymoney/views/kgloballedgerview.cpp:855
 #, kde-format
 msgid "Investment value: %1%2"
 msgstr "Инвестиция мөлшері: %1%2"
 
-#: kmymoney/views/kgloballedgerview.cpp:1132
+#: kmymoney/views/kgloballedgerview.cpp:1136
 #, kde-format
 msgid ""
 "At least one split of the selected transactions has been reconciled. Do you "
@@ -16449,7 +16495,7 @@ msgstr ""
 "Таңдалған транзакциялардағы кемінде бір бөлігі салыстырып тексерілген. Сонда "
 "да транзакциялары өзгерілсін бе?"
 
-#: kmymoney/views/kgloballedgerview.cpp:1143
+#: kmymoney/views/kgloballedgerview.cpp:1147
 #, kde-format
 msgid ""
 "At least one split of the selected transactions has been frozen. Editing the "
@@ -16458,12 +16504,12 @@ msgstr ""
 "Таңдалған транзакциялардың кемінде бір бөлігі өзгертілмейтін. Сонымен "
 "өзгеріске тыйым салынады."
 
-#: kmymoney/views/kgloballedgerview.cpp:1145
+#: kmymoney/views/kgloballedgerview.cpp:1149
 #, kde-format
 msgid "Transaction already frozen"
 msgstr "Транзакция бұрыннан өзгертілмейтін"
 
-#: kmymoney/views/kgloballedgerview.cpp:1150
+#: kmymoney/views/kgloballedgerview.cpp:1154
 #, kde-format
 msgid ""
 "At least one split of the selected transaction references an account that "
@@ -16472,54 +16518,54 @@ msgstr ""
 "Таңдалған транзакциялардың кемінде бір бөлігі жабылған есепшотқа сілтейді. "
 "Сонымен өзгеріске тыйым салынады."
 
-#: kmymoney/views/kgloballedgerview.cpp:1152
+#: kmymoney/views/kgloballedgerview.cpp:1156
 #, kde-format
 msgid "Account closed"
 msgstr "Жабылған есепшот"
 
-#: kmymoney/views/kgloballedgerview.cpp:1445
+#: kmymoney/views/kgloballedgerview.cpp:1449
 #, kde-format
 msgid "Cannot create transactions when no account is selected."
 msgstr "Есепшоты таңдалмағанда транзакциялар құрылмайды."
 
-#: kmymoney/views/kgloballedgerview.cpp:1450
+#: kmymoney/views/kgloballedgerview.cpp:1454
 #, kde-format
 msgid "Cannot create transactions in the context of a category."
 msgstr "Санат контекстінде транзакциялар құрылмайды."
 
-#: kmymoney/views/kgloballedgerview.cpp:1455
+#: kmymoney/views/kgloballedgerview.cpp:1459
 #, kde-format
 msgid "Cannot create transactions in a closed account."
 msgstr "Жабылған есепшотпен транзакциялар құрылмайды."
 
-#: kmymoney/views/kgloballedgerview.cpp:1483
+#: kmymoney/views/kgloballedgerview.cpp:1487
 #, fuzzy, kde-format
 #| msgid "Cannot process transaction with focus if it is not selected."
 msgid "Cannot process transactions in account %1, which is closed."
 msgstr "Назардағысы таңдалмаған болса транзакция өткізілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1489
+#: kmymoney/views/kgloballedgerview.cpp:1493
 #, kde-format
 msgid "Cannot process transaction with focus if it is not selected."
 msgstr "Назардағысы таңдалмаған болса транзакция өткізілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1521
+#: kmymoney/views/kgloballedgerview.cpp:1525
 #, kde-format
 msgid "Cannot edit transactions with frozen splits."
 msgstr "Өзгертілме йтін бөлігі бар транзакциялар өзгертілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1532
+#: kmymoney/views/kgloballedgerview.cpp:1536
 #, kde-format
 msgid "Cannot edit transactions in the context of a category."
 msgstr "Санат контекстінде транзакциялар өзгертілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1538
+#: kmymoney/views/kgloballedgerview.cpp:1542
 #, fuzzy, kde-format
 #| msgid "Cannot create transactions when no account is selected."
 msgid "Cannot create or edit any transactions in Account %1 as it is closed"
 msgstr "Есепшоты таңдалмағанда транзакциялар құрылмайды."
 
-#: kmymoney/views/kgloballedgerview.cpp:1560
+#: kmymoney/views/kgloballedgerview.cpp:1564
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot edit investment transactions and non-investment transactions "
@@ -16529,7 +16575,7 @@ msgstr ""
 "Инвестициялық транзакцияларды инвестициялық емес транзакциялармен бірге "
 "өзгертілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1574
+#: kmymoney/views/kgloballedgerview.cpp:1578
 #, kde-format
 msgid ""
 "Cannot edit investment transactions and non-investment transactions together."
@@ -16537,12 +16583,12 @@ msgstr ""
 "Инвестициялық транзакцияларды инвестициялық емес транзакциялармен бірге "
 "өзгертілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1583
+#: kmymoney/views/kgloballedgerview.cpp:1587
 #, kde-format
 msgid "Cannot edit multiple split transactions at once."
 msgstr "Бірнешеге бөлінген транзакциялар бірге өзгертілмейді."
 
-#: kmymoney/views/kgloballedgerview.cpp:1604
+#: kmymoney/views/kgloballedgerview.cpp:1608
 #, kde-format
 msgid "Cannot edit investment transactions in the context of this account."
 msgstr "Бұл есепшот контекстінде инвестиция транзакциялар өзгертілмейді."
