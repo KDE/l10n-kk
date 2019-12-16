@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-12-02 02:48+0100\n"
+"POT-Creation-Date: 2019-12-16 02:46+0100\n"
 "PO-Revision-Date: 2013-11-18 03:29+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -476,7 +476,7 @@ msgstr "Атауы:"
 msgid "Directory:"
 msgstr "Қапшығы:"
 
-#: dialogs/findfilesdialog.cpp:119 dialogs/texdocumentationdialog.cpp:70
+#: dialogs/findfilesdialog.cpp:119 dialogs/texdocumentationdialog.cpp:69
 #, kde-format
 msgid "Search"
 msgstr "Іздеу"
@@ -556,7 +556,7 @@ msgid "Scan directories recursively"
 msgstr "Қапшықтар рекурсивті зерттелсін"
 
 #: dialogs/findfilesdialog.cpp:216 dialogs/findfilesdialog.cpp:586
-#: dialogs/texdocumentationdialog.cpp:79
+#: dialogs/texdocumentationdialog.cpp:78
 #, kde-format
 msgid "&Search"
 msgstr "&Іздеу"
@@ -2346,13 +2346,13 @@ msgid "The password should be at least 6 characters long."
 msgstr ""
 
 #: dialogs/pdf-wizard/pdfdialog.cpp:1773 dialogs/postscriptdialog.cpp:513
-#: dialogs/texdocumentationdialog.cpp:550
+#: dialogs/texdocumentationdialog.cpp:431
 #, kde-format
 msgid "<center>"
 msgstr "<center>"
 
 #: dialogs/pdf-wizard/pdfdialog.cpp:1773 dialogs/postscriptdialog.cpp:513
-#: dialogs/texdocumentationdialog.cpp:550
+#: dialogs/texdocumentationdialog.cpp:432
 #, kde-format
 msgid "</center>"
 msgstr "</center>"
@@ -2757,8 +2757,7 @@ msgstr "Дайын"
 msgid "Execute"
 msgstr "Орындау"
 
-#: dialogs/postscriptdialog.cpp:197 dialogs/texdocumentationdialog.cpp:291
-#: dialogs/texdocumentationdialog.cpp:325 quickpreview.cpp:339
+#: dialogs/postscriptdialog.cpp:197 quickpreview.cpp:339
 #, kde-format
 msgid "Could not create a temporary file."
 msgstr "Уақытша файл құрылмады."
@@ -4607,29 +4606,27 @@ msgstr "Алмасу буфері бос, кестеге орналастыра�
 msgid "Empty Clipboard"
 msgstr "Алмасу буфері бос"
 
-#: dialogs/texdocumentationdialog.cpp:58 kile.cpp:1025
+#: dialogs/texdocumentationdialog.cpp:57 kile.cpp:1025
 #, kde-format
 msgid "Documentation Browser"
 msgstr "Құжаттама шолғышы"
 
-#: dialogs/texdocumentationdialog.cpp:67 dialogs/texdocumentationdialog.cpp:500
+#: dialogs/texdocumentationdialog.cpp:66 dialogs/texdocumentationdialog.cpp:381
 #: kilestdactions.cpp:42
 #, kde-format
 msgid "Table of Contents"
 msgstr "Мазмұнының кестесі"
 
-#: dialogs/texdocumentationdialog.cpp:84
+#: dialogs/texdocumentationdialog.cpp:83
 #, kde-format
 msgid ""
-"A list of available documents, which are listed in 'texdoctk.dat', that come "
-"with TexLive/teTeX. Double clicking with the mouse or pressing the space key "
-"will open a viewer to show this file."
+"<p>A list of the documentation provided by the installed TeX distribution."
+"<br/><p>Double clicking on an item or pressing the space key will open a "
+"viewer to show the corresponding file.</p><p>Items that are grayed out are "
+"not installed.</p>"
 msgstr ""
-"TexLive/teTeX-пен бірге келген, 'texdoctk.dat' тізімінде келтірілген "
-"құжаттар тізімі. Тышқанмен қос түртсе не бос орын пернесін басса бұл файл "
-"ашылады."
 
-#: dialogs/texdocumentationdialog.cpp:85
+#: dialogs/texdocumentationdialog.cpp:86
 #, kde-format
 msgid ""
 "You can choose a keyword to show only document files that are related to "
@@ -4637,77 +4634,80 @@ msgid ""
 msgstr ""
 "Бір түйінді сөзге қатысты құжатарды ашу үшін ол түйінді сөзді таңдаңыз."
 
-#: dialogs/texdocumentationdialog.cpp:86
+#: dialogs/texdocumentationdialog.cpp:87
 #, kde-format
 msgid "Start the search for the chosen keyword."
 msgstr "Таңдалған түйінді сөз бойынша іздеуді бастау."
 
-#: dialogs/texdocumentationdialog.cpp:88
+#: dialogs/texdocumentationdialog.cpp:89
 #, fuzzy, kde-format
 #| msgid "Reset TOC to show all available files."
 msgid "Reset list to all available documentation files."
 msgstr "Мазмұнының кестесін жаңартып, бүкіл бар файлдарды корсету."
 
-#: dialogs/texdocumentationdialog.cpp:89
+#: dialogs/texdocumentationdialog.cpp:90
 #, fuzzy, kde-format
 #| msgid "&Search"
 msgid "Cancel &Search"
 msgstr "&Іздеу"
 
-#: dialogs/texdocumentationdialog.cpp:136
+#: dialogs/texdocumentationdialog.cpp:137
 #, kde-format
 msgid "Could not read 'texdoctk.dat'."
 msgstr "'texdoctk.dat' оқылмады."
 
-#: dialogs/texdocumentationdialog.cpp:313
-#, kde-format
-msgid "Could not read the style file."
-msgstr "Стилінің файлы оқылмайды."
-
-#: dialogs/texdocumentationdialog.cpp:394
+#: dialogs/texdocumentationdialog.cpp:300
 #, kde-format
 msgid "No KDE service found for this file."
 msgstr "Бұл файл үшін KDE қызмет табылмады."
 
-#: dialogs/texdocumentationdialog.cpp:428
-#, kde-format
-msgid "Could not find '%1'"
-msgstr "'%1' табылмады"
+#: dialogs/texdocumentationdialog.cpp:328
+#, fuzzy, kde-format
+#| msgid "Could not find template: %1"
+msgid "Could not find the documentation file '%1'"
+msgstr "Үлгісі табылмады: %1"
 
-#: dialogs/texdocumentationdialog.cpp:463
+#: dialogs/texdocumentationdialog.cpp:344
 #, kde-format
 msgid "No keyword given."
 msgstr "Түйінді сөз келтірілмеген."
 
-#: dialogs/texdocumentationdialog.cpp:489
+#: dialogs/texdocumentationdialog.cpp:370
 #, kde-format
 msgid "Search results for keyword '%1'"
 msgstr "'%1' түйінді сөз бойынша нәтижесі"
 
-#: dialogs/texdocumentationdialog.cpp:492
+#: dialogs/texdocumentationdialog.cpp:373
 #, kde-format
 msgid "No documents found for keyword '%1'."
 msgstr "'%1' түйінді сөз бойынша құжат табылмады."
 
-#: dialogs/texdocumentationdialog.cpp:550
-#, kde-format
+#: dialogs/texdocumentationdialog.cpp:431
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not determine the search paths of TexLive/teTeX or file 'texdoctk."
+#| "dat'.<br> Hence, this dialog is unable to provide any useful information."
 msgid ""
 "Could not determine the search paths of TexLive/teTeX or file 'texdoctk.dat'."
-"<br> Hence, this dialog is unable to provide any useful information."
+"<br/>Unfortunately, Kile cannot show any useful information."
 msgstr ""
 "TexLive/teTeX іздеу жолдары не 'texdoctk.dat' файлы анықталмады.<br> "
 "Сондықтан, бұл диалог пайдалы мәлімет бермейді."
 
-#: dialogs/texdocumentationdialog.cpp:550
+#: dialogs/texdocumentationdialog.cpp:432
 #, kde-format
 msgid "TexDoc Dialog"
 msgstr "TexDoc диалогы"
 
-#: dialogs/texdocumentationdialog.cpp:562
-#, kde-format
+#: dialogs/texdocumentationdialog.cpp:444
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not determine the search paths of TexLive or file 'texdoctk.dat'."
+#| "<br> Hence, this dialog is unable to provide any useful information."
 msgid ""
-"Could not determine the search paths of TexLive or file 'texdoctk.dat'.<br> "
-"Hence, this dialog is unable to provide any useful information."
+"Could not determine the installation path of your TeX distribution or find "
+"the file 'texdoctk.dat'.<br>Hence, we cannot provide you with an overview of "
+"the installed TeX documentation."
 msgstr ""
 "TexLive іздеу жолдары не 'texdoctk.dat' файлы анықталмады.<br> Сондықтан, "
 "бұл диалог пайдалы мәлімет бермейді."
@@ -13009,6 +13009,21 @@ msgstr ""
 #, kde-format
 msgid "Show the &user menu in the menu bar"
 msgstr ""
+
+#~ msgid ""
+#~ "A list of available documents, which are listed in 'texdoctk.dat', that "
+#~ "come with TexLive/teTeX. Double clicking with the mouse or pressing the "
+#~ "space key will open a viewer to show this file."
+#~ msgstr ""
+#~ "TexLive/teTeX-пен бірге келген, 'texdoctk.dat' тізімінде келтірілген "
+#~ "құжаттар тізімі. Тышқанмен қос түртсе не бос орын пернесін басса бұл файл "
+#~ "ашылады."
+
+#~ msgid "Could not read the style file."
+#~ msgstr "Стилінің файлы оқылмайды."
+
+#~ msgid "Could not find '%1'"
+#~ msgstr "'%1' табылмады"
 
 #~ msgid ""
 #~ "Sorry, but you do not have the necessary permissions to remove the "

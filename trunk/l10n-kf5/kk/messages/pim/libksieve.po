@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libksieve\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-16 03:00+0100\n"
+"POT-Creation-Date: 2019-12-16 03:18+0100\n"
 "PO-Revision-Date: 2013-10-16 04:43+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -123,8 +123,10 @@ msgstr ""
 "Бәлкім, скриптте қате бар шығар."
 
 #: ksieveui/autocreatescripts/autocreatescriptdialog.cpp:39
-#, kde-format
-msgid "Create sieve filter"
+#, fuzzy, kde-format
+#| msgid "Create sieve filter"
+msgctxt "@title:window"
+msgid "Create Sieve Filter"
 msgstr "Sieve сүзгіні құру"
 
 #: ksieveui/autocreatescripts/autocreatescriptutil.cpp:190
@@ -232,10 +234,12 @@ msgid "An unknown tag value \"%1\" was found during parsing action \"%2\"."
 msgstr "\"%2\" амалды талдағанда \"%1\" деген беймәлім тег-белгі мәні табылды"
 
 #: ksieveui/autocreatescripts/sieveactions/sieveaction.cpp:139
-#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:113
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Too many argument found for \"%1\", max value is %2, number of value "
+#| "found %3 for %4"
 msgid ""
-"Too many argument found for \"%1\", max value is %2, number of value found "
+"Too many arguments found for \"%1\", max value is %2, number of value found "
 "%3 for %4"
 msgstr "\"%1\" аргументтері тым көп, олардың шегі %2, %4 үшін табылғаны %3"
 
@@ -920,6 +924,13 @@ msgstr "\"%2\" шартты талдағанда \"%1\" деген беймәл�
 #, kde-format
 msgid "An unknown tag value \"%1\" was found during parsing condition \"%2\"."
 msgstr "\"%2\" шартты талдағанда \"%1\" деген беймәлім тег-белгі мәні табылды."
+
+#: ksieveui/autocreatescripts/sieveconditions/sievecondition.cpp:113
+#, kde-format
+msgid ""
+"Too many argument found for \"%1\", max value is %2, number of value found "
+"%3 for %4"
+msgstr "\"%1\" аргументтері тым көп, олардың шегі %2, %4 үшін табылғаны %3"
 
 #: ksieveui/autocreatescripts/sieveconditions/sieveconditionaddress.cpp:36
 #, kde-format
@@ -1745,7 +1756,6 @@ msgid "Bottom"
 msgstr "Төменге"
 
 #: ksieveui/autocreatescripts/sievescriptlistbox.cpp:146
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:236
 #: ksieveui/widgets/managesievewidget.cpp:244
 #: ksieveui/widgets/managesievewidget.cpp:250
 #: ksieveui/widgets/managesievewidget.cpp:265
@@ -1774,33 +1784,50 @@ msgid "Edit Script Description"
 msgstr "Сипаттамасын өңдеу..."
 
 #: ksieveui/autocreatescripts/sievescriptlistbox.cpp:236
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:262
-#, kde-format
-msgid "Add new name:"
-msgstr "Жаңа атауды қосу:"
+#, fuzzy, kde-format
+#| msgid "New Script"
+msgctxt "@title:window"
+msgid "New Script"
+msgstr "Жаңа скрипт"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:236
+#, fuzzy, kde-format
+#| msgid "New Script"
+msgid "New script name:"
+msgstr "Жаңа скрипт"
 
 #: ksieveui/autocreatescripts/sievescriptlistbox.cpp:247
 #, kde-format
 msgid "Do you want to delete \"%1\" script?"
 msgstr "\"%1\" скриптті шын өшірмексіз бе?"
 
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:247
-#, kde-format
-msgid "Delete script"
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:248
+#, fuzzy, kde-format
+#| msgid "Delete Script"
+msgctxt "@title:window"
+msgid "Delete Script"
 msgstr "Скриптті өшіру"
 
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:262
-#, kde-format
-msgid "Rename"
-msgstr "Атауын өзгерту"
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:263
+#, fuzzy, kde-format
+#| msgid "Sieve Script"
+msgctxt "@title:window"
+msgid "Rename Script"
+msgstr "Sieve скрипті"
 
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:449
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:263
+#, fuzzy, kde-format
+#| msgid "Please enter a name for the new Sieve script:"
+msgid "New name for the script:"
+msgstr "Жаңа Sieve скрипттің атауы:"
+
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:450
 #, fuzzy, kde-format
 #| msgid "A feature \"%1\" in condition \"%2\" is not supported by server"
 msgid "forEveryPart is not supported by your server"
 msgstr "\"%2\" шарттағы \"%1\" дегенді сервер танымайды"
 
-#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:547
+#: ksieveui/autocreatescripts/sievescriptlistbox.cpp:548
 #, kde-format
 msgid "Script part %1"
 msgstr "Скрипт %1 бөлігі"
@@ -1843,7 +1870,9 @@ msgid "Block \"Else\""
 msgstr "\"Әйтпесе\" блогы"
 
 #: ksieveui/autocreatescripts/sievescriptparsingerrordialog.cpp:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve Parsing Error"
+msgctxt "@title:window"
 msgid "Sieve Parsing Error"
 msgstr "Sieve талдау қатесі"
 
@@ -2061,6 +2090,7 @@ msgstr ""
 #: ksieveui/editor/sieveeditorabstractwidget.cpp:75
 #, fuzzy, kde-format
 #| msgid "Import Script"
+msgctxt "@title:window"
 msgid "Import Script Sieve"
 msgstr "Скриптті импорттау"
 
@@ -2250,24 +2280,28 @@ msgstr ""
 "тегжейі...)</a>"
 
 #: ksieveui/editor/warningwidget/sieveeditorparsingmissingfeaturewarning.cpp:41
-#, kde-format
-msgid "Switch in graphical mode"
+#, fuzzy, kde-format
+#| msgid "Switch in graphical mode"
+msgid "Switch to Graphical Mode"
 msgstr "Графикалық режіміне ауысу"
 
 #: ksieveui/editor/warningwidget/sieveeditorparsingmissingfeaturewarning.cpp:45
-#, kde-format
-msgid "Keep in text mode"
-msgstr "Мәтін режімінде қалу"
+#, fuzzy, kde-format
+#| msgid "Switch in text mode"
+msgid "Stay in Text Mode"
+msgstr "Мәтін режіміне ауысу"
 
 #: ksieveui/editor/warningwidget/sieveeditorparsingmissingfeaturewarning.cpp:52
-#, kde-format
-msgid "Switch in text mode"
+#, fuzzy, kde-format
+#| msgid "Switch in text mode"
+msgid "Switch to Text Mode"
 msgstr "Мәтін режіміне ауысу"
 
 #: ksieveui/editor/warningwidget/sieveeditorparsingmissingfeaturewarning.cpp:56
-#, kde-format
-msgid "Keep in Graphical mode"
-msgstr "Графикалық режімінде қалу"
+#, fuzzy, kde-format
+#| msgid "Switch in graphical mode"
+msgid "Stay in Graphical Mode"
+msgstr "Графикалық режіміне ауысу"
 
 #: ksieveui/editor/warningwidget/sieveeditorwarning.cpp:30
 #, kde-format
@@ -2379,8 +2413,9 @@ msgid "Script is empty. (%1)"
 msgstr "Скрипт бос."
 
 #: ksieveui/managescriptsjob/parseuserscriptjob.cpp:87
-#, kde-format
-msgid "Script parsing error"
+#, fuzzy, kde-format
+#| msgid "Script parsing error"
+msgid "Script parsing error."
 msgstr "Скрипт талдау қатесі"
 
 #: ksieveui/managescriptsjob/renamescriptjob.cpp:75
@@ -2467,7 +2502,9 @@ msgstr ""
 "%1"
 
 #: ksieveui/scriptsparsing/parsingresultdialog.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Sieve Parsing"
+msgctxt "@title:window"
 msgid "Sieve Parsing"
 msgstr "Sieve талдауы"
 
@@ -2572,7 +2609,7 @@ msgstr ""
 
 #: ksieveui/sievescriptdebugger/sievescriptdebuggerfrontendwidget.cpp:159
 #, kde-format
-msgid "Impossible to open temporary file."
+msgid "Failed to open temporary file."
 msgstr ""
 
 #: ksieveui/sievescriptdebugger/sievescriptdebuggerfrontendwidget.cpp:229
@@ -3226,6 +3263,21 @@ msgstr "Сайт ережесінің шегін бұзу: Тым көп әре�
 msgid "Unknown error"
 msgstr "Беймәлім қате"
 
+#~ msgid "Add new name:"
+#~ msgstr "Жаңа атауды қосу:"
+
+#~ msgid "Delete script"
+#~ msgstr "Скриптті өшіру"
+
+#~ msgid "Rename"
+#~ msgstr "Атауын өзгерту"
+
+#~ msgid "Keep in text mode"
+#~ msgstr "Мәтін режімінде қалу"
+
+#~ msgid "Keep in Graphical mode"
+#~ msgstr "Графикалық режімінде қалу"
+
 #, fuzzy
 #~| msgid "Unknown error"
 #~ msgid "Unknown action"
@@ -3263,11 +3315,6 @@ msgstr "Беймәлім қате"
 #~ msgstr ""
 #~ "Sieve скрипті серверде сәтті орнатылған.\n"
 #~ "Кеңседе жоқ деген жауабы енді берілмейді."
-
-#, fuzzy
-#~| msgid "New Script"
-#~ msgid "New Script Name"
-#~ msgstr "Жаңа скрипт"
 
 #~ msgid "Rename..."
 #~ msgstr "Атауын өзгерту..."
