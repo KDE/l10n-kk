@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-23 02:42+0100\n"
+"POT-Creation-Date: 2020-02-19 02:34+0100\n"
 "PO-Revision-Date: 2013-11-08 01:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -547,7 +547,7 @@ msgstr "Артқа қарай жоспарлауды бастау"
 msgid "Finished scheduling backward: %1 ms"
 msgstr "Артқа қарай жоспарлау аяқталды: %1 мс"
 
-#: kernel/kptproject.cpp:3139
+#: kernel/kptproject.cpp:3174
 #, kde-format
 msgid "Plan"
 msgstr "Жоспар"
@@ -827,13 +827,13 @@ msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "%1 атқарушы келесі аралықта қол жеткізбейді: %2 - %3"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:134 ui/resourcedialogbase.ui:175
+#: kernel/ResourceGroup.cpp:141 ui/resourcedialogbase.ui:175
 #, kde-format
 msgid "Work"
 msgstr "Жұмыс"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/ResourceGroup.cpp:135 ui/resourcedialogbase.ui:180
+#: kernel/ResourceGroup.cpp:142 ui/resourcedialogbase.ui:180
 #, kde-format
 msgid "Material"
 msgstr "Материал"
@@ -2782,7 +2782,7 @@ msgstr "Былай сақтау"
 msgid "Status"
 msgstr "Күй-жайы"
 
-#: models/kptflatproxymodel.cpp:295 models/kptrelationmodel.cpp:136
+#: models/kptflatproxymodel.cpp:61 models/kptrelationmodel.cpp:136
 #, kde-format
 msgid "Parent"
 msgstr "Аталығы"
@@ -4835,24 +4835,24 @@ msgctxt "@info"
 msgid "Missing namespace declarations:<nl/><filename>%1</filename>"
 msgstr "<filename>%1</filename><br/> файлы ашылмады"
 
-#: models/ResourceGroupItemModel.cpp:334
+#: models/ResourceGroupItemModel.cpp:349
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup name"
 msgstr "Ресурс тобының атауын өзгерту"
 
-#: models/ResourceGroupItemModel.cpp:375
+#: models/ResourceGroupItemModel.cpp:390
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup type"
 msgstr "Ресурс тобының түрін өзгерту"
 
-#: models/ResourceGroupItemModel.cpp:574 models/ResourceItemModel.cpp:804
+#: models/ResourceGroupItemModel.cpp:597 models/ResourceItemModel.cpp:804
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Add resource from address book"
 msgid_plural "Add %1 resources from address book"
 msgstr[0] "Адрестік кітапшадан алып %1 атқарушыны қосу"
 
-#: models/ResourceGroupItemModel.cpp:635 models/ResourceItemModel.cpp:866
+#: models/ResourceGroupItemModel.cpp:658 models/ResourceItemModel.cpp:866
 #, fuzzy, kde-format
 #| msgid "Move resource"
 #| msgid_plural "Move %1 resources"
@@ -4861,7 +4861,7 @@ msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "%1 атқарушыны жылжыту"
 
-#: models/ResourceGroupItemModel.cpp:654 models/ResourceItemModel.cpp:885
+#: models/ResourceGroupItemModel.cpp:677 models/ResourceItemModel.cpp:885
 #, fuzzy, kde-format
 #| msgid "Copy resource"
 #| msgid_plural "Copy %1 resources"
@@ -4870,17 +4870,17 @@ msgid "Copy resource"
 msgid_plural "Copy %1 resources"
 msgstr[0] "%1 атқарушыны көшіріп алу"
 
-#: models/ResourceGroupItemModel.cpp:754
+#: models/ResourceGroupItemModel.cpp:778 models/ResourceGroupItemModel.cpp:782
 msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "Атқарушы тобын қосу..."
 
-#: models/ResourceGroupItemModel.cpp:765 models/ResourceItemModel.cpp:983
+#: models/ResourceGroupItemModel.cpp:789 models/ResourceItemModel.cpp:983
 msgctxt "(qtundo-format)"
 msgid "Add resource"
 msgstr "Атқарушыны қосу..."
 
-#: models/ResourceGroupItemModel.cpp:826
+#: models/ResourceGroupItemModel.cpp:850
 #, fuzzy
 #| msgctxt "(qtundo-format)"
 #| msgid "Add resource group"
@@ -4888,7 +4888,7 @@ msgctxt "(qtundo-format)"
 msgid "Add parent group"
 msgstr "Атқарушы тобын қосу..."
 
-#: models/ResourceGroupItemModel.cpp:828
+#: models/ResourceGroupItemModel.cpp:852
 #, fuzzy
 #| msgid "Remove Entry"
 msgctxt "(qtundo-format)"
@@ -5678,7 +5678,7 @@ msgstr "Бағыныңқы күнтізбені қосу"
 
 #: ui/kptcalendareditor.cpp:656 ui/kptdependencyeditor.cpp:2357
 #: ui/kptresourceeditor.cpp:304 ui/kptscheduleeditor.cpp:318
-#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:299
+#: ui/kpttaskeditor.cpp:896 ui/ResourceGroupEditor.cpp:305
 #, kde-kuit-format
 msgctxt "@action"
 msgid "Delete"
@@ -9075,9 +9075,15 @@ msgstr "Сағаттық бағасы:"
 msgid "Overtime rate:"
 msgstr "Уақытынан тыс жұмыс бағасы:"
 
-#: ui/ResourceGroupEditor.cpp:294
+#: ui/ResourceGroupEditor.cpp:295
 #, kde-format
 msgid "Add Resource Group"
+msgstr "Атқарушы тобын қосу..."
+
+#: ui/ResourceGroupEditor.cpp:300
+#, fuzzy, kde-format
+#| msgid "Add Resource Group"
+msgid "Add Child Resource Group"
 msgstr "Атқарушы тобын қосу..."
 
 #: ui/RichTextWidget.cpp:39 ui/RichTextWidget.cpp:52
