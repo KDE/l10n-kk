@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-28 02:42+0200\n"
+"POT-Creation-Date: 2020-02-21 02:38+0100\n"
 "PO-Revision-Date: 2013-11-11 04:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -37,7 +37,7 @@ msgstr "Құрастыру каталогы бапталмаған, орнату
 msgid "No Build Directory configured, cannot configure"
 msgstr "Құрастыру каталогы бапталмаған, конфигурациялау болмады"
 
-#: cmakebuilderpreferences.cpp:54 cmakejob.cpp:51 prunejob.cpp:39
+#: cmakebuilderpreferences.cpp:54 cmakejob.cpp:52 prunejob.cpp:39
 #, kde-format
 msgid "CMake"
 msgstr "CMake"
@@ -60,7 +60,18 @@ msgstr ""
 msgid "Default generator:"
 msgstr "Құрғышы:"
 
-#: cmakejob.cpp:140
+#: cmakejob.cpp:70
+#, kde-format
+msgid "Internal error: no project specified to configure."
+msgstr ""
+
+#: cmakejob.cpp:77
+#, fuzzy, kde-format
+#| msgid "Wrong build directory, cannot clear the build directory"
+msgid "Failed to create build directory %1."
+msgstr "Құрастыру каталогы қате, оны тазалау болмады"
+
+#: cmakejob.cpp:153
 #, kde-format
 msgid "CMake: %1"
 msgstr "CMake: %1"
@@ -90,11 +101,6 @@ msgstr "** Тазалау сәтті өтті **"
 #, kde-format
 msgid "** Prune failed: %1 **"
 msgstr "** Тазалау жаңылысы: %1 **"
-
-#, fuzzy
-#~| msgid "Wrong build directory, cannot clear the build directory"
-#~ msgid "Couldn't configure the build directory."
-#~ msgstr "Құрастыру каталогы қате, оны тазалау болмады"
 
 #, fuzzy
 #~| msgid "Aborting build"
