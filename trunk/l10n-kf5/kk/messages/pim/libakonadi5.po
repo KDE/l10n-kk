@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-21 03:16+0100\n"
+"POT-Creation-Date: 2020-03-26 03:28+0100\n"
 "PO-Revision-Date: 2013-07-14 03:20+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -395,7 +395,7 @@ msgstr "Атауы"
 msgid "Loading..."
 msgstr "Жүктеу.."
 
-#: core/models/entitytreemodel.cpp:547 core/models/entitytreemodel_p.cpp:1421
+#: core/models/entitytreemodel.cpp:547 core/models/entitytreemodel_p.cpp:1411
 #: widgets/selftestdialog.cpp:633
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
@@ -418,32 +418,32 @@ msgctxt "@title:column Name of a thing"
 msgid "Name"
 msgstr "Атауы"
 
-#: core/models/entitytreemodel_p.cpp:1408
+#: core/models/entitytreemodel_p.cpp:1398
 #, kde-format
 msgid "Could not copy item:"
 msgstr "Көшірілінбегені:"
 
-#: core/models/entitytreemodel_p.cpp:1410
+#: core/models/entitytreemodel_p.cpp:1400
 #, kde-format
 msgid "Could not copy collection:"
 msgstr "Мынау жинақ алынбады:"
 
-#: core/models/entitytreemodel_p.cpp:1412
+#: core/models/entitytreemodel_p.cpp:1402
 #, kde-format
 msgid "Could not move item:"
 msgstr "Жылжытылмағаны:"
 
-#: core/models/entitytreemodel_p.cpp:1414
+#: core/models/entitytreemodel_p.cpp:1404
 #, kde-format
 msgid "Could not move collection:"
 msgstr "Мынау жинақ жылжытылмады:"
 
-#: core/models/entitytreemodel_p.cpp:1416
+#: core/models/entitytreemodel_p.cpp:1406
 #, kde-format
 msgid "Could not link entity:"
 msgstr "Жасалмаған сілтеме:"
 
-#: core/models/favoritecollectionsmodel.cpp:411
+#: core/models/favoritecollectionsmodel.cpp:418
 #, kde-format
 msgid "Favorite Folders"
 msgstr "Таңдамалы қапшықтар"
@@ -1162,12 +1162,12 @@ msgstr "Akonadi дербес ақпарат басқару қызметі іст
 msgid "Details..."
 msgstr "Егжей-тегжейі..."
 
-#: widgets/manageaccountwidget.cpp:217
+#: widgets/manageaccountwidget.cpp:208
 #, kde-format
 msgid "Do you want to remove account '%1'?"
 msgstr ""
 
-#: widgets/manageaccountwidget.cpp:218
+#: widgets/manageaccountwidget.cpp:209
 #, kde-format
 msgid "Remove account?"
 msgstr ""
@@ -1209,10 +1209,21 @@ msgstr "Айдау"
 msgid "Recent Folder"
 msgstr "Жуырдағы қапшық"
 
-#: widgets/renamefavoritedialog.cpp:54
-#, kde-format
-msgid "Default Name"
-msgstr "Әдетті атауы"
+#. i18n: ectx: property (windowTitle), widget (QDialog, RenameFavoriteDialog)
+#: widgets/renamefavoritedialog.ui:26
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Rename Favorite"
+msgid "Rename Favorite"
+msgstr "Таңдамалылыны қайта атау"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: widgets/renamefavoritedialog.ui:35
+#, fuzzy, kde-format
+#| msgctxt "@label:textbox name of the folder"
+#| msgid "Name:"
+msgid "Name:"
+msgstr "Атауы:"
 
 #: widgets/selftestdialog.cpp:73
 #, fuzzy, kde-format
@@ -2333,57 +2344,64 @@ msgctxt "@action:button"
 msgid "Go Online"
 msgstr "Желіге кіру"
 
-#: widgets/standardactionmanager.cpp:1448
+#: widgets/standardactionmanager.cpp:1451
 #, kde-format
 msgid "Move to This Folder"
 msgstr "Осы қапшыққа жылжыту"
 
-#: widgets/standardactionmanager.cpp:1448
+#: widgets/standardactionmanager.cpp:1451
 #, kde-format
 msgid "Copy to This Folder"
 msgstr "Осы қапшыққа көшірмелеу"
 
-#: widgets/subscriptiondialog.cpp:160
+#. i18n: ectx: property (windowTitle), widget (QDialog, SubscriptionDialog)
+#: widgets/subscriptiondialog.ui:14
 #, fuzzy, kde-format
 #| msgid "Local Subscriptions"
-msgctxt "@title:window"
 msgid "Local Subscriptions"
 msgstr "Жергілікті жазылып алу"
 
-#: widgets/subscriptiondialog.cpp:190
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: widgets/subscriptiondialog.ui:22
 #, kde-format
 msgid "Search:"
 msgstr "Іздеу"
 
-#: widgets/subscriptiondialog.cpp:198
-#, kde-format
-msgid "Subscribed only"
+#. i18n: ectx: property (text), widget (QCheckBox, subscribedOnlyCheckBox)
+#: widgets/subscriptiondialog.ui:36
+#, fuzzy, kde-format
+#| msgid "Subscribed only"
+msgid "&Subscribed only"
 msgstr "Тек жазылғанның арасынан"
 
-#: widgets/subscriptiondialog.cpp:207
-#, kde-format
-msgid "Subscribe"
+#. i18n: ectx: property (text), widget (QPushButton, subscribeButton)
+#: widgets/subscriptiondialog.ui:62
+#, fuzzy, kde-format
+#| msgid "Subscribe"
+msgid "Su&bscribe"
 msgstr "Жазылу"
 
-#: widgets/subscriptiondialog.cpp:211
-#, kde-format
-msgid "Unsubscribe"
+#. i18n: ectx: property (text), widget (QPushButton, unsubscribeButton)
+#: widgets/subscriptiondialog.ui:69
+#, fuzzy, kde-format
+#| msgid "Unsubscribe"
+msgid "&Unsubscribe"
 msgstr "Жазылудан айну"
 
-#: widgets/tageditwidget.cpp:120
+#: widgets/tageditwidget.cpp:129
 #, fuzzy, kde-format
 #| msgid "Unable to create agent instance."
 msgid "Failed to create a new tag"
 msgstr "Агент данасын құруға болмайды."
 
-#: widgets/tageditwidget.cpp:121
+#: widgets/tageditwidget.cpp:130
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error while creating item: %1"
 msgid "An error occurred while creating a new tag"
 msgstr "Аталымды құру қатесі: %1"
 
-#: widgets/tageditwidget.cpp:176
+#: widgets/tageditwidget.cpp:179
 #, fuzzy, kde-kuit-format
 #| msgid "Do you really want to delete this resource?"
 #| msgid_plural "Do you really want to delete %1 resources?"
@@ -2391,7 +2409,7 @@ msgctxt "@info"
 msgid "Do you really want to remove the tag <resource>%1</resource>?"
 msgstr "Шынымен %1 ресурсты өшірмексіз бе?"
 
-#: widgets/tageditwidget.cpp:178
+#: widgets/tageditwidget.cpp:181
 #, fuzzy, kde-format
 #| msgid "Delete Item"
 #| msgid_plural "Delete %1 Items"
@@ -2399,19 +2417,7 @@ msgctxt "@title"
 msgid "Delete tag"
 msgstr "%1 аталымды өшіру"
 
-#: widgets/tageditwidget.cpp:216
-#, kde-format
-msgctxt "@label"
-msgid "Create new tag"
-msgstr ""
-
-#: widgets/tageditwidget.cpp:227
-#, kde-format
-msgctxt "@label:textbox"
-msgid "Configure which tags should be applied."
-msgstr ""
-
-#: widgets/tageditwidget.cpp:238
+#: widgets/tageditwidget.cpp:207
 #, fuzzy, kde-format
 #| msgid "Delete Item"
 #| msgid_plural "Delete %1 Items"
@@ -2419,23 +2425,51 @@ msgctxt "@info"
 msgid "Delete tag"
 msgstr "%1 аталымды өшіру"
 
-#: widgets/tagmanagementdialog.cpp:66 widgets/tagselectiondialog.cpp:68
+#. i18n: ectx: property (windowTitle), widget (QWidget, TagWidget)
+#. i18n: ectx: property (windowTitle), widget (QWidget, TagEditWidget)
+#: widgets/tageditwidget.ui:14 widgets/tagwidget.ui:14
 #, kde-format
-msgctxt "@title:window"
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, selectLabel)
+#: widgets/tageditwidget.ui:32
+#, kde-format
+msgid "Select tags that should be applied."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, newTagButton)
+#: widgets/tageditwidget.ui:57
+#, fuzzy, kde-format
+#| msgid "Unable to create agent instance."
+msgid "Create new tag"
+msgstr "Агент данасын құруға болмайды."
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, TagManagementDialog)
+#: widgets/tagmanagementdialog.ui:14
+#, kde-format
 msgid "Manage Tags"
 msgstr ""
 
-#: widgets/tagwidget.cpp:55
+#. i18n: ectx: property (windowTitle), widget (QDialog, TagSelectionDialog)
+#: widgets/tagselectiondialog.ui:14
 #, kde-format
-msgid "Click to add tags"
+msgid "Select Tags"
 msgstr ""
 
-#: widgets/tagwidget.cpp:66
+#: widgets/tagwidget.cpp:58
 #, kde-format
 msgid "Clear"
 msgstr ""
 
-#: widgets/tagwidget.cpp:88
+#. i18n: ectx: property (placeholderText), widget (Akonadi::TagView, tagView)
+#: widgets/tagwidget.ui:20
+#, kde-format
+msgid "Click to add tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, editButton)
+#: widgets/tagwidget.ui:27
 #, kde-format
 msgid "..."
 msgstr ""
@@ -2524,6 +2558,9 @@ msgstr "Дерек орналастырылмады: %1"
 #| msgid "Invalid collection"
 msgid "Unable to find collection %1"
 msgstr "Жарамсыз жинақ"
+
+#~ msgid "Default Name"
+#~ msgstr "Әдетті атауы"
 
 #, fuzzy
 #~| msgid "Delete"
