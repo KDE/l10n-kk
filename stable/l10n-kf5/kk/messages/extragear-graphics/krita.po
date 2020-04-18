@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-17 08:49+0200\n"
+"POT-Creation-Date: 2020-04-18 09:15+0200\n"
 "PO-Revision-Date: 2013-10-24 03:51+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -4337,18 +4337,18 @@ msgctxt "action"
 msgid "Local Selection"
 msgstr "&Жергілікті таңдау"
 
-#. i18n: context: Action (isolate_layer), Actions (Layers), ActionCollection (Krita)
+#. i18n: context: Action (isolate_active_layer), Actions (Layers), ActionCollection (Krita)
 #: krita/krita.action:2823
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "&Isolate Layer"
+msgid "&Isolate Active Layer"
 msgstr "Қабатты &оқшаулау"
 
-#. i18n: context: Action (isolate_layer), Actions (Layers), ActionCollection (Krita)
+#. i18n: context: Action (isolate_active_layer), Actions (Layers), ActionCollection (Krita)
 #: krita/krita.action:2825
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "Isolate Layer"
+msgid "Isolate Active Layer"
 msgstr "Қабатты &оқшаулау"
 
 #. i18n: context: Action (toggle_layer_lock), Actions (Layers), ActionCollection (Krita)
@@ -8977,6 +8977,12 @@ msgstr ""
 msgid "Imported Image"
 msgstr "Кескінді импорттау"
 
+#: libs/image/kis_image.cc:605 libs/image/kis_layer_utils.cpp:1426
+#: libs/impex/KisExportCheckRegistry.cpp:121
+#, fuzzy, kde-format
+msgid "Selection Mask"
+msgstr "&Таңдау қалқасына"
+
 #: libs/image/kis_image.cc:650
 #, kde-format
 msgid "background"
@@ -9450,13 +9456,13 @@ msgstr "Үстеме режімі"
 msgid "Satin (style)"
 msgstr "Бөліну стилі"
 
-#: libs/image/lazybrush/kis_colorize_mask.cpp:942
+#: libs/image/lazybrush/kis_colorize_mask.cpp:943
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Key Stroke Color"
 msgstr "Байланысын өзгерту"
 
-#: libs/image/lazybrush/kis_colorize_mask.cpp:969
+#: libs/image/lazybrush/kis_colorize_mask.cpp:970
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Key Stroke"
@@ -9568,7 +9574,8 @@ msgstr "Генератор"
 msgid "Colorize Mask"
 msgstr "&Бояу"
 
-#: libs/impex/KisExportCheckRegistry.cpp:115 libs/ui/kis_mask_manager.cc:234
+#: libs/impex/KisExportCheckRegistry.cpp:115
+#: libs/ui/dialogs/kis_dlg_filter.cpp:201 libs/ui/kis_mask_manager.cc:234
 #, kde-format
 msgid "Filter Mask"
 msgstr "Сүзгі қалқасы"
@@ -9583,11 +9590,6 @@ msgstr "Түрлендіру"
 #, kde-format
 msgid "Transparency Mask"
 msgstr "Мөлдірлік қалқасы"
-
-#: libs/impex/KisExportCheckRegistry.cpp:121
-#, fuzzy, kde-format
-msgid "Selection Mask"
-msgstr "&Таңдау қалқасына"
 
 #: libs/impex/MultiLayerCheck.h:37
 #, kde-format
@@ -9787,7 +9789,7 @@ msgctxt "description of a file type"
 msgid "JP2 Image"
 msgstr "Кескін"
 
-#: libs/libkis/Document.cpp:896 libs/ui/KisMainWindow.cpp:1951
+#: libs/libkis/Document.cpp:897 libs/ui/KisMainWindow.cpp:1951
 #, fuzzy, kde-format
 msgid "Import frames"
 msgstr "Кескінді импорттау"
