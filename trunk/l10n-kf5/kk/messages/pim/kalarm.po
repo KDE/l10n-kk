@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-26 03:32+0200\n"
+"POT-Creation-Date: 2020-04-27 03:30+0200\n"
 "PO-Revision-Date: 2013-07-07 03:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1738,6 +1738,8 @@ msgid "Import Calendar Files"
 msgstr "Күнтізбе файлдары"
 
 #: functions.cpp:787 functions.cpp:839
+#: resources/dirresourceimportdialog.cpp:264
+#: resources/singlefileresourceconfigdialog.cpp:52
 #, fuzzy, kde-format
 #| msgctxt "@info/plain"
 #| msgid "Calendar Files"
@@ -5937,6 +5939,7 @@ msgid "Invalid collection"
 msgstr "Жарамсыз жинақ"
 
 #: resources/akonadicalendarupdater.cpp:141
+#: resources/fileresourcecalendarupdater.cpp:127
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info/plain"
 #| msgid "Failed to update format of calendar <resource>%1</resource>"
@@ -5999,6 +6002,7 @@ msgid ""
 msgstr ""
 
 #: resources/akonadiresourcemigrator.cpp:269
+#: resources/fileresourcemigrator.cpp:433
 #: resources/resourcedatamodelbase.cpp:88
 #, fuzzy, kde-format
 #| msgid "Active Alarms"
@@ -6007,6 +6011,7 @@ msgid "Active Alarms"
 msgstr "Белсенді ескертулері"
 
 #: resources/akonadiresourcemigrator.cpp:277
+#: resources/fileresourcemigrator.cpp:435
 #: resources/resourcedatamodelbase.cpp:90
 #, fuzzy, kde-format
 #| msgid "Archived Alarms"
@@ -6015,6 +6020,7 @@ msgid "Archived Alarms"
 msgstr "Өткен ескертулері"
 
 #: resources/akonadiresourcemigrator.cpp:285
+#: resources/fileresourcemigrator.cpp:437
 #: resources/resourcedatamodelbase.cpp:92
 #, fuzzy, kde-format
 #| msgid "Alarm Templates"
@@ -6023,6 +6029,7 @@ msgid "Alarm Templates"
 msgstr "Ескерту үлгілері"
 
 #: resources/akonadiresourcemigrator.cpp:323
+#: resources/fileresourcemigrator.cpp:457
 #, kde-kuit-format
 msgctxt "@info/plain"
 msgid "Failed to create default calendar <resource>%1</resource>"
@@ -6039,6 +6046,7 @@ msgstr ""
 "не бар күнтібе үшін еске салуларды импорттаңыз."
 
 #: resources/akonadiresourcemigrator.cpp:327
+#: resources/fileresourcemigrator.cpp:458
 #, fuzzy, kde-format
 #| msgctxt "@info/plain File path or URL"
 #| msgid "Location: %1"
@@ -6047,6 +6055,7 @@ msgid "Location: %1"
 msgstr "Орны: %1"
 
 #: resources/akonadiresourcemigrator.cpp:328
+#: resources/fileresourcemigrator.cpp:459
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<para>%1</para><para>%2</para>"
@@ -6125,6 +6134,272 @@ msgstr ""
 "бағдарламаның ескі нұсқалары (мысалы, басқа компьютерде) қолданатын "
 "күнтізбені жаңартсаңыз, ол қолданалмайтын болады.</warning></para> "
 "<para>Күнтізбені жаңартуды қалайсыз ба?</para>"
+
+#: resources/dirresourceimportdialog.cpp:47
+#, kde-format
+msgid "Import Directory Resource"
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:52
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgid "Import Calendar Directory Resource"
+msgstr "Күнтізбе файлдары"
+
+#: resources/dirresourceimportdialog.cpp:59
+#, fuzzy, kde-format
+#| msgid "Active Alarms"
+msgid "Import Active Alarms"
+msgstr "Белсенді ескертулері"
+
+#: resources/dirresourceimportdialog.cpp:68
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Archived Alarms"
+msgid "Import Archived Alarms"
+msgstr "Өткен ескертулері"
+
+#: resources/dirresourceimportdialog.cpp:77
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgid "Import Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#: resources/dirresourceimportdialog.cpp:204
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Active alarms"
+msgid "Active alarms"
+msgstr "Белсенді ескертулері"
+
+#: resources/dirresourceimportdialog.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Archived alarms"
+msgid "Archived alarms"
+msgstr "Өткен ескертулері"
+
+#: resources/dirresourceimportdialog.cpp:208
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Alarm templates"
+msgid "Alarm templates"
+msgstr "Ескерту үлгілері"
+
+#: resources/dirresourceimportdialog.cpp:410
+#: resources/singlefileresourceconfigdialog.cpp:222
+#, kde-format
+msgctxt "@info:status"
+msgid "Checking file information..."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:418
+#: resources/dirresourceimportdialog.cpp:466
+#, kde-format
+msgctxt "@info:status"
+msgid "Error! File already exists."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:424
+#: resources/dirresourceimportdialog.cpp:475
+#: resources/dirresourceimportdialog.cpp:483
+#, kde-format
+msgctxt "@info:status"
+msgid "Error! Cannot create file (directory does not exist)."
+msgstr ""
+
+#: resources/dirresourceimportdialog.cpp:429
+#: resources/dirresourceimportdialog.cpp:477
+#: resources/dirresourceimportdialog.cpp:485
+#, kde-format
+msgctxt "@info:status"
+msgid "Error! Cannot create file (directory is not writable)."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, warning1)
+#: resources/dirresourceimportdialog_intro.ui:12
+#, kde-format
+msgid ""
+"KAlarm no longer supports calendar directory resources. In order to continue "
+"using the contents of the directory resource below, you must import it into "
+"a KAlarm calendar file resource."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, warning2)
+#: resources/dirresourceimportdialog_intro.ui:22
+#, kde-format
+msgid ""
+"KAlarm no longer supports calendar directory resources. In order to continue "
+"using the contents of the directory resource below, you must import each of "
+"its alarm types into separate KAlarm calendar file resources."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label1)
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: resources/dirresourceimportdialog_intro.ui:29
+#: resources/dirresourceimportdialog_type.ui:95
+#, fuzzy, kde-format
+#| msgid "&Display name:"
+msgid "Display name:"
+msgstr "&Көрсететін атауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label2)
+#: resources/dirresourceimportdialog_intro.ui:43
+#, fuzzy, kde-format
+#| msgid "Calendar Files"
+msgid "Calendar directory:"
+msgstr "Күнтізбе файлдары"
+
+#. i18n: ectx: property (text), widget (QLabel, label3)
+#: resources/dirresourceimportdialog_intro.ui:57
+#, fuzzy, kde-format
+#| msgid "Alarm types."
+msgid "Alarm types:"
+msgstr "Ескерту түрлері."
+
+#. i18n: ectx: property (text), widget (QLabel, note)
+#: resources/dirresourceimportdialog_intro.ui:74
+#, kde-format
+msgid ""
+"If you prefer, you can import this calendar directory resource later, by "
+"using the Import Alarms menu option to import the calendar files contained "
+"within it."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mergeRadio)
+#: resources/dirresourceimportdialog_type.ui:9
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Failed to create new calendar resource"
+msgid "Import into existing calendar file resource"
+msgstr "Жаңа күнтізбе ресурсын құру жаңылысы"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, mergeResource)
+#: resources/dirresourceimportdialog_type.ui:22
+#, kde-format
+msgid "Select the resource to import the directory resource's alarms into."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, newRadio)
+#: resources/dirresourceimportdialog_type.ui:45
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Failed to create new calendar resource"
+msgid "Import into new calendar file resource"
+msgstr "Жаңа күнтізбе ресурсын құру жаңылысы"
+
+#. i18n: ectx: property (text), widget (QLabel, pathLabel)
+#: resources/dirresourceimportdialog_type.ui:60
+#: resources/singlefileresourceconfigdialog.ui:25
+#, fuzzy, kde-format
+#| msgid "&Filename:"
+msgid "Filename:"
+msgstr "&Файл атауы:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, pathRequester)
+#: resources/dirresourceimportdialog_type.ui:70
+#, kde-format
+msgid ""
+"Select the file to contain this resource. The file must not already exist."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, pathRequester)
+#: resources/dirresourceimportdialog_type.ui:75
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the file whose contents should be represented by this resource. If "
+#| "the file does not exist, it will be created. A URL of a remote file can "
+#| "also be specified, but note that monitoring for file changes will not "
+#| "work in this case."
+msgid ""
+"Select the file to contain this resource.\n"
+"The file must not already exist.\n"
+"Note that if the URL of a remote file is specified, monitoring for file "
+"changes will not work."
+msgstr ""
+"Мазмұны осы деректер көзімен байланысты файлын таңдаңыз. Бұндай файл болмаса "
+"- құрылады. Қашықтағы файлдың URL-адресін де келтіруге болады, бірақ "
+"бұндайда өзгерістерін қадағалауы істемейді."
+
+#. i18n: ectx: property (text), widget (QLabel, statusLabel)
+#: resources/dirresourceimportdialog_type.ui:88
+#: resources/singlefileresourceconfigdialog.ui:49
+#, kde-format
+msgid "Status:"
+msgstr "Күй-жайы:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, nameText)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, nameText)
+#. i18n: ectx: property (html), widget (QTextEdit, nameDescription)
+#: resources/dirresourceimportdialog_type.ui:105
+#: resources/dirresourceimportdialog_type.ui:108
+#: resources/singlefileresourceconfigdialog.ui:218
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enter the name used to identify this resource in displays. If not "
+#| "specified, the filename will be used."
+msgid "Enter the name used to identify this resource in displays."
+msgstr ""
+"Ресурсқа басқалардан айыратын атау беріңіз. Бермесеңіз - файлының атауы "
+"беріледі."
+
+#. i18n: ectx: property (text), widget (QRadioButton, noRadio)
+#: resources/dirresourceimportdialog_type.ui:133
+#, fuzzy, kde-format
+#| msgctxt "@option"
+#| msgid "Do not repeat"
+msgid "Do not import"
+msgstr "Қайталауы болмасын"
+
+#: resources/fileresource.cpp:36
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Error saving alarm"
+msgid "Error loading calendar '%1'."
+msgstr "Ескертуді сақтау қатесі"
+
+#: resources/fileresource.cpp:37
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Error saving alarm"
+msgid "Error saving calendar '%1'."
+msgstr "Ескертуді сақтау қатесі"
+
+#: resources/fileresource.cpp:313 resources/fileresource.cpp:430
+#, kde-format
+msgid "Resource is not configured."
+msgstr ""
+
+#: resources/fileresource.cpp:437
+#, kde-format
+msgid "Resource is read-only."
+msgstr ""
+
+#: resources/fileresource.cpp:442
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Calendar is not in current KAlarm format."
+msgid "Calendar file is in wrong format: '%1'."
+msgstr "Күнтізбе қазіргі KAlarm пішімінде емес."
+
+#: resources/fileresourcecreator.cpp:66
+#, kde-format
+msgctxt "@title:window"
+msgid "Calendar Configuration"
+msgstr "Күнтізбені баптау"
+
+#: resources/fileresourcecreator.cpp:67
+#, kde-format
+msgctxt "@info"
+msgid "Select storage type of new calendar:"
+msgstr "Жаңа күнтізбенің сақтау орнын таңдау"
+
+#: resources/fileresourcecreator.cpp:149
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Error!  The file is already used by an existing resource."
+msgstr ""
 
 #: resources/resourcedatamodelbase.cpp:108
 #, fuzzy, kde-format
@@ -6446,6 +6721,196 @@ msgstr "URL"
 msgctxt "@info Directory in filesystem"
 msgid "Directory"
 msgstr "Каталог"
+
+#: resources/singlefileresource.cpp:56
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgid "Calendar '%1' has been reloaded."
+msgstr "Күнтізбе файлдары"
+
+#: resources/singlefileresource.cpp:191 resources/singlefileresource.cpp:347
+#, kde-format
+msgid "A previous load is still in progress."
+msgstr ""
+
+#: resources/singlefileresource.cpp:197 resources/singlefileresource.cpp:353
+#, kde-format
+msgid "A previous save is still in progress."
+msgstr ""
+
+#: resources/singlefileresource.cpp:246
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not load calendar <filename>%1</filename>."
+msgid "Could not create calendar file '%1'."
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: resources/singlefileresource.cpp:584
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not load calendar <filename>%1</filename>."
+msgid "Could not load file '%1'."
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: resources/singlefileresource.cpp:616
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgid "Calendar not open."
+msgstr "Күнтізбе файлдары"
+
+#: resources/singlefileresource.cpp:629
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not load calendar <filename>%1</filename>."
+msgid "Could not save file '%1'."
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: resources/singlefileresource.cpp:720
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not load calendar <filename>%1</filename>."
+msgid "Could not load file '%1'. (%2)"
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: resources/singlefileresource.cpp:760
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not load calendar <filename>%1</filename>."
+msgid "Could not save file '%1'. (%2)"
+msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
+
+#: resources/singlefileresourceconfigdialog.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Choose Calendar"
+msgid "Configure Calendar"
+msgstr "Күнтізбені таңдау"
+
+#. i18n: ectx: property (title), widget (QGroupBox, pathGroupBox)
+#: resources/singlefileresourceconfigdialog.ui:17
+#, fuzzy, kde-format
+#| msgctxt "@info/plain"
+#| msgid "Calendar Files"
+msgid "Calendar File"
+msgstr "Күнтізбе файлдары"
+
+#. i18n: ectx: property (html), widget (QTextEdit, pathDescription)
+#: resources/singlefileresourceconfigdialog.ui:64
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select the file whose contents should be represented by this resource. If "
+#| "the file does not exist, it will be created. A URL of a remote file can "
+#| "also be specified, but note that monitoring for file changes will not "
+#| "work in this case."
+msgid ""
+"Select the file whose contents should be represented by this resource. If "
+"the file does not exist, it will be created. The URL of a remote file can "
+"also be specified, but note that monitoring for file changes will not work "
+"in this case."
+msgstr ""
+"Мазмұны осы деректер көзімен байланысты файлын таңдаңыз. Бұндай файл болмаса "
+"- құрылады. Қашықтағы файлдың URL-адресін де келтіруге болады, бірақ "
+"бұндайда өзгерістерін қадағалауы істемейді."
+
+#. i18n: ectx: property (title), widget (QGroupBox, alarmTypeGroupBox)
+#: resources/singlefileresourceconfigdialog.ui:74
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Alarm Type"
+msgid "Alarm Type"
+msgstr "Ескерту түрі"
+
+#. i18n: ectx: property (text), widget (QRadioButton, activeRadio)
+#: resources/singlefileresourceconfigdialog.ui:82
+#, fuzzy, kde-format
+#| msgid "Active Alarms"
+msgid "Acti&ve Alarms"
+msgstr "Белсенді ескертулері"
+
+#. i18n: ectx: property (text), widget (QRadioButton, archivedRadio)
+#. i18n: ectx: property (text), widget (QLineEdit, archivedAlarmsText)
+#: resources/singlefileresourceconfigdialog.ui:95
+#: resources/singlefileresourceconfigdialog.ui:164
+#, fuzzy, kde-format
+#| msgctxt "@title:group"
+#| msgid "Archived Alarms"
+msgid "Archived Alarms"
+msgstr "Өткен ескертулері"
+
+#. i18n: ectx: property (text), widget (QRadioButton, templateRadio)
+#: resources/singlefileresourceconfigdialog.ui:108
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgid "Alarm &Templates"
+msgstr "Ескерту үлгілері"
+
+#. i18n: ectx: property (html), widget (QTextEdit, alarmTypeDescription)
+#: resources/singlefileresourceconfigdialog.ui:129
+#, kde-format
+msgid "Select which alarm type this resource should contain."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, alarmTypeLabel)
+#: resources/singlefileresourceconfigdialog.ui:138
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Alarm Type"
+msgid "Alarm type:"
+msgstr "Ескерту түрі"
+
+#. i18n: ectx: property (text), widget (QLineEdit, activeAlarmsText)
+#: resources/singlefileresourceconfigdialog.ui:151
+#, fuzzy, kde-format
+#| msgid "Active Alarms"
+msgid "Active Alarms"
+msgstr "Белсенді ескертулері"
+
+#. i18n: ectx: property (text), widget (QLineEdit, templateAlarmsText)
+#: resources/singlefileresourceconfigdialog.ui:177
+#, fuzzy, kde-format
+#| msgid "Alarm Templates"
+msgid "Alarm Templates"
+msgstr "Ескерту үлгілері"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nameGroupBox)
+#: resources/singlefileresourceconfigdialog.ui:189
+#, kde-format
+msgid "Display Name"
+msgstr "Көрсететін атауы:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: resources/singlefileresourceconfigdialog.ui:197
+#, kde-format
+msgid "&Name:"
+msgstr "&Атауы:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, readOnlyGroupBox)
+#: resources/singlefileresourceconfigdialog.ui:228
+#, kde-format
+msgid "Access Rights"
+msgstr "Қатынау құқықтары"
+
+#. i18n: ectx: property (text), widget (QCheckBox, readOnlyCheckbox)
+#: resources/singlefileresourceconfigdialog.ui:234
+#, kde-format
+msgid "Read only"
+msgstr "Тек оқу үшін"
+
+#. i18n: ectx: property (html), widget (QTextEdit, readOnlyDescription)
+#: resources/singlefileresourceconfigdialog.ui:250
+#, kde-format
+msgid ""
+"If read-only mode is enabled, no changes will be written to the file "
+"selected above. Read-only mode will be automatically enabled if you do not "
+"have write access to the file or the file is on a remote server that does "
+"not support write access."
+msgstr ""
+"Жоғарда таңдалған файлға ешбір өзгерістер енгізілмейтін болса, тек оқу үшін "
+"деп қоюға болады. Бұл файлға жазуға құқығыңыз болмаса, немесе файл жазу "
+"құқығын қолдамайтын қашықтағы серверінде болса - ол өзі де тек оқу үшін "
+"болады."
 
 #: resourceselector.cpp:64
 #, kde-format
@@ -7639,10 +8104,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ msgid "%1: Event <resource>%2</resource> not found"
 #~ msgstr "%1: <resource>%2</resource> оқиғасы табылмады"
 
-#~ msgctxt "@title:window"
-#~ msgid "Calendar Configuration"
-#~ msgstr "Күнтізбені баптау"
-
 #~ msgctxt "@title:group"
 #~ msgid "General Settings"
 #~ msgstr "Жалпы параметрлері"
@@ -7719,10 +8180,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ "құрылған"
 
 #~ msgctxt "@info"
-#~ msgid "Select storage type of new calendar:"
-#~ msgstr "Жаңа күнтізбенің сақтау орнын таңдау"
-
-#~ msgctxt "@info"
 #~ msgid "Unable to create calendar of type <resource>%1</resource>."
 #~ msgstr "Түрі <resource>%1</resource> күнтізбе құрылмады. "
 
@@ -7787,24 +8244,12 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ "Осындай ресурсқа арнаған каталогын таңдаңыз. Каталог болмаса - ол "
 #~ "құрылады."
 
-#~ msgid "Display Name"
-#~ msgstr "Көрсететін атауы:"
-
-#~ msgid "&Name:"
-#~ msgstr "&Атауы:"
-
 #~ msgid ""
 #~ "Enter the name used to identify this resource in displays. If not "
 #~ "specified, the directory name will be used."
 #~ msgstr ""
 #~ "Ресурсқа басқалардан айыратын атау беріңіз. Бермесеңіз - каталогтың атауы "
 #~ "беріледі."
-
-#~ msgid "Access Rights"
-#~ msgstr "Қатынау құқықтары"
-
-#~ msgid "Read only"
-#~ msgstr "Тек оқу үшін"
 
 #~ msgid ""
 #~ "If read-only mode is enabled, no changes will be written to the directory "
@@ -7817,40 +8262,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 
 #~ msgid "Filename"
 #~ msgstr "Файл атауы"
-
-#~ msgid "&Filename:"
-#~ msgstr "&Файл атауы:"
-
-#~ msgid "Status:"
-#~ msgstr "Күй-жайы:"
-
-#~ msgid ""
-#~ "Select the file whose contents should be represented by this resource. If "
-#~ "the file does not exist, it will be created. A URL of a remote file can "
-#~ "also be specified, but note that monitoring for file changes will not "
-#~ "work in this case."
-#~ msgstr ""
-#~ "Мазмұны осы деректер көзімен байланысты файлын таңдаңыз. Бұндай файл "
-#~ "болмаса - құрылады. Қашықтағы файлдың URL-адресін де келтіруге болады, "
-#~ "бірақ бұндайда өзгерістерін қадағалауы істемейді."
-
-#~ msgid ""
-#~ "Enter the name used to identify this resource in displays. If not "
-#~ "specified, the filename will be used."
-#~ msgstr ""
-#~ "Ресурсқа басқалардан айыратын атау беріңіз. Бермесеңіз - файлының атауы "
-#~ "беріледі."
-
-#~ msgid ""
-#~ "If read-only mode is enabled, no changes will be written to the file "
-#~ "selected above. Read-only mode will be automatically enabled if you do "
-#~ "not have write access to the file or the file is on a remote server that "
-#~ "does not support write access."
-#~ msgstr ""
-#~ "Жоғарда таңдалған файлға ешбір өзгерістер енгізілмейтін болса, тек оқу "
-#~ "үшін деп қоюға болады. Бұл файлға жазуға құқығыңыз болмаса, немесе файл "
-#~ "жазу құқығын қолдамайтын қашықтағы серверінде болса - ол өзі де тек оқу "
-#~ "үшін болады."
 
 #~ msgid "Monitoring"
 #~ msgstr "Қадағалау"
@@ -7866,9 +8277,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 
 #~ msgid "Enable file &monitoring"
 #~ msgstr "Файл қ&адағалансын"
-
-#~ msgid "&Display name:"
-#~ msgstr "&Көрсететін атауы:"
 
 #~ msgctxt "@info/plain 'From' email address"
 #~ msgid "From:"
@@ -8016,10 +8424,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ msgstr "UID-i '%1' оқигасы табылмады."
 
 #~ msgctxt "@info"
-#~ msgid "Calendar is not in current KAlarm format."
-#~ msgstr "Күнтізбе қазіргі KAlarm пішімінде емес."
-
-#~ msgctxt "@info"
 #~ msgid "Event with uid '%1' is read only"
 #~ msgstr "UID-i '%1' оқигасы тек оқу үшін"
 
@@ -8028,13 +8432,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ msgctxt "@info"
 #~ msgid "Event with uid '%1' contains no usable alarms."
 #~ msgstr "UID-i '%1' оқигасының істейтін ескертуі жоқ."
-
-#, fuzzy
-#~| msgctxt "@title:window"
-#~| msgid "Alarm Type"
-#~ msgctxt "@label"
-#~ msgid "Alarm type"
-#~ msgstr "Ескерту түрі"
 
 #, fuzzy
 #~| msgctxt "@info/plain"
@@ -8443,12 +8840,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~ msgstr "Жаңасын &үлгіден құру"
 
 #, fuzzy
-#~| msgctxt "@info/plain"
-#~| msgid "Calendar Files"
-#~ msgid "Calendar not loaded."
-#~ msgstr "Күнтізбе файлдары"
-
-#, fuzzy
 #~| msgctxt "@title:window"
 #~| msgid "Select Active Alarm Calendar"
 #~ msgid "Select Calendar"
@@ -8478,12 +8869,6 @@ msgstr "Ескертуден неше минут бұрын аялдау реж�
 #~| msgid "No email address specified"
 #~ msgid "No file specified."
 #~ msgstr "Эл.пошта адресі келтірілмеген"
-
-#, fuzzy
-#~| msgctxt "@info"
-#~| msgid "Could not load calendar <filename>%1</filename>."
-#~ msgid "Could not load file '%1'."
-#~ msgstr "Келесі күнтізбе жүктелмеді: <filename>%1</filename>"
 
 #, fuzzy
 #~| msgctxt "@item:inlistbox"
