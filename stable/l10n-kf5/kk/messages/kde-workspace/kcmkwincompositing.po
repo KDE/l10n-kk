@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-17 08:59+0100\n"
+"POT-Creation-Date: 2020-04-22 03:59+0200\n"
 "PO-Revision-Date: 2013-06-10 04:36+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -27,35 +27,8 @@ msgstr ""
 "\n"
 "\n"
 
-#: compositing.cpp:392
-#, kde-format
-msgid "OpenGL 3.1"
-msgstr "OpenGL 3.1"
-
-#: compositing.cpp:393
-#, kde-format
-msgid "OpenGL 2.0"
-msgstr "OpenGL 2.0"
-
-#: compositing.cpp:394
-#, kde-format
-msgid "XRender"
-msgstr "XRender"
-
-#: compositing.cpp:493
-#, kde-format
-msgctxt "OpenGL Platform Interface"
-msgid "EGL"
-msgstr ""
-
-#: compositing.cpp:495
-#, kde-format
-msgctxt "OpenGL Platform Interface"
-msgid "GLX"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (KMessageWidget, glCrashedWarning)
-#: compositing.ui:29
+#: compositing.ui:32
 #, kde-format
 msgid ""
 "OpenGL compositing (the default) has crashed KWin in the past.\n"
@@ -67,7 +40,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KMessageWidget, scaleWarning)
-#: compositing.ui:42
+#: compositing.ui:45
 #, kde-format
 msgid ""
 "Scale method \"Accurate\" is not supported by all hardware and can cause "
@@ -75,15 +48,15 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KMessageWidget, windowThumbnailWarning)
-#: compositing.ui:65
+#: compositing.ui:68
 #, kde-format
 msgid ""
 "Keeping the window thumbnail always interferes with the minimized state of "
 "windows. This can result in windows not suspending their work when minimized."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, compositingEnabled)
-#: compositing.ui:77
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Enabled)
+#: compositing.ui:80
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Enable desktop effects at startup"
@@ -91,61 +64,73 @@ msgid "Enable compositor on startup"
 msgstr "Бастағанда үстел эффекттерін рұқсат ету"
 
 #. i18n: ectx: property (text), widget (QLabel, animationSpeedLabel)
-#: compositing.ui:84
+#: compositing.ui:87
 #, fuzzy, kde-format
 #| msgid "Animation speed:"
 msgid "Animation speed:"
 msgstr "Анимация жылдамдығы:"
 
-#. i18n: ectx: property (text), widget (QLabel, glScaleFilterLabel)
-#. i18n: ectx: property (text), widget (QLabel, xrScaleFilterLabel)
-#: compositing.ui:91 compositing.ui:117
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: compositing.ui:124
+#, fuzzy, kde-format
+#| msgid "Very Slow"
+msgid "Very slow"
+msgstr "Өте баяу"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: compositing.ui:144
+#, kde-format
+msgid "Instant"
+msgstr "Лезде"
+
+#. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
+#: compositing.ui:156
 #, fuzzy, kde-format
 #| msgid "Scale method:"
 msgid "Scale method:"
 msgstr "Масштабтау әдісі:"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
-#: compositing.ui:99 compositing.ui:125
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:166 compositing.ui:180
 #, kde-format
 msgid "Crisp"
 msgstr "Иректі"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#: compositing.ui:104
-#, kde-format
-msgid "Smooth"
-msgstr "Тегіс"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#: compositing.ui:109
-#, kde-format
-msgid "Accurate"
-msgstr "Ұқыпты"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
-#: compositing.ui:130
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_XRenderSmoothScale)
+#: compositing.ui:171
 #, kde-format
 msgid "Smooth (slower)"
 msgstr "Тегіс (баяу)"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:185
+#, kde-format
+msgid "Smooth"
+msgstr "Тегіс"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glTextureFilter)
+#: compositing.ui:190
+#, kde-format
+msgid "Accurate"
+msgstr "Ұқыпты"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: compositing.ui:145
+#: compositing.ui:207
 #, kde-format
 msgid "Rendering backend:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: compositing.ui:162
+#: compositing.ui:224
 #, fuzzy, kde-format
 #| msgid "Tearing Prevention (VSync)"
 msgid "Tearing prevention (\"vsync\"):"
 msgstr "Жыртылуын болдырмау (VSync)"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
-#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
-#: compositing.ui:170 compositing.ui:206
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:232 compositing.ui:268
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Windows are unmapped as they are requested. This can lead to not having "
@@ -154,41 +139,41 @@ msgstr "Жыртылуын болдырмау (VSync)"
 msgid "Never"
 msgstr "Ешқашанда"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
-#: compositing.ui:175
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:237
 #, kde-format
 msgid "Automatic"
 msgstr "Авто"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
-#: compositing.ui:180
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:242
 #, fuzzy, kde-format
 #| msgid "Only when Cheap"
 msgid "Only when cheap"
 msgstr "Арзанға түсе ғана"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
-#: compositing.ui:185
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:247
 #, fuzzy, kde-format
 #| msgid "Full scene repaints"
 msgid "Full screen repaints"
 msgstr "Экранды толығымен қайта суреттеу"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, tearingPrevention)
-#: compositing.ui:190
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_glPreferBufferSwap)
+#: compositing.ui:252
 #, kde-format
 msgid "Re-use screen content"
 msgstr "Экран мазмұнын қайта пайдалану"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: compositing.ui:198
+#: compositing.ui:260
 #, fuzzy, kde-format
 #| msgid "Keep window thumbnails:"
 msgid "Keep window thumbnails:"
 msgstr "Қалдыратын терезенің нобайлары:"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
-#: compositing.ui:211
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:273
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Windows are not unmapped if the window is somewhere visible on any of the "
@@ -197,14 +182,14 @@ msgstr "Қалдыратын терезенің нобайлары:"
 msgid "Only for Shown Windows"
 msgstr "Тек көрінетін терезелер үшін"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, windowThumbnail)
-#: compositing.ui:216
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_HiddenPreviews)
+#: compositing.ui:278
 #, kde-format
 msgid "Always"
 msgstr "Әрқашанда"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, windowsBlockCompositing)
-#: compositing.ui:226
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:288
 #, kde-format
 msgid ""
 "Applications can set a hint to block compositing when the window is open.\n"
@@ -212,47 +197,49 @@ msgid ""
 " The setting can be overruled by window-specific rules."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, windowsBlockCompositing)
-#: compositing.ui:229
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowsBlockCompositing)
+#: compositing.ui:291
 #, kde-format
 msgid "Allow applications to block compositing"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: compositing.ui:266
-#, fuzzy, kde-format
-#| msgid "Very Slow"
-msgid "Very slow"
-msgstr "Өте баяу"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: compositing.ui:286
-#, kde-format
-msgid "Instant"
-msgstr "Лезде"
-
-#: main.cpp:60
+#: main.cpp:96
 #, kde-format
 msgid "Re-enable OpenGL detection"
 msgstr "OpenGL байқауы қайталансын"
 
-#: main.cpp:138
+#: main.cpp:148
 #, kde-format
 msgid ""
 "\"Only when cheap\" only prevents tearing for full screen changes like a "
 "video."
 msgstr ""
 
-#: main.cpp:142
+#: main.cpp:152
 #, kde-format
 msgid "\"Full screen repaints\" can cause performance problems."
 msgstr ""
 
-#: main.cpp:146
+#: main.cpp:156
 #, kde-format
 msgid ""
 "\"Re-use screen content\" causes severe performance problems on MESA drivers."
 msgstr ""
+
+#: main.cpp:176
+#, kde-format
+msgid "OpenGL 3.1"
+msgstr "OpenGL 3.1"
+
+#: main.cpp:177
+#, kde-format
+msgid "OpenGL 2.0"
+msgstr "OpenGL 2.0"
+
+#: main.cpp:178
+#, kde-format
+msgid "XRender"
+msgstr "XRender"
 
 #~ msgid ""
 #~ "Hint: To find out or configure how to activate an effect, look at the "
