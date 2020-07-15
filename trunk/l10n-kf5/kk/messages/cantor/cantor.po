@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-08 01:58+0200\n"
+"POT-Creation-Date: 2020-07-15 02:01+0200\n"
 "PO-Revision-Date: 2013-11-01 23:02+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -824,8 +824,8 @@ msgstr ""
 
 #: backends/octave/octavesession.cpp:420 backends/sage/sagesession.cpp:249
 #: backends/sage/sagesession.cpp:282 backends/sage/sagesession.cpp:361
-#: backends/sage/sagesession.cpp:372 cantor.cpp:207 cantor.cpp:209
-#: cantor.cpp:327 cantor.cpp:334 lib/session.cpp:373 main.cpp:77 main.cpp:141
+#: backends/sage/sagesession.cpp:372 cantor.cpp:222 cantor.cpp:224
+#: cantor.cpp:342 cantor.cpp:349 lib/session.cpp:373 main.cpp:77 main.cpp:141
 #: markdownentry.cpp:726 textentry.cpp:574 worksheet.cpp:1083
 #, kde-format
 msgid "Cantor"
@@ -1831,7 +1831,7 @@ msgid "file: the file to load"
 msgstr "файл: жүктеп алатын файлы"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: backends/qalculate/settings.ui:21 cantor.cpp:561
+#: backends/qalculate/settings.ui:21 cantor.cpp:576
 #, kde-format
 msgid "General"
 msgstr "Жалпы"
@@ -2311,40 +2311,45 @@ msgstr ""
 msgid "Path to scilab-adv-cli command:"
 msgstr "scilab-adv-cli командасының жолы:"
 
-#: cantor.cpp:135
+#: cantor.cpp:110
+#, kde-format
+msgid "The file %1 is already opened."
+msgstr ""
+
+#: cantor.cpp:110 cantor.cpp:234
+#, fuzzy, kde-format
+#| msgid "Open image file"
+msgid "Open file"
+msgstr "Кескін файлды ашу"
+
+#: cantor.cpp:150
 #, kde-format
 msgid "Download Example Worksheets"
 msgstr "Мысалдарын жүктеп алу"
 
-#: cantor.cpp:140
+#: cantor.cpp:155
 #, kde-format
 msgid "&Open Example"
 msgstr "Мысалды &ашу"
 
-#: cantor.cpp:145
+#: cantor.cpp:160
 #, kde-format
 msgid "Go to previous worksheet"
 msgstr ""
 
-#: cantor.cpp:157
+#: cantor.cpp:172
 #, kde-format
 msgid "Go to next worksheet"
 msgstr ""
 
-#: cantor.cpp:218
+#: cantor.cpp:233
 #, kde-format
 msgid ""
 "All supported files (*.cws *ipynb);;Cantor Worksheet (*.cws);;Jupyter "
 "Notebook (*.ipynb)"
 msgstr ""
 
-#: cantor.cpp:219
-#, fuzzy, kde-format
-#| msgid "Open image file"
-msgid "Open file"
-msgstr "Кескін файлды ашу"
-
-#: cantor.cpp:286
+#: cantor.cpp:301
 #, kde-format
 msgid ""
 "<h1>No Backend Found</h1>\n"
@@ -2364,51 +2369,51 @@ msgstr[0] ""
 "  <ul>    <li>Баптау диалогындағы параметрлерін өзгерту;</li>    <li>Келесі "
 "бағдарламалардың бірін орнату:</li>     %2   </ul> </div> "
 
-#: cantor.cpp:306
+#: cantor.cpp:321
 #, kde-format
 msgid "Error"
 msgstr "Қате"
 
-#: cantor.cpp:327
+#: cantor.cpp:342
 #, kde-format
 msgid "Backend %1 is not installed"
 msgstr "%1 тетігі орнатылмаған"
 
-#: cantor.cpp:334
+#: cantor.cpp:349
 #, kde-format
 msgid ""
 "%1 backend installed, but inactive. Please check installation and Cantor "
 "settings"
 msgstr ""
 
-#: cantor.cpp:355
+#: cantor.cpp:370
 #, kde-format
 msgid "Session %1"
 msgstr "%1 сеансы"
 
-#: cantor.cpp:373
+#: cantor.cpp:388
 #, fuzzy, kde-format
 #| msgid "Could not find the Cantor Part."
 msgid "Failed to find the Cantor Part with error %1"
 msgstr "Cantor бөлшегі табылмады."
 
-#: cantor.cpp:504
+#: cantor.cpp:519
 #, kde-format
 msgid "Multiple unsaved Worksheets are opened. Do you want to close them?"
 msgstr ""
 
-#: cantor.cpp:505
+#: cantor.cpp:520
 #, fuzzy, kde-format
 #| msgid "Cantor"
 msgid "Close Cantor"
 msgstr "Cantor"
 
-#: cantor.cpp:521
+#: cantor.cpp:536
 #, kde-format
 msgid "The current project has been modified. Do you want to save it?"
 msgstr ""
 
-#: cantor.cpp:522
+#: cantor.cpp:537
 #, fuzzy, kde-format
 #| msgid "Save result"
 msgid "Save Project"
@@ -3359,6 +3364,29 @@ msgstr "Cantor бөлшегі табылмады."
 #, kde-format
 msgid "--- Page Break ---"
 msgstr "--- Бет үзілімі ---"
+
+#: panelplugins/filebrowserpanel/filebrowserpanelplugin.cpp:150
+#, fuzzy, kde-format
+#| msgid "Cantor"
+msgid "Cantor files"
+msgstr "Cantor"
+
+#: panelplugins/filebrowserpanel/filebrowserpanelplugin.cpp:151
+#, fuzzy, kde-format
+#| msgid "Open image file"
+msgid "Jupyter files"
+msgstr "Кескін файлды ашу"
+
+#: panelplugins/filebrowserpanel/filebrowserpanelplugin.cpp:152
+#, kde-format
+msgid "All supported files"
+msgstr ""
+
+#: panelplugins/filebrowserpanel/filebrowserpanelplugin.cpp:153
+#, fuzzy, kde-format
+#| msgid "file"
+msgid "All files"
+msgstr "файл"
 
 #: panelplugins/helppanel/helppanelplugin.cpp:41
 #, kde-format
