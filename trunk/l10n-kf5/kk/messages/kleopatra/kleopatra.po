@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-16 02:22+0200\n"
+"POT-Creation-Date: 2020-08-19 02:26+0200\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -3883,7 +3883,7 @@ msgstr "Көрсету"
 msgid "&Next"
 msgstr "&Келесі"
 
-#: src/crypto/gui/wizard.cpp:112 src/view/smartcardwidget.cpp:69
+#: src/crypto/gui/wizard.cpp:112 src/view/smartcardwidget.cpp:72
 #, kde-format
 msgid "Back"
 msgstr "Шегіну"
@@ -8006,6 +8006,7 @@ msgid "View Columns"
 msgstr ""
 
 #: src/view/netkeywidget.cpp:68 src/view/pgpcardwidget.cpp:124
+#: src/view/pivcardwidget.cpp:75
 #, fuzzy, kde-format
 #| msgid "Serial number"
 msgid "Serial number:"
@@ -8197,7 +8198,7 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "Ішкі кілтті қолдануы:"
 
-#: src/view/pgpcardwidget.cpp:158
+#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -8424,7 +8425,7 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "Пайдаланушы ID-і сәтті қосылды."
 
-#: src/view/pgpcardwidget.cpp:450
+#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:135
 #, kde-format
 msgid "Slot empty"
 msgstr ""
@@ -8434,6 +8435,36 @@ msgstr ""
 #| msgid "No usable inputs found"
 msgid "Public key not found."
 msgstr "Кірісте жарамды түк те жоқ"
+
+#: src/view/pivcardwidget.cpp:86
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "PIV authentication:"
+msgstr "Аутентификациялау"
+
+#: src/view/pivcardwidget.cpp:90
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "Card authentication:"
+msgstr "Аутентификациялау"
+
+#: src/view/pivcardwidget.cpp:94
+#, fuzzy, kde-format
+#| msgid "New signatures:"
+msgid "Digital signature:"
+msgstr "Жаңа қолтаңбалар:"
+
+#: src/view/pivcardwidget.cpp:98
+#, fuzzy, kde-format
+#| msgid "KDE Key Manager"
+msgid "Key management:"
+msgstr "KDE кілттер менеджері"
+
+#: src/view/pivcardwidget.cpp:111
+#, kde-format
+msgctxt "Placeholder is a version number"
+msgid "PIV v%1 card"
+msgstr ""
 
 #: src/view/searchbar.cpp:108
 #, fuzzy, kde-format
@@ -8455,23 +8486,23 @@ msgstr ""
 msgid "Search...<%1>"
 msgstr "Іздеу"
 
-#: src/view/smartcardwidget.cpp:45
+#: src/view/smartcardwidget.cpp:48
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Please insert a compatible smartcard."
 msgstr "Куәлікті таңдаңыз"
 
-#: src/view/smartcardwidget.cpp:48
+#: src/view/smartcardwidget.cpp:51
 #, kde-format
 msgid "Kleopatra currently supports the following card types:"
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:52
+#: src/view/smartcardwidget.cpp:55
 #, kde-format
 msgid "Refresh the view (F5) to update the smartcard status."
 msgstr ""
 
-#: src/view/smartcardwidget.cpp:72
+#: src/view/smartcardwidget.cpp:75
 #, kde-format
 msgid "Smartcard Management"
 msgstr ""
@@ -10414,11 +10445,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid "New signatures:"
-#~ msgid "Local signature"
-#~ msgstr "Жаңа қолтаңбалар:"
-
-#, fuzzy
-#~| msgid "New signatures:"
 #~ msgid "Exportable signature"
 #~ msgstr "Жаңа қолтаңбалар:"
 
@@ -10455,9 +10481,6 @@ msgstr ""
 #~| msgid "Not imported:"
 #~ msgid "Not yet implemented"
 #~ msgstr "Импортталмаған:"
-
-#~ msgid "KDE Key Manager"
-#~ msgstr "KDE кілттер менеджері"
 
 #~ msgid "Decentralized Key Generation"
 #~ msgstr "Көп-орталықты кілт жасау"
