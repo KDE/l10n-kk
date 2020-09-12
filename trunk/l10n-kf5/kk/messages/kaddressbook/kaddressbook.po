@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-10 02:28+0200\n"
+"POT-Creation-Date: 2020-09-12 02:25+0200\n"
 "PO-Revision-Date: 2013-11-08 01:33+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "izbasar@sci.kz,sairan@computer.org"
 
 #: src/printing/grantlee/themes/big-theme-example/theme.html:3
-#: src/mainwidget.cpp:718 src/mainwidget.cpp:743
+#: src/mainwidget.cpp:719 src/mainwidget.cpp:744
 #, kde-format
 msgid "Address Book"
 msgstr "Адрес кітапшасы"
@@ -97,6 +97,8 @@ msgid "Email"
 msgstr "Эл.поштасы"
 
 #: src/viewertemplates/contact_embedded.html:75
+#: src/importexport/contactfields.cpp:104
+#, kde-format
 msgid "Blog Feed"
 msgstr "Блог ақпары"
 
@@ -247,12 +249,12 @@ msgstr ""
 msgid "(c), 2020 Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:65
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:66
 #, kde-format
 msgid "Tools Plugins"
 msgstr ""
 
-#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:72
+#: src/configuration/kaddressbookconfigpluginlistwidget.cpp:73
 #, kde-format
 msgid "Import/Export Plugins"
 msgstr ""
@@ -325,6 +327,351 @@ msgstr "Тізімде келесі контактқа ауысу үшін ос�
 msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr "%1 / %2"
+
+#: src/importexport/contactfields.cpp:19
+#, kde-format
+msgctxt "@item Undefined import field type"
+msgid "Undefined"
+msgstr "Анықталмаған"
+
+#: src/importexport/contactfields.cpp:38
+#, fuzzy, kde-format
+#| msgid "Anniversary"
+msgctxt "The wedding anniversary of a contact"
+msgid "Anniversary"
+msgstr "Жылдығы"
+
+#: src/importexport/contactfields.cpp:84
+#, kde-format
+msgctxt "Preferred email address"
+msgid "EMail (preferred)"
+msgstr "Эл.поштасы (негізгі)"
+
+#: src/importexport/contactfields.cpp:86
+#, kde-format
+msgctxt "Second email address"
+msgid "EMail (2)"
+msgstr "Эл.поштасы (2)"
+
+#: src/importexport/contactfields.cpp:88
+#, kde-format
+msgctxt "Third email address"
+msgid "EMail (3)"
+msgstr "Эл.поштасы (3)"
+
+#: src/importexport/contactfields.cpp:90
+#, kde-format
+msgctxt "Fourth email address"
+msgid "EMail (4)"
+msgstr "Эл.поштасы (4)"
+
+#: src/importexport/contactfields.cpp:106
+#, kde-format
+msgid "Profession"
+msgstr "Мамандығы"
+
+#: src/importexport/contactfields.cpp:108
+#, kde-format
+msgid "Office"
+msgstr "Кеңсесі"
+
+#: src/importexport/contactfields.cpp:110
+#, kde-format
+msgid "Manager"
+msgstr "Бастығы"
+
+#: src/importexport/contactfields.cpp:112
+#, kde-format
+msgid "Assistant"
+msgstr "Көмекшісі"
+
+#: src/importexport/contactfields.cpp:114
+#, kde-format
+msgid "Spouse"
+msgstr "Жұбайы"
+
+#: src/importexport/contactselectiondialog.cpp:21
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Select Contacts"
+msgstr "Контакттарды таңдау"
+
+#: src/importexport/contactselectionwidget.cpp:115
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts"
+msgstr "Бүкіл контакттар"
+
+#: src/importexport/contactselectionwidget.cpp:117
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from all your address books"
+msgstr "Барлық адрестік кітапшаларыңыздың бүкіл контакттары"
+
+#: src/importexport/contactselectionwidget.cpp:120
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option you want to select all your contacts from all your "
+"address books."
+msgstr ""
+"Барлық адрестік кітапшаларыңыздың бүкіл контакттарын таңдау үшін осы "
+"параметрін қолданыңыз."
+
+#: src/importexport/contactselectionwidget.cpp:123
+#, kde-format
+msgctxt "@option:radio"
+msgid "Selected contacts"
+msgstr "Таңдалған контакттар"
+
+#: src/importexport/contactselectionwidget.cpp:125
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Only the contacts currently selected"
+msgstr "Тек қазір таңдалған қонтакттар"
+
+#: src/importexport/contactselectionwidget.cpp:128
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want only the contacts you have already selected "
+"in the graphical interface."
+msgstr ""
+"Графикалық интерфейсте таңдалған контакттары ғана керек болса - осыны "
+"таңдаңыз."
+
+#: src/importexport/contactselectionwidget.cpp:131
+#, kde-format
+msgctxt "@option:radio"
+msgid "All contacts from:"
+msgstr "Келесідегі бүкіл контакттарын:"
+
+#: src/importexport/contactselectionwidget.cpp:133
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "All contacts from a chosen address book"
+msgstr "Тандалған адрестік кітапшадан бүкіл контакттар"
+
+#: src/importexport/contactselectionwidget.cpp:136
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose this option if you want to select all the contacts from only one of "
+"your address books.  Once this option is clicked you will be provided a drop "
+"down box listing all those address books and permitted to select the one you "
+"want."
+msgstr ""
+"Бір адрестік кітапшадан бүкіл контакттарын таңдауды қаласаңыз - осыны "
+"таңдаңыз. Таңдаған соң барша адрестік кітапшалар тізімінен ұсынылады."
+
+#: src/importexport/contactselectionwidget.cpp:145
+#, kde-format
+msgctxt "@option:check"
+msgid "Include Subfolders"
+msgstr "Ішкі қапшықтарды қоса"
+
+#: src/importexport/contactselectionwidget.cpp:147
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Select all subfolders including the top-level folder"
+msgstr "Жоғары деңгейлі қапшықты ішкі қапшықтармен қоса таңдау"
+
+#: src/importexport/contactselectionwidget.cpp:150
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to select all contacts from this folder, "
+"including all subfolders.  If you only want the contacts from the top-level "
+"folder then leave this box unchecked."
+msgstr ""
+"Жоғары деңгейлі қапшықты ішкі қапшықтармен қоса таңдасаңыз - осыны "
+"белгілеңіз. Тек жоғары деңгейлі қапшықтағы ғана контакттар алынсын десеңіз - "
+"белгілемеңіз."
+
+#: src/importexport/contactselectionwidget.cpp:180
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgctxt "@title:window"
+msgid "Collect Contacts"
+msgstr "Контакттарды таңдау"
+
+#: src/importexport/contactselectionwidget.cpp:183
+#, fuzzy, kde-format
+#| msgid "Select Contacts"
+msgid "Fetch Contacts"
+msgstr "Контакттарды таңдау"
+
+#: src/importexport/exportselectionwidget.cpp:25
+#, kde-format
+msgctxt "@title:group"
+msgid "Fields to be exported"
+msgstr "Экспорттайтын өрістер"
+
+#: src/importexport/exportselectionwidget.cpp:31
+#, kde-format
+msgctxt "@option:check"
+msgid "Private fields"
+msgstr "Сырлы өрістер"
+
+#: src/importexport/exportselectionwidget.cpp:33
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export private fields"
+msgstr "Сырлы өрістері экспортталсын"
+
+#: src/importexport/exportselectionwidget.cpp:36
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's private fields to the "
+"vCard output file."
+msgstr ""
+"Шығыс vCard файлға контакттың сырлы өрістері экспортталсын десеңіз - осыны "
+"белгілеңіз."
+
+#: src/importexport/exportselectionwidget.cpp:40
+#, kde-format
+msgctxt "@option:check"
+msgid "Business fields"
+msgstr "Іскери өрістер"
+
+#: src/importexport/exportselectionwidget.cpp:42
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export business fields"
+msgstr "Іскери өрістері экспортталсын "
+
+#: src/importexport/exportselectionwidget.cpp:45
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's business fields to the "
+"vCard output file."
+msgstr ""
+"Шығыс vCard файлға контакттың іскери өрістері экспортталсын десеңіз - осыны "
+"белгілеңіз."
+
+#: src/importexport/exportselectionwidget.cpp:49
+#, kde-format
+msgctxt "@option:check"
+msgid "Other fields"
+msgstr "Басқа өрістер"
+
+#: src/importexport/exportselectionwidget.cpp:51
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export other fields"
+msgstr "Басқа өрістер экспортталсын"
+
+#: src/importexport/exportselectionwidget.cpp:54
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's other fields to the vCard "
+"output file."
+msgstr ""
+"Шығыс vCard файлға контакттың басқа өрістері экспортталсын десеңіз - осыны "
+"белгілеңіз."
+
+#: src/importexport/exportselectionwidget.cpp:58
+#, kde-format
+msgctxt "@option:check"
+msgid "Encryption keys"
+msgstr "Шифрлау кілттер"
+
+#: src/importexport/exportselectionwidget.cpp:60
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export encryption keys"
+msgstr "Шифрлау кілттері экспортталсын"
+
+#: src/importexport/exportselectionwidget.cpp:63
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's encryption keys to the "
+"vCard output file."
+msgstr ""
+"Шығыс vCard файлға контакттың шифрлау кілттері экспортталсын десеңіз - осыны "
+"белгілеңіз."
+
+#: src/importexport/exportselectionwidget.cpp:67
+#, kde-format
+msgctxt "@option:check"
+msgid "Pictures"
+msgstr "Суреттер"
+
+#: src/importexport/exportselectionwidget.cpp:69
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export pictures"
+msgstr "Суреттер экспортталсын"
+
+#: src/importexport/exportselectionwidget.cpp:72
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's picture to the vCard "
+"output file."
+msgstr ""
+"Шығыс vCard файлға контакттың суреттері экспортталсын десеңіз - осыны "
+"белгілеңіз."
+
+#: src/importexport/exportselectionwidget.cpp:77
+#, kde-format
+msgctxt "@title:group"
+msgid "Export options"
+msgstr "Экспорттау параметрлері"
+
+#: src/importexport/exportselectionwidget.cpp:83
+#, kde-format
+msgctxt "@option:check"
+msgid "Display name as full name"
+msgstr "Көрсетілген атауы - толық аты"
+
+#: src/importexport/exportselectionwidget.cpp:85
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Export display name as full name"
+msgstr "Көрсетілген атауы - толық аты деп экспорттау"
+
+#: src/importexport/exportselectionwidget.cpp:88
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Check this box if you want to export the contact's display name in the "
+"vCard's full name field.  This may be required to get the name shown "
+"correctly in GMail or Android."
+msgstr ""
+"Контакттың көрсетілген атауы vCard-тың толық аттың өрісіне экспортталсын "
+"десеңіз - осыны белгілеңіз. Бұл GMail не Android-те атты дұрыс келтіруге "
+"керек."
+
+#: src/importexport/importexportengine.cpp:60
+#, fuzzy, kde-format
+#| msgid "Select Address Book"
+msgctxt "@title:window"
+msgid "Select Address Book"
+msgstr "Адрес кітапшасын таңдау"
+
+#: src/importexport/importexportengine.cpp:62
+#, kde-format
+msgid "Select the address book the imported contact(s) shall be saved in:"
+msgstr "Импортталған контакттар қай адрес кітапшасына сақталатынын таңдау:"
+
+#: src/importexport/importexportengine.cpp:77
+#, fuzzy, kde-format
+#| msgid "Import Contacts"
+msgctxt "@title:window"
+msgid "Import Contacts"
+msgstr "Контакттарды импорттау"
+
+#: src/importexport/importexportengine.cpp:79
+#, kde-format
+msgid "Importing one contact to %2"
+msgid_plural "Importing %1 contacts to %2"
+msgstr[0] "%1 контактты %2 дегенге импорттау"
 
 #: src/kaddressbook_options.h:19
 #, fuzzy, kde-format
@@ -412,18 +759,18 @@ msgstr "&Экспорт"
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар"
 
-#: src/mainwidget.cpp:351
+#: src/mainwidget.cpp:352
 #, fuzzy, kde-format
 msgid "Import"
 msgstr "&Импорттау"
 
-#: src/mainwidget.cpp:358
+#: src/mainwidget.cpp:359
 #, fuzzy, kde-format
 #| msgid "&Export"
 msgid "Export"
 msgstr "&Экспорт"
 
-#: src/mainwidget.cpp:407
+#: src/mainwidget.cpp:408
 #, fuzzy, kde-format
 #| msgctxt "@label Search contacts in list"
 #| msgid "Search"
@@ -431,82 +778,82 @@ msgctxt "@label Search contacts in list"
 msgid "Search... <%1>"
 msgstr "Іздеу"
 
-#: src/mainwidget.cpp:633
+#: src/mainwidget.cpp:634
 #, kde-format
 msgid "&Themes"
 msgstr "&Нақыштар"
 
-#: src/mainwidget.cpp:644
+#: src/mainwidget.cpp:645
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Print the complete address book or a selected number of contacts."
 msgstr "Адрестік кітапшасын түгел не таңдалған контакттарын басып шығару."
 
-#: src/mainwidget.cpp:649
+#: src/mainwidget.cpp:650
 #, kde-format
 msgid "Quick search"
 msgstr "Шұғыл іздеу"
 
-#: src/mainwidget.cpp:654
+#: src/mainwidget.cpp:655
 #, fuzzy, kde-format
 #| msgid "Category"
 msgid "Category filter"
 msgstr "Санаты"
 
-#: src/mainwidget.cpp:659
+#: src/mainwidget.cpp:660
 #, kde-format
 msgid "Select All"
 msgstr "Бүкілін таңдау"
 
-#: src/mainwidget.cpp:661
+#: src/mainwidget.cpp:662
 #, kde-format
 msgid "Select all contacts in the current address book view."
 msgstr "Назардағы көріністен барлық көрінетін контакттарды таңдап алу."
 
-#: src/mainwidget.cpp:665
+#: src/mainwidget.cpp:666
 #, kde-format
 msgid "Show QR Codes"
 msgstr "QR кодтарын көрсету"
 
-#: src/mainwidget.cpp:666
+#: src/mainwidget.cpp:667
 #, kde-format
 msgid "Show QR Codes in the contact."
 msgstr "Контактта QR кодтарын көрсету."
 
-#: src/mainwidget.cpp:671
+#: src/mainwidget.cpp:672
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Simple (one column)"
 msgstr "Қарапайым (бір бағанды)"
 
-#: src/mainwidget.cpp:675
+#: src/mainwidget.cpp:676
 #, kde-format
 msgid "Show a simple mode of the address book view."
 msgstr "Адрес кітапша көрінісінің қарапайым режімі."
 
-#: src/mainwidget.cpp:678
+#: src/mainwidget.cpp:679
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Two Columns"
 msgstr "Екі бағанды"
 
-#: src/mainwidget.cpp:684
+#: src/mainwidget.cpp:685
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Three Columns"
 msgstr "Үш бағанды"
 
-#: src/mainwidget.cpp:697
+#: src/mainwidget.cpp:698
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwidget.cpp:710
+#: src/mainwidget.cpp:711
 #, kde-format
 msgid "Serverside Subscription..."
 msgstr ""
 
-#: src/mainwidget.cpp:749 src/printing/printingwizard.cpp:43
+#: src/mainwidget.cpp:750 src/printing/printingwizard.cpp:43
 #, fuzzy, kde-format
 #| msgid "Print Contacts"
 msgctxt "@title:window"
@@ -583,40 +930,40 @@ msgstr "Негізгі эл.поштасы"
 msgid "All EMails"
 msgstr "Барлық эл.пошталары"
 
-#: src/printing/compact/compactstyle.cpp:117
+#: src/printing/compact/compactstyle.cpp:118
 #, kde-format
 msgid "Compact Style"
 msgstr "Ықшам стилі"
 
-#: src/printing/compact/compactstyle.cpp:173
+#: src/printing/compact/compactstyle.cpp:174
 #: src/printing/detailled/detailledstyle.cpp:282
 #: src/printing/grantlee/grantleeprintstyle.cpp:44
-#: src/printing/mike/mikesstyle.cpp:112
+#: src/printing/mike/mikesstyle.cpp:113
 #: src/printing/ringbinder/ringbinderstyle.cpp:164
 #, kde-format
 msgid "Setting up document"
 msgstr "Құжатты баптау"
 
-#: src/printing/compact/compactstyle.cpp:180
+#: src/printing/compact/compactstyle.cpp:181
 #: src/printing/detailled/detailledstyle.cpp:289
 #: src/printing/grantlee/grantleeprintstyle.cpp:53
-#: src/printing/mike/mikesstyle.cpp:119
+#: src/printing/mike/mikesstyle.cpp:120
 #: src/printing/ringbinder/ringbinderstyle.cpp:197
 #, kde-format
 msgid "Printing"
 msgstr "Басып шығару"
 
-#: src/printing/compact/compactstyle.cpp:184
+#: src/printing/compact/compactstyle.cpp:185
 #: src/printing/detailled/detailledstyle.cpp:293
 #: src/printing/grantlee/grantleeprintstyle.cpp:57
-#: src/printing/mike/mikesstyle.cpp:123
+#: src/printing/mike/mikesstyle.cpp:124
 #: src/printing/ringbinder/ringbinderstyle.cpp:201
 #, kde-format
 msgctxt "Finished printing"
 msgid "Done"
 msgstr "Дайын"
 
-#: src/printing/compact/compactstyle.cpp:207
+#: src/printing/compact/compactstyle.cpp:208
 #, kde-format
 msgid "Compact Printing Style"
 msgstr "Ықшам басып шығару стилі"
@@ -867,7 +1214,7 @@ msgid ""
 "color for the headline text."
 msgstr "Бұл батырма атаудың мәтін түсін таңдауға мүмкіндік береді."
 
-#: src/printing/mike/mikesstyle.cpp:138
+#: src/printing/mike/mikesstyle.cpp:139
 #, kde-format
 msgid "Mike's Printing Style"
 msgstr "Майк басып шығару стилі"
@@ -1026,31 +1373,31 @@ msgstr "Өрістерді орнату"
 msgid "Printout for Ring Binders"
 msgstr "Шығыршықты түптегішке басып шығару"
 
-#: src/printing/stylepage.cpp:35
+#: src/printing/stylepage.cpp:37
 #, kde-format
 msgctxt "@item:inlistbox Ascending sort order"
 msgid "Ascending"
 msgstr "Арту ретімен"
 
-#: src/printing/stylepage.cpp:36
+#: src/printing/stylepage.cpp:38
 #, kde-format
 msgctxt "@item:inlistbox Descending sort order"
 msgid "Descending"
 msgstr "Кему ретімен"
 
-#: src/printing/stylepage.cpp:48
+#: src/printing/stylepage.cpp:50
 #, kde-format
 msgctxt "@label"
 msgid "(No preview available.)"
 msgstr "(Қарап шығу мүмкін емес.)"
 
-#: src/printing/stylepage.cpp:110
+#: src/printing/stylepage.cpp:112
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose Printing Style"
 msgstr "Басып шығару стилін таңдау"
 
-#: src/printing/stylepage.cpp:117
+#: src/printing/stylepage.cpp:119
 #, kde-format
 msgctxt "@label:textbox"
 msgid ""
@@ -1063,25 +1410,25 @@ msgstr ""
 "бірнеше стилі бар.\n"
 "Төменде лайықты стилді таңдауыңызға болады."
 
-#: src/printing/stylepage.cpp:122
+#: src/printing/stylepage.cpp:124
 #, kde-format
 msgctxt "@title:group"
 msgid "Sorting"
 msgstr "Реттеу"
 
-#: src/printing/stylepage.cpp:127
+#: src/printing/stylepage.cpp:129
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Criterion:"
 msgstr "Не бойынша:"
 
-#: src/printing/stylepage.cpp:132
+#: src/printing/stylepage.cpp:134
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the primary sort field"
 msgstr "Қай өрісі бойынша негізгі реттеуді жасау"
 
-#: src/printing/stylepage.cpp:135
+#: src/printing/stylepage.cpp:137
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1092,19 +1439,19 @@ msgstr ""
 "Бұл тізімінен басып шығарғанда контакттар қай өрісі бойынша реттелетінін "
 "таңдауы. Реттеу тәртібі параметрін өсу не кему қылу керек."
 
-#: src/printing/stylepage.cpp:140
+#: src/printing/stylepage.cpp:142
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Order:"
 msgstr "Реттеу тәртібі:"
 
-#: src/printing/stylepage.cpp:145
+#: src/printing/stylepage.cpp:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the sorting order"
 msgstr "Реттеу тәртібін таңдау"
 
-#: src/printing/stylepage.cpp:148
+#: src/printing/stylepage.cpp:150
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1115,19 +1462,19 @@ msgstr ""
 "Контакттар өсу не кему тәртібі бойынша реттелетінін таңдаңыз. Қай өрісі "
 "бойынша өсу не кему параметрін таңдау керек."
 
-#: src/printing/stylepage.cpp:155
+#: src/printing/stylepage.cpp:157
 #, kde-format
 msgctxt "@title:group"
 msgid "Print Style"
 msgstr "Басып шығару стилі"
 
-#: src/printing/stylepage.cpp:161
+#: src/printing/stylepage.cpp:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Select the print style"
 msgstr "Басып шығару стилін таңдау"
 
-#: src/printing/stylepage.cpp:164
+#: src/printing/stylepage.cpp:166
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -1150,77 +1497,6 @@ msgid ""
 msgstr ""
 "Осы өрісте іздейтін контакттың атауын тере бастаңыз - сәйкес келетіндер "
 "тізімі көрсетіледі. Бұл іздеудің ең оңайы."
-
-#~ msgid "Select Contacts"
-#~ msgstr "Контакттарды таңдау"
-
-#~ msgctxt "@option:radio"
-#~ msgid "All contacts"
-#~ msgstr "Бүкіл контакттар"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "All contacts from all your address books"
-#~ msgstr "Барлық адрестік кітапшаларыңыздың бүкіл контакттары"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Choose this option you want to select all your contacts from all your "
-#~ "address books."
-#~ msgstr ""
-#~ "Барлық адрестік кітапшаларыңыздың бүкіл контакттарын таңдау үшін осы "
-#~ "параметрін қолданыңыз."
-
-#~ msgctxt "@option:radio"
-#~ msgid "Selected contacts"
-#~ msgstr "Таңдалған контакттар"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Only the contacts currently selected"
-#~ msgstr "Тек қазір таңдалған қонтакттар"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Choose this option if you want only the contacts you have already "
-#~ "selected in the graphical interface."
-#~ msgstr ""
-#~ "Графикалық интерфейсте таңдалған контакттары ғана керек болса - осыны "
-#~ "таңдаңыз."
-
-#~ msgctxt "@option:radio"
-#~ msgid "All contacts from:"
-#~ msgstr "Келесідегі бүкіл контакттарын:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "All contacts from a chosen address book"
-#~ msgstr "Тандалған адрестік кітапшадан бүкіл контакттар"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Choose this option if you want to select all the contacts from only one "
-#~ "of your address books.  Once this option is clicked you will be provided "
-#~ "a drop down box listing all those address books and permitted to select "
-#~ "the one you want."
-#~ msgstr ""
-#~ "Бір адрестік кітапшадан бүкіл контакттарын таңдауды қаласаңыз - осыны "
-#~ "таңдаңыз. Таңдаған соң барша адрестік кітапшалар тізімінен ұсынылады."
-
-#~ msgctxt "@option:check"
-#~ msgid "Include Subfolders"
-#~ msgstr "Ішкі қапшықтарды қоса"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Select all subfolders including the top-level folder"
-#~ msgstr "Жоғары деңгейлі қапшықты ішкі қапшықтармен қоса таңдау"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to select all contacts from this folder, "
-#~ "including all subfolders.  If you only want the contacts from the top-"
-#~ "level folder then leave this box unchecked."
-#~ msgstr ""
-#~ "Жоғары деңгейлі қапшықты ішкі қапшықтармен қоса таңдасаңыз - осыны "
-#~ "белгілеңіз. Тек жоғары деңгейлі қапшықтағы ғана контакттар алынсын "
-#~ "десеңіз - белгілемеңіз."
 
 #~ msgid "&Import"
 #~ msgstr "&Импорт"
@@ -1618,112 +1894,6 @@ msgstr ""
 #~ msgid "The vCard does not contain any contacts."
 #~ msgstr "vCard мазмұнында ешқандай контакт жоқ."
 
-#~ msgctxt "@title:group"
-#~ msgid "Fields to be exported"
-#~ msgstr "Экспорттайтын өрістер"
-
-#~ msgctxt "@option:check"
-#~ msgid "Private fields"
-#~ msgstr "Сырлы өрістер"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export private fields"
-#~ msgstr "Сырлы өрістері экспортталсын"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's private fields to the "
-#~ "vCard output file."
-#~ msgstr ""
-#~ "Шығыс vCard файлға контакттың сырлы өрістері экспортталсын десеңіз - "
-#~ "осыны белгілеңіз."
-
-#~ msgctxt "@option:check"
-#~ msgid "Business fields"
-#~ msgstr "Іскери өрістер"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export business fields"
-#~ msgstr "Іскери өрістері экспортталсын "
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's business fields to the "
-#~ "vCard output file."
-#~ msgstr ""
-#~ "Шығыс vCard файлға контакттың іскери өрістері экспортталсын десеңіз - "
-#~ "осыны белгілеңіз."
-
-#~ msgctxt "@option:check"
-#~ msgid "Other fields"
-#~ msgstr "Басқа өрістер"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export other fields"
-#~ msgstr "Басқа өрістер экспортталсын"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's other fields to the "
-#~ "vCard output file."
-#~ msgstr ""
-#~ "Шығыс vCard файлға контакттың басқа өрістері экспортталсын десеңіз - "
-#~ "осыны белгілеңіз."
-
-#~ msgctxt "@option:check"
-#~ msgid "Encryption keys"
-#~ msgstr "Шифрлау кілттер"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export encryption keys"
-#~ msgstr "Шифрлау кілттері экспортталсын"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's encryption keys to the "
-#~ "vCard output file."
-#~ msgstr ""
-#~ "Шығыс vCard файлға контакттың шифрлау кілттері экспортталсын десеңіз - "
-#~ "осыны белгілеңіз."
-
-#~ msgctxt "@option:check"
-#~ msgid "Pictures"
-#~ msgstr "Суреттер"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export pictures"
-#~ msgstr "Суреттер экспортталсын"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's picture to the vCard "
-#~ "output file."
-#~ msgstr ""
-#~ "Шығыс vCard файлға контакттың суреттері экспортталсын десеңіз - осыны "
-#~ "белгілеңіз."
-
-#~ msgctxt "@title:group"
-#~ msgid "Export options"
-#~ msgstr "Экспорттау параметрлері"
-
-#~ msgctxt "@option:check"
-#~ msgid "Display name as full name"
-#~ msgstr "Көрсетілген атауы - толық аты"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Export display name as full name"
-#~ msgstr "Көрсетілген атауы - толық аты деп экспорттау"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Check this box if you want to export the contact's display name in the "
-#~ "vCard's full name field.  This may be required to get the name shown "
-#~ "correctly in GMail or Android."
-#~ msgstr ""
-#~ "Контакттың көрсетілген атауы vCard-тың толық аттың өрісіне экспортталсын "
-#~ "десеңіз - осыны белгілеңіз. Бұл GMail не Android-те атты дұрыс келтіруге "
-#~ "керек."
-
 #~ msgctxt "@title:window"
 #~ msgid "Import vCard"
 #~ msgstr "vCard-ты импорттау"
@@ -1736,65 +1906,11 @@ msgstr ""
 #~ msgid "Import All..."
 #~ msgstr "Бүкілін импорттау..."
 
-#~ msgid "Select Address Book"
-#~ msgstr "Адрес кітапшасын таңдау"
-
-#~ msgid "Select the address book the imported contact(s) shall be saved in:"
-#~ msgstr "Импортталған контакттар қай адрес кітапшасына сақталатынын таңдау:"
-
-#~ msgid "Import Contacts"
-#~ msgstr "Контакттарды импорттау"
-
-#~ msgid "Importing one contact to %2"
-#~ msgid_plural "Importing %1 contacts to %2"
-#~ msgstr[0] "%1 контактты %2 дегенге импорттау"
-
 #~ msgid "Which contact do you want to export?"
 #~ msgstr "Қай контактты экспорттауды қалайсыз?"
 
 #~ msgid "You have not selected any contacts to export."
 #~ msgstr "Экспорттауға ешбір контакт таңдалмаған."
-
-#~ msgctxt "@item Undefined import field type"
-#~ msgid "Undefined"
-#~ msgstr "Анықталмаған"
-
-#, fuzzy
-#~| msgid "Anniversary"
-#~ msgctxt "The wedding anniversary of a contact"
-#~ msgid "Anniversary"
-#~ msgstr "Жылдығы"
-
-#~ msgctxt "Preferred email address"
-#~ msgid "EMail (preferred)"
-#~ msgstr "Эл.поштасы (негізгі)"
-
-#~ msgctxt "Second email address"
-#~ msgid "EMail (2)"
-#~ msgstr "Эл.поштасы (2)"
-
-#~ msgctxt "Third email address"
-#~ msgid "EMail (3)"
-#~ msgstr "Эл.поштасы (3)"
-
-#~ msgctxt "Fourth email address"
-#~ msgid "EMail (4)"
-#~ msgstr "Эл.поштасы (4)"
-
-#~ msgid "Profession"
-#~ msgstr "Мамандығы"
-
-#~ msgid "Office"
-#~ msgstr "Кеңсесі"
-
-#~ msgid "Manager"
-#~ msgstr "Бастығы"
-
-#~ msgid "Assistant"
-#~ msgstr "Көмекшісі"
-
-#~ msgid "Spouse"
-#~ msgstr "Жұбайы"
 
 #, fuzzy
 #~| msgid "Select Contacts"
