@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-10 02:28+0100\n"
+"POT-Creation-Date: 2020-11-11 02:50+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2027,18 +2027,6 @@ msgstr "X.509 куәліктері сәтті жаңартылды."
 
 #: src/commands/revokecertificationcommand.cpp:126
 #, fuzzy, kde-format
-#| msgid "Certification successful."
-msgid "Revocation successful."
-msgstr "Куәландыру сәтті өтті."
-
-#: src/commands/revokecertificationcommand.cpp:127
-#, fuzzy, kde-format
-#| msgid "Certificate Download Failed"
-msgid "Revocation Succeeded"
-msgstr "Куәлікті жүктеп алу жаңылысы"
-
-#: src/commands/revokecertificationcommand.cpp:129
-#, fuzzy, kde-format
 #| msgid ""
 #| "<p>An error occurred while trying to change the expiry date for <b>%1</b>:"
 #| "</p><p>%2</p>"
@@ -2049,11 +2037,23 @@ msgstr ""
 "<p><b>%1</b> дегеннің жарамдылық мерзімін өзгерту кезінде бір қате орын алды:"
 "</p><p>%2</p>"
 
-#: src/commands/revokecertificationcommand.cpp:133
+#: src/commands/revokecertificationcommand.cpp:130
 #, fuzzy, kde-format
 #| msgid "Certificate Manager Error"
 msgid "Revocation Error"
 msgstr "Куәліктер менеджерінің қатесі"
+
+#: src/commands/revokecertificationcommand.cpp:132
+#, fuzzy, kde-format
+#| msgid "Certification successful."
+msgid "Revocation successful."
+msgstr "Куәландыру сәтті өтті."
+
+#: src/commands/revokecertificationcommand.cpp:133
+#, fuzzy, kde-format
+#| msgid "Certificate Download Failed"
+msgid "Revocation Succeeded"
+msgstr "Куәлікті жүктеп алу жаңылысы"
 
 #: src/commands/setinitialpincommand.cpp:54
 #, fuzzy, kde-format
@@ -4551,14 +4551,15 @@ msgid "Revoke this User ID"
 msgstr ""
 
 #: src/dialogs/certificatedetailswidget.cpp:339
-#: src/dialogs/weboftrustwidget.cpp:94 src/view/keylistcontroller.cpp:416
+#: src/dialogs/weboftrustwidget.cpp:99 src/view/keylistcontroller.cpp:416
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify..."
 msgstr "Растау..."
 
 #: src/dialogs/certificatedetailswidget.cpp:353
-#: src/dialogs/weboftrustwidget.cpp:109 src/view/keylistcontroller.cpp:420
+#: src/dialogs/weboftrustwidget.cpp:114 src/dialogs/weboftrustwidget.cpp:141
+#: src/view/keylistcontroller.cpp:420
 #, fuzzy, kde-format
 #| msgid "Revoke This Certificate..."
 msgid "Revoke Certification..."
@@ -5809,7 +5810,42 @@ msgctxt "@title:window"
 msgid "Certifications"
 msgstr "Куәландыру"
 
-#: src/dialogs/weboftrustwidget.cpp:213
+#: src/dialogs/weboftrustwidget.cpp:133
+#, fuzzy, kde-format
+#| msgid "Show certificate details"
+msgid "Show Certificate Details..."
+msgstr "Куәліктің егжей-тегжейі"
+
+#: src/dialogs/weboftrustwidget.cpp:158
+#, kde-format
+msgid "Revokation of self-certifications is currently not possible."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:160
+#, kde-format
+msgid ""
+"You cannot revoke this certification because it wasn't made with one of your "
+"keys (or the required secret key is missing)."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:162
+#, kde-format
+msgid ""
+"You cannot revoke this revokation certification. (But you can re-certify the "
+"corresponding user ID.)"
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:164
+#, kde-format
+msgid "You cannot revoke this expired certification."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:166
+#, kde-format
+msgid "You cannot revoke this invalid certification."
+msgstr ""
+
+#: src/dialogs/weboftrustwidget.cpp:265
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5819,7 +5855,7 @@ msgstr ""
 "<para>Куәліктерді жүктеп алу кезінде қате пайда болды: <message>%1</"
 "message></para>"
 
-#: src/dialogs/weboftrustwidget.cpp:216
+#: src/dialogs/weboftrustwidget.cpp:268
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
