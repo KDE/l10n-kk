@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular_dvi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-24 02:18+0200\n"
+"POT-Creation-Date: 2020-11-15 02:17+0100\n"
 "PO-Revision-Date: 2013-06-28 02:44+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -220,7 +220,7 @@ msgstr ""
 "<strong>pdf2ps</strong> бағдарламасының шығыс хабарламасы:</p> <p><strong>"
 "%2</strong></p></qt>"
 
-#: dviRenderer.cpp:211 dviRenderer.cpp:449
+#: dviRenderer.cpp:200 dviRenderer.cpp:422
 #, fuzzy, kde-format
 #| msgid ""
 #| "File not found: \n"
@@ -230,23 +230,23 @@ msgstr ""
 "Файл табылмады:\n"
 " %1"
 
-#: dviRenderer.cpp:347
+#: dviRenderer.cpp:320
 #, kde-format
 msgid "Not all PostScript files could be embedded into your document. %1"
 msgstr ""
 
-#: dviRenderer.cpp:350
+#: dviRenderer.cpp:323
 #, kde-format
 msgid "All external PostScript files were embedded into your document."
 msgstr ""
 
-#: dviRenderer.cpp:434
+#: dviRenderer.cpp:407
 #, fuzzy, kde-format
 #| msgid "The special command '%1' is not implemented."
 msgid "The specified file '%1' does not exist."
 msgstr "Арнаулы '%1' командасы іске асырылмаған."
 
-#: dviRenderer.cpp:592
+#: dviRenderer.cpp:545
 #, kde-format
 msgid ""
 "You have asked Okular to locate the place in the DVI file which corresponds "
@@ -254,7 +254,7 @@ msgid ""
 "contain the necessary source file information. "
 msgstr ""
 
-#: dviRenderer.cpp:629
+#: dviRenderer.cpp:582
 #, kde-format
 msgid ""
 "Okular was not able to locate the place in the DVI file which corresponds to "
@@ -384,12 +384,12 @@ msgstr ""
 msgid "Currently generating %1 at %2 dpi..."
 msgstr "%2 н/д айырымдылықты %1 құру"
 
-#: generator_dvi.cpp:299
+#: generator_dvi.cpp:292
 #, kde-format
 msgid "Generator/Date"
 msgstr "Құрушысы/Құрылған кезі"
 
-#: generator_dvi.cpp:382
+#: generator_dvi.cpp:375
 #, kde-format
 msgid "Font file not found"
 msgstr "Қаріптің файлы табылмады"
@@ -418,40 +418,6 @@ msgstr ""
 "<qt>Бұл компьютерде орнатылған Ghostview нұсқасындағы Ghostview құрылғы "
 "драйверлерінің бір де бірін Okular танымайды. Сондықтан Okular-дың "
 "PostScript-ті қолдау мүмкіндігі өшіріледі.</qt>"
-
-#: psgs.cpp:270
-#, kde-format
-msgid ""
-"<qt><p>The Ghostview program, which Okular uses internally to display the "
-"PostScript graphics that is included in this DVI file, is generally able to "
-"write its output in a variety of formats. The sub-programs that Ghostview "
-"uses for these tasks are called 'device drivers'; there is one device driver "
-"for each format that Ghostview is able to write. Different versions of "
-"Ghostview often have different sets of device drivers available. It seems "
-"that the version of Ghostview that is installed on this computer does not "
-"contain <strong>any</strong> of the device drivers that are known to Okular."
-"</p><p>It seems unlikely that a regular installation of Ghostview would not "
-"contain these drivers. This error may therefore point to a serious "
-"misconfiguration of the Ghostview installation on your computer.</p><p>If "
-"you want to fix the problems with Ghostview, you can use the command "
-"<strong>gs --help</strong> to display the list of device drivers contained "
-"in Ghostview. Among others, Okular can use the 'png256', 'jpeg' and 'pnm' "
-"drivers. Note that Okular needs to be restarted to re-enable PostScript "
-"support.</p></qt>"
-msgstr ""
-"<qt><p>Okular осы DVI файл құрамындағы PostScript пішімдегі графиканы "
-"бейнелеу үшін қолданатын Ghostview бағдарламасы жалпы бір қатар пішімдерде "
-"шығара алады. Бұл үшін Ghostview қолданатын ішкі бғдарламаларын 'құрылғы "
-"драйверлері' деп атайды; Ghostview шығара алатын әрбір пішіміне бір драйвер "
-"сәйкес келеді. Түрлі Ghostview нұсқлары түрлі құрылғы драйверлер жиынтығына "
-"ие. Осы компьютерде орнатылған Ghostview нұсқасындағы құрылғы драйверлер "
-"тізімі Okular танитын тізімінен <strong>кем</strong> болып шықты.</p> "
-"<p>Бірақ кәдімгі Ghostview орнатуының құрамына бұл драверлері кірмегені "
-"мүмкін емес сияқты. Бұл, бәлкім, Ghostview елеулі қатемен орнатылғанын "
-"көрсетеді.</p><p>Қатені анықтау үшін <strong>gs --help</strong> командасымен "
-"Ghostview қолдайтын құрылғы драйверлерін түгелдеңіз. Басқаларымен қатар "
-"Okular 'png256', 'jpeg' және 'pnm' драйверлерін қажет етеді. PostScript "
-"қолдауын жаңарту үшін Okular-ды қайта жегуі керек екенін ескеріңіз.</p></qt>"
 
 #: special.cpp:36
 #, kde-format
@@ -626,6 +592,39 @@ msgstr ""
 #, kde-format
 msgid "Wrong command byte found in VF macro list: %1"
 msgstr "Виртуалды қаріптің макро кестесінде қате команда байты: %1"
+
+#~ msgid ""
+#~ "<qt><p>The Ghostview program, which Okular uses internally to display the "
+#~ "PostScript graphics that is included in this DVI file, is generally able "
+#~ "to write its output in a variety of formats. The sub-programs that "
+#~ "Ghostview uses for these tasks are called 'device drivers'; there is one "
+#~ "device driver for each format that Ghostview is able to write. Different "
+#~ "versions of Ghostview often have different sets of device drivers "
+#~ "available. It seems that the version of Ghostview that is installed on "
+#~ "this computer does not contain <strong>any</strong> of the device drivers "
+#~ "that are known to Okular.</p><p>It seems unlikely that a regular "
+#~ "installation of Ghostview would not contain these drivers. This error may "
+#~ "therefore point to a serious misconfiguration of the Ghostview "
+#~ "installation on your computer.</p><p>If you want to fix the problems with "
+#~ "Ghostview, you can use the command <strong>gs --help</strong> to display "
+#~ "the list of device drivers contained in Ghostview. Among others, Okular "
+#~ "can use the 'png256', 'jpeg' and 'pnm' drivers. Note that Okular needs to "
+#~ "be restarted to re-enable PostScript support.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>Okular осы DVI файл құрамындағы PostScript пішімдегі графиканы "
+#~ "бейнелеу үшін қолданатын Ghostview бағдарламасы жалпы бір қатар "
+#~ "пішімдерде шығара алады. Бұл үшін Ghostview қолданатын ішкі "
+#~ "бғдарламаларын 'құрылғы драйверлері' деп атайды; Ghostview шығара алатын "
+#~ "әрбір пішіміне бір драйвер сәйкес келеді. Түрлі Ghostview нұсқлары түрлі "
+#~ "құрылғы драйверлер жиынтығына ие. Осы компьютерде орнатылған Ghostview "
+#~ "нұсқасындағы құрылғы драйверлер тізімі Okular танитын тізімінен "
+#~ "<strong>кем</strong> болып шықты.</p> <p>Бірақ кәдімгі Ghostview "
+#~ "орнатуының құрамына бұл драверлері кірмегені мүмкін емес сияқты. Бұл, "
+#~ "бәлкім, Ghostview елеулі қатемен орнатылғанын көрсетеді.</p><p>Қатені "
+#~ "анықтау үшін <strong>gs --help</strong> командасымен Ghostview қолдайтын "
+#~ "құрылғы драйверлерін түгелдеңіз. Басқаларымен қатар Okular 'png256', "
+#~ "'jpeg' және 'pnm' драйверлерін қажет етеді. PostScript қолдауын жаңарту "
+#~ "үшін Okular-ды қайта жегуі керек екенін ескеріңіз.</p></qt>"
 
 #~ msgid "DVI Backend"
 #~ msgstr "DVI тетігі"
