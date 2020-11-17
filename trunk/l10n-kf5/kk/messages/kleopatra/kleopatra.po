@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-12 02:32+0100\n"
+"POT-Creation-Date: 2020-11-17 02:30+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -184,16 +184,18 @@ msgstr ""
 #: src/commands/authenticatepivcardapplicationcommand.cpp:144
 #: src/commands/certificatetopivcardcommand.cpp:165
 #: src/commands/certificatetopivcardcommand.cpp:234
-#: src/commands/changepincommand.cpp:166 src/commands/keytocardcommand.cpp:457
-#: src/commands/keytocardcommand.cpp:493 src/commands/keytocardcommand.cpp:507
+#: src/commands/changepincommand.cpp:166
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:179
+#: src/commands/keytocardcommand.cpp:457 src/commands/keytocardcommand.cpp:493
+#: src/commands/keytocardcommand.cpp:507
 #: src/commands/pivgeneratecardkeycommand.cpp:216
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:179
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:209
 #: src/view/netkeywidget.cpp:207 src/view/nullpinwidget.cpp:108
-#: src/view/pgpcardwidget.cpp:298 src/view/pgpcardwidget.cpp:313
-#: src/view/pgpcardwidget.cpp:376 src/view/pgpcardwidget.cpp:382
-#: src/view/pgpcardwidget.cpp:388 src/view/pgpcardwidget.cpp:411
-#: src/view/pgpcardwidget.cpp:438 src/view/pgpcardwidget.cpp:458
+#: src/view/pgpcardwidget.cpp:307 src/view/pgpcardwidget.cpp:322
+#: src/view/pgpcardwidget.cpp:386 src/view/pgpcardwidget.cpp:392
+#: src/view/pgpcardwidget.cpp:398 src/view/pgpcardwidget.cpp:421
+#: src/view/pgpcardwidget.cpp:448 src/view/pgpcardwidget.cpp:468
 #, fuzzy, kde-format
 #| msgid "Error"
 msgctxt "@title"
@@ -265,12 +267,13 @@ msgid "Writing the certificate to the card succeeded."
 msgstr "%1 дегеннен куәліктер импортталды"
 
 #: src/commands/certificatetopivcardcommand.cpp:238
-#: src/commands/changepincommand.cpp:168 src/commands/keytocardcommand.cpp:472
-#: src/commands/keytocardcommand.cpp:496
+#: src/commands/changepincommand.cpp:168
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:182
+#: src/commands/keytocardcommand.cpp:472 src/commands/keytocardcommand.cpp:496
 #: src/commands/pivgeneratecardkeycommand.cpp:218
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:211
-#: src/view/pgpcardwidget.cpp:321 src/view/pgpcardwidget.cpp:417
-#: src/view/pgpcardwidget.cpp:464
+#: src/view/pgpcardwidget.cpp:330 src/view/pgpcardwidget.cpp:427
+#: src/view/pgpcardwidget.cpp:474
 #, kde-format
 msgctxt "@title"
 msgid "Success"
@@ -587,6 +590,49 @@ msgstr ""
 #, kde-format
 msgid "CRL cache cleared successfully."
 msgstr "CRL кэші сәтті тазаланды."
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:95
+#: src/commands/keytocardcommand.cpp:214 src/view/pgpcardwidget.cpp:408
+#: src/view/pgpcardwidget.cpp:455
+#, kde-format
+msgid "Failed to find the OpenPGP card with the serial number: %1"
+msgstr ""
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:103
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<p>There is already an OpenPGP key corresponding to the signing key on this "
+"card:</p><p>%1<p><p>Do you still want to create an OpenPGP key for the card "
+"keys?</p>"
+msgstr ""
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:107
+#, fuzzy, kde-format
+#| msgid "Create a personal OpenPGP key pair"
+msgctxt "@title:window"
+msgid "Create OpenPGP Key"
+msgstr "Дсрбес OpenPGP қос кілтіңізді жасау"
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:117
+#, fuzzy, kde-format
+#| msgid "Signed user IDs:"
+msgid "Enter User ID"
+msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:178
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Imported Certificates from %1"
+msgctxt "@info"
+msgid "Creating an OpenPGP key from the card keys failed: %1"
+msgstr "%1 дегеннен куәліктер импортталды"
+
+#: src/commands/createopenpgpkeyfromcardkeyscommand.cpp:181
+#, kde-format
+msgctxt "@info"
+msgid "Successfully generated an OpenPGP key from the card keys."
+msgstr ""
 
 #: src/commands/decryptverifyclipboardcommand.cpp:141
 #, kde-format
@@ -1629,12 +1675,6 @@ msgstr "Барлығын таңдау"
 msgid "Please select the card slot the key should be written to:"
 msgstr "Келесі куәліктерінің біреуін таңдаңыз:"
 
-#: src/commands/keytocardcommand.cpp:214 src/view/pgpcardwidget.cpp:398
-#: src/view/pgpcardwidget.cpp:445
-#, kde-format
-msgid "Failed to find the OpenPGP card with the serial number: %1"
-msgstr ""
-
 #: src/commands/keytocardcommand.cpp:224
 #, kde-format
 msgid "Sorry! This key cannot be transferred to an OpenPGP card."
@@ -1642,7 +1682,7 @@ msgstr ""
 
 #: src/commands/keytocardcommand.cpp:242 src/commands/keytocardcommand.cpp:370
 #: src/commands/pivgeneratecardkeycommand.cpp:132
-#: src/view/pgpcardwidget.cpp:330
+#: src/view/pgpcardwidget.cpp:340
 #, kde-format
 msgid ""
 "It will no longer be possible to decrypt past communication encrypted for "
@@ -2877,7 +2917,7 @@ msgstr ""
 "араласы болмайды."
 
 #: src/crypto/createchecksumscontroller.cpp:326
-#: src/dialogs/updatenotification.cpp:71 src/mainwindow.cpp:645
+#: src/dialogs/updatenotification.cpp:71 src/mainwindow.cpp:649
 #, kde-format
 msgid "Cancel"
 msgstr "Бас тарту"
@@ -4726,8 +4766,8 @@ msgid "Expires:"
 msgstr "ескірген"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, changeExpirationBtn)
-#: src/dialogs/certificatedetailswidget.ui:134 src/view/pgpcardwidget.cpp:142
-#: src/view/pgpcardwidget.cpp:155
+#: src/dialogs/certificatedetailswidget.ui:134 src/view/pgpcardwidget.cpp:144
+#: src/view/pgpcardwidget.cpp:157
 #, fuzzy, kde-format
 #| msgid "Change Passphrase..."
 msgid "Change"
@@ -5034,7 +5074,7 @@ msgstr[0] ""
 "шифрланған деректердің шифрын шешуге қажетті сырлы кілттер болғандықтан олар "
 "өшірілмейді."
 
-#: src/dialogs/deletecertificatesdialog.cpp:218 src/view/pgpcardwidget.cpp:332
+#: src/dialogs/deletecertificatesdialog.cpp:218 src/view/pgpcardwidget.cpp:342
 #, kde-format
 msgid "Secret Key Deletion"
 msgstr "Құпия кілтін өшіру"
@@ -6441,17 +6481,17 @@ msgstr ""
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwindow.cpp:482
+#: src/mainwindow.cpp:486
 #, kde-format
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "Криптография тетігін баптауға болмайды (gpgconf табылмады)"
 
-#: src/mainwindow.cpp:482
+#: src/mainwindow.cpp:486
 #, kde-format
 msgid "Configuration Error"
 msgstr "Баптау қатесі"
 
-#: src/mainwindow.cpp:517
+#: src/mainwindow.cpp:521
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
@@ -6460,28 +6500,28 @@ msgstr ""
 "Кейбір амалдар әлі орындалып жатыр. Терезені жапсаңыз, олар үзіледі. Үзіле "
 "берсін бе?"
 
-#: src/mainwindow.cpp:520
+#: src/mainwindow.cpp:524
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr "Әлі бітпеген тапсырмалар бар"
 
-#: src/mainwindow.cpp:629 src/view/keylistcontroller.cpp:382
+#: src/mainwindow.cpp:633 src/view/keylistcontroller.cpp:382
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "Қолтаңбалау/Шифрлау"
 
-#: src/mainwindow.cpp:630 src/utils/clipboardmenu.cpp:38
+#: src/mainwindow.cpp:634 src/utils/clipboardmenu.cpp:38
 #: src/view/keylistcontroller.cpp:378
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "Шифрын шешу/Тексеру"
 
-#: src/mainwindow.cpp:635
+#: src/mainwindow.cpp:639
 #, kde-format
 msgid "Import Certificates"
 msgstr "Куәліктерді импорттау"
 
-#: src/mainwindow.cpp:636
+#: src/mainwindow.cpp:640
 #, kde-format
 msgid "Import CRLs"
 msgstr "CRL-лерді импорттау..."
@@ -8536,7 +8576,7 @@ msgstr "CRL тізімін файлдан импорттау..."
 msgid "View Columns"
 msgstr ""
 
-#: src/view/netkeywidget.cpp:69 src/view/pgpcardwidget.cpp:129
+#: src/view/netkeywidget.cpp:69 src/view/pgpcardwidget.cpp:131
 #: src/view/pivcardwidget.cpp:107
 #, fuzzy, kde-format
 #| msgid "Serial number"
@@ -8562,7 +8602,7 @@ msgctxt "@action"
 msgid "Load Certificates"
 msgstr "&Куәліктер"
 
-#: src/view/netkeywidget.cpp:131 src/view/pgpcardwidget.cpp:180
+#: src/view/netkeywidget.cpp:131 src/view/pgpcardwidget.cpp:182
 #, fuzzy, kde-format
 #| msgid "Actions"
 msgid "Actions:"
@@ -8714,13 +8754,13 @@ msgctxt ""
 msgid "%1 Notepad"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:136
+#: src/view/pgpcardwidget.cpp:138
 #, kde-format
 msgctxt "The owner of a smartcard. GnuPG refers to this as cardholder."
 msgid "Cardholder:"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:149
+#: src/view/pgpcardwidget.cpp:151
 #, fuzzy, kde-format
 #| msgid "Subkey Usage:"
 msgctxt ""
@@ -8729,179 +8769,189 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "Ішкі кілтті қолдануы:"
 
-#: src/view/pgpcardwidget.cpp:163 src/view/pivcardwidget.cpp:118
+#: src/view/pgpcardwidget.cpp:165 src/view/pivcardwidget.cpp:118
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
 msgid "Keys:"
 msgstr "Ішкі кілттер"
 
-#: src/view/pgpcardwidget.cpp:165
+#: src/view/pgpcardwidget.cpp:167
 #, fuzzy, kde-format
 #| msgid "Signature file"
 msgid "Signature:"
 msgstr "Қолтаңба файлы"
 
-#: src/view/pgpcardwidget.cpp:169
+#: src/view/pgpcardwidget.cpp:171
 #, fuzzy, kde-format
 #| msgid "Encryption"
 msgid "Encryption:"
 msgstr "Шифрлау"
 
-#: src/view/pgpcardwidget.cpp:173
+#: src/view/pgpcardwidget.cpp:175
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "Authentication:"
 msgstr "Аутентификациялау"
 
-#: src/view/pgpcardwidget.cpp:184
+#: src/view/pgpcardwidget.cpp:186
 #, fuzzy, kde-format
 #| msgid "Generating key"
 msgid "Generate new Keys"
 msgstr "Кітті жасау"
 
-#: src/view/pgpcardwidget.cpp:185
+#: src/view/pgpcardwidget.cpp:187
 #, kde-format
 msgid "Create a new primary key and generate subkeys on the card."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:189
+#: src/view/pgpcardwidget.cpp:191
 #, fuzzy, kde-format
 #| msgid "Change Passphrase..."
 msgid "Change PIN"
 msgstr "Паролін өзгерту..."
 
-#: src/view/pgpcardwidget.cpp:190
+#: src/view/pgpcardwidget.cpp:192
 #, kde-format
 msgid "Change the PIN required to unblock the smartcard."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:194
+#: src/view/pgpcardwidget.cpp:196
 #, kde-format
 msgid "Change Admin PIN"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:195
+#: src/view/pgpcardwidget.cpp:197
 #, kde-format
 msgid "Change the PIN required to unlock the smartcard."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:199
+#: src/view/pgpcardwidget.cpp:201
 #, kde-format
 msgid "Change Reset Code"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:200
+#: src/view/pgpcardwidget.cpp:202
 #, kde-format
 msgid "Change the PIN required to reset the smartcard to an empty state."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:218
+#: src/view/pgpcardwidget.cpp:206
+#, kde-format
+msgid "Create Key for Card Keys"
+msgstr ""
+
+#: src/view/pgpcardwidget.cpp:207
+#, kde-format
+msgid "Create an OpenPGP key for the keys stored on the card."
+msgstr ""
+
+#: src/view/pgpcardwidget.cpp:225
 #, kde-format
 msgctxt "Placeholder is a version number"
 msgid "Unknown OpenPGP v%1 card"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:220
+#: src/view/pgpcardwidget.cpp:227
 #, kde-format
 msgctxt ""
 "First placeholder is manufacturer, second placeholder is a version number"
 msgid "%1 OpenPGP v%2 card"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:226 src/view/pgpcardwidget.cpp:228
+#: src/view/pgpcardwidget.cpp:233 src/view/pgpcardwidget.cpp:235
 #, fuzzy, kde-format
 #| msgid "Cannot send data"
 msgid "not set"
 msgstr "Дерегі жіберілмейді"
 
-#: src/view/pgpcardwidget.cpp:280
+#: src/view/pgpcardwidget.cpp:289
 #, fuzzy, kde-format
 #| msgid "Generating key"
 msgctxt "@title:window"
 msgid "Generating Keys"
 msgstr "Кітті жасау"
 
-#: src/view/pgpcardwidget.cpp:281
+#: src/view/pgpcardwidget.cpp:290
 #, kde-format
 msgid "This may take several minutes..."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:297
+#: src/view/pgpcardwidget.cpp:306
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgctxt "@info"
 msgid "Failed to generate new key: %1"
 msgstr "%1 орындау жаңылысы: %2"
 
-#: src/view/pgpcardwidget.cpp:307
+#: src/view/pgpcardwidget.cpp:316
 #, fuzzy, kde-format
 #| msgid "Can be used for encryption"
 msgid "Save backup of encryption key"
 msgstr "Шифрлауға жарамды"
 
-#: src/view/pgpcardwidget.cpp:309
+#: src/view/pgpcardwidget.cpp:318
 #, kde-format
 msgid "Backup Key"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:312
+#: src/view/pgpcardwidget.cpp:321
 #, kde-format
 msgctxt "@info"
 msgid "Failed to move backup. The backup key is still stored under: %1"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:320
+#: src/view/pgpcardwidget.cpp:329
 #, kde-format
 msgctxt "@info"
 msgid "Successfully generated a new key for this card."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:328
+#: src/view/pgpcardwidget.cpp:338
 #, kde-format
 msgid ""
 "The existing keys on this card will be <b>deleted</b> and replaced by new "
 "keys."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:365
+#: src/view/pgpcardwidget.cpp:375
 #, kde-format
 msgid "Change cardholder"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:366
+#: src/view/pgpcardwidget.cpp:376
 #, fuzzy, kde-format
 #| msgid "Real name:"
 msgid "New name:"
 msgstr "Шын аты:"
 
-#: src/view/pgpcardwidget.cpp:375
+#: src/view/pgpcardwidget.cpp:385
 #, kde-format
 msgctxt "@info"
 msgid "The \"<\" character may not be used."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:381
+#: src/view/pgpcardwidget.cpp:391
 #, fuzzy, kde-format
 #| msgid "Only absolute file paths are allowed"
 msgctxt "@info"
 msgid "Double spaces are not allowed"
 msgstr "Тек абсолютті файл жолы рұсат етілген"
 
-#: src/view/pgpcardwidget.cpp:387
+#: src/view/pgpcardwidget.cpp:397
 #, kde-format
 msgctxt "@info"
 msgid "The size of the name may not exceed 38 characters."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:410
+#: src/view/pgpcardwidget.cpp:420
 #, fuzzy, kde-format
 #| msgid "Certificate Deletion Failed"
 msgctxt "@info"
 msgid "Name change failed: %1"
 msgstr "Куәлікті өшіру жаңылысы"
 
-#: src/view/pgpcardwidget.cpp:416
+#: src/view/pgpcardwidget.cpp:426
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "User-ID successfully added."
@@ -8909,31 +8959,31 @@ msgctxt "@info"
 msgid "Name successfully changed."
 msgstr "Пайдаланушы ID-і сәтті қосылды."
 
-#: src/view/pgpcardwidget.cpp:427
+#: src/view/pgpcardwidget.cpp:437
 #, kde-format
 msgid "Change the URL where the pubkey can be found"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:428
+#: src/view/pgpcardwidget.cpp:438
 #, fuzzy, kde-format
 #| msgid "New subkeys:"
 msgid "New pubkey URL:"
 msgstr "Жаңа ішкі кілттер:"
 
-#: src/view/pgpcardwidget.cpp:437
+#: src/view/pgpcardwidget.cpp:447
 #, kde-format
 msgctxt "@info"
 msgid "The size of the URL may not exceed 254 characters."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:457
+#: src/view/pgpcardwidget.cpp:467
 #, fuzzy, kde-format
 #| msgid "Signing failed: %1"
 msgctxt "@info"
 msgid "URL change failed: %1"
 msgstr "Қолтаңбалау жаңылысы: %1"
 
-#: src/view/pgpcardwidget.cpp:463
+#: src/view/pgpcardwidget.cpp:473
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "User-ID successfully added."
@@ -8941,12 +8991,12 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "Пайдаланушы ID-і сәтті қосылды."
 
-#: src/view/pgpcardwidget.cpp:474
+#: src/view/pgpcardwidget.cpp:495
 #, kde-format
 msgid "Slot empty"
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:484
+#: src/view/pgpcardwidget.cpp:505
 #, fuzzy, kde-format
 #| msgid "No usable inputs found"
 msgid "Public key not found."
@@ -9430,9 +9480,6 @@ msgstr ""
 
 #~ msgid "Certification will be performed using certificate %1."
 #~ msgstr "%1 куәлігімен куәландырылады."
-
-#~ msgid "Signed user IDs:"
-#~ msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
 
 #~ msgid "<b>Summary:</b>"
 #~ msgstr "<b>Қортындысы:</b>"
