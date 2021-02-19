@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-11 02:45+0100\n"
+"POT-Creation-Date: 2021-02-19 03:29+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -982,12 +982,6 @@ msgstr ""
 "CRL кэшінің дампын істеу кезінде қате пайда болды. Сондағы GpgSM-дың "
 "шығысы:\n"
 "%1"
-
-#: src/commands/editgroupcommand.cpp:76 src/dialogs/editgroupdialog.cpp:281
-#, kde-format
-msgctxt "@title:window"
-msgid "Edit Group"
-msgstr ""
 
 #: src/commands/encryptclipboardcommand.cpp:144
 #: src/commands/encryptclipboardcommand.cpp:158
@@ -2649,6 +2643,48 @@ msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr ""
 "Бағдарлама қатесі: gpgconf келесі қате түрге тап болды - %1/%2/%3: %4 %5"
 
+#: src/conf/groupsconfigwidget.cpp:87 src/dialogs/editgroupdialog.cpp:104
+#: src/dialogs/editgroupdialog.cpp:148
+#, fuzzy, kde-format
+#| msgid "Search"
+msgctxt "Placeholder text"
+msgid "Search..."
+msgstr "Іздеу"
+
+#: src/conf/groupsconfigwidget.cpp:107
+#, fuzzy, kde-format
+#| msgid "New..."
+msgid "New"
+msgstr "Жаңа..."
+
+#: src/conf/groupsconfigwidget.cpp:110
+#, kde-format
+msgid "Edit"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:114 src/view/keylistcontroller.cpp:412
+#, kde-format
+msgid "Delete"
+msgstr "Өшіру"
+
+#: src/conf/groupsconfigwidget.cpp:181
+#, kde-format
+msgctxt "default name for new group of keys"
+msgid "New Group"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:185
+#, kde-format
+msgctxt "@title:window a group of keys"
+msgid "New Group"
+msgstr ""
+
+#: src/conf/groupsconfigwidget.cpp:217
+#, kde-format
+msgctxt "@title:window a group of keys"
+msgid "Edit Group"
+msgstr ""
+
 #: src/conf/kleopageconfigdialog.cpp:97
 #, kde-format
 msgid ""
@@ -3718,28 +3754,28 @@ msgid "Please enter a name or email address..."
 msgstr ""
 
 #: src/crypto/gui/certificatelineedit.cpp:122
-#: src/crypto/gui/certificatelineedit.cpp:202
-#: src/crypto/gui/certificatelineedit.cpp:206
+#: src/crypto/gui/certificatelineedit.cpp:209
+#: src/crypto/gui/certificatelineedit.cpp:213
 #, fuzzy, kde-format
 #| msgid "Details..."
 msgid "Click for details."
 msgstr "Егжей-тегжейлер..."
 
-#: src/crypto/gui/certificatelineedit.cpp:182
-#: src/crypto/gui/certificatelineedit.cpp:191
+#: src/crypto/gui/certificatelineedit.cpp:189
+#: src/crypto/gui/certificatelineedit.cpp:198
 #, fuzzy, kde-format
 #| msgid "Current selection"
 msgid "Open selection dialog."
 msgstr "Қазіргі таңдауы"
 
-#: src/crypto/gui/certificatelineedit.cpp:188
+#: src/crypto/gui/certificatelineedit.cpp:195
 #, fuzzy, kde-format
 #| msgid "Default certificate"
 msgid "Multiple certificates"
 msgstr "Әдетті куәлік"
 
-#: src/crypto/gui/certificatelineedit.cpp:209
-#: src/crypto/gui/certificatelineedit.cpp:213
+#: src/crypto/gui/certificatelineedit.cpp:216
+#: src/crypto/gui/certificatelineedit.cpp:220
 #, kde-format
 msgid "No matching certificates found.<br/>Click here to import a certificate."
 msgstr ""
@@ -4006,17 +4042,27 @@ msgstr "Әрекет біткесін ашық  қалсын"
 msgid "You need to select a signing certificate to proceed."
 msgstr "Қолтаңбалау куәліктерді таңдау керек."
 
-#: src/crypto/gui/signemailwizard.cpp:72
-#, kde-format
-msgid "You need to select an %1 signing certificate to proceed."
+#: src/crypto/gui/signemailwizard.cpp:73
+#, fuzzy, kde-format
+#| msgid "You need to select an %1 signing certificate to proceed."
+msgid "You need to select an OpenPGP signing certificate to proceed."
 msgstr "%1 дегенді қолтаңбалау куәліктерін таңдау керек."
 
-#: src/crypto/gui/signemailwizard.cpp:74
-#, kde-format
-msgid "You need to select %1 and %2 signing certificates to proceed."
+#: src/crypto/gui/signemailwizard.cpp:75
+#, fuzzy, kde-format
+#| msgid "You need to select an %1 signing certificate to proceed."
+msgid "You need to select an S/MIME signing certificate to proceed."
+msgstr "%1 дегенді қолтаңбалау куәліктерін таңдау керек."
+
+#: src/crypto/gui/signemailwizard.cpp:78
+#, fuzzy, kde-format
+#| msgid "You need to select %1 and %2 signing certificates to proceed."
+msgid ""
+"You need to select an OpenPGP signing certificate and an S/MIME signing "
+"certificate to proceed."
 msgstr "%1 және %2 дегенді қолтаңбалау куәліктерін таңдау керек."
 
-#: src/crypto/gui/signemailwizard.cpp:106
+#: src/crypto/gui/signemailwizard.cpp:110
 #, fuzzy, kde-format
 #| msgid "Sign Mail Message"
 msgctxt "@title:window"
@@ -4078,7 +4124,7 @@ msgid ""
 msgstr "Жіберушісіне дұрыс куәлігі таңдап берілгенін тексеріңіз:"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:280
-#: src/crypto/gui/signencryptfileswizard.cpp:295 src/view/padwidget.cpp:476
+#: src/crypto/gui/signencryptfileswizard.cpp:294 src/view/padwidget.cpp:477
 #, kde-format
 msgctxt ""
 "%1 is a placeholder for the name of a compliance mode. E.g. NATO RESTRICTED "
@@ -4087,7 +4133,7 @@ msgid "%1 communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:282
-#: src/crypto/gui/signencryptfileswizard.cpp:297 src/view/padwidget.cpp:478
+#: src/crypto/gui/signencryptfileswizard.cpp:296 src/view/padwidget.cpp:479
 #, fuzzy, kde-format
 #| msgid "Certification Not Possible"
 msgctxt ""
@@ -4215,56 +4261,56 @@ msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr "Өзіңізге де шифрлау туралы ескерту"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:225
+#: src/crypto/gui/signencryptfileswizard.cpp:224
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The S/MIME signature."
 msgstr "Қолтаңбасы жарамсыз."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:226
+#: src/crypto/gui/signencryptfileswizard.cpp:225
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The signature."
 msgstr "Қолтаңбасы жарамсыз."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:227
+#: src/crypto/gui/signencryptfileswizard.cpp:226
 #, fuzzy, kde-format
 #| msgid "Sign and/or encrypt file(s)"
 msgid "The signed and encrypted file."
 msgstr "Файл(дар)ды қолтаңбалау және/не шифрлау"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:228
+#: src/crypto/gui/signencryptfileswizard.cpp:227
 #, fuzzy, kde-format
 #| msgid "Selected file:"
 #| msgid_plural "Selected files:"
 msgid "The encrypted file."
 msgstr "Таңдалған файл(дар):"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:229
+#: src/crypto/gui/signencryptfileswizard.cpp:228
 #, fuzzy, kde-format
 #| msgid "S/MIME export file:"
 msgid "The S/MIME encrypted file."
 msgstr "S/MIME экспорттау файлы:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:230
+#: src/crypto/gui/signencryptfileswizard.cpp:229
 #, fuzzy, kde-format
 #| msgid "&Output folder:"
 msgid "Output directory."
 msgstr "Ш&ығыс қапшығы:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:300
+#: src/crypto/gui/signencryptfileswizard.cpp:299
 #, fuzzy, kde-format
 #| msgid "&Next"
 msgid "Next"
 msgstr "&Келесі"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:359
+#: src/crypto/gui/signencryptfileswizard.cpp:358
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr "Нәтижелері"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:361
+#: src/crypto/gui/signencryptfileswizard.cpp:360
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
@@ -4354,47 +4400,47 @@ msgstr "%1 қолтаңбалау куәлігі: %2"
 msgid "No certificate selected"
 msgstr "Куәлік таңдалмаған"
 
-#: src/crypto/gui/signerresolvepage.cpp:288
+#: src/crypto/gui/signerresolvepage.cpp:292
 #, kde-format
 msgid "Sign and encrypt (OpenPGP only)"
 msgstr "Қолтаңбалау және шифрлау (тек OpenPGP)"
 
-#: src/crypto/gui/signerresolvepage.cpp:294
+#: src/crypto/gui/signerresolvepage.cpp:298
 #, kde-format
 msgid "Encrypt only"
 msgstr "Тек шифрлау"
 
-#: src/crypto/gui/signerresolvepage.cpp:299
+#: src/crypto/gui/signerresolvepage.cpp:303
 #, kde-format
 msgid "Sign only"
 msgstr "Тек қолтаңбалау"
 
-#: src/crypto/gui/signerresolvepage.cpp:304
+#: src/crypto/gui/signerresolvepage.cpp:308
 #, kde-format
 msgid "Encryption Options"
 msgstr "Шифрлау параметрлері"
 
-#: src/crypto/gui/signerresolvepage.cpp:307
+#: src/crypto/gui/signerresolvepage.cpp:311
 #, kde-format
 msgid "Text output (ASCII armor)"
 msgstr "Мәтін шығысы (ASCII-мен шектелген)"
 
-#: src/crypto/gui/signerresolvepage.cpp:312
+#: src/crypto/gui/signerresolvepage.cpp:316
 #, kde-format
 msgid "Signing Options"
 msgstr "Қолтаңбалау параметрлері"
 
-#: src/crypto/gui/signerresolvepage.cpp:317
+#: src/crypto/gui/signerresolvepage.cpp:321
 #, kde-format
 msgid "Signer:"
 msgstr "Қолтаңбалаушы:"
 
-#: src/crypto/gui/signerresolvepage.cpp:332
+#: src/crypto/gui/signerresolvepage.cpp:336
 #, kde-format
 msgid "Change Signing Certificates..."
 msgstr "Қолтаңбалау куәліктерді ауыстыру..."
 
-#: src/crypto/gui/signerresolvepage.cpp:494
+#: src/crypto/gui/signerresolvepage.cpp:498
 #, kde-format
 msgid "<b>Choose Operation to be Performed</b>"
 msgstr "<b>Істейтін әрекетін таңдаңыз</b>"
@@ -5297,13 +5343,6 @@ msgstr "Атауы:"
 msgid "Available keys:"
 msgstr ""
 
-#: src/dialogs/editgroupdialog.cpp:104 src/dialogs/editgroupdialog.cpp:148
-#, fuzzy, kde-format
-#| msgid "Search"
-msgctxt "Placeholder text"
-msgid "Search..."
-msgstr "Іздеу"
-
 #: src/dialogs/editgroupdialog.cpp:129
 #, kde-format
 msgid "Add the selected keys to the group"
@@ -5319,6 +5358,12 @@ msgstr ""
 #| msgid "Show Details"
 msgid "Group keys:"
 msgstr "Егжей-тегжейлерін көрсету"
+
+#: src/dialogs/editgroupdialog.cpp:278
+#, kde-format
+msgctxt "@title:window"
+msgid "Edit Group"
+msgstr ""
 
 #: src/dialogs/expirydialog.cpp:133
 #, fuzzy, kde-format
@@ -5443,48 +5488,19 @@ msgid ""
 "generation."
 msgstr ""
 
-#: src/dialogs/groupdetailsdialog.cpp:74
-#, kde-format
-msgid "Edit"
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:135
+#: src/dialogs/groupdetailsdialog.cpp:128
 #, fuzzy, kde-format
 #| msgid "Show Details"
 msgctxt "@title:window"
 msgid "Group Details"
 msgstr "Егжей-тегжейлерін көрсету"
 
-#: src/dialogs/groupdetailsdialog.cpp:149
+#: src/dialogs/groupdetailsdialog.cpp:141
 #, kde-format
-msgid "This group is locked down. It cannot be edited by you."
+msgid "Note: This group is defined in the configuration files of gpg."
 msgstr ""
 
-#: src/dialogs/groupdetailsdialog.cpp:151
-#, kde-format
-msgid "Edit this group"
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:154
-#, kde-format
-msgid ""
-"This group cannot be edited with Kleopatra. It is defined in the "
-"configuration files of gpg."
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:156
-#, kde-format
-msgid ""
-"This group is implicitly defined by tags assigned to keys. You need to "
-"change the tags of keys to add keys to or remove keys from the group."
-msgstr ""
-
-#: src/dialogs/groupdetailsdialog.cpp:160
-#, kde-format
-msgid "This group cannot be edited with Kleopatra."
-msgstr ""
-
-#: src/dialogs/lookupcertificatesdialog.cpp:107 src/view/padwidget.cpp:451
+#: src/dialogs/lookupcertificatesdialog.cpp:107 src/view/padwidget.cpp:452
 #, kde-format
 msgid "Import"
 msgstr "импорт"
@@ -8677,11 +8693,6 @@ msgid "Stop Operation"
 msgstr "Амалды тоқтату"
 
 #: src/view/keylistcontroller.cpp:412
-#, kde-format
-msgid "Delete"
-msgstr "Өшіру"
-
-#: src/view/keylistcontroller.cpp:412
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Delete selected certificates"
@@ -8917,7 +8928,7 @@ msgstr ""
 msgid "Set initial PIN"
 msgstr "Бастапқы PIN-кодын орнату"
 
-#: src/view/padwidget.cpp:76 src/view/padwidget.cpp:462
+#: src/view/padwidget.cpp:76 src/view/padwidget.cpp:463
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Sign && Encrypt"
@@ -8965,13 +8976,13 @@ msgstr "Шифрлау параметрлері"
 msgid "Decrypt / Verify"
 msgstr "&Шифрын шешу/Тексеру"
 
-#: src/view/padwidget.cpp:412
+#: src/view/padwidget.cpp:413
 #, fuzzy, kde-format
 #| msgid "Import"
 msgid "Importing..."
 msgstr "импорт"
 
-#: src/view/padwidget.cpp:450 src/view/padwidget.cpp:459
+#: src/view/padwidget.cpp:451 src/view/padwidget.cpp:460
 #, kde-format
 msgctxt ""
 "1 is an operation to apply to the notepad. Like Sign/Encrypt or just Encrypt."
