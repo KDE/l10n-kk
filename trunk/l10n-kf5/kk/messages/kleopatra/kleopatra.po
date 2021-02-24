@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-19 03:29+0100\n"
+"POT-Creation-Date: 2021-02-24 02:40+0100\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -2643,6 +2643,19 @@ msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr ""
 "Бағдарлама қатесі: gpgconf келесі қате түрге тап болды - %1/%2/%3: %4 %5"
 
+#: src/conf/groupsconfigdialog.cpp:69
+#, fuzzy, kde-format
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure Groups"
+msgstr "Баптау"
+
+#: src/conf/groupsconfigdialog.cpp:72
+#, fuzzy, kde-format
+#| msgid "Show Details"
+msgid "Groups"
+msgstr "Егжей-тегжейлерін көрсету"
+
 #: src/conf/groupsconfigwidget.cpp:87 src/dialogs/editgroupdialog.cpp:104
 #: src/dialogs/editgroupdialog.cpp:148
 #, fuzzy, kde-format
@@ -3153,7 +3166,7 @@ msgstr ""
 "араласы болмайды."
 
 #: src/crypto/createchecksumscontroller.cpp:328
-#: src/dialogs/updatenotification.cpp:71 src/mainwindow.cpp:644
+#: src/dialogs/updatenotification.cpp:71 src/mainwindow.cpp:661
 #, kde-format
 msgid "Cancel"
 msgstr "Бас тарту"
@@ -3748,37 +3761,36 @@ msgstr "Шифрлау жаңылысы: %1"
 msgid "Encryption succeeded."
 msgstr "Шифрлау сәтті өтті."
 
-#: src/crypto/gui/certificatelineedit.cpp:93
+#: src/crypto/gui/certificatelineedit.cpp:94
 #, kde-format
 msgid "Please enter a name or email address..."
 msgstr ""
 
-#: src/crypto/gui/certificatelineedit.cpp:122
-#: src/crypto/gui/certificatelineedit.cpp:209
-#: src/crypto/gui/certificatelineedit.cpp:213
-#, fuzzy, kde-format
-#| msgid "Details..."
-msgid "Click for details."
-msgstr "Егжей-тегжейлер..."
-
-#: src/crypto/gui/certificatelineedit.cpp:189
-#: src/crypto/gui/certificatelineedit.cpp:198
+#: src/crypto/gui/certificatelineedit.cpp:205
+#: src/crypto/gui/certificatelineedit.cpp:236
 #, fuzzy, kde-format
 #| msgid "Current selection"
 msgid "Open selection dialog."
 msgstr "Қазіргі таңдауы"
 
-#: src/crypto/gui/certificatelineedit.cpp:195
+#: src/crypto/gui/certificatelineedit.cpp:233
 #, fuzzy, kde-format
 #| msgid "Default certificate"
 msgid "Multiple certificates"
 msgstr "Әдетті куәлік"
 
-#: src/crypto/gui/certificatelineedit.cpp:216
-#: src/crypto/gui/certificatelineedit.cpp:220
+#: src/crypto/gui/certificatelineedit.cpp:246
+#: src/crypto/gui/certificatelineedit.cpp:250
 #, kde-format
 msgid "No matching certificates found.<br/>Click here to import a certificate."
 msgstr ""
+
+#: src/crypto/gui/certificatelineedit.cpp:260
+#: src/crypto/gui/certificatelineedit.cpp:265
+#, fuzzy, kde-format
+#| msgid "Details..."
+msgid "Click for details."
+msgstr "Егжей-тегжейлер..."
 
 #: src/crypto/gui/certificateselectionline.cpp:39
 #, kde-format
@@ -6385,7 +6397,7 @@ msgstr "&Көрініс"
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:42 src/kleopatra.rc:110
+#: src/kleopatra.rc:42 src/kleopatra.rc:111
 #, kde-format
 msgid "&Certificates"
 msgstr "&Куәліктер"
@@ -6403,19 +6415,19 @@ msgid "&Settings"
 msgstr "&Баптау"
 
 #. i18n: ectx: Menu (window)
-#: src/kleopatra.rc:77
+#: src/kleopatra.rc:78
 #, kde-format
 msgid "&Window"
 msgstr "&Терезе"
 
 #. i18n: ectx: Menu (help)
-#: src/kleopatra.rc:88
+#: src/kleopatra.rc:89
 #, kde-format
 msgid "&Help"
 msgstr "&Анықтама"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:95 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:96 src/kwatchgnupg/kwatchgnupgui.rc:13
 #, kde-format
 msgid "Main Toolbar"
 msgstr "Негізгі құралдар"
@@ -6704,18 +6716,18 @@ msgstr ""
 msgid "Invalid arguments: %1"
 msgstr "\"%1\" - дұрыс емес режім"
 
-#: src/mainwindow.cpp:87
+#: src/mainwindow.cpp:90
 #, kde-format
 msgctxt "Quit [ApplicationName]"
 msgid "&Quit %1"
 msgstr "%1 дегеннен &шығу"
 
-#: src/mainwindow.cpp:94
+#: src/mainwindow.cpp:97
 #, kde-format
 msgid "Only &Close Window"
 msgstr "Тек терезесі &жабылсын"
 
-#: src/mainwindow.cpp:143
+#: src/mainwindow.cpp:146
 #, kde-format
 msgid ""
 "%1 may be used by other applications as a service.\n"
@@ -6724,12 +6736,12 @@ msgstr ""
 "%1 қызметін басқа бағдарлама әлі қолдануы мүмкін.\n"
 "%1 дегеннен шықпай, тек терезесін жабуға болады."
 
-#: src/mainwindow.cpp:145
+#: src/mainwindow.cpp:148
 #, kde-format
 msgid "Really Quit?"
 msgstr "Шын шығасыз ба?"
 
-#: src/mainwindow.cpp:201
+#: src/mainwindow.cpp:214
 #, kde-format
 msgid ""
 "Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
@@ -6737,12 +6749,12 @@ msgid ""
 msgstr ""
 "GnuPG журналын қарау құралы (kwatchgnupg) жегілмеді. Орнатылғанын тексеріңіз."
 
-#: src/mainwindow.cpp:203
+#: src/mainwindow.cpp:216
 #, kde-format
 msgid "Error Starting KWatchGnuPG"
 msgstr "KWatchGnuPG жегу қатесі"
 
-#: src/mainwindow.cpp:217
+#: src/mainwindow.cpp:230
 #, kde-format
 msgctxt ""
 "The Gpg4win compendium is only availableat this point (24.7.2017) in german "
@@ -6750,35 +6762,35 @@ msgctxt ""
 msgid "gpg4win-compendium-en.pdf"
 msgstr ""
 
-#: src/mainwindow.cpp:400
+#: src/mainwindow.cpp:413
 #, kde-format
 msgid "GnuPG Log Viewer"
 msgstr "GnuPG журналын қарау"
 
-#: src/mainwindow.cpp:406
+#: src/mainwindow.cpp:419
 #, kde-format
 msgid "Check for updates"
 msgstr ""
 
-#: src/mainwindow.cpp:410
+#: src/mainwindow.cpp:423
 #, kde-format
 msgid "Gpg4win Compendium"
 msgstr ""
 
-#: src/mainwindow.cpp:415
+#: src/mainwindow.cpp:428
 #, fuzzy, kde-format
 #| msgid "Certificates"
 msgctxt "@action show certificate overview"
 msgid "Certificates"
 msgstr "Куәліктер"
 
-#: src/mainwindow.cpp:416
+#: src/mainwindow.cpp:429
 #, fuzzy, kde-format
 #| msgid "Show certificate details"
 msgid "Show certificate overview"
 msgstr "Куәліктің егжей-тегжейі"
 
-#: src/mainwindow.cpp:419
+#: src/mainwindow.cpp:432
 #, kde-format
 msgctxt ""
 "@action show input / output area for encrypting/signing resp. decrypting/"
@@ -6786,49 +6798,55 @@ msgctxt ""
 msgid "Notepad"
 msgstr ""
 
-#: src/mainwindow.cpp:420
+#: src/mainwindow.cpp:433
 #, kde-format
 msgid "Show pad for encrypting/decrypting and signing/verifying text"
 msgstr ""
 
-#: src/mainwindow.cpp:425
+#: src/mainwindow.cpp:438
 #, kde-format
 msgid "Configure GnuPG Backend..."
 msgstr "GnuPG тетігін баптау..."
 
-#: src/mainwindow.cpp:431
+#: src/mainwindow.cpp:444
 #, kde-format
 msgid "Perform Self-Test"
 msgstr "Өз-өзін сынап шығу"
 
-#: src/mainwindow.cpp:435
+#: src/mainwindow.cpp:448
+#, fuzzy, kde-format
+#| msgid "&Configure %1..."
+msgid "Configure Groups..."
+msgstr "%1 баптауы..."
+
+#: src/mainwindow.cpp:452
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgctxt "@action show smartcard management view"
 msgid "Smartcards"
 msgstr "Смарт-карта"
 
-#: src/mainwindow.cpp:436
+#: src/mainwindow.cpp:453
 #, kde-format
 msgid "Show smartcard management"
 msgstr ""
 
-#: src/mainwindow.cpp:460
+#: src/mainwindow.cpp:477
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwindow.cpp:481
+#: src/mainwindow.cpp:498
 #, kde-format
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "Криптография тетігін баптауға болмайды (gpgconf табылмады)"
 
-#: src/mainwindow.cpp:481
+#: src/mainwindow.cpp:498
 #, kde-format
 msgid "Configuration Error"
 msgstr "Баптау қатесі"
 
-#: src/mainwindow.cpp:516
+#: src/mainwindow.cpp:533
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
@@ -6837,28 +6855,28 @@ msgstr ""
 "Кейбір амалдар әлі орындалып жатыр. Терезені жапсаңыз, олар үзіледі. Үзіле "
 "берсін бе?"
 
-#: src/mainwindow.cpp:519
+#: src/mainwindow.cpp:536
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr "Әлі бітпеген тапсырмалар бар"
 
-#: src/mainwindow.cpp:628 src/view/keylistcontroller.cpp:382
+#: src/mainwindow.cpp:645 src/view/keylistcontroller.cpp:382
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "Қолтаңбалау/Шифрлау"
 
-#: src/mainwindow.cpp:629 src/utils/clipboardmenu.cpp:38
+#: src/mainwindow.cpp:646 src/utils/clipboardmenu.cpp:38
 #: src/view/keylistcontroller.cpp:378
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "Шифрын шешу/Тексеру"
 
-#: src/mainwindow.cpp:634
+#: src/mainwindow.cpp:651
 #, kde-format
 msgid "Import Certificates"
 msgstr "Куәліктерді импорттау"
 
-#: src/mainwindow.cpp:635
+#: src/mainwindow.cpp:652
 #, kde-format
 msgid "Import CRLs"
 msgstr "CRL-лерді импорттау..."
