@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-24 02:50+0100\n"
+"POT-Creation-Date: 2021-03-03 03:37+0100\n"
 "PO-Revision-Date: 2013-11-18 03:40+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1079,7 +1079,7 @@ msgctxt "@item"
 msgid "Activate Menu"
 msgstr "Мәзірді белсендету"
 
-#: MainWindow.cpp:607 MainWindow.cpp:626
+#: MainWindow.cpp:612 MainWindow.cpp:631
 #, kde-format
 msgctxt "@info"
 msgid "There is a process running in this window. Do you still want to quit?"
@@ -1087,25 +1087,25 @@ msgid_plural ""
 "There are %1 processes running in this window. Do you still want to quit?"
 msgstr[0] "Бұл терезеде %1 процесс жегілген. Сонда да шығуды қалайсыз ба?"
 
-#: MainWindow.cpp:613 MainWindow.cpp:632 MainWindow.cpp:650
+#: MainWindow.cpp:618 MainWindow.cpp:637 MainWindow.cpp:655
 #, kde-format
 msgctxt "@title"
 msgid "Confirm Close"
 msgstr "Жабуды құптау"
 
-#: MainWindow.cpp:615 MainWindow.cpp:634 MainWindow.cpp:651
+#: MainWindow.cpp:620 MainWindow.cpp:639 MainWindow.cpp:656
 #, kde-format
 msgctxt "@action:button"
 msgid "Close &Window"
 msgstr "&Терезені жабу"
 
-#: MainWindow.cpp:637 MainWindow.cpp:654
+#: MainWindow.cpp:642 MainWindow.cpp:659
 #, kde-format
 msgctxt "@action:button"
 msgid "Close Current &Tab"
 msgstr "Назардағы қ&ойындыны жабу"
 
-#: MainWindow.cpp:647
+#: MainWindow.cpp:652
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1116,13 +1116,13 @@ msgctxt "@info"
 msgid "There are %1 open terminals in this window. Do you still want to quit?"
 msgstr "Бұл терезеде %1 процесс жегілген. Сонда да шығуды қалайсыз ба?"
 
-#: MainWindow.cpp:769
+#: MainWindow.cpp:774
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "General"
 msgstr "Жалпы"
 
-#: MainWindow.cpp:774 Part.cpp:313
+#: MainWindow.cpp:779 Part.cpp:313
 #, fuzzy, kde-format
 #| msgctxt "@item This will be used as part of the file name"
 #| msgid "New Profile"
@@ -1130,19 +1130,19 @@ msgctxt "@title Preferences page name"
 msgid "Profiles"
 msgstr "New Profile"
 
-#: MainWindow.cpp:779
+#: MainWindow.cpp:784
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Tab Bar / Splitters"
 msgstr ""
 
-#: MainWindow.cpp:784
+#: MainWindow.cpp:789
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Temporary Files"
 msgstr ""
 
-#: MainWindow.cpp:789
+#: MainWindow.cpp:794
 #, kde-format
 msgctxt "@title Preferences page name"
 msgid "Thumbnails"
@@ -1216,13 +1216,21 @@ msgid "Shortcut"
 msgstr "Тіркесімі"
 
 #: profile/ProfileModel.cpp:82
+#, kde-format
+msgctxt ""
+"@label:textbox added to the name of the Default/fallback profile, to point "
+"out it's read-only/hardcoded"
+msgid " [Read-only]"
+msgstr ""
+
+#: profile/ProfileModel.cpp:86
 #, fuzzy, kde-format
 #| msgid "&Set as Default"
-msgctxt "@label:textbox Name of the current default profile"
-msgid " (Default)"
+msgctxt "@label:textbox added to the name of the current default profile"
+msgid " (default)"
 msgstr "&Әдетті қылу"
 
-#: profile/ProfileModel.cpp:100
+#: profile/ProfileModel.cpp:111
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Double click to change shortcut"
@@ -2075,7 +2083,7 @@ msgid ""
 "a change to how these are handled.</body></html>"
 msgstr ""
 
-#: settings/ProfileSettings.cpp:142
+#: settings/ProfileSettings.cpp:138
 #, fuzzy, kde-format
 #| msgid "&New Profile..."
 msgctxt "@item This will be used as part of the file name"
@@ -2084,8 +2092,9 @@ msgstr "&Жаңа профилі..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, newProfileButton)
 #: settings/ProfileSettings.ui:39
-#, kde-format
-msgid "Create a new profile based upon the selected profile"
+#, fuzzy, kde-format
+#| msgid "Create a new profile based upon the selected profile"
+msgid "Create a new profile based on the selected profile"
 msgstr "Таңдалған профильді негіздеп жаңа профилін құру"
 
 #. i18n: ectx: property (text), widget (QPushButton, newProfileButton)
@@ -2098,9 +2107,11 @@ msgstr "Жаңа..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, editProfileButton)
 #: settings/ProfileSettings.ui:52
-#, kde-format
-msgid "Edit the selected profile(s)"
-msgstr "Таңдалған профиль(дер)ді өзгерту"
+#, fuzzy, kde-format
+#| msgid "Set the selected profile as the default for new terminal sessions"
+msgid ""
+"Edit the selected profile (this button is disabled for read-only profiles)"
+msgstr "Таңдалған профилін жаңа терминал сеанстарының әдетті профилі қылу"
 
 #. i18n: ectx: property (text), widget (QPushButton, editProfileButton)
 #: settings/ProfileSettings.ui:55
@@ -2111,8 +2122,9 @@ msgstr "Өңдеу..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, deleteProfileButton)
 #: settings/ProfileSettings.ui:65
-#, kde-format
-msgid "Delete the selected profile(s)"
+#, fuzzy, kde-format
+#| msgid "Delete the selected profile(s)"
+msgid "Delete the selected profile"
 msgstr "Таңдалған профиль(дер)ді өшіру"
 
 #. i18n: ectx: property (text), widget (QPushButton, deleteProfileButton)
@@ -4305,6 +4317,15 @@ msgid "Close Tab"
 msgstr "Қ&ойындыны жабу"
 
 #, fuzzy
+#~| msgid "&Set as Default"
+#~ msgctxt "@label:textbox Name of the current default profile"
+#~ msgid " (Default)"
+#~ msgstr "&Әдетті қылу"
+
+#~ msgid "Edit the selected profile(s)"
+#~ msgstr "Таңдалған профиль(дер)ді өзгерту"
+
+#, fuzzy
 #~| msgid "New Color Scheme"
 #~ msgid "Color from theme"
 #~ msgstr "Жаңа түс сұлбасы"
@@ -4328,12 +4349,6 @@ msgstr "Қ&ойындыны жабу"
 #~ "menu"
 #~ msgid "Show profile in menu"
 #~ msgstr "Мәзірінде көрсету"
-
-#, fuzzy
-#~| msgid "&Set as Default"
-#~ msgctxt "@item:intable Default list item's name suffix (with separator)"
-#~ msgid " (default)"
-#~ msgstr "&Әдетті қылу"
 
 #, fuzzy
 #~| msgid "Tab Bar"
