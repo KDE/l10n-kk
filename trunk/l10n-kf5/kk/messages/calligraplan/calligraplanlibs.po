@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-05 02:41+0100\n"
+"POT-Creation-Date: 2021-03-06 02:52+0100\n"
 "PO-Revision-Date: 2013-11-08 01:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -244,8 +244,8 @@ msgstr "Жоспарлау қатесі"
 #: models/kptnodeitemmodel.cpp:451 models/kptnodeitemmodel.cpp:664
 #: models/kptnodeitemmodel.cpp:681 models/kptnodeitemmodel.cpp:699
 #: models/kptnodeitemmodel.cpp:717 models/kptnodeitemmodel.cpp:752
-#: models/kptnodeitemmodel.cpp:769 models/kptresourceallocationmodel.cpp:739
-#: models/kptresourceallocationmodel.cpp:814 models/kptschedulemodel.cpp:618
+#: models/kptnodeitemmodel.cpp:769 models/kptresourceallocationmodel.cpp:889
+#: models/kptresourceallocationmodel.cpp:964 models/kptschedulemodel.cpp:618
 #: models/kpttreecombobox.cpp:123 models/ResourceModel.cpp:200
 #: models/ResourceModel.cpp:232 models/ResourceModel.cpp:353
 #: models/ResourceModel.cpp:357 models/ResourceModel.cpp:366
@@ -558,12 +558,12 @@ msgstr "Аяқтау-Аяқтау"
 msgid "Start-Start"
 msgstr "Бастау-Бастау"
 
-#: kernel/kptresourcerequest.cpp:889
+#: kernel/kptresourcerequest.cpp:898
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "Керек көлем жиналмады: Керегі: %1 бары: %2"
 
-#: kernel/kptresourcerequest.cpp:892
+#: kernel/kptresourcerequest.cpp:901
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "%1 атқарушы %2 - %3 аралығында қол жеткізеді"
@@ -1799,9 +1799,9 @@ msgstr "Арналғаны"
 #: models/AllocatedResourceItemModel.cpp:165
 #: models/kptresourceallocationmodel.cpp:145
 #: models/kptresourceallocationmodel.cpp:158
-#: models/kptresourceallocationmodel.cpp:285
-#: models/kptresourceallocationmodel.cpp:316
-#: models/kptresourceallocationmodel.cpp:672
+#: models/kptresourceallocationmodel.cpp:414
+#: models/kptresourceallocationmodel.cpp:445
+#: models/kptresourceallocationmodel.cpp:801
 #, no-c-format, kde-format
 msgctxt "<value>%"
 msgid "%1%"
@@ -1809,8 +1809,8 @@ msgstr "%1%"
 
 #: models/AllocatedResourceItemModel.cpp:169
 #: models/kptresourceallocationmodel.cpp:155
-#: models/kptresourceallocationmodel.cpp:292
-#: models/kptresourceallocationmodel.cpp:678
+#: models/kptresourceallocationmodel.cpp:421
+#: models/kptresourceallocationmodel.cpp:807
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not allocated"
@@ -1824,7 +1824,7 @@ msgstr[0] "Бұл топта %1 атқарушы бар"
 
 #: models/GroupAllocationItemModel.cpp:184 models/kptaccountsmodel.cpp:125
 #: models/kptaccountsmodel.cpp:1068 models/kptdocumentmodel.cpp:200
-#: models/kptresourceallocationmodel.cpp:409
+#: models/kptresourceallocationmodel.cpp:538
 #: models/kptresourceappointmentsmodel.cpp:805
 #: models/kptresourceappointmentsmodel.cpp:820
 #: models/kptresourceappointmentsmodel.cpp:1317 models/kptschedulemodel.cpp:991
@@ -1838,7 +1838,7 @@ msgid "Name"
 msgstr "Атауы"
 
 #: models/GroupAllocationItemModel.cpp:185 models/kptdocumentmodel.cpp:201
-#: models/kptrelationmodel.cpp:138 models/kptresourceallocationmodel.cpp:410
+#: models/kptrelationmodel.cpp:138 models/kptresourceallocationmodel.cpp:539
 #: models/kptresourceappointmentsmodel.cpp:1318
 #: models/ResourceGroupModel.cpp:205 models/ResourceModel.cpp:412
 #, kde-format
@@ -1846,20 +1846,20 @@ msgid "Type"
 msgstr "Түрі"
 
 #: models/GroupAllocationItemModel.cpp:186
-#: models/kptresourceallocationmodel.cpp:411
+#: models/kptresourceallocationmodel.cpp:540
 #, kde-format
 msgid "Allocation"
 msgstr "Бөлу"
 
 #: models/GroupAllocationItemModel.cpp:187
-#: models/kptresourceallocationmodel.cpp:412
+#: models/kptresourceallocationmodel.cpp:541
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Available"
 msgstr "Бар-жоғы"
 
 #: models/GroupAllocationItemModel.cpp:199
-#: models/kptresourceallocationmodel.cpp:426
+#: models/kptresourceallocationmodel.cpp:555
 #, kde-format
 msgid "Resource allocation"
 msgstr "Атқарушыны бөлу"
@@ -4344,7 +4344,7 @@ msgctxt "(qtundo-format)"
 msgid "Insert %1"
 msgstr "%1 дегенді ендіру"
 
-#: models/kptnodeitemmodel.cpp:4136 ui/kptrequestresourcespanel.cpp:102
+#: models/kptnodeitemmodel.cpp:4136 ui/kptrequestresourcespanel.cpp:114
 #: ui/ResourceAllocationView.cpp:154
 msgctxt "(qtundo-format)"
 msgid "Modify resource allocations"
@@ -4410,25 +4410,25 @@ msgid "Modify relation time lag"
 msgstr "Уақыт аралығын өзгерту"
 
 #: models/kptresourceallocationmodel.cpp:159
-#: models/kptresourceallocationmodel.cpp:680
+#: models/kptresourceallocationmodel.cpp:809
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "%1 allocated out of %2 available"
 msgstr "%2 атқарушылардан %1 тағайындалған"
 
-#: models/kptresourceallocationmodel.cpp:295
+#: models/kptresourceallocationmodel.cpp:424
 #, no-c-format, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Allocated units: %1%"
 msgstr "Бөлінген бөліктері: %1"
 
-#: models/kptresourceallocationmodel.cpp:321
+#: models/kptresourceallocationmodel.cpp:450
 #, no-c-format, kde-format
 msgid "Maximum units available: %1%"
 msgstr "Бар бөліктері: %1"
 
-#: models/kptresourceallocationmodel.cpp:344
-#: models/kptresourceallocationmodel.cpp:439
+#: models/kptresourceallocationmodel.cpp:473
+#: models/kptresourceallocationmodel.cpp:568
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -4448,8 +4448,8 @@ msgstr ""
 "керек материалды ресурсы.</para><para>Материалды ресурстар қажеті ресурс "
 "ретінде пайдалану үшін оның түрі Материал топқа жату керек.</para>"
 
-#: models/kptresourceallocationmodel.cpp:378
-#: models/kptresourceallocationmodel.cpp:435
+#: models/kptresourceallocationmodel.cpp:507
+#: models/kptresourceallocationmodel.cpp:564
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -4458,20 +4458,20 @@ msgid ""
 "then select the most appropriate resource to use.</para>"
 msgstr ""
 
-#: models/kptresourceallocationmodel.cpp:413
+#: models/kptresourceallocationmodel.cpp:542
 #, fuzzy, kde-kuit-format
 #| msgid "Tentative"
 msgctxt "@title:column"
 msgid "Alternative Resources"
 msgstr "Алдын-ала"
 
-#: models/kptresourceallocationmodel.cpp:414
+#: models/kptresourceallocationmodel.cpp:543
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Required Resources"
 msgstr "Қажетті атқарушылар"
 
-#: models/kptresourceallocationmodel.cpp:427
+#: models/kptresourceallocationmodel.cpp:556
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:tootip"
 #| msgid "Available resources or resource units"
@@ -4479,7 +4479,7 @@ msgctxt "@info:tooltip"
 msgid "Available resources or resource units"
 msgstr "Бар атқарушылар не атқарушы бірліктері"
 
-#: models/kptresourceallocationmodel.cpp:428
+#: models/kptresourceallocationmodel.cpp:557
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:tooltip"
 #| msgid "No resources has been allocated"
@@ -4487,7 +4487,7 @@ msgctxt "@info:tooltip"
 msgid "List of resources that can be used as an alternative"
 msgstr "Атқарушы бөлінген жоқ"
 
-#: models/kptresourceallocationmodel.cpp:429
+#: models/kptresourceallocationmodel.cpp:558
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:tootip"
 #| msgid "Required material resources"
@@ -4495,25 +4495,25 @@ msgctxt "@info:tooltip"
 msgid "Required material resources"
 msgstr "Қажетті материалдық ресурстар"
 
-#: models/kptresourceallocationmodel.cpp:748
+#: models/kptresourceallocationmodel.cpp:898
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "No material resources available"
 msgstr "Материалды ресурстар жоқ"
 
-#: models/kptresourceallocationmodel.cpp:757
+#: models/kptresourceallocationmodel.cpp:907
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "No required resources"
 msgstr "Қажетті атқарушылар жоқ"
 
-#: models/kptresourceallocationmodel.cpp:760
+#: models/kptresourceallocationmodel.cpp:910
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Material resources cannot have required resources"
 msgstr "Қажетті материалдар жоқ"
 
-#: models/kptresourceallocationmodel.cpp:762
+#: models/kptresourceallocationmodel.cpp:912
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Team resources cannot have required resources"
