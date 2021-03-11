@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-06 02:52+0100\n"
+"POT-Creation-Date: 2021-03-11 02:56+0100\n"
 "PO-Revision-Date: 2013-11-08 01:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -240,11 +240,11 @@ msgstr "Жоспарлау қатесі"
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:154 kernel/kptnode.cpp:1659 kernel/kpttask.cpp:3863
 #: models/kptcalendarmodel.cpp:431 models/kptcalendarmodel.cpp:451
-#: models/kptnodeitemmodel.cpp:425 models/kptnodeitemmodel.cpp:441
-#: models/kptnodeitemmodel.cpp:451 models/kptnodeitemmodel.cpp:664
-#: models/kptnodeitemmodel.cpp:681 models/kptnodeitemmodel.cpp:699
-#: models/kptnodeitemmodel.cpp:717 models/kptnodeitemmodel.cpp:752
-#: models/kptnodeitemmodel.cpp:769 models/kptresourceallocationmodel.cpp:889
+#: models/kptnodeitemmodel.cpp:436 models/kptnodeitemmodel.cpp:452
+#: models/kptnodeitemmodel.cpp:462 models/kptnodeitemmodel.cpp:675
+#: models/kptnodeitemmodel.cpp:692 models/kptnodeitemmodel.cpp:710
+#: models/kptnodeitemmodel.cpp:728 models/kptnodeitemmodel.cpp:763
+#: models/kptnodeitemmodel.cpp:780 models/kptresourceallocationmodel.cpp:889
 #: models/kptresourceallocationmodel.cpp:964 models/kptschedulemodel.cpp:618
 #: models/kpttreecombobox.cpp:123 models/ResourceModel.cpp:200
 #: models/ResourceModel.cpp:232 models/ResourceModel.cpp:353
@@ -585,10 +585,10 @@ msgid "Warning"
 msgstr "Ескерту"
 
 #: kernel/kptschedule.cpp:1587 kernel/kptschedule.cpp:1922
-#: models/kptnodeitemmodel.cpp:1682 models/kptnodeitemmodel.cpp:1715
-#: models/kptnodeitemmodel.cpp:1748 models/kptnodeitemmodel.cpp:1781
-#: models/kptnodeitemmodel.cpp:1814 models/kptnodeitemmodel.cpp:1847
-#: models/kptnodeitemmodel.cpp:1880
+#: models/kptnodeitemmodel.cpp:1693 models/kptnodeitemmodel.cpp:1726
+#: models/kptnodeitemmodel.cpp:1759 models/kptnodeitemmodel.cpp:1792
+#: models/kptnodeitemmodel.cpp:1825 models/kptnodeitemmodel.cpp:1858
+#: models/kptnodeitemmodel.cpp:1891
 #, kde-format
 msgid "Error"
 msgstr "Қате"
@@ -1790,7 +1790,7 @@ msgid ""
 "style:italic;\">Recent portfolios:</span></p></body></html>"
 msgstr ""
 
-#: models/AllocatedResourceItemModel.cpp:148 models/kptnodeitemmodel.cpp:2301
+#: models/AllocatedResourceItemModel.cpp:148 models/kptnodeitemmodel.cpp:2312
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Allocation"
@@ -2115,8 +2115,8 @@ msgctxt "(qtundo-format)"
 msgid "Modify calendar holiday region"
 msgstr "Күнтізбе күнін өзгерту"
 
-#: models/kptcalendarmodel.cpp:545 models/kptnodeitemmodel.cpp:2298
-#: models/kptnodeitemmodel.cpp:5164
+#: models/kptcalendarmodel.cpp:545 models/kptnodeitemmodel.cpp:2309
+#: models/kptnodeitemmodel.cpp:5175
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Name"
@@ -3185,28 +3185,28 @@ msgctxt "@info:tooltip"
 msgid "Effort based Cost Performance Index (BCWP/ACWS)"
 msgstr "Көлемі негізінде бағасын ұстану көрсеткіші (ОЖББ/ЖЖШБ)"
 
-#: models/kptnodechartmodel.cpp:524 models/kptnodeitemmodel.cpp:2374
+#: models/kptnodechartmodel.cpp:524 models/kptnodeitemmodel.cpp:2385
 #: models/reportgenerator/ReportGeneratorOdt.cpp:174
 #, kde-kuit-format
 msgctxt "@title:column Budgeted Cost of Work Scheduled"
 msgid "BCWS"
 msgstr "ЖЖББ"
 
-#: models/kptnodechartmodel.cpp:525 models/kptnodeitemmodel.cpp:2375
+#: models/kptnodechartmodel.cpp:525 models/kptnodeitemmodel.cpp:2386
 #: models/reportgenerator/ReportGeneratorOdt.cpp:175
 #, kde-kuit-format
 msgctxt "@title:column Budgeted Cost of Work Performed"
 msgid "BCWP"
 msgstr "ОЖББ"
 
-#: models/kptnodechartmodel.cpp:526 models/kptnodeitemmodel.cpp:2376
+#: models/kptnodechartmodel.cpp:526 models/kptnodeitemmodel.cpp:2387
 #: models/reportgenerator/ReportGeneratorOdt.cpp:176
 #, kde-kuit-format
 msgctxt "@title:column Actual Cost of Work Performed"
 msgid "ACWP"
 msgstr "ОЖШБ"
 
-#: models/kptnodechartmodel.cpp:527 models/kptnodeitemmodel.cpp:2377
+#: models/kptnodechartmodel.cpp:527 models/kptnodeitemmodel.cpp:2388
 #: models/reportgenerator/ReportGeneratorOdt.cpp:177
 #, kde-kuit-format
 msgctxt "@title:column Schedule Performance Index"
@@ -3261,393 +3261,405 @@ msgstr "Жұмыс көлемі негізіндегі орындау көрсе
 msgid "<p><strong>%1: %2</strong></p><p>%3</p>"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:180
+#: models/kptnodeitemmodel.cpp:184
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "No resources has been allocated"
 msgstr "Атқарушы бөлінген жоқ"
 
-#: models/kptnodeitemmodel.cpp:187
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info:tooltip 1=resource name, 2=list of requiered resources"
-#| msgid "%1 (%2)"
-msgctxt "@info:tooltip 1=resource name, 2=list of required resources"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
+#: models/kptnodeitemmodel.cpp:194
+#, kde-format
+msgctxt "list of alternative resources"
+msgid " [%1]"
+msgstr ""
 
-#: models/kptnodeitemmodel.cpp:191
+#: models/kptnodeitemmodel.cpp:197
+#, fuzzy, kde-format
+#| msgctxt "Chart axis title 1=currency symbol"
+#| msgid "Cost (%1)"
+msgctxt "list of required resources"
+msgid " (%1)"
+msgstr "Бағасы (%1)"
+
+#: models/kptnodeitemmodel.cpp:199
+#, kde-format
+msgctxt "1=resource name 2=list of alternatives 3=list of required"
+msgid "%1%2%3"
+msgstr ""
+
+#: models/kptnodeitemmodel.cpp:202
 #, kde-kuit-format
 msgctxt "@info:tooltip 1=resource name"
 msgid "Allocated resource:<nl/>%1"
 msgstr "Бөлінген атқарушылары:<nl/>%1"
 
-#: models/kptnodeitemmodel.cpp:193
+#: models/kptnodeitemmodel.cpp:204
 #, kde-kuit-format
 msgctxt "@info:tooltip 1=list of resources"
 msgid "Allocated resources:<nl/>%1"
 msgstr "Бөлінген атқарушылары:<nl/>%1"
 
-#: models/kptnodeitemmodel.cpp:256
+#: models/kptnodeitemmodel.cpp:267
 #, kde-format
 msgid "Target times"
 msgstr "Көздейтін уақттар"
 
-#: models/kptnodeitemmodel.cpp:258
+#: models/kptnodeitemmodel.cpp:269
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Earliest start and latest finish"
 msgstr "Ең ерте бастау мен ең кеш аяқтауы"
 
-#: models/kptnodeitemmodel.cpp:431
+#: models/kptnodeitemmodel.cpp:442
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not applicable, estimate type is Effort"
 msgstr "Келмейді, бағалау түрі \"Жұмыс көлемі\""
 
-#: models/kptnodeitemmodel.cpp:497 models/kptnodeitemmodel.cpp:548
-#: models/kptnodeitemmodel.cpp:595
+#: models/kptnodeitemmodel.cpp:508 models/kptnodeitemmodel.cpp:559
+#: models/kptnodeitemmodel.cpp:606
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not applicable, constraint is Fixed Interval"
 msgstr "Келмейді, аралығы шектелген"
 
-#: models/kptnodeitemmodel.cpp:499
+#: models/kptnodeitemmodel.cpp:510
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Estimated effort: %1"
 msgstr "Болжамды жұмыс көлемі: %1"
 
-#: models/kptnodeitemmodel.cpp:501
+#: models/kptnodeitemmodel.cpp:512
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Estimated duration: %1"
 msgstr "Болжамды ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:550
+#: models/kptnodeitemmodel.cpp:561
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic effort: %1"
 msgstr "Оптимисттік жұмыс көлемі: %1"
 
-#: models/kptnodeitemmodel.cpp:552
+#: models/kptnodeitemmodel.cpp:563
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic duration: %1"
 msgstr "Оптимисттік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:597
+#: models/kptnodeitemmodel.cpp:608
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic effort: %1"
 msgstr "Пессимисттік: жұмыс көлемі: %1"
 
-#: models/kptnodeitemmodel.cpp:599
+#: models/kptnodeitemmodel.cpp:610
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic duration: %1"
 msgstr "Пессимисттік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:670
+#: models/kptnodeitemmodel.cpp:681
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for resource cost: %1"
 msgstr "Атқарушының бағасының есебі: %1"
 
-#: models/kptnodeitemmodel.cpp:671
+#: models/kptnodeitemmodel.cpp:682
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for resource cost"
 msgstr "Атқарушының бағасының есебі"
 
-#: models/kptnodeitemmodel.cpp:706
+#: models/kptnodeitemmodel.cpp:717
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for task startup cost: %1"
 msgstr "Тапсырманы бастау бағасының есебі: %1"
 
-#: models/kptnodeitemmodel.cpp:707
+#: models/kptnodeitemmodel.cpp:718
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for task startup cost"
 msgstr "Тапсырманы бастау бағасының есебі"
 
-#: models/kptnodeitemmodel.cpp:758
+#: models/kptnodeitemmodel.cpp:769
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for task shutdown cost: %1"
 msgstr "Тапсырманы аяқтау бағасының есебі: %1"
 
-#: models/kptnodeitemmodel.cpp:759
+#: models/kptnodeitemmodel.cpp:770
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Account for task shutdown cost"
 msgstr "Тапсырманы аяқтау бағасының есебі"
 
-#: models/kptnodeitemmodel.cpp:805
+#: models/kptnodeitemmodel.cpp:816
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled start: %1"
 msgstr "Жоспарланған бастау: %1"
 
-#: models/kptnodeitemmodel.cpp:822
+#: models/kptnodeitemmodel.cpp:833
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled finish: %1"
 msgstr "Жоспарланған аяқтауы: %1"
 
-#: models/kptnodeitemmodel.cpp:850 models/kptnodeitemmodel.cpp:854
+#: models/kptnodeitemmodel.cpp:861 models/kptnodeitemmodel.cpp:865
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled duration: %1"
 msgstr "Жоспарланған ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:887
+#: models/kptnodeitemmodel.cpp:898
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT duration variance: %1"
 msgstr "ЖЖБЖ (PERT) ұзақтық ауытқуы: %1"
 
-#: models/kptnodeitemmodel.cpp:921
+#: models/kptnodeitemmodel.cpp:932
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT estimate variance: %1"
 msgstr "ЖЖБЖ (PERT) бағалау ауытқуы: %1"
 
-#: models/kptnodeitemmodel.cpp:963
+#: models/kptnodeitemmodel.cpp:974
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT optimistic duration: %1"
 msgstr "ЖЖБЖ (PERT) оптимисттік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:995
+#: models/kptnodeitemmodel.cpp:1006
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic estimate: %1"
 msgstr "Оптимисттік болжамы: %1"
 
-#: models/kptnodeitemmodel.cpp:1028
+#: models/kptnodeitemmodel.cpp:1039
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT expected estimate: %1"
 msgstr "ЖЖБЖ (PERT) болжалды бағалауы: %1"
 
-#: models/kptnodeitemmodel.cpp:1069
+#: models/kptnodeitemmodel.cpp:1080
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT pessimistic duration: %1"
 msgstr "uЖЖБЖ (PERT) пессимисттік ұзақтығы: %1"
 
-#: models/kptnodeitemmodel.cpp:1101
+#: models/kptnodeitemmodel.cpp:1112
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic estimate: %1"
 msgstr "Пессимисттік болжамы: %1"
 
-#: models/kptnodeitemmodel.cpp:1303
+#: models/kptnodeitemmodel.cpp:1314
 #, kde-kuit-format
 msgctxt "@info:tooltip 1=list of resources"
 msgid "Assigned resources:<nl/>%1"
 msgstr "Бөлінген атқарушылары:<nl/>%1"
 
-#: models/kptnodeitemmodel.cpp:1327
+#: models/kptnodeitemmodel.cpp:1338
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Task is %1% completed"
 msgstr "Тапсырманың %1% бітті"
 
-#: models/kptnodeitemmodel.cpp:1349
+#: models/kptnodeitemmodel.cpp:1360
 #, kde-format
 msgid "Finished late"
 msgstr "Кеш аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1352
+#: models/kptnodeitemmodel.cpp:1363
 #, kde-format
 msgid "Finished early"
 msgstr "Ерте аяқталған"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kptnodeitemmodel.cpp:1354 models/kpttaskstatusmodel.cpp:61
+#: models/kptnodeitemmodel.cpp:1365 models/kpttaskstatusmodel.cpp:61
 #: ui/kptmilestoneprogresspanelbase.ui:23 ui/kptworkpackagemergepanel.ui:156
 #, kde-format
 msgid "Finished"
 msgstr "Аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1358 models/kptnodeitemmodel.cpp:1370
+#: models/kptnodeitemmodel.cpp:1369 models/kptnodeitemmodel.cpp:1381
 #, kde-format
 msgid "Running late"
 msgstr "Кешігу"
 
 #. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kptnodeitemmodel.cpp:1360 models/kpttaskstatusmodel.cpp:57
+#: models/kptnodeitemmodel.cpp:1371 models/kpttaskstatusmodel.cpp:57
 #: ui/kpttaskcostpanelbase.ui:21
 #, kde-format
 msgid "Running"
 msgstr "Орындалып жатыр"
 
-#: models/kptnodeitemmodel.cpp:1364
+#: models/kptnodeitemmodel.cpp:1375
 #, kde-format
 msgid "Started late"
 msgstr "Кеш басталғані"
 
-#: models/kptnodeitemmodel.cpp:1367
+#: models/kptnodeitemmodel.cpp:1378
 #, kde-format
 msgid "Started early"
 msgstr "Ерте басталған"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: models/kptnodeitemmodel.cpp:1372 ui/kptworkpackagemergepanel.ui:133
+#: models/kptnodeitemmodel.cpp:1383 ui/kptworkpackagemergepanel.ui:133
 #, kde-format
 msgid "Started"
 msgstr "Басталған"
 
-#: models/kptnodeitemmodel.cpp:1376 models/kptnodeitemmodel.cpp:1386
+#: models/kptnodeitemmodel.cpp:1387 models/kptnodeitemmodel.cpp:1397
 #, kde-format
 msgid "Not started"
 msgstr "Басталмаған"
 
-#: models/kptnodeitemmodel.cpp:1378
+#: models/kptnodeitemmodel.cpp:1389
 #, kde-format
 msgid "Can start"
 msgstr "Бастауға болады"
 
-#: models/kptnodeitemmodel.cpp:1382
+#: models/kptnodeitemmodel.cpp:1393
 #, kde-format
 msgid "Delayed"
 msgstr "Кідіртілген"
 
-#: models/kptnodeitemmodel.cpp:1384
+#: models/kptnodeitemmodel.cpp:1395
 #, kde-format
 msgid "Cannot start"
 msgstr "Бастауға болмайды"
 
-#: models/kptnodeitemmodel.cpp:1397
+#: models/kptnodeitemmodel.cpp:1408
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Finished %1 late"
 msgstr "%1 кеш аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1401
+#: models/kptnodeitemmodel.cpp:1412
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Finished %1 early"
 msgstr "%1 ерте аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1403
+#: models/kptnodeitemmodel.cpp:1414
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Finished"
 msgstr "Аяқталған"
 
-#: models/kptnodeitemmodel.cpp:1408
+#: models/kptnodeitemmodel.cpp:1419
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Started %1 late"
 msgstr "%1 кеш басталған"
 
-#: models/kptnodeitemmodel.cpp:1412
+#: models/kptnodeitemmodel.cpp:1423
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Started %1 early"
 msgstr "%1 ерте басталған"
 
-#: models/kptnodeitemmodel.cpp:1414
+#: models/kptnodeitemmodel.cpp:1425
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Started"
 msgstr "Басталған"
 
-#: models/kptnodeitemmodel.cpp:1417
+#: models/kptnodeitemmodel.cpp:1428
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Running"
 msgstr "Орындалып жатыр"
 
-#: models/kptnodeitemmodel.cpp:1420
+#: models/kptnodeitemmodel.cpp:1431
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Can start"
 msgstr "Бастауға болады"
 
-#: models/kptnodeitemmodel.cpp:1423
+#: models/kptnodeitemmodel.cpp:1434
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Cannot start"
 msgstr "Бастауға болмайды"
 
-#: models/kptnodeitemmodel.cpp:1425
+#: models/kptnodeitemmodel.cpp:1436
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not started"
 msgstr "Басталмаған"
 
-#: models/kptnodeitemmodel.cpp:1451
+#: models/kptnodeitemmodel.cpp:1462
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual start: %1"
 msgstr "Шын басталуы: %1"
 
-#: models/kptnodeitemmodel.cpp:1478
+#: models/kptnodeitemmodel.cpp:1489
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task started at: %1"
 msgstr "гТапсырма басталған кезі: %1"
 
-#: models/kptnodeitemmodel.cpp:1480
+#: models/kptnodeitemmodel.cpp:1491
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task is not started"
 msgstr "гТапсырма басталмаған"
 
-#: models/kptnodeitemmodel.cpp:1502
+#: models/kptnodeitemmodel.cpp:1513
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual finish: %1"
 msgstr "Шын аяқталуы: %1"
 
-#: models/kptnodeitemmodel.cpp:1529
+#: models/kptnodeitemmodel.cpp:1540
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task finished at: %1"
 msgstr "Тапсырма аяқталған кезі: %1"
 
-#: models/kptnodeitemmodel.cpp:1531
+#: models/kptnodeitemmodel.cpp:1542
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task is not finished"
 msgstr "Тапсырма аяқталмаған"
 
-#: models/kptnodeitemmodel.cpp:1545
+#: models/kptnodeitemmodel.cpp:1556
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Planned effort until %1: %2"
 msgstr "%1 дейінгі жоспарланған жұмыс көлемі: %2"
 
-#: models/kptnodeitemmodel.cpp:1564
+#: models/kptnodeitemmodel.cpp:1575
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual effort used up to %1: %2"
 msgstr "%1 дейінгі іс жүзіндегі жұмыс көлемі: %2"
 
-#: models/kptnodeitemmodel.cpp:1589
+#: models/kptnodeitemmodel.cpp:1600
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Remaining effort: %1"
 msgstr "Қалған жұмыс көлемі: %1"
 
-#: models/kptnodeitemmodel.cpp:1616
+#: models/kptnodeitemmodel.cpp:1627
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Planned cost until %1: %2"
 msgstr "%1 дейінгі жоспарланған бағасы: %2"
 
-#: models/kptnodeitemmodel.cpp:1633
+#: models/kptnodeitemmodel.cpp:1644
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual cost until %1: %2"
 msgstr "%1 дейінгі іс жүзіндегі бағасы: %2"
 
-#: models/kptnodeitemmodel.cpp:1689
+#: models/kptnodeitemmodel.cpp:1700
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -3657,586 +3669,586 @@ msgstr ""
 "Бағалау түрі <emphasis>Жұмыс көлемі</emphasis> болғанда атықарушы бөлінуі "
 "күтілмек"
 
-#: models/kptnodeitemmodel.cpp:1722
+#: models/kptnodeitemmodel.cpp:1733
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "A resource has been overbooked"
 msgstr "Атқарушының мүмкіндіктері сарқылған"
 
-#: models/kptnodeitemmodel.cpp:1755
+#: models/kptnodeitemmodel.cpp:1766
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "No resource is available for this task"
 msgstr "Тапсырма үшін қол жеткізер атқарушы жоқ"
 
-#: models/kptnodeitemmodel.cpp:1788
+#: models/kptnodeitemmodel.cpp:1799
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Failed to comply with a timing constraint"
 msgstr "Уақыт шектеуіне келіспейушілік"
 
-#: models/kptnodeitemmodel.cpp:1821
+#: models/kptnodeitemmodel.cpp:1832
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "This task has not been scheduled"
 msgstr "Тапсырма жоспарланған жоқ"
 
-#: models/kptnodeitemmodel.cpp:1854
+#: models/kptnodeitemmodel.cpp:1865
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The assigned resources cannot deliver the required estimated effort"
 msgstr "Бөлінген атқарушы болжаулы жұмыс көлемін орындай алмайды"
 
-#: models/kptnodeitemmodel.cpp:1887
+#: models/kptnodeitemmodel.cpp:1898
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduling error"
 msgstr "Жоспарлау қатесі"
 
-#: models/kptnodeitemmodel.cpp:1915
+#: models/kptnodeitemmodel.cpp:1926
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work breakdown structure code: %1"
 msgstr "Жұмыстың жіктелген құрылым коды: %1"
 
-#: models/kptnodeitemmodel.cpp:1932
+#: models/kptnodeitemmodel.cpp:1943
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Task level: %1"
 msgstr "Тапсырма деңгейі: %1"
 
-#: models/kptnodeitemmodel.cpp:1948
+#: models/kptnodeitemmodel.cpp:1959
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Scheduled at %1: %2"
 msgstr "%1 кезіне жоспарланған жұмыстың бюджетінің бағасы: %2"
 
-#: models/kptnodeitemmodel.cpp:1964
+#: models/kptnodeitemmodel.cpp:1975
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Performed at %1: %2"
 msgstr "%1 кезіне орындалған жұмыстың бюджетінің бағасы: %2"
 
-#: models/kptnodeitemmodel.cpp:1980
+#: models/kptnodeitemmodel.cpp:1991
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual Cost of Work Performed at %1: %2"
 msgstr "%1 кезіне орындалған жұмыстың шын бағасы: %2"
 
-#: models/kptnodeitemmodel.cpp:1996
+#: models/kptnodeitemmodel.cpp:2007
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Schedule Performance Index at %1: %2"
 msgstr "%1 кезіндегі жоспарды орындау көрсеткіші: %2"
 
-#: models/kptnodeitemmodel.cpp:2066 models/kptnodeitemmodel.cpp:2101
-#: models/kptnodeitemmodel.cpp:2130
+#: models/kptnodeitemmodel.cpp:2077 models/kptnodeitemmodel.cpp:2112
+#: models/kptnodeitemmodel.cpp:2141
 #, kde-kuit-format
 msgctxt "Not available"
 msgid "NA"
 msgstr "А/Ж"
 
-#: models/kptnodeitemmodel.cpp:2078
+#: models/kptnodeitemmodel.cpp:2089
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package sent to %1 at %2"
 msgstr "%1 дегенге ең соңғы жұмыс дестесі жіберілген кезі: %2"
 
-#: models/kptnodeitemmodel.cpp:2081
+#: models/kptnodeitemmodel.cpp:2092
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package received from %1 at %2"
 msgstr "%1 дегеннен ең соңғы жұмыс дестесі қабылданған кезі: %2"
 
-#: models/kptnodeitemmodel.cpp:2083 models/kptnodeitemmodel.cpp:2147
+#: models/kptnodeitemmodel.cpp:2094 models/kptnodeitemmodel.cpp:2158
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not available"
 msgstr "Жоқ"
 
-#: models/kptnodeitemmodel.cpp:2142
+#: models/kptnodeitemmodel.cpp:2153
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package sent: %1"
 msgstr "Ең соңғы жіберілген жұмыс дестесі:%1"
 
-#: models/kptnodeitemmodel.cpp:2145
+#: models/kptnodeitemmodel.cpp:2156
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package received: %1"
 msgstr "Ең соңғы қабылданған жұмыс дестесі: %1"
 
-#: models/kptnodeitemmodel.cpp:2299 ui/RelationEditorDialog.cpp:257
+#: models/kptnodeitemmodel.cpp:2310 ui/RelationEditorDialog.cpp:257
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Түрі"
 
-#: models/kptnodeitemmodel.cpp:2300
+#: models/kptnodeitemmodel.cpp:2311
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Responsible"
 msgstr "Жауаптысы"
 
-#: models/kptnodeitemmodel.cpp:2302
+#: models/kptnodeitemmodel.cpp:2313
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Estimate Type"
 msgstr "Болжам түрі"
 
-#: models/kptnodeitemmodel.cpp:2303
+#: models/kptnodeitemmodel.cpp:2314
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Calendar"
 msgstr "Күнтізбесі"
 
-#: models/kptnodeitemmodel.cpp:2304
+#: models/kptnodeitemmodel.cpp:2315
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Estimate"
 msgstr "Болжамы"
 
-#: models/kptnodeitemmodel.cpp:2305 models/kptnodeitemmodel.cpp:2322
+#: models/kptnodeitemmodel.cpp:2316 models/kptnodeitemmodel.cpp:2333
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Optimistic"
 msgstr "Оптимисттік"
 
-#: models/kptnodeitemmodel.cpp:2306 models/kptnodeitemmodel.cpp:2323
+#: models/kptnodeitemmodel.cpp:2317 models/kptnodeitemmodel.cpp:2334
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Pessimistic"
 msgstr "Пессимисттік"
 
-#: models/kptnodeitemmodel.cpp:2307
+#: models/kptnodeitemmodel.cpp:2318
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Risk"
 msgstr "Тәуекелі"
 
-#: models/kptnodeitemmodel.cpp:2308
+#: models/kptnodeitemmodel.cpp:2319
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Priority"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2309
+#: models/kptnodeitemmodel.cpp:2320
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint"
 msgstr "Шарты"
 
-#: models/kptnodeitemmodel.cpp:2310
+#: models/kptnodeitemmodel.cpp:2321
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint Start"
 msgstr "Бастау шектеуі"
 
-#: models/kptnodeitemmodel.cpp:2311
+#: models/kptnodeitemmodel.cpp:2322
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint End"
 msgstr "Аяқтау шектеуі"
 
-#: models/kptnodeitemmodel.cpp:2312
+#: models/kptnodeitemmodel.cpp:2323
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Running Account"
 msgstr "Есептеу"
 
-#: models/kptnodeitemmodel.cpp:2313
+#: models/kptnodeitemmodel.cpp:2324
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Startup Account"
 msgstr "Бастапқы есебі"
 
-#: models/kptnodeitemmodel.cpp:2314
+#: models/kptnodeitemmodel.cpp:2325
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Startup Cost"
 msgstr "Бастапқы бағасы"
 
-#: models/kptnodeitemmodel.cpp:2315
+#: models/kptnodeitemmodel.cpp:2326
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Shutdown Account"
 msgstr "Аяқтау есебі"
 
-#: models/kptnodeitemmodel.cpp:2316
+#: models/kptnodeitemmodel.cpp:2327
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Shutdown Cost"
 msgstr "Аяқтау бағасы"
 
-#: models/kptnodeitemmodel.cpp:2317
+#: models/kptnodeitemmodel.cpp:2328
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Description"
 msgstr "Сипаттамасы"
 
-#: models/kptnodeitemmodel.cpp:2320
+#: models/kptnodeitemmodel.cpp:2331
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Expected"
 msgstr "Күтетіні"
 
-#: models/kptnodeitemmodel.cpp:2321
+#: models/kptnodeitemmodel.cpp:2332
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Variance (Est)"
 msgstr "Ауытқуы (Бағ.)"
 
-#: models/kptnodeitemmodel.cpp:2326
+#: models/kptnodeitemmodel.cpp:2337
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Start Time"
 msgstr "Бастау уақыты"
 
-#: models/kptnodeitemmodel.cpp:2327
+#: models/kptnodeitemmodel.cpp:2338
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "End Time"
 msgstr "Аяқтау уақыты"
 
-#: models/kptnodeitemmodel.cpp:2328
+#: models/kptnodeitemmodel.cpp:2339
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Early Start"
 msgstr "Ең ерте бастауы"
 
-#: models/kptnodeitemmodel.cpp:2329
+#: models/kptnodeitemmodel.cpp:2340
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Early Finish"
 msgstr "Ең ерте аяқтауы"
 
-#: models/kptnodeitemmodel.cpp:2330
+#: models/kptnodeitemmodel.cpp:2341
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Late Start"
 msgstr "Ең кеш бастауы"
 
-#: models/kptnodeitemmodel.cpp:2331
+#: models/kptnodeitemmodel.cpp:2342
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Late Finish"
 msgstr "Ең кеш аяқтауы"
 
-#: models/kptnodeitemmodel.cpp:2332
+#: models/kptnodeitemmodel.cpp:2343
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Positive Float"
 msgstr "Бар уақыт қоры"
 
-#: models/kptnodeitemmodel.cpp:2333
+#: models/kptnodeitemmodel.cpp:2344
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Free Float"
 msgstr "Бос уақыт қоры"
 
-#: models/kptnodeitemmodel.cpp:2334
+#: models/kptnodeitemmodel.cpp:2345
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Negative Float"
 msgstr "Жетпейтін уақыт"
 
-#: models/kptnodeitemmodel.cpp:2335
+#: models/kptnodeitemmodel.cpp:2346
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Start Float"
 msgstr "Бастау уақыт қоры"
 
-#: models/kptnodeitemmodel.cpp:2336
+#: models/kptnodeitemmodel.cpp:2347
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Finish Float"
 msgstr "Аяқтау уақыт қоры"
 
-#: models/kptnodeitemmodel.cpp:2337
+#: models/kptnodeitemmodel.cpp:2348
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Assignments"
 msgstr "Бөлінгені"
 
-#: models/kptnodeitemmodel.cpp:2340
+#: models/kptnodeitemmodel.cpp:2351
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Duration"
 msgstr "Ұзақтығы"
 
-#: models/kptnodeitemmodel.cpp:2341
+#: models/kptnodeitemmodel.cpp:2352
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Variance (Dur)"
 msgstr "Ауытқуы (Ұзқ)"
 
-#: models/kptnodeitemmodel.cpp:2342
+#: models/kptnodeitemmodel.cpp:2353
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Optimistic (Dur)"
 msgstr "Оптимисттік (Ұзқ)"
 
-#: models/kptnodeitemmodel.cpp:2343
+#: models/kptnodeitemmodel.cpp:2354
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Pessimistic (Dur)"
 msgstr "Пессимисттік (Ұзқ)"
 
-#: models/kptnodeitemmodel.cpp:2346 models/kptnodeitemmodel.cpp:2383
+#: models/kptnodeitemmodel.cpp:2357 models/kptnodeitemmodel.cpp:2394
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Status"
 msgstr "Күй-жайы"
 
-#: models/kptnodeitemmodel.cpp:2348
+#: models/kptnodeitemmodel.cpp:2359
 #, no-c-format, kde-kuit-format
 msgctxt "@title:column"
 msgid "% Completed"
 msgstr "Біту %"
 
-#: models/kptnodeitemmodel.cpp:2349
+#: models/kptnodeitemmodel.cpp:2360
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Planned Effort"
 msgstr "Жоспарланған жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:2350
+#: models/kptnodeitemmodel.cpp:2361
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Effort"
 msgstr "Іс жүзіндегі жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:2351
+#: models/kptnodeitemmodel.cpp:2362
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Remaining Effort"
 msgstr "Қалған жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:2352
+#: models/kptnodeitemmodel.cpp:2363
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Planned Cost"
 msgstr "Жоспарлаған бағасы"
 
-#: models/kptnodeitemmodel.cpp:2353
+#: models/kptnodeitemmodel.cpp:2364
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Cost"
 msgstr "Шын бағасы"
 
-#: models/kptnodeitemmodel.cpp:2354
+#: models/kptnodeitemmodel.cpp:2365
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Start"
 msgstr "Шын басталуы"
 
-#: models/kptnodeitemmodel.cpp:2355
+#: models/kptnodeitemmodel.cpp:2366
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Started"
 msgstr "Басталған"
 
-#: models/kptnodeitemmodel.cpp:2356
+#: models/kptnodeitemmodel.cpp:2367
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Finish"
 msgstr "Шын аяқтауы"
 
-#: models/kptnodeitemmodel.cpp:2357
+#: models/kptnodeitemmodel.cpp:2368
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Finished"
 msgstr "Аяқталған"
 
-#: models/kptnodeitemmodel.cpp:2358
+#: models/kptnodeitemmodel.cpp:2369
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Status Note"
 msgstr "Күй-жай жазбасы"
 
-#: models/kptnodeitemmodel.cpp:2361
+#: models/kptnodeitemmodel.cpp:2372
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Scheduling Status"
 msgstr "Жоспарлау күйі"
 
-#: models/kptnodeitemmodel.cpp:2362
+#: models/kptnodeitemmodel.cpp:2373
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Not Scheduled"
 msgstr "Жоспарланбаған"
 
-#: models/kptnodeitemmodel.cpp:2363
+#: models/kptnodeitemmodel.cpp:2374
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Assignment Missing"
 msgstr "Тағайындалмаған"
 
-#: models/kptnodeitemmodel.cpp:2364
+#: models/kptnodeitemmodel.cpp:2375
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Resource Overbooked"
 msgstr "Атқарушының мүмкіндіктері жетпейді"
 
-#: models/kptnodeitemmodel.cpp:2365
+#: models/kptnodeitemmodel.cpp:2376
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Resource Unavailable"
 msgstr "Атқарушы қол жеткізбейді"
 
-#: models/kptnodeitemmodel.cpp:2366
+#: models/kptnodeitemmodel.cpp:2377
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraints Error"
 msgstr "Шектеулер қатесі"
 
-#: models/kptnodeitemmodel.cpp:2367
+#: models/kptnodeitemmodel.cpp:2378
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Effort Not Met"
 msgstr "Көтермейтін жұмыс көлемі"
 
-#: models/kptnodeitemmodel.cpp:2368
+#: models/kptnodeitemmodel.cpp:2379
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Scheduling Error"
 msgstr "Жоспарлау қатесі"
 
-#: models/kptnodeitemmodel.cpp:2370
+#: models/kptnodeitemmodel.cpp:2381
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "WBS Code"
 msgstr "ЖЖҚ коды"
 
-#: models/kptnodeitemmodel.cpp:2371
+#: models/kptnodeitemmodel.cpp:2382
 #, kde-kuit-format
 msgctxt "@title:column Node level"
 msgid "Level"
 msgstr "Деңгейі"
 
-#: models/kptnodeitemmodel.cpp:2378
+#: models/kptnodeitemmodel.cpp:2389
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Critical"
 msgstr "Шешуші"
 
-#: models/kptnodeitemmodel.cpp:2379
+#: models/kptnodeitemmodel.cpp:2390
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Critical Path"
 msgstr "Шешуші тізбек"
 
-#: models/kptnodeitemmodel.cpp:2382
+#: models/kptnodeitemmodel.cpp:2393
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Иесі"
 
-#: models/kptnodeitemmodel.cpp:2384
+#: models/kptnodeitemmodel.cpp:2395
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Time"
 msgstr "Уақыт"
 
-#: models/kptnodeitemmodel.cpp:2565
+#: models/kptnodeitemmodel.cpp:2576
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package owner"
 msgstr "Жұмыс дестесінің иесі"
 
-#: models/kptnodeitemmodel.cpp:2566
+#: models/kptnodeitemmodel.cpp:2577
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package status"
 msgstr "Жұмыс дестесінің күй-жайы"
 
-#: models/kptnodeitemmodel.cpp:2567
+#: models/kptnodeitemmodel.cpp:2578
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package send/receive time"
 msgstr "Жұмыс дестесінің жіберу/қабылдау уақыты"
 
-#: models/kptnodeitemmodel.cpp:2703
+#: models/kptnodeitemmodel.cpp:2714
 msgctxt "(qtundo-format)"
 msgid "Modify name"
 msgstr "Атауын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2705
+#: models/kptnodeitemmodel.cpp:2716
 msgctxt "(qtundo-format)"
 msgid "Modify task name"
 msgstr "Тапсырманың атауын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2706
+#: models/kptnodeitemmodel.cpp:2717
 msgctxt "(qtundo-format)"
 msgid "Modify milestone name"
 msgstr "Кезең атауын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2707
+#: models/kptnodeitemmodel.cpp:2718
 msgctxt "(qtundo-format)"
 msgid "Modify summarytask name"
 msgstr "Қортынды тапсырма атауын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2708
+#: models/kptnodeitemmodel.cpp:2719
 msgctxt "(qtundo-format)"
 msgid "Modify project name"
 msgstr "Жобаның атауын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2721
+#: models/kptnodeitemmodel.cpp:2732
 msgctxt "(qtundo-format)"
 msgid "Modify responsible"
 msgstr "Жауаптысын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2746 ui/kpttaskdescriptiondialog.cpp:51
+#: models/kptnodeitemmodel.cpp:2757 ui/kpttaskdescriptiondialog.cpp:51
 msgctxt "(qtundo-format)"
 msgid "Modify task description"
 msgstr "Тапсырманың сипаттамасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2769
+#: models/kptnodeitemmodel.cpp:2780
 msgctxt "(qtundo-format)"
 msgid "Modify constraint type"
 msgstr "Шектеуінің түрін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2786
+#: models/kptnodeitemmodel.cpp:2797
 msgctxt "(qtundo-format)"
 msgid "Modify constraint start time"
 msgstr "Бастау мерзімінің шектеуін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2803
+#: models/kptnodeitemmodel.cpp:2814
 msgctxt "(qtundo-format)"
 msgid "Modify constraint end time"
 msgstr "Аяқтау мерзімінің шектеуін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2828
+#: models/kptnodeitemmodel.cpp:2839
 msgctxt "(qtundo-format)"
 msgid "Modify estimate type"
 msgstr "Болжамының түрін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2854
+#: models/kptnodeitemmodel.cpp:2865
 msgctxt "(qtundo-format)"
 msgid "Modify estimate calendar"
 msgstr "Болжамының күнтізбесін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2887 models/kptnodeitemmodel.cpp:2891
+#: models/kptnodeitemmodel.cpp:2898 models/kptnodeitemmodel.cpp:2902
 msgctxt "(qtundo-format)"
 msgid "Modify estimate"
 msgstr "Болжамын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2913
+#: models/kptnodeitemmodel.cpp:2924
 msgctxt "(qtundo-format)"
 msgid "Modify optimistic estimate"
 msgstr "Оптимисттік болжамын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2930
+#: models/kptnodeitemmodel.cpp:2941
 msgctxt "(qtundo-format)"
 msgid "Modify pessimistic estimate"
 msgstr "Пессимисттік болжамын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2954
+#: models/kptnodeitemmodel.cpp:2965
 msgctxt "(qtundo-format)"
 msgid "Modify risk type"
 msgstr "Тәуекелдің түрін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2969
+#: models/kptnodeitemmodel.cpp:2980
 #, fuzzy
 #| msgctxt "(qtundo-format)"
 #| msgid "Modify risk type"
@@ -4244,84 +4256,84 @@ msgctxt "(qtundo-format)"
 msgid "Modify priority"
 msgstr "Тәуекелдің түрін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:2989
+#: models/kptnodeitemmodel.cpp:3000
 msgctxt "(qtundo-format)"
 msgid "Modify running account"
 msgstr "Жүргізіп жатқан есебін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3011
+#: models/kptnodeitemmodel.cpp:3022
 msgctxt "(qtundo-format)"
 msgid "Modify startup account"
 msgstr "Бастапқы есебін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3028
+#: models/kptnodeitemmodel.cpp:3039
 msgctxt "(qtundo-format)"
 msgid "Modify startup cost"
 msgstr "Бастапқы бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3048
+#: models/kptnodeitemmodel.cpp:3059
 msgctxt "(qtundo-format)"
 msgid "Modify shutdown account"
 msgstr "Аяқтау есебін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3065
+#: models/kptnodeitemmodel.cpp:3076
 msgctxt "(qtundo-format)"
 msgid "Modify shutdown cost"
 msgstr "Аяқтау бағасын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3090 models/kpttaskstatusmodel.cpp:453
+#: models/kptnodeitemmodel.cpp:3101 models/kpttaskstatusmodel.cpp:453
 msgctxt "(qtundo-format)"
 msgid "Modify remaining effort"
 msgstr "Қалған жұмыс көлемін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3102 models/kpttaskstatusmodel.cpp:466
+#: models/kptnodeitemmodel.cpp:3113 models/kpttaskstatusmodel.cpp:466
 msgctxt "(qtundo-format)"
 msgid "Modify actual effort"
 msgstr "Іс жүзіндегі жұмыс көлемін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3115 models/kpttaskstatusmodel.cpp:480
+#: models/kptnodeitemmodel.cpp:3126 models/kpttaskstatusmodel.cpp:480
 msgctxt "(qtundo-format)"
 msgid "Modify actual start time"
 msgstr "Шын басталуы уақытын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3144 models/kpttaskstatusmodel.cpp:508
+#: models/kptnodeitemmodel.cpp:3155 models/kpttaskstatusmodel.cpp:508
 msgctxt "(qtundo-format)"
 msgid "Modify actual finish time"
 msgstr "Шын аяқтау уақытын өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3616
+#: models/kptnodeitemmodel.cpp:3627
 #, fuzzy
 #| msgid "Resource allocation"
 msgctxt "(qtundo-format)"
 msgid "Add resource allocation"
 msgstr "Атқарушыны бөлу"
 
-#: models/kptnodeitemmodel.cpp:3618
+#: models/kptnodeitemmodel.cpp:3629
 #, fuzzy
 #| msgid "Resource allocation"
 msgctxt "(qtundo-format)"
 msgid "Removed resource allocation"
 msgstr "Атқарушыны бөлу"
 
-#: models/kptnodeitemmodel.cpp:3641 models/kpttaskstatusmodel.cpp:403
+#: models/kptnodeitemmodel.cpp:3652 models/kpttaskstatusmodel.cpp:403
 #, no-c-format
 msgctxt "(qtundo-format)"
 msgid "Modify completion"
 msgstr "Бітуін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:3670 models/kpttaskstatusmodel.cpp:432
+#: models/kptnodeitemmodel.cpp:3681 models/kpttaskstatusmodel.cpp:432
 msgctxt "(qtundo-format)"
 msgid "Set finished"
 msgstr "Аяқталған деу"
 
-#: models/kptnodeitemmodel.cpp:4040
+#: models/kptnodeitemmodel.cpp:4051
 #, fuzzy
 #| msgid "Per task"
 msgctxt "(qtundo-format)"
 msgid "Insert tasks"
 msgstr "Тапсырмаға шаққанда"
 
-#: models/kptnodeitemmodel.cpp:4065
+#: models/kptnodeitemmodel.cpp:4076
 #, fuzzy, kde-kuit-format
 #| msgctxt "@title"
 #| msgid "Task Modules"
@@ -4329,14 +4341,14 @@ msgctxt "@title:window"
 msgid "Task Module Parameters"
 msgstr "Тапсырма модульдері"
 
-#: models/kptnodeitemmodel.cpp:4071
+#: models/kptnodeitemmodel.cpp:4082
 #, fuzzy
 #| msgid "Per task"
 msgctxt "(qtundo-format)"
 msgid "Insert task module"
 msgstr "Тапсырмаға шаққанда"
 
-#: models/kptnodeitemmodel.cpp:4129
+#: models/kptnodeitemmodel.cpp:4140
 #, fuzzy, kde-format
 #| msgctxt "(qtundo) 1=project or task name"
 #| msgid "Insert %1"
@@ -4344,24 +4356,24 @@ msgctxt "(qtundo-format)"
 msgid "Insert %1"
 msgstr "%1 дегенді ендіру"
 
-#: models/kptnodeitemmodel.cpp:4136 ui/kptrequestresourcespanel.cpp:114
+#: models/kptnodeitemmodel.cpp:4147 ui/kptrequestresourcespanel.cpp:114
 #: ui/ResourceAllocationView.cpp:154
 msgctxt "(qtundo-format)"
 msgid "Modify resource allocations"
 msgstr "Атқарушы бөлінуін өзгерту"
 
-#: models/kptnodeitemmodel.cpp:4192 models/kptnodeitemmodel.cpp:4976
+#: models/kptnodeitemmodel.cpp:4203 models/kptnodeitemmodel.cpp:4987
 msgctxt "(qtundo-format)"
 msgid "Move tasks"
 msgstr "Тапсырмаларды жылжту"
 
-#: models/kptnodeitemmodel.cpp:4260 ui/kpttaskdialog.cpp:179
+#: models/kptnodeitemmodel.cpp:4271 ui/kpttaskdialog.cpp:179
 #: ui/kpttaskdialog.cpp:216
 msgctxt "(qtundo-format)"
 msgid "Add task"
 msgstr "Тапсырманы қосу"
 
-#: models/kptnodeitemmodel.cpp:4275 ui/kpttaskdialog.cpp:214
+#: models/kptnodeitemmodel.cpp:4286 ui/kpttaskdialog.cpp:214
 msgctxt "(qtundo-format)"
 msgid "Add sub-task"
 msgstr "Тапсырманың саласын қосу"
@@ -10160,6 +10172,13 @@ msgstr "Үлестірімі"
 #, kde-format
 msgid "All supported formats"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "@info:tooltip 1=resource name, 2=list of requiered resources"
+#~| msgid "%1 (%2)"
+#~ msgctxt "@info:tooltip 1=resource name, 2=list of required resources"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
 
 #, fuzzy
 #~| msgctxt "@info:tooltip"
