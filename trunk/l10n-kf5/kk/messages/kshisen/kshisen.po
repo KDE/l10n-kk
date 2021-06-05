@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-12-20 02:19+0100\n"
+"POT-Creation-Date: 2021-06-05 00:14+0000\n"
 "PO-Revision-Date: 2012-04-17 02:56+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -145,7 +145,7 @@ msgstr "Бұл жүрісті істей алмайсыз"
 msgid "General"
 msgstr "Жалпы"
 
-#: src/board.cpp:89
+#: src/board.cpp:90
 #, kde-format
 msgctxt "%1 is a path to a tileset file"
 msgid ""
@@ -154,12 +154,12 @@ msgid ""
 "Please install the KMahjongg library."
 msgstr ""
 
-#: src/board.cpp:90
+#: src/board.cpp:91
 #, kde-format
 msgid "Error Loading Tiles"
 msgstr ""
 
-#: src/board.cpp:97
+#: src/board.cpp:98
 #, kde-format
 msgctxt "%1 is a path to a background image file"
 msgid ""
@@ -168,12 +168,12 @@ msgid ""
 "Please install the KMahjongg library."
 msgstr ""
 
-#: src/board.cpp:98
+#: src/board.cpp:99
 #, kde-format
 msgid "Error Loading Background"
 msgstr ""
 
-#: src/board.cpp:656
+#: src/board.cpp:658
 #, kde-format
 msgid ""
 "Game Paused\n"
@@ -182,7 +182,7 @@ msgstr ""
 "Ойын аялдап тұр\n"
 "Жалғастыру үшін түртіңіз."
 
-#: src/board.cpp:660
+#: src/board.cpp:662
 #, kde-format
 msgid ""
 "Game Stuck\n"
@@ -191,7 +191,7 @@ msgstr ""
 "Ойын тығырықта\n"
 "Мүмкін жүріс жоқ."
 
-#: src/board.cpp:663
+#: src/board.cpp:665
 #, kde-format
 msgid ""
 "Game Over\n"
@@ -321,8 +321,23 @@ msgstr ""
 msgid "Create solvable games only"
 msgstr "Шешімі бар ойындар ғана құрылсын"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ChineseStyle)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowUnsolvableMessage)
 #: src/settings.ui:43
+#, kde-format
+msgid ""
+"<b>Show message if board can no longer be solved</b><p>Checking this makes "
+"the game show a message to abort the game in case there are no possible "
+"moves left to win the game.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowUnsolvableMessage)
+#: src/settings.ui:46
+#, kde-format
+msgid "Show message if board can no longer be solved"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ChineseStyle)
+#: src/settings.ui:53
 #, kde-format
 msgid ""
 "<b>Use Chinese style: any flower match any flower, any season match any "
@@ -337,7 +352,7 @@ msgstr ""
 "Белгілеп қойғаны жөн.</p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChineseStyle)
-#: src/settings.ui:46
+#: src/settings.ui:56
 #, kde-format
 msgid ""
 "Use Chinese style: any flower match any flower, any season match any season"
@@ -346,7 +361,7 @@ msgstr ""
 "сәйкесті"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_TilesCanSlide)
-#: src/settings.ui:53
+#: src/settings.ui:63
 #, kde-format
 msgid ""
 "<b>Tiles can slide, but you can connect only in 2 lines instead of 3</"
@@ -364,13 +379,13 @@ msgstr ""
 "ойынды мүлдем өзгертетін параметр. Бұл қосылып тұрса, </p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_TilesCanSlide)
-#: src/settings.ui:56
+#: src/settings.ui:66
 #, kde-format
 msgid "Tiles can slide, but you can connect only in 2 lines instead of 3"
 msgstr "Тастар жылжмалы, бірақ 3 қатардың орына 2-ін ғана қосуға болады"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, difficulty_groupBox)
-#: src/settings.ui:63
+#: src/settings.ui:73
 #, kde-format
 msgid ""
 "<b>Board Difficulty</b><p>The slider controls the difficulty of the board "
@@ -379,25 +394,25 @@ msgstr ""
 "<b>Тақта күрделігі</b><p>Бұл тақтаны оңай-қиындығын басқаратын жүгірткі.</p>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, difficulty_groupBox)
-#: src/settings.ui:66
+#: src/settings.ui:76
 #, kde-format
 msgid "Board Difficulty"
 msgstr "Тақта күрделігі"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: src/settings.ui:93
+#: src/settings.ui:103
 #, kde-format
 msgid "Easy"
 msgstr "Оңай"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: src/settings.ui:113
+#: src/settings.ui:123
 #, kde-format
 msgid "Hard"
 msgstr "Қиын"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, speed_groupBox)
-#: src/settings.ui:128
+#: src/settings.ui:138
 #, kde-format
 msgid ""
 "<b>Piece Removal Speed</b><p>Adjusting this slider alters the speed at which "
@@ -407,25 +422,25 @@ msgstr ""
 "қандай жылдамдығымен алынып тастайтының басқарады.</p>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, speed_groupBox)
-#: src/settings.ui:131
+#: src/settings.ui:141
 #, kde-format
 msgid "Piece Removal Speed"
 msgstr "Тастарды кетіру жылдамдығы"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: src/settings.ui:158
+#: src/settings.ui:168
 #, kde-format
 msgid "Slow"
 msgstr "Баяу"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: src/settings.ui:178
+#: src/settings.ui:188
 #, kde-format
 msgid "Fast"
 msgstr "Жылдам"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, size_groupBox)
-#: src/settings.ui:193
+#: src/settings.ui:203
 #, kde-format
 msgid ""
 "<b>Board Size</b><p>This slider allows you to change the number of tiles on "
@@ -436,43 +451,43 @@ msgstr ""
 "болады. Бұл неғұрлым көп, соғұрлым ойын қиын (және ұзақ) болады.</p>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, size_groupBox)
-#: src/settings.ui:196
+#: src/settings.ui:206
 #, kde-format
 msgid "Board Size"
 msgstr "Тақта өлшемі"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel8)
-#: src/settings.ui:226
+#: src/settings.ui:236
 #, kde-format
 msgid "14x6"
 msgstr "14x6"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel9)
-#: src/settings.ui:246
+#: src/settings.ui:256
 #, kde-format
 msgid "16x9"
 msgstr "16x9"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: src/settings.ui:269
+#: src/settings.ui:279
 #, kde-format
 msgid "18x8"
 msgstr "18x8"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel10)
-#: src/settings.ui:292
+#: src/settings.ui:302
 #, kde-format
 msgid "24x12"
 msgstr "24x12"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel11)
-#: src/settings.ui:315
+#: src/settings.ui:325
 #, kde-format
 msgid "26x14"
 msgstr "26x14"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel12)
-#: src/settings.ui:338
+#: src/settings.ui:348
 #, kde-format
 msgid "30x16"
 msgstr "30x16"
