@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-05-25 00:20+0000\n"
+"POT-Creation-Date: 2021-07-07 00:18+0000\n"
 "PO-Revision-Date: 2013-01-15 03:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 "бұндайда өзгерістерін қадағалауы істемейді."
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: settingsdialog.ui:81 singlefileresourceconfigwidget_desktop.ui:132
+#: settingsdialog.ui:81
 #, kde-format
 msgid "Access Rights"
 msgstr "Қатынау құқықтары"
@@ -119,7 +119,7 @@ msgstr ""
 "болады."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ReadOnly)
-#: settingsdialog.ui:93 singlefileresourceconfigwidget_desktop.ui:148
+#: settingsdialog.ui:93 singlefileresourceconfigwidget_desktop.ui:92
 #, kde-format
 msgid "Read only"
 msgstr "Тек оқу үшін"
@@ -244,102 +244,103 @@ msgstr "'%1' файлы сақталмады."
 msgid "File"
 msgstr "Файл"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: singlefileresourceconfigwidget_desktop.ui:45
-#, kde-format
-msgid "Filename"
-msgstr "Файл атауы"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: singlefileresourceconfigwidget_desktop.ui:55
-#, kde-format
-msgid "&Filename:"
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: singlefileresourceconfigwidget_desktop.ui:47
+#, fuzzy, kde-format
+#| msgid "&Filename:"
+msgid "File Name:"
 msgstr "&Файл атауы:"
 
-#. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: singlefileresourceconfigwidget_desktop.ui:72
-#, kde-format
-msgid "Status:"
-msgstr "Күйі:"
-
-#. i18n: ectx: property (text), widget (QLabel, textEdit)
-#: singlefileresourceconfigwidget_desktop.ui:79
+#. i18n: ectx: property (text), widget (QLabel, pathLabel)
+#: singlefileresourceconfigwidget_desktop.ui:66
 #, kde-format
 msgid ""
-"Select the file whose contents should be represented by this resource. If "
-"the file does not exist, it will be created. A URL of a remote file can also "
-"be specified, but note that monitoring for file changes will not work in "
-"this case."
+"Select a file. A new file will be created if it doesn't exist. You can also "
+"use a URL, but in that case, monitoring for file changes is not possible."
 msgstr ""
-"Мазмұны осы деректер көзімен байланысты файлын таңдаңыз. Бұндай файл болмаса "
-"- құрылады. Қашықтағы файлдың URL-адресін де келтіруге болады, бірақ "
-"бұндайда өзгерістерін қадағалауы істемейді."
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: singlefileresourceconfigwidget_desktop.ui:96
-#, kde-format
-msgid "Display Name"
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: singlefileresourceconfigwidget_desktop.ui:79
+#, fuzzy, kde-format
+#| msgid "Display Name"
+msgid "Display Name:"
 msgstr "Көрсететін атауы"
 
-#. i18n: ectx: property (text), widget (QLabel, label_1)
-#: singlefileresourceconfigwidget_desktop.ui:104
-#, kde-format
-msgid "&Name:"
-msgstr "&Атауы:"
-
-#. i18n: ectx: property (text), widget (QLabel, textEdit_2)
-#: singlefileresourceconfigwidget_desktop.ui:119
-#, kde-format
+#. i18n: ectx: property (text), widget (QLabel, readOnlyLabel)
+#: singlefileresourceconfigwidget_desktop.ui:108
+#, fuzzy, kde-format
+#| msgid ""
+#| "If read-only mode is enabled, no changes will be written to the file "
+#| "selected above. Read-only mode will be automatically enabled if you do "
+#| "not have write access to the file or the file is on a remote server that "
+#| "does not support write access."
 msgid ""
-"Enter the name used to identify this resource in displays. If not specified, "
-"the filename will be used."
-msgstr ""
-"Деректер көзіне басқалардан айыратын атау беріңіз. Бермесеңіз - файлының "
-"атауы алынады."
-
-#. i18n: ectx: property (text), widget (QLabel, textEdit_3)
-#: singlefileresourceconfigwidget_desktop.ui:138
-#, kde-format
-msgid ""
-"If read-only mode is enabled, no changes will be written to the file "
-"selected above. Read-only mode will be automatically enabled if you do not "
-"have write access to the file or the file is on a remote server that does "
-"not support write access."
+"When read-only mode is enabled, no changes will be written. Read-only mode "
+"is automatically enabled when the selected file does not support write "
+"access."
 msgstr ""
 "Жоғарда таңдалған файлға ешбір өзгерістер енгізілмейтін болса, тек оқу үшін "
 "деп қоюға болады. Бұл файлға жазуға құқығыңыз болмаса, немесе файл жазу "
 "құқығын қолдамайтын қашықтағы серверінде болса - ол өзі де тек оқу үшін "
 "болады."
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_MonitorFile)
-#: singlefileresourceconfigwidget_desktop.ui:158
-#, kde-format
-msgid "Monitoring"
-msgstr "Қадағалау"
-
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MonitorFile)
-#: singlefileresourceconfigwidget_desktop.ui:164
+#: singlefileresourceconfigwidget_desktop.ui:121
 #, kde-format
 msgid "Enable file &monitoring"
 msgstr "Файл қ&адағалансын"
 
-#. i18n: ectx: property (text), widget (QLabel, textEdit_4)
-#: singlefileresourceconfigwidget_desktop.ui:171
+#. i18n: ectx: property (text), widget (QLabel, monitoringLabel)
+#: singlefileresourceconfigwidget_desktop.ui:134
 #, kde-format
 msgid ""
-"If file monitoring is enabled the resource will reload the file when changes "
-"are made by other programs. It also tries to create a backup in case of "
-"conflicts whenever possible."
+"Changes made by other applications will reload the file when monitoring is "
+"enabled. Backups will be created to avoid conflicts when possible."
 msgstr ""
-"Файлды қадағалауы рұқсат етілсе, басқа бір бағдарлама файлды өзгерткенде, "
-"деректер көзі оны қайта жүктеп жаңартып алады. Оған қоса, қайшылық "
-"жағдайларды ескеріп, сақтық көшірмесін жасап отыруға тырысады."
 
-#: singlefileresourceconfigwidgetbase.cpp:123
+#: singlefileresourceconfigwidgetbase.cpp:128
 #, kde-format
 msgctxt "@info:status"
 msgid "Checking file information..."
 msgstr "Файл мәліметін тексеру..."
+
+#~ msgid "Filename"
+#~ msgstr "Файл атауы"
+
+#~ msgid "Status:"
+#~ msgstr "Күйі:"
+
+#~ msgid ""
+#~ "Select the file whose contents should be represented by this resource. If "
+#~ "the file does not exist, it will be created. A URL of a remote file can "
+#~ "also be specified, but note that monitoring for file changes will not "
+#~ "work in this case."
+#~ msgstr ""
+#~ "Мазмұны осы деректер көзімен байланысты файлын таңдаңыз. Бұндай файл "
+#~ "болмаса - құрылады. Қашықтағы файлдың URL-адресін де келтіруге болады, "
+#~ "бірақ бұндайда өзгерістерін қадағалауы істемейді."
+
+#~ msgid "&Name:"
+#~ msgstr "&Атауы:"
+
+#~ msgid ""
+#~ "Enter the name used to identify this resource in displays. If not "
+#~ "specified, the filename will be used."
+#~ msgstr ""
+#~ "Деректер көзіне басқалардан айыратын атау беріңіз. Бермесеңіз - файлының "
+#~ "атауы алынады."
+
+#~ msgid "Monitoring"
+#~ msgstr "Қадағалау"
+
+#~ msgid ""
+#~ "If file monitoring is enabled the resource will reload the file when "
+#~ "changes are made by other programs. It also tries to create a backup in "
+#~ "case of conflicts whenever possible."
+#~ msgstr ""
+#~ "Файлды қадағалауы рұқсат етілсе, басқа бір бағдарлама файлды өзгерткенде, "
+#~ "деректер көзі оны қайта жүктеп жаңартып алады. Оған қоса, қайшылық "
+#~ "жағдайларды ескеріп, сақтық көшірмесін жасап отыруға тырысады."
 
 #, fuzzy
 #~| msgid "Could not create file '%1'."
