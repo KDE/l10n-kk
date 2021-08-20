@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-17 00:18+0000\n"
+"POT-Creation-Date: 2021-08-20 00:21+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -4169,7 +4169,7 @@ msgid ""
 msgstr "Жіберушісіне дұрыс куәлігі таңдап берілгенін тексеріңіз:"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:280
-#: src/crypto/gui/signencryptfileswizard.cpp:295 src/view/padwidget.cpp:477
+#: src/crypto/gui/signencryptfileswizard.cpp:360 src/view/padwidget.cpp:477
 #, kde-format
 msgctxt ""
 "%1 is a placeholder for the name of a compliance mode. E.g. NATO RESTRICTED "
@@ -4178,7 +4178,7 @@ msgid "%1 communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:282
-#: src/crypto/gui/signencryptfileswizard.cpp:297 src/view/padwidget.cpp:479
+#: src/crypto/gui/signencryptfileswizard.cpp:362 src/view/padwidget.cpp:479
 #, fuzzy, kde-format
 #| msgid "Certification Not Possible"
 msgctxt ""
@@ -4232,38 +4232,75 @@ msgctxt "@title:window"
 msgid "Select Certificates for Message \"%1\""
 msgstr "\"%1\" хатына куәліктерді таңдау"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:68
+#: src/crypto/gui/signencryptfileswizard.cpp:124
 #, fuzzy, kde-format
 #| msgid "Sign/Encrypt Files"
 msgctxt "@title"
 msgid "Sign / Encrypt Files"
 msgstr "Файлдарды қолтаңбалау/шифрлау"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:78
+#: src/crypto/gui/signencryptfileswizard.cpp:128
+#, fuzzy, kde-format
+#| msgid "Sign Files"
+msgctxt "@option:check on SignEncryptPage"
+msgid "&Sign as:"
+msgstr "Файлдарды қолтаңбалау"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:130
+#, fuzzy, kde-format
+#| msgid "Encrypt file(s)"
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt for &me:"
+msgstr "Файлд(ард)ы шифрлау"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:132
+#, fuzzy, kde-format
+#| msgid "Encrypt file(s)"
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt for &others:"
+msgstr "Файлд(ард)ы шифрлау"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:134
+#, kde-format
+msgctxt "@option:check on SignEncryptPage"
+msgid ""
+"Encrypt with &password. Anyone you share the password with can read the data."
+msgstr ""
+
+#: src/crypto/gui/signencryptfileswizard.cpp:142
 #, fuzzy, kde-format
 #| msgid "Output file:"
+msgctxt "@title:group"
 msgid "Output"
 msgstr "Шығыс файлы"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:81
+#: src/crypto/gui/signencryptfileswizard.cpp:145
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Please select an action."
 msgstr "Куәлікті таңдаңыз"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:84
+#: src/crypto/gui/signencryptfileswizard.cpp:148
+#, fuzzy, kde-format
+#| msgid "&Output folder:"
+msgctxt "@label on SignEncryptPage"
+msgid "Output &files/folder:"
+msgstr "Ш&ығыс қапшығы:"
+
+#: src/crypto/gui/signencryptfileswizard.cpp:154
 #, fuzzy, kde-format
 #| msgid "Encrypt and/or sign file(s)"
-msgid "Encrypt / Sign each file separately."
+msgctxt "@option:check on SignEncryptPage"
+msgid "Encrypt / Sign &each file separately."
 msgstr "Файлд(ард)ы шифрлау не/және қолтаңбалау"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:86
+#: src/crypto/gui/signencryptfileswizard.cpp:156
 #, kde-format
-msgctxt "@info"
+msgctxt "@info:tooltip"
 msgid "Keep each file separate instead of creating an archive for all."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:157
+#: src/crypto/gui/signencryptfileswizard.cpp:226
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4281,13 +4318,13 @@ msgstr ""
 "Kleopatra көмегімен қолтаңбалауды қалайсыз.</para><para>Kleopatra-ның келесі "
 "нұсқаларында бұндайда да бөлек қолтаңбалар қолданылатыны жоспарда.</para>"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:162
+#: src/crypto/gui/signencryptfileswizard.cpp:231
 #, kde-format
 msgctxt "@title:window"
 msgid "Unusual Signature Warning"
 msgstr "Біртүрлі қолтаңба туралы ескерту"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:183
+#: src/crypto/gui/signencryptfileswizard.cpp:252
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4300,106 +4337,108 @@ msgstr ""
 "Шифрланғанның шифрын кейін өзіңіз шеше алмайсыз деген сөз..</para> "
 "<para>Жалғастырасыз ба, әлде алушыларды таңдауына қайтасыз ба?</para>"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:186
+#: src/crypto/gui/signencryptfileswizard.cpp:255
 #, kde-format
 msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr "Өзіңізге де шифрлау туралы ескерту"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:224
+#: src/crypto/gui/signencryptfileswizard.cpp:293
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The S/MIME signature."
 msgstr "Қолтаңбасы жарамсыз."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:225
+#: src/crypto/gui/signencryptfileswizard.cpp:294
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The signature."
 msgstr "Қолтаңбасы жарамсыз."
 
-#: src/crypto/gui/signencryptfileswizard.cpp:226
+#: src/crypto/gui/signencryptfileswizard.cpp:295
 #, fuzzy, kde-format
 #| msgid "Sign and/or encrypt file(s)"
 msgid "The signed and encrypted file."
 msgstr "Файл(дар)ды қолтаңбалау және/не шифрлау"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:227
+#: src/crypto/gui/signencryptfileswizard.cpp:296
 #, fuzzy, kde-format
 #| msgid "Selected file:"
 #| msgid_plural "Selected files:"
 msgid "The encrypted file."
 msgstr "Таңдалған файл(дар):"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:228
+#: src/crypto/gui/signencryptfileswizard.cpp:297
 #, fuzzy, kde-format
 #| msgid "S/MIME export file:"
 msgid "The S/MIME encrypted file."
 msgstr "S/MIME экспорттау файлы:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:229
+#: src/crypto/gui/signencryptfileswizard.cpp:298
 #, fuzzy, kde-format
 #| msgid "&Output folder:"
 msgid "Output directory."
 msgstr "Ш&ығыс қапшығы:"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:300
+#: src/crypto/gui/signencryptfileswizard.cpp:365
 #, fuzzy, kde-format
 #| msgid "&Next"
 msgid "Next"
 msgstr "&Келесі"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:359
+#: src/crypto/gui/signencryptfileswizard.cpp:430
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr "Нәтижелері"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:361
+#: src/crypto/gui/signencryptfileswizard.cpp:432
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr "Әрекеттерінің күй-жайы мен барысы осында көрсетіледі."
 
-#: src/crypto/gui/signencryptwidget.cpp:108
-#, kde-format
+#: src/crypto/gui/signencryptwidget.cpp:107
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgctxt "@title:group"
 msgid "Prove authenticity (sign)"
-msgstr ""
+msgstr "Аутентификациялау"
 
-#: src/crypto/gui/signencryptwidget.cpp:109
+#: src/crypto/gui/signencryptwidget.cpp:108
 #, fuzzy, kde-format
 #| msgid "Sign Files"
 msgid "Sign as:"
 msgstr "Файлдарды қолтаңбалау"
 
-#: src/crypto/gui/signencryptwidget.cpp:128
-#: src/crypto/gui/signencryptwidget.cpp:458
-#, kde-format
-msgctxt "@action"
+#: src/crypto/gui/signencryptwidget.cpp:126
+#, fuzzy, kde-format
+#| msgid "Encrypt"
+msgctxt "@title:group"
 msgid "Encrypt"
 msgstr "Шифрлау"
 
-#: src/crypto/gui/signencryptwidget.cpp:134
+#: src/crypto/gui/signencryptwidget.cpp:130
 #, fuzzy, kde-format
 #| msgid "Encrypt file(s)"
 msgid "Encrypt for me:"
 msgstr "Файлд(ард)ы шифрлау"
 
-#: src/crypto/gui/signencryptwidget.cpp:140
+#: src/crypto/gui/signencryptwidget.cpp:137
 #, fuzzy, kde-format
 #| msgid "Encrypt file(s)"
 msgid "Encrypt for others:"
 msgstr "Файлд(ард)ы шифрлау"
 
-#: src/crypto/gui/signencryptwidget.cpp:169
+#: src/crypto/gui/signencryptwidget.cpp:170
 #, kde-format
 msgid ""
 "Encrypt with password. Anyone you share the password with can read the data."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:171
+#: src/crypto/gui/signencryptwidget.cpp:172
 #, kde-format
-msgctxt "Tooltip information for symetric encryption"
+msgctxt "Tooltip information for symmetric encryption"
 msgid ""
 "Additionally to the keys of the recipients you can encrypt your data with a "
 "password. Anyone who has the password can read the data without any secret "
@@ -4407,7 +4446,7 @@ msgid ""
 "Even if you pick a very strong password."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:456
+#: src/crypto/gui/signencryptwidget.cpp:467
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Sign && Encrypt"
@@ -4415,20 +4454,26 @@ msgctxt "@action"
 msgid "Sign / Encrypt"
 msgstr "Қолтаңбалау && шифрлау"
 
-#: src/crypto/gui/signencryptwidget.cpp:460
+#: src/crypto/gui/signencryptwidget.cpp:469
+#, kde-format
+msgctxt "@action"
+msgid "Encrypt"
+msgstr "Шифрлау"
+
+#: src/crypto/gui/signencryptwidget.cpp:471
 #, kde-format
 msgctxt "@action"
 msgid "Sign"
 msgstr "Қолтаңбалау"
 
-#: src/crypto/gui/signencryptwidget.cpp:616
+#: src/crypto/gui/signencryptwidget.cpp:621
 #, fuzzy, kde-format
 #| msgid "Could not bind to socket: %1"
 msgctxt "%1 is user input that could not be found"
 msgid "Could not find a key for '%1'"
 msgstr "Сокеті байланысуға келмеді: %1"
 
-#: src/crypto/gui/signencryptwidget.cpp:617
+#: src/crypto/gui/signencryptwidget.cpp:622
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to find recipient"
@@ -9890,9 +9935,6 @@ msgstr ""
 #~ msgid "Sign"
 #~ msgstr "Қолтаңбалау"
 
-#~ msgid "Encrypt"
-#~ msgstr "Шифрлау"
-
 #~ msgid "Authenticate"
 #~ msgstr "Аутентификациялау"
 
@@ -9985,11 +10027,6 @@ msgstr ""
 #~ msgctxt "@title:window"
 #~ msgid "CSR Created"
 #~ msgstr "Кілтті жасау"
-
-#, fuzzy
-#~| msgid "Authentication"
-#~ msgid "PIV authentication:"
-#~ msgstr "Аутентификациялау"
 
 #, fuzzy
 #~| msgid "Authentication"
