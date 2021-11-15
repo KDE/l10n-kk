@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-06 00:17+0000\n"
+"POT-Creation-Date: 2021-11-15 00:30+0000\n"
 "PO-Revision-Date: 2013-11-01 04:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1038,7 +1038,7 @@ msgctxt "@title:window"
 msgid "Select Filters"
 msgstr "Сүзгіні таңдау"
 
-#: filter/filterselectiondialog.cpp:38 filter/kmfilterlistbox.cpp:115
+#: filter/filterselectiondialog.cpp:38 filter/kmfilterlistbox.cpp:51
 #: folder/foldertreewidget.cpp:84
 #, fuzzy, kde-format
 #| msgctxt ""
@@ -1373,7 +1373,7 @@ msgstr ""
 msgid "Convert KMail filters to sieve scripts"
 msgstr "KMail сүзгілерін sieve скрипттеріне аудару"
 
-#: filter/kmfilterlistbox.cpp:28
+#: filter/kmfilterlistbox.cpp:41
 #, kde-format
 msgid ""
 "<qt><p>This is the list of defined filters. They are processed top-to-bottom."
@@ -1384,44 +1384,31 @@ msgstr ""
 "қосылады.</p><p>Өзгерту үшін, керек сүзгіні түртіп, оң жағындағы "
 "батырмаларды қолданыңыз.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:35
+#: filter/kmfilterlistbox.cpp:83
 #, kde-format
-msgid ""
-"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
-"inserted just before the currently-selected one, but you can always change "
-"that later on.</p><p>If you have clicked this button accidentally, you can "
-"undo this by clicking on the <em>Delete</em> button.</p></qt>"
-msgstr ""
-"<qt><p>Жаңа сүзгіні құру үшін осы батырманы басыңыз.</p><p> Ол таңдалған "
-"сүзгінің алдына енгізіледі. Оның кезектегі орнын әрқашанда өзгерте аласыз.</"
-"p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын "
-"басып, сүзгіні құрудан бас тартуға болады.</p></qt>"
+msgctxt "Move selected filter up."
+msgid "Up"
+msgstr "Жоғары"
 
-#: filter/kmfilterlistbox.cpp:43
+#: filter/kmfilterlistbox.cpp:84
 #, kde-format
-msgid ""
-"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
-"button accidentally, you can undo this by clicking on the <em>Delete</em> "
-"button.</p></qt>"
-msgstr ""
-"<qt><p>Сүзгінің көшірмесін жасау үшін осы батырманы басыңыз.</p><p>Егер бұл "
-"батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын басып сүзгінің "
-"көшірмесін құрудан бас тартуға болады.</p></qt>"
+msgctxt "Move selected filter down."
+msgid "Down"
+msgstr "Төмен"
 
-#: filter/kmfilterlistbox.cpp:48
+#: filter/kmfilterlistbox.cpp:85
 #, kde-format
-msgid ""
-"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
-"from the list above.</p><p>There is no way to get the filter back once it is "
-"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
-"discard the changes made.</p></qt>"
-msgstr ""
-"<qt><p>Осы батырманы бассаңыз таңдалған сүзгі тізімнен <em>өшіріледі</em>.</"
-"p><p>Бұдан кейін өшірілген сүзгіні қайтаруға болмайды, бірақ Сіз әрқашанда "
-"<em>Қайту</em> батырмасын басып, диалогтан шығып, бүкіл өзгертулерден бас "
-"тарта аласыз.</p></qt>"
+msgctxt "Move selected filter to the top."
+msgid "Top"
+msgstr "Жоғарға"
 
-#: filter/kmfilterlistbox.cpp:56
+#: filter/kmfilterlistbox.cpp:86
+#, kde-format
+msgctxt "Move selected filter to the bottom."
+msgid "Bottom"
+msgstr "Төменге"
+
+#: filter/kmfilterlistbox.cpp:88
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>up</em> "
@@ -1437,7 +1424,7 @@ msgstr ""
 "батырманы байқамай басып қалсаңыз, <em>Төмендету</em> батырмасын басып "
 "сүзгіні қайтаруға болады.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:65
+#: filter/kmfilterlistbox.cpp:96
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter <em>down</em> "
@@ -1453,19 +1440,7 @@ msgstr ""
 "батырманы байқамай басып қалсаңыз, <em>Жоғарлату</em> батырмасын басып "
 "сүзгіні қайтаруға болады.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:74
-#, kde-format
-msgid ""
-"<qt><p>Click this button to move the currently-selected filter to top of "
-"list.</p><p>This is useful since the order of the filters in the list "
-"determines the order in which they are tried on messages: The topmost filter "
-"gets tried first.</p></qt>"
-msgstr ""
-"<qt><p>Таңдалған сүзгіні тізімінің <em>ең жоғарына</em> шығару үшін осы "
-"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
-"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
-
-#: filter/kmfilterlistbox.cpp:81
+#: filter/kmfilterlistbox.cpp:104
 #, kde-format
 msgid ""
 "<qt><p>Click this button to move the currently-selected filter to bottom of "
@@ -1477,7 +1452,78 @@ msgstr ""
 "батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
 "кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:88
+#: filter/kmfilterlistbox.cpp:110
+#, kde-format
+msgid ""
+"<qt><p>Click this button to move the currently-selected filter to top of "
+"list.</p><p>This is useful since the order of the filters in the list "
+"determines the order in which they are tried on messages: The topmost filter "
+"gets tried first.</p></qt>"
+msgstr ""
+"<qt><p>Таңдалған сүзгіні тізімінің <em>ең жоғарына</em> шығару үшін осы "
+"батырманы басыңыз.</p><p>Сүзгілер реті маңызды, себебі ол хаттарға қолдану "
+"кезегін анықтайды. Ең жоғарғы сүзгі бірінші қолданылады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:140
+#, kde-format
+msgctxt "@action:button in filter list manipulator"
+msgid "New"
+msgstr "Жаңа"
+
+#: filter/kmfilterlistbox.cpp:141
+#, kde-format
+msgid "Copy"
+msgstr "Көшіріп алу"
+
+#: filter/kmfilterlistbox.cpp:142
+#, kde-format
+msgid "Delete"
+msgstr "Өшіру"
+
+#: filter/kmfilterlistbox.cpp:143
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgid "Rename"
+msgstr "Атын өзгерту..."
+
+#: filter/kmfilterlistbox.cpp:145
+#, kde-format
+msgid ""
+"<qt><p>Click this button to create a new filter.</p><p>The filter will be "
+"inserted just before the currently-selected one, but you can always change "
+"that later on.</p><p>If you have clicked this button accidentally, you can "
+"undo this by clicking on the <em>Delete</em> button.</p></qt>"
+msgstr ""
+"<qt><p>Жаңа сүзгіні құру үшін осы батырманы басыңыз.</p><p> Ол таңдалған "
+"сүзгінің алдына енгізіледі. Оның кезектегі орнын әрқашанда өзгерте аласыз.</"
+"p><p>Егер бұл батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын "
+"басып, сүзгіні құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:152
+#, kde-format
+msgid ""
+"<qt><p>Click this button to copy a filter.</p><p>If you have clicked this "
+"button accidentally, you can undo this by clicking on the <em>Delete</em> "
+"button.</p></qt>"
+msgstr ""
+"<qt><p>Сүзгінің көшірмесін жасау үшін осы батырманы басыңыз.</p><p>Егер бұл "
+"батырманы байқамай басып қалсаңыз, <em>Өшіру</em> батырмасын басып сүзгінің "
+"көшірмесін құрудан бас тартуға болады.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:156
+#, kde-format
+msgid ""
+"<qt><p>Click this button to <em>delete</em> the currently-selected filter "
+"from the list above.</p><p>There is no way to get the filter back once it is "
+"deleted, but you can always leave the dialog by clicking <em>Cancel</em> to "
+"discard the changes made.</p></qt>"
+msgstr ""
+"<qt><p>Осы батырманы бассаңыз таңдалған сүзгі тізімнен <em>өшіріледі</em>.</"
+"p><p>Бұдан кейін өшірілген сүзгіні қайтаруға болмайды, бірақ Сіз әрқашанда "
+"<em>Қайту</em> батырмасын басып, диалогтан шығып, бүкіл өзгертулерден бас "
+"тарта аласыз.</p></qt>"
+
+#: filter/kmfilterlistbox.cpp:163
 #, kde-format
 msgid ""
 "<qt><p>Click this button to rename the currently-selected filter.</"
@@ -1492,83 +1538,37 @@ msgstr ""
 "қайтарғыңыз келсе осы батырманы қайта басып, <em>Тазалау</em> дегенді, содан "
 "кейін көрінген диалогта <em>OK</em> дегенді басыңыз.</p></qt>"
 
-#: filter/kmfilterlistbox.cpp:147
-#, kde-format
-msgctxt "Move selected filter up."
-msgid "Up"
-msgstr "Жоғары"
-
-#: filter/kmfilterlistbox.cpp:148
-#, kde-format
-msgctxt "Move selected filter down."
-msgid "Down"
-msgstr "Төмен"
-
-#: filter/kmfilterlistbox.cpp:149
-#, kde-format
-msgctxt "Move selected filter to the top."
-msgid "Top"
-msgstr "Жоғарға"
-
-#: filter/kmfilterlistbox.cpp:150
-#, kde-format
-msgctxt "Move selected filter to the bottom."
-msgid "Bottom"
-msgstr "Төменге"
-
-#: filter/kmfilterlistbox.cpp:180
-#, kde-format
-msgctxt "@action:button in filter list manipulator"
-msgid "New"
-msgstr "Жаңа"
-
-#: filter/kmfilterlistbox.cpp:181
-#, kde-format
-msgid "Copy"
-msgstr "Көшіріп алу"
-
-#: filter/kmfilterlistbox.cpp:182
-#, kde-format
-msgid "Delete"
-msgstr "Өшіру"
-
-#: filter/kmfilterlistbox.cpp:183
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Rename"
-msgstr "Атын өзгерту..."
-
-#: filter/kmfilterlistbox.cpp:311
+#: filter/kmfilterlistbox.cpp:292
 #, kde-format
 msgid "unnamed"
 msgstr "атаусыз"
 
-#: filter/kmfilterlistbox.cpp:465
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove the filter \"%1\"?"
 msgstr "\"%1\" деген сүзгіні шын өшірмексіз бе?"
 
-#: filter/kmfilterlistbox.cpp:465
+#: filter/kmfilterlistbox.cpp:446
 #, kde-format
 msgid "Do you want to remove selected filters?"
 msgstr "Таңдалған сүзгілерді шын өшірмексіз бе?"
 
-#: filter/kmfilterlistbox.cpp:466
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Remove Filter"
 msgstr "Сүзгіні өшіру"
 
-#: filter/kmfilterlistbox.cpp:466
+#: filter/kmfilterlistbox.cpp:447
 #, kde-format
 msgid "Remove Filters"
 msgstr "Сүзгілерді өшіру"
 
-#: filter/kmfilterlistbox.cpp:682
+#: filter/kmfilterlistbox.cpp:663
 #, kde-format
 msgid "Rename Filter"
 msgstr "Сүзгіні қайта атау"
 
-#: filter/kmfilterlistbox.cpp:683
+#: filter/kmfilterlistbox.cpp:664
 #, kde-format
 msgid ""
 "Rename filter \"%1\" to:\n"
