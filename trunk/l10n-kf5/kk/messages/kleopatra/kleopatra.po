@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-26 00:28+0000\n"
+"POT-Creation-Date: 2021-11-30 00:44+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -630,8 +630,8 @@ msgstr "\"gpgconf --reload gpg-agent\" жаңылысы: %1"
 #: src/commands/decryptverifyfilescommand.cpp:172
 #: src/commands/encryptclipboardcommand.cpp:146
 #: src/commands/encryptclipboardcommand.cpp:160
-#: src/commands/signclipboardcommand.cpp:145
-#: src/commands/signclipboardcommand.cpp:159
+#: src/commands/signclipboardcommand.cpp:155
+#: src/commands/signclipboardcommand.cpp:169
 #: src/commands/signencryptfilescommand.cpp:270
 #, kde-format
 msgid "An error occurred: %1"
@@ -2465,8 +2465,8 @@ msgctxt "@info"
 msgid "PIV Card Application Administration Key set successfully."
 msgstr ""
 
-#: src/commands/signclipboardcommand.cpp:147
-#: src/commands/signclipboardcommand.cpp:161
+#: src/commands/signclipboardcommand.cpp:157
+#: src/commands/signclipboardcommand.cpp:171
 #, kde-format
 msgid "Sign Clipboard Error"
 msgstr "Алмасу буферінің қолтаңбалау қатесі"
@@ -2487,18 +2487,18 @@ msgstr "Қолтаңбалау не/және шифрлауға бір не бі
 msgid "Select Folder to Sign and/or Encrypt"
 msgstr "Қолтаңбалау не/және шифрлауға бір не бірнеше файл таңдаңыз "
 
-#: src/conf/appearanceconfigwidget.cpp:125
+#: src/conf/appearanceconfigwidget.cpp:127
 #, kde-format
 msgctxt "Key filter without user-assigned name"
 msgid "<unnamed>"
 msgstr "<аталмаған>"
 
-#: src/conf/appearanceconfigwidget.cpp:281
+#: src/conf/appearanceconfigwidget.cpp:283
 #, kde-format
 msgid "This parameter has been locked down by the system administrator."
 msgstr "Бұл параметрді жүйенің әкімшісі бұғаттаған."
 
-#: src/conf/appearanceconfigwidget.cpp:309
+#: src/conf/appearanceconfigwidget.cpp:311
 #, kde-format
 msgid "DN-Attribute Order"
 msgstr "DN-атрибуттар реті"
@@ -2796,49 +2796,49 @@ msgstr "Бақылау қосындыны есептейтіні::"
 msgid "Archive command to use when archiving files:"
 msgstr ""
 
-#: src/conf/dirservconfigpage.cpp:153
+#: src/conf/dirservconfigpage.cpp:155
 #, fuzzy, kde-format
 #| msgid "OpenPGP"
 msgid "OpenPGP keyserver:"
 msgstr "OpenPGP"
 
-#: src/conf/dirservconfigpage.cpp:165
+#: src/conf/dirservconfigpage.cpp:167
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "No Directory Servers Configured"
 msgid "X.509 Directory Services"
 msgstr "Бапталған каталог сервері жоқ"
 
-#: src/conf/dirservconfigpage.cpp:178
+#: src/conf/dirservconfigpage.cpp:180
 #, kde-format
 msgid ""
 "Configuration of directory services is not possible because the used gpgme "
 "libraries are too old."
 msgstr ""
 
-#: src/conf/dirservconfigpage.cpp:187
+#: src/conf/dirservconfigpage.cpp:189
 #, kde-format
 msgid "LDAP &timeout (minutes:seconds):"
 msgstr "LDAP кү&ту уақыты (минут:секунд)"
 
-#: src/conf/dirservconfigpage.cpp:197
+#: src/conf/dirservconfigpage.cpp:199
 #, kde-format
 msgid "&Maximum number of items returned by query:"
 msgstr "Сұранысқа қайтаратын жауаптар санының &шегі:"
 
-#: src/conf/dirservconfigpage.cpp:207
+#: src/conf/dirservconfigpage.cpp:209
 #, kde-format
 msgid "Automatically add &new servers discovered in CRL distribution points"
 msgstr ""
 "CRL тарату нүктелер жариялаған &жаңа серверлер автоматты түрде қосылсын"
 
-#: src/conf/dirservconfigpage.cpp:425
+#: src/conf/dirservconfigpage.cpp:427
 #, fuzzy, kde-format
 #| msgid "Backend error: gpgconf does not seem to know the entry for %1/%2/%3"
 msgid "Backend error: gpgconf does not seem to know the entry for %1/%2"
 msgstr "Бағдарлама қатесі: gpgconf келесі жазуды танымады - %1/%2/%3"
 
-#: src/conf/dirservconfigpage.cpp:431
+#: src/conf/dirservconfigpage.cpp:433
 #, fuzzy, kde-format
 #| msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgid "Backend error: gpgconf has wrong type for %1/%2: %3 %4"
@@ -6795,22 +6795,89 @@ msgid ""
 "the Active Directory."
 msgstr ""
 
-#. i18n: ectx: label, entry (ShowAppearanceConfiguration), group (ConfigurationDialog)
+#. i18n: ectx: label, entry (cmsEnabled), group (CMS)
 #: src/kcfg/settings.kcfg:44
+#, fuzzy, kde-format
+#| msgid "S/MIME"
+msgid "Enable S/MIME"
+msgstr "S/MIME"
+
+#. i18n: ectx: tooltip, entry (cmsEnabled), group (CMS)
+#: src/kcfg/settings.kcfg:45
+#, fuzzy, kde-format
+#| msgid "No backend support for S/MIME"
+msgid "Enables support for S/MIME (CMS)."
+msgstr "S/MIME қолдайтын тетігі жоқ"
+
+#. i18n: ectx: whatsthis, entry (cmsEnabled), group (CMS)
+#: src/kcfg/settings.kcfg:46
+#, kde-format
+msgid ""
+"If false, then Kleopatra's main UI will not offer any functionality related "
+"to S/MIME (CMS)."
+msgstr ""
+
+#. i18n: ectx: label, entry (cmsCertificateCreationAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:50
+#, fuzzy, kde-format
+#| msgid "S/MIME Certificates"
+msgid "Allow S/MIME certificate creation"
+msgstr "S/MIME куәліктері"
+
+#. i18n: ectx: tooltip, entry (cmsCertificateCreationAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:51
+#, fuzzy, kde-format
+#| msgid "Create a personal X.509 key pair and certification request "
+msgid "Allows the creation of S/MIME certificate signing requests."
+msgstr "Дербес X.509 қос кілтіңізді жасау және куәландыруын сұрау "
+
+#. i18n: ectx: whatsthis, entry (cmsCertificateCreationAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:52
+#, fuzzy, kde-format
+#| msgid "Create a personal X.509 key pair and certification request "
+msgid ""
+"If false, then Kleopatra will not offer the creation of S/MIME certificate "
+"signing requests."
+msgstr "Дербес X.509 қос кілтіңізді жасау және куәландыруын сұрау "
+
+#. i18n: ectx: label, entry (cmsSigningAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:56
+#, fuzzy, kde-format
+#| msgid "Do not list SMIME certificates"
+msgid "Allow signing with S/MIME certificates"
+msgstr "SMIME куәліктер тізімделмесін"
+
+#. i18n: ectx: tooltip, entry (cmsSigningAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:57
+#, fuzzy, kde-format
+#| msgid "Do not list SMIME certificates"
+msgid "Allows signing of text or files with S/MIME certificates."
+msgstr "SMIME куәліктер тізімделмесін"
+
+#. i18n: ectx: whatsthis, entry (cmsSigningAllowed), group (CMS)
+#: src/kcfg/settings.kcfg:58
+#, kde-format
+msgid ""
+"If false, then Kleopatra will not offer functionality for creating "
+"signatures with S/MIME certificates."
+msgstr ""
+
+#. i18n: ectx: label, entry (ShowAppearanceConfiguration), group (ConfigurationDialog)
+#: src/kcfg/settings.kcfg:64
 #, fuzzy, kde-format
 #| msgid "Show owner information"
 msgid "Show appearance configuration"
 msgstr "Иесі мәліметі"
 
 #. i18n: ectx: label, entry (ShowCryptoOperationsConfiguration), group (ConfigurationDialog)
-#: src/kcfg/settings.kcfg:48
+#: src/kcfg/settings.kcfg:68
 #, fuzzy, kde-format
 #| msgid "Show certificate owner information"
 msgid "Show crypto operations configuration"
 msgstr "Куәлік иесі туралы мәліметі көрсетілсін"
 
 #. i18n: ectx: label, entry (ShowDirectoryServicesConfiguration), group (ConfigurationDialog)
-#: src/kcfg/settings.kcfg:52
+#: src/kcfg/settings.kcfg:72
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "No Directory Servers Configured"
@@ -6818,57 +6885,35 @@ msgid "Show directory services configuration"
 msgstr "Бапталған каталог сервері жоқ"
 
 #. i18n: ectx: label, entry (ShowGnuPGSystemConfiguration), group (ConfigurationDialog)
-#: src/kcfg/settings.kcfg:56
+#: src/kcfg/settings.kcfg:76
 #, fuzzy, kde-format
 #| msgid "Show owner information"
 msgid "Show GnuPG system configuration"
 msgstr "Иесі мәліметі"
 
 #. i18n: ectx: label, entry (ShowSMimeValidationConfiguration), group (ConfigurationDialog)
-#: src/kcfg/settings.kcfg:60
+#: src/kcfg/settings.kcfg:80
 #, kde-format
 msgid "Show S/MIME validation configuration"
 msgstr ""
 
 #. i18n: ectx: label, entry (GroupsEnabled), group (Groups)
-#: src/kcfg/settings.kcfg:66
+#: src/kcfg/settings.kcfg:86
 #, fuzzy, kde-format
 #| msgid "Show Details"
 msgid "Enable Groups"
 msgstr "Егжей-тегжейлерін көрсету"
 
 #. i18n: ectx: tooltip, entry (GroupsEnabled), group (Groups)
-#: src/kcfg/settings.kcfg:67
+#: src/kcfg/settings.kcfg:87
 #, kde-format
 msgid "Enable usage of groups of keys."
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (GroupsEnabled), group (Groups)
-#: src/kcfg/settings.kcfg:68
+#: src/kcfg/settings.kcfg:88
 #, kde-format
 msgid "Enable usage of groups of keys to create lists of recipients."
-msgstr ""
-
-#. i18n: ectx: label, entry (cmsEnabled), group (Protocols)
-#: src/kcfg/settings.kcfg:74
-#, fuzzy, kde-format
-#| msgid "S/MIME"
-msgid "Enable S/MIME"
-msgstr "S/MIME"
-
-#. i18n: ectx: tooltip, entry (cmsEnabled), group (Protocols)
-#: src/kcfg/settings.kcfg:75
-#, fuzzy, kde-format
-#| msgid "No backend support for S/MIME"
-msgid "Enables support for S/MIME (CMS)."
-msgstr "S/MIME қолдайтын тетігі жоқ"
-
-#. i18n: ectx: whatsthis, entry (cmsEnabled), group (Protocols)
-#: src/kcfg/settings.kcfg:76
-#, kde-format
-msgid ""
-"If false, then Kleopatra's main UI will not offer any functionality related "
-"to S/MIME (CMS)."
 msgstr ""
 
 #. i18n: ectx: label, entry (RefreshInterval), group (SMime Validation)
@@ -7412,7 +7457,7 @@ msgstr "Әлі бітпеген тапсырмалар бар"
 msgid "Sign/Encrypt..."
 msgstr "Қолтаңбалау/Шифрлау"
 
-#: src/mainwindow.cpp:636 src/utils/clipboardmenu.cpp:41
+#: src/mainwindow.cpp:636 src/utils/clipboardmenu.cpp:42
 #: src/view/keylistcontroller.cpp:378
 #, kde-format
 msgid "Decrypt/Verify..."
@@ -9023,12 +9068,12 @@ msgstr "Куәлік импорты"
 msgid "Encrypt..."
 msgstr "Шифрлау..."
 
-#: src/utils/clipboardmenu.cpp:38
+#: src/utils/clipboardmenu.cpp:39
 #, kde-format
 msgid "S/MIME-Sign..."
 msgstr "S/MIME-қолтаңбасы..."
 
-#: src/utils/clipboardmenu.cpp:40
+#: src/utils/clipboardmenu.cpp:41
 #, kde-format
 msgid "OpenPGP-Sign..."
 msgstr "OpenPGP-қолтаңбасы..."
@@ -10168,89 +10213,89 @@ msgctxt "@title:tab smartcard application - serial number of smartcard"
 msgid "%1 - %2"
 msgstr ""
 
-#: src/view/tabwidget.cpp:562
+#: src/view/tabwidget.cpp:618
 #, kde-format
 msgid "Rename Tab"
 msgstr "Қойындыны қайта атау"
 
-#: src/view/tabwidget.cpp:562
+#: src/view/tabwidget.cpp:618
 #, kde-format
 msgid "New tab title:"
 msgstr "Жаңа атауы:"
 
-#: src/view/tabwidget.cpp:772
+#: src/view/tabwidget.cpp:828
 #, kde-format
 msgid "New Tab"
 msgstr "Жаңа қойынды"
 
-#: src/view/tabwidget.cpp:772
+#: src/view/tabwidget.cpp:828
 #, kde-format
 msgid "Open a new tab"
 msgstr "Жаңа қойындыны ашу"
 
-#: src/view/tabwidget.cpp:780
+#: src/view/tabwidget.cpp:836
 #, kde-format
 msgid "Rename Tab..."
 msgstr "Қойындыны қайта атау"
 
-#: src/view/tabwidget.cpp:780
+#: src/view/tabwidget.cpp:836
 #, kde-format
 msgid "Rename this tab"
 msgstr "Осы қойындының атауын өзгерту"
 
-#: src/view/tabwidget.cpp:784
+#: src/view/tabwidget.cpp:840
 #, kde-format
 msgid "Duplicate Tab"
 msgstr "Қойындыны қосарлау"
 
-#: src/view/tabwidget.cpp:784
+#: src/view/tabwidget.cpp:840
 #, kde-format
 msgid "Duplicate this tab"
 msgstr "Осы қойындының көшірмесін жасау"
 
-#: src/view/tabwidget.cpp:788
+#: src/view/tabwidget.cpp:844
 #, kde-format
 msgid "Close Tab"
 msgstr "Қойындыны жабу"
 
-#: src/view/tabwidget.cpp:788
+#: src/view/tabwidget.cpp:844
 #, kde-format
 msgid "Close this tab"
 msgstr "Осы қойындыны жабу"
 
-#: src/view/tabwidget.cpp:792
+#: src/view/tabwidget.cpp:848
 #, kde-format
 msgid "Move Tab Left"
 msgstr "Солға жылжыту"
 
-#: src/view/tabwidget.cpp:792
+#: src/view/tabwidget.cpp:848
 #, fuzzy, kde-format
 #| msgid "Move Tab Left"
 msgid "Move this tab left"
 msgstr "Солға жылжыту"
 
-#: src/view/tabwidget.cpp:796
+#: src/view/tabwidget.cpp:852
 #, kde-format
 msgid "Move Tab Right"
 msgstr "Оңға жылжыту"
 
-#: src/view/tabwidget.cpp:796
+#: src/view/tabwidget.cpp:852
 #, fuzzy, kde-format
 #| msgid "Move Tab Right"
 msgid "Move this tab right"
 msgstr "Оңға жылжыту"
 
-#: src/view/tabwidget.cpp:800
+#: src/view/tabwidget.cpp:856
 #, kde-format
 msgid "Hierarchical Certificate List"
 msgstr "Иерархиялық куәліктер тізімі"
 
-#: src/view/tabwidget.cpp:804
+#: src/view/tabwidget.cpp:860
 #, kde-format
 msgid "Expand All"
 msgstr "Барлығын тарқату"
 
-#: src/view/tabwidget.cpp:808
+#: src/view/tabwidget.cpp:864
 #, kde-format
 msgid "Collapse All"
 msgstr "Барлығын бүктеу"
@@ -11799,9 +11844,6 @@ msgstr ""
 
 #~ msgid "Perform hierarchical certificate listing"
 #~ msgstr "Иерархиялық куәліктерді тізімдеу"
-
-#~ msgid "Do not list SMIME certificates"
-#~ msgstr "SMIME куәліктер тізімделмесін"
 
 #~ msgid "UserIDListModel Test"
 #~ msgstr "UserIDListModel сынағы"
