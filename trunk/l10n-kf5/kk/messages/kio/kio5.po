@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-23 00:40+0000\n"
+"POT-Creation-Date: 2021-12-29 00:45+0000\n"
 "PO-Revision-Date: 2012-12-31 04:15+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 msgid "Unable to create io-slave: %1"
 msgstr "%1 io-slave құру болмайды"
 
-#: core/copyjob.cpp:165 ioslaves/file/file_unix.cpp:1282
+#: core/copyjob.cpp:165 ioslaves/file/file_unix.cpp:1291
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not create symlink %1.\n"
@@ -2371,17 +2371,17 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Беймәлім қате"
 
-#: core/kfileitem.cpp:1352
+#: core/kfileitem.cpp:1346
 #, kde-format
 msgid "(Symbolic Link to %1)"
 msgstr "(%1 дегенге символдық сілтеме)"
 
-#: core/kfileitem.cpp:1354
+#: core/kfileitem.cpp:1348
 #, kde-format
 msgid "(%1, Link to %2)"
 msgstr "( %1, %2 дегенге сілтеме)"
 
-#: core/kfileitem.cpp:1357
+#: core/kfileitem.cpp:1351
 #, kde-format
 msgid " (Points to %1)"
 msgstr " (Көрсететіні %1)"
@@ -3805,9 +3805,9 @@ msgstr "Компьютер желіден тыс"
 #. i18n: ectx: property (text), widget (QPushButton, sha1CopyButton)
 #. i18n: ectx: property (text), widget (QPushButton, sha256CopyButton)
 #. i18n: ectx: property (text), widget (QPushButton, sha512CopyButton)
-#: filewidgets/kurlnavigator.cpp:494 widgets/checksumswidget.ui:118
-#: widgets/checksumswidget.ui:156 widgets/checksumswidget.ui:194
-#: widgets/checksumswidget.ui:232
+#: filewidgets/kurlnavigator.cpp:494 ioslaves/file/file_unix.cpp:134
+#: widgets/checksumswidget.ui:118 widgets/checksumswidget.ui:156
+#: widgets/checksumswidget.ui:194 widgets/checksumswidget.ui:232
 #, kde-format
 msgid "Copy"
 msgstr "Көшіріп алу"
@@ -4146,13 +4146,18 @@ msgstr "Дискжетек: %1"
 msgid "Change Timestamp"
 msgstr ""
 
-#: ioslaves/file/file_unix.cpp:134
+#: ioslaves/file/file_unix.cpp:135
+#, kde-format
+msgid "From: %1, To: %1"
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:138
 #, fuzzy, kde-format
 #| msgid "Unknown Interruption"
 msgid "Unknown Action"
 msgstr "Беймәлім үзілім"
 
-#: ioslaves/file/file_unix.cpp:139
+#: ioslaves/file/file_unix.cpp:143
 #, kde-format
 msgid ""
 "Action: %1\n"
@@ -4160,25 +4165,90 @@ msgid ""
 "%3"
 msgstr ""
 
-#: ioslaves/file/file_unix.cpp:831
+#: ioslaves/file/file_unix.cpp:840
 #, kde-format
 msgid "Cannot copy file from %1 to %2. (Errno: %3)"
 msgstr "%1 файлы %2 дегенге көшірілмеді. (Қате N: %3)"
 
-#: ioslaves/file/file_unix.cpp:1056
+#: ioslaves/file/file_unix.cpp:1065
 #, kde-format
 msgid "No media in device for %1"
 msgstr "%1 құрылғысында тасушы жоқ"
 
-#: ioslaves/file/file_unix.cpp:1367
+#: ioslaves/file/file_unix.cpp:1376
 #, kde-format
 msgid "Could not get user id for given user name %1"
 msgstr "%1 деген пайдаланушының id параметры жоқ"
 
-#: ioslaves/file/file_unix.cpp:1379
+#: ioslaves/file/file_unix.cpp:1388
 #, kde-format
 msgid "Could not get group id for given group name %1"
 msgstr "%1 деген топтың id параметры жоқ"
+
+#: ioslaves/file/file_unix.cpp:1540
+#, kde-format
+msgid "Authentication is required to change this file's permissions."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1541
+#, kde-format
+msgid "Authentication is required to change who owns this file."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1542
+#, fuzzy, kde-format
+#| msgid "You are not authorized to execute this file."
+msgid "Authentication is required to delete this file."
+msgstr "Бұл файлды орындауға рұқсатыңыз жоқ."
+
+#: ioslaves/file/file_unix.cpp:1543
+#, fuzzy, kde-format
+#| msgid "Click this button to create a new folder."
+msgid "Authentication is required to create a folder."
+msgstr "Жаңа қапшықты құру үшін осы батырманы басыңыз."
+
+#: ioslaves/file/file_unix.cpp:1544
+#, fuzzy, kde-format
+#| msgid "Cannot open file"
+msgid "Authentication is required to open this file."
+msgstr "Файл ашылмады"
+
+#: ioslaves/file/file_unix.cpp:1545
+#, kde-format
+msgid "Authentication is required to open this folder."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1546
+#, fuzzy, kde-format
+#| msgid "You are not authorized to execute this file."
+msgid "Authentication is required to rename this file."
+msgstr "Бұл файлды орындауға рұқсатыңыз жоқ."
+
+#: ioslaves/file/file_unix.cpp:1547
+#, fuzzy, kde-format
+#| msgid "You are not authorized to execute this file."
+msgid "Authentication is required to delete this folder."
+msgstr "Бұл файлды орындауға рұқсатыңыз жоқ."
+
+#: ioslaves/file/file_unix.cpp:1548
+#, kde-format
+msgid "Authentication is required to create a symlink."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1549
+#, kde-format
+msgid "Authentication is required to modify this file's last updated time."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1550
+#, kde-format
+msgid "Authentication is required to copy this item."
+msgstr ""
+
+#: ioslaves/file/file_unix.cpp:1551
+#, kde-format
+msgid "Authentication is required to perform this action."
+msgstr ""
 
 #: ioslaves/ftp/ftp.cpp:339
 #, kde-format
@@ -7339,7 +7409,7 @@ msgstr "Иесі"
 msgid "Owning Group"
 msgstr "Ие тобы"
 
-#: widgets/kacleditwidget.cpp:410 widgets/kpropertiesdialog.cpp:2095
+#: widgets/kacleditwidget.cpp:410 widgets/kpropertiesdialog.cpp:2098
 #, kde-format
 msgid "Others"
 msgstr "Өзгелері"
@@ -8373,53 +8443,53 @@ msgstr "Мазмұнын қарауға болады"
 msgid "Can View/Read & Modify/Write"
 msgstr "Қарау/оқуға мен өзгерту/жазуға болады"
 
-#: widgets/kpropertiesdialog.cpp:1816
+#: widgets/kpropertiesdialog.cpp:1819
 #, kde-format
 msgid "&Permissions"
 msgstr "&Рұқсаттар"
 
-#: widgets/kpropertiesdialog.cpp:1828 widgets/kpropertiesdialog.cpp:2024
+#: widgets/kpropertiesdialog.cpp:1831 widgets/kpropertiesdialog.cpp:2027
 #, kde-format
 msgid "Access Permissions"
 msgstr "Қатынау рұқсаттары"
 
-#: widgets/kpropertiesdialog.cpp:1837
+#: widgets/kpropertiesdialog.cpp:1840
 #, kde-format
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "Бұл файл(дар) сілтеме болып рұқсаттары жоқ."
 
-#: widgets/kpropertiesdialog.cpp:1839
+#: widgets/kpropertiesdialog.cpp:1842
 #, kde-format
 msgid "Only the owner can change permissions."
 msgstr "Рұқсаттарын тек иесі ғана өзгерте алады."
 
-#: widgets/kpropertiesdialog.cpp:1843
+#: widgets/kpropertiesdialog.cpp:1846
 #, kde-format
 msgid "O&wner:"
 msgstr "&Иесіне:"
 
-#: widgets/kpropertiesdialog.cpp:1849
+#: widgets/kpropertiesdialog.cpp:1852
 #, kde-format
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Иесі жасай алатын әрекеттерді көрсетеді."
 
-#: widgets/kpropertiesdialog.cpp:1851
+#: widgets/kpropertiesdialog.cpp:1854
 #, kde-format
 msgid "Gro&up:"
 msgstr "&Тобына:"
 
-#: widgets/kpropertiesdialog.cpp:1857
+#: widgets/kpropertiesdialog.cpp:1860
 #, kde-format
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Топ мүшелері жасай алатын әрекеттерді көрсетеді."
 
-#: widgets/kpropertiesdialog.cpp:1859
+#: widgets/kpropertiesdialog.cpp:1862
 #, kde-format
 msgid "O&thers:"
 msgstr "&Өзгелерге:"
 
-#: widgets/kpropertiesdialog.cpp:1866
+#: widgets/kpropertiesdialog.cpp:1869
 #, kde-format
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
@@ -8428,17 +8498,17 @@ msgstr ""
 "Иесі не топ мүшелері емес өзге пайдаланушылар жасай алатын әрекеттерді "
 "көрсетеді."
 
-#: widgets/kpropertiesdialog.cpp:1870
+#: widgets/kpropertiesdialog.cpp:1873
 #, kde-format
 msgid "Only own&er can rename and delete folder content"
 msgstr "И&есі ғана қапшықтағыны өшіре я қайта атай алады"
 
-#: widgets/kpropertiesdialog.cpp:1870
+#: widgets/kpropertiesdialog.cpp:1873
 #, kde-format
 msgid "Is &executable"
 msgstr "&Орындауға болады"
 
-#: widgets/kpropertiesdialog.cpp:1873
+#: widgets/kpropertiesdialog.cpp:1876
 #, kde-format
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
@@ -8449,7 +8519,7 @@ msgstr ""
 "атауға құқылы болсын десеңіз, осыны таңдаңыз. Өзгелер \"Мазмұнын өзгерту\" "
 "рұқсатына сәйкес тек жаңа файлдарды қоса алады."
 
-#: widgets/kpropertiesdialog.cpp:1877
+#: widgets/kpropertiesdialog.cpp:1880
 #, kde-format
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
@@ -8458,42 +8528,42 @@ msgstr ""
 "Файлды орындалатын деп белгілеу үшін осыны таңдаңыз. Бұның мағынасы тек "
 "бағдарламалар мен скрипттер үшін ғана бар. Файлды орындау үшін қажет."
 
-#: widgets/kpropertiesdialog.cpp:1884
+#: widgets/kpropertiesdialog.cpp:1887
 #, kde-format
 msgid "A&dvanced Permissions"
 msgstr "Қ&осымша рұқсаттар"
 
-#: widgets/kpropertiesdialog.cpp:1892
+#: widgets/kpropertiesdialog.cpp:1895
 #, kde-format
 msgid "Ownership"
 msgstr "Иелігі"
 
-#: widgets/kpropertiesdialog.cpp:1899
+#: widgets/kpropertiesdialog.cpp:1902
 #, kde-format
 msgid "User:"
 msgstr "Иесі:"
 
-#: widgets/kpropertiesdialog.cpp:1938
+#: widgets/kpropertiesdialog.cpp:1941
 #, kde-format
 msgid "Group:"
 msgstr "Тобы:"
 
-#: widgets/kpropertiesdialog.cpp:1973
+#: widgets/kpropertiesdialog.cpp:1976
 #, kde-format
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Өзгертулер ішкі қапшықтар мен олардың мазмұнына қолданылсын"
 
-#: widgets/kpropertiesdialog.cpp:2015
+#: widgets/kpropertiesdialog.cpp:2018
 #, kde-format
 msgid "Advanced Permissions"
 msgstr "Қосымша рұқсаттар"
 
-#: widgets/kpropertiesdialog.cpp:2032
+#: widgets/kpropertiesdialog.cpp:2035
 #, kde-format
 msgid "Class"
 msgstr "Санат"
 
-#: widgets/kpropertiesdialog.cpp:2039
+#: widgets/kpropertiesdialog.cpp:2042
 #, kde-format
 msgid ""
 "Show\n"
@@ -8502,22 +8572,22 @@ msgstr ""
 "Ішін\n"
 "көрсету"
 
-#: widgets/kpropertiesdialog.cpp:2040
+#: widgets/kpropertiesdialog.cpp:2043
 #, kde-format
 msgid "This flag allows viewing the content of the folder."
 msgstr "Бұл жалауша қапшықтың ішіндегісін көруге рұқсат береді."
 
-#: widgets/kpropertiesdialog.cpp:2042
+#: widgets/kpropertiesdialog.cpp:2045
 #, kde-format
 msgid "Read"
 msgstr "Оқу"
 
-#: widgets/kpropertiesdialog.cpp:2043
+#: widgets/kpropertiesdialog.cpp:2046
 #, kde-format
 msgid "The Read flag allows viewing the content of the file."
 msgstr "\"Оқу\" жалаушасы файлдың мазмұнын оқуға мүмкіндік береді."
 
-#: widgets/kpropertiesdialog.cpp:2049
+#: widgets/kpropertiesdialog.cpp:2052
 #, kde-format
 msgid ""
 "Write\n"
@@ -8526,7 +8596,7 @@ msgstr ""
 "Ішінде\n"
 "жазу"
 
-#: widgets/kpropertiesdialog.cpp:2051
+#: widgets/kpropertiesdialog.cpp:2054
 #, kde-format
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
@@ -8535,17 +8605,17 @@ msgstr ""
 "Бұл жалауша файлды қосуға, қайта атауға және өшіруге мүмкіндік береді. Өшіру "
 "мен қайта атау \"Орнықты\" жалаушасымен де шектеледі."
 
-#: widgets/kpropertiesdialog.cpp:2054
+#: widgets/kpropertiesdialog.cpp:2057
 #, kde-format
 msgid "Write"
 msgstr "Жазу"
 
-#: widgets/kpropertiesdialog.cpp:2055
+#: widgets/kpropertiesdialog.cpp:2058
 #, kde-format
 msgid "The Write flag allows modifying the content of the file."
 msgstr "\"Жазу\" жалаушасы файлдың мазмұнын өзгертуге мүмкіндік береді."
 
-#: widgets/kpropertiesdialog.cpp:2061
+#: widgets/kpropertiesdialog.cpp:2064
 #, kde-format
 msgctxt "Enter folder"
 msgid "Enter"
@@ -8553,27 +8623,27 @@ msgstr ""
 "Ішіне\n"
 "кіру"
 
-#: widgets/kpropertiesdialog.cpp:2062
+#: widgets/kpropertiesdialog.cpp:2065
 #, kde-format
 msgid "Enable this flag to allow entering the folder."
 msgstr "Бұл жалауша қапшықты ашуға рұқсат береді."
 
-#: widgets/kpropertiesdialog.cpp:2064
+#: widgets/kpropertiesdialog.cpp:2067
 #, kde-format
 msgid "Exec"
 msgstr "Орындау"
 
-#: widgets/kpropertiesdialog.cpp:2065
+#: widgets/kpropertiesdialog.cpp:2068
 #, kde-format
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "Файлды бағдарлама ретінде орындау үшін осы жалаушасы керек."
 
-#: widgets/kpropertiesdialog.cpp:2073
+#: widgets/kpropertiesdialog.cpp:2076
 #, kde-format
 msgid "Special"
 msgstr "Арнайы"
 
-#: widgets/kpropertiesdialog.cpp:2078
+#: widgets/kpropertiesdialog.cpp:2081
 #, kde-format
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
@@ -8582,24 +8652,24 @@ msgstr ""
 "Арнайы жалауша. Бүкіл қапшыққа әсер етеді. Жалаушаның нақты мәнін оң жақ "
 "бағаннан көруге болады."
 
-#: widgets/kpropertiesdialog.cpp:2082
+#: widgets/kpropertiesdialog.cpp:2085
 #, kde-format
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
 msgstr "Арнайы жалауша. Жалаушаның нақты мәнін оң жақ бағаннан көруге болады."
 
-#: widgets/kpropertiesdialog.cpp:2087
+#: widgets/kpropertiesdialog.cpp:2090
 #, kde-format
 msgid "User"
 msgstr "Иесі"
 
-#: widgets/kpropertiesdialog.cpp:2091
+#: widgets/kpropertiesdialog.cpp:2094
 #, kde-format
 msgid "Group"
 msgstr "Тобы"
 
-#: widgets/kpropertiesdialog.cpp:2102
+#: widgets/kpropertiesdialog.cpp:2105
 #, kde-format
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
@@ -8608,7 +8678,7 @@ msgstr ""
 "Егер бұл жалауша қойыса, қапшық иесі осы қапшықтағы барлық жаңа файлдардың "
 "иесі болады."
 
-#: widgets/kpropertiesdialog.cpp:2106
+#: widgets/kpropertiesdialog.cpp:2109
 #, kde-format
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
@@ -8617,7 +8687,7 @@ msgstr ""
 "Егер бұл файл орындалатын болып осы жалаушасы қойылса, файл әрқашан иесінің "
 "құқықтарымен орындалады."
 
-#: widgets/kpropertiesdialog.cpp:2113
+#: widgets/kpropertiesdialog.cpp:2116
 #, kde-format
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
@@ -8625,7 +8695,7 @@ msgstr ""
 "Егер бұл жалауша қойлса, бұл қапшықтың тобы барлық ішіндегі жаңа файлдарына "
 "беріледі."
 
-#: widgets/kpropertiesdialog.cpp:2117
+#: widgets/kpropertiesdialog.cpp:2120
 #, kde-format
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
@@ -8634,7 +8704,7 @@ msgstr ""
 "Егер бұл файл орындалатын болып осы жалаушасы қойылса, файл әрқашан тобының "
 "құқықтарымен орындалады."
 
-#: widgets/kpropertiesdialog.cpp:2124
+#: widgets/kpropertiesdialog.cpp:2127
 #, kde-format
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
@@ -8644,7 +8714,7 @@ msgstr ""
 "қайта атау құқығы тек иесі мен root-қа беріледі. Әйтпесе, бұны жазуға "
 "рұқсаты бар кез келген жасай алады."
 
-#: widgets/kpropertiesdialog.cpp:2129
+#: widgets/kpropertiesdialog.cpp:2132
 #, kde-format
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
@@ -8653,86 +8723,86 @@ msgstr ""
 "Linux файлдағы \"Орнықты\" жалаушасын елемеді, бірақ басқа жүйелерде ол "
 "қолданылуы мүмкін."
 
-#: widgets/kpropertiesdialog.cpp:2190
+#: widgets/kpropertiesdialog.cpp:2193
 #, kde-format
 msgid "Set UID"
 msgstr "SUID"
 
-#: widgets/kpropertiesdialog.cpp:2194
+#: widgets/kpropertiesdialog.cpp:2197
 #, kde-format
 msgid "Set GID"
 msgstr "SGID"
 
-#: widgets/kpropertiesdialog.cpp:2198
+#: widgets/kpropertiesdialog.cpp:2201
 #, kde-format
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Орнықты"
 
-#: widgets/kpropertiesdialog.cpp:2303
+#: widgets/kpropertiesdialog.cpp:2306
 #, kde-format
 msgid "Link"
 msgstr "Сілтеме"
 
-#: widgets/kpropertiesdialog.cpp:2323
+#: widgets/kpropertiesdialog.cpp:2326
 #, kde-format
 msgid "Varying (No Change)"
 msgstr "Айнымалылар (Өзгертпеу)"
 
-#: widgets/kpropertiesdialog.cpp:2434
+#: widgets/kpropertiesdialog.cpp:2437
 #, kde-format
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Бұл файл(дар) үшін қосымша рұқсаттар қолданылады."
 
-#: widgets/kpropertiesdialog.cpp:2456
+#: widgets/kpropertiesdialog.cpp:2459
 #, kde-format
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Бұл қапшық(тар) үшін қосымша рұқсаттар қолданылады."
 
-#: widgets/kpropertiesdialog.cpp:2470
+#: widgets/kpropertiesdialog.cpp:2473
 #, kde-format
 msgid "These files use advanced permissions."
 msgstr "Бұл файлдар үшін қосымша рұқсаттар қолданылады."
 
-#: widgets/kpropertiesdialog.cpp:2716
+#: widgets/kpropertiesdialog.cpp:2719
 #, kde-format
 msgctxt "@title:tab"
 msgid "C&hecksums"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2781 widgets/kpropertiesdialog.cpp:2792
-#: widgets/kpropertiesdialog.cpp:2803 widgets/kpropertiesdialog.cpp:2814
+#: widgets/kpropertiesdialog.cpp:2784 widgets/kpropertiesdialog.cpp:2795
+#: widgets/kpropertiesdialog.cpp:2806 widgets/kpropertiesdialog.cpp:2817
 #, fuzzy, kde-format
 #| msgid "Calculating..."
 msgctxt "@action:button"
 msgid "Calculating..."
 msgstr "Есептеу..."
 
-#: widgets/kpropertiesdialog.cpp:2970
+#: widgets/kpropertiesdialog.cpp:2973
 #, kde-format
 msgid "Invalid checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2973
+#: widgets/kpropertiesdialog.cpp:2976
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The given input is not a valid MD5, SHA1 or SHA256 checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2984
+#: widgets/kpropertiesdialog.cpp:2987
 #, kde-format
 msgid "Checksums match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2987
+#: widgets/kpropertiesdialog.cpp:2990
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2999
+#: widgets/kpropertiesdialog.cpp:3002
 #, kde-format
 msgid ""
 "<p>Checksums do not match.</p>This may be due to a faulty download. Try re-"
@@ -8740,56 +8810,56 @@ msgid ""
 "source of the file."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3004
+#: widgets/kpropertiesdialog.cpp:3007
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum differ."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3012
+#: widgets/kpropertiesdialog.cpp:3015
 #, kde-format
 msgctxt "notify the user about a computation in the background"
 msgid "Verifying checksum..."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3101
+#: widgets/kpropertiesdialog.cpp:3104
 #, kde-format
 msgid "U&RL"
 msgstr "U&RL"
 
-#: widgets/kpropertiesdialog.cpp:3108
+#: widgets/kpropertiesdialog.cpp:3111
 #, kde-format
 msgid "URL:"
 msgstr "URL:"
 
-#: widgets/kpropertiesdialog.cpp:3178 widgets/kpropertiesdialog.cpp:3447
+#: widgets/kpropertiesdialog.cpp:3181 widgets/kpropertiesdialog.cpp:3450
 #, fuzzy, kde-format
 #| msgid "Only executables on local file systems are supported."
 msgid ""
 "Could not save properties. Only entries on local file systems are supported."
 msgstr "Орындалауы тек жергілікті файл үшін қолдайылады."
 
-#: widgets/kpropertiesdialog.cpp:3252
+#: widgets/kpropertiesdialog.cpp:3255
 #, kde-format
 msgid "&Application"
 msgstr "Қолд&анба"
 
-#: widgets/kpropertiesdialog.cpp:3385
+#: widgets/kpropertiesdialog.cpp:3388
 #, kde-format
 msgid "Add File Type for %1"
 msgstr "%1 үшін файл түрін қосу"
 
-#: widgets/kpropertiesdialog.cpp:3386
+#: widgets/kpropertiesdialog.cpp:3389
 #, kde-format
 msgid "Select one or more file types to add:"
 msgstr "Бір не бірнеше түрін таңдаңыз:"
 
-#: widgets/kpropertiesdialog.cpp:3532
+#: widgets/kpropertiesdialog.cpp:3535
 #, kde-format
 msgid "Only executables on local file systems are supported."
 msgstr "Орындалауы тек жергілікті файл үшін қолдайылады."
 
-#: widgets/kpropertiesdialog.cpp:3547
+#: widgets/kpropertiesdialog.cpp:3550
 #, kde-format
 msgid "Advanced Options for %1"
 msgstr "%1 үшін қосымша параметрлері"
