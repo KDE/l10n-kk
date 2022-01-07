@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-06 00:45+0000\n"
+"POT-Creation-Date: 2022-01-07 00:44+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -1086,6 +1086,10 @@ msgstr "\"%1\" файлы оқуға ашылмады"
 #: src/commands/exportgroupscommand.cpp:245
 #: src/commands/exportgroupscommand.cpp:253
 #: src/commands/exportgroupscommand.cpp:264
+#: src/commands/exportsecretsubkeycommand.cpp:241
+#: src/commands/exportsecretsubkeycommand.cpp:249
+#: src/commands/exportsecretsubkeycommand.cpp:260
+#: src/commands/exportsecretsubkeycommand.cpp:272
 #, fuzzy, kde-format
 #| msgid "Certificate Export Failed"
 msgctxt "@title:window"
@@ -1334,6 +1338,76 @@ msgstr ""
 msgctxt "@info"
 msgid "Failed to write data."
 msgstr "gpgconf орөндайтын файлы табылмады"
+
+#: src/commands/exportsecretsubkeycommand.cpp:79
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Subkeys"
+msgctxt "Generic filename for exported subkeys"
+msgid "subkeys"
+msgstr "Ішкі кілттер"
+
+#: src/commands/exportsecretsubkeycommand.cpp:90
+#, fuzzy, kde-format
+#| msgid "Export Secret Key..."
+msgctxt "@title:window"
+msgid "Export Subkey"
+msgid_plural "Export Subkeys"
+msgstr[0] "Құпия кілтін экспорттау..."
+
+#: src/commands/exportsecretsubkeycommand.cpp:93
+#, fuzzy, kde-format
+#| msgid "Secret Key Files"
+msgctxt "description of filename filter"
+msgid "Secret Key Files"
+msgstr "Құпия кілт файлдары"
+
+#: src/commands/exportsecretsubkeycommand.cpp:222
+#, fuzzy, kde-format
+#| msgid "Export"
+msgctxt "@info:status"
+msgid "Exporting subkeys..."
+msgstr "Эспорт"
+
+#: src/commands/exportsecretsubkeycommand.cpp:240
+#, kde-format
+msgctxt "@info"
+msgid "The result of the export is empty."
+msgstr ""
+
+#: src/commands/exportsecretsubkeycommand.cpp:248
+#, fuzzy, kde-kuit-format
+#| msgid "Could not open file \"%1\" for reading"
+msgctxt "@info"
+msgid "Cannot open file <filename>%1</filename> for writing."
+msgstr "\"%1\" файлы оқуға ашылмады"
+
+#: src/commands/exportsecretsubkeycommand.cpp:257
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgctxt "@info"
+msgid "Writing subkey to file <filename>%1</filename> failed."
+msgid_plural "Writing subkeys to file <filename>%1</filename> failed."
+msgstr[0] ""
+"<filename>%1</filename> уақытша файлын <filename>%2</filename> файлына "
+"көшірмелеу болмайды: <message>%3</message>"
+
+#: src/commands/exportsecretsubkeycommand.cpp:269
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>An error occurred while loading the certifications: <message>%1</"
+#| "message></para>"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred during the export:</para><para><message>%1</"
+"message></para>"
+msgstr ""
+"<para>Куәліктерді жүктеп алу кезінде қате пайда болды: <message>%1</"
+"message></para>"
 
 #: src/commands/genrevokecommand.cpp:73
 #, fuzzy, kde-format
@@ -6430,41 +6504,47 @@ msgstr "2-қадам: Кепілденген (\"SigG) куәлігінің ба�
 msgid "(optional) Set Initial PIN (SigG)"
 msgstr "PIN-ің беру (SigG)"
 
-#: src/dialogs/subkeyswidget.cpp:68 src/view/keylistcontroller.cpp:424
+#: src/dialogs/subkeyswidget.cpp:79 src/view/keylistcontroller.cpp:424
 #, kde-format
 msgid "Change Expiry Date..."
 msgstr "Мерзімін өзгерту..."
 
-#: src/dialogs/subkeyswidget.cpp:88
+#: src/dialogs/subkeyswidget.cpp:99
 #, fuzzy, kde-format
 #| msgid "Export Secret Key..."
 msgid "Export OpenSSH key"
 msgstr "Құпия кілтін экспорттау..."
 
-#: src/dialogs/subkeyswidget.cpp:99
+#: src/dialogs/subkeyswidget.cpp:110
 #, kde-format
 msgid "Restore printed backup"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:113
+#: src/dialogs/subkeyswidget.cpp:124
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgid "Transfer to smartcard"
 msgstr "Смарт-карта"
 
-#: src/dialogs/subkeyswidget.cpp:178
+#: src/dialogs/subkeyswidget.cpp:141
+#, fuzzy, kde-format
+#| msgid "Exporting secret key..."
+msgid "Export secret subkey"
+msgstr "Құпия кілтін экспорттау..."
+
+#: src/dialogs/subkeyswidget.cpp:206
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr "Тізбекті № %1 смарт-картасында"
 
-#: src/dialogs/subkeyswidget.cpp:180
+#: src/dialogs/subkeyswidget.cpp:208
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr "Осы компьютерінде"
 
-#: src/dialogs/subkeyswidget.cpp:196
+#: src/dialogs/subkeyswidget.cpp:224
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -10882,12 +10962,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Куәлігі: %1\n"
 #~ "Бақылау тізбегі: %2"
-
-#, fuzzy
-#~| msgid "Exporting secret key..."
-#~ msgctxt "@title"
-#~ msgid "Print secret key"
-#~ msgstr "Құпия кілтін экспорттау..."
 
 #~ msgid ""
 #~ "<p>You seem to be searching for a fingerPrint or a key-id.</"
