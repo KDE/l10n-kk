@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-23 00:47+0000\n"
+"POT-Creation-Date: 2022-02-24 00:45+0000\n"
 "PO-Revision-Date: 2013-09-30 00:41+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -60,7 +60,7 @@ msgstr "Үстел торын көрсету"
 
 #: desktopgrid/desktopgrid_config.cpp:49 invert/invert_config.cpp:35
 #: lookingglass/lookingglass_config.cpp:55 magnifier/magnifier_config.cpp:55
-#: mouseclick/mouseclick_config.cpp:47 mousemark/mousemark_config.cpp:53
+#: mouseclick/mouseclick_config.cpp:47 mousemark/mousemark_config.cpp:51
 #: overview/kcm/overvieweffectkcm.cpp:34
 #: presentwindows/presentwindows_config.cpp:48
 #: showpaint/showpaint_config.cpp:33
@@ -173,19 +173,19 @@ msgstr "Үстел а&тауының туралауы:"
 msgid "&Layout mode:"
 msgstr "&Орналасу тәртібі:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:127
 #, kde-format
 msgid "Pager"
 msgstr "Ақтарғыш"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:132
 #, kde-format
 msgid "Automatic"
 msgstr "Автоматты"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: desktopgrid/desktopgrid_config.ui:137
 #, kde-format
 msgid "Custom"
@@ -549,12 +549,17 @@ msgstr "Мәтіні:"
 msgid "Clear All Mouse Marks"
 msgstr "Тышқанның барлық іздерін тазалау"
 
-#: mousemark/mousemark.cpp:43 mousemark/mousemark_config.cpp:62
+#: mousemark/mousemark.cpp:43 mousemark/mousemark_config.cpp:60
 #, kde-format
 msgid "Clear Last Mouse Mark"
 msgstr "Тышқанның соңғы ізін тазалау"
 
-#: mousemark/mousemark_config.cpp:42
+#: mousemark/mousemark_config.cpp:54
+#, kde-format
+msgid "Clear Mouse Marks"
+msgstr "Тышқанның іздерін тазалау"
+
+#: mousemark/mousemark_config.cpp:101
 #, fuzzy, kde-format
 #| msgid " pixel"
 #| msgid_plural " pixels"
@@ -562,11 +567,6 @@ msgctxt "Suffix"
 msgid " pixel"
 msgid_plural " pixels"
 msgstr[0] " пиксел"
-
-#: mousemark/mousemark_config.cpp:56
-#, kde-format
-msgid "Clear Mouse Marks"
-msgstr "Тышқанның іздерін тазалау"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: mousemark/mousemark_config.ui:23
@@ -607,7 +607,6 @@ msgid "Closest"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
 #: overview/kcm/overvieweffectkcm.ui:35
 #: presentwindows/presentwindows_config.ui:441
 #, kde-format
@@ -694,12 +693,12 @@ msgstr "Терезелер"
 msgid "Left button:"
 msgstr "Сол жақ батырма:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:139
 #: presentwindows/presentwindows_config.ui:183
 #: presentwindows/presentwindows_config.ui:232
@@ -710,12 +709,12 @@ msgstr "Сол жақ батырма:"
 msgid "No action"
 msgstr "Әрекетсіз"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:144
 #: presentwindows/presentwindows_config.ui:188
 #: presentwindows/presentwindows_config.ui:237
@@ -726,12 +725,12 @@ msgstr "Әрекетсіз"
 msgid "Activate window"
 msgstr "Терезені белсендету"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:149
 #: presentwindows/presentwindows_config.ui:193
 #: presentwindows/presentwindows_config.ui:242
@@ -742,9 +741,9 @@ msgstr "Терезені белсендету"
 msgid "End effect"
 msgstr "Аяқтау эффекті"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:154
 #: presentwindows/presentwindows_config.ui:198
 #: presentwindows/presentwindows_config.ui:247
@@ -752,9 +751,9 @@ msgstr "Аяқтау эффекті"
 msgid "Bring window to current desktop"
 msgstr "Терезені назардағы үстелге әкелу"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:159
 #: presentwindows/presentwindows_config.ui:203
 #: presentwindows/presentwindows_config.ui:252
@@ -762,9 +761,9 @@ msgstr "Терезені назардағы үстелге әкелу"
 msgid "Send window to all desktops"
 msgstr "Терезені барлық үстелдерге орналастыру"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:164
 #: presentwindows/presentwindows_config.ui:208
 #: presentwindows/presentwindows_config.ui:257
@@ -780,8 +779,8 @@ msgstr "Терезені түю/жаю"
 msgid "Middle button:"
 msgstr "Ортаңғы батырма:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonWindow)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonWindow)
 #: presentwindows/presentwindows_config.ui:213
 #: presentwindows/presentwindows_config.ui:262
 #, fuzzy, kde-format
@@ -804,9 +803,9 @@ msgctxt "@title:group actions when clicking on desktop"
 msgid "Desktop"
 msgstr "Үстел"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LeftButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MiddleButtonDesktop)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_RightButtonDesktop)
 #: presentwindows/presentwindows_config.ui:308
 #: presentwindows/presentwindows_config.ui:342
 #: presentwindows/presentwindows_config.ui:376
@@ -838,13 +837,13 @@ msgstr "&Түйіп қойған терезелерді елемеу"
 msgid "Show &panels"
 msgstr "&Панелдер көрсетілсін"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: presentwindows/presentwindows_config.ui:446
 #, kde-format
 msgid "Regular Grid"
 msgstr "Тор бойынша"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LayoutMode)
 #: presentwindows/presentwindows_config.ui:451
 #, kde-format
 msgid "Flexible Grid"
@@ -909,37 +908,37 @@ msgstr "Бұл эффект бағалау сынағы емес"
 msgid "Text position:"
 msgstr "Жазуының орны:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:43
 #, kde-format
 msgid "Inside Graph"
 msgstr "Суреттің ішінде"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:48
 #, kde-format
 msgid "Nowhere"
 msgstr "Ешқайда"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:53
 #, kde-format
 msgid "Top Left"
 msgstr "Сол жақ жоғарында"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:58
 #, kde-format
 msgid "Top Right"
 msgstr "Оң жақ жоғарында"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:63
 #, kde-format
 msgid "Bottom Left"
 msgstr "Сол жақ төменінде"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_TextPosition)
 #: showfps/showfps_config.ui:68
 #, kde-format
 msgid "Bottom Right"
