@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-17 00:46+0000\n"
+"POT-Creation-Date: 2022-05-18 00:46+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -681,7 +681,7 @@ msgid ""
 msgstr "%1 дегеннен куәліктер импортталды"
 
 #: src/commands/createcsrforcardkeycommand.cpp:207
-#: src/newcertificatewizard/newcertificatewizard.cpp:339
+#: src/newcertificatewizard/resultpage.cpp:260
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -692,21 +692,21 @@ msgstr ""
 "оны Куәландыру орталығына жіберу керек.</para>"
 
 #: src/commands/createcsrforcardkeycommand.cpp:210
-#: src/newcertificatewizard/newcertificatewizard.cpp:342
+#: src/newcertificatewizard/resultpage.cpp:263
 #, kde-format
 msgctxt "@title"
 msgid "Request Saved"
 msgstr "Талап сақталды"
 
 #: src/commands/createcsrforcardkeycommand.cpp:244
-#: src/newcertificatewizard/newcertificatewizard.cpp:320
+#: src/newcertificatewizard/resultpage.cpp:241
 #, kde-format
 msgctxt "@title"
 msgid "Save Request"
 msgstr "Талапты сақтау"
 
 #: src/commands/createcsrforcardkeycommand.cpp:244
-#: src/newcertificatewizard/newcertificatewizard.cpp:321
+#: src/newcertificatewizard/resultpage.cpp:242
 #, kde-format
 msgid "PKCS#10 Requests (*.p10)"
 msgstr "PKCS#10 талабы (*.p10)"
@@ -725,7 +725,7 @@ msgstr ""
 "message></para>"
 
 #: src/commands/createcsrforcardkeycommand.cpp:253
-#: src/newcertificatewizard/newcertificatewizard.cpp:335
+#: src/newcertificatewizard/resultpage.cpp:256
 #, kde-format
 msgctxt "@title"
 msgid "Error Saving Request"
@@ -5686,44 +5686,42 @@ msgid "Certificate Details"
 msgstr "Куәліктің егжей-тегжейі"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:59
-#: src/newcertificatewizard/enterdetailspage.cpp:69
+#: src/newcertificatewizard/enterdetailspage.cpp:78
 #, kde-format
 msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:70
-#: src/newcertificatewizard/enterdetailspage.cpp:208
+#: src/newcertificatewizard/enterdetailspage.cpp:316
 #, kde-format
 msgctxt "interpunctation for labels"
 msgid "%1:"
 msgstr "%1:"
 
-#. i18n: ectx: property (text), widget (QLabel, nameRequiredLB)
-#. i18n: ectx: property (text), widget (QLabel, emailRequiredLB)
 #: src/dialogs/certificatedetailsinputwidget.cpp:84
-#: src/newcertificatewizard/enterdetailspage.cpp:210
-#: src/newcertificatewizard/enterdetailspage.ui:23
-#: src/newcertificatewizard/enterdetailspage.ui:40
+#: src/newcertificatewizard/enterdetailspage.cpp:125
+#: src/newcertificatewizard/enterdetailspage.cpp:133
+#: src/newcertificatewizard/enterdetailspage.cpp:318
 #, kde-format
 msgid "(required)"
 msgstr "(қажетті)"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:84
-#: src/newcertificatewizard/enterdetailspage.cpp:210
+#: src/newcertificatewizard/enterdetailspage.cpp:318
 #, kde-format
 msgid "(optional)"
 msgstr "(міндетті емес)"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:112
-#: src/newcertificatewizard/enterdetailspage.cpp:387
+#: src/newcertificatewizard/enterdetailspage.cpp:495
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr "<interface>%1</interface> деген қажет, бірақ бос."
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:114
-#: src/newcertificatewizard/enterdetailspage.cpp:389
+#: src/newcertificatewizard/enterdetailspage.cpp:497
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5734,14 +5732,14 @@ msgstr ""
 "<icode>%2</icode>"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:120
-#: src/newcertificatewizard/enterdetailspage.cpp:395
+#: src/newcertificatewizard/enterdetailspage.cpp:503
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr "<interface>%1</interface> толтырылмаған"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:122
-#: src/newcertificatewizard/enterdetailspage.cpp:397
+#: src/newcertificatewizard/enterdetailspage.cpp:505
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5752,14 +5750,14 @@ msgstr ""
 "%2</icode>"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:127
-#: src/newcertificatewizard/enterdetailspage.cpp:402
+#: src/newcertificatewizard/enterdetailspage.cpp:510
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr "<interface>%1</interface> дұрыс емес."
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:129
-#: src/newcertificatewizard/enterdetailspage.cpp:404
+#: src/newcertificatewizard/enterdetailspage.cpp:512
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5946,7 +5944,7 @@ msgid "Email"
 msgstr "Эл.поштасы"
 
 #: src/dialogs/certificatedetailswidget.cpp:455
-#: src/newcertificatewizard/enterdetailspage.cpp:50
+#: src/newcertificatewizard/enterdetailspage.cpp:59
 #, kde-format
 msgid "Name"
 msgstr "Атауы"
@@ -6999,8 +6997,7 @@ msgstr "Өткен"
 msgid "Test Name"
 msgstr "Сынақ атауы"
 
-#. i18n: ectx: property (title), widget (QGroupBox, resultGB)
-#: src/dialogs/selftestdialog.cpp:104 src/newcertificatewizard/resultpage.ui:16
+#: src/dialogs/selftestdialog.cpp:104
 #, kde-format
 msgid "Result"
 msgstr "Нәтижесі"
@@ -8747,25 +8744,25 @@ msgstr ""
 msgid "Please choose which type of key pair you want to create."
 msgstr "Куәліктің қандай түрін құруыңыз келгенін таңдаңыз. "
 
-#: src/newcertificatewizard/chooseprotocolpage.cpp:61
+#: src/newcertificatewizard/chooseprotocolpage.cpp:62
 #, kde-format
 msgid "Create a personal OpenPGP key pair"
 msgstr "Дсрбес OpenPGP қос кілтіңізді жасау"
 
-#: src/newcertificatewizard/chooseprotocolpage.cpp:62
+#: src/newcertificatewizard/chooseprotocolpage.cpp:63
 #, kde-format
 msgid ""
 "OpenPGP key pairs are certified by confirming the fingerprint of the public "
 "key."
 msgstr ""
 
-#: src/newcertificatewizard/chooseprotocolpage.cpp:70
+#: src/newcertificatewizard/chooseprotocolpage.cpp:71
 #, fuzzy, kde-format
 #| msgid "Create a personal X.509 key pair and certification request "
 msgid "Create a personal X.509 key pair and certification request"
 msgstr "Дербес X.509 қос кілтіңізді жасау және куәландыруын сұрау "
 
-#: src/newcertificatewizard/chooseprotocolpage.cpp:71
+#: src/newcertificatewizard/chooseprotocolpage.cpp:72
 #, fuzzy, kde-format
 #| msgid ""
 #| "X.509 key pairs are created locally, but certified centrally by a "
@@ -8779,17 +8776,50 @@ msgstr ""
 "(КО) куәландырып береді. КО-лар басқа КО-ларды растап, олар бір-біріне "
 "тәуелді, түбір орталығы бар, тармақты сенім тізбегін құрады."
 
-#: src/newcertificatewizard/enterdetailspage.cpp:53
+#: src/newcertificatewizard/enterdetailspage.cpp:62
 #, kde-format
 msgid "EMail"
 msgstr "Эл.поштасы"
 
-#: src/newcertificatewizard/enterdetailspage.cpp:90
+#: src/newcertificatewizard/enterdetailspage.cpp:105
+#, kde-format
+msgctxt "@title"
+msgid "Enter Details"
+msgstr "Егжей-тегжейін келтіру"
+
+#: src/newcertificatewizard/enterdetailspage.cpp:123
+#, kde-format
+msgid "Real name:"
+msgstr "Шын аты:"
+
+#: src/newcertificatewizard/enterdetailspage.cpp:131
+#, kde-format
+msgid "EMail address:"
+msgstr "Эл.пошта адресі:"
+
+#: src/newcertificatewizard/enterdetailspage.cpp:140
+#, kde-format
+msgid "Protect the generated key with a passphrase."
+msgstr ""
+
+#: src/newcertificatewizard/enterdetailspage.cpp:141
+#, kde-format
+msgid ""
+"Encrypts the secret key with an unrecoverable passphrase. You will be asked "
+"for the passphrase during key generation."
+msgstr ""
+
+#: src/newcertificatewizard/enterdetailspage.cpp:177
+#, kde-format
+msgid "Advanced Settings..."
+msgstr "Жетелеп баптау"
+
+#: src/newcertificatewizard/enterdetailspage.cpp:197
 #, kde-format
 msgid "Please enter your personal details below."
 msgstr ""
 
-#: src/newcertificatewizard/enterdetailspage.cpp:92
+#: src/newcertificatewizard/enterdetailspage.cpp:199
 #, fuzzy, kde-format
 #| msgid ""
 #| "Please enter your personal details below. If you want more control over "
@@ -8801,7 +8831,7 @@ msgstr ""
 "Төменде дербес егжей-тегжейіңізді келтіріңіз.Куәлік параметрлерін жетелеп "
 "басқарам десеңіз - \"Жетелеп баптау\" батырмасын басыңыз."
 
-#: src/newcertificatewizard/enterdetailspage.cpp:114
+#: src/newcertificatewizard/enterdetailspage.cpp:222
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
@@ -8809,44 +8839,45 @@ msgctxt "@action"
 msgid "Create"
 msgstr "Кілтті жасау"
 
-#. i18n: ectx: property (title), widget (QWizardPage, Kleo::NewCertificateUi::EnterDetailsPage)
-#: src/newcertificatewizard/enterdetailspage.ui:5
-#, kde-format
-msgctxt "@title"
-msgid "Enter Details"
-msgstr "Егжей-тегжейін келтіру"
+#: src/newcertificatewizard/keycreationpage.cpp:93
+#, fuzzy, kde-format
+#| msgid "Could not start certificate creation: %1"
+msgid "Could not start key pair creation: %1"
+msgstr "Куәлікті жасауының бастауы болмады: %1"
 
-#. i18n: ectx: property (text), widget (QLabel, nameLB)
-#: src/newcertificatewizard/enterdetailspage.ui:13
+#: src/newcertificatewizard/keycreationpage.cpp:191
 #, kde-format
-msgid "Real name:"
-msgstr "Шын аты:"
+msgid "Operation canceled."
+msgstr "Амал тоқтатылды."
 
-#. i18n: ectx: property (text), widget (QLabel, emailLB)
-#: src/newcertificatewizard/enterdetailspage.ui:30
-#, kde-format
-msgid "EMail address:"
-msgstr "Эл.пошта адресі:"
+#: src/newcertificatewizard/keycreationpage.cpp:192
+#, fuzzy, kde-format
+#| msgid "Could not create socket: %1"
+msgid "Could not create key pair: %1"
+msgstr "Сокеті құрылмады: %1"
 
-#. i18n: ectx: property (text), widget (QCheckBox, withPassCB)
-#: src/newcertificatewizard/enterdetailspage.ui:47
-#, kde-format
-msgid "Protect the generated key with a passphrase."
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, withPassCB)
-#: src/newcertificatewizard/enterdetailspage.ui:50
-#, kde-format
+#: src/newcertificatewizard/keycreationpage.cpp:199
+#, fuzzy, kde-format
+#| msgid ""
+#| "Certificate created successfully.\n"
+#| "Fingerprint: %1"
 msgid ""
-"Encrypts the secret key with an unrecoverable passphrase. You will be asked "
-"for the passphrase during key generation."
+"Key pair created successfully.\n"
+"Fingerprint: %1"
 msgstr ""
+"Куәлік сәтті жасалды.\n"
+"Бақылау тізбегі: %1"
 
-#. i18n: ectx: property (text), widget (QPushButton, advancedPB)
-#: src/newcertificatewizard/enterdetailspage.ui:137
+#: src/newcertificatewizard/keycreationpage.cpp:205
 #, kde-format
-msgid "Advanced Settings..."
-msgstr "Жетелеп баптау"
+msgid "Could not write output file %1: %2"
+msgstr "%1 шығыс файлына жазу болмайды: %2"
+
+#: src/newcertificatewizard/keycreationpage.cpp:213
+#, fuzzy, kde-format
+#| msgid "Certificate created successfully."
+msgid "Key pair created successfully."
+msgstr "Куәлік сәтті жасалды."
 
 #. i18n: ectx: property (title), widget (QWizardPage, Kleo::NewCertificateUi::KeyCreationPage)
 #: src/newcertificatewizard/keycreationpage.ui:5
@@ -8865,64 +8896,102 @@ msgid ""
 "may require several minutes..."
 msgstr ""
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:145
+#: src/newcertificatewizard/newcertificatewizard.cpp:41
 #, fuzzy, kde-format
-#| msgid "Could not start certificate creation: %1"
-msgid "Could not start key pair creation: %1"
-msgstr "Куәлікті жасауының бастауы болмады: %1"
+#| msgctxt "@title"
+#| msgid "Certificate Creation Wizard"
+msgctxt "@title:window"
+msgid "Key Pair Creation Wizard"
+msgstr "Куәлікті жасау шебері"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:162
+#: src/newcertificatewizard/resultpage.cpp:86
+#, fuzzy, kde-format
+#| msgid "Result"
+msgctxt "@title:group"
+msgid "Result"
+msgstr "Нәтижесі"
+
+#: src/newcertificatewizard/resultpage.cpp:96
 #, kde-format
-msgid "Operation canceled."
-msgstr "Амал тоқтатылды."
-
-#: src/newcertificatewizard/newcertificatewizard.cpp:163
-#, fuzzy, kde-format
-#| msgid "Could not create socket: %1"
-msgid "Could not create key pair: %1"
-msgstr "Сокеті құрылмады: %1"
-
-#: src/newcertificatewizard/newcertificatewizard.cpp:170
-#, fuzzy, kde-format
-#| msgid ""
-#| "Certificate created successfully.\n"
-#| "Fingerprint: %1"
 msgid ""
-"Key pair created successfully.\n"
-"Fingerprint: %1"
+"Drag this icon to your mail application's composer to attach the request to "
+"a mail."
 msgstr ""
-"Куәлік сәтті жасалды.\n"
-"Бақылау тізбегі: %1"
+"Сұранысын хатқа тіркемелеу үшін осы таңбашаны эл.пошта құрастыру "
+"бағдарламаның терезесіне сүйреп тастаңыз."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:176
+#: src/newcertificatewizard/resultpage.cpp:102
 #, kde-format
-msgid "Could not write output file %1: %2"
-msgstr "%1 шығыс файлына жазу болмайды: %2"
+msgid "Restart This Wizard (Keeps Your Parameters)"
+msgstr "Шеберді жаңадан бастау (параметрлерін сақтап)"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:184
+#: src/newcertificatewizard/resultpage.cpp:106
 #, fuzzy, kde-format
-#| msgid "Certificate created successfully."
-msgid "Key pair created successfully."
-msgstr "Куәлік сәтті жасалды."
+#| msgid "Next Steps"
+msgctxt "@title:group"
+msgid "Next Steps"
+msgstr "Келесі қадамдар"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:252
+#: src/newcertificatewizard/resultpage.cpp:109
+#, kde-format
+msgid "Save Certificate Request To File..."
+msgstr "Куәлікті сұрауын файлға сақтау..."
+
+#: src/newcertificatewizard/resultpage.cpp:112
+#, kde-format
+msgid "Send Certificate Request By EMail..."
+msgstr "Куәлік сұрауын эл.поштамен жіберу..."
+
+#: src/newcertificatewizard/resultpage.cpp:115
+#, kde-format
+msgid "Make a Backup Of Your Key Pair..."
+msgstr "Кілт сыңарыңыздың сақтық көшірмесі..."
+
+#: src/newcertificatewizard/resultpage.cpp:118
+#, fuzzy, kde-format
+#| msgid "Send Certificate By EMail..."
+msgid "Send Public Key By EMail..."
+msgstr "Куәлікті эл.поштамен жіберу..."
+
+#: src/newcertificatewizard/resultpage.cpp:121
+#, fuzzy, kde-format
+#| msgid "Upload Certificate To Directory Service..."
+msgid "Upload Public Key To Directory Service..."
+msgstr "Куәлікті каталог қызметіне жүктеу..."
+
+#: src/newcertificatewizard/resultpage.cpp:124
+#, kde-format
+msgid "Create Revocation Request..."
+msgstr "Күшін жою сұранысын құру..."
+
+#: src/newcertificatewizard/resultpage.cpp:127
+#, kde-format
+msgid "Create Signing Certificate With Same Parameters"
+msgstr "Параметрлерін қайталап қолтаңбалау куәлігін жасау"
+
+#: src/newcertificatewizard/resultpage.cpp:130
+#, kde-format
+msgid "Create Encryption Certificate With Same Parameters"
+msgstr "Параметрлерін қайталап шифрлау куәлігін жасау"
+
+#: src/newcertificatewizard/resultpage.cpp:175
 #, kde-format
 msgctxt "@title"
 msgid "Key Creation Failed"
 msgstr "Кілт жасау жаңылысы"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:253
+#: src/newcertificatewizard/resultpage.cpp:176
 #, kde-format
 msgid "Key pair creation failed. Please find details about the failure below."
 msgstr "Екі сыңар кілт құру жаңылысы. Жаңылыс егжей-тегжейін төменде табасыз."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:255
+#: src/newcertificatewizard/resultpage.cpp:178
 #, kde-format
 msgctxt "@title"
 msgid "Key Pair Successfully Created"
 msgstr "Екі сыңар кілт сәтті құрылды"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:256
+#: src/newcertificatewizard/resultpage.cpp:179
 #, kde-format
 msgid ""
 "Your new key pair was created successfully. Please find details on the "
@@ -8931,7 +9000,7 @@ msgstr ""
 "Жаңа екі сыңар кілтіңіз сәтті құрылды. Нәтижесінің егжей-тегжейін және "
 "келесі қадамыңыз туралы мәліметтті төменде табасыз."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:332
+#: src/newcertificatewizard/resultpage.cpp:253
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -8941,12 +9010,12 @@ msgstr ""
 "<filename>%1</filename> уақытша файлын <filename>%2</filename> файлына "
 "көшірмелеу болмайды: <message>%3</message>"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:352
+#: src/newcertificatewizard/resultpage.cpp:273
 #, kde-format
 msgid "Please process this certificate."
 msgstr "Мынау куәлікті қарап өңдеп беріңіз."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:353
+#: src/newcertificatewizard/resultpage.cpp:274
 #, kde-format
 msgid ""
 "Please process this certificate and inform the sender about the location to "
@@ -8959,19 +9028,19 @@ msgstr ""
 "\n"
 "Рахмет,\n"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:382
+#: src/newcertificatewizard/resultpage.cpp:303
 #, fuzzy, kde-format
 #| msgid "My new OpenPGP certificate"
 msgid "My new public OpenPGP key"
 msgstr "Жаңа OpenPGP куәлігім"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:383
+#: src/newcertificatewizard/resultpage.cpp:304
 #, fuzzy, kde-format
 #| msgid "Please find attached my new OpenPGP certificate."
 msgid "Please find attached my new public OpenPGP key."
 msgstr "Тіркемеде жаңа OpenPGP куәлігім."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:419
+#: src/newcertificatewizard/resultpage.cpp:330
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -8990,13 +9059,13 @@ msgstr ""
 "апарып көріңіз.</para><para>Нәтиже болмаса, онда талапты файлға сақтап, оны "
 "тіркеме ретінде салыңыз.</para>"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:423
+#: src/newcertificatewizard/resultpage.cpp:334
 #, kde-format
 msgctxt "@title"
 msgid "Sending Mail"
 msgstr "Поштаны жіберу"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:471
+#: src/newcertificatewizard/resultpage.cpp:381
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -9006,91 +9075,11 @@ msgstr ""
 "Бұл амалдан куәландыру талабы өшіріледі. Істеудін алдында ол жіберілген не "
 "сақталғанына көз жеткізіңіз."
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:473
+#: src/newcertificatewizard/resultpage.cpp:383
 #, kde-format
 msgctxt "@title"
 msgid "Certification Request About To Be Deleted"
 msgstr "Куәландыру талабыңыз өшірілмек"
-
-#: src/newcertificatewizard/newcertificatewizard.cpp:503
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Certificate Creation Wizard"
-msgctxt "@title:window"
-msgid "Key Pair Creation Wizard"
-msgstr "Куәлікті жасау шебері"
-
-#. i18n: ectx: property (toolTip), widget (Kleo::DragQueen, dragQueen)
-#: src/newcertificatewizard/resultpage.ui:28
-#, kde-format
-msgid ""
-"Drag this icon to your mail application's composer to attach the request to "
-"a mail."
-msgstr ""
-"Сұранысын хатқа тіркемелеу үшін осы таңбашаны эл.пошта құрастыру "
-"бағдарламаның терезесіне сүйреп тастаңыз."
-
-#. i18n: ectx: property (text), widget (QPushButton, restartWizardPB)
-#: src/newcertificatewizard/resultpage.ui:41
-#, kde-format
-msgid "Restart This Wizard (Keeps Your Parameters)"
-msgstr "Шеберді жаңадан бастау (параметрлерін сақтап)"
-
-#. i18n: ectx: property (title), widget (QGroupBox, nextStepsGB)
-#: src/newcertificatewizard/resultpage.ui:48
-#, kde-format
-msgid "Next Steps"
-msgstr "Келесі қадамдар"
-
-#. i18n: ectx: property (text), widget (QPushButton, saveRequestToFilePB)
-#: src/newcertificatewizard/resultpage.ui:54
-#, kde-format
-msgid "Save Certificate Request To File..."
-msgstr "Куәлікті сұрауын файлға сақтау..."
-
-#. i18n: ectx: property (text), widget (QPushButton, sendRequestByEMailPB)
-#: src/newcertificatewizard/resultpage.ui:61
-#, kde-format
-msgid "Send Certificate Request By EMail..."
-msgstr "Куәлік сұрауын эл.поштамен жіберу..."
-
-#. i18n: ectx: property (text), widget (QPushButton, makeBackupPB)
-#: src/newcertificatewizard/resultpage.ui:68
-#, kde-format
-msgid "Make a Backup Of Your Key Pair..."
-msgstr "Кілт сыңарыңыздың сақтық көшірмесі..."
-
-#. i18n: ectx: property (text), widget (QPushButton, sendCertificateByEMailPB)
-#: src/newcertificatewizard/resultpage.ui:75
-#, fuzzy, kde-format
-#| msgid "Send Certificate By EMail..."
-msgid "Send Public Key By EMail..."
-msgstr "Куәлікті эл.поштамен жіберу..."
-
-#. i18n: ectx: property (text), widget (QPushButton, uploadToKeyserverPB)
-#: src/newcertificatewizard/resultpage.ui:82
-#, fuzzy, kde-format
-#| msgid "Upload Certificate To Directory Service..."
-msgid "Upload Public Key To Directory Service..."
-msgstr "Куәлікті каталог қызметіне жүктеу..."
-
-#. i18n: ectx: property (text), widget (QPushButton, createRevocationRequestPB)
-#: src/newcertificatewizard/resultpage.ui:89
-#, kde-format
-msgid "Create Revocation Request..."
-msgstr "Күшін жою сұранысын құру..."
-
-#. i18n: ectx: property (text), widget (QPushButton, createSigningCertificatePB)
-#: src/newcertificatewizard/resultpage.ui:96
-#, kde-format
-msgid "Create Signing Certificate With Same Parameters"
-msgstr "Параметрлерін қайталап қолтаңбалау куәлігін жасау"
-
-#. i18n: ectx: property (text), widget (QPushButton, createEncryptionCertificatePB)
-#: src/newcertificatewizard/resultpage.ui:103
-#, kde-format
-msgid "Create Encryption Certificate With Same Parameters"
-msgstr "Параметрлерін қайталап шифрлау куәлігін жасау"
 
 #: src/selftest/compliancecheck.cpp:33
 #, fuzzy, kde-format
