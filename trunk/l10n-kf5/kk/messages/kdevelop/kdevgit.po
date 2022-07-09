@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-06-28 00:43+0000\n"
+"POT-Creation-Date: 2022-07-09 00:43+0000\n"
 "PO-Revision-Date: 2013-11-12 03:50+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -137,6 +137,12 @@ msgid ""
 "cannot be undone. Continue?"
 msgstr ""
 
+#: diffviewsctrl.cpp:333
+#, kde-format
+msgctxt "@action:button"
+msgid "Revert"
+msgstr ""
+
 #: gitmessagehighlighter.cpp:66
 #, kde-format
 msgid "Try to keep summary length below %1 characters."
@@ -261,31 +267,44 @@ msgid ""
 "The following files have uncommitted changes, which will be lost. Continue?"
 msgstr ""
 
-#: gitplugin.cpp:515
+#: gitplugin.cpp:517
 #, kde-format
 msgid "No files or message specified"
 msgstr "Файлдар не хабарламасы келтірілмеген"
 
-#: gitplugin.cpp:519 gitplugin.cpp:538
+#: gitplugin.cpp:521 gitplugin.cpp:540
 #, kde-format
 msgid "Email or name for Git not specified"
 msgstr ""
 
-#: gitplugin.cpp:535
+#: gitplugin.cpp:537
 #, fuzzy, kde-format
 #| msgid "No files or message specified"
 msgid "No message specified"
 msgstr "Файлдар не хабарламасы келтірілмеген"
 
-#: gitplugin.cpp:609
+#: gitplugin.cpp:611
 #, kde-format
 msgid "No files to remove"
 msgstr "Өшіретін файлдар жоқ"
 
-#: gitplugin.cpp:789
+#: gitplugin.cpp:791
 #, kde-format
 msgid "There are pending changes, do you want to stash them first?"
 msgstr "Жасалған өзгерістері бар, оларды алдымен қорға салу керек пе?"
+
+#: gitplugin.cpp:792
+#, fuzzy, kde-format
+#| msgid "Pop Stash"
+msgctxt "@action:button"
+msgid "Stash"
+msgstr "Қордан алу"
+
+#: gitplugin.cpp:793
+#, kde-format
+msgctxt "@action:button"
+msgid "Keep"
+msgstr ""
 
 #: rebasedialog.cpp:25
 #, kde-format
@@ -596,14 +615,22 @@ msgstr "Қорды басқару"
 msgid "Are you sure you want to drop the stash '%1'?"
 msgstr "'%1' дегенді қордан алып тастамақсыз ба?"
 
-#: stashmanagerdialog.cpp:108
+#. i18n: ectx: property (text), widget (QPushButton, drop)
+#: stashmanagerdialog.cpp:101 stashmanagerdialog.ui:72
+#, fuzzy, kde-format
+#| msgid "Drop"
+msgctxt "@action:button"
+msgid "Drop"
+msgstr "Тастау"
+
+#: stashmanagerdialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "Git Stashes"
 msgctxt "@title:window"
 msgid "Git Stash"
 msgstr "Git қорлары"
 
-#: stashmanagerdialog.cpp:108
+#: stashmanagerdialog.cpp:110
 #, fuzzy, kde-format
 #| msgid "Select a name for the new branch"
 msgctxt "@label:textbox"
@@ -667,14 +694,6 @@ msgstr "Тармақтау"
 msgctxt "@info:tooltip"
 msgid "Remove the selected branch"
 msgstr "Таңдалған тармақтарын өшіру"
-
-#. i18n: ectx: property (text), widget (QPushButton, drop)
-#: stashmanagerdialog.ui:72
-#, fuzzy, kde-format
-#| msgid "Drop"
-msgctxt "@action:button"
-msgid "Drop"
-msgstr "Тастау"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, show)
 #: stashmanagerdialog.ui:82
