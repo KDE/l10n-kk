@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-02 00:47+0000\n"
+"POT-Creation-Date: 2022-08-03 00:47+0000\n"
 "PO-Revision-Date: 2013-09-16 04:11+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -325,28 +325,22 @@ msgid "Certification Error"
 msgstr "Куәліктер менеджерінің қатесі"
 
 #: src/commands/changeexpirycommand.cpp:198
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>An error occurred while trying to change the expiry date for <b>%1</b>:"
+#| "</p><p>%2</p>"
 msgid ""
-"<p>An error occurred while trying to change the expiry date for <b>%1</b>:</"
-"p><p>%2</p>"
+"<p>An error occurred while trying to change the end of the validity period "
+"for <b>%1</b>:</p><p>%2</p>"
 msgstr ""
 "<p><b>%1</b> дегеннің жарамдылық мерзімін өзгерту кезінде бір қате орын алды:"
 "</p><p>%2</p>"
 
-#: src/commands/changeexpirycommand.cpp:202
-#, kde-format
-msgid "Expiry Date Change Error"
-msgstr "Жарамдылық мерзімін өзгерту қатесі"
-
-#: src/commands/changeexpirycommand.cpp:207
-#, kde-format
-msgid "Expiry date changed successfully."
+#: src/commands/changeexpirycommand.cpp:206
+#, fuzzy, kde-format
+#| msgid "Expiry date changed successfully."
+msgid "End of validity period changed successfully."
 msgstr "Жарамдылық мерзімі сәтті өзгертілді."
-
-#: src/commands/changeexpirycommand.cpp:208
-#, kde-format
-msgid "Expiry Date Change Succeeded"
-msgstr "Жарамдылық мерзімн өзгерту сәтті өтті"
 
 #: src/commands/changeownertrustcommand.cpp:222
 #, fuzzy, kde-format
@@ -1640,8 +1634,8 @@ msgstr "Алмасу буферіндегісі куәлікке ұқсамай�
 #: src/commands/importcertificatefromfilecommand.cpp:134
 #: src/commands/importcertificatescommand.cpp:461
 #: src/commands/importcertificatescommand.cpp:469
-#: src/commands/importcertificatescommand.cpp:804
-#: src/commands/importcertificatescommand.cpp:855
+#: src/commands/importcertificatescommand.cpp:802
+#: src/commands/importcertificatescommand.cpp:853
 #, kde-format
 msgid "Certificate Import Failed"
 msgstr "Куәлікті импорттау жаңылысы"
@@ -1934,32 +1928,37 @@ msgstr ""
 "<qt><p>%1 куәлігін импорттау кезінде қате пайда болды:</p><p><b>%2</b></p></"
 "qt>"
 
-#: src/commands/importcertificatescommand.cpp:543
+#: src/commands/importcertificatescommand.cpp:537
+#, kde-kuit-format
+msgctxt "@info"
+msgid "%1<item>%2</item>"
+msgstr ""
+
+#: src/commands/importcertificatescommand.cpp:541
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<title>You have imported a Secret Key.</title><para>The key has the "
-"fingerprint:<nl/><numid>%1</numid></para><para>And claims the user IDs:"
-"<list><item>%2</item></list></para>Is this your own key? (Set trust level to "
-"ultimate)"
+"fingerprint:<nl/><numid>%1</numid></para><para>And claims the user IDs:<list>"
+"%2</list></para>Is this your own key? (Set trust level to ultimate)"
 msgstr ""
 
-#: src/commands/importcertificatescommand.cpp:555
+#: src/commands/importcertificatescommand.cpp:553
 #, fuzzy, kde-format
 #| msgid "Secret keys imported:"
 msgctxt "@title:window"
 msgid "Secret key imported"
 msgstr "Импортталған құпия кілттер:"
 
-#: src/commands/importcertificatescommand.cpp:767
+#: src/commands/importcertificatescommand.cpp:765
 #, fuzzy, kde-format
 #| msgid "Load Certifications (may take a while)"
 msgid "Fetching 1 signer key... (this can take a while)"
 msgid_plural "Fetching %1 signer keys... (this can take a while)"
 msgstr[0] "Куәліктерді алуы (біршама уақыт алуы мүмкін)"
 
-#: src/commands/importcertificatescommand.cpp:802
-#: src/commands/importcertificatescommand.cpp:853
+#: src/commands/importcertificatescommand.cpp:800
+#: src/commands/importcertificatescommand.cpp:851
 #, kde-format
 msgid ""
 "The type of this certificate (%1) is not supported by this Kleopatra "
@@ -3072,7 +3071,7 @@ msgstr "Техникалық егжей-тегжейі көрсетілсін"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_tags)
 #: src/conf/appearanceconfigwidget.ui:178
-#: src/dialogs/certificatedetailswidget.cpp:623
+#: src/dialogs/certificatedetailswidget.cpp:616
 #: src/dialogs/certifywidget.cpp:337
 #, kde-format
 msgid "Tags"
@@ -5749,7 +5748,7 @@ msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: src/dialogs/certificatedetailsinputwidget.cpp:71
-#: src/dialogs/certificatedetailswidget.cpp:391
+#: src/dialogs/certificatedetailswidget.cpp:384
 #: src/newcertificatewizard/enterdetailspage.cpp:315
 #, kde-format
 msgctxt "interpunctation for labels"
@@ -5823,192 +5822,192 @@ msgstr ""
 "<interface>%1</interface> деген дұрыс емес.<nl/>Әкімшінің ережесі: <icode>"
 "%2</icode>"
 
-#: src/dialogs/certificatedetailswidget.cpp:336
+#: src/dialogs/certificatedetailswidget.cpp:329
 #, fuzzy, kde-format
 #| msgid "User-IDs"
 msgid "User IDs:"
 msgstr "Пайдарланушы ID-лері"
 
-#: src/dialogs/certificatedetailswidget.cpp:341
+#: src/dialogs/certificatedetailswidget.cpp:334
 #, fuzzy, kde-format
 #| msgid "User-IDs"
 msgid "User IDs"
 msgstr "Пайдарланушы ID-лері"
 
-#: src/dialogs/certificatedetailswidget.cpp:356
+#: src/dialogs/certificatedetailswidget.cpp:349
 #, fuzzy, kde-format
 #| msgid "Add User-ID..."
 msgctxt "@action:button"
 msgid "Add User ID"
 msgstr "Пайдаланушы-ID-н қосу..."
 
-#: src/dialogs/certificatedetailswidget.cpp:359
+#: src/dialogs/certificatedetailswidget.cpp:352
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:button"
 msgid "Certify User IDs"
 msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
 
-#: src/dialogs/certificatedetailswidget.cpp:362
+#: src/dialogs/certificatedetailswidget.cpp:355
 #, fuzzy, kde-format
 #| msgid "Certifications"
 msgctxt "@action:button"
 msgid "Show Certifications"
 msgstr "Куәландыру"
 
-#: src/dialogs/certificatedetailswidget.cpp:365
+#: src/dialogs/certificatedetailswidget.cpp:358
 #, fuzzy, kde-format
 #| msgid "Certification"
 msgctxt "@action:button"
 msgid "Revoke Certifications"
 msgstr "Куәландыру"
 
-#: src/dialogs/certificatedetailswidget.cpp:368
-#: src/dialogs/certificatedetailswidget.cpp:732
+#: src/dialogs/certificatedetailswidget.cpp:361
+#: src/dialogs/certificatedetailswidget.cpp:725
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:button"
 msgid "Revoke User ID"
 msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
 
-#: src/dialogs/certificatedetailswidget.cpp:402
+#: src/dialogs/certificatedetailswidget.cpp:395
 #, fuzzy, kde-format
 #| msgid "Newly revoked:"
 msgid "Trust level:"
 msgstr "Жаңа күші жойылған:"
 
-#: src/dialogs/certificatedetailswidget.cpp:407
+#: src/dialogs/certificatedetailswidget.cpp:400
 #, fuzzy, kde-format
 #| msgid "Valid From"
 msgid "Valid from:"
 msgstr "Жарамдылықтың басталуы"
 
-#: src/dialogs/certificatedetailswidget.cpp:412
+#: src/dialogs/certificatedetailswidget.cpp:405
+#: src/dialogs/expirydialog.cpp:204
 #, fuzzy, kde-format
-#| msgid "expired"
-msgid "Expires:"
-msgstr "ескірген"
+#| msgid "Valid until:"
+msgid "Valid until:"
+msgstr "Қашанға дейін жарамды:"
+
+#: src/dialogs/certificatedetailswidget.cpp:408
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Change the end of the validity period"
+msgstr ""
+
+#: src/dialogs/certificatedetailswidget.cpp:409
+#, fuzzy, kde-format
+#| msgid "Validity"
+msgctxt "@action:button"
+msgid "Change Validity"
+msgstr "Жарамдылығы"
 
 #: src/dialogs/certificatedetailswidget.cpp:415
-#, fuzzy, kde-format
-#| msgid "Change Expiry Date..."
-msgctxt "@info:tooltip"
-msgid "Change the expiration date"
-msgstr "Мерзімін өзгерту..."
-
-#: src/dialogs/certificatedetailswidget.cpp:416
-#, fuzzy, kde-format
-#| msgid "Change Expiry Date..."
-msgctxt "@action:button"
-msgid "Change expiration"
-msgstr "Мерзімін өзгерту..."
-
-#: src/dialogs/certificatedetailswidget.cpp:422
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint:"
 msgstr "Бақылау тізбегі"
 
-#: src/dialogs/certificatedetailswidget.cpp:426
+#: src/dialogs/certificatedetailswidget.cpp:419
 #, fuzzy, kde-format
 #| msgid "Could not write to clipboard"
 msgctxt "@info:tooltip"
 msgid "Copy the fingerprint to the clipboard"
 msgstr "Алмасу буферге жазылмады"
 
-#: src/dialogs/certificatedetailswidget.cpp:427
+#: src/dialogs/certificatedetailswidget.cpp:420
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgctxt "@action:button"
 msgid "Copy fingerprint"
 msgstr "Бақылау тізбегі"
 
-#: src/dialogs/certificatedetailswidget.cpp:434
+#: src/dialogs/certificatedetailswidget.cpp:427
 #, fuzzy, kde-format
 #| msgid "Issuer"
 msgid "Issuer:"
 msgstr "Берушісі"
 
-#: src/dialogs/certificatedetailswidget.cpp:437
+#: src/dialogs/certificatedetailswidget.cpp:430
 #, fuzzy, kde-format
 #| msgid "Could not create certificate: %1"
 msgctxt "@info:tooltip"
 msgid "Show the issuer certificate"
 msgstr "Келесі куәлікті жасау мүмкін емес: %1"
 
-#: src/dialogs/certificatedetailswidget.cpp:438
+#: src/dialogs/certificatedetailswidget.cpp:431
 #, fuzzy, kde-format
 #| msgid "Show certificate validity"
 msgctxt "@action:button"
 msgid "Show certificate"
 msgstr "Куәліктің жарамдылығы көрсетілсін"
 
-#: src/dialogs/certificatedetailswidget.cpp:444
+#: src/dialogs/certificatedetailswidget.cpp:437
 #, fuzzy, kde-format
 #| msgid "Component:"
 msgid "Compliance:"
 msgstr "Компоненті:"
 
-#: src/dialogs/certificatedetailswidget.cpp:449
+#: src/dialogs/certificatedetailswidget.cpp:442
 #, fuzzy, kde-format
 #| msgid "Trusted issuer?"
 msgid "Trusted introducer for:"
 msgstr "Сенімді берушісі мә?"
 
-#: src/dialogs/certificatedetailswidget.cpp:451
+#: src/dialogs/certificatedetailswidget.cpp:444
 #, fuzzy, kde-format
 #| msgid "Show certificate details"
 msgid "See certifications for details."
 msgstr "Куәліктің егжей-тегжейі"
 
-#: src/dialogs/certificatedetailswidget.cpp:457
+#: src/dialogs/certificatedetailswidget.cpp:450
 #, fuzzy, kde-format
 #| msgid "EMail address:"
 msgid "Related addresses:"
 msgstr "Эл.пошта адресі:"
 
-#: src/dialogs/certificatedetailswidget.cpp:462
+#: src/dialogs/certificatedetailswidget.cpp:455
 #, fuzzy, kde-format
 #| msgid "EMail address:"
 msgid "Related addresses"
 msgstr "Эл.пошта адресі:"
 
-#: src/dialogs/certificatedetailswidget.cpp:473
+#: src/dialogs/certificatedetailswidget.cpp:466
 #, fuzzy, kde-format
 #| msgid "Details..."
 msgctxt "@action:button"
 msgid "More Details..."
 msgstr "Егжей-тегжейлер..."
 
-#: src/dialogs/certificatedetailswidget.cpp:476
+#: src/dialogs/certificatedetailswidget.cpp:469
 #, fuzzy, kde-format
 #| msgid "Details..."
 msgctxt "@action:button"
 msgid "Trust Chain Details"
 msgstr "Егжей-тегжейлер..."
 
-#: src/dialogs/certificatedetailswidget.cpp:479
+#: src/dialogs/certificatedetailswidget.cpp:472
 #, fuzzy, kde-format
 #| msgid "&Update"
 msgctxt "@action:button"
 msgid "Update"
 msgstr "&Жаңарту"
 
-#: src/dialogs/certificatedetailswidget.cpp:485
+#: src/dialogs/certificatedetailswidget.cpp:478
 #, fuzzy, kde-format
 #| msgid "Export"
 msgctxt "@action:button"
 msgid "Export"
 msgstr "Эспорт"
 
-#: src/dialogs/certificatedetailswidget.cpp:488
+#: src/dialogs/certificatedetailswidget.cpp:481
 #, fuzzy, kde-format
 #| msgid "Change Passphrase..."
 msgctxt "@action:button"
 msgid "Change Passphrase"
 msgstr "Паролін өзгерту..."
 
-#: src/dialogs/certificatedetailswidget.cpp:491
+#: src/dialogs/certificatedetailswidget.cpp:484
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Create a new certificate"
@@ -6016,7 +6015,7 @@ msgctxt "@action:button"
 msgid "Generate Revocation Certificate"
 msgstr "Жаңа куәлікті жасау"
 
-#: src/dialogs/certificatedetailswidget.cpp:493
+#: src/dialogs/certificatedetailswidget.cpp:486
 #, kde-format
 msgid ""
 "A revocation certificate is a file that serves as a \"kill switch\" to "
@@ -6024,39 +6023,38 @@ msgid ""
 "to retract such a revocation certificate once it has been published."
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:604
-#: src/dialogs/certificatedetailswidget.cpp:605
+#: src/dialogs/certificatedetailswidget.cpp:597
 #, fuzzy, kde-format
-#| msgid "Never"
-msgctxt "Expires"
-msgid "never"
-msgstr "Ешқашанда"
+#| msgid "unlimited"
+msgctxt "Valid until:"
+msgid "unlimited"
+msgstr "шексіз"
 
-#: src/dialogs/certificatedetailswidget.cpp:623
+#: src/dialogs/certificatedetailswidget.cpp:616
 #, kde-format
 msgid "Email"
 msgstr "Эл.поштасы"
 
-#: src/dialogs/certificatedetailswidget.cpp:623
+#: src/dialogs/certificatedetailswidget.cpp:616
 #: src/newcertificatewizard/enterdetailspage.cpp:61
 #, kde-format
 msgid "Name"
 msgstr "Атауы"
 
-#: src/dialogs/certificatedetailswidget.cpp:623
+#: src/dialogs/certificatedetailswidget.cpp:616
 #, fuzzy, kde-format
 #| msgid "Newly revoked:"
 msgid "Trust Level"
 msgstr "Жаңа күші жойылған:"
 
-#: src/dialogs/certificatedetailswidget.cpp:641
+#: src/dialogs/certificatedetailswidget.cpp:634
 #, fuzzy, kde-format
 #| msgid "new email"
 msgctxt "text for screen readers for an empty email address"
 msgid "no email"
 msgstr "жаңа эл.пошта"
 
-#: src/dialogs/certificatedetailswidget.cpp:729
+#: src/dialogs/certificatedetailswidget.cpp:722
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -6070,21 +6068,21 @@ msgstr ""
 "<para>Пайдаланушы ID-ін қосу кезінде қате пайда болды: <message>%1</"
 "message></para>"
 
-#: src/dialogs/certificatedetailswidget.cpp:735
+#: src/dialogs/certificatedetailswidget.cpp:728
 #, fuzzy, kde-format
 #| msgid "Information"
 msgctxt "@title:window"
 msgid "Confirm Revocation"
 msgstr "Мәлімет"
 
-#: src/dialogs/certificatedetailswidget.cpp:894
+#: src/dialogs/certificatedetailswidget.cpp:887
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:inmenu"
 msgid "Certify User IDs..."
 msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
 
-#: src/dialogs/certificatedetailswidget.cpp:895
+#: src/dialogs/certificatedetailswidget.cpp:888
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:inmenu"
@@ -6092,14 +6090,14 @@ msgid "Certify User ID..."
 msgid_plural "Certify User IDs..."
 msgstr[0] "Қолтаңбаланған пайдаланушы ID-лері:"
 
-#: src/dialogs/certificatedetailswidget.cpp:904
+#: src/dialogs/certificatedetailswidget.cpp:897
 #, fuzzy, kde-format
 #| msgid "Revoke This Certificate..."
 msgctxt "@action:inmenu"
 msgid "Revoke Certifications..."
 msgstr "Осы куәліктің күшін жою..."
 
-#: src/dialogs/certificatedetailswidget.cpp:905
+#: src/dialogs/certificatedetailswidget.cpp:898
 #, fuzzy, kde-format
 #| msgid "Revoke This Certificate..."
 msgctxt "@action:inmenu"
@@ -6107,107 +6105,107 @@ msgid "Revoke Certification..."
 msgid_plural "Revoke Certifications..."
 msgstr[0] "Осы куәліктің күшін жою..."
 
-#: src/dialogs/certificatedetailswidget.cpp:916
+#: src/dialogs/certificatedetailswidget.cpp:909
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgctxt "@action:inmenu"
 msgid "Publish at Mail Provider ..."
 msgstr "Серверінде куәліктерді қарастыру..."
 
-#: src/dialogs/certificatedetailswidget.cpp:929
+#: src/dialogs/certificatedetailswidget.cpp:922
 #, fuzzy, kde-format
 #| msgid "Signed user IDs:"
 msgctxt "@action:inmenu"
 msgid "Revoke User ID"
 msgstr "Қолтаңбаланған пайдаланушы ID-лері:"
 
-#: src/dialogs/certificatedetailswidget.cpp:981
+#: src/dialogs/certificatedetailswidget.cpp:974
 #, fuzzy, kde-format
 #| msgid "Never"
 msgid "never"
 msgstr "Ешқашанда"
 
-#: src/dialogs/certificatedetailswidget.cpp:983
+#: src/dialogs/certificatedetailswidget.cpp:976
 #, kde-format
 msgid "Signing"
 msgstr "Қолтаңбалау"
 
-#: src/dialogs/certificatedetailswidget.cpp:984
-#: src/dialogs/certificatedetailswidget.cpp:988
+#: src/dialogs/certificatedetailswidget.cpp:977
+#: src/dialogs/certificatedetailswidget.cpp:981
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:985
-#: src/dialogs/certificatedetailswidget.cpp:989
+#: src/dialogs/certificatedetailswidget.cpp:978
+#: src/dialogs/certificatedetailswidget.cpp:982
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:986
-#: src/dialogs/certificatedetailswidget.cpp:990
+#: src/dialogs/certificatedetailswidget.cpp:979
+#: src/dialogs/certificatedetailswidget.cpp:983
 #, fuzzy, kde-format
 #| msgid "Message #%1"
 msgid "Message count"
 msgstr "#%1 хабарлама"
 
-#: src/dialogs/certificatedetailswidget.cpp:987
+#: src/dialogs/certificatedetailswidget.cpp:980
 #: src/smartcard/openpgpcard.cpp:95
 #, kde-format
 msgid "Encryption"
 msgstr "Шифрлау"
 
-#: src/dialogs/certificatedetailswidget.cpp:1022
+#: src/dialogs/certificatedetailswidget.cpp:1015
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Updating..."
 msgstr "Эспорт"
 
-#: src/dialogs/certificatedetailswidget.cpp:1070
+#: src/dialogs/certificatedetailswidget.cpp:1063
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Update the key from external sources."
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:1086
+#: src/dialogs/certificatedetailswidget.cpp:1079
 #, kde-format
 msgid "Common Name"
 msgstr "Аты-жөні"
 
-#: src/dialogs/certificatedetailswidget.cpp:1087
+#: src/dialogs/certificatedetailswidget.cpp:1080
 #, kde-format
 msgid "Organization"
 msgstr "Ұйымы"
 
-#: src/dialogs/certificatedetailswidget.cpp:1088
+#: src/dialogs/certificatedetailswidget.cpp:1081
 #, fuzzy, kde-format
 #| msgid "Strength"
 msgid "Street"
 msgstr "Мықтылығы"
 
-#: src/dialogs/certificatedetailswidget.cpp:1089
+#: src/dialogs/certificatedetailswidget.cpp:1082
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:1090
+#: src/dialogs/certificatedetailswidget.cpp:1083
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "State"
 msgstr "Күйі"
 
-#: src/dialogs/certificatedetailswidget.cpp:1091
+#: src/dialogs/certificatedetailswidget.cpp:1084
 #, kde-format
 msgid "Country"
 msgstr "Елі"
 
-#: src/dialogs/certificatedetailswidget.cpp:1119
+#: src/dialogs/certificatedetailswidget.cpp:1112
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Update the CRLs and do a full validation check of the certificate."
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:1128
+#: src/dialogs/certificatedetailswidget.cpp:1121
 #, fuzzy, kde-format
 #| msgid "This certificate has been disabled locally."
 msgid "The issuer certificate could not be found locally."
@@ -6680,52 +6678,52 @@ msgstr ""
 
 #: src/dialogs/expirydialog.cpp:69
 #, kde-format
-msgctxt "(Expires) in x day(s)"
-msgid "in %1 day"
-msgid_plural "in %1 days"
+msgid "Valid for %1 day"
+msgid_plural "Valid for %1 days"
 msgstr[0] ""
 
 #: src/dialogs/expirydialog.cpp:71
 #, kde-format
-msgctxt "(Expires) in x week(s)"
-msgid "in %1 week"
-msgid_plural "in %1 weeks"
+msgid "Valid for %1 week"
+msgid_plural "Valid for %1 weeks"
 msgstr[0] ""
 
 #: src/dialogs/expirydialog.cpp:73
-#, kde-format
-msgctxt "(Expires) in x month(s)"
-msgid "in %1 month"
-msgid_plural "in %1 months"
-msgstr[0] ""
+#, fuzzy, kde-format
+#| msgid "Valid From"
+msgid "Valid for %1 month"
+msgid_plural "Valid for %1 months"
+msgstr[0] "Жарамдылықтың басталуы"
 
 #: src/dialogs/expirydialog.cpp:75
 #, kde-format
-msgctxt "(Expires) in x year(s)"
-msgid "in %1 year"
-msgid_plural "in %1 years"
+msgid "Valid for %1 year"
+msgid_plural "Valid for %1 years"
 msgstr[0] ""
 
 #: src/dialogs/expirydialog.cpp:161
 #, fuzzy, kde-format
-#| msgid "Please select when to expire this certificate:"
-msgid "Please select when to expire this subkey:"
-msgstr "Куәлік ескіретін мерзімін таңдаңыз:"
+#| msgid "Please select one of the following certificates:"
+msgid "Please select until when the subkey should be valid:"
+msgstr "Келесі куәліктерінің біреуін таңдаңыз:"
 
 #: src/dialogs/expirydialog.cpp:162
-#, kde-format
-msgid "Please select when to expire this certificate:"
-msgstr "Куәлік ескіретін мерзімін таңдаңыз:"
+#, fuzzy, kde-format
+#| msgid "Please select one of the following certificates:"
+msgid "Please select until when the certificate should be valid:"
+msgstr "Келесі куәліктерінің біреуін таңдаңыз:"
 
 #: src/dialogs/expirydialog.cpp:166
-#, kde-format
-msgid "Ne&ver"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Show certificate validity"
+msgid "Unlimited validity"
+msgstr "Куәліктің жарамдылығы көрсетілсін"
 
 #: src/dialogs/expirydialog.cpp:174
-#, kde-format
-msgid "In"
-msgstr "келесі арада:"
+#, fuzzy, kde-format
+#| msgid "Valid From"
+msgid "Valid for:"
+msgstr "Жарамдылықтың басталуы"
 
 #: src/dialogs/expirydialog.cpp:187
 #, kde-format
@@ -6747,29 +6745,23 @@ msgstr "ай"
 msgid "Years"
 msgstr "жыл"
 
-#: src/dialogs/expirydialog.cpp:204
-#, fuzzy, kde-format
-#| msgid "On this day:"
-msgid "On this da&y:"
-msgstr "Мынау күнде:"
-
 #: src/dialogs/expirydialog.cpp:220
 #, kde-format
-msgid "Also update the expiry of the subkeys"
+msgid "Also update the validity period of the subkeys"
 msgstr ""
 
 #: src/dialogs/expirydialog.cpp:276
-#, kde-format
-msgctxt "(Expires) on DATE"
-msgid "on %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Valid until:"
+msgctxt "Valid until DATE"
+msgid "Valid until %1"
+msgstr "Қашанға дейін жарамды:"
 
 #: src/dialogs/expirydialog.cpp:312
-#, fuzzy, kde-format
-#| msgid "Change Expiry Date..."
+#, kde-format
 msgctxt "@title:window"
-msgid "Change Expiry"
-msgstr "Мерзімін өзгерту..."
+msgid "Change Validity Period"
+msgstr ""
 
 #: src/dialogs/exportdialog.cpp:65
 #, fuzzy, kde-format
@@ -7538,8 +7530,8 @@ msgstr " Қайда сақталған:"
 
 #: src/dialogs/subkeyswidget.cpp:118 src/view/keylistcontroller.cpp:446
 #, kde-format
-msgid "Change Expiry Date..."
-msgstr "Мерзімін өзгерту..."
+msgid "Change End of Validity Period..."
+msgstr ""
 
 #: src/dialogs/subkeyswidget.cpp:138
 #, fuzzy, kde-format
@@ -7684,21 +7676,21 @@ msgstr ""
 msgid "&Get update"
 msgstr "&Жаңарту"
 
-#: src/dialogs/weboftrustdialog.cpp:45
+#: src/dialogs/weboftrustdialog.cpp:62
 #, fuzzy, kde-format
 #| msgid "Certifications"
 msgctxt "@title:window"
 msgid "Certifications"
 msgstr "Куәландыру"
 
-#: src/dialogs/weboftrustdialog.cpp:56
+#: src/dialogs/weboftrustdialog.cpp:77
 #, fuzzy, kde-format
 #| msgid "Generating key"
 msgctxt "@action:button"
 msgid "Fetch Missing Keys"
 msgstr "Кітті жасау"
 
-#: src/dialogs/weboftrustdialog.cpp:58
+#: src/dialogs/weboftrustdialog.cpp:79
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -7706,62 +7698,81 @@ msgid ""
 "key"
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:55
+#: src/dialogs/weboftrustwidget.cpp:59
 #, fuzzy, kde-format
 #| msgid "User-IDs && Certifications"
 msgid "User IDs and certifications"
 msgstr "Пайдарланушы ID-лері және растау"
 
-#: src/dialogs/weboftrustwidget.cpp:101 src/view/keylistcontroller.cpp:438
-#, fuzzy, kde-format
-#| msgid "Certify..."
-msgid "Certify..."
-msgstr "Растау..."
-
-#: src/dialogs/weboftrustwidget.cpp:116 src/dialogs/weboftrustwidget.cpp:143
-#: src/view/keylistcontroller.cpp:442
-#, fuzzy, kde-format
-#| msgid "Revoke This Certificate..."
-msgid "Revoke Certification..."
-msgstr "Осы куәліктің күшін жою..."
-
-#: src/dialogs/weboftrustwidget.cpp:135
+#: src/dialogs/weboftrustwidget.cpp:71
 #, fuzzy, kde-format
 #| msgid "Show certificate details"
-msgid "Show Certificate Details..."
+msgctxt "@action"
+msgid "Show Certificate Details"
 msgstr "Куәліктің егжей-тегжейі"
 
-#: src/dialogs/weboftrustwidget.cpp:160
+#: src/dialogs/weboftrustwidget.cpp:76
 #, fuzzy, kde-format
-#| msgid "Loading certificate cache..."
-msgid "Revocation of self-certifications is currently not possible."
-msgstr "Куәлік кэшін жүктеу..."
+#| msgid "Certification"
+msgctxt "@action"
+msgid "Add Certification"
+msgstr "Куәландыру"
 
-#: src/dialogs/weboftrustwidget.cpp:162
+#: src/dialogs/weboftrustwidget.cpp:82
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgctxt "@action"
+msgid "Revoke Certification"
+msgstr "Куәландыру"
+
+#: src/dialogs/weboftrustwidget.cpp:209
 #, kde-format
 msgid ""
 "You cannot revoke this certification because it wasn't made with one of your "
 "keys (or the required secret key is missing)."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:164
+#: src/dialogs/weboftrustwidget.cpp:212
+#, fuzzy, kde-format
+#| msgid "Loading certificate cache..."
+msgid "Revocation of self-certifications is currently not possible."
+msgstr "Куәлік кэшін жүктеу..."
+
+#: src/dialogs/weboftrustwidget.cpp:215
 #, kde-format
 msgid ""
 "You cannot revoke this revocation certification. (But you can re-certify the "
 "corresponding user ID.)"
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:166
+#: src/dialogs/weboftrustwidget.cpp:218
 #, kde-format
 msgid "You cannot revoke this expired certification."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:168
+#: src/dialogs/weboftrustwidget.cpp:221
 #, kde-format
 msgid "You cannot revoke this invalid certification."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:265
+#: src/dialogs/weboftrustwidget.cpp:224
+#, fuzzy, kde-format
+#| msgid ""
+#| "This certificate was new to your keystore. The secret key is available."
+msgid ""
+"You cannot revoke this certification because the required secret key is not "
+"available."
+msgstr "Кілт коймаңызда жаңа куәлік. Оның құпия сыңары да бар."
+
+#: src/dialogs/weboftrustwidget.cpp:231
+#, fuzzy, kde-format
+#| msgid "The validity of the signature cannot be verified."
+msgid ""
+"You cannot revoke any of the certifications of this user ID. Select any of "
+"the certifications for details."
+msgstr "Қолтаңбаның жарамдылы тексеруге келмейді."
+
+#: src/dialogs/weboftrustwidget.cpp:340
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7771,7 +7782,7 @@ msgstr ""
 "<para>Куәліктерді жүктеп алу кезінде қате пайда болды: <message>%1</"
 "message></para>"
 
-#: src/dialogs/weboftrustwidget.cpp:268
+#: src/dialogs/weboftrustwidget.cpp:343
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
@@ -10920,9 +10931,21 @@ msgstr "Куәлікті таңдаңыз"
 
 #: src/view/keylistcontroller.cpp:438
 #, fuzzy, kde-format
+#| msgid "Certify..."
+msgid "Certify..."
+msgstr "Растау..."
+
+#: src/view/keylistcontroller.cpp:438
+#, fuzzy, kde-format
 #| msgid "The validity of the signature cannot be verified."
 msgid "Certify the validity of the selected certificate"
 msgstr "Қолтаңбаның жарамдылы тексеруге келмейді."
+
+#: src/view/keylistcontroller.cpp:442
+#, fuzzy, kde-format
+#| msgid "Revoke This Certificate..."
+msgid "Revoke Certification..."
+msgstr "Осы куәліктің күшін жою..."
 
 #: src/view/keylistcontroller.cpp:442
 #, fuzzy, kde-format
@@ -12020,6 +12043,60 @@ msgstr "%1 дегеннен куәліктер импортталды"
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
+#~ msgid "Expiry Date Change Error"
+#~ msgstr "Жарамдылық мерзімін өзгерту қатесі"
+
+#~ msgid "Expiry Date Change Succeeded"
+#~ msgstr "Жарамдылық мерзімн өзгерту сәтті өтті"
+
+#, fuzzy
+#~| msgid "expired"
+#~ msgid "Expires:"
+#~ msgstr "ескірген"
+
+#, fuzzy
+#~| msgid "Change Expiry Date..."
+#~ msgctxt "@info:tooltip"
+#~ msgid "Change the expiration date"
+#~ msgstr "Мерзімін өзгерту..."
+
+#, fuzzy
+#~| msgid "Change Expiry Date..."
+#~ msgctxt "@action:button"
+#~ msgid "Change expiration"
+#~ msgstr "Мерзімін өзгерту..."
+
+#, fuzzy
+#~| msgid "Never"
+#~ msgctxt "Expires"
+#~ msgid "never"
+#~ msgstr "Ешқашанда"
+
+#, fuzzy
+#~| msgid "Please select when to expire this certificate:"
+#~ msgid "Please select when to expire this subkey:"
+#~ msgstr "Куәлік ескіретін мерзімін таңдаңыз:"
+
+#~ msgid "Please select when to expire this certificate:"
+#~ msgstr "Куәлік ескіретін мерзімін таңдаңыз:"
+
+#~ msgid "In"
+#~ msgstr "келесі арада:"
+
+#, fuzzy
+#~| msgid "On this day:"
+#~ msgid "On this da&y:"
+#~ msgstr "Мынау күнде:"
+
+#, fuzzy
+#~| msgid "Change Expiry Date..."
+#~ msgctxt "@title:window"
+#~ msgid "Change Expiry"
+#~ msgstr "Мерзімін өзгерту..."
+
+#~ msgid "Change Expiry Date..."
+#~ msgstr "Мерзімін өзгерту..."
+
 #~ msgctxt "@info:tooltip"
 #~ msgid "Create a new certificate"
 #~ msgstr "Жаңа куәлікті жасау"
@@ -12531,11 +12608,6 @@ msgstr ""
 #~ "placeholder 2 is the identifier of a slot on a smart card"
 #~ msgid "%1 (%2)"
 #~ msgstr "%1 (%2)"
-
-#, fuzzy
-#~| msgid "Please select one of the following certificates:"
-#~ msgid "Please select the card slot the certificate should be written to:"
-#~ msgstr "Келесі куәліктерінің біреуін таңдаңыз:"
 
 #, fuzzy
 #~| msgid "SmartCard"
@@ -13057,9 +13129,6 @@ msgstr ""
 #~ msgid "a.k.a."
 #~ msgstr "Басқа аты"
 
-#~ msgid "Validity"
-#~ msgstr "Жарамдылығы"
-
 #~ msgid "from %1 until forever"
 #~ msgstr "%1 бастап, шексіз"
 
@@ -13151,10 +13220,6 @@ msgstr ""
 
 #~ msgid "The import of this certificate was canceled."
 #~ msgstr "Куәліктін импорттауы доғарылды."
-
-#~ msgid ""
-#~ "This certificate was new to your keystore. The secret key is available."
-#~ msgstr "Кілт коймаңызда жаңа куәлік. Оның құпия сыңары да бар."
 
 #~ msgid "This certificate is new to your keystore."
 #~ msgstr "Бұл кілт коймаңыз үшін жаңа куәлік."
@@ -13560,9 +13625,6 @@ msgstr ""
 
 #~ msgid "Log Window"
 #~ msgstr "Журнал терезесі"
-
-#~ msgid "unlimited"
-#~ msgstr "шексіз"
 
 #~ msgid "&History size:"
 #~ msgstr "Ж&урнал шегі:"
