@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-20 00:46+0000\n"
+"POT-Creation-Date: 2022-09-22 00:45+0000\n"
 "PO-Revision-Date: 2013-11-08 01:28+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -806,7 +806,7 @@ msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "Жұмыстың ұзақтығы жоспарға сыймады. Керегі: %1 бары: %2"
 
 #: kernel/kptwbsdefinition.cpp:28
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:189
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:227
 #, kde-format
 msgid "Number"
 msgstr "Сан"
@@ -2064,7 +2064,6 @@ msgstr[0] "Бұл топта %1 атқарушы бар"
 #: models/reportgenerator/ReportGeneratorOdt.cpp:179
 #: models/ResourceGroupModel.cpp:190 models/ResourceModel.cpp:418
 #: ui/projectview/ProjectView.cpp:40
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:208
 #, kde-format
 msgid "Name"
 msgstr "Атауы"
@@ -2364,7 +2363,8 @@ msgstr "Күнтізбе күнін өзгерту"
 
 #: models/kptcalendarmodel.cpp:532 models/kptnodeitemmodel.cpp:2315
 #: models/kptnodeitemmodel.cpp:5250
-#, kde-kuit-format
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:252
+#, kde-format, kde-kuit-format
 msgctxt "@title:column"
 msgid "Name"
 msgstr "Атауы"
@@ -6534,7 +6534,7 @@ msgstr "Жобаның басы"
 #: ui/kptaccountsviewconfigurepanelbase.ui:114
 #: ui/kptaccountsviewconfigurepanelbase.ui:144 ui/kptprintingheaderfooter.ui:46
 #: ui/kptprintingheaderfooter.ui:86 ui/kptusedefforteditor.cpp:395
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:189
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:227
 #, kde-format
 msgid "Date"
 msgstr "Күні"
@@ -7113,7 +7113,6 @@ msgstr "Ұзындығы"
 
 #. i18n: ectx: property (text), widget (QPushButton, bAddInterval)
 #: ui/kptintervaleditbase.ui:70
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:208
 #, kde-format
 msgid "Add"
 msgstr "Қосу"
@@ -9651,38 +9650,53 @@ msgstr "Төменгі колонтитулдан кейін"
 msgid "Before header"
 msgstr "Жоғарғы колонтитулының алдында"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:189
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:227
 #, kde-format
 msgid "Nothing"
 msgstr ""
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:208
-#, fuzzy, kde-format
-#| msgid "Report Footer"
-msgid "Report File"
-msgstr "Баянаттың төменгі колонтитулы"
-
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:208
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:253
 #, fuzzy, kde-format
 #| msgid "Report Header"
+msgctxt "@title:column"
 msgid "Report Template"
 msgstr "Баянаттың жоғарғы колонтитулы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:209
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:254
+#, fuzzy, kde-format
+#| msgid "Add"
+msgctxt "@title:column"
+msgid "Add"
+msgstr "Қосу"
+
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:255
+#, fuzzy, kde-format
+#| msgid "Report Footer"
+msgctxt "@title:column"
+msgid "Report File"
+msgstr "Баянаттың төменгі колонтитулы"
+
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:258
 #, fuzzy, kde-kuit-format
 #| msgid "Report Header"
 msgctxt "@info:tooltip"
 msgid "Report name"
 msgstr "Баянаттың жоғарғы колонтитулы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:210
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:259
 #, fuzzy, kde-kuit-format
 #| msgid "Report Header"
 msgctxt "@info:tooltip"
 msgid "Report template file name"
 msgstr "Баянаттың жоғарғы колонтитулы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:211
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:260
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "Information added to filename"
+msgstr ""
+
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:261
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Failed to export to <filename>%1</filename>"
@@ -9690,13 +9704,7 @@ msgctxt "@info:tooltip"
 msgid "Name of the generated report file"
 msgstr "<filename>%1</filename> экспорттау жаңылысы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:212
-#, kde-kuit-format
-msgctxt "@info:tooltip"
-msgid "Information added to filename"
-msgstr ""
-
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:248
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:287
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -9706,34 +9714,41 @@ msgid ""
 "url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:323
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:378
 #, fuzzy, kde-format
 #| msgid "Edit Report"
 msgid "Add Report"
 msgstr "Баянатты өзгерту"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:328
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:383
 #, fuzzy, kde-format
 #| msgctxt "(qtundo-format)"
 #| msgid "Remove document"
 msgid "Remove Report"
 msgstr "Құжатты кетіру"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:333
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:388
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Export Report"
 msgid "Generate Report"
 msgstr "Баянатты экспорттау"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:360
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:393
+#, fuzzy, kde-format
+#| msgid "Open"
+msgid "Open..."
+msgstr "Ашу"
+
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:429
 #, fuzzy, kde-format
 #| msgid "View report"
 msgid "New report"
 msgstr "Баянатты қарау"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:401
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:408
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:470
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:476
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:483
 #, fuzzy, kde-kuit-format
 #| msgctxt "@title:window"
 #| msgid "Export Report"
@@ -9741,21 +9756,28 @@ msgctxt "@title:window"
 msgid "Generate Report"
 msgstr "Баянатты экспорттау"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:402
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:471
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Failed to export to <filename>%1</filename>"
 msgid "Failed to generate %1.<nl/>Template file name is empty."
 msgstr "<filename>%1</filename> экспорттау жаңылысы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:409
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:477
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "Failed to export to <filename>%1</filename>"
+msgid "Failed to generate %1.<nl/>Template file does not exist:<nl/>%2"
+msgstr "<filename>%1</filename> экспорттау жаңылысы"
+
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:484
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Failed to export to <filename>%1</filename>"
 msgid "Failed to generate %1.<nl/>Report file name is empty."
 msgstr "<filename>%1</filename> экспорттау жаңылысы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:432
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:507
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:tooltip 1=list of resources"
 #| msgid "Assigned resources:<nl/>%1"
@@ -9763,8 +9785,8 @@ msgctxt "@info"
 msgid "File exists:<nl/>%1"
 msgstr "Бөлінген атқарушылары:<nl/>%1"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:432
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:458
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:507
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:533
 #, fuzzy, kde-format, kde-kuit-format
 #| msgctxt "@title:window"
 #| msgid "Report Designer"
@@ -9772,21 +9794,21 @@ msgctxt "@title:window"
 msgid "Report Generation"
 msgstr "Баянат құрастырғышы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:451
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:526
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to export to <filename>%1</filename>"
 msgid "Failed to open report generator"
 msgstr "<filename>%1</filename> экспорттау жаңылысы"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:455
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:530
 #, fuzzy, kde-format
 #| msgctxt "1=type of constraint"
 #| msgid "%1: Failed to meet constraint"
 msgid "Failed to create report"
 msgstr "%1: Шартқа келмеді"
 
-#: ui/reportsgenerator/ReportsGeneratorView.cpp:458
+#: ui/reportsgenerator/ReportsGeneratorView.cpp:533
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Cannot open file:<br/><filename>%1</filename>"
